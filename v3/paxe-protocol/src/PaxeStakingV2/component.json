@@ -1,0 +1,18 @@
+{
+  "component": "PaxeStakingV2",
+  "main_contract": "PaxeStakingV2",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x311049dcac17e9d9a961590b436c132f91364a09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyWaultLpWithAc",
+  "main_contract": "StrategyWaultLpWithAc",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0a482112da84c8d2af3b8779a1d9dfcb54c2fdc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

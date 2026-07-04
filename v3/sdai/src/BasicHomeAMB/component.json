@@ -1,0 +1,18 @@
+{
+  "component": "BasicHomeAMB",
+  "main_contract": "BasicHomeAMB",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa033535983d1abcc2648af730edcb198909903d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

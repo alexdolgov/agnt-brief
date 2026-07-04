@@ -1,0 +1,34 @@
+{
+  "component": "Issuer",
+  "main_contract": "Issuer",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x002a6ba1c314a94f6fbfed1d68b456e74ef54f2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2841052140b4eca63c8ef0bd52c4818eefd5146b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9a89df0a1e3ce5ad02beb12ab077e591dc9b0fb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

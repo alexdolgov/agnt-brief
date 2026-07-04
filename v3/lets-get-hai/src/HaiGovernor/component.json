@@ -1,0 +1,18 @@
+{
+  "component": "HaiGovernor",
+  "main_contract": "HaiGovernor",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe807f3282f3391d237ba8b9becb0d8ea3ba23777",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

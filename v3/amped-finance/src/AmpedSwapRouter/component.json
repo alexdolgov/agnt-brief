@@ -1,0 +1,26 @@
+{
+  "component": "AmpedSwapRouter",
+  "main_contract": "AmpedSwapRouter",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1d4ab8cc7552f76654cfae4155854e5235acc3bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe8b485031343d7f38d59c92fa25805a4e72c6a4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

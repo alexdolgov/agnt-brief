@@ -1,0 +1,18 @@
+{
+  "component": "Multicall",
+  "main_contract": "Multicall",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2c360b513ae52947eeb37cfad57ac9b7c9373e1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

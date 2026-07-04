@@ -1,0 +1,42 @@
+{
+  "component": "AbraStaking-5",
+  "main_contract": "AbraStaking",
+  "source_file_count": 155,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x61aa64ab2cad6329172c47388d88fe6167b93e13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc27a995ce176cb1d117d990e05217dff7e39c6b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcb9c93e34939a78183c964864e6b526ea1ff978f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe2f17a823af0ad2806b62849eaf47a0b70abcf43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

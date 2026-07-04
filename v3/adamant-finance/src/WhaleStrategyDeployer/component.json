@@ -1,0 +1,18 @@
+{
+  "component": "WhaleStrategyDeployer",
+  "main_contract": "WhaleStrategyDeployer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x28c798a4b06e48d672db1065a80be022da458522",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

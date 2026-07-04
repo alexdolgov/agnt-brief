@@ -1,0 +1,18 @@
+{
+  "component": "OlympusCvxHolder",
+  "main_contract": "OlympusCvxHolder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfc95aaf0a107daae2b350458ded4b7906e7f728",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

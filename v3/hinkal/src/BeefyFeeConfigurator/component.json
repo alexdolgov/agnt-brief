@@ -1,0 +1,18 @@
+{
+  "component": "BeefyFeeConfigurator",
+  "main_contract": "BeefyFeeConfigurator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc036ab31d2f105e15c1896f88d13b7bcf3e9292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

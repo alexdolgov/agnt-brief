@@ -1,0 +1,18 @@
+{
+  "component": "CMCAirdrop",
+  "main_contract": "CMCAirdrop",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4fac244cc22f67ac1b9c9c371f9ed75bdd33ad87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

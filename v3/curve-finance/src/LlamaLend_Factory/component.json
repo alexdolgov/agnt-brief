@@ -1,0 +1,18 @@
+{
+  "component": "LlamaLend_Factory",
+  "main_contract": "LlamaLend Factory",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5f94073e3f51c1fff92ffc6b4b06b7af193b3640",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

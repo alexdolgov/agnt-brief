@@ -1,0 +1,20 @@
+{
+  "component": "RSR",
+  "main_contract": "RSR",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/reserve-protocol/rsr-mainnet/blob/master/audits/solidified/Audit%20Report%20-%20Reserve%20Token%20%5B3%20Jan%202022%5D-2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x320623b8e4ff03373931769a31fc52a4e78b5d70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

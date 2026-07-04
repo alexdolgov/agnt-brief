@@ -1,0 +1,22 @@
+{
+  "component": "ResupplyRegistry",
+  "main_contract": "ResupplyRegistry",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_Resupply_audit.pdf",
+    "https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_audit_v2.pdf",
+    "https://github.com/resupplyfi/resupply/blob/main/audits/rsup_yaudit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10101010e0c3171d894b71b3400668af311e7d94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

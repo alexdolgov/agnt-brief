@@ -1,0 +1,20 @@
+{
+  "component": "WHAssetv2",
+  "main_contract": "WHAssetv2",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Whiteheart-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf19c3fafb0171484d2301af1838cb5c6ea739dc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

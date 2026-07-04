@@ -1,0 +1,18 @@
+{
+  "component": "UpdateOracles",
+  "main_contract": "UpdateOracles",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x542203359a9d1fe8c75b69f3df0816e173abeeaf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

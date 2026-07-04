@@ -1,0 +1,38 @@
+{
+  "component": "ActivePool",
+  "main_contract": "ActivePool",
+  "source_file_count": 48,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf",
+    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021%2Epdf",
+    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x531a8f99c70d6a56a7cee02d6b4281650d7919a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9074d72cc82dad1e13e454755aa8f144c479532f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb5a8c825582965f1d84606e078620a84ab16afe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

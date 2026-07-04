@@ -1,0 +1,18 @@
+{
+  "component": "MetavaultRefund",
+  "main_contract": "MetavaultRefund",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x287bfe9ee929842d1af340814332e7548ad60b09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

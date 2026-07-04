@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainOracleSingleAsset-2",
+  "main_contract": "CrossChainOracleSingleAsset",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6a0fc220d129f4d21e40764ed0bea4ec777f3d03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

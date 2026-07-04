@@ -1,0 +1,23 @@
+{
+  "component": "Morpho",
+  "main_contract": "Morpho",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/d86b7f95-e574-4092-8ea2-78dcac2f54f1",
+    "https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf",
+    "https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-11-13-morpho-blue-cantina-managed-review.pdf",
+    "https://github.com/morpho-org/morpho-blue/blob/main/audits/2024-01-05-morpho-blue-cantina-competition.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x01b0bd309aa75547f7a37ad7b1219a898e67a83a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

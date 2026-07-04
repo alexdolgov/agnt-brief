@@ -1,0 +1,18 @@
+{
+  "component": "InceptionBridge",
+  "main_contract": "InceptionBridge",
+  "source_file_count": 57,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f696f13dcdb2cd0f1927ad598613c7c95a33eaf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

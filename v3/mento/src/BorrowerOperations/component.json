@@ -1,0 +1,20 @@
+{
+  "component": "BorrowerOperations",
+  "main_contract": "BorrowerOperations",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoLiquityV2_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x8ec9a81871f816f1ef007a82293703057a943b8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

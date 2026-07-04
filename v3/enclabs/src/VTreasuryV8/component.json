@@ -1,0 +1,18 @@
+{
+  "component": "VTreasuryV8",
+  "main_contract": "VTreasuryV8",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x172bc36d3f092453ce6f3f9b30f1d6ac365c4ffd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

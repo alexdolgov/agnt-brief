@@ -1,0 +1,20 @@
+{
+  "component": "NomiswapRouter",
+  "main_contract": "NomiswapRouter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/nomiswap"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd654953d746f0b114d1f85332dc43446ac79413d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SparkPayloadBase",
+  "main_contract": "SparkPayloadBase",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x356f19cb575cf40c7ff33a5117f9a9264c23f6e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

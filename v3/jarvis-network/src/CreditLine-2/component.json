@@ -1,0 +1,18 @@
+{
+  "component": "CreditLine-2",
+  "main_contract": "CreditLine",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x58a98967edfb2a350c4669a4df0f6bb4ce179a47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

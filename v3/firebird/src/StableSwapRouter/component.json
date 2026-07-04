@@ -1,0 +1,26 @@
+{
+  "component": "StableSwapRouter",
+  "main_contract": "StableSwapRouter",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x26ffd8cf4492b468d5412ddca9e1dd089b67d300",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9f197f9ff460355a40b3c9a10f7d1ca65f365b83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

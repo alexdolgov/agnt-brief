@@ -1,0 +1,20 @@
+{
+  "component": "FastBridgeVault",
+  "main_contract": "FastBridgeVault",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_Curve_Fast_Bridge_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ef620631aa46e7d2f6f963b6be4f6823521b9ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

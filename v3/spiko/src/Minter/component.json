@@ -1,0 +1,26 @@
+{
+  "component": "Minter",
+  "main_contract": "Minter",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x465bc3e57a76905699df6772ee2571058a55f37a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaead1f7c9b189816cb845363d142cfcf339084c2",
+      "is_proxy": true,
+      "implementation_address": "0x465bc3e57a76905699df6772ee2571058a55f37a",
+      "liveness": "live"
+    }
+  ]
+}

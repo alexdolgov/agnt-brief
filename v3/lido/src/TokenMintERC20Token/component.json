@@ -1,0 +1,18 @@
+{
+  "component": "TokenMintERC20Token",
+  "main_contract": "TokenMintERC20Token",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x49397ac9cb061152b770b1d274a5682155f20099",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

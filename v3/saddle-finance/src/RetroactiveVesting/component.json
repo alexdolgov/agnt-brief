@@ -1,0 +1,18 @@
+{
+  "component": "RetroactiveVesting",
+  "main_contract": "RetroactiveVesting",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5dca270671935cf3df78bd8373c22be250198a03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "PledgePool",
+  "main_contract": "PledgePool",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x133daec9a0d345e10d1d37c070d853a75ac33634",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x4b103730109a75954139d4ff7a8ffc91f59b9812",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x654d0bdaed45429812521de20b8de27abd6ce871",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x85f6b71435b7828fce5df62225a594d0f033cbdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

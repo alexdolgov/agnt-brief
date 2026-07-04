@@ -1,0 +1,18 @@
+{
+  "component": "AbraStaking-13",
+  "main_contract": "AbraStaking",
+  "source_file_count": 138,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb05c38ad73f834a1a03705f58bbb1e1f95b4e798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

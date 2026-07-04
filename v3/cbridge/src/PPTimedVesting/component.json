@@ -1,0 +1,26 @@
+{
+  "component": "PPTimedVesting",
+  "main_contract": "PPTimedVesting",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x60842a6b44cca5eb7685d1135acf69b1336b28b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a4d7aa8a438847d71715ba1509276291205f114",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

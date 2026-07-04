@@ -1,0 +1,18 @@
+{
+  "component": "DirectAssimilator",
+  "main_contract": "DirectAssimilator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x39dcad1a118d6786b1225c1b8140de9ba0e0e57c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "FLIRebalanceViewer",
+  "main_contract": "FLIRebalanceViewer",
+  "source_file_count": 84,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14d9f0d529e80747b128ac2b145e4208e44e37eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4632158a6f58b8eb2aa6f92428f23d7f6de763ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x517f76db91931d48cbbe5d8ce82d953e9490efa7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f45177e4ca1f996bd6c830b7e06eb3308536217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

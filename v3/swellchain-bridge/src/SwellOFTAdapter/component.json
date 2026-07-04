@@ -1,0 +1,18 @@
+{
+  "component": "SwellOFTAdapter",
+  "main_contract": "SwellOFTAdapter",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09341022ea237a4db1644de7ccf8fa0e489d85b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

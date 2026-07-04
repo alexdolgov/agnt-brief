@@ -1,0 +1,26 @@
+{
+  "component": "ERC20Oracle",
+  "main_contract": "ERC20Oracle",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2f32c67da91a464c8514effd7296998303723162",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xddcb7b2e0384dc92a5547ee9dc46791a4d0703bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

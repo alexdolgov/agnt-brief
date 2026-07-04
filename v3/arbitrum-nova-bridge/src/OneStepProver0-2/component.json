@@ -1,0 +1,18 @@
+{
+  "component": "OneStepProver0-2",
+  "main_contract": "OneStepProver0",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dccabe89cf76132619a9b18e9f9e48e837222b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "InterestRateCalculatorV2",
+  "main_contract": "InterestRateCalculatorV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_sreUSD_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1972b5d65a690de0bc36278ac93d47fd98bc14f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

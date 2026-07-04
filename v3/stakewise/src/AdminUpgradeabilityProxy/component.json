@@ -1,0 +1,49 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 15,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakewise/contracts/blob/master/audits/2021-01-14-RuntimeVerification.pdf",
+    "https://github.com/stakewise/contracts/blob/master/audits/2021-04-18-Certik.pdf",
+    "https://github.com/stakewise/contracts/blob/master/audits/2021-06-01-Certik.pdf",
+    "https://github.com/stakewise/contracts/blob/master/audits/2021-11-25-Omniscia.pdf",
+    "https://github.com/stakewise/contracts/blob/master/audits/2022-05-06-Quantstamp.pdf",
+    "https://github.com/stakewise/contracts/blob/master/audits/2022-09-16-Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x2f99472b727e15eecf9b9eff9f7481b85d3b4444",
+      "is_proxy": true,
+      "implementation_address": "0xba0b5ba961b108bff8d761a256e9763a4fccff23",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x35cb741e55330b4a0e1ae011417e6715e4bca0b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x61975c09207c5dfe794b0a652c8caf8458159aae",
+      "is_proxy": true,
+      "implementation_address": "0x6b333b20fbae3c5c0969dd02176e30802e2fbbdb",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa4ef9da5ba71cc0d2e5e877a910a37ec43420445",
+      "is_proxy": true,
+      "implementation_address": "0x987852d5d6c221ec03939421de4568c072eae800",
+      "liveness": "live"
+    }
+  ]
+}

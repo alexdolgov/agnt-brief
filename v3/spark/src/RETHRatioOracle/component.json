@@ -1,0 +1,20 @@
+{
+  "component": "RETHRatioOracle",
+  "main_contract": "RETHRatioOracle",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sparkdotfi/sparklend-advanced/blob/master/audits/v160-chainsecurity-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0b378da552d06b6d3497e4b5ba2a83418f78d06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

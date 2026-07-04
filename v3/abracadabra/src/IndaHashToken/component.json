@@ -1,0 +1,18 @@
+{
+  "component": "IndaHashToken",
+  "main_contract": "IndaHashToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5c2ea13d2bf1968a10722dc45900c8da0f78212",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AccountingModule",
+  "main_contract": "AccountingModule",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x77fb6fd121afe51c95fea53069686138b8de469a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

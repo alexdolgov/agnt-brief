@@ -1,0 +1,26 @@
+{
+  "component": "LiquidityManagerFactory",
+  "main_contract": "LiquidityManagerFactory",
+  "source_file_count": 45,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x979bc658871368cef694490b24a79c41ddbe2520",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf23e2450aff5280c7372a9a717c71141f5edf363",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

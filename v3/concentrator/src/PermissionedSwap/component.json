@@ -1,0 +1,20 @@
+{
+  "component": "PermissionedSwap",
+  "main_contract": "PermissionedSwap",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_fxSAVE_And_StabilityPoolUSDCStrategy_Report_v1.1_20250317.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0559a1b22409eef7559a5c88cbaa4e285e7b9c30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

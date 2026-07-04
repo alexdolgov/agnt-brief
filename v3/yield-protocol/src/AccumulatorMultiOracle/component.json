@@ -1,0 +1,18 @@
+{
+  "component": "AccumulatorMultiOracle",
+  "main_contract": "AccumulatorMultiOracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0ad9ef93673b6081c0c3b753ccaabddd8d2e7848",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

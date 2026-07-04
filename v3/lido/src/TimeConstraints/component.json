@@ -1,0 +1,20 @@
+{
+  "component": "TimeConstraints",
+  "main_contract": "TimeConstraints",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/Statemind%20Dual%20Governance%20Deployment%20and%20Voting%20Script%20Review%20Report%2006-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a30f5ac03187674553024296bed35aa49749dda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

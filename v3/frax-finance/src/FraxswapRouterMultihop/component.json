@@ -1,0 +1,18 @@
+{
+  "component": "FraxswapRouterMultihop",
+  "main_contract": "FraxswapRouterMultihop",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25e9aca5951262241290841b6f863d59d37dc4f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

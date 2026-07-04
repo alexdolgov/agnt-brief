@@ -1,0 +1,84 @@
+{
+  "component": "DomfiVault",
+  "main_contract": "DomfiVault",
+  "source_file_count": 24,
+  "deployment_count": 9,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.domination.finance/assets/DomFi-security-review_2025-12-07.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x19954ec2363ef593354ebec10e553ca45c4ca0c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4ddbe7c856f3920db4446026fa65be0169fe6012",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x97d18f06bb6a65c13b068dd5c2dfddd71104890e",
+      "is_proxy": true,
+      "implementation_address": "0x4ddbe7c856f3920db4446026fa65be0169fe6012",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9d3e2726ea589d07c52995d8769fcff6fa96ee16",
+      "is_proxy": true,
+      "implementation_address": "0xb25952497ab9463efcd725ab7593aa7eb9ee9b29",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa194082aabb75dd1ca9dc1ba573a5528beb8c2fb",
+      "is_proxy": true,
+      "implementation_address": "0xe2c590d6da2e0db4ed999a2c5d7d42d90392b219",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb097cd77f17c729406cf7d0102a486c6d62c5bbd",
+      "is_proxy": true,
+      "implementation_address": "0xcdacfa9a401b3d5ca662b58af2e8ca3bfa342b8f",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb25952497ab9463efcd725ab7593aa7eb9ee9b29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcdacfa9a401b3d5ca662b58af2e8ca3bfa342b8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe2c590d6da2e0db4ed999a2c5d7d42d90392b219",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "BlackholeRouterConnector",
+  "main_contract": "BlackholeRouterConnector",
+  "source_file_count": 10,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3508a7918ac8f31ef3af71f8bb637926b8983596",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbaa4718b075a4bb467468927fd790cb65f173be0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcadffd8b793351c82b3a02de85c672522c408826",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

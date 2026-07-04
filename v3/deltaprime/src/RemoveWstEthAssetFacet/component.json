@@ -1,0 +1,18 @@
+{
+  "component": "RemoveWstEthAssetFacet",
+  "main_contract": "RemoveWstEthAssetFacet",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8fe7d80de1e4ef8f35f21b3dd5bdf82e6171dc6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

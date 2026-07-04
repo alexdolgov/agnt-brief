@@ -1,0 +1,18 @@
+{
+  "component": "U1ProxyUpgradablity",
+  "main_contract": "U1ProxyUpgradablity",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0862ed7f6b2bc350508b29542511249b7e11a0a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

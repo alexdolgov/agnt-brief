@@ -1,0 +1,18 @@
+{
+  "component": "ERC20PermitPermissionedMint-2",
+  "main_contract": "ERC20PermitPermissionedMint",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x484c2d6e3cdd945a8b2df735e079178c1036578c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

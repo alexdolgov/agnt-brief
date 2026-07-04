@@ -1,0 +1,18 @@
+{
+  "component": "FundingWorksSignature",
+  "main_contract": "FundingWorksSignature",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38b2d254cd935ac6f5a1be4ce2847b2ac63498ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

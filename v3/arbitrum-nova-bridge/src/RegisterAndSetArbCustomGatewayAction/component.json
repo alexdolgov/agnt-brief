@@ -1,0 +1,26 @@
+{
+  "component": "RegisterAndSetArbCustomGatewayAction",
+  "main_contract": "RegisterAndSetArbCustomGatewayAction",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fe2d8ad9efaef358cbd4ef6e1e9cf7148119d37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x997668ee3c575dc060f80b06db0a8b04c9558969",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

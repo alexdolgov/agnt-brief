@@ -1,0 +1,18 @@
+{
+  "component": "wstVLX",
+  "main_contract": "wstVLX",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7ac168c81f4f3820fa3f22603ce5864d6ab3c547",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

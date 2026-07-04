@@ -1,0 +1,18 @@
+{
+  "component": "VaultBaseLib",
+  "main_contract": "VaultBaseLib",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5af516e9a5668675de3a84b11809f34e377589d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

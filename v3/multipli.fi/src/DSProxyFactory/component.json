@@ -1,0 +1,18 @@
+{
+  "component": "DSProxyFactory",
+  "main_contract": "DSProxyFactory",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe23c0d47cdcb3df144c529648651d5c8f3cbe312",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

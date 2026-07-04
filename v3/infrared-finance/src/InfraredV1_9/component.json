@@ -1,0 +1,20 @@
+{
+  "component": "InfraredV1_9",
+  "main_contract": "InfraredV1_9",
+  "source_file_count": 78,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Smart%20Contract%20Security%20Assessment.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xe9a3c95e071599b2178c52277dcf8a57a8bcd8ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

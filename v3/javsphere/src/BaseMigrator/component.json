@@ -1,0 +1,18 @@
+{
+  "component": "BaseMigrator",
+  "main_contract": "BaseMigrator",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x649d74dfbcb2515d42bb2d7de11cf485912fc4ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

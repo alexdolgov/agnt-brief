@@ -1,0 +1,18 @@
+{
+  "component": "MinterDAExpV4-2",
+  "main_contract": "MinterDAExpV4",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe4f5d08522fc6b8a84f242220181d15e1fd16526",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

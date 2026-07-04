@@ -1,0 +1,18 @@
+{
+  "component": "StackToken",
+  "main_contract": "StackToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6855f7bb6287f94ddcc8915e37e73a3c9fee5cf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

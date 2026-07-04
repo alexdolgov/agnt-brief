@@ -1,0 +1,26 @@
+{
+  "component": "VetroArbitrage",
+  "main_contract": "VetroArbitrage",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x359902b1e60574e56248ecdc57c1df1f20982914",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x942fc516b6ad30e8b6c55d3ee00a93b916b800f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

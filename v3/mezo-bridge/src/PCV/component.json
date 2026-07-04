@@ -1,0 +1,26 @@
+{
+  "component": "PCV",
+  "main_contract": "PCV",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a4739509f50e683927472b03e251e36d07dd872",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SystemSettingsLib",
+  "main_contract": "SystemSettingsLib",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x307bdce0a68c612a17bae8d929f36402d7c94cfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

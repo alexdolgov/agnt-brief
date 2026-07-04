@@ -1,0 +1,20 @@
+{
+  "component": "TokenCustodian",
+  "main_contract": "TokenCustodian",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2022-02%20Halborn%20-%20Superfluid_Finance_Smart_Contract_Security_Audit_Report_.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa4dd3f3b68647206e996e1c756f9c36096e65528",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

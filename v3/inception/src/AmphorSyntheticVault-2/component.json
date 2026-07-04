@@ -1,0 +1,21 @@
+{
+  "component": "AmphorSyntheticVault-2",
+  "main_contract": "AmphorSyntheticVault",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Bailsec_final_report.pdf",
+    "https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Salus_final_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd697d2af3ddfe4ed24e92a230c4b93606b5d05fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

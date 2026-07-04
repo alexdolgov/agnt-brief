@@ -1,0 +1,18 @@
+{
+  "component": "LockDealNFT",
+  "main_contract": "LockDealNFT",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3d2c83bbbbfb54087d46b80585253077509c21ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

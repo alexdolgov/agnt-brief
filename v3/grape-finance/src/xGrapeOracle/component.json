@@ -1,0 +1,26 @@
+{
+  "component": "xGrapeOracle",
+  "main_contract": "xGrapeOracle",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4ce9dbb0d37668002572e033ba3e1fe47b5bf4df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcd3f6a462f6e4c63ef00d9f148d6bc021a626af5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

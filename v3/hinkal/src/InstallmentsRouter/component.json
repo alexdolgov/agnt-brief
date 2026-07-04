@@ -1,0 +1,18 @@
+{
+  "component": "InstallmentsRouter",
+  "main_contract": "InstallmentsRouter",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5cf950c9d446693ba9fb14300a52c90abda2fa38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

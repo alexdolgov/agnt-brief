@@ -1,0 +1,18 @@
+{
+  "component": "HooksFactory",
+  "main_contract": "HooksFactory",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xb46bae25ac6d23148531ed1853a8881fd842e517",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

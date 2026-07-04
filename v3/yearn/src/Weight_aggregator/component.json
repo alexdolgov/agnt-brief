@@ -1,0 +1,18 @@
+{
+  "component": "Weight_aggregator",
+  "main_contract": "Weight aggregator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6973cf85d479b9253e13e71f377e8cd2c2dfecd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "sDolaHelper",
+  "main_contract": "sDolaHelper",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ef7b083837db8fcd0fb05a427400151ad6b3336",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c1f6a62cc587e135280cbd59520def551bb3c97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc87f4e6a354ede520250d47bf85a49aa27d2d520",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

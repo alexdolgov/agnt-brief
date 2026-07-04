@@ -1,0 +1,18 @@
+{
+  "component": "TreasuryStake",
+  "main_contract": "TreasuryStake",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6a8f4fc9ae30c4bbc4a5b0ec4acff341fe9b42a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

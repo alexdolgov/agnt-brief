@@ -1,0 +1,18 @@
+{
+  "component": "PayoutManager",
+  "main_contract": "PayoutManager",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x012f1ccb40db36868a36cfc64e852fd0f595cef7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

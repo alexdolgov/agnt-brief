@@ -1,0 +1,26 @@
+{
+  "component": "ValidatorUtils",
+  "main_contract": "ValidatorUtils",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x166f9647b7d21e9e0076bbfeb66c66e18c7a1654",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34f2d59f084f2dad4f386b8742cf2332260152a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

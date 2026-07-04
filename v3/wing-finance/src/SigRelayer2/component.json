@@ -1,0 +1,18 @@
+{
+  "component": "SigRelayer2",
+  "main_contract": "SigRelayer2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaae15233798a477c47d1ea3d4586770a68b9d344",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

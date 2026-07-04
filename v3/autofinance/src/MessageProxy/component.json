@@ -1,0 +1,18 @@
+{
+  "component": "MessageProxy",
+  "main_contract": "MessageProxy",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20ea2f2ecf36bcb6df086d923a120496dc616f76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

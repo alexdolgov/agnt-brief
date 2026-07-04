@@ -1,0 +1,26 @@
+{
+  "component": "MoeLens",
+  "main_contract": "MoeLens",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x768571ab818d5fae3bf7b137f7364e6148c8de7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xdab59901c1cd2c43a63b575704d150c777da1f55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

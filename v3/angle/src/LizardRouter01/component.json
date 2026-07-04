@@ -1,0 +1,18 @@
+{
+  "component": "LizardRouter01",
+  "main_contract": "LizardRouter01",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf26515d5482e2c2fd237149bf6a653da4794b3d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

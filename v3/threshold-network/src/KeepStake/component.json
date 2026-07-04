@@ -1,0 +1,18 @@
+{
+  "component": "KeepStake",
+  "main_contract": "KeepStake",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10de37cf84202a20cae61069c617b3aa874af8b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

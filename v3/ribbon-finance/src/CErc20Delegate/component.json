@@ -1,0 +1,18 @@
+{
+  "component": "CErc20Delegate",
+  "main_contract": "CErc20Delegate",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6789db944e35653d07f67eaf4db4e42adf2f0457",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VestingClaim",
+  "main_contract": "VestingClaim",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e2ca1134dc44b5d368575da316d87ac9b9065e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

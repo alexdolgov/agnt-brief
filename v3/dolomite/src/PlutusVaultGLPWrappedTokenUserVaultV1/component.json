@@ -1,0 +1,18 @@
+{
+  "component": "PlutusVaultGLPWrappedTokenUserVaultV1",
+  "main_contract": "PlutusVaultGLPWrappedTokenUserVaultV1",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x978d4694f02474faef4e1d7ac19038968066f8aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

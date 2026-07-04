@@ -1,0 +1,34 @@
+{
+  "component": "BSCS2YEARANNIVERSARYPool",
+  "main_contract": "BSCS2YEARANNIVERSARYPool",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x02ef13b484e7ce9d4f92a1970a94242988fc6a1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x34d6ad55e295e691318c8410695a8f88cc6baa21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4350e20a6dd4fe18942c65a1a764ffa879230541",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

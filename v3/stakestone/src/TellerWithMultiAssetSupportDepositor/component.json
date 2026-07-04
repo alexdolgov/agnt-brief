@@ -1,0 +1,42 @@
+{
+  "component": "TellerWithMultiAssetSupportDepositor",
+  "main_contract": "TellerWithMultiAssetSupportDepositor",
+  "source_file_count": 8,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x51d9c2e5f23cc9234fe6a8f9b56fec5f1fbf1a5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c28818d63a4efcdcdcee8fb6ceaa5a135e23cce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb90a473313fecf94443d2765cc74aa746a26c686",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf70beca8d49ae12002bf251db1229ffad3ac541c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

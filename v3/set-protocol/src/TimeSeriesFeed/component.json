@@ -1,0 +1,18 @@
+{
+  "component": "TimeSeriesFeed",
+  "main_contract": "TimeSeriesFeed",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb7b2977f1f84629000bf572b466b43ba2b934836",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

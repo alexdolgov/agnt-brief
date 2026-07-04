@@ -1,0 +1,18 @@
+{
+  "component": "Listing_USDC",
+  "main_contract": "Listing_USDC",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8a7c618bb4995c578ce581a39ea6afe4a1b02522",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

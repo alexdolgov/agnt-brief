@@ -1,0 +1,18 @@
+{
+  "component": "ICHIVault",
+  "main_contract": "ICHIVault",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x885711bedd3d17949dfed5e77d5ab6e89c3dfc8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

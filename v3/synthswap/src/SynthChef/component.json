@@ -1,0 +1,20 @@
+{
+  "component": "SynthChef",
+  "main_contract": "SynthChef",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-SynthSwap-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xef153cb7bfc04c657cb7f582c7411556320098b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

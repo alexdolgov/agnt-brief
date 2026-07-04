@@ -1,0 +1,18 @@
+{
+  "component": "PositionRewardsV3",
+  "main_contract": "PositionRewardsV3",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0d77f3f8bd628a48d562f9376da99a0ac2d7c837",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

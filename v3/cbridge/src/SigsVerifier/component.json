@@ -1,0 +1,18 @@
+{
+  "component": "SigsVerifier",
+  "main_contract": "SigsVerifier",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0eca36ed8e2460b7da9dc48c952ad2ae605c1a6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "JoeTokenOFT",
+  "main_contract": "JoeTokenOFT",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

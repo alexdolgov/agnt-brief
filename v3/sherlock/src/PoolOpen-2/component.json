@@ -1,0 +1,18 @@
+{
+  "component": "PoolOpen-2",
+  "main_contract": "PoolOpen",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce9dd62a533cf89abe5018af9682980922b5ce22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

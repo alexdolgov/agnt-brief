@@ -1,0 +1,18 @@
+{
+  "component": "MSyrupUsdtCustomAggregatorFeed",
+  "main_contract": "MSyrupUsdtCustomAggregatorFeed",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e9dbcbcc8c976face7481288bbb9ab285e4d70c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

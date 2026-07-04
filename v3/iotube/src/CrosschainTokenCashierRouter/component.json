@@ -1,0 +1,18 @@
+{
+  "component": "CrosschainTokenCashierRouter",
+  "main_contract": "CrosschainTokenCashierRouter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c8d28345db8cb3284d50dd4b8d660ace7866044",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

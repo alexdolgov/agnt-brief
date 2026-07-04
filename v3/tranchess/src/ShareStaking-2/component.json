@@ -1,0 +1,18 @@
+{
+  "component": "ShareStaking-2",
+  "main_contract": "ShareStaking",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa61f3d8073f7d83c21761a123b8083ff73e2f6e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

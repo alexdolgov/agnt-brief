@@ -1,0 +1,18 @@
+{
+  "component": "PoolV2",
+  "main_contract": "PoolV2",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x32622a9e2518440d319dfd8f6d4cb6a1faf6b399",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

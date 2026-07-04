@@ -1,0 +1,26 @@
+{
+  "component": "Token",
+  "main_contract": "Token",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ada9bf2d08b484cb9dee67caccd04b991d88145",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd180643bfe1d98c33305d554f4ce9aad2861321f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

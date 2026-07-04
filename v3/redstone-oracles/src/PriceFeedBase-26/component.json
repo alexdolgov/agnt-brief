@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedBase-26",
+  "main_contract": "PriceFeedBase",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x65ed6a4ac085620ee943c0b15525c4428d23e4db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

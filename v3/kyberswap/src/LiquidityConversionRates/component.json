@@ -1,0 +1,28 @@
+{
+  "component": "LiquidityConversionRates",
+  "main_contract": "LiquidityConversionRates",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/APRAudit/SmartDecAudit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x40d085f077dd248d7f3c534947d59eb9c4601763",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97d7126b6ff7c4d95601912f4cdf790a3cd1edab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

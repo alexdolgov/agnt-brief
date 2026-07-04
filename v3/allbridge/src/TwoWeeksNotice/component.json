@@ -1,0 +1,18 @@
+{
+  "component": "TwoWeeksNotice",
+  "main_contract": "TwoWeeksNotice",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xee170d3dc00f792e5116b42fe36628f4f28626f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

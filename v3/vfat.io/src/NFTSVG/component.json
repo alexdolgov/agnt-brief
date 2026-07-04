@@ -1,0 +1,26 @@
+{
+  "component": "NFTSVG",
+  "main_contract": "NFTSVG",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x628ee3400ea249a575ad4422c6f9403f719a678f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x88d3cd8e5f810c10694b2b727f50803e64b82690",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

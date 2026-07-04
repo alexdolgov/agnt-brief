@@ -1,0 +1,24 @@
+{
+  "component": "ExecutorPlugin",
+  "main_contract": "ExecutorPlugin",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2023/ackee-blockchain-brahma-console-v2-report.pdf",
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-console-v2-audit-10-23-ackee.pdf",
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-console-v2-audit-2023-10-c4.pdf",
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-console-v2-audit-2023-11-spearbit.pdf",
+    "https://github.com/spearbit/portfolio/blob/master/pdfs/Brahma-Spearbit-Security-Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec4181ee959e47f72e9cc60274fbe53d68949e47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

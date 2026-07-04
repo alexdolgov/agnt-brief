@@ -1,0 +1,34 @@
+{
+  "component": "Tranche",
+  "main_contract": "Tranche",
+  "source_file_count": 14,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x393893caeb06b5c16728bb1e354b6c36942b1382",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9c63a4c499b323a25d389da759c2ac1e385eec92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xefe32813dba3a783059d50e5358b9e3661218dad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

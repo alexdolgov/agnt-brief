@@ -1,0 +1,18 @@
+{
+  "component": "Epoch-2",
+  "main_contract": "Epoch",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x23c9ba9a19a4f3fcc7fdd3899c79ea5a1b42dcce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

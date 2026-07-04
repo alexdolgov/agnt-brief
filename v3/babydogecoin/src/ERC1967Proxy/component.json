@@ -1,0 +1,26 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9d304bd1cea1c4dd69a958574740d43558f97983",
+      "is_proxy": true,
+      "implementation_address": "0x4d7bb9a46fef5df66ee8a3c56e190f6f00215a87",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xacde45a2de43eb5352db38220d3dc70a9eb17f0c",
+      "is_proxy": true,
+      "implementation_address": "0x4d7bb9a46fef5df66ee8a3c56e190f6f00215a87",
+      "liveness": "inactive"
+    }
+  ]
+}

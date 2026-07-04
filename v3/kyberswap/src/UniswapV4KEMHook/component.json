@@ -1,0 +1,22 @@
+{
+  "component": "UniswapV4KEMHook",
+  "main_contract": "UniswapV4KEMHook",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/eb59f23b-ef3c-4b3c-9d28-3455d5337d3f",
+    "https://github.com/KyberNetwork/kyber-exclusive-amm-sc/blob/main/audits/06_24_2025_KyberNetwork_Omniscia_SecurityReview_UniswapV4Hooks.pdf",
+    "https://github.com/spearbit/portfolio/blob/master/pdfs/Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4440854b2d02c57a0dc5c58b7a884562d875c0c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

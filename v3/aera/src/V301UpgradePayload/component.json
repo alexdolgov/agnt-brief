@@ -1,0 +1,18 @@
+{
+  "component": "V301UpgradePayload",
+  "main_contract": "V301UpgradePayload",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3cd1dfb81c50a5300c60a181ed145a7286d81e0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

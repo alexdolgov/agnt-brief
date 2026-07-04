@@ -1,0 +1,21 @@
+{
+  "component": "IncentivizedERC20",
+  "main_contract": "IncentivizedERC20",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/akiratechhq/review-xave-lending-market-2021-10",
+    "https://github.com/akiratechhq/review-xave-lending-market-2021-10/blob/master/Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x317a2aec6ee9474945b1a8e08e0183060721198c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

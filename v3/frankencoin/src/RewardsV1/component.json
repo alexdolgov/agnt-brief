@@ -1,0 +1,18 @@
+{
+  "component": "RewardsV1",
+  "main_contract": "RewardsV1",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1209e42096a0183c14fd26b6faf5707461b78283",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

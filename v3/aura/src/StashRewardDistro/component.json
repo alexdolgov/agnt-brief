@@ -1,0 +1,18 @@
+{
+  "component": "StashRewardDistro",
+  "main_contract": "StashRewardDistro",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2db7d4f89de7ac7fbb31422d51ec3a7c7aa15f9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

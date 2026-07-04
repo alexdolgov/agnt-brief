@@ -1,0 +1,18 @@
+{
+  "component": "NFTDescriptor-2",
+  "main_contract": "NFTDescriptor",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42b24a95702b9986e82d421cc3568932790a48ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

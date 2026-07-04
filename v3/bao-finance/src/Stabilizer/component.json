@@ -1,0 +1,18 @@
+{
+  "component": "Stabilizer",
+  "main_contract": "Stabilizer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1738075663041ca96911cd9c3058ae287e9c6bf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CryptallionToken",
+  "main_contract": "CryptallionToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8574634a96bc7e56847c7df729c8acdbbea37681",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

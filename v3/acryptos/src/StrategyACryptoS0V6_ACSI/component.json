@@ -1,0 +1,18 @@
+{
+  "component": "StrategyACryptoS0V6_ACSI",
+  "main_contract": "StrategyACryptoS0V6_ACSI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8045db83f60fe9fc8eb67593140eeeb4a71bdf51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

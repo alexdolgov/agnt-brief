@@ -1,0 +1,20 @@
+{
+  "component": "ExaPlugin-2",
+  "main_contract": "ExaPlugin",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/exactly/audits/blob/main/Quantstamp%20Exa%20App%20Plugin%20Update%20(Oct-25).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb92e0a6e56d60aed6b99c21350d9de56ca8c648f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

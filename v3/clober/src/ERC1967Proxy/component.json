@@ -1,0 +1,44 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 8,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.clober.io/assets/files/2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625",
+      "is_proxy": true,
+      "implementation_address": "0x82b54a5f07a63d2d2d61a92b1a75839aac25a563",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7ba560d09bd5379216f1e4393906701210cb63fb",
+      "is_proxy": true,
+      "implementation_address": "0xe5141a7287582fd1cc178847f8fc3688198d1a8b",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x82b54a5f07a63d2d2d61a92b1a75839aac25a563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe5141a7287582fd1cc178847f8fc3688198d1a8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

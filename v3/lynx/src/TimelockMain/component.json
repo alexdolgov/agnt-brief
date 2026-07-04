@@ -1,0 +1,18 @@
+{
+  "component": "TimelockMain",
+  "main_contract": "TimelockMain",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1e6ca6640df2cc6121bd4e558138879d01ee2a0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

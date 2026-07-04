@@ -1,0 +1,26 @@
+{
+  "component": "ETHLPStakingRewards",
+  "main_contract": "ETHLPStakingRewards",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x40d203332b0a262f1a371ae9da1788fe6825a6f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe31424213003ac2ab9b3c7a77e56313cbff7e5f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

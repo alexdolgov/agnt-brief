@@ -1,0 +1,18 @@
+{
+  "component": "FireVaultEP-2",
+  "main_contract": "FireVaultEP",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa2b205f8c0f0e30b3f73b7716a718c53cb8e5cc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "OneInchStrategy_1INCH_WBTC",
+  "main_contract": "OneInchStrategy_1INCH_WBTC",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ecae4fff1bb7f9b54d09972097789e00b31e800",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3ffe89b4f9e0b76980ee06301409521cf6825cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OrderExecutor",
+  "main_contract": "OrderExecutor",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7257ac5d0a0aac04aa7ba2ac0a6eb742e332c3fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

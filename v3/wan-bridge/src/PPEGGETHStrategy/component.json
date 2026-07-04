@@ -1,0 +1,18 @@
+{
+  "component": "PPEGGETHStrategy",
+  "main_contract": "PPEGGETHStrategy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x60ae12b7999c5ced1c57230d2040fd1e5cab3cf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

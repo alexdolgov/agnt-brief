@@ -1,0 +1,18 @@
+{
+  "component": "DataFeed-3",
+  "main_contract": "DataFeed",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x15333d47106d55631ea07ff091eae5b056e8943c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

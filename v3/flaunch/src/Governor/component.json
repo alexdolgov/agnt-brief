@@ -1,0 +1,26 @@
+{
+  "component": "Governor",
+  "main_contract": "Governor",
+  "source_file_count": 39,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ba5ea8c8b1aafe9dbcb7a36737acfad6afa5d38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5862e869da6508546fc6a161c2f5feff636288a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

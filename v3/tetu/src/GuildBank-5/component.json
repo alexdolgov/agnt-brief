@@ -1,0 +1,18 @@
+{
+  "component": "GuildBank-5",
+  "main_contract": "GuildBank",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1e8d45f0cbc360eff1f1353b337bf5cd3ed1d924",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "component": "Signing",
+  "main_contract": "Signing",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/aevoxyz/audit/blob/main/VAR-Ribbon230918.pdf",
+    "https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon.pdf",
+    "https://github.com/ribbon-finance/aevo-audit/blob/master/Ribbon-report.pdf",
+    "https://github.com/ribbon-finance/aevo-audit/blob/master/VAR-AEVO230918.pdf",
+    "https://github.com/ribbon-finance/aevo-audit/blob/master/VAR_Ribbon.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3bb8475c30fd70675f6250fb725e30b3a6e6094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

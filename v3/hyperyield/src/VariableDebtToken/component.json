@@ -1,0 +1,18 @@
+{
+  "component": "VariableDebtToken",
+  "main_contract": "VariableDebtToken",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x76fb5b73d63f6c170f1500402c802588e92afe54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

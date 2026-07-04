@@ -1,0 +1,26 @@
+{
+  "component": "FreezerProxy",
+  "main_contract": "FreezerProxy",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x47a472f45057a9d79d62c6427367016409f4ff5a",
+      "is_proxy": true,
+      "implementation_address": "0xa79cdb272799175a118a4ce49cecbf3ec86649e6",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa79cdb272799175a118a4ce49cecbf3ec86649e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

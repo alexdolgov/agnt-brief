@@ -1,0 +1,21 @@
+{
+  "component": "BTCDMinting",
+  "main_contract": "BTCDMinting",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1304119658-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FnIdk11PalG0VB24i5MDQ%2Fuploads%2FSam1sOy7RoQXOzxl8WHQ%2FNethermind-BTCD-Audit-1.pdf",
+    "https://1304119658-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FnIdk11PalG0VB24i5MDQ%2Fuploads%2FrWme4izaqYP4p8HHl0pE%2FNethermind-BTCD-Audit-2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x270e9eef1ad5118f117547e6f809cbdc7a56b45f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

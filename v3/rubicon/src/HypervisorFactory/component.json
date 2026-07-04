@@ -1,0 +1,18 @@
+{
+  "component": "HypervisorFactory",
+  "main_contract": "HypervisorFactory",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xeb1e9934a7f668a4e3ce8845bc28a88c0ae43c96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

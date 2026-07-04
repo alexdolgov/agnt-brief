@@ -1,0 +1,18 @@
+{
+  "component": "uniBTC",
+  "main_contract": "uniBTC",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38a3e2bf46201833628b120dc8c83d90f26234e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

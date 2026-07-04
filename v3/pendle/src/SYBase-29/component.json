@@ -1,0 +1,20 @@
+{
+  "component": "SYBase-29",
+  "main_contract": "SYBase",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pendle-finance/pendle-core-v2-public/blob/main/audits/main%20codebase/ChainSecurity-2024/ChainSecurity.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc430db19339a3051192233b4c49f9ab3dc6d16b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "NotionalTradeModule",
+  "main_contract": "NotionalTradeModule",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2022-06-notional-coop"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x600d9950c6ecaef98cc42fa207e92397a6c43416",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DelegatedManagerFactory",
+  "main_contract": "DelegatedManagerFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38d8fa043913e8ef6466d01bef4af42cafa3b235",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "YieldStEthLever",
+  "main_contract": "YieldStEthLever",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d80583c830af6f2a2628318bee3720ce5421bc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

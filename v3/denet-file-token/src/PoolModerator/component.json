@@ -1,0 +1,18 @@
+{
+  "component": "PoolModerator",
+  "main_contract": "PoolModerator",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbf15ea652abd362eefd5c9e555329083afd2e55a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WeightedIndexFactory",
+  "main_contract": "WeightedIndexFactory",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a3f5e320b86293017b6e36b75eb9e8bb048b5cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

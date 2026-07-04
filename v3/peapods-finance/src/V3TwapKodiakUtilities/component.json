@@ -1,0 +1,18 @@
+{
+  "component": "V3TwapKodiakUtilities",
+  "main_contract": "V3TwapKodiakUtilities",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0b025cfe2ecc57a62864d823aef6c6a78629adcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

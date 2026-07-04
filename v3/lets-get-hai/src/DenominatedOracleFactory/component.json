@@ -1,0 +1,18 @@
+{
+  "component": "DenominatedOracleFactory",
+  "main_contract": "DenominatedOracleFactory",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc3a0035bcd3fcbb84a4874b19f7170bfe167fd35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

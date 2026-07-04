@@ -1,0 +1,34 @@
+{
+  "component": "Purchaser",
+  "main_contract": "Purchaser",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x58dcb47956de1e99b1af0ceb643727ef66af4647",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93163634a8879df97343b4d6b49c5516ccd1fab8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6c2b9f5ee30b7f2bca5c3dcc28e27fcb733be04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

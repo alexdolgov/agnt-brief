@@ -1,0 +1,18 @@
+{
+  "component": "TerminatedContract",
+  "main_contract": "TerminatedContract",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b7406b06ce2ff145c274f39941211c2a146194a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

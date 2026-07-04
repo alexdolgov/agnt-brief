@@ -1,0 +1,23 @@
+{
+  "component": "FeeRegistry",
+  "main_contract": "FeeRegistry",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbioticfi/rewards-v2/blob/main/audits/Ackee-RewardsV2.pdf",
+    "https://github.com/symbioticfi/rewards-v2/blob/main/audits/Bailsec-RewardsV2.pdf",
+    "https://raw.githubusercontent.com/symbioticfi/rewards-v2/main/audits/Ackee-RewardsV2.pdf",
+    "https://raw.githubusercontent.com/symbioticfi/rewards-v2/main/audits/Bailsec-RewardsV2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3bb11a393801393f2ab37f4798add0ded5ff6ce3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CrosschainTokenCashierRouter-2",
+  "main_contract": "CrosschainTokenCashierRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2a26fede01bfa03e65cd3c68f421cab83648391a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

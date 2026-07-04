@@ -1,0 +1,18 @@
+{
+  "component": "REtherRepayDelegate",
+  "main_contract": "REtherRepayDelegate",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa0c22204dc8ce0235dac9740c56468bf30fcfd6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SFItoken",
+  "main_contract": "SFItoken",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7636d8722fdf7cd34232a915e48e96aa3eb386bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

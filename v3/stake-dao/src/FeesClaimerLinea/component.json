@@ -1,0 +1,18 @@
+{
+  "component": "FeesClaimerLinea",
+  "main_contract": "FeesClaimerLinea",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x4389a0d72781f4fffa6df040c98d50b625e85313",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

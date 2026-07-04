@@ -1,0 +1,18 @@
+{
+  "component": "LockProxy",
+  "main_contract": "LockProxy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x250e76987d838a75310c34bf422ea9f1ac4cc906",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

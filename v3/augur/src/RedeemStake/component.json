@@ -1,0 +1,18 @@
+{
+  "component": "RedeemStake",
+  "main_contract": "RedeemStake",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ac7b28a7e684d1b2776d6b9045e8f9150f58401",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

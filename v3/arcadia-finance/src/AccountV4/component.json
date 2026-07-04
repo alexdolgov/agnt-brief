@@ -1,0 +1,20 @@
+{
+  "component": "AccountV4",
+  "main_contract": "AccountV4",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2025-09%20Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe976bfb44f9322164ca6fda6c5b84fbb6163d442",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

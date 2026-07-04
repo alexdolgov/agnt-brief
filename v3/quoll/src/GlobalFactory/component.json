@@ -1,0 +1,18 @@
+{
+  "component": "GlobalFactory",
+  "main_contract": "GlobalFactory",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x247009c6f39bc08d5d39ac38c9d5a0d316947d9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

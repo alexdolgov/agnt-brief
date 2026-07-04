@@ -1,0 +1,18 @@
+{
+  "component": "NitroEnclaveVerifier",
+  "main_contract": "NitroEnclaveVerifier",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f3a16e1fe6fda64c5ac4296e13ecb9f7b44f6fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

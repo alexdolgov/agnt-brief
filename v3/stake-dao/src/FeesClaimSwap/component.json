@@ -1,0 +1,18 @@
+{
+  "component": "FeesClaimSwap",
+  "main_contract": "FeesClaimSwap",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x03a41c13378a816edd7ced1acaead4554b233f52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

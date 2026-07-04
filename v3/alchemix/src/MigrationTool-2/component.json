@@ -1,0 +1,18 @@
+{
+  "component": "MigrationTool-2",
+  "main_contract": "MigrationTool",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e94c527e6a1def124ebf5be38c8c876a541bffb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

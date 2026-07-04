@@ -1,0 +1,18 @@
+{
+  "component": "CurveTwocryptoSwap",
+  "main_contract": "CurveTwocryptoSwap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x1a83348f9ccfd3fe1a8c0adba580ac4e267fe495",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

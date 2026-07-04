@@ -1,0 +1,18 @@
+{
+  "component": "RewardManager",
+  "main_contract": "RewardManager",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8025d4deda0c7512d44438a7dc597612b4108f07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

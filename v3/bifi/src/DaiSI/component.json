@@ -1,0 +1,18 @@
+{
+  "component": "DaiSI",
+  "main_contract": "DaiSI",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x257d6f962f23b7848792665ed9513a1ab72ecde4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

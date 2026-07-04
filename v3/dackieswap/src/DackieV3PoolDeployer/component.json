@@ -1,0 +1,18 @@
+{
+  "component": "DackieV3PoolDeployer",
+  "main_contract": "DackieV3PoolDeployer",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xc6f3966e5d08ced98ac30f8b65beab5882be54c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

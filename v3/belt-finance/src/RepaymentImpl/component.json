@@ -1,0 +1,18 @@
+{
+  "component": "RepaymentImpl",
+  "main_contract": "RepaymentImpl",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa884a7568f2ddba46127c99e4c83928d44dd742a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

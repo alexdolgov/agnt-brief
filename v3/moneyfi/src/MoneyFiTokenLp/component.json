@@ -1,0 +1,18 @@
+{
+  "component": "MoneyFiTokenLp",
+  "main_contract": "MoneyFiTokenLp",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0f33473b45df316aa410d7060faf2ace2b7b7181",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RolesAuthority",
+  "main_contract": "RolesAuthority",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x352f80e8f63871649cf23a68cd28907a5582b0ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

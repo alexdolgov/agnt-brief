@@ -1,0 +1,18 @@
+{
+  "component": "DiamondEtherscanFacet",
+  "main_contract": "DiamondEtherscanFacet",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc492fbae68ce6c5e14c7ed5cd8a59babd5c90e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VaultRouter",
+  "main_contract": "VaultRouter",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf684014771c01e50b8b526968b3a1e33acda63f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

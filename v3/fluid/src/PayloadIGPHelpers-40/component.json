@@ -1,0 +1,18 @@
+{
+  "component": "PayloadIGPHelpers-40",
+  "main_contract": "PayloadIGPHelpers",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf472c6252bb2872dd0cd06019fb344cee61e6959",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

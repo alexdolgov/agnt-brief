@@ -1,0 +1,18 @@
+{
+  "component": "EntityStoreERC721",
+  "main_contract": "EntityStoreERC721",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3e94bb555c4d1e58825eda60fade1b5272551dc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

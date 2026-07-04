@@ -1,0 +1,28 @@
+{
+  "component": "UnipilotFarm",
+  "main_contract": "UnipilotFarm",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Unipilot/unipilot-audits/blob/master/FarmingV2/Unipilot-Farming-V2-Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6e665791f0219a10a4d52ac0915931cf045220b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8fddc464ee63575463afd214586344a09b309102",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

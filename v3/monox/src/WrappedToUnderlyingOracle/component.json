@@ -1,0 +1,26 @@
+{
+  "component": "WrappedToUnderlyingOracle",
+  "main_contract": "WrappedToUnderlyingOracle",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1145e9503000c4b2c9022a196717be5b7feba6a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x220ea780a484c18fd0ab252014c58299759a1fbd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

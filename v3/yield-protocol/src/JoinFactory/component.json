@@ -1,0 +1,26 @@
+{
+  "component": "JoinFactory",
+  "main_contract": "JoinFactory",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c2fc3ee04cfe813a6d31ffb904e5b9fcd7c9242",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7297644611af0dbb1be1c2b4885de9288edd81e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

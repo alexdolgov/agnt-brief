@@ -1,0 +1,21 @@
+{
+  "component": "Timelock",
+  "main_contract": "Timelock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BeltFi/belt-contract/blob/main/audit/%5BENG%5DBELT_HECO_Security_Assessment.pdf",
+    "https://github.com/BeltFi/belt-contract/blob/main/audit/%5BKOR%5DBELT_HECO_Security_Assessment.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9eec9655f514822fbe494ae2ea1be7cf80be1c93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

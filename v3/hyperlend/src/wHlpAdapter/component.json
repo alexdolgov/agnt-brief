@@ -1,0 +1,18 @@
+{
+  "component": "wHlpAdapter",
+  "main_contract": "wHlpAdapter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x190897a08371be59f309db2377832a462f003d76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

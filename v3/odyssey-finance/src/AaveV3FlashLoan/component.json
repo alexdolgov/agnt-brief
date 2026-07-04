@@ -1,0 +1,18 @@
+{
+  "component": "AaveV3FlashLoan",
+  "main_contract": "AaveV3FlashLoan",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7436186d83d8f98e542a5bd37d18e91f265c312b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

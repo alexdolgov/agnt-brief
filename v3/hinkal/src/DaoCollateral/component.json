@@ -1,0 +1,18 @@
+{
+  "component": "DaoCollateral",
+  "main_contract": "DaoCollateral",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26227b1f96c773c0ed4c6ea99fc8b0d69efd8d0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

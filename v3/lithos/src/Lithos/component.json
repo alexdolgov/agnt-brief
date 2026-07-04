@@ -1,0 +1,18 @@
+{
+  "component": "Lithos",
+  "main_contract": "Lithos",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xb8f92504e33b194a57af64af982796243d599f47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

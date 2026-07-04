@@ -1,0 +1,26 @@
+{
+  "component": "DisputeKitGatedShutterProxy",
+  "main_contract": "DisputeKitGatedShutterProxy",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x788330092b9704809c19858e39eb9ac402c2e47b",
+      "is_proxy": true,
+      "implementation_address": "0xb12eb4c0716d3a9861a9ac471c6cddb808d61b32",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb12eb4c0716d3a9861a9ac471c6cddb808d61b32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

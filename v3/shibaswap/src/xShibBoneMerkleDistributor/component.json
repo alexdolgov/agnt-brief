@@ -1,0 +1,18 @@
+{
+  "component": "xShibBoneMerkleDistributor",
+  "main_contract": "xShibBoneMerkleDistributor",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2c14852974afe7755ea824260ca5df03b816458",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

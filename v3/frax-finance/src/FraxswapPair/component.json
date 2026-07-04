@@ -1,0 +1,18 @@
+{
+  "component": "FraxswapPair",
+  "main_contract": "FraxswapPair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43ec799eadd63848443e2347c49f5f52e8fe0f6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

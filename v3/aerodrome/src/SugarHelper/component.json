@@ -1,0 +1,18 @@
+{
+  "component": "SugarHelper",
+  "main_contract": "SugarHelper",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0ad09a66af0154a84e86f761313d02d0abb6edd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LaunchPadFactory",
+  "main_contract": "LaunchPadFactory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd0fa59395ae0c7ea3735225b0465bb5f63d1b13a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

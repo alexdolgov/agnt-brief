@@ -1,0 +1,18 @@
+{
+  "component": "EmergencySwitchHub",
+  "main_contract": "EmergencySwitchHub",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x07e1e05274fee68d10484adc8405786c2c9cf40d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

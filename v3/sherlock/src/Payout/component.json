@@ -1,0 +1,18 @@
+{
+  "component": "Payout",
+  "main_contract": "Payout",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc118439d0630873cdf3a1fee798b22c2b61c23f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

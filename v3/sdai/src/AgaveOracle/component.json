@@ -1,0 +1,18 @@
+{
+  "component": "AgaveOracle",
+  "main_contract": "AgaveOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x062b9d1d3f5357ef399948067e93b81f4b85db7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

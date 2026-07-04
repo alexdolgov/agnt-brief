@@ -1,0 +1,18 @@
+{
+  "component": "AccountSpot",
+  "main_contract": "AccountSpot",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd8af1f1dee6ea38f9c08b5cfa31e01ad2bfbef28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BaseShareField",
+  "main_contract": "BaseShareField",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45d866a51d76d7288a316a9095430828b0137d6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

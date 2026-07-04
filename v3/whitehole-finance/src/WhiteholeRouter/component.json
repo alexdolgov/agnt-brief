@@ -1,0 +1,18 @@
+{
+  "component": "WhiteholeRouter",
+  "main_contract": "WhiteholeRouter",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e90aca697d7eb6ed3c81fd56ddb7ee17299bb10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GeyserViewer",
+  "main_contract": "GeyserViewer",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe897769d639f68005e2bf56e8f7f11094ac2777f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

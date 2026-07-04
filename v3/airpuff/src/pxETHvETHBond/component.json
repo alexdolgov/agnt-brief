@@ -1,0 +1,18 @@
+{
+  "component": "pxETHvETHBond",
+  "main_contract": "pxETHvETHBond",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x054b28d847c566a6b991de34afeada8bb8dec947",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

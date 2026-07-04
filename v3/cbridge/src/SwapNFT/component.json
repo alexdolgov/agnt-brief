@@ -1,0 +1,26 @@
+{
+  "component": "SwapNFT",
+  "main_contract": "SwapNFT",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x19305fa7b4832b7f7545cc752c71f8cdf9f60226",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4609795281f8c2d90de9fd4a18609198819513e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+# mux-protocol — deployments
+
+73 verified deployment(s) across 35 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x0035f6ca0417cd36eb62764bcbbe163e7d296059` | LibOrderBook2 | impl | live | no |
+| arbitrum | `0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6` | GnosisSafeProxy | proxy | live | no |
+| arbitrum | `0x11c0c4dd6ce692b2aa2d65da07aa38687f603bd9` | LibGmx | impl | live | no |
+| arbitrum | `0x19b9ecd3fa2dc9272cd815ee05f300534b4f1d8b` | DataStore | impl | live | no |
+| arbitrum | `0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef` | LibOrderBook | impl | live | yes |
+| arbitrum | `0x1dc6de1bba19e04c069da8d0a8f367ace33cb1cf` | MuxLpOracle | impl | live | no |
+| arbitrum | `0x2257dc42b363d611898057354c031a670934ed3f` | ProxyAdmin | impl | live | no |
+| arbitrum | `0x2a2987c407e76782fc422a27240c9821206b8d9f` | DataStore-2 | impl | live | no |
+| arbitrum | `0x2f9ac5322e6fac446e0b9861cf7f8a0662f7b909` | CollateralPool | impl | live | yes |
+| arbitrum | `0x3038faa722de6f2c9eac80fb15e75bbfef31f1bd` | GmxV2Adapter | impl | live | no |
+| arbitrum | `0x32469164f327ddd6c378332fafac89f4a8635349` | MuxLpOracle | impl | live | no |
+| arbitrum | `0x36b74e1d00aff68e472dbdcf2e35f085878e424a` | Swapper | impl | live | yes |
+| arbitrum | `0x37c8939e905c68ccb76f9f300d6020a0eaa47837` | Swapper | impl | live | yes |
+| arbitrum | `0x433f7611ef8176b70469dfda659e554ae2bbedfb` | Initializable | impl | live | no |
+| arbitrum | `0x436c9b6182e96b0526dd12f041730854756af525` | DataStore-3 | impl | live | no |
+| arbitrum | `0x46ffa915d87bf915c2d01ac7d4c1c5338fa5acec` | DataStore-4 | impl | live | no |
+| arbitrum | `0x53b47240f9725c9baf4637a1196b1700cfbde744` | Diamond | impl | live | no |
+| arbitrum | `0x67740dddea7a555c30af42536c786133c7e58508` | ProxyAdmin-2 | impl | live | no |
+| arbitrum | `0x6ccece30536b468817a8a56fb6c090dc52d4cc0c` | GmxV2Adapter | impl | live | no |
+| arbitrum | `0x6fded16b69ca396e437af47bdad1d0352e4d2705` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| arbitrum | `0x7f64014cd8fa9309a43c1dd37317ccc2527d1337` | Swapper | impl | live | yes |
+| arbitrum | `0x80c874e50017996106baf6d551ed9b0706e7587b` | RoleStore | impl | live | no |
+| arbitrum | `0x89258cc6220870bc0592c8e67555f16f1a4ab600` | GmxV2Adapter | impl | live | no |
+| arbitrum | `0x8a71e50fc04460b390162f7af67fa193c772dbf2` | MuxLpOracle | impl | live | no |
+| arbitrum | `0x91d8c0f268f3b923f8c429b358f61e6aed2cfeb8` | Swapper | impl | live | yes |
+| arbitrum | `0x93c68e82f5add9e38679add560386e1608ec92cf` | GmxV2Adapter | impl | live | no |
+| arbitrum | `0x985c24816385c4cce9fa48ca484fa174a279b89c` | DataStore-5 | impl | live | no |
+| arbitrum | `0xa2288d0d878d1d3541663650e4e1e8b38e58dd58` | MuxLpOracle | impl | live | no |
+| arbitrum | `0xa3b5d8ac1074120d702798cee04cf1c49a938cf3` | Delegator | impl | live | yes |
+| arbitrum | `0xcbe6f730436d0fc522eee52ca53db016a2d87c05` | GmxV2Adapter | impl | live | no |
+| arbitrum | `0xd0059430e2d1f27e161fb8539f12a36241e85706` | Swapper | impl | live | yes |
+| arbitrum | `0xd342b250b3171b3f6e2859c1402c53042691ca22` | GmxV2Adapter | impl | live | no |
+| arbitrum | `0xd822d79412f700f6573ca69fc5f1e16326b703a0` | Swapper | impl | live | yes |
+| arbitrum | `0xe1645e6a4e166ce4811f9fd559b895a9c3f94f8e` | DataStore-6 | impl | live | no |
+| arbitrum | `0xe27ca8f191497eb284529f6e3698be242b757029` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| arbitrum | `0xe56a0a38c6085c748638948e2c224f98c1e2b29c` | ProxyFactory | impl | live | no |
+| arbitrum | `0xe75278fb4728d1cdff0f4e390da774dca9c801e9` | ProxyAdmin | impl | live | no |
+| arbitrum | `0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b` | Staking | impl | live | no |
+| arbitrum | `0xf370b935be793bda2793bbed0cbcfe32ce75eaef` | Delegator | impl | live | yes |
+| arbitrum | `0xf61da339230c4bb7cafa444bd7ffa4d5d5ec6c2c` | DataStore-7 | impl | live | no |
+| arbitrum | `0xf89adc4e0f3659e9b69aa4f8606176e8fd6b72be` | GmxAdapter | impl | live | no |
+| arbitrum | `0xfe2afaf34b3016dda8cf2df75ded256ddffeb115` | GmxV2Adapter | impl | live | no |
+| avalanche | `0x3d44efa23a531fae02d8daf9ee8daaac61d66475` | LiquidityPoolHop1 | impl | live | yes |
+| bsc | `0x1ea32f93cd1edfbdd8279f7cfc1da9546e0e5b3b` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x2257dc42b363d611898057354c031a670934ed3f` | ProxyAdmin | impl | live | no |
+| bsc | `0x2b9d445dc03fecd49d52da986b5aca38a7e7771d` | NativeUnwrapper | impl | live | yes |
+| bsc | `0x2d0c1313c50050698575e49d1cd9bc2b9be51a4f` | ProxyAdmin | impl | live | no |
+| bsc | `0x30ab1bafa1488a3deb07e98a969f08b969aa4299` | OrderBook | impl | live | yes |
+| bsc | `0x30acc119f8b60c9cb92b8e3c4c7f8830c82f707e` | OrderBook | impl | live | yes |
+| bsc | `0x335fd3bb235322a54590684b2990e8be73422002` | MuxBookUpdater202404 | impl | live | no |
+| bsc | `0x38e5385adaa9d506bcdc2eb66203d8ceaef07e0c` | OrderBook | impl | live | yes |
+| bsc | `0x393df1b7f96f9818973d300c9751a0f6503ef457` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x3e3ae3250a51851242f59d2876db3147a3a9706f` | Admin | impl | live | yes |
+| bsc | `0x480894501d4050763d3b54e741bb82fd5f91df89` | Admin | impl | live | yes |
+| bsc | `0x4b4b0a545630284fdbb41f4edf78a7087595db31` | Account | impl | live | no |
+| bsc | `0x4e1b11d29106cca13b38d0a834ae3e18e8701441` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x505659f2eea25e3a46d8ebd2cf28a883c897e785` | Admin | impl | live | yes |
+| bsc | `0x544458efd22b6953203409d06b50e5ec84205a11` | LibFlashTake | impl | live | no |
+| bsc | `0x60a8f199938c9ae5673c6967f5b4190d8654bcb7` | NativeUnwrapper | impl | live | yes |
+| bsc | `0x71a672db7d72047118d664861e4643f84cf2614c` | LiquidityManager | impl | live | yes |
+| bsc | `0x728d3c69fc2fb401f6db29a49646dbc8efd6af84` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x770cf655e2e574c7c135f7a9514f8b36b942501b` | OrderBook | impl | live | yes |
+| bsc | `0x782ffe1aae2d0529f5f6eb257b740e21887f318d` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x7f65424bf920d4c25ab87583b9ab3585554379ee` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x826111ca9f8ab0a1f35fc9de2f01e96c31b95be1` | OrderBook | impl | live | yes |
+| bsc | `0x9b699ab715123f250417d76ddba25173427665fe` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xb3022de15628d44c51aaaaf68e9e0fd9a23c5fca` | ProxyAdmin | impl | live | no |
+| bsc | `0xcd4e22065ce153b00c229872d8c6601dc8abcf8c` | Admin | impl | live | yes |
+| bsc | `0xe12fde70907cdf165eb0d35ffa4f78ce4194310d` | Storage | impl | live | no |
+| bsc | `0xe6c1278ad6e5785f8f84199a7ae9fa26449a4722` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xe837ada634a2eac39e3d8a2999a725dde378a3a4` | Admin | impl | live | yes |
+| bsc | `0xee3b94e7eabedf97981558644188fb813e94dffa` | Admin | impl | live | yes |
+| bsc | `0xfb0dcdc30bf892ec981255e7133aecb8ea642b76` | Account | impl | live | no |
+
+## Source unavailable (6)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- avalanche `0x8564c77261094abeee6d60a26d40f8dbaf23fc94`
+- bsc `0x48be7a0f822d68f7a26d49d2c7cb7f3e072f0b84`
+- bsc `0x973db3142aa601ef11c1c8148e6ea8e7a4ee6b07`
+- bsc `0xf483423315e2a14fbeaa97451fa3866fb37a27dd`
+- bsc `0xf67d9ec4f3362589e56ab0dbee448eb7a4964204`
+- optimism `0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5`

@@ -1,0 +1,18 @@
+{
+  "component": "RtknToPrimeConverter",
+  "main_contract": "RtknToPrimeConverter",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x85ff7ee82c6b65e483db10609f004b1ab347a7bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

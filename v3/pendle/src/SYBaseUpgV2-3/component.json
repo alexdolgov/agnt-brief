@@ -1,0 +1,18 @@
+{
+  "component": "SYBaseUpgV2-3",
+  "main_contract": "SYBaseUpgV2",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x293d5aecca95bc33cac36a28f3ce0cf43f9f9fe5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

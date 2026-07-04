@@ -1,0 +1,18 @@
+{
+  "component": "MaviaNFT",
+  "main_contract": "MaviaNFT",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36ccbfa07891ca6d4ecb2226a6d0b699efdf584c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

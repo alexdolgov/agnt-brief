@@ -1,0 +1,18 @@
+{
+  "component": "WBTCToCRVUSDExchange",
+  "main_contract": "WBTCToCRVUSDExchange",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5602eb937b25f783a4b7b522b7c0baf28be58815",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

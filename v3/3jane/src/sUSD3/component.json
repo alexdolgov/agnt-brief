@@ -1,0 +1,71 @@
+{
+  "component": "sUSD3",
+  "main_contract": "sUSD3",
+  "source_file_count": 3,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3jane-protocol/audits/blob/main/electisec-audit.pdf",
+    "https://github.com/3jane-protocol/audits/blob/main/sherlock-2-audit.pdf",
+    "https://github.com/3jane-protocol/audits/blob/main/sherlock-audit.pdf",
+    "https://github.com/3jane-protocol/audits/blob/main/veridise-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05367c7a76afeb7bdf7c06b479d7551d6536a06e",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x492a3dd7a6f4bc7ff7b2d001148e2c67b33d9f91",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49ef4aef11d236a5e0879d07975fc30efd0df852",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f6694dde9dacceea069b5bbf41735c029bc0645",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x83872df0cbdc2408ba61123004105372ce45f35a",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd35e3bd64eed7db85162bc2a4e4f37796247c2e",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf733c71a6e9c46741fbcbd0af37a1543373304de",
+      "is_proxy": true,
+      "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "liveness": "live"
+    }
+  ]
+}

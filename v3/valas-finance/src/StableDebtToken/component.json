@@ -1,0 +1,18 @@
+{
+  "component": "StableDebtToken",
+  "main_contract": "StableDebtToken",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b36d41fb288c3014517d75e5ba1ea21de038c0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

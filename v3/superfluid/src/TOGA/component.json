@@ -1,0 +1,18 @@
+{
+  "component": "TOGA",
+  "main_contract": "TOGA",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa3c8502187fd7a7118ead59dc811281448946c8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

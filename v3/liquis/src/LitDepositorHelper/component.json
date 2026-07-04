@@ -1,0 +1,29 @@
+{
+  "component": "LitDepositorHelper",
+  "main_contract": "LitDepositorHelper",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/liquisfi/security/blob/main/audits/Liquis_Audit_Report_by_WatchPug.pdf",
+    "https://github.com/liquisfi/security/blob/main/audits/Liquis_Audit_Report_by_WatchPug_prelaunch.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4512c81c2a88ea83539b535988cbe2f454d373b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97a2585ddb121db8e9a3b6575e302f9c610af08c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

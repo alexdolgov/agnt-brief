@@ -1,0 +1,26 @@
+{
+  "component": "AgentVeTokenV2",
+  "main_contract": "AgentVeTokenV2",
+  "source_file_count": 46,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4e37ac6e11ecd5e107ba05dfb5ef664485f24eda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe561031a2992c3b6e0e5eaf6f19ea04d3a5a6756",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

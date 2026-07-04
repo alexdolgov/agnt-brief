@@ -1,0 +1,18 @@
+{
+  "component": "SingleRewards",
+  "main_contract": "SingleRewards",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x23f101a767022f95dda1e5f35defb46c0a8366b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

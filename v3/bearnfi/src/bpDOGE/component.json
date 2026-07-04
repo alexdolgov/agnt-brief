@@ -1,0 +1,18 @@
+{
+  "component": "bpDOGE",
+  "main_contract": "bpDOGE",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcfdb9f1b40513adf7f83aa2646a0309ee5d6be25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

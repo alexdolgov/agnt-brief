@@ -1,0 +1,18 @@
+{
+  "component": "SnowGlobeJoeAVAXFRAXMini",
+  "main_contract": "SnowGlobeJoeAVAXFRAXMini",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8a9d06976073715461d66d595523a06c7b5c5313",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "component": "CsigmaPermissionedFactory",
+  "main_contract": "CsigmaPermissionedFactory",
+  "source_file_count": 44,
+  "deployment_count": 9,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x057d1f972887c7b99048a050249d6b726831e9f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2a4648de77365e4eb24d54134452dc1b52ce2b4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x37bdd789a515140593ece202365e5987c9f11d41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6609d3da21de9da07767a12198cd1a70f4e3f8c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6cbaf736d2ee502fea9b40ee68efadd782070c11",
+      "is_proxy": true,
+      "implementation_address": "0x057d1f972887c7b99048a050249d6b726831e9f0",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x95c144f33ca6c28fb7a5b50809a7ba57f2a6e3ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9b1463b8f110f927eb49e908b597624d52fcddb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc1f0b4a3137d1cd884eaa69fa4f1e2496b51dd77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xef31a05eca5c2f70d98fdb12b406902cd98590f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PosiNFT",
+  "main_contract": "PosiNFT",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x46c72d43ff4d86645abadad5b70d503585f7a4e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

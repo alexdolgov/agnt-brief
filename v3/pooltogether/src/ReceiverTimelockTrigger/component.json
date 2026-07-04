@@ -1,0 +1,34 @@
+{
+  "component": "ReceiverTimelockTrigger",
+  "main_contract": "ReceiverTimelockTrigger",
+  "source_file_count": 26,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x24c3e15bdc10ce2cb1bec56cd43f397ce9b89430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x832cb306640dd33542dba08ca1c13dd6686a3a88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc2e914f1ebe630335f10e6240a0bf0635a2e9cb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

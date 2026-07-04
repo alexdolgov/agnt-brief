@@ -1,0 +1,26 @@
+{
+  "component": "NodeSale",
+  "main_contract": "NodeSale",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x50db30deb68b0f40df4d07c002142100a5b77102",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa60a66f6ce0f43b9d36d9c138aee858fc683cfaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

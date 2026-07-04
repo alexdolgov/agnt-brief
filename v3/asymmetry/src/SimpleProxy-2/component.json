@@ -1,0 +1,46 @@
+{
+  "component": "SimpleProxy-2",
+  "main_contract": "SimpleProxy",
+  "source_file_count": 9,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-09-asymmetry",
+    "https://gist.github.com/romeroadrian/3bf5506e1e4a0594cc722b0310b5e362",
+    "https://gist.github.com/romeroadrian/cea29ae49185dcc9096f49314a83f151"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00000069abbb0b1ad6975bcf753eee15d318a0bf",
+      "is_proxy": true,
+      "implementation_address": "0xb628b1fdbe8c01777aea2bf3bd386df4af84e8d3",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12fc2bf0edea2437cd4fe17ec2b65dc45eb92aad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5aed1241b2b4530d45f1e837a3955ab7953f8cd4",
+      "is_proxy": true,
+      "implementation_address": "0x12fc2bf0edea2437cd4fe17ec2b65dc45eb92aad",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8794f7a0c53cf536ff50a9d7f736cd402fa1fae4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

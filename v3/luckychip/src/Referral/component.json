@@ -1,0 +1,18 @@
+{
+  "component": "Referral",
+  "main_contract": "Referral",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb91d7631d296422a88c9de7fc4f5233b965540a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

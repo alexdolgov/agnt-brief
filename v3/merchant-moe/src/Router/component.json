@@ -1,0 +1,18 @@
+{
+  "component": "Router",
+  "main_contract": "Router",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x45a62b090df48243f12a21897e7ed91863e2c86b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

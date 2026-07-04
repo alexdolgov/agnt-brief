@@ -1,0 +1,18 @@
+{
+  "component": "BPool",
+  "main_contract": "BPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4572b9882fd29bdbe26a74dfa8afe9a75365e560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

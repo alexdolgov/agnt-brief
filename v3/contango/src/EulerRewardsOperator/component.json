@@ -1,0 +1,20 @@
+{
+  "component": "EulerRewardsOperator",
+  "main_contract": "EulerRewardsOperator",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/contango-xyz/core-v2/blob/main/audit/Offbeat%20Security%20-%20Euler%20Money%20Market%20Review%20-%20Sep%202024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3863d03938ead437e3f136778531dcb89f29ead",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CoreStrategyAaveGrail",
+  "main_contract": "CoreStrategyAaveGrail",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe0cc333e7cdc403ebdf412c350622f95978a7b50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

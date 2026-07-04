@@ -1,0 +1,18 @@
+{
+  "component": "CTProjectOwner",
+  "main_contract": "CTProjectOwner",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SymmioTimelockController-2",
+  "main_contract": "SymmioTimelockController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x62d68cad88fef03a68e461b476cbb3d9681ccf2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

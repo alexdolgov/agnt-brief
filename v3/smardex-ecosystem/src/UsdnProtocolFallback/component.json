@@ -1,0 +1,18 @@
+{
+  "component": "UsdnProtocolFallback",
+  "main_contract": "UsdnProtocolFallback",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd4e615ab327324e9f2bb492c42d47ee8213959c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

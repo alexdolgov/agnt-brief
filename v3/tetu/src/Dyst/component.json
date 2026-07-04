@@ -1,0 +1,18 @@
+{
+  "component": "Dyst",
+  "main_contract": "Dyst",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x39ab6574c289c3ae4d88500eec792ab5b947a5eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

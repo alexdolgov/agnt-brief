@@ -1,0 +1,18 @@
+{
+  "component": "Forwarder",
+  "main_contract": "Forwarder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x0d0b4862f5ffa3a47d04ddf0351356d20c830460",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

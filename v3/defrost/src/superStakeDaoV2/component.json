@@ -1,0 +1,26 @@
+{
+  "component": "superStakeDaoV2",
+  "main_contract": "superStakeDaoV2",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x80a97199a116e3d4b6c04ce2bf88cb055eeae151",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xda45eec6218cb4846659e7722c44204f4abbbffb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

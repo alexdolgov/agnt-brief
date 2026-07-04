@@ -1,0 +1,18 @@
+{
+  "component": "RamsesV3PoolDeployer",
+  "main_contract": "RamsesV3PoolDeployer",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6a4113ed0915bcf5e48e758e8f4cebffc07c66f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

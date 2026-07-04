@@ -1,0 +1,18 @@
+{
+  "component": "PayloadIGP12",
+  "main_contract": "PayloadIGP12",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe83188f97b3e22892c543731d124e44ba6c93dcd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

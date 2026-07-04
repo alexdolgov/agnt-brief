@@ -1,0 +1,18 @@
+{
+  "component": "GlobalPool_R22",
+  "main_contract": "GlobalPool_R22",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4748b69634c7d807d0ea5aa3647267549ecfce15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

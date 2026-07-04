@@ -1,0 +1,18 @@
+{
+  "component": "RareWiggies",
+  "main_contract": "RareWiggies",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x871b671a8e5da1bab132e1034684b1b8c1225257",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

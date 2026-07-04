@@ -1,0 +1,18 @@
+{
+  "component": "AETH_R6",
+  "main_contract": "AETH_R6",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfe5dea3569e16d8a0a5449378087f1e80a8e737f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

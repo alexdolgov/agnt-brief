@@ -1,0 +1,18 @@
+{
+  "component": "AlpacaBreed",
+  "main_contract": "AlpacaBreed",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

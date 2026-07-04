@@ -1,0 +1,18 @@
+{
+  "component": "FETH_R17",
+  "main_contract": "FETH_R17",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ca86af6cb3dc9876705fe1579d281a80a9645cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

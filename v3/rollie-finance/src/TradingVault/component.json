@@ -1,0 +1,20 @@
+{
+  "component": "TradingVault",
+  "main_contract": "TradingVault",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/zokyo-sec/audit-reports/blob/main/Rollie/Rollie_Zokyo_audit_report_April16th_2024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xa79e00e68549e91e5f0c27048f453b3d87ef6e3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

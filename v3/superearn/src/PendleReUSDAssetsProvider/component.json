@@ -1,0 +1,18 @@
+{
+  "component": "PendleReUSDAssetsProvider",
+  "main_contract": "PendleReUSDAssetsProvider",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb0c1338c127840043cafdb208c956d24d71fb30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

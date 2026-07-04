@@ -1,0 +1,18 @@
+{
+  "component": "vista20Deployer",
+  "main_contract": "vista20Deployer",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

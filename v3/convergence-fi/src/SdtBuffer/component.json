@@ -1,0 +1,18 @@
+{
+  "component": "SdtBuffer",
+  "main_contract": "SdtBuffer",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb22d48e43dd9cf08987b85e21f172c515cd5871",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

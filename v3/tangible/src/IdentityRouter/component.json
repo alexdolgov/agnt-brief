@@ -1,0 +1,18 @@
+{
+  "component": "IdentityRouter",
+  "main_contract": "IdentityRouter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2e0c5018815904c87729519a51dda22713bef0e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DeadManShift",
+  "main_contract": "DeadManShift",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x61235f75437f8ea76deb530ce97bcf114fa0cb0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

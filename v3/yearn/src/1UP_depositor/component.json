@@ -1,0 +1,18 @@
+{
+  "component": "1UP_depositor",
+  "main_contract": "1UP depositor",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x633f1861e8c3e4a54451d3f726dc686a94564690",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

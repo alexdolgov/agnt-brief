@@ -1,0 +1,26 @@
+{
+  "component": "MultiMorphoDirectAssetsProvider",
+  "main_contract": "MultiMorphoDirectAssetsProvider",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13cee5ac81a78f23be0b3846e9d5b622d62f3785",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd49162a9279441f9f12e199b0a28499fb85b8fb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

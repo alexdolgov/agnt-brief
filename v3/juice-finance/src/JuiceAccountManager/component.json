@@ -1,0 +1,18 @@
+{
+  "component": "JuiceAccountManager",
+  "main_contract": "JuiceAccountManager",
+  "source_file_count": 77,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x23eba06981b5c2a6f1a985bdce41bd64d18e6dfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

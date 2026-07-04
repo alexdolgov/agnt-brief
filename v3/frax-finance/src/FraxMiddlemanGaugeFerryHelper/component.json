@@ -1,0 +1,18 @@
+{
+  "component": "FraxMiddlemanGaugeFerryHelper",
+  "main_contract": "FraxMiddlemanGaugeFerryHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x54bd5c72645fed784c117ca83533e0584b24ee5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

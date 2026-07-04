@@ -1,0 +1,18 @@
+{
+  "component": "OrigamiAaveV3FlashLoanProvider",
+  "main_contract": "OrigamiAaveV3FlashLoanProvider",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88469316c5f828b4dfd11c4d8529cd9f96b2e006",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

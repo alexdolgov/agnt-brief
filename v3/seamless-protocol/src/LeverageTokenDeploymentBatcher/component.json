@@ -1,0 +1,18 @@
+{
+  "component": "LeverageTokenDeploymentBatcher",
+  "main_contract": "LeverageTokenDeploymentBatcher",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4466d52b714ef32657db89ec61fab1b7e30a0352",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

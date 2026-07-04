@@ -1,0 +1,21 @@
+{
+  "component": "LimitOrderHook",
+  "main_contract": "LimitOrderHook",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/Gamma_LimitOrders_Report.pdf",
+    "https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2016c0e4f8bb1d6fea777dc791be919e2eda40c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

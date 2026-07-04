@@ -1,0 +1,18 @@
+{
+  "component": "VeilETHQueueV2",
+  "main_contract": "VeilETHQueueV2",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9d919cc8ad0a4d7e7d05ff6b505e44326945570a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

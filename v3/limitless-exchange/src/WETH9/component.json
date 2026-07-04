@@ -1,0 +1,18 @@
+{
+  "component": "WETH9",
+  "main_contract": "WETH9",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0f654baec6fd510309a3a8f3461f8d73e7eef2b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

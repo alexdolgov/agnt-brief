@@ -1,0 +1,26 @@
+{
+  "component": "VaultWrapper",
+  "main_contract": "VaultWrapper",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7bbef22955ceee1e7060e20056dc20efec4c213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf285ae1ddace607838e1cd8bdb83c0b113843ba3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

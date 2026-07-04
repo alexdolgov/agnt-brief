@@ -1,0 +1,18 @@
+{
+  "component": "CCTPFacet",
+  "main_contract": "CCTPFacet",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x452b5f476f4fa706a80c513c52729e47150d343c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

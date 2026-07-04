@@ -1,0 +1,26 @@
+{
+  "component": "FullRangeLiquidityManager",
+  "main_contract": "FullRangeLiquidityManager",
+  "source_file_count": 93,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x6da0c0a6153f3c161d7fb260b5f040d5530fe365",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xa7ce35e886e58926ad0c149f4cc558e27d458a2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

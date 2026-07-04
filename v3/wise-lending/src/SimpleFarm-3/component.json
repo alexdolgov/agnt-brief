@@ -1,0 +1,18 @@
+{
+  "component": "SimpleFarm-3",
+  "main_contract": "SimpleFarm",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb9af861aae3dd6bec86f5512d704afc621722d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

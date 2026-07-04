@@ -1,0 +1,18 @@
+{
+  "component": "DungeonMaster",
+  "main_contract": "DungeonMaster",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

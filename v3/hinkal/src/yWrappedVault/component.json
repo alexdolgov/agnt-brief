@@ -1,0 +1,18 @@
+{
+  "component": "yWrappedVault",
+  "main_contract": "yWrappedVault",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x881b06da56bb5675c54e4ed311c21e54c5025298",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

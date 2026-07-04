@@ -1,0 +1,18 @@
+{
+  "component": "LeveragedToken",
+  "main_contract": "LeveragedToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x92d0cb7e56806bf977e7f5296ea2fe84b475fe83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

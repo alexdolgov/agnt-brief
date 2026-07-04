@@ -1,0 +1,26 @@
+{
+  "component": "DToken",
+  "main_contract": "DToken",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x109f2f2b8e2490ba9cd8b5ab1d1dc7fb4aed3b63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x548758470914544bb289801153157517a6ca2a82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Auth",
+  "main_contract": "Auth",
+  "source_file_count": 68,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x090e88bc794cce2d622738cafb5b8ba0cae37661",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5bf686cfb85786fcfff557297d4aff8f4e15e44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

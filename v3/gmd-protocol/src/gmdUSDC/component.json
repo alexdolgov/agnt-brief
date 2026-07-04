@@ -1,0 +1,18 @@
+{
+  "component": "gmdUSDC",
+  "main_contract": "gmdUSDC",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3db4b7da67dd5af61cb9b3c70501b1bdb24b2c22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

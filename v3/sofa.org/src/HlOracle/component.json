@@ -1,0 +1,26 @@
+{
+  "component": "HlOracle",
+  "main_contract": "HlOracle",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x088dbbeec1489c557f8d4fd6146e0590e303d7d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x634b69cc4168cfc1c366078fdeb874affbb478b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

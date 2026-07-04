@@ -1,0 +1,18 @@
+{
+  "component": "JBChainlinkV3SequencerPriceFeed",
+  "main_contract": "JBChainlinkV3SequencerPriceFeed",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6ed8eedc0689bd6a8c7168301897a0113c28bba4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

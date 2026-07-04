@@ -1,0 +1,28 @@
+{
+  "component": "Fyde",
+  "main_contract": "Fyde",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://2610459056-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbQllaeunfO4BPaZU1ABc%2Fuploads%2FDrOUIAG2nAdc0Lf0RxD8%2FFyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdde736837c7c275a952a52ee11face88adde6711",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

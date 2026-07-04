@@ -1,0 +1,18 @@
+{
+  "component": "TaxDistributionHelper",
+  "main_contract": "TaxDistributionHelper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x56333af228c6fc1283c3a93ec1facd661a49b4ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

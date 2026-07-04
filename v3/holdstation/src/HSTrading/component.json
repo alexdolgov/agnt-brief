@@ -1,0 +1,18 @@
+{
+  "component": "HSTrading",
+  "main_contract": "HSTrading",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x63c6c31d8eb709281281cc06b7b3b11a2187ec85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

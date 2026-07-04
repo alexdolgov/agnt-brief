@@ -1,0 +1,18 @@
+{
+  "component": "DepositToken",
+  "main_contract": "DepositToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf168c59ce642353bf79caebf98fd8fed40966485",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

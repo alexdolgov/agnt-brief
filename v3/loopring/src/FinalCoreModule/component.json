@@ -1,0 +1,18 @@
+{
+  "component": "FinalCoreModule",
+  "main_contract": "FinalCoreModule",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac7c9f9fb318ebc08424406aed752455ade1ee55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

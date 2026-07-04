@@ -1,0 +1,34 @@
+{
+  "component": "SwapDeployer",
+  "main_contract": "SwapDeployer",
+  "source_file_count": 11,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29fd31d37ab8d27f11eab68f96424bf64231ffce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7003102c75587e8d29c56124060463ef319407d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6c2e0adc659007ba7c48446f5a4e4e94dfe08b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

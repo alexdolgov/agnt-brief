@@ -1,0 +1,18 @@
+{
+  "component": "AuraViewHelpersLite",
+  "main_contract": "AuraViewHelpersLite",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x8f67bb1f24eba8d123ae7f18c13b925ba7f13552",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

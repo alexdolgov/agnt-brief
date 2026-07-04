@@ -1,0 +1,18 @@
+{
+  "component": "GaguesOwner",
+  "main_contract": "GaguesOwner",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e41e9885fe139cfaea3d174677e0a0c8c350830",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

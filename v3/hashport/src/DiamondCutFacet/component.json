@@ -1,0 +1,18 @@
+{
+  "component": "DiamondCutFacet",
+  "main_contract": "DiamondCutFacet",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x101461c74d9298fbbe7fffafaa5d4e7c4ea0a5f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

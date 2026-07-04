@@ -1,0 +1,18 @@
+{
+  "component": "StakeAccountManagerReader",
+  "main_contract": "StakeAccountManagerReader",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

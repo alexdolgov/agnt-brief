@@ -1,0 +1,18 @@
+{
+  "component": "PuroToucanCarbonOffsets",
+  "main_contract": "PuroToucanCarbonOffsets",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x05de010c6187a8bb3232176674f7492b5a7de399",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ConvexFactory",
+  "main_contract": "ConvexFactory",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3da992f4694d1a1624c32cafb5e57fe75b4bc867",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7ba3147f4c1563848fb760352c056d2c8465732",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

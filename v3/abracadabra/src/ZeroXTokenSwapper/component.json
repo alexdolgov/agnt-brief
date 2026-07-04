@@ -1,0 +1,26 @@
+{
+  "component": "ZeroXTokenSwapper",
+  "main_contract": "ZeroXTokenSwapper",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26f20d6dee51ad59af339bedf9f721113d01b6b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6655bdefd9e03b552075bc992c986e48294aed2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

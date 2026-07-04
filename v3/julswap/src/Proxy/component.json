@@ -1,0 +1,18 @@
+{
+  "component": "Proxy",
+  "main_contract": "Proxy",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5dffc99f807963954c83cc3dff9de610ad95a63c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

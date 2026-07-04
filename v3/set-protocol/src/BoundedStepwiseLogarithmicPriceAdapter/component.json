@@ -1,0 +1,18 @@
+{
+  "component": "BoundedStepwiseLogarithmicPriceAdapter",
+  "main_contract": "BoundedStepwiseLogarithmicPriceAdapter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbafd0bc01d46302a2eb4c47b1880b86fd3143562",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

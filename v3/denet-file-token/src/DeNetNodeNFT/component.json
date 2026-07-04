@@ -1,0 +1,26 @@
+{
+  "component": "DeNetNodeNFT",
+  "main_contract": "DeNetNodeNFT",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3a7edb9aadf3c873964eed60d44639d46c50e8db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3b0233f5b8798e11473247e3a6624f3a9fbcf5ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

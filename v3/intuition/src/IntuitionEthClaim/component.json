@@ -1,0 +1,18 @@
+{
+  "component": "IntuitionEthClaim",
+  "main_contract": "IntuitionEthClaim",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x81cfb09cb44f7184ad934c09f82000701a4bf672",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BlockchainInfo",
+  "main_contract": "BlockchainInfo",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2189751274d792b6693e70468fb43ec4af7a76f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

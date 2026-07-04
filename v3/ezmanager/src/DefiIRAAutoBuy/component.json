@@ -1,0 +1,26 @@
+{
+  "component": "DefiIRAAutoBuy",
+  "main_contract": "DefiIRAAutoBuy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2e0c4f2bd3ed47880a911544d2615d0a719d0ab4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x871d3acf5ecb1e849c40c875588a1c5c07b925dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

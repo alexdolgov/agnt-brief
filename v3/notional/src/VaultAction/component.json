@@ -1,0 +1,18 @@
+{
+  "component": "VaultAction",
+  "main_contract": "VaultAction",
+  "source_file_count": 71,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x63757f772b8aab66f4de09617e8f257249efcb93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OwnershipFacet",
+  "main_contract": "OwnershipFacet",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33a5613897604d093fd9f8786300a52ba66ed2cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

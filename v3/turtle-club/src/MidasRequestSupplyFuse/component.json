@@ -1,0 +1,26 @@
+{
+  "component": "MidasRequestSupplyFuse",
+  "main_contract": "MidasRequestSupplyFuse",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b66a7dd521ae6ee23c280af3277e54bdd209a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45209c7f307894fd19fb0560827107b7c4bdcab8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

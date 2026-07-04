@@ -1,0 +1,18 @@
+{
+  "component": "CoWSwapFarm",
+  "main_contract": "CoWSwapFarm",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x08ce17d83b3bebb1c43a55a054d656ecbebaffa7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

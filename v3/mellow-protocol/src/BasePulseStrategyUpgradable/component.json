@@ -1,0 +1,18 @@
+{
+  "component": "BasePulseStrategyUpgradable",
+  "main_contract": "BasePulseStrategyUpgradable",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94ab171819be4a9bb349a34c8f47087d4ffe046f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "USDV",
+  "main_contract": "USDV",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea3fb6f331735252e7bfb0b24b3b761301293dbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

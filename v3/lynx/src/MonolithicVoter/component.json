@@ -1,0 +1,18 @@
+{
+  "component": "MonolithicVoter",
+  "main_contract": "MonolithicVoter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x51f02904d2d5ce3cdc36cd2907ce36f0cef12ee0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

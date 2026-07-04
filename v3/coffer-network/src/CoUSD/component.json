@@ -1,0 +1,18 @@
+{
+  "component": "CoUSD",
+  "main_contract": "CoUSD",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc481a577e0fdf5db93f925e5ee2726ee57d8d981",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

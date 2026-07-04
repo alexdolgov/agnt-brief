@@ -1,0 +1,26 @@
+{
+  "component": "BunniToken",
+  "main_contract": "BunniToken",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x053d11735f501199ec64a125498f29ed453d27a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x176ca19007b1e2c9d85b8ecd68f89bb7f8a208f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

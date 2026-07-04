@@ -1,0 +1,18 @@
+{
+  "component": "WirexToken",
+  "main_contract": "WirexToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa02120696c7b8fe16c09c749e4598819b2b0e915",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "GiantToken",
+  "main_contract": "GiantToken",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb27f33682418c52b1dcca1300b4982e3f6945800",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfce6cd2408f997a6fd6e74ae2e3cc9301bec373b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

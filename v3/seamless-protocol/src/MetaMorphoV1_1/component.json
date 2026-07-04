@@ -1,0 +1,26 @@
+{
+  "component": "MetaMorphoV1_1",
+  "main_contract": "MetaMorphoV1_1",
+  "source_file_count": 65,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x27d8c7273fd3fcc6956a0b370ce5fd4a7fc65c18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5a47c803488fe2bb0a0eaaf346b420e4df22f3c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

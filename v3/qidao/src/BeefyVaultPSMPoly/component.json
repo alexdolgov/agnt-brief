@@ -1,0 +1,34 @@
+{
+  "component": "BeefyVaultPSMPoly",
+  "main_contract": "BeefyVaultPSMPoly",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6d01fbf0f5d085209aeefab3ab8e31298183453a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdefff862c76c6f9c7164b44f860fae64c2a92af5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfa85a4cf8bebcd65d0bf45bc5cd8c4c865306be3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

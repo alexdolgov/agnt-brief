@@ -1,0 +1,18 @@
+{
+  "component": "MerkleDrop",
+  "main_contract": "MerkleDrop",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5f4e865591842e753ee03b132b99ecd6090da08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

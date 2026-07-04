@@ -1,0 +1,34 @@
+{
+  "component": "VotingEscrow",
+  "main_contract": "VotingEscrow",
+  "source_file_count": 11,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5cb57f1e5b463b093efac1222e87fa51982b5f23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8fb2a4d801e223a3f76326106b396d3ed25837b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc11f14da5e998be1010c06f9d92574c2e88672c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

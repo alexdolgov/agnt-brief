@@ -1,0 +1,18 @@
+{
+  "component": "Protocol_Owned_Liquidity",
+  "main_contract": "Protocol Owned Liquidity",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x929401e30aab6bd648def2d30ff44952bab04478",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

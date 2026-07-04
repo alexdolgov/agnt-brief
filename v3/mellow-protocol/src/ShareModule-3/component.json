@@ -1,0 +1,21 @@
+{
+  "component": "ShareModule-3",
+  "main_contract": "ShareModule",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1022099409-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mk3LEacyGwD8y6mb9-2%2Fuploads%2FLBYikKe3UYNWMV8Kte52%2FSherlock_Mellow-Core-Vaults_20250728.pdf",
+    "https://1022099409-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mk3LEacyGwD8y6mb9-2%2Fuploads%2FNs4351hVFYzadiFii2az%2FNethermind_Mellow-Core-Vaults_20250903.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5475ae8be6f0e68db9245eaacf3a85e021e469ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

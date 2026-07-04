@@ -1,0 +1,269 @@
+{
+  "schema_version": "2.0",
+  "project_key": "solidly-labs",
+  "generated_at": "2026-07-03T21:06:54.527Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 2,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 624675,
+    "tvl_usd": 624675,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://solidly.com",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-05",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 2,
+      "unknown": 1
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 2,
+    "total_contracts_indexed": 2,
+    "live_contracts": 2,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x777172d858dc1599914a1c4c6c9fc48c99a60990",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BaseV2TokenInterface",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x04ec553dc65312c85cd914927b5f45112f8fe37c",
+      "impl_name": "BaseV2TokenInterface",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x777172d858dc1599914a1c4c6c9fc48c99a60990",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13872"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2022-12-31 12:56:35+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x77730ed992d286c53f3a0838232c3957daeaaf73",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VeV2Interface",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x306dd1d3d2637c13cc59686889c0b9550c13c8bb",
+      "impl_name": "VeV2Interface",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77730ed992d286c53f3a0838232c3957daeaaf73",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13872"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2022-12-31 12:56:35+03",
+      "deploy_coverage_basis": "match_unverified"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 13871,
+      "audit_key": "audit-13871",
+      "report_name": "Cyfrin_Memebox_Audit.pdf",
+      "report_url": "https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Memebox%20(Solidly%20V2%20Memecore)/Cyfrin_Memebox_Audit.pdf",
+      "auditor": "Cyfrin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13872,
+      "audit_key": "audit-13872",
+      "report_name": "audit_solidly.pdf",
+      "report_url": "https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V2/audit_solidly.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13873,
+      "audit_key": "audit-13873",
+      "report_name": "cyfrin_solidlyV3.pdf",
+      "report_url": "https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V3/cyfrin_solidlyV3.pdf",
+      "auditor": "Cyfrin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 100,
+      "latest_audit": null
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 2
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13871,
+        "report_name": "Cyfrin_Memebox_Audit.pdf"
+      },
+      {
+        "audit_id": 13873,
+        "report_name": "cyfrin_solidlyV3.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

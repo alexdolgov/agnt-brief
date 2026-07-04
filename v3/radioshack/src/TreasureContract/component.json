@@ -1,0 +1,18 @@
+{
+  "component": "TreasureContract",
+  "main_contract": "TreasureContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdff3a0fb729c66c185056972a8c39164b529d866",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

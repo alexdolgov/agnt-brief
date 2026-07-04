@@ -1,0 +1,18 @@
+{
+  "component": "BaseStrategy-4",
+  "main_contract": "BaseStrategy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf028595e4421629fa0915a47a0baa0ab5fd304f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

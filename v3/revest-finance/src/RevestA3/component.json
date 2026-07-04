@@ -1,0 +1,18 @@
+{
+  "component": "RevestA3",
+  "main_contract": "RevestA3",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36c2732f1b2ed69cf17133ab01f2876b614a2f27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

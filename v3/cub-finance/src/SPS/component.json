@@ -1,0 +1,18 @@
+{
+  "component": "SPS",
+  "main_contract": "SPS",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1633b7157e7638c4d6593436111bf125ee74703f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

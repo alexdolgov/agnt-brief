@@ -1,0 +1,18 @@
+{
+  "component": "FluidInstadappClaimFuse",
+  "main_contract": "FluidInstadappClaimFuse",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59da0ce05cfcf0da3257a96446e5b98edb788c25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

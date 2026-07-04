@@ -1,0 +1,18 @@
+{
+  "component": "TransactionBatcher",
+  "main_contract": "TransactionBatcher",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "CauldronV3_1",
+  "main_contract": "CauldronV3_1",
+  "source_file_count": 16,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xacdd6e28b7440fe17eefd927337480dd1ea7a97b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc7a161cfd0e133d289b13692b636b8e8b5cd8d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x16ebacab63581e69d6f7594c9eb1a05df808ea75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

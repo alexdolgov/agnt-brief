@@ -1,0 +1,18 @@
+{
+  "component": "ThBillHyperliquidComposer",
+  "main_contract": "ThBillHyperliquidComposer",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xabb13ab90f90aa195af77a50b3f4b25a74cc3923",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

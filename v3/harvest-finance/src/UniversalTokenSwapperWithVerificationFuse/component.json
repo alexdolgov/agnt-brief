@@ -1,0 +1,26 @@
+{
+  "component": "UniversalTokenSwapperWithVerificationFuse",
+  "main_contract": "UniversalTokenSwapperWithVerificationFuse",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x38bd09c17ea88ceb2f7916bf07af13c2d9f72370",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4c3acdfdf187772b1fbbe2de99a0275082b03710",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

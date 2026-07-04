@@ -1,0 +1,20 @@
+{
+  "component": "OFTTokenERC20",
+  "main_contract": "OFTTokenERC20",
+  "source_file_count": 160,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stargate-protocol/stargate-v2/blob/main/audits/Stargate%20V2%20-%20Zellic%20FINAL%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x160345fc359604fc6e70e3c5facbde5f7a9342d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

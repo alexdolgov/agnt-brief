@@ -1,0 +1,18 @@
+{
+  "component": "EulerEarnVaultLens",
+  "main_contract": "EulerEarnVaultLens",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07d6b3981cbc1dc34102735b987b175116635091",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TokenGovernance-2",
+  "main_contract": "TokenGovernance",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa489c2b5b36835a327851ab917a80562b5afc244",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

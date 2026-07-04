@@ -1,0 +1,26 @@
+{
+  "component": "NFTFactory",
+  "main_contract": "NFTFactory",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97be94250aef1df307749afaed27f9bc8ab911db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb42e6f6cb2a2efcf4c638cb7a61ade5bed82609",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SdtStakingLogo",
+  "main_contract": "SdtStakingLogo",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4617548f686be150c3c5c131926b5be287fded02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Router-2",
+  "main_contract": "Router",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1e78740217910ba0bb65eeee875cfcf8bffee97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

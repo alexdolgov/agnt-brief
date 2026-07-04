@@ -1,0 +1,20 @@
+{
+  "component": "Depository",
+  "main_contract": "Depository",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/depository/Symbiosis%20Depository%20Audit%20-%20Decurity.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x84b10469db07446d5fc7156aefdd6b7117108a73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RedeemEscrow",
+  "main_contract": "RedeemEscrow",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x17100f8cafd727550bb32e6f1496d463da6d978f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ARTHValuecoin",
+  "main_contract": "ARTHValuecoin",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x85dab10c3ba20148ca60c2eb955e1f8ffe9eaa79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

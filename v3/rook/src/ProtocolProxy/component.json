@@ -1,0 +1,26 @@
+{
+  "component": "ProtocolProxy",
+  "main_contract": "ProtocolProxy",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d880bb27b1cd850d4bc331b1654af01bd69b47a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf15ba8b5c35bacc45e627a1c4e25eb6269f4018b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

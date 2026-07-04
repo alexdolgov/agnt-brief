@@ -1,0 +1,18 @@
+{
+  "component": "Hub",
+  "main_contract": "Hub",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c01cecf2c8fa6cf6cdedfe2568fdbbf62858509",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

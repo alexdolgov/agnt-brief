@@ -1,0 +1,18 @@
+{
+  "component": "RLPReader",
+  "main_contract": "RLPReader",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbefe614a45a8300f2a4a00fb634b7137b6b1bc47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

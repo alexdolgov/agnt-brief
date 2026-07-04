@@ -1,0 +1,18 @@
+{
+  "component": "YBC_Weight_Aggregator",
+  "main_contract": "YBC Weight Aggregator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xadb7228a85fcd24e3cfc8c58e2d4b9f03e1468d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

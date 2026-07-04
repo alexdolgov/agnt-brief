@@ -1,0 +1,18 @@
+{
+  "component": "Controller",
+  "main_contract": "Controller",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xeb26c551f606a9692c05fe06af885717db8cdd24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

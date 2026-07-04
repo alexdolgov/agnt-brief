@@ -1,0 +1,18 @@
+{
+  "component": "MultiSigWalletWithLock",
+  "main_contract": "MultiSigWalletWithLock",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb15367df8a39ea06f8f81ed35d49e056ee05f3b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

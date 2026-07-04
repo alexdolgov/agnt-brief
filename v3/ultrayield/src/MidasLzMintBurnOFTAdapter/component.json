@@ -1,0 +1,42 @@
+{
+  "component": "MidasLzMintBurnOFTAdapter",
+  "main_contract": "MidasLzMintBurnOFTAdapter",
+  "source_file_count": 41,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x55b40c5ebc53c4b03a7cba602c6ceed3fc2349c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa0df4e2d295a450e4704c3603b54b33eb7d086c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc76e6105f79feb40ae04efbb10d994386c1c04c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe43d2d52c047e2ca3f7ba3a0d03e513536eccad6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 1,
+  "deployment_count": 21,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2926f8bf9cdbd0a649f823689844893d3655b010",
+      "is_proxy": true,
+      "implementation_address": "0xec1e991f65d85742a167cb9f29da249453f73af4",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3349d54c4151e43ddf2182ea23b9fb65008413b2",
+      "is_proxy": true,
+      "implementation_address": "0x76764028e1cacc2bcf26b9614edf1c54855adff0",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3bad6588e4f2322c1f4ce969444bed160d42b8e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5f02713f229c18d879ac913145aad8b3eba88626",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6197f1b4198296b637b731e9994bc366d29cccaa",
+      "is_proxy": true,
+      "implementation_address": "0x1b730d32c06fa5a5343a4a0d19e3b3b2a07cdf92",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x649efbf7d96b06a2bd0fb134621ac9dd031923a4",
+      "is_proxy": true,
+      "implementation_address": "0x83aac7173fc04cc9a9d45124ba33c92a99a8f0bf",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x76764028e1cacc2bcf26b9614edf1c54855adff0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8cf87eb3420f784cff22bb2331d0c0cf2d173cf3",
+      "is_proxy": true,
+      "implementation_address": "0xbb19ea9042f3074011f28a2fb29ccaae5197b95a",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9591b9a2f77f4305513da9ee1c652257e441e2c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9abe20473a332adf4591404c2433104e5112e24e",
+      "is_proxy": true,
+      "implementation_address": "0x5f69f25251f30159f76bfaacdfac0870c96fac10",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa5ec8c903d7bb4bee500b7d44da803787f699e8a",
+      "is_proxy": true,
+      "implementation_address": "0x69770043a791e40c421e04aaa8dd6fd322aa3c06",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaa4bcfd115faa759cd1968c57a82c44591ce1078",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaaccbbb3f1caaac940c6b9569d496a3756ccec3c",
+      "is_proxy": true,
+      "implementation_address": "0x2b0c8b914ff485ec5f0fc49840c0267ceec046c1",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xae89f7c27122551a027891263db247552d3479c6",
+      "is_proxy": true,
+      "implementation_address": "0x3bad6588e4f2322c1f4ce969444bed160d42b8e3",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaf921f4145bdf146dae177f59c1a1bfe67d6b61e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbb19ea9042f3074011f28a2fb29ccaae5197b95a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd1f978d6a88f41da73111d26ae7ea1d3aac377f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe5bc54292c68cca116aaed4bd7c234d479f0ccad",
+      "is_proxy": true,
+      "implementation_address": "0xe851720b46628f30bbb7e34f42015b65cf56259e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xec1e991f65d85742a167cb9f29da249453f73af4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xecb38d6fa159543925b79a86b62887cbffa18771",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xef6f20eae1de643c2318ec55a267361ea0edce43",
+      "is_proxy": true,
+      "implementation_address": "0xbb19ea9042f3074011f28a2fb29ccaae5197b95a",
+      "liveness": "inactive"
+    }
+  ]
+}

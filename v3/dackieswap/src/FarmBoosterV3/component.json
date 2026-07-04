@@ -1,0 +1,18 @@
+{
+  "component": "FarmBoosterV3",
+  "main_contract": "FarmBoosterV3",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x72c9cc42b7372f658e6392bcf6aacb749a8f9fda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

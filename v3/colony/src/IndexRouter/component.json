@@ -1,0 +1,18 @@
+{
+  "component": "IndexRouter",
+  "main_contract": "IndexRouter",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6a676ff024215942706071c84e086cd0af361270",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TradingPortalFacet",
+  "main_contract": "TradingPortalFacet",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x20c2e940e1edc66e80cd61f5c259391ba6ed9f67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VaultV7",
+  "main_contract": "VaultV7",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0b436e3ea85121510e10c2c3b99f7724258bded4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

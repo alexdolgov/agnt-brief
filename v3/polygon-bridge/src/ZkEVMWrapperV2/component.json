@@ -1,0 +1,18 @@
+{
+  "component": "ZkEVMWrapperV2",
+  "main_contract": "ZkEVMWrapperV2",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7bd2f45b2d389c5bdeea7a09d7b0f5e2270fcae8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

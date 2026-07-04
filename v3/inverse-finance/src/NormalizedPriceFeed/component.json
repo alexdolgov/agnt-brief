@@ -1,0 +1,18 @@
+{
+  "component": "NormalizedPriceFeed",
+  "main_contract": "NormalizedPriceFeed",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a618c4ab1053739816cbbfc89f6c78c8746e40f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

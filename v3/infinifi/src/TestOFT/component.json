@@ -1,0 +1,18 @@
+{
+  "component": "TestOFT",
+  "main_contract": "TestOFT",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa90c9bae9b1a41ced9639a652ba4162a2079cb00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

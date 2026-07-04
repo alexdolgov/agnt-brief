@@ -1,0 +1,42 @@
+{
+  "component": "FUSDv2",
+  "main_contract": "FUSDv2",
+  "source_file_count": 13,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3c56f017d9ce85350df8f4b495033aaa15563a99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9ac98c4f1abf12b4db0976c6c08d1d64922ec2c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcafab3ee74997bd8ff5357ea0edc9ced62550531",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xef2a8e57c5e972616edae297d9e0c7827ab3562a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

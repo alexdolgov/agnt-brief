@@ -1,0 +1,26 @@
+{
+  "component": "FunctionsSubscriptions",
+  "main_contract": "FunctionsSubscriptions",
+  "source_file_count": 44,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x767b63ae98fcf99ad04e819ce93ec5cd0299bbf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x97b207cdbd46400f23c2392c4fb20f7b4e948ace",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

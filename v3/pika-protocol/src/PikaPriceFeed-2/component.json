@@ -1,0 +1,18 @@
+{
+  "component": "PikaPriceFeed-2",
+  "main_contract": "PikaPriceFeed",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdb4174e1a4005a30f5a0924f43c8dfcb8cbd828a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

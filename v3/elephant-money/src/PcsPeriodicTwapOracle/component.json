@@ -1,0 +1,18 @@
+{
+  "component": "PcsPeriodicTwapOracle",
+  "main_contract": "PcsPeriodicTwapOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x28fafc6ff614e6c2d7ca95959a3c0881fd5679e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "NectarController",
+  "main_contract": "NectarController",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e55c54249f25f70d519b7fb1c20e3331e7ba76d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

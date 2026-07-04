@@ -1,0 +1,21 @@
+{
+  "component": "ZivoeVault",
+  "main_contract": "ZivoeVault",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://amp.runtimeverification.com/public-report/zivoe-vault",
+    "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Vault_FV_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94babe9ee75c38034920bc6ed42748e8eefbedd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

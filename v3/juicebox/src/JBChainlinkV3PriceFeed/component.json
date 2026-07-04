@@ -1,0 +1,20 @@
+{
+  "component": "JBChainlinkV3PriceFeed",
+  "main_contract": "JBChainlinkV3PriceFeed",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2022-07-juicebox"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ed8eedc0689bd6a8c7168301897a0113c28bba4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

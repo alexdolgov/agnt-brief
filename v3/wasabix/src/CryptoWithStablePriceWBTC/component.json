@@ -1,0 +1,18 @@
+{
+  "component": "CryptoWithStablePriceWBTC",
+  "main_contract": "CryptoWithStablePriceWBTC",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07374b547cae235227635c13266c69847a3e46fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

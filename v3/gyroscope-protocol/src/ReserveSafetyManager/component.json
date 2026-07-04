@@ -1,0 +1,22 @@
+{
+  "component": "ReserveSafetyManager",
+  "main_contract": "ReserveSafetyManager",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM-0051%20Security%20Review%20Gyroscope.pdf",
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0094-GYROSCOPE-PROTOCOL-FINAL.pdf",
+    "https://github.com/gyrostable/audit-reports/blob/main/Trail%20of%20Bits/Summary%20Report%20%26%20Fix%20Review%20-%20Gyroscope.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f38321416d587ec4f3a4b37b1ccbb80013a3fab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

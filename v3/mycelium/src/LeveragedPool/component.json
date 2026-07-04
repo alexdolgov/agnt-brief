@@ -1,0 +1,18 @@
+{
+  "component": "LeveragedPool",
+  "main_contract": "LeveragedPool",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3feafee6b12c8d2e58c5b118e54c09f9273c6124",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

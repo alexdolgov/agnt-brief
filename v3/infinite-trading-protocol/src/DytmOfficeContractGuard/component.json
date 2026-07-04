@@ -1,0 +1,26 @@
+{
+  "component": "DytmOfficeContractGuard",
+  "main_contract": "DytmOfficeContractGuard",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb6c380514dbfc6d34724a96c33a1df2f1d399d07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xecb81db3e276c958d73cc13c07e1fb6022b3a1ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Oracle_stETH_AMZN_arbitrum",
+  "main_contract": "Oracle_stETH_AMZN_arbitrum",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x31e4be9a43c863e985e2903c707f380fd12e6197",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf3b64c2da5cc92f3bd70de6c5315807d6f95e319",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

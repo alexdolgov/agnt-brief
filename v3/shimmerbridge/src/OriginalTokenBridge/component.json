@@ -1,0 +1,18 @@
+{
+  "component": "OriginalTokenBridge",
+  "main_contract": "OriginalTokenBridge",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9c6d5a71fdd306329287a835e9b8edb7f0f17898",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

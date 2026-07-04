@@ -1,0 +1,730 @@
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity 0.8.28;
+
+import { AccessControlEnumerable } from "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import { Pausable } from "@openzeppelin/contracts/utils/Pausable.sol";
+import { ReentrancyGuardTransient } from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
+import { EulerRouter } from "euler-price-oracle/src/EulerRouter.sol";
+
+import { AssetRegistry } from "src/AssetRegistry.sol";
+import { BasketToken } from "src/BasketToken.sol";
+import { FeeCollector } from "src/FeeCollector.sol";
+import { Rescuable } from "src/Rescuable.sol";
+import { BasketManagerUtils } from "src/libraries/BasketManagerUtils.sol";
+import { StrategyRegistry } from "src/strategies/StrategyRegistry.sol";
+import { WeightStrategy } from "src/strategies/WeightStrategy.sol";
+import { TokenSwapAdapter } from "src/swap_adapters/TokenSwapAdapter.sol";
+import { BasketManagerStorage, RebalanceStatus, Status } from "src/types/BasketManagerStorage.sol";
+import { ExternalTrade, InternalTrade } from "src/types/Trades.sol";
+
+/// @title BasketManager
+/// @notice Contract responsible for managing baskets and their tokens. The accounting for assets per basket is done
+/// in the BasketManagerUtils contract.
+contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pausable, Rescuable {
+    /// LIBRARIES ///
+    using BasketManagerUtils for BasketManagerStorage;
+    using SafeERC20 for IERC20;
+
+    /// CONSTANTS ///
+    /// @notice Manager role. Managers can create new baskets.
+    bytes32 private constant _MANAGER_ROLE = keccak256("MANAGER_ROLE");
+    /// @notice Pauser role.
+    bytes32 private constant _PAUSER_ROLE = keccak256("PAUSER_ROLE");
+    /// @notice Rebalance Proposer role. Rebalance proposers can propose a new rebalance.
+    bytes32 private constant _REBALANCE_PROPOSER_ROLE = keccak256("REBALANCE_PROPOSER_ROLE");
+    /// @notice TokenSwap Proposer role. Token swap proposers can propose a new token swap.
+    bytes32 private constant _TOKENSWAP_PROPOSER_ROLE = keccak256("TOKENSWAP_PROPOSER_ROLE");
+    /// @notice TokenSwap Executor role. Token swap executors can execute a token swap.
+    bytes32 private constant _TOKENSWAP_EXECUTOR_ROLE = keccak256("TOKENSWAP_EXECUTOR_ROLE");
+    /// @notice Basket token role. Given to the basket token contracts when they are created.
+    bytes32 private constant _BASKET_TOKEN_ROLE = keccak256("BASKET_TOKEN_ROLE");
+    /// @notice Role given to a timelock contract that can set critical parameters.
+    bytes32 private constant _TIMELOCK_ROLE = keccak256("TIMELOCK_ROLE");
+    /// @notice Maximum management fee (30%) in BPS denominated in 1e4.
+    uint16 private constant _MAX_MANAGEMENT_FEE = 3000;
+    /// @notice Maximum swap fee (5%) in BPS denominated in 1e4.
+    uint16 private constant _MAX_SWAP_FEE = 500;
+    /// @notice Minimum time between steps in a rebalance in seconds.
+    uint40 private constant _MIN_STEP_DELAY = 1 minutes;
+    /// @notice Maximum time between steps in a rebalance in seconds.
+    uint40 private constant _MAX_STEP_DELAY = 60 minutes;
+    /// @notice Maximum bound of retry count.
+    uint8 private constant _MAX_RETRY_COUNT = 10;
+    /// @notice Maximum bound of slippage
+    uint256 private constant _MAX_SLIPPAGE_LIMIT = 0.5e18;
+    /// @notice Maximum bound of weight deviation
+    uint256 private constant _MAX_WEIGHT_DEVIATION_LIMIT = 0.5e18;
+
+    /// STATE VARIABLES ///
+    /// @notice Struct containing the BasketManagerUtils contract and other necessary data.
+    BasketManagerStorage private _bmStorage;
+
+    /// EVENTS ///
+    /// @notice Emitted when the swap fee is set.
+    event SwapFeeSet(uint16 oldFee, uint16 newFee);
+    /// @notice Emitted when the management fee is set.
+    event ManagementFeeSet(address indexed basket, uint16 oldFee, uint16 newFee);
+    /// @notice Emitted when the TokenSwapAdapter contract is set.
+    event TokenSwapAdapterSet(address oldAdapter, address newAdapter);
+    /// @notice Emitted when a new basket is created.
+    event BasketCreated(
+        address indexed basket, string basketName, string symbol, address baseAsset, uint256 bitFlag, address strategy
+    );
+    /// @notice Emitted when the bitFlag of a basket is updated.
+    event BasketBitFlagUpdated(
+        address indexed basket, uint256 oldBitFlag, uint256 newBitFlag, bytes32 oldId, bytes32 newId
+    );
+    /// @notice Emitted when a token swap is proposed during a rebalance.
+    event TokenSwapProposed(uint40 indexed epoch, InternalTrade[] internalTrades, ExternalTrade[] externalTrades);
+    /// @notice Emitted when a token swap is executed during a rebalance.
+    event TokenSwapExecuted(uint40 indexed epoch, ExternalTrade[] externalTrades);
+    /// @notice Emitted when the step delay is set.
+    event StepDelaySet(uint40 oldDelay, uint40 newDelay);
+    /// @notice Emitted when the retry limit is set.
+    event RetryLimitSet(uint8 oldLimit, uint8 newLimit);
+    /// @notice Emitted when the max slippage is set.
+    event SlippageLimitSet(uint256 oldSlippage, uint256 newSlippage);
+    /// @notice Emitted when the max weight deviation is set
+    event WeightDeviationLimitSet(uint256 oldDeviation, uint256 newDeviation);
+
+    /// ERRORS ///
+    /// @notice Thrown when the address is zero.
+    error ZeroAddress();
+    /// @notice Thrown when attempting to execute a token swap without first proposing it.
+    error TokenSwapNotProposed();
+    /// @notice Thrown when the call to `TokenSwapAdapter.executeTokenSwap` fails.
+    error ExecuteTokenSwapFailed();
+    /// @notice Thrown when the provided hash does not match the expected hash.
+    /// @dev This error is used to validate the integrity of data passed between functions.
+    error InvalidHash();
+    /// @notice Thrown when the provided external trades do not match the hash stored during the token swap proposal.
+    /// @dev This error prevents executing a token swap with different parameters than originally proposed.
+    error ExternalTradesHashMismatch();
+    /// @notice Thrown when attempting to perform an action that requires no active rebalance.
+    /// @dev Certain actions, like setting the token swap adapter, are disallowed during an active rebalance.
+    error MustWaitForRebalanceToComplete();
+    /// @notice Thrown when a caller attempts to access a function without proper authorization.
+    /// @dev This error is thrown when a caller lacks the required role to perform an action.
+    error Unauthorized();
+    /// @notice Thrown when attempting to set an invalid management fee.
+    /// @dev The management fee must not exceed `_MAX_MANAGEMENT_FEE`.
+    error InvalidManagementFee();
+    /// @notice Thrown when attempting to set an invalid swap fee.
+    /// @dev The swap fee must not exceed `_MAX_SWAP_FEE`.
+    error InvalidSwapFee();
+    /// @notice Thrown when attempting to perform an action on a non-existent basket token.
+    /// @dev This error is thrown when the provided basket token is not in the `basketTokenToIndexPlusOne` mapping.
+    error BasketTokenNotFound();
+    /// @notice Thrown when attempting to update the bitFlag to the same value.
+    error BitFlagMustBeDifferent();
+    /// @notice Thrown when attempting to update the bitFlag without including the current bitFlag.
+    error BitFlagMustIncludeCurrent();
+    /// @notice Thrown when attempting to update the bitFlag to a value not supported by the strategy.
+    error BitFlagUnsupportedByStrategy();
+    /// @notice Thrown when attempting to create a basket with an ID that already exists.
+    error BasketIdAlreadyExists();
+    /// @notice Thrown when attempting to rescue an asset to a basket that already exists in the asset universe.
+    error AssetExistsInUniverse();
+    /// @notice Thrown when the low-level call in the `execute` function fails.
+    /// @dev This error indicates that the target contract rejected the call or execution failed unexpectedly.
+    error ExecutionFailed();
+    /// @notice Thrown when attempting to set an invalid step delay outside the bounds of `_MIN_STEP_DELAY` and
+    /// `_MAX_STEP_DELAY`.
+    error InvalidStepDelay();
+    /// @notice Thrown when attempting to set an invalid retry limit outside the bounds of 0 and `_MAX_RETRY_COUNT`.
+    error InvalidRetryCount();
+    /// @notice Thrown when attempting to set a slippage limit greater than `_MAX_SLIPPAGE_LIMIT`.
+    error InvalidSlippageLimit();
+    /// @notice Thrown when attempting to set a weight deviation greater than `_MAX_WEIGHT_DEVIATION_LIMIT`.
+    error InvalidWeightDeviationLimit();
+    /// @notice Thrown when attempting to execute a token swap with empty external trades array
+    error EmptyExternalTrades();
+
+    /// @notice Initializes the contract with the given parameters.
+    /// @param basketTokenImplementation Address of the basket token implementation.
+    /// @param eulerRouter_ Address of the oracle registry.
+    /// @param strategyRegistry_ Address of the strategy registry.
+    /// @param assetRegistry_ Address of the asset registry.
+    /// @param admin Address of the admin.
+    /// @param feeCollector_ Address of the fee collector.
+    constructor(
+        address basketTokenImplementation,
+        address eulerRouter_,
+        address strategyRegistry_,
+        address assetRegistry_,
+        address admin,
+        address feeCollector_
+    )
+        payable
+    {
+        // Checks
+        if (basketTokenImplementation == address(0)) revert ZeroAddress();
+        if (eulerRouter_ == address(0)) revert ZeroAddress();
+        if (strategyRegistry_ == address(0)) revert ZeroAddress();
+        if (admin == address(0)) revert ZeroAddress();
+        if (feeCollector_ == address(0)) revert ZeroAddress();
+        if (assetRegistry_ == address(0)) revert ZeroAddress();
+
+        // Effects
+        _grantRole(DEFAULT_ADMIN_ROLE, admin);
+        // Initialize the BasketManagerUtils struct
+        _bmStorage.strategyRegistry = StrategyRegistry(strategyRegistry_);
+        _bmStorage.eulerRouter = EulerRouter(eulerRouter_);
+        _bmStorage.assetRegistry = assetRegistry_;
+        _bmStorage.basketTokenImplementation = basketTokenImplementation;
+        _bmStorage.feeCollector = feeCollector_;
+        _bmStorage.retryLimit = 3;
+        _bmStorage.stepDelay = 15 minutes;
+        _bmStorage.slippageLimit = 0.05e18;
+        _bmStorage.weightDeviationLimit = 0.05e18;
+    }
+
+    /// PUBLIC FUNCTIONS ///
+
+    /// @notice Returns the index of the basket token in the basketTokens array.
+    /// @dev Reverts if the basket token does not exist.
+    /// @param basketToken Address of the basket token.
+    /// @return Index of the basket token.
+    function basketTokenToIndex(address basketToken) public view returns (uint256) {
+        return _bmStorage.basketTokenToIndex(basketToken);
+    }
+
+    /// @notice Returns the index of the given asset in the basket.
+    /// @dev Reverts if the basket asset does not exist.
+    /// @param basketToken Address of the basket token.
+    /// @param asset Address of the asset.
+    /// @return Index of the asset in the basket.
+    function getAssetIndexInBasket(address basketToken, address asset) public view returns (uint256) {
+        return _bmStorage.getAssetIndexInBasket(basketToken, asset);
+    }
+
+    /// @notice Returns the index of the base asset in the given basket token
+    /// @dev Reverts if the basket token does not exist
+    /// @param basketToken Address of the basket token
+    /// @return Index of the base asset in the basket token's assets array
+    function basketTokenToBaseAssetIndex(address basketToken) public view returns (uint256) {
+        uint256 index = _bmStorage.basketTokenToBaseAssetIndexPlusOne[basketToken];
+        if (index == 0) {
+            revert BasketTokenNotFound();
+        }
+        return index - 1;
+    }
+
+    /// @notice Returns the number of basket tokens.
+    /// @return Number of basket tokens.
+    function numOfBasketTokens() public view returns (uint256) {
+        return _bmStorage.basketTokens.length;
+    }
+
+    /// @notice Returns all basket token addresses.
+    /// @return Array of basket token addresses.
+    function basketTokens() external view returns (address[] memory) {
+        return _bmStorage.basketTokens;
+    }
+
+    /// @notice Returns the basket token address with the given basketId.
+    /// @dev The basketId is the keccak256 hash of the bitFlag and strategy address.
+    /// @param basketId Basket ID.
+    function basketIdToAddress(bytes32 basketId) external view returns (address) {
+        return _bmStorage.basketIdToAddress[basketId];
+    }
+
+    /// @notice Returns the balance of the given asset in the given basket.
+    /// @param basketToken Address of the basket token.
+    /// @param asset Address of the asset.
+    /// @return Balance of the asset in the basket.
+    function basketBalanceOf(address basketToken, address asset) external view returns (uint256) {
+        return _bmStorage.basketBalanceOf[basketToken][asset];
+    }
+
+    /// @notice Returns the current rebalance status.
+    /// @return Rebalance status struct with the following fields:
+    ///   - basketHash: Hash of the baskets and target weights proposed for rebalance
+    ///   - basketMask: Bitmask representing baskets currently being rebalanced
+    ///   - epoch: Epoch of the rebalance
+    ///   - timestamp: Timestamp of the last action
+    ///   - retryCount: Number of retries for the current rebalance epoch
+    ///   - status: Status enum of the rebalance
+    function rebalanceStatus() external view returns (RebalanceStatus memory) {
+        return _bmStorage.rebalanceStatus;
+    }
+
+    /// @notice Returns the hash of the external trades stored during proposeTokenSwap
+    /// @return Hash of the external trades
+    function externalTradesHash() external view returns (bytes32) {
+        return _bmStorage.externalTradesHash;
+    }
+
+    /// @notice Returns the address of the basket token implementation.
+    /// @return Address of the basket token implementation.
+    function eulerRouter() external view returns (address) {
+        return address(_bmStorage.eulerRouter);
+    }
+
+    /// @notice Returns the address of the feeCollector contract.
+    /// @return Address of the feeCollector.
+    function feeCollector() external view returns (address) {
+        return address(_bmStorage.feeCollector);
+    }
+
+    /// @notice Returns the management fee of a basket in BPS denominated in 1e4.
+    /// @param basket Address of the basket.
+    /// @return Management fee.
+    function managementFee(address basket) external view returns (uint16) {
+        return _bmStorage.managementFees[basket];
+    }
+
+    /// @notice Returns the swap fee in BPS denominated in 1e4.
+    /// @return Swap fee.
+    function swapFee() external view returns (uint16) {
+        return _bmStorage.swapFee;
+    }
+
+    /// @notice Returns the slippage limit for token swaps denominated in 1e18.
+    /// @return Maximum slippage.
+    function slippageLimit() external view returns (uint256) {
+        return _bmStorage.slippageLimit;
+    }
+
+    /// @notice Returns the weight deviation limit for token swaps denominated in 1e18.
+    /// @return Maximum weight deviation.
+    function weightDeviationLimit() external view returns (uint256) {
+        return _bmStorage.weightDeviationLimit;
+    }
+
+    /// @notice Returns the address of the asset registry.
+    /// @return Address of the asset registry.
+    function assetRegistry() external view returns (address) {
+        return _bmStorage.assetRegistry;
+    }
+
+    /// @notice Returns the address of the strategy registry.
+    /// @return Address of the strategy registry.
+    function strategyRegistry() external view returns (address) {
+        return address(_bmStorage.strategyRegistry);
+    }
+
+    /// @notice Returns the address of the token swap adapter.
+    /// @return Address of the token swap adapter.
+    function tokenSwapAdapter() external view returns (address) {
+        return _bmStorage.tokenSwapAdapter;
+    }
+
+    /// @notice Returns the retry count for the current rebalance epoch.
+    /// @return Retry count.
+    function retryCount() external view returns (uint8) {
+        return _bmStorage.rebalanceStatus.retryCount;
+    }
+
+    /// @notice Returns the maximum retry limit for the rebalance process.
+    /// @return Retry limit.
+    function retryLimit() external view returns (uint8) {
+        return _bmStorage.retryLimit;
+    }
+
+    /// @notice Returns the step delay for the rebalance process.
+    /// @dev The step delay defines the minimum time interval, in seconds, required between consecutive steps in a
+    /// rebalance. This ensures sufficient time for external trades or other operations to settle before proceeding.
+    /// @return Step delay duration in seconds.
+    function stepDelay() external view returns (uint40) {
+        return _bmStorage.stepDelay;
+    }
+
+    /// @notice Returns the addresses of all assets in the given basket.
+    /// @param basket Address of the basket.
+    /// @return Array of asset addresses.
+    function basketAssets(address basket) external view returns (address[] memory) {
+        return _bmStorage.basketAssets[basket];
+    }
+
+    /// @notice Returns the collected swap fees for the given asset.
+    /// @param asset Address of the asset.
+    /// @return Collected swap fees.
+    function collectedSwapFees(address asset) external view returns (uint256) {
+        return _bmStorage.collectedSwapFees[asset];
+    }
+
+    /// @notice Creates a new basket token with the given parameters.
+    /// @param basketName Name of the basket.
+    /// @param symbol Symbol of the basket.
+    /// @param bitFlag Asset selection bitFlag for the basket.
+    /// @param strategy Address of the strategy contract for the basket.
+    function createNewBasket(
+        string calldata basketName,
+        string calldata symbol,
+        address baseAsset,
+        uint256 bitFlag,
+        address strategy
+    )
+        external
+        payable
+        whenNotPaused
+        onlyRole(_MANAGER_ROLE)
+        returns (address basket)
+    {
+        basket = _bmStorage.createNewBasket(basketName, symbol, baseAsset, bitFlag, strategy);
+        _grantRole(_BASKET_TOKEN_ROLE, basket);
+        emit BasketCreated(basket, basketName, symbol, baseAsset, bitFlag, strategy);
+    }
+
+    /// @notice Proposes a rebalance for the given baskets. The rebalance is proposed if the difference between the
+    /// target balance and the current balance of any asset in the basket is more than 500 USD.
+    /// @param basketsToRebalance Array of basket addresses to rebalance.
+    function proposeRebalance(address[] calldata basketsToRebalance)
+        external
+        onlyRole(_REBALANCE_PROPOSER_ROLE)
+        nonReentrant
+        whenNotPaused
+    {
+        _bmStorage.proposeRebalance(basketsToRebalance);
+    }
+
+    /// @notice Proposes a set of internal trades and external trades to rebalance the given baskets.
+    /// If the proposed token swap results are not close to the target balances, this function will revert.
+    /// @dev This function can only be called after proposeRebalance.
+    /// @param internalTrades Array of internal trades to execute.
+    /// @param externalTrades Array of external trades to execute.
+    /// @param basketsToRebalance Array of basket addresses currently being rebalanced.
+    /// @param targetWeights Array of target weights for the baskets.
+    function proposeTokenSwap(
+        InternalTrade[] calldata internalTrades,
+        ExternalTrade[] calldata externalTrades,
+        address[] calldata basketsToRebalance,
+        uint64[][] calldata targetWeights,
+        address[][] calldata basketAssets_
+    )
+        external
+        onlyRole(_TOKENSWAP_PROPOSER_ROLE)
+        nonReentrant
+        whenNotPaused
+    {
+        _bmStorage.proposeTokenSwap(internalTrades, externalTrades, basketsToRebalance, targetWeights, basketAssets_);
+        emit TokenSwapProposed(_bmStorage.rebalanceStatus.epoch, internalTrades, externalTrades);
+    }
+
+    /// @notice Executes the token swaps proposed in proposeTokenSwap and updates the basket balances.
+    /// @param externalTrades Array of external trades to execute.
+    /// @param data Encoded data for the token swap.
+    /// @dev This function can only be called after proposeTokenSwap.
+    // slither-disable-next-line controlled-delegatecall
+    function executeTokenSwap(
+        ExternalTrade[] calldata externalTrades,
+        bytes calldata data
+    )
+        external
+        onlyRole(_TOKENSWAP_EXECUTOR_ROLE)
+        nonReentrant
+        whenNotPaused
+    {
+        if (_bmStorage.rebalanceStatus.status != Status.TOKEN_SWAP_PROPOSED) {
+            revert TokenSwapNotProposed();
+        }
+        address swapAdapter = _bmStorage.tokenSwapAdapter;
+        if (swapAdapter == address(0)) {
+            revert ZeroAddress();
+        }
+        if (externalTrades.length == 0) {
+            revert EmptyExternalTrades();
+        }
+        // Check if the external trades match the hash from proposeTokenSwap
+        if (keccak256(abi.encode(externalTrades)) != _bmStorage.externalTradesHash) {
+            revert ExternalTradesHashMismatch();
+        }
+        _bmStorage.rebalanceStatus.status = Status.TOKEN_SWAP_EXECUTED;
+        _bmStorage.rebalanceStatus.timestamp = uint40(block.timestamp);
+
+        // solhint-disable avoid-low-level-calls
+        // slither-disable-next-line low-level-calls
+        (bool success,) =
+            swapAdapter.delegatecall(abi.encodeCall(TokenSwapAdapter.executeTokenSwap, (externalTrades, data)));
+        // solhint-enable avoid-low-level-calls
+        if (!success) {
+            revert ExecuteTokenSwapFailed();
+        }
+
+        emit TokenSwapExecuted(_bmStorage.rebalanceStatus.epoch, externalTrades);
+    }
+
+    /// @notice Sets the address of the TokenSwapAdapter contract used to execute token swaps.
+    /// @param tokenSwapAdapter_ Address of the TokenSwapAdapter contract.
+    /// @dev Only callable by the timelock.
+    function setTokenSwapAdapter(address tokenSwapAdapter_) external onlyRole(_TIMELOCK_ROLE) {
+        if (tokenSwapAdapter_ == address(0)) {
+            revert ZeroAddress();
+        }
+        _revertIfCurrentlyRebalancing();
+        emit TokenSwapAdapterSet(_bmStorage.tokenSwapAdapter, tokenSwapAdapter_);
+        _bmStorage.tokenSwapAdapter = tokenSwapAdapter_;
+    }
+
+    /// @notice Completes the rebalance for the given baskets. The rebalance can be completed if it has been more than
+    /// 15 minutes since the last action.
+    /// @param basketsToRebalance Array of basket addresses proposed for rebalance.
+    /// @param targetWeights Array of target weights for the baskets.
+    function completeRebalance(
+        ExternalTrade[] calldata externalTrades,
+        address[] calldata basketsToRebalance,
+        uint64[][] calldata targetWeights,
+        address[][] calldata basketAssets_
+    )
+        external
+        nonReentrant
+        whenNotPaused
+    {
+        _bmStorage.completeRebalance(externalTrades, basketsToRebalance, targetWeights, basketAssets_);
+    }
+
+    /// FALLBACK REDEEM LOGIC ///
+
+    /// @notice Fallback redeem function to redeem shares when the rebalance is not in progress. Redeems the shares for
+    /// each underlying asset in the basket pro-rata to the amount of shares redeemed.
+    /// @dev This function can only be called by basket tokens.
+    /// @param totalSupplyBefore Total supply of the basket token before the shares were burned.
+    /// @param burnedShares Amount of shares burned.
+    /// @param to Address to send the redeemed assets to.
+    function proRataRedeem(
+        uint256 totalSupplyBefore,
+        uint256 burnedShares,
+        address to
+    )
+        public
+        nonReentrant
+        whenNotPaused
+        onlyRole(_BASKET_TOKEN_ROLE)
+    {
+        _bmStorage.proRataRedeem(totalSupplyBefore, burnedShares, to);
+    }
+
+    /// FEE FUNCTIONS ///
+
+    /// @notice Set the management fee to be given to the treausry on rebalance.
+    /// @param basket Address of the basket token.
+    /// @param managementFee_ Management fee in BPS denominated in 1e4.
+    /// @dev Only callable by the timelock.
+    /// @dev Setting the management fee of the 0 address will set the default management fee for newly created baskets.
+    function setManagementFee(address basket, uint16 managementFee_) external onlyRole(_TIMELOCK_ROLE) {
+        if (managementFee_ > _MAX_MANAGEMENT_FEE) {
+            revert InvalidManagementFee();
+        }
+
+        // Check if the basket is currently rebalancing
+        if (basket != address(0)) {
+            uint256 indexPlusOne = _bmStorage.basketTokenToIndexPlusOne[basket];
+            if (indexPlusOne == 0) {
+                revert BasketTokenNotFound();
+            }
+            if ((_bmStorage.rebalanceStatus.basketMask & (1 << indexPlusOne - 1)) != 0) {
+                revert MustWaitForRebalanceToComplete();
+            }
+            // slither-disable-next-line reentrancy-no-eth
+            BasketToken(basket).harvestManagementFee();
+        }
+        // slither-disable-next-line reentrancy-events
+        emit ManagementFeeSet(basket, _bmStorage.managementFees[basket], managementFee_);
+        _bmStorage.managementFees[basket] = managementFee_;
+    }
+
+    /// @notice Set the swap fee to be given to the treasury on rebalance.
+    /// @param swapFee_ Swap fee in BPS denominated in 1e4.
+    /// @dev Only callable by the timelock.
+    function setSwapFee(uint16 swapFee_) external onlyRole(_TIMELOCK_ROLE) {
+        if (swapFee_ > _MAX_SWAP_FEE) {
+            revert InvalidSwapFee();
+        }
+        _revertIfCurrentlyRebalancing();
+        emit SwapFeeSet(_bmStorage.swapFee, swapFee_);
+        _bmStorage.swapFee = swapFee_;
+    }
+
+    /// @notice Updates the step delay for the rebalance process.
+    /// @dev The step delay defines the minimum time interval, in seconds, required between consecutive steps in a
+    /// rebalance. This ensures sufficient time for external trades or other operations to settle before proceeding.
+    /// @param stepDelay_ The new step delay duration in seconds.
+    function setStepDelay(uint40 stepDelay_) external onlyRole(_TIMELOCK_ROLE) {
+        if (stepDelay_ < _MIN_STEP_DELAY || stepDelay_ > _MAX_STEP_DELAY) {
+            revert InvalidStepDelay();
+        }
+        _revertIfCurrentlyRebalancing();
+        emit StepDelaySet(_bmStorage.stepDelay, stepDelay_);
+        _bmStorage.stepDelay = stepDelay_;
+    }
+
+    /// @notice Sets the retry limit for future rebalances.
+    /// @param retryLimit_ New retry limit.
+    function setRetryLimit(uint8 retryLimit_) external onlyRole(_TIMELOCK_ROLE) {
+        if (retryLimit_ > _MAX_RETRY_COUNT) {
+            revert InvalidRetryCount();
+        }
+        _revertIfCurrentlyRebalancing();
+        emit RetryLimitSet(_bmStorage.retryLimit, retryLimit_);
+        _bmStorage.retryLimit = retryLimit_;
+    }
+
+    /// @notice Sets the slippage multiplier for token swaps.
+    /// @param slippageLimit_ New slippage limit.
+    function setSlippageLimit(uint256 slippageLimit_) external onlyRole(_TIMELOCK_ROLE) {
+        if (slippageLimit_ > _MAX_SLIPPAGE_LIMIT) {
+            revert InvalidSlippageLimit();
+        }
+        _revertIfCurrentlyRebalancing();
+        emit SlippageLimitSet(_bmStorage.slippageLimit, slippageLimit_);
+        _bmStorage.slippageLimit = slippageLimit_;
+    }
+
+    /// @notice Sets the deviation multiplier to determine if a set of balances has reached the desired target.
+    /// @param weightDeviationLimit_ New weight deviation limit.
+    function setWeightDeviation(uint256 weightDeviationLimit_) external onlyRole(_TIMELOCK_ROLE) {
+        if (weightDeviationLimit_ > _MAX_WEIGHT_DEVIATION_LIMIT) {
+            revert InvalidWeightDeviationLimit();
+        }
+        _revertIfCurrentlyRebalancing();
+        emit WeightDeviationLimitSet(_bmStorage.weightDeviationLimit, weightDeviationLimit_);
+        _bmStorage.weightDeviationLimit = weightDeviationLimit_;
+    }
+
+    /// @notice Claims the swap fee for the given asset and sends it to protocol treasury defined in the FeeCollector.
+    /// @param asset Address of the asset to collect the swap fee for.
+    function collectSwapFee(address asset) external onlyRole(_MANAGER_ROLE) returns (uint256 collectedFees) {
+        collectedFees = _bmStorage.collectedSwapFees[asset];
+        if (collectedFees != 0) {
+            _bmStorage.collectedSwapFees[asset] = 0;
+            IERC20(asset).safeTransfer(FeeCollector(_bmStorage.feeCollector).protocolTreasury(), collectedFees);
+        }
+    }
+
+    /// @notice Updates the bitFlag for the given basket.
+    /// @param basket Address of the basket.
+    /// @param bitFlag New bitFlag. It must be inclusive of the current bitFlag.
+    // solhint-disable-next-line code-complexity
+    function updateBitFlag(address basket, uint256 bitFlag) external onlyRole(_TIMELOCK_ROLE) {
+        // Checks
+        // Check if basket exists
+        uint256 indexPlusOne = _bmStorage.basketTokenToIndexPlusOne[basket];
+        if (indexPlusOne == 0) {
+            revert BasketTokenNotFound();
+        }
+        uint256 currentBitFlag = BasketToken(basket).bitFlag();
+        if (currentBitFlag == bitFlag) {
+            revert BitFlagMustBeDifferent();
+        }
+        // Check if basket is currently rebalancing
+        if ((_bmStorage.rebalanceStatus.basketMask & (1 << indexPlusOne - 1)) != 0) {
+            revert MustWaitForRebalanceToComplete();
+        }
+        // Check if the new bitFlag is inclusive of the current bitFlag
+        if ((currentBitFlag & bitFlag) != currentBitFlag) {
+            revert BitFlagMustIncludeCurrent();
+        }
+        address strategy = BasketToken(basket).strategy();
+        if (!WeightStrategy(strategy).supportsBitFlag(bitFlag)) {
+            revert BitFlagUnsupportedByStrategy();
+        }
+        bytes32 newId = keccak256(abi.encodePacked(bitFlag, strategy));
+        if (_bmStorage.basketIdToAddress[newId] != address(0)) {
+            revert BasketIdAlreadyExists();
+        }
+        // Remove the old bitFlag mapping and add the new bitFlag mapping
+        bytes32 oldId = keccak256(abi.encodePacked(currentBitFlag, strategy));
+        _bmStorage.basketIdToAddress[oldId] = address(0);
+        _bmStorage.basketIdToAddress[newId] = basket;
+        // Update the basketAssets and the basketAssetToIndexPlusOne mapping
+        address[] memory assets = AssetRegistry(_bmStorage.assetRegistry).getAssets(bitFlag);
+        address baseAsset = _bmStorage.basketAssets[basket][_bmStorage.basketTokenToBaseAssetIndexPlusOne[basket] - 1];
+        _bmStorage.basketAssets[basket] = assets;
+        uint256 length = assets.length;
+        for (uint256 i = 0; i < length;) {
+            // nosemgrep: solidity.performance.state-variable-read-in-a-loop.state-variable-read-in-a-loop
+            _bmStorage.basketAssetToIndexPlusOne[basket][assets[i]] = i + 1;
+            // Update the base asset index
+            if (assets[i] == baseAsset) {
+                // nosemgrep: solidity.performance.state-variable-read-in-a-loop.state-variable-read-in-a-loop
+                _bmStorage.basketTokenToBaseAssetIndexPlusOne[basket] = i + 1;
+            }
+            unchecked {
+                // Overflow not possible: i is less than length
+                ++i;
+            }
+        }
+        emit BasketBitFlagUpdated(basket, currentBitFlag, bitFlag, oldId, newId);
+        // Update the bitFlag in the BasketToken contract
+        BasketToken(basket).setBitFlag(bitFlag);
+    }
+
+    /// @notice Reverts if a rebalance is currently in progress.
+    function _revertIfCurrentlyRebalancing() private view {
+        if (_bmStorage.rebalanceStatus.status != Status.NOT_STARTED) {
+            revert MustWaitForRebalanceToComplete();
+        }
+    }
+
+    /// PAUSING FUNCTIONS ///
+
+    /// @notice Pauses the contract. Callable by DEFAULT_ADMIN_ROLE or PAUSER_ROLE.
+    function pause() external {
+        if (!(hasRole(_PAUSER_ROLE, msg.sender) || hasRole(DEFAULT_ADMIN_ROLE, msg.sender))) {
+            revert Unauthorized();
+        }
+        _pause();
+    }
+
+    /// @notice Unpauses the contract. Only callable by DEFAULT_ADMIN_ROLE.
+    function unpause() external onlyRole(DEFAULT_ADMIN_ROLE) {
+        _unpause();
+    }
+
+    /// @notice Allows the timelock to execute an arbitrary function call on a target contract.
+    /// @dev Can only be called by addresses with the timelock role. Reverts if the execution fails. Reverts if the
+    /// target of the call is an asset that is active in the asset registry.
+    /// @param target The address of the target contract.
+    /// @param data The calldata to send to the target contract.
+    /// @param value The amount of Ether (in wei) to send with the call.
+    /// @return result The data returned from the function call.
+    function execute(
+        address target,
+        bytes calldata data,
+        uint256 value
+    )
+        external
+        payable
+        onlyRole(_TIMELOCK_ROLE)
+        returns (bytes memory)
+    {
+        // Checks
+        if (target == address(0)) revert ZeroAddress();
+        AssetRegistry.AssetStatus status = AssetRegistry(_bmStorage.assetRegistry).getAssetStatus(address(target));
+        if (status != AssetRegistry.AssetStatus.DISABLED) {
+            revert AssetExistsInUniverse();
+        }
+
+        // Interactions
+        // slither-disable-start arbitrary-send-eth
+        // slither-disable-start low-level-calls
+        // nosemgrep: solidity.security.arbitrary-low-level-call.arbitrary-low-level-call
+        (bool success, bytes memory result) = target.call{ value: value }(data);
+        // slither-disable-end arbitrary-send-eth
+        // slither-disable-end low-level-calls
+        if (!success) {
+            revert ExecutionFailed();
+        }
+        return result;
+    }
+
+    /// @notice Allows the admin to rescue tokens mistakenly sent to the contract.
+    /// @dev Can only be called by the admin. This function is intended for use in case of accidental token
+    /// transfers into the contract. It will revert if the token is part of the enabled asset universe.
+    /// @param token The ERC20 token to rescue, or address(0) for ETH.
+    /// @param to The recipient address of the rescued tokens.
+    /// @param balance The amount of tokens to rescue. If set to 0, the entire balance will be rescued.
+    function rescue(IERC20 token, address to, uint256 balance) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        if (address(token) != address(0)) {
+            AssetRegistry.AssetStatus status = AssetRegistry(_bmStorage.assetRegistry).getAssetStatus(address(token));
+            if (status != AssetRegistry.AssetStatus.DISABLED) {
+                revert AssetExistsInUniverse();
+            }
+        }
+
+        _rescue(token, to, balance);
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BSWMinting",
+  "main_contract": "BSWMinting",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2a539a4189b23c15a7ccfdeadb56c62b8cb1f522",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

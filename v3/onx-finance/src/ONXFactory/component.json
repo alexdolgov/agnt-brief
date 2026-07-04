@@ -1,0 +1,20 @@
+{
+  "component": "ONXFactory",
+  "main_contract": "ONXFactory",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://onx-finance.gitbook.io/docs/audits-and-contracts/lending-audit.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2583c7e6a0391e6029e6b88bccb1364a8d8505c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

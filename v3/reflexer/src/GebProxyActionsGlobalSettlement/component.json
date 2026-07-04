@@ -1,0 +1,26 @@
+{
+  "component": "GebProxyActionsGlobalSettlement",
+  "main_contract": "GebProxyActionsGlobalSettlement",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x17b5d9914194a08c7ef14451ba15e8ae4f92cb93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc780b6cead0b892478feb71b9cb21ec3fdbe10d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

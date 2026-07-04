@@ -1,0 +1,18 @@
+{
+  "component": "ERC20PresetMinterPauser",
+  "main_contract": "ERC20PresetMinterPauser",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd084b83c305dafd76ae3e1b4e1f1fe2ecccb3988",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

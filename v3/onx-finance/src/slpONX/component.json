@@ -1,0 +1,18 @@
+{
+  "component": "slpONX",
+  "main_contract": "slpONX",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x815476972492fdc3ece86e843531531b7fff6b18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BaseAsyncSwapper-2",
+  "main_contract": "BaseAsyncSwapper",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x91c008853fdfadc8266d55ec11843dd3d58c95d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d661619493a506e057330572ed43fc0f41f0b44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

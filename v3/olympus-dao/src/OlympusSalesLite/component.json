@@ -1,0 +1,18 @@
+{
+  "component": "OlympusSalesLite",
+  "main_contract": "OlympusSalesLite",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27446629dcf58834640b38464a50ecf742218116",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

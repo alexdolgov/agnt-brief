@@ -1,0 +1,42 @@
+{
+  "component": "LPTP",
+  "main_contract": "LPTP",
+  "source_file_count": 8,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0ab862653f8ab1f1846e887d7f6a060e6dd01664",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0f4ee6a202bca16430021fdf1d36fb026cc3dcc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6a945faac1b3db16e93bf916ee5701e264f60805",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf7326b0d9f211d7b1d3ae81ec9c5ef2d70d5f70a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

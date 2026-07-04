@@ -1,0 +1,74 @@
+{
+  "component": "SettleLayer",
+  "main_contract": "SettleLayer",
+  "source_file_count": 89,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x6050cf4b9125c81dbccb5d662131d4de04d5bb86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x6e26253238becf5e7099cbe2e74cbf378d03132f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x79cf6e6af136b04c145f330509ad547b0d7ef6e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x852c3a00162efdbce7e5bee4dfe065116d0e9915",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x99f213608941b6116e8f1fab1908ddb33d796ca5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xaaaaaaaaffe404ee9433eef0094b6382d81fb958",
+      "is_proxy": true,
+      "implementation_address": "0x79cf6e6af136b04c145f330509ad547b0d7ef6e9",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xe3150c65446dc05505ac33b51d742e9458fe0bfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

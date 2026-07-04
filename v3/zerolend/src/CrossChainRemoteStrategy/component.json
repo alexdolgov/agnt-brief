@@ -1,0 +1,42 @@
+{
+  "component": "CrossChainRemoteStrategy",
+  "main_contract": "CrossChainRemoteStrategy",
+  "source_file_count": 27,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5f81a5a22375ebcc2075b162d23a5b16a1e7a92d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x81d877b0eb31544776c1d6563d9d6a0f49bc8a30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc9d1b9ca7d821686be6e967c33207292d27a5091",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd7b852eced3a8d52d9728ea0345b64fbea9b5fca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

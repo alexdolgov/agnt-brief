@@ -1,0 +1,20 @@
+{
+  "component": "BeaconDeposit",
+  "main_contract": "BeaconDeposit",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/berachain/security-audits/blob/main/20260425-PoLNext-Spearbit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x4242424242424242424242424242424242424242",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CLBToken",
+  "main_contract": "CLBToken",
+  "source_file_count": 75,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32cab76c8ca739333b6bf9b5c4bac8a19f3c2b4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

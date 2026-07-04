@@ -1,0 +1,22 @@
+{
+  "component": "RamsesV3Factory",
+  "main_contract": "RamsesV3Factory",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e",
+    "https://code4rena.com/reports/2024-10-ramses-exchange",
+    "https://diligence.security/audits/2024/08/ramses-v3"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xae334f70a7fc44fcc2df9e6a37bc032497cf80f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

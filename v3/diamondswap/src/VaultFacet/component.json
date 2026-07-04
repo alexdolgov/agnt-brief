@@ -1,0 +1,18 @@
+{
+  "component": "VaultFacet",
+  "main_contract": "VaultFacet",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x530090b2ec1bbeb2fde9e47284af50e725353650",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

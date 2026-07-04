@@ -1,0 +1,18 @@
+{
+  "component": "StrategyThenaUsdtUsdc",
+  "main_contract": "StrategyThenaUsdtUsdc",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfc572d81a1295a5b62641c216e621375856defcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

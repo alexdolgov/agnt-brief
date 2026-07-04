@@ -1,0 +1,18 @@
+{
+  "component": "FixedPriceOracle-2",
+  "main_contract": "FixedPriceOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34aa062e0f798a1f7e7db0ce9acd64486632dbfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

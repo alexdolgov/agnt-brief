@@ -1,0 +1,18 @@
+{
+  "component": "RLPEncode",
+  "main_contract": "RLPEncode",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x021c2bf4d2941ce3d593e07317ec355937bae495",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

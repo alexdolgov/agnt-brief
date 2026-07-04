@@ -1,0 +1,26 @@
+{
+  "component": "InflationRedirectionPool",
+  "main_contract": "InflationRedirectionPool",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb652710eab40b6ed32d6c32053fc37ef234562c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfc4e09275731898bd1872307447589783cec02f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

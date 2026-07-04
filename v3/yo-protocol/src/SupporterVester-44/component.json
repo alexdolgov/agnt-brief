@@ -1,0 +1,18 @@
+{
+  "component": "SupporterVester-44",
+  "main_contract": "SupporterVester",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe711a0489deae50340e9950fa14072ab40a75d95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

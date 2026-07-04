@@ -1,0 +1,26 @@
+{
+  "component": "AutoFarmV2_CrossChain",
+  "main_contract": "AutoFarmV2_CrossChain",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7e8503a336aa795f5f30e8be92cc07430ad35b13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc26e54b5b8d4a2d2091a547bb94edda1aeace833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

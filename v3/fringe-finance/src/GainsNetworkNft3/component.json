@@ -1,0 +1,18 @@
+{
+  "component": "GainsNetworkNft3",
+  "main_contract": "GainsNetworkNft3",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9834159eaf9811cf4c568294d5c7c9158f84b384",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

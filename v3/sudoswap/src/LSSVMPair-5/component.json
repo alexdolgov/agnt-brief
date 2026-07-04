@@ -1,0 +1,24 @@
+{
+  "component": "LSSVMPair-5",
+  "main_contract": "LSSVMPair",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sudoswap/audits/blob/main/abdk-audit-amm.pdf",
+    "https://github.com/sudoswap/audits/blob/main/spearbit-audit-amm.pdf",
+    "https://github.com/sudoswap/v2-audits/blob/main/cyfrin.pdf",
+    "https://github.com/sudoswap/v2-audits/blob/main/narya.pdf",
+    "https://github.com/sudoswap/v2-audits/blob/main/spearbit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4b1f0d7a960ef84181aeddd78e919a933e8246e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PlsRdntToken",
+  "main_contract": "PlsRdntToken",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1605bbdab3b38d10fa23a7ed0d0e8f4fea5bff59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RiscZeroGroth16Verifier-3",
+  "main_contract": "RiscZeroGroth16Verifier",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf70abab028eb6f4100a24b203e113d94e87de93c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

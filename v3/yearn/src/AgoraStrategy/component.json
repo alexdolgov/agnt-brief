@@ -1,0 +1,18 @@
+{
+  "component": "AgoraStrategy",
+  "main_contract": "AgoraStrategy",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed5d52c8e16257999f329c34685246ab6eb2a7cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

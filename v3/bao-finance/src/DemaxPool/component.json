@@ -1,0 +1,18 @@
+{
+  "component": "DemaxPool",
+  "main_contract": "DemaxPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86a327715d707bca24983b1145d1f6c40c5d4a74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

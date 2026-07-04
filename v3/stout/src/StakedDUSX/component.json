@@ -1,0 +1,18 @@
+{
+  "component": "StakedDUSX",
+  "main_contract": "StakedDUSX",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa0b0cbffed77e57e946fb1fb875b28edd0d0cc6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

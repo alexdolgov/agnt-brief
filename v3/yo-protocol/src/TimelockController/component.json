@@ -1,0 +1,20 @@
+{
+  "component": "TimelockController",
+  "main_contract": "TimelockController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yoprotocol/core/blob/main/audits/Exponential%20YoProtocol%20Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38ce5e45d0f5d03e83863bb19b3b1a272c186f48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

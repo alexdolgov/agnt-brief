@@ -1,0 +1,26 @@
+{
+  "component": "StakePoolCreator",
+  "main_contract": "StakePoolCreator",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6f6ecd0a4cce5ed8cc313ab0285f662a2fd2022f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x998055f2ae6003addd804b3aaf088932d244b3a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

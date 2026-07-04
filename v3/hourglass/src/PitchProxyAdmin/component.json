@@ -1,0 +1,18 @@
+{
+  "component": "PitchProxyAdmin",
+  "main_contract": "PitchProxyAdmin",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3c23b7b54629d58aa6e206e32e6473e067588ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

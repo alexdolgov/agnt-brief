@@ -1,0 +1,34 @@
+{
+  "component": "ArbitrageV4",
+  "main_contract": "ArbitrageV4",
+  "source_file_count": 24,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06d1b7465a32de5d85309754fb6e3930681c5e40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b75deb16d45fac788bd9f2ac18e79c369eb84bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf7391a10f4d6d732b1b64a943e8804105de2e83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

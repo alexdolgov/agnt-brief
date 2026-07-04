@@ -1,0 +1,18 @@
+{
+  "component": "IdleCDOFactory",
+  "main_contract": "IdleCDOFactory",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c9916bb9498f637e2fa86c2028e26275dc9a631",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

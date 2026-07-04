@@ -1,0 +1,18 @@
+{
+  "component": "VestingReserve",
+  "main_contract": "VestingReserve",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x63577522f8fbc3adc023f787d207f43fa54beac7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "SwapsRouter",
+  "main_contract": "SwapsRouter",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xGuard-com/audit-reports/blob/master/bitcoin.com/Bitcoin.com_final-audit-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e7707677043eb68864c719fd9de5f25aa7533bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb4b0ea46fe0e9e8eab4afb765b527739f2718671",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

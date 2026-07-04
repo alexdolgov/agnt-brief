@@ -1,0 +1,18 @@
+{
+  "component": "HyphenImplV2",
+  "main_contract": "HyphenImplV2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeb03440702bb6de23c63ad1c5a24598433f59f86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

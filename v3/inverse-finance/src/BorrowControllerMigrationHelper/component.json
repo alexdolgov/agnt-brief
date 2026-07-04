@@ -1,0 +1,18 @@
+{
+  "component": "BorrowControllerMigrationHelper",
+  "main_contract": "BorrowControllerMigrationHelper",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x829a0afa7a977428bfcc50f4a4ae0b156e64456d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "wstETHArb",
+  "main_contract": "wstETHArb",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d3377912135a4083c10e60af7ff72763ac9e076",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

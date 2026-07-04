@@ -1,0 +1,18 @@
+{
+  "component": "VotingEscrow",
+  "main_contract": "VotingEscrow",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc1704c99278c3e5a91afb117301ea61b003aa650",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

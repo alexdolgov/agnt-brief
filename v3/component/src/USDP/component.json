@@ -1,0 +1,18 @@
+{
+  "component": "USDP",
+  "main_contract": "USDP",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1456688345527be1f37e9e627da0837d6f08c925",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "IchiV2",
+  "main_contract": "IchiV2",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/ichi"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x111111517e4929d3dcbdfa7cce55d30d4b6bc4d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

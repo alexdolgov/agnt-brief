@@ -1,0 +1,26 @@
+{
+  "component": "OwnedTimelockWallet",
+  "main_contract": "OwnedTimelockWallet",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ac5a1789468487da7050a0b926f7afd371228d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc718a5787e27d713d8523b726a75cfbb2dd8afe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

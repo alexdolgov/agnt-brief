@@ -1,0 +1,18 @@
+{
+  "component": "BuyBackFeeManager-2",
+  "main_contract": "BuyBackFeeManager",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x218c4c326a5bc505acb1a8a60fabb5f382f7882c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

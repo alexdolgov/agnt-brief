@@ -1,0 +1,18 @@
+{
+  "component": "LightBatchWithdraw",
+  "main_contract": "LightBatchWithdraw",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c6363cfa9462ae11e22d2a5a0eb15dbb8719e4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

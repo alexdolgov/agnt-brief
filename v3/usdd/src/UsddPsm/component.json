@@ -1,0 +1,18 @@
+{
+  "component": "UsddPsm",
+  "main_contract": "UsddPsm",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12d0351f68035a41d13fc8324562e2d51b7a3b93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

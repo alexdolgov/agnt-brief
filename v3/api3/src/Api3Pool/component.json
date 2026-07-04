@@ -1,0 +1,18 @@
+{
+  "component": "Api3Pool",
+  "main_contract": "Api3Pool",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6dd655f10d4b9e242ae186d9050b68f725c76d76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

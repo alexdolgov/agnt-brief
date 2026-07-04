@@ -1,0 +1,22 @@
+{
+  "component": "AsterVault",
+  "main_contract": "AsterVault",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/lista-new-contracts/blob/master/docs/audits/Bailsec-lisAster-Audit-Report.pdf",
+    "https://github.com/lista-dao/lista-new-contracts/blob/master/docs/audits/HashDit-AsterRewards-20260615.pdf",
+    "https://github.com/lista-dao/lista-new-contracts/blob/master/docs/audits/Sherlock-lisAster-Audit-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f97a18f317abe825cf1023ff61452e4d387a12b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

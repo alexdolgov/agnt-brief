@@ -1,0 +1,18 @@
+{
+  "component": "VaultPriceFeed",
+  "main_contract": "VaultPriceFeed",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2c96437d4da023b5c65a7e20124c3cd7b7fd4fb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

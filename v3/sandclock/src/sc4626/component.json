@@ -1,0 +1,18 @@
+{
+  "component": "sc4626",
+  "main_contract": "sc4626",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb369eeb33fcfdcd1557e354ddee7d6cf3146a11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

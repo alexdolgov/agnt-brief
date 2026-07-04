@@ -1,0 +1,18 @@
+{
+  "component": "MultiSig-8",
+  "main_contract": "MultiSig",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb05860dd77620793d549fa0dec4989a54e906732",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

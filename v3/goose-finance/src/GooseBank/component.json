@@ -1,0 +1,26 @@
+{
+  "component": "GooseBank",
+  "main_contract": "GooseBank",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1aad12b72eec031d0eb54efd2ff3f0cc2847ef08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb67764dbc9551e00631da0d36665cba752823c74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

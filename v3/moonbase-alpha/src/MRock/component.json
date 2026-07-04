@@ -1,0 +1,18 @@
+{
+  "component": "MRock",
+  "main_contract": "MRock",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb536ae2b2ed085ea0197c67e3948b7cbf40010c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

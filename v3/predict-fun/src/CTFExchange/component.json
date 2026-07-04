@@ -1,0 +1,26 @@
+{
+  "component": "CTFExchange",
+  "main_contract": "CTFExchange",
+  "source_file_count": 49,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6beb5a40c032afc305961162d8204cda16decfa5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8bc070bedab741406f4b1eb65a72bee27894b689",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

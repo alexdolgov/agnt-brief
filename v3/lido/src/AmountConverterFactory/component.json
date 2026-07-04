@@ -1,0 +1,21 @@
+{
+  "component": "AmountConverterFactory",
+  "main_contract": "AmountConverterFactory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/Ackee%20Blockchain%20Lido%20Stonks%20Audit%20Report%2003-24.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Ackee%20Blockchain%20Stonks%202%20Audit%20Report%2012-25.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb95faf0522fbe3d9b10240c1494c169744489711",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

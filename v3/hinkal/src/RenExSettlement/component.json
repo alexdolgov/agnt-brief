@@ -1,0 +1,18 @@
+{
+  "component": "RenExSettlement",
+  "main_contract": "RenExSettlement",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x908262de0366e42d029b0518d5276762c92b21e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

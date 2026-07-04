@@ -1,0 +1,18 @@
+{
+  "component": "BoringVault",
+  "main_contract": "BoringVault",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13cc1b39cb259ba10cd174eae42012e698ed7c51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

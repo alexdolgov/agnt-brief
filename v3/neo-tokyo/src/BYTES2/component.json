@@ -1,0 +1,18 @@
+{
+  "component": "BYTES2",
+  "main_contract": "BYTES2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa19f5264f7d7be11c451c093d8f92592820bea86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

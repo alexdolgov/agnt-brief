@@ -1,0 +1,18 @@
+{
+  "component": "DaiFab",
+  "main_contract": "DaiFab",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf07674f6ac6632e253c291b694f9c2e2ed69ebbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

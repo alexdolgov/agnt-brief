@@ -1,0 +1,26 @@
+{
+  "component": "CelerImplL1L2",
+  "main_contract": "CelerImplL1L2",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0aa26a14c2559319f9def7304e93db5ae6b32fb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3f367bf9f7dcc55d97cf311b71fb9f41e415531a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

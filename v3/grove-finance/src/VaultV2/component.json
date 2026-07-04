@@ -1,0 +1,18 @@
+{
+  "component": "VaultV2",
+  "main_contract": "VaultV2",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbeef0e0834849acc03f0089f01f4f1eeb06873c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

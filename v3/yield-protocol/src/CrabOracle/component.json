@@ -1,0 +1,18 @@
+{
+  "component": "CrabOracle",
+  "main_contract": "CrabOracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35d753a30a750c0291cd86baedef7d27d55879f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

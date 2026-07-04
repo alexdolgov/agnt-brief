@@ -1,0 +1,18 @@
+{
+  "component": "GrapeGenesisRewardPool",
+  "main_contract": "GrapeGenesisRewardPool",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5ac71bad7dcc7a94efb4704b21a85b58facb5633",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LPstaking",
+  "main_contract": "LPstaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0e5419bf7eaacd07790d27bd4957ccee9971b858",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

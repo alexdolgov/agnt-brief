@@ -1,0 +1,18 @@
+{
+  "component": "DSMath-23",
+  "main_contract": "DSMath",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fca8d826fefd6cfac2a1ad33ff46b3a06069984",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC721Upgradeable",
+  "main_contract": "ERC721Upgradeable",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1a034458ad126cbf1f03eeb12064396b81158410",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

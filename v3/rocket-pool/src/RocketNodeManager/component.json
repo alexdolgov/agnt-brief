@@ -1,0 +1,18 @@
+{
+  "component": "RocketNodeManager",
+  "main_contract": "RocketNodeManager",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x22bbddbe0a1e790741cd385c67ff9aa5fbcbb958",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

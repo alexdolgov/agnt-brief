@@ -1,0 +1,21 @@
+{
+  "component": "CapToken",
+  "main_contract": "CapToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-07-04-Recon.pdf",
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-09-03-Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x031b51bed47543aa87d2f74ab3b1fcd606c99b24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

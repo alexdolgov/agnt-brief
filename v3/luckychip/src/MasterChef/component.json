@@ -1,0 +1,21 @@
+{
+  "component": "MasterChef",
+  "main_contract": "MasterChef",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LuckyChip-v1.0.pdf",
+    "https://skynet.certik.com/projects/luckychip"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x15d2a6fc45af66a2952dc27c40450c1f06a1ec2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

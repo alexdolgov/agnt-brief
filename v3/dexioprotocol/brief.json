@@ -1,0 +1,316 @@
+{
+  "schema_version": "2.0",
+  "project_key": "dexioprotocol",
+  "generated_at": "2026-07-03T21:05:42.851Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-2d9c",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 6,
+    "unique_implementations": 2,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
+    "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 0,
+    "tvl_usd": 0,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "kava",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022-12",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 3,
+      "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
+    "live_contracts": 1,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 5,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x65ba64899c2c7dbfdb5130e42e2cc56de281c78b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DEXI",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DEXI",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x65ba64899c2c7dbfdb5130e42e2cc56de281c78b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13023",
+        "audit-13025"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2022-09-06 23:48:39+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 2222,
+      "chain_name": "kava",
+      "address": "0x5a4c7c9d3126c57cddc7856dfa085e5b775ce212",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UnnamedContract",
+      "deployments": [
+        {
+          "chain_id": 2222,
+          "chain_name": "kava",
+          "address": "0x5a4c7c9d3126c57cddc7856dfa085e5b775ce212",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 2222,
+          "chain_name": "kava",
+          "address": "0x6fa2d43f7d766fd9b2990426a06bb24b4fbce959",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 2222,
+          "chain_name": "kava",
+          "address": "0x732bb01c38b7092eb554a7779ad5f7bcd3430266",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 2222,
+          "chain_name": "kava",
+          "address": "0xb8e29c001e41bc3a3df7e1a549bdd898640189f5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 2222,
+          "chain_name": "kava",
+          "address": "0xd22a58f79e9481d1a88e00c343885a588b34b68b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 13023,
+      "audit_key": "audit-13023",
+      "report_name": "63bd414670efa34d8e32b1b9_Final Security Audit of DEXI token-2022-08-22 (1).pdf",
+      "report_url": "https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa34d8e32b1b9_Final%20Security%20Audit%20of%20DEXI%20token-2022-08-22%20(1).pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13024,
+      "audit_key": "audit-13024",
+      "report_name": "63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6 (1).pdf",
+      "report_url": "https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6%20(1).pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13025,
+      "audit_key": "audit-13025",
+      "report_name": "63bd414670efa32a4032b263_audit (1).pdf",
+      "report_url": "https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa32a4032b263_audit%20(1).pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2022-12"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2022-08"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 2
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13024,
+        "report_name": "63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6 (1).pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

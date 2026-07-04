@@ -1,0 +1,18 @@
+{
+  "component": "EmissionsToken",
+  "main_contract": "EmissionsToken",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xaaaac83751090c6ea42379626435f805ddf54dc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

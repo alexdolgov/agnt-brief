@@ -1,0 +1,18 @@
+{
+  "component": "BRC20Factory",
+  "main_contract": "BRC20Factory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x861e3c82bc2753ea64ae5f962d993df6853a6700",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

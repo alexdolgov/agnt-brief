@@ -1,0 +1,18 @@
+{
+  "component": "Introspection",
+  "main_contract": "Introspection",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3cce081280060811889b63b98bf3d607029cc802",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

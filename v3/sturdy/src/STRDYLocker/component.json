@@ -1,0 +1,18 @@
+{
+  "component": "STRDYLocker",
+  "main_contract": "STRDYLocker",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa70d1906b7779293ca7e12e369b2722cefb9fafd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

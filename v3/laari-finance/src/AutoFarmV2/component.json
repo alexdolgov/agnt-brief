@@ -1,0 +1,26 @@
+{
+  "component": "AutoFarmV2",
+  "main_contract": "AutoFarmV2",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x421fcb1f6dba9e01c70d4a342d9590547fbf9997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xda25f742763377daa0aa8a2c8fbe597c4fbb13c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

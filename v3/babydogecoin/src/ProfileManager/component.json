@@ -1,0 +1,18 @@
+{
+  "component": "ProfileManager",
+  "main_contract": "ProfileManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf5a2cb466fa1bc037a463a53d5f889d9c86edd69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

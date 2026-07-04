@@ -1,0 +1,18 @@
+{
+  "component": "NestedRecords",
+  "main_contract": "NestedRecords",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x27f80488078bc485c9cf5a989fcbab27d561ced9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

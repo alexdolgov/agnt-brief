@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawerConfigurer",
+  "main_contract": "WithdrawerConfigurer",
+  "source_file_count": 76,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a4a9c17e20bed3e9fedc52f600e07f2bd68cf89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

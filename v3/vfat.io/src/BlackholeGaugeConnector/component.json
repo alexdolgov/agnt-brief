@@ -1,0 +1,26 @@
+{
+  "component": "BlackholeGaugeConnector",
+  "main_contract": "BlackholeGaugeConnector",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x296b3fcdba0d0deb5ad5e0a1bfaa63f17ae2d03c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc9424e8034c74baa950e17f57fb2a418a0612339",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

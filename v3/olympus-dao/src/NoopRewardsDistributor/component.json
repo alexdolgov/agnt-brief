@@ -1,0 +1,18 @@
+{
+  "component": "NoopRewardsDistributor",
+  "main_contract": "NoopRewardsDistributor",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x48d9a9e67e9decfd493efe2b3d3b5291fc802e5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

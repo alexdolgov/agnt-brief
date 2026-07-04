@@ -1,0 +1,18 @@
+{
+  "component": "BSWToken",
+  "main_contract": "BSWToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x965f527d9159dce6288a2219db51fc6eef120dd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

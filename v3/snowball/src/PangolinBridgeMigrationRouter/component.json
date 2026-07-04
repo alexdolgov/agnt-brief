@@ -1,0 +1,18 @@
+{
+  "component": "PangolinBridgeMigrationRouter",
+  "main_contract": "PangolinBridgeMigrationRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4b23aa72a1214d0e4fd3f2c8da7c6ba660f7483c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

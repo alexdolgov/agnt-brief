@@ -1,0 +1,20 @@
+{
+  "component": "KYCRegistry",
+  "main_contract": "KYCRegistry",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-01-ondo"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x71923a93a1f4837e931d888c90a10de4e3678336",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

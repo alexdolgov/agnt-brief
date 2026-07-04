@@ -1,0 +1,18 @@
+{
+  "component": "LiFiMigrationHelper-6",
+  "main_contract": "LiFiMigrationHelper",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf95d42f73981533a29764a026c02592b27b98f2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

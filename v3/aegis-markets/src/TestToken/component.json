@@ -1,0 +1,18 @@
+{
+  "component": "TestToken",
+  "main_contract": "TestToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xf9a8f837337118960d78e2d0de8dbe17acfae04a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

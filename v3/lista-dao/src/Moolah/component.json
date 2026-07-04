@@ -1,0 +1,35 @@
+{
+  "component": "Moolah",
+  "main_contract": "Moolah",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-Credit-Liquidation-20260303.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-Credit-Loan-Jan2026.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-FixedTerm-20260511.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-FixedTerm-20260628.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-AuditReport-20250410.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-Provider-20250522.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-Smart-Collateral-and-Liquidators-20251124.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec__Fixed_Term_and_rate_Oct2025.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Blocksec-ListaLending-AuditReport-20250410.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Blocksec-ListaLending-Provider-20250522.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Cantina_Credit_loan_04Feb2026.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Cantina_Fixed_Term_and_rate_12Nov2025.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/CertiK-REP-Lista-Dao-PositionManager-20260410.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/HashDit-Idle-Market-20260526.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/OpenZeppelin-ListaLending-Smart-Collateral-20251020.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Spearbit-Credit-Liquidation-20260303.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0af5cd9555bc52c34a5f7b20042109d0136bc34f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SpectraWrappedAmphorLRT",
+  "main_contract": "SpectraWrappedAmphorLRT",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x916cd56a5fbbeae186f488f4db83b00c103b46e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

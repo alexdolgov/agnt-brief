@@ -1,0 +1,18 @@
+{
+  "component": "sAVAXOracleAdapter",
+  "main_contract": "sAVAXOracleAdapter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x49bdf0321c4bf17c9297a6b266f55f3af3cb0ade",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

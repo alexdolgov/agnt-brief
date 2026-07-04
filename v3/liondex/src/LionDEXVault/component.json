@@ -1,0 +1,18 @@
+{
+  "component": "LionDEXVault",
+  "main_contract": "LionDEXVault",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x67f80842b3b870d922a1462830c3d96805a8f98a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

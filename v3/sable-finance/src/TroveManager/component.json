@@ -1,0 +1,18 @@
+{
+  "component": "TroveManager",
+  "main_contract": "TroveManager",
+  "source_file_count": 87,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xec035081376ce975ba9eaf28dfec7c7a4c483b85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

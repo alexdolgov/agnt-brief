@@ -1,0 +1,18 @@
+{
+  "component": "RewardsCollector",
+  "main_contract": "RewardsCollector",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d624c34e475a2eca893d0c118527b6e2061256a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

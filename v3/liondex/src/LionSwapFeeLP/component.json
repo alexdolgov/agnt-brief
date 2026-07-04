@@ -1,0 +1,18 @@
+{
+  "component": "LionSwapFeeLP",
+  "main_contract": "LionSwapFeeLP",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaf734d4d47f9c1db39c958450db510c48e7d10be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

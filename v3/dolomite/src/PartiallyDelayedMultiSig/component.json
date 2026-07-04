@@ -1,0 +1,18 @@
+{
+  "component": "PartiallyDelayedMultiSig",
+  "main_contract": "PartiallyDelayedMultiSig",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x52d7bcb650c591f6e8da90f797a1d0bfd8fd05f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

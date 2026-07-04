@@ -1,0 +1,18 @@
+{
+  "component": "StakedEthStrategyPerpetualNoteLP",
+  "main_contract": "StakedEthStrategyPerpetualNoteLP",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd65f0b6e31e44225330db8622a9e5307ddc6c1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

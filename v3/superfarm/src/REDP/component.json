@@ -1,0 +1,18 @@
+{
+  "component": "REDP",
+  "main_contract": "REDP",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2840a0844310fc22292fe336e96ab1884bc1e6d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

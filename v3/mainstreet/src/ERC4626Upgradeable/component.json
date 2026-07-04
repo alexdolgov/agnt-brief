@@ -1,0 +1,20 @@
+{
+  "component": "ERC4626Upgradeable",
+  "main_contract": "ERC4626Upgradeable",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Mainstreet-Labs/mainstreet-watchpug-audit/blob/main/Mainstreet_v2_Audit_Report_by_WatchPug.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42ced7dce66df68a6828f74ea73612fb511471a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

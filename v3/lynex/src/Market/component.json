@@ -1,0 +1,18 @@
+{
+  "component": "Market",
+  "main_contract": "Market",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x4d6ee03712c403ae6174467229ef5b3d79faa881",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "DFProtocolView",
+  "main_contract": "DFProtocolView",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1351e109fb51888d8e9dd6b364297998b36bf55e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

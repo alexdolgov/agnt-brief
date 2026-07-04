@@ -1,0 +1,42 @@
+{
+  "component": "WETHRouter",
+  "main_contract": "WETHRouter",
+  "source_file_count": 21,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x41f2b791694fafe23a77bc97bcf5d68ae4fbcdc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x70778cfcfc475c7ea0f24cc625baf6eae475d0c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdafeccccd549067d924c232872cafd81be7ad0d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

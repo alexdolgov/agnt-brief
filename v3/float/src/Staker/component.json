@@ -1,0 +1,20 @@
+{
+  "component": "Staker",
+  "main_contract": "Staker",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2021-08-floatcapital"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x11bf56dee7f3627985552a8b7aa6845a6636e3b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

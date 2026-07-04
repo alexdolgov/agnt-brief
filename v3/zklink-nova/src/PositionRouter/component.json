@@ -1,0 +1,18 @@
+{
+  "component": "PositionRouter",
+  "main_contract": "PositionRouter",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x8a7f1c607306f52ed07f9a705b54869159d1bd7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

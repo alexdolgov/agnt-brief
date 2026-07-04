@@ -1,0 +1,42 @@
+{
+  "component": "QuackOFTAdapter",
+  "main_contract": "QuackOFTAdapter",
+  "source_file_count": 39,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0e1e5248260bf496fb6dee8c5aae4a920a63fef6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0e35e66c1b920f86b4f47a4dff245f4ce697ee91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1c6e9f59670a348a0d541c3a83ac088d739f79c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa3e450331591679a2b7208782fa528cb7d4fddde",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

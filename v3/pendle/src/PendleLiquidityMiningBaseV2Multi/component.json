@@ -1,0 +1,18 @@
+{
+  "component": "PendleLiquidityMiningBaseV2Multi",
+  "main_contract": "PendleLiquidityMiningBaseV2Multi",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x224d395e9e123bc9c37bff8bcd845562d5232713",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

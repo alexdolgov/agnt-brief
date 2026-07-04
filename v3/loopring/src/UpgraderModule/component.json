@@ -1,0 +1,42 @@
+{
+  "component": "UpgraderModule",
+  "main_contract": "UpgraderModule",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x57d5abd74d813a9838d4d8ba7246e983ca1b5b6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d6be6009f97f4cc8d859b83b354dbc8b2d44d6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9bd708ba2e187ed4540310e01bfb8e347528b434",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9db0fee5bbaa7576addc2867f4f26750bf86545d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

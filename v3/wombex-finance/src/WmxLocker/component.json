@@ -1,0 +1,21 @@
+{
+  "component": "WmxLocker",
+  "main_contract": "WmxLocker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/wombex-finance/wombex-contracts/blob/main/audits/SlowMist-Audit-Report-Wombex-Finance.pdf",
+    "https://github.com/wombex-finance/wombex-contracts/blob/main/audits/Zokyo-Audit-Report-Wombex-Finance-Main.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4e596c0d5ad06724f4980ff9b73438feb1504ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

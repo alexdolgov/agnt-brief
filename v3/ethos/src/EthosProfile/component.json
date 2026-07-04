@@ -1,0 +1,20 @@
+{
+  "component": "EthosProfile",
+  "main_contract": "EthosProfile",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sherlock-audit/2024-11-ethos-network-ii-judging/blob/main/Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x311df4d62055064b3047e3535b81f33eeffc255c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

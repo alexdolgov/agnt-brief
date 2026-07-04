@@ -1,0 +1,18 @@
+{
+  "component": "LnRewardLocker",
+  "main_contract": "LnRewardLocker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x09d675f36c588700878e6fa2f923569a1bf73947",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AUTOCOLOR_Technica",
+  "main_contract": "AUTOCOLOR_Technica",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e734e30270292993dbe71c421ad2b128b6dae11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

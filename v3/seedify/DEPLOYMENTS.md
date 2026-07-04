@@ -1,0 +1,86 @@
+# seedify — deployments
+
+38 verified deployment(s) across 12 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x091a6ee768ee4ce7ccc210df91d96b8761c7dae0` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0x0b89974f0363b0f85e40a80dd23d35d1fae4552f` | ERC721SequentialId | impl | inactive | no |
+| arbitrum | `0x0f9a5ac923440e49f201420f728922de7689df03` | ERC721SequentialId_Mock | impl | inactive | no |
+| arbitrum | `0x1b300a76cc7dcb464c22e9e8baea7b68d40b511e` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0x2aca984667767db17918bef3bfff672a3a2fa905` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0x2c0a82ba4bd2869ba720937bfd6c59c2cb9bf33b` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0x4498e12f4e975c44fb92855ae5820b0bfb93c82d` | IDOLocking-2 | impl | inactive | no |
+| arbitrum | `0x80c4c6bf51e29ab1c9933a2fbc0d4080f42e81c3` | IDOLocking-2 | impl | inactive | no |
+| arbitrum | `0x86bc9293dadb3590c21071e17046854ee62fd99f` | SMD_v5 | impl | live | no |
+| arbitrum | `0x8b943899f4216092ce2973476b079a5a78a0f3d6` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0x8fce857ef97e03e859a0038a146cb864d3d16536` | IDOLocking-2 | impl | inactive | no |
+| arbitrum | `0x9979002ba6410750b0a312a1efb8fa833640460e` | IDOLocking-2 | impl | inactive | no |
+| arbitrum | `0xa1bfa531fb91f70266eb46ddb7efacda5834eace` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68` | IDOLocking-2 | impl | live | no |
+| arbitrum | `0xb2f3fee058a16d0f5a4114ff4955eaa3dc57a445` | IDOLocking-2 | impl | inactive | no |
+| arbitrum | `0xbcc2f5e68def4cc2b6ab1928fcfa1f971dfabf16` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0xd2322397d67026bb1e9bbbcbab30585d19b53565` | SMD_v5 | impl | live | no |
+| arbitrum | `0xe6c387ad3c4850b459ef1a7eb5d1fbc446371721` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0xe8523954d12c4662ba74712e720e6046c42085eb` | IDOLocking-2 | impl | live | no |
+| arbitrum | `0xee9d9fa905d62982530f70bcbc561f01326d8bea` | SMD_v5 | impl | inactive | no |
+| arbitrum | `0xf01e60c90454513aa41d7b9777d6de9a1f1e6520` | IDOLocking-2 | impl | inactive | no |
+| bsc | `0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e` | IDOLocking | impl | live | no |
+| bsc | `0x1f10564bad9367cff4247a138ebba9a9aaeb789e` | SMD_v5-2 | impl | live | no |
+| bsc | `0x477bc8d23c634c154061869478bce96be6045d12` | InitializableERC20 | impl | live | no |
+| bsc | `0x5745b7e077a76be7ba37208ff71d843347441576` | IDOLocking | impl | live | no |
+| bsc | `0x5b384955ac3460c996402bf03736624a33e55273` | IDOLocking | impl | live | no |
+| bsc | `0x60b9f788f4436f0b5c33785b3499b2ee1d8dbfd4` | IDOLocking | impl | live | no |
+| bsc | `0x66b8c1f8de0574e68366e8c4e47d0c8883a6ad0b` | IDOLocking | impl | live | no |
+| bsc | `0x8900475bf7ed42efcacf9ae8cfc24aa96098f776` | IDOLocking | impl | live | no |
+| bsc | `0x89aaab217272c89da91825d9effbe65ded384859` | IDOLocking | impl | live | no |
+| bsc | `0xb667c499b88ac66899e54e27ad830d423d9fba69` | IDOLocking | impl | live | no |
+| bsc | `0xd01650999bb5740f9bb41168401e9664b28ff47f` | IDOLocking | impl | live | no |
+| bsc | `0xf420f0951f0f50f50c741f6269a4816985670054` | IDOLocking | impl | live | no |
+| bsc | `0xf7e0955b31e8e6deb38670ebb5585867d50d0299` | TokenClaimV3 | impl | inactive | no |
+| ethereum | `0x126e4dcd47c00054f367345202de31db570fe2a7` | Token_Mock | impl | inactive | no |
+| ethereum | `0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60` | SFUND_OFTv1 | impl | live | no |
+| ethereum | `0x5bfd8594a925c28a334dac6b779a04e07edb2a8c` | INO | impl | inactive | no |
+| ethereum | `0xd2322397d67026bb1e9bbbcbab30585d19b53565` | INOFactory | impl | inactive | no |
+
+## Source unavailable (38)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x1299732e3fbacafeefa9fd31f00de45ae7bba4a0`
+- arbitrum `0x1d22275d58a836f8307c306110deafe22e360877`
+- arbitrum `0x1da0230e388a8d3d6cbbb08b8ed2ba89d490ff9f`
+- arbitrum `0x4d40f09feebb62505653f8ae9a0b58b58bcdd252`
+- arbitrum `0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60`
+- arbitrum `0x9f07a4cf035f14c0160db2d7d94eb5a41f114805`
+- arbitrum `0xaae4355b30e18879a12e4e22283da901af47d6cd`
+- arbitrum `0xc30be140f8ada0fdb0c97377c98ddbe8b343679a`
+- arbitrum `0xc8c639b0014a3570b3c66f6df7cc8b81fc534e00`
+- bsc `0x1272b728b8964e75786c0f1772033719c0fa5eac`
+- bsc `0x1544be2dc66eae3e91d983c6d27c9cb1cde74acf`
+- bsc `0x71d058369d39a8488d8e9f5fd5b050610ca788c0`
+- bsc `0x7439bcf0b97ecd7f3a11c35cc2304f01eaf04fc0`
+- ethereum `0x0c8da012fdcbb0c9d08531ea7cc7330da55e7f99`
+- ethereum `0x1315a397720ce226d531f86a103861e0c0c61dab`
+- ethereum `0x1d22275d58a836f8307c306110deafe22e360877`
+- ethereum `0x2c0a82ba4bd2869ba720937bfd6c59c2cb9bf33b`
+- ethereum `0x399c4a6f640f5cf5575c4d04fec9d28df383ac85`
+- ethereum `0x41484c0effb25e599a3529a9911b839744699838`
+- ethereum `0x453bbf5ad5011a89390a1e96042a19d5f4892754`
+- ethereum `0x55560fbff60fb3409d21dd86df9ed364bea39fbf`
+- ethereum `0x569399bfca76e7664cec6510adc75f2811be2c5c`
+- ethereum `0x5ede64cc5bb278777cdf5a67da721ac73dcd74a4`
+- ethereum `0x6e42f30e5163eedcd329247574d432658c03b1c1`
+- ethereum `0x7ed520111e8abbe8f9674a42d1974c09a0c7cf0a`
+- ethereum `0x80c4c6bf51e29ab1c9933a2fbc0d4080f42e81c3`
+- ethereum `0x844645b2b1888b89b78dca1cef2b3ba8ad873d9a`
+- ethereum `0x8482d2b7c27f7b9f7cf20a70a0fd349ff54f872c`
+- ethereum `0x90c5dace72dc178ba8908173addc7d493f2b24b6`
+- ethereum `0x92572249d487a99c0ed746ee36aaf22a66c4ab67`
+- ethereum `0xa1bfa531fb91f70266eb46ddb7efacda5834eace`
+- ethereum `0xbcc2f5e68def4cc2b6ab1928fcfa1f971dfabf16`
+- ethereum `0xbcc572d3f2f619b082794a96a848a23c2a752fcf`
+- ethereum `0xc20138a9f737bdd1e0db8edb926bede7fbd5cd94`
+- ethereum `0xc5911e1ce2fbbb53a8f4bdd4ca49dc9448db7537`
+- ethereum `0xc8c639b0014a3570b3c66f6df7cc8b81fc534e00`
+- ethereum `0xee5a6d105c4442c96045c40f5aaa9959197daa99`
+- ethereum `0xee9d9fa905d62982530f70bcbc561f01326d8bea`

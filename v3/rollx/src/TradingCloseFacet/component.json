@@ -1,0 +1,18 @@
+{
+  "component": "TradingCloseFacet",
+  "main_contract": "TradingCloseFacet",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0a86ba95b7dd0c8c5d16a8d2cbffe6e77d529131",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": "2.0",
+  "project_key": "pepeteam",
+  "generated_at": "2026-07-03T21:06:42.224Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 3,
+    "unique_implementations": 2,
+    "total_deployments": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1049591,
+    "tvl_usd": 1049591,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://pepe.team",
+    "chains": [
+      "bsc",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Bridge. Structurally: 11 project-authored contract(s) across 2 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 4 common project-authored base contract(s) (adminable, proxy, mutex). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 43,
+    "live_contracts": 2,
+    "inactive_contracts": 41,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x5f89d002e72a33b57d7e1c151aaae1216666e37c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeERC20Bridge",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeERC20Bridge",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x5f89d002e72a33b57d7e1c151aaae1216666e37c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2023-06-26 18:43:13+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8df12786ec0e34e60d4c52f9052ba4e536e9367a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeERC20BridgeWithPool",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xfe72ac5e88a81dc651283142318394e80fb03723",
+      "impl_name": "SafeERC20BridgeWithPool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8df12786ec0e34e60d4c52f9052ba4e536e9367a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfe72ac5e88a81dc651283142318394e80fb03723",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2024-02-29 17:38:37+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

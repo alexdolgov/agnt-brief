@@ -1,0 +1,18 @@
+{
+  "component": "OpenOceanMigrator",
+  "main_contract": "OpenOceanMigrator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc0b4d970db822a8692eda3fbba074978ff85339b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

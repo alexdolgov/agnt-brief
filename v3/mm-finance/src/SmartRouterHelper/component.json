@@ -1,0 +1,18 @@
+{
+  "component": "SmartRouterHelper",
+  "main_contract": "SmartRouterHelper",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4c2eb7e8b5cc8ca2276041b835c5cbd330b7a2ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

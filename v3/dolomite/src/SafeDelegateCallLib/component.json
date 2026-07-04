@@ -1,0 +1,18 @@
+{
+  "component": "SafeDelegateCallLib",
+  "main_contract": "SafeDelegateCallLib",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x52d57f0b5df4050d9b44181284e06c6d7341a5a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

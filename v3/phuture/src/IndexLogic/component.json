@@ -1,0 +1,18 @@
+{
+  "component": "IndexLogic",
+  "main_contract": "IndexLogic",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3531ed4cb9f8b68e0c706c92af5b8a50e095f293",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

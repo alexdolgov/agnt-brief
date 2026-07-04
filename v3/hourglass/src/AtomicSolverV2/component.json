@@ -1,0 +1,26 @@
+{
+  "component": "AtomicSolverV2",
+  "main_contract": "AtomicSolverV2",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8650bd4701309a457c508f97cf3d15a5ac9987ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

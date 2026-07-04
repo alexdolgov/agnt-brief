@@ -1,0 +1,26 @@
+{
+  "component": "EmergencyController",
+  "main_contract": "EmergencyController",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x792a1450a3d2023e2de6bb29208031dea52ea12c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84b31b84917485e221305edf590b8e3660d2e051",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

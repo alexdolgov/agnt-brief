@@ -1,0 +1,18 @@
+{
+  "component": "InitializableERC1155",
+  "main_contract": "InitializableERC1155",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3c5509cc5212c62f77e36126efec7adb75c830a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

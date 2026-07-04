@@ -1,0 +1,18 @@
+{
+  "component": "PendleLpGlpOracle",
+  "main_contract": "PendleLpGlpOracle",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x67e64af30e04a7277ab2d4f09ace3f77a15801f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

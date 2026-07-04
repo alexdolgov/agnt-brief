@@ -1,0 +1,18 @@
+{
+  "component": "ERC721NFTMarketV1",
+  "main_contract": "ERC721NFTMarketV1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x17539cca21c7933df5c980172d22659b8c345c5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

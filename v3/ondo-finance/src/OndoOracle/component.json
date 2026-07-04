@@ -1,0 +1,20 @@
+{
+  "component": "OndoOracle",
+  "main_contract": "OndoOracle",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Halborn-Audit-Feb-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9cad45a8bf0ed41ff33074449b357c7a1fab4094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

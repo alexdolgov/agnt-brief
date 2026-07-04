@@ -1,0 +1,34 @@
+{
+  "component": "ERC20Inbox",
+  "main_contract": "ERC20Inbox",
+  "source_file_count": 31,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd210b64ed9d47ef8acf1a3284722fcc7fc6a1f4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5dcf625e1fd5c338ce09bbe27e02e8dafc1880a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xef56eebd29ba736094f23e57aae075685fb9bd6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

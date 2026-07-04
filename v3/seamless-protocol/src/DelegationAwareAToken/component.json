@@ -1,0 +1,18 @@
+{
+  "component": "DelegationAwareAToken",
+  "main_contract": "DelegationAwareAToken",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x34697a08b7a14f12a1d926d31bc8c2eab5f654a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

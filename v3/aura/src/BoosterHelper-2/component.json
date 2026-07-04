@@ -1,0 +1,18 @@
+{
+  "component": "BoosterHelper-2",
+  "main_contract": "BoosterHelper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82bbbc3c7b459913ae6063858832a6c2c43d0bd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

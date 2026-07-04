@@ -1,0 +1,18 @@
+{
+  "component": "PercentQuadraticVoteProxy",
+  "main_contract": "PercentQuadraticVoteProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4128fe23ef23194e00405603c937b19d3e30482c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

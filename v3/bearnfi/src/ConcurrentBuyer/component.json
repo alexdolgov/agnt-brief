@@ -1,0 +1,18 @@
+{
+  "component": "ConcurrentBuyer",
+  "main_contract": "ConcurrentBuyer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9f03c399903b76fe98ef689f507295b0169a47f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

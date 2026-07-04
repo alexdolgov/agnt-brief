@@ -1,0 +1,34 @@
+{
+  "component": "L1Strategy",
+  "main_contract": "L1Strategy",
+  "source_file_count": 24,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x142b9850f26dc95ff8b8c972de7ce63eadbf6a64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93c3d7039743f0a8cdb6d3e240f07153f2b52ef1",
+      "is_proxy": true,
+      "implementation_address": "0x142b9850f26dc95ff8b8c972de7ce63eadbf6a64",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6999c1dcb675ae5568931bb0cfca0c4f4fe21ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

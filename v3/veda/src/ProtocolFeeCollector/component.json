@@ -1,0 +1,20 @@
+{
+  "component": "ProtocolFeeCollector",
+  "main_contract": "ProtocolFeeCollector",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://0xmacro.com/library/audits/sevenSeas-1.html"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfb286d16f9cd8c5cf4d5180501c190519e42524",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

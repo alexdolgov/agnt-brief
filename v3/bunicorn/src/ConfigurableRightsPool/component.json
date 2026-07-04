@@ -1,0 +1,18 @@
+{
+  "component": "ConfigurableRightsPool",
+  "main_contract": "ConfigurableRightsPool",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xefb9cec617317d9814a226d1321b76b6ced8a928",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

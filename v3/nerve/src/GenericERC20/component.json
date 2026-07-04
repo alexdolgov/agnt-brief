@@ -1,0 +1,58 @@
+{
+  "component": "GenericERC20",
+  "main_contract": "GenericERC20",
+  "source_file_count": 6,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x069ef9146ecd9d576847d5c8fd4cb5fc2bd7bb9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x260c1fb8c4a97f3bbaa23bdb7fce20cf675070aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2e054ff8edf1180ea9852019b32d865db5cc9932",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x54d58c5d207b43f7ae711283c944e2ccc5645c5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7f3dee31e6cecb5191de912fe0778c275a47c154",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9854f61cb704e94ecfe172d0cd002e4aaa6cdf75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

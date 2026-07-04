@@ -1,0 +1,26 @@
+{
+  "component": "GERC20-2",
+  "main_contract": "GERC20",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x77fbd7d2cddce76573001a48c90fa46aefb0a8a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0e00481d623fa7adf06b3453182418b7d0cf233",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

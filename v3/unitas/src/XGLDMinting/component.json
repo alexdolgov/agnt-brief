@@ -1,0 +1,18 @@
+{
+  "component": "XGLDMinting",
+  "main_contract": "XGLDMinting",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2a9e3ea72575e05337a7703c8fad65a82a5b5865",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "SYBase-54",
+  "main_contract": "SYBase",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pendle-finance/pendle-core-v2-public/blob/main/audits/main%20codebase/ChainSecurity-2024/ChainSecurity.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd302d7fd2c9375a433018fdfa5613be6ad3f18e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

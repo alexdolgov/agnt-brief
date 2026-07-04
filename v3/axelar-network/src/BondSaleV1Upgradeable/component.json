@@ -1,0 +1,18 @@
+{
+  "component": "BondSaleV1Upgradeable",
+  "main_contract": "BondSaleV1Upgradeable",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SuperSponsorshipPaymaster",
+  "main_contract": "SuperSponsorshipPaymaster",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8c71eb1817a2707e8e40ac978b1993b98f1366aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

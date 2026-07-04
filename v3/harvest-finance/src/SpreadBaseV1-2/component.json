@@ -1,0 +1,18 @@
+{
+  "component": "SpreadBaseV1-2",
+  "main_contract": "SpreadBaseV1",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3d21adf3b0ff5b3fdffc8d5ffa6634bd65949924",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

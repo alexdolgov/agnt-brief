@@ -1,0 +1,20 @@
+{
+  "component": "HATGovernanceArbitrator",
+  "main_contract": "HATGovernanceArbitrator",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hats-finance/hats-contracts/blob/develop/audit/202302-g0-group-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1065a9e3ac47f2624293727f4b8319a0a10f6015",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

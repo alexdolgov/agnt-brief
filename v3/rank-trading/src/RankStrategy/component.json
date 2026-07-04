@@ -1,0 +1,18 @@
+{
+  "component": "RankStrategy",
+  "main_contract": "RankStrategy",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

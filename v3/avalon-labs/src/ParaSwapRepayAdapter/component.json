@@ -1,0 +1,26 @@
+{
+  "component": "ParaSwapRepayAdapter",
+  "main_contract": "ParaSwapRepayAdapter",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x20e2529d4ea434c1da294979ba8e09e91f62e260",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa23e2b1ad0873e0c8f9132f89344a6144daa7295",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

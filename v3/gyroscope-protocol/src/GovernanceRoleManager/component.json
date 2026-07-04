@@ -1,0 +1,20 @@
+{
+  "component": "GovernanceRoleManager",
+  "main_contract": "GovernanceRoleManager",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM_0526_Gyroscope-dynamic-eclp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x78898a5cdf6d1eb009277c744cb2241eacb3a4b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

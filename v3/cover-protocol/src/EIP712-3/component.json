@@ -1,0 +1,24 @@
+{
+  "component": "EIP712-3",
+  "main_contract": "EIP712",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CoverProtocol/cover-core-v1/blob/main/peckshield-audit-report-cover-v1.0.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Cover%20Protocol%20-%20Report%20-%20V2%20by%20Quantstamp.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Cover%20Protocol%20v2%20Security%20Audit%20Report%20(merged).pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/peckshield-audit-report-cover-v1.0.pdf",
+    "https://raw.githubusercontent.com/CoverProtocol/cover-core-v1/b34b3495bb13fa21157bfbc04f475027533315c8/peckshield-audit-report-cover-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e8b62b2ab8db3f3d085ba3437216fd10b6b4eb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

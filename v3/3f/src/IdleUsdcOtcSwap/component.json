@@ -1,0 +1,18 @@
+{
+  "component": "IdleUsdcOtcSwap",
+  "main_contract": "IdleUsdcOtcSwap",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x863a08bfc7ae938c4f96c2c3ef82fa309b33e765",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

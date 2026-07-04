@@ -1,0 +1,27 @@
+{
+  "component": "MoolahVault",
+  "main_contract": "MoolahVault",
+  "source_file_count": 57,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-AuditReport-20250410.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-Provider-20250522.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-YieldBuffer-AuditReport-20260611.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Blocksec-ListaLending-AuditReport-20250410.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Blocksec-ListaLending-Provider-20250522.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Cantina_Fixed_Term_and_rate_12Nov2025.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/HashDit-Idle-Market-20260526.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/HashDit-YieldBuffer-AuditReport-20260611.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0e52472cc585f8e28322ca4536ebd7094431c610",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BalancerFactoryL2",
+  "main_contract": "BalancerFactoryL2",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf61c1bddfc0702d78267adc17d35bb8b13abd8cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

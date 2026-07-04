@@ -1,0 +1,26 @@
+{
+  "component": "PriceProvidersAggregator",
+  "main_contract": "PriceProvidersAggregator",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37ff84f9ebe44530074142de42469ae40051b92b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x516f93d90afdf3d663db1fe35c05727736e900fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

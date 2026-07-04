@@ -1,0 +1,26 @@
+{
+  "component": "UpgradeableClaimable",
+  "main_contract": "UpgradeableClaimable",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa47defa29a4df6a9243bdaeb4a4e5c592e17d930",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3d91b5e63da02c0587597df15436c2f056e33f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BakerySwapRouter",
+  "main_contract": "BakerySwapRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcde540d7eafe93ac5fe6233bee57e1270d3e330f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

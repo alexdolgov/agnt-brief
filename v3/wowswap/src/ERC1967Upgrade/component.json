@@ -1,0 +1,26 @@
+{
+  "component": "ERC1967Upgrade",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8428b4b785df678bcfe5cbb660d2cd555904901a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xd8bfb56c41a5c43b75f05221168550161f90712f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AmmPoolsServiceEth",
+  "main_contract": "AmmPoolsServiceEth",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa30845738443aa2dd6bd0783a47b0af8c01a9bed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

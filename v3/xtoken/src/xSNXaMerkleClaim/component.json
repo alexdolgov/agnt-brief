@@ -1,0 +1,18 @@
+{
+  "component": "xSNXaMerkleClaim",
+  "main_contract": "xSNXaMerkleClaim",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1de6cd47dfe2df0d72bff4354d04a79195cabb1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

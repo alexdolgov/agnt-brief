@@ -1,0 +1,18 @@
+{
+  "component": "Auction-2",
+  "main_contract": "Auction",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3a3702d81fd317fa1b8735227e29dc756c976c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

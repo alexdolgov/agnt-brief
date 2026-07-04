@@ -1,0 +1,18 @@
+{
+  "component": "JUL2021Timelock",
+  "main_contract": "JUL2021Timelock",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb35f9915c7a8de95fae220e8c4c2f9624fc6e09f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

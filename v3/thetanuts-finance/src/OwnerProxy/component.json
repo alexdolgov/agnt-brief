@@ -1,0 +1,18 @@
+{
+  "component": "OwnerProxy",
+  "main_contract": "OwnerProxy",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x264941c2e28e430a21450053c8f2aabffbe327d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

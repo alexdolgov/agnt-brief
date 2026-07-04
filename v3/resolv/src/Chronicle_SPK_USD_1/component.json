@@ -1,0 +1,18 @@
+{
+  "component": "Chronicle_SPK_USD_1",
+  "main_contract": "Chronicle_SPK_USD_1",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x552116e747a5b386b2e7eed4371002359cf2a574",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

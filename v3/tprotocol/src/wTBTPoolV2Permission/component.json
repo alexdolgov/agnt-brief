@@ -1,0 +1,18 @@
+{
+  "component": "wTBTPoolV2Permission",
+  "main_contract": "wTBTPoolV2Permission",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc72386da1f13f291f02363d0619f4d575d3dcf20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PolygonPool_R1",
+  "main_contract": "PolygonPool_R1",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf84834407090c3b159f4f78d2d51bba3175a7f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

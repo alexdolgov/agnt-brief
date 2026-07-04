@@ -1,0 +1,18 @@
+{
+  "component": "SakaiVaultProtocol",
+  "main_contract": "SakaiVaultProtocol",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e8c9814745e51f27ab47733d36ff5280bdf9324",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

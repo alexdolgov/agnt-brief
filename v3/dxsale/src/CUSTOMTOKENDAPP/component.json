@@ -1,0 +1,18 @@
+{
+  "component": "CUSTOMTOKENDAPP",
+  "main_contract": "CUSTOMTOKENDAPP",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa3abeafa40ca4456c3fde2bad46d592515dae47b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TokenPoolFactory",
+  "main_contract": "TokenPoolFactory",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x3d276e2c2debc581f194591750a4d04aa15d3c01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

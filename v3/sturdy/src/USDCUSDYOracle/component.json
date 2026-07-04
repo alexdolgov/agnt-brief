@@ -1,0 +1,18 @@
+{
+  "component": "USDCUSDYOracle",
+  "main_contract": "USDCUSDYOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeee4ecddbb6145839e52f5bc177331db56f26c6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

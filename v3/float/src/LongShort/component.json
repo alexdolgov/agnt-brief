@@ -1,0 +1,20 @@
+{
+  "component": "LongShort",
+  "main_contract": "LongShort",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2021-08-floatcapital"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x16488343e508c2bfb7f180185848f924184c9c9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PadFarmsV2-2",
+  "main_contract": "PadFarmsV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x39205195afb9c79a5eb1d9575091b5a6a19db7ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

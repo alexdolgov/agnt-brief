@@ -1,0 +1,26 @@
+{
+  "component": "PoolPauseHelper",
+  "main_contract": "PoolPauseHelper",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x136f1efcc3f8f88516b9e94110d56fdbfb1778d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x16b50f6bf8c8ca73c07e17762188c5deee7ae5db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MonstroToken",
+  "main_contract": "MonstroToken",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

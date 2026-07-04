@@ -1,0 +1,65 @@
+{
+  "component": "ERC4626Ark-2",
+  "main_contract": "ERC4626Ark",
+  "source_file_count": 58,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf",
+    "https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions",
+    "https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension",
+    "https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0381b9d857bccc043be9fca2717f02b7486780d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3002a7c8d5dc5cfaf81e747120b54d44bfad5935",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4b757b7bfaf539f16764bedb606be66bccbec214",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc0bccb746959ea67f030bc8569ffa6f263c9e681",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd4dd34dd91b09377ecdbb6dd22d930b825a4aa27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xda50ce93aae2c764532e5b11dc6378af3330a817",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "CitadelToken",
+  "main_contract": "CitadelToken",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x77b80d8f209a6b530fc707d80d044d5056178daa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

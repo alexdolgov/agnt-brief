@@ -1,0 +1,18 @@
+{
+  "component": "ChainlinkOracleAdapter",
+  "main_contract": "ChainlinkOracleAdapter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x53881a928abd61c095e5f30b63bc554872c3b2f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

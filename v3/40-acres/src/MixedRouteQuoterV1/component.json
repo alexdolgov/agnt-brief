@@ -1,0 +1,18 @@
+{
+  "component": "MixedRouteQuoterV1",
+  "main_contract": "MixedRouteQuoterV1",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3265d621c7d993151c8eb2acd4902cda0499a8a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

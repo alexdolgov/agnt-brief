@@ -1,0 +1,18 @@
+{
+  "component": "MlpManager",
+  "main_contract": "MlpManager",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2de28ab4827112cd3f89e5353ca5a8d80db7018f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

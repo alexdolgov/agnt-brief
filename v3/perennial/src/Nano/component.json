@@ -1,0 +1,18 @@
+{
+  "component": "Nano",
+  "main_contract": "Nano",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1cc0e7883dc01cca0cc7a04b1eb3e51c290645e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

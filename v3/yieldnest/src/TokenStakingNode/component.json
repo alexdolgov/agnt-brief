@@ -1,0 +1,52 @@
+{
+  "component": "TokenStakingNode",
+  "main_contract": "TokenStakingNode",
+  "source_file_count": 39,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yieldnest/Publications/blob/main/audits/zokyo_audit_yieldnest_feb4th_2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28fd4c04620d95c4bec9397e2d303937779c41fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x74ff5c9f93080d20d505ffa3cc291f5bfad43655",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7573ee497d884239715fa1e7b816536002e16f5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc602682b9ebc9719181b7a2b2479291cba26f801",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc82bfd20ff71b2cf913a6e7959431027938d9748",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityGaugeFactory",
+  "main_contract": "LiquidityGaugeFactory",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49dd29b8d2c7a979e0a406225fefc48bbfe3f4ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ThenaLiquidityImplementation",
+  "main_contract": "ThenaLiquidityImplementation",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xef6ec78f572abea6ae20e80676f563b27b1e84f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

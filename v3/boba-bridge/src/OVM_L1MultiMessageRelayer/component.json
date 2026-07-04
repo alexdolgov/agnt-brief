@@ -1,0 +1,18 @@
+{
+  "component": "OVM_L1MultiMessageRelayer",
+  "main_contract": "OVM_L1MultiMessageRelayer",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab2af3a98d229b7daed7305bb88ad0ba2c42f9ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ClonexEggAirdropClaim",
+  "main_contract": "ClonexEggAirdropClaim",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f85580aa1e81b345f6ec8701a297696c9d70a08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

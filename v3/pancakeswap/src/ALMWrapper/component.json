@@ -1,0 +1,18 @@
+{
+  "component": "ALMWrapper",
+  "main_contract": "ALMWrapper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00f5150e6b2daac2310f76f48f12df6a27b65d30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

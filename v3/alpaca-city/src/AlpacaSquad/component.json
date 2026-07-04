@@ -1,0 +1,18 @@
+{
+  "component": "AlpacaSquad",
+  "main_contract": "AlpacaSquad",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

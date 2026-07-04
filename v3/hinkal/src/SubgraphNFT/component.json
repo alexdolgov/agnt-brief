@@ -1,0 +1,18 @@
+{
+  "component": "SubgraphNFT",
+  "main_contract": "SubgraphNFT",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3fbd54f0cc17b7ae649008deea12ed7d2622b23f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

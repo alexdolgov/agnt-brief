@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrumRootGaugeFactory-2",
+  "main_contract": "ArbitrumRootGaugeFactory",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad901309d9e9dbc5df19c84f729f429f0189a633",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

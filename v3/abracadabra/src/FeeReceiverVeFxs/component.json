@@ -1,0 +1,18 @@
+{
+  "component": "FeeReceiverVeFxs",
+  "main_contract": "FeeReceiverVeFxs",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6f94fe4dadd7a6f4ce67e607bab531a9d1717624",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

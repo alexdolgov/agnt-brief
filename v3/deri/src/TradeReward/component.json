@@ -1,0 +1,18 @@
+{
+  "component": "TradeReward",
+  "main_contract": "TradeReward",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0da14380ac829caced1e00f4f4b57ffcf643c892",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

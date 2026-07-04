@@ -1,0 +1,18 @@
+{
+  "component": "AaveGenesisProposalPayload",
+  "main_contract": "AaveGenesisProposalPayload",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36ec8f61d077909b2166f78c488f2525bca62e94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

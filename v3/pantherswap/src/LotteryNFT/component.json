@@ -1,0 +1,18 @@
+{
+  "component": "LotteryNFT",
+  "main_contract": "LotteryNFT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x983c4fb762e6136a609431d4a93187c6f6ab886f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

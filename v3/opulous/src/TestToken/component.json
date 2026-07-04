@@ -1,0 +1,18 @@
+{
+  "component": "TestToken",
+  "main_contract": "TestToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80840f918e325f4a198e214fa46885fce198fece",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VaultYieldRSETH",
+  "main_contract": "VaultYieldRSETH",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2410e7d8909faa641a090a9c0582b76577edf4bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

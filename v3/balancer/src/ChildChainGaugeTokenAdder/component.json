@@ -1,0 +1,18 @@
+{
+  "component": "ChildChainGaugeTokenAdder",
+  "main_contract": "ChildChainGaugeTokenAdder",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbfd9769b061e57e478690299011a028194d66e3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

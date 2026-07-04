@@ -1,0 +1,26 @@
+{
+  "component": "JumpRateModelV2",
+  "main_contract": "JumpRateModelV2",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x161fd17c7cb8f4b34c87799fba1f26ce4543bb9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f0439382359c05ed287acd5170757b76402d93f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

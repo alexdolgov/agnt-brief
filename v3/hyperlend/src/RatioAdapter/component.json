@@ -1,0 +1,18 @@
+{
+  "component": "RatioAdapter",
+  "main_contract": "RatioAdapter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x1654f60f637f448d94562e3e18d0f967603a1d74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

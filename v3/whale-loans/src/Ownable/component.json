@@ -1,0 +1,18 @@
+{
+  "component": "Ownable",
+  "main_contract": "Ownable",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb9a669ba9d56ab5d1ff7f98b3b75fe9e79b784cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Team_Accountant",
+  "main_contract": "Team Accountant",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c221980aab2e52ccc02180e0c171ca5e5ffdfd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

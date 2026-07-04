@@ -1,0 +1,18 @@
+{
+  "component": "FactoryStable",
+  "main_contract": "FactoryStable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0d5433fee91fb2db9dd6a74267dd900ec2130675",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+pragma solidity 0.8.18;
+
+interface CustomErrors {
+    error AlreadyInitialized();
+    error NotSettled();
+    error InsufficientBalance();
+    error ZeroValue();
+    error SeriesExpired();
+    error TooCloseToExpiration();
+    error InvalidPoolAddress();
+    error InvalidFee();
+    error Unauthorized();
+    error InvalidAccount();
+    error InvalidArgument();
+    error ExpiryNotSupported();
+    error SeriesPerExpiryLimitExceeded();
+    error StrikeTooHigh(uint256 maxStrike);
+    error StrikeTooLow(uint256 minStrike);
+    error InventoryCapExceeded(uint256 cap, uint256 inventoryBalance);
+    error OnlyCallsAllowed();
+    error StrikeInvalidIncrement();
+    error InvalidUnderlying();
+    error OrderNotSupported();
+    error InvalidOrder();
+    error InvalidLegsCount();
+    error InvalidPricePerShare();
+    error NoAccessKey();
+    error ShortNotAllowed();
+    error TokenInfoCallFailed();
+    error InvalidDestinationAddress();
+    error TransferFailed();
+    error TokenIndexMismatch();
+    error InvalidPendingAmount();
+    error PositionManagerIsNotSet(address token);
+    error InvalidReceiver();
+    error OrderAlreadyProcessed();
+    error OrderIsNotSubmitted();
+    error InvalidSellAmount();
+    error InvalidBuyAmount();
+    error SwapRouterIsNotWhitelisted();
+    error TokenIsNotWhitelisted();
+    error InvalidOrderTokens();
+    error PoolDoesNotExist();
+}

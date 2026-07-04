@@ -1,0 +1,42 @@
+{
+  "component": "BitcoinRelay",
+  "main_contract": "BitcoinRelay",
+  "source_file_count": 16,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7c5e6bbbcd70ae0eb5abcc81c3caa4c62cf9af38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x984ccdb7461feb9b18dd73016764790c2624fcf4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc7a7c6ab475138565fe0d2476ee4616862bf2467",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe880e70521c03d9f90c3805d47f0e148876917b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

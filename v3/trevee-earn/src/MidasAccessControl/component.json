@@ -1,0 +1,42 @@
+{
+  "component": "MidasAccessControl",
+  "main_contract": "MidasAccessControl",
+  "source_file_count": 13,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x0ee21b6c1f6aed64ce3c67767168ea62f3d8974b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x3ea351249daa640f4ababc06b3118f35324fab72",
+      "is_proxy": true,
+      "implementation_address": "0x0ee21b6c1f6aed64ce3c67767168ea62f3d8974b",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x4e7caa4d3192e91c4fdb123fc927efa559cd0f39",
+      "is_proxy": true,
+      "implementation_address": "0x0ee21b6c1f6aed64ce3c67767168ea62f3d8974b",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x88b70f4f0a0344c305a29ce082a167c7436890fa",
+      "is_proxy": true,
+      "implementation_address": "0x0ee21b6c1f6aed64ce3c67767168ea62f3d8974b",
+      "liveness": "live"
+    }
+  ]
+}

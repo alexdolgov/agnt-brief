@@ -1,0 +1,18 @@
+{
+  "component": "DemaxShackConfig",
+  "main_contract": "DemaxShackConfig",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5fb37f02196190237b47f0fe73a343b51fa06b24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "CollateralAdder",
+  "main_contract": "CollateralAdder",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x44794511f06d09ba45fac50312a6f7f7ab3a9a57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6a28e379391c9a8113ba83ffbbea6208f2cf053d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc1de3c0a4ee14abb828ef6d359779f8b00b604c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

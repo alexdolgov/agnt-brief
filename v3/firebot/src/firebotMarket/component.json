@@ -1,0 +1,26 @@
+{
+  "component": "firebotMarket",
+  "main_contract": "firebotMarket",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc99567b0b5649120fe882554cacfcaa68bc1d334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf312bf23569151becd5ba27745e4e05e9d7eb39c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

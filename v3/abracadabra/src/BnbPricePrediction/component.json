@@ -1,0 +1,18 @@
+{
+  "component": "BnbPricePrediction",
+  "main_contract": "BnbPricePrediction",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x05b4c8785f4c8856c47a3c2ebce313343efa9c75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

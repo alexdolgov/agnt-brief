@@ -1,0 +1,34 @@
+{
+  "component": "DSFuserData",
+  "main_contract": "DSFuserData",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03f3f053f478714573ddb379efeda4d4a1702bc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ade603f1587a5d73f9e50b56bf93afd2821351d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b9dbc6f648d8d47b9a176da613b52412b1932dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+# symbiosis — deployments
+
+234 verified deployment(s) across 81 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9` | AdminUpgradeabilityProxy | proxy | live | yes |
+| arbitrum | `0x0425841529882628880fbd228ac90606e0c2e09a` | AdminUpgradeabilityProxy | proxy | live | yes |
+| arbitrum | `0x0f28f4a0250710adf2d95c7e7e297b2edd31aec8` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0x0f91052dc5b4bae53d0fea5dae561a117268f5d2` | Vyper_contract | impl | inactive | yes |
+| arbitrum | `0x2e04409f950a236690be6e119f34f7fc209d27c1` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0x2ee9559387b806e88fd46b9da160d64a29ce7da0` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x318c2b9a03c37702742c3d40c72e4056e430135a` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0x326adbe46d7e6c1b3927e9309b96df478bda6d16` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x3941870e18ae68b0cf572b7a543c6647e836cbb1` | TransparentUpgradeableProxy | impl | live | no |
+| arbitrum | `0x3ef3f0e0f2e9e0b59efeb74f8c03538190a4763e` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x4ac560a3a8fadd1662cf9439bb1114abaa3be547` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x4f82caa8f34564ab22371f3c5d22868ab8edd5e3` | Vyper_contract | impl | live | yes |
+| arbitrum | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | Vyper_contract | proxy | live | yes |
+| arbitrum | `0x57c36199be0054a987daca83f2df6a8d450e238b` | Vyper_contract | impl | live | yes |
+| arbitrum | `0x5be6e69ec8a59b1ed8201b184adb0774d551a774` | Vyper_contract | proxy | live | yes |
+| arbitrum | `0x5eb4ed9f745531221fae41906e11d37642b15da6` | Unwrapper | impl | inactive | no |
+| arbitrum | `0x695eeaece7ce4502850b1f6b4f14b97dba02e840` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365` | Vyper_contract | impl | live | yes |
+| arbitrum | `0x844e4a0ade23b1ba5642a8d0010e42ae4434df30` | Vyper_contract | proxy | live | yes |
+| arbitrum | `0x84b10469db07446d5fc7156aefdd6b7117108a73` | Depository | impl | live | yes |
+| arbitrum | `0x85700ed7c30625ed28613d75e85c58ef0056263f` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x97cbe92630ec56a7f484d28bbbced857121c2aad` | AdminUpgradeabilityProxy | proxy | live | yes |
+| arbitrum | `0xaf4570fadd2ab163c809e4ba483d032b31475e1a` | AdminUpgradeabilityProxy | impl | unknown | yes |
+| arbitrum | `0xb657f823fd8c4b94901e78b75481d5b39d59ec61` | Vyper_contract | impl | live | yes |
+| arbitrum | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xbd37c8233649f66eb431e550856d429445706437` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xca506793a420e901bbca8066be5661e3c52c84c2` | Vyper_contract | impl | live | yes |
+| arbitrum | `0xce8f24a58d85ed5c5a6824f7be1f8d4711a0eb4c` | Vyper_contract | impl | live | yes |
+| arbitrum | `0xda8057acb94905eb6025120cb2c38415fd81bfeb` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xeb278638ffa33cc776230de4ff88ed5142ed8c1a` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xec54cba614a9ba1fa51031ba4740e26a8cdcc6ff` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xf3040d00dd4038b62da8b6dd53ec14fdace27238` | TransparentUpgradeableProxy | impl | live | no |
+| arbitrum | `0xf5b0861e787706195c98e2f0d2d6efbdac1d1e08` | Vyper_contract | impl | live | yes |
+| arbitrum | `0xf621fb08bbe51af70e7e0f4ea63496894166ff7f` | TransparentUpgradeableProxy | impl | live | no |
+| arbitrum | `0xf7e96217347667064dee8f20db747b1c7df45dde` | Vyper_contract | impl | live | yes |
+| arbitrum | `0xf951789c6a356bfbc3033648aa10b5dd3e9d88c0` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xfec09be39f82b13471d2e0e7d72e6ee589c631c6` | AdminUpgradeabilityProxy | impl | inactive | yes |
+| arbitrum | `0xff9b21c3bfa4bce9b20b55fed56d102ced48b0f6` | Vyper_contract | impl | live | yes |
+| avalanche | `0x0f28f4a0250710adf2d95c7e7e297b2edd31aec8` | MulticallRouterV2 | impl | inactive | yes |
+| avalanche | `0x1ac4c50080871d7a24dd705de9efe5ff14bc0ea2` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0x1da522b35363c1eda4833bc121c8f3c67b2caa75` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0x292fc50e4eb66c3f6514b9e402dbc25961824d62` | ERC1967Upgrade | proxy | live | yes |
+| avalanche | `0x3e6a3ebbc9d88acc192221797ad90bf72d391778` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0x7775b274f0c3fa919b756b22a4d9674e55927ab8` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0x97cbe92630ec56a7f484d28bbbced857121c2aad` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0xa257f3fe4e4032291516dc355edf90664e9eb932` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0xc17d768bf4fdc6f20a4a0d8be8767840d106d077` | MulticallRouterV2 | impl | live | yes |
+| avalanche | `0xf85fc807d05d3ab2309364226970aac57b4e1ea4` | MulticallRouterV2 | impl | live | yes |
+| base | `0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9` | MulticallRouter | impl | inactive | no |
+| base | `0x0f28f4a0250710adf2d95c7e7e297b2edd31aec8` | OnchainSwapV3 | impl | live | yes |
+| base | `0x0f91052dc5b4bae53d0fea5dae561a117268f5d2` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0x17efc1d70ea32eb04c6979c6500d12eee9e3dcbd` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0x1a039ce63ae35a67bf0e9f6dbfae969639d59ec8` | MulticallRouter | impl | inactive | no |
+| base | `0x1ac4c50080871d7a24dd705de9efe5ff14bc0ea2` | OnchainSwapV3 | impl | live | yes |
+| base | `0x1ceaeda3d17936916d0f3e866aa5ef861f544840` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0x1da522b35363c1eda4833bc121c8f3c67b2caa75` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0x1dcfbc3fa01b2a86bc3a3f43479cce9e8d438adc` | MulticallRouter | impl | inactive | no |
+| base | `0x253ddb32f0f45ffbc0ebcdfc5edd47857aff79d7` | MulticallRouter | impl | inactive | no |
+| base | `0x318c2b9a03c37702742c3d40c72e4056e430135a` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0x3338be49a5f60e2593337919f9ad7098e9a7dd7e` | OnchainSwapV3 | impl | live | yes |
+| base | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | OnchainSwapV3 | impl | live | yes |
+| base | `0x5aa5f7f84ed0e5db0a4a85c3947ea16b53352fd4` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0x5b1bab64961cf72822817ef32950ff7fcab28b62` | OnchainSwapV3 | impl | live | yes |
+| base | `0x5eb4ed9f745531221fae41906e11d37642b15da6` | MulticallRouter | impl | inactive | no |
+| base | `0x691df9c4561d95a4a726313089c8536dd682b946` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0x6f0f6393e45fe0e7215906b6f9cfeff53ea139cf` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0x7f6fb9f3ce785f3d85772c038fda58ec9432d421` | MulticallRouter | impl | inactive | no |
+| base | `0x8097f0b9f06c27af9579f75762f971d745bb222f` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0x81ab74a9f9d7457ff47dfd102e78a340cf72ec39` | AdminUpgradeabilityProxy | impl | unknown | yes |
+| base | `0x844e4a0ade23b1ba5642a8d0010e42ae4434df30` | OnchainSwapV3 | impl | live | yes |
+| base | `0x88139ad1199e8c78a0804d4bebf4fbad89ef9d89` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0x8dc3151dccd58fcb6a0bec0df20c06fba133f027` | OnchainSwapV3 | impl | live | yes |
+| base | `0x97cbe92630ec56a7f484d28bbbced857121c2aad` | OnchainSwapV3 | impl | live | yes |
+| base | `0x9a31bac4b3b958c835c243800b474818d04393dd` | MulticallRouter | impl | inactive | no |
+| base | `0xa385b1436fd2a6a1c6865e22c522a1aa40cadcc6` | MulticallRouter | impl | inactive | no |
+| base | `0xa9a96ee51dd54b9f51d46b1fbd2a19c1295ec75b` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0xb79a4f5828eb55c10d7abf4bfe9a9f5d11aa84e0` | MulticallRouter | impl | inactive | no |
+| base | `0xbba322c98601b707cffb98092010e0b95d538bb7` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0xc17d768bf4fdc6f20a4a0d8be8767840d106d077` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0xda1c70c902746996a8c989bb07aa6c408ef880d8` | AdminUpgradeabilityProxy | impl | live | yes |
+| base | `0xda8057acb94905eb6025120cb2c38415fd81bfeb` | AdminUpgradeabilityProxy | proxy | live | yes |
+| base | `0xee981b2459331ad268cc63ce6167b446af4161f8` | MulticallRouter | proxy | live | no |
+| base | `0xf1c374d065719ce1fdc63e2c5c13146813c0a83b` | OnchainSwapV3 | impl | live | yes |
+| base | `0xf3040d00dd4038b62da8b6dd53ec14fdace27238` | OnchainSwapV3 | impl | live | yes |
+| base | `0xf85fc807d05d3ab2309364226970aac57b4e1ea4` | OnchainSwapV3 | impl | live | yes |
+| base | `0xf951789c6a356bfbc3033648aa10b5dd3e9d88c0` | OnchainSwapV3 | impl | live | yes |
+| ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | inactive | no |
+| ethereum | `0x015fd589f4f1a33ce4487e12714e1b15129c9329` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0x01c1103d765f62a0d909499d7b615c382cdb072d` | DadFab | impl | inactive | no |
+| ethereum | `0x025c6da5bd0e6a5dd1350fda9e3b6a614b205a1f` | AirdropGrapesToken | impl | inactive | no |
+| ethereum | `0x02dedca9ccfdaa3a68fac4f368644416be7f808d` | wstETHOFTAdapterUpgradeable | impl | live | no |
+| ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | inactive | no |
+| ethereum | `0x076c1e3a551082fa84042ce5fff53bc795239bcf` | ERC20Mock | impl | inactive | no |
+| ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | inactive | no |
+| ethereum | `0x0e98db51010dd1ade14dd3fb164e218805fdba1b` | TetherToken | impl | inactive | no |
+| ethereum | `0x0eda20f7499aae7bdadc4e52fd72e49663733ed4` | TopFab | impl | inactive | no |
+| ethereum | `0x0fbbc6a4e951b00b1ac170325763bd4d5149a77f` | FiatTokenV1 | impl | inactive | no |
+| ethereum | `0x141a206ece672e3198086c5d21f7858ad03669ea` | MomFab | impl | inactive | no |
+| ethereum | `0x1a9dd47b69e01a1a48a162bf52bd447b1b41ce06` | wstETHOFTAdapterUpgradeable | impl | live | no |
+| ethereum | `0x1e7ca05e174a523709e556080e227f734a8f1483` | DSChiefFab | impl | inactive | no |
+| ethereum | `0x21f65deadb3b85082ba99766f323bea90eb5a3d6` | FflonkVerifier | impl | inactive | no |
+| ethereum | `0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1` | Pool | impl | live | yes |
+| ethereum | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | PausableToken | impl | live | no |
+| ethereum | `0x2c67395bbbd658c239f54fb99487aefbbcf95636` | DSToken | impl | inactive | no |
+| ethereum | `0x301442aa888701c8b86727d42f3c55fb0dd9ef7f` | PolygonZkEVMUpgraded | impl | inactive | no |
+| ethereum | `0x3086ac03b0347bee2ce3fd9079452db13fc76827` | TokenVesting | impl | inactive | no |
+| ethereum | `0x353f8931ce1c52f643121be129985aab09c4bf52` | WETH | impl | inactive | no |
+| ethereum | `0x3721a8e6239a8d0489a13725265dd02657ed3b57` | TetherToken-2 | impl | inactive | no |
+| ethereum | `0x414b1da0bb6e948dc0559d14ebde9fa9572499bf` | VoxFab | impl | inactive | no |
+| ethereum | `0x4175d9dea315864ed0bcdc256805ea187b13ebe3` | wstETHOFTAdapterUpgradeable | impl | live | no |
+| ethereum | `0x431e935209d79706b5866eb42137a3491d845692` | GemFab | impl | inactive | no |
+| ethereum | `0x4a63c5b06f5f2d7108628aef93a4fa04d12ed089` | ERC20Mock | impl | inactive | no |
+| ethereum | `0x4a67d9b00c077b093ddfb67de2a1c66a70bac0fe` | MomFab | impl | inactive | no |
+| ethereum | `0x4d224452801aced8b2f0aebe155379bb5d594381` | Astgik | impl | live | no |
+| ethereum | `0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9` | FflonkVerifier-2 | impl | live | no |
+| ethereum | `0x5132a183e9f3cb7c848b0aac5ae0c4f0491b7ab2` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x521c420c2a2b461034becbb41d4888b68951f14f` | TapFab | impl | inactive | no |
+| ethereum | `0x5503e7690e550045e984c2b55902d8986ca2808e` | WETH | impl | inactive | no |
+| ethereum | `0x552f355ccb9b91c8fb47d9c011abad5b72ec30e9` | GemFab | impl | inactive | no |
+| ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | inactive | no |
+| ethereum | `0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x59adcf176ed2f6788a41b8ea4c4904518e62b6a4` | DSToken | impl | inactive | no |
+| ethereum | `0x5b58c971af1ee0fe5d5f772d68ab3829262dfd2b` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0x5c2973d7ef3bb244d81578b61c932a49dfbe7362` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | inactive | no |
+| ethereum | `0x67480c30ff8cc128cf0250e25616857302df647f` | USDCOFTAdapter | impl | live | no |
+| ethereum | `0x674843c06ff83502ddb4d37c2e09c01cda38cbc8` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0x68fd0899fedeeee08b77c189d2f8ac38466ea216` | VoxFab | impl | inactive | no |
+| ethereum | `0x69076e44a9c70a67d5b79d95795aba299083c275` | GemPit | impl | inactive | no |
+| ethereum | `0x69bfc7b0deb166aa4341a2c7437956b13ea74d9f` | OFTCore | impl | live | no |
+| ethereum | `0x6cea302b297bb8c49e56d04cc080480822795848` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0x6ef7dd4d7782c27a4c509585db60695d8c7231bf` | SymbiosisTokenVesting | impl | inactive | no |
+| ethereum | `0x70b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1` | SyntERC20 | impl | live | yes |
+| ethereum | `0x734cef0c55c856ba82d82c209136b3f33df9610a` | wstETHOFTAdapterUpgradeable | impl | live | no |
+| ethereum | `0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0x7ac729067c766faca13ba2314e811a02fb16beb8` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0x7bcdc4c2d626c5c9d94dfceada5204b1798629d6` | wstETHOFTAdapterUpgradeable | impl | live | no |
+| ethereum | `0x7bf810829004cd2f2cc26c464c7c6b821dfac855` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0x880f614c729c622c727f3625b263a36c0b89167f` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0x8ac3728262d96a2d007910f212d11ebab58c90ef` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0x8ad82b29261a9657a89a299dac3bfe01880778d4` | ProxyAdmin | impl | live | yes |
+| ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | inactive | no |
+| ethereum | `0x8d5a41e85f4ce2433beef476305d307b9205d98d` | NectarController | impl | inactive | no |
+| ethereum | `0x8e2a84d6ade1e7fffee039a35ef5f19f13057152` | DSChief | impl | inactive | no |
+| ethereum | `0x904249766b2ccf6795d7b34441cc0bcae5cb7640` | NectarController-2 | impl | inactive | no |
+| ethereum | `0x931c6728470394507049f5642bab16da029f48f6` | SymbiosisTokenVesting-2 | impl | live | no |
+| ethereum | `0x97bf1ff371ceabbb9e821480d31dd743c4b71e0e` | DSMath | impl | live | yes |
+| ethereum | `0x991f0e5c5775ca9dd02e30e67f545c36cff3690e` | WrapperLockEth | impl | inactive | no |
+| ethereum | `0x9a99eb7e9794ef5a7c00c87d64ee067cfc10c9f0` | BtcRefundUnlocker | impl | live | no |
+| ethereum | `0x9aed7a25f2d928225e6fb2388055c7363ad6727b` | DSToken | impl | inactive | no |
+| ethereum | `0x9c7beba8f6ef6643abd725e45a4e8387ef260649` | GravityTokenG | impl | live | no |
+| ethereum | `0x9dc6c56296e91466fc12d31a694639699e4c37e5` | GemPit | impl | inactive | no |
+| ethereum | `0x9dda491445b0b33976527ed741e0476a16380c49` | TopFab | impl | inactive | no |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy-2 | proxy | live | no |
+| ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | inactive | no |
+| ethereum | `0xa2d339411624cfb6243f909b064e07320919ee3f` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0xa460c960e41bc0640bf9c0bb0b3cdaa1f6955839` | wstETHOFTAdapterUpgradeable | impl | live | no |
+| ethereum | `0xabdf147870235fcfc34153828c769a70b3fae01f` | TetherToken-3 | impl | inactive | no |
+| ethereum | `0xaec71b3be50bc4cd99b44ea84fcf1ecc913bc33d` | WETH | impl | inactive | no |
+| ethereum | `0xb1eead6959cb5bb9b20417d6689922523b2b86c3` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0xb3b67099121e1fbde6276b2802048d1a7dd1b987` | TubFab | impl | inactive | no |
+| ethereum | `0xb4808618b63384f50ff9eee14fe47aee646ee114` | MovementWAB | impl | inactive | no |
+| ethereum | `0xb6cd0d1757a44b77ba666ee6a76ce45c33cae97a` | ERC20Mock | impl | inactive | no |
+| ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | inactive | no |
+| ethereum | `0xb8b21b885ad567b37cb2bea8b85d33f0864e9339` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | TransparentUpgradeableProxy-4 | proxy | live | yes |
+| ethereum | `0xbab93b7ad7fe8692a878b95a8e689423437cc500` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0xbb0d083fb1be0a9f6157ec484b6c79e0a4e31c2e` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0xbbfb7cb70f84fb6fe1cb13e42a0b71efde769428` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0xbc1ea504fc54d078514efcca1f6860b5219b6bc3` | PolygonZkEVMGlobalExitRoot | impl | inactive | no |
+| ethereum | `0xbc7f244e2b38657bd014a5f6f4e4ba1125c14b84` | OFTMock | impl | live | no |
+| ethereum | `0xbd8ea150c7597c28a62356337870c305cb107b5e` | ERC20Mock | impl | inactive | no |
+| ethereum | `0xbe574b6219c6d985d08712e90c21a88fd55f1ae8` | ERC20Mock | impl | inactive | no |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
+| ethereum | `0xc0562baaad3ef9e78ac449e3508a4a31c9395e57` | DSToken | impl | inactive | no |
+| ethereum | `0xc2baca5300b95ab18eddd9ef3070a0945298ab50` | TapFab | impl | inactive | no |
+| ethereum | `0xc5ebd4bca64ff7ec0bb837cdbf4ea958270a848d` | SymbiosisTokenVesting | impl | inactive | no |
+| ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | inactive | no |
+| ethereum | `0xcd108089057dd0e9f841eb9e00fcf5105534341e` | Pool | impl | live | yes |
+| ethereum | `0xd13689e8da0ed95b55100e27b7dbc95c03b5259b` | V2_1Upgrader | impl | inactive | no |
+| ethereum | `0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9` | Symbiosis | impl | live | yes |
+| ethereum | `0xd7c3df25683871d18bc838e4f619126442dd38b3` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0xd8cf92e9b6fae6b32f795acb11edd50e8dd6ff4d` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0xd9a442856c234a39a81a089c06451ebaa4306a72` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken-4 | impl | live | no |
+| ethereum | `0xde0aa21af41176cb05e5a80f26dd7949380f0195` | FiatTokenV1 | proxy | inactive | no |
+| ethereum | `0xdf7108f8b10f9b9ec1aba01cca057268cbf86b6c` | SignatureChecker | impl | live | no |
+| ethereum | `0xe05de631122d95ef347f6fca85d1bb149fcc6df2` | MasterChef | impl | inactive | no |
+| ethereum | `0xe262ea2782e2e8dbfe354048c3b5d6de9603efef` | PolygonZkEVM | impl | inactive | no |
+| ethereum | `0xe5df61285e8492d1d4dd6e4651821383512f012f` | DadFab | impl | inactive | no |
+| ethereum | `0xe982615d461dd5cd06575bbea87624fda4e3de17` | MasterMinter | impl | inactive | no |
+| ethereum | `0xe99a090b75b0aa9355dd61c3b6e61abed18c1fcb` | SymbiosisTokenVesting | impl | inactive | no |
+| ethereum | `0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7` | WOFTAdapterFactory | impl | inactive | no |
+| ethereum | `0xec0f22b4339b4adcae3347bd5cad539700ac4beb` | MasterMinter | impl | inactive | no |
+| ethereum | `0xec148f80d699b0eaf65dd5438cde4b380ded8a3b` | Pool | impl | live | yes |
+| ethereum | `0xec4d29fd22066e75746eb68cb51d8a7df7d28356` | TubFab | impl | inactive | no |
+| ethereum | `0xed24bd79a3f2ba4325e9c553164e299c65e272fc` | V2Upgrader | impl | inactive | no |
+| ethereum | `0xef1462451c30ea7ad8555386226059fe837ca4ef` | PolygonZkEVMTimelock | impl | inactive | no |
+| ethereum | `0xef5a2f6e39e250a3efdb2df018683d9b29d6de34` | ERC20Mock | impl | inactive | no |
+| ethereum | `0xf07674f6ac6632e253c291b694f9c2e2ed69ebbb` | DaiFab | impl | inactive | no |
+| ethereum | `0xf1815bd50389c46847f0bda824ec8da914045d14` | ERC20Mock | impl | live | no |
+| ethereum | `0xf5b59c107f3f7b1c2a7c3d09234bd0a055ad8d55` | GemPit | impl | inactive | no |
+| ethereum | `0xf6445627bc9d06516d317a0dbbc4660bab7a17c0` | TetherToken-5 | impl | inactive | no |
+| ethereum | `0xf911f2f5b5e4b12bb2d5cbdcec717d3c6222bbc3` | Reservoir | impl | inactive | no |
+| ethereum | `0xfe146a5522a74384c5f3e528dbeea558c7b4a337` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| ethereum | `0xfe634e21014674e090c7e2b7acdd3f05456e001f` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| optimism | `0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9` | Portal | impl | inactive | yes |
+| optimism | `0x0f91052dc5b4bae53d0fea5dae561a117268f5d2` | MetaRouter | impl | live | yes |
+| optimism | `0x1a039ce63ae35a67bf0e9f6dbfae969639d59ec8` | MetaRouter | impl | live | yes |
+| optimism | `0x1ac4c50080871d7a24dd705de9efe5ff14bc0ea2` | Portal | impl | inactive | yes |
+| optimism | `0x200a0fe876421dc49a26508e3efd0a1008fd12b5` | MetaRouterGateway | impl | live | yes |
+| optimism | `0x292fc50e4eb66c3f6514b9e402dbc25961824d62` | Portal | proxy | live | yes |
+| optimism | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | MetaRouter | proxy | live | yes |
+| optimism | `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365` | MetaRouter | impl | live | yes |
+| optimism | `0x7b4e28e7273aa8cb64c56ff191ebf43b64f409f9` | Portal | impl | inactive | yes |
+| optimism | `0x81ab74a9f9d7457ff47dfd102e78a340cf72ec39` | Portal | impl | inactive | yes |
+| optimism | `0xa9a96ee51dd54b9f51d46b1fbd2a19c1295ec75b` | MetaRouterGateway | impl | live | yes |
+| optimism | `0xb79a4f5828eb55c10d7abf4bfe9a9f5d11aa84e0` | Portal | impl | inactive | yes |
+| optimism | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | Portal | impl | inactive | yes |
+| optimism | `0xce8f24a58d85ed5c5a6824f7be1f8d4711a0eb4c` | MetaRouter | impl | live | yes |
+| polygon | `0x0f28f4a0250710adf2d95c7e7e297b2edd31aec8` | ProxyAdmin | impl | live | yes |
+| polygon | `0x1da522b35363c1eda4833bc121c8f3c67b2caa75` | ProxyAdmin | impl | live | yes |
+| polygon | `0x3941870e18ae68b0cf572b7a543c6647e836cbb1` | MerkleDistributor | impl | inactive | no |
+| polygon | `0x4fda0599b78a49d289577a8df2046459abc04d82` | ProxyAdmin | impl | live | yes |
+| polygon | `0x624ffe62eba13e6057878bca1d7a9e35651e1d9c` | ProxyAdmin | impl | live | yes |
+| polygon | `0x62f54e18992b07e0298d171cb23c0be56a975d8b` | MerkleDistributor | impl | inactive | no |
+| polygon | `0x8e1d36f9da8cfe842bcf8670a12acd51c26d195d` | ProxyAdmin | impl | live | yes |
+| polygon | `0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f` | ProxyAdmin | impl | live | yes |
+| polygon | `0xa18348e793e77239ec68caa51b74c5cdc82c8a9d` | ProxyAdmin | impl | live | yes |
+| polygon | `0xb91d3060c90aac7c4c706aef2b37997b3b2a1dcf` | ProxyAdmin | impl | live | yes |
+| polygon | `0xda1c70c902746996a8c989bb07aa6c408ef880d8` | ProxyAdmin | impl | live | yes |
+| polygon | `0xe24c543a6e930c728e12648c42ea73bf953d820f` | ProxyAdmin | impl | live | yes |
+| polygon | `0xee981b2459331ad268cc63ce6167b446af4161f8` | MultiSender | impl | inactive | no |
+| polygon | `0xf5b0861e787706195c98e2f0d2d6efbdac1d1e08` | ProxyAdmin | impl | live | yes |
+
+## Source unavailable (74)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x1ac4c50080871d7a24dd705de9efe5ff14bc0ea2`
+- arbitrum `0x1da522b35363c1eda4833bc121c8f3c67b2caa75`
+- arbitrum `0x230cbb84ad080c07623fb0acb91d782b021d0c68`
+- arbitrum `0x2b7aa8bdc40b6d3d19d0de7480c4db8d5b6495e2`
+- arbitrum `0x3743c756b64ecd0770f1d4f47696a73d2a46dcbe`
+- arbitrum `0x3e6a3ebbc9d88acc192221797ad90bf72d391778`
+- arbitrum `0x4fda0599b78a49d289577a8df2046459abc04d82`
+- arbitrum `0x5ad095de83693ba063941f2f2c5a0df02383b651`
+- arbitrum `0x6aeb9b27590387b8fd0560c52f6b968c59c10fab`
+- arbitrum `0x6f0f6393e45fe0e7215906b6f9cfeff53ea139cf`
+- arbitrum `0x77ed285ad9d1c8c0307ea23dce68b8a5a6afb39a`
+- arbitrum `0x7f6fb9f3ce785f3d85772c038fda58ec9432d421`
+- arbitrum `0x80dddda846e779ccee463bdc0bcc2ae296fedaf9`
+- arbitrum `0x9a31bac4b3b958c835c243800b474818d04393dd`
+- arbitrum `0xa257f3fe4e4032291516dc355edf90664e9eb932`
+- arbitrum `0xb79a4f5828eb55c10d7abf4bfe9a9f5d11aa84e0`
+- arbitrum `0xbba322c98601b707cffb98092010e0b95d538bb7`
+- avalanche `0x4cfa66497fa84d739a0f785fbcee9196f1c64e4a`
+- avalanche `0x5523985926aa12ba58dc5ad00ddca99678d7227e`
+- avalanche `0x5b1bab64961cf72822817ef32950ff7fcab28b62`
+- avalanche `0x5be6e69ec8a59b1ed8201b184adb0774d551a774`
+- avalanche `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365`
+- avalanche `0x8dc3151dccd58fcb6a0bec0df20c06fba133f027`
+- avalanche `0xa738e84fde890bc60b99af7cce43990e534304de`
+- avalanche `0xe75c7e85fe6add07077467064ad15847e6ba9877`
+- avalanche `0xe7eb022e21e85200e7b0daebf3757764e83f5c4e`
+- avalanche `0xf1c374d065719ce1fdc63e2c5c13146813c0a83b`
+- avalanche `0xfec09be39f82b13471d2e0e7d72e6ee589c631c6`
+- base `0x44487a445a7595446309464a82244b4bd4e325d5`
+- base `0x464c30aebacd4e8928167c567f8920d16f203027`
+- base `0x8e1d36f9da8cfe842bcf8670a12acd51c26d195d`
+- base `0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f`
+- base `0x9f6424fe88fbe7785fa34f0e369f192bf38e7a6e`
+- base `0xa18348e793e77239ec68caa51b74c5cdc82c8a9d`
+- ethereum `0x5523985926aa12ba58dc5ad00ddca99678d7227e`
+- ethereum `0x84deb7fc54a1f734aef6ddc0c0f74182bdf941a8`
+- ethereum `0x943ed40709dfd0c30f25c458c54fcbb3b01ca66e`
+- ethereum `0xc958012809a696ad2d2d2a78e756b610dc726782`
+- ethereum `0xd04a69ad7afcbd87a2e12bc2d3aad63d6486ec39`
+- ethereum `0xf621fb08bbe51af70e7e0f4ea63496894166ff7f`
+- ethereum `0xfcef2fe72413b65d3f393d278a714cad87512bcd`
+- optimism `0x1da522b35363c1eda4833bc121c8f3c67b2caa75`
+- optimism `0x2b7aa8bdc40b6d3d19d0de7480c4db8d5b6495e2`
+- optimism `0x45cfd6fb7999328f189aad2739fba4be6c45e5bf`
+- optimism `0x7775b274f0c3fa919b756b22a4d9674e55927ab8`
+- optimism `0x88139ad1199e8c78a0804d4bebf4fbad89ef9d89`
+- optimism `0xa257f3fe4e4032291516dc355edf90664e9eb932`
+- optimism `0xbbad2fe9558e55ebfa04b3b5bff0b6c4e2ffdd2c`
+- optimism `0xf8504d2ca2f0bbad9d36927e3d32e278abadada0`
+- optimism `0xf85fc807d05d3ab2309364226970aac57b4e1ea4`
+- polygon `0x1ac4c50080871d7a24dd705de9efe5ff14bc0ea2`
+- polygon `0x1ceaeda3d17936916d0f3e866aa5ef861f544840`
+- polygon `0x2a82ef729f6cd1bce5143666b3f32ae73dd1bfad`
+- polygon `0x2ee9559387b806e88fd46b9da160d64a29ce7da0`
+- polygon `0x3338be49a5f60e2593337919f9ad7098e9a7dd7e`
+- polygon `0x35d39bb2cbc51ce6c03f0306d0d8d56948b1f990`
+- polygon `0x5523985926aa12ba58dc5ad00ddca99678d7227e`
+- polygon `0x5ad095de83693ba063941f2f2c5a0df02383b651`
+- polygon `0x5be6e69ec8a59b1ed8201b184adb0774d551a774`
+- polygon `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365`
+- polygon `0x7b4e28e7273aa8cb64c56ff191ebf43b64f409f9`
+- polygon `0x8dc3151dccd58fcb6a0bec0df20c06fba133f027`
+- polygon `0x97cbe92630ec56a7f484d28bbbced857121c2aad`
+- polygon `0x9a31bac4b3b958c835c243800b474818d04393dd`
+- polygon `0xa260e3732593e4ecf9ddc144fd6c4c5fe7077978`
+- polygon `0xab83653fd41511d638b69229afbf998eb9b0f30c`
+- polygon `0xb657f823fd8c4b94901e78b75481d5b39d59ec61`
+- polygon `0xb79a4f5828eb55c10d7abf4bfe9a9f5d11aa84e0`
+- polygon `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8`
+- polygon `0xc17d768bf4fdc6f20a4a0d8be8767840d106d077`
+- polygon `0xe75c7e85fe6add07077467064ad15847e6ba9877`
+- polygon `0xebd15fca7ab58470c40653ecb60f10fa08322f67`
+- polygon `0xf951789c6a356bfbc3033648aa10b5dd3e9d88c0`
+- polygon `0xfec09be39f82b13471d2e0e7d72e6ee589c631c6`

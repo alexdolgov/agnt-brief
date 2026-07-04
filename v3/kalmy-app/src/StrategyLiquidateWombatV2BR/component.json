@@ -1,0 +1,18 @@
+{
+  "component": "StrategyLiquidateWombatV2BR",
+  "main_contract": "StrategyLiquidateWombatV2BR",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe85971e435b8db1d8114ea5c0ff4df3f7192a6d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "DepositToken",
+  "main_contract": "DepositToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/wombex-finance/wombex-contracts/blob/main/audits/SlowMist-Audit-Report-Wombex-Finance.pdf",
+    "https://github.com/wombex-finance/wombex-contracts/blob/main/audits/Zokyo-Audit-Report-Wombex-Finance-Main.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x13e050d2aa88873d5c11704f4196ed66699a5b55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

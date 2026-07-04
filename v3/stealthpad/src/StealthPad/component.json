@@ -1,0 +1,20 @@
+{
+  "component": "StealthPad",
+  "main_contract": "StealthPad",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/1-tba/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb18f98822c22492bd6b77d19cae9367f3d60fcbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

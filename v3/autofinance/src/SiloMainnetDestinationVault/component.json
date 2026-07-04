@@ -1,0 +1,34 @@
+{
+  "component": "SiloMainnetDestinationVault",
+  "main_contract": "SiloMainnetDestinationVault",
+  "source_file_count": 78,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43ac6018d520280fdbb98159acc4970b2b97ab82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x679d6fa208d4c91ccce6e3ca109cbb654be3aca9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87a840fd61828b8ececbc3a6df3f368f06e4a262",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

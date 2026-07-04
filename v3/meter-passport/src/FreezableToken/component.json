@@ -1,0 +1,18 @@
+{
+  "component": "FreezableToken",
+  "main_contract": "FreezableToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xabe580e7ee158da464b51ee1a83ac0289622e6be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

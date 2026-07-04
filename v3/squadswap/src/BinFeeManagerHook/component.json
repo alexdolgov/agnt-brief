@@ -1,0 +1,26 @@
+{
+  "component": "BinFeeManagerHook",
+  "main_contract": "BinFeeManagerHook",
+  "source_file_count": 39,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0ec6a90be27728272796d456656e05989860ab86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x73e5fd3b64c59f1e1a1cab159656444f16a58113",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

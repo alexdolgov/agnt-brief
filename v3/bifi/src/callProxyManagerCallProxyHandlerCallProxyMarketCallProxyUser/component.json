@@ -1,0 +1,18 @@
+{
+  "component": "callProxyManagerCallProxyHandlerCallProxyMarketCallProxyUser",
+  "main_contract": "callProxyManagerCallProxyHandlerCallProxyMarketCallProxyUser",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ce8acc2afc1ab5c77915fedb1f74f8d9b63b287",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

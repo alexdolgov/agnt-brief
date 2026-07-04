@@ -1,0 +1,18 @@
+{
+  "component": "CollateralReserve-3",
+  "main_contract": "CollateralReserve",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x191069dc5277491b35420ebab060d812196c2bda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

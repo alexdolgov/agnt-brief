@@ -1,0 +1,18 @@
+{
+  "component": "TransferSelectorNFT",
+  "main_contract": "TransferSelectorNFT",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ba628f27aac9b2d78a9f2bf40a8a6df4ccd9e2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

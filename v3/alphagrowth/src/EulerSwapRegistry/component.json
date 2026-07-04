@@ -1,0 +1,20 @@
+{
+  "component": "EulerSwapRegistry",
+  "main_contract": "EulerSwapRegistry",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5fccb84363f020c0cade052c9c654aabf932814a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

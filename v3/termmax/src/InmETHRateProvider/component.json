@@ -1,0 +1,18 @@
+{
+  "component": "InmETHRateProvider",
+  "main_contract": "InmETHRateProvider",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa22a7a8c550760574fd7b722c9f7100902d57707",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

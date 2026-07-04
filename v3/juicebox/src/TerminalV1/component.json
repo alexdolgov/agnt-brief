@@ -1,0 +1,18 @@
+{
+  "component": "TerminalV1",
+  "main_contract": "TerminalV1",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd569d3cce55b71a8a3f3c418c329a66e5f714431",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

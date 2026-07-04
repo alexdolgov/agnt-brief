@@ -1,0 +1,42 @@
+{
+  "component": "EpsStrategy",
+  "main_contract": "EpsStrategy",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x52b7717086a7dce8871dae3bce5f9133daf08a0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x89c505541361d688c57d1735a9f51f0c9186ab45",
+      "is_proxy": true,
+      "implementation_address": "0xef6f0359e38b441c2b40719ae451b034b3ab317e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xef6f0359e38b441c2b40719ae451b034b3ab317e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf3fae8576cc8127f128097ea99a068c119352930",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

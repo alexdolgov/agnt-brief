@@ -1,0 +1,18 @@
+{
+  "component": "PinkLock",
+  "main_contract": "PinkLock",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2a6ce789e25573819e0c47820ec6f887bca361ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

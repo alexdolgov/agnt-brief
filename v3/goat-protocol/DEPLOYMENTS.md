@@ -1,0 +1,125 @@
+# goat-protocol — deployments
+
+107 verified deployment(s) across 35 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x0292caa67f4af3ee38e6cf9e5d328da84d0c5550` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x03dc58ebe79e05f6524126821a6e9906f5704e58` | TransparentUpgradeableProxy | proxy | inactive | no |
+| arbitrum | `0x06d8e84edd983ba8ccaf2afd3b3ed0049e9703b1` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x083417bdfb05fde9a8cad9b6ae6e9c6c53ffc310` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x0df2e3a0b5997adc69f8768e495fd98a4d00f134` | Multistrategy | impl | live | yes |
+| arbitrum | `0x0f93c7f6b7ab1e8d9d7b2b17acb7ab79390975da` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x13b90978cce7d738c7b732d2ff54e8b9bd828a96` | ERC4626Adapter | impl | inactive | no |
+| arbitrum | `0x179714b1cf5fbc86cd59887cd53e71786273b08d` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0x180b04a93bb3426e482717b5e32b2a29ec14da5a` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x1a6702df6b936cb5848d0d8c1f7ff942da6cefc9` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0x1a6e9fd892b6ca3c6617f31164dbc6f00fb54369` | GOA_Redeem | impl | live | no |
+| arbitrum | `0x1b61fc9903925a6fedcc69a0579728a079286c47` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x1eb54e842a4fc4ecefb7bf57d53720227c66a031` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x31b2431ed62fc3ed6a19767887545d122896cca7` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x3782ba74e32021dd2e2a7ade5118e83440ee24e4` | Multistrategy | impl | live | yes |
+| arbitrum | `0x38a52ecc2d23d7a89e3225c313d2082e763a92c5` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0x40394cc92a5ee714872bcbb34644c8ec6986b4e6` | GoatAppMulticall | impl | inactive | no |
+| arbitrum | `0x4385457b8c5676a0eae7c732f50ce144c081efcd` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x4c1a3e857890358a2971f064a9cfaee7887a770f` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0x54adf00460c7b7874e5b475f413e88878063318a` | Multistrategy | impl | inactive | yes |
+| arbitrum | `0x561f2d29177d60946298416c1d6ce274d7e627e8` | TransparentUpgradeableProxy | impl | inactive | no |
+| arbitrum | `0x57fdf6151fe2c22e6a24cf1810efdfe8643ca21e` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x5a382ba8e402e623071bf687f50f4ed67e143f1a` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0x5bbadb296cd708dfa91ef92f2d89ac87c4527b5c` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0x5be13f90cd86a8bb0f0573b550f04b95927f5dc5` | GnosisSafeProxy | proxy | live | no |
+| arbitrum | `0x5df90cca6bbe3e8f97b2ea493da91ed85a1d6be9` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x636373a81015deb8e5587cf3a4eaabece103db46` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x667fe8dd40969a5fb92b53e9c8503b454e569bdb` | LzApp | impl | live | no |
+| arbitrum | `0x66bcf69a397abb95bf3c39492b3c7ef4e2cb5299` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x6c15b79970fe87a557c9758b442d7edf46e8e12a` | GoatBoost | impl | inactive | no |
+| arbitrum | `0x6ddf10ac88cabb5a63fd33eb6a0840a5a78a5e68` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x6eaa49797be3c413dbf8ab015bd51f7abafa77ef` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0x74c2d8b6977eee5220d118e0d6a0746ac137f06e` | VirtuswapOneSidedLiquidity | impl | inactive | no |
+| arbitrum | `0x77df091585e587b3b8e717f75a6a6a7bc6698b39` | GoatFarmFactory | impl | inactive | no |
+| arbitrum | `0x7948b4ae64adb0db348fe49129ecd1c0daef83f7` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x7a293eefe1dad17664c538a04c626814c12012f4` | InstantDepositRouter | impl | inactive | no |
+| arbitrum | `0x7b8447babe2e6326979ff8e73296f31ea3ff410c` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x7c758f30892f2ad7d7ae29f4a588eab4ddd62e66` | GoatFeeBatch | impl | live | yes |
+| arbitrum | `0x81eae3a6d4f1c19f8b1e01a4e087c48752d1ea80` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x85d5930cc9e5471a03f29ca5f64c2b83cc70b497` | BoostFactory | impl | inactive | no |
+| arbitrum | `0x878b7897c60fa51c2a7bfbdd4e3cb5708d9eee43` | Multistrategy | impl | inactive | yes |
+| arbitrum | `0x88f5431d999919415d648b3b8ff1847ab49b1891` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x8a1ef3066553275829d1c0f64ee8d5871d5ce9d3` | Multistrategy | impl | live | yes |
+| arbitrum | `0x8a3f5df8484b47548fbb65924d20c2bc3a4c6886` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0x8a65437a1e057066957af8ff434ec592a0793d1f` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0x8c6bd546fb8b53fe371654a0e54d7a5bd484b319` | XERC20-2 | impl | live | no |
+| arbitrum | `0x8f4e0616121594ec0903c09ba29257db74deefb3` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0x957fa38ce3a63f777cb10f5f9c9488aeb77cbf24` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x98b332784678a919489fc05b81ef5b20bbddd5ba` | GoatVaultFactory | impl | inactive | no |
+| arbitrum | `0x9cd240522564d2855cc660d72a0257f7ba0b60db` | ERC4626Adapter | impl | inactive | no |
+| arbitrum | `0x9d7ebc9230b1c1919d4a04878bc3c4d4bdf3c545` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0x9ea937aaafa75d7d3ffcfd7d3acb6d878f9658ba` | GoatProtocolStrategyAdapter | impl | inactive | no |
+| arbitrum | `0xa0efc7056986411e02bc3fcdd82ccdfd9d3ab3a2` | GoatRewardPool | impl | inactive | no |
+| arbitrum | `0xa1c9c58f6737699fa5ecdc96026fb48a1c1cb7c1` | AdapterDebtRatioThresholdRegistry | impl | inactive | no |
+| arbitrum | `0xa1dbe02f2177bec06123d69dbe04a6d82005d445` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0xa4ec385ff6f15eda574f1e82a9bd66b888762413` | ERC4626Adapter | impl | inactive | no |
+| arbitrum | `0xa5b87f9e58cf5b5294e41a1c52e9aa3ad83c93ab` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0xa7781f1d982eb9000bc1733e29ff5ba2824cdbe5` | Multistrategy | impl | live | yes |
+| arbitrum | `0xa79b2b1cc042cd21f317d11a2eb7cb051599587e` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0xad701808f6560c84a312507444efc71c5ee52ad3` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0xad9ce8580a1cd887038405275cb02443e8fb88ac` | GoatRewardPool-2 | impl | live | yes |
+| arbitrum | `0xb497b5ef3e1f1b23c986fdbcc6780a1ffa94507c` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0xc01b7ba1d0515b5e3b78b2435dcf6267def16e37` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0xc17e25c71d3e969b5c88bb2421c3b7d5d7a5d50c` | GoatFarmFactory | impl | inactive | no |
+| arbitrum | `0xcef47a5acad82c1f01258935c892579920aeed7a` | StrategyEquilibria | impl | inactive | no |
+| arbitrum | `0xd24e3fb7e0d2d85f94b82182ab79f0728f6dd950` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0xd2ac879ae8dca04f95fb071e7472f8791b97ee52` | StrategySiloBorrowableDeposit | impl | inactive | no |
+| arbitrum | `0xd6bff00af1ee08de572ac3a9867a72a9ff5578fa` | GoatAppMulticall | impl | inactive | no |
+| arbitrum | `0xdf0a624d6826996e6d2f4bd2dbdfd6a428f09055` | StrategyVirtuswap | impl | inactive | no |
+| arbitrum | `0xe06f5e3039901c1c16c7044fd3238987db8e688a` | GoatAppMulticall | impl | inactive | no |
+| arbitrum | `0xe11cd37aa115e2bafc2e7960dbf612dfbf656e5f` | ERC4626Adapter | impl | inactive | no |
+| arbitrum | `0xe1c410eefaebb052e17e0cb6f1c3197f35765aab` | Multistrategy | impl | live | yes |
+| arbitrum | `0xe20e59be2439c0175a21b86b7301a4b28bdb367c` | TransparentUpgradeableProxy | impl | inactive | no |
+| arbitrum | `0xe53a1de7680986df67ee0a3166086f7af4726c4d` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0xe59dacf736abd86d6c6bd4a7b6511f30eb8d4051` | StakedGOAStrategy | impl | live | no |
+| arbitrum | `0xea2a550f5a2230f57e5c9d8cf4c912aede713766` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0xea5333f7b968524bfc7f0f3e09ce3b69d95c42fb` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0xeb8d830bd399cbdd55eecc011e02a027ddd0d25b` | GoatFeeBatch | impl | inactive | yes |
+| arbitrum | `0xf0f5bd7e127845603e92e56a7fe7aefbc01413b3` | SiloAdapter | impl | inactive | no |
+| arbitrum | `0xfa1c8d74b5f889ea936b21e38638cf41f0015801` | GoatBoost | impl | inactive | no |
+| arbitrum | `0xfdd4466d1a6c38691e2e31f1fb0a48f73b322884` | StrategyVirtuswap | impl | inactive | no |
+| base | `0x663c8a709cdc448b657d09f0b5635f22f8e7e42f` | SafeProxy | impl | live | no |
+| chain-146 | `0x108e823a26c5fb096d1f7c493809cce9015507a6` | GoatSwapper | impl | inactive | no |
+| chain-146 | `0x2c087aaaf51e93bf4774c404705d55674dee76f4` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0x561f2d29177d60946298416c1d6ce274d7e627e8` | SiloV2Adapter | impl | live | no |
+| chain-146 | `0x5be13f90cd86a8bb0f0573b550f04b95927f5dc5` | GnosisSafeProxy-2 | impl | live | no |
+| chain-146 | `0x5fa4ac48e9cc8266ed167c7ce8559aa40b0334a6` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0x64318b0882b6595aa662751ee5966ae4019cac23` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0x69947083379fec458477c0613c2d6bba2fcd34e1` | SiloV2Adapter | impl | live | no |
+| chain-146 | `0x784abdb952b8dadfcd2f1228d3411110c6b5d58c` | TimelockController-2 | impl | live | no |
+| chain-146 | `0x79af452f3db5d743087ab9323c4cd7017fc38b14` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0x89d2f8f6c3073968268bd4c99f7790d1b7e0e145` | SiloV2VaultAdapter | impl | live | no |
+| chain-146 | `0x8f348c4b165a856e2f7922ca63b031ca3764e436` | SiloV2VaultAdapter | impl | live | no |
+| chain-146 | `0x947bf6890e5c618e9ef071ae95456d5cbfd17858` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0x96f1184f198d4005a5675393cb5c6734bc68d7ed` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0x9776865c710023f050fbcf543c3a6d529a79fd89` | SiloV2Adapter | impl | live | no |
+| chain-146 | `0xaace416fcc30e227b023b323299651ec75688b01` | GnosisSafeProxy | proxy | live | no |
+| chain-146 | `0xae1ae31bce3a06996f7af6ec4d0d7fd9d1eaf6a6` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0xba812e20c7888be7570fa7cca74ef08f7be9ee06` | SiloV2Adapter | impl | live | no |
+| chain-146 | `0xd132631a63af5c616e60606025c8e5871addf76f` | GnosisSafeProxy | proxy | live | no |
+| chain-146 | `0xeb8d830bd399cbdd55eecc011e02a027ddd0d25b` | SiloV2Adapter | impl | inactive | no |
+| chain-146 | `0xf904b3887521868e029194027894b087f2fedda4` | SiloV2Adapter | impl | inactive | no |
+| ethereum | `0x108e823a26c5fb096d1f7c493809cce9015507a6` | Multicall | impl | inactive | no |
+| ethereum | `0x2c568371e48744e65d5301bba014c64ca75d044e` | TimelockController | impl | inactive | no |
+| ethereum | `0x6f91b345e36fc451893fa1b3873cd30a15ae8f18` | XERC20 | impl | live | no |
+| ethereum | `0x901e3059bf118abc74d917440f0c08fc78ec0aa6` | GOA | impl | live | no |
+| ethereum | `0xe16a19968ae9912d58cb8e4df520f6b568a93d60` | XERC20Lockbox | impl | live | no |
+
+## Source unavailable (8)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x108e823a26c5fb096d1f7c493809cce9015507a6`
+- arbitrum `0x2c568371e48744e65d5301bba014c64ca75d044e`
+- arbitrum `0x6f91b345e36fc451893fa1b3873cd30a15ae8f18`
+- arbitrum `0xc3b853a257f9da40b14e1d1437d147787c7fddeb`
+- chain-146 `0x182c6aa9636a3e3882c92a082e6209aa01f788e9`
+- chain-146 `0x901e3059bf118abc74d917440f0c08fc78ec0aa6`
+- chain-146 `0xf97ad3c1a358e69abc4616ddf257f0cc21c02b43`
+- ethereum `0xe06f5e3039901c1c16c7044fd3238987db8e688a`

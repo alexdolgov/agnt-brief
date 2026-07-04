@@ -1,0 +1,26 @@
+{
+  "component": "EVM2EVMOnRamp",
+  "main_contract": "EVM2EVMOnRamp",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8469b5abd81987f9347c0babd47b9eb11da7d0df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffbd6b0146c9e16a9f9e77dc8898cbff6e2aa389",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

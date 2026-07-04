@@ -1,0 +1,18 @@
+{
+  "component": "RageTreasury",
+  "main_contract": "RageTreasury",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x94e29af27dc811406e1f5ded721e42e160adae30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

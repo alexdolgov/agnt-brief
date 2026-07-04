@@ -1,0 +1,21 @@
+{
+  "component": "LendingPoolAddressesProvider",
+  "main_contract": "LendingPoolAddressesProvider",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf",
+    "https://www.openzeppelin.com/news/aave-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xd1088091a174d33412a968fa34cb67131188b332",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

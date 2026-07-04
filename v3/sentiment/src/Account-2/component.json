@@ -1,0 +1,21 @@
+{
+  "component": "Account-2",
+  "main_contract": "Account",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arbitraryexecution/publications/blob/main/assessments/Sentiment_Protocol_20220727.pdf",
+    "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2022.10.18%20-%20Final%20-%20Sentiment%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc3991f83f2fb241b05db76e0c1bb24a81e0c5463",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

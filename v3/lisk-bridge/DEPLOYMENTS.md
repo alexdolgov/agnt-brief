@@ -1,0 +1,245 @@
+# lisk-bridge — deployments
+
+208 verified deployment(s) across 123 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | inactive | no |
+| ethereum | `0x0129c6f26ba8ab0f9575ffe2c0678253a5de930d` | Vyper_contract | impl | inactive | no |
+| ethereum | `0x02398771fd1db790ef2b656ca3bcb3075f27a72c` | MasterMinter | impl | live | no |
+| ethereum | `0x03bbc1313d3db4b356fb307dbe86a001f29c1576` | AddressManager | impl | live | no |
+| ethereum | `0x0454092516c9a4d636d3cafa1e82161376c8a748` | LivenessModule | impl | inactive | no |
+| ethereum | `0x0479e6757eb4743843b309dddf78e6ba242f38be` | Proxy-2 | impl | live | no |
+| ethereum | `0x04b5129735b5d9b1b54109f2c4c06ea23b506a95` | Tellor | impl | inactive | no |
+| ethereum | `0x055860f40533c4d9e7cd38105f4c0d1eb0593072` | ProxyAdmin | impl | live | no |
+| ethereum | `0x05f23282ffdca8286e4738c1af79079f3d843750` | Proxy-5 | proxy | live | no |
+| ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | live | no |
+| ethereum | `0x089df6de0498c9dea212d80b72641984425c00ab` | AddressManager | impl | live | no |
+| ethereum | `0x095102ec7bea1c5f25090705b196a6ea2e6b64f6` | PermissionedDisputeGame | impl | live | yes |
+| ethereum | `0x0969c4233120ea77f3f54b9fd5143c61e2cdd2ee` | ContextUpgradeable | impl | live | no |
+| ethereum | `0x0a103ee32f4209926d8ba7e528aff8a831ed3dae` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x0a34677dafcd28916aac0b22123142efabf700fa` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x0a4010b884a8e3f9fb3611fe830a01b46fbe2073` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x0a4477e37583bfe30002ee386f5ab3fa1537b61b` | ProxyAdmin | impl | live | no |
+| ethereum | `0x0b2a66c5106bc4be40214b0699adf8d5d9e9674d` | SmtPriceFeed | impl | inactive | no |
+| ethereum | `0x0c033bb39e67eb598d399c06a8a519498da1cec9` | SmtVesting | impl | inactive | no |
+| ethereum | `0x0cf7d3706a27cce2017aeb11e8a9c8b5388c282c` | Proxy-3 | proxy | live | no |
+| ethereum | `0x0e98db51010dd1ade14dd3fb164e218805fdba1b` | TetherToken | impl | inactive | no |
+| ethereum | `0x0fbbc6a4e951b00b1ac170325763bd4d5149a77f` | FiatTokenV1 | impl | live | no |
+| ethereum | `0x113cb99283af242da0a0c54347667edf531aa7d6` | Proxy-6 | proxy | live | no |
+| ethereum | `0x114cb34b1a0fbbb686e31bf5542d64a98c42ee23` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x1217bfe6c773eec6cc4a38b5dc45b92292b6e189` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0x121b48f41ad4965445bc295bba0f069b1b6533c6` | ProxyAdmin | impl | live | no |
+| ethereum | `0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2` | Create2Deployer | impl | live | no |
+| ethereum | `0x17fef0d05ffed818af08ae00bec06b65c4319618` | Merge | impl | inactive | no |
+| ethereum | `0x18a0b8c653c291d69f21a6ef9a1000335f71618e` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0x1920666fa17a87b4454f08665176cbe9ecc0b7bc` | AddressManager | impl | live | no |
+| ethereum | `0x19708f0e1b9f4645907b75386a9d5bb75ea03acc` | Dotc | impl | inactive | no |
+| ethereum | `0x1a2356d54aeead105f203a5c51a6307ec100494e` | SwarmBuyerBurner | impl | inactive | no |
+| ethereum | `0x1abaea1f7c830bd89acc67ec4af516284b1bc33c` | FiatTokenProxy | proxy | live | no |
+| ethereum | `0x1d0d0516385d2ff6748a3b87ba2c2cc37f287d4a` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x1f58f1ba43a88b4ff3b4265449b26e28c08395ad` | TransparentUpgradeableProxy-2 | impl | live | no |
+| ethereum | `0x1f8e9072b5f07c9de66a2974cfba75636648aeac` | SwarmBuyerBurner-2 | impl | live | no |
+| ethereum | `0x20bf447fe55ac3718538e89c8c32396b174e82a6` | XTokenFactory | impl | inactive | no |
+| ethereum | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | PausableToken | impl | live | no |
+| ethereum | `0x2294a7f24187b84995a2a28112f82f07be1bcead` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x23afd2bd797b87394d797dd0134022c42432f7fe` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x24424336f04440b1c28685a38303ac33c9d14a25` | GnosisSafe | impl | inactive | no |
+| ethereum | `0x247d082cd7649098d377ff8812d84aa354b55c14` | XTokenFactory | impl | inactive | no |
+| ethereum | `0x2658723bf70c7667de6b25f99fcce13a16d25d08` | L1ChugSplashProxy | proxy | live | no |
+| ethereum | `0x26c7bfb430d68bf74d2d52497836d4336b555de7` | Proxy | proxy | live | no |
+| ethereum | `0x26db93f8b8b4f7016240af62f7730979d353f9a7` | Proxy-7 | proxy | live | no |
+| ethereum | `0x281a83ee4819068c40937a066d801aad7c6e0400` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x28295039f74b04a3ff788c1af679182cd9110b89` | TransparentUpgradeableProxy | impl | live | no |
+| ethereum | `0x2862135735469ad4af91af4fbd2559606d25b27c` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x2b418d9b1e0c203ab93c8b5a54258bb3e6babbc6` | DotcEscrowV2 | impl | live | no |
+| ethereum | `0x2b498bae947c80e358f59a277adda90f76344456` | xGoldBundleStorage | impl | live | no |
+| ethereum | `0x2b9dc65253c035eb21778cb3898eab5a0ada0cce` | XTokenWrapper | impl | inactive | no |
+| ethereum | `0x2df7057d3f25212e51afea8da628668229ea423f` | AddressManager | impl | live | no |
+| ethereum | `0x2fcab60dc6ad65be5f2aae6a1b2e2ecb93017888` | SwarmBuyerBurner | impl | inactive | no |
+| ethereum | `0x31b72d76fb666844c41edf08df0254875dbb7edb` | ResolvedDelegateProxy | proxy | live | no |
+| ethereum | `0x31efc2c8012c56e007e5bdb8e5b7955d197c168e` | Proxy-3 | proxy | live | no |
+| ethereum | `0x33a032ec93ec0c492ec4bf0b30d5f51986e5a314` | SystemConfig | impl | inactive | no |
+| ethereum | `0x35e59bf5ff5a732d9aa3665ebeb49b2e71714244` | ProxyAdmin | impl | live | no |
+| ethereum | `0x3721a8e6239a8d0489a13725265dd02657ed3b57` | TetherToken-2 | impl | inactive | no |
+| ethereum | `0x3a44a3b263fb631cdbf25f339e2d29497511a81f` | Proxy-8 | proxy | live | no |
+| ethereum | `0x3a5d3fb5d39dc5a206e9f63e133e2ff1b7c2c159` | AssetTokenData | impl | live | no |
+| ethereum | `0x3a6bd15abf19581e411621d669b6a2bbe741ffd6` | StableSwapStateOracle | impl | inactive | no |
+| ethereum | `0x3c4b07ecdad1b58ac05fa5a3c3c598b1c16232c7` | Distributor | impl | inactive | no |
+| ethereum | `0x3d24faf8f7bed929a11269eb615a0f2de64d03b7` | ProxyAdmin | impl | live | no |
+| ethereum | `0x40ad51ad1713a8275793f9ce81e5e4390a2ecc64` | MasterMinter-2 | impl | inactive | no |
+| ethereum | `0x41b9ea80986f6efd7ff4d5604e283362cbb682b2` | ContextUpgradeable | impl | live | no |
+| ethereum | `0x423126258e7684356c0b11bf23c7e73a1d9ed3e5` | DotcV2_1 | impl | live | no |
+| ethereum | `0x429737c0ddf17779803aba8b5e6133012952b4c3` | DotcManager | impl | inactive | no |
+| ethereum | `0x4654c4eafb2561d21633d7b099d9960857e2c748` | V2_2Upgrader | impl | live | no |
+| ethereum | `0x4877d1b8c028095582f4e4f273d0ec914e15a53a` | DotcEscrowV2 | proxy | live | no |
+| ethereum | `0x4afe7d5d85ed6b4aa02ce49f907248cd8810a368` | SmtPriceFeed | impl | inactive | no |
+| ethereum | `0x513251fab2542532753972b8fe9a7b60621affad` | Vyper_contract-2 | impl | inactive | no |
+| ethereum | `0x5321647f3c3769bc7bb9e10ab10d7f5c2e402c56` | BPoolProxy | impl | inactive | no |
+| ethereum | `0x53fbfe5b1dfea7923f4691f819ca6e278de4e337` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| ethereum | `0x5405dd4306a4ec1e15c71275ba9a58425759c194` | Main | impl | inactive | no |
+| ethereum | `0x55585ffbd94471925252c13ade6a81604c781c5d` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter-3 | impl | inactive | no |
+| ethereum | `0x58a61b1807a7bda541855daaeaee89b1dda48568` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x5d84b92a34635e5c21b7885fb29d6a4b60287ab7` | BundleStorage | impl | inactive | no |
+| ethereum | `0x5dc91d01290af474ce21de14c17335a6dee4d2a8` | SystemConfig-2 | impl | live | yes |
+| ethereum | `0x5e007bc170861e27952ca4118d7af3e8aa5e4753` | FiatTokenProxy-2 | proxy | live | no |
+| ethereum | `0x5e620d573cdaf414d70fc85b116dd8f1e7e79ce2` | FiatTokenV2_2 | impl | live | no |
+| ethereum | `0x5e75a1ad7b10523f7ed98c1c7ca0b4a79b1bbdee` | xGoldBundle | impl | live | no |
+| ethereum | `0x5f5d43508f34e0caeaa558f9c964125538ffe9cf` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f` | L1LiskToken | impl | live | no |
+| ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | inactive | no |
+| ethereum | `0x632f2fe528d59ae71ecd38d7f1fdf8d5b5b1cf25` | Dotc | proxy | live | no |
+| ethereum | `0x6738c99eda2333b45d6ba8e212262305ffe34bf2` | Proxy | proxy | live | no |
+| ethereum | `0x6b0f858ac88f13bb26081a8e86d3dd723c8031ac` | SmtDistributor | impl | live | no |
+| ethereum | `0x6b8808910c298239aabf6475e99ea468f1d52a0d` | DotcOfferHelper | impl | live | no |
+| ethereum | `0x6da68d65583460742ba8711b166ad51540713ff7` | SmtPriceFeed | impl | inactive | no |
+| ethereum | `0x6dd25ce9a4e09d16c6ab2a2e9caa373aaeb0fdfd` | Sale | impl | inactive | no |
+| ethereum | `0x6e5ff00e8aaf55fa55e8ee9976622409fd187824` | Proxy | proxy | live | no |
+| ethereum | `0x6eb57991c31f8dd2481a702090edc0962ae50fae` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x7005e13e8118b72f0d77e3418cdf4b48e768c820` | ActionManager | impl | inactive | no |
+| ethereum | `0x707f9118e33a9b8998bea41dd0d46f38bb963fc8` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0x73e34dac4e76bda81724d333a02d850ca7fbb038` | TellorGetters | impl | inactive | no |
+| ethereum | `0x7753736456451f639281fcdc5b4151fe7791450d` | BundleStorage | proxy | live | no |
+| ethereum | `0x7a3d18271d54d6159104d2b5e791662f07dffad1` | ProxyAdmin | impl | live | no |
+| ethereum | `0x7ad0d165b9607960ad850090ddd7b9eb381d9c1e` | Proxy-3 | proxy | live | no |
+| ethereum | `0x7df140dd919e29cb1c8d6186f2bba6e407c7106f` | Proxy-2 | impl | live | no |
+| ethereum | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | WstETH | impl | live | no |
+| ethereum | `0x7f94388a552580712c4ec724f470c6e4a74b5244` | xGold | impl | live | no |
+| ethereum | `0x803492629acb304578c09493be086bbc9deb497c` | SmtPriceFeed | impl | inactive | no |
+| ethereum | `0x804dd5e6c45181b0b13ab58a3480956026150993` | UTUToken | impl | inactive | no |
+| ethereum | `0x8133eeb249f0636bba0b8230ba1089a219263c04` | BRegistry | impl | inactive | no |
+| ethereum | `0x8192d648ad9144af8c2488c8142c72b3cd990728` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x81beb487859718006191f7a2859419b201b4c038` | Tellor | impl | inactive | no |
+| ethereum | `0x820758b04721bd0b69a091fe8ef657d936bf35c5` | Dotc | impl | inactive | no |
+| ethereum | `0x83fc9db9ce83325f77f1aefeba1a3412d0d26fdb` | Proxy-2 | impl | live | no |
+| ethereum | `0x86a6f51ca732828ea6df0b377f417ba5f68490b1` | Proxy-2 | impl | live | no |
+| ethereum | `0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0` | TellorMaster | proxy | live | no |
+| ethereum | `0x88f3cb3500c9bcee361f334727dd4bfc9013dfd5` | ProxyAdmin | impl | live | no |
+| ethereum | `0x899de169fda163f57b12852a0144bb886578d7b6` | Proxy-2 | impl | live | no |
+| ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | inactive | no |
+| ethereum | `0x8d5a41e85f4ce2433beef476305d307b9205d98d` | NectarController | impl | inactive | no |
+| ethereum | `0x8d9a9aef9ab3b7d978fd4f723fd1a5aebbcb2c67` | L1OpEURCFactory | impl | live | no |
+| ethereum | `0x8f11312580079057df3a3b6ea678c8585bd3a24c` | Proxy | proxy | live | no |
+| ethereum | `0x904249766b2ccf6795d7b34441cc0bcae5cb7640` | NectarController-2 | impl | inactive | no |
+| ethereum | `0x90d1d2b89d64b1a79e1115bc2df379359b88b3d7` | AddressManager | impl | live | no |
+| ethereum | `0x9186503af1d7d3317b4c2c44a815be984838c296` | BFactory | impl | live | no |
+| ethereum | `0x91ccfc9f2b8a2e511ec057d0039af78fdb9902c2` | AddressManager | impl | live | no |
+| ethereum | `0x9221c67b935932ce5a6cb59ac3f46fde1b82c298` | SmtPriceFeed | impl | inactive | no |
+| ethereum | `0x92d73c19a6638c46cd0e11360baf4de9950bdc0c` | ProxyAdmin-2 | impl | live | no |
+| ethereum | `0x9348af23b01f2b517afe8f29b3183d2bb7d69fcf` | OssifiableProxy | proxy | live | no |
+| ethereum | `0x9516cac65d54cc2fe4c070978223f930894ba072` | ProtocolFee | impl | inactive | no |
+| ethereum | `0x95703e0982140d16f8eba6d158fccede42f04a4c` | Proxy-9 | proxy | live | no |
+| ethereum | `0x964183083e623d5a8acbd27eb31c3609e25bb7b0` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| ethereum | `0x9835fa9b914bcbc45d731edde0d1d63adb56c477` | ActionManager | impl | inactive | no |
+| ethereum | `0x98ce5883fb99508c24d40f97016f51e04117b4e9` | Proxy | proxy | live | no |
+| ethereum | `0x991f0e5c5775ca9dd02e30e67f545c36cff3690e` | WrapperLockEth | impl | inactive | no |
+| ethereum | `0x991fd11876a438af7bcadc98f4b3cf201bdf6191` | PermissionManager | impl | inactive | no |
+| ethereum | `0x9a30173523d48cd26f681c46712cd65589eac56b` | SmtVesting | impl | inactive | no |
+| ethereum | `0x9c065e11870b891d214bc2da7ef1f9ddfa1be277` | PreimageOracle | impl | live | no |
+| ethereum | `0x9c9aa80f7b4990ba1ee75a121e1bf1e46fffbae1` | Authorization | impl | inactive | no |
+| ethereum | `0x9e24f5eed337f8ee0555d6b78a34a53a80dcd0d0` | Proxy | proxy | live | no |
+| ethereum | `0x9e9add0fa93487b178a975ea320b563f35e668f4` | TransparentUpgradeableProxy | impl | live | no |
+| ethereum | `0x9eb97469ad44e8ccdf5c1ff669d7c57c7235c49c` | AddressManager | impl | live | no |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | live | no |
+| ethereum | `0xa306065a144a16dbc99f06e16737dd400e6e1778` | StakingRewards | impl | inactive | no |
+| ethereum | `0xa4d9ef479884d875a5b95b541f024f4e837f6fcd` | Proxy-2 | impl | live | no |
+| ethereum | `0xa58a4f5c4bb043d2cc1e170613b74e767c94189b` | UTUToken-2 | impl | live | no |
+| ethereum | `0xa75d8afd8d3a36dd3935078e4d05153946cee84c` | TokenTransferor | impl | live | no |
+| ethereum | `0xab235c5b80860899f67f88370ba69c2c80499f23` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xab7aa6495f8694656b59bc6309d3f6190dbc8b14` | SX1155NFTFactory | impl | live | no |
+| ethereum | `0xabc2108199f33adf0343ef3a67565313c0aed6c1` | ProtocolFee | impl | inactive | no |
+| ethereum | `0xabdf147870235fcfc34153828c769a70b3fae01f` | TetherToken-3 | impl | inactive | no |
+| ethereum | `0xad06241b9cff15b710118a52f04a4fe73b8fcc09` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xad6e7af05b7e594c81ed460ad31f18b7641acddc` | ContextUpgradeable | impl | live | no |
+| ethereum | `0xad89eededf3f4996932c6949ab37d9398bfbb215` | Distributor | impl | inactive | no |
+| ethereum | `0xb05963a6bed7e9db887eceb2775a03414d00fac9` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xb17548c7b510427baac4e267bea62e800b247173` | SwarmMarketsToken | impl | live | no |
+| ethereum | `0xb441417e6ff3acf60b9f0216d8c3179913080daa` | PermissionItems | impl | inactive | no |
+| ethereum | `0xb4950517fac0a3467605bd5f83ef60c8f2cde441` | AddressManager | impl | live | no |
+| ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | live | no |
+| ethereum | `0xb85e3e408d8300a002baa9cc355d40a487e9c248` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xb8adad01342d656d8f70fe1fa55cc3fbb6965f7d` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f` | WithdrawalsManagerProxy | proxy | live | no |
+| ethereum | `0xbaa10876223b11baae86e1bbf52daef38ecbf425` | Proxy-4 | proxy | live | no |
+| ethereum | `0xbda5743b76bcc88337336ef027958422f4dfe5f4` | ActionManager | proxy | live | no |
+| ethereum | `0xbe79f828e0cd909dc54ad576e8778fedeaecbde8` | GoldKiloPriceFeed | impl | inactive | no |
+| ethereum | `0xc1b06da65074c9df0109d312eb3e59e04f638514` | EurPriceFeed | impl | inactive | no |
+| ethereum | `0xc1da06cc5dd5ce23baba924463de7f762039252d` | Proxy-10 | proxy | live | no |
+| ethereum | `0xc7315f4faab2f700fc6b4704bb801c46ff6327ac` | OssifiableProxy | impl | inactive | no |
+| ethereum | `0xca4b2d3f4e061d0826a14c15ebc8faf3d94b5500` | TransparentUpgradeableProxy | impl | live | no |
+| ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | inactive | no |
+| ethereum | `0xccb5ddf00676aed7427db50b0a69a026f442c8db` | AddressManager | impl | live | no |
+| ethereum | `0xccdbeb21b702b1b71c07b3d2b2c70460757ef7f6` | Distributor | impl | inactive | no |
+| ethereum | `0xcd465d9190e6d4943e9cabb352164621dbb6ad12` | TokenTransferor | impl | inactive | no |
+| ethereum | `0xce36f03fe18fbf1761c77faf0dce4dc154dcb5fa` | ProxyAdmin | impl | live | no |
+| ethereum | `0xd00e38514d66bf1b761a8937559c6b2854a5b3ad` | OptimismMintableERC20 | impl | live | no |
+| ethereum | `0xd0fbc3d37269ee42df57cd264e737e29a8b7c978` | EurPriceFeed | impl | inactive | no |
+| ethereum | `0xd13689e8da0ed95b55100e27b7dbc95c03b5259b` | V2_1Upgrader | impl | live | no |
+| ethereum | `0xd590c2e71739c551eba7aebe00e7855df4cf5fb7` | ERC1967Proxy | impl | inactive | no |
+| ethereum | `0xd641ae2ad8a0e72ad92ddeda7cef67ee3f2a49b9` | OperationsRegistry | impl | inactive | no |
+| ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken-4 | impl | live | no |
+| ethereum | `0xdb149235b6f40dc08810aa69869783be101790e7` | DepositSecurityModule | impl | inactive | no |
+| ethereum | `0xdb46c277da1599390eab394327602889e9546296` | MerkleDistributor | impl | inactive | no |
+| ethereum | `0xdd9c27910327d3f4a4007ad8f7b53332db6f1079` | Proxy-4 | proxy | live | no |
+| ethereum | `0xde0aa21af41176cb05e5a80f26dd7949380f0195` | FiatTokenV1 | proxy | live | no |
+| ethereum | `0xe09899a4c98473460bc19d136b330608b465dc55` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xe1532de8fa6ead8af4e461a9c3c9544c938f33b5` | XTokenFactory | impl | inactive | no |
+| ethereum | `0xe199e1c5201ccdd3792ed902ad3f610ce5629b59` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xe214d97ba7ff83144699737f73d271c006013d91` | TransparentUpgradeableProxy-7 | proxy | live | no |
+| ethereum | `0xe2b0cfef892c017d84d8220b8d2ac249624cd087` | L1VestingWalletPaused | impl | unknown | no |
+| ethereum | `0xe3622468ea7dd804702b56ca2a4f88c0936995e6` | ERC1967Proxy-3 | proxy | live | no |
+| ethereum | `0xe44cb98048afedb3cb21a7933b517165254ebd46` | ProxyAdmin | impl | live | no |
+| ethereum | `0xe6227e07c0dd1604f3c820ad779792bbe56a9ed8` | Extension | impl | inactive | no |
+| ethereum | `0xe982615d461dd5cd06575bbea87624fda4e3de17` | MasterMinter | impl | inactive | no |
+| ethereum | `0xe9a057545d5f29932a118ec3aab44c2902a0318a` | AddressManager | impl | live | no |
+| ethereum | `0xeb99c8c87c5e0c2dcb01e2a1e35aa01f5889f677` | ERC1967Proxy-4 | proxy | live | no |
+| ethereum | `0xec0f22b4339b4adcae3347bd5cad539700ac4beb` | MasterMinter | impl | inactive | no |
+| ethereum | `0xec3567ae258639a0ff5a02f7eaf4e4ae4416c5fe` | NodeOperatorsRegistry | impl | inactive | no |
+| ethereum | `0xec432c4f1d0e12737f3a42a459b84848af979b2d` | ProxyAdmin | impl | live | no |
+| ethereum | `0xed24bd79a3f2ba4325e9c553164e299c65e272fc` | V2Upgrader | impl | live | no |
+| ethereum | `0xef24a519994bffa2104c4fd6c1ee58718f6c7bd5` | AssetTokenFactoryCCIPCompatible | impl | live | no |
+| ethereum | `0xefbcbd94d9c411e3f0ffa559ce627498122aca82` | Authorization | proxy | live | no |
+| ethereum | `0xf1a3de660968b3a6493334413505220c1bcd99e1` | TransparentUpgradeableProxy-8 | proxy | live | no |
+| ethereum | `0xf25146af34005010a651ec36e673709c38ce354c` | ProxyAdmin | impl | live | no |
+| ethereum | `0xf5fada32917350b91fbd9bbde62e69bf483a960a` | BPool | impl | inactive | no |
+| ethereum | `0xf61ed41749cd82767057aa39edcee8d797d40719` | ContextUpgradeable-2 | impl | live | no |
+| ethereum | `0xf6445627bc9d06516d317a0dbbc4660bab7a17c0` | TetherToken-5 | impl | inactive | no |
+| ethereum | `0xf70cee7c7e638f9364c4076a01226337ec51fca5` | EthPriceFeed | impl | inactive | no |
+| ethereum | `0xf7a2e44ed9cc2a571d4b1f44110b38fb254e8675` | Proxy | proxy | live | no |
+| ethereum | `0xf96e9a7ce4c68d85198f959f4138ca449943a0fe` | PermissionItems | impl | inactive | no |
+| ethereum | `0xf9ff7c0d236745399ce6bdbf3a54028339288ba3` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| ethereum | `0xfa9f3c42e063d78a46a4f1e5b6b4c365203d478e` | ConfigurableOracleMockFactory | impl | inactive | no |
+| ethereum | `0xfc63b16f5dfaf3c9e1b4bde873f79ce02c216b33` | SwarmMarketsToken | impl | inactive | no |
+
+## Source unavailable (27)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- ethereum `0x02454e9dd8d8d49d4a20df27f5e1c3a51b4c1c27`
+- ethereum `0x0627054d17eae63ec23c6d8b07d8db7a66ffd45a`
+- ethereum `0x07be9bb2b1789b8f5b2f9345f18378a8b036a171`
+- ethereum `0x082a5956d63b44685a7cca89379d565c439fdf3c`
+- ethereum `0x19bc15849b392519a9a9131df32c00cc3497892d`
+- ethereum `0x2618e94a7f6118aced2e51e0a05da43d2e2ed40c`
+- ethereum `0x2bdfd3de0ff23373b621cdad0ad3df1580efe701`
+- ethereum `0x2c1b89e799bfe4774cb42996971aaac319d027e3`
+- ethereum `0x2ca788280fb10384946d3ecc838d94deca505cf4`
+- ethereum `0x310459750ce8f46b8615378e79dbd985ba77332b`
+- ethereum `0x40c5fb9bf63e30364646022b04ebc1c6ee13869a`
+- ethereum `0x489f04eeff0ba8441d42736549a1f1d6cca74775`
+- ethereum `0x6875ce8f1edd02665b72accf8a152c5a5134914f`
+- ethereum `0x76c6f14efdf3c755308a14db2ce22e309297ba45`
+- ethereum `0x777cee2a757bd958939d3fbfd8af17aa5a34051d`
+- ethereum `0x7859f9187837f99fc4a75f86b2afe61314f21ee4`
+- ethereum `0x7b64b0116fb2d7f80392173bb21c2dc1143d6bdd`
+- ethereum `0x86bb5d880d177a95995aebc74a5b1db2aa39c2ae`
+- ethereum `0xa2f987a546d4cd1c607ee8141276876c26b72bdf`
+- ethereum `0xa9b2f5ce3aae7374a62313473a74c98baa7fa70e`
+- ethereum `0xab55bf4dfbf469ebfe082b7872557d1f87692fe6`
+- ethereum `0xb2022ea377994f66a81c01eb3e9170245afeaa52`
+- ethereum `0xdb99fdb42fec8ba414ea60b3a189208bbdbfa321`
+- ethereum `0xe3c8a4de3b8a484ff890a38d6d7b5d278d697fb7`
+- ethereum `0xf8b237d60af4865192bd8b8d2bc1b2d607c1ffad`
+- ethereum `0xfb27310beda96af0005e9ab2f029a088740da180`
+- ethereum `0xfef762dfdc87f79879aaef221a6a5d302833fe27`

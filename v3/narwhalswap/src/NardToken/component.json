@@ -1,0 +1,18 @@
+{
+  "component": "NardToken",
+  "main_contract": "NardToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4bbb275012ebe258556b8debe5c07be98e8d3859",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

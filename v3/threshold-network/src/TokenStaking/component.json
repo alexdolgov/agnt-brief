@@ -1,0 +1,20 @@
+{
+  "component": "TokenStaking",
+  "main_contract": "TokenStaking",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/threshold-network/security-audits/blob/main/09-Nov-2021-ChainSecurity.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02612d20cc087670a959bb12ca3c5fd56c8a3db3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

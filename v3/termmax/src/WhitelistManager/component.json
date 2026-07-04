@@ -1,0 +1,18 @@
+{
+  "component": "WhitelistManager",
+  "main_contract": "WhitelistManager",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x2c5d576681d625ea9b6e9ee5d6a9159147328292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

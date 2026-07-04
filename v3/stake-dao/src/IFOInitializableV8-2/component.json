@@ -1,0 +1,18 @@
+{
+  "component": "IFOInitializableV8-2",
+  "main_contract": "IFOInitializableV8",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5b098f362f09f65038ad12901ea6d7d4cb33c396",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

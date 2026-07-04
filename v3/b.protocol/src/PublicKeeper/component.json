@@ -1,0 +1,18 @@
+{
+  "component": "PublicKeeper",
+  "main_contract": "PublicKeeper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x48420fad7cc1b517e3b49126edc9988df6e0e778",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

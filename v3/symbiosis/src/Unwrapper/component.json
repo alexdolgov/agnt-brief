@@ -1,0 +1,18 @@
+{
+  "component": "Unwrapper",
+  "main_contract": "Unwrapper",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5eb4ed9f745531221fae41906e11d37642b15da6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

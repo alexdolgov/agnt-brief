@@ -1,0 +1,18 @@
+{
+  "component": "OEVProtocolFeeRedeemer-2",
+  "main_contract": "OEVProtocolFeeRedeemer",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb41ab921702e70f31df6309b77d213d96c1007f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

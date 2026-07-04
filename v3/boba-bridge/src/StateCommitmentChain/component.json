@@ -1,0 +1,18 @@
+{
+  "component": "StateCommitmentChain",
+  "main_contract": "StateCommitmentChain",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde7355c971a5b733fe2133753abd7e5441d441ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

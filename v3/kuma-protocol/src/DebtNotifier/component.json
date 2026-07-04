@@ -1,0 +1,26 @@
+{
+  "component": "DebtNotifier",
+  "main_contract": "DebtNotifier",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa88ced4edfd32bcd32de592ea3eec7c03d7d329f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xeb6b8f833f5aa81cb00a1cc7ef93b6b332a53574",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

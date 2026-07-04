@@ -1,0 +1,18 @@
+{
+  "component": "Utils",
+  "main_contract": "Utils",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5df8ec95d8b96ada2b4041d639ab66361564b050",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

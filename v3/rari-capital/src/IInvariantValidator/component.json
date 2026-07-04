@@ -1,0 +1,18 @@
+{
+  "component": "IInvariantValidator",
+  "main_contract": "IInvariantValidator",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e91f826fa8aa4fa4d3f595898af3a64dd188848",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

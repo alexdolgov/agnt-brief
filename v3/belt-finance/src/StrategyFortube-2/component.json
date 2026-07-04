@@ -1,0 +1,36 @@
+{
+  "component": "StrategyFortube-2",
+  "main_contract": "StrategyFortube",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BeltFi/belt-contract/blob/main/audit/HAECHI_AUDIT_Smart_contract_audit_report_for_BeltFi_earnV2_additional.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x466194a8627063209fbf11ca2c0f922122da2d65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe16f54d82c27e7382c89bc542b75ed1f458c6fc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf1282170886c5821b5b9b277d4dbced75b37c3f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

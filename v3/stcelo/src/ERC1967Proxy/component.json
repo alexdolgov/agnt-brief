@@ -1,0 +1,108 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 6,
+  "deployment_count": 12,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x0b2f88ce833ecfc84a006a4c6db7ea23d565f75b",
+      "is_proxy": true,
+      "implementation_address": "0x922333bdcb665e91eef9508de56ab2a3c2794692",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x13f1f8706710069bc55b71e320a3fb2d3775c27e",
+      "is_proxy": true,
+      "implementation_address": "0x8652ceb3e0edc477f4d0750f2fd5c1e0acae782a",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x250c1b903e0a293807d09a6c9f65a35e5ef380d2",
+      "is_proxy": true,
+      "implementation_address": "0x694ab80a18c0c0e72e4219c397f23cc99f003cfb",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2c2e2bb4ce3264fc2f70161ba72340b9ee4edc3a",
+      "is_proxy": true,
+      "implementation_address": "0x809b7ebabb2e4e1e4d1104b3b361b898ae632426",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2e37af02023644a1203d9c3daf96ecd635e9e4df",
+      "is_proxy": true,
+      "implementation_address": "0x846b04993f65ea397838568d83b4b956f2d6013f",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x43e55a252d22c01d114ad325fc0a62877346fb58",
+      "is_proxy": true,
+      "implementation_address": "0xa7ec4a31ac7f5cec4340bc39d04244a1cba6eb74",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x443579fcb9518529d358e0a10e9de42e92de5af7",
+      "is_proxy": true,
+      "implementation_address": "0x548fab1b071dbe542617294ec73d478134837329",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x70b1bde39a387444f5790ec8052ff244e7c72e62",
+      "is_proxy": true,
+      "implementation_address": "0x534a0b843817679928625063219324902291648b",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x954bc8b6afe0e7109ec61b204be01d4bf8c5e5af",
+      "is_proxy": true,
+      "implementation_address": "0xc9cd085d12e12274ad099b5ece5a744203c6c674",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa60fcf6fd40cadca90359bc94ca21bf3b97c70f5",
+      "is_proxy": true,
+      "implementation_address": "0xe12f7e5c2300b7f79fd8ff7e44b10e66e4dd0312",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb5795ccf25d01617a55592508d3982bc5a158fad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xfb197ea7d72f106a107ddd4d50ba0439d3b374ee",
+      "is_proxy": true,
+      "implementation_address": "0x5aa1c651b864b42c6c6acd1e8a4ee807e4e8f2e3",
+      "liveness": "live"
+    }
+  ]
+}

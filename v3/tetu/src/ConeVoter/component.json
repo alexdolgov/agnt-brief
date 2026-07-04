@@ -1,0 +1,18 @@
+{
+  "component": "ConeVoter",
+  "main_contract": "ConeVoter",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc3b5d80e4c094b17603ea8bb15d2d31ff5954aae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

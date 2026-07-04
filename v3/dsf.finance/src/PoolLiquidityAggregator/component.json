@@ -1,0 +1,26 @@
+{
+  "component": "PoolLiquidityAggregator",
+  "main_contract": "PoolLiquidityAggregator",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45017a40449679ee974a3c1f25c6941aed6a5162",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87ede361b42fec98a23d6ae2557b6758ac8888fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

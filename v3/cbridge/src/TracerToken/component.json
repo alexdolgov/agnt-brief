@@ -1,0 +1,18 @@
+{
+  "component": "TracerToken",
+  "main_contract": "TracerToken",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c4a4204b79dd291d6b6571c5be8bbcd0622f050",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

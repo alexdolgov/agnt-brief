@@ -1,0 +1,18 @@
+{
+  "component": "V3Oracle-2",
+  "main_contract": "V3Oracle",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x06a1ebf7e086c69c11318486c967f24f0d073a7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

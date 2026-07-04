@@ -1,0 +1,26 @@
+{
+  "component": "DisableStableDebtToken",
+  "main_contract": "DisableStableDebtToken",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x7abad56d35b0f3d38d8b5517f92c9232f4c69517",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x7fadb6f954e19476e18790dc0178056a2e3c1454",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

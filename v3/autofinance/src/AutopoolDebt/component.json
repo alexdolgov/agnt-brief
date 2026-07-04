@@ -1,0 +1,18 @@
+{
+  "component": "AutopoolDebt",
+  "main_contract": "AutopoolDebt",
+  "source_file_count": 60,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x153993b20c5e5be956cec763ed936a44d3c780a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

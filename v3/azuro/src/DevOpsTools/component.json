@@ -1,0 +1,18 @@
+{
+  "component": "DevOpsTools",
+  "main_contract": "DevOpsTools",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa8dc1d4bb0e2e8c0327783cc174e7d88fea34188",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

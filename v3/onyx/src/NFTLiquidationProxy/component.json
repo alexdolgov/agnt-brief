@@ -1,0 +1,26 @@
+{
+  "component": "NFTLiquidationProxy",
+  "main_contract": "NFTLiquidationProxy",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x323398de3c35f96053d930d25fe8d92132f83d44",
+      "is_proxy": true,
+      "implementation_address": "0xf10bc5be84640236c71173d1809038af4ee19002",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf10bc5be84640236c71173d1809038af4ee19002",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

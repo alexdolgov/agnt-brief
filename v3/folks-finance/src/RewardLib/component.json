@@ -1,0 +1,18 @@
+{
+  "component": "RewardLib",
+  "main_contract": "RewardLib",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x090194f1eedc134a680e3b488abb2d212dba8c01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

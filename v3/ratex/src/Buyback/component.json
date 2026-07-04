@@ -1,0 +1,26 @@
+{
+  "component": "Buyback",
+  "main_contract": "Buyback",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3b778d2d502f5433f9f5cb9a1464ca5d141936bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x969130bc708e181e799c584bfbb31eaa71da4edf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

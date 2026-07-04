@@ -1,0 +1,21 @@
+{
+  "component": "managerDataStorage",
+  "main_contract": "managerDataStorage",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/ENG/(ENG)_BiFi_Lending_Sooho_EN_Public.pdf",
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/bifrost_bifi_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34e45203669aadd0d6ac342538aa7b62c9128f4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

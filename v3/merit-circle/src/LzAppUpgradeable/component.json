@@ -1,0 +1,18 @@
+{
+  "component": "LzAppUpgradeable",
+  "main_contract": "LzAppUpgradeable",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd512a5c1e694b848271fc3ce879e8e7632e2edeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

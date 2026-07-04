@@ -1,0 +1,18 @@
+{
+  "component": "ChainlinkStatsUpkeepV4-2",
+  "main_contract": "ChainlinkStatsUpkeepV4",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x30f285c7cb4304e82302ce06f24e285bd527c637",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

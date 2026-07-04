@@ -1,0 +1,21 @@
+{
+  "component": "ConfigurableManager-2",
+  "main_contract": "ConfigurableManager",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://oxor-io.github.io/public_audits/Altitude/Altitude-Audit-Report.pdf",
+    "https://oxor-io.github.io/public_audits/Altitude/Altitude-v2-Audit-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff75e700356f8eac53d771ab5398d4c5309ee8d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

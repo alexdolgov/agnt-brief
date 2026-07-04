@@ -1,0 +1,18 @@
+{
+  "component": "AtomicQueue",
+  "main_contract": "AtomicQueue",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x22f74995f88d4fd631bb8f64fa523af0da5a348c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

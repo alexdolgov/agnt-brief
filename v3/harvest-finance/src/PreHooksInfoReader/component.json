@@ -1,0 +1,18 @@
+{
+  "component": "PreHooksInfoReader",
+  "main_contract": "PreHooksInfoReader",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ecd96fd20f2c1a32e5906cccaec87e8afe19821",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

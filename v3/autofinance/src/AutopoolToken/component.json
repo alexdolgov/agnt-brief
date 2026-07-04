@@ -1,0 +1,18 @@
+{
+  "component": "AutopoolToken",
+  "main_contract": "AutopoolToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x2afc63a4339a0ad89a00f46258d239b3a64f4da5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

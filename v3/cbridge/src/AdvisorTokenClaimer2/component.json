@@ -1,0 +1,26 @@
+{
+  "component": "AdvisorTokenClaimer2",
+  "main_contract": "AdvisorTokenClaimer2",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36a9e98ea581a4d59d7025bc008ebed1771deb60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85bb70d6a2306d60427f9d71d8992805ade06499",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

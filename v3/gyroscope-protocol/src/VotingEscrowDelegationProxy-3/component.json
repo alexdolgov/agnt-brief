@@ -1,0 +1,18 @@
+{
+  "component": "VotingEscrowDelegationProxy-3",
+  "main_contract": "VotingEscrowDelegationProxy",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd87f44df0159dc78029ab9ca7d7e57e7249f5acd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

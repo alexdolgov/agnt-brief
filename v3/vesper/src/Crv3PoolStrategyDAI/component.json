@@ -1,0 +1,42 @@
+{
+  "component": "Crv3PoolStrategyDAI",
+  "main_contract": "Crv3PoolStrategyDAI",
+  "source_file_count": 25,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c712fa5ba0dc3fc46cabef2d373c4f9f5e29ce3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x656636a157f29ba5008f398fa83a350f1be1db6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd11e6772a430c45c7b64927069af37fa9ab3be75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe94046b46d2b58599a09d91fc5cc00ca3e1dfd1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

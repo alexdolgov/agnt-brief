@@ -1,0 +1,18 @@
+{
+  "component": "Router03Solidly",
+  "main_contract": "Router03Solidly",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1ebc3b5911b99adde07944c75d9e03958abdb49f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

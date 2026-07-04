@@ -1,0 +1,20 @@
+{
+  "component": "CrvDepositor",
+  "main_contract": "CrvDepositor",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8014595f2ab54cd7c604b00e9fb932176fdc86ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

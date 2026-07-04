@@ -1,0 +1,18 @@
+{
+  "component": "BimaPSM",
+  "main_contract": "BimaPSM",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42ad6834a6599a0b7a7812f01f8092b580523d67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

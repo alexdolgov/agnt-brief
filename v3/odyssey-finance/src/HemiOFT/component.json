@@ -1,0 +1,18 @@
+{
+  "component": "HemiOFT",
+  "main_contract": "HemiOFT",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1ad02cd579c7668d50e0003f428701b70a1b42b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

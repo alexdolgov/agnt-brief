@@ -1,0 +1,18 @@
+{
+  "component": "DAONFT",
+  "main_contract": "DAONFT",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04567106db2a4661a5fda9f48719d57b372b77bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

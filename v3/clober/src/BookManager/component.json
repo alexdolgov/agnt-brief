@@ -1,0 +1,21 @@
+{
+  "component": "BookManager",
+  "main_contract": "BookManager",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.clober.io/assets/files/Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf",
+    "https://github.com/clober-dex/v2-core/blob/master/audits/Clober_V2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8ca3a6f4a6260661fcb9a25584c796a1fa380112",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

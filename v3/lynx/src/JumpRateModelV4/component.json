@@ -1,0 +1,18 @@
+{
+  "component": "JumpRateModelV4",
+  "main_contract": "JumpRateModelV4",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c034899c0113b7dcaeee0b71bc7c9455bf5d50a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

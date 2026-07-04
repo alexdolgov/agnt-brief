@@ -1,0 +1,18 @@
+{
+  "component": "CPOOLOFT",
+  "main_contract": "CPOOLOFT",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

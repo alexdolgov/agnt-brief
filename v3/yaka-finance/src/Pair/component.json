@@ -1,0 +1,18 @@
+{
+  "component": "Pair",
+  "main_contract": "Pair",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xd45daff288075952822d5323f1d571e73435e929",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

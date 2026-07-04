@@ -1,0 +1,50 @@
+{
+  "component": "OstiumPriceRouter",
+  "main_contract": "OstiumPriceRouter",
+  "source_file_count": 1,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4b0c3c77d398912491f192d265b237c8d4441ad7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5126c2a3f681de161198d026facf927b8f63d0ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x52453fbc4a33f7a2a0a01d67b952625816f161b4",
+      "is_proxy": true,
+      "implementation_address": "0xb22d4f94194bf9c932cf34605ba2d2e0075ecde5",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7151fc4aa06d87be6bfe73af20ce7691b0ddb306",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xab33334dff0c0ef02a4cf0bce5c69df0dc4c4473",
+      "is_proxy": true,
+      "implementation_address": "0x5126c2a3f681de161198d026facf927b8f63d0ba",
+      "liveness": "live"
+    }
+  ]
+}

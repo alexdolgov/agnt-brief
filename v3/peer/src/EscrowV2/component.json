@@ -1,0 +1,18 @@
+{
+  "component": "EscrowV2",
+  "main_contract": "EscrowV2",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x777777779d229cdf3110e9de47943791c26300ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Cellar",
+  "main_contract": "Cellar",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://0xmacro.com/library/audits/sommelier-3.html",
+    "https://0xmacro.com/library/audits/sommelier-4.html",
+    "https://0xmacro.com/library/audits/sommelier-7.html",
+    "https://0xmacro.com/library/audits/sommelier-9.html",
+    "https://github.com/PeggyJV/cellar-contracts/blob/main/audits/Macro_Sommelier-3_10_2022.pdf",
+    "https://github.com/PeggyJV/cellar-contracts/blob/main/audits/Macro_Sommelier-4_01_2023.pdf",
+    "https://github.com/PeggyJV/cellar-contracts/blob/main/audits/Sommelier%20A-9%20_%20Macro%20Audits%20_%20The%200xMacro%20Library.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05641a27c82799aaf22b436f20a3110410f29652",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

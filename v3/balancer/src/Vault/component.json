@@ -1,0 +1,32 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs-v2.balancer.fi/reference/contracts/security.html",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/certora/2021-04-22.pdf",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/openzeppelin/2021-03-15.pdf",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/trail-of-bits/2021-04-02.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/README.md",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/certora/2021-04-22.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/openzeppelin/2021-03-15.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/trail-of-bits/2021-04-02.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/cantina/2024-12-17.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2024-09-04.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2026-01-26.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/spearbit/2024-10-04.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/trail-of-bits/2024-12-11.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

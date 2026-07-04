@@ -1,0 +1,18 @@
+{
+  "component": "PyromancyHelper",
+  "main_contract": "PyromancyHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcb83642be42fcdc7858fb447b90283ec8e650067",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

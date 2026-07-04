@@ -1,0 +1,20 @@
+{
+  "component": "ModuleBase",
+  "main_contract": "ModuleBase",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blaize-security/blaize-security-audits/blob/main/l/lockon-finance/Lockon-(Adjuster)-audit-report-%5B15-Nov-2024%5D.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8c2e0399291d6225517a873de04ab92c2c95f06b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

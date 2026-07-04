@@ -1,0 +1,26 @@
+{
+  "component": "NonfungiblePositionManager",
+  "main_contract": "NonfungiblePositionManager",
+  "source_file_count": 58,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28ded2af752655df5ee92450dc259f92a5abe449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6cd7dcd88f3994e57557690d20d20105b72c1cba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

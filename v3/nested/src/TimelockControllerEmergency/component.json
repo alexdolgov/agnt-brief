@@ -1,0 +1,18 @@
+{
+  "component": "TimelockControllerEmergency",
+  "main_contract": "TimelockControllerEmergency",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e04e8127cf11db51d4c8841f71833af1231ebcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

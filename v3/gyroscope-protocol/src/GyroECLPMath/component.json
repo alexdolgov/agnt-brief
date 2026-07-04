@@ -1,0 +1,18 @@
+{
+  "component": "GyroECLPMath",
+  "main_contract": "GyroECLPMath",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x10aba87fed017734349e3ff31c01dd76bb3b5d63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

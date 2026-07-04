@@ -1,0 +1,18 @@
+{
+  "component": "LPToken-2",
+  "main_contract": "LPToken",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x07a9aaf9c3d4fc53f112dfe0edffd585fe70b5a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

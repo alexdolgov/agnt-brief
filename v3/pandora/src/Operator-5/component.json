@@ -1,0 +1,18 @@
+{
+  "component": "Operator-5",
+  "main_contract": "Operator",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x195f7b4a3d05e6796af215a47f40b6568f1bbbc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

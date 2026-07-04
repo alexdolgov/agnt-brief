@@ -1,0 +1,18 @@
+{
+  "component": "AgTokenSideChainMultiBridgeNameable",
+  "main_contract": "AgTokenSideChainMultiBridgeNameable",
+  "source_file_count": 184,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

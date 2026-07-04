@@ -1,0 +1,210 @@
+{
+  "schema_version": "2.0",
+  "project_key": "zeroliquid",
+  "generated_at": "2026-07-03T21:07:18.037Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 50,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 3285.10317,
+    "tvl_usd": 3285.10317,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-08",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 4,
+    "total_contracts_indexed": 16,
+    "live_contracts": 2,
+    "inactive_contracts": 14,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Zero",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Zero",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2023-03-19 18:40:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x776280f68ad33c4d49e6846507b7dbaf7811c89f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ZeroLiquidToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ZeroLiquidToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x776280f68ad33c4d49e6846507b7dbaf7811c89f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14172"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2023-08-24 21:39:35+03",
+      "deploy_coverage_basis": "match_unverified"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 14172,
+      "audit_key": "audit-14172",
+      "report_name": "ZeroLiquid-BlockApex-Audit.pdf",
+      "report_url": "https://github.com/ZeroLiquid-xyz/zeroliquid-audit/blob/master/ZeroLiquid-BlockApex-Audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2023-08"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 1
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

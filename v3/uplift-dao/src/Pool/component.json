@@ -1,0 +1,68 @@
+{
+  "component": "Pool",
+  "main_contract": "Pool",
+  "source_file_count": 13,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://app.uplift.io/docs/Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x341b8538e6afd2bc88f63d51b77c2c2f8253f249",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4dfbcc287eea519bb4b396626e026a4eb66e58ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5425b89e7faf74efa9226c99feaa39c53da8a0e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6f7c52714e1a5f0e9b9e846f48da51967da5ff87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c90f90adaf739306942d604bf715575f1e7e5d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x85a0e865f8610778acdee1e3a5e4bde170063a44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaefc76b728f278df18456d1e32c68d132eff1224",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

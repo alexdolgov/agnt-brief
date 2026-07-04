@@ -1,0 +1,26 @@
+{
+  "component": "DToken",
+  "main_contract": "DToken",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20yAudit%20report%20(EVC%20%2B%20EVK%20%2B%20Price%20Oracle).pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_yAudit_Report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/ChainSecurity_EVK_report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/Omniscia_EVK_report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/OpenZeppelin_EVK_report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/yAudit_EVK_report.pdf",
+    "https://omniscia.io/reports/euler-finance-vault-kit-66000e2fe7dba400187a4aed"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03601edc8af4b0439d63eb3a45ed11b01c6975d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

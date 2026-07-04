@@ -1,0 +1,18 @@
+{
+  "component": "SafeDeployer",
+  "main_contract": "SafeDeployer",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7b7a698cf0290910045f976f060fd0919fc345d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SAMLPLock",
+  "main_contract": "SAMLPLock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa766ebd05145979799f827067cec87c4455d096",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

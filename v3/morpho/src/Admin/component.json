@@ -1,0 +1,18 @@
+{
+  "component": "Admin",
+  "main_contract": "Admin",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x245ba1e19e7a15dd903b6b9b2705d4bf308f481c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

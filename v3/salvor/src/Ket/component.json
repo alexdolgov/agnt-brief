@@ -1,0 +1,18 @@
+{
+  "component": "Ket",
+  "main_contract": "Ket",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xffff003a6bad9b743d658048742935fffe2b6ed7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

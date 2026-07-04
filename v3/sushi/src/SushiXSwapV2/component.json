@@ -1,0 +1,26 @@
+{
+  "component": "SushiXSwapV2",
+  "main_contract": "SushiXSwapV2",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x02a480a258361c9bc3eaacbd6473364c67adcd3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x804b526e5bf4349819fe2db65349d0825870f8ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

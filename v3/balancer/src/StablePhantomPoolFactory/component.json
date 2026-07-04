@@ -1,0 +1,18 @@
+{
+  "component": "StablePhantomPoolFactory",
+  "main_contract": "StablePhantomPoolFactory",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb08e16cfc07c684daa2f93c70323badb2a6cbfd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

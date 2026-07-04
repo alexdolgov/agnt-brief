@@ -1,0 +1,20 @@
+{
+  "component": "LiqLocker",
+  "main_contract": "LiqLocker",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/liquisfi/security/blob/main/audits/Liquis_Audit_Report_by_Halborn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x748a0f458b9e71061ca0ac543b984473f203e1cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BorrowerOperations",
+  "main_contract": "BorrowerOperations",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x05a70b8b0a6dc2446ee23868f7d7a66dae7276ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

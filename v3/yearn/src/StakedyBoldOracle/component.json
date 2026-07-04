@@ -1,0 +1,18 @@
+{
+  "component": "StakedyBoldOracle",
+  "main_contract": "StakedyBoldOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64a7de4025c0c8793b08e484999ea33c585a849f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

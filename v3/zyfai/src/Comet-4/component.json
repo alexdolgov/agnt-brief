@@ -1,0 +1,18 @@
+{
+  "component": "Comet-4",
+  "main_contract": "Comet",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2f9b94069788f7c71e9daa84314062609501d3a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

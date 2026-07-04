@@ -1,0 +1,26 @@
+{
+  "component": "MockFeeModule",
+  "main_contract": "MockFeeModule",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x472c1c7147f335c97066ea59fa548aceac1f5b58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc333a5e4336b0cc9e9532f10392f7eb0ff8e933e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

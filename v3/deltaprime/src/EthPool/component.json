@@ -1,0 +1,26 @@
+{
+  "component": "EthPool",
+  "main_contract": "EthPool",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x58ee09b419fb027315c7ca5390298a7355f4b166",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa2827fdfecf646d1a5010de63aecaa6f53a121e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ActionInfoStatic",
+  "main_contract": "ActionInfoStatic",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x25e5e9e134ddaf1d378fcb0ec8dbd3f148cb55fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DarknodeRegistryStore",
+  "main_contract": "DarknodeRegistryStore",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14add4ca443e7445a3418bb572d6079bfc98897a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

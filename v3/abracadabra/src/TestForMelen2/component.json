@@ -1,0 +1,18 @@
+{
+  "component": "TestForMelen2",
+  "main_contract": "TestForMelen2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bc998bf2e25ea49b212b9db35491047c28074cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

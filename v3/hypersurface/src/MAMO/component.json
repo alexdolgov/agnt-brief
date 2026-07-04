@@ -1,0 +1,26 @@
+{
+  "component": "MAMO",
+  "main_contract": "MAMO",
+  "source_file_count": 34,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x31093641ac0a6930f5c0909c4540d295051188a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbfd59caa3faf7cabbfa3ee1776a9fd3853c6a589",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

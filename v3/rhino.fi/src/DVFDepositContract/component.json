@@ -1,0 +1,20 @@
+{
+  "component": "DVFDepositContract",
+  "main_contract": "DVFDepositContract",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/rhinofi/contracts_public/blob/master/PeckShield-Audit-Report-RhinoFi-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x04317f0e4795b1e1bab333234153fa10aaac79e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

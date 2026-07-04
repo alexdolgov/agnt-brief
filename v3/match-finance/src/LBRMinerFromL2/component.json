@@ -1,0 +1,18 @@
+{
+  "component": "LBRMinerFromL2",
+  "main_contract": "LBRMinerFromL2",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbcaf98f5198b3a68ddcd6720d80483182997f0ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

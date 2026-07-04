@@ -1,0 +1,50 @@
+{
+  "component": "BridgeL2",
+  "main_contract": "BridgeL2",
+  "source_file_count": 39,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x21d7841a14f97577463663d8ac54fd725b531f0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb6b8fca7e9461319ce9f6a45849931dcc59b7a5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb6c913b0ef644fdcdad407fcef2de8900b1e850d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbbdab89f9261e97154f483bb4c3dee75abb6a14f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdc8fb9cce670cea8b56a3a6d422e2f8c5b215943",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

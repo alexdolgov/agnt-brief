@@ -1,0 +1,18 @@
+{
+  "component": "tokenService",
+  "main_contract": "tokenService",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5e179082c652fd750b7bf3b48c5a253a63ba9833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

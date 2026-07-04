@@ -1,0 +1,18 @@
+{
+  "component": "WindswapGaugeRegistry",
+  "main_contract": "WindswapGaugeRegistry",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf95488cbe02fcfe165d0c7b33dca2979472a1e6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

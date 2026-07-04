@@ -1,0 +1,20 @@
+{
+  "component": "Storage-3",
+  "main_contract": "Storage",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2822860750-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F6utITMNjJXVJJVMgUpbZ%2Fuploads%2FTYQRLx7EbvMNno8HoNxI%2FAkira-Tech-Audit-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9f9d0bb490f7fa5894ffbd07dc46f858bd5b968b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

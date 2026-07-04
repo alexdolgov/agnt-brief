@@ -1,0 +1,18 @@
+{
+  "component": "VaultCurve3Pool",
+  "main_contract": "VaultCurve3Pool",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c8dc3a18761e4f22f7b8d41228970477168d9e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

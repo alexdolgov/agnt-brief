@@ -1,0 +1,18 @@
+{
+  "component": "AliumGaming1155",
+  "main_contract": "AliumGaming1155",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfc034cfd9f0adb614dd225f6adad2f1258dcdfd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

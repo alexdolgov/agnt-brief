@@ -1,0 +1,18 @@
+{
+  "component": "StorageGasOracle",
+  "main_contract": "StorageGasOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x91d23d603d60445411c06e6443d81395593b7940",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

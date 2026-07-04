@@ -1,0 +1,18 @@
+{
+  "component": "Portal",
+  "main_contract": "Portal",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x23ca665c8a73292fc7ac2cc4493d2ce883bba468",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StoneVault",
+  "main_contract": "StoneVault",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa62f9c5af106feee069f38de51098d9d81b90572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ParaSwapAMM",
+  "main_contract": "ParaSwapAMM",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd729163f0c3e6ed3b354fe6d8ccbbf9bbc0b6dbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

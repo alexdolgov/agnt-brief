@@ -1,0 +1,18 @@
+{
+  "component": "UpgradableProxy-5",
+  "main_contract": "UpgradableProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

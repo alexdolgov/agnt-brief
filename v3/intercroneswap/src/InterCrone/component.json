@@ -1,0 +1,18 @@
+{
+  "component": "InterCrone",
+  "main_contract": "InterCrone",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdc0678e929852aebe68e0ce60f65049b0d9d06d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

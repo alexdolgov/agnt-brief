@@ -1,0 +1,18 @@
+{
+  "component": "Convertor4626Factory",
+  "main_contract": "Convertor4626Factory",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93a2497266ad6b4b86f93aaf08e7c88b11449156",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

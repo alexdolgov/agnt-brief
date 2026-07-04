@@ -1,0 +1,28 @@
+{
+  "component": "TNGBLV3Oracle",
+  "main_contract": "TNGBLV3Oracle",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/tangible-tnft-v2-654b658635a6d00018202a55"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x92719c52841f84a39a9a863315af8f187a42d6bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdd56c3eaa2691b30d0a3d5bb3783d0ffc7579421",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

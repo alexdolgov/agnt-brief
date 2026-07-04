@@ -1,0 +1,18 @@
+{
+  "component": "EvmErc20",
+  "main_contract": "EvmErc20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0x9f1f933c660a1dc856f0e0fe058435879c5ccef0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VTokenInterface-3",
+  "main_contract": "VTokenInterface",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4a3ebae2fb28aa96cf570854715cbe37d9d9d475",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

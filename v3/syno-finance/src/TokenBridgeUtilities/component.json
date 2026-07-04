@@ -1,0 +1,18 @@
+{
+  "component": "TokenBridgeUtilities",
+  "main_contract": "TokenBridgeUtilities",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0ad78518eef039d97fa6523c215bd7aded7475fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

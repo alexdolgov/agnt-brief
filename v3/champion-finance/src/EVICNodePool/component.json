@@ -1,0 +1,18 @@
+{
+  "component": "EVICNodePool",
+  "main_contract": "EVICNodePool",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4202996072dc735193bc08a30fa4129ea78731c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

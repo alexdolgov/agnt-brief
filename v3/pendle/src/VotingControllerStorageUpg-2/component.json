@@ -1,0 +1,22 @@
+{
+  "component": "VotingControllerStorageUpg-2",
+  "main_contract": "VotingControllerStorageUpg",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pendle-finance/pendle-core-v2-public/blob/main/audits/main%20codebase/CMichel/CMichel-Part%202.pdf",
+    "https://github.com/pendle-finance/pendle-core-v2-public/blob/main/audits/main%20codebase/Dingbats/Dingbats-Part%202.pdf",
+    "https://github.com/pendle-finance/pendle-core-v2-public/blob/main/audits/main%20codebase/WatchPug/WatchPug-Part%202.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcfaa9540332afa3974bceed79bdd24d86c5fd4ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

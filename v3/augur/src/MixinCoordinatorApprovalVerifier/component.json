@@ -1,0 +1,18 @@
+{
+  "component": "MixinCoordinatorApprovalVerifier",
+  "main_contract": "MixinCoordinatorApprovalVerifier",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9401f3915c387da331b9b6af5e2a57e580f6a201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

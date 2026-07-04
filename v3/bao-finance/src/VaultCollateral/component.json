@@ -1,0 +1,18 @@
+{
+  "component": "VaultCollateral",
+  "main_contract": "VaultCollateral",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0715a829d47be2c8cecfd116ef5a4cc8c913c965",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

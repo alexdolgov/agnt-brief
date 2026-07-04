@@ -1,0 +1,18 @@
+{
+  "component": "Charlie",
+  "main_contract": "Charlie",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf1a91c7d44768070f711c68f33a7ca25c8d30268",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

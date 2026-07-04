@@ -1,0 +1,20 @@
+{
+  "component": "Strategy-10",
+  "main_contract": "Strategy",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-March21.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd3783586abde50e7b03c171bd1062354641f661",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GRBEBSCSStartPool",
+  "main_contract": "GRBEBSCSStartPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xff3790be5f065c82c688129a41af84d3a61a37fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

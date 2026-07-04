@@ -1,0 +1,18 @@
+{
+  "component": "AegisOracle",
+  "main_contract": "AegisOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b4ad1d479561064cd1c311004aca93d15041aec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

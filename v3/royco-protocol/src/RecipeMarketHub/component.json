@@ -1,0 +1,18 @@
+{
+  "component": "RecipeMarketHub",
+  "main_contract": "RecipeMarketHub",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x6af057b1c423d108ab710d6f4e3e46f3536787fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

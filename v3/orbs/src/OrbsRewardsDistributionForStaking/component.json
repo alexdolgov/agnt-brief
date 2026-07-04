@@ -1,0 +1,18 @@
+{
+  "component": "OrbsRewardsDistributionForStaking",
+  "main_contract": "OrbsRewardsDistributionForStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb52daf3f853bf570814d6aea1ec7bff30339bd0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

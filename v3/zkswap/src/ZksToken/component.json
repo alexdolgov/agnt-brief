@@ -1,0 +1,18 @@
+{
+  "component": "ZksToken",
+  "main_contract": "ZksToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe4815ae53b124e7263f08dcdbbb757d41ed658c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

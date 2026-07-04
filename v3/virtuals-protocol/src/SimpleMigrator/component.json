@@ -1,0 +1,18 @@
+{
+  "component": "SimpleMigrator",
+  "main_contract": "SimpleMigrator",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x10ee12a5a79988f1b07451fca2c9259867214899",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Farm",
+  "main_contract": "Farm",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "VNXAnyTransferProvider",
+  "main_contract": "VNXAnyTransferProvider",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2cf31b8c4b4da736ce551db514258f5a567225d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4c0bd74da8237c08840984fdb33a84b4586aaee6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

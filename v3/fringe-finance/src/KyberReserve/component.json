@@ -1,0 +1,18 @@
+{
+  "component": "KyberReserve",
+  "main_contract": "KyberReserve",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc82d6f13d96511977b21bcd9d60b7fc46191daf2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SoccerPokerGameBox",
+  "main_contract": "SoccerPokerGameBox",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe6a038119befe6c5ffbc8c030267a36d7b7297cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

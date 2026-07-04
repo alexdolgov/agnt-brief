@@ -1,0 +1,42 @@
+{
+  "component": "MinterSetPriceV2",
+  "main_contract": "MinterSetPriceV2",
+  "source_file_count": 11,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0eba0bd3702d850eec7a8215eb53ffc293c42341",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5112c52535449513c81bdf113b8dcc757d7f122b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fb3104b0b3cd665c7b8506b23ee833ea44d8e91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b7917e083cea6d9f6a3060a7330c1072fcb4e40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

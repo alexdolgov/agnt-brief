@@ -1,0 +1,18 @@
+{
+  "component": "MultiFeedAdapterWithoutRounds-25",
+  "main_contract": "MultiFeedAdapterWithoutRounds",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5708d924fc996edee46962cdb6815f90639974e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

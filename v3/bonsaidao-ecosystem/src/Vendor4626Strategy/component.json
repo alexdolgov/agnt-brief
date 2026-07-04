@@ -1,0 +1,18 @@
+{
+  "component": "Vendor4626Strategy",
+  "main_contract": "Vendor4626Strategy",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0b8f69d521442c667ec01e137569eb00deb54ce5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

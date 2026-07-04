@@ -1,0 +1,18 @@
+{
+  "component": "VotingEscrowToken-2",
+  "main_contract": "VotingEscrowToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

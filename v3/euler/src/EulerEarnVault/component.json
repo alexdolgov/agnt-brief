@@ -1,0 +1,18 @@
+{
+  "component": "EulerEarnVault",
+  "main_contract": "EulerEarnVault",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02122afd2687ddb1dd3b9f2f2d7cc6fd422dbd05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

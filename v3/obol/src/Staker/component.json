@@ -1,0 +1,18 @@
+{
+  "component": "Staker",
+  "main_contract": "Staker",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30641013934ec7625c9e73a4d63aab4201004259",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "PrivilegedCheckpointCauldronV4",
+  "main_contract": "PrivilegedCheckpointCauldronV4",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x289424add4a1a503870eb475fd8bf1d586b134ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x46f54d434063e5f1a2b2cc6d9aaa657b1b9ff82c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

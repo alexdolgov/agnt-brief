@@ -1,0 +1,18 @@
+{
+  "component": "WildcatCopyOfChainalysisList",
+  "main_contract": "WildcatCopyOfChainalysisList",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xfeb516d9d946dd487a9346f6fee11f40c6945ee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

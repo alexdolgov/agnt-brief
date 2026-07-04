@@ -1,0 +1,18 @@
+{
+  "component": "Blocklist",
+  "main_contract": "Blocklist",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70222d2579877a1a82dd4f00bfc97975d41001b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

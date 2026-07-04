@@ -1,0 +1,18 @@
+{
+  "component": "CombinedRateProviderFactory",
+  "main_contract": "CombinedRateProviderFactory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xdc580ce8e689a49d3ce58fad4c52786c39a923e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

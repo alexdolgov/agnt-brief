@@ -1,0 +1,18 @@
+{
+  "component": "UpdaterManager",
+  "main_contract": "UpdaterManager",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x2e09edd238eeaea6e4da705fbe5922b1979e03ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

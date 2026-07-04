@@ -1,0 +1,18 @@
+{
+  "component": "SnowGlobeVtxVtx",
+  "main_contract": "SnowGlobeVtxVtx",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x06e847a2bf7b2a63ebbd59594d553aebe2f2c474",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

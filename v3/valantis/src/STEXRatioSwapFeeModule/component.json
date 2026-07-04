@@ -1,0 +1,20 @@
+{
+  "component": "STEXRatioSwapFeeModule",
+  "main_contract": "STEXRatioSwapFeeModule",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ValantisLabs/valantis-stex/blob/main/audits/zenith-march-25.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x69317cecf77fb5dc68abe5c7aafb283de46956d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

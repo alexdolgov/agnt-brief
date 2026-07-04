@@ -1,0 +1,18 @@
+{
+  "component": "HyperdriveBase-10",
+  "main_contract": "HyperdriveBase",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69fb6a96b69c7bf4ffbdc056dc7b71fa835dd37f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

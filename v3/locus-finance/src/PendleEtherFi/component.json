@@ -1,0 +1,50 @@
+{
+  "component": "PendleEtherFi",
+  "main_contract": "PendleEtherFi",
+  "source_file_count": 52,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5e8d8e3c88fcc9e48cea5cdfdc2bf943a9672e0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x64e57ade661ffd9dc9f97732fc34adad0dbaa0e3",
+      "is_proxy": true,
+      "implementation_address": "0xc3ad420689eaa5b5da80976e49be50c946ade012",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7884cff1f81d9e7f0f1d38345ae1af964556c6d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa215115882e1ee59c9ed1fe1236b90a5e10dcf15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc3ad420689eaa5b5da80976e49be50c946ade012",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

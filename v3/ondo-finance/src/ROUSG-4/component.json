@@ -1,0 +1,22 @@
+{
+  "component": "ROUSG-4",
+  "main_contract": "ROUSG",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/fb329103-8bd1-45ac-91d8-4f75e1abf812",
+    "https://code4rena.com/reports/2024-03-ondo-finance",
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Cyfrin-Audit-April-2024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3d770240446c1d01c2e48f3fd323ca1ddb0fbaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

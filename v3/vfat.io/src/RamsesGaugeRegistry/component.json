@@ -1,0 +1,50 @@
+{
+  "component": "RamsesGaugeRegistry",
+  "main_contract": "RamsesGaugeRegistry",
+  "source_file_count": 46,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x125caffe923eaa451461ab98353c4a88154cb45e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x6f3e8f5a93dbcc9b0ded259068aa29e9c5bc3fe3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x7badae0bf1b3b758478cb4dd94be5aeccd03804f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xdf015ff16ac572d766977437c11de4115d968ac0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xf8d2b58823ab2604f01fc2e87250fee99df980cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

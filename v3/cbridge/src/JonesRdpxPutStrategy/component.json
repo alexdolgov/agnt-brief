@@ -1,0 +1,18 @@
+{
+  "component": "JonesRdpxPutStrategy",
+  "main_contract": "JonesRdpxPutStrategy",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2612870b2a96f43430e19bb6873a74295684e823",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

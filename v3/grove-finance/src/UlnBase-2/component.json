@@ -1,0 +1,18 @@
+{
+  "component": "UlnBase-2",
+  "main_contract": "UlnBase",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c1bcc3265c7233304ae3c0f8c0f3970032ab26a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

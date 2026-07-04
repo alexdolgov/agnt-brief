@@ -1,0 +1,26 @@
+{
+  "component": "AdminUpgradeabilityProxy-2",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a62cc5ebfa79b155b4ec90e74c00e0176692772",
+      "is_proxy": true,
+      "implementation_address": "0x694fcd0cea05218ea6397f16f88d445707a04dee",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x91df0ffc1b95113ba1f41ca0669fccaec0f55876",
+      "is_proxy": true,
+      "implementation_address": "0xedc8fdd113243a74cd3aa2059391010c7a4db23c",
+      "liveness": "live"
+    }
+  ]
+}

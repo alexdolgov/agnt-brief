@@ -1,0 +1,18 @@
+{
+  "component": "AdminableUpgradeable-4",
+  "main_contract": "AdminableUpgradeable",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x67c99a3cf67217598990c097b080e83ba850193a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

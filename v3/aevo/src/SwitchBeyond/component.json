@@ -1,0 +1,34 @@
+{
+  "component": "SwitchBeyond",
+  "main_contract": "SwitchBeyond",
+  "source_file_count": 14,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x52a71b10ce5ecf54b6a583a8e1a2a6adf8c72daf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x91e4c4ce0b693058b7f5e05fafd6cfc1af75c76b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd075c9fa148161e4828977a84a4054eb048172dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

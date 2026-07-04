@@ -1,0 +1,21 @@
+{
+  "component": "Gyro2CLPPool",
+  "main_contract": "Gyro2CLPPool",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2024-12-24.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2026-01-26.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ffecd2dab8703a74bd13ba10bce3419b9f5fa80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

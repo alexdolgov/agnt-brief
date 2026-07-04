@@ -1,0 +1,18 @@
+{
+  "component": "PublicAllocator",
+  "main_contract": "PublicAllocator",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x001969e33df5a9360d5bfc8219539a1616434249",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

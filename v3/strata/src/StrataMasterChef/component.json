@@ -1,0 +1,29 @@
+{
+  "component": "StrataMasterChef",
+  "main_contract": "StrataMasterChef",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-10-08-cyfrin-strata-tranches-v2.0.pdf",
+    "https://github.com/GuardianAudits/Audits/blob/main/Strata/Strata_Tranches_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f2682b78f37910704fb1aff29358a1da07e022d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2a3cf69c97afd4de7882e5fee120e4efc77b706",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

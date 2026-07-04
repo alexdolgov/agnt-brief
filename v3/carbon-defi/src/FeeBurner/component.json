@@ -1,0 +1,18 @@
+{
+  "component": "FeeBurner",
+  "main_contract": "FeeBurner",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4610fc898f94ac0b6bfe2b836fd59f6d03195445",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

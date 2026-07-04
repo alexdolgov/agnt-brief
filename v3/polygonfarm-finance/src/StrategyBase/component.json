@@ -1,0 +1,26 @@
+{
+  "component": "StrategyBase",
+  "main_contract": "StrategyBase",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4686b53c75377ae9f2b4c885ea4ddb9335086829",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcf9b263acb3ca1df7a88b8b49bc8b989d0055840",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

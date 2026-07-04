@@ -1,0 +1,18 @@
+{
+  "component": "RealtyOracleTangibleV1_1",
+  "main_contract": "RealtyOracleTangibleV1_1",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb4854b72b45b71743494d8f4b99f231753ccf31f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

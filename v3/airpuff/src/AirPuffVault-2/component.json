@@ -1,0 +1,20 @@
+{
+  "component": "AirPuffVault-2",
+  "main_contract": "AirPuffVault",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Airpuff/Audit-Report/blob/main/Zokyo%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2a678fc5dee446c11d092d9012e3fabdcd435673",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

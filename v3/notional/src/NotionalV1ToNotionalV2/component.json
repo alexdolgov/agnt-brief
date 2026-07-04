@@ -1,0 +1,18 @@
+{
+  "component": "NotionalV1ToNotionalV2",
+  "main_contract": "NotionalV1ToNotionalV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf47d7192413ac6558f48594ecce6d2dfe38b7876",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

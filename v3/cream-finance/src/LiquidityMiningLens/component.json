@@ -1,0 +1,26 @@
+{
+  "component": "LiquidityMiningLens",
+  "main_contract": "LiquidityMiningLens",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x56d21e79d72d7f62e038adc31ccd38989f077d08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x723c4aceca62a3759c1c6d9abe1e3c8f581f9092",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

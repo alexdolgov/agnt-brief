@@ -1,0 +1,18 @@
+{
+  "component": "RiscZeroSetVerifier",
+  "main_contract": "RiscZeroSetVerifier",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5005aba3dff7c940fcc1e48dcccad611a80eeb85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

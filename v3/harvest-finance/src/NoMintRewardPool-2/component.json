@@ -1,0 +1,20 @@
+{
+  "component": "NoMintRewardPool-2",
+  "main_contract": "NoMintRewardPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/harvestfi/audits/blob/main/Haechi-Harvest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01f9caad0f9255b0c0aa2fbd1c1aa06ad8af7254",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "UnshETHAdapter",
+  "main_contract": "UnshETHAdapter",
+  "source_file_count": 23,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x160889cb9fbe5326ee38bfa6e565c7175cf0b278",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa89559c205dbe65897f4df6989a3da7ddf7f8df2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb328bad96e500de492d7fbb6a63c34877173086",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

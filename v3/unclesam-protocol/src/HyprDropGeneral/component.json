@@ -1,0 +1,26 @@
+{
+  "component": "HyprDropGeneral",
+  "main_contract": "HyprDropGeneral",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1768137127e5b8064d1155fd653d2afbb1dd6b37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ba69b40b5f6ecd8064920424601cc24a41f33d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

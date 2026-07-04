@@ -1,0 +1,42 @@
+{
+  "component": "AutomataDcapV3Attestation",
+  "main_contract": "AutomataDcapV3Attestation",
+  "source_file_count": 34,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f73f0adc7daa6134fe751c4a78d524f9384e0b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d7c954960a36a7596d7ea4945ddf891967ca8a3",
+      "is_proxy": true,
+      "implementation_address": "0x5f73f0adc7daa6134fe751c4a78d524f9384e0b5",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde1b1fbe7d721af4a56651272ef91a59b7303323",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee8fc1dbb8d345f5bf35dfb939c6f9edc5fcdafc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

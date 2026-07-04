@@ -1,0 +1,18 @@
+{
+  "component": "DSFUserHelperMIM",
+  "main_contract": "DSFUserHelperMIM",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf225e5c78d56cbe6993f533865ab49c2f4d4e2ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

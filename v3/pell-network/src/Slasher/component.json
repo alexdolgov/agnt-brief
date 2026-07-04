@@ -1,0 +1,18 @@
+{
+  "component": "Slasher",
+  "main_contract": "Slasher",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

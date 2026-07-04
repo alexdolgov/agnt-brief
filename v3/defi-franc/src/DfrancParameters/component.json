@@ -1,0 +1,18 @@
+{
+  "component": "DfrancParameters",
+  "main_contract": "DfrancParameters",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6f9990b242873d7396511f2630412a3fcecacc42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

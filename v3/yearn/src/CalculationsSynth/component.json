@@ -1,0 +1,18 @@
+{
+  "component": "CalculationsSynth",
+  "main_contract": "CalculationsSynth",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a04749532195d5d16268da74775defcc843151a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

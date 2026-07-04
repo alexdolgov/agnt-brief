@@ -1,0 +1,26 @@
+{
+  "component": "AccessControlAccount",
+  "main_contract": "AccessControlAccount",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x90c5a7d0c2c83ff3d145a2cf7f20b97253c5477d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe8b412158c205b0f605e0fc09dcda27d3f140fe9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

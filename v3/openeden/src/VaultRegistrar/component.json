@@ -1,0 +1,42 @@
+{
+  "component": "VaultRegistrar",
+  "main_contract": "VaultRegistrar",
+  "source_file_count": 37,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x121d63424e6f8632602f8f67848a28209179711d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fbf77d74337fefa7d8993f507a38edb4df620e5",
+      "is_proxy": true,
+      "implementation_address": "0xaa93c6ce0213cf7c31b9a029402c42c5db57e41f",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa93c6ce0213cf7c31b9a029402c42c5db57e41f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd280bca62a7fc67011caef77815e8606071bef9f",
+      "is_proxy": true,
+      "implementation_address": "0x121d63424e6f8632602f8f67848a28209179711d",
+      "liveness": "live"
+    }
+  ]
+}

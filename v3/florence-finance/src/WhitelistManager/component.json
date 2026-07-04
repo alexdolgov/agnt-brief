@@ -1,0 +1,18 @@
+{
+  "component": "WhitelistManager",
+  "main_contract": "WhitelistManager",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9f2bad43e738e90df6df80cc417d00e47d85b4a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

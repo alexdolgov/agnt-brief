@@ -1,0 +1,21 @@
+{
+  "component": "PresaleV1",
+  "main_contract": "PresaleV1",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Assure-DeFi/Audits/blob/main/TGB_PRESALE_12_11_23.pdf",
+    "https://github.com/Assure-DeFi/Audits/blob/main/TGB_PreSaleV1_01_12_2024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa87e79652814a0239bf752d4d7be70f61b73009a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

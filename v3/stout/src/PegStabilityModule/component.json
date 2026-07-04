@@ -1,0 +1,26 @@
+{
+  "component": "PegStabilityModule",
+  "main_contract": "PegStabilityModule",
+  "source_file_count": 34,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x24e2a86176f209cce828714c48f804fd7444a89a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb969195db5d756ac7a7ea78a69f20fe1f172a494",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

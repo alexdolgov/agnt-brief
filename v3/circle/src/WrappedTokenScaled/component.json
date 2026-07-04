@@ -1,0 +1,18 @@
+{
+  "component": "WrappedTokenScaled",
+  "main_contract": "WrappedTokenScaled",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05a0a07620348a90ab895d2c9e87adfa1a59bf51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

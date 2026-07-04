@@ -1,0 +1,60 @@
+{
+  "component": "AuraVestedEscrow",
+  "main_contract": "AuraVestedEscrow",
+  "source_file_count": 14,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://2520301408-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fr4kLuYPt1EhIEVbkxHD8%2Fuploads%2FDuQMD5ULdRtqravKUwxQ%2FCode4rena-Audit-Report-AuraFinance-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x24346652e0e2ae0ce05c781501fdf4fe4553fac6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43b17088503f4ce1aed9fb302ed6bb51ad6694fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45025ebc38647bcf7edd2b40cfdaf3fbfe1538f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5bd3fca8d3d8c94a6419d85e0a76ec8da52d836a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xefc9f1fa4ce75290deeeeb57a3b75dc79066ac3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd72170339ac6d7bdda09d1eaca346b21a30d422",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FoundationVesting",
+  "main_contract": "FoundationVesting",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb41e4fc708c63186fa7973a22165181e7c8ad288",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

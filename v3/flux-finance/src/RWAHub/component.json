@@ -1,0 +1,18 @@
+{
+  "component": "RWAHub",
+  "main_contract": "RWAHub",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d01be0296b99aadee94116e285cdb2c40be7929",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

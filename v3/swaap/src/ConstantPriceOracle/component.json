@@ -1,0 +1,18 @@
+{
+  "component": "ConstantPriceOracle",
+  "main_contract": "ConstantPriceOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3abc21ff99e0e45975d7637c2773ecf52b2d80e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

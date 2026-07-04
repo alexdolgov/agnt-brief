@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawPeriphery",
+  "main_contract": "WithdrawPeriphery",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba55d7f67fa22df5e92487d5b306ddb1aa543d10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

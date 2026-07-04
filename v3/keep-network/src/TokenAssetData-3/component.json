@@ -1,0 +1,18 @@
+{
+  "component": "TokenAssetData-3",
+  "main_contract": "TokenAssetData",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb97394b55b4807a835619edbcc6af6b1d3c71e98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "GnosisChainReceiverV2",
+  "main_contract": "GnosisChainReceiverV2",
+  "source_file_count": 8,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0db38fd51525cb4d7d2814ccd3fee3acee391137",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x78fe89e1eeeb73edbc45091aee59cd18303efaf2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc73f83b515dfceec3496890fb4644d7463f7da4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfd5300fb615fd66a7c912d2fbca5df71f9d79901",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AccountFacet-2",
+  "main_contract": "AccountFacet",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x9f8f9d8b8bfccf3d782564e6d9cc09371792c2cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

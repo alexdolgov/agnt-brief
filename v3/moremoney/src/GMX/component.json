@@ -1,0 +1,18 @@
+{
+  "component": "GMX",
+  "main_contract": "GMX",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x62edc0692bd897d2295872a9ffcac5425011c661",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

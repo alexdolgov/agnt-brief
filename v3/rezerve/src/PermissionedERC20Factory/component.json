@@ -1,0 +1,26 @@
+{
+  "component": "PermissionedERC20Factory",
+  "main_contract": "PermissionedERC20Factory",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0df76fe19b0f9e1603df6f7381e57014dc74494f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26d6edd1d9b5255208ad88ef3aca47e9abf0f3c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

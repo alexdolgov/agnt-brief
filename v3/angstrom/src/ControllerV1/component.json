@@ -1,0 +1,18 @@
+{
+  "component": "ControllerV1",
+  "main_contract": "ControllerV1",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1746484ea5e11c75e009252c102c8c33e0315fd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

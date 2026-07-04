@@ -1,0 +1,18 @@
+{
+  "component": "Aggregator_hsstETH_SILVER_USD_mainnet",
+  "main_contract": "Aggregator_hsstETH_SILVER_USD_mainnet",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50e198a8fa7e4c95b355e34cba026133f68d1637",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

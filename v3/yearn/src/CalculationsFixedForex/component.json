@@ -1,0 +1,18 @@
+{
+  "component": "CalculationsFixedForex",
+  "main_contract": "CalculationsFixedForex",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9956ca141c344e177829671ec0f1a9d4ab3cb1fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

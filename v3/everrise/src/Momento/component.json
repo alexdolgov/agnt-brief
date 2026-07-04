@@ -1,0 +1,18 @@
+{
+  "component": "Momento",
+  "main_contract": "Momento",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ae8b74cd2d566853715800c9927f879d6b76a37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

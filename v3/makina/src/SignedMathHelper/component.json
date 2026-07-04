@@ -1,0 +1,20 @@
+{
+  "component": "SignedMathHelper",
+  "main_contract": "SignedMathHelper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/Makina/ChainSecurity_Makina_MakinaPeripherySmartContracts_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe11b4879a771222cdae84e4392b03adaa151bc4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

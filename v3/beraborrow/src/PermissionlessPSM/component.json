@@ -1,0 +1,21 @@
+{
+  "component": "PermissionlessPSM",
+  "main_contract": "PermissionlessPSM",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FmxZQ0WeLKd6haJRL3ohF%2FCDP%20protocol%20public%20audit%20competition%20Cantina%20(1).pdf",
+    "https://github.com/santipu03/santipu03/blob/main/private-audits/Cantina_Beraborrow.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x47877226fd0b1a84649b39db7f1c865dce05c96c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "IMasset",
+  "main_contract": "IMasset",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.notion.so/Rari-Capital-Audit-Quantstamp-December-2020-24a1d1df94894d6881ee190686f47bc7"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2837c77527c37d61d9763f53005211dacb4125de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

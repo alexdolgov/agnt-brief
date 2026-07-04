@@ -1,0 +1,26 @@
+{
+  "component": "InterestProtocolTokenDelegate",
+  "main_contract": "InterestProtocolTokenDelegate",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x384542d720a765ae399cfddf079cbe515731f044",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x387eedd357836a73ecef07067e6360a95c254b17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

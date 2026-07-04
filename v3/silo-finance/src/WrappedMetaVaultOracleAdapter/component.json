@@ -1,0 +1,26 @@
+{
+  "component": "WrappedMetaVaultOracleAdapter",
+  "main_contract": "WrappedMetaVaultOracleAdapter",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x12a9fe9f6a1fea5f3c76773d09baa9e1a332e1c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4d5f6af40a19e15573b1f20caebb224b20f0d199",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

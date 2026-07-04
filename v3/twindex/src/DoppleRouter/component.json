@@ -1,0 +1,18 @@
+{
+  "component": "DoppleRouter",
+  "main_contract": "DoppleRouter",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2acec0231e55086f6304e4c1e6eacf4eaec5b753",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

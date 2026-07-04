@@ -1,0 +1,18 @@
+{
+  "component": "PublicBytesBurn",
+  "main_contract": "PublicBytesBurn",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d59cbf95add1237b6449ddea0d0c64952879bf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

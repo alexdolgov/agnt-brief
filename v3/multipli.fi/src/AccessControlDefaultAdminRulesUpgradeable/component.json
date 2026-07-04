@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlDefaultAdminRulesUpgradeable",
+  "main_contract": "AccessControlDefaultAdminRulesUpgradeable",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3621351d3f44a3a5e9ac1a3f3e9ca045313d3e13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

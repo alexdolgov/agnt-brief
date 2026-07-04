@@ -1,0 +1,18 @@
+{
+  "component": "AggregatorProxy",
+  "main_contract": "AggregatorProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7d25d250fbd63b0dac4a38c661075930c9a87aea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

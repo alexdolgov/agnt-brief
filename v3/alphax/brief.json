@@ -1,0 +1,194 @@
+{
+  "schema_version": "2.0",
+  "project_key": "alphax",
+  "generated_at": "2026-07-03T21:05:27.057Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-bd47",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "alphax",
+    "tier": 0,
+    "peak_tvl": 1704152,
+    "peak_date": "2025-02-23T00:00:00.000Z",
+    "tvl_30d_ago": 1461705,
+    "tvl_90d_ago": 1234331,
+    "tvl_current": 1489317,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 6,
+    "change_30d_pct": 1.889026855624083,
+    "change_90d_pct": 20.657830031004647,
+    "days_since_peak": 493,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 12.606563264309756
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 2,
+    "unique_implementations": 1,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1480457.84179,
+    "tvl_usd": 900203.314616746,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 900203.31
+    },
+    "asd_usd": 900203.314616746,
+    "website_url": "https://alphax.com/",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 1,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6302e7948736baf985804f0dc6132baf6d86cc92",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DEXVaultV1",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 900203.314616746,
+      "is_proxy": false,
+      "impl_address": "0x6302e7948736baf985804f0dc6132baf6d86cc92",
+      "impl_name": "DEXVaultV1",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6302e7948736baf985804f0dc6132baf6d86cc92",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8259f6010a030bcd54335503ba91bba70a534ca6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 900203.314616746,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2025-12-23 10:55:25+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3060,
+      "audit_key": "audit-3060",
+      "report_name": "AlphaX Audit final.pdf",
+      "report_url": "https://github.com/AlphaX-Protocol/AlphaX-Protocol-Contract/blob/master/Audit-Report/AlphaX%20Audit%20final.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3060,
+        "report_name": "AlphaX Audit final.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BasePriceFeedAeroWithoutRoundsV1",
+  "main_contract": "BasePriceFeedAeroWithoutRoundsV1",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa8a94da411425634e3ed6c331a32ab4fd774aa43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

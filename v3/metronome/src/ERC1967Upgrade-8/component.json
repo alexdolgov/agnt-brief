@@ -1,0 +1,18 @@
+{
+  "component": "ERC1967Upgrade-8",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0f6fd010da1e4184b129f00f2dc5b96c16b8e866",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

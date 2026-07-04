@@ -1,0 +1,50 @@
+{
+  "component": "IdleEulerStakingStrategyPSM",
+  "main_contract": "IdleEulerStakingStrategyPSM",
+  "source_file_count": 32,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x956f650177f95ef142aa2a26da407ad014cf5784",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d6f65f2ffe08158a00793bf62c62b43629117b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb51be9eea9cbeefe2fe7ac2161ace58444c294e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee76293d97f0613849603090cc75aa97e3cf5e7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcbd5b780109f030b71286ab59f187e4287aa358",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

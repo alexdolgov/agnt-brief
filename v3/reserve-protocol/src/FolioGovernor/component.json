@@ -1,0 +1,37 @@
+{
+  "component": "FolioGovernor",
+  "main_contract": "FolioGovernor",
+  "source_file_count": 40,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-04-reserve-folio-solidity-2.0.0.pdf",
+    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x279ccf56441fc74f1aac39e7fac165dec5a88b3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa265114d662dcbf40bd2ea4dffc1fdcc2468dce4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbe8a1a7aed854c83359f6e114d6805d0f64f8d94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

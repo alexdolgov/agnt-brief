@@ -1,0 +1,18 @@
+{
+  "component": "AvantCoinSilo",
+  "main_contract": "AvantCoinSilo",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a3e690b6ebc3013a89e922167570b2684d238e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "PrvTokenClaimer",
+  "main_contract": "PrvTokenClaimer",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1339ec7d0d68a664690cc000623e5b6a841cc5f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x212d943c35ec98ad7a112662644e41857951ae99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

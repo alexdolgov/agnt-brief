@@ -1,0 +1,18 @@
+{
+  "component": "AllMarkets-2",
+  "main_contract": "AllMarkets",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3ed798159e449d224de05515385f86c1d10608f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+# liquity — deployments
+
+121 verified deployment(s) across 76 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| chain-146 | `0x10a9de252eb9e11841fa58b18fd09ab43d4b7d92` | BurnMintTokenPool | impl | live | no |
+| chain-146 | `0xcfc5092583c1b2122f221f524c198abdecbf3d1b` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x0129c6f26ba8ab0f9575ffe2c0678253a5de930d` | Vyper_contract | impl | inactive | no |
+| ethereum | `0x01c1103d765f62a0d909499d7b615c382cdb072d` | DadFab | impl | inactive | no |
+| ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | inactive | no |
+| ethereum | `0x07a01471fa544d9c6531b631e6a96a79a9ad05e9` | LiquidityGaugeV6 | impl | live | no |
+| ethereum | `0x0aab73d845d481fe790787f535618457921a7e85` | Migrations | impl | inactive | no |
+| ethereum | `0x0eda20f7499aae7bdadc4e52fd72e49663733ed4` | TopFab | impl | inactive | no |
+| ethereum | `0x141a206ece672e3198086c5d21f7858ad03669ea` | MomFab | impl | inactive | no |
+| ethereum | `0x14d8d8011df2b396ed2bbc4959bb73250324f386` | SortedTroves | impl | live | yes |
+| ethereum | `0x16897a8a7713d0f709a914d9d05edf6b598d24b6` | UniV4MerklRewards | impl | live | no |
+| ethereum | `0x1a0fc0b843afd9140267d25d4e575cb37a838013` | TroveNFT | impl | live | no |
+| ethereum | `0x1e7ca05e174a523709e556080e227f734a8f1483` | DSChiefFab | impl | inactive | no |
+| ethereum | `0x20f7c9ad66983f6523a0881d0f82406541417526` | AddressesRegistry | impl | inactive | no |
+| ethereum | `0x24179cd81c9e782a4096035f7ec97fb8b783e007` | BorrowerOperations | impl | live | yes |
+| ethereum | `0x2c67395bbbd658c239f54fb99487aefbbcf95636` | DSToken | impl | inactive | no |
+| ethereum | `0x3400874305e1547020fb8e80eaf1308b757171af` | MetadataNFT | impl | live | no |
+| ethereum | `0x34f1e9c7dcc279ec70d3c4488eb2d80fba8b7b2b` | RETHPriceFeed | impl | live | no |
+| ethereum | `0x353f8931ce1c52f643121be129985aab09c4bf52` | WETH | impl | inactive | no |
+| ethereum | `0x362f822df79790c8077e61110484fffa48f682a1` | MetadataNFT | impl | live | no |
+| ethereum | `0x36e6cbdf68f64cf00fc3a6c634a25be32dd0a235` | CollSurplusPool | impl | live | yes |
+| ethereum | `0x372abd1810eaf23cb9d941bbe7596dfb2c46bc65` | BorrowerOperations | impl | live | yes |
+| ethereum | `0x3a6bd15abf19581e411621d669b6a2bbe741ffd6` | StableSwapStateOracle | impl | inactive | no |
+| ethereum | `0x3d32e8b97ed5881324241cf03b2da5e2ebce5521` | CollSurplusPool-2 | impl | live | no |
+| ethereum | `0x414b1da0bb6e948dc0559d14ebde9fa9572499bf` | VoxFab | impl | inactive | no |
+| ethereum | `0x431e935209d79706b5866eb42137a3491d845692` | GemFab | impl | inactive | no |
+| ethereum | `0x44e31944e1a6f3b8f805e105b130f8bdb7e2ebd8` | AddressQueueStorage | impl | inactive | no |
+| ethereum | `0x45c81dce308389e1bee63ae30a04fb1e148dad41` | GasPool | impl | live | yes |
+| ethereum | `0x4a67d9b00c077b093ddfb67de2a1c66a70bac0fe` | MomFab | impl | inactive | no |
+| ethereum | `0x4f9fbb3f1e99b56e0fe2892e623ed36a76fc605d` | LQTYStaking | impl | live | yes |
+| ethereum | `0x513251fab2542532753972b8fe9a7b60621affad` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0x521c420c2a2b461034becbb41d4888b68951f14f` | TapFab | impl | inactive | no |
+| ethereum | `0x531a8f99c70d6a56a7cee02d6b4281650d7919a0` | ActivePool | impl | live | yes |
+| ethereum | `0x5503e7690e550045e984c2b55902d8986ca2808e` | WETH | impl | inactive | no |
+| ethereum | `0x552f355ccb9b91c8fb47d9c011abad5b72ec30e9` | GemFab | impl | inactive | no |
+| ethereum | `0x5721cbbd64fc7ae3ef44a0a3f9a790a9264cf9bf` | StabilityPool | impl | live | yes |
+| ethereum | `0x59adcf176ed2f6788a41b8ea4c4904518e62b6a4` | DSToken | impl | inactive | no |
+| ethereum | `0x5cc5cefd034fdc4728d487a72ca58a410cddcd6b` | DefaultPool | impl | live | yes |
+| ethereum | `0x5f98805a4e8be255a32880fdec7f6728c6568ba0` | LUSDToken | impl | live | yes |
+| ethereum | `0x6106046f031a22713697e04c08b330ddaf3e8789` | AddressesRegistry | impl | live | no |
+| ethereum | `0x6440f144b7e50d6a8439336510312d2f54beb01d` | BoldToken | impl | live | no |
+| ethereum | `0x66017d22b0f8556afdd19fc67041899eb65a21bb` | StabilityPool-2 | impl | live | no |
+| ethereum | `0x68fd0899fedeeee08b77c189d2f8ac38466ea216` | VoxFab | impl | inactive | no |
+| ethereum | `0x69076e44a9c70a67d5b79d95795aba299083c275` | GemPit | impl | inactive | no |
+| ethereum | `0x69efec83296c711db4a403b1ee281e87f99590d6` | VotiumInitiative | impl | inactive | no |
+| ethereum | `0x6dea81c8171d0ba574754ef6f8b412f2ed88c54d` | LQTYToken | impl | live | yes |
+| ethereum | `0x7022a4f4a2b9f0c30a5eb0b0073a8bb4c8e70c1f` | WETHZapper | impl | live | no |
+| ethereum | `0x707f9118e33a9b8998bea41dd0d46f38bb963fc8` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0x75036b1d6de5665c60f5c33bb4a64e8e123211a2` | LeverageLSTZapper | impl | live | no |
+| ethereum | `0x7ae430e25b67f19b431e1d1dc048a5bcf24c0873` | TroveNFT | impl | live | no |
+| ethereum | `0x7b9ab3de4036cae51f1fa4ec0a2c2fd606bcf921` | GasPool | impl | live | yes |
+| ethereum | `0x7bcb64b2c9206a5b699ed43363f6f98d4776cf5a` | TroveManager | impl | live | yes |
+| ethereum | `0x7ed17e037b7d88a8270c89b3afa9c38e5218f12b` | CurveStableSwapNG | impl | live | no |
+| ethereum | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | WstETH | impl | live | no |
+| ethereum | `0x807def5e7d057df05c796f4bc75c3fe82bd6eee1` | Governance | impl | live | no |
+| ethereum | `0x82e29308c96c2bebddc90b4a2e4ee7e60d57238e` | UniV4MerklRewardsWrapper | impl | live | no |
+| ethereum | `0x84eb85a8c25049255614f0536bea8f31682e86f1` | SortedTroves | impl | live | yes |
+| ethereum | `0x857aecebf75f1012dc18e15020c97096aea31b04` | TroveNFT | impl | live | no |
+| ethereum | `0x896a3f03176f05cfbb4f006bfcd8723f2b0d741c` | DefaultPool-2 | impl | live | no |
+| ethereum | `0x8c44fba379d8a8608c0e29b2729deb75a981db1f` | GasPool | impl | live | yes |
+| ethereum | `0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54` | AddressesRegistry | impl | live | no |
+| ethereum | `0x8e2a84d6ade1e7fffee039a35ef5f19f13057152` | DSChief | impl | inactive | no |
+| ethereum | `0x8fdd3fbfeb32b28fb73555518f8b361bcea741a6` | SortedTroves-2 | impl | live | no |
+| ethereum | `0x9074d72cc82dad1e13e454755aa8f144c479532f` | ActivePool | impl | live | yes |
+| ethereum | `0x9502b7c397e9aa22fe9db7ef7daf21cd2aebe56b` | StabilityPool | impl | live | yes |
+| ethereum | `0x9555b042f969e561855e5f28cb1230819149a8d9` | GasPool-2 | impl | live | no |
+| ethereum | `0x97bf1ff371ceabbb9e821480d31dd743c4b71e0e` | DSMath | impl | inactive | no |
+| ethereum | `0x9aed7a25f2d928225e6fb2388055c7363ad6727b` | DSToken | impl | inactive | no |
+| ethereum | `0x9b36c3b16299d68c79f174df7e728e35b6af4a12` | MetadataNFT | impl | live | no |
+| ethereum | `0x9dc6c56296e91466fc12d31a694639699e4c37e5` | GemPit | impl | inactive | no |
+| ethereum | `0x9dda491445b0b33976527ed741e0476a16380c49` | TopFab | impl | inactive | no |
+| ethereum | `0xa25269e41bd072513849f2e64ad221e84f3063f4` | SortedTroves | impl | live | yes |
+| ethereum | `0xa2895d6a3bf110561dfe4b71ca539d84e1928b22` | TroveManager | impl | live | yes |
+| ethereum | `0xa306065a144a16dbc99f06e16737dd400e6e1778` | StakingRewards | impl | inactive | no |
+| ethereum | `0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2` | TroveManager-2 | impl | live | no |
+| ethereum | `0xa741a32f9dcfe6adba088fd0f97e90742d7d5da3` | BorrowerOperations | impl | live | yes |
+| ethereum | `0xad430500ecda11e38c9bcb08a702274b94641112` | TellorCaller | impl | live | yes |
+| ethereum | `0xae78736cd615f374d3085123a210448e74fc6393` | RocketTokenRETH | impl | live | no |
+| ethereum | `0xaec71b3be50bc4cd99b44ea84fcf1ecc913bc33d` | WETH | impl | inactive | no |
+| ethereum | `0xb2b2abeb5c357a234363ff5d180912d319e3e19e` | TroveManager | impl | live | yes |
+| ethereum | `0xb366256d033ae7e4f7bddec822a5adec9df07b80` | RedemptionHelper | impl | live | no |
+| ethereum | `0xb3b67099121e1fbde6276b2802048d1a7dd1b987` | TubFab | impl | inactive | no |
+| ethereum | `0xb42448852a1bfc99d66ed53c65e2b49cf954f615` | UniV4MerklRewards | impl | live | no |
+| ethereum | `0xb5d64a1afe7eadcc79b99bdfb932d406aae66aaa` | VotiumInitiative | impl | inactive | no |
+| ethereum | `0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f` | WithdrawalsManagerProxy | proxy | inactive | no |
+| ethereum | `0xba415afa8fcd65196764b5e08cb4dbf90bee33b4` | BribeInitiative | impl | live | no |
+| ethereum | `0xba4a2bd8b76df84cac98eba3f4b967d8423192bf` | CollSurplusPool | impl | live | yes |
+| ethereum | `0xbd69d3e0ea967d146e925b7572b765c8e9c4127d` | GasCompZapper | impl | live | no |
+| ethereum | `0xbe8b230dcd12e246f5edc5c103cc98be68ab636f` | GasCompZapper | impl | live | no |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
+| ethereum | `0xc0562baaad3ef9e78ac449e3508a4a31c9395e57` | DSToken | impl | inactive | no |
+| ethereum | `0xc2baca5300b95ab18eddd9ef3070a0945298ab50` | TapFab | impl | inactive | no |
+| ethereum | `0xcc5f8102eb670c89a4a3c567c13851260303c24f` | WETHPriceFeed | impl | live | no |
+| ethereum | `0xd37a77e71ddf3373a79be2ebb76b6c4808bdf0d5` | Unipool | impl | live | yes |
+| ethereum | `0xd442e41019b7f5c4dd78f50dc03726c446148695` | StabilityPool | impl | live | yes |
+| ethereum | `0xd4558240d50c2e219a21c9d25afd513bb6e5b1a0` | DefaultPool | impl | live | yes |
+| ethereum | `0xd4ae2511df21f367792ba4d67c6eb032171c6a16` | AddressSetStorage | impl | live | no |
+| ethereum | `0xd796e1648526400386cc4d12fa05e5f11e6a22a1` | DefaultPool | impl | live | yes |
+| ethereum | `0xd8c9d9071123a059c6e0a945cf0e0c82b508d816` | CommunityIssuance | impl | live | yes |
+| ethereum | `0xdb149235b6f40dc08810aa69869783be101790e7` | DepositSecurityModule | impl | inactive | no |
+| ethereum | `0xdb46c277da1599390eab394327602889e9546296` | MerkleDistributor | impl | live | no |
+| ethereum | `0xdc6f869d2d34e4aee3e89a51f2af6d54f0f7f690` | GnosisSafeProxy | proxy | live | no |
+| ethereum | `0xdccbd7a365aee086aa3b4ede8afe895b20770ae3` | LeverageWETHZapper | impl | live | no |
+| ethereum | `0xdf9eb223bafbe5c5271415c75aecd68c21fe3d7f` | ActivePool-2 | impl | live | no |
+| ethereum | `0xe5df61285e8492d1d4dd6e4651821383512f012f` | DadFab | impl | inactive | no |
+| ethereum | `0xe7aa2ba9e086a379d3beb224098bc634a46e314e` | WSTETHPriceFeed | impl | live | no |
+| ethereum | `0xe8119fc02953b27a1b48d2573855738485a17329` | BorrowerOperations | impl | live | yes |
+| ethereum | `0xe84251b93d9524e0d2e621ba7dc7cb3579f997c0` | HintHelpers | impl | live | yes |
+| ethereum | `0xe85230de04147c4ea363b21cdb801c1c19df0a56` | LeverageLSTZapper | impl | live | no |
+| ethereum | `0xe9a4cfd1de3b83a774a82ff6f8c6da97d21dff49` | UniV4MerklRewards | impl | live | no |
+| ethereum | `0xeb5a8c825582965f1d84606e078620a84ab16afe` | ActivePool | impl | live | yes |
+| ethereum | `0xec3567ae258639a0ff5a02f7eaf4e4ae4416c5fe` | NodeOperatorsRegistry | impl | inactive | no |
+| ethereum | `0xec4d29fd22066e75746eb68cb51d8a7df7d28356` | TubFab | impl | inactive | no |
+| ethereum | `0xedbe2509e502c0320d2e7f8b6746a49b4b50e2bf` | CollSurplusPool | impl | live | yes |
+| ethereum | `0xf07674f6ac6632e253c291b694f9c2e2ed69ebbb` | DaiFab | impl | inactive | no |
+| ethereum | `0xf0cae19c96e572234398d6665cc1147a16cbe657` | HintHelpers | impl | live | yes |
+| ethereum | `0xf5b59c107f3f7b1c2a7c3d09234bd0a055ad8d55` | GemPit | impl | inactive | no |
+| ethereum | `0xf949982b91c8c61e952b3ba942cbbfaef5386684` | CollateralRegistry | impl | live | no |
+| ethereum | `0xfa61db085510c64b83056db3a7acf3b6f631d235` | MultiTroveGetter | impl | live | yes |
+| ethereum | `0xfc92d0e9fa35df17e3a6d9f40716ca2ce749922b` | MultiTroveGetter-2 | impl | live | no |
+| optimism | `0x03569cc076654f82679c4ba2124d64774781b01d` | BurnMintERC20 | impl | live | no |
+
+## Source unavailable (37)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x03569cc076654f82679c4ba2124d64774781b01d`
+- base `0x03569cc076654f82679c4ba2124d64774781b01d`
+- chain-146 `0xc6e53b51eae4628199a4fecdf94ba7d23fe6ae08`
+- chain-146 `0xf05a207442f14e446b0e32b12d2043bfc68cb1c9`
+- chain-80094 `0x10a9de252eb9e11841fa58b18fd09ab43d4b7d92`
+- chain-80094 `0xcfc5092583c1b2122f221f524c198abdecbf3d1b`
+- chain-80094 `0xf05a207442f14e446b0e32b12d2043bfc68cb1c9`
+- ethereum `0x02454e9dd8d8d49d4a20df27f5e1c3a51b4c1c27`
+- ethereum `0x0627054d17eae63ec23c6d8b07d8db7a66ffd45a`
+- ethereum `0x07be9bb2b1789b8f5b2f9345f18378a8b036a171`
+- ethereum `0x082a5956d63b44685a7cca89379d565c439fdf3c`
+- ethereum `0x19bc15849b392519a9a9131df32c00cc3497892d`
+- ethereum `0x2618e94a7f6118aced2e51e0a05da43d2e2ed40c`
+- ethereum `0x2bdfd3de0ff23373b621cdad0ad3df1580efe701`
+- ethereum `0x2c1b89e799bfe4774cb42996971aaac319d027e3`
+- ethereum `0x2ca788280fb10384946d3ecc838d94deca505cf4`
+- ethereum `0x310459750ce8f46b8615378e79dbd985ba77332b`
+- ethereum `0x40c5fb9bf63e30364646022b04ebc1c6ee13869a`
+- ethereum `0x489f04eeff0ba8441d42736549a1f1d6cca74775`
+- ethereum `0x6875ce8f1edd02665b72accf8a152c5a5134914f`
+- ethereum `0x76c6f14efdf3c755308a14db2ce22e309297ba45`
+- ethereum `0x777cee2a757bd958939d3fbfd8af17aa5a34051d`
+- ethereum `0x7859f9187837f99fc4a75f86b2afe61314f21ee4`
+- ethereum `0x7b64b0116fb2d7f80392173bb21c2dc1143d6bdd`
+- ethereum `0x86bb5d880d177a95995aebc74a5b1db2aa39c2ae`
+- ethereum `0xa2f987a546d4cd1c607ee8141276876c26b72bdf`
+- ethereum `0xa37cdce0207127204682d3235ead2c7a4c5d6c5c`
+- ethereum `0xa9b2f5ce3aae7374a62313473a74c98baa7fa70e`
+- ethereum `0xab55bf4dfbf469ebfe082b7872557d1f87692fe6`
+- ethereum `0xb2022ea377994f66a81c01eb3e9170245afeaa52`
+- ethereum `0xdb99fdb42fec8ba414ea60b3a189208bbdbfa321`
+- ethereum `0xe3c8a4de3b8a484ff890a38d6d7b5d278d697fb7`
+- ethereum `0xefc6516323fbd28e80b85a497b65a86243a54b3e`
+- ethereum `0xf8b237d60af4865192bd8b8d2bc1b2d607c1ffad`
+- ethereum `0xfb27310beda96af0005e9ab2f029a088740da180`
+- ethereum `0xfef762dfdc87f79879aaef221a6a5d302833fe27`
+- scroll `0x03569cc076654f82679c4ba2124d64774781b01d`

@@ -1,0 +1,18 @@
+{
+  "component": "ZWZBNBCAKELPearnZWZPool",
+  "main_contract": "ZWZBNBCAKELPearnZWZPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x18fc522e13c8dd2e86223ca60a5a5e131f0ea40c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

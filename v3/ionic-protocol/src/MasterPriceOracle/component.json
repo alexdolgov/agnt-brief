@@ -1,0 +1,28 @@
+{
+  "component": "MasterPriceOracle",
+  "main_contract": "MasterPriceOracle",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://1954749119-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4L4EczL4rCp3jyJhAxHG%2Fuploads%2Ffkk0363x576TeYPz9Dww%2FIonic_Protocol_-_Zellic_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4e7676b20b86beea9c197be756361680fae3c9ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x707a1b661569ebf98da3a115ba20a3d2ee40229f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

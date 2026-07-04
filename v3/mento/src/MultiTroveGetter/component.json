@@ -1,0 +1,18 @@
+{
+  "component": "MultiTroveGetter",
+  "main_contract": "MultiTroveGetter",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x78fd33d2bce0389cf41e15947b0eb0ce9df8327f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

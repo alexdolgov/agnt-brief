@@ -1,0 +1,18 @@
+{
+  "component": "StakeManager",
+  "main_contract": "StakeManager",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x417076ca70dae5a1ecf69bc8757c25b877284128",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

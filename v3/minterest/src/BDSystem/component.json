@@ -1,0 +1,18 @@
+{
+  "component": "BDSystem",
+  "main_contract": "BDSystem",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a1819ae5087efd1fb935676e486e4b4670a9f69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

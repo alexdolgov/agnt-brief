@@ -1,0 +1,21 @@
+{
+  "component": "WebauthnOwnerPlugin",
+  "main_contract": "WebauthnOwnerPlugin",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/exactly/audits/blob/main/Quantstamp%20Exa%20App%20WebAuthn%20Plugin%20(Jul-24).pdf",
+    "https://github.com/exactly/webauthn-owner-plugin/blob/main/audits/2024-06-10-quantstamp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbd9c70db872fdd9029ee5fa2a0ea30eabf7a1583",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

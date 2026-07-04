@@ -1,0 +1,18 @@
+{
+  "component": "WstEthUsdPriceAdapter",
+  "main_contract": "WstEthUsdPriceAdapter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9ed51928ec61c4e5dc0d48b38c828f89687467e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

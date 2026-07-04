@@ -1,0 +1,18 @@
+{
+  "component": "SnowbankFinalRedistribution",
+  "main_contract": "SnowbankFinalRedistribution",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xafe654c1b34e9f702bf8007bccd6481b90476887",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

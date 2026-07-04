@@ -1,0 +1,430 @@
+{
+  "schema_version": "2.0",
+  "project_key": "privacy-pools",
+  "generated_at": "2026-07-03T21:06:43.590Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
+    "audited_contracts": 3,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 60,
+    "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 7683672.6904,
+    "tvl_usd": 7683672.6904,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://privacypools.com/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-05",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 3,
+      "stale": 0,
+      "unknown": 1
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 3,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 3,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Privacy. Structurally: 5 project-authored contract(s) across 1 chain(s); built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 5,
+    "live_contracts": 5,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa45aca8604a73d80c551faad6355a5c3a5565ec6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CommitmentVerifier",
+      "role": "periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CommitmentVerifier",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa45aca8604a73d80c551faad6355a5c3a5565ec6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-03-29 19:20:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Entrypoint",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Entrypoint",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-7630",
+        "audit-7631",
+        "audit-7632"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-03-29 19:20:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1a604e9dfa0efdc7ffda378af16cb81243b61633",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PrivacyPoolComplex",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PrivacyPoolComplex",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1a604e9dfa0efdc7ffda378af16cb81243b61633",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-7630",
+        "audit-7631"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-07-31 18:26:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PrivacyPoolSimple",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PrivacyPoolSimple",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-7630",
+        "audit-7631"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-03-29 19:20:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WithdrawalVerifier",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WithdrawalVerifier",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-03-29 19:19:59+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 7629,
+      "audit_key": "audit-7629",
+      "report_name": "circuits_audit_oxorio.md",
+      "report_url": "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/circuits_audit_oxorio.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7630,
+      "audit_key": "audit-7630",
+      "report_name": "contracts_audit_auditware.md",
+      "report_url": "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_auditware.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Constants",
+        "Entrypoint",
+        "PrivacyPool",
+        "PrivacyPoolComplex",
+        "PrivacyPoolSimple",
+        "ProofLib",
+        "State"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7631,
+      "audit_key": "audit-7631",
+      "report_name": "contracts_audit_oxorio.md",
+      "report_url": "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_oxorio.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Constants",
+        "Entrypoint",
+        "PrivacyPool",
+        "PrivacyPoolComplex",
+        "PrivacyPoolSimple",
+        "ProofLib",
+        "State"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7632,
+      "audit_key": "audit-7632",
+      "report_name": "entrypoint_upgrade_audit_oxorio.md",
+      "report_url": "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/entrypoint_upgrade_audit_oxorio.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Entrypoint",
+        "IEntrypoint"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 60,
+      "latest_audit": "2025-05"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 5
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 7
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 7629,
+        "report_name": "circuits_audit_oxorio.md"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

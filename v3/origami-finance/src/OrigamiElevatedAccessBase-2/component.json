@@ -1,0 +1,22 @@
+{
+  "component": "OrigamiElevatedAccessBase-2",
+  "main_contract": "OrigamiElevatedAccessBase",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/boyco/Panprog_Audit_Report-Origami_Boyco.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Nethermind_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/origami-v2/Origami%20Finance%20-%20Zellic%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b184454e6c02370927789a3564f9d16368d55e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

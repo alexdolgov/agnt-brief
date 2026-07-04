@@ -1,0 +1,18 @@
+{
+  "component": "OSMedianizer",
+  "main_contract": "OSMedianizer",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf63089a8ad2a9d8bd6bb8022f3190eb7e1ed0f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

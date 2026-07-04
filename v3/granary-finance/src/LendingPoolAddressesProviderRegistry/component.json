@@ -1,0 +1,18 @@
+{
+  "component": "LendingPoolAddressesProviderRegistry",
+  "main_contract": "LendingPoolAddressesProviderRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x33c62bc416309f010c4941163abea3725e4645bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

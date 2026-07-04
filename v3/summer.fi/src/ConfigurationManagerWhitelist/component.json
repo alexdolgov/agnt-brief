@@ -1,0 +1,26 @@
+{
+  "component": "ConfigurationManagerWhitelist",
+  "main_contract": "ConfigurationManagerWhitelist",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5632b3df8a030001d0a89c2d9b420c2210eeddc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe0d25012d8bcb75d3b50f95e290b8eba558912b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UrdGovernance",
+  "main_contract": "UrdGovernance",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x75079f8dd15b0dbf59ef132fb6e7dacdb7a256a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

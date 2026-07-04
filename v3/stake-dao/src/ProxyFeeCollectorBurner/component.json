@@ -1,0 +1,18 @@
+{
+  "component": "ProxyFeeCollectorBurner",
+  "main_contract": "ProxyFeeCollectorBurner",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1d56495c76d99435d10ecd5b0c3bd6a8ee7cc3bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

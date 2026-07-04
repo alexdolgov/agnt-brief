@@ -1,0 +1,18 @@
+{
+  "component": "MultiSwapper",
+  "main_contract": "MultiSwapper",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9bcc337fe99a7908133672ed00c516d5c3847197",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

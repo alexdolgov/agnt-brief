@@ -1,0 +1,18 @@
+{
+  "component": "JavPairsStorage",
+  "main_contract": "JavPairsStorage",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x50502cbf86610207e0f91fb03b5f39950c77ff3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

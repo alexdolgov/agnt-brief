@@ -1,0 +1,26 @@
+{
+  "component": "PandoPool",
+  "main_contract": "PandoPool",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x59e8964c9e02f1b8beb638e3b12f5801784cde90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfc4ebcebc6489f855c3d9a55678e04b977621110",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

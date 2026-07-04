@@ -1,0 +1,18 @@
+{
+  "component": "CLSynchronicityPriceAdapterPegToBase",
+  "main_contract": "CLSynchronicityPriceAdapterPegToBase",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x230e0321cf38f09e247e50afc7801ea2351fe56f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

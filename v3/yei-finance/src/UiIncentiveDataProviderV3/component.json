@@ -1,0 +1,42 @@
+{
+  "component": "UiIncentiveDataProviderV3",
+  "main_contract": "UiIncentiveDataProviderV3",
+  "source_file_count": 22,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x19162c4c011a0cb0a58e3e1143e9616cad719cee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xbef6c63256a780d12c947dfc216789a7bef3fb2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xbfb3d529914f5ed7bfd25ab26a65c9d56c0d56c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xd25ce1d2f20868c610726a9d7c675ea9a8359c55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

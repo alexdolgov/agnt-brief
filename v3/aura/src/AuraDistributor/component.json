@@ -1,0 +1,18 @@
+{
+  "component": "AuraDistributor",
+  "main_contract": "AuraDistributor",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96d15d08538a17a03b0210fd1626d5f42bdba9a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

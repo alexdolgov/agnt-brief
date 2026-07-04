@@ -1,0 +1,18 @@
+{
+  "component": "LZBridgeAndDelegateConfig",
+  "main_contract": "LZBridgeAndDelegateConfig",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x946b739a26a8e7f035b27b075eb0ce8a54bf2f12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

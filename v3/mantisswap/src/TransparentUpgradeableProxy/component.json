@@ -1,0 +1,90 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 17,
+  "deployment_count": 10,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x12d41b6df938c739f00c392575e3fd9292d98215",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x153e43f5545a094c19c4dd290555ba04279c9cb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4af97f73343b226c5a5872dcd2d1c4944bdb3e77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4b3bfcaa4f8bd4a276b81c110640da634723e64b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x7bcad0e76c7623f352c311bba25d24fb16d73ccb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x8997e7669da8451e356472cf3ef33dfbc9d7b448",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x967f594f73930a02817daf3112ccc7f2c611def8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xa56b52d7a8f3cbb3b4261501c60a7ea95acaafb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xda4f88fd4b55d03433fa243d1f98f5618a82ba41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xe8a1ead2f4c454e319b76fa3325b754c47ce1820",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

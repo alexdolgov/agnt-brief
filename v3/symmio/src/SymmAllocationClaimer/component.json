@@ -1,0 +1,26 @@
+{
+  "component": "SymmAllocationClaimer",
+  "main_contract": "SymmAllocationClaimer",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x232b72527e3692e78d7f6d73634fc4e100e31f80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8377c23d24a4ff85081b9a6829a9c1290bb79634",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

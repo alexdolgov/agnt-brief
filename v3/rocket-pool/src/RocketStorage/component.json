@@ -1,0 +1,18 @@
+{
+  "component": "RocketStorage",
+  "main_contract": "RocketStorage",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

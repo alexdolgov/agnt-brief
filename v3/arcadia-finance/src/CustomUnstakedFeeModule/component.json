@@ -1,0 +1,42 @@
+{
+  "component": "CustomUnstakedFeeModule",
+  "main_contract": "CustomUnstakedFeeModule",
+  "source_file_count": 14,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x57bffd8deafa66437b8c6e8a49b24bf36db1b058",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc2cc3256434afbc36bb5e815e1bb2151310a1a0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xccc21f4750e8b3e9c095bcb5d2ff59247a2ccd35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

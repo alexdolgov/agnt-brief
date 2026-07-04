@@ -1,0 +1,22 @@
+{
+  "component": "Protocol-2",
+  "main_contract": "Protocol",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CoverProtocol/cover-core-v1/blob/main/peckshield-audit-report-cover-v1.0.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/peckshield-audit-report-cover-v1.0.pdf",
+    "https://raw.githubusercontent.com/CoverProtocol/cover-core-v1/b34b3495bb13fa21157bfbc04f475027533315c8/peckshield-audit-report-cover-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb6886b2c3537673941e4ead63b95eacb47173f6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

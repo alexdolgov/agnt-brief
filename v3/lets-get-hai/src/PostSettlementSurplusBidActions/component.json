@@ -1,0 +1,18 @@
+{
+  "component": "PostSettlementSurplusBidActions",
+  "main_contract": "PostSettlementSurplusBidActions",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x48c3416097529944946d08486f10185f18463640",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

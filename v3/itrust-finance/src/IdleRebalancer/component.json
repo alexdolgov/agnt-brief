@@ -1,0 +1,26 @@
+{
+  "component": "IdleRebalancer",
+  "main_contract": "IdleRebalancer",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x781616fb046a4e39c239e39bfeff1a07d4b753f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff9b258a58fe94294bba1c55d927cb77cb938a15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

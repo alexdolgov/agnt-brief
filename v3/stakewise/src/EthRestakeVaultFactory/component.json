@@ -1,0 +1,18 @@
+{
+  "component": "EthRestakeVaultFactory",
+  "main_contract": "EthRestakeVaultFactory",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x026df36ec050e7f473cbfc30aa42946d3ed11b2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

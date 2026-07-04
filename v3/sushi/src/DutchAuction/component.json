@@ -1,0 +1,18 @@
+{
+  "component": "DutchAuction",
+  "main_contract": "DutchAuction",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x10c19390e1ac2fd6d0c3643a2320b0aba38e5baa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

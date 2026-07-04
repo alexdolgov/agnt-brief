@@ -1,0 +1,18 @@
+{
+  "component": "MockToken",
+  "main_contract": "MockToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x65a1dfb54cdec9011688b1818a27a8c687e6b1ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

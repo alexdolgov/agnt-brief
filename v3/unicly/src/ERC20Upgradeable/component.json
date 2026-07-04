@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Upgradeable",
+  "main_contract": "ERC20Upgradeable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd91ee91fd0f3fb15c9b9dd47f156396aa8c7c84b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

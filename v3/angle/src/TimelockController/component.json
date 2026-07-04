@@ -1,0 +1,18 @@
+{
+  "component": "TimelockController",
+  "main_contract": "TimelockController",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xf929345e5a5ac2f86c7a5802c1ce4aa46f524b28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

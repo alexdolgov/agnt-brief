@@ -1,0 +1,18 @@
+{
+  "component": "IdleMStableStrategy",
+  "main_contract": "IdleMStableStrategy",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b8c3ee1bafb4af5826d41137cd5caf878083619",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

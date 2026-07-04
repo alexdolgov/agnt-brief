@@ -1,0 +1,26 @@
+{
+  "component": "AeraVaultModulesFactory",
+  "main_contract": "AeraVaultModulesFactory",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fb6052cc079a4eec277f73e51e0de3411792ff4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x54438cae8cf263f42e6b868b2acb1bc38fbf04aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

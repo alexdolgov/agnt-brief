@@ -1,0 +1,18 @@
+{
+  "component": "PoolRegistry",
+  "main_contract": "PoolRegistry",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x38262c17a06a6b3588d3e5b70dfa768c06bf4ef1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

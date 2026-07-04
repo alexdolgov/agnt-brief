@@ -1,0 +1,21 @@
+{
+  "component": "IdleCDO-4",
+  "main_contract": "IdleCDO",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2021/06/idle-finance",
+    "https://skynet.certik.com/projects/idle-finance"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2361130282a24421d9fdf2d1072c8ede2a79f108",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GaugeMultiRewards",
+  "main_contract": "GaugeMultiRewards",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c310fc54c0534dc3c45312934508722284352d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

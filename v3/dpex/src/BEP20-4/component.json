@@ -1,0 +1,18 @@
+{
+  "component": "BEP20-4",
+  "main_contract": "BEP20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf5fffc0c5a07160d9d3f1378729a557df9538d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

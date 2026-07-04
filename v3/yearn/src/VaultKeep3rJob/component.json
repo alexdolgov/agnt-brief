@@ -1,0 +1,18 @@
+{
+  "component": "VaultKeep3rJob",
+  "main_contract": "VaultKeep3rJob",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a479e4457841d2d2ff86e5a5389300963880c10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

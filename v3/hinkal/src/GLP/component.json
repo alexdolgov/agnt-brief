@@ -1,0 +1,18 @@
+{
+  "component": "GLP",
+  "main_contract": "GLP",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4277f8f2c384827b5273592ff7cebd9f2c1ac258",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GloryERC20",
+  "main_contract": "GloryERC20",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x83553e4fa239c2f0b6622eb9f893bd872e35c750",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

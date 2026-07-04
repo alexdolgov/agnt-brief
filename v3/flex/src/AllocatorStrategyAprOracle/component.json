@@ -1,0 +1,18 @@
+{
+  "component": "AllocatorStrategyAprOracle",
+  "main_contract": "AllocatorStrategyAprOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84d1aec938d4b9f492c50a1b5218e77195899471",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

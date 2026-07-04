@@ -1,0 +1,18 @@
+{
+  "component": "LedgerFactory",
+  "main_contract": "LedgerFactory",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xa732097e1c284fc4e64f077dd5360da81e1f2c68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

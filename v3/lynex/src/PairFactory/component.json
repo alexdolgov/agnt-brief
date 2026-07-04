@@ -1,0 +1,26 @@
+{
+  "component": "PairFactory",
+  "main_contract": "PairFactory",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6ed7b91c8133e85921f8028b51a8248488b3336c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xbc7695fd00e3b32d08124b7a4287493aee99f9ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

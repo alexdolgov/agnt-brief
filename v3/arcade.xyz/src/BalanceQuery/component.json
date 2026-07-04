@@ -1,0 +1,18 @@
+{
+  "component": "BalanceQuery",
+  "main_contract": "BalanceQuery",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7730a89b50779e28b9f06f805874bf28ae419c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

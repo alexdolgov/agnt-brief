@@ -1,0 +1,18 @@
+{
+  "component": "AETH_R4",
+  "main_contract": "AETH_R4",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x23f7d037f5d02d0ba37571e717191776c4c1181f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

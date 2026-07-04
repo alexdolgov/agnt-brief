@@ -1,0 +1,18 @@
+{
+  "component": "VeArtProxy",
+  "main_contract": "VeArtProxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x60e53b5d4813f240242d804c6dfcc080ad012ec6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

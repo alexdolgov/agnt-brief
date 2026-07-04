@@ -1,0 +1,18 @@
+{
+  "component": "PerpetualTokensAndRamping",
+  "main_contract": "PerpetualTokensAndRamping",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bc9c618b7fa6b5efaad31dc801eb55c608b9310",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

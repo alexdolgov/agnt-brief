@@ -1,0 +1,18 @@
+{
+  "component": "USDVault",
+  "main_contract": "USDVault",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe8a01d8dac4af19ec7a22cf87f3d141ce6e7e9fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

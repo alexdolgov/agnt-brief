@@ -1,0 +1,18 @@
+{
+  "component": "ManagementFee",
+  "main_contract": "ManagementFee",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x97f13b3040a565be791d331b0edd4b1b58dbd843",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

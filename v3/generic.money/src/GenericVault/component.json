@@ -1,0 +1,52 @@
+{
+  "component": "GenericVault",
+  "main_contract": "GenericVault",
+  "source_file_count": 39,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.generic.money/audits/2026-01-19-report-cantinacode-generic-money.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4825eff24f9b7b76eeafa2ecc6a1d5dfcb3c1c3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6133da4cd25773ebd38542a8acef8f94ca89892a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x844584fea58372dc3d4ed74083d15ed10cd71b1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8280955ae7b5207af4cdbdcd775135bd38157fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfce133e9a32b730dea66ef19637b9a5d106b73cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

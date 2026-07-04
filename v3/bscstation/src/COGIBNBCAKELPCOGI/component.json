@@ -1,0 +1,18 @@
+{
+  "component": "COGIBNBCAKELPCOGI",
+  "main_contract": "COGIBNBCAKELPCOGI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf06747435ce1761ec389030fd63c35f956951ebb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

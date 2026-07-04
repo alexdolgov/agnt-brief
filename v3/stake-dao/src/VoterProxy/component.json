@@ -1,0 +1,18 @@
+{
+  "component": "VoterProxy",
+  "main_contract": "VoterProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x07202292009dec5ea9b99c7005dc8e3ce05bfb73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

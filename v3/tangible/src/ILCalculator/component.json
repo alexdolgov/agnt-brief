@@ -1,0 +1,18 @@
+{
+  "component": "ILCalculator",
+  "main_contract": "ILCalculator",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8e47b049a9e9b7e0e49fc348ee973c04910aa131",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TreehouseRouter",
+  "main_contract": "TreehouseRouter",
+  "source_file_count": 52,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ae023d31d3590b7fd0919251a8c68dfc0c4d398",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AddressRegistry",
+  "main_contract": "AddressRegistry",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4658f736b93dcddcbce46cde955970e697fd351f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

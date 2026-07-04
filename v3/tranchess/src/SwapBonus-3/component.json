@@ -1,0 +1,18 @@
+{
+  "component": "SwapBonus-3",
+  "main_contract": "SwapBonus",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x32b67cb26f8fb268c6c4f289e809173f4f6d33ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

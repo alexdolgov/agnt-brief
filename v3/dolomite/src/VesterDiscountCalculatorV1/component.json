@@ -1,0 +1,18 @@
+{
+  "component": "VesterDiscountCalculatorV1",
+  "main_contract": "VesterDiscountCalculatorV1",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8b43f6e9de2dc56afee03393a7d80e66ecd6a4da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

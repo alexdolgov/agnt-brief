@@ -1,0 +1,22 @@
+{
+  "component": "CollateralManager",
+  "main_contract": "CollateralManager",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/rociFi/docs/blob/main/Certik-PRE-RociFi-2022-02-10.pdf",
+    "https://github.com/rociFi/docs/blob/main/Chainsulting-02_Smart_Contract_Audit_RociFi_Protocol-Jan-2022.pdf",
+    "https://github.com/rociFi/docs/blob/main/RociFi_Hexens_Dec_2022_SMA_public.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x98ccf35738527389d935c8eaaf4604bdacd544c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

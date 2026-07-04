@@ -1,0 +1,18 @@
+{
+  "component": "WBNBSlisBNBConverter",
+  "main_contract": "WBNBSlisBNBConverter",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf30c24cd63860cd73cf2dae7f9cfe9549b0f8134",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

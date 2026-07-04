@@ -1,0 +1,18 @@
+{
+  "component": "DSLOProtocol",
+  "main_contract": "DSLOProtocol",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

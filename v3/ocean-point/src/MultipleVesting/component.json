@@ -1,0 +1,18 @@
+{
+  "component": "MultipleVesting",
+  "main_contract": "MultipleVesting",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf62e5cb35ee81b3c259fb002d61d7c7733ed3476",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

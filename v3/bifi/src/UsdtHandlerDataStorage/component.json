@@ -1,0 +1,18 @@
+{
+  "component": "UsdtHandlerDataStorage",
+  "main_contract": "UsdtHandlerDataStorage",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfdc7d058bede981ea865fb64d06382a2206a1c42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

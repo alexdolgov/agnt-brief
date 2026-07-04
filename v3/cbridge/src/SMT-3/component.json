@@ -1,0 +1,18 @@
+{
+  "component": "SMT-3",
+  "main_contract": "SMT",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x3b152ec4f1534947fafb9edce9c7cb4bf8df2e82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

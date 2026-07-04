@@ -1,0 +1,18 @@
+{
+  "component": "lendingQiErc20",
+  "main_contract": "lendingQiErc20",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd78b188541c95e883b1fae17e1c4221895269b19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SectorBeacon-3",
+  "main_contract": "SectorBeacon",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

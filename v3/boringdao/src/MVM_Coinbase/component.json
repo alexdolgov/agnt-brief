@@ -1,0 +1,18 @@
+{
+  "component": "MVM_Coinbase",
+  "main_contract": "MVM_Coinbase",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

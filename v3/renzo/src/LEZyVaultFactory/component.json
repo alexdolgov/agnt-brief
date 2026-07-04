@@ -1,0 +1,20 @@
+{
+  "component": "LEZyVaultFactory",
+  "main_contract": "LEZyVaultFactory",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Renzo-Protocol/contracts-public/blob/master/Audit/EVM%20Managed%20Vaults.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x10586b9b7ff0f842913a57539f8167ce143c3011",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626Upgradeable",
+  "main_contract": "ERC4626Upgradeable",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe5d383fc43f6c370ddd3975cf9e363ad42367697",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

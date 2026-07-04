@@ -1,0 +1,20 @@
+{
+  "component": "Bridge",
+  "main_contract": "Bridge",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/threshold-network/security-audits/blob/main/29-Sep-2022-LeastAuthority.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13de6b121ade8e3c0dc016d63cbd5e2ab22402cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

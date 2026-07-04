@@ -1,0 +1,62 @@
+# zyberswap — deployments
+
+56 verified deployment(s) across 22 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x042d2af538fa33bf8638f19da3564368069c0ecb` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x0ab393a30d608c91079be6504e99bcc8b05fe9e6` | V3Fees | impl | inactive | no |
+| arbitrum | `0x0ab438c213cede42248b6bb4a6705036387069e0` | LPToken | impl | inactive | no |
+| arbitrum | `0x0c3c31363ba33e7dcbf1e49fa52d8a49c7f3dbd8` | SwapFlashLoan | impl | inactive | no |
+| arbitrum | `0x0d1be6c5aa3dd9ed77ce5ef50e886c589a248f37` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x137b36d9b755fbbd54b43a3e39e48ea228bdecf7` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x14fad54881f56502bcedb76255ec723c8c717401` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x16e71b13fe6079b4312063f7e81f76d165ad32ad` | ZyberRouter | impl | live | yes |
+| arbitrum | `0x199b84b58ab0747692e70524c06b8e0f75cae5ca` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x1c2bdc8a8ccf822371bf0ef46d46286415133e2e` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x1f36e1c6258f5e78cd8c27863ec48e7b105f789a` | TokenLock | impl | inactive | no |
+| arbitrum | `0x211d0dd674821b7140456141ddce16b3a8d37f77` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x225894e46026b4d417c225501c452c1fb1877da0` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x2d683e037d85107ffbf7a113a8c8a9441293e827` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x2dfcf3ce23d95e842a92b141d88211af56e85a3f` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x32cecc0b303ba480cf77370ceed9c37d5a3bf83c` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x3b475f6f2f41853706afc9fa6a6b8c5df1a2724c` | ZyberToken | impl | live | yes |
+| arbitrum | `0x3b71729510cbea2f23a1b9fd6b9db002271e119f` | sZyberToken | impl | live | no |
+| arbitrum | `0x3de05f69021d1602f107ff314ca5036be2d19863` | TimelockController | impl | inactive | no |
+| arbitrum | `0x518703c8de61e44571280559fbd307b12407b10a` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x53a6a8fc397dae37b9f022da94f2484fc66f5b7c` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x54c9ebc35d44d05da96b7c6a0d10cd8f33eedb7b` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x5644372af39e1a0b0c8b503b1c1260008663db27` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x572c64ba73465301577b282448fe84aaba2210a4` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x59125ed6a404fc652fa869bda7bed2b644f4f4dd` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x6399b5823c4b2a2eb3d4da712ee918bedbc720d2` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x6b50d4bf1a2606b654457b530fd3f8b519eb8ba9` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x6b632a0dae877fed9d3b5953ce1062e7e6c17878` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x6be0d48d386a73f8e43efaeccc032d9322008f9c` | LPToken-2 | impl | inactive | no |
+| arbitrum | `0x6ff532795d37b27618d4ff10899ce8c23292f086` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x73194d386cf570ec980b873c7f3ec8fcd11ad7d2` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0x74392e6e4b72f9cc27a20f4ac852c3b3c5b74cb5` | ZyberVault | impl | inactive | no |
+| arbitrum | `0x74aa8b2ca7136921438fca17ea04801f690b488f` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x7b6d447869a5180d6cfe11b283c9f445c2826876` | ZyberVault | impl | inactive | no |
+| arbitrum | `0x7be28faee5fa43f26fdb09bf7c6e663c52e3c218` | LPToken-3 | impl | inactive | no |
+| arbitrum | `0x9ba666165867e916ee7ed3a3ae6c19415c2fbddd` | ZyberChef | impl | live | yes |
+| arbitrum | `0x9c9f049e4dae07d70571fe03677892fe002bd710` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0x9cb8ed8102b6c65d8cae931394352d7a676ce12a` | ZyberVault-2 | impl | live | no |
+| arbitrum | `0xa8ef6b82f0a27052123effbbaa1de4d273c241a1` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0xa92ed5b47d94d7d662dfb25e9d12d5a83830c936` | TransactionBatcher | impl | inactive | no |
+| arbitrum | `0xac2ee06a14c52570ef3b9812ed240bce359772e7` | ZyberFactory | impl | inactive | no |
+| arbitrum | `0xb10f2245c10783f52e7238c432793881231f1e0d` | ZyberVault | impl | inactive | no |
+| arbitrum | `0xb618c1ceda5574b91b043fb2837359e2529f5f2d` | VaultUtils | impl | inactive | no |
+| arbitrum | `0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d` | ZyberEarn | impl | live | no |
+| arbitrum | `0xc25e230afb1b67162350cd405add199a002c6abd` | SwapDeployer | impl | inactive | no |
+| arbitrum | `0xc352940f6cadd1b38d60c353e44402258fb3e586` | ProfitShare | impl | live | no |
+| arbitrum | `0xc42eb3229bc17cbeb190a73e2e63dd77a24609f9` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0xd55d56c16b99e7a97a4f4b9910cec14a2ebbe24d` | ZyberVault | impl | inactive | no |
+| arbitrum | `0xdfaa4dfd5a484a033bdadc14068f858969f2fd18` | ZyberVault | impl | inactive | no |
+| arbitrum | `0xeb9c8017155fcfe58d96ce4ea7f06b603e36bb56` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0xecc3b3c7ba7b4ec62493e0162392194a4a10c199` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0xed9dab29d92417267c08d8ab5ff7caa25504cb10` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0xeff77e179f6abb49a5bf0ec25c920b495e110c3b` | ZyberEarn | impl | live | no |
+| arbitrum | `0xf690a5277a32d07c0f4d0362cb9ccd71a0f84e05` | MultipleRewards | impl | inactive | no |
+| arbitrum | `0xfbb21cced2bdec81e9fb96b39bc1f8daa6c4f63b` | ZyberCappedSale | impl | inactive | no |
+| arbitrum | `0xfe6d3b431c852fff066a748237e9ae963c8b89cd` | V3Fees-2 | impl | live | no |

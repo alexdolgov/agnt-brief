@@ -1,0 +1,18 @@
+{
+  "component": "PancakeFixedStaking",
+  "main_contract": "PancakeFixedStaking",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaf7cdbcc71887aa38dfdfa539d6d3a12b0f6de57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

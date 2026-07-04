@@ -1,0 +1,18 @@
+{
+  "component": "RewardEthToken",
+  "main_contract": "RewardEthToken",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01d34aee72325f1d4a748f13c2169404523ecee0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

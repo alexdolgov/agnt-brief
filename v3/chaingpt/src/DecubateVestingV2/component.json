@@ -1,0 +1,18 @@
+{
+  "component": "DecubateVestingV2",
+  "main_contract": "DecubateVestingV2",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a53269cae3281155e51d06ffe14fde8dc3662f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

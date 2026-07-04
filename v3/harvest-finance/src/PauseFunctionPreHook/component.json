@@ -1,0 +1,18 @@
+{
+  "component": "PauseFunctionPreHook",
+  "main_contract": "PauseFunctionPreHook",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7846bed0b55048db0e6a5388b89e92f091984d59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

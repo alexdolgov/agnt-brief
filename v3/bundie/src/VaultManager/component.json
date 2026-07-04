@@ -1,0 +1,20 @@
+{
+  "component": "VaultManager",
+  "main_contract": "VaultManager",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.04.09%20-%20Final%20-%20Bundie%20Collaborative%20Audit%20Report%201775738963.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x101ac7546e60401e52450e4af291a7396d137996",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

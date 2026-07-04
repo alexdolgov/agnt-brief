@@ -1,0 +1,18 @@
+{
+  "component": "DODOMineV3Proxy",
+  "main_contract": "DODOMineV3Proxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d9685d4037580f68d9f77b08971f17e1000bbdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

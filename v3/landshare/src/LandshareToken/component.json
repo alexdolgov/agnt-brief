@@ -1,0 +1,18 @@
+{
+  "component": "LandshareToken",
+  "main_contract": "LandshareToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa73164db271931cf952cbaeff9e8f5817b42fa5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

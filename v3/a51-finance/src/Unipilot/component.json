@@ -1,0 +1,21 @@
+{
+  "component": "Unipilot",
+  "main_contract": "Unipilot",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Unipilot/unipilot-audits/blob/master/protocolContract/BlockApex%20First%20Audit.pdf",
+    "https://github.com/Unipilot/unipilot-audits/blob/master/protocolContract/BlockApex%20Second%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde5bf92e3372aa59c73ca7dfc6cec599e1b2b08c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

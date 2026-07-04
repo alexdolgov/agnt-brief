@@ -1,0 +1,18 @@
+{
+  "component": "PoolFactory-2",
+  "main_contract": "PoolFactory",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc05f412bf08f4eef69324fdc4ae8e50862cc3f08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

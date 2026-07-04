@@ -1,0 +1,18 @@
+{
+  "component": "Flapper",
+  "main_contract": "Flapper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b4adb8d896520eb3fd4789b73463614dcf71b03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PickleToken",
+  "main_contract": "PickleToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

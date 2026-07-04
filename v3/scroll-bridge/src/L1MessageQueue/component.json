@@ -1,0 +1,18 @@
+{
+  "component": "L1MessageQueue",
+  "main_contract": "L1MessageQueue",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc9d741501a20f962756c95bf906b4abffadcf8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

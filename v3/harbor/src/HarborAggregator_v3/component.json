@@ -1,0 +1,18 @@
+{
+  "component": "HarborAggregator_v3",
+  "main_contract": "HarborAggregator_v3",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34dfdf00262e1a3b61c7a0616f0645a928dd8187",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

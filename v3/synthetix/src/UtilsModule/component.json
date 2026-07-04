@@ -1,0 +1,26 @@
+{
+  "component": "UtilsModule",
+  "main_contract": "UtilsModule",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6dd6e520bf54cfe8d54373b66637bc162f2ec76b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfcad0ff92f4854a467c28bd98fbb40f8352f127a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

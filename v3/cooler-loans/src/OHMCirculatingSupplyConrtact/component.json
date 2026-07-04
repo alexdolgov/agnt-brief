@@ -1,0 +1,18 @@
+{
+  "component": "OHMCirculatingSupplyConrtact",
+  "main_contract": "OHMCirculatingSupplyConrtact",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0efff9199aa1ac3c3e34e957567c1be8bf295034",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

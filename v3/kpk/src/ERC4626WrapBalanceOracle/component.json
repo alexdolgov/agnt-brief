@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626WrapBalanceOracle",
+  "main_contract": "ERC4626WrapBalanceOracle",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x89b0157921b4efb88dcf96f570d8c07d675dc4f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TestReferralManager",
+  "main_contract": "TestReferralManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x192a9edfca3b565ae78ff506345342b78af68769",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

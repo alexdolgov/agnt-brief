@@ -1,0 +1,18 @@
+{
+  "component": "unshETHZapv2",
+  "main_contract": "unshETHZapv2",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7461092aa5234b42a17ee8cc51cfde6ef4becbc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

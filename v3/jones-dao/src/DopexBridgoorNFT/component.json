@@ -1,0 +1,18 @@
+{
+  "component": "DopexBridgoorNFT",
+  "main_contract": "DopexBridgoorNFT",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4ee9fe9500e7c4fe849add9b14beec5ec5b7d955",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

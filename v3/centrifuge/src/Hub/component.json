@@ -1,0 +1,18 @@
+{
+  "component": "Hub",
+  "main_contract": "Hub",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa4a7bb3831958463b3fe3e27a6a160f764341953",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

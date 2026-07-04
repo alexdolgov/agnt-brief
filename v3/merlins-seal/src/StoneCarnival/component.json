@@ -1,0 +1,18 @@
+{
+  "component": "StoneCarnival",
+  "main_contract": "StoneCarnival",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d831e22f062b5327dfdb15f0b6a5df20e2e3dd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

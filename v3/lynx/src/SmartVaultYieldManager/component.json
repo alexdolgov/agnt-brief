@@ -1,0 +1,18 @@
+{
+  "component": "SmartVaultYieldManager",
+  "main_contract": "SmartVaultYieldManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x172df12af47864389eaf4bc1ea93877be1dd7ae9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

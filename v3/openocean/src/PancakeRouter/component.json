@@ -1,0 +1,18 @@
+{
+  "component": "PancakeRouter",
+  "main_contract": "PancakeRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1dd8fa2d9965a0b99f15c1dfc1a54a0296c33fe4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

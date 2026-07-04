@@ -1,0 +1,18 @@
+{
+  "component": "OpsGuardian",
+  "main_contract": "OpsGuardian",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x055589229506ee89645ef08ebe9b9a863486d0de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

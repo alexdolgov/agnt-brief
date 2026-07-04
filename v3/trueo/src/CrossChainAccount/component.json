@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainAccount",
+  "main_contract": "CrossChainAccount",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x31fafd4889fa1269f7a13a66ee0fb458f27d72a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OrbsGuardians",
+  "main_contract": "OrbsGuardians",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd64b1bf6fcab5add75041c89f61816c2b3d5e711",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

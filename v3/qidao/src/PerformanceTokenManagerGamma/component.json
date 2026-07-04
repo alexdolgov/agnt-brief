@@ -1,0 +1,42 @@
+{
+  "component": "PerformanceTokenManagerGamma",
+  "main_contract": "PerformanceTokenManagerGamma",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01374bb06af5ec3cba66a86cf4600019c86a405d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0b3c971ee65b58b6f0771bee92c32a8bafcb6e83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x16cec694bacdc4c844bf9f448fd487e0ca095ec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa99c308d820d4886daec7716370c31b38554e9bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

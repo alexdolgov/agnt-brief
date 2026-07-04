@@ -1,0 +1,18 @@
+{
+  "component": "IdleTokenFungible",
+  "main_contract": "IdleTokenFungible",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d41f858d803af86e5192a77a798ad7d97e906ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

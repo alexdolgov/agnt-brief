@@ -1,0 +1,18 @@
+{
+  "component": "RocketBase-29",
+  "main_contract": "RocketBase",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7322c24752f79c05ffd1e2a6fcb97020c1c264f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AegisVaultFactory",
+  "main_contract": "AegisVaultFactory",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xbeff7973ff3dfca2aa86e1da41abc8321334f6dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

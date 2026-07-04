@@ -1,0 +1,18 @@
+{
+  "component": "ProxyFactory",
+  "main_contract": "ProxyFactory",
+  "source_file_count": 135,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe56a0a38c6085c748638948e2c224f98c1e2b29c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

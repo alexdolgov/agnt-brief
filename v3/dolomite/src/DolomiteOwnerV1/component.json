@@ -1,0 +1,18 @@
+{
+  "component": "DolomiteOwnerV1",
+  "main_contract": "DolomiteOwnerV1",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf359a2fa50548c6793a5ed7f26471c1b17bb11d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

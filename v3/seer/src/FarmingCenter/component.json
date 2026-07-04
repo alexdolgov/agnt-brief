@@ -1,0 +1,18 @@
+{
+  "component": "FarmingCenter",
+  "main_contract": "FarmingCenter",
+  "source_file_count": 54,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xde51ddf1ae7d5bbd7bf1a0e40aaa1f6c12579106",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

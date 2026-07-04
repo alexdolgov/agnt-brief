@@ -1,0 +1,18 @@
+{
+  "component": "LiberoMasterChef",
+  "main_contract": "LiberoMasterChef",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x70622c99df26bf1f315804fef300b4404f69806f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

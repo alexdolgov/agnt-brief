@@ -1,0 +1,18 @@
+{
+  "component": "KyberSwapRewardUsdcDaiLibrary",
+  "main_contract": "KyberSwapRewardUsdcDaiLibrary",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc4b4a2308b14704cb39c019c92e4cbf6b53315a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

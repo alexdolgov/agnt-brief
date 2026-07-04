@@ -1,0 +1,26 @@
+{
+  "component": "MaiaERC20Token",
+  "main_contract": "MaiaERC20Token",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x31ba70a4a17b311f4d2beed181c89f1f909da00b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x72c232d56542ba082592dee7c77b1c6cfa758bcd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

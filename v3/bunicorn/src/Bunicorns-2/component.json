@@ -1,0 +1,18 @@
+{
+  "component": "Bunicorns-2",
+  "main_contract": "Bunicorns",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeb1dad5faa694c693966d8f228f9f02efe89df38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

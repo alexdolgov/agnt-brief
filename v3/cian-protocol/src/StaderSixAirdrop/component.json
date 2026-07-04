@@ -1,0 +1,18 @@
+{
+  "component": "StaderSixAirdrop",
+  "main_contract": "StaderSixAirdrop",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb2ae6b63eda00c79d0105c4a9f040a060f1e1ebe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

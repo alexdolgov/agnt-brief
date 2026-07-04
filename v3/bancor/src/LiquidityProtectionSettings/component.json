@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityProtectionSettings",
+  "main_contract": "LiquidityProtectionSettings",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd444ec18952c7caf09636f21807683dacc1d7da9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "component": "MplUserActions",
+  "main_contract": "MplUserActions",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/maple-labs/maple-core-v2/blob/main/audits/2024-august/0xMacro-Maple-Finance-Aug-2024.pdf",
+    "https://github.com/maple-labs/maple-core-v2/blob/main/audits/2024-august/Three-Sigma-Maple-Finance-Aug-2024.pdf",
+    "https://github.com/maple-labs/syrup-router/blob/main/audits/0xMacro-Maple-Finance-Aug-2024.pdf",
+    "https://github.com/maple-labs/syrup-utils/blob/main/audits/0xMacro-Maple-Finance-Aug-2024.pdf",
+    "https://github.com/maple-labs/syrup-utils/blob/main/audits/ThreeSigma-Maple-Finance-Aug-2024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59371c31a30028be76d17d70141c4e25d5b6c183",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

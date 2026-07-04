@@ -1,0 +1,18 @@
+{
+  "component": "BondReserve",
+  "main_contract": "BondReserve",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7c6cbc49fea52d56aa93456e1ea81172a30c285",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

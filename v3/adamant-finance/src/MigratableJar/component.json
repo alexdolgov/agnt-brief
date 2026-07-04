@@ -1,0 +1,18 @@
+{
+  "component": "MigratableJar",
+  "main_contract": "MigratableJar",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1e4db0ea4e7ae72722d28583998faf055c404239",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

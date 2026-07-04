@@ -1,0 +1,18 @@
+{
+  "component": "stableQiVault",
+  "main_contract": "stableQiVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7f9dd991e8fd0cbb52cb8eb35dd35c474a9a7a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

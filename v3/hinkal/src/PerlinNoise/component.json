@@ -1,0 +1,18 @@
+{
+  "component": "PerlinNoise",
+  "main_contract": "PerlinNoise",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x08947e304064b3f3ef2b99fca7e549c5fc3f75d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

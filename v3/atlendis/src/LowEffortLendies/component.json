@@ -1,0 +1,18 @@
+{
+  "component": "LowEffortLendies",
+  "main_contract": "LowEffortLendies",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf9feb1fc337af85d6cf72316d0716ba8a441b746",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakeISTEPearnISTEP",
+  "main_contract": "StakeISTEPearnISTEP",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x385716713b1d2e37f9130aa2c70a7f1f63e5e252",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

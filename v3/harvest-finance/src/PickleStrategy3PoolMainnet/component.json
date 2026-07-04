@@ -1,0 +1,18 @@
+{
+  "component": "PickleStrategy3PoolMainnet",
+  "main_contract": "PickleStrategy3PoolMainnet",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x885d59830c1fdb120b54d62790db7a6a1f534463",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

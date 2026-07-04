@@ -1,0 +1,18 @@
+{
+  "component": "Mfam",
+  "main_contract": "Mfam",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xbb8d88bcd9749636bc4d2be22aac4bb3b01a58f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

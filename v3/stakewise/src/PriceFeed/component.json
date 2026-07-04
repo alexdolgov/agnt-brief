@@ -1,0 +1,21 @@
+{
+  "component": "PriceFeed",
+  "main_contract": "PriceFeed",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakewise/v3-core/blob/main/audits/2024-06-Sigma-Prime.pdf",
+    "https://github.com/stakewise/v3-core/blob/main/audits/2025-09-ABDK.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8023518b2192fb5384dadc596765b3dd1cdfe471",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

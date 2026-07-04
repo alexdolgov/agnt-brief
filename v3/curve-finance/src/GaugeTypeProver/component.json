@@ -1,0 +1,18 @@
+{
+  "component": "GaugeTypeProver",
+  "main_contract": "GaugeTypeProver",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0b2584efc66e9954e72d516be2bb855ef0defe62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

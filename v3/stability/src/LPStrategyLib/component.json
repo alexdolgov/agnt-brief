@@ -1,0 +1,18 @@
+{
+  "component": "LPStrategyLib",
+  "main_contract": "LPStrategyLib",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0c0697b5d55418e17ab5adb9eb000c42e3197e6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

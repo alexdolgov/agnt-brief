@@ -1,0 +1,42 @@
+{
+  "component": "MerkleDistributorAdjustable",
+  "main_contract": "MerkleDistributorAdjustable",
+  "source_file_count": 15,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04b47c3b679c588a23e905b8579e4cc9f19ceeed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c648b8e19f89854351719d34a78fe9ad6184d76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80c86bc65df4d29c5cc037d18e02d6172b5de404",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9946a1abd122353085e70e56a8201cd94fb76769",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

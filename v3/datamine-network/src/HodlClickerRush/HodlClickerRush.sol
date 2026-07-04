@@ -1,0 +1,876 @@
+// SPDX-License-Identifier: MIT
+
+/*
+================================================================================
+|                HODL CLICKER RUSH                   |
+================================================================================
+|                                                                              |
+|   This smart contract manages a rewards system interacting with an           |
+|   ERC777-like token (fluxToken). It allows users to deposit (lock)           |
+|   tokens, set rewards percentage (with a default), min block number, and     |
+|   min burn amount. It triggers minting events and rewards distribution.      |
+|   Users can withdraw accumulated rewards. It implements IERC777Recipient     |
+|   and registers with ERC1820 for token reception.                            |
+|                                                                              |
+================================================================================
+*/
+
+pragma solidity ^0.8.30; // Updated Solidity version
+
+// Import OpenZeppelin's Context contract to use _msgSender()
+// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
+
+// OpenZeppelin Contracts (last updated v5.1.0) (utils/StorageSlot.sol)
+// This file was procedurally generated from scripts/generate/templates/StorageSlot.js.
+
+pragma solidity ^0.8.20;
+
+/**
+ * @dev Library for reading and writing primitive types to specific storage slots.
+ *
+ * Storage slots are often used to avoid storage conflict when dealing with upgradeable contracts.
+ * This library helps with reading and writing to such slots without the need for inline assembly.
+ *
+ * The functions in this library return Slot structs that contain a `value` member that can be used to read or write.
+ *
+ * Example usage to set ERC-1967 implementation slot:
+ * ```solidity
+ * contract ERC1967 {
+ *     // Define the slot. Alternatively, use the SlotDerivation library to derive the slot.
+ *     bytes32 internal constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;
+ *
+ *     function _getImplementation() internal view returns (address) {
+ *         return StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value;
+ *     }
+ *
+ *     function _setImplementation(address newImplementation) internal {
+ *         require(newImplementation.code.length > 0);
+ *         StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value = newImplementation;
+ *     }
+ * }
+ * ```
+ *
+ * TIP: Consider using this library along with {SlotDerivation}.
+ */
+library StorageSlot {
+    struct AddressSlot {
+        address value;
+    }
+
+    struct BooleanSlot {
+        bool value;
+    }
+
+    struct Bytes32Slot {
+        bytes32 value;
+    }
+
+    struct Uint256Slot {
+        uint256 value;
+    }
+
+    struct Int256Slot {
+        int256 value;
+    }
+
+    struct StringSlot {
+        string value;
+    }
+
+    struct BytesSlot {
+        bytes value;
+    }
+
+    /**
+     * @dev Returns an `AddressSlot` with member `value` located at `slot`.
+     */
+    function getAddressSlot(bytes32 slot) internal pure returns (AddressSlot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns a `BooleanSlot` with member `value` located at `slot`.
+     */
+    function getBooleanSlot(bytes32 slot) internal pure returns (BooleanSlot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns a `Bytes32Slot` with member `value` located at `slot`.
+     */
+    function getBytes32Slot(bytes32 slot) internal pure returns (Bytes32Slot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns a `Uint256Slot` with member `value` located at `slot`.
+     */
+    function getUint256Slot(bytes32 slot) internal pure returns (Uint256Slot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns a `Int256Slot` with member `value` located at `slot`.
+     */
+    function getInt256Slot(bytes32 slot) internal pure returns (Int256Slot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns a `StringSlot` with member `value` located at `slot`.
+     */
+    function getStringSlot(bytes32 slot) internal pure returns (StringSlot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns an `StringSlot` representation of the string storage pointer `store`.
+     */
+    function getStringSlot(string storage store) internal pure returns (StringSlot storage r) {
+        assembly ("memory-safe") {
+            r.slot := store.slot
+        }
+    }
+
+    /**
+     * @dev Returns a `BytesSlot` with member `value` located at `slot`.
+     */
+    function getBytesSlot(bytes32 slot) internal pure returns (BytesSlot storage r) {
+        assembly ("memory-safe") {
+            r.slot := slot
+        }
+    }
+
+    /**
+     * @dev Returns an `BytesSlot` representation of the bytes storage pointer `store`.
+     */
+    function getBytesSlot(bytes storage store) internal pure returns (BytesSlot storage r) {
+        assembly ("memory-safe") {
+            r.slot := store.slot
+        }
+    }
+}
+
+// OpenZeppelin Contracts (last updated v5.1.0) (utils/ReentrancyGuard.sol)
+
+pragma solidity ^0.8.20;
+
+
+
+/**
+ * @dev Contract module that helps prevent reentrant calls to a function.
+ *
+ * Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier
+ * available, which can be applied to functions to make sure there are no nested
+ * (reentrant) calls to them.
+ *
+ * Note that because there is a single `nonReentrant` guard, functions marked as
+ * `nonReentrant` may not call one another. This can be worked around by making
+ * those functions `private`, and then adding `external` `nonReentrant` entry
+ * points to them.
+ *
+ * TIP: If EIP-1153 (transient storage) is available on the chain you're deploying at,
+ * consider using {ReentrancyGuardTransient} instead.
+ *
+ * TIP: If you would like to learn more about reentrancy and alternative ways
+ * to protect against it, check out our blog post
+ * https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].
+ *
+ * IMPORTANT: Deprecated. This storage-based reentrancy guard will be removed and replaced
+ * by the {ReentrancyGuardTransient} variant in v6.0.
+ */
+abstract contract ReentrancyGuard {
+    using StorageSlot for bytes32;
+
+    // keccak256(abi.encode(uint256(keccak256("openzeppelin.storage.ReentrancyGuard")) - 1)) & ~bytes32(uint256(0xff))
+    bytes32 private constant REENTRANCY_GUARD_STORAGE =
+        0x9b779b17422d0df92223018b32b4d1fa46e071723d6817e2486d003becc55f00;
+
+    // Booleans are more expensive than uint256 or any type that takes up a full
+    // word because each write operation emits an extra SLOAD to first read the
+    // slot's contents, replace the bits taken up by the boolean, and then write
+    // back. This is the compiler's defense against contract upgrades and
+    // pointer aliasing, and it cannot be disabled.
+
+    // The values being non-zero value makes deployment a bit more expensive,
+    // but in exchange the refund on every call to nonReentrant will be lower in
+    // amount. Since refunds are capped to a percentage of the total
+    // transaction's gas, it is best to keep them low in cases like this one, to
+    // increase the likelihood of the full refund coming into effect.
+    uint256 private constant NOT_ENTERED = 1;
+    uint256 private constant ENTERED = 2;
+
+    /**
+     * @dev Unauthorized reentrant call.
+     */
+    error ReentrancyGuardReentrantCall();
+
+    constructor() {
+        _reentrancyGuardStorageSlot().getUint256Slot().value = NOT_ENTERED;
+    }
+
+    /**
+     * @dev Prevents a contract from calling itself, directly or indirectly.
+     * Calling a `nonReentrant` function from another `nonReentrant`
+     * function is not supported. It is possible to prevent this from happening
+     * by making the `nonReentrant` function external, and making it call a
+     * `private` function that does the actual work.
+     */
+    modifier nonReentrant() {
+        _nonReentrantBefore();
+        _;
+        _nonReentrantAfter();
+    }
+
+    /**
+     * @dev A `view` only version of {nonReentrant}. Use to block view functions
+     * from being called, preventing reading from inconsistent contract state.
+     *
+     * CAUTION: This is a "view" modifier and does not change the reentrancy
+     * status. Use it only on view functions. For payable or non-payable functions,
+     * use the standard {nonReentrant} modifier instead.
+     */
+    modifier nonReentrantView() {
+        _nonReentrantBeforeView();
+        _;
+    }
+
+    function _nonReentrantBeforeView() private view {
+        if (_reentrancyGuardEntered()) {
+            revert ReentrancyGuardReentrantCall();
+        }
+    }
+
+    function _nonReentrantBefore() private {
+        // On the first call to nonReentrant, _status will be NOT_ENTERED
+        _nonReentrantBeforeView();
+
+        // Any calls to nonReentrant after this point will fail
+        _reentrancyGuardStorageSlot().getUint256Slot().value = ENTERED;
+    }
+
+    function _nonReentrantAfter() private {
+        // By storing the original value once again, a refund is triggered (see
+        // https://eips.ethereum.org/EIPS/eip-2200)
+        _reentrancyGuardStorageSlot().getUint256Slot().value = NOT_ENTERED;
+    }
+
+    /**
+     * @dev Returns true if the reentrancy guard is currently set to "entered", which indicates there is a
+     * `nonReentrant` function in the call stack.
+     */
+    function _reentrancyGuardEntered() internal view returns (bool) {
+        return _reentrancyGuardStorageSlot().getUint256Slot().value == ENTERED;
+    }
+
+    function _reentrancyGuardStorageSlot() internal pure virtual returns (bytes32) {
+        return REENTRANCY_GUARD_STORAGE;
+    }
+}
+
+/**
+ * @dev Provides information about the current execution context, including the
+ * sender of the transaction and its data. While these are generally available
+ * via msg.sender and msg.data, they should not be accessed in such a direct
+ * manner, since when dealing with meta-transactions the account sending and
+ * paying for execution may not be the actual sender (as far as an application
+ * is concerned).
+ *
+ * This contract is only required for intermediate, library-like contracts.
+ */
+abstract contract Context {
+    function _msgSender() internal view virtual returns (address) {
+        return msg.sender;
+    }
+
+    function _msgData() internal view virtual returns (bytes calldata) {
+        return msg.data;
+    }
+}
+
+// Import the ERC777 Recipient interface
+// OpenZeppelin Contracts v4.4.1 (token/ERC777/IERC777Recipient.sol)
+
+/**
+ * @dev Interface of the ERC777TokensRecipient standard as defined in the EIP.
+ *
+ * Accounts can be notified of {IERC777} tokens being sent to them by having a
+ * contract implement this interface (contract holders can be their own
+ * implementer) and registering it on the
+ * https://eips.ethereum.org/EIPS/eip-1820[ERC1820 global registry].
+ *
+ * See {IERC1820Registry} and {ERC1820Implementer}.
+ */
+interface IERC777Recipient {
+    /**
+     * @dev Called by an {IERC777} token contract whenever tokens are being
+     * moved or created into a registered account (`to`). The type of operation
+     * is conveyed by `from` being the zero address or not.
+     *
+     * This call occurs _after_ the token contract's state is updated, so
+     * {IERC777-balanceOf}, etc., can be used to query the post-operation state.
+     *
+     * This function may revert to prevent the operation from being executed.
+     */
+    function tokensReceived(
+        address operator,
+        address from,
+        address to,
+        uint256 amount,
+        bytes calldata userData,
+        bytes calldata operatorData
+    ) external;
+}
+
+// Import the ERC1820 Registry interface
+// OpenZeppelin Contracts (last updated v4.9.0) (utils/introspection/IERC1820Registry.sol)
+
+/**
+ * @dev Interface of the global ERC1820 Registry, as defined in the
+ * https://eips.ethereum.org/EIPS/eip-1820[EIP]. Accounts may register
+ * implementers for interfaces in this registry, as well as query support.
+ *
+ * Implementers may be shared by multiple accounts, and can also implement more
+ * than a single interface for each account. Contracts can implement interfaces
+ * for themselves, but externally-owned accounts (EOA) must delegate this to a
+ * contract.
+ *
+ * {IERC165} interfaces can also be queried via the registry.
+ *
+ * For an in-depth explanation and source code analysis, see the EIP text.
+ */
+interface IERC1820Registry {
+    event InterfaceImplementerSet(address indexed account, bytes32 indexed interfaceHash, address indexed implementer);
+
+    event ManagerChanged(address indexed account, address indexed newManager);
+
+    /**
+     * @dev Sets `newManager` as the manager for `account`. A manager of an
+     * account is able to set interface implementers for it.
+     *
+     * By default, each account is its own manager. Passing a value of `0x0` in
+     * `newManager` will reset the manager to this initial state.
+     *
+     * Emits a {ManagerChanged} event.
+     *
+     * Requirements:
+     *
+     * - the caller must be the current manager for `account`.
+     */
+    function setManager(address account, address newManager) external;
+
+    /**
+     * @dev Returns the manager for `account`.
+     *
+     * See {setManager}.
+     */
+    function getManager(address account) external view returns (address);
+
+    /**
+     * @dev Sets the `implementer` contract as ``account``'s implementer for
+     * `interfaceHash`.
+     *
+     * `account` being the zero address is an alias for the caller's address.
+     * The zero address can also be used in `implementer` to remove an old one.
+     *
+     * See {interfaceHash} to learn how these are created.
+     *
+     * Emits an {InterfaceImplementerSet} event.
+     *
+     * Requirements:
+     *
+     * - the caller must be the current manager for `account`.
+     * - `interfaceHash` must not be an {IERC165} interface id (i.e. it must not
+     * end in 28 zeroes).
+     * - `implementer` must implement {IERC1820Implementer} and return true when
+     * queried for support, unless `implementer` is the caller. See
+     * {IERC1820Implementer-canImplementInterfaceForAddress}.
+     */
+    function setInterfaceImplementer(address account, bytes32 _interfaceHash, address implementer) external;
+
+    /**
+     * @dev Returns the implementer of `interfaceHash` for `account`. If no such
+     * implementer is registered, returns the zero address.
+     *
+     * If `interfaceHash` is an {IERC165} interface id (i.e. it ends with 28
+     * zeroes), `account` will be queried for support of it.
+     *
+     * `account` being the zero address is an alias for the caller's address.
+     */
+    function getInterfaceImplementer(address account, bytes32 _interfaceHash) external view returns (address);
+
+    /**
+     * @dev Returns the interface hash for an `interfaceName`, as defined in the
+     * corresponding
+     * https://eips.ethereum.org/EIPS/eip-1820#interface-name[section of the EIP].
+     */
+    function interfaceHash(string calldata interfaceName) external pure returns (bytes32);
+
+    /**
+     * @notice Updates the cache with whether the contract implements an ERC165 interface or not.
+     * @param account Address of the contract for which to update the cache.
+     * @param interfaceId ERC165 interface for which to update the cache.
+     */
+    function updateERC165Cache(address account, bytes4 interfaceId) external;
+
+    /**
+     * @notice Checks whether a contract implements an ERC165 interface or not.
+     * If the result is not cached a direct lookup on the contract address is performed.
+     * If the result is not cached or the cached value is out-of-date, the cache MUST be updated manually by calling
+     * {updateERC165Cache} with the contract address.
+     * @param account Address of the contract to check.
+     * @param interfaceId ERC165 interface to check.
+     * @return True if `account` implements `interfaceId`, false otherwise.
+     */
+    function implementsERC165Interface(address account, bytes4 interfaceId) external view returns (bool);
+
+    /**
+     * @notice Checks whether a contract implements an ERC165 interface or not without using or updating the cache.
+     * @param account Address of the contract to check.
+     * @param interfaceId ERC165 interface to check.
+     * @return True if `account` implements `interfaceId`, false otherwise.
+     */
+    function implementsERC165InterfaceNoCache(address account, bytes4 interfaceId) external view returns (bool);
+}
+
+/**
+ * @title IFluxToken Interface
+ * @dev This interface defines the expected function(s) for the fluxToken contract.
+ * @dev _targetBlock parameter in mintToAddress and getMintAmount will receive block.number from burnTokens.
+ */
+interface IFluxToken {
+    /**
+     * @dev Struct defining lock details from the FluxToken contract.
+     */
+    struct AddressLock {
+        uint256 amount;
+        uint256 burnedAmount;
+        uint256 blockNumber;
+        uint256 lastMintBlockNumber;
+        address minterAddress;
+    }
+
+    function burnToAddress(address _targetAddress, uint256 _amount) external;
+    function mintToAddress(address _sourceAddress, address _targetAddress, uint256 _targetBlock) external;
+    function getMintAmount(address _sourceAddress, uint256 _targetBlock) external view returns (uint256);
+    function send(address _to, uint256 _amount, bytes memory _data) external;
+    function operatorSend(
+        address sender,
+        address recipient,
+        uint256 amount,
+        bytes calldata data,
+        bytes calldata operatorData
+    ) external;
+    function balanceOf(address who) external view returns (uint256);
+    function addressLocks(address account) external view returns (AddressLock memory); // Added addressLocks mapping getter
+}
+
+/**
+ * @title HodlClickerRush
+ * @dev Contract to interact with fluxToken, burn/mint, manage locks, and allow withdrawals/deposits.
+ * @dev Implements IERC777Recipient and registers with ERC1820.
+ */
+contract HodlClickerRush is Context, IERC777Recipient, ReentrancyGuard {
+
+    struct AddressLock {
+        uint256 rewardsAmount;
+        uint256 rewardsPercent; // Can be 0 to use defaultRewardsPercent
+        uint256 minBlockNumber;
+        bool isPaused;
+        uint256 minBurnAmount;
+    }
+
+    /**
+     * @dev Structure to define a burn request for batch processing.
+     */
+    struct BurnRequest {
+        uint256 amountToBurn; // User's desired amountToBurn, can be 0
+        address burnToAddress; // NOT USED. Only here for backwards compatability with Datamine Gems UI
+    }
+
+    enum BurnResultCode {
+        Success,
+        NothingToMint, // Validator doesn't have any tokens to mint
+        NothingToTip, // Validator isn't tipping enough (0 tip)
+        InsufficientContractBalance, // This smart contract doesn't have enough tokens to cover this burn
+        ValidatorPaused, // Validator is currently paused for any burning to
+        ValidatorMinBlockNotMet, // Validator has a min block number that is not yet hit before it can be burned
+        ValidatorMinBurnAmountNotMet // Validator requires a higher burn amount
+    }
+
+    /**
+     * @dev Structure to hold the result of a single burn operation within a batch.
+     */
+    struct BurnOperationResult {
+        BurnResultCode resultCode; // Empty/0 would mean success. This helps track reason for failure
+        uint256 actualAmountBurned; // The actual amount that was burned
+        address burnToAddress;   // Who received the burn
+
+        uint256 totalTipAmount; // how much the total tip is (includes jackpot and bonus tip)
+        uint256 jackpotAmount; // How much the jackpot was for the burning address
+        uint256 totalTipToAddAmount; // How much is being added to final totalTips
+        uint256 amountToMintAfterBurn; // How much is minted after the burn happens
+    }
+
+    /**
+     * @dev Structure to hold detailed information about an address's lock and mint status.
+     */
+    struct AddressLockDetailsViewModel {
+        address targetAddress;
+        uint256 amountToMint;
+        uint256 rewardsAmount;
+        uint256 rewardsPercent;
+        uint256 minBlockNumber;
+        uint256 minBurnAmount;
+        bool isPaused;
+        address minterAddressFromFluxToken;
+    }
+
+
+
+    // --- Events ---
+    event TokensBurned(
+        address indexed burnToAddress,
+        address indexed caller,
+        uint256 currentBlock,
+        uint256 amountActuallyBurned, 
+        uint256 totalTipAmount,
+        uint256 jackpotAmount,
+        uint256 totalTipToAddAmount,
+        uint256 amountToMintAfterBurn
+    );
+
+    event Withdrawn(address indexed user, uint256 amount, uint256 originalRewardsAmount);
+    event Deposited(
+        address indexed user,
+        uint256 amountDeposited,
+        uint256 rewardsPercent,
+        uint256 totalRewardsAmount,
+        uint256 minBlockNumber,
+        uint256 minBurnAmount,
+        uint256 actualAmountDeposited
+    );
+    event PausedChanged(address indexed user, bool isPaused);
+    event NormalMint(
+        address indexed caller,
+        address indexed targetAddress,
+        uint256 currentBlock
+    );
+
+    // --- State Variables ---
+    IFluxToken public fluxToken;
+    mapping (address => AddressLock) public addressLocks; // This contract's AddressLock mapping
+
+    uint256 public defaultRewardsPercent = 500; // Default 5.00% (500 / 10000)
+
+    // How much of the balance in this contract is for rewards that can be withdrawn (across all participants)
+    uint256 public totalContractRewardsAmount;
+    
+    // How much of the balance in this contract was ued for original deposits
+    uint256 public totalContractLockedAmount;
+
+    IERC1820Registry private constant _erc1820 = IERC1820Registry(0x1820a4B7618BdE71Dce8cdc73aAB6C95905faD24);
+    bytes32 private constant TOKENS_RECIPIENT_INTERFACE_HASH = keccak256("ERC777TokensRecipient");
+
+    // --- Constructor ---
+    constructor(address _fluxTokenAddress) {
+        require(_fluxTokenAddress != address(0), "FluxToken address cannot be zero");
+        fluxToken = IFluxToken(_fluxTokenAddress);
+        _erc1820.setInterfaceImplementer(address(this), TOKENS_RECIPIENT_INTERFACE_HASH, address(this));
+    }
+
+
+    /**
+     * @notice Calculates the total tip amount and jackpot amount for a burn operation.
+     * @param _address The address whose rewards percent settings are used.
+     * @param _amountToMintBeforeBurn The amount of tokens that can be minted before the burn.
+     * @return totalTipAmount The calculated total tip amount.
+     * @return jackpotAmount The calculated jackpot amount (50% of totalTipAmount).
+     */
+    function getTipAndJackpotAmount(address _address, uint256 _amountToMintBeforeBurn) public view returns (uint256 totalTipAmount, uint256 jackpotAmount) {
+        AddressLock storage burnToAddressLock = addressLocks[_address];
+
+        uint256 effectiveRewardsPercent = burnToAddressLock.rewardsPercent;
+        if (effectiveRewardsPercent == 0) {
+            effectiveRewardsPercent = defaultRewardsPercent;
+        }
+
+        totalTipAmount = (_amountToMintBeforeBurn * effectiveRewardsPercent) / 10000;
+        jackpotAmount = totalTipAmount / 2; // 50% is jackpot amount (this is the amount from the original tip)
+    }
+
+    // --- Main Functions ---
+    /**
+     * @notice Burns tokens for a target address.
+     * @param _amountToBurnInput NOT USED. Only here for backwards compatability with Datamine Gems UI
+     * @param burnToAddress The address whose tokens are targeted for burning and rewards calculation.
+     */
+    function burnTokens(uint256 _amountToBurnInput, address burnToAddress) public nonReentrant returns (BurnOperationResult memory) {
+        return _burnTokens(burnToAddress);
+    }
+
+    function burnTokensFromAddresses(BurnRequest[] calldata requests) public nonReentrant returns (BurnOperationResult[] memory) {
+        uint256 numRequests = requests.length;
+        require(numRequests > 0, "No burn requests provided");
+
+        BurnOperationResult[] memory results = new BurnOperationResult[](numRequests);
+
+        for (uint256 i = 0; i < numRequests; i++) {
+            BurnRequest calldata currentRequest = requests[i];
+            results[i] = _burnTokens(currentRequest.burnToAddress);
+        }
+        return results;
+    }
+
+    function _burnTokens(address burnToAddress) internal returns (BurnOperationResult memory) {
+        uint256 currentBlock = block.number;
+        require(currentBlock > 0, "Current block must be > 0");
+
+        AddressLock storage burnFromAddressLock = addressLocks[_msgSender()];
+
+        // We'll store the results of the burn in a struct. Then we fill out all the props in the struct as there is a lot of logic here
+        BurnOperationResult memory burnOperationResult;
+        burnOperationResult.burnToAddress = burnToAddress;
+        
+        AddressLock storage burnToAddressLock = addressLocks[burnToAddress];
+
+        // See if there is anything that we can mint for this address
+        uint256 amountToMintBeforeBurn = fluxToken.getMintAmount(burnToAddress, currentBlock);
+        burnOperationResult.actualAmountBurned = amountToMintBeforeBurn; // Store for returning results
+
+        // Ensure the validator has something to burn
+        if (amountToMintBeforeBurn == 0) {
+            burnOperationResult.resultCode = BurnResultCode.NothingToMint;
+            return burnOperationResult;
+        }
+        
+        // Use the helper function to calculate total tip and jackpot amounts
+        (uint256 totalTipAmount, uint256 jackpotAmount) = getTipAndJackpotAmount(burnToAddress, amountToMintBeforeBurn);
+
+        // If the tip after division is zero then we won't do any burns (no jackpot = no burn)
+        // This means the validator needs to either wait longer or burn more tokens
+        if (totalTipAmount == 0) {
+            burnOperationResult.resultCode = BurnResultCode.NothingToTip;
+            return burnOperationResult;
+        }
+
+        uint256 actualAmountToBurn = amountToMintBeforeBurn - totalTipAmount;
+        
+        // Ensure the current smart contract has enough tokens to cover this burn
+        if (totalContractRewardsAmount < actualAmountToBurn) {
+            burnOperationResult.resultCode = BurnResultCode.InsufficientContractBalance;
+            return burnOperationResult;
+        }
+
+        // Ensure the validator isn't paused
+        if (burnToAddressLock.isPaused) {
+            burnOperationResult.resultCode = BurnResultCode.ValidatorPaused;
+            return burnOperationResult;
+        }
+        
+        // Ensure validator meets min block height from their settings
+        if (currentBlock < burnToAddressLock.minBlockNumber) {
+            burnOperationResult.resultCode = BurnResultCode.ValidatorMinBlockNotMet;
+            return burnOperationResult;
+        }
+
+        // Ensure validator meets min block height from their settings
+        if (actualAmountToBurn < burnToAddressLock.minBurnAmount) {
+            burnOperationResult.resultCode = BurnResultCode.ValidatorMinBurnAmountNotMet;
+            return burnOperationResult;
+        }
+        
+        // Perform the actual burn (jackpot logic)
+
+        // Subtract amount we're burning from the total rewards in the contract
+        // This is done in case of any re-entrancy
+        totalContractRewardsAmount -= actualAmountToBurn;
+
+        // Capture burned amount of this contract before the burn
+        uint256 beforeBurnAddressThisFluxBalance = fluxToken.balanceOf(address(this));
+
+        // Burning tokens from address(this)
+        fluxToken.burnToAddress(burnToAddress, actualAmountToBurn);
+        
+        // Capture contract's balance *after* burn but *before* mint
+        uint256 afterBurnThisFluxBalance = fluxToken.balanceOf(address(this));
+
+        require(afterBurnThisFluxBalance == beforeBurnAddressThisFluxBalance - actualAmountToBurn, "Unexpected address balance after burn");
+
+        // Ensure after burning we're still getting something minted
+        uint256 amountToMintAfterBurn = fluxToken.getMintAmount(burnToAddress, currentBlock); 
+        require(amountToMintAfterBurn > 0, "Mint amount (post-burn) must be > 0");
+        require(amountToMintAfterBurn >= actualAmountToBurn, "Mint amount (post-burn) must be > actualAmountToBurn");
+
+        fluxToken.mintToAddress(burnToAddress, address(this), currentBlock);
+
+        uint256 afterMintThisFluxBalance = fluxToken.balanceOf(address(this));
+
+        require(afterMintThisFluxBalance == afterBurnThisFluxBalance + amountToMintAfterBurn, "Unexpected balance after minting");
+
+        // Now we can re-distribute the rewards after minting is done
+
+        // Re-add the burned amount back to the contract
+        totalContractRewardsAmount += actualAmountToBurn;
+
+        // The address that performs the burn gets the jackpot (50% of the tip)
+        burnFromAddressLock.rewardsAmount += jackpotAmount;
+        totalContractRewardsAmount += jackpotAmount; // Increases global rewards inside the contract
+        totalContractLockedAmount += jackpotAmount; // Increase original locked amount by jackpot amount
+
+        // The reminder of funds is added back as totalTips (for bonuses)
+        uint256 totalTipToAddAmount = amountToMintAfterBurn - actualAmountToBurn - jackpotAmount; 
+
+        // The remainder of rewards is added to total pool
+        // Notice we don't increase totalContractLockedAmount by this amount
+        totalContractRewardsAmount += totalTipToAddAmount;
+
+        burnOperationResult.totalTipAmount = totalTipAmount;
+        burnOperationResult.jackpotAmount = jackpotAmount;
+        burnOperationResult.totalTipToAddAmount = totalTipToAddAmount;
+        burnOperationResult.amountToMintAfterBurn = amountToMintAfterBurn;
+        
+        emit TokensBurned(
+            burnToAddress,
+            _msgSender(),
+            currentBlock,
+            actualAmountToBurn,
+            totalTipAmount,
+            jackpotAmount,
+            totalTipToAddAmount,
+            amountToMintAfterBurn
+        );
+
+        return burnOperationResult;
+    }
+
+    function withdrawAll() public nonReentrant {
+        AddressLock storage senderAddressLock = addressLocks[msg.sender];
+        require(senderAddressLock.rewardsAmount > 0, "No rewards to withdraw");
+
+        uint256 originalRewardsAmount = senderAddressLock.rewardsAmount;
+
+        // Increase the reward to include rewards from fees (so 100 lock deposited might be 102 now)
+        uint256 rewardsToWithdraw = (originalRewardsAmount * totalContractRewardsAmount) / totalContractLockedAmount;
+
+        senderAddressLock.rewardsAmount = 0;
+        totalContractRewardsAmount -= rewardsToWithdraw;
+        totalContractLockedAmount -= originalRewardsAmount;
+
+        fluxToken.send(_msgSender(), rewardsToWithdraw, "");
+
+        emit Withdrawn(_msgSender(), rewardsToWithdraw, originalRewardsAmount);
+    }
+
+    function deposit(uint256 amountToDeposit, uint256 rewardsPercent, uint256 minBlockNumber, uint256 minBurnAmount) public nonReentrant {
+        require(amountToDeposit >= 0, "Deposit amount must be >= 0");
+        require(rewardsPercent <= 10000, "Rewards % must be <= 10000"); // User can set to 0
+
+        AddressLock storage senderAddressLock = addressLocks[_msgSender()];
+
+        // By default your reward grows by 100% of your deposit (if there are no other deposits)
+        uint256 actualAmountToDeposit = amountToDeposit;
+
+        // Figure our actual amount to deposit that is based on the difference between locked / rewards amount
+        // What this means if you deposit 100 tokens, you might actually only see 97.5 tokens because the remainder comes from the contract rewards
+        // So when you withdraw you still get 100 tokens back
+        if (totalContractLockedAmount > 0 && totalContractRewardsAmount > 0) {
+            actualAmountToDeposit = (amountToDeposit * totalContractLockedAmount) / totalContractRewardsAmount;
+        }
+
+        require(actualAmountToDeposit >= 0, "Deposit amount must be >= 0");
+
+        senderAddressLock.rewardsAmount += actualAmountToDeposit;
+        senderAddressLock.rewardsPercent = rewardsPercent;
+        senderAddressLock.minBlockNumber = minBlockNumber;
+        senderAddressLock.minBurnAmount = minBurnAmount;
+
+        // Notice that we use two different amounts here
+        totalContractRewardsAmount += amountToDeposit; // Update total contract rewards
+        totalContractLockedAmount += actualAmountToDeposit; // Update total contract rewards
+
+        if (amountToDeposit > 0) {
+            fluxToken.operatorSend(_msgSender(), address(this), amountToDeposit, "", "");
+        }
+
+        emit Deposited(
+            _msgSender(),
+            amountToDeposit,
+            rewardsPercent,
+            senderAddressLock.rewardsAmount,
+            minBlockNumber,
+            minBurnAmount,
+            actualAmountToDeposit
+        );
+    }
+
+    function setPaused(bool isPaused) public nonReentrant {
+        AddressLock storage pauseAddressLock = addressLocks[_msgSender()];
+        pauseAddressLock.isPaused = isPaused;
+        emit PausedChanged(_msgSender(), isPaused);
+    }
+
+    function normalMintToAddress(address targetAddress) public nonReentrant {
+        uint256 currentBlock = block.number;
+        fluxToken.mintToAddress(_msgSender(), targetAddress, currentBlock);
+        emit NormalMint(_msgSender(), targetAddress, currentBlock);
+    }
+
+    /**
+     * @notice Retrieves lock details and current mintable amount for a list of addresses.
+     * @param addressesToQuery An array of addresses to query.
+     * @return details An array of AddressLockDetailsViewModel structs.
+     * @return currentBlockNumber The current block number when the query was made.
+     */
+    function getAddressLockDetailsBatch(address[] calldata addressesToQuery) public view returns (AddressLockDetailsViewModel[] memory details, uint256 currentBlockNumber) {
+        uint256 numAddresses = addressesToQuery.length;
+        require(numAddresses > 0, "No addresses provided to query");
+
+        details = new AddressLockDetailsViewModel[](numAddresses);
+        currentBlockNumber = block.number; // Cache block.number for efficiency and return
+
+        for (uint256 i = 0; i < numAddresses; i++) {
+            address currentAddress = addressesToQuery[i];
+            AddressLock storage timAddressLock = addressLocks[currentAddress]; // This contract's lock
+            IFluxToken.AddressLock memory fluxLockData = fluxToken.addressLocks(currentAddress); // FluxToken's lock
+
+            uint256 amountToMint = fluxToken.getMintAmount(currentAddress, currentBlockNumber);
+
+            details[i] = AddressLockDetailsViewModel({
+                targetAddress: currentAddress,
+                amountToMint: amountToMint,
+                rewardsAmount: timAddressLock.rewardsAmount,
+                rewardsPercent: timAddressLock.rewardsPercent,
+                minBlockNumber: timAddressLock.minBlockNumber,
+                minBurnAmount: timAddressLock.minBurnAmount,
+                isPaused: timAddressLock.isPaused,
+                minterAddressFromFluxToken: fluxLockData.minterAddress
+            });
+        }
+        // Implicit return of details and currentBlockNumber
+    }
+
+    // --- ERC777 Hook ---
+    function tokensReceived(
+        address operator,
+        address from,
+        address to,
+        uint256 amount,
+        bytes calldata userData,
+        bytes calldata operatorData
+    ) external pure override {
+        require(amount > 0, "Must receive a positive number of tokens");
+    }
+}

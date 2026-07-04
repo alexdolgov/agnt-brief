@@ -1,0 +1,20 @@
+{
+  "component": "PositionNFT",
+  "main_contract": "PositionNFT",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/contango-xyz/core-v2/blob/main/audit/ABDK_Contango_CoreV2_v_2_0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90896236b00a88959e427e5d47b73fd51bd82f1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

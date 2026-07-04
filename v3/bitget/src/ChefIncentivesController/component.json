@@ -1,0 +1,18 @@
+{
+  "component": "ChefIncentivesController",
+  "main_contract": "ChefIncentivesController",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x287ff908b4db0b29b65b8442b0a5840455f0db32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

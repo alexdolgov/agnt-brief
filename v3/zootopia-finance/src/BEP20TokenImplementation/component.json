@@ -1,0 +1,20 @@
+{
+  "component": "BEP20TokenImplementation",
+  "main_contract": "BEP20TokenImplementation",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TechRate/Smart-Contract-Audits/blob/main/September_2022/Zootopia.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc12d65dc248051d1afb25bced1942fcbf0bcb5c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

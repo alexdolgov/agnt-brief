@@ -1,0 +1,66 @@
+# optimism-bridge — deployments
+
+60 verified deployment(s) across 51 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x042065416c5c665dc196076745326af3cd840d15` | OVM_FraudVerifier | impl | live | no |
+| ethereum | `0x0454092516c9a4d636d3cafa1e82161376c8a748` | LivenessModule | impl | live | no |
+| ethereum | `0x09e040a72fd3492355c5aeedbc3154075f83488a` | StandardBridge | impl | live | no |
+| ethereum | `0x09f7150d8c019bef34450d6920f6b3608cefdaf2` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x0a893d9576b9cfd9ef78595963dc973238e78210` | OptimismPortal | impl | live | no |
+| ethereum | `0x16393737d09d2722ad13dca3ca8c3db957699f1d` | OVM_L1CrossDomainMessenger | impl | live | no |
+| ethereum | `0x18dac71c228d1c32c99489b7323d441e1175e443` | Proxy-2 | proxy | live | no |
+| ethereum | `0x1fb8cdfc6831fc866ed9c51af8817da5c287add3` | PreimageOracle | impl | live | no |
+| ethereum | `0x2150bc3c64cbfddbac9815ef615d6ab8671bfe43` | OptimismPortal-2 | impl | live | no |
+| ethereum | `0x229047fed2591dbec1ef1118d64f7af3db9eb290` | Proxy-3 | proxy | live | no |
+| ethereum | `0x24424336f04440b1c28685a38303ac33c9d14a25` | GnosisSafe | impl | live | no |
+| ethereum | `0x2745c24822f542bbffb41c6cb20edf766b5619f5` | OVM_ExecutionManager | impl | live | no |
+| ethereum | `0x28a55488fef40005309e2da0040dbe9d300a64ab` | OptimismPortal-3 | impl | live | no |
+| ethereum | `0x322b47ff1fa8d5611f761e3e275c45b71b294d43` | Proxy-4 | proxy | live | no |
+| ethereum | `0x3268ed09f76e619331528270b6267d4d2c5ab5c2` | CrossDomainMessenger | impl | live | no |
+| ethereum | `0x38a6ed6fd76035684cadef38cf49a2fffa782b67` | OVM_StateTransitioner | impl | live | no |
+| ethereum | `0x3ea1a3839d8ca9a7ff3c567a9f36f4c4dbecc3ee` | OVM_ChainStorageContainer | impl | live | no |
+| ethereum | `0x4146df64d83acb0dcb0c1a4884a16f090165e122` | FaultDisputeGame | impl | live | no |
+| ethereum | `0x4bf681894abec828b212c906082b444ceb2f6cf6` | OVM_ExecutionManager-2 | impl | live | no |
+| ethereum | `0x58bf355c5d4edfc723ef89d99582eccfd143266a` | FaultDisputeGameV2 | impl | live | yes |
+| ethereum | `0x5dc91d01290af474ce21de14c17335a6dee4d2a8` | SystemConfig | impl | live | yes |
+| ethereum | `0x6463dee3828677f6270d83d45408044fc5edb908` | MIPS64 | impl | live | no |
+| ethereum | `0x6ddba09bc4ccb0d6ca9fc5350580f74165707499` | FaultDisputeGameV2-2 | impl | live | no |
+| ethereum | `0x8062abc286f5e7d9428a0ccb9abd71e50d93b935` | Proxy-5 | proxy | live | no |
+| ethereum | `0x95703e0982140d16f8eba6d158fccede42f04a4c` | Proxy-2 | proxy | live | no |
+| ethereum | `0x99c9fc46f92e8a1c0dec1b1747d010903e884be1` | L1ChugSplashProxy | proxy | live | no |
+| ethereum | `0xa8447329e52f64aed2bfc9e7a2506f7d369f483a` | SaferSafes | impl | live | no |
+| ethereum | `0xbeb5fc579115071764c7423a4f12edde41f106ed` | Proxy-3 | proxy | live | no |
+| ethereum | `0xc307e93a7c530a184c98eade4545a412b857b62f` | FaultDisputeGame-2 | impl | live | yes |
+| ethereum | `0xcd76de5c57004d47d0216ec7dabd3c72d8c49057` | mockOVM_BondManager | impl | live | no |
+| ethereum | `0xd061ab95069987868768818cc1248705351e2d0e` | Proxy-4 | proxy | live | no |
+| ethereum | `0xd0e3e318154716bd9d007e1e6b021eab246ff98d` | OVM_StateManager | impl | live | no |
+| ethereum | `0xd2e67b6a032f0a9b1f569e63ad6c38f7342c2e00` | L2OutputOracle | impl | live | no |
+| ethereum | `0xde1fcfb0851916ca5101820a69b13a4e276bd81f` | Lib_AddressManager | impl | live | no |
+| ethereum | `0xe5965ab5962edc7477c8520243a95517cd252fa9` | Proxy-2 | proxy | live | no |
+| ethereum | `0xe969c2724d2448f1d1a6189d3e2aa1f37d5998c1` | OVM_StateCommitmentChain | impl | live | no |
+| ethereum | `0xf26391fbb1f77481f80a7d646ac08ba3817ea891` | Lib_AddressManager-2 | impl | live | no |
+| ethereum | `0xfe1f9cf28ecdb12110aa8086e6fd343ea06035cc` | OVM_SafetyChecker | impl | live | no |
+| optimism | `0x4200000000000000000000000000000000000000` | Proxy | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000001` | Proxy | impl | live | no |
+| optimism | `0x4200000000000000000000000000000000000002` | Proxy | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
+| optimism | `0x4200000000000000000000000000000000000007` | Proxy-6 | proxy | live | no |
+| optimism | `0x420000000000000000000000000000000000000f` | Proxy-7 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000010` | Proxy-8 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000011` | Proxy-9 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000012` | Proxy | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000013` | Proxy | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000014` | Proxy-10 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000015` | Proxy-11 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000016` | Proxy-12 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000017` | Proxy-13 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000018` | Proxy-14 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000019` | Proxy-15 | proxy | live | no |
+| optimism | `0x420000000000000000000000000000000000001a` | Proxy-16 | proxy | live | no |
+| optimism | `0x420000000000000000000000000000000000001b` | Proxy | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000020` | Proxy-17 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000021` | Proxy-18 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | impl | live | no |
+| optimism | `0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000` | LegacyERC20ETH | impl | live | no |

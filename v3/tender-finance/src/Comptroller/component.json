@@ -1,0 +1,74 @@
+{
+  "component": "Comptroller",
+  "main_contract": "Comptroller",
+  "source_file_count": 18,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0e9109c678ba6e807dd53ecf7a5a1e658681ad70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1ffddc9578521602c9aadb5dbc220a553a6b4d2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4213135a86e01dfa62125b6ad17d96d302596e8e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x49ea2c991290ca13f57ae2b8ca98bc6140925db3",
+      "is_proxy": true,
+      "implementation_address": "0x0e9109c678ba6e807dd53ecf7a5a1e658681ad70",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f2a26f1c4998a8c6ae9a1ee24d2b439abf749b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x60437fee4ddbda6e47955b6255e312f1ed067033",
+      "is_proxy": true,
+      "implementation_address": "0x4f2a26f1c4998a8c6ae9a1ee24d2b439abf749b5",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaeae92590cda2f5e61f6007a8e083a42dc578230",
+      "is_proxy": true,
+      "implementation_address": "0x4213135a86e01dfa62125b6ad17d96d302596e8e",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7c1a9dca749fc7d626fe46d14be6e371deeb278",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

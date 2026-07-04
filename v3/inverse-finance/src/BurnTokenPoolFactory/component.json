@@ -1,0 +1,18 @@
+{
+  "component": "BurnTokenPoolFactory",
+  "main_contract": "BurnTokenPoolFactory",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x63fad99705a255fe2d500e498dbb3a9ae5aa1ee8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

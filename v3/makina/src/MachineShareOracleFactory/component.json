@@ -1,0 +1,20 @@
+{
+  "component": "MachineShareOracleFactory",
+  "main_contract": "MachineShareOracleFactory",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.makina.finance/audits/2025-09_Security_Review_Makina_Finance_Makina_Periphery_Machine_Share_Oracle.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c5ea6dc9309147a582fcc330968076158cf5fb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

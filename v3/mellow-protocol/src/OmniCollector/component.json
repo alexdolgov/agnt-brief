@@ -1,0 +1,18 @@
+{
+  "component": "OmniCollector",
+  "main_contract": "OmniCollector",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d8c5795d87d3a227dd8c28d89f0dfae7489b4de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

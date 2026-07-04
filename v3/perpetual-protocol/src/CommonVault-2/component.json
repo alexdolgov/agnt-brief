@@ -1,0 +1,18 @@
+{
+  "component": "CommonVault-2",
+  "main_contract": "CommonVault",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2568b87f26d6719feba6b43444e2fa5e984957fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

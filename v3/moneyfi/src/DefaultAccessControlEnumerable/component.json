@@ -1,0 +1,18 @@
+{
+  "component": "DefaultAccessControlEnumerable",
+  "main_contract": "DefaultAccessControlEnumerable",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf5d4650902cb5df6cee4f21e3763bc6a0a5dbed1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

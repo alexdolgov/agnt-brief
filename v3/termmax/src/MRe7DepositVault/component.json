@@ -1,0 +1,18 @@
+{
+  "component": "MRe7DepositVault",
+  "main_contract": "MRe7DepositVault",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53c764c938385bc439dc1596413e1557deed62d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+# edel — deployments
+
+53 verified deployment(s) across 52 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| base | `0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95` | ContractOne | impl | live | no |
+| ethereum | `0x03e5235753880491b1d46c44fb44787628834cc3` | AToken | impl | live | no |
+| ethereum | `0x07c6a25739ffe02b1dae12502632126ffa7497c2` | OndoAggregator | impl | live | no |
+| ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | live | no |
+| ethereum | `0x0b2456017c5df2dfc0289740c4b352049892780c` | WrappedBackedTokenImplementation | proxy | live | no |
+| ethereum | `0x0b8493f5c3e335602557c4684e46502c43c6fb64` | ACLManager | impl | live | yes |
+| ethereum | `0x0d123e921ec8810699dcb8c77a77d159064e6c1f` | BaseParaSwapAdapter | impl | live | no |
+| ethereum | `0x0df7427cd2d104ec6c452aaeac7b13b1addb2d15` | IncentivizedERC20 | impl | live | no |
+| ethereum | `0x10bc9308c6045946918aebe38a5c9ca8cd2c6542` | IncentivizedERC20-2 | impl | live | no |
+| ethereum | `0x1123a070386e131db934b4136b1219da7e97be75` | BaseParaSwapAdapter-2 | impl | live | no |
+| ethereum | `0x119505b31d369d5cf27c149a0d132d8cdd99cf5e` | IncentivizedERC20-3 | impl | live | no |
+| ethereum | `0x13536966973f5f463918cef7cd6e1545cd790116` | EdelStreams_XStocks | impl | live | no |
+| ethereum | `0x243aecbd7964ffda26c3c8e66f175853a10fafe7` | BaseParaSwapAdapter-3 | impl | live | no |
+| ethereum | `0x245f4a173dd1e40017b17011710f5a5c467f121d` | IncentivizedERC20-4 | impl | live | no |
+| ethereum | `0x2511bda9c038ad1a82f7d283c5df72b6cfc90303` | PoolConfigurator | impl | live | yes |
+| ethereum | `0x28d7231fcfcc2ecb512cbe07a4b5fd9e9911653d` | RewardsController | impl | live | yes |
+| ethereum | `0x2970e7ea5e74052e99455931931840d51c0835f9` | PullRewardsTransferStrategy | impl | live | no |
+| ethereum | `0x2aa5c4c61a25c50d96cfcc325de62fa19bdd406b` | PoolAddressesProviderRegistry | impl | live | no |
+| ethereum | `0x2c05f8a12bb64ea7fa3ca98dcddb60b43bf236b8` | DefaultReserveInterestRateStrategy | impl | live | no |
+| ethereum | `0x349fa7e2a00fd64855713cf9b11e3c4c0232082c` | ERC4626EdelWrapperGateway | impl | live | no |
+| ethereum | `0x38554e6cc65637a5d4b6fb8daefb7cc7254c9a54` | WalletBalanceProvider | impl | live | no |
+| ethereum | `0x38c14f1091947572f592ca4de13462a4f5195cb2` | IncentivizedERC20-5 | impl | live | no |
+| ethereum | `0x3a233ecd6ff9e0b20fad37bf827937d2f7feae6a` | WrappedTokenGatewayV3 | impl | live | no |
+| ethereum | `0x3eeeb3cd20f844a578807fc457388ceb9a67faa6` | BaseImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x4455e3f74adbe89d46e4ba1ef3231f0695664df8` | MockAggregator | impl | live | no |
+| ethereum | `0x465289527cc6f5946bbfc87442cbfbbd69fb9c99` | ParaSwapWithdrawSwapAdapterV3 | impl | live | no |
+| ethereum | `0x4eb30706831854b78bca2472952f84d92e30425c` | BaseImmutableAdminUpgradeabilityProxy-2 | impl | live | no |
+| ethereum | `0x4f8f2946a09a7137ea72f7f79261bf8f77f0d5e0` | StableDebtToken | impl | live | no |
+| ethereum | `0x56149c159544b23530ff772244f9011dcec297d5` | ParaSwapDebtSwapAdapterV3 | impl | live | no |
+| ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | live | no |
+| ethereum | `0x56e9577255b7e4289b78c8c9bdef20abf69bb158` | UiPoolDataProviderV3 | impl | live | no |
+| ethereum | `0x5d61e0b36b9419bcbbf7e32eb6b49c53188ae526` | IncentivizedERC20-6 | impl | live | no |
+| ethereum | `0x5e11a40ba857e3c24c07798f2cf386b0d2df6161` | DelegationAwareAToken | impl | live | no |
+| ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | live | no |
+| ethereum | `0x6803ac1ad765a6d03a52b7b89302acf66f262a99` | BaseAdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x69193ab664dfb61ef9093fdc9ef229d560de1c8e` | IncentivizedERC20-7 | impl | live | no |
+| ethereum | `0x6e4e969ec8ce68e8b3e22ec71ef30791ecd54b18` | IncentivizedERC20-8 | impl | live | no |
+| ethereum | `0x72fc034dc80f4fdf5436c2772e844170ca73e971` | BaseAdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x74e9b93b8ad0f43f1dd0bca596ab6cce663efa71` | EdelWrappedXStocksAdapter | impl | live | no |
+| ethereum | `0x7ff6bac9fedfa774060c880122bad2b607ba8a4d` | PoolAddressesProvider | impl | live | no |
+| ethereum | `0x82ac3babec0050c970d415854c8360b278056789` | EmissionManager | impl | live | no |
+| ethereum | `0x861381d4955d3fae194e9d60fb3233f22aa3562a` | PoolConfigurator-2 | impl | live | yes |
+| ethereum | `0x88c4c42ed68584ff02f5a00d5d3d985108a3961c` | ContractOneOFT | impl | live | no |
+| ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | live | no |
+| ethereum | `0x8f4fe9fbc38a5f87862be4be13264039b28848dd` | DataStreamsConsumer | impl | live | no |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | live | no |
+| ethereum | `0xa7d7f1b7d28c23bfe442e59a2a0d91b7ddd7df18` | ParaSwapRepayAdapterV3 | impl | live | no |
+| ethereum | `0xb5ace7f72413fd391300c45b4440e5f651fe8fb4` | IncentivizedERC20-9 | impl | live | no |
+| ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | live | no |
+| ethereum | `0xc87ed0c515ffd27474ccfc05f48ac206d4924637` | Pool | impl | live | no |
+| ethereum | `0xe1559d61af153ce8511dd2a1afb5ca92d7639d2e` | ParaSwapLiquiditySwapAdapterV3 | impl | live | no |
+| ethereum | `0xfc3f2b827a1176641022a9369c483b6faa2cb6f3` | EdelZap | impl | live | no |

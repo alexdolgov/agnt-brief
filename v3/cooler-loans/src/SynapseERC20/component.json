@@ -1,0 +1,18 @@
+{
+  "component": "SynapseERC20",
+  "main_contract": "SynapseERC20",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0b5740c6b4a97f90ef2f0220651cca420b868ffb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

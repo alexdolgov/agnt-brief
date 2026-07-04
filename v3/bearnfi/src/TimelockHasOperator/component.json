@@ -1,0 +1,18 @@
+{
+  "component": "TimelockHasOperator",
+  "main_contract": "TimelockHasOperator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2ad335e18c97d18561dd1a0c1447b1018b81f213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

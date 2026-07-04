@@ -1,0 +1,18 @@
+{
+  "component": "Optimism_Broadcaster",
+  "main_contract": "Optimism Broadcaster",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0fe4416214e95f0c67dc044aaf1e63d6972e0b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

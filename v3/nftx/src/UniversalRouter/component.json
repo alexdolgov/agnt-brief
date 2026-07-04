@@ -1,0 +1,26 @@
+{
+  "component": "UniversalRouter",
+  "main_contract": "UniversalRouter",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0da69287b4c1b28181e5d155dddda7fa5c32e5ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4529ad73b2cc8d4db0b0deba90de165e35c4b628",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

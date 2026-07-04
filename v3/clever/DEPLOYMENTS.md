@@ -1,0 +1,187 @@
+# clever — deployments
+
+152 verified deployment(s) across 75 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x0303e55b9b43fc5a0876bb8e41ca9efdd82e4768` | StakeDAOLockerProxy | impl | inactive | no |
+| ethereum | `0x057810cf20efd30745b368ec42f0b39879ca4eb1` | MetaCLever | impl | inactive | no |
+| ethereum | `0x06dfaf0e53ce24d43eac332bbdc07b690894df74` | ConcentratorAladdinETHVault | impl | inactive | no |
+| ethereum | `0x07867298d99b95772008583bd603cfa68b8c75e7` | TokenSale | impl | live | no |
+| ethereum | `0x0a6e1167c9b8599ee1deccb331aac176e2aa0b97` | ConcentratorVaultForAsdCRV | impl | inactive | no |
+| ethereum | `0x0e20d8b0ec57ca8157d9bc2beec2c28a80eaae8a` | StakeDAOCRVVault | impl | inactive | no |
+| ethereum | `0x0e5caa5c889bdf053c9a76395f62267e653afbb0` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| ethereum | `0x1104b4df568fa7af90b1bed1d78a2f71e748dc8a` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x11c907b3aedbd863e551c37f21dd3f36b28a6784` | GeneralTokenConverter | impl | live | no |
+| ethereum | `0x12b1326459d72f2ab081116bf27ca46cd97762a0` | ProxyAdmin | impl | live | no |
+| ethereum | `0x160d6e417be17e21712f004b87872a30799cb78f` | AladdinCRV | impl | inactive | no |
+| ethereum | `0x165a7a410c14054cd39d03b4b7cb392f61be6edc` | AladdinFXS | impl | inactive | no |
+| ethereum | `0x18fa0ce2a350cc574f562fe3d02b885417c4f6c1` | Furnace | impl | inactive | no |
+| ethereum | `0x190c58357b8dab707fdce1f646ee147f5c0ed85b` | DiamondLoupeFacet | impl | inactive | no |
+| ethereum | `0x1af1639f02e03107d95c6d1670ade9e7262c9fa5` | ConcentratorAladdinETHVault | impl | inactive | no |
+| ethereum | `0x1b544befd7a51d5cdb40f79eef5205f16a63cd98` | ConcentratorHarvesterFacet | impl | inactive | no |
+| ethereum | `0x1c0d72a330f2768daf718def8a19bab019eead09` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| ethereum | `0x1f57286f7a8083fb363d87bc8b1dccd685dc87ee` | ProxyAdmin | impl | live | no |
+| ethereum | `0x21cea3a3cd10ae1feb0759750970b7e86d33cac5` | TokenZapLogic | impl | live | no |
+| ethereum | `0x23384dd4380b3677b829c6c88c0ea9cc41c099bb` | ConcentratorStrategyFactory | impl | inactive | no |
+| ethereum | `0x261e3aeb4cd1ebfd0fa532d6acdd4b21ebdcd2de` | Vyper_contract | impl | live | no |
+| ethereum | `0x28f5763b7779ed64b9e0da0a9862571ba4a7309b` | Vesting | impl | live | no |
+| ethereum | `0x2a906eab9b088e6753670bc8d3840f9473745748` | FractionalToken | impl | inactive | no |
+| ethereum | `0x2b3e72f568f96d7209e20c8b8f4f2a363ee1e3f6` | StakeDAOCRVVault | proxy | live | no |
+| ethereum | `0x2b95a1dcc3d405535f9ed33c219ab38e8d7e0884` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x2c37f1dced208530a05b061a183d8937f686157e` | MetaCLever | proxy | live | no |
+| ethereum | `0x304047f1d867a00082c8549e81a2f0b389d869b4` | AladdinPriceOracle | impl | inactive | no |
+| ethereum | `0x30f2913cb010cdbe5f10d7b212119204d9ccef01` | Furnace | impl | inactive | no |
+| ethereum | `0x32366846354db5c08e92b4ab0d2a510b2a2380c8` | PlatformFeeSpliter | impl | live | no |
+| ethereum | `0x3415fcd2885c486e2d848403d51077f7176473c7` | RebalancePool | impl | inactive | no |
+| ethereum | `0x3557bd058d674dd0981a3ff10515432159f63318` | SmartWalletWhitelist | impl | inactive | no |
+| ethereum | `0x359eb1d2f45dbe9e74c8c8f51fde70fbf76f230f` | OwnershipFacet | impl | inactive | no |
+| ethereum | `0x36925622dc537c65cd6433703f7aeda5929b1cbf` | CvxFxsStakingStrategy | impl | inactive | no |
+| ethereum | `0x3abf0be21e5020007b6e2e201e292a7119bc2b0d` | Vyper_contract-2 | impl | inactive | no |
+| ethereum | `0x3c20ac688410be8f391be1fb00afc5c212972f86` | CLeverToken | impl | live | yes |
+| ethereum | `0x3cf54f3a1969be9916dad548f3c084331c4450b5` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x3d8facb2b65b8ceb682ade00e016c672ee6262c0` | Voting_Escrow | impl | inactive | no |
+| ethereum | `0x3eb6da2d3f39ba184aea23876026e0747fb0e17f` | TokenSale | impl | live | no |
+| ethereum | `0x41c94ea5a7724d8f4f6e67e529e809b9eab11db2` | MetaCLever | impl | inactive | no |
+| ethereum | `0x43e54c2e7b3e294de3a155785f52ab49d87b9922` | TransparentUpgradeableProxy-10 | proxy | live | no |
+| ethereum | `0x4657e91f056a77493b7e47d4ccd8c8afafc84283` | TransparentUpgradeableProxy | impl | inactive | no |
+| ethereum | `0x4aa2afd5616beec2321a9efd7349400d4f18566a` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0x4b2c6f67bc775fd64de3cec188f0f3e960ce0750` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0x4c5c52d507066780500e627d592dbe11476e7c21` | stETHGateway | impl | inactive | no |
+| ethereum | `0x4d90ba583cd7f524ad76c5c07eccf81a32061e65` | TransparentUpgradeableProxy | impl | inactive | no |
+| ethereum | `0x4eeca6bfa3c96210260691639827eef4d80fa8c6` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| ethereum | `0x505002bbadac4ebc17666b1622cff0605fe90bd5` | Market | impl | inactive | no |
+| ethereum | `0x50b47c4a642231dbe0b411a0b2fbc1ebd129346d` | ConcentratorAladdinETHVault | proxy | live | no |
+| ethereum | `0x53805a76e1f5ebbfe7115f16f9c87c2f7e633726` | FractionalToken | proxy | live | no |
+| ethereum | `0x5380d2580583e33a8b7d168905d11fe1f11cf94a` | TransparentUpgradeableProxy-4 | impl | inactive | no |
+| ethereum | `0x5432526e75d45369970b8616f54b25c831d1e2b2` | ConcentratorStrategy | impl | inactive | no |
+| ethereum | `0x572deca882f4c9abcbdc6f020601a1b789d11983` | MultipleVestHelper | impl | live | no |
+| ethereum | `0x592e353c5b97356e99eaf6a72b971ba1c9695593` | Vesting-2 | impl | live | yes |
+| ethereum | `0x59866ec5650e9ba00c51f6d681762b48b0ada3de` | ConcentratorVaultForAsdCRV | proxy | live | no |
+| ethereum | `0x5eb30ce188b0abb89a942ced6cbe114f4d852082` | AladdinCRVZap | impl | inactive | no |
+| ethereum | `0x6037bb1bba598bf88d816cad90a28cc00fe3ff64` | TransparentUpgradeableProxy-7 | proxy | live | no |
+| ethereum | `0x6258b0fbc8d33d412f4c731b7d83879c3396c425` | TokenZapLogic | impl | live | no |
+| ethereum | `0x64acb0882c8b174c84dbd492ed307ef0ed4e732f` | VoteProxy | impl | inactive | no |
+| ethereum | `0x674a745adb09c3333d655cc63e2d77acbe6de935` | TokenSale | impl | live | no |
+| ethereum | `0x695eb50a92ad2aebb89c6dd1f3c7546a28411403` | PlatformFeeBurner | impl | live | no |
+| ethereum | `0x69671c808c8f1c1490a4c9e0145884dfb5631378` | BasePool | impl | live | no |
+| ethereum | `0x6e513d492ded19ad8211a57cc6b4493c9e6c857b` | AllInOneGateway | impl | live | no |
+| ethereum | `0x6f77685ae7a1288d2480440b7bb0fa2c317950f9` | MetaFurnace | impl | inactive | no |
+| ethereum | `0x6f81a07781715ee88159ee553947969cc9a095c1` | AladdinCRV | impl | inactive | no |
+| ethereum | `0x705299acafcb8974057cee1b7529dda12a0042fc` | TransparentUpgradeableProxy-4 | impl | inactive | no |
+| ethereum | `0x7059eaebad4f26c0fd4183fcecbf93bb21e81e3c` | MetaFurnace | impl | inactive | no |
+| ethereum | `0x7185e3477ad54a8186e623768833e8c2686591d3` | TransparentUpgradeableProxy-8 | proxy | live | no |
+| ethereum | `0x7d07faf933a410a59f3048aec5d61b46efdfed72` | TransparentUpgradeableProxy-5 | impl | inactive | no |
+| ethereum | `0x7d6c00032cabc699b908ece34097ff1a159da998` | ConcentratorAladdinETHVault | proxy | inactive | no |
+| ethereum | `0x7dd09b5309dfb3531e6a35475a647474588acda6` | StakeDAOCRVVault | impl | inactive | no |
+| ethereum | `0x7ed96ebcdad7ee5d98d6f7624dd18c54b8bf360b` | CvxCrvWeightAdjuster | impl | inactive | no |
+| ethereum | `0x7f160efc2436f1af4e9e8a57d0a5beb8345761a9` | MetaFurnace | proxy | live | no |
+| ethereum | `0x7f6ce8b08bca036c60f71693cd9425614ab8f9be` | AladdinETH | impl | inactive | no |
+| ethereum | `0x8341889905bdef85b87cb7644a93f7a482f28742` | Vesting | impl | live | no |
+| ethereum | `0x84c82d43f1cc64730849f3e389fe3f6d776f7a4e` | Vesting | impl | live | no |
+| ethereum | `0x858d62ce483b8ab538d1f9254c3fd3efe1c5346f` | TokenZapLogic | impl | live | no |
+| ethereum | `0x883fd355debf417f82aa9a3e2936971487f7df1f` | TokenZapLogic-2 | impl | live | no |
+| ethereum | `0x8958677ca44da460d487335c09c045fbd0c43382` | SignatureVerifier | impl | inactive | no |
+| ethereum | `0x8c7e36a669b4b9f55608c7d3c373e8b9f19c444d` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| ethereum | `0x8fc7906fc6047679dad53c0c3b40e135486421e9` | VeFeeGateway | impl | live | no |
+| ethereum | `0x9142d4adae1d0b43798e1c5a844cc4f2e3de92fb` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| ethereum | `0x922837838aed2937742cff7b0adfd74157e3b9d7` | AladdinSdCRV | impl | inactive | no |
+| ethereum | `0x92d0cb7e56806bf977e7f5296ea2fe84b475fe83` | LeveragedToken | impl | inactive | no |
+| ethereum | `0x94cc627db80253056b2130aac39abb252a75f345` | CvxCrvStakingWrapperStrategy | impl | inactive | no |
+| ethereum | `0x95fa41d06e4a7f1e219dbae738e987893b64e194` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x96c68d861ada016ed98c30c810879f9df7c64154` | TransparentUpgradeableProxy-6 | proxy | live | yes |
+| ethereum | `0x98626a8e560014b6d25336ef72969d8ec1188e2d` | StakeDAOLockerProxy | impl | inactive | no |
+| ethereum | `0x99373ae646ed89b9a466c4256b09b10dbcc07b40` | TransparentUpgradeableProxy | impl | inactive | no |
+| ethereum | `0x9a3c5ec5de774e30074e623e2bf35395beee3c98` | DiamondCutFacet | impl | inactive | no |
+| ethereum | `0x9b54b7703551d9d0ced177a78367560a8b2edda4` | ProxyAdmin | impl | live | no |
+| ethereum | `0x9d6dc3dbc7cc5e1d7241601473fd63d2bd1573f9` | SdCRVBribeBurner | impl | inactive | no |
+| ethereum | `0xa5d31b528d2710af19e57feda324483c14ae0f12` | TransparentUpgradeableProxy-7 | impl | inactive | no |
+| ethereum | `0xa5e2ec4682a32605b9098ddd7204fe84ab932fe4` | Diamond | proxy | live | no |
+| ethereum | `0xa617206663343b6353acf27566586ee9b53dfb2b` | ConverterRegistry | impl | inactive | no |
+| ethereum | `0xa619cb48efd42893a79d8742e2b6bcebb0965d58` | TransparentUpgradeableProxy-6 | impl | inactive | yes |
+| ethereum | `0xa677d95b91530d56791fba72c01a862f1b01a49e` | Proxy | proxy | live | yes |
+| ethereum | `0xa7625dd9f2d8a95a0d1ac7e8671547197e9fcaf0` | ConcentratorStrategy | impl | inactive | no |
+| ethereum | `0xad4cac207a0bfed10df8a4fc6a28d377cac730e0` | MetaCLever | proxy | live | no |
+| ethereum | `0xadc6a89d6df7374629ea3cfd0737843709d29f66` | ConcentratorStrategy | impl | inactive | no |
+| ethereum | `0xaf3406d5b9c8d921042a30713aa3f72fea89e35b` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| ethereum | `0xaf345c813ce17cc5837bfd14a910d365223f3b95` | GeneralTokenConverter-2 | impl | inactive | no |
+| ethereum | `0xaf59d144357dcc8a852ad601f27bf6310b657a7f` | RewardClaimHelper | impl | live | no |
+| ethereum | `0xb09e34dd25d5e88a1e9ff6f6418109927675b658` | wstETHWrapper | impl | inactive | no |
+| ethereum | `0xb15ad6113264094fd9bf2238729410a07ebe5aba` | AladdinETH | proxy | live | no |
+| ethereum | `0xb2fcee71b25b62bafe442c58af58c42143673cc1` | MetaCLever | proxy | live | no |
+| ethereum | `0xb7892e43433418f349c6b2dfd54924ef8d5e92dc` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| ethereum | `0xbbd9099a5bff3b33c0f37015c553c93da726d49d` | TransparentUpgradeableProxy-3 | impl | live | no |
+| ethereum | `0xbccb5bcd5dea5511ac11114ef4fed908a45832cf` | StakeDAOLockerProxy | impl | inactive | no |
+| ethereum | `0xbfb1476fb02f60c809aeb8cbc0b00898ed370422` | ConcentratorStrategy | impl | inactive | no |
+| ethereum | `0xc40549aa1d05c30af23a1c4a5af6ba11fcafe23f` | Proxy-2 | proxy | live | no |
+| ethereum | `0xc56b67f58ecf4c9906548cb28d13ba6b8f18249c` | StakeDaoHarvesterFacet | impl | inactive | no |
+| ethereum | `0xc65d58a33d9917df3e1a4033ed73506d9b6ace6c` | ConcentratorStrategy | impl | inactive | no |
+| ethereum | `0xc8ff37f7d057df1bb9ad681b53fa4726f268e0e8` | TransparentUpgradeableProxy-12 | proxy | live | no |
+| ethereum | `0xc999894424b281ce8602b50df5f2d57f91e852f7` | AladdinETH | proxy | inactive | no |
+| ethereum | `0xcb968efefc641b832db39470423cd88470c36075` | StakeDAOLockerProxy | impl | inactive | no |
+| ethereum | `0xcb9c51f1e848dedba5c78d936da3d17bc37e57a7` | TransparentUpgradeableProxy | impl | inactive | no |
+| ethereum | `0xce4dcc5028588377e279255c0335effe2d7ab72a` | Proxy | proxy | live | yes |
+| ethereum | `0xce938c27c04d4a638307d44e28515d4bcd28bd74` | TransparentUpgradeableProxy-5 | impl | inactive | no |
+| ethereum | `0xcffd499c1a8699e0a57c82c95fcc9a33bb70ef90` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| ethereum | `0xd069866aced882582b88e327e9e79da4c88292b1` | TokenZapLogic | proxy | live | no |
+| ethereum | `0xd2791781c367b2f512396105c8ab26479876e973` | PlatformFeeDistributor | impl | live | no |
+| ethereum | `0xd2b0941672cbe3a8609471a72072d2438f6ae099` | Vesting | impl | live | no |
+| ethereum | `0xd3b15898d10b63ddc309c287f7b68b768afb777c` | AladdinETH | impl | inactive | no |
+| ethereum | `0xd3eb992a71b1362a80893e3d7002ea7a84425a84` | AladdinSdCRV | impl | inactive | no |
+| ethereum | `0xd479c1e6702db01b27255361908fc7b083ef3195` | MultipleVestHelper | impl | live | no |
+| ethereum | `0xd6e3bb7b1d6fa75a71d48cfb10096d59abbf99e1` | TransparentUpgradeableProxy-13 | proxy | live | no |
+| ethereum | `0xd6efa5b63531e9ae61e225b02cbacd59092a35be` | PlatformFeeDistributor | impl | live | no |
+| ethereum | `0xd912d922e7e6d11d5caae204f7907f38e70abed2` | CLeverAMOHarvesterFacet | impl | inactive | no |
+| ethereum | `0xd9cc44c567b1effddde8461acd6c67028af99258` | AladdinFXSV2 | impl | inactive | no |
+| ethereum | `0xdaf03d70fe637b91ba6e521a32e1fb39256d3ec9` | AladdinFXSV2 | proxy | live | no |
+| ethereum | `0xdbb1aaeb04f3b5e2587e4bb849717e9ebd0c8acc` | Gauge_Controller | impl | inactive | no |
+| ethereum | `0xdc4ca266b54084cb2371a4258e080bce9e23545e` | AladdinSdCRV | impl | inactive | no |
+| ethereum | `0xdc846ccbce1be474e6410445ef5223ca00eced94` | TransparentUpgradeableProxy-6 | impl | inactive | yes |
+| ethereum | `0xddf819a8c95b4788dd1ed31db6e3726c229f3f8b` | TransparentUpgradeableProxy-3 | impl | live | no |
+| ethereum | `0xdec800c2b17c9673570fdf54450dc1bd79c8e359` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0xe063f04f280c60aeca68b38341c2eecbec703ae2` | LeveragedToken | proxy | live | no |
+| ethereum | `0xe6fbe09f13d652d647594b4cd13a06946c2b5844` | TransparentUpgradeableProxy | impl | inactive | no |
+| ethereum | `0xe7b9c7c9ca85340b8c06fb805f7775e3015108db` | Proxy | proxy | live | yes |
+| ethereum | `0xe86cf56582ee0a798b3490886de6cb59d56e4aad` | StakeDAOCRVVault | impl | inactive | no |
+| ethereum | `0xeb0ea9d24235ab37196111eedd656d56ce4f53b1` | MetaCLever | proxy | live | no |
+| ethereum | `0xeb5eb007ab39e9831a1921e8116bc353afe5ba2c` | AladdinFXS | impl | inactive | no |
+| ethereum | `0xeb937d47ab60ddd50e9c04c98cecb21e7e009773` | MetaFurnace | proxy | inactive | no |
+| ethereum | `0xeba9a8fdd2539d33e070c66afc1127478ba78054` | TransparentUpgradeableProxy-8 | impl | inactive | no |
+| ethereum | `0xebdb538e339fb7523c52397087b8f2b06c1a718e` | TokenZapLogic | impl | live | no |
+| ethereum | `0xf05e58fcea29ab4da01a495140b349f8410ba904` | CLeverToken | impl | live | yes |
+| ethereum | `0xf29fafca79caa5ea426b03014d653f2361d254c1` | StakeDAOCRVVault | impl | inactive | no |
+| ethereum | `0xf57b53df7326e2c6bcfa81b4a128a92e69cb87b0` | GaugeRewardDistributor | impl | live | no |
+| ethereum | `0xf5d1ca341e1baadd986d43b226f92b778c75c8ca` | MetaCLever | proxy | inactive | no |
+| ethereum | `0xf98af660d1ff28cd986b205d6201fb1d5ee231a3` | SdCRVBribeBurner | impl | inactive | no |
+| ethereum | `0xfa86aa141e45da5183b42792d99dede3d26ec515` | ConcentratorHarvesterFacet | proxy | inactive | no |
+| ethereum | `0xfc08757c505ea28709df66e54870fb6de09f0c5e` | Proxy-2 | proxy | live | no |
+| ethereum | `0xfc7ea943f62aee5d40c0346dc45c464f74c35267` | SmartWalletWhitelist | impl | inactive | no |
+
+## Source unavailable (25)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- ethereum `0x4a4494ceb201277c51f13b5a4c86627214e37152`
+- ethereum `0x55055b53867ed4cd182b3a87444f02f560907985`
+- ethereum `0x617408c93108e1830f27cd532b7c3e393652295a`
+- ethereum `0x6c280db098db673d30d5b34ec04b6387185d3620`
+- ethereum `0x72953a5c32413614d24c29c84a66ae4b59581bbf`
+- ethereum `0x86e917ad6cb44f9e6c8d9fa012acf0d0cfcf114f`
+- ethereum `0x9098e25a09efa247eed07ced3b46546c5a6e58ad`
+- ethereum `0x927ddc5a776f2bc225b9fb9ec16bdcee09eb6c0d`
+- ethereum `0x94be07d45d57c7973a535c1c517bd79e602e051e`
+- ethereum `0x9b02548de409d7aaee228bfa3ff2bca70e7a2fe8`
+- ethereum `0xa47a8a0fa6bd6a596d15e83c4a91c97305a75c5b`
+- ethereum `0xa5d9358c60fc9bd2b508eda17c78c67a43a4458c`
+- ethereum `0xb3ad645db386d7f6d753b2b9c3f4b853da6890b8`
+- ethereum `0xb5e7f9cb9d3897808658f1991ad32912959b42e2`
+- ethereum `0xb926f1567943992a1cf6868930d0a0bdc896fdcb`
+- ethereum `0xb992e8e1943f40f89301ab89a5c254f567af5b63`
+- ethereum `0xb9cd9979718e7e4c341d8d99da3f1290c908fbdd`
+- ethereum `0xc4763c35569f7ce0ce42b30edebfc5bc80eb96b4`
+- ethereum `0xc5022291ca8281745d173bb855dcd34dda67f2f0`
+- ethereum `0xe4c09928d834cd58d233cd77b5af3545484b4968`
+- ethereum `0xe6aaf8fbb56488941f619a9adb0eb4d89fa9d217`
+- ethereum `0xe73b8a36093850fc2d7029d678cee8ec482a79b3`
+- ethereum `0xea99147773782cc88a03d76a7c9e30152d97fc0b`
+- ethereum `0xf758be28e93672d1a8482be15eaf21aa5450f979`
+- ethereum `0xf9078fb962a7d13f55d40d49c8aa6472abd1a5a6`

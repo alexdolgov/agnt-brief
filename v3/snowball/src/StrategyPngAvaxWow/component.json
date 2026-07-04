@@ -1,0 +1,18 @@
+{
+  "component": "StrategyPngAvaxWow",
+  "main_contract": "StrategyPngAvaxWow",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x519145555a961b9cc59fd834790840389bd584b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

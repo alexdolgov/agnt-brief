@@ -1,0 +1,18 @@
+{
+  "component": "DebtToken",
+  "main_contract": "DebtToken",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbfcd661be34c99920036f176876746b9f5b68c26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

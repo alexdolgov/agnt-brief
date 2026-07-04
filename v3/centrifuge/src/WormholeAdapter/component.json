@@ -1,0 +1,18 @@
+{
+  "component": "WormholeAdapter",
+  "main_contract": "WormholeAdapter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4be430401760075315e931dd34b892dfdfc706a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

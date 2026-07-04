@@ -1,0 +1,18 @@
+{
+  "component": "ZeroLiquidDevelopmentMarketingVesting",
+  "main_contract": "ZeroLiquidDevelopmentMarketingVesting",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ae5e92d24edcb56e780f90c7bf69f014eb0b1aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

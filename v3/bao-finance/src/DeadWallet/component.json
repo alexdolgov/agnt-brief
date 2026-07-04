@@ -1,0 +1,18 @@
+{
+  "component": "DeadWallet",
+  "main_contract": "DeadWallet",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90795d4676e50ccccaa260a415b61587e7106be2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

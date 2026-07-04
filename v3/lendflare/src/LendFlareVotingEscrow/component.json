@@ -1,0 +1,26 @@
+{
+  "component": "LendFlareVotingEscrow",
+  "main_contract": "LendFlareVotingEscrow",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6615c44bc3cc90839ad6f729eeeabd2aaf6f9a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf706fd21cd2c643eea18fdafd819baa7f4cff2ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

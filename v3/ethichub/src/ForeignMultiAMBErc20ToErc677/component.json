@@ -1,0 +1,58 @@
+{
+  "component": "ForeignMultiAMBErc20ToErc677",
+  "main_contract": "ForeignMultiAMBErc20ToErc677",
+  "source_file_count": 3,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x280f04a988513610584057bf3fde1f56f4d22ca9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dca02c93988d3ae2451c588610c62671d38c961",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b86181abcaefc008b561e27c0aee64bb5eb8dbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5275e7264ab0bb75d970e7442de0aadd0c0b85ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7bff37bda2318125c6b895d4f2b50bcd9e0cc40e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0a18f960221c6d56871c29e5dd7b838e79c2e94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

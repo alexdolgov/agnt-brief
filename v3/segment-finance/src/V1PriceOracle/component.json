@@ -1,0 +1,26 @@
+{
+  "component": "V1PriceOracle",
+  "main_contract": "V1PriceOracle",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf88af457ffa385ee115d794558dd0530fbf3b590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x3de14cf61bf658fc327486b8c03d8085ac88e944",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

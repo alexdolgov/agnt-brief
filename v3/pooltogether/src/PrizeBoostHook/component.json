@@ -1,0 +1,18 @@
+{
+  "component": "PrizeBoostHook",
+  "main_contract": "PrizeBoostHook",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x177b14c6b571262057c3c30e3ae6bb044f62e55c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SecondaryRewarder",
+  "main_contract": "SecondaryRewarder",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbf35529d9333feee50c17aa0a39eeabea2b3abb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

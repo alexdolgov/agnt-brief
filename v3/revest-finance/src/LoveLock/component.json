@@ -1,0 +1,18 @@
+{
+  "component": "LoveLock",
+  "main_contract": "LoveLock",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x780ce455bc835127182809bc8ff36fffe55bc4b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

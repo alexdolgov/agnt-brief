@@ -1,0 +1,18 @@
+{
+  "component": "CommunityIssuance",
+  "main_contract": "CommunityIssuance",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fa46e8cbceff8468db2ec2fd77731d8a11d3d86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GenericEuler",
+  "main_contract": "GenericEuler",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f25fabc5bf3f3a185ca051de22511a4e9b3e86a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

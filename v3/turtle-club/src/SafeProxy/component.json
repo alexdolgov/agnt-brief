@@ -1,0 +1,34 @@
+{
+  "component": "SafeProxy",
+  "main_contract": "SafeProxy",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e0355922ef3a5b77d29287c808aeafb4e7f25b2",
+      "is_proxy": true,
+      "implementation_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x58a916ad66584811c939aa844025036e5078e811",
+      "is_proxy": true,
+      "implementation_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb6301976f04e6a58d6e57ff04144a31d911d3a25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BitFiStablecoinZap",
+  "main_contract": "BitFiStablecoinZap",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x140b5517df7e33878eb0a494d6882cfac54b66cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

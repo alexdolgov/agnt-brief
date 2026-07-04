@@ -1,0 +1,18 @@
+{
+  "component": "MarketFactory",
+  "main_contract": "MarketFactory",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x046d6038811c6c14e81d5de5b107d4b7ee9b4cde",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

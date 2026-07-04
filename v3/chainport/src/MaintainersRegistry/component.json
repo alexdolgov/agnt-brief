@@ -1,0 +1,18 @@
+{
+  "component": "MaintainersRegistry",
+  "main_contract": "MaintainersRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

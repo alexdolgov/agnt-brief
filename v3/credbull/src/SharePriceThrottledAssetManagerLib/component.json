@@ -1,0 +1,18 @@
+{
+  "component": "SharePriceThrottledAssetManagerLib",
+  "main_contract": "SharePriceThrottledAssetManagerLib",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x65d9202b5494450310c43b6b47942305859a349c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

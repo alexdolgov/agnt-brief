@@ -1,0 +1,18 @@
+{
+  "component": "BitDAO",
+  "main_contract": "BitDAO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a4b46696b2bb4794eb3d4c26f1c55f9170fa4c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

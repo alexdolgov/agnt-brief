@@ -1,0 +1,18 @@
+{
+  "component": "StakeContract-2",
+  "main_contract": "StakeContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c331ffd3eb1fc89a7562258597225cc5cc48f7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

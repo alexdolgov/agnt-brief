@@ -1,0 +1,42 @@
+{
+  "component": "LPStakingRewards",
+  "main_contract": "LPStakingRewards",
+  "source_file_count": 11,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80850db68db03792ca5650fbdaccebe1da5e52bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x834c3bb26bb1bf025dc6b66ad5d7f9003333606b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa457ac93bc522168a23f00ddc33f48aa1ac2793b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc75ba7e3a40e2293817b590e47beb01e52a0c9b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

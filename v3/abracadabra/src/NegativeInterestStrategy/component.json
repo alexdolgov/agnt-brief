@@ -1,0 +1,18 @@
+{
+  "component": "NegativeInterestStrategy",
+  "main_contract": "NegativeInterestStrategy",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa5abd043aaaff2cdb0de3de45a010f0355a1c6e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

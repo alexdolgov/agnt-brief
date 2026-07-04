@@ -1,0 +1,18 @@
+{
+  "component": "NFTMarket",
+  "main_contract": "NFTMarket",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x30a5190d1a212a42383970a1faa207000555e6f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

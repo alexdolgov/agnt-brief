@@ -1,0 +1,18 @@
+{
+  "component": "Generic_governor",
+  "main_contract": "Generic governor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb7a528cf6d36f736fa678a629b98a427d43e5ba5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

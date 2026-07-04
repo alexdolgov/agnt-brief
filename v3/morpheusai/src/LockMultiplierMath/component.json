@@ -1,0 +1,18 @@
+{
+  "component": "LockMultiplierMath",
+  "main_contract": "LockMultiplierMath",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x345b8b23c38f70f1d77560c60493bb583f012cb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

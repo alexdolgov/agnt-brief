@@ -1,0 +1,18 @@
+{
+  "component": "BaseCLAdapter",
+  "main_contract": "BaseCLAdapter",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8bd493f48af48f1c5199fe80bc0c57c08557494c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

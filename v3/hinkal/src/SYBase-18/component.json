@@ -1,0 +1,18 @@
+{
+  "component": "SYBase-18",
+  "main_contract": "SYBase",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe9a9b386fdba0de5fd76fa2495b0940102ea1e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

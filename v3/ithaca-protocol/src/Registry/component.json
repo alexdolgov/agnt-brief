@@ -1,0 +1,36 @@
+{
+  "component": "Registry",
+  "main_contract": "Registry",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/ithacaprotocol.io_EVM_Contracts_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3b555e087099d05cdb850fac9e22b29d702557d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f6bdb9f750eb3681553b8af7523363ef7c19691",
+      "is_proxy": true,
+      "implementation_address": "0x64fe921c2017000deb1094dfc076c188b057a24a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x64fe921c2017000deb1094dfc076c188b057a24a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

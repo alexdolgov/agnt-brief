@@ -1,0 +1,26 @@
+{
+  "component": "DegenBoxTokenWrapper",
+  "main_contract": "DegenBoxTokenWrapper",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd3a238d0e0f47aac26defd2afcf03ea41da263c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdd45c6614305d705a444b3bab0405d68ac85dba5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

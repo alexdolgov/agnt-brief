@@ -1,0 +1,18 @@
+{
+  "component": "TvlAdapter_VAULT_V2",
+  "main_contract": "TvlAdapter_VAULT_V2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e4c808d762b969290b2d5fa89ed13c6b40c47dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

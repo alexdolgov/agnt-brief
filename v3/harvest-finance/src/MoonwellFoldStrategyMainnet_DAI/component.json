@@ -1,0 +1,26 @@
+{
+  "component": "MoonwellFoldStrategyMainnet_DAI",
+  "main_contract": "MoonwellFoldStrategyMainnet_DAI",
+  "source_file_count": 138,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x75dd7c88acf769235ca4bc75403419b9ceb9fd38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xad556498b0e3d34a06ff9066d7124da95beda8ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

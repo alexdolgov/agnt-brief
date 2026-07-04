@@ -1,0 +1,31 @@
+{
+  "component": "Proxy",
+  "main_contract": "Proxy",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://1324162391-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyihtTguEhuWiLBn09qwl%2Fuploads%2FweGipmdxSba2MgMJu8yl%2Fktl%20Audit%20Report%20(11-27-2025).pdf",
+    "https://1324162391-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyihtTguEhuWiLBn09qwl%2Fuploads%2Fzl2jDTZL4Akw5GuHXiKg%2Fktl%20Audit%20Report%20(03-12-2026%20part%202).pdf",
+    "https://content.gitbook.com/content/yihtTguEhuWiLBn09qwl/blobs/IzF1VSnPIPQtqI7Z2xxU/ktl%20Audit%20Report%20(05-14-2025).pdf",
+    "https://content.gitbook.com/content/yihtTguEhuWiLBn09qwl/blobs/NAQu7sNV6TV0uiNyb4bl/Cantina%20Audit%20Report%20(05-12-2025).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef",
+      "is_proxy": true,
+      "implementation_address": "0x30198aa66d057a6216db471fce234b98edc1e5ad",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef",
+      "is_proxy": true,
+      "implementation_address": "0x2af577d7e3baa01a991509f7f218dea1ff7d5bc4",
+      "liveness": "live"
+    }
+  ]
+}

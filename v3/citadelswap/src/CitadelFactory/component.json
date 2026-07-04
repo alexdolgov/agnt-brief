@@ -1,0 +1,18 @@
+{
+  "component": "CitadelFactory",
+  "main_contract": "CitadelFactory",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbe720274c24b5ec773559b8c7e28c2503dac7645",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

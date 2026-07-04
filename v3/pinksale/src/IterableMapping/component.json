@@ -1,0 +1,18 @@
+{
+  "component": "IterableMapping",
+  "main_contract": "IterableMapping",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00fec8b7ee9c14424f71b30dac7c1cfe054b6771",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

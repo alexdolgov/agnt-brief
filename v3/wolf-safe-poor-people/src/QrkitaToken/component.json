@@ -1,0 +1,18 @@
+{
+  "component": "QrkitaToken",
+  "main_contract": "QrkitaToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x921d3a6ed8223afb6358410f717e2fb13cbae700",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

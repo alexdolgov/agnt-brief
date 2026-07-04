@@ -1,0 +1,36 @@
+{
+  "component": "CVXStrategy",
+  "main_contract": "CVXStrategy",
+  "source_file_count": 32,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pessimistic-io/audits/blob/main/Locus%20Security%20Analysis%20by%20Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10b42ddeb9571445c8bf5fa83c834313c51b06dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8cc29eb2f467cef3efab049e9ba5b97d9d785edc",
+      "is_proxy": true,
+      "implementation_address": "0x10b42ddeb9571445c8bf5fa83c834313c51b06dc",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf99302d3d4a30d2ac26b4f8e0390171b29d5f547",
+      "is_proxy": true,
+      "implementation_address": "0x10b42ddeb9571445c8bf5fa83c834313c51b06dc",
+      "liveness": "live"
+    }
+  ]
+}

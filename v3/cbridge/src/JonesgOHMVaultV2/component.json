@@ -1,0 +1,26 @@
+{
+  "component": "JonesgOHMVaultV2",
+  "main_contract": "JonesgOHMVaultV2",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9a62e407028961eac4538453cb5d97038b69c814",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa0f154bb6d0e09ad04a85a1c6ca347d56e4d76ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

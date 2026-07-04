@@ -1,0 +1,18 @@
+{
+  "component": "AccessManager",
+  "main_contract": "AccessManager",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x071350a9ee4d153c272fc75ea9557372eb6ce0a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

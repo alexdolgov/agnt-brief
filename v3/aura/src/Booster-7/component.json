@@ -1,0 +1,20 @@
+{
+  "component": "Booster-7",
+  "main_contract": "Booster",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2520301408-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fr4kLuYPt1EhIEVbkxHD8%2Fuploads%2FDuQMD5ULdRtqravKUwxQ%2FCode4rena-Audit-Report-AuraFinance-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc181edc719480bd089b94647c2dc504e2700a2b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

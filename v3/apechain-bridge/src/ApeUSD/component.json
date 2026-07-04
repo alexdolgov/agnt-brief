@@ -1,0 +1,18 @@
+{
+  "component": "ApeUSD",
+  "main_contract": "ApeUSD",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

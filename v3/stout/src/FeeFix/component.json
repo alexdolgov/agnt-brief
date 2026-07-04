@@ -1,0 +1,18 @@
+{
+  "component": "FeeFix",
+  "main_contract": "FeeFix",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

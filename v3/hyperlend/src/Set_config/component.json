@@ -1,0 +1,18 @@
+{
+  "component": "Set_config",
+  "main_contract": "Set_config",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x492b2a469da034bbc1711713a79045e76734b585",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

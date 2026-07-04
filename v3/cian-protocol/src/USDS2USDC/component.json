@@ -1,0 +1,18 @@
+{
+  "component": "USDS2USDC",
+  "main_contract": "USDS2USDC",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe13b6c5eafd3f0cdb461ce0138e0fd0fc7db26e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

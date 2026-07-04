@@ -1,0 +1,28 @@
+{
+  "component": "NETT",
+  "main_contract": "NETT",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://4122350423-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEbMkSj6wrVk9IfPEsOGH%2Fuploads%2FlhV4zxJaCA5bczsO9uBu%2FNetswap%20Farm_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8196b259d309efe84d22e34ea76dc8547c99b7d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x90fe084f877c65e1b577c7b2ea64b8d8dd1ab278",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

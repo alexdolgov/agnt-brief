@@ -1,0 +1,18 @@
+{
+  "component": "NFTStrategyRange",
+  "main_contract": "NFTStrategyRange",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x742fd09cbbeb1ec4e3d6404dfc959a324deb50e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

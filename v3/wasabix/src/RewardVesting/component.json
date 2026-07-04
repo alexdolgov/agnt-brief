@@ -1,0 +1,18 @@
+{
+  "component": "RewardVesting",
+  "main_contract": "RewardVesting",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x219de705e6c22d6fbc27446161efcc7d5d055ecb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

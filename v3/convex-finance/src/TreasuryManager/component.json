@@ -1,0 +1,26 @@
+{
+  "component": "TreasuryManager",
+  "main_contract": "TreasuryManager",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x148e58bb8d9c5278b6505b40923e6152b5238cf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb48c21e9101a85ee6d00b4f1a7b946df1b09ea7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

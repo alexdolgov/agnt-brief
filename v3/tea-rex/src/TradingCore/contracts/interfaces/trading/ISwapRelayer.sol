@@ -1,0 +1,50 @@
+// SPDX-License-Identifier: BUSL-1.1
+// Teahouse Finance
+
+pragma solidity ^0.8.0;
+
+import {ERC20PermitUpgradeable} from "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PermitUpgradeable.sol";
+
+interface ISwapRelayer {
+
+    error LengthMismatch();
+    error NotWhitelisted();
+    error NotTradingCore();
+
+    event SetWhitelist(address sender, address[] router, bool[] isWhitelisted);
+
+    receive() external payable;
+
+    /// @notice Set up trading core
+    /// @notice Only owner can call this function
+    /// @param tradingCore Address of trading core
+    function setTradingCore(address tradingCore) external;
+
+    /// @notice Switch of router whitelist check
+    /// @notice Only owner can call this function
+    /// @param checkWhitelist Whether the whitelist mechanism is enabled
+    function setCheckWhitelist(bool checkWhitelist) external;
+
+    /// @notice Set up router whitelist
+    /// @notice Only owner can call this function
+    /// @param router Addresses of routers
+    /// @param isWhitelisted Setting for routers
+    function setWhitelist(address[] calldata router, bool[] calldata isWhitelisted) external;
+
+    /// @notice Swap for caller
+    /// @notice Only trading core can call this
+    /// @dev Source token should be transferred the swap relayer in advance
+    /// @param srcToken Source token of the swap
+    /// @param dstToken Destination token of the swap
+    /// @param amountIn Amount of source token to swap
+    /// @param swapRouter Swap router to be used
+    /// @param data Calldata for the assigned swap router
+    function swap(
+        ERC20PermitUpgradeable srcToken,
+        ERC20PermitUpgradeable dstToken,
+        uint256 amountIn,
+        address swapRouter,
+        bytes calldata data
+    ) external;
+
+}

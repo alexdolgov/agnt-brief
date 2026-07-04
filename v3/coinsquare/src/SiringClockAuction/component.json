@@ -1,0 +1,18 @@
+{
+  "component": "SiringClockAuction",
+  "main_contract": "SiringClockAuction",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

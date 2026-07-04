@@ -1,0 +1,18 @@
+{
+  "component": "DelegateApproval",
+  "main_contract": "DelegateApproval",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0ca14d901ffe8461b8196e593083d004993916b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

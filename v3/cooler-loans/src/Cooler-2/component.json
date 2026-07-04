@@ -1,0 +1,18 @@
+{
+  "component": "Cooler-2",
+  "main_contract": "Cooler",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe045bd0a0d85e980aa152064c06eae6b6ae358d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

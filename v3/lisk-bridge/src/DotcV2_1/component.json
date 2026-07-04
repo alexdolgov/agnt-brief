@@ -1,0 +1,18 @@
+{
+  "component": "DotcV2_1",
+  "main_contract": "DotcV2_1",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x423126258e7684356c0b11bf23c7e73a1d9ed3e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

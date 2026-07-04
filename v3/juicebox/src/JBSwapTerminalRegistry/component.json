@@ -1,0 +1,26 @@
+{
+  "component": "JBSwapTerminalRegistry",
+  "main_contract": "JBSwapTerminalRegistry",
+  "source_file_count": 37,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ce40d201cdec791de05810d17aaf501be167422",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x60b4f5595ee509c4c22921c7b7999f1616e6a4f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

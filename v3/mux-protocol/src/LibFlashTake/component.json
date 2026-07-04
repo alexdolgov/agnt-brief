@@ -1,0 +1,18 @@
+{
+  "component": "LibFlashTake",
+  "main_contract": "LibFlashTake",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x544458efd22b6953203409d06b50e5ec84205a11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

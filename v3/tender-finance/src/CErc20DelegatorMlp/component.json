@@ -1,0 +1,18 @@
+{
+  "component": "CErc20DelegatorMlp",
+  "main_contract": "CErc20DelegatorMlp",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd8d66f7b99caee7b764cb66cf9931cab49d4ab2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

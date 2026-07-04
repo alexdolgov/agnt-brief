@@ -1,0 +1,18 @@
+{
+  "component": "SafeERC20",
+  "main_contract": "SafeERC20",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x882b1b918641bb1b588a111811a55e48a18277f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

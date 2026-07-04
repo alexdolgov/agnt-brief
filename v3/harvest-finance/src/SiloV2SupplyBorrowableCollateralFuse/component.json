@@ -1,0 +1,18 @@
+{
+  "component": "SiloV2SupplyBorrowableCollateralFuse",
+  "main_contract": "SiloV2SupplyBorrowableCollateralFuse",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3d5c1b8d512bd41d845817f84e4ea29bf038fb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

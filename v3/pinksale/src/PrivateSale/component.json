@@ -1,0 +1,18 @@
+{
+  "component": "PrivateSale",
+  "main_contract": "PrivateSale",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x403f402fb7811bce200ab3123cc97b44601c6fbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

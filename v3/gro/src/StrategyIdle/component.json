@@ -1,0 +1,18 @@
+{
+  "component": "StrategyIdle",
+  "main_contract": "StrategyIdle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c3d9228ef8d9750d9c43f9155315dede57ddee1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

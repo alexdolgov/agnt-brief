@@ -1,0 +1,18 @@
+{
+  "component": "StrategyBase",
+  "main_contract": "StrategyBase",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x129a8d8000b8e80a99aa09fe40d189947108bcad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

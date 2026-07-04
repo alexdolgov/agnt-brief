@@ -1,0 +1,38 @@
+{
+  "component": "SortedTroves",
+  "main_contract": "SortedTroves",
+  "source_file_count": 40,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf",
+    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021%2Epdf",
+    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14d8d8011df2b396ed2bbc4959bb73250324f386",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84eb85a8c25049255614f0536bea8f31682e86f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa25269e41bd072513849f2e64ad221e84f3063f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

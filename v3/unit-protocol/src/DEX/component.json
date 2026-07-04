@@ -1,0 +1,18 @@
+{
+  "component": "DEX",
+  "main_contract": "DEX",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ff192e634ef6463be60792a384e5f1219a8373a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

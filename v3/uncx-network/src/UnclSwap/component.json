@@ -1,0 +1,18 @@
+{
+  "component": "UnclSwap",
+  "main_contract": "UnclSwap",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13dfb77a0ed9e439670416d27c5a2e0b31618fcd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

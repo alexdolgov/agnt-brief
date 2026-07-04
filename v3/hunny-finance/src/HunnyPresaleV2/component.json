@@ -1,0 +1,18 @@
+{
+  "component": "HunnyPresaleV2",
+  "main_contract": "HunnyPresaleV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0c8e763920ba7c544d4081f354c9f3a51138c016",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

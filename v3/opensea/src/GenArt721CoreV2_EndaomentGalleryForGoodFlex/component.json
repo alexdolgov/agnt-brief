@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721CoreV2_EndaomentGalleryForGoodFlex",
+  "main_contract": "GenArt721CoreV2_EndaomentGalleryForGoodFlex",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeafe7b73a3cfa804b761debcf077d4574588dfe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

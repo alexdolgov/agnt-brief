@@ -1,0 +1,18 @@
+{
+  "component": "cvxFxsStaking",
+  "main_contract": "cvxFxsStaking",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49b4d1df40442f0c31b1bbaea3ede7c38e37e31a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StratOption",
+  "main_contract": "StratOption",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1e9093365545e11cb02c36b2688e17b4dc447fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

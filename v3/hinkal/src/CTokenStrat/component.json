@@ -1,0 +1,18 @@
+{
+  "component": "CTokenStrat",
+  "main_contract": "CTokenStrat",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42b5d4a11c8fe76d114759f7f3d8e94ea28bdbe5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

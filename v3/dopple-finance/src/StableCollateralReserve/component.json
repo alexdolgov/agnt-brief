@@ -1,0 +1,18 @@
+{
+  "component": "StableCollateralReserve",
+  "main_contract": "StableCollateralReserve",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x25fceb9ad87c92a303acf1bf3017f3911b6d4433",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

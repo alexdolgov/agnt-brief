@@ -1,0 +1,26 @@
+{
+  "component": "EternalStorage",
+  "main_contract": "EternalStorage",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4edead1d133bbc60f5cd2ad303a1c45fd7cf3a62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc6be331ec8753ede58c3ea6b499f8d81483b618a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

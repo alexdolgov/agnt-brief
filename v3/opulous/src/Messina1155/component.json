@@ -1,0 +1,18 @@
+{
+  "component": "Messina1155",
+  "main_contract": "Messina1155",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x22e59b5bcfc7d9077f4f2fae5b71f7108f62c2e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

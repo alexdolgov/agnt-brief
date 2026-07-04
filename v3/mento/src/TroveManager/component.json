@@ -1,0 +1,20 @@
+{
+  "component": "TroveManager",
+  "main_contract": "TroveManager",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoLiquityV2_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb38aef2bf4e34b997330d626ebcd7629de3885c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

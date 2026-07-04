@@ -1,0 +1,18 @@
+{
+  "component": "HyperCoreSubAccountFactory",
+  "main_contract": "HyperCoreSubAccountFactory",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x23d57281db1a74c7f8b920c6e44c44d006fb8662",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

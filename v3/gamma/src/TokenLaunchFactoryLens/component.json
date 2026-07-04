@@ -1,0 +1,34 @@
+{
+  "component": "TokenLaunchFactoryLens",
+  "main_contract": "TokenLaunchFactoryLens",
+  "source_file_count": 188,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x59d994025c4c80385758538edaecdfc7ca4d107f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xb77ccc1ae59ff73d0e7a35dfc198b33fb57f0931",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xcb1f5aeec0442f41ec0d9aa163a810184c6ad749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

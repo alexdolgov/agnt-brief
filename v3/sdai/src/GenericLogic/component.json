@@ -1,0 +1,18 @@
+{
+  "component": "GenericLogic",
+  "main_contract": "GenericLogic",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x985323cd58346d83e0a90ab6b8fec7025fce20a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

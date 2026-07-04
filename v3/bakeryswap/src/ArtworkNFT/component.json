@@ -1,0 +1,18 @@
+{
+  "component": "ArtworkNFT",
+  "main_contract": "ArtworkNFT",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5bc94e9347f3b9be8415bdfd24af16666704e44f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

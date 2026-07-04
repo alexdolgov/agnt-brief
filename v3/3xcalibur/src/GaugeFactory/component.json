@@ -1,0 +1,28 @@
+{
+  "component": "GaugeFactory",
+  "main_contract": "GaugeFactory",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://2688442826-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdfX5W2ttoTF0UsavgZhT%2Fuploads%2FNiALqEGB39ep1N0BtMU2%2Fomniscia-report_1667586376.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4a6adf7969a9ceb46127a12a839722bf813ecdc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b351768c862da400024edc7270765bbdd5ae571",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

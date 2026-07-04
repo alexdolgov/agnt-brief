@@ -1,0 +1,18 @@
+{
+  "component": "VeilValidatorV3",
+  "main_contract": "VeilValidatorV3",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcc47760503e84a25e683cf9370fac24e381ffb12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

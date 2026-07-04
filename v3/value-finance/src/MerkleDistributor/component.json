@@ -1,0 +1,18 @@
+{
+  "component": "MerkleDistributor",
+  "main_contract": "MerkleDistributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70508dd819635a58babbae1362bc83c41a569a03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

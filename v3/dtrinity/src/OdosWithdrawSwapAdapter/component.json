@@ -1,0 +1,34 @@
+{
+  "component": "OdosWithdrawSwapAdapter",
+  "main_contract": "OdosWithdrawSwapAdapter",
+  "source_file_count": 21,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x82efb1f09d886b6d7d0bc97f582e10c3f13b4272",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xacd97c7d23a0534d79439b8d065d6d9d772ec949",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc72d79a0e88e52e3d262a5bdbcfe6bb929482af1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "CompositeLiquidityRouter",
+  "main_contract": "CompositeLiquidityRouter",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/cantina/2024-12-17.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2025-09-08.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0c8f71d19f87c0bd1b9bad2484ecc3388d5dbb98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OHMPrincipleDepository",
+  "main_contract": "OHMPrincipleDepository",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ee5c2865d6dff605e527b13c336f0b8774815b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

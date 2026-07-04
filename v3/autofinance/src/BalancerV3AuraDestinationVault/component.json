@@ -1,0 +1,18 @@
+{
+  "component": "BalancerV3AuraDestinationVault",
+  "main_contract": "BalancerV3AuraDestinationVault",
+  "source_file_count": 94,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc77161af2701f2fb880d4a7144ddc5f4e7d536c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

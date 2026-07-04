@@ -1,0 +1,26 @@
+{
+  "component": "ERC721Permit",
+  "main_contract": "ERC721Permit",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x39ad68c0ca12907c5f60a50c5b5f045cab16a3eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd652c25e5507270b826f00d724b20186fdd321bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

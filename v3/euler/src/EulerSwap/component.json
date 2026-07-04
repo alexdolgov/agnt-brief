@@ -1,0 +1,29 @@
+{
+  "component": "EulerSwap",
+  "main_contract": "EulerSwap",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/bounties/4d285eee-602e-440a-845e-25e155cec26a",
+    "https://cantina.xyz/portfolio/05b16317-997e-4b78-8316-acb656e2a0e2",
+    "https://cantina.xyz/portfolio/f145854a-327f-4f2c-a8bf-f61f95ae23dd",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity%5FEulerSwap%5Faudit.pdf",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity_EulerSwap_audit.pdf",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf",
+    "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05d6c4d46a794468f282469c0e9346f121ea92ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

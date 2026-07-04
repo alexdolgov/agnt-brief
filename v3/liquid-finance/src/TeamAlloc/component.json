@@ -1,0 +1,18 @@
+{
+  "component": "TeamAlloc",
+  "main_contract": "TeamAlloc",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d306e5f9b0b1ae6e74e6a9357f78d10f21f3128",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

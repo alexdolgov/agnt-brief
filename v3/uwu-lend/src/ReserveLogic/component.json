@@ -1,0 +1,18 @@
+{
+  "component": "ReserveLogic",
+  "main_contract": "ReserveLogic",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4be75900f8a54d7d5962e950f3af98d61f8fbdd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

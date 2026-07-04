@@ -1,0 +1,18 @@
+{
+  "component": "GenericVaultPriceOracle",
+  "main_contract": "GenericVaultPriceOracle",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x89b93862bebba6c98e6f158ef9fada004fde854a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

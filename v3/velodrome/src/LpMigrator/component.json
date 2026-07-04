@@ -1,0 +1,26 @@
+{
+  "component": "LpMigrator",
+  "main_contract": "LpMigrator",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3fdb481b25b24824a2339a4a1abd0b0bc7534e71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x87222ddc86a2bbe0f55088f0923f90e5d72668a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

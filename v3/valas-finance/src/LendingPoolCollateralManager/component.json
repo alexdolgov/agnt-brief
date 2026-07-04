@@ -1,0 +1,18 @@
+{
+  "component": "LendingPoolCollateralManager",
+  "main_contract": "LendingPoolCollateralManager",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbcffa47a9b3745a4eada0f4ba777144c448e0c30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LoansOTC",
+  "main_contract": "LoansOTC",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x285e17700867c8f46548c955d7e0d9b2d2a894c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

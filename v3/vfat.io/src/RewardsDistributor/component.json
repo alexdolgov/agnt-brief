@@ -1,0 +1,18 @@
+{
+  "component": "RewardsDistributor",
+  "main_contract": "RewardsDistributor",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9d4736ec60715e71afe72973f7885dcbc21ea99b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

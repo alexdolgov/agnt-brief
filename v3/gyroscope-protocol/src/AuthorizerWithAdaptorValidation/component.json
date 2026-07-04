@@ -1,0 +1,18 @@
+{
+  "component": "AuthorizerWithAdaptorValidation",
+  "main_contract": "AuthorizerWithAdaptorValidation",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa69e0ccf150a29369d8bbc0b3f510849db7e8eee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

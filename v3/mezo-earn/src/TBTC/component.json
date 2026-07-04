@@ -1,0 +1,18 @@
+{
+  "component": "TBTC",
+  "main_contract": "TBTC",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

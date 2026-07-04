@@ -1,0 +1,18 @@
+{
+  "component": "TranchedPool-3",
+  "main_contract": "TranchedPool",
+  "source_file_count": 90,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x76c3f166d086e6cc213fce0391e5087d3f4a77fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

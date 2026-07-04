@@ -1,0 +1,18 @@
+{
+  "component": "PooledCSAI",
+  "main_contract": "PooledCSAI",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02c9e4174e9d23bb7619c83ef5f771fcb1e6fdb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GasTest",
+  "main_contract": "GasTest",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x25da50811fd2809e15609b73ce4067dfafb9a3df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

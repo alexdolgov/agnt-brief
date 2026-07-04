@@ -1,0 +1,18 @@
+{
+  "component": "GmxTimelock",
+  "main_contract": "GmxTimelock",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0339740d92fb8baf73bab0e9eb9494bc0df1cafd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

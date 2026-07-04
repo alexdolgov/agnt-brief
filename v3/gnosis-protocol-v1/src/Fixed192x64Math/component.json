@@ -1,0 +1,18 @@
+{
+  "component": "Fixed192x64Math",
+  "main_contract": "Fixed192x64Math",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75a6d6251511af081f77f2b531c14808fb3805f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

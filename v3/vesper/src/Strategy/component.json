@@ -1,0 +1,60 @@
+{
+  "component": "Strategy",
+  "main_contract": "Strategy",
+  "source_file_count": 18,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-March21.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cbb7b6190bb2721e2b658e315692bd98cc2b9b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x210e1b607f995f687bc6d1a1574dfcdf1346f585",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f1d2b92ef396a17b25234238644e14e9e16b3fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d7d6db99dbb341b32b48b6248112304c3018578",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ff95072875ca9cd735ac57f29bf71b5e8ac0969",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99bfef73a7935492a19b63526d983e21eb37b12e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ChainlinkFeedOracle",
+  "main_contract": "ChainlinkFeedOracle",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc518208c11159844188f647413a427cbd70a3b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

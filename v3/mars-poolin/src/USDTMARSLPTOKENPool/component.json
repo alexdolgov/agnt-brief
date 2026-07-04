@@ -1,0 +1,18 @@
+{
+  "component": "USDTMARSLPTOKENPool",
+  "main_contract": "USDTMARSLPTOKENPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

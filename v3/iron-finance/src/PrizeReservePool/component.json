@@ -1,0 +1,18 @@
+{
+  "component": "PrizeReservePool",
+  "main_contract": "PrizeReservePool",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x18f9fe4a1e312c4ae0234d6962e0297c5b9fda44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

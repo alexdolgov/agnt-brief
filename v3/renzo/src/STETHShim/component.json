@@ -1,0 +1,20 @@
+{
+  "component": "STETHShim",
+  "main_contract": "STETHShim",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Renzo-Protocol/contracts-public/blob/master/Audit/NM0445-FINAL_RENZO.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0683c3cc018fb76874fdcc8620d15c4e467e34ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

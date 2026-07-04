@@ -1,0 +1,26 @@
+{
+  "component": "ShadowAdapter",
+  "main_contract": "ShadowAdapter",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x13173edbd7a290f593d70cfd4f4f8e6eafdebaf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x641cac894b2fa76ffd8446a3f4014e3db0e287cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC6538Registry",
+  "main_contract": "ERC6538Registry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6538e6bf4b0ebd30a8ea093027ac2422ce5d6538",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

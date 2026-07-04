@@ -1,0 +1,18 @@
+{
+  "component": "DappMaintenance",
+  "main_contract": "DappMaintenance",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6376e713cc5ffcda68bcd28bbaa632201c6b68f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

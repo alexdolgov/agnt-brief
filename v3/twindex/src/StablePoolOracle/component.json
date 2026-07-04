@@ -1,0 +1,18 @@
+{
+  "component": "StablePoolOracle",
+  "main_contract": "StablePoolOracle",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x220110ca8be439bd3cf26457d59e533b78dd0764",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

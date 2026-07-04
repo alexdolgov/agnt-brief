@@ -1,0 +1,18 @@
+{
+  "component": "FutureBondAVAX_R6",
+  "main_contract": "FutureBondAVAX_R6",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3488e74267861d2ac354499c8896740fbf09b39a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

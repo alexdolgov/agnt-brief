@@ -1,0 +1,18 @@
+{
+  "component": "CrossLock",
+  "main_contract": "CrossLock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63a61b21a5ed529986d572af747a22d96493aba3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

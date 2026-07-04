@@ -1,0 +1,18 @@
+{
+  "component": "BillingConnector",
+  "main_contract": "BillingConnector",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8017b9af3f199cc6b08a48da3859410f20bbea72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

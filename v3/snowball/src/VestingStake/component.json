@@ -1,0 +1,18 @@
+{
+  "component": "VestingStake",
+  "main_contract": "VestingStake",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xed7f93c8fd3b96b53c924f601b3948175d2820d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

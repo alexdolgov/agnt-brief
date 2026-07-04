@@ -1,0 +1,22 @@
+{
+  "component": "ECDSAPPSOracle",
+  "main_contract": "ECDSAPPSOracle",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.06.30-cantinacode.pdf",
+    "https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.07-GetRecon.pdf",
+    "https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.27-0xMacro.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x366d88f03b8ef34eb49f32a927ff6e1609f694f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

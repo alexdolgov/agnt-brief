@@ -1,0 +1,18 @@
+{
+  "component": "VintageAgingBarrel",
+  "main_contract": "VintageAgingBarrel",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x23b91cf132f06f8f71d3f36f59b89c29a3c61d5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

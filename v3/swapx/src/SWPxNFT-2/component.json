@@ -1,0 +1,18 @@
+{
+  "component": "SWPxNFT-2",
+  "main_contract": "SWPxNFT",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc83f364827b9f0d7b27a9c48b2419e4a14e72f78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

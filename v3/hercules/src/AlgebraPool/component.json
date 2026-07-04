@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraPool",
+  "main_contract": "AlgebraPool",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

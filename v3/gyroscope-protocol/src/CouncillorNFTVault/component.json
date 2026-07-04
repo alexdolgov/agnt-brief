@@ -1,0 +1,26 @@
+{
+  "component": "CouncillorNFTVault",
+  "main_contract": "CouncillorNFTVault",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x339b896bafd5d3811241d607d0cd33a1c2f09404",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x360ce1b138eaef64ce56a31076c29ce4d14719ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

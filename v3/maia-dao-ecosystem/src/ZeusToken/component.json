@@ -1,0 +1,42 @@
+{
+  "component": "ZeusToken",
+  "main_contract": "ZeusToken",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x89dedf49b43817ae4e54449e02ad2580504e8b28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xaf0358dc42c0869aadfff4000f6f1b5f0c710d13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xb29adb169788e556a6076f12ae825948505db458",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xe43375f414b14e8a7fa8b8e32df4e6fa1bfc4cfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "GROEmpVesting",
+  "main_contract": "GROEmpVesting",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca71e66866eb9ae67bd5f3ab50b06abd188f33c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6c4559c129a8926459983e12ff79624276a91ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

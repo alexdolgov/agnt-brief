@@ -1,0 +1,18 @@
+{
+  "component": "MagicDomainReverseRegistrar",
+  "main_contract": "MagicDomainReverseRegistrar",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x31859a683304e7a04ff7b310bb851ce075d36cb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

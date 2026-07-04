@@ -1,0 +1,21 @@
+{
+  "component": "AdminControl",
+  "main_contract": "AdminControl",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/solv-finance/Audit/blob/main/Salus/Solv%20Protocol%20V3%20Audit%20Report%20v2%20-%20Salus.pdf",
+    "https://github.com/solv-finance/Audit/blob/main/Salus/Solv-Yield-Bearing-Tokens-Audit-Report-Salus-20240101.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce481616e34baa34b35596751bea1e34ff72d6b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

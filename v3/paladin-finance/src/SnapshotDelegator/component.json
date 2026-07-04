@@ -1,0 +1,18 @@
+{
+  "component": "SnapshotDelegator",
+  "main_contract": "SnapshotDelegator",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1579d941e49183ce38dc2f8ca45a2269b4226f86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

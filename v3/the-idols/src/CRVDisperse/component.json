@@ -1,0 +1,18 @@
+{
+  "component": "CRVDisperse",
+  "main_contract": "CRVDisperse",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53e6c8a06f831c3281ccca5f0e349bbe0a65dcde",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

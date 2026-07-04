@@ -1,0 +1,18 @@
+{
+  "component": "ComboOracle",
+  "main_contract": "ComboOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x247a323daa63cc97c2bad61b4d6f1e0120b5c9e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

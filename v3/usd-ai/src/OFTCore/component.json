@@ -1,0 +1,20 @@
+{
+  "component": "OFTCore",
+  "main_contract": "OFTCore",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://content.gitbook.com/content/yihtTguEhuWiLBn09qwl/blobs/IzF1VSnPIPQtqI7Z2xxU/ktl%20Audit%20Report%20(05-14-2025).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1c17b2ab80158d422c3f945bc92add549503dbd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyAutoPool",
+  "main_contract": "StrategyAutoPool",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3cc7de561ee9fd960f6633c13e2e575ebbca5fc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

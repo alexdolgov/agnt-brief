@@ -1,0 +1,18 @@
+{
+  "component": "EthRewardsManager",
+  "main_contract": "EthRewardsManager",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc642533cf9756de38831ea6b3d2b0020eaa60d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

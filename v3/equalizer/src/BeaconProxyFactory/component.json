@@ -1,0 +1,34 @@
+{
+  "component": "BeaconProxyFactory",
+  "main_contract": "BeaconProxyFactory",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0d4e88ea618bb5b4bc7f143bd16e4b5640212967",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x15864c84d67280f779d2d7a0b2338c16adb01dfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x769e380850b075c80b7304469d6d973eb3c6ccdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

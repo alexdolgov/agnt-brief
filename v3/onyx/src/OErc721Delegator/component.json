@@ -1,0 +1,42 @@
+{
+  "component": "OErc721Delegator",
+  "main_contract": "OErc721Delegator",
+  "source_file_count": 4,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f2dd7adbcd464d5b0a766f7eb367bd20a249691",
+      "is_proxy": true,
+      "implementation_address": "0x921ce565c85ae252741dcdbf26423ce93d921c94",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5bcc74bd3cf4e2665674cd79a68f87d2d3fd6df0",
+      "is_proxy": true,
+      "implementation_address": "0x921ce565c85ae252741dcdbf26423ce93d921c94",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ab16ed27ab8b22cb625db55c0e58521969cb091",
+      "is_proxy": true,
+      "implementation_address": "0x921ce565c85ae252741dcdbf26423ce93d921c94",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x921ce565c85ae252741dcdbf26423ce93d921c94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

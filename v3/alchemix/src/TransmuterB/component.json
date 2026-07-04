@@ -1,0 +1,18 @@
+{
+  "component": "TransmuterB",
+  "main_contract": "TransmuterB",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee69bd81bd056339368c97c4b2837b4dc4b796e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

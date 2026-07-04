@@ -1,0 +1,18 @@
+{
+  "component": "VaultSlippageCheckV2",
+  "main_contract": "VaultSlippageCheckV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x69bf658252d8fd535a28a5cb477abe42a2d44e2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

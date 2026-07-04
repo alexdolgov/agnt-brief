@@ -1,0 +1,18 @@
+{
+  "component": "EthereumDIDRegistry",
+  "main_contract": "EthereumDIDRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa9aeb1c6f14f4244547b9a0946c485da99047638",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

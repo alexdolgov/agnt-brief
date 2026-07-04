@@ -1,0 +1,24 @@
+{
+  "component": "Infrared",
+  "main_contract": "Infrared",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zellic%20Audit%20Report.pdf",
+    "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Berachain%20Core%20Integration%20-%20Zellic%20Audit%20Report.pdf",
+    "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf",
+    "https://github.com/infrared-dao/contracts/blob/master/audits/Zenith%20Audit%20Report%20-%20Infrared%20Finance.pdf",
+    "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x559d1347242f350bdc44f99c729984bfb188092f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

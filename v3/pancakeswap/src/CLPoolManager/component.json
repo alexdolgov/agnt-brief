@@ -1,0 +1,20 @@
+{
+  "component": "CLPoolManager",
+  "main_contract": "CLPoolManager",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pancakeswap/infinity-core/blob/main/docs/audits/Zellic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa0ffb9c1ce1fe56963b0321b32e7a0302114058b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

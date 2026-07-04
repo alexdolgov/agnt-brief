@@ -1,0 +1,18 @@
+{
+  "component": "DssProxyActions",
+  "main_contract": "DssProxyActions",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x777684f6425d095e9166f5f694f50e48a16bcb25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LidoStVaultYieldProvider",
+  "main_contract": "LidoStVaultYieldProvider",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe4fc9f1a8cb97fead3c2b37c11ad5b1c2ef73959",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

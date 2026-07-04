@@ -1,0 +1,26 @@
+{
+  "component": "BasePoolToken",
+  "main_contract": "BasePoolToken",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7bb8b68f60dc4e154bbf1fbaf442015823b4e79f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa73fb3af627ef2f4218f2413beff35ca231f1a0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

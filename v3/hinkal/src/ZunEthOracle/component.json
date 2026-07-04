@@ -1,0 +1,18 @@
+{
+  "component": "ZunEthOracle",
+  "main_contract": "ZunEthOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64298a70c43d865bedb22fd95fc1f81c3f64be4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "unshETHZap",
+  "main_contract": "unshETHZap",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/unsheth"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x718c26e5e60829a36fee8df1d791f340aaa91b4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

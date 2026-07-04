@@ -1,0 +1,26 @@
+{
+  "component": "GnosisSafeProxy-2",
+  "main_contract": "GnosisSafeProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x3cc8dc73aee77f787f3322e3ce61e14e58561d68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb00083e6c3c57c2443ad5d7b98314d98ea12ee28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

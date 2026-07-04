@@ -1,0 +1,18 @@
+{
+  "component": "ActionBase-6",
+  "main_contract": "ActionBase",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb7a722ae7baf83d3d8b9e812952916326d6656b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

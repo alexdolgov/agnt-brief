@@ -1,0 +1,26 @@
+{
+  "component": "NeutraGlpRouter",
+  "main_contract": "NeutraGlpRouter",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x83ee7d50b29af43e79ea9fa2c3b1e4e26bf9ba9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xed24074c24c836223a682532140e8264f5360e80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

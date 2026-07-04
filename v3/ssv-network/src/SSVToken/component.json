@@ -1,0 +1,18 @@
+{
+  "component": "SSVToken",
+  "main_contract": "SSVToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x584d44d3e36f3690a4170dad0238df5441d41f1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

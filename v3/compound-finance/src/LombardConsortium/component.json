@@ -1,0 +1,18 @@
+{
+  "component": "LombardConsortium",
+  "main_contract": "LombardConsortium",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e1871fc8ac793dcf2a74ce004ee21d913763565",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BasicBoneDistributor",
+  "main_contract": "BasicBoneDistributor",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34ad2d8a212cb7d6909d9b523bb5847aa236cb25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

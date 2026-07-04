@@ -1,0 +1,18 @@
+{
+  "component": "SilverVoteLSW",
+  "main_contract": "SilverVoteLSW",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x16272d930e2ec00bdfaaa1086cee9a86740ee820",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

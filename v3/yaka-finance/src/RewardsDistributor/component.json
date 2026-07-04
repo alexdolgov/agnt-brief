@@ -1,0 +1,18 @@
+{
+  "component": "RewardsDistributor",
+  "main_contract": "RewardsDistributor",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xac76b04f87ccbfb4ba01f76f34b9f1b770839ebe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

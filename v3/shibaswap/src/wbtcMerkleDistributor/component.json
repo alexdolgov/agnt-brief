@@ -1,0 +1,18 @@
+{
+  "component": "wbtcMerkleDistributor",
+  "main_contract": "wbtcMerkleDistributor",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e26deb7e2b83742384f4dfbb2470947f853a2a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

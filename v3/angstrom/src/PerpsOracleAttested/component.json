@@ -1,0 +1,18 @@
+{
+  "component": "PerpsOracleAttested",
+  "main_contract": "PerpsOracleAttested",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d8555f8c710798274a8c655b9a26a3465a65c0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

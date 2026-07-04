@@ -1,0 +1,18 @@
+{
+  "component": "PriceLens0",
+  "main_contract": "PriceLens0",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4af614754b58168172d459c3ea81e2db14b3dc5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

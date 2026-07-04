@@ -1,0 +1,18 @@
+{
+  "component": "CollateralOracle",
+  "main_contract": "CollateralOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x785808779131b0947f42b4b54537a4682ebeab86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ThroneStableSwapFactory",
+  "main_contract": "ThroneStableSwapFactory",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x46026509328e4611c372fca54ceb99c4aad5426a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

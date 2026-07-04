@@ -1,0 +1,26 @@
+{
+  "component": "AnglesSmartRouter",
+  "main_contract": "AnglesSmartRouter",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0af78f0ccb7d1a042d13f3d4def51cec7c189a00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe4b84fdd6979a872dd57973f3e4a45921c103175",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

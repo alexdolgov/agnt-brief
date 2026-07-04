@@ -1,0 +1,26 @@
+{
+  "component": "KDGBSCSStartPools",
+  "main_contract": "KDGBSCSStartPools",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2666d09671f3a80ed10c8c0fff79b94a03664c58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9685ecb565a3305f9f0df5d26a319a7d5ab710ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

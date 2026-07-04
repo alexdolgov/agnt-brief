@@ -1,0 +1,37 @@
+{
+  "component": "Portal",
+  "main_contract": "Portal",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/m0-foundation/liquidity-delivery/blob/main/audits/v1/phase_one/chainsecurity_report.pdf",
+    "https://github.com/m0-foundation/liquidity-delivery/blob/main/audits/v1/phase_one/guardian_report.pdf",
+    "https://github.com/m0-foundation/m-portal/blob/main/audits/2024-11-26-cyfrin-M0-Portals-v2.0.pdf",
+    "https://github.com/m0-foundation/m-portal/blob/main/audits/Halborn%20-%20M%20Portal.pdf",
+    "https://github.com/m0-foundation/solana-m-extensions/blob/main/audits/adevar_v2_audit.pdf",
+    "https://github.com/m0-foundation/solana-m-extensions/blob/main/audits/halborn_v2_audit.pdf",
+    "https://github.com/m0-foundation/solana-m/blob/main/audits/adevar_v2_audit.pdf",
+    "https://github.com/m0-foundation/solana-m/blob/main/audits/halborn_v2_audit.pdf",
+    "https://github.com/m0-platform/m-portal-lite/blob/main/audits/ChainSecurity_M0_M_Portal_Lite_audit.pdf",
+    "https://github.com/m0-platform/m-portal-lite/blob/main/audits/GuardianAudits_M0_PortalLite_audit.pdf",
+    "https://github.com/m0-platform/m-portal-lite/blob/main/audits/Halborn%20-%20M%20Portal%20Lite%2010-27-25.pdf",
+    "https://github.com/m0-platform/m-portal-lite/blob/main/audits/Three%20Sigma%20-%20M0PortalLite.pdf",
+    "https://github.com/m0-platform/m-portal-v2/blob/main/evm/audits/Adevar_M0_Portal_V2.pdf",
+    "https://github.com/m0-platform/m-portal-v2/blob/main/evm/audits/ChainSecurity_M0_Portal_V2_Liquidity_Delivery.pdf",
+    "https://github.com/m0-platform/m-portal-v2/blob/main/evm/audits/Guardian_M0_Portal_V2_Liquidity_Delivery.pdf",
+    "https://github.com/m0-platform/m-portal-v2/blob/main/evm/audits/Halborn_M0_Portal_V2.pdf",
+    "https://github.com/m0-platform/m-portal-v2/blob/main/evm/audits/Sherlock_M0_Portal_V2.pdf",
+    "https://github.com/m0-platform/solana-m/blob/main/audits/halborn_solana_m_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x23ca665c8a73292fc7ac2cc4493d2ce883bba468",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

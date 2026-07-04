@@ -1,0 +1,18 @@
+{
+  "component": "OracleMultiPair",
+  "main_contract": "OracleMultiPair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2d385185bbd96f4794ae3504aeaa7825827a297",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Boost_Delegation_V2",
+  "main_contract": "Boost Delegation V2",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe39b5e3b6d74016b2f6a9673d7d7493b6df549d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

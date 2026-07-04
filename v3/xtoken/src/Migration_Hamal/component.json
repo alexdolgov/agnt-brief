@@ -1,0 +1,18 @@
+{
+  "component": "Migration_Hamal",
+  "main_contract": "Migration_Hamal",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x656206d5ba84038cd633e4be15fca016218723fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

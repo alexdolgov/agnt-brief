@@ -1,0 +1,25 @@
+{
+  "component": "BufferArk",
+  "main_contract": "BufferArk",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf",
+    "https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions",
+    "https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension",
+    "https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x809a0c98fac68a0c4319f3a3e864540c772562af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

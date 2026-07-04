@@ -1,0 +1,26 @@
+{
+  "component": "GMXStrategy",
+  "main_contract": "GMXStrategy",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8edc2409923fb256fef4105f862c25794f694de7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf12c92cbe97f16cfb8dc007545c29a55912177fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

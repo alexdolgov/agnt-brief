@@ -1,0 +1,18 @@
+{
+  "component": "HypMinter",
+  "main_contract": "HypMinter",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36d2246e2299b3c50bb1fd9ba996e0c4135bd0c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

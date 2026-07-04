@@ -1,0 +1,18 @@
+{
+  "component": "STARTVesting",
+  "main_contract": "STARTVesting",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3c24256b2ce30c88c29cc57e273958038b62222a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

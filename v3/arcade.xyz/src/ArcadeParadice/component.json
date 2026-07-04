@@ -1,0 +1,18 @@
+{
+  "component": "ArcadeParadice",
+  "main_contract": "ArcadeParadice",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4bad2399f43a827ba3434cdd9b3ad1b5bac52244",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

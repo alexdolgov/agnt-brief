@@ -1,0 +1,18 @@
+{
+  "component": "CheckForOracleUpdate",
+  "main_contract": "CheckForOracleUpdate",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0477633b45405a9b1f79745d37e87e495e6a883f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

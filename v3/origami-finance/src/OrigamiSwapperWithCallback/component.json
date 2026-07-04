@@ -1,0 +1,24 @@
+{
+  "component": "OrigamiSwapperWithCallback",
+  "main_contract": "OrigamiSwapperWithCallback",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Electisec_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Nethermind_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Panprog_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/oriBGT/oriBGT-audit-jacopod.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/oriBGT/oriBGT-audit-pyro.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x23d774c4d42ead21c345f75af59325903f8c80db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

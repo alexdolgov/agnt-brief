@@ -1,0 +1,23 @@
+{
+  "component": "L2_Bridge-2",
+  "main_contract": "L2_Bridge",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf",
+    "https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf",
+    "https://s3.us-west-1.amazonaws.com/assets.hop.exchange/reports/Audit_Report_-_Hop_05.05.2021.pdf",
+    "https://s3.us-west-1.amazonaws.com/assets.hop.exchange/reports/MonocerosAlpha_-_Hop_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x83f6244bd87662118d96d9a6d44f09dfff14b30e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

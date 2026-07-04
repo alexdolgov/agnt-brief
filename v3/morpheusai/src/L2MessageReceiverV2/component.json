@@ -1,0 +1,18 @@
+{
+  "component": "L2MessageReceiverV2",
+  "main_contract": "L2MessageReceiverV2",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7ec51d81a30aa8449cb0b72d4c1b27062956d699",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

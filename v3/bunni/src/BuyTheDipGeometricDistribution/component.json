@@ -1,0 +1,18 @@
+{
+  "component": "BuyTheDipGeometricDistribution",
+  "main_contract": "BuyTheDipGeometricDistribution",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x000000003691653855719a5722eb10f6d9636936",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

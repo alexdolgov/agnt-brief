@@ -1,0 +1,18 @@
+{
+  "component": "FluxAggregator",
+  "main_contract": "FluxAggregator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00377d6c82df8f63163ff828760b2a5d935734cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

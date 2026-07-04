@@ -1,0 +1,18 @@
+{
+  "component": "Exec",
+  "main_contract": "Exec",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bf04952a5b3ef6bad343c2218f584a7413bb44d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

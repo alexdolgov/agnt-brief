@@ -1,0 +1,18 @@
+{
+  "component": "SolarDistributorV2",
+  "main_contract": "SolarDistributorV2",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x0329867a8c457e9f75e25b0685011291cd30904f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

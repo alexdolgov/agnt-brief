@@ -1,0 +1,18 @@
+{
+  "component": "YieldSeekerAerodromeV2SwapAdapter",
+  "main_contract": "YieldSeekerAerodromeV2SwapAdapter",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa3c92297ed000f2778924872fc5d2cfe341d020f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

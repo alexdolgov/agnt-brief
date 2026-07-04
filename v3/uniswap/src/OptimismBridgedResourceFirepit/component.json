@@ -1,0 +1,18 @@
+{
+  "component": "OptimismBridgedResourceFirepit",
+  "main_contract": "OptimismBridgedResourceFirepit",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xe0a780e9105ac10ee304448224eb4a2b11a77eeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "component": "SwapAdapter-2",
+  "main_contract": "SwapAdapter",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blendmoney/audits",
+    "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-1-cantinacode.pdf",
+    "https://github.com/blendmoney/audits/blob/main/blend-25-10-02-0-zellic.pdf",
+    "https://github.com/blendmoney/audits/blob/main/blend-25-10-05-0-cantinacode.pdf",
+    "https://github.com/blendmoney/audits/blob/main/blend-25-12-05-0-sherlock.pdf",
+    "https://github.com/blendmoney/audits/blob/main/blend-26-01-22-0-sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2207189bab0f177df87d77b7575102f2df925754",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

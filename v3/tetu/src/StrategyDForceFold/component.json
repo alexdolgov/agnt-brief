@@ -1,0 +1,18 @@
+{
+  "component": "StrategyDForceFold",
+  "main_contract": "StrategyDForceFold",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x151b33c30131cf4b7f1cf0b9801997137c54c0c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

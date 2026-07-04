@@ -1,0 +1,18 @@
+{
+  "component": "VotingBalanceV2Gauges",
+  "main_contract": "VotingBalanceV2Gauges",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cc2cfed7e40bab890ca532ad0dbb413e072b988",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

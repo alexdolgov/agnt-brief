@@ -1,0 +1,18 @@
+{
+  "component": "FrogRichToken",
+  "main_contract": "FrogRichToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x038f1c6ed5fccf690a920a27b39366eeef27efce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

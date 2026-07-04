@@ -1,0 +1,18 @@
+{
+  "component": "AlpaFireChamber",
+  "main_contract": "AlpaFireChamber",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

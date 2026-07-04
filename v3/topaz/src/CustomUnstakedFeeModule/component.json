@@ -1,0 +1,18 @@
+{
+  "component": "CustomUnstakedFeeModule",
+  "main_contract": "CustomUnstakedFeeModule",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3bad7f96cd1b51ce86e12c42541ac7d559a78582",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "component": "ProtocolFeeRouter",
+  "main_contract": "ProtocolFeeRouter",
+  "source_file_count": 5,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0d7a0f0deba08c984c6517f5eec59503ff9bc24e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1f422d01d513efc565e034ddc6c5db20f1c9190b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x36c5e50550ef08cdc7266da986fb0b5f40e1ad83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xcb1843a388ed75b9a6870294f88d500a0ed5bf7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x45c4adf501cd90ffd62bbc4b7cbe99bf31572611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

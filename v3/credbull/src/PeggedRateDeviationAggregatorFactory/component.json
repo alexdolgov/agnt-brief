@@ -1,0 +1,18 @@
+{
+  "component": "PeggedRateDeviationAggregatorFactory",
+  "main_contract": "PeggedRateDeviationAggregatorFactory",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x124fda4b626cda9481948a86a5f8f510d8a22f4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

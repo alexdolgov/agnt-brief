@@ -1,0 +1,18 @@
+{
+  "component": "FeeConverter",
+  "main_contract": "FeeConverter",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72625102868f56bc9696c91090938718d3804333",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Dynamic_APR_Farm",
+  "main_contract": "Dynamic_APR_Farm",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7775cd662acf952101ace08a7144c8bb7d5ef2be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "OracleCombinerFactory",
+  "main_contract": "OracleCombinerFactory",
+  "source_file_count": 60,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb898c4a986a1e4fd31b9818772f9ec16dbf3efed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf9d160da6a2d6ef3b1cf37a1666339c15b5f4fa7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

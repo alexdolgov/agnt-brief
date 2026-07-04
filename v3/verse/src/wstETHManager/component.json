@@ -1,0 +1,42 @@
+{
+  "component": "wstETHManager",
+  "main_contract": "wstETHManager",
+  "source_file_count": 33,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63faf7bb2e6fc14619441cc9ba64c4eaf54a60ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d12d473f00b9888e8254274fabcd29526db37ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa4aef3de98a0336928e949a8be405c1175ac1be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd32e94acf185c9b12a8a9fbf0c3d3e7891dc479a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

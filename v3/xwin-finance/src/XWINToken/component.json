@@ -1,0 +1,18 @@
+{
+  "component": "XWINToken",
+  "main_contract": "XWINToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

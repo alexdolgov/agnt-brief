@@ -1,0 +1,18 @@
+{
+  "component": "Token_v1",
+  "main_contract": "Token_v1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37a41d9f7c94e5d13fba30c59f28cc0e803edce4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

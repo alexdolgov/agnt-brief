@@ -1,0 +1,34 @@
+{
+  "component": "ParametersBatchUpdater",
+  "main_contract": "ParametersBatchUpdater",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4dd1a6db148becdadadfc407d23b725edd3cfb6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad5fd513e62fa67d03e4518f0a6bffdb238263b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3f605dc4f8cdc7c199b73fdef814dfa86058cd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

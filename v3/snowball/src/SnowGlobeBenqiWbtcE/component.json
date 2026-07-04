@@ -1,0 +1,18 @@
+{
+  "component": "SnowGlobeBenqiWbtcE",
+  "main_contract": "SnowGlobeBenqiWbtcE",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x26cbea666139daade08a5e6e8bc3bb7245c6b5dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "HypeRegistry",
+  "main_contract": "HypeRegistry",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x04dd4bd444e1fb7863787a434a31fb5f1213ab51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa9fe99aba4b3dfc184ba939e7a3fac18c684b915",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb7f05d27759e1d5cf2b74297b92bebbdeeb740bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

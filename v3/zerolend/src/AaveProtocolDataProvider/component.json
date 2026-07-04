@@ -1,0 +1,18 @@
+{
+  "component": "AaveProtocolDataProvider",
+  "main_contract": "AaveProtocolDataProvider",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x67f93d36792c49a4493652b91ad4bd59f428ad15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

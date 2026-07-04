@@ -1,0 +1,18 @@
+{
+  "component": "WrappedCollateralToken",
+  "main_contract": "WrappedCollateralToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb69e35fb4a157028b92f42655090b984609ae598",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolFeePercentagesProvider",
+  "main_contract": "ProtocolFeePercentagesProvider",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5ef4c5352882b10893b70dbcaa0c000965bd23c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

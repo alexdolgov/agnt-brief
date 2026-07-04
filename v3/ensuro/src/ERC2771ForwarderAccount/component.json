@@ -1,0 +1,26 @@
+{
+  "component": "ERC2771ForwarderAccount",
+  "main_contract": "ERC2771ForwarderAccount",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x101deab893c3eef3e705e771edc2a0245addec73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62e4790f5c7ea5d327f20108dc698b7bb2d023e9",
+      "is_proxy": true,
+      "implementation_address": "0x101deab893c3eef3e705e771edc2a0245addec73",
+      "liveness": "live"
+    }
+  ]
+}

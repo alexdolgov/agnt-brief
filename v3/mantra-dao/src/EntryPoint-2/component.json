@@ -1,0 +1,18 @@
+{
+  "component": "EntryPoint-2",
+  "main_contract": "EntryPoint",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

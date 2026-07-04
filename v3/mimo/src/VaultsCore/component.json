@@ -1,0 +1,18 @@
+{
+  "component": "VaultsCore",
+  "main_contract": "VaultsCore",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

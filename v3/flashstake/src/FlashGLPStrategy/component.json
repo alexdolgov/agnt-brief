@@ -1,0 +1,18 @@
+{
+  "component": "FlashGLPStrategy",
+  "main_contract": "FlashGLPStrategy",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x907a749631ad4149df1d49ee2fd40517b12df573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

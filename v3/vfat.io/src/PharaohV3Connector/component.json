@@ -1,0 +1,26 @@
+{
+  "component": "PharaohV3Connector",
+  "main_contract": "PharaohV3Connector",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x119ed29f4398c6909d14675bc726e405b13877f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8125f36df099854d1070f02fd11fd9e3e97d27fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

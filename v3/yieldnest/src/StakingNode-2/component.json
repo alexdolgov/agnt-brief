@@ -1,0 +1,18 @@
+{
+  "component": "StakingNode-2",
+  "main_contract": "StakingNode",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x56d43f8c6c3891d081ad93b27419c37394857117",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

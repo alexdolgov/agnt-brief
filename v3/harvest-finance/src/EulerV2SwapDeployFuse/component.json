@@ -1,0 +1,18 @@
+{
+  "component": "EulerV2SwapDeployFuse",
+  "main_contract": "EulerV2SwapDeployFuse",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0db8d3fd81900ff95ca25d7bc30a4da1b289e670",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

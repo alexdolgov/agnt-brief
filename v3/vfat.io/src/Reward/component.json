@@ -1,0 +1,18 @@
+{
+  "component": "Reward",
+  "main_contract": "Reward",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x756e7c245c69d351fffbfb88ba234aa395ada8ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

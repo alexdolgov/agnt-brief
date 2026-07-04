@@ -1,0 +1,18 @@
+{
+  "component": "STIXToken",
+  "main_contract": "STIXToken",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfd1013c72cbb0ffb920d347c5836bf88965d0d5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

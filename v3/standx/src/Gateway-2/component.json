@@ -1,0 +1,22 @@
+{
+  "component": "Gateway-2",
+  "main_contract": "Gateway",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/standx-labs/stand_audit/blob/main/RigSec_StandX_DUSD_EVM_Audit.pdf",
+    "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_DUSD_EVM_Audit.pdf",
+    "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_DUSD_Solana_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb6820fb2ab3572cdadde31844679d4e9adb66760",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

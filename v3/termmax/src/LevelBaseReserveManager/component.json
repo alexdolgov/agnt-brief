@@ -1,0 +1,18 @@
+{
+  "component": "LevelBaseReserveManager",
+  "main_contract": "LevelBaseReserveManager",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x329f91fe82c1799c3e089fabe9d3a7efdc2d3151",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

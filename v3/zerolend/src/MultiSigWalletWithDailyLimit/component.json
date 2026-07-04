@@ -1,0 +1,18 @@
+{
+  "component": "MultiSigWalletWithDailyLimit",
+  "main_contract": "MultiSigWalletWithDailyLimit",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x30c673197de801eb58eabde30a49198cb68c1173",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

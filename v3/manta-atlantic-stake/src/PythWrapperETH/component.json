@@ -1,0 +1,18 @@
+{
+  "component": "PythWrapperETH",
+  "main_contract": "PythWrapperETH",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x677890e9bfd70593e6dc66d9089e02f8bff66ed9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

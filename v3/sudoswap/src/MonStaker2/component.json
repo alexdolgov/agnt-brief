@@ -1,0 +1,18 @@
+{
+  "component": "MonStaker2",
+  "main_contract": "MonStaker2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd06337a401b468657de2f9d3e390ce5b21c3c1c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

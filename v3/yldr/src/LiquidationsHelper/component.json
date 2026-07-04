@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationsHelper",
+  "main_contract": "LiquidationsHelper",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x21c2ac59f7f2a43ea0f745ebb275811699338da3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

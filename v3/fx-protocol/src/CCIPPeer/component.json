@@ -1,0 +1,18 @@
+{
+  "component": "CCIPPeer",
+  "main_contract": "CCIPPeer",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x17ea3dcd055a72b137e6f09cd5f2a1c187908ee1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GasOracle",
+  "main_contract": "GasOracle",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bdf6139f2841a7856ca154d851182c52f5b96e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

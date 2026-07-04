@@ -1,0 +1,18 @@
+{
+  "component": "PeriodStaking",
+  "main_contract": "PeriodStaking",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

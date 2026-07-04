@@ -1,0 +1,18 @@
+{
+  "component": "CLeverAMOHarvesterFacet",
+  "main_contract": "CLeverAMOHarvesterFacet",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd912d922e7e6d11d5caae204f7907f38e70abed2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

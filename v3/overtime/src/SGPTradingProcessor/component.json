@@ -1,0 +1,26 @@
+{
+  "component": "SGPTradingProcessor",
+  "main_contract": "SGPTradingProcessor",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x27a4403ba34d5fb8da30bcba455837fbf9aa1666",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfaea6187138006fa4012b84410ee0ee8fdc56a5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

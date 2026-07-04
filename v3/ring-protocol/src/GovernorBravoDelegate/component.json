@@ -1,0 +1,50 @@
+{
+  "component": "GovernorBravoDelegate",
+  "main_contract": "GovernorBravoDelegate",
+  "source_file_count": 2,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x0649cee63277de954acf4d50223d1f4965d278db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x1f4f928dff072081e0455704a372737b3e25a70a",
+      "is_proxy": true,
+      "implementation_address": "0x0649cee63277de954acf4d50223d1f4965d278db",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x5a2cd58f8f49297293add810b9c608d1dd9d46b6",
+      "is_proxy": true,
+      "implementation_address": "0x0649cee63277de954acf4d50223d1f4965d278db",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xd2f37ff7ecfaceb4de1a2bacb8d9c539a4d6a943",
+      "is_proxy": true,
+      "implementation_address": "0xfa04c9d7f4e989e442f1bb3d14ac2f05b8bf4140",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xfa04c9d7f4e989e442f1bb3d14ac2f05b8bf4140",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

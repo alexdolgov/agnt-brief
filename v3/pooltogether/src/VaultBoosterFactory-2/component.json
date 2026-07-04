@@ -1,0 +1,18 @@
+{
+  "component": "VaultBoosterFactory-2",
+  "main_contract": "VaultBoosterFactory",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31ec883727af3b9eb87b815550b0e33498f483e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

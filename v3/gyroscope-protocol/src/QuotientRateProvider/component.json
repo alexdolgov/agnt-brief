@@ -1,0 +1,26 @@
+{
+  "component": "QuotientRateProvider",
+  "main_contract": "QuotientRateProvider",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x10e0b3db47dbdb9b38a4657881d3769263245587",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x79a88bb30beebc41f2b104a86f5dc96c70c40447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

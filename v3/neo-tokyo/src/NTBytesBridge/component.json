@@ -1,0 +1,18 @@
+{
+  "component": "NTBytesBridge",
+  "main_contract": "NTBytesBridge",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc958ec86d62a479c8490538abf4333aa632edf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

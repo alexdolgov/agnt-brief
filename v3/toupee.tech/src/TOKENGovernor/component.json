@@ -1,0 +1,18 @@
+{
+  "component": "TOKENGovernor",
+  "main_contract": "TOKENGovernor",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

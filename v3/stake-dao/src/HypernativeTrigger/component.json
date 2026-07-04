@@ -1,0 +1,18 @@
+{
+  "component": "HypernativeTrigger",
+  "main_contract": "HypernativeTrigger",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x113329d34e8f8148aed0b3b3f9358ac8abb6eeba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

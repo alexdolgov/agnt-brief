@@ -1,0 +1,34 @@
+{
+  "component": "StrategyUsdc",
+  "main_contract": "StrategyUsdc",
+  "source_file_count": 21,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x41e9f45dd11a09731814a7d9c4df257bc2d130f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9ea35c918978d28b28325495b30e0c856abc14c0",
+      "is_proxy": true,
+      "implementation_address": "0x41e9f45dd11a09731814a7d9c4df257bc2d130f6",
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa348700745d249c3b49d2c2acac9a5ae8155f826",
+      "is_proxy": true,
+      "implementation_address": "0x41e9f45dd11a09731814a7d9c4df257bc2d130f6",
+      "liveness": "live"
+    }
+  ]
+}

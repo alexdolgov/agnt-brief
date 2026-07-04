@@ -1,0 +1,42 @@
+{
+  "component": "PufferOracleV2",
+  "main_contract": "PufferOracleV2",
+  "source_file_count": 32,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0be2ae0edbebb517541df217ef0074fc9a9e994f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x785a54316af8cb61b16a82a3f60c08a18425fa86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8efd1dc43ad073232f3e2924e22f173879119489",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0613d300b84a5a610d72c38b96c3d71ac85ec97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

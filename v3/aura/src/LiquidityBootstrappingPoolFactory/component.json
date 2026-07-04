@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityBootstrappingPoolFactory",
+  "main_contract": "LiquidityBootstrappingPoolFactory",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x751a0bc0e3f75b38e01cf25bfce7ff36de1c87de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

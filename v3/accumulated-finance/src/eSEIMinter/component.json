@@ -1,0 +1,18 @@
+{
+  "component": "eSEIMinter",
+  "main_contract": "eSEIMinter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xcf1a40eff1a4d4c56dc4042a1ae93013d13c3217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

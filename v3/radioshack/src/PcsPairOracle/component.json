@@ -1,0 +1,18 @@
+{
+  "component": "PcsPairOracle",
+  "main_contract": "PcsPairOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x038ee16bc19e362cc5ba1915f32a3a6717047287",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

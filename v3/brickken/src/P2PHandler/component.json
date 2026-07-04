@@ -1,0 +1,26 @@
+{
+  "component": "P2PHandler",
+  "main_contract": "P2PHandler",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64fdd96dc513e01327f3f307de9e1fd66df3ed45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x89b281df2702f19189fdd73f1d7865707bc7ba3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

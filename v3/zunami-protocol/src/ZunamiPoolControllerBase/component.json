@@ -1,0 +1,18 @@
+{
+  "component": "ZunamiPoolControllerBase",
+  "main_contract": "ZunamiPoolControllerBase",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x179dc3d6b260277643998af7de1a9354fde99498",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

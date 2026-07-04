@@ -1,0 +1,18 @@
+{
+  "component": "SynthSummaryUtil",
+  "main_contract": "SynthSummaryUtil",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d69755e12107695e544842bf7f61d9193f09a54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

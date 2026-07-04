@@ -1,0 +1,21 @@
+{
+  "component": "VestedRewardsDistribution",
+  "main_contract": "VestedRewardsDistribution",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/makerdao/endgame-toolkit/blob/e6c3a783614748717b4cb8d671c907a1feb71121/audits/ChainSecurity_MakerDAO_Endgame_Toolkit_contracts_audit.pdf",
+    "https://github.com/makerdao/endgame-toolkit/blob/e6c3a783614748717b4cb8d671c907a1feb71121/audits/report-review-makerdao-endgametoolkit_2024-08-27.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09b287963668b9565ca1aa11a21ec4b973d4fc0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

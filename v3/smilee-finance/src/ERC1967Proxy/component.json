@@ -1,0 +1,38 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 8,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FK3W9Hj6sr2y8j6Zdkgub%2FGuardefy_Audit_gBERA_SmileeFinance.pdf",
+    "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FvhApBDZa65vO2FueUH9y%2FGuardefy_Audit_gBERA%20Update_Smilee%20Finance.pdf",
+    "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FyKq7K1kTTAd57CnP2ask%2FCantina_Audit_gBERA_SmileeFinance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x3b3dd22625128ff1548110f9b7bc702f540668e2",
+      "is_proxy": true,
+      "implementation_address": "0x35201b565eac26f464d092709342603fb6239a48",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x5dbffcde23ab53f128c1c82796d0f971d0102137",
+      "is_proxy": true,
+      "implementation_address": "0x2863f201474593e584fbf9dd274be6f07deeddb6",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1",
+      "is_proxy": true,
+      "implementation_address": "0x23178194e9ac9f269196a3021f9c5a799d3c2c2d",
+      "liveness": "live"
+    }
+  ]
+}

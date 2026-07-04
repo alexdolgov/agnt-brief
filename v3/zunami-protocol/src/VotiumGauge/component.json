@@ -1,0 +1,18 @@
+{
+  "component": "VotiumGauge",
+  "main_contract": "VotiumGauge",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ce6df2119f649ff6f547bfaf8f4bb7c3b027be1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

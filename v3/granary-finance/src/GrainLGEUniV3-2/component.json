@@ -1,0 +1,18 @@
+{
+  "component": "GrainLGEUniV3-2",
+  "main_contract": "GrainLGEUniV3",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1033fe9cb2b097aa4d4c0a3fed9798dabf7b9428",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FlokiInuNFTRewardPickUp",
+  "main_contract": "FlokiInuNFTRewardPickUp",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b231f8e6f16ea0b5ca0d2f39eb595bec3e5db16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

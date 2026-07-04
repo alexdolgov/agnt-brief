@@ -1,0 +1,26 @@
+{
+  "component": "EulerV2ControllerFuse",
+  "main_contract": "EulerV2ControllerFuse",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0f86a5eca11a0a2539cc24ec27826c65cc0094ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x108c8cfb9e00681ffa1fa3b654937e8b3bcd2e64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

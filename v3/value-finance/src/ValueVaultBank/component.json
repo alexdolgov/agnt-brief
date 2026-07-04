@@ -1,0 +1,18 @@
+{
+  "component": "ValueVaultBank",
+  "main_contract": "ValueVaultBank",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x95beaeb2701736dd9bf1930d569231e78ca386ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

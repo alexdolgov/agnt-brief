@@ -1,0 +1,26 @@
+{
+  "component": "ConnectorRegistry-5",
+  "main_contract": "ConnectorRegistry",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x06a52d4c80eee559dd4ebb82362816933b4fb36c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdc10b474058eba67a62dd140b2c24a4923e59baf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

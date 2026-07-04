@@ -1,0 +1,18 @@
+{
+  "component": "PEXToken",
+  "main_contract": "PEXToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x55c2a0c171d920843560594de3d6eecc09efc098",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

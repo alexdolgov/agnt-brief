@@ -1,0 +1,20 @@
+{
+  "component": "VaultDAI",
+  "main_contract": "VaultDAI",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe85c8581e60d7cd32bbfd86303d2a4fa6a951dac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

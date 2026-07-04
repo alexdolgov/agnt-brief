@@ -1,0 +1,26 @@
+{
+  "component": "ERC20Detailed",
+  "main_contract": "ERC20Detailed",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8e4ca0fe9f099a803243d2a33e241f11a3441cdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcb554eb8526ac1921f41f6255d2c46a77a346b27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GRV",
+  "main_contract": "GRV",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1337ace33c2b3fc17d85f33dbd0ed73a896148b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

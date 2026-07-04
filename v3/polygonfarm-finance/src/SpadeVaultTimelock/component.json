@@ -1,0 +1,18 @@
+{
+  "component": "SpadeVaultTimelock",
+  "main_contract": "SpadeVaultTimelock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8569a5b160283408ae1113051b6d9519ec708d64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

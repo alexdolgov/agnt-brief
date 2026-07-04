@@ -1,0 +1,22 @@
+{
+  "component": "PositionRoller",
+  "main_contract": "PositionRoller",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/ChainSecurity_Frankencoin_Frankencoin_v2024.pdf",
+    "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/frankencoin-audit-report-2024-1.1.pdf",
+    "https://www.chainsecurity.com/security-audit/frankencoin-v2024"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad0107d3da540fd54b1931735b65110c909ea6b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

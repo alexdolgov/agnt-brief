@@ -1,0 +1,26 @@
+{
+  "component": "ArcadeItemsVerifier",
+  "main_contract": "ArcadeItemsVerifier",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xabfd9d9e4157695db5812eee279d923a4f948df0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc39c5d2fc523f26b5a83ab6c0c802c6e80a4df1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

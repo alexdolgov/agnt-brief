@@ -1,0 +1,18 @@
+{
+  "component": "EulerUngovernedPerspective-2",
+  "main_contract": "EulerUngovernedPerspective",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x600bbe1d0759f380fea72b2e9b2b6dcb4a21b507",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

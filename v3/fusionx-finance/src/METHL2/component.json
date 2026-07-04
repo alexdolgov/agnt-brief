@@ -1,0 +1,18 @@
+{
+  "component": "METHL2",
+  "main_contract": "METHL2",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xeb0c390b1fb2b63d5ed257b822a1cbbff87956ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

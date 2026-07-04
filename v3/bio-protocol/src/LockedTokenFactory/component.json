@@ -1,0 +1,42 @@
+{
+  "component": "LockedTokenFactory",
+  "main_contract": "LockedTokenFactory",
+  "source_file_count": 51,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8299699969d696bd9c05fd4fb89f8840e2c3199a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc9be11ccc31d2d7fe74f9a27b1fd192ee90fd825",
+      "is_proxy": true,
+      "implementation_address": "0x8299699969d696bd9c05fd4fb89f8840e2c3199a",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde1ca97de2dd6b234ee25dafea365647b9e9f57b",
+      "is_proxy": true,
+      "implementation_address": "0xf6fee6cd54d687015c28f5261f544552c08ccae0",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6fee6cd54d687015c28f5261f544552c08ccae0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

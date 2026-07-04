@@ -1,0 +1,26 @@
+{
+  "component": "ETHVaultWithSlippage",
+  "main_contract": "ETHVaultWithSlippage",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x980d4a48077cde0b51c2ae19d44cc2dd0c8efb1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeaf2de9d66740a3c5185eaf496dd77f9a8913755",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

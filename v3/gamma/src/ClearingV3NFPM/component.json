@@ -1,0 +1,37 @@
+{
+  "component": "ClearingV3NFPM",
+  "main_contract": "ClearingV3NFPM",
+  "source_file_count": 36,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/GammaStrategies/hypervisor/blob/master/audits/Bailsec%20-%20Gamma%20-%20Vaults%20-%20Final%20Report.pdf",
+    "https://github.com/GammaStrategies/hypervisor/blob/master/audits/Gamma_Position_Managers_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x27cf9c13de312a077d991e8bc5e4e6e6c2ee9375",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8e624932c8cbe9211c0e8c586d46fd84ac1997f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd42096ccc15caf9ee10003648871c29f196197c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

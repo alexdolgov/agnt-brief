@@ -1,0 +1,20 @@
+{
+  "component": "VaultLib-2",
+  "main_contract": "VaultLib",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Range-Protocol/contracts/blob/izumi-implementation/audits/Salusec-Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x62fd6208a1a6f0b06e1e2788efb4ee74bf5a8f33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

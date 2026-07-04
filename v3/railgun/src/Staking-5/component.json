@@ -1,0 +1,23 @@
+{
+  "component": "Staking-5",
+  "main_contract": "Staking",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://assets.railgun.org/docs/audits/2021-11-02%20Hacken.pdf",
+    "https://assets.railgun.org/docs/audits/2021-11-03%20Zokyo.pdf",
+    "https://assets.railgun.org/docs/audits/2022-08-29%20Hashcloak.pdf",
+    "https://assets.railgun.org/docs/audits/2022-09-14%20Zokyo.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

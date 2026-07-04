@@ -1,0 +1,18 @@
+{
+  "component": "MainFeeDistributor",
+  "main_contract": "MainFeeDistributor",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5d49c8b8cc691533742602d6ab3127904959b7e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

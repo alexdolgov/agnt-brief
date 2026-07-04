@@ -1,0 +1,18 @@
+{
+  "component": "WalletBalanceProvider",
+  "main_contract": "WalletBalanceProvider",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x009efeb54f27d24c051a08d3bd2957c095f483cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

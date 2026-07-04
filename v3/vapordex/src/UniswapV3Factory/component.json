@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3Factory",
+  "main_contract": "UniswapV3Factory",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x62b672e531f8c11391019f6fba0b8b6143504169",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StabilityPool",
+  "main_contract": "StabilityPool",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x598913568093ab9f3d549236eb98388271073f18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

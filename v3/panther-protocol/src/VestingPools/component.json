@@ -1,0 +1,18 @@
+{
+  "component": "VestingPools",
+  "main_contract": "VestingPools",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb476104aa9d1f30180a01987fb09b1e96ddcf14b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "DiamondInitializer",
+  "main_contract": "DiamondInitializer",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x056566077da53b0a349af9b9bdbfa2658ccc2c3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8b899796b4a442e7723e02f8b5b65a39f27edaf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

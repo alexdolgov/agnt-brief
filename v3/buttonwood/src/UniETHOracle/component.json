@@ -1,0 +1,18 @@
+{
+  "component": "UniETHOracle",
+  "main_contract": "UniETHOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a6d958dd0aa07ddd4d2cf9c8a91b3fd3e542d6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

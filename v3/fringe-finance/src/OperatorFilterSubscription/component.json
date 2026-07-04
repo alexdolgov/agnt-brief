@@ -1,0 +1,26 @@
+{
+  "component": "OperatorFilterSubscription",
+  "main_contract": "OperatorFilterSubscription",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6598ebbd50221fdef2acf3a666bf3ee826156204",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd661caac58842343a6acd73e0a8de275d561a282",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

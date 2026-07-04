@@ -1,0 +1,20 @@
+{
+  "component": "BtcMirror",
+  "main_contract": "BtcMirror",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/fiamma-chain/fiamma-audit/blob/main/Zenith-Bridge-Cairo-Contract.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5dca1687804b50ecf0b2fa69fcba7f416705483b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

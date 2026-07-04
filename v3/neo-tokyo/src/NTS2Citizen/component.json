@@ -1,0 +1,18 @@
+{
+  "component": "NTS2Citizen",
+  "main_contract": "NTS2Citizen",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6254bab9ee850590e6e7a56982672231d02c8a07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

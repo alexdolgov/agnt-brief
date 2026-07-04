@@ -1,0 +1,18 @@
+{
+  "component": "FeeClaimer",
+  "main_contract": "FeeClaimer",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x77b459d78e814d2dab2832194c72322aa46bd576",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

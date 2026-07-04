@@ -1,0 +1,18 @@
+{
+  "component": "RecipeV3",
+  "main_contract": "RecipeV3",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x20c6aa90d32f2f41c500d9034427e4fdec799f7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

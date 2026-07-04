@@ -1,0 +1,90 @@
+{
+  "component": "MulticallRouter",
+  "main_contract": "MulticallRouter",
+  "source_file_count": 5,
+  "deployment_count": 10,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1a039ce63ae35a67bf0e9f6dbfae969639d59ec8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1dcfbc3fa01b2a86bc3a3f43479cce9e8d438adc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x253ddb32f0f45ffbc0ebcdfc5edd47857aff79d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5eb4ed9f745531221fae41906e11d37642b15da6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7f6fb9f3ce785f3d85772c038fda58ec9432d421",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9a31bac4b3b958c835c243800b474818d04393dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa385b1436fd2a6a1c6865e22c522a1aa40cadcc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb79a4f5828eb55c10d7abf4bfe9a9f5d11aa84e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xee981b2459331ad268cc63ce6167b446af4161f8",
+      "is_proxy": true,
+      "implementation_address": "0x253ddb32f0f45ffbc0ebcdfc5edd47857aff79d7",
+      "liveness": "live"
+    }
+  ]
+}

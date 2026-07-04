@@ -1,0 +1,27 @@
+{
+  "component": "Executor",
+  "main_contract": "Executor",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/grove-labs/grove-gov-relay/blob/76b6fcae9df7da5d93800b4d215a779e612f1c32/audits/v100-chainsecurity-audit.pdf",
+    "https://github.com/grove-labs/grove-gov-relay/blob/76b6fcae9df7da5d93800b4d215a779e612f1c32/audits/v110-cantina-audit.pdf",
+    "https://github.com/grove-labs/grove-gov-relay/blob/76b6fcae9df7da5d93800b4d215a779e612f1c32/audits/v120-chainsecurity-audit.pdf",
+    "https://github.com/grove-labs/grove-gov-relay/blob/master/audits/v110-cantina-audit.pdf",
+    "https://github.com/grove-labs/grove-gov-relay/blob/master/audits/v120-chainsecurity-audit.pdf",
+    "https://github.com/grove-labs/xchain-helpers/blob/d7bf92cd6182da577c5ff9912507997b7a516561/audits/v110-cantina-audit.pdf",
+    "https://raw.githubusercontent.com/grove-labs/grove-gov-relay/76b6fcae9df7da5d93800b4d215a779e612f1c32/audits/v110-cantina-audit.pdf",
+    "https://raw.githubusercontent.com/grove-labs/grove-gov-relay/76b6fcae9df7da5d93800b4d215a779e612f1c32/audits/v120-chainsecurity-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x491edfb0b8b608044e227225c715981a30f3a44e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

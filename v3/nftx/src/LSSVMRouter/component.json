@@ -1,0 +1,26 @@
+{
+  "component": "LSSVMRouter",
+  "main_contract": "LSSVMRouter",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b2e8cda09bba9660dca5cb6233787738ad68329",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe5763f17cf9668328938b61e282855c04ffb50a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

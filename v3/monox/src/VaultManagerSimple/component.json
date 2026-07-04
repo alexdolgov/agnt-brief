@@ -1,0 +1,26 @@
+{
+  "component": "VaultManagerSimple",
+  "main_contract": "VaultManagerSimple",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb82c6d510b3a0dc9f198de0ad2a3839973c6783c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb91d1327b12fad162de808b050a0c6580478ac4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

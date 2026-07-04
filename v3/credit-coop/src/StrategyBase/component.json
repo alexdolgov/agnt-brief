@@ -1,0 +1,42 @@
+{
+  "component": "StrategyBase",
+  "main_contract": "StrategyBase",
+  "source_file_count": 17,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x263dbfeb1ffd79f8552a10b595da9436f7ac07ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3aa8acb58dfbbf775cbae2cfa22c921ac2adc241",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4349c6ceb045a7263a91fa9ae3d4bfe83136d348",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xacf337a069ef9bda5663a9021a896bbd76528759",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

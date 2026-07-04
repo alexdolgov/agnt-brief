@@ -1,0 +1,18 @@
+{
+  "component": "LandFragments",
+  "main_contract": "LandFragments",
+  "source_file_count": 139,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc646d16dbb448d3ec0a6c8430a3236e04559c317",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SonofDogeV2",
+  "main_contract": "SonofDogeV2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcdb943908de5ee37998a53f23467017d1a307e60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

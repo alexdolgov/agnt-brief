@@ -1,0 +1,18 @@
+{
+  "component": "ConfigRegistry_VAO_1",
+  "main_contract": "ConfigRegistry_VAO_1",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x064358f9b6428c51f80511d73afeb3a9e5cf0213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

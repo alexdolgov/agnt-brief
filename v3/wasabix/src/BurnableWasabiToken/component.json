@@ -1,0 +1,18 @@
+{
+  "component": "BurnableWasabiToken",
+  "main_contract": "BurnableWasabiToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86e73212002f80c57070efad4765ff0117de5aea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

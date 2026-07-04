@@ -1,0 +1,18 @@
+{
+  "component": "CCTPReceiver",
+  "main_contract": "CCTPReceiver",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x26e9512547fec1906c55256e491dfb6673d8c23f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

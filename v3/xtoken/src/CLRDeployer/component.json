@@ -1,0 +1,21 @@
+{
+  "component": "CLRDeployer",
+  "main_contract": "CLRDeployer",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/xtokenmarket/terminal-mining/blob/master/audits/ABDK-audit.pdf",
+    "https://github.com/xtokenmarket/terminal-mining/blob/master/audits/certik-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2aa5853d2d934c3a239d83f56dc26ebb25084163",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

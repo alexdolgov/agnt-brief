@@ -1,0 +1,18 @@
+{
+  "component": "FastPriceFeed-2",
+  "main_contract": "FastPriceFeed",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x11d62807dae812a0f1571243460bf94325f43bb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

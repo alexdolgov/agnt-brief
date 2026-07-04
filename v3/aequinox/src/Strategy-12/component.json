@@ -1,0 +1,18 @@
+{
+  "component": "Strategy-12",
+  "main_contract": "Strategy",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6a7b6be5d18951293a4550d7d84e6828e5e21b60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

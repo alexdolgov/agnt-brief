@@ -1,0 +1,20 @@
+{
+  "component": "weEthExtension",
+  "main_contract": "weEthExtension",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://0xmacro.com/library/audits/sevenSeas-3.html"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78e59309ba2779a5d3522e965fe9be2790fd7535",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

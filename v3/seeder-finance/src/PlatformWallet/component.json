@@ -1,0 +1,26 @@
+{
+  "component": "PlatformWallet",
+  "main_contract": "PlatformWallet",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4ffee8e4be5f71fddb76e3a0f958c065708c89e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x572e94f402b5c9c71f759ade455c9dce6dfa2f52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

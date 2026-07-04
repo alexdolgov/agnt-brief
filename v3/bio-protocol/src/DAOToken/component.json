@@ -1,0 +1,26 @@
+{
+  "component": "DAOToken",
+  "main_contract": "DAOToken",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ae5eae997d2031f78177bfb4bbee511edd9ed2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd25954c9bad1f39945b1e75f2d3f0a4f4d78f6fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

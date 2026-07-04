@@ -1,0 +1,34 @@
+{
+  "component": "MagicValueLib",
+  "main_contract": "MagicValueLib",
+  "source_file_count": 48,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x28158dcebbb6b5e69a5a5a26f5fe9a8d199df48c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x40e52d4dee5fb7a703fc61f6174a9212bd65f091",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe022bf9ae45f0c3657c88a256fdf0f8419bdb1be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "DeepLockLPMining",
+  "main_contract": "DeepLockLPMining",
+  "source_file_count": 7,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x03dab688d32507b53cc91265fa47760b13941250",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x27f33de201679a05a1a3ff7cb40a33b4aa28758e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x311542b416a238a7151b21adf179dd695bf6bfd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf72b52a988284301c219e5a24f900be32ed2f2a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

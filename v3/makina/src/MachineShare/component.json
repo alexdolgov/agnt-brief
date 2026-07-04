@@ -1,0 +1,44 @@
+{
+  "component": "MachineShare",
+  "main_contract": "MachineShare",
+  "source_file_count": 13,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/Makina/ChainSecurity_Makina_MakinaCoreSmartContracts_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e33e98af620f1d563fcd3cfd3c75ace841204ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x871ab8e36cae9af35c6a3488b049965233deb7ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x972966bcc17f7d818de4f27dc146ef539c231bdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac499adf00a54044b988a59b19016655c3494b06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

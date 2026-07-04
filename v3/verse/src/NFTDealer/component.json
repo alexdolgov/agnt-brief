@@ -1,0 +1,42 @@
+{
+  "component": "NFTDealer",
+  "main_contract": "NFTDealer",
+  "source_file_count": 2,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x77130ef5124fa9c051bee3ee43498a0d2fa9f822",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2063afd93916c7af46f8e1ed6bc07c5ac386ed6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc4302a799d0b01e2b8cde0fe3eae38869b6b92bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeeadee8e735e83276c5e3e0868b272759847b9f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BaseImmutableAdminUpgradeabilityProxy",
+  "main_contract": "BaseImmutableAdminUpgradeabilityProxy",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x405c82acd100f8e136b6c23b828ae64a44a0f601",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

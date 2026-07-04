@@ -1,0 +1,26 @@
+{
+  "component": "OneSidedECLPJoiner",
+  "main_contract": "OneSidedECLPJoiner",
+  "source_file_count": 59,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x84b22e0f83d848ead9fc050734e946b665232c0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa0a555c1c11ef36d2381768eb734fa2bddf1322b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

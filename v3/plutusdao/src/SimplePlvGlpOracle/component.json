@@ -1,0 +1,18 @@
+{
+  "component": "SimplePlvGlpOracle",
+  "main_contract": "SimplePlvGlpOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x75e901c9ef67f46fb56f35a90f1eecc748c18dac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

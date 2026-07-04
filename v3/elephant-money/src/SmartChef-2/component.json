@@ -1,0 +1,18 @@
+{
+  "component": "SmartChef-2",
+  "main_contract": "SmartChef",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x00d2d8352fb688d8d60ae128cb171ef2ecfff1d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

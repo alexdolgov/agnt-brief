@@ -1,0 +1,18 @@
+{
+  "component": "VotePower",
+  "main_contract": "VotePower",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28bda90b016b66df1991cd99bc18d11807410099",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

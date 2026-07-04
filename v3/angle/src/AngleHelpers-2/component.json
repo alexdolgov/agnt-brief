@@ -1,0 +1,18 @@
+{
+  "component": "AngleHelpers-2",
+  "main_contract": "AngleHelpers",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa21d906bf21a58196c9f7566c366c10d5fa1a723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

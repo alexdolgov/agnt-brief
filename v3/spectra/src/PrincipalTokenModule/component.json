@@ -1,0 +1,18 @@
+{
+  "component": "PrincipalTokenModule",
+  "main_contract": "PrincipalTokenModule",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd8f4c8686fe26ee2910fbfc62e173e12e1cb1d99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

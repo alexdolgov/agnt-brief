@@ -1,0 +1,26 @@
+{
+  "component": "DaiJoinFab",
+  "main_contract": "DaiJoinFab",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64a84e558192dd025f3a96775fee8fb530f27177",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf930fb04a9514a3468e041c50cc4721f2d29b32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

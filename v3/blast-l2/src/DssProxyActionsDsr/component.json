@@ -1,0 +1,26 @@
+{
+  "component": "DssProxyActionsDsr",
+  "main_contract": "DssProxyActionsDsr",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07ae5dfd28adf5e408316c01b43a7af0da0f38b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07ee93aeea0a36fff2a9b95dd22bd6049ee54f26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

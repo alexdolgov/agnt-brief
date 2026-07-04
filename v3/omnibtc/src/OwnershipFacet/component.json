@@ -1,0 +1,18 @@
+{
+  "component": "OwnershipFacet",
+  "main_contract": "OwnershipFacet",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3b018025f0a6173b727f875f833b435a35890fe5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

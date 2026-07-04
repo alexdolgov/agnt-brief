@@ -1,0 +1,18 @@
+{
+  "component": "VaultManagerChainlinkMainAsset",
+  "main_contract": "VaultManagerChainlinkMainAsset",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7a646c42b64d21e6b871efd85f54d707ace1f9d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "TokenDropWithLock",
+  "main_contract": "TokenDropWithLock",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x630e78c7ac331d89e2fedbbaa93fecade842d460",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85449dd4f0c09b667b1c1008c732ebc269057cd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Auth-2",
+  "main_contract": "Auth",
+  "source_file_count": 90,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1142ad5e5a082077a7d79d211726c1bd39b0d5fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "CrossChainMintKeeperHelper",
+  "main_contract": "CrossChainMintKeeperHelper",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x72ece039cbdcfa9a26edcdfcfcddacb1d49cf710",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xee95acf11bb1c28fd46df00c676d340e49fc4cdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

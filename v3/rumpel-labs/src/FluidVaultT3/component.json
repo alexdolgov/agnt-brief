@@ -1,0 +1,18 @@
+{
+  "component": "FluidVaultT3",
+  "main_contract": "FluidVaultT3",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe210d8ded13abe836a10e8aa956dd424658d0034",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

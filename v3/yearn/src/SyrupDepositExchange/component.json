@@ -1,0 +1,18 @@
+{
+  "component": "SyrupDepositExchange",
+  "main_contract": "SyrupDepositExchange",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ac4aee8be925472e2239e9633b9157e7cbcbd4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

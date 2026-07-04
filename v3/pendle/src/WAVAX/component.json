@@ -1,0 +1,18 @@
+{
+  "component": "WAVAX",
+  "main_contract": "WAVAX",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7fc6d48e6e8e8b9505c171325539c651bf1d51d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

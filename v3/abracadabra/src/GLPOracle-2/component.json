@@ -1,0 +1,18 @@
+{
+  "component": "GLPOracle-2",
+  "main_contract": "GLPOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8bee5db2315df7868295c531b36baa53439cf528",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

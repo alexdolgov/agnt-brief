@@ -1,0 +1,18 @@
+{
+  "component": "Marketplace",
+  "main_contract": "Marketplace",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x01471f7b972602d33b5430d9fc391d78f25f0714",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

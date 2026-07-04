@@ -1,0 +1,18 @@
+{
+  "component": "DexV2AggregatorModuleMk2",
+  "main_contract": "DexV2AggregatorModuleMk2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd1724d7c865b29a52cc0238e2b453531759450da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

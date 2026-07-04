@@ -1,0 +1,18 @@
+{
+  "component": "OTC",
+  "main_contract": "OTC",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x92ab5cce7af1605da2681458ae52a0bec4ecb74c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

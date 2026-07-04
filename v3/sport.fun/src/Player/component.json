@@ -1,0 +1,26 @@
+{
+  "component": "Player",
+  "main_contract": "Player",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x31b0786a4d435d513708df7a2d9839c0b80e2a59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa2e6d2f9df84cecb8e507ce973e153cc4131648",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

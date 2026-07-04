@@ -1,0 +1,18 @@
+{
+  "component": "ChildMintableERC20",
+  "main_contract": "ChildMintableERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x07280d3143311b012ad268a74f2aa791713952ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

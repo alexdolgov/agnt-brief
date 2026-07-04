@@ -1,0 +1,26 @@
+{
+  "component": "Moonwell2AssetFoldStrategy-2",
+  "main_contract": "Moonwell2AssetFoldStrategy",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5a3f6cff9da787f43e3b52b7c4bcd14d3afbe485",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9f02ac045e163625c1c59dbd6488867c6524e5f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

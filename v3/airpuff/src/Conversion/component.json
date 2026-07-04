@@ -1,0 +1,18 @@
+{
+  "component": "Conversion",
+  "main_contract": "Conversion",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x57f4c044b588c86270629c5e7fc810c5b89ff713",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

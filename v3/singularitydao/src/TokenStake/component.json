@@ -1,0 +1,18 @@
+{
+  "component": "TokenStake",
+  "main_contract": "TokenStake",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13e1367a455c45aa736d7ff2c5656ba2bd05ad46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

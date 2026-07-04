@@ -1,0 +1,108 @@
+# magpie-ecosystem — deployments
+
+75 verified deployment(s) across 39 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x0776c06907ce6ff3d9dbf84ba9b3422d7225942d` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8` | ClonableBeaconProxy | proxy | live | no |
+| arbitrum | `0x18a192dfe0be1e5e9aa424738fdad800646283b2` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x21804fb90593458630298f10a85094cb6d3b07db` | TransparentUpgradeableProxy-10 | proxy | live | yes |
+| arbitrum | `0x2ac2b254bc18cd4999f64773a966e4f4869c34ee` | PenpieOFT | impl | live | no |
+| arbitrum | `0x3cbfc97f87f534b42bb58276b7b5dcad29e57eac` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x42c614415cfb8c71bb28314f6d2a21d91c68f588` | BeaconProxy | proxy | live | yes |
+| arbitrum | `0x4ade86667760f45cbd5255a5bc8b4c3a703dda7a` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x509fd25ee2ac7833a017f17ee8a6fb4aaf947876` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x536599497ce6a35fc65c7503232fec71a84786b9` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x54bdbf3ce36f451ec61493236b8e6213ac87c0f6` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x664cc2bcae1e057eb1ec379598c5b743ad9db6e7` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x6db96bbeb081d2a85e0954c252f2c1dc108b3f81` | ERC1967Proxy | proxy | live | yes |
+| arbitrum | `0x7b5eb3940021ec0e8e463d5dbb4b7b09a89ddf96` | BridgeToken | proxy | live | no |
+| arbitrum | `0xa61f74247455a40b01b0559ff6274441fafa22a3` | BridgeToken | proxy | live | no |
+| base | `0xa99f6e6785da0f5d6fb42495fe424bce029eeb3e` | OptimismMintableERC20 | impl | live | no |
+| bsc | `0x009cf7bc57584b7998236eff51b98a168dcea9b0` | SyrupBar | impl | live | no |
+| bsc | `0x04d6115703b0127888323f142b8046c7c13f857d` | Pair | impl | live | no |
+| bsc | `0x05ff2b0db69458a0750badebc4f9e13add608c7f` | PancakeRouter | impl | live | no |
+| bsc | `0x0c3d6892aa3b23811af3bd1bbea8b0740e8e4528` | SmartChef | impl | live | no |
+| bsc | `0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82` | BEP20 | impl | live | no |
+| bsc | `0x1b80eec9b25472c6119ead3b880976fa62e58453` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0x1d7928452009e03af2e3a2b5931d5d5876cb0c21` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0x232594e7f0096ba7ddabcd8689cb0d994694eb26` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0x2b5d9adea07b590b638ffc165792b2c610eda649` | Cakepie | impl | live | no |
+| bsc | `0x2dcf4cdff4dd954683fe0a6123077f8a025b66cf` | SmartChef | impl | live | no |
+| bsc | `0x307d13267f360f78005f476fa913f8848f30292a` | BurnRegistryV1 | proxy | live | yes |
+| bsc | `0x34b504a5cf0ff41f8a480580533b6dda687fa3da` | BurnRegistryV1 | proxy | live | yes |
+| bsc | `0x3685502ea3ea4175fb5cbb5344f74d2138a96708` | Hypervisor | impl | live | no |
+| bsc | `0x3b99a4177e3f430590a8473f353dd87a5a2e1bfc` | ERC1967Proxy-3 | proxy | live | no |
+| bsc | `0x46e358ce367d43bf10c03042324e8ac2f8b42cf4` | BEP20 | impl | live | no |
+| bsc | `0x4e585c367dafa5db5e182a192e73f4e0900e764d` | MasterChef | impl | live | no |
+| bsc | `0x555ea72d7347e82c614c16f005fa91caf06dcb5a` | BnbStaking | impl | live | no |
+| bsc | `0x581fa684d0ec11ccb46b1d92f1f24c8a3f95c0ca` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0x5a0e3291514f5f1797a0c7efefdac81eec70ec01` | TransparentUpgradeableProxy-6 | proxy | live | yes |
+| bsc | `0x73feaa1ee314f8c655e354234017be2193c9e24e` | MasterChef | impl | live | no |
+| bsc | `0x74165b89fd8e9b91a109a4e71662f27eeba61e98` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0x76865d4bfa513a3dd7f8a9977f3dd71e8ab2ca97` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0x782d9d67feaa4d1cdf8222d9053c8cba1c3b7982` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0x81a62b329cc8939494d8613f614171a9955a46e8` | TransparentUpgradeableProxy-7 | proxy | live | yes |
+| bsc | `0x837cb07f6b8a98731856092457524ff37b25e7b3` | OFTCore | impl | live | no |
+| bsc | `0x885711bedd3d17949dfed5e77d5ab6e89c3dfc8c` | ICHIVault | impl | live | no |
+| bsc | `0x8a016f1896dc2939ffdbb60f6e42bcc245e2bb0b` | ERC1967Proxy-2 | proxy | live | no |
+| bsc | `0x91dc89a7d4c68adb622b51e402fedeb74ac3e756` | MasterChef | impl | live | no |
+| bsc | `0x934c69e35ca3a2774cc0aa36f5632f1c39f3ac36` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0x9a0530a81c83d3b0dae720bf91c9254fecc3bf5e` | TransparentUpgradeableProxy-8 | proxy | live | yes |
+| bsc | `0xa5137e08c48167e363be8ec42a68f4f54330964e` | SmartChef | impl | live | no |
+| bsc | `0xa606c8916501fc841e383710817666aaed8c68b3` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0xab092c47b23fba03ac1f0ec5f8e94110eb5fff22` | Hypervisor | impl | live | no |
+| bsc | `0xb2aa63f363196caba3154d4187949283f085a488` | PancakeStableSwapLP | impl | live | no |
+| bsc | `0xb47b790076050423888cde9ebb2d5cb86544f327` | ERC1967Proxy | proxy | live | yes |
+| bsc | `0xbcfccbde45ce874adcb698cc183debcf17952812` | PancakeFactory | impl | live | no |
+| bsc | `0xca8d2451df68a9132fd9d30e8d354460642b72e9` | BurnRegistryV1 | proxy | live | yes |
+| bsc | `0xce54ba909d23b9d4be0ff0d84e5ae83f0add8d9a` | SmartChef | impl | live | no |
+| bsc | `0xd06716e1ff2e492cc5034c2e81805562dd3b45fa` | MGP | impl | live | no |
+| bsc | `0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3` | TransparentUpgradeableProxy-9 | proxy | live | yes |
+| bsc | `0xdd386880c277c3c27f604f4c35b029bae0340853` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0xdf0b9b59e92a2554dedb6f6f4af6918d79dd54c4` | Hypervisor | impl | live | no |
+| bsc | `0xe17a478572d7ca33130b06e068afce6b9e7f978b` | BEP20 | impl | live | no |
+| bsc | `0xea44ddc58ec6b4902e19a353c554b6a4f32b9e6e` | ERC1967Proxy-2 | proxy | live | no |
+| bsc | `0xfceb31a79f71ac9cbdcf853519c1b12d379edc46` | ListaToken | impl | live | no |
+| bsc | `0xfd31e1c5e5571f8e7fe318f80888c1e6da97819b` | ERC1967Proxy-2 | proxy | live | no |
+| bsc | `0xffd3a57e8db4f51fa01c72f06ff30bdfda9908e6` | BurnRegistryV1 | proxy | live | yes |
+| chain-146 | `0xf1ef7d2d4c0c881cd634481e0586ed5d2871a74b` | ERC1967Proxy-4 | proxy | live | no |
+| chain-80094 | `0xff9c599d51c407a45d631c6e89cb047efb88aef6` | WOFT | impl | live | no |
+| chain-9745 | `0x17bac5f906c9a0282ac06a59958d85796c831f24` | PendleOFT | impl | live | no |
+| ethereum | `0x1c1fb35334290b5ff1bf7b4c09130885b10fc0f4` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x24db6717db1c75b9db6ea47164d8730b63875db7` | TransparentUpgradeableProxy-3 | proxy | live | yes |
+| ethereum | `0x4bcc7c793534246bc18acd3737aa4897ff23b458` | TransparentUpgradeableProxy-4 | proxy | live | yes |
+| ethereum | `0x4f30a9d41b80ecc5b94306ab4364951ae3170210` | VotingEscrowPendleMainchain | impl | live | no |
+| ethereum | `0x6e799758cee75dae3d84e09d40dc416ecf713652` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x83e817e1574e2201a005ec0f7e700ed5606f555e` | mPendleOFT | impl | live | no |
+| ethereum | `0x98083e22d12497c1516d3c49e7cc6cd2cd9dcba4` | TransparentUpgradeableProxy-5 | proxy | live | yes |
+| ethereum | `0xe813ffa7932f2d182f0ae89254acfd0baa6e2df3` | ERC1967Proxy | proxy | live | yes |
+| optimism | `0x0af3ec6f9592c193196bef220bc0ce4d9311527d` | ERC1967Proxy | proxy | live | yes |
+
+## Source unavailable (23)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0xb688ba096b7bb75d7841e47163cd12d18b36a5bf`
+- arbitrum `0xc61d3c70cfc9dedaa090fdd0760eb9291253feff`
+- arbitrum `0xc9cb578d613d729c3c4c8ef7d46cb814570f2baa`
+- base `0x7a89614b596720d4d0f51a69d6c1d55db97e9aab`
+- base `0xc295087393c3ffc8aa46a8f6489ac93ce2dc6461`
+- bsc `0x664cc2bcae1e057eb1ec379598c5b743ad9db6e7`
+- bsc `0x9b69b06272980fa6bad9d88680a71e3c3beb32c6`
+- bsc `0xa3b615667cbd33cfc69843bf11fbb2a1d926bd46`
+- bsc `0xb35b3d118c0394e750b4b59d2a2f9307393cd5db`
+- bsc `0xe05157aa8d14b8ed1d816d505b3d5deeb83ca131`
+- chain-146 `0x664cc2bcae1e057eb1ec379598c5b743ad9db6e7`
+- chain-146 `0xf9619e8b01acc23fac7ee0aeb1258433b85814ec`
+- chain-80094 `0x367e7a694b9be5339cd861f7ee200cb829cdef96`
+- chain-80094 `0xc4a65a93dd6cd9717551ebe827e8baee025d1d7e`
+- chain-9745 `0x2cfedb9c62efb57a8bb8ec535f32731975d55243`
+- chain-9745 `0xfff28a2845aeb11394ed63ddfc62161af6310701`
+- ethereum `0x16296859c15289731521f199f0a5f762df6347d0`
+- ethereum `0x4405c0b330db66dffc40c8bcc616e447505af0f8`
+- ethereum `0x7dedbce5a2e31e4c75f87fea60bf796c17718715`
+- optimism `0x3cbfc97f87f534b42bb58276b7b5dcad29e57eac`
+- optimism `0xa3b615667cbd33cfc69843bf11fbb2a1d926bd46`
+- optimism `0xbc7b1ff1c6989f006a1185318ed4e7b5796e66e1`
+- optimism `0xc4a65a93dd6cd9717551ebe827e8baee025d1d7e`

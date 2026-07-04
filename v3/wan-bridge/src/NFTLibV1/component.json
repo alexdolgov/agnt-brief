@@ -1,0 +1,18 @@
+{
+  "component": "NFTLibV1",
+  "main_contract": "NFTLibV1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x50133f6836cb91237e17177e2985cbdad51f0cf2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

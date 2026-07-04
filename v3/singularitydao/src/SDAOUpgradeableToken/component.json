@@ -1,0 +1,18 @@
+{
+  "component": "SDAOUpgradeableToken",
+  "main_contract": "SDAOUpgradeableToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xda9c2064687ff02e1331efb39d1be0bc5db600f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "ProtocolGovernance",
+  "main_contract": "ProtocolGovernance",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mellow-finance/mellow-audits/blob/main/202208_BlockSec_vaults_v1/blocksec_mellow_vaults_v1.3-signed.pdf",
+    "https://github.com/mellow-finance/mellow-audits/blob/main/202208_Chainsecurity_vaults_v1/ChainSecurity_Mellow_Finance_Mellow_Vaults_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x00d91571c99a218bbcb5daad4c1d9dd6ed428d05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

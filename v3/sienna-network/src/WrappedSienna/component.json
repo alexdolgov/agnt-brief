@@ -1,0 +1,18 @@
+{
+  "component": "WrappedSienna",
+  "main_contract": "WrappedSienna",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "JonesEthCallStrategy",
+  "main_contract": "JonesEthCallStrategy",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba0563ffe3c7abe915d3dc404f1667682bc1f1dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

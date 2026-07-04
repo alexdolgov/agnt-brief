@@ -1,0 +1,108 @@
+{
+  "component": "BeaconProxy",
+  "main_contract": "BeaconProxy",
+  "source_file_count": 14,
+  "deployment_count": 12,
+  "audited": true,
+  "audits_covering": [
+    "https://hatsfinance.medium.com/gravita-audit-competition-final-writeup-dfb28463a0dc"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0aff8d886572d65d1d8b41a8519a5acaabba2b84",
+      "is_proxy": true,
+      "implementation_address": "0x11a1da34f44ce70a4424f56d7fda826822afd466",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x102809fe582ecaa527bb316dcc4e99fc35fbabb9",
+      "is_proxy": true,
+      "implementation_address": "0x1044958261f0a3dff363313fc94f7ea69ac935a1",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c649fd81727614881daeb9daa8a3c924a5bf78b",
+      "is_proxy": true,
+      "implementation_address": "0xac24d450e72d3cd27355981ead0fa1ffa611ec1b",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a906f92b0378bb19a3619e2751b1e0b8cab6b29",
+      "is_proxy": true,
+      "implementation_address": "0xe8d8a6bd1ec2505cf7eb0c42f6e4bd94d95d723f",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x312717e67b9a12402fb8d2db031ac9c84665a04e",
+      "is_proxy": true,
+      "implementation_address": "0x4a878c581c9542ebc467d1ce5cb86c3cf25603ab",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35e9a38cbdcdf773e649c0eaa4437184508833c9",
+      "is_proxy": true,
+      "implementation_address": "0x6319e07bb616ebaac6cad512dc690f9ec90d4764",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x81c1001e1621d05be250814123cc81bbb244cb07",
+      "is_proxy": true,
+      "implementation_address": "0x9c778410221841a35e0eea0e82e27cce78ee3c27",
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0d2c4ae1859c4f8bfd47755d52ce844b26cb2a09",
+      "is_proxy": true,
+      "implementation_address": "0x4f39f12064d83f6dd7a2bdb0d53af8be560356a6",
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x15f74458ae0bfdaa1a96ca1aa779d715cc1eefe4",
+      "is_proxy": true,
+      "implementation_address": "0x57a1953bf194a1ef73396e442ac7dc761dcd23cc",
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x0a3137e103a8f268fa065f6d5922ed6173b7bdfa",
+      "is_proxy": true,
+      "implementation_address": "0x40e0e274a42d9b1a9d4b64dc6c46d21228d45c20",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a3137e103a8f268fa065f6d5922ed6173b7bdfa",
+      "is_proxy": true,
+      "implementation_address": "0x40e0e274a42d9b1a9d4b64dc6c46d21228d45c20",
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0d2c4ae1859c4f8bfd47755d52ce844b26cb2a09",
+      "is_proxy": true,
+      "implementation_address": "0x89f1eccf2644902344db02788a790551bb070351",
+      "liveness": "live"
+    }
+  ]
+}

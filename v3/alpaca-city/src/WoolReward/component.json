@@ -1,0 +1,18 @@
+{
+  "component": "WoolReward",
+  "main_contract": "WoolReward",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x232f030747008d3ba5d51526f5966d8985218ff0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

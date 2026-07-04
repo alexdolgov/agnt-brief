@@ -1,0 +1,26 @@
+{
+  "component": "RngAuctionRelayerRemoteOwner",
+  "main_contract": "RngAuctionRelayerRemoteOwner",
+  "source_file_count": 49,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec9460c59cca1299b0242d6af426c21223cccd24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4c47dacfda99be38793181af9fd1a2ec7576bbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

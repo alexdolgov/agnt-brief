@@ -1,0 +1,26 @@
+{
+  "component": "FortiFiWNativeMASSVault",
+  "main_contract": "FortiFiWNativeMASSVault",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2adf67fdcd80cafca0201ef6c3c4daf39a26fda8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd04655fa20209a5b134b2a6182b20b7cdae0f24a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

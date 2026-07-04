@@ -1,0 +1,85 @@
+{
+  "component": "FiRMSlashingModule",
+  "main_contract": "FiRMSlashingModule",
+  "source_file_count": 1,
+  "deployment_count": 9,
+  "audited": true,
+  "audits_covering": [
+    "https://www.inverse.finance/audits/junior-sherlock-audit.pdf",
+    "https://www.inverse.finance/audits/junior-sherlock-contest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x316a01f878aa6d5a4c7ea2080d64d364f9538aa2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d27dd57a7dbf5b27a3fcabd75c916ac765a346c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x98400130a60cd1e436a0f433100f2de17c658603",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c0e166052d69d6f46422525e1f75d4a8f295423",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa56ed04eb7a51c62f3e4feee15bd5cf0d6efaa4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc61059ee153d4396c0496056465d4a14ae16b8c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7aec40f225fffb92c271e9eb07f473504b74fad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xefb3c69d7ed849340f60bb71f1e9c648be4a3914",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xefb4c3d1cad9f9eb0d458c6f89e5072777037f31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

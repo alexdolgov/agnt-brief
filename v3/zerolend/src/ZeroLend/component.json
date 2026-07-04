@@ -1,0 +1,18 @@
+{
+  "component": "ZeroLend",
+  "main_contract": "ZeroLend",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x78354f8dccb269a615a7e0a24f9b0718fdc3c7a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

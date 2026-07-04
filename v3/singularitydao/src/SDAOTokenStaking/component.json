@@ -1,0 +1,20 @@
+{
+  "component": "SDAOTokenStaking",
+  "main_contract": "SDAOTokenStaking",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/singularitydao"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x158a1d0144d8e5449305435dfadee07cd2dc85f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

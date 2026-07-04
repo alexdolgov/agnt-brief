@@ -1,0 +1,18 @@
+{
+  "component": "IDAIPriceResolver",
+  "main_contract": "IDAIPriceResolver",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37a448a8fa94f422d72be53d32c76c26d808a882",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

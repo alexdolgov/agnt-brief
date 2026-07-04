@@ -1,0 +1,18 @@
+{
+  "component": "CurveTwocryptoOptimized",
+  "main_contract": "CurveTwocryptoOptimized",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5f0985a8aad85e82fd592a23cc0501e4345fb18c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

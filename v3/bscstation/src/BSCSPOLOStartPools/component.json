@@ -1,0 +1,26 @@
+{
+  "component": "BSCSPOLOStartPools",
+  "main_contract": "BSCSPOLOStartPools",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b5590b2739c9bbc5facdd9f56c26c73f8063eb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa666de6cfb0023e1078a896b511a5131fd08ab2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

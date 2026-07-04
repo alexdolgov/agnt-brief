@@ -1,0 +1,18 @@
+{
+  "component": "TroveManager",
+  "main_contract": "TroveManager",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdcd922cba657b7c07fd114bf6734069bd66622f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

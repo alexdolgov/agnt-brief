@@ -1,0 +1,26 @@
+{
+  "component": "OneInchStrategy_1INCH_USDC",
+  "main_contract": "OneInchStrategy_1INCH_USDC",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d7da935c449be284b27d96b6f215d6dba95d8d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee8c926a15da9e74d17283a45aa1fb414eaf484f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

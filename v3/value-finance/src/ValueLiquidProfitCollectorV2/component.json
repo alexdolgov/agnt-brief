@@ -1,0 +1,18 @@
+{
+  "component": "ValueLiquidProfitCollectorV2",
+  "main_contract": "ValueLiquidProfitCollectorV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee30aff4ad70f2cbcdd0b9b422af92a7be090a13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

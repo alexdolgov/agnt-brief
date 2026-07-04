@@ -1,0 +1,18 @@
+{
+  "component": "EGGS",
+  "main_contract": "EGGS",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OrderBook",
+  "main_contract": "OrderBook",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb4dab0749619bba4835c1f0000cca5afc8d02ed4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

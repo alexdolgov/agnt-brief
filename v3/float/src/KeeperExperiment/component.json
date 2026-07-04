@@ -1,0 +1,18 @@
+{
+  "component": "KeeperExperiment",
+  "main_contract": "KeeperExperiment",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x661c9a1ad0dc7c7f1d8da87239c952479fc56df2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

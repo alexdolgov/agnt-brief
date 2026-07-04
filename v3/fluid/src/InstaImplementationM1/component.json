@@ -1,0 +1,18 @@
+{
+  "component": "InstaImplementationM1",
+  "main_contract": "InstaImplementationM1",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8a3462a50e1a9fe8c9e7d9023cacbd9a98d90021",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

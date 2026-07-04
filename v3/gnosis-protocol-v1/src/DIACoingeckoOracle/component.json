@@ -1,0 +1,18 @@
+{
+  "component": "DIACoingeckoOracle",
+  "main_contract": "DIACoingeckoOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07e4120dd7411a49e091a20fa0be33a183c35d60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

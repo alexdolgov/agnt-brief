@@ -1,0 +1,20 @@
+{
+  "component": "Account-6",
+  "main_contract": "Account",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x694ab80a18c0c0e72e4219c397f23cc99f003cfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

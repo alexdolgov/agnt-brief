@@ -1,0 +1,34 @@
+{
+  "component": "ExchangeEUR",
+  "main_contract": "ExchangeEUR",
+  "source_file_count": 29,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x32c2dcb7730ed6fc1eac0444a668f38fd7b5dc8d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x622833ab6e9501c9072d2c706c60aab5ff0234d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xe383394b913d7302c49f794c7d3243c429d53d1d",
+      "is_proxy": true,
+      "implementation_address": "0x32c2dcb7730ed6fc1eac0444a668f38fd7b5dc8d",
+      "liveness": "live"
+    }
+  ]
+}

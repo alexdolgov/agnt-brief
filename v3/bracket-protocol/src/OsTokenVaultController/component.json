@@ -1,0 +1,26 @@
+{
+  "component": "OsTokenVaultController",
+  "main_contract": "OsTokenVaultController",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a261e60fb14586b474c208b1b7ac6d0f5000306",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfe7083e5f1002471cf6fcb19b17770625a44b521",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

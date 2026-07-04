@@ -1,0 +1,18 @@
+{
+  "component": "ThenianFeeConverter",
+  "main_contract": "ThenianFeeConverter",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x21297f1706292874b804bb7d29e995ae551dec23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

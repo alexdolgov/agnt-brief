@@ -1,0 +1,50 @@
+{
+  "component": "ClaimingFacet",
+  "main_contract": "ClaimingFacet",
+  "source_file_count": 55,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x68ebca9e306939794987ed4543631e718a8fdbd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6bb7fb07ac7eceaed0b066ec4f328a1a8c4616cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb58d41ab4289bb1057cf67ce10d851636efe5d66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc01a94d4c536f11ebafbd547f5a1834d9cf658b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdae3a43f6dd57c2f1d1f76c00aeda93968e9fb60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

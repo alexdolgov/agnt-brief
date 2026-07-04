@@ -1,0 +1,18 @@
+{
+  "component": "MntStakeV2Contract",
+  "main_contract": "MntStakeV2Contract",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x9f39dc8ea0a73ab462d23104699afae9c30d1e4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

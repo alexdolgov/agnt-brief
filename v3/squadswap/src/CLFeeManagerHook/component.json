@@ -1,0 +1,26 @@
+{
+  "component": "CLFeeManagerHook",
+  "main_contract": "CLFeeManagerHook",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x73c5c84703540ed1f1f279614853a302cc255c0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x79a4be88afed3fc8cf331905cd6dd404ab4b0b18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

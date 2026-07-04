@@ -1,0 +1,18 @@
+{
+  "component": "FeeTaker",
+  "main_contract": "FeeTaker",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c30a1aeeafab7f5edb1a09a7a4a0b8bed8ee401",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

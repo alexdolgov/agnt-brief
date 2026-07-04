@@ -1,0 +1,26 @@
+{
+  "component": "GNSTradingV6_3_1",
+  "main_contract": "GNSTradingV6_3_1",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5220ffb7307a67d41062a261fef5136516637f65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x938ab573af89cbedac0b09c81892c36c61d9b908",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

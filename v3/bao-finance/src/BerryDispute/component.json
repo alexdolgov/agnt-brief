@@ -1,0 +1,18 @@
+{
+  "component": "BerryDispute",
+  "main_contract": "BerryDispute",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x624d25cb42c7f0940531101d47414e3a58ebcf9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

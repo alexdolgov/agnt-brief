@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlEnumerableV2-3",
+  "main_contract": "AccessControlEnumerableV2",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3c3e08243a12d9284bfd898225ce1c7ee024a588",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

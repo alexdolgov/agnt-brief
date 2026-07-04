@@ -1,0 +1,36 @@
+{
+  "component": "WooWithdrawManagerV2",
+  "main_contract": "WooWithdrawManagerV2",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Zellic/publications/blob/master/WOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1bb2ebecfbb4f78d83fb0a21cb415383779602c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x755e4af9e77a91999693947b02975c584d1b56f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa429b468d222bb31ff256f3d08ddc0a2d8a59664",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

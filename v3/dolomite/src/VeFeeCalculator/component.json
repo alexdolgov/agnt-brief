@@ -1,0 +1,18 @@
+{
+  "component": "VeFeeCalculator",
+  "main_contract": "VeFeeCalculator",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xa7b2c7b13e7628b70dda64a257767f7292917ce9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "sUMAMI",
+  "main_contract": "sUMAMI",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe6d557d416ff5640235119369c7e26aa18a906d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

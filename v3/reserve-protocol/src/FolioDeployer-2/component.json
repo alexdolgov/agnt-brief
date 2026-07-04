@@ -1,0 +1,38 @@
+{
+  "component": "FolioDeployer-2",
+  "main_contract": "FolioDeployer",
+  "source_file_count": 83,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf",
+    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-04-reserve-folio-solidity-2.0.0.pdf",
+    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x100e0efdd7a4f67825e1be5f0493f8d2aeac00bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5bed18aca50e6057e6658fe8498004092eedcdcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x72f87239981159ed23673012ee3806ca6114ab2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

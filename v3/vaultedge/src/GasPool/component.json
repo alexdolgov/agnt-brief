@@ -1,0 +1,18 @@
+{
+  "component": "GasPool",
+  "main_contract": "GasPool",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x110a56e6fa0fd09a89b182b73735e9f61750e697",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

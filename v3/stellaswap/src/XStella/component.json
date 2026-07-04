@@ -1,0 +1,18 @@
+{
+  "component": "XStella",
+  "main_contract": "XStella",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x06a3b410b681c82417a906993acefb91bab6a080",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

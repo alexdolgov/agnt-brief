@@ -1,0 +1,18 @@
+{
+  "component": "BrevisRequest-2",
+  "main_contract": "BrevisRequest",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xfa78cba4ebbf8fe28b4fc1468948f16fda2752b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

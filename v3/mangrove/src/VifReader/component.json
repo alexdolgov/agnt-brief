@@ -1,0 +1,18 @@
+{
+  "component": "VifReader",
+  "main_contract": "VifReader",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa36043be6f60846e8b952c8b3a2e23cf3ca308e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

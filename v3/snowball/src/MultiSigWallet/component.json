@@ -1,0 +1,18 @@
+{
+  "component": "MultiSigWallet",
+  "main_contract": "MultiSigWallet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x294ab3200ef36200db84c4128b7f1b4eec71e38a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

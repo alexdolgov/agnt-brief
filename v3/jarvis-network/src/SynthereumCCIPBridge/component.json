@@ -1,0 +1,18 @@
+{
+  "component": "SynthereumCCIPBridge",
+  "main_contract": "SynthereumCCIPBridge",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0818b48d171f90f8d97c6f6ebf18bc2de6f224fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

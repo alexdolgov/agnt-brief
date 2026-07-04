@@ -1,0 +1,26 @@
+{
+  "component": "HolderVesting",
+  "main_contract": "HolderVesting",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0811ad996cd39cecaedce64a51793cfebb913c12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffe68092f1430c3cb0e89dda4c99328ad1dde5a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "externalModule-2",
+  "main_contract": "externalModule",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x488933457e89656d7ef7e69c10f2f80c7aca19b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

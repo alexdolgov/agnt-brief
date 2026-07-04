@@ -1,0 +1,26 @@
+{
+  "component": "WHETHv2",
+  "main_contract": "WHETHv2",
+  "source_file_count": 65,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33827d2d2a0f4533ac26083e6eaae71d417cbba0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x570438b7b9c7ff075c768b093271b79152cf1bdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

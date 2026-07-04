@@ -1,0 +1,18 @@
+{
+  "component": "DELTA_Distributor-2",
+  "main_contract": "DELTA_Distributor",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf249c5b422758d91d8f05e1cc5fc85cf4b667461",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

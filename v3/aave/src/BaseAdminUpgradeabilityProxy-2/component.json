@@ -1,0 +1,20 @@
+{
+  "component": "BaseAdminUpgradeabilityProxy-2",
+  "main_contract": "BaseAdminUpgradeabilityProxy",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2020/09/aave-protocol-v2"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x797ae69562588dd893567ba22dfcf8e842686b53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

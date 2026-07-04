@@ -1,0 +1,66 @@
+{
+  "component": "IdleEulerStrategy",
+  "main_contract": "IdleEulerStrategy",
+  "source_file_count": 18,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3886557ed1698dbd496a4a0f2e00df8918ea45e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d1775da27dd9c6d936795ac21b94cded8babd69",
+      "is_proxy": true,
+      "implementation_address": "0xba6f9a90ccd403b815ead85b03e5a93286c66b3b",
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5dad2eef80a8cdfd930ab8f0353ca13bd48c4346",
+      "is_proxy": true,
+      "implementation_address": "0xba6f9a90ccd403b815ead85b03e5a93286c66b3b",
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8468b8efe7eea52978ccfe3c0248ca6f6895e166",
+      "is_proxy": true,
+      "implementation_address": "0xba6f9a90ccd403b815ead85b03e5a93286c66b3b",
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xacdf8fddc5031b11ecd2ecc46898e059989a8cd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba6f9a90ccd403b815ead85b03e5a93286c66b3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7f1b9c72b8230e470420a4b69af7c50781a3f44",
+      "is_proxy": true,
+      "implementation_address": "0xba6f9a90ccd403b815ead85b03e5a93286c66b3b",
+      "liveness": null
+    }
+  ]
+}

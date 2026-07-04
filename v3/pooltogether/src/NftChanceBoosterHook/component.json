@@ -1,0 +1,42 @@
+{
+  "component": "NftChanceBoosterHook",
+  "main_contract": "NftChanceBoosterHook",
+  "source_file_count": 47,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x26158db2448a5eccf6107d7494330e96404398c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x519bdf6855968bcc2d921dcf22e586f3dbf2e299",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x81b743dc3ebde24484a6e4625e224079c64ba620",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x83cbc017b05d7528005b99031820b89be1daef32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

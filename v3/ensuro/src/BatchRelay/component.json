@@ -1,0 +1,18 @@
+{
+  "component": "BatchRelay",
+  "main_contract": "BatchRelay",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa433f6dab80083beb2fee9ef0af8226751cac317",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

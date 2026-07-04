@@ -1,0 +1,18 @@
+{
+  "component": "ArbMonthlyCallsSsovV3",
+  "main_contract": "ArbMonthlyCallsSsovV3",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdf3d96299275e2fb40124b8ad9d270acfdcc6148",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

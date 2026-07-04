@@ -1,0 +1,18 @@
+{
+  "component": "GraphTokenLockManager",
+  "main_contract": "GraphTokenLockManager",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6284042d4da0931cbc64c5aab2d6184403095883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

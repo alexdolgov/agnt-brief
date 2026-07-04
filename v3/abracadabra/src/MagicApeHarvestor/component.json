@@ -1,0 +1,26 @@
+{
+  "component": "MagicApeHarvestor",
+  "main_contract": "MagicApeHarvestor",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5226d847cadabb7fcbd6c2a8568c58a6e10465bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x598330d0f504297f53799e37cff80ed564eb3525",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

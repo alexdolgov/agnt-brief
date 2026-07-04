@@ -1,0 +1,26 @@
+{
+  "component": "MorphoChainlinkOracleV2",
+  "main_contract": "MorphoChainlinkOracleV2",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b26bee26e7ea5225b459abb7433eab4ea52ed01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc415cc3f04f9074a9562aeee02591e65d39a94aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

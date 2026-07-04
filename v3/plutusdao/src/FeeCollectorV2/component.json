@@ -1,0 +1,18 @@
+{
+  "component": "FeeCollectorV2",
+  "main_contract": "FeeCollectorV2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x84d152e8cb68a94ebcf50ce6f17af7f2c1f891eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "LoanManager-2",
+  "main_contract": "LoanManager",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/rociFi/docs/blob/main/RociFi_Hexens_Dec_2022_SMA_public.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xad8899a7e3d45c7967e430ca3ff6fd21686a9e20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

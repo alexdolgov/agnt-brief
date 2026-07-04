@@ -1,0 +1,18 @@
+{
+  "component": "LPBurner",
+  "main_contract": "LPBurner",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4c62ac3f6088e882c9b2a315056bc298d22128bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

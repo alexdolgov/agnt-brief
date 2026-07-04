@@ -1,0 +1,18 @@
+{
+  "component": "AdaptiveCurveIrm",
+  "main_contract": "AdaptiveCurveIrm",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x6efa8e3aa8279eb2fd46b6083a9e52da72ea56c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

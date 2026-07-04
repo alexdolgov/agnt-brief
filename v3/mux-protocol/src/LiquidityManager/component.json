@@ -1,0 +1,20 @@
+{
+  "component": "LiquidityManager",
+  "main_contract": "LiquidityManager",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mux-world/mux-protocol/blob/main/audit/Certik-Audit-20220601.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x71a672db7d72047118d664861e4643f84cf2614c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

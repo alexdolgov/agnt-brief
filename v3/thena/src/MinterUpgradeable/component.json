@@ -1,0 +1,74 @@
+{
+  "component": "MinterUpgradeable",
+  "main_contract": "MinterUpgradeable",
+  "source_file_count": 13,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x31f4bf997973376e62d02f09606c54a94082103c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x406ec2705f1399d25801bd86b7d8d69ab9a91ab9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5115c12b2d8dbed8be5239dfabd046aa85b4261d",
+      "is_proxy": true,
+      "implementation_address": "0x6c1a357f0d737a889ea6b0321257d6d4ca664dfe",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5e3d6e4350b13295cd11c024eccff9efa5e9ea5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6c1a357f0d737a889ea6b0321257d6d4ca664dfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7959a75a97f52ef154acf59c1f623afb1f5da3ab",
+      "is_proxy": true,
+      "implementation_address": "0x406ec2705f1399d25801bd86b7d8d69ab9a91ab9",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86069feb223ee303085a1a505892c9d4bdbee996",
+      "is_proxy": true,
+      "implementation_address": "0x6c1a357f0d737a889ea6b0321257d6d4ca664dfe",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb7ed8fa63bea18986fa78d62f33497b1acdea1d8",
+      "is_proxy": true,
+      "implementation_address": "0x5e3d6e4350b13295cd11c024eccff9efa5e9ea5b",
+      "liveness": "live"
+    }
+  ]
+}

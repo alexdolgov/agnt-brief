@@ -1,0 +1,76 @@
+# zklink-nova — deployments
+
+60 verified deployment(s) across 44 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x3082cc23568ea640225c2467653db90e9250aaa0` | RadiantOFT | impl | live | no |
+| base | `0x161f4baab4052f20f5f4347ec4422556aa0477f0` | Proxy-2 | impl | live | no |
+| blast | `0x038f1c6ed5fccf690a920a27b39366eeef27efce` | FrogRichToken | impl | live | no |
+| blast | `0x5fe8534a6f96cb01261bd96e98c17c2c1cab3204` | Baja | impl | live | no |
+| blast | `0xf782e172a14ee1c85cd980c15375ba0e87957028` | TinyTigerCatToken | impl | live | no |
+| chain-169 | `0x028781ceed4a2264466ef5ab73c91603087fa131` | Proxy | impl | live | no |
+| chain-169 | `0x0d53ce63f3a72879d543ed6272a081308a731470` | L1ERC20Bridge | impl | live | yes |
+| chain-169 | `0x34c7ad65e4163306f8745996688b476914201ce0` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0x437a10fc9b6255281eb6c25a8224bd13f42bbcac` | EmptyVerifier | impl | live | yes |
+| chain-169 | `0x50efc7f1290479cb879473512d89fdc80b726211` | OptimismL2Gateway | impl | live | yes |
+| chain-169 | `0x55fa5276c44c1b465196898b144524c9c852235e` | OptimismL2Gateway | impl | unknown | yes |
+| chain-169 | `0x5715dec4cd747675e47b969d3a15aab909b8ce05` | ZkLink | impl | live | yes |
+| chain-169 | `0x5bc75b03601c2728f905164ac31a44374fa73e61` | Proxy | impl | live | no |
+| chain-169 | `0x5f58bcce409cdafbbd705e720743b1eff9fef28c` | L1ERC20Bridge | impl | unknown | yes |
+| chain-169 | `0x77b6f99970f488cfa8bd41892900b6ce881c2300` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0x7c56da81caaceceeff624baa93b314e793bc88b3` | ZkLink | impl | unknown | yes |
+| chain-169 | `0x95cef13441be50d20ca4558cc0a27b601ac544e5` | Manta | impl | unknown | no |
+| chain-169 | `0x9bf486550523faf9902a8be78abb436d287a2c6c` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0x9dc75660523581d56d4c8efd5819161e15bbc88c` | UpgradeGatekeeper | impl | unknown | no |
+| chain-169 | `0xa53e005cecd3d7c89a4ae814617cc14828b6527e` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0xbdad407f77f44f7da6684b416b1951eca461fb07` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0xbfa352a683d82a04233cc45ac1308621ba63283f` | OptimismL2Gateway | impl | unknown | yes |
+| chain-169 | `0xc8d4bcb4845f4583fd70a3ed22ed6623ef45b986` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0xdc07713b6c874c87b390a04f0f17a69213d2208b` | MultiCall | impl | unknown | no |
+| chain-169 | `0xdd5097fc3f68958649ce70f42b7c1cf0067a3545` | ZkLinkPeriphery | impl | live | yes |
+| chain-169 | `0xe89635a7339bf46198f76b17bcfdad977699cc13` | ZkLink | impl | unknown | yes |
+| chain-169 | `0xfb0ad0b3c2605a7ca33d6badd0c685e11b8f5585` | ZkLink | impl | unknown | yes |
+| ethereum | `0x1349a8d352b1971cbebeacf55fb75526f47b6610` | CumulativeMerkleDrop | impl | live | no |
+| ethereum | `0x3343f9de5612b6f8a433abc3eaae245cfa3283ce` | NethOFTAdapter | impl | live | no |
+| ethereum | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b` | LsdETH | impl | live | no |
+| ethereum | `0xb1e12802831da99d2d47b6a55049d69bf7de0e3c` | OBTC | impl | live | no |
+| ethereum | `0xc6572019548dfeba782ba5a2093c836626c7789a` | NETH | impl | live | no |
+| ethereum | `0xcea3681131dd151ee72a5c8dbba555cb8b8ded56` | RNethOFTAdapter | impl | live | no |
+| linea | `0x11bf5bc6327f7becb0ae753932a181c8fb5780ba` | MailboxFacet | impl | live | no |
+| linea | `0x1b19287ce898217d937571eaba97ec50f27d1206` | ExecutorFacet | impl | live | no |
+| linea | `0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4` | TransparentUpgradeableProxy | proxy | live | no |
+| linea | `0x509ff56c152315edee91a2e0f059195519507e01` | ValidatorTimelock | impl | live | yes |
+| linea | `0x5cb18b6e4e6f3b46ce646b0f4704d53724c5df05` | DiamondProxy | proxy | live | yes |
+| linea | `0x6fe38b4a1b540f86072dd36b7df60bc1b4f414a2` | WithdrawalFinalizer | impl | live | no |
+| linea | `0x902c3806a84f4e855a8746e92d7f1c9a51400458` | Verifier | impl | live | no |
+| linea | `0xb1d0354063527e4426c4becbdb75fe0fb112e3cb` | GettersFacet | impl | live | no |
+| linea | `0xb5bedd42000b71fdde22d3ee8a79bd49a568fc8f` | TransparentUpgradeableProxy | proxy | live | no |
+| linea | `0xce8e69a2685c80eb6bd825d0552f44bb34f35503` | DiamondProxy | impl | live | yes |
+| mantle | `0x02170fea1fd31a26aaf6dd06adf01b36db2e0a5f` | RewardDistributor | impl | live | no |
+| mantle | `0x207d39314707001ae36f12335dd8b1f65cd688ca` | RewardRouter | impl | live | no |
+| mantle | `0x2e4f63c3ffdf457ff210a29ef10ce3b12c132f0c` | Vester | impl | live | no |
+| mantle | `0x391536d06480e554cfa60f9e2be0f3bbe5a377ca` | FastPriceFeed | impl | live | no |
+| mantle | `0x57acdfef9d2d2c53e6316b3483ca9a14b481f7ab` | RewardTracker | impl | live | no |
+| mantle | `0x6154dce92267af35c733dba5d20e36ee3f8ed3d8` | ComplexOrderRouter | impl | live | no |
+| mantle | `0x661d88e548214f5606a0491f03b072fd0f471e7c` | OrderBook | impl | live | no |
+| mantle | `0x779f4e5fb773e17bc8e809f4ef1abb140861159a` | KTX | impl | live | no |
+| mantle | `0x8a7f1c607306f52ed07f9a705b54869159d1bd7c` | PositionRouter | impl | live | no |
+| mantle | `0x9831aa46badb308f8e87a7e3ab080adfd4f677a0` | PositionManager | impl | live | no |
+| mantle | `0x9c5582a773d929e2cd2de34e04e3a8302832733c` | RewardDistributor | impl | live | no |
+| mantle | `0xb6f417db08eb20834b53146190921c78356d227c` | Vester | impl | live | no |
+| mantle | `0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2` | WBTC | impl | live | no |
+| mantle | `0xea02deeb067acec119095845d780665883dc4583` | Router | impl | live | no |
+| scroll | `0x119b9459d9119d07c23ad06778aeabec804fd1a2` | ERC1967Proxy-2 | impl | live | no |
+| scroll | `0x3c7c0ebfcd5786ef48df5ed127cddeb806db976c` | TransparentUpgradeableProxy-2 | impl | live | no |
+
+## Source unavailable (6)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0xed5d1e1320720cae8bb40275550a7d307a082ac3`
+- chain-169 `0x44a65dc12865a1e5249b45b4868f32b0e37168ff`
+- chain-169 `0xd784d7128b46b60ca7d8bdc17dcec94917455657`
+- chain-169 `0xe946abb40928326ce5bff303e7b8f0f253ea39d0`
+- linea `0x3e98568770af932353a2a8c3e3b77cdb7f0c2fa1`
+- linea `0x62ce247f34dc316f93d3830e4bf10959fce630f8`

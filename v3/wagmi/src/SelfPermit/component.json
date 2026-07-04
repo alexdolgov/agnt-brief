@@ -1,0 +1,18 @@
+{
+  "component": "SelfPermit",
+  "main_contract": "SelfPermit",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8187808b163e7cbaccc4d0a9b138ae6196ac1f72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FlashLoanArbitrage",
+  "main_contract": "FlashLoanArbitrage",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8ffc3a54ab700f94b111904853893f4b24f0d87b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

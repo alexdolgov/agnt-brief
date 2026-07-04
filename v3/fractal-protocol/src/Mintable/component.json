@@ -1,0 +1,18 @@
+{
+  "component": "Mintable",
+  "main_contract": "Mintable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x51acb1ea45c1ec2512ae4202b9076c13016dc8aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

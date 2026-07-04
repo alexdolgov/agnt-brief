@@ -1,0 +1,34 @@
+{
+  "component": "SystemConfig",
+  "main_contract": "SystemConfig",
+  "source_file_count": 7,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a124779fdf107c3f6bcb992731dcaad09f2276a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8432728a257646449245558b8b7dbe51a16c7a4d",
+      "is_proxy": true,
+      "implementation_address": "0xf15a4b6d1fe2ca6ee38bc3fb957f43f58b515eee",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf15a4b6d1fe2ca6ee38bc3fb957f43f58b515eee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

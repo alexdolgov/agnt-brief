@@ -1,0 +1,26 @@
+{
+  "component": "ERC1967Proxy-6",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x969c0f87623dc33010b4069fea48316ba2e45382",
+      "is_proxy": true,
+      "implementation_address": "0xf6c6b6c659132ae691b6b2b3498bac66bf64954c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6c6b6c659132ae691b6b2b3498bac66bf64954c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

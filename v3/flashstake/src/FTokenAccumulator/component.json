@@ -1,0 +1,18 @@
+{
+  "component": "FTokenAccumulator",
+  "main_contract": "FTokenAccumulator",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x15c32f81df9b00b97b68148b6bdeb72d57f24845",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

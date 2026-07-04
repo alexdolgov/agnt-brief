@@ -1,0 +1,18 @@
+{
+  "component": "StakelessGauge-6",
+  "main_contract": "StakelessGauge",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3eae4a1c2e36870a006e816930d9f55df0a72a13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

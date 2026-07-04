@@ -1,0 +1,21 @@
+{
+  "component": "CoverPoolFactory",
+  "main_contract": "CoverPoolFactory",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Cover%20Protocol%20-%20Report%20-%20V2%20by%20Quantstamp.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Cover%20Protocol%20v2%20Security%20Audit%20Report%20(merged).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cb3391feff3806a6f7fa11b372cb70659304791",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

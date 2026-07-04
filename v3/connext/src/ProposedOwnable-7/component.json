@@ -1,0 +1,21 @@
+{
+  "component": "ProposedOwnable-7",
+  "main_contract": "ProposedOwnable",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/ConnextNxtp-Spearbit-Security-Review.pdf",
+    "https://github.com/connext/audits/blob/main/amarok/Connext_A-1__Macro_Audits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x137072f68708eb7c82edceececcf64d6c29c171b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

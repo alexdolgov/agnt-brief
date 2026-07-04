@@ -1,0 +1,18 @@
+{
+  "component": "WeETHUnwindAdapter",
+  "main_contract": "WeETHUnwindAdapter",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a0e0580bd8493be43cad2910cb5497f696e9d12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

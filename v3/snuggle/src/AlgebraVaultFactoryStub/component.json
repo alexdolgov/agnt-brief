@@ -1,0 +1,26 @@
+{
+  "component": "AlgebraVaultFactoryStub",
+  "main_contract": "AlgebraVaultFactoryStub",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1cb8eedc4dcff2da02bfcfbed2456cf2c41333f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x653658ddb7e4a7a69f0fa4c020f1e7e60732d540",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

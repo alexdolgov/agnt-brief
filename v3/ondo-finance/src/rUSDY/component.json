@@ -1,0 +1,20 @@
+{
+  "component": "rUSDY",
+  "main_contract": "rUSDY",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-09-ondo"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x127123279f44c6c9a1da42852f06cb46fc6e6a74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

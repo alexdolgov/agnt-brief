@@ -1,0 +1,20 @@
+{
+  "component": "DegenNFT",
+  "main_contract": "DegenNFT",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2022%20Sep%20-%20Consensys%20Diligence.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb829a5b349b01fc71afe46e50dd6ec0222a6e599",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

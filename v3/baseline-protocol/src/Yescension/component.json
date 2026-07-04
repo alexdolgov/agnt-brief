@@ -1,0 +1,26 @@
+{
+  "component": "Yescension",
+  "main_contract": "Yescension",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x3f3df28fc6b71633df5b7318ecbff419949dcaaf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xba1578e20578e0ad57e0430f241c9fcd76acd026",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

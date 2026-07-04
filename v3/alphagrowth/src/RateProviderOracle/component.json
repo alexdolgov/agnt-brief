@@ -1,0 +1,18 @@
+{
+  "component": "RateProviderOracle",
+  "main_contract": "RateProviderOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x013f30a593718d962c0ceede0a66f5f9ef5451b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

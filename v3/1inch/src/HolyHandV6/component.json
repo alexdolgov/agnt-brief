@@ -1,0 +1,18 @@
+{
+  "component": "HolyHandV6",
+  "main_contract": "HolyHandV6",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5ba57863ac61602e96f88a934ef388ef08119fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

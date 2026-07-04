@@ -1,0 +1,34 @@
+{
+  "component": "DefaultPool",
+  "main_contract": "DefaultPool",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d429667b36e2ad6e183478055a00718dce10723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbe4b733b7802aaf2d640c8e373d4961a07efa15a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdbf1b4c4e82733a6dc12d522c774009bc554205d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

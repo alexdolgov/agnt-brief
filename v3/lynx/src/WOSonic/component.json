@@ -1,0 +1,18 @@
+{
+  "component": "WOSonic",
+  "main_contract": "WOSonic",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1ccb48fb244fe1f6eb0d1c5fbd839db78c6c5805",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

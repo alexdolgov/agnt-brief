@@ -1,0 +1,18 @@
+{
+  "component": "UserMapping-2",
+  "main_contract": "UserMapping",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc412d5e42fec1b38ac89fe3e677a509538d38b91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

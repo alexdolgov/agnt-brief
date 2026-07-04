@@ -1,0 +1,18 @@
+{
+  "component": "LQTYToken",
+  "main_contract": "LQTYToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x094bd7b2d99711a1486fb94d4395801c6d0fddcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

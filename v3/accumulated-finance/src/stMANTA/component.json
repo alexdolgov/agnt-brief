@@ -1,0 +1,18 @@
+{
+  "component": "stMANTA",
+  "main_contract": "stMANTA",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xcba2aeec821b0b119857a9ab39e09b034249681a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

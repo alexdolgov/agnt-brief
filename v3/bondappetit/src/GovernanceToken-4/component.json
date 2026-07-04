@@ -1,0 +1,21 @@
+{
+  "component": "GovernanceToken-4",
+  "main_contract": "GovernanceToken",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HashEx/public_audits/blob/32a680c5b8f3a784ef3273c324e0841341f3abc2/BondApp%C3%A9tit/BondAppetit%20report.pdf",
+    "https://github.com/mixbytes/audits_public/blob/4fc7d333e3df57586e0f96cc551819e2c93f3ae9/BondAppetit/BondAppetit%20Security%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a1997c130f4b2997166975d9aff92797d5134c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

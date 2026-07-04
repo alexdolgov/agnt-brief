@@ -1,0 +1,18 @@
+{
+  "component": "PancakeSwapV4StandardModule",
+  "main_contract": "PancakeSwapV4StandardModule",
+  "source_file_count": 72,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3da00380b4d56101685d058785fde25fe9c53c39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

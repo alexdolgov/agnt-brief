@@ -1,0 +1,18 @@
+{
+  "component": "MOONSHAREToken",
+  "main_contract": "MOONSHAREToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x84bf11fc0805cfeb92c2e7eb8f4cc3d23eb3ce36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

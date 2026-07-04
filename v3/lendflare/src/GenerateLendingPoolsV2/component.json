@@ -1,0 +1,18 @@
+{
+  "component": "GenerateLendingPoolsV2",
+  "main_contract": "GenerateLendingPoolsV2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6aaba4ef2540a69d8e99cbc8647d194cfd17241",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "ReserveStewardshipIncentives",
+  "main_contract": "ReserveStewardshipIncentives",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0076-GYROSCOPE-GOVERNANCE-FINAL.pdf",
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0094-GYROSCOPE-PROTOCOL-FINAL.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c73d4e5349ffd392e62fa6bed994bb449d94f86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

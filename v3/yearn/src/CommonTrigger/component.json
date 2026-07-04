@@ -1,0 +1,18 @@
+{
+  "component": "CommonTrigger",
+  "main_contract": "CommonTrigger",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf8df17a35c88abb25e83c92f9d293b4368b9d52d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

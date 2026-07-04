@@ -1,0 +1,26 @@
+{
+  "component": "GenericRouter1Inch",
+  "main_contract": "GenericRouter1Inch",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x32fc18f94ea5c31b7b4d2220580774871d114972",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xefb9e4b6626abd53b650e806711143407edb0f61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

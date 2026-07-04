@@ -1,0 +1,36 @@
+{
+  "component": "SystemControl",
+  "main_contract": "SystemControl",
+  "source_file_count": 73,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Egis-Security/audits/blob/main/reports/SIR-Trading.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x2ff5f8100215ef44ec3ab83a8f42a6fe7f7046f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xaad7a78da51fa53b50d17f4da47ae0a042301c93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xf1017c43aa91e856afa173972765106dd98c4152",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

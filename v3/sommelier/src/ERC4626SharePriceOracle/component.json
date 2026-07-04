@@ -1,0 +1,23 @@
+{
+  "component": "ERC4626SharePriceOracle",
+  "main_contract": "ERC4626SharePriceOracle",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://0xmacro.com/library/audits/sommelier-12.html",
+    "https://0xmacro.com/library/audits/sommelier-9.html",
+    "https://github.com/PeggyJV/cellar-contracts/blob/main/audits/Sommelier%20A-12%20_%20Macro%20Audits%20_%20The%200xMacro%20Library.pdf",
+    "https://github.com/PeggyJV/cellar-contracts/blob/main/audits/Sommelier%20A-9%20_%20Macro%20Audits%20_%20The%200xMacro%20Library.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc254a090af27a94d00677191955f7713fdc71cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

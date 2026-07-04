@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721CoreV3-2",
+  "main_contract": "GenArt721CoreV3",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99a9b7c1116f9ceeb1652de04d5969cce509b069",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

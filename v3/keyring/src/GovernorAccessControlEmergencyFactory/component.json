@@ -1,0 +1,18 @@
+{
+  "component": "GovernorAccessControlEmergencyFactory",
+  "main_contract": "GovernorAccessControlEmergencyFactory",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x025c8831c6e45420df8e71f7b6b99f733d120faf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

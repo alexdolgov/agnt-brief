@@ -1,0 +1,34 @@
+{
+  "component": "DiamondLoupeFacet",
+  "main_contract": "DiamondLoupeFacet",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0f1299e27eeed3256fc384541cf5502650083aee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8d3abb31cdd6b254f8c3ca2b8173593f269cbefc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa0e786f59881e549e6de6b01adf5269a5f48bb2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

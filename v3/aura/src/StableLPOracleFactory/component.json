@@ -1,0 +1,50 @@
+{
+  "component": "StableLPOracleFactory",
+  "main_contract": "StableLPOracleFactory",
+  "source_file_count": 61,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x254f3a2974b97dc2e675f6115c845567c55f83b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4eff2d77d9ffbaefb4b141a3e494c085b3ff4cb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5939ab16fdf1991b0ef603c639b6b501a7841fab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9179c06629ef7f17cb5759f501d89997fe0e7b45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

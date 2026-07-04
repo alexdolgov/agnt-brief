@@ -1,0 +1,26 @@
+{
+  "component": "MagnusSymmioPartyB",
+  "main_contract": "MagnusSymmioPartyB",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2ca101e49956548f493beab1b4615113a084cf2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa1b8ee3e3bdb194eacebb1dca614062c248243e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

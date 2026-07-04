@@ -1,0 +1,26 @@
+{
+  "component": "LineaMessengerWrapper",
+  "main_contract": "LineaMessengerWrapper",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29cfb537c004f5852f5a7ded08be1fc3ba465850",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x789ac91519a3344e4845e12870f3364e7df26d23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

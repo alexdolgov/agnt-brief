@@ -1,0 +1,18 @@
+{
+  "component": "BunnyPool",
+  "main_contract": "BunnyPool",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb24633bacc60bb1f907633c4c507f6e6d5bc1f44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

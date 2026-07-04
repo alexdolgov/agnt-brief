@@ -1,0 +1,18 @@
+{
+  "component": "Keep3rLiquidityManager",
+  "main_contract": "Keep3rLiquidityManager",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf14cb1feb6c40f26d9ca0ea39a9a613428cdc9ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

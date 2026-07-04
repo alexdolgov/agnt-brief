@@ -1,0 +1,18 @@
+{
+  "component": "Vesting_Staker__Cove_",
+  "main_contract": "Vesting Staker (Cove)",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc198fcb71e5a2cf29f7bcafaa462f3b0238fa691",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TERZTERZ180DaysStartPool",
+  "main_contract": "TERZTERZ180DaysStartPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2ce1cc2fc6280bb01ce6d941c0e695e399fd7db8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

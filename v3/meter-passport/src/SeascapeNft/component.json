@@ -1,0 +1,18 @@
+{
+  "component": "SeascapeNft",
+  "main_contract": "SeascapeNft",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc54b96b04aa8828b63cf250408e1084e9f6ac6c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "component": "StreamingFeeSplitExtension",
+  "main_contract": "StreamingFeeSplitExtension",
+  "source_file_count": 18,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0104a6fa30540dc1d9f45d2797f05eea79304525",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b71854e1a9fa1bb41da11bb6613a7a9c352da99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x48cf49701028cfbbce18a963c9134f7a86e71a22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9d08e14c4afc1f9113e440eae42028e1377a869",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf8af89c1285cdebe63413449ce982b9ce185dbae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

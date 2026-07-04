@@ -1,0 +1,18 @@
+{
+  "component": "EzAdminL1",
+  "main_contract": "EzAdminL1",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7625716271e5dd3896cf5336a1ea62fae9a24718",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

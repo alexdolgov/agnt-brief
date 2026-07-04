@@ -1,0 +1,18 @@
+{
+  "component": "AssimilatorV2",
+  "main_contract": "AssimilatorV2",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2cd18405163f6c928a1508b442b76a5135883024",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

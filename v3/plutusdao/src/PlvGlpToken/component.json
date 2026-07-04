@@ -1,0 +1,18 @@
+{
+  "component": "PlvGlpToken",
+  "main_contract": "PlvGlpToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5326e71ff593ecc2cf7acae5fe57582d6e74cff1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

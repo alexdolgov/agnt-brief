@@ -1,0 +1,18 @@
+{
+  "component": "VelodromeUniversalRouterAdapter",
+  "main_contract": "VelodromeUniversalRouterAdapter",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1732e3ebc63e8d7c5d32ba8e9bd40982c21e320f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

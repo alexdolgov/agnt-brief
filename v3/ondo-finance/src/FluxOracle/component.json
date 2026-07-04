@@ -1,0 +1,20 @@
+{
+  "component": "FluxOracle",
+  "main_contract": "FluxOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-NetherMind-Audit-April-2023.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c1f01765e60f3e695b3bba902e64daecc2280c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

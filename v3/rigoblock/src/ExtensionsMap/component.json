@@ -1,0 +1,18 @@
+{
+  "component": "ExtensionsMap",
+  "main_contract": "ExtensionsMap",
+  "source_file_count": 76,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02d05a307725d91755c486beafe6697562c9a67a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MANESTAKE",
+  "main_contract": "MANESTAKE",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d712e0452f038f8214a42aff7373e5905d92e0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

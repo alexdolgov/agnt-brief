@@ -1,0 +1,34 @@
+{
+  "component": "GNSTestNft3",
+  "main_contract": "GNSTestNft3",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x305267df8d93a0a92425ef487303a75f185eda1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x936519d25958a49a01be01be97b84270a60beb72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe368b6a2b028f22fb9e3132057e67993b29d3707",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

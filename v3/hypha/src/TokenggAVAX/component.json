@@ -1,0 +1,61 @@
+{
+  "component": "TokenggAVAX",
+  "main_contract": "TokenggAVAX",
+  "source_file_count": 23,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Zellic/publications/blob/master/GoGoPool%20-%20Zellic%20Audit%20Report.pdf",
+    "https://github.com/code-423n4/2023-02-gogopool-mitigation-contest"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x576d98d26419c5ce9595833403f64d919eca7323",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x84e71ced65470fab9d9d2d1a7eab33e1ddceb922",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa25eaf2906fa1a3a13edac9b9657108af7b703e3",
+      "is_proxy": true,
+      "implementation_address": "0xfad33e5854d7d0065cd4cd1e2ee9a64928163752",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd960ce17d15bd0d056bc4aadc491cbb3fa16e584",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf80eb498bbfd45f5e2d123dfbdb752677757843e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfad33e5854d7d0065cd4cd1e2ee9a64928163752",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

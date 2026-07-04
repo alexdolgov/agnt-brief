@@ -1,0 +1,18 @@
+{
+  "component": "OlympusDAIDepository",
+  "main_contract": "OlympusDAIDepository",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa64ed1b66cb2838ef2a198d8345c0ce6967a2a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

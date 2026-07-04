@@ -1,0 +1,18 @@
+{
+  "component": "YieldSeekerAdminTimelock",
+  "main_contract": "YieldSeekerAdminTimelock",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8e074b7636f6a56097f1f719e708e2c932e23bab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

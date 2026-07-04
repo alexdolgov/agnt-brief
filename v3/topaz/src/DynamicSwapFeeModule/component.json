@@ -1,0 +1,20 @@
+{
+  "component": "DynamicSwapFeeModule",
+  "main_contract": "DynamicSwapFeeModule",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/shieldify-security/audits-portfolio/blob/main/reports/Topaz-Dex-Security-Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x656cf5d2f1a70177e011e2c27deafbee4c7b0541",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

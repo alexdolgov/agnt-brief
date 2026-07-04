@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626NativeDepositProxy",
+  "main_contract": "ERC4626NativeDepositProxy",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdab6eb82b38dc83168f9d01fb1f8804aea873bd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

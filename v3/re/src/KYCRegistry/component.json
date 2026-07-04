@@ -1,0 +1,18 @@
+{
+  "component": "KYCRegistry",
+  "main_contract": "KYCRegistry",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2723d4063765223e40d21d02d9d8685511bedb19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

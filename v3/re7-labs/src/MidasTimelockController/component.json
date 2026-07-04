@@ -1,0 +1,18 @@
+{
+  "component": "MidasTimelockController",
+  "main_contract": "MidasTimelockController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3eee3e0d2398799c884a47fc40c029c8e241852",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

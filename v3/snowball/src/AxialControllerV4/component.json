@@ -1,0 +1,18 @@
+{
+  "component": "AxialControllerV4",
+  "main_contract": "AxialControllerV4",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc7d536a04ecc43269b6b95ac1ce0a06e0000d095",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

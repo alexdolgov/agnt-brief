@@ -1,0 +1,18 @@
+{
+  "component": "EIP712",
+  "main_contract": "EIP712",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05be1d4c307c19450a6fd7ce7307ce72a3829a60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

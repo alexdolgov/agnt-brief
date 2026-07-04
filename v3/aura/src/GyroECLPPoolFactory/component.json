@@ -1,0 +1,18 @@
+{
+  "component": "GyroECLPPoolFactory",
+  "main_contract": "GyroECLPPoolFactory",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x1c53af9d683a4424d03f61d70d9f6bc53af7fcc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

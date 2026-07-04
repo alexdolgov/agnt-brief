@@ -1,0 +1,18 @@
+{
+  "component": "EIP173Proxy",
+  "main_contract": "EIP173Proxy",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f",
+      "is_proxy": true,
+      "implementation_address": "0x8cbc45d772d2f127693abb8942d46fadef198b4a",
+      "liveness": "live"
+    }
+  ]
+}

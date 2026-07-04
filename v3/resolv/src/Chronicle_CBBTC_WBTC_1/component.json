@@ -1,0 +1,26 @@
+{
+  "component": "Chronicle_CBBTC_WBTC_1",
+  "main_contract": "Chronicle_CBBTC_WBTC_1",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa18297eb53a5d90990e4514ca6244e7f25405674",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb82345cd7be6db5069c7bc73ce7de44745ce9f21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

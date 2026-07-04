@@ -1,0 +1,18 @@
+{
+  "component": "GFarm2Token",
+  "main_contract": "GFarm2Token",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7075cab6bcca06613e2d071bd918d1a0241379e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

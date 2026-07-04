@@ -1,0 +1,18 @@
+{
+  "component": "TemplateRegistry",
+  "main_contract": "TemplateRegistry",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1ea65ae3d7e60e374221cde29844df81f447d68c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

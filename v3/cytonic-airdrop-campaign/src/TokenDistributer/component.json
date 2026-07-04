@@ -1,0 +1,18 @@
+{
+  "component": "TokenDistributer",
+  "main_contract": "TokenDistributer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x39944059395a387a8ec327b4fb5ab7c5f6d9858c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "MangroveVaultV2Factory",
+  "main_contract": "MangroveVaultV2Factory",
+  "source_file_count": 56,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x44536a066e9c736f2d90b2999275cffd26b287b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x78793bcd98450530ce9109af1f79fd6d66a7328c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xbce560aabbe951caefd87a19a7f6caeb8e2f314a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xfe7d4477bf03056f376dc8fd08e25a19aa2296e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ClawUSDC",
+  "main_contract": "ClawUSDC",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb34fff5efab92be9ea32fa56c6de9a1c04a62b4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

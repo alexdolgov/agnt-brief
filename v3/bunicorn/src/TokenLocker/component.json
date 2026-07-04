@@ -1,0 +1,18 @@
+{
+  "component": "TokenLocker",
+  "main_contract": "TokenLocker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x48fae2c4e1f983183cd89bbd9de883b0acaffd48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

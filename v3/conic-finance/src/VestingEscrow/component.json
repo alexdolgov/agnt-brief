@@ -1,0 +1,18 @@
+{
+  "component": "VestingEscrow",
+  "main_contract": "VestingEscrow",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5296e0cc7b64808ddd0a4932bb03072440ce3e95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

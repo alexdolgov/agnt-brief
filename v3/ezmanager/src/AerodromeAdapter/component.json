@@ -1,0 +1,28 @@
+{
+  "component": "AerodromeAdapter",
+  "main_contract": "AerodromeAdapter",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x66a4acd86986afce3c0119383d2869ca5cfc0999",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9efde1640231a5306304317649f548be73a5fa28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

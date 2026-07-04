@@ -1,0 +1,18 @@
+{
+  "component": "Platform-2",
+  "main_contract": "Platform",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0bbaf8ea9c644149dce1656b811ef2d7ac0b11a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

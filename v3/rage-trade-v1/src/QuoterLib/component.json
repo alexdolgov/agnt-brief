@@ -1,0 +1,26 @@
+{
+  "component": "QuoterLib",
+  "main_contract": "QuoterLib",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0768e00ede116222dccb3b05e84855e7d35e4187",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa025882c76ac83deae2ac5ea255b2ca56f06888d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

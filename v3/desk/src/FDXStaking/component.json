@@ -1,0 +1,18 @@
+{
+  "component": "FDXStaking",
+  "main_contract": "FDXStaking",
+  "source_file_count": 167,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x194028eaf9a13919d99a87165ad925d85d977f3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

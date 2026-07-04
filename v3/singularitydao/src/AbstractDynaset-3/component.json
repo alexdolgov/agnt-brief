@@ -1,0 +1,18 @@
+{
+  "component": "AbstractDynaset-3",
+  "main_contract": "AbstractDynaset",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ec9477f973b9585ad7f9d189c6987084d314d8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

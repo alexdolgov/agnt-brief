@@ -1,0 +1,18 @@
+{
+  "component": "Database",
+  "main_contract": "Database",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x631b7116fd967b90a6444c2498e00ebb446812b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

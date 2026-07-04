@@ -1,0 +1,26 @@
+{
+  "component": "RewardEulerTokenClaimFuse",
+  "main_contract": "RewardEulerTokenClaimFuse",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2627a9829b00816c5fc54196bfdfd1c8ec999540",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf61f502b01aa184701d593ae3444e00781680789",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

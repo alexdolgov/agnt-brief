@@ -1,0 +1,20 @@
+{
+  "component": "WeightedLPOracleFactory",
+  "main_contract": "WeightedLPOracleFactory",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2025-08-19.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05503b3ade04aca81c8d6f88ecb73ba156982d2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

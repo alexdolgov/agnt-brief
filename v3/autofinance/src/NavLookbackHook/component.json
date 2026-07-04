@@ -1,0 +1,18 @@
+{
+  "component": "NavLookbackHook",
+  "main_contract": "NavLookbackHook",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33db101517112a9b7b9f5b39eac185a0629c3624",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

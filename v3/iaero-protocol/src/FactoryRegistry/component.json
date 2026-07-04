@@ -1,0 +1,18 @@
+{
+  "component": "FactoryRegistry",
+  "main_contract": "FactoryRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5c3f18f06cc09ca1910767a34a20f771039e37c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

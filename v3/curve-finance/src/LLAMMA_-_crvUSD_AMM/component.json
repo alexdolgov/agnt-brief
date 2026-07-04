@@ -1,0 +1,18 @@
+{
+  "component": "LLAMMA_-_crvUSD_AMM",
+  "main_contract": "LLAMMA - crvUSD AMM",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0167b8a9a3959e698a3e3bcafe829878ffb709e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

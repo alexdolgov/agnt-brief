@@ -1,0 +1,18 @@
+{
+  "component": "SendBatch",
+  "main_contract": "SendBatch",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9c1c95935a60e8c2cab2856e9f1f858b5dcec630",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

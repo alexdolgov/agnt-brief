@@ -1,0 +1,21 @@
+{
+  "component": "DefaultCollateralMigrator",
+  "main_contract": "DefaultCollateralMigrator",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbioticfi/periphery/blob/main/audits/ChainSecurity-Periphery.pdf",
+    "https://raw.githubusercontent.com/symbioticfi/periphery/main/audits/ChainSecurity-Periphery.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f152feaa99eb6656f902e94bd4e7bcf563d4a43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

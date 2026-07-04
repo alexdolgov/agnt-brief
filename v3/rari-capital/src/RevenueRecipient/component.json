@@ -1,0 +1,26 @@
+{
+  "component": "RevenueRecipient",
+  "main_contract": "RevenueRecipient",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7824292efdee1177a1c1bed0649cfdd6114fed5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffe2cdce7babb1422d5976c2fc27448f226b6bec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

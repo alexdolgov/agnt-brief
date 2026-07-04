@@ -1,0 +1,18 @@
+{
+  "component": "Market-5",
+  "main_contract": "Market",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63df5e23db45a2066508318f172ba45b9cd37035",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

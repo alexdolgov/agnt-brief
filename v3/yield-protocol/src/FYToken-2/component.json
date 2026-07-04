@@ -1,0 +1,26 @@
+{
+  "component": "FYToken-2",
+  "main_contract": "FYToken",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa718ff3fa10fa9f797e98e35fd3a0bec9e0aa67c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf374ab6b299945ff81c1523008d0d407380a396f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

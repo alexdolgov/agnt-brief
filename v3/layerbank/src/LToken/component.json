@@ -1,0 +1,28 @@
+{
+  "component": "LToken",
+  "main_contract": "LToken",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LayerBank-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0534e5580a07d53e2f8c06368f0d3b8fb022e9ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x14abc603b6471aae51f92e6f7cc5be7cc6eefd14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

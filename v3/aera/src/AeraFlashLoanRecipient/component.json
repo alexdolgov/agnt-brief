@@ -1,0 +1,26 @@
+{
+  "component": "AeraFlashLoanRecipient",
+  "main_contract": "AeraFlashLoanRecipient",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x49342b102ab0a00a41d150ddbd93871251efbade",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x54218f30cd1823b47a61b010601659fd7d8e6a19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

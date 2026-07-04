@@ -1,0 +1,18 @@
+{
+  "component": "SpartaDexPair",
+  "main_contract": "SpartaDexPair",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

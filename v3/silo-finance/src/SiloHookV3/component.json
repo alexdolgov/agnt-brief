@@ -1,0 +1,62 @@
+{
+  "component": "SiloHookV3",
+  "main_contract": "SiloHookV3",
+  "source_file_count": 71,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/Silo%20-%20Defaulting%20Liquidations%20-%20Final%20Report%20.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/reports/Silo%20-%20Liquidation-by-Defaulting%20-%20Draft%20Report.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x04e209d70f7f834a7a5ab7bd31f48827f0e88049",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x087ae3df6b4316e88a674cb691dfd644a6c42697",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2aee31d1a1435389b1635851612b7b78d020ea2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2c650c8a97c9d229c391c48ec995792d9a8a0678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xabcf5a9d5c6e834aaa861eb42961787d03e08f22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd278537de10e9d6bcba7811f355cd9cb8a4e544b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

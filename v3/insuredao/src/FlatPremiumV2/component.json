@@ -1,0 +1,18 @@
+{
+  "component": "FlatPremiumV2",
+  "main_contract": "FlatPremiumV2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdb9b9797319e9458d4d3b6eaa86c4f15eddb989c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

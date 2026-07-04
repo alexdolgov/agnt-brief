@@ -1,0 +1,18 @@
+{
+  "component": "YFVVoteV2",
+  "main_contract": "YFVVoteV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d03cf457a4e3099aa5b38506374e3b7071cc997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "IdlePriceFeed",
+  "main_contract": "IdlePriceFeed",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x99a8fea8d89efb5dcbd201688d6d62ae78740a58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "component": "CLManager",
+  "main_contract": "CLManager",
+  "source_file_count": 16,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/EZManagerCL/EZManagerContracts/blob/master/audits/Valves_v1_5.pdf",
+    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0294954263af527c725fcd9cac0e1f5ca3a68a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b2cfbad1c3d4fc841bc4576240d23cb97e742b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb9f751c2c14975c3d39fcb31c4273ba1887f3b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ManagerWithMerkleVerification",
+  "main_contract": "ManagerWithMerkleVerification",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x048a5002e57166a78dd060b3b36ded2f404d0a17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

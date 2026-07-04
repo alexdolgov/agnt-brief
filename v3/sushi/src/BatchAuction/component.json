@@ -1,0 +1,18 @@
+{
+  "component": "BatchAuction",
+  "main_contract": "BatchAuction",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x258f7e97149afd7d7f84fa63b10e4a3f0c38b788",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

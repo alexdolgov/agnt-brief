@@ -1,0 +1,18 @@
+{
+  "component": "RigoToken",
+  "main_contract": "RigoToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4fbb350052bca5417566f188eb2ebce5b19bc964",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

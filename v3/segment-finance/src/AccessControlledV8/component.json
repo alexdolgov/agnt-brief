@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlledV8",
+  "main_contract": "AccessControlledV8",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x52cbc84d272abe5c2cf0d62a9b486114953f7d74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

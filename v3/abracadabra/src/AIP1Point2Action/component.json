@@ -1,0 +1,18 @@
+{
+  "component": "AIP1Point2Action",
+  "main_contract": "AIP1Point2Action",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6274106eedd4848371d2c09e0352d67b795ed516",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

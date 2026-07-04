@@ -1,0 +1,18 @@
+{
+  "component": "CToken",
+  "main_contract": "CToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

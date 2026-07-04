@@ -1,0 +1,18 @@
+{
+  "component": "EthPerTokenStore",
+  "main_contract": "EthPerTokenStore",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x57831780565ae1526ed1cc2296c1143b3ad68dfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

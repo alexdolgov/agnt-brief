@@ -1,0 +1,20 @@
+{
+  "component": "ALMProxyFreezable",
+  "main_contract": "ALMProxyFreezable",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v190-certora-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x95bc36638750d9506c00934ea90e6b917daea1f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakingHelper",
+  "main_contract": "StakingHelper",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa55ce3e25bd4cb6c5375aa393335b708db790915",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

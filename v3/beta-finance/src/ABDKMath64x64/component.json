@@ -1,0 +1,18 @@
+{
+  "component": "ABDKMath64x64",
+  "main_contract": "ABDKMath64x64",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21a8d15322c257abd2b22a56edde758398be0f32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

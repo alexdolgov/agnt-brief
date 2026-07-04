@@ -1,0 +1,18 @@
+{
+  "component": "StrategyDeployer",
+  "main_contract": "StrategyDeployer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0ac497bed4d5af4e95d7ece0fb0144e23b8086ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

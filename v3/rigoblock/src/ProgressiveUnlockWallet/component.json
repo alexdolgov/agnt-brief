@@ -1,0 +1,18 @@
+{
+  "component": "ProgressiveUnlockWallet",
+  "main_contract": "ProgressiveUnlockWallet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac1886906baa783e634b2c6c392082e0dee5f465",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

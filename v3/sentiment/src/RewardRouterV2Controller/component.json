@@ -1,0 +1,34 @@
+{
+  "component": "RewardRouterV2Controller",
+  "main_contract": "RewardRouterV2Controller",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3b3ac0dc06f2c13cc1ec87d838baca3eab161bf4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3e1c3e175eba948eb74a68c2f946678a863550ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4d0e7b873a4de468c40f94a73a6d6dac1568bbc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

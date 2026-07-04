@@ -1,0 +1,18 @@
+{
+  "component": "BAMMFactory",
+  "main_contract": "BAMMFactory",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x19928170d739139bfbbb6614007f8eeed17db0ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

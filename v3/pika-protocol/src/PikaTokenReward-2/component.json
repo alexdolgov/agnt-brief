@@ -1,0 +1,18 @@
+{
+  "component": "PikaTokenReward-2",
+  "main_contract": "PikaTokenReward",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x622a3549a3c857095f7172e76a92bd58979c7b76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

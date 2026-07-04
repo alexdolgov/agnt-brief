@@ -1,0 +1,26 @@
+{
+  "component": "sePSPStakingMigratorV1",
+  "main_contract": "sePSPStakingMigratorV1",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x18e1a8431ce39cbfe95958207da2d68a7ef8c583",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xed4e008425575b0f9f2cf3eb3ba3554706d3c311",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

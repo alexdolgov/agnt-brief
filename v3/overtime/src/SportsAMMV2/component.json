@@ -1,0 +1,60 @@
+{
+  "component": "SportsAMMV2",
+  "main_contract": "SportsAMMV2",
+  "source_file_count": 24,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x08666908415f39016a714ae6f71562f388e2e545",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x10981f7ff201602bf7f09e3abc2926ccfa24d19f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1a31f4e76a4e036a9cdd8f1b0e345a15929c4699",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x65cad9a70d55c0f48438946b9d35ec4d1fbcce56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8ccd998446885bae88bb6167714033aea91c3175",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xec8de451267986767087aeed965cf838c3b89f59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

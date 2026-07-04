@@ -1,0 +1,34 @@
+{
+  "component": "MinTimeGapHook",
+  "main_contract": "MinTimeGapHook",
+  "source_file_count": 65,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x09d0d6a48545e959b230600966d93600fab50322",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5483a297ab5ba84cdda05ccb9bdb027b27a7ece8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcb409a14b706fe5326f2fc3c0f437791722dffe0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

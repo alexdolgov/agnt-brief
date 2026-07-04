@@ -1,0 +1,18 @@
+{
+  "component": "Curve_Sidechain_L2_Factory",
+  "main_contract": "Curve Sidechain/L2 Factory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3093f9b57a428f3eb6285a589cb35bea6e78c336",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

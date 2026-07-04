@@ -1,0 +1,18 @@
+{
+  "component": "SAVAXRateProvider",
+  "main_contract": "SAVAXRateProvider",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcfc69c96385b1f193f6379772ab00de1ee6c7273",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

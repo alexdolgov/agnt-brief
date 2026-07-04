@@ -1,0 +1,18 @@
+{
+  "component": "AvaxUsdtOracleV1",
+  "main_contract": "AvaxUsdtOracleV1",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd43f26102b0671dcf8d6357aa2908d6cc80c0559",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

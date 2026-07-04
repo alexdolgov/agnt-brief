@@ -1,0 +1,18 @@
+{
+  "component": "DappMaintenance",
+  "main_contract": "DappMaintenance",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab0b2f1cf979cdbf4676251f35353ec5af2732dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

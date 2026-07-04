@@ -1,0 +1,18 @@
+{
+  "component": "AntfarmGovernanceToken",
+  "main_contract": "AntfarmGovernanceToken",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bf43350076f95e0d16120b4d6bdfa1c9d50bdbd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

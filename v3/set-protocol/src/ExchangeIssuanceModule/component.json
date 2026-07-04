@@ -1,0 +1,18 @@
+{
+  "component": "ExchangeIssuanceModule",
+  "main_contract": "ExchangeIssuanceModule",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73df03b5436c84cf9d5a758fb756928dceaf19d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

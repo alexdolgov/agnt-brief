@@ -1,0 +1,18 @@
+{
+  "component": "VaultManager-2",
+  "main_contract": "VaultManager",
+  "source_file_count": 72,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

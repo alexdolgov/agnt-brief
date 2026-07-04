@@ -1,0 +1,18 @@
+{
+  "component": "DirectStaking-5",
+  "main_contract": "DirectStaking",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x655bc41cd6f917bd87f874b5160568657663d5ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

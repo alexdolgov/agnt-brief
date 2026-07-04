@@ -1,0 +1,18 @@
+{
+  "component": "MerkleTokenSale",
+  "main_contract": "MerkleTokenSale",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbc61d76cbd784bb3ede8c855f37deb465c5b43a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

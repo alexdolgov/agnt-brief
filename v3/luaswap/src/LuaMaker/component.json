@@ -1,0 +1,18 @@
+{
+  "component": "LuaMaker",
+  "main_contract": "LuaMaker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f6fa5cf935fc84a6a43af4ddce02ddb84a14aa6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

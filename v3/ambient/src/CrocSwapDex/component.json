@@ -1,0 +1,21 @@
+{
+  "component": "CrocSwapDex",
+  "main_contract": "CrocSwapDex",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV1.pdf",
+    "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

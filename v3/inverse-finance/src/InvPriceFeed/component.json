@@ -1,0 +1,18 @@
+{
+  "component": "InvPriceFeed",
+  "main_contract": "InvPriceFeed",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7cd14096cd6f81e31e945afb7de41a5d7d970589",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

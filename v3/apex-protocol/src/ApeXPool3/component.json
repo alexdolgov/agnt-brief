@@ -1,0 +1,18 @@
+{
+  "component": "ApeXPool3",
+  "main_contract": "ApeXPool3",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x661ea23a54dcb7dcbb533be0f50dc6ea2ecfedbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

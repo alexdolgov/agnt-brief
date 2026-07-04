@@ -1,0 +1,18 @@
+{
+  "component": "SemaphoreVerifier",
+  "main_contract": "SemaphoreVerifier",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x443ad7acf39baa104b2e70fa5cf6fe32cc28abee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

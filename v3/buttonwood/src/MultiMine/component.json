@@ -1,0 +1,18 @@
+{
+  "component": "MultiMine",
+  "main_contract": "MultiMine",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e938ce66af91b02ef7e1c753ef3efb692ef5006",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

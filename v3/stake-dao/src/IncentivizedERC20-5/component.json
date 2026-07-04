@@ -1,0 +1,18 @@
+{
+  "component": "IncentivizedERC20-5",
+  "main_contract": "IncentivizedERC20",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb0b0b1d3c0f9823c13d4e0481e86387baff452a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

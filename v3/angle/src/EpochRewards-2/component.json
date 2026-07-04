@@ -1,0 +1,18 @@
+{
+  "component": "EpochRewards-2",
+  "main_contract": "EpochRewards",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x4cadba6ae9984b408b492a3f8f451e1bb3562aba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

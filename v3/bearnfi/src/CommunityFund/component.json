@@ -1,0 +1,18 @@
+{
+  "component": "CommunityFund",
+  "main_contract": "CommunityFund",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x10cb228c83a325b19a4e0dcebdf65ecf89026793",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

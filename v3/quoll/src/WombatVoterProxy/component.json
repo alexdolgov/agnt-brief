@@ -1,0 +1,28 @@
+{
+  "component": "WombatVoterProxy",
+  "main_contract": "WombatVoterProxy",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-QuollV2-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a9b301e550502ef9e92f87500801254317017e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeec9675ac441d52c7ab8f1bd0d69bd85a9a3c69b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CrosschainWhitelistRegistry",
+  "main_contract": "CrosschainWhitelistRegistry",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe89346fe1ce1367f3d80c8522209a86511b1201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "OrigamiAbstractLovTokenManager-2",
+  "main_contract": "OrigamiAbstractLovTokenManager",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/eulerBorrowLend/panprog_lovTokenEulerAdapter.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/origami-v2/Origami%20Finance%20-%20Zellic%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x051dc89b797652ce8e19a9004d10a74eaabb1ec3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

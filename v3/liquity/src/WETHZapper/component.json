@@ -1,0 +1,18 @@
+{
+  "component": "WETHZapper",
+  "main_contract": "WETHZapper",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7022a4f4a2b9f0c30a5eb0b0073a8bb4c8e70c1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

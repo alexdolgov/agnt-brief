@@ -1,0 +1,26 @@
+{
+  "component": "ManualStrikeSelection",
+  "main_contract": "ManualStrikeSelection",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ef28605dd3921320da832cefe72a674da656b46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7b3a9deba8d3b49a0dd75eda34ef64f6217a9d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

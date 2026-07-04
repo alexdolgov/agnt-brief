@@ -1,0 +1,18 @@
+{
+  "component": "ERC20",
+  "main_contract": "ERC20",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc9d8859bb5e7ac7e9a8c175bf79cecc008f7d39e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VotingTokenVestingPlans-2",
+  "main_contract": "VotingTokenVestingPlans",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3466eb008edd8d5052446293d1a7d212cb65c646",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

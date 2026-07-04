@@ -1,0 +1,26 @@
+{
+  "component": "RWAEarnPool",
+  "main_contract": "RWAEarnPool",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x505829773ebda34d6f627bb493cf993a1e357a33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaf886f29649e74b6ec6ef6bf0d9ecc42be21901a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

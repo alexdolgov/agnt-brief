@@ -1,0 +1,68 @@
+{
+  "component": "GoldSellManager",
+  "main_contract": "GoldSellManager",
+  "source_file_count": 37,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/tngbl/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3a2cda32f92d6d500aa85cf48752205f0e8f7f37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x40090e492b7fa5703e5c7ea2360e8bf1a9661c28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x47ac3595b0bfe9af47d34e4a15143d6af3d0f124",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa70728b39110029a7bf7a38f7ba46ec6482d0b7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaf5e097f83cc5bd7592202b1c8fd4ff270a68df2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc898c47320267b62fac4824214d1eb3e07b7f928",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf7afc0678e92d4af0f67f0d0e9aeca938d7db4b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

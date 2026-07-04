@@ -1,0 +1,26 @@
+{
+  "component": "Sorbettiere",
+  "main_contract": "Sorbettiere",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x86fd613d79cea7ce51defd31bfcf68adbf4038fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9ab6e62123464d6f7a21457840daf34754c9c6d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

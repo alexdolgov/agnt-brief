@@ -1,0 +1,20 @@
+{
+  "component": "LSSVMPairERC1155ERC20",
+  "main_contract": "LSSVMPairERC1155ERC20",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sudoswap/v2-audits/blob/main/cyfrin.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x4806e67061a4288d710e2c5af0db79833a8351cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

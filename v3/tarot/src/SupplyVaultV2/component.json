@@ -1,0 +1,42 @@
+{
+  "component": "SupplyVaultV2",
+  "main_contract": "SupplyVaultV2",
+  "source_file_count": 20,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4ac8af23f3ef7ededb3dc45c091406aeee8de471",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x550d17a65a2a78cac3408cdf5ca0eaa5b1a0465d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x811c2771fd1e1b49d1e0addb96507434c8cdd744",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8d3474ff61b1fed1b5f4b1267e51bf7a18cd03f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

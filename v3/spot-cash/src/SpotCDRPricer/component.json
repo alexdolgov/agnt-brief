@@ -1,0 +1,18 @@
+{
+  "component": "SpotCDRPricer",
+  "main_contract": "SpotCDRPricer",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10b03340d27bc5470aa46da007cd5bde89201739",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

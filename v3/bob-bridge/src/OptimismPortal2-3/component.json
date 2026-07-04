@@ -1,0 +1,18 @@
+{
+  "component": "OptimismPortal2-3",
+  "main_contract": "OptimismPortal2",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb443da3e07052204a02d630a8933dac05a0d6fb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

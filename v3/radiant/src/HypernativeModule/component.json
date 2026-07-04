@@ -1,0 +1,18 @@
+{
+  "component": "HypernativeModule",
+  "main_contract": "HypernativeModule",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4405f3b660eb53c4d1ac04546ef30a7a6bf91036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

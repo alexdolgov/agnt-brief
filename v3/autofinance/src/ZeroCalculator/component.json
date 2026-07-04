@@ -1,0 +1,26 @@
+{
+  "component": "ZeroCalculator",
+  "main_contract": "ZeroCalculator",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x254d871685cac3b4a3b50f20e256fb4a9ae6c563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaabc170d94bc4a6476cbd712c3f3c1bc7e6197f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

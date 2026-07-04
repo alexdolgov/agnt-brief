@@ -1,0 +1,18 @@
+{
+  "component": "VDAMM",
+  "main_contract": "VDAMM",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35636b85b68c1b4a216110fb3a5fb447a99db14a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

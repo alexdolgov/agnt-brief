@@ -1,0 +1,18 @@
+{
+  "component": "CrossMarginCashEngine",
+  "main_contract": "CrossMarginCashEngine",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d2103251c2f5edec640ef6e5a99d99e6bd53889",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

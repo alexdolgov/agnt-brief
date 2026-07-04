@@ -1,0 +1,18 @@
+{
+  "component": "AaveLeverageStrategyExtension-2",
+  "main_contract": "AaveLeverageStrategyExtension",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6484a64e2ea165943c734dc498070b5902cbc2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

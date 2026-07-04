@@ -1,0 +1,44 @@
+{
+  "component": "LimitOrderLens",
+  "main_contract": "LimitOrderLens",
+  "source_file_count": 47,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1e18a5f2f3814b72423dcbcf323be5e195a7689d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2dc3fcc16490c000a639f05d8cb6c50015e4d15a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x91291677724f58da3b35f2ed952580aef580f5ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb9b7e1ad0d1abba7cf0bf23d0ee1f8a7513e473e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LPManagerV4",
+  "main_contract": "LPManagerV4",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x20f97f2323473cd91d610df2aa7a80083c75d9ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

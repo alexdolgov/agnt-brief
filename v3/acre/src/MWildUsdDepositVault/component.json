@@ -1,0 +1,26 @@
+{
+  "component": "MWildUsdDepositVault",
+  "main_contract": "MWildUsdDepositVault",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa70009c23dbf1222d66b0ca847b4c33ae2e07b41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd252eb9d448db3a46d9c1476a7eb45e5c0ced7c2",
+      "is_proxy": true,
+      "implementation_address": "0xa70009c23dbf1222d66b0ca847b4c33ae2e07b41",
+      "liveness": "live"
+    }
+  ]
+}

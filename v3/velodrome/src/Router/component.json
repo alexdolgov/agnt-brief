@@ -1,0 +1,21 @@
+{
+  "component": "Router",
+  "main_contract": "Router",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review-Nov23.pdf",
+    "https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

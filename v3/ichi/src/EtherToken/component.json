@@ -1,0 +1,26 @@
+{
+  "component": "EtherToken",
+  "main_contract": "EtherToken",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd76b5c2a23ef78368d8e34288b5b65d616b746ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AmmPoolsLensBaseV1-2",
+  "main_contract": "AmmPoolsLensBaseV1",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa4989a9225f6dd130e8ce4a4b5ef7902c8c389dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

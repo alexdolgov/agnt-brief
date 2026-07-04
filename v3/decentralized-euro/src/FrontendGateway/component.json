@@ -1,0 +1,20 @@
+{
+  "component": "FrontendGateway",
+  "main_contract": "FrontendGateway",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/d-EURO/landingPage/blob/develop/audits/ChainSecurity_dEURO_dEURO_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c49c00f897bd970d964bfb8c3065ae65a180994",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

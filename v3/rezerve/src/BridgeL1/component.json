@@ -1,0 +1,18 @@
+{
+  "component": "BridgeL1",
+  "main_contract": "BridgeL1",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x507427db12766d70445c85e683efd30143bf99df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

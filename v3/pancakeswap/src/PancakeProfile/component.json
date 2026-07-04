@@ -1,0 +1,18 @@
+{
+  "component": "PancakeProfile",
+  "main_contract": "PancakeProfile",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fdd82987b724ec32c6f1add369ec8dfe3c77e0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

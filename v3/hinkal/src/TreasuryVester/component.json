@@ -1,0 +1,18 @@
+{
+  "component": "TreasuryVester",
+  "main_contract": "TreasuryVester",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01d360c54eb27a6a95ea1f8e309e5c8263ed8508",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

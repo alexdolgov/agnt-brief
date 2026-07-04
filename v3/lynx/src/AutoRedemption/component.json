@@ -1,0 +1,18 @@
+{
+  "component": "AutoRedemption",
+  "main_contract": "AutoRedemption",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x06af8da46b0388d138c23f4d628d05801fa6e0b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

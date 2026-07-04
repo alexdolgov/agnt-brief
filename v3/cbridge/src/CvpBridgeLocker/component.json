@@ -1,0 +1,42 @@
+{
+  "component": "CvpBridgeLocker",
+  "main_contract": "CvpBridgeLocker",
+  "source_file_count": 14,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f8eb3cbb05166921d8204e6a1d8e5f9844a8337",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94c8d7b5fc9cbf44637e79613e88fb5ead468e2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d23d43fbe47abca7ba9f30d770f15e0a0deeb4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf11bd9d193eae76cffffe1211ec54b396f589bab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

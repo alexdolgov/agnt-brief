@@ -1,0 +1,34 @@
+{
+  "component": "BridgeFacet",
+  "main_contract": "BridgeFacet",
+  "source_file_count": 19,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x20dd479c8210ca675f9351b8daaf439026541a5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xaf7c79de22cf99001c8ca906b5e88de4182adf59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2948d25814fc0d58e94af32a3173613b9aa78469",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

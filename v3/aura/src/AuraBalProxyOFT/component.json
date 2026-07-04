@@ -1,0 +1,18 @@
+{
+  "component": "AuraBalProxyOFT",
+  "main_contract": "AuraBalProxyOFT",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab07f0279023886222e80e25cb4a01cd007b6764",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

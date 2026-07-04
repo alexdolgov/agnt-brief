@@ -1,0 +1,34 @@
+{
+  "component": "FutarchyFactory",
+  "main_contract": "FutarchyFactory",
+  "source_file_count": 9,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa6cb18fcdc17a2b44e5cad2d80a6d5942d30a345",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe789e4a240d153ac55e32106821e785e71f6b792",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xecfbc2272c85dee97d7816cb25a4ffb80230942f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

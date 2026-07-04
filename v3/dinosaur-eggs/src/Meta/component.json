@@ -1,0 +1,18 @@
+{
+  "component": "Meta",
+  "main_contract": "Meta",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6da59176fbc92f227853e17202b62d79b82f6a40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

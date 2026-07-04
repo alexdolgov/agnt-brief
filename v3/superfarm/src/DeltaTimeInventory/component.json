@@ -1,0 +1,18 @@
+{
+  "component": "DeltaTimeInventory",
+  "main_contract": "DeltaTimeInventory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d72d4746647b7fe84e2bcdefd96c119fb9cb0f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "EvacuationFacet",
+  "main_contract": "EvacuationFacet",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/term-structure/audits/blob/main/Term-Structure-protocol(sunset)/ABDK/ABDK_Term_Structure_Audit_Report_v_1_0_20240508.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x882abfb2f6a67d36350499991638044e8bd83a72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

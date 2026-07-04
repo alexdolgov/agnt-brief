@@ -1,0 +1,18 @@
+{
+  "component": "LoanOpenings",
+  "main_contract": "LoanOpenings",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcd72c5e1e93e32bbdf8d6ac7ee45f8585a3a2641",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

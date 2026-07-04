@@ -1,0 +1,18 @@
+{
+  "component": "BatchVerifier",
+  "main_contract": "BatchVerifier",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3edbc702aee93b470ca9e586b4eec0ff6a211b5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

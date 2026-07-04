@@ -1,0 +1,18 @@
+{
+  "component": "EzAuction",
+  "main_contract": "EzAuction",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ab40d79d1c85670a10803853a307c862c1ba29f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

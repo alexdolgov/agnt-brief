@@ -1,0 +1,26 @@
+{
+  "component": "WaterfallMasterChefV2",
+  "main_contract": "WaterfallMasterChefV2",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b8965f36d3f94752ab74ee9d717b9dc6b3f3c3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8f4ed4cf0300e22c739d2e5a22220497b123b66e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

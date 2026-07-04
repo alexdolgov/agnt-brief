@@ -1,0 +1,18 @@
+{
+  "component": "Replant4",
+  "main_contract": "Replant4",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30fbb6ce929461727988b945d3534a01f9e3c3b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

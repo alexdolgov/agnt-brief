@@ -1,0 +1,20 @@
+{
+  "component": "AbstractRWAOracleWrapper-2",
+  "main_contract": "AbstractRWAOracleWrapper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Halborn-Audit-Feb-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xadc4966e4f8caaf12c777f07aa7a0ae8d894cdf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

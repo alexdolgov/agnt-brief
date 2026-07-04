@@ -1,0 +1,18 @@
+{
+  "component": "bpXAU",
+  "main_contract": "bpXAU",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeaaf11ff129c2e44801ca6c169c32bee728cfe8e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

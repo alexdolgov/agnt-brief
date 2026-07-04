@@ -1,0 +1,18 @@
+{
+  "component": "Launch_vote_weight_measure",
+  "main_contract": "Launch vote weight measure",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe931d4ee3250822beccc9d0defdf9b51edb13b2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

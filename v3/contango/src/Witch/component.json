@@ -1,0 +1,18 @@
+{
+  "component": "Witch",
+  "main_contract": "Witch",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79857da1d4b976f40787daa6177e24256bc53b75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

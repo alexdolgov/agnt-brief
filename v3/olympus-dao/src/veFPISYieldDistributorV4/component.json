@@ -1,0 +1,18 @@
+{
+  "component": "veFPISYieldDistributorV4",
+  "main_contract": "veFPISYieldDistributorV4",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5814cbfb4f67cb384de981849d773a9da179fec9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

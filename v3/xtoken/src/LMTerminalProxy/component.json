@@ -1,0 +1,21 @@
+{
+  "component": "LMTerminalProxy",
+  "main_contract": "LMTerminalProxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/xtokenmarket/terminal-mining/blob/master/audits/ABDK-audit.pdf",
+    "https://github.com/xtokenmarket/terminal-mining/blob/master/audits/certik-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x090559d58aab8828c27ee7a7eab18efd5bb90374",
+      "is_proxy": true,
+      "implementation_address": "0x3b11cea427a3c96ed9771335f2567f80f4226ab6",
+      "liveness": "live"
+    }
+  ]
+}

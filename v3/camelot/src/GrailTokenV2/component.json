@@ -1,0 +1,20 @@
+{
+  "component": "GrailTokenV2",
+  "main_contract": "GrailTokenV2",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/camelot"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d9907f9a368ad0a51be60f7da3b97cf940982d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

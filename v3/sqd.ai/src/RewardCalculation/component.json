@@ -1,0 +1,26 @@
+{
+  "component": "RewardCalculation",
+  "main_contract": "RewardCalculation",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd3d2c185a30484641c07b60e7d952d7b85516eb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfa4727db4d01a12dba15bce5b891a89bccaa2082",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

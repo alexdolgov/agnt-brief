@@ -1,0 +1,18 @@
+{
+  "component": "StrategyAnyItemFromCollectionForFixedPriceV1B",
+  "main_contract": "StrategyAnyItemFromCollectionForFixedPriceV1B",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09f93623019049c76209c26517acc2af9d49c69b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

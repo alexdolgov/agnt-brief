@@ -1,0 +1,66 @@
+{
+  "component": "BeaconProxy",
+  "main_contract": "BeaconProxy",
+  "source_file_count": 7,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1e3cf2eeaa6d5973e2da6fe03600ba55870dd69b",
+      "is_proxy": true,
+      "implementation_address": "0x16f4fc1fc06a404c1003e1008c88b9442fbec73a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4b17845f255cc19db2612ab8577ea1e0852bbbd7",
+      "is_proxy": true,
+      "implementation_address": "0x761b91b2851c7476dcc9ecf36095466adcccba2a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa07db641fc95067a2fe68b6224a9dd39564bfd57",
+      "is_proxy": true,
+      "implementation_address": "0x761b91b2851c7476dcc9ecf36095466adcccba2a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb2b9f922c0494dbf08636b1dbcf6fcba0878a605",
+      "is_proxy": true,
+      "implementation_address": "0x16f4fc1fc06a404c1003e1008c88b9442fbec73a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbde380b4cc582d440255ebd89ff1839dcfad5d7b",
+      "is_proxy": true,
+      "implementation_address": "0x16f4fc1fc06a404c1003e1008c88b9442fbec73a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc1ea0ccd94f17ec0580dd57a34c2b521360ad4b1",
+      "is_proxy": true,
+      "implementation_address": "0x761b91b2851c7476dcc9ecf36095466adcccba2a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd5551375d5ba01ddbcb38d20ac40671f26e6ada5",
+      "is_proxy": true,
+      "implementation_address": "0x16f4fc1fc06a404c1003e1008c88b9442fbec73a",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DDSCAPIGS",
+  "main_contract": "DDSCAPIGS",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7ceae34fbc6ae6db37d4fe18ece621d42b7020cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

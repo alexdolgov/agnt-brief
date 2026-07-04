@@ -1,0 +1,18 @@
+{
+  "component": "AerodromeVolatileStrategyMainnet_fBOMB_ETH",
+  "main_contract": "AerodromeVolatileStrategyMainnet_fBOMB_ETH",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc202d851841e634d7ba0527ac783d8b9d049ea29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

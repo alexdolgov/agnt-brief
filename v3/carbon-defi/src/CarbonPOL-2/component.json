@@ -1,0 +1,20 @@
+{
+  "component": "CarbonPOL-2",
+  "main_contract": "CarbonPOL",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bancorprotocol/carbon-contracts/blob/dev/docs/audits/PeckShield-Audit-Report-Bancor-Carbon-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x945ac60e655a84b6638216521b391ae984287105",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

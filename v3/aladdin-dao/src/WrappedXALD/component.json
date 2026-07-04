@@ -1,0 +1,20 @@
+{
+  "component": "WrappedXALD",
+  "main_contract": "WrappedXALD",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/AladdinDAO/aladdin-v2-contracts/blob/main/audit-reports/SECBIT-Audit-Report-AladdinDAO-V2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbdc423927e70e4013a7906fe54ad8209643f734c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

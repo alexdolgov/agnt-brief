@@ -1,0 +1,22 @@
+{
+  "component": "AlgebraEternalFarming",
+  "main_contract": "AlgebraEternalFarming",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Base_Plugin_report_MixBytes.pdf",
+    "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Algebra_Paladin_report.pdf",
+    "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Farming_Plugin_report_MixBytes.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x92b99da7ded04684fede0e68484dc17b930c3066",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

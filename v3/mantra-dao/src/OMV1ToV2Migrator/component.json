@@ -1,0 +1,18 @@
+{
+  "component": "OMV1ToV2Migrator",
+  "main_contract": "OMV1ToV2Migrator",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe4ff95557f9aba07507ac0851a54c1244be4b723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

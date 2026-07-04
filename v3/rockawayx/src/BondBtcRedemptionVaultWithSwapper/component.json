@@ -1,0 +1,18 @@
+{
+  "component": "BondBtcRedemptionVaultWithSwapper",
+  "main_contract": "BondBtcRedemptionVaultWithSwapper",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29dcb0ffa494c2ac331ff8a40b70cf331b939ff5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

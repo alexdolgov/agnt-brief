@@ -1,0 +1,18 @@
+{
+  "component": "RewardRouterV2",
+  "main_contract": "RewardRouterV2",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa906f338cb21815cbc4bc87ace9e68c87ef8d8f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ConvexStakingWrapperFraxLend",
+  "main_contract": "ConvexStakingWrapperFraxLend",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa82bebc607cd258c66a6d5006a19401eafb786a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

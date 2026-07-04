@@ -1,0 +1,18 @@
+{
+  "component": "FallenSpartans",
+  "main_contract": "FallenSpartans",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfeb0a2a1ae523e4786f6916ff00e037ff82ab1a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

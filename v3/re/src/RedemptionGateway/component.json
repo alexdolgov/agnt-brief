@@ -1,0 +1,18 @@
+{
+  "component": "RedemptionGateway",
+  "main_contract": "RedemptionGateway",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x380b62fb2a436bc304b02950a73c6970bb9f15e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

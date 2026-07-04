@@ -1,0 +1,18 @@
+{
+  "component": "BurnTokensAction",
+  "main_contract": "BurnTokensAction",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8696a1f26e678d15c251f07556696b877d3382c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

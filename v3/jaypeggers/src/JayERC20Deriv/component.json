@@ -1,0 +1,18 @@
+{
+  "component": "JayERC20Deriv",
+  "main_contract": "JayERC20Deriv",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca9f9671765f8d1a7e19ae2639e01fff730f0d9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

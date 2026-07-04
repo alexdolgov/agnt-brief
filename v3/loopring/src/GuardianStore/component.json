@@ -1,0 +1,18 @@
+{
+  "component": "GuardianStore",
+  "main_contract": "GuardianStore",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35825b18e8948442abc361b361b007e31130f314",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

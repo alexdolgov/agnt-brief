@@ -1,0 +1,29 @@
+{
+  "component": "LSTRewardsSplitterController",
+  "main_contract": "LSTRewardsSplitterController",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-11-27%5D%20Codehawks%20-%20LINK%20Staking%20Withdrawals.md",
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-07-02%5D%20Zellic%20-%20Polygon%20Staking.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e1bfbb052c3f7bfe0e7386f435343982b1f78c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73c433e006467f46e9f9fb18bc5f5a48e172e154",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

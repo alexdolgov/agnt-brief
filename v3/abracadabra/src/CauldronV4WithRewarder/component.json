@@ -1,0 +1,42 @@
+{
+  "component": "CauldronV4WithRewarder",
+  "main_contract": "CauldronV4WithRewarder",
+  "source_file_count": 20,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x247d7e28aa79dffe09b287d191393242411ad85f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79533f85479e04d2214305638b6586b724bec951",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x98bf3e7da6f5a81630730d538715e35d8c0d3ede",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xac6c439253987be9aff6aac047ec8501ea13d512",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

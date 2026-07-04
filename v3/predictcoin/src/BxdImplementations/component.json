@@ -1,0 +1,18 @@
+{
+  "component": "BxdImplementations",
+  "main_contract": "BxdImplementations",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5dda94995d64fb239f7de2971e90a36524605b52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

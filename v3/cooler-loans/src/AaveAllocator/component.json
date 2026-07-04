@@ -1,0 +1,18 @@
+{
+  "component": "AaveAllocator",
+  "main_contract": "AaveAllocator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e1177e47151be72e5992e0975000e73ab5fd9d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

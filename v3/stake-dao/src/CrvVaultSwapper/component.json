@@ -1,0 +1,18 @@
+{
+  "component": "CrvVaultSwapper",
+  "main_contract": "CrvVaultSwapper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c022d19518356d71ba046be28d721e1b425b4a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Quick-2",
+  "main_contract": "Quick",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb5c064f955d8e7f38fe0460c556a72987494ee17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

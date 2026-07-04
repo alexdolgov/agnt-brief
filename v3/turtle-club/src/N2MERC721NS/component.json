@@ -1,0 +1,18 @@
+{
+  "component": "N2MERC721NS",
+  "main_contract": "N2MERC721NS",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x398f0a3e303afd3cae2b602d6bbe01b1c1af4749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

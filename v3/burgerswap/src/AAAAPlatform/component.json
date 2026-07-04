@@ -1,0 +1,18 @@
+{
+  "component": "AAAAPlatform",
+  "main_contract": "AAAAPlatform",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xed49c8f41d8b5eb2a29720955a39212cfb9a2748",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

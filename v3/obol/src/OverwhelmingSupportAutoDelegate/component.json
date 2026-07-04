@@ -1,0 +1,18 @@
+{
+  "component": "OverwhelmingSupportAutoDelegate",
+  "main_contract": "OverwhelmingSupportAutoDelegate",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca28852b6fc15ebd95b17c875d5eb14b08579158",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

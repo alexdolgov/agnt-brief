@@ -1,0 +1,26 @@
+{
+  "component": "MultiVaultGetter",
+  "main_contract": "MultiVaultGetter",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9a4ac6b4d13dca4083c5225aaad4beede088f016",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

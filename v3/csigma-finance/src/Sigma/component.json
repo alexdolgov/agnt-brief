@@ -1,0 +1,28 @@
+{
+  "component": "Sigma",
+  "main_contract": "Sigma",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/csigma-labs/audit-reports/blob/main/cSigma%20Token%20Audit%20Report%20-%20QuillAudits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37bdd789a515140593ece202365e5987c9f11d41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53162ec0adae49f21515bb8ca91534dd3872c8db",
+      "is_proxy": true,
+      "implementation_address": "0x37bdd789a515140593ece202365e5987c9f11d41",
+      "liveness": "live"
+    }
+  ]
+}

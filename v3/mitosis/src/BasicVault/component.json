@@ -1,0 +1,26 @@
+{
+  "component": "BasicVault",
+  "main_contract": "BasicVault",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x472edca59afdb7dd4ade8d92caca1ebc2586e584",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xf57104f5bbb90b27f169361b065a4e88d73ad1b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

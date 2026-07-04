@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityTransformer",
+  "main_contract": "LiquidityTransformer",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8038dd8356f84ebe440c0a0847e553d9692b059a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RewardCampaignManager",
+  "main_contract": "RewardCampaignManager",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x927f8c16c9e802cb3012989fab79eb8c098d4234",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

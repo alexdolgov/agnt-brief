@@ -1,0 +1,18 @@
+{
+  "component": "HunnyLottery",
+  "main_contract": "HunnyLottery",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1b726f05fc9a9c056d2cfd07916d1220f5629ef5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

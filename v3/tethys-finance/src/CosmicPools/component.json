@@ -1,0 +1,18 @@
+{
+  "component": "CosmicPools",
+  "main_contract": "CosmicPools",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x388474fc9e8096d9d358566a8e8ed9b64f87c796",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

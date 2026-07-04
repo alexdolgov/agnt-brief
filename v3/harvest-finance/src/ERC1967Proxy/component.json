@@ -1,0 +1,82 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 6,
+  "deployment_count": 9,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ed13eec003ea0f51214c4a641a3d0a0718bb5a7",
+      "is_proxy": true,
+      "implementation_address": "0x0f5ede883e46b3f65f38420f626d224817ea9af1",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30378c767a5f2c444287bcbdbdb29a73af125151",
+      "is_proxy": true,
+      "implementation_address": "0xfa5f2e760b0d9586db391098b9ac1f97f1a7d8db",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc9f32d65a278b012371858fd3cde315b12d664c6",
+      "is_proxy": true,
+      "implementation_address": "0xeba87a0b152b4b672ad048d3f446810a89f9317c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0b2eb332c5b38f13f0c2d0b1039e0302f985be09",
+      "is_proxy": true,
+      "implementation_address": "0x2bc5bcb96d2d10a5ff1f75ffe44ccbe26d6662d3",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x119cd4702cda69ff0fd8ce106295b370423882eb",
+      "is_proxy": true,
+      "implementation_address": "0x63b939a52549dc80a176ef7d2e823ac20ef986dc",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2bc5bcb96d2d10a5ff1f75ffe44ccbe26d6662d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x63b939a52549dc80a176ef7d2e823ac20ef986dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcf1e01e973a04c37c6da37ad6d5d824a51f6d878",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd9b73af0b29cbaf88f01384ea1fb5adcb608bed0",
+      "is_proxy": true,
+      "implementation_address": "0xcf1e01e973a04c37c6da37ad6d5d824a51f6d878",
+      "liveness": "inactive"
+    }
+  ]
+}

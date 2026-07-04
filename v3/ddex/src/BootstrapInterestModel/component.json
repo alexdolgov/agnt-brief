@@ -1,0 +1,18 @@
+{
+  "component": "BootstrapInterestModel",
+  "main_contract": "BootstrapInterestModel",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ef74ca7e14c98ac6d6a4514ac3c525e336d3410",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

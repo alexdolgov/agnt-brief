@@ -1,0 +1,26 @@
+{
+  "component": "TomHelper",
+  "main_contract": "TomHelper",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x5c0ae7c31a3fd60f0ea6d65f7b1aa185687a3139",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xbbd5950783cf135900a2c47820b78f9ef3961ae4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

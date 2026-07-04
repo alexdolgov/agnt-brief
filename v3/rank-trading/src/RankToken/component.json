@@ -1,0 +1,20 @@
+{
+  "component": "RankToken",
+  "main_contract": "RankToken",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://hashlock.com/wp-content/uploads/2025/02/RankTrading-Smart-Contract-Audit-Report-Final-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FxUSDBasePool",
+  "main_contract": "FxUSDBasePool",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe45661651b448a8789e039ab82d0cd88ee5d6805",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

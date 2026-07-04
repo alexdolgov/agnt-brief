@@ -1,0 +1,18 @@
+{
+  "component": "BancorConverterRegistry",
+  "main_contract": "BancorConverterRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf0a4b40baf4d5a5a01e58141397162a996f6dabd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ValidatorTicketPricer",
+  "main_contract": "ValidatorTicketPricer",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9830ad1bd5cf73640e253edf97dee3791c4a53c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "component": "NFTXMarketplaceZap",
+  "main_contract": "NFTXMarketplaceZap",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2021-12-nftx"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fc584529a2aefa997697fafacba5831fac0c22d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3693aba8f2d90b40ba5c975967a665ac30f67746",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5542abc7dc05fa2c8142804bdbcc0da8a0dc98ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xceb0a5d5ec289454570ad57054842765ecd79ec8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

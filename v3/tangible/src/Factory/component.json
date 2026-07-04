@@ -1,0 +1,42 @@
+{
+  "component": "Factory",
+  "main_contract": "Factory",
+  "source_file_count": 22,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x282eded7972add6d9fe52d22aecfc7a07bfdbe06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5fe533dcf2399d0af28f4756fe90284ded871b85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb0e54b88bb0043a938563fe8a77f4dde2eb0cfc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd09cc86f2d322a75f08006b9f6dd31776833a492",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

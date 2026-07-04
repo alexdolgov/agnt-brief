@@ -1,0 +1,18 @@
+{
+  "component": "SilverDollarTypePriceSheet",
+  "main_contract": "SilverDollarTypePriceSheet",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x099cd01dba50c29727852c47e36772fc82462b52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

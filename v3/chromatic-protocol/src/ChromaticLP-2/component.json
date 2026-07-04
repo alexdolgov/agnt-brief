@@ -1,0 +1,20 @@
+{
+  "component": "ChromaticLP-2",
+  "main_contract": "ChromaticLP",
+  "source_file_count": 87,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Chromatic_Protocol_EVM_Contracts_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcab81a613bff3f56f6d6a14edcad87f7cb525b27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

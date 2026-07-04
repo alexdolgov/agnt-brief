@@ -1,0 +1,50 @@
+{
+  "component": "ForeignOmnibridge",
+  "main_contract": "ForeignOmnibridge",
+  "source_file_count": 5,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x543fb43e829cceec32b623dfed83ef3622bfb9d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69c707d975e8d883920003cc357e556a4732cd03",
+      "is_proxy": true,
+      "implementation_address": "0x543fb43e829cceec32b623dfed83ef3622bfb9d5",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88ad09518695c6c3712ac10a214be5109a655671",
+      "is_proxy": true,
+      "implementation_address": "0x8eb3b7d8498a6716904577b2579e1c313d48e347",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8eb3b7d8498a6716904577b2579e1c313d48e347",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94447a6f0e6be5a4df198882ffd285a763bf98c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

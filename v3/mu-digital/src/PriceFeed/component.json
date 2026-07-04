@@ -1,0 +1,36 @@
+{
+  "component": "PriceFeed",
+  "main_contract": "PriceFeed",
+  "source_file_count": 26,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Mu%20Protocol%20-%20SlowMist%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5588f4090dfd88e0753a8ba2a08d639d7888ed32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3745307af70126693bfd8db0b16be0a013327bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe200c42374258c4c192f35e4beb5e489b0cbc0a4",
+      "is_proxy": true,
+      "implementation_address": "0x280f46ad2d730e479bd8d467cf6418ac26e3c37d",
+      "liveness": "live"
+    }
+  ]
+}

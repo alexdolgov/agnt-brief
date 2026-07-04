@@ -1,0 +1,18 @@
+{
+  "component": "ReqCoinProxy",
+  "main_contract": "ReqCoinProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x34da42143b0c6e321ceb76931c637c12bd865f7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

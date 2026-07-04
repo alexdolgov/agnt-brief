@@ -1,0 +1,26 @@
+{
+  "component": "StabilityPool",
+  "main_contract": "StabilityPool",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6374aefb1e69a21ee516ea4b803b2ea96d06f29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

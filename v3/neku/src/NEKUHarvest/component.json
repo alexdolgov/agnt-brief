@@ -1,0 +1,18 @@
+{
+  "component": "NEKUHarvest",
+  "main_contract": "NEKUHarvest",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x811dde77f7000220b20495684192ab6bd4b6aacb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

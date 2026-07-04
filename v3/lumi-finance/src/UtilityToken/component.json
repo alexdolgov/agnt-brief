@@ -1,0 +1,18 @@
+{
+  "component": "UtilityToken",
+  "main_contract": "UtilityToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1dd6b5f9281c6b4f043c02a83a46c2772024636c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

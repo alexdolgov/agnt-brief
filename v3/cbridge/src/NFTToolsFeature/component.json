@@ -1,0 +1,18 @@
+{
+  "component": "NFTToolsFeature",
+  "main_contract": "NFTToolsFeature",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ccd45af7e8cd2c7a9f7d33df225cd15603f3f27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

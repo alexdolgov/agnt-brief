@@ -1,0 +1,18 @@
+{
+  "component": "IncentivesControllerGetter",
+  "main_contract": "IncentivesControllerGetter",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc69ba5c734e68aca6c034c2e5a4170e5966151be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

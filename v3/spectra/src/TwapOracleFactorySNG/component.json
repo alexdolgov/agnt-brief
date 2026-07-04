@@ -1,0 +1,18 @@
+{
+  "component": "TwapOracleFactorySNG",
+  "main_contract": "TwapOracleFactorySNG",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xa3a724065b717dc46c024dc52c0aabe5d7f1aacb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

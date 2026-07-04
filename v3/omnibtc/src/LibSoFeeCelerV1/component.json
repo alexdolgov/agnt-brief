@@ -1,0 +1,18 @@
+{
+  "component": "LibSoFeeCelerV1",
+  "main_contract": "LibSoFeeCelerV1",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x937afca1bb914405d37d55130184ac900ce5961f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

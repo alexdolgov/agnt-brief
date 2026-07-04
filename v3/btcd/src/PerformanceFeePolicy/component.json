@@ -1,0 +1,18 @@
+{
+  "component": "PerformanceFeePolicy",
+  "main_contract": "PerformanceFeePolicy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x073a51b50f49a82345ef8c3ae1bb1cfc0bc74c4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

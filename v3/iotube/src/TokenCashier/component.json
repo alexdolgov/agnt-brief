@@ -1,0 +1,18 @@
+{
+  "component": "TokenCashier",
+  "main_contract": "TokenCashier",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa0fd7430852361931b23a31f84374ba3314e1682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

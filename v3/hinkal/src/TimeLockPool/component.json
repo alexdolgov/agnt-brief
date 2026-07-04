@@ -1,0 +1,18 @@
+{
+  "component": "TimeLockPool",
+  "main_contract": "TimeLockPool",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e2abf55ef51ca1029d4c5814a35339a3415d8b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

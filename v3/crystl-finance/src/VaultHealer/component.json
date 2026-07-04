@@ -1,0 +1,18 @@
+{
+  "component": "VaultHealer",
+  "main_contract": "VaultHealer",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0192eb09c31ded57ee77dbb9856ee75b19fb47ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

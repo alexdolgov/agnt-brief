@@ -1,0 +1,26 @@
+{
+  "component": "wstETHRelay",
+  "main_contract": "wstETHRelay",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e2a18163e6cb2eb11568fad35e42de4ee67ea9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x47cbd328b185ea8fc61ead9a32d0edd79067b577",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

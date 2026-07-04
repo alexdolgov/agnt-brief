@@ -1,0 +1,18 @@
+{
+  "component": "VotingRewardsFactory",
+  "main_contract": "VotingRewardsFactory",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4c303f7af7b8b05226440e4e12ff9a82f513716c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

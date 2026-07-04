@@ -1,0 +1,18 @@
+{
+  "component": "DomaTreasury",
+  "main_contract": "DomaTreasury",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1c397b5f402378bf5408deb5964bc7449bf16cbd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

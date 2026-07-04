@@ -1,0 +1,42 @@
+{
+  "component": "GasHeroToken",
+  "main_contract": "GasHeroToken",
+  "source_file_count": 26,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x00c4f2b8677574bae73c72766d83534611739282",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3c1a1252af117f0ad43f9e58ccb739ab2f8787f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaaf8f8a418e09aac17e1a1c5b997b29ee2b035ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc3d747d3793649ed3137b9f910dbad6c256f9900",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

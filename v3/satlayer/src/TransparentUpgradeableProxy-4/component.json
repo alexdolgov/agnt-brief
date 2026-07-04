@@ -1,0 +1,18 @@
+{
+  "component": "TransparentUpgradeableProxy-4",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x93919784c523f39cacaa98ee0a9d96c3f32b593e",
+      "is_proxy": true,
+      "implementation_address": "0x6fc60782295b8c3d83bba1324cd2ab1e77330fbe",
+      "liveness": "live"
+    }
+  ]
+}

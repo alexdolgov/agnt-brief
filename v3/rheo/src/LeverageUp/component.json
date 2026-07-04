@@ -1,0 +1,18 @@
+{
+  "component": "LeverageUp",
+  "main_contract": "LeverageUp",
+  "source_file_count": 134,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4a21ac7e51d17a0e1c8b59f7a98bb7a97806f14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

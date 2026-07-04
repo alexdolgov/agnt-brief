@@ -1,0 +1,18 @@
+{
+  "component": "EulerFactory",
+  "main_contract": "EulerFactory",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa90134a35008c234f0fdb2ede6064ade4f356f59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

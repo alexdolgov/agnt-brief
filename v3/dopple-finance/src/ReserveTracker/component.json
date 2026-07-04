@@ -1,0 +1,18 @@
+{
+  "component": "ReserveTracker",
+  "main_contract": "ReserveTracker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b564654f05bcfbc5bd4e196ec13e60351ea4c41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

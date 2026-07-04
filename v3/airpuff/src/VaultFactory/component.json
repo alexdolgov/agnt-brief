@@ -1,0 +1,18 @@
+{
+  "component": "VaultFactory",
+  "main_contract": "VaultFactory",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xaa5c9c993d960349f18a8ed4e88dc107c3454840",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

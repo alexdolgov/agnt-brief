@@ -1,0 +1,18 @@
+{
+  "component": "EtherCollateralsUSD",
+  "main_contract": "EtherCollateralsUSD",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c6ef75c81cbaf041f71037071eb1e06bb4469cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

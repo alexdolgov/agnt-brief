@@ -1,0 +1,42 @@
+{
+  "component": "AaveLeverageStrategyExtension",
+  "main_contract": "AaveLeverageStrategyExtension",
+  "source_file_count": 120,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2022-06-notional-coop",
+    "https://gist.github.com/bernard-wagner/8a96ae7b9746ba8394dc6c16202a6b64",
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexDIMv3AuditReport.md",
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md",
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexPRTAuditReport.md",
+    "https://immunefi.com/bug-bounty/indexcoop/information",
+    "https://www.openzeppelin.com/news/set-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25a8803b9b611cc13d807829d73049cd803f6fca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6408e1ba03914aa481051354a57e1aab0eed8044",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc43ee8ca1721bc120b702d95467d3e02773f2eb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

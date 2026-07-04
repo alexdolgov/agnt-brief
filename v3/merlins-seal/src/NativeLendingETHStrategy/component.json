@@ -1,0 +1,18 @@
+{
+  "component": "NativeLendingETHStrategy",
+  "main_contract": "NativeLendingETHStrategy",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2d70868f12a05b8c347974415bac5de053daa376",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

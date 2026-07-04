@@ -1,0 +1,18 @@
+{
+  "component": "AugustusRFQRouter",
+  "main_contract": "AugustusRFQRouter",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64f72fcfd9c624e3e471223f043060981c83aafc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

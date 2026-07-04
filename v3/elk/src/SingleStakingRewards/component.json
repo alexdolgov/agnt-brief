@@ -1,0 +1,18 @@
+{
+  "component": "SingleStakingRewards",
+  "main_contract": "SingleStakingRewards",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x57a1ce7686f3b2ab61f5191c76361f985b57e0fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

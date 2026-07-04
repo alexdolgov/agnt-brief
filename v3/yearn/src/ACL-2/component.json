@@ -1,0 +1,18 @@
+{
+  "component": "ACL-2",
+  "main_contract": "ACL",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2d75ff9fdca31a91f666187dd574f8ea8639a871",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

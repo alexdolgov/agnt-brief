@@ -1,0 +1,18 @@
+{
+  "component": "ReadModule",
+  "main_contract": "ReadModule",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e9378e68bf3cfe89d646902d174c5f3891222d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

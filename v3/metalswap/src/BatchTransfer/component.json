@@ -1,0 +1,18 @@
+{
+  "component": "BatchTransfer",
+  "main_contract": "BatchTransfer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa9d79d8741510dd0fb2df7b741c899334b28db1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

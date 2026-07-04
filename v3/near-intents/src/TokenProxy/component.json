@@ -1,0 +1,18 @@
+{
+  "component": "TokenProxy",
+  "main_contract": "TokenProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
+      "is_proxy": true,
+      "implementation_address": "0x199084efbd7fe14d217bbf22fdc6e2ed7266ddd4",
+      "liveness": "live"
+    }
+  ]
+}

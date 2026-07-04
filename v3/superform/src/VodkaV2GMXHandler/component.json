@@ -1,0 +1,42 @@
+{
+  "component": "VodkaV2GMXHandler",
+  "main_contract": "VodkaV2GMXHandler",
+  "source_file_count": 19,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5c6a40b51e62f47eae748470cd776d6c3f100ea1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6ff9822ea9622fc0f973e7a1e64262daa44a78ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa52a42539c29542a5bccea605ed32cc666a6ba1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdd4a1a99ba62796fcea2ea58eb73b5c270cd84aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

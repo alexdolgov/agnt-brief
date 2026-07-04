@@ -1,0 +1,18 @@
+{
+  "component": "RouterManagementFacet",
+  "main_contract": "RouterManagementFacet",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc24de5d98a933a2be10be48451a252b65049e4b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

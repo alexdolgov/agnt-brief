@@ -1,0 +1,18 @@
+{
+  "component": "RouterETH",
+  "main_contract": "RouterETH",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

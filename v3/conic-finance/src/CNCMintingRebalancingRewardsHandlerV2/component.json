@@ -1,0 +1,34 @@
+{
+  "component": "CNCMintingRebalancingRewardsHandlerV2",
+  "main_contract": "CNCMintingRebalancingRewardsHandlerV2",
+  "source_file_count": 36,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a3ecfba2358b96057488922b2450deebc640dc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d080be793fb7934a920cbdd95010b893aeda545",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fb9644ebddfd114e84f90ec817cece553256013",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

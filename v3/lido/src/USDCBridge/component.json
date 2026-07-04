@@ -1,0 +1,18 @@
+{
+  "component": "USDCBridge",
+  "main_contract": "USDCBridge",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ec393209674090368c592a591b25811e490bf36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

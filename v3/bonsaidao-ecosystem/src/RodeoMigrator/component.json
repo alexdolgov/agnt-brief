@@ -1,0 +1,18 @@
+{
+  "component": "RodeoMigrator",
+  "main_contract": "RodeoMigrator",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb34891fac221f335131d1b6cd8c883d107a5ed9e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OmenToken",
+  "main_contract": "OmenToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x76e63a3e7ba1e2e61d3da86a87479f983de89a7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

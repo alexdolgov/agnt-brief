@@ -1,0 +1,18 @@
+{
+  "component": "ButtonTokenWethRouter",
+  "main_contract": "ButtonTokenWethRouter",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb08c5e2e8e73d0fb9842171496b2da04e8e80a0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

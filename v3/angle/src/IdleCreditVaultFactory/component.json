@@ -1,0 +1,34 @@
+{
+  "component": "IdleCreditVaultFactory",
+  "main_contract": "IdleCreditVaultFactory",
+  "source_file_count": 39,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dcb01bbf8c1a68b4a063250fa5ee01ee7b52a7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59aabdad8fdabd227cc71543b128765f93906626",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb744aa6e6a9b74a745eac32371c47b27d40b0706",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

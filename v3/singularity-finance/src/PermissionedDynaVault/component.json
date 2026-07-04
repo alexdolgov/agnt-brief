@@ -1,0 +1,18 @@
+{
+  "component": "PermissionedDynaVault",
+  "main_contract": "PermissionedDynaVault",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1631ca6543adcb61e2b9e30189c8477981258274",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

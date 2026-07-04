@@ -1,0 +1,18 @@
+{
+  "component": "BoringCryptoTokenScanner",
+  "main_contract": "BoringCryptoTokenScanner",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ea28d1ce1198b4af8a84e5c08c94a907f34adce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

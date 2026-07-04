@@ -1,0 +1,28 @@
+{
+  "component": "OneInchSwapper",
+  "main_contract": "OneInchSwapper",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.generic.money/audits/2026-01-19-report-cantinacode-generic-money.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2368497691f4c6e9b7acede4efc7831417aeffc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1c8db9d9fe2a312ce5bd8c76764da8539200a50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

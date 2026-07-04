@@ -1,0 +1,18 @@
+{
+  "component": "GlmRebalanceCallback-2",
+  "main_contract": "GlmRebalanceCallback",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x246409c1d5c90384b9740bf03d61b1d8d14dbf14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

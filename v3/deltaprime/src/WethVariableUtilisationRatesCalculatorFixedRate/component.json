@@ -1,0 +1,58 @@
+{
+  "component": "WethVariableUtilisationRatesCalculatorFixedRate",
+  "main_contract": "WethVariableUtilisationRatesCalculatorFixedRate",
+  "source_file_count": 5,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b11a1f29febc32cc831e80b6b0c9db330b8664e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3acd0a2717f295aa83d7ffd2fd44be2fab16c474",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4a0f314640864230aed3d39c6e5771befc987cd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8d4c79692447ccc0b4376bd459c4b7aa00fc6ede",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa174672c9416474e9500a31826c3f1fdb6bbfc72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd987b201dab303d823d040c89bfe7afdb1d7998c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

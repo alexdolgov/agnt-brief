@@ -1,0 +1,18 @@
+{
+  "component": "SynthFactory",
+  "main_contract": "SynthFactory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6514c010b8096bc565766949a93f1c370cdf9f38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

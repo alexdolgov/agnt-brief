@@ -1,0 +1,53 @@
+{
+  "component": "ZFGovernanceStaking",
+  "main_contract": "ZFGovernanceStaking",
+  "source_file_count": 11,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20zkSwap%20Final%20Report%20Github%20(%2BResolution).pdf",
+    "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/GovernanceStaking.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0cc7d6da666529841bad1f9d4199f9773aa171d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4761516344e8e101c6c5f9448974ca847b1a9d3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x54de113ad67718ba86ca8466b200fbf9200e106d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb255ec73db8ce5511df5d7ab76c4a84cf7e1e876",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xcb3d626005e3e209fe7fbf661a9cbe4874c35087",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "dYFI",
+  "main_contract": "dYFI",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb5359ecdc13f055df2b433520f9df35d68f49d3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

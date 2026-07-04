@@ -1,0 +1,18 @@
+{
+  "component": "DSFuserData-2",
+  "main_contract": "DSFuserData",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x230833258da1c9950ea3608924ac92e888e4dcfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

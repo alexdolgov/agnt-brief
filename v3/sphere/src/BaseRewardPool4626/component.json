@@ -1,0 +1,18 @@
+{
+  "component": "BaseRewardPool4626",
+  "main_contract": "BaseRewardPool4626",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x39ee6fb813052e67260a3f95d3739b336aabd2c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

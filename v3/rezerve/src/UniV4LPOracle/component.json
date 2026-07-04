@@ -1,0 +1,34 @@
+{
+  "component": "UniV4LPOracle",
+  "main_contract": "UniV4LPOracle",
+  "source_file_count": 42,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x097a20fc1f4e604371ec85eaca10adaf77246c59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e884f830afba3e8a11e43a471a11bc2a4021571",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0c7b4330af8d66a4529239658d739018d0314d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

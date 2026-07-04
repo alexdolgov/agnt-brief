@@ -1,0 +1,18 @@
+{
+  "component": "BinaryOptionMarketData",
+  "main_contract": "BinaryOptionMarketData",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe2881cad27db4c27fb3814ad97cca694b80c0fa0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

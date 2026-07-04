@@ -1,0 +1,60 @@
+{
+  "component": "VaultFeesLib",
+  "main_contract": "VaultFeesLib",
+  "source_file_count": 4,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/singularitydao"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x31b57a0e39661f63b80b545081e63b0c809817ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x388184017b9006f3e24b3f7f94e113737902e5ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6535166b69aebd2bd8fa713c843ac176fee9150b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9e71e460adcf46f5cbabdebd0fd21fc191bc1ca6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb09b886efde5d3ad6af898d16de9178c87ec4be7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb130375b543bd919d85351b73636439c28d90db6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

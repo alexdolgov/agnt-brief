@@ -1,0 +1,18 @@
+{
+  "component": "MarsStakingRewards",
+  "main_contract": "MarsStakingRewards",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

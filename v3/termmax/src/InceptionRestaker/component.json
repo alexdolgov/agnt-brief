@@ -1,0 +1,18 @@
+{
+  "component": "InceptionRestaker",
+  "main_contract": "InceptionRestaker",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02e2fce3efe6619ad882b159e7d897a9c03a33f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "PositionRouter",
+  "main_contract": "PositionRouter",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BlockApex/Audit-Reports/blob/3d1df707bc6df3f761981b33007f8f32057c6654/Amped%20Finance%20Final%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x69e44517d74709d552a69046585bef02d8c34d5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6d9ae9634c3e73c68189f80914e15139d2732c38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

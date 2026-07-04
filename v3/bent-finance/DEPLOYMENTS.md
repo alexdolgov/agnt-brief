@@ -1,0 +1,60 @@
+# bent-finance — deployments
+
+54 verified deployment(s) across 50 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x002688c4296a2c4d800f271fe6f01741111b09be` | CryptoFromPoolVaultWAgg | impl | live | no |
+| ethereum | `0x00702bbdead24c40647f235f15971db0867f6bdb` | Vyper_contract | impl | live | no |
+| ethereum | `0x00b71a425db7c8b65a46cf39c23a188e10a2de99` | LiquidityGaugeV6 | impl | live | no |
+| ethereum | `0x01597e397605bf280674bf292623460b4204c375` | BentToken | impl | live | no |
+| ethereum | `0x04637d61f538911929ff96e755b589c014fd9ce2` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x07228c1820b4a3d75206a6e61f1add1bb157ce80` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x07374b547cae235227635c13266c69847a3e46fa` | CryptoWithStablePriceWBTC | impl | live | no |
+| ethereum | `0x0901b541beff2cd44859701619e245e82f48e62b` | AggMonetaryPolicy-monetarypolicybasedonaggregatedpricesforcrvUSD | impl | live | no |
+| ethereum | `0x0a758a25997167762e187f960dd0539a4ae3e9a6` | StakingRewards | impl | live | no |
+| ethereum | `0x0a9ae947495034c0bbbab845fd75b5bbafc91aab` | CryptoFromPoolsRateWAgg | impl | live | no |
+| ethereum | `0x0b80b9e59fb2b1262cdbe3afef5ce52cb0521653` | BentMasterChef | impl | live | no |
+| ethereum | `0x0ec8e0c868541df59ced49b39cc930c3a8dbd93a` | LLAMMA_-_crvUSD_AMM | impl | live | no |
+| ethereum | `0x16b385cc9959bbe83905ea5e71820b406804d037` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x17c6e1ddf1cce3d33240a53fce8a2ee48541f4d4` | crvUSD_Controller | impl | live | no |
+| ethereum | `0x18672b1b0c623a30089a280ed9256379fb0e4e62` | AggregatorStablePrice-aggregatorofstablecoinpricesforcrvUSD | impl | live | no |
+| ethereum | `0x188041ad83145351ef45f4bb91d08886648aeaf8` | Secondarymonetarypolicy | impl | live | no |
+| ethereum | `0x1b3e21cd1da43b9840f31b82d76b597c131e3e4b` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x1ef89ed0edd93d1ec09e4c07373f69c49f4dccae` | PegKeeper | impl | live | no |
+| ethereum | `0x21f5f6d3f90d0f56a6de307a3bd359d0a151b304` | CryptoWithStablePriceWsteth | impl | live | no |
+| ethereum | `0x226845c2ba216b8bb1aaadfd4e14de69426c5445` | PegPrice | impl | live | no |
+| ethereum | `0x2476a1005b49be9f552c6d3733e0874ac26cada1` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x28d7880b5b67fb4a0b1c6ed6c33c33f365113c29` | CryptoWithStablePriceSfrxeth | impl | live | no |
+| ethereum | `0x293436d4e4a15fbc6ccc400c14a01735e5fc74fd` | wstETH-crvUSDleveragezap | impl | live | no |
+| ethereum | `0x2a28789645776eaa95f6d491ff375781ea5b40dd` | SemiLog_monetary_policy | impl | live | no |
+| ethereum | `0x2aeb5c8776567c4eeebda1450e343b1bef49ae32` | USD0LpOracle | impl | live | no |
+| ethereum | `0x2bc706b83ab08d0437b8a397242c3284b5f81d74` | crvUSDdeleveragezap | impl | live | no |
+| ethereum | `0x2d89d82ff68bae1357d746b3e8eac520bfe1d5ca` | CryptoFromPoolWAgg | impl | live | no |
+| ethereum | `0x32facb5a46e02decaf5f939ab12c123eee203a5f` | MultiClaim | impl | live | no |
+| ethereum | `0x34024ba3b6edaf5cdd1c24fefe1df5d03041f38c` | OneWayLendingFactory | impl | live | no |
+| ethereum | `0x350f4c65066fde829cdde30ed12408fed156822c` | BentCVXStaking | impl | live | no |
+| ethereum | `0x3547dfca04358540891149559e691b146c6b0043` | MultiRewards | impl | live | no |
+| ethereum | `0x38e7627eb98a40e7528bcce709a80083093ba2f8` | CryptoFromPoolsRate | impl | live | no |
+| ethereum | `0x3b38ce23799dc56664ff6048892510abffdb7a25` | CryptoFromPool | impl | live | no |
+| ethereum | `0x417d482b3ebe4677d06cee8018bba3043b20661f` | BentVesting | impl | live | no |
+| ethereum | `0x43ecffe6c6c1b9f24aeb5c180e659c2a6fce11bc` | sfrxETH2crvUSDleveragezap | impl | live | no |
+| ethereum | `0x445800d626127a9b481a2b5a22031a5ff3fc6ab8` | BentPoolManager | impl | live | no |
+| ethereum | `0x4e1f162fd143e4a829341efd6dd451b018b10f9c` | SecondarymonetarypolicyforWBTC | impl | live | no |
+| ethereum | `0x4fd7e62edcf34e4f31e99ca0f6af84130947d3d7` | BentCVXRewarder | impl | live | no |
+| ethereum | `0x53e6c8a06f831c3281ccca5f0e349bbe0a65dcde` | CRVDisperse | impl | live | no |
+| ethereum | `0x596f8e49ace6fc8e09b561972360dc216f1c2a1f` | Vault | impl | live | no |
+| ethereum | `0x5fa4370164a2fabeef159b893299d59ff5dc1e6d` | UniswapV2Pair | impl | live | no |
+| ethereum | `0x8fcfd0eec0cca95b5bcebd33a076b29fd8998884` | RewardClaimer | impl | live | no |
+| ethereum | `0x9291367d247f8ca4075af991504c208e62ca6af1` | AdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x966cbdecefb60a289b0460f7638f4a75f432ca06` | CryptoWithStablePriceETH | impl | live | no |
+| ethereum | `0x9e0441e084f5db0606565737158aa6ab6b970fe0` | BentCVX | impl | live | no |
+| ethereum | `0xa2518b71ee64e910741f5cf480b19e8e402de4d7` | WBTC-crvUSDleveragezap | impl | live | no |
+| ethereum | `0xa3bd4cc3f130621172521ea85e485a7201b53bc6` | BentCVXRewarderMasterchef | impl | live | no |
+| ethereum | `0xb556fa4c4752321b3154f08dfbdfcf34847f2eac` | LeveragezapforcrvUSDcontroller_sfrxETHmarket_ | impl | live | no |
+| ethereum | `0xbef434e2acf0fbad1f0579d2376fed0d1cfc4217` | CryptoWithStablePriceTBTC | impl | live | no |
+| ethereum | `0xc9332fdcb1c491dcc683bae86fe3cb70360738bc` | crvUSDControllerFactory | impl | live | no |
+| ethereum | `0xcf61ee62b136e3553fb545bd8fec11fb7f830d6a` | HealthcalculatorzapforcrvUSDcontroller | impl | live | no |
+| ethereum | `0xea4d847ea399c79ee0cbc996a972432726b9f981` | Timelock | impl | live | no |
+| ethereum | `0xf574cbebbd549273af82b42cd0230de9ea6efef7` | SusdeMonetaryPolicy | impl | live | no |
+| ethereum | `0xf939e0a03fb07f59a73314e73794be0e57ac1b4e` | crvUSDStablecoin | impl | live | no |

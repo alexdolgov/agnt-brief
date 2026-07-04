@@ -1,0 +1,18 @@
+{
+  "component": "Quoter",
+  "main_contract": "Quoter",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8d073a51a9b074940622e42c5f3c4d08c2c6ce77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

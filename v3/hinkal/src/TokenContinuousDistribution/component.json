@@ -1,0 +1,18 @@
+{
+  "component": "TokenContinuousDistribution",
+  "main_contract": "TokenContinuousDistribution",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35f517cab9a37bc31091c2f155d965af84e0bc85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

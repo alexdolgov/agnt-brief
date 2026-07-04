@@ -1,0 +1,18 @@
+{
+  "component": "MultiFeedAdapterWithoutRounds-6",
+  "main_contract": "MultiFeedAdapterWithoutRounds",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x46a2b84901410a81c6421104a12d6555ca286021",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

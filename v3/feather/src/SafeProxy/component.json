@@ -1,0 +1,18 @@
+{
+  "component": "SafeProxy",
+  "main_contract": "SafeProxy",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

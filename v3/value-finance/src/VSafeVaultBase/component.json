@@ -1,0 +1,18 @@
+{
+  "component": "VSafeVaultBase",
+  "main_contract": "VSafeVaultBase",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x15bcacd47eef0d3877cf1199819f9e6addeebe32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

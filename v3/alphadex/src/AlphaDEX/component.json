@@ -1,0 +1,18 @@
+{
+  "component": "AlphaDEX",
+  "main_contract": "AlphaDEX",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x8e7cd893d8f371051a39aa65976bca22d7b02a60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

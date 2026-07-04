@@ -1,0 +1,18 @@
+{
+  "component": "YFIDepositor",
+  "main_contract": "YFIDepositor",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe56d9776fbb287a2f8ba3f11375f51a24d7e25db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

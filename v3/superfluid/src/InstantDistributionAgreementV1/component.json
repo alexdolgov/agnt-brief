@@ -1,0 +1,42 @@
+{
+  "component": "InstantDistributionAgreementV1",
+  "main_contract": "InstantDistributionAgreementV1",
+  "source_file_count": 32,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x0801927da5dcc0fd1f588755bef8d30b49b270fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x1d38a1f81216b73c05a10eac5e84f566d4d9d8da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa032265ee9de740d36af6eb90cf18775577b1ef3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xf0ec6a8842ca72aec8a4d4573e731242389e18a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

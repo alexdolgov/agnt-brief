@@ -1,0 +1,26 @@
+{
+  "component": "PolygonTaskModule",
+  "main_contract": "PolygonTaskModule",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9e6f47db693ea78d380f0376089fd5371db4efda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf37b48c121e325258cb9adc38f54d2d423fc5266",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

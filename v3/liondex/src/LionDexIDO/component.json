@@ -1,0 +1,18 @@
+{
+  "component": "LionDexIDO",
+  "main_contract": "LionDexIDO",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x50b2eadb950e822cae101a8af780bced3382d6fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SpellOracle",
+  "main_contract": "SpellOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75e14253de6a5c2af12d5f1a1ea0a2e11e69ec10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

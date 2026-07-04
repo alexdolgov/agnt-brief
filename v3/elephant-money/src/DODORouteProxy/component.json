@@ -1,0 +1,18 @@
+{
+  "component": "DODORouteProxy",
+  "main_contract": "DODORouteProxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x38a92ddec6c204cba947e91ee856ce57d65b3b12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

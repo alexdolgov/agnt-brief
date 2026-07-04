@@ -1,0 +1,18 @@
+{
+  "component": "SpokeToken",
+  "main_contract": "SpokeToken",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x37d761883a01e9f0b0d7fe59eec8c21d94393cdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

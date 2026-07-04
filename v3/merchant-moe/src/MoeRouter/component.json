@@ -1,0 +1,36 @@
+{
+  "component": "MoeRouter",
+  "main_contract": "MoeRouter",
+  "source_file_count": 13,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/merchant-moe"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xaf627839850143043415925bc77c00c01effdeb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xeaee7ee68874218c3558b40063c42b82d3e7232a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xf311d54d81ea264d217e0e67442785d132376ce5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

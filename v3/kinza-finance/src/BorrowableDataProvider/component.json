@@ -1,0 +1,26 @@
+{
+  "component": "BorrowableDataProvider",
+  "main_contract": "BorrowableDataProvider",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2864aa9e7cbe4b114306be82aa23ffe2036d33ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85c81344af6a564e276a9e224e40e7613a619b4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

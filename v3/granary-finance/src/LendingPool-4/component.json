@@ -1,0 +1,18 @@
+{
+  "component": "LendingPool-4",
+  "main_contract": "LendingPool",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc01a7ad7fb8a085a3cc16be8eaa10302c78a1783",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

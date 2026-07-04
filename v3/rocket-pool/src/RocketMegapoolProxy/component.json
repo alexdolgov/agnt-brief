@@ -1,0 +1,18 @@
+{
+  "component": "RocketMegapoolProxy",
+  "main_contract": "RocketMegapoolProxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b389d76a04d01026c5f5b0a125d4ccf26f9cd51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

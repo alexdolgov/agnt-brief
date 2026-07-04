@@ -1,0 +1,18 @@
+{
+  "component": "Verifier",
+  "main_contract": "Verifier",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70f3fbf8a427155185ec90bed8a3434203de9604",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

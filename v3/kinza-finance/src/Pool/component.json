@@ -1,0 +1,18 @@
+{
+  "component": "Pool",
+  "main_contract": "Pool",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0b4115d1fa43e4bc57513899c1cfb2acfd614e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

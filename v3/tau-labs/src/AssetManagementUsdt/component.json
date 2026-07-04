@@ -1,0 +1,26 @@
+{
+  "component": "AssetManagementUsdt",
+  "main_contract": "AssetManagementUsdt",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6416e385f08421f524e2c7335444e56e897f7ddd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e679c1d67af0cd4b314896856f09ece9e64d6b5",
+      "is_proxy": true,
+      "implementation_address": "0x6416e385f08421f524e2c7335444e56e897f7ddd",
+      "liveness": "live"
+    }
+  ]
+}

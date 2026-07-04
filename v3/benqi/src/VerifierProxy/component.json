@@ -1,0 +1,18 @@
+{
+  "component": "VerifierProxy",
+  "main_contract": "VerifierProxy",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaaf548a3a74939650d7a5d7550cf785975ed400a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

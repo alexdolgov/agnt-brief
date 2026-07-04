@@ -1,0 +1,26 @@
+{
+  "component": "BasketHandlerP1",
+  "main_contract": "BasketHandlerP1",
+  "source_file_count": 62,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b3c7516564261fff2190f5496c53c1155790857",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x54a8fa5217970e2040590ddd7c16f72b1fb57a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

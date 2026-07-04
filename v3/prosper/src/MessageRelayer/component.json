@@ -1,0 +1,18 @@
+{
+  "component": "MessageRelayer",
+  "main_contract": "MessageRelayer",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1412f2b39050cd05bc0b2f08acb5cb8e41288fda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

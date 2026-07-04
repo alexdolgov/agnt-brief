@@ -1,0 +1,26 @@
+{
+  "component": "SWPx",
+  "main_contract": "SWPx",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x90c44218e202995f1c06cb0f0e452dd3b6d8ebdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa04bc7140c26fc9bb1f36b1a604c7a5a88fb0e70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

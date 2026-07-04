@@ -1,0 +1,26 @@
+{
+  "component": "RewardEscrowV2",
+  "main_contract": "RewardEscrowV2",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x41b9784e0541bf9d5324b3f265cfcd1170490474",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe21e39c383abdce3edf13b7233ad1ad5fee42099",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

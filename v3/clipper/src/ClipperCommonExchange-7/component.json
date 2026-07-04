@@ -1,0 +1,18 @@
+{
+  "component": "ClipperCommonExchange-7",
+  "main_contract": "ClipperCommonExchange",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5130f6ce257b8f9bf7fac0a0b519bd588120ed40",
+      "is_proxy": true,
+      "implementation_address": "0x5130f6ce257b8f9bf7fac0a0b519bd588120ed40",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BurnFromMintTokenPool",
+  "main_contract": "BurnFromMintTokenPool",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x03df929510a52c97bb1b3e5f33ea5d9735a50280",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

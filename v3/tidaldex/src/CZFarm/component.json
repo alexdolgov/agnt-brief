@@ -1,0 +1,18 @@
+{
+  "component": "CZFarm",
+  "main_contract": "CZFarm",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e27ab6ebecd38011273a67e368040ebf2786305",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

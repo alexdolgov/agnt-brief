@@ -1,0 +1,26 @@
+{
+  "component": "MirrorMainnet_mGOOG_UST",
+  "main_contract": "MirrorMainnet_mGOOG_UST",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a6ade7348598e42da381b03c1c40c9ba1c7747d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xddfa4bb578cec776f2f63cd7edfd5945bd273cbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

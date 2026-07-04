@@ -1,0 +1,18 @@
+{
+  "component": "Verifier16",
+  "main_contract": "Verifier16",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4cdbff594fc93f85aff3eeef94e31df6f3ef3e16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

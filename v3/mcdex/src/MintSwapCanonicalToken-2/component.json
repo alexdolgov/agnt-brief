@@ -1,0 +1,18 @@
+{
+  "component": "MintSwapCanonicalToken-2",
+  "main_contract": "MintSwapCanonicalToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

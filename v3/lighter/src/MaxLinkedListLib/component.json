@@ -1,0 +1,18 @@
+{
+  "component": "MaxLinkedListLib",
+  "main_contract": "MaxLinkedListLib",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0f39497a76f33efebb88c903bd3d5a175499ea3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

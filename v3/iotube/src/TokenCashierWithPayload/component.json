@@ -1,0 +1,26 @@
+{
+  "component": "TokenCashierWithPayload",
+  "main_contract": "TokenCashierWithPayload",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd57bde0a8bb77a2f65769316f6343e0a13a8d7d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DefaultOracle",
+  "main_contract": "DefaultOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x055462ff8c7a37d60c5344fca6bb7b80db3747a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "component": "OTSea",
+  "main_contract": "OTSea",
+  "source_file_count": 27,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://dedaub.com/audits/otsea/otsea-dec-18-2023",
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OTSea-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6e8b67b315b44519f8c2befdbbe11097c45353b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4da2f6b81808a8aeaf2c762d75dc8b188f05b115",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5da151b95657e788076d04d56234bd93e409cb09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa836af59d35b3da3c9fb5cfd6f84d9e3bd8c5fd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

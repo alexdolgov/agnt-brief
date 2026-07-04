@@ -1,0 +1,18 @@
+{
+  "component": "OptionOrder",
+  "main_contract": "OptionOrder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1dc4739df9a5c9feeff4553528a9597fbc7b24dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

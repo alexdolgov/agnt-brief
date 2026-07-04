@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeed",
+  "main_contract": "PriceFeed",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c517d4e2c851ca76d7ec94b805269df0f2201de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

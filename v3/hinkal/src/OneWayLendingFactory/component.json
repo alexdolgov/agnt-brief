@@ -1,0 +1,18 @@
+{
+  "component": "OneWayLendingFactory",
+  "main_contract": "OneWayLendingFactory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34024ba3b6edaf5cdd1c24fefe1df5d03041f38c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

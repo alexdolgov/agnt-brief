@@ -1,0 +1,34 @@
+{
+  "component": "UUPSProxy",
+  "main_contract": "UUPSProxy",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a27ac91c5cd3768f140ecabde3fc2b2d92edb98",
+      "is_proxy": true,
+      "implementation_address": "0xf684f2cb299ccdaab483ffc1573b82f40c6b775b",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70e70e58ed7b1cec0d8ef7464072ed8a52d755eb",
+      "is_proxy": true,
+      "implementation_address": "0xa4e6762eaaf259da74696f46faaf79ba9dde14e6",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa4e6762eaaf259da74696f46faaf79ba9dde14e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

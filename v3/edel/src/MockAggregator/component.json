@@ -1,0 +1,18 @@
+{
+  "component": "MockAggregator",
+  "main_contract": "MockAggregator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4455e3f74adbe89d46e4ba1ef3231f0695664df8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

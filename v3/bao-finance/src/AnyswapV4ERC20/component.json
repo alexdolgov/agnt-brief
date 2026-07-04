@@ -1,0 +1,18 @@
+{
+  "component": "AnyswapV4ERC20",
+  "main_contract": "AnyswapV4ERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x47eaf5f54d79d5c2b6537a90a0c58a534ab51c8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

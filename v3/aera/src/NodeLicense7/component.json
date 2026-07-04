@@ -1,0 +1,18 @@
+{
+  "component": "NodeLicense7",
+  "main_contract": "NodeLicense7",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe6e5356423516c9b75d4dfb1fca3973c5b695be8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

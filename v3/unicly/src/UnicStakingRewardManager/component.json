@@ -1,0 +1,26 @@
+{
+  "component": "UnicStakingRewardManager",
+  "main_contract": "UnicStakingRewardManager",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6c4101539cda931484096b916414f9fc460d772",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xebe04cecde78566de2cfc76ef3c19fe75a944699",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

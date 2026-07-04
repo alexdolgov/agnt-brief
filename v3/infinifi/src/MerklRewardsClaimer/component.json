@@ -1,0 +1,26 @@
+{
+  "component": "MerklRewardsClaimer",
+  "main_contract": "MerklRewardsClaimer",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x7a67248a73f9763203d4cd0fc8ef1c22c1b661c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x9b3bf077757e6fdce20ef02c4d25387000396754",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

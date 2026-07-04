@@ -1,0 +1,18 @@
+{
+  "component": "Dog",
+  "main_contract": "Dog",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15a36d5caf263160c2a49dde6429c045fb711ddd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

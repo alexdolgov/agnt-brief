@@ -1,0 +1,18 @@
+{
+  "component": "Usd1Oracle",
+  "main_contract": "Usd1Oracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x40d695986c4dd086c4e3a94392ab6c12781b39fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyPolyquityRewardPair",
+  "main_contract": "StrategyPolyquityRewardPair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8970a9df4ceb7b70ee016d8acdf3d58cd66ad7ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

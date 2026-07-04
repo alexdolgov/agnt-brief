@@ -1,0 +1,18 @@
+{
+  "component": "CrvUsdOracle",
+  "main_contract": "CrvUsdOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ca33fe9a0816eaa77472e74fd56a0ff5e22890f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DebtAllocator",
+  "main_contract": "DebtAllocator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03d43df6ff894c848fc6f1a0a7e8a539ef9a4c18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

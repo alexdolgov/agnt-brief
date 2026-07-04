@@ -1,0 +1,28 @@
+{
+  "component": "BinaryConfig",
+  "main_contract": "BinaryConfig",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://assets-global.website-files.com/63f62b4cce8131e16ca56ecb/6511a7eb1c0ccd8228977194_Balance_Final_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe9f5817e58c4f894e5d54cd12e6610c2da3cdcee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf8de9fcc795e10258a5270bfa7176ce3e10e1d1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

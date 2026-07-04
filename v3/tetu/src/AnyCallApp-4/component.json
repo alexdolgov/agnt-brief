@@ -1,0 +1,18 @@
+{
+  "component": "AnyCallApp-4",
+  "main_contract": "AnyCallApp",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb16e4aa530d050b07ba98be418d2b732c011cdda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

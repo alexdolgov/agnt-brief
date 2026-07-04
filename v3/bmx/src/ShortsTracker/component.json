@@ -1,0 +1,18 @@
+{
+  "component": "ShortsTracker",
+  "main_contract": "ShortsTracker",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x37e62664c7b78e1e05ca47aa80924d9a6280f420",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

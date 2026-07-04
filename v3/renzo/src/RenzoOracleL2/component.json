@@ -1,0 +1,22 @@
+{
+  "component": "RenzoOracleL2",
+  "main_contract": "RenzoOracleL2",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Renzo-Protocol/contracts-public/blob/master/Audit/Halborn_Renzo_Protocol_Withdrawals_Smart_Contract_Security_Assessment_Report.pdf",
+    "https://github.com/Renzo-Protocol/contracts-public/blob/master/Audit/NM0472-FINAL_RENZO_BRIDGE.pdf",
+    "https://github.com/Renzo-Protocol/contracts-public/blob/master/Audit/Sigma_Prime_Renzo_Restaking_Security_Assessment_Report_v2_1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3bedea15ab20d75aa858d42771f3ec09638b2cd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

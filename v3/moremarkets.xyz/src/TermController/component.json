@@ -1,0 +1,18 @@
+{
+  "component": "TermController",
+  "main_contract": "TermController",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2879c9d15406e7ebd46770f4b0781fe665f9da1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

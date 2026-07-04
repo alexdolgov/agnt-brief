@@ -1,0 +1,18 @@
+{
+  "component": "Yearn_V3_Vault",
+  "main_contract": "Yearn V3 Vault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0abd93da8387b5ef0511a2859d85d84fe4519e94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

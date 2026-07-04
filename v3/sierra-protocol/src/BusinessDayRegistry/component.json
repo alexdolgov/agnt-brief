@@ -1,0 +1,42 @@
+{
+  "component": "BusinessDayRegistry",
+  "main_contract": "BusinessDayRegistry",
+  "source_file_count": 24,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x194951b1f48b8145d0672b0b606337fab615bec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcca3ccbe590813a674335ef0846ba446949f5367",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xccbde093d2fbc50d5adb705253ded33ad20d4a1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdec9c1ca9389a29bd021dc3c6921d230e2c3c4d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Liquifier-6",
+  "main_contract": "Liquifier",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82c12f861d535c0441936d8d008d88e97831c4b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

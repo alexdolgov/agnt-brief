@@ -1,0 +1,22 @@
+{
+  "component": "PancakeSwapInfinityKEMHook",
+  "main_contract": "PancakeSwapInfinityKEMHook",
+  "source_file_count": 72,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/eb59f23b-ef3c-4b3c-9d28-3455d5337d3f",
+    "https://github.com/KyberNetwork/kyber-exclusive-amm-sc/blob/main/audits/06_24_2025_KyberNetwork_Omniscia_SecurityReview_UniswapV4Hooks.pdf",
+    "https://github.com/spearbit/portfolio/blob/master/pdfs/Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x44428c6ce391915d51f963c0dd395cd0f95fdfd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

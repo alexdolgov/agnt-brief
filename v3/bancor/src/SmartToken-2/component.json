@@ -1,0 +1,18 @@
+{
+  "component": "SmartToken-2",
+  "main_contract": "SmartToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b51a2b74de5cfb40a99d84bc027819ad02ba7c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

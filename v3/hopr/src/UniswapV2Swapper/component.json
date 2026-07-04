@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV2Swapper",
+  "main_contract": "UniswapV2Swapper",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x44ae0c2911e1cd04b4b7b66b6583c6948fd43e06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

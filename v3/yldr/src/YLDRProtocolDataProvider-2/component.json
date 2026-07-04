@@ -1,0 +1,18 @@
+{
+  "component": "YLDRProtocolDataProvider-2",
+  "main_contract": "YLDRProtocolDataProvider",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2464da5c26651cdced9f6afa9afdc79b5f6413ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "EIP1559Burn",
+  "main_contract": "EIP1559Burn",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70bca57f4579f58670ab2d18ef16e02c17553c38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

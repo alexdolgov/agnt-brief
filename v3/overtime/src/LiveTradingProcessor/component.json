@@ -1,0 +1,52 @@
+{
+  "component": "LiveTradingProcessor",
+  "main_contract": "LiveTradingProcessor",
+  "source_file_count": 34,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x076c84d7691008045984bece7a3e595903039017",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4ff31890f66b9e314d0c9683888d292f407ea7ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5dd816ae6192b545bc7370a7dfbcd87790e90f6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6335697c970454e0bcc0f680e24bb03a35b266a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc7bd9193224637d04075962d06e55de2a8bc3ef1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

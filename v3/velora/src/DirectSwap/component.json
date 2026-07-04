@@ -1,0 +1,26 @@
+{
+  "component": "DirectSwap",
+  "main_contract": "DirectSwap",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3a43e3ac12b641715fce97ccb50bbde06b22ba24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xed4e008425575b0f9f2cf3eb3ba3554706d3c311",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "FarmingTicketWindow",
+  "main_contract": "FarmingTicketWindow",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2b563a32f11365902cceace27f4fe6253b09fb3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9f55e6aa18647dc6a35b295a236439a7e9933650",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

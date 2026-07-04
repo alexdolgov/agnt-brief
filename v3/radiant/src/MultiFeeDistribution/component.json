@@ -1,0 +1,24 @@
+{
+  "component": "MultiFeeDistribution",
+  "main_contract": "MultiFeeDistribution",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_radiant_v2.0.pdf",
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Radiant-v1.0.pdf",
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-RadiantV2-v1.0.pdf",
+    "https://github.com/zokyo-sec/audit-reports/blob/main/Radiant/Radiant%20Capital%20audit%20report_06_March.pdf",
+    "https://sourcehat.com/audits/RadiantProtocol"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc2054a8c33bfce28de8af4af548c48915c455c13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

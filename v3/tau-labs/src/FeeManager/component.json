@@ -1,0 +1,34 @@
+{
+  "component": "FeeManager",
+  "main_contract": "FeeManager",
+  "source_file_count": 64,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2bb5cafee239687ec1cd0644bb7fd6f4563a4391",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6951d77882aa279f02763cd66b61e174171baa20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbde68fa3310bd8914a09a9d2a35e2edb3c4e2255",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

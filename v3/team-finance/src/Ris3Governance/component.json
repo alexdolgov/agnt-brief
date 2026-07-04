@@ -1,0 +1,18 @@
+{
+  "component": "Ris3Governance",
+  "main_contract": "Ris3Governance",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa264eb021f184b80d4efa864c65988492da52b13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

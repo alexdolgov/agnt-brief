@@ -1,0 +1,74 @@
+{
+  "component": "DomfiPairInfos",
+  "main_contract": "DomfiPairInfos",
+  "source_file_count": 12,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x14a6da0a766f010c22011d45de70846ebe507dcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x256fd248cdc91a6b098eee2580f313fdcafa2059",
+      "is_proxy": true,
+      "implementation_address": "0xb2c18e95e53aa824e075f13ad627b0a2c890a1d2",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2b37dda26307f7524f33d5164ba283d776cae34d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x53917e641af9918190db6875dc519b2cdaaafe48",
+      "is_proxy": true,
+      "implementation_address": "0x9333188cd4a4de2b6e3bc28b52447dfb9119c2b5",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7d05e7a8fe286ed3113367c368780116a14db35a",
+      "is_proxy": true,
+      "implementation_address": "0x14a6da0a766f010c22011d45de70846ebe507dcb",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9333188cd4a4de2b6e3bc28b52447dfb9119c2b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb2c18e95e53aa824e075f13ad627b0a2c890a1d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcc4e8483c0459452dafc9ade91c741708f4d217d",
+      "is_proxy": true,
+      "implementation_address": "0x2b37dda26307f7524f33d5164ba283d776cae34d",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BabyProxyOFT",
+  "main_contract": "BabyProxyOFT",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x000c86bb08f24261453a289fa3af839e23c28d43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

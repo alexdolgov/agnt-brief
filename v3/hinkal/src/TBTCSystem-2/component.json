@@ -1,0 +1,18 @@
+{
+  "component": "TBTCSystem-2",
+  "main_contract": "TBTCSystem",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62d1286683507939c065c12f2d1e80cca8ccd125",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

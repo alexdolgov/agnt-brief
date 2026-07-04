@@ -1,0 +1,20 @@
+{
+  "component": "Cap",
+  "main_contract": "Cap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x1d28ded4ff512c0e80af2b459d86a9169cc57c56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

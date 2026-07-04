@@ -1,0 +1,18 @@
+{
+  "component": "TokenLocker",
+  "main_contract": "TokenLocker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x341c6003d7e7d08aaf9580c0f1ce799fecd4b8ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

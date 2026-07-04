@@ -1,0 +1,18 @@
+{
+  "component": "WaLINKToken",
+  "main_contract": "WaLINKToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29ddf2c4f1e80dc9e95cc57a9ca03a28e4ab6d6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UnityOracle-2",
+  "main_contract": "UnityOracle",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x497d6cede7c59cb97bf1593a742c43bb647a8eda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

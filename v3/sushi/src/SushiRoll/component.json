@@ -1,0 +1,18 @@
+{
+  "component": "SushiRoll",
+  "main_contract": "SushiRoll",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0053957e18a0994d3526cf879a4ca7be88e8936a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

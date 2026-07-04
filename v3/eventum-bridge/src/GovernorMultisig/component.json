@@ -1,0 +1,18 @@
+{
+  "component": "GovernorMultisig",
+  "main_contract": "GovernorMultisig",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

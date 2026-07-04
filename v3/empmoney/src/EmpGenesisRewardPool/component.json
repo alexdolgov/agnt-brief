@@ -1,0 +1,50 @@
+{
+  "component": "EmpGenesisRewardPool",
+  "main_contract": "EmpGenesisRewardPool",
+  "source_file_count": 4,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1f5659cda58b245ce19ddd499c81eb0c8a29da1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x30394dd71210f77ae15261fd95903320facfb92a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8fa16d968a9c12a75ab14cacdfbb3a56e6811ca9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9b19d7cedf68804fd81e1abb42e2471443e8cbfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf587efad2705ef04f4439c728c6a9b42e07c0cb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

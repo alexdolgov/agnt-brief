@@ -1,0 +1,18 @@
+{
+  "component": "AddressStorage",
+  "main_contract": "AddressStorage",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xc8e48fd037d1c4232f294b635e74d33a0573265a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

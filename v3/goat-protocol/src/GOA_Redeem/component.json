@@ -1,0 +1,18 @@
+{
+  "component": "GOA_Redeem",
+  "main_contract": "GOA_Redeem",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1a6e9fd892b6ca3c6617f31164dbc6f00fb54369",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

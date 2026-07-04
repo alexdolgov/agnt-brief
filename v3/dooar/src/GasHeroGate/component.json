@@ -1,0 +1,18 @@
+{
+  "component": "GasHeroGate",
+  "main_contract": "GasHeroGate",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0f8a6a6d277c85519a0faeb552ec8c2578deb107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

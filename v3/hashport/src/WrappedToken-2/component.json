@@ -1,0 +1,22 @@
+{
+  "component": "WrappedToken-2",
+  "main_contract": "WrappedToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/limechain-hashport",
+    "https://omniscia.io/reports/limechain-hashport-round-2",
+    "https://www.hashport.network/wp-content/uploads/Hashport-Smart-Contract-Review-v1.0-3-1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f7fd18926a9646f4ff62952706dfcaed7b544bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

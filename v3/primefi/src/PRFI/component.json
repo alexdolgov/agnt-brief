@@ -1,0 +1,26 @@
+{
+  "component": "PRFI",
+  "main_contract": "PRFI",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7bbcf1b600565ae023a1806ef637af4739de3255",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7bbcf1b600565ae023a1806ef637af4739de3255",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

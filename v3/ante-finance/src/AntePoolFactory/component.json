@@ -1,0 +1,18 @@
+{
+  "component": "AntePoolFactory",
+  "main_contract": "AntePoolFactory",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x18ab6357f673696375018f006b86fe44f195de1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

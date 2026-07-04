@@ -1,0 +1,26 @@
+{
+  "component": "StakingPoolQueryReward",
+  "main_contract": "StakingPoolQueryReward",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x191e5856c8c93fb23cafd27ed6a57d10ff3bb701",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdf3bc23670468f7264c8f12f31cd10847be51d4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

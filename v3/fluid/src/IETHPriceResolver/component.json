@@ -1,0 +1,18 @@
+{
+  "component": "IETHPriceResolver",
+  "main_contract": "IETHPriceResolver",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce5b90bf5f68b91dd9628fad5dc942f0d9271cc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

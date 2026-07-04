@@ -1,0 +1,26 @@
+{
+  "component": "JetfuelVaultV2",
+  "main_contract": "JetfuelVaultV2",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x227f9a94815d3a30ef8ffb7302a1793d05cd2113",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdca31a4d1ca28080b0b6a02dead39aaa602caf8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

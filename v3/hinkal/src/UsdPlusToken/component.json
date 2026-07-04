@@ -1,0 +1,18 @@
+{
+  "component": "UsdPlusToken",
+  "main_contract": "UsdPlusToken",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x02803f6fcb3eda19c854b2defb39cbc3817ed986",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

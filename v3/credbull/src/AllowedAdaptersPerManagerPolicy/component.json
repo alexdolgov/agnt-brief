@@ -1,0 +1,18 @@
+{
+  "component": "AllowedAdaptersPerManagerPolicy",
+  "main_contract": "AllowedAdaptersPerManagerPolicy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x30ed4e3cf5e1faf6fc9776d256d535f3470bb710",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

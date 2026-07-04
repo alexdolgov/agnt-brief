@@ -1,0 +1,18 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe990519f19dcc6c1589a544c331c4ec046593e7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

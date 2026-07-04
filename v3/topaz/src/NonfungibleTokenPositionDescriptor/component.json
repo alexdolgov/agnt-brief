@@ -1,0 +1,58 @@
+{
+  "component": "NonfungibleTokenPositionDescriptor",
+  "main_contract": "NonfungibleTokenPositionDescriptor",
+  "source_file_count": 40,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0dc0d5acf4256f5f5118e2a82c6d06868f2ab0dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x239bd25e86e4a3b931b1c6cf7849c27ca9f0498a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x47baf65e578e6a706c1bf31862c2ba59dc91cc18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x81acc35240d19948a56b8b68bcc8706f90babab5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xba4c4f5ca809c21286ff1a872b3c0cfb57afe904",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd3dd0f34afe65ab3f64ccfd13e76d5a8dc8f787a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

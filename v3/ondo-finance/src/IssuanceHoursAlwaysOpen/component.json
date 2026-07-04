@@ -1,0 +1,18 @@
+{
+  "component": "IssuanceHoursAlwaysOpen",
+  "main_contract": "IssuanceHoursAlwaysOpen",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x180eecc78a99d32e925ff6a0ed42ada2abfdd1bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

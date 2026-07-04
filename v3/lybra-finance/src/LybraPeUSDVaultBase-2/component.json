@@ -1,0 +1,18 @@
+{
+  "component": "LybraPeUSDVaultBase-2",
+  "main_contract": "LybraPeUSDVaultBase",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c5510e6a04311ab4d8f31b23ba0a6059c9e5d24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

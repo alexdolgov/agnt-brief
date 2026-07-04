@@ -1,0 +1,44 @@
+{
+  "component": "DomfiLockedDepositNft",
+  "main_contract": "DomfiLockedDepositNft",
+  "source_file_count": 23,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.domination.finance/assets/DomFi-security-review_2025-12-07.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x11765119ec66fb434447fd56e9041746c8ecbf85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1b50c91b8ae6c655b38ee171ea86b0f8519d7d52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x63d7f6d4edf6d4e83c1a8c60345f8d40590514da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe2ea297394d9f3e6221a40c7c405a0c810425adf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

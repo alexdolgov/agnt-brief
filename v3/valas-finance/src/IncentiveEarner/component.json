@@ -1,0 +1,26 @@
+{
+  "component": "IncentiveEarner",
+  "main_contract": "IncentiveEarner",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x45db28f16c21d441006069a269c0442e4cc304a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa6e85ecb91f300c8eb1c92f87a26248133dd09d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

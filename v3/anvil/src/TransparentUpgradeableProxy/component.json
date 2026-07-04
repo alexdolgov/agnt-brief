@@ -1,0 +1,37 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/2023-12-acronym-foundation-securityreview.pdf",
+    "https://www.openzeppelin.com/news/anvil-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808",
+      "is_proxy": true,
+      "implementation_address": "0x24573b112456d3a96c97fb460b436e8ca870e27e",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a3251d83b4ed97d8e1d8451613d7dd9b4f42961",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x750ab78b4fe51292d1f0053845aace3ea959d5ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

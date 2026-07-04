@@ -1,0 +1,18 @@
+{
+  "component": "FeeCollectorSimple-2",
+  "main_contract": "FeeCollectorSimple",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6a7f97ed710a162cf5f1eb8024e613fc9ce9d563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

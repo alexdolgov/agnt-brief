@@ -1,0 +1,42 @@
+{
+  "component": "ViewFacet",
+  "main_contract": "ViewFacet",
+  "source_file_count": 16,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x13ed7bf7686d9d57c62b466e6110b0d9d1dcf95e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8dd4191a4ec3b78df916208c810ebdb36a0980bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa4f237eca6576e742af17972ce592942e0e79451",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf79f272205ba7e2cc741e46bff7ff0facb941611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

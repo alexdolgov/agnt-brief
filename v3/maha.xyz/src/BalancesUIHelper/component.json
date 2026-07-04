@@ -1,0 +1,26 @@
+{
+  "component": "BalancesUIHelper",
+  "main_contract": "BalancesUIHelper",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c194170b621d01e3d35a221180cc2e58b6fb916",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x945ffe2cfc7ed7219d78718f320e3685d86e50bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

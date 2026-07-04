@@ -1,0 +1,18 @@
+{
+  "component": "DollarOracle",
+  "main_contract": "DollarOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2321394d45a58807f56439be0bd9071b255a133f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

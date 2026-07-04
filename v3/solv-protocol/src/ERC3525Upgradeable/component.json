@@ -1,0 +1,26 @@
+{
+  "component": "ERC3525Upgradeable",
+  "main_contract": "ERC3525Upgradeable",
+  "source_file_count": 91,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37eab492e61a3eedccbded05b55f9b9ff29574dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x08884c9a13c87476cd59aafcdec82c7c2e8e77ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

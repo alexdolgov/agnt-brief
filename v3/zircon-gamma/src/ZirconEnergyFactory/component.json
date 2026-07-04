@@ -1,0 +1,76 @@
+{
+  "component": "ZirconEnergyFactory",
+  "main_contract": "ZirconEnergyFactory",
+  "source_file_count": 13,
+  "deployment_count": 8,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Zircon-Finance/zircon-protocol-2/blob/master/audit/chaintroopers/Zircon_Protocol2_SecAssessment_report_v1.1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x168c95536c77be5400eed2aeee21ef64d9c8ca2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x1a1956b60623cd52cc38d8aa62ac4e54d6a47e50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x1f580724b4b2a95c00b144fb2ebecd41a15eba74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x33c5b2131244a5a0ab05242364233414e5a7e325",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x3b7d45092a6776b5b2fb6358e41a6e0c7cf5305e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x911fce21afca0b3e63d700ff3a22bfce6c53e6f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xdeb930f8518d0a9169836944b6e176813c3718fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xfc413b0b8481eebcf335eb35b1a7a634fef64649",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

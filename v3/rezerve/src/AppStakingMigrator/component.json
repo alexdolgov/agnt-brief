@@ -1,0 +1,26 @@
+{
+  "component": "AppStakingMigrator",
+  "main_contract": "AppStakingMigrator",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x926680fac98c264f11f1d61849354f927a59606a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7a5777d6685fb126d209a39cc3da77fb2fab1aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

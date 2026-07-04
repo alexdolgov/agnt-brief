@@ -1,0 +1,18 @@
+{
+  "component": "CyTokenOracle",
+  "main_contract": "CyTokenOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x40b743ca424e3ec7b97f5ad93d2263ae01dae1d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

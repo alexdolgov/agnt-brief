@@ -1,0 +1,26 @@
+{
+  "component": "L1MultiMessageRelayerFast",
+  "main_contract": "L1MultiMessageRelayerFast",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16650a81cd8cc7e6d132bb98925efdeea73e0d59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2d6134ac3e480fbdd263b7163d333dca285f9622",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

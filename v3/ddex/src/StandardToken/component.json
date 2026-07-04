@@ -1,0 +1,18 @@
+{
+  "component": "StandardToken",
+  "main_contract": "StandardToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x723091df82333033f1b646fe1ad7bbbf9cbe420c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

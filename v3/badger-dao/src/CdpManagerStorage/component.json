@@ -1,0 +1,18 @@
+{
+  "component": "CdpManagerStorage",
+  "main_contract": "CdpManagerStorage",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc4cbae499bb4ca41e78f52f07f5d98c375711774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

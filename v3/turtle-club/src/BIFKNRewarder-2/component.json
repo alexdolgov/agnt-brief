@@ -1,0 +1,18 @@
+{
+  "component": "BIFKNRewarder-2",
+  "main_contract": "BIFKNRewarder",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc158d2d31a854644ac7b1ff13fcb1c1def67194f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

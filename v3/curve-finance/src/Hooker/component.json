@@ -1,0 +1,18 @@
+{
+  "component": "Hooker",
+  "main_contract": "Hooker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a9df35cd8e88565694ca6ad5093c236c7f6f69d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

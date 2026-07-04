@@ -1,0 +1,18 @@
+{
+  "component": "DTokenProxy-4",
+  "main_contract": "DTokenProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb7d75be4dc8eb15ff90422137c0a5bcbd316953",
+      "is_proxy": true,
+      "implementation_address": "0x1843d44e3565cd6b439b65e64eb24d243689a10d",
+      "liveness": "live"
+    }
+  ]
+}

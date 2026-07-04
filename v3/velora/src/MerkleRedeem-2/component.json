@@ -1,0 +1,18 @@
+{
+  "component": "MerkleRedeem-2",
+  "main_contract": "MerkleRedeem",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd57fd755f53666ce2d3ed8c862a8d06e38c21ce6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "stETHGateway",
+  "main_contract": "stETHGateway",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c5c52d507066780500e627d592dbe11476e7c21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

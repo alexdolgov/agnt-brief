@@ -1,0 +1,29 @@
+{
+  "component": "OracleProxy",
+  "main_contract": "OracleProxy",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/ENG/(ENG)_BiFi_Lending_Sooho_EN_Public.pdf",
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/bifrost_bifi_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c0420c7aed04b67d8ccef82563af4c8f801f668",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ba1ddd63a5680b7c666b74a50be28b24d507beb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

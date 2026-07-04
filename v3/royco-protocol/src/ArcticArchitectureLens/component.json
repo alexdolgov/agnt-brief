@@ -1,0 +1,18 @@
+{
+  "component": "ArcticArchitectureLens",
+  "main_contract": "ArcticArchitectureLens",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90983ebf38e981ae38f7da9e71804380e316a396",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

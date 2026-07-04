@@ -1,0 +1,18 @@
+{
+  "component": "BoostFactory",
+  "main_contract": "BoostFactory",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x85d5930cc9e5471a03f29ca5f64c2b83cc70b497",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

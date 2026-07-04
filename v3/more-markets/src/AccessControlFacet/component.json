@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlFacet",
+  "main_contract": "AccessControlFacet",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfdf1c242e8e9847f2edebab3c0f3be5f85eed38c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

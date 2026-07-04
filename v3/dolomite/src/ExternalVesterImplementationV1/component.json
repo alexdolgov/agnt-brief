@@ -1,0 +1,18 @@
+{
+  "component": "ExternalVesterImplementationV1",
+  "main_contract": "ExternalVesterImplementationV1",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d2586da719cac754ab3b0143f1c9886bea7a8b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

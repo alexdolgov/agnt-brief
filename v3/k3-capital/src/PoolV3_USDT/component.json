@@ -1,0 +1,18 @@
+{
+  "component": "PoolV3_USDT",
+  "main_contract": "PoolV3_USDT",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf5503d3d4bd254c2c17690eed523bcb2935db6de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

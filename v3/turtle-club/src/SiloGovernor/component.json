@@ -1,0 +1,18 @@
+{
+  "component": "SiloGovernor",
+  "main_contract": "SiloGovernor",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa89163f7b2d68a8fba6ca36beed32bd4f3eeaf61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

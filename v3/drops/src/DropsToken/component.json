@@ -1,0 +1,26 @@
+{
+  "component": "DropsToken",
+  "main_contract": "DropsToken",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc34568ae1f48db1fc9ba745e4fc614a7b402ce95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc80bf672a7d2a5f66ef67c8b80f9ac60201e18ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

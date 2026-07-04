@@ -1,0 +1,18 @@
+{
+  "component": "YAMETHPool",
+  "main_contract": "YAMETHPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x587a07ce5c265a38dd6d42def1566ba73eeb06f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

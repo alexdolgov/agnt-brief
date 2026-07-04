@@ -1,0 +1,18 @@
+{
+  "component": "USDM",
+  "main_contract": "USDM",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x05faf9cfa7143804e7fb0db423fde8330cd586df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

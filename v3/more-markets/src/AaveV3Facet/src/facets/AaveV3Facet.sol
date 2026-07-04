@@ -1,0 +1,524 @@
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity 0.8.28;
+
+import {MoreVaultsLib} from "@More-Vaults-Core/src/libraries/MoreVaultsLib.sol";
+import {IPool} from "@aave-v3-core/contracts/interfaces/IPool.sol";
+import {IERC20} from "@openzeppelin/contracts/interfaces/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import {AccessControlLib} from "@More-Vaults-Core/src/libraries/AccessControlLib.sol";
+import {IAaveV3RewardsController} from "../interfaces/Aave/v3/IAaveV3RewardsController.sol";
+import {IATokenExtended} from "../interfaces/Aave/v3/IATokenExtended.sol";
+import {IRewardsDistributor} from "../interfaces/Aave/v3/IRewardsDistributor.sol";
+import {IAaveV3Facet} from "../interfaces/facets/IAaveV3Facet.sol";
+import {BaseFacetInitializer} from "@More-Vaults-Core/src/facets/BaseFacetInitializer.sol";
+import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
+
+contract AaveV3Facet is BaseFacetInitializer, IAaveV3Facet {
+    using SafeERC20 for IERC20;
+    using EnumerableSet for EnumerableSet.AddressSet;
+    using EnumerableSet for EnumerableSet.Bytes32Set;
+
+    bytes32 constant MTOKENS_ID = keccak256("MTOKENS_ID");
+    bytes32 constant MORE_DEBT_TOKENS_ID = keccak256("MORE_DEBT_TOKENS_ID");
+
+    function INITIALIZABLE_STORAGE_SLOT()
+        internal
+        pure
+        override
+        returns (bytes32)
+    {
+        return keccak256("MoreVaults.storage.initializable.AaveV3Facet");
+    }
+
+    function facetName() external pure returns (string memory) {
+        return "AaveV3Facet";
+    }
+
+    function facetVersion() external pure returns (string memory) {
+        return "1.0.0";
+    }
+
+    function initialize(bytes calldata data) external initializerFacet {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        bytes32 facetSelector = abi.decode(data, (bytes32));
+        ds.facetsForAccounting.push(facetSelector);
+
+        ds.supportedInterfaces[type(IAaveV3Facet).interfaceId] = true;
+        ds.vaultExternalAssets[MoreVaultsLib.TokenType.HeldToken].add(
+            MTOKENS_ID
+        );
+        ds.vaultExternalAssets[MoreVaultsLib.TokenType.HeldToken].add(
+            MORE_DEBT_TOKENS_ID
+        );
+    }
+
+    function onFacetRemoval(bool isReplacing) external {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        ds.supportedInterfaces[type(IAaveV3Facet).interfaceId] = false;
+
+        MoreVaultsLib.removeFromFacetsForAccounting(
+            ds,
+            IAaveV3Facet.accountingAaveV3Facet.selector,
+            isReplacing
+        );
+        if (!isReplacing) {
+            ds.vaultExternalAssets[MoreVaultsLib.TokenType.HeldToken].remove(
+                MTOKENS_ID
+            );
+            ds.vaultExternalAssets[MoreVaultsLib.TokenType.HeldToken].remove(
+                MORE_DEBT_TOKENS_ID
+            );
+        }
+    }
+
+    function accountingAaveV3Facet()
+        public
+        view
+        returns (uint256 sum, bool isPositive)
+    {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        EnumerableSet.AddressSet storage mTokensHeld = ds.tokensHeld[
+            MTOKENS_ID
+        ];
+        EnumerableSet.AddressSet storage debtTokensHeld = ds.tokensHeld[
+            MORE_DEBT_TOKENS_ID
+        ];
+
+        uint256 sumCollateral;
+        uint256 sumDebt;
+        for (uint i = 0; i < mTokensHeld.length(); ) {
+            address mToken = mTokensHeld.at(i);
+            address controller = IATokenExtended(mToken).getIncentivesController();
+            if (controller == address(0)) {
+                unchecked {
+                    ++i;
+                }
+                continue;
+            }
+            
+            {
+                address[] memory mTokenSingleArray = new address[](1);
+                mTokenSingleArray[0] = mToken;
+                (
+                    address[] memory rewards,
+                    uint256[] memory amounts
+                ) = IRewardsDistributor(
+                        controller
+                    ).getAllUserRewards(mTokenSingleArray, address(this));
+
+                for (uint256 j = 0; j < rewards.length; ) {
+                    if (!ds.isAssetAvailable[rewards[j]]) {
+                        unchecked {
+                            ++j;
+                        }
+                        continue;
+                    }
+                    sumCollateral += MoreVaultsLib.convertToUnderlying(
+                        rewards[j],
+                        amounts[j],
+                        Math.Rounding.Floor
+                    );
+                    unchecked {
+                        ++j;
+                    }
+                }
+            }
+
+            if (ds.isAssetAvailable[mToken]) {
+                unchecked {
+                    ++i;
+                }
+                continue;
+            }
+            uint balance = IERC20(mToken).balanceOf(address(this)) +
+                ds.lockedTokens[mToken];
+            address underlyingOfMToken = IATokenExtended(mToken)
+                .UNDERLYING_ASSET_ADDRESS();
+            sumCollateral += MoreVaultsLib.convertToUnderlying(
+                underlyingOfMToken,
+                balance,
+                Math.Rounding.Floor
+            );
+            unchecked {
+                ++i;
+            }
+        }
+        for (uint i = 0; i < debtTokensHeld.length(); ) {
+            address debtToken = debtTokensHeld.at(i);
+            uint balance = IERC20(debtToken).balanceOf(address(this));
+            address underlyingOfDebtToken = IATokenExtended(debtToken)
+                .UNDERLYING_ASSET_ADDRESS();
+
+            sumDebt += MoreVaultsLib.convertToUnderlying(
+                underlyingOfDebtToken,
+                balance,
+                Math.Rounding.Ceil
+            );
+            unchecked {
+                ++i;
+            }
+        }
+
+        if (sumCollateral > sumDebt) {
+            isPositive = true;
+            sum = sumCollateral - sumDebt;
+        } else {
+            isPositive = false;
+            sum = sumDebt - sumCollateral;
+        }
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function supply(
+        address pool,
+        address asset,
+        uint256 amount,
+        uint16 referralCode
+    ) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+
+        IERC20(asset).forceApprove(pool, amount);
+        IPool(pool).supply(asset, amount, address(this), referralCode);
+        address mToken = IPool(pool).getReserveData(asset).aTokenAddress;
+        ds.tokensHeld[MTOKENS_ID].add(mToken);
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function withdraw(
+        address pool,
+        address asset,
+        uint256 amount
+    ) external returns (uint256 withdrawnAmount) {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        return _withdraw(pool, asset, amount, address(this));
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function borrow(
+        address pool,
+        address asset,
+        uint256 amount,
+        uint256 interestRateMode,
+        uint16 referralCode,
+        address onBehalfOf
+    ) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+
+        IPool(pool).borrow(
+            asset,
+            amount,
+            interestRateMode,
+            referralCode,
+            onBehalfOf
+        );
+
+        address debtToken;
+        if (onBehalfOf == address(this)) {
+            if (interestRateMode == 1)
+                debtToken = IPool(pool)
+                    .getReserveData(asset)
+                    .stableDebtTokenAddress;
+            else
+                debtToken = IPool(pool)
+                    .getReserveData(asset)
+                    .variableDebtTokenAddress;
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID].add(debtToken);
+        }
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function repay(
+        address pool,
+        address asset,
+        uint256 amount,
+        uint256 interestRateMode
+    ) external virtual returns (uint256 repaidAmount) {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+
+        IERC20(asset).forceApprove(pool, amount);
+        repaidAmount = IPool(pool).repay(
+            asset,
+            amount,
+            interestRateMode,
+            address(this)
+        );
+
+        address debtToken;
+        if (interestRateMode == 1)
+            debtToken = IPool(pool)
+                .getReserveData(asset)
+                .stableDebtTokenAddress;
+        else
+            debtToken = IPool(pool)
+                .getReserveData(asset)
+                .variableDebtTokenAddress;
+
+        MoreVaultsLib.removeTokenIfnecessary(
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID],
+            debtToken
+        );
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function repayWithATokens(
+        address pool,
+        address asset,
+        uint256 amount,
+        uint256 interestRateMode
+    ) external returns (uint256 repaidAmount) {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        address mToken = IPool(pool).getReserveData(asset).aTokenAddress;
+
+        IERC20(mToken).forceApprove(pool, amount);
+        repaidAmount = IPool(pool).repayWithATokens(
+            asset,
+            amount,
+            interestRateMode
+        );
+
+        address debtToken;
+        if (interestRateMode == 1)
+            debtToken = IPool(pool)
+                .getReserveData(asset)
+                .stableDebtTokenAddress;
+        else
+            debtToken = IPool(pool)
+                .getReserveData(asset)
+                .variableDebtTokenAddress;
+
+        MoreVaultsLib.removeTokenIfnecessary(
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID],
+            debtToken
+        );
+
+        MoreVaultsLib.removeTokenIfnecessary(ds.tokensHeld[MTOKENS_ID], mToken);
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function swapBorrowRateMode(
+        address pool,
+        address asset,
+        uint256 interestRateMode
+    ) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+
+        IPool(pool).swapBorrowRateMode(asset, interestRateMode);
+
+        address stableDebtToken = IPool(pool)
+            .getReserveData(asset)
+            .stableDebtTokenAddress;
+        address variableDebtToken = IPool(pool)
+            .getReserveData(asset)
+            .variableDebtTokenAddress;
+        if (interestRateMode == 1) {
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID].remove(variableDebtToken);
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID].add(stableDebtToken);
+        } else {
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID].remove(stableDebtToken);
+            ds.tokensHeld[MORE_DEBT_TOKENS_ID].add(variableDebtToken);
+        }
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function rebalanceStableBorrowRate(
+        address pool,
+        address asset,
+        address user
+    ) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        IPool(pool).rebalanceStableBorrowRate(asset, user);
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function setUserUseReserveAsCollateral(
+        address pool,
+        address asset,
+        bool useAsCollateral
+    ) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAssetAvailable(asset);
+        IPool(pool).setUserUseReserveAsCollateral(asset, useAsCollateral);
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function flashLoan(
+        address pool,
+        address receiverAddress,
+        address[] calldata assets,
+        uint256[] calldata amounts,
+        uint256[] calldata interestRateModes,
+        address onBehalfOf,
+        bytes calldata params,
+        uint16 referralCode
+    ) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAddressWhitelisted(receiverAddress);
+        IPool(pool).flashLoan(
+            receiverAddress,
+            assets,
+            amounts,
+            interestRateModes,
+            onBehalfOf,
+            params,
+            referralCode
+        );
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        address debtToken;
+        if (onBehalfOf == address(this)) {
+            for (uint256 i = 0; i < interestRateModes.length; ) {
+                if (interestRateModes[i] == 0) {
+                    unchecked {
+                        ++i;
+                    }
+                    continue;
+                }
+
+                MoreVaultsLib.validateAssetAvailable(assets[i]);
+                if (interestRateModes[i] == 1)
+                    debtToken = IPool(pool)
+                        .getReserveData(assets[i])
+                        .stableDebtTokenAddress;
+                else
+                    debtToken = IPool(pool)
+                        .getReserveData(assets[i])
+                        .variableDebtTokenAddress;
+                ds.tokensHeld[MORE_DEBT_TOKENS_ID].add(debtToken);
+                unchecked {
+                    ++i;
+                }
+            }
+        }
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function flashLoanSimple(
+        address pool,
+        address receiverAddress,
+        address asset,
+        uint256 amount,
+        bytes calldata params,
+        uint16 referralCode
+    ) public {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        MoreVaultsLib.validateAddressWhitelisted(receiverAddress);
+        MoreVaultsLib.validateAssetAvailable(asset);
+
+        IPool(pool).flashLoanSimple(
+            receiverAddress,
+            asset,
+            amount,
+            params,
+            referralCode
+        );
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function setUserEMode(address pool, uint8 categoryId) external {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(pool);
+        IPool(pool).setUserEMode(categoryId);
+    }
+
+    /**
+     * @inheritdoc IAaveV3Facet
+     */
+    function claimAllRewards(
+        address rewardsController,
+        address[] calldata assets
+    )
+        external
+        returns (address[] memory rewardsList, uint256[] memory claimedAmounts)
+    {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(rewardsController);
+        for (uint i; i < assets.length; ) {
+            MoreVaultsLib.validateAssetAvailable(assets[i]);
+            unchecked {
+                ++i;
+            }
+        }
+
+        return
+            IAaveV3RewardsController(rewardsController).claimAllRewards(
+                assets,
+                address(this)
+            );
+    }
+
+    function _withdraw(
+        address pool,
+        address asset,
+        uint256 amount,
+        address to
+    ) internal returns (uint256 withdrawnAmount) {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        address mToken = IPool(pool).getReserveData(asset).aTokenAddress;
+
+        IERC20(mToken).forceApprove(pool, amount);
+        withdrawnAmount = IPool(pool).withdraw(asset, amount, to);
+
+        MoreVaultsLib.removeTokenIfnecessary(ds.tokensHeld[MTOKENS_ID], mToken);
+    }
+}

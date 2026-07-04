@@ -1,0 +1,20 @@
+{
+  "component": "CCDMHost",
+  "main_contract": "CCDMHost",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x7671f415c76baa3ed21beb8e16a9c971934e0c41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

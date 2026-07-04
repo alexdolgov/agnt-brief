@@ -1,0 +1,18 @@
+{
+  "component": "RSTATE",
+  "main_contract": "RSTATE",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0f6cb7c6dd1c7144129cd64022b9ff537458094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

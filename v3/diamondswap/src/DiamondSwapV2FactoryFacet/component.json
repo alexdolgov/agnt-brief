@@ -1,0 +1,18 @@
+{
+  "component": "DiamondSwapV2FactoryFacet",
+  "main_contract": "DiamondSwapV2FactoryFacet",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9108ba9ff5570c31eb69fa039381e49dd036c150",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

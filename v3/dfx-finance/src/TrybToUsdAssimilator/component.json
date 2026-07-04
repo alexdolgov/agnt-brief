@@ -1,0 +1,18 @@
+{
+  "component": "TrybToUsdAssimilator",
+  "main_contract": "TrybToUsdAssimilator",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf3664456ae047f8f3e2c256b1a30780516c406f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

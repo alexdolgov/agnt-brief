@@ -1,0 +1,28 @@
+{
+  "component": "FeeConfig",
+  "main_contract": "FeeConfig",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR20%20Contracts%20%7C%20Renascence.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x845fbb4b3e2207bf03087b8b94d2430ab11088ee",
+      "is_proxy": true,
+      "implementation_address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
+      "liveness": "live"
+    }
+  ]
+}

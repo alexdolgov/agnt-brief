@@ -1,0 +1,26 @@
+{
+  "component": "Oracle_USDE_SPY_arbitrum",
+  "main_contract": "Oracle_USDE_SPY_arbitrum",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5d9b1b4aaceedc2ae4f0bc9332d7c7a1230078d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7e4f98217a085f1a06332edff805513b6ea79357",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

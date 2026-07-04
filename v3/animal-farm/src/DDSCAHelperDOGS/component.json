@@ -1,0 +1,18 @@
+{
+  "component": "DDSCAHelperDOGS",
+  "main_contract": "DDSCAHelperDOGS",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x461b882f03f341f6c4dc112c3b5d0226245c57ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

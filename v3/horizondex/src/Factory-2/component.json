@@ -1,0 +1,23 @@
+{
+  "component": "Factory-2",
+  "main_contract": "Factory",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Defimoonorg/Audit-Report/blob/main/Horizon-Dex.pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/a1c7f31238a7b0d3390f37d178d855cf284cdcee/HorizonDEX_SC%20Comparison%20Report_11.07.2023_SA-1644%20(2).pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/main/Horizon-Dex-Defimoon.pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/main/SmartContract_Audit_Solidproof_HorizonDEX.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

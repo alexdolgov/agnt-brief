@@ -1,0 +1,18 @@
+{
+  "component": "TeaREX",
+  "main_contract": "TeaREX",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xedf7732991b3de8f46fb97dcd4c5cdb28e6ad859",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

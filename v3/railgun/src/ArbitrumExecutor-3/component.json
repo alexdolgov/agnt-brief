@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrumExecutor-3",
+  "main_contract": "ArbitrumExecutor",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc480f68a3dcc3edd82134fab45c14a0fcf1da3cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

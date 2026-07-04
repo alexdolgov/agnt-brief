@@ -1,0 +1,36 @@
+{
+  "component": "MangroveVault",
+  "main_contract": "MangroveVault",
+  "source_file_count": 60,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mangrovedao/audits/blob/main/vaults/NM_0339_Mangrove_Vault_FINAL.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xd6cc0b43261a73209ccc135207b8ba98d2ba369e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x26a0e433f89317ca5585945198a5f0760c1dafa5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xda5ecd0eb8f9ba979a51a44a0c9ab57f928cce79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

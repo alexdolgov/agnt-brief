@@ -1,0 +1,18 @@
+{
+  "component": "AaveVoteStrategyToken",
+  "main_contract": "AaveVoteStrategyToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

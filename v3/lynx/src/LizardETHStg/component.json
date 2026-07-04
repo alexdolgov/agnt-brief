@@ -1,0 +1,18 @@
+{
+  "component": "LizardETHStg",
+  "main_contract": "LizardETHStg",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x425c296bacf5db485a67252a0bacc3816115ad17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

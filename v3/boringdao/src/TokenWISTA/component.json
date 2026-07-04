@@ -1,0 +1,26 @@
+{
+  "component": "TokenWISTA",
+  "main_contract": "TokenWISTA",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3720e3c827dab665383b32bc49766d2d24c1ed35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeae00113af330e6f67342b8298efc40232cd9f09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

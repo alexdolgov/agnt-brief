@@ -1,0 +1,18 @@
+{
+  "component": "UniclyXUnicVault",
+  "main_contract": "UniclyXUnicVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07306acccb482c8619e7ed119daa2bdf2b4389d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

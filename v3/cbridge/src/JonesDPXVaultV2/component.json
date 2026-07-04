@@ -1,0 +1,34 @@
+{
+  "component": "JonesDPXVaultV2",
+  "main_contract": "JonesDPXVaultV2",
+  "source_file_count": 17,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1c8db76703ad7e33551e6e022bf429fd857612ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x211c70f7783fb4018c92bececd92179aecf7c221",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba3386d94fc593a1e9a5b57ff02524396080f7b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

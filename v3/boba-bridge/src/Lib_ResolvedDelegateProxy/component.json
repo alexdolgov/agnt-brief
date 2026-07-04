@@ -1,0 +1,26 @@
+{
+  "component": "Lib_ResolvedDelegateProxy",
+  "main_contract": "Lib_ResolvedDelegateProxy",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x841979bbc06be7bfe28d9faddac1a73e1fb495c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc891f466e53f40603250837282eae4e22ad5b088",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

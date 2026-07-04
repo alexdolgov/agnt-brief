@@ -1,0 +1,18 @@
+{
+  "component": "OracleLens",
+  "main_contract": "OracleLens",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x0d5e954c12b13d4f2fea583cda3c5a50253dc1a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

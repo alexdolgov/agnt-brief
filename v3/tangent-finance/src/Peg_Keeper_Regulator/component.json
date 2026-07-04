@@ -1,0 +1,18 @@
+{
+  "component": "Peg_Keeper_Regulator",
+  "main_contract": "Peg Keeper Regulator",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x887706612730b7a227f3bffd8c9a6e6c3cb3f19e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

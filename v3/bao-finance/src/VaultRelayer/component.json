@@ -1,0 +1,18 @@
+{
+  "component": "VaultRelayer",
+  "main_contract": "VaultRelayer",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x31e5417f609fb4a60b2a4ce53833623657d92546",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "MultipleVersionRollupVerifier",
+  "main_contract": "MultipleVersionRollupVerifier",
+  "source_file_count": 10,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ea29d57dac237152d878758bae4beb2668998f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4cea3e866e7c57fd75cb0ca3e9f5f1151d4ead3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2ab526e5c5491f10fc05a55f064bf9f7cef32a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf94afbd9370e25dd6ca557d5d67634aefda2416b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

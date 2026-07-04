@@ -1,0 +1,18 @@
+{
+  "component": "BancorGovernance-2",
+  "main_contract": "BancorGovernance",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x892f481bd6e9d7d26ae365211d9b45175d5d00e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

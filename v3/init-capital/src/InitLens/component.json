@@ -1,0 +1,18 @@
+{
+  "component": "InitLens",
+  "main_contract": "InitLens",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x56fba2cc045c02d7adae5a9dfdce795900b2860e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

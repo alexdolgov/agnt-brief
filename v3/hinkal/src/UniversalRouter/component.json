@@ -1,0 +1,18 @@
+{
+  "component": "UniversalRouter",
+  "main_contract": "UniversalRouter",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0b3ba5b030b95e5d861448d77db7bee3403f12d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

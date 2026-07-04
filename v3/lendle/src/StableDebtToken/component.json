@@ -1,0 +1,76 @@
+{
+  "component": "StableDebtToken",
+  "main_contract": "StableDebtToken",
+  "source_file_count": 19,
+  "deployment_count": 8,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/GeistProtocol"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x17dd84c6a3c02af488312122f7749e5d104d58a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x18f6e6f3af6c49766613ebf749441d6407dd381d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x2f1c30f830c69f6309a9db0da8f23456528e7736",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x4b09680c61bb942243e808657dc3fd41cfac04e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x743e9e5d0db0073a263ab865929173ba303b7c74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x783e5ac41a39526dc742c6afa458f233fbf008f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xd8a36c0e6148ffb374c6726d4c60bbd55b745407",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xf74481eea2aa5d9b6b4ee3281f49c03787b40291",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

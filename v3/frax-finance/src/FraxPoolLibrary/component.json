@@ -1,0 +1,18 @@
+{
+  "component": "FraxPoolLibrary",
+  "main_contract": "FraxPoolLibrary",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa11b9c88e4bf89ad9a70f5d408ffb5a6d5feb6a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

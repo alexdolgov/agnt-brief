@@ -1,0 +1,18 @@
+{
+  "component": "IntermediaryOriginalToken",
+  "main_contract": "IntermediaryOriginalToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6521c50810f0d882b2c64a235805d3f5241857dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UsdtVariableUtilisationRatesCalculator",
+  "main_contract": "UsdtVariableUtilisationRatesCalculator",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xddc0b0319984ce1ff36192dc90ae0a7167c5ae9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

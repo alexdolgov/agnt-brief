@@ -1,0 +1,18 @@
+{
+  "component": "AtomicBatcher",
+  "main_contract": "AtomicBatcher",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35c7171db2bd8164a36c3ae93ef9d4fb4cc08777",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

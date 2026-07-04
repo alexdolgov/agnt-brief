@@ -1,0 +1,22 @@
+{
+  "component": "RewardToken",
+  "main_contract": "RewardToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/Haechi-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/PeckShield-Harvest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa0246c9032bc3a600820415ae600c6388619a14d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

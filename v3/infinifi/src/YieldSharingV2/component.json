@@ -1,0 +1,26 @@
+{
+  "component": "YieldSharingV2",
+  "main_contract": "YieldSharingV2",
+  "source_file_count": 55,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x1330902050db4edac0d9d8ca33fdab5dbe986c9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x9b5ae92eba3c383be073e3ff94613b2c33851282",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

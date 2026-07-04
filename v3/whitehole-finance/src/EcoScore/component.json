@@ -1,0 +1,18 @@
+{
+  "component": "EcoScore",
+  "main_contract": "EcoScore",
+  "source_file_count": 136,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaa4dd1b93954637b16e9917a9c7431b478345178",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

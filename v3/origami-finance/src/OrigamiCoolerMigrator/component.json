@@ -1,0 +1,20 @@
+{
+  "component": "OrigamiCoolerMigrator",
+  "main_contract": "OrigamiCoolerMigrator",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Electisec_hOHM_Migrator.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b3441b121cadba4af1e92e9dd9ed3c0aa415e26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "StandardPoolConverter",
+  "main_contract": "StandardPoolConverter",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x55069dd523b39933eb872f6a34307e71ae27f6e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ba02ef0c81a02d5bfac230c8085f60b9330eb1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "elTokenManager",
+  "main_contract": "elTokenManager",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x30e118c1a6f1c83b4fab64f6a6c9150f0b2f480c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4046c4a45b0472fbce61965c7b84e05fe90a40c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

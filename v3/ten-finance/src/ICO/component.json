@@ -1,0 +1,18 @@
+{
+  "component": "ICO",
+  "main_contract": "ICO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x932d6321deb56e97b34b3d43af5bc07b785d881b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

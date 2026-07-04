@@ -1,0 +1,18 @@
+{
+  "component": "iTokenAggregatorModel",
+  "main_contract": "iTokenAggregatorModel",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8386145dd223d7f23a14490079d40627b252eea4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

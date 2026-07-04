@@ -1,0 +1,26 @@
+{
+  "component": "Quoter",
+  "main_contract": "Quoter",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f6c71f41232a1aeae2623c4ac7b111c38406834",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x077f89c0fc4259b8e2abc0fe6eec655eb2da87d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

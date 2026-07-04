@@ -1,0 +1,26 @@
+{
+  "component": "AlgebraCommunityVault",
+  "main_contract": "AlgebraCommunityVault",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3799d0bf541266b23c22b70d23f74bf886220ddd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x88284d053f30673598688c544294457e19595150",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

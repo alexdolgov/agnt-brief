@@ -1,0 +1,18 @@
+{
+  "component": "ExchangeNFT",
+  "main_contract": "ExchangeNFT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0bd996f94b9dd04c8e44e535b4f0a6ed22fd0d19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

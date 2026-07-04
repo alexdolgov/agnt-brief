@@ -1,0 +1,18 @@
+{
+  "component": "StakeManager",
+  "main_contract": "StakeManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6c21e50fb9c592d5427d790fe424ae4acc24338f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

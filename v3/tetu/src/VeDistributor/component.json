@@ -1,0 +1,18 @@
+{
+  "component": "VeDistributor",
+  "main_contract": "VeDistributor",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2c4599a079d029f0304b284f4696d009c0281806",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

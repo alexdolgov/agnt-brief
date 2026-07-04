@@ -1,0 +1,18 @@
+{
+  "component": "GaugeFactory",
+  "main_contract": "GaugeFactory",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xd766d9da469c4a7d325b66ffcf33139650c4a200",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "TSTokenClaimer_Suplementory",
+  "main_contract": "TSTokenClaimer_Suplementory",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d4acc81369c65d77648762f2dbe846b328d6a4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb329c153339db8075cdf55b8c82706f3a8708a27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

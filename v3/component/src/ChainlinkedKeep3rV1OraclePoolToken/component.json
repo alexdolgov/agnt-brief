@@ -1,0 +1,18 @@
+{
+  "component": "ChainlinkedKeep3rV1OraclePoolToken",
+  "main_contract": "ChainlinkedKeep3rV1OraclePoolToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b5f4d33845d546c76dfb624ef002cb3a58391e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

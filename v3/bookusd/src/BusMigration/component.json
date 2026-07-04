@@ -1,0 +1,18 @@
+{
+  "component": "BusMigration",
+  "main_contract": "BusMigration",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfa1fe91a6ebcf52947b1776a11ce1bc6e8882a40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

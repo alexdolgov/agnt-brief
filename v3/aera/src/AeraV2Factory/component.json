@@ -1,0 +1,42 @@
+{
+  "component": "AeraV2Factory",
+  "main_contract": "AeraV2Factory",
+  "source_file_count": 32,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x101aee99652f8b87c3a6c76a270da045c8cb8d82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x49b428ea1cd536e7d103e9729ea14400785e30ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa1c908cf7371047649dfca9ece01327dc6db3094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdd65ca0eda7383e4ff633d58343dbbc79e832ceb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PermittedERC20s",
+  "main_contract": "PermittedERC20s",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb1c43d8208ee1c3b6f9218796970bb332fff57ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5457877200e4ed4c07acee8b274b0a65c042d0fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

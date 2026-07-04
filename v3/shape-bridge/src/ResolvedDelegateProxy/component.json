@@ -1,0 +1,18 @@
+{
+  "component": "ResolvedDelegateProxy",
+  "main_contract": "ResolvedDelegateProxy",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b18602877181c3cb72c687e2a771e123a3788e3",
+      "is_proxy": true,
+      "implementation_address": "0xaefea5d2dd3b9a05a67fbd5e7c06c19151a7fe50",
+      "liveness": "live"
+    }
+  ]
+}

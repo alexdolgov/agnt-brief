@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityPool-10",
+  "main_contract": "LiquidityPool",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd27a57bb8f9b7ec7862df87f5143146c161f5a8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

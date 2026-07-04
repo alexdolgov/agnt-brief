@@ -1,0 +1,18 @@
+{
+  "component": "ClearingHouse",
+  "main_contract": "ClearingHouse",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d7459241c71cc840d95f98c937a8687be2dc95c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

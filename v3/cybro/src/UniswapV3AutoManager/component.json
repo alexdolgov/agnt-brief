@@ -1,0 +1,20 @@
+{
+  "component": "UniswapV3AutoManager",
+  "main_contract": "UniswapV3AutoManager",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pessimistic-io/audits/blob/a27871ebd7f6e36d0f61604a8edf9e53be096473/CYBRO%20Liquidity%20manager%20Security%20Analysis%20by%20Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2ce2701ad396982ef0bf2efb4d03a4d7c638574c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

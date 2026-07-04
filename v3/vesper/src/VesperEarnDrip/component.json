@@ -1,0 +1,18 @@
+{
+  "component": "VesperEarnDrip",
+  "main_contract": "VesperEarnDrip",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x339b20136282a9de3a6fc448b5ba9534116b3b08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

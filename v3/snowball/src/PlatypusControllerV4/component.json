@@ -1,0 +1,18 @@
+{
+  "component": "PlatypusControllerV4",
+  "main_contract": "PlatypusControllerV4",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x14559fb4d15cf8dcbc35b7edd1215d56c0468202",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

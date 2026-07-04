@@ -1,0 +1,26 @@
+{
+  "component": "IncubatorChefFactory",
+  "main_contract": "IncubatorChefFactory",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4fd8435749d0015411f85ef4b14ca53dd01ad936",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x80aaac94ffd144c3fda7fab5f2e7db70e1e9d4b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

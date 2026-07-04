@@ -1,0 +1,18 @@
+{
+  "component": "HelperFacet",
+  "main_contract": "HelperFacet",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32bcb5b172badd45cfbbe4504d0e21ef27426b4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SwETHPriceOracle",
+  "main_contract": "SwETHPriceOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7ab07d7eeb29031e7d2ac083bf0d2ef0e415334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

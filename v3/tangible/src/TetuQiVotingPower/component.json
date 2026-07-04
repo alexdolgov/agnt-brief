@@ -1,0 +1,18 @@
+{
+  "component": "TetuQiVotingPower",
+  "main_contract": "TetuQiVotingPower",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xda67dbab383a7ce922320a48d515f0fd567aac08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

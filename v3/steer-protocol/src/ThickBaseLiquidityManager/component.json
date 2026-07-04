@@ -1,0 +1,18 @@
+{
+  "component": "ThickBaseLiquidityManager",
+  "main_contract": "ThickBaseLiquidityManager",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcb77e4c30d92c8b959811e99213625c7b9490b96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BDeployer",
+  "main_contract": "BDeployer",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31864bc58a47a4fc8782b4135873788e876de9eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

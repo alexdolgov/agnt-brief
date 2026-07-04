@@ -1,0 +1,26 @@
+{
+  "component": "OVM_L1CrossDomainMessenger",
+  "main_contract": "OVM_L1CrossDomainMessenger",
+  "source_file_count": 105,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25109139f8c4f9f7b4e4d5452a067feae3a537f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae6b041f0550edef61a70f76f89c77b2b1ef38fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

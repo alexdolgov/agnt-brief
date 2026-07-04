@@ -1,0 +1,74 @@
+{
+  "component": "MarbleMinter",
+  "main_contract": "MarbleMinter",
+  "source_file_count": 33,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x109ddd9af402e850c1e6a2979f50b0024020faf7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x13f8e397c12b31accfceac012e8a06dc35dfd16c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x2a78f35726751d22e172dd755cfc051f352affbf",
+      "is_proxy": true,
+      "implementation_address": "0x13f8e397c12b31accfceac012e8a06dc35dfd16c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x2ee15babbeaa6d6e6cae022b7b4b96ad2585c03a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x57551e91b4ad873847b734ad030e573a315a07db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9238327c2a4a1af154c3398f0eee0a3a18298221",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb5e55016a32908ec5a342f1b26b3c855bc9364c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xeb1dbef7e571b79732878cd50d6f95a1f218bd7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

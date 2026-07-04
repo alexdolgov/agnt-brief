@@ -1,0 +1,18 @@
+{
+  "component": "GnosisSafeL2",
+  "main_contract": "GnosisSafeL2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xddc76a37c6a6f85caec3747aa4842cf721bfe334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

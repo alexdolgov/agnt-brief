@@ -1,0 +1,18 @@
+{
+  "component": "MorphoSupplyFuse",
+  "main_contract": "MorphoSupplyFuse",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd08cb606cee700628e55b0b0159ad65421e6c8df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OFTCore",
+  "main_contract": "OFTCore",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfe9e30182b28a0eb36a222bd328f6a88e1c882a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

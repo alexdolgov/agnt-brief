@@ -1,0 +1,18 @@
+{
+  "component": "FASTChef",
+  "main_contract": "FASTChef",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2582ffea547509472b3f12d94a558bb83a48c007",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

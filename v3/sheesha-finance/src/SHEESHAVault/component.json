@@ -1,0 +1,18 @@
+{
+  "component": "SHEESHAVault",
+  "main_contract": "SHEESHAVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

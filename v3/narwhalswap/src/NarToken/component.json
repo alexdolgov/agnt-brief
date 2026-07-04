@@ -1,0 +1,18 @@
+{
+  "component": "NarToken",
+  "main_contract": "NarToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa1303e6199b319a891b79685f0537d289af1fc83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

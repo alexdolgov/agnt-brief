@@ -1,0 +1,18 @@
+{
+  "component": "DFYNToken",
+  "main_contract": "DFYNToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9695e0114e12c0d3a3636fab5a18e6b737529023",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

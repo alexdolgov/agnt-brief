@@ -1,0 +1,18 @@
+{
+  "component": "Redeemer",
+  "main_contract": "Redeemer",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e45b65cdd3712fef0024d063d6574a609985e59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

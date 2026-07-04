@@ -1,0 +1,18 @@
+{
+  "component": "HLPStaking",
+  "main_contract": "HLPStaking",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x008771d9c0f0bdb65dfb9f9f81733b57c3e73b46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "USDT",
+  "main_contract": "USDT",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x201eba5cc46d216ce6dc03f6a759e8e766e956ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

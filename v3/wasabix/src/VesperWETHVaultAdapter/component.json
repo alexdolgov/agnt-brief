@@ -1,0 +1,18 @@
+{
+  "component": "VesperWETHVaultAdapter",
+  "main_contract": "VesperWETHVaultAdapter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b276d9b1cbdf7bc9556635059c6ce672e6f4052",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

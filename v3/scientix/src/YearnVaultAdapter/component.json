@@ -1,0 +1,18 @@
+{
+  "component": "YearnVaultAdapter",
+  "main_contract": "YearnVaultAdapter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7da4b286b24b85ba971f5f5f4375f71e15b55e15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "component": "PolygonZkEvmAdapter01",
+  "main_contract": "PolygonZkEvmAdapter01",
+  "source_file_count": 17,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3b75cd9f8d2f88127655faa5bb3686baf4097979",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x963aed2289863fcab0880b0d6dfd56404b550ec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9f77bb28e97f093aa6cbe37ce095c18605d98af2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdf07baa012fde38fda20a49e1d9e297b0d08fa4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe6d078fc1220c72be812df6030e734e52bf4c570",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

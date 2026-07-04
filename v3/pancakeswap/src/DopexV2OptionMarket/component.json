@@ -1,0 +1,18 @@
+{
+  "component": "DopexV2OptionMarket",
+  "main_contract": "DopexV2OptionMarket",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3808e8c983023a125ffe2714e2a703a3bf02be0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

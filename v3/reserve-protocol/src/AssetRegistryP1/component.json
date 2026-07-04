@@ -1,0 +1,50 @@
+{
+  "component": "AssetRegistryP1",
+  "main_contract": "AssetRegistryP1",
+  "source_file_count": 62,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x159af360d99b3dd6c4a47cd08b730ff7c9d113cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2837f952c1fd773b3ce02631a90f95e4b9ce2cf7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x29f2eb4a0d3dc211bb488e9abe12740cafbcc49c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x63be601cde1121c987b885cc319b44e0a9d707a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xabd7e7a5c846ed497681a590febed99e7157b6a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

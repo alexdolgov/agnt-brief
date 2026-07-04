@@ -1,0 +1,50 @@
+{
+  "component": "TripleSlopeRateModel",
+  "main_contract": "TripleSlopeRateModel",
+  "source_file_count": 5,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x023ca9c6a96151d149b7f54cd0d904f80a6d1ff9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f18b46ffb6dfc1a4a2c2fdbc4de48dc741c7ef4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8122e8585724bfd0a5964847fae47c949b90b899",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd68f6c83e160d86bf1fc0120a0d96a74cf291bff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeb689084bd7990604eef53376d269f87cb12ca63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

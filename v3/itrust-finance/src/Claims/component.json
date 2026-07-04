@@ -1,0 +1,18 @@
+{
+  "component": "Claims",
+  "main_contract": "Claims",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x58676340f458b36997608672be6548c92ce50714",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

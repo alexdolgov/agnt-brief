@@ -1,0 +1,18 @@
+{
+  "component": "DssJanuary31Spell",
+  "main_contract": "DssJanuary31Spell",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x48916a2b11fa7a895426eedf9acf2d70523b1677",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MultiSigWallet",
+  "main_contract": "MultiSigWallet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb0732cf1e3924f51f621b7479b793b8613e6e8b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

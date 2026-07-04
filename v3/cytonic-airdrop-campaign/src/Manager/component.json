@@ -1,0 +1,26 @@
+{
+  "component": "Manager",
+  "main_contract": "Manager",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x2cf5900d1f47f49ce8d0d08718b88a84db075560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x6523844d7720871bd7d6d82d6af6efc8b1f1fd0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

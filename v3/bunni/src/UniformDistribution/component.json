@@ -1,0 +1,18 @@
+{
+  "component": "UniformDistribution",
+  "main_contract": "UniformDistribution",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00000000d5248262c18c5a8c706b2a3e740b8760",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

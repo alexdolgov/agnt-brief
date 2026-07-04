@@ -1,0 +1,18 @@
+{
+  "component": "Curve",
+  "main_contract": "Curve",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20e1d8daf58358cf11be5616946e1df55f1ef8b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

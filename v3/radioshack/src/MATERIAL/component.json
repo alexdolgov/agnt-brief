@@ -1,0 +1,18 @@
+{
+  "component": "MATERIAL",
+  "main_contract": "MATERIAL",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0effba87d0507876f3c669b611225a031941b936",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

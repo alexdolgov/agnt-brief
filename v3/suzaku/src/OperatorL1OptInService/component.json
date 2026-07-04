@@ -1,0 +1,18 @@
+{
+  "component": "OperatorL1OptInService",
+  "main_contract": "OperatorL1OptInService",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x48a990a31ec2b994a54f248bfd560954991fa574",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

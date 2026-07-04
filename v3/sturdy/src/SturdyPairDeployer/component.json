@@ -1,0 +1,18 @@
+{
+  "component": "SturdyPairDeployer",
+  "main_contract": "SturdyPairDeployer",
+  "source_file_count": 125,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x298d679cb18dece7271f56589859bc4da6c91f87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BatchAuction-2",
+  "main_contract": "BatchAuction",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7603a35af5cf10b113f167d424eb75bb7062c8ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

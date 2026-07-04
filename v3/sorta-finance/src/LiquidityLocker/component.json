@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityLocker",
+  "main_contract": "LiquidityLocker",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0be77631d392b8079967c3e94ddb32f9cea6d6bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

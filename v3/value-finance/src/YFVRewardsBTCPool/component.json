@@ -1,0 +1,18 @@
+{
+  "component": "YFVRewardsBTCPool",
+  "main_contract": "YFVRewardsBTCPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfbde07329ffc9ec1b70f639ad388b94532b5e063",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "HyperdriveTarget0-2",
+  "main_contract": "HyperdriveTarget0",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1dcac79c73ca892d5872e5d8cb3ff43db0c81289",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DualAggregator",
+  "main_contract": "DualAggregator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1eeb875dd64f6313ff315679791ae1a27c19a5df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

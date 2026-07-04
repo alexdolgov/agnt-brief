@@ -1,0 +1,18 @@
+{
+  "component": "DepositWrapper",
+  "main_contract": "DepositWrapper",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x644195021278674bd8f7574e17018d32d8e75a98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

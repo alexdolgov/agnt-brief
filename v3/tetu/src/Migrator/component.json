@@ -1,0 +1,18 @@
+{
+  "component": "Migrator",
+  "main_contract": "Migrator",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0b265480f314c8672ac9325ade066793c20a11b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

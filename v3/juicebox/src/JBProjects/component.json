@@ -1,0 +1,21 @@
+{
+  "component": "JBProjects",
+  "main_contract": "JBProjects",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf",
+    "https://github.com/jbx-protocol/juice-contracts-v2/blob/main/security/postmortem/5.24.2022.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x885f707efa18d2cb12f05a3a8eba6b4b26c8c1d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AltoLeverage",
+  "main_contract": "AltoLeverage",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e64cc242fa7a7a294efc29b0ca08daa6bf98a33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "component": "ProviderRegistry",
+  "main_contract": "ProviderRegistry",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%201%20%7C%20Renascence.pdf",
+    "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%202%20%7C%20Renascence.pdf",
+    "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%203%20%7C%20Renascence.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xde819aaee474626e3f34ef0263373357e5a6c71b",
+      "is_proxy": true,
+      "implementation_address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
+      "liveness": "live"
+    }
+  ]
+}

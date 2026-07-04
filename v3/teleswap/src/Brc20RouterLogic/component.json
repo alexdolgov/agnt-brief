@@ -1,0 +1,26 @@
+{
+  "component": "Brc20RouterLogic",
+  "main_contract": "Brc20RouterLogic",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3edec6617e62f055edc3ecbd410ba39e7c7adc17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x88641b535a36dcd403fa102295c59a154c6818f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

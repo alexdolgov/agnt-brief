@@ -1,0 +1,21 @@
+{
+  "component": "SpokeConnector-5",
+  "main_contract": "SpokeConnector",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/ConnextNxtp-Spearbit-Security-Review.pdf",
+    "https://github.com/connext/audits/blob/main/amarok/Connext_A-1__Macro_Audits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2056c11b071ae4cdd55007136c2493f3d4c1b678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

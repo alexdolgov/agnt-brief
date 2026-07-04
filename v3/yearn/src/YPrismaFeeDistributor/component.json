@@ -1,0 +1,18 @@
+{
+  "component": "YPrismaFeeDistributor",
+  "main_contract": "YPrismaFeeDistributor",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d385beeb7b325f4a5c0a9507fd8a1071b232e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

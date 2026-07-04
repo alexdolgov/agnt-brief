@@ -1,0 +1,18 @@
+{
+  "component": "InstaVaultImplementation",
+  "main_contract": "InstaVaultImplementation",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03948802c3041219a6fcec3e19aeabe6f859a703",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

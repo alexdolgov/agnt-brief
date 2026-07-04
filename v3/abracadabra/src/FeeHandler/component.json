@@ -1,0 +1,26 @@
+{
+  "component": "FeeHandler",
+  "main_contract": "FeeHandler",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0b79a169bf618bdd2a73698fc8ec4a451182a012",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6efdd3f8d372740ceb43b3a12f5c56f60be8f491",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

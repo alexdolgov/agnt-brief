@@ -1,0 +1,82 @@
+{
+  "component": "CurateProxy",
+  "main_contract": "CurateProxy",
+  "source_file_count": 6,
+  "deployment_count": 9,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0f0797c62a6fbd2f0effedef3de7324449e9b6d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x1b44e434976f42a6de60706fb484eb00e0371a65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x30f3cd11fadf16fc95d09fb538a8dc3cad662283",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x45b01141ed201a37cb83b04add7d85ba0014d37c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5a53e5cea02df6db9ed57b9fd34b8f0badc0f5e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5dab82561c4140c43667c79ea56f8b38c2f94bec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6767bcc090cc6208e01805d66b96a5d8bde386ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc0aa0d435b07a0d9d6219cdc68db215314fa5a33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd3bccdc9303fd760141fda7b137591d04725327b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

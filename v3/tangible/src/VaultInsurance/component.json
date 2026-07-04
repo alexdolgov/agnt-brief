@@ -1,0 +1,50 @@
+{
+  "component": "VaultInsurance",
+  "main_contract": "VaultInsurance",
+  "source_file_count": 11,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7ccccb3e607d563fb1669d0a9bd74f667b40b17b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaae40fc686d6ac48e2ef718f878931fa7ec4f98a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdc75b7351cd6d80e8454f411ae7f3b459f0feeda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xed949d00658f2bccbcb3fa6d19176310b592680b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf3703f1f80b3b654e34550f50c7f8a88054b6ea8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

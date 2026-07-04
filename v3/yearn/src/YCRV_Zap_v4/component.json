@@ -1,0 +1,18 @@
+{
+  "component": "YCRV_Zap_v4",
+  "main_contract": "YCRV Zap v4",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ec30e8f98dcf08b29b02f46082ed05f88b23839",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

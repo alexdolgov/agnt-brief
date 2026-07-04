@@ -1,0 +1,18 @@
+{
+  "component": "DAO",
+  "main_contract": "DAO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5495a8d85ee18cfd0d2816993658d88af08bef4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

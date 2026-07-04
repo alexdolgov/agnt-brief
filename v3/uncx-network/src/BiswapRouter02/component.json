@@ -1,0 +1,18 @@
+{
+  "component": "BiswapRouter02",
+  "main_contract": "BiswapRouter02",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a6d8ca21d1cf76f653a67577fa0d27453350dd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

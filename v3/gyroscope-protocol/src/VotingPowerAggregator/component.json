@@ -1,0 +1,18 @@
+{
+  "component": "VotingPowerAggregator",
+  "main_contract": "VotingPowerAggregator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa015a8c96f45758614c4077813dc863a74cb1487",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

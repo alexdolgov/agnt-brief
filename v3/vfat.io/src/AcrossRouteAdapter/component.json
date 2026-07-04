@@ -1,0 +1,26 @@
+{
+  "component": "AcrossRouteAdapter",
+  "main_contract": "AcrossRouteAdapter",
+  "source_file_count": 49,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0bd719d8ab0e9d36128b0f41f7e2ca75a69a4b57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x82c544c6866cb7d9285813e90c10e0cfcf30e939",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

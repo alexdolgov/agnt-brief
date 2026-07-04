@@ -1,0 +1,20 @@
+{
+  "component": "ReferralManager",
+  "main_contract": "ReferralManager",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/EZManagerCL/EZManagerContracts/blob/master/audits/Valves_v1_5.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1b5f42003e77ae9389a1688c64441ca5cbebfd35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

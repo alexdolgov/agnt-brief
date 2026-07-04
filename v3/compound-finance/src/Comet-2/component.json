@@ -1,0 +1,28 @@
+{
+  "component": "Comet-2",
+  "main_contract": "Comet",
+  "source_file_count": 149,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/compound-iii-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04eab657b065238aa67c3879f4d71bfdd09c2796",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x311930889c61e141e15a61d11be974d749390e7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

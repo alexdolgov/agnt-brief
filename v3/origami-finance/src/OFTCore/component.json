@@ -1,0 +1,22 @@
+{
+  "component": "OFTCore",
+  "main_contract": "OFTCore",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Electisec_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Nethermind_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Panprog_hOHM.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce39906a35de2ac81f0fd0ebd18fd3f04383932a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

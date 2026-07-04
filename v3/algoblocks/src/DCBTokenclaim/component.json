@@ -1,0 +1,26 @@
+{
+  "component": "DCBTokenclaim",
+  "main_contract": "DCBTokenclaim",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x171e8d4a44644cb88aab51a9fb848d5f5d3a025f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa03a930f8d44c015e834a4cde73593bd1a076570",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

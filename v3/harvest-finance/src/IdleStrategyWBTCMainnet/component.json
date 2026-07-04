@@ -1,0 +1,42 @@
+{
+  "component": "IdleStrategyWBTCMainnet",
+  "main_contract": "IdleStrategyWBTCMainnet",
+  "source_file_count": 23,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2f54ecc31757b6c068c6c3caef65c35485d651a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c361587e264cfb8c9a07bb0ca9d18976ea3648a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6561e55a43545bcc9eae3202f3075b3dc5283e90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8e9db02262d37233442932e1a6626d88c649c6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

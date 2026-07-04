@@ -1,0 +1,26 @@
+{
+  "component": "FixedRebalanceExtension",
+  "main_contract": "FixedRebalanceExtension",
+  "source_file_count": 237,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f98cbb7ac52fa5ef3660b7ab34e03398b48efbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fe734a1f107b7d46d73b8c2383d688f5626ad84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

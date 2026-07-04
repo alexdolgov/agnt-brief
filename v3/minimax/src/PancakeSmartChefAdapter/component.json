@@ -1,0 +1,34 @@
+{
+  "component": "PancakeSmartChefAdapter",
+  "main_contract": "PancakeSmartChefAdapter",
+  "source_file_count": 2,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8389b327c2f6ac17469d176a976d63047e35bced",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8591b0bb2cf8b7b1fffb284e05802281f60c3217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd6d57250946c08df1ec3461b44f327ac26a0db71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

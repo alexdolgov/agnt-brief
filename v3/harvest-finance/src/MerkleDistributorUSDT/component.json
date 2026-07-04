@@ -1,0 +1,26 @@
+{
+  "component": "MerkleDistributorUSDT",
+  "main_contract": "MerkleDistributorUSDT",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a7b568729113ab29298d3fae7d46f107637c498",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba26510bd3a39d8352cd4d03248fe33aff580568",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

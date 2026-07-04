@@ -1,0 +1,26 @@
+{
+  "component": "DepositPool",
+  "main_contract": "DepositPool",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfe606eec8eb8e6ad8e8654968a15650f5331a023",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

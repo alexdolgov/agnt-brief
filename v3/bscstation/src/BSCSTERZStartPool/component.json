@@ -1,0 +1,26 @@
+{
+  "component": "BSCSTERZStartPool",
+  "main_contract": "BSCSTERZStartPool",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x60bdaaa6707c90f6c08532727c8af0e30afeda65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9274a9cceee8e4af9607680c038741c87b381e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

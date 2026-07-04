@@ -1,0 +1,18 @@
+{
+  "component": "StakeDAOLevSwapperLUSDv3CRV",
+  "main_contract": "StakeDAOLevSwapperLUSDv3CRV",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x633ba1eedbe63a779eca6a1ebe86908ac2710d0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

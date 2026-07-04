@@ -1,0 +1,42 @@
+{
+  "component": "ERC4626NonLPSpotEthOracle",
+  "main_contract": "ERC4626NonLPSpotEthOracle",
+  "source_file_count": 71,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0004042f1cfaef8bd011e73d99f85a44b0aadf01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13da01bae2ceba771033e68cd2e782da56fc380f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc840bd95cff6a76c2ecae1f49501e481b8a86cf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd50e56c119fecffb43002e524ad10cf8036b0898",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

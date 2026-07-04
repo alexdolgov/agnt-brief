@@ -1,0 +1,18 @@
+{
+  "component": "sAVAXAsset",
+  "main_contract": "sAVAXAsset",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc096ff2606152ed2a06dd12f15a3c0466aa5a9fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

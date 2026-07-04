@@ -1,0 +1,20 @@
+{
+  "component": "SafeguardPool-2",
+  "main_contract": "SafeguardPool",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.chainsecurity.com/security-audit/swaap-finance-safeguardpool"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4342b77fe3417bcb09d0a4383301b0dc733c755b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

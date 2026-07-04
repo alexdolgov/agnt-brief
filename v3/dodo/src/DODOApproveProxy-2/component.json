@@ -1,0 +1,18 @@
+{
+  "component": "DODOApproveProxy-2",
+  "main_contract": "DODOApproveProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x409e377a7affb1fd3369cfc24880ad58895d1dd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

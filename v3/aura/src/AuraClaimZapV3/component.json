@@ -1,0 +1,18 @@
+{
+  "component": "AuraClaimZapV3",
+  "main_contract": "AuraClaimZapV3",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bc4d50d8785587f0d44f4296408e20f592ae347",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

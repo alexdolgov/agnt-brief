@@ -1,0 +1,18 @@
+{
+  "component": "SpadeVault",
+  "main_contract": "SpadeVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8e6c2827d234b16c3b496ded77a0f6b7e3cf27ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

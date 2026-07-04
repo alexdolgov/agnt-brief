@@ -1,0 +1,18 @@
+{
+  "component": "PGT",
+  "main_contract": "PGT",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaacf6c655365229b96a81670b862546b75b40f35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

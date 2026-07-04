@@ -1,0 +1,18 @@
+{
+  "component": "CollateralVaultRegistry",
+  "main_contract": "CollateralVaultRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xce997ac8fd015a2b3c3950cb33e9e6bb962e35e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

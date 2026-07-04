@@ -1,0 +1,18 @@
+{
+  "component": "CurveV1StableEthOracle",
+  "main_contract": "CurveV1StableEthOracle",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde695e7f9958725ba78a18fa2191bfd980e4bf31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

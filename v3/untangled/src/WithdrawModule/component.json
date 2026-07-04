@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawModule",
+  "main_contract": "WithdrawModule",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa40173bfd57178e748b41ff0d18080b8c18393a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

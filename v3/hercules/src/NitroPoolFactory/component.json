@@ -1,0 +1,20 @@
+{
+  "component": "NitroPoolFactory",
+  "main_contract": "NitroPoolFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HashEx/public_audits/blob/master/Fringe%20Finance/Fringe%20Finance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x929cf42e62fd2142a1b853bc6fd15d4765b78989",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

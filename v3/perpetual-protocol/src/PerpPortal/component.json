@@ -1,0 +1,18 @@
+{
+  "component": "PerpPortal",
+  "main_contract": "PerpPortal",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6ab84fc005d7b5d0899b621344634031a2ed8931",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

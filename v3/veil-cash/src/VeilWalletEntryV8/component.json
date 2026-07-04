@@ -1,0 +1,18 @@
+{
+  "component": "VeilWalletEntryV8",
+  "main_contract": "VeilWalletEntryV8",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6db666f61602307a36fb56a595acdc492f923bfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

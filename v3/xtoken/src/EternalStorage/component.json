@@ -1,0 +1,18 @@
+{
+  "component": "EternalStorage",
+  "main_contract": "EternalStorage",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f7c200c4d3b5570c777764884ce6de67f31d3ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

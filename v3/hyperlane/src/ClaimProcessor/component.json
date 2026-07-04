@@ -1,0 +1,18 @@
+{
+  "component": "ClaimProcessor",
+  "main_contract": "ClaimProcessor",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x088470910056221862d18ff2e65ffaec96ec6da4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

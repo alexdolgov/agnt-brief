@@ -1,0 +1,18 @@
+{
+  "component": "ChainportSideBridge",
+  "main_contract": "ChainportSideBridge",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb198814fc92a50017701485dc554bd08d047de1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

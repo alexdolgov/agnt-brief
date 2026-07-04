@@ -1,0 +1,18 @@
+{
+  "component": "MultiCall",
+  "main_contract": "MultiCall",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb97cd69145e5a9357b2acd6af6c5076380f17afb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

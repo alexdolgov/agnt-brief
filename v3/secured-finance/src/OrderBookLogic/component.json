@@ -1,0 +1,37 @@
+{
+  "component": "OrderBookLogic",
+  "main_contract": "OrderBookLogic",
+  "source_file_count": 8,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Secured-Finance/contracts/blob/develop/audits/2023-11-Quantstamp.pdf",
+    "https://github.com/Secured-Finance/contracts/blob/develop/audits/2024-03-Quantstamp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05e71dc39c3de40e017d166e605b97451e7f21b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc587006c5bf078790b6a9f6d377e05967489103a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xef430f8296a63aabc0df51c1ca17da622c185120",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

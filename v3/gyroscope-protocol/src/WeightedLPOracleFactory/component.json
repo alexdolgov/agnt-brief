@@ -1,0 +1,34 @@
+{
+  "component": "WeightedLPOracleFactory",
+  "main_contract": "WeightedLPOracleFactory",
+  "source_file_count": 43,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6ee18fbb1bbcc5cf700cd75ea1aef2bb21e3cb3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x718e1176f01ddbb2409a77b2847b749c8df4457f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeb2bb012869255f8c622563dc4c3afa8619fe804",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

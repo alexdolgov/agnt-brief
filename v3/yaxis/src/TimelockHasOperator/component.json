@@ -1,0 +1,18 @@
+{
+  "component": "TimelockHasOperator",
+  "main_contract": "TimelockHasOperator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66c5c16d13a38461648c1d097f219762d374b412",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "component": "CairoBootloaderProgram",
+  "main_contract": "CairoBootloaderProgram",
+  "source_file_count": 3,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x18186aee529b9fac9d51397a4beac6f5bb011db8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1dd8945200f5a09d6fe0ed68494c2ac41cd02e2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2503ed84d4353852a666ec548337fb2aa82a5576",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33e7594ee58bf3dc608907e8d917d3410d17e387",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xabf068705d238e2980ec7f6f57a05ab29a82c115",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

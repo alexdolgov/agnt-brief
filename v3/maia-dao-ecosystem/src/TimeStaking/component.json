@@ -1,0 +1,26 @@
+{
+  "component": "TimeStaking",
+  "main_contract": "TimeStaking",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xd1d003804b08572cafcf2ba2729b49369e9b2b81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xe2546b144efc3f8bd85d84b6ca64cc4f033c9be1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedmTSLA",
+  "main_contract": "WrappedmTSLA",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21ca39943e91d704678f5d00b6616650f066fd63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

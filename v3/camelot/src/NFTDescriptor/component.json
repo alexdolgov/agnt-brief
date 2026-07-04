@@ -1,0 +1,26 @@
+{
+  "component": "NFTDescriptor",
+  "main_contract": "NFTDescriptor",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1e12aad4b836a9b5edf17367eb8f1cbe3e781dae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xff7da61e7037378da1baf3d40ba8e6e47dfb3a62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WstETHWrappingSwap",
+  "main_contract": "WstETHWrappingSwap",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1e228ff4cf95a2b5c019b7e71d484a09eee84ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

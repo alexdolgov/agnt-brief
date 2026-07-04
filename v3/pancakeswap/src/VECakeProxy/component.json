@@ -1,0 +1,18 @@
+{
+  "component": "VECakeProxy",
+  "main_contract": "VECakeProxy",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ac4ed1d63c51f2b35c555ee09b425f08e6ea556",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "YieldMathExtensions",
+  "main_contract": "YieldMathExtensions",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc445d7e3cdc96840439560675ca9023204ea9acd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

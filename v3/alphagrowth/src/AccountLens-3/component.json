@@ -1,0 +1,18 @@
+{
+  "component": "AccountLens-3",
+  "main_contract": "AccountLens",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa60c4257c809353039a71527dfe701b577e34bc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ExtraRewardStashModule",
+  "main_contract": "ExtraRewardStashModule",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x48e529218743e41f6de5b7e8d552e8173707ce81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

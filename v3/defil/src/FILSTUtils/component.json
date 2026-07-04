@@ -1,0 +1,18 @@
+{
+  "component": "FILSTUtils",
+  "main_contract": "FILSTUtils",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x987dd30f57e51a732e4dcad0890ad6631ff25928",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

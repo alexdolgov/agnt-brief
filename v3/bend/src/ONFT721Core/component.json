@@ -1,0 +1,18 @@
+{
+  "component": "ONFT721Core",
+  "main_contract": "ONFT721Core",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7591992f1a98636c6b7207f30382ca4bec83d9be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

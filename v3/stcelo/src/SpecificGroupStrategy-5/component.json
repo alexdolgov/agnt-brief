@@ -1,0 +1,20 @@
+{
+  "component": "SpecificGroupStrategy-5",
+  "main_contract": "SpecificGroupStrategy",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x54c819e39fde40aa8fcf1244589ec5aebf32999a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CalldataLogic-2",
+  "main_contract": "CalldataLogic",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd23431f39c88875d1cd6b517d4e54b752fe5776d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

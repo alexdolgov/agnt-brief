@@ -1,0 +1,18 @@
+{
+  "component": "CssReferral",
+  "main_contract": "CssReferral",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0207f989db6427cd3f296a850664f9a6608ee8cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

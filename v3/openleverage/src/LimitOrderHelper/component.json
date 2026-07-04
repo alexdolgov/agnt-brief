@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrderHelper",
+  "main_contract": "LimitOrderHelper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8bcc9fed0b40ee3b9a3409806317c61d1a3df798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

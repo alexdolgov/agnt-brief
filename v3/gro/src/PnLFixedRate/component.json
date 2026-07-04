@@ -1,0 +1,34 @@
+{
+  "component": "PnLFixedRate",
+  "main_contract": "PnLFixedRate",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x271d1b123932b5b469aabc9c5b870d2a744861e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc1c7ab50e423b28ec1b76b75fcafc2b0a498d8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc19df09a6ecb926853163e37b9d80e35b683a3f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

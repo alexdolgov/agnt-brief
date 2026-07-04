@@ -1,0 +1,18 @@
+{
+  "component": "PlasmaVault-4",
+  "main_contract": "PlasmaVault",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x0a71624ab3e8101f78d95dfc81e0f1f31128ed7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

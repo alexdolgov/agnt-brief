@@ -1,0 +1,18 @@
+{
+  "component": "LSashimi",
+  "main_contract": "LSashimi",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e199c36f9681a32c996e84c464824f6a868acbd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

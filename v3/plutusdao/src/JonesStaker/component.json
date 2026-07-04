@@ -1,0 +1,18 @@
+{
+  "component": "JonesStaker",
+  "main_contract": "JonesStaker",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x20864169830bbb30bc25ed44a61008c0b22f07f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DAIEscrow",
+  "main_contract": "DAIEscrow",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xccabad4923c14e48c9c27e6c4556c1caf4e91ebb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

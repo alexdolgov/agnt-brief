@@ -1,0 +1,34 @@
+{
+  "component": "OneInchExchangeAdapter",
+  "main_contract": "OneInchExchangeAdapter",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6da72bef02824eb8da9c572727052d125563b0b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcbadafc252160a0d0ec7fb64a134b2f115b06b24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfff355af19e3ff51eec6874fc324db3ead43c772",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UniversalAirdrop",
+  "main_contract": "UniversalAirdrop",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xae16b93d29aadccb9fc616aabfbca95682d13dcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

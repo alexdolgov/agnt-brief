@@ -1,0 +1,18 @@
+{
+  "component": "YieldBasisLegacyMigrationFacet",
+  "main_contract": "YieldBasisLegacyMigrationFacet",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf8e2629f9fcd6f202e39baeeff3b3418b56f167",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

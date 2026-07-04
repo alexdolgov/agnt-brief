@@ -1,0 +1,18 @@
+{
+  "component": "sHakka",
+  "main_contract": "sHakka",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

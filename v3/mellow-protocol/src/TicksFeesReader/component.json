@@ -1,0 +1,18 @@
+{
+  "component": "TicksFeesReader",
+  "main_contract": "TicksFeesReader",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b0f7fc3ddc5e95a810898075d792247d9f0b86c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

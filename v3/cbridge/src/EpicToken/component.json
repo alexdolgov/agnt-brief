@@ -1,0 +1,26 @@
+{
+  "component": "EpicToken",
+  "main_contract": "EpicToken",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66e6f738a835d1ad412dca933fb4fcd7a84ee217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0a8f1cb96a370e0736960e1b360c3d7e7f80280",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

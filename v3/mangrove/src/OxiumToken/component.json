@@ -1,0 +1,18 @@
+{
+  "component": "OxiumToken",
+  "main_contract": "OxiumToken",
+  "source_file_count": 60,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x8ee050f6af49a6b7fd8557d0e75219d66f5f6094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

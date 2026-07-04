@@ -1,0 +1,50 @@
+{
+  "component": "FewNonfungiblePositionManager",
+  "main_contract": "FewNonfungiblePositionManager",
+  "source_file_count": 61,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x44d8a7885c48c20861b49cd238e612056223d995",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x8970507172fd1bf7ac4ccce2a9d310ad3d2c536a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x89cc755b2e84390e90349ccef665671792177b90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xaccba426e72e14bfdadbf7ce752f92cc05ab4949",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xb1486e0a2159fcb465c5378ed981a0657bea8f3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PoolTogetherV4PriceFeed",
+  "main_contract": "PoolTogetherV4PriceFeed",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf35a9f4d9ceb494e3671bb79f7532607c1682f69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

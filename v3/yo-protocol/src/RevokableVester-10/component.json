@@ -1,0 +1,18 @@
+{
+  "component": "RevokableVester-10",
+  "main_contract": "RevokableVester",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7351623002d53f7ca39a5ed1ea8f1c4dc29a2552",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

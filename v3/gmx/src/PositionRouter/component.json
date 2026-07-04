@@ -1,0 +1,18 @@
+{
+  "component": "PositionRouter",
+  "main_contract": "PositionRouter",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x05cb7c42890e0522264fe5ec6d84e8d7218cb78f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

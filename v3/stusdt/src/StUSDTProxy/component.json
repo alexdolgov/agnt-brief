@@ -1,0 +1,18 @@
+{
+  "component": "StUSDTProxy",
+  "main_contract": "StUSDTProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25ec98773d7b4ced4cafab96a2a1c0945f145e10",
+      "is_proxy": true,
+      "implementation_address": "0xf68799bc48045f873413e212a85784d96a911750",
+      "liveness": "live"
+    }
+  ]
+}

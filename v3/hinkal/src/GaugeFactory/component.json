@@ -1,0 +1,18 @@
+{
+  "component": "GaugeFactory",
+  "main_contract": "GaugeFactory",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8391fe399640e7228a059f8fa104b8a7b4835071",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

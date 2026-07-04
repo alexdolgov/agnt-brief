@@ -1,0 +1,18 @@
+{
+  "component": "TokenTimelock",
+  "main_contract": "TokenTimelock",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbf49a920aa4696631ce53a25a9c8fce175a4cf5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

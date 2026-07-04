@@ -1,0 +1,22 @@
+{
+  "component": "StakedCap",
+  "main_contract": "StakedCap",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-05-15-TrailOfBits.pdf",
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-06-23-Spearbit.pdf",
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-09-03-Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32c08836d2873d1ffc958e3c57f3e08852b42a3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

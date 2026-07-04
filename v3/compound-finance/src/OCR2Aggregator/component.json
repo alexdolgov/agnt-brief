@@ -1,0 +1,18 @@
+{
+  "component": "OCR2Aggregator",
+  "main_contract": "OCR2Aggregator",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x019699e5b12331cf77df9e39818c2e15c8b06215",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

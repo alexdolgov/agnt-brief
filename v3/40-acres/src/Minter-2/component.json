@@ -1,0 +1,18 @@
+{
+  "component": "Minter-2",
+  "main_contract": "Minter",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6dc9e1c04ee59ed3531d73a72256c0da46d10982",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

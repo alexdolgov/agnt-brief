@@ -1,0 +1,20 @@
+{
+  "component": "AutoCompoundingConvexFraxStrategy",
+  "main_contract": "AutoCompoundingConvexFraxStrategy",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/AladdinDAO/audit-reports/blob/main/AladdinETH_Report_v1.0_2022_12_22.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc9cfd6205914ab1e209ffe70326d8dd15fc58187",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

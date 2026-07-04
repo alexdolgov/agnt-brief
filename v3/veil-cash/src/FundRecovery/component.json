@@ -1,0 +1,18 @@
+{
+  "component": "FundRecovery",
+  "main_contract": "FundRecovery",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x767a739d1a152639e9ea1d8c1bd55fdc5b217d7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

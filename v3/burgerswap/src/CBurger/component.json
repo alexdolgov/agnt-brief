@@ -1,0 +1,18 @@
+{
+  "component": "CBurger",
+  "main_contract": "CBurger",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4b5d132e902f792e2f8327a3d4062e3edd79f640",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

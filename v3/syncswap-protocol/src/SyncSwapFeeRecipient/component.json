@@ -1,0 +1,21 @@
+{
+  "component": "SyncSwapFeeRecipient",
+  "main_contract": "SyncSwapFeeRecipient",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/syncswap/reports/blob/main/MetaScan_Report_core-contracts_202303161916.pdf",
+    "https://github.com/syncswap/reports/blob/main/MetaScan_Security_Analyzer_Report_core-contracts_202303161916.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa2a09f15c2ec6af1b8f9413c148334b231410bd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

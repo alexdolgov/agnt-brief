@@ -1,0 +1,18 @@
+{
+  "component": "NFTfiLending",
+  "main_contract": "NFTfiLending",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f4f727930c2c73238584f9f195e32e86e32d1b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

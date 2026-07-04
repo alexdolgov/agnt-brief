@@ -1,0 +1,18 @@
+{
+  "component": "BaseUpgradeableStrategyStorage-100",
+  "main_contract": "BaseUpgradeableStrategyStorage",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb64ef73a216a0d72141ad541dbbe05d732209d87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VPoolWrapper",
+  "main_contract": "VPoolWrapper",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd8dab97f71e2f91d82e658f848be6a49ddeb9cc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

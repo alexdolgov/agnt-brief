@@ -1,0 +1,18 @@
+{
+  "component": "SpaDepositor",
+  "main_contract": "SpaDepositor",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8c12e3c9b26ee2e43a1a71cd974e6bf250472129",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

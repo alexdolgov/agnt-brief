@@ -1,0 +1,26 @@
+{
+  "component": "SetGatewayAction",
+  "main_contract": "SetGatewayAction",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f089c0daf0181f7afd533f5f3265301bb09d562",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a10fd6c94503953f01c9fa9493032aa5a1166c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

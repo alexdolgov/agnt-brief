@@ -1,0 +1,18 @@
+{
+  "component": "VVSV3Pool",
+  "main_contract": "VVSV3Pool",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ec1828fcb385471752014fe668102b661622b55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

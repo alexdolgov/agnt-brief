@@ -1,0 +1,18 @@
+{
+  "component": "VaultErrorController",
+  "main_contract": "VaultErrorController",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb74f73978ac630715bc329e4fa997824e0f5f3b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

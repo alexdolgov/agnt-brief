@@ -1,0 +1,18 @@
+{
+  "component": "ProxyCoin",
+  "main_contract": "ProxyCoin",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x22acaee85ddb83a3a33b7f0928a0e2c3bfdb6a4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

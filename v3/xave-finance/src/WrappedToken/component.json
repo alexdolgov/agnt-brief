@@ -1,0 +1,18 @@
+{
+  "component": "WrappedToken",
+  "main_contract": "WrappedToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0aab1f0104af8ab3bc54756602cbd90dae592a4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

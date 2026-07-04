@@ -1,0 +1,18 @@
+{
+  "component": "SpokeRewardsV2GasToken",
+  "main_contract": "SpokeRewardsV2GasToken",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcd7ee494fa616fdbe38aa0a9355e20b7215108bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

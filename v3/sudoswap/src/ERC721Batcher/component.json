@@ -1,0 +1,18 @@
+{
+  "component": "ERC721Batcher",
+  "main_contract": "ERC721Batcher",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf83eee39e723526605d784917b6e38ebcf0f0207",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

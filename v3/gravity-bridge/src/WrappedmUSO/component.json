@@ -1,0 +1,26 @@
+{
+  "component": "WrappedmUSO",
+  "main_contract": "WrappedmUSO",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31c63146a635eb7465e5853020b39713ac356991",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4fd69d2a7d76c0564a984a79972aad628750f214",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

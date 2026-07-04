@@ -1,0 +1,18 @@
+{
+  "component": "AeroFedMessenger",
+  "main_contract": "AeroFedMessenger",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf090f285b6eaeb7e22487029b42a9ae59224056f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

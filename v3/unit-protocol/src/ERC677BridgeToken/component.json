@@ -1,0 +1,18 @@
+{
+  "component": "ERC677BridgeToken",
+  "main_contract": "ERC677BridgeToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ae055097c6d159879521c384f1d2123d1f195e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

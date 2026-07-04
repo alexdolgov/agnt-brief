@@ -1,0 +1,18 @@
+{
+  "component": "PandoriumMock",
+  "main_contract": "PandoriumMock",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x914ae72e47d4c38e112557832376161a7f96f317",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ScaleGaugePluginFactory",
+  "main_contract": "ScaleGaugePluginFactory",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xece72a27bbd6e667672ac226a26eaf3e2f71e22e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

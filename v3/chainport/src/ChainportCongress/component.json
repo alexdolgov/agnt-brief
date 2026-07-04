@@ -1,0 +1,18 @@
+{
+  "component": "ChainportCongress",
+  "main_contract": "ChainportCongress",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x71d57ee5471b720642a129621ea694da8f949621",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

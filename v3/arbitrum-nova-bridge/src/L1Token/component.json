@@ -1,0 +1,18 @@
+{
+  "component": "L1Token",
+  "main_contract": "L1Token",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3dbc4f88eaa632ddf9708732e2832eeaa6688ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

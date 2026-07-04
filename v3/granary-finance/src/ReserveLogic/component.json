@@ -1,0 +1,18 @@
+{
+  "component": "ReserveLogic",
+  "main_contract": "ReserveLogic",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x250b47f097ec51225ece85b13273b70a4233e1e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

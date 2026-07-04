@@ -1,0 +1,18 @@
+{
+  "component": "StakingPool",
+  "main_contract": "StakingPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x08bea2702d89abb8059853d654d0838c5e06fe0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

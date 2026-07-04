@@ -1,0 +1,34 @@
+{
+  "component": "OwnedUpgradeabilityProxy-2",
+  "main_contract": "OwnedUpgradeabilityProxy",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x055cc48f7968fd8640ef140610dd4038e1b03926",
+      "is_proxy": true,
+      "implementation_address": "0xcafea01c7ca7c05c056a030e5af7ae28a588d2b1",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a5c681ddc32acc6cca51ac17e9d461e6be87900",
+      "is_proxy": true,
+      "implementation_address": "0xcafeaf47dac3acba0aa0974dca9195209da6ef20",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5407381b6c251cfd498ccd4a1d877739cb7960b8",
+      "is_proxy": true,
+      "implementation_address": "0xcafea535c1613d3f3339d2cc85f758095d754f80",
+      "liveness": "live"
+    }
+  ]
+}

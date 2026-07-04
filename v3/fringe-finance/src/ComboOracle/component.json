@@ -1,0 +1,26 @@
+{
+  "component": "ComboOracle",
+  "main_contract": "ComboOracle",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x626efc448227d794dc8c02ffea6a932bb360f72a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7ef2a9aa33ab926a42f0e4f259da225a5bebda73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

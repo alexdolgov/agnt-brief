@@ -1,0 +1,26 @@
+{
+  "component": "PythUpgradable",
+  "main_contract": "PythUpgradable",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x35a58beee77a2ad547fcded7e8cb1c6e19746b13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xebe57e8045f2f230872523bbff7374986e45c486",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

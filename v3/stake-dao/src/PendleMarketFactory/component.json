@@ -1,0 +1,18 @@
+{
+  "component": "PendleMarketFactory",
+  "main_contract": "PendleMarketFactory",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xefbfc43d3eccc1a7cfd08b9d057457c2341a8ee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

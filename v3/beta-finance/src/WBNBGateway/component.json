@@ -1,0 +1,18 @@
+{
+  "component": "WBNBGateway",
+  "main_contract": "WBNBGateway",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x10cf42ee870f4c53ade1674b9e69b86ac3a542dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

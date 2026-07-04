@@ -1,0 +1,22 @@
+{
+  "component": "MdxToken",
+  "main_contract": "MdxToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://mdex.com/certik_bsc.pdf",
+    "https://mdex.com/fairyproof_bsc.pdf",
+    "https://mdex.com/slowmist_bsc.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9c65ab58d8d978db963e63f2bfb7121627e3a739",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

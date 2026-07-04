@@ -1,0 +1,26 @@
+{
+  "component": "MorphoVaultPSM",
+  "main_contract": "MorphoVaultPSM",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x19286b2786b0abd65334cc054f5763b95fd39022",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x88960e693ce3bd88e8b46450097ab9ec25b6cd4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

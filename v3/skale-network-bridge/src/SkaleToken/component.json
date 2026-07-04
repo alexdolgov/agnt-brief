@@ -1,0 +1,18 @@
+{
+  "component": "SkaleToken",
+  "main_contract": "SkaleToken",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00c83aecc790e8a4453e5dd3b0b4b3680501a7a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

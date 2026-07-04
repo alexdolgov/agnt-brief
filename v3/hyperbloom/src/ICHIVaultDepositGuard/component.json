@@ -1,0 +1,42 @@
+{
+  "component": "ICHIVaultDepositGuard",
+  "main_contract": "ICHIVaultDepositGuard",
+  "source_file_count": 10,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x4858d61e83118f124b7df3e908a3bb465540ffbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x4a72de60a93055139efb3dc8f021ceecad8caa7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x547ad1d6ff5127b89bbdc20656c92df87cf0f39c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8cb886a9f7e86d0429bb79af468258e54735a23c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

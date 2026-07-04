@@ -1,0 +1,20 @@
+{
+  "component": "USDb",
+  "main_contract": "USDb",
+  "source_file_count": 67,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://beosin.com/audits/Bondlink_202412031841.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1623a55e0ba2384afd7511d6d7f77cf28790b5c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

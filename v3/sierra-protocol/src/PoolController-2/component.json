@@ -1,0 +1,18 @@
+{
+  "component": "PoolController-2",
+  "main_contract": "PoolController",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x95577109dd671ee73e9c867183de9f9b95a0ce25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

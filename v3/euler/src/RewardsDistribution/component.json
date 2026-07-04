@@ -1,0 +1,18 @@
+{
+  "component": "RewardsDistribution",
+  "main_contract": "RewardsDistribution",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa9839d52e964d0ed0d6d546c27d2248fac610c43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

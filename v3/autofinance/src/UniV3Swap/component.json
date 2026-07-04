@@ -1,0 +1,26 @@
+{
+  "component": "UniV3Swap",
+  "main_contract": "UniV3Swap",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0093fff32ee2d0469cb00badb9f8d47efbb144c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xae315b4397e2e8fe932a933e4e3c2b97ca66bcc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

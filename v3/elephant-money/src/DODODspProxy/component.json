@@ -1,0 +1,18 @@
+{
+  "component": "DODODspProxy",
+  "main_contract": "DODODspProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2442a8b5cdf1e659f3f949a7e454caa554d4e65a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

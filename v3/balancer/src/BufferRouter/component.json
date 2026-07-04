@@ -1,0 +1,18 @@
+{
+  "component": "BufferRouter",
+  "main_contract": "BufferRouter",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x22625eedd92c81a219a83e1dc48f88d54786b017",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

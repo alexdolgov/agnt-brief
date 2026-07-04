@@ -1,0 +1,18 @@
+{
+  "component": "MasterOracle",
+  "main_contract": "MasterOracle",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb2d0baae78f1dc2a8504b471f3cea257b2c3766",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

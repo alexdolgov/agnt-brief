@@ -1,0 +1,18 @@
+{
+  "component": "TimeLockedWallet",
+  "main_contract": "TimeLockedWallet",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x62d55e1d648dc1076b5e273018122607d9666bea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UniverseFactory",
+  "main_contract": "UniverseFactory",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe62e470c8fba49aea4e87779d536c5923d01bb95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

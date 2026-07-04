@@ -1,0 +1,18 @@
+{
+  "component": "GamyFi",
+  "main_contract": "GamyFi",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x40eb0aebdcb17971e10c60760f093aedfbd45b0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

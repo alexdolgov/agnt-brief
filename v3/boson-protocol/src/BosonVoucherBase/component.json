@@ -1,0 +1,18 @@
+{
+  "component": "BosonVoucherBase",
+  "main_contract": "BosonVoucherBase",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbee92440ab699611e03b81fca3f1107602386869",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

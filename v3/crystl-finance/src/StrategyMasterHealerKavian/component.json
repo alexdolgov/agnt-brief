@@ -1,0 +1,18 @@
+{
+  "component": "StrategyMasterHealerKavian",
+  "main_contract": "StrategyMasterHealerKavian",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2c83d79197c031cb2b87337ff754cc6e0148eeea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "ExchangeIssuanceZeroEx",
+  "main_contract": "ExchangeIssuanceZeroEx",
+  "source_file_count": 21,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x40c20fb57113ebe4f332c311a2b0257cdbdbac14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa2e9af75241a71ea77ffccfa2da37f4eb1e83763",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdbf3204ecf63c26c06685140edffb2172079f058",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe9eecdc587535ba2b3e18e262470850733eea18d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

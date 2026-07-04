@@ -1,0 +1,20 @@
+{
+  "component": "ParetoFund",
+  "main_contract": "ParetoFund",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3FLabs/grunt/blob/main/audits/ChainSecurity_3F_GruntFunds_Audit_2026-04.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ce1fdd75ab75b6d2788796021af5b0942d35e59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

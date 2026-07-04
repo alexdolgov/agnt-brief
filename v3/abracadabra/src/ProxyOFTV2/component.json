@@ -1,0 +1,26 @@
+{
+  "component": "ProxyOFTV2",
+  "main_contract": "ProxyOFTV2",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x195dda36b484d31581c99bcf3f1c3ce581f5bece",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a5770733479220ca4067c12526a7cb3d1d0574e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

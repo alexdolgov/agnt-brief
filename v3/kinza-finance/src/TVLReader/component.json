@@ -1,0 +1,18 @@
+{
+  "component": "TVLReader",
+  "main_contract": "TVLReader",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5dfaf0e89a51d4713f8aedde4a62190987f804e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

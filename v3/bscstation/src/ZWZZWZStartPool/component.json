@@ -1,0 +1,18 @@
+{
+  "component": "ZWZZWZStartPool",
+  "main_contract": "ZWZZWZStartPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf50686108d960e90f6e67de2e74ede622ab11c83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

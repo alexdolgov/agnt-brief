@@ -1,0 +1,18 @@
+{
+  "component": "YakTokenOFTV2",
+  "main_contract": "YakTokenOFTV2",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x7f4db37d7beb31f445307782bc3da0f18df13696",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

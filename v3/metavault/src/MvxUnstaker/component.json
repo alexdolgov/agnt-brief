@@ -1,0 +1,18 @@
+{
+  "component": "MvxUnstaker",
+  "main_contract": "MvxUnstaker",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2dca70cf14f9e07ed568432bf6979719455ed986",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

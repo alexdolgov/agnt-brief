@@ -1,0 +1,18 @@
+{
+  "component": "SnowGlobeJoeAvaxDeg",
+  "main_contract": "SnowGlobeJoeAvaxDeg",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x63f9df540085bb5e0f9375197af9904330381b6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

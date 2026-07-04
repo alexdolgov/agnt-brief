@@ -1,0 +1,66 @@
+{
+  "component": "QubitLocker",
+  "main_contract": "QubitLocker",
+  "source_file_count": 19,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fc85c530e94c4f00764f390bec532bae3ad529d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5d9121583772ea154edd2dc579fdd06ab0783955",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9fd765dcbefe02f50a1a1b23788d7df169d51552",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa67bb1334ae6222834e072cc57d4c97dec737dd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb572a9295a80a2935fad9d7df2c54f6e5914929e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb8243be1d145a528687479723b394485ce3ce773",
+      "is_proxy": true,
+      "implementation_address": "0xb572a9295a80a2935fad9d7df2c54f6e5914929e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe7fcc89a25adfaf094d5b6882b468ef54efc0a46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

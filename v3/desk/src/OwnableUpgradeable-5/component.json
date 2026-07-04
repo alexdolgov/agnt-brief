@@ -1,0 +1,18 @@
+{
+  "component": "OwnableUpgradeable-5",
+  "main_contract": "OwnableUpgradeable",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x68f99f972a63d51c29b08511c59b658a8c92265d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

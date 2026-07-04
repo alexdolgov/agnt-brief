@@ -1,0 +1,18 @@
+{
+  "component": "yPRISMA_Airdrop_Minter",
+  "main_contract": "yPRISMA Airdrop Minter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7038b413e7a4e359e0019ab4ff7b0e5315d86c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

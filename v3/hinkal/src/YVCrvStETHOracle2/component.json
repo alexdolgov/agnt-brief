@@ -1,0 +1,18 @@
+{
+  "component": "YVCrvStETHOracle2",
+  "main_contract": "YVCrvStETHOracle2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeae4365f8714b8fdc66ed0f2a3d90338c9dd84eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

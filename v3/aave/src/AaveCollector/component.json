@@ -1,0 +1,18 @@
+{
+  "component": "AaveCollector",
+  "main_contract": "AaveCollector",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfc9f4403d28d338f3a2814df9febf7e7f20a091c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

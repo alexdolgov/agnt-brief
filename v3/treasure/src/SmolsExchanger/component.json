@@ -1,0 +1,18 @@
+{
+  "component": "SmolsExchanger",
+  "main_contract": "SmolsExchanger",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa500b6a65372632fa140a907ce4b4a4b1986ad03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

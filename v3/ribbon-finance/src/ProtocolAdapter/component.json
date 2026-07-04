@@ -1,0 +1,29 @@
+{
+  "component": "ProtocolAdapter",
+  "main_contract": "ProtocolAdapter",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ChainSafe/audits/blob/main/Ribbon%20Finance/ribbon-finance-04-2021.pdf",
+    "https://github.com/ribbon-finance/audit/blob/master/reports/Chainsafe-Ribbon-Audit_April-2021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b49fdd0cb50ba6d5c053d844fee55e5076f8504",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff51ca3ba8cb5d289deb56dfcba50c7cc100d949",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

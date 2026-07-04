@@ -1,0 +1,18 @@
+{
+  "component": "GLPWrapperTraderV2",
+  "main_contract": "GLPWrapperTraderV2",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaa33255178a7be031a2d6b8438bfb55ca9a64225",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

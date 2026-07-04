@@ -1,0 +1,18 @@
+{
+  "component": "CloneFactory",
+  "main_contract": "CloneFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0deb1a88002d54ae993e9dc341a7e9d78fbfdaac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

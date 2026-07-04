@@ -1,0 +1,18 @@
+{
+  "component": "FeeV2",
+  "main_contract": "FeeV2",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x482d4b1d2328dfca42903f43d07ec0fd7b58fada",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

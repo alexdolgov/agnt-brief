@@ -1,0 +1,26 @@
+{
+  "component": "IdentityOracle",
+  "main_contract": "IdentityOracle",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0108c40a6d63f8018dae495745ce9fcf1e5ce1cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15d5667115c988ddd96fecee67a0a75207d58bfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

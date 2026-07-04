@@ -1,0 +1,18 @@
+{
+  "component": "PoolSwapLibrary",
+  "main_contract": "PoolSwapLibrary",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x542848e66d8f387a78717be7b39f7259b7782bae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

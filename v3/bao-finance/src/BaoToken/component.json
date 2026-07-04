@@ -1,0 +1,18 @@
+{
+  "component": "BaoToken",
+  "main_contract": "BaoToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x23db89ba5e2e4ab1c9b412f03114bb5e26b43178",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "UnicFactory",
+  "main_contract": "UnicFactory",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/uniclyNFT/Resources/blob/main/Unicly%20Security%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e30235a3c556ff509cd4f71ad6168ec60c89b28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8696bde5cc30545b3b049f3529abbfb2b1e0c007",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

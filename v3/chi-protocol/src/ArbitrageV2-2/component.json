@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrageV2-2",
+  "main_contract": "ArbitrageV2",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6347c0d8730780eeeb27321527eb7759d397b064",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "VaultMessengerLZ",
+  "main_contract": "VaultMessengerLZ",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_Curve_Fast_Bridge_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15945526b5c32d963391343e9bc080838fe3e6d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

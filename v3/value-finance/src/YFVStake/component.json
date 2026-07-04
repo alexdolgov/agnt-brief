@@ -1,0 +1,18 @@
+{
+  "component": "YFVStake",
+  "main_contract": "YFVStake",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e6ffd4daeca13a8158146516f847d2f44ad4a30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

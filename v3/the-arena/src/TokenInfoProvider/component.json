@@ -1,0 +1,18 @@
+{
+  "component": "TokenInfoProvider",
+  "main_contract": "TokenInfoProvider",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x448b9e5bbf3f722579e63d7f337d2b12a614af32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

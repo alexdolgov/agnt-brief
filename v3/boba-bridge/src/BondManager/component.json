@@ -1,0 +1,18 @@
+{
+  "component": "BondManager",
+  "main_contract": "BondManager",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x60660e6cdeb423cf847dd11de4c473130d65b627",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

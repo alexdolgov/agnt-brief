@@ -1,0 +1,18 @@
+{
+  "component": "BuyHelper",
+  "main_contract": "BuyHelper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1412524711d58c4927de00446682aabb3f33c6e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

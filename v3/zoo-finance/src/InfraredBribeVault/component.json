@@ -1,0 +1,26 @@
+{
+  "component": "InfraredBribeVault",
+  "main_contract": "InfraredBribeVault",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x33c42e171cfd7ec85d3db34d7f6d3d8121f64e63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x6686bdff3ad20ae45e811c2451dfee8aa0f338c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

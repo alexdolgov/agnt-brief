@@ -1,0 +1,18 @@
+{
+  "component": "RedemptionReceiver",
+  "main_contract": "RedemptionReceiver",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x846e822e9a00669dcc647079d7d625d2cd25a951",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

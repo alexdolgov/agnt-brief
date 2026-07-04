@@ -1,0 +1,20 @@
+{
+  "component": "BribeCollectorV1_2",
+  "main_contract": "BribeCollectorV1_2",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-0310-bribeCollector.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xb704cec5e4df84446f6bcad9a52b9f4641bd29a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

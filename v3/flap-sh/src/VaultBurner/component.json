@@ -1,0 +1,18 @@
+{
+  "component": "VaultBurner",
+  "main_contract": "VaultBurner",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa700245ceb465941f36e83a50ae701d612373d04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

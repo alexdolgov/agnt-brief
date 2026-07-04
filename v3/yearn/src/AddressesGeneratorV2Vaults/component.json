@@ -1,0 +1,18 @@
+{
+  "component": "AddressesGeneratorV2Vaults",
+  "main_contract": "AddressesGeneratorV2Vaults",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3a8efa2d87d60c0289f19b44a0928f4269c0f094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

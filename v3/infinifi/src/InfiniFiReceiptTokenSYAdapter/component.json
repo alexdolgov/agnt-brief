@@ -1,0 +1,18 @@
+{
+  "component": "InfiniFiReceiptTokenSYAdapter",
+  "main_contract": "InfiniFiReceiptTokenSYAdapter",
+  "source_file_count": 95,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xf8b24d22153d86af79681e949ec2efaf75120600",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

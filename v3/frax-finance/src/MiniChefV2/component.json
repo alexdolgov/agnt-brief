@@ -1,0 +1,18 @@
+{
+  "component": "MiniChefV2",
+  "main_contract": "MiniChefV2",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x691ef79e40d909c715be5e9e93738b3ff7d58534",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

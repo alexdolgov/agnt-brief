@@ -1,0 +1,18 @@
+{
+  "component": "SP1VerifierGateway",
+  "main_contract": "SP1VerifierGateway",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc32e228636273285befa5f001dbb5142517c106",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

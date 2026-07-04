@@ -1,0 +1,18 @@
+{
+  "component": "JetfuelVenusVaultBNB",
+  "main_contract": "JetfuelVenusVaultBNB",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc15bb35a1752a40be9d5090e784a896074e1cd89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

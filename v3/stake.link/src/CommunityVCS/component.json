@@ -1,0 +1,61 @@
+{
+  "component": "CommunityVCS",
+  "main_contract": "CommunityVCS",
+  "source_file_count": 35,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-28%5D%20Cyfrin%20-%20CL%20Rewards%20Claiming.pdf",
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-03-23%5D%20Cyfrin%20-%20Rebase%20Batching.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11721f9e0152b2abda99b8b86e77d7820ef4f864",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14024f4e7fef08cb19f8051456e39ee899990744",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2339ad1a674fb8be412df6cc1c80fb2ba5c3f647",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96418d70832d08cf683be81ee9890e1337fad41b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac12290b097f6893322f5430627e472131fbc1b5",
+      "is_proxy": true,
+      "implementation_address": "0x14024f4e7fef08cb19f8051456e39ee899990744",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdd0c427d8a4a59e1d99ec2e9b69c6abf85ec21e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

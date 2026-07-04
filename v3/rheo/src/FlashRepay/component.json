@@ -1,0 +1,85 @@
+{
+  "component": "FlashRepay",
+  "main_contract": "FlashRepay",
+  "source_file_count": 153,
+  "deployment_count": 9,
+  "audited": true,
+  "audits_covering": [
+    "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-02-26-Cantina.pdf",
+    "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-06-14-Cantina.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x282056fc9515ee5622690ce908a84f15b4511b7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36e1395237f43158a29a2fbfac395547d917cb3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a9c05c3da48e6e26f39928653258d7d4eb594c1",
+      "is_proxy": true,
+      "implementation_address": "0x36e1395237f43158a29a2fbfac395547d917cb3f",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3e275cdce92d1b1a302e5c2e6c37fd5e3420131a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a4ac0b8c4d2eab5601c1265f59bfdb7e158c337",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9024c43b1e87eaf85d0993a692ef78fcb216cfbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba8d383f0256b4fc8cb50e626b6c8b1121fe0e88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3e12ebbd94b2b0ec6ae43830cc400ce91b24132",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6a6d02f5e2ce66519c8e4855c4673b8f549ff35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

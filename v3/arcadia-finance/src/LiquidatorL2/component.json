@@ -1,0 +1,18 @@
+{
+  "component": "LiquidatorL2",
+  "main_contract": "LiquidatorL2",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

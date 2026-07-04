@@ -1,0 +1,18 @@
+{
+  "component": "AntfarmGuild",
+  "main_contract": "AntfarmGuild",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7ea9ed05bcf4bccd9ed0eca7687e3b8541f2c897",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Migration_Alkaid",
+  "main_contract": "Migration_Alkaid",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa8de6828d358c2d9f93f4913dec4f14894139b53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

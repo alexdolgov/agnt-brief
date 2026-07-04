@@ -1,0 +1,42 @@
+{
+  "component": "TopazCLZapper",
+  "main_contract": "TopazCLZapper",
+  "source_file_count": 15,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x376fbca3725cdcd6954ffa79cdfa70855a81f523",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x396717cae3bca595437619dd3aae19ae4a76a982",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x56e9699ba5201d8aa2f259e8b6f2fcadf91a054c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfb043e1b7c04a7963adccb3d4618991732a13466",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

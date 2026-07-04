@@ -1,0 +1,58 @@
+{
+  "component": "LoanManager",
+  "main_contract": "LoanManager",
+  "source_file_count": 38,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x273e26ad3bdfde8590ac7104fd9639d0f6e2a9c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x34bdee89c0c2c34628012ea918bd7d1f435c4036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4997b835f1ed797df3ab2cbf2f49427d033db4ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x60ade7ec42f3907474d5d6008eb36aeb2627bd41",
+      "is_proxy": true,
+      "implementation_address": "0x94f62ca96fa06c065d8a2d3211c067100087221c",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x94f62ca96fa06c065d8a2d3211c067100087221c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaeebff0a4fedaf2ea66848dfb1295667217451b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

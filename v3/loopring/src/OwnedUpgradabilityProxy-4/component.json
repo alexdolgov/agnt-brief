@@ -1,0 +1,18 @@
+{
+  "component": "OwnedUpgradabilityProxy-4",
+  "main_contract": "OwnedUpgradabilityProxy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe2f62365279ef91646da51f0952d8a391a1fd927",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

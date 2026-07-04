@@ -1,0 +1,26 @@
+{
+  "component": "StreetStrategy",
+  "main_contract": "StreetStrategy",
+  "source_file_count": 38,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae0afddc6559a8d612b0cbd6776039e4bcd49f41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd2f5c1a32b2d9689bd2c8f4883fdb3867138b90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

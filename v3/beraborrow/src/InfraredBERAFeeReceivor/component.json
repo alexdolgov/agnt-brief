@@ -1,0 +1,18 @@
+{
+  "component": "InfraredBERAFeeReceivor",
+  "main_contract": "InfraredBERAFeeReceivor",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xab2dadd15af962b036d361849c024a3f70b18254",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

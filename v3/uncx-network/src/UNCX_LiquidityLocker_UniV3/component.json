@@ -1,0 +1,18 @@
+{
+  "component": "UNCX_LiquidityLocker_UniV3",
+  "main_contract": "UNCX_LiquidityLocker_UniV3",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x231278edd38b00b07fbd52120cef685b9baebcc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

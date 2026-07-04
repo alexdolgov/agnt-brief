@@ -1,0 +1,29 @@
+{
+  "component": "UpgradeBeaconProxy",
+  "main_contract": "UpgradeBeaconProxy",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/ConnextNxtp-Spearbit-Security-Review.pdf",
+    "https://github.com/connext/audits/blob/main/amarok/Connext_A-1__Macro_Audits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x021c2b7e89bde462c97de3c514c77e1c50563fd7",
+      "is_proxy": true,
+      "implementation_address": "0xcdfbaba486b420e7f33ae043385d6c7a15f98ebd",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x083c8bc333f38131623ce1e0951748facad49d58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

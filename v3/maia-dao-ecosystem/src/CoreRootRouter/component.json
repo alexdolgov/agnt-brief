@@ -1,0 +1,26 @@
+{
+  "component": "CoreRootRouter",
+  "main_contract": "CoreRootRouter",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x31e2a6bbc2af8aeb78dd1fa1fcefe0f672c3e8fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcd2fdcb25ae2106b4f860bf92b4af5f326a00eb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

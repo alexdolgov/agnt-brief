@@ -1,0 +1,20 @@
+{
+  "component": "FraxGaugeFXSRewardsDistributor",
+  "main_contract": "FraxGaugeFXSRewardsDistributor",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/FraxQ42021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x278dc748eda1d8efef1adfb518542612b49fcd34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

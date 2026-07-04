@@ -1,0 +1,18 @@
+{
+  "component": "KimBaseLiquidityManager",
+  "main_contract": "KimBaseLiquidityManager",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8032d063992f4f6a14bc2be69a0d24cb563365de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

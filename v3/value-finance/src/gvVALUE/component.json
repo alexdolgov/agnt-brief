@@ -1,0 +1,18 @@
+{
+  "component": "gvVALUE",
+  "main_contract": "gvVALUE",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0610c2d9f6ebc40078cf081e2d1c4252dd50ad15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

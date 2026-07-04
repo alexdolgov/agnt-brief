@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawRequestNFT",
+  "main_contract": "WithdrawRequestNFT",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ed97c79ded8894036da095b2e2f79f8080a9cd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VaultReader",
+  "main_contract": "VaultReader",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa1cc67170df03aabd5e39406e390ef5aa2137bbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

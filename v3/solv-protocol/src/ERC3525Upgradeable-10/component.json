@@ -1,0 +1,21 @@
+{
+  "component": "ERC3525Upgradeable-10",
+  "main_contract": "ERC3525Upgradeable",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/solv-finance/Audit/blob/main/Salus/Solv_Protocol_TimeLocked_ERC20_Container_audit_report_2023_07_05%20-%20Salus.pdf",
+    "https://github.com/solv-finance/Audit/blob/main/Salus/Solv_Protocol_TimeLocked_ERC20_Container_audit_report_2023_07_05.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x314e063b48f653087f5a1991f8bee4db1f5004ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

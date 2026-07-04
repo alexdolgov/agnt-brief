@@ -1,0 +1,18 @@
+{
+  "component": "PriceOraclePitchFXS",
+  "main_contract": "PriceOraclePitchFXS",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96e4088378edaab0e715f9a4aa63a99feca7f9c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MockToken",
+  "main_contract": "MockToken",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x650d804e35f6b0001f620dd57499c4a6147f6943",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "JamUniswapV2Pair",
+  "main_contract": "JamUniswapV2Pair",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87898263b6c5babe34b4ec53f22d98430b91e371",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

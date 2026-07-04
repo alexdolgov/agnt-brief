@@ -1,0 +1,18 @@
+{
+  "component": "BasePluginV2Factory",
+  "main_contract": "BasePluginV2Factory",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfa78c6467b5aa53d0c1ad114dbf93082e6864573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

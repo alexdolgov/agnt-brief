@@ -1,0 +1,18 @@
+{
+  "component": "PendleAuraBalancerStableLPSYV2",
+  "main_contract": "PendleAuraBalancerStableLPSYV2",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f531a70a240fba0e40169e56eede1c6b7ef8463",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

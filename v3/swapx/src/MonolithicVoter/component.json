@@ -1,0 +1,36 @@
+{
+  "component": "MonolithicVoter",
+  "main_contract": "MonolithicVoter",
+  "source_file_count": 8,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://swapx.fi/Bailsec_SwapX_Exchange_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x51f02904d2d5ce3cdc36cd2907ce36f0cef12ee0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x75b07f81dd25d408ff2ab0b5ebe44182fd520937",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf3bb6075b7e33e0b2c892aacdba2026fd6b20b4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

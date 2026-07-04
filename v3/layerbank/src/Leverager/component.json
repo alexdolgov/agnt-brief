@@ -1,0 +1,34 @@
+{
+  "component": "Leverager",
+  "main_contract": "Leverager",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x06502df8986d53bb44444ba065e42f53f475d7eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc98b936d7540ba67c2260916ae91b3eeb9eefff3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe10157b95f7c905ae00f3257851f9d8e56c8200a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

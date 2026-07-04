@@ -1,0 +1,26 @@
+{
+  "component": "LpLocker",
+  "main_contract": "LpLocker",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1454b1f523e26ab34141d8c69b2672afd8dfc5e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x50b201ea7d9d5a6fb8ad77aad7f9be4a658d0463",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

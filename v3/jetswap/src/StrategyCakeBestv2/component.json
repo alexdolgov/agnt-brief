@@ -1,0 +1,18 @@
+{
+  "component": "StrategyCakeBestv2",
+  "main_contract": "StrategyCakeBestv2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb8ceea3951097a5efc46746aeafc339b28c8714c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

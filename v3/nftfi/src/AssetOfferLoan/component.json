@@ -1,0 +1,18 @@
+{
+  "component": "AssetOfferLoan",
+  "main_contract": "AssetOfferLoan",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9f10d706d789e4c76a1a6434cd1a9841c875c0a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

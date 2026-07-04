@@ -1,0 +1,18 @@
+{
+  "component": "TokenTimelock",
+  "main_contract": "TokenTimelock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x46db4ea2f4ca6a664e850dbbbe5c0e4ae78ca600",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

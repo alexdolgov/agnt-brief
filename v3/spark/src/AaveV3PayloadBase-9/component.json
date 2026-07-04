@@ -1,0 +1,18 @@
+{
+  "component": "AaveV3PayloadBase-9",
+  "main_contract": "AaveV3PayloadBase",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x68a075249fa77173b8d1b92750c9920423997e2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

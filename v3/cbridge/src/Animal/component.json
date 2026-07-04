@@ -1,0 +1,18 @@
+{
+  "component": "Animal",
+  "main_contract": "Animal",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38b0e3a59183814957d83df2a97492aed1f003e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

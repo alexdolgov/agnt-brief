@@ -1,0 +1,48 @@
+{
+  "component": "BalancerV2VaultAdapter",
+  "main_contract": "BalancerV2VaultAdapter",
+  "source_file_count": 21,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Apr%20-%20ChainSecurity_Gearbox_V2.1.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Aug%20-%20ChainSecurity_Gearbox_V2.1.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Dec%20-%20ChainSecurity_Gearbox_Integrations_V3.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Sep%20-%20ChainSecurity_Gearbox_V2.1.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2024-10-chainsecurity-integrations.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x318ab395b49b22c10937367601b0d17741152cae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32ff8588eb3bfe1a9932f1f9b270cdccaf1fad39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b43dcfdfc7806f5e054968268a938b4dd952129",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb7138cd4e224abc989c71eabe1f223c4c8a57ee1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "component": "MasterChef",
+  "main_contract": "MasterChef",
+  "source_file_count": 4,
+  "deployment_count": 8,
+  "audited": true,
+  "audits_covering": [
+    "https://ampleswap.com/audit-by-etherauthority.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0b0e33910ee43a7420be47a9ab60c7c9828713e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x841046bb0e9d6d9036fd395350f77bf7e26096c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xca26e54a082310fdd81cd8e8fd6e7247716a7d93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd1443ef30c72c73468bf389e2fa926097bf9e4bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd87f7ed16a40205a39a63b93ad68d3331519df1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeb642d600bf593cb21e1551e9a15426ff6d42f82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf1c73a5d2a3a0da3d6c9009890ecbdf5822c062e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf5987603323aa99dde0777a55e83c82d59cca272",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

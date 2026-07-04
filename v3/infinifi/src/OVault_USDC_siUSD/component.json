@@ -1,0 +1,26 @@
+{
+  "component": "OVault_USDC_siUSD",
+  "main_contract": "OVault_USDC_siUSD",
+  "source_file_count": 93,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fac6ab52d43e11b04f1587db00d5240e86491f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc78ff2b9da22a4b369be9c7d64722e8930bf016",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DutchXSellerModule",
+  "main_contract": "DutchXSellerModule",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3ebeb3a6a535131f2861f866d98d555580aa84d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "eWit",
+  "main_contract": "eWit",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/witswap/contracts/blob/master/eWit_Security_Audit_Report_Final_Mainnet.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x56ee175fe37cd461486ce3c3166e0cafccd9843f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

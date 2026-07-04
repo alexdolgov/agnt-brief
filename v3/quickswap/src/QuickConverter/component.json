@@ -1,0 +1,18 @@
+{
+  "component": "QuickConverter",
+  "main_contract": "QuickConverter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MagicInternetGold",
+  "main_contract": "MagicInternetGold",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5624b48ec2848bd642230b46405e1f65938c5fd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

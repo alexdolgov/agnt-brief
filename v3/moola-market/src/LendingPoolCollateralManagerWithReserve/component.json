@@ -1,0 +1,18 @@
+{
+  "component": "LendingPoolCollateralManagerWithReserve",
+  "main_contract": "LendingPoolCollateralManagerWithReserve",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa2db2e70a795b566f129ae7dff242a4ad1393b32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

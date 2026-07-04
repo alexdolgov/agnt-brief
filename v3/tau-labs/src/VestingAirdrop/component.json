@@ -1,0 +1,18 @@
+{
+  "component": "VestingAirdrop",
+  "main_contract": "VestingAirdrop",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87858b848c4b64bda3d694a554c5188f4c3e20e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

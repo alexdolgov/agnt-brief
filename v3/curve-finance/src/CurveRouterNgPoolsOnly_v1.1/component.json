@@ -1,0 +1,18 @@
+{
+  "component": "CurveRouterNgPoolsOnly_v1.1",
+  "main_contract": "CurveRouterNgPoolsOnly v1.1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x4f37a9d177470499a2dd084621020b023fcffc1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

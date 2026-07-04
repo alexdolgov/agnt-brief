@@ -1,0 +1,21 @@
+{
+  "component": "Amp",
+  "main_contract": "Amp",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2020/06/amp",
+    "https://github.com/trailofbits/publications/blob/master/reviews/amp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

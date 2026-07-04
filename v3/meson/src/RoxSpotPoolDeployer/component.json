@@ -1,0 +1,18 @@
+{
+  "component": "RoxSpotPoolDeployer",
+  "main_contract": "RoxSpotPoolDeployer",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xf22ff8f7f430a2d07efb88015853d52c88bc286d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

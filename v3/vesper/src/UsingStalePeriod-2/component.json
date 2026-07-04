@@ -1,0 +1,26 @@
+{
+  "component": "UsingStalePeriod-2",
+  "main_contract": "UsingStalePeriod",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ed27617cc2fb7b4faab67ed30efde9cc7d84527",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa889d4993c44ea78e2c87bc5897c74977a126dee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

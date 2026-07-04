@@ -1,0 +1,18 @@
+{
+  "component": "MulticallNftBalance",
+  "main_contract": "MulticallNftBalance",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x223819df08c76bf4eb733965feeb8ec194ab549b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

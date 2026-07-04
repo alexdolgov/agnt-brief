@@ -1,0 +1,18 @@
+{
+  "component": "VaultWithoutNative",
+  "main_contract": "VaultWithoutNative",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb674fbbc06a5183cc01da4473f17fe55c36ba8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

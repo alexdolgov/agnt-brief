@@ -1,0 +1,18 @@
+{
+  "component": "FarmBoosterProxyFactory",
+  "main_contract": "FarmBoosterProxyFactory",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x799d038d001fd0a23bd5585a08b1a6fa5a4b0661",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

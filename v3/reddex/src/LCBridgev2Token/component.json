@@ -1,0 +1,18 @@
+{
+  "component": "LCBridgev2Token",
+  "main_contract": "LCBridgev2Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x43fe54d5a3467a537529eefd00d859ec3271bc1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

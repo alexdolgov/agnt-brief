@@ -1,0 +1,18 @@
+{
+  "component": "Vyper_contract",
+  "main_contract": "Vyper_contract",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0000000022d53366457f9d5e68ec105046fc4383",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

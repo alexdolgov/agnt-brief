@@ -1,0 +1,26 @@
+{
+  "component": "DepotFacet",
+  "main_contract": "DepotFacet",
+  "source_file_count": 79,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x107f33211935bb72b721675c7e95a2d4cc0c96cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x47422eeecd1ce855dcf59ee7eaeb23c6a4666699",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

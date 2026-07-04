@@ -1,0 +1,18 @@
+{
+  "component": "RwaJar",
+  "main_contract": "RwaJar",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x03503147b762017904b10d96f10e194550e5e0ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

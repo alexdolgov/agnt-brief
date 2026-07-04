@@ -1,0 +1,18 @@
+{
+  "component": "MasterChef",
+  "main_contract": "MasterChef",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe70e9185f5ea7ba3c5d63705784d8563017f2e57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

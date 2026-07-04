@@ -1,0 +1,18 @@
+{
+  "component": "AchievementNFT",
+  "main_contract": "AchievementNFT",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x868a68dc42dbed1901ccd59a27c3e7eab43e88e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

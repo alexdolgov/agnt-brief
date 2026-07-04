@@ -1,0 +1,18 @@
+{
+  "component": "VeilAirdrop",
+  "main_contract": "VeilAirdrop",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x516b76b3dd15f1a9d1cf68426817f22f0c19175d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "WhaleBondStakeDepository",
+  "main_contract": "WhaleBondStakeDepository",
+  "source_file_count": 18,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0f8a77d505aeba523ed0eaca5f7b236f09c6e854",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e63a6153da01f7d1192a989666f7490451b2343",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa2e1e9b699ec4602efbf9b0193890ccbfa0c7084",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc6486bdcf4a32fe21b4c778fdf6f149c21ac2ff3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

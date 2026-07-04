@@ -1,0 +1,18 @@
+{
+  "component": "BRISE-2",
+  "main_contract": "BRISE",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x414c39465e5042ddc1b6fa7b6bdf2753dd322350",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "elitenessERC4626",
+  "main_contract": "elitenessERC4626",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8de568691a1a6356b46418fdc12e1694a1ba1e22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xac4bb9312c6f8a6a0c198851484e9512cd6c8877",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

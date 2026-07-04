@@ -1,0 +1,18 @@
+{
+  "component": "SwapRouter",
+  "main_contract": "SwapRouter",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x08da1101626536d0d27ac68bbfcaf880ab771f8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

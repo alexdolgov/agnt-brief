@@ -1,0 +1,18 @@
+{
+  "component": "ReceiveUln301",
+  "main_contract": "ReceiveUln301",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x245b6e8ffe9ea5fc301e32d16f66bd4c2123eefc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "jydETH",
+  "main_contract": "jydETH",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfc9896f837e3fdeceb5560f394f7289997095185",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

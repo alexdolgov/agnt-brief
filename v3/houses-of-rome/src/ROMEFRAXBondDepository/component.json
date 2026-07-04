@@ -1,0 +1,18 @@
+{
+  "component": "ROMEFRAXBondDepository",
+  "main_contract": "ROMEFRAXBondDepository",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x065588602bd7206b15f9630fdb2e81e4ca51ad8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

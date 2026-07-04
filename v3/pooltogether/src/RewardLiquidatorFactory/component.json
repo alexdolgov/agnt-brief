@@ -1,0 +1,26 @@
+{
+  "component": "RewardLiquidatorFactory",
+  "main_contract": "RewardLiquidatorFactory",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0526e9541a500b554ef318cdc44147f38a40b468",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x778f1071eab44027f0a76a3d5b73c29ef406a9bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

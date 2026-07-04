@@ -1,0 +1,18 @@
+{
+  "component": "SashimiPlateController",
+  "main_contract": "SashimiPlateController",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3884eab512bb0475100997271ec83163daa944ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

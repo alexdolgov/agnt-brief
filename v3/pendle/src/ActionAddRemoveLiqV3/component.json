@@ -1,0 +1,18 @@
+{
+  "component": "ActionAddRemoveLiqV3",
+  "main_contract": "ActionAddRemoveLiqV3",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x026644dc6fc4cf22a45ad14231090c7736d07507",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

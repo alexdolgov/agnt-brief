@@ -1,0 +1,21 @@
+{
+  "component": "TokenVesting",
+  "main_contract": "TokenVesting",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/GeistProtocol",
+    "https://sourcehat.com/audits/Lendle"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa7f784dc0ec287342b0b84e63961effa541f7e6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Inverse",
+  "main_contract": "Inverse",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd166f9972dd6f95aaac6710716d45bb30430b5e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

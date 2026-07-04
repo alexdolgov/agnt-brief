@@ -1,0 +1,20 @@
+{
+  "component": "DStakeRewardManagerDLend",
+  "main_contract": "DStakeRewardManagerDLend",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hats-finance/dTRINITY-0xee5c6f15e8d0b55a5eff84bb66beeee0e6140ffe/blob/report-update-20250822T111243728Z/report.md"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xf224e69c461a2dd3c5f6f6814529c8cf557a1367",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

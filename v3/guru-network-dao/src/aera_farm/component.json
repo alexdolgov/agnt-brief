@@ -1,0 +1,18 @@
+{
+  "component": "aera_farm",
+  "main_contract": "aera_farm",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x6c39ff982ac0a696978f66ef632d9f86dfb93264",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

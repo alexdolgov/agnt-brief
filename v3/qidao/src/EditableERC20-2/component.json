@@ -1,0 +1,18 @@
+{
+  "component": "EditableERC20-2",
+  "main_contract": "EditableERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf3b001d64c656e30a62fbaaca003b1336b4ce12a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

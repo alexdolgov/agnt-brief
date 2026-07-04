@@ -1,0 +1,34 @@
+{
+  "component": "StaderConfig",
+  "main_contract": "StaderConfig",
+  "source_file_count": 19,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x060a6a57f8ce8fb99cbc8d4fd6b73c36eebd2c30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4abef2263d5a5ed582fc9a9789a41d85b68d69db",
+      "is_proxy": true,
+      "implementation_address": "0x808e8783ba7e315517952d195e20bc8edba7da23",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x615bac1593f20d853b0946d16b81200d9b9f96dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

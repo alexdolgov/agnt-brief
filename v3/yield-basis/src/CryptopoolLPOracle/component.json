@@ -1,0 +1,18 @@
+{
+  "component": "CryptopoolLPOracle",
+  "main_contract": "CryptopoolLPOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x231c37b8e9d2076d673c5e24ecfcc2a82652e054",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

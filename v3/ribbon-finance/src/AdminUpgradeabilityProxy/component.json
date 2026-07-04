@@ -1,0 +1,141 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 4,
+  "deployment_count": 16,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ChainSafe/audits/blob/main/Ribbon%20Finance/ribbon-07-2023.pdf",
+    "https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-RibbonTreasuryVault.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e2d05bd78bd50eaa380ef71f86430ed20301bf5",
+      "is_proxy": true,
+      "implementation_address": "0x2e56d6e444ab148ec1375be108313aa759dfd248",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f2077b0a9efb0c6568396a115272401fa7d95f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x270f4a26a3fe5766ccef9608718491bb057be238",
+      "is_proxy": true,
+      "implementation_address": "0xc92e6b70eb6456171d32c3b5904386c05ec983ff",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a6b048eb15c7d4ddca27db4f9a454196898a0fe",
+      "is_proxy": true,
+      "implementation_address": "0xd906a2211eea37cf988fc70e0e9f11ac0f354a8a",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e56d6e444ab148ec1375be108313aa759dfd248",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42cf874bbe5564efcf252bc90829551f4ec639dc",
+      "is_proxy": true,
+      "implementation_address": "0xd906a2211eea37cf988fc70e0e9f11ac0f354a8a",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6aac2dc49303d40b77c8150a3cd785896c651fd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7664df7ec8a1739a0d2a25941fd4a1f8e17e9648",
+      "is_proxy": true,
+      "implementation_address": "0xd906a2211eea37cf988fc70e0e9f11ac0f354a8a",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x76b20f25e4e3b47d855b49999419a7f241fd71fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d93ac93bd8f6c0c1c1955f0b9fe8508281a869c",
+      "is_proxy": true,
+      "implementation_address": "0x2e56d6e444ab148ec1375be108313aa759dfd248",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d51c84904682d375bf59f541f934cd7c1fe7ad8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa06a03d72f1b6350b3aa75524863823eb14dc864",
+      "is_proxy": true,
+      "implementation_address": "0x1f2077b0a9efb0c6568396a115272401fa7d95f4",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe0b307ee605cc23c96181a2e57ce6702632cded",
+      "is_proxy": true,
+      "implementation_address": "0x1f2077b0a9efb0c6568396a115272401fa7d95f4",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbeb419a50a1654b55afa9e84adb723d5349572d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0d57d576b0cf48be7a97e4cf9325ec5dd411a3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd906a2211eea37cf988fc70e0e9f11ac0f354a8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

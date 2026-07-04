@@ -1,0 +1,18 @@
+{
+  "component": "LOTM_Renting_Protocol_Contract",
+  "main_contract": "LOTM Renting Protocol Contract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bce649673e5b6221cf3100d8e5333d890b555ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SlasherFactory",
+  "main_contract": "SlasherFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2eb000900452bcf56f607480f4872c07d45f4415",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

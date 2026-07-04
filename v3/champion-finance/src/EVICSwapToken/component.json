@@ -1,0 +1,18 @@
+{
+  "component": "EVICSwapToken",
+  "main_contract": "EVICSwapToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x603c92d49552d16c351e23b83090b5683d308322",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

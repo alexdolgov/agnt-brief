@@ -1,0 +1,18 @@
+{
+  "component": "KillSwitchOracle",
+  "main_contract": "KillSwitchOracle",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x909a86f78e1cded68f9c2fe2c9cd922c401abe82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

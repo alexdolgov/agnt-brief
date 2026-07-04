@@ -1,0 +1,18 @@
+{
+  "component": "PresaleNewClaimsV1",
+  "main_contract": "PresaleNewClaimsV1",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc9291ac4f0b9de2b334b0493869595ff85009961",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

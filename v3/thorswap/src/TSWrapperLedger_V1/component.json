@@ -1,0 +1,26 @@
+{
+  "component": "TSWrapperLedger_V1",
+  "main_contract": "TSWrapperLedger_V1",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e006856aa4ee2e0158a1fe2158df5b37378fb40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe4e8313abbadc8e18543ec9528f67fde2e44d3d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

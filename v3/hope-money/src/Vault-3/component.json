@@ -1,0 +1,18 @@
+{
+  "component": "Vault-3",
+  "main_contract": "Vault",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x47237218650608082d41b8b707305da2be108e45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

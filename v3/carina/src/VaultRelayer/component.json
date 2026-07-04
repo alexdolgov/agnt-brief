@@ -1,0 +1,21 @@
+{
+  "component": "VaultRelayer",
+  "main_contract": "VaultRelayer",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CODESPECT-security/audit-reports/blob/main/038_CODESPECT_CARINA.pdf",
+    "https://github.com/Zellic/publications/blob/master/Carina%20Smart%20Contracts%20-%20Zellic%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xe077a0eda893f0f9cbd37a5942dece86f4f8dafb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

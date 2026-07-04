@@ -1,0 +1,18 @@
+{
+  "component": "FarmingProxyPluginImplementation",
+  "main_contract": "FarmingProxyPluginImplementation",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49a390a3dfd2d01389f799965f3af5961f87d228",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

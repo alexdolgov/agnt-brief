@@ -1,0 +1,18 @@
+{
+  "component": "ValueIOURebaser",
+  "main_contract": "ValueIOURebaser",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5a53b6a222fb9099659c4f37ecbe06e0feb3f9f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

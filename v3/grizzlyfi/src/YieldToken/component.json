@@ -1,0 +1,18 @@
+{
+  "component": "YieldToken",
+  "main_contract": "YieldToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4bab8f3096a3fb4a2ebceb3965a1088b32eecdca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

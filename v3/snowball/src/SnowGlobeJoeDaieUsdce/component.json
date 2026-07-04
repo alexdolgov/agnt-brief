@@ -1,0 +1,18 @@
+{
+  "component": "SnowGlobeJoeDaieUsdce",
+  "main_contract": "SnowGlobeJoeDaieUsdce",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6c915564607d62b007d203c04473152bc090ee93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

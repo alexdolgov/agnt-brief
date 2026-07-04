@@ -1,0 +1,44 @@
+{
+  "component": "Controller",
+  "main_contract": "Controller",
+  "source_file_count": 8,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/set-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3bb631604c802da5234784ec5c720f7942d5a8ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x57b31c8818c375dee5f96542daaae71f74da0267",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8908ea1682c05c928e309d3edb977cfa940b9259",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdd84546f43c949e369460a3ca1241ca8e94b152f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

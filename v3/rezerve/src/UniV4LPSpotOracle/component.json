@@ -1,0 +1,26 @@
+{
+  "component": "UniV4LPSpotOracle",
+  "main_contract": "UniV4LPSpotOracle",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e91f8334833587c542e40d6f9a4c6590bb289d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9802886903dba085fe6d7f62d866536ab2d287bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

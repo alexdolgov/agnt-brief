@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainRateReceiver",
+  "main_contract": "CrossChainRateReceiver",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3222d3de5a9a3ab884751828903044cc4adc627e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

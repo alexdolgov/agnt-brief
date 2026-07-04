@@ -1,0 +1,22 @@
+{
+  "component": "TokenFactory",
+  "main_contract": "TokenFactory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Stake-DAO/audits/blob/main/votemarket/v2/laposte/2024-10-01_pashov_laposte.pdf",
+    "https://github.com/stake-dao/audits/blob/main/votemarket/v2/laposte/2024-10-01_pashov_laposte.pdf",
+    "https://github.com/stake-dao/laposte/blob/main/audits/PashovGroup-LaPoste-security-review-October.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c995e43e6ddd551e226f4c5544c77bfed147ab9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

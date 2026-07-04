@@ -1,0 +1,34 @@
+{
+  "component": "SocializingPool",
+  "main_contract": "SocializingPool",
+  "source_file_count": 26,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1082a48779188c53507d28b1d2a4b17ad839be6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d4c3166c59412cedbe7d901f5fde41903a1d6fc",
+      "is_proxy": true,
+      "implementation_address": "0xcc0dab27c23599cd7d2b7a04edf0730f8b2509a7",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe87d8f52b730db026ed1b0f15a2bd6380bd6b057",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

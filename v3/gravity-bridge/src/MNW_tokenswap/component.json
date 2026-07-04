@@ -1,0 +1,26 @@
+{
+  "component": "MNW_tokenswap",
+  "main_contract": "MNW_tokenswap",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a226fefd114ec0fe0ea87bc9d0b371dd2b2051a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79582682fd3912d52afa282006e8689c8c1e20fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

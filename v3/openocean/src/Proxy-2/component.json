@@ -1,0 +1,18 @@
+{
+  "component": "Proxy-2",
+  "main_contract": "Proxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6352a56caadc4f1e25cd6c75970fa768a3304e64",
+      "is_proxy": true,
+      "implementation_address": "0xf6f756cc6028255cf8ba5b2d06babfefdec1988e",
+      "liveness": "live"
+    }
+  ]
+}

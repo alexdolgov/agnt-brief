@@ -1,0 +1,151 @@
+{
+  "component": "ProtocolFeeCollector",
+  "main_contract": "ProtocolFeeCollector",
+  "source_file_count": 12,
+  "deployment_count": 17,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20LPManager%20Security%20Analysis%20by%20Pessimistic.pdf",
+    "https://github.com/pessimistic-io/audits/blob/5bafc9eb1003bcc443caa7282d381c752373a624/CYBRO%20LPManager%20Security%20Analysis%20by%20Pessimistic.pdf",
+    "https://github.com/pessimistic-io/audits/blob/a27871ebd7f6e36d0f61604a8edf9e53be096473/CYBRO%20Liquidity%20manager%20Security%20Analysis%20by%20Pessimistic.pdf",
+    "https://github.com/pessimistic-io/audits/blob/main/CYBRO%20LPManager%20Security%20Analysis%20by%20Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x01623abc8fb5fe01486e1a55c0c98a1b722b066c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x03ef21cdd9609668996aaaecdd9dfddfe7cad110",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1081d9c0998b9722d0ef1749af28ff3b795e30bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x26b9f174d2a09ef602251c0832bf5559650df66d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x50d96936187e14f357035b0a24c3a465a7697abc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5e370379d3ffd745533a4bba5ec2df634680b8a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x69706db1b23be2188e49b3be5787b59d2e929989",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9fd1e053f65181a930181fb6885e7f40c993a6ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb05961e49c6f94688d6107a59ca43015102ec24e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbf2922b0e077a9c9cec09683ebbe1d549675ce25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc185fb364fd22ded0b1cd7e5fe5b6fd7f7c1ecc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc75e10d7c27f9ede7fcb92fa4ae3fe9ada84cdc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdb187495d2dc2ddf025c100aa1a34274d72c86f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe2298074b2e228a532f2be899da43b66d6ff112b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xeb2538acee5cffcc9ba02a58cd9b37d4735ef368",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xedb9f6363bd925b44493a8f82468160ca0debf85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfd3be1d641adaa64c005dc2d6a2ff5bea96ad744",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

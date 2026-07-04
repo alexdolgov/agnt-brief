@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawHelper",
+  "main_contract": "WithdrawHelper",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19f6bc0755fd4a465b3961fb335d6e55ab8b9eaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

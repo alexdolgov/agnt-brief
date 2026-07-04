@@ -1,0 +1,26 @@
+{
+  "component": "FinalRouterV3_Mainnet",
+  "main_contract": "FinalRouterV3_Mainnet",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15ce5192b844a7a45e13864ac9969dc4f95b90fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfe294434753a44f1a9e7ad13cfea6606fcf6ea8e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

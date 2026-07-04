@@ -1,0 +1,18 @@
+{
+  "component": "InitBip3",
+  "main_contract": "InitBip3",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x48e1b4c66d1b7170069d6ab3221826589ed8fdf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

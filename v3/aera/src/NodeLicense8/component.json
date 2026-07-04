@@ -1,0 +1,26 @@
+{
+  "component": "NodeLicense8",
+  "main_contract": "NodeLicense8",
+  "source_file_count": 79,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x14e6e53dc0e4d0d02644a96f4bc1798a7876db49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc6bcca5297cd4511250e2d3241bed586631e2aa0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

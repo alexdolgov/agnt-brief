@@ -1,0 +1,26 @@
+{
+  "component": "BondedECDSAKeepFactory",
+  "main_contract": "BondedECDSAKeepFactory",
+  "source_file_count": 61,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a7cd8e1384d49f502b4a4ce9ac9eb320835c5d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7d9e842efb252389d613da88eda3731512e40bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

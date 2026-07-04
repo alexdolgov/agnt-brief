@@ -1,0 +1,20 @@
+{
+  "component": "UsdfOracle",
+  "main_contract": "UsdfOracle",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/lista-dao-contracts/blob/master/audits/CertiK_V3_LP_04Sept_2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0709755a26b78ce8e1f4cab598ac7477858c4aa2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

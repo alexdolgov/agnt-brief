@@ -1,0 +1,50 @@
+{
+  "component": "aspTKNMinimalOracleFactory",
+  "main_contract": "aspTKNMinimalOracleFactory",
+  "source_file_count": 19,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x25b9dd337e64f0c5fb34bf6f46fe17e1d50fdb8d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x39d284703f388ad57910e43c9c96b8c3ed58d2fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa24b7cd636898c7dd7dd29f5f3c9c3b268a068e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc2b0a3f6f6e58ee10f22be44eb15c6d4f6e62374",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xeed5e974a792f9ac91f3582ef79f2d95e12d0a67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

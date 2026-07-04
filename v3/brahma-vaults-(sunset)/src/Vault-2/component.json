@@ -1,0 +1,23 @@
+{
+  "component": "Vault-2",
+  "main_contract": "Vault",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-audit-2022-05-consensys.pdf",
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-audit-2022-05-zellic.pdf",
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-polygainsv2-audit-2023-02-bluethroat.pdf",
+    "https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-polygainsv2-audit-2023-02-jeiwan.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4fe66bff98efc030bdc86c733f481b089fb9dcfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

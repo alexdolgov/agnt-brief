@@ -1,0 +1,26 @@
+{
+  "component": "PositionUnitAdjusterModule",
+  "main_contract": "PositionUnitAdjusterModule",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x63005bb8daa3774af731f7f8b0d7a8790eb35f50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb9bf0710d606b39d2f71acf328d5cd277b642282",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

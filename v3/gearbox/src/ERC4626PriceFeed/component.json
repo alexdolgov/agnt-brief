@@ -1,0 +1,30 @@
+{
+  "component": "ERC4626PriceFeed",
+  "main_contract": "ERC4626PriceFeed",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Dec%20-%20ABDK_Gearbox_Oracles_V3.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2024%20Aug%20-%20ChainSecurity_Gearbox_Oracles_V3.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2025-03-chainsecurity-v3.1-upgrade.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa1f5cad0647fc6267e9176109c09af4f58978e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2cb2e5632a2bc3aaca593ddd87f185dc978fbf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

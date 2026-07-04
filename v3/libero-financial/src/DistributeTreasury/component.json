@@ -1,0 +1,18 @@
+{
+  "component": "DistributeTreasury",
+  "main_contract": "DistributeTreasury",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xba936bca7538e88110f54bbddcd7576bbc25c499",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "component": "TokenVesting",
+  "main_contract": "TokenVesting",
+  "source_file_count": 14,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bio-xyz/vesting-contracts/blob/main/audits/2023-04-pashov.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f55edffd4e9325577d4c8dde6f15782cefd6517",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c36c64da1c3a2065074caa9c48e7648fb733aab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde659cafbe68fc2b80fe7eb4f6135c1d4473926d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf9f8a1d51fb257097836ebda0428e28efdbe58e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

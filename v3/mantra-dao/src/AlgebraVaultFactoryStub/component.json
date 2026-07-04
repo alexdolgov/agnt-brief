@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraVaultFactoryStub",
+  "main_contract": "AlgebraVaultFactoryStub",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9552594ac707941e7ecf474eabcc018770c9241f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

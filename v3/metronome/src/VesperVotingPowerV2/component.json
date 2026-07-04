@@ -1,0 +1,18 @@
+{
+  "component": "VesperVotingPowerV2",
+  "main_contract": "VesperVotingPowerV2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd744320abd3bd4445dc3c90c889391bd454d5b30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

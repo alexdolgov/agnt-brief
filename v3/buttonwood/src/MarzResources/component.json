@@ -1,0 +1,42 @@
+{
+  "component": "MarzResources",
+  "main_contract": "MarzResources",
+  "source_file_count": 14,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x46a731c5a16fa8b4b085287e4b98e505990d24c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7532e3e303e721b81f8a2492344e8b15f11be5cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc4a0a55a949012b8b52611f4e78cd9e924ae4d45",
+      "is_proxy": true,
+      "implementation_address": "0x7532e3e303e721b81f8a2492344e8b15f11be5cb",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf7764821280afc17e010a149346e1fbb7822fd30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

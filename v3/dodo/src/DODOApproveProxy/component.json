@@ -1,0 +1,18 @@
+{
+  "component": "DODOApproveProxy",
+  "main_contract": "DODOApproveProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xa23137871c4a4ce8514f581ee82262cd1a49eeae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

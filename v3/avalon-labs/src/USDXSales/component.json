@@ -1,0 +1,18 @@
+{
+  "component": "USDXSales",
+  "main_contract": "USDXSales",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

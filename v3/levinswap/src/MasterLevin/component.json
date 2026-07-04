@@ -1,0 +1,18 @@
+{
+  "component": "MasterLevin",
+  "main_contract": "MasterLevin",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0f2b0e9db46c6b538e9276d2cf0c6ce8d515eca1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

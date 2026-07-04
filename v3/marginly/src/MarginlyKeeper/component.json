@@ -1,0 +1,18 @@
+{
+  "component": "MarginlyKeeper",
+  "main_contract": "MarginlyKeeper",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x623342afe5c8ca6a090f8f09399c2713107eeccf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

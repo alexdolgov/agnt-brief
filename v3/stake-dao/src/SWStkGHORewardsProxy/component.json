@@ -1,0 +1,18 @@
+{
+  "component": "SWStkGHORewardsProxy",
+  "main_contract": "SWStkGHORewardsProxy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e32f4c44e22ab20df287f8a15eb6c0f54da6e30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

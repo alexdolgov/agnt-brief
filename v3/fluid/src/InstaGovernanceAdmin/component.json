@@ -1,0 +1,18 @@
+{
+  "component": "InstaGovernanceAdmin",
+  "main_contract": "InstaGovernanceAdmin",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d07ec0e61b60ca997e44ec14ea0114aaeb1cf6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

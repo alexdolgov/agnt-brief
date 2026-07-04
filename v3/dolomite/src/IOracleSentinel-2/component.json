@@ -1,0 +1,21 @@
+{
+  "component": "IOracleSentinel-2",
+  "main_contract": "IOracleSentinel",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/dolomite-exchange/dolomite-margin/blob/master/docs/dYdX%20Audit%20Report%20Bramah%20Systems.pdf",
+    "https://www.openzeppelin.com/news/solo-margin-protocol-audit-30ac2aaf6b10"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x18fa033a317fbda23f41af91083ca3b9fab0a6e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

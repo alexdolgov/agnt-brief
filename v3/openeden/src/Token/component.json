@@ -1,0 +1,74 @@
+{
+  "component": "Token",
+  "main_contract": "Token",
+  "source_file_count": 30,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fd554503c88e9ce02d6f81799f928c8aa202dd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c292b1da34be7fad8a1f50b862be19f292aeeb1",
+      "is_proxy": true,
+      "implementation_address": "0x0fd554503c88e9ce02d6f81799f928c8aa202dd3",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x377ea93af521e18fbbff1ddde5036dbd7b46507e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4038afdbfd7425e8ad265cc6542e13f5dc514456",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67c312a26695ea9842bbcf1e1d0ee64694e42db6",
+      "is_proxy": true,
+      "implementation_address": "0x0fd554503c88e9ce02d6f81799f928c8aa202dd3",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb514e2af5a658f823060266ee5b3a4071f7f839",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed3e6bc82abe0627d268a9ddc07a3e2cecdb5434",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf057a356845b6d6439e318ae798e54089473b167",
+      "is_proxy": true,
+      "implementation_address": "0x0fd554503c88e9ce02d6f81799f928c8aa202dd3",
+      "liveness": "live"
+    }
+  ]
+}

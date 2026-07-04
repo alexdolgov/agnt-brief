@@ -1,0 +1,26 @@
+{
+  "component": "AccessControlUpgradeable-2",
+  "main_contract": "AccessControlUpgradeable",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x57700392b0cd59dcccb98b872e517fe04ef2c507",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x70dd114fb0f22d72de41e97e8a2123dc7bc50085",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

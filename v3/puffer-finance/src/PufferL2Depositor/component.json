@@ -1,0 +1,18 @@
+{
+  "component": "PufferL2Depositor",
+  "main_contract": "PufferL2Depositor",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3436e0b85cd929929f5802e792cfe282166e0259",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

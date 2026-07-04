@@ -1,0 +1,18 @@
+{
+  "component": "AUTOToken",
+  "main_contract": "AUTOToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x09750927d289131d40d6e5ff34d431432bfdaff0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

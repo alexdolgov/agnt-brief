@@ -1,0 +1,18 @@
+{
+  "component": "ApyUSD-2",
+  "main_contract": "ApyUSD",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcaba36ede2c08e16f3602e8688a8be94c1b4e484",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RewardsPool",
+  "main_contract": "RewardsPool",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19282e0365a5b90c9864446448e29465a9d226eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

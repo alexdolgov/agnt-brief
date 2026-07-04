@@ -1,0 +1,18 @@
+{
+  "component": "Comptroller",
+  "main_contract": "Comptroller",
+  "source_file_count": 112,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4027de966127af5f015ea1cfd6293a3583892668",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "LPOracleBase",
+  "main_contract": "LPOracleBase",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2025-08-19.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09917922379404a25aba9183bcae7bab72e7e8ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GOHMPriceOracle",
+  "main_contract": "GOHMPriceOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7123f51a571a5f0c48208a2cb86362c44c0f9a0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

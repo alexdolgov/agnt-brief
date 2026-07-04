@@ -1,0 +1,18 @@
+{
+  "component": "VaultReader",
+  "main_contract": "VaultReader",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x030f89585d9812471dae7262645860f2d8bece13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

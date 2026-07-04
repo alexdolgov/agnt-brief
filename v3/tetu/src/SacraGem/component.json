@@ -1,0 +1,18 @@
+{
+  "component": "SacraGem",
+  "main_contract": "SacraGem",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfc0dd337b92baa949bc5d25fd9a99cb3b6873204",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

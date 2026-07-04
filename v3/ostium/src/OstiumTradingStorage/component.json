@@ -1,0 +1,26 @@
+{
+  "component": "OstiumTradingStorage",
+  "main_contract": "OstiumTradingStorage",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x496a341a7a6b8950d648e34a8bce892e45e43f2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf2e3458bb94a83d00350e3210c1dd7b4d8ff87ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

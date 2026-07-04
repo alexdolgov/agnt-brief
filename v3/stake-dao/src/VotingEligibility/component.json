@@ -1,0 +1,18 @@
+{
+  "component": "VotingEligibility",
+  "main_contract": "VotingEligibility",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbce1cbf6816d158e5f5d9713bcca805e37bbfb0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

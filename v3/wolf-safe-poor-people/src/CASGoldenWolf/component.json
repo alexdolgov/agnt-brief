@@ -1,0 +1,18 @@
+{
+  "component": "CASGoldenWolf",
+  "main_contract": "CASGoldenWolf",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe5411b37825db669080278b2fe18514bd58aa154",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

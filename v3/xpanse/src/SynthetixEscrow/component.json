@@ -1,0 +1,18 @@
+{
+  "component": "SynthetixEscrow",
+  "main_contract": "SynthetixEscrow",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x073c0c427e677aab733dbd4bd2de02951fd329cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

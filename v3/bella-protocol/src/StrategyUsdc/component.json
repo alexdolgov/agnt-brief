@@ -1,0 +1,18 @@
+{
+  "component": "StrategyUsdc",
+  "main_contract": "StrategyUsdc",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9db02f1d70ac934faca6bdef78a0fa080fcbad5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

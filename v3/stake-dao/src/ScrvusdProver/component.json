@@ -1,0 +1,18 @@
+{
+  "component": "ScrvusdProver",
+  "main_contract": "ScrvusdProver",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x47ca04ee05f167583122833abfb0f14ac5677ee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

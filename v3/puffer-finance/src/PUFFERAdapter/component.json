@@ -1,0 +1,18 @@
+{
+  "component": "PUFFERAdapter",
+  "main_contract": "PUFFERAdapter",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ea9bb9fcdcc1c37cb09175aecdb488a97edd83f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

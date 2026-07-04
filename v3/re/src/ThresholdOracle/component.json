@@ -1,0 +1,18 @@
+{
+  "component": "ThresholdOracle",
+  "main_contract": "ThresholdOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0a5425abdb2ff01671b0596a015a08c2037a6bb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

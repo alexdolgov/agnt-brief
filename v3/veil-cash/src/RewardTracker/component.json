@@ -1,0 +1,26 @@
+{
+  "component": "RewardTracker",
+  "main_contract": "RewardTracker",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa5209d8fbe049e7f3dc1e534c3e13f54061667fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbebba95d59ac087d49b69f028e3fb5b6b17b2e2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

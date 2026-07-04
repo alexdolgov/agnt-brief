@@ -1,0 +1,18 @@
+{
+  "component": "ENSRegistry",
+  "main_contract": "ENSRegistry",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x50130b669b28c339991d8676fa73cf122a121267",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

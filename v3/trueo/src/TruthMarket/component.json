@@ -1,0 +1,26 @@
+{
+  "component": "TruthMarket",
+  "main_contract": "TruthMarket",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd511918d3ab9813005ee44f76da3bbf1bc7720e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

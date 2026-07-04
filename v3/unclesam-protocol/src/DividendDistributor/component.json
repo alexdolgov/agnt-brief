@@ -1,0 +1,26 @@
+{
+  "component": "DividendDistributor",
+  "main_contract": "DividendDistributor",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4671746bbfb3ac19168e5ee223266440765f7dfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75cbaa24e3f2f8aa95e700a95528bb926151689b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

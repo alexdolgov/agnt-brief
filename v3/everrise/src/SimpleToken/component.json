@@ -1,0 +1,26 @@
+{
+  "component": "SimpleToken",
+  "main_contract": "SimpleToken",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaa9b835784d0f9ff2a2a14dd1c395ca58e06f569",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc3ae8df7bbab3e676d70ef7eb258eaf03e02fa20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

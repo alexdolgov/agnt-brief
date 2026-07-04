@@ -1,0 +1,21 @@
+{
+  "component": "RequestDeposit7540VaultHook",
+  "main_contract": "RequestDeposit7540VaultHook",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.06.02-cantina-competition.pdf",
+    "https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.06.30-cantinacode.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe7738b26992a322d53edeb9a39331bf11b60097",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

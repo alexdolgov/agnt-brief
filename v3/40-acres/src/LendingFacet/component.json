@@ -1,0 +1,18 @@
+{
+  "component": "LendingFacet",
+  "main_contract": "LendingFacet",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x427c8b3de052ea4bbf0fb9c08b4f998fd4e071b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

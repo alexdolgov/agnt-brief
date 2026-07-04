@@ -1,0 +1,18 @@
+{
+  "component": "LuckyTicketReward",
+  "main_contract": "LuckyTicketReward",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x26a21aad6c96ca7a324f631d376cdb8d2d612905",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

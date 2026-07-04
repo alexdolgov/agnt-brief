@@ -1,0 +1,18 @@
+{
+  "component": "StakingThalesBonusRewardsManager",
+  "main_contract": "StakingThalesBonusRewardsManager",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5830e9e30b55cb5fd6102805fea2cf951f6afb49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

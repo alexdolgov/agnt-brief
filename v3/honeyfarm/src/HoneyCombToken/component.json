@@ -1,0 +1,18 @@
+{
+  "component": "HoneyCombToken",
+  "main_contract": "HoneyCombToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0edb3301437b255310ccdcb5be9f736764947696",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

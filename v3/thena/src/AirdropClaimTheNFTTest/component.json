@@ -1,0 +1,26 @@
+{
+  "component": "AirdropClaimTheNFTTest",
+  "main_contract": "AirdropClaimTheNFTTest",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2b259baed99d032c514fd6f00536450c76351b5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8e1ec0abb25a85013922602e66c5ad50cae84797",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

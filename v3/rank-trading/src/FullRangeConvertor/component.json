@@ -1,0 +1,34 @@
+{
+  "component": "FullRangeConvertor",
+  "main_contract": "FullRangeConvertor",
+  "source_file_count": 11,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x247358c446bf11ae2b54b96faf0e04c8089d538c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4a8d60103ea88b4584e40106b776a4a1ab83a953",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x955faea11db78851d14c8c74d0d7d6eea3c91db5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

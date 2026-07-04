@@ -1,0 +1,18 @@
+{
+  "component": "MessageDigestProver",
+  "main_contract": "MessageDigestProver",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbff1f56c8e48e2f2f52941e16feecc76c49f1825",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

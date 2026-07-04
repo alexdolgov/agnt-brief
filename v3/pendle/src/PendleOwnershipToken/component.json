@@ -1,0 +1,18 @@
+{
+  "component": "PendleOwnershipToken",
+  "main_contract": "PendleOwnershipToken",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x010a0288af52ed61e32674d82bbc7ddbfa9a1324",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

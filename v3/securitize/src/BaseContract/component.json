@@ -1,0 +1,18 @@
+{
+  "component": "BaseContract",
+  "main_contract": "BaseContract",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12263bef18d07c48940eaa56f7b2efc665169db8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

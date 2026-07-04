@@ -1,0 +1,18 @@
+{
+  "component": "BatchSymbolTradingFee",
+  "main_contract": "BatchSymbolTradingFee",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2e7540325a4a0ebfe46ad9ab35ddd7a91d58a306",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

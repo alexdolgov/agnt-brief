@@ -1,0 +1,18 @@
+{
+  "component": "ActionBase",
+  "main_contract": "ActionBase",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x18b0bbf62c5b7bf6182c9b46573dcbeff16577ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

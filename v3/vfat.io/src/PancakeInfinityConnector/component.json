@@ -1,0 +1,26 @@
+{
+  "component": "PancakeInfinityConnector",
+  "main_contract": "PancakeInfinityConnector",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x178b1ad7d412c42c0e5baf0c091c3cb98d677ccc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x74096ddb9c471df01fce15e51f0a08fe11412f5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "VaultLifecycleWithSwap",
+  "main_contract": "VaultLifecycleWithSwap",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f1fafbfe3a3a3f66e17ba674c5c79eb0cdc19ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8fe8d5e4eb0f60169fd5fb178595625dcec0dd11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

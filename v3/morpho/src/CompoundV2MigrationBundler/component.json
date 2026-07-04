@@ -1,0 +1,24 @@
+{
+  "component": "CompoundV2MigrationBundler",
+  "main_contract": "CompoundV2MigrationBundler",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/8409a0ce-6c21-4cc9-8ef2-bd77ce7425af",
+    "https://github.com/morpho-org/metamorpho-v1.1/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf",
+    "https://github.com/morpho-org/metamorpho-v1.1/blob/main/audits/2024-01-05-periphery-cantina-competition.pdf",
+    "https://github.com/morpho-org/metamorpho/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf",
+    "https://github.com/morpho-org/metamorpho/blob/main/audits/2024-01-05-periphery-cantina-competition.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26bf52a84360ad3d01d7cdc28fc2ddc04d8c8647",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

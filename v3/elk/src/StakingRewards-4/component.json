@@ -1,0 +1,18 @@
+{
+  "component": "StakingRewards-4",
+  "main_contract": "StakingRewards",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0106acef3106a417f1dd83fe543999c8b5637452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

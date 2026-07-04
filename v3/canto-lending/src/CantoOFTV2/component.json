@@ -1,0 +1,18 @@
+{
+  "component": "CantoOFTV2",
+  "main_contract": "CantoOFTV2",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x56c03b8c4fa80ba37f5a7b60caaaef749bb5b220",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

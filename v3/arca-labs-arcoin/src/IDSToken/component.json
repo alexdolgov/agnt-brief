@@ -1,0 +1,18 @@
+{
+  "component": "IDSToken",
+  "main_contract": "IDSToken",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb743c527546f6e009d1e4c87bbf2095f061e6b39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

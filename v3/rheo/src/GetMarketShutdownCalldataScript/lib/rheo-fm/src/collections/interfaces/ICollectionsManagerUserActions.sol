@@ -1,0 +1,53 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.23;
+
+import {CopyLimitOrderConfig} from "@rheo-fm/src/market/libraries/OfferLibrary.sol";
+
+/// @title ICollectionsManagerUserActions
+/// @custom:security-contact security@rheo.xyz
+/// @author Rheo (https://rheo.xyz/)
+interface ICollectionsManagerUserActions {
+    /*//////////////////////////////////////////////////////////////
+                            EVENTS
+    //////////////////////////////////////////////////////////////*/
+
+    event SubscribedToCollection(address indexed user, uint256 indexed collectionId);
+    event UnsubscribedFromCollection(address indexed user, uint256 indexed collectionId);
+    event SetUserCollectionCopyLimitOrderConfigs(
+        address indexed user,
+        uint256 indexed collectionId,
+        CopyLimitOrderConfig copyLoanOfferConfig,
+        CopyLimitOrderConfig copyBorrowOfferConfig
+    );
+
+    /*//////////////////////////////////////////////////////////////
+                            ACTIONS
+    //////////////////////////////////////////////////////////////*/
+
+    /// @notice Subscribe a user to collections
+    /// @param user The user to subscribe
+    /// @param collectionIds The collection IDs to subscribe the user to
+    /// @dev Only callable by the RheoFactory
+    /// @dev Calling this function resets the copy limit order configs to full copy.
+    function subscribeUserToCollections(address user, uint256[] memory collectionIds) external;
+
+    /// @notice Unsubscribe a user from collections
+    /// @param user The user to unsubscribe
+    /// @param collectionIds The collection IDs to unsubscribe the user from
+    /// @dev Only callable by the RheoFactory
+    function unsubscribeUserFromCollections(address user, uint256[] memory collectionIds) external;
+
+    /// @notice Set the copy limit order configs for a user and collection
+    /// @param user The user to set the copy limit order configs for
+    /// @param collectionId The collection ID to set the copy limit order configs for
+    /// @param copyLoanOfferConfig The copy limit order config for the loan offer
+    /// @param copyBorrowOfferConfig The copy limit order config for the borrow offer
+    /// @dev Only callable by the RheoFactory
+    /// @dev Added in v1.8.1
+    function setUserCollectionCopyLimitOrderConfigs(
+        address user,
+        uint256 collectionId,
+        CopyLimitOrderConfig memory copyLoanOfferConfig,
+        CopyLimitOrderConfig memory copyBorrowOfferConfig
+    ) external;
+}

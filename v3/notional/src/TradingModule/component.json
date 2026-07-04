@@ -1,0 +1,36 @@
+{
+  "component": "TradingModule",
+  "main_contract": "TradingModule",
+  "source_file_count": 60,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sherlock-audit/2022-09-notional-judging/blob/main/Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x179a2d2408bfbc21b72d59c4a74e5010f07dc823",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x86bece3dce75dde030e0c9c2e955f8f0fb3908b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf1dfc222b42233b9947183611f6edf6d1d7dca3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BackedForwardingPool",
+  "main_contract": "BackedForwardingPool",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x99c9196f2bcb898f94a346b27cde7ce305ea8f05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

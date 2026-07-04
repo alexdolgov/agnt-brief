@@ -1,0 +1,18 @@
+{
+  "component": "AuguryStrategy",
+  "main_contract": "AuguryStrategy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3c61f005881a1d7c6ebda77b36458da39b42f443",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

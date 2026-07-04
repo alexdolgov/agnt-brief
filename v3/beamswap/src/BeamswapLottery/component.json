@@ -1,0 +1,18 @@
+{
+  "component": "BeamswapLottery",
+  "main_contract": "BeamswapLottery",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x8864069707492e013286caaaae593a56b6993fb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

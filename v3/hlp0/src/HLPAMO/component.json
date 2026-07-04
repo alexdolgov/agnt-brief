@@ -1,0 +1,18 @@
+{
+  "component": "HLPAMO",
+  "main_contract": "HLPAMO",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ICHIVaultFactory",
+  "main_contract": "ICHIVaultFactory",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x7df494ad51faeafb8c46c63d23ee40a48b14e975",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+// hevm: flattened sources of /nix/store/8xb41r4qd0cjb63wcrxf1qmfg88p0961-dss-6fd7de0/src/vow.sol
+pragma solidity ^0.6.12;
+
+////// /nix/store/8xb41r4qd0cjb63wcrxf1qmfg88p0961-dss-6fd7de0/src/lib.sol
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+/* pragma solidity 0.5.12; */
+
+////// /nix/store/8xb41r4qd0cjb63wcrxf1qmfg88p0961-dss-6fd7de0/src/vow.sol
+/// vow.sol -- rwaUSD settlement module
+
+// Copyright (C) 2018 Rain <rainbreak@riseup.net>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+/* pragma solidity 0.5.12; */
+
+interface FlopLike {
+    function kick(address gal, uint256 lot, uint256 bid) external returns (uint256);
+    function cage() external;
+    function live() external returns (uint256);
+}
+
+interface FlapLike {
+    function kick(uint256 lot, uint256 bid) external returns (uint256);
+    function cage(uint256) external;
+    function live() external returns (uint256);
+}
+
+interface VatLike {
+    function rwaUSD(address) external view returns (uint256);
+    function sin(address) external view returns (uint256);
+    function heal(uint256) external;
+    function hope(address) external;
+    function nope(address) external;
+}
+
+contract Vow {
+    // --- Auth ---
+    mapping(address => uint256) public wards;
+
+    // Governance
+    uint256 public governance;
+
+    // Events
+    event Flog(uint256 indexed era, uint256 sin);
+    event Fess(uint256 tab, uint256 Sin);
+    event Rely(address indexed usr);
+    event Deny(address indexed usr);
+    event File(bytes32 indexed what, uint256 data);
+    event File(bytes32 indexed what, address data);
+    event Cage();
+
+    function rely(address usr) external auth {
+        require(live == 1, "Vow/not-live");
+        wards[usr] = 1;
+        emit Rely(usr);
+    }
+
+    function deny(address usr) external auth {
+        wards[usr] = 0;
+        emit Deny(usr);
+    }
+    modifier auth() {
+        require(wards[msg.sender] == 1, "Vow/not-authorized");
+        _;
+    }
+
+    modifier governanceEnabled() {
+        require(governance == 1, "Vow/governance-disabled");
+        _;
+    }
+
+    // --- Data ---
+    VatLike public vat; // CDP Engine
+    FlapLike public flapper; // Surplus Auction House
+    FlopLike public flopper; // Debt Auction House
+
+    mapping(uint256 => uint256) public sin; // debt queue
+    uint256 public Sin; // Queued debt            [rad]
+    uint256 public Ash; // On-auction debt        [rad]
+
+    uint256 public wait; // Flop delay             [seconds]
+    uint256 public dump; // Flop initial lot size  [wad]
+    uint256 public sump; // Flop fixed bid size    [rad]
+
+    uint256 public bump; // Flap fixed lot size    [rad]
+    uint256 public hump; // Surplus buffer         [rad]
+
+    uint256 public live; // Active Flag
+
+    // --- Init ---
+    constructor(address vat_, address flapper_, address flopper_) public {
+        wards[msg.sender] = 1;
+        vat = VatLike(vat_);
+        flapper = FlapLike(flapper_);
+        flopper = FlopLike(flopper_);
+        vat.hope(flapper_);
+        live = 1;
+        governance = 0;
+    }
+
+    // --- Math ---
+    function add(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        require((z = x + y) >= x);
+    }
+
+    function sub(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        require((z = x - y) <= x);
+    }
+
+    function min(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        return x <= y ? x : y;
+    }
+
+    // --- Administration ---
+    function file(bytes32 what, uint256 data) external auth {
+        if (what == "wait") wait = data;
+        else if (what == "bump") bump = data;
+        else if (what == "sump") sump = data;
+        else if (what == "dump") dump = data;
+        else if (what == "hump") hump = data;
+        else if (what == "governance") governance = data;
+        else revert("Vow/file-unrecognized-param");
+        emit File(what, data);
+    }
+
+    function file(bytes32 what, address data) external auth {
+        if (what == "flapper") {
+            vat.nope(address(flapper));
+            flapper = FlapLike(data);
+            vat.hope(data);
+        } else if (what == "flopper") {
+            flopper = FlopLike(data);
+        } else {
+            revert("Vow/file-unrecognized-param");
+        }
+        emit File(what, data);
+    }
+
+    // Push to debt-queue
+    function fess(uint256 tab) external auth {
+        sin[now] = add(sin[now], tab);
+        Sin = add(Sin, tab);
+        emit Fess(tab, Sin);
+    }
+
+    // Pop from debt-queue
+    function flog(uint256 era) external {
+        require(add(era, wait) <= now, "Vow/wait-not-finished");
+        Sin = sub(Sin, sin[era]);
+        sin[era] = 0;
+        emit Flog(era, Sin);
+    }
+
+    // Debt settlement
+    function heal(uint256 rad) external {
+        require(rad <= vat.rwaUSD(address(this)), "Vow/insufficient-surplus");
+        require(rad <= sub(sub(vat.sin(address(this)), Sin), Ash), "Vow/insufficient-debt");
+        vat.heal(rad);
+    }
+
+    function kiss(uint256 rad) external governanceEnabled {
+        require(rad <= Ash, "Vow/not-enough-ash");
+        require(rad <= vat.rwaUSD(address(this)), "Vow/insufficient-surplus");
+        Ash = sub(Ash, rad);
+        vat.heal(rad);
+    }
+
+    // Debt auction
+    function flop() external governanceEnabled returns (uint256 id) {
+        require(sump <= sub(sub(vat.sin(address(this)), Sin), Ash), "Vow/insufficient-debt");
+        require(vat.rwaUSD(address(this)) == 0, "Vow/surplus-not-zero");
+        Ash = add(Ash, sump);
+        id = flopper.kick(address(this), dump, sump);
+    }
+
+    // Surplus auction
+    function flap() external governanceEnabled returns (uint256 id) {
+        require(vat.rwaUSD(address(this)) >= add(add(vat.sin(address(this)), bump), hump), "Vow/insufficient-surplus");
+        require(sub(sub(vat.sin(address(this)), Sin), Ash) == 0, "Vow/debt-not-zero");
+        id = flapper.kick(bump, 0);
+    }
+
+    function cage() external auth {
+        require(live == 1, "Vow/not-live");
+        live = 0;
+        Sin = 0;
+        Ash = 0;
+        if (address(flopper) != address(0) && address(flapper) != address(0)) {
+            flapper.cage(vat.rwaUSD(address(flapper)));
+            flopper.cage();
+        }
+        vat.heal(min(vat.rwaUSD(address(this)), vat.sin(address(this))));
+        emit Cage();
+    }
+}

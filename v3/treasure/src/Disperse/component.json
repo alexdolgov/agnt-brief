@@ -1,0 +1,18 @@
+{
+  "component": "Disperse",
+  "main_contract": "Disperse",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b850ced59e0bd5ba49095860b4f31e2c71ef6e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

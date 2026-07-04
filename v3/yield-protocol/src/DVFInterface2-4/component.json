@@ -1,0 +1,18 @@
+{
+  "component": "DVFInterface2-4",
+  "main_contract": "DVFInterface2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec1fa58a65ddd50a7d1ae1f4ca9a55b3f0fe24cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

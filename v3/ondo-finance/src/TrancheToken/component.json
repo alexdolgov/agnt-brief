@@ -1,0 +1,26 @@
+{
+  "component": "TrancheToken",
+  "main_contract": "TrancheToken",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2626940135-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MaFJpOcvUFsdZPcbjYl%2F-MkemwoXv45o-QyPb6Z6%2F-MkenlI2MZZkbzwrFKdT%2FOndo%20Quantstamp%20Audit%20September%202021.pdf",
+    "https://2626940135-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MaFJpOcvUFsdZPcbjYl%2F-MkemwoXv45o-QyPb6Z6%2F-Mkenx8CYnEwiqHSa7AO%2FOndo%20Peckshield%20Audit%20May_2021.pdf",
+    "https://2626940135-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MaFJpOcvUFsdZPcbjYl%2F-MkemwoXv45o-QyPb6Z6%2F-MkenzUoS6gy1eVNHwlY%2FOndo_Certik_Audit_April_2021%20(2).pdf",
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Certik-Audit-April_2021.pdf",
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Peckshield-Audit-May_2021.pdf",
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Quantstamp-Audit-January_2022.pdf",
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Quantstamp-Audit-September_2021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cc75c52c66960a70e4d94452f21037cd68839a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "NFTHELPER",
+  "main_contract": "NFTHELPER",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe186af8f9bfd6385df4340a87650c425506edc34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

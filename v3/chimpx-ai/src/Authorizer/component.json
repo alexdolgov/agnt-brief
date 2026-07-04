@@ -1,0 +1,18 @@
+{
+  "component": "Authorizer",
+  "main_contract": "Authorizer",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7adcda7bbe51376b190814d76a423de6df64a1a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

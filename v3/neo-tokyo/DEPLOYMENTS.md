@@ -1,0 +1,64 @@
+# neo-tokyo — deployments
+
+58 verified deployment(s) across 41 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x049c68ef2791488fb94e888d1350f1e78c153fa4` | NTStakedToken | impl | inactive | no |
+| ethereum | `0x059174c2fef43f06178d23572fe5556f078f2f99` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x0938e3f7ac6d7f674fed551c93f363109bda3af9` | NTItems | impl | live | no |
+| ethereum | `0x0b8f04f2ca4f15d33274a27439412ab7639efad9` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7` | ERC1967Proxy-3 | proxy | inactive | no |
+| ethereum | `0x1bf9a8dea26b372af7eb8c9e1086934fcd40596b` | NTS1Item | impl | live | no |
+| ethereum | `0x1d59cbf95add1237b6449ddea0d0c64952879bf3` | PublicBytesBurn | impl | inactive | no |
+| ethereum | `0x30d27415181ae5f42be1f1f2a5f335497697fe30` | NTS1Vault | impl | live | no |
+| ethereum | `0x317d1470d6b3a549983702d66f1b952a21f7206e` | NTS2Identity | impl | live | no |
+| ethereum | `0x3b6b64fc7179f72b7ef656d61737d67bf2339457` | NTS1Citizen | impl | live | no |
+| ethereum | `0x3c54b798b3aad4f6089533af3bdbd6ce233019bb` | NTLandDeploy | impl | live | no |
+| ethereum | `0x4481507cc228fa19d203bd42110d679571f7912e` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0x4e8ae6529a7a178a8a3a5eecabb90f9e544dd93a` | NTS1Identity | impl | live | no |
+| ethereum | `0x51b1b64c33d2c4ae52ca40dcaa186e725e9e4b09` | NTConfig | impl | live | no |
+| ethereum | `0x5c291f556ebf869bb92c755f1859e4b4703c7fff` | ERC1967Proxy-4 | impl | live | no |
+| ethereum | `0x6254bab9ee850590e6e7a56982672231d02c8a07` | NTS2Citizen | impl | live | no |
+| ethereum | `0x67e1ecfa9232e27eaf3133b968a33a9a0dca9e16` | NeoTokyoStaker | impl | live | no |
+| ethereum | `0x6868e48e624668c45945b1bdae8b90de8558bfef` | NTBytesStopGap | impl | inactive | no |
+| ethereum | `0x698fbaaca64944376e2cdc4cad86eaa91362cf54` | NTOuterIdentity | impl | live | no |
+| ethereum | `0x6caafb4028558f77dabb8d167aa7a40bccd25778` | NTS2Land | impl | live | no |
+| ethereum | `0x7ac66d40d80d2d8d1e45d6b5b10a1c9d1fd69354` | NTS2Items | impl | live | no |
+| ethereum | `0x7d647b1a0dcd5525e9c6b3d14be58f27674f8c95` | BYTESContract | impl | live | no |
+| ethereum | `0x7fdf7b47b095c15e108e42d096d20a74c03705f4` | NTChampionChips | impl | inactive | no |
+| ethereum | `0x835a60cc60b808e47825daa79a9da6c9ff3a892e` | boughtIdentity | impl | live | no |
+| ethereum | `0x847eed7a43817a490b042dbffda10bcf56de7d1b` | NTS1Land | impl | live | no |
+| ethereum | `0x86357a19e5537a8fba9a004e555713bc943a66c0` | beckLoot | impl | live | no |
+| ethereum | `0x88165a735cf313e111088370637ccde23c39bcae` | royaltySplitter | impl | inactive | no |
+| ethereum | `0x8e9f3c6883993a7a69c37213f2eb9a17450ad6d3` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0x91a341e5617070de70f4df6a83cceceea7fd9e57` | NTMigrator | impl | live | no |
+| ethereum | `0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4` | NTOuterCitizenDeploy | impl | live | no |
+| ethereum | `0x9df4c5135177c300d02ea4840c4e22becdda384d` | ERC1967Proxy-2 | impl | live | no |
+| ethereum | `0xa10934bbfef0a3ee448e05ce9a35f786ef28cb48` | NTConfig | impl | live | no |
+| ethereum | `0xa19f5264f7d7be11c451c093d8f92592820bea86` | BYTES2 | impl | live | no |
+| ethereum | `0xa4a4c433b04dda15a07d9f3d5ea9e26db45b5ec2` | NTOuterCitizenDeploy | impl | inactive | no |
+| ethereum | `0xa91a931bcf850f1e8b560cf3a0cf263bf3dac3cd` | NTChampionChips | impl | live | no |
+| ethereum | `0xab0b0dd7e4eab0f9e31a539074a03f1c1be80879` | vaultBox | impl | live | no |
+| ethereum | `0xb58ae9e93b8bee7d890ad87a2a70c135a3bf4b4e` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0xb616945250ccef6135006a869d0c7f5b1406854c` | royaltySplitter | impl | inactive | no |
+| ethereum | `0xb668beb1fa440f6cf2da0399f8c28cab993bdd65` | NTCitizenDeploy | impl | live | no |
+| ethereum | `0xb920531f7eb6d73a15809893d72a2caebb908627` | NTStakedTokenV2 | impl | inactive | no |
+| ethereum | `0xb9951b43802dcf3ef5b14567cb17adf367ed1c0f` | NTS1Citizen | proxy | inactive | no |
+| ethereum | `0xc0aa011fb8bf8e2cdba5c4f059bcd6e699746789` | ERC1967Proxy-5 | proxy | inactive | no |
+| ethereum | `0xc54e36257978b13c94f5e7930db2d2fcdc2e06d7` | NTHandIdentityMint | impl | inactive | no |
+| ethereum | `0xcc958ec86d62a479c8490538abf4333aa632edf3` | NTBytesBridge | impl | inactive | no |
+| ethereum | `0xcdaf3bf8be28f31540c8cbd7dfb4c9683555bb65` | ERC1967Proxy | impl | live | no |
+| ethereum | `0xcfc6a15b2952b6014a993a0c16c9d580d862e21a` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0xd37ea75dd3c499eda76304f538cbf356ed9e7ed9` | NTStakedTokenV2 | proxy | inactive | no |
+| ethereum | `0xdf9a7c4bad39cc914e204d1adab53da21e2fafaa` | royaltySplitter-2 | impl | live | no |
+| ethereum | `0xe5bb82eb711423a708ec07a05ee1437bce998747` | NTHandIdentityMint | impl | inactive | no |
+| ethereum | `0xe7489ea1847395d7eead33e9c85fe327d513d249` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0xf5205c058adf284ba75420428b09c846c78428f5` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0xf53eb638f279baa3994cd7ac2846deb31b329e9c` | NTBytesBurner | impl | inactive | no |
+| ethereum | `0xf824b21065920ad8f6a2b2ae69107fd35d971ed6` | royaltySplitter | impl | inactive | no |
+| ethereum | `0xf90980ae7a44e2d18b9615396ff5e9252f1df639` | NTS2LandDeploy | impl | live | no |
+| ethereum | `0xfce9ab0471d5c188dc7ff5bc68d280dbb601745a` | NTConfig | proxy | inactive | no |
+| ethereum | `0xfd167e22ebe42b69aa6ddb74b17be34588fcaa60` | NTCitizenHandMint | impl | inactive | no |
+| ethereum | `0xfe0eab4c959e3972b68e33b29bc297f0f23d2924` | ERC1967Proxy-3 | impl | live | no |
+| ethereum | `0xfeb09c7e130a4b87b27ebd648ec485657b688b34` | UniswapV3Pool | impl | live | no |

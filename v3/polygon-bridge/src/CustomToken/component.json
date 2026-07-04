@@ -1,0 +1,18 @@
+{
+  "component": "CustomToken",
+  "main_contract": "CustomToken",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x45541c765f6834389601434150832725dadf8879",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

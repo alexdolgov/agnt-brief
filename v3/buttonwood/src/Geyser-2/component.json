@@ -1,0 +1,18 @@
+{
+  "component": "Geyser-2",
+  "main_contract": "Geyser",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1ec9d57f5295a82e8bd24e045db83100d09f053",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

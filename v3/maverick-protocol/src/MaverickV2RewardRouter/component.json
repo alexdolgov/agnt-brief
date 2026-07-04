@@ -1,0 +1,18 @@
+{
+  "component": "MaverickV2RewardRouter",
+  "main_contract": "MaverickV2RewardRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xd837fcba68a6a5aa63f791ea51f258d30546d2c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ExchangerWithVirtualSynth",
+  "main_contract": "ExchangerWithVirtualSynth",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bfdc04b38251394542586969e2356d0d731f7de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RewardEstimator",
+  "main_contract": "RewardEstimator",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x416ecd9fdeb00666c464a6c07748bd60406d4148",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

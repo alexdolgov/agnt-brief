@@ -1,0 +1,26 @@
+{
+  "component": "TSAggregatorChainflip_V1",
+  "main_contract": "TSAggregatorChainflip_V1",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x029c7a9098d6efa723df308d3278211cd68b05ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd917c32cfa50b0fca692a208118afe4d1d06f1f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

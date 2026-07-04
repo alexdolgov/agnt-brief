@@ -1,0 +1,18 @@
+{
+  "component": "PositionToken",
+  "main_contract": "PositionToken",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26429451aab5e4c91277e510f4289ddb8ae616a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

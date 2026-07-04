@@ -1,0 +1,18 @@
+{
+  "component": "DepositWithdrawalProxy",
+  "main_contract": "DepositWithdrawalProxy",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1a3752eb5db6b2ac0207ce3847f18743d3facca5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

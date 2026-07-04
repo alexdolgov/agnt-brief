@@ -1,0 +1,18 @@
+{
+  "component": "SubsidyHarvester",
+  "main_contract": "SubsidyHarvester",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7e344274b7b1466509a8d4e1814cdf621998b873",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

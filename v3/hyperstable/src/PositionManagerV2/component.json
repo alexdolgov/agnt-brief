@@ -1,0 +1,18 @@
+{
+  "component": "PositionManagerV2",
+  "main_contract": "PositionManagerV2",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

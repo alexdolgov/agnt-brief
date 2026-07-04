@@ -1,0 +1,18 @@
+{
+  "component": "SharesTimeLock",
+  "main_contract": "SharesTimeLock",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x046b9c3a8a02a802fba7e61054b79e28e0928f01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

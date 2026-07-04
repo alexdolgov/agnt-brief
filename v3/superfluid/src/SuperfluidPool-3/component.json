@@ -1,0 +1,53 @@
+{
+  "component": "SuperfluidPool-3",
+  "main_contract": "SuperfluidPool",
+  "source_file_count": 51,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2023-12%20Trail%20of%20Bits%20-%20Changes%20Since%20Audit.md",
+    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2023-12%20Trail%20of%20Bits%20-%20Comprehensive%20Report%20with%20Fix%20Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d35fc1c2031b63ee9f068a417e61c9626c6277f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3e834ac987635976beb4ab944cf683db5c0e3e80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5ab84e4b3a5f418c95b77dbdecfaf18d0fd3b3e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf17e88391b68c2a5972131f5044fd6ace665f221",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xff04c024e83f4d8e5d47a92d6f070140162845d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

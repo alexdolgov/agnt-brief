@@ -1,0 +1,18 @@
+{
+  "component": "IROFTAdapter",
+  "main_contract": "IROFTAdapter",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xfd0fa49f8aa1d61da390e10ead23c650b0f9c2b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

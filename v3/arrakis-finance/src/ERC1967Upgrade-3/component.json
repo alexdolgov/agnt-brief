@@ -1,0 +1,26 @@
+{
+  "component": "ERC1967Upgrade-3",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe278c1944ba3321c1079abf94961e9ff1127a265",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf95e09ebd0b4e36ac14315a483b4bb4647b2bb0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

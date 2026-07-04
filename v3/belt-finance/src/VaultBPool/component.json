@@ -1,0 +1,44 @@
+{
+  "component": "VaultBPool",
+  "main_contract": "VaultBPool",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BeltFi/belt-contract/blob/main/audit/%5BENG%5DBELTFI_Security_Assessment.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7341579c04ae64acdb116f1afc7ce26076090f68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x882880cefa8e24af163db656117dc188afab96d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8f6feb34006d9c6b831b62bcc5539a218d1fa201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeff8b733f12ae6902409047c44ad3ee0bf58f201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

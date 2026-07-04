@@ -1,0 +1,18 @@
+{
+  "component": "Voting",
+  "main_contract": "Voting",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x21dfb0a12d77f4e0d2cf9008d0c2643d1e36da41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

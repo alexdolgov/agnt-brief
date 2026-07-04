@@ -1,0 +1,20 @@
+{
+  "component": "VaultBunnyMaximizer",
+  "main_contract": "VaultBunnyMaximizer",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/PancakeBunny-finance/Bunny/blob/main/audits/%5BHAECHI%20AUDIT%5D%20PancakeBunny%20Smart%20Contract%20Audit%20Report%20ver%202.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x317e663d882223aace086778fbcdf21b6264949e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

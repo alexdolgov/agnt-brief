@@ -1,0 +1,42 @@
+{
+  "component": "ERC20DestinationVault",
+  "main_contract": "ERC20DestinationVault",
+  "source_file_count": 71,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x116b3e86f2b04c21605c5fc4b95ba6a82dbf8f3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b025dd2f994885b03173380c5452996551ad095",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaeb5492b001aee78c34cf3b46b21f47301fb97c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb6b90d60192ba7cf78f6da06a8e73be5cdd1362e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

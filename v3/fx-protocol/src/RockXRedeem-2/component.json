@@ -1,0 +1,18 @@
+{
+  "component": "RockXRedeem-2",
+  "main_contract": "RockXRedeem",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x876868aaae2ef4f74a63a25e8d221c238e7de595",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

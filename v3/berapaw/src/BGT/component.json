@@ -1,0 +1,18 @@
+{
+  "component": "BGT",
+  "main_contract": "BGT",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x656b95e550c07a9ffe548bd4085c72418ceb1dba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

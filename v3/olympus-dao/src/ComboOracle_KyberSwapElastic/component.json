@@ -1,0 +1,18 @@
+{
+  "component": "ComboOracle_KyberSwapElastic",
+  "main_contract": "ComboOracle_KyberSwapElastic",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x734fd1fd1f3720379f52cb9d8168d76cd1ca4a73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

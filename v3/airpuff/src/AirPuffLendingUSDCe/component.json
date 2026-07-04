@@ -1,0 +1,18 @@
+{
+  "component": "AirPuffLendingUSDCe",
+  "main_contract": "AirPuffLendingUSDCe",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3b9e25544c5a388175c24a00a8bdce8982f89c27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

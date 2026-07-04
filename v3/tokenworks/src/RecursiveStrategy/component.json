@@ -1,0 +1,18 @@
+{
+  "component": "RecursiveStrategy",
+  "main_contract": "RecursiveStrategy",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd9e9f443f653bd72e44a87ea6cb27b9721465481",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

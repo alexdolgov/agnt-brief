@@ -1,0 +1,18 @@
+{
+  "component": "DirectLoanFixedCollectionOffer",
+  "main_contract": "DirectLoanFixedCollectionOffer",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0c6e59b50c32530c627107f50acc71958c4341f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

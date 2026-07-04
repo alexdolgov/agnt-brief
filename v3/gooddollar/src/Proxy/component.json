@@ -1,0 +1,18 @@
+{
+  "component": "Proxy",
+  "main_contract": "Proxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x62b8b11039fcfe5ab0c56e502b1c372a3d2a9c7a",
+      "is_proxy": true,
+      "implementation_address": "0x880c4641702d5e12d6a881bb6d8fc425e98cb398",
+      "liveness": "live"
+    }
+  ]
+}

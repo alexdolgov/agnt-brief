@@ -1,0 +1,18 @@
+{
+  "component": "EdgeFactory",
+  "main_contract": "EdgeFactory",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0ddcb0a765d09d86e526de7a9839398159274a63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

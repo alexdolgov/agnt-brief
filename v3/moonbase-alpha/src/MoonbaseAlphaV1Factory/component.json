@@ -1,0 +1,26 @@
+{
+  "component": "MoonbaseAlphaV1Factory",
+  "main_contract": "MoonbaseAlphaV1Factory",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x44b678f32a2f6abb72eefa2df58f12d17c3ed403",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7e666d934f7525df840d0cffeaa3d6bf3b3253a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

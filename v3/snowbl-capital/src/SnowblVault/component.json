@@ -1,0 +1,18 @@
+{
+  "component": "SnowblVault",
+  "main_contract": "SnowblVault",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x21731f4d4250247e2a2922dfc81164017377b72d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

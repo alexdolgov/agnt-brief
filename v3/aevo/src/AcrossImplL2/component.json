@@ -1,0 +1,18 @@
+{
+  "component": "AcrossImplL2",
+  "main_contract": "AcrossImplL2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2ddf16ba6d0180e5357d5e170ef1917a01b41fc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

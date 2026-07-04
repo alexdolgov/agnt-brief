@@ -1,0 +1,44 @@
+{
+  "component": "MultiChainLayerZeroTellerWithMultiAssetSupport",
+  "main_contract": "MultiChainLayerZeroTellerWithMultiAssetSupport",
+  "source_file_count": 55,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5cce6cb6b4b62c020f0cfcdb95fcdf6ca706be88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97d0b97a9fa017f8ad2565a5c6aed5745f3918b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ff67b826b34fee9bf4135962754a808c4a14fbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd567b6d8e9c95d8a29e60018156becabdc63e851",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

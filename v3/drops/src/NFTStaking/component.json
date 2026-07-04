@@ -1,0 +1,26 @@
+{
+  "component": "NFTStaking",
+  "main_contract": "NFTStaking",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3bc614ed268ea7fc30230c903706d0608bdef1a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x831fa725f0aa4dc5fd0ce082952a9a299cf794b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

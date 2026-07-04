@@ -1,0 +1,18 @@
+{
+  "component": "NLPLock",
+  "main_contract": "NLPLock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x07f1b50d5ae24ec41aa7269d65a5e23e8401542a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BSCSBNBLPearnBSCSIDOPool",
+  "main_contract": "BSCSBNBLPearnBSCSIDOPool",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3036f3195cf84a3d95a0dde8bdf137ae7fe7985e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4ccc37ae6baaf1af67899cf8cf0c809af31d7e7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

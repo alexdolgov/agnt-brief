@@ -1,0 +1,20 @@
+{
+  "component": "ALDPlus",
+  "main_contract": "ALDPlus",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/aladdindao"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x774e4ee61dfcdba5a574c113abb03a0a6634fbe4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

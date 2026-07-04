@@ -1,0 +1,18 @@
+{
+  "component": "NWOStatePayout",
+  "main_contract": "NWOStatePayout",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26a61de7e9c23ae1e93f291712e0d41c5dc2ad01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

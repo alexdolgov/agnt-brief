@@ -1,0 +1,42 @@
+{
+  "component": "RWAEscrowFarm",
+  "main_contract": "RWAEscrowFarm",
+  "source_file_count": 39,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04d5521ac09f8823338e8163dd8badaee39f3271",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75b4d36302380099d94271bfc8bdd12b07ffad5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e5efc5f387d8661c1afb2469b7eef6972451852",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe919c66475f2f30d285c768853e6b5b23ef181cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

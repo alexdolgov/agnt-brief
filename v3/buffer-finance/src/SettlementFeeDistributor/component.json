@@ -1,0 +1,34 @@
+{
+  "component": "SettlementFeeDistributor",
+  "main_contract": "SettlementFeeDistributor",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x19b568338749853a093debbd108f3be06975c152",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9652c3b904fa2f6b9ebfa0713e6dd0a2bf18e383",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbce58d6837025c3a3f2c4bd8ae822f12fc0b71d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

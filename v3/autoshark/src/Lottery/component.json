@@ -1,0 +1,18 @@
+{
+  "component": "Lottery",
+  "main_contract": "Lottery",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x17c672a9a549c98338664530feb207fc17422f4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

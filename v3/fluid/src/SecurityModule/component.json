@@ -1,0 +1,18 @@
+{
+  "component": "SecurityModule",
+  "main_contract": "SecurityModule",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0dfec70632fb5ec3a867db4bf08acd643fa469c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

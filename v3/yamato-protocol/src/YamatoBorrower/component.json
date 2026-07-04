@@ -1,0 +1,18 @@
+{
+  "component": "YamatoBorrower",
+  "main_contract": "YamatoBorrower",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7edfd33fc389c9b9c0e3350ac618912053cb4cc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BunnyParkCakeBPPoolV2",
+  "main_contract": "BunnyParkCakeBPPoolV2",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdeec895ce7245e40e971194cb7e92a9e22ff8543",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

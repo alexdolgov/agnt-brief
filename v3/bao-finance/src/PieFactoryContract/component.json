@@ -1,0 +1,18 @@
+{
+  "component": "PieFactoryContract",
+  "main_contract": "PieFactoryContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6a10bb7ac83fdd9cecdb13a8cfc3fc0a017912e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

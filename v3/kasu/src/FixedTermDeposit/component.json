@@ -1,0 +1,26 @@
+{
+  "component": "FixedTermDeposit",
+  "main_contract": "FixedTermDeposit",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1617b79c57e00c862941eb578fd134c4d1c0f833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x757ab3139e09beb9ccdf59762ad00825efae5ed3",
+      "is_proxy": true,
+      "implementation_address": "0x138fcb1d9d921bf49fbd23a82a9c5ac52ef7ea30",
+      "liveness": "live"
+    }
+  ]
+}

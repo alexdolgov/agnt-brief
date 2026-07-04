@@ -1,0 +1,18 @@
+{
+  "component": "StargateCurveSwapper",
+  "main_contract": "StargateCurveSwapper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67462167ade322938557101c2f6e16f39e296080",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

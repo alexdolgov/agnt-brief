@@ -1,0 +1,18 @@
+{
+  "component": "LPStaking",
+  "main_contract": "LPStaking",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x224d8fd7ab6ad4c6eb4611ce56ef35dec2277f03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

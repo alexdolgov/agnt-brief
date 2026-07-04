@@ -1,0 +1,18 @@
+{
+  "component": "ExternalOARB",
+  "main_contract": "ExternalOARB",
+  "source_file_count": 96,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc5e16f5009776ab645d6719b72962892428b2ac2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

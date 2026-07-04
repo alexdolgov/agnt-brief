@@ -1,0 +1,18 @@
+{
+  "component": "CheckForReduction",
+  "main_contract": "CheckForReduction",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x426e43b82513f17e375681a15ded0c88720aca86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

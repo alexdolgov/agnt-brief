@@ -1,0 +1,42 @@
+{
+  "component": "ERC1967Upgrade",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 16,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x01f7df622dde3b7d234aadbe282dda24cead9d21",
+      "is_proxy": true,
+      "implementation_address": "0x38bd4396cb994a43ed84f012448a5b9cab5652b0",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x15e44c3f3f9b34fc49cc15a18a597bf80f144bc9",
+      "is_proxy": true,
+      "implementation_address": "0x445715f83e2ae91d8660a2f6dd68cc7ed6a5537b",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x576314f851732b208d807260fe19fec7dba3e40c",
+      "is_proxy": true,
+      "implementation_address": "0x8791100e8134f5a7221c23d6a17c2c3a4486a60c",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xfec64ae675cc4b1aacf8f9c0abead585c5496382",
+      "is_proxy": true,
+      "implementation_address": "0xdbe0c0b891b3c58a320b32e5426acff0efdf463f",
+      "liveness": "live"
+    }
+  ]
+}

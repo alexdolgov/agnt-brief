@@ -1,0 +1,18 @@
+{
+  "component": "Comet-6",
+  "main_contract": "Comet",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8495af03fb797e2965bcb42cb0693e1c15614798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

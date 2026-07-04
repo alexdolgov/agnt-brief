@@ -1,0 +1,18 @@
+{
+  "component": "PEN",
+  "main_contract": "PEN",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ee3188a3f8adee1d736edd4ae85000105c88f66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

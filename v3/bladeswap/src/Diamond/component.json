@@ -1,0 +1,18 @@
+{
+  "component": "Diamond",
+  "main_contract": "Diamond",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x10f6b147d51f7578f760065df7f174c3bc95382c",
+      "is_proxy": true,
+      "implementation_address": "0xc56024f6ed02b5f8c76132e4e66eed780bdf5d9b",
+      "liveness": "live"
+    }
+  ]
+}

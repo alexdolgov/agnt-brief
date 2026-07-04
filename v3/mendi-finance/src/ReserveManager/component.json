@@ -1,0 +1,26 @@
+{
+  "component": "ReserveManager",
+  "main_contract": "ReserveManager",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7c2e7b17ad0346e0305232f845c40fb7a91a49e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa166023647dc4e81f4c8a267967a8dc2c2d5c5a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

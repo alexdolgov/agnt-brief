@@ -1,0 +1,18 @@
+{
+  "component": "FairAuctionNoES",
+  "main_contract": "FairAuctionNoES",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa0fa329b8977125c5e47fe439c69658cb727c349",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

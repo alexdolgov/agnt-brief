@@ -1,0 +1,42 @@
+{
+  "component": "ZkEvmVerifierV1",
+  "main_contract": "ZkEvmVerifierV1",
+  "source_file_count": 6,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f7b737155e6e0dece9cd8cd3240d15939c58184",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b289e4a5331bafbc6ccb2f10c39b8edcecdb247",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x585dfad7bf4099e011d185e266907a8ab60dad2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63fb51c55d9605a75f8872c80de260a00facfaa2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

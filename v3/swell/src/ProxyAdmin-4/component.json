@@ -1,0 +1,18 @@
+{
+  "component": "ProxyAdmin-4",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd750b84845f1cadfeac63f96ec74635e949bfd14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

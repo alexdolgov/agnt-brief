@@ -1,0 +1,45 @@
+{
+  "component": "HypervisorNFPM",
+  "main_contract": "HypervisorNFPM",
+  "source_file_count": 52,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/GammaStrategies/hypervisor/blob/master/audits/Bailsec%20-%20Gamma%20-%20Vaults%20-%20Final%20Report.pdf",
+    "https://github.com/GammaStrategies/hypervisor/blob/master/audits/Gamma_Position_Managers_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x00f26251d7079ff8825b98d6bd66936ebbd2fd49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x38379b1b12064d6dcc096f481875ecfc689d66fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x9d2ef0b6722448d5b3864a77e40ae44ee51ef352",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xc21a113018fb3f993cc0148aefdd79c7421a9f3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

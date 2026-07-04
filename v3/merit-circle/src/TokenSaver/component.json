@@ -1,0 +1,18 @@
+{
+  "component": "TokenSaver",
+  "main_contract": "TokenSaver",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c298adeb93907d87b04ec9087177c85cca0bd73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

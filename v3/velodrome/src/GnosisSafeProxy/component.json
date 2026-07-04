@@ -1,0 +1,18 @@
+{
+  "component": "GnosisSafeProxy",
+  "main_contract": "GnosisSafeProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x838352f4e3992187a33a04826273db3992ee2b3f",
+      "is_proxy": true,
+      "implementation_address": "0xfb1bffc9d739b8d520daf37df666da4c687191ea",
+      "liveness": "live"
+    }
+  ]
+}

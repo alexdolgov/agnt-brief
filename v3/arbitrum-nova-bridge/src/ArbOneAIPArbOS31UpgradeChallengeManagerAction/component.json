@@ -1,0 +1,18 @@
+{
+  "component": "ArbOneAIPArbOS31UpgradeChallengeManagerAction",
+  "main_contract": "ArbOneAIPArbOS31UpgradeChallengeManagerAction",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19b715cf310c28c9020e53aaa11ce9df42e718b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

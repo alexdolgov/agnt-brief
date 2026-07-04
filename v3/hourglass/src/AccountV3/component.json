@@ -1,0 +1,18 @@
+{
+  "component": "AccountV3",
+  "main_contract": "AccountV3",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x78db6a136edd0f70bed7a6eb5ca2fdf6ee16e8d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

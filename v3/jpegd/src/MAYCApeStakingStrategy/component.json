@@ -1,0 +1,18 @@
+{
+  "component": "MAYCApeStakingStrategy",
+  "main_contract": "MAYCApeStakingStrategy",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x066de3369aee792274d55d53fe9c14d06f8b50d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MOANI",
+  "main_contract": "MOANI",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x42edf547600d7e86be4b44cb7c6d8f8a2c948215",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

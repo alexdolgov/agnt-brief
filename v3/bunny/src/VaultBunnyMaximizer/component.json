@@ -1,0 +1,42 @@
+{
+  "component": "VaultBunnyMaximizer",
+  "main_contract": "VaultBunnyMaximizer",
+  "source_file_count": 31,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x317e663d882223aace086778fbcdf21b6264949e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x87627baacc06725c46684bfa489871b4ff002ff9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8df3e90bfb9e234a605d0d166377d410e3a3c46e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc8e88de1493220631fcd51e14219a846de957fd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

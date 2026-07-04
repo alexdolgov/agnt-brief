@@ -1,0 +1,18 @@
+{
+  "component": "ClipperResolver",
+  "main_contract": "ClipperResolver",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x235d3afac42f5e5ff346cb6c19af13194988551f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

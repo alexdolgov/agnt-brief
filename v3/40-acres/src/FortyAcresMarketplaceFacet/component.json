@@ -1,0 +1,26 @@
+{
+  "component": "FortyAcresMarketplaceFacet",
+  "main_contract": "FortyAcresMarketplaceFacet",
+  "source_file_count": 45,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b0a8766ea8d4ae8b2b8abf0fd1a3793c8aa7f25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x678648b0e243e82a4511acad9c3a5df33c4a071e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

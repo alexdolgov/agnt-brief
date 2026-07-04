@@ -1,0 +1,18 @@
+{
+  "component": "MONStaking",
+  "main_contract": "MONStaking",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8bc3702c35d33e5df7cb0f06cb72a0c34ae0c56f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "NFTXStakingZap-2",
+  "main_contract": "NFTXStakingZap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2021-12-nftx"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc774d5260ec66e5dd4627e1dd800eff3911345c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

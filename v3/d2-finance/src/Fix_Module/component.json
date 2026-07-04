@@ -1,0 +1,34 @@
+{
+  "component": "Fix_Module",
+  "main_contract": "Fix_Module",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x2406aacbdf8463176deb285adaa81768415b6c7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x2ae031ba901305dbfef277d82ce51c0a1a94c8c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x7d59a58d91ca515d54b7a6a851abdb0f4e7afb53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

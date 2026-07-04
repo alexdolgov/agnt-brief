@@ -1,0 +1,18 @@
+{
+  "component": "HOTExecutor",
+  "main_contract": "HOTExecutor",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5a947a66a15205ed9cd02c3be24cdf5c1d10183",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

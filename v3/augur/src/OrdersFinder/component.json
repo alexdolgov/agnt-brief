@@ -1,0 +1,18 @@
+{
+  "component": "OrdersFinder",
+  "main_contract": "OrdersFinder",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01f2aba090b5fa26a64ea9e5afd32f6aab6ba3df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "YyStaking",
+  "main_contract": "YyStaking",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbb82b43bf2057b804253d5db8c18a647fc1f3403",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

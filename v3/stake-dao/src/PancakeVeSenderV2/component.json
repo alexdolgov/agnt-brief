@@ -1,0 +1,18 @@
+{
+  "component": "PancakeVeSenderV2",
+  "main_contract": "PancakeVeSenderV2",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x79d4d0e75b736b4131306e77e7cd2f2595d56628",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

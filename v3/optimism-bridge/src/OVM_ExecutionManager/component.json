@@ -1,0 +1,18 @@
+{
+  "component": "OVM_ExecutionManager",
+  "main_contract": "OVM_ExecutionManager",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2745c24822f542bbffb41c6cb20edf766b5619f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

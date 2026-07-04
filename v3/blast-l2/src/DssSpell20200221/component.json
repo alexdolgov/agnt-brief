@@ -1,0 +1,26 @@
+{
+  "component": "DssSpell20200221",
+  "main_contract": "DssSpell20200221",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2af6ef584c8937fbec4a8f50ae5ed1fe6c47bdc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd24fbbb4497ad32308bda735683b55499ddc2cad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

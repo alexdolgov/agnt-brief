@@ -1,0 +1,18 @@
+{
+  "component": "DPPFactory",
+  "main_contract": "DPPFactory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xafe0a75dffb395eaabd0a7e1bbbd0b11f8609eef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

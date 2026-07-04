@@ -1,0 +1,18 @@
+{
+  "component": "IronPool",
+  "main_contract": "IronPool",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x27371de574ef0d678a6bf0d9cf885afcbe50f701",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

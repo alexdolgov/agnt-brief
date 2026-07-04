@@ -1,0 +1,34 @@
+{
+  "component": "Staking",
+  "main_contract": "Staking",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x296ebf81430ea5561143b4b15b17cc3c549e2a53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99660f23daed72b92de9a6431ce3c75c5427c602",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3d14a6e96bcbd7915b940504537ab9a4ca1e55c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DebtToken",
+  "main_contract": "DebtToken",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd4fe6e1e37dfcf35e9eeb54d4cca149d1c10239f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

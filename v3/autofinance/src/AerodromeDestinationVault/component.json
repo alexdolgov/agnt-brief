@@ -1,0 +1,42 @@
+{
+  "component": "AerodromeDestinationVault",
+  "main_contract": "AerodromeDestinationVault",
+  "source_file_count": 75,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x58c2233399b85b53c5506f78eaaae9b0dba1ed3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x945a4f719018edba445ca67bda43663c815835ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa94031ed4b316b043464fdd5482877f42a39845a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd18db4dd6af6a7536ad7f863c136463681e0cdad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

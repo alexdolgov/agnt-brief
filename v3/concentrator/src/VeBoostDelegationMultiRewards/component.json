@@ -1,0 +1,26 @@
+{
+  "component": "VeBoostDelegationMultiRewards",
+  "main_contract": "VeBoostDelegationMultiRewards",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xda9846665bdb44b0d0caffd0d1d4a539932bebdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1f9c8ebbc80a013caf0940fdd1a8554d763b9cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

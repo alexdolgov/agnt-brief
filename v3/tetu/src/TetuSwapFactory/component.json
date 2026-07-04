@@ -1,0 +1,18 @@
+{
+  "component": "TetuSwapFactory",
+  "main_contract": "TetuSwapFactory",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1f822e6c535a39cb7799200018d943133abba07c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

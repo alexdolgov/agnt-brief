@@ -1,0 +1,26 @@
+{
+  "component": "MTGYAirdropper",
+  "main_contract": "MTGYAirdropper",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87db3450ae10ae95b4e683c2d4a2270a7cfc8a97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e26185f07d890266e25af6da810dd31cef93902",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

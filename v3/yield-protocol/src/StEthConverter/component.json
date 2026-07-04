@@ -1,0 +1,18 @@
+{
+  "component": "StEthConverter",
+  "main_contract": "StEthConverter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93d232213cca6e5e7105199abd8590293c3eb106",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

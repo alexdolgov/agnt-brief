@@ -1,0 +1,26 @@
+{
+  "component": "Child_Liquidity_Gauge",
+  "main_contract": "Child Liquidity Gauge",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x59562f93c447656f6e4799fc1fc7c3d977c3324f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9f7e65887413a8497b87ba2058ce6e4ef4b37013",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

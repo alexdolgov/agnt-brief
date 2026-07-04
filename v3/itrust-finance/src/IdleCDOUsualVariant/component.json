@@ -1,0 +1,42 @@
+{
+  "component": "IdleCDOUsualVariant",
+  "main_contract": "IdleCDOUsualVariant",
+  "source_file_count": 29,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x41b55b28de948d9e5bbe62f30d47f8f0f29a7e8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c31fdca14368e0da2da7e518687012287bb90b1",
+      "is_proxy": true,
+      "implementation_address": "0xef8d9df3b1bc40bae634f75a5ab144e82ad7128e",
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c85f2faf81e18ebfd9a17510d8bd5fe8ebb16e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xef8d9df3b1bc40bae634f75a5ab144e82ad7128e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

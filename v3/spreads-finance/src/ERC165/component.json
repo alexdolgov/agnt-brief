@@ -1,0 +1,18 @@
+{
+  "component": "ERC165",
+  "main_contract": "ERC165",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x085546675239820f0eb897857209868c0c8ed478",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

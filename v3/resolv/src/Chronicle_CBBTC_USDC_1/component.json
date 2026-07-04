@@ -1,0 +1,18 @@
+{
+  "component": "Chronicle_CBBTC_USDC_1",
+  "main_contract": "Chronicle_CBBTC_USDC_1",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3131e6a68bfb42976ef574af042f67d322098747",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityConversionRates",
+  "main_contract": "LiquidityConversionRates",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9afeb4122240b58e67a55e11d55555b4ad73f4d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

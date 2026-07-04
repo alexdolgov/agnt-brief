@@ -1,0 +1,26 @@
+{
+  "component": "DishStakingPowerToken",
+  "main_contract": "DishStakingPowerToken",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x169895db3270b3df63782bd3c7f758710b886f65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x54f135a5fb523e467bcd6aa934939e1f25382275",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

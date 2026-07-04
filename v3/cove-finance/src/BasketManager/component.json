@@ -1,0 +1,26 @@
+{
+  "component": "BasketManager",
+  "main_contract": "BasketManager",
+  "source_file_count": 75,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39ef7c7f18406485c550193bb1fff6883f34bd2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4cb99eb83a0abed477c4a99234bc58e0464aa280",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

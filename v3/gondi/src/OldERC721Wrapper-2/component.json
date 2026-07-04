@@ -1,0 +1,18 @@
+{
+  "component": "OldERC721Wrapper-2",
+  "main_contract": "OldERC721Wrapper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0ec4e4ba06dfb2dfaf21a69fc78310d80fc5497",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

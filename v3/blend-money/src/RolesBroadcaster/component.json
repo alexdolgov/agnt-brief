@@ -1,0 +1,20 @@
+{
+  "component": "RolesBroadcaster",
+  "main_contract": "RolesBroadcaster",
+  "source_file_count": 54,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blendmoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6f94ac2c4129a7f1435532f39913dfd23d061263",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

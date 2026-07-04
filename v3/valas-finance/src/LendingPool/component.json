@@ -1,0 +1,18 @@
+{
+  "component": "LendingPool",
+  "main_contract": "LendingPool",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x20080d97ded0b444adc7bee1fc91f94a530de98f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

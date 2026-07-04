@@ -1,0 +1,18 @@
+{
+  "component": "BuryLeash",
+  "main_contract": "BuryLeash",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa57d319b3cf3ad0e4d19770f71e63cf847263a0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

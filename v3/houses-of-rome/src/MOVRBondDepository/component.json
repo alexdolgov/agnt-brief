@@ -1,0 +1,18 @@
+{
+  "component": "MOVRBondDepository",
+  "main_contract": "MOVRBondDepository",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x54c6afb58aa21d11aeafe6b199f9663e908345e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

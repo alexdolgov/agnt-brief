@@ -1,0 +1,18 @@
+{
+  "component": "BabyBearsONFT",
+  "main_contract": "BabyBearsONFT",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xddeaf391c4be2d01ca52abb8c159a06820ef078c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

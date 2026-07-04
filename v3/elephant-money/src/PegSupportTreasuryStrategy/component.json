@@ -1,0 +1,18 @@
+{
+  "component": "PegSupportTreasuryStrategy",
+  "main_contract": "PegSupportTreasuryStrategy",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b5eeb214a87d1d296652dec8c48bbdd1590e567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

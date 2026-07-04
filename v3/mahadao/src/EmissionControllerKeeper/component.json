@@ -1,0 +1,18 @@
+{
+  "component": "EmissionControllerKeeper",
+  "main_contract": "EmissionControllerKeeper",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6818f17e4894cb1dae9fd115f6da280291193c7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

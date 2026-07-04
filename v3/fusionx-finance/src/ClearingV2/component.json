@@ -1,0 +1,18 @@
+{
+  "component": "ClearingV2",
+  "main_contract": "ClearingV2",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x57f32fc5aeec2a1c6539291ae0088b203eb43bbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

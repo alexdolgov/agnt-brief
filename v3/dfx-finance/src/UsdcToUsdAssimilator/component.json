@@ -1,0 +1,26 @@
+{
+  "component": "UsdcToUsdAssimilator",
+  "main_contract": "UsdcToUsdAssimilator",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3cb209dc9ddc45ce4fd9a2f5dd33a8c6a9b6ea52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab23b50fc7835d0f1b892746992f28646305306c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

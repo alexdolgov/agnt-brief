@@ -1,0 +1,18 @@
+{
+  "component": "OrderbookUSD",
+  "main_contract": "OrderbookUSD",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca075cf7496d7fee464ceb98ccfbd3b6408bdf63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

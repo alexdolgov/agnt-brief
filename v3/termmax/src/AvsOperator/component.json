@@ -1,0 +1,18 @@
+{
+  "component": "AvsOperator",
+  "main_contract": "AvsOperator",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8969d7c2e3e5b056d5d4984031788eca923960f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

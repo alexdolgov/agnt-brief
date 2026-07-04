@@ -1,0 +1,18 @@
+{
+  "component": "OPStackChainMessenger",
+  "main_contract": "OPStackChainMessenger",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbad8e3a03a24c4606cc251cf7ec240260f04190e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

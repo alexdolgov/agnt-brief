@@ -1,0 +1,18 @@
+{
+  "component": "MiningRigV4",
+  "main_contract": "MiningRigV4",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x86d27a2c844c1bc559599ce68aa15d54f57e1edf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

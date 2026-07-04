@@ -1,0 +1,18 @@
+{
+  "component": "U3ReProxyUpgradablity",
+  "main_contract": "U3ReProxyUpgradablity",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd04dde065fe872adb6517b4bb0c11eaf49ce26a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

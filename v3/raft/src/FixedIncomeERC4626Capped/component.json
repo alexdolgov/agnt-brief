@@ -1,0 +1,26 @@
+{
+  "component": "FixedIncomeERC4626Capped",
+  "main_contract": "FixedIncomeERC4626Capped",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ba26bae6df1153e29813d7f926143f9c94402f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd2c0c4a6296d416c5eb6ae41d17ac4db4bdd5296",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

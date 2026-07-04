@@ -1,0 +1,18 @@
+{
+  "component": "BasePositionManager",
+  "main_contract": "BasePositionManager",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xabf9bdd9cf67b17c34202e87c65af006444a3fb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

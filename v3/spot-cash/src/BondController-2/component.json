@@ -1,0 +1,18 @@
+{
+  "component": "BondController-2",
+  "main_contract": "BondController",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b135c839d61808e1ec6f84151cd9429b0920374",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

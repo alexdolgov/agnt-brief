@@ -1,0 +1,18 @@
+{
+  "component": "Bridge-3",
+  "main_contract": "Bridge",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x931dda8e3d4e4b7832e9005812c979008b576441",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

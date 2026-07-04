@@ -1,0 +1,18 @@
+{
+  "component": "JPEGCardsCigStaking",
+  "main_contract": "JPEGCardsCigStaking",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff9233825542977cd093e9ffb8f0fc526164d3b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

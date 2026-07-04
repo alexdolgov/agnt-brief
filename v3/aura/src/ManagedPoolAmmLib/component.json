@@ -1,0 +1,18 @@
+{
+  "component": "ManagedPoolAmmLib",
+  "main_contract": "ManagedPoolAmmLib",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7d2248f194755dca9a1887099394f39476d28c9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PythPriceAggregator",
+  "main_contract": "PythPriceAggregator",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8426c1c576689d5a6fbea18102ec7de4e47753b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

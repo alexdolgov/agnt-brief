@@ -1,0 +1,18 @@
+{
+  "component": "UniV2LPImplementation",
+  "main_contract": "UniV2LPImplementation",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x51bee60fd420aee238f541685f8dc4250e66bada",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BoxExchange",
+  "main_contract": "BoxExchange",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31dcf50fa6c21f189a7953ce84387f50b77cf690",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

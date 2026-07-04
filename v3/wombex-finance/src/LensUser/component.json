@@ -1,0 +1,18 @@
+{
+  "component": "LensUser",
+  "main_contract": "LensUser",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8bba59856383fd09850af306929e8bfdc629df49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

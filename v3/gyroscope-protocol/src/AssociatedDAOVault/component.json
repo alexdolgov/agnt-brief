@@ -1,0 +1,18 @@
+{
+  "component": "AssociatedDAOVault",
+  "main_contract": "AssociatedDAOVault",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2321e23b3060e160195e138b62f8498546b0247",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

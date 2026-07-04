@@ -1,0 +1,18 @@
+{
+  "component": "SuperVerseStaker",
+  "main_contract": "SuperVerseStaker",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8c96edc82d111e3c5686f5abe738a82d54d0b887",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

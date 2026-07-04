@@ -1,0 +1,18 @@
+{
+  "component": "IdleCDOPolygon",
+  "main_contract": "IdleCDOPolygon",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x710426b69e50863b1689f36dc324265c7dd076c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

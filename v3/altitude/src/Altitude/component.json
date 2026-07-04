@@ -1,0 +1,18 @@
+{
+  "component": "Altitude",
+  "main_contract": "Altitude",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf80e51afb613d764fa61751affd3313c190a86bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StaticMetadataService",
+  "main_contract": "StaticMetadataService",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x18703d0117121f6a7476221e2afc57faf9866e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "InitializableERC20",
+  "main_contract": "InitializableERC20",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x99155e68ac1523b6f461f6427a90607eccf7bdf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

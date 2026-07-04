@@ -1,0 +1,18 @@
+{
+  "component": "Manageable-3",
+  "main_contract": "Manageable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7ff9315f538df7ec76ec4815249dd30519726460",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrderFacet",
+  "main_contract": "LimitOrderFacet",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x282f0ffa62f928398b162ac36d5d5949c6b4210a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

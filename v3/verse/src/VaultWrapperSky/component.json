@@ -1,0 +1,18 @@
+{
+  "component": "VaultWrapperSky",
+  "main_contract": "VaultWrapperSky",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a9680835591125ec533574610290003043a60fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "TetuPawnShop",
+  "main_contract": "TetuPawnShop",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/tetu"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0c9fa52d7ed12a6316d3738c80931ecbc6c49907",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

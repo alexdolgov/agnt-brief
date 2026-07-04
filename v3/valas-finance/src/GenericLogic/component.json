@@ -1,0 +1,26 @@
+{
+  "component": "GenericLogic",
+  "main_contract": "GenericLogic",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5c9290e07f7109ea8f3511a4c572cac40b0baf06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xae9c6b681de1970fb50272d5f9611c5d6fbee7d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Qi",
+  "main_contract": "Qi",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

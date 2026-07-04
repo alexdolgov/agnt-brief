@@ -1,0 +1,18 @@
+{
+  "component": "PendleRouterDecoderAndSanitizer",
+  "main_contract": "PendleRouterDecoderAndSanitizer",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x197927610dabd7b7f5f09c4b4f14f78644bbc9ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

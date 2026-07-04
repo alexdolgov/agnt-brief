@@ -1,0 +1,18 @@
+{
+  "component": "Leverage_Zapper",
+  "main_contract": "Leverage Zapper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbf3e996821d43ac3b6069ae74efa101ffc6137e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PreOlympusSales",
+  "main_contract": "PreOlympusSales",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8c6229d5f39ae5c53db75806002f380db73715ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

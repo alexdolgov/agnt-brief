@@ -1,0 +1,18 @@
+{
+  "component": "Alphix",
+  "main_contract": "Alphix",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0e4b892df7c5bcf5010faf4aa106074e555660c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

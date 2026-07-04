@@ -1,0 +1,18 @@
+{
+  "component": "VaultStrategyOpsLib",
+  "main_contract": "VaultStrategyOpsLib",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff41bb293a6eb4bda4f799137be5aa781dc8d86f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

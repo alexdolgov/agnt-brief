@@ -1,0 +1,18 @@
+{
+  "component": "NFTDescriptor",
+  "main_contract": "NFTDescriptor",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x85778c9284b24d5f4d58568a0707fb55ecc50023",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

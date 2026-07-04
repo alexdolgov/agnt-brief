@@ -1,0 +1,18 @@
+{
+  "component": "DADBridgeWrapper-2",
+  "main_contract": "DADBridgeWrapper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62a65d8d5803c825096c76509d9442819e444557",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AmpleforthWrapper",
+  "main_contract": "AmpleforthWrapper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2b9d7ba7b7e5fb4e51a8bac83fd43e90c947dc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

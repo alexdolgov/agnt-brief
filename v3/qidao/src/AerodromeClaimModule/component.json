@@ -1,0 +1,26 @@
+{
+  "component": "AerodromeClaimModule",
+  "main_contract": "AerodromeClaimModule",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x643c389f532b0e6b15296ba60b0f3e66564f6bad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdbcec81eadbe4eff4890ad6018d3a5a6980a3735",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

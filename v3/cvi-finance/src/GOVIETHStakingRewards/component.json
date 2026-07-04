@@ -1,0 +1,18 @@
+{
+  "component": "GOVIETHStakingRewards",
+  "main_contract": "GOVIETHStakingRewards",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x27792cda195d07ffb36e94e253d67361661a16dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

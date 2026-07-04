@@ -1,0 +1,18 @@
+{
+  "component": "BRC20-2",
+  "main_contract": "BRC20",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38e382f74dfb84608f3c1f10187f6bef5951de93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

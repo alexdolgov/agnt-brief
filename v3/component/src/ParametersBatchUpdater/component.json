@@ -1,0 +1,23 @@
+{
+  "component": "ParametersBatchUpdater",
+  "main_contract": "ParametersBatchUpdater",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/unitprotocol/protocol_docs/blob/master/Levelk_Security_Audit_Report.pdf",
+    "https://github.com/unitprotocol/protocol_docs/blob/master/Mixbytes%20Security%20Audit%20Report.pdf",
+    "https://github.com/unitprotocol/protocol_docs/blob/master/borrow_protocol.pdf",
+    "https://github.com/unitprotocol/protocol_docs/blob/master/certik-final-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4dd1a6db148becdadadfc407d23b725edd3cfb6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

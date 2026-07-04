@@ -1,0 +1,26 @@
+{
+  "component": "StafiUserDeposit",
+  "main_contract": "StafiUserDeposit",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x430cf6dd3e289adae63b50ff661d6bba2dbb3f28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x625b7fd68b35ee8dc2c9405a712fa450ccd357be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

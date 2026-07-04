@@ -1,0 +1,18 @@
+{
+  "component": "CacheGold",
+  "main_contract": "CacheGold",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b7820e62778c7317403d892f6501dd816f82730",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

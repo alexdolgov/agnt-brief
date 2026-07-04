@@ -1,0 +1,18 @@
+{
+  "component": "QueenStableSwap",
+  "main_contract": "QueenStableSwap",
+  "source_file_count": 127,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfcf44d5eb5c4a03d03cf5b567c7cde9b66ba5773",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

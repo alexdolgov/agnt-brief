@@ -1,0 +1,18 @@
+{
+  "component": "WavesTrackerv2",
+  "main_contract": "WavesTrackerv2",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdc5ecba2982939aadae114c0ded0d33ea4213fec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

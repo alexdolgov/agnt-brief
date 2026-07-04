@@ -1,0 +1,18 @@
+{
+  "component": "MockVault",
+  "main_contract": "MockVault",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe3881627b8deebccf9c23b291430a549fc0be5f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

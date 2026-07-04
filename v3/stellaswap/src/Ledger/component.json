@@ -1,0 +1,20 @@
+{
+  "component": "Ledger",
+  "main_contract": "Ledger",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/astrasecai/audit-reports/blob/main/AstraSec-AuditReport-StellaSwap-stGLMR.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xde5925dc4fb300c886330de31e19826f22a9ce40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MdgRewardPool",
+  "main_contract": "MdgRewardPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa814706d02d8014f2b6e2b9aba63660e6c26eb54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

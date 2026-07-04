@@ -1,0 +1,26 @@
+{
+  "component": "CollateralManager",
+  "main_contract": "CollateralManager",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6bf13f0244f4d6f35108d50aa92fca39add9d9c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa7833a8ef8c582aa788a8dbeef4318f877dc64b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "VoteCounterStorage",
+  "main_contract": "VoteCounterStorage",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e218061cb3ba321fcbad5ee88fe97ea1f92bc0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96b4973cdd121c07c3a9db963f7cbbb4babc9dd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

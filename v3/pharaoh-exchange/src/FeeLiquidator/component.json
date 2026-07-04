@@ -1,0 +1,18 @@
+{
+  "component": "FeeLiquidator",
+  "main_contract": "FeeLiquidator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x529377dcb455d8b47f67af881fa498419185fe73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Blacklist",
+  "main_contract": "Blacklist",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x107ac39903bdad94cb562e686e0a5e116d3dc814",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrumBridgeRegistry",
+  "main_contract": "ArbitrumBridgeRegistry",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c39bd79dcd8827c9bdf54c04b683cdc89fd0b13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

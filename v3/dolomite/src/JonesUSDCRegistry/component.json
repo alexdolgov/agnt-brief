@@ -1,0 +1,18 @@
+{
+  "component": "JonesUSDCRegistry",
+  "main_contract": "JonesUSDCRegistry",
+  "source_file_count": 95,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2b989e06e1887300c7bb01a713d7c899df945186",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "TokenVesting",
+  "main_contract": "TokenVesting",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3cb2f8f2312ab981c4da6f98735a2af79e781a3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6aec9e1a535060a13d6a3a9f62f773333c0b4fc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

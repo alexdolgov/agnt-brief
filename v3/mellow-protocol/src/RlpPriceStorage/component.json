@@ -1,0 +1,18 @@
+{
+  "component": "RlpPriceStorage",
+  "main_contract": "RlpPriceStorage",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03f75a4dce6a2aa260d98d10c2c606e5bcfff85c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

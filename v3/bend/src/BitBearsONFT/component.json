@@ -1,0 +1,18 @@
+{
+  "component": "BitBearsONFT",
+  "main_contract": "BitBearsONFT",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x72d876d9cdf4001b836f8e47254d0551eda2eebb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

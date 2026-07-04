@@ -1,0 +1,18 @@
+{
+  "component": "FoundingFrog",
+  "main_contract": "FoundingFrog",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e56f19235ff2a14c76332877a35d6af5bde07ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

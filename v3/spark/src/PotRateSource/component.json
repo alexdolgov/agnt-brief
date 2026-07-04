@@ -1,0 +1,21 @@
+{
+  "component": "PotRateSource",
+  "main_contract": "PotRateSource",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sparkdotfi/sparklend-advanced/blob/master/audits/v150-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/sparklend-advanced/blob/master/audits/v160-chainsecurity-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62b122a1d1ea2082c47c3fb70e788c168e96afd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

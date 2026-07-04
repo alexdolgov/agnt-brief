@@ -1,0 +1,18 @@
+{
+  "component": "StrategyJoeUsdceEtheLp",
+  "main_contract": "StrategyJoeUsdceEtheLp",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa9204e10fb899bbe8005ba4aa799091c1601ad29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

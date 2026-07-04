@@ -1,0 +1,20 @@
+{
+  "component": "StataTokenV2",
+  "main_contract": "StataTokenV2",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hyperlendx/audits/blob/master/aave/11-09-2024_Certora_StataTokenV2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x4376c06d866557fac5d0b5813526639c403bfcf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

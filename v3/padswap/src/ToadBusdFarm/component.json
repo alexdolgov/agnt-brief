@@ -1,0 +1,18 @@
+{
+  "component": "ToadBusdFarm",
+  "main_contract": "ToadBusdFarm",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf08a98fc54797290593ccbcc5d67bd48e315cf72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

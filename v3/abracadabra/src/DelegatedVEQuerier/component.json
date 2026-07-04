@@ -1,0 +1,18 @@
+{
+  "component": "DelegatedVEQuerier",
+  "main_contract": "DelegatedVEQuerier",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd0d5332b37294003f3a915753ea15e4e1bb0dc50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

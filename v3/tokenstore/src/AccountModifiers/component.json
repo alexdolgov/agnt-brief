@@ -1,0 +1,18 @@
+{
+  "component": "AccountModifiers",
+  "main_contract": "AccountModifiers",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6927d2026befaad51eb6cf48a0c612453f46ec09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

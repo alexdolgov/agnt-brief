@@ -1,0 +1,22 @@
+{
+  "component": "LaPoste",
+  "main_contract": "LaPoste",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Stake-DAO/audits/blob/main/votemarket/v2/laposte/2024-10-01_pashov_laposte.pdf",
+    "https://github.com/stake-dao/audits/blob/main/votemarket/v2/laposte/2024-10-01_pashov_laposte.pdf",
+    "https://github.com/stake-dao/laposte/blob/main/audits/PashovGroup-LaPoste-security-review-October.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0000058000021003e4754dca700c766de7601c2",
+      "is_proxy": true,
+      "implementation_address": "0xbf0000f5c600b1a84fe08f8d0013002ebc0064fe",
+      "liveness": "live"
+    }
+  ]
+}

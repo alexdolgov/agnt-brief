@@ -1,0 +1,18 @@
+{
+  "component": "UniV3LiquidityMining",
+  "main_contract": "UniV3LiquidityMining",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x032a49e27c44f357e335723b2c5575fbc8632284",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

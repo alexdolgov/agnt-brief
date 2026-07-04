@@ -1,0 +1,18 @@
+{
+  "component": "LendingVault",
+  "main_contract": "LendingVault",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x61a8606e04d350dfa1d1aaa68b37260746ae47d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

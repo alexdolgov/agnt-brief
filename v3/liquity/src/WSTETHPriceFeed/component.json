@@ -1,0 +1,18 @@
+{
+  "component": "WSTETHPriceFeed",
+  "main_contract": "WSTETHPriceFeed",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7aa2ba9e086a379d3beb224098bc634a46e314e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

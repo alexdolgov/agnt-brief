@@ -1,0 +1,26 @@
+{
+  "component": "TokenGeyser",
+  "main_contract": "TokenGeyser",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b1be7f8e6431514b20029cb7f2242ff9081b4b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8cfad371918ac38568588717bfeb802fd19a0d58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# dooar — deployments
+
+50 verified deployment(s) across 16 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| bsc | `0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c` | DooarSwapV2Factory | impl | live | no |
+| bsc | `0x53e0e51b5ed9202110d7ecd637a4581db8b9879f` | DooarSwapV2Router02-2 | impl | live | no |
+| ethereum | `0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c` | DooarSwapV2Pair | impl | live | no |
+| ethereum | `0x53e0e51b5ed9202110d7ecd637a4581db8b9879f` | DooarSwapV2Router02 | impl | live | no |
+| polygon | `0x00509e403ca5e24b91007472b79ca78e06c8268a` | GasHeroObject | impl | inactive | no |
+| polygon | `0x00c4f2b8677574bae73c72766d83534611739282` | GasHeroToken | impl | inactive | no |
+| polygon | `0x0add07566430e90bfbedba9eb6be206faab858b5` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x0f8a6a6d277c85519a0faeb552ec8c2578deb107` | GasHeroGate | impl | inactive | no |
+| polygon | `0x191274ba0ebb29c650798ffae06adfd39ec8a5c9` | GGUSD | impl | inactive | no |
+| polygon | `0x19335aa79a73004b93d807bd08d8765bb605acf9` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x26f6b439499720e40f679af5d20d8c193dc5115c` | Upgradeable721 | impl | inactive | no |
+| polygon | `0x2b085e882f142e65b9ede0beb1ba6242daaf0dd2` | GasHeroObject | impl | inactive | no |
+| polygon | `0x2e6f38f017f805390a093d33bab960251eee83ae` | GasHeroObject | impl | inactive | no |
+| polygon | `0x30f378ef04234f720d422e29d005788334e4d551` | GasHeroObject | impl | inactive | no |
+| polygon | `0x39a3755a7ddbc6c0f7846bbdef6063233e29faea` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x39ad68c0ca12907c5f60a50c5b5f045cab16a3eb` | ERC721Permit | impl | inactive | no |
+| polygon | `0x3c1a1252af117f0ad43f9e58ccb739ab2f8787f5` | GasHeroToken | impl | inactive | no |
+| polygon | `0x447c67dd8b0d26713e79ca438b2d7eb6849cdac9` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x4af742b23d3cbc2009586a1368f8b1ce1c031fbd` | GasHeroObject | impl | inactive | no |
+| polygon | `0x4d705e8dc80c0a22df59e1e4db5291c709fc34bf` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x5b00646169fbc1487c472f1dc28de09c5d350ced` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x650d6af0e788d1d575c900fee415098cdc94195d` | MooarFairMintNft | impl | inactive | no |
+| polygon | `0x653c3e6c3daaa03b9011ccbd5a881bc4694e492b` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x715a391f47426ed1cfa576255711b2ac176de572` | WalletSplitter | impl | inactive | no |
+| polygon | `0x73e6fb324e621639cf20ff1c44b954a2c7512f8b` | OFTCoreUpgradeable | impl | inactive | no |
+| polygon | `0x74796fd8c0ef5c17340f38f5ff672580d3e57f2d` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x7cbeaccab2a845d9e9e7e71eb13cdb7dc98f3ea1` | MooarBroker | impl | inactive | no |
+| polygon | `0x80cdf265f9f4344e7a35357933fe665e80dc857b` | GasHeroObject | impl | inactive | no |
+| polygon | `0x834160ca762bc929152333fb909f670f17a3dd44` | GasHeroObject | impl | inactive | no |
+| polygon | `0x8eef8b943ab5d34bd273159f59ce8b1d76f2d9b9` | GasHeroObject | impl | inactive | no |
+| polygon | `0x903d8caa9c94075a08d3e7758b7a20b9fc604854` | ERC721Permit-2 | impl | inactive | no |
+| polygon | `0x96f9d9a3d3014a7c66bd030d7c164a38470cda3b` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0x9a90a7a8d905862e741c921078a9da567148398d` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0xa07cd19ae5e1272b35846e5b91551548f2aea9d1` | GasHeroObject | impl | inactive | no |
+| polygon | `0xa284bb9b0cc45b9df9072589f508c48e0c5123d0` | GasHeroObject | impl | inactive | no |
+| polygon | `0xa80739520dfd78c4d4dfcb677bb3877f93fe6aca` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0xaaf8f8a418e09aac17e1a1c5b997b29ee2b035ef` | GasHeroToken | impl | inactive | no |
+| polygon | `0xaea64a2971d0fdac38edc6ddac6cc2f36ed3ec50` | GGUSD | impl | inactive | no |
+| polygon | `0xc3d747d3793649ed3137b9f910dbad6c256f9900` | GasHeroToken | impl | inactive | no |
+| polygon | `0xc67ee4c6a06be91f1468e259ca6bf947da112b85` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0xc9eabd991021d8c8d5bbfcf27c0e55e758f88ce1` | TransparentUpgradeableProxy | proxy | inactive | no |
+| polygon | `0xca650002ce8f0fb66ce930cc0df130e24573ee6b` | WalletSplitter | impl | inactive | no |
+| polygon | `0xd56fadccd9f1a220ed6668e2f9afeed8f8713246` | GasHeroObject | impl | inactive | no |
+| polygon | `0xd652c25e5507270b826f00d724b20186fdd321bc` | ERC721Permit | impl | inactive | no |
+| polygon | `0xdadd999a3753d6f09954a1593d59c12c1f999957` | GasHeroObject | impl | inactive | no |
+| polygon | `0xdc08edb2625f3ce68156e1895cac6dd63e36be3e` | WalletSplitter | impl | inactive | no |
+| polygon | `0xe87fd2d255a562acda798731bb05586450ac332d` | MooarBroker | proxy | inactive | no |
+| polygon | `0xef62afdb7afd4cdde44765993f4ff23951ff4ecb` | GasHeroObject | impl | inactive | no |
+| polygon | `0xf6011e7f61cc9154839f0b10af7372cea8000f71` | GasHeroObject | impl | inactive | no |
+| polygon | `0xf6f47750d4cdfbef75875c4854d47a0902500ce6` | GasHeroObject | impl | inactive | no |
+
+## Source unavailable (3)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- polygon `0x9472047e34313384e07dbef2f9235e0107d85cab`
+- polygon `0xb61cb31d4ed1eef56c8398fdfcc6bd23db007922`
+- polygon `0xbdd46fd173ad1d158578feb5d10573baf8ee89d2`

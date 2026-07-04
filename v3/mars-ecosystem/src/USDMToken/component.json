@@ -1,0 +1,18 @@
+{
+  "component": "USDMToken",
+  "main_contract": "USDMToken",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

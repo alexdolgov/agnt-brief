@@ -1,0 +1,26 @@
+{
+  "component": "GnosisSafeProxy",
+  "main_contract": "GnosisSafeProxy",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8c99b0141849d8097309c8ea78f86b7bb65baa58",
+      "is_proxy": true,
+      "implementation_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3ec77d52696d249440c2d2466b917c5e3edfd16",
+      "is_proxy": true,
+      "implementation_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "CircuitBreakerLib",
+  "main_contract": "CircuitBreakerLib",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/trail-of-bits/2022-10-25.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/trail-of-bits/2022-10-25.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4967b3353cdf9e5c67421a3890d35f2f3bb50527",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

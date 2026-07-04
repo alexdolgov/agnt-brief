@@ -1,0 +1,18 @@
+{
+  "component": "CauldronV3-2",
+  "main_contract": "CauldronV3",
+  "source_file_count": 102,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ce7d9ed62b9a6c5ace1c6ec9aeb115fa3064757",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

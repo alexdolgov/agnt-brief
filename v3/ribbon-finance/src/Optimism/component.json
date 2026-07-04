@@ -1,0 +1,18 @@
+{
+  "component": "Optimism",
+  "main_contract": "Optimism",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53796b65e0d06e3be01eee92715e842415b54205",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

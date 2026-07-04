@@ -1,0 +1,18 @@
+{
+  "component": "IronSwapRouter",
+  "main_contract": "IronSwapRouter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x07ff5545e69f6129413c17e9ddea2e58aca983a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

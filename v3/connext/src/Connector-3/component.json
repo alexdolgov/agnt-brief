@@ -1,0 +1,21 @@
+{
+  "component": "Connector-3",
+  "main_contract": "Connector",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/ConnextNxtp-Spearbit-Security-Review.pdf",
+    "https://github.com/connext/audits/blob/main/amarok/Connext_A-1__Macro_Audits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x279fda9addb854541f0bb86733d924e28c24c625",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

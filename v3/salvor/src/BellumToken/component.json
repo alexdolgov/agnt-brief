@@ -1,0 +1,42 @@
+{
+  "component": "BellumToken",
+  "main_contract": "BellumToken",
+  "source_file_count": 7,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x03f77458e1eb9fa72b8186b573e40b106442f155",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4a5bb433132b7e7f75d6a9a3e4136bb85ce6e4d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6ec18092ee47fcc8f1fe15899156ff20c64ab3d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb44b645b5058f7e393f3ae6af58a4cef67006196",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

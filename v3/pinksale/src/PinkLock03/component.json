@@ -1,0 +1,18 @@
+{
+  "component": "PinkLock03",
+  "main_contract": "PinkLock03",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29aed81d274f94cea037d05bb61eb93223a48a77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

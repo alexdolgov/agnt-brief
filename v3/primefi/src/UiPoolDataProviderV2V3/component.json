@@ -1,0 +1,18 @@
+{
+  "component": "UiPoolDataProviderV2V3",
+  "main_contract": "UiPoolDataProviderV2V3",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7d08e488fa39e7f29701c90eb49cc766857895a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

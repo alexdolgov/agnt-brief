@@ -1,0 +1,18 @@
+{
+  "component": "BVICAddAndRemoveLp",
+  "main_contract": "BVICAddAndRemoveLp",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4e8ade7f1a24cc7cf646f3abdbb88a44a1e9e242",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

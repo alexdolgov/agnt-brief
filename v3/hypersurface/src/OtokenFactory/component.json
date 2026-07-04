@@ -1,0 +1,20 @@
+{
+  "component": "OtokenFactory",
+  "main_contract": "OtokenFactory",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/SimplyStaking/security-audit-reports/blob/main/Hypersurface/hypersurface-audit-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xf6d788dd55738f82d03f97597660221ca8b4c98d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

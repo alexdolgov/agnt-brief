@@ -1,0 +1,18 @@
+{
+  "component": "StableReserveTracker",
+  "main_contract": "StableReserveTracker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3bbc4459ff92e151a8d30766bc68c6d5b2119377",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

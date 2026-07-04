@@ -1,0 +1,28 @@
+{
+  "component": "Minter",
+  "main_contract": "Minter",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Synth-VUSD-Deltas-Dedaub-March22.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4bc1a26ec4ab5948b950a64479a4046701370599",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c148217c7f99504abeb4582334c9189e5f11397",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

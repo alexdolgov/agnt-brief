@@ -1,0 +1,18 @@
+{
+  "component": "OperationsRegistry",
+  "main_contract": "OperationsRegistry",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd641ae2ad8a0e72ad92ddeda7cef67ee3f2a49b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

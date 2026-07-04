@@ -1,0 +1,18 @@
+{
+  "component": "OrderValidator",
+  "main_contract": "OrderValidator",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3305399e1954441300138f71fdfe96a8943b3119",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

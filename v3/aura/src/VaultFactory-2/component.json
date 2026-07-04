@@ -1,0 +1,18 @@
+{
+  "component": "VaultFactory-2",
+  "main_contract": "VaultFactory",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9805dcfd25e6de36bad8fe9d3fe2c9b44b764102",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

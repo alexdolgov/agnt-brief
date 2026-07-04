@@ -1,0 +1,18 @@
+{
+  "component": "PendleSimpleERC20TokenHolder",
+  "main_contract": "PendleSimpleERC20TokenHolder",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1a14f2964664b9d7e45df70d09fe4007615e31c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

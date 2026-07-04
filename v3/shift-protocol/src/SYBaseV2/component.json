@@ -1,0 +1,18 @@
+{
+  "component": "SYBaseV2",
+  "main_contract": "SYBaseV2",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x12bb794760afc19b2e4363b0fa4a938133a76123",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "component": "RateLimits",
+  "main_contract": "RateLimits",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/grove-labs/grove-alm-controller/blob/36bf0fc559a623931fbeb22aabc7b57911173526/audits/v160-chainsecurity-audit.pdf",
+    "https://github.com/grove-labs/grove-alm-controller/blob/36bf0fc559a623931fbeb22aabc7b57911173526/audits/v180-chainsecurity-audit.pdf",
+    "https://raw.githubusercontent.com/grove-labs/grove-alm-controller/36bf0fc559a623931fbeb22aabc7b57911173526/audits/v160-chainsecurity-audit.pdf",
+    "https://raw.githubusercontent.com/grove-labs/grove-alm-controller/36bf0fc559a623931fbeb22aabc7b57911173526/audits/v180-chainsecurity-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4a4ba6886be41db0783ca76540801bc3eebd39a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

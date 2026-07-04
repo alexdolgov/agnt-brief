@@ -1,0 +1,26 @@
+{
+  "component": "FlashMintWrapped",
+  "main_contract": "FlashMintWrapped",
+  "source_file_count": 127,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c0d0a9a0c3a0a5b591496ff894686893b69faa2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7dde626de8ce73229838b5c2f9a71bc7ac207801",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

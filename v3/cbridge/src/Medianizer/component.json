@@ -1,0 +1,18 @@
+{
+  "component": "Medianizer",
+  "main_contract": "Medianizer",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b897b9b3507c43a5b1026b277bb838c12c7b36c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

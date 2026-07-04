@@ -1,0 +1,26 @@
+{
+  "component": "FiatCollateral-14",
+  "main_contract": "FiatCollateral",
+  "source_file_count": 61,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4024c00bbd0c420e719527d88781bc1543e63dd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x878b995bdd2d9900bee896bd78add877672e1637",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

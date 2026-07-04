@@ -1,0 +1,18 @@
+{
+  "component": "Token",
+  "main_contract": "Token",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1f23b787053802108fed5b67cf703f0778aebad8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

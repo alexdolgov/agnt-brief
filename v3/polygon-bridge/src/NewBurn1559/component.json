@@ -1,0 +1,18 @@
+{
+  "component": "NewBurn1559",
+  "main_contract": "NewBurn1559",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1bd455c30ad8e2b8df40df44a2ef923d67b33feb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

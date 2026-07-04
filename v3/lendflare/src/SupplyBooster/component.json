@@ -1,0 +1,34 @@
+{
+  "component": "SupplyBooster",
+  "main_contract": "SupplyBooster",
+  "source_file_count": 13,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8237720bbdbcfbe59c3d447beaf1133b72f3320f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbabb974596343a189930982fabdc7a0d9298522f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff9e834d00d9b10860a04c49f4d15b6613195f21",
+      "is_proxy": true,
+      "implementation_address": "0xbabb974596343a189930982fabdc7a0d9298522f",
+      "liveness": "live"
+    }
+  ]
+}

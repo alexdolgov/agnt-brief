@@ -1,0 +1,58 @@
+{
+  "component": "ConnectV2Basic",
+  "main_contract": "ConnectV2Basic",
+  "source_file_count": 12,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1311888ac68f1a509e7b7025b0642ac0a8ce2211",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8f0183ecf980520b1ca3dc820e2e955a5ff2e718",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb44f55de831d1f2d0def6812495d49f950a8815d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbed1ac1ca9b2d2f6d86d365f4c22d9bc9f98c9e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc2e1c0fc0a2c0126ad5222d6eb2453c6aec1e637",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdd5cd62ba06ab885aba3201040235aa6d372d0a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

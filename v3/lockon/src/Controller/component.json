@@ -1,0 +1,18 @@
+{
+  "component": "Controller",
+  "main_contract": "Controller",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x153e739b8823b277844ad885a30ac5bd9dfb6e83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

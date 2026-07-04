@@ -1,0 +1,18 @@
+{
+  "component": "YFVRewardsYFIPool",
+  "main_contract": "YFVRewardsYFIPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70b83a7f5e83b3698d136887253e0bf426c9a117",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

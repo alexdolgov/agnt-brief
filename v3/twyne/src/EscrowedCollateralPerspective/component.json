@@ -1,0 +1,18 @@
+{
+  "component": "EscrowedCollateralPerspective",
+  "main_contract": "EscrowedCollateralPerspective",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b1e75004bff7a59cf7a52b2dc484baa16c8af86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

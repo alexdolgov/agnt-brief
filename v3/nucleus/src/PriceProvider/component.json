@@ -1,0 +1,18 @@
+{
+  "component": "PriceProvider",
+  "main_contract": "PriceProvider",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28a6e7ebb6aca8f64145952a9565245c3dc1f32f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

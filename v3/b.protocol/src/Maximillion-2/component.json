@@ -1,0 +1,18 @@
+{
+  "component": "Maximillion-2",
+  "main_contract": "Maximillion",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x89db3b59381bc06fe9bf74532afd777e5f78ef02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

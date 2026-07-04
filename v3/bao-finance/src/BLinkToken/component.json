@@ -1,0 +1,18 @@
+{
+  "component": "BLinkToken",
+  "main_contract": "BLinkToken",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x63870a18b6e42b01ef1ad8a2302ef50b7132054f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

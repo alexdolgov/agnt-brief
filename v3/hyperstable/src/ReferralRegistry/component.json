@@ -1,0 +1,18 @@
+{
+  "component": "ReferralRegistry",
+  "main_contract": "ReferralRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3fed84f3b58bdc8b4857aaf6902916224e11baf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

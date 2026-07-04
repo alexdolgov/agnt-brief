@@ -1,0 +1,18 @@
+{
+  "component": "FusionXRouter",
+  "main_contract": "FusionXRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x35e1e34ee20ee5c63edd1ecc33fc3bbc93357a14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

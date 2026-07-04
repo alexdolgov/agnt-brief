@@ -1,0 +1,18 @@
+{
+  "component": "SmolBrainsPets-2",
+  "main_contract": "SmolBrainsPets",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf6cc57c45ce730496b4d3df36b9a4e4c3a1b9754",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

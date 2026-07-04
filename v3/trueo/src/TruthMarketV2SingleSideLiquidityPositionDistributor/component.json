@@ -1,0 +1,18 @@
+{
+  "component": "TruthMarketV2SingleSideLiquidityPositionDistributor",
+  "main_contract": "TruthMarketV2SingleSideLiquidityPositionDistributor",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x954a4c1415f33919244260e741b58e2ae9ab57d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

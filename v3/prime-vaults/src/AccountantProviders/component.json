@@ -1,0 +1,60 @@
+{
+  "component": "AccountantProviders",
+  "main_contract": "AccountantProviders",
+  "source_file_count": 59,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Salusec/Salus-audit/blob/main/2025/Prime-vault_audit_report_2025-12-22.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x1d76aebde11cc3f5dbf944fcb68f63212a72b1f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x1d7e0b3070d80899bcd61a9c484780f54b1543d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x1e31176e2d6ffbdbe4f313493c257876aeb295db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x71a8166096f86eaca45ad97b9b4f34bc97ffc47c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x7c6c4554ec10b4bda09d7a6fa9be423896942a31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xd0e9563e2e77a3655fa765c9afa51d7898dcce1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

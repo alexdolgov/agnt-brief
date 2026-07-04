@@ -1,0 +1,29 @@
+{
+  "component": "NexusBootstrap",
+  "main_contract": "NexusBootstrap",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bcnmy/nexus/blob/main/audits/Biconomy-Nexus_Zenith-Audit-Report.pdf",
+    "https://github.com/bcnmy/nexus/blob/main/audits/Nexus-Pashov-Review_2025-03.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00000000d3254452a909e4eed47455af7e27c289",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x000000f5b753fdd20c5ca2d7c1210b3ab1ea5903",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "AllocationsViewer",
+  "main_contract": "AllocationsViewer",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x88ce6d8d70df9fe049315fd9d6c3d59108c15c4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa9902060b71a0040880aa038d22ddcfe3c6d78f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

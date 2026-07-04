@@ -1,0 +1,18 @@
+{
+  "component": "VectorBonding",
+  "main_contract": "VectorBonding",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3abcf9dc9e221ac78b31cd1b9d9f5721a513c969",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

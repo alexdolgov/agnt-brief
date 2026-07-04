@@ -1,0 +1,18 @@
+{
+  "component": "FloatStrategyMainnet_DAI",
+  "main_contract": "FloatStrategyMainnet_DAI",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5526f8ff02d9ba6540c625e1bc51e440c7fcb165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

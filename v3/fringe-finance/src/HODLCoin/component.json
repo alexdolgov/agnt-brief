@@ -1,0 +1,18 @@
+{
+  "component": "HODLCoin",
+  "main_contract": "HODLCoin",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb45d7bc4cebcab98ad09babdf8c818b2292b672c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AeroCLDex",
+  "main_contract": "AeroCLDex",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb90835c4b7b11e49264f7403e07516e9dc789a03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "AutoSwapper",
+  "main_contract": "AutoSwapper",
+  "source_file_count": 24,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x346c0ca93354383a31d78d4944290d51f3b3f920",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e473d028b80ad6408eb9fc1a54b4584cad69231",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x865d61582abc2ccd85549774cee171280fe82e3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf25768968b0de2e9973ae47bb3d79ad5c8f6a9d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

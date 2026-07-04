@@ -1,0 +1,372 @@
+{
+  "schema_version": "2.0",
+  "project_key": "friend3",
+  "generated_at": "2026-07-03T21:05:52.932Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-17a2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 50,
+    "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 61990.64395,
+    "tvl_usd": 61990.64395,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://friend3.group",
+    "chains": [
+      "bsc",
+      "opbnb"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-11",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 3,
+      "unknown": 1
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "SoFi. Structurally: 3 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 5,
+    "live_contracts": 2,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 2,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x9e57e83ad79ac5312ba82940ba037ed30600e167",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "F3",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "F3",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9e57e83ad79ac5312ba82940ba037ed30600e167",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13137"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2023-11-16 11:09:26+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Friend3V1",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Friend3V1",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2023-08-24 15:54:34+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 204,
+      "chain_name": "opbnb",
+      "address": "0x2c5bf6f0953ffcde678a35ab7d6caebc8b6b29f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 204,
+          "chain_name": "opbnb",
+          "address": "0x2c5bf6f0953ffcde678a35ab7d6caebc8b6b29f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "effective_deploy_date": "2023-10-31 21:31:30+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 204,
+      "chain_name": "opbnb",
+      "address": "0x55f9045f1d33928bd978efa42ae77e0d3ba0ca3b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 204,
+          "chain_name": "opbnb",
+          "address": "0x55f9045f1d33928bd978efa42ae77e0d3ba0ca3b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "effective_deploy_date": "2023-10-31 21:29:11+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 13136,
+      "audit_key": "audit-13136",
+      "report_name": "PeckShield-Audit-Report-Friend3.pdf",
+      "report_url": "https://github.com/Friend3-Group/PeckShield-Audit-Report-Friend3/blob/main/PeckShield-Audit-Report-Friend3.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13137,
+      "audit_key": "audit-13137",
+      "report_name": "Verichains Public Audit Report - Friend3 Token - v1.0.pdf",
+      "report_url": "https://github.com/verichains/public-audit-reports/blob/main/Verichains%20Public%20Audit%20Report%20-%20Friend3%20Token%20-%20v1.0.pdf",
+      "auditor": "Verichains",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13138,
+      "audit_key": "audit-13138",
+      "report_name": "PeckShield-Audit-Report-Friend3-v1.0.pdf",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Friend3-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13139,
+      "audit_key": "audit-13139",
+      "report_name": "PeckShield-Audit-Report-Friend3 (GitHub directory)",
+      "report_url": "https://github.com/Friend3-Group/PeckShield-Audit-Report-Friend3",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Verichains",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2023-11"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 4
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 1
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13136,
+        "report_name": "PeckShield-Audit-Report-Friend3.pdf"
+      },
+      {
+        "audit_id": 13138,
+        "report_name": "PeckShield-Audit-Report-Friend3-v1.0.pdf"
+      },
+      {
+        "audit_id": 13139,
+        "report_name": "PeckShield-Audit-Report-Friend3 (GitHub directory)"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

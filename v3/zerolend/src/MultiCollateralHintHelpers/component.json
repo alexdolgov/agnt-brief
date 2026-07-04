@@ -1,0 +1,18 @@
+{
+  "component": "MultiCollateralHintHelpers",
+  "main_contract": "MultiCollateralHintHelpers",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xa51fc17109817b2728004b85d9a58de486fa79de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

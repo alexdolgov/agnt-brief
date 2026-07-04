@@ -1,0 +1,18 @@
+{
+  "component": "ArbswapStableSwapLP",
+  "main_contract": "ArbswapStableSwapLP",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5bbebd93777dfa334f6346271fbc6a56ed3718f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

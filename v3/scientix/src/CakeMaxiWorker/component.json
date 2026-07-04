@@ -1,0 +1,18 @@
+{
+  "component": "CakeMaxiWorker",
+  "main_contract": "CakeMaxiWorker",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x025ba0e82d45e29e831c53637bea2ce9d88199c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

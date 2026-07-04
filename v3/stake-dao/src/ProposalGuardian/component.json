@@ -1,0 +1,18 @@
+{
+  "component": "ProposalGuardian",
+  "main_contract": "ProposalGuardian",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc813f688ca38d37e35845fb2eb180efbc5002e76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

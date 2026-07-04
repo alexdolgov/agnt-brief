@@ -1,0 +1,26 @@
+{
+  "component": "SyncSwapRouterV2",
+  "main_contract": "SyncSwapRouterV2",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x60f9b3a705f1fbdcdee1ba2c2331b8aa8f98cf3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc2a1947d2336b2af74d5813dc9ca6e0c3b3e8a1e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "veFXSYieldDistributorV3",
+  "main_contract": "veFXSYieldDistributorV3",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed2647bbf875b2936aaf95a3f5bbc82819e3d3fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

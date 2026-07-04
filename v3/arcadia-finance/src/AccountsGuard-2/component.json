@@ -1,0 +1,18 @@
+{
+  "component": "AccountsGuard-2",
+  "main_contract": "AccountsGuard",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2529ae4a3c9d3285dd06cadfc8516d3fabd6240b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

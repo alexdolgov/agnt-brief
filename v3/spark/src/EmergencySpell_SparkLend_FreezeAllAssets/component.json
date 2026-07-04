@@ -1,0 +1,18 @@
+{
+  "component": "EmergencySpell_SparkLend_FreezeAllAssets",
+  "main_contract": "EmergencySpell_SparkLend_FreezeAllAssets",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e2890bf7f8d5568cc9e5092e67ba00c8da3e97f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

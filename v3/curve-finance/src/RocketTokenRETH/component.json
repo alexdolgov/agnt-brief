@@ -1,0 +1,18 @@
+{
+  "component": "RocketTokenRETH",
+  "main_contract": "RocketTokenRETH",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

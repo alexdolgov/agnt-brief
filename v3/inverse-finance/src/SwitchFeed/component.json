@@ -1,0 +1,18 @@
+{
+  "component": "SwitchFeed",
+  "main_contract": "SwitchFeed",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeca2f329a011a4d464f8ef97e493974964911ed0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

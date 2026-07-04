@@ -1,0 +1,20 @@
+{
+  "component": "VTOKEN",
+  "main_contract": "VTOKEN",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2F9amf3oq6oU9WdNOvESyc%2FPeckShield-Audit-Report-LilToken-v1.0rc%20(1).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x7f0976b52f6c1ddcd4d6f639537c97de22fa2b69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

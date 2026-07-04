@@ -1,0 +1,18 @@
+{
+  "component": "REXO",
+  "main_contract": "REXO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c5aa389da4d357ffe7ab4606522dab2067a9a13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

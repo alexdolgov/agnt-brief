@@ -1,0 +1,18 @@
+{
+  "component": "ClaimTransfer",
+  "main_contract": "ClaimTransfer",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4778228ef5ef7c96e1106e38b1c0ce7252d4e203",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

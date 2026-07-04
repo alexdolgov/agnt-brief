@@ -1,0 +1,26 @@
+{
+  "component": "AlgebraInterfaceMulticall",
+  "main_contract": "AlgebraInterfaceMulticall",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x79cb4664ebe30ff989e605b048b402c54b9dc9e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfbc48dc87f605665a45406d1ed21c36a6b6a2258",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

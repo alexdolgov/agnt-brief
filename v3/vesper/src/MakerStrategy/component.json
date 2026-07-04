@@ -1,0 +1,28 @@
+{
+  "component": "MakerStrategy",
+  "main_contract": "MakerStrategy",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-March21.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc2dda4d6ca0e2728bdc7b0a738d4664bf58698e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf1543e97c79b3581a2ed60184f5dac840efb20f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

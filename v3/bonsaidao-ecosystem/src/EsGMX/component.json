@@ -1,0 +1,18 @@
+{
+  "component": "EsGMX",
+  "main_contract": "EsGMX",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x56f9799a53fa850d6f7c71f7e9015eb7768758a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

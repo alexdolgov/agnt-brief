@@ -1,0 +1,18 @@
+{
+  "component": "DeltaTimeNFT",
+  "main_contract": "DeltaTimeNFT",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c62e8de798721963b439868d3ce22a5252a7e03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

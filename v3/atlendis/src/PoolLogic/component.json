@@ -1,0 +1,20 @@
+{
+  "component": "PoolLogic",
+  "main_contract": "PoolLogic",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Atlendis/protocol-v1/blob/master/audits/atlendis-audit-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

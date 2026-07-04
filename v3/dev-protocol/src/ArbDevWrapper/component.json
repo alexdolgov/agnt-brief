@@ -1,0 +1,50 @@
+{
+  "component": "ArbDevWrapper",
+  "main_contract": "ArbDevWrapper",
+  "source_file_count": 34,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4abba8099c3781fdeeab1bf95a223cac84f5d212",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4db1b633bbe493db35f217d68cdb3a327d56b7ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9310c8d6694eeaae2e59809fc0f32caa8a0effb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbcb853962dd31ce6d21a4a86ebd9d50f363028e1",
+      "is_proxy": true,
+      "implementation_address": "0x4abba8099c3781fdeeab1bf95a223cac84f5d212",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc069f8323858537158dc47f6c208c8174038af9",
+      "is_proxy": true,
+      "implementation_address": "0x9310c8d6694eeaae2e59809fc0f32caa8a0effb7",
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "component": "UnilaunchTokenVestingFactoryDeployer",
+  "main_contract": "UnilaunchTokenVestingFactoryDeployer",
+  "source_file_count": 12,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x00d2c101532a4b62d81924b014bb1978e2677653",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x25d8c5aa299110422bcaa2c06c50e5f079ebf020",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2d702456d7e6e7a40ffff6940487d7a914d60618",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x41a6cda4a53ad5585e5077acdc3d7d0d2f814db1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x99f98430b8dc30ea48d196c6b3a1d89f9f901b66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

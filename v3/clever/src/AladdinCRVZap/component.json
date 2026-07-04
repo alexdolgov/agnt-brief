@@ -1,0 +1,18 @@
+{
+  "component": "AladdinCRVZap",
+  "main_contract": "AladdinCRVZap",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5eb30ce188b0abb89a942ced6cbe114f4d852082",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

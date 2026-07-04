@@ -1,0 +1,23 @@
+{
+  "component": "SmartProvider",
+  "main_contract": "SmartProvider",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-Smart-Collateral-and-Liquidators-20251124.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Bailsec-ListaLending-SmartPorvider-and-SlisBNBMinter-202601229.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/Blocksec-ListaLending-SlisBNBxMinter-AuditReport-20251101.pdf",
+    "https://github.com/lista-dao/moolah/blob/master/docs/audits/OpenZeppelin-ListaLending-Smart-Collateral-20251020.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x08d0b37dd3ff8e2ca557e91eea63cdf0cdd7b583",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

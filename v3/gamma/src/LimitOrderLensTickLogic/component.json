@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrderLensTickLogic",
+  "main_contract": "LimitOrderLensTickLogic",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x572a9853be18c54b8e9924658a70f6c40932c22c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

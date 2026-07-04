@@ -1,0 +1,18 @@
+{
+  "component": "VoteWeightRegistry",
+  "main_contract": "VoteWeightRegistry",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x619edef2d18ec9758e96d8ff2c7dcbfb58dd5a5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

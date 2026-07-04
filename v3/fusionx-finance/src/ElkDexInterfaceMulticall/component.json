@@ -1,0 +1,18 @@
+{
+  "component": "ElkDexInterfaceMulticall",
+  "main_contract": "ElkDexInterfaceMulticall",
+  "source_file_count": 80,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x44fe4584bb1adb0a8c21479b7b975daa8f2952d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

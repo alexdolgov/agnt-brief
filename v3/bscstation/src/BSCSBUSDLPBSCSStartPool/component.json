@@ -1,0 +1,26 @@
+{
+  "component": "BSCSBUSDLPBSCSStartPool",
+  "main_contract": "BSCSBUSDLPBSCSStartPool",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x31892b9549a9efc7d2efae520d1605e8b653f416",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x502fce58657dcc80fd3404c852d906cd50ac655e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

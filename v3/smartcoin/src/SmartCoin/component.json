@@ -1,0 +1,20 @@
+{
+  "component": "SmartCoin",
+  "main_contract": "SmartCoin",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/pld/assets/20211018_Paladin_SmartCoin_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcc2f1d827b18321254223df4e84de399d9ff116c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "StableSurgeHook",
+  "main_contract": "StableSurgeHook",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2025-01-30.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x86705ee19c0509ff68f1118c55ee2ebde383d122",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "CustomSwapFeeModule",
+  "main_contract": "CustomSwapFeeModule",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5264eeeab16037a7a7af15ff69a470af6e2a2223",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe945ab812a22c02025dfc31d9523158b242a5684",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

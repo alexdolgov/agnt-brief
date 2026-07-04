@@ -1,0 +1,34 @@
+{
+  "component": "mortgagefipoolusdtwbtc",
+  "main_contract": "mortgagefipoolusdtwbtc",
+  "source_file_count": 18,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2f5aac46575f68fe600e99096ca38301a4520a91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9be2cf73e62dd3b5df4334d9a36888394822a33f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc355f70f5f37f773e76e16d0e046c5f868d8ea72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

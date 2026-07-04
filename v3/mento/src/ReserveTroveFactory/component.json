@@ -1,0 +1,18 @@
+{
+  "component": "ReserveTroveFactory",
+  "main_contract": "ReserveTroveFactory",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x02859465dcc7d7f2bee183fc7fac78544c9519e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

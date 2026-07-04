@@ -1,0 +1,18 @@
+{
+  "component": "Miner",
+  "main_contract": "Miner",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xae4a37d554c6d6f3e398546d8566b25052e0169c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

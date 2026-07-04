@@ -1,0 +1,18 @@
+{
+  "component": "publicCalls",
+  "main_contract": "publicCalls",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0e35a9caef5f24e1802c51ee935836af07d73b33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

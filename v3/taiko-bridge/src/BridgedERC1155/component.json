@@ -1,0 +1,34 @@
+{
+  "component": "BridgedERC1155",
+  "main_contract": "BridgedERC1155",
+  "source_file_count": 32,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39e4c1214e733639d059979079a151911e42791d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c90963cfba436400b0f9c46aa9224cb379c2c40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7782ddeb61ed050e2fbd2d497b5aadb640d689d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

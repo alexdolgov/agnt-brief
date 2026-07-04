@@ -1,0 +1,18 @@
+{
+  "component": "SelfSpotEthOracle",
+  "main_contract": "SelfSpotEthOracle",
+  "source_file_count": 67,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e9a06f85a3d188f2a851d1b4fb582680727a5d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

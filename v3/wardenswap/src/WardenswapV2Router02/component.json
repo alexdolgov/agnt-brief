@@ -1,0 +1,18 @@
+{
+  "component": "WardenswapV2Router02",
+  "main_contract": "WardenswapV2Router02",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x71ac17934b60a4610dc58b715b61e45dcbde4054",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

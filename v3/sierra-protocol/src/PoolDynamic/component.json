@@ -1,0 +1,26 @@
+{
+  "component": "PoolDynamic",
+  "main_contract": "PoolDynamic",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x08c6824fae6dcc966399739bf999b44c5aae7257",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11fff7f8ffa78c537cab26be142d2ee91ea9622c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

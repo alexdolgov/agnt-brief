@@ -1,0 +1,34 @@
+{
+  "component": "Proxy",
+  "main_contract": "Proxy",
+  "source_file_count": 11,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13f4dc963ddd2ec0160f6473c69b704b0e8674fc",
+      "is_proxy": true,
+      "implementation_address": "0x8a25983a904ec3b5ad66c65da5c96c23d47f37c1",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x07b99965dbedf38322adfe48623e042aa0656283",
+      "is_proxy": true,
+      "implementation_address": "0x861dac14f24d872c3fd77017ef6fba6bb170c849",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x14da8dfc4214a43d01240bd2adff2dbe73cac83a",
+      "is_proxy": true,
+      "implementation_address": "0xd7db4db7dfca401e9fb2f64889bceda9af4f16b1",
+      "liveness": "live"
+    }
+  ]
+}

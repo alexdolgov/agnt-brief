@@ -1,0 +1,42 @@
+{
+  "component": "LybraGovernance",
+  "main_contract": "LybraGovernance",
+  "source_file_count": 28,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34afe1b92a63f647a3c2e56a4a8347c8fa7e1b69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62173c25a96abfe84e45fd62cba2521772f4faeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x92a9c9efabb7d36ca10743db0fb89cc18c329b87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4aa0f1013c81dbc7f87c5509f62268142a2975f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

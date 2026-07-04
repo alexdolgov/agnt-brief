@@ -1,0 +1,26 @@
+{
+  "component": "ICHIVault",
+  "main_contract": "ICHIVault",
+  "source_file_count": 38,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x27404a54d594aa6307c3f9be102646363d6279a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xdc9afd2ada6fbfd7f649b0d7af8fec7bb6ba73bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BaseRelayerLibrary",
+  "main_contract": "BaseRelayerLibrary",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5bcb2fba3f757ff32cf3bb508790eed51c05155b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

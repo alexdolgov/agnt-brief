@@ -1,0 +1,18 @@
+{
+  "component": "CFL365BNBLPCFL365StartPool",
+  "main_contract": "CFL365BNBLPCFL365StartPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x721310071bdbf4f3cf85d0f1d6dc30de93c01d3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

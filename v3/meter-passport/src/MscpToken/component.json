@@ -1,0 +1,18 @@
+{
+  "component": "MscpToken",
+  "main_contract": "MscpToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x27d72484f1910f5d0226afa4e03742c9cd2b297a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

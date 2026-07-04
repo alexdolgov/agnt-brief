@@ -1,0 +1,18 @@
+{
+  "component": "StakeDAOLevSwapper2Pool",
+  "main_contract": "StakeDAOLevSwapper2Pool",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe6239baf1b79acfff180bf7dd8647ef9b0cf97f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

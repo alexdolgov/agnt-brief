@@ -1,0 +1,22 @@
+{
+  "component": "MasterChef",
+  "main_contract": "MasterChef",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210128-defiyield.info.pdf",
+    "https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210331-Hacken-Complete.pdf",
+    "https://github.com/acryptos/acryptos-protocol/blob/main/audits/20211116-Hacken-Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeae1425d8ed46554bf56968960e2e567b49d0bed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

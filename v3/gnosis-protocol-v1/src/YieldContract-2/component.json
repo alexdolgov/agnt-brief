@@ -1,0 +1,18 @@
+{
+  "component": "YieldContract-2",
+  "main_contract": "YieldContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90ef220f222e8c319504bdb510a2b739222a5f4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

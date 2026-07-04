@@ -1,0 +1,18 @@
+{
+  "component": "BridgeConfig-2",
+  "main_contract": "BridgeConfig",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf99f62475f50be59393dbdc148e6627e4e88fc24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

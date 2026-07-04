@@ -1,0 +1,18 @@
+{
+  "component": "TwindexSwapRouter",
+  "main_contract": "TwindexSwapRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b011d0d53b0da6ace2a3f436fd197a4e35f47ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

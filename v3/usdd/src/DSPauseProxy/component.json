@@ -1,0 +1,18 @@
+{
+  "component": "DSPauseProxy",
+  "main_contract": "DSPauseProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdd5f51dc0d31823db86df41d46d037bc94c732dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

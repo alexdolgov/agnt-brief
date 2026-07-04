@@ -1,0 +1,18 @@
+{
+  "component": "StableTokenBRL",
+  "main_contract": "StableTokenBRL",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x5e72978225b5777298b28b7ea543bf0c5feddec8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

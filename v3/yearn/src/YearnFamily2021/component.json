@@ -1,0 +1,18 @@
+{
+  "component": "YearnFamily2021",
+  "main_contract": "YearnFamily2021",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d45dab69f1309f1f55a7280b1f6a2699ec918e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

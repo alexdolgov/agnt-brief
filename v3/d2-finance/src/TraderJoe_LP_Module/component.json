@@ -1,0 +1,20 @@
+{
+  "component": "TraderJoe_LP_Module",
+  "main_contract": "TraderJoe_LP_Module",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/d2"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x349f734ff449ef379e437d8bfed89423dc2db215",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

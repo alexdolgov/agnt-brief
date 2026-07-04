@@ -1,0 +1,26 @@
+{
+  "component": "FactRegistry",
+  "main_contract": "FactRegistry",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe583bcde0160b637330b27a3ea1f3c02ba2ec460",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd14567eaf9ba941cb8c8a94eec14831ca7fd1b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

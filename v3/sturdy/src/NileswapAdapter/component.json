@@ -1,0 +1,18 @@
+{
+  "component": "NileswapAdapter",
+  "main_contract": "NileswapAdapter",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x09cf3b20f56bc3461a828e9c167db4a33addf855",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

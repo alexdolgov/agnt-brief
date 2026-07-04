@@ -1,0 +1,20 @@
+{
+  "component": "VaultManagerKeep3rPoolToken",
+  "main_contract": "VaultManagerKeep3rPoolToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/unitprotocol/protocol_docs/blob/master/Levelk_Security_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ee32424cd66c23386cf511c8b749c1e92043b0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

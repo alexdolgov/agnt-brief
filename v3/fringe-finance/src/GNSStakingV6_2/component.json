@@ -1,0 +1,66 @@
+{
+  "component": "GNSStakingV6_2",
+  "main_contract": "GNSStakingV6_2",
+  "source_file_count": 7,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x368767c2da448fa6acf4ca4d4a25e99873384bb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b8d3c08072a020ac065c467ce922e3a36d3f9d6",
+      "is_proxy": true,
+      "implementation_address": "0x905f03847c884bf7b038042bfd64d96b3628dd4a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x749e8bb58bdf842ac4ec3f45f93634c7acb289cc",
+      "is_proxy": true,
+      "implementation_address": "0xb190b3bb69f0e28c8e1d20be35c5d7b3210cceac",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x905f03847c884bf7b038042bfd64d96b3628dd4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa375476645d5d015796f07557084654fecc522e4",
+      "is_proxy": true,
+      "implementation_address": "0x368767c2da448fa6acf4ca4d4a25e99873384bb9",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb190b3bb69f0e28c8e1d20be35c5d7b3210cceac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcd05e2ab254951c0ce475bd5ea0e5288807b7fb6",
+      "is_proxy": true,
+      "implementation_address": "0xb190b3bb69f0e28c8e1d20be35c5d7b3210cceac",
+      "liveness": "live"
+    }
+  ]
+}

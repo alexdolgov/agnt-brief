@@ -1,0 +1,26 @@
+{
+  "component": "PriceFeedNoStale",
+  "main_contract": "PriceFeedNoStale",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe928f79d6c7a315ad0a49254015ab8d64dde2f61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea1dc98bf2308f31f3d26d40b31d4bec2d2cd61f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

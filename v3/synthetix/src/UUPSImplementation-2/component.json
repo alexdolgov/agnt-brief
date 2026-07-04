@@ -1,0 +1,26 @@
+{
+  "component": "UUPSImplementation-2",
+  "main_contract": "UUPSImplementation",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7bc5eced96aec561012c5274bc7fce49e1c8414b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf12b26b9f28a0220b98d1fbbb7737df699b59202",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

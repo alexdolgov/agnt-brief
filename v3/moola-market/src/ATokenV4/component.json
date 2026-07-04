@@ -1,0 +1,18 @@
+{
+  "component": "ATokenV4",
+  "main_contract": "ATokenV4",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa2726942a99ca8ce9f212c97d8f1bd6378f501f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

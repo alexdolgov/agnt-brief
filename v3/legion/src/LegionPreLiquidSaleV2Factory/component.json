@@ -1,0 +1,18 @@
+{
+  "component": "LegionPreLiquidSaleV2Factory",
+  "main_contract": "LegionPreLiquidSaleV2Factory",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

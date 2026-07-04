@@ -1,0 +1,18 @@
+{
+  "component": "BorrowPositionProxy",
+  "main_contract": "BorrowPositionProxy",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x144dcfcd3287cf4372887ef55225696924a82511",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

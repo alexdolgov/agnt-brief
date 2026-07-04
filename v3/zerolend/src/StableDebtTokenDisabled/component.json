@@ -1,0 +1,18 @@
+{
+  "component": "StableDebtTokenDisabled",
+  "main_contract": "StableDebtTokenDisabled",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x859c2ca97ead2742a0758bc9dd889e9d0e7e84e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

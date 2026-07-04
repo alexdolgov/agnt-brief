@@ -1,0 +1,18 @@
+{
+  "component": "StrategyWaultWexSingle",
+  "main_contract": "StrategyWaultWexSingle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x69f98627b373b4ae3aa3c216a18b476a2984404c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VeAethir",
+  "main_contract": "VeAethir",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

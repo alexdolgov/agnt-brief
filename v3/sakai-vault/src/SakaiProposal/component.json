@@ -1,0 +1,18 @@
+{
+  "component": "SakaiProposal",
+  "main_contract": "SakaiProposal",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3999eca025e34a044ed5c56b2fef74a893ea5f78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

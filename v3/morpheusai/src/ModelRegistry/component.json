@@ -1,0 +1,18 @@
+{
+  "component": "ModelRegistry",
+  "main_contract": "ModelRegistry",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2e96cef46d2a82e63570b538ef4ab697a09a3996",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

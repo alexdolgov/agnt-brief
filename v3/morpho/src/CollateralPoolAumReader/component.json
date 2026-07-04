@@ -1,0 +1,18 @@
+{
+  "component": "CollateralPoolAumReader",
+  "main_contract": "CollateralPoolAumReader",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1c6a2809604c170f57dc8361915db97931a25747",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

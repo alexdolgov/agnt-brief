@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrumDualOracle",
+  "main_contract": "ArbitrumDualOracle",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5985fbb03b6a5ea390871c2bb9742cd406575667",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

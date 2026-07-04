@@ -1,0 +1,26 @@
+{
+  "component": "TickLens",
+  "main_contract": "TickLens",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x22cb092d904eb13cdaca0ca5d93093fae19b8034",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e39ccd0b6d1e91a69d5bdc1d112bfa0d34bde38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

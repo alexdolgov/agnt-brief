@@ -1,0 +1,26 @@
+{
+  "component": "LiquidatorProxyV4WithGenericTrader",
+  "main_contract": "LiquidatorProxyV4WithGenericTrader",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x17b8bcf4b7cc3782d4c67407de6144a904a77f2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x22dd9f4393a3cc698d6c09ad14b0b9d515084fc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

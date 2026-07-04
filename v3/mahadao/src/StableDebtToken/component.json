@@ -1,0 +1,18 @@
+{
+  "component": "StableDebtToken",
+  "main_contract": "StableDebtToken",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6b88e9b3958134158ba751c3c3db7a6432d12f0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

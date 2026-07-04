@@ -1,0 +1,18 @@
+{
+  "component": "bhsAlpha",
+  "main_contract": "bhsAlpha",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11baffebd829b490cf077ce7ef7700dd3cb1e534",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

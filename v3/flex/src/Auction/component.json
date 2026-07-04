@@ -1,0 +1,21 @@
+{
+  "component": "Auction",
+  "main_contract": "Auction",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/flexmeow/flex-contracts/blob/master/audits/2026-03-Flex-report.pdf",
+    "https://github.com/flexmeow/flex-contracts/blob/master/audits/flex-audit-27-april.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

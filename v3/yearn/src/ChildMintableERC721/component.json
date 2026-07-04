@@ -1,0 +1,18 @@
+{
+  "component": "ChildMintableERC721",
+  "main_contract": "ChildMintableERC721",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd4888fab8bd39a663b63161f5ee1eae31a25b653",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

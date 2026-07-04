@@ -1,0 +1,18 @@
+{
+  "component": "FlorenceFinanceMediciToken",
+  "main_contract": "FlorenceFinanceMediciToken",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c3fec55589904256f65e584fd57cd2dba7c2a14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

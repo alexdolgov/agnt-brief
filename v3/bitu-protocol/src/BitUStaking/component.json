@@ -1,0 +1,18 @@
+{
+  "component": "BitUStaking",
+  "main_contract": "BitUStaking",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

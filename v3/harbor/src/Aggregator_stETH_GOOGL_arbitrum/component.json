@@ -1,0 +1,18 @@
+{
+  "component": "Aggregator_stETH_GOOGL_arbitrum",
+  "main_contract": "Aggregator_stETH_GOOGL_arbitrum",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x52b66ad600dc6051cf056951153355d457068bd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

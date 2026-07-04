@@ -1,0 +1,18 @@
+{
+  "component": "RestrictionManagerFactory",
+  "main_contract": "RestrictionManagerFactory",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4d7f6919ef0b495a2551f7299324961f29ae7ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

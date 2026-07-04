@@ -1,0 +1,26 @@
+{
+  "component": "iZiSwapClassicFactory",
+  "main_contract": "iZiSwapClassicFactory",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x156d8a0be25fa232bb637fc76255bcd00deae9e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xcfd8a067e1fa03474e79be646c5f6b6a27847399",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

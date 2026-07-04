@@ -1,0 +1,18 @@
+{
+  "component": "PairFees",
+  "main_contract": "PairFees",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35b842d371fb9faaee00ad751016181ae7ec59a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

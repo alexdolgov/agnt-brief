@@ -1,0 +1,18 @@
+{
+  "component": "StakeAndBakeNativeToken",
+  "main_contract": "StakeAndBakeNativeToken",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bca0fb61480530e87dddbb3bb5f0539c97eae88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

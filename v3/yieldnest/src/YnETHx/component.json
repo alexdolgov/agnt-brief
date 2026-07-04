@@ -1,0 +1,18 @@
+{
+  "component": "YnETHx",
+  "main_contract": "YnETHx",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc46c1f2d7b6c34ffd5c6cc92a071e1c7e069299a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

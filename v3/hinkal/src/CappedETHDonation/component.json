@@ -1,0 +1,18 @@
+{
+  "component": "CappedETHDonation",
+  "main_contract": "CappedETHDonation",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf62b408738b4d7003bc9a3dcdf2de9ca709752e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

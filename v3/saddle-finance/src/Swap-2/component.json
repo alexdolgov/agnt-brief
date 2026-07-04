@@ -1,0 +1,22 @@
+{
+  "component": "Swap-2",
+  "main_contract": "Swap",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/saddle-finance/saddle-audits/blob/master/10-29-2020_Certik.pdf",
+    "https://github.com/saddle-finance/saddle-audits/blob/master/12-09-2020_Quantstamp.pdf",
+    "https://www.openzeppelin.com/news/saddle-contracts-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb08672a5d4a302acb5830894a2f9ae804864570",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

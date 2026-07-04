@@ -1,0 +1,18 @@
+{
+  "component": "OCP",
+  "main_contract": "OCP",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3c70260eee0a2bfc4b375feb810325801f289fbd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

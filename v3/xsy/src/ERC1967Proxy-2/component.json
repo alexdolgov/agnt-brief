@@ -1,0 +1,58 @@
+{
+  "component": "ERC1967Proxy-2",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 13,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3183236cdce208888c1857c2f718e3628c063b73",
+      "is_proxy": true,
+      "implementation_address": "0x2d2fbf1c72410c2d633986deb9262e0e201ffecf",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x65a83c6a678f7849d3d3aeab6bbabe9ad1d33b6e",
+      "is_proxy": true,
+      "implementation_address": "0x2d2fbf1c72410c2d633986deb9262e0e201ffecf",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9b9cf4f6255f6b451132bdf7a3682c7299d4c77a",
+      "is_proxy": true,
+      "implementation_address": "0x495b2335367121e370ac13df6c656714660a4179",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9cf467e119750e64dbe473aea83633019def51f8",
+      "is_proxy": true,
+      "implementation_address": "0x52d18c1c18f5f13df33600295ca5769bb8d6d356",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdbc5192a6b6ffee7451301bb4ec312f844f02b4a",
+      "is_proxy": true,
+      "implementation_address": "0x639c72eea35e50f5e2911891389fc4e8422587c4",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf8adf3fc13b50d840ad586490072ecbce7a401a9",
+      "is_proxy": true,
+      "implementation_address": "0x8b06453428d60c69bf4b55c0c556d67944a18924",
+      "liveness": "live"
+    }
+  ]
+}

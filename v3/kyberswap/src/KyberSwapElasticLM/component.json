@@ -1,0 +1,26 @@
+{
+  "component": "KyberSwapElasticLM",
+  "main_contract": "KyberSwapElasticLM",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d5ba536ab244aaa1ea42ab88428847f25e3e676",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb85ebe2e4ea27526f817ff33fb55fb240057c03f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DiamondProxy",
+  "main_contract": "DiamondProxy",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x1250304f66404cd153fa39388ddcdaec7e0f1707",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

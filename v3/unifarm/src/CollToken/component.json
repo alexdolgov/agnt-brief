@@ -1,0 +1,18 @@
+{
+  "component": "CollToken",
+  "main_contract": "CollToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4cb040b85e94f5c0c32ea1151b20d3ab40b3493",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

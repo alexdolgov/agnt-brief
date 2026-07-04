@@ -1,0 +1,18 @@
+{
+  "component": "AnteTest-41",
+  "main_contract": "AnteTest",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1cd9276f727f631eccea749371a7df27b8a3d55f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

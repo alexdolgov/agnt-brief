@@ -1,0 +1,20 @@
+{
+  "component": "PermissionsRegistry",
+  "main_contract": "PermissionsRegistry",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x344eec31c725187cd026db73ed8805e72967c28d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

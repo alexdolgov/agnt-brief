@@ -1,0 +1,18 @@
+{
+  "component": "Exponential-2",
+  "main_contract": "Exponential",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x73f34eba557f7df6e7aadf509733cc53e670fed6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

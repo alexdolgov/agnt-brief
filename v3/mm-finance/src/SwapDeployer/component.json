@@ -1,0 +1,18 @@
+{
+  "component": "SwapDeployer",
+  "main_contract": "SwapDeployer",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x95d5d401d3c4eacf12d71b4f98995076d6a3a85d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

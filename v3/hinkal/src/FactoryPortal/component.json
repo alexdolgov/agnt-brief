@@ -1,0 +1,18 @@
+{
+  "component": "FactoryPortal",
+  "main_contract": "FactoryPortal",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0084b0c29e25d5ccaee5465981837ebef542a262",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

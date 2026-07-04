@@ -1,0 +1,18 @@
+{
+  "component": "RestrictedList",
+  "main_contract": "RestrictedList",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e63ff8003c33d264be368729ea525d8f5881edd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

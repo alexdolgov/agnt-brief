@@ -1,0 +1,18 @@
+{
+  "component": "TrustedSignerFeeCalculator-2",
+  "main_contract": "TrustedSignerFeeCalculator",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2b686652494798436af116076cf557f935b321cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

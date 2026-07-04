@@ -1,0 +1,18 @@
+{
+  "component": "PolygonRollupManager-3",
+  "main_contract": "PolygonRollupManager",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2650a9a4fc64f63f573ef0f405064ef54bc46f71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

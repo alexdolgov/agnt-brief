@@ -1,0 +1,26 @@
+{
+  "component": "SickleFactory-4",
+  "main_contract": "SickleFactory",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x83d50cef0dc3713161115580763e41ba76652fe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf5090d2d52e9b390a562783b651d1a7480d56fba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

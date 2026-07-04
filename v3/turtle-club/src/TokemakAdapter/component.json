@@ -1,0 +1,26 @@
+{
+  "component": "TokemakAdapter",
+  "main_contract": "TokemakAdapter",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x446b6d4ba19647c06be4b06597fbc7e0c0300af4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc59e64d2204ff54e27cc14790a58d9a1b9757b56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

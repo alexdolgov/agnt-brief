@@ -1,0 +1,18 @@
+{
+  "component": "SimpleVaultMigrator",
+  "main_contract": "SimpleVaultMigrator",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x056b0fe9bcbf55fb89ceed0081b2d52f3cbefe7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

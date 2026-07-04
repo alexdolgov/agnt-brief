@@ -1,0 +1,18 @@
+{
+  "component": "Permit2",
+  "main_contract": "Permit2",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xb952578f3520ee8ea45b7914994dcf4702cee578",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

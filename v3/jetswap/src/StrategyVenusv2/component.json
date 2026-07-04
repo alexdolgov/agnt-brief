@@ -1,0 +1,26 @@
+{
+  "component": "StrategyVenusv2",
+  "main_contract": "StrategyVenusv2",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3c0c0e0732ce790c4d30dbaa0a0eccb3c01014aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbfbc24bcca99ee7a332495fe203a06b759849746",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

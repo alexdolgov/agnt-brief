@@ -1,0 +1,22 @@
+{
+  "component": "AlgebraPoolDeployer",
+  "main_contract": "AlgebraPoolDeployer",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf",
+    "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Algebra_Paladin_report.pdf",
+    "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Core_audit_report_MixBytes.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3842ce04380b8655a3a47ed87ea0d311adca161f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

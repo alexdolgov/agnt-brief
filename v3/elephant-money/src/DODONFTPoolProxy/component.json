@@ -1,0 +1,18 @@
+{
+  "component": "DODONFTPoolProxy",
+  "main_contract": "DODONFTPoolProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x509d3775f684fa4d19c9c99b961202e309b5b965",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

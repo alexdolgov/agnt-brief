@@ -1,0 +1,26 @@
+{
+  "component": "VeClaim",
+  "main_contract": "VeClaim",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9dec69a9d329b8431070774e299a54c0eb269cad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xce65f3dbf8c98d9b250b3540868c3923bd2d4c6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

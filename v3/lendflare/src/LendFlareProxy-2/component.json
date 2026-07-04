@@ -1,0 +1,34 @@
+{
+  "component": "LendFlareProxy-2",
+  "main_contract": "LendFlareProxy",
+  "source_file_count": 8,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fa362339392f910bd69af8e13dd20c5942d446f",
+      "is_proxy": true,
+      "implementation_address": "0xbd507de9e8a86b4da201eba187f08d18120e02e8",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7720a95be2b7ce0fb5abe4678d2e2a245bcd7aa5",
+      "is_proxy": true,
+      "implementation_address": "0x882f464fbd355b736e35f1a2634d536c8979aa43",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb620be8a1949aa9532e6a3510132864ef9bc3f82",
+      "is_proxy": true,
+      "implementation_address": "0xef9423d140c8009597d1185b4b6d5302df21ca0f",
+      "liveness": "live"
+    }
+  ]
+}

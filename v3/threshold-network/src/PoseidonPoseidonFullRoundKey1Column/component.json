@@ -1,0 +1,18 @@
+{
+  "component": "PoseidonPoseidonFullRoundKey1Column",
+  "main_contract": "PoseidonPoseidonFullRoundKey1Column",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e8e41141347e01f33d84718b7f4cefb433d5a94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

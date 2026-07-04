@@ -1,0 +1,21 @@
+{
+  "component": "JMIExtension",
+  "main_contract": "JMIExtension",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/JMI/2025_12_10_Final_M0_Collaborative_Audit_Report_1765332345.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/JMI/M0_EVM-M_Extensions_Review_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xf2414b88c565b53fbb3923c96bdf826333973a27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

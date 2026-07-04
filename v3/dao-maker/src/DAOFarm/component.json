@@ -1,0 +1,18 @@
+{
+  "component": "DAOFarm",
+  "main_contract": "DAOFarm",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x598ca79eee092a084b5f168c4196edb80ea22781",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

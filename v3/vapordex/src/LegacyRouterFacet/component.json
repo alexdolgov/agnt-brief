@@ -1,0 +1,18 @@
+{
+  "component": "LegacyRouterFacet",
+  "main_contract": "LegacyRouterFacet",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb4cae37f9b147c278b308c1203e539375e94e7fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

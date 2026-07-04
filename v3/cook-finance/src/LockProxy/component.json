@@ -1,0 +1,18 @@
+{
+  "component": "LockProxy",
+  "main_contract": "LockProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd3b90e2603d265bf46dbc788059ac12d52b6ac57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "TreasuryRentCollector",
+  "main_contract": "TreasuryRentCollector",
+  "source_file_count": 25,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3142a5b1b9fe4bde66c290a3797307a1a33233db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6021727d27560a806b64c9020c257180245824d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xed57a2e8542947c9d8c6386b72d134eb9e00acda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfa7b7d9403d431a3d7373f1a35b6c291c6bf3b01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

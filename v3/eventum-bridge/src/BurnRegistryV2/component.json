@@ -1,0 +1,18 @@
+{
+  "component": "BurnRegistryV2",
+  "main_contract": "BurnRegistryV2",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79cec02f44c0855be72b2305d42cff486efe79a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

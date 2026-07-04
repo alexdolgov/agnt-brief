@@ -1,0 +1,26 @@
+{
+  "component": "NomiswapRouter04",
+  "main_contract": "NomiswapRouter04",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x13147820401f455e3318db8686958d457ad2e7b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd486d0846812266d21e1ab6c57fcf202df836dc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

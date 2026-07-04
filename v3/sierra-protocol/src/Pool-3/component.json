@@ -1,0 +1,26 @@
+{
+  "component": "Pool-3",
+  "main_contract": "Pool",
+  "source_file_count": 63,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa5677fd1d1caf56cd8924edc589045978cf1b33f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea7de06c31c7827d6c8e74d261d330c9ac20435e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

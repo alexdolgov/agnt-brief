@@ -1,0 +1,18 @@
+{
+  "component": "IncentiveGaugeHook",
+  "main_contract": "IncentiveGaugeHook",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x68654d460fdf3231b49b25817cbbd72d8d291fcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PythRandomnessProbe",
+  "main_contract": "PythRandomnessProbe",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc551b6a13f5d247352d786a7ebb24f26a0119180",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

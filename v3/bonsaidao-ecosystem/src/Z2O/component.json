@@ -1,0 +1,18 @@
+{
+  "component": "Z2O",
+  "main_contract": "Z2O",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdb96f8efd6865644993505318cc08ff9c42fb9ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GaugeProxyV2",
+  "main_contract": "GaugeProxyV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x215d5edeb6a6a3f84ae9d72962feaccdf815bf27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

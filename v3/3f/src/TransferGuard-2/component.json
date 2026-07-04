@@ -1,0 +1,21 @@
+{
+  "component": "TransferGuard-2",
+  "main_contract": "TransferGuard",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3FLabs/grunt/blob/main/audits/Cantina_3F_Grunt_Audit_2026-05.pdf",
+    "https://github.com/3FLabs/grunt/blob/main/audits/ChainSecurity_3F_Grunt_Audit_2026-04.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53cddf929e27003e7c5c42d1cb0c8b152af24ce0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

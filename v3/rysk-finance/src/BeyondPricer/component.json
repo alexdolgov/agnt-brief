@@ -1,0 +1,18 @@
+{
+  "component": "BeyondPricer",
+  "main_contract": "BeyondPricer",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xea5fb118862876f249ff0b3e7fb25feb38158def",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

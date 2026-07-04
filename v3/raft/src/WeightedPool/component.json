@@ -1,0 +1,18 @@
+{
+  "component": "WeightedPool",
+  "main_contract": "WeightedPool",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe91888a1d08e37598867d213a4acb5692071bb3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedCollateral",
+  "main_contract": "WrappedCollateral",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x428f0fc93221a9957dc667baa07e62d50c6b8c03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

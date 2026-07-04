@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Core",
+  "main_contract": "ERC20Core",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x92834c37df982a13bb0f8c3f6608e26f0546538e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

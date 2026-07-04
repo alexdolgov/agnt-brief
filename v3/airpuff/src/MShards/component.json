@@ -1,0 +1,18 @@
+{
+  "component": "MShards",
+  "main_contract": "MShards",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xd7782b99671dd23203ebd4584fc71cf2b3dbb111",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

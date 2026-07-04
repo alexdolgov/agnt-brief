@@ -1,0 +1,18 @@
+{
+  "component": "Router",
+  "main_contract": "Router",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xaa40201575140862e9ae4f00515245670582e6e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

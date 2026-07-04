@@ -1,0 +1,18 @@
+{
+  "component": "TimeLockController",
+  "main_contract": "TimeLockController",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa135bcc8123f92efbd50452aa9b0b511c1338a18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

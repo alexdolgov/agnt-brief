@@ -1,0 +1,18 @@
+{
+  "component": "DelayVaultMigrator",
+  "main_contract": "DelayVaultMigrator",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x10f1da58d6d25b5909d5897ea3ba3e76fce774a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

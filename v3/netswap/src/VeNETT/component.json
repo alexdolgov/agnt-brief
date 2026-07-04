@@ -1,0 +1,18 @@
+{
+  "component": "VeNETT",
+  "main_contract": "VeNETT",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x6535db9e8ba2c4304fe45b25d866b37346cc2bd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

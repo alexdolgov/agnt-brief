@@ -1,0 +1,42 @@
+{
+  "component": "BinanceHemiOFT",
+  "main_contract": "BinanceHemiOFT",
+  "source_file_count": 45,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb8dbff1e8dfa6a8cb2b6702f685e3fb73ba2c3c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd275f99dba63259466ef83abf1a9c2effc42506e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfc553809c82ab0853e5d9e7dd168dd4454e91575",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

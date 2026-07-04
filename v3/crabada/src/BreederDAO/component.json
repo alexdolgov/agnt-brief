@@ -1,0 +1,18 @@
+{
+  "component": "BreederDAO",
+  "main_contract": "BreederDAO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7f888a3d2a54903b310383ac6f4d1b16d532b2c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

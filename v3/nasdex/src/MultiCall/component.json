@@ -1,0 +1,18 @@
+{
+  "component": "MultiCall",
+  "main_contract": "MultiCall",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8f80b3e90787fdaca1ec438db5c50ecfeb49c8b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

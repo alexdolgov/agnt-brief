@@ -1,0 +1,18 @@
+{
+  "component": "ActionSwapPT",
+  "main_contract": "ActionSwapPT",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c0df4896b4b57dcc6d121aa4fd8569b4451bf50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

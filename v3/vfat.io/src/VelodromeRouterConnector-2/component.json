@@ -1,0 +1,26 @@
+{
+  "component": "VelodromeRouterConnector-2",
+  "main_contract": "VelodromeRouterConnector",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x475a0f48d432d715bc64eab5bd8b24a50f52d8e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4a1c264c8cc04fe6d5454026e2262d576bc4b299",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

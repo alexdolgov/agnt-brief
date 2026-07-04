@@ -1,0 +1,18 @@
+{
+  "component": "wstETH-crvUSD_leverage_zap",
+  "main_contract": "wstETH-crvUSD leverage zap",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x293436d4e4a15fbc6ccc400c14a01735e5fc74fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

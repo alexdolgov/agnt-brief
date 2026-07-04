@@ -1,0 +1,26 @@
+{
+  "component": "CBridge",
+  "main_contract": "CBridge",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

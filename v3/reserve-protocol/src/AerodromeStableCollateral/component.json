@@ -1,0 +1,44 @@
+{
+  "component": "AerodromeStableCollateral",
+  "main_contract": "AerodromeStableCollateral",
+  "source_file_count": 60,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/reserve-protocol/protocol/blob/master/audits/Oak%20Security%20-%202026-03-12%20Audit%20Report%20-%20Reserve%20Updates.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1bd20253c49515d348dad1af70ff2c0473fea358",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1cca3fbb11c4b734183f997679d52defa74b613a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x50ead4eff1262d2f83855aa9d12ba0272687bc0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x97f9d5ed17a0c99b279887cad5254d15fb1b619b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BMITokenVestingV2",
+  "main_contract": "BMITokenVestingV2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x339d1c142f113e7b910668aa6cba8ae3bbed3574",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GetPokerCardStakingPower",
+  "main_contract": "GetPokerCardStakingPower",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbaafb77447ceabe7d20f5ff03abb62143a961145",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

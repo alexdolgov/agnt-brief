@@ -1,0 +1,20 @@
+{
+  "component": "Angstrom",
+  "main_contract": "Angstrom",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0000000aa232009084bd71a5797d089aa4edfad4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

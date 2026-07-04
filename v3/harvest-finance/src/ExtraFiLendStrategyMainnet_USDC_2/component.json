@@ -1,0 +1,18 @@
+{
+  "component": "ExtraFiLendStrategyMainnet_USDC_2",
+  "main_contract": "ExtraFiLendStrategyMainnet_USDC_2",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdc7ddb6b40d28f0a18647873b723cb7a6c80da9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

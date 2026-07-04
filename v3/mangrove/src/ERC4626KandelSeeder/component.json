@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626KandelSeeder",
+  "main_contract": "ERC4626KandelSeeder",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x0d5e4ca24edda06915264feadf4b9cce74d902e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x9c5ad9d0fc127af40b7cd6279b696607e258bb11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

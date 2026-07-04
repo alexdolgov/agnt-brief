@@ -1,0 +1,18 @@
+{
+  "component": "StkbnbAsset",
+  "main_contract": "StkbnbAsset",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0e202a0bcad2712d1fdeeb94ec98c58beed0679f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

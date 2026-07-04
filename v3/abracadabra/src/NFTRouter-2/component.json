@@ -1,0 +1,18 @@
+{
+  "component": "NFTRouter-2",
+  "main_contract": "NFTRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x887230c6bfeecd0d94c467fb05e852defcbdd1bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

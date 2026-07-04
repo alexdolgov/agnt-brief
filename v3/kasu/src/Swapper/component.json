@@ -1,0 +1,28 @@
+{
+  "component": "Swapper",
+  "main_contract": "Swapper",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_0xCommit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1ca11edb8d8a57b239925c46be878dc2c9261cf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe593edf0579cfa8b622c327c05a0070c71baa6d2",
+      "is_proxy": true,
+      "implementation_address": "0x1ca11edb8d8a57b239925c46be878dc2c9261cf3",
+      "liveness": "live"
+    }
+  ]
+}

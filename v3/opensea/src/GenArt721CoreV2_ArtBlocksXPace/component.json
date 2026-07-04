@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721CoreV2_ArtBlocksXPace",
+  "main_contract": "GenArt721CoreV2_ArtBlocksXPace",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64780ce53f6e966e18a22af13a2f97369580ec11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "ScoreManager",
+  "main_contract": "ScoreManager",
+  "source_file_count": 10,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x1077e8bd92b2fe31f605631390cb7436aed5a937",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xba8332115f446fa15ed5141af65a8f58411bf3eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xef3b9cc0fa4717af6f412d39dbceb89bf92f603b",
+      "is_proxy": true,
+      "implementation_address": "0x1077e8bd92b2fe31f605631390cb7436aed5a937",
+      "liveness": "live"
+    }
+  ]
+}

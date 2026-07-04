@@ -1,0 +1,18 @@
+{
+  "component": "KittyViewOptimized2",
+  "main_contract": "KittyViewOptimized2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0x07cdebf81977e111b08c126defa07818d0045b80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

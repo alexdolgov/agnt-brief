@@ -1,0 +1,21 @@
+{
+  "component": "FraxEtherRedemptionQueue",
+  "main_contract": "FraxEtherRedemptionQueue",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/FXB%2C%20sFRAX%2C%20frxETH%20Redemption%20Queue%2C%20Frax%20Oracles%20-%20Trail%20of%20Bits%20-%20Oct%202023.pdf",
+    "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/frxETH%20V2%20Audit%20Report%20-%20Frax%20Security%20Cartel%20-%20March%202024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5fa02554432eb3c8a5397306d0b30e707bf21a6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

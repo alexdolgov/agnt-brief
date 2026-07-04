@@ -1,0 +1,18 @@
+{
+  "component": "BaoDistribution",
+  "main_contract": "BaoDistribution",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x885d90a424f87d362c9369c0f3d9a2d28af495f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyElkPair",
+  "main_contract": "StrategyElkPair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xafd9338c49a4074e32cc8e77357473c917907234",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

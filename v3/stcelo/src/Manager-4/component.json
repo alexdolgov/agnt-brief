@@ -1,0 +1,18 @@
+{
+  "component": "Manager-4",
+  "main_contract": "Manager",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2f05b88e89b44e4b57b4ba652cadfa414f31ba0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

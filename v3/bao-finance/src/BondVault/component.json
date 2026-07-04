@@ -1,0 +1,18 @@
+{
+  "component": "BondVault",
+  "main_contract": "BondVault",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x518f746ab25432146f15f583845cfe3f56d2bb1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

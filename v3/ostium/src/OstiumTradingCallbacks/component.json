@@ -1,0 +1,34 @@
+{
+  "component": "OstiumTradingCallbacks",
+  "main_contract": "OstiumTradingCallbacks",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4ca659bb271aec5025596fdeca725ea88d8ef37e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9",
+      "is_proxy": true,
+      "implementation_address": "0x01941d98e031bb98fe18492730ab7dc52a39dc78",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe75d8ac0e898359def69ceccea78f7bcbb65f30d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

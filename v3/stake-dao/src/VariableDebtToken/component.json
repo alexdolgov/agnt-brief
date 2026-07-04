@@ -1,0 +1,18 @@
+{
+  "component": "VariableDebtToken",
+  "main_contract": "VariableDebtToken",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0a8058203387c15a711204908ed9efed9f76e6a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

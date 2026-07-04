@@ -1,0 +1,23 @@
+{
+  "component": "RouterCommon",
+  "main_contract": "RouterCommon",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/cantina/2024-12-17.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2024-09-04.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/spearbit/2024-10-04.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/trail-of-bits/2024-12-11.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x136f1efcc3f8f88516b9e94110d56fdbfb1778d1",
+      "is_proxy": true,
+      "implementation_address": "0x136f1efcc3f8f88516b9e94110d56fdbfb1778d1",
+      "liveness": "live"
+    }
+  ]
+}

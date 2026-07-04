@@ -1,0 +1,42 @@
+{
+  "component": "IndicesSupplyRedeemZap",
+  "main_contract": "IndicesSupplyRedeemZap",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42c1e21b04549e44a78c7c6e5e80b6f36d130b93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49e4c572761db50b9999948a46daf2d7710c6e54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85c6d6b0cd1383cc85e8e36c09d0815daf36b9e9",
+      "is_proxy": true,
+      "implementation_address": "0x49e4c572761db50b9999948a46daf2d7710c6e54",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb6d77b0a52aec1bca7a65c753a6036c70e4743d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

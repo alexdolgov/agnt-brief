@@ -1,0 +1,18 @@
+{
+  "component": "LinearRewardsErc4626",
+  "main_contract": "LinearRewardsErc4626",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

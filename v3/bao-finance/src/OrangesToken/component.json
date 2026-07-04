@@ -1,0 +1,18 @@
+{
+  "component": "OrangesToken",
+  "main_contract": "OrangesToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x314062be53367be0cc2a4a3141f4021618b7c2ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

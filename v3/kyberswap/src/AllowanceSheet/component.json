@@ -1,0 +1,18 @@
+{
+  "component": "AllowanceSheet",
+  "main_contract": "AllowanceSheet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x811c5f8dfbdd70c245e66e4cd181040b2630424a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

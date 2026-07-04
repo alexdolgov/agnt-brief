@@ -1,0 +1,26 @@
+{
+  "component": "PoolPositionBaseSlim",
+  "main_contract": "PoolPositionBaseSlim",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34c4055cb3250f7e042e9e5aeb20e22ae15a19d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x683a3086804260b3f6779ed7c01f9a15073561b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

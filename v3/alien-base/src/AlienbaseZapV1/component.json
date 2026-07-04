@@ -1,0 +1,18 @@
+{
+  "component": "AlienbaseZapV1",
+  "main_contract": "AlienbaseZapV1",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe0808b8e2bdd70d70e540f977cf40e26e5811054",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

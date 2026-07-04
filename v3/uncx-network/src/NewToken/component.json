@@ -1,0 +1,18 @@
+{
+  "component": "NewToken",
+  "main_contract": "NewToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x687f8ae35581d5729253542524be3ed9445ee607",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

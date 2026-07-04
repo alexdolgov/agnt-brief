@@ -1,0 +1,26 @@
+{
+  "component": "Automation-3",
+  "main_contract": "Automation",
+  "source_file_count": 47,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1c9d70e5f927a841142cefd4d52a418d1ab0ed35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5acb2ec8e7755366e0f23df4579cb5cfaf14715c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

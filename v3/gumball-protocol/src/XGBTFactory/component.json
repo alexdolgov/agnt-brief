@@ -1,0 +1,18 @@
+{
+  "component": "XGBTFactory",
+  "main_contract": "XGBTFactory",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x00df73be2643e2f57cb81ceb5ca11837c3c4ff3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

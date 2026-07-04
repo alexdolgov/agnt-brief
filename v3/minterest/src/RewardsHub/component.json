@@ -1,0 +1,18 @@
+{
+  "component": "RewardsHub",
+  "main_contract": "RewardsHub",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63e0dbec2143acae33d2cc53e23d9134359e0399",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

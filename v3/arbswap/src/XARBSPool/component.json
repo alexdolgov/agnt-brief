@@ -1,0 +1,20 @@
+{
+  "component": "XARBSPool",
+  "main_contract": "XARBSPool",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Arbswap-Official/Audit-reports/blob/main/PeckShield-Audit-Report-Arbswap-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d6e388064eb7e3256539e9c3e9f16a829f6a222",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

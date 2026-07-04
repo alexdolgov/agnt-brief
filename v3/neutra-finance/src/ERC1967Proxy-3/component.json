@@ -1,0 +1,42 @@
+{
+  "component": "ERC1967Proxy-3",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 71,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5d6af1c296f7ef5b6f0c7137e0faa8184613543f",
+      "is_proxy": true,
+      "implementation_address": "0xf5e12bf38ba20f19b80f627da7a496aa27d05c48",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe06beffcf4e4d859a1e2a9a76cd67c4a26cb0a90",
+      "is_proxy": true,
+      "implementation_address": "0xea2b63e637f3acc72226845107021166d27b08b9",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xec461883bb792f2b64b813e54a2b70751ecbd036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf17b7fb469fe9bb39786e472b96ddd3357d613fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

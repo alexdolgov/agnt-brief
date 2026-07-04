@@ -1,0 +1,58 @@
+{
+  "component": "DomfiTradesUpKeep",
+  "main_contract": "DomfiTradesUpKeep",
+  "source_file_count": 14,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1e7dd9d0f317af14a58dcd87487b1399f79f92aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3259f12b149c16ca4eb0f96addf85e55d0b3a1fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x36187394c334be7cd1742538a51c9f9252e26c8c",
+      "is_proxy": true,
+      "implementation_address": "0x1e7dd9d0f317af14a58dcd87487b1399f79f92aa",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7e13e9c674175163f49c26d0e67650d5cc985a54",
+      "is_proxy": true,
+      "implementation_address": "0x3259f12b149c16ca4eb0f96addf85e55d0b3a1fc",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x991336590f79c268c803bb747e5f9959b27d3135",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbb55779884b0ed5ce52233a7c8cd63a3da04dca7",
+      "is_proxy": true,
+      "implementation_address": "0x991336590f79c268c803bb747e5f9959b27d3135",
+      "liveness": "live"
+    }
+  ]
+}

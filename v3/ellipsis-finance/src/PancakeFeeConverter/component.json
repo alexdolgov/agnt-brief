@@ -1,0 +1,26 @@
+{
+  "component": "PancakeFeeConverter",
+  "main_contract": "PancakeFeeConverter",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbe97f9f1992b5bdb42f3b91172225b2d982ca542",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd7571f3e67b553ecd344a713785399471b627a4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

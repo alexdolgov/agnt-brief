@@ -1,0 +1,47 @@
+{
+  "component": "SiloRouterV2Implementation",
+  "main_contract": "SiloRouterV2Implementation",
+  "source_file_count": 23,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20Enterprise%20Continuous%20Audit.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/Silo%20-%20Defaulting%20Liquidations%20-%20Final%20Report%20.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/reports/Silo%20-%20Liquidation-by-Defaulting%20-%20Draft%20Report.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x16876af41e8beddbf9b67d2b66bb50abf3503b1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x39f7eed73d48760e19e8408b29da6b3372eee1cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4b8cbf30c9dc9d28ce56eeed40bf23b5fd6457b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9ea2867dbb81ddd45d28276f513622988fe21a10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

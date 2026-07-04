@@ -1,0 +1,18 @@
+{
+  "component": "CycloneV2dot1",
+  "main_contract": "CycloneV2dot1",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd90a6bf8439ef7214cf00da83e926068b6a507ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

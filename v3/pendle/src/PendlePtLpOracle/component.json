@@ -1,0 +1,18 @@
+{
+  "component": "PendlePtLpOracle",
+  "main_contract": "PendlePtLpOracle",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x15aab5c1ab800a9e457d9f4335e8a2dc9f6ad707",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

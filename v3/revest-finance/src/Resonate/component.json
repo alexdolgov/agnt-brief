@@ -1,0 +1,18 @@
+{
+  "component": "Resonate",
+  "main_contract": "Resonate",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x18eb4532266be3a28adccfd0bbfffe88bb5bc1df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

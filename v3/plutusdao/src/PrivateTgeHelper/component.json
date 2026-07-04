@@ -1,0 +1,18 @@
+{
+  "component": "PrivateTgeHelper",
+  "main_contract": "PrivateTgeHelper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xec06e18b64b54470eb423a245640600155ad3427",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

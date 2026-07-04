@@ -1,0 +1,18 @@
+{
+  "component": "ZeroExStorage",
+  "main_contract": "ZeroExStorage",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa19d093d24d345fa25424d15202cab00a5fabe65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

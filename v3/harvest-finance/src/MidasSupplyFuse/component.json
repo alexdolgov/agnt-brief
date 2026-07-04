@@ -1,0 +1,26 @@
+{
+  "component": "MidasSupplyFuse",
+  "main_contract": "MidasSupplyFuse",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1f941bc36399b8e3471568523f22f4f4f918af01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa0417653a69503d7abd838cc601172720893f9f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BabyRegistry",
+  "main_contract": "BabyRegistry",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x540a805dcb1b06820f1361c3ec3e89ba2273c86b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc655e790c4fd222de23d32956186c7d745908f7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

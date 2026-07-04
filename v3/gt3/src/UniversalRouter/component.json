@@ -1,0 +1,18 @@
+{
+  "component": "UniversalRouter",
+  "main_contract": "UniversalRouter",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x266e80a3777a029db9400628de64d3fa758345c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BitBearsONFTAdapter",
+  "main_contract": "BitBearsONFTAdapter",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3eb12398753eed7e8747321c37c85de30d8e2e94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x884a9444b86ff565d0c1b7ab5eaa0651420efc12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

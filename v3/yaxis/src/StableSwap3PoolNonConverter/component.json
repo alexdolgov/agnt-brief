@@ -1,0 +1,18 @@
+{
+  "component": "StableSwap3PoolNonConverter",
+  "main_contract": "StableSwap3PoolNonConverter",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9354b082e5cedb41422fb9d4669ab8b7f8511aee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

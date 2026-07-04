@@ -1,0 +1,20 @@
+{
+  "component": "Proxy-2",
+  "main_contract": "Proxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://static.horizonprotocol.com/Horizon-Protocol-Smart-Contract-Audit-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfcf3afa6cda14b438aeeb8ffed433d196cd1367f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

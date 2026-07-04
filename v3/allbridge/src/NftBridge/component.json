@@ -1,0 +1,18 @@
+{
+  "component": "NftBridge",
+  "main_contract": "NftBridge",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x999cdf7e4a9e95d499bfef29f349e02cf2b4bced",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

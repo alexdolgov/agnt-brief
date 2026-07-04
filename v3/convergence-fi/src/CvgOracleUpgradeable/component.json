@@ -1,0 +1,18 @@
+{
+  "component": "CvgOracleUpgradeable",
+  "main_contract": "CvgOracleUpgradeable",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x955659bc4cc1d9fe2f00e422b524d1f24993b0c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

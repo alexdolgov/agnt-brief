@@ -1,0 +1,26 @@
+{
+  "component": "SignatureVerifier",
+  "main_contract": "SignatureVerifier",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0992bb163b8f5615258defe98fb8bd63327b5b10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x78a32a705bfc1600e0a2e056316e44877bda7f57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RocketMinipoolDelegate-2",
+  "main_contract": "RocketMinipoolDelegate",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a0b5d3101d111ea0edd573d45ef2208cc97984a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

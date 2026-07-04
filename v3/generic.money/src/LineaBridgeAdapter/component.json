@@ -1,0 +1,20 @@
+{
+  "component": "LineaBridgeAdapter",
+  "main_contract": "LineaBridgeAdapter",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.generic.money/audits/2026-01-19-report-cantinacode-generic-money.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe39d672416421ce1536997ff892c8b339eb9ab93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BPTStableOracle",
+  "main_contract": "BPTStableOracle",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xb060ef95aee9f3ac66cf8747ec64644e600d9341",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

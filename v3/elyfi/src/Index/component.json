@@ -1,0 +1,18 @@
+{
+  "component": "Index",
+  "main_contract": "Index",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x66368d5be45fbf209fc1f34733da31708a7c03a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

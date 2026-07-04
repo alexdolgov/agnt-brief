@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721CoreV2_VerseFlex",
+  "main_contract": "GenArt721CoreV2_VerseFlex",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb5471c292065d3b01b2e81e299267221ae9a250",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

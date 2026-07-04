@@ -1,0 +1,18 @@
+{
+  "component": "MIPS",
+  "main_contract": "MIPS",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16e83ce5ce29bf90ad9da06d2fe6a15d5f344ce4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

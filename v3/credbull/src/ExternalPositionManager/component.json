@@ -1,0 +1,18 @@
+{
+  "component": "ExternalPositionManager",
+  "main_contract": "ExternalPositionManager",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9513b3a49fc9ae8b76942c94fb6f660c41fd7f47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

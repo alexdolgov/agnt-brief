@@ -1,0 +1,18 @@
+{
+  "component": "ERC777-5",
+  "main_contract": "ERC777",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf80d589b3dbe130c270a69f1a69d050f268786df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

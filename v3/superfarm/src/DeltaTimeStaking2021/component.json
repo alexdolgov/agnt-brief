@@ -1,0 +1,18 @@
+{
+  "component": "DeltaTimeStaking2021",
+  "main_contract": "DeltaTimeStaking2021",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x410ef532c1e4957806508d2b3928aad73f3caa71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

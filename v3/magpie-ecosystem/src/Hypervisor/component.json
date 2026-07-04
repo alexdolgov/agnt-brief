@@ -1,0 +1,34 @@
+{
+  "component": "Hypervisor",
+  "main_contract": "Hypervisor",
+  "source_file_count": 34,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3685502ea3ea4175fb5cbb5344f74d2138a96708",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xab092c47b23fba03ac1f0ec5f8e94110eb5fff22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdf0b9b59e92a2554dedb6f6f4af6918d79dd54c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

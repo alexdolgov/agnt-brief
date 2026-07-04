@@ -1,0 +1,60 @@
+# circle — deployments
+
+54 verified deployment(s) across 53 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| bsc | `0x191fb6f3ba332f1b8789caf67abbaba56147445b` | USYCSatellite | impl | live | no |
+| bsc | `0xcfc60d34949a7dbdf91ba6d5613b26d6ff0ad504` | Sanctions | impl | live | no |
+| ethereum | `0x026a6955696af727d87cc45cce934aea56ef68e3` | StringToHexString | impl | live | no |
+| ethereum | `0x04f793a709ff868760cc9ba88a7b6dcbe0a4ee04` | HashnoteVaultRegistrarProxy | proxy | live | no |
+| ethereum | `0x058614c982e2dfb89d664978ad2dab5113950a17` | WSTETHAggregatorProxy | proxy | live | no |
+| ethereum | `0x05a0a07620348a90ab895d2c9e87adfa1a59bf51` | WrappedTokenScaled | impl | live | no |
+| ethereum | `0x05dada035f571bccd4c04fc73bbe01515af7c0bf` | BaseVault | impl | live | no |
+| ethereum | `0x060087d12801e36f1fe2b1a8d8a90dc6348bd599` | YieldTokenTellerV2Proxy | proxy | live | no |
+| ethereum | `0x06de711c7dd7b0fff655b59c28dc2dfe41441506` | VaultLib | impl | live | no |
+| ethereum | `0x0747c48be08773bcea26fdbe7347a388c7736c3c` | HashnoteVaultProxy | proxy | live | no |
+| ethereum | `0x07c19d2af8cc00962e9e4e0744b7a191329b447d` | PhysicalReturnProcessor | impl | live | no |
+| ethereum | `0x081bdb07aaaa64df8440b608a8259d89e3dc56d6` | HashnoteVaultShareProxy | proxy | live | no |
+| ethereum | `0x0c3557be73357f802a0c1d4954fc9d8721bfe4f0` | StrategyVaultProxy | proxy | live | no |
+| ethereum | `0x0c9b6b2b9345841f6210f6045ee2508d68ee1ac6` | WrappedTokenStakedETHProxy | proxy | live | no |
+| ethereum | `0x0dc09046f22ec756e633eca91618e3c9a372699a` | ShortDurationYieldCoin | impl | live | no |
+| ethereum | `0x0e6b762f45d412c13b975db10001d467d6caaa19` | CrossMarginPhysicalLib | impl | live | no |
+| ethereum | `0x10022be24d6fbbf7ce321361e3371f0a05754ed0` | OptionToken | impl | live | no |
+| ethereum | `0x1051a9ebb992a76fd1ad3143da202bd0c3eaabe1` | SDYCAggregatorProxy | proxy | live | no |
+| ethereum | `0x10cacb2319135da66b89ae8aa12e1bcaaaf54389` | StructureLib | impl | live | no |
+| ethereum | `0x1150384af15b603ff0cb1c9f61e11709c8153ce3` | WhitelistManager | impl | live | no |
+| ethereum | `0x11a166b96d3568443154e95a1b4b8802369c9ffe` | CrossMarginPhysicalMath | impl | live | no |
+| ethereum | `0x121eeda447ac138c8f6f5d2423353c996c9bf0d7` | DoubleAggregatorProxy | proxy | live | no |
+| ethereum | `0x132c1485120d36e882d80d01af7de2f454a7bdbb` | FeeLib | impl | live | no |
+| ethereum | `0x136471a34f6ef19fe571effc1ca711fdb8e49f2b` | ERC1967Upgrade-2 | proxy | live | no |
+| ethereum | `0x17e9d98c3f3301e7869d2d6fbdd37dc6e605f245` | SimpleSettlement | impl | live | no |
+| ethereum | `0x17ff7c7b0ba791653f334b9866264bfb58b94aa3` | ERC1967Upgrade-3 | proxy | live | no |
+| ethereum | `0x181d053611a754df9a1ada64fed24a12b63a39f8` | CrossMarginPhysicalEngine | impl | live | no |
+| ethereum | `0x1a886fafe770a32812972c5d5632d0b4a6156fd0` | GenericAggregator | impl | live | no |
+| ethereum | `0x1d2103251c2f5edec640ef6e5a99d99e6bd53889` | CrossMarginCashEngine | impl | live | no |
+| ethereum | `0x231d51f23dad8a58b867c47884e88e6e122f3f12` | CrossChainTeller | impl | live | no |
+| ethereum | `0x2a6f3f4cd09106ad645a5d8b16fbe8d6bc57e18f` | ERC1967Upgrade-4 | proxy | live | no |
+| ethereum | `0x2c202d6a890bc8bb215ceae40d2ff12f5d323e12` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0x2c6c57528d8651c2fbc46aa67e64aaf9e9646b31` | CrossMarginCashLib | impl | live | no |
+| ethereum | `0x2c8ec036c7f41f84bd1c15565070f2aa2d00eccd` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0x2ca5946749e328287ee73c6efb27e7fb7ef9d8cc` | YieldTokenTeller | impl | live | no |
+| ethereum | `0x2cba4e2335c5e9e006dfbf47acb62294a1a39ed1` | CrossMarginCashMath | impl | live | no |
+| ethereum | `0x2cf8d5089d3cc289b369bff29646d4070459c66b` | PositionPauser | impl | live | no |
+| ethereum | `0x352f80e8f63871649cf23a68cd28907a5582b0ab` | RolesAuthority | impl | live | no |
+| ethereum | `0x362087f1cafdcf934928630b4b03d69854bc7eee` | ERC1967Upgrade-5 | impl | live | no |
+| ethereum | `0x3b7ad4835d817181592788a7e6d588d334e0426b` | ERC1967Upgrade-6 | impl | live | no |
+| ethereum | `0x41a5be0fabda35e57838bf2aacfdfe58de8d59e9` | Teller | impl | live | no |
+| ethereum | `0x454018c4ccb5a1e4348e2227229a2e2fdde25d9c` | SimpleSettlementPhysical | impl | live | no |
+| ethereum | `0x542647c43a126778c7a895300e476bcfd58bea86` | PriceReporter | impl | live | no |
+| ethereum | `0x55e3d6076ece40697ba5fdf226a1e10afbf22b06` | PermissionedToken | impl | live | no |
+| ethereum | `0x6b7d54003f73be979cf92bf369432ac534853692` | ERC1967Upgrade-7 | impl | live | no |
+| ethereum | `0x6deaa761bc131ac5f1d562ee71819e846ef11624` | ERC1967Upgrade-8 | impl | live | no |
+| ethereum | `0x7e8e384b57dcf4096baa3221086f1236fc616bc6` | ERC1967Upgrade-9 | impl | live | no |
+| ethereum | `0x8cadc832040bc66a0aeef9bf6b6d1bd7bcc5acdb` | ERC1967Upgrade-10 | proxy | live | no |
+| ethereum | `0xaab8ed4c17ec6bc739035c66ba967810c235f3b9` | ERC1967Upgrade-11 | proxy | live | no |
+| ethereum | `0xad250345078aba5d052c1a8040fd1c1595f4ea00` | SimpleSettlementCash | impl | live | no |
+| ethereum | `0xc0fa776fbf7b1dbdcd868e7a42aac0eb193afa06` | ERC1967Upgrade-12 | proxy | live | no |
+| ethereum | `0xc312141b2f7826d36a1d111c63d1a9ed824d07d5` | ERC1967Upgrade-13 | proxy | live | no |
+| ethereum | `0xc7175273dddd9fd0b5846a86229aec9ed4c7d20d` | Proxy | proxy | live | no |
+| ethereum | `0xee35f963bfc71b51ec95147f26c030d674ea30e6` | TellerProxy | proxy | live | no |

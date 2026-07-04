@@ -1,0 +1,20 @@
+{
+  "component": "Revoluzion",
+  "main_contract": "Revoluzion",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/rvz/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d89c67d3c4e72e8c5c64be201dc225f99d16aca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

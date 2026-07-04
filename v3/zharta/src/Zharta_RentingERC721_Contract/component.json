@@ -1,0 +1,18 @@
+{
+  "component": "Zharta_RentingERC721_Contract",
+  "main_contract": "Zharta RentingERC721 Contract",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29193d61fc8d9ec84b61643aad2a4153999279b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

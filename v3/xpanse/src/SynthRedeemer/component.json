@@ -1,0 +1,18 @@
+{
+  "component": "SynthRedeemer",
+  "main_contract": "SynthRedeemer",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x05af42bfccd27b0db5697c4a34b8d1aa73f4f186",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AirdropPayoutForRebate",
+  "main_contract": "AirdropPayoutForRebate",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2b1b26bcb845d6ca9bcf73b21d2a3c49662b5540",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# swellchain-bridge — deployments
+
+57 verified deployment(s) across 56 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x0454092516c9a4d636d3cafa1e82161376c8a748` | LivenessModule | impl | inactive | no |
+| ethereum | `0x06f7fb1c74147e34fce04a6828c7bf809b038d0e` | SafeProxy | proxy | live | no |
+| ethereum | `0x09341022ea237a4db1644de7ccf8fa0e489d85b7` | SwellOFTAdapter | impl | live | no |
+| ethereum | `0x14387438ee964e826a4eaeb95b2bce7754174dd1` | Proxy | proxy | live | no |
+| ethereum | `0x15a94d49fac6e23e17c1366c999117a1de8ba7b6` | Accountant | impl | live | yes |
+| ethereum | `0x16e83ce5ce29bf90ad9da06d2fe6a15d5f344ce4` | MIPS | impl | live | no |
+| ethereum | `0x1bb44f9d91b4276621550aeea5d2d96279975bf3` | RoleManager | impl | live | yes |
+| ethereum | `0x24424336f04440b1c28685a38303ac33c9d14a25` | GnosisSafe | impl | inactive | no |
+| ethereum | `0x2a6a2beebf6d65e03246087a41812db1c5c0caf8` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x2c1b3426e557d6756d8a8859a0779373236f94e2` | OFTAdapterSwETH | impl | live | no |
+| ethereum | `0x2db7583852c700549b710fd79dd1b54af2efa4dd` | RolesAuthority | impl | inactive | no |
+| ethereum | `0x33a032ec93ec0c492ec4bf0b30d5f51986e5a314` | SystemConfig | impl | inactive | no |
+| ethereum | `0x428cda6c1994b926f75a4830d5baedee9db2ac58` | RSwellOFTAdapter | impl | live | no |
+| ethereum | `0x473f0adec308dc82440665d9fc7d5e26ebcf0e05` | AeraStrategy | proxy | inactive | no |
+| ethereum | `0x48dacb0b938aa6d5752ca2ea23cd8593fafb3825` | Accountant-2 | impl | live | yes |
+| ethereum | `0x4c4710a4ec3f514a492cc6460818c4a6a6269dd6` | ProxyAdmin | impl | live | no |
+| ethereum | `0x4c86cb5cd701cbf2364f25ed9563ff3d3d493c22` | WithdrawLimitModule | impl | inactive | no |
+| ethereum | `0x584cd37ba4ab54f074f1067c1f51cce8e6e7dae2` | SwBtcOFTAdapter | impl | live | no |
+| ethereum | `0x5a0aae59d09fccbddb6c6cceb07b7279367c3d2a` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x5bd444ad23e02376f8fbba47e3cc9d2cadb6c4f6` | ReleaseRegistry | impl | inactive | no |
+| ethereum | `0x5dc91d01290af474ce21de14c17335a6dee4d2a8` | SystemConfig-2 | impl | inactive | no |
+| ethereum | `0x6748220a79446867eb41a824b4f74a92fc0931a9` | ProxyAdmin-2 | impl | live | no |
+| ethereum | `0x69dda92dd42040c1290a7870b9fc1dc05e41836a` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x70f8ac14dfdec437aba5e30c7b509dd01e1da901` | ReleaseRegistry-2 | impl | inactive | no |
+| ethereum | `0x755a078dee1c264a3053f02cd634e750d505cf85` | DelayedWithdraw | impl | inactive | no |
+| ethereum | `0x758e0ee66102816f5c3ec9ecc1188860fbb87812` | Proxy-2 | proxy | live | no |
+| ethereum | `0x7aa4960908b13d104bf056b23e2c76b43c5aacc8` | L1ChugSplashProxy | proxy | live | no |
+| ethereum | `0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2` | L1ERC20TokenBridge | impl | inactive | no |
+| ethereum | `0x8041ba598f0e656ebe80c67289efb42c09e86ae3` | AeraStrategy-2 | proxy | inactive | no |
+| ethereum | `0x805c6d95c9e707332215f42cb89f93752ffa55b8` | DelayedWithdraw-2 | impl | inactive | no |
+| ethereum | `0x8413e65374fca711af5eaddcf7191461a1f4d6af` | RoleManager-2 | impl | live | yes |
+| ethereum | `0x87690676786cdc8cca75a472e483af7c8f2f0f57` | Proxy-3 | proxy | live | no |
+| ethereum | `0x939f1cc163fdc38a77571019eb4ad1794873bf8c` | RegistryFactory | impl | inactive | no |
+| ethereum | `0x95703e0982140d16f8eba6d158fccede42f04a4c` | Proxy-4 | proxy | live | no |
+| ethereum | `0x95e8bacd0449a513d954d2ccb5ef48b8ed151ef6` | ProxyAdmin-3 | impl | live | no |
+| ethereum | `0x9b07fb810ef909b01f959911cef2cc834433f562` | SwETHOFTAdapter | impl | inactive | no |
+| ethereum | `0x9ba6e03d8b90de867373db8cf1a58d2f7f006b3a` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x9c065e11870b891d214bc2da7ef1f9ddfa1be277` | PreimageOracle | impl | live | no |
+| ethereum | `0x9d663f1dd3cb752b47301abdc22d620d1868f377` | RolesAuthority-2 | impl | inactive | no |
+| ethereum | `0x9e07af58c4c8893b0509e5d6d0ab8c92083fdae7` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0xa0cfbe3402d6e0a74e96d3c360f74d5ea4fa6893` | PermissionedDisputeGame | impl | live | no |
+| ethereum | `0xa1a3257813ed45d91e9c45e03c66fcdd54b4e7c1` | RoleManager-3 | impl | live | yes |
+| ethereum | `0xa2ed40f46c391ddd30094e866aac913a20f17216` | WithdrawLimitModule-2 | impl | inactive | no |
+| ethereum | `0xa419026809e2d13bc73dee13992e7873ab605981` | OracleAdapter | impl | inactive | no |
+| ethereum | `0xa54a84f17c2180148c762d79bc57bdff7fdafc8a` | AddressManager | impl | live | no |
+| ethereum | `0xa5bd95bfd47d439ce544bcc22b642bf46a2aa3e2` | SwBtcOFTAdapter-2 | impl | live | no |
+| ethereum | `0xa9bd691b166aafcc9ef55aabc1960825630558d6` | RolesAuthority-3 | impl | inactive | no |
+| ethereum | `0xc2a55871a713fb98a6b60e2e76fc94021c9f182f` | Keeper | impl | inactive | no |
+| ethereum | `0xc2b228cd433ebae788de287ede2abe55b3f3f603` | Proxy-5 | proxy | live | no |
+| ethereum | `0xd3d4c6b703978a5d24fecf3a70a51127667ff1a4` | Proxy-6 | proxy | live | no |
+| ethereum | `0xd905418c46d8141dd80ba065e694abd4dfd5b4a1` | RoleManager-4 | impl | live | yes |
+| ethereum | `0xd98f5cd9699d2824149015985df21cc568c27b5e` | SwETHOFTAdapter-2 | impl | inactive | no |
+| ethereum | `0xe6a99ef12995defc5ff47ec0e13252f0e6903759` | ResolvedDelegateProxy | proxy | live | no |
+| ethereum | `0xec6de7031ce1a284d13b551ef8c4c04b6fdf773c` | DelayedWithdraw-3 | impl | inactive | no |
+| ethereum | `0xecf3376512edaca4fbb63d2c67d12a0397d24121` | OssifiableProxy | proxy | live | no |
+| ethereum | `0xfd7618330e63b493070dc8c491ad4ad26144bc1e` | Proxy-7 | proxy | live | no |
+| ethereum | `0xff22ea467301010f1364fc154c13e0c86fcfb077` | RegistryFactory-2 | impl | inactive | no |

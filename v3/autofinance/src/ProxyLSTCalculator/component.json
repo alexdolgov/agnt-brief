@@ -1,0 +1,34 @@
+{
+  "component": "ProxyLSTCalculator",
+  "main_contract": "ProxyLSTCalculator",
+  "source_file_count": 60,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x24864cc03efd84f9df0e5f1d23ab69128325931e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8a26c73f5c4597e086254cb815403b98dc494e53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdbfb637873d16dc5efa43db75ff846934caaa43f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

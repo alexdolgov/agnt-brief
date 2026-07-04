@@ -1,0 +1,18 @@
+{
+  "component": "EURO",
+  "main_contract": "EURO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2ed076fc51685e7eb12804f8c10210cd305792e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

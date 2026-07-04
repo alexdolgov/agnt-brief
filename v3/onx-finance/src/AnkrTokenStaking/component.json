@@ -1,0 +1,18 @@
+{
+  "component": "AnkrTokenStaking",
+  "main_contract": "AnkrTokenStaking",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c87cc2153d25f8d8b95ea3c04ab22583285408c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

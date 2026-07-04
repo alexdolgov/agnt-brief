@@ -1,0 +1,42 @@
+{
+  "component": "EarnOtherFixedAPRLockReward",
+  "main_contract": "EarnOtherFixedAPRLockReward",
+  "source_file_count": 9,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2703e5d3709782e85957e40a9c834afd4d45caf9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4191754ecb1c460b82818beaa5fb6ce7728bebe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7dd617eacd7fd35f69275f943ff82218213796b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xba5640094e940b32159daf38ab8b86fe4d788a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

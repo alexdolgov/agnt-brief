@@ -1,0 +1,18 @@
+{
+  "component": "TrancheTokenFactory",
+  "main_contract": "TrancheTokenFactory",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2712fe754119eab4499495494919f97b2df18dca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AgentPoolDistributor",
+  "main_contract": "AgentPoolDistributor",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x15dcc5564908a3a2c4c7b4659055d0b9e1489a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

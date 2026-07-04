@@ -1,0 +1,28 @@
+{
+  "component": "StakedSlipstreamAM-2",
+  "main_contract": "StakedSlipstreamAM",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2025-09%20Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf6a87d944204bb5fdb9cf5534c03c46895f78ecd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

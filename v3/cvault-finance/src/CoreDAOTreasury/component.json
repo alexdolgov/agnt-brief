@@ -1,0 +1,18 @@
+{
+  "component": "CoreDAOTreasury",
+  "main_contract": "CoreDAOTreasury",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3fb0b7a48b56ac5f2cf08ff07ea1878d63caad0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

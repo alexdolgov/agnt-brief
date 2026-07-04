@@ -1,0 +1,18 @@
+{
+  "component": "BaseGaugeV2",
+  "main_contract": "BaseGaugeV2",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c2e08b03c6f0831dc44ef6d5f4cabfb4c46f2fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

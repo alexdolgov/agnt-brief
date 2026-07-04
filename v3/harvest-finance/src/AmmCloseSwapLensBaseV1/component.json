@@ -1,0 +1,18 @@
+{
+  "component": "AmmCloseSwapLensBaseV1",
+  "main_contract": "AmmCloseSwapLensBaseV1",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb9c7a519ba2d6213f9e77f334b6ad8d8a2749cb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

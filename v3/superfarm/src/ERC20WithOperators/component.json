@@ -1,0 +1,18 @@
+{
+  "component": "ERC20WithOperators",
+  "main_contract": "ERC20WithOperators",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x557b933a7c2c45672b610f8954a3deb39a51a8ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakingRouter",
+  "main_contract": "StakingRouter",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd8784e748f59ba711fb5643191ec3fadd50fb6df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

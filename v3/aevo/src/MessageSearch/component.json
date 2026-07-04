@@ -1,0 +1,26 @@
+{
+  "component": "MessageSearch",
+  "main_contract": "MessageSearch",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x10bcd35f03c9c9b68305875f52b406188f5755de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x28ac26b4f6a4483d11ad209f08f7b4dbb7364fd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

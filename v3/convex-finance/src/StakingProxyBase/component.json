@@ -1,0 +1,18 @@
+{
+  "component": "StakingProxyBase",
+  "main_contract": "StakingProxyBase",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0841ab39826b0dafaeb008baa48876917d333df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

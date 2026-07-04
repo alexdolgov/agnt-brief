@@ -1,0 +1,18 @@
+{
+  "component": "Diamond-2",
+  "main_contract": "Diamond",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x86083653fef09ab89bec7da3815dd76af9bcc006",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

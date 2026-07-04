@@ -1,0 +1,20 @@
+{
+  "component": "SyntheticSharesOracle",
+  "main_contract": "SyntheticSharesOracle",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/GM-SyntheticShares-Cantina-11-18-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9bc39db6fbb44b91a48b8d5a6c208b82b1741be6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

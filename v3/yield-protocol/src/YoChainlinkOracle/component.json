@@ -1,0 +1,18 @@
+{
+  "component": "YoChainlinkOracle",
+  "main_contract": "YoChainlinkOracle",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2800fc940a9b3bcb2cde3c70797b21296becbf07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

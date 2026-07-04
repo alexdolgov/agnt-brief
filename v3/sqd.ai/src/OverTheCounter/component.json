@@ -1,0 +1,18 @@
+{
+  "component": "OverTheCounter",
+  "main_contract": "OverTheCounter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1c77ad535552e7428630bcdf5b10b1e992f9f16c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

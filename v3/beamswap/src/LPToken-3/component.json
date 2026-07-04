@@ -1,0 +1,20 @@
+{
+  "component": "LPToken-3",
+  "main_contract": "LPToken",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://raw.githubusercontent.com/peckshield/publications/65be3a3b651bba87c4a9c024ca4306adbadba040/audit_reports/PeckShield-Audit-Report-Beamswap-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xbe161d04498b9b93b74d474421e292f3d0060a0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

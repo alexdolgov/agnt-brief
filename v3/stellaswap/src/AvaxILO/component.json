@@ -1,0 +1,18 @@
+{
+  "component": "AvaxILO",
+  "main_contract": "AvaxILO",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x96bef4719ae7c053113292e6aa7fc36e62b243e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

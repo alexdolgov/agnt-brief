@@ -1,0 +1,18 @@
+{
+  "component": "OPNToken",
+  "main_contract": "OPNToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc28eb2250d1ae32c7e74cfb6d6b86afc9beb6509",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

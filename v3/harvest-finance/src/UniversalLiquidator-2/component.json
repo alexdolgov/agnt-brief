@@ -1,0 +1,18 @@
+{
+  "component": "UniversalLiquidator-2",
+  "main_contract": "UniversalLiquidator",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x589ff9f1e9f517b232808280c46a64a36ac557d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BeefyVaultV6",
+  "main_contract": "BeefyVaultV6",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0673a2dde104e5fd3d5e75a12c201c3db0d24d1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

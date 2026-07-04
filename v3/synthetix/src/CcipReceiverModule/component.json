@@ -1,0 +1,26 @@
+{
+  "component": "CcipReceiverModule",
+  "main_contract": "CcipReceiverModule",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x46f438c7b0c9fabf03d21eacfa1aec9e075c6e7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x978d4b5438d3e4edf4f03682e5a53b48e56604c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UnsupportedProtocol-2",
+  "main_contract": "UnsupportedProtocol",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3374bea3c2a347231f93fc366346ad6e56c7af49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "TransparentUpgradeableProxy-16",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_clisbnb_strategy_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1cbfbc3cb909fb0bf0e511afae6cdba6ba5e2252",
+      "is_proxy": true,
+      "implementation_address": "0xa9ff5af7f218cc27d2819139300fb275ccced71e",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa9ff5af7f218cc27d2819139300fb275ccced71e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

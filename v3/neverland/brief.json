@@ -1,0 +1,647 @@
+{
+  "schema_version": "2.0",
+  "project_key": "neverland",
+  "generated_at": "2026-07-03T21:06:36.438Z",
+  "pipeline_run_id": "v2-2026-07-02-1ba3fd",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 14,
+    "direct_audits": 14,
+    "inherited_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 105489922.34076,
+    "tvl_usd": 105489922.34076,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://neverland.money",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-02",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 6,
+      "aging": 0,
+      "stale": 2,
+      "unknown": 6
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 2,
+    "live_contracts": 2,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AgoraDollarErc1967Proxy",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc1e3c7d486d6a92fbe920232e439eec2ceb112da",
+      "impl_name": "AgoraDollarErc1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2024-07-08 01:28:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WBTCOFTAdapter",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WBTCOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2024-09-11 00:46:47+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 20869,
+      "audit_key": "audit-20869",
+      "report_name": "01-11-2021_OpenZeppelin_AaveV3.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/01-11-2021_OpenZeppelin_AaveV3.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20869,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/01-11-2021_OpenZeppelin_AaveV3.pdf"
+        },
+        {
+          "audit_id": 20881,
+          "report_url": "https://audit.neverland.money/lending-system/01-11-2021_OpenZeppelin_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20870,
+      "audit_key": "audit-20870",
+      "report_name": "07-01-2022_TrailOfBits_AaveV3.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/07-01-2022_TrailOfBits_AaveV3.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20870,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/07-01-2022_TrailOfBits_AaveV3.pdf"
+        },
+        {
+          "audit_id": 20882,
+          "report_url": "https://audit.neverland.money/lending-system/07-01-2022_TrailOfBits_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20871,
+      "audit_key": "audit-20871",
+      "report_name": "09-12-2022_PeckShield_AaveV3-0-1.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/09-12-2022_PeckShield_AaveV3-0-1.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20871,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/09-12-2022_PeckShield_AaveV3-0-1.pdf"
+        },
+        {
+          "audit_id": 20885,
+          "report_url": "https://audit.neverland.money/lending-system/09-12-2022_PeckShield_AaveV3-0-1.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20872,
+      "audit_key": "audit-20872",
+      "report_name": "14-01-2022_PeckShield_AaveV3.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/14-01-2022_PeckShield_AaveV3.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20872,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/14-01-2022_PeckShield_AaveV3.pdf"
+        },
+        {
+          "audit_id": 20883,
+          "report_url": "https://audit.neverland.money/lending-system/14-01-2022_PeckShield_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20873,
+      "audit_key": "audit-20873",
+      "report_name": "23-12-2022_SigmaPrime_AaveV3-0-1.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/23-12-2022_SigmaPrime_AaveV3-0-1.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20873,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/23-12-2022_SigmaPrime_AaveV3-0-1.pdf"
+        },
+        {
+          "audit_id": 20886,
+          "report_url": "https://audit.neverland.money/lending-system/23-12-2022_SigmaPrime_AaveV3-0-1.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20874,
+      "audit_key": "audit-20874",
+      "report_name": "27-01-2022_ABDK_AaveV3.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/27-01-2022_ABDK_AaveV3.pdf",
+      "auditor": "ABDK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20874,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/27-01-2022_ABDK_AaveV3.pdf"
+        },
+        {
+          "audit_id": 20884,
+          "report_url": "https://audit.neverland.money/lending-system/27-01-2022_ABDK_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20875,
+      "audit_key": "audit-20875",
+      "report_name": "27-01-2022_SigmaPrime_AaveV3.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/27-01-2022_SigmaPrime_AaveV3.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20875,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/lending-system/27-01-2022_SigmaPrime_AaveV3.pdf"
+        },
+        {
+          "audit_id": 20887,
+          "report_url": "https://audit.neverland.money/lending-system/27-01-2022_SigmaPrime_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20876,
+      "audit_key": "audit-20876",
+      "report_name": "2026-02-17_Octane_NeverlandContractsOracles.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/price-oracles/2026-02-17_Octane_NeverlandContractsOracles.pdf",
+      "auditor": "Octane",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 20876,
+          "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/price-oracles/2026-02-17_Octane_NeverlandContractsOracles.pdf"
+        },
+        {
+          "audit_id": 20890,
+          "report_url": "https://audit.neverland.money/price-oracles/2026-02-17_Octane_NeverlandContractsOracles.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 20877,
+      "audit_key": "audit-20877",
+      "report_name": "2025-08-22_ComposableSecurity_NeverlandContracts.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/tokenomics-and-revenue/2025-08-22_ComposableSecurity_NeverlandContracts.pdf",
+      "auditor": "ComposableSecurity",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20878,
+      "audit_key": "audit-20878",
+      "report_name": "2025-10-10_ComposableSecurity_NeverlandContracts.pdf",
+      "report_url": "https://github.com/Neverland-Money/security-audits/blob/main/tokenomics-and-revenue/2025-10-10_ComposableSecurity_NeverlandContracts.pdf",
+      "auditor": "ComposableSecurity",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20879,
+      "audit_key": "audit-20879",
+      "report_name": "2025_08_Neverland.pdf",
+      "report_url": "https://github.com/ComposableSecurity/.github/blob/main/reports/2025_08_Neverland.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20880,
+      "audit_key": "audit-20880",
+      "report_name": "security-audits (GitHub directory)",
+      "report_url": "https://github.com/Neverland-Money/security-audits",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20888,
+      "audit_key": "audit-20888",
+      "report_name": "2025-08-22_ComposableSecurity_NeverlandContracts.pdf",
+      "report_url": "https://audit.neverland.money/tokenomics-and-revenue/2025-08-22_ComposableSecurity_NeverlandContracts.pdf",
+      "auditor": "Composable Security",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20889,
+      "audit_key": "audit-20889",
+      "report_name": "2025-10-10_ComposableSecurity_NeverlandContracts.pdf",
+      "report_url": "https://audit.neverland.money/tokenomics-and-revenue/2025-10-10_ComposableSecurity_NeverlandContracts.pdf",
+      "auditor": "Composable Security",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 20869,
+        "report_name": "01-11-2021_OpenZeppelin_AaveV3.pdf"
+      },
+      {
+        "audit_id": 20870,
+        "report_name": "07-01-2022_TrailOfBits_AaveV3.pdf"
+      },
+      {
+        "audit_id": 20871,
+        "report_name": "09-12-2022_PeckShield_AaveV3-0-1.pdf"
+      },
+      {
+        "audit_id": 20872,
+        "report_name": "14-01-2022_PeckShield_AaveV3.pdf"
+      },
+      {
+        "audit_id": 20873,
+        "report_name": "23-12-2022_SigmaPrime_AaveV3-0-1.pdf"
+      },
+      {
+        "audit_id": 20874,
+        "report_name": "27-01-2022_ABDK_AaveV3.pdf"
+      },
+      {
+        "audit_id": 20875,
+        "report_name": "27-01-2022_SigmaPrime_AaveV3.pdf"
+      },
+      {
+        "audit_id": 20876,
+        "report_name": "2026-02-17_Octane_NeverlandContractsOracles.pdf"
+      },
+      {
+        "audit_id": 20877,
+        "report_name": "2025-08-22_ComposableSecurity_NeverlandContracts.pdf"
+      },
+      {
+        "audit_id": 20878,
+        "report_name": "2025-10-10_ComposableSecurity_NeverlandContracts.pdf"
+      },
+      {
+        "audit_id": 20879,
+        "report_name": "2025_08_Neverland.pdf"
+      },
+      {
+        "audit_id": 20880,
+        "report_name": "security-audits (GitHub directory)"
+      },
+      {
+        "audit_id": 20888,
+        "report_name": "2025-08-22_ComposableSecurity_NeverlandContracts.pdf"
+      },
+      {
+        "audit_id": 20889,
+        "report_name": "2025-10-10_ComposableSecurity_NeverlandContracts.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

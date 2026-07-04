@@ -1,0 +1,58 @@
+{
+  "component": "ERC1967Proxy-3",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 8,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0336198d3c1ff92d6571f52765c8cac301b90fc8",
+      "is_proxy": true,
+      "implementation_address": "0x2a6d9192a0788e1b9fb6d8eab9b35dae25eefce4",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x17e2b2eed8e07328302a7b4135ed1b2dc57c447c",
+      "is_proxy": true,
+      "implementation_address": "0x05d142fc45a0a5c0e5ec84923d3bb2b7b15ae7ac",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4c3ba0eae5ab65c9510769a2877cf4d93330bc87",
+      "is_proxy": true,
+      "implementation_address": "0x8226e968efd24d9baf156eca15179d1cc1bfd828",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x86a3c5e18cf42a59d137f8b37105354e7f53b9cb",
+      "is_proxy": true,
+      "implementation_address": "0xaa6b63461336b1a4c4ab2de2858f0f8aed5dc82d",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa390a927d0ea7438cf8f3409791b540d56a6ddcd",
+      "is_proxy": true,
+      "implementation_address": "0x4640a8bf08d5917dcaef42edb14d3e06e1b23f39",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb114e0e00622ffe5800004a98c8e01cd2c0c393b",
+      "is_proxy": true,
+      "implementation_address": "0x930f7f3a9a235d27ae082add5b7d4635e59eaf55",
+      "liveness": "live"
+    }
+  ]
+}

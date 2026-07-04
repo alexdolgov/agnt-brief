@@ -1,0 +1,18 @@
+{
+  "component": "Vesting_Escrow_for_veYFI_liquid_lockers",
+  "main_contract": "Vesting Escrow for veYFI liquid lockers",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x212559a47cc87607c9bf07538bd7aa6836fc9942",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

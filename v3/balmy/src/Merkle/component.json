@@ -1,0 +1,18 @@
+{
+  "component": "Merkle",
+  "main_contract": "Merkle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78e7eeadcb7489518bf88eb72352f6d232a2ad9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

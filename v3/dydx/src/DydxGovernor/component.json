@@ -1,0 +1,18 @@
+{
+  "component": "DydxGovernor",
+  "main_contract": "DydxGovernor",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0cb3b545adbe9dbc601eda8ff36f1c866d0ba812",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

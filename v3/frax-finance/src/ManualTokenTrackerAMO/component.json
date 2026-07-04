@@ -1,0 +1,20 @@
+{
+  "component": "ManualTokenTrackerAMO",
+  "main_contract": "ManualTokenTrackerAMO",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/FraxQ42021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1be588641fb28eb8c2a51f1129707fb1e2683f5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

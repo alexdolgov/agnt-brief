@@ -1,0 +1,18 @@
+{
+  "component": "DIP55",
+  "main_contract": "DIP55",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1199b3e21ca4b0fb4074adfa770acb58681c8afc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SquadswapPair-2",
+  "main_contract": "SquadswapPair",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa773b9f08643816524fd614db7f8a74f674440d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

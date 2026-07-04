@@ -1,0 +1,60 @@
+# sonic-gateway — deployments
+
+54 verified deployment(s) across 15 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| chain-146 | `0x0b3fe0c10c050270a9bc34271987989b6cf2107c` | Bridge | impl | inactive | no |
+| chain-146 | `0x0c34438efe0e13ad2a64e9ced14bf6bb58b4322d` | Bridge | impl | inactive | no |
+| chain-146 | `0x0fdbce271bea0d9819034cd09021e0bbe94be3fd` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x1071405a4736535c545580064039a235827ee6d4` | UpdateManager | impl | inactive | no |
+| chain-146 | `0x11c224fe2be939718eccc560c4887ef05c322545` | CircleTokenOwner | impl | inactive | no |
+| chain-146 | `0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447` | ValidatorsRegistry | impl | inactive | no |
+| chain-146 | `0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94` | ERC1967Proxy-2 | proxy | live | no |
+| chain-146 | `0x1880425307124ce875aac3e9eb47b5a87453d4e4` | TetherTokenAdapter | impl | inactive | no |
+| chain-146 | `0x1a08d5f1774252266acbe718c6e1b6a71db336e6` | ERC1967Proxy | impl | inactive | no |
+| chain-146 | `0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x25c049cadb9bb7cea794dba3b58dfdb1ece400f4` | CircleTokenAdapter | impl | inactive | no |
+| chain-146 | `0x2fb960611bdc322a9a4a994252658cae9fe2eea1` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x309c92261178fa0cf748a855e90ae73fdb79ebc7` | ERC1967Proxy | impl | inactive | no |
+| chain-146 | `0x332a6211b594fefed5a5d779e51dacd145f9a926` | ERC1967Proxy-3 | proxy | live | no |
+| chain-146 | `0x48540d1140331277b9157a096e40e6f5506fc335` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x4af3397fb17c35ce31bc6e006d60c60136fa0885` | MessageBus | impl | inactive | no |
+| chain-146 | `0x4c5683a9ede3c8b4fb5ad2e980bbf88652ad6c6c` | ERC1967Proxy-4 | proxy | live | no |
+| chain-146 | `0x50c42deacd8fc9773493ed674b675be577f2634b` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x53f753e4b17f4075d6fa2c6909033d224b81e698` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x6047828dc181963ba44974801ff68e538da5eaf9` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-146 | `0x61647882acf21792e577a963d320d51e2c8f6194` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x667e06f17721b571f4b2c1e755a4e7d332aa304a` | TetherTokenAdapter | proxy | live | no |
+| chain-146 | `0x6aba65dc38e6ae9ed0d95eb67bf1b524c1e3036a` | MPTProofVerifier | impl | inactive | no |
+| chain-146 | `0x6c7d5e60b2c49e72e745b2e7e6a253dbd5f354f9` | ERC1967Proxy | impl | inactive | no |
+| chain-146 | `0x6d9d62a64b50412ee0c41481ffa4d0a8b5e91a1e` | ERC1967Proxy-4 | impl | inactive | no |
+| chain-146 | `0x6f0444a3915f63a2bf2677843d9a94c48de28d6a` | CircleTokenAdapter | impl | inactive | no |
+| chain-146 | `0x7160ec89eaabd75bf8261c6cc3950766d9e4ee53` | UpdateManager | impl | inactive | no |
+| chain-146 | `0x7cb451ce10b578191acf609c41e92d3912e8edb3` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x7fff4c4a827c84e32c5e175052834111b2ccd270` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x836664b0c0cb29b7877bccf94159cc996528f2c3` | StateOracle | impl | inactive | no |
+| chain-146 | `0x8f1cbc3ce7c4584ca0610f2a2df8ab0a8ec6544c` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x90409d5b57e77ca394167b781cfc79a2a0874be3` | ProxyAdmin | impl | live | no |
+| chain-146 | `0x9171aca775a164ca906ac7f50a3844b7c6f13d34` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-146 | `0x9605cc161d148f665b6d4796131f8f6814abf386` | ERC1967Proxy | impl | inactive | no |
+| chain-146 | `0x9a59b249b6ea7aad4a51dca08406ce0a1d6f3b01` | UpdateManager | impl | inactive | no |
+| chain-146 | `0x9cacb579227d10a9fbe0951861b9fcb4847e8c6b` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0x9ef7629f9b930168b76283add7120777b3c895b3` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0xa3b9ec0b9ccb54335b617139e55ebc0fec52ce0b` | ERC1967Proxy | impl | inactive | no |
+| chain-146 | `0xabf0c96d792491b0b9642c0648ca851a125ebf25` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-146 | `0xb026e4cc9025fa72e7fd68b93c08eea0948269fd` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0xb1703ad070241c862be4053dd9c8440e689c5df9` | StateOracle | impl | inactive | no |
+| chain-146 | `0xb5b371b75f9850ddd6ccb6c436db54972a925308` | MessageBus | impl | live | no |
+| chain-146 | `0xb5f0edecff09081354db252ceec000b213186fac` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0xb903716b3dd10b0115e93eb29d8eb99e23336387` | Bridge | impl | inactive | no |
+| chain-146 | `0xbcba1f21ca212f63f71536128d9e574dc3ae28d9` | ValidatorsRegistry | impl | inactive | no |
+| chain-146 | `0xc6915ddeebef0e4c273605f65872b8ee7638030c` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0xc80268ce098296e0e75d925d0d485e7bb4252fad` | TransparentUpgradeableProxy | impl | inactive | no |
+| chain-146 | `0xd2f1e904daf7446686f8057b7dfeb068c75d29a9` | MPTProofVerifier | impl | inactive | no |
+| chain-146 | `0xd8c562474ceac236a3338b10db38aece03558402` | ERC1967Proxy-3 | impl | inactive | no |
+| chain-146 | `0xe34e6851a4a3763e1d27aa7ac5980d2d33c2d315` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-146 | `0xe6dcd54b4cde2e9e935c22f57ebbbaaf5cc3bc8a` | CircleTokenAdapter | impl | inactive | no |
+| chain-146 | `0xf1ef7d2d4c0c881cd634481e0586ed5d2871a74b` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0xfac12d39f830b999d6ebbdf8ce9c7d975b33c59c` | CircleTokenAdapter | impl | inactive | no |
+| chain-146 | `0xffe007336904a5a2c8d6e3c685f2b1d132b864c8` | ERC1967Proxy | impl | inactive | no |

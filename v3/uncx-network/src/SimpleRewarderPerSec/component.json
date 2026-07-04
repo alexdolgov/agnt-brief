@@ -1,0 +1,18 @@
+{
+  "component": "SimpleRewarderPerSec",
+  "main_contract": "SimpleRewarderPerSec",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x05d06afb994047acee8c205500ab1aa25c5a3388",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

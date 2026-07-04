@@ -1,0 +1,26 @@
+{
+  "component": "CauldronV2CheckpointV1",
+  "main_contract": "CauldronV2CheckpointV1",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35a0dd182e4bca59d5931eae13d0a2332fa30321",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4eaed76c3a388f4a841e9c765560bbe7b3e4b3a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "aMATICc_R1",
+  "main_contract": "aMATICc_R1",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x887214fcd6c29d99adb8dd9d225b2f85d3e301fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PermissionManager",
+  "main_contract": "PermissionManager",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x991fd11876a438af7bcadc98f4b3cf201bdf6191",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainCanonicalFXS",
+  "main_contract": "CrossChainCanonicalFXS",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x67ccea5bb16181e7b4109c9c2143c24a1c2205be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

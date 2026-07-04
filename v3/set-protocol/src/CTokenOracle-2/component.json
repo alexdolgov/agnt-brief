@@ -1,0 +1,18 @@
+{
+  "component": "CTokenOracle-2",
+  "main_contract": "CTokenOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ca96e28b51cf78bb4faa778eb3aeaf40dc07980",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

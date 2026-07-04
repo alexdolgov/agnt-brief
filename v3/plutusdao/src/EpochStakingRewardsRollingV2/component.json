@@ -1,0 +1,18 @@
+{
+  "component": "EpochStakingRewardsRollingV2",
+  "main_contract": "EpochStakingRewardsRollingV2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x355e892176c39d3b384387985e4f6ab6671b3742",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

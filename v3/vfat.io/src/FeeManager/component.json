@@ -1,0 +1,18 @@
+{
+  "component": "FeeManager",
+  "main_contract": "FeeManager",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x982ce53ab2c9d7b841af04d8df87879f73929b12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

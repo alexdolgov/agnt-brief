@@ -1,0 +1,18 @@
+{
+  "component": "PrimeBuybackDistributor",
+  "main_contract": "PrimeBuybackDistributor",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d6021a1bfa4bc4f1538e22201425c2382b3ace3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

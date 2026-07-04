@@ -1,0 +1,35 @@
+{
+  "component": "FeesAndReserves",
+  "main_contract": "FeesAndReserves",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://0xmacro.com/library/audits/sevenSeas-1.html",
+    "https://0xmacro.com/library/audits/sevenSeas-2.html",
+    "https://0xmacro.com/library/audits/sevenSeas-3.html",
+    "https://github.com/Se7en-Seas/boring-vault/blob/main/audit/0xmacro-boring-vault-arctic-0.pdf",
+    "https://github.com/Se7en-Seas/boring-vault/blob/main/audit/0xmacro-boring-vault-arctic-1.pdf",
+    "https://github.com/Se7en-Seas/boring-vault/blob/main/audit/spearbit-boring-vault-arctic-0.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/0xmacro-sevenSeas-10.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/0xmacro-veda-83.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/0xmacro-veda-84.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/0xmacro-veda-85.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/0xmacro-veda-90.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/certora-boring-vault-1.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/certora-boring-vault-2.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/certora-boring-vault-3.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/sigma-prime-boring-vault-0.pdf",
+    "https://github.com/Veda-Labs/boring-vault/blob/main/audit/spearbit-boring-vault-arctic-0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8a22951e3b5133844e37959cc75fce9b3502ec74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

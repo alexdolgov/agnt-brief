@@ -1,0 +1,18 @@
+{
+  "component": "CentaurToken",
+  "main_contract": "CentaurToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03042482d64577a7bdb282260e2ea4c8a89c064b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

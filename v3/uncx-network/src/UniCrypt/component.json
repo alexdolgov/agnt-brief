@@ -1,0 +1,18 @@
+{
+  "component": "UniCrypt",
+  "main_contract": "UniCrypt",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf29e46887ffae92f1ff87dfe39713875da541373",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

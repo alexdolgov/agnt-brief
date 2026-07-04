@@ -1,0 +1,26 @@
+{
+  "component": "PresaleTokenRenderer",
+  "main_contract": "PresaleTokenRenderer",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x316fe16067fa092c3b22c0b8e40ce3ff1da731c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x562e22671d94151fdbec286375b54d5d7a8e60bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DynaLiquidityProxyAssetManager",
+  "main_contract": "DynaLiquidityProxyAssetManager",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5c9e60aaf35d673f151b192457a7fc45f27b591",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

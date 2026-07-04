@@ -1,0 +1,18 @@
+{
+  "component": "SpellTWAPOracle",
+  "main_contract": "SpellTWAPOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ad386d647c216f3fe5a4fc04f6e4cb83e3048cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "StarknetTokenBridge",
+  "main_contract": "StarknetTokenBridge",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70a36886adf5c3b8b5f370c3f037e9116159a356",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0d1fab527a85d955d4c05323250367e61ba3f18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

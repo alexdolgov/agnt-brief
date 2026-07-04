@@ -1,0 +1,28 @@
+{
+  "component": "ABNB",
+  "main_contract": "ABNB",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Atlantis-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x032dd2cd4e64d8c30fed171d0d0b6cf4a7995c29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5a9a90983a369b6bb8f062f0afe6219ac01caf63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

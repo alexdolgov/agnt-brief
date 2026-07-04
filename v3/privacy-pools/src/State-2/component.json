@@ -1,0 +1,21 @@
+{
+  "component": "State-2",
+  "main_contract": "State",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_auditware.md",
+    "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_oxorio.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

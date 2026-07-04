@@ -1,0 +1,18 @@
+{
+  "component": "Trig",
+  "main_contract": "Trig",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8cabfd11dd628a12ce8dfdc7dfd3e77badda849a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

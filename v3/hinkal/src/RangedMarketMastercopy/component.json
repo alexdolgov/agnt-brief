@@ -1,0 +1,18 @@
+{
+  "component": "RangedMarketMastercopy",
+  "main_contract": "RangedMarketMastercopy",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6d53c852fe7e0b60d54c70e454cbbccbce2c39c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

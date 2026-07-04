@@ -1,0 +1,20 @@
+{
+  "component": "FeesVaultUpgradeable",
+  "main_contract": "FeesVaultUpgradeable",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2024-09-fenix-finance"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7b12e8ed9740d9d190b498a9aac3584d81c7cf03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

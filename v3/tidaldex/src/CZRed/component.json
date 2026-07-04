@@ -1,0 +1,18 @@
+{
+  "component": "CZRed",
+  "main_contract": "CZRed",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5cd0c2c744caf04cda258efc6558a3ed3defe97b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

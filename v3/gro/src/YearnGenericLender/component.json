@@ -1,0 +1,18 @@
+{
+  "component": "YearnGenericLender",
+  "main_contract": "YearnGenericLender",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea5a6c635b19a4c27bdb2bca3d868bc6e2d3208c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

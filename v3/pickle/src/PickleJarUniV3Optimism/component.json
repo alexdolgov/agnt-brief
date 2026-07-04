@@ -1,0 +1,18 @@
+{
+  "component": "PickleJarUniV3Optimism",
+  "main_contract": "PickleJarUniV3Optimism",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc335740c951f45200b38c5ca84f0a9663b51aec6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

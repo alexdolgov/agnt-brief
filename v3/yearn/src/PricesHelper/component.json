@@ -1,0 +1,18 @@
+{
+  "component": "PricesHelper",
+  "main_contract": "PricesHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d63a8584d91ebc5033d022afd6c5a7c7fddc99b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

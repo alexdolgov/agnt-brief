@@ -1,0 +1,18 @@
+{
+  "component": "BatchCallAndSponsor",
+  "main_contract": "BatchCallAndSponsor",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x068b239c0b0e62c950b7af2d4f4dc79fca298052",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

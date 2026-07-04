@@ -1,0 +1,20 @@
+{
+  "component": "ERC3525Upgradeable-6",
+  "main_contract": "ERC3525Upgradeable",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/solv-finance/Audit/blob/main/Salus/Solv-Protocol_incremental_audit_report_2023-05-15%20-%20Salus.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e9b61c0f23c5a8cd111916d207938201e71c4db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

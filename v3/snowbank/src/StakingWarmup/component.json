@@ -1,0 +1,18 @@
+{
+  "component": "StakingWarmup",
+  "main_contract": "StakingWarmup",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb996392302721270609b41f004357c0c4e2ca625",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

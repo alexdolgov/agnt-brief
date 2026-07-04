@@ -1,0 +1,28 @@
+{
+  "component": "Governor",
+  "main_contract": "Governor",
+  "source_file_count": 34,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/2023-05-fraxgov-securityreview.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2469757756eba7bea6b7f054896e3db74103a962",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x77314ad8dcd38c44874bf95cb3cf6622f31a4037",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "SyncDeposit",
+  "main_contract": "SyncDeposit",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3FLabs/grunt/blob/main/audits/ChainSecurity_3F_GruntFunds_Audit_2026-04.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd893b617b212d64e601eb143f7700ba35485c9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

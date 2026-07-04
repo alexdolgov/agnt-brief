@@ -1,0 +1,18 @@
+{
+  "component": "RealitioArbitratorProxy",
+  "main_contract": "RealitioArbitratorProxy",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12bb49deb8f293435e27f6f4ab140184604ce346",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

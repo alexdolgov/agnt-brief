@@ -1,0 +1,18 @@
+{
+  "component": "StabilityDAO",
+  "main_contract": "StabilityDAO",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc82676d6025bba6df3585d2450ef6d0ee9b8607e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

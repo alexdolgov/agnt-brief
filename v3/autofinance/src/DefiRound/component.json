@@ -1,0 +1,18 @@
+{
+  "component": "DefiRound",
+  "main_contract": "DefiRound",
+  "source_file_count": 79,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc803737d3e12cc4034dde0b2457684322100ac38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

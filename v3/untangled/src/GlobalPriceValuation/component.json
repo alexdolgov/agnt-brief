@@ -1,0 +1,26 @@
+{
+  "component": "GlobalPriceValuation",
+  "main_contract": "GlobalPriceValuation",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd28a91626fc7908f5c18b3e04ac152118d1b2019",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe9e02e486995d92f877f7a6e8566285ef8763bad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

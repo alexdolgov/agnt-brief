@@ -1,0 +1,18 @@
+{
+  "component": "IdolMintContract",
+  "main_contract": "IdolMintContract",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

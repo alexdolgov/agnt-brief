@@ -1,0 +1,44 @@
+{
+  "component": "DomfiVerifier",
+  "main_contract": "DomfiVerifier",
+  "source_file_count": 4,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.domination.finance/assets/DomFi-security-review_2025-12-07.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0c6a461aadbf4fc4e245fb1ea05eacd4c7722d0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x350bf8ac9990f2f5dfda719ff94da4dc241da27e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x49d57753b420c60b037543caddf1a7748ec1d1df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdf2b2f7eb9740bfda2555467fc3dd27760832188",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

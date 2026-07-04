@@ -1,0 +1,18 @@
+{
+  "component": "PriceOracleV3",
+  "main_contract": "PriceOracleV3",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x886b102953ab3eaf719df7b80b03cd5203c201f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

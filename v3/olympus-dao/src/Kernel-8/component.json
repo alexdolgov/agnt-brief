@@ -1,0 +1,18 @@
+{
+  "component": "Kernel-8",
+  "main_contract": "Kernel",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x986b99579bec7b990331474b66ccdb94fa2419f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

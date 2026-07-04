@@ -1,0 +1,18 @@
+{
+  "component": "MixedRouteQuoterV1",
+  "main_contract": "MixedRouteQuoterV1",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x003aa18c6e682db80cf4aa17261ccbffd28690ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraUpgradeablePluginFactory-2",
+  "main_contract": "AlgebraUpgradeablePluginFactory",
+  "source_file_count": 103,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x14cf271aaf0aa70f1b1ba59be568a97e16c81430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

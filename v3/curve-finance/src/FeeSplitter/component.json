@@ -1,0 +1,23 @@
+{
+  "component": "FeeSplitter",
+  "main_contract": "FeeSplitter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_Curve_scrvUSD_audit.pdf",
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_FeeSplitter.pdf",
+    "https://github.com/curvefi/fee-splitter/blob/main/audits/ChainSecurity.pdf",
+    "https://github.com/curvefi/scrvusd/blob/main/audits/ChainSecurity_Curve_scrvUSD_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dfd89449faff8a532790667bab21cf733c064f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

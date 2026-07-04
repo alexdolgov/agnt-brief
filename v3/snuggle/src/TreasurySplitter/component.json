@@ -1,0 +1,28 @@
+{
+  "component": "TreasurySplitter",
+  "main_contract": "TreasurySplitter",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://www.snuggle.fi/security"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8c7d966b6bee480bf96b41870ccb89559ac176f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xafe51c05e2a4c64217709efd3ee34dcd2f84c92a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

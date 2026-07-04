@@ -1,0 +1,18 @@
+{
+  "component": "SnapshotLPStrategy",
+  "main_contract": "SnapshotLPStrategy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79b65a3e769a4a6515267ca045f7c8a100874082",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

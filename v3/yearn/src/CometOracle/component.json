@@ -1,0 +1,18 @@
+{
+  "component": "CometOracle",
+  "main_contract": "CometOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02939ba4fd42e23d31652b4376842ab62a742f76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

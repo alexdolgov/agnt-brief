@@ -1,0 +1,18 @@
+{
+  "component": "SwitchCollateralRouter",
+  "main_contract": "SwitchCollateralRouter",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x004d72a192db408b9a7c647c6a3c888dfebc6a9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

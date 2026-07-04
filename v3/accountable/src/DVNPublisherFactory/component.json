@@ -1,0 +1,26 @@
+{
+  "component": "DVNPublisherFactory",
+  "main_contract": "DVNPublisherFactory",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a2a9ecf70e6fec00a53d3ec000ac97f260d9f86",
+      "is_proxy": true,
+      "implementation_address": "0xffd1aef95e7f58441b368a54b4a48fcbb4d959cd",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x24c27ea8965c70670857e9ec9f18e9eab7607c42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

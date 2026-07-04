@@ -1,0 +1,18 @@
+{
+  "component": "RNGDistributor",
+  "main_contract": "RNGDistributor",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d514cf4912c7ed280afe4cdf2738ef9282fa546",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

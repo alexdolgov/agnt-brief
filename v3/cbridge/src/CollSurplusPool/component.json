@@ -1,0 +1,26 @@
+{
+  "component": "CollSurplusPool",
+  "main_contract": "CollSurplusPool",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbc6c16283c1260ce5cf72c951b4d399e81fbca36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc063e2a912a9b9d6ac1835bafe91a8228a353f91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

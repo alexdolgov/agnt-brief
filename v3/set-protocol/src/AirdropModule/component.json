@@ -1,0 +1,18 @@
+{
+  "component": "AirdropModule",
+  "main_contract": "AirdropModule",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09b9e7c7e2daf40fcb286fe6b863e517d5d5c40f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

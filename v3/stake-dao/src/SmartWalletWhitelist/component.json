@@ -1,0 +1,18 @@
+{
+  "component": "SmartWalletWhitelist",
+  "main_contract": "SmartWalletWhitelist",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3557bd058d674dd0981a3ff10515432159f63318",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

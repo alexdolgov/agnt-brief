@@ -1,0 +1,18 @@
+{
+  "component": "DSPFactory",
+  "main_contract": "DSPFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fb9815938ad069bf90e14fe6c596c514bede767",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

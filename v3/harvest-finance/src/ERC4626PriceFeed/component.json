@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626PriceFeed",
+  "main_contract": "ERC4626PriceFeed",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c3f08a0ce5dc1608d7e11167c60244e16922d93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdbffc30f3b95b8ca5bab3e6c139076fea47f89b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

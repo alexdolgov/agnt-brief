@@ -1,0 +1,18 @@
+{
+  "component": "TokenholderGovernor",
+  "main_contract": "TokenholderGovernor",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd101f2b25bcbf992bdf55db67c104fe7646f5447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

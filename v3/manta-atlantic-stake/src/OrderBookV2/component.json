@@ -1,0 +1,18 @@
+{
+  "component": "OrderBookV2",
+  "main_contract": "OrderBookV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xbffea7000aad4c5335733b891d68b898d79a1d01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

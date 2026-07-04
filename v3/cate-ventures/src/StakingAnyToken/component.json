@@ -1,0 +1,18 @@
+{
+  "component": "StakingAnyToken",
+  "main_contract": "StakingAnyToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x12915a22fa6a8f8b68d96ab4c04eb3ebd26cbdaf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

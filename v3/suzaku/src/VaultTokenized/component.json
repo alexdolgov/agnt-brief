@@ -1,0 +1,18 @@
+{
+  "component": "VaultTokenized",
+  "main_contract": "VaultTokenized",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

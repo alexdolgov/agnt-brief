@@ -1,0 +1,20 @@
+{
+  "component": "AlchemistStrategyClassifier",
+  "main_contract": "AlchemistStrategyClassifier",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3c28ba0d3f400b29f75b5c79dca0614cf5ce3a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

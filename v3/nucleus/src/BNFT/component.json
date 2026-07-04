@@ -1,0 +1,18 @@
+{
+  "component": "BNFT",
+  "main_contract": "BNFT",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a393848f5d1b8e7dab45f3a7e01f9f0dc687242",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

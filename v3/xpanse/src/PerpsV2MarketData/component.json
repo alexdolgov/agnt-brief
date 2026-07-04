@@ -1,0 +1,18 @@
+{
+  "component": "PerpsV2MarketData",
+  "main_contract": "PerpsV2MarketData",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xad96eb245b3e7f7395da4509a764d1676de6e438",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

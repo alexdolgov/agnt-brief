@@ -1,0 +1,18 @@
+{
+  "component": "Authorized",
+  "main_contract": "Authorized",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x851b7cb21d7428fa1ed87a7c45da8048079b0a90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

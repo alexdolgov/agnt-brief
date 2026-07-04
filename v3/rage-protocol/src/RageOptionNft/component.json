@@ -1,0 +1,20 @@
+{
+  "component": "RageOptionNft",
+  "main_contract": "RageOptionNft",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://ultraroundmoney.com/rage/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe29a221ac6e69927161c3dfcc663f75119421178",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

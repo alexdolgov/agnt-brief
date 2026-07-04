@@ -1,0 +1,18 @@
+{
+  "component": "ClaimPayer",
+  "main_contract": "ClaimPayer",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x13e35099a4e66c5a6847a169e8027af9b06495ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

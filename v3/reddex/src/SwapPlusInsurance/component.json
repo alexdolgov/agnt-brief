@@ -1,0 +1,18 @@
+{
+  "component": "SwapPlusInsurance",
+  "main_contract": "SwapPlusInsurance",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3366b89a4bfb8af11729fe00d104d00e0ee8c7f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

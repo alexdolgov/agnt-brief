@@ -1,0 +1,18 @@
+{
+  "component": "StaticATokenLM",
+  "main_contract": "StaticATokenLM",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb11d239a6007c4d8cc0fd6794e71b80bb14a352a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

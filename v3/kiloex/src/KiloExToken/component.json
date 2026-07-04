@@ -1,0 +1,28 @@
+{
+  "component": "KiloExToken",
+  "main_contract": "KiloExToken",
+  "source_file_count": 59,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://scalebit.xyz/reports/20250321-XKilo-Token-Final-Audit-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x503fa24b7972677f00c4618e5fbe237780c1df53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfcd05460cb7f8f92ec5e82c939c599f531a7019a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

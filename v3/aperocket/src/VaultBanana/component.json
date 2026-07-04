@@ -1,0 +1,18 @@
+{
+  "component": "VaultBanana",
+  "main_contract": "VaultBanana",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb8fda49a709e9d00274053d9ed34cca1b4bb21f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WheyFarm",
+  "main_contract": "WheyFarm",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x526065badc251a4c8e0d3bde9a6d107f2dbd1840",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

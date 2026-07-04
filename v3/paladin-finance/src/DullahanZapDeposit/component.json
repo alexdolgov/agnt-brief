@@ -1,0 +1,18 @@
+{
+  "component": "DullahanZapDeposit",
+  "main_contract": "DullahanZapDeposit",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x653050f11b5f20213c9d1ee62cc02a76518649c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

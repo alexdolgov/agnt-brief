@@ -1,0 +1,18 @@
+{
+  "component": "PausationFacet",
+  "main_contract": "PausationFacet",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa79c069354cd9cc65f8be1a81929efc07b169b04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

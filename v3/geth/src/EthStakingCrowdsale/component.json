@@ -1,0 +1,18 @@
+{
+  "component": "EthStakingCrowdsale",
+  "main_contract": "EthStakingCrowdsale",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x384365838b002f60544ece69153d685c8f5306e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BaseStreamingRewardsDistributor",
+  "main_contract": "BaseStreamingRewardsDistributor",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d77203f67aac70450239dcb58bb962adf66bd13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

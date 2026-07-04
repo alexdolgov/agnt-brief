@@ -1,0 +1,18 @@
+{
+  "component": "MultiOracle",
+  "main_contract": "MultiOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xab52b1df05f27ff8bea8cb18519cbf0610cc56ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

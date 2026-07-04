@@ -1,0 +1,18 @@
+{
+  "component": "LiquidHundredChef",
+  "main_contract": "LiquidHundredChef",
+  "source_file_count": 125,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x053a5b18c5cc0c03786be4f75ebf62cdf1a234e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

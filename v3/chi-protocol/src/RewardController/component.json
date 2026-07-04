@@ -1,0 +1,18 @@
+{
+  "component": "RewardController",
+  "main_contract": "RewardController",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03f6265357d06e12d84771569f891cc244f6a5fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

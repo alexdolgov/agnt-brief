@@ -1,0 +1,18 @@
+{
+  "component": "PinkSwapAirdrop",
+  "main_contract": "PinkSwapAirdrop",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

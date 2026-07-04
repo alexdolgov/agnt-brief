@@ -1,0 +1,18 @@
+{
+  "component": "SewerPassAirdropClaim",
+  "main_contract": "SewerPassAirdropClaim",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2738afa1280795b1a17acad4749490c96dea6adf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

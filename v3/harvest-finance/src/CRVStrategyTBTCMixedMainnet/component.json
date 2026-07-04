@@ -1,0 +1,18 @@
+{
+  "component": "CRVStrategyTBTCMixedMainnet",
+  "main_contract": "CRVStrategyTBTCMixedMainnet",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe26d94ded203f5402882d19fef92ee04f6b73ef9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

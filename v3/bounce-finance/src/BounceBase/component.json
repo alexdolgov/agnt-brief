@@ -1,0 +1,18 @@
+{
+  "component": "BounceBase",
+  "main_contract": "BounceBase",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9706b14828dae737cdcb1231d1ce499598e96701",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

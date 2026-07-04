@@ -1,0 +1,21 @@
+{
+  "component": "BaseLiquidityManager",
+  "main_contract": "BaseLiquidityManager",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/steer-protocol-core-implementation-636b8fca6693a100164bf02f",
+    "https://omniscia.io/reports/steer-protocol-poolshark-vaults-660552b2d0e471001941c8f4"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x00d0cc8db826da3f68b0f645acc7785f917aaff8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

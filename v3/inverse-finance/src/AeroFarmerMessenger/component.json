@@ -1,0 +1,18 @@
+{
+  "component": "AeroFarmerMessenger",
+  "main_contract": "AeroFarmerMessenger",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09af9e0d4932604913f7cd77ad5e157f0bc700ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

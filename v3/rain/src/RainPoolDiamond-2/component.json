@@ -1,0 +1,18 @@
+{
+  "component": "RainPoolDiamond-2",
+  "main_contract": "RainPoolDiamond",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6a368244019146427f7243f9875f82a99ce03b32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

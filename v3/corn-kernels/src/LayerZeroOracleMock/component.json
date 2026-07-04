@@ -1,0 +1,18 @@
+{
+  "component": "LayerZeroOracleMock",
+  "main_contract": "LayerZeroOracleMock",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x980205d352f198748b626f6f7c38a8a5663ec981",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

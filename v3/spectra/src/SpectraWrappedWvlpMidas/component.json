@@ -1,0 +1,18 @@
+{
+  "component": "SpectraWrappedWvlpMidas",
+  "main_contract": "SpectraWrappedWvlpMidas",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x4427855b3d9d0a3e931cd6bbdbe4e0f74d47ebb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

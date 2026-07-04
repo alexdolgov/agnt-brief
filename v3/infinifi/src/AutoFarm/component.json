@@ -1,0 +1,26 @@
+{
+  "component": "AutoFarm",
+  "main_contract": "AutoFarm",
+  "source_file_count": 39,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15dc4c43b0d3283ae4f193bb8ac97181f4bbb56c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x92c3a5f226a47a44ad73f04663b305372cc665bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

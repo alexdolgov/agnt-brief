@@ -1,0 +1,26 @@
+{
+  "component": "VaultUtils",
+  "main_contract": "VaultUtils",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcca8e0f7283e1859fc954f4852e1ca3e6d63d405",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfb7f4c18e4df5658a3e06ca2d7b65404a49699c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

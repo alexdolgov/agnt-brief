@@ -1,0 +1,18 @@
+{
+  "component": "VeArt",
+  "main_contract": "VeArt",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x54267e603646648e623a7a3c21dbbd4cd968a6f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

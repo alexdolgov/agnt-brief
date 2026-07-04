@@ -1,0 +1,18 @@
+{
+  "component": "AToken_Burner",
+  "main_contract": "AToken Burner",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12129216800dbdf295505bc064ffae8998bd0664",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

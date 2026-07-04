@@ -1,0 +1,18 @@
+{
+  "component": "NomiswapFactory",
+  "main_contract": "NomiswapFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd6715a8be3944ec72738f0bfdc739d48c3c29349",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

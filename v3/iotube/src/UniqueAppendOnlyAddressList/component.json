@@ -1,0 +1,18 @@
+{
+  "component": "UniqueAppendOnlyAddressList",
+  "main_contract": "UniqueAppendOnlyAddressList",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1e58ca53d90fe9b37f7f6aeb548b4bc7c6292c17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

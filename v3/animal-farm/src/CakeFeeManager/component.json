@@ -1,0 +1,18 @@
+{
+  "component": "CakeFeeManager",
+  "main_contract": "CakeFeeManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2b7ff1ce28560c3595cc0fff0d150bcf2af2b0b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

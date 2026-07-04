@@ -1,0 +1,18 @@
+{
+  "component": "FeeDiscountRegistry",
+  "main_contract": "FeeDiscountRegistry",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x23fa6ed4d1c6c14dafc1217700a4d5b6f42e6e83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

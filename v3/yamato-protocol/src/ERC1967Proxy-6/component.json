@@ -1,0 +1,28 @@
+{
+  "component": "ERC1967Proxy-6",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 71,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20Final%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c9bdf09de9eacbe692db2c17a75bfdb5ff4190b",
+      "is_proxy": true,
+      "implementation_address": "0xac9f416e9ec659319c2be9421e2b3eb3df019d2d",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac9f416e9ec659319c2be9421e2b3eb3df019d2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

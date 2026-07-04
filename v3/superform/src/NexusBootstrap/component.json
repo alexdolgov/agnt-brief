@@ -1,0 +1,18 @@
+{
+  "component": "NexusBootstrap",
+  "main_contract": "NexusBootstrap",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ebeb4d51723ba345080d81bbf178d93e84bc9be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OCT_ZVL",
+  "main_contract": "OCT_ZVL",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79d68d40ef6f1dc7b220ef0a6df02e753dce396f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

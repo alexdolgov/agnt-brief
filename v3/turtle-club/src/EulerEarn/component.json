@@ -1,0 +1,26 @@
+{
+  "component": "EulerEarn",
+  "main_contract": "EulerEarn",
+  "source_file_count": 69,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x253453bc43f0b961528c9cbc18a3ae3de0a4daab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba42141648dfd74388f3541c1d80fa9387043da9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

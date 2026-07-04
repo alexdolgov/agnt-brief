@@ -1,0 +1,18 @@
+{
+  "component": "YLDRFeeCollector",
+  "main_contract": "YLDRFeeCollector",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x234b15e169c0694369077cdcaef54f3b995d888f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

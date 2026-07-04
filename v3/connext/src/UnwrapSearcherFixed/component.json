@@ -1,0 +1,18 @@
+{
+  "component": "UnwrapSearcherFixed",
+  "main_contract": "UnwrapSearcherFixed",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d14ae6adfb0530a6a53ba8900f14c1ddb2ae9e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

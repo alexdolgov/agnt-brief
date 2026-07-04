@@ -1,0 +1,26 @@
+{
+  "component": "RFQ",
+  "main_contract": "RFQ",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x44435a66ae25d4e7f2fb054a68bf6a0a44ae05dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x754f2e6b0b74033f3db4ed5a778fc6344c3af818",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

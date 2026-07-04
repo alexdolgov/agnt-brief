@@ -1,0 +1,42 @@
+{
+  "component": "VaultCompensation",
+  "main_contract": "VaultCompensation",
+  "source_file_count": 97,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e8d700c6ae1c46038cca53d789093b18c09d72c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2ff46c7908ee2545244d0a11677ee2a0d59aff33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x41fa6d342e41da059d56fe2dc5bdd710459550ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x964de674cf30f5ae309f5dab38510279a5daa730",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

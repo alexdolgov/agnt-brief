@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawalBuffer",
+  "main_contract": "WithdrawalBuffer",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x47fbab3dbaebfcf6173b9637bb020c0ca05158e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

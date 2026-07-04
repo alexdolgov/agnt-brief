@@ -1,0 +1,22 @@
+{
+  "component": "CapTokenAdapter",
+  "main_contract": "CapTokenAdapter",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-06-23-Spearbit.pdf",
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-07-04-Recon.pdf",
+    "https://github.com/cap-labs-dev/cap-audits/blob/main/2025-09-03-Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xacc9ce4c15a0f6a2bec49c3f81261d60553d2faf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

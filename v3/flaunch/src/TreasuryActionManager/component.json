@@ -1,0 +1,18 @@
+{
+  "component": "TreasuryActionManager",
+  "main_contract": "TreasuryActionManager",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfb5c20c4e60c9c64648dd3692437e3e313add4a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

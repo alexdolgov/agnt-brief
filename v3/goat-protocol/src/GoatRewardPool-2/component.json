@@ -1,0 +1,21 @@
+{
+  "component": "GoatRewardPool-2",
+  "main_contract": "GoatRewardPool",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/goatfi/audits/blob/main/02102024-Fortifyx-security-review.pdf",
+    "https://github.com/goatfi/audits/blob/main/02142024-tpiliposian-security-review.md"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xad9ce8580a1cd887038405275cb02443e8fb88ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

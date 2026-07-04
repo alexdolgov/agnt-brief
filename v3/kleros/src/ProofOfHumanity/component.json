@@ -1,0 +1,18 @@
+{
+  "component": "ProofOfHumanity",
+  "main_contract": "ProofOfHumanity",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5e9ddebb09cd64dfacab4011a0d5cedaf7c9bdb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

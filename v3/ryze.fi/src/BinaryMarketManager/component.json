@@ -1,0 +1,28 @@
+{
+  "component": "BinaryMarketManager",
+  "main_contract": "BinaryMarketManager",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://assets-global.website-files.com/63f62b4cce8131e16ca56ecb/6511a7eb1c0ccd8228977194_Balance_Final_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1f177898e31e5172b4b39e86925516a05f98986e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x38acf01b77cb2595b57fd6565d3f2fdc44273704",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

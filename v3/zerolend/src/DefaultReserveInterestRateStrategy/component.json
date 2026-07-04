@@ -1,0 +1,38 @@
+{
+  "component": "DefaultReserveInterestRateStrategy",
+  "main_contract": "DefaultReserveInterestRateStrategy",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/aave/aave-v3-core/blob/master/audits/27-01-2022_ABDK_AaveV3.pdf",
+    "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/07-01-2022_TrailOfBits_AaveV3.pdf",
+    "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_SigmaPrime_AaveV3.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x0f9bfa294be6e3ca8c39221bb5dfb88032c8936e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xaa999ea356f925bf1e856038c5d182ae5e8a4973",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xb7ed499e7570ee7691eef4df9d708d258de2b512",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

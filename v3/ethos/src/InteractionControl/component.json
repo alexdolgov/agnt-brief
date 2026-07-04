@@ -1,0 +1,18 @@
+{
+  "component": "InteractionControl",
+  "main_contract": "InteractionControl",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0a31c99b8edd563cdf01534a82956eda5cdb4ce5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

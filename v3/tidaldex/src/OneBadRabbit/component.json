@@ -1,0 +1,18 @@
+{
+  "component": "OneBadRabbit",
+  "main_contract": "OneBadRabbit",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x17b44ebb07a9861a3e566308de3578a71bf52906",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

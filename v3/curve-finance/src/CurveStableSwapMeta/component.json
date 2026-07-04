@@ -1,0 +1,18 @@
+{
+  "component": "CurveStableSwapMeta",
+  "main_contract": "CurveStableSwapMeta",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x7c2085419be6a04f4ad88ea91bc9f5c6e6c463d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

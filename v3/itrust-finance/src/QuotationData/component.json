@@ -1,0 +1,18 @@
+{
+  "component": "QuotationData",
+  "main_contract": "QuotationData",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1776651f58a17a50098d31ba3c3cd259c1903f7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

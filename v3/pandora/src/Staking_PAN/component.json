@@ -1,0 +1,18 @@
+{
+  "component": "Staking_PAN",
+  "main_contract": "Staking_PAN",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd26310f0c5485a60a2eeacb6786fd83847ebe0ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

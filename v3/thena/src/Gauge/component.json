@@ -1,0 +1,18 @@
+{
+  "component": "Gauge",
+  "main_contract": "Gauge",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc9e5c9fbb843e168282e2cfbebbc3c7f0ec6a6b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LizardStrategyUsdtStgV5",
+  "main_contract": "LizardStrategyUsdtStgV5",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc37a6d784bf2c68b8e680ab970e398b5703dcae5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

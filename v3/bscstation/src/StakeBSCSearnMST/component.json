@@ -1,0 +1,26 @@
+{
+  "component": "StakeBSCSearnMST",
+  "main_contract": "StakeBSCSearnMST",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fdae9e06e545cef9235ce1d042de7e04afa6741",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x501dfa67bcce3a28be28bfaf3f69d8129134f3a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RedemptionHelper",
+  "main_contract": "RedemptionHelper",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb366256d033ae7e4f7bddec822a5adec9df07b80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

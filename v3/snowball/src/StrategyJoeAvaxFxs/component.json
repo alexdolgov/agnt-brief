@@ -1,0 +1,18 @@
+{
+  "component": "StrategyJoeAvaxFxs",
+  "main_contract": "StrategyJoeAvaxFxs",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x82170090ac185ad22e4dceac78030d67fe1c4269",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

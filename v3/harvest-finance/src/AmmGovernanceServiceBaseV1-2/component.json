@@ -1,0 +1,18 @@
+{
+  "component": "AmmGovernanceServiceBaseV1-2",
+  "main_contract": "AmmGovernanceServiceBaseV1",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x498eb532c9d3b4cf20351b8767dceb4b5d28fe4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

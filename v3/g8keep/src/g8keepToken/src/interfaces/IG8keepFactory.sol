@@ -1,0 +1,7 @@
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity 0.8.20;
+
+interface IG8keepFactory {
+    function g8keepTokenVesting() external view returns (address);
+    function penaltyReceiver() external view returns(address);
+}

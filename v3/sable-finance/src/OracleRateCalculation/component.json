@@ -1,0 +1,18 @@
+{
+  "component": "OracleRateCalculation",
+  "main_contract": "OracleRateCalculation",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x76dcd40843c1de96839bf83790257a36011e6632",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

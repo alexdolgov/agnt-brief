@@ -1,0 +1,18 @@
+{
+  "component": "MErc20Delegate",
+  "main_contract": "MErc20Delegate",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x73bbca91949919d081c51042b5ac0f86b5bb8e21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

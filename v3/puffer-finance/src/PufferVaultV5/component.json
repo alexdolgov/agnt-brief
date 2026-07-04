@@ -1,0 +1,26 @@
+{
+  "component": "PufferVaultV5",
+  "main_contract": "PufferVaultV5",
+  "source_file_count": 50,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x272e3475347f0a0b6fa50022140ee5704a414d72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

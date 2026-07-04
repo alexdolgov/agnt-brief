@@ -1,0 +1,18 @@
+{
+  "component": "MerklePatriciaProof",
+  "main_contract": "MerklePatriciaProof",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e51a119e892d3fb324c0410f11f39f61dec9dc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

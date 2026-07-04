@@ -1,0 +1,18 @@
+{
+  "component": "XrpSwapAsset",
+  "main_contract": "XrpSwapAsset",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfb288d60d3b66f9c3e231a9a39ed3f158a4269aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

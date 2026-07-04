@@ -1,0 +1,20 @@
+{
+  "component": "DefaultCollateralFactory",
+  "main_contract": "DefaultCollateralFactory",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbioticfi/collateral/blob/main/audits/ChainSecurity_DefaultCollateral.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe5296638aa86bd4175d802a210e158688e41a93c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

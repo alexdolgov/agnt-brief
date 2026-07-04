@@ -1,0 +1,18 @@
+{
+  "component": "MgvCleaner",
+  "main_contract": "MgvCleaner",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x55b196d0d51840b99c7973d1b8d6d036b69ed24c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

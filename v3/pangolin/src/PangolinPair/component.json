@@ -1,0 +1,26 @@
+{
+  "component": "PangolinPair",
+  "main_contract": "PangolinPair",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbd918ed441767fe7924e99f6a0e0b568ac1970d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

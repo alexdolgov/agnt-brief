@@ -1,0 +1,26 @@
+{
+  "component": "SmartChefNFTFactoryByTier",
+  "main_contract": "SmartChefNFTFactoryByTier",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x82102b6f9c3e2e86f2fdbc861d9cfe6f6d5f58af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9820fee8d0dca74e048ee9f83cd8963df0b35211",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

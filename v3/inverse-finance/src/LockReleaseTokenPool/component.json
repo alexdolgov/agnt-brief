@@ -1,0 +1,18 @@
+{
+  "component": "LockReleaseTokenPool",
+  "main_contract": "LockReleaseTokenPool",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05eee76f456c51be0459ec1c0a78bf177b2c877c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

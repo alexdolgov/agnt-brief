@@ -1,0 +1,18 @@
+{
+  "component": "KalmarToken-2",
+  "main_contract": "KalmarToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4ba0057f784858a48fe351445c672ff2a3d43515",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

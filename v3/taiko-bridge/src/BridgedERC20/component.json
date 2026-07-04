@@ -1,0 +1,26 @@
+{
+  "component": "BridgedERC20",
+  "main_contract": "BridgedERC20",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79bc0aada00fcf6e7ab514bfeb093b5fae3653e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc5d488073fa918cbbd73b9a523f3858c4de7372",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GIV",
+  "main_contract": "GIV",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x900db999074d9277c5da2a43f252d74366230da0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

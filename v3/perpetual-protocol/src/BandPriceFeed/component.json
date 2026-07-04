@@ -1,0 +1,18 @@
+{
+  "component": "BandPriceFeed",
+  "main_contract": "BandPriceFeed",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1dde11b421bced5a9452ee5b84fe39dd0a78e67f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

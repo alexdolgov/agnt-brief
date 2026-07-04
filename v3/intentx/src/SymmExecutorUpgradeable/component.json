@@ -1,0 +1,34 @@
+{
+  "component": "SymmExecutorUpgradeable",
+  "main_contract": "SymmExecutorUpgradeable",
+  "source_file_count": 6,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x19e3efce03fecc63af0fc8769ee7799551622dbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xee93f20713add2a49890da69fe432b37ccb7a63b",
+      "is_proxy": true,
+      "implementation_address": "0x19e3efce03fecc63af0fc8769ee7799551622dbe",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf7b6d079c62a10e2d106113f998520f144a12bcf",
+      "is_proxy": true,
+      "implementation_address": "0x19e3efce03fecc63af0fc8769ee7799551622dbe",
+      "liveness": "live"
+    }
+  ]
+}

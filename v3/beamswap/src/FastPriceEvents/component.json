@@ -1,0 +1,18 @@
+{
+  "component": "FastPriceEvents",
+  "main_contract": "FastPriceEvents",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x6e1d2a4c475b8a43b457236a6f1fa002c46973d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

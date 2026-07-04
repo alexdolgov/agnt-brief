@@ -1,0 +1,20 @@
+{
+  "component": "LendingPoolConfigurator",
+  "main_contract": "LendingPoolConfigurator",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/aave-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

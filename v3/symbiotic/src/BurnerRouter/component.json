@@ -1,0 +1,21 @@
+{
+  "component": "BurnerRouter",
+  "main_contract": "BurnerRouter",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbioticfi/burners/blob/main/audits/ChainSecurity-Burners.pdf",
+    "https://raw.githubusercontent.com/symbioticfi/burners/main/audits/ChainSecurity-Burners.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42dd40dc2130c658ab32d9989ff8abe6c36463c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

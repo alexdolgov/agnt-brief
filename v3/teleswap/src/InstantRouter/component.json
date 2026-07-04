@@ -1,0 +1,26 @@
+{
+  "component": "InstantRouter",
+  "main_contract": "InstantRouter",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x80dd89ee0ce938ae41a167709a9ce166f7a5f8a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf75b11999a66d57ba0e121930ec27c5059351a01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

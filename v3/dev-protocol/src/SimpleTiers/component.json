@@ -1,0 +1,18 @@
+{
+  "component": "SimpleTiers",
+  "main_contract": "SimpleTiers",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x947d41ca1b7240724fa21268c7e602d9e68a8fe1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

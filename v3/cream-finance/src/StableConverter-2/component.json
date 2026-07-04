@@ -1,0 +1,18 @@
+{
+  "component": "StableConverter-2",
+  "main_contract": "StableConverter",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x028337c13489dff71f8afe9aa9d1d17969aa48b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

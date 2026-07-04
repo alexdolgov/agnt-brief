@@ -1,0 +1,18 @@
+{
+  "component": "IterationPlanLib",
+  "main_contract": "IterationPlanLib",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6b8dea6cbe9cc5d70384ba223839e8a5dd8ae7c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

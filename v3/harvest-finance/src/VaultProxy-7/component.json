@@ -1,0 +1,26 @@
+{
+  "component": "VaultProxy-7",
+  "main_contract": "VaultProxy",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0bb94083d5718a8cb716fadc016187a0d6c99425",
+      "is_proxy": true,
+      "implementation_address": "0x15dbf9695b5fdb9866352d28e585f304c1cb454c",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x15dbf9695b5fdb9866352d28e585f304c1cb454c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

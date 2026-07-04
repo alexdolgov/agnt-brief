@@ -1,0 +1,18 @@
+{
+  "component": "CZFTeamStream",
+  "main_contract": "CZFTeamStream",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1602a18941b3ce683491e63d36c4573613a2a15e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

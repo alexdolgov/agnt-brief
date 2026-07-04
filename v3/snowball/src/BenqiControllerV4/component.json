@@ -1,0 +1,18 @@
+{
+  "component": "BenqiControllerV4",
+  "main_contract": "BenqiControllerV4",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x252b5fd3b1cb07a2109bf36d5bde6a247c6f4b59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

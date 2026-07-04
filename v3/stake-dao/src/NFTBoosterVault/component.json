@@ -1,0 +1,18 @@
+{
+  "component": "NFTBoosterVault",
+  "main_contract": "NFTBoosterVault",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa324a2e3a6f64bd588565e0e1e2dd50e7a68bdd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

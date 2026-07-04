@@ -1,0 +1,18 @@
+{
+  "component": "DistributeFees",
+  "main_contract": "DistributeFees",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x578cbecc706344c4737c59165eb2e59ec39004f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OneWorldOnlineToken",
+  "main_contract": "OneWorldOnlineToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfdbc1adc26f0f8f8606a5d63b7d3a3cd21c22b23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

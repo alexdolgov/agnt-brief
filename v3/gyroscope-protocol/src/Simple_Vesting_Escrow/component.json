@@ -1,0 +1,18 @@
+{
+  "component": "Simple_Vesting_Escrow",
+  "main_contract": "Simple Vesting Escrow",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x455a56994df75ef70795c7a2d6a1d40534b72aeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BabyTokenTransferProxy",
+  "main_contract": "BabyTokenTransferProxy",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xde2ca923570de15263e3914af0637a38ea62532b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeddc6a516c37f40ae4da6ceb3cb722eaf7734e18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

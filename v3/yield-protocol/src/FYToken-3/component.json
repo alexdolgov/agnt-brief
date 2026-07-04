@@ -1,0 +1,20 @@
+{
+  "component": "FYToken-3",
+  "main_contract": "FYToken",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/YieldV2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f9b5e639447456ddc784bc441f5a6fd7ce80729",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

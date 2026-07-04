@@ -1,0 +1,22 @@
+{
+  "component": "ListaAirdrop",
+  "main_contract": "ListaAirdrop",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/lista-dao-contracts/blob/master/audits/PeckShield_OFT_190624.pdf",
+    "https://github.com/lista-dao/lista-token/blob/master/audits/PeckShield-Audit-Report-ListaAirdrop-v1.0.pdf",
+    "https://github.com/lista-dao/lista-token/blob/master/audits/Supremacy-Audit-Report-ListaDAO_Airdrop-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x087b9843155597bd447088c4eccde485357d5089",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

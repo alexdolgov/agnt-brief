@@ -1,0 +1,20 @@
+{
+  "component": "USC",
+  "main_contract": "USC",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/abdk-consulting/audits/blob/main/chi/ABDK_Chi_ChiProtocol_v_1_0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38547d918b9645f2d94336b6b61aeb08053e142c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

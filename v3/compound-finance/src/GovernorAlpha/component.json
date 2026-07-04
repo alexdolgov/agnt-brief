@@ -1,0 +1,21 @@
+{
+  "component": "GovernorAlpha",
+  "main_contract": "GovernorAlpha",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/compound-governance.pdf",
+    "https://www.openzeppelin.com/news/compound-alpha-governance-system-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e4be8bc9637f0eaa1a755019e06a68ce081d58f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

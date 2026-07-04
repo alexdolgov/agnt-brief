@@ -1,0 +1,18 @@
+{
+  "component": "TwapUtils",
+  "main_contract": "TwapUtils",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x51494b68547d54cce95202c6853902b20f0cde8d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SafleToken",
+  "main_contract": "SafleToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x04b33078ea1aef29bf3fb29c6ab7b200c58ea126",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

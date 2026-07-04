@@ -1,0 +1,18 @@
+{
+  "component": "ZFFactory",
+  "main_contract": "ZFFactory",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xce98a0e578b639aa90ee96ed5ba8e5a4022de529",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

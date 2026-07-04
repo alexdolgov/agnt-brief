@@ -1,0 +1,26 @@
+{
+  "component": "BatchMigrator",
+  "main_contract": "BatchMigrator",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x008f8e5cb02a2f6f79fc91ed2ca3a6fe0ff87f74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xacaa4dde6c4fb90bb1948904f0308296f7c74252",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

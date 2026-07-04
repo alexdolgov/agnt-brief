@@ -1,0 +1,42 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 68,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x298a695906e16aea0a184a2815a76ead1a0b7522",
+      "is_proxy": true,
+      "implementation_address": "0xc83e08c239e8639762aa915e3f1c85ced60f718e",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40",
+      "is_proxy": true,
+      "implementation_address": "0xda534b567099ca481384133bc121d5843f681365",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa03e32a42c75fdddc9a39973ddd082f147393154",
+      "is_proxy": true,
+      "implementation_address": "0x22c5dc93e50a17a76d042a60dc1aa60534ca5de2",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xde5750071caca8db173fc6543d23d0bcacacfec3",
+      "is_proxy": true,
+      "implementation_address": "0x9ebb88a92169abbc05b77d17aa2759d8c57b4a62",
+      "liveness": "live"
+    }
+  ]
+}

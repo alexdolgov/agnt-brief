@@ -1,0 +1,18 @@
+{
+  "component": "GaugeEquivalent",
+  "main_contract": "GaugeEquivalent",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcbb2b0a38470284a730f8e44537192c9d1ffa009",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

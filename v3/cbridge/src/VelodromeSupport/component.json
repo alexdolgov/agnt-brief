@@ -1,0 +1,18 @@
+{
+  "component": "VelodromeSupport",
+  "main_contract": "VelodromeSupport",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4333227e5a2ed1c439b1fc5ca0c025af6cb873b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

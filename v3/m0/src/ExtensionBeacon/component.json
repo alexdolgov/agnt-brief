@@ -1,0 +1,18 @@
+{
+  "component": "ExtensionBeacon",
+  "main_contract": "ExtensionBeacon",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb823280379f3e057ccae4ba5f6f772528979a931",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

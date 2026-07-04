@@ -1,0 +1,26 @@
+{
+  "component": "DNFTDNFTStartPools",
+  "main_contract": "DNFTDNFTStartPools",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x052316cfdc4b78819552668e755ac836e58a07ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1449879983b67f3084c7d6186f4b624e58a64573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

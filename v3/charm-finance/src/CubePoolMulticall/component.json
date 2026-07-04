@@ -1,0 +1,26 @@
+{
+  "component": "CubePoolMulticall",
+  "main_contract": "CubePoolMulticall",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01cc4a364f16b9ed0b77b3be704a5b1b8dfffe04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b16864708f55ec6c34ee23560fa684c9be6aba7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

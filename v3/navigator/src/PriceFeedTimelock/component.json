@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedTimelock",
+  "main_contract": "PriceFeedTimelock",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

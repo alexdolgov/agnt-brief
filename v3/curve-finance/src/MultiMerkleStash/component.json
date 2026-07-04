@@ -1,0 +1,18 @@
+{
+  "component": "MultiMerkleStash",
+  "main_contract": "MultiMerkleStash",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x966a2f2dc3aff00965c6eccf6290d0d402fd4567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

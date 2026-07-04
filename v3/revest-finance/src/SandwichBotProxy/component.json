@@ -1,0 +1,18 @@
+{
+  "component": "SandwichBotProxy",
+  "main_contract": "SandwichBotProxy",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x8fd6f51bf0c29533abcc55f8848cd3920c245a5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

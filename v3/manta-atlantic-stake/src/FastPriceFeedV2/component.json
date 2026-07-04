@@ -1,0 +1,18 @@
+{
+  "component": "FastPriceFeedV2",
+  "main_contract": "FastPriceFeedV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xb7b6ef96de8e79a0d00b8297348af6dbd7bc0129",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

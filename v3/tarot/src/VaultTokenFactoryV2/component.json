@@ -1,0 +1,18 @@
+{
+  "component": "VaultTokenFactoryV2",
+  "main_contract": "VaultTokenFactoryV2",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfb3017116a516898af427bdfe3aeb130f2c898e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SplUsdRedemptionVaultWithSwapper",
+  "main_contract": "SplUsdRedemptionVaultWithSwapper",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x3404676e77abca60ffb1c00a8e09da21832796ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

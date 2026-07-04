@@ -1,0 +1,26 @@
+{
+  "component": "MyOFTAdapter",
+  "main_contract": "MyOFTAdapter",
+  "source_file_count": 49,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x279e63c7f2243500cafce8b3f510bbe6dfdbde6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x33afd795cc5db5fa42f165b273bdab06b1b79195",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

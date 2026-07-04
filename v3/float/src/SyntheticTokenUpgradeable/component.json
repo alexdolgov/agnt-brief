@@ -1,0 +1,18 @@
+{
+  "component": "SyntheticTokenUpgradeable",
+  "main_contract": "SyntheticTokenUpgradeable",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01829f1fa8512ca54b2709faea59e155ce4c03e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

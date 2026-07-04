@@ -1,0 +1,18 @@
+{
+  "component": "Pool-6",
+  "main_contract": "Pool",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe4f74717fba81709439493daf6dad9a355d9dbc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

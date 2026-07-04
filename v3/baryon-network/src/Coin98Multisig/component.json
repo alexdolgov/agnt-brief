@@ -1,0 +1,18 @@
+{
+  "component": "Coin98Multisig",
+  "main_contract": "Coin98Multisig",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

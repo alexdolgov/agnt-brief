@@ -1,0 +1,50 @@
+{
+  "component": "TetuVaultV2",
+  "main_contract": "TetuVaultV2",
+  "source_file_count": 25,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4115745e84cae72072c5c60fa5e8e1959a981ffa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5e3841e6d13bad3a2e000c4547cc0616c92ed9b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb40bd55f4d1ef7bd93a146e3c75af682fef80192",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbbcf82ff4775f600d5ca626734a7c6df1edd5918",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc4502ff1c35c6bc55d95493dccaf9bb463e1f1b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

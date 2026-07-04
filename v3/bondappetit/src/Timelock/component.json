@@ -1,0 +1,20 @@
+{
+  "component": "Timelock",
+  "main_contract": "Timelock",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mixbytes/audits_public/blob/4fc7d333e3df57586e0f96cc551819e2c93f3ae9/BondAppetit/BondAppetit%20Security%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b62c5c2432da0399dd8f1e5da92bc81c9813803",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

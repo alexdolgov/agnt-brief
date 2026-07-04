@@ -1,0 +1,18 @@
+{
+  "component": "TokenLock",
+  "main_contract": "TokenLock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

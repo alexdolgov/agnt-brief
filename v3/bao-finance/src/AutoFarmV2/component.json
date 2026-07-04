@@ -1,0 +1,18 @@
+{
+  "component": "AutoFarmV2",
+  "main_contract": "AutoFarmV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0895196562c7868c5be92459fae7f877ed450452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

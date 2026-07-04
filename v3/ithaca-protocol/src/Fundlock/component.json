@@ -1,0 +1,52 @@
+{
+  "component": "Fundlock",
+  "main_contract": "Fundlock",
+  "source_file_count": 24,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/ithacaprotocol.io_EVM_Contracts_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x62185e9fc1777f56425aee6f95128ed36d1fa1bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9139a54195c75816057a132a32f43d18de86417b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb55173b9b9e7f51030fbaf2a0cc796318e211632",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba1fa561adf1c496d7436fecac25de2e25375f77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc07fab09bf0707d383f1033db9790edfee9cc9bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

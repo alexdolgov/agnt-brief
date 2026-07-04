@@ -1,0 +1,18 @@
+{
+  "component": "DisputeGameFactory",
+  "main_contract": "DisputeGameFactory",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4bba758f006ef09402ef31724203f316ab74e4a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

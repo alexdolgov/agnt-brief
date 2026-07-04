@@ -1,0 +1,120 @@
+# Agentic Audit Brief: WOO X
+
+## Project Overview
+
+- Project: WOO X (`woo-x`)
+- Website: [https://x.woo.org/en/trade](https://x.woo.org/en/trade)
+- Lifecycle: unknown
+- Generated: 2026-07-03T21:07:12.932Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-17a2
+- Chains: arbitrum, avalanche, bsc, ethereum, fantom, optimism, polygon
+- Contract surface: 7 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $4,660,561.09
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## Project Description
+
+CEX. Structurally: 3 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+
+## Contract Surface Quality
+
+- Indexed contracts: 8; live-surface contracts included: 7 (2 live, 5 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
+## Audit Coverage Summary
+
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 7 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
+- Verified by bytecode match: 0
+- Unverified implementations: 5
+- Unique implementations: 7
+- Raw deployments: 7
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: n/a (unknown)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
+
+### Auditor Coverage
+
+- None
+
+## Contract Surface
+
+### ✅ Verified + Audited (0)
+
+- None
+
+### ⚠️ Verified + Unaudited (2)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BscToken | unknown | bsc | n/a | [`0x469193...945d4b`](./contracts/bsc-56/0x4691937a7508860f876c9c0a2a617e7d9e945d4b/) | ⚠️ Unaudited |
+| WootradeNetwork | unknown | ethereum | n/a | [`0x469193...945d4b`](./contracts/ethereum-1/0x4691937a7508860f876c9c0a2a617e7d9e945d4b/) | ⚠️ Unaudited |
+
+### ✅ Verified by Bytecode + Audited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ⚠️ Verified by Bytecode + Unaudited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ❓ Unverified (5)
+
+Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | optimism | n/a | `0x469193...945d4b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x469193...945d4b` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x469193...945d4b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x469193...945d4b` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x469193...945d4b` | ❓ Unverified |
+
+## Audit Inventory
+
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---|
+
+## Coverage Gaps
+
+Verified + unaudited native implementations ranked by TVL:
+
+- None
+
+## Origin Classification
+
+| Origin Kind | Contracts |
+|---|---:|
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 7 |
+
+## Scope Matching Notes
+
+- Repo-reference audits: 0
+- Not-audit entries: 0
+- Audits with zero matched contracts: 0
+- Inherited remapped matches: 0
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
+
+Fork inheritance lineage and inherited audits are included when available.

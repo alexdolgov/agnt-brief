@@ -1,0 +1,18 @@
+{
+  "component": "SingelTokenVirtualRewarderUpgradeable",
+  "main_contract": "SingelTokenVirtualRewarderUpgradeable",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xaf24cf0dd121b89df98b9fad2e05821bd08069df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

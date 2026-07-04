@@ -1,0 +1,18 @@
+{
+  "component": "MarsStratX2_PCS",
+  "main_contract": "MarsStratX2_PCS",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

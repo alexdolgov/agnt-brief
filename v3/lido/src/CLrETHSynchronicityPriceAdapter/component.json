@@ -1,0 +1,18 @@
+{
+  "component": "CLrETHSynchronicityPriceAdapter",
+  "main_contract": "CLrETHSynchronicityPriceAdapter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05225cd708bca9253789c1374e4337a019e99d56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

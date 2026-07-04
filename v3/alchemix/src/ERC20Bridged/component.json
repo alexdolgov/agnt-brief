@@ -1,0 +1,26 @@
+{
+  "component": "ERC20Bridged",
+  "main_contract": "ERC20Bridged",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0fbcbaea96ce0cf7ee00a8c19c3ab6f5dc8e1921",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5979d7b546e38e414f7e9822514be443a4800529",
+      "is_proxy": true,
+      "implementation_address": "0x0fbcbaea96ce0cf7ee00a8c19c3ab6f5dc8e1921",
+      "liveness": "live"
+    }
+  ]
+}

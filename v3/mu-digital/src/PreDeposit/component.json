@@ -1,0 +1,58 @@
+{
+  "component": "PreDeposit",
+  "main_contract": "PreDeposit",
+  "source_file_count": 26,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00692cc98b70639c6a47f01a4a7bd7a1e2e5cd01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a3861e09302165533945a88ce3129cdf26b1073",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ad72f260d105dc971816f2c3d77a53e3bd49827",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xade59b54db0b5f41551efc020fbdbf41be601ba2",
+      "is_proxy": true,
+      "implementation_address": "0x2a3861e09302165533945a88ce3129cdf26b1073",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0d32399f28f0d745d6aee79e5308467e90627f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf17ee237cb267f7f8311a88e37f823952ea7c1ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "IdleTokenFungibleOptimism",
+  "main_contract": "IdleTokenFungibleOptimism",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1b0f494ef778907336bd7e631607db2c8019bf76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AaveV3ConfigEngine",
+  "main_contract": "AaveV3ConfigEngine",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xee9d3edbeda35156681ef28765e760eb75ccfb6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

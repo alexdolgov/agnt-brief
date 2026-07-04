@@ -1,0 +1,26 @@
+{
+  "component": "StaticATokenFactory",
+  "main_contract": "StaticATokenFactory",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1cc03e57ed4d426f673dbb4d69e08c91bbbd55a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x777db2ea92316f03ee5a31245b1787fbebac81f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

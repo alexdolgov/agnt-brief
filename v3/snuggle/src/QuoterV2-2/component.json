@@ -1,0 +1,18 @@
+{
+  "component": "QuoterV2-2",
+  "main_contract": "QuoterV2",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb048bbc1ee6b733fffcfb9e9cef7375518e25997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

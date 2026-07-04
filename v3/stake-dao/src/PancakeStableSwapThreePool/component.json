@@ -1,0 +1,18 @@
+{
+  "component": "PancakeStableSwapThreePool",
+  "main_contract": "PancakeStableSwapThreePool",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5a075d13469201cad4ac0c77aeff31f2217a9448",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

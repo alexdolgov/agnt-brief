@@ -1,0 +1,18 @@
+{
+  "component": "WETHOracle",
+  "main_contract": "WETHOracle",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fdd429652fe77d8e2d123d1b99178cf27b112dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

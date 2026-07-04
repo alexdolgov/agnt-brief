@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3Pool",
+  "main_contract": "UniswapV3Pool",
+  "source_file_count": 96,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfb559d225343a61884d46eee91c1a805759f758b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

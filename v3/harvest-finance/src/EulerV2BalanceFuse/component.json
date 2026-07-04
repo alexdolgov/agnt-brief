@@ -1,0 +1,18 @@
+{
+  "component": "EulerV2BalanceFuse",
+  "main_contract": "EulerV2BalanceFuse",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa607855ec4881b5f25711d1404e0cddeadeeacdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

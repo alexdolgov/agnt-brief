@@ -1,0 +1,18 @@
+{
+  "component": "PlotXToken",
+  "main_contract": "PlotXToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72f020f8f3e8fd9382705723cd26380f8d0c66bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

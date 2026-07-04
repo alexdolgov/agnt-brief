@@ -1,0 +1,18 @@
+{
+  "component": "SimpleAccountFactory",
+  "main_contract": "SimpleAccountFactory",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc51bd464939c4309e54ec185ad0c54b951be649f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

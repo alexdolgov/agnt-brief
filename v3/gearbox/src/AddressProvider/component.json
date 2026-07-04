@@ -1,0 +1,39 @@
+{
+  "component": "AddressProvider",
+  "main_contract": "AddressProvider",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/ChainSecurity_Gearbox_audit.pdf",
+    "https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/ConsensysDiligence%20_Fuzzing_report.pdf",
+    "https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/MixBytes_security_audit_report.pdf",
+    "https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/Peckshield-03.05.2021.pdf",
+    "https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/Peckshield-10.08.2021.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2021%20Dec%20-%20ChainSecurity_Gearbox_audit.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2021%20Dec%20-%20ConsensysDiligence%20_Fuzzing_report.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2021%20Dec%20-%20MixBytes_security_audit_report.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2021%20May%20-%20Peckshield-03.05.2021.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2021%20Sep%20-%20Peckshield-10.08.2021.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2022%20Aug%20-%20SigmaPrime_Gearbox_Smart_Contract_Security_Assessment_Report_v2.pdf",
+    "https://github.com/Gearbox-protocol/security/blob/main/audits/2022%20Sep%20-%20Consensys%20Diligence.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79012c8d491dcf3a30db20d1f449b14caf01da6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8cf3ed326bb0e51454361fb37e9e8df6dc5c286",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

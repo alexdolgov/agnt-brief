@@ -1,0 +1,18 @@
+{
+  "component": "QiDaoProxyOFT",
+  "main_contract": "QiDaoProxyOFT",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

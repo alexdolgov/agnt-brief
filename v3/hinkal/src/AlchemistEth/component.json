@@ -1,0 +1,18 @@
+{
+  "component": "AlchemistEth",
+  "main_contract": "AlchemistEth",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b566554378477490ab040f6f757171c967d03ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

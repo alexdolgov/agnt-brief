@@ -1,0 +1,18 @@
+{
+  "component": "DelayedERC4626Oracle",
+  "main_contract": "DelayedERC4626Oracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x363fffe9e293df351fec24bde69954c472c52321",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

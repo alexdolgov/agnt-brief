@@ -1,0 +1,28 @@
+{
+  "component": "BackingManagerP1",
+  "main_contract": "BackingManagerP1",
+  "source_file_count": 70,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/reserve-protocol/protocol/blob/master/audits/Code4rena%20-%20Reserve%20Audit%20Report%20-%20Release%202.1.0.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3e6cd7c1ae9e575552a1aad774017a6a6345ad21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc501c9074ce15a4b00dd0b51b3c372518e6d3ba2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MerkleTreeVestingReserve",
+  "main_contract": "MerkleTreeVestingReserve",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2f36b4843129647d840911eaea49db16649b0afd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FundV4",
+  "main_contract": "FundV4",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69c53679ec1c06f3275b64c428e8cd069a2d3966",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

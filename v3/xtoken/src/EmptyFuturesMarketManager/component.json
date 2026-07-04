@@ -1,0 +1,18 @@
+{
+  "component": "EmptyFuturesMarketManager",
+  "main_contract": "EmptyFuturesMarketManager",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x834ef6c82d431ac9a7a6b66325f185b2430780d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

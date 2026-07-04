@@ -1,0 +1,609 @@
+// SPDX-License-Identifier: MIT
+
+/*
+    Created by DeNet
+
+    Proof Of Storage  - Consensus for Decentralized Storage.
+
+    Max Last Proof Time = 30 Dayes. 
+*/
+
+pragma solidity ^0.8.0;
+pragma abicoder v1;
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/math/Math.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+
+import "./interfaces/IUserStorage.sol";
+import "./interfaces/IPayments.sol";
+import "./interfaces/IOldPayments.sol";
+import "./interfaces/INodeNFT.sol";
+import "./interfaces/IContractStorage.sol";
+import "./utils/CryptoProofUtils.sol";
+import "./utils/StringNumbersConstant.sol";
+
+
+contract Depositable is StringNumbersConstant {
+    using SafeMath for uint;
+
+    address public paymentsAddress;
+    uint256 public maxDepositPerUser = START_DEPOSIT_LIMIT;
+    uint256 public timeLimit = TIME_7D; // 7 days
+
+    
+    mapping(address => mapping(uint32 => uint256)) public limitReached; // time 
+
+    constructor () {
+    }
+
+    /**
+        @notice Show available amount for deposit
+    */
+    function getAvailableDeposit(address _user, uint256 _amount, uint32 _curDate) public view returns (uint256) {
+        if (limitReached[_user][_curDate] + _amount >= maxDepositPerUser) {
+            return maxDepositPerUser.sub(limitReached[_user][_curDate]);
+        }
+        return _amount;
+    }
+
+    /**
+        @notice make deposit function.
+
+        @param _amount - Amount of  Pair Token
+
+        @dev Require approve from Pair Token to paymentsAddress
+    */
+    function makeDeposit(uint256 _amount) public {
+
+        /* Checking Limits */
+        uint32 curDate = uint32(block.timestamp.div(timeLimit));
+        _amount = getAvailableDeposit(msg.sender, _amount, curDate);
+        require(_amount > 0, "POS.payments.makeDeposit:deposit limit = 0 for this address and time");
+
+        /* Updating Deposit amount */
+        limitReached[msg.sender][curDate] = limitReached[msg.sender][curDate].add(_amount);
+        IPayments _payment = IPayments(paymentsAddress);
+        _payment.depositToLocal(msg.sender, _amount);
+    }
+
+    /**
+        @notice close deposit functuin. Will burn part of gastoken and return pair token to msg.sender
+    */
+    function closeDeposit() public {
+        IPayments _payment = IPayments(paymentsAddress);
+        _payment.closeDeposit(msg.sender);
+    }
+
+    /**
+        @notice UpdateDepositLimits for all users
+    */
+    function updateDepositLimits(uint _newLimit) internal {
+        maxDepositPerUser = _newLimit;
+    }
+}
+
+contract ProofOfStorage is Ownable, CryptoProofs, Depositable {
+    using SafeMath for uint;
+
+
+    /**
+        @notice Contract Storage Address to get info about updates
+    */
+    address public contractStorageAddress;
+
+    /**
+       @notice Address of smart contract, where User Storage placed
+    */
+    address public userStorageAddress;
+   
+    /**
+        @notice Address of smart contract, where NFT of nodes placed
+    */
+    address public node_nft_address = address(0);
+    
+    /**
+        @notice  Max blocks after proof needs to use newest proof as it possible
+        
+        see more, in StringNumbersConstant
+    */
+    uint256 private _max_blocks_after_proof = MAX_BLOCKS_AFTER_PROOF;
+    
+    /**
+
+        @dev Debug mode using only for test's. 
+        Check it parametr before any deposits!
+        
+        What is using for, when it true:
+            - Disabling verification of User Signature 
+    */
+    bool public debug_mode = false;
+
+    /**
+        @dev Minimal sotrage size for proof. 
+
+        in Polygon netowrk best min storage size ~10GB (~0.03 USD or more per month).
+        if user store less than 10GB, user storage size will increased to min_storage_require
+
+        @notice min_storage_require in megabytes.
+
+    */
+    uint public min_storage_require = STORAGE_10GB_IN_MB;
+
+    /**
+        @dev DAO Contract or Wallet Address
+    */
+    address public daoContractAddress;
+
+    constructor(
+        address _ContractStorageAddress
+    ) Depositable() {
+        contractStorageAddress = _ContractStorageAddress;
+        sync();
+    }
+
+    /*
+        Owner Zone Start
+    */
+
+    function sync() public onlyOwner {
+        IContractStorage contractStorage = IContractStorage(contractStorageAddress);
+        userStorageAddress = contractStorage.getContractAddressViaName("userstorage", NETWORK_ID);
+        paymentsAddress = contractStorage.getContractAddressViaName("gastoken", NETWORK_ID);
+        daoContractAddress = contractStorage.getContractAddressViaName("daowallet", NETWORK_ID);
+        node_nft_address = contractStorage.getContractAddressViaName("nodenft", NETWORK_ID);
+    }
+
+    modifier onlyDAO() {
+        require(msg.sender == daoContractAddress, "PoSAdmin:msg.sender != DAO");
+        _;
+    }
+
+    function setMaxDeposit(uint256 _newLimit) public onlyDAO {
+        updateDepositLimits(_newLimit);
+    }
+
+
+    /**
+        @notice this function updating Node Rank.
+
+        TODO: Move it to DifficultyManufacturing
+
+        @return current_difficulty - new difficulty for all nodes.
+    */
+    function _updateNodeRank(address _proofer, uint current_difficulty) internal returns(uint256) { 
+        if (node_nft_address != address(0)) {
+            IDeNetNodeNFT NFT = IDeNetNodeNFT(node_nft_address);
+            uint timeFromLastProof = block.timestamp - NFT.getLastUpdateByAddress(_proofer);
+            
+            NFT.addSuccessProof(_proofer);
+           
+            if (timeFromLastProof <= TIME_1D) {
+                /* 
+                    Difficulty += 0-2% per proof if it faster than one day
+                */
+                return current_difficulty.mul(TIME_1D*100 + (TIME_1D*2 - timeFromLastProof*2)).div(TIME_1D*100);
+            } else {
+                /* 
+                    difficulty -= 0-1% (pseudo randomly) per proof if it slower than one day
+                */
+                timeFromLastProof = timeFromLastProof % TIME_1D;
+                return current_difficulty.mul(TIME_1D*100 - (timeFromLastProof-TIME_1D)).div(TIME_1D*100);
+            }
+
+            
+        }
+        return current_difficulty;
+    }
+
+    /**
+        Function to disable user signature checking.
+
+        TODO: Will removed, if tests will work correctly without it.
+    */
+    function turnDebugMode() public onlyDAO {
+        if (debug_mode) debug_mode = false;
+        else debug_mode = true;
+    }
+
+    /*
+        ToDO:
+            - Move it into documentation
+        
+        Increase, if network fees growing
+        Decreese, if network fees down
+
+        For example:
+            MATIC:
+                Matic price: 2$
+                Avg gas price: 30 GWEI
+                Avg proof gasused: 300,000
+                Avg tx cost: 30 x 300,000  = 0,009 MATIC 
+                Avg tx price: 0.009 MATIC x 2$ = 0.018$
+                1TB/year Price ~30$
+                Max period for proof: 30 days. (~2.5$ / TB / Month)
+                Min storage size = 0.018 / 2.5$ = 0.0072 TB
+            Ethereum:
+                Matic price: 4000$
+                Avg gas price: 100 GWEI
+                Avg proof gasused: 300,000
+                Avg tx cost: 100 x 300,000  = 0,03 ETH 
+                Avg tx price: 0.03 ETH x 4000$ = 120$
+                1TB/year Price ~30$
+                Max period for proof: 30 days. (~2.5$ / TB / Month)
+                Min storage size = 120 / 2.5$ = 48 TB
+            Binance Smart Chain:
+                BNB price: 500$
+                Avg gas price: 5 GWEI
+                Avg proof gasused: 300,000
+                Avg tx cost: 5 x 300,000  = 0.0014 BNB 
+                Avg tx price: 0.0014 BNB x 500$ = 0.7$
+                1TB/year Price ~30$
+                Max period for proof: 30 days. (~2.5$ / TB / Month)
+                Min storage size = 0.7 / 2.5$ = 0.27 TB
+    */
+    function setMinStorage(uint _size) public onlyDAO {
+        min_storage_require = _size;
+    }
+
+    /**
+        @notice More _new_difficulty = more random for nodes. Less _new_difficulty more proofs and less randomize.
+    */
+    function updateBaseDifficulty(uint256 _new_difficulty) public onlyDAO {
+        setDifficulty(_new_difficulty);
+    }
+
+    /*
+        Owner Zone End
+    */
+
+    /*
+        Send proof use sendProofFrom with msg.sender address as node
+    */
+    function sendProof(
+        address _user_address,
+        uint32 _block_number,
+        bytes32 _user_root_hash,
+        uint64 _user_storage_size,
+        uint64 _user_root_hash_nonce,
+        bytes calldata _user_signature,
+        bytes calldata _file,
+        bytes32[] calldata merkleProof
+    ) public {
+        sendProofFrom(
+            msg.sender,
+            _user_address,
+            _block_number,
+            _user_root_hash,
+            _user_storage_size,
+            _user_root_hash_nonce,
+            _user_signature,
+            _file,
+            merkleProof
+        );
+    }
+
+    /*
+        Send Proof From - proof of storage mechanism, that look like TransferFrom
+        but in case transferFrom, user creating approve transactions. in PoS you don't need to do it.
+
+        _node_address - Who will recieve reward in success case
+        _user_address - Who is payer
+        _block_number - Block number, to approve tx with newest data (see _max_blocks_after_proof)
+        _user_root_hash - root hash, signed by payer
+        _user_storage_size - Storage size in MB. or files count (because all files size 1 MB)
+        _user_root_hash_nonce - parametr to proof, that is newest data proof
+        _user_signature - approve, that root hash, storage size and nonce is correct.
+        _file - part of file
+        _merkleProof - proof start from part of file, and edns with user_root_hash
+    */
+    function sendProofFrom(
+        address _node_address,
+        address _user_address,
+        uint32 _block_number,
+        bytes32 _user_root_hash,
+        uint64 _user_storage_size,
+        uint64 _user_root_hash_nonce,
+        bytes calldata _user_signature,
+        bytes calldata _file,
+        bytes32[] calldata merkleProof
+    ) public {
+        /* Skip for test only */
+        if (!debug_mode) {
+
+            address signer = ECDSA.recover(
+                sha256(abi.encodePacked(
+                    _user_root_hash,
+                    uint256(_user_storage_size),
+                    uint256(_user_root_hash_nonce)
+                )),
+                _user_signature
+            );
+            require(_user_address == signer, "User address not signer");
+        }
+
+        /*
+            _amount_returns = amount of TB/Year token
+
+            if something wrong, transaction will rejected
+        */
+        uint256 _amount_returns = _sendProofFrom (
+            _node_address,
+            _user_address,
+            _block_number,
+            _user_root_hash,
+            _user_storage_size,
+            _user_root_hash_nonce,
+            _file,
+            merkleProof
+        );
+
+        _takePay(_user_address, _node_address, _amount_returns);
+
+        _updateLastProofTime(_user_address);
+
+        /*
+            +1 To Node Success proofs, also return new difficulty for all nodes (+- 2%)
+        */
+        setDifficulty(_updateNodeRank(_node_address, getUpgradingDifficulty()));
+    }
+
+    /**
+        @dev Update Root Hash for user.
+
+        @param _user - target user
+        @param _updater - address of node or user, who update root_hash
+        @param _new_hash - new root hash
+        @param _new_storage_size - storage size in megabytes
+        @param _new_nonce - updated nonce
+    */
+    function _updateRootHash(
+        address _user,
+        address _updater,
+        bytes32 _new_hash,
+        uint64 _new_storage_size,
+        uint64 _new_nonce
+    ) private {
+        bytes32 _cur_user_root_hash;
+        uint256 _cur_user_root_hash_nonce;
+        (_cur_user_root_hash, _cur_user_root_hash_nonce) = getUserRootHash(_user);
+
+        require(_new_nonce >= _cur_user_root_hash_nonce, "POS.updateRootHash:_new_nonce < old_nonce");
+
+        /**
+            @dev no need update root hash, if it no changed
+        */
+        if (_new_hash != _cur_user_root_hash) {
+            _updateLastRootHash(_user, _new_hash, _new_storage_size, _new_nonce, _updater);
+        }
+    }
+
+    /**
+        @dev Proof Verification
+
+        @param _sender - node
+        @param _file - 8kb of data
+        @param _block_number - number of block in selected blockchain
+        @param _time_passed - time from last proof to now
+    */
+    function verifyFileProof(
+        address _sender,
+        bytes calldata _file,
+        uint32 _block_number,
+        uint256 _time_passed
+    ) public view returns (bool) {
+        /*  
+            Some blockchains have limits for getting blockhash. Most of them last 256 blocks
+        */
+        require (blockhash(_block_number) != 0x0, "POS.verifyFileProof:blockhash=0");
+
+        /*
+            make _file_proof with hash from _file + _node_address + blockhash
+        */
+        bytes32 _file_proof = sha256(
+            abi.encodePacked(_file, _sender, blockhash(_block_number))
+        );
+
+        /*
+            Verify with difficulty, (more in isMatchDifficulty)
+        */
+        return isMatchDifficulty(getDifficulty(), uint256(_file_proof), _time_passed);
+    }    
+
+    /**
+        @return uint256 - amount of gastoken for this proof
+    */
+    function _sendProofFrom(
+        address _proofer,
+        address _user_address,
+        uint32 _block_number,
+        bytes32 _user_root_hash,
+        uint64 _user_storage_size,
+        uint64 _user_root_hash_nonce,
+        bytes calldata _file,
+        bytes32[] calldata merkleProof
+    ) private returns(uint256) {
+
+        bytes32 _file_hash = sha256(_file);
+
+        require(
+            _block_number >= block.number - _max_blocks_after_proof,
+            "POS._sendProofFrom:_block_number < block.number - _max_blocks_after_proof"
+        );
+
+        // not need, with using signature checking
+        require(
+            _proofer != address(0) && _user_address != address(0),
+            "POS._sendProofFrom:_proofer or _user_address = 0"
+        );
+
+        /* Check Correct Proof Start */
+        
+        require(
+            _file_hash == merkleProof[0] || _file_hash == merkleProof[1],
+            "POS._sendProofFrom:sha256(file) not in merkleProof[0:1]"
+        );
+
+        require(
+            isValidMerkleTreeProof(_user_root_hash, merkleProof),
+            "POS._sendProofFrom:merkleProof is invalid"
+        );
+
+        /* Check Correct Proof End */
+
+        // digital signature of user must be checked before this function called
+        _updateRootHash(
+            _user_address,
+            _proofer,
+            _user_root_hash,
+            _user_storage_size,
+            _user_root_hash_nonce
+        );
+        
+        (
+            uint256 _amount_returns,
+            uint256 _blocks_complited
+        ) = getUserRewardInfo(_user_address, _user_storage_size);
+
+        require(
+            verifyFileProof(
+                _proofer,
+                _file,
+                _block_number,
+                _blocks_complited
+            ),
+            "POS._sendProofFrom:_proof % base_difficulty > _targetDifficulty"
+        );
+
+        return (_amount_returns);
+    }
+
+    /**
+        @notice Returns info about user reward for ProofOfStorage
+
+        @param _user - User Address
+        @param _user_storage_size - User Storage Size
+        
+        @return _amount - Total Token Amount for PoS
+        @return _last_proof_time - Last Proof Time
+    */
+    function getUserRewardInfo(address _user, uint _user_storage_size)
+        public
+        view
+        returns (
+            uint,
+            uint
+        )
+    {
+        require(_user_storage_size != 0, "POS.getUserRewardInfo:_user_storage_size=0");
+        
+
+        IUserStorage _storage = IUserStorage(userStorageAddress);
+        
+        uint _timePassed = _storage.getPeriodFromLastProof(_user);
+        
+        /*
+            Increase user storage size to min_storage_require (10 GB) if it less
+        */
+        if (_user_storage_size < min_storage_require) {
+            _user_storage_size = min_storage_require;
+        }
+
+        /*
+            Set timePassed to 30 days, if it more.
+        */
+        if (_timePassed > TIME_30D) {
+            _timePassed = TIME_30D;
+        }
+        
+        /*
+            TODO: Move it into documentation 
+
+            1e18 - decimals for TB/Year
+            31536000 - one year in seconds
+            storage size - in megabytes
+            1048576 = 1024 x 1024 
+            
+            Simple:
+                amount = timePassed x storage size / one year
+            
+            True:
+                                timePassed x storage size 
+                amount = 0e18 x __________________________
+                                    31536000 x 1048576
+        */
+        uint _amountReturns = uint(DECIMALS_18).div(TIME_1Y).mul(_timePassed).mul(_user_storage_size).div(STORAGE_1TB_IN_MB);
+
+        return (_amountReturns, _timePassed);
+    }
+
+    /**
+        @dev Function move part of deposit  _from to _to
+        Transfer deposit from user to node
+
+        @param _from - User Address
+        @param _to - node address (who proof)
+        @param _amount - amount of prooved storage data
+    */
+    function _takePay(
+        address _from,
+        address _to,
+        uint _amount
+    ) private {
+        IPayments _payment = IPayments(paymentsAddress);
+        _payment.localTransferFrom(_from, _to, _amount);
+    }
+
+    /**
+       @dev Returns User Root Hash
+
+       @param _user - user address
+       @return sha256 - hash of last user root hash
+    */
+    function getUserRootHash(address _user)
+        public
+        view
+        returns (bytes32, uint)
+    {
+        IUserStorage _storage = IUserStorage(userStorageAddress);
+        return _storage.getUserRootHash(_user);
+    }
+
+    /**
+       @notice Set last proof time to current timestamp.
+       @param _user_address - address of user,
+    */
+    function _updateLastProofTime(address _user_address)
+        private
+    {
+        IUserStorage _storage = IUserStorage(userStorageAddress);
+        _storage.updateLastProofTime(_user_address);
+    }
+
+    /**
+        @dev Set root hash, user_storage size and nonce
+        
+        @param _user_address - address of user
+        @param _user_root_hash - merkle tree root hash of FS
+        @param _user_storage_size - storage size in megabytes
+        @param _nonce - uin256 number
+        @param _updater - address of updater (node/user/whatchtower/etc)
+    */
+    function _updateLastRootHash(
+        address _user_address,
+        bytes32 _user_root_hash,
+        uint64 _user_storage_size,
+        uint64 _nonce,
+        address _updater
+    ) private {
+        IUserStorage _storage = IUserStorage(userStorageAddress);
+        _storage.updateRootHash(
+            _user_address,
+            _user_root_hash,
+            _user_storage_size,
+            _nonce,
+            _updater
+        );
+    }
+}

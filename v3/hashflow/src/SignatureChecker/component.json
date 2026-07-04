@@ -1,0 +1,18 @@
+{
+  "component": "SignatureChecker",
+  "main_contract": "SignatureChecker",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27280fb9ed8c9473e856f93198f08696b9299798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

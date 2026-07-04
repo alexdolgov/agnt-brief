@@ -1,0 +1,18 @@
+{
+  "component": "OBTCOFTAdapter",
+  "main_contract": "OBTCOFTAdapter",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5be1630b4241ebb479b2dd3a1917e3c4253be65f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

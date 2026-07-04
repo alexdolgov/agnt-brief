@@ -1,0 +1,18 @@
+{
+  "component": "ParetoDollarStaking",
+  "main_contract": "ParetoDollarStaking",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0b5f6ec63abcf8253e0a8c36c858e0290484c894",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

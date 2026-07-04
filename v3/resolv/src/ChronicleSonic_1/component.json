@@ -1,0 +1,18 @@
+{
+  "component": "ChronicleSonic_1",
+  "main_contract": "ChronicleSonic_1",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe262021d583b9c97244eb3e5cd3c31cb19f94447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UiProvider",
+  "main_contract": "UiProvider",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x29a6674ce7691c8c895a147cb4dde1893b221af5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

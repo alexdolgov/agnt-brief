@@ -1,0 +1,18 @@
+{
+  "component": "PirexCvx",
+  "main_contract": "PirexCvx",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35a398425d9f1029021a92bc3d2557d42c8588d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

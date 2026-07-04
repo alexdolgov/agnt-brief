@@ -1,0 +1,26 @@
+{
+  "component": "TangibleReaderHelper",
+  "main_contract": "TangibleReaderHelper",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3b8c6ae6c740cdcb10e7e24e39dc2c012b4196de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa5c0ab5a11561a98a5a2191d6fc777becb3632ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SwapManager",
+  "main_contract": "SwapManager",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc48ea9a2daa4d816e4c9333d6689c70070010174",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

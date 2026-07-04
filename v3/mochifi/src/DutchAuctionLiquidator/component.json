@@ -1,0 +1,18 @@
+{
+  "component": "DutchAuctionLiquidator",
+  "main_contract": "DutchAuctionLiquidator",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39ad803d61ecabc64f32edaae97c2fffb0617ff6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

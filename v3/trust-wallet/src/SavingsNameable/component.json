@@ -1,0 +1,18 @@
+{
+  "component": "SavingsNameable",
+  "main_contract": "SavingsNameable",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

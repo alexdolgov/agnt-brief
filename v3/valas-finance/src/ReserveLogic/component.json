@@ -1,0 +1,18 @@
+{
+  "component": "ReserveLogic",
+  "main_contract": "ReserveLogic",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0adc528899ee442070d7e8b3f71b3b450e235cca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

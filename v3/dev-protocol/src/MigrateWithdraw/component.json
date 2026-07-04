@@ -1,0 +1,18 @@
+{
+  "component": "MigrateWithdraw",
+  "main_contract": "MigrateWithdraw",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09e989a431321fa953bf9167c215b50e3a90937f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

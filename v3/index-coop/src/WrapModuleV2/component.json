@@ -1,0 +1,28 @@
+{
+  "component": "WrapModuleV2",
+  "main_contract": "WrapModuleV2",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6604468512b3b85c58c4d818ccb69fba5bb7b809",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbfe0f7b4f9537a25d7c498161d6f24b38699a075",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

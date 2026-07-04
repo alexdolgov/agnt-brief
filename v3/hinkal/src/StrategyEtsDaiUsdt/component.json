@@ -1,0 +1,18 @@
+{
+  "component": "StrategyEtsDaiUsdt",
+  "main_contract": "StrategyEtsDaiUsdt",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc2de28aeac3d4ca04091468cfe5d6cab88977694",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

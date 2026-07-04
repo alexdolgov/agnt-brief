@@ -1,0 +1,18 @@
+{
+  "component": "BuyUnlockedProcessor-2",
+  "main_contract": "BuyUnlockedProcessor",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x640d8f1cc10737b48dfcb52f7fc2bbaf17bcd064",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PublicRound",
+  "main_contract": "PublicRound",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x53aa8bc03b7ac1d2e071536f14d757e060e1f217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

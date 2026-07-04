@@ -1,0 +1,21 @@
+{
+  "component": "JBPrices",
+  "main_contract": "JBPrices",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2022-07-juicebox",
+    "https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b90e507cf6b7eb681a506b111f6f50245e614c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

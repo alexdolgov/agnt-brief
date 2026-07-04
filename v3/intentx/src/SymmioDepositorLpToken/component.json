@@ -1,0 +1,26 @@
+{
+  "component": "SymmioDepositorLpToken",
+  "main_contract": "SymmioDepositorLpToken",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x074849c3f9f9a948c07fe141d0520df9a7b0b182",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x14ef4f5afd3928d983fa7dcaa2c1ff6d1956f1e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

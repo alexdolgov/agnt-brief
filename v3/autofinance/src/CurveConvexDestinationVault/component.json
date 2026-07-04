@@ -1,0 +1,26 @@
+{
+  "component": "CurveConvexDestinationVault",
+  "main_contract": "CurveConvexDestinationVault",
+  "source_file_count": 77,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x356c79ab2b2cefab685004ce827146058a6c3e77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd78860acc0621d87aeea94f7d36eb7bb7cbe3631",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

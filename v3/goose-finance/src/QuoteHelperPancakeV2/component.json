@@ -1,0 +1,18 @@
+{
+  "component": "QuoteHelperPancakeV2",
+  "main_contract": "QuoteHelperPancakeV2",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc3c1ac13a3ebbd19896937e1026001a6e4b2916a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

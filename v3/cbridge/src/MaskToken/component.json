@@ -1,0 +1,18 @@
+{
+  "component": "MaskToken",
+  "main_contract": "MaskToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69af81e73a73b40adf4f3d4223cd9b1ece623074",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

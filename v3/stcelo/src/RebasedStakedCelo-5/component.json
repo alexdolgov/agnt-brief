@@ -1,0 +1,18 @@
+{
+  "component": "RebasedStakedCelo-5",
+  "main_contract": "RebasedStakedCelo",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x80ef43888b64e4bd60b0e8e28e99716e418f5ac4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

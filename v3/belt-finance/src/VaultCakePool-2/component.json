@@ -1,0 +1,18 @@
+{
+  "component": "VaultCakePool-2",
+  "main_contract": "VaultCakePool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf7dfbcc1deda3036cfff5d6ece4f04943d449ae7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

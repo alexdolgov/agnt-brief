@@ -1,0 +1,18 @@
+{
+  "component": "BaseExchange-2",
+  "main_contract": "BaseExchange",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x706aa50385c51596b6d9cbcf97645c6a98940c03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

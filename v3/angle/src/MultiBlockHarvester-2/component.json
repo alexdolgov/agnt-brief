@@ -1,0 +1,18 @@
+{
+  "component": "MultiBlockHarvester-2",
+  "main_contract": "MultiBlockHarvester",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16ca2999e5f5e43aec2e6c18896655b9b05a1560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UToken",
+  "main_contract": "UToken",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x46a260f40e6b2332ec204d82daca6b9031103e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

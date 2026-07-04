@@ -1,0 +1,18 @@
+{
+  "component": "AccumulatorBase",
+  "main_contract": "AccumulatorBase",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11f78501e6b0cbc5de4c7e6bbabaacdb973eb4cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

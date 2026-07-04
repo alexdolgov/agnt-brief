@@ -1,0 +1,18 @@
+{
+  "component": "HHChefClaimBriberModule",
+  "main_contract": "HHChefClaimBriberModule",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe2565158e9984fd736002f58e2777260f2dd0f4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

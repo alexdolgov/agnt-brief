@@ -1,0 +1,18 @@
+{
+  "component": "EthPriceFeed",
+  "main_contract": "EthPriceFeed",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf70cee7c7e638f9364c4076a01226337ec51fca5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

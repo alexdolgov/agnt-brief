@@ -1,0 +1,18 @@
+{
+  "component": "VesperAdapter",
+  "main_contract": "VesperAdapter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x639c9e4563a0ca81a1fee7d6b48128daf2cf9531",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

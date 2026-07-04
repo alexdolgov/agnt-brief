@@ -1,0 +1,18 @@
+{
+  "component": "InterestRateModel",
+  "main_contract": "InterestRateModel",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e9e7ea94e1ff36e216a703d6d66ece356a5fd44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

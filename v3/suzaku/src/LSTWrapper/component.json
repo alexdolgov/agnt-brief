@@ -1,0 +1,34 @@
+{
+  "component": "LSTWrapper",
+  "main_contract": "LSTWrapper",
+  "source_file_count": 46,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x017d60fbf9e82ebf77860500e052287280eef453",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x119c46aea0ce94603719c2dd4077a5716b16b68c",
+      "is_proxy": true,
+      "implementation_address": "0xa1c16af728c7e897ddbdc15ea34b34c222438c7e",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa1c16af728c7e897ddbdc15ea34b34c222438c7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

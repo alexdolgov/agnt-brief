@@ -1,0 +1,18 @@
+{
+  "component": "SendLock",
+  "main_contract": "SendLock",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x3791db67681ec64482b6c76fd9b5357523c18186",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

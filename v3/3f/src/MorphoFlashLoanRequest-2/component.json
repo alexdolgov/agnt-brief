@@ -1,0 +1,20 @@
+{
+  "component": "MorphoFlashLoanRequest-2",
+  "main_contract": "MorphoFlashLoanRequest",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3FLabs/grunt/blob/main/audits/ChainSecurity_3F_GruntFunds_Audit_2026-04.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf2729c9273acb2cb4503ab3d0d8e584e7f915007",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SovereignNFT",
+  "main_contract": "SovereignNFT",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x025b0a638768b49901565c39a0c141bdb52cc06f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

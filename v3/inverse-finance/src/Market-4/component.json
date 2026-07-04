@@ -1,0 +1,21 @@
+{
+  "component": "Market-4",
+  "main_contract": "Market",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2022-10-inverse",
+    "https://www.inverse.finance/audits/firm-nomoi.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c0bb843fabda441edefb93331cfff8ec92bd168",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

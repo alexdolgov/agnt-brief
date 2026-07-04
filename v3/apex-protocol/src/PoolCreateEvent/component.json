@@ -1,0 +1,18 @@
+{
+  "component": "PoolCreateEvent",
+  "main_contract": "PoolCreateEvent",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b2ec59e7fdc51581d57c85d258cda1415422214",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

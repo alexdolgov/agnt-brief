@@ -1,0 +1,18 @@
+{
+  "component": "PayloadIGP70",
+  "main_contract": "PayloadIGP70",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xada8b72304b5cac6394dc781a0fd198c80233508",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

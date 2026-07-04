@@ -1,0 +1,18 @@
+{
+  "component": "SupplyCalculator",
+  "main_contract": "SupplyCalculator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a14c1d681d77a302772134ef4fb039422ccf805",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

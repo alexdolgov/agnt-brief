@@ -1,0 +1,18 @@
+{
+  "component": "OlympusPricev1_2",
+  "main_contract": "OlympusPricev1_2",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x465ccc69d285415bce199f855d3a68ea3537f8fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MACOStrategyManager",
+  "main_contract": "MACOStrategyManager",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e2a181f5c21475b35d7e1954f30d0e7b196bc36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

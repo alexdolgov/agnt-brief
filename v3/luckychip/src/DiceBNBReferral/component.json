@@ -1,0 +1,26 @@
+{
+  "component": "DiceBNBReferral",
+  "main_contract": "DiceBNBReferral",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1688c318c8bd4e35dc9ec2dfdfc0951d3e0bb87b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc7e0e273b5aa7b5ae9466a299a5986010875e898",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

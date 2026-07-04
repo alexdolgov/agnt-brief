@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraLimitFarming",
+  "main_contract": "AlgebraLimitFarming",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa01e2785d2d04cc0a09bde9c3ea49bf0ad7811f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

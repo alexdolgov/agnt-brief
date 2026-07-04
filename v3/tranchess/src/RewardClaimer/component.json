@@ -1,0 +1,18 @@
+{
+  "component": "RewardClaimer",
+  "main_contract": "RewardClaimer",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f08c4f98265712c162975cb8da1cf3f5bf8fac1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

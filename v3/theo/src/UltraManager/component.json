@@ -1,0 +1,18 @@
+{
+  "component": "UltraManager",
+  "main_contract": "UltraManager",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x060d8503a9a552a4600abbc5e741b8bed06d0e9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

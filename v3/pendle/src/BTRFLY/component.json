@@ -1,0 +1,18 @@
+{
+  "component": "BTRFLY",
+  "main_contract": "BTRFLY",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0d4ceb216b3ba9c3701b291766fdcba977cec3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

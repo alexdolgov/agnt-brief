@@ -1,0 +1,18 @@
+{
+  "component": "sPRL1",
+  "main_contract": "sPRL1",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x01fa35fde0e813e2d6687660a74a313d8d922e48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

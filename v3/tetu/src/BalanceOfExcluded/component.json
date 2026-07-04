@@ -1,0 +1,18 @@
+{
+  "component": "BalanceOfExcluded",
+  "main_contract": "BalanceOfExcluded",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5c5fc773883289778092e864afe015979a10eb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

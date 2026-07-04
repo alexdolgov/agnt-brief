@@ -1,0 +1,26 @@
+{
+  "component": "VulcanV2Router02",
+  "main_contract": "VulcanV2Router02",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x52bfe8fe06c8197a8e3dcce57ce012e13a7315eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x57f8797e94a264482f6d7fd51912e4b97eda7818",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

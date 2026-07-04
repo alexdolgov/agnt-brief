@@ -1,0 +1,18 @@
+{
+  "component": "Migrator",
+  "main_contract": "Migrator",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfec741688146382489c4266e08bcbf4733fb6d84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

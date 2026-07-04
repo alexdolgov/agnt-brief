@@ -1,0 +1,18 @@
+{
+  "component": "SimpleUserProxy",
+  "main_contract": "SimpleUserProxy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3808e0ee2d944e4119410dcdaf0864a96bffdc0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

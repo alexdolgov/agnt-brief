@@ -1,0 +1,18 @@
+{
+  "component": "TokenManager",
+  "main_contract": "TokenManager",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xabf992e5b5455f6fa0e4474710be6daa27166049",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

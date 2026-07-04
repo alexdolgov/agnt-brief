@@ -1,0 +1,18 @@
+{
+  "component": "Thena",
+  "main_contract": "Thena",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x08132180afc971ddfdecd2d6034794e7f20d486d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

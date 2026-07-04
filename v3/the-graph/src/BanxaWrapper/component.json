@@ -1,0 +1,18 @@
+{
+  "component": "BanxaWrapper",
+  "main_contract": "BanxaWrapper",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc9e1aa57223add21cc88a03088af552f1ea8a34a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

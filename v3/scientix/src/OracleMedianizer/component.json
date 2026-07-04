@@ -1,0 +1,18 @@
+{
+  "component": "OracleMedianizer",
+  "main_contract": "OracleMedianizer",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3297961610d8a64f41cb4f577448bf3a57738303",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

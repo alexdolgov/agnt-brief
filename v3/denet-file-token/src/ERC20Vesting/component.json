@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Vesting",
+  "main_contract": "ERC20Vesting",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa71c51c1a1f438e13c72e953907dfd57758baba8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ExtraRewardPool",
+  "main_contract": "ExtraRewardPool",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4223aa5bfd783dedcc54585cdc1cfe9ea1587c0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x665d4bea98e3a1849526553453e8369b448c6ad4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

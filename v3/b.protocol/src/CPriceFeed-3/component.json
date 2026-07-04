@@ -1,0 +1,18 @@
+{
+  "component": "CPriceFeed-3",
+  "main_contract": "CPriceFeed",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7d30d048f8693af30a10aa5d6d281a7a7e6e1245",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

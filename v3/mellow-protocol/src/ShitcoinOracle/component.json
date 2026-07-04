@@ -1,0 +1,18 @@
+{
+  "component": "ShitcoinOracle",
+  "main_contract": "ShitcoinOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x41d0d82c3499912fc2428ee27f861dec7efbefb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

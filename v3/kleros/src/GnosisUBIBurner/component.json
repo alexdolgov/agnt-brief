@@ -1,0 +1,26 @@
+{
+  "component": "GnosisUBIBurner",
+  "main_contract": "GnosisUBIBurner",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x2700ed443fadd750894a5b406c456d78e9c86bed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x43e9062f3d4b87c49b96ada5de230b1ce69485c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

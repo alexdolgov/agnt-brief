@@ -1,0 +1,50 @@
+{
+  "component": "UnilaunchTokenLaunchFactory",
+  "main_contract": "UnilaunchTokenLaunchFactory",
+  "source_file_count": 208,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2462fc6277784438305485ea7bbb6c982cef51fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x777b3141a0b692ba17b59fa4a9da7fa210b489e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xa055a57836bf1504d9f563aa3e96c68c41f6a764",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xa98080b56c99432bfda42641d89dd7111c3c291c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xf8a42459292553c1d97c273be31a2fdc4fe34a56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

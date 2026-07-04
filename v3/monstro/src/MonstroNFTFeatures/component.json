@@ -1,0 +1,18 @@
+{
+  "component": "MonstroNFTFeatures",
+  "main_contract": "MonstroNFTFeatures",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

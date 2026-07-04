@@ -1,0 +1,18 @@
+{
+  "component": "PlutusPrivateTGE",
+  "main_contract": "PlutusPrivateTGE",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x35cd01aaa22ccae7839dfabe8c6db2f8e5a7b2e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

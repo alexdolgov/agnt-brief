@@ -1,0 +1,18 @@
+{
+  "component": "NAVManager",
+  "main_contract": "NAVManager",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x493b6c8ccc7bfd43c5a20c4f2c648701f74e9130",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

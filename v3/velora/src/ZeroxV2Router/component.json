@@ -1,0 +1,18 @@
+{
+  "component": "ZeroxV2Router",
+  "main_contract": "ZeroxV2Router",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc71781b5a7c7f1c8853dde052c9f575fe0bd04b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

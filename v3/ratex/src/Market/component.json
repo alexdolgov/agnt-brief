@@ -1,0 +1,18 @@
+{
+  "component": "Market",
+  "main_contract": "Market",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x64e30b9e176b4551b5d9f17d72716152540cbd98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

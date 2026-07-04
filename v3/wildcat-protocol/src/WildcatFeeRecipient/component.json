@@ -1,0 +1,18 @@
+{
+  "component": "WildcatFeeRecipient",
+  "main_contract": "WildcatFeeRecipient",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35a5d1bd68f3139971027b92c1ee9384a0708554",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

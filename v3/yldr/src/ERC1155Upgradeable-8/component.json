@@ -1,0 +1,18 @@
+{
+  "component": "ERC1155Upgradeable-8",
+  "main_contract": "ERC1155Upgradeable",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x28219423fda748495e10dfa05f089233a5491e16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

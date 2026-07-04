@@ -1,0 +1,20 @@
+{
+  "component": "UnipilotPassiveVault",
+  "main_contract": "UnipilotPassiveVault",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Unipilot/unipilot-audits/blob/master/UnipilotV2/Unipilot-V2-Final-Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

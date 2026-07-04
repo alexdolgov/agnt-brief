@@ -1,0 +1,18 @@
+{
+  "component": "Billing",
+  "main_contract": "Billing",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1b07d3344188908fb6deceac381f3ee63c48477a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

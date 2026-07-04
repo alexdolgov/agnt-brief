@@ -1,0 +1,42 @@
+{
+  "component": "OptimismBridgeReceiver",
+  "main_contract": "OptimismBridgeReceiver",
+  "source_file_count": 9,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x18281dfc4d00905da1aaa6731414eaba843c468a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb21b06d71c75973babde35b49ffdac3f82ad3775",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd10b40ff1d92e2267d099da3509253d9da4d715e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf4127474cef367a5fee8eba01725f17acee964f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

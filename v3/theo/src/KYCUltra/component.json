@@ -1,0 +1,18 @@
+{
+  "component": "KYCUltra",
+  "main_contract": "KYCUltra",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x17b7bf7cf11f879a97f2790baaad698a50fa11f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

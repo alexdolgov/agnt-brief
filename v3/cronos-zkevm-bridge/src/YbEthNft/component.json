@@ -1,0 +1,18 @@
+{
+  "component": "YbEthNft",
+  "main_contract": "YbEthNft",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43df9d854d3fcb882847b9a638cabd06fe86d2c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "component": "JumpRateModelV4",
+  "main_contract": "JumpRateModelV4",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/malda-protocol/malda-lending/blob/main/audit/VAR_Malda_250120_malda_lending_V5.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x23b9cb6f49100c54fa2a13ba0f85832b38780cb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x62c31a75334e566aa049ab24a2ff13ac3a5c02d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x85a58adc34401e0792037d0e512f7e9b0b93ea19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

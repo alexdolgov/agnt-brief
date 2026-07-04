@@ -1,0 +1,18 @@
+{
+  "component": "DemaxGovernance",
+  "main_contract": "DemaxGovernance",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d9b9c51f286164f96c2b756762a228d8267258d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

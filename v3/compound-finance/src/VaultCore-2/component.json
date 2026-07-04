@@ -1,0 +1,18 @@
+{
+  "component": "VaultCore-2",
+  "main_contract": "VaultCore",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69d9a767e071cfba316ba06a914a08f1314b7a92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

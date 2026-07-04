@@ -1,0 +1,18 @@
+{
+  "component": "PortfolioTokenRegistrar",
+  "main_contract": "PortfolioTokenRegistrar",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x38b0126f5a00ea026e606b06bd61f05b28b98835",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

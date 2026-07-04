@@ -1,0 +1,18 @@
+{
+  "component": "Bank",
+  "main_contract": "Bank",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9cd5615359a3e033d1f2663131599bb68e4a084f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

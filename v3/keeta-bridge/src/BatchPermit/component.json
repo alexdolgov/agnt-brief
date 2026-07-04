@@ -1,0 +1,18 @@
+{
+  "component": "BatchPermit",
+  "main_contract": "BatchPermit",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9d4e74fa61715fa077dcced4acc8096958e1a1ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

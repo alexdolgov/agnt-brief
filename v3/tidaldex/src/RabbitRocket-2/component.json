@@ -1,0 +1,18 @@
+{
+  "component": "RabbitRocket-2",
+  "main_contract": "RabbitRocket",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d3ab3581b81fd96b57e31daf292150062489585",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

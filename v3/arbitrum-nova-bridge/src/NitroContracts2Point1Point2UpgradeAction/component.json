@@ -1,0 +1,18 @@
+{
+  "component": "NitroContracts2Point1Point2UpgradeAction",
+  "main_contract": "NitroContracts2Point1Point2UpgradeAction",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78ee30c74b3ce1aeb38163db3e7d769d9735542f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

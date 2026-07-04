@@ -1,0 +1,18 @@
+{
+  "component": "SwapKyberSwapHook",
+  "main_contract": "SwapKyberSwapHook",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x828d8a9c015cef90b373a071500ae463ed204df9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

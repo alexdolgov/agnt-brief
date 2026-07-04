@@ -1,0 +1,18 @@
+{
+  "component": "VRFV2PlusWrapper",
+  "main_contract": "VRFV2PlusWrapper",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02aae1a04f9828517b3007f83f6181900cad910c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

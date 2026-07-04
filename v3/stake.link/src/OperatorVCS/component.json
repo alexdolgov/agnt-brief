@@ -1,0 +1,60 @@
+{
+  "component": "OperatorVCS",
+  "main_contract": "OperatorVCS",
+  "source_file_count": 37,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-28%5D%20Cyfrin%20-%20CL%20Rewards%20Claiming.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25fb2b9030f8c0002d018bb02b7d86b844baaf57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4852e48215a4785ee99b640caced5378cc39d2a4",
+      "is_proxy": true,
+      "implementation_address": "0x25fb2b9030f8c0002d018bb02b7d86b844baaf57",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x584338dabae9e5429c334fc1ad41c46ac007bc29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6059cec7604f72eee7cb836a9f42661b603fe286",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fe5d564dc0f2b2298f5e28305065f9780e049e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb8256cfceeacfb4835a3ebf47ebea2902e30567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

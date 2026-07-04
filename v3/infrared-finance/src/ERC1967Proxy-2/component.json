@@ -1,0 +1,52 @@
+{
+  "component": "ERC1967Proxy-2",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 8,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Smart%20Contract%20Security%20Assessment.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x1d6844b42784d3adbd7fdfa5887d56d22aa9fb67",
+      "is_proxy": true,
+      "implementation_address": "0xa38e688fb07dec5d43b405a90d6d98cbf603f491",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x7332051c4eed9cd40b28ba0a1c5d042666897da8",
+      "is_proxy": true,
+      "implementation_address": "0x8b498d065312ec5c54698ab80e98084cec95c388",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x8b498d065312ec5c54698ab80e98084cec95c388",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xa38e688fb07dec5d43b405a90d6d98cbf603f491",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xb5e9cfd2751363f38a696626c18db4aff7512756",
+      "is_proxy": true,
+      "implementation_address": "0x4b5274376f4e7ed198bc9af848120fcad0a71dbc",
+      "liveness": "live"
+    }
+  ]
+}

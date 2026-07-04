@@ -1,0 +1,18 @@
+{
+  "component": "VaultHunnyMaximizer",
+  "main_contract": "VaultHunnyMaximizer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x29db90c10632d3de563d39012f2599b0c8936a6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

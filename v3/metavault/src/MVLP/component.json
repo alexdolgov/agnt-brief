@@ -1,0 +1,18 @@
+{
+  "component": "MVLP",
+  "main_contract": "MVLP",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9f4f8bc00f48663b7c204c96b932c29ccc43a2e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

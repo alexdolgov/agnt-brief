@@ -1,0 +1,18 @@
+{
+  "component": "WrappedRewardToken",
+  "main_contract": "WrappedRewardToken",
+  "source_file_count": 77,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x334404782ab67b4f6b2a619873e579e971f9aab7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BeaNFT-2",
+  "main_contract": "BeaNFT",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa755a670aaf1fecef2bea56115e65e03f7722a79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "PlayerV2",
+  "main_contract": "PlayerV2",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1b30c1260828aeba87d7da1fd929f6e6bc25b7e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7f17c01f8099c0816650d6d5c43ebd403ef1ac64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

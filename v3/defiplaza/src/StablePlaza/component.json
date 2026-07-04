@@ -1,0 +1,28 @@
+{
+  "component": "StablePlaza",
+  "main_contract": "StablePlaza",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pessimistic-io/audits/blob/main/StablePlaza%20Security%20Analysis%20by%20Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a2b8cc91af8bf45f3ec61e779ee1c2ba6b7e694",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x874b5d6476f214e37f042cfc555c07fe99c6d83e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

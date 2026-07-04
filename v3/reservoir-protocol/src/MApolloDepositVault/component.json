@@ -1,0 +1,18 @@
+{
+  "component": "MApolloDepositVault",
+  "main_contract": "MApolloDepositVault",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d371cc63fb8efd48aff59c5a0c064863ae4999c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

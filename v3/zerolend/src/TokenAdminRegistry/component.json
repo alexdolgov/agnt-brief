@@ -1,0 +1,18 @@
+{
+  "component": "TokenAdminRegistry",
+  "main_contract": "TokenAdminRegistry",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6f6c373d09c07425baae72317863d7f6bb731e37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

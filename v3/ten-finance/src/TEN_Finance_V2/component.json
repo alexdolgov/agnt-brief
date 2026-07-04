@@ -1,0 +1,18 @@
+{
+  "component": "TEN_Finance_V2",
+  "main_contract": "TEN_Finance_V2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3b1e8d853733a744baede9b6755065e05cef4404",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

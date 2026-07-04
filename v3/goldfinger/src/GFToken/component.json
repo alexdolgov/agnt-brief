@@ -1,0 +1,44 @@
+{
+  "component": "GFToken",
+  "main_contract": "GFToken",
+  "source_file_count": 4,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://app.solidproof.io/projects/goldfinger?audit=812d8642-0312-4d0c-a5de-f7d13e850273"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6db461da03b8ad06319ff2af985e1c8dfcc004e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbad7118c5b445d44dee72e186d594d315ac7792b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdb399e1d142d82dfcb8a583a4f904dc733551dcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdb3fb41167dd5318af04da5aae43e56d6ddd77a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

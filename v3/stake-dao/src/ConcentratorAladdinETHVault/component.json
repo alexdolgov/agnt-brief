@@ -1,0 +1,18 @@
+{
+  "component": "ConcentratorAladdinETHVault",
+  "main_contract": "ConcentratorAladdinETHVault",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06dfaf0e53ce24d43eac332bbdc07b690894df74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

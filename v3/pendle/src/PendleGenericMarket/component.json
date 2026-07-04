@@ -1,0 +1,18 @@
+{
+  "component": "PendleGenericMarket",
+  "main_contract": "PendleGenericMarket",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x11b9346eefa301e278f246d857c0a6edfbf97fb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

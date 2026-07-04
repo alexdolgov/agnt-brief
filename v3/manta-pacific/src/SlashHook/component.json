@@ -1,0 +1,18 @@
+{
+  "component": "SlashHook",
+  "main_contract": "SlashHook",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd81521639245ee892bee8b24be614267d5ff354",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

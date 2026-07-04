@@ -1,0 +1,26 @@
+{
+  "component": "OneInchV6Guard",
+  "main_contract": "OneInchV6Guard",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2b425d4fa3a85e7555fdf7e103bc734cab369b3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x539c3a5119adf04462b49321309cd797b793e96b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

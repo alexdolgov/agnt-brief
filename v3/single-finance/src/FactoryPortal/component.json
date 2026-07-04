@@ -1,0 +1,18 @@
+{
+  "component": "FactoryPortal",
+  "main_contract": "FactoryPortal",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x58c1bbb508e96cfec1787acf6afe1c7008a5b064",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

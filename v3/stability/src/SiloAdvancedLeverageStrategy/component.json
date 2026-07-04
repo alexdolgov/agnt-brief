@@ -1,0 +1,18 @@
+{
+  "component": "SiloAdvancedLeverageStrategy",
+  "main_contract": "SiloAdvancedLeverageStrategy",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x254af2fb93af3f65143cd079874486d51f3d1a3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

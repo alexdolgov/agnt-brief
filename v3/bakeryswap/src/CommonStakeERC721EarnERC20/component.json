@@ -1,0 +1,26 @@
+{
+  "component": "CommonStakeERC721EarnERC20",
+  "main_contract": "CommonStakeERC721EarnERC20",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb14b6c30ce2044e8e762170d985b510e983cc455",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf7f10bead8f9ab2299413002f1650099d4135635",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

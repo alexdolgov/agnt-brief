@@ -1,0 +1,18 @@
+{
+  "component": "Ignite",
+  "main_contract": "Ignite",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5e257aad875b7a38d5904088e71260bc3ef63497",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

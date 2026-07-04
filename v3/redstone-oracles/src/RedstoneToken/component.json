@@ -1,0 +1,18 @@
+{
+  "component": "RedstoneToken",
+  "main_contract": "RedstoneToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc43c6bfeda065fe2c4c11765bf838789bd0bb5de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

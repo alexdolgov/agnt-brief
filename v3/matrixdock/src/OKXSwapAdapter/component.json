@@ -1,0 +1,18 @@
+{
+  "component": "OKXSwapAdapter",
+  "main_contract": "OKXSwapAdapter",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

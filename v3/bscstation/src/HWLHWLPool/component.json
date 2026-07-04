@@ -1,0 +1,18 @@
+{
+  "component": "HWLHWLPool",
+  "main_contract": "HWLHWLPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd5c60d1c2c63750c5dd748392906426439593f16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

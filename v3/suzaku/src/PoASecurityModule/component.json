@@ -1,0 +1,18 @@
+{
+  "component": "PoASecurityModule",
+  "main_contract": "PoASecurityModule",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x01daeb143b95372fc7bfc37187160739be56fafd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

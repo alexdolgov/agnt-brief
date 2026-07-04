@@ -1,0 +1,18 @@
+{
+  "component": "GranaryV2",
+  "main_contract": "GranaryV2",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6466dc1eae0ae827950fcedd2066a583a6c3af35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

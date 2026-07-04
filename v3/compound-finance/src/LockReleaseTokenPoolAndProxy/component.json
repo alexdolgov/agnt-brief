@@ -1,0 +1,18 @@
+{
+  "component": "LockReleaseTokenPoolAndProxy",
+  "main_contract": "LockReleaseTokenPoolAndProxy",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x387e40ed22ee3396288c874411b00c48f6978653",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

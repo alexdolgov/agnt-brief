@@ -1,0 +1,58 @@
+{
+  "component": "BeaconProxy",
+  "main_contract": "BeaconProxy",
+  "source_file_count": 14,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F1NAt99nKJ1HesxyWjElF%2FZellic%20Nov%2025.pdf",
+    "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F342r2xPX6yppDzAfPLVz%2FPashov%20Jan%2026.pdf",
+    "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F7b08UITTgMLh1ej19d7I%2FOstium-security-review_2025-04-06.pdf",
+    "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2FG0Of6YAPlrOIPs51aj16%2FOstium-security-review_2025-01-21.pdf",
+    "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2FMpYIMzIusmebDMScUlYB%2FOstiumAudit.pdf",
+    "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2FaMgw1k5iR4SvbYWRcs7q%2FOstium%20-%20Zellic%20Audit%20Report%20(1).pdf",
+    "https://docs.ostium.com/protocol/security/audits.md"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3890243a8fc091c626ed26c087a028b46bc9d66c",
+      "is_proxy": true,
+      "implementation_address": "0xedd5247d9074618756254d7629458ccbd7b18d88",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411",
+      "is_proxy": true,
+      "implementation_address": "0x8cbb5bd2b46f993078407cea26704af0a901515a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb71ec9ebd8145dacacf6724363143cb5667a3d36",
+      "is_proxy": true,
+      "implementation_address": "0xc7e40c730bd81227e5d6b2708c6a9b311023c61f",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "is_proxy": true,
+      "implementation_address": "0xd40c55475d4fea67415cd12abc28c949fc7a7fee",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c",
+      "is_proxy": true,
+      "implementation_address": "0x2ce8cd263ddc784f554196840bb70ab3a2fff969",
+      "liveness": "live"
+    }
+  ]
+}

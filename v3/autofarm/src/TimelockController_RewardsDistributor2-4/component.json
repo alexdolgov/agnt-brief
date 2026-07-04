@@ -1,0 +1,18 @@
+{
+  "component": "TimelockController_RewardsDistributor2-4",
+  "main_contract": "TimelockController_RewardsDistributor2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0xaea5f423361e799950e09d38c4dabac2db77e800",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

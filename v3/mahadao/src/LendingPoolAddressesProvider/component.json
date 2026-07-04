@@ -1,0 +1,18 @@
+{
+  "component": "LendingPoolAddressesProvider",
+  "main_contract": "LendingPoolAddressesProvider",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1127824b64f3a4c8ed6387ecb691771ae97c76af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

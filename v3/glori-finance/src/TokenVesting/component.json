@@ -1,0 +1,18 @@
+{
+  "component": "TokenVesting",
+  "main_contract": "TokenVesting",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79edeb4dcea834b9f45561f2aea63b69ad00aa23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

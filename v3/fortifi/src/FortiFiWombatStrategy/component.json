@@ -1,0 +1,42 @@
+{
+  "component": "FortiFiWombatStrategy",
+  "main_contract": "FortiFiWombatStrategy",
+  "source_file_count": 21,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x666d883b9d5bb40f4d100d3c9919abfe29608f30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7e7bd77fdd701a0b46eea1371e97a0cdc676f6f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb2fce38760476fdc7f9ad86f2196f489b3f6f487",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xca33e819b1a3e519b02830ced658fd0543599410",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

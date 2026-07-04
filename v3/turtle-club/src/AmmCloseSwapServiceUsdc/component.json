@@ -1,0 +1,34 @@
+{
+  "component": "AmmCloseSwapServiceUsdc",
+  "main_contract": "AmmCloseSwapServiceUsdc",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x128cedfe2134d15ec69cc885d22ad0e5f0aa747f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x623750823f8cf4fa1b804723be024d56e1673d95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a9f60349e2da59250433276b3ef474f1f69f8e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

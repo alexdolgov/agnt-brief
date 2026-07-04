@@ -1,0 +1,18 @@
+{
+  "component": "BoardroomV2",
+  "main_contract": "BoardroomV2",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xecf0dde35f6d895c065e7526348af1e79433e42a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

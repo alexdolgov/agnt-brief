@@ -1,0 +1,18 @@
+{
+  "component": "IdleAdapter",
+  "main_contract": "IdleAdapter",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5d2135fa26a6202f2d39fdba61bcf53bb04b8434",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

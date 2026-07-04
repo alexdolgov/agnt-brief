@@ -1,0 +1,36 @@
+{
+  "component": "PancakeSwapRewardAdapter",
+  "main_contract": "PancakeSwapRewardAdapter",
+  "source_file_count": 9,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://www.snuggle.fi/security"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4cd1a0b610117a688998325e3779e858ff62a065",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6af9c538137c73d6a078788c59232424788d19a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb668e7701bc5580368cce375da83a09e1f69f7c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

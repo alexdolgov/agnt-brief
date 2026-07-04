@@ -1,0 +1,26 @@
+{
+  "component": "SingleMarket-3",
+  "main_contract": "SingleMarket",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4648d23395bfa19dc681ac7506e99e2f0dabe3c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe2bbe8c23c6515456abf7d688180f821e03c5a46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

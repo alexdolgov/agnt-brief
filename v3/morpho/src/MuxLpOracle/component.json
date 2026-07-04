@@ -1,0 +1,18 @@
+{
+  "component": "MuxLpOracle",
+  "main_contract": "MuxLpOracle",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x03d05a176ce43ec164f7eb6d65a6685284e06235",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

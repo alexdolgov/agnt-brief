@@ -1,0 +1,18 @@
+{
+  "component": "BounceAuctionToken",
+  "main_contract": "BounceAuctionToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa9b1eb5908cfc3cdf91f9b8b3a74108598009096",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakedEXA",
+  "main_contract": "StakedEXA",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x33c69e5c0a7a2bad42d178ec11b881acdbe682a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

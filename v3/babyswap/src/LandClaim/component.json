@@ -1,0 +1,18 @@
+{
+  "component": "LandClaim",
+  "main_contract": "LandClaim",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6142143e5d5956c3076a0be2f6b44bfa4f2cc759",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

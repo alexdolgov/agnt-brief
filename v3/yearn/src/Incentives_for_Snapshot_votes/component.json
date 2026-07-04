@@ -1,0 +1,18 @@
+{
+  "component": "Incentives_for_Snapshot_votes",
+  "main_contract": "Incentives for Snapshot votes",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae9de8a3e62e8e2f1e3800d142d23527680a5179",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

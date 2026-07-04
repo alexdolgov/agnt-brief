@@ -1,0 +1,18 @@
+{
+  "component": "Curve_LP_Module",
+  "main_contract": "Curve LP Module",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce62d9eb4409af3800e24719e08a736aab7d2022",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

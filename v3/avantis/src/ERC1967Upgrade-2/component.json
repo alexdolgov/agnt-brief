@@ -1,0 +1,56 @@
+{
+  "component": "ERC1967Upgrade-2",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 17,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://586275454-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F76vAZHPcNKY10NzuKsC4%2Fuploads%2FQugrQyVYa7gCMa8FUQdy%2FAvantis_-_Zellic_Audit_Report.pdf",
+    "https://586275454-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F76vAZHPcNKY10NzuKsC4%2Fuploads%2Fap10BwpWhzNMappneMgr%2FAvantis%20audit%20report.pdf",
+    "https://github.com/Avantis-Labs/audits/blob/master/Avantis_-_Zellic_Audit_Report_1.pdf",
+    "https://github.com/Avantis-Labs/audits/blob/master/Avantis_-_Zellic_Audit_Report_2.pdf",
+    "https://github.com/Avantis-Labs/audits/blob/master/Avantis_-_Zokyo_Audit_Report_1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6914110efe4e61cfa0f28de5f6606baa33d21693",
+      "is_proxy": true,
+      "implementation_address": "0xa0ab93f6284d2dc4b1903cfef111e4c9da5a9b46",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x81f22d0cc22977c91befe648c9fddf1f2bd977e5",
+      "is_proxy": true,
+      "implementation_address": "0xe13747d4fbb552002ad405beb416cabc110dd674",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x83084cb182162473d6feffcd3aa48ba55a7b66f7",
+      "is_proxy": true,
+      "implementation_address": "0x5d023a1a4fad735ad78a3f9012701b1223637c8f",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdbdd7b8a8747904f53eb7aef655a6ff81e2c306a",
+      "is_proxy": true,
+      "implementation_address": "0x9d484628d76603796a492117f90788721bc5b7f8",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe9fb8c70af1b99f2baaa07aa926fcf3d237348dd",
+      "is_proxy": true,
+      "implementation_address": "0xf34e3a38280a7e600cb4aa6d8c2a160d8e16127f",
+      "liveness": "live"
+    }
+  ]
+}

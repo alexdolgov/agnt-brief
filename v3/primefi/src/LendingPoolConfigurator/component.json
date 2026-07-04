@@ -1,0 +1,26 @@
+{
+  "component": "LendingPoolConfigurator",
+  "main_contract": "LendingPoolConfigurator",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x163a1e3cd4726f3c92eb005a942308029c27f64b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xfebc15460a5af7bd5c0f2d6746aab00c9531747d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

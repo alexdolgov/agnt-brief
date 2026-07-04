@@ -1,0 +1,26 @@
+{
+  "component": "OpenLeverageOFT",
+  "main_contract": "OpenLeverageOFT",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b6e9c73bee68102d9dd4a2627f97bff4183ab0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae0f4839d8eb59741eeb0afecb68c76371c4f8be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

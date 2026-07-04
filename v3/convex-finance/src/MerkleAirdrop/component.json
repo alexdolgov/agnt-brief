@@ -1,0 +1,18 @@
+{
+  "component": "MerkleAirdrop",
+  "main_contract": "MerkleAirdrop",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e088a0a19dda628b4304301d1ea70b114e4accd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

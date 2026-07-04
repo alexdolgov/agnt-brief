@@ -1,0 +1,18 @@
+{
+  "component": "SimpleCall",
+  "main_contract": "SimpleCall",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0b538f6aed436643c0b885924ae7a5fea6f5ad4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

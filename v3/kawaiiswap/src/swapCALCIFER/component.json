@@ -1,0 +1,26 @@
+{
+  "component": "swapCALCIFER",
+  "main_contract": "swapCALCIFER",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x39c373b1ff7570da3572ce0f09ee1f025fc921c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c53617d8ffc32801b235768043430667dcb1aa3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "PullRewardsTransferStrategy",
+  "main_contract": "PullRewardsTransferStrategy",
+  "source_file_count": 6,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x15a8d3c0a0ac8af7dbf16fe826314228ee5aa85f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x58acc2600835211dcb5847c5fa422791fd492409",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa002d1dfd3d68dc29e0b060ae0422e047e9f7e08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xdba93cb44cdf2b8310a2ac28db70aa3347f46e39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

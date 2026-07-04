@@ -1,0 +1,18 @@
+{
+  "component": "AaveV3CollateralFuse",
+  "main_contract": "AaveV3CollateralFuse",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc06f56b865f45d4a80707e7d1403767177c44b22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

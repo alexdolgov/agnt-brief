@@ -1,0 +1,22 @@
+{
+  "component": "DutchAuction",
+  "main_contract": "DutchAuction",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://d3cny4im7ppv5.cloudfront.net/Abyss.pdf",
+    "https://valvessecurity.com/",
+    "https://www.snuggle.fi/security"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6c13a305f58eea8696b7c9ab39e598da1f3d6632",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

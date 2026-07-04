@@ -1,0 +1,26 @@
+{
+  "component": "BoostDelegateV2",
+  "main_contract": "BoostDelegateV2",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b470bd54096ab5bafbeb8505053de31c0fe2367",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7939619bb2d6bcaf0aede6bc187d929a1354fc34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

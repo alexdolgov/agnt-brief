@@ -1,0 +1,22 @@
+{
+  "component": "OpalManager",
+  "main_contract": "OpalManager",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/opal/jacopod_opal.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/opal/nethermind_opal.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/opal/panprog-opal.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7daf45b580c456c5b4d7366ebd6aab4f0876aa15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

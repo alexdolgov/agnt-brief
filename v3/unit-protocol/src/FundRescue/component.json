@@ -1,0 +1,18 @@
+{
+  "component": "FundRescue",
+  "main_contract": "FundRescue",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ddbce49f3adf2ea0c2d4cd3a403cef2f6202667",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AMTRewardPool",
+  "main_contract": "AMTRewardPool",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xad29951cda3dcd0e570e65a6ee34aa455c53421c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

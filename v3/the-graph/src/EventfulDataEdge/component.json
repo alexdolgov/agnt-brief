@@ -1,0 +1,18 @@
+{
+  "component": "EventfulDataEdge",
+  "main_contract": "EventfulDataEdge",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xed16cebd4fa74a0016e1149cc03563db4b223aec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

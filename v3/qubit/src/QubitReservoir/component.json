@@ -1,0 +1,58 @@
+{
+  "component": "QubitReservoir",
+  "main_contract": "QubitReservoir",
+  "source_file_count": 12,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d976af025cad10a1304f2c0ed7e807c6bde6dc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x44f0b4fb2c608d4cb627a4b5e7656a0007788f9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d58a7ecc1812e097601eabcc58a33dfe966e17e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa7bc9a205a46017f47949f5ee453cebfcf42121b",
+      "is_proxy": true,
+      "implementation_address": "0xb39aef2fea24aae0921fa9afa951c978344aee29",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb39aef2fea24aae0921fa9afa951c978344aee29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe596c04cdcd8ecd3699392d922ef23eaf68065a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

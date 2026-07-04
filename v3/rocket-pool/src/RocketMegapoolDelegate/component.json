@@ -1,0 +1,18 @@
+{
+  "component": "RocketMegapoolDelegate",
+  "main_contract": "RocketMegapoolDelegate",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f160f97b274c6152a3d5fa729a4547816a8aaa4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

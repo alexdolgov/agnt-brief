@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626TokenOracle",
+  "main_contract": "ERC4626TokenOracle",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28817036451a4de34ac3df935a6762a2a1c60c97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

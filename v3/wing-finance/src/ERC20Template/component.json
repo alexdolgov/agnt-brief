@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Template",
+  "main_contract": "ERC20Template",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb0f18081b505a7de20b18ac41856bcb4ba86a1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

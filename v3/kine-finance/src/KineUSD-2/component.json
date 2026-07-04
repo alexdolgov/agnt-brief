@@ -1,0 +1,18 @@
+{
+  "component": "KineUSD-2",
+  "main_contract": "KineUSD",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x03324bbc860fbbfd452f6ac0b0b1d76deafc99a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CryptopunksData",
+  "main_contract": "CryptopunksData",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

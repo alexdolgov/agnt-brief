@@ -1,0 +1,18 @@
+{
+  "component": "AngleVoterV5",
+  "main_contract": "AngleVoterV5",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e0f27b9d5f2bc742bf547968d2f07decbcf1a23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

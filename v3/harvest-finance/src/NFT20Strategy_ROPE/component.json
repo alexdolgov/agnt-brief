@@ -1,0 +1,42 @@
+{
+  "component": "NFT20Strategy_ROPE",
+  "main_contract": "NFT20Strategy_ROPE",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4230ff3aed735f4715b56347d3427d6361df31d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4de6cd6c558e7b5b4af26e0e3ae3056318f31b86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ce0c1e2985677743a789dc4b64e9230f8862395",
+      "is_proxy": true,
+      "implementation_address": "0x4de6cd6c558e7b5b4af26e0e3ae3056318f31b86",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9044d3a001ec3557d0ca55eb789db3a93532c23a",
+      "is_proxy": true,
+      "implementation_address": "0x4230ff3aed735f4715b56347d3427d6361df31d7",
+      "liveness": "live"
+    }
+  ]
+}

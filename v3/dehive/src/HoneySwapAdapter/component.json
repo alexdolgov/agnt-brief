@@ -1,0 +1,34 @@
+{
+  "component": "HoneySwapAdapter",
+  "main_contract": "HoneySwapAdapter",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x2fa4aa2eb9512d9170df9614ee2a9c49322e28f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x874ac7b286b1a75cd86defc48efdeb4ea599c82a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd88be9b86f537796f530d084fdd30c0773d32905",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

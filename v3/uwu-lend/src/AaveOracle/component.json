@@ -1,0 +1,18 @@
+{
+  "component": "AaveOracle",
+  "main_contract": "AaveOracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac4a2ac76d639e10f2c05a41274c1af85b772598",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

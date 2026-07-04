@@ -1,0 +1,18 @@
+{
+  "component": "SelfPermit",
+  "main_contract": "SelfPermit",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfb51e64f880f2b8913941915d40e15c02fdd21f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ProtocolTokenAuthority",
+  "main_contract": "ProtocolTokenAuthority",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b44db6b4aa6ba12aeefbd2db9416b52b5111a50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb8479840a5576b1cafbb3fa7276e04df122fdc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

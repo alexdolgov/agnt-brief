@@ -1,0 +1,18 @@
+{
+  "component": "Pipeline",
+  "main_contract": "Pipeline",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8b3b94b035fee148e9d5955f025fcc2f2c57d3c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

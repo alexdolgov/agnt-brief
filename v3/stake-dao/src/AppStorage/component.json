@@ -1,0 +1,18 @@
+{
+  "component": "AppStorage",
+  "main_contract": "AppStorage",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82e631fe565e06ea51a00fabcd79645272f654eb",
+      "is_proxy": true,
+      "implementation_address": "0xc55a3957476cc1e7fef40856802edd150c3a3dcd",
+      "liveness": "live"
+    }
+  ]
+}

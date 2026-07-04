@@ -1,0 +1,18 @@
+{
+  "component": "FiatTokenProxy",
+  "main_contract": "FiatTokenProxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xb88339cb7199b77e23db6e890353e22632ba630f",
+      "is_proxy": true,
+      "implementation_address": "0x003f73f58ca78880da3642c5cb71d7459b3fe4f8",
+      "liveness": "live"
+    }
+  ]
+}

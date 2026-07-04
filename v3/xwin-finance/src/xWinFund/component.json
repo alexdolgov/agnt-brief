@@ -1,0 +1,26 @@
+{
+  "component": "xWinFund",
+  "main_contract": "xWinFund",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x548c42fe3d1a44496491d09db2457d671f3c7488",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x96303976fc1df9aaa2707861c7e44b365e4b9dc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

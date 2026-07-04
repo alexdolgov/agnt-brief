@@ -1,0 +1,18 @@
+{
+  "component": "Whitelist",
+  "main_contract": "Whitelist",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9ab6a9a8638a2c5c835f168fb8fa8adbf0ba0d2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ExecutorsGuard",
+  "main_contract": "ExecutorsGuard",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfdffc9616d7939523ed07abe8d76e8afa0e85189",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

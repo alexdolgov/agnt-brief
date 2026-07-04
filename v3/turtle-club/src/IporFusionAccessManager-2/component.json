@@ -1,0 +1,18 @@
+{
+  "component": "IporFusionAccessManager-2",
+  "main_contract": "IporFusionAccessManager",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3df9d7be4017e3d72ea39b96ed4c7070c19eabae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

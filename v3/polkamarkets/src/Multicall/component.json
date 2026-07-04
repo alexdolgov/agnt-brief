@@ -1,0 +1,18 @@
+{
+  "component": "Multicall",
+  "main_contract": "Multicall",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x83e3b61886770de2f64aacad2724ed4f08f7f36b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "component": "KailuaGame",
+  "main_contract": "KailuaGame",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.gobob.xyz/assets/files/BobStaking-security-review_2025-03-04-b913a0a31774ad8b252f6548abe624b5.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-Onramp-security-review.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-Staking-security-review_2025-10-18.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-USDCBridge-security-review.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-security-review-August.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-security-review-June.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-security-review-September.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/BOB-security-review_2025-03-17.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x296e7ad6d441b0627768bc0650179a4206479444",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

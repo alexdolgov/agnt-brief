@@ -1,0 +1,18 @@
+{
+  "component": "RewardRouterV4",
+  "main_contract": "RewardRouterV4",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6456039168d3fe3bc5fcd9e46f3b716c1abd4ff4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

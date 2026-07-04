@@ -1,0 +1,18 @@
+{
+  "component": "Fee_Distributor",
+  "main_contract": "Fee Distributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x851aaea3a2757d457e1ce88c3808c1690213e432",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

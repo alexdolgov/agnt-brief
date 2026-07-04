@@ -1,0 +1,18 @@
+{
+  "component": "Incubator",
+  "main_contract": "Incubator",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ffddd6f21d57f3949ba7a5e654b475d1d184217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UsdnProtocolActionsLongLibrary",
+  "main_contract": "UsdnProtocolActionsLongLibrary",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffc37455f53cbc0360ef3f3cccb6a967e1ae2a45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

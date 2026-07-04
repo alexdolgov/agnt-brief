@@ -1,0 +1,26 @@
+{
+  "component": "VenusAdapter",
+  "main_contract": "VenusAdapter",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x579b13263c02712f79b0c061f0acd4b3a8f6a76f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9bcc36697c2747a006b8f84bc1387eef14cc8c2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

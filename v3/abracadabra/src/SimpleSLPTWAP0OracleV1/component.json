@@ -1,0 +1,18 @@
+{
+  "component": "SimpleSLPTWAP0OracleV1",
+  "main_contract": "SimpleSLPTWAP0OracleV1",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66f03b0d30838a3fee971928627ea6f59b236065",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

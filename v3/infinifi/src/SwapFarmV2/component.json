@@ -1,0 +1,18 @@
+{
+  "component": "SwapFarmV2",
+  "main_contract": "SwapFarmV2",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb32a309405c72253d5db9ef28310a8ff56b6fd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

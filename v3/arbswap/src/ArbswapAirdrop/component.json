@@ -1,0 +1,18 @@
+{
+  "component": "ArbswapAirdrop",
+  "main_contract": "ArbswapAirdrop",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3ceefa452a8d7522786abd2f644367464f13d3c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

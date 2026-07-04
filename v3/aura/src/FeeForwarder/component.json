@@ -1,0 +1,18 @@
+{
+  "component": "FeeForwarder",
+  "main_contract": "FeeForwarder",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe14360aa496a85fcfe4b75afd2ec4d95cba38fe1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

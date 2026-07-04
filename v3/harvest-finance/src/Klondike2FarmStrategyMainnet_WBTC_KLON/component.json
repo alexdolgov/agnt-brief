@@ -1,0 +1,26 @@
+{
+  "component": "Klondike2FarmStrategyMainnet_WBTC_KLON",
+  "main_contract": "Klondike2FarmStrategyMainnet_WBTC_KLON",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a0b8b5c603cac03b3b6b7a9679f5e2c1e98f248",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7e7d5561a1c2d8cf57330746f09a9e415927ab6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

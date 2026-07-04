@@ -1,0 +1,18 @@
+{
+  "component": "MixedPriceOracle",
+  "main_contract": "MixedPriceOracle",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xccbea2d7e074744ab46e28a043f85038bccffec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

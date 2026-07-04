@@ -1,0 +1,148 @@
+# morpheusai — deployments
+
+109 verified deployment(s) across 60 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x031075f7a853e8d4bf0b525466a78374afaa9308` | BuildersTreasuryV2 | impl | inactive | no |
+| arbitrum | `0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86` | MOROFT | impl | live | yes |
+| arbitrum | `0x136538a0d320a29e29fe661fb893714a0ecea76a` | DelegateFactory | impl | live | yes |
+| arbitrum | `0x232c15275affa0ee944f6894d57e013647416aa1` | BuildersTreasury | impl | inactive | no |
+| arbitrum | `0x24c09a0c047e8a439f26682ea51c7157b3ccc20b` | L2TokenReceiver | impl | live | yes |
+| arbitrum | `0x27353ffadfd53538e8bdf81be7041c56ce2d5ae4` | L2TokenReceiverV2 | impl | live | yes |
+| arbitrum | `0x281bc6f84952abe53f6921dcd76c879d3c4b6375` | ERC1967Proxy-7 | proxy | live | yes |
+| arbitrum | `0x2e1ff173085a5ef12046c27e442f12f79a0092b7` | L2TokenReceiverV2 | proxy | live | yes |
+| arbitrum | `0x2e96cef46d2a82e63570b538ef4ab697a09a3996` | ModelRegistry | impl | inactive | no |
+| arbitrum | `0x2efd4430489e1a05a89c2f51811ac661b7e5ff84` | L2MessageReceiver-2 | impl | live | yes |
+| arbitrum | `0x37b94bd80b6012fb214bb6790b31a5c40d6eb7a5` | DelegateFactory | proxy | live | yes |
+| arbitrum | `0x383ebffd2e6a956242392581d73f60dfb4d4f18e` | L2TokenReceiver | impl | live | yes |
+| arbitrum | `0x3c3a26c978bf6af40d7c1a36e9cbd3c1c055786e` | MOROFT | impl | live | yes |
+| arbitrum | `0x47176b2af9885dc6c4575d4efd63895f7aaa4790` | L2TokenReceiverV2 | proxy | live | yes |
+| arbitrum | `0x52d00439eadfc53d0005dcaf1914baf9015f82fe` | WETHMock | impl | inactive | no |
+| arbitrum | `0x6ad6efba31cb05df2aa96aab03d2237746830193` | ERC1967Proxy-7 | impl | live | yes |
+| arbitrum | `0x6cce082851add4c535352f596662521b4de4750e` | BuildersV4-2 | impl | inactive | no |
+| arbitrum | `0x7431ada8a591c955a994a21710752ef9b882b8e3` | MOR | impl | live | yes |
+| arbitrum | `0x7ec51d81a30aa8449cb0b72d4c1b27062956d699` | L2MessageReceiverV2 | impl | inactive | no |
+| arbitrum | `0x8621e6b808a3d925533446b767b7bca6accb62a2` | ProviderRegistry | impl | inactive | yes |
+| arbitrum | `0x890bfa255e6ee8db5c67ab32dc600b14ebc4546c` | ERC1967Proxy-8 | proxy | live | yes |
+| arbitrum | `0x969c0f87623dc33010b4069fea48316ba2e45382` | Builders-2 | impl | live | no |
+| arbitrum | `0x9eba628581896ce086cb8f1a513ea6097a8fc561` | L2TokenReceiverV2 | impl | live | yes |
+| arbitrum | `0xa03ea65026def258272ec4d063db49b853d7f116` | ERC1967Proxy-8 | impl | live | yes |
+| arbitrum | `0xa8603114c7bce3a622f2d36286b29c6f51c14fe6` | BuildersV2 | impl | live | yes |
+| arbitrum | `0xab493d93bd9c93c7590865df82f4e09f3df96d4c` | SessionRouter-2 | impl | live | yes |
+| arbitrum | `0xaddd7bbedd9dd2e72649217ea784069821f44ab9` | ProvidersDelegate | impl | live | yes |
+| arbitrum | `0xc371404682a2e02c3b46814261bee615e57f48a8` | Marketplace | impl | inactive | no |
+| arbitrum | `0xcbe3d2c3ade62cf7aa396e8ca93d2a8bff96e257` | BuildersTreasuryV2 | proxy | inactive | no |
+| arbitrum | `0xccc06767533563fbdcff2e1800e4a266fbd01532` | BuildersV3 | impl | live | no |
+| arbitrum | `0xde819aaee474626e3f34ef0263373357e5a6c71b` | ProviderRegistry | proxy | live | yes |
+| arbitrum | `0xe9d4b4eb60d16c90280ef93a823f373518462d83` | DelegationStorage | impl | inactive | no |
+| arbitrum | `0xfe8882edd2b7bad22d1968327fa19e17608a1331` | OFTCore-2 | impl | inactive | no |
+| base | `0x031075f7a853e8d4bf0b525466a78374afaa9308` | ProvidersDelegate | impl | live | yes |
+| base | `0x174852b955544986215f45d9ce161d5b35401578` | SessionRouter | impl | live | yes |
+| base | `0x18faef315b40a6d9cf49628f1133b1aa507513b0` | BuildersV4 | impl | inactive | no |
+| base | `0x19eef40a364f754ee77cdfba0995a3fbf1e6495d` | L2MessageReceiver | impl | live | yes |
+| base | `0x1b48365e33802943b5d98954efabd366f04ff924` | ERC1967Proxy-3 | proxy | live | yes |
+| base | `0x2388bef44cd71f18e984b8dbe88e1db717f298ab` | BuildersV3 | impl | live | no |
+| base | `0x2e1ff173085a5ef12046c27e442f12f79a0092b7` | FeeConfig | impl | live | yes |
+| base | `0x2efd4430489e1a05a89c2f51811ac661b7e5ff84` | OFTCore | impl | inactive | no |
+| base | `0x345b8b23c38f70f1d77560c60493bb583f012cb0` | DelegationStorage | impl | inactive | no |
+| base | `0x3ec0d950abb82e0eb9b86f5cf244b34912a871d6` | SessionRouter | impl | live | yes |
+| base | `0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9` | ERC1967Proxy-3 | proxy | live | yes |
+| base | `0x47176b2af9885dc6c4575d4efd63895f7aaa4790` | L2MessageReceiver | impl | live | yes |
+| base | `0x5b660ab78f3ac743953f9e68630a2d66e7b45f64` | Marketplace | impl | inactive | no |
+| base | `0x6abe1d282f72b474e54527d93b979a4f64d3030a` | Diamond | impl | live | no |
+| base | `0x6db545f73e32a0ba6f100803a2f0dce044101dbc` | BuildersV2 | impl | live | yes |
+| base | `0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79` | Builders | impl | live | no |
+| base | `0x845fbb4b3e2207bf03087b8b94d2430ab11088ee` | FeeConfig | proxy | live | yes |
+| base | `0x98c204b36b779617913f7e0d932e06f4a0d36843` | DelegationStorage | impl | live | no |
+| base | `0x9eba628581896ce086cb8f1a513ea6097a8fc561` | ProvidersDelegate | proxy | inactive | yes |
+| base | `0xb69dbf7c9ab4597d3b3bc284cc8771d580299bad` | L2MessageReceiver | proxy | live | yes |
+| base | `0xdc99a8596e395e52aba2bd08c623e1e428dc3980` | ERC1967Proxy-3 | proxy | live | yes |
+| base | `0xe71eb0b69bbd4207e2cb10df929d1311d2ad57e5` | ProvidersDelegate | impl | inactive | yes |
+| ethereum | `0x0e2bb6facf982ecb26bd448a758811a5cf37ee9a` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0x14a623403b26fdf24503685894425ac0a068478c` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0x18faef315b40a6d9cf49628f1133b1aa507513b0` | ERC1967Proxy-2 | proxy | live | yes |
+| ethereum | `0x2265ae4127a49218c1c562cb16822971f295ed50` | ERC1967Proxy-2 | proxy | live | yes |
+| ethereum | `0x2388bef44cd71f18e984b8dbe88e1db717f298ab` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0x24c09a0c047e8a439f26682ea51c7157b3ccc20b` | Distribution | impl | live | yes |
+| ethereum | `0x2bc54ca13a75b24630070e73173cc2f35d66515a` | L1SenderV2 | impl | live | yes |
+| ethereum | `0x2e1ff173085a5ef12046c27e442f12f79a0092b7` | Distribution | proxy | live | yes |
+| ethereum | `0x2efd4430489e1a05a89c2f51811ac661b7e5ff84` | L1SenderV2 | proxy | live | yes |
+| ethereum | `0x31bf07f9c4316d461db35b2435f1bec21c783294` | DistributionV2 | impl | live | yes |
+| ethereum | `0x33e689846b1f143793c9d270a26016615a1cae83` | ERC1967Proxy-9 | proxy | live | yes |
+| ethereum | `0x345b8b23c38f70f1d77560c60493bb583f012cb0` | LockMultiplierMath | impl | live | no |
+| ethereum | `0x37b94bd80b6012fb214bb6790b31a5c40d6eb7a5` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0x383ebffd2e6a956242392581d73f60dfb4d4f18e` | DistributionToBase | impl | live | no |
+| ethereum | `0x3a16730c7d512cdb5c00447af468b36f4bf33303` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0x3b51989212bedab926794d6bf8e9e991218cf116` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9` | WStETHMock | impl | live | yes |
+| ethereum | `0x47176b2af9885dc6c4575d4efd63895f7aaa4790` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x50e80ea310269c547b64cc8b8a606be0ec467d1f` | L1SenderV2 | impl | live | yes |
+| ethereum | `0x52f76e8be3dfabcc3b0ded02882a22be47dade03` | DistributorV2 | impl | inactive | no |
+| ethereum | `0x5b660ab78f3ac743953f9e68630a2d66e7b45f64` | Distributor | impl | live | yes |
+| ethereum | `0x62496604116c5172435adbd928edbf36ca7cdfbd` | ERC165 | impl | live | yes |
+| ethereum | `0x68b9d05add55769b1e4808a74b616fa37f6da294` | DistributionV4 | impl | live | yes |
+| ethereum | `0x6948b5f0bc85caf60859da2222a5483a84d44f97` | DistributionExt | impl | inactive | no |
+| ethereum | `0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe` | L1Sender | impl | live | yes |
+| ethereum | `0x6cce082851add4c535352f596662521b4de4750e` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x6cfe1ddfd88890e08276c7fa9d6dca1ca4a224a9` | DistributionExt | proxy | inactive | no |
+| ethereum | `0x6db545f73e32a0ba6f100803a2f0dce044101dbc` | DistributionToBaseV5 | impl | live | no |
+| ethereum | `0x6fd2674e13a42e588f83ae74e5f22a4ee24ed75a` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0x7431ada8a591c955a994a21710752ef9b882b8e3` | LinearDistributionIntervalDecrease-2 | impl | live | yes |
+| ethereum | `0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79` | StETHMock | impl | live | yes |
+| ethereum | `0x845fbb4b3e2207bf03087b8b94d2430ab11088ee` | L1Sender | proxy | live | yes |
+| ethereum | `0x890bfa255e6ee8db5c67ab32dc600b14ebc4546c` | ERC1967Proxy-5 | proxy | inactive | no |
+| ethereum | `0x9380d72abbd6e0cc45095a2ef8c2ca87d77cb384` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x969c0f87623dc33010b4069fea48316ba2e45382` | ERC1967Proxy-6 | proxy | inactive | no |
+| ethereum | `0x98c204b36b779617913f7e0d932e06f4a0d36843` | ERC165 | impl | live | yes |
+| ethereum | `0x9a397c638bd9611539e7992b32e206102e6d2965` | ReferrerLib | impl | live | yes |
+| ethereum | `0x9cbceaeb45e566a95a4a755b1a526874163d41c7` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0xa03ea65026def258272ec4d063db49b853d7f116` | ERC1967Proxy-5 | impl | inactive | no |
+| ethereum | `0xa775b4781f2bad0829dd69c146b41f5798dfb78a` | ERC1967Proxy-4 | impl | inactive | no |
+| ethereum | `0xaddd7bbedd9dd2e72649217ea784069821f44ab9` | DistributionV3 | impl | live | yes |
+| ethereum | `0xc1292bed7df044c03d8f2cc6cb13d0bd6c96720a` | DistributionV5 | impl | live | yes |
+| ethereum | `0xc1588b245a3502a86fdbf0a0f51abac3bbd2e90c` | L1ArbSender | impl | inactive | no |
+| ethereum | `0xc281724c309118110d5d4073ff3cb732144eaf57` | DistributionToArb | impl | live | no |
+| ethereum | `0xc6eaf7b4c7cddec02f25e260f8541d453a72584d` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0xccc06767533563fbdcff2e1800e4a266fbd01532` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xd182263d06fdc463c96190005d6359cc3d3bbc5e` | ERC1967Proxy-2 | proxy | live | yes |
+| ethereum | `0xdb10daef167ea2233ba6811457dd24d676fbd670` | ERC1967Proxy | impl | live | yes |
+| ethereum | `0xde283f8309fd1aa46c95d299f6b8310716277a42` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xdf1ac1ac255d91f5f4b1e3b4aef57c5350f64c7a` | DistributorV2 | proxy | inactive | no |
+| ethereum | `0xefb3af6505b343a206a39666884c25a07e36b6d0` | DistributionToArbV5 | impl | live | no |
+| ethereum | `0xf6c6b6c659132ae691b6b2b3498bac66bf64954c` | ERC1967Proxy-6 | impl | inactive | no |
+| ethereum | `0xfb1a7d49ceb0ee8c929d67eb9762366506a4825c` | LinearDistributionIntervalDecrease | impl | live | yes |
+| ethereum | `0xfe8882edd2b7bad22d1968327fa19e17608a1331` | L1BaseSender | impl | inactive | no |
+
+## Source unavailable (29)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x39e6264cfba1f1c83a0bef6f3f6fa055e34d792a`
+- arbitrum `0x845fbb4b3e2207bf03087b8b94d2430ab11088ee`
+- arbitrum `0x8739402c1ee1868dfe92fda76f74ecfaaf51ff0e`
+- arbitrum `0x9380d72abbd6e0cc45095a2ef8c2ca87d77cb384`
+- arbitrum `0x9cbceaeb45e566a95a4a755b1a526874163d41c7`
+- arbitrum `0xc03d87085e254695754a74d2cf76579e167eb895`
+- arbitrum `0xc0ed68f163d44b6e9985f0041fdf6f67c6bcff3f`
+- arbitrum `0xd4a8eccbe696295e68572a98b1aa70aa9277d427`
+- arbitrum `0xde283f8309fd1aa46c95d299f6b8310716277a42`
+- base `0x2265ae4127a49218c1c562cb16822971f295ed50`
+- base `0x281bc6f84952abe53f6921dcd76c879d3c4b6375`
+- base `0x3b51989212bedab926794d6bf8e9e991218cf116`
+- base `0x4de9d52a6a951c2dc7b22805eeec2bc41404909d`
+- base `0x6ad6efba31cb05df2aa96aab03d2237746830193`
+- base `0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe`
+- base `0x7431ada8a591c955a994a21710752ef9b882b8e3`
+- base `0x8aac72b616420a7a9d76b11b56d841d2f5b66aac`
+- base `0x98e3cfbdb9707df6107cb1a7bd03036052eaa20e`
+- base `0xb7994de339aee515c9b2792831cd83f3c9d8df87`
+- base `0xd4a8eccbe696295e68572a98b1aa70aa9277d427`
+- base `0xdf1ac1ac255d91f5f4b1e3b4aef57c5350f64c7a`
+- base `0xe1641453e8e437493a2127bc62d51d3dfbaf5a91`
+- base `0xe30279b79392aeff7fdf1883c23d52eba9d88a75`
+- base `0xe50009c299fd3952564debd773b6e07f450d76af`
+- base `0xe5e06c8a6c9938873b20efc1af3a0254cc57c5ca`
+- ethereum `0x55daa99a07f5deabdcd94d0c5a592661b82613eb`
+- ethereum `0xb7994de339aee515c9b2792831cd83f3c9d8df87`
+- ethereum `0xcbb8f1bda10b9696c57e13bc128fe674769dcec0`
+- ethereum `0xe30279b79392aeff7fdf1883c23d52eba9d88a75`

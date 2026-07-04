@@ -1,0 +1,18 @@
+{
+  "component": "SnowballNFTBirthday",
+  "main_contract": "SnowballNFTBirthday",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3555cab4b6628beea81d20cb8a832a16b69671f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

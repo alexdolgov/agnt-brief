@@ -1,0 +1,18 @@
+{
+  "component": "aspTKNMinimalOracleFactory-2",
+  "main_contract": "aspTKNMinimalOracleFactory",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x46f0815f0d46bb54d7f1f97358d745eedb9f33d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

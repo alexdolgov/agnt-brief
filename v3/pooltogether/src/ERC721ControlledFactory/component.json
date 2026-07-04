@@ -1,0 +1,18 @@
+{
+  "component": "ERC721ControlledFactory",
+  "main_contract": "ERC721ControlledFactory",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e869b3a0978fa61dabd7da8f9b272aadc745fb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

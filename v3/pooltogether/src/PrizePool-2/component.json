@@ -1,0 +1,18 @@
+{
+  "component": "PrizePool-2",
+  "main_contract": "PrizePool",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf4c47dacfda99be38793181af9fd1a2ec7576bbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

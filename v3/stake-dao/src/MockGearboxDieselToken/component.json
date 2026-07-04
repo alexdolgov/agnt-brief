@@ -1,0 +1,18 @@
+{
+  "component": "MockGearboxDieselToken",
+  "main_contract": "MockGearboxDieselToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb521dd5c8e13fe202626cac98873fea2b7760ce4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "MarketAddLiquidityFacet",
+  "main_contract": "MarketAddLiquidityFacet",
+  "source_file_count": 55,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5440311151eec6b30cf4de4cacdd6d41b7e098ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x632111083f0e8538aac52e66416e111a5a84e5d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

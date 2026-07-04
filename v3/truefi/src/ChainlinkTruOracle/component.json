@@ -1,0 +1,18 @@
+{
+  "component": "ChainlinkTruOracle",
+  "main_contract": "ChainlinkTruOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0d931d49f4ecf41cff5e082aca4feb4c511415a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

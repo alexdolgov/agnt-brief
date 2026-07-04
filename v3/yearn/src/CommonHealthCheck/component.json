@@ -1,0 +1,18 @@
+{
+  "component": "CommonHealthCheck",
+  "main_contract": "CommonHealthCheck",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32059cce723b4dd15dd5cb2a5187f814e6c470bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

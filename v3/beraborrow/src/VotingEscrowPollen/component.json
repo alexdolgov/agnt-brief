@@ -1,0 +1,18 @@
+{
+  "component": "VotingEscrowPollen",
+  "main_contract": "VotingEscrowPollen",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0d08496ea7c3a532e4b434f4f659fe3e9d27426b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

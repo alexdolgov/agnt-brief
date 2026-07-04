@@ -1,0 +1,18 @@
+{
+  "component": "PlsDpxRewardsDistroV2",
+  "main_contract": "PlsDpxRewardsDistroV2",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x65ec1225305a379811710e7cae9f62cd76e31e69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

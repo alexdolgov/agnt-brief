@@ -1,0 +1,18 @@
+{
+  "component": "YieldDirector",
+  "main_contract": "YieldDirector",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2604170762a1dd22bb4f96c963043cd4fc358f18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

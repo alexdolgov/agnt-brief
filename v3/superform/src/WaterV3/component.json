@@ -1,0 +1,18 @@
+{
+  "component": "WaterV3",
+  "main_contract": "WaterV3",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4996372aeedd7ef2e42a7170ce7e1603783727eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

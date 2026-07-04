@@ -1,0 +1,18 @@
+{
+  "component": "PongStrategy",
+  "main_contract": "PongStrategy",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe74e9f3b9f862b7707531abf425621f53050a7ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

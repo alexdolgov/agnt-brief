@@ -1,0 +1,42 @@
+{
+  "component": "RapidityLibV4",
+  "main_contract": "RapidityLibV4",
+  "source_file_count": 12,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1289f70b8a16797cccbfcca8a845f36324ac9f8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x50133f6836cb91237e17177e2985cbdad51f0cf2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb30778550a959c207601d77ff13fe38a5abb2546",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbe201985b711d44bbe0e77770a58c922135aa17d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

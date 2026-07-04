@@ -1,0 +1,26 @@
+{
+  "component": "TransparentUpgradeableProxy-6",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1628ce6477221fdd1cd88ea3d15d587dfc59e66a",
+      "is_proxy": true,
+      "implementation_address": "0x9c84a387930853d963892d299153b0d5840dc1f5",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8d21dfea9231db85dce72b8d9f18e917d833d4b1",
+      "is_proxy": true,
+      "implementation_address": "0x1d720642e63cb0f50be637e16e0f78b2d1b93f16",
+      "liveness": "live"
+    }
+  ]
+}

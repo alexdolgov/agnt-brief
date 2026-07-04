@@ -1,0 +1,18 @@
+{
+  "component": "TokenApprovalIncentives",
+  "main_contract": "TokenApprovalIncentives",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbb0e916fd77dc41c97ae74a53b1c0dba6b0668cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SthUSD",
+  "main_contract": "SthUSD",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x342487f9fe31d199dda8c89a1c34cc647c5a7dc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

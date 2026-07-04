@@ -1,0 +1,42 @@
+{
+  "component": "AelinDeal",
+  "main_contract": "AelinDeal",
+  "source_file_count": 10,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x02b9e99a05458d763256b977e61c1d947a5a0d04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3c8bef5f8df313ea6cb874d5035d3eeb963d8dad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x722969a3fdc778a5cc7cbc8dc8ae3e96a288f853",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbca527108bcc3de437c5bfdb1a5489de26deeae0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

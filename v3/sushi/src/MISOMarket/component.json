@@ -1,0 +1,18 @@
+{
+  "component": "MISOMarket",
+  "main_contract": "MISOMarket",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x281bd3a3f96ae7c96049493a7ba9449df2c5b0fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RewardsChecker",
+  "main_contract": "RewardsChecker",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf7518065729c5a7e5a5b3ce11939f7fdd50b58f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

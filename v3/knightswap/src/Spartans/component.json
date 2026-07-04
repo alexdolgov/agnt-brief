@@ -1,0 +1,26 @@
+{
+  "component": "Spartans",
+  "main_contract": "Spartans",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x56876361f53c78ab3ca3b7f33d88a8bf2ce7900b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8f3063be7c99f430d11fc0ef065638f35a28a9fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

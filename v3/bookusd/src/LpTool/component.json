@@ -1,0 +1,18 @@
+{
+  "component": "LpTool",
+  "main_contract": "LpTool",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x466eaa98d1e6fa238309a5795ce51038614c353d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

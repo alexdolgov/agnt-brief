@@ -1,0 +1,18 @@
+{
+  "component": "AddressesGenerator_VAULT_V2",
+  "main_contract": "AddressesGenerator_VAULT_V2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x437758d475f70249e03eda6be23684ad1fc375f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

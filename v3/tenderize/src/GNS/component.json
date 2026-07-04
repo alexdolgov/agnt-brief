@@ -1,0 +1,18 @@
+{
+  "component": "GNS",
+  "main_contract": "GNS",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28037b93702335e55fe6319e1c144b8a4d05daeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AuthorizerAdaptor",
+  "main_contract": "AuthorizerAdaptor",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd05d8542827e4f534ab408c0ed21782d9fd412de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

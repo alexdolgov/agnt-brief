@@ -1,0 +1,18 @@
+{
+  "component": "NewWorldOrder",
+  "main_contract": "NewWorldOrder",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00c2999c8b2adf4abc835cc63209533973718eb1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

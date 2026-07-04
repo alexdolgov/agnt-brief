@@ -1,0 +1,18 @@
+{
+  "component": "LinkswapPair",
+  "main_contract": "LinkswapPair",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21dee38170f1e1f26baff2c30c0fc8f8362b6961",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

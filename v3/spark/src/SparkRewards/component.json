@@ -1,0 +1,18 @@
+{
+  "component": "SparkRewards",
+  "main_contract": "SparkRewards",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ac96180c4d6b2a328d3a19ac059d0e7fc3c6d41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

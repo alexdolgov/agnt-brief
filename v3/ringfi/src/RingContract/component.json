@@ -1,0 +1,20 @@
+{
+  "component": "RingContract",
+  "main_contract": "RingContract",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/coinscope-co/audits/blob/main/ring/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x021988d2c89b1a9ff56641b2f247942358ff05c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

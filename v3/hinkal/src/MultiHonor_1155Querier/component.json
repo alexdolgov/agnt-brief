@@ -1,0 +1,18 @@
+{
+  "component": "MultiHonor_1155Querier",
+  "main_contract": "MultiHonor_1155Querier",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x113ce4b850d94e37077da2e1dc708a317458a713",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

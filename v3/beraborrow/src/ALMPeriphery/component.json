@@ -1,0 +1,18 @@
+{
+  "component": "ALMPeriphery",
+  "main_contract": "ALMPeriphery",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x1c1dbcde0a4f9c556f81ca5a9b108cf4f52568a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MintBurnTokenFactory",
+  "main_contract": "MintBurnTokenFactory",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x872521b46095139e70a38ae3e8d95611649aaf51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "component": "FutureValueVault",
+  "main_contract": "FutureValueVault",
+  "source_file_count": 27,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Secured-Finance/contracts/blob/develop/audits/2023-11-Quantstamp.pdf",
+    "https://github.com/Secured-Finance/contracts/blob/develop/audits/2024-03-Quantstamp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01fa284e47403a47ec6c836b41db33a849a437fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x077ea473f9d2bfc68bc49f5bfbf1483420a63879",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x68eb5ca78beb3e74d32ecb392854c5b213da97ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc860e52f999dd8539ef554118a35ebdf6b344816",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe05e26875e0912dfab3418027dd7d0b0edc0a1f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

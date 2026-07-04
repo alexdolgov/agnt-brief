@@ -1,0 +1,18 @@
+{
+  "component": "XERC20Lockbox",
+  "main_contract": "XERC20Lockbox",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c858892decbf31460603f4bfc4620c328047f37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

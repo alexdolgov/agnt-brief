@@ -1,0 +1,26 @@
+{
+  "component": "ValasToken",
+  "main_contract": "ValasToken",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x55fc0e8b7e38a0aed921e2cff5f93b42409e4b54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe9d750fab898e29ccd9dc2a3ac5e54bbd0421e13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "PortfolioMarketplace",
+  "main_contract": "PortfolioMarketplace",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a4ffbb55123837544f3bb13f0da2e9189b95826",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb71d66583a420cbc77641759c1a6e6f3fb68ceb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

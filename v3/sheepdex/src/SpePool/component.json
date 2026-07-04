@@ -1,0 +1,18 @@
+{
+  "component": "SpePool",
+  "main_contract": "SpePool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x41d534cc6c03a05b539e0fefca5b31846b8f4201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

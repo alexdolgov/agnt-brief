@@ -1,0 +1,18 @@
+{
+  "component": "MigratableTransmuter",
+  "main_contract": "MigratableTransmuter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99b399b4c79b8c51c4bc8c0df4f49a77cfdec340",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

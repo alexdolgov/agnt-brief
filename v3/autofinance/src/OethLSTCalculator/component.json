@@ -1,0 +1,26 @@
+{
+  "component": "OethLSTCalculator",
+  "main_contract": "OethLSTCalculator",
+  "source_file_count": 68,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21fededbe1cc5aa22a17f171513c105300143826",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90a7e92ca4cf3da787be39ccd84071a50f2cbd59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

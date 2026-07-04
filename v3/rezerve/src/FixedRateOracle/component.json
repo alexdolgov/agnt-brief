@@ -1,0 +1,26 @@
+{
+  "component": "FixedRateOracle",
+  "main_contract": "FixedRateOracle",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2cd4bdb9f9381e1c72c9bbeaa874552025ec5e37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7cefd682139d9c2f6b645eab75f509378e3a83b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

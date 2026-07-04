@@ -1,0 +1,18 @@
+{
+  "component": "DestinationVault-3",
+  "main_contract": "DestinationVault",
+  "source_file_count": 76,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc09271e3020110f7bb420c34eaddb7b6cd9fb6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

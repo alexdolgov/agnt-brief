@@ -1,0 +1,20 @@
+{
+  "component": "AFiPassiveRebalanceStrategies",
+  "main_contract": "AFiPassiveRebalanceStrategies",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/aarna-protocol"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x226b02e6ca55bb634cbb1412a644f4d97036bc49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

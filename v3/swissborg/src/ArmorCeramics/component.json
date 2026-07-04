@@ -1,0 +1,18 @@
+{
+  "component": "ArmorCeramics",
+  "main_contract": "ArmorCeramics",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19da36dcf89327b2cc3d477b97dba499576f8e60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ActionMisc",
+  "main_contract": "ActionMisc",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc49c4fec5306c73cd21661f9b2fe4b14f94065c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

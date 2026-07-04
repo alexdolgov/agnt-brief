@@ -1,0 +1,18 @@
+{
+  "component": "MetaMarketplace",
+  "main_contract": "MetaMarketplace",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5afed82daedc7fb94ff3bc3fc81d46dd2f65d5e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MgvPriceOracle",
+  "main_contract": "MgvPriceOracle",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x10f9e248e1515847ab120ce2daf2e7e7bdbc6e2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

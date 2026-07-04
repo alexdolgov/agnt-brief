@@ -1,0 +1,39 @@
+{
+  "component": "AppStorage",
+  "main_contract": "AppStorage",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/Ackee%20Blockchain%20Lido%20Simple%20Delegation%20audit%20report%2007-24.pdf",
+    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Aragon%20Voting%20Security%20Audit%20Report%2010-2021.pdf",
+    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20Two-Phase%20Voting%20Security%20Audit%20Report%2006-2022.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Statemind%20Lido%20Simple%20Delegation%20audit%20report%2007-24.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0cb113890b04b49455dfe06554e2d784598a29c9",
+      "is_proxy": true,
+      "implementation_address": "0x83a67f510ccbeb4430753950942f3c7b51ff4656",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e59a20f205bb85a89c53f1936454680651e618e",
+      "is_proxy": true,
+      "implementation_address": "0xf165148978fa3ce74d76043f833463c340cfb704",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9895f0f17cc1d1891b6f18ee0b483b6f221b37bb",
+      "is_proxy": true,
+      "implementation_address": "0x9f3b9198911054b122fdb865f8a5ac516201c339",
+      "liveness": "live"
+    }
+  ]
+}

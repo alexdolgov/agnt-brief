@@ -1,0 +1,288 @@
+# b.protocol — deployments
+
+257 verified deployment(s) across 124 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x0ab366dbbb03c84f581963a4cc0756eb66176bde` | CPriceFeed | impl | inactive | no |
+| arbitrum | `0x0d3377912135a4083c10e60af7ff72763ac9e076` | wstETHArb | impl | inactive | no |
+| arbitrum | `0x102887d6bfc58b0abe721aad1ce5a036ace542c8` | BKeeper | impl | inactive | no |
+| arbitrum | `0x190b8c66e8e1694ae9ff16170122feb2d287820f` | OracleAdapter | impl | inactive | no |
+| arbitrum | `0x214937a1777e28f188df0ecf3c53189894ef4c1c` | BAdmin | impl | inactive | no |
+| arbitrum | `0x2227a0bd08a73e44ea1c992d6b7734a8f026c70c` | FuseBAMM | impl | live | no |
+| arbitrum | `0x28cd4a0afa564f036b32e8ec6062fd01cf82b1a3` | BAdmin | impl | inactive | no |
+| arbitrum | `0x2980baa3f234efb3beb7793ec8ae1a428aa9f824` | Swap-2 | impl | inactive | no |
+| arbitrum | `0x3d39a116f257f2eb6a63ce400197565e18df6919` | ETHFeeCollector | impl | inactive | no |
+| arbitrum | `0x44794511f06d09ba45fac50312a6f7f7ab3a9a57` | CollateralAdder | impl | inactive | no |
+| arbitrum | `0x4710597795ccacdf99054afcc9459e91f08887d0` | GOHMOracleAdapter | impl | inactive | no |
+| arbitrum | `0x48420fad7cc1b517e3b49126edc9988df6e0e778` | PublicKeeper | impl | inactive | no |
+| arbitrum | `0x4955592be28b26acf4e9d2670d27d696141b5ab8` | PickleUniLPOracle | impl | inactive | no |
+| arbitrum | `0x4fe29c68a162eb6fbeef85c502c42859d2f5f990` | ETHFeeCollector | impl | inactive | no |
+| arbitrum | `0x547e253c9459cc26636ffaf208b9fe60b8e69e76` | BAdmin | impl | inactive | no |
+| arbitrum | `0x654b4106f70c0cf88374216a2d1df9be898017be` | BAdmin | impl | inactive | no |
+| arbitrum | `0x6a28e379391c9a8113ba83ffbbea6208f2cf053d` | CollateralAdder | impl | inactive | no |
+| arbitrum | `0x711f660e28b31a4debb7dcad79f4f60e10ec2971` | BAdmin | impl | inactive | no |
+| arbitrum | `0x7874fd762bfbda4bc653ae7aa5be958f5f60f869` | CPriceFeed | impl | inactive | no |
+| arbitrum | `0x787af92cf661fb7b21a935389ec6505c84105f91` | GOHMArb | impl | inactive | no |
+| arbitrum | `0x82b4141c7a71cbcd9c95181f057f7dee35784770` | BTCArb | impl | inactive | no |
+| arbitrum | `0x89d4f9fbd7eaedb6209e9706a94ae1fadc6a414e` | FakeAmpOracle | impl | inactive | no |
+| arbitrum | `0x8e0f69a4d5bfdff4847255c95db3d571de159475` | ETHArb | impl | inactive | no |
+| arbitrum | `0x8f8043b6be157b973d735eda3363ae5a94eaf0d6` | ETHArb | impl | inactive | no |
+| arbitrum | `0x94fd843e77fe67a18d52e0ad0c9713c5a9399ef4` | FuseBAMM | impl | live | no |
+| arbitrum | `0x96d240a8fec780f356995ae6042d9ec26f60c21a` | CPriceFeed | impl | inactive | no |
+| arbitrum | `0xa5e1ae2140d9fd147ce0e1ade024d64a334a4cdb` | OracleAdapter | impl | inactive | no |
+| arbitrum | `0xb8b451b6817767a4e00cb511ca7e3fd890c29331` | ETHArb | impl | inactive | no |
+| arbitrum | `0xc199d10d773329c505d8fcad32c7969cfb70ead9` | ETHArb | impl | inactive | no |
+| arbitrum | `0xc1de3c0a4ee14abb828ef6d359779f8b00b604c4` | CollateralAdder | impl | inactive | no |
+| arbitrum | `0xc7b03b19d9d896b0df9b02245a2cab0622279f68` | ETHArb | impl | inactive | no |
+| arbitrum | `0xc9ac45e312af112b63dd6566af1fd562c00790e6` | FakeAmpOracle | impl | inactive | no |
+| arbitrum | `0xdb872fd74bdf099ff5432d10f6881045e04108a8` | ETHArb | impl | inactive | no |
+| arbitrum | `0xddcaf169ce7d42f8d486df5582da8d0ac48e0323` | BKeeper | impl | inactive | no |
+| arbitrum | `0xe4086cccad1d9c71ab96e01be444fc8d51f629d7` | Redeemer | impl | inactive | no |
+| arbitrum | `0xe7d1406cc09f6444973c798393f393f7e57e001f` | CheapHelper | impl | inactive | no |
+| arbitrum | `0xea6b7bd072bef7a3a85f5a519d160babfcbde55d` | Redeemer | impl | inactive | no |
+| arbitrum | `0xeb66db4fa35d419731396fd00432804862ca0d4b` | ETHArb | impl | inactive | no |
+| ethereum | `0x00ff66ab8699aafa050ee5ef5041d1503aa0849a` | BAMM | impl | live | yes |
+| ethereum | `0x094c875704c14783049ddf8136e298b3a099c446` | FixedSupplyToken | impl | inactive | no |
+| ethereum | `0x09677d0175dec51e2215426cddd055a71bf4228d` | FixedSupplyToken | impl | inactive | no |
+| ethereum | `0x09908cfe36e3941cbfa0c2b6fac623f523dff9fe` | GovernanceExecutor | impl | inactive | no |
+| ethereum | `0x0ab366dbbb03c84f581963a4cc0756eb66176bde` | Pay | impl | live | no |
+| ethereum | `0x0ae823c44b3485918b359329f9f77925c1478082` | Balances | impl | inactive | no |
+| ethereum | `0x0b74978ff389f2c720fbf5827ab848b447cccc6b` | LiquidatorInfo | impl | inactive | no |
+| ethereum | `0x0bc250d17261b6c31521c8cd6cbba71ce211256a` | TransferToReward | impl | inactive | no |
+| ethereum | `0x0c8405ab6f8fd1b2838e4782bc88c4d30d7cf380` | BGelato | impl | inactive | no |
+| ethereum | `0x0d3abaa7e088c2c82f54b2f47613da438ea8c598` | BAMM | impl | live | yes |
+| ethereum | `0x12c60b3170fb43e6a8f8ba2d843621c19324329e` | Arb | impl | inactive | no |
+| ethereum | `0x1459dac936578bbe620e2a22e3026ce9791f17d6` | UniV3Twap | impl | inactive | no |
+| ethereum | `0x158079ee67fce2f58472a96584a73c7ab9ac95c1` | CErc20 | impl | live | no |
+| ethereum | `0x1653c07fa6ce103b43925dddb5e31ca568e53ba1` | PriceOracleProxy | impl | inactive | no |
+| ethereum | `0x178053c06006e67e09879c09ff012ff9d263df29` | Comptroller | impl | live | no |
+| ethereum | `0x18b5b6696e6569f437f48b111734d72b225d14a7` | NCStandardInterestRateModel | impl | inactive | no |
+| ethereum | `0x19574e5dfb40bbd63a4f3bdcf27ed662b329b2ff` | ConnectV2BLiquity | impl | inactive | no |
+| ethereum | `0x1982131c7d6959ff7768ee39c023ad002d8c9759` | KyberNetworkENSResolver | impl | inactive | no |
+| ethereum | `0x1d8aedc9e924730dd3f9641cdb4d1b92b848b4bd` | PriceOracleProxy | impl | inactive | no |
+| ethereum | `0x1ea6f1b58c57a4de9718b5ee6927f1927348a157` | Pay | impl | inactive | no |
+| ethereum | `0x1f3b218869e2ce02671d64298a19589341cc90d0` | LiquidatorBalanceInfo | impl | inactive | no |
+| ethereum | `0x20f7cf5900d0e82ab0f7fe2b6a87c3355035a7e6` | DssManagerLike | impl | inactive | no |
+| ethereum | `0x221ab7b8a2b00f171b1cae485e5f6ede03389102` | BGelato | impl | inactive | no |
+| ethereum | `0x22d3fbe3afd0ffe8db1306eb857a2a8b21f051ae` | DssCdpManager | impl | live | yes |
+| ethereum | `0x2325aa20deaa9770a978f1dc7c073589ffc79dc3` | BudConnector | impl | inactive | no |
+| ethereum | `0x24179cd81c9e782a4096035f7ec97fb8b783e007` | BorrowerOperations | impl | live | no |
+| ethereum | `0x2686ad73b7e09269672a2c3368883b4f271e4bc5` | VatLike | impl | inactive | no |
+| ethereum | `0x28f829f473638ba82710c8404a778f9a66029aad` | PriceOracleProxy | impl | inactive | no |
+| ethereum | `0x29c24aad19750753289e414053546f54dff08332` | Exponent | impl | inactive | no |
+| ethereum | `0x2c6af48e01be6f96fb8ea19c76cb936bb554ea02` | PBAMM | impl | live | no |
+| ethereum | `0x2c9e6bdaa0ef0284eecef0e0cc102dcdeae4887e` | PriceOracleProxy | impl | inactive | no |
+| ethereum | `0x2cd6eaf23f73bc4f359b69711fb34728c599c34c` | DssCdpManager-4 | impl | inactive | no |
+| ethereum | `0x31d85ef94360a46af2e59c700789ef952cb6eade` | BKeeper-2 | impl | inactive | no |
+| ethereum | `0x3320f0a2f18a5177dd53a46c59ad8145d9f7e147` | DssCdpManager | impl | live | yes |
+| ethereum | `0x3328d5b2cabdf25a9aad31ae52f660398c54b6ce` | Vault | impl | inactive | no |
+| ethereum | `0x351626387b5bb5408f97f8fd6b2ec415efc9e6a1` | DssProxyActions | impl | live | yes |
+| ethereum | `0x3648542ef46ae173aa2c4fe19707aa1078695ce0` | ArbChecker | impl | inactive | no |
+| ethereum | `0x3843019c19259117ed473947007bcafc5c0c7129` | BLens | impl | inactive | no |
+| ethereum | `0x39aa39c021dfbae8fac545936693ac917d5e7563` | CToken | impl | live | no |
+| ethereum | `0x3add75647681d3ba7a4ecfabf75d393936186a2c` | Pool | impl | live | yes |
+| ethereum | `0x3b755a375921c248250b03e0afffee779c8b9f75` | PTToDaiConversionRate | impl | inactive | no |
+| ethereum | `0x3c36ccf03dab88c1b1ac1eb9c3fb5db0b6763cff` | Exponential | impl | inactive | no |
+| ethereum | `0x3c5c1851626e379e069fb1543fb479a87a78f123` | MockComptroller | impl | inactive | no |
+| ethereum | `0x3d32e8b97ed5881324241cf03b2da5e2ebce5521` | CollSurplusPool | impl | live | no |
+| ethereum | `0x3d3b4858cbc9fcb61abdac44da82c5c3306f61d1` | FixedSupplyToken-2 | impl | inactive | no |
+| ethereum | `0x3d45755ee30dd38ff5d3cc01e8ae6bea0bae3958` | DutchReserve | impl | inactive | no |
+| ethereum | `0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b` | Unitroller | proxy | live | no |
+| ethereum | `0x3f30c2381cd8b917dd96eb2f1a4f96d91324bbed` | DssCdpManager | impl | live | yes |
+| ethereum | `0x468960199c8045dedcf6aeb33e28dc57346ad3ff` | DssCdpManager-2 | impl | inactive | no |
+| ethereum | `0x46dfdffe7592eb565e702c4f8fc631065b2344cf` | DssCdpManager-5 | impl | inactive | no |
+| ethereum | `0x47f935ac93b785294d9a24503aa633112ecb2553` | BudConnector | impl | inactive | no |
+| ethereum | `0x4bcad4920be1ca53f27656db49d31b23f9725ab0` | DssProxyActions | impl | live | yes |
+| ethereum | `0x4dbbbfb0e68be9d8f5a377a4654604a62e851e80` | MultiSigWallet | impl | live | no |
+| ethereum | `0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5` | CEther | impl | live | no |
+| ethereum | `0x4f9fbb3f1e99b56e0fe2892e623ed36a76fc605d` | LQTYStaking | impl | live | no |
+| ethereum | `0x5123bfe8fb81e9301f3b502d4a088f804431c70f` | PBAMM | impl | live | no |
+| ethereum | `0x5156434ab527b4f1903512b90035eb928be44a8d` | Exponent | impl | inactive | no |
+| ethereum | `0x54bc9113f1f55cdbdf221daf798dc73614f6d972` | PBAMM | impl | live | no |
+| ethereum | `0x5562024784cc914069d67d89a28e3201bf7b57e7` | JumpRateModel | impl | inactive | no |
+| ethereum | `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643` | CErc20Delegator-2 | proxy | inactive | no |
+| ethereum | `0x5f98805a4e8be255a32880fdec7f6728c6568ba0` | LUSDToken | impl | live | no |
+| ethereum | `0x5fd74c9eb05a11c148297d83febd8b4862a1064d` | Pool-2 | impl | live | yes |
+| ethereum | `0x60312e01a2acd1dac68838c949c1d20c609b20cf` | BTVL | impl | live | no |
+| ethereum | `0x6132dbb79f570326485f3ac77628227ab8fbb381` | FixedSupplyToken | impl | inactive | no |
+| ethereum | `0x6253025e2d4c2e89915844ef9854eb7498f497db` | DutchReserve | impl | inactive | no |
+| ethereum | `0x62f18c451af964197341d3c86d27e98c41bb8fcc` | Comptroller | impl | live | no |
+| ethereum | `0x645e758796408efdd65bbbd877e8ebceeb231f4c` | NCStableCoinInterestRateModel | impl | inactive | no |
+| ethereum | `0x66017d22b0f8556afdd19fc67041899eb65a21bb` | StabilityPool | impl | live | no |
+| ethereum | `0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e` | CErc20 | impl | live | no |
+| ethereum | `0x6d903f6003cca6255d85cca4d3b5e5146dc33925` | Timelock | impl | inactive | no |
+| ethereum | `0x6dc1338ef4117c031c4c1dc61b969e45e6e7e1b4` | BIP3to6 | impl | inactive | no |
+| ethereum | `0x6dea81c8171d0ba574754ef6f8b412f2ed88c54d` | LQTYToken | impl | live | no |
+| ethereum | `0x6eaa36cb264ced039de3762635f098c20c358194` | BPROAggregated | impl | inactive | no |
+| ethereum | `0x6fc61357f00b7735e5a75156522def9cfb20ee02` | Utils | impl | inactive | no |
+| ethereum | `0x7095f0b91a1010c11820b4e263927835a4cf52c9` | Vault | impl | inactive | no |
+| ethereum | `0x71168ca1d778128dff21d799ba931d9dfd48f8a2` | FixedSupplyToken | impl | inactive | no |
+| ethereum | `0x720a2bdae0bd4dfc3cc5bd0bc1148d42685ad9fd` | LiquidatorInfo | impl | inactive | no |
+| ethereum | `0x78000bfdbeb85eb119ec093c5290e0a7bd3efd2a` | BPROAggregated | impl | inactive | no |
+| ethereum | `0x78a049d2fde5eff789555a11e9e8a2c60b0cac6d` | BudConnector | impl | inactive | no |
+| ethereum | `0x791678c01f00c989c7bc32081ba79196751ddfb1` | DssCdpManager-2 | impl | inactive | no |
+| ethereum | `0x79c3ceb9decd2de5f70e50b0eb2aeb4bca86a7ad` | BStats | impl | inactive | no |
+| ethereum | `0x7b57a69be7e326129a1f671be9cd03f69d2301ad` | DssCdpManager-6 | impl | inactive | no |
+| ethereum | `0x7ba651de9b7186f6f9665cf5cc0f19e491db3538` | MultiSigWallet | impl | inactive | no |
+| ethereum | `0x7bfd2c0b917c1154aa3af1e85e1632f038950fd5` | GetDecimals | impl | inactive | no |
+| ethereum | `0x7c3f1c43ed55847f6ca8dd660c85ff0c10be8c17` | PTToDaiConversionRate | impl | inactive | no |
+| ethereum | `0x7c6fc9d2cfa523f517a7958ceac9ff835286ae50` | DutchReserve | impl | inactive | no |
+| ethereum | `0x81c4b9b35ec847151af8c81856e434b6a8c4ac68` | GovernanceExecutor | impl | inactive | no |
+| ethereum | `0x84ff9784aca79629db8a80527ecbc53af34faf23` | Pool | impl | live | yes |
+| ethereum | `0x89f58d968175e2f7460dd88f32b4562606e4d54b` | Exponent | impl | inactive | no |
+| ethereum | `0x8c159cfd11677a4f2fe4fd0278dd37a95b986069` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0x8d44aaf5a5dc3bceec264d0b8f659bb74573ceac` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0x8f1a369ee7916491e43e412b0dcc7717e2fcb608` | KyberNetwork | impl | inactive | no |
+| ethereum | `0x8f95c99d8f2d03729c1300e59fc38299d831a7f7` | GovernanceExecutor | impl | inactive | no |
+| ethereum | `0x907403da04eb05efd47eb0ba0c7a7d00d4f233ea` | DssCdpManager-2 | impl | inactive | no |
+| ethereum | `0x912d1953d0da41bd82de5c5b68a5ac1b94362d4c` | Pool | impl | live | yes |
+| ethereum | `0x918308caf3239d4fdc846aca3a670076545d1b37` | DutchReserve | impl | inactive | no |
+| ethereum | `0x923e21308f2468377b5655cd470662e3c24ed404` | VoteAndClaim | impl | inactive | no |
+| ethereum | `0x9552d6f69e7639e5780007166a81476d702433ac` | BGelato | impl | inactive | no |
+| ethereum | `0x9c58e033a6465846f27bad998ee9bc4b505182bc` | TransferToReward | impl | inactive | no |
+| ethereum | `0x9dcc156dfdc09bb52c7489e6ce5c1a9c90572064` | BLens | impl | inactive | no |
+| ethereum | `0x9e80b3cd3ebe427dcafa230fc6064eac10062472` | Experiment | impl | inactive | no |
+| ethereum | `0x9eacb93cb65f8ad428e270690653b156e1bd0a49` | DssCdpManager-3 | impl | inactive | no |
+| ethereum | `0x9f69be585d0e635a846df7db15ad6f7741a9843a` | Vault | impl | inactive | no |
+| ethereum | `0xa01eb8e9b48fb7c027fcda2a02d4fadac7c41cc5` | BPROAggregated | impl | inactive | no |
+| ethereum | `0xa0ceca20349dcc3556e0fbaaac8f8aa1bf85da4e` | BIP1 | impl | inactive | no |
+| ethereum | `0xa1046abfc2598f48c44fb320d281d3f3c0733c9a` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0xa30b9677a14ed10eceb6ba87af73a27f51a17c89` | DssCdpManager-3 | impl | inactive | no |
+| ethereum | `0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2` | TroveManager | impl | live | no |
+| ethereum | `0xa45f9b0f82e4e08506eafa8081515b67f546ca1d` | DutchReserve | impl | inactive | no |
+| ethereum | `0xa4c993e32876795abf80842adb0a241bb0eecd47` | CErc20 | impl | live | no |
+| ethereum | `0xa58c6d029f0ee738c653ea6cca5417ce5532ea1a` | DutchReserve | impl | inactive | no |
+| ethereum | `0xa5c48ef0301437bb2f5afdda8aedbe817f5e11d6` | FlashLoanImport | impl | inactive | no |
+| ethereum | `0xa6ba9a68430dc7b21f7b8ab9d23ea3ff0c008b6e` | FakeBComptroller | impl | inactive | no |
+| ethereum | `0xaec7fa67e32f9ac53ce0684f508510324c018dcc` | Utils | impl | inactive | no |
+| ethereum | `0xaf50fe9282e1be8c08b899a51628a085e81d0d57` | Utils-2 | impl | inactive | no |
+| ethereum | `0xb020636f8e30cb8c35a863412503cfd5e3d6d6ce` | KyberBancorReserve | impl | inactive | no |
+| ethereum | `0xb03927ff2880c3f89f561d8d9c3f7edf52a0bbb2` | Vault | impl | inactive | no |
+| ethereum | `0xb173dd805ededf5d833cfe832eab2a609ad2431e` | DutchReserve | impl | inactive | no |
+| ethereum | `0xb19aae67f5f1b28ff6bde64cd2c4c24066253a2a` | Arb | impl | inactive | no |
+| ethereum | `0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407` | CErc20 | impl | live | no |
+| ethereum | `0xb4acba572fd7e69955dabb1ba4bfff89931fb0b6` | GetDecimals | impl | inactive | no |
+| ethereum | `0xb67200fefcbf36b0ca3d70d59ebf90d0b9b38f82` | KeeperRebate | impl | inactive | no |
+| ethereum | `0xb6a1c0a18f82ff497d10ea1d1ac3804417e382b2` | KyberNetwork | impl | inactive | no |
+| ethereum | `0xb7d931f1205350903e40228557aa7e5a09b7862c` | MultiSigWallet | impl | inactive | no |
+| ethereum | `0xb943d1dc140b8377d65a451221747bb6c6bc6cc0` | PriceOracleProxy | impl | inactive | no |
+| ethereum | `0xba791e7313a3a0ba6fe3a0335f5102b2f60aa47f` | Pool | impl | live | yes |
+| ethereum | `0xba92981e049a79de1b79c2396d48063e02f47239` | KyberBancorReserve | impl | inactive | no |
+| ethereum | `0xbae04cbf96391086dc643e842b517734e214d698` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0xbb043ffb54442e9fbdd720e666fb7292b654a31b` | DSAuth | impl | inactive | no |
+| ethereum | `0xbbbbbbb5aa847a2003fbc6b5c16df0bd1e725f61` | BPRO | impl | live | no |
+| ethereum | `0xbc0f18d0b9f2239331efb86de92618749ccf14db` | KeeperProxy | impl | inactive | no |
+| ethereum | `0xbc7e25fa81d4f6214bc046ff264be18750ead7f3` | Arb | impl | inactive | no |
+| ethereum | `0xbde0bac85116148d7cf515c949f3cd1bf6a2e6c1` | Exponential | impl | inactive | no |
+| ethereum | `0xbe02c549625c397f1c6da95a97168572ea8ce884` | LiquidatorInfo | impl | inactive | no |
+| ethereum | `0xbf698df5591caf546a7e087f5806e216afed666a` | Registry | impl | live | yes |
+| ethereum | `0xc11b1268c1a384e55c48c2391d8d480264a3a7f4` | CErc20 | impl | live | no |
+| ethereum | `0xc507a27860c225aad8cb4a5a32a44d8892288880` | Vault-2 | impl | live | no |
+| ethereum | `0xc64c4cba055efa614ce01f4bad8a9f519c4f8fab` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0xc860975ce853aa1eb4dea902839827a17ce8ac71` | Dripper | impl | inactive | no |
+| ethereum | `0xcaf3e011fda4f4cd98860acd7afce81c22de28e6` | Arb | impl | inactive | no |
+| ethereum | `0xcb79323ada11af9d7869d0d5563e561bd609c669` | KyberNetworkENSResolver-2 | impl | inactive | no |
+| ethereum | `0xceaf62ba209e2fb7990d29c5f5157377d54fc7b2` | Split3 | impl | inactive | no |
+| ethereum | `0xcfadc0abf01fb58fc9926a3645b876125a599c5d` | BPROAggregated | impl | inactive | no |
+| ethereum | `0xd37a77e71ddf3373a79be2ebb76b6c4808bdf0d5` | Unipool | impl | live | no |
+| ethereum | `0xd928c8ead620bb316d2cefe3caf81dc2dec6ff63` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0xdb89a7750472b1c2d5668385ef62e15898c1d50f` | Exponential | impl | inactive | no |
+| ethereum | `0xdba0bfb7be95d7483dccde85125b59e98859aeb2` | LiquidatorBalanceInfo | impl | inactive | no |
+| ethereum | `0xdd0c40203a6c25bc454d1e528962a4e6a755344b` | BalanceInfo | impl | inactive | no |
+| ethereum | `0xde843d88b55a38e1e0fb831b6edb0110dee9ab9d` | ArbChecker | impl | inactive | no |
+| ethereum | `0xdf9eb223bafbe5c5271415c75aecd68c21fe3d7f` | ActivePool | impl | live | no |
+| ethereum | `0xe4c3d5237ac9b4b45098de9e7009c1b75443e6f3` | PBAMM | impl | live | no |
+| ethereum | `0xe7664229833ae4abf4e269b8f23a86b657e2338d` | PriceOracleProxy | impl | inactive | no |
+| ethereum | `0xf0c02c4edc6b27fbec7ec57e2eac4e3445655ebe` | Pool-3 | impl | live | yes |
+| ethereum | `0xf10bb2ca172249c715e4f9ee7776b2c8c31aaa69` | DssCdpManager-4 | impl | inactive | no |
+| ethereum | `0xf4062d5244aa3a1e664532337c276ea9dc7ed0ca` | DssCdpManager-3 | impl | inactive | no |
+| ethereum | `0xf592ef673057a451c49c9433e278c5d59b56132c` | Comptroller | impl | live | no |
+| ethereum | `0xf5dce57282a584d2746faf1593d3121fcac444dc` | CErc20 | impl | live | no |
+| ethereum | `0xf79a20bfaff3b0d57d390db24f918f427370997c` | Exponent | impl | inactive | no |
+| ethereum | `0xf859a1ad94bcf445a406b892ef0d3082f4174088` | Maximillion | impl | inactive | no |
+| ethereum | `0xf88c7e21807d70bc7c7bf2ed7b6266ecc06b0be0` | Comptroller | impl | live | no |
+| ethereum | `0xfa1ba4ee3163b97f78307516d77ce28daac99d2d` | GetDecimals | impl | inactive | no |
+| ethereum | `0xfae2e2d3f11bab10ee0ddd0332f6dfe957414ccb` | BAMMLens | impl | inactive | no |
+| polygon | `0x07de5de2bc71223744523e31e613533a04ae33b3` | FeeVault | impl | inactive | no |
+| polygon | `0x07f8c13ce5a8347c9ba264a3fc0271427e2933e2` | FlashArbPolygon | impl | inactive | no |
+| polygon | `0x090a00a2de0ea83def700b5e216f87a5d4f394fe` | CErc20Delegator | impl | inactive | no |
+| polygon | `0x0bc51a773e75de9c0953e837b989cf5426d01f2a` | FlashKeeper | impl | inactive | no |
+| polygon | `0x0bdcbcebcdcee127e15872fe4fb904b0a41e10cd` | Admin | impl | inactive | no |
+| polygon | `0x0f0dd66d2d6c1f3b140037018958164c6ab80d56` | HundredBAMM | impl | live | no |
+| polygon | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | Comp | impl | inactive | no |
+| polygon | `0x103f2ca2148b863942397dbc50a425cc4f4e9a27` | CErc20Delegator | proxy | live | no |
+| polygon | `0x110614276f7b9ae8586a1c1d9bc079771e2ce8cf` | PauseGuardian | impl | inactive | no |
+| polygon | `0x19830074ceee045362eca46c972d3e3a225151d8` | LiquidationBotHelper | impl | inactive | no |
+| polygon | `0x1ecf1b0de9b4c2d01554062ea2fab84b1917b41d` | HundredBAMM | impl | live | no |
+| polygon | `0x243e33aa7f6787154a8e59d3c27a66db3f8818ee` | CErc20Delegator | proxy | inactive | no |
+| polygon | `0x28707252fdea41b72cf321d153a6c01fa9f6fb79` | Comptroller-2 | impl | live | no |
+| polygon | `0x29ddb4c4f9baae366dbd40eff79d364e004425b0` | JumpRateModelV4 | impl | inactive | no |
+| polygon | `0x2c7a9d9919f042c4c120199c69e126124d09be7c` | CErc20Delegator | impl | live | no |
+| polygon | `0x2da13538056aff0bfc81d3a4c6364b0a7e0f9feb` | HundredBAMM | impl | live | no |
+| polygon | `0x30129f6a5b6cbe6690cba4f8f03142c1fe989b5e` | Admin | impl | inactive | no |
+| polygon | `0x30a026ae9e2a1363e96a5e5ab12786a46066beb8` | CErc20Delegator | proxy | inactive | no |
+| polygon | `0x315358ef72ade2bf82e1b5d6e84b84e023d41939` | FlashArbPolygon | impl | inactive | no |
+| polygon | `0x36208a6d429b056be6be5fa81cdf4092748ac35d` | CErc20Delegator | impl | inactive | no |
+| polygon | `0x42b458056f887fd665ed6f160a59afe932e1f559` | JumpRateModelV4 | impl | inactive | no |
+| polygon | `0x5b9451b1bfae2a74d7b9d0d45bdd0e9a27f7bb22` | CErc20Delegator | proxy | inactive | no |
+| polygon | `0x606b54659c185b669ef90f920d0b93c06a759605` | EIP20 | impl | inactive | no |
+| polygon | `0x607312a5c671d0c511998171e634de32156e69d0` | CErc20Delegator | proxy | live | no |
+| polygon | `0x61c79045f21244981e1323fd2bb7c7702791c750` | FeeVault | impl | inactive | no |
+| polygon | `0x6bb6ebcf3ac808e26545d59ea60f27a202ce8586` | CErc20Delegator | proxy | inactive | no |
+| polygon | `0x7025cb98aad5f5088516b1d206a1d0332651d32b` | CPriceFeed-2 | impl | inactive | no |
+| polygon | `0x772918d032cfd4ff09ea7af623e56e2d8d96bb65` | WhitePaperInterestRateModelV3 | impl | inactive | no |
+| polygon | `0x7d30d048f8693af30a10aa5d6d281a7a7e6e1245` | CPriceFeed-3 | impl | inactive | no |
+| polygon | `0x838766908a81bde23591ff5c7819784974576bfc` | Admin | impl | inactive | no |
+| polygon | `0x83b80681199c24b6b5543dcc4b796afdc36874c0` | FlashKeeper | impl | inactive | no |
+| polygon | `0x851bcc3b187e06cfa29361b90cc76e96ef6c63f1` | EIP20 | impl | inactive | no |
+| polygon | `0x86efe17a9f0635be0bd11c1beed4fae3d8b7b154` | FlashKeeper | impl | inactive | no |
+| polygon | `0x89db3b59381bc06fe9bf74532afd777e5f78ef02` | Maximillion-2 | impl | live | no |
+| polygon | `0x8cf0b1c886ee522427ef57f5601689352f8161eb` | FeeVault | impl | inactive | no |
+| polygon | `0x8ede503c2df9fbd2be33726818dcb87a76c1bb6e` | CLiquidationBotHelper | impl | inactive | no |
+| polygon | `0x902810fecd278703aca73913ab2a6c7684019bbb` | FeeVault | impl | inactive | no |
+| polygon | `0x998bf304ce9cb215f484aa39d1177b8210078f49` | HundredBAMM | impl | live | no |
+| polygon | `0xa8d60f5cc2c01bd1514348753140faa28e449e3d` | HundredBAMM | impl | live | no |
+| polygon | `0xb1c4426c86082d91a6c097fc588e5d5d8dd1f5a8` | WhitePaperInterestRateModelV3 | impl | inactive | no |
+| polygon | `0xb4300e088a3ae4e624ee5c71bc1822f68bb5f2bc` | CErc20Delegator | proxy | inactive | no |
+| polygon | `0xb48bd808b9e8f0331fd02b6d7788d0c9c8fe63e7` | FeeVault | impl | inactive | no |
+| polygon | `0xb5b8dfa0df22d7280be0cebcb77857e64f7bf02d` | Swap | impl | inactive | no |
+| polygon | `0xb9bc087c82ad975ad3f1bc03c5442c3c1fb80d34` | FeeVault | impl | inactive | no |
+| polygon | `0xbb93c7f378b9b531216f9ad7b5748be189a55807` | CErc20Delegator | impl | live | no |
+| polygon | `0xbf689f50cb446f171f08691367f7d9398b24d382` | GaugeHelper | impl | inactive | no |
+| polygon | `0xc4518e683a1be027fda91d3690730454d5f9ae31` | FeeVault | impl | inactive | no |
+| polygon | `0xcc969efa01bc20369862381192b0c7a8bf40abba` | FlashKeeperFantom | impl | inactive | no |
+| polygon | `0xcebdf18ac062cfa15fb3416dd453342e72b17e25` | HundredBAMM | impl | live | no |
+| polygon | `0xd739a70845bc150481ed930990bd65b81fc02c4a` | CLiquidationBotHelper | impl | inactive | no |
+| polygon | `0xe1561e635dc1487f5371827cd8bf2728e0e94eb9` | Admin | impl | inactive | no |
+| polygon | `0xe4e43864ea18d5e5211352a4b810383460ab7fcc` | CErc20Delegator | proxy | live | no |
+| polygon | `0xe5d36febb94a2b2c0e62bda40524a3ebf79bde63` | Admin | impl | inactive | no |
+| polygon | `0xe71355366f4ff6a7218131c9799e27d7976d349a` | Admin | impl | inactive | no |
+| polygon | `0xebd7f3349aba8bb15b897e03d6c1a4ba95b55e31` | CToken-2 | impl | live | no |
+| polygon | `0xedce1c21ad6cb55d647671682b35766ea4a440f1` | HundredBAMM | impl | live | no |
+| polygon | `0xfcd8570ad81e6c77b8d252bebeba62ed980bd64d` | CErc20Delegator | proxy | inactive | no |
+
+## Source unavailable (21)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x04208f296039f482810b550ae0d68c3e1a5eb719`
+- arbitrum `0x0a30963a461aa4eb4252b5a06525603e49034c41`
+- arbitrum `0x12c60b3170fb43e6a8f8ba2d843621c19324329e`
+- arbitrum `0x24099000ae45558ce4d049ad46ddaaf71429b168`
+- arbitrum `0x51fbf83818e4fa195fd5d395a63fcfb5c45d9565`
+- arbitrum `0x539a3f6d1f33c77c83e9b159e23e99fd8c26e7d9`
+- arbitrum `0xa00cdcede860cd5853daf52f0c8d70bfd1db2a79`
+- arbitrum `0xceaf62ba209e2fb7990d29c5f5157377d54fc7b2`
+- arbitrum `0xebf8252756268091e523e57d293c0522b8afe66b`
+- arbitrum `0xf2bb803010fa55ab60af1a4740d1a1d6c9c93a39`
+- ethereum `0x48420fad7cc1b517e3b49126edc9988df6e0e778`
+- ethereum `0x8676cb811b9148bb1171747221d9cf36c8e1c1f2`
+- ethereum `0x99ee778b9a6205657dd03b2b91415c8646d521ec`
+- ethereum `0xc57071b52682ce253212ccb918695a4685d941ac`
+- ethereum `0xeae019ef845a4ffdb8829210de5d30ac6fbb5371`
+- polygon `0x376020c5b0ba3fd603d7722381faa06da8078d8a`
+- polygon `0x8c6139ff1e9d7c1e32bdafd79948d0895ba0a831`
+- polygon `0xa8cd5d59827514bcf343ec19f531ce1788ea48f8`
+- polygon `0xb426c1b7fabea9ea6a273e8427040568a8c7df13`
+- polygon `0xe8f99d91326be3b1116b76833821388a1cdaccef`
+- polygon `0xedba32185baf7fef9a26ca567bc4a6cbe426e499`

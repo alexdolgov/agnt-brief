@@ -1,0 +1,18 @@
+{
+  "component": "BSCswapRouter",
+  "main_contract": "BSCswapRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbd67d157502a23309db761c41965600c2ec788b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

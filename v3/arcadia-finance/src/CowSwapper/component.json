@@ -1,0 +1,28 @@
+{
+  "component": "CowSwapper",
+  "main_contract": "CowSwapper",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2026-01%20Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb988a32def54821dde0d7382e8a74f1be4da1f23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xffc742e68d41389be9ef1afd518f036064da2bb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

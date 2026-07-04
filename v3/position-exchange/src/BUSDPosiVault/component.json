@@ -1,0 +1,18 @@
+{
+  "component": "BUSDPosiVault",
+  "main_contract": "BUSDPosiVault",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0385665ac09aa35c6e7ea58a0a9b63915fc60f38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

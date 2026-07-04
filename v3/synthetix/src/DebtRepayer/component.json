@@ -1,0 +1,18 @@
+{
+  "component": "DebtRepayer",
+  "main_contract": "DebtRepayer",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbd8004ea5c73e33d405d35d594221efc733f7e37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

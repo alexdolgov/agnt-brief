@@ -1,0 +1,18 @@
+{
+  "component": "EarlyAccessNFT",
+  "main_contract": "EarlyAccessNFT",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe31b515f77c84d8e35faf831ef69bea3ac237281",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VirtualOFTAdapter",
+  "main_contract": "VirtualOFTAdapter",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa5a1afbff720f79f1f7833aafbdcee87770bbc93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

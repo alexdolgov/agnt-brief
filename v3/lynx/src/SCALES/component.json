@@ -1,0 +1,18 @@
+{
+  "component": "SCALES",
+  "main_contract": "SCALES",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe6af844d5740b6b297b6dd7fb2ce299ee9e3d16f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TimeLockStaking",
+  "main_contract": "TimeLockStaking",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x33e34b8684565fcf6a9dd52a7e92c4e70211a045",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

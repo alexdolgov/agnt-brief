@@ -1,0 +1,18 @@
+{
+  "component": "ActionMarketAuxStatic",
+  "main_contract": "ActionMarketAuxStatic",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33f7077b62fa30c865813708ebed535a5ef0a836",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

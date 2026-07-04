@@ -1,0 +1,18 @@
+{
+  "component": "TermMulticallProtection",
+  "main_contract": "TermMulticallProtection",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7045f0945691de1e4f22e9841b77c06020ba3d13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

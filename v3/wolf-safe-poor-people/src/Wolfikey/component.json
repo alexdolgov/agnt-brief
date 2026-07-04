@@ -1,0 +1,18 @@
+{
+  "component": "Wolfikey",
+  "main_contract": "Wolfikey",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd6bcf34e74782d7851c1cfdae6400c5198212eaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

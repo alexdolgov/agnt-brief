@@ -1,0 +1,18 @@
+{
+  "component": "SDLGaugeDistributor",
+  "main_contract": "SDLGaugeDistributor",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07cd2e45386da2ff8f2db716e733b6f48511a118",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

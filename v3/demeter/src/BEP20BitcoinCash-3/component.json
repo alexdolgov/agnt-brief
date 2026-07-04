@@ -1,0 +1,18 @@
+{
+  "component": "BEP20BitcoinCash-3",
+  "main_contract": "BEP20BitcoinCash",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8ff795a6f4d97e7887c79bea79aba5cc76444adf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "MasterChefShiba",
+  "main_contract": "MasterChefShiba",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb3251232890db32900101e1e4efce283b5b7f15b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfd31c7560ec78f3f729c4496f1d877c47dc54be7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

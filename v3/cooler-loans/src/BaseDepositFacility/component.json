@@ -1,0 +1,18 @@
+{
+  "component": "BaseDepositFacility",
+  "main_contract": "BaseDepositFacility",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xebde552d851dd6dfd3d360c596d3f4af6e5f9678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

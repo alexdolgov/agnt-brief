@@ -1,0 +1,18 @@
+{
+  "component": "SidechainIncentivesController",
+  "main_contract": "SidechainIncentivesController",
+  "source_file_count": 75,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x68a17ddf7ab288c2d59be84dda6706a8fe7a4878",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

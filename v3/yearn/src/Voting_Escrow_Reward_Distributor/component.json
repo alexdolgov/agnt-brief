@@ -1,0 +1,18 @@
+{
+  "component": "Voting_Escrow_Reward_Distributor",
+  "main_contract": "Voting Escrow Reward Distributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2548bf65916fdabb5a5673fc4225011ff29ee884",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

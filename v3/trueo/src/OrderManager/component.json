@@ -1,0 +1,18 @@
+{
+  "component": "OrderManager",
+  "main_contract": "OrderManager",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1cdb1c43eb64e99780ea9d3c7162c23432c59a1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

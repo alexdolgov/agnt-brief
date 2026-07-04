@@ -1,0 +1,18 @@
+{
+  "component": "SideTokenFactory_v1",
+  "main_contract": "SideTokenFactory_v1",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x578a80ad3f6d56f873da81b73b8d192ab6bfb063",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

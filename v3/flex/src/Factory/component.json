@@ -1,0 +1,20 @@
+{
+  "component": "Factory",
+  "main_contract": "Factory",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/flexmeow/flex-contracts/blob/master/audits/2026-03-Flex-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

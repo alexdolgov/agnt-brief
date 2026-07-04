@@ -1,0 +1,18 @@
+{
+  "component": "OrigamiGmxRewardsAggregator",
+  "main_contract": "OrigamiGmxRewardsAggregator",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x643d715a0697c56629a25ec33c9bf5990d08317f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

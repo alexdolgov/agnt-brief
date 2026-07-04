@@ -1,0 +1,18 @@
+{
+  "component": "OFTCore",
+  "main_contract": "OFTCore",
+  "source_file_count": 60,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa22cb0e28c158d9e08a70bf1f17fb122e266be83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

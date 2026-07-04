@@ -1,0 +1,26 @@
+{
+  "component": "MultipleVestHelper",
+  "main_contract": "MultipleVestHelper",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x572deca882f4c9abcbdc6f020601a1b789d11983",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd479c1e6702db01b27255361908fc7b083ef3195",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

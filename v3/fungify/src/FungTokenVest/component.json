@@ -1,0 +1,18 @@
+{
+  "component": "FungTokenVest",
+  "main_contract": "FungTokenVest",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ea865684f3aaf931ffca26d7f962916a4e15b5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

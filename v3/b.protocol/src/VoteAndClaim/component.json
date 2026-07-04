@@ -1,0 +1,18 @@
+{
+  "component": "VoteAndClaim",
+  "main_contract": "VoteAndClaim",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x923e21308f2468377b5655cd470662e3c24ed404",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

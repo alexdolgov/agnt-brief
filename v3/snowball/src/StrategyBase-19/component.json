@@ -1,0 +1,18 @@
+{
+  "component": "StrategyBase-19",
+  "main_contract": "StrategyBase",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3c946f6d5d7567486d506559f1706001871884c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

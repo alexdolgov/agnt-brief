@@ -1,0 +1,18 @@
+{
+  "component": "SliverConfig",
+  "main_contract": "SliverConfig",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe7b13bb95d5fc2ae028187d50e4f083573e299f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC20VotesUpgradeable",
+  "main_contract": "ERC20VotesUpgradeable",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d628949c6c59ebc69563ca94bcbcb4cba58fde4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

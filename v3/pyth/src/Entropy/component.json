@@ -1,0 +1,18 @@
+{
+  "component": "Entropy",
+  "main_contract": "Entropy",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0402833a00e734821f74fa4bbded2f1759540519",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

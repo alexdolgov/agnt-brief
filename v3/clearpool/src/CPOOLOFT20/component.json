@@ -1,0 +1,18 @@
+{
+  "component": "CPOOLOFT20",
+  "main_contract": "CPOOLOFT20",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

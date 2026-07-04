@@ -1,0 +1,18 @@
+{
+  "component": "Presale",
+  "main_contract": "Presale",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x66ec1ee6c3ad04d7629ce4a6d5d19ba99c365d29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FixedSpreadLiquidationStrategy",
+  "main_contract": "FixedSpreadLiquidationStrategy",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x52d62bd452b6b8d7d92ef4fe6e474fb55650dbc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

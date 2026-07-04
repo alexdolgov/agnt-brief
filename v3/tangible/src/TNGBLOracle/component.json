@@ -1,0 +1,26 @@
+{
+  "component": "TNGBLOracle",
+  "main_contract": "TNGBLOracle",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2d332058bdbd6a53d7c43715e66752569921533d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa0fb0349526b7213b6be0f1d9a62f952a9179d96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

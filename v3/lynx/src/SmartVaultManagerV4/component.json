@@ -1,0 +1,18 @@
+{
+  "component": "SmartVaultManagerV4",
+  "main_contract": "SmartVaultManagerV4",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6669bc5ed8dd5fcc369d38db80c9d6165c0d633d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

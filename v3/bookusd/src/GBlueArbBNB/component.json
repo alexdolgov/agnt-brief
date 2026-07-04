@@ -1,0 +1,26 @@
+{
+  "component": "GBlueArbBNB",
+  "main_contract": "GBlueArbBNB",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x85e09f7bca0c275aeb6e2eb959155834ba35983c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x90bbb95a180de00c4515389f3d9f6d36b0c03ae4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

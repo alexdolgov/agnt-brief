@@ -1,0 +1,21 @@
+{
+  "component": "StakedAvUSDV2",
+  "main_contract": "StakedAvUSDV2",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://3192817152-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbHGCy9ZAt2CTConSzjAq%2Fuploads%2FGtOr3Rn7KQk2mvuQzdd1%2FDedaub-Avant-USD-Report-2024-06-06.pdf",
+    "https://3192817152-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbHGCy9ZAt2CTConSzjAq%2Fuploads%2FZxJC7e2hD0rgDb8RaWrt%2FOmniscia-Avant-avUSD-System-Report-2024-07-13.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x06d47f3fb376649c3a9dafe069b3d6e35572219e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

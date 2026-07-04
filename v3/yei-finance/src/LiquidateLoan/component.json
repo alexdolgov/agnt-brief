@@ -1,0 +1,18 @@
+{
+  "component": "LiquidateLoan",
+  "main_contract": "LiquidateLoan",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x30bbfe09001f51eb9837f8ffefbbd762d54be4cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

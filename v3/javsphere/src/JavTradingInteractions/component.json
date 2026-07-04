@@ -1,0 +1,18 @@
+{
+  "component": "JavTradingInteractions",
+  "main_contract": "JavTradingInteractions",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0218fbb63d2ba9266e540ed216fa651f7c362ab1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

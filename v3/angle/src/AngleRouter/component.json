@@ -1,0 +1,18 @@
+{
+  "component": "AngleRouter",
+  "main_contract": "AngleRouter",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc284900e73d6a3310c9e22846709813ad82c2dff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

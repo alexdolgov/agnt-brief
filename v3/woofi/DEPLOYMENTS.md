@@ -1,0 +1,106 @@
+# woofi — deployments
+
+63 verified deployment(s) across 29 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x2cfa72e7f58dc82b990529450ffa83791db7d8e2` | WooStakingLocal | impl | live | yes |
+| arbitrum | `0x2ebca56e00e11a4b1f08da6eb9bc97c4bf3ee90f` | NFTBoosterV2 | impl | live | no |
+| arbitrum | `0x5a6b073e090388c909b9f3bf9d9323be908cad62` | WooSuperChargerVault-2 | impl | live | no |
+| arbitrum | `0x7f3f2a499c00c2d7018300f99a232896fd295bb1` | WooSuperChargerVaultV2-2 | impl | live | no |
+| arbitrum | `0x927f8c16c9e802cb3012989fab79eb8c098d4234` | RewardCampaignManager | impl | live | no |
+| arbitrum | `0x9321785d257b3f0ef7ff75436a87141c683dc99d` | WooStakingVault | impl | live | no |
+| arbitrum | `0x968d3b4faa87864ab19cf2982510b60c2d416b22` | AirdropDistributor | impl | live | no |
+| arbitrum | `0x9d9200aabc72c681eec86bb8494ab495ca90715e` | MysteryBox | impl | live | no |
+| arbitrum | `0xa6000b7d3634534266a2ecc4d478f5cdc1e65bd3` | SimpleRewarder | impl | live | no |
+| arbitrum | `0xa74bb3643da439e89010743909d0493abca743d7` | MpRewarder | impl | live | no |
+| arbitrum | `0xa780432f495e5c6851fd7903fe49ad77c952f7d8` | WooSuperChargerVaultV2-2 | impl | live | no |
+| arbitrum | `0xa9e245c1fa7e17263cc7c896488a3da8072924fb` | WooStakingManager | impl | live | yes |
+| arbitrum | `0xba452bcc4bc52af2fe1190e7e1dbe267ad1c2d08` | WooSuperChargerVault-2 | impl | live | no |
+| arbitrum | `0xc63c640b640038fb6ca3672def7494deea58b9cb` | AirdropDistributor | impl | live | no |
+| arbitrum | `0xca8edccf471a213cfd70d73117ac7f49bfc00b72` | QuestTokenRewardManager | impl | live | no |
+| arbitrum | `0xcafcd85d8ca7ad1e1c6f82f651fa15e33aefd07b` | ClonableBeaconProxy | proxy | live | no |
+| arbitrum | `0xd2fdab19b94b59c5f0e75dd9813365df815b56b1` | WooSuperChargerVaultV2-2 | impl | live | no |
+| arbitrum | `0xf26eb53367066cde380cd06a5d1469985b92747b` | RewardBooster | impl | live | no |
+| arbitrum | `0xff0a280e19e67e7d383a1c2de9e8f402702a86f6` | AirdropDistributor | impl | live | no |
+| avalanche | `0x0c90447b662c2fcb62dc104dfc4563d0dd4be49e` | WOOFiVaultV2 | impl | live | no |
+| avalanche | `0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98` | BridgeToken | impl | live | no |
+| avalanche | `0x1bb2ebecfbb4f78d83fb0a21cb415383779602c9` | WooWithdrawManagerV2 | impl | live | yes |
+| avalanche | `0x37b608519f91f70f2eeb0e5ed9af4061722e4f76` | BridgeToken | impl | live | no |
+| avalanche | `0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339` | BridgeToken | impl | live | no |
+| avalanche | `0x3bd96847c40de8b0f20da32568bd15462c1386e3` | WooStakingProxy | impl | live | yes |
+| avalanche | `0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab` | BridgeToken | impl | live | no |
+| avalanche | `0x50b7545627a5162f82a992c33b87adc75187b218` | BridgeToken | impl | live | no |
+| avalanche | `0x5947bb275c521040051d82396192181b413227a3` | BridgeToken | impl | live | no |
+| avalanche | `0x596fa47043f99a4e0f122243b841e55375cde0d2` | BridgeToken | impl | live | no |
+| avalanche | `0x63a72806098bd3d9520cc43356dd78afe5d386d9` | BridgeToken | impl | live | no |
+| avalanche | `0x755e4af9e77a91999693947b02975c584d1b56f6` | WooWithdrawManagerV2 | impl | live | yes |
+| avalanche | `0x88128fd4b259552a9a1d457f435a6527aab72d42` | BridgeToken | impl | live | no |
+| avalanche | `0x8a0cac13c7da965a312f08ea4229c37869e85cb9` | BridgeToken | impl | live | no |
+| avalanche | `0x8ebaf22b6f053dffeaf46f4dd9efa95d89ba8580` | BridgeToken | impl | live | no |
+| avalanche | `0x98443b96ea4b0858fdf3219cd13e98c7a4690588` | BridgeToken | impl | live | no |
+| avalanche | `0x9eaac1b23d935365bd7b542fe22ceee2922f52dc` | BridgeToken | impl | live | no |
+| avalanche | `0xa429b468d222bb31ff256f3d08ddc0a2d8a59664` | WooWithdrawManagerV2 | impl | live | yes |
+| avalanche | `0xabc9547b534519ff73921b1fba6e672b5f58d083` | BridgeToken | impl | live | no |
+| avalanche | `0xbec243c995409e6520d7c41e404da5deba4b209b` | BridgeToken | impl | live | no |
+| avalanche | `0xc3048e19e76cb9a3aa9d77d8c03c29fc906e2437` | BridgeToken | impl | live | no |
+| avalanche | `0xc48ab731967a704e85a406dd619d29d62de2e112` | WOOFiVaultV2 | impl | live | no |
+| avalanche | `0xc7198437980c041c805a1edcba50c1ce5db95118` | BridgeToken | impl | live | no |
+| avalanche | `0xd501281565bf7789224523144fe5d98e8b28f267` | BridgeToken | impl | live | no |
+| avalanche | `0xd586e7f844cea2f87f50152665bcbc2c279d8d70` | BridgeToken | impl | live | no |
+| chain-146 | `0x50c42deacd8fc9773493ed674b675be577f2634b` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x4691937a7508860f876c9c0a2a617e7d9e945d4b` | StandardToken | impl | live | no |
+| linea | `0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4` | TransparentUpgradeableProxy | proxy | live | no |
+| optimism | `0x871f2f2ff935fd1ed867842ff2a7bfd051a5e527` | L2StandardERC20 | impl | live | no |
+| polygon | `0x01e42ce7cdcb7a2eaae0bb8bdce52f0bbb63f139` | WooLendingManager | impl | live | yes |
+| polygon | `0x0ba6c34af9713d15141dcc91d2788c3f370ecb9e` | WooSuperChargerVault | impl | live | yes |
+| polygon | `0x1109e03516eb25eab2150d0b274b8d4f5f3cf549` | WooSuperChargerVaultV2 | impl | live | yes |
+| polygon | `0x1b815d120b3ef02039ee11dc2d33de7aa4a8c603` | UpgradableProxy | proxy | live | no |
+| polygon | `0x2a8ede62d0717c8c92b88639ecf603fdf31a8428` | WooracleV2_2 | impl | live | yes |
+| polygon | `0x39467a0debf360a82f83880f13ebdf7f0c2ec735` | WooWithdrawManager | impl | live | no |
+| polygon | `0x404b181eca20519b68f3a7ee68ab65f6aba9d503` | WooSuperChargerVault | impl | live | yes |
+| polygon | `0x697c97a37bc00c2306f2b08ca14f3d55db6ffccd` | WooLendingManager | impl | live | yes |
+| polygon | `0x8ea0eb2cebda4d7c88183ac8fbf3a9ae6ae07a5c` | WooSuperChargerVault | impl | live | yes |
+| polygon | `0x90a2aadba560040e604ca57ca75760ab89abd085` | WooSuperChargerVaultV2 | impl | live | yes |
+| polygon | `0x925afa2318825fcac673ef4ef551208b125dd965` | WooAccessManager | impl | live | no |
+| polygon | `0x9dd5dd86b978f17628f01307a83347d9ec9b0699` | WooSuperChargerVaultV2 | impl | live | yes |
+| polygon | `0x9f46a7f7afd5a595c782e57b5dae1fcc01bff18d` | WooLendingManager | impl | live | yes |
+| polygon | `0xcf6ce5fd6bf28bb1aeac88a55251f6c840059de5` | WooWithdrawManager | impl | live | no |
+| polygon | `0xedbb74da05d58b22f07184bb79ed9124791799ac` | WooSuperChargerVaultV2 | impl | live | yes |
+
+## Source unavailable (33)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x5c7ff24fa7af62bc25ad6747a6193183b4bb7bc5`
+- arbitrum `0x6fc2c9f904a98caeeef6aaba6de625b5698f3f08`
+- arbitrum `0x79a5453865a39f67d3ffc7964cd760f1763be767`
+- arbitrum `0x7de3fce3de3cdc34595eed74773cd47b84bca340`
+- arbitrum `0xbfe3d22b223909a06469854e7af374ab449f09ac`
+- arbitrum `0xcf4ea1688bc23dd93d933eda535f8b72fc8934ec`
+- arbitrum `0xd05b953cfd75426711a904f76eb3241bad5d03ac`
+- arbitrum `0xd14a997308f9e7514a8fea835064d596cdcaa99e`
+- arbitrum `0xe76c97897a9c3f8aaafc3fe86457fe460553d3fe`
+- arbitrum `0xe77adf3936f70a2ed44f26ced01d26c1430ead6a`
+- arbitrum `0xfeecedbc3c292db79347473a2b976a463c3ac2d6`
+- avalanche `0x11b29ae3037f4526e4aa56952318e0d01ada836a`
+- avalanche `0x1cd7b33faf4f172146bcbb841c7addc96802e6c4`
+- avalanche `0x385e063dea8908d06be024de85da5b8da4b10f73`
+- avalanche `0x697c97a37bc00c2306f2b08ca14f3d55db6ffccd`
+- avalanche `0x866810349b2e28e411669911bb0babb06cc60625`
+- avalanche `0x86a6391d5d7c02245927e2dc0cbfa3e5f1b9abc7`
+- avalanche `0xc8ec7f48a82a07d95110ff26faacde9757dd9dc7`
+- avalanche `0xcd1b9810872aec66d450c761e93638fb9fe09db0`
+- avalanche `0xfc0e57b5f8adcadc5e6e37578bb9aa30cee312af`
+- base `0x44df096d2600c6a6db77899db3de3aecff746cb8`
+- base `0x8c603050d7a913b6f63836e07ebf385a4a5736e7`
+- base `0xb772122c4a37fe1754b46ab1799b909351e8cb43`
+- bsc `0x5cb9ba4a6f05c4125d61172e1b2c1dbe3afb3158`
+- bsc `0x7eb8d4ccfdbd9df8d3520e9c5b5edf6a5cbe4cad`
+- ethereum `0xba91ffd8a2b9f68231eca6af51623b3433a89b13`
+- optimism `0xba91ffd8a2b9f68231eca6af51623b3433a89b13`
+- polygon `0x382a9b0bc5d29e96c3a0b81ce9c64d6c8f150efb`
+- polygon `0x3fe2c827ff572b8fe03b7d16695c88f21448b3b9`
+- polygon `0x6f09ae4925739453d7c8c9a22fd07585148dfc01`
+- polygon `0x7f78213da92552d00bd676466ab2ef8a9287fd4c`
+- polygon `0x9bcf8b0b62f220f3900e2dc42deb85c3f79b405b`
+- polygon `0xba91ffd8a2b9f68231eca6af51623b3433a89b13`

@@ -1,0 +1,18 @@
+{
+  "component": "HolyPalMultiplier",
+  "main_contract": "HolyPalMultiplier",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5b51a7da57fe6db797abd787ddfd923daabaadc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

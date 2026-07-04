@@ -1,0 +1,18 @@
+{
+  "component": "MultiSender",
+  "main_contract": "MultiSender",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xee981b2459331ad268cc63ce6167b446af4161f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

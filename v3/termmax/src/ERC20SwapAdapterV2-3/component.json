@@ -1,0 +1,20 @@
+{
+  "component": "ERC20SwapAdapterV2-3",
+  "main_contract": "ERC20SwapAdapterV2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/term-structure/audits/blob/main/TermMax/TermMax-ABDK-audit-report-Phase1-v2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x131f637c73ee2fcbe4423f6232ac5c1a07eecc86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

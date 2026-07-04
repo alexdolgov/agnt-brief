@@ -1,0 +1,26 @@
+{
+  "component": "KyberFeeHandler",
+  "main_contract": "KyberFeeHandler",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa943b542d1d5683d3454bd0d7ee86c48f36ecfd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec30037c9a8a6a3f42734c30dfa0a208af71b40c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

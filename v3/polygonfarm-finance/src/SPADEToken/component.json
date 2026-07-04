@@ -1,0 +1,21 @@
+{
+  "component": "SPADEToken",
+  "main_contract": "SPADEToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TechRate/Smart-Contract-Audits/blob/main/2018-21%20N-Z/SPADE%20Standart%20Smart%20Contract%20Security%20Audit.pdf",
+    "https://paladinsec.co/projects/polygonfarm"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf5ea626334037a2cf0155d49ea6462fddc6eff19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

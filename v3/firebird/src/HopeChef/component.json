@@ -1,0 +1,18 @@
+{
+  "component": "HopeChef",
+  "main_contract": "HopeChef",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc414f3bc6234d2bcfdc158a1f8666c7fbe3ba562",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TokenRelayer",
+  "main_contract": "TokenRelayer",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5648003d9dca549ff5db0c76b3f1b0b58355f479",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

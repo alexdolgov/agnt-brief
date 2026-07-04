@@ -1,0 +1,18 @@
+{
+  "component": "RewardDelegators",
+  "main_contract": "RewardDelegators",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e12e9aba385c36cad25858f2fdb8b5e3b3d8d16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

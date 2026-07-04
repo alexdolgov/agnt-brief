@@ -1,0 +1,18 @@
+{
+  "component": "EuroBet",
+  "main_contract": "EuroBet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x444c00e18c266a9626ae5563b408adb4830089db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

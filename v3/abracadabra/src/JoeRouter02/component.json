@@ -1,0 +1,18 @@
+{
+  "component": "JoeRouter02",
+  "main_contract": "JoeRouter02",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x60ae616a2155ee3d9a68541ba4544862310933d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

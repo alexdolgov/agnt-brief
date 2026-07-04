@@ -1,0 +1,21 @@
+{
+  "component": "DefaultReserveInterestRateStrategy",
+  "main_contract": "DefaultReserveInterestRateStrategy",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf",
+    "https://www.openzeppelin.com/news/aave-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "DopexDpxSsovWrapper",
+  "main_contract": "DopexDpxSsovWrapper",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x39cd5f935cd7af62f6b74606484af7bbd4914ea0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb2f4db852cb86754ba93c8e08bc01a2c7576da95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

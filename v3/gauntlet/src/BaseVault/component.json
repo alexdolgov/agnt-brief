@@ -1,0 +1,18 @@
+{
+  "component": "BaseVault",
+  "main_contract": "BaseVault",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x000000000001cdb57e58fa75fe420a0f4d6640d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

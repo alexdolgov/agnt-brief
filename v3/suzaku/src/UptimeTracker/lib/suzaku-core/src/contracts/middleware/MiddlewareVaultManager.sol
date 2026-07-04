@@ -1,0 +1,228 @@
+// SPDX-License-Identifier: BUSL-1.1
+// SPDX-FileCopyrightText: Copyright 2024 ADDPHO
+
+pragma solidity 0.8.25;
+
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {EnumerableMap} from "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
+import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
+
+import {IMiddlewareVaultManager} from "../../interfaces/middleware/IMiddlewareVaultManager.sol";
+import {IAvalancheL1Middleware} from "../../interfaces/middleware/IAvalancheL1Middleware.sol";
+import {IRegistry} from "../../interfaces/common/IRegistry.sol";
+import {IEntity} from "../../interfaces/common/IEntity.sol";
+import {IVaultTokenized} from "../../interfaces/vault/IVaultTokenized.sol";
+import {BaseDelegator} from "../../contracts/delegator/BaseDelegator.sol";
+import {ISlasher} from "../../interfaces/slasher/ISlasher.sol";
+import {IVetoSlasher} from "../../interfaces/slasher/IVetoSlasher.sol";
+
+import {MapWithTimeData} from "./libraries/MapWithTimeData.sol";
+import {AvalancheL1Middleware} from "./AvalancheL1Middleware.sol";
+
+contract MiddlewareVaultManager is IMiddlewareVaultManager, Ownable, AccessControl {
+    using EnumerableMap for EnumerableMap.AddressToUintMap;
+    using MapWithTimeData for EnumerableMap.AddressToUintMap;
+
+    bytes32 public constant VAULTS_MANAGER_ROLE = keccak256("VAULTS_MANAGER_ROLE");
+
+    mapping(address => uint96) public vaultToCollateralClass;
+    EnumerableMap.AddressToUintMap private vaults;
+
+    address public immutable VAULT_REGISTRY;
+    AvalancheL1Middleware public immutable middleware;
+
+    uint48 public immutable VAULT_REMOVAL_EPOCH_DELAY; // 1 epoch delay for removal, affects rewards 
+
+    uint48 private constant INSTANT_SLASHER_TYPE = 0;
+    uint48 private constant VETO_SLASHER_TYPE = 1;
+
+    constructor(
+        address vaultRegistry,
+        address owner,
+        address middlewareAddress,
+        uint48 vaultRemovalEpochDelay_
+    ) Ownable(owner) {
+        if (vaultRegistry == address(0)) {
+            revert MiddlewareVaultManager__ZeroAddress("vaultRegistry");
+        }
+        if (middlewareAddress == address(0)) {
+            revert MiddlewareVaultManager__ZeroAddress("middlewareAddress");
+        }
+        if (vaultRemovalEpochDelay_ == 0) {
+            revert MiddlewareVaultManager__InvalidVaultRemovalDelay();
+        }
+        VAULT_REGISTRY = vaultRegistry;
+        middleware = AvalancheL1Middleware(payable(middlewareAddress));
+        VAULT_REMOVAL_EPOCH_DELAY = vaultRemovalEpochDelay_;
+
+        _grantRole(DEFAULT_ADMIN_ROLE, owner);
+        _grantRole(VAULTS_MANAGER_ROLE, owner);
+    }
+
+    /**
+     * @notice Registers a vault to a specific asset class, sets the max stake.
+     * @param vault The vault address
+     * @param collateralClassId The asset class ID for that vault
+     * @param vaultMaxL1Limit The maximum stake allowed for this vault
+     */
+    function registerVault(address vault, uint96 collateralClassId, uint256 vaultMaxL1Limit) external onlyRole(VAULTS_MANAGER_ROLE) {
+        if (vaultMaxL1Limit == 0) {
+            revert MiddlewareVaultManager__ZeroVaultMaxL1Limit();
+        }
+        if (vaults.contains(vault)) {
+            revert MiddlewareVaultManager__VaultAlreadyRegistered();
+        }
+
+        uint48 vaultEpoch = IVaultTokenized(vault).epochDuration();
+        address slasher = IVaultTokenized(vault).slasher();
+        if (slasher != address(0) && IEntity(slasher).TYPE() == VETO_SLASHER_TYPE) {
+            vaultEpoch -= IVetoSlasher(slasher).vetoDuration();
+        }
+        if (vaultEpoch < middleware.SLASHING_WINDOW()) {
+            revert MiddlewareVaultManager__VaultEpochTooShort();
+        }
+
+        vaultToCollateralClass[vault] = collateralClassId;
+        _setVaultMaxL1Limit(vault, collateralClassId, vaultMaxL1Limit);
+
+        vaults.add(vault);
+        vaults.enable(vault);
+    }
+
+    /**
+     * @notice Updates a vault's max L1 stake limit. Disables or enables the vault based on the new limit
+     * @param vault The vault address
+     * @param collateralClassId The asset class ID
+     * @param vaultMaxL1Limit The new maximum stake
+     */
+    function updateVaultMaxL1Limit(address vault, uint96 collateralClassId, uint256 vaultMaxL1Limit) external onlyRole(VAULTS_MANAGER_ROLE) {
+        if (!vaults.contains(vault)) {
+            revert MiddlewareVaultManager__NotVault(vault);
+        }
+        if (vaultToCollateralClass[vault] != collateralClassId) {
+            revert MiddlewareVaultManager__WrongVaultCollateralClass();
+        }
+
+        _setVaultMaxL1Limit(vault, collateralClassId, vaultMaxL1Limit);
+
+        (uint48 enabledTime, uint48 disabledTime) = vaults.getTimes(vault);
+
+        // disable vault
+        if (vaultMaxL1Limit == 0) {
+            if (disabledTime == 0 && enabledTime != 0) {
+                vaults.disable(vault);
+            }
+            return;
+        }
+
+        // nothing to do
+        if (vaultMaxL1Limit > 0 && disabledTime == 0 && enabledTime != 0) return;
+
+        // enable vault
+        vaults.enable(vault);
+    }
+
+    /**
+     * @notice Removes a vault if the grace period has passed
+     * @param vault The vault address
+     */
+    function removeVault(
+        address vault
+    ) external onlyRole(VAULTS_MANAGER_ROLE) {
+        if (!vaults.contains(vault)) {
+            revert MiddlewareVaultManager__NotVault(vault);
+        }
+
+        (, uint48 disabledTime) = vaults.getTimes(vault);
+        if (disabledTime == 0) {
+            revert MiddlewareVaultManager__VaultNotDisabled();
+        }
+
+        uint48 disabledEpoch = middleware.getEpochAtTs(disabledTime);
+        uint48 currentEpoch = middleware.getCurrentEpoch();
+        if (currentEpoch < disabledEpoch + VAULT_REMOVAL_EPOCH_DELAY) {
+            revert MiddlewareVaultManager__VaultGracePeriodNotPassed();
+        }
+
+        // Remove from vaults and clear mapping
+        vaults.remove(vault);
+        delete vaultToCollateralClass[vault];
+    }
+
+    /**
+     * @notice Sets a vault's max L1 stake limit
+     * @param vault The vault address
+     * @param collateralClassId The asset class ID
+     * @param amount The new maximum stake
+     */
+    function _setVaultMaxL1Limit(address vault, uint96 collateralClassId, uint256 amount) internal {
+        if (!IRegistry(VAULT_REGISTRY).isEntity(vault)) {
+            revert MiddlewareVaultManager__NotVault(vault);
+        }
+        if (!middleware.isActiveCollateralClass(collateralClassId)) {
+            revert IAvalancheL1Middleware.AvalancheL1Middleware__CollateralClassNotActive(collateralClassId);
+        }
+        address vaultCollateral = IVaultTokenized(vault).collateral();
+        if (!middleware.isAssetInClass(collateralClassId, vaultCollateral)) {
+            revert IAvalancheL1Middleware.AvalancheL1Middleware__CollateralNotInCollateralClass(
+                vaultCollateral, collateralClassId
+            );
+        }
+        address delegator = IVaultTokenized(vault).delegator();
+        BaseDelegator(delegator).setMaxL1Limit(middleware.BALANCER(), collateralClassId, amount);
+    }
+
+    function slashVault() external pure {
+        revert MiddlewareVaultManager__SlasherNotImplemented();
+    }
+
+    function getVaultCount() external view returns (uint256) {
+        return vaults.length();
+    }
+
+    function getVaultAtWithTimes(
+        uint256 index
+    ) external view returns (address vault, uint48 enabledTime, uint48 disabledTime) {
+        return vaults.atWithTimes(index);
+    }
+
+    function getVaultCollateralClass(
+        address vault
+    ) external view returns (uint96) {
+        return vaultToCollateralClass[vault];
+    }
+
+    function getVaults(
+        uint48 epoch
+    ) external view returns (address[] memory) {
+        uint256 vaultCount = vaults.length();
+        uint48 epochStart = middleware.getEpochStartTs(epoch);
+
+        // Early return for empty vaults
+        if (vaultCount == 0) {
+            return new address[](0);
+        }
+
+        address[] memory tempVaults = new address[](vaultCount);
+        uint256 activeCount = 0;
+
+        for (uint256 i = 0; i < vaultCount; i++) {
+            (address vault, uint48 enabledTime, uint48 disabledTime) = vaults.atWithTimes(i);
+            if (_wasActiveAt(enabledTime, disabledTime, epochStart)) {
+                tempVaults[activeCount] = vault;
+                activeCount++;
+            }
+        }
+
+        address[] memory activeVaults = new address[](activeCount);
+        for (uint256 i = 0; i < activeCount; i++) {
+            activeVaults[i] = tempVaults[i];
+        }
+
+        return activeVaults;
+    }
+
+    function _wasActiveAt(uint48 enabledTime, uint48 disabledTime, uint48 timestamp) private pure returns (bool) {
+        return enabledTime != 0 && enabledTime <= timestamp && (disabledTime == 0 || disabledTime > timestamp);
+    }
+}

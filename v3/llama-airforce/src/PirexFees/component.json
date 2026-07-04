@@ -1,0 +1,18 @@
+{
+  "component": "PirexFees",
+  "main_contract": "PirexFees",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b0dff589fc0acac23581ecaff5688434db0720f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

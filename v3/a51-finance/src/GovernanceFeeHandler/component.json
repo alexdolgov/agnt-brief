@@ -1,0 +1,20 @@
+{
+  "component": "GovernanceFeeHandler",
+  "main_contract": "GovernanceFeeHandler",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/a51finance/concentrated-liquidity-tool/blob/main/audits/Hashlock/A51%20Finance%20%20Smart%20Contract%20Audit%20Report%20-%20Revised%20Report%20v2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x948a4df3e32dd43208b111b27c592f90c41ab322",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

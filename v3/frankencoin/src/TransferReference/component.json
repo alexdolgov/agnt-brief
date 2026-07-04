@@ -1,0 +1,18 @@
+{
+  "component": "TransferReference",
+  "main_contract": "TransferReference",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf98c221661f51578f5e5236b189a493e2a8a1916",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

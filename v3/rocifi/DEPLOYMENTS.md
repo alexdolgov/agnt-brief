@@ -1,0 +1,67 @@
+# rocifi — deployments
+
+61 verified deployment(s) across 15 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| polygon | `0x03d14e673525adb192639d77e2ca0289932f5a23` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x0aa16c5537036edab0de09f28962bf2cf5e878f7` | ERC1967Proxy-2 | proxy | live | no |
+| polygon | `0x130035b6289de638c58b2ff865e69923545321b9` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x18bf80c31c05cd593808ad137dde142325fa4e5c` | ERC1967Proxy-2 | impl | inactive | no |
+| polygon | `0x20715817f7d991c282bf0137252017c0b2bb9c96` | ERC1967Proxy | impl | inactive | no |
+| polygon | `0x273e26ad3bdfde8590ac7104fd9639d0f6e2a9c3` | LoanManager | impl | inactive | no |
+| polygon | `0x2b3c8082e96e29de89881b9afade5e84f5e17398` | Pool | impl | inactive | no |
+| polygon | `0x2cd697f0ad24b2f79234829731eab659a09dc806` | ScoreDB | impl | inactive | no |
+| polygon | `0x347892c2c0c230f0803127f4e1137b3e975f57e4` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x34bdee89c0c2c34628012ea918bd7d1f435c4036` | LoanManager | impl | inactive | no |
+| polygon | `0x3ae1ba3904501922b80f8f059c0762fe698da322` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x44ce4454ac39cafe4190ef47378b9c932ff17a00` | ERC1967Proxy-3 | proxy | live | no |
+| polygon | `0x44d1556b489fefadd927871948350e752d858380` | ScoreDB | impl | inactive | no |
+| polygon | `0x44d27327d662b9fbf019b56f7b1c6a5b33be2fae` | ERC1967Proxy-3 | proxy | live | no |
+| polygon | `0x493153513d0cb74988558cba576eb1639f83f982` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x4997b835f1ed797df3ab2cbf2f49427d033db4ee` | LoanManager | impl | inactive | no |
+| polygon | `0x4ebb81605f91c02827426e37001d402bf46a170d` | Pool | proxy | live | no |
+| polygon | `0x54bd8406d82ca6149165c77cbd888962363bffb3` | SettingsProvider | impl | inactive | no |
+| polygon | `0x58786528b868f3cd3ae4e713a573316af7c59f47` | ERC1967Proxy-3 | impl | inactive | no |
+| polygon | `0x5de6d10e65405c97c3868fd6bf9a2f1ac5e0bf1e` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x60ade7ec42f3907474d5d6008eb36aeb2627bd41` | LoanManager | proxy | live | no |
+| polygon | `0x6ee09748d9bd3c0f736a1242042e01705085e1c3` | ERC1967Proxy-2 | impl | inactive | no |
+| polygon | `0x752fbf8d090ca02fee105eb2d734d58c5cd31acf` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x775233ec40b2907096e4d1affc0597bed52db8ac` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x7ba893d3671e0f869382483caa5e2b5406f17ae8` | SettingsProvider | impl | inactive | no |
+| polygon | `0x7e5e7a86621d6ede0da8280ce379bbc618048d73` | ERC1967Proxy-2 | impl | inactive | no |
+| polygon | `0x7fb02f1e343e2431fe27e326ad0d316a344d07b8` | Pool | proxy | live | no |
+| polygon | `0x8f29bc4670907da0afafae9e32af3c6193479723` | ERC1967Proxy | impl | inactive | no |
+| polygon | `0x90da187baea926fa14386f12629b39488e1266eb` | ERC1967Proxy-2 | impl | inactive | no |
+| polygon | `0x9414d2a642963d609a7a370c5156cc9e34435b90` | ERC1967Proxy-2 | impl | inactive | no |
+| polygon | `0x94c29f381a65344d65bab80f321660a75c237815` | Pool | proxy | live | no |
+| polygon | `0x94f62ca96fa06c065d8a2d3211c067100087221c` | LoanManager | impl | inactive | no |
+| polygon | `0x98ccf35738527389d935c8eaaf4604bdacd544c4` | CollateralManager | impl | live | yes |
+| polygon | `0x99db03f5b4317b2242d7424a977feb6dab9de112` | ERC1967Proxy-3 | impl | inactive | no |
+| polygon | `0x9c43695e01042fc9962d13efcfaa263bf86130d0` | SettingsProvider | proxy | live | no |
+| polygon | `0xa7cc4a016abcddd5f0fe278a08b4fcd3f4f6ae28` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xad8899a7e3d45c7967e430ca3ff6fd21686a9e20` | LoanManager-2 | impl | live | yes |
+| polygon | `0xae7ab28f17b2508e47c5584569d18f5387d8f04f` | ERC1967Proxy | impl | live | no |
+| polygon | `0xae9cbca1d6c90b86bd437ca0c3a3e07dbf7b1bbb` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xaeebff0a4fedaf2ea66848dfb1295667217451b7` | LoanManager | impl | live | no |
+| polygon | `0xb12f7407f823b9c712f4cb7c173ef73a7f2a781e` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xb2e577a112a6f2c6d3d511ade2ad512cea312a6d` | SettingsProvider | proxy | live | no |
+| polygon | `0xb329c9dee4419781dade20e6adb6582ad3ea16ac` | PriceFeedSettable | impl | live | no |
+| polygon | `0xb5d6e051772c523c62ae1f59fc457780cf0a438f` | ScoreDB | proxy | live | no |
+| polygon | `0xbdf4f73941640960effc5d9ca57c18bbdf458cc1` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xbf2ea1480081ec1abac5c4d06b0971435acbdb82` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xc9686ae6aab678a42a12cdd0bc28b6f04a963873` | ERC1967Proxy | impl | inactive | no |
+| polygon | `0xcde0fde0638227363847fa763fd53c11cecc6c28` | Pool-2 | impl | live | yes |
+| polygon | `0xd0a1ab922496390e133567f605981206d938172f` | ERC1967Proxy-2 | proxy | live | no |
+| polygon | `0xd4f05951102cad5f1f47baa48efad8e0304a0678` | NFCS | impl | live | yes |
+| polygon | `0xd85af14c32cc98be9fe5195edb797773af8bb609` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xdcd617649099aae438ee27cfc8bafd10e49276e0` | Liquidator | impl | live | no |
+| polygon | `0xe19e96dbc247822d3dc857e11e35aea6f9e8f19b` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xe2920b4ec1b6ca560e076f922ab5706f0d9fce25` | Pool | impl | live | no |
+| polygon | `0xe49931f8103b11414c59ef85191261a5b64e39f0` | NamedNFT | impl | live | no |
+| polygon | `0xeeaab451d240b6bee41345a66f1a06585985ecc4` | Pool | impl | inactive | no |
+| polygon | `0xef5b158dd68607a3ce022e8beb75490e2a678159` | PriceFeed | impl | live | no |
+| polygon | `0xf32f8fec1559f829a2bae9d2b43e2b588857bcf5` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xf70abbfc37fd0c21cce6d3369ea1bef7395c7185` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xf8420d21ffc15a2b3cde1454c48e306eb8e14861` | ERC1967Proxy | impl | inactive | no |
+| polygon | `0xfdb2bda9997fbb1463ac4b797c3a37edb810b93a` | PriceFeedSettable | proxy | live | no |

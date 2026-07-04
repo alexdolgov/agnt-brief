@@ -1,0 +1,18 @@
+{
+  "component": "ManagerSlotSetter-2",
+  "main_contract": "ManagerSlotSetter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8c0b650f149a0817be2e0767a636122994ac49ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

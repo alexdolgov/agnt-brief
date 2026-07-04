@@ -1,0 +1,18 @@
+{
+  "component": "JetfuelFortressVault",
+  "main_contract": "JetfuelFortressVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x647db6dce3c36ac1a3ba48f0f6b767a6c73e22d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

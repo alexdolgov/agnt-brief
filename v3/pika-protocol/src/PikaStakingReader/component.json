@@ -1,0 +1,26 @@
+{
+  "component": "PikaStakingReader",
+  "main_contract": "PikaStakingReader",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x66f63f7db6bce657d1d9d68d7a67255864282b05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc8e617e5cf23fd9213cdfc1e1e5f6bba81745a0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

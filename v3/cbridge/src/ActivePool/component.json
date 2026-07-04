@@ -1,0 +1,26 @@
+{
+  "component": "ActivePool",
+  "main_contract": "ActivePool",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x23ad4cb653813c319b18a63300e54df4a6fc9a86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x604f967fcb01fa1dcdc8ac3bf779caa68db34271",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

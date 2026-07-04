@@ -1,0 +1,372 @@
+{
+  "schema_version": "2.0",
+  "project_key": "belief-market",
+  "generated_at": "2026-07-03T21:05:33.476Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "belief-market",
+    "tier": 0,
+    "peak_tvl": 755,
+    "peak_date": "2026-06-23T00:00:00.000Z",
+    "tvl_30d_ago": 410,
+    "tvl_90d_ago": 35,
+    "tvl_current": 305,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 39,
+    "change_30d_pct": -25.609756097560975,
+    "change_90d_pct": 771.4285714285714,
+    "days_since_peak": 8,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 59.60264900662252
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 1,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
+    "total_audits": 6,
+    "direct_audits": 6,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 395.30163,
+    "tvl_usd": 395.30163,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.belief.market/",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-04",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 3,
+      "stale": 2,
+      "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 2,
+    "total_contracts_indexed": 3,
+    "live_contracts": 1,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5035608222e1c226781caa22fe40d0db6cc6c119",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5035608222e1c226781caa22fe40d0db6cc6c119",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xab1fb9b0efa9235aff385639611cb1bbbbcc3b40",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WeightedParimutuelMarkets",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Belief Market",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WeightedParimutuelMarkets",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xab1fb9b0efa9235aff385639611cb1bbbbcc3b40",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12757"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-06-23 23:20:58+03",
+      "deploy_coverage_basis": "code_matched"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 12757,
+      "audit_key": "audit-12757",
+      "report_name": "4-1-25-Belief-Market-Report.pdf",
+      "report_url": "https://static1.squarespace.com/static/6747d433fe14856edb4bb8cf/t/67fc98e80185f366ca14ad66/1756149856695/4-1-25-Belief-Market-Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MarketsBase",
+        "WeightedParimutuelMarkets"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12758,
+      "audit_key": "audit-12758",
+      "report_name": "Ubet+UBucks+Audit+Report.pdf",
+      "report_url": "https://static1.squarespace.com/static/6747d433fe14856edb4bb8cf/t/67fc8da3e42cb86797670cd1/1756149856695/Ubet+UBucks+Audit+Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12759,
+      "audit_key": "audit-12759",
+      "report_name": "Ubet+Parlay+Audit+Report.pdf",
+      "report_url": "https://static1.squarespace.com/static/6747d433fe14856edb4bb8cf/t/67fc90fbb3bf0e00b943845b/1756149856695/Ubet+Parlay+Audit+Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12760,
+      "audit_key": "audit-12760",
+      "report_name": "Ubet+Audit+Report+6-12-24+(1).pdf",
+      "report_url": "https://static1.squarespace.com/static/6747d433fe14856edb4bb8cf/t/67fc8dc9b3bf0e00b94350ee/1756149856695/Ubet+Audit+Report+6-12-24+%281%29.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12761,
+      "audit_key": "audit-12761",
+      "report_name": "Ubet+Audit+Report.pdf",
+      "report_url": "https://static1.squarespace.com/static/6747d433fe14856edb4bb8cf/t/67fc90b37872ea0d2a8ae2d7/1756149856695/Ubet+Audit+Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12762,
+      "audit_key": "audit-12762",
+      "report_name": "Audit_Report_UBET-SBP_FINAL_20+(1).pdf",
+      "report_url": "https://static1.squarespace.com/static/6747d433fe14856edb4bb8cf/t/67fc8f8eca75090c5568bf26/1756149856695/Audit_Report_UBET-SBP_FINAL_20%2B%281%29.pdf",
+      "auditor": "resonance",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2025-04"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12758,
+        "report_name": "Ubet+UBucks+Audit+Report.pdf"
+      },
+      {
+        "audit_id": 12759,
+        "report_name": "Ubet+Parlay+Audit+Report.pdf"
+      },
+      {
+        "audit_id": 12760,
+        "report_name": "Ubet+Audit+Report+6-12-24+(1).pdf"
+      },
+      {
+        "audit_id": 12761,
+        "report_name": "Ubet+Audit+Report.pdf"
+      },
+      {
+        "audit_id": 12762,
+        "report_name": "Audit_Report_UBET-SBP_FINAL_20+(1).pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

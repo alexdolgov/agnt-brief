@@ -1,0 +1,21 @@
+{
+  "component": "BaseConnextFacet-4",
+  "main_contract": "BaseConnextFacet",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/Connext-Spearbit-Security-Review.pdf",
+    "https://github.com/connext/audits/blob/main/amarok/ConnextNxtp-Spearbit-Security-Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x1ac32215b08806a5bc5271d7fd77919c3c8ca84e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

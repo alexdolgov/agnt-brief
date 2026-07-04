@@ -1,0 +1,18 @@
+{
+  "component": "KeeperOracle",
+  "main_contract": "KeeperOracle",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1990fa13ccef6100703a6999c90c0493a740f1d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

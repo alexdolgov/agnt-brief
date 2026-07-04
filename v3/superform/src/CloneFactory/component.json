@@ -1,0 +1,18 @@
+{
+  "component": "CloneFactory",
+  "main_contract": "CloneFactory",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x99fdfcc95a45ca4604e3c1eb86f2b5d9e217f460",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

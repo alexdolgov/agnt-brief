@@ -1,0 +1,18 @@
+{
+  "component": "CompoundV2MigrationAdapter",
+  "main_contract": "CompoundV2MigrationAdapter",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b89c07f480df1945279031b5fc6ff241b8f1101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

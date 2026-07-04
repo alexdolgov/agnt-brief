@@ -1,0 +1,26 @@
+{
+  "component": "DIAOracleFactory",
+  "main_contract": "DIAOracleFactory",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1478570fc9c8422b6733455db5504378940ddae8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x2aec24e2fac282134c28c419cd44b021412c1fd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

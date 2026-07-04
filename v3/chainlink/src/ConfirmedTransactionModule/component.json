@@ -1,0 +1,18 @@
+{
+  "component": "ConfirmedTransactionModule",
+  "main_contract": "ConfirmedTransactionModule",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04b2218a03f4b034a2e83e9e8d1e7ea0da8748ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

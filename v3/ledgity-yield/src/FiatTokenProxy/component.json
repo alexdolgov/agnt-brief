@@ -1,0 +1,50 @@
+{
+  "component": "FiatTokenProxy",
+  "main_contract": "FiatTokenProxy",
+  "source_file_count": 5,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x391071fe567d609e4af9d32de726d4c33679c7e2",
+      "is_proxy": true,
+      "implementation_address": "0x25c049cadb9bb7cea794dba3b58dfdb1ece400f4",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3fd4eaa6f9b0b46bb8a2dbe8c646524e141ee783",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7657f03eef1b05996b02eeeb89a0683a5b61fe35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xba2b70309db7ec370e68240cf1f05580cdb0e563",
+      "is_proxy": true,
+      "implementation_address": "0x6f0444a3915f63a2bf2677843d9a94c48de28d6a",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+      "is_proxy": true,
+      "implementation_address": "0x2ce6311ddae708829bc0784c967b7d77d19fd779",
+      "liveness": "live"
+    }
+  ]
+}

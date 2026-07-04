@@ -1,0 +1,40 @@
+{
+  "component": "MainnetController-28",
+  "main_contract": "MainnetController",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v100-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v100-cantina-beta-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v100-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v110-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v110-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v1100-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v1100-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v130-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v130-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v140-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v140-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v150-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v150-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v160-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v160-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v170-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v170-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v180-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v180-certora-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v190-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-alm-controller/blob/master/audits/v190-certora-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x08aba599bd82e4de7b78516077cdf1cb24788cc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

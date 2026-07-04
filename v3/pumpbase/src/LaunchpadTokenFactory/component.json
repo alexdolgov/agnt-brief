@@ -1,0 +1,44 @@
+{
+  "component": "LaunchpadTokenFactory",
+  "main_contract": "LaunchpadTokenFactory",
+  "source_file_count": 16,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://spywolf.co/audits/Pumpbase_0x19798E390E69a36814B25BbBC7e75530E8a0A101.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x19798e390e69a36814b25bbbc7e75530e8a0a101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x198cb4ccea8cb6a3d700aee12ddcf5e8a38d833c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3b49c6aa89740eea73b463402a6c4e49847600c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf4114d783d96d2205cf5bd71b3cfbfd53e8ff00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

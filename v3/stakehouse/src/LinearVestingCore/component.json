@@ -1,0 +1,18 @@
+{
+  "component": "LinearVestingCore",
+  "main_contract": "LinearVestingCore",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BurnableMintableCappedERC20",
+  "main_contract": "BurnableMintableCappedERC20",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5a76a56ad937335168b30df3aa1327277421c6ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

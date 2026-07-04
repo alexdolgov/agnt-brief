@@ -1,0 +1,18 @@
+{
+  "component": "InfinityPoolsSwapForwarder",
+  "main_contract": "InfinityPoolsSwapForwarder",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

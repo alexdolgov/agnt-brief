@@ -1,0 +1,37 @@
+{
+  "component": "Utils",
+  "main_contract": "Utils",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://cert-api.salusec.io/api/v1/salus/contract/certificate/full/2025/ZeroBase_V2_audit_report_2025-09-16.pdf",
+    "https://github.com/Salusec/Salus-audit/blob/main/2024/ZeroBase_report_2024-12-24.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x254bd92fae14e595ad2cf6652941684aa01045dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x887b00e38031c7d4e0cac2a7cd46a6aa30d13f19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa07f347eaad1ba229dc913eda646b5f17d0661ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StablecoinBridge-6",
+  "main_contract": "StablecoinBridge",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ef3d03efcc1338d6210946f8cf5fb1a8b630341",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

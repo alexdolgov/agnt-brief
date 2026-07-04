@@ -1,0 +1,20 @@
+{
+  "component": "MultisigWallet-2",
+  "main_contract": "MultisigWallet",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cdn.xlink.network/pdf/XLink_MultisigWallet_BridgeToken_2024-06.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0f38ed043a1a2ec79b15d7f4fb8d25036680ce03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

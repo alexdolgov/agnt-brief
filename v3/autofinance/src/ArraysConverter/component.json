@@ -1,0 +1,18 @@
+{
+  "component": "ArraysConverter",
+  "main_contract": "ArraysConverter",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x09708019cf2527ad3263885ff712fc79cec5d0c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

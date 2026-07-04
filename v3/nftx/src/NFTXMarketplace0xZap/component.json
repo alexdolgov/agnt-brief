@@ -1,0 +1,28 @@
+{
+  "component": "NFTXMarketplace0xZap",
+  "main_contract": "NFTXMarketplace0xZap",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://268710349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MObsGdLeFkbdDe8_KiT-2910905616%2Fuploads%2Ff5r6lXZIs4rTMBTrt0eH%2FNFTX_V2_Periphery_Report_v1.1_2022_12_23.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27eb56bce836f1068e12157d57c5083781ec3c22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x941a6d105802cccaa06de58a13a6f49ebdcd481c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

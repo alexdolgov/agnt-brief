@@ -1,0 +1,18 @@
+{
+  "component": "StakingRewards",
+  "main_contract": "StakingRewards",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

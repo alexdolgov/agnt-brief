@@ -1,0 +1,18 @@
+{
+  "component": "FASTStaking",
+  "main_contract": "FASTStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1a988a22a03cbe0cf089e3e7d2e6fcf9bd585a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

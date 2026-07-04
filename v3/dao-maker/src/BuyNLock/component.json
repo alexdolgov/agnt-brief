@@ -1,0 +1,18 @@
+{
+  "component": "BuyNLock",
+  "main_contract": "BuyNLock",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b8cc92cee71e789e6a69e5996cee43fa3bf13ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

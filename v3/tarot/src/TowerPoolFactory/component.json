@@ -1,0 +1,18 @@
+{
+  "component": "TowerPoolFactory",
+  "main_contract": "TowerPoolFactory",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x27eef135dbc00e5c3cdf5658d690d4c05dca1b14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

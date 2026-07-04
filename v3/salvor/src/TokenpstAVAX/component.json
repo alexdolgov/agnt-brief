@@ -1,0 +1,18 @@
+{
+  "component": "TokenpstAVAX",
+  "main_contract": "TokenpstAVAX",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x82e1534a5b9b299028e8939a2aef5bcbc079b241",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

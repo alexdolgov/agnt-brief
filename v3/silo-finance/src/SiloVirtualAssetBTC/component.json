@@ -1,0 +1,18 @@
+{
+  "component": "SiloVirtualAssetBTC",
+  "main_contract": "SiloVirtualAssetBTC",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6f6c3101506ccb5d9cbfe0f419e49b00a078e3eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "EVRY",
+  "main_contract": "EVRY",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc2d4a3709e076a7a3487816362994a78ddaeabb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

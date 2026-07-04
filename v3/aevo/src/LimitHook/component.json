@@ -1,0 +1,18 @@
+{
+  "component": "LimitHook",
+  "main_contract": "LimitHook",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1a0dfde3fe4f15119bc750414a3457bf5e9e8c25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

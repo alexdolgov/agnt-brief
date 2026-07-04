@@ -1,0 +1,18 @@
+{
+  "component": "yETH_strategy_deposit_withdrawal_facility",
+  "main_contract": "yETH strategy deposit/withdrawal facility",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x818a8e8240ac57949e28577b81e9eb9ecd7fc5e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

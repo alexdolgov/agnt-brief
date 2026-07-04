@@ -1,0 +1,18 @@
+{
+  "component": "ComposableStablePoolFactory",
+  "main_contract": "ComposableStablePoolFactory",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x55813edb4b83a3286bb69c826cb81bf8c7773524",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

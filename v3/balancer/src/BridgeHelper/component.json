@@ -1,0 +1,18 @@
+{
+  "component": "BridgeHelper",
+  "main_contract": "BridgeHelper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50c2fe8177a05d01ccde47e1c5637b1ab914d0d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

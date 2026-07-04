@@ -1,0 +1,18 @@
+{
+  "component": "TimeConverter",
+  "main_contract": "TimeConverter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x144d0b69da2cae4c299357e2fc5b4c37a234aa43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MidasTimelockController",
+  "main_contract": "MidasTimelockController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdcf9c7a65133a268b110307ca8157538d2d906a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

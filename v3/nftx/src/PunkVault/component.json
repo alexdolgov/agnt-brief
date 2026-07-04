@@ -1,0 +1,18 @@
+{
+  "component": "PunkVault",
+  "main_contract": "PunkVault",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a99fa495c894441180113515aab3b80ce79e491",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

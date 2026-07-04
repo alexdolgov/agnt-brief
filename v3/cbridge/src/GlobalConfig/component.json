@@ -1,0 +1,18 @@
+{
+  "component": "GlobalConfig",
+  "main_contract": "GlobalConfig",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x71e77ffbbfd4418ed47981927738b5425c187f64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

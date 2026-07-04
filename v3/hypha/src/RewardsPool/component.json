@@ -1,0 +1,21 @@
+{
+  "component": "RewardsPool",
+  "main_contract": "RewardsPool",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Zellic/publications/blob/master/GoGoPool%20-%20Zellic%20Audit%20Report.pdf",
+    "https://github.com/code-423n4/2023-02-gogopool-mitigation-contest"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaa8fd06cc3f1059b6d35870bbf625c1bac7c1b1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

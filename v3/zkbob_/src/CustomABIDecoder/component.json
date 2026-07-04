@@ -1,0 +1,18 @@
+{
+  "component": "CustomABIDecoder",
+  "main_contract": "CustomABIDecoder",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbff0020638011357315302727ed55c5193a95f7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

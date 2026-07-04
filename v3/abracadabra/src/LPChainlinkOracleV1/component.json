@@ -1,0 +1,18 @@
+{
+  "component": "LPChainlinkOracleV1",
+  "main_contract": "LPChainlinkOracleV1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x04a34ff16f31c8d6ea7b2c4489df13caa53e31d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

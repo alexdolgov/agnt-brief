@@ -1,0 +1,18 @@
+{
+  "component": "StakeManager",
+  "main_contract": "StakeManager",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a8b34d222bb4169b36bc07aa9ca85d61d3b8ee0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

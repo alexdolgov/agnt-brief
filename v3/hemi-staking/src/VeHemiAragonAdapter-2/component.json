@@ -1,0 +1,18 @@
+{
+  "component": "VeHemiAragonAdapter-2",
+  "main_contract": "VeHemiAragonAdapter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdee010e6f73e951de73484fc9dfffe12d7b9c5da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

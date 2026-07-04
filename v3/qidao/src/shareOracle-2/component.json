@@ -1,0 +1,18 @@
+{
+  "component": "shareOracle-2",
+  "main_contract": "shareOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0fda41a1d4555b85021312b765c6d519b9c66f93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

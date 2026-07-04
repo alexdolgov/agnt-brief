@@ -1,0 +1,18 @@
+{
+  "component": "GooseDollarChefV2",
+  "main_contract": "GooseDollarChefV2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4006243f6f067d06db15799848229209e96126bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

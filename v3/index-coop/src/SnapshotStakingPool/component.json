@@ -1,0 +1,20 @@
+{
+  "component": "SnapshotStakingPool",
+  "main_contract": "SnapshotStakingPool",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexPRTAuditReport.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe03026716a4d5e0992f22a3e6494b4f2809a9c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MockSMT",
+  "main_contract": "MockSMT",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x46b07178907650afc855763a8f83e65afec24074",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

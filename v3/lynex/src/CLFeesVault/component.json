@@ -1,0 +1,26 @@
+{
+  "component": "CLFeesVault",
+  "main_contract": "CLFeesVault",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x10ae74a82ace90d0ac4aacafe6eb57c96a664a84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2c40ead689cb9d5b9acc671599153f8e2e88a361",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

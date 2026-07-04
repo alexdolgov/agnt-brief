@@ -1,0 +1,18 @@
+{
+  "component": "VeFeeGateway",
+  "main_contract": "VeFeeGateway",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8fc7906fc6047679dad53c0c3b40e135486421e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

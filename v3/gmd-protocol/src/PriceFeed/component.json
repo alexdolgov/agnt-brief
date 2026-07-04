@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeed",
+  "main_contract": "PriceFeed",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8660f28220f280dfab99d1dc81237a262620a718",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "vaultBox",
+  "main_contract": "vaultBox",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab0b0dd7e4eab0f9e31a539074a03f1c1be80879",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

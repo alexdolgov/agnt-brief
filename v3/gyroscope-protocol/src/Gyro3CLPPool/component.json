@@ -1,0 +1,18 @@
+{
+  "component": "Gyro3CLPPool",
+  "main_contract": "Gyro3CLPPool",
+  "source_file_count": 54,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x4ac5000fa00e31b587f1b50d596b40b52e9c6c24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

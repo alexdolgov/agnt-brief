@@ -1,0 +1,18 @@
+{
+  "component": "Incentives_for_inclusion_vote",
+  "main_contract": "Incentives for inclusion vote",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70557705dc49d7dc383356b27bc206f1018d1bc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

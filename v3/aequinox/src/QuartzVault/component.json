@@ -1,0 +1,18 @@
+{
+  "component": "QuartzVault",
+  "main_contract": "QuartzVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x25b5118229061cde8b7a46a49184d6174bf89345",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

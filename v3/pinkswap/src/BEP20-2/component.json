@@ -1,0 +1,18 @@
+{
+  "component": "BEP20-2",
+  "main_contract": "BEP20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe981676633dcf0256aa512f4923a7e8da180c595",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

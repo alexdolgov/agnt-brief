@@ -1,0 +1,26 @@
+{
+  "component": "RoyaltyFeeManagerV1B",
+  "main_contract": "RoyaltyFeeManagerV1B",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79a1c123b09f492591a61af642de12b4bb5d0c7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcbfeba41c3e69d24b5c8b04ed60c42cc5d883620",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

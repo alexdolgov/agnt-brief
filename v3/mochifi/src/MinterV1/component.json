@@ -1,0 +1,18 @@
+{
+  "component": "MinterV1",
+  "main_contract": "MinterV1",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9cadb2c8735a120c4d3292dca2b7f03d5f7dd6b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "FraxUnifiedFarmTemplate-5",
+  "main_contract": "FraxUnifiedFarmTemplate",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/FraxQ42021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x169e5fd3fdca9f3fb7c75d09037cbeb65703e470",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

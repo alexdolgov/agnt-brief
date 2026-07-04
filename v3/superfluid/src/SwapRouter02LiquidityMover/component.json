@@ -1,0 +1,26 @@
+{
+  "component": "SwapRouter02LiquidityMover",
+  "main_contract": "SwapRouter02LiquidityMover",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb2c22f1a0dddb6222dae2f29269c703d3b76ac3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb32d94537591a899b13f7923a0f2cd0200a1ca84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

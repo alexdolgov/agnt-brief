@@ -1,0 +1,18 @@
+{
+  "component": "L2GaugeCheckpointer",
+  "main_contract": "L2GaugeCheckpointer",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x343688c5cb92115a52ca485af7f62b4b7a2e9ccc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

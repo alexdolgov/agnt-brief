@@ -1,0 +1,26 @@
+{
+  "component": "PutManagerInvestProxy",
+  "main_contract": "PutManagerInvestProxy",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33c2eefb21da9b1408f2615d02125ff1eba7a666",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c2b3bb00a24da15f9a89777ede1cb87fbadb5d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

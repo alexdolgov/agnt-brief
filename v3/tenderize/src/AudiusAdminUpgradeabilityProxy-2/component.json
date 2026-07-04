@@ -1,0 +1,26 @@
+{
+  "component": "AudiusAdminUpgradeabilityProxy-2",
+  "main_contract": "AudiusAdminUpgradeabilityProxy",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x402aa633b9acfa4c74b7ea38126dd415b9c1118e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc509a0702a618cf7bf958e8e95ad1025e02cee72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

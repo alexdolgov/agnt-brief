@@ -1,0 +1,18 @@
+{
+  "component": "MetricsGroupMigration",
+  "main_contract": "MetricsGroupMigration",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc410bf3c32fdb9f97a97f2848b498f999db542a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

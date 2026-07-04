@@ -1,0 +1,26 @@
+{
+  "component": "VNXProxyAdmin",
+  "main_contract": "VNXProxyAdmin",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1724768a253476159a622a1689146862d3b762c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x35bb28feef0499d7580ed8e8ef1a19ab346b79e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

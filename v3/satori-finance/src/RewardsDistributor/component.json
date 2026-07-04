@@ -1,0 +1,34 @@
+{
+  "component": "RewardsDistributor",
+  "main_contract": "RewardsDistributor",
+  "source_file_count": 17,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x306ebed66642867b94b29752be37b8f20feb5f72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x77b26a2ebb73ce9bdf5c8c44cb98e98f089d6f99",
+      "is_proxy": true,
+      "implementation_address": "0xa469cd94e36e04109d64c708bfc961f2f274f2ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa469cd94e36e04109d64c708bfc961f2f274f2ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

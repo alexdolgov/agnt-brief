@@ -1,0 +1,18 @@
+{
+  "component": "MaviaMarketPool",
+  "main_contract": "MaviaMarketPool",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x10e0b62df92df52ab70c0c8ec6bf5422dd136e50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

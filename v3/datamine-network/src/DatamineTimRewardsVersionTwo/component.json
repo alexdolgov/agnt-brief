@@ -1,0 +1,18 @@
+{
+  "component": "DatamineTimRewardsVersionTwo",
+  "main_contract": "DatamineTimRewardsVersionTwo",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

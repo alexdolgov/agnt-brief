@@ -1,0 +1,18 @@
+{
+  "component": "WEToken",
+  "main_contract": "WEToken",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e4704dc80953245bc87e09980004498d4249b67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

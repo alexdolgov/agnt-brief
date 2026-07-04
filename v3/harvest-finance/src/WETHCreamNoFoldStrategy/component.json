@@ -1,0 +1,26 @@
+{
+  "component": "WETHCreamNoFoldStrategy",
+  "main_contract": "WETHCreamNoFoldStrategy",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e015af8e1c5eb020f91063661cc5ce43719ebcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf477f117caa349ca92dedb3955481628d463bf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

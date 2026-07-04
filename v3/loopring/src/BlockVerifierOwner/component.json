@@ -1,0 +1,18 @@
+{
+  "component": "BlockVerifierOwner",
+  "main_contract": "BlockVerifierOwner",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3941215651f37b681526ea359642174f8e71b3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

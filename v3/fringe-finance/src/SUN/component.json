@@ -1,0 +1,18 @@
+{
+  "component": "SUN",
+  "main_contract": "SUN",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6a36a5a942dec8bb60e5cbf005d70d89abfb505",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

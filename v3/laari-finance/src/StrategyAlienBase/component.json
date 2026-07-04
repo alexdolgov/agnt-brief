@@ -1,0 +1,26 @@
+{
+  "component": "StrategyAlienBase",
+  "main_contract": "StrategyAlienBase",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4f19ef96c715e19c008c7257acb39c971c8ac2b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbe6b04e660869888965dc756d2849299ebe79d32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

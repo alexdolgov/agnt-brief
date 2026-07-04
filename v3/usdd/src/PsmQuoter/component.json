@@ -1,0 +1,18 @@
+{
+  "component": "PsmQuoter",
+  "main_contract": "PsmQuoter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x42d451a84eea3dba29fae4a12ea52bfd187342c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

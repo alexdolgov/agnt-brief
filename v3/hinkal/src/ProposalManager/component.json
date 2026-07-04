@@ -1,0 +1,18 @@
+{
+  "component": "ProposalManager",
+  "main_contract": "ProposalManager",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6817974ca2c354f2fa40d8349b725b5bf81c8338",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

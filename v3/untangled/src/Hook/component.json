@@ -1,0 +1,26 @@
+{
+  "component": "Hook",
+  "main_contract": "Hook",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x48b38b467ece159c9e149153fce4a53685cf6bff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfa171ad7d5e88f6afdbcb9a52118285d8c6a5036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "AnyswapV4Router",
+  "main_contract": "AnyswapV4Router",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x765277eebeca2e31912c9946eae1021199b39c61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

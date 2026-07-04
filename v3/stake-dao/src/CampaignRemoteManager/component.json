@@ -1,0 +1,18 @@
+{
+  "component": "CampaignRemoteManager",
+  "main_contract": "CampaignRemoteManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53ad4cd1f1e52dd02aa9fc4a8250a1b74f351ca2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

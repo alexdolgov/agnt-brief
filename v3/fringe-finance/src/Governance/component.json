@@ -1,0 +1,34 @@
+{
+  "component": "Governance",
+  "main_contract": "Governance",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e87d84828eddd249e7463e9fbd06a49920114e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a15f3a682d086c515be4037bda3b0676203a8ef",
+      "is_proxy": true,
+      "implementation_address": "0x5e87d84828eddd249e7463e9fbd06a49920114e9",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeefb7264fd804e23ef55478c55105f6e2bf1efd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

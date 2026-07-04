@@ -1,0 +1,18 @@
+{
+  "component": "wATOM",
+  "main_contract": "wATOM",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

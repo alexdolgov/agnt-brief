@@ -1,0 +1,21 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_Curve_Curve_Stablecoin_audit_250221.pdf",
+    "https://docs.curve.finance/pdf/audits/StateMind_Curve_Lending.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x044ac5160e5a04e09ebae06d786fc151f2ba5ced",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LinkTokenOptimism",
+  "main_contract": "LinkTokenOptimism",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

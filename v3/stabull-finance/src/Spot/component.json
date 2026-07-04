@@ -1,0 +1,18 @@
+{
+  "component": "Spot",
+  "main_contract": "Spot",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x564df66c90f73e695d32627fbbbc868e2244b82e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BIFKN314FactoryV2",
+  "main_contract": "BIFKN314FactoryV2",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4ecd8bdc617d68789ac2afefbab5d24e2859f450",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

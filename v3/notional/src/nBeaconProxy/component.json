@@ -1,0 +1,130 @@
+{
+  "component": "nBeaconProxy",
+  "main_contract": "nBeaconProxy",
+  "source_file_count": 7,
+  "deployment_count": 15,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0ace2dc3995acd739ae5e0599e71a5524b93b886",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2ddb08f2757909537bdf2d2eb2bd4f7a64e8e5dd",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3482db39b1ffdfa3ca99f0f829aab0855088e707",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4068a40e229c9e8df8deaf716266ef008d673efe",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x41be0117864dc317d1cc8100b01c8ac90da3ba90",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x452f5c6238c05e980a235f63dbc11bfbe004cc56",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4ee6573a7bf74f6dfed54bc9a9de15a81b92e081",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x65ea9aff1b12fc8dac52a9e07ce2928741159a6c",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x692749e5bd565c37f5f562f71b335eefe046eaa0",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6ebce2453398af200c688c7c4ebd479171231818",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7366d16800c3ca83a085e193ae626d7d565d13b3",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc12d27954d9122d971c67ef188736f36629ff958",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc3882b132011ff3cea4da81f3303138368dd5d75",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc9c5e5f79738ddd3924c6f02356291eace665ea3",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfbd9e818ac30311896f7d7e5bc18f613ba644b56",
+      "is_proxy": true,
+      "implementation_address": "0x43c4b0107c190bcc206361b81341b1a829b0722a",
+      "liveness": "live"
+    }
+  ]
+}

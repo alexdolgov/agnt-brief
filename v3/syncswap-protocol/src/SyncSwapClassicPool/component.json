@@ -1,0 +1,18 @@
+{
+  "component": "SyncSwapClassicPool",
+  "main_contract": "SyncSwapClassicPool",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x5ec5b1e9b1bd5198343abb6e55fb695d2f7bb308",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "HolyWingV2",
+  "main_contract": "HolyWingV2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b986b20243b62628f7b47a2dea602c29eb8ace1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

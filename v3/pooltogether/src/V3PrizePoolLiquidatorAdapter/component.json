@@ -1,0 +1,26 @@
+{
+  "component": "V3PrizePoolLiquidatorAdapter",
+  "main_contract": "V3PrizePoolLiquidatorAdapter",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ca3cf8b47b596f2d9b440edc59542539619baec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ab3ba7413b8b0eba426c8a4696d6232e934d0c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

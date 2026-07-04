@@ -1,0 +1,24 @@
+{
+  "component": "Comet-3",
+  "main_contract": "Comet",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/evk-periphery/blob/master/audits/Supremacy%20IRMLinearKinky.pdf",
+    "https://www.zyf.ai/rzfi-audit-report.pdf",
+    "https://zyf.ai/sherlock-audit-november-2025.pdf",
+    "https://zyf.ai/zyfai_audit_cecuro.pdf",
+    "https://zyf.ai/zyfai_erc7540_sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8495af03fb797e2965bcb42cb0693e1c15614798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

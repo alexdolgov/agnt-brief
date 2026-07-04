@@ -1,0 +1,18 @@
+{
+  "component": "BinaryVaultBaseFacet",
+  "main_contract": "BinaryVaultBaseFacet",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x25a88742a20e8c474571ad4213e08303812ab25c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

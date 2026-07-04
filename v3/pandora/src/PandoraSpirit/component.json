@@ -1,0 +1,18 @@
+{
+  "component": "PandoraSpirit",
+  "main_contract": "PandoraSpirit",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb72ba371c900aa68bb9fa473e93cfbe212030fcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

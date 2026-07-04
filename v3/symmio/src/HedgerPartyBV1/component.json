@@ -1,0 +1,26 @@
+{
+  "component": "HedgerPartyBV1",
+  "main_contract": "HedgerPartyBV1",
+  "source_file_count": 54,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7cb60df8803057f5d6a64f75d8d06121dcbfe4d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xeb7bd77d49bb9e86a736dc6350a7a1f90327ca80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

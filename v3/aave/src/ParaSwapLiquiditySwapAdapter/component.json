@@ -1,0 +1,22 @@
+{
+  "component": "ParaSwapLiquiditySwapAdapter",
+  "main_contract": "ParaSwapLiquiditySwapAdapter",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/aave-dao/aave-v3-origin/blob/main/audits/2024-11-07_Certora_Aave-v3.3.0.pdf",
+    "https://github.com/aave/aave-v3-horizon/blob/main/audits/2024-11-07_Certora_Aave-v3.3.0.pdf",
+    "https://github.com/bgd-labs/aave-v3-origin/blob/main/audits/2024-11-07_Certora_Aave-v3.3.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf7fc20d9d1d8dfe55f5f2c3180272a5747dd327f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

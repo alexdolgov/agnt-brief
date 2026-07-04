@@ -1,0 +1,18 @@
+{
+  "component": "MockERC20",
+  "main_contract": "MockERC20",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x74a56c3255c55c9f324eac74923406dc02e913a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MarketParameterStorageLib",
+  "main_contract": "MarketParameterStorageLib",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d07e3a272f5666d10aefc611d0f693b4a8f2e16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

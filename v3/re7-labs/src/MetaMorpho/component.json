@@ -1,0 +1,34 @@
+{
+  "component": "MetaMorpho",
+  "main_contract": "MetaMorpho",
+  "source_file_count": 41,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x12afdefb2237a5963e7bab3e2d46ad0eee70406e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6e37c95b43566e538d8c278eb69b00fc717a001b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa2cac0023a4797b4729db94783405189a4203afc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

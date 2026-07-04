@@ -1,0 +1,18 @@
+{
+  "component": "OpThales",
+  "main_contract": "OpThales",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x217d47011b23bb961eb6d93ca9945b7501a5bb11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

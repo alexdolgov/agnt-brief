@@ -1,0 +1,18 @@
+{
+  "component": "Inch_Swap_Module",
+  "main_contract": "Inch_Swap_Module",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x97d8eb5c7cdced3e80aa8ae5d6a34cc62a11c39f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

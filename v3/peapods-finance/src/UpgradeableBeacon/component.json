@@ -1,0 +1,58 @@
+{
+  "component": "UpgradeableBeacon",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 4,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x006076d007c4db62f1809f636d2f4314bb7114cc",
+      "is_proxy": true,
+      "implementation_address": "0x22987483b2585927bd9b3215611be70225272919",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x22987483b2585927bd9b3215611be70225272919",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9f8c3ef04810d4dd567b7b224626449db5c92355",
+      "is_proxy": true,
+      "implementation_address": "0xeaf725566b4913e4d1fa04e2ec88f78b35e1955f",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xeaf725566b4913e4d1fa04e2ec88f78b35e1955f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0663ab773a4d00d65fe0e0c3e9727c898f6f38eb",
+      "is_proxy": true,
+      "implementation_address": "0x6116b4584e596b30e711c6b64bf7d42587952b38",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x6116b4584e596b30e711c6b64bf7d42587952b38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

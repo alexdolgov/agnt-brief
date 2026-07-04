@@ -1,0 +1,18 @@
+{
+  "component": "LyraStakingSink",
+  "main_contract": "LyraStakingSink",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7fa4ee12bcbe3a7e087839b49a6db96570de4197",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

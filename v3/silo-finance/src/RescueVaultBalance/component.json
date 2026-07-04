@@ -1,0 +1,18 @@
+{
+  "component": "RescueVaultBalance",
+  "main_contract": "RescueVaultBalance",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x75e88c5c11e8c7fa2357f8855912c37e758f982d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

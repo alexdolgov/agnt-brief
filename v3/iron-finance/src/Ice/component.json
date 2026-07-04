@@ -1,0 +1,18 @@
+{
+  "component": "Ice",
+  "main_contract": "Ice",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4a81f8796e0c6ad4877a51c86693b0de8093f2ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "BlackholePairAPIV2",
+  "main_contract": "BlackholePairAPIV2",
+  "source_file_count": 37,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fd265236e240f4f4487ae91de589ec88f7535aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b9fc4714589544aa1e0a75596c611a1364963dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

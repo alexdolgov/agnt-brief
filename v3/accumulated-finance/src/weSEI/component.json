@@ -1,0 +1,18 @@
+{
+  "component": "weSEI",
+  "main_contract": "weSEI",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x7ac168c81f4f3820fa3f22603ce5864d6ab3c547",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

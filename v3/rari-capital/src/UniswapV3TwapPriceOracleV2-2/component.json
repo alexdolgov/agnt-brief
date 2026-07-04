@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3TwapPriceOracleV2-2",
+  "main_contract": "UniswapV3TwapPriceOracleV2",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8eed20f31e7d434648ff51114446b3cffd1ff9f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

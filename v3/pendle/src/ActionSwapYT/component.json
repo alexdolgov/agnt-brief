@@ -1,0 +1,18 @@
+{
+  "component": "ActionSwapYT",
+  "main_contract": "ActionSwapYT",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x05320f5ff1748bc792c42ed7eea2906ba6d9d335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

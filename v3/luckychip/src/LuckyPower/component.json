@@ -1,0 +1,20 @@
+{
+  "component": "LuckyPower",
+  "main_contract": "LuckyPower",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LuckyChipStaking-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7353ba5e34b69c623ab552276c6ec89da8332c5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

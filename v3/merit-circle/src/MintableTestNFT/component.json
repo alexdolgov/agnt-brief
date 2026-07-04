@@ -1,0 +1,18 @@
+{
+  "component": "MintableTestNFT",
+  "main_contract": "MintableTestNFT",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae33b53e2e42846ee446aafae412caf7253dcb0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

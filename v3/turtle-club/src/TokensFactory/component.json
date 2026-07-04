@@ -1,0 +1,18 @@
+{
+  "component": "TokensFactory",
+  "main_contract": "TokensFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e37df413f97fc198a84a21bc463c41b516ad622",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

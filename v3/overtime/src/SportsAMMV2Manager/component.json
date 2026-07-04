@@ -1,0 +1,26 @@
+{
+  "component": "SportsAMMV2Manager",
+  "main_contract": "SportsAMMV2Manager",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4d53ea5bbefd11a1a48a8eca7d596cb6dfca0a72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x88b851425fc3eecf53796c7793f4151227fc10fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

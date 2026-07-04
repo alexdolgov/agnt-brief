@@ -1,0 +1,18 @@
+{
+  "component": "AsyncVaultFactory",
+  "main_contract": "AsyncVaultFactory",
+  "source_file_count": 251,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x859a15b7c2b4fd0641424342130f2b073a115dc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

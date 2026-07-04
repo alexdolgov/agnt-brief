@@ -1,0 +1,18 @@
+{
+  "component": "Sanctuary",
+  "main_contract": "Sanctuary",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac14864ce5a98af3248ffbf549441b04421247d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

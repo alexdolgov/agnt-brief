@@ -1,0 +1,18 @@
+{
+  "component": "FarmerToken",
+  "main_contract": "FarmerToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x864a0b7f8466247a0e44558d29cdc37d4623f213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

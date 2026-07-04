@@ -1,0 +1,26 @@
+{
+  "component": "OmnichainGovernanceExecutorL2",
+  "main_contract": "OmnichainGovernanceExecutorL2",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5bad28dc681712552e4b6ddbb0118e83875132df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x40eb574ca2ea19488e4ffb658ac8c2b81a6898aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

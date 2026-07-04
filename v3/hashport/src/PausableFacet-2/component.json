@@ -1,0 +1,18 @@
+{
+  "component": "PausableFacet-2",
+  "main_contract": "PausableFacet",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2a58671e23f41f2c684daa372f2b06ab673f52bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

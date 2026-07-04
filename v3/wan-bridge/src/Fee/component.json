@@ -1,0 +1,18 @@
+{
+  "component": "Fee",
+  "main_contract": "Fee",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x592de30bebff484b5a43a6e8e3ec1a814902e0b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

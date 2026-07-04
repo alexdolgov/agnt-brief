@@ -1,0 +1,18 @@
+{
+  "component": "GraphPreToken",
+  "main_contract": "GraphPreToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d96113bac24d0b24f73d4cbb27b65ca7e559e10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

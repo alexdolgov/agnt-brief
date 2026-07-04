@@ -1,0 +1,18 @@
+{
+  "component": "ERC721Upgradeable",
+  "main_contract": "ERC721Upgradeable",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1a0fe2d0afed6d645f726d6a25c9f9a47050cc87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

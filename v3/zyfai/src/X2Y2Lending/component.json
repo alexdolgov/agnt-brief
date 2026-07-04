@@ -1,0 +1,26 @@
+{
+  "component": "X2Y2Lending",
+  "main_contract": "X2Y2Lending",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4cd094fcc9f107eed45217b078481bfd8fbbad5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf7da658f1e3da0916fc66291f10b022406f6ee1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

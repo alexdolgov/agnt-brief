@@ -1,0 +1,20 @@
+{
+  "component": "AmphorSyntheticVaultWithPermit",
+  "main_contract": "AmphorSyntheticVaultWithPermit",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Salus_final_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2791eb5807d69fe10c02eed6b4dc12bac0701744",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

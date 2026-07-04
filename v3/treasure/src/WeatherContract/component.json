@@ -1,0 +1,18 @@
+{
+  "component": "WeatherContract",
+  "main_contract": "WeatherContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4b14aa64c37be1ab98deb2b4d197d42149750ec0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

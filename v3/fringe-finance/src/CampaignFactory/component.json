@@ -1,0 +1,50 @@
+{
+  "component": "CampaignFactory",
+  "main_contract": "CampaignFactory",
+  "source_file_count": 12,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x09fa9d4cb408f437442529d9d9daeed914eb3ee1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0afae9fa2954d1f850627df688f0bf09bd595fe4",
+      "is_proxy": true,
+      "implementation_address": "0x09fa9d4cb408f437442529d9d9daeed914eb3ee1",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x44fac3aceb8836338d0a4902b183d8bb777feaa4",
+      "is_proxy": true,
+      "implementation_address": "0x09fa9d4cb408f437442529d9d9daeed914eb3ee1",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x68c4a79bb793c354614a798b70aff3ae623b619b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe8c0d29c696624c4f628506f90280640e5f3e3c2",
+      "is_proxy": true,
+      "implementation_address": "0x68c4a79bb793c354614a798b70aff3ae623b619b",
+      "liveness": "live"
+    }
+  ]
+}

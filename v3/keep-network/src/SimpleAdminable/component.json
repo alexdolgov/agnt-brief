@@ -1,0 +1,34 @@
+{
+  "component": "SimpleAdminable",
+  "main_contract": "SimpleAdminable",
+  "source_file_count": 9,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e0e46fc2b9a9809dce23ce2d9a1d6eede7de611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b3a6662809195453645e37c2005d655f57ca818",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe360d6d56f3504a7c2971a03ba34a3c6d67594f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

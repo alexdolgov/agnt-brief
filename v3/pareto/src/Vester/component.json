@@ -1,0 +1,20 @@
+{
+  "component": "Vester",
+  "main_contract": "Vester",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://certificate.quantstamp.com/full/idle-governance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3024656ae91d7bf724f613c314bc56030ba2344c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

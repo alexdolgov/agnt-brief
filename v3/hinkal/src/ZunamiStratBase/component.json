@@ -1,0 +1,18 @@
+{
+  "component": "ZunamiStratBase",
+  "main_contract": "ZunamiStratBase",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x342209d6ed7b851d366dfe15dec15689d55d72f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

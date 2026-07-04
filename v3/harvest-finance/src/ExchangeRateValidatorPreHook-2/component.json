@@ -1,0 +1,18 @@
+{
+  "component": "ExchangeRateValidatorPreHook-2",
+  "main_contract": "ExchangeRateValidatorPreHook",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa959454ed4e72fc23e2c406f17509aed98ae75ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

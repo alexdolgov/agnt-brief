@@ -1,0 +1,50 @@
+{
+  "component": "MamoStakingRegistry",
+  "main_contract": "MamoStakingRegistry",
+  "source_file_count": 50,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1829e71933058620aa8a92556dc0e04f5d160475",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x877de3630d3b1316d6ad9e25a36ca2aae3fc17ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa0449e32ee32275bff524c2317ac738f613f408a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd034bf87003a216f9a451a55a2f4f7176aae23c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd7c3f474761b9a0ca4a8634570e8dcd4f5c92239",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

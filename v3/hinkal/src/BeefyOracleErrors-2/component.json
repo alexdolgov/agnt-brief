@@ -1,0 +1,18 @@
+{
+  "component": "BeefyOracleErrors-2",
+  "main_contract": "BeefyOracleErrors",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9021564e8bc6a36838e0d87cb8faa3ee8ee473a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

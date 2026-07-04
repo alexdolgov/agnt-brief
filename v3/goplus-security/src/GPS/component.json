@@ -1,0 +1,18 @@
+{
+  "component": "GPS",
+  "main_contract": "GPS",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

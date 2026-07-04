@@ -1,0 +1,18 @@
+{
+  "component": "SingleStakingRewardsFactory",
+  "main_contract": "SingleStakingRewardsFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x811d4e743ef3343de606d9e477592ee54cdf0799",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

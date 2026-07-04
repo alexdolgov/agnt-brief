@@ -1,0 +1,18 @@
+{
+  "component": "ChronicleGovernance_Accessor_TOSRegistry_1",
+  "main_contract": "ChronicleGovernance_Accessor_TOSRegistry_1",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2cafee661745319738f3e7b9a9340d7fe8a06549",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

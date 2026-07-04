@@ -1,0 +1,26 @@
+{
+  "component": "PoolModule-2",
+  "main_contract": "PoolModule",
+  "source_file_count": 65,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x02696911702740f85ed8ad8b6de6c37e44026b03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbcc471ec390e59f3d5f77e9a8bb24cd26d29bfb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

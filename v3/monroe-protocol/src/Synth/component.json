@@ -1,0 +1,20 @@
+{
+  "component": "Synth",
+  "main_contract": "Synth",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://app.monroeprotocol.com/audit-Peckshield.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xf88df111343bffe7a2d89fb770d77a264d53f043",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

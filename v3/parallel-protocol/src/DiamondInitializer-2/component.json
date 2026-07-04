@@ -1,0 +1,18 @@
+{
+  "component": "DiamondInitializer-2",
+  "main_contract": "DiamondInitializer",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

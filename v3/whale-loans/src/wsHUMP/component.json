@@ -1,0 +1,18 @@
+{
+  "component": "wsHUMP",
+  "main_contract": "wsHUMP",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4c6f8e1be7418703934906057648fa92a6ddc34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

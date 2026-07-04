@@ -1,0 +1,18 @@
+{
+  "component": "GetComboStakingPower",
+  "main_contract": "GetComboStakingPower",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xba7e47d64ba87399da8a5e57eec010f4b9905ef3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

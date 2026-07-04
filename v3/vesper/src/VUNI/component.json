@@ -1,0 +1,18 @@
+{
+  "component": "VUNI",
+  "main_contract": "VUNI",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf858a354ad255d21e17c56f8f2b10ed67dfb40ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

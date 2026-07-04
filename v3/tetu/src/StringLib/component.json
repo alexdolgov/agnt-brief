@@ -1,0 +1,18 @@
+{
+  "component": "StringLib",
+  "main_contract": "StringLib",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd87288d4827a1b59c0e1b3b9000f80b8e763aca8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

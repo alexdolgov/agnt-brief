@@ -1,0 +1,18 @@
+{
+  "component": "Fold",
+  "main_contract": "Fold",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3fb6f54818982371f6c124f5c25326e68e6fb6ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

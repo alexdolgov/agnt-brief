@@ -1,0 +1,42 @@
+{
+  "component": "CallWhitelistAllExtensions",
+  "main_contract": "CallWhitelistAllExtensions",
+  "source_file_count": 25,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x133570b0fd9e39611e29d3e47201ff8fe21707a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28992ca7ba49a83f3bc391e9312730de78bf51ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc185afaa3ff6decf908263802a831b18df1c62a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc58ed1772f8c165d0c61ff114a9c552a013f17c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

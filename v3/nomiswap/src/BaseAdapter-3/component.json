@@ -1,0 +1,18 @@
+{
+  "component": "BaseAdapter-3",
+  "main_contract": "BaseAdapter",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x111f9663f8fb06a719c5279f9863ca574e09546e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

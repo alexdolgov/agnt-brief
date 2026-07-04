@@ -1,0 +1,18 @@
+{
+  "component": "PTUSDeFeedSwitchFactory",
+  "main_contract": "PTUSDeFeedSwitchFactory",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1a266d46e107e08863890b1b8dccc3ce5ea16e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

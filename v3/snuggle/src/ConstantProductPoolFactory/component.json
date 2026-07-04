@@ -1,0 +1,18 @@
+{
+  "component": "ConstantProductPoolFactory",
+  "main_contract": "ConstantProductPoolFactory",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc79ae87e9f55761c08e346b98dddf070c9872787",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

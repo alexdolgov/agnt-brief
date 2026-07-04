@@ -1,0 +1,18 @@
+{
+  "component": "Dummy",
+  "main_contract": "Dummy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d4bb5613cc2187b95958e18b7c13fe1a76d022a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

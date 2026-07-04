@@ -1,0 +1,22 @@
+{
+  "component": "PSM",
+  "main_contract": "PSM",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026",
+    "https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf",
+    "https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2026-01-14.md"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x7000b862257566245d8b28e905ae53cfb7957544",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

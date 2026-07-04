@@ -1,0 +1,22 @@
+{
+  "component": "PrincipalToken",
+  "main_contract": "PrincipalToken",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2024-02-spectra",
+    "https://github.com/code-423n4/2024-02-spectra/blob/main/4naly3er-report.md",
+    "https://github.com/code-423n4/2024-02-spectra/blob/main/bot-report.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x032b7cc608c4855c89bd0a38c3c1a43c6e049c96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

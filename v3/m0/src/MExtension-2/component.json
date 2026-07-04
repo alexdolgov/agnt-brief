@@ -1,0 +1,24 @@
+{
+  "component": "MExtension-2",
+  "main_contract": "MExtension",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/m0-foundation/evm-m-extensions/blob/main/audits/ChainSecurity_M0_M_Extensions_audit.pdf",
+    "https://github.com/m0-foundation/evm-m-extensions/blob/main/audits/GuardianAudits_M0_MExtensions_report.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/ChainSecurity_M0_M_Extensions_audit_draft.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/Guardian%20Audits%20M0%20Extensions%20Report%20Aug%205.pdf",
+    "https://github.com/m0-platform/m-portal-lite/blob/main/audits/Three%20Sigma%20-%20M0PortalLite.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd87c75a92db19fe334fe7812890f893449ff1bda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

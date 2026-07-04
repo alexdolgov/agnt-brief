@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3Pool",
+  "main_contract": "UniswapV3Pool",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3f60fca6c50ae3bcd95ae150b4c57f0ba5c3f2ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

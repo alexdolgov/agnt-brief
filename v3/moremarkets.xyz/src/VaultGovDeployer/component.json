@@ -1,0 +1,18 @@
+{
+  "component": "VaultGovDeployer",
+  "main_contract": "VaultGovDeployer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd4ede46096399a4d6db4fecf5f9a6d303ee68099",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

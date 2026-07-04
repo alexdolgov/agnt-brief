@@ -1,0 +1,45 @@
+{
+  "component": "MorphoVaultController",
+  "main_contract": "MorphoVaultController",
+  "source_file_count": 71,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blendmoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf",
+    "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-0-cantinacode.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x05824db4609ec96c77e99bc61c8fe0acf3269b24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x107b9863c91383cb4b4683a1e8d4304216a98fed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x920029f02b87c7bb0013c8e17e245209c03dd7bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfe07c58d18e04f46ed32ed0e5c295fbba3b45304",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OptimismMintableERC20",
+  "main_contract": "OptimismMintableERC20",
+  "source_file_count": 93,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x52b7d8851d6ccbc6342ba0855be65f7b82a3f17f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

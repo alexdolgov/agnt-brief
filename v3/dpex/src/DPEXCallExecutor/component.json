@@ -1,0 +1,26 @@
+{
+  "component": "DPEXCallExecutor",
+  "main_contract": "DPEXCallExecutor",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xda945406718047e4b85f3b6d402780aabcb3a563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf7dc87c78e352774ee1bb7807b7a62a65689c154",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

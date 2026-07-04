@@ -1,0 +1,18 @@
+{
+  "component": "TokenDecimalsView",
+  "main_contract": "TokenDecimalsView",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5918705f9a172d5caabbd2e2ddb5086ae033dfe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

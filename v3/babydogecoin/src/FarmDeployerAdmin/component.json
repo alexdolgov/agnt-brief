@@ -1,0 +1,26 @@
+{
+  "component": "FarmDeployerAdmin",
+  "main_contract": "FarmDeployerAdmin",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xac6c6c95a526653eb1b0384c257cb8311bb0693a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbb41e9798fafa48f62fdc5f5dcb4961980f19543",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

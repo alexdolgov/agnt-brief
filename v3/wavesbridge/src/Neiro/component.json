@@ -1,0 +1,18 @@
+{
+  "component": "Neiro",
+  "main_contract": "Neiro",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DMS",
+  "main_contract": "DMS",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3eec2e74f6bef3fd7362459eb39bd75c5abcc52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

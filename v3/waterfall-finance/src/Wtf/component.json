@@ -1,0 +1,26 @@
+{
+  "component": "Wtf",
+  "main_contract": "Wtf",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1811b7ed3b613805a9a4b4b1b80c99d58af32576",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeb60543e57c9d1cf2d833e40e17452c59f33d7ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DEFX",
+  "main_contract": "DEFX",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f474906637bdcda05f29c74653f6962bb0f8eda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

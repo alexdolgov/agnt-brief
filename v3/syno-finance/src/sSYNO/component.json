@@ -1,0 +1,18 @@
+{
+  "component": "sSYNO",
+  "main_contract": "sSYNO",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0db592b2cc4b05cffa6224a4ee04c9d168408bbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

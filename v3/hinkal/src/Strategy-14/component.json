@@ -1,0 +1,18 @@
+{
+  "component": "Strategy-14",
+  "main_contract": "Strategy",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7f343c16c0c69a714e0ef8d508c28ad82a7cb373",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

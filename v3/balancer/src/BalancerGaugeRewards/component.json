@@ -1,0 +1,18 @@
+{
+  "component": "BalancerGaugeRewards",
+  "main_contract": "BalancerGaugeRewards",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a1d08b715a79bbb0a2d2e1927e96c18a345586a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+# glori-finance — deployments
+
+58 verified deployment(s) across 23 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x11db7725e1bd0c8ddcecce7da90dded824523d93` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x14cb054790d5c66619da5e1180686a4d3debb90e` | XTokenPermit | impl | inactive | no |
+| arbitrum | `0x187d925419d0071f47960cfdce1344457cb2dda4` | XTokenPermit | impl | inactive | no |
+| arbitrum | `0x1ae74290ebd2e1a598c911b16b502b3bb54e4fba` | VaultV2 | impl | inactive | no |
+| arbitrum | `0x1d0d951c67b30265313ad4c4f7e3159cab443486` | StratX2_HMX | impl | inactive | no |
+| arbitrum | `0x2410d73c7e7a717aafc5d14a1911de560ce9e36e` | OwnedDistributor | impl | inactive | no |
+| arbitrum | `0x2573f800ebb67cb655565dd100acb272f4eab896` | XTokenPermit | impl | inactive | no |
+| arbitrum | `0x294ab782da5f1ede6ed47475cd026a6bd01ea684` | Token | impl | inactive | no |
+| arbitrum | `0x2a0ec6383e3dd3212f371068b03a8f2f95bcd213` | XTokenPermit | impl | inactive | no |
+| arbitrum | `0x2acacb55bec8810616a0dc5e87fb1711c9b69394` | TransparentUpgradeableProxy | impl | inactive | no |
+| arbitrum | `0x2bd3669325f78a6e189a577a9de579aab4156326` | CErc20Delegator | impl | inactive | no |
+| arbitrum | `0x2f82b9e7869bb0251a77c39c3df1eb079fd43623` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
+| arbitrum | `0x371ecf2cc243c825289267b87746acde3cc14e13` | OwnedDistributor | impl | inactive | no |
+| arbitrum | `0x39267073f1147060b53d3f6e8fc3c461df0ee3a3` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x397cc9ac8d0a63646cceeaa08beba44be6491885` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x3b43d3c7f21d662eb532ea32bfde0ce1163d3622` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x3d62219bd8400a6fd9c7ee34395ee696777a2178` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| arbitrum | `0x3e9afb053aa8f109b74c0c170d5d8f1553fb7ac2` | VesterSale | impl | inactive | no |
+| arbitrum | `0x4483130005a0111abf6d3aa6e55ea52650729190` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x467df6a3018fb060fc25537fa25cae793d8e3d7b` | LiquidityGeneratorV2 | impl | inactive | no |
+| arbitrum | `0x55eaa04ec530d5989254941c17ea59e8393b93ed` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x56fd9ecae5de1e63b6aacd1e056a5b5a6371a917` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x57f34daf926add43ae5f75d32c5e026ba6b135b7` | TransparentUpgradeableProxy-4 | proxy | inactive | no |
+| arbitrum | `0x5e6d5bd3643d30eedef29252905792e29fa8d4a7` | TransparentUpgradeableProxy | proxy | inactive | no |
+| arbitrum | `0x6ac2f6d2bf66e2f27e4155e456a776ca2e49204b` | TransparentUpgradeableProxy-3 | proxy | inactive | no |
+| arbitrum | `0x6dbb41e209e42400996cd8343c3502f56255a5be` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| arbitrum | `0x737d6b283cb7d435fc17f13dae4f9dfcbd989115` | Comptroller | impl | inactive | no |
+| arbitrum | `0x750fcb8f3d65da7153e3090ada5e091f67c043ce` | XTokenPermit | impl | inactive | no |
+| arbitrum | `0x75d47e039c03fc993bf58f21d21ca46db629e8aa` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x767b3afc02fb63b0f9058102175595e4f6af3a3b` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0x76e8ae62435965ca734d2beee4cce2d90972a841` | TransparentUpgradeableProxy | impl | inactive | no |
+| arbitrum | `0x79edeb4dcea834b9f45561f2aea63b69ad00aa23` | TokenVesting | impl | inactive | no |
+| arbitrum | `0x7a983960bde2b5d5ed01bf0405491773ef579293` | CEtherDelegate | impl | inactive | no |
+| arbitrum | `0x7e9a3189d790716e40d5c9d0bdd636d33a5c2f29` | JumpRateModelV2 | impl | inactive | no |
+| arbitrum | `0x81cf379ca4474c5c23e1dd301c2d305dcca11dd1` | TimelockController | impl | inactive | no |
+| arbitrum | `0x88c08b9cd65e7fc5daa81d8fa349adc85f49faa2` | StratX2_HMX | impl | inactive | no |
+| arbitrum | `0x8dd092e80168c48a7db3409bd8d3410698a704d8` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| arbitrum | `0x8e3ac45b60bf4ab0e3c2eeb15e27e95dc429e629` | StratX2_HMX | proxy | inactive | no |
+| arbitrum | `0x93a9d4fef86b5452f26b9d363d7c892e11ee1d2a` | StratX2_HMX | proxy | inactive | no |
+| arbitrum | `0x9582f623f6126e38967ae1c6a74115075fd303a5` | TransparentUpgradeableProxy | impl | inactive | no |
+| arbitrum | `0x9c78652844f72ec9756e786c9607c2c4923882ef` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| arbitrum | `0x9d24a1604fff1221cc502d6184b8c1d8cc65d535` | StratX2_GLP | impl | inactive | no |
+| arbitrum | `0xa71c7b42c813c47fcfe7a597531deaf98c248211` | ProxyAdmin | impl | inactive | no |
+| arbitrum | `0xaca2c9452ae9de5cf099f5279b14d97acdf41cd1` | LiquidityLocker | impl | inactive | no |
+| arbitrum | `0xae30afe0fbed6ed9dd18bed261500f6982b0e9f5` | LiquidityLock | impl | inactive | no |
+| arbitrum | `0xafffe877f84d3878bb702c524d25b5b0130893ed` | CErc20Delegator | impl | inactive | no |
+| arbitrum | `0xb377358f82b869f21d917bf50a2732ee5c619920` | CEtherDelegate | proxy | inactive | no |
+| arbitrum | `0xcb0b4bbd83dcc984f4e6b2751b9d8df003fac0d9` | XTokenPermit | impl | inactive | no |
+| arbitrum | `0xcbea71eea1d1b9903d503e2fc17113e17e3d241b` | CErc20Delegator | proxy | inactive | no |
+| arbitrum | `0xcc0f161f84b4a1bddf03bfc41c0ffbef82f30022` | VaultV2 | proxy | inactive | no |
+| arbitrum | `0xcc51403c4fc81d967489a9cd55d5f4f3897534fb` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| arbitrum | `0xd31adbefac6eada396cab001d21ccfd816438e66` | RewardDistributor | impl | live | yes |
+| arbitrum | `0xdba0017fdab03a19e864f5549f3d22e9e95968d2` | VesterSale | impl | inactive | no |
+| arbitrum | `0xdddfc088f5fc2b305d9eb755f29416c211c8b805` | StratX2_HMX | impl | inactive | no |
+| arbitrum | `0xdf74d76e25fab06c2cdba4ebb0e6c82823378bd4` | ERC20Permit | impl | live | no |
+| arbitrum | `0xe0117621b26565711cd2a0681090c3b09c8c3347` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| arbitrum | `0xe0aedc2a4126fad95a53039330c4dd15b63fa8c6` | Comptroller | proxy | inactive | no |
+| arbitrum | `0xebc7a9b1c8186894b35ecc8c3e09568a41d1533b` | TransparentUpgradeableProxy | impl | inactive | no |

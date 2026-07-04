@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626",
+  "main_contract": "ERC4626",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a7c1d820d672c2d25d5c5d9ac5442d9243b2ef4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

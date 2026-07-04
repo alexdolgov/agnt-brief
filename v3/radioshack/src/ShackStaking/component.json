@@ -1,0 +1,18 @@
+{
+  "component": "ShackStaking",
+  "main_contract": "ShackStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01d97df7dc98e97da0c14ffb27adf00fda0245dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

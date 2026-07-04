@@ -1,0 +1,18 @@
+{
+  "component": "VisorFactory",
+  "main_contract": "VisorFactory",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae03233307865623aaef76da9ade669b86e6f20a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

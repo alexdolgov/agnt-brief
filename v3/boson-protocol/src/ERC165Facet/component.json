@@ -1,0 +1,18 @@
+{
+  "component": "ERC165Facet",
+  "main_contract": "ERC165Facet",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb5e1d2c4cc71d44a601efc94fe68c9202ce6b294",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

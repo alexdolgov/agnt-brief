@@ -1,0 +1,18 @@
+{
+  "component": "CapRiskStewardFactory",
+  "main_contract": "CapRiskStewardFactory",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93c233008971e878d60a7737657869ab746f3208",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

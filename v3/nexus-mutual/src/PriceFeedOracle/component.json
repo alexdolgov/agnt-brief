@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedOracle",
+  "main_contract": "PriceFeedOracle",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcafea905b417ac7778843aae1a0b3848ca97a592",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

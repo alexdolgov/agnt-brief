@@ -1,0 +1,18 @@
+{
+  "component": "SmolBrain",
+  "main_contract": "SmolBrain",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6325439389e0797ab35752b4f43a14c004f22a9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BunniHub",
+  "main_contract": "BunniHub",
+  "source_file_count": 80,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x000000000049c7bcbca294e63567b4d21eb765f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

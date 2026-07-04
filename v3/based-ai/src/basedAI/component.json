@@ -1,0 +1,18 @@
+{
+  "component": "basedAI",
+  "main_contract": "basedAI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44971abf0251958492fee97da3e5c5ada88b9185",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

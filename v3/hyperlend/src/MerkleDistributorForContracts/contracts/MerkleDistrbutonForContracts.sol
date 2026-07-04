@@ -1,0 +1,136 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+pragma solidity =0.8.20;
+
+import {IERC20, SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {MerkleProof} from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+
+error AlreadyClaimed();
+error InvalidProof();
+error EndTimeInPast();
+error ClaimWindowFinished();
+error NoWithdrawDuringClaim();
+error ClaimerNotAuthorized();
+error InvalidRecipient();
+error InvalidLength();
+error InvalidConfig();
+
+interface IMerkleDistributor {
+    function token() external view returns (address);
+    function merkleRoot() external view returns (bytes32);
+    function isClaimed(uint256 index) external view returns (bool);
+    function claim(uint256 index, address account, uint256 amount, bytes32[] calldata merkleProof, address recipient) external;
+}
+
+/*
+    ,_     _
+    |\\_,-~/
+    / _  _ |    ,--.
+    (  @  @ )   / ,-'
+    \  _T_/-._( (
+    /         `. \
+    |         _  \ |
+    \ \ ,  /      |
+    || |-_\__   /
+    ((_/`(____,-'
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::@@@@@:::::::@@@@@:::::::@@@@@@::::::::::::::
+::::::::::::::@@@@@@:::::@@@@@@@:::::@@@@@@@@::::::::::::::
+::::::::::::::@@@@@@:::#@@@@@@@@:::@@@@@@@@@@::::::::::::::
+::::::::::::::@@@@@@.:@@@@@@@@@@::@@@@@@@@@@@::::::::::::::
+:::::::::::::::::::@@@@@@@@@@::@@@@@@@@@@::::::::::::::::::
+:::::::::::::::::::@@@@@@@@-:::@@@@@@@@::::::::::::::::::::
+:::::::::::::::::::@@@@@@@:::::@@@@@@@.::::::::::::::::::::
+:::::::::::::::::::@@@@@:::::::@@@@@:::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+
+/*
+MerkleDistributorWithDeadline with additional features:
+    - owner can update recipient
+    - only account or recipient can claim (to prevent grifters from claiming tokens to contracts)
+*/
+contract MerkleDistributorForContracts is IMerkleDistributor, Ownable {
+    using SafeERC20 for IERC20;
+
+    address public immutable override token;
+    bytes32 public immutable override merkleRoot;
+    uint256 public immutable endTime;
+
+    // This is a packed array of booleans.
+    mapping(uint256 => uint256) private claimedBitMap;
+    mapping(address => address) public recipients;
+
+    event RecipientSet(address account, address recipient);
+    event ClaimedTo(uint256 index, address account, uint256 amount, address recipient);
+
+    constructor(address token_, bytes32 merkleRoot_, uint256 endTime_) Ownable(msg.sender) {
+        if (endTime_ <= block.timestamp) revert EndTimeInPast();
+        if (token_ == address(0) || merkleRoot_ == bytes32(0)) revert InvalidConfig();
+        endTime = endTime_;
+        token = token_;
+        merkleRoot = merkleRoot_;
+    }
+
+    function isClaimed(uint256 index) public view override returns (bool) {
+        uint256 claimedWordIndex = index / 256;
+        uint256 claimedBitIndex = index % 256;
+        uint256 claimedWord = claimedBitMap[claimedWordIndex];
+        uint256 mask = (1 << claimedBitIndex);
+        return claimedWord & mask == mask;
+    }
+
+    function _setClaimed(uint256 index) private {
+        uint256 claimedWordIndex = index / 256;
+        uint256 claimedBitIndex = index % 256;
+        claimedBitMap[claimedWordIndex] = claimedBitMap[claimedWordIndex] | (1 << claimedBitIndex);
+    }
+
+    function claim(uint256 index, address account, uint256 amount, bytes32[] calldata merkleProof, address recipient)
+        public
+        virtual
+        override
+    {
+        if (block.timestamp > endTime) revert ClaimWindowFinished();
+        if (isClaimed(index)) revert AlreadyClaimed();
+        if (msg.sender != account && msg.sender != recipients[account]) revert ClaimerNotAuthorized();
+        
+        // Verify the merkle proof.
+        bytes32 node = keccak256(abi.encodePacked(index, account, amount));
+        if (!MerkleProof.verify(merkleProof, merkleRoot, node)) revert InvalidProof();
+
+        // Mark it claimed and send the token.
+        _setClaimed(index);
+
+        // Send tokens to recipient instead of account
+        if (recipients[account] != address(0)){
+            if (recipient != recipients[account]) revert InvalidRecipient(); //double check that recipient set by owner is the one claimer wants to use
+            IERC20(token).safeTransfer(recipients[account], amount);
+        } else {
+            IERC20(token).safeTransfer(account, amount);
+        }
+        
+        // if recipient is address(0), we know tokens were sent to account 
+        emit ClaimedTo(index, account, amount, recipients[account]);
+    }
+
+    function setRecipients(address[] calldata _accounts, address[] calldata _recipients) external onlyOwner {
+        if (_accounts.length != _recipients.length) revert InvalidLength();
+
+        for (uint256 i = 0; i < _accounts.length; i++){
+            if (_recipients[i] == address(0)) revert InvalidRecipient();
+            recipients[_accounts[i]] = _recipients[i];
+            emit RecipientSet(_accounts[i], _recipients[i]);
+        }
+    }
+
+    function clearRecipient(address _account) external onlyOwner {
+        recipients[_account] = address(0);
+        emit RecipientSet(_account, address(0));
+    }
+
+    function withdraw() external onlyOwner {
+        if (block.timestamp < endTime) revert NoWithdrawDuringClaim();
+        IERC20(token).safeTransfer(msg.sender, IERC20(token).balanceOf(address(this)));
+    }
+}

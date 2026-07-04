@@ -1,0 +1,18 @@
+{
+  "component": "Yearn_Token_Vault",
+  "main_contract": "Yearn Token Vault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4e74d4db6c0726ccded4656d0bce448876bb4c7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

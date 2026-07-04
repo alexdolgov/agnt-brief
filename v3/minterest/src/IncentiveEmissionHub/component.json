@@ -1,0 +1,18 @@
+{
+  "component": "IncentiveEmissionHub",
+  "main_contract": "IncentiveEmissionHub",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x9b9e6e265fca781c8761cf61fba346fd92668d9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

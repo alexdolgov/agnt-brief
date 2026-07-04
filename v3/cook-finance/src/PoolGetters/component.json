@@ -1,0 +1,18 @@
+{
+  "component": "PoolGetters",
+  "main_contract": "PoolGetters",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00b81204b111f0cd5f5742e879c1e90344be3e64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

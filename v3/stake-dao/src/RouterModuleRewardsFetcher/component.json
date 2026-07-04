@@ -1,0 +1,18 @@
+{
+  "component": "RouterModuleRewardsFetcher",
+  "main_contract": "RouterModuleRewardsFetcher",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00369a608d40d32ded9d49aa63c349c66f61289f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

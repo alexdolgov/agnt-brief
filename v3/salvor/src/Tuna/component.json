@@ -1,0 +1,18 @@
+{
+  "component": "Tuna",
+  "main_contract": "Tuna",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x833d1c982b28df759cbeb2f69a23a8a657b7fde9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "YieldnestOFTAdapter",
+  "main_contract": "YieldnestOFTAdapter",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe0ffc03bb4086051090646a05ae4af43843a5b51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

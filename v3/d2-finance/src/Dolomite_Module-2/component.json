@@ -1,0 +1,18 @@
+{
+  "component": "Dolomite_Module-2",
+  "main_contract": "Dolomite_Module",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x62ab51dab0bafc863014ffe15ea3b0f4fc9d38d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

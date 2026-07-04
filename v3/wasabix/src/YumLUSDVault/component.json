@@ -1,0 +1,18 @@
+{
+  "component": "YumLUSDVault",
+  "main_contract": "YumLUSDVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x55c75414f525ef9ccbb8105ce083edbda0075fb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

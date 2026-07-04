@@ -1,0 +1,314 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 18,
+  "deployment_count": 38,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x00c8ee42761c95b223676d6ea59c6b7f6f643a6e",
+      "is_proxy": true,
+      "implementation_address": "0x6e6175c993abd316090e8af94b74476fd92ce1a7",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01a104728739a111e66b9d1e661ef2718bcdf702",
+      "is_proxy": true,
+      "implementation_address": "0x567e7e01db38131d36267bcd5917c03863296b04",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01ab57a080c4434156b52993170a19ce02c48b84",
+      "is_proxy": true,
+      "implementation_address": "0x692db42f84bb6ce6a6ea62495c804c71aa6887a7",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x06515aeb17448d0aee00a28e3eb617ce7afe9318",
+      "is_proxy": true,
+      "implementation_address": "0x446e64a0a627c29df90eb7400a0e57d22f82e95e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0c1f159119a6fc6f80accac675751ad9f22322f8",
+      "is_proxy": true,
+      "implementation_address": "0xac5c856ceb258b9128961c392b7ab04eac8f9f5d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0ece7bb403a5ec4534217e94dbf73111dc152155",
+      "is_proxy": true,
+      "implementation_address": "0xa7896e6e9d701d85166a6ee7d298078aa184469b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x102fcb495d3a63f8cf85905c7f755173214f57ca",
+      "is_proxy": true,
+      "implementation_address": "0x91b50ec30ef0e403994dd5ee638512dcb5b4993b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x145677fc4d9b8f19b5d56d1820c48e0443049a30",
+      "is_proxy": true,
+      "implementation_address": "0xb7e97cba2e86c8ccda81e1e9b0041914566a3ccb",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1bc8889c3e7b9f2daf0a361feca56e2f8a15fd2a",
+      "is_proxy": true,
+      "implementation_address": "0xbeb921f177b482cf1e6c935adffe97a1198a0bcd",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x244c4dd63eb51762c3933c8b71cc3434a138162b",
+      "is_proxy": true,
+      "implementation_address": "0xb64754d06d7fa94f443629717c6560d35680e6b4",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2b9299f80a644ca60c0d398e257cb72488875d2a",
+      "is_proxy": true,
+      "implementation_address": "0x9c5dc509425afd1deb21292b503089cd0c8badda",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3026b243e5543b28fc76788b66a37dcbfa98e35a",
+      "is_proxy": true,
+      "implementation_address": "0x5c76583b78110a8d3fc149529793a8ada231d147",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3d014c8b5e75a8b3e3706ac1a448e88c73df5c7d",
+      "is_proxy": true,
+      "implementation_address": "0x692db42f84bb6ce6a6ea62495c804c71aa6887a7",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4725e3cf556bb4d1c20c7f7d717b7332137c844f",
+      "is_proxy": true,
+      "implementation_address": "0xa7896e6e9d701d85166a6ee7d298078aa184469b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x56cb79209462a2e3454cc84fe6b3fe5dc62389f6",
+      "is_proxy": true,
+      "implementation_address": "0x446e64a0a627c29df90eb7400a0e57d22f82e95e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5cfdf337993555e1fc3e94871642c13703eab3b9",
+      "is_proxy": true,
+      "implementation_address": "0x446e64a0a627c29df90eb7400a0e57d22f82e95e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x658188a45b84c36407776320b01b98bd9edce9cd",
+      "is_proxy": true,
+      "implementation_address": "0x446e64a0a627c29df90eb7400a0e57d22f82e95e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x67a41ee6c5d807788477f7f66fe50876ed5655d1",
+      "is_proxy": true,
+      "implementation_address": "0x692db42f84bb6ce6a6ea62495c804c71aa6887a7",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6b5c25ffa9edde9ea4d1c649247d041486a715fb",
+      "is_proxy": true,
+      "implementation_address": "0x7e41296cc8d695d9703fa99cbe1ce5f68fb69545",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7dc29143c099919d9380dc74b9eb95ff847e6536",
+      "is_proxy": true,
+      "implementation_address": "0x4a114b600f19c599e77e6f1181c2fd8bbaf39a2c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7f64624c36d8356e05e85d7afcd2f998d3c45bc1",
+      "is_proxy": true,
+      "implementation_address": "0x9629a082a638115c0867768e09ca78a02d5b8d01",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x804dc5352f1b3206ff3b0df58035b80b421cd456",
+      "is_proxy": true,
+      "implementation_address": "0x4724adf1278ac1ecf7b70db7f551286d858356fa",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x920b6793b7df39a4119ccaa67c73eb2136a616c5",
+      "is_proxy": true,
+      "implementation_address": "0x2ef58fd24101619b33ba6b1c18199909fd1d38c2",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x95258eb8a10ba6f8bb61666339ec65bdd380f941",
+      "is_proxy": true,
+      "implementation_address": "0x4724adf1278ac1ecf7b70db7f551286d858356fa",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9e3e9d59b6b1386f9f6a92318919913d3c58016e",
+      "is_proxy": true,
+      "implementation_address": "0x34b0bd5cc04ca6ae907ac1e07141c2ad948679b6",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9f799772430468bfe828a669269f8b3e856bfe30",
+      "is_proxy": true,
+      "implementation_address": "0x7e41296cc8d695d9703fa99cbe1ce5f68fb69545",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb05cef60cd447ef27a4426ba56a216fac268ba3a",
+      "is_proxy": true,
+      "implementation_address": "0x7bb98a0f7c366777e7d4832136c085e0205fc052",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb3b364dbc29c2ab8e0c255c3f0eeee930785345c",
+      "is_proxy": true,
+      "implementation_address": "0xa7896e6e9d701d85166a6ee7d298078aa184469b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb9b3d475faf639178098de8635043d90a5f5acba",
+      "is_proxy": true,
+      "implementation_address": "0xac5c856ceb258b9128961c392b7ab04eac8f9f5d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc267bdb3a3d3da661f84878fb2a1756cb245d38d",
+      "is_proxy": true,
+      "implementation_address": "0xc4ba95b0174c1512100c8ab5e7573b70e0e0d254",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc5966ac38651aa7e68ddd5ce83b766d484868830",
+      "is_proxy": true,
+      "implementation_address": "0xb64754d06d7fa94f443629717c6560d35680e6b4",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcdff7e91f64c5e0772c8170b1e43b86b7ae4832a",
+      "is_proxy": true,
+      "implementation_address": "0xa5cf7dbd4d2f6f2f964be27d5ca048adaa5afd6c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd56345f85c8e9862613fd64d28250fb9a817de4c",
+      "is_proxy": true,
+      "implementation_address": "0xa5cf7dbd4d2f6f2f964be27d5ca048adaa5afd6c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdc58c5f1bf1090e44ab976eba60ba3bae89c1b07",
+      "is_proxy": true,
+      "implementation_address": "0x446e64a0a627c29df90eb7400a0e57d22f82e95e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xeb6239d015d7d438dfb4180b53a639bc9f3f1227",
+      "is_proxy": true,
+      "implementation_address": "0x692db42f84bb6ce6a6ea62495c804c71aa6887a7",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfa9f91a340e2efa47b67921f8809e98796d1f7f7",
+      "is_proxy": true,
+      "implementation_address": "0xf0364d0c610ebdb14060a3d47954630a7f64c55f",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfaacea541e23f0d3ec7d4e202e791923ce273787",
+      "is_proxy": true,
+      "implementation_address": "0x47f6d98438026b23fb60706c3041e53cce45258a",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xff39fad7f73fd8e1b31e5b7adedc6676774fc579",
+      "is_proxy": true,
+      "implementation_address": "0x8523e6cdc1c7f3c92d5ea13c9c9b9943732e30fd",
+      "liveness": "inactive"
+    }
+  ]
+}

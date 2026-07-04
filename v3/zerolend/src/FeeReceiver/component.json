@@ -1,0 +1,26 @@
+{
+  "component": "FeeReceiver",
+  "main_contract": "FeeReceiver",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x97bcd5a5206f589276650d4eda0452081b275b46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xa185ca8b2894b8d0c26448a7ac6902a96d13e580",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

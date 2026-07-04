@@ -1,0 +1,18 @@
+{
+  "component": "BaseToken",
+  "main_contract": "BaseToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x096a84536ab84e68ee210561ffd3a038e79736f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "yPRISMA_Boost_Minter",
+  "main_contract": "yPRISMA Boost Minter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x147be71ab3c998f2d03106de56eeb5042aa7e224",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

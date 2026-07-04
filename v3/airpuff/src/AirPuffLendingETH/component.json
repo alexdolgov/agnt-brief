@@ -1,0 +1,18 @@
+{
+  "component": "AirPuffLendingETH",
+  "main_contract": "AirPuffLendingETH",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x025347f0e979ca18a3ade6ae917926a937d38ad8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

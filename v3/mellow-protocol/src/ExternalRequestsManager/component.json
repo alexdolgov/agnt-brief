@@ -1,0 +1,18 @@
+{
+  "component": "ExternalRequestsManager",
+  "main_contract": "ExternalRequestsManager",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10f4d4ead6bcd4de7849898403d88528e3dfc872",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

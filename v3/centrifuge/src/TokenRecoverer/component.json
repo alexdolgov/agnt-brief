@@ -1,0 +1,18 @@
+{
+  "component": "TokenRecoverer",
+  "main_contract": "TokenRecoverer",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e70530e9555711f8df4838ab940b97c039b4037",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

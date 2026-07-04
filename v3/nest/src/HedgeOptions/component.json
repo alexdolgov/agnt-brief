@@ -1,0 +1,26 @@
+{
+  "component": "HedgeOptions",
+  "main_contract": "HedgeOptions",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x29c262e29e6f06943ba7c249a4bd794ca1250dea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb11a1dd1e64895c0133bae48cf5cc4efdcf02421",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "schema_version": "2.0",
+  "project_key": "concrete",
+  "generated_at": "2026-07-03T21:05:42.063Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-30-2b719a-8edf",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
+    "audited_contracts": 2,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
+    "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 757965722.2974,
+    "tvl_usd": 26.81316060236369,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 26.81
+    },
+    "asd_usd": null,
+    "website_url": "https://app.concrete.xyz",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-09",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 1,
+      "stale": 0,
+      "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Onchain Capital Allocator. Structurally: 1 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 2 contract(s).",
+    "product_family_count": 1,
+    "total_contracts_indexed": 4,
+    "live_contracts": 3,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x15ce9be6609db102b70d68ca75a39c555bea5fac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ConcreteMultiStrategyVault",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 26.81316060236369,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ConcreteMultiStrategyVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x15ce9be6609db102b70d68ca75a39c555bea5fac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 26.81316060236369,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12933"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-02-12 02:27:47+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5854c7693459c6e316a96565776b72d94ee0e5fd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ConcreteStandardVaultImpl",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2f37d7c8c8c80b85344473daee6b3323ca5b463e",
+      "impl_name": "ConcreteStandardVaultImpl",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5854c7693459c6e316a96565776b72d94ee0e5fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb04e166fd5d7078bb7b3412406609fd92855a08f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-12932"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-10-22 19:32:11+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x38f20ad5a233c1b2c91ce987853ff3201540db53",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x38f20ad5a233c1b2c91ce987853ff3201540db53",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 12932,
+      "audit_key": "audit-12932",
+      "report_name": "Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf",
+      "report_url": "https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12933,
+      "audit_key": "audit-12933",
+      "report_name": "Zellic-Audit-Report-5dbb9d52d444adcd197dfbaa941a86ab.pdf",
+      "report_url": "https://docs.concrete.xyz/assets/files/Zellic-Audit-Report-5dbb9d52d444adcd197dfbaa941a86ab.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2025-09"
+    },
+    {
+      "auditor": "Zellic",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2025-06"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 3
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 2
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

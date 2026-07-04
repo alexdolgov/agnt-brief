@@ -1,0 +1,20 @@
+{
+  "component": "RageChaosEngine",
+  "main_contract": "RageChaosEngine",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://ultraroundmoney.com/rage/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4c15f778ab59f25d5dfd2dd508236a25ed2813fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

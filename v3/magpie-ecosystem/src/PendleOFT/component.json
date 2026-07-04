@@ -1,0 +1,18 @@
+{
+  "component": "PendleOFT",
+  "main_contract": "PendleOFT",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x17bac5f906c9a0282ac06a59958d85796c831f24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

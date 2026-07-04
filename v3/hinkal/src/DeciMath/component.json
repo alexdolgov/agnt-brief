@@ -1,0 +1,18 @@
+{
+  "component": "DeciMath",
+  "main_contract": "DeciMath",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5c779cfae4b6b7a02c32938ddabdada8ab60fb14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AnyswapV5ERC20",
+  "main_contract": "AnyswapV5ERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

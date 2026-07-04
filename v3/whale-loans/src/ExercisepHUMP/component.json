@@ -1,0 +1,34 @@
+{
+  "component": "ExercisepHUMP",
+  "main_contract": "ExercisepHUMP",
+  "source_file_count": 51,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4e594fa56f86d6b3f7bb413980450e5543c2a04c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x691db576c1ac6ae5b97a9ac7576326e67a22747a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd9eeb63e495b9da125ba3bf08b35373dcc445467",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

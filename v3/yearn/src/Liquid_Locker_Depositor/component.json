@@ -1,0 +1,18 @@
+{
+  "component": "Liquid_Locker_Depositor",
+  "main_contract": "Liquid Locker Depositor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d4ced97adb0ae3a53da95a47ffc749aad26bc8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

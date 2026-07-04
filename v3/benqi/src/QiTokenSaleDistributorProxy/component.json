@@ -1,0 +1,18 @@
+{
+  "component": "QiTokenSaleDistributorProxy",
+  "main_contract": "QiTokenSaleDistributorProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9037d683c936d55a4eac4ce2488e9c6f55a4ba1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

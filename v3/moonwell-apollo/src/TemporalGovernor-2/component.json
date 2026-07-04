@@ -1,0 +1,18 @@
+{
+  "component": "TemporalGovernor-2",
+  "main_contract": "TemporalGovernor",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x1e336faa789426ee30dccf975f582ac8bd7fb563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

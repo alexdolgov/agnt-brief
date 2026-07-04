@@ -1,0 +1,26 @@
+{
+  "component": "LiquidationManager",
+  "main_contract": "LiquidationManager",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5de309dfd7f94e9e2a18cb6ba61ca305abf8e9e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfe847efbe56bc528b901f1cae6b44d1c77a06db9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

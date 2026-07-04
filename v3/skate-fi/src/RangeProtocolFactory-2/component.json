@@ -1,0 +1,23 @@
+{
+  "component": "RangeProtocolFactory-2",
+  "main_contract": "RangeProtocolFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Range-Protocol/contracts/blob/izumi-implementation/audits/Salusec-Audit.pdf",
+    "https://github.com/Range-Protocol/contracts/blob/master/audits/Certik-Audit.pdf",
+    "https://github.com/Range-Protocol/contracts/blob/master/audits/Halborn-Audit.pdf",
+    "https://github.com/Range-Protocol/contracts/blob/master/audits/Veridise-Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x52b29c6154ad0f5c02416b8cb1ceb76e082fc9c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

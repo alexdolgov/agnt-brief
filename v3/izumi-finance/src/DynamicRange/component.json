@@ -1,0 +1,18 @@
+{
+  "component": "DynamicRange",
+  "main_contract": "DynamicRange",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x80d7ef6767bc99520a74592afdd0c2a3b1b30f4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

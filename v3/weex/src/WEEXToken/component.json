@@ -1,0 +1,18 @@
+{
+  "component": "WEEXToken",
+  "main_contract": "WEEXToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b66474c8eca3827f16202907f41f63785579716",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

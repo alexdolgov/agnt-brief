@@ -1,0 +1,18 @@
+{
+  "component": "OperableToken",
+  "main_contract": "OperableToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ad37205d608b8b219e6a2573f922094cec5c200",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

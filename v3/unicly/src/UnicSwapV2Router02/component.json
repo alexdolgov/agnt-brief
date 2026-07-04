@@ -1,0 +1,18 @@
+{
+  "component": "UnicSwapV2Router02",
+  "main_contract": "UnicSwapV2Router02",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6e90bc9f3b95cdb69f48c7bfdd0ede1386b135a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

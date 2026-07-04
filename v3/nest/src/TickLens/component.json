@@ -1,0 +1,18 @@
+{
+  "component": "TickLens",
+  "main_contract": "TickLens",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x44f1292f550e33b2ecd346ac8746e405a351c2c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

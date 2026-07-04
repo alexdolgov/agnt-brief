@@ -1,0 +1,18 @@
+{
+  "component": "IDackie",
+  "main_contract": "IDackie",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x217b59e3aec168393e67097d0c47215059a7cebc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

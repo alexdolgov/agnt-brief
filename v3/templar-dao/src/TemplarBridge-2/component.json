@@ -1,0 +1,18 @@
+{
+  "component": "TemplarBridge-2",
+  "main_contract": "TemplarBridge",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x26bcadd5f0082e59194e271252568c1a56b82f70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

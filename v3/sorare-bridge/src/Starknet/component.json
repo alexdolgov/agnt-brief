@@ -1,0 +1,18 @@
+{
+  "component": "Starknet",
+  "main_contract": "Starknet",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc109c4a1a3084ed15a97692fbef3e1fb32a6955",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

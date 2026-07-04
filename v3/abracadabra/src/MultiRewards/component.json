@@ -1,0 +1,44 @@
+{
+  "component": "MultiRewards",
+  "main_contract": "MultiRewards",
+  "source_file_count": 9,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/audits/2024-12-16_Abracadabra_BoundSpell_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x280c64c4c4869cf2a6762eadd4701360c1b11f97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3886a691e88f1a51918b915aa1a0dfbc9af5f755",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc30911b52b5752447ab08615973e434c801cd652",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc9bc38db4886f9db3ba6a5736ea5e3637ceee96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

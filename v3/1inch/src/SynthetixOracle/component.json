@@ -1,0 +1,18 @@
+{
+  "component": "SynthetixOracle",
+  "main_contract": "SynthetixOracle",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19c23a427d382769040e402ff6d3a48240153a8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

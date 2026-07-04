@@ -1,0 +1,44 @@
+{
+  "component": "ShiftVault",
+  "main_contract": "ShiftVault",
+  "source_file_count": 54,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/SHIFT-NebulaLabs/shift-contracts/blob/main/audits/shift-sbsecurity-audit-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4ce3ec1b7b4ffb33a0b70c64a0560a3f341aa2e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x89d63c8331d0fb75b94e27fc981598093c8a36b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8d8d4643f6b3ff6f953aae428306ad91fe872327",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaf69bf9ea9e0166498c0502af5b5945980ed1e0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

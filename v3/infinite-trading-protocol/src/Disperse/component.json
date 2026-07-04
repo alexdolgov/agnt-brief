@@ -1,0 +1,18 @@
+{
+  "component": "Disperse",
+  "main_contract": "Disperse",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0a167dc9daf2c7c2ec8e3a73c5ff6985414b96f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

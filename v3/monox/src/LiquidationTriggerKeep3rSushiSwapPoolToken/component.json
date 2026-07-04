@@ -1,0 +1,26 @@
+{
+  "component": "LiquidationTriggerKeep3rSushiSwapPoolToken",
+  "main_contract": "LiquidationTriggerKeep3rSushiSwapPoolToken",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78d09b58402c29016425497289e12fdd12f06027",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88f2ec209b58076db31e4221a737313941be2ef8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

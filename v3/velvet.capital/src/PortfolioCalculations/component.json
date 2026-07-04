@@ -1,0 +1,42 @@
+{
+  "component": "PortfolioCalculations",
+  "main_contract": "PortfolioCalculations",
+  "source_file_count": 16,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x18d0392d39d807f37a07a8d5e9177c5aa12a1e07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x62b2e33b1e4bafa91bf3c84208f2b74a72359adc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x67e91a66b6353c43dd42c50a850d789e8036ac03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd236b6a127893f3368caa5d898ffa8d182cd9c36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

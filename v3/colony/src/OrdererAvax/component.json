@@ -1,0 +1,18 @@
+{
+  "component": "OrdererAvax",
+  "main_contract": "OrdererAvax",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x22486d98d59d810b89f2abd7bd2ca521b4be8c6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

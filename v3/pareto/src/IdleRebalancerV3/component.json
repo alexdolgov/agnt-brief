@@ -1,0 +1,20 @@
+{
+  "component": "IdleRebalancerV3",
+  "main_contract": "IdleRebalancerV3",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://certificate.quantstamp.com/full/idle-finance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21fcd8adac59adc2eb94355eb2f43f869bbc9582",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

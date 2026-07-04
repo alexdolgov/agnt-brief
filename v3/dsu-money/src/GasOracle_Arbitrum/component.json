@@ -1,0 +1,18 @@
+{
+  "component": "GasOracle_Arbitrum",
+  "main_contract": "GasOracle_Arbitrum",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x038901cc5d0ae04603e6f44819600badbf4a2bc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

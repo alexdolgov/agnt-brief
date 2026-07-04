@@ -1,0 +1,24 @@
+{
+  "component": "Overseer",
+  "main_contract": "Overseer",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ValantisLabs/audits/blob/main/Three_Sigma_Feb_25.pdf",
+    "https://github.com/ValantisLabs/audits/blob/main/guardian_jan_2026.pdf",
+    "https://github.com/ValantisLabs/audits/blob/main/guardian_nov_2025.pdf",
+    "https://github.com/ValantisLabs/audits/blob/main/pashov_oct_25.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/stHYPE-security-review_2025-10-13.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xac43e7a1467bf6a4db24bf1f121fb59be6c9f831",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

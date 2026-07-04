@@ -1,0 +1,18 @@
+{
+  "component": "VaultFlipToCake",
+  "main_contract": "VaultFlipToCake",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x022c0a3685228fc9a5877685b7fc670c04213430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

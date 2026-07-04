@@ -1,0 +1,18 @@
+{
+  "component": "GameStationToken",
+  "main_contract": "GameStationToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3f6b3595ecf70735d3f48d69b09c4e4506db3f47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

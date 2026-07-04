@@ -1,0 +1,18 @@
+{
+  "component": "Governance-4",
+  "main_contract": "Governance",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf1f087a5da4c5938e3ee091edeea4f773fe203ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

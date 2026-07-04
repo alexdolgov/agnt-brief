@@ -1,0 +1,18 @@
+{
+  "component": "POWRAI",
+  "main_contract": "POWRAI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ebb51f6a5676fbba87fd467fd0f67a0c0a00d34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

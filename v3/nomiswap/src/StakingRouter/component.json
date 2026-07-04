@@ -1,0 +1,18 @@
+{
+  "component": "StakingRouter",
+  "main_contract": "StakingRouter",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc2f8f34907c73e3bf509e8f82eb44cb0a7e00cdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

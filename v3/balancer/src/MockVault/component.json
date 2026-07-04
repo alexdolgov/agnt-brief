@@ -1,0 +1,18 @@
+{
+  "component": "MockVault",
+  "main_contract": "MockVault",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x81cfae226343b24ba12ec6521db2c79e7aeeb310",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

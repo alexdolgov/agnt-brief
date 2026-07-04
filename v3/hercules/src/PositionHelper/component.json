@@ -1,0 +1,18 @@
+{
+  "component": "PositionHelper",
+  "main_contract": "PositionHelper",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xa76416a93d0d32838857f1ef28bbfcb16c98b92f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

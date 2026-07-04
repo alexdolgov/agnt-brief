@@ -1,0 +1,22 @@
+{
+  "component": "UsualSP",
+  "main_contract": "UsualSP",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FcXuPxTTIHMM2KNopvVFh%2FSpearbit%20Cantina%20Report%20for%20Usual%20Pegasus%20Phase%202.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FnJ3MWYlnSYTkLuUFqXz5%2FSherlock%20-%20Usual%20V1%20Audit%20Competition%20Report.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FuIIECu9Z1z2RSIcirRxf%2FSherlock%20-%20Usual%20Labs%20Public%20Audit%20Contest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x24a2461f3e67e82930c2df2ab032e9272a272f65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

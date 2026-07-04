@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Permit",
+  "main_contract": "ERC20Permit",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x060cb087a9730e13aa191f31a6d86bff8dfcdcc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

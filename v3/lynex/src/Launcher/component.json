@@ -1,0 +1,18 @@
+{
+  "component": "Launcher",
+  "main_contract": "Launcher",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x3b7191b37bd5ecff4ca41a841a4694cb267022ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MetadataFacet",
+  "main_contract": "MetadataFacet",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1260e79c65d5cec02c4aca63b9fe000a69d251bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

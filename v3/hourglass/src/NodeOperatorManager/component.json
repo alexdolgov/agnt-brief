@@ -1,0 +1,18 @@
+{
+  "component": "NodeOperatorManager",
+  "main_contract": "NodeOperatorManager",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcc674fc9a0602692d2a91905e7e978ae6ee2caf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

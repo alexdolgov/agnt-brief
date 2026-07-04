@@ -1,0 +1,34 @@
+{
+  "component": "DepositHelper",
+  "main_contract": "DepositHelper",
+  "source_file_count": 9,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1565db133d0108e911224f174ec12d20f1531a76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27ad26e1c4d164a5561d7fd0ec910900be716440",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc40329d3ae56af6b0757c3fe53941ddcc3d92671",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

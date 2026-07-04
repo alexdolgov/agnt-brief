@@ -1,0 +1,18 @@
+{
+  "component": "AnteLlamaLendOraclePriceTest",
+  "main_contract": "AnteLlamaLendOraclePriceTest",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf2da896d5eb3643802fabb42e0cd9beabe22e219",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

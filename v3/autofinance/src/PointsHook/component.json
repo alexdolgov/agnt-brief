@@ -1,0 +1,18 @@
+{
+  "component": "PointsHook",
+  "main_contract": "PointsHook",
+  "source_file_count": 63,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa386067eb5f7dc9b731fe1130745b0fb00c615c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

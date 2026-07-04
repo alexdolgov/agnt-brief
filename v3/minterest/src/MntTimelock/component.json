@@ -1,0 +1,18 @@
+{
+  "component": "MntTimelock",
+  "main_contract": "MntTimelock",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e4753ceb282d8cade211793f001974dc1c8fd3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

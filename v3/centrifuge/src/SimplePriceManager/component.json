@@ -1,0 +1,18 @@
+{
+  "component": "SimplePriceManager",
+  "main_contract": "SimplePriceManager",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x280c94eb440a8a75c2f8f6ca8c6faff907000823",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

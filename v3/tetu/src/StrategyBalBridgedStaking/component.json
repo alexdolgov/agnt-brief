@@ -1,0 +1,18 @@
+{
+  "component": "StrategyBalBridgedStaking",
+  "main_contract": "StrategyBalBridgedStaking",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x534240c8c4614d5c8ba6dee1ad4e8f2c2d7180b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

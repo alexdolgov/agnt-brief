@@ -1,0 +1,18 @@
+{
+  "component": "MultiFeeDistributionV2",
+  "main_contract": "MultiFeeDistributionV2",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a7b2a21027f92243c5e5e777aa30bb7969b0188",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

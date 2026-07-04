@@ -1,0 +1,18 @@
+{
+  "component": "XStoreMultiCall",
+  "main_contract": "XStoreMultiCall",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0cca025c7b8c264f7a569aff1a74907cd43aed62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

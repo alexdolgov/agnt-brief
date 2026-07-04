@@ -1,0 +1,18 @@
+{
+  "component": "MasterbrewsNFT",
+  "main_contract": "MasterbrewsNFT",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa94fe77e914af84186ba9317819e1ae0bfbd6d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "component": "TransparentUpgradeableProxy-2",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/steer-protocol-core-implementation-636b8fca6693a100164bf02f"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x279228aafd13bb4642abb772a248c78555dc39c4",
+      "is_proxy": true,
+      "implementation_address": "0xca19bec25a41443f35eeae03411dce87d8c0edc4",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb27a61faf33d2f6ad7af8cc2512c3b58901f779b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xca19bec25a41443f35eeae03411dce87d8c0edc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

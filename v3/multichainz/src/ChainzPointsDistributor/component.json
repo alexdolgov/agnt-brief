@@ -1,0 +1,18 @@
+{
+  "component": "ChainzPointsDistributor",
+  "main_contract": "ChainzPointsDistributor",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

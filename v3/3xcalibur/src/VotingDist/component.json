@@ -1,0 +1,28 @@
+{
+  "component": "VotingDist",
+  "main_contract": "VotingDist",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://2688442826-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdfX5W2ttoTF0UsavgZhT%2Fuploads%2FNiALqEGB39ep1N0BtMU2%2Fomniscia-report_1667586376.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x399e66e8d2b9c83351531bdcabb827f73e8ba25f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1b35806bd42a9e8d62c6eb5ce0b2fb0fb713a89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

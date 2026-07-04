@@ -1,0 +1,18 @@
+{
+  "component": "Health_calculator_zap_for_crvUSD_controller",
+  "main_contract": "Health calculator zap for crvUSD controller",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf61ee62b136e3553fb545bd8fec11fb7f830d6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

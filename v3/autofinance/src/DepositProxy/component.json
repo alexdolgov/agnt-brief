@@ -1,0 +1,18 @@
+{
+  "component": "DepositProxy",
+  "main_contract": "DepositProxy",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x031464af67c612a54676dd5dd71ea86605ee2abf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VotableStakingRewards",
+  "main_contract": "VotableStakingRewards",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

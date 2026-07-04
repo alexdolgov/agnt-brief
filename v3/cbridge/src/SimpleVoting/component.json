@@ -1,0 +1,26 @@
+{
+  "component": "SimpleVoting",
+  "main_contract": "SimpleVoting",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x54ebaf8c34d4ada5a1d0936ca11394d858af13ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62e9c83dba24df767a25a6e7f76b2292fc227d10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

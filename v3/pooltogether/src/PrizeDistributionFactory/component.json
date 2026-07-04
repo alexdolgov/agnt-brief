@@ -1,0 +1,42 @@
+{
+  "component": "PrizeDistributionFactory",
+  "main_contract": "PrizeDistributionFactory",
+  "source_file_count": 21,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x13bef52354cf4036d7d522c147955a1ed2576e33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x87fcf371d68d2429d57bf1badcbeec3463f0dd37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8bc2cbcfb211c34b6fdc5257dedf246dc1984383",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd35108897e5fdfb03850b95145df456f656d747a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

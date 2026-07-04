@@ -1,0 +1,18 @@
+{
+  "component": "MinterHolderV4-2",
+  "main_contract": "MinterHolderV4",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fa04a3b1b1f24bc7236f2cd196bacb54b965ca0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "YamatoV3",
+  "main_contract": "YamatoV3",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20Final%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc7cdec9c2485ead231d9184ea650439b42f9da7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

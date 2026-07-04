@@ -1,0 +1,18 @@
+{
+  "component": "TestToken",
+  "main_contract": "TestToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa2dfecb879af3ba5b5819bac752fa52fbb6fac67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

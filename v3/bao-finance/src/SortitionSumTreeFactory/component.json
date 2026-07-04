@@ -1,0 +1,18 @@
+{
+  "component": "SortitionSumTreeFactory",
+  "main_contract": "SortitionSumTreeFactory",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0b3824706128eb96ed4d50ab3860c77488d77908",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

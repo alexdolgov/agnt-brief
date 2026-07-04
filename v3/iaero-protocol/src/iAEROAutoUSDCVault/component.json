@@ -1,0 +1,18 @@
+{
+  "component": "iAEROAutoUSDCVault",
+  "main_contract": "iAEROAutoUSDCVault",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe5c929677d97723dc822c86c93c7e2d1b59c774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

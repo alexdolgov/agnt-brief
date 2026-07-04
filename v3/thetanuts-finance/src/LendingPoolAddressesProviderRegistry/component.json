@@ -1,0 +1,18 @@
+{
+  "component": "LendingPoolAddressesProviderRegistry",
+  "main_contract": "LendingPoolAddressesProviderRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x066d1cdbe060db67924aa1d35a9e79e2f4db4f0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

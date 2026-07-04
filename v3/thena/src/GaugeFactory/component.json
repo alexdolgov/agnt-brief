@@ -1,0 +1,26 @@
+{
+  "component": "GaugeFactory",
+  "main_contract": "GaugeFactory",
+  "source_file_count": 37,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa9ce35cf6ef12cdab4a99f69ebc819b7eaeda651",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb02d192540f45efb40242769b4ae81dd7b1564f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

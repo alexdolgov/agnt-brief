@@ -1,0 +1,18 @@
+{
+  "component": "Escrow-2",
+  "main_contract": "Escrow",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a1fdf27c5e6784d1cebf256a8a5cc0877e73af0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VotesUpgradeable",
+  "main_contract": "VotesUpgradeable",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xadd180d809310c117211af7154a93a1113502fdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

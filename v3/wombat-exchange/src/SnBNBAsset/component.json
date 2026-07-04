@@ -1,0 +1,18 @@
+{
+  "component": "SnBNBAsset",
+  "main_contract": "SnBNBAsset",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaa0811aff60fbe2d7d7d0a18f26e584b8c148ee8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

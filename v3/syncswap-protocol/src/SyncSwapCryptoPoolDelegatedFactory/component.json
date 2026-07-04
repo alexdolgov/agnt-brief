@@ -1,0 +1,18 @@
+{
+  "component": "SyncSwapCryptoPoolDelegatedFactory",
+  "main_contract": "SyncSwapCryptoPoolDelegatedFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x1080ee857d165186af7f8d63e8ec510c28a6d1ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

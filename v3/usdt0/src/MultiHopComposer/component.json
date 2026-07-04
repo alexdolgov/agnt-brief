@@ -1,0 +1,20 @@
+{
+  "component": "MultiHopComposer",
+  "main_contract": "MultiHopComposer",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Everdawn-Labs/usdt0-audit-reports/blob/main/TonTech/USDT0%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x759ba420bf1ded1765f18c2dc3fc57a1964a2ad1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

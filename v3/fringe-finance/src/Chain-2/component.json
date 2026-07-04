@@ -1,0 +1,18 @@
+{
+  "component": "Chain-2",
+  "main_contract": "Chain",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2cd3d43c775978a96bdbf12d733d5a1ed94fb18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

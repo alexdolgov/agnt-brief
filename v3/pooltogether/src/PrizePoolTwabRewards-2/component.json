@@ -1,0 +1,26 @@
+{
+  "component": "PrizePoolTwabRewards-2",
+  "main_contract": "PrizePoolTwabRewards",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3341dac0912b630f1a8c237b64f6861e9fa11d79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4cfa53df258d78aad153ac11c644703651983f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

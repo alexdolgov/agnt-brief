@@ -1,0 +1,18 @@
+{
+  "component": "MaverickV2Reward",
+  "main_contract": "MaverickV2Reward",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1cdc67950a68256c5157987bbf700e94595807f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

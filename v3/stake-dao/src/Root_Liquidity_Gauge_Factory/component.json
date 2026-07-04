@@ -1,0 +1,18 @@
+{
+  "component": "Root_Liquidity_Gauge_Factory",
+  "main_contract": "Root Liquidity Gauge Factory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x153029f2eb9bce707f7d74c9afdf2a15c29fc228",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

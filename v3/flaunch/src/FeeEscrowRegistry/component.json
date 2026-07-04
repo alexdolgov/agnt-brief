@@ -1,0 +1,42 @@
+{
+  "component": "FeeEscrowRegistry",
+  "main_contract": "FeeEscrowRegistry",
+  "source_file_count": 19,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x588aba851ac93a188560cfcdb189ac6133457342",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x759b36b68a3f757e3de99f1825ce25793e338ea7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa49bae1a6005bf62c69c18abdf1dc5e3a4deff60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa140ffff60e1defddbccb85a4772bce5a22a3d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

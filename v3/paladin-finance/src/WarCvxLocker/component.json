@@ -1,0 +1,18 @@
+{
+  "component": "WarCvxLocker",
+  "main_contract": "WarCvxLocker",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x700d6d24a55512c6aec08820b49da4e4193105b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

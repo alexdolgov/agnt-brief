@@ -1,0 +1,18 @@
+{
+  "component": "CToken-3",
+  "main_contract": "CToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x155ae3f6b0adc817d737e53ecb8bc0327d96a030",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

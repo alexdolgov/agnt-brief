@@ -1,0 +1,18 @@
+{
+  "component": "ECDSARewardsDistributorEscrow",
+  "main_contract": "ECDSARewardsDistributorEscrow",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa77ec9c89a0c889bcb05d15df42d49b706952042",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

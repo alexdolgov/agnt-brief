@@ -1,0 +1,18 @@
+{
+  "component": "WebauthnOwnerPlugin",
+  "main_contract": "WebauthnOwnerPlugin",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8f498c8240e621f8050249d1c2f5f2aaee484ca0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "pStake",
+  "main_contract": "pStake",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/persistenceOne/pStake-auditReports/blob/main/pSTAKE%20Smart%20Contract%20Audit%20-%20Solidified%20%5B02.08.2021%5D.pdf",
+    "https://github.com/persistenceOne/pStake-auditReports/blob/main/pSTAKE%20Smart%20Contracts%20Audit%20-%20PeckShield%20%5B7%3A1%3A2022%5D.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

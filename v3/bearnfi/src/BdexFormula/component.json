@@ -1,0 +1,18 @@
+{
+  "component": "BdexFormula",
+  "main_contract": "BdexFormula",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcb9f345c32e2216e5f13e1a816059c6435c92038",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

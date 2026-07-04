@@ -1,0 +1,18 @@
+{
+  "component": "COTIETHStakingRewards-2",
+  "main_contract": "COTIETHStakingRewards",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6e5220291cf78b6d93bd1d08d746abbc115c64b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

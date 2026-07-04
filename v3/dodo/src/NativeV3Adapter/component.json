@@ -1,0 +1,18 @@
+{
+  "component": "NativeV3Adapter",
+  "main_contract": "NativeV3Adapter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdbaf291a4380749a0e6474e25ab8a3186475074a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

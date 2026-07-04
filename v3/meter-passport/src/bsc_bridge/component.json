@@ -1,0 +1,18 @@
+{
+  "component": "bsc_bridge",
+  "main_contract": "bsc_bridge",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcdc5deefa9f540bac261829b6c64163e2cff92ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

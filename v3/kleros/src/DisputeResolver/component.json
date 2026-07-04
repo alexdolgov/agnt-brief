@@ -1,0 +1,26 @@
+{
+  "component": "DisputeResolver",
+  "main_contract": "DisputeResolver",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3645f9e08d80e47c82ad9e33fcb4ea703822c831",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x95ece455bd817d6adb92f2383617d36ebe10d6eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

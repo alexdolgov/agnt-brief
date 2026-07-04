@@ -1,0 +1,18 @@
+{
+  "component": "NonRewardPool",
+  "main_contract": "NonRewardPool",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0673a2e72b174cdc76d52a51226594b41a8c0fd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

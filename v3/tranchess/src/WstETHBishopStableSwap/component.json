@@ -1,0 +1,18 @@
+{
+  "component": "WstETHBishopStableSwap",
+  "main_contract": "WstETHBishopStableSwap",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad06a2dbd34da8f8cf5f85d284a5b93a2057bdb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

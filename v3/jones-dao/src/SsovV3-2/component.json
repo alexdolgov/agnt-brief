@@ -1,0 +1,18 @@
+{
+  "component": "SsovV3-2",
+  "main_contract": "SsovV3",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd74c61ca8917be73377d74a007e6f002c25efb4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

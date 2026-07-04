@@ -1,0 +1,26 @@
+{
+  "component": "OptionsExchange",
+  "main_contract": "OptionsExchange",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1460771b713e8e58e350f9d82f7b83acb6b2e75f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39246c4f3f6592c974ebc44f80ba6dc69b817c71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

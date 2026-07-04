@@ -1,0 +1,26 @@
+{
+  "component": "SimpleController",
+  "main_contract": "SimpleController",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7a4f3dae26e549e2645e83e67a74c7a096814d01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbb5bc3145f9cc57f0541efbab68ab8022e3d0b4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "BareAggregatorExecutorConst",
+  "main_contract": "BareAggregatorExecutorConst",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1d31a9998b5fa533bb977466491d367d7dc5414f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x24bb797d33597c58dfd3aa97c5b158f5d7794f65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x548e11f9513bbef710a5eb0313c67ddffb9a6837",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

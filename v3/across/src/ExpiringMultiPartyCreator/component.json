@@ -1,0 +1,20 @@
+{
+  "component": "ExpiringMultiPartyCreator",
+  "main_contract": "ExpiringMultiPartyCreator",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/uma-audit-phase-2"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdebb91ab3e473025bb8ce278c02361a3c4f13124",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

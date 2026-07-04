@@ -1,0 +1,18 @@
+{
+  "component": "ByPassAssetGuard",
+  "main_contract": "ByPassAssetGuard",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x00bc9798a926ed2e9031c2870bb7550f9d80adee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

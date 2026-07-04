@@ -1,0 +1,18 @@
+{
+  "component": "DaoVault",
+  "main_contract": "DaoVault",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4102773565d82c8b0785f1262cfe75f04f170777",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FluidVaultPositionsResolver",
+  "main_contract": "FluidVaultPositionsResolver",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3e3dae4f30347782089d398d462546eb5276801c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

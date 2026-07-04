@@ -1,0 +1,18 @@
+{
+  "component": "ReferralBootstrapLens",
+  "main_contract": "ReferralBootstrapLens",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6dc9f5b047c530717123df9bfc5878f0a8356ec9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

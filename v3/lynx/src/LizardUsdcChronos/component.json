@@ -1,0 +1,18 @@
+{
+  "component": "LizardUsdcChronos",
+  "main_contract": "LizardUsdcChronos",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x48e43586ca0764523431ae78ac24cd458674b15f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

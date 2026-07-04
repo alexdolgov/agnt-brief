@@ -1,0 +1,18 @@
+{
+  "component": "StringPoRAddressList",
+  "main_contract": "StringPoRAddressList",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b2091c4eccb16756c2ade0a298fcc75c25a3219",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

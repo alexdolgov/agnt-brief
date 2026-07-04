@@ -1,0 +1,22 @@
+{
+  "component": "HintHelpers",
+  "main_contract": "HintHelpers",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/GalloDaSballo/bold-review",
+    "https://github.com/GalloDaSballo/bold-review/blob/main/bold-report.md",
+    "https://github.com/GalloDaSballo/bold-review/blob/main/bold.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x838a1f38c361ffa1b23201640752149adb4e865a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

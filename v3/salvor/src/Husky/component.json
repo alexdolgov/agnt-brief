@@ -1,0 +1,18 @@
+{
+  "component": "Husky",
+  "main_contract": "Husky",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x65378b697853568da9ff8eab60c13e1ee9f4a654",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "component": "TrustedSignerPriceOracle",
+  "main_contract": "TrustedSignerPriceOracle",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM-0051%20Security%20Review%20Gyroscope.pdf",
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0094-GYROSCOPE-PROTOCOL-FINAL.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28f93f0dccdac0a7891250fb9c72156595b9464a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4ca93c70a00032856e6d942be2eb1cea54b4aa5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

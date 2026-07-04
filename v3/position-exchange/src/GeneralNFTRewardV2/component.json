@@ -1,0 +1,18 @@
+{
+  "component": "GeneralNFTRewardV2",
+  "main_contract": "GeneralNFTRewardV2",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x00629141438961f2b5d2a44cda4196d1c4a5cf95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

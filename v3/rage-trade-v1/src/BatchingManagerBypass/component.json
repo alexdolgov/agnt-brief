@@ -1,0 +1,18 @@
+{
+  "component": "BatchingManagerBypass",
+  "main_contract": "BatchingManagerBypass",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1e587138c802218e6a3fcb995f17be221462ac31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

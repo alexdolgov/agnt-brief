@@ -1,0 +1,18 @@
+{
+  "component": "SaffronPool",
+  "main_contract": "SaffronPool",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0033d4276440c4d9d44e7551d3cb5f631872f754",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

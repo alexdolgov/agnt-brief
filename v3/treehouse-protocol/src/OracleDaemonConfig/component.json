@@ -1,0 +1,18 @@
+{
+  "component": "OracleDaemonConfig",
+  "main_contract": "OracleDaemonConfig",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbf05a929c3d7885a6aead833a992da6e5ac23b09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

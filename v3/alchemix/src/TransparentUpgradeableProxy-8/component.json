@@ -1,0 +1,34 @@
+{
+  "component": "TransparentUpgradeableProxy-8",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 10,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x510a496b2443ba52a3b269fee5a241a4ed4cca58",
+      "is_proxy": true,
+      "implementation_address": "0xf5b610b8a2c79c75a62c9357d008b2fa9f242f68",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfb4fe921f724f3c7b610a826c827f9f6ecef6886",
+      "is_proxy": true,
+      "implementation_address": "0xf5b610b8a2c79c75a62c9357d008b2fa9f242f68",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfd599db360cd9713657c95df66650a427d213010",
+      "is_proxy": true,
+      "implementation_address": "0xf5b610b8a2c79c75a62c9357d008b2fa9f242f68",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VirtualAelinToken-2",
+  "main_contract": "VirtualAelinToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x780f70882ff4929d1a658a4e8ec8d4316b24748a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

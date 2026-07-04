@@ -1,0 +1,18 @@
+{
+  "component": "Exchange",
+  "main_contract": "Exchange",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1dd2235091c82862bcc7e9c25017ba9c409c0820",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

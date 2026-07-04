@@ -1,0 +1,18 @@
+{
+  "component": "EToken2Interface-3",
+  "main_contract": "EToken2Interface",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6722b7ef27c774f7cacdea9e98a47641521c69fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

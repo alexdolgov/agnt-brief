@@ -1,0 +1,26 @@
+{
+  "component": "ScdMcdMigration",
+  "main_contract": "ScdMcdMigration",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa91b5ef93e6a0ac4ffa7bd573f167dd0357101cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc73e0383f3aff3215e6f04b0331d58cecf0ab849",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

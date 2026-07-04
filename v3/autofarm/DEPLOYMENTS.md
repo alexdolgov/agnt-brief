@@ -1,0 +1,185 @@
+# autofarm — deployments
+
+60 verified deployment(s) across 43 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| avalanche | `0x4b6ed34fa26a0a86fde513e7d3239dc85ab2f68f` | TimelockController_RewardsDistributor2-3 | impl | unknown | no |
+| avalanche | `0x864a0b7f8466247a0e44558d29cdc37d4623f213` | AutoFarmV2_CrossChain-6 | impl | live | no |
+| bsc | `0x0895196562c7868c5be92459fae7f877ed450452` | AutoFarmV2 | impl | live | no |
+| bsc | `0x08f2303633a8e376ee02d0c4f07952bf05be998e` | BerryBox | impl | inactive | no |
+| bsc | `0x09750927d289131d40d6e5ff34d431432bfdaff0` | AUTOToken | impl | unknown | no |
+| bsc | `0x0989454fcf48c66aee3fe8cf4feccae2e9b4205d` | StratX | impl | unknown | no |
+| bsc | `0x0aef47fe18180f61b87de7e85712652bd8a14da8` | BerryDataNFT | impl | inactive | no |
+| bsc | `0x0cef58f80fad7904556fc7801e46a7618e3d5faa` | Berry | impl | live | no |
+| bsc | `0x0df9c5fb57bc3b90e73563e9adb672bea2fd41fb` | AutoFarm | impl | unknown | no |
+| bsc | `0x0e30017797d418440354a081785842ad937fdbdb` | Berry | impl | live | no |
+| bsc | `0x12300ea3d3444e9106c65913de24c58462abfe24` | AUTOv2 | impl | unknown | no |
+| bsc | `0x13057e42bbf1b5d980ea79df5549be49ee624910` | StratVLEV | impl | unknown | no |
+| bsc | `0x1a40a8c7d965f3929e0c56bb301ebe82f5ff0d48` | Strat1 | impl | unknown | no |
+| bsc | `0x1a9038a5ab188216a798de0624582c1c8bce80ce` | BerryBox | impl | inactive | no |
+| bsc | `0x1e37097fc71fd892219b266f9bb12558719417f9` | ChefMaster | impl | inactive | no |
+| bsc | `0x1f042f2fd6878edcd75f1f1400bc1d53671e66ce` | StratSwipe | impl | unknown | no |
+| bsc | `0x2044b1cd18c3794920a041a5811466d0c6a023b9` | Timelock | impl | inactive | no |
+| bsc | `0x283af939416eebf8413b382338bf1537c1f6b3ae` | BerryStake | impl | live | no |
+| bsc | `0x28579eca0a326e53340edd93e18698d379876a04` | TimelockController | impl | unknown | no |
+| bsc | `0x3aa4f1ad7094d263dad4ead5b8bc09ddc211e024` | StratX_Pathed | impl | unknown | no |
+| bsc | `0x3cb2f8f2312ab981c4da6f98735a2af79e781a3f` | TokenVesting | impl | inactive | no |
+| bsc | `0x481ca976d8fffb079fe410100cdedfa76ba1694b` | Address | impl | unknown | no |
+| bsc | `0x4a712a0c8fd6b75aa5afbc2b06b4f33126549451` | TokenTimelock | impl | unknown | no |
+| bsc | `0x4bb2cbd7f0eae5270588be6661b936df8c0bfbd3` | Berry | impl | live | no |
+| bsc | `0x4faf8ae6bd41e3cd07d6543d6109dc605a7238a1` | Berry | impl | live | no |
+| bsc | `0x5906ab916fe72a5e4ecb52d86845c4dcf1ae8984` | ChefMaster | impl | inactive | no |
+| bsc | `0x5f93026bcf9120ccf719882fcde147a52da8ca5c` | StratX-2 | impl | unknown | no |
+| bsc | `0x624d25cb42c7f0940531101d47414e3a58ebcf9f` | BerryDispute | impl | live | no |
+| bsc | `0x6461ac51ac85698e3db8b8a666c660c51e9f914c` | WBNB | impl | inactive | no |
+| bsc | `0x6aec9e1a535060a13d6a3a9f62f773333c0b4fc4` | TokenVesting | impl | inactive | no |
+| bsc | `0x72618d2a5efad5b2c238af66ee2a1a8e81e594b8` | ChefMaster | impl | inactive | no |
+| bsc | `0x734e3b5bd16b43eb82f203950f983ef6003390e1` | BerryLibrary | impl | live | no |
+| bsc | `0x7e7fe9e40fc3b8a7ce85da44801f9efe9bdbee2e` | BerryMaster | impl | live | no |
+| bsc | `0x81c9e81b47ea9d8dc7a4ae66a4e28407074e3cca` | ChefMaster | impl | inactive | no |
+| bsc | `0x864a0b7f8466247a0e44558d29cdc37d4623f213` | FarmerToken | impl | unknown | no |
+| bsc | `0x89c0be3d87e0f28073390e997527d765f9384ed4` | Berry | impl | live | no |
+| bsc | `0x89e1509810378f73b4bc0c1decb87fcca6fbe9a1` | StratVLEV | impl | unknown | no |
+| bsc | `0x8ce94299a46f96936f757f88501a858087ced915` | ChefMaster | impl | inactive | no |
+| bsc | `0x958a906585a6d2cf5367f38f1ea306bbadd9a8be` | IbTokenOracle | impl | inactive | no |
+| bsc | `0xa184088a740c695e156f91f5cc086a06bb78b827` | AUTOv2-2 | impl | live | no |
+| bsc | `0xa1a240dbc0bc7aed2065700ecd1443df23b8a0ba` | ChefMaster | impl | inactive | no |
+| bsc | `0xb88a386a534ec46083cb6f77567c15067b64f01a` | ChefMaster | impl | inactive | no |
+| bsc | `0xc2f0d62e6b5572385d276d4ce9993e6558207fcc` | Berry | impl | live | no |
+| bsc | `0xc5eb5a3490d2a2e4a1e1c9a1b965b4eef4f9eb40` | StratX_AUTO | impl | unknown | no |
+| bsc | `0xee9a080a7773669870f58d024d25b157cb5b30ca` | BerryTransfer | impl | live | no |
+| bsc | `0xf859bf77cbe8699013d6dbc7c2b926aaf307f830` | BerryGetters | proxy | live | no |
+| chain-1284 | `0x0c98e59e8327f156ab12a042f5e1f0adb97c0931` | TimelockController_RewardsDistributor3 | impl | inactive | no |
+| chain-1284 | `0x77286f5257e090b1bedbc6df6726d53cbf8573a6` | AutoFarmV2_CrossChain-2 | impl | live | no |
+| chain-1313161554 | `0x3b2763c77343ce87cb42f9ac70a0175ddb5b69a5` | AutoFarmV2_CrossChain | impl | unknown | no |
+| chain-1313161554 | `0x4b6ed34fa26a0a86fde513e7d3239dc85ab2f68f` | AutoFarmV2_CrossChain | impl | unknown | no |
+| chain-1313161554 | `0x62537419c8327ab66165bae205da8fcb6871a700` | AutoFarmV2_CrossChain | impl | unknown | no |
+| chain-1313161554 | `0xaea5f423361e799950e09d38c4dabac2db77e800` | TimelockController_RewardsDistributor2-4 | impl | unknown | no |
+| chain-1313161554 | `0xd26ddb60efb6267db68f18801491c2292c4e0a23` | Multicall | impl | unknown | no |
+| chain-42220 | `0x1900b571ff3fcbc60208f3e5d6f25497745a22fc` | AutoFarmV2_CrossChain-4 | impl | unknown | no |
+| chain-42220 | `0x65f1008a17bcb6f34f703538a22764b15b98eba6` | TimelockController_RewardsDistributor2-2 | impl | unknown | no |
+| chain-42220 | `0xdd11b66b90402f294a017c4688509c364312303f` | AutoFarmV2_CrossChain-5 | impl | live | no |
+| gnosis | `0x1dc6cd9f76972039cd8e071ec65cc4bd035449a1` | TimelockController_RewardsDistributor2 | impl | unknown | no |
+| polygon | `0x643743d396b8921ab353ef566653b8f4c685d252` | TimelockController-2 | impl | unknown | no |
+| polygon | `0x7e8503a336aa795f5f30e8be92cc07430ad35b13` | AutoFarmV2_CrossChain-3 | impl | unknown | no |
+| polygon | `0x89d065572136814230a55ddeeddec9df34eb0b76` | AutoFarmV2_CrossChain-2 | impl | live | no |
+
+## Source unavailable (115)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- avalanche `0x562bdceff7aa89936e52e16eb52abd1770e42cbe`
+- bsc `0x0b4305c4bce8cd7d96625b08dbaa2eb29e288bf0`
+- bsc `0x0ce9299529dbd160458922ce69d06bdd65205fe3`
+- bsc `0x1004a537a1c39ee9d38110bfe3042627c2cd5bbe`
+- bsc `0x1217ff378278726f334dd2a0285e0a04190a7b99`
+- bsc `0x164d0474ed98187c13fca034f80a40d120517b70`
+- bsc `0x172d40422ba9699a6bff92244fea0d0018240ec5`
+- bsc `0x17f619f4eec6742cea2d287dbbcf61ba3360172f`
+- bsc `0x1a2eb775720a1e166e6eeb583b10116cf45de82c`
+- bsc `0x1a57155890b65a4a9308dfcfe445374619a98eba`
+- bsc `0x1edf8edc9a666a5522c846e71e135da45aacd2d7`
+- bsc `0x2099a8bfe7487455a26341d1ddaf2d1fcab62a85`
+- bsc `0x238a9da806bbbcf4605b8051e01d28c96450e4ab`
+- bsc `0x238d2bf95a3c8835054e62364e14e4daffe6395b`
+- bsc `0x25f9b77ef2d13d16fd0f5bdb3f84df82ba00a89e`
+- bsc `0x267ef119c0b13179aa74d0d06b72df7514fc1bb8`
+- bsc `0x2a84a577fd178d3935ef8f247afe3067656fdb21`
+- bsc `0x2c48d2db2200ccaca9a5151ac88ab1dd410866b0`
+- bsc `0x306258d81005a354e2824997f6d031a9aed247f8`
+- bsc `0x3448669ce5d2d21fc8c1e416187d4b65e92bc1f1`
+- bsc `0x36ac93c81bcb5f8fea25d18c2c16261940dab483`
+- bsc `0x375e7f904cad86f788b4682dab8979f4a1811477`
+- bsc `0x37facf96e9aa8b79213bae073362d7cb8d7a9870`
+- bsc `0x38d40992921b7aa6a9a7c3e2bb8a31ca9421c8a7`
+- bsc `0x3a795f4071f4baebd5be5a00bf1886a5f8f613e1`
+- bsc `0x3a84753f6280bab7158a1be0ae9cfd5313249084`
+- bsc `0x3b4e269413fe19728c423c8772b270368bfc0c5b`
+- bsc `0x3f45803fe1586b91ac1419b7b21d9cc24d5c23f0`
+- bsc `0x40afa7e39037e67210890a105a374a576710a4de`
+- bsc `0x414b4f745072cacd98cbaaa752850e63f17330c9`
+- bsc `0x440c7ece155e59c742fed817f8f6b9e57bde7c32`
+- bsc `0x4508abb72232271e452258530d4ed799c685eccb`
+- bsc `0x4551e51d882a7cf23b80f189fcce2aa1c1b6ee99`
+- bsc `0x48620b6a00ff75d17082c81bd97896517332c6fe`
+- bsc `0x512090bfc8416bab0e8df0541aa0759e8abb58a8`
+- bsc `0x52a9f3ef303e64723e70719f2bdf9f9c4ffff1f0`
+- bsc `0x54d00180c6a2bafebc5076b15c5ec79302a0cb39`
+- bsc `0x5796b4e037e60f97360bda147cdd749c4d1743ff`
+- bsc `0x57d6990ac68cfce528b9580f9efe0146576e4b01`
+- bsc `0x5935db1774e479297422298de65c60cb2de63ad8`
+- bsc `0x602817e63abca2caaae6b23c089ee4587b525f4b`
+- bsc `0x65168c89a16fbed4e2e418d5245ff626bd66874b`
+- bsc `0x65579f670c8c3a38b93f912036e34dca9bf58a12`
+- bsc `0x65620c0d20d28cf6bea3749502d597447e187b62`
+- bsc `0x671c9060bd9dcb81b384f680849b18357782c893`
+- bsc `0x68def7d5361350ebac92d6b9fbe672b54d68e3d5`
+- bsc `0x6a1878c9ae3e69061d2a6b32f7346d283b65d073`
+- bsc `0x6aa35f2458d72c6f6eabbf08c6ac8d4ad077b5ff`
+- bsc `0x6f5bf5ed983cbda107c7518c9428c5db7e3e6db5`
+- bsc `0x6f6851ecbffde955d37136968411a438850b3ed0`
+- bsc `0x7328cbbaa8c9c81726de6de28ffd1ddc5b78e7e4`
+- bsc `0x7d09acfbcf00ac6d408a7d756b0f380f1a9025b5`
+- bsc `0x7f7b23253e4a6b317699e85fc0bdc41947563ff1`
+- bsc `0x8a1a10db17bdd48128f2df4c7846bee7c2e195cd`
+- bsc `0x8db789ec00b617e4ca7c68033e622db68ddbb5d5`
+- bsc `0x8e24b8136c3076829a4ed0412cd8f302fa651d84`
+- bsc `0x91277c4a038da7ed1bdb54df4cf95ecdd70307ff`
+- bsc `0x95d3ee15b902711cc0ed39271cb5480fced80192`
+- bsc `0x97d41b6f6b42c4577f290bb3864a5032ecc54032`
+- bsc `0x99d334b487e0cfcd5ef867f980d1a597b3807b89`
+- bsc `0x9b3f9f2387a32c60ee4dcd67148a0426ff918fd4`
+- bsc `0x9ba2a91d20a23548336e22e2ef699ff5e1b6f55b`
+- bsc `0x9fa3c8bf755f50a303c7f8617631fbe24f29188f`
+- bsc `0xa05d4f39ac22c5fe8b2bd3600c88f051433a1dec`
+- bsc `0xa2ddd7844a174c4366b3e1c9c0aece958ad9e6d7`
+- bsc `0xa5ca6b946eb8a2218045489c7514d5b63b6b1e22`
+- bsc `0xa7df74a1664d4243d44c6de36f5a34afc7cfc2f1`
+- bsc `0xaa3a59a4fc4ea0896086660cd383e0dd77759bba`
+- bsc `0xac622bd8082de3abe865b8d38242e6cd8c73a234`
+- bsc `0xad1245b0068c9a1faecfa0c2f4c68b58b12090e0`
+- bsc `0xae9720c6dac3495e6537d4b39e62ea81d14868e8`
+- bsc `0xb2059ddaac191b29308176b1efea08c1f39345f5`
+- bsc `0xb33f66bd8ad8d91d7c7ad328ca280ebf95349fa5`
+- bsc `0xbaa6776bbaee2cf018401b6178172c05009b370c`
+- bsc `0xc2f7badf1f33d029d2e6ff200b2410fd56bd2596`
+- bsc `0xc71b7278a37aba871fba4aabd66bf91628ab95f7`
+- bsc `0xc7322b5c0c250f712c3efeb62141e9eb437da24c`
+- bsc `0xc75b6ffd235660537aa3c058e2e2f028d9f87f60`
+- bsc `0xcc48c51cea82afcb8a748807799ba6d6bd0ab5dd`
+- bsc `0xcd3a59ba91d8930baf59389c5ec9aa0ca8f29af3`
+- bsc `0xd12b91e069dd7bcd1decbb14ea80f38cb69d84db`
+- bsc `0xd21c3baa527755b6ae53484122a54a6f6ad5dcc9`
+- bsc `0xd2653285774f448fd4a2e0a3f165c453ff848ceb`
+- bsc `0xd57e8730792f3d1358506914e5d2dbb2b6a1dd3f`
+- bsc `0xd84cf43f5ca4b6a12142ccdc44b53cfe5afdb2fc`
+- bsc `0xd9dc1329b86a3d19963dd7b8a7cc5ec4960f0f0a`
+- bsc `0xdcd765e412283d4133949697e0359d3ba4d50437`
+- bsc `0xdd42e881e51ced2705648711f1786a30381dd917`
+- bsc `0xdf3dadd3767e43b304943c3fba91f46b3d15e9e5`
+- bsc `0xe041ad792e7497189dfed6dd29e55e054b12ee3f`
+- bsc `0xe23ec91c8166f26445ae6ccf96ebee63a9871b54`
+- bsc `0xe2477627fa2db8ba2a4fe467876023987c3a7e8e`
+- bsc `0xe4bf08ba1678b28ad8fa431c4e6fcd0aad01fd09`
+- bsc `0xe839e18f188089032ebc4c9e1ff38a32d6907808`
+- bsc `0xe8adf98a266d0dba1caac2e857a3bf125bcc2f72`
+- bsc `0xe9d78be4c1467242820393fd7b969784cb791130`
+- bsc `0xeae1f35f44fb5b07af511ad7000e05ee7138311b`
+- bsc `0xebc44c645c297fbef2e149e1ac50166cade6a3c3`
+- bsc `0xed3f07579aac2854ae8d27dfa97314e0fab78687`
+- bsc `0xee22d7479d37a5739457152128164b1133ef3220`
+- bsc `0xf0d2d0cd3e3cf05075fcdcededbbce1e62a898f1`
+- bsc `0xf2aec8da15e910da8b6da0c343c05315b747209d`
+- bsc `0xf44d42a60c2c68246c1d8b0b9c33f839c0e32dfb`
+- bsc `0xf67cceaf8bf755d03e9328cdebb38bb40baae43f`
+- bsc `0xf6c361f82c744881fb58563e6c0563601007cde2`
+- bsc `0xf7cdda468497383fb46d42d673b980c73523c492`
+- bsc `0xf930533173c0b66a8863f4e6883176f09038d3a6`
+- bsc `0xfad31b26428cdc97a4f57f82105fb3d6bb17968a`
+- bsc `0xfffe1b26e0b2134d7be0440a9a336c215dcf159a`
+- chain-1285 `0xfada8cc923514f1d7b0586ad554b4a0cead4680e`
+- chain-42220 `0x5f60f14d75b622c32180b52203e41407973242be`
+- chain-42220 `0xbf19c3fe078258f1d1c34bec7e624ad8a1de343a`
+- gnosis `0xfada8cc923514f1d7b0586ad554b4a0cead4680e`
+- polygon `0xc26e54b5b8d4a2d2091a547bb94edda1aeace833`
+- polygon `0xf409510f4d540c0963a88a662bc8554f06fa400d`

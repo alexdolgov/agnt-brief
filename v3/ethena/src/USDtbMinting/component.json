@@ -1,0 +1,18 @@
+{
+  "component": "USDtbMinting",
+  "main_contract": "USDtbMinting",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3ddbf92077b850e29c4805df0a2459ae048416a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

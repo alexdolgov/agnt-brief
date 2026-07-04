@@ -1,0 +1,18 @@
+{
+  "component": "ReceiptTokenHelper",
+  "main_contract": "ReceiptTokenHelper",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5554ea84a0cba7eb1ff91db9d9ea16e44cc087b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Euler4626Oracle",
+  "main_contract": "Euler4626Oracle",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x57e67762c06b4ba665c6d93eac4d74bfb3906524",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72545e019956d05acecdb6c36ca940bcb01a84f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

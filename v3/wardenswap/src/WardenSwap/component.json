@@ -1,0 +1,20 @@
+{
+  "component": "WardenSwap",
+  "main_contract": "WardenSwap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Wardenswap/warden-protocol/blob/main/audits/WardenSwap-Protocal-Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb75fa2a799fc7935f37500ba9780cbe10aa6610a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

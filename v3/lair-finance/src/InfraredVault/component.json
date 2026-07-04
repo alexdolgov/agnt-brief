@@ -1,0 +1,26 @@
+{
+  "component": "InfraredVault",
+  "main_contract": "InfraredVault",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x6583e71778a3d275b8a27f1252a125f7a6f875d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x75f3be06b02e235f6d0e7ef2d462b29739168301",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

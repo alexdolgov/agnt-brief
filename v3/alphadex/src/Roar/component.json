@@ -1,0 +1,18 @@
+{
+  "component": "Roar",
+  "main_contract": "Roar",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x4829b57f0160427f768a5c0aa23cd3d33c7ab833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

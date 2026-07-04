@@ -1,0 +1,18 @@
+{
+  "component": "SenecaUSD",
+  "main_contract": "SenecaUSD",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x154388a4650d63acc823e06ef9e47c1eddd3cbb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

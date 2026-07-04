@@ -1,0 +1,18 @@
+{
+  "component": "PredictionV2Keeper",
+  "main_contract": "PredictionV2Keeper",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x581619971c25a34d6b5a7900e06b43328e33c656",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

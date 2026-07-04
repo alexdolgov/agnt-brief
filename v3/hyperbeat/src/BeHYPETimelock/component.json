@@ -1,0 +1,22 @@
+{
+  "component": "BeHYPETimelock",
+  "main_contract": "BeHYPETimelock",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xhyperbeat/Audits/blob/main/Vault-Infra/Nethermind.pdf",
+    "https://github.com/0xhyperbeat/Audits/blob/main/beHYPE/Certora.pdf",
+    "https://github.com/0xhyperbeat/Audits/blob/main/beHYPE/Pashov.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xa24af73eadd17997eeedbed36672e996544d2de4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BSCXSafe",
+  "main_contract": "BSCXSafe",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf1ce70c337eccd47a998be0bb07e49188bc60a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

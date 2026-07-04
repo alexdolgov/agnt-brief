@@ -1,0 +1,18 @@
+{
+  "component": "BridgeGovernance",
+  "main_contract": "BridgeGovernance",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcbcfa3eb5e067173b262ace62f9dd87f1d2cc0cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

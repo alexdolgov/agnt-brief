@@ -1,0 +1,18 @@
+{
+  "component": "GamerCoin",
+  "main_contract": "GamerCoin",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x728f30fa2f100742c7949d1961804fa8e0b1387d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

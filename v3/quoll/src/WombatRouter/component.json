@@ -1,0 +1,18 @@
+{
+  "component": "WombatRouter",
+  "main_contract": "WombatRouter",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x19609b03c976cca288fbdae5c21d4290e9a4add7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

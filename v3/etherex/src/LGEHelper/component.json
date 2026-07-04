@@ -1,0 +1,26 @@
+{
+  "component": "LGEHelper",
+  "main_contract": "LGEHelper",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x4c4190d22fedd723d7eba37149977767feb224ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6b43ac8f075d325d9b5c8765fe6970dc857c8812",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

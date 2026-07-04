@@ -1,0 +1,18 @@
+{
+  "component": "BasePool-2",
+  "main_contract": "BasePool",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x380aabe019ed2a9c2d632b51eddd30fd804d0fad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

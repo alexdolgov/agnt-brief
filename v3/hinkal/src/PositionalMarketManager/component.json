@@ -1,0 +1,18 @@
+{
+  "component": "PositionalMarketManager",
+  "main_contract": "PositionalMarketManager",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x734c6c0fb8068afc4d795af32b65ba31bb38fdc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

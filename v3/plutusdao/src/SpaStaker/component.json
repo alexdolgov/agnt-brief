@@ -1,0 +1,18 @@
+{
+  "component": "SpaStaker",
+  "main_contract": "SpaStaker",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0325d080fe94341cb4882f9ebf9bf7b042a02f50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

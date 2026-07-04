@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV2Pair",
+  "main_contract": "UniswapV2Pair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbdfe29d9e42ea541c581eef6cf3a2bb27b51e2c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

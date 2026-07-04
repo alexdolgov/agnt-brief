@@ -1,0 +1,42 @@
+{
+  "component": "OrdererAvax",
+  "main_contract": "OrdererAvax",
+  "source_file_count": 34,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x22486d98d59d810b89f2abd7bd2ca521b4be8c6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x41720f31229ad0ebc3b0c347380277738b7ffd9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd2bfb8798f9f9768088a86369baad96107641742",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfe28e11136ab2af4ce65f0e7b936b51f182336c9",
+      "is_proxy": true,
+      "implementation_address": "0x22486d98d59d810b89f2abd7bd2ca521b4be8c6d",
+      "liveness": "inactive"
+    }
+  ]
+}

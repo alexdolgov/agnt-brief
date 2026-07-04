@@ -1,0 +1,18 @@
+{
+  "component": "LIQToken-2",
+  "main_contract": "LIQToken",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

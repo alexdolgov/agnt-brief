@@ -1,0 +1,18 @@
+{
+  "component": "BabyDogeRouter-2",
+  "main_contract": "BabyDogeRouter",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc9a0f685f39d05d835c369036251ee3aeaaf3c47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

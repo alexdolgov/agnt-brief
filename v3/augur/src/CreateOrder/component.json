@@ -1,0 +1,18 @@
+{
+  "component": "CreateOrder",
+  "main_contract": "CreateOrder",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f27b0598949dbf9e539bbd217f15bf3f5e97999",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

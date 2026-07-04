@@ -1,0 +1,18 @@
+{
+  "component": "SellingRewardManager",
+  "main_contract": "SellingRewardManager",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8cc045ea0cb956a01e802f8e4d09bb8b47e696de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

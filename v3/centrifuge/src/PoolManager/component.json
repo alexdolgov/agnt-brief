@@ -1,0 +1,34 @@
+{
+  "component": "PoolManager",
+  "main_contract": "PoolManager",
+  "source_file_count": 25,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7829e5ca4286df66e9f58160544097db517a3b8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x78e9e622a57f70f1e0ec652a4931e4e278e58142",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7f192f34499ddb2be06c4754cff2a21c4b056994",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

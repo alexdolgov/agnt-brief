@@ -1,0 +1,18 @@
+{
+  "component": "pBERA",
+  "main_contract": "pBERA",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xdeadf18cb9233770fe8874c78d7483b4a126b34a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

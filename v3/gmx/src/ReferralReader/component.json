@@ -1,0 +1,18 @@
+{
+  "component": "ReferralReader",
+  "main_contract": "ReferralReader",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x505ce16d3017be7d76a7c2631c0590e71a975083",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

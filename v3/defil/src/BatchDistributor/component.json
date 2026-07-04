@@ -1,0 +1,18 @@
+{
+  "component": "BatchDistributor",
+  "main_contract": "BatchDistributor",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94a189022b0fe3072f0313b8cf21721ca97c0d18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RusdOftAdapter",
+  "main_contract": "RusdOftAdapter",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0e9f6d9ba5d1b3f76e0f82f9dcdb9ebeef4b4da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

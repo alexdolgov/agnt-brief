@@ -1,0 +1,18 @@
+{
+  "component": "BalanceSheet",
+  "main_contract": "BalanceSheet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6dea55ba04a37fddd05e1fd979c30aa0e634e837",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

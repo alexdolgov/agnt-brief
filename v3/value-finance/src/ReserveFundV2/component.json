@@ -1,0 +1,18 @@
+{
+  "component": "ReserveFundV2",
+  "main_contract": "ReserveFundV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6cf664834c9b59951a883199f32f536a44afe4fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

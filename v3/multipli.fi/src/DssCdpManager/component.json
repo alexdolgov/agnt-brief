@@ -1,0 +1,18 @@
+{
+  "component": "DssCdpManager",
+  "main_contract": "DssCdpManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97a762d03a511754151dd046ee83599162572e47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

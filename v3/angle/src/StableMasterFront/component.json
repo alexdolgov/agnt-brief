@@ -1,0 +1,18 @@
+{
+  "component": "StableMasterFront",
+  "main_contract": "StableMasterFront",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x282dffb8d0215d7efb8d8c5ff90aed185d8850ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

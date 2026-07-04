@@ -1,0 +1,23 @@
+{
+  "component": "VeLista",
+  "main_contract": "VeLista",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/lista-token/blob/master/audits/Lista-Dao_Lista-token_audit_report_2024-07-12.pdf",
+    "https://github.com/lista-dao/lista-token/blob/master/audits/PeckShield-Audit-Report-Restake-v1.0.pdf",
+    "https://github.com/lista-dao/lista-token/blob/master/audits/Salus-Audit-Report-Restake-v1.0.pdf",
+    "https://github.com/lista-dao/lista-token/blob/master/audits/blocksec_velista_v2.0-signed.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x765d17e43be4fa44b1cf75a01dc10ab95470274e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

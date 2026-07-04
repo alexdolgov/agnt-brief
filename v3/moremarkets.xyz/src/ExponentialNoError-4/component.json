@@ -1,0 +1,18 @@
+{
+  "component": "ExponentialNoError-4",
+  "main_contract": "ExponentialNoError",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c8f6c949c2c21bdfa3f7529812cfd44659ca853",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

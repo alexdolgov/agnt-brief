@@ -1,0 +1,26 @@
+{
+  "component": "LendingPoolCollateralManager",
+  "main_contract": "LendingPoolCollateralManager",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x9bc06ed9cd3c15eee13b05ce52442d22f060ac2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd7e6500dfb81a5b2553b7604cb55305aa7db949f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

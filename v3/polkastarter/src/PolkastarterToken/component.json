@@ -1,0 +1,18 @@
+{
+  "component": "PolkastarterToken",
+  "main_contract": "PolkastarterToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

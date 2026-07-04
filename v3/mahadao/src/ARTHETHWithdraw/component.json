@@ -1,0 +1,18 @@
+{
+  "component": "ARTHETHWithdraw",
+  "main_contract": "ARTHETHWithdraw",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6af5e4acf1f3d9866caec5f451abb08a9ce9174a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

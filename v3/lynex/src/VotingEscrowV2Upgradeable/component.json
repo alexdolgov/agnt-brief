@@ -1,0 +1,42 @@
+{
+  "component": "VotingEscrowV2Upgradeable",
+  "main_contract": "VotingEscrowV2Upgradeable",
+  "source_file_count": 37,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2df7fba2338126f9be9b745b4a2638889e35d1bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x77dfab24cb8d4399dc6de8f56f6da45f79d6e1fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xd658aae91be7827982733413974b11d6cea1ed3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xfcc33868180ed7061cb34017da92e3e18a973a3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

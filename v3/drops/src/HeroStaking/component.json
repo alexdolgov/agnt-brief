@@ -1,0 +1,18 @@
+{
+  "component": "HeroStaking",
+  "main_contract": "HeroStaking",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29326f9050be6df0ec285d55476df4906c82da1e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

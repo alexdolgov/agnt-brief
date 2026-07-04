@@ -1,0 +1,21 @@
+{
+  "component": "ERC4626Adapter",
+  "main_contract": "ERC4626Adapter",
+  "source_file_count": 119,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/SizeCredit/size-solidity/blob/main/audits/2025-06-23-Omniscia.pdf",
+    "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-06-14-Cantina.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38fa928decafc34072e721ce3ff3d57f5586490c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

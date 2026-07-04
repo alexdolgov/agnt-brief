@@ -1,0 +1,18 @@
+{
+  "component": "CashappReclaimVerifier",
+  "main_contract": "CashappReclaimVerifier",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x76d33a33068d86016b806df02376ddbb23dd3703",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

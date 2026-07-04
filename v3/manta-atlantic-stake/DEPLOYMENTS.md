@@ -1,0 +1,154 @@
+# manta-atlantic-stake — deployments
+
+131 verified deployment(s) across 75 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| chain-169 | `0x00000000000000adc04c56bf30ac9d3c0aaf14dc` | Seaport | impl | unknown | no |
+| chain-169 | `0x00113b8516b915106b99c43d628353dc43f6deab` | Multicall3 | impl | unknown | no |
+| chain-169 | `0x030f89585d9812471dae7262645860f2d8bece13` | VaultReader | impl | unknown | no |
+| chain-169 | `0x0dc0761d71af3332a42fa2cf885e7c427ffad850` | TokenManager | impl | unknown | no |
+| chain-169 | `0x1017a05dbc857c90457bddc8b2d02940d998b49b` | ShortsTracker | impl | unknown | no |
+| chain-169 | `0x10e878adbcbd35e4356f5272ae9537814d17a76c` | RewardTracker | impl | unknown | no |
+| chain-169 | `0x1808db4d0539ad603d6defa1ae3745791c5e0732` | TokensPerIntervalUpdater | impl | unknown | no |
+| chain-169 | `0x18ae8e9ee384cf9e5159aec454b9e3eb2123ba1c` | RewardTracker | impl | unknown | no |
+| chain-169 | `0x1a303ea630f054a0b92787a30b03b0920e003e7d` | USDR | impl | unknown | no |
+| chain-169 | `0x1fd9ae1cb39680740c140966f2885942c8ab7135` | Disperse | impl | unknown | no |
+| chain-169 | `0x2043c8479b771da6e0a742691b2eb9de51011ece` | Governable | impl | unknown | no |
+| chain-169 | `0x21d11343cd7c835069f560e2a42a5674dca7ca47` | GnosisSafeProxy | impl | unknown | no |
+| chain-169 | `0x264cc454df686f13814d540d892effdaa0b8da83` | OrderBook | impl | unknown | no |
+| chain-169 | `0x2dca2753eb7a6d3521d3a6e37216c943480a43a8` | PositionManager | impl | unknown | no |
+| chain-169 | `0x308ad3b4712e4a64f798daa34b6f9a205dd6da84` | RapTimelock | impl | unknown | no |
+| chain-169 | `0x33b92c2dbfbd356f20570bf93eb7454cc365faf5` | RewardTracker | impl | unknown | no |
+| chain-169 | `0x37cdab54b883d0930bdecd2307971f41684ef3fe` | EsRAP | impl | unknown | no |
+| chain-169 | `0x3b14f6fad061fe52c0412f3eb5c3ce0e9e645d02` | PythWrapperUSDT | impl | unknown | no |
+| chain-169 | `0x3f3f9615a63365e5948b0d02dfdf9656b60b9a7e` | OrderBookReader | impl | unknown | no |
+| chain-169 | `0x40f20fcab8ee140e8246a19541664867a0c5c1a2` | ReaderV2 | impl | unknown | no |
+| chain-169 | `0x4200000000000000000000000000000000000006` | WETH9 | impl | unknown | no |
+| chain-169 | `0x4200000000000000000000000000000000000007` | Proxy-6 | impl | live | no |
+| chain-169 | `0x44ed2c28f610c308f0fe8dbf57e2872ddcb3bc0e` | Timelock | impl | unknown | no |
+| chain-169 | `0x4615050b9b523a1a410766128ef8c8a3a871aa11` | BatchSender | impl | unknown | no |
+| chain-169 | `0x46f1c05ba332ad9518226b83df17547ba1c08b4f` | PositionRouter | impl | unknown | no |
+| chain-169 | `0x48542a36c725aba87067edfefcb7d551ce3f1d6c` | VaultErrorController | impl | unknown | no |
+| chain-169 | `0x4a58af9033db96d4665fc38593ddfdd78b959419` | Vester | impl | unknown | no |
+| chain-169 | `0x4a98fe7dc066ede7321db81a16e31e6ddaf0efad` | FastPriceFeedV3 | impl | unknown | no |
+| chain-169 | `0x4ef1eef6778b246bcfd2eee6a7fa6459337e593e` | PythFlags | impl | unknown | no |
+| chain-169 | `0x54c5cfd081d0c0affc95ba816a5389a3472c5796` | RewardDistributor | impl | unknown | no |
+| chain-169 | `0x55f9d1007922f3c47ab67a31ce3e503ba6a49b2f` | MantaTokenManager | impl | unknown | no |
+| chain-169 | `0x5f07539a1951e70db1f10a73e6e7b711128b329c` | RewardDistributor | impl | unknown | no |
+| chain-169 | `0x64c36c9bceb369d47a7d283a47c9a5049b2da00b` | PositionRouterReader | impl | unknown | no |
+| chain-169 | `0x677890e9bfd70593e6dc66d9089e02f8bff66ed9` | PythWrapperETH | impl | unknown | no |
+| chain-169 | `0x689a2bf9193d74fa2f17769e0adb76f58dbf2065` | Router | impl | unknown | no |
+| chain-169 | `0x7a53f66b3db8c4878be16ca1cad7a2ddec338832` | RewardDistributor | impl | unknown | no |
+| chain-169 | `0x7d079915b30de18bc866b025cfa278aba2e18197` | RLP | impl | unknown | no |
+| chain-169 | `0x80a9ff4db9696d7365bb93aeb78f0c805c14ddda` | ShortsTrackerTimelock | impl | unknown | no |
+| chain-169 | `0x822c25f33af833642d11b9c737e2c223d59119df` | RewardTracker | impl | unknown | no |
+| chain-169 | `0x86b10048445553d38ade88ba8dd759ab9d0867ba` | PriceWrapper | impl | unknown | no |
+| chain-169 | `0x9093089bbefd8944390a2e090122e6245aa7fa69` | RewardRouterOrderBook | impl | unknown | no |
+| chain-169 | `0x92a74f360c56ac3f489dc9d25e62a8adabd85208` | PythWrapperUSDC | impl | unknown | no |
+| chain-169 | `0x92b222222265fc8a8b6d473b810177879bf351b0` | PositionUtils | impl | unknown | no |
+| chain-169 | `0x9529519c25de11c3b27b16482340755c23b153f3` | RewardRouterV2 | impl | unknown | no |
+| chain-169 | `0x9576ca6d15e7ccce184fa7523085d21a554b1b52` | RAP | impl | unknown | no |
+| chain-169 | `0x95cef13441be50d20ca4558cc0a27b601ac544e5` | Manta | impl | unknown | no |
+| chain-169 | `0x96aa4d36d41d40e9eae57fddf508d074c754595b` | Reader | impl | unknown | no |
+| chain-169 | `0x996b5f65be12a477968bbc04c5d7ad2fdcfadd8a` | PositionManager | impl | unknown | no |
+| chain-169 | `0xa14b81a69c5f542bbb1affad4f8ba720692fccd9` | FastPriceEvents | impl | unknown | no |
+| chain-169 | `0xa1d60a7220c1fb37733978201aab8c9a7c4a6919` | RewardReader | impl | unknown | no |
+| chain-169 | `0xb41a81d0ba4ab9910db92a5d90a1073c2a3a2cc0` | ReaderV2 | impl | unknown | no |
+| chain-169 | `0xb71d87c756ea5d1c9bd5e89a19f47982129a8c31` | ReferralStorage | impl | unknown | no |
+| chain-169 | `0xb7b6ef96de8e79a0d00b8297348af6dbd7bc0129` | FastPriceFeedV2 | impl | unknown | no |
+| chain-169 | `0xba8cd99c30da11a22f4d8ef3e763ac4cc3d1e3f5` | Vester | impl | unknown | no |
+| chain-169 | `0xbab712736193d1aefccc171edb6f35507eb29b40` | MintableBaseToken | impl | unknown | no |
+| chain-169 | `0xbba479d953d012256770e75e2e49af85f17a574b` | GlpManager | impl | unknown | no |
+| chain-169 | `0xbffea7000aad4c5335733b891d68b898d79a1d01` | OrderBookV2 | impl | unknown | no |
+| chain-169 | `0xc5ecf064e1f8ff5a19ad5e4e32cf347ea6947b88` | VaultReaderV3 | impl | unknown | no |
+| chain-169 | `0xc6b52571a5828f4e193882dd035489b441f392be` | Timelock | impl | unknown | no |
+| chain-169 | `0xc7da757f97207265c0e1e51974a92c65bcbea502` | BonusDistributor | impl | unknown | no |
+| chain-169 | `0xcaf939f470fdc1a2db32f4f7060bae4d03db5705` | PythWrapperBTC | impl | unknown | no |
+| chain-169 | `0xcbdc1a5d7519f3f6d87cf6c480b55ec66b8e1181` | RewardTracker | impl | unknown | no |
+| chain-169 | `0xcc5bbc57cd6d210a3f1c7998eb6d5a35b49f8c84` | VaultPriceFeedV2 | impl | unknown | no |
+| chain-169 | `0xd45244ff30150f05906b3f10aa41d2055d1bbaf6` | TokenConfigKeeper | impl | unknown | no |
+| chain-169 | `0xd726e7b06dd368d06c48fd54d5f672e455082109` | RewardRouterV2 | impl | unknown | no |
+| chain-169 | `0xdc1f37f66c2a013b859cefcb8de68dbea2999dfc` | PriceFeedTimelock | impl | unknown | no |
+| chain-169 | `0xdc9e8cca39db39ce80bf0486d7a527ad742e75f0` | ReferralReader | impl | unknown | no |
+| chain-169 | `0xe3ad19ce00a1afaa5f99e622e8354a4f2fdd2ce2` | TokensPerIntervalUpdater | impl | unknown | no |
+| chain-169 | `0xe4693bae4b77d3ae451ea61ce8dbff800296c87f` | RewardDistributor | impl | unknown | no |
+| chain-169 | `0xe84231ae15fea715dbd31b353f5b45bfea967fd9` | VaultUtils | impl | unknown | no |
+| chain-169 | `0xe8da44289ab9283028cff5c81a72ea36fd0104e2` | Timelock | impl | unknown | no |
+| chain-169 | `0xea5c751039e38e1d2c0b8983d4f024e3bc928bc4` | Vault | impl | unknown | no |
+| chain-169 | `0xfa893dd111ccfcbc942576eb02bf313ed5819541` | VaultPriceFeedV3 | impl | unknown | no |
+| ethereum | `0x007957bf0681b75e92273a7018784ace6af8cb2d` | ProxyAdmin | impl | live | no |
+| ethereum | `0x0f2486b9c7ba7a1edd9ab33c7a5586d6481e47bf` | Proxy | impl | live | no |
+| ethereum | `0x120bd9cdae9f0f20c4cc022793b345779c35d78c` | Proxy | impl | live | no |
+| ethereum | `0x1710450f1dab239a83834123508e10c910a5a063` | AddressManager | impl | live | no |
+| ethereum | `0x1772e378555d2870035e38dbc33f37bb42410eb5` | ProxyAdmin | impl | live | no |
+| ethereum | `0x1a73810731536f3201ea1134d048ed999188007d` | ProxyAdmin | impl | live | no |
+| ethereum | `0x1c466b9371f8aba0d7c458be10a62192fcb8aa71` | Proxy | impl | live | no |
+| ethereum | `0x1dc6184931dacb520a40dc756a5da614816d39fa` | AddressManager | impl | live | no |
+| ethereum | `0x1e5e634981564fc645dcbc6546ae618d7870b30a` | L2OutputOracle | impl | inactive | no |
+| ethereum | `0x2165254f0dd74c19d07ed447b231447604d41e20` | Proxy-3 | proxy | live | no |
+| ethereum | `0x262181e34eed11740be0419b3af54f868c8415af` | AddressManager | impl | live | no |
+| ethereum | `0x2fe3ad97a60eb7c79a976fc18bb5ffd07dd94ba5` | ResolvedDelegateProxy | impl | live | no |
+| ethereum | `0x305e88d809c9dc03179554bfbf85ac05ce8f18d6` | L1ChugSplashProxy | impl | live | no |
+| ethereum | `0x30c789674ad3b458886bbc9abf42eee19ea05c1d` | Proxy-2 | proxy | live | no |
+| ethereum | `0x39860b5900d97a9750d9774b5d521cf93c552864` | AddressManager | impl | live | no |
+| ethereum | `0x3ad319bb4872f8cb75a26ac30cc4bd2d56b67b05` | AddressManager-3 | impl | live | no |
+| ethereum | `0x3b95bc951ee0f553ba487327278cac44f29715e5` | L1ChugSplashProxy-2 | proxy | live | no |
+| ethereum | `0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x424b45d86c5278fa6d89d29116214eb647d202b5` | AddressManager | impl | live | no |
+| ethereum | `0x445c62f4948f3b08a6bb1dbc51ef985b3eb199f1` | OptimismPortal | impl | inactive | no |
+| ethereum | `0x4d7e194d6b5915ca4e39bba7a030b50702a40e9e` | ProxyAdmin | impl | live | no |
+| ethereum | `0x5e99cf75ae9a76de366fb3e4a1f2a0b19be8902d` | AddressManager | impl | live | no |
+| ethereum | `0x62b257a1b1fc81c4e6e5dc5b47f1e6184341cd58` | L1ChugSplashProxy-2 | impl | inactive | no |
+| ethereum | `0x635ba609680c55c3bdd0b3627b4c5db21b13c310` | AddressManager-2 | proxy | live | no |
+| ethereum | `0x65d6b21c95e1e72bdd91f868527910eaa892d48e` | ProxyAdmin | impl | live | no |
+| ethereum | `0x68b18d4c3ecc5bac0408de9ad722d31a738062bd` | ProxyAdmin | impl | live | no |
+| ethereum | `0x6d223eeef79e5ea639f034522b10ccd4dd719665` | AddressManager | impl | live | no |
+| ethereum | `0x6ec90db7a29272a47c538d53ef4026e626e2c5ce` | Proxy | impl | live | no |
+| ethereum | `0x732970094bc3bf9eff25ec1b56a16eace6fea232` | Proxy | impl | live | no |
+| ethereum | `0x895e00269a05848f3c9889efa677d02ff7351a5d` | Proxy-2 | proxy | live | no |
+| ethereum | `0x897c4f85812be79f0172f225fbd6550c9ea7abf6` | AddressManager | impl | live | no |
+| ethereum | `0x8a7b471537a26ad2d4a16d0ebd626d4a1f8d3be1` | ProxyAdmin | impl | live | no |
+| ethereum | `0x9168765ee952de7c6f8fc6fad5ec209b960b7622` | Proxy-2 | proxy | live | no |
+| ethereum | `0x96d6e5ba62f66003748b60544bb355fb308771c4` | Proxy | impl | live | no |
+| ethereum | `0x9cddc6f65ed67ef19743ffdfd53501457ce8b51f` | AddressManager-2 | impl | inactive | no |
+| ethereum | `0xa2dca85bb892de55d8b262d1806114733106e8d1` | ProxyAdmin-2 | impl | live | no |
+| ethereum | `0xa69f3d94a15161921d968263e62bd8ee81ddf561` | AddressManager | impl | live | no |
+| ethereum | `0xb6c539bf372b7a11855b0189c22133b05cc230df` | L1ChugSplashProxy | impl | live | no |
+| ethereum | `0xb73603c5d87fa094b7314c74ace2e64d165016fb` | Proxy-5 | impl | live | no |
+| ethereum | `0xbe896f53bb658c9eecabbdf4a4db85e4b8481c8f` | Proxy-4 | proxy | live | no |
+| ethereum | `0xc21f2e6c5792686e53e32cb88fc38f6c75b6e79d` | ProxyAdmin | impl | live | no |
+| ethereum | `0xc32db741acd8f74b73dc6e434366eefa9db0580d` | AddressManager | impl | live | no |
+| ethereum | `0xc9ef2e3eaeb70f0b794a9d7d5cac4bcff1906995` | ProxyAdmin | impl | live | no |
+| ethereum | `0xd0e3a94c6751987cc48879646f4b28a9c33e3dcc` | Proxy | impl | live | no |
+| ethereum | `0xd4957750120ead4f9492895cf7103971e8ceb894` | Proxy-3 | impl | inactive | no |
+| ethereum | `0xdb27128ed4a1be7683ccfddb053dd5b713fc3284` | AddressManager | impl | live | no |
+| ethereum | `0xe3cb5953e548262133f0a5ff230388cebf43e9db` | AddressManager | impl | live | no |
+| ethereum | `0xe63ac96f9615b16c4ed33bed79a0b537e97a7a82` | AddressManager | impl | live | no |
+| ethereum | `0xe84162349a4d1d4df7443a53f6e12366c8dbdd0e` | ProxyAdmin | impl | live | no |
+| ethereum | `0xea4f12c5f62e252c2694076c169bed0818126fba` | Proxy | impl | live | no |
+| ethereum | `0xeb77d0c8794b73625b7f4d60d9ca64a2604c48cd` | ProxyAdmin | impl | live | no |
+| ethereum | `0xecde807ae6d972b615b266aa958a07f97cb0d8e5` | ProxyAdmin | impl | live | no |
+| ethereum | `0xef01a6ae995791fffca3d70bda7b91e5fa1ad0ae` | Proxy-2 | impl | inactive | no |
+| ethereum | `0xf417f5a458ec102b90352f697d6e2ac3a3d2851f` | Proxy | impl | live | no |
+| ethereum | `0xf4b428078bba69786849fc1e1773f5c6c40748fa` | Proxy | impl | live | no |
+| ethereum | `0xf992f6cab98bf812737b495dc7dbb20e20acf631` | Proxy | impl | live | no |
+| ethereum | `0xfb1e17245631cd10720401074a3dc9bf7fd3c32d` | Proxy-4 | impl | inactive | no |
+| ethereum | `0xfd195da649e135995c6f81ccddc30bf2dadfbc4c` | AddressManager | impl | live | no |
+
+## Source unavailable (13)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- chain-169 `0x420000000000000000000000000000000000000f`
+- chain-169 `0x4200000000000000000000000000000000000010`
+- chain-169 `0x4200000000000000000000000000000000000011`
+- chain-169 `0x4200000000000000000000000000000000000012`
+- chain-169 `0x4200000000000000000000000000000000000014`
+- chain-169 `0x4200000000000000000000000000000000000015`
+- chain-169 `0x4200000000000000000000000000000000000016`
+- chain-169 `0x4200000000000000000000000000000000000017`
+- chain-169 `0x4200000000000000000000000000000000000018`
+- chain-169 `0x4200000000000000000000000000000000000019`
+- chain-169 `0x420000000000000000000000000000000000001a`
+- chain-169 `0x4200000000000000000000000000000000000020`
+- chain-169 `0x4200000000000000000000000000000000000021`

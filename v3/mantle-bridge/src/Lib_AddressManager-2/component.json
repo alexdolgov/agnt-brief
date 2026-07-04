@@ -1,0 +1,18 @@
+{
+  "component": "Lib_AddressManager-2",
+  "main_contract": "Lib_AddressManager",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6968f3f16c3e64003f02e121cf0d5ccbf5625a42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

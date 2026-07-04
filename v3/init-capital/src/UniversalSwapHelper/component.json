@@ -1,0 +1,18 @@
+{
+  "component": "UniversalSwapHelper",
+  "main_contract": "UniversalSwapHelper",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb6c2f11a656c0c1ae71c392cf3b7897af900b638",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

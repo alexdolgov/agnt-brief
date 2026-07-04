@@ -1,0 +1,26 @@
+{
+  "component": "UniswapV2Pair",
+  "main_contract": "UniswapV2Pair",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x08ea9f608656a4a775ef73f5b187a2f1ae2ae10e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb7189a7ea38fa31210a79fe282aec5736ad5fa57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

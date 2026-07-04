@@ -1,0 +1,18 @@
+{
+  "component": "Royalties-2",
+  "main_contract": "Royalties",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbb2caf56bf29379e329dfed453cbe60e4d913882",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "ClusterToken",
+  "main_contract": "ClusterToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/DeHive-finance/dehive-audits/blob/main/DeHive-Hacken-Audit.pdf",
+    "https://github.com/DeHive-finance/dehive-audits/blob/main/DeHive-Zokyo-Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0a684421ef48b431803bfd75f38675eab1e38ed5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

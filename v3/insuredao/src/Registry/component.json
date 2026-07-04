@@ -1,0 +1,18 @@
+{
+  "component": "Registry",
+  "main_contract": "Registry",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x046c233fd48b020f7e5085c991ffa91eb67c20b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

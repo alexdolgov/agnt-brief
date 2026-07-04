@@ -1,0 +1,74 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 68,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x14ba1690552c4f41360fa2ea5feece3d6533f073",
+      "is_proxy": true,
+      "implementation_address": "0xacf534ef4b005d7140c2e308ceb2f60035c89bb4",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x180bb71666c4de074b4daa17ed579afcb8eb2c25",
+      "is_proxy": true,
+      "implementation_address": "0x25f195b6967423d8f1ac414e6a996ebfdb5307c3",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x475e8a89ad4af634663f2632fff9e47e551f9600",
+      "is_proxy": true,
+      "implementation_address": "0x9496ca04e12ae866e1875878b0b53976df0bf7a5",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4a2b62f29a9570a1fef56e6dd9c1901ef64a6860",
+      "is_proxy": true,
+      "implementation_address": "0xf5e5a2964d76a3b4cf04af03e0c021602ccde3f5",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f80b286e5c019d667bb168dd2796bd8305549f3",
+      "is_proxy": true,
+      "implementation_address": "0xa7b51c2f2524de12106d24581c4aea8cfbbbe4d4",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5effb81418dc8866a80a4321a490de3a116470ea",
+      "is_proxy": true,
+      "implementation_address": "0x63a3ee55077778a8e49c85af80f54d8d8778dd7c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9c140cd0f95d6675540f575b2e5da46bfffed31e",
+      "is_proxy": true,
+      "implementation_address": "0xd187d97f711fcce8417681a56a469688be077d8c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb04eaf69e86a1df15bac9a2fa3a73a0f617fddcf",
+      "is_proxy": true,
+      "implementation_address": "0xdda2dabb5e1ecf3eea019b8d32f8dc5130c2bf9e",
+      "liveness": "live"
+    }
+  ]
+}

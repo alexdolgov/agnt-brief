@@ -1,0 +1,18 @@
+{
+  "component": "ArbswapSmartRouter",
+  "main_contract": "ArbswapSmartRouter",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

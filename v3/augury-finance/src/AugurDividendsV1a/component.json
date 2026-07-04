@@ -1,0 +1,18 @@
+{
+  "component": "AugurDividendsV1a",
+  "main_contract": "AugurDividendsV1a",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x17aa087a86e9c3881af3f1e0a517421f5d3a6744",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

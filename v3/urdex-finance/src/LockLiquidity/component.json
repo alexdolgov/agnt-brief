@@ -1,0 +1,18 @@
+{
+  "component": "LockLiquidity",
+  "main_contract": "LockLiquidity",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d5c57a93c1977e55cb0bb274ebf238c9e8b906e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

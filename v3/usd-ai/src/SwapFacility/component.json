@@ -1,0 +1,18 @@
+{
+  "component": "SwapFacility",
+  "main_contract": "SwapFacility",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x18b8a7aaa40b647d9f5c040be265b007679c7e9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakingHelper",
+  "main_contract": "StakingHelper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8dd1ff96c1b2766c4479c802687b44c5e8feea87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

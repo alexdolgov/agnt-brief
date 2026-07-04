@@ -1,0 +1,42 @@
+{
+  "component": "ConditionalTokensFeesHandlerV2",
+  "main_contract": "ConditionalTokensFeesHandlerV2",
+  "source_file_count": 23,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x13ba3d9f7da3f8ae955df4f01f01d7218f81d8fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x57f12f4b39a16e13994f9bd95246a32c85883ab2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7bd1a130c2206071121c0f1ef9666d4584252b84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd573f448d1b5fa0f12a7ddc8c1208eb4b92b5f3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

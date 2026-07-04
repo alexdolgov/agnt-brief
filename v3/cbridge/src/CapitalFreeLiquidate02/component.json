@@ -1,0 +1,18 @@
+{
+  "component": "CapitalFreeLiquidate02",
+  "main_contract": "CapitalFreeLiquidate02",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeac319b32c332c233b9abc96ac648fbae0b88ec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

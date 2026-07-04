@@ -1,0 +1,18 @@
+{
+  "component": "FixedProductMarketMaker",
+  "main_contract": "FixedProductMarketMaker",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6b5d0c08cffc8de2d079a21e37ddb40c452c7ca6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BaoSwap",
+  "main_contract": "BaoSwap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x745c8e1c0315162c33408454b48e53c9f178eb68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "JPEGC",
+  "main_contract": "JPEGC",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x83979584ec8c6d94d93f838a524049173deba6f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

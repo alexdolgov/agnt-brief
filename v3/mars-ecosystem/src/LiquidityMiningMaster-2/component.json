@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityMiningMaster-2",
+  "main_contract": "LiquidityMiningMaster",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x48c42579d98aa768cde893f8214371ed607cabe3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

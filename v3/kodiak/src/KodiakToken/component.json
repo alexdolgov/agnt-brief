@@ -1,0 +1,20 @@
+{
+  "component": "KodiakToken",
+  "main_contract": "KodiakToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FierRx3DPkFpZU4OY3fB5%2Fkodiak_A1_by_0xmacro.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

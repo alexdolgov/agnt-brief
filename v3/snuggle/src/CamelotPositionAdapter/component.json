@@ -1,0 +1,26 @@
+{
+  "component": "CamelotPositionAdapter",
+  "main_contract": "CamelotPositionAdapter",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x19ec46eb3cbcec146de2d9b4336187e4f147f217",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbfbf7def7547f81a7d79d3e87fb825ee379a8956",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

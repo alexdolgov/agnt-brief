@@ -1,0 +1,18 @@
+{
+  "component": "MinterestNFT",
+  "main_contract": "MinterestNFT",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfdab67039dbe6cdeb2398b9df8c0ef5617a7728",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

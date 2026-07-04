@@ -1,0 +1,42 @@
+{
+  "component": "ComboOracle_UniV2_UniV3",
+  "main_contract": "ComboOracle_UniV2_UniV3",
+  "source_file_count": 4,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x09044da6e6ea891c83ee8d980bc109fda73b199a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x20d162b1655afcbdb19dd87679c02e1a2eafbffe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd3cea6c44f745eaa584b836f92faf15fafe826a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeba66661afc03ab95ec37383b1bfb724abe14a0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

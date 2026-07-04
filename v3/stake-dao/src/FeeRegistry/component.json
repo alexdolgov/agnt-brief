@@ -1,0 +1,18 @@
+{
+  "component": "FeeRegistry",
+  "main_contract": "FeeRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f1dc3bd5fe8a3034d6df0a411efc7916830d19c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

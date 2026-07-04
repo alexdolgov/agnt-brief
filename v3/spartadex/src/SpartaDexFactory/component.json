@@ -1,0 +1,18 @@
+{
+  "component": "SpartaDexFactory",
+  "main_contract": "SpartaDexFactory",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

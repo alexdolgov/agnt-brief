@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolFeeRecipient",
+  "main_contract": "ProtocolFeeRecipient",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1150c53eb4ce3ade47808d1d1ac9636b774ee079",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

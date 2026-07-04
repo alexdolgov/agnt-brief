@@ -1,0 +1,18 @@
+{
+  "component": "GSCORE",
+  "main_contract": "GSCORE",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fd4a527a4422aca27f48cd79e4093867544a616",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

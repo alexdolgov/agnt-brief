@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraPoolDeployer",
+  "main_contract": "AlgebraPoolDeployer",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9a89490f1056a7bc607ec53f93b921fe666a2c48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

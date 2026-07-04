@@ -1,0 +1,18 @@
+{
+  "component": "MNTIsolationModeTokenVaultV1",
+  "main_contract": "MNTIsolationModeTokenVaultV1",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x660bd80f67aa9c7bfb82933e1068f8f616d88255",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ReseedGlobalRevised",
+  "main_contract": "ReseedGlobalRevised",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7b4e3ee3d32c24bb8670b9836e56f9693bd6b03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

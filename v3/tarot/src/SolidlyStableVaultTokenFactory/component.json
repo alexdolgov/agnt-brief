@@ -1,0 +1,18 @@
+{
+  "component": "SolidlyStableVaultTokenFactory",
+  "main_contract": "SolidlyStableVaultTokenFactory",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff5d906fc36e9f0d01f099be0c7c69bc795c3c1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

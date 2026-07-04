@@ -1,0 +1,26 @@
+{
+  "component": "ERC721PortalFacet",
+  "main_contract": "ERC721PortalFacet",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0c49c965d76cc7a4ae7afbfaf6d32a8aaafaad3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2f20f10840e959ae9daf3ddd63534b99e7c950da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

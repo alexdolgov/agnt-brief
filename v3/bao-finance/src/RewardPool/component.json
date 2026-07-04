@@ -1,0 +1,18 @@
+{
+  "component": "RewardPool",
+  "main_contract": "RewardPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1263f0bffe2d740ea3279416d0e84943b66958eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

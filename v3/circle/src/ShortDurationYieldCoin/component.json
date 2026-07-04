@@ -1,0 +1,18 @@
+{
+  "component": "ShortDurationYieldCoin",
+  "main_contract": "ShortDurationYieldCoin",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0dc09046f22ec756e633eca91618e3c9a372699a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

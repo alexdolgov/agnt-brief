@@ -1,0 +1,18 @@
+{
+  "component": "Reader",
+  "main_contract": "Reader",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01dd8b434a83cbddfa24f2ef1fe2d6920ca03734",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

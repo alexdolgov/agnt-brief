@@ -1,0 +1,18 @@
+{
+  "component": "StarNFTV1",
+  "main_contract": "StarNFTV1",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0745eab680c1c596677eedecb7df38a986522e2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

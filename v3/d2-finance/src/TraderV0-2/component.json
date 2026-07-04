@@ -1,0 +1,20 @@
+{
+  "component": "TraderV0-2",
+  "main_contract": "TraderV0",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/d2"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x02295e88bca3c6c1f51b40ef2f43ae31b23e13d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

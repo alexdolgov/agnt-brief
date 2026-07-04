@@ -1,0 +1,18 @@
+{
+  "component": "PalDelegatorClaimer",
+  "main_contract": "PalDelegatorClaimer",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ca786105163cf5228fe80e77c75d3b081287458",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

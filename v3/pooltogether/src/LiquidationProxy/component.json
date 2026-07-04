@@ -1,0 +1,26 @@
+{
+  "component": "LiquidationProxy",
+  "main_contract": "LiquidationProxy",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc57e4fc79ab33db6a7bf26cc1ca43511744f83cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcb1b037a0b5f2bcbc748279876c3afe17bf549ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "component": "ERC20Strategy",
+  "main_contract": "ERC20Strategy",
+  "source_file_count": 36,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x322a52637848bafb39a4b2137872abc01b3adc34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb1a3015b61e4eac9253a674c6942cdc5dd8de510",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb40ede070d9d9f37e32a106b04b29e20ef6ee26e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce9f3633e721d05a4eb6912f598bb11ec02e9495",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe5a9634bf5db3d8d6138c3182d09a561bcf1a2a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

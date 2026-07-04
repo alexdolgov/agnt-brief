@@ -1,0 +1,18 @@
+{
+  "component": "CustomAggregatorV3CompatibleFeed",
+  "main_contract": "CustomAggregatorV3CompatibleFeed",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1aca1d61a3f7e6cca0e410a38a8ee7f42dfb36a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

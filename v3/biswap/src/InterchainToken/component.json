@@ -1,0 +1,18 @@
+{
+  "component": "InterchainToken",
+  "main_contract": "InterchainToken",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66e09ec17629574a0cc8abc480b0c2572fcd6985",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

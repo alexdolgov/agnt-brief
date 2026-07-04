@@ -1,0 +1,18 @@
+{
+  "component": "MultisigWallet",
+  "main_contract": "MultisigWallet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4869f4ec844cd3383f8261affcf29b23182f480c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

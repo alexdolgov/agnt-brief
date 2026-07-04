@@ -1,0 +1,18 @@
+{
+  "component": "wPCTCollateral",
+  "main_contract": "wPCTCollateral",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

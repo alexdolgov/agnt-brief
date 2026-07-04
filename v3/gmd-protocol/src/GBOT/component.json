@@ -1,0 +1,18 @@
+{
+  "component": "GBOT",
+  "main_contract": "GBOT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32e4d98d3010ac12d75019c484caa78665b03986",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

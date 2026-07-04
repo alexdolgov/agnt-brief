@@ -1,0 +1,26 @@
+{
+  "component": "EtherexGaugeRegistry",
+  "main_contract": "EtherexGaugeRegistry",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x31debc0909a1ebf5506d1071b88cc6d4a11537b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x45c83123c70bd9a8a4444d633dc233143aaf3611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

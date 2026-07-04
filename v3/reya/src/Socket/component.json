@@ -1,0 +1,18 @@
+{
+  "component": "Socket",
+  "main_contract": "Socket",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

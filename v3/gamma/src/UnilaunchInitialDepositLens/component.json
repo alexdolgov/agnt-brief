@@ -1,0 +1,50 @@
+{
+  "component": "UnilaunchInitialDepositLens",
+  "main_contract": "UnilaunchInitialDepositLens",
+  "source_file_count": 80,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x1d1b7f5638c6444f28dcb8cb1e492a8c5ba9434a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x7258577b10aea2ed0684747e67c25cdfb3a62141",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x8402875c3877f339127292b91b145bcc167952c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xab1bb5415a5638c44e5efc60c8eeccc7090870de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xfa8ee7a4fcae60cbc07ebdd9516020e204c90628",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

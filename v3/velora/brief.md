@@ -1,0 +1,144 @@
+# Agentic Audit Brief: Velora
+
+## Project Overview
+
+- Project: Velora (`velora`)
+- Website: [https://app.velora.xyz](https://app.velora.xyz)
+- Lifecycle: unknown
+- Generated: 2026-07-03T21:07:10.284Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
+- Chains: avalanche, base, bsc, ethereum, optimism, polygon
+- Contract surface: 27 unique implementations (62 raw deployments)
+- DeFi Llama TVL: $226,515.14
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## Project Description
+
+DEX Aggregator. Structurally: 60 project-authored contract(s) across 6 chain(s); 12 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 6 functional families. Its contracts share 34 common project-authored base contract(s) (eip712, dystopiauniswapv2fork, wethprovider). Dominant framework: openzeppelin.
+
+## Contract Surface Quality
+
+- Indexed contracts: 192; live-surface contracts included: 62 (60 live, 2 unknown).
+- Excluded by liveness: 130 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
+## Audit Coverage Summary
+
+- Coverage of deployed-live implementations: 1/25 (4.0%)
+- Deployed-live implementations: 25 of 27 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/25
+- Verified + Unaudited implementations: 24
+- Verified by bytecode match: 0
+- Unverified implementations: 2
+- Unique implementations: 27
+- Raw deployments: 62
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2021-01 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
+
+### Auditor Coverage
+
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 4.0% | 2021-01 |
+
+## Contract Surface
+
+### ✅ Verified + Audited (1)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AugustusSwapper | adapter | base | n/a | 4 deployments: polygon `0x64f72f...83aafc`; polygon `0xbd0950...6dac33`; base [`0x59c7c8...a08a52`](./contracts/base-8453/0x59c7c832e96d2568bea6db468c1aadcbbda08a52/); base `0x793a0b...db9443` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (24)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Adapter03 | unknown | ethereum | n/a | 4 deployments: ethereum [`0x43dad5...c8cca2`](./contracts/ethereum-1/0x43dad56947b20d5808fdb5d0913639cdadc8cca2/); ethereum `0x793592...33ee98`; ethereum `0xe59936...4b3879`; ethereum `0xe609ae...24818a` | ⚠️ Unaudited |
+| AugustusFeeVault | core_logic | ethereum | n/a | [`0x007000...0010cc`](./contracts/ethereum-1/0x00700052c0608f670705380a4900e0a8080010cc/) | ⚠️ Unaudited |
+| AugustusRFQ | unknown | avalanche | n/a | 5 deployments: ethereum `0xe92b58...f55a06`; bsc `0x8dcdfe...0288bb`; polygon `0xf3cd47...09a043`; base `0xa003df...ac5eed`; avalanche [`0x34302c...9df51f`](./contracts/avalanche-43114/0x34302c4267d0da0a8c65510282cc22e9e39df51f/) | ⚠️ Unaudited |
+| AugustusRFQRouter | unknown | ethereum | n/a | [`0x64f72f...83aafc`](./contracts/ethereum-1/0x64f72fcfd9c624e3e471223f043060981c83aafc/) | ⚠️ Unaudited |
+| AugustusV6 | unknown | ethereum | n/a | [`0x6a000f...001068`](./contracts/ethereum-1/0x6a000f20005980200259b80c5102003040001068/) | ⚠️ Unaudited |
+| AvalancheAdapter01 | unknown | avalanche | n/a | 4 deployments: avalanche [`0x5b9909...87b340`](./contracts/avalanche-43114/0x5b99094c3c2129f17b78ce5ebd1cd8adb887b340/); avalanche `0x5f7cf1...8c1bb9`; avalanche `0x6e8b66...bfc82d`; avalanche `0xb41ec6...4f19e7` | ⚠️ Unaudited |
+| AvalancheBuyAdapter | unknown | avalanche | n/a | [`0xe92b58...f55a06`](./contracts/avalanche-43114/0xe92b586627cca7a83dc919cc7127196d70f55a06/) | ⚠️ Unaudited |
+| BscAdapter01 | unknown | bsc | n/a | 2 deployments: bsc [`0x27eb32...4611b9`](./contracts/bsc-56/0x27eb327b7255a2bf666ebb4d60ab4752da4611b9/); bsc `0xc9229e...575ec5` | ⚠️ Unaudited |
+| BscBuyAdapter | unknown | bsc | n/a | [`0xf52523...48c37a`](./contracts/bsc-56/0xf52523b9d788f4e2dd256dc5077879af0448c37a/) | ⚠️ Unaudited |
+| BuyAdapter | unknown | ethereum | n/a | 3 deployments: ethereum [`0x737e64...f74383`](./contracts/ethereum-1/0x737e642eec6e5bd675022adc6d726eb19ff74383/); ethereum `0x760870...b1fdc1`; ethereum `0xe56823...24bd3a` | ⚠️ Unaudited |
+| CumulativeMerkleDistributor | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x2cf552...b36892`](./contracts/ethereum-1/0x2cf552a87adae03b1f53a760f81c0c0b5fb36892/); optimism `0x7e202c...d1cd4a` | ⚠️ Unaudited |
+| DeltaWrappedNative | unknown | ethereum | n/a | [`0x0a0d53...406742`](./contracts/ethereum-1/0x0a0d53b6684c7b32b4cbef5fe8483bfcc8406742/) | ⚠️ Unaudited |
+| FeeClaimer | operational_periphery | bsc | n/a | 8 deployments: ethereum `0xef1310...6952f7`; bsc [`0x2df174...b89347`](./contracts/bsc-56/0x2df17455b96dde3618fd6b1c3a9aa06d6ab89347/); polygon `0x8b5cf4...96c060`; polygon `0x8dcdfe...0288bb`; polygon `0xabb580...0b4fc3`; base `0x6c33c7...f1525b`; base `0x9aab4b...efb3c7`; avalanche `0xbfcd68...a29e67` | ⚠️ Unaudited |
+| L2StandardERC20 | token | optimism | n/a | [`0xd3594e...d49d48`](./contracts/optimism-10/0xd3594e879b358f430e20f82bea61e83562d49d48/) | ⚠️ Unaudited |
+| MerkleRedeem | operational_periphery | optimism | n/a | [`0xd57fd7...c21ce6`](./contracts/optimism-10/0xd57fd755f53666ce2d3ed8c862a8d06e38c21ce6/) | ⚠️ Unaudited |
+| PolygonAdapter02 | unknown | polygon | n/a | 6 deployments: polygon [`0x475928...ac087d`](./contracts/polygon-137/0x475928fe50a9e9adb706d6f5624fb97ee2ac087d/); polygon `0x74ef12...5d91fa`; polygon `0x97768f...ff0a93`; polygon `0xad1732...611be6`; polygon `0xb5e59e...3bbac9`; polygon `0xc69849...543299` | ⚠️ Unaudited |
+| PolygonBuyAdapter | unknown | polygon | n/a | 4 deployments: polygon [`0x40e11a...2f58a0`](./contracts/polygon-137/0x40e11ae88a9402a34208d05bfb7e88171d2f58a0/); polygon `0x9aa1b1...ee3ac3`; polygon `0xd7d3e2...446d8c`; polygon `0xdc514c...d00174` | ⚠️ Unaudited |
+| PreSignatureModule | unknown | ethereum | n/a | [`0x000000...33c96d`](./contracts/ethereum-1/0x0000000000bbf5c5fd284e657f01bd000933c96d/) | ⚠️ Unaudited |
+| PSP | unknown | ethereum | n/a | [`0xcafe00...7f3de5`](./contracts/ethereum-1/0xcafe001067cdef266afb7eb5a286dcfd277f3de5/) | ⚠️ Unaudited |
+| PSPStakingMigratorV1 | periphery | ethereum | n/a | [`0x81df86...18eed3`](./contracts/ethereum-1/0x81df863e89429b0d4230a2a922de4f37f718eed3/) | ⚠️ Unaudited |
+| sePSP | unknown | ethereum | n/a | 2 deployments: ethereum [`0x716fbc...c5ffab`](./contracts/ethereum-1/0x716fbc68e0c761684d9280484243ff094cc5ffab/); optimism `0x8c934b...348615` | ⚠️ Unaudited |
+| sePSP2 | unknown | optimism | n/a | 2 deployments: ethereum `0x593f39...03c485`; optimism [`0x26ee65...4fb2c8`](./contracts/optimism-10/0x26ee65874f5dbefa629eb103e7bbb2deaf4fb2c8/) | ⚠️ Unaudited |
+| sePSPStakingMigratorV1 | periphery | optimism | n/a | [`0x18e1a8...f8c583`](./contracts/optimism-10/0x18e1a8431ce39cbfe95958207da2d68a7ef8c583/) | ⚠️ Unaudited |
+| WeightedPool | core_logic | optimism | n/a | 2 deployments: ethereum `0xcb0e14...e5061d`; optimism [`0x11f0b5...c68440`](./contracts/optimism-10/0x11f0b5cca01b0f0a9fe6265ad6e8ee3419c68440/) | ⚠️ Unaudited |
+
+### ✅ Verified by Bytecode + Audited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ⚠️ Verified by Bytecode + Unaudited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ❓ Unverified (2)
+
+Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x358211...12336f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe46be3...28e053` | ❓ Unverified |
+
+## Audit Inventory
+
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---|
+| [Audit Report - ParaSwap [20.01.2021].pdf](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20ParaSwap%20%5B20.01.2021%5D.pdf) | unknown | Audit | 2021-01 | stale | Direct | contract_name | 1 | n/a |
+
+## Coverage Gaps
+
+Verified + unaudited native implementations ranked by TVL:
+
+- None
+
+## Origin Classification
+
+| Origin Kind | Contracts |
+|---|---:|
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 27 |
+
+## Scope Matching Notes
+
+- Repo-reference audits: 0
+- Not-audit entries: 0
+- Audits with zero matched contracts: 0
+- Inherited remapped matches: 0
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
+
+Fork inheritance lineage and inherited audits are included when available.

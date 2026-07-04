@@ -1,0 +1,18 @@
+{
+  "component": "BridgeExecutorBase-2",
+  "main_contract": "BridgeExecutorBase",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x64307c2668cf9a8e55dbbe276e33e78fbfb7a16d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

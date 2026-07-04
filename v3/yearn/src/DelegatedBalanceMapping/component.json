@@ -1,0 +1,18 @@
+{
+  "component": "DelegatedBalanceMapping",
+  "main_contract": "DelegatedBalanceMapping",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc01a529c01f9399c928a4afc50e25f12d1e5b142",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

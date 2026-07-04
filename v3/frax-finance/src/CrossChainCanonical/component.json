@@ -1,0 +1,20 @@
+{
+  "component": "CrossChainCanonical",
+  "main_contract": "CrossChainCanonical",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/FraxQ42021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2e3d870790dc77a83dd1d18184acc7439a53f475",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

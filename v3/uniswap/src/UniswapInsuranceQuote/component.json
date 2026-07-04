@@ -1,0 +1,18 @@
+{
+  "component": "UniswapInsuranceQuote",
+  "main_contract": "UniswapInsuranceQuote",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5071b17384d5cfc2a82855f19cdd377dd1c03e60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

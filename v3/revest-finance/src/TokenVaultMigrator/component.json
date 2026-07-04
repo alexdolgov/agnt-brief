@@ -1,0 +1,18 @@
+{
+  "component": "TokenVaultMigrator",
+  "main_contract": "TokenVaultMigrator",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99df06747694a21b74e072d0cb31ab35c586d5d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

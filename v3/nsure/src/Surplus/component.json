@@ -1,0 +1,18 @@
+{
+  "component": "Surplus",
+  "main_contract": "Surplus",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80e711b29e46d430ff1553eb2ada670e2a25593c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

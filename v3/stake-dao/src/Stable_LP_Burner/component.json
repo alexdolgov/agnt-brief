@@ -1,0 +1,18 @@
+{
+  "component": "Stable_LP_Burner",
+  "main_contract": "Stable LP Burner",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04213a12f7462022c12efd8d44c67561f772d001",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

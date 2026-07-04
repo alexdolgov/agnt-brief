@@ -1,0 +1,18 @@
+{
+  "component": "OceanAdapter",
+  "main_contract": "OceanAdapter",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02b4ab3b517371d0bd71d325dbe7dfc0320742e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

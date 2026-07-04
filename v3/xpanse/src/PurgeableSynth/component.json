@@ -1,0 +1,26 @@
+{
+  "component": "PurgeableSynth",
+  "main_contract": "PurgeableSynth",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x510a2bbb4db9d85de6f2de60985b0fde09c1e3f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd8aa71d1523a282c9ea4b267e46325ce716292cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

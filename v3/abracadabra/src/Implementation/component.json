@@ -1,0 +1,18 @@
+{
+  "component": "Implementation",
+  "main_contract": "Implementation",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcdde93ad2275d3871a606248205145d9f69dbb95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

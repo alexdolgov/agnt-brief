@@ -1,0 +1,26 @@
+{
+  "component": "ERC20Wrapper",
+  "main_contract": "ERC20Wrapper",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb553ebbc620d8c8b0c65e8676420742919a70eb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeadada7c6943c223c0d4bea475a6dacc7368f8d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

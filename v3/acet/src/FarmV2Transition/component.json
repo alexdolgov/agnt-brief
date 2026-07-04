@@ -1,0 +1,18 @@
+{
+  "component": "FarmV2Transition",
+  "main_contract": "FarmV2Transition",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

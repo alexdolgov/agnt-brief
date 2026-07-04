@@ -1,0 +1,18 @@
+{
+  "component": "SyncSwapFeeManager",
+  "main_contract": "SyncSwapFeeManager",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x12af3ec993ec5d5bd789b3e989c9e95a2f6c586d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

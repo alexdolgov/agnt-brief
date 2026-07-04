@@ -1,0 +1,18 @@
+{
+  "component": "PosiRefund",
+  "main_contract": "PosiRefund",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcef0cf23a3c952032614887765a9390cc1f98f19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "SportPositionalMarketManager",
+  "main_contract": "SportPositionalMarketManager",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x46b1ec25e5e7696ecbae9441d3f79d01b118e154",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xccf4fdc780401010aa7572102bf82a769b741a19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf958a078c85069e2dced28ff27bd80db8f1ac945",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

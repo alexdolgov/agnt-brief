@@ -1,0 +1,26 @@
+{
+  "component": "Abra",
+  "main_contract": "Abra",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc9f09c2845e2e518ceabaa3060aae0085eb4bd4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf520b2bf38b0e458f62d0dbee79261b5901956d8",
+      "is_proxy": true,
+      "implementation_address": "0xc9f09c2845e2e518ceabaa3060aae0085eb4bd4b",
+      "liveness": "inactive"
+    }
+  ]
+}

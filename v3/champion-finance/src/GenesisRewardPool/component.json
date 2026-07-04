@@ -1,0 +1,66 @@
+{
+  "component": "GenesisRewardPool",
+  "main_contract": "GenesisRewardPool",
+  "source_file_count": 6,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0a90276552b5292b47fa51101894d5bb038f0d8d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x568c86e6f38078c86fbd91b75255609a298bb6b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x85e5a781ccd07c7dbc223b7490fd2d7662127175",
+      "is_proxy": true,
+      "implementation_address": "0xf3d84b6826d1ceca418f00f897d4d14617ab15c9",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaf48cf5acb263e5155b99d65df56b30f0e1d148c",
+      "is_proxy": true,
+      "implementation_address": "0xb2e96eb7c9f7a8c1710b0892286ee79ad4aa1d34",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb2e96eb7c9f7a8c1710b0892286ee79ad4aa1d34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf3d84b6826d1ceca418f00f897d4d14617ab15c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf532f04e58b1c940d5ac4fe807ab27d073495abf",
+      "is_proxy": true,
+      "implementation_address": "0xf3d84b6826d1ceca418f00f897d4d14617ab15c9",
+      "liveness": "inactive"
+    }
+  ]
+}

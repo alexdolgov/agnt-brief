@@ -1,0 +1,28 @@
+{
+  "component": "PlanetRouter",
+  "main_contract": "PlanetRouter",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Planet_Finance_Smart_Contract_Security_Audit_Halborn_v1_1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x79fa9625ac5b26d320d8fdf427b8133d9eff455f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe112668191070467bdd0952ccbc650a2f467b467",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

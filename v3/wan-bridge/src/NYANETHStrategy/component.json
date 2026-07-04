@@ -1,0 +1,26 @@
+{
+  "component": "NYANETHStrategy",
+  "main_contract": "NYANETHStrategy",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6f7bf5cb2b274e654a16e64f8259fceaf41840e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf285108d3aa4dc9041364b64297979979a7ec7b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

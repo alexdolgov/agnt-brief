@@ -1,0 +1,26 @@
+{
+  "component": "Chronicle_Aggor_ETH_USD",
+  "main_contract": "Chronicle_Aggor_ETH_USD",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2750e4cb635af1fccfb10c0ea54b5b5bfc2759b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x914b68485452c9cfed2a80e7727cc2875be71c8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "LionTokenVesting",
+  "main_contract": "LionTokenVesting",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x69fba2a2e5e1de37f772ba733bb9a9817ce9efac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8691d217449258be1974054d9e37db99a0675bdb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

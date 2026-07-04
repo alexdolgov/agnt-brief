@@ -1,0 +1,18 @@
+{
+  "component": "Liquidator",
+  "main_contract": "Liquidator",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdcd617649099aae438ee27cfc8bafd10e49276e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

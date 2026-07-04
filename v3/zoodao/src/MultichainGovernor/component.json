@@ -1,0 +1,42 @@
+{
+  "component": "MultichainGovernor",
+  "main_contract": "MultichainGovernor",
+  "source_file_count": 44,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x0ea81678e4deb33aad9e214df76be3158b4209ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x65299eb6a77ee1b1a7ef7051cce71005b2a707ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x8769b70ac7c93af0e75de0d69877709b66d75838",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xc9ac406cda5d9dcbcb49a25e3ca9073951236b5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

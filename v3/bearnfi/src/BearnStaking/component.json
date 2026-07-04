@@ -1,0 +1,18 @@
+{
+  "component": "BearnStaking",
+  "main_contract": "BearnStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2afa00732b8a9f08542699dd9451fdf3335a3379",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

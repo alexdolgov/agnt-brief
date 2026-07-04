@@ -1,0 +1,18 @@
+{
+  "component": "UpdateCreator",
+  "main_contract": "UpdateCreator",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x614f3123bf1272e9f68800044274e0ec9bda3811",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

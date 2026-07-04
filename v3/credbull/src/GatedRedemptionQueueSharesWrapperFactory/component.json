@@ -1,0 +1,50 @@
+{
+  "component": "GatedRedemptionQueueSharesWrapperFactory",
+  "main_contract": "GatedRedemptionQueueSharesWrapperFactory",
+  "source_file_count": 16,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1ad5e5acc060fafde8a0e37aa382c250d64b62e3",
+      "is_proxy": true,
+      "implementation_address": "0x9932120518b25e35d4653a8b8d316c58c8b6d7c9",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x334ed809d962078b82f093aedc2d520d2e394b7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x585527cfc0f3304ee7b631ec00ae6831fbf8cefa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9932120518b25e35d4653a8b8d316c58c8b6d7c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe6ae7ba4224a40adb10d2eac2fa7b1e5a069586f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VlQuoV2Lens",
+  "main_contract": "VlQuoV2Lens",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb740db176eaae30fd69eec5623ee2f1651fa84d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

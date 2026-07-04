@@ -1,0 +1,34 @@
+{
+  "component": "OperatorDelegatorLib",
+  "main_contract": "OperatorDelegatorLib",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x768ba6aab8b0531f66b517b988fe6aafc9892f1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1d304a25d8a0e9053b1cdd2345e5730520c6ae6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce4882e2ba1bc6218a58422aab1fcf0ee193e607",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

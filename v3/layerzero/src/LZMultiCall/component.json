@@ -1,0 +1,18 @@
+{
+  "component": "LZMultiCall",
+  "main_contract": "LZMultiCall",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5528cf58feb8fbfce94f43b33240fffb1312bde3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

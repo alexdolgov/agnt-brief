@@ -1,0 +1,18 @@
+{
+  "component": "MerkleDistributor-2",
+  "main_contract": "MerkleDistributor",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x243d327fef1d878e6fa3784a75abcbb927c9132a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

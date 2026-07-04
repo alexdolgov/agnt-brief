@@ -1,0 +1,18 @@
+{
+  "component": "AMO",
+  "main_contract": "AMO",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4681a847863f1d1a584c298ae5a7ac4343704e8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

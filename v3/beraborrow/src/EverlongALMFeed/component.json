@@ -1,0 +1,18 @@
+{
+  "component": "EverlongALMFeed",
+  "main_contract": "EverlongALMFeed",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xf92d1c97e73e1f087cc8ee9e0e13a207bf219cc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

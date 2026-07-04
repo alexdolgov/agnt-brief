@@ -1,0 +1,18 @@
+{
+  "component": "BoostViewVoodoo2",
+  "main_contract": "BoostViewVoodoo2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x56a3d20972fdf872ca8c799f83718f7297d371b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

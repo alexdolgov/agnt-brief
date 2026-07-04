@@ -1,0 +1,18 @@
+{
+  "component": "SprBTCVaultRepository",
+  "main_contract": "SprBTCVaultRepository",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x55842f78594f976549e15fac597381930aff65a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

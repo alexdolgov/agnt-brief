@@ -1,0 +1,18 @@
+{
+  "component": "MarketMaker",
+  "main_contract": "MarketMaker",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0665acb185a54fb3ec6a22a0097d1b432cac94ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

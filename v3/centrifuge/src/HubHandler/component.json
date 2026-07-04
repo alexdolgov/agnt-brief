@@ -1,0 +1,18 @@
+{
+  "component": "HubHandler",
+  "main_contract": "HubHandler",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0defb429b1663698da4bae3278393f6844c3392c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

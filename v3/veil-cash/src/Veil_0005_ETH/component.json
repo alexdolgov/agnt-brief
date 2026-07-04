@@ -1,0 +1,18 @@
+{
+  "component": "Veil_0005_ETH",
+  "main_contract": "Veil_0005_ETH",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6c206b5389de4e5a23fdf13bf38104ce8dd2ed5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "FeeRewardForwarder",
+  "main_contract": "FeeRewardForwarder",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://316135650-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-Me8Xn_pJtAjktHi3oBg%2F-Mfimt8Ii5RUGI8n3xdQ%2F-MfitjlyTlbQXlA093Ni%2FSecurity_Audit_for_Tetu.io.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x11765038a27d21a399e2f240d2a2a506da7324b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FreezableTransparentUpgradeableProxy-7",
+  "main_contract": "FreezableTransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe07f9d810a48ab5c3c914ba3ca53af14e4491e8a",
+      "is_proxy": true,
+      "implementation_address": "0x511cc903377ef0fffc10434a8eaa06e63e563471",
+      "liveness": "live"
+    }
+  ]
+}

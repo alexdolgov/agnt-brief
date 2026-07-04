@@ -1,0 +1,26 @@
+{
+  "component": "SSVNetwork",
+  "main_contract": "SSVNetwork",
+  "source_file_count": 102,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3611d36a7c052211d6f3b1a39326ad38a02832b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9122fded65ed6b562243efdc9e55ff0bef5e7499",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

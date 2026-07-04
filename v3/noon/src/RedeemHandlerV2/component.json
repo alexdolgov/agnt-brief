@@ -1,0 +1,26 @@
+{
+  "component": "RedeemHandlerV2",
+  "main_contract": "RedeemHandlerV2",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3db3260fff8f5f97c96ae2fe871a9359d46eb566",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9f8d0a683871125083170f65430f8a15affa0086",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

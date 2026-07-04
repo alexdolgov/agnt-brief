@@ -1,0 +1,18 @@
+{
+  "component": "DeductFee_Forwarder",
+  "main_contract": "DeductFee_Forwarder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xff34ed9d3ca159727a2c73c095b4d78e41773f3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

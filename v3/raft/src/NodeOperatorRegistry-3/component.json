@@ -1,0 +1,18 @@
+{
+  "component": "NodeOperatorRegistry-3",
+  "main_contract": "NodeOperatorRegistry",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea6c9a14b96777a448687272bf0e6f6d9ce0e68a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

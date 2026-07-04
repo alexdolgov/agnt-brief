@@ -1,0 +1,18 @@
+{
+  "component": "PopsicleUSDCUSDTLevSwapper",
+  "main_contract": "PopsicleUSDCUSDTLevSwapper",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc7fa554a65a98502457fcfc2f1afa28113d7920",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

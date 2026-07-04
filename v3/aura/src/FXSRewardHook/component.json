@@ -1,0 +1,18 @@
+{
+  "component": "FXSRewardHook",
+  "main_contract": "FXSRewardHook",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a6980170fd45bdebf5902b597c53a2a0678f1f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

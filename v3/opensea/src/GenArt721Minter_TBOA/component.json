@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721Minter_TBOA",
+  "main_contract": "GenArt721Minter_TBOA",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb4510235b7cac3c870312c732fe8e500ca77d4d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

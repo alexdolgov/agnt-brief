@@ -1,0 +1,18 @@
+{
+  "component": "WaterfallRouter01",
+  "main_contract": "WaterfallRouter01",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf0d3b2550f7b9f8b0ec42383736b6aa4b09db7b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

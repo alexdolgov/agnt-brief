@@ -1,0 +1,26 @@
+{
+  "component": "NFTPrivateExchanger",
+  "main_contract": "NFTPrivateExchanger",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1b1cd5e15c1d0e84cbfff8f7df514e4f90031fdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5c062215aefdd76c4bd54050845d458264a80c67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

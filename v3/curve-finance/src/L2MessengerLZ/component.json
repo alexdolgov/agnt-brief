@@ -1,0 +1,20 @@
+{
+  "component": "L2MessengerLZ",
+  "main_contract": "L2MessengerLZ",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_Curve_Fast_Bridge_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x14e11c1b8f04a7de306a7b5bf21bbca0d5cf79ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CVaultETHLP-2",
+  "main_contract": "CVaultETHLP",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7eaa3bb9ac982cd5f6124f9b5a3620348725ced",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

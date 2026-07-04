@@ -1,0 +1,18 @@
+{
+  "component": "OmniVotingEscrowAdaptor",
+  "main_contract": "OmniVotingEscrowAdaptor",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6817149cb753bf529565b4d023d7507ed2ff4bc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

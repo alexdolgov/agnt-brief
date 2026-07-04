@@ -1,0 +1,18 @@
+{
+  "component": "AdventureGold",
+  "main_contract": "AdventureGold",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

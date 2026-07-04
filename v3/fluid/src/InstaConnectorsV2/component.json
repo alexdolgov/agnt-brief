@@ -1,0 +1,18 @@
+{
+  "component": "InstaConnectorsV2",
+  "main_contract": "InstaConnectorsV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97b0b3a8bdefe8cb9563a3c610019ad10db8ad11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ClaimSignatureRegistry-3",
+  "main_contract": "ClaimSignatureRegistry",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x56c8d8f7f926e0fb04a2cf05f18b44b2c5864aeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

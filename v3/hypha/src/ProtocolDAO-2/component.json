@@ -1,0 +1,21 @@
+{
+  "component": "ProtocolDAO-2",
+  "main_contract": "ProtocolDAO",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Zellic/publications/blob/master/GoGoPool%20-%20Zellic%20Audit%20Report.pdf",
+    "https://github.com/code-423n4/2023-02-gogopool-mitigation-contest"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfc3ea32c03b4be326bced178431789f7e2d8051a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

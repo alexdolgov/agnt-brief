@@ -1,0 +1,31 @@
+{
+  "component": "AlgebraBasePluginV1",
+  "main_contract": "AlgebraBasePluginV1",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf",
+    "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Base_Plugin_report_MixBytes.pdf",
+    "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Algebra_Paladin_report.pdf",
+    "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Farming_Plugin_report_MixBytes.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x974f1be2b28c455ee29af20152c112feee85e3c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x9f0b3984ce2496bdf9db89701df6bac425faadd8",
+      "is_proxy": true,
+      "implementation_address": "0x974f1be2b28c455ee29af20152c112feee85e3c1",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SYBaseUpg-27",
+  "main_contract": "SYBaseUpg",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b91b60f96c1c587c830a0239e27431276df9718",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

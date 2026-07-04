@@ -1,0 +1,18 @@
+{
+  "component": "DOLO",
+  "main_contract": "DOLO",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0f81001ef0a83ecce5ccebf63eb302c70a39a654",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "YieldSeekerCompoundV3Adapter",
+  "main_contract": "YieldSeekerCompoundV3Adapter",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x66621c39cdea3359c22b6d9de101a3b9d19b3ad0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

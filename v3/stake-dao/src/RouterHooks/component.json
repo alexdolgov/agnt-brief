@@ -1,0 +1,18 @@
+{
+  "component": "RouterHooks",
+  "main_contract": "RouterHooks",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7fa49df302a98223d98d115fc4fcd275576f6faa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

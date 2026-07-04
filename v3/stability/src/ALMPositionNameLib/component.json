@@ -1,0 +1,18 @@
+{
+  "component": "ALMPositionNameLib",
+  "main_contract": "ALMPositionNameLib",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x79791d67588a50e613893d5d47e55303185bd7cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

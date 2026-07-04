@@ -1,0 +1,18 @@
+{
+  "component": "WrappedPiErc20Factory",
+  "main_contract": "WrappedPiErc20Factory",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9cdda9f8a4533d829b424f47ac9a7850e46982e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

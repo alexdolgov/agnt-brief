@@ -1,0 +1,26 @@
+{
+  "component": "BonusDistributor",
+  "main_contract": "BonusDistributor",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x38aa96f6acc2696f19c8203abf74f5c05de36890",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xee5fdbdcb04c1d35c3263c5032ab11df377597c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

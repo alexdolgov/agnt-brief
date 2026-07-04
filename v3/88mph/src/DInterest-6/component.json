@@ -1,0 +1,18 @@
+{
+  "component": "DInterest-6",
+  "main_contract": "DInterest",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27e40571efef08709655b900c6a4efa89594c8b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

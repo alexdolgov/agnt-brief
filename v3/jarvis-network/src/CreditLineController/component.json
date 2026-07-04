@@ -1,0 +1,18 @@
+{
+  "component": "CreditLineController",
+  "main_contract": "CreditLineController",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x689359561355ef829bb6d30a9c5b0e98c544cb11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

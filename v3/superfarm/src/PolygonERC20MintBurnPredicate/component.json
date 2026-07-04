@@ -1,0 +1,18 @@
+{
+  "component": "PolygonERC20MintBurnPredicate",
+  "main_contract": "PolygonERC20MintBurnPredicate",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x436f5ba0dcf22f991475fc7a6de75daae2f40cb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LineaBridgeReceiver",
+  "main_contract": "LineaBridgeReceiver",
+  "source_file_count": 123,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x1f71901daf98d70b4baf40de080321e5c2676856",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

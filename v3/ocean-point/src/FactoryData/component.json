@@ -1,0 +1,18 @@
+{
+  "component": "FactoryData",
+  "main_contract": "FactoryData",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x146d589cfe136644bdf4f1958452b5a4bb9c5a05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

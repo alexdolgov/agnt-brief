@@ -1,0 +1,26 @@
+{
+  "component": "WooWithdrawManager",
+  "main_contract": "WooWithdrawManager",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x39467a0debf360a82f83880f13ebdf7f0c2ec735",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcf6ce5fd6bf28bb1aeac88a55251f6c840059de5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

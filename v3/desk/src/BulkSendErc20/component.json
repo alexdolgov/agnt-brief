@@ -1,0 +1,18 @@
+{
+  "component": "BulkSendErc20",
+  "main_contract": "BulkSendErc20",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80825a51afa8bfafe6b0640f605c169c5f58d670",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

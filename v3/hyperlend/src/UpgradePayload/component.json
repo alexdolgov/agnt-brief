@@ -1,0 +1,18 @@
+{
+  "component": "UpgradePayload",
+  "main_contract": "UpgradePayload",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7c3fa1493facb8b3b71455f4e128156ec73adb5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

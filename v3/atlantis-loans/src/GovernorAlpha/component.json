@@ -1,0 +1,26 @@
+{
+  "component": "GovernorAlpha",
+  "main_contract": "GovernorAlpha",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0ed46f84ebf8af56eb29644f6a49d184ad771e11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5a31d65e89292865b09ad3bb10bf38e19b1074ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

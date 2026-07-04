@@ -1,0 +1,18 @@
+{
+  "component": "DODOCalleeHelper",
+  "main_contract": "DODOCalleeHelper",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2673e5333620bb22bd1bfb3af9fc7012008e3b4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

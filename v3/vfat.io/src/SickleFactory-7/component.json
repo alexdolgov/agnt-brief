@@ -1,0 +1,18 @@
+{
+  "component": "SickleFactory-7",
+  "main_contract": "SickleFactory",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb60ab0b9b7b0d1614ab53b7540653078d89a0d76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

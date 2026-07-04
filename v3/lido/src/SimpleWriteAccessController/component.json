@@ -1,0 +1,18 @@
+{
+  "component": "SimpleWriteAccessController",
+  "main_contract": "SimpleWriteAccessController",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0f86056d00bcf39baef81bbed1786e6f32c1a5fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

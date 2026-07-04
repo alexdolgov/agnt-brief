@@ -1,0 +1,18 @@
+{
+  "component": "LPTokenStaker-2",
+  "main_contract": "LPTokenStaker",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e32bad45a1c29c1ea27cf4dd588df9e68ed376c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

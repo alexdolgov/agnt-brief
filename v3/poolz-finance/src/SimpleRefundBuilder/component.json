@@ -1,0 +1,18 @@
+{
+  "component": "SimpleRefundBuilder",
+  "main_contract": "SimpleRefundBuilder",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x120893ab6f67171d4e6b0e72c151ab96aebe44e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

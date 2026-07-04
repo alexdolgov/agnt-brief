@@ -1,0 +1,18 @@
+{
+  "component": "SteakBankImpl-2",
+  "main_contract": "SteakBankImpl",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x11fdc6419650ecc43b4a9e9797e2ab55980b85c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

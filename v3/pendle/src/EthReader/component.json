@@ -1,0 +1,18 @@
+{
+  "component": "EthReader",
+  "main_contract": "EthReader",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7549b6b7e067f0c79e1f40c5f7465e7161391532",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

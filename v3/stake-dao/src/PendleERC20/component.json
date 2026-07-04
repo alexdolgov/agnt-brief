@@ -1,0 +1,18 @@
+{
+  "component": "PendleERC20",
+  "main_contract": "PendleERC20",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x74c5a0d5dfcc6d4527c849f09ecc360c5345d986",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

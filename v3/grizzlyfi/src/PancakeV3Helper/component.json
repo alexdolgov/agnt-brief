@@ -1,0 +1,18 @@
+{
+  "component": "PancakeV3Helper",
+  "main_contract": "PancakeV3Helper",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x22eefe462c33af1ab1a52864c9a66d9a70755497",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

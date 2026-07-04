@@ -1,0 +1,38 @@
+{
+  "component": "GenericERC20",
+  "main_contract": "GenericERC20",
+  "source_file_count": 9,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/saddle-finance/saddle-audits/blob/master/10-29-2020_Certik.pdf",
+    "https://github.com/saddle-finance/saddle-audits/blob/master/12-09-2020_Quantstamp.pdf",
+    "https://www.openzeppelin.com/news/saddle-contracts-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x149bbb210051851016f57a2824c0444f642833a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcf70e2f3567ba396f3dd04822f78ecd70ba46894",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeedb4e89e8032d04dfb3a33fd89344dddbe5ebde",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

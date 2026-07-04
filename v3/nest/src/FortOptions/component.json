@@ -1,0 +1,42 @@
+{
+  "component": "FortOptions",
+  "main_contract": "FortOptions",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x012c421484dab60279fe4a19de17593785a1b576",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x284935f8c571d054df98eda8503ea13cde5fd8cc",
+      "is_proxy": true,
+      "implementation_address": "0xdac874ef2e801dc2e954820e7e111077362fea7a",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdac874ef2e801dc2e954820e7e111077362fea7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfa77fa693b289e89eeb1d12d4eecfe48d095fdb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

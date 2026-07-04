@@ -1,0 +1,18 @@
+{
+  "component": "L2Pool",
+  "main_contract": "L2Pool",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x179867c392add1bf4f7a3d4c70bf8f2f476bb8cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

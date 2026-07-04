@@ -1,0 +1,18 @@
+{
+  "component": "DelegateStakingRewardsIDLE",
+  "main_contract": "DelegateStakingRewardsIDLE",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x747e819b878956fb6e5eb936a6415a5d037ff388",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

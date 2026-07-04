@@ -1,0 +1,18 @@
+{
+  "component": "StrategySolv",
+  "main_contract": "StrategySolv",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x41076df3ed1c59860245471b918f423ec44b840d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

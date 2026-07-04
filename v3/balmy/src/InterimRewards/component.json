@@ -1,0 +1,18 @@
+{
+  "component": "InterimRewards",
+  "main_contract": "InterimRewards",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9dc44153bd326b24714e926173e247fe7f9d6e47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

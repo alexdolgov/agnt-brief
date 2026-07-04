@@ -1,0 +1,18 @@
+{
+  "component": "sko_ping",
+  "main_contract": "sko_ping",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d4c2f88f2e403ec2ae5079726a13873673683fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

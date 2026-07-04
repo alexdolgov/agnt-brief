@@ -1,0 +1,18 @@
+{
+  "component": "OxOPool",
+  "main_contract": "OxOPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04b597a1e8d1526ac8168174f426b5f47c0463c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

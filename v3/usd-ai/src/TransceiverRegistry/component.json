@@ -1,0 +1,18 @@
+{
+  "component": "TransceiverRegistry",
+  "main_contract": "TransceiverRegistry",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4db06053edb413899454bad5bf25213b22fda979",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

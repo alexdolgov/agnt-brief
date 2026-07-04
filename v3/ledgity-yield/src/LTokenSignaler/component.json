@@ -1,0 +1,42 @@
+{
+  "component": "LTokenSignaler",
+  "main_contract": "LTokenSignaler",
+  "source_file_count": 14,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0a1ba9ff031dce2f0c228b572154fb367e0df98a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x283f35b6406a0e19a786ed119869ef2c0fe157ee",
+      "is_proxy": true,
+      "implementation_address": "0x0a1ba9ff031dce2f0c228b572154fb367e0df98a",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4eec09db589c882fba7c5d03065dfd20912fe877",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x902982c0c405091894ff82b3b51f180f99f75144",
+      "is_proxy": true,
+      "implementation_address": "0x4eec09db589c882fba7c5d03065dfd20912fe877",
+      "liveness": "live"
+    }
+  ]
+}

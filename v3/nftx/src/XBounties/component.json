@@ -1,0 +1,18 @@
+{
+  "component": "XBounties",
+  "main_contract": "XBounties",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c5a36aef5a7b04b0123b2064bd20bc47183e1dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

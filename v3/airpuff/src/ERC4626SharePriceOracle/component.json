@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626SharePriceOracle",
+  "main_contract": "ERC4626SharePriceOracle",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d3eb50ed4540135a78facd70063bccc988014b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

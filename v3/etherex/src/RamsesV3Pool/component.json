@@ -1,0 +1,21 @@
+{
+  "component": "RamsesV3Pool",
+  "main_contract": "RamsesV3Pool",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2024-10-ramses-exchange",
+    "https://diligence.security/audits/2024/08/ramses-v3"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x90e8a5b881d211f418d77ba8978788b62544914b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

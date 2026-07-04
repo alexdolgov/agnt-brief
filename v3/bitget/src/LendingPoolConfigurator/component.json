@@ -1,0 +1,18 @@
+{
+  "component": "LendingPoolConfigurator",
+  "main_contract": "LendingPoolConfigurator",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e2b5533729b1f67d7e60bcb89ccbc3f5f66b32d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

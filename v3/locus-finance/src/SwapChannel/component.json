@@ -1,0 +1,18 @@
+{
+  "component": "SwapChannel",
+  "main_contract": "SwapChannel",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc5dad0c33889693913617cee718ee147ba61b4dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

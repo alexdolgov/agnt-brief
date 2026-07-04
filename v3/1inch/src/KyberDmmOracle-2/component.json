@@ -1,0 +1,18 @@
+{
+  "component": "KyberDmmOracle-2",
+  "main_contract": "KyberDmmOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2eea44e40930b1984f42078e836c659a12301e40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

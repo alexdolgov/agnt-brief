@@ -1,0 +1,26 @@
+{
+  "component": "AngstromL2",
+  "main_contract": "AngstromL2",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7fa49d29481b6d168505ccde26635e204c09e5cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcd256a2f4574cb6aca4837313ad225d2fe1de5cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

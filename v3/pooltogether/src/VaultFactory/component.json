@@ -1,0 +1,26 @@
+{
+  "component": "VaultFactory",
+  "main_contract": "VaultFactory",
+  "source_file_count": 66,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa469deff6d52c9571d13513e3cd7d94496082d81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf65fa202907d6046d1ef33c521889b54bde08081",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

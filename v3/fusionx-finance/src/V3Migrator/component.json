@@ -1,0 +1,18 @@
+{
+  "component": "V3Migrator",
+  "main_contract": "V3Migrator",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x0f9f0f33811db03f5c38e889bf6ed0c3d49053bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

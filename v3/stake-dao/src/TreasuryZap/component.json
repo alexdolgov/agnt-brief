@@ -1,0 +1,18 @@
+{
+  "component": "TreasuryZap",
+  "main_contract": "TreasuryZap",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0665ef3556520b21368754fb644ed3ebf1993ad4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

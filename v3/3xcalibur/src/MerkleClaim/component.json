@@ -1,0 +1,18 @@
+{
+  "component": "MerkleClaim",
+  "main_contract": "MerkleClaim",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x64b34ad4c1bb4bfbf4c43b9b82ab245c3d58a1bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "JumpRateModelV2-2",
+  "main_contract": "JumpRateModelV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4e4c96b038899e2f2597ef693b8278cfeb63e7db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

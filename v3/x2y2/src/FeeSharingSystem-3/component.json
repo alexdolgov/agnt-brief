@@ -1,0 +1,18 @@
+{
+  "component": "FeeSharingSystem-3",
+  "main_contract": "FeeSharingSystem",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd823c605807cc5e6bd6fc0d7e4eea50d3e2d66cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

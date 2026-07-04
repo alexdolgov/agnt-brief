@@ -1,0 +1,18 @@
+{
+  "component": "SwapHelperFacet",
+  "main_contract": "SwapHelperFacet",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb9a2b1c9372e5b407ce0dfd2102e6dfe85a96355",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

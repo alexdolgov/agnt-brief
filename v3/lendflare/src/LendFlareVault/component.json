@@ -1,0 +1,58 @@
+{
+  "component": "LendFlareVault",
+  "main_contract": "LendFlareVault",
+  "source_file_count": 22,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29042e6389075f7181361ee5bca1df9a524d492c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35f962d8da9bfbe9af3cd568b50e51c81175ea87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4169fa3452913d226fe2c61bb6476c4a53a08ac0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c3cb71fb9d3c2a226148fee032dec8e4453094e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x803ffdff8150093be6fc78a0963f443e9bd9c378",
+      "is_proxy": true,
+      "implementation_address": "0xd61401ccfd30356c8c00349eebb6a60d145810ff",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd61401ccfd30356c8c00349eebb6a60d145810ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

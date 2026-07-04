@@ -1,0 +1,18 @@
+{
+  "component": "Renzo",
+  "main_contract": "Renzo",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b50805453023a91a8bf641e279401a0b23fa6f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LandMigrator",
+  "main_contract": "LandMigrator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

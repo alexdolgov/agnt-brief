@@ -1,0 +1,18 @@
+{
+  "component": "MgvOracle-2",
+  "main_contract": "MgvOracle",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa3749d35103ad916c4753f89a1bf065ab608a7d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

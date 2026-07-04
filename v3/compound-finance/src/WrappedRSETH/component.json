@@ -1,0 +1,18 @@
+{
+  "component": "WrappedRSETH",
+  "main_contract": "WrappedRSETH",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe119d214a6efa7d3cf60e6e59481ede1b0064a6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

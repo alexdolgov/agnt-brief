@@ -1,0 +1,18 @@
+{
+  "component": "ZapYvecrvSusd",
+  "main_contract": "ZapYvecrvSusd",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85db618d507909570299d3e3cffd0fc4d4f97fef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

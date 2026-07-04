@@ -1,0 +1,18 @@
+{
+  "component": "ZFV3PoolDeployer",
+  "main_contract": "ZFV3PoolDeployer",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0ff16867bcac3c5fdc2dc73558e3f8e2ed89eea2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

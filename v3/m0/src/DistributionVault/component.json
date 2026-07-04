@@ -1,0 +1,26 @@
+{
+  "component": "DistributionVault",
+  "main_contract": "DistributionVault",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/m0-foundation/documentation/blob/main/protocol-audit-reports/Audits%20and%20fixes%20overview.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/Certora%20Audit%20report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/ChainSecurity%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/OpenZeppelin%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/Prototech%20Labs%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/Quantstamp%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/ThreeSigma%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7298f620b0f752cf41bd818a16c756d9dcaa34f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

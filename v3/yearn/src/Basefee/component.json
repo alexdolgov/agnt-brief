@@ -1,0 +1,18 @@
+{
+  "component": "Basefee",
+  "main_contract": "Basefee",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02ff746d8cb62709aeec611cec9b17d7dd1d3480",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

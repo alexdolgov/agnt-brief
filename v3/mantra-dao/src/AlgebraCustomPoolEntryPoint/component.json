@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraCustomPoolEntryPoint",
+  "main_contract": "AlgebraCustomPoolEntryPoint",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3012e9049d05b4b5369d690114d5a5861ebb85cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

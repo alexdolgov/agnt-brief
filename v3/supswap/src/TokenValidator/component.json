@@ -1,0 +1,42 @@
+{
+  "component": "TokenValidator",
+  "main_contract": "TokenValidator",
+  "source_file_count": 24,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x1f00b2091a7e6327812def3862856c1d4c492565",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x84be3407d54187bb4fd8dc2b5609854c49696cc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x8b4780a2821eb923827dc1b9863db8427ed9f417",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x95cfa3f4e538fd81d458d5e617a7c74210b56ee3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MoneyFiStrategyUpgradeableAllBridge",
+  "main_contract": "MoneyFiStrategyUpgradeableAllBridge",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03afbc04c44d648dd59fc9cafb2b00730bf42593",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

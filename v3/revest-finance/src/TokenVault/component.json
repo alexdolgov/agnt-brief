@@ -1,0 +1,18 @@
+{
+  "component": "TokenVault",
+  "main_contract": "TokenVault",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3ccc20d960e185e863885913596b54ea666b2fe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PendleBoringOneracle",
+  "main_contract": "PendleBoringOneracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f0318b5ab2c4084692986a2c25916cec1195cd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

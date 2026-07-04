@@ -1,0 +1,22 @@
+{
+  "component": "OrigamiTokenizedBalanceSheetVault",
+  "main_contract": "OrigamiTokenizedBalanceSheetVault",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Electisec_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Nethermind_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Panprog_hOHM.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1db1591540d7a6062be0837ca3c808add28844f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "WardenCosmoCore",
+  "main_contract": "WardenCosmoCore",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/valixconsulting/audit-reports/blob/main/ValixConsulting-Audit-Report-WardenFinance-Aegis-and-AegisL2-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbf0955a3c4d3dd474b397ae4cdb8d264065c575a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

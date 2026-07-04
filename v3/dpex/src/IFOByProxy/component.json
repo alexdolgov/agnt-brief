@@ -1,0 +1,26 @@
+{
+  "component": "IFOByProxy",
+  "main_contract": "IFOByProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x256feac3c96f3bbaa749103d671de502e206fc48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcf55c855a1c8df5e007898f09f37f7d2f434d5b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

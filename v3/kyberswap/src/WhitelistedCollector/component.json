@@ -1,0 +1,18 @@
+{
+  "component": "WhitelistedCollector",
+  "main_contract": "WhitelistedCollector",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ed9afb6b4cafbdfb2d833b0e70845997300f6b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

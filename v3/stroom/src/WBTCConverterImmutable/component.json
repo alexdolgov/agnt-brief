@@ -1,0 +1,18 @@
+{
+  "component": "WBTCConverterImmutable",
+  "main_contract": "WBTCConverterImmutable",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TradeFacet",
+  "main_contract": "TradeFacet",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2c6381a398a96f8c5eb6cf9a6c62188caa5e7903",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

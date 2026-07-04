@@ -1,0 +1,20 @@
+{
+  "component": "EZWrapper",
+  "main_contract": "EZWrapper",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/EZManagerCL/EZManagerContracts/blob/master/audits/Valves_v1_5.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x180670ccb476624566e78618d467ef57ebbf1921",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

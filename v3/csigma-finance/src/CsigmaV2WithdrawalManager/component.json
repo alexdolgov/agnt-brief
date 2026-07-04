@@ -1,0 +1,42 @@
+{
+  "component": "CsigmaV2WithdrawalManager",
+  "main_contract": "CsigmaV2WithdrawalManager",
+  "source_file_count": 28,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2db11a6263c068d530ee8b82a25e715d463fc725",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67db5336474446a1ce616d1d5d17e01cfac45949",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99888c44a5ab5e96b5af0124ff0dae6d3eb8274d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff3222ccd8d068519cb17f9e665802cddc88e2e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

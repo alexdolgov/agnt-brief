@@ -1,0 +1,18 @@
+{
+  "component": "Assistant-3",
+  "main_contract": "Assistant",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7d987b986fba5e0a4247649a2334bb2d4029656c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

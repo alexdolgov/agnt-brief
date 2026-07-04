@@ -1,0 +1,22 @@
+{
+  "component": "UniswapV2Locker",
+  "main_contract": "UniswapV2Locker",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/softstackHQ/Smart-Contract-Security-Audits/blob/master/Unicrypt/02_Smart%20Contract%20Audit%20Unicrypt_Locking_V2.pdf",
+    "https://github.com/softstackHQ/Smart-Contract-Security-Audits/blob/master/Unicrypt/02_Smart%20Contract%20Audit%20Unicrypt_Presale.pdf",
+    "https://github.com/softstackHQ/Smart-Contract-Security-Audits/blob/master/Unicrypt/02_Smart_Contract_Audit_Unicrypt_LP_LockerV2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x361663a6097e90ebf125e1cf884048c32080aff3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

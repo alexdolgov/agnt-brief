@@ -1,0 +1,18 @@
+{
+  "component": "ReseedTransferOwnership",
+  "main_contract": "ReseedTransferOwnership",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5a1717dce3f93bfc7075944b7fd47247d7e919c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

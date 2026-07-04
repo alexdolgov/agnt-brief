@@ -1,0 +1,18 @@
+{
+  "component": "MockAggregator",
+  "main_contract": "MockAggregator",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x602823807c919a92b63cf5c126387c4759976072",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

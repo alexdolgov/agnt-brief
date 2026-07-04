@@ -1,0 +1,26 @@
+{
+  "component": "DirectDistributor",
+  "main_contract": "DirectDistributor",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x837d54af002188045662cc3bff5b30e40247ba53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8a34528c3879fbdbf2fa6273c5fc7a6854311ced",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

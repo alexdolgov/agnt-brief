@@ -1,0 +1,34 @@
+{
+  "component": "GnosisSafeProxyFactory",
+  "main_contract": "GnosisSafeProxyFactory",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8e52ca5a7a9249431f03d60d79dda5eab4930178",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb0b4bd94d656353a30773ac883591ddbabc0c0ba",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb137d135dc8482b633265c21191f50a4ba26145d",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    }
+  ]
+}

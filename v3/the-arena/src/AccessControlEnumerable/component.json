@@ -1,0 +1,26 @@
+{
+  "component": "AccessControlEnumerable",
+  "main_contract": "AccessControlEnumerable",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6a0fbeb8110e696b610c4a2af964900cf1b8ac7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xff4e5dd97ff65586f06627b5d2ca2c7499a54a40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Paxe-2",
+  "main_contract": "Paxe",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd2a3eec06719d5ac66248003b5488e02165dd2fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

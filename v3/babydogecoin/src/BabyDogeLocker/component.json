@@ -1,0 +1,26 @@
+{
+  "component": "BabyDogeLocker",
+  "main_contract": "BabyDogeLocker",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x36b34364e17373c05300bc3e827bf7cac34541be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc9117202c5e94db475b2af39e3c41c946e215592",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "StrategyLiquidateBiswapBR",
+  "main_contract": "StrategyLiquidateBiswapBR",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x78ca487fb2c059c1f5924eb9f934e5cfa1901993",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9f259c288374bace7f065aabe31114363237874f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

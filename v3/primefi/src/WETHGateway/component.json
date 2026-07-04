@@ -1,0 +1,26 @@
+{
+  "component": "WETHGateway",
+  "main_contract": "WETHGateway",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x88ae2596dac8e7e9e235b465ee8215cc3192fcae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xac57f0d2f8ef17b8d26189ba0db353361374b2ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

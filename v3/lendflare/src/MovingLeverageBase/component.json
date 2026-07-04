@@ -1,0 +1,18 @@
+{
+  "component": "MovingLeverageBase",
+  "main_contract": "MovingLeverageBase",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd132c63a09fccfef56b88c5aca8ecbb63f814a46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "component": "Migration",
+  "main_contract": "Migration",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/LayerZero-Labs/Audits/blob/main/audits/Endpoint%20V2%20-%20Sui/LZ-SUI-EP-V2_Paladin_07-Oct-2025.pdf",
+    "https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_radiant_v2.0.pdf",
+    "https://github.com/zokyo-sec/audit-reports/blob/main/Radiant/Radiant%20Capital%20audit%20report_06_March.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3f1b4dae9c5cc45fcbadb14be6b2687f387818f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

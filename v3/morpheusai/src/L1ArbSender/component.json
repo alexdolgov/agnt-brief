@@ -1,0 +1,18 @@
+{
+  "component": "L1ArbSender",
+  "main_contract": "L1ArbSender",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1588b245a3502a86fdbf0a0f51abac3bbd2e90c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

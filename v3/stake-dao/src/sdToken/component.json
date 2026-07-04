@@ -1,0 +1,21 @@
+{
+  "component": "sdToken",
+  "main_contract": "sdToken",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Stake-DAO/audits/blob/main/misc/2022-02-01_chainsecurity_vesdt_fxs_locker.pdf",
+    "https://github.com/stake-dao/audits/blob/main/misc/2022-02-01_chainsecurity_vesdt_fxs_locker.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0879c1a344910c2944c29b892a1cf0c216122c66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "ERC1155PredicateProxy",
+  "main_contract": "ERC1155PredicateProxy",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f",
+      "is_proxy": true,
+      "implementation_address": "0xcfa65db73cb45d458d0a98006d3d558b5e1f021d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x46ca157573005281774be9be9a4187cce4ec1871",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62d7e87677ac7e3bd02c198e3fabeffdbc5eb2a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

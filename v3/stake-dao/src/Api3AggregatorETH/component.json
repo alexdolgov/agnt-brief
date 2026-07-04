@@ -1,0 +1,18 @@
+{
+  "component": "Api3AggregatorETH",
+  "main_contract": "Api3AggregatorETH",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x102ba7a2b0d6423659e6d2a6f7c387da53358909",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StableCalc",
+  "main_contract": "StableCalc",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0xca8d0747b5573d69653c3ac22242e6341c36e4b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CustomERC20",
+  "main_contract": "CustomERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xeac4bfef7d1c872ed705b01856af7f9802adc596",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VspMainnetOracle",
+  "main_contract": "VspMainnetOracle",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ff907f877e92ef39cdfba6d0db73e9e2ac0f538",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

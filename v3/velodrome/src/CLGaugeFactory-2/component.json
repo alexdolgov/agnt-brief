@@ -1,0 +1,42 @@
+{
+  "component": "CLGaugeFactory-2",
+  "main_contract": "CLGaugeFactory",
+  "source_file_count": 43,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x282ac0ea96493650f1a5e5e5d20490c782f1592a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9630dd7607d5a9beac9eb9473b9878a77b82d1e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa8854e622819a5d81acef97a76f1912f54aa5fc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdce58b0c99a69b4f55ff30af1e6bc1fc71146ec0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

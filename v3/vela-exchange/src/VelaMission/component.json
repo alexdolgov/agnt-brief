@@ -1,0 +1,18 @@
+{
+  "component": "VelaMission",
+  "main_contract": "VelaMission",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x66ca8052776c180c319ca65355f128376eb70834",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

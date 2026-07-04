@@ -1,0 +1,18 @@
+{
+  "component": "DestinationVaultExtension",
+  "main_contract": "DestinationVaultExtension",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4ca8f3e9a5adc4893c93643b2cd90dc9eb443fc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

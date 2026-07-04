@@ -1,0 +1,18 @@
+{
+  "component": "PlasmaVault",
+  "main_contract": "PlasmaVault",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd731f94c778f7c1090e2e0d797150a647de5188a",
+      "is_proxy": true,
+      "implementation_address": "0x9781413baff29db7bebdc52c475c780591c7b37b",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "LegacyNftfiRefinancingAdapterV2_1",
+  "main_contract": "LegacyNftfiRefinancingAdapterV2_1",
+  "source_file_count": 55,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x885425bc042b2e1176fd1263a5dd02aa81343f3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xadcd6a129973611545dba37e0e0fb479e1341b49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

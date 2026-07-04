@@ -1,0 +1,26 @@
+{
+  "component": "HardWorkHelper",
+  "main_contract": "HardWorkHelper",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c748e4f5247deccafdd5115bbb8646671c17c19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa9acab4910dca42895afa62b39fb8c2304da7f96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

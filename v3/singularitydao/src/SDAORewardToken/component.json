@@ -1,0 +1,18 @@
+{
+  "component": "SDAORewardToken",
+  "main_contract": "SDAORewardToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44921e42017316f89c1dedd70a3a017d4c5162c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

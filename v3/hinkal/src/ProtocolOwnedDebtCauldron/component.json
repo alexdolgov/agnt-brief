@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolOwnedDebtCauldron",
+  "main_contract": "ProtocolOwnedDebtCauldron",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xedcf198bc94ddcabb21dbeb38ad9f9793208f12a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

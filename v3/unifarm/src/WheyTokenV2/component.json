@@ -1,0 +1,18 @@
+{
+  "component": "WheyTokenV2",
+  "main_contract": "WheyTokenV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x072cfb8233680b7b196fc8ba6e1af76cbb5c49e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

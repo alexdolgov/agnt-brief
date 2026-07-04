@@ -1,0 +1,18 @@
+{
+  "component": "UnitPlasma",
+  "main_contract": "UnitPlasma",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x11e10b315363d43e46b04f139fc051164e0798a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

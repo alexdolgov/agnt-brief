@@ -1,0 +1,21 @@
+{
+  "component": "ArbitrumHubConnector",
+  "main_contract": "ArbitrumHubConnector",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/ConnextNxtp-Spearbit-Security-Review.pdf",
+    "https://github.com/connext/audits/blob/main/amarok/Connext_A-1__Macro_Audits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d8d16c500b89e4a1fde991f284d84d57e949ae3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": "2.0",
+  "project_key": "sherpa",
+  "generated_at": "2026-07-03T21:06:54.081Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 1,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 451076.16994,
+    "tvl_usd": 451076.16994,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://earn.sherpa.trade",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "Cyfrin"
+    ],
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x96043804d00dcec238718eedad9ac10719778380",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SherpaVault",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SherpaVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x96043804d00dcec238718eedad9ac10719778380",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13816"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2025-11-22 12:59:53+03",
+      "deploy_coverage_basis": "match_unverified"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 13816,
+      "audit_key": "audit-13816",
+      "report_name": "2025-11-23-cyfrin-sherpa-v2.0.pdf",
+      "report_url": "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-11-23-cyfrin-sherpa-v2.0.pdf",
+      "auditor": "Cyfrin",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Cyfrin",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2025-11"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 1
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

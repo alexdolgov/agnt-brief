@@ -1,0 +1,26 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 52,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36cd0c67f90daf9e70a2d0733e91ba73ecdc220d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa83b4006c16daeab2718294696c0122519195137",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

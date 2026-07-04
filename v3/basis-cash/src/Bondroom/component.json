@@ -1,0 +1,18 @@
+{
+  "component": "Bondroom",
+  "main_contract": "Bondroom",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd9a904a1320b5f0a1f742a9e431ded2a55efe109",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

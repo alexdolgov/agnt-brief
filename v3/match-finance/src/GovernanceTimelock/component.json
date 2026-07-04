@@ -1,0 +1,18 @@
+{
+  "component": "GovernanceTimelock",
+  "main_contract": "GovernanceTimelock",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x81905eae41af5235ec4d7e9b12e8d51251b26406",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ThePoolManager",
+  "main_contract": "ThePoolManager",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd30d927d15d18693e08dcd35593ff6f4a0c00058",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf0de8321f3e4a6c4de648dc577bfe31f20354e46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

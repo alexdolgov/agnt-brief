@@ -1,0 +1,18 @@
+{
+  "component": "StrategyJoeDai",
+  "main_contract": "StrategyJoeDai",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0b0d661a1d433a248d3b6ddaf91e189b73a9272f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

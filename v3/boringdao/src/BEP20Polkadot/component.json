@@ -1,0 +1,18 @@
+{
+  "component": "BEP20Polkadot",
+  "main_contract": "BEP20Polkadot",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

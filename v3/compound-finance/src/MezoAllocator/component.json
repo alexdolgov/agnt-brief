@@ -1,0 +1,18 @@
+{
+  "component": "MezoAllocator",
+  "main_contract": "MezoAllocator",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3e1d7ea6c2f5a39e90a21450a57269ca50e2b5df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

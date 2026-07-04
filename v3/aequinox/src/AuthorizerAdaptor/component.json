@@ -1,0 +1,18 @@
+{
+  "component": "AuthorizerAdaptor",
+  "main_contract": "AuthorizerAdaptor",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc36e4d42ee9ea51ea876161fdb31f2670a3860b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

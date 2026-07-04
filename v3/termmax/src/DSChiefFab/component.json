@@ -1,0 +1,18 @@
+{
+  "component": "DSChiefFab",
+  "main_contract": "DSChiefFab",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e7ca05e174a523709e556080e227f734a8f1483",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

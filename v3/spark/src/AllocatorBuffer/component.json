@@ -1,0 +1,18 @@
+{
+  "component": "AllocatorBuffer",
+  "main_contract": "AllocatorBuffer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x51e9681d7a05abfd33efafd43e5dd3afc0093f1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

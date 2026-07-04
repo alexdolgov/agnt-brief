@@ -1,0 +1,18 @@
+{
+  "component": "InitHotFix3",
+  "main_contract": "InitHotFix3",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x544f0c022d5fbc28a2f234a1816543cfc2c37d57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

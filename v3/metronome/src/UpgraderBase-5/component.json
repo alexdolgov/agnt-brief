@@ -1,0 +1,18 @@
+{
+  "component": "UpgraderBase-5",
+  "main_contract": "UpgraderBase",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd23b6f36c959e272270ba8179f8bea18474bff2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

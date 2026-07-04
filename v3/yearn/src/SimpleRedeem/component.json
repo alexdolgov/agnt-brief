@@ -1,0 +1,18 @@
+{
+  "component": "SimpleRedeem",
+  "main_contract": "SimpleRedeem",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x276d33825a217019b6afe5b317bef302db353465",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

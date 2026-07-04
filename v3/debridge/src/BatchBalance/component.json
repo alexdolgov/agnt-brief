@@ -1,0 +1,18 @@
+{
+  "component": "BatchBalance",
+  "main_contract": "BatchBalance",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50188692d5549386d102642036bab916b998c814",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

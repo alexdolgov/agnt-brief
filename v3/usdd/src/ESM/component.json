@@ -1,0 +1,18 @@
+{
+  "component": "ESM",
+  "main_contract": "ESM",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe4089b868f111ffaf9717d6df8d2c2fe6e698f55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

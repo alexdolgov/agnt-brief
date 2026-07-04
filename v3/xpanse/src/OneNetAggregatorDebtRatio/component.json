@@ -1,0 +1,18 @@
+{
+  "component": "OneNetAggregatorDebtRatio",
+  "main_contract": "OneNetAggregatorDebtRatio",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2f43dc10cdadb405f99d3bd5f94f7325338aa607",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

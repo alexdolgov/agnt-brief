@@ -1,0 +1,18 @@
+{
+  "component": "NFTMetadataGenerator",
+  "main_contract": "NFTMetadataGenerator",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3c70276ee29fd659a9d06983522b731784012c54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

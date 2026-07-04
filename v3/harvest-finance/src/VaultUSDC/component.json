@@ -1,0 +1,20 @@
+{
+  "component": "VaultUSDC",
+  "main_contract": "VaultUSDC",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

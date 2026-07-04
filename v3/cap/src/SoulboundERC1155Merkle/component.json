@@ -1,0 +1,18 @@
+{
+  "component": "SoulboundERC1155Merkle",
+  "main_contract": "SoulboundERC1155Merkle",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00c443f0282d004b2cd7946c4b6b3b56dc839555",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GenericTokenJar-2",
+  "main_contract": "GenericTokenJar",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x490c31f0ac5c34ca7d6de03925e3b89a899d1ecd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Chai",
+  "main_contract": "Chai",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06af07097c9eeb7fd685c692751d5c66db49c215",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

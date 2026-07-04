@@ -1,0 +1,18 @@
+{
+  "component": "FlashLoanLogic",
+  "main_contract": "FlashLoanLogic",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1d69c48a35ddd241e72a31db0e637676d89fc553",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

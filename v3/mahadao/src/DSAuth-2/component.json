@@ -1,0 +1,18 @@
+{
+  "component": "DSAuth-2",
+  "main_contract": "DSAuth",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb16fffa9e6f6489a2f8d77418eae58458efeff88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

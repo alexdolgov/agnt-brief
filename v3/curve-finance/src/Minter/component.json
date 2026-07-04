@@ -1,0 +1,20 @@
+{
+  "component": "Minter",
+  "main_contract": "Minter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/curve-dao-ToB-final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x458599f83764ae9d0528301c1b6cb18de63726bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

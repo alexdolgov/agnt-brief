@@ -1,0 +1,18 @@
+{
+  "component": "InstaDelegateFactory",
+  "main_contract": "InstaDelegateFactory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43e4442b14badedbeea99afbbd970be2cdc056c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

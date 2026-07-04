@@ -1,0 +1,58 @@
+{
+  "component": "AdminUpgradeabilityProxy-2",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 1,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0243a20b20eca78ddedf6b8ddb43a0286438a67a",
+      "is_proxy": true,
+      "implementation_address": "0x5ccc0bcba291c5b0d53b6d38c9934d341a13e4ed",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d17e7b77c678c79c3ab5176e164ff0bcceb8eaa",
+      "is_proxy": true,
+      "implementation_address": "0xec4f57ba8a5e804bd556590fec9b06968ba77a7e",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1d9aa7382840d36a9baf3ecf3986530cf4b3cfb4",
+      "is_proxy": true,
+      "implementation_address": "0xe6d6c48bb7865edd092c8755b10eea63f159d2bb",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x21200d3eca172a99cd91460fec5570bc8baf567d",
+      "is_proxy": true,
+      "implementation_address": "0xd43202c92fa8462ac23c8425878c20720437e286",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x40e31876c4322bd033bab028474665b12c4d04ce",
+      "is_proxy": true,
+      "implementation_address": "0xf3976c7472e1a4ef24828b4e373bdaf51f87f3f8",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x542c06a5dc3f27e0fbdc9fb7bc6748f26d54ddb0",
+      "is_proxy": true,
+      "implementation_address": "0x81ef2bc1e02fee5414e46accc6ae14d833eebba0",
+      "liveness": "live"
+    }
+  ]
+}

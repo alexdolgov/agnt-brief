@@ -1,0 +1,18 @@
+{
+  "component": "sGlobalDAOToken",
+  "main_contract": "sGlobalDAOToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0a3e9d4b234caf8090d8658c09834d72fc7dc0ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "ForceActionsFacet",
+  "main_contract": "ForceActionsFacet",
+  "source_file_count": 32,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2491a9a56b13b1403d5d790b50406c2fdd3bc1fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7331e3b251a0b299c439fa0c8dc26c3e372813aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8d0a7a8c6b76ed713c63bd17e05b949de6fa11db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

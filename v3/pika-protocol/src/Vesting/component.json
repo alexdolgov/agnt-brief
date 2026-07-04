@@ -1,0 +1,26 @@
+{
+  "component": "Vesting",
+  "main_contract": "Vesting",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x22ae0fe1e175da3a94112b14b6caed37bd6dafe2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x26a2c7480cbaee8a644ec7b64fd8e096dbdeebc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

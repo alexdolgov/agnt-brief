@@ -1,0 +1,18 @@
+{
+  "component": "StrategyBase-5",
+  "main_contract": "StrategyBase",
+  "source_file_count": 54,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1f8d6b1eb4f81f1de9684032278febfa4b4f3a75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

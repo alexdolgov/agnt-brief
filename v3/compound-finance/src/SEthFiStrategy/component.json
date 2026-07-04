@@ -1,0 +1,18 @@
+{
+  "component": "SEthFiStrategy",
+  "main_contract": "SEthFiStrategy",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x76c57e359c0eda0aac54d97832fb1b4451805ad8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

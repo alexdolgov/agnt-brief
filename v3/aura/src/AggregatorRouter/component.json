@@ -1,0 +1,18 @@
+{
+  "component": "AggregatorRouter",
+  "main_contract": "AggregatorRouter",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3f170631ed9821ca51a59d996ab095162438dc10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

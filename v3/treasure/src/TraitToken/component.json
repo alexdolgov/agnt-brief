@@ -1,0 +1,18 @@
+{
+  "component": "TraitToken",
+  "main_contract": "TraitToken",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc704ceb1a160b2ea28325535f51e87f85180ade5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

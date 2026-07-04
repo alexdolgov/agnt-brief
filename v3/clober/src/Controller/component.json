@@ -1,0 +1,22 @@
+{
+  "component": "Controller",
+  "main_contract": "Controller",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.clober.io/assets/files/Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf",
+    "https://docs.clober.io/assets/files/Clober_v2_Cairo_audit_report-790707b7dc1d8bd4063539b47ada493b.pdf",
+    "https://github.com/clober-dex/v2-core/blob/master/audits/Clober_V2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "YVIBSwapperV1",
+  "main_contract": "YVIBSwapperV1",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1945dc833570a040e28b6e02aac913726e363180",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaead4290574d52009bb62ee22a3e55f694ec732d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

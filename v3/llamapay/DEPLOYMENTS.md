@@ -1,0 +1,75 @@
+# llamapay — deployments
+
+16 verified deployment(s) across 8 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x6f9fb43274e9011804bf516e78caf5e89856301a` | Disperse | impl | inactive | no |
+| avalanche | `0x57547f79d8344accab21dc0a9c9d186e240353d7` | LlamaPayBot-2 | impl | live | no |
+| base | `0x09c39b8311e4b7c678cbdad76556877ecd3aea07` | LlamaPay | impl | live | yes |
+| base | `0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce` | Simple_Vesting_Escrow | impl | live | no |
+| chain-1088 | `0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38` | LlamaPay | impl | live | yes |
+| chain-1088 | `0x0ebe050c13ac5a7643616f2d9beb033f689b411c` | LlamaPay | impl | unknown | yes |
+| chain-1088 | `0x43634d1c608f16fb0f4926c12b54124c93030600` | LlamaPay | impl | unknown | yes |
+| chain-1088 | `0x4ddfc224e5da184dc458769491cb2f17e37567b7` | LlamaPay | impl | unknown | yes |
+| chain-1088 | `0xcfb166f1c719376937886ffe10450e6778c937bc` | LlamaPay | impl | unknown | yes |
+| chain-80094 | `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd` | Vesting_Escrow_Factory | impl | live | no |
+| ethereum | `0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01` | TokenEscrow | impl | live | no |
+| ethereum | `0x0327a00f37115115038c289827480ddaabae948e` | LlamaPayBot | impl | inactive | no |
+| ethereum | `0x056e39bdd2d35f4eb27478369bdade51e0532b72` | TokenEscrow | proxy | live | no |
+| ethereum | `0xb61915609e6dc7a7261b678073c53bac5875a8b4` | Vyper_contract | impl | inactive | no |
+| ethereum | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | LlamaPayBot | impl | live | no |
+| ethereum | `0xe10eb22440feb14aa374fb5607b82041be218ee9` | LlamaPayBot | impl | inactive | no |
+
+## Source unavailable (49)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x1564d7bfa4bc921a748aedb3b71e578672528734`
+- arbitrum `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`
+- arbitrum `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`
+- arbitrum `0xb1870e647c4f7ee5dccfb3e4a98be9f888b184e0`
+- arbitrum `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- arbitrum `0xb93427b83573c8f27a08a909045c3e809610411a`
+- arbitrum `0xde1c04855c2828431ba637675b6929a684f84c7f`
+- avalanche `0x0327a00f37115115038c289827480ddaabae948e`
+- avalanche `0x0e52b144489769b6eea905508e54a93cf3c258cf`
+- avalanche `0x3addfdd274f86587a49bb6ba09baba3581b6cb0f`
+- avalanche `0x4c48f145e0c80d97bfbc983dd2cbebee5d84fa0c`
+- avalanche `0x6f9fb43274e9011804bf516e78caf5e89856301a`
+- avalanche `0x9410fbb6cd03966ad3f8d9014ce1f77b001b633c`
+- avalanche `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- avalanche `0xb7caa90cdbb8746f54b19f2f85e86b99598b268c`
+- avalanche `0xb93427b83573c8f27a08a909045c3e809610411a`
+- avalanche `0xda33d4b2753b3c2439ca52678e1a506e4c5294d1`
+- avalanche `0xe10eb22440feb14aa374fb5607b82041be218ee9`
+- avalanche `0xf13563b612574d3e5372dddc6c06b7a0f3bac057`
+- base `0x2b3a5deb344d615bf0e9ba404cc9acbaecd15e49`
+- base `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`
+- base `0x4c0f3d171bf15760a5779ecac073907c9b6d4be5`
+- base `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`
+- base `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- bsc `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`
+- bsc `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`
+- bsc `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- bsc `0xb93427b83573c8f27a08a909045c3e809610411a`
+- bsc `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`
+- bsc `0xde1c04855c2828431ba637675b6929a684f84c7f`
+- chain-146 `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- chain-146 `0xb93427b83573c8f27a08a909045c3e809610411a`
+- chain-80094 `0x09c39b8311e4b7c678cbdad76556877ecd3aea07`
+- chain-80094 `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- chain-80094 `0xb93427b83573c8f27a08a909045c3e809610411a`
+- ethereum `0x9dd5cf263327e2d6a608da8c30368eb27514bad2`
+- ethereum `0xb93427b83573c8f27a08a909045c3e809610411a`
+- ethereum `0xcf61782465ff973638143d6492b51a85986ab347`
+- ethereum `0xde1c04855c2828431ba637675b6929a684f84c7f`
+- gnosis `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`
+- gnosis `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`
+- gnosis `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- gnosis `0xb93427b83573c8f27a08a909045c3e809610411a`
+- optimism `0x6f9fb43274e9011804bf516e78caf5e89856301a`
+- optimism `0xb4e9d1f7b32937f04b856ec1ca39ac83e9404779`
+- polygon `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`
+- polygon `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`
+- polygon `0xb61915609e6dc7a7261b678073c53bac5875a8b4`
+- polygon `0xb93427b83573c8f27a08a909045c3e809610411a`

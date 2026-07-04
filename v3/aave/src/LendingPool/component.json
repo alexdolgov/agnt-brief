@@ -1,0 +1,52 @@
+{
+  "component": "LendingPool",
+  "main_contract": "LendingPool",
+  "source_file_count": 91,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2020/09/aave-protocol-v2",
+    "https://github.com/aave-dao/aave-v3-origin/blob/main/audits/2022-01-07_TrailOfBits_AaveV3.pdf",
+    "https://github.com/aave-dao/aave-v3-origin/blob/main/audits/2022-01-14_PeckShield_AaveV3.pdf",
+    "https://github.com/aave/aave-v3-core/blob/master/audits/07-01-2022_TrailOfBits_AaveV3.pdf",
+    "https://github.com/aave/aave-v3-core/blob/master/audits/14-01-2022_PeckShield_AaveV3.pdf",
+    "https://github.com/aave/aave-v3-horizon/blob/main/audits/07-01-2022_TrailOfBits_AaveV3.pdf",
+    "https://github.com/aave/aave-v3-horizon/blob/main/audits/14-01-2022_PeckShield_AaveV3.pdf",
+    "https://github.com/aave/aave-v4/blob/e2fb6320d28ed9c6bba66d47f70fed59aef2f64c/audits/2026-01-28_Aave-V4_ChainSecurity.pdf",
+    "https://github.com/aave/aave-v4/blob/main/audits/2025-10-20_Aave-V4_Blackthorn.pdf",
+    "https://github.com/aave/aave-v4/blob/main/audits/2026-01-28_Aave-V4_ChainSecurity.pdf",
+    "https://github.com/aave/aave-v4/blob/main/audits/2026-02-24_Aave-V4_Blackthorn.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Certik-aave-v2-03-12-2020.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Certora-FV-aave-v2-03-12-2020.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Mixbytes-aave-v2-03-12-2020.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/PeckShield-aave-v2-03-12-2020-CN.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Peckshield-aave-v2-03-12-2020-EN.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/SigmaPrime-aave-v2-01-2021.pdf",
+    "https://github.com/bgd-labs/aave-v3-origin/blob/main/audits/2022-01-07_TrailOfBits_AaveV3.pdf",
+    "https://github.com/bgd-labs/aave-v3-origin/blob/main/audits/2022-01-14_PeckShield_AaveV3.pdf",
+    "https://github.com/sherlock-protocol/sherlock-reports/blob/e80cb8551d5ab212d4eb0b6f04bff813d11dab03/audits/2026.02.05%20-%20Final%20-%20Aave%20Labs%20Collaborative%20Audit%20Report%201770295450.pdf",
+    "https://github.com/sherlock-protocol/sherlock-reports/blob/f5b20449ff1a769af108c2b2fa6ee928a0c77232/audits/2026.05.14%20-%20Final%20-%20Aave%20Labs%20Collaborative%20Audit%20Report%201778767107.pdf",
+    "https://raw.githubusercontent.com/aave/aave-v4/8f497eb04e238bf7df505945a6bdf8a9b67cfcfa/audits/2025-10-20_Aave-V4_Blackthorn.pdf",
+    "https://raw.githubusercontent.com/aave/aave-v4/e2fb6320d28ed9c6bba66d47f70fed59aef2f64c/audits/2026-01-28_Aave-V4_ChainSecurity.pdf",
+    "https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/e80cb8551d5ab212d4eb0b6f04bff813d11dab03/audits/2026.02.05%20-%20Final%20-%20Aave%20Labs%20Collaborative%20Audit%20Report%201770295450.pdf",
+    "https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/f5b20449ff1a769af108c2b2fa6ee928a0c77232/audits/2026.05.14%20-%20Final%20-%20Aave%20Labs%20Collaborative%20Audit%20Report%201778767107.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0229f777b0fab107f9591a41d5f02e4e98db6f2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x17f73aead876cc4059089ff815eda37052960dfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

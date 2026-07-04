@@ -1,0 +1,21 @@
+{
+  "component": "HATVaultsRegistry",
+  "main_contract": "HATVaultsRegistry",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hats-finance/hats-contracts/blob/develop/audit/202301-hexen-audit.pdf",
+    "https://github.com/hats-finance/hats-contracts/blob/develop/audit/202302-g0-group-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2866b46e9a5c993fd8ad6c5e6eb54641632c2101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

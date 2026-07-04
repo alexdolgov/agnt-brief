@@ -1,0 +1,26 @@
+{
+  "component": "ForwarderLogic",
+  "main_contract": "ForwarderLogic",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb0787776ff90881cec3a0b8e3e91973e6183c146",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xc04f291347d21dc663f7646056db22bff8ce8430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

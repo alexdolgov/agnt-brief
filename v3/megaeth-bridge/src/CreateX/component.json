@@ -1,0 +1,18 @@
+{
+  "component": "CreateX",
+  "main_contract": "CreateX",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

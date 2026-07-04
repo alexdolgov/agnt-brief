@@ -1,0 +1,18 @@
+{
+  "component": "MoneyFixedSwap",
+  "main_contract": "MoneyFixedSwap",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7207da4d2c296f16568c7f128cf2685a5d2ce452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UiPoolDataProviderV3",
+  "main_contract": "UiPoolDataProviderV3",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9a8d4d93deb59e0457f179e6b69a9073d7e2e5db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

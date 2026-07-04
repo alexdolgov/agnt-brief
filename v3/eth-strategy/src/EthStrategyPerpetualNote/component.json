@@ -1,0 +1,18 @@
+{
+  "component": "EthStrategyPerpetualNote",
+  "main_contract": "EthStrategyPerpetualNote",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb250c9e0f7be4cff13f94374c993ac445a1385fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

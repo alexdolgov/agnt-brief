@@ -1,0 +1,42 @@
+{
+  "component": "PriceFeedPendleChainlink",
+  "main_contract": "PriceFeedPendleChainlink",
+  "source_file_count": 23,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e0fceef87cffa0a09f47d0613c5f899587c8a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34f4cf39931b231c1553991ac39986b5b38c5672",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3614fec3f8bf0c0512f54a419decf7d878842ca0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5eb2363327ee1aed9dabdf6fd65c54562aa057a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

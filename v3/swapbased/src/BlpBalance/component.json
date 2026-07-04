@@ -1,0 +1,18 @@
+{
+  "component": "BlpBalance",
+  "main_contract": "BlpBalance",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x095540e694568bf7b99c0388364811fd907f14d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

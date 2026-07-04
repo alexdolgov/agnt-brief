@@ -1,0 +1,18 @@
+{
+  "component": "Disperse",
+  "main_contract": "Disperse",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63866ebe37dd39565d6f9b752e0a2177f70bd31b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

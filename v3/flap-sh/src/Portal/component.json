@@ -1,0 +1,18 @@
+{
+  "component": "Portal",
+  "main_contract": "Portal",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x07a4c2236a03ec941267d2bff6fc6d49255dd2a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

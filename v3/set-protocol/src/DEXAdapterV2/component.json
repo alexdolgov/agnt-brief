@@ -1,0 +1,18 @@
+{
+  "component": "DEXAdapterV2",
+  "main_contract": "DEXAdapterV2",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88858930b3f1946a5c41a5ded7b5335431d5de8d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

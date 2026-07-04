@@ -1,0 +1,26 @@
+{
+  "component": "SPCTPool",
+  "main_contract": "SPCTPool",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xef5aacb3c38a5be7785a361008e27fb0328a62b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf30a29f1c540724fd8c5c4be1af604a6c6800d29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

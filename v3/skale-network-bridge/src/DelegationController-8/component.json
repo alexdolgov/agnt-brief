@@ -1,0 +1,18 @@
+{
+  "component": "DelegationController-8",
+  "main_contract": "DelegationController",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x608c24866d1c43c5869fe7bf4a63a26623e96960",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

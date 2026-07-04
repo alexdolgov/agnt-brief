@@ -1,0 +1,26 @@
+{
+  "component": "NFTDescriptor",
+  "main_contract": "NFTDescriptor",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x50f9756f631266686b9a7ebdf55998db3da5ca0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xde9a5d34a9fe0177544e8a70c691c3f1f9c9c63a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

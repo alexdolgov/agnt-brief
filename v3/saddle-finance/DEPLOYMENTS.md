@@ -1,0 +1,167 @@
+# saddle-finance — deployments
+
+98 verified deployment(s) across 55 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x0232e0b6df048c8cc4037c52bc90cf943c9c8cc6` | PermissionlessDeployer-2 | impl | live | no |
+| arbitrum | `0x15179598d0a44593789a85727c32e55e4488441b` | PermissionlessMetaSwap | impl | live | no |
+| arbitrum | `0x1ad1efd00708aa2ec7673e19deb43e096fbf11ee` | RewardForwarder | impl | inactive | no |
+| arbitrum | `0x1e35ebf875f8a2185edf22da02e7dbca0f5558ab` | SimpleRewarder | impl | inactive | no |
+| arbitrum | `0x2069043d7556b1207a505eb459d18d908df29b55` | MiniChefV2-2 | impl | live | no |
+| arbitrum | `0x25d1c2d67abe289c01b021f21aa952d01e7bd8da` | RewardScheduler | impl | inactive | no |
+| arbitrum | `0x3440d335171232062e32adeb2a4daac21cc6f8c2` | RewardScheduler | impl | inactive | no |
+| arbitrum | `0x38262c17a06a6b3588d3e5b70dfa768c06bf4ef1` | PoolRegistry | impl | live | no |
+| arbitrum | `0x401afbc31ad2a3bc0ed8960d63efcdea749b4849` | Swap-3 | impl | live | yes |
+| arbitrum | `0x492ebe7816b6934cc55f3001e1ac165a6c5afab0` | SimpleRewarder | impl | inactive | no |
+| arbitrum | `0x5dd186f8809147f96d3ffc4508f3c82694e58c9c` | Swap-4 | impl | live | yes |
+| arbitrum | `0x6fe745b31f6e1deb1bf81ebd145dcc17d05eb539` | RewardScheduler | impl | inactive | no |
+| arbitrum | `0x824dcd7b044d60df2e89b1bb888e66d8bcf41491` | RewardScheduler | impl | inactive | no |
+| arbitrum | `0x9d7fccb3085f87298c365a59df9084f76fb93c0b` | RewardScheduler | impl | inactive | no |
+| arbitrum | `0xf428d446670d901ad6893fe2dbc77d42fcd20cb2` | RewardForwarder | impl | inactive | no |
+| ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | inactive | no |
+| ethereum | `0x04b58dc190da2e9b46a3f1ac94f6eca3b683c765` | PermissionlessSwap | impl | live | no |
+| ethereum | `0x04d8adaa0563e3c1cfe8295fed1f9c5e6ac9dba1` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x0c8bae14c9f9bf2c953997c881befac7729fd314` | MetaSwap-2 | proxy | live | no |
+| ethereum | `0x0e98db51010dd1ade14dd3fb164e218805fdba1b` | TetherToken | impl | inactive | no |
+| ethereum | `0x10170a550d2865b9a23caa6c53a030d54233b972` | PermissionlessSwapFlashLoan | impl | live | no |
+| ethereum | `0x104f44551386d603217450822443456229f73ae4` | Vyper_contract | impl | inactive | no |
+| ethereum | `0x1085e85a7384dd2f0d46d2918630a1cf174b5853` | SmartWalletChecker | impl | inactive | no |
+| ethereum | `0x13cc34aa8037f722405285ad2c82fe570bfa2bdc` | SwapFlashLoan | impl | live | no |
+| ethereum | `0x149bbb210051851016f57a2824c0444f642833a6` | LPToken | impl | live | yes |
+| ethereum | `0x1dcb69a2b9148c641a43f731fcee123e2be30bab` | MetaSwap | impl | live | no |
+| ethereum | `0x1e35ebf875f8a2185edf22da02e7dbca0f5558ab` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x2069043d7556b1207a505eb459d18d908df29b55` | LPToken | impl | live | yes |
+| ethereum | `0x29fd31d37ab8d27f11eab68f96424bf64231ffce` | SwapDeployer | impl | inactive | no |
+| ethereum | `0x2b7a5a5923eca5c00c6572cf3e8e08384f563f93` | LPToken | impl | live | yes |
+| ethereum | `0x2bff1b48cc01284416e681b099a0cddca0231d72` | SwapFlashLoan | impl | live | no |
+| ethereum | `0x3661d0f70e7f3ec418321a57fd62d691a09b490b` | LPToken-2 | impl | live | yes |
+| ethereum | `0x3721a8e6239a8d0489a13725265dd02657ed3b57` | TetherToken-2 | impl | inactive | no |
+| ethereum | `0x3f1d224557afa4365155ea77ce4bc32d5dae2174` | MetaSwap-2 | proxy | live | no |
+| ethereum | `0x401afbc31ad2a3bc0ed8960d63efcdea749b4849` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x4568727f50c7246ded8c39214ed6ff3c157f080d` | MetaSwap | impl | live | no |
+| ethereum | `0x45b48cdaf18a3678eb6cceba3e8a87477a180d88` | PermissionlessMetaSwapFlashLoan | impl | live | no |
+| ethereum | `0x47f507b2001a83047146b126ccd2222bf32f082d` | PermissionlessSwapFlashLoan | impl | live | no |
+| ethereum | `0x4c6a2be3d64048a0624568f91720a8f3884ebfd8` | SmartWalletChecker | impl | inactive | no |
+| ethereum | `0x4f0e41a37ce2ff1fa654cc93eb03f9d16e65fd11` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x4f6a43ad7cba042606decaca730d4ce0a57ac62e` | LPToken | proxy | live | yes |
+| ethereum | `0x500d0b10a85d9e03f87a5d2e59a681a6631dd6d0` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x505736d427c313cdecdbf72049eb944e53b3065b` | MetaSwap-2 | impl | live | no |
+| ethereum | `0x5847f8177221268d279cf377d0e01ab3fd993628` | SwapFlashLoan | impl | live | no |
+| ethereum | `0x595cce097a57ceef0e8e9032d29c24b064318eb5` | SimpleRewarder-2 | impl | inactive | no |
+| ethereum | `0x59f5a371df7d2a01863cbb011a5a1ed45326710c` | LPToken-3 | impl | live | yes |
+| ethereum | `0x5dca270671935cf3df78bd8373c22be250198a03` | RetroactiveVesting | impl | live | no |
+| ethereum | `0x691ef79e40d909c715be5e9e93738b3ff7d58534` | MiniChefV2 | impl | live | no |
+| ethereum | `0x69baa0d7c2e864b74173922ca069ac79d3be1556` | MetaSwap | impl | live | no |
+| ethereum | `0x6ec5dd7d8e396973588f0defd79dca04f844d57c` | Vyper_contract | impl | live | no |
+| ethereum | `0x7003102c75587e8d29c56124060463ef319407d0` | SwapDeployer | impl | inactive | no |
+| ethereum | `0x7d6c760cbde5a9ad47510a86b9dcc58f9473cdd8` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x8020e4134ad6a694adbe9521a12c751e67ce9861` | GaugeHelperContract | impl | live | no |
+| ethereum | `0x811b699c69ff0abff98091919e637fedcd5dffac` | RewardForwarder-2 | impl | inactive | no |
+| ethereum | `0x824dcd7b044d60df2e89b1bb888e66d8bcf41491` | MetaSwap-2 | proxy | live | no |
+| ethereum | `0x83f87e73148ee05f669293c2f90163b6d0d261ed` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17` | MetaSwap-2 | impl | live | no |
+| ethereum | `0x8b2db87142da4d5ecfa9b416e592df9155a38c2d` | MetaSwap | impl | live | no |
+| ethereum | `0x8b88685b3314cf6503aa835260355dc4c34cfb48` | PermissionlessMetaSwapFlashLoan | impl | live | no |
+| ethereum | `0x8d5a41e85f4ce2433beef476305d307b9205d98d` | NectarController | impl | inactive | no |
+| ethereum | `0x8f43fbddc10b822afa26812fb9058ca1fc22078f` | PermissionlessDeployer | impl | inactive | no |
+| ethereum | `0x904249766b2ccf6795d7b34441cc0bcae5cb7640` | NectarController-2 | impl | inactive | no |
+| ethereum | `0x98d2afc66de1f73598c6cfa35cbdfebb135fb8fa` | SwapFlashLoan | impl | live | no |
+| ethereum | `0x991f0e5c5775ca9dd02e30e67f545c36cff3690e` | WrapperLockEth | impl | inactive | no |
+| ethereum | `0x9ac17f026f0599f77b3513a0a35f0258b0ec77f3` | MetaSwap | impl | live | no |
+| ethereum | `0x9cdef6e33687f438808766fc133b2e9d1a16ad57` | SwapMigrator | impl | inactive | no |
+| ethereum | `0x9dc37020f261758871104f9d8b87e575ee45bc5a` | Swap | impl | live | yes |
+| ethereum | `0xa50f208efc277d5a03c991069939beacccda80d9` | MetaSwap | impl | live | no |
+| ethereum | `0xa5bd85ed9fa27ba23bfb702989e7218e44fd4706` | Bridge | impl | live | no |
+| ethereum | `0xabdf147870235fcfc34153828c769a70b3fae01f` | TetherToken-3 | impl | inactive | no |
+| ethereum | `0xabf69cde7b3725c12b8703005342eb5dd8a95d61` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0xc0409ec303b727bc1f511d7f8c71fd5ead96de1c` | MathUtils | impl | live | yes |
+| ethereum | `0xc1f426d2b5151b139c0895b08c2310f7c804f1ad` | ArbitrumBridger | impl | inactive | no |
+| ethereum | `0xc5ad17b98d7fe73b6dd3b0df5b3040457e68c045` | MasterRegistry | impl | inactive | no |
+| ethereum | `0xc68bf77e33f1df59d8247dd564da4c8c81519db6` | SwapFlashLoan | impl | live | no |
+| ethereum | `0xc765cd3d015626244ad63b5fb63a97c5634643b9` | MetaSwap | impl | live | no |
+| ethereum | `0xc7b10d3b08ceb05d8ff58a3c781225d9a72078ae` | VeSDLRewards | impl | inactive | no |
+| ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | inactive | no |
+| ethereum | `0xccbe39ffc56915fd88e1aab58010d305441bab26` | SwapFlashLoan | impl | live | no |
+| ethereum | `0xccfd60589f4e15a23ad326a5e2c2d871ed310152` | OptimismBridger | impl | inactive | no |
+| ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken-4 | impl | live | no |
+| ethereum | `0xdb5c5a6162115ce9a188e7d773c4d011f421bbe5` | Swap | impl | live | yes |
+| ethereum | `0xdf815ea6b066ac9f3107d8863a6c19aa2a5d24d3` | SynthSwapper | impl | live | no |
+| ethereum | `0xe280efe654328a3325fc5a9eab8e998d418c86fb` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0xe9154791883df07e1328b636bcedfccb80fefa38` | MetaSwapDeposit | impl | live | no |
+| ethereum | `0xef8af8b67a58fe795304be8593c44ac0d3a59033` | SwapCalculator | impl | live | no |
+| ethereum | `0xf1dc500fde233a4055e25e5bbf516372bc4f6871` | SDL | impl | live | no |
+| ethereum | `0xf5d2e84e816175dfb2c38bd7549d4bd37b1c0559` | Allowlist | impl | live | yes |
+| ethereum | `0xf6445627bc9d06516d317a0dbbc4660bab7a17c0` | TetherToken-5 | impl | inactive | no |
+| ethereum | `0xf6c2e0adc659007ba7c48446f5a4e4e94dfe08b5` | SwapDeployer | impl | inactive | no |
+| ethereum | `0xf8504e92428d65e56e495684a38f679c1b1dc30b` | Vesting | impl | live | no |
+| ethereum | `0xfb08672a5d4a302acb5830894a2f9ae804864570` | Swap-2 | impl | live | yes |
+| ethereum | `0xfb516cf3710fc6901f2266aaeb8834cf5e4e9558` | MetaSwap | impl | live | no |
+| optimism | `0x0e510c9b20a5d136e75f7fd2a5f344bd98f9d875` | MasterRegistry-2 | impl | inactive | no |
+| optimism | `0x149bbb210051851016f57a2824c0444f642833a6` | GenericERC20 | impl | inactive | yes |
+| optimism | `0x2b7a5a5923eca5c00c6572cf3e8e08384f563f93` | LPToken-4 | impl | live | yes |
+| optimism | `0xcf70e2f3567ba396f3dd04822f78ecd70ba46894` | GenericERC20 | impl | live | yes |
+| optimism | `0xeedb4e89e8032d04dfb3a33fd89344dddbe5ebde` | GenericERC20 | impl | inactive | yes |
+
+## Source unavailable (59)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x0c8bae14c9f9bf2c953997c881befac7729fd314`
+- arbitrum `0x18d2469a9788fafd0df277a0044da5ea637a3760`
+- arbitrum `0x1d434f50acf16ba013be3536e9a3cdb5d7d4e694`
+- arbitrum `0x21d4365834b7c61447e142ef6bcf01136cbd01c6`
+- arbitrum `0x4f6a43ad7cba042606decaca730d4ce0a57ac62e`
+- arbitrum `0xa5bd85ed9fa27ba23bfb702989e7218e44fd4706`
+- arbitrum `0xab94a2c0d8f044aa439a5654f06b5797928396cf`
+- arbitrum `0xb2a2764d0dcab445e24f4b813be3f6ef8ae5f84d`
+- arbitrum `0xbea9f78090bdb9e662d8cb301a00ad09a5b756e9`
+- arbitrum `0xc0409ec303b727bc1f511d7f8c71fd5ead96de1c`
+- arbitrum `0xc8dfcfc329e19fdaf43a338ad6038dba02a5079b`
+- arbitrum `0xcf70e2f3567ba396f3dd04822f78ecd70ba46894`
+- arbitrum `0xdca5b16a96f984ffb2a3022cff339eb049126101`
+- arbitrum `0xf8504e92428d65e56e495684a38f679c1b1dc30b`
+- arbitrum `0xfeea4d1bacb0519e8f952460a70719944fe56ee0`
+- ethereum `0x13ba45c2b686c6db7c2e28bd3a9e8edd24b894ed`
+- ethereum `0x17bde8ebf1e9fda85b9bd1a104266b394e9db33e`
+- ethereum `0x2683190e31e8ce47467c98ff1dbc018acdd43c2f`
+- ethereum `0x358fe82370a1b9adae2e3ad69d6cf9e503c96018`
+- ethereum `0x3b35a3f9163cf5733837c5b51b1df493c340f8e3`
+- ethereum `0x3bd4130b83de1215df8611e2fbbe17187c823aa0`
+- ethereum `0x3dc88ee38db8c7b6dceb447e4348e51bd87ced93`
+- ethereum `0x702c1b8ec3a77009d5898e18da8f8959b6df2093`
+- ethereum `0x7b2025bf8c5ee8baad9da8c3e3ee45e96ed8b8ea`
+- ethereum `0x8b701e9b3a1887fe9b0c7936a8233b39408e69f6`
+- ethereum `0x953693dcb2e9ddc0c1398c1b540b81b63cea5e16`
+- ethereum `0x99cb6c36816de2131ef2626bb5def7e5cc8b9b14`
+- ethereum `0x99d99a4aaa2f012d61369242ec581a1682d615de`
+- ethereum `0xa202acfae9a2d7ffbfc97a3cc096b6cd8c3567fd`
+- ethereum `0xab47edfc33ba5d5bc19fc7d2bcd093f99530bb3d`
+- ethereum `0xabd040a92d29cdc59837e79651bb2979ea66ce04`
+- ethereum `0xb2ac3382da625eb41fc803b57743f941a484e2a6`
+- ethereum `0xb79b4fcf7cb4a1c4064ff5b48f71a331880ab53a`
+- ethereum `0xc09d3bb5c87e8a8b239cda9551279801a92c317f`
+- ethereum `0xc64f8a9fe7babeca66d3997c9d15558bf4817be3`
+- ethereum `0xc7a0e3a5952d4e8a45ebf5e7464c8fbc43f7d081`
+- ethereum `0xd2751cdbed54b87777e805be36670d7aeae73bb2`
+- ethereum `0xe8e1a94f0c960d64e483ca9088a7ec52e77194c2`
+- ethereum `0xfb4de84c4375d7c8577327153de88f58f69eec81`
+- optimism `0x08f8611b996bf2f0fd7523b54e69bfb92dd43a81`
+- optimism `0x220d6beedea6a6317dae19d39cd62eb7bb0ae5e4`
+- optimism `0x250184dddec6d38e28ac12b481c9016867226e9d`
+- optimism `0x293ded6b7d8d37bfe1e66aadbdec9f87fedbd37f`
+- optimism `0x3a0c2a793a8db779e0293699d0ce77c77617fe0f`
+- optimism `0x3f1d224557afa4365155ea77ce4bc32d5dae2174`
+- optimism `0x4e1484607760118ebe2ab07c0c71f1b4d9671e01`
+- optimism `0x4f6a43ad7cba042606decaca730d4ce0a57ac62e`
+- optimism `0x5224e52878ab1c6076402e5c98f018d109131351`
+- optimism `0x5847f8177221268d279cf377d0e01ab3fd993628`
+- optimism `0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17`
+- optimism `0x9dc37020f261758871104f9d8b87e575ee45bc5a`
+- optimism `0xa500b0e1360462ef777804bcae6ce2bfb524dd2e`
+- optimism `0xa9a84238098dc3d1529228e6c74dbe7ebdf117a5`
+- optimism `0xb10ac31a6e613c6fcb5522c19f4bdbcffa94f89d`
+- optimism `0xbea9f78090bdb9e662d8cb301a00ad09a5b756e9`
+- optimism `0xc55e8c79e5a6c3216d4023769559d06fa9a7732e`
+- optimism `0xdf815ea6b066ac9f3107d8863a6c19aa2a5d24d3`
+- optimism `0xe184f7e575a5beb8f2409e8e2218cd770ddda2a6`
+- optimism `0xf6c2e0adc659007ba7c48446f5a4e4e94dfe08b5`

@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626ZapIn",
+  "main_contract": "ERC4626ZapIn",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9af838b8bb05269dac4f30a127f171d3cf76dac3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

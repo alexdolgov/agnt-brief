@@ -1,0 +1,36 @@
+{
+  "component": "LiquidFarming",
+  "main_contract": "LiquidFarming",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/paxe/liquidFarming.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x08d98db82d757a868e8a9866a7199e22ce41be85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x75a8063c9f17ffae2dc0677961e8efc3b4e349fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xba576f5ecba5182a20f010089107dfb00502241f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

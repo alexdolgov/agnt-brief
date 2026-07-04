@@ -1,0 +1,18 @@
+{
+  "component": "StakingThales",
+  "main_contract": "StakingThales",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0886e6bea150ed770b2ee3341332339c5c08d9cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

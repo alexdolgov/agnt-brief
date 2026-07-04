@@ -1,0 +1,18 @@
+{
+  "component": "Sparta",
+  "main_contract": "Sparta",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

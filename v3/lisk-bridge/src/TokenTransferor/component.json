@@ -1,0 +1,26 @@
+{
+  "component": "TokenTransferor",
+  "main_contract": "TokenTransferor",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa75d8afd8d3a36dd3935078e4d05153946cee84c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd465d9190e6d4943e9cabb352164621dbb6ad12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "LinearRewardsErc4626",
+  "main_contract": "LinearRewardsErc4626",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_sreUSD_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x557ab1e003951a73c12d16f0fea8490e39c33c35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

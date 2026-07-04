@@ -1,0 +1,18 @@
+{
+  "component": "RewardForwarder",
+  "main_contract": "RewardForwarder",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x811b699c69ff0abff98091919e637fedcd5dffac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

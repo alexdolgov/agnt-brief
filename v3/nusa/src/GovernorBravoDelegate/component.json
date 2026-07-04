@@ -1,0 +1,18 @@
+{
+  "component": "GovernorBravoDelegate",
+  "main_contract": "GovernorBravoDelegate",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x04d8c309ab9d3dbd5d853206ade9b880e17b7c30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

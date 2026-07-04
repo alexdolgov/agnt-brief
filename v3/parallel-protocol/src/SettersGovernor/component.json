@@ -1,0 +1,34 @@
+{
+  "component": "SettersGovernor",
+  "main_contract": "SettersGovernor",
+  "source_file_count": 36,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x769f533139eb1723c41cadec243ce10bc4d400fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x9b3a8f7cec208e247d97dee13313690977e24459",
+      "is_proxy": true,
+      "implementation_address": "0x769f533139eb1723c41cadec243ce10bc4d400fd",
+      "liveness": "inactive"
+    }
+  ]
+}

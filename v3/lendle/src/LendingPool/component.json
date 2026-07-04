@@ -1,0 +1,20 @@
+{
+  "component": "LendingPool",
+  "main_contract": "LendingPool",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/GeistProtocol"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x13e9761c037f382472ce765556c3da2af29d9ec7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

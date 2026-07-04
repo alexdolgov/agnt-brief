@@ -1,0 +1,26 @@
+{
+  "component": "ArbitrableTokenList",
+  "main_contract": "ArbitrableTokenList",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x52d942f5f9c47971499946d83657700ccd2d708a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xebcf3bca271b26ae4b162ba560e243055af0e679",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

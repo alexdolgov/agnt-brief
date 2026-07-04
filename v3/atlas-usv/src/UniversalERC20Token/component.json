@@ -1,0 +1,18 @@
+{
+  "component": "UniversalERC20Token",
+  "main_contract": "UniversalERC20Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaba8980f9d59f98e009c2626a8cbebe0969d5807",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

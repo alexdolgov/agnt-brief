@@ -1,0 +1,18 @@
+{
+  "component": "IncentiveHarvester",
+  "main_contract": "IncentiveHarvester",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x453bf45e5a9a476c6d6c74d1c8e529c9c27f51e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

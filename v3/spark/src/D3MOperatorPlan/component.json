@@ -1,0 +1,18 @@
+{
+  "component": "D3MOperatorPlan",
+  "main_contract": "D3MOperatorPlan",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x374b5f915aaed790cbdd341e6f406910d648fd39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

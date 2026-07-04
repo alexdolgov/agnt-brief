@@ -1,0 +1,18 @@
+{
+  "component": "DiamondInit",
+  "main_contract": "DiamondInit",
+  "source_file_count": 80,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8cc83934b0a785e6b9863f7328c2f9fbe1714231",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

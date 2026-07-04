@@ -1,0 +1,18 @@
+{
+  "component": "SwapAdapter",
+  "main_contract": "SwapAdapter",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4e02ac4b0942e670dd0366fa504f665a2257443c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

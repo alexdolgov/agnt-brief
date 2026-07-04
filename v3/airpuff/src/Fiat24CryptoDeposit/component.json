@@ -1,0 +1,18 @@
+{
+  "component": "Fiat24CryptoDeposit",
+  "main_contract": "Fiat24CryptoDeposit",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x31b6f06f2c12bd288ad6aad7073f21cb57349f74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

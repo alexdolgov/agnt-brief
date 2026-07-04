@@ -1,0 +1,58 @@
+{
+  "component": "FastSwitchboard",
+  "main_contract": "FastSwitchboard",
+  "source_file_count": 77,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x09a6e77912a6bcfc3abfdfb841a85380bb2a8b97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1cab023a0cb8178163fb47de7c63c3192767cc26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x60f0cc35b10b8f7754fe7078bad8bf19204739d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x835531a17d01df9ece37fd197e6b232fcda981b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa989d213dd33fe2a3fa93f502054c4e1df9a7220",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xccd5a9bf2250070289a719c153390cb001316c6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

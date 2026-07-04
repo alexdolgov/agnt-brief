@@ -1,0 +1,18 @@
+{
+  "component": "OsethLSTCalculator",
+  "main_contract": "OsethLSTCalculator",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3cc4397ee396b49408ae12fd34c7c3b40f257b1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DOLOWithOwnable",
+  "main_contract": "DOLOWithOwnable",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f81001ef0a83ecce5ccebf63eb302c70a39a654",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

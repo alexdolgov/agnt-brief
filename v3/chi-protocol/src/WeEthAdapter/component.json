@@ -1,0 +1,18 @@
+{
+  "component": "WeEthAdapter",
+  "main_contract": "WeEthAdapter",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f6da7071d3524c61c2c87c4e631e52cbc8af5b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

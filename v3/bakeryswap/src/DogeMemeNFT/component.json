@@ -1,0 +1,18 @@
+{
+  "component": "DogeMemeNFT",
+  "main_contract": "DogeMemeNFT",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x84d7fe5d949ea5fec5d84617badd7590275bfa72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BatchSetForceCloseGapRatio",
+  "main_contract": "BatchSetForceCloseGapRatio",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x078b56db7a1e61ac76a2865d9ef5ff546754b222",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

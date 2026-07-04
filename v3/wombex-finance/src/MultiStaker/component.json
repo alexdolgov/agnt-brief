@@ -1,0 +1,18 @@
+{
+  "component": "MultiStaker",
+  "main_contract": "MultiStaker",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6c7537cdac9ec7716f62909d36ed85534ee879ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

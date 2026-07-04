@@ -1,0 +1,18 @@
+{
+  "component": "Zorro02Token",
+  "main_contract": "Zorro02Token",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdba3c9f9a427d2bdb7e260353dce57a94cd8ddd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OPSuccinctFaultDisputeGame",
+  "main_contract": "OPSuccinctFaultDisputeGame",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2b42dec07a17b2d304f6055630d612ab7a795a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

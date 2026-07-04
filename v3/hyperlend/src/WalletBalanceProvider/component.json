@@ -1,0 +1,20 @@
+{
+  "component": "WalletBalanceProvider",
+  "main_contract": "WalletBalanceProvider",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hyperlendx/audits/blob/master/hyperlend/2025-03-24-ackee-audit-hyperlend.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x99478e5c8d0597730844fd93db8ab4723b96e149",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

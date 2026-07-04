@@ -1,0 +1,18 @@
+{
+  "component": "GnosisSafeProxyFactory",
+  "main_contract": "GnosisSafeProxyFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x1fb8fa5a86b3b91da07a973f9848ae9d1271ebae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

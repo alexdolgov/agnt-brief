@@ -1,0 +1,29 @@
+{
+  "component": "Jane",
+  "main_contract": "Jane",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3jane-protocol/audits/blob/main/electisec-audit.pdf",
+    "https://github.com/3jane-protocol/audits/blob/main/sherlock-2-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x333333330522f64ee8d0b3039c460b41670e3404",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff031e9fcdee6207fc17e1f1fefc66d346fd72fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

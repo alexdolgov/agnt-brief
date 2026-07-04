@@ -1,0 +1,18 @@
+{
+  "component": "DelayedWithdrawalRouter",
+  "main_contract": "DelayedWithdrawalRouter",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44bcb0e01cd0c5060d4bb1a07b42580ef983e2af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

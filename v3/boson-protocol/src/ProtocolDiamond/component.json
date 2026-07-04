@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolDiamond",
+  "main_contract": "ProtocolDiamond",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x59a4c19b55193d5a2ead0065c54af4d516e18cb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

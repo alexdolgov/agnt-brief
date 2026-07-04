@@ -1,0 +1,18 @@
+{
+  "component": "InterestCalculatorV2",
+  "main_contract": "InterestCalculatorV2",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x076d4cf37e48b9265e05d57f280eff562b177476",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

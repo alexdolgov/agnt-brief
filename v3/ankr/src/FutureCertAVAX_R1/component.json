@@ -1,0 +1,18 @@
+{
+  "component": "FutureCertAVAX_R1",
+  "main_contract": "FutureCertAVAX_R1",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x632ad3226f62b674be28c852233e7a44d4f84e6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

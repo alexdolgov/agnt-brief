@@ -1,0 +1,18 @@
+{
+  "component": "UniV4StandardModule",
+  "main_contract": "UniV4StandardModule",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04ead25447f9371c5c1e2c33645f32aafeb337dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

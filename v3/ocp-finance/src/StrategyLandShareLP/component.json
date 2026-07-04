@@ -1,0 +1,18 @@
+{
+  "component": "StrategyLandShareLP",
+  "main_contract": "StrategyLandShareLP",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb20382062537a7255fd47d826f0ebcf4a2fbf85f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

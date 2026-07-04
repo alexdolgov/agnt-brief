@@ -1,0 +1,18 @@
+{
+  "component": "Yearn_Vault_Auction_Taker",
+  "main_contract": "Yearn Vault Auction Taker",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ee35c67f8031291aef79e2abc87b904b9c47f07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

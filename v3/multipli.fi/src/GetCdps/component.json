@@ -1,0 +1,18 @@
+{
+  "component": "GetCdps",
+  "main_contract": "GetCdps",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2fcc0d9972f489ec42804a00ba2029e7f6c9b412",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

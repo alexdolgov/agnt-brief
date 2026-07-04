@@ -1,0 +1,26 @@
+{
+  "component": "MarryStrgtVaultWrapper",
+  "main_contract": "MarryStrgtVaultWrapper",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a92e217a5b5653d00d4fdd9fbb6e8b4513ffafe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1ec18d475d02a8219a13d045a15fe67db8e0773",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721CoreV3_Engine_Flex-2",
+  "main_contract": "GenArt721CoreV3_Engine_Flex",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5fdf5e6caf7b8b0f64c3612afd85e9407a7e1389",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

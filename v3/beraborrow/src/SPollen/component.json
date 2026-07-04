@@ -1,0 +1,20 @@
+{
+  "component": "SPollen",
+  "main_contract": "SPollen",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://beraborrow.gitbook.io/docs/pollen/vepollen/contract-address-and-audits.md"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x9a96efae49d672f63599f99f9ec7fb4388587a60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MultiRewardsStaking",
+  "main_contract": "MultiRewardsStaking",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d2070b13929df15b13d96cfc509c574168988cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

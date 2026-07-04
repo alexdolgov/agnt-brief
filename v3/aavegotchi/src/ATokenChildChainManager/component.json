@@ -1,0 +1,18 @@
+{
+  "component": "ATokenChildChainManager",
+  "main_contract": "ATokenChildChainManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0ea9faeacd2fcb69e9b8182aa073ff1e9fbbedc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

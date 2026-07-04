@@ -1,0 +1,20 @@
+{
+  "component": "WhitelistedSwapAdapter",
+  "main_contract": "WhitelistedSwapAdapter",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blendmoney/audits/blob/main/blend-25-10-02-0-zellic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x44c6dcba90dae9238f5c8842abbf8506c3d3b437",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

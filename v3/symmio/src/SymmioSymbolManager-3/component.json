@@ -1,0 +1,18 @@
+{
+  "component": "SymmioSymbolManager-3",
+  "main_contract": "SymmioSymbolManager",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1060e8b480d19d5df763961faa4e11eab8012292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

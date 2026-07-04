@@ -1,0 +1,18 @@
+{
+  "component": "PassiveRebalanceVault",
+  "main_contract": "PassiveRebalanceVault",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38652eeab13efebab38f19b5d5d50ee8a8ca80af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

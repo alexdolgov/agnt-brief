@@ -1,0 +1,18 @@
+{
+  "component": "DiamondQ",
+  "main_contract": "DiamondQ",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbd573ddc3ab93d7984012b897821f6c09f4d24e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

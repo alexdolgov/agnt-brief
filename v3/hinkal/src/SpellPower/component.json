@@ -1,0 +1,18 @@
+{
+  "component": "SpellPower",
+  "main_contract": "SpellPower",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20cb52832f35c61ccdbe5c336e405fe979de9430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "PoolAddressesProvider",
+  "main_contract": "PoolAddressesProvider",
+  "source_file_count": 10,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1f8d8a3575d049aa0c195aa947483738811badcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x598502c7a3f5445d76b6f9f5020e15cdfe484df5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x66496537eca3f784aec62fb3b896c0086f3b1b26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfdb85fdfcee413eb05287f9d4157c1ef1f336207",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

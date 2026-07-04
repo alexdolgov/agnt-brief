@@ -1,0 +1,18 @@
+{
+  "component": "DystopiaSwapper",
+  "main_contract": "DystopiaSwapper",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x15de78e04ea152482ffb731ba96ad5c99e88933f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

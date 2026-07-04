@@ -1,0 +1,18 @@
+{
+  "component": "UChildERC20",
+  "main_contract": "UChildERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0735a62b0b6e837fa67130589988436fd26f0e12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

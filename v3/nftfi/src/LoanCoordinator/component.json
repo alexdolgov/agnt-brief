@@ -1,0 +1,18 @@
+{
+  "component": "LoanCoordinator",
+  "main_contract": "LoanCoordinator",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa6d93abc54268cf849a93e867c129786f04fd2e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

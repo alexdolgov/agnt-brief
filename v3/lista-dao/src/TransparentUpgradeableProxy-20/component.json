@@ -1,0 +1,18 @@
+{
+  "component": "TransparentUpgradeableProxy-20",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 116,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9ba88e6b20041750fd4e6271fea455f5d44063cb",
+      "is_proxy": true,
+      "implementation_address": "0xdace1c6e4451f330c4e35c32171fd66f86875057",
+      "liveness": "live"
+    }
+  ]
+}

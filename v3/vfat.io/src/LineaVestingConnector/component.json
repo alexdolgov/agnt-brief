@@ -1,0 +1,26 @@
+{
+  "component": "LineaVestingConnector",
+  "main_contract": "LineaVestingConnector",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb7c1be5b2caabaf4f638d6c9d10d662f27d9ab95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xed67e75f320cfe3649aa810cb03d517faeb3805a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

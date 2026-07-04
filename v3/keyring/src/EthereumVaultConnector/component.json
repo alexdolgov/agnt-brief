@@ -1,0 +1,18 @@
+{
+  "component": "EthereumVaultConnector",
+  "main_contract": "EthereumVaultConnector",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xddcbe30a761edd2e19bba930a977475265f36fa1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

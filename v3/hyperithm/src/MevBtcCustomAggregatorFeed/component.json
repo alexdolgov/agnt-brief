@@ -1,0 +1,18 @@
+{
+  "component": "MevBtcCustomAggregatorFeed",
+  "main_contract": "MevBtcCustomAggregatorFeed",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x931403532a4a30fee41bfe79f5b2159dcd0a5b43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

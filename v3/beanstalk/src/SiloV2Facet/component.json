@@ -1,0 +1,26 @@
+{
+  "component": "SiloV2Facet",
+  "main_contract": "SiloV2Facet",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x23d231f37c8f5711468c8abbfbf1757d1f38fda2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4bb0059ce62eeeb3db4a43a7495e72ef8387c310",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

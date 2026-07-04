@@ -1,0 +1,26 @@
+{
+  "component": "Initializer",
+  "main_contract": "Initializer",
+  "source_file_count": 37,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03d9c4e4bc5d3678a9076cac50db0251d8676872",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfec7c4b379484a5310f7a4c9b38102b9d53d8d9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StableSwapStateOracle",
+  "main_contract": "StableSwapStateOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a6bd15abf19581e411621d669b6a2bbe741ffd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

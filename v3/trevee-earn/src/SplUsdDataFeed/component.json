@@ -1,0 +1,18 @@
+{
+  "component": "SplUsdDataFeed",
+  "main_contract": "SplUsdDataFeed",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x853d1871e37ec7bc4ef1088b88db237e62737d57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

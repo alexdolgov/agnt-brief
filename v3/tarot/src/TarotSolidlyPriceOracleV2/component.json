@@ -1,0 +1,18 @@
+{
+  "component": "TarotSolidlyPriceOracleV2",
+  "main_contract": "TarotSolidlyPriceOracleV2",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0a3b938d51f1b6d7bf960a0cb6ac9f1154d0008c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

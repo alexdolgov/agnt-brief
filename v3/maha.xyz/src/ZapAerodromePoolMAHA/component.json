@@ -1,0 +1,18 @@
+{
+  "component": "ZapAerodromePoolMAHA",
+  "main_contract": "ZapAerodromePoolMAHA",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc9004eab920655bdbd8463120e68195832bb5dd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

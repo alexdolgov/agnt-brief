@@ -1,0 +1,18 @@
+{
+  "component": "VAelinConverter",
+  "main_contract": "VAelinConverter",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf02a67988adb4b92365911cd2522ef4deb1c9bc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

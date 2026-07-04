@@ -1,0 +1,18 @@
+{
+  "component": "TokenPool",
+  "main_contract": "TokenPool",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x00c8af57a18eb97df446fa12e051c63274025010",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

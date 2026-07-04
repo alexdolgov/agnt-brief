@@ -1,0 +1,18 @@
+{
+  "component": "TangibleProfile",
+  "main_contract": "TangibleProfile",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x534c2a7de685c1a58683471b8e91798ff4b1e9ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

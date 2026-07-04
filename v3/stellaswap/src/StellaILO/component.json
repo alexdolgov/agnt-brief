@@ -1,0 +1,18 @@
+{
+  "component": "StellaILO",
+  "main_contract": "StellaILO",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x096352f7ea415a336b41fc48b33142eff19a8ad8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

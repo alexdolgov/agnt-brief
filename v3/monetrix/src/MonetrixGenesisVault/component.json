@@ -1,0 +1,18 @@
+{
+  "component": "MonetrixGenesisVault",
+  "main_contract": "MonetrixGenesisVault",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

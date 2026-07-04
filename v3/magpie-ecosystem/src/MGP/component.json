@@ -1,0 +1,18 @@
+{
+  "component": "MGP",
+  "main_contract": "MGP",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd06716e1ff2e492cc5034c2e81805562dd3b45fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

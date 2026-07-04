@@ -1,0 +1,18 @@
+{
+  "component": "NFTRouter",
+  "main_contract": "NFTRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf2d0fa5d973edf443d43719c444ddb28a74fbb56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Burnable",
+  "main_contract": "ERC20Burnable",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x6dcdda63631201f83c89e459621dac6e244e97f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

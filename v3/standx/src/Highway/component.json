@@ -1,0 +1,28 @@
+{
+  "component": "Highway",
+  "main_contract": "Highway",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_Highway_EVM_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7f5a8ee5149b9bbc462b2f4d5b03cb56ce12e419",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfdf12f819647d0fde50d6aafd08dafe880d29649",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

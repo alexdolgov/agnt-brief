@@ -1,0 +1,18 @@
+{
+  "component": "BorrowerOperations",
+  "main_contract": "BorrowerOperations",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb72773400657415f92cc78a6e1bd2e9ccdabe1f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

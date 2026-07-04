@@ -1,0 +1,18 @@
+{
+  "component": "GammaUniProxyHelper",
+  "main_contract": "GammaUniProxyHelper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x851b3fb3c3178cd3fbaa0cdaae0175efa15a30f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

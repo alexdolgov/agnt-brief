@@ -1,0 +1,18 @@
+{
+  "component": "NftFactory",
+  "main_contract": "NftFactory",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa304d289f6d0a30aeb33e9243f47efa3a9ad437d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

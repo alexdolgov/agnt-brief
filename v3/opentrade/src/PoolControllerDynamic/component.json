@@ -1,0 +1,18 @@
+{
+  "component": "PoolControllerDynamic",
+  "main_contract": "PoolControllerDynamic",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3303202b4b4b5155885ed529f3df704997afb3ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

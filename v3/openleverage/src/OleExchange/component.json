@@ -1,0 +1,18 @@
+{
+  "component": "OleExchange",
+  "main_contract": "OleExchange",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf43d35686af683eacd5b08023e69ece19696d892",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

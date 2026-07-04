@@ -1,0 +1,18 @@
+{
+  "component": "SmartVaultV3",
+  "main_contract": "SmartVaultV3",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa4879376995e60a7469e140c29f96744a7188278",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

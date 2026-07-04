@@ -1,0 +1,18 @@
+{
+  "component": "Sender",
+  "main_contract": "Sender",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x140fe463ef763a1eac54a9c05136bb64da94b101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

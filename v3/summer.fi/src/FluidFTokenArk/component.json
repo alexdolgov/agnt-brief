@@ -1,0 +1,42 @@
+{
+  "component": "FluidFTokenArk",
+  "main_contract": "FluidFTokenArk",
+  "source_file_count": 59,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x00eb8210743f4d4aa2b44e2744ae8ffd2dcebc72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x01f61bffe1f684f71fcc40862afe0fdd4aa462fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1bf59cc3e72736040c6b8fdc084e19a8070a045c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d3e4973ce9dd6cddee76a499f20bee6085881c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

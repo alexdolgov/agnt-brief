@@ -1,0 +1,18 @@
+{
+  "component": "StafiBase",
+  "main_contract": "StafiBase",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5db09e020d94f923408661f94704073dc86dba3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

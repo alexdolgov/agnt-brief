@@ -1,0 +1,20 @@
+{
+  "component": "CacheGold-2",
+  "main_contract": "CacheGold",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cache-token/docs/blob/master/CACHE_Gold_Audit_Zerotrust.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf5238462e7235c7b62811567e63dd17d12c2eaa0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

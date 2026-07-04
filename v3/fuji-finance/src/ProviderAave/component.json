@@ -1,0 +1,26 @@
+{
+  "component": "ProviderAave",
+  "main_contract": "ProviderAave",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10bd459b45fe083cb0bbe673066467bf7a760c43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf7358a994c7cc37af2116b03ec7b1af190e2cf7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

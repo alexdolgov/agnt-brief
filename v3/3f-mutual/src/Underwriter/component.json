@@ -1,0 +1,18 @@
+{
+  "component": "Underwriter",
+  "main_contract": "Underwriter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe58cde3cbeecc8d9306f482729084b909afa2357",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

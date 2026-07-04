@@ -1,0 +1,18 @@
+{
+  "component": "ManagedIndexFactory",
+  "main_contract": "ManagedIndexFactory",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6d825ce7f220c6cc03fe156f28be6318e6546ca8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BackerRewards",
+  "main_contract": "BackerRewards",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36cbf97602e1ae2d3b0cd69bd5d100ae59a7863a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

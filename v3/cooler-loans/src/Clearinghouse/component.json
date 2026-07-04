@@ -1,0 +1,18 @@
+{
+  "component": "Clearinghouse",
+  "main_contract": "Clearinghouse",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e094fe00e13fd06d64eea4fb3cd912893606fe0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

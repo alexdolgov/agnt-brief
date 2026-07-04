@@ -1,0 +1,18 @@
+{
+  "component": "LinearDecayInterestModel",
+  "main_contract": "LinearDecayInterestModel",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3782f80474753fe0c3cf1792673ce3d572c5d16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

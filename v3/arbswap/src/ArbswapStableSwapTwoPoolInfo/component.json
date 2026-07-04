@@ -1,0 +1,18 @@
+{
+  "component": "ArbswapStableSwapTwoPoolInfo",
+  "main_contract": "ArbswapStableSwapTwoPoolInfo",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaa50d30612a58f2e7935c4482fa426b0aa770d7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "AmmPoolsServiceBaseV1",
+  "main_contract": "AmmPoolsServiceBaseV1",
+  "source_file_count": 39,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0eb64f28e54a1c5f5ad98b54f951496d9a330887",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc3577de35f52ba3410af57f066b5f99c1ede47f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

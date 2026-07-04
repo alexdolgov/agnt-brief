@@ -1,0 +1,18 @@
+{
+  "component": "AnchorBlocks",
+  "main_contract": "AnchorBlocks",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc4ba1cc6897ff08bbeab20b4c691077daa8b8399",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

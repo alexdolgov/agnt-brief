@@ -1,0 +1,21 @@
+{
+  "component": "SmartChefInitializable",
+  "main_contract": "SmartChefInitializable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/squadswap/squadswap.pdf",
+    "https://www.cyberscope.io/audits/squadswap"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6427824d446e5be25326ab1b88c8102f0d52ec16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

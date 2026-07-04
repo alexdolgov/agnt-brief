@@ -1,0 +1,18 @@
+{
+  "component": "HeraAggregatorV2",
+  "main_contract": "HeraAggregatorV2",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x0000000000924fb1969e719eded2fed54afb183a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

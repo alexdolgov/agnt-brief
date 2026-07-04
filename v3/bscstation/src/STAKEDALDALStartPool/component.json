@@ -1,0 +1,18 @@
+{
+  "component": "STAKEDALDALStartPool",
+  "main_contract": "STAKEDALDALStartPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x504f8175b01adc711aa09ab250d7aa4392a9ec0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

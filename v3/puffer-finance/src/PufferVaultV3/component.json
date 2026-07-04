@@ -1,0 +1,18 @@
+{
+  "component": "PufferVaultV3",
+  "main_contract": "PufferVaultV3",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x17d5f2803d9f922fa9c3a77849962df0d19e6674",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

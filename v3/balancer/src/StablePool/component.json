@@ -1,0 +1,29 @@
+{
+  "component": "StablePool",
+  "main_contract": "StablePool",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/certora/2022-09-23.pdf",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/openzeppelin/2021-03-15.pdf",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/openzeppelin/2021-10-09.pdf",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/trail-of-bits/2021-04-02.pdf",
+    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/trail-of-bits/2021-10-08.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/certora/2022-09-23.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/openzeppelin/2021-03-15.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/openzeppelin/2021-10-09.pdf",
+    "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/trail-of-bits/2021-04-02.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2026-01-26.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a8afe82eb901cd5b19834ec9ed764ce4d85dd5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

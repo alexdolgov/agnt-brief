@@ -1,0 +1,18 @@
+{
+  "component": "KineProtocolHelper",
+  "main_contract": "KineProtocolHelper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x39d1c99a244aa02502defc109e6f2d88efd6b06f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

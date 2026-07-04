@@ -1,0 +1,34 @@
+{
+  "component": "ComptrollerFirstExtension",
+  "main_contract": "ComptrollerFirstExtension",
+  "source_file_count": 30,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x6393228b6909ab12413816679ec992778e35f3a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xdc4abe2cd9a276b187200d4896d4b219c0b8920a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xe1a3006be645a80f206311d9f18c866c204ba02f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

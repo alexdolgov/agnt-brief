@@ -1,0 +1,18 @@
+{
+  "component": "AggregatorBatchRouter-2",
+  "main_contract": "AggregatorBatchRouter",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb9d01ca61b9c181da1051bfdd28e1097e920ab14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "FeeManagerV3",
+  "main_contract": "FeeManagerV3",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x079793b75eb0841f3ddb62466c9182ecaf0f3757",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5a0e0bb48c7f1fcb2d6dcebb565764eef1459830",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

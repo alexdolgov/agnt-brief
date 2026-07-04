@@ -1,0 +1,18 @@
+{
+  "component": "L2OutputOracle",
+  "main_contract": "L2OutputOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93e1c0d8ef27930130fb809ce18ca681a8c32f85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626VaultWrapper",
+  "main_contract": "ERC4626VaultWrapper",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f987372a1ae29f834deaea66d2e72137ba10fc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

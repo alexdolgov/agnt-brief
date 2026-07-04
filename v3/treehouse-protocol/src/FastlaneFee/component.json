@@ -1,0 +1,18 @@
+{
+  "component": "FastlaneFee",
+  "main_contract": "FastlaneFee",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x434b68b11bbe8fd3074089397ca3d275801d6354",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

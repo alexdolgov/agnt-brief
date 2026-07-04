@@ -1,0 +1,18 @@
+{
+  "component": "PublicSaleContract",
+  "main_contract": "PublicSaleContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd66cdccb1499a0be335eca99d898832912cb8f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

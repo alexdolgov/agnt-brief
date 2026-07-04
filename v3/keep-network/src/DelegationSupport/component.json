@@ -1,0 +1,26 @@
+{
+  "component": "DelegationSupport",
+  "main_contract": "DelegationSupport",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70755a30b3b8b4a03e355682bc0247f07362cb8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe194e93d29a48472c1d1e539a81a6c65dcfbab3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

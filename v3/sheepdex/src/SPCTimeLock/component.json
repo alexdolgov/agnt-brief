@@ -1,0 +1,18 @@
+{
+  "component": "SPCTimeLock",
+  "main_contract": "SPCTimeLock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2a3a8df6bf63a505fada1bca5710e20325a989ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

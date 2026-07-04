@@ -1,0 +1,18 @@
+{
+  "component": "Voter",
+  "main_contract": "Voter",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xf3113e4f80c84935e576cfd75f4423e9b911908a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

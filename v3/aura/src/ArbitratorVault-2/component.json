@@ -1,0 +1,18 @@
+{
+  "component": "ArbitratorVault-2",
+  "main_contract": "ArbitratorVault",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d208cd54f5132f2bd0c1f1e8d8c864bb6bedc40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

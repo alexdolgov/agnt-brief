@@ -1,0 +1,26 @@
+{
+  "component": "AztecDistributor",
+  "main_contract": "AztecDistributor",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafcbe81b8122e7b6e59e6df954af3aa37cbe8362",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfe98d04d1d00f1b30b84022d4291c2a70e8d6c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

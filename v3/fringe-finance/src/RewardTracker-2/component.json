@@ -1,0 +1,18 @@
+{
+  "component": "RewardTracker-2",
+  "main_contract": "RewardTracker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a22fec325b89ac294fceafefd7fbc9115be964b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

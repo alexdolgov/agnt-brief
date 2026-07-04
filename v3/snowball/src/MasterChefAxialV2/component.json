@@ -1,0 +1,18 @@
+{
+  "component": "MasterChefAxialV2",
+  "main_contract": "MasterChefAxialV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3fae9b2637dbeb6cc570784ba886145fa5f2c0f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

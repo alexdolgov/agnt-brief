@@ -1,0 +1,18 @@
+{
+  "component": "PriceOracleProxy",
+  "main_contract": "PriceOracleProxy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d8e3881cc063e593673625bbb9e5191be61ae3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

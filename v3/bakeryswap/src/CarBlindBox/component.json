@@ -1,0 +1,26 @@
+{
+  "component": "CarBlindBox",
+  "main_contract": "CarBlindBox",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0628cfc88518ccee96ef7bdfed8b4ac8708cad88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x74db53381015ac19301eebdbd17e719655e32e40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

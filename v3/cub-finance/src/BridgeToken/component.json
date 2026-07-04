@@ -1,0 +1,18 @@
+{
+  "component": "BridgeToken",
+  "main_contract": "BridgeToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x06791b2117ed179db6af1fdc8b2aa86de76700a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

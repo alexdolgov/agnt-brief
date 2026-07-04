@@ -1,0 +1,18 @@
+{
+  "component": "DistributionModule",
+  "main_contract": "DistributionModule",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd56e9949d77001fa33ceab758bb93e1ab6469e73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

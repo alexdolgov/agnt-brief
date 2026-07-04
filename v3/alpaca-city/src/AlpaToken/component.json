@@ -1,0 +1,18 @@
+{
+  "component": "AlpaToken",
+  "main_contract": "AlpaToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ca4408137eb639570f8e647d9bd7b7e8717514a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

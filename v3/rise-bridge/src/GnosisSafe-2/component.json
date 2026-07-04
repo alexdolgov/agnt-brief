@@ -1,0 +1,18 @@
+{
+  "component": "GnosisSafe-2",
+  "main_contract": "GnosisSafe",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69f4d1788e39c87893c980c06edf4b7f686e2938",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

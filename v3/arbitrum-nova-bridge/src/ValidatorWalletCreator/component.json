@@ -1,0 +1,26 @@
+{
+  "component": "ValidatorWalletCreator",
+  "main_contract": "ValidatorWalletCreator",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x085c69a44f3df550b6666d052d4621b9b44436f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xddd434ac6177bb0809183a84769fb14bc5b48858",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

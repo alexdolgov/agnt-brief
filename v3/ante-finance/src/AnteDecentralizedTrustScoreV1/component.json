@@ -1,0 +1,18 @@
+{
+  "component": "AnteDecentralizedTrustScoreV1",
+  "main_contract": "AnteDecentralizedTrustScoreV1",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1a53b3500216d547186c833c35f39a82053b7223",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

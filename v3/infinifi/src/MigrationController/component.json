@@ -1,0 +1,18 @@
+{
+  "component": "MigrationController",
+  "main_contract": "MigrationController",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f5403656e4db95accf1064a714b1bce351839f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

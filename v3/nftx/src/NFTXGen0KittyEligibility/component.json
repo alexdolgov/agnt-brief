@@ -1,0 +1,18 @@
+{
+  "component": "NFTXGen0KittyEligibility",
+  "main_contract": "NFTXGen0KittyEligibility",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1efd767e7b2beba1df70c18e8b4225e7795bc6c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

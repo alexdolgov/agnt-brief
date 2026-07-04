@@ -1,0 +1,18 @@
+{
+  "component": "Minter_Proxy",
+  "main_contract": "Minter Proxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4765288de2672a961cc5a9f52be75005caf005a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

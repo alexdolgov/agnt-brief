@@ -1,0 +1,26 @@
+{
+  "component": "WiseSecurity",
+  "main_contract": "WiseSecurity",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c8774d7c6705901b717d0a6458b647833ad9dbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x67dae107ecf474f0d5b7d8ad45490608a5adbe2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

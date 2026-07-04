@@ -1,0 +1,18 @@
+{
+  "component": "JumpRateModel",
+  "main_contract": "JumpRateModel",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x363637833d110f86e47311e4c54e520982721f3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

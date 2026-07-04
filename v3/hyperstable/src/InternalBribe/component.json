@@ -1,0 +1,18 @@
+{
+  "component": "InternalBribe",
+  "main_contract": "InternalBribe",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x5a5688e2c953321fd1f1dd35b1cd3baac1a981d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

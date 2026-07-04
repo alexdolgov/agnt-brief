@@ -1,0 +1,26 @@
+{
+  "component": "AgentUpgrader",
+  "main_contract": "AgentUpgrader",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x804739d527b550260f633462dedab13399c3953a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf9eeae6a02c91914f046331bf2dc4c4a9ca7ef51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

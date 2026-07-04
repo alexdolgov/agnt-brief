@@ -1,0 +1,18 @@
+{
+  "component": "YVDAILevSwapper",
+  "main_contract": "YVDAILevSwapper",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd8af1558a2ca227607b49a3293e278c6875f9a40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

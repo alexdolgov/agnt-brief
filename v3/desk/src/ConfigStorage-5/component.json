@@ -1,0 +1,18 @@
+{
+  "component": "ConfigStorage-5",
+  "main_contract": "ConfigStorage",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x146d674ca06f3d92b876b32b49c068a05f9a3bf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

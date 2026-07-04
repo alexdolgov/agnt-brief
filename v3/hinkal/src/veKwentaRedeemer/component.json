@@ -1,0 +1,18 @@
+{
+  "component": "veKwentaRedeemer",
+  "main_contract": "veKwentaRedeemer",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc6a9c939eeb37a49161655f6cc153465de62181a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

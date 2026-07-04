@@ -1,0 +1,18 @@
+{
+  "component": "TokenStaking",
+  "main_contract": "TokenStaking",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

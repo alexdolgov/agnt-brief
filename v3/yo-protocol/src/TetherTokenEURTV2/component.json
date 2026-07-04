@@ -1,0 +1,18 @@
+{
+  "component": "TetherTokenEURTV2",
+  "main_contract": "TetherTokenEURTV2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde706e90f07ffa15b1783379edab3c21fbbd5c7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

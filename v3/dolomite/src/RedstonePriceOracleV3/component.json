@@ -1,0 +1,18 @@
+{
+  "component": "RedstonePriceOracleV3",
+  "main_contract": "RedstonePriceOracleV3",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x6b15c3f0d266be946ea2d33c40d1a7204c8403a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

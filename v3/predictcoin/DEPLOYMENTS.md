@@ -1,0 +1,62 @@
+# predictcoin — deployments
+
+56 verified deployment(s) across 17 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| bsc | `0x009510c9c5de618f9992062205a79746b6e1af80` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0x0764c090a14e45ae23f69732beb28504f89d669a` | ConnectorV2NubianStaking | impl | inactive | no |
+| bsc | `0x09e210644e7a5a29fa2a5ded72a393f4fa45662c` | ConnectorV2Venus | impl | inactive | no |
+| bsc | `0x10b10bbcda394881bfbc1128e7299e7e7d771477` | ConnectV2Auth | impl | inactive | no |
+| bsc | `0x1311888ac68f1a509e7b7025b0642ac0a8ce2211` | ConnectV2Basic | impl | inactive | no |
+| bsc | `0x132c190d30bcae57e15171ac0ca71e430d391874` | BxdDefaultImplementation | impl | inactive | no |
+| bsc | `0x137701708f7139b563e77d71e8158364ff1a934c` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x168af8e89279ef2ae780fed5f85a1bf1c1391acf` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x1b31d577135e3e426a13f3c8d54c15d067284396` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0x2183550a2afe501bcb42ca6e08531685624ee2b4` | ConnectV2Auth | impl | inactive | no |
+| bsc | `0x21cf3ea572473f22597de28c80ca6bff94416151` | BxdConnectorsV2 | impl | inactive | no |
+| bsc | `0x22993d25600b87c3c86046a8cf8181ca35ce7606` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x23379fc71cc4fc35c599817f6c3c9bad28e48ca4` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x29cf94fb95c3ee06282751230a6304f319625f83` | ConnectorV2Venus | impl | inactive | no |
+| bsc | `0x2fb5b6b3632146eead26446046c8a45c36485436` | BxdAccountV2 | impl | inactive | no |
+| bsc | `0x3633c1247481f86e57cf1f75a7ced81788f495d6` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x3d07e77ee899a99597d4d9e38cc3b3e97d8e7c1b` | BxdConnectorsV2Impl | impl | inactive | no |
+| bsc | `0x44a97195f1e5931bf8beaf1c7b08fc00aeb2ca34` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x44b01fbc728b5fee7306660e80a61e4f83517f49` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x47da1a6300d808a1ed1d84f35aa474654193710a` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0x4990d7bd5d3f4c359a8c8d05d7606eb155756406` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0x4b74c42b7ab96feec003563c355f2fefd0c80ee7` | ERC1967Proxy | proxy | live | no |
+| bsc | `0x4f19a6ca6f35505ded58da6f319cc38444589b71` | BxdConnectorsV2Proxy | impl | inactive | no |
+| bsc | `0x4ffcfd0f62352e33bb02710fd4c7d2049644b13d` | ConnectorV2Venus | impl | inactive | no |
+| bsc | `0x511910621d673a632fb323d0bc3e2296d4fc6a62` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x5b99cc7d98772a1880582739a0fd6f74f95f53d5` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x5d07a78a3656d560f113533759f96c33db7625fe` | ConnectV2Auth | impl | inactive | no |
+| bsc | `0x5dda94995d64fb239f7de2971e90a36524605b52` | BxdImplementations | impl | inactive | no |
+| bsc | `0x6b93631d523e01df694d75c9dbcce58b0470aa08` | BNBClassic | impl | inactive | no |
+| bsc | `0x7588053b343b62f0b3f8ba01f98cafc8e7c93c31` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0x784c9ddbee5abfb4620e96781b52ea0abfb3f72a` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x8134f5d43ec992c0b440c5b51783c9d05a6603b9` | ConnectV2Auth | impl | inactive | no |
+| bsc | `0x82ab4bcd90e99f31a90201669aacc6867c9c3b77` | ConnectorV2AutoFarm | impl | inactive | no |
+| bsc | `0x871aa29d06232b4a27c2cb8dfc28b8b14436276f` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x88903763f603d70967a8d3922de9ff7508bc3928` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0x8c7faa5cb5c626379835d0c6e27fedb76fa12d1d` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0x8f0183ecf980520b1ca3dc820e2e955a5ff2e718` | ConnectV2Basic | impl | inactive | no |
+| bsc | `0x8f6f2e6100519bd09feacf59872b36e1604a5cde` | ConnectV2Auth | impl | inactive | no |
+| bsc | `0x90981ff5d5a18fe25c22f45199b661dffbc5d2cf` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0xa776c8289e4be99eacb91307d95ece6ac3f072b7` | BNBClassic | impl | inactive | no |
+| bsc | `0xab50189dc5dc39952f3b927825371f8d73e3fa5e` | BxdDSAResolver | impl | inactive | no |
+| bsc | `0xb03308fa6a1ecb489ecc86b7e930491020ee2b96` | ConnectorV2Venus | impl | inactive | no |
+| bsc | `0xb3714cb97c06f81b6c1613d7b63aca02bcf5fd72` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0xb44f55de831d1f2d0def6812495d49f950a8815d` | ConnectV2Basic | impl | inactive | no |
+| bsc | `0xb7fffa6e17a2c65802746f71e1118d5872a29cee` | ConnectV2Auth | impl | inactive | no |
+| bsc | `0xbdd2e3fdb879aa42748e9d47b7359323f226ba22` | Predictcoin | impl | live | yes |
+| bsc | `0xbed1ac1ca9b2d2f6d86d365f4c22d9bc9f98c9e2` | ConnectV2Basic | impl | inactive | no |
+| bsc | `0xc2e1c0fc0a2c0126ad5222d6eb2453c6aec1e637` | ConnectV2Basic | impl | inactive | no |
+| bsc | `0xc9d1678c3af78e06f512af0d474607c63a9ebd97` | ConnectorV2Venus | impl | inactive | no |
+| bsc | `0xd29afdfbcad1c249b0c69eb2785b08353029282b` | BxdImplementationM1 | impl | inactive | no |
+| bsc | `0xd75de543fad7665616b5d49753d83cb3bcc29277` | ConnectorV2Venus | impl | inactive | no |
+| bsc | `0xda69133632d0cdbbbe486091b0e37244573e4ea2` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0xdd5cd62ba06ab885aba3201040235aa6d372d0a2` | ConnectV2Basic | impl | inactive | no |
+| bsc | `0xdfad7e79c07658140796073bd8af737bb740e158` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0xe4c277fd856a33d7625401d68d3aee6df0ee8045` | ConnectV2PancakeswapV2 | impl | inactive | no |
+| bsc | `0xfface8efc70c5373ed821574f623ea142fbb2f9b` | ConnectV2PancakeswapV2 | impl | inactive | no |

@@ -1,0 +1,18 @@
+{
+  "component": "svETHRateProvider",
+  "main_contract": "svETHRateProvider",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad4bfafae75ecd3fed5cfad4e4e9847cd47a1879",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "SiloV2VaultAdapter",
+  "main_contract": "SiloV2VaultAdapter",
+  "source_file_count": 44,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x89d2f8f6c3073968268bd4c99f7790d1b7e0e145",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8f348c4b165a856e2f7922ca63b031ca3764e436",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

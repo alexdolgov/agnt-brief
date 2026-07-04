@@ -1,0 +1,50 @@
+{
+  "component": "IDackieTier",
+  "main_contract": "IDackieTier",
+  "source_file_count": 13,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x319fbdf0a1c749a33fb54761b0d638878cc2e002",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x729de4a888f6942d7bc4805533cfaaeb9e1a7d6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8cc9840e3cefa86d32107a0ddf87fe2cba99470c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd98060e28842f0ccb0b207d508d96a1ac2c5f75a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfc8f2a790e752773d6cac0eb6e7b651d574e8092",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

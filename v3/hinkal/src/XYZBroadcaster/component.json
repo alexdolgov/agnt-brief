@@ -1,0 +1,18 @@
+{
+  "component": "XYZBroadcaster",
+  "main_contract": "XYZBroadcaster",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5786696bb5be7fcdb9997e7f89355d9e97ff8d89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

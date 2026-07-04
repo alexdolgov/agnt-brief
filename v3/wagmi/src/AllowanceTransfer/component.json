@@ -1,0 +1,26 @@
+{
+  "component": "AllowanceTransfer",
+  "main_contract": "AllowanceTransfer",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x16b413526d062142eb9eda9d75312ca9f2e418fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe88b19885935b4be8dcf38e2c96b8c73cfc9b6e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "CRVStrategyGUSDMainnet",
+  "main_contract": "CRVStrategyGUSDMainnet",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa505917c1326670451eff9ea75fe0d49a3853acf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa63852397f712fd69617d435aaa4c147fe37bdf7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

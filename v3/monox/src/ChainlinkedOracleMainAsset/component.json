@@ -1,0 +1,26 @@
+{
+  "component": "ChainlinkedOracleMainAsset",
+  "main_contract": "ChainlinkedOracleMainAsset",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b17546514aad0d5453f9e2d0a56a19cb5dae774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x54b21c140f5463e1fda69b934da619eaaa61f1ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

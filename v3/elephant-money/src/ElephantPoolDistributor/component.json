@@ -1,0 +1,18 @@
+{
+  "component": "ElephantPoolDistributor",
+  "main_contract": "ElephantPoolDistributor",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x612ce90180ec0185ad1aa09c74704a048a4cccba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

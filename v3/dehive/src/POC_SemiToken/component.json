@@ -1,0 +1,26 @@
+{
+  "component": "POC_SemiToken",
+  "main_contract": "POC_SemiToken",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x431e70c7d0a5de55d6b4f7af9391edf35b1dbc24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x712052f807eafd1a27d7350e33f0a6c500385df4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RCHAutomatorFactory",
+  "main_contract": "RCHAutomatorFactory",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3079993b5be4d18d504a6e58939ac6637d47dc1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

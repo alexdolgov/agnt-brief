@@ -1,0 +1,18 @@
+{
+  "component": "NativeBridge-2",
+  "main_contract": "NativeBridge",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dc0330aaf11ce797ae9ca81d1be097773309f02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VenusFoldStrategyV2Mainnet_ETH",
+  "main_contract": "VenusFoldStrategyV2Mainnet_ETH",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x80318633b2ebe8ac717dc1b4dc0b71405e28f976",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "component": "Router",
+  "main_contract": "Router",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/cantina/2024-12-17.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2024-09-04.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2026-01-26.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/spearbit/2024-10-04.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/trail-of-bits/2024-12-11.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4bdcc2fb18aeb9e2d281b0278d946445070eada7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

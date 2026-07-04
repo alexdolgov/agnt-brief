@@ -1,0 +1,18 @@
+{
+  "component": "WrapperModeler",
+  "main_contract": "WrapperModeler",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x65c1fffb85121dd38ed7807e65e33236fb2695b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

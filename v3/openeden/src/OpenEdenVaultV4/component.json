@@ -1,0 +1,18 @@
+{
+  "component": "OpenEdenVaultV4",
+  "main_contract": "OpenEdenVaultV4",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x331b256b9c2ebe5113cabf0281a2f4815ca4c5e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

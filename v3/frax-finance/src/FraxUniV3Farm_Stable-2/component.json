@@ -1,0 +1,20 @@
+{
+  "component": "FraxUniV3Farm_Stable-2",
+  "main_contract": "FraxUniV3Farm_Stable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/FraxQ42021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf8caed1943b15b877d7105b9906a618c154f69e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

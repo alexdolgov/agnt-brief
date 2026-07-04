@@ -1,0 +1,18 @@
+{
+  "component": "ManagedRewardsFactory",
+  "main_contract": "ManagedRewardsFactory",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe4b23f13b24232c1e68ad0575191216152aa9480",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

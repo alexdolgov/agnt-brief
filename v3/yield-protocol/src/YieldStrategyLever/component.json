@@ -1,0 +1,18 @@
+{
+  "component": "YieldStrategyLever",
+  "main_contract": "YieldStrategyLever",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5582b8398fb586f1b79edd1a6e83f1c5aa558955",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

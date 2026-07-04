@@ -1,0 +1,18 @@
+{
+  "component": "LockerDistribution",
+  "main_contract": "LockerDistribution",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x256f29e1e4fe5fb60d5d01e030d8a74def2329e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

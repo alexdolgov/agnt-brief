@@ -1,0 +1,18 @@
+{
+  "component": "AuthGemJoin5",
+  "main_contract": "AuthGemJoin5",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a7e1b324060db7342aea08c0dc56f55ced6f519",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

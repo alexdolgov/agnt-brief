@@ -1,0 +1,18 @@
+{
+  "component": "RepublicToken",
+  "main_contract": "RepublicToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21c482f153d0317fe85c60be1f7fa079019fcebd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

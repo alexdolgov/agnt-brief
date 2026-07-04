@@ -1,0 +1,18 @@
+{
+  "component": "Fractionalizer1155",
+  "main_contract": "Fractionalizer1155",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4093ee6cc764e11ce95451f47ddee9d6cc89eed4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

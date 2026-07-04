@@ -1,0 +1,18 @@
+{
+  "component": "PriceNode",
+  "main_contract": "PriceNode",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde5d4d97737e2563d3a0d86bb13fea6040120fe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

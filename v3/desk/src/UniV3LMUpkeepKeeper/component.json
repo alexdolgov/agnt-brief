@@ -1,0 +1,18 @@
+{
+  "component": "UniV3LMUpkeepKeeper",
+  "main_contract": "UniV3LMUpkeepKeeper",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x017a185c14254626a240d94f703b7e01c59b2e7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

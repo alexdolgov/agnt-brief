@@ -1,0 +1,18 @@
+{
+  "component": "TokenSwap",
+  "main_contract": "TokenSwap",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x846c5d59b75e373756dc6fcdb0c8d258720abeda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

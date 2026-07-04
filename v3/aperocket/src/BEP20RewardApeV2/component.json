@@ -1,0 +1,18 @@
+{
+  "component": "BEP20RewardApeV2",
+  "main_contract": "BEP20RewardApeV2",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8f97b2e6559084cfaba140e2ab4da9aaf23fe7f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

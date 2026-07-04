@@ -1,0 +1,18 @@
+{
+  "component": "VesselManager",
+  "main_contract": "VesselManager",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5bd5b45f6565762928a79779f6c2dd43c15c92ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "TUsdeDataFeed",
+  "main_contract": "TUsdeDataFeed",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x507f409ba7e5ef489d5c0e3c4568b24985a029d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8335d94170c4275ebee7c0ff8ad3f4c0752ece2d",
+      "is_proxy": true,
+      "implementation_address": "0x507f409ba7e5ef489d5c0e3c4568b24985a029d0",
+      "liveness": "live"
+    }
+  ]
+}

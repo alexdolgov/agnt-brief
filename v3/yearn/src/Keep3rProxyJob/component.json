@@ -1,0 +1,18 @@
+{
+  "component": "Keep3rProxyJob",
+  "main_contract": "Keep3rProxyJob",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d5a780fe782e90b49a85926cc77ddab0d024645",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedUST",
+  "main_contract": "WrappedUST",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa47c8bf37f92abed4a126bda807a7b7498661acd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

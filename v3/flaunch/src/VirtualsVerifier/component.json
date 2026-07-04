@@ -1,0 +1,18 @@
+{
+  "component": "VirtualsVerifier",
+  "main_contract": "VirtualsVerifier",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x06a089fa231aca48d2aa77365123ad9aca43d3a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

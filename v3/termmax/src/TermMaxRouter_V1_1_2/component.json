@@ -1,0 +1,18 @@
+{
+  "component": "TermMaxRouter_V1_1_2",
+  "main_contract": "TermMaxRouter_V1_1_2",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x38832fdaf37a4cfb54d5fc46b9058f6a33e7f8f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

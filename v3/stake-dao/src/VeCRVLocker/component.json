@@ -1,0 +1,18 @@
+{
+  "component": "VeCRVLocker",
+  "main_contract": "VeCRVLocker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75736518075a01034fa72d675d36a47e9b06b2fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

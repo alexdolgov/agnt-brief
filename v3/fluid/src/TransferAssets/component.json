@@ -1,0 +1,18 @@
+{
+  "component": "TransferAssets",
+  "main_contract": "TransferAssets",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93c4b8d10d8886e797c50c58b8c4e1d231ef13ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

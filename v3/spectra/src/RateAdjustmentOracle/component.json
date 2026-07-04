@@ -1,0 +1,26 @@
+{
+  "component": "RateAdjustmentOracle",
+  "main_contract": "RateAdjustmentOracle",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x916cd56a5fbbeae186f488f4db83b00c103b46e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1e28b4f85f71c34b78c75fbc62d86d81659520e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

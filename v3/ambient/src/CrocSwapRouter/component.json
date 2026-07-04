@@ -1,0 +1,18 @@
+{
+  "component": "CrocSwapRouter",
+  "main_contract": "CrocSwapRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xfb5f26851e03449a0403ca945ebb4201415fd1fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

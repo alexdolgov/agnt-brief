@@ -1,0 +1,18 @@
+{
+  "component": "UCrossChainOwner_Arbitrum",
+  "main_contract": "UCrossChainOwner_Arbitrum",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4a0f50b19b02ac927911c559629536b9a24d9314",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

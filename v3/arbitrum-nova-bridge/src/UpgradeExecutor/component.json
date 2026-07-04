@@ -1,0 +1,34 @@
+{
+  "component": "UpgradeExecutor",
+  "main_contract": "UpgradeExecutor",
+  "source_file_count": 26,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x995f930b4a943620f1341a287c9f2cf093f6d47a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde505e42d50abd07c8d39dcf692920d56cba35da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeab0678f76f7b371f4dab44c29800e84b5662d4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

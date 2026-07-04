@@ -1,0 +1,18 @@
+{
+  "component": "Create2Ownable",
+  "main_contract": "Create2Ownable",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fd5cece155619efc5e20432e7d8296fb19667d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

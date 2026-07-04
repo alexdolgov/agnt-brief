@@ -1,0 +1,18 @@
+{
+  "component": "VTokenBase-2",
+  "main_contract": "VTokenBase",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9bafc3ef55d27361edd6d1e727c627a13c0950d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DiamondSwapV3Pool",
+  "main_contract": "DiamondSwapV3Pool",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

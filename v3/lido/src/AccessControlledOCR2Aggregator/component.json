@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlledOCR2Aggregator",
+  "main_contract": "AccessControlledOCR2Aggregator",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1655ad5bd23b6fea57dc21fd761ec4552fcb2419",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

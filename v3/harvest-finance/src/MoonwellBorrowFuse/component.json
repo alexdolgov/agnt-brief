@@ -1,0 +1,18 @@
+{
+  "component": "MoonwellBorrowFuse",
+  "main_contract": "MoonwellBorrowFuse",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x377a5b195e3c074d982bd7bac66b48d4c3006353",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

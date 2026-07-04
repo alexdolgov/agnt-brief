@@ -1,0 +1,42 @@
+{
+  "component": "LatteNFT",
+  "main_contract": "LatteNFT",
+  "source_file_count": 23,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa570b7a69a7fba05d2e5c1bea1fe21f6d78703e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb5a835b9e4ae76aea930831b84eb74293309e059",
+      "is_proxy": true,
+      "implementation_address": "0xa570b7a69a7fba05d2e5c1bea1fe21f6d78703e4",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc37adf451305e564f6df16c98aed950d54da5b56",
+      "is_proxy": true,
+      "implementation_address": "0xd021a1f01d1811cadef0ffd1bc6026b92e7140b4",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd021a1f01d1811cadef0ffd1bc6026b92e7140b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

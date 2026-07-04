@@ -1,0 +1,26 @@
+{
+  "component": "WithdrawalHandler",
+  "main_contract": "WithdrawalHandler",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0dabc0d9b270c9b0c4c77aaceaa712b56d0f9178",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b872fafee64dd53f2b38dbbd05a4fb323f15f12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

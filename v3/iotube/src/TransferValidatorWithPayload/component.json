@@ -1,0 +1,26 @@
+{
+  "component": "TransferValidatorWithPayload",
+  "main_contract": "TransferValidatorWithPayload",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x86b7a9470d93e5ebfd1c099e173bce86196c85b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x87e2d48de6cc2029ffc1a915462e4aa597890cd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

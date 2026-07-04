@@ -1,0 +1,29 @@
+{
+  "component": "TransparentUpgradeableProxy-5",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 71,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Zellic/publications/blob/1916cd0f6ef5e1fda0e44628d5eed902fd797883/Asymmetry%20Finanace%20safETH%20-%20Zellic%20Audit%20Report.pdf",
+    "https://raw.githubusercontent.com/Zellic/publications/1916cd0f6ef5e1fda0e44628d5eed902fd797883/Asymmetry%20Finanace%20safETH%20-%20Zellic%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf5ccaf2dbed6c7ae341df42a9a74e057e9df3d09",
+      "is_proxy": true,
+      "implementation_address": "0xfb8725366b3e3011ff7445106f40fab97a8371b1",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb8725366b3e3011ff7445106f40fab97a8371b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

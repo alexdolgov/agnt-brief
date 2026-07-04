@@ -1,0 +1,34 @@
+{
+  "component": "ProtocolOwnedDEXLiquidity",
+  "main_contract": "ProtocolOwnedDEXLiquidity",
+  "source_file_count": 6,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6925e78e906a9c226f0b1134dfd257e9818b921d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x787125c47ec5d0a3b77f1cb1a53843deac1498be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbfd8a728f2ee2e78708325ee8329f322da292d16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

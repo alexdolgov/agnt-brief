@@ -1,0 +1,34 @@
+{
+  "component": "PermissionedLiquidationControllerFactory",
+  "main_contract": "PermissionedLiquidationControllerFactory",
+  "source_file_count": 44,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1ff3be55911289e5c794157ca285e6572835c243",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe36ed8800a7a3ad39ba1324ea2d179ff02b33621",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe786fb9927bb14c8650ecbc864ef5be51b395926",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

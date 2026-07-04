@@ -1,0 +1,18 @@
+{
+  "component": "OFTAdapterFactory",
+  "main_contract": "OFTAdapterFactory",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa3f78123da6c25548ced8e2e194483a067ea659",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

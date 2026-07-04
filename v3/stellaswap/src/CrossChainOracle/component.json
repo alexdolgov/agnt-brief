@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainOracle",
+  "main_contract": "CrossChainOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xd4a2c3abbf2d80e38dbe29f45bde3834a31e06fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

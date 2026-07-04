@@ -1,0 +1,20 @@
+{
+  "component": "CollateralVaultBase-3",
+  "main_contract": "CollateralVaultBase",
+  "source_file_count": 75,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://487956288-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3KnzajNTqFNdyZr2k3l3%2Fuploads%2F1BUrZGcTaMl5rFRH00ph%2FTwyne%20-%20Aave%20integration.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x868a21426852a775395d4b90de23b3e3e662bd78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

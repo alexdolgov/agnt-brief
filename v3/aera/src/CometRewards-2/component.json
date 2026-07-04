@@ -1,0 +1,18 @@
+{
+  "component": "CometRewards-2",
+  "main_contract": "CometRewards",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x123964802e6ababbe1bc9547d72ef1b69b00a6b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

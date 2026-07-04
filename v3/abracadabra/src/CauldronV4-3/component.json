@@ -1,0 +1,18 @@
+{
+  "component": "CauldronV4-3",
+  "main_contract": "CauldronV4",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc4ee4956e8ed8934ee5c02313bb24f5c6848ad4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

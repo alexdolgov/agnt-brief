@@ -1,0 +1,18 @@
+{
+  "component": "RubiconRewardsVestingWallet",
+  "main_contract": "RubiconRewardsVestingWallet",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39eb71ac275f69e7e7a3a698309fb56b11d78569",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

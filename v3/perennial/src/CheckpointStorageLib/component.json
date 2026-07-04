@@ -1,0 +1,18 @@
+{
+  "component": "CheckpointStorageLib",
+  "main_contract": "CheckpointStorageLib",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x074fb1073b24f85b52337b7dfea2d2cb5b9406d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ProxyDomaRecordViewFacet",
+  "main_contract": "ProxyDomaRecordViewFacet",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd0c2a9c302594e2a570a03d3e2b813b1274dec76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

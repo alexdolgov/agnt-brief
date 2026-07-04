@@ -1,0 +1,18 @@
+{
+  "component": "PythAggregatorV3",
+  "main_contract": "PythAggregatorV3",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0bd27617e20f09a8e7ffdae281e383b4b2f7a742",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

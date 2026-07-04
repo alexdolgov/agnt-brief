@@ -1,0 +1,28 @@
+{
+  "component": "ProtocolReserve",
+  "main_contract": "ProtocolReserve",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x149a9a5b2472553253aa532842f358de9b0d8ee6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc3e111c8c81b4675df243a3ba0e0821c0fe7014a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

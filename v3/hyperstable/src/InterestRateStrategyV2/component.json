@@ -1,0 +1,18 @@
+{
+  "component": "InterestRateStrategyV2",
+  "main_contract": "InterestRateStrategyV2",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xa05023d6f6074d8d3ac6f9819db5e6993da031e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UiIncentiveDataProviderV2V3",
+  "main_contract": "UiIncentiveDataProviderV2V3",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2bf72a5fda4b4ae15d07f1ee4bb9a1c83908e46c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

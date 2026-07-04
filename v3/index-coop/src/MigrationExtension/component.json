@@ -1,0 +1,26 @@
+{
+  "component": "MigrationExtension",
+  "main_contract": "MigrationExtension",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e0aa0508dfedb73110fa0339dc6aaddd64e506f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea40e48b616a8ef93fe19827dee3a73fb8a15cfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

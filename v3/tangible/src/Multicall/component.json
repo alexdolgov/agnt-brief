@@ -1,0 +1,26 @@
+{
+  "component": "Multicall",
+  "main_contract": "Multicall",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x61b227a7cbaa92fd0e46a517fa421df87a9cbb17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9e059edb32fc27430cfc8c9025a55b7c0fcfabda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

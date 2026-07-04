@@ -1,0 +1,18 @@
+{
+  "component": "BridgePlus",
+  "main_contract": "BridgePlus",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x02f9d48e4328343d2ad486e05b26d9b8849bdfa1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

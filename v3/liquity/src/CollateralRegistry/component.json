@@ -1,0 +1,18 @@
+{
+  "component": "CollateralRegistry",
+  "main_contract": "CollateralRegistry",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf949982b91c8c61e952b3ba942cbbfaef5386684",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "TransparentUpgradeableProxy-3",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cybro-io/dapp-contracts-audits/blob/main/Cybro%20Vault%20Smart%20Contract%20Audit%20-%20QuillAudits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xbfb18eda8961ee33e38678caf2bceb2d23aedfea",
+      "is_proxy": true,
+      "implementation_address": "0xde0d8bd89dc11cf406931e5a841f73240b945962",
+      "liveness": "live"
+    }
+  ]
+}

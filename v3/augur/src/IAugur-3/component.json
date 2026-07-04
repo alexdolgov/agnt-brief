@@ -1,0 +1,18 @@
+{
+  "component": "IAugur-3",
+  "main_contract": "IAugur",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12f51386583ae7f2b8f3f8cb94b716e4f54fa4fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

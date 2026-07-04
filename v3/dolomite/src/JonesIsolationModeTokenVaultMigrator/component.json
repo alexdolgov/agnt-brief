@@ -1,0 +1,18 @@
+{
+  "component": "JonesIsolationModeTokenVaultMigrator",
+  "main_contract": "JonesIsolationModeTokenVaultMigrator",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b4ab9b50f451f58f41a36bca95d61dd02c384a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

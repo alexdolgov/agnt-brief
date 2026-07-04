@@ -1,0 +1,42 @@
+{
+  "component": "GasRelayPaymasterLib",
+  "main_contract": "GasRelayPaymasterLib",
+  "source_file_count": 20,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x190e7045caeb09459bba12bced1d133e10d63715",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x44654bc1107caaa3297ed5ccb70d9cdb445f5592",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9feea9ec855096e702a146ee39797927103dc7a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbedae7274c3717c7dec41738e00bedd9a4d01676",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "StabilityPoolFacet",
+  "main_contract": "StabilityPoolFacet",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x23e727e4919eb9f11200197014ab96d03008ccff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a3c724ee9603a7550499be73dc743b371811dd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

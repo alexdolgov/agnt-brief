@@ -1,0 +1,18 @@
+{
+  "component": "REDACTEDBondDepositoryRewardBased",
+  "main_contract": "REDACTEDBondDepositoryRewardBased",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0daf1a9c474a8ea595b5bdafe0b142bf894a1e09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

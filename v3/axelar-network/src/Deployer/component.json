@@ -1,0 +1,23 @@
+{
+  "component": "Deployer",
+  "main_contract": "Deployer",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/axelarnetwork/audits/blob/main/audits/2023-02%20Ackee%20Blockchain-3.pdf",
+    "https://github.com/axelarnetwork/audits/blob/main/audits/2023-12%20Ackee%20Blockchain.pdf",
+    "https://github.com/axelarnetwork/audits/blob/main/audits/2024-02%20Ackee%20Blockchain.pdf",
+    "https://github.com/axelarnetwork/audits/blob/main/audits/2024-04%20Ackee%20Blockchain%20ITS.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6513aedb4d1593ba12e50644401d976aebdc90d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

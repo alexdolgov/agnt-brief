@@ -1,0 +1,18 @@
+{
+  "component": "MappingTokenV2-2",
+  "main_contract": "MappingTokenV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x15b9ca9659f5dff2b7d35a98dd0790a3cbb3d445",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

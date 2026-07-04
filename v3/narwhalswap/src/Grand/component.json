@@ -1,0 +1,18 @@
+{
+  "component": "Grand",
+  "main_contract": "Grand",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x52d4f6e83b60e2c8ca39d0eef418d8cc380533e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

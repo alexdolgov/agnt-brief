@@ -1,0 +1,34 @@
+{
+  "component": "ShortPositionOperateFlashLoanFacet",
+  "main_contract": "ShortPositionOperateFlashLoanFacet",
+  "source_file_count": 59,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d35dc5948c948f131ddd9e3a341b99e45174a74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0c25521fb7dc1eead2f99132c852ac9c715e8d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce744c8b9069776f3367e5ad3585c9e5a7bdd448",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

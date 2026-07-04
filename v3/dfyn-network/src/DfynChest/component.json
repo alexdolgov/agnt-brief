@@ -1,0 +1,18 @@
+{
+  "component": "DfynChest",
+  "main_contract": "DfynChest",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

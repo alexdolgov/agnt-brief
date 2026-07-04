@@ -1,0 +1,22 @@
+{
+  "component": "UniversalRewardsDistributor",
+  "main_contract": "UniversalRewardsDistributor",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/8409a0ce-6c21-4cc9-8ef2-bd77ce7425af",
+    "https://github.com/morpho-org/metamorpho-v1.1/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf",
+    "https://github.com/morpho-org/metamorpho/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x330eefa8a787552dc5cad3c3ca644844b1e61ddb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

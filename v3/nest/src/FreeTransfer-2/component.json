@@ -1,0 +1,18 @@
+{
+  "component": "FreeTransfer-2",
+  "main_contract": "FreeTransfer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf13c8c237d161de539941655fe897e33264592bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

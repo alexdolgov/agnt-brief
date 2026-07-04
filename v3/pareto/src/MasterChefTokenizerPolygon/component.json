@@ -1,0 +1,18 @@
+{
+  "component": "MasterChefTokenizerPolygon",
+  "main_contract": "MasterChefTokenizerPolygon",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0ac74fe6f3c9123254418eefce37e4f7271a2b72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

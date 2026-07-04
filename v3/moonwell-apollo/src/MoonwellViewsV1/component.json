@@ -1,0 +1,58 @@
+{
+  "component": "MoonwellViewsV1",
+  "main_contract": "MoonwellViewsV1",
+  "source_file_count": 1,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x041b40b14692725ed152135c1f3ec50e018d70c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x0b3cbb8f38c30f3edfce6dec634c30def9f416e8",
+      "is_proxy": true,
+      "implementation_address": "0x041b40b14692725ed152135c1f3ec50e018d70c6",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x0ecf9d86e52e77b91c5476a59174ca453159b21b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xabfcb67f47b7c042b18df4f2bd9c0a0fae8dd170",
+      "is_proxy": true,
+      "implementation_address": "0x0ecf9d86e52e77b91c5476a59174ca453159b21b",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xd027757360228f12456d3a2422689b72060e8e00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xeb9c8f69c7ec7fec886c71b42a1c16c92edfb20c",
+      "is_proxy": true,
+      "implementation_address": "0xd027757360228f12456d3a2422689b72060e8e00",
+      "liveness": "live"
+    }
+  ]
+}

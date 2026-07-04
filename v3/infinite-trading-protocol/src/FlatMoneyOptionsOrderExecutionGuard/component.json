@@ -1,0 +1,18 @@
+{
+  "component": "FlatMoneyOptionsOrderExecutionGuard",
+  "main_contract": "FlatMoneyOptionsOrderExecutionGuard",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4779d0da8e0a8f8355c4d9b7a92a32555a634169",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

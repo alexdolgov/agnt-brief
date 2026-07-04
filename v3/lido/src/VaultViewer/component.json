@@ -1,0 +1,18 @@
+{
+  "component": "VaultViewer",
+  "main_contract": "VaultViewer",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x57dab476c3e37a2410076c9568d796e429fd8418",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

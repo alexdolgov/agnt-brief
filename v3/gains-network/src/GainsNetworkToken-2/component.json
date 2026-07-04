@@ -1,0 +1,18 @@
+{
+  "component": "GainsNetworkToken-2",
+  "main_contract": "GainsNetworkToken",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x18c11fd286c5ec11c3b683caa813b77f5163a122",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

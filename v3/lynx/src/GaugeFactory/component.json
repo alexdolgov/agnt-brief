@@ -1,0 +1,18 @@
+{
+  "component": "GaugeFactory",
+  "main_contract": "GaugeFactory",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x330b0aac13e389313e48f9b70e4d1531c71a5094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AssetListingProposalGenericExecutor",
+  "main_contract": "AssetListingProposalGenericExecutor",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62121b60a826b496f05bdd45dfe40c51fb549d97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

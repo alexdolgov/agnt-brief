@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawDepositControllerFactoryFlex",
+  "main_contract": "WithdrawDepositControllerFactoryFlex",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x616c3d07ec9780d40eaac97d2b71bbfb5c07239d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

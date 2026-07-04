@@ -1,0 +1,18 @@
+{
+  "component": "USDCmaUSDCJar",
+  "main_contract": "USDCmaUSDCJar",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x413cb0eb0a4d3a6812798a7204d89b543e4528d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

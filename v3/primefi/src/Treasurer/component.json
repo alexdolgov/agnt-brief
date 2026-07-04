@@ -1,0 +1,26 @@
+{
+  "component": "Treasurer",
+  "main_contract": "Treasurer",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb7a05a3a687ef09cc70e3f98b5f6a62f32e3ae58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd47b03ee6d86cf251ee7860fb2acf9f91b9fd4d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "EtherVistaFactory",
+  "main_contract": "EtherVistaFactory",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BusdToUsdAssimilator",
+  "main_contract": "BusdToUsdAssimilator",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7eba8752abb455fa0bfb11ce97a25d420f75cc35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4aabe1a428ea36cb836db2248b4ac68537ed108",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

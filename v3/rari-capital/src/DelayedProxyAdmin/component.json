@@ -1,0 +1,18 @@
+{
+  "component": "DelayedProxyAdmin",
+  "main_contract": "DelayedProxyAdmin",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c8eb57b44c1c6391fc7a8a0cf44d26896f92386",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

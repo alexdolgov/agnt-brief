@@ -1,0 +1,20 @@
+{
+  "component": "BeamChefV2",
+  "main_contract": "BeamChefV2",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/BeamSwapStaking"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x9d48141b234bb9528090e915085e0e6af5aad42c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

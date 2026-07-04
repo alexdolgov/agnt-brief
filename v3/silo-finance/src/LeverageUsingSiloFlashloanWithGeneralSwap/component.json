@@ -1,0 +1,36 @@
+{
+  "component": "LeverageUsingSiloFlashloanWithGeneralSwap",
+  "main_contract": "LeverageUsingSiloFlashloanWithGeneralSwap",
+  "source_file_count": 37,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.silo.finance/assets/files/Certora_Silo_Leverage_Formal_Verification_Report-98045fcc87e8f4ee46a92bca82d58c85.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x503628e0799ba076df56da7c0a51fe1426358d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5f0234063af1e490ab6ab50c26585162d1aaef65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7d5d347867f2b3766114e62e68ef7c8cfe9a8ca1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

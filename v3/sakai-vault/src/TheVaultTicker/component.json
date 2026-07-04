@@ -1,0 +1,18 @@
+{
+  "component": "TheVaultTicker",
+  "main_contract": "TheVaultTicker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x439596ccb842f2a556677ab62f9d985e00128fea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

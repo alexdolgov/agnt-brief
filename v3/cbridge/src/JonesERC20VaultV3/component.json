@@ -1,0 +1,26 @@
+{
+  "component": "JonesERC20VaultV3",
+  "main_contract": "JonesERC20VaultV3",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x42448fddcec02124cf6db19a9f91dea7bb0e88e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf46ce0c13577232d5f29d9bd78a9cab278755346",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DFEngine",
+  "main_contract": "DFEngine",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

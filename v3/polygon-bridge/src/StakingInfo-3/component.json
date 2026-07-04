@@ -1,0 +1,18 @@
+{
+  "component": "StakingInfo-3",
+  "main_contract": "StakingInfo",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x379e6aae389f284d5e54b2aa0beba8833c3fe308",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

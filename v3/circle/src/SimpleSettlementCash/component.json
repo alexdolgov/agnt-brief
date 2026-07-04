@@ -1,0 +1,18 @@
+{
+  "component": "SimpleSettlementCash",
+  "main_contract": "SimpleSettlementCash",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad250345078aba5d052c1a8040fd1c1595f4ea00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

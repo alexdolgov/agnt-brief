@@ -1,0 +1,21 @@
+{
+  "component": "EthBlocklistVault",
+  "main_contract": "EthBlocklistVault",
+  "source_file_count": 63,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakewise/v3-core/blob/main/audits/2024-06-Sigma-Prime.pdf",
+    "https://github.com/stakewise/v3-core/blob/main/audits/2025-09-ABDK.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00e3af59e2496d030e5b2c629784db284fd4cd3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CrvDepositor",
+  "main_contract": "CrvDepositor",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb96bce10480d2a8eb2995ee4f04a70d48997856a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

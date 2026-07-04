@@ -1,0 +1,26 @@
+{
+  "component": "WrappedFeed",
+  "main_contract": "WrappedFeed",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b4f2f26077441aaa0a45f957436bc72b7cf74c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99997ffe9ac2223921d8c6d06724cdd87093d662",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

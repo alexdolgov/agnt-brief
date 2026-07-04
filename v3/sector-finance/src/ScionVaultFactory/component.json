@@ -1,0 +1,18 @@
+{
+  "component": "ScionVaultFactory",
+  "main_contract": "ScionVaultFactory",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x813a1942d4be93e1b33764108b5273b4c8f6c739",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

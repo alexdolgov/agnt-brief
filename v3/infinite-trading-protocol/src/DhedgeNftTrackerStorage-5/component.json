@@ -1,0 +1,42 @@
+{
+  "component": "DhedgeNftTrackerStorage-5",
+  "main_contract": "DhedgeNftTrackerStorage",
+  "source_file_count": 59,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x01e7036e82804aa178a2023e8fbcc0649e879a0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x12c8b9217bdc20c638e9cef604420c1e6ac5f27d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d175ae43ff994f9dcbd074a4264538bf4ff3e34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc4c9baa81cdfa2d3b3e6d3f63f3effb1ba9af1fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

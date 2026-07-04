@@ -1,0 +1,26 @@
+{
+  "component": "ArbitrumBranchPort",
+  "main_contract": "ArbitrumBranchPort",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c453ef35986e1d8da22043ff00bf03ceb42e1f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79f4b04ffca54bc946aa0ef8e33ee723467f0192",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

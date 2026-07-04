@@ -1,0 +1,18 @@
+{
+  "component": "AngstromL2Factory",
+  "main_contract": "AngstromL2Factory",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0000000000fd3b85c30f942e8d878e858e69cd05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

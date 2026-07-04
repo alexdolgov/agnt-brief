@@ -1,0 +1,18 @@
+{
+  "component": "Coin98KYC",
+  "main_contract": "Coin98KYC",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x229775e8c94562fc49c49eb3c13a25293040d602",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

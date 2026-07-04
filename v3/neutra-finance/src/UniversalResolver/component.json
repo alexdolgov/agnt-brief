@@ -1,0 +1,18 @@
+{
+  "component": "UniversalResolver",
+  "main_contract": "UniversalResolver",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf8ffeb5007646509c0742ee49c15839946d96acd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

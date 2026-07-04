@@ -1,0 +1,18 @@
+{
+  "component": "xAveToken",
+  "main_contract": "xAveToken",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c66d4a60f9decddab32856e2e50dd50926438e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

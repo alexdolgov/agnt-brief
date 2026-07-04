@@ -1,0 +1,18 @@
+{
+  "component": "Collector",
+  "main_contract": "Collector",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x240fbe0790d5b25366bf88ee14ae8dde72bfe312",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

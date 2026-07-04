@@ -1,0 +1,20 @@
+{
+  "component": "ProxyAdmin",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/compound-iii-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02612d20cc087670a959bb12ca3c5fd56c8a3db3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

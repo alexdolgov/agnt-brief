@@ -1,0 +1,57 @@
+# @version 0.4.1
+
+
+# ============================================================================================
+# View functions
+# ============================================================================================
+
+
+@external
+@pure
+def decimals() -> uint8:
+    """
+    @notice Returns the number of decimals used by the price feed.
+    """
+    ...
+
+
+@external
+@pure
+def version() -> uint256:
+    """
+    @notice Returns the version of the price feed.
+    """
+    ...
+
+
+@external
+@pure
+def description() -> String[18]:
+    """
+    @notice Returns a description of the price feed.
+    """
+    ...
+
+
+@external
+@view
+def latestRoundData() -> (uint80, int256, uint256, uint256, uint80):
+    """
+    @notice Returns the latest round data from the price feed
+    @return The round ID
+    @return The price of ASF in USD
+    @return The timestamp of the start of the round
+    @return The timestamp of the last update
+    @return The round ID in which the price was answered
+    """
+    ...
+
+
+@external
+@view
+def latestAnswer() -> int256:
+    """
+    @notice Returns the latest price from the price feed
+    @return The price of ASF in USD
+    """
+    ...

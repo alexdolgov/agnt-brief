@@ -1,0 +1,18 @@
+{
+  "component": "MYCToken",
+  "main_contract": "MYCToken",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b13006980acb09645131b91d259eaa111eaf5ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UnifiedTradingBot",
+  "main_contract": "UnifiedTradingBot",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xce9d3f35ffb7f557e7d49be190fe2925d2117685",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

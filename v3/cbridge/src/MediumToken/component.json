@@ -1,0 +1,18 @@
+{
+  "component": "MediumToken",
+  "main_contract": "MediumToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdcb620d7e340c11919d580f1959d0c770f53d23b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

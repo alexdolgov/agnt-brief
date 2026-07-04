@@ -1,0 +1,18 @@
+{
+  "component": "BitcashPay",
+  "main_contract": "BitcashPay",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe047705117eb07e712c3d684f5b18e74577e83ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

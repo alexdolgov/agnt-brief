@@ -1,0 +1,18 @@
+{
+  "component": "StableLPMakerV2",
+  "main_contract": "StableLPMakerV2",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0x2df95be842cd68062ecdb7a30ca8dd400a8ab86b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

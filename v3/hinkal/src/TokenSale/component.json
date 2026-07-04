@@ -1,0 +1,18 @@
+{
+  "component": "TokenSale",
+  "main_contract": "TokenSale",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05f9955ac8236a163833c92b492c67632b582dab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

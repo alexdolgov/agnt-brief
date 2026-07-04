@@ -1,0 +1,18 @@
+{
+  "component": "TieredOwnership",
+  "main_contract": "TieredOwnership",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x25686cd3f579096551f3883e8b5f31063662f3df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

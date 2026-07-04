@@ -1,0 +1,18 @@
+{
+  "component": "BatchFactory",
+  "main_contract": "BatchFactory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1725738f3295d3f8eb68da864a2ade9c39194c01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

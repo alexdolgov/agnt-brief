@@ -1,0 +1,18 @@
+{
+  "component": "Locker",
+  "main_contract": "Locker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x14c5a2b562754ed412708a103fb9cb65b1b16494",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

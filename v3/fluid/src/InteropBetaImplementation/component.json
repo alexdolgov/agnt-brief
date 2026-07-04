@@ -1,0 +1,18 @@
+{
+  "component": "InteropBetaImplementation",
+  "main_contract": "InteropBetaImplementation",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25ef957d078941ea6d37a3670a63977869a12dca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

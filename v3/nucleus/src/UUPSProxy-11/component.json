@@ -1,0 +1,18 @@
+{
+  "component": "UUPSProxy-11",
+  "main_contract": "UUPSProxy",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5bb0175ae640d4f1a30bc6860aa0db92814d809b",
+      "is_proxy": true,
+      "implementation_address": "0x9b9608844275e186c92aaff115e5025fca9f22f4",
+      "liveness": "inactive"
+    }
+  ]
+}

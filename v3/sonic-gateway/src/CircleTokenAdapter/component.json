@@ -1,0 +1,42 @@
+{
+  "component": "CircleTokenAdapter",
+  "main_contract": "CircleTokenAdapter",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x25c049cadb9bb7cea794dba3b58dfdb1ece400f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6f0444a3915f63a2bf2677843d9a94c48de28d6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe6dcd54b4cde2e9e935c22f57ebbbaaf5cc3bc8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfac12d39f830b999d6ebbdf8ce9c7d975b33c59c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

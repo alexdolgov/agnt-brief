@@ -1,0 +1,18 @@
+{
+  "component": "KineUSD",
+  "main_contract": "KineUSD",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd4c220ccac0335334d425a90f58de7c667896a06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

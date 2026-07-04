@@ -1,0 +1,18 @@
+{
+  "component": "Getter",
+  "main_contract": "Getter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x016aaf67c352ee493d1e17177de0eabc3d76ab39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

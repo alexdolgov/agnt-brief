@@ -1,0 +1,18 @@
+{
+  "component": "SOGWReceiver",
+  "main_contract": "SOGWReceiver",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeec2d148be96020d276dde0bb8a23e1838d68d5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

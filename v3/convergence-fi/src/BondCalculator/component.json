@@ -1,0 +1,18 @@
+{
+  "component": "BondCalculator",
+  "main_contract": "BondCalculator",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8022d15c94f304d838c824cdcc5cd5eac50c9b3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

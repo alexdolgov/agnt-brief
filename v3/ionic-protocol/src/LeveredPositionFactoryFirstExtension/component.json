@@ -1,0 +1,26 @@
+{
+  "component": "LeveredPositionFactoryFirstExtension",
+  "main_contract": "LeveredPositionFactoryFirstExtension",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4e20eb2af6be30660323cb25204e071116737fea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4f824616c8b6bc81ed8743710cb69a0929c29b98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

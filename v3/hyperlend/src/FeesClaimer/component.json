@@ -1,0 +1,18 @@
+{
+  "component": "FeesClaimer",
+  "main_contract": "FeesClaimer",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3d0e463c00c32b26eedd684149e0749b1f52c107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

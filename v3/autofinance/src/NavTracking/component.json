@@ -1,0 +1,20 @@
+{
+  "component": "NavTracking",
+  "main_contract": "NavTracking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Certora/tokemak-v2-core-fv/blob/main/Report.md"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9d91184326b1b43cca0039523ed20a4bc08b2046",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

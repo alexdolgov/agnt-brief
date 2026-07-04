@@ -1,0 +1,18 @@
+{
+  "component": "UserWithdrawalManager",
+  "main_contract": "UserWithdrawalManager",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f9479226734ef4fd25b36470584f8e1ab620e0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

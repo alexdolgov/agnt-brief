@@ -1,0 +1,18 @@
+{
+  "component": "KOLTokenClaimer",
+  "main_contract": "KOLTokenClaimer",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cc8337b764d566c34ea0b2575a294239aeb3a83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

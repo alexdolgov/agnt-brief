@@ -1,0 +1,34 @@
+{
+  "component": "VotingManagerOptimised",
+  "main_contract": "VotingManagerOptimised",
+  "source_file_count": 11,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1702ddf00e4ff3ed892e569a26e0f1f6858e6fbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa0ebbded0e201a9c37f4bffbb831cb8db9fed0b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe7082a6ecd7218ad6c8af732acb2305b5e5589b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

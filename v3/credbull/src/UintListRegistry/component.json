@@ -1,0 +1,18 @@
+{
+  "component": "UintListRegistry",
+  "main_contract": "UintListRegistry",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6ddd871c1607348ebb5be250f882255390166519",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

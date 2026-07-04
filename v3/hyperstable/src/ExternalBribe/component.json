@@ -1,0 +1,18 @@
+{
+  "component": "ExternalBribe",
+  "main_contract": "ExternalBribe",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x11ce8455eae678d88e286f4695fb95a09a15e079",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

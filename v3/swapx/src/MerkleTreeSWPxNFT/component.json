@@ -1,0 +1,26 @@
+{
+  "component": "MerkleTreeSWPxNFT",
+  "main_contract": "MerkleTreeSWPxNFT",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x665bd48af6dd0a63d057d292c20ded0f4bdd8e5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfccbb2a092626bc8625417d22222c82d3648ad59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

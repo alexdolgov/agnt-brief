@@ -1,0 +1,26 @@
+{
+  "component": "ValasMetapoolRewardsToken",
+  "main_contract": "ValasMetapoolRewardsToken",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8087a94ffe6bcf08dc4b4ebb3d28b4ed75a792ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf6be0f52be5e68df4ed3ea7ccd569c16024c250d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

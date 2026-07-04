@@ -1,0 +1,18 @@
+{
+  "component": "DiamondERC165Init",
+  "main_contract": "DiamondERC165Init",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8533004ecb90151cd821dc2fafb78797d8fdd085",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

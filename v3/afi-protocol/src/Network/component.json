@@ -1,0 +1,18 @@
+{
+  "component": "Network",
+  "main_contract": "Network",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1457c085a609dc3997d99525d4764ccbacb64b93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

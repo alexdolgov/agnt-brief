@@ -1,0 +1,34 @@
+{
+  "component": "BorrowerOperations-2",
+  "main_contract": "BorrowerOperations",
+  "source_file_count": 51,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/d86632df-ab33-4448-8198-64955eae6712",
+    "https://certora.cdn.prismic.io/certora/Z1tLJJbqstJ98b8J_LiquityVerificationReport.pdf",
+    "https://dedaub.com/audits/liquity/liquity-v2-aug-28-2024",
+    "https://github.com/GalloDaSballo/bold-review",
+    "https://github.com/GalloDaSballo/bold-review/blob/main/bold-report.md",
+    "https://github.com/GalloDaSballo/bold-review/blob/main/bold.pdf",
+    "https://www.coinspect.com/doc/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20-%20Bold%20-%20v241231.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b74d043336678d2f62dae6595bc42dccabc3bb1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeaf3b36748d89d64ef1b6b3e1d7637c3e4745094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

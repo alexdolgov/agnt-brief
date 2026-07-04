@@ -1,0 +1,26 @@
+{
+  "component": "LibAssetData",
+  "main_contract": "LibAssetData",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdaed44b9c185ac30ecf0d81c492180ce74e87046",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf15fbafc74e10a9761b6aefd5d2239f098f8fb1e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

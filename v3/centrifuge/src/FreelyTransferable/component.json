@@ -1,0 +1,18 @@
+{
+  "component": "FreelyTransferable",
+  "main_contract": "FreelyTransferable",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a9b9c14851baf7ad19f26607c9171ca1e7a1a61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

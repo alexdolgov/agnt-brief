@@ -1,0 +1,18 @@
+{
+  "component": "PollyToken",
+  "main_contract": "PollyToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x065f4e71a09d060f349c2840a792189b431945d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AdaptiveCurveIrm",
+  "main_contract": "AdaptiveCurveIrm",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x172e1f86277c9e7e2ec175c6b3d1d47576c11b3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

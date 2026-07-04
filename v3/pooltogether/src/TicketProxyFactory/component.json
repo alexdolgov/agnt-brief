@@ -1,0 +1,34 @@
+{
+  "component": "TicketProxyFactory",
+  "main_contract": "TicketProxyFactory",
+  "source_file_count": 20,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x259d46f1559e4d41faf61d858b4b439d3962fc57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x58af4554c0db496efdf93bb344ec513c5627efb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd08a60b0a41a1282efcceef13ce187f848549170",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

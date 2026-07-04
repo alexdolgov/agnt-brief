@@ -1,0 +1,18 @@
+{
+  "component": "ElkTeamNFT",
+  "main_contract": "ElkTeamNFT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3e75edd8d85c059ad8e365908d807f361c8844c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

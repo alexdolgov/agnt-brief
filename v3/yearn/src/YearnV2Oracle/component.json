@@ -1,0 +1,18 @@
+{
+  "component": "YearnV2Oracle",
+  "main_contract": "YearnV2Oracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02f82f30c8d45373619ba39344304731785b704a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

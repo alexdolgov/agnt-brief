@@ -1,0 +1,18 @@
+{
+  "component": "JumpRateModel-2",
+  "main_contract": "JumpRateModel",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x0b5f126fa3116dbb769f6b8404d1a78c54c6acf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

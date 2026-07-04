@@ -1,0 +1,18 @@
+{
+  "component": "CErc721SandboxDelegator",
+  "main_contract": "CErc721SandboxDelegator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d60134fa81876f5afbad18a7520aa8596ba07ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

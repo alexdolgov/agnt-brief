@@ -1,0 +1,18 @@
+{
+  "component": "FactoryLib",
+  "main_contract": "FactoryLib",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0ae170a7fe06ecb8c961563407686eb3704c0291",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

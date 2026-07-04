@@ -1,0 +1,18 @@
+{
+  "component": "WrappedMNT",
+  "main_contract": "WrappedMNT",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x156b36ec68fdbf84a925230ba96cb1ca4c4bde45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

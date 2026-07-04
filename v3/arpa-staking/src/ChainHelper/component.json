@@ -1,0 +1,18 @@
+{
+  "component": "ChainHelper",
+  "main_contract": "ChainHelper",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5de499681c16bdd8e235cb6dba71bb7fc2a44fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

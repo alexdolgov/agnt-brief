@@ -1,0 +1,18 @@
+{
+  "component": "VeBalGrant",
+  "main_contract": "VeBalGrant",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x89f67f3054bfd662971854190dbc18dcabb416f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

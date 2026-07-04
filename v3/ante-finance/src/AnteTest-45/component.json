@@ -1,0 +1,18 @@
+{
+  "component": "AnteTest-45",
+  "main_contract": "AnteTest",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x40107f542c6d7d9d9c9f7c46fb8874ef59fd3c65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

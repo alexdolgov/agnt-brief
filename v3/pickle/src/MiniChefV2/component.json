@@ -1,0 +1,18 @@
+{
+  "component": "MiniChefV2",
+  "main_contract": "MiniChefV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x20b2a3fc7b13ca0ccf7af81a68a14cb3116e8749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

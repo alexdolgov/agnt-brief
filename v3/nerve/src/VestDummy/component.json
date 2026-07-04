@@ -1,0 +1,18 @@
+{
+  "component": "VestDummy",
+  "main_contract": "VestDummy",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7dcc26c1ff0c7dac712c79535c6aee9ee00c7630",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AsyncIsolationModeWrapperTraderImpl",
+  "main_contract": "AsyncIsolationModeWrapperTraderImpl",
+  "source_file_count": 187,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x51fbd497b53b4ffe144399a3029479af2707f2ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

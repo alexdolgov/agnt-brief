@@ -1,0 +1,28 @@
+{
+  "component": "BEP20",
+  "main_contract": "BEP20",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/revault-network"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3cf362d6373aea38172fc3cff6c04655bdff089d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4fdd92bd67acf0676bfc45ab7168b3996f7b4a3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

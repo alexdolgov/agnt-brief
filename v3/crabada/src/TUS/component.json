@@ -1,0 +1,18 @@
+{
+  "component": "TUS",
+  "main_contract": "TUS",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf693248f96fe03422fea95ac0afbbbc4a8fdd172",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AllocationExchange",
+  "main_contract": "AllocationExchange",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c5b5083036ed7c39fe8d8368c24782fdaa52d6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

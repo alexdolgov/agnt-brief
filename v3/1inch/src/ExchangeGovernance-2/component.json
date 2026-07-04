@@ -1,0 +1,18 @@
+{
+  "component": "ExchangeGovernance-2",
+  "main_contract": "ExchangeGovernance",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32d12a25f539e341089050e2d26794f041fc9df8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

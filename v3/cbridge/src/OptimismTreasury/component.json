@@ -1,0 +1,18 @@
+{
+  "component": "OptimismTreasury",
+  "main_contract": "OptimismTreasury",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x55c1688587e6dfd52e44bf8b7028a8f7525296e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "UniswapV3Pool",
+  "main_contract": "UniswapV3Pool",
+  "source_file_count": 96,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Uniswap/uniswap-v3-core/blob/main/audits/abdk/audit.pdf",
+    "https://github.com/Uniswap/uniswap-v3-core/blob/main/audits/tob/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x055284a4ca6532ecc219ac06b577d540c686669d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

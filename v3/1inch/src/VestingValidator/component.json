@@ -1,0 +1,18 @@
+{
+  "component": "VestingValidator",
+  "main_contract": "VestingValidator",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0df9a5fe824d1d52caadd2b7edb2859e24a6f942",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

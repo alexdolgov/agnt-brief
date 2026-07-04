@@ -1,0 +1,18 @@
+{
+  "component": "TierRouter",
+  "main_contract": "TierRouter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6e997f1f22c40ba37f633b08f3b07e10ed43155a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

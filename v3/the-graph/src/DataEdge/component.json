@@ -1,0 +1,18 @@
+{
+  "component": "DataEdge",
+  "main_contract": "DataEdge",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xade906194c923b28f03f48bc5d9d987aae21ffab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

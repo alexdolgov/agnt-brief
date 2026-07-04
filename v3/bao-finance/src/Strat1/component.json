@@ -1,0 +1,18 @@
+{
+  "component": "Strat1",
+  "main_contract": "Strat1",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1a40a8c7d965f3929e0c56bb301ebe82f5ff0d48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

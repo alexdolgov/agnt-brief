@@ -1,0 +1,18 @@
+{
+  "component": "RewardManagerL2Arbitrum",
+  "main_contract": "RewardManagerL2Arbitrum",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Eul",
+  "main_contract": "Eul",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CanonicalView",
+  "main_contract": "CanonicalView",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc4990b6607f456477d07c4dd80fb35258ac0b57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

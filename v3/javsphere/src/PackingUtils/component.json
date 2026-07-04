@@ -1,0 +1,18 @@
+{
+  "component": "PackingUtils",
+  "main_contract": "PackingUtils",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x09542e14956b269e2534da26ad60586980ef5a27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

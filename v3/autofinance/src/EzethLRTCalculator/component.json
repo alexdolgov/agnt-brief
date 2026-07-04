@@ -1,0 +1,26 @@
+{
+  "component": "EzethLRTCalculator",
+  "main_contract": "EzethLRTCalculator",
+  "source_file_count": 64,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa84cc1d5ad1cdd5faeb15aa3f4ac5935d4b263d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3e73139d6b1a2ce22c34897423ab56ee925b459",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

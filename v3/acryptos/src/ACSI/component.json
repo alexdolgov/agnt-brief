@@ -1,0 +1,20 @@
+{
+  "component": "ACSI",
+  "main_contract": "ACSI",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210128-defiyield.info.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5b17b4d5e4009b5c43e3e3d63a5229f794cba389",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

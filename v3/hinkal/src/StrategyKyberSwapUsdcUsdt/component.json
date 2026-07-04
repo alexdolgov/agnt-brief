@@ -1,0 +1,18 @@
+{
+  "component": "StrategyKyberSwapUsdcUsdt",
+  "main_contract": "StrategyKyberSwapUsdcUsdt",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x062d8e9189230601329a0ca09fe8de691a3e92d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

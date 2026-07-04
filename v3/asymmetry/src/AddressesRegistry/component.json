@@ -1,0 +1,61 @@
+{
+  "component": "AddressesRegistry",
+  "main_contract": "AddressesRegistry",
+  "source_file_count": 42,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/d86632df-ab33-4448-8198-64955eae6712",
+    "https://github.com/GalloDaSballo/bold-review"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ad1c302203f0fbb6ca34641bdfef0bf4182377c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c7b6c6a60ae2016199d393695667c1482719c82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c5a85a3fd181857d02baff169d1e1cb220ead6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x330a0fdfc1818be022fedce96a041293e16dc6d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3414bd84dff0900a9046a987f4df2e0ef08fa1ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd9f75471990041a3e7c22872c814a273485e999",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "JPEGOraclesAggregator",
+  "main_contract": "JPEGOraclesAggregator",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0eb4c7309a100e95b69e4a39af6bf84cea305e7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

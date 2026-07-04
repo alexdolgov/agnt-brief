@@ -1,0 +1,26 @@
+{
+  "component": "ERC1155PresetMinterSupply",
+  "main_contract": "ERC1155PresetMinterSupply",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbae47cd0e2f0f687f4ef78f972af13f6cf8f2b76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc044613b702ed11567a38108703ac5478a3f7db8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

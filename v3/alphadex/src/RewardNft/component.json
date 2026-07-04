@@ -1,0 +1,18 @@
+{
+  "component": "RewardNft",
+  "main_contract": "RewardNft",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xaa6535409e076f203e0f431c518b998d85266b5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

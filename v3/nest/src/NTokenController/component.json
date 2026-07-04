@@ -1,0 +1,26 @@
+{
+  "component": "NTokenController",
+  "main_contract": "NTokenController",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1cf07859ed5d5f95aeb1474db5f7ae2cc0fc6481",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f26aae41dccd5061bbae645b4acf34ba8332a14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

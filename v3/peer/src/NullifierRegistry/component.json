@@ -1,0 +1,18 @@
+{
+  "component": "NullifierRegistry",
+  "main_contract": "NullifierRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x27b4a4542af8eefb7ebf574a562c5d4daa17137f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

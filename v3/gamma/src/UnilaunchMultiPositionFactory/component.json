@@ -1,0 +1,50 @@
+{
+  "component": "UnilaunchMultiPositionFactory",
+  "main_contract": "UnilaunchMultiPositionFactory",
+  "source_file_count": 77,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x0a79c4fdc717f5551a56b964b5c58f0b75707d26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x317a4376658de808e6455f4aac74650a33c51db2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x446e545ff3a85b0e807fc54b922d4167b13c0d13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xdb7b4fb60ea23b3fd57d1b4c6132a1f99dfc6f01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xf3581346610400f293ec7f4bfdd65cdd8a7caead",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

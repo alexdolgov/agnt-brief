@@ -1,0 +1,18 @@
+{
+  "component": "TimeswapV2PeripheryNoDexQuoterLendGivenPrincipal",
+  "main_contract": "TimeswapV2PeripheryNoDexQuoterLendGivenPrincipal",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb22b60c5e9ad3c2ffcef707cfc47085be7a18cf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RiscZeroMockVerifier",
+  "main_contract": "RiscZeroMockVerifier",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x222e6a80dd8cf2315998c36d50b093ff62c5cbfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TermVaultsKeeper",
+  "main_contract": "TermVaultsKeeper",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e58bd3c701a2bf48c4e184318e0b5f9591be5cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

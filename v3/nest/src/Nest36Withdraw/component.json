@@ -1,0 +1,18 @@
+{
+  "component": "Nest36Withdraw",
+  "main_contract": "Nest36Withdraw",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b8b56ca96c865bfaa27be79cd5513cb0b228670",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

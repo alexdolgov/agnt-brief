@@ -1,0 +1,18 @@
+{
+  "component": "PythStructs-6",
+  "main_contract": "PythStructs",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x63f15cbf4dc0f41d0d16a89abcbb01308ff40f71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

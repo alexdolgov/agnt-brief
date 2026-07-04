@@ -1,0 +1,18 @@
+{
+  "component": "SequencerInbox",
+  "main_contract": "SequencerInbox",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31da64d19cd31a19cd09f4070366fe2144792cf7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

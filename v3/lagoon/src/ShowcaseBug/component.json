@@ -1,0 +1,18 @@
+{
+  "component": "ShowcaseBug",
+  "main_contract": "ShowcaseBug",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x23fbda54849e8904154c8f8436a59b95b1d397cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

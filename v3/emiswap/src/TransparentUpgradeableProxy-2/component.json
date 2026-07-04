@@ -1,0 +1,26 @@
+{
+  "component": "TransparentUpgradeableProxy-2",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0065f29d7c5bd66510c2d11a6f124ab1b2df6224",
+      "is_proxy": true,
+      "implementation_address": "0xc235d7c9493c4fc579de7583142c5c24351cc22b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc235d7c9493c4fc579de7583142c5c24351cc22b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

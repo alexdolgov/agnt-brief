@@ -1,0 +1,18 @@
+{
+  "component": "VaultManagerLib",
+  "main_contract": "VaultManagerLib",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1fb1f5f63d938a5ff0bd2dfbad9f3f358a994548",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

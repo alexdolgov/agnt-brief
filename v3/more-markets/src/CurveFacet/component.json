@@ -1,0 +1,18 @@
+{
+  "component": "CurveFacet",
+  "main_contract": "CurveFacet",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00f8abfe17b4c096440a647bb0549f326e08c897",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

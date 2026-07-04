@@ -1,0 +1,18 @@
+{
+  "component": "AerodromeRouterAdapter",
+  "main_contract": "AerodromeRouterAdapter",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x16a54ae47b7e2eea0ed60438ab5d970c284ffcf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

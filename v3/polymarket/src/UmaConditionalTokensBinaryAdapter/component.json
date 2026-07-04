@@ -1,0 +1,18 @@
+{
+  "component": "UmaConditionalTokensBinaryAdapter",
+  "main_contract": "UmaConditionalTokensBinaryAdapter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcb1822859cef82cd2eb4e6276c7916e692995130",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

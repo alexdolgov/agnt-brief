@@ -1,0 +1,26 @@
+{
+  "component": "BridgeInterfaceCondition",
+  "main_contract": "BridgeInterfaceCondition",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2f1d40016cad2fa0dbe4a505616ed42315aff748",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3ca647d0f3e6ed4ccd35d80216ad18a9e81d6096",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

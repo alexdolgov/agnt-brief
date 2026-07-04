@@ -1,0 +1,44 @@
+{
+  "component": "NFTXSimpleFeeDistributor",
+  "main_contract": "NFTXSimpleFeeDistributor",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://268710349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MObsGdLeFkbdDe8_KiT-2910905616%2Fuploads%2FxxMQXacJ9gspSb09eUCz%2FToB_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06c36fb81ee037139b1b44406ef70e565e79d8e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ef372b6a2f8bb030760261b858b6c50e92d1680",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30957783ee7cc09fcf964ce9e56422f7beaf562d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd8a76dc204e461db5da4f38687adc9cc5ae4a86",
+      "is_proxy": true,
+      "implementation_address": "0x0ef372b6a2f8bb030760261b858b6c50e92d1680",
+      "liveness": "live"
+    }
+  ]
+}

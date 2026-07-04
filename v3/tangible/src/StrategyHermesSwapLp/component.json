@@ -1,0 +1,26 @@
+{
+  "component": "StrategyHermesSwapLp",
+  "main_contract": "StrategyHermesSwapLp",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x13c69098f256126f680b89a867914502f77f669e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x254a5eef7ef133fe066b1ba6017ff3976f7220f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

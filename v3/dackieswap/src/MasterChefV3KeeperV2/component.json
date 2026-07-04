@@ -1,0 +1,34 @@
+{
+  "component": "MasterChefV3KeeperV2",
+  "main_contract": "MasterChefV3KeeperV2",
+  "source_file_count": 16,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x000b484e6f25eb9daec9f8cf5be79f44f350b2e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x71bfd74e61e75c1302208b554160885cf5fc4af2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x7e89ad4a37cec2acd48e39f223dabad2e98cb36b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

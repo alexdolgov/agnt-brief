@@ -1,0 +1,18 @@
+{
+  "component": "AirPuffVaultMNT",
+  "main_contract": "AirPuffVaultMNT",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1002c6e1dc4c593b7f980e5566b453f730cb4cec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

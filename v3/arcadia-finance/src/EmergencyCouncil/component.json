@@ -1,0 +1,18 @@
+{
+  "component": "EmergencyCouncil",
+  "main_contract": "EmergencyCouncil",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf7a15f27533c2db26341220c1e0b939b56defeda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

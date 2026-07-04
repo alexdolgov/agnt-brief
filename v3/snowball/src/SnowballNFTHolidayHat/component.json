@@ -1,0 +1,18 @@
+{
+  "component": "SnowballNFTHolidayHat",
+  "main_contract": "SnowballNFTHolidayHat",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9ff1918d212c435ad1f1734e9c4dc2db835161af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

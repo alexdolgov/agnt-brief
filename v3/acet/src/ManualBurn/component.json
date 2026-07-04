@@ -1,0 +1,18 @@
+{
+  "component": "ManualBurn",
+  "main_contract": "ManualBurn",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf27e5ce50d0eb9bdb626523298d68d3b6ca56222",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

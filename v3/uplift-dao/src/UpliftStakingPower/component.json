@@ -1,0 +1,18 @@
+{
+  "component": "UpliftStakingPower",
+  "main_contract": "UpliftStakingPower",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xad3226df971b0f3c33c97a5cb9a02be6d0ab5614",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

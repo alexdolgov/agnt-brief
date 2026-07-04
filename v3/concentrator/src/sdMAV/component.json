@@ -1,0 +1,18 @@
+{
+  "component": "sdMAV",
+  "main_contract": "sdMAV",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50687515e93c43964733282f9db8683f80bb02f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

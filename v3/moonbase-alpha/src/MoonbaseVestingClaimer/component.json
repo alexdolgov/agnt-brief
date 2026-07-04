@@ -1,0 +1,18 @@
+{
+  "component": "MoonbaseVestingClaimer",
+  "main_contract": "MoonbaseVestingClaimer",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe637de6918e3aea4fe541d877ae5b384d3d301d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

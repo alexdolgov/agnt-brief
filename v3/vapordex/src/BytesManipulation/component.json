@@ -1,0 +1,18 @@
+{
+  "component": "BytesManipulation",
+  "main_contract": "BytesManipulation",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x26b794235422e7c6f3ac6c717b10598c2a144203",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

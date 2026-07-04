@@ -1,0 +1,18 @@
+{
+  "component": "ChronicleOraclePriceAdapter",
+  "main_contract": "ChronicleOraclePriceAdapter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcf1053dec1a7eff5710b9420179d089f8461da75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

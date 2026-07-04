@@ -1,0 +1,18 @@
+{
+  "component": "OwnedRegistrar",
+  "main_contract": "OwnedRegistrar",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa86ba3b6d83139a49b649c05dbb69e0726db69cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AuctionRebalanceModuleV1",
+  "main_contract": "AuctionRebalanceModuleV1",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59d55d53a715b3b4581c52098bcb4075c2941dba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Roles",
+  "main_contract": "Roles",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x14b3bd93d11a1f97c8e11940d02daf5e52f66c47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

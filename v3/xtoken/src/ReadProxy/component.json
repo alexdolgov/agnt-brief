@@ -1,0 +1,18 @@
+{
+  "component": "ReadProxy",
+  "main_contract": "ReadProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e3b31eb0e5cb73641ee1e65e7dcefe520ba3ef2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

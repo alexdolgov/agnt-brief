@@ -1,0 +1,68 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 4,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TechRate/Smart-Contract-Audits/blob/main/April_2023/HashDAO.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x019622fb05dd0c80751798949e795ff5d5e3a61f",
+      "is_proxy": true,
+      "implementation_address": "0x8c265891c4d9c0d63432a0a14af41fb20de7b845",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x90d11b8de2b30a84cb7e6cf6188581ec08b1bf82",
+      "is_proxy": true,
+      "implementation_address": "0x278fe1be6202fa12a4c18062a69bcfb42ad1f398",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x92aee27dcc5373423d13028b1b2bf4ef61e6a39d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x958882fda110febd41536e45034bebff2a815006",
+      "is_proxy": true,
+      "implementation_address": "0x0f48ac8272edd41e5f21a85ffea0285ff0d28ee5",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x99fe96b9eea24b4e71ac1a56f2c1886bbca22540",
+      "is_proxy": true,
+      "implementation_address": "0x129a949185836e1a52be715abb5aca54cb7dcd2c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb557c071bae7dc3aa2366cd0fc0477b45eb696f1",
+      "is_proxy": true,
+      "implementation_address": "0x5905e0eca5f93d8359621feb7c2932d384141c76",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcd7a1b22d239a4395dd8ab8f5dbcdcee2132dbc4",
+      "is_proxy": true,
+      "implementation_address": "0x8c265891c4d9c0d63432a0a14af41fb20de7b845",
+      "liveness": "live"
+    }
+  ]
+}

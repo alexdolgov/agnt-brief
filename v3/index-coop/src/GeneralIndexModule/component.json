@@ -1,0 +1,26 @@
+{
+  "component": "GeneralIndexModule",
+  "main_contract": "GeneralIndexModule",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5be31fa95cdb9949436ffe8e270303b57cceee67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7b24b155a64120443019ce092cc36d2df33f6e8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

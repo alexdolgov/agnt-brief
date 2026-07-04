@@ -1,0 +1,18 @@
+{
+  "component": "CollateralState",
+  "main_contract": "CollateralState",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04d9231b1fff88464a3d26fd91a1ba0b24796107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

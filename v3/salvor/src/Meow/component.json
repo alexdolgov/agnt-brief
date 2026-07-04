@@ -1,0 +1,18 @@
+{
+  "component": "Meow",
+  "main_contract": "Meow",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8ad25b0083c9879942a64f00f20a70d3278f6187",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

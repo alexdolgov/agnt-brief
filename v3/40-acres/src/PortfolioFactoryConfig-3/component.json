@@ -1,0 +1,18 @@
+{
+  "component": "PortfolioFactoryConfig-3",
+  "main_contract": "PortfolioFactoryConfig",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd394c7769b0872082fa5bccc9cfbca528de777c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

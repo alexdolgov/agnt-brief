@@ -1,0 +1,18 @@
+{
+  "component": "UniProxy",
+  "main_contract": "UniProxy",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1dceb477e6216ae03252c359d48580822600c161",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

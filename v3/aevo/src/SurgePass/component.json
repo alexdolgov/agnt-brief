@@ -1,0 +1,18 @@
+{
+  "component": "SurgePass",
+  "main_contract": "SurgePass",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x35479b023e508ee9a7b533dbb5b516bb6875f937",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

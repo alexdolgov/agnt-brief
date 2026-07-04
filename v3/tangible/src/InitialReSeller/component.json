@@ -1,0 +1,34 @@
+{
+  "component": "InitialReSeller",
+  "main_contract": "InitialReSeller",
+  "source_file_count": 18,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x03a744aba34a19bec5d5ca2cfa2cc9452486af56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x06c82b244eceec44abe59ddd83a6afb0e8283afe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5b29837b2c7f8ed9c1e7efc0b5fffd59b4d2ae4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AVtest",
+  "main_contract": "AVtest",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7a16a48435d90580e9f54ff83b472413dfafe846",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

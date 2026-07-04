@@ -1,0 +1,18 @@
+{
+  "component": "MockOracle",
+  "main_contract": "MockOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ff7495004c01f6550ff753b0b726bfae2b5e984",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

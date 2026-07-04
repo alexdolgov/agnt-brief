@@ -1,0 +1,18 @@
+{
+  "component": "UbeMarketingVesting",
+  "main_contract": "UbeMarketingVesting",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xd733bc0acd4583ffa0816d92ee7ef417370d0c5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

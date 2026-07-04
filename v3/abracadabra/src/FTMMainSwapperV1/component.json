@@ -1,0 +1,18 @@
+{
+  "component": "FTMMainSwapperV1",
+  "main_contract": "FTMMainSwapperV1",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1847af8f3292ac831066bd288889596a1fd09bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

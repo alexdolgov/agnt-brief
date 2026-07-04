@@ -1,0 +1,18 @@
+{
+  "component": "FeeManager-4",
+  "main_contract": "FeeManager",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6d9bd6796bdaf9b391fac2a2d34bae9c1c3c1c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

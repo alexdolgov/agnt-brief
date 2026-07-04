@@ -1,0 +1,153 @@
+// SPDX-License-Identifier: AGPL-3.0
+pragma solidity ^0.8.0;
+
+import {ERC20} from "solmate/tokens/ERC20.sol";
+import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+
+contract CurveErrorCodes {
+    enum Error {
+        OK, // No error
+        INVALID_NUMITEMS, // The numItem value is 0
+        SPOT_PRICE_OVERFLOW, // The updated spot price doesn't fit into 128 bits
+        DELTA_OVERFLOW, // The updated delta doesn't fit into 128 bits
+        SPOT_PRICE_UNDERFLOW // The updated spot price goes too low
+    }
+}
+
+interface ILSSVMPair {
+    enum PoolType {
+        TOKEN,
+        NFT,
+        TRADE
+    }
+
+    function nft() external view returns (address);
+
+    function poolType() external view returns (PoolType);
+
+    function pairVariant()
+        external
+        pure
+        returns (ILSSVMPairFactory.PairVariant);
+
+    function token() external view returns (ERC20);
+
+    function nftId() external view returns (uint256);
+
+    function getAllIds() external view returns (uint256[] memory);
+
+    function changeAssetRecipient(address payable newRecipient) external;
+
+    function transferOwnership(
+        address newOwner,
+        bytes calldata data
+    ) external payable;
+
+    function swapTokenForSpecificNFTs(
+        uint256[] calldata nftIds,
+        uint256 maxExpectedTokenInput,
+        address nftRecipient,
+        bool isRouter,
+        address routerCaller
+    ) external payable returns (uint256 amountUsed);
+
+    function swapNFTsForToken(
+        uint256[] calldata nftIds,
+        uint256 minExpectedTokenOutput,
+        address payable tokenRecipient,
+        bool isRouter,
+        address routerCaller
+    ) external returns (uint256 outputAmount);
+
+    function getBuyNFTQuote(
+        uint256 assetId,
+        uint256 numNFTs
+    )
+        external
+        view
+        returns (
+            CurveErrorCodes.Error error,
+            uint256 newSpotPrice,
+            uint256 newDelta,
+            uint256 inputAmount,
+            uint256 protocolFee,
+            uint256 royaltyAmount
+        );
+
+    function getSellNFTQuote(
+        uint256 assetId,
+        uint256 numNFTs
+    )
+        external
+        view
+        returns (
+            CurveErrorCodes.Error error,
+            uint256 newSpotPrice,
+            uint256 newDelta,
+            uint256 inputAmount,
+            uint256 protocolFee,
+            uint256 royaltyAmount
+        );
+}
+
+interface ILSSVMPairFactory {
+    enum PairVariant {
+        ERC721_ETH,
+        ERC721_ERC20,
+        ERC1155_ETH,
+        ERC1155_ERC20
+    }
+
+    struct CreateERC721ERC20PairParams {
+        ERC20 token;
+        IERC721 nft;
+        ICurve bondingCurve;
+        address payable assetRecipient;
+        ILSSVMPair.PoolType poolType;
+        uint128 delta;
+        uint96 fee;
+        uint128 spotPrice;
+        address propertyChecker;
+        uint256[] initialNFTIDs;
+        uint256 initialTokenBalance;
+        address hookAddress;
+        address referralAddress;
+    }
+
+    function createPairERC721ERC20(
+        ILSSVMPairFactory.CreateERC721ERC20PairParams calldata params
+    ) external returns (ILSSVMPair pair);
+}
+
+interface ICurve {
+    // Only used as a parameter for pair creation
+}
+
+interface IAllowListHook {
+    function updateAllowListWithNewRouter(address _newRouter) external;
+}
+
+interface IVRFConsumer {
+    function requestRandomWords(
+        uint32 numWords
+    ) external returns (uint256 requestId);
+}
+
+interface ISudoVRFRouter {
+    function buyNFTsCallback(
+        uint256 requestId,
+        uint256[] calldata randomWords
+    ) external;
+
+    function allowedSenders(address) external view returns (bool);
+}
+
+interface ISudoFactoryWrapper {
+    function isPair(address pair) external view returns (bool);
+
+    function isRandomPair(address pair) external view returns (bool);
+
+    function getUnlockTime(address pair) external view returns (uint256);
+
+    function getPairCreator(address pair) external view returns (address);
+}

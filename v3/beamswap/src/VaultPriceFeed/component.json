@@ -1,0 +1,18 @@
+{
+  "component": "VaultPriceFeed",
+  "main_contract": "VaultPriceFeed",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xe93a4dc9024fc07da8c3ad45961e8f5eef360f4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

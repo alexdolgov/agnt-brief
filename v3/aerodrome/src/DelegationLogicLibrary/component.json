@@ -1,0 +1,18 @@
+{
+  "component": "DelegationLogicLibrary",
+  "main_contract": "DelegationLogicLibrary",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd6e6d57d0627aae127743c79bc795f836431d59f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

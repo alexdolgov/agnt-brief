@@ -1,0 +1,18 @@
+{
+  "component": "ERC20",
+  "main_contract": "ERC20",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x18bd26b4763912176a26b422b3f6677901896048",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

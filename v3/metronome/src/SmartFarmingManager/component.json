@@ -1,0 +1,18 @@
+{
+  "component": "SmartFarmingManager",
+  "main_contract": "SmartFarmingManager",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0d29f7cd7ec338528f4330c5a7ff6d92acf5819a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

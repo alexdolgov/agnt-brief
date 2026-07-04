@@ -1,0 +1,18 @@
+{
+  "component": "REMEDY",
+  "main_contract": "REMEDY",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc15504ed6e2bb2460750150433320068500ede64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

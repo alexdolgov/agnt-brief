@@ -1,0 +1,18 @@
+{
+  "component": "GaugeAdder",
+  "main_contract": "GaugeAdder",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ffb7b215ae7f088ec2530c7aa8e1b24e398f26a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

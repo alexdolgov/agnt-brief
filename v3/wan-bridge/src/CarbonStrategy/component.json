@@ -1,0 +1,18 @@
+{
+  "component": "CarbonStrategy",
+  "main_contract": "CarbonStrategy",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbb6121d3c929360ade1c1d4b515cf5c2fc331fc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC1967Upgrade-7",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa8868579c6152bbbb8db46606354b56bfd8819b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

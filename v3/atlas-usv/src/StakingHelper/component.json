@@ -1,0 +1,18 @@
+{
+  "component": "StakingHelper",
+  "main_contract": "StakingHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb56969ec8c212aa1be233440fb143b4391bed5fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

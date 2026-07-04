@@ -1,0 +1,18 @@
+{
+  "component": "TrancheClassDiscountStrategy",
+  "main_contract": "TrancheClassDiscountStrategy",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c85fb101192e3b969c03533a3be0b3d5f764cef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

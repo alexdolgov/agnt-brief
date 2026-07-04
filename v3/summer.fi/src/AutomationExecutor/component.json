@@ -1,0 +1,18 @@
+{
+  "component": "AutomationExecutor",
+  "main_contract": "AutomationExecutor",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1631faf05bffa2200698d71893667c9de1e221fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

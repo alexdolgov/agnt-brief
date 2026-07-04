@@ -1,0 +1,18 @@
+{
+  "component": "esVKAToken",
+  "main_contract": "esVKAToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x95b3f9797077ddca971ab8524b439553a220eb2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

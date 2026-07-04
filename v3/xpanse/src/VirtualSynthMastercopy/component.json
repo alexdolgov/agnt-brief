@@ -1,0 +1,18 @@
+{
+  "component": "VirtualSynthMastercopy",
+  "main_contract": "VirtualSynthMastercopy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcb09c97a6c21b12e2f309f921626f252a31fcbed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "FXSStrategy",
+  "main_contract": "FXSStrategy",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pessimistic-io/audits/blob/main/Locus%20Security%20Analysis%20by%20Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0de43faa33a21273867b390dc02152c2872046a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x854f178112008143014ecffd4059e3f913a47b40",
+      "is_proxy": true,
+      "implementation_address": "0x0de43faa33a21273867b390dc02152c2872046a8",
+      "liveness": "live"
+    }
+  ]
+}

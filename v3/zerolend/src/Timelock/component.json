@@ -1,0 +1,28 @@
+{
+  "component": "Timelock",
+  "main_contract": "Timelock",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/zerolend/audits/blob/main/mundus/zerolend_report_depcheck_final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x4d580ff0867a198a25b1d0f544e45542c04f6fd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x661f2b71324e5aaf9bc6f3d4c3b75fa2faa225c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

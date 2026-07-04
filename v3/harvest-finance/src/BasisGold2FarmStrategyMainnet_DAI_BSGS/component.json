@@ -1,0 +1,18 @@
+{
+  "component": "BasisGold2FarmStrategyMainnet_DAI_BSGS",
+  "main_contract": "BasisGold2FarmStrategyMainnet_DAI_BSGS",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f37185399537e95686a66247514de55c8792eb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MinterUpgradeable",
+  "main_contract": "MinterUpgradeable",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8a89c7f32f0ed4d186eb73d458354fda68e01d2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

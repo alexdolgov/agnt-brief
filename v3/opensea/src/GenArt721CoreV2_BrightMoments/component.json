@@ -1,0 +1,18 @@
+{
+  "component": "GenArt721CoreV2_BrightMoments",
+  "main_contract": "GenArt721CoreV2_BrightMoments",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a1bbd57033f57e7b6743621b79fcb9eb2ce3676",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

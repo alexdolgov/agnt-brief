@@ -1,0 +1,52 @@
+{
+  "component": "AmpleToken",
+  "main_contract": "AmpleToken",
+  "source_file_count": 3,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://ampleswap.com/audit-by-etherauthority.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x19857937848c02afbde8b526610f0f2f89e9960d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x32ab93a35cfcd1d90d7e4357ed506b15d24fc31f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x335f6e0e804b70a96bf9eb8af31588942e9b2515",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x62bcd31b52f89939107a0c7b35d0f8f92054da0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdbd24c5386ea838df80c27f709161bda5e6b2bf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

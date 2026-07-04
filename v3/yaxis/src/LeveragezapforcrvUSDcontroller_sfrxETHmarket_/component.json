@@ -1,0 +1,18 @@
+{
+  "component": "LeveragezapforcrvUSDcontroller_sfrxETHmarket_",
+  "main_contract": "LeveragezapforcrvUSDcontroller(sfrxETHmarket)",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb556fa4c4752321b3154f08dfbdfcf34847f2eac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

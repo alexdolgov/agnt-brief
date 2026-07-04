@@ -1,0 +1,50 @@
+{
+  "component": "LPDepositor",
+  "main_contract": "LPDepositor",
+  "source_file_count": 13,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7b676378fd66a2bb6650df1fdf847d3988a5939c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7d4483304910bf3e0ad19a8425c9adde411cfbba",
+      "is_proxy": true,
+      "implementation_address": "0x7b676378fd66a2bb6650df1fdf847d3988a5939c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9cfbfc54389318fa65958237c5143256b198fc23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xbfd1b02b5e90975b4132169a9dc987b7f50a5e64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc321e5eba8480adcc122fa90cf63557c0d29ce68",
+      "is_proxy": true,
+      "implementation_address": "0x9cfbfc54389318fa65958237c5143256b198fc23",
+      "liveness": "inactive"
+    }
+  ]
+}

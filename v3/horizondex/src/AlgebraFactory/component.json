@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraFactory",
+  "main_contract": "AlgebraFactory",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xec4f2937e57a6f39087187816ecc83191e6db1ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

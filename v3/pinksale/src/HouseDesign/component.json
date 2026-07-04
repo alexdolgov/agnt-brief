@@ -1,0 +1,18 @@
+{
+  "component": "HouseDesign",
+  "main_contract": "HouseDesign",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa951f0ae97c406196f9b23af8ef8b95778be3ebd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

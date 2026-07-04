@@ -1,0 +1,158 @@
+# Agentic Audit Brief: Noon
+
+## Project Overview
+
+- Project: Noon (`noon`)
+- Website: [https://app.noon.capital](https://app.noon.capital)
+- Lifecycle: unknown
+- Generated: 2026-07-03T21:06:36.530Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
+- Chains: ethereum, hyperliquid, zksync-era
+- Contract surface: 30 unique implementations (50 raw deployments)
+- DeFi Llama TVL: $32,597,965.15
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## Project Description
+
+Yield. Structurally: 28 project-authored contract(s) across 2 chain(s); 4 ERC4626 vaults, 7 ERC20 tokens, 2 ERC721 NFTs, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 7 functional families. Its contracts share 9 common project-authored base contract(s) (oftupgradeable, oftcoreupgradeable, oappupgradeable). Dominant framework: openzeppelin.
+
+## Contract Surface Quality
+
+- Indexed contracts: 75; live-surface contracts included: 50 (40 live, 10 unknown).
+- Excluded by liveness: 25 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
+## Audit Coverage Summary
+
+- Coverage of deployed-live implementations: 2/20 (10.0%)
+- Deployed-live implementations: 20 of 30 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/20
+- Verified + Unaudited implementations: 18
+- Verified by bytecode match: 0
+- Unverified implementations: 10
+- Unique implementations: 30
+- Raw deployments: 50
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2025-03 (aging)
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 4 unknown
+- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
+
+### Auditor Coverage
+
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Halborn | Tier 2 | 2 | 10.0% | 2025-03 |
+
+## Contract Surface
+
+### ✅ Verified + Audited (2)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakingVaultOFTUpgradeableHyperlane | unknown | ethereum | n/a | 3 deployments: ethereum [`0x20548d...bca8b4`](./contracts/ethereum-1/0x20548dc8b015ab92e5afc64c50f6a6b9c0bca8b4/); ethereum `0xa939cc...60f895`; ethereum `0xd87613...66aa42` | ✅ Audited |
+| StakingVaultOFTUpgradeableHyperlane | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd1ffb6...775b34`](./contracts/ethereum-1/0xd1ffb6a6a42c86b931b2a6d388d1f25c1c775b34/); ethereum `0xe24a3d...08b91d` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (18)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| DomainMapper | unknown | ethereum | n/a | 3 deployments: ethereum [`0x7a3619...020992`](./contracts/ethereum-1/0x7a3619213cc83c1d21c1374f4f8dad343f020992/); ethereum `0xe63fb6...725ae0`; ethereum `0xf8a371...3bec26` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x365bd6...e6d089`](./contracts/ethereum-1/0x365bd6fb4200e422a2b1f7b9dfb1c00471e6d089/) | ⚠️ Unaudited |
+| MetaMorpho | unknown | ethereum | n/a | [`0xbeefff...86f5bc`](./contracts/ethereum-1/0xbeefff209270748ddd194831b3fa287a5386f5bc/) | ⚠️ Unaudited |
+| MinterHandler | unknown | ethereum | n/a | [`0x34a279...4d999f`](./contracts/ethereum-1/0x34a2798d47b238a7cba9d87d49618dee6c4d999f/) | ⚠️ Unaudited |
+| MinterHandlerV2 | unknown | ethereum | n/a | 4 deployments: ethereum [`0x054f96...0e3cc0`](./contracts/ethereum-1/0x054f96a1733be7e6916e93e0be30f9f1400e3cc0/); ethereum `0x7d6f00...9cc0be`; ethereum `0xb91b36...9ac058`; ethereum `0xfc9249...197259` | ⚠️ Unaudited |
+| MorphoChainlinkOracleV2 | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x3b26be...52ed01`](./contracts/ethereum-1/0x3b26bee26e7ea5225b459abb7433eab4ea52ed01/); ethereum `0xc415cc...9a94aa` | ⚠️ Unaudited |
+| MultichainHandlerEthereum | unknown | ethereum | n/a | 3 deployments: ethereum [`0xa759a0...6684f8`](./contracts/ethereum-1/0xa759a06df6d28b8954baa78bf454f858946684f8/); ethereum `0xaef423...53834c`; ethereum `0xb488c7...44b405` | ⚠️ Unaudited |
+| RedeemHandler | unknown | ethereum | n/a | [`0xf5deaf...6173e8`](./contracts/ethereum-1/0xf5deafcdfbc21cb1e558906d00a1fdb4b56173e8/) | ⚠️ Unaudited |
+| RedeemHandlerV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3db326...6eb566`](./contracts/ethereum-1/0x3db3260fff8f5f97c96ae2fe871a9359d46eb566/); ethereum `0x9f8d0a...fa0086` | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | 4 deployments: ethereum [`0x1b2262...0c4503`](./contracts/ethereum-1/0x1b2262903fdb0a8eb84291cc227426be590c4503/); ethereum `0x1ea169...77327f`; ethereum `0x364a77...0f68b9`; ethereum `0x646db2...d89daa` | ⚠️ Unaudited |
+| SpectraPriceOracle | operational_periphery | ethereum | n/a | [`0x76d048...31a393`](./contracts/ethereum-1/0x76d048e47e1d77940416b656d8d7fed34931a393/) | ⚠️ Unaudited |
+| StakedUSNOFTHyperlane | token | ethereum | n/a | [`0x97e1d6...751e07`](./contracts/ethereum-1/0x97e1d6ee6005f0038df3076fb0337f315e751e07/) | ⚠️ Unaudited |
+| stakeNOON | unknown | ethereum | n/a | 2 deployments: ethereum [`0x37527c...a06bff`](./contracts/ethereum-1/0x37527c83d6804c35c6b36c6ef173c3bffea06bff/); ethereum `0x9ade34...846dd6` | ⚠️ Unaudited |
+| stakeNOONVesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0xb6aced...558e05`](./contracts/ethereum-1/0xb6aced50a83c893949680ad830651ea969558e05/); ethereum `0xc6bd83...cd2cc1` | ⚠️ Unaudited |
+| StakingVaultOFTUpgradeable | core_logic | ethereum | n/a | [`0xb9e5b8...aca6e7`](./contracts/ethereum-1/0xb9e5b8d826939580db142faba61fcdea9aaca6e7/) | ⚠️ Unaudited |
+| StorkChainlinkAdapter | adapter | ethereum | n/a | 3 deployments: ethereum [`0x6e4635...93219e`](./contracts/ethereum-1/0x6e46353f6ba66e22289aae9ffa79e1bfd593219e/); hyperliquid `0x9a137f...20659b`; hyperliquid `0xf08c4a...c01e0e` | ⚠️ Unaudited |
+| Timelock | governance | hyperliquid | n/a | 2 deployments: ethereum `0xe5e412...315a7f`; hyperliquid [`0x73d590...11550d`](./contracts/hyperliquid-999/0x73d59063212c1a3fd32882d46a84efb37911550d/) | ⚠️ Unaudited |
+| WithdrawalHandler | operational_periphery | ethereum | n/a | [`0x0dabc0...0f9178`](./contracts/ethereum-1/0x0dabc0d9b270c9b0c4c77aaceaa712b56d0f9178/) | ⚠️ Unaudited |
+
+### ✅ Verified by Bytecode + Audited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ⚠️ Verified by Bytecode + Unaudited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ❓ Unverified (10)
+
+Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x06e4a0...d91852` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x112e42...2e9376` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x80544a...f2414a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x89634c...59b834` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe13dc4...3d65ba` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0x0469d9...84c0b6` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0xb6a09d...b04c4f` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x0ada1c...6391b7` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x376adc...7cdef0` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xf89cef...7b98c4` | ❓ Unverified |
+
+## Audit Inventory
+
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---|
+| [drive.google.com/file/d/1JVaUhXwhfB6eesWPNhSfHG3mJ7g_JpYL/view](https://drive.google.com/file/d/1JVaUhXwhfB6eesWPNhSfHG3mJ7g_JpYL/view?usp=drive_link) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1vWysiNkjxRrhP9xJ4HywuDXsDWNj7X7r/view](https://drive.google.com/file/d/1vWysiNkjxRrhP9xJ4HywuDXsDWNj7X7r/view?usp=drive_link) | Halborn | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [www.halborn.com/audits/noon-capital-stablecoin/staking-vault-c3c4ef](https://www.halborn.com/audits/noon-capital-stablecoin/staking-vault-c3c4ef) | Halborn | Audit | 2025-03 | aging | Direct | contract_name | 5 | high |
+| [hashlock.com/audits/noon-capital](https://hashlock.com/audits/noon-capital) | Hashlock | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/13YDEwoplZPotcu_rGE3Ox8IsOljh-SKx/view](https://drive.google.com/file/d/13YDEwoplZPotcu_rGE3Ox8IsOljh-SKx/view?usp=sharing) | Hashlock | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+
+## Coverage Gaps
+
+Verified + unaudited native implementations ranked by TVL:
+
+- None
+
+## Origin Classification
+
+| Origin Kind | Contracts |
+|---|---:|
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 30 |
+
+## Scope Matching Notes
+
+- Repo-reference audits: 0
+- Not-audit entries: 0
+- Audits with zero matched contracts: 4
+- Inherited remapped matches: 0
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=5
+
+Zero-match audit list:
+
+- [4259] drive.google.com/file/d/1JVaUhXwhfB6eesWPNhSfHG3mJ7g_JpYL/view
+- [4260] drive.google.com/file/d/1vWysiNkjxRrhP9xJ4HywuDXsDWNj7X7r/view
+- [4262] hashlock.com/audits/noon-capital
+- [4263] drive.google.com/file/d/13YDEwoplZPotcu_rGE3Ox8IsOljh-SKx/view
+
+Fork inheritance lineage and inherited audits are included when available.

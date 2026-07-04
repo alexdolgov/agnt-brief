@@ -1,0 +1,20 @@
+{
+  "component": "Pipeline",
+  "main_contract": "Pipeline",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://immunefi.com/bug-bounty/beanstalk/information"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb1be000644bd25996b0d9c2f7a6d6ba3954c91b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

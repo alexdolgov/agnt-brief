@@ -1,0 +1,18 @@
+{
+  "component": "EclpLPOracleFactory",
+  "main_contract": "EclpLPOracleFactory",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2cf8e145bdfe7c52b49ad9bb3c294a31b2736c59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

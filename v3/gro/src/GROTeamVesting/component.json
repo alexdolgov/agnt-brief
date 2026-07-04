@@ -1,0 +1,34 @@
+{
+  "component": "GROTeamVesting",
+  "main_contract": "GROTeamVesting",
+  "source_file_count": 10,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x452c21ed6fe22cd2dbff22a89d507cc6b16cb397",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82bbee051744299486da61e5914d04a862f0b85c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf43c6bdd2f9158b5a78dccf732d190c490e28644",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

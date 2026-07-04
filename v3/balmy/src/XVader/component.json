@@ -1,0 +1,18 @@
+{
+  "component": "XVader",
+  "main_contract": "XVader",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a5f5fe4a4fcc425eeb8eb263355a4b3b4a87a2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "wsOHMStakingHelper",
+  "main_contract": "wsOHMStakingHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e0333d812a26df611dbc28e4e18703513f17939",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

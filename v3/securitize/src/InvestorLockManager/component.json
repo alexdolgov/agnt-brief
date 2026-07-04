@@ -1,0 +1,18 @@
+{
+  "component": "InvestorLockManager",
+  "main_contract": "InvestorLockManager",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0176998eb231f7ee53395b1722eb47d2eda64237",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

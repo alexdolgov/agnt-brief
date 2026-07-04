@@ -1,0 +1,18 @@
+{
+  "component": "Liquidity_Gauge_v4_Strat_XChain",
+  "main_contract": "Liquidity Gauge v4 Strat XChain",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8996cb5f5abc5e8dd6425baa7d32179e38ccc265",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

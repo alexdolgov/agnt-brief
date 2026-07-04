@@ -1,0 +1,18 @@
+{
+  "component": "CollateralToken-7",
+  "main_contract": "CollateralToken",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xebc2459ec962869ca4c0bd1e06368272732bcb08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

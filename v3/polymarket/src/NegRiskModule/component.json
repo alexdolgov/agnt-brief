@@ -1,0 +1,18 @@
+{
+  "component": "NegRiskModule",
+  "main_contract": "NegRiskModule",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x200000900045e3b6259600682756002200028933",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyCurveBase-2",
+  "main_contract": "StrategyCurveBase",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x98595670e97aa2ec229f366806b37745ad6e92b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

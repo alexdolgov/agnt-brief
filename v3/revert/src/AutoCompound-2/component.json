@@ -1,0 +1,18 @@
+{
+  "component": "AutoCompound-2",
+  "main_contract": "AutoCompound",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0bf485bd7ebb82e282f72e7d14822c680e3f7bec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

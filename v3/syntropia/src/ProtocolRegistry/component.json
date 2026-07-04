@@ -1,0 +1,34 @@
+{
+  "component": "ProtocolRegistry",
+  "main_contract": "ProtocolRegistry",
+  "source_file_count": 8,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8def66acf9c53e99611a9ea167d0d5019c3826b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc81dd51239119db80d5a6e1b7347f3c3bc8674d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

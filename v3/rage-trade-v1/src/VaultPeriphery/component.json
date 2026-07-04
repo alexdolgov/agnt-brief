@@ -1,0 +1,18 @@
+{
+  "component": "VaultPeriphery",
+  "main_contract": "VaultPeriphery",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4b928afd7ca775c7f4ecdf2c00b7e608962abbdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LQDXDistributor",
+  "main_contract": "LQDXDistributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x00010673f24a4435a26a0af9cdea72012b685572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StealthRelayer",
+  "main_contract": "StealthRelayer",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a61c2146a7800bdc278833f21ebf56cd660ee2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

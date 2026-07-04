@@ -1,0 +1,18 @@
+{
+  "component": "Basis2FarmStrategyMainnet_BAC_DAIV2",
+  "main_contract": "Basis2FarmStrategyMainnet_BAC_DAIV2",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b477831b8af02393f1fedd36956418ce9927894",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

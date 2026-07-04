@@ -1,0 +1,18 @@
+{
+  "component": "OracleChainlinkWrapper",
+  "main_contract": "OracleChainlinkWrapper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06acead7af9abe0b2a3b2e914b54c9368935b292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

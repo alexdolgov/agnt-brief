@@ -1,0 +1,18 @@
+{
+  "component": "StakingMETH",
+  "main_contract": "StakingMETH",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1766be66fbb0a1883d41b4cfb0a533c5249d3b82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

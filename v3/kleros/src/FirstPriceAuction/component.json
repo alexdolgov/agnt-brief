@@ -1,0 +1,18 @@
+{
+  "component": "FirstPriceAuction",
+  "main_contract": "FirstPriceAuction",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xdcdb82e595b3c80e569ebb52c08b05f053ad7478",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

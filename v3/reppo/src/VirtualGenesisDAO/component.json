@@ -1,0 +1,18 @@
+{
+  "component": "VirtualGenesisDAO",
+  "main_contract": "VirtualGenesisDAO",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe360abeb3bef5fe23cd5d60e4912c02503f9f67f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

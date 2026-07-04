@@ -1,0 +1,18 @@
+{
+  "component": "GraphTokenLockWallet",
+  "main_contract": "GraphTokenLockWallet",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe5e630383b5baecf0db7b15c50d410edd5a2255",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

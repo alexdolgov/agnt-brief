@@ -1,0 +1,18 @@
+{
+  "component": "PikaTokenGeneration-2",
+  "main_contract": "PikaTokenGeneration",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x648dda7779d9e3e655fe7a75ddbdfed4fdfe1935",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

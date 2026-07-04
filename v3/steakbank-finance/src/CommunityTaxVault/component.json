@@ -1,0 +1,18 @@
+{
+  "component": "CommunityTaxVault",
+  "main_contract": "CommunityTaxVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2202f1f7261dcd5b9341beb1e79fb9cf9cbede44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

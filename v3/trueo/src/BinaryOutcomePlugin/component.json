@@ -1,0 +1,18 @@
+{
+  "component": "BinaryOutcomePlugin",
+  "main_contract": "BinaryOutcomePlugin",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfb9103796666fa075d5299a4c900fa534ac2f3ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

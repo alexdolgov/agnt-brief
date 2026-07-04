@@ -1,0 +1,18 @@
+{
+  "component": "USDPStakingCollector",
+  "main_contract": "USDPStakingCollector",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x650cc1623f81582b19e89db09e242d8de0dae511",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

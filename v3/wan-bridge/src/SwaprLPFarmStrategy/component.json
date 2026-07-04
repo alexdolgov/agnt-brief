@@ -1,0 +1,18 @@
+{
+  "component": "SwaprLPFarmStrategy",
+  "main_contract": "SwaprLPFarmStrategy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1c3e7f51a9d24e813fa7c2614713b727a4da1a56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

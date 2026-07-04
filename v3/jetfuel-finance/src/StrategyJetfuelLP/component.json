@@ -1,0 +1,18 @@
+{
+  "component": "StrategyJetfuelLP",
+  "main_contract": "StrategyJetfuelLP",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x01588b79b8b9c5dfd4d7199a978c4404d5daf7fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

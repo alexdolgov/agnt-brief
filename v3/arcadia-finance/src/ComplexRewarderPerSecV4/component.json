@@ -1,0 +1,26 @@
+{
+  "component": "ComplexRewarderPerSecV4",
+  "main_contract": "ComplexRewarderPerSecV4",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x052916740d97a2e9d5668bbee813317dbcd19d10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb329511948b8f7ae590242de0790050d1423c74f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

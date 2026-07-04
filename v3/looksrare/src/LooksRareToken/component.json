@@ -1,0 +1,21 @@
+{
+  "component": "LooksRareToken",
+  "main_contract": "LooksRareToken",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LooksRare-v1.0.pdf",
+    "https://github.com/trailofbits/publications/blob/master/reviews/LooksRare.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4d2888d29d722226fafa5d9b24f9164c092421e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

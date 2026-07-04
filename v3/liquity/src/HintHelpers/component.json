@@ -1,0 +1,29 @@
+{
+  "component": "HintHelpers",
+  "main_contract": "HintHelpers",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021%2Epdf",
+    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe84251b93d9524e0d2e621ba7dc7cb3579f997c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0cae19c96e572234398d6665cc1147a16cbe657",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

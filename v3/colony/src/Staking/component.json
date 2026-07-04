@@ -1,0 +1,20 @@
+{
+  "component": "Staking",
+  "main_contract": "Staking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/colony-lab-staking-v2"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5b0d74c78f2588b3c5c49857edb856cc731dc557",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

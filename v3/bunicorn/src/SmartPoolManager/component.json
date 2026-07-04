@@ -1,0 +1,18 @@
+{
+  "component": "SmartPoolManager",
+  "main_contract": "SmartPoolManager",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9c0a6fd84fa4c2d0496e96ca2f22c381e7a7ec17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GlpDexter",
+  "main_contract": "GlpDexter",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x42870d0079cd7acb71b3fe96ea4d77fbd1ccc820",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

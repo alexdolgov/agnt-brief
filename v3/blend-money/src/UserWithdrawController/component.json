@@ -1,0 +1,38 @@
+{
+  "component": "UserWithdrawController",
+  "main_contract": "UserWithdrawController",
+  "source_file_count": 32,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BlendMoney/audits/blob/main/blend-26-06-12-0.sherlock.pdf",
+    "https://github.com/blendmoney/audits",
+    "https://github.com/blendmoney/audits/blob/main/blend-26-05-04-0.sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x086d13402360efa4c4189695eced9805240ce76a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6f94ac2c4129a7f1435532f39913dfd23d061263",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9944555a71d6e188a4c2615545e443e7097c5d6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

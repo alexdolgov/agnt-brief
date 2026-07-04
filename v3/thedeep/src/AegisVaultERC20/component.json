@@ -1,0 +1,34 @@
+{
+  "component": "AegisVaultERC20",
+  "main_contract": "AegisVaultERC20",
+  "source_file_count": 52,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x16dfbb3f6c2a7a3ed697f7233b3e83001a9fde29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xd20feb1df00171aa2f59c9f53c4dd230dc1f39a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xeecb7ba52f1a689574e2f64242743f0a0ad9eb3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

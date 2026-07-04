@@ -1,0 +1,26 @@
+{
+  "component": "MetaStrikeBox",
+  "main_contract": "MetaStrikeBox",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a7d3a7c38e49a7b1fe893b1ca197e57292cd602",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xecf89a06a7a5fb7202d16c7ddc006ecf10e31953",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Relay",
+  "main_contract": "Relay",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x061868a3387c5f6a875c111a2fddeb70c66344f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

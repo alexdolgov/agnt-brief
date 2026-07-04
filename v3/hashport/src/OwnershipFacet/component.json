@@ -1,0 +1,26 @@
+{
+  "component": "OwnershipFacet",
+  "main_contract": "OwnershipFacet",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1a359ec6a0cebabfa2702e78df83e3c269636f12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x83fad6e962ea361c2e57000d1d720136c26d325c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

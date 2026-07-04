@@ -1,0 +1,18 @@
+{
+  "component": "VaultStrat-2",
+  "main_contract": "VaultStrat",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f8fc0976ffe5457ccf7651d5ff4cfca2e86b000",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

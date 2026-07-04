@@ -1,0 +1,26 @@
+{
+  "component": "GaugePointFacet",
+  "main_contract": "GaugePointFacet",
+  "source_file_count": 82,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02960251e6d2ef0ccd79ad1927065f55132ac717",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2d5e484dd7d43dfe32bf1ed9fe6517b64f13ea51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

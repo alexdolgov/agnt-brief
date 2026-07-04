@@ -1,0 +1,18 @@
+{
+  "component": "NavLens",
+  "main_contract": "NavLens",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfda0b8bca5d0a5a5093141d8a45d133a9f09b258",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

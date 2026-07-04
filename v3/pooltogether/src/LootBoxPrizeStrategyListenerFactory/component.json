@@ -1,0 +1,18 @@
+{
+  "component": "LootBoxPrizeStrategyListenerFactory",
+  "main_contract": "LootBoxPrizeStrategyListenerFactory",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25e6a78d93d2935a638fdbd684e7b39565d0b7ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

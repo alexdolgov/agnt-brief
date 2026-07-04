@@ -1,0 +1,18 @@
+{
+  "component": "PerformanceFee",
+  "main_contract": "PerformanceFee",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbc63afe28c66a6279bd3a55a4d0d3ab61f479bdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

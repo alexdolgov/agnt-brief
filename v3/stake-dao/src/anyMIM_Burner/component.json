@@ -1,0 +1,18 @@
+{
+  "component": "anyMIM_Burner",
+  "main_contract": "anyMIM Burner",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c762a5cf063d55ef5b661f8f8c96f6c67f76807",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

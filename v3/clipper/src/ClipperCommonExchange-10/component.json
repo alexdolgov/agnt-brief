@@ -1,0 +1,18 @@
+{
+  "component": "ClipperCommonExchange-10",
+  "main_contract": "ClipperCommonExchange",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x08f7e9458a341db71d2abbe32e2b5a2c727d4be8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

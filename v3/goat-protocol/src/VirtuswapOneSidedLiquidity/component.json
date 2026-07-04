@@ -1,0 +1,18 @@
+{
+  "component": "VirtuswapOneSidedLiquidity",
+  "main_contract": "VirtuswapOneSidedLiquidity",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x74c2d8b6977eee5220d118e0d6a0746ac137f06e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

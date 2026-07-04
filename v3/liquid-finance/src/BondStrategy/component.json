@@ -1,0 +1,18 @@
+{
+  "component": "BondStrategy",
+  "main_contract": "BondStrategy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8bbd8457829bfe14590e2ba0fa40fd8919004183",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

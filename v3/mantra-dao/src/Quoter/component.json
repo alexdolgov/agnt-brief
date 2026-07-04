@@ -1,0 +1,18 @@
+{
+  "component": "Quoter",
+  "main_contract": "Quoter",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69d57b9d705ead73a5d2f2476c30c55bd755cc2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "component": "BatchGovernor-3",
+  "main_contract": "BatchGovernor",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/m0-foundation/documentation/blob/main/protocol-audit-reports/Audits%20and%20fixes%20overview.pdf",
+    "https://github.com/m0-foundation/documentation/blob/main/protocol-audit-reports/Quantstamp%20External%20Fix%20Review.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/Certora%20Audit%20report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/ChainSecurity%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/OpenZeppelin%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/Prototech%20Labs%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/Quantstamp%20Audit%20Report.pdf",
+    "https://github.com/m0-platform/documentation/blob/main/protocol-audit-reports/ThreeSigma%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

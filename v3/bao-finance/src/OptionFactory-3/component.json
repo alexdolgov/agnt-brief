@@ -1,0 +1,18 @@
+{
+  "component": "OptionFactory-3",
+  "main_contract": "OptionFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xac81f2efce81baf2d412a93acf0256099c83dc44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "MainnetRouter",
+  "main_contract": "MainnetRouter",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x886ef0a78fabbae942f1da1791a8ed02a5af8bc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfe8bf5140f00de6f75bafa3ca0f4ebf2084a46b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

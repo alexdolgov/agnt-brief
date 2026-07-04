@@ -1,0 +1,18 @@
+{
+  "component": "OpenOceanToken",
+  "main_contract": "OpenOceanToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8ea5219a16c2dbf1d6335a6aa0c6bd45c50347c5",
+      "is_proxy": true,
+      "implementation_address": "0xd332534c9fd5d28846b012027965d1f1d602d36b",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "SherpaVault",
+  "main_contract": "SherpaVault",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-11-23-cyfrin-sherpa-v2.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x96043804d00dcec238718eedad9ac10719778380",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

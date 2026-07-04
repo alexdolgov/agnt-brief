@@ -1,0 +1,18 @@
+{
+  "component": "SolvConvertibleMarket",
+  "main_contract": "SolvConvertibleMarket",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29935f54a45f5955ad7bc9d5416f746c3d1b9d69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

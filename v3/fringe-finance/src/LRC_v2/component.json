@@ -1,0 +1,18 @@
+{
+  "component": "LRC_v2",
+  "main_contract": "LRC_v2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

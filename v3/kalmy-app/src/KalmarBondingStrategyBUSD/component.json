@@ -1,0 +1,26 @@
+{
+  "component": "KalmarBondingStrategyBUSD",
+  "main_contract": "KalmarBondingStrategyBUSD",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x894832384f71edc0b808098ea21c9393b38c6687",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc2ef9115680def2ec981f31413d670042379ae20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

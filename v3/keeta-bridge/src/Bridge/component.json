@@ -1,0 +1,18 @@
+{
+  "component": "Bridge",
+  "main_contract": "Bridge",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1c24a0fb7bcf2154a9d37b7b3aa443bc63fcc698",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

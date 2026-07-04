@@ -1,0 +1,42 @@
+{
+  "component": "Jar",
+  "main_contract": "Jar",
+  "source_file_count": 7,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x36417e58b08cef67e32cb80808a6858924341758",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4a20fe93dec6e5b2d66c246eb7e8ab228254c03f",
+      "is_proxy": true,
+      "implementation_address": "0x36417e58b08cef67e32cb80808a6858924341758",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x97f0bdadbfaa05a1944ffba862b3336a175056cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe69a1876bdacfa7a7a4f6d531be2fde843d2165c",
+      "is_proxy": true,
+      "implementation_address": "0x97f0bdadbfaa05a1944ffba862b3336a175056cf",
+      "liveness": "live"
+    }
+  ]
+}

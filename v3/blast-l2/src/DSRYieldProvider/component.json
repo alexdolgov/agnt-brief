@@ -1,0 +1,18 @@
+{
+  "component": "DSRYieldProvider",
+  "main_contract": "DSRYieldProvider",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0733f618118bf420b6b604c969498ecf143681a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

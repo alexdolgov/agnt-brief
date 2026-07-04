@@ -1,0 +1,18 @@
+{
+  "component": "BaseHook",
+  "main_contract": "BaseHook",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3c63a9813ac03be0e8618b627cb8170cfa468c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

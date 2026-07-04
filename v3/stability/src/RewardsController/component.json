@@ -1,0 +1,35 @@
+{
+  "component": "RewardsController",
+  "main_contract": "RewardsController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://aave.com/security",
+    "https://github.com/sky-ecosystem/stusds/blob/master/audit/20260410-ChainSecurity_Sky_SkyStUSDS_Audit.pdf",
+    "https://github.com/sky-ecosystem/stusds/blob/master/audit/20260504-cantina-report-sky-stusdsmom.pdf",
+    "https://github.com/sparkdotfi/spark-savings-intents/blob/master/audits/v100-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/spark-savings-intents/blob/master/audits/v100-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/sparklend-advanced/blob/master/audits/v160-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/01-11-2021_OpenZeppelin_AaveV3.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/07-01-2022_TrailOfBits_AaveV3.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/09-12-2022_PeckShield_AaveV3-0-1.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/14-01-2022_PeckShield_AaveV3.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/19-04-2023_SigmaPrime_AaveV3-0-2.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/23-12-2022_SigmaPrime_AaveV3-0-1.pdf",
+    "https://github.com/sparkdotfi/sparklend-v1-core/blob/master/audits/27-01-2022_ABDK_AaveV3.pdf",
+    "https://github.com/sparkdotfi/xchain-helpers/blob/master/audits/v120-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/xchain-helpers/blob/master/audits/v120-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/xchain-ssr-oracle/blob/master/audits/20260514-cantina-report-sky-xchain-ssr-oracle.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x022787fe454e0fc45dcc9b5f1f5bb001dec25512",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

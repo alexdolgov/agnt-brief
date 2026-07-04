@@ -1,0 +1,18 @@
+{
+  "component": "CurveStrategy",
+  "main_contract": "CurveStrategy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b152ccb613ee248df9bb98195bc505665d6c4b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "component": "GovernorCharlieDelegator",
+  "main_contract": "GovernorCharlieDelegator",
+  "source_file_count": 8,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x266d1020a84b9e8b0ed320831838152075f8c4ca",
+      "is_proxy": true,
+      "implementation_address": "0x6b91a0ba78acc4a8c7919f96c181a895d5b31563",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b91a0ba78acc4a8c7919f96c181a895d5b31563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b3d32cf2bb4d0d16656f4c0b04fa546274f1545",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf352c2fcb3cbfdbba619090e2a1deb9ac534a29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed6a213928db81a3a60bce25aaf199dbaf01dd25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf082066e2f023b57617f2167c1f2a5d93eab65a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

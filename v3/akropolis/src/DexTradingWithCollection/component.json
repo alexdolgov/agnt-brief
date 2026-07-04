@@ -1,0 +1,18 @@
+{
+  "component": "DexTradingWithCollection",
+  "main_contract": "DexTradingWithCollection",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ef1298b41d6ec5e071eba9fc8f0ecc53fd675fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

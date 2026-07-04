@@ -1,0 +1,18 @@
+{
+  "component": "SolidDecoderAndSanitizer",
+  "main_contract": "SolidDecoderAndSanitizer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a0910164937be95479a6349d1cd13f7a89a6f93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

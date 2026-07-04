@@ -1,0 +1,18 @@
+{
+  "component": "Aggregator_USDE_MAG7_arbitrum",
+  "main_contract": "Aggregator_USDE_MAG7_arbitrum",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xff37db6dea33228a5d84546250a5d0d0da942fd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

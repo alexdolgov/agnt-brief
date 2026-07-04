@@ -1,0 +1,18 @@
+{
+  "component": "ConversionPathFinder-2",
+  "main_contract": "ConversionPathFinder",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33f77247994cb0ae517fcbd7b78c97a7e385d323",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

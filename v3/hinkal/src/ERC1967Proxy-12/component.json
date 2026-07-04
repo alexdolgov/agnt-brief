@@ -1,0 +1,18 @@
+{
+  "component": "ERC1967Proxy-12",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2e80122b1a095c25aa5717b2be8dc1eafe9c8850",
+      "is_proxy": true,
+      "implementation_address": "0x2c12f1d0404080f65c5352b55de3cacb3ff9c360",
+      "liveness": "live"
+    }
+  ]
+}

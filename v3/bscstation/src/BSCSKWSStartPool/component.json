@@ -1,0 +1,18 @@
+{
+  "component": "BSCSKWSStartPool",
+  "main_contract": "BSCSKWSStartPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9534c17deb29c4999a2b476b8e5ff5de4f326df8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

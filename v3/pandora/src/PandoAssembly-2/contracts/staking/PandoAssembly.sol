@@ -1,0 +1,457 @@
+//SPDX-License-Identifier: UNLICENSED
+pragma solidity 0.8.4;
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
+import "../interfaces/IDroidBot.sol";
+import "../libraries/NFTLib.sol";
+import "../interfaces/IUserLevel.sol";
+
+contract PandoAssembly is Ownable, IERC721Receiver, Pausable {
+    using EnumerableSet for EnumerableSet.UintSet;
+    using SafeERC20 for IERC20;
+
+    struct UserInfo {
+        uint256 power;
+        uint256 bonus;
+        int256 rewardDebt;
+        EnumerableSet.UintSet nftIds;
+    }
+
+    IERC20 public busd;
+    IDroidBot public droidBot;
+    IUserLevel public userLevel;
+
+    // governance
+    uint256 private constant ACC_REWARD_PRECISION = 1e12;
+    uint256 private constant SLOT_PRICE_PRECISION = 100;
+    address public reserveFund;
+    address public PSR;
+    address public receivingFund;
+
+    uint256 public accRewardPerShare;
+    uint256 public lastRewardTime;
+    uint256 public endRewardTime;
+    uint256 public startRewardTime;
+
+    uint256 public rewardPerSecond;
+    uint256 public totalPower;
+    uint256 public totalBonus;
+    uint256 public slotBasePrice;
+    uint256 public slotCoefficient;
+
+    //migrate
+    address immutable public oldNftStaking;
+    address public migrationAddress;
+    bool public isMigrated;
+
+    mapping (address => UserInfo) private userInfo;
+    mapping (address => uint256) public slotPurchased;
+
+    /* ========== Modifiers =============== */
+
+    modifier onlyReserveFund() {
+        require(reserveFund == msg.sender, "NFTStakingPool: caller is not the reserveFund");
+        _;
+    }
+
+    modifier onlyMigrate() {
+        require(migrationAddress == msg.sender, "NFTStakingPool: caller is not the migrationAddress");
+        _;
+    }
+
+    constructor(address _busd, address _droidBot, address _PSR) {
+        busd = IERC20(_busd);
+        droidBot = IDroidBot(_droidBot);
+        lastRewardTime = block.timestamp;
+        startRewardTime = block.timestamp;
+        PSR = _PSR;
+        slotBasePrice = 100 * 1e18;
+        slotCoefficient = 120;
+        migrationAddress = msg.sender;
+        //set old staking here
+        oldNftStaking = 0xaBd9127dD374f9f72468A9efA86e12F84cE19f30;
+    }
+
+    /* ========== PUBLIC FUNCTIONS ========== */
+
+    function info(address _user) external view returns(uint256[] memory _nftIds){
+        UserInfo storage user = userInfo[_user];
+        _nftIds = EnumerableSet.values(user.nftIds);
+    }
+
+    function originalPower(address _user) public view returns (uint256 res) {
+        UserInfo storage user = userInfo[_user];
+        uint256[] memory tokenIds = EnumerableSet.values(user.nftIds);
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            res += droidBot.info(tokenIds[i]).power;
+        }
+    }
+
+    function currentPower(address _user) public view returns(uint256) {
+        UserInfo storage user = userInfo[_user];
+        uint256 power = NFTLib.getPower(EnumerableSet.values(user.nftIds), droidBot);
+        return power + getBonus(power, _user);
+    }
+
+    function getRewardForDuration(uint256 _from, uint256 _to) public view returns (uint256) {
+        uint256 _rewardPerSecond = rewardPerSecond;
+        if (_from >= _to || _from >= endRewardTime) return 0;
+        if (_to <= startRewardTime) return 0;
+        if (_from <= startRewardTime) {
+            if (_to <= endRewardTime) return (_to - startRewardTime) * _rewardPerSecond;
+            else return (endRewardTime - startRewardTime) * _rewardPerSecond;
+        }
+        if (_to <= endRewardTime) return (_to - _from) * _rewardPerSecond;
+        else return (endRewardTime - _from) * _rewardPerSecond;
+    }
+
+    function getRewardPerSecond() public view returns (uint256) {
+        return getRewardForDuration(block.timestamp, block.timestamp + 1);
+    }
+
+    function pendingReward(address _user) external view returns (uint256 pending) {
+        UserInfo storage user = userInfo[_user];
+        uint256 _accRewardPerShare = accRewardPerShare;
+        uint256 _totalPower = getTotalPower();
+        if (block.timestamp > lastRewardTime && _totalPower != 0) {
+            uint256 rewardAmount = getRewardForDuration(lastRewardTime, block.timestamp);
+            _accRewardPerShare += (rewardAmount * ACC_REWARD_PRECISION) / _totalPower;
+        }
+        pending = uint256(int256((user.power + user.bonus) * _accRewardPerShare / ACC_REWARD_PRECISION) - user.rewardDebt);
+    }
+
+    function getUserInfo(address _user) external view returns(uint, uint ,int256) {
+        return (userInfo[_user].power, userInfo[_user].bonus, userInfo[_user].rewardDebt);
+    }
+
+    /// @notice Update reward variables of the given pool.
+    function updatePool() public {
+        uint256 _totalPower = getTotalPower();
+        if (block.timestamp > lastRewardTime) {
+            if (_totalPower > 0) {
+                uint256 rewardAmount = getRewardForDuration(lastRewardTime, block.timestamp);
+                accRewardPerShare += rewardAmount * ACC_REWARD_PRECISION / _totalPower;
+            }
+            lastRewardTime = block.timestamp;
+            emit LogUpdatePool(lastRewardTime, _totalPower, accRewardPerShare);
+        }
+    }
+
+    function buySlot(address to) external whenNotPaused {
+        uint256 n = slotPurchased[to];
+        uint256 p = slotBasePrice * (slotCoefficient**n) / (SLOT_PRICE_PRECISION**n);
+        p -= getBonus(p, to);
+        slotPurchased[to]++;
+        if (receivingFund == address (0)) {
+            ERC20Burnable(PSR).burnFrom(msg.sender, p);
+        } else {
+            IERC20(PSR).safeTransferFrom(msg.sender, receivingFund, p);
+        }
+        emit SlotBought(msg.sender, n);
+    }
+
+    function deposit(uint256[] memory tokenIds, address to) external {
+        updatePool();
+        UserInfo storage user = userInfo[to];
+        require(EnumerableSet.length(user.nftIds) + tokenIds.length <= 4 + slotPurchased[to], 'Staking : stake more than slot purchased');
+
+        // Effects]
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            uint256 tokenId = tokenIds[i];
+            EnumerableSet.add(user.nftIds, tokenId);
+            droidBot.safeTransferFrom(msg.sender, address(this), tokenIds[i]);
+        }
+
+        uint256 power = NFTLib.getPower(EnumerableSet.values(user.nftIds), droidBot);
+        uint256 incPower = 0;
+        if (power > user.power) {
+            incPower = power - user.power;
+            totalPower += incPower;
+            user.rewardDebt += int256(incPower * accRewardPerShare / ACC_REWARD_PRECISION);
+        }
+        user.power = power;
+        _update(msg.sender);
+        emit Deposit(msg.sender, tokenIds, incPower, to);
+    }
+
+    function withdraw(uint256[] memory tokenIds, address to) public {
+        updatePool();
+        UserInfo storage user = userInfo[msg.sender];
+
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            uint256 tokenId = tokenIds[i];
+            if (EnumerableSet.contains(user.nftIds, tokenId)) {
+                EnumerableSet.remove(user.nftIds, tokenId);
+                droidBot.transferFrom(address(this), to, tokenId);
+            }
+        }
+        uint256 power = NFTLib.getPower(EnumerableSet.values(user.nftIds), droidBot);
+        uint256 withdrawPower = 0;
+        if (user.power > power) {
+            withdrawPower = user.power - power;
+            user.rewardDebt -= int256(withdrawPower * accRewardPerShare / ACC_REWARD_PRECISION);
+            totalPower -= withdrawPower;
+        }
+        user.power = power;
+        _update(msg.sender);
+        emit Withdraw(msg.sender, tokenIds, withdrawPower, to);
+    }
+
+    function update(address _account) external {
+        updatePool();
+        _update(_account);
+    }
+
+    /// @notice Harvest proceeds for transaction sender to `to`.
+    /// @param to Receiver of rewards.
+    function harvest(address to) public whenNotPaused{
+        updatePool();
+        UserInfo storage user = userInfo[msg.sender];
+        int256 accumulatedReward = int256((user.power + user.bonus) * accRewardPerShare / ACC_REWARD_PRECISION);
+        uint256 _pendingReward = uint256(accumulatedReward - user.rewardDebt);
+
+        // Effects
+        user.rewardDebt = accumulatedReward;
+
+        // Interactions
+        if (_pendingReward > 0) {
+            busd.safeTransfer(to, _pendingReward);
+        }
+        emit Harvest(msg.sender, _pendingReward);
+    }
+
+
+    function withdrawAndHarvest(uint256[] memory tokenIds, address to) public whenNotPaused {
+        updatePool();
+        UserInfo storage user = userInfo[msg.sender];
+
+        int256 accumulatedReward = int256((user.power + user.bonus) * accRewardPerShare / ACC_REWARD_PRECISION);
+        uint256 _pendingReward = uint256(accumulatedReward - user.rewardDebt);
+
+        // Effects
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            uint256 tokenId = tokenIds[i];
+            if (EnumerableSet.contains(user.nftIds, tokenId)) {
+                EnumerableSet.remove(user.nftIds, tokenId);
+                droidBot.transferFrom(address(this), to, tokenId);
+            }
+        }
+        uint256 power = NFTLib.getPower(EnumerableSet.values(user.nftIds), droidBot);
+        uint256 withdrawPower = user.power - power;
+
+        user.rewardDebt = accumulatedReward - int256(withdrawPower * accRewardPerShare / ACC_REWARD_PRECISION);
+        user.power -= withdrawPower;
+        totalPower -= withdrawPower;
+
+        // Interactions
+        if (_pendingReward > 0) {
+            busd.safeTransfer(to, _pendingReward);
+        }
+        _update(msg.sender);
+        emit Withdraw(msg.sender, tokenIds, withdrawPower, to);
+        emit Harvest(msg.sender, _pendingReward);
+    }
+
+    function withdrawAll(address to) public {
+        UserInfo storage user = userInfo[msg.sender];
+
+        uint256[] memory tokenIds = EnumerableSet.values(user.nftIds);
+        withdraw(tokenIds, to);
+    }
+
+    function withdrawAndHarvestAll(address to) public whenNotPaused{
+        UserInfo storage user = userInfo[msg.sender];
+
+        uint256[] memory tokenIds = EnumerableSet.values(user.nftIds);
+        withdrawAndHarvest(tokenIds, to);
+    }
+
+    /// @notice Withdraw without caring about rewards. EMERGENCY ONLY.
+    /// @param to Receiver of the LP tokens.
+    function emergencyWithdraw(address to) public {
+        UserInfo storage user = userInfo[msg.sender];
+        uint256 power = user.power;
+        user.power = 0;
+        user.rewardDebt = 0;
+        totalPower -= power;
+
+        // Note: transfer can fail or succeed if `amount` is zero.
+        uint256[] memory tokenIds = EnumerableSet.values(user.nftIds);
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            uint256 tokenId = tokenIds[i];
+            if (EnumerableSet.contains(user.nftIds, tokenId)) {
+                EnumerableSet.remove(user.nftIds, tokenId);
+                droidBot.transferFrom(address(this), to, tokenId);
+            }
+        }
+
+        emit EmergencyWithdraw(msg.sender, tokenIds, power, to);
+    }
+
+    function onERC721Received(
+        address operator,
+        address, //from
+        uint256, //tokenId
+        bytes calldata //data
+    ) public view override returns (bytes4) {
+        require(
+            operator == address(this),
+            "received Nft from unauthenticated contract"
+        );
+
+        return
+        bytes4(
+            keccak256("onERC721Received(address,address,uint256,bytes)")
+        );
+    }
+
+    /* ========== MIGRATE FUNCTIONS ========== */
+    function migrate(address[] memory _users, uint256[] memory _slots, bool _finish) external onlyOwner whenPaused{
+        require(!isMigrated, "Staking: project has been migrated");
+        uint256 _length = _users.length;
+        require(_length == _slots.length, "Staking: !equal length");
+        for(uint i = 0; i < _length; i ++) {
+            slotPurchased[_users[i]] = _slots[i];
+            emit MigrateSlot(_users[i], _slots[i]);
+        }
+        isMigrated = _finish;
+        emit MigrateFinish(_finish);
+    }
+
+
+    /* ========== INTERNAL FUNCTIONS ========== */
+    function _update(address account) internal {
+        UserInfo storage user = userInfo[account];
+        uint256 _oldBonus = user.bonus;
+        uint256 _newBonus = getBonus(user.power, account);
+        if (_newBonus > _oldBonus) {
+            user.rewardDebt += int256((_newBonus - _oldBonus) * accRewardPerShare / ACC_REWARD_PRECISION);
+            totalBonus += _newBonus - _oldBonus;
+        } else {
+            user.rewardDebt -= int256((_oldBonus - _newBonus) * accRewardPerShare / ACC_REWARD_PRECISION);
+            totalBonus -= _oldBonus - _newBonus;
+        }
+        user.bonus = _newBonus;
+    }
+
+    function getBonus(uint256 _value, address _user) internal view returns(uint256) {
+        if (address(userLevel) != address(0)) {
+            (uint256 _n, uint256 _d) = userLevel.getBonus(_user, address(this));
+            return _value * _n / _d;
+        }
+        return 0;
+    }
+
+    /// @notice Sets the reward per second to be distributed. Can only be called by the owner.
+    /// @param _rewardPerSecond The amount of reward to be distributed per second.
+    function setRewardPerSecond(uint256 _rewardPerSecond) internal {
+        uint256 oldRewardPerSecond = rewardPerSecond;
+        rewardPerSecond = _rewardPerSecond;
+        emit RewardPerSecondChanged(oldRewardPerSecond, _rewardPerSecond);
+    }
+
+    function getTotalPower() internal view returns(uint256) {
+        return totalPower + totalBonus;
+    }
+    /* ========== RESTRICTED FUNCTIONS ========== */
+
+    function allocateMoreRewards(uint256 _addedReward, uint256 _days) external onlyReserveFund {
+        updatePool();
+        uint256 _pendingSeconds = (endRewardTime >  block.timestamp) ? (endRewardTime - block.timestamp) : 0;
+        uint256 _newPendingReward = (rewardPerSecond * _pendingSeconds) + _addedReward;
+        uint256 _newPendingSeconds = _pendingSeconds + (_days * (1 days));
+        uint256 _newRewardPerSecond = _newPendingReward / _newPendingSeconds;
+        setRewardPerSecond(_newRewardPerSecond);
+        if (_days > 0) {
+            if (endRewardTime <  block.timestamp) {
+                endRewardTime =  block.timestamp + (_days * (1 days));
+            } else {
+                endRewardTime = endRewardTime +  (_days * (1 days));
+            }
+        }
+        busd.safeTransferFrom(msg.sender, address(this), _addedReward);
+    }
+
+    function setReserveFund(address _reserveFund) external onlyOwner {
+        address oldReserveFund = reserveFund;
+        reserveFund = _reserveFund;
+        emit ReserveFundChanged(oldReserveFund ,_reserveFund);
+    }
+
+    function rescueFund(uint256 _amount) external onlyOwner {
+        require(_amount > 0 && _amount <= busd.balanceOf(address(this)), "invalid amount");
+        busd.safeTransfer(owner(), _amount);
+        emit FundRescued(owner(), _amount);
+    }
+
+    function setPayment(address _PSR, uint256 _price, uint256 _coef) external onlyOwner {
+        address oldPaymentToken = PSR;
+        uint256 oldSlotBasePrice = slotBasePrice;
+        uint256 oldSlotCoefficient = slotCoefficient;
+        PSR = _PSR;
+        slotBasePrice = _price;
+        slotCoefficient = _coef;
+        emit PaymentTokenChanged(oldPaymentToken, _PSR);
+        emit SlotBasePriceChanged(oldSlotBasePrice, _price);
+        emit SlotCoefficientChanged(oldSlotCoefficient, _coef);
+    }
+
+    function changeDroidBotAddress(address _newAddr) external onlyOwner {
+        address oldDroidBot = address(droidBot);
+        droidBot = IDroidBot(_newAddr);
+        emit DroidBotChanged(oldDroidBot, _newAddr);
+    }
+
+    function setReceivingFund(address _addr) external onlyOwner {
+        address oldReceivingFund = receivingFund;
+        receivingFund = _addr;
+        emit ReceivingFundChanged(oldReceivingFund, _addr);
+    }
+
+    function setUserLevelAddress(address _userLevel) external onlyOwner {
+        userLevel = IUserLevel(_userLevel);
+        emit UserLevelChanged(_userLevel);
+    }
+
+    function setMigrateAddress(address _migrateAddress) external onlyOwner {
+        address old = migrationAddress;
+        migrationAddress = _migrateAddress;
+        emit MigrateAddressChanged(old ,_migrateAddress);
+    }
+
+    function pause() external onlyOwner whenNotPaused {
+        _pause();
+    }
+
+    function unpause() external onlyOwner whenPaused {
+        _unpause();
+    }
+    /* =============== EVENTS ==================== */
+
+    event Deposit(address indexed user, uint256[] nftId, uint256 amount, address indexed to);
+    event Withdraw(address indexed user, uint256[] nftId, uint256 amount, address indexed to);
+    event EmergencyWithdraw(address indexed user,  uint256[] nftId, uint256 amount, address indexed to);
+    event Harvest(address indexed user, uint256 amount);
+    event LogUpdatePool(uint256 lastRewardTime, uint256 lpSupply, uint256 accRewardPerShare);
+    event RewardPerSecondChanged(uint256 oldRewardPerSecond, uint256 newRewardPerSecond);
+    event FundRescued(address indexed receiver, uint256 amount);
+    event DroidBotChanged(address indexed oldDroiBot, address indexed newDroiBot);
+    event PaymentTokenChanged(address indexed oldToken, address indexed newToken);
+    event SlotBasePriceChanged(uint256 oldPrice, uint256 newPrice);
+    event SlotCoefficientChanged(uint256 oldCoef, uint256 newCoef);
+    event ReceivingFundChanged(address indexed oldReceivingFund, address indexed newReceivingFund);
+    event ReserveFundChanged(address indexed oldReserveFund, address indexed newReserveFund);
+    event UserLevelChanged(address indexed userLevel);
+    event SlotBought(address indexed buyer, uint256 slotNum);
+    event MigrateSlot(address user, uint256 slotNum);
+    event MigrateFinish(bool _isDone);
+    event MigrateAddressChanged(address _old ,address _new);
+
+}

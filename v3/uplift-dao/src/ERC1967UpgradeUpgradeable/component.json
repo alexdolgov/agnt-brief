@@ -1,0 +1,36 @@
+{
+  "component": "ERC1967UpgradeUpgradeable",
+  "main_contract": "ERC1967UpgradeUpgradeable",
+  "source_file_count": 28,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://app.uplift.io/docs/Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3f8400f74c5548c3b555e2c70943e281bf0e9467",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x87ccb32798b8fb027d79f491dd7e636bb35dd27e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb6001099aa527717fdb215aa4bce393baef778f3",
+      "is_proxy": true,
+      "implementation_address": "0x3f8400f74c5548c3b555e2c70943e281bf0e9467",
+      "liveness": "live"
+    }
+  ]
+}

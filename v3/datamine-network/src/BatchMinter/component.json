@@ -1,0 +1,18 @@
+{
+  "component": "BatchMinter",
+  "main_contract": "BatchMinter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x352c8a363ef1c9e730b8a2ee14bab90545fd189c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

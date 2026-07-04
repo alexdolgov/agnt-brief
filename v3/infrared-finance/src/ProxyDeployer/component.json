@@ -1,0 +1,18 @@
+{
+  "component": "ProxyDeployer",
+  "main_contract": "ProxyDeployer",
+  "source_file_count": 73,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0c7f08bd9c6811f5dba2f9e26e451b0473208bf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

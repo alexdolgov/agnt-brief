@@ -1,0 +1,18 @@
+{
+  "component": "WETHConverter",
+  "main_contract": "WETHConverter",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x25cbd11558c369b089852baaec9bbb1b66ebf89c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

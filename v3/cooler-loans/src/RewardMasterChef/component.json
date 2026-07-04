@@ -1,0 +1,18 @@
+{
+  "component": "RewardMasterChef",
+  "main_contract": "RewardMasterChef",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x123706cdd8e60324e610e9a2cc7012d0f45a5b8e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

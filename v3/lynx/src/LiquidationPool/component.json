@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationPool",
+  "main_contract": "LiquidationPool",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2a823ee5f731c5699e75e51aca799e1141d29910",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

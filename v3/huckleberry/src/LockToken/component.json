@@ -1,0 +1,18 @@
+{
+  "component": "LockToken",
+  "main_contract": "LockToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x95989005cdc3d128a5a3c706797d5e408cdfe7c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

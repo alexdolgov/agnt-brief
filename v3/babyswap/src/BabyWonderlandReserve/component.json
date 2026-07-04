@@ -1,0 +1,18 @@
+{
+  "component": "BabyWonderlandReserve",
+  "main_contract": "BabyWonderlandReserve",
+  "source_file_count": 144,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe4212d35abc69812a8e88ed40e44759d8b39f887",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

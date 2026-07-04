@@ -1,0 +1,18 @@
+{
+  "component": "standardToken",
+  "main_contract": "standardToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf305012ea754252184f1071c86ae99fac5b40320",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

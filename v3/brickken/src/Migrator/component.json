@@ -1,0 +1,18 @@
+{
+  "component": "Migrator",
+  "main_contract": "Migrator",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d51655203787f1cd6aba27d022fc6b5873fe9d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

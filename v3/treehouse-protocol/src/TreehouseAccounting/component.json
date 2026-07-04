@@ -1,0 +1,18 @@
+{
+  "component": "TreehouseAccounting",
+  "main_contract": "TreehouseAccounting",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb7ce3cb5bc5c00cd2f9b39d9b0580f5355535709",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

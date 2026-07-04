@@ -1,0 +1,18 @@
+{
+  "component": "SignedSafeDecimalMath",
+  "main_contract": "SignedSafeDecimalMath",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x728a2b79cad691531cc1146ef802617ff50c7095",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

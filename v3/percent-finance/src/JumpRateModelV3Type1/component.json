@@ -1,0 +1,18 @@
+{
+  "component": "JumpRateModelV3Type1",
+  "main_contract": "JumpRateModelV3Type1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6d5fb3f34e34dc64c339b0803cc9e741da00a11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

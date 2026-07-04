@@ -1,0 +1,21 @@
+{
+  "component": "RewardSplitter",
+  "main_contract": "RewardSplitter",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakewise/v3-core/blob/main/audits/2024-06-Sigma-Prime.pdf",
+    "https://github.com/stakewise/v3-core/blob/main/audits/2025-09-ABDK.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x439b60d3c886e711dad30cf23a2bbd5388febcd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

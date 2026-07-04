@@ -1,0 +1,18 @@
+{
+  "component": "EmiRouter",
+  "main_contract": "EmiRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

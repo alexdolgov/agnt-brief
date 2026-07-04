@@ -1,0 +1,26 @@
+{
+  "component": "GovernorAlpha",
+  "main_contract": "GovernorAlpha",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x547b94c527a343e07927f4b2ab602d7c63af0792",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xefe147ffc12b847c0f2b6f19c11fa8266a8e3ddf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

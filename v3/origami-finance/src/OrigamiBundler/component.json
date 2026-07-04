@@ -1,0 +1,21 @@
+{
+  "component": "OrigamiBundler",
+  "main_contract": "OrigamiBundler",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/opal/nethermind_bundler.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/opal/panprog-bundler.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x346497a2471d39382cc9fda16ee94bec8d3ccb33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

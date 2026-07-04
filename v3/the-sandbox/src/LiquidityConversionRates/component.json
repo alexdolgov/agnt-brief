@@ -1,0 +1,29 @@
+{
+  "component": "LiquidityConversionRates",
+  "main_contract": "LiquidityConversionRates",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/eb59f23b-ef3c-4b3c-9d28-3455d5337d3f",
+    "https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/kyberswap-dec-25(Final).pdf",
+    "https://github.com/KyberNetwork/kyber-exclusive-amm-sc/blob/main/audits/06_24_2025_KyberNetwork_Omniscia_SecurityReview_UniswapV4Hooks.pdf",
+    "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/APRAudit/SmartDecAudit.pdf",
+    "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV3Audit/ChainSecurity_Kyberv3.pdf",
+    "https://github.com/spearbit/portfolio/blob/master/pdfs/Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf",
+    "https://hexens.io/audit-reports/kyber-network-smart-intent-protocol-dec-2025",
+    "https://immunefi.com/bug-bounty/hashflow/information",
+    "https://omniscia.io/reports/kyber-network-uniswap-v4-hooks-68163cf266222800187026b8",
+    "https://reports.chainsecurity.com/KyberNetwork/ChainSecurity_KyberNetwork_KyberSwapClassic_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9afeb4122240b58e67a55e11d55555b4ad73f4d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

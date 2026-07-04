@@ -1,0 +1,18 @@
+{
+  "component": "DooarSwapV2Router02-2",
+  "main_contract": "DooarSwapV2Router02",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

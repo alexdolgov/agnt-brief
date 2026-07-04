@@ -1,0 +1,18 @@
+{
+  "component": "WarCvxCrvFarmer",
+  "main_contract": "WarCvxCrvFarmer",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x857ba41f7957a8d8a4c8a61820cad8b119eda619",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

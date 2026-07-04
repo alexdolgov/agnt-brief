@@ -1,0 +1,26 @@
+{
+  "component": "FeeDistributor",
+  "main_contract": "FeeDistributor",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x829b3011a044058624d861c750d96e19a638d12c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb3eca24c3147cc6605a73a77b8cbbebf5e114877",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

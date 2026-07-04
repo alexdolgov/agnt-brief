@@ -1,0 +1,18 @@
+{
+  "component": "RolesExternalInitializer",
+  "main_contract": "RolesExternalInitializer",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7eb8220714e9f08073177dcb3a4a57d2f91becce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

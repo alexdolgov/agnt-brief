@@ -1,0 +1,18 @@
+{
+  "component": "MarketAid-2",
+  "main_contract": "MarketAid",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0fc9b5f4aeaf77d4aab26e0a3dd27710415db839",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

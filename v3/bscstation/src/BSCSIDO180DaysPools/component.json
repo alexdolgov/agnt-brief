@@ -1,0 +1,18 @@
+{
+  "component": "BSCSIDO180DaysPools",
+  "main_contract": "BSCSIDO180DaysPools",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2ab44155bd77e1d723a194177c18b0038f9ad4a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

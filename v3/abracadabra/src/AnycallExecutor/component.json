@@ -1,0 +1,26 @@
+{
+  "component": "AnycallExecutor",
+  "main_contract": "AnycallExecutor",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd9bfdd4d53cfe38a7266fdab2ca74549e75d2d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

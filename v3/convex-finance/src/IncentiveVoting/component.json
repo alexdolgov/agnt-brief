@@ -1,0 +1,18 @@
+{
+  "component": "IncentiveVoting",
+  "main_contract": "IncentiveVoting",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd8df0db401ab7ec7a06a8465134fa32132e850c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

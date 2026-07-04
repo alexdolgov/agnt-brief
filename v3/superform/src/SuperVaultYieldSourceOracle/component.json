@@ -1,0 +1,18 @@
+{
+  "component": "SuperVaultYieldSourceOracle",
+  "main_contract": "SuperVaultYieldSourceOracle",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeebb42210d8a8b165dcf154b325c588ee8df149a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

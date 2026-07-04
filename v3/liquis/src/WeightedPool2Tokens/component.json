@@ -1,0 +1,18 @@
+{
+  "component": "WeightedPool2Tokens",
+  "main_contract": "WeightedPool2Tokens",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9232a548dd9e81bac65500b5e0d918f8ba93675c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WstEthStEthExchangeRateChainlinkAdapter",
+  "main_contract": "WstEthStEthExchangeRateChainlinkAdapter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x905b7dabcd3ce6b792d874e303d336424cdb1421",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

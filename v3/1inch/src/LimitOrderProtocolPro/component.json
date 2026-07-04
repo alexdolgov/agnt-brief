@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrderProtocolPro",
+  "main_contract": "LimitOrderProtocolPro",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5349df28f8353dc8049edf11faae2d3f3b3346de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

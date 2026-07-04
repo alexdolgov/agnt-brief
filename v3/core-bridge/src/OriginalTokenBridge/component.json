@@ -1,0 +1,42 @@
+{
+  "component": "OriginalTokenBridge",
+  "main_contract": "OriginalTokenBridge",
+  "source_file_count": 18,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07a8590418edb7a60d9dea5a02b22b0afd3fc1e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x52e75d318cfb31f9a2edfa2dfee26b161255b233",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa4218e1f39da4aadac971066458db56e901bcbde",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

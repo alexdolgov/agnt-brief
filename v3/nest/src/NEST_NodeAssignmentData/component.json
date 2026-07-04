@@ -1,0 +1,18 @@
+{
+  "component": "NEST_NodeAssignmentData",
+  "main_contract": "NEST_NodeAssignmentData",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb086f99e36c2c0ef6c051ee9e4d638717bbc6cbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

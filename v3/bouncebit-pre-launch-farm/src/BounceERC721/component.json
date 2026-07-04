@@ -1,0 +1,26 @@
+{
+  "component": "BounceERC721",
+  "main_contract": "BounceERC721",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03c9fea061d38482e7a908ed7d99017d3a95eeb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6afa63ad4bdc9a7d7edb825cba612d4f3fccf42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

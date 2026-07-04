@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626BackingOracle",
+  "main_contract": "ERC4626BackingOracle",
+  "source_file_count": 67,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x16cd14a7fc3a6749a777fd3e9639a861e49e516a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

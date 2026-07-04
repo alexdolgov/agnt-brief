@@ -1,0 +1,18 @@
+{
+  "component": "Funder",
+  "main_contract": "Funder",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87f6b212a25677b9b12e7fcfa8c08fb3df25bc4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

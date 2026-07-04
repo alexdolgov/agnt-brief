@@ -1,0 +1,18 @@
+{
+  "component": "Admin-15",
+  "main_contract": "Admin",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeae5ce18fe34d1ee46c67f326c4a7f2038e6bd78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

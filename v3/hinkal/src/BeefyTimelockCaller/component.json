@@ -1,0 +1,18 @@
+{
+  "component": "BeefyTimelockCaller",
+  "main_contract": "BeefyTimelockCaller",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x46a1884484a51b799414c6f02aeed80246f4af2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

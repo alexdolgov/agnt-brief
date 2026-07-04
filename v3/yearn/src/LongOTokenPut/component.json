@@ -1,0 +1,18 @@
+{
+  "component": "LongOTokenPut",
+  "main_contract": "LongOTokenPut",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12c51dac6e63faac989abe39d1c698dad8ce3aa6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

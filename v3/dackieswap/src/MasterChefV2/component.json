@@ -1,0 +1,18 @@
+{
+  "component": "MasterChefV2",
+  "main_contract": "MasterChefV2",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5083e8d08e1e154e1465b1f044ba3a524de67fa1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PartyACloseFacet",
+  "main_contract": "PartyACloseFacet",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3f0602138441a1379bf090e604a6ff3ca73ac70f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

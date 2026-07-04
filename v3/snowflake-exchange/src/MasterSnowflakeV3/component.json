@@ -1,0 +1,18 @@
+{
+  "component": "MasterSnowflakeV3",
+  "main_contract": "MasterSnowflakeV3",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6a22e86a983db7c24a71b3666c1a7ca7925e3165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

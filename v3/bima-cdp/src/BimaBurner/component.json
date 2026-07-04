@@ -1,0 +1,26 @@
+{
+  "component": "BimaBurner",
+  "main_contract": "BimaBurner",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0de02a2d05a82222cbb98df3eea10cafc8c92c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93ee18e6d372a2c9bf8c876932e39c4126f80f09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

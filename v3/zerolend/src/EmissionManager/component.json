@@ -1,0 +1,20 @@
+{
+  "component": "EmissionManager",
+  "main_contract": "EmissionManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/zerolend/audits/blob/main/mundus/zerolend_report_depcheck_final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x749df84fd6de7c0a67db3827e5118259ed3abba5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

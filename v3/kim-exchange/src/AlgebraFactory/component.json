@@ -1,0 +1,27 @@
+{
+  "component": "AlgebraFactory",
+  "main_contract": "AlgebraFactory",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Defimoonorg/Audit-Report/blob/main/Horizon-Dex.pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/a1c7f31238a7b0d3390f37d178d855cf284cdcee/HorizonDEX_SC%20Comparison%20Report_11.07.2023_SA-1644%20(2).pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/main/Horizon-Dex-Defimoon.pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/main/Horizon-Sale_Reaudit.pdf",
+    "https://github.com/Horizon-Dex/Audits/blob/main/SmartContract_Audit_Solidproof_HorizonDEX.pdf",
+    "https://github.com/solidproof/projects/blob/main/2023/Horizon%20DEX/Logo.png",
+    "https://github.com/solidproof/projects/tree/main/2023/Horizon%20DEX",
+    "https://www.chainsecurity.com/security-audit/kyberswap-elastic"
+  ],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xb5f00c2c5f8821155d8ed27e31932cfd9db3c5d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

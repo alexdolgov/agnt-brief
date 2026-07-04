@@ -1,0 +1,18 @@
+{
+  "component": "GMVDToken",
+  "main_contract": "GMVDToken",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfa69292726a53d62111c9485c03ac551ba05679b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

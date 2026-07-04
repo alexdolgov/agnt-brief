@@ -1,0 +1,18 @@
+{
+  "component": "ManualLiquidation",
+  "main_contract": "ManualLiquidation",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x662c3afd2a1b5912c8c798af84f5abe25d33e5fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

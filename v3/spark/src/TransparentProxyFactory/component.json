@@ -1,0 +1,18 @@
+{
+  "component": "TransparentProxyFactory",
+  "main_contract": "TransparentProxyFactory",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x777803cbdd89d5d5bc1ddd2151b51b0b07f6bf37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

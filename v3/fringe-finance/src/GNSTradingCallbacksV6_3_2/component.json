@@ -1,0 +1,18 @@
+{
+  "component": "GNSTradingCallbacksV6_3_2",
+  "main_contract": "GNSTradingCallbacksV6_3_2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2899e59a4617c488935765799f9ec4439220d572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

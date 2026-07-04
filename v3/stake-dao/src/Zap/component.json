@@ -1,0 +1,18 @@
+{
+  "component": "Zap",
+  "main_contract": "Zap",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x018a56dc40ad9e0d973730f63d0dbc05c5e7986a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

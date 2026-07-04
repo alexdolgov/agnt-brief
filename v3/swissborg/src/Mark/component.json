@@ -1,0 +1,18 @@
+{
+  "component": "Mark",
+  "main_contract": "Mark",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf453b5b9d4e0b5c62ffb256bb2378cc2bc8e8a89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

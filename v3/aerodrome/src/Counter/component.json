@@ -1,0 +1,18 @@
+{
+  "component": "Counter",
+  "main_contract": "Counter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x430d459700add442a501f4b3c70de7f9c3d75fb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

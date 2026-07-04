@@ -1,0 +1,18 @@
+{
+  "component": "KingdomLocker",
+  "main_contract": "KingdomLocker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf9edb34cd302e9bc3e9443beb5eb237cc463fd87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

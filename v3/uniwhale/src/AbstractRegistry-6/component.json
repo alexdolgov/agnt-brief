@@ -1,0 +1,29 @@
+{
+  "component": "AbstractRegistry-6",
+  "main_contract": "AbstractRegistry",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://cdn.uniwhale.co/pdf/MetaScan_Report_Uniwhale.pdf",
+    "https://cdn.uniwhale.co/pdf/UniWhale_final_Secure3_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d9cc5232a455addeb99cb8221d5ccb784fa109b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd2e9d588a026aea78deb4da98fe48777c5fb1008",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "LiquidationLogic",
+  "main_contract": "LiquidationLogic",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x0fa6558a9aa6c37672761e7a8192ad725d1e56da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x78f1c2eb56e9de7163448f616ad2a04eb7fcd1e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

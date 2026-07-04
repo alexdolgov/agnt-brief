@@ -1,0 +1,34 @@
+{
+  "component": "MevxPluginImplementation",
+  "main_contract": "MevxPluginImplementation",
+  "source_file_count": 6,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x14cf4464bfd5638b1e0ddabb51fc85198ebd3ee6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x480b4b4f8f7d3f2ce48e592dbdea2efc8e144d68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9d611847985fab636bb8603cf0e4d1339754f0e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

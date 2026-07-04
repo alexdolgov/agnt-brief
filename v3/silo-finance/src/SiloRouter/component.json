@@ -1,0 +1,26 @@
+{
+  "component": "SiloRouter",
+  "main_contract": "SiloRouter",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x757748e1a208f23bfeb08b925fac64971ef0584e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc3f01b8c6b0338c952a5456e30a9fc26468c052a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AuraRewards",
+  "main_contract": "AuraRewards",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x786dce6c2490e715583d3840ee854ffd769aeba7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

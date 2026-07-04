@@ -1,0 +1,18 @@
+{
+  "component": "IWrapperFunctions",
+  "main_contract": "IWrapperFunctions",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1573a4de6a852e7f9647169a1c22d9cfed1d5f1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

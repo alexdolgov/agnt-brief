@@ -1,0 +1,20 @@
+{
+  "component": "CoverRouter",
+  "main_contract": "CoverRouter",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://389701914-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MN_8lt81m0bkkxuntw8%2F-MQnHkVDxSIblobTr8-Q%2F-MQnHrDVkyt7Hun89WE8%2FCover%20Protocol%20Peripheral%20Smart%20Contract%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35e1056a8f910a40710a3d106bd4851fcbbc9540",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

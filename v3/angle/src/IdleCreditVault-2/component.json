@@ -1,0 +1,18 @@
+{
+  "component": "IdleCreditVault-2",
+  "main_contract": "IdleCreditVault",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3daceb62bc64cdd4d12f7df6376b9f7ee6888dba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

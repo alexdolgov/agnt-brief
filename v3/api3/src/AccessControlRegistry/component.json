@@ -1,0 +1,22 @@
+{
+  "component": "AccessControlRegistry",
+  "main_contract": "AccessControlRegistry",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/api3dao/contracts/blob/main/audit-reports/2021-12-16%20Sigma%20Prime.pdf",
+    "https://github.com/api3dao/contracts/blob/main/audit-reports/2022-03-30%20Trail%20of%20Bits.pdf",
+    "https://github.com/api3dao/contracts/blob/main/audit-reports/2024-10-24%20Quantstamp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x92e5125adf385d86bedb950793526106143b6df1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

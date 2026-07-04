@@ -1,0 +1,26 @@
+{
+  "component": "MaxPainFeeHandler",
+  "main_contract": "MaxPainFeeHandler",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15e869f13e941eeb84069e5c6f22294f260baa08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7aca5424c570c2ad530ee3d4dbfd731a9aebacff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

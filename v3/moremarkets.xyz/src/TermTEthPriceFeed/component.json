@@ -1,0 +1,18 @@
+{
+  "component": "TermTEthPriceFeed",
+  "main_contract": "TermTEthPriceFeed",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4358e2d3c9658b50b0c3c353c9cbc6898de5bd72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

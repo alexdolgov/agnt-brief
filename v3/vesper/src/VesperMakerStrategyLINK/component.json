@@ -1,0 +1,26 @@
+{
+  "component": "VesperMakerStrategyLINK",
+  "main_contract": "VesperMakerStrategyLINK",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59543a595b69897b295f12964d3c7c37b3ad29c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x636a02323121b31e9a4956cac41eff697ef54409",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

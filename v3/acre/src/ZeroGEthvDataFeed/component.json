@@ -1,0 +1,26 @@
+{
+  "component": "ZeroGEthvDataFeed",
+  "main_contract": "ZeroGEthvDataFeed",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac79fed395c2238c4fa13084ee440e19e4deb0fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc18091a0e2970945646d28fad3a0ded684b8947b",
+      "is_proxy": true,
+      "implementation_address": "0xac79fed395c2238c4fa13084ee440e19e4deb0fe",
+      "liveness": "live"
+    }
+  ]
+}

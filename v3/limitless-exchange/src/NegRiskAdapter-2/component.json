@@ -1,0 +1,18 @@
+{
+  "component": "NegRiskAdapter-2",
+  "main_contract": "NegRiskAdapter",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xae363abc7b264755e8706d81475c3586d4543992",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

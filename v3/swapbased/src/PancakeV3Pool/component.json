@@ -1,0 +1,18 @@
+{
+  "component": "PancakeV3Pool",
+  "main_contract": "PancakeV3Pool",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x31afd670cf750f33b5145612130198594e5dd6be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

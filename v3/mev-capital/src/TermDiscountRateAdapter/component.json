@@ -1,0 +1,26 @@
+{
+  "component": "TermDiscountRateAdapter",
+  "main_contract": "TermDiscountRateAdapter",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x22eb9ab4ca9914d5821e05256f0efec2f675f59e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c6b0398eed7dafcb3c13d482400329a6e25acd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

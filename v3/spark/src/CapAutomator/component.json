@@ -1,0 +1,22 @@
+{
+  "component": "CapAutomator",
+  "main_contract": "CapAutomator",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sparkdotfi/sparklend-cap-automator/blob/master/audits/v100-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/sparklend-cap-automator/blob/master/audits/v110-cantina-audit.pdf",
+    "https://github.com/sparkdotfi/sparklend-cap-automator/blob/master/audits/v110-chainsecurity-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c1341636721b8b687647920b2e9481f3ab1f2ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

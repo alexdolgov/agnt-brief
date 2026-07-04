@@ -1,0 +1,18 @@
+{
+  "component": "JonesRdpxCallStrategy",
+  "main_contract": "JonesRdpxCallStrategy",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb98976a008191948a6857df824034d3c5f3aabc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

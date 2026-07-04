@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626BalanceChecker",
+  "main_contract": "ERC4626BalanceChecker",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x09c418a9d8027ef890a91ccdfce3c14d055e44dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x7a2949ef4595bc27ff5ec6e3889f51fce42ab7d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakingProxyConvex",
+  "main_contract": "StakingProxyConvex",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d9ef8f1cfa952a4a383e10a447dd23c5ea20eb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

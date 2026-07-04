@@ -1,0 +1,18 @@
+{
+  "component": "BQuery-2",
+  "main_contract": "BQuery",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x6e603014ace3ae06f34ffe259106af77c056d913",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

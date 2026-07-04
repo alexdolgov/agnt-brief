@@ -1,0 +1,21 @@
+{
+  "component": "Token-2",
+  "main_contract": "Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://app.solidproof.io/projects/hashdao",
+    "https://app.solidproof.io/projects/hashdao?audit=dc54b5c8-2954-4939-a653-7272083fe7b3"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "VaultsV2Feed",
+  "main_contract": "VaultsV2Feed",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x85e438c92773ad8501ec465da4f64bfb53c9724c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xbb4b6b300d2338aabc9b36947a8096e24d4b7f10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ZamaERC20",
+  "main_contract": "ZamaERC20",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

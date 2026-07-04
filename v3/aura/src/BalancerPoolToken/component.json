@@ -1,0 +1,58 @@
+{
+  "component": "BalancerPoolToken",
+  "main_contract": "BalancerPoolToken",
+  "source_file_count": 84,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x2faa140f90f76eeeebc191f4ef4b2634be1e4e91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x53eff5068a1a3b39a9157da6ef5a18d555c479ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x89aa28a8d2b327cd9db4adc0f259d757f000ae66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa59f164d6cf6ee5d63580c0bcea5ccb2e50b908c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa9aeeb57efe61338c0d07f3e5bb82519c4ad1103",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc19f5ff2fef08196e9f43448a9ce296e447a4820",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

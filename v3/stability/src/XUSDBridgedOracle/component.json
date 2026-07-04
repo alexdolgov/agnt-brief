@@ -1,0 +1,18 @@
+{
+  "component": "XUSDBridgedOracle",
+  "main_contract": "XUSDBridgedOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3b7d4a571b00c53a8f4f829f1b3ce78c375aa890",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

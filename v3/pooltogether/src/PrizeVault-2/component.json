@@ -1,0 +1,18 @@
+{
+  "component": "PrizeVault-2",
+  "main_contract": "PrizeVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x29499e2eb8ff1d076a35c275aeddd613afb1fa9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

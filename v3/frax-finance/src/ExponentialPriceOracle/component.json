@@ -1,0 +1,18 @@
+{
+  "component": "ExponentialPriceOracle",
+  "main_contract": "ExponentialPriceOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x01480a0c134cecc309015a564c7e292ba6e0f358",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

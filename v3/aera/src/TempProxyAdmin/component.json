@@ -1,0 +1,18 @@
+{
+  "component": "TempProxyAdmin",
+  "main_contract": "TempProxyAdmin",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x880d0a82dba76b4802f76a509d3aab1d22b1c4e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

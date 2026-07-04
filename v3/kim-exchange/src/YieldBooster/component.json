@@ -1,0 +1,18 @@
+{
+  "component": "YieldBooster",
+  "main_contract": "YieldBooster",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x82ae63704ba5e4942fe232092f2ba7a2221157c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

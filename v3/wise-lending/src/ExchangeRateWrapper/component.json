@@ -1,0 +1,26 @@
+{
+  "component": "ExchangeRateWrapper",
+  "main_contract": "ExchangeRateWrapper",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x439b0bb9dae61e63e3e1a048463aec7135627a48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1cd29534144697f18bebe64f0b59f4f2420b22f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

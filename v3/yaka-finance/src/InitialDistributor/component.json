@@ -1,0 +1,20 @@
+{
+  "component": "InitialDistributor",
+  "main_contract": "InitialDistributor",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.beosin.com/audits/YAKA_202405231200.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x18ed6e09719093fa42a521dd5b50fb206204b122",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

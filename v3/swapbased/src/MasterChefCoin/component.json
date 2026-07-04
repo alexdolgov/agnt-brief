@@ -1,0 +1,18 @@
+{
+  "component": "MasterChefCoin",
+  "main_contract": "MasterChefCoin",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1b732f612cd5f7d4b4bb514065170b84ea3c2b39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

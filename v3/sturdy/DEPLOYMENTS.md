@@ -1,0 +1,258 @@
+# sturdy — deployments
+
+212 verified deployment(s) across 78 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x00341aa5871d3968725523050962415921b73b78` | veSTRDYGauge | impl | inactive | no |
+| ethereum | `0x01812720944ee0a8e7f4077778bc5d1be9e419d5` | Gauge | impl | inactive | no |
+| ethereum | `0x034c2e12474f6873f4de17236771e84b3b616f56` | Gauge | impl | inactive | no |
+| ethereum | `0x03aef503d5e5be4dfb02b3425b737006a9b390eb` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x0669091f451142b3228171ae6ad794cf98288124` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x076d2be066d5042f21d8512722209e5c54783cab` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x09034a26478908572d279c4bbc7719f07ef249a9` | DebtManager | impl | live | yes |
+| ethereum | `0x094fa191db73b0f6dc2092b903d03b28384817e1` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x0b0e943d2cbae1da34ac6fbb7cd15b6cf05759b7` | ERC4626VaultLeverage | impl | inactive | no |
+| ethereum | `0x0b70f7093394ed748a4d1d72225df723256e3785` | TBTCYvTBTCWBTCOracle | impl | inactive | no |
+| ethereum | `0x0b7d884aaf53b3eb5a5ecb96651d956ccda10cec` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x0b8c80fd9cac5570ff829416f0afce7af6f3c6f8` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x0d1039bec12cb320161bbd5578c62f1f8294d4b3` | USDCUSD0PPOracle | impl | inactive | no |
+| ethereum | `0x0d3fc4979349732b0c74fde9ce6dfb124ab8178b` | PxETHYvStETHPxETHOracle | impl | inactive | no |
+| ethereum | `0x0dd49c449c788285f50b529145d6e6e76f02fd8f` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x1121ddd2007d2c6677e9987e289c3d52aaa9668c` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x125144a17c2e0594b8a5950c46b475e93fffe2de` | DebtManager | impl | live | yes |
+| ethereum | `0x137ff1d982928df3ec626e0a5b6cf7f015de3202` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x1398f9dc8058036c4a71c1025c67abfcf443e88e` | AggregatorDataProvider | impl | inactive | no |
+| ethereum | `0x14456685725f9a80d34d3ea586e40b1d1d2c5a68` | AeraVaultDebtManager | impl | inactive | no |
+| ethereum | `0x169a808d414d18f0e5482213b7c77f5b348fc05a` | RewardConfig | impl | inactive | no |
+| ethereum | `0x17f960aedb1320358c9458b9fc71e7ac85922667` | SturdyAllocator | impl | live | no |
+| ethereum | `0x1a3b229f2bc58517ad2f5cf6fcf53696b5dce04e` | STRDYVault | impl | inactive | no |
+| ethereum | `0x1acaa29a8877ff3e656172c5ac6bef10ec1bfc57` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x1b05ce15c459e257a82ca5ea57c36dd8d148fbad` | SturdySiloAprOracle | impl | inactive | no |
+| ethereum | `0x1be3c3e2427eb4faff65d67f831b3c0c9b72f660` | PxETHYvStETHPxETHOracle | impl | inactive | no |
+| ethereum | `0x1c055119dd2c8898332de19cd61ac248c62116bd` | SiloGateway | impl | live | yes |
+| ethereum | `0x1d7c71b632e3a9af670954c2aea3d4c668e121a6` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x1f081b4b351e7bd2bfb5b097742127c9314cdf24` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x1f4b81f8d61dda8a2752be59a9af9a9fb37c9ead` | ERC4626Oracle | impl | inactive | no |
+| ethereum | `0x200723063111f9f8f1d44c0f30afadf0c0b1a04b` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x2015d205260322a3971e44f70809c51ef3a967aa` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x22436aed9fe5a6408537e748280cb25a6d78978b` | ETHRSWETHPendlePTOracle | impl | inactive | no |
+| ethereum | `0x25f64d5f0cf5588387261682e794d5e8ff499453` | AeraVaultHooks | impl | inactive | no |
+| ethereum | `0x26fe402a57d52c8a323bb6e09f06489c8216ac88` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x27d653a14a9813f9938673e363fd730a3d92deac` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x31993d7b2620b77d410ff185e54535fd713459f3` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x31e9f9b698022813a58ca33e9864922481bddcb8` | SiloGateway | impl | live | yes |
+| ethereum | `0x371cd44e6ece0e275dda96e9363ec0c246604e2d` | Gauge | impl | inactive | no |
+| ethereum | `0x3723d77a72e829cb367b4f0cdf35b9b95dc3e57d` | ERC4626Oracle | impl | inactive | no |
+| ethereum | `0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7` | VariableYieldDistribution | impl | inactive | no |
+| ethereum | `0x3bd929574ff5dea4a23d3bb3b1ad0b95d0fe1e1d` | CrvUSDYvMkUSDCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x3f1e01c07539b9e4941ab58b1258cbb6c4066063` | DebtManager | impl | live | yes |
+| ethereum | `0x41d503c017223b981c4b4794281a732339d05367` | SwapBridgeAndCallFromMain | impl | live | no |
+| ethereum | `0x4827b1bb7fac4bef01273cde0abab695c32402a7` | CurveswapAdapter | impl | inactive | no |
+| ethereum | `0x49c27c15dbb239c4943c5f86361da724f8d1f8af` | ETHRSETHPendlePTOracle | impl | inactive | no |
+| ethereum | `0x49d4abe740552dbc1442d126668904674b254f7a` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x4bd8bcd78ff3440e11ee8356cd006d58510925b7` | TBTCSwBTCOracle | impl | inactive | no |
+| ethereum | `0x4c789eaac7d5cf7dcf8d267f6ca9f282348c74c8` | DebtManager | impl | live | yes |
+| ethereum | `0x4d07a57a893ae8a4de536827582b374050f4bed3` | SiloGateway | impl | live | yes |
+| ethereum | `0x4e72fcb2517ed90a3976dd8f50a387811ac4d883` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x4ee2217c63fb94fda42c63a083b07cecbbb352dc` | EmissionSchedule | impl | inactive | no |
+| ethereum | `0x501bbbef60c407b36ea6b87af4964559c5229b11` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x50710f355652439f7fcc752c58c15e6ae7626092` | GhoYvGhoCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x53aef4c08672e357185d5ead5388957cbc7d06a2` | SiloGateway | impl | live | yes |
+| ethereum | `0x5528c5da505eea1a419a1d96a9cdf22845423075` | DebtManager | impl | live | yes |
+| ethereum | `0x560e73e3280223b1696f664bbd9032cb8f783bb1` | STRDYVault | impl | inactive | no |
+| ethereum | `0x5aa6ac07f430095f9a239150f96549666fca7444` | Gauge | impl | inactive | no |
+| ethereum | `0x5ad6467e3e25cf83ddde1298f95fb0bff9910fce` | Gauge | impl | inactive | no |
+| ethereum | `0x5c2ea5bf039460099111c9f311d28a18093d0a09` | AeraVaultDebtManager | impl | inactive | no |
+| ethereum | `0x5f63e9a52d288add75b4ea0a0742f16c8a5f1dbd` | PendlePTLeverage | impl | inactive | no |
+| ethereum | `0x6138973b2c34eb1178e8162bda8e12500975b52c` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x616dd28f0223dbbeb2eeb1f72dcb847c7e117b75` | BaseLeverage | impl | inactive | no |
+| ethereum | `0x61892fa1b3a2757ee7163bf42c5e1735b47d03db` | Gauge | impl | inactive | no |
+| ethereum | `0x6311ff24fb15310ed3d2180d3d0507a21a8e5227` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x6465267d2b15c08362109851688eb40dc2530090` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x6481b119edd1e5f4a66baa30bf100be87c9a665c` | DebtManager | impl | live | yes |
+| ethereum | `0x6593bb7272237f36444dee44df46ab3b0233a9a0` | SturdySiloStrategy | proxy | inactive | no |
+| ethereum | `0x680f851a3796ab1aa1204ca8dd2214ef170d1a2d` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x68b444de25b84bf8c6b904eb572d7d1b6167e6b4` | ETHRSWETHPendlePTOracle | impl | inactive | no |
+| ethereum | `0x68f702ff07f14b057018ab8f3e0f7df03dd91f94` | ETHRSWETHPendlePTOracle | impl | inactive | no |
+| ethereum | `0x69764e3e0671747a7768a1c1afb7c0c39868cc9e` | AggregatorDataProvider | impl | inactive | no |
+| ethereum | `0x6d66cb69ed9bafc9b4da30bb187b3a93d5ebe920` | BaseStrategy | impl | inactive | no |
+| ethereum | `0x6f03c615a3e609d2cf149754cc55462b6477965c` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x6f7c66f09922c04218b54a04261fca2310c76adc` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x7077ef67fe49ffb1260b893f2cd8475eeb72bbbb` | SturdySiloStrategy | proxy | inactive | no |
+| ethereum | `0x71a0478d181d5fd5f14c46617a58d8e3095bbddb` | CrvUSDYvMkUSDCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x74f27507abe7a10395c2b2e4dc019c4a62418f3e` | TBTCEBTCOracle | impl | inactive | no |
+| ethereum | `0x7520aa7f8dfa6c2f5024f419b33c7c221a647c51` | AggregatorFactory | impl | inactive | no |
+| ethereum | `0x778fbe09c945788df6b627e4d9771f0c475eec59` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x78852021ce063012a79b9f7d443a70e988585ed7` | USDCYvUSDCRUSDYOracle | impl | inactive | no |
+| ethereum | `0x7a84460e6df989c258d31017bdddedd54cc88561` | IncentiveVoting | impl | live | no |
+| ethereum | `0x7b3a75114b1e38cb89e38960e0687107beca2d0c` | BaseLeverage | impl | inactive | no |
+| ethereum | `0x7e485966eea7f93e79646a7f4427a8004451fb0e` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x83d14ab0f1576403bf5ad9b9a535e829612d9e6b` | AggregatorDataProvider | impl | inactive | no |
+| ethereum | `0x887c89afd095baa5c1501ae56facfa9b83395ab5` | BaseLeverage-2 | impl | inactive | no |
+| ethereum | `0x88ebdad35b196ed8e39452c15db1159d249907f2` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0x8ad2a44bd6b75f866ef5a38528fd8ee721d45043` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x8ae2f8ef034cccc6d9beb9c76044ad46fadfaeb6` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x8b65341ad2ffd03f399ba1edec05aa6e9baaba99` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x8dde9a50a91cc0a5dabdc5d3931c1af60408c84d` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0x8ee9e244f92fa158147b6114d0a8a53dee76e97d` | TimelockController | impl | inactive | no |
+| ethereum | `0x911a874e4423df428f9f3cfb778abdddc98bfc81` | AggregatorV3WETHOracle | impl | inactive | no |
+| ethereum | `0x94c1201e12d5773410c35fe509dd0f4bb440d39d` | IncentiveDistributor | impl | live | no |
+| ethereum | `0x94c4b61ec63ba1bfea60a46f4c4e890b1d7e6ff5` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x97131b50cf5206633ec9d7bd5d1e5949809ea389` | ETHRedStoneOracle | impl | inactive | no |
+| ethereum | `0x973d03cc98e18e31201f4b61187dc4310c3bc798` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0x987a70f5dc138c6316cabf648582a091866b8ae5` | SiloGateway | impl | live | yes |
+| ethereum | `0x99093fdf0c026695c2549ae5ee14bc8f8ad7f986` | MockSwapBridgeAndCall | impl | inactive | no |
+| ethereum | `0x9ce963c99fdc8e3563e3787f8557b96d31ca2f63` | TBTCEBTCOracle | impl | inactive | no |
+| ethereum | `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4` | StableYieldDistribution | impl | inactive | no |
+| ethereum | `0xa206f00fbaab258c75afac35ab4a580fd3103c65` | AeraVaultV2 | impl | inactive | no |
+| ethereum | `0xa20db15743137a0b46ae2f4b94b9b1cf60aa5705` | SturdyLeverage | impl | inactive | no |
+| ethereum | `0xa23355ea4afddb111096f16406f11a6312a71cab` | DefaultDebtManager | impl | inactive | no |
+| ethereum | `0xa2c3ce1acb7b6b4cd289d9dc0c53a4226f386521` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xa325cb5841c5f0d87d0490281790064900ef6f1e` | DebtManager | impl | live | yes |
+| ethereum | `0xa34fe4d13ca737d0b1f8d9c169cbd044c56f17ad` | ERC4626Oracle | impl | inactive | no |
+| ethereum | `0xa460cc3dc111e42939512b29390e576f8506d213` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xa496c6d6738e12c00b66de698fa15f15b63c5139` | DebtManager | impl | live | yes |
+| ethereum | `0xa5961b1e125b4dc17675a7635ede224fa1580832` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xa621a3809fda139c7aa63d7736d2e3eb0b351d0b` | ETHEETHPendlePTOracle | impl | inactive | no |
+| ethereum | `0xa70d1906b7779293ca7e12e369b2722cefb9fafd` | STRDYLocker | impl | inactive | no |
+| ethereum | `0xaa7fcaffdfaa0f96ccfc685a37da99957d07ecc4` | CrvUSDYvMkUSDCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xadbbc6051bdb840d0f21f9bea0d02a1023359824` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xaeb3607ec434454ceb308f5cd540875efb54309a` | Token | impl | live | no |
+| ethereum | `0xaebee3d4306da0d6d0a34e51c87fbc79356f623d` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xafdf33922b129629d77dfcba1286ba0c669b8b57` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xb06559a9b136b3bee486f4c16e5375b0edad4a80` | AggregatorDataProvider | impl | inactive | no |
+| ethereum | `0xb3bf04a939aacff5bdcfc273ce4f36cf29f063db` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xb43f50b71e2b635e4778e32019609e7ad3b8e07c` | BaseStrategy-2 | impl | inactive | no |
+| ethereum | `0xb7a81ef9fc8495e3cb39687ecd012eda5168044b` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xb912bef156022d4d143c52f86b2dc1b24dd0c5c0` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xba4c10a7afa6376c47dabb9bedf349ea3a08170f` | YieldDistributorAdapter | impl | inactive | no |
+| ethereum | `0xbd87149156cebe7ef5cdd2669581a6cb236c84c3` | Gauge | impl | inactive | no |
+| ethereum | `0xbe7f338c04f4a672d4c1ebee99648a6aac71d86e` | TimelockController | impl | inactive | no |
+| ethereum | `0xbf7bab7991ab76f8b9e8deab3daa0fa6b5024bc6` | Gauge | impl | inactive | no |
+| ethereum | `0xc2be0d0ad61ce051b5addcb105ff0d02c842e72c` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xc3c8f4c35cbf9ea185330ff0090771f08cff78b7` | AeraVaultDebtManager | impl | inactive | no |
+| ethereum | `0xc6fe97da554366b47954890b5975938729675e2b` | AeraStrategy | impl | inactive | no |
+| ethereum | `0xc7e66709dbc9a6fe99064e19b1a755c2d9354c1a` | SiloGateway | impl | live | yes |
+| ethereum | `0xc8d4a8a7f593e73cd32cd6c5fb11fe20f23f9695` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0xca262a0e6f46d70d81400341c04afb479a42d13d` | USDCCrvUSD0USD0PPOracle | impl | inactive | no |
+| ethereum | `0xcc06b025ab03ebddcc545912def1714b4da8f521` | DebtManager | impl | live | yes |
+| ethereum | `0xcc46dc2e682951dcb92ef251aaddd4bb96d1532e` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xce05d591020716c58425e81b0dbe2912bced30ca` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xcf815a0a6031682e9902966843011deac96c22cb` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xd002dc1c05fd7ff28c55eea3ddcb9051b2b81bd2` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0xd23bfa060c2dcb70d4aeb78ebd2ee9a172cf5818` | UniswapAdapter | impl | inactive | no |
+| ethereum | `0xd32d748039bd32d68b3e492dde3af955be70ec14` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xda11c8d85203f9d616246754b8957f00892476b1` | YieldDistributorAdapter | impl | inactive | no |
+| ethereum | `0xdab149804cfceb2b05ecccae3e798026793e0110` | BaseStrategy-3 | impl | inactive | no |
+| ethereum | `0xdad951530ef3a823d835ef34367a96f5b9077cdb` | BalancerswapAdapter | impl | inactive | no |
+| ethereum | `0xdb6ce32d36a9d807bab0c3947b31b06706758492` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xdba0d88bc28a47707d62b8ac15cdd4383de63275` | Gauge | impl | inactive | no |
+| ethereum | `0xdbe0365dcb4e0b35b36402546d58e0c1dac86aef` | SwapBridgeAndCallFromMain | impl | live | no |
+| ethereum | `0xddb80a52cf2098647146e0bbeb2961502c322c37` | ETHRSETHPendlePTOracle | impl | inactive | no |
+| ethereum | `0xde9e69a8ecc6e2cd410f186c53b677aca7a92aed` | SiloGateway | impl | live | yes |
+| ethereum | `0xdeda72c39b7b2fb0433af9cfc21031d5ef3b126a` | ETHRedStoneOracle | impl | inactive | no |
+| ethereum | `0xdf3914ad8e29509718ec1efc5037a7f1764380b8` | TimelockController | impl | inactive | no |
+| ethereum | `0xe01c0e2a2afede29c955d6b0f6f0ed7738fb3d18` | STRDYLocker-2 | impl | live | no |
+| ethereum | `0xe0dd70c18976ad7334354234c73ce2a4b749f5f0` | CrvUSDYvMkUSDCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xe47fe254107aab9def7a8d8d33b8551784f53f10` | BaseLeverage-3 | impl | inactive | no |
+| ethereum | `0xe53ffd56fadc7030156069ae1b34de0ab8b703f4` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xe66a2563db193c9a8cb99c7698142ed2c3c6c36e` | CurveswapAdapter | impl | inactive | no |
+| ethereum | `0xe7c6beeb41f6a9f2576a318cb0aadf8994dfa9f4` | BaseLeverage | impl | inactive | no |
+| ethereum | `0xe8384d78667dfc4b4d5eae90308ea95a58229166` | ERC4626Oracle | impl | inactive | no |
+| ethereum | `0xe964295d09c540d0408f48ccafd4ec399bd3ed37` | ERC4626VaultLeverage | impl | inactive | no |
+| ethereum | `0xea34b9753ea7b2fb94d30a32a57226275d1840db` | TimelockController | impl | inactive | no |
+| ethereum | `0xeb8c48d3e505da1113d8eef1c7cf587767c25591` | StakedTokenIncentivesController | impl | inactive | no |
+| ethereum | `0xed2e83dd4ca97b8abe6d8e1a63eeccd82583b357` | IncentiveVoting | impl | inactive | no |
+| ethereum | `0xeee4ecddbb6145839e52f5bc177331db56f26c6c` | USDCUSDYOracle | impl | inactive | no |
+| ethereum | `0xeef271a0071423ea56d38e4abe748165cc432e3f` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0xf265f91e07710a35b4667c48d7ad969b5e0c79ba` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xf2705f799cb96a70bc503a5db9d7190768203f4d` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xf2d6c582609f77166914de80b4485084e54bdade` | DebtManager | impl | live | yes |
+| ethereum | `0xf4386d2d01aed337e3c3ccbca96f5e3ec5d81ac6` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xf7be7370005896c720c2a84da870e041acf41a4d` | YieldDistributorAdapter | impl | inactive | no |
+| ethereum | `0xf94b349d52c542abd8fb612c2854974e1d72223b` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0xfa68707be4b58fb9f10748e30e25a15113edee1d` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0xfbbd6558b19b9663cfde0e55800622361cb1a0ab` | Gauge | impl | inactive | no |
+| ethereum | `0xfd3a26d0685a683ffc8cd4614687ac266a915437` | SturdySiloStrategy-2 | impl | inactive | no |
+| ethereum | `0xfe9f717417cb06219cb4b5b22b9efbbcdf89d32c` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xfef192cabf37a2396a8665f42f9a499a52baa185` | ETHSWETHOracle | impl | inactive | no |
+| linea | `0x09cf3b20f56bc3461a828e9c167db4a33addf855` | NileswapAdapter | impl | inactive | no |
+| linea | `0x298d679cb18dece7271f56589859bc4da6c91f87` | SturdyPairDeployer | impl | inactive | no |
+| linea | `0x4534f53a81416a83f6baf5ac63c94aed1fea1303` | AggregatorAccountant-2 | impl | inactive | no |
+| linea | `0x5c0801270b471311e3bf7bb3637a7d12b13d747c` | SturdyLeverageWihtoutFlashloanLinea | impl | inactive | no |
+| linea | `0xd8905400105358bab2eddcb78da3478368c343f1` | ETHBasedOracle | impl | inactive | no |
+| mode | `0x03aef503d5e5be4dfb02b3425b737006a9b390eb` | VariableInterestRate | impl | unknown | no |
+| mode | `0x0c2f5023d2e9ec881234ebc167311e596a703faa` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0x0ebf145136acd214997c1ccaa6c686d1880bb532` | PythBasedAssetOracle | impl | unknown | no |
+| mode | `0x16343853f785dd24a93fe4040063abcbdc409441` | VariableInterestRate | impl | unknown | no |
+| mode | `0x168f6c2c46a58f4394924d14b9dc0a2b394519d9` | BaseStrategy-4 | impl | unknown | no |
+| mode | `0x1c278caeda6730a7dc1fe38450c521a43069b379` | VariableInterestRate | impl | unknown | no |
+| mode | `0x1ea0f1fcb10b58f5e43c4c764cab1a35ab6bc792` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0x39d9dbebba50b8dc89c2819e863c1e146235bfef` | VariableInterestRate | impl | unknown | no |
+| mode | `0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7` | PythBasedAssetOracle | impl | unknown | no |
+| mode | `0x3d34bcb3da8a7e74a6207c34612d763b94cd1b87` | SturdyLeverageWihtoutFlashloan1 | impl | unknown | no |
+| mode | `0x46dd996be31a31483a3c5d8d513eb6536eae3bfa` | PythBasedAssetOracle | impl | unknown | no |
+| mode | `0x4c2dfa85753ef95eb822158e8ac06d2b131137d8` | SupswapAdapter | impl | inactive | no |
+| mode | `0x5adac43234bd62818401a472c62e25c9a1142cfb` | VariableInterestRate | impl | unknown | no |
+| mode | `0x5fad91704f52b173a5d9fb8cf83822a1d9848892` | SiloHelper | impl | unknown | no |
+| mode | `0x6605111929527485e418e7714d24fb72f5380e1f` | SturdyPairRegistry | impl | unknown | no |
+| mode | `0x69ad3538049a8401ac162193c889bae9388cffa2` | VariableInterestRate | impl | unknown | no |
+| mode | `0x6cb759c980c2922731fe13b2edce5d4ed47ad6fd` | SturdyLeverageWihtoutFlashloan | impl | unknown | no |
+| mode | `0x6f7c66f09922c04218b54a04261fca2310c76adc` | API3BasedETHEZETHOracle | impl | unknown | no |
+| mode | `0x83c0217e1373afe161ca378e3a141fe340eb4b6c` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0x884b41145ae3816a0b1a3bae5d2f562be3d31cec` | VariableInterestRate | impl | unknown | no |
+| mode | `0x90832de4d1915c6e5906f4605babe7c84a08a0c2` | VariableInterestRate | impl | unknown | no |
+| mode | `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4` | SturdyLeverageWihtoutFlashloan | impl | unknown | no |
+| mode | `0xae35858a62c3e6ded2945b76a2f08a0077e4ac8d` | SturdyWhitelist | impl | unknown | no |
+| mode | `0xae610460522f3e71c40ad6a2c70f486341b88daf` | VariableInterestRate | impl | unknown | no |
+| mode | `0xb06559a9b136b3bee486f4c16e5375b0edad4a80` | VariableInterestRate | impl | unknown | no |
+| mode | `0xba4c10a7afa6376c47dabb9bedf349ea3a08170f` | AprOracle | impl | unknown | no |
+| mode | `0xcde573ee42c64e297a842eeef81eececa93a887c` | VariableInterestRate | impl | unknown | no |
+| mode | `0xd577429db653cd20effcd4977b2b41a6fd794a3b` | AggregatorAccountant | impl | unknown | no |
+| mode | `0xd7d7d7075139ce8ce02f97bd113f3f89f60851c3` | PythBasedAssetOracle | impl | unknown | no |
+| mode | `0xd8905400105358bab2eddcb78da3478368c343f1` | SturdyWhitelist | impl | unknown | no |
+| mode | `0xde9e69a8ecc6e2cd410f186c53b677aca7a92aed` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0xe88c038cedd710a012aba286d56e2ef7441b0b42` | VariableInterestRate | impl | unknown | no |
+| mode | `0xeff461778374f2bda7204e8ae366560deca73d16` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0xfd364c4f8e03b76f4d8f0f8121a0a31d05f49372` | VariableInterestRate | impl | unknown | no |
+
+## Source unavailable (36)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- ethereum `0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f`
+- ethereum `0xb825a2d7141f6c4c357d4198e6e2d20369bf5108`
+- ethereum `0xd577429db653cd20effcd4977b2b41a6fd794a3b`
+- ethereum `0xf0382a9eca5276d7b4bbcc503e4159c046c120ec`
+- linea `0x20d0cdf9004bf56bca52a25c9288aad0ebb97d59`
+- linea `0x39d9dbebba50b8dc89c2819e863c1e146235bfef`
+- linea `0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7`
+- linea `0x884b41145ae3816a0b1a3bae5d2f562be3d31cec`
+- linea `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4`
+- linea `0xae35858a62c3e6ded2945b76a2f08a0077e4ac8d`
+- linea `0xd67da8636ae87b0cecbda2e66db58d4839722b52`
+- linea `0xd7d7d7075139ce8ce02f97bd113f3f89f60851c3`
+- linea `0xda11c8d85203f9d616246754b8957f00892476b1`
+- linea `0xed7d1b8dea862005b7d9cf0b2a5f9f0e816f85fb`
+- mode `0x2040a9adcfa0adea197a6a466f5e259a27fd15a0`
+- mode `0x31993d7b2620b77d410ff185e54535fd713459f3`
+- mode `0x4e72fcb2517ed90a3976dd8f50a387811ac4d883`
+- mode `0x56a1e840bfe18e82a412134ab6b0618ab1db406d`
+- mode `0x5829d7495110ccc36a48e35d58d3d840546ce690`
+- mode `0x61eea4770d7e15e7036f8632f4bcb33af1af1e25`
+- mode `0x63e3ca7f666c4923d2b1d0bb1c301ba9a57f9560`
+- mode `0x644b50951f974a63e028d67dd7aee520c0f1eb3b`
+- mode `0x6cef966e111362ff22d8789b1fa886e4ef674c5a`
+- mode `0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f`
+- mode `0x83eb3cf482810e79e9f562d8de87fedf038be768`
+- mode `0x96a1a3ce4b9cb36ad259c3066d583acd358dcca9`
+- mode `0x9cf92c22c36fe62d789a489f40b136db345f414b`
+- mode `0xb3d159d3c656925738e5733fb3aeb2a9cab92839`
+- mode `0xcdb88a11f4f825a9372f97010b7c762e3db9e1c6`
+- mode `0xd2bc9a2f722c0970cc9520a03b039a45da897787`
+- mode `0xf0382a9eca5276d7b4bbcc503e4159c046c120ec`
+- mode `0xf7be7370005896c720c2a84da870e041acf41a4d`
+- mode `0xfb6113ccd6a20f235a3631876f2791fec66233e7`
+- optimism `0x5fad91704f52b173a5d9fb8cf83822a1d9848892`
+- optimism `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4`
+- optimism `0xda11c8d85203f9d616246754b8957f00892476b1`

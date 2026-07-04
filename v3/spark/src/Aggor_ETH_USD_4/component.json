@@ -1,0 +1,18 @@
+{
+  "component": "Aggor_ETH_USD_4",
+  "main_contract": "Aggor_ETH_USD_4",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb20a1374efcafa32f701ab14316fa2e5b3400ed5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

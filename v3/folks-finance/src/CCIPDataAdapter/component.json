@@ -1,0 +1,34 @@
+{
+  "component": "CCIPDataAdapter",
+  "main_contract": "CCIPDataAdapter",
+  "source_file_count": 21,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b8c6ec1495068abe2a25fb4e63b652d83467572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb48a1ee43b91959a1686b70b7cd482c65de69c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xeb48a1ee43b91959a1686b70b7cd482c65de69c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

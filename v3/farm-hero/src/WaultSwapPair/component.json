@@ -1,0 +1,18 @@
+{
+  "component": "WaultSwapPair",
+  "main_contract": "WaultSwapPair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

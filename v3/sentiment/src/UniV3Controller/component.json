@@ -1,0 +1,28 @@
+{
+  "component": "UniV3Controller",
+  "main_contract": "UniV3Controller",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arbitraryexecution/publications/blob/main/assessments/Sentiment_Oracle_20220727.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f0da4c622c07d126c87fd3fa9b93bf5721f9edb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7db7856dda0ae7321b2760503fcf359d3c0114fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

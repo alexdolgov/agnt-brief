@@ -1,0 +1,18 @@
+{
+  "component": "OracleV1",
+  "main_contract": "OracleV1",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc92ae5e2a955a3440f677c1c60d48baa1cfa9eda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "DssIncreaseDelay24Spell",
+  "main_contract": "DssIncreaseDelay24Spell",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a7d50b73acf1d2b4073ca5f94890a3c05c01401",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdd4aa99077c5e976afc22060eeafbbd1ba34eae9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

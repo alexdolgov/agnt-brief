@@ -1,0 +1,77 @@
+{
+  "component": "JDola",
+  "main_contract": "JDola",
+  "source_file_count": 9,
+  "deployment_count": 8,
+  "audited": true,
+  "audits_covering": [
+    "https://www.inverse.finance/audits/junior-sherlock-audit.pdf",
+    "https://www.inverse.finance/audits/junior-sherlock-contest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ce3f5d0c5f84a203167261f11c2e12c3d90fbb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5bacafbe2788b0ec837eb95f05938daf49224f54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5cebb0db9cd7544201e91d17425dfcb919fd91b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x633821b8e003344e5223509277f2084ea809a452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6607efa88da3a37f9c645a586cfe73931fddb933",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6f80a22a57c7f0257094ea8d426af3f747defbc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd178f7a559d486ab1056c37630a51682c2c72f81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4307a1354c0463812b3ce0f509c227f5cd1ccfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

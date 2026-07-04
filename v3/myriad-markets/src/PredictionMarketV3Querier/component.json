@@ -1,0 +1,18 @@
+{
+  "component": "PredictionMarketV3Querier",
+  "main_contract": "PredictionMarketV3Querier",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdefb36c47754d2e37d44b8b8c647d4d643e03bad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

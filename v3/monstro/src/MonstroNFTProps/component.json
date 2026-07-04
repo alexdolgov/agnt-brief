@@ -1,0 +1,18 @@
+{
+  "component": "MonstroNFTProps",
+  "main_contract": "MonstroNFTProps",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbb0c01c090bbf77440119f1e2e83443fb04b3452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

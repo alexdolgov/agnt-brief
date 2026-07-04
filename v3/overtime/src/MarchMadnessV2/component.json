@@ -1,0 +1,18 @@
+{
+  "component": "MarchMadnessV2",
+  "main_contract": "MarchMadnessV2",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x30b887a0ef84c65624518ca749fe0fbbaaf404df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

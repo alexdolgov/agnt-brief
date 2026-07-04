@@ -1,0 +1,20 @@
+{
+  "component": "TermMaxOrder",
+  "main_contract": "TermMaxOrder",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/term-structure/audits/blob/main/TermMax/TermMax-Cantina-competition-20250320.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1649e4e5e5c8b9714f847d1ac14d20c74ea36fd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

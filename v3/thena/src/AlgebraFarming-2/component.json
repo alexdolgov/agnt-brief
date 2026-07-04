@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraFarming-2",
+  "main_contract": "AlgebraFarming",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7fb6b676b7f7eaf8f60b057697e6e1b108189036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

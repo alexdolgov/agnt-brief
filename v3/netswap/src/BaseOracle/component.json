@@ -1,0 +1,18 @@
+{
+  "component": "BaseOracle",
+  "main_contract": "BaseOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xba34fc26ad8353b1f7e396b6129354bd1ee339c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

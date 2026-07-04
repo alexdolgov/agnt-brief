@@ -1,0 +1,18 @@
+{
+  "component": "PoolCreationHelper",
+  "main_contract": "PoolCreationHelper",
+  "source_file_count": 75,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x55dcce8165c88aad4403a15a9ce3a8e244657dd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

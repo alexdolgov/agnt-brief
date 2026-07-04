@@ -1,0 +1,18 @@
+{
+  "component": "Block_Oracle",
+  "main_contract": "Block Oracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb10cface69821ff7b245cf5f28f3e714fdbd86b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

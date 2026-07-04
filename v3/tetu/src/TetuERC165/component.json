@@ -1,0 +1,18 @@
+{
+  "component": "TetuERC165",
+  "main_contract": "TetuERC165",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x078b7c9304eba754e916016e8a8939527076f991",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

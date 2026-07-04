@@ -1,0 +1,26 @@
+{
+  "component": "PrismaDepositor",
+  "main_contract": "PrismaDepositor",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x61404f7c2d8b1f3373eb3c6e8c4b8d8332c2d5b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa88a7fb313158d0c68047549ea9df0f121f29ce9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

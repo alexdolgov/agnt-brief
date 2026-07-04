@@ -1,0 +1,26 @@
+{
+  "component": "Config",
+  "main_contract": "Config",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd3a6c3e9e823e7c13fb0ee71f9360bacdd1a42e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfaf36ef0f6942232edbc55ac087a3d78ce022886",
+      "is_proxy": true,
+      "implementation_address": "0xcd3a6c3e9e823e7c13fb0ee71f9360bacdd1a42e",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyJoeBase-19",
+  "main_contract": "StrategyJoeBase",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xacd26b78778d75c672abd320cf6c25e76be2bd32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "SpiralRouterV1",
+  "main_contract": "SpiralRouterV1",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0340d9491fe7740af9c643c3c2b4126d23058c3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb1371d494d608f6e5f6438f69f686953b0a50e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

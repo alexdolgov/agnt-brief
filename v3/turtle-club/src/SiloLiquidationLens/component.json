@@ -1,0 +1,18 @@
+{
+  "component": "SiloLiquidationLens",
+  "main_contract": "SiloLiquidationLens",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06bed4637e8cf9e4efc1b227e0c322d7042680a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

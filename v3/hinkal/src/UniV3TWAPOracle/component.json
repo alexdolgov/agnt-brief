@@ -1,0 +1,18 @@
+{
+  "component": "UniV3TWAPOracle",
+  "main_contract": "UniV3TWAPOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59985d79e1e69f659f4ab97db07a35ce73d9174b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

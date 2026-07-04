@@ -1,0 +1,18 @@
+{
+  "component": "SoliSnekVaultTokenFactory",
+  "main_contract": "SoliSnekVaultTokenFactory",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4b6dae049a35196a773028b2e835cccce9dd4723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

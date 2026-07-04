@@ -1,0 +1,18 @@
+{
+  "component": "BmxLockingContract",
+  "main_contract": "BmxLockingContract",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xff12748ed4e4cd5864a5e0b22e69bf572827a903",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

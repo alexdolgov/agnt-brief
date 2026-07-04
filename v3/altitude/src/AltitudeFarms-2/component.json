@@ -1,0 +1,18 @@
+{
+  "component": "AltitudeFarms-2",
+  "main_contract": "AltitudeFarms",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa912cb42ef8a9e5898cae13f678d372b1a18db82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

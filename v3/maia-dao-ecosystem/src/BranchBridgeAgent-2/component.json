@@ -1,0 +1,18 @@
+{
+  "component": "BranchBridgeAgent-2",
+  "main_contract": "BranchBridgeAgent",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x89b63a9439b4158e8714259ef2519e5d6053bf16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

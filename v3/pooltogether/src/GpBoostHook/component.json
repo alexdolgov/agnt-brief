@@ -1,0 +1,18 @@
+{
+  "component": "GpBoostHook",
+  "main_contract": "GpBoostHook",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1dcfb8b47c2f05ce86c21580c167485de1202e12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

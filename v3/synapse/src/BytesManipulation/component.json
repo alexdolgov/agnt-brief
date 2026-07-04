@@ -1,0 +1,18 @@
+{
+  "component": "BytesManipulation",
+  "main_contract": "BytesManipulation",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5948635463a9c8cecaa17b5d9ba846d789df6df4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

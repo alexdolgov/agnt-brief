@@ -1,0 +1,18 @@
+{
+  "component": "ERC20sMAIA",
+  "main_contract": "ERC20sMAIA",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xd7a586ce5250befab2cc2239f7226b9602536e6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

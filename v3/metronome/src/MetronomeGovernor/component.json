@@ -1,0 +1,18 @@
+{
+  "component": "MetronomeGovernor",
+  "main_contract": "MetronomeGovernor",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4cfddc60c932a2ea811ac63fb41efce95b3a34e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

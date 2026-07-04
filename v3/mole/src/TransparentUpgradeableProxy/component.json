@@ -1,0 +1,26 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x02ba08f6218e98ab849d5c8860195fed8cbc705e",
+      "is_proxy": true,
+      "implementation_address": "0xfbd7d649e92992de2510c75943806734f4be3bf4",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151",
+      "is_proxy": true,
+      "implementation_address": "0x4b32834ddfa9e781c7a4ca3dbe5b73266911376d",
+      "liveness": "live"
+    }
+  ]
+}

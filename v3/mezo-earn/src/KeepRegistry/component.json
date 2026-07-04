@@ -1,0 +1,18 @@
+{
+  "component": "KeepRegistry",
+  "main_contract": "KeepRegistry",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

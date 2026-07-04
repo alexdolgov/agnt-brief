@@ -1,0 +1,18 @@
+{
+  "component": "SpliceWeETHL2SY",
+  "main_contract": "SpliceWeETHL2SY",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x356b2ebc41fcc7a84b59e998231c14317a5e286c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

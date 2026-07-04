@@ -1,0 +1,18 @@
+{
+  "component": "Upgradeable721",
+  "main_contract": "Upgradeable721",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x26f6b439499720e40f679af5d20d8c193dc5115c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

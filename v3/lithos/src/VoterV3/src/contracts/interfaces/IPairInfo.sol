@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.29;
+
+interface IPairInfo {
+    function token0() external view returns (address);
+    function reserve0() external view returns (uint256);
+    function decimals0() external view returns (uint256);
+    function token1() external view returns (address);
+    function reserve1() external view returns (uint256);
+    function decimals1() external view returns (uint256);
+    function isPair(address _pair) external view returns (bool);
+}

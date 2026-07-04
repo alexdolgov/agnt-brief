@@ -1,0 +1,18 @@
+{
+  "component": "YBUSDBridge",
+  "main_contract": "YBUSDBridge",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x17dacad8aa962963830136422e2eaa8d27d014f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

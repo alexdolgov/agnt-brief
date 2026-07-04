@@ -1,0 +1,44 @@
+{
+  "component": "UnicPumper",
+  "main_contract": "UnicPumper",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/uniclyNFT/Resources/blob/main/Unicly%20Security%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c042f6de5e08e64a00575c692e51f78455dba67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e5b1f637a03976f2c472265806aa1bcc969ca85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc763dc7c46a7ae03ba99bb87070b126a2a2afa94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfce761d7e0d99300897de97025558670bb269dd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

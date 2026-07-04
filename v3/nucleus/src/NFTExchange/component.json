@@ -1,0 +1,18 @@
+{
+  "component": "NFTExchange",
+  "main_contract": "NFTExchange",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6494c198a3caf90eb0a023f1191e6edc13a41042",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

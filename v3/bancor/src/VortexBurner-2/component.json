@@ -1,0 +1,18 @@
+{
+  "component": "VortexBurner-2",
+  "main_contract": "VortexBurner",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8843f65f11b2367bb05a6e120c44780088976748",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

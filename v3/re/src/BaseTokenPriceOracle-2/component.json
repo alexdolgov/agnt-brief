@@ -1,0 +1,18 @@
+{
+  "component": "BaseTokenPriceOracle-2",
+  "main_contract": "BaseTokenPriceOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38ce52d3ad37929612b047130ce804bdd308ad26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

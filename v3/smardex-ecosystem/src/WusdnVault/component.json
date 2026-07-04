@@ -1,0 +1,18 @@
+{
+  "component": "WusdnVault",
+  "main_contract": "WusdnVault",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa6d14921219a7be3660268495275937eb324d967",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

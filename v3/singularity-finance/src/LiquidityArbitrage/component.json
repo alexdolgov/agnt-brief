@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityArbitrage",
+  "main_contract": "LiquidityArbitrage",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf1b65afcbd3747cbda6c488f3abe39a8a784d80e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

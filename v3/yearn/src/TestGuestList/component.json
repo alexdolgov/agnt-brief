@@ -1,0 +1,18 @@
+{
+  "component": "TestGuestList",
+  "main_contract": "TestGuestList",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1403eea5fff87253658d755030a73dfbca2993ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UniV3RelayerFactory",
+  "main_contract": "UniV3RelayerFactory",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb6a352636588d833d2795e67eaafdc5b6f3948c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

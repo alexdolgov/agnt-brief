@@ -1,0 +1,50 @@
+{
+  "component": "TetuVoter",
+  "main_contract": "TetuVoter",
+  "source_file_count": 21,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x412c53774d3a21038326bdd46e721e5add90254f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4cc8ddfa8daa2023c4187ce5512b932e76cac419",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4cdf28d6244c6b0560aa3ebcfb326e0c24fe8218",
+      "is_proxy": true,
+      "implementation_address": "0xd96f551ff55703959a296eca42b0b41d323c9c80",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x764140b789aff2e7ee43c0865cd03b51d01af36e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8f9f1d85f08c0c5875b285b7fb00599b90cb75aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

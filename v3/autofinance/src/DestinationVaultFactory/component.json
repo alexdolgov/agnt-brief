@@ -1,0 +1,26 @@
+{
+  "component": "DestinationVaultFactory",
+  "main_contract": "DestinationVaultFactory",
+  "source_file_count": 67,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37de6f9d23d26dfbcb6dbee86dc7ca538c0ff124",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6c32cd2197dd6badd828051e50664e3cb199678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

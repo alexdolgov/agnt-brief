@@ -1,0 +1,18 @@
+{
+  "component": "Brush",
+  "main_contract": "Brush",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe51ee9868c1f0d6cd968a8b8c8376dc2991bfe44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

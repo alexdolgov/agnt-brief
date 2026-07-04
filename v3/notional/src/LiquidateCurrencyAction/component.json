@@ -1,0 +1,42 @@
+{
+  "component": "LiquidateCurrencyAction",
+  "main_contract": "LiquidateCurrencyAction",
+  "source_file_count": 73,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ff45fd2ad282b7e6e29dc10dbe6b3fc907284b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3abbd5fad059fc2b966b2de879e936a73268a0b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b986a60216aca687457782adfa0b002ad392ce7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x885d3dd787b9d417f912f4507241e771097181a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

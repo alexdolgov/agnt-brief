@@ -1,0 +1,18 @@
+{
+  "component": "CurveTwocryptoViews",
+  "main_contract": "CurveTwocryptoViews",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x64379c265fc6595065d7d835aaaa731c0584db80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

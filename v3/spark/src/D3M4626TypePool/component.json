@@ -1,0 +1,18 @@
+{
+  "component": "D3M4626TypePool",
+  "main_contract": "D3M4626TypePool",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c259f14e5d9f35a0434cd3c4abbbcaa2f1f7f7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Capped",
+  "main_contract": "ERC20Capped",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbaea9aba1454df334943951d51116ae342eab255",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "component": "MorphoBorrowPosition",
+  "main_contract": "MorphoBorrowPosition",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/3FLabs/grunt/blob/main/audits/Cantina_3F_Grunt_Audit_2026-05.pdf",
+    "https://github.com/3FLabs/grunt/blob/main/audits/Cantina_3F_Grunt_FeeReview_2026-05-27.pdf",
+    "https://github.com/3FLabs/grunt/blob/main/audits/ChainSecurity_3F_Grunt_Audit_2026-04.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0382f1f72e5e4b5126e1eeec6474e45f002a3440",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

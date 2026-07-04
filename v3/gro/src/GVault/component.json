@@ -1,0 +1,34 @@
+{
+  "component": "GVault",
+  "main_contract": "GVault",
+  "source_file_count": 16,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1402c1caa002354fc2c4a4cd2b4045a5b9625ef3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d9c9760ad1597c7c68cc4cde21f9c43e62d82db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae013d9bfa88f54a825831f969cb44ee020872d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

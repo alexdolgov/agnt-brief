@@ -1,0 +1,18 @@
+{
+  "component": "MerkleClaim",
+  "main_contract": "MerkleClaim",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69369507aa7a44156cc297448ab57e3c15d26485",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

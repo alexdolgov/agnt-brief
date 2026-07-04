@@ -1,0 +1,26 @@
+{
+  "component": "RedeemCommunityShares",
+  "main_contract": "RedeemCommunityShares",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7ac9d050926e1add934eaea2b9cb0fcb923f7f52",
+      "is_proxy": true,
+      "implementation_address": "0x9fd29c7ad6f086df34cc71abb3954bcb00255447",
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9fd29c7ad6f086df34cc71abb3954bcb00255447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

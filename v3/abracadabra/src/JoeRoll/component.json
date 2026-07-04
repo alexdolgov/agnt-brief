@@ -1,0 +1,18 @@
+{
+  "component": "JoeRoll",
+  "main_contract": "JoeRoll",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xacff0fbf56baeb9ef677de19aded8f7a950bcb58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

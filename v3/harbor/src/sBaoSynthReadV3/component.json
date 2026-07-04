@@ -1,0 +1,18 @@
+{
+  "component": "sBaoSynthReadV3",
+  "main_contract": "sBaoSynthReadV3",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3527b97c84ad0083a4b8876add0cd5a170792480",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

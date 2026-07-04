@@ -1,0 +1,18 @@
+{
+  "component": "EscrowPerspective",
+  "main_contract": "EscrowPerspective",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x91f046e629226b2c78b84fa1537603961aead0c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

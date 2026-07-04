@@ -1,0 +1,26 @@
+{
+  "component": "yVaultPrizePoolProxyFactory",
+  "main_contract": "yVaultPrizePoolProxyFactory",
+  "source_file_count": 114,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3357d3a038006f47ecf05110c7629eff3b24cf5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44c585e76a5da580f59b0a3add7ca0c96bf4fe2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

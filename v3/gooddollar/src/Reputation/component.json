@@ -1,0 +1,18 @@
+{
+  "component": "Reputation",
+  "main_contract": "Reputation",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ecfd1afb601c406ff0e13c3485f2d75699b6817",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

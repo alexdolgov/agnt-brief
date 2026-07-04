@@ -1,0 +1,29 @@
+{
+  "component": "TrueFiPool2",
+  "main_contract": "TrueFiPool2",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trusttoken/audits/blob/master/TrueFi/2021-12-21%20Chainsulting%20Audit%20--%20One-Click%20Borrowing%2C%20Lines%20of%20Credit%2C%20Rate%20Model%2C%20TRU%20Staking%2C%20Default%20Liquidation.pdf",
+    "https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-06-07%20ABDK%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01bd87bc97e27cb11e3c45dab9b59bc44edc4fc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27e15d51afb899104b69ff5969eaad29453947b9",
+      "is_proxy": true,
+      "implementation_address": "0x01bd87bc97e27cb11e3c45dab9b59bc44edc4fc6",
+      "liveness": "live"
+    }
+  ]
+}

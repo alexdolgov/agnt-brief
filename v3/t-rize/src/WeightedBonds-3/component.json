@@ -1,0 +1,18 @@
+{
+  "component": "WeightedBonds-3",
+  "main_contract": "WeightedBonds",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5a134098bdbeb05da9eac35439c5624547ed26ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

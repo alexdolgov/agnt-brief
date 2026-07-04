@@ -1,0 +1,18 @@
+{
+  "component": "WarToken",
+  "main_contract": "WarToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa8258dee2a677874a48f5320670a869d74f0cbc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

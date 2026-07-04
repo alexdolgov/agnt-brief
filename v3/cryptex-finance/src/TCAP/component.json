@@ -1,0 +1,20 @@
+{
+  "component": "TCAP",
+  "main_contract": "TCAP",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.cryptex.finance/audits/Cryptex_-_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16c52ceece2ed57dad87319d91b5e3637d50afa4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

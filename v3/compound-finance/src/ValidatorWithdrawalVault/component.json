@@ -1,0 +1,18 @@
+{
+  "component": "ValidatorWithdrawalVault",
+  "main_contract": "ValidatorWithdrawalVault",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3073cc90ad39e0c30bb0d4c70f981fbd00f3458f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MidasLzMintBurnOFTAdapter",
+  "main_contract": "MidasLzMintBurnOFTAdapter",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x148c86390a4ae6f7a02df5903bc0a89e8b4581a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

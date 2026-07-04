@@ -1,0 +1,26 @@
+{
+  "component": "FeeManagerDogs",
+  "main_contract": "FeeManagerDogs",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0ab59c36367a5188ed391342c6c4400e1648cc20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcee45d6cd1a8b1cce4b9f5af487ebe9455e53bda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

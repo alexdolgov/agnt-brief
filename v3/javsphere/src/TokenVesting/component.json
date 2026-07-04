@@ -1,0 +1,18 @@
+{
+  "component": "TokenVesting",
+  "main_contract": "TokenVesting",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0f9ad4b603efc5e0f8806d88f4f3e77ee56932ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

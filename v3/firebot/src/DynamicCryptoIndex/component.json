@@ -1,0 +1,26 @@
+{
+  "component": "DynamicCryptoIndex",
+  "main_contract": "DynamicCryptoIndex",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc91953e110ebb0039859304a0d1b64f8450763fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfae813768a473d006e2629c55b1104d0c099c488",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

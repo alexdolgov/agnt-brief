@@ -1,0 +1,18 @@
+{
+  "component": "MinereumWorldPolygonRefund",
+  "main_contract": "MinereumWorldPolygonRefund",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x74eb21ce66e226e28f8e510da9623d959bce70ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

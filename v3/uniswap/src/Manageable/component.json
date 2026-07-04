@@ -1,0 +1,18 @@
+{
+  "component": "Manageable",
+  "main_contract": "Manageable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x07f1dc544136bcd253f9cfd3369cb5f7cf405a35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

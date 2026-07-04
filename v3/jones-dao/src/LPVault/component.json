@@ -1,0 +1,18 @@
+{
+  "component": "LPVault",
+  "main_contract": "LPVault",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x64f6c761d855a6eff9ef8b025b0258bddede5393",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

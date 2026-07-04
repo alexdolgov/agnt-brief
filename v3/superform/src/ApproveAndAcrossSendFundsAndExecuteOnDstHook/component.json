@@ -1,0 +1,18 @@
+{
+  "component": "ApproveAndAcrossSendFundsAndExecuteOnDstHook",
+  "main_contract": "ApproveAndAcrossSendFundsAndExecuteOnDstHook",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72422ab917e4a698369767f7ace667a769e0f3f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

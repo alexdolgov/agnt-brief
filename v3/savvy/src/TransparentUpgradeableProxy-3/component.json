@@ -1,0 +1,66 @@
+{
+  "component": "TransparentUpgradeableProxy-3",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 17,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x015081d1b5f768c6aaba6baca35c37f81001f7c8",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02c5844732518a571a63b02345424e326c48d86a",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1ede034cfd05a52abf38558ce62cebd82e46f00e",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x39440d2528abc6fbd2e539da28bbc581f9078161",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3a47bd741cab8565f6ccc820e48c040700c65fb9",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4056e92c635595e9b9d5f4f85ba04220cbd0cbb6",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xca728c2593ac1912457c8060836cc13bb61f1b08",
+      "is_proxy": true,
+      "implementation_address": "0xba5606d32d6bc65d8e5b1081cdb58714779dfb16",
+      "liveness": "inactive"
+    }
+  ]
+}

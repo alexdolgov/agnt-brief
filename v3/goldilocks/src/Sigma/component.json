@@ -1,0 +1,18 @@
+{
+  "component": "Sigma",
+  "main_contract": "Sigma",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x563a27728d298f21738ab694e95f344a42731fe5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

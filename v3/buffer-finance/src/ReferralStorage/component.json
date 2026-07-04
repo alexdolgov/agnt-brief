@@ -1,0 +1,18 @@
+{
+  "component": "ReferralStorage",
+  "main_contract": "ReferralStorage",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc12e01b87ef1cfaa2a5cc637e191c4427d343749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

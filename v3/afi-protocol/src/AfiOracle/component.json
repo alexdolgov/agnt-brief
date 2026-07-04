@@ -1,0 +1,18 @@
+{
+  "component": "AfiOracle",
+  "main_contract": "AfiOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32f232423829296f035e2cfcdc426911d4a1a582",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

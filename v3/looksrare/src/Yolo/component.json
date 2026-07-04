@@ -1,0 +1,18 @@
+{
+  "component": "Yolo",
+  "main_contract": "Yolo",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00000000007767d79f9f4aa1ff0d71b8e2e4a231",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

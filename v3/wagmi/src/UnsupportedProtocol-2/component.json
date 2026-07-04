@@ -1,0 +1,18 @@
+{
+  "component": "UnsupportedProtocol-2",
+  "main_contract": "UnsupportedProtocol",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xe88b19885935b4be8dcf38e2c96b8c73cfc9b6e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CustomMasterChefJoeV2Timelock",
+  "main_contract": "CustomMasterChefJoeV2Timelock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xadaf18d79f316005542da4ecb1624b59c4e6e398",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

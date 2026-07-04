@@ -1,0 +1,18 @@
+{
+  "component": "EmiPrice2",
+  "main_contract": "EmiPrice2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb051f7defd9ed3fbcb8cf911c01b06dbd7281340",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

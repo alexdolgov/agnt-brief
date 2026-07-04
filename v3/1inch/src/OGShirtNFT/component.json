@@ -1,0 +1,18 @@
+{
+  "component": "OGShirtNFT",
+  "main_contract": "OGShirtNFT",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6e0c982c05b6fb0d7465476ddef7b1b7cbe26fcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "IdolGoldlist",
+  "main_contract": "IdolGoldlist",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6dc9886f694ba078f617c53d6330e001f6986aa5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

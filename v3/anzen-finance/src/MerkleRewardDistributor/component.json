@@ -1,0 +1,26 @@
+{
+  "component": "MerkleRewardDistributor",
+  "main_contract": "MerkleRewardDistributor",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcd04c35177b059360ba7219ebaab5c5e94321dfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea4b3e06915805bd4841fda925b0be943668573c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

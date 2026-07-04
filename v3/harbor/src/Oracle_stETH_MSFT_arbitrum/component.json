@@ -1,0 +1,26 @@
+{
+  "component": "Oracle_stETH_MSFT_arbitrum",
+  "main_contract": "Oracle_stETH_MSFT_arbitrum",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x27c8d5178f742aa67fd653f0c71c5524b6866ea5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd929d40d8770d2fd867533c6cef6d1d8b77fb162",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

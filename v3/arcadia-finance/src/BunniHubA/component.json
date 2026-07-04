@@ -1,0 +1,18 @@
+{
+  "component": "BunniHubA",
+  "main_contract": "BunniHubA",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd1fac4f51457e4a6d35bdc7311718e5d6de92bb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

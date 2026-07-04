@@ -1,0 +1,18 @@
+{
+  "component": "JoeStakingRewarder-2",
+  "main_contract": "JoeStakingRewarder",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xed6436a1b91f9a40bd44151f7ea81b45a3f17f92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

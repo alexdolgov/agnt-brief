@@ -1,0 +1,22 @@
+{
+  "component": "Staking",
+  "main_contract": "Staking",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/CVI",
+    "https://v2.cvi.finance/files/eth-audit.pdf",
+    "https://v2.cvi.finance/files/usdt-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb3130952ed9b5fa7108dedaaa921ae8f59beacb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

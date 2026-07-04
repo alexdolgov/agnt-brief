@@ -1,0 +1,18 @@
+{
+  "component": "StandardTokenDeployer",
+  "main_contract": "StandardTokenDeployer",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd654d9ed960a09acf291469a9c3359fccee4c6af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

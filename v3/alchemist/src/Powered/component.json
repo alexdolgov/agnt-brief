@@ -1,0 +1,18 @@
+{
+  "component": "Powered",
+  "main_contract": "Powered",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf016fa84d5f3a252409a63b5cb89b555a0d27ccf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

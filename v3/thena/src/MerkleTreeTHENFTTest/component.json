@@ -1,0 +1,26 @@
+{
+  "component": "MerkleTreeTHENFTTest",
+  "main_contract": "MerkleTreeTHENFTTest",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2528a0a8205b9c937b209ea2878ae375286841ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3f2cebe57af48978a5297b4cb5fb37262b56b10d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

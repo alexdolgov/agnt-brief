@@ -1,0 +1,18 @@
+{
+  "component": "VoteEscrowedToken",
+  "main_contract": "VoteEscrowedToken",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdcd2b58585df999dd145e529f09e8acafa6cd244",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

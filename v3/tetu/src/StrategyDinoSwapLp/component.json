@@ -1,0 +1,18 @@
+{
+  "component": "StrategyDinoSwapLp",
+  "main_contract": "StrategyDinoSwapLp",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x893bf5485cd7a568424482071378d10f98252ff4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

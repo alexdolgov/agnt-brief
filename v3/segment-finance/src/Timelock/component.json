@@ -1,0 +1,26 @@
+{
+  "component": "Timelock",
+  "main_contract": "Timelock",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc835e17ca0b709527f94c345d4d7aa3b3069a4ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x26322ea932ad0be842901a881cdb5bdf81e5d3a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

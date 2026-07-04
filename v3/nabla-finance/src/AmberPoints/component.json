@@ -1,0 +1,18 @@
+{
+  "component": "AmberPoints",
+  "main_contract": "AmberPoints",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x36b5d8b243fbede90d6b655f6471b66266cc9426",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

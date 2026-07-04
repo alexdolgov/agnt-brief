@@ -1,0 +1,28 @@
+{
+  "component": "Controller",
+  "main_contract": "Controller",
+  "source_file_count": 47,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ribbon-finance/aevo-audit/blob/master/VAR_Ribbon_OTC.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5e648e8391b4e7f764b3e79d8a786078c755a6aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6dc5f83c405594b9b62caf1057e6432df66b470c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

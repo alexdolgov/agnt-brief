@@ -1,0 +1,18 @@
+{
+  "component": "AgentFactoryV4",
+  "main_contract": "AgentFactoryV4",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x917e496ef09fab65f7cd0336121ddf8f1847bdb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

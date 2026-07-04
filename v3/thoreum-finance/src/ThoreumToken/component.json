@@ -1,0 +1,20 @@
+{
+  "component": "ThoreumToken",
+  "main_contract": "ThoreumToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/assets/audits/20210621_Paladin_Thoreum_Finance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x580de58c1bd593a43dadcf0a739d504621817c05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GalaxyToken",
+  "main_contract": "GalaxyToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2c0adff8e114f3ca106051144353ac703d24b901",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

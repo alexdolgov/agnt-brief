@@ -1,0 +1,18 @@
+{
+  "component": "ZeroOFTAdapter",
+  "main_contract": "ZeroOFTAdapter",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2d6f5b0c40f3e986a0da3074c1da8eeadd5b5693",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "veNFTAPI",
+  "main_contract": "veNFTAPI",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85dc70913e49e5ebd888ada03034e3be109e5881",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

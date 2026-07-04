@@ -1,0 +1,18 @@
+{
+  "component": "Treasury",
+  "main_contract": "Treasury",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6dbde0e7e563e34a53b1130d6b779ec8ed34b4b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

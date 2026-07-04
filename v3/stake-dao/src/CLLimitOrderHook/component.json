@@ -1,0 +1,18 @@
+{
+  "component": "CLLimitOrderHook",
+  "main_contract": "CLLimitOrderHook",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x647a995b00b4dc23791f543516075bffd9bb87b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

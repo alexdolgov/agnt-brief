@@ -1,0 +1,18 @@
+{
+  "component": "BKeeper-2",
+  "main_contract": "BKeeper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31d85ef94360a46af2e59c700789ef952cb6eade",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

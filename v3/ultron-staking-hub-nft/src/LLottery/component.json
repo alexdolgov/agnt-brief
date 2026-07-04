@@ -1,0 +1,18 @@
+{
+  "component": "LLottery",
+  "main_contract": "LLottery",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x92285ba29937890521ec3cfb76c257597bd824b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

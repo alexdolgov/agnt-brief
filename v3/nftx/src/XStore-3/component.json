@@ -1,0 +1,20 @@
+{
+  "component": "XStore-3",
+  "main_contract": "XStore",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/NFTX-project/audit-level-k/blob/master/NFTX-final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe54738723cea167a76ad5421b50caa49692e7b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

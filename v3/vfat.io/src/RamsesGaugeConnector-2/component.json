@@ -1,0 +1,26 @@
+{
+  "component": "RamsesGaugeConnector-2",
+  "main_contract": "RamsesGaugeConnector",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x0d3e1d7b3a0861f0e8122ccc74d43eb4e816c0c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1bfe637077f5a295935043805f66715707389700",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

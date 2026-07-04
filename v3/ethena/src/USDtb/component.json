@@ -1,0 +1,18 @@
+{
+  "component": "USDtb",
+  "main_contract": "USDtb",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea8a763b5b1f9c9c7aea64f33947448d9e39e475",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

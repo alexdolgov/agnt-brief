@@ -1,0 +1,74 @@
+{
+  "component": "TimelockUpgradeableProxy-2",
+  "main_contract": "TimelockUpgradeableProxy",
+  "source_file_count": 22,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x091356e6793a0d960174eaab4d470e39a99dd673",
+      "is_proxy": true,
+      "implementation_address": "0x780e287ea2ef2dce34b66f1ed5a2225d8148deaa",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a5c94fe8fa6c0c8d2a87e5c71ad628caa092ce4",
+      "is_proxy": true,
+      "implementation_address": "0x3519ba8a550973100676f1f00f67263e62da467d",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3519ba8a550973100676f1f00f67263e62da467d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x496135b4421304872974cc0c01c5f0e59b7f4ad0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7697202a29acd384c889f879dfbffb6dcab17fa4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x780e287ea2ef2dce34b66f1ed5a2225d8148deaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94f6cb4fae0eb3fa74e9847dff2ff52fd5ec7e6e",
+      "is_proxy": true,
+      "implementation_address": "0x7697202a29acd384c889f879dfbffb6dcab17fa4",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9cd42168d53836b45751774f757132ece4f5d42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

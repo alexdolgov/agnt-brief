@@ -1,0 +1,18 @@
+{
+  "component": "StakingV2FeeRecipient",
+  "main_contract": "StakingV2FeeRecipient",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x239fe53f10fe77e9c6ed896e3ae4ab8e43eed082",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

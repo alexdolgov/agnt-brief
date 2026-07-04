@@ -1,0 +1,172 @@
+# Agentic Audit Brief: Credbull
+
+## Project Overview
+
+- Project: Credbull (`credbull`)
+- Lifecycle: unknown
+- Generated: 2026-07-03T21:05:42.258Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
+- Chains: arbitrum, polygon
+- Contract surface: 41 unique implementations (53 raw deployments)
+- DeFi Llama TVL: $10,940,088.68
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## Project Description
+
+Farm. Structurally: 85 project-authored contract(s) across 2 chain(s); 1 ERC4626 vault, 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 5 functional families. Its contracts share 24 common project-authored base contract(s) (policybase, entranceratefeebase, feebase). Dominant framework: openzeppelin.
+
+## Contract Surface Quality
+
+- Indexed contracts: 111; live-surface contracts included: 53 (51 live, 2 unknown).
+- Excluded by liveness: 58 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
+## Audit Coverage Summary
+
+- Coverage of deployed-live implementations: 0/39 (0.0%)
+- Deployed-live implementations: 39 of 41 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/39
+- Verified + Unaudited implementations: 39
+- Verified by bytecode match: 0
+- Unverified implementations: 2
+- Unique implementations: 41
+- Raw deployments: 53
+- Audits discovered: 8 (8 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2025-05 (aging)
+- Audit staleness (calendar age): 0 fresh, 7 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
+
+### Auditor Coverage
+
+- None
+
+## Contract Surface
+
+### ✅ Verified + Audited (0)
+
+- None
+
+### ⚠️ Verified + Unaudited (39)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AddressListRegistry | unknown | polygon | n/a | [`0x5ae15b...a248f8`](./contracts/polygon-137/0x5ae15bf655a8f42b9c7d93e64f4476ec1da248f8/) | ⚠️ Unaudited |
+| AllowedAdapterIncomingAssetsPolicy | unknown | polygon | n/a | [`0xc192fd...cdd482`](./contracts/polygon-137/0xc192fd3b13549ad5bc3c0a0118a29556d0cdd482/) | ⚠️ Unaudited |
+| AllowedAdaptersPerManagerPolicy | unknown | polygon | n/a | [`0x30ed4e...0bb710`](./contracts/polygon-137/0x30ed4e3cf5e1faf6fc9776d256d535f3470bb710/) | ⚠️ Unaudited |
+| AllowedAdaptersPolicy | unknown | polygon | n/a | [`0x421878...d27a4a`](./contracts/polygon-137/0x4218783ae10bd1841e6664cf048ac295d8d27a4a/) | ⚠️ Unaudited |
+| AllowedAssetsForRedemptionPolicy | unknown | polygon | n/a | [`0x71b825...86b3b6`](./contracts/polygon-137/0x71b8254f608a73162445655ff2f07ccb1586b3b6/) | ⚠️ Unaudited |
+| AllowedDepositRecipientsPolicy | unknown | polygon | n/a | [`0xe18535...a459ff`](./contracts/polygon-137/0xe1853502e2ea2b7c14c5e89169c63065f5a459ff/) | ⚠️ Unaudited |
+| AllowedExternalPositionTypesPerManagerPolicy | unknown | polygon | n/a | [`0xb6367c...ede28c`](./contracts/polygon-137/0xb6367cd4b67c44e963ae81e9c1757a1c08ede28c/) | ⚠️ Unaudited |
+| AllowedExternalPositionTypesPolicy | unknown | polygon | n/a | [`0x5a739d...76d8e7`](./contracts/polygon-137/0x5a739da3099fd4fc954bd764099fc000da76d8e7/) | ⚠️ Unaudited |
+| AllowedSharesTransferRecipientsPolicy | unknown | polygon | n/a | [`0x3b6913...0194bd`](./contracts/polygon-137/0x3b6913a8ed4595919a6b4a9022208cede20194bd/) | ⚠️ Unaudited |
+| ArbitraryLoanPositionParser | unknown | polygon | n/a | 2 deployments: polygon [`0x2e4646...7a7d05`](./contracts/polygon-137/0x2e46462de3bf02d382c039bb021021f2277a7d05/); polygon `0xe8a5da...860131` | ⚠️ Unaudited |
+| AssetValueCalculator | unknown | polygon | n/a | [`0xe9d4d8...d27d86`](./contracts/polygon-137/0xe9d4d87478dcb10da0032f9fac8d253e9dd27d86/) | ⚠️ Unaudited |
+| CBL | unknown | arbitrum | n/a | [`0xd6b3d8...b95cb6`](./contracts/arbitrum-42161/0xd6b3d81868770083307840f513a3491960b95cb6/) | ⚠️ Unaudited |
+| ComptrollerLib | unknown | polygon | n/a | [`0xf5fc0e...1eb441`](./contracts/polygon-137/0xf5fc0e36c85552e44354132d188c33d9361eb441/) | ⚠️ Unaudited |
+| CredbullFixedYieldVault | core_logic | arbitrum | n/a | 4 deployments: arbitrum [`0x096227...c72874`](./contracts/arbitrum-42161/0x096227660b27e612f31838645cc3ad213cc72874/); arbitrum `0xace0d7...ce5516`; arbitrum `0xc0c1da...b7403f`; arbitrum `0xe4a4d8...e76b91` | ⚠️ Unaudited |
+| CumulativeSlippageTolerancePolicy | unknown | polygon | n/a | [`0x133236...706bf2`](./contracts/polygon-137/0x1332367c181f1157f751b160187dcaa219706bf2/) | ⚠️ Unaudited |
+| DepositWrapper | unknown | polygon | n/a | 4 deployments: polygon [`0x2baa64...e82c87`](./contracts/polygon-137/0x2baa64f0ce9c2e60e91127fc3f40a72529e82c87/); polygon `0x30c439...fcbafa`; polygon `0x5100ef...c49114`; polygon `0xb545e7...874cb8` | ⚠️ Unaudited |
+| Dispatcher | unknown | polygon | n/a | 2 deployments: polygon [`0x2e2527...032733`](./contracts/polygon-137/0x2e25271297537b8124b8f883a92ffd95c4032733/); polygon `0xf9fe9a...5778d2` | ⚠️ Unaudited |
+| EntranceRateDirectFee | unknown | polygon | n/a | [`0x88c9a1...fb78b8`](./contracts/polygon-137/0x88c9a11c7bb8bc274388d0db864ab87c14fb78b8/) | ⚠️ Unaudited |
+| ExitRateDirectFee | unknown | polygon | n/a | [`0xc5c7f7...99b848`](./contracts/polygon-137/0xc5c7f7c6e5e2db074d96b440d30d7aab2c99b848/) | ⚠️ Unaudited |
+| FeeManager | unknown | polygon | n/a | [`0xddd743...461deb`](./contracts/polygon-137/0xddd7432671f5adc1c82c7c875624c1b0bc461deb/) | ⚠️ Unaudited |
+| FundDeployer | unknown | polygon | n/a | [`0x188d35...12284f`](./contracts/polygon-137/0x188d356caf78bc6694aee5969fde99a9d612284f/) | ⚠️ Unaudited |
+| FundValueCalculator | unknown | polygon | n/a | [`0xcdf038...4b7a33`](./contracts/polygon-137/0xcdf038dd3b66506d2e5378aee185b2f0084b7a33/) | ⚠️ Unaudited |
+| GasRelayPaymasterLib | unknown | polygon | n/a | 3 deployments: polygon [`0x44654b...5f5592`](./contracts/polygon-137/0x44654bc1107caaa3297ed5ccb70d9cdb445f5592/); polygon `0x9feea9...3dc7a0`; polygon `0xbedae7...d01676` | ⚠️ Unaudited |
+| GatedRedemptionQueueSharesWrapperLib | unknown | polygon | n/a | 2 deployments: polygon [`0xcee23e...3a53f3`](./contracts/polygon-137/0xcee23e8c2edb19af09ec3405f7b95484d43a53f3/); polygon `0xe6ae7b...69586f` | ⚠️ Unaudited |
+| IntegrationManager | governance | polygon | n/a | [`0x92fcde...a0884b`](./contracts/polygon-137/0x92fcde09790671cf085864182b9670c77da0884b/) | ⚠️ Unaudited |
+| ManagementFee | unknown | polygon | n/a | [`0x97f13b...dbd843`](./contracts/polygon-137/0x97f13b3040a565be791d331b0edd4b1b58dbd843/) | ⚠️ Unaudited |
+| ManualValueOracleFactory | operational_periphery | polygon | n/a | [`0x735615...c4354f`](./contracts/polygon-137/0x735615beb04bfd3665f06541ea00af1860c4354f/) | ⚠️ Unaudited |
+| MinAssetBalancesPostRedemptionPolicy | unknown | polygon | n/a | [`0x9d940b...f8251e`](./contracts/polygon-137/0x9d940beaa6e3cfb441d49787fdf1db18d7f8251e/) | ⚠️ Unaudited |
+| OnlyRemoveDustExternalPositionPolicy | unknown | polygon | n/a | [`0xc0f495...abab99`](./contracts/polygon-137/0xc0f49507c125a000e02ab58c22be9764e2abab99/) | ⚠️ Unaudited |
+| OnlyUntrackDustOrPricelessAssetsPolicy | unknown | polygon | n/a | [`0x9f8563...b5c9d2`](./contracts/polygon-137/0x9f856372f7bd844dac0254c7859b117259b5c9d2/) | ⚠️ Unaudited |
+| PerformanceFee | unknown | polygon | n/a | [`0xbc63af...479bdf`](./contracts/polygon-137/0xbc63afe28c66a6279bd3a55a4d0d3ab61f479bdf/) | ⚠️ Unaudited |
+| PolicyManager | governance | polygon | n/a | [`0x5a8ee0...f5546f`](./contracts/polygon-137/0x5a8ee0850d22ffef4169dbd348c1b0d7d5f5546f/) | ⚠️ Unaudited |
+| ProtocolFeeTracker | unknown | polygon | n/a | [`0xb8e6ed...6e23d5`](./contracts/polygon-137/0xb8e6eda0ce8fddd21f0b0268a43a57b9296e23d5/) | ⚠️ Unaudited |
+| UintListRegistry | unknown | polygon | n/a | [`0x6ddd87...166519`](./contracts/polygon-137/0x6ddd871c1607348ebb5be250f882255390166519/) | ⚠️ Unaudited |
+| UnpermissionedActionsWrapper | unknown | polygon | n/a | [`0x1648cc...d2b17b`](./contracts/polygon-137/0x1648cc031a1b6d60b5585ae21dae507a69d2b17b/) | ⚠️ Unaudited |
+| ValueInterpreter | unknown | polygon | n/a | [`0x66de7e...8a0f45`](./contracts/polygon-137/0x66de7e286aae66f7f3daf693c22d16eea48a0f45/) | ⚠️ Unaudited |
+| VaultLib | unknown | polygon | n/a | [`0xddb8eb...2e1612`](./contracts/polygon-137/0xddb8ebe5361ca93614e5efb34049e842912e1612/) | ⚠️ Unaudited |
+| VaultProxy | core_logic | polygon | n/a | [`0x2eda17...8ccd6d`](./contracts/polygon-137/0x2eda17eb596858566be933b26fae6fa4ee8ccd6d/) | ⚠️ Unaudited |
+| ZeroExV4Adapter | unknown | polygon | n/a | 2 deployments: polygon [`0x34558a...4fb687`](./contracts/polygon-137/0x34558aa452cac926d6a78cc148ee1220e94fb687/); polygon `0xce663e...f1448a` | ⚠️ Unaudited |
+
+### ✅ Verified by Bytecode + Audited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ⚠️ Verified by Bytecode + Unaudited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ❓ Unverified (2)
+
+Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | polygon | n/a | `0xaad57f...6044f1` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc088fe...d91224` | ❓ Unverified |
+
+## Audit Inventory
+
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---|
+| [Credbull-DeFi_Audit_20241217_Hacken.pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/credbull/security-reports/main/credbull-defi/Credbull-DeFi_Audit_20241217_Hacken.pdf) | Hacken | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
+| [Credbull-DeFi_Audit_20241031_Hacken.pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/credbull/security-reports/main/credbull-defi/Credbull-DeFi_Audit_20241031_Hacken.pdf) | Hacken | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [Credbull-DeFi_Audit_20240815_Hacken.pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/credbull/security-reports/main/credbull-defi/Credbull-DeFi_Audit_20240815_Hacken.pdf) | Hacken | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
+| [Credbull-DeFi_Audit_20240514.pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/credbull/security-reports/main/credbull-defi/Credbull-DeFi_Audit_20240514.pdf) | CertiK | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
+| [Credbull-CBL_Audit_20241023_Hacken.pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/credbull/security-reports/main/credbull-defi/Credbull-CBL_Audit_20241023_Hacken.pdf) | Hacken | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [hacken.io/audits/credbull/sca-re-audit-credbull-token-oct2024](https://hacken.io/audits/credbull/sca-re-audit-credbull-token-oct2024) | Hacken | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [Credbull-WrappedERC20_Audit_20250429_Hashlock.pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/credbull/security-reports/main/credbull-defi/Credbull-WrappedERC20_Audit_20250429_Hashlock.pdf) | Hashlock | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
+| [Credbull-Smart-Contract-Audit-Report-Final-Report-v2.pdf](https://hashlock.com/wp-content/uploads/2025/05/Credbull-Smart-Contract-Audit-Report-Final-Report-v2.pdf) | Hashlock | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+
+## Coverage Gaps
+
+Verified + unaudited native implementations ranked by TVL:
+
+- None
+
+## Origin Classification
+
+| Origin Kind | Contracts |
+|---|---:|
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 41 |
+
+## Scope Matching Notes
+
+- Repo-reference audits: 0
+- Not-audit entries: 0
+- Audits with zero matched contracts: 8
+- Inherited remapped matches: 0
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [21290] Credbull-DeFi_Audit_20241217_Hacken.pdf
+- [21291] Credbull-DeFi_Audit_20241031_Hacken.pdf
+- [21292] Credbull-DeFi_Audit_20240815_Hacken.pdf
+- [21293] Credbull-DeFi_Audit_20240514.pdf
+- [21294] Credbull-CBL_Audit_20241023_Hacken.pdf
+- [21295] hacken.io/audits/credbull/sca-re-audit-credbull-token-oct2024
+- [21296] Credbull-WrappedERC20_Audit_20250429_Hashlock.pdf
+- [21297] Credbull-Smart-Contract-Audit-Report-Final-Report-v2.pdf
+
+Fork inheritance lineage and inherited audits are included when available.

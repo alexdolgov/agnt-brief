@@ -1,0 +1,18 @@
+{
+  "component": "ValidatorShare",
+  "main_contract": "ValidatorShare",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x185486869e615f5a5644991a491212582caa08fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

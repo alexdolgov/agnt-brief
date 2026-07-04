@@ -1,0 +1,42 @@
+{
+  "component": "AerodromeStakingDexCalculator",
+  "main_contract": "AerodromeStakingDexCalculator",
+  "source_file_count": 62,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb02cb15597e214b9a843ccff9eefe628c057184e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc7b711a5d1fcc19195e82e8c0d827e2e0bd2bd10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd9b54d16a2cd15abe6e8a9b8b596239a7f8042e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe40523f7bd5799b3c62921357b104f58c4a7c240",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

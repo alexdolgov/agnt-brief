@@ -1,0 +1,28 @@
+{
+  "component": "StrategyETH",
+  "main_contract": "StrategyETH",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://2227259712-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdiKpPMQRzcvmKZPuBfGZ%2Fuploads%2Fxfzaty6B6Gtxx18McMTQ%2FOlive%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2e9c6177f81a1337b656d3b066fd20c7cf8cab4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd94a9fbae86e662350ffebb352f70c3cbeb9e96e",
+      "is_proxy": true,
+      "implementation_address": "0xa2e9c6177f81a1337b656d3b066fd20c7cf8cab4",
+      "liveness": "live"
+    }
+  ]
+}

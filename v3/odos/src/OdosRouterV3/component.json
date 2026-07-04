@@ -1,0 +1,29 @@
+{
+  "component": "OdosRouterV3",
+  "main_contract": "OdosRouterV3",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.odos.xyz/assets/files/Odos%20Router%20V3%20-%20Zellic%20Audit%20Report-0e74f369988309bbd589267e44357d06.pdf",
+    "https://github.com/Zellic/publications/blob/master/Odos%20Router%20V3%20-%20Zellic%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d05a7d3448512b78fa8a9e46c4872c88c4a0d05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x699bb4a1153d1f54b70fa79762b05b15d9b94f01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "RateCalculator",
+  "main_contract": "RateCalculator",
+  "source_file_count": 37,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a84315d6e14291dace3fbc62d24f52c3505c5de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd7e46d328a8ad92acaad193eed296461da3342d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

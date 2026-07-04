@@ -1,0 +1,26 @@
+{
+  "component": "LynxClaimV2",
+  "main_contract": "LynxClaimV2",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb2bed04305b7411f29e0d76201a62b3dcd2418ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xd8cee411c33ed18a7472d9b21caa60e72523e6c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

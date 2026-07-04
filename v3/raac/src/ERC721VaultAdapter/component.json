@@ -1,0 +1,18 @@
+{
+  "component": "ERC721VaultAdapter",
+  "main_contract": "ERC721VaultAdapter",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb1b35c62b99a450c474e9dad75fa121d3daa1d34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

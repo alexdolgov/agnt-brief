@@ -1,0 +1,20 @@
+{
+  "component": "AlgebraPool",
+  "main_contract": "AlgebraPool",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/orbs-network/twap/blob/master/Audit-Report-PeckShield.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x373ef48bea740396f6e37c8838afd7245c2b136c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

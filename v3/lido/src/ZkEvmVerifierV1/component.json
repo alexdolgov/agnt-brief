@@ -1,0 +1,18 @@
+{
+  "component": "ZkEvmVerifierV1",
+  "main_contract": "ZkEvmVerifierV1",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f7b737155e6e0dece9cd8cd3240d15939c58184",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

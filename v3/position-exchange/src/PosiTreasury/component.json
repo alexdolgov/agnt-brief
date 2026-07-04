@@ -1,0 +1,18 @@
+{
+  "component": "PosiTreasury",
+  "main_contract": "PosiTreasury",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x152d3c50b2acb64a11bf3e7160ce7792079d320a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

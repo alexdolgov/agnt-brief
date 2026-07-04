@@ -1,0 +1,18 @@
+{
+  "component": "Quoter",
+  "main_contract": "Quoter",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x6fea39c2b9c87c7d2fa153bb0b702aae0fa15930",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

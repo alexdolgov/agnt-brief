@@ -1,0 +1,28 @@
+{
+  "component": "BribeFactory",
+  "main_contract": "BribeFactory",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://2688442826-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdfX5W2ttoTF0UsavgZhT%2Fuploads%2FNiALqEGB39ep1N0BtMU2%2Fomniscia-report_1667586376.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7ecaa0317ad26a1ab00c22b057dc347ace0fb37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xddb19078bd6aa88bd7ff0e13bfd806a726260c72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RewardHash",
+  "main_contract": "RewardHash",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ec3ec6a8ac774c7d53665ebc5ddf89145d02fb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

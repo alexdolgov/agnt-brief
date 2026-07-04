@@ -1,0 +1,18 @@
+{
+  "component": "FflonkVerifier-3",
+  "main_contract": "FflonkVerifier",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

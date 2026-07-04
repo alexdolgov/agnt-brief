@@ -1,0 +1,18 @@
+{
+  "component": "Staked_YFI",
+  "main_contract": "Staked YFI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42b25284e8ae427d79da78b65dffc232aaecc016",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

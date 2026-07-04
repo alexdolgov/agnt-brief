@@ -1,0 +1,18 @@
+{
+  "component": "UsdceAvaxSwapperV2",
+  "main_contract": "UsdceAvaxSwapperV2",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6da65013d5814da632f1a94f3501abc8e54c98ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "component": "ERC1967Upgrade",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 8,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b6ec227cebec25118270efbb4b67642fc29965e",
+      "is_proxy": true,
+      "implementation_address": "0x92fe050c6bb5fffafd5092cca204ccdfe8d1155e",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5dea8e499b05de8f86e7521f039770268055b23f",
+      "is_proxy": true,
+      "implementation_address": "0x52af16664155608b845be18aa29620ebf6ea2d3a",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8bcdf6291f251cf8ecf5ac06bfc4a2b02ecc26eb",
+      "is_proxy": true,
+      "implementation_address": "0x23b978edec8a774e50c73589f58730f3753fbf2b",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa55ed5808aecdf23ae3782c1443185f5d2363ce7",
+      "is_proxy": true,
+      "implementation_address": "0x218431f9edde0ad29134ff5316258c7eeedbd516",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaaab5528aff964ceac972e39c2357c2d503a9196",
+      "is_proxy": true,
+      "implementation_address": "0xa83593e682f2c230735e80b49640427dade4b612",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd9c2d314e29f1940d2a65a691881f0950fe4a455",
+      "is_proxy": true,
+      "implementation_address": "0x6b4eecb471a6e3784cf850a1fb3460260e030708",
+      "liveness": "live"
+    }
+  ]
+}

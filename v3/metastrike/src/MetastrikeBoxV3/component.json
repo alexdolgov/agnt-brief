@@ -1,0 +1,18 @@
+{
+  "component": "MetastrikeBoxV3",
+  "main_contract": "MetastrikeBoxV3",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa80bac5965c4b2393a20df13e99646159cbdacaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

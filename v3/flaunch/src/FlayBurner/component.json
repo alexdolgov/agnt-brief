@@ -1,0 +1,18 @@
+{
+  "component": "FlayBurner",
+  "main_contract": "FlayBurner",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x90c07971cc1a026f3e2425b4b63830b2dad1a8f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

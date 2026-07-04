@@ -1,0 +1,18 @@
+{
+  "component": "DiamondLoupeFacet-2",
+  "main_contract": "DiamondLoupeFacet",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0b5ea903db149f505a5af1a692761491bc5e1ef9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

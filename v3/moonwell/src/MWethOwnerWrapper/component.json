@@ -1,0 +1,26 @@
+{
+  "component": "MWethOwnerWrapper",
+  "main_contract": "MWethOwnerWrapper",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1796720c9441f8f18a3aa570ab7c10597a57c08e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x82e5e038a1d93f371f02768b09b2c6c4b98f6250",
+      "is_proxy": true,
+      "implementation_address": "0x1796720c9441f8f18a3aa570ab7c10597a57c08e",
+      "liveness": "live"
+    }
+  ]
+}

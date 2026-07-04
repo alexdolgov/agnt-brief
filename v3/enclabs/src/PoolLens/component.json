@@ -1,0 +1,18 @@
+{
+  "component": "PoolLens",
+  "main_contract": "PoolLens",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3567b16050cb90236997ef47b1941502e85d65f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

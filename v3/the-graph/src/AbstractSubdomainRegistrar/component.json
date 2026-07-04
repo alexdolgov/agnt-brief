@@ -1,0 +1,18 @@
+{
+  "component": "AbstractSubdomainRegistrar",
+  "main_contract": "AbstractSubdomainRegistrar",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe65d8aaf34cb91087d1598e0a15b582f57f217d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

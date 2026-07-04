@@ -1,0 +1,18 @@
+{
+  "component": "AlmPluginImplementation",
+  "main_contract": "AlmPluginImplementation",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37a4950b4ea0c46596404895c5027b088b0e70e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

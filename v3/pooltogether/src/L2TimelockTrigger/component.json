@@ -1,0 +1,18 @@
+{
+  "component": "L2TimelockTrigger",
+  "main_contract": "L2TimelockTrigger",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc366bf1a054ca495c09b1a722d863ac65746138e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

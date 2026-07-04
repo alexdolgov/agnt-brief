@@ -1,0 +1,38 @@
+{
+  "component": "Blacksmith",
+  "main_contract": "Blacksmith",
+  "source_file_count": 15,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Arcadia-Cover-Blacksmith-Audit.pdf",
+    "https://github.com/CoverProtocol/cover-token-mining/blob/main/Cover%20Audit.pdf",
+    "https://raw.githubusercontent.com/CoverProtocol/cover-token-mining/2e3a18646ef04a9c2c57c1cf0410fba3b2c41ac6/Cover%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0b94a7bb45dd905c79bb1992c9879f40f1caed5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe98567885df519dfeb12c0e268dd5d9b798bd531",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcf3295b3b357e3e0d37ac5ee14823e06ffdfbc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

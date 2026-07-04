@@ -1,0 +1,26 @@
+{
+  "component": "defrostFarmJoeFixedRatio",
+  "main_contract": "defrostFarmJoeFixedRatio",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2653c69a5e42400870b1ca4aa5b920f7a0fc6564",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3b3ddaf30cc4b34a3d3449c8505625197b33cccf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

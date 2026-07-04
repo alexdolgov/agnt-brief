@@ -1,0 +1,18 @@
+{
+  "component": "AtomicSwap",
+  "main_contract": "AtomicSwap",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb711f3a71c00d92ef862a4af2f584635dfe318b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

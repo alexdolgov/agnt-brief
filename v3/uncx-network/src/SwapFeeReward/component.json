@@ -1,0 +1,18 @@
+{
+  "component": "SwapFeeReward",
+  "main_contract": "SwapFeeReward",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2810b4f1172e0dccbc226d8c716534ff9c552dd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

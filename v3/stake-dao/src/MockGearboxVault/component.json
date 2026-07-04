@@ -1,0 +1,18 @@
+{
+  "component": "MockGearboxVault",
+  "main_contract": "MockGearboxVault",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x79e435875ccee3cd9e8da23fe34f9a011d05ea6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TWAPOracle",
+  "main_contract": "TWAPOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x20d96c056e411b543326fb7da4eec09bf7d503e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ContextUpgradeable",
+  "main_contract": "ContextUpgradeable",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78bfc8a7197abfb81d4774e7936a76092be2e169",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

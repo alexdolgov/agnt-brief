@@ -1,0 +1,18 @@
+{
+  "component": "TransactionBatcher",
+  "main_contract": "TransactionBatcher",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa92ed5b47d94d7d662dfb25e9d12d5a83830c936",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

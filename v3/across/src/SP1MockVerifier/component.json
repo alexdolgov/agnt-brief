@@ -1,0 +1,26 @@
+{
+  "component": "SP1MockVerifier",
+  "main_contract": "SP1MockVerifier",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd29c85f15df544ba632c9e25829fd29d767d7978",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd2ecb3afe598b746f8123cae365a598da831a449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

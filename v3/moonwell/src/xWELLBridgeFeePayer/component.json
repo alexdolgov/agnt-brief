@@ -1,0 +1,18 @@
+{
+  "component": "xWELLBridgeFeePayer",
+  "main_contract": "xWELLBridgeFeePayer",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x342ef39c57d193258358f0095f55637c5ea39827",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

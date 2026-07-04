@@ -1,0 +1,130 @@
+{
+  "component": "EtfTreasury",
+  "main_contract": "EtfTreasury",
+  "source_file_count": 19,
+  "deployment_count": 15,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1dc631a4787cde43ae398fcf154c0a8741cd8835",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3994627e4b8dd5fb01d30ab02c6238000e0fda7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3dde01ee0e1e42e9e324f678952246967ad90c96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x442246dfc0ca1af973557363703063d6271defb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x85e69a4fa34c9500944efc92faeeb5d5d141b3d6",
+      "is_proxy": true,
+      "implementation_address": "0xf2bcfa180bf81a3f3b742fe9caf71529f09065e0",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x88d124614ddf4f891c613af670ef7e0ee09f101a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbd27cef537b2d616bf149af3886e797a1fe7fae4",
+      "is_proxy": true,
+      "implementation_address": "0xc13db37b68726f93df541a2774279905ac21e392",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc13db37b68726f93df541a2774279905ac21e392",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe34713becf1fbb90d08186f645d13aedbebc7b22",
+      "is_proxy": true,
+      "implementation_address": "0x3994627e4b8dd5fb01d30ab02c6238000e0fda7c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe64e03fb8c418f650bbc395a6cf69f5ec9d28590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xec95d0273c4f20d453fa991a712851edc8fa8c64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf18577563604ef6250971ceff17be6ebad80d460",
+      "is_proxy": true,
+      "implementation_address": "0xec95d0273c4f20d453fa991a712851edc8fa8c64",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf2bcfa180bf81a3f3b742fe9caf71529f09065e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf7300c01625adc29b8e0049c92e682e1f898d17c",
+      "is_proxy": true,
+      "implementation_address": "0x88d124614ddf4f891c613af670ef7e0ee09f101a",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf906171a3464c6ad128772d4cbf19adbf649eb3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

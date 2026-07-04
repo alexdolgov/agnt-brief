@@ -1,0 +1,50 @@
+{
+  "component": "erc20QiStablecoinwbtc",
+  "main_contract": "erc20QiStablecoinwbtc",
+  "source_file_count": 29,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x37131aedd3da288467b6ebe9a77c523a700e6ca1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3c5e5ca165ea465aab68c2894da257a80614d6be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5a2036bb0dff947b0dcfd31bc4bafef055b6ca81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa6f22a30796fce5b484cca8e31930c0224661f75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xddcaad47eefee06257bdfc4f6c2d632f5dd7e6a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

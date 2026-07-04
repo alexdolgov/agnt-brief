@@ -1,0 +1,18 @@
+{
+  "component": "GlobalStorageLib",
+  "main_contract": "GlobalStorageLib",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b18a9a54bb159f4e5f7b6db57445be255291ed0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

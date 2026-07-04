@@ -1,0 +1,26 @@
+{
+  "component": "GLPVaultSwapper",
+  "main_contract": "GLPVaultSwapper",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x535c8f9bc1f988588756714d265121d8cfe8ccfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xef05d8747a6fc81509fb37ecf6b1a2d39290d881",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

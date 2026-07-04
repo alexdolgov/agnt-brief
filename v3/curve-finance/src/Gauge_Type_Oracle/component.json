@@ -1,0 +1,18 @@
+{
+  "component": "Gauge_Type_Oracle",
+  "main_contract": "Gauge Type Oracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x01689fe734d0aa98be3a9a761ae11a20dd968e41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

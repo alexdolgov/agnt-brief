@@ -1,0 +1,26 @@
+{
+  "component": "L2StandardERC20",
+  "main_contract": "L2StandardERC20",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x3e7ef8f50246f725885102e8238cbba33f276747",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x9e1028f5f1d5ede59748ffcee5532509976840e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

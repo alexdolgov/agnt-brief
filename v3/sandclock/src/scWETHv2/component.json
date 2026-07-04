@@ -1,0 +1,18 @@
+{
+  "component": "scWETHv2",
+  "main_contract": "scWETHv2",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c406c068106375724275cbff028770c544a1333",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

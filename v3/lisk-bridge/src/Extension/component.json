@@ -1,0 +1,18 @@
+{
+  "component": "Extension",
+  "main_contract": "Extension",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6227e07c0dd1604f3c820ad779792bbe56a9ed8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

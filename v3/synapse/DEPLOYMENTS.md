@@ -1,0 +1,373 @@
+# synapse — deployments
+
+208 verified deployment(s) across 104 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| arbitrum | `0x080f6aed32fc474dd5717105dba5ea57268f46eb` | SynapseERC20 | impl | live | no |
+| arbitrum | `0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8` | SwapFlashLoan | impl | live | no |
+| arbitrum | `0x109523db4336e01f030ed51c581c3fa9222f878c` | SwapEthWrapper | impl | live | no |
+| arbitrum | `0x1307d4dabbe0b4403714b15918e27c5018128955` | Proxy | impl | live | no |
+| arbitrum | `0x1c3fe783a7c06bfabd124f2708f5cc51fa42e102` | SwapEthWrapper | impl | live | no |
+| arbitrum | `0x22cdc93f53ee3f6b8ad66fad6f98915a5349950e` | Swap | impl | live | no |
+| arbitrum | `0x2376d589b5029876f866754538025aa1d2edb59c` | SynapseBaseAdapter | impl | live | no |
+| arbitrum | `0x289606734a789c6d42538f38f34f927fdc739c15` | Proxy | impl | live | no |
+| arbitrum | `0x2913e812cf0dcca30fb28e6cac3d2dcff4497688` | SynapseERC20 | impl | live | no |
+| arbitrum | `0x3ea9b0ab55f34fb188824ee288ceaefc63cf908e` | SynapseERC20 | impl | live | no |
+| arbitrum | `0x432036208d2717394d2614d6697c46df3ed69540` | Proxy | impl | live | no |
+| arbitrum | `0x4cdacbb74e86e2e18c35ae9d97b9427a0ada8007` | Swap | impl | live | no |
+| arbitrum | `0x544450ffdfa5ea20528f21918e8aac7b2c733381` | BaseSwapDeposit | impl | live | no |
+| arbitrum | `0x5948635463a9c8cecaa17b5d9ba846d789df6df4` | BytesManipulation | impl | live | no |
+| arbitrum | `0x809dc529f07651bd43a172e8db6f4a7a0d771036` | SynapseERC20 | impl | live | no |
+| arbitrum | `0x882b1b918641bb1b588a111811a55e48a18277f2` | SafeERC20 | impl | live | no |
+| arbitrum | `0x911766fa1a425cb7cccb0377bc152f37f276f8d6` | Swap-2 | impl | live | no |
+| arbitrum | `0x91fd4e303dd990b0af8652ecd9985c274f1573e5` | SwapEthWrapper | impl | live | no |
+| arbitrum | `0x9dd329f5411466d9e0c488ff72519ca9fef0cb40` | SwapFlashLoan | impl | live | no |
+| arbitrum | `0xa067668661c84476afcdc6fa5d758c4c01c34352` | SwapFlashLoan | impl | live | no |
+| arbitrum | `0xaed5b25be1c3163c907a471082640450f928ddfe` | Swap-2 | impl | live | no |
+| arbitrum | `0xce762cc8138f4fa55427403a33e95a3d492c0166` | SwapFlashLoan | impl | live | no |
+| arbitrum | `0xe0fa08834465ecc36c494f2b6c87b82ab7970413` | SwapFlashLoan | impl | live | no |
+| arbitrum | `0xe21a31315ddea8200d73945aa06acbb15db92bfb` | SwapEthWrapper | impl | live | no |
+| arbitrum | `0xead21e79f2b7a4493b7d587b285c747c809c223d` | Adapter | impl | live | no |
+| arbitrum | `0xebb07d037e39f18ba73021ad36417f947f68a8d6` | SynapseBaseAdapter | impl | live | no |
+| avalanche | `0x0b82a1ad2138e9f62454ac41b702b64e0b73d57b` | StakedGlp | impl | live | no |
+| avalanche | `0x0ef812f4c68dc84c22a4821ef30ba2ffab9c2f3a` | L2BridgeZap | impl | live | no |
+| avalanche | `0x1de098faf30bd74f22753c28db17a2560d4f5554` | RewardDistributor | impl | live | no |
+| avalanche | `0x370a34f6200770d79b54080150b61c0326208ac5` | ReferralStorageTimelock | impl | unknown | no |
+| avalanche | `0x4296e307f108b2f583ff2f7b7270ee7831574ae5` | OrderBook | impl | live | no |
+| avalanche | `0x472361d3ca5f49c8e633fb50385bfad1e018b445` | Vester | impl | live | no |
+| avalanche | `0x4b5c3c2682c44c1c2142fbccbfb38a5bffca9587` | Timelock | impl | unknown | no |
+| avalanche | `0x4d268a7d4c16ceb5a606c173bd974984343fea13` | RewardTracker | impl | live | no |
+| avalanche | `0x53f7c5869a859f0aec3d334ee8b4cf01e3492f21` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| avalanche | `0x5643f4b25e36478ee1e90418d5343cb6591bcb9d` | StakedGlp | impl | live | no |
+| avalanche | `0x5f719c2f1095f7b9fc68a68e35b51194f4b6abe8` | Router | impl | live | no |
+| avalanche | `0x62331a7bd1dfb3a7642b7db50b5509e57ca3154a` | Vester | impl | live | no |
+| avalanche | `0x62edc0692bd897d2295872a9ffcac5425011c661` | GMX | impl | live | no |
+| avalanche | `0x77a7e60555bc18b4be44c181b2575eee46212d44` | AaveSwap | impl | live | no |
+| avalanche | `0x7f98d265ba2609c1534d12cf6b0976505ad7f653` | TokenManager | impl | live | no |
+| avalanche | `0x82147c5a7e850ea4e28155df107f2590fd4ba327` | RewardRouterV2 | impl | live | no |
+| avalanche | `0x827ed045002ecdabeb6e2b0d1604cf5fc3d322f8` | ReferralStorage | impl | live | no |
+| avalanche | `0x8a68a039d555599fd745f9343e8de20c9eafca75` | Timelock | impl | live | no |
+| avalanche | `0x8b25ba1caeafab8e9926fabcfb6123782e3b4bc2` | TokenManager | impl | live | no |
+| avalanche | `0x8db453a068613f956d6f87beae6ad3040a779064` | RewardDistributor | impl | unknown | no |
+| avalanche | `0x8ea12810271a0fd70bbeb8614b8735621abc3718` | Timelock | impl | live | no |
+| avalanche | `0x9ab2de34a33fb459b538c43f251eb825645e8595` | Vault-2 | impl | live | no |
+| avalanche | `0x9e295b5b976a184b14ad8cd72413ad846c299660` | RewardTracker | impl | live | no |
+| avalanche | `0xa21b83e579f4315951ba658654c371520bdcb866` | BasePositionManager | impl | live | no |
+| avalanche | `0xabbc5f99639c9b6bcb58544ddf04efa6802f4064` | FastPriceFeed | impl | live | no |
+| avalanche | `0xae64d55a6f09e4263421737397d1fdfa71896a69` | StakedGlp | impl | live | no |
+| avalanche | `0xb70b91ce0771d3f4c81d87660f71da31d48eb3b3` | RewardRouterV2 | impl | live | no |
+| avalanche | `0xca8b5f2ff7b8d452be8972b44dc026be96b97228` | PriceFeedTimelock | impl | live | no |
+| avalanche | `0xd2d1162512f927a7e282ef43a362659e4f2a728f` | RewardTracker | impl | live | no |
+| avalanche | `0xd90f337564609e786a039ee39828e902cae03470` | ShortsTrackerTimelock | impl | live | no |
+| avalanche | `0xe547cadbe081749e5b3dc53cb792dfaea2d02fd2` | FastPriceFeed | impl | live | no |
+| avalanche | `0xe57fe47902a35bc0d82c83e39610af546e1d18b9` | GmxTimelock | impl | unknown | no |
+| avalanche | `0xf0f929162751dd723fba5b86a9b3c88dc1d4957b` | BatchSender | impl | live | no |
+| avalanche | `0xff1489227bbaac61a9209a08929e4c2a526ddd17` | EsGMX | impl | live | no |
+| avalanche | `0xfff6d276bc37c61a23f06410dce4a400f66420f8` | PositionRouter | impl | live | no |
+| base | `0x003107b3aeee133804eabe7d1df200ddfbb51dce` | LPToken-2 | impl | live | no |
+| base | `0x06fea8513ff03a0d3f61324da709d4cf06f42a5c` | SwapQuoter | impl | live | no |
+| base | `0x15ada3716a7e589b1c31b7131a0cc546203e100f` | LPToken-3 | impl | live | no |
+| base | `0x20b587484e75752adac381ae577a7562e7f358c5` | SwapDeployer-2 | impl | live | no |
+| base | `0x25f8fa4917180ff308883e37ea27ceaeb68c1f19` | SynapseAdapter | impl | live | no |
+| base | `0x6c8c6e68604e78b549c96907bfe9ebdaac04e3b3` | SynapseAdapter | impl | live | no |
+| base | `0x78a83c17600add7447dbd6b8ab26330481075295` | SwapQuoter | impl | live | no |
+| base | `0x7e7a0e201fd38d3adaa9523da6c109a07118c96a` | SynapseAdapter | impl | live | no |
+| base | `0x8745773cc6e70577819bb76f51fa7640cece505f` | SwapDeployer-2 | impl | live | no |
+| base | `0x9fbff54b967654b0c76b174d2b95614060dd6b07` | SwapQuoterV2 | impl | live | no |
+| base | `0xb37a2c0dc261e5f8019809116e4722585985b07c` | SwapQuoter | impl | live | no |
+| base | `0xd359bc471554504f683fbd4f6e36848612349ddf` | DefaultAdapter | impl | live | no |
+| base | `0xd5a597d6e7ddf373a92c8f477daaa673b0902f48` | DefaultAdapter | impl | live | no |
+| base | `0xe0fa08834465ecc36c494f2b6c87b82ab7970413` | LPToken-2 | impl | live | no |
+| blast | `0x3100dc8464a8523306c3c5034de24a8927d6e590` | MiniChefV2 | impl | live | no |
+| bsc | `0xd123f70ae324d34a9e76b67a27bf77593ba8749f` | SynapseBridge-2 | proxy | live | no |
+| chain-1088 | `0x003107b3aeee133804eabe7d1df200ddfbb51dce` | TimelockController | impl | unknown | no |
+| chain-1088 | `0x06fea8513ff03a0d3f61324da709d4cf06f42a5c` | TransparentUpgradeableProxy | impl | live | no |
+| chain-1088 | `0x6c8c6e68604e78b549c96907bfe9ebdaac04e3b3` | CrossHop | impl | unknown | no |
+| chain-1088 | `0x911766fa1a425cb7cccb0377bc152f37f276f8d6` | TimelockController | impl | unknown | no |
+| chain-1088 | `0xaf41a65f786339e7911f4acdad6bd49426f2dc6b` | TransparentUpgradeableProxy | impl | live | no |
+| chain-1088 | `0xb6032677a85f65ea4932adb25f7514bf04a721af` | MultiSigWallet | impl | unknown | no |
+| chain-1088 | `0xdb9f78f5dd41b73b5020e841b29b5983408f5069` | TimelockController | impl | live | no |
+| chain-1285 | `0x98878b06940ae243284ca214f92bb71a2b032b8a` | WETH | impl | live | no |
+| chain-1285 | `0xa91d6eea8530876fc4fce829d894fb7305296071` | WETH | impl | live | no |
+| ethereum | `0x00cd000000003f7f682be4813200893d4e690000` | FastBridgeRouterV2 | impl | live | no |
+| ethereum | `0x0642026e7f0b6ccac5925b4e7fa61384250e1701` | Coin | impl | live | no |
+| ethereum | `0x0ab87046fbb341d058f17cbc4c1133f25a20a52f` | gOHM | impl | live | no |
+| ethereum | `0x0c30476f66034e11782938df8e4384970b6c9e8a` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x0f2d719407fdbeff09d87557abb7232601fd9f29` | SynapseERC20-2 | impl | live | no |
+| ethereum | `0x12715a66773bd9c54534a01abf01d05f6b4bd35e` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x184f3fad8618a6f458c16bae63f70c426fe784b3` | OlympusTokenMigrator | impl | live | no |
+| ethereum | `0x19e5a60c1646c921ac592409548d1bce5b071faa` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0x1a7e4e63778b4f12a199c062f3efdd288afcbce8` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0x1b890fd37cd50bea59346fc2f8ddb7cd9f5fabd5` | NewOrderGovernance | impl | live | no |
+| ethereum | `0x20d1b558ef44a6e23d9bf4bf8db1653626e642c3` | DarkParadiseV2 | impl | live | no |
+| ethereum | `0x221738f73fa4bfca91918e77d112b87d918c751f` | StakeDaoNFTPalace | impl | live | no |
+| ethereum | `0x223cbf51f154ffe81f29b825ef47b0cad8f691c2` | SaffronERC20StakingPool | impl | live | no |
+| ethereum | `0x24129b935aff071c4f0554882c0d9573f4975fed` | yVault | impl | live | no |
+| ethereum | `0x28dcafcbf29a502b33a719d726b0e723a73b6ad3` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0x29bfed9b070ce7013892e2df2e70d943c4b89b01` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0x29f3dd38db24d3935cf1bf841e6b2b461a3e5d92` | Vyper_contract | impl | live | no |
+| ethereum | `0x2fd0ff45263143dcd616ecada45c0d22e49adbb7` | BalancePass | impl | live | no |
+| ethereum | `0x3707cfddae348f05baefd42406ffba4b74ec8d91` | BalancePass | impl | live | no |
+| ethereum | `0x372bc201134676c846f1fd07a2a059fd18526de3` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0x3c310fc54c0534dc3c45312934508722284352d1` | GaugeMultiRewards | impl | live | no |
+| ethereum | `0x402f878bdd1f5c66fdaf0fababcf74741b68ac36` | sdToken | impl | live | no |
+| ethereum | `0x44dd83e0598e7a3709cf0b2e59d3319418068a65` | VeNewO | impl | live | no |
+| ethereum | `0x4a86c01d67965f8cb3d0aaa2c655705e64097c31` | UniswapV2Pair | impl | live | no |
+| ethereum | `0x5af15da84a4a6edf2d9fa6720de921e1026e37b7` | Vault | impl | live | no |
+| ethereum | `0x5db451f9913c57dc103c6b9df46ff9be42c28510` | rSFI | impl | live | no |
+| ethereum | `0x6dd2236b1e089762cc264c85eebcff195ae38ea2` | StakeDaoNFT_V3 | impl | live | no |
+| ethereum | `0x71ab77b7dbb4fa7e017bc15090b2163221420282` | HIGH | impl | live | no |
+| ethereum | `0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f` | SDT | impl | live | no |
+| ethereum | `0x752b4c6e92d96467fe9b9a2522ef07228e00f87c` | sdToken | impl | live | no |
+| ethereum | `0x798fcfc792e7aa09c0e08f3395bda5a75c3295f7` | StakingRewards | impl | live | no |
+| ethereum | `0x8218c5ed6984c4b3bfc9a594cc62692000dd900e` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0x8336660efbdec2ee59bc1be183046470f47f11fd` | DisbursementCliff | impl | live | no |
+| ethereum | `0x87c4a23a15e2442422e5e43d08ceef7d1f32792d` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0x98585dfc8d9e7d48f0b1ae47ce33332cf4237d96` | GovernanceTokenPausable | impl | live | no |
+| ethereum | `0x9b8f14554f40705de7908879e2228d2ac94fde1a` | OpynPerpVault | impl | live | no |
+| ethereum | `0x9be973b1496e28b3b745742391b0e5977184f1ac` | SaffronLPBalanceToken | impl | live | no |
+| ethereum | `0xa2761b0539374eb7af2155f76eb09864af075250` | Vault | impl | live | no |
+| ethereum | `0xac14864ce5a98af3248ffbf549441b04421247d3` | Sanctuary | impl | live | no |
+| ethereum | `0xb17640796e4c27a39af51887aff3f8dc0daf9567` | yVault | impl | live | no |
+| ethereum | `0xb753428af26e81097e7fd17f40c88aaa3e04902c` | SFI | impl | live | no |
+| ethereum | `0xbaac2b4491727d78d2b78815144570b9f2fe8899` | InitializedProxy | proxy | live | no |
+| ethereum | `0xbc10c4f7b9fe0b305e8639b04c536633a3db7065` | Vault | impl | live | no |
+| ethereum | `0xbc9016c379fb218b95fe3730d5f49f3149e86cab` | StakingRewards | impl | live | no |
+| ethereum | `0xc5f572b705cae1893cdceb5161ce40e2fc5bb6cd` | StakeDaoNFT_V2 | impl | live | no |
+| ethereum | `0xcd6997334867728ba14d7922f72c893fcee70e84` | yVault | impl | live | no |
+| ethereum | `0xcfbd94a94b4a680af7ff275c842e99af61469223` | MerkleDistributor | impl | live | no |
+| ethereum | `0xd1b5651e55d4ceed36251c61c50c889b36f6abb5` | sdCRV | impl | live | no |
+| ethereum | `0xd5a597d6e7ddf373a92c8f477daaa673b0902f48` | DefaultAdapter-2 | impl | live | no |
+| ethereum | `0xdd4f84e4f3cd31d6c91d80122b5a26cb4ae66bd5` | StakeDaoNFT | impl | live | no |
+| ethereum | `0xf3c2bdfccb75cafda3d69d807c336bede956563f` | Vault | impl | live | no |
+| ethereum | `0xf442e3a8041199747f94b01a64632134256f847f` | MerkleDistributorSdt | impl | live | no |
+| ethereum | `0xfea5e213bbd81a8a94d0e1edb09dbd7ceab61e1c` | MasterChef | impl | live | no |
+| linea | `0x34f52752975222d5994c206ce08c1d5b329f24dd` | FastBridge | impl | live | no |
+| optimism | `0x121ab82b49b2bc4c7901ca46b8277962b4350204` | WETH9 | impl | live | no |
+| optimism | `0x7e7a0e201fd38d3adaa9523da6c109a07118c96a` | SynapseAdapter-2 | impl | live | no |
+| polygon | `0x00d1c14a6f0be0c42252d81fec494aa5b9a81f40` | SynapseBridge | impl | live | no |
+| polygon | `0x04073530d61bbcea747f9917c478273ae5859d46` | SynapseBridge | impl | live | no |
+| polygon | `0x06aee5fbada43b3383782b7e7388ab592b1f6320` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0x0775632f3d2b8aa764e833c0e3db6382882d0f48` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0x07ca54031c81a76fc943d00ce2423fa8f60c7b17` | ECDSAFactory | impl | live | no |
+| polygon | `0x0adf879bd8215654abdc354b66dbfdfb013d2362` | SynapseERC20Factory | impl | live | no |
+| polygon | `0x104127ccd4b1378898916894eb59c97e690b6e9e` | MetaSwapDeployer | impl | live | no |
+| polygon | `0x1259adc9f2a0410d0db5e226563920a2d49f4454` | MetaSwapDeployer | impl | live | no |
+| polygon | `0x145000be67701a49e62c904a20e8fc110f2a8cce` | SynapseBridge | impl | live | no |
+| polygon | `0x1bfe50bb2a8a75fefa46892db10313898ddbff8f` | ECDSANodeManagement | impl | live | no |
+| polygon | `0x1d4c2a246311bb9f827f4c768e277ff5787b7d7e` | Multicall2 | impl | live | no |
+| polygon | `0x20b587484e75752adac381ae577a7562e7f358c5` | LPToken | impl | live | no |
+| polygon | `0x244268b9082e05a8bcf18b3b0e83999ea4fc9fcf` | Multicall2 | impl | live | no |
+| polygon | `0x278fd47a2121b63ab30f9fabb41f056b7f8ca709` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0x2f46174b461f0db1d026df753487d34a8543d503` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0x368d2699a864c4ca0a34a3e2789996b1d99bd978` | SynapseBridge | impl | live | no |
+| polygon | `0x39ab21c19032b1a508179a4674e2675ae8bf75a1` | SynapseBridge | impl | live | no |
+| polygon | `0x3c726e4eb2e0b36ca3097ee4f5cd4739d7cdc750` | SynapseBridge | impl | live | no |
+| polygon | `0x41dec918d7be8749680e1e08c7195970a70a3ea6` | SynapseBridge | impl | live | no |
+| polygon | `0x41e95b1f1c7849c50bb9caf92ab33302c0de945f` | MetaSwapDeposit | impl | live | no |
+| polygon | `0x46aea960d150b6d9a59b0f3764944fe7bc2389df` | SynapseBridge | impl | live | no |
+| polygon | `0x50042b5afeee30426ce48be43c9cefb7400115c8` | BridgeConfigV3 | impl | live | no |
+| polygon | `0x5948635463a9c8cecaa17b5d9ba846d789df6df4` | BridgeConfigV2 | impl | live | no |
+| polygon | `0x5b8365d7721bfa56ad52d3794196624a09b83546` | SynapseBridge | impl | live | no |
+| polygon | `0x5d5f01aaec428356b54ee091502dbbeaa935f21a` | MetaSwapDeposit | impl | live | no |
+| polygon | `0x6cd2ba07b5ae38cce793762dc411d934f14b3f7b` | SynapseBridge | impl | live | no |
+| polygon | `0x7103a324f423b8a4d4cc1c4f2d5b374af4f0bab5` | SynapseBridge | impl | live | no |
+| polygon | `0x75224b0f245fe51d5bf47a898dbb6720d4150ba7` | SynapseBridge | impl | live | no |
+| polygon | `0x786e7c65e67c476bbef1b00e90f533d68af9165f` | SynapseERC20Factory | impl | live | no |
+| polygon | `0x7b3c1f09088bdc9f136178e170ac668c8ed095f2` | SynapseBridge | impl | live | no |
+| polygon | `0x7f1baeb399997e1eca9a090a4df6decbd4f125e2` | BridgeConfig | impl | live | no |
+| polygon | `0x809dc529f07651bd43a172e8db6f4a7a0d771036` | MetaSwapDeployer | impl | live | no |
+| polygon | `0x85f819adecd0211a69b856f3307922a759aba8d2` | SynapseBridge | impl | live | no |
+| polygon | `0x88e7af57270f70bcf32cd61fff0ff635775c8f7c` | MetaSwapDeployer | impl | live | no |
+| polygon | `0x8c7d546ffb89a43227c3e2b2665d79cd3ae82cc3` | BridgeConfigV2 | impl | live | no |
+| polygon | `0x8f5bbb2bb8c2ee94639e55d5f41de9b4839c1280` | SynapseBridge | proxy | live | no |
+| polygon | `0x911766fa1a425cb7cccb0377bc152f37f276f8d6` | SwapDeployer | impl | live | no |
+| polygon | `0x93616be16cf1aa4a138bfcb2320875148429713c` | BridgeConfigV2 | impl | live | no |
+| polygon | `0x966e35c01842d029cfceddc7a7feb937c2f62a8a` | SynapseBridge | impl | live | no |
+| polygon | `0x9d526c6188cd343b94b6fcc2251236e826345fe6` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0x9f72004d0ff5ccf2857a3564f7b3329057d15599` | MetaSwapDeposit | impl | live | no |
+| polygon | `0xa7f9b7b0f729dc98ae748f5505497909affdfa8a` | SynapseBridge | impl | live | no |
+| polygon | `0xab0d8fc46249daacd5cb36c5f0bc4f0daf34ebf5` | LPToken | impl | live | no |
+| polygon | `0xaf41a65f786339e7911f4acdad6bd49426f2dc6b` | SwapDeployer | impl | live | no |
+| polygon | `0xb34c67db5f0fd8d3d4238fd0a1cbbfd50a72e177` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0xb51e73cc2653505a1c70b22adf5356fc90e61c6a` | BridgeConfigV3 | impl | live | no |
+| polygon | `0xb68281c60352529595c9ed7e845262f608985d7c` | SynapseBridge | impl | live | no |
+| polygon | `0xb74141527b904dc0e10a22c7dcf535a83fedd4ab` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0xb899e925c7c01652a44c7a1f3121b40ec5da91fa` | SynapseBridge | impl | live | no |
+| polygon | `0xba1001b33bb8294880be56323d9d8634827bcb0f` | SwapDeployer | impl | live | no |
+| polygon | `0xbaf195ae4e6a91ec9a235577070def7eacb3f6f9` | BridgeConfigV3 | impl | live | no |
+| polygon | `0xbd6eca9c22aa1c349fdba9dfddfced6bb6c75e20` | SynapseBridge | impl | live | no |
+| polygon | `0xc53051a68ac757d6c0967e26e3434711dbca1efc` | BridgeConfigV3 | impl | live | no |
+| polygon | `0xcd8a2ea28472788014ada6fc6fb09af0899fc3c1` | SynapseBridge | impl | live | no |
+| polygon | `0xce02a6238edad228cf6bd2504ccf1283e7d94866` | BridgeConfigV2 | impl | live | no |
+| polygon | `0xd4d2779418671d8b305c3dbc25683e64489952d2` | BridgeConfigV2 | impl | live | no |
+| polygon | `0xd5609cd0e1675331e4fb1d43207c8d9d83aab17c` | LPToken | impl | live | no |
+| polygon | `0xdde5bec4815e1cecf336fb973ca578e8d83606e0` | SwapDeployer | impl | live | no |
+| polygon | `0xdedfe38e9b980a13dcb46977b09979fb3cfa9dd9` | BridgeConfigV3 | impl | live | no |
+| polygon | `0xe21a31315ddea8200d73945aa06acbb15db92bfb` | MetaSwapDeployer | impl | live | no |
+| polygon | `0xe862c9da5a9e4dbcc279680881705dc81b88b1ca` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0xf0284fb86ada5e4d82555c529677eea3b2c3e022` | SynapseBridge | impl | live | no |
+| polygon | `0xf76256dd3ea72971690b0d79f96a19b2894261e4` | SynapseBridge | impl | live | no |
+| polygon | `0xfefd11216b8bba4ea18abe55536532a1a3acc336` | SynapseBridge | impl | live | no |
+| polygon | `0xff0047e2156b2d62055a77fe9abbd01baa11d54a` | NerveMetaBridgeZap | impl | live | no |
+| polygon | `0xffc2d603fde1f99ad94026c00b6204bb9b8c36e9` | Multicall2 | impl | live | no |
+
+## Source unavailable (155)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- arbitrum `0x003107b3aeee133804eabe7d1df200ddfbb51dce`
+- arbitrum `0x037527278b4ac8a4327e7015b788001c2954cf82`
+- arbitrum `0x12715a66773bd9c54534a01abf01d05f6b4bd35e`
+- arbitrum `0x15779fefdf5be6f422883e746a1d139a6a12a873`
+- arbitrum `0x15ada3716a7e589b1c31b7131a0cc546203e100f`
+- arbitrum `0x1b9651c3ff7f055b721c9b51219709e52fdbe5fd`
+- arbitrum `0x1c1fcecced3241b17c80e8b1e52a6ee0ea372fe1`
+- arbitrum `0x20b587484e75752adac381ae577a7562e7f358c5`
+- arbitrum `0x244268b9082e05a8bcf18b3b0e83999ea4fc9fcf`
+- arbitrum `0x25544c23b7cc43a37f1fd004dfe22d2cba6a1490`
+- arbitrum `0x25f8fa4917180ff308883e37ea27ceaeb68c1f19`
+- arbitrum `0x26532682e1830cdacccbb7e385cff6de14dd08d8`
+- arbitrum `0x2d8ee8d6951cb4eecfe4a79eb9c2f973c02596ed`
+- arbitrum `0x375e9252625bdb10b457909157548e1d047089f9`
+- arbitrum `0x37f9ae2e0ea6742b9cad5abcfb6bbc3475b3862b`
+- arbitrum `0x47b35974cdc9bb460e71aff6c7b4fc758f3bd932`
+- arbitrum `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`
+- arbitrum `0x5a5fff6f753d7c11a56a52fe47a177a87e431655`
+- arbitrum `0x5d5f01aaec428356b54ee091502dbbeaa935f21a`
+- arbitrum `0x6f4e8eba4d337f874ab57478acc2cb5bacdc19c9`
+- arbitrum `0x73186f2cf2493f20836b17b21ae79fc12934e207`
+- arbitrum `0x77aa7cb4b348f4b99c6364e40bc5bf615fc6feb3`
+- arbitrum `0x78a83c17600add7447dbd6b8ab26330481075295`
+- arbitrum `0x7e7a0e201fd38d3adaa9523da6c109a07118c96a`
+- arbitrum `0x84a420459cd31c3c34583f67e0f0fb191067d32f`
+- arbitrum `0x8745773cc6e70577819bb76f51fa7640cece505f`
+- arbitrum `0x9413b54f04c90ed8eb59a08323d767b72dcd278e`
+- arbitrum `0x9508bf380c1e6f751d97604732ef1bae6673f299`
+- arbitrum `0x9695fa23b27022c7dd752b7d64bb5900677ecc21`
+- arbitrum `0x97a7af2a0323e2a40b866df3a5f1f389427c9b68`
+- arbitrum `0x9f72004d0ff5ccf2857a3564f7b3329057d15599`
+- arbitrum `0x9fbff54b967654b0c76b174d2b95614060dd6b07`
+- arbitrum `0xa67b7147dce20d6f25fd9abfbcb1c3ca74e11f0b`
+- arbitrum `0xab0d8fc46249daacd5cb36c5f0bc4f0daf34ebf5`
+- arbitrum `0xaf41a65f786339e7911f4acdad6bd49426f2dc6b`
+- arbitrum `0xb37a2c0dc261e5f8019809116e4722585985b07c`
+- arbitrum `0xba1001b33bb8294880be56323d9d8634827bcb0f`
+- arbitrum `0xc36501845a90fc7d9b4b08f3aebbc27b1401d586`
+- arbitrum `0xc6c8e508057735cf9f173aa8cf3d3173c02825ad`
+- arbitrum `0xd359bc471554504f683fbd4f6e36848612349ddf`
+- arbitrum `0xd5609cd0e1675331e4fb1d43207c8d9d83aab17c`
+- arbitrum `0xd5a597d6e7ddf373a92c8f477daaa673b0902f48`
+- arbitrum `0xe1b8800c33672a495ae2cbc882c14e7c9438166c`
+- arbitrum `0xe1e1e6711bdfa0b8dec900f9e677d85aa7f3049d`
+- arbitrum `0xe27bff97ce92c3e1ff7aa9f86781fdd6d48f5ee9`
+- arbitrum `0xe74f2e89d993a31b21a714dcc531b34049373ef0`
+- arbitrum `0xf07d1c752fab503e47fef309bf14fbdd3e867089`
+- arbitrum `0xf7e6214e1f2b03b54f1594ecfa3834148ab26888`
+- arbitrum `0xfb2bfc368a7edfd51aa2cbec513ad50edea74e84`
+- arbitrum `0xffc2d603fde1f99ad94026c00b6204bb9b8c36e9`
+- arbitrum `0xffd73e0642e8833cce9854b963840a8cb2a218e8`
+- avalanche `0x1f1e7c893855525b303f99bdf5c3c05be09ca251`
+- avalanche `0x321e7092a180bb43555132ec53aaa65a5bf84251`
+- avalanche `0x3a01521f8e7f012eb37eaaf1cb9490a5d9e18249`
+- avalanche `0x7e7a0e201fd38d3adaa9523da6c109a07118c96a`
+- avalanche `0xc05e61d0e7a63d27546389b7ad62fdff5a91aace`
+- avalanche `0xcfc37a6ab183dd4aed08c204d1c2773c0b1bdf46`
+- avalanche `0xed2a7edd7413021d440b09d654f3b87712abab66`
+- base `0x12715a66773bd9c54534a01abf01d05f6b4bd35e`
+- base `0x22cdc93f53ee3f6b8ad66fad6f98915a5349950e`
+- base `0x432036208d2717394d2614d6697c46df3ed69540`
+- base `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`
+- base `0x6223bd82010e2fb69f329933de20897e7a4c225f`
+- base `0x6f4e8eba4d337f874ab57478acc2cb5bacdc19c9`
+- base `0x84a420459cd31c3c34583f67e0f0fb191067d32f`
+- base `0x9508bf380c1e6f751d97604732ef1bae6673f299`
+- base `0xa67b7147dce20d6f25fd9abfbcb1c3ca74e11f0b`
+- base `0xa9e90579eb086bcda910dd94041ffe041fb4ac89`
+- base `0xaed5b25be1c3163c907a471082640450f928ddfe`
+- base `0xaf41a65f786339e7911f4acdad6bd49426f2dc6b`
+- base `0xb554a55358ff0382fb21f0a478c3546d1106be8c`
+- base `0xf07d1c752fab503e47fef309bf14fbdd3e867089`
+- base `0xfb2bfc368a7edfd51aa2cbec513ad50edea74e84`
+- base `0xffc2d603fde1f99ad94026c00b6204bb9b8c36e9`
+- blast `0x3194b0a295d87fdaa54df852c248f7a6baf6c6e0`
+- blast `0x34f52752975222d5994c206ce08c1d5b329f24dd`
+- blast `0x43b961aec392cfa347225528e5befa987578841c`
+- blast `0x55769baf6ec39b3bf4aae948eb890ea33307ef3c`
+- blast `0x9592f08387134e218327e6e8423400eb845ede0e`
+- blast `0x999fcd13c54b26e02a6ccd185f71550b3a4641c0`
+- blast `0xa4bd1aad7cf04567c10f38fc4355e91bba32ac9c`
+- blast `0xce971282faac9fabcf121944956da7142cccc855`
+- bsc `0x23b891e5c62e0955ae2bd185990103928ab817b3`
+- bsc `0x28ec0b36f0819ecb5005cab836f4ed5a2eca4d13`
+- bsc `0x5f300aec9573bec1ed161e07bb6564e03154e68a`
+- bsc `0x8f5bbb2bb8c2ee94639e55d5f41de9b4839c1280`
+- bsc `0xa4080f1778e69467e905b8d6f72f6e441f9e9484`
+- chain-1088 `0x20b587484e75752adac381ae577a7562e7f358c5`
+- chain-1088 `0x22cdc93f53ee3f6b8ad66fad6f98915a5349950e`
+- chain-1088 `0x266557a864680a1401a3506c0eb72934bd13bf59`
+- chain-1088 `0x67c10c397dd0ba417329543c1a40eb48aaa7cd00`
+- chain-1088 `0x8745773cc6e70577819bb76f51fa7640cece505f`
+- chain-1088 `0x931b8f17764362a3325d30681009f0edd6211231`
+- chain-1088 `0x9508bf380c1e6f751d97604732ef1bae6673f299`
+- chain-1088 `0x961318fc85475e125b99cc9215f62679ae5200ab`
+- chain-1088 `0x9f72004d0ff5ccf2857a3564f7b3329057d15599`
+- chain-1088 `0xa67b7147dce20d6f25fd9abfbcb1c3ca74e11f0b`
+- chain-1088 `0xa9e90579eb086bcda910dd94041ffe041fb4ac89`
+- chain-1088 `0xab0d8fc46249daacd5cb36c5f0bc4f0daf34ebf5`
+- chain-1088 `0xbda037f33539615d9d45ad5c7eae1328f546d823`
+- chain-1088 `0xdde5bec4815e1cecf336fb973ca578e8d83606e0`
+- chain-1088 `0xe1e1e6711bdfa0b8dec900f9e677d85aa7f3049d`
+- chain-1088 `0xe3c82a836ec85311a433fbd9486efaf4b1afbf48`
+- chain-1284 `0x22cdc93f53ee3f6b8ad66fad6f98915a5349950e`
+- chain-1285 `0xd80d8688b02b3fd3afb81cdb124f188bb5ad0445`
+- ethereum `0x1116898dda4015ed8ddefb84b6e8bc24528af2d8`
+- ethereum `0x1b84765de8b7566e4ceaf4d0fd3c5af52d3dde4f`
+- ethereum `0x2796317b0ff8538f253012862c06787adfb8ceb6`
+- ethereum `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`
+- ethereum `0x552dad974da30d67f25be444991e22cbae357851`
+- ethereum `0x75f8f7fa4b6da6de9f4fe972c811b778cefce882`
+- ethereum `0x7e7a0e201fd38d3adaa9523da6c109a07118c96a`
+- ethereum `0xc78fa2af0ca7990bb5ff32c9a728125be58cf247`
+- ethereum `0xd10ef2a513cee0db54e959ef16cac711470b62cf`
+- optimism `0x12715a66773bd9c54534a01abf01d05f6b4bd35e`
+- optimism `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`
+- optimism `0x5a5fff6f753d7c11a56a52fe47a177a87e431655`
+- optimism `0x67c10c397dd0ba417329543c1a40eb48aaa7cd00`
+- optimism `0x809dc529f07651bd43a172e8db6f4a7a0d771036`
+- optimism `0x8c7d5f8a8e154e1b59c92d8fb71314a43f32ef7b`
+- optimism `0xaf41a65f786339e7911f4acdad6bd49426f2dc6b`
+- optimism `0xd5a597d6e7ddf373a92c8f477daaa673b0902f48`
+- optimism `0xe27bff97ce92c3e1ff7aa9f86781fdd6d48f5ee9`
+- optimism `0xe8c610fcb63a4974f02da52f0b4523937012aaa0`
+- optimism `0xf44938b0125a6662f9536281ad2cd6c499f22004`
+- polygon `0x12715a66773bd9c54534a01abf01d05f6b4bd35e`
+- polygon `0x1c6ae197ff4bf7ba96c66c5fd64cb22450af9cc8`
+- polygon `0x254fec3611586b32739dd2729bc57f39f00bd21f`
+- polygon `0x3d63cb088a0c6b9e74317113a4076008d80ec1ea`
+- polygon `0x432036208d2717394d2614d6697c46df3ed69540`
+- polygon `0x43eee87f158ad1e990052cbf5f291c86562a6a36`
+- polygon `0x4cdacbb74e86e2e18c35ae9d97b9427a0ada8007`
+- polygon `0x50882fb56e618d89d463b99ec6ec9d9aace63f4f`
+- polygon `0x598aa1508140da41d5a223eaca158edf26b9dc30`
+- polygon `0x612f3a0226463599ccbcabff89623904ef38bcb9`
+- polygon `0x6f4e8eba4d337f874ab57478acc2cb5bacdc19c9`
+- polygon `0x77aa7cb4b348f4b99c6364e40bc5bf615fc6feb3`
+- polygon `0x7875af1a6878bda1c129a4e2356a3fd040418be5`
+- polygon `0x78a83c17600add7447dbd6b8ab26330481075295`
+- polygon `0x7e7a0e201fd38d3adaa9523da6c109a07118c96a`
+- polygon `0x85fcd7dd0a1e1a9fcd5fd886ed522de8221c3ee5`
+- polygon `0xa12a034fe81a17d11593c1f85930d20090ec1747`
+- polygon `0xa1f8890e39b4d8e33efe296d698fe42fb5e59cc3`
+- polygon `0xaa959ea09a10d1faced135cb4268aa942f64892c`
+- polygon `0xb6c473756050de474286bed418b77aeac39b02af`
+- polygon `0xc0384e730246c8e506b4b186dba7893dba35fb37`
+- polygon `0xca3281e99e2b7a2a889158944c409bf41f3c140d`
+- polygon `0xd1c374252b657df2a9702590758a6b9d551ae46b`
+- polygon `0xd2666441443daa61492ffe0f37717578714a4521`
+- polygon `0xd5a597d6e7ddf373a92c8f477daaa673b0902f48`
+- polygon `0xd8ca34fd379d9ca3c6ee3b3905678320f5b45195`
+- polygon `0xe599161573d3ef4f767f696857a00c65ac35bedf`
+- polygon `0xee26d4be25f34df688b5c79591eba08f48aaeab1`
+- polygon `0xf8f9efc0db77d8881500bb06ff5d6abc3070e695`
+- scroll `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`

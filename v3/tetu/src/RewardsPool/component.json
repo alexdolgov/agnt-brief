@@ -1,0 +1,18 @@
+{
+  "component": "RewardsPool",
+  "main_contract": "RewardsPool",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0b62ad43837a69ad60289eeea7c6e907e759f6e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

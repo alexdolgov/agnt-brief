@@ -1,0 +1,18 @@
+{
+  "component": "BlackholeVotingEscrowFacet-2",
+  "main_contract": "BlackholeVotingEscrowFacet",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdb6e78736add8c85b7b6f8030d3ab836148a59ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

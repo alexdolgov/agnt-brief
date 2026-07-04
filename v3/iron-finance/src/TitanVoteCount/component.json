@@ -1,0 +1,18 @@
+{
+  "component": "TitanVoteCount",
+  "main_contract": "TitanVoteCount",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd8fe1c2b940b385918a281a575fbcd44f4213b0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

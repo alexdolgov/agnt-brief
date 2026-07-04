@@ -1,0 +1,18 @@
+{
+  "component": "SimpleReserve",
+  "main_contract": "SimpleReserve",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x58e0c542ab540e0dd3b4fd96cc46b0aad1196bfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

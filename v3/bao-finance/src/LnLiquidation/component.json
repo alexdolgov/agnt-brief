@@ -1,0 +1,18 @@
+{
+  "component": "LnLiquidation",
+  "main_contract": "LnLiquidation",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0c7bf946e1b81fc1170942ac96bc927f323a6f37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

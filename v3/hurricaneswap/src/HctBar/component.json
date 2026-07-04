@@ -1,0 +1,18 @@
+{
+  "component": "HctBar",
+  "main_contract": "HctBar",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x75b797a0ed87f77bb546f3a3556f18fc35a01140",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

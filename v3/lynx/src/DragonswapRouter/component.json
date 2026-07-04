@@ -1,0 +1,18 @@
+{
+  "component": "DragonswapRouter",
+  "main_contract": "DragonswapRouter",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xa4cf2f53d1195addde9e4d3aca54f556895712f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC20OrderRouter",
+  "main_contract": "ERC20OrderRouter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xf77007137ee5e95187e98fe10955708da1b046ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

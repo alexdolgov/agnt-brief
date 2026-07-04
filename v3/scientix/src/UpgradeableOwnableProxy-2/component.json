@@ -1,0 +1,18 @@
+{
+  "component": "UpgradeableOwnableProxy-2",
+  "main_contract": "UpgradeableOwnableProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x71c035529bc37d44be67296b2d2f7e8974816e1f",
+      "is_proxy": true,
+      "implementation_address": "0x8330b5e39b68ef642c7d3241db39a8c3238bf4c2",
+      "liveness": "live"
+    }
+  ]
+}

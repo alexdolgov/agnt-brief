@@ -1,0 +1,18 @@
+{
+  "component": "HopHelper",
+  "main_contract": "HopHelper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30439b989fdfdf68e08a232799acca68152d9bc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

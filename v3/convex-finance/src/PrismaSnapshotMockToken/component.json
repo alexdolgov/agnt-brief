@@ -1,0 +1,18 @@
+{
+  "component": "PrismaSnapshotMockToken",
+  "main_contract": "PrismaSnapshotMockToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea3030b900d94ed36e5a4e8b15b1db76530acc56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

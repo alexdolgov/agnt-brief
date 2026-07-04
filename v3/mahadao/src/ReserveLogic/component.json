@@ -1,0 +1,18 @@
+{
+  "component": "ReserveLogic",
+  "main_contract": "ReserveLogic",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x400a81ecffb15e0b3c6f84d1340439e925cd1929",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

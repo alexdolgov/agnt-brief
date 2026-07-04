@@ -1,0 +1,20 @@
+{
+  "component": "AccessManager-2",
+  "main_contract": "AccessManager",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/205f8ca3-27fc-4da2-a2e6-0d43e1c60a41"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x22013dbd826e6e4d76499ab9f2a501853c477cf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

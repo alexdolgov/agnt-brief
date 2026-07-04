@@ -1,0 +1,18 @@
+{
+  "component": "TokenDistributor",
+  "main_contract": "TokenDistributor",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10af3d70831a7f85192fb70ce6a7205f81294ad7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

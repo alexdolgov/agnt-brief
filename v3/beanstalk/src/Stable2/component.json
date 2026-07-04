@@ -1,0 +1,18 @@
+{
+  "component": "Stable2",
+  "main_contract": "Stable2",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba150052e11591d0648b17a0e608511874921cbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

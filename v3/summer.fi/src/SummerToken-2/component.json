@@ -1,0 +1,18 @@
+{
+  "component": "SummerToken-2",
+  "main_contract": "SummerToken",
+  "source_file_count": 143,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x194f360d130f2393a5e9f3117a6a1b78abea1624",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

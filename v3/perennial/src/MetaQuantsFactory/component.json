@@ -1,0 +1,18 @@
+{
+  "component": "MetaQuantsFactory",
+  "main_contract": "MetaQuantsFactory",
+  "source_file_count": 79,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x309ad3771baea8de1bf1cf6a1bfb4ceeb65687f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

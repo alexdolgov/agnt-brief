@@ -1,0 +1,26 @@
+{
+  "component": "MirrorMainnet_mTWTR_UST",
+  "main_contract": "MirrorMainnet_mTWTR_UST",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x18fbe81e56133118669660a46d050546045ab9b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ad9618bc51463d3367de12f6d3ecc3caca2e5f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

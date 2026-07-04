@@ -1,0 +1,18 @@
+{
+  "component": "CurveExchangeAdapter",
+  "main_contract": "CurveExchangeAdapter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d64291b5f9cafa25dc95113955c39ae7c8c1fd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

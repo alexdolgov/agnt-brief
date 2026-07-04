@@ -1,0 +1,18 @@
+{
+  "component": "OUpgradeable",
+  "main_contract": "OUpgradeable",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

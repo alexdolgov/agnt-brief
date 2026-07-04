@@ -1,0 +1,18 @@
+{
+  "component": "XERC20",
+  "main_contract": "XERC20",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x48856f48fb4eafab8646de0b0b48bace1f95f723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

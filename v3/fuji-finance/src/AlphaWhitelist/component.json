@@ -1,0 +1,18 @@
+{
+  "component": "AlphaWhitelist",
+  "main_contract": "AlphaWhitelist",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8a44888292c570f6ae414ca9ca2d878f5eced83b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

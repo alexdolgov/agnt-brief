@@ -1,0 +1,20 @@
+{
+  "component": "RageOracle",
+  "main_contract": "RageOracle",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://ultraroundmoney.com/rage/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9b8a45c4a0fbd44158480d9b4b41e0bdca42874c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PGG",
+  "main_contract": "PGG",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcefc726bd7a7988fb277012c69fdc1ab8ed5f681",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

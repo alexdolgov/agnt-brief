@@ -1,0 +1,18 @@
+{
+  "component": "FetchToken-2",
+  "main_contract": "FetchToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaea46a60368a7bd060eec7df8cba43b7ef41ad85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

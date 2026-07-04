@@ -1,0 +1,34 @@
+{
+  "component": "TokenUnlock",
+  "main_contract": "TokenUnlock",
+  "source_file_count": 56,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10edc3b383dd87e675e88623ff1cbb09b3cdefde",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x816628a544aa52b2abee7d482bbec53b80b898a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6a337d948f44baf9bef85e4f00a5006fe6ff5e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

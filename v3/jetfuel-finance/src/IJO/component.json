@@ -1,0 +1,18 @@
+{
+  "component": "IJO",
+  "main_contract": "IJO",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0196f8e442006a35a89734de83fc04c0d6675ae2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

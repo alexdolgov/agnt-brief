@@ -1,0 +1,26 @@
+{
+  "component": "NpmMarket",
+  "main_contract": "NpmMarket",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x297002e45927849ec479bcf29dfcf561e0d147ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x52e5cbe96ebe53541e3cbe9fb05cf45a078edb45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

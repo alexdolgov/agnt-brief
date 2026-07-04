@@ -1,0 +1,18 @@
+{
+  "component": "AgentNftV2",
+  "main_contract": "AgentNftV2",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x342676f14926e40537a2e975e1c51e2b452fcebf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

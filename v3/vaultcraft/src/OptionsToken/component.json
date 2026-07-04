@@ -1,0 +1,18 @@
+{
+  "component": "OptionsToken",
+  "main_contract": "OptionsToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafa52e3860b4371ab9d8f08e801e9ea1027c0ca2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

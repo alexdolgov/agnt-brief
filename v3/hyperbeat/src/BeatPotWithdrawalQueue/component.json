@@ -1,0 +1,60 @@
+{
+  "component": "BeatPotWithdrawalQueue",
+  "main_contract": "BeatPotWithdrawalQueue",
+  "source_file_count": 29,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xhyperbeat/Audits/blob/main/BeatPot/Zellic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x721066bc8ef8211e04a43b78ca078bdfa60fb966",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7e89acffac47435778dd158aa622a150de045e10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x9cd0335bde217d9bf66f971d0b6a80f0bd84f46e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xd1556d45d2e1ebbf50f9a38382e9487ba89d9673",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xf112076df8b099c167e5b6baee37b200d4a976b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xf97271737adadcb392efc550bac7c0612dc0e798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

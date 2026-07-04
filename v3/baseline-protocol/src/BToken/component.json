@@ -1,0 +1,21 @@
+{
+  "component": "BToken",
+  "main_contract": "BToken",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.baseline.markets/assets/2024-10-27_Baseline_BToken.pdf",
+    "https://www.baseline.markets/assets/2025-02-27_Baseline_Fixed_Supply.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fdbde76236998dc2836fe67a9954ede456a1d63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

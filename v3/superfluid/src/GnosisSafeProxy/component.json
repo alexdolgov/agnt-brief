@@ -1,0 +1,50 @@
+{
+  "component": "GnosisSafeProxy",
+  "main_contract": "GnosisSafeProxy",
+  "source_file_count": 1,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x1d9896f00fd51df839b2f5b7ffdd0bd60b471cef",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5b339241312024382c9768b3598f60ecf34ae779",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa298d0b6b9216f7d9eb252dea06280b748efe8e5",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xdfdec8df5cff5daab3ec635e477517ac92251dfd",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xecd2d1bb2776f00ad15f976f349a1ab01f8ce398",
+      "is_proxy": true,
+      "implementation_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "liveness": "live"
+    }
+  ]
+}

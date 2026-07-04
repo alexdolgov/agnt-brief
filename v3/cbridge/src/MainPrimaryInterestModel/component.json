@@ -1,0 +1,18 @@
+{
+  "component": "MainPrimaryInterestModel",
+  "main_contract": "MainPrimaryInterestModel",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x428e1914404dbff52bd8c7baed9719cc5ed181be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

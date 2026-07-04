@@ -1,0 +1,18 @@
+{
+  "component": "MinterPool-2",
+  "main_contract": "MinterPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4799d57abf5f12ca4ef5375c9dadf8fe7fa5a454",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

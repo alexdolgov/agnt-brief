@@ -1,0 +1,18 @@
+{
+  "component": "BalancerV2Swapper",
+  "main_contract": "BalancerV2Swapper",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x369022670f2c623ee6894ae4053ef54c2c685dd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

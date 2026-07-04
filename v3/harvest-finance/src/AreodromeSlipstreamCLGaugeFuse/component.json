@@ -1,0 +1,26 @@
+{
+  "component": "AreodromeSlipstreamCLGaugeFuse",
+  "main_contract": "AreodromeSlipstreamCLGaugeFuse",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x399599ac1807eb7f6ee6499a1ebc2ba68e01a21a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3d129395a55dfa3fd03df41694748ef7fe6c13e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

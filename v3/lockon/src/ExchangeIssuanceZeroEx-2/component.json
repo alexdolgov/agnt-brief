@@ -1,0 +1,20 @@
+{
+  "component": "ExchangeIssuanceZeroEx-2",
+  "main_contract": "ExchangeIssuanceZeroEx",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blaize-security/blaize-security-audits/blob/main/l/lockon-finance/Lockon-audit-report-%5B7-July-2023%5D.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x44ace3accfb7ec2150a9b5a0ca747e65f2a408c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

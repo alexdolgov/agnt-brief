@@ -1,0 +1,18 @@
+{
+  "component": "SigVerifyLib",
+  "main_contract": "SigVerifyLib",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x47bb416ee947fe4a4b655011af7d6e3a1b80e6e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "GetMarketShutdownCalldataScript",
+  "main_contract": "GetMarketShutdownCalldataScript",
+  "source_file_count": 243,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6058cda655ac20b27ceeb1d44ec57311fc751a64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

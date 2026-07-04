@@ -1,0 +1,61 @@
+# hyper-finance — deployments
+
+55 verified deployment(s) across 9 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| bsc | `0x00b23015762b310421e8f940b97f4180d084dda1` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x01d5d7bf32fb0f347ed19ad76bd9225423d29b07` | mVault | impl | live | no |
+| bsc | `0x0228419a091c6ea80818e83abb9d69d09b54a3ed` | mVault | impl | inactive | no |
+| bsc | `0x0d7910325902d39728d150aac96f3cefcdbbcf46` | StrategyBelt | impl | inactive | no |
+| bsc | `0x11e0836bc6c44c5fa6bb3eaf788c8c744b2c38a8` | mVault | impl | live | no |
+| bsc | `0x14c5cb0975aab7880cdabd013011c42b1ef59592` | mVault | impl | live | no |
+| bsc | `0x218a61b9659f739128137e85941cc0875a7cd324` | mVault | impl | inactive | no |
+| bsc | `0x239d2016cc294d0799ee5abc6188d60827a6ded2` | StrategyBelt | impl | inactive | no |
+| bsc | `0x24427c12b058df7670a82ed6af410f034c742170` | mVault | impl | inactive | no |
+| bsc | `0x2fab5ac314eb0aeaf36b515ad5585ec1abf54394` | mVault | impl | inactive | no |
+| bsc | `0x343c4769de820d42ffb09971580cca1872657e92` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x3861b5f503ecc9f203ba1182d19af4da55b28266` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x38c3ab849824789271a7ebd4b20c1bea29f284cd` | mVault | impl | inactive | no |
+| bsc | `0x3ef79805c055e115b85679285e66bed2e6c6140f` | mVault | impl | inactive | no |
+| bsc | `0x417d934d1e76df510addff9b10d830d50502a05e` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x4a6c8d48a2a182972e8ff8d7d899867d7a85afd4` | StrategyMdxSingle | impl | inactive | no |
+| bsc | `0x4b7a63837c8cf56e4dcf5140c12388c24030d7df` | MasterChef | impl | live | no |
+| bsc | `0x4dc224385ce1080fcab04d1a1044780ffb192a7f` | mVault | impl | inactive | no |
+| bsc | `0x5235057d19d5a442b5019aa9a91c52da105fabea` | mVault | impl | inactive | no |
+| bsc | `0x5486a0371c25c213c2c46a29f2a5a82c8190d97b` | mVault | impl | live | no |
+| bsc | `0x5a5a1cfd41abea611a8ec9f455d2b968abf0f96c` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x5b1f20c73e9c3c8f1f3f81b15aa3222db6c0fa49` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x5d62f6060938ea53250ce319acaabbbe6ad7b462` | mVault | impl | inactive | no |
+| bsc | `0x5e7820636ab33090f952da81efcf2cb6ae2d0425` | StrategyMdxSingle | impl | inactive | no |
+| bsc | `0x654284073e538a02b8f7495c0de625aca13a9643` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0x6c3a4e99d0fc907a4df55a97e812bf603e35581e` | mVault | impl | live | no |
+| bsc | `0x6d48ff11be36b9cec60f45a6b573ec3f79766a62` | mVault | impl | inactive | no |
+| bsc | `0x712c88dad58bde65ca687b8cfbefbb478eff9de7` | mVault | impl | live | no |
+| bsc | `0x7a4f3dae26e549e2645e83e67a74c7a096814d01` | SimpleController | impl | live | no |
+| bsc | `0x8257d16767050a6acee7f150c7bc86e2b3e47b6a` | mVault | impl | live | no |
+| bsc | `0x9838a5efd842f593e383efd0d290a61cbc8b56a7` | mVault | impl | inactive | no |
+| bsc | `0x990e6d14d65f7b8a206aa78618f8c19a1a0601f2` | mVault | impl | inactive | no |
+| bsc | `0x99c7e5dc8b2c79a413ef829b7ce81441b800ddbf` | mVault | impl | live | no |
+| bsc | `0x9a319b959e33369c5eaa494a770117ee3e585318` | SushiToken | impl | live | no |
+| bsc | `0x9a859cc06d2172f47c88683c8b432cc5b07cd86d` | mVault | impl | inactive | no |
+| bsc | `0xa1383d11b51f0f9403bdd3b7bec602fa6ea71879` | mVault | impl | live | no |
+| bsc | `0xa4dc262d798daa345cdd101ff713a739c793ddb7` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0xad965128abe19557f3373f6da2dd51f0e4ad2f2d` | mVault | impl | inactive | no |
+| bsc | `0xb13389789e00b302eed08ef85ab4616cb08a9b3a` | StrategyCakeSingle | impl | inactive | no |
+| bsc | `0xb33c0d347317d825e14e937412e0ea398ec4446b` | StrategyEpsPool3 | impl | inactive | no |
+| bsc | `0xbb5bc3145f9cc57f0541efbab68ab8022e3d0b4c` | SimpleController | impl | inactive | no |
+| bsc | `0xbc4afa79a5558edffecd11fc765942e2dbac7da6` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0xc072deeb431462aa34120cbc2f3460502664ce29` | mVault | impl | inactive | no |
+| bsc | `0xd1ed2872bcfa28666ec678c13338a10f08d97835` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0xd6b72c4624bda510c9ffd5fa5ef061d95c238a3f` | mVault | impl | live | no |
+| bsc | `0xd89da10c8f8ac65e0b34ffa00339a29e37a64232` | StrategyMdxSingle | impl | inactive | no |
+| bsc | `0xda62a05aaeb4357d7910433a263e08ee9081f019` | mVault | impl | inactive | no |
+| bsc | `0xda96ef71698f6386f08783a8c8626ef07523f6e9` | mVault | impl | inactive | no |
+| bsc | `0xdbf12f2f954046c1c972d093aad73c71ecb93a1b` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0xdc10062b34455253bde8a103001ac67314209eee` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0xe3d58c6704d376954128006e28f92783025fc4ba` | mVault | impl | inactive | no |
+| bsc | `0xe460907b56b5efe6f7af2e2d113281c7f927d9dd` | StrategyLendVenus | impl | inactive | no |
+| bsc | `0xe5a08db69cd71802130dd8aac41146335d46ad51` | mVault | impl | live | no |
+| bsc | `0xe773c57b453ebe09c77e3c777368470d2b020511` | mVault | impl | inactive | no |
+| bsc | `0xff952af722718efb81f120e6852c306e5f7b684c` | StrategyLendVenus | impl | inactive | no |

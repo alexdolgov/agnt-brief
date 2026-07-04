@@ -1,0 +1,18 @@
+{
+  "component": "TokenLaunchpadVouchersSale",
+  "main_contract": "TokenLaunchpadVouchersSale",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x70ff3c8a979b7f4e6b8100da78a1b2ea9af591ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VaultDynaZapper",
+  "main_contract": "VaultDynaZapper",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f85ddb2c6fabe98ca3f2499b969f02f97046194",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

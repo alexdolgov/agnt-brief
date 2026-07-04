@@ -1,0 +1,18 @@
+{
+  "component": "FastBridgeL2",
+  "main_contract": "FastBridgeL2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1f2af270029d028400265ce1dd0919ba8780dae1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "CollSurplusPool",
+  "main_contract": "CollSurplusPool",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3bec529c86317c64305dc161998fb7f40078f200",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67dbd2ad541c61d37f17b0515d2e452e04597a36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "EthosVote-2",
+  "main_contract": "EthosVote",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

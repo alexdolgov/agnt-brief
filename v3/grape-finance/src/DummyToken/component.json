@@ -1,0 +1,18 @@
+{
+  "component": "DummyToken",
+  "main_contract": "DummyToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x95b014322dc089ef61ce55a75159086647319706",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

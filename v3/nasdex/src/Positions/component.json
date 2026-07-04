@@ -1,0 +1,18 @@
+{
+  "component": "Positions",
+  "main_contract": "Positions",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0dc84b14964234dcb4465874f9ff4778ebb2998a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

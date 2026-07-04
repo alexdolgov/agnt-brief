@@ -1,0 +1,20 @@
+{
+  "component": "EthereumBundler",
+  "main_contract": "EthereumBundler",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/morpho-org/metamorpho-v1.1/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7995f71aa11525db02fc2473c37dee5dbf55107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

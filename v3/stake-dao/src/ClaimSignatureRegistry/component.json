@@ -1,0 +1,18 @@
+{
+  "component": "ClaimSignatureRegistry",
+  "main_contract": "ClaimSignatureRegistry",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x03cbccbe8d2073a1dc186ae6bcd95390fcdff36f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

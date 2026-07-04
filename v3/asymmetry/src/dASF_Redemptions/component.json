@@ -1,0 +1,18 @@
+{
+  "component": "dASF_Redemptions",
+  "main_contract": "dASF Redemptions",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b9a4b5a377e2377f6f5873e95d9274caed4b680",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

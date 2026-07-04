@@ -1,0 +1,26 @@
+{
+  "component": "CoreFacet",
+  "main_contract": "CoreFacet",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90b9e5de5dbe8d5c882aac8c097fd5a235a0014f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe16e1df1c023fc01795acade989f1d0e84d52301",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

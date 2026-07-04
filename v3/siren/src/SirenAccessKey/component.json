@@ -1,0 +1,18 @@
+{
+  "component": "SirenAccessKey",
+  "main_contract": "SirenAccessKey",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SynthereumMultiLpLiquidityPool-3",
+  "main_contract": "SynthereumMultiLpLiquidityPool",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xaf9132b3afa36b36f6ddfff63fd40b9df43c0928",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

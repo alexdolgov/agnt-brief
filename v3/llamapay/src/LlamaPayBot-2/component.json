@@ -1,0 +1,18 @@
+{
+  "component": "LlamaPayBot-2",
+  "main_contract": "LlamaPayBot",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x57547f79d8344accab21dc0a9c9d186e240353d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "FireBotPromoterV2",
+  "main_contract": "FireBotPromoterV2",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x814a9f5301ebc9233cab4928e4bf95f6d4831a4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd3ec89bfd804a8b7e58fd1f93eef8eb8f01cf109",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

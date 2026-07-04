@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedChainlink",
+  "main_contract": "PriceFeedChainlink",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf64af34e614955760c331fc055b25bcf9dc1ac09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

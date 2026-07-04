@@ -1,0 +1,18 @@
+{
+  "component": "RomeProFactory",
+  "main_contract": "RomeProFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd8c2587eae9edc5dd83e2f40e9a1c26af288a7c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

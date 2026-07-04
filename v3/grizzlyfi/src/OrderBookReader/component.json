@@ -1,0 +1,18 @@
+{
+  "component": "OrderBookReader",
+  "main_contract": "OrderBookReader",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdb6db98a73cc64d5f71b92befd57c66e22d6724b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

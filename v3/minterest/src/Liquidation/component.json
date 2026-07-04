@@ -1,0 +1,18 @@
+{
+  "component": "Liquidation",
+  "main_contract": "Liquidation",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x494c83de7da10546ce84106c544a279154c3ced6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

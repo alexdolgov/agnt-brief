@@ -1,0 +1,18 @@
+{
+  "component": "PendleLinearDistributor",
+  "main_contract": "PendleLinearDistributor",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2b35836025d1159f3d6af4b13adca05de78b93c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

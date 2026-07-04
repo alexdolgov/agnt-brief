@@ -1,0 +1,18 @@
+{
+  "component": "MinAssetBalancesPostRedemptionPolicy",
+  "main_contract": "MinAssetBalancesPostRedemptionPolicy",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9d940beaa6e3cfb441d49787fdf1db18d7f8251e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

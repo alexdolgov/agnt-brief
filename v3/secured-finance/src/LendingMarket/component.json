@@ -1,0 +1,69 @@
+{
+  "component": "LendingMarket",
+  "main_contract": "LendingMarket",
+  "source_file_count": 38,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Secured-Finance/contracts/blob/develop/audits/2023-11-Quantstamp.pdf",
+    "https://github.com/Secured-Finance/contracts/blob/develop/audits/2024-03-Quantstamp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39fce9528d756f7fa43058c6c6fe862f09efac9e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a32079a5bfc4e5e6da8e7369e9daf1a2c777030",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x819cc14d52c97d778a43c1e4d509d67a9b46b52d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9271604178b08dc1f19d8195494a017b2629dd1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xacc7f418157e3f534fe0e30b630d9da0f4624d97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc542b1f3b1e1e69306a7baeb1c59ff7b8a16819",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd06dd40ba7c2cff3a6aa2f59c55d249aca57e521",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

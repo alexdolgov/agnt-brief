@@ -1,0 +1,18 @@
+{
+  "component": "SharkNFT2",
+  "main_contract": "SharkNFT2",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcd2b54fd07e9a71d261e1e3ce6c4ebb54810b12f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

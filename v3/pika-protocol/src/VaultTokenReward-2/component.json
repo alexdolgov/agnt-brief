@@ -1,0 +1,18 @@
+{
+  "component": "VaultTokenReward-2",
+  "main_contract": "VaultTokenReward",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5a8737294c515958e865ea3887082961a883afd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

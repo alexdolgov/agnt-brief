@@ -1,0 +1,18 @@
+{
+  "component": "GovToken",
+  "main_contract": "GovToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd1da314f7db27dbe3c61ac172be13d86e67688b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

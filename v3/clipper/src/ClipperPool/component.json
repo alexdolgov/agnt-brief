@@ -1,0 +1,26 @@
+{
+  "component": "ClipperPool",
+  "main_contract": "ClipperPool",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e9c6dcdca22a5952a88c4b18edb5b54c5155bc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe82906b6b1b04f631d126c974af57a3a7b6a99d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

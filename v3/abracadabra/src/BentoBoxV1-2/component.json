@@ -1,0 +1,18 @@
+{
+  "component": "BentoBoxV1-2",
+  "main_contract": "BentoBoxV1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf4f46382c2be1603dc817551ff9a7b333ed1d18f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

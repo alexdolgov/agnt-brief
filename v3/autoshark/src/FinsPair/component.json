@@ -1,0 +1,18 @@
+{
+  "component": "FinsPair",
+  "main_contract": "FinsPair",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6fd85eb8c30763f26d2373031add58c61389f4b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "StableTokenEUR",
+  "main_contract": "StableTokenEUR",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x09933e89986fea776c3be3556dbf9ba23c240bb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x665cb564390741783d78813445bd3c2ee1a60b78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

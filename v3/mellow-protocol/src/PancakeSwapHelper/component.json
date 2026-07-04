@@ -1,0 +1,18 @@
+{
+  "component": "PancakeSwapHelper",
+  "main_contract": "PancakeSwapHelper",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31cbfa956a75b6df87f8387e62ea5f9dc7d4efd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

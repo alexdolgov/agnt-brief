@@ -1,0 +1,18 @@
+{
+  "component": "mSpellReporter-3",
+  "main_contract": "mSpellReporter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd2b62aef2102c09f475b23dda6b61072e848cf28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

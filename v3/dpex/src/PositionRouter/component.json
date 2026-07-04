@@ -1,0 +1,18 @@
+{
+  "component": "PositionRouter",
+  "main_contract": "PositionRouter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6c17c37ebc95c739f9b68ecc7ad6a0c682f1636b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

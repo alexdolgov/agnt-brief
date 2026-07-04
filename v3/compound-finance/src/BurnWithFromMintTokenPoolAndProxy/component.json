@@ -1,0 +1,18 @@
+{
+  "component": "BurnWithFromMintTokenPoolAndProxy",
+  "main_contract": "BurnWithFromMintTokenPoolAndProxy",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82164603b46a79c0ddcf2e622e242f16428939db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

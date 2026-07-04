@@ -1,0 +1,18 @@
+{
+  "component": "StrategyEpsPool3",
+  "main_contract": "StrategyEpsPool3",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb33c0d347317d825e14e937412e0ea398ec4446b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

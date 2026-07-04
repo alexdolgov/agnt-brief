@@ -1,0 +1,18 @@
+{
+  "component": "TeamToken",
+  "main_contract": "TeamToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x446eb0f112dec3e84e29ce9bedab89060b8c40b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

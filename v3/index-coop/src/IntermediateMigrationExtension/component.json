@@ -1,0 +1,26 @@
+{
+  "component": "IntermediateMigrationExtension",
+  "main_contract": "IntermediateMigrationExtension",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9da195dbd9446c649b6cb6196d6cc460f277d907",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa02a2f8c20761a6cd886871716320b16011c7a5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

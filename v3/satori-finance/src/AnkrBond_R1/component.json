@@ -1,0 +1,18 @@
+{
+  "component": "AnkrBond_R1",
+  "main_contract": "AnkrBond_R1",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e56ec889e5a3f8771862dd765ec76bfed3e3a9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

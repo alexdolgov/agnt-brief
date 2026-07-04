@@ -1,0 +1,26 @@
+{
+  "component": "PositionManager-5",
+  "main_contract": "PositionManager",
+  "source_file_count": 93,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x23321f11a6d44fd1ab790044fdfde5758c902fdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x516af52d0c629b5e378da4dc64ecb0744ce10109",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

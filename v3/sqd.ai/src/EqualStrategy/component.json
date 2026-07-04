@@ -1,0 +1,26 @@
+{
+  "component": "EqualStrategy",
+  "main_contract": "EqualStrategy",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x17cdf76366d0576b9660a4e4de2fe4c46e206d84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa604f84c9c59e223b12c831b35723aa0d7277f8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

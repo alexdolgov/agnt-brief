@@ -1,0 +1,20 @@
+{
+  "component": "Validly",
+  "main_contract": "Validly",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ValantisLabs/Validly/blob/main/audits/valantis-audit-sept-2024(Public).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x101635d1ace278063e651692dce17b528680f9f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

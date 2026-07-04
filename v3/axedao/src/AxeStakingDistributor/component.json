@@ -1,0 +1,18 @@
+{
+  "component": "AxeStakingDistributor",
+  "main_contract": "AxeStakingDistributor",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe75998a5093afd9e68ae25e4ae0d092c9d9d69a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

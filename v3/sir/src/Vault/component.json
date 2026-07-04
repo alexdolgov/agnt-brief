@@ -1,0 +1,36 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 40,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Egis-Security/audits/blob/main/reports/SIR-Trading.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x4a35e7448dad9cac6b3e529050b5a6ee56a0edf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x810bbc719c9e7d6762f6083bb3620cbf39e1d191",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xed4e95f1acff8452c33f1b0f3ec04734ff11f49e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

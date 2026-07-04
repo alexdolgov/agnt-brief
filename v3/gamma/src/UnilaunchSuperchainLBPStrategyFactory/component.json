@@ -1,0 +1,50 @@
+{
+  "component": "UnilaunchSuperchainLBPStrategyFactory",
+  "main_contract": "UnilaunchSuperchainLBPStrategyFactory",
+  "source_file_count": 191,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xaab276f8f02085a0971cf7f1ad562279b227c6c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xc7c6a1e2b225c59421b80ac59e8c1b881dd357c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xd9d17150b6a5153a53e2dd0fd291d85ea4efe13c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xe1cd681b7dded7619011bb27f712a8ae467aa644",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xfd62009c3af39835e2625080ad370a99197fdbc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

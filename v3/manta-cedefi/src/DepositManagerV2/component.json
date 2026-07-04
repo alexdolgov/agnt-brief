@@ -1,0 +1,26 @@
+{
+  "component": "DepositManagerV2",
+  "main_contract": "DepositManagerV2",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x9e7478b044ba9c27948f770e32aa00954e2ef15a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xeab833511fd89045f6dddab931cdcd95dd26a5bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

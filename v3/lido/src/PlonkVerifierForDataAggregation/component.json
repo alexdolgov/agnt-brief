@@ -1,0 +1,18 @@
+{
+  "component": "PlonkVerifierForDataAggregation",
+  "main_contract": "PlonkVerifierForDataAggregation",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb0c26a89833762b65098dd66b6ae04b34d153be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

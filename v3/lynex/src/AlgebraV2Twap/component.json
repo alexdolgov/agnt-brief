@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraV2Twap",
+  "main_contract": "AlgebraV2Twap",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x887f8dfe726754705d5d45ebe8a772d41a94c608",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

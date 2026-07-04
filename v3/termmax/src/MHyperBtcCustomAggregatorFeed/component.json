@@ -1,0 +1,18 @@
+{
+  "component": "MHyperBtcCustomAggregatorFeed",
+  "main_contract": "MHyperBtcCustomAggregatorFeed",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c7a74f9e391f66cd1ad9d934ad897b2cdd085de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

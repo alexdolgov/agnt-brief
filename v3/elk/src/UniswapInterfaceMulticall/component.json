@@ -1,0 +1,26 @@
+{
+  "component": "UniswapInterfaceMulticall",
+  "main_contract": "UniswapInterfaceMulticall",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x352d8f40cd62ffd82d98210ffe2d75584387de05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xf3295f2178762aa96edf5e3e30178e60c79b6ff8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

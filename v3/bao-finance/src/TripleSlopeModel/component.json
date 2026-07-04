@@ -1,0 +1,18 @@
+{
+  "component": "TripleSlopeModel",
+  "main_contract": "TripleSlopeModel",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb824c640dd8aade41b137841575fdf3c496c24c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FeeDepositV2",
+  "main_contract": "FeeDepositV2",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29dba2751b5aa26f7d03657066c0984c66999178",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

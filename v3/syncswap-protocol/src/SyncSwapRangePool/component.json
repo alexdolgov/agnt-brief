@@ -1,0 +1,18 @@
+{
+  "component": "SyncSwapRangePool",
+  "main_contract": "SyncSwapRangePool",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x3f9732504c285ef578fa3e3b437eee9eceaaba27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

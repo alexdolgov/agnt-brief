@@ -1,0 +1,50 @@
+{
+  "component": "LiquidationPairFactory",
+  "main_contract": "LiquidationPairFactory",
+  "source_file_count": 33,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x555bd8fc65e57139c9f405980c7a9526a7de8093",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8aa2a1d364162fdfeb891d48f127e6923f9ab1a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9428f4b3ee5f5918ee16958c1717b5520fa3158e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa1697e8f6b11d0e2f00d9dc8a5aeae2b2665650a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcb54fc145bc53cb92f79bd8202d9c78d083b9f6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

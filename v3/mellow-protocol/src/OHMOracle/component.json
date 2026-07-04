@@ -1,0 +1,18 @@
+{
+  "component": "OHMOracle",
+  "main_contract": "OHMOracle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x87e92a98f590d243d291afae822bc0523e141447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

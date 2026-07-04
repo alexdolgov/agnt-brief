@@ -1,0 +1,234 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 16,
+  "deployment_count": 28,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0b99888ff4e26a6fdb89c39e9944a0b0f7194e58",
+      "is_proxy": true,
+      "implementation_address": "0xfd43d3f8426266e9667993e25b582607708338c4",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0cde6c5f4bc2832fd1cc8e931c338c30149f6bd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0e144bc9331419b3c71cc27fae4ab3dd3c5051e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x34c560b19dfd490e0d4b8054df35669092a94b78",
+      "is_proxy": true,
+      "implementation_address": "0xbc877348f2314a86c174647e89f80716e8ff9c27",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x36af72d0633e9b3ec9db04f2e05e354ff3b3fc06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x416fed87aa32268426ccd94aeae9d9121383853a",
+      "is_proxy": true,
+      "implementation_address": "0x7341a1d0f0f4c38418e3fc07883746708778a297",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x45e6c213528af48fb60ff1c01e8b6497972b7bd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x55ff47212db14a74a3a98be4b342e90ab5e5074a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x641e72fea330a882a7f9f4d41f2400ca4a37d30c",
+      "is_proxy": true,
+      "implementation_address": "0xd1ed79781cb9135666e69ce29b6ca07ea531947d",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6cd383ef37a4b9b6153cf57d83eb50b36db34798",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7341a1d0f0f4c38418e3fc07883746708778a297",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7a0ebb40cff9990d7d0dc0b365a2d669e45296e1",
+      "is_proxy": true,
+      "implementation_address": "0x94d9b58d124f3f0975df2ba0f5091c9b280d718c",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x87c7b54f0c7f39aec8628704001b9c377e274f00",
+      "is_proxy": true,
+      "implementation_address": "0xf41e84d85e5b968742784b3d3550f7af66c77124",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x94d9b58d124f3f0975df2ba0f5091c9b280d718c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x96719a947e4c0026a7021e2f91204f1e17305bc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9d4225505b9d4ece32866d8fa7639bad3a31f46f",
+      "is_proxy": true,
+      "implementation_address": "0x45e6c213528af48fb60ff1c01e8b6497972b7bd3",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa2f279160debac2260ffd9e7d43118c9c211683c",
+      "is_proxy": true,
+      "implementation_address": "0x6cd383ef37a4b9b6153cf57d83eb50b36db34798",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa65c9de776d1f30c095eff9c775e001a1d366df8",
+      "is_proxy": true,
+      "implementation_address": "0xef49d2ccc2a95f73d6b33fdc4ae22ee550ffcbe8",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb051dde211e0be180c07fe0bdf82a5a9d4c7abd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbc877348f2314a86c174647e89f80716e8ff9c27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd1ed79781cb9135666e69ce29b6ca07ea531947d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdea3defef5d8dfdd5b385f3af53cc937e6d33c8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe899f80033a0ed3b9cfdcbc66d8c98537a5603a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xef49d2ccc2a95f73d6b33fdc4ae22ee550ffcbe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xef4c0a58add0cbc8f2e4208bf8e1a693ceb0b069",
+      "is_proxy": true,
+      "implementation_address": "0xdea3defef5d8dfdd5b385f3af53cc937e6d33c8f",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf41e84d85e5b968742784b3d3550f7af66c77124",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf4496e5a956c0b2e64c3f2fd3076d3836806e3c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfd43d3f8426266e9667993e25b582607708338c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

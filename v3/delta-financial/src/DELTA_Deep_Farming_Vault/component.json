@@ -1,0 +1,34 @@
+{
+  "component": "DELTA_Deep_Farming_Vault",
+  "main_contract": "DELTA_Deep_Farming_Vault",
+  "source_file_count": 15,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44d59c297949b49bc63372c13ce39d7aa9fb40a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6bf15a530314d80baa5560539d7f327f3dbe0eec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fe9bb6b66958f2271c4b0ad23f6e8dda8c221be",
+      "is_proxy": true,
+      "implementation_address": "0x6bf15a530314d80baa5560539d7f327f3dbe0eec",
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AirPuffVaultM-2",
+  "main_contract": "AirPuffVaultM",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0934a8ece0a62913993b4333154efb38925034b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "PreciseUnitOracle",
+  "main_contract": "PreciseUnitOracle",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x86856845e974df562975d0ef62ec34b2ff059453",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

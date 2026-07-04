@@ -1,0 +1,18 @@
+{
+  "component": "NFTLottery",
+  "main_contract": "NFTLottery",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3baa5ab805c7888e7a92cf6d32c20938ede344fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "buttonBundler",
+  "main_contract": "buttonBundler",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x72c1d98ff8c3f3b359aafd0dafc6127f5e5b67a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "CosmosBridge",
+  "main_contract": "CosmosBridge",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72eb0df009b8ea2441de78f073338620b625adc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e5b2a7a9f11e406c7cc38b5e2ddeafc8c5eaf65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

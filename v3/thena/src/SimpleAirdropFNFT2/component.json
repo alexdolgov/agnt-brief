@@ -1,0 +1,18 @@
+{
+  "component": "SimpleAirdropFNFT2",
+  "main_contract": "SimpleAirdropFNFT2",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x89d0155d12448ab83e6e89c8b5a0f9a4bf31c076",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

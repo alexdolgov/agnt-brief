@@ -1,0 +1,18 @@
+{
+  "component": "GenericV2Keep3rJob",
+  "main_contract": "GenericV2Keep3rJob",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf796c1a96c1e803cb748f2e7124b427536277480",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "KOVIN",
+  "main_contract": "KOVIN",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x31166bd16ed20c0ac78930f5e4b7bbb4ad7e27ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

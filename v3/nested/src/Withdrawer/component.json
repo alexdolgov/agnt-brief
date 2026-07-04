@@ -1,0 +1,18 @@
+{
+  "component": "Withdrawer",
+  "main_contract": "Withdrawer",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0384f3b95faa3c2f48c40f15fe8bd8cd1f1f8058",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VotingVaultController",
+  "main_contract": "VotingVaultController",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x17b7bd832666ac28a6ad35a93d4eff4eb9a07a17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

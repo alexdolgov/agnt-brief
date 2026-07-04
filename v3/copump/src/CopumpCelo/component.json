@@ -1,0 +1,26 @@
+{
+  "component": "CopumpCelo",
+  "main_contract": "CopumpCelo",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x1bdfd11c6002657a0f1c1f91b831a8a427857813",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x48cef9bf25ab43584b555437e9aa080904376d95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

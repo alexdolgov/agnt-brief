@@ -1,0 +1,25 @@
+{
+  "component": "LendingPoolCollateralManager",
+  "main_contract": "LendingPoolCollateralManager",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2020/09/aave-protocol-v2",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Certik-aave-v2-03-12-2020.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Mixbytes-aave-v2-03-12-2020.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/PeckShield-aave-v2-03-12-2020-CN.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/Peckshield-aave-v2-03-12-2020-EN.pdf",
+    "https://github.com/aave/protocol-v2/blob/master/audits/SigmaPrime-aave-v2-01-2021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x105c557444ed2f5ed34ee9548a0529e8c142c4e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

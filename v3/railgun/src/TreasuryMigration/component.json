@@ -1,0 +1,26 @@
+{
+  "component": "TreasuryMigration",
+  "main_contract": "TreasuryMigration",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1a45445d99f8d1310317ec7609372ccba80abbf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x710fe3579e77c15d944844624d2feeac44f3cbfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

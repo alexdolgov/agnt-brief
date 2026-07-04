@@ -1,0 +1,18 @@
+{
+  "component": "BalancerMetaStablePoolCalculator",
+  "main_contract": "BalancerMetaStablePoolCalculator",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66664bd801ff4edf8778bae66acf1de9c29a59a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Aggregator",
+  "main_contract": "Aggregator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6d25a2dc53c6e1a20e01d5147f240b1e145998eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

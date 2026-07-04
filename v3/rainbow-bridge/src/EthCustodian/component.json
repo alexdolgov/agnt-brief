@@ -1,0 +1,18 @@
+{
+  "component": "EthCustodian",
+  "main_contract": "EthCustodian",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

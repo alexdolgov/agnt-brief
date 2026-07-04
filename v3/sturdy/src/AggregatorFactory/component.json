@@ -1,0 +1,18 @@
+{
+  "component": "AggregatorFactory",
+  "main_contract": "AggregatorFactory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7520aa7f8dfa6c2f5024f419b33c7c221a647c51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

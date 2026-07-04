@@ -1,0 +1,18 @@
+{
+  "component": "AllowListOperatorManager",
+  "main_contract": "AllowListOperatorManager",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6cbe376af580bc2c718f710d0e3ab98feb3aaccb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OCR_Cycle",
+  "main_contract": "OCR_Cycle",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12e46e69623350ab3ae6d52cab86a152a078ad6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

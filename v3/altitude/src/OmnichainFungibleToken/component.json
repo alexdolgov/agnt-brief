@@ -1,0 +1,26 @@
+{
+  "component": "OmnichainFungibleToken",
+  "main_contract": "OmnichainFungibleToken",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3aba07c0f08f659a5bb5f02288a500679beee39b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

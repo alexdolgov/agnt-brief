@@ -1,0 +1,21 @@
+{
+  "component": "BeaconProxy",
+  "main_contract": "BeaconProxy",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/inceptionlrt/smart-contracts/blob/master/audits/Inception_MellowV2_Symbiotic_Oxorio.pdf",
+    "https://github.com/inceptionlrt/smart-contracts/blob/master/audits/VAR_inception_250210_smart_contracts_V3.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1aee5ec60fc79b669f11fe368fde789e267649e2",
+      "is_proxy": true,
+      "implementation_address": "0x36863d0d91a0770cc65c42073400aa66d9008fca",
+      "liveness": "live"
+    }
+  ]
+}

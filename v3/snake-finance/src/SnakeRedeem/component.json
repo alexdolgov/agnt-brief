@@ -1,0 +1,18 @@
+{
+  "component": "SnakeRedeem",
+  "main_contract": "SnakeRedeem",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x47f8dae2613f24d9b426b5b9c4d6a3773cc601f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

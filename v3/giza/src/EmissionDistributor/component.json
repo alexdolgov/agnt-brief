@@ -1,0 +1,18 @@
+{
+  "component": "EmissionDistributor",
+  "main_contract": "EmissionDistributor",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6d104968d1d64aecea5f16aa956a87d67ffbc742",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SwapPair",
+  "main_contract": "SwapPair",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xff9a4e72405df3ca3d909523229677e6b2b8dc71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

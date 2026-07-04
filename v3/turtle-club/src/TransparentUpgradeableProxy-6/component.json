@@ -1,0 +1,74 @@
+{
+  "component": "TransparentUpgradeableProxy-6",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d6b2a11ffea5f9a8ed85a02581910b3d695c12b",
+      "is_proxy": true,
+      "implementation_address": "0x863ba8f64b1528de6c8a7239d80d4f2b7cff159b",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4975e6c808ddb8fc6a9bc48f6dfd4398bf7b7dc7",
+      "is_proxy": true,
+      "implementation_address": "0x5de8c7a537e951f4d09ab3366d635f271c29762c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5de8c7a537e951f4d09ab3366d635f271c29762c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x863ba8f64b1528de6c8a7239d80d4f2b7cff159b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa98e8652daf2407839b18f4e215d86d88eb91582",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3e7e46c62b0fea4cd73920c65971b67ea01de56",
+      "is_proxy": true,
+      "implementation_address": "0xd47b9c9fb1788f6353a543150006d0b7ed0b17bf",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd47b9c9fb1788f6353a543150006d0b7ed0b17bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe439fe4563f7666fcd7405bec24ae7b0d226536e",
+      "is_proxy": true,
+      "implementation_address": "0xa98e8652daf2407839b18f4e215d86d88eb91582",
+      "liveness": "live"
+    }
+  ]
+}

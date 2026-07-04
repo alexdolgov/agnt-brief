@@ -1,0 +1,18 @@
+{
+  "component": "DGKeeper",
+  "main_contract": "DGKeeper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe60287ef5487b01e3bef817e63f01ff5af917ce5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

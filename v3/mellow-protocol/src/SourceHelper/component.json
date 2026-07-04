@@ -1,0 +1,18 @@
+{
+  "component": "SourceHelper",
+  "main_contract": "SourceHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x474dd66474b82dcb770865471964463f7153ba69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

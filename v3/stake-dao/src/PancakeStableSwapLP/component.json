@@ -1,0 +1,18 @@
+{
+  "component": "PancakeStableSwapLP",
+  "main_contract": "PancakeStableSwapLP",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1179adfa22dd0e5050c1c00c9f8543a77f75a2c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

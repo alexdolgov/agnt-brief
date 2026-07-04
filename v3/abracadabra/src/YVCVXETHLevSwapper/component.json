@@ -1,0 +1,18 @@
+{
+  "component": "YVCVXETHLevSwapper",
+  "main_contract": "YVCVXETHLevSwapper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe345156cdec151d9f843f94ade7770efa9d56417",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

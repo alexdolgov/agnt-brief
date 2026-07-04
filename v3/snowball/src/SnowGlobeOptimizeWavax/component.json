@@ -1,0 +1,18 @@
+{
+  "component": "SnowGlobeOptimizeWavax",
+  "main_contract": "SnowGlobeOptimizeWavax",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3a3a0570f66cd5dfacb3c72b5214fec88e5722a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

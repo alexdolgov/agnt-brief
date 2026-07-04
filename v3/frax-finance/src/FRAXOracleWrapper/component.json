@@ -1,0 +1,20 @@
+{
+  "component": "FRAXOracleWrapper",
+  "main_contract": "FRAXOracleWrapper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/FraxQ42021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a6ddd9401b14d0443d0738b8a78fd5b99829a80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

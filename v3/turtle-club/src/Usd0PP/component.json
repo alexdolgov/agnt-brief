@@ -1,0 +1,18 @@
+{
+  "component": "Usd0PP",
+  "main_contract": "Usd0PP",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7859a49e6fe8422add6aabd26a3231030dc96a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

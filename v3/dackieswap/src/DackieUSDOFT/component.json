@@ -1,0 +1,26 @@
+{
+  "component": "DackieUSDOFT",
+  "main_contract": "DackieUSDOFT",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1d01aae6ef5d13406fdabab0e6c12fb862e342c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x95cdf6143f702869e3c74fdaad607945acdd69b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

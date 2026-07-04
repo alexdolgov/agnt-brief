@@ -1,0 +1,18 @@
+{
+  "component": "CamelotSinglePositionLiquidityManager",
+  "main_contract": "CamelotSinglePositionLiquidityManager",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9a9e78387c21d88138481da872e1dbaef71078b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SmartChefInitializable",
+  "main_contract": "SmartChefInitializable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc9ee54147445f1c1c23f52183c95456e69a92989",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

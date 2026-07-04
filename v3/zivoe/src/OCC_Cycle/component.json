@@ -1,0 +1,26 @@
+{
+  "component": "OCC_Cycle",
+  "main_contract": "OCC_Cycle",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09c977130743feec9a8cbe260b187814ebddb69c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb63c6afa9b7eb3b382534e097b53cf08b2986573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

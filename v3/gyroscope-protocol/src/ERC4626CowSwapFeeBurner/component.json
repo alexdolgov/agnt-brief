@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626CowSwapFeeBurner",
+  "main_contract": "ERC4626CowSwapFeeBurner",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x201efd508c8dfe9de1a13c2452863a78cb2a86cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7c1b7a97bfacd39975de53e989a16c7bc4c78275",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "CoinJoin",
+  "main_contract": "CoinJoin",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hai-on-op/audit-reports/blob/main/dMakers_HAI_audit_report.pdf",
+    "https://github.com/hai-on-op/audit-reports/blob/main/solidified_HAI_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x30ce72230a47a0967b7e52a1bae0178dbd7c6ea3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

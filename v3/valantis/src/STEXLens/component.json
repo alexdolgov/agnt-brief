@@ -1,0 +1,18 @@
+{
+  "component": "STEXLens",
+  "main_contract": "STEXLens",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x68675dc8406252b6950128f6504a5e287ef24ed0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

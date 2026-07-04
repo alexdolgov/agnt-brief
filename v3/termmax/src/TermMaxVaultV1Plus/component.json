@@ -1,0 +1,18 @@
+{
+  "component": "TermMaxVaultV1Plus",
+  "main_contract": "TermMaxVaultV1Plus",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d9d0956621bf85d1d4cafc92d76a0448a5e6b9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

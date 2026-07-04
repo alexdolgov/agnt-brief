@@ -1,0 +1,18 @@
+{
+  "component": "VECake",
+  "main_contract": "VECake",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5692db8177a81a6c6afc8084c2976c9933ec1bab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

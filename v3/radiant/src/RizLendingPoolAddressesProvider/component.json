@@ -1,0 +1,52 @@
+{
+  "component": "RizLendingPoolAddressesProvider",
+  "main_contract": "RizLendingPoolAddressesProvider",
+  "source_file_count": 16,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/radiant-riz-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0496f4c03e810b7f640437bc767f9b2209e454ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x61cbce4fc0cd218dbd187735399cf3ed98139feb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x88d875952a66a7ca396713744517d053dc4cef5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x902a2760a0958288093498a74b416eb1c45ec2fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa584191f50c61f7fc160d3fa1419ec0c936204f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

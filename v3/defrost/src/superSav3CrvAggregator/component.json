@@ -1,0 +1,18 @@
+{
+  "component": "superSav3CrvAggregator",
+  "main_contract": "superSav3CrvAggregator",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4634fcfe0516793045cf35dfd6234d3bf949f2f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "HalvingProtocol",
+  "main_contract": "HalvingProtocol",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa6820deaeb44c70bf42dbe0b561d399297c05db8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

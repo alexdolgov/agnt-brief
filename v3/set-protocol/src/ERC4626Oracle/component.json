@@ -1,0 +1,34 @@
+{
+  "component": "ERC4626Oracle",
+  "main_contract": "ERC4626Oracle",
+  "source_file_count": 7,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x304a77c58607dd182a30288e7ef6c16cf2f51573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x911b6bd3a85c3ef798580b09fc305dc7b846d9c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3ddc923f672c7b28f78d0a39e8385148d2f09c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

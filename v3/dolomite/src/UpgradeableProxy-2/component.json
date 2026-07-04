@@ -1,0 +1,26 @@
+{
+  "component": "UpgradeableProxy-2",
+  "main_contract": "UpgradeableProxy",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x3e9b9a16743551da49b5e136c716bba7932d2cec",
+      "is_proxy": true,
+      "implementation_address": "0x674b2090733a8533b9ff78440b9df27c320f4a67",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xcb86b75ee6133d179a12d550b09fb3cdb1e141d4",
+      "is_proxy": true,
+      "implementation_address": "0x95a85904fa475200b87700119343c32a134f7f05",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UChildERC20Proxy-3",
+  "main_contract": "UChildERC20Proxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x02daefc2e8aad089d094579499508398e3057966",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

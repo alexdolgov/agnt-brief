@@ -1,0 +1,18 @@
+{
+  "component": "sVEC",
+  "main_contract": "sVEC",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66d5c66e7c83e0682d947176534242c9f19b3365",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

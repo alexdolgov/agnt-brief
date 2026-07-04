@@ -1,0 +1,18 @@
+{
+  "component": "FastBridgeVault",
+  "main_contract": "FastBridgeVault",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ef620631aa46e7d2f6f963b6be4f6823521b9ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

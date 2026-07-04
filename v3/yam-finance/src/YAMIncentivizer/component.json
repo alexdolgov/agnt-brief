@@ -1,0 +1,18 @@
+{
+  "component": "YAMIncentivizer",
+  "main_contract": "YAMIncentivizer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b0501f7041120d36bc8c6dc3faea0b74b32a0ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Vesting_Escrow_Factory",
+  "main_contract": "Vesting Escrow Factory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x4ace3edd57eff1176a862e7b72db090ecf2b84bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "HakkaRewards2",
+  "main_contract": "HakkaRewards2",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ee6683cb9b44810369c873679f8073bcbe52f27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdfe604f4e08f51fae0aa2eb3f4d8d659e618b16a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

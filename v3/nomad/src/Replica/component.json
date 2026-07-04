@@ -1,0 +1,18 @@
+{
+  "component": "Replica",
+  "main_contract": "Replica",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2d6775c1673d4ce55e1f827a0d53e62c43d1f304",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

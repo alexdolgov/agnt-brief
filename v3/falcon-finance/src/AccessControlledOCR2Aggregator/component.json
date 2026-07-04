@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlledOCR2Aggregator",
+  "main_contract": "AccessControlledOCR2Aggregator",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00f0efb3d9dbe7fe91fee44ae09dae5dfa65c382",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

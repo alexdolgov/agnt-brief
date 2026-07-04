@@ -1,0 +1,18 @@
+{
+  "component": "TheoWhitelist",
+  "main_contract": "TheoWhitelist",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14d38a3ed85ebddb3e22ff022e38e645a311f388",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

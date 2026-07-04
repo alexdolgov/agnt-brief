@@ -1,0 +1,18 @@
+{
+  "component": "NitroPoolFactory",
+  "main_contract": "NitroPoolFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe0a6b372ac6af4b37c7f3a989fe5d5b194c24569",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

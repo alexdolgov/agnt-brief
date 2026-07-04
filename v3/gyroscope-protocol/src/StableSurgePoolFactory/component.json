@@ -1,0 +1,26 @@
+{
+  "component": "StableSurgePoolFactory",
+  "main_contract": "StableSurgePoolFactory",
+  "source_file_count": 72,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3beb058de1a25dd24223fd9e1796df8589429ace",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfd214210587fb84798cbe7f37235e12898f3128f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

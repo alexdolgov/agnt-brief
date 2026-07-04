@@ -1,0 +1,21 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cdn.uniwhale.co/pdf/MetaScan_Report_Uniwhale_202303272132.pdf",
+    "https://cdn.uniwhale.co/pdf/UniWhaleP2_final_Secure3_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5b65cd9feb54f1df3d0c60576003344079f8dc06",
+      "is_proxy": true,
+      "implementation_address": "0xf89896384ef07096661dbd6c7ac97c837319acf9",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "RootBridgeAgent-2",
+  "main_contract": "RootBridgeAgent",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa6f7df4d1ca66085093d39291b127de5ad8e6f6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xecf46419b41ca3389ac4e99c8dcc88080177cf1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC1155BaseInternal-3",
+  "main_contract": "ERC1155BaseInternal",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2e26f63ecaf995ee770e4952f9a15a55abdad87f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "Unitroller",
+  "main_contract": "Unitroller",
+  "source_file_count": 4,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b4f20b2259eebb97945b6ef549a1c44fca6cd81",
+      "is_proxy": true,
+      "implementation_address": "0x7a21270190dcb9f9d7f9802f5b0c4ca5e83a974c",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6e3dc6bca1c35e84262ec62e34bb2dfa788bc737",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7a21270190dcb9f9d7f9802f5b0c4ca5e83a974c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc28a1e703ae3aa71a3beea9d5084b7700f94d6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

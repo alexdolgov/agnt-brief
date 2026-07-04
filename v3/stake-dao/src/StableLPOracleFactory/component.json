@@ -1,0 +1,18 @@
+{
+  "component": "StableLPOracleFactory",
+  "main_contract": "StableLPOracleFactory",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x254f3a2974b97dc2e675f6115c845567c55f83b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

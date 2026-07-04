@@ -1,0 +1,34 @@
+{
+  "component": "Rewarder",
+  "main_contract": "Rewarder",
+  "source_file_count": 18,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72614b5d6f388b089f343723fcc3a5b4fc22b347",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb194c9ca2a86a560b7154f83aafe3ed4e9c3a1f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce3c963b3d301cf6b6a1d19f061963e369298a44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

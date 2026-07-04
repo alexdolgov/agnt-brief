@@ -1,0 +1,18 @@
+{
+  "component": "StakedGlpMigrator",
+  "main_contract": "StakedGlpMigrator",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe19ab1cca0a010521140cf5ada1cf8308c0b382c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

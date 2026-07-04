@@ -1,0 +1,18 @@
+{
+  "component": "MC2Rewarder",
+  "main_contract": "MC2Rewarder",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd675972cba7969dd173f457872478cd6ed3749c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

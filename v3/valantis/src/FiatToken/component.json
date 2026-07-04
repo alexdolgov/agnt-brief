@@ -1,0 +1,18 @@
+{
+  "component": "FiatToken",
+  "main_contract": "FiatToken",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8cbde23b1416cac07a52591bba744c744d77a91a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

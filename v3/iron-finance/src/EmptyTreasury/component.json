@@ -1,0 +1,18 @@
+{
+  "component": "EmptyTreasury",
+  "main_contract": "EmptyTreasury",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb7784ed425c8d0eea1b09ece80f08d46787862c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

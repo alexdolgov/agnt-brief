@@ -1,0 +1,18 @@
+{
+  "component": "PSM",
+  "main_contract": "PSM",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

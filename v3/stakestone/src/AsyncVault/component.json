@@ -1,0 +1,18 @@
+{
+  "component": "AsyncVault",
+  "main_contract": "AsyncVault",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x693a0649c24318008cf1d4d5ee4ac070f92e58da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

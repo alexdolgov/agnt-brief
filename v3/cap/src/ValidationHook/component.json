@@ -1,0 +1,18 @@
+{
+  "component": "ValidationHook",
+  "main_contract": "ValidationHook",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4464a0ae10bd08ab8b758d7ccad124cc21bc6c64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

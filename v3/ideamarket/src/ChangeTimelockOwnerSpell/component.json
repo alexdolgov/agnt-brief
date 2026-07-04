@@ -1,0 +1,18 @@
+{
+  "component": "ChangeTimelockOwnerSpell",
+  "main_contract": "ChangeTimelockOwnerSpell",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5e2a18eb368a6466abb693adabbbbd32b4d87c65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

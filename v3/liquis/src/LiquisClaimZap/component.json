@@ -1,0 +1,20 @@
+{
+  "component": "LiquisClaimZap",
+  "main_contract": "LiquisClaimZap",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/liquisfi/security/blob/main/audits/Liquis_Audit_Report_by_Halborn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad161b8beb5bf2af9cda30e3988b13f62e70431b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

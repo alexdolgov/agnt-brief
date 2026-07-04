@@ -1,0 +1,18 @@
+{
+  "component": "ZenRCH",
+  "main_contract": "ZenRCH",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x893b33977395642039de1b04a0cc788b4af0ba08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

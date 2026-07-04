@@ -1,0 +1,18 @@
+{
+  "component": "PartnerFeeManager-3",
+  "main_contract": "PartnerFeeManager",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x11487aab86a2e1a9346d1e4313fd6fb2dd71575e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

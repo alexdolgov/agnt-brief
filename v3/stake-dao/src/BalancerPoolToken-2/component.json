@@ -1,0 +1,18 @@
+{
+  "component": "BalancerPoolToken-2",
+  "main_contract": "BalancerPoolToken",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x043a2dad730d585c44fb79d2614f295d2d625412",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

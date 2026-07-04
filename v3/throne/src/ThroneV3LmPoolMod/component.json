@@ -1,0 +1,18 @@
+{
+  "component": "ThroneV3LmPoolMod",
+  "main_contract": "ThroneV3LmPoolMod",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x518f85c650f92a4828c3eb8149549a2fe6376559",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "FeesCalculatorV4",
+  "main_contract": "FeesCalculatorV4",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x44420529db74807b69721a5a71ee4bdc2c762616",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa1a91054949cf03fddc97bc8d8ab8980c17b0d36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

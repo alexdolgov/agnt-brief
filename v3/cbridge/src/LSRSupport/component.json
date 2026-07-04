@@ -1,0 +1,18 @@
+{
+  "component": "LSRSupport",
+  "main_contract": "LSRSupport",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4653fc730e3c8b7eeb2faec65458c6f927ae6c3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

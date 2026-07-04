@@ -1,0 +1,26 @@
+{
+  "component": "FeesWithdrawer",
+  "main_contract": "FeesWithdrawer",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1b425c1c51c1eb4b4b537d1ce5b2915e4845e855",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1efd8d6b72843a70fe194f29de94fc3c5b5f9e97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

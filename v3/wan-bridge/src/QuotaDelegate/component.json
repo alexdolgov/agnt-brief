@@ -1,0 +1,26 @@
+{
+  "component": "QuotaDelegate",
+  "main_contract": "QuotaDelegate",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3c84ef5880102a2424ce87837ec2e524e228281b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4c4ca7afd772cdc4f78b04b18df675f9e140c845",
+      "is_proxy": true,
+      "implementation_address": "0x3c84ef5880102a2424ce87837ec2e524e228281b",
+      "liveness": "inactive"
+    }
+  ]
+}

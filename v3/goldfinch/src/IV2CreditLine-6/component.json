@@ -1,0 +1,18 @@
+{
+  "component": "IV2CreditLine-6",
+  "main_contract": "IV2CreditLine",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x71cff40a44051c6e6311413a728ee7633ddc901a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

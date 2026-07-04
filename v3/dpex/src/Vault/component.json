@@ -1,0 +1,28 @@
+{
+  "component": "Vault",
+  "main_contract": "Vault",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/zokyo-sec/audit-reports/blob/main/DPEX/DPEX_Zokyo%20audit%20report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x24afb3b27156e71e68e292e4ad71db827f83f05c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3e4f23900ec6dec657b5fcd9adb7b0c161a65b0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

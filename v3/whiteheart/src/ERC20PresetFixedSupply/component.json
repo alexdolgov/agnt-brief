@@ -1,0 +1,18 @@
+{
+  "component": "ERC20PresetFixedSupply",
+  "main_contract": "ERC20PresetFixedSupply",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x60e46a4dd91d10506d8efa2caa266e7191fe7ea8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

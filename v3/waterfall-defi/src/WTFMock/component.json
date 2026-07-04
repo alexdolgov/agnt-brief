@@ -1,0 +1,26 @@
+{
+  "component": "WTFMock",
+  "main_contract": "WTFMock",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0e95570e09e2ca39dfcaa6fd70890b8d087fc331",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x74cae157cb65399d13f6b01e284c8ecc9ecdb2ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

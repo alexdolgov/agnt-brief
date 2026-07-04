@@ -1,0 +1,18 @@
+{
+  "component": "Faucet",
+  "main_contract": "Faucet",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x27256a7de77dbfc4f1fe84fd6d8cd7eb07e1b9ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

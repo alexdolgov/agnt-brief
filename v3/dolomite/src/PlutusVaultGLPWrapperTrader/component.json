@@ -1,0 +1,18 @@
+{
+  "component": "PlutusVaultGLPWrapperTrader",
+  "main_contract": "PlutusVaultGLPWrapperTrader",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc2fa9f48b166bca8706ab53a60dca28979010b92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

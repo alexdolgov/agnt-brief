@@ -1,0 +1,18 @@
+{
+  "component": "BEPOwnable",
+  "main_contract": "BEPOwnable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa736c22371c3dec1ffead126eafc4001818fc511",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Klondike2FarmStrategyMainnet_WBTC_KBTCV2",
+  "main_contract": "Klondike2FarmStrategyMainnet_WBTC_KBTCV2",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6cb5e2fc7c258a1ec07f6a251f8e67a4e485812f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

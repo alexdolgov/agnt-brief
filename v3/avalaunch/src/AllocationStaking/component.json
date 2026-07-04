@@ -1,0 +1,98 @@
+{
+  "component": "AllocationStaking",
+  "main_contract": "AllocationStaking",
+  "source_file_count": 3,
+  "deployment_count": 11,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x027d6ea70bc4904c2bfc00b014571c6c4edf0dd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x897e8265454fd44cac7d739827d6b46bf1d6a8ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa6a01f4b494243d84cf8030d982d7eeb2aecd329",
+      "is_proxy": true,
+      "implementation_address": "0xcce0130263fda75e1c87b844a49db7066fa28c77",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa6eb49f89a4eb6ec9f2165637d852dc61d065410",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb0ef1a6fa8856ffbc7bf2c5ce434d232be4d00de",
+      "is_proxy": true,
+      "implementation_address": "0xa6eb49f89a4eb6ec9f2165637d852dc61d065410",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb364d7965b1e99b862bca2565cbaa62d85c0ae40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb380566edde68617c652d452102b8eda9fd3a403",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcae948ee3ee6fa6c0521ef7c5c6f0bee444b9a81",
+      "is_proxy": true,
+      "implementation_address": "0xe4e68408dccf7775f8f429c97ebbd3c3fac0b116",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcce0130263fda75e1c87b844a49db7066fa28c77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe4e68408dccf7775f8f429c97ebbd3c3fac0b116",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfbcea5af909e798cffc7653968ddf01b9cb1a6ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

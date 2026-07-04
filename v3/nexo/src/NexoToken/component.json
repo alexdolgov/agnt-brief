@@ -1,0 +1,18 @@
+{
+  "component": "NexoToken",
+  "main_contract": "NexoToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

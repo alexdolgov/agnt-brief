@@ -1,0 +1,18 @@
+{
+  "component": "IdlePYT",
+  "main_contract": "IdlePYT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96dd27112bdd615c3a2d649fe22d8ee27e448152",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

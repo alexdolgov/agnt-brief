@@ -1,0 +1,18 @@
+{
+  "component": "FolioLens",
+  "main_contract": "FolioLens",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x25eb2fc8b86f7e72051de990c68047bc1140ac23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

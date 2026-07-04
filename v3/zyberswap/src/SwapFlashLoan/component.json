@@ -1,0 +1,18 @@
+{
+  "component": "SwapFlashLoan",
+  "main_contract": "SwapFlashLoan",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c3c31363ba33e7dcbf1e49fa52d8a49c7f3dbd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

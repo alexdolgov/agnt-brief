@@ -1,0 +1,18 @@
+{
+  "component": "OMGrantsEscrow",
+  "main_contract": "OMGrantsEscrow",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc8899da25423ac52aa711b97ae04c8888fa1e1d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

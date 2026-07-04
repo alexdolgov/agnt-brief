@@ -1,0 +1,18 @@
+{
+  "component": "FinalizableCommittee",
+  "main_contract": "FinalizableCommittee",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f8b2dd49d958b6ac3e5f4705bf1a9ada5bc4446",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

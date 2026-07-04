@@ -1,0 +1,18 @@
+{
+  "component": "GmxGlpWrapper-2",
+  "main_contract": "GmxGlpWrapper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd8cbd5b22d7d37c978609e4e394ce8b9c003993b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

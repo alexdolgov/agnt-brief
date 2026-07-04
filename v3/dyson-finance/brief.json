@@ -1,0 +1,395 @@
+{
+  "schema_version": "2.0",
+  "project_key": "dyson-finance",
+  "generated_at": "2026-07-03T21:05:44.184Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-17a2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 6,
+    "unique_implementations": 5,
+    "total_deployments": 6,
+    "audited_contracts": 3,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 75,
+    "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 78865.1641,
+    "tvl_usd": 78865.1641,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://dyson.finance/",
+    "chains": [
+      "blast",
+      "polygon-zkevm"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-11",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 2,
+      "unknown": 1
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 3,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
+    }
+  },
+  "topography": {
+    "project_purpose": "Dexs. Structurally: 7 project-authored contract(s) across 1 chain(s); built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 6,
+    "live_contracts": 4,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 2,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x9cbd81b43ba263ca894178366cfb89a246d1159c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DYSON",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DYSON",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x9cbd81b43ba263ca894178366cfb89a246d1159c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13069",
+        "audit-13070"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2024-03-15 12:25:47+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xada6e69781399990d42becb1a9427955ffa73bdc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xada6e69781399990d42becb1a9427955ffa73bdc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13069"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2024-03-15 12:25:49+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x8813b3eeb279a43ac89e502e6fbe0ec89170c088",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "sDYSON",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "sDYSON",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x8813b3eeb279a43ac89e502e6fbe0ec89170c088",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13069",
+        "audit-13070"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "effective_deploy_date": "2024-03-15 12:25:49+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "sDYSONAirdrop",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "sDYSONAirdrop",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review",
+      "is_live": true,
+      "effective_deploy_date": "2024-06-23 23:22:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1101,
+      "chain_name": "polygon-zkevm",
+      "address": "0x51a0d4b81400581d8722627dafcd0c1ff9357d1d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UnnamedContract",
+      "deployments": [
+        {
+          "chain_id": 1101,
+          "chain_name": "polygon-zkevm",
+          "address": "0x51a0d4b81400581d8722627dafcd0c1ff9357d1d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1101,
+          "chain_name": "polygon-zkevm",
+          "address": "0x9cbd81b43ba263ca894178366cfb89a246d1159c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 13069,
+      "audit_key": "audit-13069",
+      "report_name": "Dyson Finance Audit Report_2023.pdf",
+      "report_url": "https://github.com/DysonFinance/dyson-audit-reports/blob/main/Dyson%20Finance%20Audit%20Report_2023.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13070,
+      "audit_key": "audit-13070",
+      "report_name": "Dyson Finance Audit - October '22.pdf",
+      "report_url": "https://github.com/DysonFinance/dyson-audit-reports/blob/main/Dyson%20Finance%20Audit%20-%20October%20'22.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13071,
+      "audit_key": "audit-13071",
+      "report_name": "dyson-audit-reports (GitHub directory)",
+      "report_url": "https://github.com/DysonFinance/dyson-audit-reports",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 75,
+      "latest_audit": "2023-11"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 5
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "contract_name": 5
+    },
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13071,
+        "report_name": "dyson-audit-reports (GitHub directory)"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

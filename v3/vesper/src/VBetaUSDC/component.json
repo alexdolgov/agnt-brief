@@ -1,0 +1,18 @@
+{
+  "component": "VBetaUSDC",
+  "main_contract": "VBetaUSDC",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e86044468b92c310800d4b350e0f83387a7097f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

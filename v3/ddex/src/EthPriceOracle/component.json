@@ -1,0 +1,18 @@
+{
+  "component": "EthPriceOracle",
+  "main_contract": "EthPriceOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8984f1cff1d614a7404b0cfe97c6fa9110b93bd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StrategyJoeAvaxYakLp",
+  "main_contract": "StrategyJoeAvaxYakLp",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcd19f93c12333a4f22892eeed04ad31b13a54658",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

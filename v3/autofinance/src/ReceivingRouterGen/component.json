@@ -1,0 +1,18 @@
+{
+  "component": "ReceivingRouterGen",
+  "main_contract": "ReceivingRouterGen",
+  "source_file_count": 63,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd2c543dd8e305b354ee1d713734acf7adead19dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

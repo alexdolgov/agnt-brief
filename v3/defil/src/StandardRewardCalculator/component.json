@@ -1,0 +1,18 @@
+{
+  "component": "StandardRewardCalculator",
+  "main_contract": "StandardRewardCalculator",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe32d18c22e25bc49bf347792f81400224cb5174c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

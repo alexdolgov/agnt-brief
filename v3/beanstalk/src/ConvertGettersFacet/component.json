@@ -1,0 +1,26 @@
+{
+  "component": "ConvertGettersFacet",
+  "main_contract": "ConvertGettersFacet",
+  "source_file_count": 90,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d5cd5a7c7312bf005de78b09e125b34165a69ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x999a04b54a386b1c68a9be926af0200f2c49a47a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

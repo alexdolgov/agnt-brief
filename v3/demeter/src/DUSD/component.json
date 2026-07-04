@@ -1,0 +1,18 @@
+{
+  "component": "DUSD",
+  "main_contract": "DUSD",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x22fda23aed456f2de139c6240f0776ef031c8b6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

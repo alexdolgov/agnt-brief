@@ -1,0 +1,18 @@
+{
+  "component": "Vesting",
+  "main_contract": "Vesting",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ee6667d18f161a915a7267abca886f995eb1cff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

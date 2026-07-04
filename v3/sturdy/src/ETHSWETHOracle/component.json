@@ -1,0 +1,18 @@
+{
+  "component": "ETHSWETHOracle",
+  "main_contract": "ETHSWETHOracle",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfef192cabf37a2396a8665f42f9a499a52baa185",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

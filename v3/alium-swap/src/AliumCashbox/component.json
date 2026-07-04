@@ -1,0 +1,26 @@
+{
+  "component": "AliumCashbox",
+  "main_contract": "AliumCashbox",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x33d1ce5c23eabcf9fc24b06dc29693cba1ef02fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x94df7491d0f02f1733be8e13f9c9ba39e34a0e3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

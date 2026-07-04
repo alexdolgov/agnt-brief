@@ -1,0 +1,34 @@
+{
+  "component": "Diamond-2",
+  "main_contract": "Diamond",
+  "source_file_count": 3,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x24d6d6af23cd865b4dee7f169ca60bf07b4dd9ae",
+      "is_proxy": true,
+      "implementation_address": "0xe837662456ba6d2e3a87d4daa84c4ecad8856c56",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6390743ccb7928581f61427652330a1aefd885c2",
+      "is_proxy": true,
+      "implementation_address": "0xe837662456ba6d2e3a87d4daa84c4ecad8856c56",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6c447230f098cddb62f6aeaeec25c27e8b90b25e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

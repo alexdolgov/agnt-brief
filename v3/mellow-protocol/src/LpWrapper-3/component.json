@@ -1,0 +1,18 @@
+{
+  "component": "LpWrapper-3",
+  "main_contract": "LpWrapper",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x69fed68943c0f371dce9702f7874af2a7d05e7b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

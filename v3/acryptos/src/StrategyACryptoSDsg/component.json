@@ -1,0 +1,18 @@
+{
+  "component": "StrategyACryptoSDsg",
+  "main_contract": "StrategyACryptoSDsg",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x02bd617fbce209d974d545fa06236aec3651e6f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

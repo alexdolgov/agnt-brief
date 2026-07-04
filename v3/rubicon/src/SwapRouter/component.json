@@ -1,0 +1,18 @@
+{
+  "component": "SwapRouter",
+  "main_contract": "SwapRouter",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3739488662524c8cdc0b41d2fa6a1bdf75434541",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MagicGlp",
+  "main_contract": "MagicGlp",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5efc10c353fa30c5758037fdf0a233e971ecc2e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

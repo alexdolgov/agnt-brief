@@ -1,0 +1,18 @@
+{
+  "component": "SynthetixState",
+  "main_contract": "SynthetixState",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf71eccf3821737ef005c662c235215f9d89a956b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

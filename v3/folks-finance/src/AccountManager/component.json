@@ -1,0 +1,18 @@
+{
+  "component": "AccountManager",
+  "main_contract": "AccountManager",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x12db9758c4d9902334c523b94e436258eb54156f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

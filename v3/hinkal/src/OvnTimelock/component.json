@@ -1,0 +1,18 @@
+{
+  "component": "OvnTimelock",
+  "main_contract": "OvnTimelock",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x82c470166bca446ed2fb90e08ab7941e3eb018f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

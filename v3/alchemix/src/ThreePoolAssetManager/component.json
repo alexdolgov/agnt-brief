@@ -1,0 +1,18 @@
+{
+  "component": "ThreePoolAssetManager",
+  "main_contract": "ThreePoolAssetManager",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9735f7d3ea56b454b24ffd74c58e9bd85cfad31b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

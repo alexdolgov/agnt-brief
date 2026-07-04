@@ -1,0 +1,18 @@
+{
+  "component": "YAMToken",
+  "main_contract": "YAMToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x209ddd6b50f748b6eaa25a2793341566492b2526",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

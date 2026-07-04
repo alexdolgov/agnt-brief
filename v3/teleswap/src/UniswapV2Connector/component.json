@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV2Connector",
+  "main_contract": "UniswapV2Connector",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0c28968d8a3af022f47d493402d35cb42eff0597",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

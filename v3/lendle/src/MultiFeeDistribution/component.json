@@ -1,0 +1,20 @@
+{
+  "component": "MultiFeeDistribution",
+  "main_contract": "MultiFeeDistribution",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/GeistProtocol"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xfa12aaa98bb6f301b5a95383e4f43d5873de522b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

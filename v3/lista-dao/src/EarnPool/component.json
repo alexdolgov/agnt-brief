@@ -1,0 +1,21 @@
+{
+  "component": "EarnPool",
+  "main_contract": "EarnPool",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lista-dao/lista-dao-contracts/blob/master/audits/blocksec_psm_241122.pdf",
+    "https://github.com/lista-dao/lista-dao-contracts/blob/master/audits/salus_PSM_241122.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x143c8b6b1161dec945d1fb7c2ca13c3b1d164642",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "YaxisChef",
+  "main_contract": "YaxisChef",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc330e7e73717cd13fb6ba068ee871584cf8a194f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

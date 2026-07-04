@@ -1,0 +1,68 @@
+{
+  "component": "Amm",
+  "main_contract": "Amm",
+  "source_file_count": 19,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ApeX-Protocol/core/blob/master/docs/audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2455ca5a3289e3557ccdf7c690c3bf6b3970e941",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2a07a4c7e63b4cb2e0fb8c0b1c61302007271f7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x52a8845df664d76c69d2eea607cd793565af42b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbe940a81a25eae2157259d97112079467316c51a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0998a57e7ecce2798bd6e1a634017f7c013348f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd173a44a22269837d2a44a70fb67e129a53f258f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe22df911eddc05ba2197f92e252781407891274a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

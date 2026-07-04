@@ -1,0 +1,18 @@
+{
+  "component": "TransparentUpgradeableProxy-2",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0186b03ac7c14a90d04d2b1e168869f618d149c5",
+      "is_proxy": true,
+      "implementation_address": "0xc663f44096ab232599baf6b6d8649dbefe2c2e53",
+      "liveness": "live"
+    }
+  ]
+}

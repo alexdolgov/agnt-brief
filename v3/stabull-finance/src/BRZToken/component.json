@@ -1,0 +1,18 @@
+{
+  "component": "BRZToken",
+  "main_contract": "BRZToken",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0a20ae0f6662bc7cc835fa64855722d50329aa77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

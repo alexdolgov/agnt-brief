@@ -1,0 +1,18 @@
+{
+  "component": "ERCFund",
+  "main_contract": "ERCFund",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x25eb1113dd5759a40cd874d4fe8e6842ea6a88be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

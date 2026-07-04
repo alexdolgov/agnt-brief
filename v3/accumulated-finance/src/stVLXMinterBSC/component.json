@@ -1,0 +1,18 @@
+{
+  "component": "stVLXMinterBSC",
+  "main_contract": "stVLXMinterBSC",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5452f159b48d14a22cbf1988038c41dfec5a0fe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

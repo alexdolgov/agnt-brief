@@ -1,0 +1,60 @@
+{
+  "component": "Comptroller",
+  "main_contract": "Comptroller",
+  "source_file_count": 17,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Atlantis-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x31169b127e34fe6ff93fe9810a6165c6fd6b7c79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3533e4617b4a6734fc6a9513f521ce5f4e9b3c9c",
+      "is_proxy": true,
+      "implementation_address": "0xcee2143040ed4213be4717a9673cbafcd2bde2a1",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6711207fa4fa18aa919ce776d650ef28ed5f1cc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcee2143040ed4213be4717a9673cbafcd2bde2a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe56c4d86c8178e752c4d55c88a74422979cce22e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe7e304f136c054ee71199efa6e26e8b0dae242f3",
+      "is_proxy": true,
+      "implementation_address": "0x31169b127e34fe6ff93fe9810a6165c6fd6b7c79",
+      "liveness": "live"
+    }
+  ]
+}

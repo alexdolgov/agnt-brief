@@ -1,0 +1,176 @@
+# kuma-protocol — deployments
+
+100 verified deployment(s) across 31 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| ethereum | `0x01bf66becdcfd6d59a5ca18869f494fea086cdfd` | ERC1967Proxy-2 | proxy | inactive | no |
+| ethereum | `0x06b1d77aca7e3239878ca864931c5750113bb9d7` | MCAGAggregator | impl | inactive | no |
+| ethereum | `0x1543b1a4b10a023664df195f12e75f31df845395` | WrappedRebaseToken | impl | inactive | no |
+| ethereum | `0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf` | GnosisSafeProxy | proxy | live | no |
+| ethereum | `0x357536c1d029cdc7fe588ffeca71db66d2b782aa` | MCAGAggregator | impl | inactive | no |
+| ethereum | `0x3cd09352eebe8b9e302b83a59d90d19031290f80` | ERC1967Proxy-2 | impl | inactive | no |
+| ethereum | `0x476507aec878ebdea7d983d0967aabf113200c87` | WrappedRebaseToken | impl | inactive | no |
+| ethereum | `0x5fad6f80312aee6f19784a7fc359f90d441163de` | KUMAAccessController | impl | live | yes |
+| ethereum | `0x66dfa32e58b2b0d0c6d5e9650e56445b568dcfb1` | ERC1967Proxy-2 | proxy | inactive | no |
+| ethereum | `0x932c930104f39e475965f9fbfa345c1c4f537e5f` | ERC1967Proxy-2 | impl | inactive | no |
+| ethereum | `0x94abc2880f0205ff170d0e6e20a2d9e35a851ab3` | ERC1967Proxy-2 | impl | inactive | no |
+| ethereum | `0xa1048eef9c523304202daf480051a672e92c6888` | ERC4626Oracle | impl | inactive | no |
+| ethereum | `0xaf4ce7cd4f8891ecf1799878c3e9a35b8be57e09` | WrappedRebaseToken | impl | live | no |
+| ethereum | `0xb186b93302f0c8aa8591c0ccf24c3513b918aef7` | WrappedRebaseToken | impl | inactive | no |
+| ethereum | `0xb5502747aabdca21e832951b4caaf739da33f450` | GnosisSafeProxy | proxy | live | no |
+| ethereum | `0xc28372b25ecf0c8acc21a3fd87d22ea13003918d` | MCAGAggregator | impl | inactive | no |
+| ethereum | `0xc77d36e52d8cf40b194d613030f8d3a7e87abce0` | ERC4626Oracle | impl | inactive | no |
+| ethereum | `0xf1254e912e4fb87c178df9a9baf6dd49009e3fe4` | WrappedRebaseToken | impl | inactive | no |
+| ethereum | `0xf2b5c482358dbaa495d442b57c163dbedbf7868e` | ERC1967Proxy-2 | proxy | inactive | no |
+| linea | `0x1151d63eb6154843d4b4898cf4c63af556642997` | GnosisSafeProxy-2 | proxy | live | no |
+| linea | `0x1647f37e6db9756522f6d31ebae01f7ad1e96f7c` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x16a4ead3305e1b265c35915a30004519f09c4940` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x2f0b4300074afc01726262d4cc9c1d2619d7297a` | WrappedRebaseToken-2 | impl | live | no |
+| linea | `0x2fb3b498f49e466da6863a745dedc6764bf16840` | KUMAAddressProvider | impl | inactive | no |
+| linea | `0x31150b1a1ad3a7cfda76e36aae379efd8f3e00fa` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x32cc00ca0e382af2fa9a08770856c98016da664e` | ERC1967Proxy | impl | inactive | no |
+| linea | `0x3d0a18c6bddd2e03ddd0ea26ed2bb9c6f83a3a9a` | KUMABondToken | impl | live | yes |
+| linea | `0x57bd03210e60c20841b6c0944e5915a146a8f3fa` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x5a22c277da5be9c72e072e31aff2cd4508a77fb3` | KUMAAddressProvider | impl | inactive | no |
+| linea | `0x5eb5bd6bf2abca18a56014a916a6571d8a25684d` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x69c6d64efa37a94fb234dbae52f4beae506e27f2` | KUMAAddressProvider | proxy | inactive | no |
+| linea | `0x6a83fb636e6a5c760b487548acf4af9b100c49e0` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x70434338c1837d384e139f81f0539e83eee5517c` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x7cf34ac2ceff942c697d9c070228454864025432` | GnosisSafeProxy-2 | proxy | live | no |
+| linea | `0x82d9db83eca8b9936ecb2b3a690debb5035b3056` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x91ca2767ad087f69374a79c2a55615c0672df264` | ERC1967Proxy | impl | inactive | no |
+| linea | `0x96ae4010efb5a89b49896217481d66e858767b8f` | KUMAAddressProvider | proxy | inactive | no |
+| linea | `0x9f9f940704b21c3882c98cf60e15d015693d9056` | ERC1967Proxy | impl | inactive | no |
+| linea | `0xc54b48f74bee64f2ae06d8c141215569b81550b7` | ERC1967Proxy | impl | inactive | no |
+| linea | `0xc815b8c36439cd4428aa366ed59a700155d8108a` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0xdc5767bd50dcf947ec90784be717ef011fe6f34e` | KUMAAddressProvider | proxy | inactive | no |
+| linea | `0xe12151ecc3f7bed4010f59647bc8fd7dff0db8eb` | ERC1967Proxy | impl | inactive | no |
+| linea | `0xeb4afea42bd9079b5816b4e2d26416860bf0fd12` | KUMAAddressProvider | impl | inactive | no |
+| mantle | `0xfef638230495d1b36422f7475c2000d7cb3207b6` | GnosisSafeProxy-3 | impl | live | no |
+| polygon | `0x00142b50b435a6ddef5d91bfbb7208ecd2a05e7c` | AccessController | impl | inactive | no |
+| polygon | `0x003b7bdc1adfa3fee002869081cbff4d73646d08` | VaultsDataProvider | impl | inactive | no |
+| polygon | `0x026fa9b2bc828c7e0acca440fdf77a19d3fa0ecf` | GovernanceAddressProvider | impl | inactive | no |
+| polygon | `0x02b23b7482c0a6709383045b6738cdb6f9c0a8b1` | AccessController | impl | inactive | no |
+| polygon | `0x0ac2e3cd1e9b2da91972d2363e76b5a0ce514e73` | ERC1967Proxy-3 | proxy | inactive | no |
+| polygon | `0x11737d07a928b62b3814ecd1778814a82e3c77ff` | VaultsCore | impl | inactive | no |
+| polygon | `0x173eb1d561ccefd8e83a3741483a8bd76df827ef` | ERC1967Upgrade | proxy | inactive | no |
+| polygon | `0x20a83af929f1de7d518d49e93f5465d040a9fab4` | ConfigProvider | impl | inactive | no |
+| polygon | `0x20b55eaba83c3ce27082879be54fe47bbb869e38` | VaultsCoreState | impl | inactive | no |
+| polygon | `0x28c1ab6aeabb84491dbafc71d9ebb5cc1d62cd85` | FeeDistributor | impl | inactive | no |
+| polygon | `0x2caf48182c901ad5240f0219d2252a295a836572` | VaultsCoreState | impl | inactive | no |
+| polygon | `0x302888839bdcd5e23b57645365c8bf2ab0652584` | AccessController | impl | inactive | no |
+| polygon | `0x38519093cc62d83e31afb53c00c0bf4dc8fdcd15` | AddressProvider | impl | inactive | no |
+| polygon | `0x3d58b7bbf14d4d97063da613ed1511ae178ebd58` | AddressProvider | impl | inactive | no |
+| polygon | `0x41d4d26f70951a2134dc862ea6248ffbe2a516bb` | ERC1967Proxy-3 | impl | inactive | no |
+| polygon | `0x44adedae87cda45f9e9b6d49e49db5d583646163` | ConfigProvider | impl | inactive | no |
+| polygon | `0x4811d2a9374db89ec5ffd70be76bd68618233a00` | PaUSD | impl | inactive | no |
+| polygon | `0x4986af7f4194af50586f8236f76bef909cb9d5f3` | LiquidationManager | impl | inactive | no |
+| polygon | `0x4de405bcfda5576fa4275c5dde7002fc02467e23` | AccessController | impl | inactive | no |
+| polygon | `0x604bb0aa2be02bcf4f0823400cc21430df667277` | PaUSD | impl | inactive | no |
+| polygon | `0x6bfad31050dff9a5aae81adadf7daf82655d4cd6` | AccessController | impl | inactive | no |
+| polygon | `0x6ee6aca3b1381c8d9fbe9be4d16bbb1bc2b06683` | PriceFeedUSD | impl | inactive | no |
+| polygon | `0x72e923047245d2b58d87f311a2b5b487620ee60a` | ERC1967Upgrade | impl | inactive | no |
+| polygon | `0x76d8b79fb9afd4da89913458c90b6c09676628e2` | RateProvider | impl | live | no |
+| polygon | `0x7a33f465118c3f9bd280308c1233adb163665f75` | VaultsCoreState | impl | inactive | no |
+| polygon | `0x7cdfc6da2da4af63fe260c1273ec13f3ba51f0c0` | Blacklist | impl | inactive | no |
+| polygon | `0x8054d4d130c3a84852f379424bcac75673a7486b` | PaUSD | impl | live | no |
+| polygon | `0x82c3e5aa2b31a9bdcc9149fb8050464d2c77b4f0` | KIBTAggregator | impl | inactive | no |
+| polygon | `0x83d8ca70144d55f74ad3c5eb3336b4163bca1227` | FeeDistributor | impl | live | no |
+| polygon | `0x8a604e5c0ced41064354d055b84fc964aaa9101a` | VaultsDataProvider | impl | inactive | no |
+| polygon | `0x8b45ce4b1eaac67fa4ed8609710cc0d8cfd22047` | LiquidationManager | impl | inactive | no |
+| polygon | `0x8cfa62c16a348f58746634c7478f863df93d04b5` | FeeDistributor | impl | inactive | no |
+| polygon | `0x97b6d9ba569153e4b43eaacc84a517cbe4f5b740` | LiquidationManager | impl | inactive | no |
+| polygon | `0x9bdd10f41b4de9dc1d63ae6ff9075c075298f735` | WrappedRebaseTokenFactory | impl | inactive | no |
+| polygon | `0xa88ced4edfd32bcd32de592ea3eec7c03d7d329f` | DebtNotifier | impl | inactive | no |
+| polygon | `0xa918fa95a6a844fff0cca5481e920634cbf47e63` | GovernanceAddressProvider | impl | inactive | no |
+| polygon | `0xabb4190ef32cc4c749f12fb6b3191eaf0a128e65` | PriceFeedUSD | impl | inactive | no |
+| polygon | `0xae1e83a79195d401a93bbeb768632ea633f77b50` | KIBTAggregator | impl | inactive | no |
+| polygon | `0xaea58dd0a79cdfe14a25d537f6c2e8fd8556f3bf` | AccessController | impl | inactive | no |
+| polygon | `0xb04e31f3cf7bdbf8b3b843df1a63fd3047cad1f5` | PaUSD | impl | inactive | no |
+| polygon | `0xb3d014fcb429a1eaf4c98b4a1d7384db47321fa4` | PriceFeedUSD | impl | inactive | no |
+| polygon | `0xb89ddc23168442c31792c16d8f352842a5855b88` | AddressProvider | impl | inactive | no |
+| polygon | `0xbcc3824ec54e49f06423f23f02385b4ea98b4ebc` | ERC1967Proxy-3 | proxy | inactive | no |
+| polygon | `0xc10367c9a4cf294e9025be5a11294c72946c18ef` | Blacklist | impl | inactive | no |
+| polygon | `0xc1557615dea73d04f206fe3589030a514d58bf83` | VaultsCore | impl | inactive | no |
+| polygon | `0xc7b973a97f171e964eb3a0949caafbfd1ed77c0d` | AccessController | impl | inactive | no |
+| polygon | `0xd0e68bdc9b6084d5675b88f7903cf6ff7f4ebabc` | VaultsDataProvider | impl | inactive | no |
+| polygon | `0xd2a75e38c9aadd747a11561b3c28e54ad6752c82` | ERC1967Proxy-3 | impl | inactive | no |
+| polygon | `0xd58f48f533e3896b51854bd95165fdd87605497a` | RatesManager | impl | inactive | no |
+| polygon | `0xdf4f21a00a300dc3f41deb1a40cca4485ccd79fa` | AddressProvider | impl | inactive | no |
+| polygon | `0xe7ec63ea366a2d345f1fad810269f24e158a5c8f` | AccessController | impl | inactive | no |
+| polygon | `0xeb6b8f833f5aa81cb00a1cc7ef93b6b332a53574` | DebtNotifier | impl | inactive | no |
+| polygon | `0xede77326449271ccd32d45103374e5cbff997c53` | AddressProvider | impl | inactive | no |
+| polygon | `0xefce114978abcd7bbf30949607a0be4ac6c402e9` | VaultsCore | impl | inactive | no |
+| polygon | `0xfc3631012bf0c6a24ebfc8eb8a8ed76aa1ff1686` | RatesManager | impl | inactive | no |
+| polygon | `0xfed8a7930c141c29e5719fe8b44897c5fa7bdb22` | ConfigProvider | impl | inactive | no |
+
+## Source unavailable (66)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- ethereum `0x238134c1d632f0a6719874f51e8152f912d9ab0a`
+- ethereum `0x25b23dd1b3432a55d405e17587594e17f9e74424`
+- ethereum `0x400e0202f84322421f8ad32ca61208bf8c62ad25`
+- ethereum `0x43ea73168b8f192dbdec088da29f2c5e517f6fcb`
+- ethereum `0x45eac983c3a535d4ef2c41c903b377945414d331`
+- ethereum `0x4cd485a0d20252ac3a145086052e5f661a15dcdf`
+- ethereum `0x6596a0df031674b28673cf4b0fccdae70dfd9daf`
+- ethereum `0x74e9e8d1365358f0ec416e24f723e36181b79a7b`
+- ethereum `0x8b853de26973b6c772b1e29bb127f1a60130a725`
+- ethereum `0xa89d5fdec7bada2e52034e45bd52b608b7184c1d`
+- ethereum `0xab5459dd8bc238d270b1725c30fe229329a28f7b`
+- ethereum `0xac472465be19191f3dc96bcb205285d7afc45baa`
+- ethereum `0xb091c1292637c2576b691ebc38d06f9d6997338a`
+- ethereum `0xb1ab37ef0df6d2b8294e5fa2bf03a455e4951cda`
+- ethereum `0xb76c370766947667dcb1677c2818e1e6b7ac0695`
+- ethereum `0xcb32e7455ee7574173ec89355b6a1c715e222fa1`
+- ethereum `0xd4144c5a31c23059b6fa85c395b8bcd307773407`
+- ethereum `0xd8689e8740c23d73136744817347fd6ac464e842`
+- ethereum `0xdc024bf64f893a682008083e805c9a204f3d7dc9`
+- ethereum `0xdc888b8c76ef26852b6f6c0008d6e2f29a96cb50`
+- ethereum `0xe3aaef477f95ec345b06b08ab1eb12dbfb92351e`
+- linea `0x26ddb0cdca2e6f565307831f8700f4d1fde25dde`
+- linea `0x27c57d8c5f80868e1ba55ebc78164cefec6e591b`
+- linea `0x3037e0e4e2ae1b7c2376b14920d18bced0c4604e`
+- linea `0x34e2324f2ee4ab3b0135eea7f889ce687ec12233`
+- linea `0x3eb85a4d4bec052c71d9cc76ec8d54fa34db661f`
+- linea `0x41deefd0db39186bda6f52c3b3b89d54540483ac`
+- linea `0x42817db9c0b21b3718b54069267411207decebc1`
+- linea `0x5516c211f39c875df43580728de7d274d7444fd1`
+- linea `0x5ccc9fe16eb0eb822da9331601002bf80fbdd3e8`
+- linea `0x782b8c51de03ddf4cd0047a7be900a8c85b034a3`
+- linea `0x7a6aa80b49017f3e091574ab5c6977d863ff3865`
+- linea `0x80a31ce83b1eb76ec4c550d713136efa29701a40`
+- linea `0x85dd3aec1ae4fa5fb495980cbf9fd3e8423be78f`
+- linea `0x93bf70bc8aa43c0099a33f5745793532f9e78b38`
+- linea `0x959f2d6ada02b929d2824a6eb16f98ac9ea5d69d`
+- linea `0xad5c32d6e67d95e460206b7268168c073974ad6b`
+- linea `0xae136f4926fdb96f73fb5d899ea0cdc3a5efabbd`
+- linea `0xb9cee0c302ef2844ef78f41800ce73c13b6a52ae`
+- linea `0xbe5acb0daf2fa7eb0255ba2b20828d6113f06c6f`
+- linea `0xc84f2ce21272f17d92d2a450f1c8567bf0ff448e`
+- linea `0xd34a77c963da4c16eccbee6d0a246047d086da1e`
+- linea `0xec23c6a984bb7763025593a189defbac7c920fca`
+- linea `0xf1de412a3c8db2302d78f7563616ccab6dad07c5`
+- linea `0xfe96850285eea29c754473b95900b7db75f2e8e2`
+- polygon `0x13414c34da832f4013562e3e461f2a0da961cba9`
+- polygon `0x197c9eb5fd433e13b5876a4ae47dbcb2e6dd795e`
+- polygon `0x2cb7285733a30bb08303b917a7a519c88146c6eb`
+- polygon `0x4bd547ac3adebe3bc15d8257b28b2bef7512f389`
+- polygon `0x4dba794671b891d2ee2e3e7ea9e993026219941c`
+- polygon `0x7714fcfe0d9c4726f6c1e3b1275c2951b9b54f65`
+- polygon `0x7e86bce025339a77236adacd4af51f1ebbbbdd94`
+- polygon `0x7feec0005cbf17f433ee753ad840268d48ffd1b6`
+- polygon `0x86f875ee1d4ec7e0906c6dbd3de36872a0adec87`
+- polygon `0x8df37d42877bfba37309b2503efbcaa7be28bd69`
+- polygon `0xa66818b5bda74c081a9582d8aa8929fae77e214a`
+- polygon `0xabd06d7f15123d13c985315ad73a3acab06afa41`
+- polygon `0xb27615d8a89a1a7d7e690d77aa6e03ea4c679d48`
+- polygon `0xb5e2e9c4b4b6dfb7c5cc3b09119f31085d7faa36`
+- polygon `0xd4db0fcf032cfeaa4a5c61ab7452b8a49f3e8a65`
+- polygon `0xd567e0fdc9acb22c41198adef3a399eac849ddbd`
+- polygon `0xd965ff561c3a67d630157ecdf6170884b0fa9caf`
+- polygon `0xecede3d192f2c5488edb2d4f47978115bc5b8ed4`
+- polygon `0xedb20e3cd8c7c149ea57fe470fb9685c4b1b8703`
+- polygon `0xfe72616cbaec279a658f1c3bc3c1aa964aa42a54`
+- polygon `0xfff0a94dca02eb764528100e044dc228b3d13e7a`

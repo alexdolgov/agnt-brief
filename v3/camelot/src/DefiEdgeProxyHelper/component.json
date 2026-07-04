@@ -1,0 +1,18 @@
+{
+  "component": "DefiEdgeProxyHelper",
+  "main_contract": "DefiEdgeProxyHelper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc4eb9fff53581130e65e3b60b31295c52509c11f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PythSynonymPriceSource",
+  "main_contract": "PythSynonymPriceSource",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x48a7cbc91354333eb1c0d54c3d2f149f9d9b82e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

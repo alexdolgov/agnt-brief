@@ -1,0 +1,18 @@
+{
+  "component": "GearboxOracle",
+  "main_contract": "GearboxOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa67cfa1f29411c3e9b4842a32d15a740bb06a2ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

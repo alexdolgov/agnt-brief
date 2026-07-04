@@ -1,0 +1,18 @@
+{
+  "component": "RebateToken",
+  "main_contract": "RebateToken",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2d31000452b16bb943a37a907cc0add73e8edddd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

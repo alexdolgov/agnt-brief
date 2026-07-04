@@ -1,0 +1,18 @@
+{
+  "component": "GigaWattToken",
+  "main_contract": "GigaWattToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84119cb33e8f590d75c2d6ea4e6b0741a7494eda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

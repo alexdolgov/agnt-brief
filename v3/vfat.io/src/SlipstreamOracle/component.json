@@ -1,0 +1,18 @@
+{
+  "component": "SlipstreamOracle",
+  "main_contract": "SlipstreamOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x629157747ee3a635f9ea1ed37fd0dc7187d45478",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

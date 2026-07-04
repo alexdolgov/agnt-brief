@@ -1,0 +1,18 @@
+{
+  "component": "SavingsRRateProvider",
+  "main_contract": "SavingsRRateProvider",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa47b7678975b13f20f8f79ce56d73a6d91e709f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

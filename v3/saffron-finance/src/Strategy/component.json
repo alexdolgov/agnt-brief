@@ -1,0 +1,18 @@
+{
+  "component": "Strategy",
+  "main_contract": "Strategy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce5e94cded8930aba0eeee9ebc9a3b0928b8bade",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

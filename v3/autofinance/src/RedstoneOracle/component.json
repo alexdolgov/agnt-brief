@@ -1,0 +1,18 @@
+{
+  "component": "RedstoneOracle",
+  "main_contract": "RedstoneOracle",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x80d8315de571bfa4ff0b884a03f95837f8bb308d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

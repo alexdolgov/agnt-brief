@@ -1,0 +1,18 @@
+{
+  "component": "Dev",
+  "main_contract": "Dev",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeae6d42093eae057e770010ffd6f4445f7956613",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

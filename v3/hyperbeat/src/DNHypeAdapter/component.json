@@ -1,0 +1,42 @@
+{
+  "component": "DNHypeAdapter",
+  "main_contract": "DNHypeAdapter",
+  "source_file_count": 38,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x1ca0ad4f112d2484c2b87d64c6c24a1d984fd41c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x1e73ed59ff6497e3532fe640bda78b5011f92b23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x21f5476b70adfc1ac301f2a3af1ef0c446ecad48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc6c06bf8b80b1cfae4fd94b11de1fd2409cdcd2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OrderBookReader",
+  "main_contract": "OrderBookReader",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa27c20a7cf0e1c68c0460706bb674f98f362bc21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

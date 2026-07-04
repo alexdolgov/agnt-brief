@@ -1,0 +1,18 @@
+{
+  "component": "Common",
+  "main_contract": "Common",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31851aaf1fa4cc6632f45570c2086adcf8b7bd75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

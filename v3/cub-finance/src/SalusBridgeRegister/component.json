@@ -1,0 +1,18 @@
+{
+  "component": "SalusBridgeRegister",
+  "main_contract": "SalusBridgeRegister",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb9a560236f640d02a256680a88a488a1d23bcd8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

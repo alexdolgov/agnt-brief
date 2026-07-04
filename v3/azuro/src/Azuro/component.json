@@ -1,0 +1,18 @@
+{
+  "component": "Azuro",
+  "main_contract": "Azuro",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9f96597b08788791870b6a8e461cf2b619ce9dc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

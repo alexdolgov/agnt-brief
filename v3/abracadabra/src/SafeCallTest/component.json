@@ -1,0 +1,18 @@
+{
+  "component": "SafeCallTest",
+  "main_contract": "SafeCallTest",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d43b51835287517404b92d5679443fceb2f5833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

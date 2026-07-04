@@ -1,0 +1,18 @@
+{
+  "component": "AidSquadToken",
+  "main_contract": "AidSquadToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x76b16aa88f932c309abc421f1a9e5c545ff6e28d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TokenConverter",
+  "main_contract": "TokenConverter",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf48a59434609b6e934c2cf091848fa2d28b34bfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "crosschainQiStablecoinSlim",
+  "main_contract": "crosschainQiStablecoinSlim",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x014a177e9642d1b4e970418f894985dc1b85657f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa56f9a54880afbc30cf29bb66d2d9adcdcaeadd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

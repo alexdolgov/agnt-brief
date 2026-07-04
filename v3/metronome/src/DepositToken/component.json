@@ -1,0 +1,18 @@
+{
+  "component": "DepositToken",
+  "main_contract": "DepositToken",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04c3af72fa9f45d37228be8801bc5d2a4410521a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

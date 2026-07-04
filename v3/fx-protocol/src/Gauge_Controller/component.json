@@ -1,0 +1,18 @@
+{
+  "component": "Gauge_Controller",
+  "main_contract": "Gauge Controller",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe60eb8098b34ed775ac44b1dde864e098c6d7f37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

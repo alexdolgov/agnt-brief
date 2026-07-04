@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV2Router02",
+  "main_contract": "UniswapV2Router02",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xe3d8bd6aed4f159bc8000a9cd47cffdb95f96121",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

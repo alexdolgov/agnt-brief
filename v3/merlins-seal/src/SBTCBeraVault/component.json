@@ -1,0 +1,18 @@
+{
+  "component": "SBTCBeraVault",
+  "main_contract": "SBTCBeraVault",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x437c885357425686b53e0d18c8d9c26a4a6be43f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

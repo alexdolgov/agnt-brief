@@ -1,0 +1,18 @@
+{
+  "component": "HorizaMultiPositionLiquidityManager",
+  "main_contract": "HorizaMultiPositionLiquidityManager",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7a4ed72731e682ea5f6f24dd1d62b43c52bfb2a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

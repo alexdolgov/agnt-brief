@@ -1,0 +1,21 @@
+{
+  "component": "SftWrappedTokenFactory",
+  "main_contract": "SftWrappedTokenFactory",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/solv-finance/Audit/blob/main/Quanstamp/Solv-Protocol-SolvBTC-Audit-Report-Quanstamp_2024-08-16.pdf",
+    "https://github.com/solv-finance/Audit/blob/main/Salus/Solv-Yield-Bearing-Tokens-Audit-Report-Salus-20240101.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0679e96f5eeda5313099f812b558714717aec176",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

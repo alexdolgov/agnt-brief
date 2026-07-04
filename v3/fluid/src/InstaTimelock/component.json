@@ -1,0 +1,18 @@
+{
+  "component": "InstaTimelock",
+  "main_contract": "InstaTimelock",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2386dc45added673317ef068992f19421b481f4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

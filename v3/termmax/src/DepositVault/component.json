@@ -1,0 +1,18 @@
+{
+  "component": "DepositVault",
+  "main_contract": "DepositVault",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e0eb6cdad90174f1db606ec186ddd0b5ed80847",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

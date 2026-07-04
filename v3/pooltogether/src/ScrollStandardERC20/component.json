@@ -1,0 +1,18 @@
+{
+  "component": "ScrollStandardERC20",
+  "main_contract": "ScrollStandardERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xf9af83fc41e0cc2af2fba93644d542df6ea0f2b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

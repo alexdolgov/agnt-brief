@@ -1,0 +1,20 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TheArcadiaGroup/publications/blob/main/audits/stroom-audit-final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2723d5df98689eca6a4e7321121662ddb9b3017",
+      "is_proxy": true,
+      "implementation_address": "0xac167941429417f8b1bce4aee6e8bcbe0024623e",
+      "liveness": "live"
+    }
+  ]
+}

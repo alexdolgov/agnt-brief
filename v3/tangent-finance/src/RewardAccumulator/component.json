@@ -1,0 +1,18 @@
+{
+  "component": "RewardAccumulator",
+  "main_contract": "RewardAccumulator",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1461d76aa1c9c523398301d9174098c6d53ce639",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

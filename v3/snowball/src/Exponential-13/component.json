@@ -1,0 +1,18 @@
+{
+  "component": "Exponential-13",
+  "main_contract": "Exponential",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd0917321d44c2a413453fc37b0b87fa982d5e1b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

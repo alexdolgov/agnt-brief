@@ -1,0 +1,20 @@
+{
+  "component": "KUMAAccessController",
+  "main_contract": "KUMAAccessController",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/code-423n4/2023-02-kuma"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5fad6f80312aee6f19784a7fc359f90d441163de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

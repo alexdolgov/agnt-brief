@@ -1,0 +1,26 @@
+{
+  "component": "Referee10",
+  "main_contract": "Referee10",
+  "source_file_count": 77,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1f122b41d6740f5de2df93b8b00013e84227955e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f18941fe5be7a54318989b2c42648914dce47c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PlsDpxPlutusChef",
+  "main_contract": "PlsDpxPlutusChef",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x20df4953ba19c74b2a46b6873803f28bf640c1b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ImplementationAuthority",
+  "main_contract": "ImplementationAuthority",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ef484a9becb9b2fcd4a540ccd5ba805c58d5659",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

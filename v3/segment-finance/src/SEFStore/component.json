@@ -1,0 +1,18 @@
+{
+  "component": "SEFStore",
+  "main_contract": "SEFStore",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2d7e06cfc08348f4114dad2d1665474a55ab446d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

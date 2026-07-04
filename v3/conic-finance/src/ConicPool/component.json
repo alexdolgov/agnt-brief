@@ -1,0 +1,46 @@
+{
+  "component": "ConicPool",
+  "main_contract": "ConicPool",
+  "source_file_count": 45,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://conic.finance/media/ChainSecurity-Audit-Report-ConicFinance.pdf",
+    "https://conic.finance/media/MixBytes-Audit-Report-ConicFinance.pdf",
+    "https://conic.finance/media/PeckShield-Audit-Report-ConicFinance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72c23c94f68669c7b6a5b6e8c87aa9b70c263140",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80a3604977270b7ef2e637f9eb78ce1c3fa64316",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x89dc3e9d493512f6cfb923e15369ebfdde591988",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb083ad0933fadf12761450a4fd45775b9fb6df77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

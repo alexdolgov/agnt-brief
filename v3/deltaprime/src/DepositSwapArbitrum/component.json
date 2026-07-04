@@ -1,0 +1,34 @@
+{
+  "component": "DepositSwapArbitrum",
+  "main_contract": "DepositSwapArbitrum",
+  "source_file_count": 21,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b420f7002375543d04471bf84ead6fb0f0bccea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1b314c3f99c8fe73c9322f5666aff7b8738af907",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaa3a31fd272db802621ee2ca691bbd8d01dd49e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

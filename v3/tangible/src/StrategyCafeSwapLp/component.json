@@ -1,0 +1,42 @@
+{
+  "component": "StrategyCafeSwapLp",
+  "main_contract": "StrategyCafeSwapLp",
+  "source_file_count": 17,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x52e34f0a0a2b26800b7a3d5240d2ccadb444dd32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8023f2cec66f650b94f2751a67dee48e22fa0611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd45347527c567244cfdca6c296d4f0940f747d98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xed895e0955c350b8efef746fd857f951b808bc9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

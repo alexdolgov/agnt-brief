@@ -1,0 +1,18 @@
+{
+  "component": "LinkInterestModel",
+  "main_contract": "LinkInterestModel",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6323a4e6fa95a100db47c925d369581e38272d7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

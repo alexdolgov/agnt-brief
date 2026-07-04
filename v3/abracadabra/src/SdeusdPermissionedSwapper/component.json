@@ -1,0 +1,18 @@
+{
+  "component": "SdeusdPermissionedSwapper",
+  "main_contract": "SdeusdPermissionedSwapper",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbf2121ad4e32d3a68d4eeb081a78dffaac1ab2a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

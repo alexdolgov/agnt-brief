@@ -1,0 +1,18 @@
+{
+  "component": "MarketFactory",
+  "main_contract": "MarketFactory",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x12bb76cd6a2a1ccf2ac2cff64072fed6d8a128e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

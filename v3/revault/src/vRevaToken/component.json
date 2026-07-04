@@ -1,0 +1,20 @@
+{
+  "component": "vRevaToken",
+  "main_contract": "vRevaToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/revault-network"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x774d9103dc027b707812acf0e0b40a34dcaef658",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

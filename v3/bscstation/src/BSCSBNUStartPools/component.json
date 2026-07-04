@@ -1,0 +1,26 @@
+{
+  "component": "BSCSBNUStartPools",
+  "main_contract": "BSCSBNUStartPools",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x469c57ea67291b92bde2ba526879ea08e4701ce6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa00459864f9688f07172fad97a2ed78074a3e711",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

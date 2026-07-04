@@ -1,0 +1,18 @@
+{
+  "component": "UserWithdrawVaultAction",
+  "main_contract": "UserWithdrawVaultAction",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4dd1f0781073d4c917f6c7358f9df3eba25b9fe3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

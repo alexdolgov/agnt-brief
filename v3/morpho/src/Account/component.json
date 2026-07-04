@@ -1,0 +1,18 @@
+{
+  "component": "Account",
+  "main_contract": "Account",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2abad74605eff3d0c49fd70cd230d974afe2d206",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

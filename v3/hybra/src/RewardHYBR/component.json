@@ -1,0 +1,18 @@
+{
+  "component": "RewardHYBR",
+  "main_contract": "RewardHYBR",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x6879db7e84c38e5f580b464d2f19e91e09f4bc98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

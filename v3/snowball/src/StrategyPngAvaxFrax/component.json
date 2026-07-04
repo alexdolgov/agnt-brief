@@ -1,0 +1,18 @@
+{
+  "component": "StrategyPngAvaxFrax",
+  "main_contract": "StrategyPngAvaxFrax",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2ba0fa57188a0d8ff1271b18fcc088658173578f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

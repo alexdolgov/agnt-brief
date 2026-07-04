@@ -1,0 +1,36 @@
+{
+  "component": "BeamChefV3",
+  "main_contract": "BeamChefV3",
+  "source_file_count": 12,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/BeamChefV3"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x26b22e286f08e5e0ea9ec819ede70bbddb75e0e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x6752f8e2e339d6f62985fdee82a72d2ee8089620",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x9a5eb98f5be8269b72612d6934530436b34b29c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

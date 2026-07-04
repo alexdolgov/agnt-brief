@@ -1,0 +1,18 @@
+{
+  "component": "BuyProcessor",
+  "main_contract": "BuyProcessor",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4ec42a1709e6245ff0bdd5ba605ba7147a165a67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

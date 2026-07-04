@@ -1,0 +1,18 @@
+{
+  "component": "SaladVentures",
+  "main_contract": "SaladVentures",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xde59adb1ac16d72cb12a046846f2d5e6b8be3029",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

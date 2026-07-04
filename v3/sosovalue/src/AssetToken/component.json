@@ -1,0 +1,18 @@
+{
+  "component": "AssetToken",
+  "main_contract": "AssetToken",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x63a152dbfc479d82e04794ebc7fddb62505c443a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

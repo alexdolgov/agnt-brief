@@ -1,0 +1,18 @@
+{
+  "component": "stkCvxCrvZaps-2",
+  "main_contract": "stkCvxCrvZaps",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc8d1335d18c0ef56a00dbb8b7a639183ee1c4d78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

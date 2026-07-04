@@ -1,0 +1,18 @@
+{
+  "component": "UpgradeKingDackie",
+  "main_contract": "UpgradeKingDackie",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc0b2e49dfac1b85369f29a30ee074f2194b7cb52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CelerBridge",
+  "main_contract": "CelerBridge",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba20fb9d03e0e974fc54e37417c1f7f6a01622f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

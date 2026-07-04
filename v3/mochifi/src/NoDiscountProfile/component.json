@@ -1,0 +1,18 @@
+{
+  "component": "NoDiscountProfile",
+  "main_contract": "NoDiscountProfile",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5005bd0fe21d2ed57df4dbbbc159a6734d5dcb34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

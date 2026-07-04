@@ -1,0 +1,18 @@
+{
+  "component": "AegisMinting-2",
+  "main_contract": "AegisMinting",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa30644ca67e0a93805c443df4a6e1856d8bd815b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

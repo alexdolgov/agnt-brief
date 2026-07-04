@@ -1,0 +1,21 @@
+{
+  "component": "RateTargetKinkInterestRateStrategy",
+  "main_contract": "RateTargetKinkInterestRateStrategy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sparkdotfi/sparklend-advanced/blob/master/audits/v150-chainsecurity-audit.pdf",
+    "https://github.com/sparkdotfi/sparklend-advanced/blob/master/audits/v160-chainsecurity-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f1a9a787b4103ef5929121cd9399224c6455dd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

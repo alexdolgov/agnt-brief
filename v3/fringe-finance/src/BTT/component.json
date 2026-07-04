@@ -1,0 +1,18 @@
+{
+  "component": "BTT",
+  "main_contract": "BTT",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc669928185dbce49d2230cc9b0979be6dc797957",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BEP20Ontology",
+  "main_contract": "BEP20Ontology",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfd7b3a77848f1c2d67e05e54d78d174a0c850335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

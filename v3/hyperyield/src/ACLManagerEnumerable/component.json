@@ -1,0 +1,18 @@
+{
+  "component": "ACLManagerEnumerable",
+  "main_contract": "ACLManagerEnumerable",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x5b3e93e64a9bf2e529e184fd910485aae2a12b39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

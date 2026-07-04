@@ -1,0 +1,18 @@
+{
+  "component": "CrosschainAccountLinea",
+  "main_contract": "CrosschainAccountLinea",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x581f86da293a1d5cd087a10e7227a75d2d2201a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

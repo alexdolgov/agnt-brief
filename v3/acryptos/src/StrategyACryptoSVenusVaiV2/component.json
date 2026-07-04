@@ -1,0 +1,18 @@
+{
+  "component": "StrategyACryptoSVenusVaiV2",
+  "main_contract": "StrategyACryptoSVenusVaiV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x20d1d365834852f1fea2dfacd5121935f88a6f78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

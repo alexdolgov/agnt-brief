@@ -1,0 +1,18 @@
+{
+  "component": "StakedTokenBptRev2NoCooldown",
+  "main_contract": "StakedTokenBptRev2NoCooldown",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c3cab05a988b5ab3cd8c1f3e83c5205fc4330fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

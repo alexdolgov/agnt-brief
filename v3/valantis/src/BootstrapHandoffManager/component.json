@@ -1,0 +1,18 @@
+{
+  "component": "BootstrapHandoffManager",
+  "main_contract": "BootstrapHandoffManager",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x00da5e6ee624729937ef76767198e20a2e87575f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

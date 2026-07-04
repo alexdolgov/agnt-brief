@@ -1,0 +1,18 @@
+{
+  "component": "RdntDepositor",
+  "main_contract": "RdntDepositor",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0ee94f8e8f551dc7d21744db4b3dae59a68ebf48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

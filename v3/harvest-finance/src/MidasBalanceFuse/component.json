@@ -1,0 +1,26 @@
+{
+  "component": "MidasBalanceFuse",
+  "main_contract": "MidasBalanceFuse",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bfb9e4b7d849c641e7ff896849a4d446322e050",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8193caea6e5aa7006aeb25d55afc10615ec96eb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BakeryMaster",
+  "main_contract": "BakeryMaster",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x20ec291bb8459b6145317e7126532ce7ece5056f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

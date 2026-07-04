@@ -1,0 +1,18 @@
+{
+  "component": "PoolHelper",
+  "main_contract": "PoolHelper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x063411ad7874b7d87f5d032a12bc1766205b60d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

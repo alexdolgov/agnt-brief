@@ -1,0 +1,18 @@
+{
+  "component": "LevinToken",
+  "main_contract": "LevinToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x061cc9d4bda1805eac1dc27979e58dc4c01304f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

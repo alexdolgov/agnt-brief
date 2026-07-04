@@ -1,0 +1,18 @@
+{
+  "component": "WETH",
+  "main_contract": "WETH",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x353f8931ce1c52f643121be129985aab09c4bf52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

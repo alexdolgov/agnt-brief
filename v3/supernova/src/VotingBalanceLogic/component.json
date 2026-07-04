@@ -1,0 +1,28 @@
+{
+  "component": "VotingBalanceLogic",
+  "main_contract": "VotingBalanceLogic",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1de64cd9de11525f9bc1494d1f7d39d83da20e28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed686a5b0bf0df5c97f8eabd1b776ae399319847",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

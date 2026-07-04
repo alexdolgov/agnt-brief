@@ -1,0 +1,37 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit",
+    "https://iosiro.com/audits/thales-airdrop-and-staking-smart-contract-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0b82e4db2971829bb13db8bf87118c065480fd10",
+      "is_proxy": true,
+      "implementation_address": "0x45509d5e7d64eeb42780c18134e2719bdb30f56e",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5713ab44042d92c642444bd2f0fee9c2336f9e3b",
+      "is_proxy": true,
+      "implementation_address": "0xd26199e65cb3935560117c83c5ad87c80b9e4a11",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x84ab38e42d8da33b480762cca543eeca6135e040",
+      "is_proxy": true,
+      "implementation_address": "0x24af2757da0898d14a0691604d11542ad60b8bce",
+      "liveness": "live"
+    }
+  ]
+}

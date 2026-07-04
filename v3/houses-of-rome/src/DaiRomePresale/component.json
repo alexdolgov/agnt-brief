@@ -1,0 +1,18 @@
+{
+  "component": "DaiRomePresale",
+  "main_contract": "DaiRomePresale",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x093973dca8f8dab14398b7e472e69f75869bc824",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

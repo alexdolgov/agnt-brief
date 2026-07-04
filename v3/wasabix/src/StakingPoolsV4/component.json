@@ -1,0 +1,18 @@
+{
+  "component": "StakingPoolsV4",
+  "main_contract": "StakingPoolsV4",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0eda8090e9a86668484915e5e1856e83480fa010",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

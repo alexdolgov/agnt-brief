@@ -1,0 +1,18 @@
+{
+  "component": "SdtDistributorV2-10",
+  "main_contract": "SdtDistributorV2",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff09a9b50a4e9b9ab95d2dcb552e8469f9c891ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

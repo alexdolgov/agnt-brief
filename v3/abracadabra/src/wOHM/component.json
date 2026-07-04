@@ -1,0 +1,18 @@
+{
+  "component": "wOHM",
+  "main_contract": "wOHM",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca76543cf381ebbb277be79574059e32108e3e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

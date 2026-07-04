@@ -1,0 +1,26 @@
+{
+  "component": "BasePluginV1Factory",
+  "main_contract": "BasePluginV1Factory",
+  "source_file_count": 37,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x43853f16bfe1173942d6e896ccda1f3d497e70b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x60d0c9745238720b246af72cd94de18aec39e395",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

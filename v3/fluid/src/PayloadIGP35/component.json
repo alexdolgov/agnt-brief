@@ -1,0 +1,18 @@
+{
+  "component": "PayloadIGP35",
+  "main_contract": "PayloadIGP35",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea0896bb75e4773661e0e439f33638515e882ce4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

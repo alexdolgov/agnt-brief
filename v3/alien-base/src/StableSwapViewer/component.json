@@ -1,0 +1,18 @@
+{
+  "component": "StableSwapViewer",
+  "main_contract": "StableSwapViewer",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3db0bc1987427a3ac34518c8968efdd4f9c28d29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

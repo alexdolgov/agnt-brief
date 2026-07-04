@@ -1,0 +1,18 @@
+{
+  "component": "OpynPerpVault",
+  "main_contract": "OpynPerpVault",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b8f14554f40705de7908879e2228d2ac94fde1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

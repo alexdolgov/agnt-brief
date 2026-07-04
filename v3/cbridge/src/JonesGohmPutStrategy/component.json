@@ -1,0 +1,18 @@
+{
+  "component": "JonesGohmPutStrategy",
+  "main_contract": "JonesGohmPutStrategy",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe5a8ab24dc1b0f54dc3803cb33098879f8ccba61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

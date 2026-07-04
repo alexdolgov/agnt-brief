@@ -1,0 +1,18 @@
+{
+  "component": "TermMaxRewardContract",
+  "main_contract": "TermMaxRewardContract",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb2c53eff70ebe5ef1940b1e942ccce2a5613e394",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

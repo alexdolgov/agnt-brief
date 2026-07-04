@@ -1,0 +1,18 @@
+{
+  "component": "ChainBridgeBatchRebaseReport",
+  "main_contract": "ChainBridgeBatchRebaseReport",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27730429adca6f1fcefdc05e222d64cffd59d201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

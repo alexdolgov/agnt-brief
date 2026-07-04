@@ -1,0 +1,18 @@
+{
+  "component": "SpotHouse",
+  "main_contract": "SpotHouse",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1bb8939b9c0acf23fcec442b08a70f6c36eff9f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

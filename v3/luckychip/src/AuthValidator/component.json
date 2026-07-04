@@ -1,0 +1,18 @@
+{
+  "component": "AuthValidator",
+  "main_contract": "AuthValidator",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x084e2231d12799edb36773fbc27886a9860034fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

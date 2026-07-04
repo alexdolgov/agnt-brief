@@ -1,0 +1,18 @@
+{
+  "component": "RestrictedLockupToken",
+  "main_contract": "RestrictedLockupToken",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7c6a937943f135283a2561938de2200994a8f7a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

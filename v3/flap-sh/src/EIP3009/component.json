@@ -1,0 +1,18 @@
+{
+  "component": "EIP3009",
+  "main_contract": "EIP3009",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5dbb81a88fc6172ea1fb63ded7e00d2c0da5d184",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "SwapLibrary",
+  "main_contract": "SwapLibrary",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x58adf4039512d60eaaf034ddbd15f66f3bfc2583",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa220a4adfce3c11d600f6bf4e7e2101babd58466",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

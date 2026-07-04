@@ -1,0 +1,18 @@
+{
+  "component": "BALTokenHolderFactory",
+  "main_contract": "BALTokenHolderFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb848f50141f3d4255b37ac288c25c109104f2158",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

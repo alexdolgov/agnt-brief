@@ -1,0 +1,18 @@
+{
+  "component": "PhemexToken",
+  "main_contract": "PhemexToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

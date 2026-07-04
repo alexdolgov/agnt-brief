@@ -1,0 +1,26 @@
+{
+  "component": "RangeProtocolBlendVault",
+  "main_contract": "RangeProtocolBlendVault",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c2bb276a5e63d031c1df2fa89dd735906da4807",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed72a71161258fc3dc31e57650e2b464c69f4dc1",
+      "is_proxy": true,
+      "implementation_address": "0x2c2bb276a5e63d031c1df2fa89dd735906da4807",
+      "liveness": "inactive"
+    }
+  ]
+}

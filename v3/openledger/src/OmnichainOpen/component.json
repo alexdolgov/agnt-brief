@@ -1,0 +1,18 @@
+{
+  "component": "OmnichainOpen",
+  "main_contract": "OmnichainOpen",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa227cc36938f0c9e09ce0e64dfab226cad739447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

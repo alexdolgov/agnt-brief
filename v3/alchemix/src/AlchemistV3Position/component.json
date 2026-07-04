@@ -1,0 +1,28 @@
+{
+  "component": "AlchemistV3Position",
+  "main_contract": "AlchemistV3Position",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15da4c7db6404b92894d5214fac92057fb8a263d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x872a03fabc86b59c883cd9c439e969321b719beb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

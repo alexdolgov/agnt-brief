@@ -1,0 +1,26 @@
+{
+  "component": "MidasFarm",
+  "main_contract": "MidasFarm",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7373a7ce3c023c56cb66747afbdf827627d31679",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4ea3ec87b1c254f17a2fb68164db0caf6c4cecf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

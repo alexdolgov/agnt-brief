@@ -1,0 +1,18 @@
+{
+  "component": "EscrowChecker",
+  "main_contract": "EscrowChecker",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2b17798c3685a26627c79add98099c0f94fb96a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

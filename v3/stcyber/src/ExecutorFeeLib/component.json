@@ -1,0 +1,18 @@
+{
+  "component": "ExecutorFeeLib",
+  "main_contract": "ExecutorFeeLib",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d6023c0d13f2c527818177a913fe7632434c461",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "AmpleFactory",
+  "main_contract": "AmpleFactory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://ampleswap.com/audit-by-etherauthority.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x381fefadab5466bff0e8e96842e8e76a143e8f73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BancorGasPriceLimit",
+  "main_contract": "BancorGasPriceLimit",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7fd539ef2be3192b6d6bdf095968bac2d74daa6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafb06c1309004970a9c5ab3b047527bf38b99590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

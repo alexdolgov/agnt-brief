@@ -1,0 +1,18 @@
+{
+  "component": "WBTCOFTAdapter",
+  "main_contract": "WBTCOFTAdapter",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c01390e10e44c968b73a7bcff7e4b4f50ba76ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

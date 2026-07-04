@@ -1,0 +1,18 @@
+{
+  "component": "rUSDYW_Factory",
+  "main_contract": "rUSDYW_Factory",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x4109074822b86a6c41fdce1a92030dc7298c64d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

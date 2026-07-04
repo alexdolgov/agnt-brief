@@ -1,0 +1,18 @@
+{
+  "component": "TENFIExchange",
+  "main_contract": "TENFIExchange",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc6b20fa2b5c5e0565bae9d648ab2afa37074be5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

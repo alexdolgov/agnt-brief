@@ -1,0 +1,76 @@
+{
+  "component": "PortfolioFactory",
+  "main_contract": "PortfolioFactory",
+  "source_file_count": 72,
+  "deployment_count": 8,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Velvet-Capital/audits/blob/main/PeckShield-Audit-Report-VelvetV4-v1.0-3.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x22d44ec3f1f217c97ccf3ca1b500043a66101082",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5fef75f8720bbabd289012e7ff32514943c1b16d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x850fffff0941dcd6aca6425d43df0c35f51710ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa1b57604a5e95c4bd2e6a16112a314e52e34039a",
+      "is_proxy": true,
+      "implementation_address": "0xdb4dfa0dbab3b40598a808895a69d76cf02ef951",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xadf04f22a0b5548a5124cf692b8c5e6d19c8a0e5",
+      "is_proxy": true,
+      "implementation_address": "0x22d44ec3f1f217c97ccf3ca1b500043a66101082",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb7993564e537fe3e949f29c09f09b16f456de448",
+      "is_proxy": true,
+      "implementation_address": "0x5fef75f8720bbabd289012e7ff32514943c1b16d",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdb4dfa0dbab3b40598a808895a69d76cf02ef951",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf93659fb357899e092813bc3a2959cedb3282a7f",
+      "is_proxy": true,
+      "implementation_address": "0x850fffff0941dcd6aca6425d43df0c35f51710ca",
+      "liveness": "live"
+    }
+  ]
+}

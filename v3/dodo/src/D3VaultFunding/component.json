@@ -1,0 +1,34 @@
+{
+  "component": "D3VaultFunding",
+  "main_contract": "D3VaultFunding",
+  "source_file_count": 72,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x411ec324598ef53b1e8663e335e9094464523e6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x482432c15a1657020991aa60e856ac440dbe4cd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbaf350b14ed48429a7772f7d05b2cfc6620744d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

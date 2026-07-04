@@ -1,0 +1,18 @@
+{
+  "component": "WaterfallReferral",
+  "main_contract": "WaterfallReferral",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2eaddd25a6bebf98f9f8c369fe285a3f2549da15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

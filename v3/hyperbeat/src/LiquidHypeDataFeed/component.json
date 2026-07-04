@@ -1,0 +1,26 @@
+{
+  "component": "LiquidHypeDataFeed",
+  "main_contract": "LiquidHypeDataFeed",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x156286ed5ce3ac31f20ef501ad6a3de915fdb01e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x70519793f50c95f435972637e1190f41cfc907bd",
+      "is_proxy": true,
+      "implementation_address": "0x156286ed5ce3ac31f20ef501ad6a3de915fdb01e",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CurveAdapter",
+  "main_contract": "CurveAdapter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcb9597bb803d7baa4b6a14c2afd6d4dc9230af70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

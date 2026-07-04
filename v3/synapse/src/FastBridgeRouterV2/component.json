@@ -1,0 +1,18 @@
+{
+  "component": "FastBridgeRouterV2",
+  "main_contract": "FastBridgeRouterV2",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00cd000000003f7f682be4813200893d4e690000",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

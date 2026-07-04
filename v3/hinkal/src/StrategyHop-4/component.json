@@ -1,0 +1,18 @@
+{
+  "component": "StrategyHop-4",
+  "main_contract": "StrategyHop",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xebf278aacad8ad151e637fbc8acbc5a3a449acbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

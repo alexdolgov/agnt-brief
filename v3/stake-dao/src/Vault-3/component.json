@@ -1,0 +1,21 @@
+{
+  "component": "Vault-3",
+  "main_contract": "Vault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Stake-DAO/audits/blob/main/onlyboost/2023-11-22_zachobront_onlyboost.md",
+    "https://github.com/stake-dao/audits/blob/main/onlyboost/2023-11-22_zachobront_onlyboost.md"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3c0a405e914337139992625d5100ea141a9c4d11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

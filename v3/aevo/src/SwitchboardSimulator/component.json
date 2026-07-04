@@ -1,0 +1,18 @@
+{
+  "component": "SwitchboardSimulator",
+  "main_contract": "SwitchboardSimulator",
+  "source_file_count": 77,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbd69f42d91c57fe6ac84d1e57fc5c84428b86056",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

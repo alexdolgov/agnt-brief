@@ -1,0 +1,26 @@
+{
+  "component": "GovTokenEscrow",
+  "main_contract": "GovTokenEscrow",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36c2398bd782aa4ac0d6529fe5c83c96b2233fcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x882d00508bbf32874f48eb739515cf3cb6fc94e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

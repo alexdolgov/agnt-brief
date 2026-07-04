@@ -1,0 +1,26 @@
+{
+  "component": "MintableBaseToken",
+  "main_contract": "MintableBaseToken",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd978595622184c6c64bf0ab7127f3728ca4f1e4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xebb3eb5937b222fcec18cbe57c9f422454ad3b3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

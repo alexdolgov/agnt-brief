@@ -1,0 +1,26 @@
+{
+  "component": "HashmaskSwapper",
+  "main_contract": "HashmaskSwapper",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x078d3b62e82b5cee3ebdc0754cda976230517452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c41fa54ca1aa9a2a180bd3ddf87597e2bba7ae1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

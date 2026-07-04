@@ -1,0 +1,18 @@
+{
+  "component": "RailgunLogic-2",
+  "main_contract": "RailgunLogic",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5ad95c537b002770a39dea342c4bb2b68b1497aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

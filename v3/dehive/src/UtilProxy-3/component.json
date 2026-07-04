@@ -1,0 +1,26 @@
+{
+  "component": "UtilProxy-3",
+  "main_contract": "UtilProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7db96af7ed9338f98463fa527718fc61f3576544",
+      "is_proxy": true,
+      "implementation_address": "0x15d4baefff67977705c54b06233635b376ef7010",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfd98c4655e7bc8b9ec3de5a518b8c3729b352a33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

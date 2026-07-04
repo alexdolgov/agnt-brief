@@ -1,0 +1,18 @@
+{
+  "component": "MockSchool",
+  "main_contract": "MockSchool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3af54f3823796c0e659f852758dd76aa0f849438",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

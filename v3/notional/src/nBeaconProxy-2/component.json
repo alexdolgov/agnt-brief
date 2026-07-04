@@ -1,0 +1,114 @@
+{
+  "component": "nBeaconProxy-2",
+  "main_contract": "nBeaconProxy",
+  "source_file_count": 9,
+  "deployment_count": 13,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0519614643a019feb53b9f2c395b243253f75db7",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1fd865a55eaf5333e6374fb3ad66d22e9885d3aa",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x63ffcfb69edf8c9cb19a36401cf88c8939c40650",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d13d3c51e75f9970733ff8c32715773e1ed73c4",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6f28cafe12bd97e474a52bcbfea6f2c18ae0f53d",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8652de5310746e8de24cbe17ee8b5fe1e78febcc",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x866eb09d3d1397b8a28cfe5dceeaed9362840385",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa135d7f10545e3a45e24e79ecd4e4c3c78cf56bf",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xabc07bf91469c5450d6941dd0770e6e6761b90d6",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb9bfbb35c2ed588a42f9fd1120929c607b463192",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbc323e3564fb498e55cdc83a3ea6bb1af8402d6b",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd63ace62b925361fc588734022718e919a8081ac",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xef3f53046c9b00702f25186d7342d73c789f547a",
+      "is_proxy": true,
+      "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+      "liveness": "live"
+    }
+  ]
+}

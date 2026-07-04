@@ -1,0 +1,18 @@
+{
+  "component": "MultiRewards-2",
+  "main_contract": "MultiRewards",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafd3d38fecebcdda6d934979d4ac7f17330a96ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

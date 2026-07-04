@@ -1,0 +1,18 @@
+{
+  "component": "SyncDepositVault",
+  "main_contract": "SyncDepositVault",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x67fda49952cd0b059d019e51b58e742f9592bb8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

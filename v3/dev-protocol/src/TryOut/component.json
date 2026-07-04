@@ -1,0 +1,18 @@
+{
+  "component": "TryOut",
+  "main_contract": "TryOut",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7eb78caa271a2e8fc25e75ca23574e9d9299310c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

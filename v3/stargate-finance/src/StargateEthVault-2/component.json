@@ -1,0 +1,18 @@
+{
+  "component": "StargateEthVault-2",
+  "main_contract": "StargateEthVault",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb69c8cbcd90a39d8d3d3ccf0a3e968511c3856a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DummyERC721",
+  "main_contract": "DummyERC721",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x71b821aa52a49f32eed535fca6eb5aa130085978",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

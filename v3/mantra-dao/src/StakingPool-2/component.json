@@ -1,0 +1,18 @@
+{
+  "component": "StakingPool-2",
+  "main_contract": "StakingPool",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e15ad979919bb4db331bfe864475ae3bffeba93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

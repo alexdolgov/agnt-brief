@@ -1,0 +1,18 @@
+{
+  "component": "IssuanceHoursStub",
+  "main_contract": "IssuanceHoursStub",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8dd664d8a14558dc5d41baf767efaf96570d3c52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

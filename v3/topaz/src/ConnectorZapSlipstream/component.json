@@ -1,0 +1,18 @@
+{
+  "component": "ConnectorZapSlipstream",
+  "main_contract": "ConnectorZapSlipstream",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x16f9d057c0f6c0ce9c4367e34c89248e27f53b37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

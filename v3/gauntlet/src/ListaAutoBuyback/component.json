@@ -1,0 +1,18 @@
+{
+  "component": "ListaAutoBuyback",
+  "main_contract": "ListaAutoBuyback",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x362d279284ed18fdc3e04bf0edd8bc453e9446ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ySUSD",
+  "main_contract": "ySUSD",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36324b8168f960a12a8fd01406c9c78143d41380",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

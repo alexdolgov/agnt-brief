@@ -1,0 +1,26 @@
+{
+  "component": "BounceERC1155",
+  "main_contract": "BounceERC1155",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b7cd781b2dff89cdcf3067015f2f961a84fe60a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd13ad8e2b26c1c671ebf8497e4762ee9a907a426",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

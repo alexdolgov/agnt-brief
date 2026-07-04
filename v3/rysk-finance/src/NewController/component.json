@@ -1,0 +1,18 @@
+{
+  "component": "NewController",
+  "main_contract": "NewController",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x89daeea463c7ddf94ce3cc17be6c755ecdfb43bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

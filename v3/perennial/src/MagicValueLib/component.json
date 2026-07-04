@@ -1,0 +1,18 @@
+{
+  "component": "MagicValueLib",
+  "main_contract": "MagicValueLib",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x28158dcebbb6b5e69a5a5a26f5fe9a8d199df48c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

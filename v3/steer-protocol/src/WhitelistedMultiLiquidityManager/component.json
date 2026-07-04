@@ -1,0 +1,20 @@
+{
+  "component": "WhitelistedMultiLiquidityManager",
+  "main_contract": "WhitelistedMultiLiquidityManager",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/steer-protocol-core-implementation-636b8fca6693a100164bf02f"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c5c5beb833fd382b04e039f151942dc3d9a60ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

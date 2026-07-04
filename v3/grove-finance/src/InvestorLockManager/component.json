@@ -1,0 +1,18 @@
+{
+  "component": "InvestorLockManager",
+  "main_contract": "InvestorLockManager",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e4d0fc75407de18bde9930cbbc3238ebac29fda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

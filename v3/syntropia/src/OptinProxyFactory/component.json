@@ -1,0 +1,18 @@
+{
+  "component": "OptinProxyFactory",
+  "main_contract": "OptinProxyFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

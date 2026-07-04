@@ -1,0 +1,18 @@
+{
+  "component": "BaseToken-2",
+  "main_contract": "BaseToken",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc5b2d9fda8a82e8dcecd5e9e6e99b78a9188eb05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

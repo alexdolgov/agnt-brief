@@ -1,0 +1,18 @@
+{
+  "component": "RouterAllowlist",
+  "main_contract": "RouterAllowlist",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x073049917a8f7f41c60aad8232b69b89b37bf3b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

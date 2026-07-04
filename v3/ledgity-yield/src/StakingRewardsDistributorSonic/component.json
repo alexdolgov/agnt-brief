@@ -1,0 +1,26 @@
+{
+  "component": "StakingRewardsDistributorSonic",
+  "main_contract": "StakingRewardsDistributorSonic",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3bcb3c2992a1a4c2c97010c6d6789f6abcb40e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb91985d71da9d3dae5d47503ebb7d133cf68640e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

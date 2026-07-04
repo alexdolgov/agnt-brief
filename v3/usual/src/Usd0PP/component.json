@@ -1,0 +1,27 @@
+{
+  "component": "Usd0PP",
+  "main_contract": "Usd0PP",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2F8gq6et5OGqJHJGphqav6%2FSherlock-%20Audit%20report%20on%20USD0%2B%2B%20upgrade%20(Burn%20Redemption%20Mechanism).pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FBtEA47JlsWFteDb5GpwE%2FSpearbit%20Cantina%20Report%20for%20Usual%20Pegasus%20Phase%201.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FHtgp95SukDIpq9RSnnt8%2FSpearbit%20-%20Audit%20Report%20on%20Redirect%20%26%20Fee%20Sweep.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FJd3MEliEfOdTpLn8Lj1c%2FSpearbit%20Cantina%20Report%20for%20USD0pp%20adjustments%20.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FKVqreB0coxbKmJoOxJhc%2FUsual%20Pegasus%20-%20Security%20Review%20by%20Cantina.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FPpuD1K1dwd2rI5YbqRWP%2FSpearbit%20-%20Usual%20USD0%2B%2B%20Investment%20Vault.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FroXirXvK4iNSufm3lrik%2FSherlock%20-%20bUSD0%20Upgrade%20Audit.pdf",
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FuIIECu9Z1z2RSIcirRxf%2FSherlock%20-%20Usual%20Labs%20Public%20Audit%20Contest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7859a49e6fe8422add6aabd26a3231030dc96a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

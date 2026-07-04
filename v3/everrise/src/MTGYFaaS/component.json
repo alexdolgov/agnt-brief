@@ -1,0 +1,26 @@
+{
+  "component": "MTGYFaaS",
+  "main_contract": "MTGYFaaS",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e07f7ad3e722f434604e7617d6dae0a9a48a878",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaa0c2852f5391919b8ace9ac079cf3791e5fe7e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "PodFlashMintSource",
+  "main_contract": "PodFlashMintSource",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d9a0344b290ac1f12452986da6018dc53cc83c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8cf3b7084a0d38cc9d7d1dea6e7bc21ad76347e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

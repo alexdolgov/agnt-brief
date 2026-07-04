@@ -1,0 +1,18 @@
+{
+  "component": "JavPriceImpact",
+  "main_contract": "JavPriceImpact",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1c3cf1a5f675c626057f8e09f4e0b40fb33ea2a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MevEthRouter-2",
+  "main_contract": "MevEthRouter",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb60598cd27fb881b92a34afce93aa1ee647b4a93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

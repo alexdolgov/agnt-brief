@@ -1,0 +1,18 @@
+{
+  "component": "ReferralReader",
+  "main_contract": "ReferralReader",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaa88ad234a374989d46a854337e315bcf70020fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

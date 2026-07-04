@@ -1,0 +1,18 @@
+{
+  "component": "TokenHelper-5",
+  "main_contract": "TokenHelper",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae8bc036451af7c8f96fd90642e163392d21d33b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

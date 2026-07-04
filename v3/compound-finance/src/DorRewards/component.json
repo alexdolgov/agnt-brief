@@ -1,0 +1,18 @@
+{
+  "component": "DorRewards",
+  "main_contract": "DorRewards",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5324e2f61987fcb06d892f1256b7c12ca9152a10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

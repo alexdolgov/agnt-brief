@@ -1,0 +1,18 @@
+{
+  "component": "jUsdcAsset",
+  "main_contract": "jUsdcAsset",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xde509fe1555ab907e5c29f987ba0be1ac0626dae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

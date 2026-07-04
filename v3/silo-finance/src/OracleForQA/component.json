@@ -1,0 +1,36 @@
+{
+  "component": "OracleForQA",
+  "main_contract": "OracleForQA",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20-%20Silo%20-%20Aggregator%20and%20Manageable%20Oracle%20-%20Final%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x200ae3dc21f6dfbab81842db21dbbf285e2b4cc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd278537de10e9d6bcba7811f355cd9cb8a4e544b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xff03cbccff7f43f63545b66d3291fec69c8597cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

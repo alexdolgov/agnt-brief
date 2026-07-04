@@ -1,0 +1,20 @@
+{
+  "component": "VerseToken",
+  "main_contract": "VerseToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.getverse.com/verse-security-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x249ca82617ec3dfb2589c4c17ab7ec9765350a18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

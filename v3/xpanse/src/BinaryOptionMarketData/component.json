@@ -1,0 +1,18 @@
+{
+  "component": "BinaryOptionMarketData",
+  "main_contract": "BinaryOptionMarketData",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4a9d3fd5ce77f0341995d46ddb924f8d33fe1842",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "component": "SyrupBar",
+  "main_contract": "SyrupBar",
+  "source_file_count": 4,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://ampleswap.com/audit-by-etherauthority.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x01b71e45bc617205ded91444b1af0a85f801f7f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x164951f7b8bce25dc19306a6a28509399704fc04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x33ebcbfc332b17c8a87970ecb9439dfda9cd50a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7798e5cef2ed88188c67f95fd612ba5938760081",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x984b312c45e855f04359fb875998c8f0f3808bc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9cd68f01d7572bedc982cdb70d562b171cadef37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa09b465a32588cdcdbbf19353821d6bf91dcf641",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

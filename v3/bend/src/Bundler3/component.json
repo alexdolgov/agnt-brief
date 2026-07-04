@@ -1,0 +1,18 @@
+{
+  "component": "Bundler3",
+  "main_contract": "Bundler3",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xf920140a65d0f412f2ab3e76c4feab5eef0657ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

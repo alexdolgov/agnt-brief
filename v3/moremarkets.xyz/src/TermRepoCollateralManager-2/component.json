@@ -1,0 +1,18 @@
+{
+  "component": "TermRepoCollateralManager-2",
+  "main_contract": "TermRepoCollateralManager",
+  "source_file_count": 96,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6d96f1752dbc73276c3e6b07c04d04c61fc2cd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OLEToken-2",
+  "main_contract": "OLEToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb97ba5c4a569ddd3ad11ba838fd09b7380147ec7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

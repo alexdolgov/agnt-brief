@@ -1,0 +1,18 @@
+{
+  "component": "MoneyFiAerodromeSwap",
+  "main_contract": "MoneyFiAerodromeSwap",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x85affe800e3d5098cf9aed4749e765a4a137293d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "KSElasticLMHelper",
+  "main_contract": "KSElasticLMHelper",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35be3f4fd8239a35a7f120756d4d69e5c5e10870",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6afeb9edd6cf44fa8e89b1eee28284e6dd7705c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

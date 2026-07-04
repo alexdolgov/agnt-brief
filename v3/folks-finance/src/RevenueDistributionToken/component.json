@@ -1,0 +1,18 @@
+{
+  "component": "RevenueDistributionToken",
+  "main_contract": "RevenueDistributionToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7e8b36e0766d9b04c93de68a9d47dd11f260b45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

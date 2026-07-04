@@ -1,0 +1,18 @@
+{
+  "component": "AnyCallApp-4",
+  "main_contract": "AnyCallApp",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3129662808bec728a27ab6a6b9afd3cbaca8a43c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

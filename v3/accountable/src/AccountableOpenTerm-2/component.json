@@ -1,0 +1,18 @@
+{
+  "component": "AccountableOpenTerm-2",
+  "main_contract": "AccountableOpenTerm",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66d6c3f32676a31f1b2e14f6bf6da9fc8d8e819c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityLock",
+  "main_contract": "LiquidityLock",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5145cedb4aad80226e28adb453c6ab4c710160fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

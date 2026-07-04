@@ -1,0 +1,26 @@
+{
+  "component": "GovernableWhitelistPerspective",
+  "main_contract": "GovernableWhitelistPerspective",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x232f49b73b3e1c65bccb1ff4874cadcd16eb9399",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f323e75e98ff55d6fc28fb322a3c7a46877f418",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

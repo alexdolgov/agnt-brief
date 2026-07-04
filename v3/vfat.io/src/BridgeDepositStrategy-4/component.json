@@ -1,0 +1,34 @@
+{
+  "component": "BridgeDepositStrategy-4",
+  "main_contract": "BridgeDepositStrategy",
+  "source_file_count": 25,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x985a6aa5de2c73d892b560f1f04757f0cc9d32c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9f58eed9a78afc6ace82ea2fc6910a5e9d133242",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa919163bcf17de88ae78fb7950f6cb398f8337c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

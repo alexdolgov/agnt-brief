@@ -1,0 +1,26 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1e95faca5f99dcc8e517fea193a3c3b0aac1e0a1",
+      "is_proxy": true,
+      "implementation_address": "0xb23ea6561953b406f4806cd177377d6940420608",
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x31a20e5b7b1b067705419d57ab4f72e81cc1f6bf",
+      "is_proxy": true,
+      "implementation_address": "0x184c1da4e33ee3093af05c9100ac9b0d5e78efcb",
+      "liveness": "live"
+    }
+  ]
+}

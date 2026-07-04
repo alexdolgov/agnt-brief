@@ -1,0 +1,18 @@
+{
+  "component": "ElasticERC20-2",
+  "main_contract": "ElasticERC20",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42873d662fd25b6b5d2a240afa1d39824a48091b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AmpleBondController",
+  "main_contract": "AmpleBondController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d63d307a2b50c3e76eb12cfba002bf9d8e286f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

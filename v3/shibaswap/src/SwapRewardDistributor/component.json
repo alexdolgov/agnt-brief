@@ -1,0 +1,18 @@
+{
+  "component": "SwapRewardDistributor",
+  "main_contract": "SwapRewardDistributor",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf71741c102e5295813912cf3b2fc07bc740a0f1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

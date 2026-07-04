@@ -1,0 +1,18 @@
+{
+  "component": "RewardTracker",
+  "main_contract": "RewardTracker",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a36f9565c6fb862509ad8d148941968344a55d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

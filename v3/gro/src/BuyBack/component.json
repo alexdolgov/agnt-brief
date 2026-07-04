@@ -1,0 +1,34 @@
+{
+  "component": "BuyBack",
+  "main_contract": "BuyBack",
+  "source_file_count": 14,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x730ce0b3cc7bb1af919dc363307ff3cfbaabb4a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc06b961d9ef666fddcc15f37264fbf6352ca2264",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf2bf3ef4f5c9dc69e3a6642fa3168327ee1cdd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

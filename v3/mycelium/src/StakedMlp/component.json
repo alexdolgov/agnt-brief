@@ -1,0 +1,18 @@
+{
+  "component": "StakedMlp",
+  "main_contract": "StakedMlp",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9f4bc1ef5319af843e587a3bfdb3b228009f035f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CvxCrvRari",
+  "main_contract": "CvxCrvRari",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4fc2a279ffddde98cb154f04375e69205156b987",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

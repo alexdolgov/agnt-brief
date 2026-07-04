@@ -1,0 +1,18 @@
+{
+  "component": "Admin-6",
+  "main_contract": "Admin",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x349d55f12fb166a926214ca0195a07a16fa4ccb1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

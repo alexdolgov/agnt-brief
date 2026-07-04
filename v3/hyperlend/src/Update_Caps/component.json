@@ -1,0 +1,18 @@
+{
+  "component": "Update_Caps",
+  "main_contract": "Update_Caps",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8c21d02998885728173033c5ee5d7e4946d08daa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

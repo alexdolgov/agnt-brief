@@ -1,0 +1,18 @@
+{
+  "component": "RouterFeeSetter",
+  "main_contract": "RouterFeeSetter",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b2ce3f0af1dec26a3ae15125c771616bda4c967",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

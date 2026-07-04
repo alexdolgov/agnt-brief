@@ -1,0 +1,44 @@
+{
+  "component": "VestLock",
+  "main_contract": "VestLock",
+  "source_file_count": 11,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://assets.railgun.org/docs/audits/2022-12-21%20Zokyo.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19b620929f97b7b990801496c3b361ca5def8c71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x321617e18be9ec7cfe5ab8856de2aabaa478e13b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0bef2d373a1efade8b952f33c1370e486f209cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+      "is_proxy": true,
+      "implementation_address": "0xb4f2d77bd12c6b548ae398244d7fad4abce4d89b",
+      "liveness": "live"
+    }
+  ]
+}

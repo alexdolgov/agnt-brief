@@ -1,0 +1,18 @@
+{
+  "component": "UnicVester",
+  "main_contract": "UnicVester",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf3fe06efe68762be5e1ab51da1c586c6362e2aa7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

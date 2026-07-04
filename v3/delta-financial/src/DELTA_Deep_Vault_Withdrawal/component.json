@@ -1,0 +1,18 @@
+{
+  "component": "DELTA_Deep_Vault_Withdrawal",
+  "main_contract": "DELTA_Deep_Vault_Withdrawal",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

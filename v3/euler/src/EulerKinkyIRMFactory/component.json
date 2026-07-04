@@ -1,0 +1,18 @@
+{
+  "component": "EulerKinkyIRMFactory",
+  "main_contract": "EulerKinkyIRMFactory",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x80594d095b69c7e8ac4b9fc00da59e0504c3b9f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

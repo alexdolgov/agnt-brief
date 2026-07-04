@@ -1,0 +1,18 @@
+{
+  "component": "WhelpsNFT",
+  "main_contract": "WhelpsNFT",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8ce5b9b1b22be31689d43c408ba6938568e88a42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

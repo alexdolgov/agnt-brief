@@ -1,0 +1,18 @@
+{
+  "component": "RevenueTokenTracker",
+  "main_contract": "RevenueTokenTracker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8d983ac07af3509c40b79fbb46c84e612bbb88c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

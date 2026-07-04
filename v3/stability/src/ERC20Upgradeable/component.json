@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Upgradeable",
+  "main_contract": "ERC20Upgradeable",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x256e2479130a1b02f2d876df3fbcea50ab538f66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

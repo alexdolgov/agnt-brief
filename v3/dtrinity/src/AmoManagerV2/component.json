@@ -1,0 +1,26 @@
+{
+  "component": "AmoManagerV2",
+  "main_contract": "AmoManagerV2",
+  "source_file_count": 34,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29532f74a9302e0a1e9f7d015fe355ffde6e6880",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc53406583d4370ea4a5dc2bfd5592ef9cea56a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

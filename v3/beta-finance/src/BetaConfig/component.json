@@ -1,0 +1,23 @@
+{
+  "component": "BetaConfig",
+  "main_contract": "BetaConfig",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/beta-finance/beta/blob/master/audits/OZ%20-%20Beta%20Finance%20Audit%20Report.pdf",
+    "https://github.com/beta-finance/beta/blob/master/audits/PeckShield-Audit-Report-Beta-v1.0.pdf",
+    "https://github.com/beta-finance/beta/blob/master/audits/ToB%20-%20Beta%20Finance%20Final%20Report.pdf",
+    "https://www.openzeppelin.com/news/beta-finance-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59334e2693168c3f8c9e0fcbe029dab9daf6b9c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

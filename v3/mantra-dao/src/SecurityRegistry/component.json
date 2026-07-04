@@ -1,0 +1,26 @@
+{
+  "component": "SecurityRegistry",
+  "main_contract": "SecurityRegistry",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b4553a35d3020064cb464a8d75a4735ffda15bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe94de02e52eaf9f0f6bf7f16e4927fcbc2c09bc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

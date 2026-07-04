@@ -1,0 +1,18 @@
+{
+  "component": "DCU",
+  "main_contract": "DCU",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf56c6ece0c0d6fbb9a53282c0df71dbfafa933ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

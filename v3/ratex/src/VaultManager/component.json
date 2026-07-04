@@ -1,0 +1,26 @@
+{
+  "component": "VaultManager",
+  "main_contract": "VaultManager",
+  "source_file_count": 26,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x15fc4e6417c74577dee27aaafb2e2c5806727ec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5763ddeb60c82684f3d0098aea5076c0da972ec7",
+      "is_proxy": true,
+      "implementation_address": "0x15fc4e6417c74577dee27aaafb2e2c5806727ec2",
+      "liveness": "live"
+    }
+  ]
+}

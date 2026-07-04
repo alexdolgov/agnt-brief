@@ -1,0 +1,18 @@
+{
+  "component": "TransferRules",
+  "main_contract": "TransferRules",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfb23108ebefcb2079a98aa7b2480307f47cb81e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FireFighterClaimer",
+  "main_contract": "FireFighterClaimer",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1a7cf7817dae50df822fb5d0fc0cdd87b38657e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

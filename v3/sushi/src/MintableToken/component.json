@@ -1,0 +1,18 @@
+{
+  "component": "MintableToken",
+  "main_contract": "MintableToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbbde1d67297329148fe1ed5e6b00114842728e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

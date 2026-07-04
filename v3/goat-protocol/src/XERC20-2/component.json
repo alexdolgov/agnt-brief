@@ -1,0 +1,18 @@
+{
+  "component": "XERC20-2",
+  "main_contract": "XERC20",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8c6bd546fb8b53fe371654a0e54d7a5bd484b319",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

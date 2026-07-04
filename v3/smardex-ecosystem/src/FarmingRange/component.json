@@ -1,0 +1,18 @@
+{
+  "component": "FarmingRange",
+  "main_contract": "FarmingRange",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

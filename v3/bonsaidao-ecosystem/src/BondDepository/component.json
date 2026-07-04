@@ -1,0 +1,18 @@
+{
+  "component": "BondDepository",
+  "main_contract": "BondDepository",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x457c4e6b4bcaaa06245b5b34080ba9578e7fcafa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

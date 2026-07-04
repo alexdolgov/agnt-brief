@@ -1,0 +1,34 @@
+{
+  "component": "MirrorMainnet_mNFLX_UST",
+  "main_contract": "MirrorMainnet_mNFLX_UST",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a6a553d28913c0308474b9c10f34146f972c7c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67d0904de3c9b3df44d5c1e11e83d0971d717c54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97487c1f352a8076a738fbdcd316a10f01046567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

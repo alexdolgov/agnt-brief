@@ -1,0 +1,18 @@
+{
+  "component": "DiamondSwapV2RouterFacet",
+  "main_contract": "DiamondSwapV2RouterFacet",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

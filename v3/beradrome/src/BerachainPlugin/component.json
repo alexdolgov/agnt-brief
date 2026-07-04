@@ -1,0 +1,18 @@
+{
+  "component": "BerachainPlugin",
+  "main_contract": "BerachainPlugin",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xac5922bccb16a0213684427f0412fcf8f9500171",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

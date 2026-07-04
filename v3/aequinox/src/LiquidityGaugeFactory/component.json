@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityGaugeFactory",
+  "main_contract": "LiquidityGaugeFactory",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fa1097a49f54420cc5895455345dc605ee8d3c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

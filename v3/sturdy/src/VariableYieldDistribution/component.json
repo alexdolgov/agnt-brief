@@ -1,0 +1,18 @@
+{
+  "component": "VariableYieldDistribution",
+  "main_contract": "VariableYieldDistribution",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

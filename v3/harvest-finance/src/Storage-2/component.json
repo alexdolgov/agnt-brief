@@ -1,0 +1,22 @@
+{
+  "component": "Storage-2",
+  "main_contract": "Storage",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/Haechi-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/PeckShield-Harvest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xef08a639cac2009fdad3773cc9f56d6a8feb1153",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

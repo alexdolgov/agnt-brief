@@ -1,0 +1,18 @@
+{
+  "component": "Router",
+  "main_contract": "Router",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x10f4a785f458bc144e3706575924889954946639",
+      "is_proxy": true,
+      "implementation_address": "0xd9276178f79631c3804f96b634c0250293ce8172",
+      "liveness": "live"
+    }
+  ]
+}

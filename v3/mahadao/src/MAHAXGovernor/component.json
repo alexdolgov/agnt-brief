@@ -1,0 +1,18 @@
+{
+  "component": "MAHAXGovernor",
+  "main_contract": "MAHAXGovernor",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fbd92ea11e23d959e1489a9abb84ae2e4778d31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

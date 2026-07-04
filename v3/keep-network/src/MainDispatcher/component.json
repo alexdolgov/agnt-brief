@@ -1,0 +1,18 @@
+{
+  "component": "MainDispatcher",
+  "main_contract": "MainDispatcher",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa64c6c3bbb731f95dd83f318f69a4050ece68479",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

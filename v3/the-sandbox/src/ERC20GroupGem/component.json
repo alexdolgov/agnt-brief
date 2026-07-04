@@ -1,0 +1,20 @@
+{
+  "component": "ERC20GroupGem",
+  "main_contract": "ERC20GroupGem",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://immunefi.com/bug-bounty/hashflow/information"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ff2611da386de427fc96a8073963619c5851ba5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

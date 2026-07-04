@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: -- WISE --
+
+pragma solidity =0.8.25;
+
+import "./CallOptionalReturn.sol";
+
+contract ApprovalHelper is CallOptionalReturn {
+
+    /**
+     * @dev
+     * Allows to execute safe approve for a token
+     */
+    function _safeApprove(
+        address _token,
+        address _spender,
+        uint256 _value
+    )
+        internal
+    {
+        if (_spender == address(0)) {
+            return;
+        }
+
+        _callOptionalReturn(
+            _token,
+            abi.encodeWithSelector(
+                IERC20.approve.selector,
+                _spender,
+                _value
+            )
+        );
+    }
+}

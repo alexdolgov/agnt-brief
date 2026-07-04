@@ -1,0 +1,113 @@
+{
+  "component": "ERC4626Ark",
+  "main_contract": "ERC4626Ark",
+  "source_file_count": 63,
+  "deployment_count": 12,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf",
+    "https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions",
+    "https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension",
+    "https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x165d1accc5c6326e7ee4deef75ac3ffc8ce4d79b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2d0afbf4f6bb188638e281c430eded5610f0af14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36d0501d07619274a398aff16007337041873a6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4b7752b3ee55c792784b5431c98d4bdb25d49728",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5093dae3bdcaf136d4dfd684e1fba87a86c21c14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5da1c579175dd284106ccac84d0f4e614a93cb66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a60336bc45ae0c9aabae13acc4bcc0cbd962e44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d3ef0c74050ba40cef2d2fff34b869aa1e2668f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78bfc6c846ff91f6029f0d94db1c455afbe27d78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca75e855a33acc44dda9d48578df5df7602b5c35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xccbd61b6c2fb58da5bbd8937ca25164ef29c1cc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb6d68d571fbef7d67827844dd800884ea9cc02e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

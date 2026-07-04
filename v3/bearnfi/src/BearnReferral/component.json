@@ -1,0 +1,18 @@
+{
+  "component": "BearnReferral",
+  "main_contract": "BearnReferral",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc9c0159644d3789eceb4f8cdfcf99c7605ae505c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

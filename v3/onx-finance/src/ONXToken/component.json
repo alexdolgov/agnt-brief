@@ -1,0 +1,18 @@
+{
+  "component": "ONXToken",
+  "main_contract": "ONXToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8438c3115d90b6d0b21be5718c773c7258dfcf39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

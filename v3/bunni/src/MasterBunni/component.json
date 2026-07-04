@@ -1,0 +1,18 @@
+{
+  "component": "MasterBunni",
+  "main_contract": "MasterBunni",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0000009856ebf1b73b431fb59f2a2f200e9e78b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

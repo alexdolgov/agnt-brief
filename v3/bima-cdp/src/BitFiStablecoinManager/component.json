@@ -1,0 +1,18 @@
+{
+  "component": "BitFiStablecoinManager",
+  "main_contract": "BitFiStablecoinManager",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

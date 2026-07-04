@@ -1,0 +1,18 @@
+{
+  "component": "DolomiteMigrator-2",
+  "main_contract": "DolomiteMigrator",
+  "source_file_count": 129,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32c327ae19e226e6643eace8bcec62cadcd0f990",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RadioStaking",
+  "main_contract": "RadioStaking",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1a55abd871a8a5aa973980ac5f4e7b9e732532c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

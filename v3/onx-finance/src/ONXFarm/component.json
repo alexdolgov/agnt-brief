@@ -1,0 +1,20 @@
+{
+  "component": "ONXFarm",
+  "main_contract": "ONXFarm",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://onx-finance.gitbook.io/docs/audits-and-contracts/audit.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x168f8469ac17dd39cd9a2c2ead647f814a488ce9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

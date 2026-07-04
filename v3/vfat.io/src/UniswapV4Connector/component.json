@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV4Connector",
+  "main_contract": "UniswapV4Connector",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x9b14c4dd71fc3b22a35c920abf320af475b3f557",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

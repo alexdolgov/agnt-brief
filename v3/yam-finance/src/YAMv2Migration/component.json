@@ -1,0 +1,18 @@
+{
+  "component": "YAMv2Migration",
+  "main_contract": "YAMv2Migration",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf1d7c9e4c57a5c1902f4a4ae2630d2da78ffb1c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

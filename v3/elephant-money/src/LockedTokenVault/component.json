@@ -1,0 +1,18 @@
+{
+  "component": "LockedTokenVault",
+  "main_contract": "LockedTokenVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x36b6731ec0992a1c042e9354f85e4f9a586110df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

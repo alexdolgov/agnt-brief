@@ -1,0 +1,18 @@
+{
+  "component": "PoolToken",
+  "main_contract": "PoolToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LandContributionCalculator",
+  "main_contract": "LandContributionCalculator",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7695b9ac52e49f1a8c4c554a072edb225eebfe70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

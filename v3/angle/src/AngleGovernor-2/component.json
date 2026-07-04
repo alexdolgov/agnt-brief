@@ -1,0 +1,18 @@
+{
+  "component": "AngleGovernor-2",
+  "main_contract": "AngleGovernor",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x748ba9cd5a5ddba5aba70a4ac861b2413dca4436",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "MintableBaseToken",
+  "main_contract": "MintableBaseToken",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0115ade88a4ae0fcdc55377832fe3a2736299fd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x357a3d90d3899b68f1ec861ffbeaf4923be436cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

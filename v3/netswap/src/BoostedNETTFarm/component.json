@@ -1,0 +1,18 @@
+{
+  "component": "BoostedNETTFarm",
+  "main_contract": "BoostedNETTFarm",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x0ecdc3d1747dc0ba37c9f7a0711501657136f553",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

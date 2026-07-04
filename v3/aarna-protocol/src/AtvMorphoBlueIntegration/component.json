@@ -1,0 +1,18 @@
+{
+  "component": "AtvMorphoBlueIntegration",
+  "main_contract": "AtvMorphoBlueIntegration",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3c29eff521e6f8f8488eb9dfe7c81386d83db9d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

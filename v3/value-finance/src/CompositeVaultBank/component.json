@@ -1,0 +1,18 @@
+{
+  "component": "CompositeVaultBank",
+  "main_contract": "CompositeVaultBank",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x713a5f7d7b48f8f4806f9fb4dc9c387c102767e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

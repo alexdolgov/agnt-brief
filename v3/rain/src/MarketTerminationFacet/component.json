@@ -1,0 +1,18 @@
+{
+  "component": "MarketTerminationFacet",
+  "main_contract": "MarketTerminationFacet",
+  "source_file_count": 78,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbe669656a3e300260a89be50c83a255bcd9ed052",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

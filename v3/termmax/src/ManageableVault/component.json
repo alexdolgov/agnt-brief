@@ -1,0 +1,18 @@
+{
+  "component": "ManageableVault",
+  "main_contract": "ManageableVault",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15e6fb060af7e12d6634685abfaf3b71300c29e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

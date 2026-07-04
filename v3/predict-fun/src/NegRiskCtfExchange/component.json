@@ -1,0 +1,26 @@
+{
+  "component": "NegRiskCtfExchange",
+  "main_contract": "NegRiskCtfExchange",
+  "source_file_count": 51,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x365fb81bd4a24d6303cd2f19c349de6894d8d58a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8a289d458f5a134ba40015085a8f50ffb681b41d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

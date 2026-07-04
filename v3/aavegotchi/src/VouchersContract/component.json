@@ -1,0 +1,18 @@
+{
+  "component": "VouchersContract",
+  "main_contract": "VouchersContract",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe54891774eed9277236bac10d82788aee0aed313",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

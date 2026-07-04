@@ -1,0 +1,18 @@
+{
+  "component": "FeeRecipientFactory",
+  "main_contract": "FeeRecipientFactory",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x75430c78a65bfb7dcdf89a3f0daa8da36402d6a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

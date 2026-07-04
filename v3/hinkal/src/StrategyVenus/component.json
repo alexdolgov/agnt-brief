@@ -1,0 +1,18 @@
+{
+  "component": "StrategyVenus",
+  "main_contract": "StrategyVenus",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb50bf83794c06382ad92decb6f56e10ec95cff27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

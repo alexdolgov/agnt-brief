@@ -1,0 +1,26 @@
+{
+  "component": "OstiumPrivatePriceUpKeep",
+  "main_contract": "OstiumPrivatePriceUpKeep",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7138b18123e767ced87a93fba43915af5a0c29c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xefa6a24d67dd423ab6a0923b65ef4ca6735e81dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

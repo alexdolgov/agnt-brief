@@ -1,0 +1,18 @@
+{
+  "component": "Create2Factory",
+  "main_contract": "Create2Factory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6521991a0bc180a5df7f42b27f4ee8f3b192ba62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

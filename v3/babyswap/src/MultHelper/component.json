@@ -1,0 +1,18 @@
+{
+  "component": "MultHelper",
+  "main_contract": "MultHelper",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbc81c169cf71daf17999970bd743c36f2b9274b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

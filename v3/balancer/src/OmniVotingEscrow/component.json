@@ -1,0 +1,18 @@
+{
+  "component": "OmniVotingEscrow",
+  "main_contract": "OmniVotingEscrow",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

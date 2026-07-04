@@ -1,0 +1,26 @@
+{
+  "component": "CustomRedStoneOracleAdapter",
+  "main_contract": "CustomRedStoneOracleAdapter",
+  "source_file_count": 73,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67c15923248baf96fb3944a2a326a237b4c21030",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb353fd79b7a52438e0c004fa4c2c9dc71e63b03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

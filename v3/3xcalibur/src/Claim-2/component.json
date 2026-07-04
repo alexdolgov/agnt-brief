@@ -1,0 +1,18 @@
+{
+  "component": "Claim-2",
+  "main_contract": "Claim",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xeb8feeb4589c64959d7cbf3c7ec377328ab68b11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

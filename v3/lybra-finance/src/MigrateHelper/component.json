@@ -1,0 +1,18 @@
+{
+  "component": "MigrateHelper",
+  "main_contract": "MigrateHelper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3e9de27d66f1d8ade2bee73334b76734e797cd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "AaMooAirdrop",
+  "main_contract": "AaMooAirdrop",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa7307f1a971f64dca8301a160f358bb97ec93700",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xc6a6de05a8ced6a6047a432a4bd7d2715d1d681c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

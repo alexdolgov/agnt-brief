@@ -1,0 +1,20 @@
+{
+  "component": "SortedTroves",
+  "main_contract": "SortedTroves",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoLiquityV2_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x46d0c9e51e05d6ff38b2a19d6310488f3112bf9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

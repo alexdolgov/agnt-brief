@@ -1,0 +1,18 @@
+{
+  "component": "onOFTSuccess",
+  "main_contract": "onOFTSuccess",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x664c61b11beeab27dfb366d75d2df193e6bf74fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

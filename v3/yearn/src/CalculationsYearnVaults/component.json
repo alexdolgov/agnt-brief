@@ -1,0 +1,18 @@
+{
+  "component": "CalculationsYearnVaults",
+  "main_contract": "CalculationsYearnVaults",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38477f2159638956d33e18951d98238a53b9aa3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

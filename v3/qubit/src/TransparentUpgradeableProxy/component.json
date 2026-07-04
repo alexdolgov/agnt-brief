@@ -1,0 +1,397 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 1,
+  "deployment_count": 48,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/PancakeBunny-finance/qubit-finance/blob/master/audits/PeckShield-Audit-Report-Qubit-v1.0.pdf",
+    "https://github.com/PancakeBunny-finance/qubit-finance/blob/master/audits/mound_qubit_xLP_audit_rev1.1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x078e9429645d2503c05a8027266c3c3a87f2283a",
+      "is_proxy": true,
+      "implementation_address": "0xf088b570fc56a35f9a2adc03e4f6b262a96e1038",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0cd79409ed80d8a153a3c729aa1f8b5d44a29282",
+      "is_proxy": true,
+      "implementation_address": "0x09b18d7e8004e41bb9e1c13ac4c396a0a2ff24df",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0e561b0e26f71fd1070de9ed2d2552a380fa5673",
+      "is_proxy": true,
+      "implementation_address": "0xe65a21425d599461646a335679307ecdd620ee62",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x102a8ea4cadf7cac60d0d4429e2b6046d4bc61f0",
+      "is_proxy": true,
+      "implementation_address": "0x1570cdb1ff330ffb4e256f66556287ee11ea22b2",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x14c746932bb83c98539d34740c0a4f3172361e2e",
+      "is_proxy": true,
+      "implementation_address": "0xe6e52b7c88e661828eae9d5bd77453b16309a608",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1771fe35b71bbf5ff7328ef5836e896850709f24",
+      "is_proxy": true,
+      "implementation_address": "0x3178d862b88d4364792d93232aeba049de8ec3c3",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1f21333152b48fe6b9bb65f0124e3ad45e617045",
+      "is_proxy": true,
+      "implementation_address": "0x098673cffb249f96c62a419e103ed2720a6a30de",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x20d88ca88201a63ebadb23fc98b509d3af0583df",
+      "is_proxy": true,
+      "implementation_address": "0xa6034fb36806f82d19efc2430b37ab72e5623448",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x21824518e7e443812586c96ab5b05e9f91831e06",
+      "is_proxy": true,
+      "implementation_address": "0x27923a2d237354546c9f3b142d1b976a0b45dfa6",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2a3d4c0d4bd915d2300f9c22df2479bed4168f3e",
+      "is_proxy": true,
+      "implementation_address": "0xe6e52b7c88e661828eae9d5bd77453b16309a608",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3178d862b88d4364792d93232aeba049de8ec3c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3cf1022aa4ba35c8aaa6983a6d17e8ec2cb9dc3b",
+      "is_proxy": true,
+      "implementation_address": "0xe6e52b7c88e661828eae9d5bd77453b16309a608",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3f3f63e9f4e8c4ffcdd0435640610e1491176863",
+      "is_proxy": true,
+      "implementation_address": "0x433877c7941d03d5d32a4b3b89a37c0735f50135",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x433877c7941d03d5d32a4b3b89a37c0735f50135",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x45ad4235cca6c82cf739b0a8cecdbc2032662411",
+      "is_proxy": true,
+      "implementation_address": "0x94710df7c7ba47e21f596cb9bb3de3bc60a5f2f2",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d8ae68fcae98bf93299548545933c0d273ba23a",
+      "is_proxy": true,
+      "implementation_address": "0xd88e328c305f541e2de6d3c85ed081653cd8a726",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5ba1b272d60f46371279ae7a1c13227fb93f99c1",
+      "is_proxy": true,
+      "implementation_address": "0x93cf51e87a13d38c394e4adbb7ddf000319d5996",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x696f4b72dc9596482d941ed7969bd646ba2ee4ba",
+      "is_proxy": true,
+      "implementation_address": "0xb8dfe3675f8ef9a4c29fe6e8259b4dafd66b390d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6a2444ab1ec15fad6cfd1c7e182a25ec40dfe5fa",
+      "is_proxy": true,
+      "implementation_address": "0x70e2320dfbd13ac570789194b1caedc77bd9cf7f",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6bd96a1f35d2f09a036b3f6d19c5730ca0b3599b",
+      "is_proxy": true,
+      "implementation_address": "0x93cf51e87a13d38c394e4adbb7ddf000319d5996",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x70e2320dfbd13ac570789194b1caedc77bd9cf7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x73e7d03471e2316617c1bcdedf3afe7c9207d638",
+      "is_proxy": true,
+      "implementation_address": "0x7e20edcfd5d37407a8a1e60af697974534da1400",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x77993fe0c8aa06bc057e0923fb5767bb1aabc7ae",
+      "is_proxy": true,
+      "implementation_address": "0x9d8914ad264ace9657144cad51f74c59faf8ecd3",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86c517fab216e3669e723b41794af0a2995506d2",
+      "is_proxy": true,
+      "implementation_address": "0x94710df7c7ba47e21f596cb9bb3de3bc60a5f2f2",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x910e2d86e10100878e5cbab19e31fad2cd206cad",
+      "is_proxy": true,
+      "implementation_address": "0x5383f35129a0fe1b5bd1e12a3b9522b9fe00f635",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93cf51e87a13d38c394e4adbb7ddf000319d5996",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x94710df7c7ba47e21f596cb9bb3de3bc60a5f2f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9535c1f26df97451671913f7aeda646c0f1eda85",
+      "is_proxy": true,
+      "implementation_address": "0xe6e52b7c88e661828eae9d5bd77453b16309a608",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9d8914ad264ace9657144cad51f74c59faf8ecd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9e980e2c702268e6b97400da1ab1ee6ccc238f52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa2897bede359e56f67d06f42c39869719e59becc",
+      "is_proxy": true,
+      "implementation_address": "0x93cf51e87a13d38c394e4adbb7ddf000319d5996",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4cabefd125ab646073fe66d711a329c5fb8bc8a",
+      "is_proxy": true,
+      "implementation_address": "0x71e7ade388220caee2cc1e5c253d7d69201ce158",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa6b1bb565e33b54ac58b4640237fdc91d87d3b61",
+      "is_proxy": true,
+      "implementation_address": "0x17466c6a359018dde50040c6d7367c8e67dcb09f",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbb925850340c973f806710d94f7834b0a98230fc",
+      "is_proxy": true,
+      "implementation_address": "0x5383f35129a0fe1b5bd1e12a3b9522b9fe00f635",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc6a080e22f87cb343f6944052f5acd327770f51b",
+      "is_proxy": true,
+      "implementation_address": "0x419d7ea7059109be0de9ecffacf844c211d01ac4",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd00c522d329b83aaebe15c0e58b52be0a2c5ce1b",
+      "is_proxy": true,
+      "implementation_address": "0xe6e52b7c88e661828eae9d5bd77453b16309a608",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd2522f2bd7badf48a5ef81490efbd5808aae9099",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4ca8b8beb412f7c5dc4456cffc203d518795203",
+      "is_proxy": true,
+      "implementation_address": "0x64b4e341179307d337f9c45c8dd3736c836d0629",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd88e328c305f541e2de6d3c85ed081653cd8a726",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdc746b0a57adc495c7ef5d9a64f5b4190be28736",
+      "is_proxy": true,
+      "implementation_address": "0x93cf51e87a13d38c394e4adbb7ddf000319d5996",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xded0abea700197832a5a86505a8e7af998be891c",
+      "is_proxy": true,
+      "implementation_address": "0xa0f054f9237fce957c3f57c212932e4f46cf7a9b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe2f1b47883e9155a88b6f83d4aea6c380b462108",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe611246cf22d450e2ace23b684fc8063e187110c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe6e52b7c88e661828eae9d5bd77453b16309a608",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xea34f39df510eaffb789d575c9aa800d61476256",
+      "is_proxy": true,
+      "implementation_address": "0x93cf51e87a13d38c394e4adbb7ddf000319d5996",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf671d7e1305cb489d3e5239239d16c1d6fd6f769",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf7bc36b33039ef0bf86f8d676138840a1581216c",
+      "is_proxy": true,
+      "implementation_address": "0xac46d27fd51215521f8fc53239689a67f7ce582d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfe83670a8b80a8702e0cd640d35dce9b9ec08d68",
+      "is_proxy": true,
+      "implementation_address": "0xdb126581f298a90fb23ca1433ef7791f7bbb8406",
+      "liveness": "inactive"
+    }
+  ]
+}

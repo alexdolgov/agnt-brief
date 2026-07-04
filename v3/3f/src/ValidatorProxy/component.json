@@ -1,0 +1,18 @@
+{
+  "component": "ValidatorProxy",
+  "main_contract": "ValidatorProxy",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0238247e71ad0ab272203af13baea72e99ee7c3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

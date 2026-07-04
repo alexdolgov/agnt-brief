@@ -1,0 +1,18 @@
+{
+  "component": "LiqClaimImplementation",
+  "main_contract": "LiqClaimImplementation",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x76e18dc70559cfc5857b7cd8c985e341e093a31f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

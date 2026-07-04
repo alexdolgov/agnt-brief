@@ -1,0 +1,18 @@
+{
+  "component": "Proxy-3",
+  "main_contract": "Proxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+      "is_proxy": true,
+      "implementation_address": "0x603bb6909be14f83282e03632280d91be7fb83b2",
+      "liveness": "live"
+    }
+  ]
+}

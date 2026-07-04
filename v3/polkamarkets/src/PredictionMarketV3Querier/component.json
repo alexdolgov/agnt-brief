@@ -1,0 +1,18 @@
+{
+  "component": "PredictionMarketV3Querier",
+  "main_contract": "PredictionMarketV3Querier",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x503c9f98398dc3433aba819bf3ec0b97e02b8d04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

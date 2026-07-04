@@ -1,0 +1,18 @@
+{
+  "component": "PrizeVault",
+  "main_contract": "PrizeVault",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "DexillaExchangeV5",
+  "main_contract": "DexillaExchangeV5",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x51c0378f913fe3b79580e54ae5fb8682b856b5b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb56f90d3038aad5b5e8de9be3008c7ccea2d6600",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

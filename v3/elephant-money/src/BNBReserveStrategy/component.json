@@ -1,0 +1,18 @@
+{
+  "component": "BNBReserveStrategy",
+  "main_contract": "BNBReserveStrategy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb74e9677bdfeabbf33614d468a74b502bc4ff897",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

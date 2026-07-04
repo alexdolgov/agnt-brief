@@ -1,0 +1,18 @@
+{
+  "component": "VaultManagerKeep3rMainAsset",
+  "main_contract": "VaultManagerKeep3rMainAsset",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x16c3ad40950acfb0910452d0c537f91570cc8f76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ReceiveUln302",
+  "main_contract": "ReceiveUln302",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xe1844c5d63a9543023008d332bd3d2e6f1fe1043",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

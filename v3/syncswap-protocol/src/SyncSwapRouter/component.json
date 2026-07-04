@@ -1,0 +1,21 @@
+{
+  "component": "SyncSwapRouter",
+  "main_contract": "SyncSwapRouter",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/syncswap/reports/blob/main/MetaScan_Report_core-contracts_202303161916.pdf",
+    "https://github.com/syncswap/reports/blob/main/MetaScan_Security_Analyzer_Report_core-contracts_202303161916.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x80e38291e06339d10aab483c65695d004dbd5c69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

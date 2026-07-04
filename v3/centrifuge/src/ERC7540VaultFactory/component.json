@@ -1,0 +1,34 @@
+{
+  "component": "ERC7540VaultFactory",
+  "main_contract": "ERC7540VaultFactory",
+  "source_file_count": 19,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32043a41f4be198c4f6590312f7a7b91624cab57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6f9dba3d3a3ab083bca60ef82784cf12a6ec24b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaffc66ed2964d80b2568e8e1b8c0e25449325fc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

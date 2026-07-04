@@ -1,0 +1,18 @@
+{
+  "component": "ComplifiStrategyMainnet_COMFI_WETH",
+  "main_contract": "ComplifiStrategyMainnet_COMFI_WETH",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69672c04601d62ce5f161a258ff24e03914b60a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

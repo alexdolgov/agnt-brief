@@ -1,0 +1,18 @@
+{
+  "component": "Treasury",
+  "main_contract": "Treasury",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x040d9d243a5fd7e864d6f5290a8aea50aa6dcadc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

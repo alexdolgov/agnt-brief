@@ -1,0 +1,18 @@
+{
+  "component": "StreamingFarm",
+  "main_contract": "StreamingFarm",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfd989d6e3244cfb5470597e7b93e4430cc29efe9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RegistryAdapterV2Vault",
+  "main_contract": "RegistryAdapterV2Vault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbcfca75ff12e2c1bb404c2c216dbf901be047690",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

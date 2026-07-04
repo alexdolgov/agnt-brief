@@ -1,0 +1,58 @@
+{
+  "component": "PancakeStrategyMainnet_ETH_BNB",
+  "main_contract": "PancakeStrategyMainnet_ETH_BNB",
+  "source_file_count": 21,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d82c4ee197ecb652e8088cc2890959f0afa96d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x577b5472a16068f107eb332c60f0d9b623366760",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8c4ef5fb428ea12bcf37218fc1380a8bbcfc9606",
+      "is_proxy": true,
+      "implementation_address": "0xa832926e3f6a3339ae68f70d76860d212959e0e7",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa832926e3f6a3339ae68f70d76860d212959e0e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xed274dd486bb9c6bac8bdd937160f6c9ca7102c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfbc74ee9d8b55c29a23fc6fbeef22661f06c2e58",
+      "is_proxy": true,
+      "implementation_address": "0xed274dd486bb9c6bac8bdd937160f6c9ca7102c2",
+      "liveness": "live"
+    }
+  ]
+}

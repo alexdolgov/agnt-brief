@@ -1,0 +1,18 @@
+{
+  "component": "ConfigurableRightsPool",
+  "main_contract": "ConfigurableRightsPool",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1156c30b08dbf16281c803eae0d52eee7652f10c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

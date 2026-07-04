@@ -1,0 +1,18 @@
+{
+  "component": "SubgraphService",
+  "main_contract": "SubgraphService",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80d1a23472a4ecfa484c95779d5ce855c24747cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

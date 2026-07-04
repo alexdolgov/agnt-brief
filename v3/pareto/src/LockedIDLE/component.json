@@ -1,0 +1,18 @@
+{
+  "component": "LockedIDLE",
+  "main_contract": "LockedIDLE",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x02682c933428e7a9b7527dd9385f1e0c5d4a4f48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

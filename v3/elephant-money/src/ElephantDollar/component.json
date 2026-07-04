@@ -1,0 +1,20 @@
+{
+  "component": "ElephantDollar",
+  "main_contract": "ElephantDollar",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/ElephantMoney"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdd325c38b12903b727d16961e61333f4871a70e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

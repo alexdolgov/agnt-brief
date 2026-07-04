@@ -1,0 +1,18 @@
+{
+  "component": "MooVault",
+  "main_contract": "MooVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0020eb7eb99575e6e951a151ea9e07afd9eb4ef3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

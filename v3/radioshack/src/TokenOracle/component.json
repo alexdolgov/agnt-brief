@@ -1,0 +1,18 @@
+{
+  "component": "TokenOracle",
+  "main_contract": "TokenOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x43bc055a39b40e39d64419f3bc1ae3bc5a3e2087",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

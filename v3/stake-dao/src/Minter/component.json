@@ -1,0 +1,18 @@
+{
+  "component": "Minter",
+  "main_contract": "Minter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0094ad026643994c8fb2136ec912d508b15fe0e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

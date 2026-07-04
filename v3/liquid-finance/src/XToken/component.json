@@ -1,0 +1,18 @@
+{
+  "component": "XToken",
+  "main_contract": "XToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x73700aecfc4621e112304b6edc5ba9e36d7743d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

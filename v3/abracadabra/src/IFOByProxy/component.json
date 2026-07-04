@@ -1,0 +1,18 @@
+{
+  "component": "IFOByProxy",
+  "main_contract": "IFOByProxy",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0366f1a242c37ca73c73834b7fcd4a66af1d5700",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Safe",
+  "main_contract": "Safe",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa1ed7ae99abeab2883a4a9486dbbb1c020a60691",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

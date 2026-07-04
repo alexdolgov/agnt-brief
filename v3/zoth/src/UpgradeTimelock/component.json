@@ -1,0 +1,18 @@
+{
+  "component": "UpgradeTimelock",
+  "main_contract": "UpgradeTimelock",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xff082079c027f01d61045b8eceafab92ddfd6856",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

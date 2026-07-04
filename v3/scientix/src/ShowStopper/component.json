@@ -1,0 +1,18 @@
+{
+  "component": "ShowStopper",
+  "main_contract": "ShowStopper",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc19c71a2fc7d67fb10ffe4e13dab3acfef798558",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

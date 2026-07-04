@@ -1,0 +1,26 @@
+{
+  "component": "AnzenGaugeControllerMainchainUpg",
+  "main_contract": "AnzenGaugeControllerMainchainUpg",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x62cb5b7a0d86a462644e16a311aa1d9ddeacc39a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9f6bc4537b36e57aa4ce769f519b52e42ca58eca",
+      "is_proxy": true,
+      "implementation_address": "0x62cb5b7a0d86a462644e16a311aa1d9ddeacc39a",
+      "liveness": "live"
+    }
+  ]
+}

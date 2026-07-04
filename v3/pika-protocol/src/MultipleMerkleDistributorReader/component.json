@@ -1,0 +1,18 @@
+{
+  "component": "MultipleMerkleDistributorReader",
+  "main_contract": "MultipleMerkleDistributorReader",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x464a53459ffc18bef5de2b4ecbba4166f71f693f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

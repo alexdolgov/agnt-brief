@@ -1,0 +1,18 @@
+{
+  "component": "nUSDCRouter",
+  "main_contract": "nUSDCRouter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x39bab416b63f8d7ffa1d487bd3768ba2dab3330c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

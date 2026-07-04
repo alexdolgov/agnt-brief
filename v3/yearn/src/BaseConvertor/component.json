@@ -1,0 +1,18 @@
+{
+  "component": "BaseConvertor",
+  "main_contract": "BaseConvertor",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa02459fe126130c4107a9b760d6eb43f2f2cbcb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

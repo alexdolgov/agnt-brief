@@ -1,0 +1,18 @@
+{
+  "component": "NftEarnErc20Pool",
+  "main_contract": "NftEarnErc20Pool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb3fbfef698799ce355887ae74c3f83c6e390b838",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

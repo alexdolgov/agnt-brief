@@ -1,0 +1,18 @@
+{
+  "component": "InterestDistributor",
+  "main_contract": "InterestDistributor",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x2e6fda4324237969f683db2f30379919d86290d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FlashToken",
+  "main_contract": "FlashToken",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5dfcd72f36f9784655f356a181084264b4e9c9f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

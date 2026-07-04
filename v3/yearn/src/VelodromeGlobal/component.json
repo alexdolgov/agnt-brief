@@ -1,0 +1,18 @@
+{
+  "component": "VelodromeGlobal",
+  "main_contract": "VelodromeGlobal",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2d12caffa46ab3b6c5ceb224620de8b4de3cdff1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

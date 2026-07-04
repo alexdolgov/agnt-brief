@@ -1,0 +1,18 @@
+{
+  "component": "RoyaleToken",
+  "main_contract": "RoyaleToken",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7eaf9c89037e4814dc0d9952ac7f888c784548db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

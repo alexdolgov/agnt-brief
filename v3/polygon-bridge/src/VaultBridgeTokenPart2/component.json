@@ -1,0 +1,18 @@
+{
+  "component": "VaultBridgeTokenPart2",
+  "main_contract": "VaultBridgeTokenPart2",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c8565f454f8239b854fe62c99b90b3fc9298e80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

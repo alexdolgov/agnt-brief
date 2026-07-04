@@ -1,0 +1,20 @@
+{
+  "component": "Staking-2",
+  "main_contract": "Staking",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://assets.railgun.org/docs/audits/2022-08-29%20Hashcloak.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9cfa13a191cc37ee5f76c2f070bfab8a3208f465",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

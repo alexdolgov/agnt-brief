@@ -1,0 +1,18 @@
+{
+  "component": "StakedCelo-5",
+  "main_contract": "StakedCelo",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x809b7ebabb2e4e1e4d1104b3b361b898ae632426",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

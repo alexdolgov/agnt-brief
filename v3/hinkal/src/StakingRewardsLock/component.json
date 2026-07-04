@@ -1,0 +1,18 @@
+{
+  "component": "StakingRewardsLock",
+  "main_contract": "StakingRewardsLock",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b471a71c3f6d4aadc7eb20aab7d730ae385e150",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

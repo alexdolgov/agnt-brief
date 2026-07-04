@@ -1,0 +1,18 @@
+{
+  "component": "sDola",
+  "main_contract": "sDola",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb45ad160634c528cc3d2926d9807104fa3157305",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

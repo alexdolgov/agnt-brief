@@ -1,0 +1,18 @@
+{
+  "component": "StrategyCakeSingle",
+  "main_contract": "StrategyCakeSingle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb13389789e00b302eed08ef85ab4616cb08a9b3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

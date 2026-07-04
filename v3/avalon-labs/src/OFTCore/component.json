@@ -1,0 +1,29 @@
+{
+  "component": "OFTCore",
+  "main_contract": "OFTCore",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/avalonfinancexyz/USDa-audit-blocksec/blob/main/blocksec_avalon_v1.1-signed.pdf",
+    "https://github.com/avalonfinancexyz/USDa-audit-blocksec/blob/main/blocksec_avalon_v1.3-signed.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b66aade1e9c062ff411bd47c44e0ad696d43bd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf828a73cb00072843241c6294ed778f26854fe5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

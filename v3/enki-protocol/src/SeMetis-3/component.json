@@ -1,0 +1,18 @@
+{
+  "component": "SeMetis-3",
+  "main_contract": "SeMetis",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x9efb0501019e536c70c77c22170f2eb07c420a91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "REDACTEDStaking",
+  "main_contract": "REDACTEDStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a5b3547200c92c560d5f9e514d47e2a78fed0ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

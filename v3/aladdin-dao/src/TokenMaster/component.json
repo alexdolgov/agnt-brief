@@ -1,0 +1,28 @@
+{
+  "component": "TokenMaster",
+  "main_contract": "TokenMaster",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://www.aladdin.club/audits/PeckShield-Audit-Report-AladdinDAO2-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ab3351b01b5b189d11711b4e6a6e2dd4ca29dba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff4446e9df1c8281ce1d42610c3bc0342f93e4d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

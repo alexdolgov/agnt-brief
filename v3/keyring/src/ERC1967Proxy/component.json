@@ -1,0 +1,18 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3a5dd1fdf3bedc3a601d0e9bb37bb6cc3b635bc6",
+      "is_proxy": true,
+      "implementation_address": "0xb0b5e2176e10b12d70e60e3a68738298a7dfe666",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SmallToken",
+  "main_contract": "SmallToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7fa38443e5caec9f8d9c3fc37cd1dae2a523d2f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

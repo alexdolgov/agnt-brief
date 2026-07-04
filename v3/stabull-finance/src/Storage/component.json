@@ -1,0 +1,18 @@
+{
+  "component": "Storage",
+  "main_contract": "Storage",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2d3bc5c8a2d1a313c64807b7225aab29b9c3a25b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

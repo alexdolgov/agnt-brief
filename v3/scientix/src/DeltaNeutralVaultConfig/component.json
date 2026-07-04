@@ -1,0 +1,18 @@
+{
+  "component": "DeltaNeutralVaultConfig",
+  "main_contract": "DeltaNeutralVaultConfig",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x30275f8980ade89febfd93023a4af67da0fe700f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

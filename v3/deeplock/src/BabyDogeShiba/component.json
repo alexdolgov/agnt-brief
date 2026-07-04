@@ -1,0 +1,18 @@
+{
+  "component": "BabyDogeShiba",
+  "main_contract": "BabyDogeShiba",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4caaaf84ec2b7106b1679aeb1d677e298adf58c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

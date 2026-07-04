@@ -1,0 +1,18 @@
+{
+  "component": "DpxStaker-2",
+  "main_contract": "DpxStaker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x38e517ab9edf86e8089633041ecb2e5db00715ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

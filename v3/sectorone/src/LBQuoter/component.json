@@ -1,0 +1,18 @@
+{
+  "component": "LBQuoter",
+  "main_contract": "LBQuoter",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x04682d6c443c48245a0eb52a0a015f9bfe45ed40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

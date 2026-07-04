@@ -1,0 +1,20 @@
+{
+  "component": "Invitation",
+  "main_contract": "Invitation",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ApeX-Protocol/core/blob/master/docs/audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82addfb22c87c921748d2bb7ef708cee5793fb7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

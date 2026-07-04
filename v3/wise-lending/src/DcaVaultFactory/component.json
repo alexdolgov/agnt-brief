@@ -1,0 +1,26 @@
+{
+  "component": "DcaVaultFactory",
+  "main_contract": "DcaVaultFactory",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bf14897ddb7774cd9059fb37b8bd6d6e6e3c966",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe2c74273c2e6f704d1c4cf4c6db0e315501f4ba5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

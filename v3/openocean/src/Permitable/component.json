@@ -1,0 +1,18 @@
+{
+  "component": "Permitable",
+  "main_contract": "Permitable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x018feadd83a8f2ad4d2508469a3a3215483c4377",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

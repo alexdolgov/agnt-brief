@@ -1,0 +1,18 @@
+{
+  "component": "UUPSImplementation-3",
+  "main_contract": "UUPSImplementation",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6dff970f25f7dcb049a9f9688ed8b537a528bc34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

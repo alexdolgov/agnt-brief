@@ -1,0 +1,18 @@
+{
+  "component": "ThUSDOFTAdapter",
+  "main_contract": "ThUSDOFTAdapter",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9aa9aa0530a6af70ee7bc47cf1240100f514b065",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

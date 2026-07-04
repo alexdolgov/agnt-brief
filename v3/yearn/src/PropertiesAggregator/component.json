@@ -1,0 +1,18 @@
+{
+  "component": "PropertiesAggregator",
+  "main_contract": "PropertiesAggregator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f870c0ee9ed1662b42d2d91781f1958f355e995",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

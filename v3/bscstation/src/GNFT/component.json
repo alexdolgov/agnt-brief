@@ -1,0 +1,18 @@
+{
+  "component": "GNFT",
+  "main_contract": "GNFT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xabfac7d0985e561a611c43976624bb955cef52d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

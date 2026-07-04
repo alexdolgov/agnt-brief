@@ -1,0 +1,18 @@
+{
+  "component": "USDaiQueuedDepositor",
+  "main_contract": "USDaiQueuedDepositor",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1038a3ca77886247bdf3342b2f8c174698f8e9d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "component": "PrivatePresaleV4MerkleTree",
+  "main_contract": "PrivatePresaleV4MerkleTree",
+  "source_file_count": 27,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://app.uplift.io/docs/Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2cae37d8e84311f9280fe46e60b9ab4f8d38f572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3f6e11024f3f6749463a7458bcdf9125bf972626",
+      "is_proxy": true,
+      "implementation_address": "0xeb0cffd9b601842067a3f0f8dd7e1a9169845749",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6ed89b5bf292e5a8d314a9ee1e498ba2932688f7",
+      "is_proxy": true,
+      "implementation_address": "0x2cae37d8e84311f9280fe46e60b9ab4f8d38f572",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x88c002b589b41f137fd7754c50f2fcbf094d7665",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeb0cffd9b601842067a3f0f8dd7e1a9169845749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfb2dd3e2dc751e92af413cf6c1b5bcc1d9d1737d",
+      "is_proxy": true,
+      "implementation_address": "0x88c002b589b41f137fd7754c50f2fcbf094d7665",
+      "liveness": "live"
+    }
+  ]
+}

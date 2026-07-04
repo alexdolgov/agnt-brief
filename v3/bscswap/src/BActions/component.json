@@ -1,0 +1,18 @@
+{
+  "component": "BActions",
+  "main_contract": "BActions",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcd984bcc5c690a077217e8ad39a98d276ebaaa31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

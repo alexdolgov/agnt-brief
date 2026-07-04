@@ -1,0 +1,50 @@
+{
+  "component": "MixedRouteQuoterV1",
+  "main_contract": "MixedRouteQuoterV1",
+  "source_file_count": 32,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6315dc8ffeaf4278f062a3a9137eeee54f3056a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7e4b995fc2a96f5f95cd5dcbc17f8090fcaa7406",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa4ac92a0f54f1a447c55a4082c90742f5e76df62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb81774eb1a7a44b60032a77766870a66de632777",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfaa0a0c8ba31f79dc621f0d6b10f95589a4301f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

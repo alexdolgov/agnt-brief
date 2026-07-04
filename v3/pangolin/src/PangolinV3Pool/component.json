@@ -1,0 +1,52 @@
+{
+  "component": "PangolinV3Pool",
+  "main_contract": "PangolinV3Pool",
+  "source_file_count": 29,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/pangolin"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x11476e10eb79ddffa6f2585be526d2bd840c3e20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1150403b19315615aad1638d9dd86cd866b2f456",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6dd86cfbd864647dc10703342dd5ea8643c2a2d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb1c039631628f4bacc57a6f8af878ed6136c0872",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfc2bb1598def8283ee36718f9adc0a721fb2e722",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

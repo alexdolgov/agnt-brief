@@ -1,0 +1,18 @@
+{
+  "component": "BondStatus",
+  "main_contract": "BondStatus",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x77d2e86c25792ed30d17e6fc8334a09f6347f5a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

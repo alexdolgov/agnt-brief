@@ -1,0 +1,26 @@
+{
+  "component": "PolyBetaSmartChef",
+  "main_contract": "PolyBetaSmartChef",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x324b97327237e467a82b28fca0a3f963f86024e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc2b95ee09d52b5cf7331abe44a355e9ef205c219",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

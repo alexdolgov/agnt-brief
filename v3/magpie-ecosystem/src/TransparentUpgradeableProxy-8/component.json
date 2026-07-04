@@ -1,0 +1,20 @@
+{
+  "component": "TransparentUpgradeableProxy-8",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 116,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Cakepie-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9a0530a81c83d3b0dae720bf91c9254fecc3bf5e",
+      "is_proxy": true,
+      "implementation_address": "0x523ceec027768c5b39b38fbc3d8c4e8226c83486",
+      "liveness": "live"
+    }
+  ]
+}

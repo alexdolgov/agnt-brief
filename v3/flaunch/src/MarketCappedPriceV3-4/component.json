@@ -1,0 +1,18 @@
+{
+  "component": "MarketCappedPriceV3-4",
+  "main_contract": "MarketCappedPriceV3",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf318e170d10a1f0d9b57211e908a7f081123e7f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

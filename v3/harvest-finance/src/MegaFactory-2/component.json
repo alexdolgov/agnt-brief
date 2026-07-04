@@ -1,0 +1,18 @@
+{
+  "component": "MegaFactory-2",
+  "main_contract": "MegaFactory",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x11cb7eda79c3b5f55b2bb501eb0cf2d605259cf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

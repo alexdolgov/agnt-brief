@@ -1,0 +1,18 @@
+{
+  "component": "TrancheWrapper",
+  "main_contract": "TrancheWrapper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf96f4b91c6d424fb34aa9a33855b5c8ed1fe66d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

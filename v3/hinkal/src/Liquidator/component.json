@@ -1,0 +1,18 @@
+{
+  "component": "Liquidator",
+  "main_contract": "Liquidator",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59bc9f79b3f91a90bfd286c9f8c4c8de143b1963",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

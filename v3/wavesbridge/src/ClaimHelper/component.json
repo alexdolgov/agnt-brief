@@ -1,0 +1,26 @@
+{
+  "component": "ClaimHelper",
+  "main_contract": "ClaimHelper",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1d1fc5d96f542042001d78e92ed60c3dae15a735",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbf47522c2b6d9e56195f5b6d4c7479be9b3ee3db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

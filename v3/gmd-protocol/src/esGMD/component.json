@@ -1,0 +1,18 @@
+{
+  "component": "esGMD",
+  "main_contract": "esGMD",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x49e050df648e9477c7545fe1779b940f879b787a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

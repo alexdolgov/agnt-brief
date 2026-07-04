@@ -1,0 +1,18 @@
+{
+  "component": "CLFeesVaultSetter",
+  "main_contract": "CLFeesVaultSetter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c3d25becef92a8bc5bb84b481435033c0946287",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

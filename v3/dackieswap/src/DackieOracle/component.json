@@ -1,0 +1,34 @@
+{
+  "component": "DackieOracle",
+  "main_contract": "DackieOracle",
+  "source_file_count": 6,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x40222f7ca890bef5b1b4464de4a84def6ce1f5b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x80d29a18603f452b1906cabf99a87c8650fe4744",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea1ec4d57f0213dfd0607451bf2f4b2f6cadd997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

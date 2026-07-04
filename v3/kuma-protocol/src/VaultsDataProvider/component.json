@@ -1,0 +1,34 @@
+{
+  "component": "VaultsDataProvider",
+  "main_contract": "VaultsDataProvider",
+  "source_file_count": 28,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x003b7bdc1adfa3fee002869081cbff4d73646d08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8a604e5c0ced41064354d055b84fc964aaa9101a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd0e68bdc9b6084d5675b88f7903cf6ff7f4ebabc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

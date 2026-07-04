@@ -1,0 +1,21 @@
+{
+  "component": "StrategyMorphoV1Vault",
+  "main_contract": "StrategyMorphoV1Vault",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.02.19-certik.pdf",
+    "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.05.21-spearbit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f5b386243c42c7f297f084269b8f85636ef5a61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

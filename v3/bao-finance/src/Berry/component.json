@@ -1,0 +1,18 @@
+{
+  "component": "Berry",
+  "main_contract": "Berry",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0cef58f80fad7904556fc7801e46a7618e3d5faa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

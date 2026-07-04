@@ -1,0 +1,18 @@
+{
+  "component": "PessimisticVelodromeLPOracle",
+  "main_contract": "PessimisticVelodromeLPOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x20cd9e17c3df2e82a852872b7792eecafa65b694",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

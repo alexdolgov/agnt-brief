@@ -1,0 +1,18 @@
+{
+  "component": "ETHRegistrarController",
+  "main_contract": "ETHRegistrarController",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xdb75db974b1f2bd3b5916d503036208064d18295",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

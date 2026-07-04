@@ -1,0 +1,18 @@
+{
+  "component": "RaffleV2",
+  "main_contract": "RaffleV2",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0000000000adead599c11a0c9a7475b67852c1d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

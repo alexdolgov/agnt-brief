@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraEternalFarming",
+  "main_contract": "AlgebraEternalFarming",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e862624eda92b8fe532c16253356d17dd70a337",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

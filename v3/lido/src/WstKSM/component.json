@@ -1,0 +1,18 @@
+{
+  "component": "WstKSM",
+  "main_contract": "WstKSM",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x3bfd113ad0329a7994a681236323fb16e16790e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

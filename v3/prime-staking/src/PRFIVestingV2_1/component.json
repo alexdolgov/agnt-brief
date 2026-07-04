@@ -1,0 +1,18 @@
+{
+  "component": "PRFIVestingV2_1",
+  "main_contract": "PRFIVestingV2_1",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0fe1842557dd15b9c040486e68677c2eb3f38040",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

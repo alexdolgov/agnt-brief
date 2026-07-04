@@ -1,0 +1,58 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_file_count": 68,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x342ecccb3f2b1947e3ebadd0b70001f494524105",
+      "is_proxy": true,
+      "implementation_address": "0x80a62b97f592c220d9c158d3836dc12e96555d64",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x432d512718806191b27c24466f88dafa2d1e1c6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x438be5cbfafdc89abf15b9565842cdbe43382db0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7f7186debd974d30250db4fd72117acfdef96027",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80a62b97f592c220d9c158d3836dc12e96555d64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc5888f8d3663a6c27e4a2767a20c0cf347b2bb0e",
+      "is_proxy": true,
+      "implementation_address": "0x432d512718806191b27c24466f88dafa2d1e1c6d",
+      "liveness": "inactive"
+    }
+  ]
+}

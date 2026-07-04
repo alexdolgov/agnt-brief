@@ -1,0 +1,18 @@
+{
+  "component": "g8keepToken-2",
+  "main_contract": "g8keepToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3c0b43867cd04fedfd6a95497e5ea7e3aff8ccae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

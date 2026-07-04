@@ -1,0 +1,18 @@
+{
+  "component": "DODOApproveProxy-2",
+  "main_contract": "DODOApproveProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8f3fb1f9148dc473453163bf31de1d830eb5c590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

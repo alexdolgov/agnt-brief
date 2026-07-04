@@ -1,0 +1,26 @@
+{
+  "component": "AirdropFlashLoan",
+  "main_contract": "AirdropFlashLoan",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b043958181e0e5282e5415c953b146024e1ec97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdcb004c4ab4b9c12e6bb4ed7992bb78218e96520",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OracleUniGeoDistribution",
+  "main_contract": "OracleUniGeoDistribution",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00000000b5cd5d1e09a5c1fb166d26d1cef0c33c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

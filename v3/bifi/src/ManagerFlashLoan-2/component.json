@@ -1,0 +1,20 @@
+{
+  "component": "ManagerFlashLoan-2",
+  "main_contract": "ManagerFlashLoan",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BiFi-X/blob/main/docs/bifrost_bifix_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdef0e8f0c3ab944a015554c83fbcf346d3c98f3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

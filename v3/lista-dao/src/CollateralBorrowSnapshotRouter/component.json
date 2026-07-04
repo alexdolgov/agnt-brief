@@ -1,0 +1,18 @@
+{
+  "component": "CollateralBorrowSnapshotRouter",
+  "main_contract": "CollateralBorrowSnapshotRouter",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x57371fb9311a7a0d6c712e9ee154dc8a718490f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

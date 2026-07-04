@@ -1,0 +1,18 @@
+{
+  "component": "Recipient-3",
+  "main_contract": "Recipient",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae86a3993d13c8d77ab77dbb8ccdb9b7bc18cd09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

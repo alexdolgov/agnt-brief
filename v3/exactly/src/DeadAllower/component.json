@@ -1,0 +1,18 @@
+{
+  "component": "DeadAllower",
+  "main_contract": "DeadAllower",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x136d84968d65ffdfef32a4fe07660adbf60cc9da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

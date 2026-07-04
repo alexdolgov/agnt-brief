@@ -1,0 +1,26 @@
+{
+  "component": "SimpleAirdropDAO",
+  "main_contract": "SimpleAirdropDAO",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8861d2a348128cb3edab258254e5265e0b9951c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa18c09298ab86bf54306c89db02b9135ca2141c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

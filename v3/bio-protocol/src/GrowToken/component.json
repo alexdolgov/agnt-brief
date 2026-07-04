@@ -1,0 +1,18 @@
+{
+  "component": "GrowToken",
+  "main_contract": "GrowToken",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x761a3557184cbc07b7493da0661c41177b2f97fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

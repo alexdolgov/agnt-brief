@@ -1,0 +1,18 @@
+{
+  "component": "BRegistry",
+  "main_contract": "BRegistry",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x04a174123de094a18a6ecd592c36e8385c4438bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

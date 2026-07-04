@@ -1,0 +1,18 @@
+{
+  "component": "KailuaGame-2",
+  "main_contract": "KailuaGame",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4be239c86364ed73fc244a5f50c8ccb101a492ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

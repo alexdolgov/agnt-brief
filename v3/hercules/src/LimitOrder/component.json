@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrder",
+  "main_contract": "LimitOrder",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

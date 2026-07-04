@@ -1,0 +1,18 @@
+{
+  "component": "DiamondFallback",
+  "main_contract": "DiamondFallback",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

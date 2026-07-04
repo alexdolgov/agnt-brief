@@ -1,0 +1,18 @@
+{
+  "component": "UpperBoundedInverseOracle",
+  "main_contract": "UpperBoundedInverseOracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xecabba5a41af5895e3202b87c026dcae5b32b076",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

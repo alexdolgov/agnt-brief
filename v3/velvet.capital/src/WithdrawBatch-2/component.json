@@ -1,0 +1,21 @@
+{
+  "component": "WithdrawBatch-2",
+  "main_contract": "WithdrawBatch",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Velvet-Capital/audits/blob/main/Smart_Contract_Audit_Velvet_Capital_Corev3_13072024-1.pdf",
+    "https://github.com/Velvet-Capital/audits/blob/main/report.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce58382f1b1de0f5cee7fa76a2aa9ef2b41d92cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

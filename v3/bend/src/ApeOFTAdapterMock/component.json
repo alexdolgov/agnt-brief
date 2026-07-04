@@ -1,0 +1,26 @@
+{
+  "component": "ApeOFTAdapterMock",
+  "main_contract": "ApeOFTAdapterMock",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e846fd4fd8772f8d9ff8a51a456f5b3049c893f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafa45c0e9d9438f8d26d289ad7775b1b191ac9ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

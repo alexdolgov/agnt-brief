@@ -1,0 +1,61 @@
+{
+  "component": "AccessControlManager",
+  "main_contract": "AccessControlManager",
+  "source_file_count": 7,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-10-08-cyfrin-strata-tranches-v2.0.pdf",
+    "https://github.com/GuardianAudits/Audits/blob/main/Strata/Strata_Tranches_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x040ef225f885fc1e0d3bd09f3acc02f707f8c74a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06e84a0fe0c4bc5c4ee3edb580b32eb4b88203e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d19e18ecac4ef332a0d5d6aa3a0f0f772605f60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ce1aa78a196af86b752b92a2daee047ab601c36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5d18db904fe7df2207c3f9491c5441143e44014",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd61990c228fa5d4223231bf90896899daad399b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

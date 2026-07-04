@@ -1,0 +1,18 @@
+{
+  "component": "HammerNFT",
+  "main_contract": "HammerNFT",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xca56af4bde480b3c177e1a4115189f261c2af034",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

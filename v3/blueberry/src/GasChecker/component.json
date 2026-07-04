@@ -1,0 +1,18 @@
+{
+  "component": "GasChecker",
+  "main_contract": "GasChecker",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd49845d0ca19a26055904d7ce0911a8e88dafc9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

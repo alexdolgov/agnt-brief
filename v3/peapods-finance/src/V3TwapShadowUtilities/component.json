@@ -1,0 +1,26 @@
+{
+  "component": "V3TwapShadowUtilities",
+  "main_contract": "V3TwapShadowUtilities",
+  "source_file_count": 10,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x041482b897b96eb4525da1449ec99978263a3f52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x694a3659cc5bb48c29924f395b8e2b3d30f36635",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

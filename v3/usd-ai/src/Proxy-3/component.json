@@ -1,0 +1,29 @@
+{
+  "component": "Proxy-3",
+  "main_contract": "Proxy",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://1324162391-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyihtTguEhuWiLBn09qwl%2Fuploads%2FRL8zlXoxnJGyCceapFfD%2Fktl%20Audit%20Report%20(03-12-2026%20part%201).pdf",
+    "https://1324162391-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyihtTguEhuWiLBn09qwl%2Fuploads%2Fzl2jDTZL4Akw5GuHXiKg%2Fktl%20Audit%20Report%20(03-12-2026%20part%202).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c502123de42aae8e38ef4e26a2961bea295471e",
+      "is_proxy": true,
+      "implementation_address": "0xb0a5fba7b591c6aee0cf66db8485d46e395d6b62",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d2d2d20962f2468566f4d1a4ddeb482915c4d4a",
+      "is_proxy": true,
+      "implementation_address": "0x188fd99b71b40b0f044b07423a975a447ad9bc49",
+      "liveness": "live"
+    }
+  ]
+}

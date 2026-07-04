@@ -1,0 +1,18 @@
+{
+  "component": "Operator",
+  "main_contract": "Operator",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c38d0e726b6c86f64c1b281348e725973542043",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

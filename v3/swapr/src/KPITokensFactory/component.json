@@ -1,0 +1,18 @@
+{
+  "component": "KPITokensFactory",
+  "main_contract": "KPITokensFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe9c1c9722bbe9e36489e16c095641b9c803ceacb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

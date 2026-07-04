@@ -1,0 +1,18 @@
+{
+  "component": "BRAG",
+  "main_contract": "BRAG",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2f4db7787f16cbc7d5e23acdfc8b450243edd26b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CreditLine-2",
+  "main_contract": "CreditLine",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4df1e7ffb382f79736ca565f378f783678d995d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

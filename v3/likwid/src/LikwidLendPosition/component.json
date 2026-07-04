@@ -1,0 +1,21 @@
+{
+  "component": "LikwidLendPosition",
+  "main_contract": "LikwidLendPosition",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/likwid-fi/likwid-margin/blob/main/audits/2025_11_13_Zenith_Likwid_V2_2_Audit_Report.pdf",
+    "https://github.com/likwid-fi/likwid-margin/blob/main/audits/2026_02_05_Sherlock_Likwid_V2_2_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xce91db5947228bba595c3cac49eb24053a06618e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

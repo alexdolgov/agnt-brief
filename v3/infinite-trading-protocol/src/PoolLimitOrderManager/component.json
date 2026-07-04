@@ -1,0 +1,18 @@
+{
+  "component": "PoolLimitOrderManager",
+  "main_contract": "PoolLimitOrderManager",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1394f8ccebbfd9e63ff37b890c0a863baae0b6db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

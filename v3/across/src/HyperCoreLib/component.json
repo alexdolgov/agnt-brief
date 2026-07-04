@@ -1,0 +1,18 @@
+{
+  "component": "HyperCoreLib",
+  "main_contract": "HyperCoreLib",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xe56dd9c3c2477edb4839edbce80fff6f26ad2459",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

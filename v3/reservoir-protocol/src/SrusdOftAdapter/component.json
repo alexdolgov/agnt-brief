@@ -1,0 +1,18 @@
+{
+  "component": "SrusdOftAdapter",
+  "main_contract": "SrusdOftAdapter",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x316cd39632cac4f4cdfc21757c4500fe12f64514",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

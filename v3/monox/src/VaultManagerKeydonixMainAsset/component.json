@@ -1,0 +1,26 @@
+{
+  "component": "VaultManagerKeydonixMainAsset",
+  "main_contract": "VaultManagerKeydonixMainAsset",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78727a77028d9130d2772713d570780231e64ecf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f50d78062304b6f523f20e9baca8f3c72197424",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+# 40-acres — deployments
+
+386 verified deployment(s) across 159 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| avalanche | `0x00409b267f4573f601cbcdf3b9f0b27a263a4eea` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0x015f051b1fe0df7693a9dc348bc48c608aa037b3` | DLMMRewarder | impl | live | no |
+| avalanche | `0x01a8a00a6fc8106b94f84aabaef689fd0d77271a` | AlgebraEternalFarming | impl | live | no |
+| avalanche | `0x0253d249a5e16269230fa81a58c104f5aafee4f1` | AccessHub | impl | live | no |
+| avalanche | `0x04e1dee021cd12bba022a72806441b43d8212fec` | RouterV2 | impl | live | no |
+| avalanche | `0x06e05378a63a904afe03a6723cd1cbd9ec118e1b` | AccessHubPhar | impl | live | no |
+| avalanche | `0x07055a7f85e85cace75f6e0f98a56ca717d4adfc` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x0811251d17eb692e644a3850d5503544d3e2ebbe` | AccessHub | impl | live | no |
+| avalanche | `0x088e2efad10f3262e745c6c01f661112f353bb64` | FeeCollector | impl | live | no |
+| avalanche | `0x094f0fd0175cb751b2b1c2d9f4f013e1cf01b598` | PharaohLoanV2 | impl | live | no |
+| avalanche | `0x0a5261faf3a3d717b7d8f6e7f80654a2de8d89e0` | XPharaohLoan | impl | live | no |
+| avalanche | `0x0b4478e810d48b5882d4019d435a2f864bab4f39` | RamsesV3PositionManager | proxy | live | no |
+| avalanche | `0x0eb1e103116b8ec5f13a72f6943440340c4840dd` | GenesisPoolManager | impl | unknown | no |
+| avalanche | `0x0ec20bd81b95334c9956e3eccaa04c103ebbf384` | BlackholeClaimingFacet | impl | live | no |
+| avalanche | `0x13a466998ce03db73abc2d4df3bbd845ed1f28e7` | Pharaoh | impl | live | no |
+| avalanche | `0x150c52c1e8707c2e4372974e352bbf20bafaf08d` | XPharaohFacet | impl | live | no |
+| avalanche | `0x15c50acd86be6be893ab57cf4f47d0da7e24d292` | GaugeV3 | impl | live | no |
+| avalanche | `0x16193d68daeac524b4eb6e0981d732fa00e54fc9` | XPharaohLoan | impl | live | no |
+| avalanche | `0x19ff41165ad2f6493a8a4f3e9904ae0815d7fcd8` | GaugeV3 | impl | live | no |
+| avalanche | `0x1a4203a52ceed651d30cb038698382a8905d6cfb` | Context | impl | live | no |
+| avalanche | `0x1b0951316c8881b23f8035296dc033963a7a3802` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x1d67c7729135583f2ee11fd34c7921a8ae500e6f` | VotingEscrowSplitHelper | impl | live | no |
+| avalanche | `0x1e1e2a861205767d69a51edf03cf5e3a278437bc` | FeeCollector | impl | live | no |
+| avalanche | `0x20f0c0c7a861ada21fd465563afb7529dfb41bc7` | BlackholeRewardsProcessingFacet-2 | impl | live | no |
+| avalanche | `0x20fbab74a0da4ead66a988b4a7013f2b06b2ceef` | XPharaohLoan | impl | live | no |
+| avalanche | `0x21b48fa22f69ece450a687abbf32a82fe0f3c35e` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x2271e0e4231d3dc2b6417327d91e3b59f4da9cdd` | RewardsConfigFacet | impl | live | no |
+| avalanche | `0x227fabb4db11cc082ef8cd083cff5d034d4de16f` | FeeRecipientFactory | impl | unknown | no |
+| avalanche | `0x2334338da0bb192dcfc33356f5d1cc6bc03adc02` | FeeDiscountRegistry | impl | live | no |
+| avalanche | `0x24914636dab84236cb7d4394cd25d15ec6e3bd50` | CollateralFacet-2 | impl | live | no |
+| avalanche | `0x26e9dbe75aed331e41272bece932ff1b48926ca9` | P33 | impl | live | no |
+| avalanche | `0x272cd330263b85b6c1693c78ed1ad2a972ea4bfb` | AccessHub | impl | live | no |
+| avalanche | `0x275e246c0f2a76a5ba4b3e13198ef92381d82cb5` | SecurityRegistry | impl | live | no |
+| avalanche | `0x282a4fae014862b43535620b4ea81f8ed4c096ec` | AccessHubPhar | impl | live | no |
+| avalanche | `0x2c34c800f4bcad6b733fe08d837abb8c61486b8b` | VotingFacet-2 | impl | live | no |
+| avalanche | `0x2d7182dea0b0f1a5167f0a21e6fd5bf537dec4da` | MigrationFacet | impl | live | no |
+| avalanche | `0x2e92345305cf7791a8af02d80a1af16d4b44b8b3` | XPharaohLegacyClaimFacet | impl | live | no |
+| avalanche | `0x31a8a3f4ca7b74b098d48a47aaa3f03a49925d35` | Voter-4 | impl | live | no |
+| avalanche | `0x3265d621c7d993151c8eb2acd4902cda0499a8a0` | MixedRouteQuoterV1 | impl | live | no |
+| avalanche | `0x34098b39ec2e2c1a8f815bb8fa840d0d389afe1c` | PairGenerator | impl | live | no |
+| avalanche | `0x34f233f868cdb42446a18562710ee705d66f846b` | VoteModule | impl | live | no |
+| avalanche | `0x389c1572cfb32c8d3eeaed70927d2472086d8163` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x3935f7e11e33e676b6108f6e86ab8578d8e32d43` | BlackholePairAPIV2 | impl | unknown | no |
+| avalanche | `0x3a7aeb3c33922073f4f23207d0ff247e9694a100` | TickLens | impl | live | no |
+| avalanche | `0x3c7645944bbcf1ec21cc4a2c0938910441349a5c` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x3e182bcf14be6142b9217847ec1112e3c39eb689` | QuoterV2 | impl | live | no |
+| avalanche | `0x3f3af1ba2cdceeb618fb57de98d1dbb6483c9e4f` | AccessHubPhar | impl | live | no |
+| avalanche | `0x3fed017ec0f5517cdf2e8a9a4156c64d74252146` | NonfungiblePositionManager | impl | live | no |
+| avalanche | `0x427c8b3de052ea4bbf0fb9c08b4f998fd4e071b7` | LendingFacet | impl | live | no |
+| avalanche | `0x4694123cbe1d3d1f72ccc4d68122ddfb5a519e13` | NFTDescriptor | impl | live | no |
+| avalanche | `0x47a2c15eeeef5018a3e13caf987b235d702c8825` | AutoVault | impl | live | no |
+| avalanche | `0x49128053ae71470a6670895bb932ce19384f3e96` | MockPoolDeployer | impl | live | no |
+| avalanche | `0x4bb1932724c9276992cd02de1742779e00ab5586` | AutoVault | impl | live | no |
+| avalanche | `0x5122f5154df20e5f29df53e633ce1ac5b6623558` | BlackholeLoanV2 | proxy | live | no |
+| avalanche | `0x512eb749541b7cf294be882d636218c84a5e9e5f` | AlgebraFactory | impl | live | no |
+| avalanche | `0x51d6ab0a20a39eb87f10c008910da956349b3d4b` | AutoVault | impl | live | no |
+| avalanche | `0x52d43c377e498980135c8f2e858f120a18ea96c2` | PortfolioFactory | impl | live | no |
+| avalanche | `0x54c269cf9712ab099ae1668b031f719156206ad9` | PharaohLoanV2Native | impl | live | no |
+| avalanche | `0x580be59a0461eae3414352c0abd88e485a294bfc` | AlgebraCustomPoolEntryPoint | impl | live | no |
+| avalanche | `0x5acc35397d2ce81ac54a4b1c6d9e1fb29f8ec6c6` | Payments | impl | live | no |
+| avalanche | `0x5af551ba1bf743978b42d4e133bff8b6231176ff` | BasePluginV3Factory | impl | live | no |
+| avalanche | `0x5af7fad6e813fb4637e5cfacc7dde6c5445125ac` | FeeDistributorFactory | impl | unknown | no |
+| avalanche | `0x5b60c84fd034b6c9040456a93ddb44f23aa9f099` | XPharaohLoan | impl | live | no |
+| avalanche | `0x5ce0a3e1c1e306595c68e22f7d140eeaa818ea8e` | XPharaohLoan | impl | live | no |
+| avalanche | `0x639c4ba572ed98180b2ccc306b25f2325bfb2c89` | AccessHub | impl | live | no |
+| avalanche | `0x63f44fbd19caeb8e4b86078272228c9504499a1c` | XPharaohFacet | impl | live | no |
+| avalanche | `0x640d2ef09d550f4c79bf897412876d7b4a8867e6` | P33 | impl | live | no |
+| avalanche | `0x64963852966aa7ff2258434f361ec933bf0eaf03` | AutomatedFeeNotifier | impl | live | no |
+| avalanche | `0x684b340014556d15d754b812ef7d1b134b42289c` | DLMMFeeCollector | impl | live | no |
+| avalanche | `0x693ab037675b056730576892c214015990440cdb` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x69fc8b02a6e80b554ec8a2223ad331f22c16ab61` | MummyFacet | impl | live | no |
+| avalanche | `0x6a4113ed0915bcf5e48e758e8f4cebffc07c66f9` | RamsesV3PoolDeployer | impl | live | no |
+| avalanche | `0x6a8591adb2ca2427021906e223e2b5de20106aa9` | FeeDiscountRegistry | impl | live | no |
+| avalanche | `0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5` | GaugeOwner | impl | unknown | no |
+| avalanche | `0x6c6fc88d8c06c7e29225dd00d422280e20a6eeb0` | AccessHub | impl | live | no |
+| avalanche | `0x6cdf7c1afaf943daee52b214506c3a2422cee747` | XPharaohFacet | impl | live | no |
+| avalanche | `0x6f17db548544a19162e82b20c67abee99960a89a` | NonfungibleTokenPositionDescriptor | impl | live | no |
+| avalanche | `0x6f61a2c910192574cc791136e5f19f6e7b74947a` | XPharaohLoan | impl | live | no |
+| avalanche | `0x74544e33aad327c3f6d01028fdba8cacb1e52ed0` | BasePluginV3Factory | impl | live | no |
+| avalanche | `0x751b7152aa11e39216cd00c0f65311efdf1a65ff` | PermissionsRegistry | impl | live | no |
+| avalanche | `0x79be5a8e29b586c7a9aeeeda3ac7183f0932e6d2` | XPharaohFacet | impl | live | no |
+| avalanche | `0x7a88c46740fdfe446dd6ad97cc0a94716848d214` | Quoter | impl | live | no |
+| avalanche | `0x7c7bd86baf240db3dbcc3f7a22b35c5baa83ba28` | RewardsDistributor-4 | impl | live | no |
+| avalanche | `0x7d51ed4c4f3282704e3ac8038ff58d2bd4fb37ab` | AutomatedFeeNotifier | impl | live | no |
+| avalanche | `0x82a411555f4262769077cb9b8775c897a1185222` | FeeCollector | impl | live | no |
+| avalanche | `0x87d0f8c19a891c13c85185d8ba71ab1a419bde0c` | BlackholeRebaseHelper | impl | live | no |
+| avalanche | `0x88451ac528cdf5ca4a853407db494455ff0c91e6` | AccessHub | impl | live | no |
+| avalanche | `0x8a180086d7be2cd51a102461043b29267e7a3941` | XPharaohFacet | impl | live | no |
+| avalanche | `0x8c2207c82b54d37b0d3ceb80a50a3392aeb8888b` | BridgeFeeWrapper | impl | unknown | no |
+| avalanche | `0x906b9802271e3752e6d6e6f5813430c71881dfdb` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0x90e222a65237b5881148306b21e173e62e1c4bb4` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x93c601c31145185787dab3617d6b419894dc0b8f` | GaugeManager | impl | live | no |
+| avalanche | `0x93d12defa81c589a6fc1b8750fdfa29d9182cc55` | BlackholeLoan | impl | live | no |
+| avalanche | `0x948050b36cd7374125571be15f0d2326cf9d50df` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x94bc4862ecf60138b781e98ab28c3ad3e25abb86` | XPharaohLoan | impl | live | no |
+| avalanche | `0x99f630a4c93777033775d762403c424fb77a95d1` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0x9b2441037e286d5bf9456a3be7b5273fe28dba1e` | AlgebraPoolDeployer | impl | live | no |
+| avalanche | `0x9bca68d9c613dc9b07b2727c28b5ce46204943de` | FacetRegistry | impl | live | no |
+| avalanche | `0x9c70bedd11cf874f07b1bd9c29e3e41f9f248f5c` | AlgebraEternalFarming | impl | live | no |
+| avalanche | `0x9cee04bdce127da7e448a333f006defb3d5e38cc` | Router-4 | impl | live | no |
+| avalanche | `0x9daea9462ff3dd535643e07be587517a9790acc5` | SwapRouter | impl | live | no |
+| avalanche | `0x9df9457d5c55b4c880dc86c67ae323b00b5be48e` | AlgebraInterfaceMulticall | impl | live | no |
+| avalanche | `0x9e89a0c489eea24db63749b14c8421d433727e01` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0x9eed160d7d8253dec1a2a512e504de5e7ff3c111` | RouterV2 | impl | live | no |
+| avalanche | `0xa053ca9c51524d67e5e435c62031ad2031e09a22` | PairBootstrapper | impl | live | no |
+| avalanche | `0xa1fa4530999bcad5347fa687390acaefa87f0947` | XPharaohLoan | impl | live | no |
+| avalanche | `0xa2ab122fac20ee2bf2db97a7dd55160928059513` | DLMMRewarder | impl | live | no |
+| avalanche | `0xa44cb7bdb2e1e874bbdc55e5e762a6de6f299aeb` | AutoVault | impl | live | no |
+| avalanche | `0xa47aa2f246f62e2bdcb674bec699e8218f466de0` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0xa47ad2c95fae476a73b85a355a5855adb4b3a449` | FarmingCenter | impl | live | no |
+| avalanche | `0xa589c80e228df3671c4fa3d02cdf000e05b2bd8d` | PairBootstrapper | impl | unknown | no |
+| avalanche | `0xa738e42029cae5fae852009e993204e09ae5ea28` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0xa9ad26a26a07295db1310e7a35d513f6c2da14b0` | PharaohLoanV2 | impl | live | no |
+| avalanche | `0xa9bf9027ecb4a71e6c274c83afdb4e1a488660f0` | AccessHub | impl | live | no |
+| avalanche | `0xaa589d1740671c8f0e6ee89a0ac91fe9c45c92ae` | AccessHub | impl | live | no |
+| avalanche | `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f` | TransparentUpgradeableProxy | proxy | live | no |
+| avalanche | `0xab559850a251a6ebdba31076019ccf44165309d8` | MevModule | impl | live | no |
+| avalanche | `0xabfc48e8bed7b26762745f3139555f320119709d` | SwapRouter-2 | impl | live | no |
+| avalanche | `0xacdf0686999bc7fa57776d8c93153dc2dd3bcb9b` | XPharaohLoan | impl | live | no |
+| avalanche | `0xadae75447d112cfc401c952744de3e6d32456465` | Quoter-2 | impl | live | no |
+| avalanche | `0xae6e5c62328ade73ceefd42228528b70c8157d0d` | RamsesV3Factory | impl | live | no |
+| avalanche | `0xaecb52909176a46e2b3114dc1e9c4ddf4ef50586` | GaugeFactory-2 | impl | unknown | no |
+| avalanche | `0xaf9440faeab0026dc00f1461be1c8fbd11d4c011` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0xb3629c89ed9cb172a3fba66dfdf8c06a85b35de9` | veNFTAPI | impl | live | no |
+| avalanche | `0xb6180a0f879c675d4eafeaafbd2d876578c40fe5` | AlgebraEternalFarming | impl | live | no |
+| avalanche | `0xb7297301b7cc659bb96d51754643a0df6eea2138` | QuoterV2-2 | impl | live | no |
+| avalanche | `0xbbe734f62b31ff396e5a1210e3f22b6e891ebb32` | AutomatedFeeNotifier | impl | live | no |
+| avalanche | `0xbf5b19925b9bc2d3966b4193544a8644ff9b9d70` | NonfungiblePositionManager | impl | live | no |
+| avalanche | `0xbfb7eacc2fbbc9d4d7e54f1afcefae6e35283d7e` | XPharaohLoan | impl | live | no |
+| avalanche | `0xc2a1044f8f67e65fed15644a76725b2637fc9eba` | AccessHub | impl | live | no |
+| avalanche | `0xc7d6b83e330b131fa8b9265d933eb0b755ea16ce` | XPharaohLoan | impl | live | no |
+| avalanche | `0xc8b8fcbdb5c019d7802ffb0b39603395d7d3915c` | SwapRouter | impl | live | no |
+| avalanche | `0xc932a4e2503316b083deb4f5dcef3720dcff7b0f` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0xc9651a35369428b678bc55eee50f07ebacc088da` | PharaohLoanV2 | impl | live | no |
+| avalanche | `0xcbf15ea9f0e44d563ed07d6496ceba01790932ab` | FarmingCenter | impl | live | no |
+| avalanche | `0xcd94a87696fac69edae3a70fe5725307ae1c43f6` | Black | impl | live | no |
+| avalanche | `0xcda4195a11a9497114dea8360f8bf8ff8122ca80` | P33 | impl | live | no |
+| avalanche | `0xcecc64211f1ed70a71bd47eb656f7067c1f45541` | FarmingCenter | impl | live | no |
+| avalanche | `0xcfeda4f6db023b18c370646f686f99697948a253` | XPharaohLoan | impl | live | no |
+| avalanche | `0xd23f124bbbc958bcddc0ce624042b48154222fde` | Minter-4 | impl | live | no |
+| avalanche | `0xd2fe840c24e1e4b217909bd3f88fed6bf3537b02` | SecurityRegistry | impl | live | no |
+| avalanche | `0xd57ec4a690dfd7ca1b6295aa726f6f00acd057e6` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0xd68b9cf89ffc4432977bdb3f9e2c02148d9636e1` | RouterHelperZap | impl | live | no |
+| avalanche | `0xd763061cc3015642ca104496107bc69944c74bed` | ProxyAdmin | impl | live | no |
+| avalanche | `0xd8ee2b6b71949ebcdd33e50546b163cf8e4d4bd8` | P33 | impl | live | no |
+| avalanche | `0xd9a63c24f69f015ebe3ff61817645dc7cc5906b1` | GaugeFactory-3 | impl | live | no |
+| avalanche | `0xdb6e78736add8c85b7b6f8030d3ab836148a59ac` | BlackholeVotingEscrowFacet-2 | impl | live | no |
+| avalanche | `0xdb73614c843ee0723cdbbe801a19a680590da90e` | GaugeV3 | impl | live | no |
+| avalanche | `0xdc0b5db6f5f957ad0ac5e0af8a2c084077d079b3` | AlgebraVaultFactory | impl | unknown | no |
+| avalanche | `0xdd1427afb8479ed6eed025638bf0c4d95bac522c` | XPharaohLoan | impl | live | no |
+| avalanche | `0xdd35894a790ee9625c3aad49e8bd14e135f3f946` | GaugeOwner | impl | unknown | no |
+| avalanche | `0xddae0aa4e93be4936c1bcc12d3001b35c75fef40` | DLMMQuoter | impl | live | no |
+| avalanche | `0xdeb50ac7a0a03332626b3c45eb20e7310653260f` | GenesisPoolFactory | impl | unknown | no |
+| avalanche | `0xe13fcd0cc5ef3db6d4304c85d5b2879aeb2dd86e` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0xe66aae9cb5ab27ec6662c0ec9b9b28764d4a822e` | TickLens-2 | impl | live | no |
+| avalanche | `0xe7187f0d21e1039e8fd8346aa4f9a7c9f99975c4` | MevModule | proxy | live | no |
+| avalanche | `0xe8164ea89665dab7a553e667f81f30cfda736b9a` | XPhar | impl | live | no |
+| avalanche | `0xeac562811cc6abdbb2c9ee88719eca4ee79ad763` | VotingEscrow-4 | impl | live | no |
+| avalanche | `0xeb480050b016f6c6d45203d2346b68bddda23d4d` | DLMMFactory | impl | live | no |
+| avalanche | `0xec8962784e464e32ed6a97c59850fe36bf5fdc81` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0xecbbc09d3f52a2133bed0304ed0dcdf4b67863d3` | PluginV3Deployer | impl | live | no |
+| avalanche | `0xed2b3e3df66da913320e9c233a43a44d31ed59bb` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0xef74752d36e5f54b1a1f9f14e3c9845d74f38d49` | XPharaohFacet | impl | live | no |
+| avalanche | `0xefc098ca1bba02104590cda910f7f9d494bde662` | PluginV3Deployer | impl | live | no |
+| avalanche | `0xf1996b044a8572a6eb8d96540d479f91a3120ab7` | DLMMRewarder | impl | live | no |
+| avalanche | `0xf2593b9efc323e19551eb69e9b76b6e5c05984b1` | RamsesTreasuryHelper | impl | live | no |
+| avalanche | `0xf41253c1258a7a3c291e695158267b173c26d710` | DLMMPool | impl | live | no |
+| avalanche | `0xf4172a5aeaf5dafa21b63f763f6b69a61d5dc563` | PharaohLoanV2 | impl | live | no |
+| avalanche | `0xf4cac243e10943aeea911ee4e43e05042b488d89` | BlackholeLoanV2 | impl | live | no |
+| avalanche | `0xf91d96f66e0fc9ee9f0182803b9c546b82ec3485` | NFTDescriptor | impl | live | no |
+| avalanche | `0xfd1c727d8a2259493c66899f478ebfea41329545` | NonfungiblePositionManager | impl | live | no |
+| avalanche | `0xfe99e92df71f53a26005d1bfbe54c941a3131aa0` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| avalanche | `0xff2befc4ff86cb0f3e8d3d9d6200b7a05bf5d93d` | DLMMRouter | impl | live | no |
+| base | `0x053e49f058851bb56469ebce4905b320fe19e3e9` | Vault | impl | live | no |
+| base | `0x0638add2b856e0a6157f2bae3aa08c2923c83982` | Swapper-2 | impl | live | no |
+| base | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | Voter-3 | impl | live | no |
+| base | `0x227f65131a261548b057215bb1d5ab2997964c7d` | RewardsDistributor-3 | impl | live | no |
+| base | `0x2acf5cde1f0ccaed7cc9b457df0232eb87cacdec` | Loan | impl | live | no |
+| base | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | GaugeFactory | impl | live | no |
+| base | `0x371d2b977e9f3b780ee0a032ae664edc5db234e1` | Loan-3 | impl | live | no |
+| base | `0x3c113d68c2eeb665c2219b26d3090074e257e46d` | CommunityRewards | impl | live | no |
+| base | `0x71a28faed365f65ce924ce8810a14139f8476341` | Loan | impl | live | no |
+| base | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | Aero | impl | live | no |
+| base | `0xb99b6df96d4d5448cc0a5b3e0ef7896df9507cf5` | Vault | impl | live | no |
+| base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router-3 | impl | live | no |
+| base | `0xe2addcb41d3a03a9761fb2110dcad99b6ff7e108` | Loan | impl | live | no |
+| base | `0xe63f5ff2d54118c158fe0e27b226aa76da109aa2` | CommunityRewards | impl | live | no |
+| base | `0xe9992487b2ee03b7a91241695a58e0ef3654643e` | VeArtProxy | impl | live | no |
+| base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter-3 | impl | live | no |
+| base | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | VotingEscrow-3 | impl | live | no |
+| base | `0xf535d5e8e65c3959135ea0eb12bfe38c3a5caf27` | Loan | impl | live | no |
+| base | `0xf755ece7eb7035c935d9de4b7b56bb4846f249c4` | Loan | impl | live | no |
+| ethereum | `0x005130b26f7b491e0a2adebfccb443789f7d2198` | LoanConfig | impl | live | no |
+| ethereum | `0x00d2f4f21bfe658f836010900f887618a924ebb9` | PortfolioFactoryConfig | impl | live | no |
+| ethereum | `0x034eccde44e7faa6c79bf1d456bbb7ab39d2bc12` | CollateralFacet | impl | live | no |
+| ethereum | `0x0b5a252fc951a6bc59ee3670571b64be580ad298` | YieldBasisLpClaimingFacet | impl | live | no |
+| ethereum | `0x0d7bc91264fe4c2988f25b3adda25259708ac712` | CollateralFacet | impl | live | no |
+| ethereum | `0x0e23a4eb753334e747cd164c8dea620e0306d0ec` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x129a760274721e84af287f30d4b0fd091b2057e0` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0x12ae9b941da833325030f01f39c1d01a01611e67` | PortfolioManager | impl | live | no |
+| ethereum | `0x14b58f61042293aafcfbc051721c21e41306ddef` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x16193d68daeac524b4eb6e0981d732fa00e54fc9` | Loan-2 | impl | live | no |
+| ethereum | `0x1e3cb82154197582f8b725d9550600b99c8771b2` | SwapConfig | impl | live | no |
+| ethereum | `0x1eaf3ca8063292f4098e7fe761b864a176de23e5` | VotingFacet | impl | live | no |
+| ethereum | `0x1f5f48ed751097ea7c89995c6c5cf461ea1cfb3b` | CollateralFacet | impl | live | no |
+| ethereum | `0x2039d30a6e42442759756e95555b3ba994071669` | CollateralFacet | impl | live | no |
+| ethereum | `0x21732fda63218356bf5fd1f078fe8f5ec308f284` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x26eb636b78157a2e4f846117f768c90588ecbed2` | CollateralFacet | impl | live | no |
+| ethereum | `0x2b0a8766ea8d4ae8b2b8abf0fd1a3793c8aa7f25` | FortyAcresMarketplaceFacet | impl | live | no |
+| ethereum | `0x2cbf7604dd5b7cd4873917a5a5d06c6b2fd9c61b` | PortfolioFactoryConfig-2 | impl | live | no |
+| ethereum | `0x2d70fd03eeea2dcbe1bba0cc889bea62cf48e4b1` | YieldBasisLpClaimingFacet | impl | live | no |
+| ethereum | `0x329f7a20eae3eea7d300d85eb300bc4f2caf7d41` | PortfolioManager-2 | impl | live | no |
+| ethereum | `0x34ea0bf8c7ba61540ba3f1df0be8ab82d81cf0f3` | VotingFacet | impl | live | no |
+| ethereum | `0x3501bf4b2640474d93a4321c4b9302ab6834035d` | YieldBasisFacet | impl | live | no |
+| ethereum | `0x3779e4e7d7e384f9676f9c2228ede5198cdca87f` | YieldBasisLpClaimingFacet | impl | live | no |
+| ethereum | `0x38089f607ef402c398fb1b643319c9d599399635` | CollateralFacet | impl | live | no |
+| ethereum | `0x3c28fa57f8cd5751eb5dcd8d53c10651d7d96579` | ERC721ReceiverFacet | impl | live | no |
+| ethereum | `0x3c30ccfd3b4c81458852b3ed2d159470b9ee3d08` | PortfolioManager | impl | live | no |
+| ethereum | `0x3f64f216e72cfa881bdb9848765594abc2d0281f` | RewardsProcessingFacet | impl | live | no |
+| ethereum | `0x400c710cbeadc5bb8b7132b3061fa1b6d6f80dd8` | PortfolioAccountConfig | impl | live | no |
+| ethereum | `0x4057b08ce8665a1c9482aefd0e1ccb8b2c29582b` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0x42425c039c31b59201f7f9e337c26823e68e21f5` | CollateralFacet | impl | live | no |
+| ethereum | `0x45a5afcaf55ac7784f3c3c4647efdf6944623337` | BlackholeVotingEscrowFacet | impl | live | no |
+| ethereum | `0x497bebd4270eaae9c0db680e925890fbd9f42ee0` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x4a4ffbb55123837544f3bb13f0da2e9189b95826` | PortfolioMarketplace | impl | live | no |
+| ethereum | `0x4ca71eba4ecde733d3bd267fc08a011c1dad7b1f` | KinkFeeCalculator | impl | live | no |
+| ethereum | `0x4d5512d6ce555cf33b95381d27c48056e31d6819` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0x57f8e979eec50902bfafda050a52d0cb45ffb5a3` | PortfolioManager | impl | live | no |
+| ethereum | `0x583e50a8b41cc159b57b66503083523cd83af590` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x595913bf887a9346f0db3ae1baff4f3b61425b46` | PortfolioManager | impl | live | no |
+| ethereum | `0x59a0ecc7ab733ccafabc5eac191ad6612a1bf08d` | PortfolioManager-2 | impl | live | no |
+| ethereum | `0x5ce0a3e1c1e306595c68e22f7d140eeaa818ea8e` | ERC721ReceiverFacet | impl | live | no |
+| ethereum | `0x5f940c193874a8a6bed8c44cd69e8454d9d8484a` | PortfolioManager-2 | impl | live | no |
+| ethereum | `0x6243e6b69118d75cac781e806aef4b21c5890cc1` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0x62801138b261e67000f6d9bb0719238707c88d6e` | YieldBasisFacet | impl | live | no |
+| ethereum | `0x63edac47db7bc42b74ec6dbafbbdacf0996e9279` | RewardsProcessingFacet | impl | live | no |
+| ethereum | `0x64bde9e66e2e388667f13057057a8e08c722f808` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x678648b0e243e82a4511acad9c3a5df33c4a071e` | FortyAcresMarketplaceFacet | impl | live | no |
+| ethereum | `0x68ebca9e306939794987ed4543631e718a8fdbd7` | ClaimingFacet | impl | live | no |
+| ethereum | `0x6aa922eb759c7bc8586e5916d461a01517b93c99` | CollateralFacet | impl | live | no |
+| ethereum | `0x6bb7fb07ac7eceaed0b066ec4f328a1a8c4616cd` | ClaimingFacet | impl | live | no |
+| ethereum | `0x6cb266bad64d6e5c000a2d75c825ac0f6da11eff` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0x71ffb63cded602b4da9aa60ccc6f63e6a062ea1f` | CollateralFacet | impl | live | no |
+| ethereum | `0x7219242292b467a9c256420981f5eff2acae6841` | VotingFacet | impl | live | no |
+| ethereum | `0x73b1e591bb2d25cf71c4c60390efd539cd05fa68` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0x746815e9839b4ee5544125edae757d73bb139081` | RewardsProcessingFacet | impl | live | no |
+| ethereum | `0x774ebf63e380e38bfdf6d822e32425bd867ac577` | BlackholeVotingEscrowFacet | impl | live | no |
+| ethereum | `0x7915be57450df10a8da82bec64d98b09703d866c` | BaseCollateralFacet | impl | live | no |
+| ethereum | `0x7956ff54299977e27696287438d5fa37d72d4891` | BlackholeVotingEscrowFacet | impl | live | no |
+| ethereum | `0x79b756f3580137dc92199dd49796836dd1bafb08` | YieldBasisFacet | impl | live | no |
+| ethereum | `0x7a4e22ce127a228457f3d00653ac5a74e29e9c6c` | VotingFacet | impl | live | no |
+| ethereum | `0x7b6f50480ce0bbdd71be3a0453d77b74f26b80e8` | PortfolioManager-2 | impl | live | no |
+| ethereum | `0x7b9e8afcd6a1bf85c548c7ab33cb143970ee9a16` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0x7e1d833a4f11d63b49bb2f769cf5527d64846c3a` | VotingFacet | impl | live | no |
+| ethereum | `0x7e99c22f3951386cdb032b9992fe1cb8f51b1a93` | BlackholeMarketplaceFacet | impl | live | no |
+| ethereum | `0x7f6296d24e5a175cd9b7b18026822a709bc5dadf` | PortfolioManager-4 | impl | live | no |
+| ethereum | `0x8246590769a2992182c147fef62501f2988ce24a` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0x83d5a42a6444e9f08c5e424e80bc43b9b7bccd8c` | RewardsProcessingFacet-2 | impl | live | no |
+| ethereum | `0x842d8fc945441c0b555658c7d7a6e4d117bb9876` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x87b8d35897bf2d75dc09be7aabe2e3520d066140` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0x8bc6e85f8b5b0011e5e929ebe85151f9e0d4ee26` | PortfolioManager-3 | impl | live | no |
+| ethereum | `0x8e4fb2fe73be8c582677ca0f9ed62d837d4b9c04` | CollateralFacet | impl | live | no |
+| ethereum | `0x91cf64bf98fd4371114984394a1f14cbe1e8a891` | PortfolioManager | impl | live | no |
+| ethereum | `0x9203c26b52da9b4b8a5751ad55811d1dac8ac60a` | ERC721ReceiverFacet | impl | live | no |
+| ethereum | `0x94bc4862ecf60138b781e98ab28c3ad3e25abb86` | YieldBasisFacet | impl | live | no |
+| ethereum | `0x9536a1c1e38e985635f0e450c4fde37a74f55980` | BlackholeMarketplaceFacet | impl | live | no |
+| ethereum | `0x9864fcadd0d6b1ba165204622c9962973c156236` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0x98779df684a0722450facec74b4d228fcf33ab4e` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0x9e67dbb856b4b5e56d404e819da7829269587d02` | RewardsProcessingFacet | impl | live | no |
+| ethereum | `0x9f242a928f946a95a641671f7cc924789d0ad874` | Loan-2 | impl | live | no |
+| ethereum | `0xa043e9d6f593fc746d55cc8ab4a15363c9b8359c` | VotingFacet | impl | live | no |
+| ethereum | `0xacaf4bf5befd9657c66d6a7ba1aa99616a93a8a3` | BlackholeVotingEscrowFacet | impl | live | no |
+| ethereum | `0xb3fb3ad3406503893457620fd8a2143237957eb5` | PortfolioManager | impl | live | no |
+| ethereum | `0xb58d41ab4289bb1057cf67ce10d851636efe5d66` | ClaimingFacet | impl | live | no |
+| ethereum | `0xb5b86574af988b89dc74002b9bb1187c87d659f4` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0xb676b7d190a7e142212dd48341ba225c8341cd42` | RewardsProcessingFacet | impl | live | no |
+| ethereum | `0xb71d66583a420cbc77641759c1a6e6f3fb68ceb2` | PortfolioMarketplace | impl | live | no |
+| ethereum | `0xb9d9d03ff3e95dc015d1b0a6400d33f424393e2c` | BlackholeVotingEscrowFacet | impl | live | no |
+| ethereum | `0xbd394c7769b0872082fa5bccc9cfbca528de777c` | PortfolioFactoryConfig-3 | impl | live | no |
+| ethereum | `0xbef11e23968d9d63a95b723eb0a1149532ef2a4d` | YieldBasisLpClaimingFacet | impl | live | no |
+| ethereum | `0xc01a94d4c536f11ebafbd547f5a1834d9cf658b1` | ClaimingFacet | impl | live | no |
+| ethereum | `0xc3b71609feccfb2a5a0d7db3cf8fdf577d44bdc1` | CollateralFacet | impl | live | no |
+| ethereum | `0xc5cb7b9a980a3c64038cfa5e609613098aa721b5` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0xc5da07e2392fd681e831438760d9d34c9587b95f` | PortfolioManager | impl | live | no |
+| ethereum | `0xc6ed608f994c92ceeac9b702c8198e3030e82700` | ERC721ReceiverFacet | impl | live | no |
+| ethereum | `0xc6ef62158494f7a41b2873b0a500da972b7caff4` | YieldBasisFacet | impl | live | no |
+| ethereum | `0xc996392bac47351934de07bf14277e0c44ceab16` | YieldBasisFacet | impl | live | no |
+| ethereum | `0xcbe1efe94e88ee54794a32044b390dbb0e2b7ed7` | PortfolioFactoryConfig-4 | impl | live | no |
+| ethereum | `0xcf27f70cad84f63b899e192116b69d044a456cd6` | CollateralFacet | impl | live | no |
+| ethereum | `0xd14ff8f531589190571c3a998a285134b7fd70e5` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0xd7763cf3276932b635772d633ea622bf65c0b8a5` | BlackholeRewardsProcessingFacet | impl | live | no |
+| ethereum | `0xd8de50803d77d4bc20276cc884f8d00f3a755a4c` | RewardsProcessingFacet-3 | impl | live | no |
+| ethereum | `0xda42b85f03e3acd72c2064c35b33923207811b49` | BlackholeMarketplaceFacet | impl | live | no |
+| ethereum | `0xdae3a43f6dd57c2f1d1f76c00aeda93968e9fb60` | ClaimingFacet | impl | live | no |
+| ethereum | `0xdd9e19eb5f20447e30086dfcb5a295be9b5c5238` | BlackholeVotingEscrowFacet | impl | live | no |
+| ethereum | `0xddb402b37052fd2f024df2f5ddd23ba1b3b90555` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0xdf8e2629f9fcd6f202e39baeeff3b3418b56f167` | YieldBasisLegacyMigrationFacet | impl | live | no |
+| ethereum | `0xe108ffa9c400beda06d5443b2dd448bdbaee838c` | YieldBasisVotingFacet | impl | live | no |
+| ethereum | `0xe2a27a8a9580425426570eb31e0e8d2d824dd053` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0xef74752d36e5f54b1a1f9f14e3c9845d74f38d49` | Loan-2 | impl | live | no |
+| ethereum | `0xf010772d03cbfa1fd663c0c947d4e9d5f47ff6a4` | PortfolioManager-3 | impl | live | no |
+| ethereum | `0xf46f932453e183abac449c93a24dc542aa524996` | Loan-2 | impl | live | no |
+| ethereum | `0xf5bdac775b04c235d6fd2714c37c4b4f198b1197` | DynamicYieldBasisLpFacet | impl | live | no |
+| ethereum | `0xf625d255d0ef9dc0f1d221902d00f59c3a736552` | RewardsConfigFacet | impl | live | no |
+| ethereum | `0xf64893518633689c97f10d6cf2d9cf49e900e1aa` | YieldBasisLpClaimingFacet | impl | live | no |
+| ethereum | `0xf92899ddc18325fc25e25a7087fcb17f1d4fc59d` | VotingFacet | impl | live | no |
+| ethereum | `0xff17ebb5dcaa6e4d67b5df46e4c9171632c89ad6` | PortfolioManager-2 | impl | live | no |
+| optimism | `0x00d59bc35174c3b250dd92a363495d38c8777a49` | MerkleClaim | impl | live | no |
+| optimism | `0x053ae60117b2a90041e6872b18403ab102880c0b` | VeloLoan | impl | live | no |
+| optimism | `0x053e49f058851bb56469ebce4905b320fe19e3e9` | Swapper | impl | inactive | no |
+| optimism | `0x08c1375266b77841621b20586ef159b6e1d81873` | VeloLoan | impl | live | no |
+| optimism | `0x08dcdbf7bade91ccd42cb2a4ea8e5d199d285957` | Swapper | impl | live | no |
+| optimism | `0x09236cff45047dbee6b921e00704bed6d6b8cf7e` | Voter | impl | live | no |
+| optimism | `0x0fdf76d01cad134cbe654cd9a849c9aede876e70` | Swapper | impl | live | no |
+| optimism | `0x100451f9986161bd242b16381bd577f1c88a94fb` | VeloLoan-2 | impl | live | no |
+| optimism | `0x16f5212410dc9c6353d72c964054d761d9064e3d` | VeloLoan | impl | live | no |
+| optimism | `0x1dbdbf3a9f58d3b831989f76e27b4a0f1d5dd46a` | Swapper | impl | inactive | no |
+| optimism | `0x1ed73446bc4ca94002a549cf553e4ab2f2722b42` | VeloLoan | proxy | live | no |
+| optimism | `0x2421cfd0b6f92418b64e7edb30d22734cf8c86dc` | VeloLoanNative | impl | live | no |
+| optimism | `0x25cbddb98b35ab1ff77413456b31ec81a6b6b746` | Pair | impl | live | no |
+| optimism | `0x26ecad2dcb7fc8431db5dace522ba972c2ca3f2a` | VeloLoan | impl | live | no |
+| optimism | `0x33f04ea4a819c6b93e18866cb35fc0138ca9451f` | Swapper | impl | inactive | no |
+| optimism | `0x3460dc71a8863710d1c907b8d9d5dbc053a4102d` | Minter | impl | live | no |
+| optimism | `0x3c8b650257cfb5f272f799f5e2b4e65093a11a05` | Velo | impl | live | no |
+| optimism | `0x3e366f2ec8ffc105d2680657d268c69a12bb3f17` | Swapper | impl | live | no |
+| optimism | `0x3e8f202bce6858ff8c03bba979e0fe6a76c798ab` | VeloLoan | impl | live | no |
+| optimism | `0x40ac2e40acb7bdd6ec83e468143262fe216529ec` | PortfolioManager-5 | impl | live | no |
+| optimism | `0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c` | Voter-2 | impl | live | no |
+| optimism | `0x4425dc7f14edb3eaa4e710bf5b6bac89da3f6e80` | VeloLoan | impl | live | no |
+| optimism | `0x44306faf4c61a23c3433939ca79e043f40841f3e` | VeloLoan | impl | live | no |
+| optimism | `0x555709f3d6b9e8b3129697a2d7fe965e5cb8433f` | Swapper | proxy | live | no |
+| optimism | `0x56d6ab1c3622760216e606a4d1ac53d6548675dc` | VeloLoan | impl | live | no |
+| optimism | `0x5ae73f00ddf2dda00a4813b12c40749510cfb142` | Swapper | impl | live | no |
+| optimism | `0x5aee5f0e6c2055ebd776db25f48f6c9a68abcdae` | SinkManager | impl | live | no |
+| optimism | `0x5b0e7b84e83cee8c12553459e3d26bdcddc1cab1` | VeloLoan | impl | live | no |
+| optimism | `0x5d5bea9f0fc13d967511668a60a3369fd53f784f` | RewardsDistributor | impl | live | no |
+| optimism | `0x60301ff83dc9d73426451d257b1c6e355c0eb35b` | VeloLoan | impl | live | no |
+| optimism | `0x6c2eaabe511f0423501cba6343ed620105a4b63f` | VeloLoan | impl | live | no |
+| optimism | `0x6dc9e1c04ee59ed3531d73a72256c0da46d10982` | Minter-2 | impl | live | no |
+| optimism | `0x723ae12117d4c6818050719e435b914438b99a02` | Swapper | impl | inactive | no |
+| optimism | `0x72b7602c279038dbfc61fc0b3905e91273d62db9` | VeloLoan | impl | live | no |
+| optimism | `0x7ac9d050926e1add934eaea2b9cb0fcb923f7f52` | RedeemCommunityShares | proxy | live | no |
+| optimism | `0x7af55307660d3e42088a8cae0e36fe6d001d00aa` | VeloLoan | impl | live | no |
+| optimism | `0x7d4ffaf369e92b4a6b696eb7bae7345f290dfe59` | VeloLoanNative | impl | live | no |
+| optimism | `0x81116f71027a04e5a276c1bd94e3ecfd040e0706` | VeloLoan | impl | live | no |
+| optimism | `0x828322b871c351b3ee48c0864b614dd4f6283fe6` | Swapper | impl | inactive | no |
+| optimism | `0x84405466bd98fd2d16093e120268a416058f2a90` | Swapper | proxy | live | no |
+| optimism | `0x8c0ae206a52d3fdde6d43ea5b5cbbbe00e1c0315` | VeloLoanNative | proxy | live | no |
+| optimism | `0x8f7486bd8f11536227e71f26a47041ab8be8265d` | VeloLoan | impl | live | no |
+| optimism | `0x9261c5a77f10fe036f7aa0b161372c838063bf14` | VeloLoan | impl | live | no |
+| optimism | `0x9560e827af36c94d2ac33a39bce1fe78631088db` | Velo-2 | impl | live | no |
+| optimism | `0x972b1ac00dfb287f244205b379f4565ab286ed3a` | VeloLoan | impl | live | no |
+| optimism | `0x9c7305eb78a432ced5c4d14cac27e8ed569a2e26` | VotingEscrow | impl | live | no |
+| optimism | `0x9d4736ec60715e71afe72973f7885dcbc21ea99b` | RewardsDistributor-2 | impl | live | no |
+| optimism | `0x9e3311c65005ecd1acc34c6b146be2353c1284c2` | VeloLoan | impl | live | no |
+| optimism | `0x9f8380380a74f193168d8df1dd9e8bf4abb4eb85` | VeloLoan | impl | live | no |
+| optimism | `0x9fc66692e2ddbeae402b240963db2d1f58cd7193` | VeloLoan | impl | live | no |
+| optimism | `0x9fd29c7ad6f086df34cc71abb3954bcb00255447` | RedeemCommunityShares | impl | inactive | no |
+| optimism | `0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858` | Router | impl | live | no |
+| optimism | `0xa132dab612db5cb9fc9ac426a0cc215a3423f9c9` | Router-2 | impl | live | no |
+| optimism | `0xa48b8dd90f8c3763175e9f8d2171e0528582e4b2` | VeloLoanNative | impl | live | no |
+| optimism | `0xa747d25d69cb37a936079d9cafb1289861bbe604` | VeloLoan | impl | live | no |
+| optimism | `0xaad038102e8b5630a89f4b77d5aef59868d2056b` | EntryPoint | impl | live | no |
+| optimism | `0xaba559a1077ac85e2dcd70ab4c53a0d0ab526c9d` | VeloLoan | impl | live | no |
+| optimism | `0xb2607f2c8b4942bfcbad73f85df8323c57a348a8` | Swapper | impl | inactive | no |
+| optimism | `0xb287954dfc39872b86074906ecda07f40cbc5947` | VeloLoan | impl | live | no |
+| optimism | `0xbfb12bac6bd6ce8c1006542152c2bbbe0bf1e54b` | VeloLoanNative | impl | live | no |
+| optimism | `0xc0485c4bafb594ae1457820fb6e5b67e8a04bcfd` | Swapper | impl | inactive | no |
+| optimism | `0xc34ed82038a2fcb135c641f7a95cf27eb6e3ac6d` | VeloLoan | impl | live | no |
+| optimism | `0xc4c2e18b4f04fc6792677d839857cb7744775f72` | VeloLoan | impl | live | no |
+| optimism | `0xc506fe82ea5d27b7efe5a5f757a8b729f3477181` | VeloLoanNative | impl | live | no |
+| optimism | `0xc8bf1a7eb6476bd2748f68627583877db6e182b8` | VeloLoan | impl | live | no |
+| optimism | `0xcc5cc6a3eaea292fbc13a526cb1fc561dae39b75` | VeloLoan | impl | live | no |
+| optimism | `0xd00de845c25ac81bc457ad6e635255bba8b56f8e` | VeloLoan | impl | live | no |
+| optimism | `0xd2f7bcce082646939c47c25fcf5f086414fe2e1e` | VeloLoan | impl | live | no |
+| optimism | `0xe685f049e472d58568e88c04e7d1e66d77713118` | VeloLoan | impl | live | no |
+| optimism | `0xed29a16d8e65c350a9ff984c8668394899cb0913` | Swapper | impl | inactive | no |
+| optimism | `0xf132bd888897254521d13e2c401e109caaba06a7` | VeloLoan | proxy | live | no |
+| optimism | `0xf18fcd877cf7586e1e567dde99e57ba7ad5f4a68` | VeloLoan | proxy | live | no |
+| optimism | `0xf4172a5aeaf5dafa21b63f763f6b69a61d5dc563` | VeloLoanNative | proxy | live | no |
+| optimism | `0xf6a044c3b2a3373ef2909e2474f3229f23279b5f` | VeloLoan | impl | live | no |
+| optimism | `0xf8e3120fd9957200b84913f746b4cb66b9a8a612` | VeloLoanNative | proxy | live | no |
+| optimism | `0xfa6e2238264b9da942e578e8fc7274136bd84c40` | VeloLoanNative | impl | live | no |
+| optimism | `0xfaa5c886faa520188c316f0ab6b6eeb091454c54` | Swapper | proxy | live | no |
+| optimism | `0xfaf8fd17d9840595845582fcb047df13f006787d` | VotingEscrow-2 | impl | live | no |
+| optimism | `0xfdb2620738168e45233ad16d62cf024ae0bc7489` | VeloLoan | impl | live | no |
+
+## Source unavailable (39)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- avalanche `0x40ac2e40acb7bdd6ec83e468143262fe216529ec`
+- avalanche `0x5ae73f00ddf2dda00a4813b12c40749510cfb142`
+- avalanche `0x5c7b76e545af04dcfbacac979c31fae454faa680`
+- avalanche `0x677e397d76cc2135bd15f1821b8cbd9aa7ab35f2`
+- avalanche `0x80bab902368222474f1cb0b1f4a61ec39ab62ec9`
+- avalanche `0x84405466bd98fd2d16093e120268a416058f2a90`
+- avalanche `0x9334f3ce4569e04437665daa254e0189d145af21`
+- avalanche `0xa8b2c8a0fc71dd889ea0be7fa3f6134c5cb77b57`
+- avalanche `0xaf6c9abbeebc6f78bc77bd65fbc624da10af4019`
+- avalanche `0xc0485c4bafb594ae1457820fb6e5b67e8a04bcfd`
+- avalanche `0xe59b0f65e11e5615579f290a11c7e3b3b312d82a`
+- avalanche `0xf8e3120fd9957200b84913f746b4cb66b9a8a612`
+- base `0x3addab0925bf311b6de8e5231a7d66052c7657fa`
+- base `0x40ac2e40acb7bdd6ec83e468143262fe216529ec`
+- base `0x87f18b377e625b62c708d5f6ea96ec193558efd0`
+- base `0x8b51e596921f92bdbac1062dab94dd2df2836d9d`
+- base `0x92f4cf4067c1068cfa1622da14099640dc408f0b`
+- base `0x9c0fc730e14068a2fa4790525f85602188391d32`
+- base `0xdd9b03c5eb95531448b47cc8466f2b3822c735c3`
+- base `0xebeb86b5d9df1594bfa2d3d6c982b8e990a29708`
+- base `0xf6a044c3b2a3373ef2909e2474f3229f23279b5f`
+- ethereum `0x38dbdb67bf12ac283630af7656ec3362ec191878`
+- ethereum `0x96d26416abaa0eaa2bd0bd246f0fd4e12894ca85`
+- ethereum `0x9ddbae6cd2996f9d2a7a1aa044a26fd7c5c807f4`
+- optimism `0x16e2e82c4ae824595a7ff3c800ddca748bb3e4d2`
+- optimism `0x20b7cd27079f37d382020937d525999c75b97f84`
+- optimism `0x2dee03524a04aac3cca030dacb40cb3a8e517a6b`
+- optimism `0x5122f5154df20e5f29df53e633ce1ac5b6623558`
+- optimism `0x5fbdf3b3202a0858da1307d9d3c074593c9b60c5`
+- optimism `0x66d6405b1813b46d57b2a583b6957b4aef39b873`
+- optimism `0x6ca57c1ffba953a7c8bfba8380e08959bc691712`
+- optimism `0x761e200b06c87646c5918ec521426794d1d43c35`
+- optimism `0xbb5dfe1380333cee4c2eebd7202c80de2256adf4`
+- optimism `0xdd233edba73e9f659ac69ec38cdc3a71ed7884f1`
+- optimism `0xf007426228945bf59e3eecf025323a877ea50964`
+- optimism `0xf132bdb9573867cd72f2585c338b923f973eb817`
+- optimism `0xf1f46f919f8d9fe75070a96f31cb764ae2db9f94`
+- optimism `0xf353d4d3a75e6930d5c8b598492646e374f008de`
+- optimism `0xf761ac4e28f84b4166f342cd8110b567c4d13d01`

@@ -1,0 +1,18 @@
+{
+  "component": "TokenManager",
+  "main_contract": "TokenManager",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x33c5a816382760b6e5fb50d8854a61b3383a32a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

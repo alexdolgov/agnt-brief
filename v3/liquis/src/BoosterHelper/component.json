@@ -1,0 +1,20 @@
+{
+  "component": "BoosterHelper",
+  "main_contract": "BoosterHelper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/liquisfi/security/blob/main/audits/Liquis_Audit_Report_by_Halborn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ea2efb759591eec7f916f89547d339a69d171f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

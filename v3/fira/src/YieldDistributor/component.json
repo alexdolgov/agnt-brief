@@ -1,0 +1,18 @@
+{
+  "component": "YieldDistributor",
+  "main_contract": "YieldDistributor",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdbca79adc13a0fa6f921d5cf5b3fae2b8a739c2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SmartRouterHelper",
+  "main_contract": "SmartRouterHelper",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x6ca9c16704f4849cf3261203d05a32effc2af6b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

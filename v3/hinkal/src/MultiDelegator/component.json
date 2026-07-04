@@ -1,0 +1,18 @@
+{
+  "component": "MultiDelegator",
+  "main_contract": "MultiDelegator",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1ba87be4c20fa2d4cbd8e4ae9998649226207f76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

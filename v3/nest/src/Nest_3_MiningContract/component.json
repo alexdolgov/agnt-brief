@@ -1,0 +1,26 @@
+{
+  "component": "Nest_3_MiningContract",
+  "main_contract": "Nest_3_MiningContract",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2f979c933aef4fcddd27c0fa5c54d8a780555b0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd15bb8f4ae8cb24378b423122f36efe6cdb6ce0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

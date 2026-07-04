@@ -1,0 +1,20 @@
+{
+  "component": "WaBtcToken",
+  "main_contract": "WaBtcToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://166619442-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MUN3OWWYS40IGKkCepD%2F-McPgoP0AUJ9kjMIoyGS%2F-McQ3GtcUwuBv6u97CwY%2Fpre-wasabix-yum-2021-06-11.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd8e70e83e399307db3978d3f34b060a06792c36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

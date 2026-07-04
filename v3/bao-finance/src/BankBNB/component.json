@@ -1,0 +1,18 @@
+{
+  "component": "BankBNB",
+  "main_contract": "BankBNB",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x18a9eee6dc4fb50f86c4abb67bd5f23a3c5e9451",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

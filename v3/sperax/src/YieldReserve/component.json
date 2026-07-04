@@ -1,0 +1,21 @@
+{
+  "component": "YieldReserve",
+  "main_contract": "YieldReserve",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Sperax/Audit_Reports/blob/main/Sperax%20-%20USDs%20-%20Report%20(1).pdf",
+    "https://github.com/Sperax/Audit_Reports/blob/main/USDs_Quantstamp.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfd14c8ef0993fd9409f7820ba8ba80370529d861",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

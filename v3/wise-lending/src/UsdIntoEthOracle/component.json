@@ -1,0 +1,26 @@
+{
+  "component": "UsdIntoEthOracle",
+  "main_contract": "UsdIntoEthOracle",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2851b4c38226fb575851ce74985984c396f49063",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4b55a85fa86fb9ffd9b735862a3f8444e62721b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

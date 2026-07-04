@@ -1,0 +1,18 @@
+{
+  "component": "MToken",
+  "main_contract": "MToken",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1d0ba3daa950415b1f36c6fa6b98571325245010",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

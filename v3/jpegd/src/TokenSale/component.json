@@ -1,0 +1,22 @@
+{
+  "component": "TokenSale",
+  "main_contract": "TokenSale",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2737724165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4q1VmrV9tKrttNrIIhP1%2Fuploads%2F7S52Ek2LWsdHMomLlyc6%2FJPEG'd%20%20Part%203%20-%20Report.pdf",
+    "https://2737724165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4q1VmrV9tKrttNrIIhP1%2Fuploads%2FHKy2zlEo0ummIpLQMtyU%2FJPEG'd%20%20Part%201%20-%20Report.pdf",
+    "https://2737724165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4q1VmrV9tKrttNrIIhP1%2Fuploads%2FkCsGh80bHBLFNToAQKOp%2FJPEG'd%20%20Part%202%20-%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x05f9955ac8236a163833c92b492c67632b582dab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

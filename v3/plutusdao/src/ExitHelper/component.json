@@ -1,0 +1,18 @@
+{
+  "component": "ExitHelper",
+  "main_contract": "ExitHelper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8686a29760a71eb6b46b0a0b5ab1dcf42d415234",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

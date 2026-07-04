@@ -1,0 +1,18 @@
+{
+  "component": "FairAuction-2",
+  "main_contract": "FairAuction",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0ca4fc142e3b0a26f34b52faa1a022fc70f6c20b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

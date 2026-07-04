@@ -1,0 +1,18 @@
+{
+  "component": "LZToken",
+  "main_contract": "LZToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x182284410a9f6f454b20708343abe9e917f66a96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

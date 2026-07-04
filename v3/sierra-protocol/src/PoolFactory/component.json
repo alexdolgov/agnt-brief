@@ -1,0 +1,18 @@
+{
+  "component": "PoolFactory",
+  "main_contract": "PoolFactory",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e70b675ab0f296cee11de25b8368e8d30ba740b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

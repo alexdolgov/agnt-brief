@@ -1,0 +1,26 @@
+{
+  "component": "SwapperImplementation",
+  "main_contract": "SwapperImplementation",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x49644ea1bec8075b43f212eb4cdaa272648b44fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x9a34b3810d422373ba5128ffee880235003f5cac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

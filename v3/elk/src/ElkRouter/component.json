@@ -1,0 +1,18 @@
+{
+  "component": "ElkRouter",
+  "main_contract": "ElkRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a2e5a3dc2f74e5bfaf0bf90685a5a899f379cb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SurplusBidActions",
+  "main_contract": "SurplusBidActions",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x632229a0a849bde3a1f1200cf23118b33a925cec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

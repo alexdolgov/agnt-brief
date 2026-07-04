@@ -1,0 +1,26 @@
+{
+  "component": "LiveTradingProcessorData",
+  "main_contract": "LiveTradingProcessorData",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3fe7aa549c4df05ed179f87098a7d7635e2b1f85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x937f15d6ffa608f3f1ac0088b5995fd5720b3452",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

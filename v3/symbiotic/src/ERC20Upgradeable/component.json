@@ -1,0 +1,21 @@
+{
+  "component": "ERC20Upgradeable",
+  "main_contract": "ERC20Upgradeable",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbioticfi/collateral/blob/main/audits/ChainSecurity_DefaultCollateral.pdf",
+    "https://raw.githubusercontent.com/symbioticfi/collateral/main/audits/ChainSecurity_DefaultCollateral.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bc8fcfbe6aa17e4a7610f51b888f34583d202ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

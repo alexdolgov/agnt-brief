@@ -1,0 +1,18 @@
+{
+  "component": "Token",
+  "main_contract": "Token",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x73c36ae64842eaf4d9209de10fda21017b5f0709",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

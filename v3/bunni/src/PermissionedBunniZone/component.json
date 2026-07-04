@@ -1,0 +1,18 @@
+{
+  "component": "PermissionedBunniZone",
+  "main_contract": "PermissionedBunniZone",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0000000d2ae8907a686d988eeda193a90d90d0b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

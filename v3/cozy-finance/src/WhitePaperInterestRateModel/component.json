@@ -1,0 +1,26 @@
+{
+  "component": "WhitePaperInterestRateModel",
+  "main_contract": "WhitePaperInterestRateModel",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ec8e03bf8b67b7d793f2de6eb59045277d02831",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x47cef4ab8f68da8156d705e0046a970b6b9cf3e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

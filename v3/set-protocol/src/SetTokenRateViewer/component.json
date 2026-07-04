@@ -1,0 +1,18 @@
+{
+  "component": "SetTokenRateViewer",
+  "main_contract": "SetTokenRateViewer",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e3ac55fa22abef5ce612b1796e69e005fb0a238",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

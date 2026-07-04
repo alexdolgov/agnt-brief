@@ -1,0 +1,21 @@
+{
+  "component": "KSSmartIntentRouter",
+  "main_contract": "KSSmartIntentRouter",
+  "source_file_count": 76,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/kyberswap-dec-25(Final).pdf",
+    "https://hexens.io/audit-reports/kyber-network-smart-intent-protocol-dec-2025"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaee04d31696d14bce773db6d1acec3398ee09974",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

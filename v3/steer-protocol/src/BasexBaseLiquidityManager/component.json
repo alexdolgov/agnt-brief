@@ -1,0 +1,18 @@
+{
+  "component": "BasexBaseLiquidityManager",
+  "main_contract": "BasexBaseLiquidityManager",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1578228d5c62e2705aee5ba1debd6d9a68830189",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

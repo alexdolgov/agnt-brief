@@ -1,0 +1,18 @@
+{
+  "component": "MiniMeToken",
+  "main_contract": "MiniMeToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0cd466b34a24fcb2f87676278af2005ca8a78c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

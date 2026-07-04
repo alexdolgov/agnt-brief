@@ -1,0 +1,18 @@
+{
+  "component": "Swapper",
+  "main_contract": "Swapper",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x544410023cbccb2b141f13a7cee9d594e6685e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

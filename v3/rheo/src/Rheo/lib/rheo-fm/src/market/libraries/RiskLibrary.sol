@@ -1,0 +1,157 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.23;
+
+import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import {State} from "@rheo-fm/src/market/RheoStorage.sol";
+
+import {Errors} from "@rheo-fm/src/market/libraries/Errors.sol";
+
+import {CreditPosition, DebtPosition, LoanLibrary, LoanStatus} from "@rheo-fm/src/market/libraries/LoanLibrary.sol";
+import {Math, PERCENT} from "@rheo-fm/src/market/libraries/Math.sol";
+
+/// @title RiskLibrary
+/// @custom:security-contact security@rheo.xyz
+/// @author Rheo (https://rheo.xyz/)
+library RiskLibrary {
+    using EnumerableSet for EnumerableSet.UintSet;
+    using LoanLibrary for State;
+
+    /// @notice Validate the credit amount during an exit
+    /// @dev Reverts if the remaining credit is lower than the minimum credit
+    /// @param state The state
+    /// @param credit The remaining credit
+    function validateMinimumCredit(State storage state, uint256 credit) public view {
+        if (0 < credit && credit < state.riskConfig.minimumCreditBorrowToken) {
+            revert Errors.CREDIT_LOWER_THAN_MINIMUM_CREDIT(credit, state.riskConfig.minimumCreditBorrowToken);
+        }
+    }
+
+    /// @notice Validate the credit amount during an opening
+    /// @dev Reverts if the credit is lower than the minimum credit
+    /// @param state The state
+    /// @param credit The credit
+    function validateMinimumCreditOpening(State storage state, uint256 credit) public view {
+        if (credit < state.riskConfig.minimumCreditBorrowToken) {
+            revert Errors.CREDIT_LOWER_THAN_MINIMUM_CREDIT_OPENING(credit, state.riskConfig.minimumCreditBorrowToken);
+        }
+    }
+
+    /// @notice Validate the maturity of a loan
+    /// @dev Reverts if the maturity is not in the configured maturities set.
+    ///      An empty allowlist is permitted and disables market orders via INVALID_MATURITY.
+    /// @param state The state
+    /// @param maturity The maturity
+    function validateMaturity(State storage state, uint256 maturity) public view {
+        if (maturity <= block.timestamp) {
+            revert Errors.PAST_MATURITY(maturity);
+        }
+        uint256 tenor = maturity - block.timestamp;
+        if (tenor < state.riskConfig.minTenor || tenor > state.riskConfig.maxTenor) {
+            revert Errors.MATURITY_OUT_OF_RANGE(maturity, state.riskConfig.minTenor, state.riskConfig.maxTenor);
+        }
+        if (!state.riskConfig.maturities.contains(maturity)) {
+            revert Errors.INVALID_MATURITY(maturity);
+        }
+    }
+
+    /// @notice Calculate the collateral ratio of an account
+    /// @dev The collateral ratio is the ratio of the collateral to the debt
+    ///      If the debt is 0, the collateral ratio is type(uint256).max
+    ///      Note: the calculation is simplified since the collateral ratio is expressed in the same decimals as the price feed (18)
+    /// @param state The state
+    /// @param account The account
+    /// @return The collateral ratio
+    function collateralRatio(State storage state, address account) public view returns (uint256) {
+        uint256 collateral = state.data.collateralToken.balanceOf(account);
+        uint256 debt = state.data.debtToken.balanceOf(account);
+        uint256 price = state.oracle.priceFeed.getPrice();
+
+        if (debt != 0) {
+            return Math.mulDivDown(
+                collateral * 10 ** state.data.underlyingBorrowToken.decimals(),
+                price,
+                debt * 10 ** state.data.underlyingCollateralToken.decimals()
+            );
+        } else {
+            return type(uint256).max;
+        }
+    }
+
+    /// @notice Check if a credit position is self-liquidatable
+    /// @dev A credit position is self-liquidatable if the user is severely underwater and the loan is not REPAID (ie, ACTIVE or OVERDUE)
+    /// @param state The state
+    /// @param creditPositionId The credit position ID
+    /// @return True if the credit position is self-liquidatable, false otherwise
+    function isCreditPositionSelfLiquidatable(State storage state, uint256 creditPositionId)
+        public
+        view
+        returns (bool)
+    {
+        CreditPosition storage creditPosition = state.data.creditPositions[creditPositionId];
+        DebtPosition storage debtPosition = state.data.debtPositions[creditPosition.debtPositionId];
+        LoanStatus status = state.getLoanStatus(creditPositionId);
+        // Only CreditPositions can be self liquidated
+        return state.isCreditPositionId(creditPositionId)
+        // the user must be severly underwater (CR < 100%) and the loan is not REPAID
+        && (collateralRatio(state, debtPosition.borrower) < PERCENT && status != LoanStatus.REPAID);
+    }
+
+    /// @notice Check if a credit position is transferrable
+    /// @dev A credit position is transferrable if the loan is ACTIVE and the related borrower is not underwater
+    /// @param state The state
+    /// @param creditPositionId The credit position ID
+    /// @return True if the credit position is transferrable, false otherwise
+    function isCreditPositionTransferrable(State storage state, uint256 creditPositionId)
+        internal
+        view
+        returns (bool)
+    {
+        return state.getLoanStatus(creditPositionId) == LoanStatus.ACTIVE
+            && !isUserUnderwater(state, state.getDebtPositionByCreditPositionId(creditPositionId).borrower);
+    }
+
+    /// @notice Check if a debt position is liquidatable
+    /// @dev A debt position is liquidatable if the user is underwater and the loan is not REPAID (ie, ACTIVE or OVERDUE) or
+    ///        if the loan is OVERDUE.
+    ///      Note: this function returns `false` when a creditPositionId is mistakenly used as the debtPositionId
+    /// @param state The state
+    /// @param debtPositionId The debt position ID
+    /// @return True if the debt position is liquidatable, false otherwise
+    function isDebtPositionLiquidatable(State storage state, uint256 debtPositionId) public view returns (bool) {
+        DebtPosition storage debtPosition = state.data.debtPositions[debtPositionId];
+        LoanStatus status = state.getLoanStatus(debtPositionId);
+        // only DebtPositions can be liquidated
+        return state.isDebtPositionId(debtPositionId)
+        // case 1: if the user is underwater, only ACTIVE/OVERDUE DebtPositions can be liquidated
+        && (
+            (isUserUnderwater(state, debtPosition.borrower) && status != LoanStatus.REPAID)
+            // case 2: overdue loans can always be liquidated regardless of the user's CR
+            || status == LoanStatus.OVERDUE
+        );
+    }
+
+    /// @notice Check if the user is underwater
+    /// @dev A user is underwater if the collateral ratio is below the liquidation threshold
+    /// @param state The state
+    /// @param account The account
+    function isUserUnderwater(State storage state, address account) public view returns (bool) {
+        return collateralRatio(state, account) < state.riskConfig.crLiquidation;
+    }
+
+    /// @notice Validate that the user is not below the opening limit borrow CR
+    /// @dev Reverts if the user is below the opening limit borrow CR
+    ///      The user can set a custom opening limit borrow CR using SetUserConfiguration
+    ///      If the user has not set a custom opening limit borrow CR, the default is the global opening limit borrow CR
+    /// @param state The state
+    function validateUserIsNotBelowOpeningLimitBorrowCR(State storage state, address account) external view {
+        uint256 openingLimitBorrowCR = Math.max(
+            state.riskConfig.crOpening,
+            state.data.users[account].openingLimitBorrowCR // 0 by default, or user-defined if SetUserConfiguration has been used
+        );
+        if (collateralRatio(state, account) < openingLimitBorrowCR) {
+            revert Errors.CR_BELOW_OPENING_LIMIT_BORROW_CR(
+                account, collateralRatio(state, account), openingLimitBorrowCR
+            );
+        }
+    }
+}

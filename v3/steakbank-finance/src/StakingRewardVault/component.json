@@ -1,0 +1,18 @@
+{
+  "component": "StakingRewardVault",
+  "main_contract": "StakingRewardVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb7feb19c1ff49b524a45e0a998330abe1b659960",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

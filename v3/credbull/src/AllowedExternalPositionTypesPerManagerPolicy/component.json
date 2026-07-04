@@ -1,0 +1,18 @@
+{
+  "component": "AllowedExternalPositionTypesPerManagerPolicy",
+  "main_contract": "AllowedExternalPositionTypesPerManagerPolicy",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb6367cd4b67c44e963ae81e9c1757a1c08ede28c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BoostedMasterWombat",
+  "main_contract": "BoostedMasterWombat",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x26d67a2d9ac5fb49d7e7a75df6b97450821a1933",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Multicall2",
+  "main_contract": "Multicall2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfbdd194376de19a88118e84e279b977f165d01b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

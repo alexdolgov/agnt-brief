@@ -1,0 +1,18 @@
+{
+  "component": "HayJoin",
+  "main_contract": "HayJoin",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x121a62d0e6ed0f180b4129124d4b95bf27ac3997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BlackwingNoopDeployer",
+  "main_contract": "BlackwingNoopDeployer",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

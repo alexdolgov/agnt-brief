@@ -1,0 +1,18 @@
+{
+  "component": "EACAggregatorProxy",
+  "main_contract": "EACAggregatorProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

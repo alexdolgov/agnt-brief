@@ -1,0 +1,18 @@
+{
+  "component": "AnteTest-16",
+  "main_contract": "AnteTest",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x65f21e0ea34146d7370d43dedaedaef7a8046d47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

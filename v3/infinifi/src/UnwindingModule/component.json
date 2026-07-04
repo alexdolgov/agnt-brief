@@ -1,0 +1,18 @@
+{
+  "component": "UnwindingModule",
+  "main_contract": "UnwindingModule",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7092a43ae5407666c78dbea657a1891f42b3dfcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

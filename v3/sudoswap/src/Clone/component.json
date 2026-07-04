@@ -1,0 +1,21 @@
+{
+  "component": "Clone",
+  "main_contract": "Clone",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sudoswap/v2-audits/blob/main/cyfrin.pdf",
+    "https://github.com/sudoswap/v2-audits/blob/main/spearbit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x031b216fabec82310fea3426b33455609b99afc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

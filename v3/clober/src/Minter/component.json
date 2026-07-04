@@ -1,0 +1,28 @@
+{
+  "component": "Minter",
+  "main_contract": "Minter",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.clober.io/assets/files/2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc8f98f60ce54e72ccbb18aa8628fa7a2885f098f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

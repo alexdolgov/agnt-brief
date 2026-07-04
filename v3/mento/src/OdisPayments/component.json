@@ -1,0 +1,26 @@
+{
+  "component": "OdisPayments",
+  "main_contract": "OdisPayments",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x9ea5e9b9b48a72325d59b3eba147f42b1b14bf78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xae6b29f31b96e61dddc792f45fda4e4f0356d0cb",
+      "is_proxy": true,
+      "implementation_address": "0x9ea5e9b9b48a72325d59b3eba147f42b1b14bf78",
+      "liveness": "live"
+    }
+  ]
+}

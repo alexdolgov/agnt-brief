@@ -1,0 +1,42 @@
+{
+  "component": "VaultMigratable_Pancake_BUSD_BNB",
+  "main_contract": "VaultMigratable_Pancake_BUSD_BNB",
+  "source_file_count": 26,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0c4c25f6f20d2d4d789433b9953fb21354a289f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3de9c7d3aec7b75bda9ea73600704f945f63476c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6b95e2801dbaf00c3b3a9ce6f0ae486393e7a2dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf7a3a95d0f7e8a5eeae483cdd7b76af287283d34",
+      "is_proxy": true,
+      "implementation_address": "0x6b95e2801dbaf00c3b3a9ce6f0ae486393e7a2dd",
+      "liveness": "live"
+    }
+  ]
+}

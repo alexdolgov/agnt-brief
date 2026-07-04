@@ -1,0 +1,18 @@
+{
+  "component": "MultiRouter",
+  "main_contract": "MultiRouter",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3062627136de797f807bcb63f0d5399a21dfb6c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

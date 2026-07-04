@@ -1,0 +1,82 @@
+{
+  "component": "CreditLine",
+  "main_contract": "CreditLine",
+  "source_file_count": 51,
+  "deployment_count": 9,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x059c8a9bd3ea305fb8c9215c1ee47dfdf835b488",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x08e06685da497fddb15a5fd2fab85daa712ea21b",
+      "is_proxy": true,
+      "implementation_address": "0x1d4e909c63fa8941c8e0a057322a70a1ec92fc7d",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x1d4e909c63fa8941c8e0a057322a70a1ec92fc7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x1f6e6088892118a8d646583ac18635e4485e03b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2230512e84ff61b83c0a943757bdcff45e8d4be9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x36523a22c8f4b09e2871f7083024f4e2cad5dd5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x95deb34b1a752eea10207f388d155eff6b8e8285",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xdb5d3abf19014308a67420344021ceee6003acdd",
+      "is_proxy": true,
+      "implementation_address": "0x1d4e909c63fa8941c8e0a057322a70a1ec92fc7d",
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xf417e8ab3cd149426c5613cd0fd3715f007bd076",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ConverterRegistry",
+  "main_contract": "ConverterRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfee2d164de712d09894b7ae4b00c871f6774b1a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

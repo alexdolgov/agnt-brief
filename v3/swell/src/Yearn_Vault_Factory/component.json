@@ -1,0 +1,18 @@
+{
+  "component": "Yearn_Vault_Factory",
+  "main_contract": "Yearn Vault Factory",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x981771292052c5f77b14a3bd4df22e43a8b17bb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

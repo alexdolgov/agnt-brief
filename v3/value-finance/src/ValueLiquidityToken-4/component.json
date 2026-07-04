@@ -1,0 +1,18 @@
+{
+  "component": "ValueLiquidityToken-4",
+  "main_contract": "ValueLiquidityToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb3a0fa12a7bb34b3c7897c6718d9706be7fea90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

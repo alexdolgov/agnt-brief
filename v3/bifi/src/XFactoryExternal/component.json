@@ -1,0 +1,28 @@
+{
+  "component": "XFactoryExternal",
+  "main_contract": "XFactoryExternal",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BiFi-X/blob/main/docs/bifrost_bifix_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d6d4f3640ae84c0baef0a76c35d1ec5668b70e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x97ae437edbaca2db40cff2e0436b894ff72988af",
+      "is_proxy": true,
+      "implementation_address": "0x3d6d4f3640ae84c0baef0a76c35d1ec5668b70e9",
+      "liveness": "live"
+    }
+  ]
+}

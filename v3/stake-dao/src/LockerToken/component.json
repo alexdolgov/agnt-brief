@@ -1,0 +1,18 @@
+{
+  "component": "LockerToken",
+  "main_contract": "LockerToken",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x01475c4e87252ad066e0a7de08e7ac80171c10e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

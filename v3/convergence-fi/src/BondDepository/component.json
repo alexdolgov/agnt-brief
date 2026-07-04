@@ -1,0 +1,18 @@
+{
+  "component": "BondDepository",
+  "main_contract": "BondDepository",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e43b2064d8f030d282c28e105d683a62f12597c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

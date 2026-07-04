@@ -1,0 +1,18 @@
+{
+  "component": "ERC1271-7",
+  "main_contract": "ERC1271",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x747240559d31f56bb6b92f7817785a65d24163e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

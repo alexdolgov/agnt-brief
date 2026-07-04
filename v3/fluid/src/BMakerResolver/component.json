@@ -1,0 +1,18 @@
+{
+  "component": "BMakerResolver",
+  "main_contract": "BMakerResolver",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0a1f10feefecf25064ce7cdf0a65042f7de7bf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

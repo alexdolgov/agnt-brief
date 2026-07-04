@@ -1,0 +1,18 @@
+{
+  "component": "HoneycombMaster",
+  "main_contract": "HoneycombMaster",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8cc67a178d2b95563dca03a15ec7aee894e3e3e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

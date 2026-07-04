@@ -1,0 +1,18 @@
+{
+  "component": "Blub",
+  "main_contract": "Blub",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0f669808d88b2b0b3d23214dcd2a1cc6a8b1b5cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

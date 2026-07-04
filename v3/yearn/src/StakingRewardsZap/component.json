@@ -1,0 +1,20 @@
+{
+  "component": "StakingRewardsZap",
+  "main_contract": "StakingRewardsZap",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yearn/yearn-security/blob/master/disclosures/2023-05-21.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x37f350dc357222e823620d473d0289c12e1accdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

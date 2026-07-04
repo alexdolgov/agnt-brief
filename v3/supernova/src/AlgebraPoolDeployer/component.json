@@ -1,0 +1,26 @@
+{
+  "component": "AlgebraPoolDeployer",
+  "main_contract": "AlgebraPoolDeployer",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45bc0f9855a626743d57d37d989f3b9462deba45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde5ffe32739162deddffaa58cb41ab7285e71776",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

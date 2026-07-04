@@ -1,0 +1,18 @@
+{
+  "component": "StableSwapLP",
+  "main_contract": "StableSwapLP",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c43dca54fdd9b43c1f627edfb9e24d5b387a84c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

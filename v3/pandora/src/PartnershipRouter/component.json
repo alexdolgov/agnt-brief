@@ -1,0 +1,18 @@
+{
+  "component": "PartnershipRouter",
+  "main_contract": "PartnershipRouter",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd3c0c303a31995d22dc60cb936d3dd212a037a86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

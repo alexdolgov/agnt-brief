@@ -1,0 +1,26 @@
+{
+  "component": "USDTokenModule",
+  "main_contract": "USDTokenModule",
+  "source_file_count": 36,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3a650ef07d45133e02a0a412bf653121ff5bfd13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6e78b99d441bd1a78c7fbb61195e58e07e9601c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

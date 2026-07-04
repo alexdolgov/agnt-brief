@@ -1,0 +1,18 @@
+{
+  "component": "SovereignPool-2",
+  "main_contract": "SovereignPool",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd9a406dbc1a301b0d2ed5ba0d9398c4debe68202",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

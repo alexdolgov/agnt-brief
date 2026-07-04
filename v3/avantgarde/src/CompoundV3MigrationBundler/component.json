@@ -1,0 +1,27 @@
+{
+  "component": "CompoundV3MigrationBundler",
+  "main_contract": "CompoundV3MigrationBundler",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/morpho-org/vault-v2-adapter-registries/blob/main/audits/2025-09-11-spearbit.pdf",
+    "https://github.com/morpho-org/vault-v2-adapter-registries/blob/main/audits/2025-12-04-market-v1-adapter-v2-certora.pdf",
+    "https://github.com/morpho-org/vault-v2/blob/main/audits/2025-09-15-blackthorn.pdf",
+    "https://github.com/morpho-org/vault-v2/blob/main/audits/2025-09-15-chainsecurity.pdf",
+    "https://github.com/morpho-org/vault-v2/blob/main/audits/2025-09-15-spearbit.pdf",
+    "https://github.com/morpho-org/vault-v2/blob/main/audits/2025-12-04-market-v1-adapter-v2-blackthorn.pdf",
+    "https://github.com/morpho-org/vault-v2/blob/main/audits/2025-12-04-market-v1-adapter-v2-spearbit.pdf",
+    "https://github.com/morpho-org/vault-v2/blob/main/audits/2025-12-15-market-v1-adapter-v2-certora.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a0e2e9fb9c95fbc843daf166276c90b6c479558",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

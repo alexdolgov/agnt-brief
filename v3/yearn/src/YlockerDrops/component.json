@@ -1,0 +1,18 @@
+{
+  "component": "YlockerDrops",
+  "main_contract": "YlockerDrops",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a8bda95dd5404de1c56859d6b8b5d7ae7a0215c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

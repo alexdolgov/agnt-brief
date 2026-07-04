@@ -1,0 +1,26 @@
+{
+  "component": "APYPoolToken",
+  "main_contract": "APYPoolToken",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21347bf816051ffa9a6456536fcdd2cea44bce75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3dea1f053ab24b0c5b0c663b1c07b6b702e973d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

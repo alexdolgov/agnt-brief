@@ -1,0 +1,26 @@
+{
+  "component": "RatesManager",
+  "main_contract": "RatesManager",
+  "source_file_count": 29,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd58f48f533e3896b51854bd95165fdd87605497a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfc3631012bf0c6a24ebfc8eb8a8ed76aa1ff1686",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

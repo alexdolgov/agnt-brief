@@ -1,0 +1,26 @@
+{
+  "component": "ConcentratorHarvesterFacet",
+  "main_contract": "ConcentratorHarvesterFacet",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b544befd7a51d5cdb40f79eef5205f16a63cd98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa86aa141e45da5183b42792d99dede3d26ec515",
+      "is_proxy": true,
+      "implementation_address": "0x1b544befd7a51d5cdb40f79eef5205f16a63cd98",
+      "liveness": "inactive"
+    }
+  ]
+}

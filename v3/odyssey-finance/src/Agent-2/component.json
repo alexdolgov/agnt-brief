@@ -1,0 +1,18 @@
+{
+  "component": "Agent-2",
+  "main_contract": "Agent",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

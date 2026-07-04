@@ -1,0 +1,18 @@
+{
+  "component": "FlashLiquidatorV2",
+  "main_contract": "FlashLiquidatorV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4752206fc014c2c142ff731be7e69d9d89d418fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

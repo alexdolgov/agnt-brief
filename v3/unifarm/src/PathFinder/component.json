@@ -1,0 +1,18 @@
+{
+  "component": "PathFinder",
+  "main_contract": "PathFinder",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xab5983822b8e69d5900689c266f471e72ab6c2e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

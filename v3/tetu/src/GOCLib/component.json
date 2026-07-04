@@ -1,0 +1,18 @@
+{
+  "component": "GOCLib",
+  "main_contract": "GOCLib",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x012d1be0ab3e7e9b3d5dd1acc30b54dd29b1f43a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

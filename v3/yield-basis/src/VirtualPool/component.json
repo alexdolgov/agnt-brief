@@ -1,0 +1,18 @@
+{
+  "component": "VirtualPool",
+  "main_contract": "VirtualPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x04ca7a7e602335a261b63128e89d43b6fe1e2c87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

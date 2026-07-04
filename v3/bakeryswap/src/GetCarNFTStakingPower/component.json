@@ -1,0 +1,18 @@
+{
+  "component": "GetCarNFTStakingPower",
+  "main_contract": "GetCarNFTStakingPower",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x38e90ad2e3fa7af9678a39d143e8fad39b989e5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

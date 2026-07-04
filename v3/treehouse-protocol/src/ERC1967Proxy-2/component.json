@@ -1,0 +1,28 @@
+{
+  "component": "ERC1967Proxy-2",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x14a84f1a61ccd7d1be596a6cc11fe33a36bc1646",
+      "is_proxy": true,
+      "implementation_address": "0xb6374448c68186e3138c994fce4437d26d486d3a",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb6374448c68186e3138c994fce4437d26d486d3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

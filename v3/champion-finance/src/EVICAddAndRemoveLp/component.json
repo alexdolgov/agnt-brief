@@ -1,0 +1,18 @@
+{
+  "component": "EVICAddAndRemoveLp",
+  "main_contract": "EVICAddAndRemoveLp",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xce4783d75ccd76131cf83453537bc28187ddab80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

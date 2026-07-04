@@ -1,0 +1,18 @@
+{
+  "component": "AccessControlDefaultAdminRules-4",
+  "main_contract": "AccessControlDefaultAdminRules",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd615270ab3a7a3a262a4e49935d002278c76b78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

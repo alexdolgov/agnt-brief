@@ -1,0 +1,18 @@
+{
+  "component": "ShareConverter",
+  "main_contract": "ShareConverter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x57cda125d0c7b146a8320614ccd6c55999d15bf2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

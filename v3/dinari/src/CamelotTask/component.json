@@ -1,0 +1,18 @@
+{
+  "component": "CamelotTask",
+  "main_contract": "CamelotTask",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc19922c48e75be5c22777278b422eb1a0b7993fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

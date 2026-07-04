@@ -1,0 +1,20 @@
+{
+  "component": "AFiOracle",
+  "main_contract": "AFiOracle",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/aarna-protocol"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11747c3284b5f8088e815e5cf2e5c3062da55d5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

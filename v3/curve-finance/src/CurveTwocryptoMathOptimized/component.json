@@ -1,0 +1,18 @@
+{
+  "component": "CurveTwocryptoMathOptimized",
+  "main_contract": "CurveTwocryptoMathOptimized",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fd8af16dc4bebd950521308d55d0543b6cdf4a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

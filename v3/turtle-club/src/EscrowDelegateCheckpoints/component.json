@@ -1,0 +1,42 @@
+{
+  "component": "EscrowDelegateCheckpoints",
+  "main_contract": "EscrowDelegateCheckpoints",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x17a785e0b969cdcf2f6c2f4a4f2988f90b9d43d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x5310a5fa1995a8503c7cbc25fa2ce982d6541e27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x73aebf4fc47b6ee32a15520bdf720e58bb429bcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa615388bd2f920ee2fec7606f26908b454f0c249",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

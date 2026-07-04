@@ -1,0 +1,26 @@
+{
+  "component": "FounderStaker",
+  "main_contract": "FounderStaker",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x82309a9cd3e976a76e7977d9b94cc57ae05edf68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdfaff34c78cbb42a13e1742603ab462a11a17319",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

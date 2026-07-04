@@ -1,0 +1,18 @@
+{
+  "component": "TermEventEmitter",
+  "main_contract": "TermEventEmitter",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c41cc8495cf570b825fcf17ec4c9159e728cc4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

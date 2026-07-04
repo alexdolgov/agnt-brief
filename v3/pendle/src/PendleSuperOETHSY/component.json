@@ -1,0 +1,18 @@
+{
+  "component": "PendleSuperOETHSY",
+  "main_contract": "PendleSuperOETHSY",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x35c16314d6ee4753289e5cc15a5c5e1dd4ead345",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

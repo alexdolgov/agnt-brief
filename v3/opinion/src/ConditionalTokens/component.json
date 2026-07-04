@@ -1,0 +1,28 @@
+{
+  "component": "ConditionalTokens",
+  "main_contract": "ConditionalTokens",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://static.opinion.trade/opinion-v1-scalebit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x51d1a62d41e93b983ef29aec04f30ded66c6eb54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xad1a38cec043e70e83a3ec30443db285ed10d774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

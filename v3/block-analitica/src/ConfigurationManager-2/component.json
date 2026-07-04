@@ -1,0 +1,25 @@
+{
+  "component": "ConfigurationManager-2",
+  "main_contract": "ConfigurationManager",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf",
+    "https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions",
+    "https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension",
+    "https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ae7fbaecfbdb21c28b1854272bb7a3a813e2a66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

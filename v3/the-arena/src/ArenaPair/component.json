@@ -1,0 +1,18 @@
+{
+  "component": "ArenaPair",
+  "main_contract": "ArenaPair",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x73b365a5f36502c81886ff604d9f0f43404bbe95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "EmissionManager",
+  "main_contract": "EmissionManager",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe85d5d7f0b627a545e29248cb1a6807b28ca2d51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

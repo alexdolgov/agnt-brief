@@ -1,0 +1,60 @@
+{
+  "component": "WETHPriceFeed",
+  "main_contract": "WETHPriceFeed",
+  "source_file_count": 50,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/competitions/d86632df-ab33-4448-8198-64955eae6712"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0daafddcf74451caec724bcd2f0d7e4025c95b94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2113468843cf2d0fd976690f4ec6e4213df46911",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x629b6c0dcdf865584fd58a08727abb9db7390e28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x653df748bf7a692555dcdbf4c504a8c84807f7c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7f575323ddedfbad449fef5459fad031fe49520b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf125c72ae447efdf3fa3601eda9ac0ebec06cbb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

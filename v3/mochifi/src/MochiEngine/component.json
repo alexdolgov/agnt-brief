@@ -1,0 +1,18 @@
+{
+  "component": "MochiEngine",
+  "main_contract": "MochiEngine",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x860e47e6d6f4a6bcaaddfc7f17f772d2ab55be2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

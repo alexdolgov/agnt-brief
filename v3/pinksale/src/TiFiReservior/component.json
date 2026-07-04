@@ -1,0 +1,18 @@
+{
+  "component": "TiFiReservior",
+  "main_contract": "TiFiReservior",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0aeff3d761f6706295f3828c87cce29c9418a93b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

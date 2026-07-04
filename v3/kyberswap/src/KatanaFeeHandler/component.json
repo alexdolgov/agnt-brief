@@ -1,0 +1,18 @@
+{
+  "component": "KatanaFeeHandler",
+  "main_contract": "KatanaFeeHandler",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fb131efbac23b735d7764ab12f9e52cc68401ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

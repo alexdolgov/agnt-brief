@@ -1,0 +1,18 @@
+{
+  "component": "ProxyWalletFactory",
+  "main_contract": "ProxyWalletFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xab45c5a4b0c941a2f231c04c3f49182e1a254052",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

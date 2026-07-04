@@ -1,0 +1,18 @@
+{
+  "component": "StabilityFeeTreasury",
+  "main_contract": "StabilityFeeTreasury",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe9e54c55d41d6622933f9f736e0c55484b3c4f6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

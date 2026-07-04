@@ -1,0 +1,18 @@
+{
+  "component": "CateSwap-2",
+  "main_contract": "CateSwap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x71ec358dae4dd1450b6937b6129d4e98f6ac8a51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

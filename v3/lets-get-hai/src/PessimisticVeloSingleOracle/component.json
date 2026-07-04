@@ -1,0 +1,50 @@
+{
+  "component": "PessimisticVeloSingleOracle",
+  "main_contract": "PessimisticVeloSingleOracle",
+  "source_file_count": 16,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2d442a71e7dc14068168a7e0680abcc043e26585",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x557c249ee1b982397ae0fcf3da94665fb2a19e6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x898e7451615d1139ef963c4f42de8d21c5d1c91a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8cb1264aaaed03c086d43d2bcf9e355faa9d7bcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdfeb54652fd19c02c74e1827e049c812f2ff5448",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

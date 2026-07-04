@@ -1,0 +1,60 @@
+# jetfuel-finance — deployments
+
+54 verified deployment(s) across 54 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| bsc | `0x00589273cfda2d74a0bee8cc7316919d52db964b` | StrategyBakeryLP | impl | live | no |
+| bsc | `0x013bc4281cca84c3c2fac7203c4d2859099dce60` | SmartChef | impl | live | no |
+| bsc | `0x01588b79b8b9c5dfd4d7199a978c4404d5daf7fc` | StrategyJetfuelLP | impl | live | no |
+| bsc | `0x0196f8e442006a35a89734de83fc04c0d6675ae2` | IJO | impl | live | no |
+| bsc | `0x032bb900363be7a2fa566694a7f065f13820ecda` | JetfuelVault | impl | live | no |
+| bsc | `0x0487b824c8261462f88940f97053e65bdb498446` | WingsToken | impl | live | no |
+| bsc | `0x050015dedfd2b063a706c98bfa82b3c98b1da25f` | JetfuelVenusVaultv2 | impl | live | no |
+| bsc | `0x06fd5cab123990a0dd0ba2130bfa76da26c91b43` | JetswapVault | impl | live | no |
+| bsc | `0x098daf85bed3ad16a284c4c5f2b04e5d84cd057c` | StrategyJetfuelBSCEX | impl | live | no |
+| bsc | `0x0a8ab9f4c04b62ba48d513b39f0ae0c3e6997d8b` | JetfuelBSCEXVault | impl | live | no |
+| bsc | `0x0d9ab0182a8004014dd22b7b6f614d07d13eedb6` | StrategyWingsLP | impl | live | no |
+| bsc | `0x0eb58e5c8aa63314ff5547289185cc4583dfcbd5` | JetswapFactory | impl | live | no |
+| bsc | `0x15e84d6ed8997590e02b25d3d3ceee9686753306` | JetfuelFortressVaultBNB | impl | live | no |
+| bsc | `0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a` | BEP20 | impl | live | no |
+| bsc | `0x227f9a94815d3a30ef8ffb7302a1793d05cd2113` | JetfuelVaultV2 | impl | live | no |
+| bsc | `0x2a950cafa914d898cbf7a7daa71eebc73e7ec051` | D100Presale | impl | live | no |
+| bsc | `0x2d211236ccad202bc5548d0243d0e7819ed995dd` | JetfuelAutoVault | impl | live | no |
+| bsc | `0x2fc22a43bb759cfa07fed29cf4b40d2508e777d2` | FortressIJO | impl | live | no |
+| bsc | `0x31a85811322211f5f7b2405e5eb2b2567f98f79a` | StrategyCakeSmart | impl | live | no |
+| bsc | `0x3b4ac854160d97da09a183559cc8441f30de2a57` | StrategyVenus | impl | live | no |
+| bsc | `0x3c0c0e0732ce790c4d30dbaa0a0eccb3c01014aa` | StrategyVenusv2 | impl | live | no |
+| bsc | `0x3c975a1f55d897cf7541693e732d6d474bedf9b1` | StrategyApe | impl | live | no |
+| bsc | `0x3d6d415be40159f207540f95e398f29a7173dc20` | JetfuelVaultDittoBoost | impl | live | no |
+| bsc | `0x408951aa05906cda702e52139a027d29d247fdb7` | StrategyAutoLP | impl | live | no |
+| bsc | `0x41aff2c6bdf200d205de307f597db738c0bf2922` | RewardPool | impl | live | no |
+| bsc | `0x4628726f2ae19282c55fc464ed0553170ff899cb` | ERC165 | impl | live | no |
+| bsc | `0x58b8b3430c70e76a33e91a6c942078b8f88c506d` | StrategyFortressBNB | impl | live | no |
+| bsc | `0x5f136383e230f972739fae2e81e7e774afe64c66` | GFORCEv2 | impl | live | no |
+| bsc | `0x63d6ec1cdef04464287e2af710ffef9780b6f9f5` | BEP20-2 | impl | live | no |
+| bsc | `0x647db6dce3c36ac1a3ba48f0f6b767a6c73e22d2` | JetfuelFortressVault | impl | live | no |
+| bsc | `0x6d8f1fd50f0ce0d93ded70ec2194e5a6bb49a0e9` | StrategyCakeBest | impl | live | no |
+| bsc | `0x715067fb405dc42bb0a201c31748dc15c24a944f` | StrategyAutoV2 | impl | live | no |
+| bsc | `0x7c6d9eef78b07fc13d6742b6473a4ffb1dbd4afa` | JetfuelCakeBestVaultv2 | impl | live | no |
+| bsc | `0x86f4bc1ebf2c209d12d3587b7085aea5707d4b56` | BEP20-3 | impl | live | no |
+| bsc | `0x87b7972453d03e344d4fdf8dd5bef6ca692352f1` | StrategyAutoLPv2 | impl | live | no |
+| bsc | `0x8f218191da87e736c859f7c57922561c4641bb28` | ERC165-2 | impl | live | no |
+| bsc | `0x937f23ef476b6747b37f2125cbb257fc42e10f98` | JetfuelVenusVault | impl | live | no |
+| bsc | `0x94222bd8c1fc5ca4014fec75550aaced124783e8` | FTSTimeLock | impl | live | no |
+| bsc | `0x94babbe728d9411612ee41b20241a6fa251b26ce` | GFORCE | impl | live | no |
+| bsc | `0x956bce4f086dc4579b960ed80336ef79737cdaa3` | StrategyVenusBNBV2 | impl | live | no |
+| bsc | `0x9c0287709e3c60bfccefdfbfccefdad57aef5b8d` | HarvestMoonTicket | impl | live | no |
+| bsc | `0x9c202a3bf2ed24c6667f607d62b1fabbfcd8ae1e` | SmartChefInitializable | impl | live | no |
+| bsc | `0xa3a3e10ceecd7ed81536a6c529bec1e4fb475cfb` | JetBar | impl | live | no |
+| bsc | `0xa6b4c20a45df1b47d15c66af601f5aa599bdbb60` | JetfuelAutoVaultv2 | impl | live | no |
+| bsc | `0xb65be412326e54811ff47f0130c0d8be0776e0bf` | TRYONPresale | impl | live | no |
+| bsc | `0xb8ceea3951097a5efc46746aeafc339b28c8714c` | StrategyCakeBestv2 | impl | live | no |
+| bsc | `0xbe65b8f75b9f20f4c522e0067a3887fada714800` | JetswapRouter | impl | live | no |
+| bsc | `0xbfb7c6dd4037285a387d021fdad9383a71871d96` | StrategyApeLP | impl | live | no |
+| bsc | `0xc15bb35a1752a40be9d5090e784a896074e1cd89` | JetfuelVenusVaultBNB | impl | live | no |
+| bsc | `0xcf2ef295115068bb4e4a37451210a97a02718874` | GFCEPresale | impl | live | no |
+| bsc | `0xd079475f820bb3a01932083382aed733d3d61b47` | BEP20-4 | impl | live | no |
+| bsc | `0xdc012ee194179ceb4f5431015148b0da1f964e1a` | StrategyFortress | impl | live | no |
+| bsc | `0xf150fd19a8f88668099eab23291162124f24e06f` | StrategyWingsSingleVault | impl | live | no |
+| bsc | `0xfb991a9bcbafc9931eb78ca6816e388f90d67ec7` | BEP20Token | impl | live | no |

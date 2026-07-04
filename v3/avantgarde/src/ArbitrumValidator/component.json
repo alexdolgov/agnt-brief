@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrumValidator",
+  "main_contract": "ArbitrumValidator",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31982c9e5edd99bb923a948252167ea4bbc38ac1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

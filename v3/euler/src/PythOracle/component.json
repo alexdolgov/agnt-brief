@@ -1,0 +1,27 @@
+{
+  "component": "PythOracle",
+  "main_contract": "PythOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20yAudit%20report%20(EVC%20%2B%20EVK%20%2B%20Price%20Oracle).pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_ChainSecurity_Report.pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_Omniscia_Report.pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_OpenZeppelin_Report.pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_Spearbit_Report_DRAFT.pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_yAudit_Report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/yAudit_EVK_report.pdf",
+    "https://omniscia.io/reports/euler-finance-evk-price-oracles-660812035fc1c30018641b22"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0081d84174d84ee37973fc553b2a3a0101873193",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

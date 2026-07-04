@@ -1,0 +1,18 @@
+{
+  "component": "Restaking-4",
+  "main_contract": "Restaking",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x595994971243d986fc9e19337fe85dcac3a0fa96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

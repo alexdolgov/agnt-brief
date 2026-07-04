@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedChainlinkUniswapV3TWAPx2",
+  "main_contract": "PriceFeedChainlinkUniswapV3TWAPx2",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8377724e9fbe497f16abc423e42d365e6d963d34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

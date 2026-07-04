@@ -1,0 +1,18 @@
+{
+  "component": "ToucanCarbonOffsetsBase",
+  "main_contract": "ToucanCarbonOffsetsBase",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1671a112fd50870b45d1d44f5aaff8de50229f44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

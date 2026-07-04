@@ -1,0 +1,18 @@
+{
+  "component": "UnipilotMarketingTokenVesting",
+  "main_contract": "UnipilotMarketingTokenVesting",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa855e50537571d3cb242243e70e617166e628e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

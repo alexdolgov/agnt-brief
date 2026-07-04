@@ -1,0 +1,27 @@
+{
+  "component": "Protocol",
+  "main_contract": "Protocol",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/CoverProtocol/cover-core-v1/blob/main/peckshield-audit-report-cover-v1.0.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Arcadia-Cover-Blacksmith-Audit.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Cover%20Protocol%20-%20Report%20-%20V2%20by%20Quantstamp.pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/Cover%20Protocol%20v2%20Security%20Audit%20Report%20(merged).pdf",
+    "https://github.com/CoverProtocol/cover-security/blob/master/audits/peckshield-audit-report-cover-v1.0.pdf",
+    "https://github.com/CoverProtocol/cover-token-mining/blob/main/Cover%20Audit.pdf",
+    "https://raw.githubusercontent.com/CoverProtocol/cover-core-v1/b34b3495bb13fa21157bfbc04f475027533315c8/peckshield-audit-report-cover-v1.0.pdf",
+    "https://raw.githubusercontent.com/CoverProtocol/cover-token-mining/2e3a18646ef04a9c2c57c1cf0410fba3b2c41ac6/Cover%20Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1349c51b28772f725e193c21597c0a41a715d504",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

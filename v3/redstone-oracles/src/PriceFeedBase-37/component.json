@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedBase-37",
+  "main_contract": "PriceFeedBase",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6f57ff507735bcd3d86af83af77abd10395b2904",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

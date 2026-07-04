@@ -1,0 +1,18 @@
+{
+  "component": "CLTHelper-2",
+  "main_contract": "CLTHelper",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x965356eb2c208ce4130e267342ca720042cce7b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

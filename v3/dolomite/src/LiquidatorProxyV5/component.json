@@ -1,0 +1,18 @@
+{
+  "component": "LiquidatorProxyV5",
+  "main_contract": "LiquidatorProxyV5",
+  "source_file_count": 57,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1506f80d2fd5fbef2424573ec86e5481c972b99a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

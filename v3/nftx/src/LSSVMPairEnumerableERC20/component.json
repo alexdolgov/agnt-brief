@@ -1,0 +1,18 @@
+{
+  "component": "LSSVMPairEnumerableERC20",
+  "main_contract": "LSSVMPairEnumerableERC20",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd42638863462d2f21bb7d4275d7637ee5d5541eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

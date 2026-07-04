@@ -1,0 +1,18 @@
+{
+  "component": "RewardReader",
+  "main_contract": "RewardReader",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x676cf948e84560808eefb7af9d3a46e0d6a6f988",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

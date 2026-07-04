@@ -1,0 +1,18 @@
+{
+  "component": "FeeProvider",
+  "main_contract": "FeeProvider",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25ee6ea9353e0ffa3155655f3df9140684671f36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

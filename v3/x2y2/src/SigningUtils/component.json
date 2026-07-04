@@ -1,0 +1,18 @@
+{
+  "component": "SigningUtils",
+  "main_contract": "SigningUtils",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a7acf3feb58fcf15f74b73391c78a879f7c9e35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

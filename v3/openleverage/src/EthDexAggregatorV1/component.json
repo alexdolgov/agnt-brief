@@ -1,0 +1,50 @@
+{
+  "component": "EthDexAggregatorV1",
+  "main_contract": "EthDexAggregatorV1",
+  "source_file_count": 27,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0618bb1d384fb98aff54344c659863a114d67e18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c18cf7fbb321f41cbc163248a298c66a377eece",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7465cb9f4b1d726742c37def37b5c6c523a646cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa0e2445805322b96cc1a9d0be7eee63d5c9e06af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd78b5db4aec619779b4c7d1ab99e290e6347d66a",
+      "is_proxy": true,
+      "implementation_address": "0x6c18cf7fbb321f41cbc163248a298c66a377eece",
+      "liveness": "inactive"
+    }
+  ]
+}

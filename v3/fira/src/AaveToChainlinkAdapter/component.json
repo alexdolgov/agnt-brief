@@ -1,0 +1,18 @@
+{
+  "component": "AaveToChainlinkAdapter",
+  "main_contract": "AaveToChainlinkAdapter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d7346578be9b82e0227d027bd86f6de59ba3c91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

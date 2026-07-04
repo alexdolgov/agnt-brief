@@ -1,0 +1,18 @@
+{
+  "component": "LockingCrowdSale",
+  "main_contract": "LockingCrowdSale",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfbfd266bf3b49db8746155aa318d4533cc66db26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

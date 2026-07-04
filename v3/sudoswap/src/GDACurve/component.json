@@ -1,0 +1,20 @@
+{
+  "component": "GDACurve",
+  "main_contract": "GDACurve",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sudoswap/v2-audits/blob/main/cyfrin.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fd5876d4a3860eb0159055a3b7cb79fdfff6b67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

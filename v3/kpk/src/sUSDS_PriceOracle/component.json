@@ -1,0 +1,18 @@
+{
+  "component": "sUSDS_PriceOracle",
+  "main_contract": "sUSDS_PriceOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x76752e33050f2011cacd3edbbb8125ee1e49c140",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

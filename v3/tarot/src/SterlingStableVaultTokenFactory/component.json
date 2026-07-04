@@ -1,0 +1,18 @@
+{
+  "component": "SterlingStableVaultTokenFactory",
+  "main_contract": "SterlingStableVaultTokenFactory",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x416ae142dbbe08531be93a83b13d93837a4830c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

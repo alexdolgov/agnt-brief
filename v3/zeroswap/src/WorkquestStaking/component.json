@@ -1,0 +1,18 @@
+{
+  "component": "WorkquestStaking",
+  "main_contract": "WorkquestStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ce9f9e6b011a088ed5bb5b28a97560654bca196",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

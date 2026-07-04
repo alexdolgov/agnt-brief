@@ -1,0 +1,18 @@
+{
+  "component": "MintGatewayUpgrader",
+  "main_contract": "MintGatewayUpgrader",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13773093cdad89e8e1615f581a37c7eeabb04804",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

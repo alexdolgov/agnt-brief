@@ -1,0 +1,18 @@
+{
+  "component": "yPawRefund",
+  "main_contract": "yPawRefund",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xe9405de9ee6684fee4d7c0489fe3219a878a96b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC6909Wrappable",
+  "main_contract": "ERC6909Wrappable",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd98b5b2e4d5d6cd554115de19efb7a9084beddd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

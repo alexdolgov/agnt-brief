@@ -1,0 +1,34 @@
+{
+  "component": "MSpellStakingSpoke",
+  "main_contract": "MSpellStakingSpoke",
+  "source_file_count": 37,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3886a691e88f1a51918b915aa1a0dfbc9af5f755",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5980ee2944a52719e6fd93a07269b1e97f65ec5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbbb3bc7cbb4f51a10cb4578d5fea6e709539900a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

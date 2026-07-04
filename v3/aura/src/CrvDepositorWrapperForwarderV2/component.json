@@ -1,0 +1,18 @@
+{
+  "component": "CrvDepositorWrapperForwarderV2",
+  "main_contract": "CrvDepositorWrapperForwarderV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d6fc281587dc8a20f5e5cf9035c19751a12ef8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

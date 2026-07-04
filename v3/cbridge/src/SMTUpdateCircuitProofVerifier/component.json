@@ -1,0 +1,18 @@
+{
+  "component": "SMTUpdateCircuitProofVerifier",
+  "main_contract": "SMTUpdateCircuitProofVerifier",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2167fc3fab0c65ebf658d0c6ce0e670f497c4e27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

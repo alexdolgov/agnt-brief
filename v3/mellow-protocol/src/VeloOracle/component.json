@@ -1,0 +1,18 @@
+{
+  "component": "VeloOracle",
+  "main_contract": "VeloOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0e53a7e266c5970d510581961f5a917bc19c9426",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PlatformMigrator-2",
+  "main_contract": "PlatformMigrator",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4ecdb47bdf6e6b5551f15674a6470da91416c968",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

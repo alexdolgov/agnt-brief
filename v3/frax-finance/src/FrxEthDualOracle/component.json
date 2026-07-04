@@ -1,0 +1,18 @@
+{
+  "component": "FrxEthDualOracle",
+  "main_contract": "FrxEthDualOracle",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x4b0ca693e29e5fd2aa39332a0387bbcd0f91a527",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

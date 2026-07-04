@@ -1,0 +1,18 @@
+{
+  "component": "Curation",
+  "main_contract": "Curation",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d2b24947680fce35d5c9dd6a4e32649f12c176c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

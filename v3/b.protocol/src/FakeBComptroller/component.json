@@ -1,0 +1,18 @@
+{
+  "component": "FakeBComptroller",
+  "main_contract": "FakeBComptroller",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa6ba9a68430dc7b21f7b8ab9d23ea3ff0c008b6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

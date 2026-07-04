@@ -1,0 +1,18 @@
+{
+  "component": "PSMVariant1Actions",
+  "main_contract": "PSMVariant1Actions",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0a61f2963622e992e6534bde4d52fd0a89f39e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CryptoPunksMarket",
+  "main_contract": "CryptoPunksMarket",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

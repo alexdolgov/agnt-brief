@@ -1,0 +1,18 @@
+{
+  "component": "TomVault",
+  "main_contract": "TomVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MonoCooler",
+  "main_contract": "MonoCooler",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb591ea2e5db886da872654d58f6cc584b68e7cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

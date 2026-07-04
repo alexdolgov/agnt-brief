@@ -1,0 +1,18 @@
+{
+  "component": "TSAggregator_V2",
+  "main_contract": "TSAggregator_V2",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb1970f2157a1b24d40f98b252f4f60b45c7aaeed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

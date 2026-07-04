@@ -1,0 +1,18 @@
+{
+  "component": "CoverageLens",
+  "main_contract": "CoverageLens",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1942a91d84b670d21d424f30fa583f45448e621",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

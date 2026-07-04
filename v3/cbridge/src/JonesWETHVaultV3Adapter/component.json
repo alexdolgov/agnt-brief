@@ -1,0 +1,18 @@
+{
+  "component": "JonesWETHVaultV3Adapter",
+  "main_contract": "JonesWETHVaultV3Adapter",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x086d9abc69c60b75470e620221cd857bcdbe7772",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

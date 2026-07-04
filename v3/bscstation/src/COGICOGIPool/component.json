@@ -1,0 +1,18 @@
+{
+  "component": "COGICOGIPool",
+  "main_contract": "COGICOGIPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa3d0407de3da12593537e0e685e3b8be2648b092",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "FXSSwapper",
+  "main_contract": "FXSSwapper",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dce36d00bb398cb01390a0769260b84edded929",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80617e6a0fa8e018ceb6ddb9037999b6bb7f9b2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

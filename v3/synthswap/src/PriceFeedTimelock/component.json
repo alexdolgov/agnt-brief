@@ -1,0 +1,18 @@
+{
+  "component": "PriceFeedTimelock",
+  "main_contract": "PriceFeedTimelock",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe4a5dd981d16aa83cf66d2b5dcd1482c6f20b837",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

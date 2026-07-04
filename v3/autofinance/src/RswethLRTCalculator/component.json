@@ -1,0 +1,18 @@
+{
+  "component": "RswethLRTCalculator",
+  "main_contract": "RswethLRTCalculator",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe861c6eb5376ada41bcc238080439724fe15b90f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

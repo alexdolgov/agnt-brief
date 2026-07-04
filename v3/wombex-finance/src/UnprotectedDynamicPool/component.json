@@ -1,0 +1,18 @@
+{
+  "component": "UnprotectedDynamicPool",
+  "main_contract": "UnprotectedDynamicPool",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0553f270e3a219b409770c0c208b68037cc2bd73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

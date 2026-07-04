@@ -1,0 +1,56 @@
+{
+  "component": "DistributionManager",
+  "main_contract": "DistributionManager",
+  "source_file_count": 31,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/Silo%20-%20Defaulting%20Liquidations%20-%20Final%20Report%20.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/reports/Silo%20-%20Liquidation-by-Defaulting%20-%20Draft%20Report.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/2026-02_Security%20Review_Silo%20Finance_Silo_v3.pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf",
+    "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/report-cli-cantina-silo-finance-0124.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2375eba92e1b7ace8585ae7e2d23fedc10887493",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2a3ba33389cedaf9bbc8b00f5f9e8732d805e3e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x66cfbfb5a8256da57e486164b791b7778927bab8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa013e7252edfb2ce93eee4073dc03eda16afcfef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd9393fd2140e73ca6b82ee60cc6de9b8a12eabb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

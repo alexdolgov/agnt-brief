@@ -1,0 +1,18 @@
+{
+  "component": "PoolRegistry",
+  "main_contract": "PoolRegistry",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x41a5881c17185383e19df6fa4ec158a6f4851a69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AtvBoosterTL",
+  "main_contract": "AtvBoosterTL",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x283775555757e74077d101a7cc76b6e86dd9ae88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

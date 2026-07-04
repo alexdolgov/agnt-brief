@@ -1,0 +1,18 @@
+{
+  "component": "Comp-2",
+  "main_contract": "Comp",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4cb328a82bdf5f03eb737f37fa6b370aef3e888",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

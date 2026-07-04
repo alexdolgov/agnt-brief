@@ -1,0 +1,36 @@
+{
+  "component": "Proxy-2",
+  "main_contract": "Proxy",
+  "source_file_count": 6,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://316135650-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Me8Xn_pJtAjktHi3oBg%2Fuploads%2FMxXQOMXoIFZ6uFjz3G4c%2FPeckShield-Audit-Report-Tetuv2-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x00379dd90b2a337c4652e286e4fbceadef940a21",
+      "is_proxy": true,
+      "implementation_address": "0x7a01373ce828efe3d1f692ee30794ed73999005c",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x03fd3ae2758ab37e8692e1844e0692e9b058c735",
+      "is_proxy": true,
+      "implementation_address": "0x6f23dc46dca3f08d625b48e0c7735aec32fb234b",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x57205cc741f8787a5195b2126607ac505e11b650",
+      "is_proxy": true,
+      "implementation_address": "0x143fa62000f135e7941a9e8e26cac50419454045",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "HTLCDebtLibV2",
+  "main_contract": "HTLCDebtLibV2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x47be7cc7c13315fdd1bbf3dbab512af23961ba53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

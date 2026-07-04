@@ -1,0 +1,28 @@
+{
+  "component": "ZivoeTrancheToken",
+  "main_contract": "ZivoeTrancheToken",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Core_Contracts.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa923fa389de41c4fc56bd3b9a99c142c81ab6dd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

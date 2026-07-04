@@ -1,0 +1,18 @@
+{
+  "component": "EscrowedIlluvium2",
+  "main_contract": "EscrowedIlluvium2",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e77dcb127f99ece88230a64db8d595f31f1b068",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

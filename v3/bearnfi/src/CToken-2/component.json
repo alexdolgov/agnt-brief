@@ -1,0 +1,18 @@
+{
+  "component": "CToken-2",
+  "main_contract": "CToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x16c98f0a7948b3094769301d545aa664d0675afe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "component": "TrackingRewardStreams",
+  "main_contract": "TrackingRewardStreams",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/Certora_EVK_report.pdf",
+    "https://github.com/euler-xyz/reward-streams/blob/master/audits/Euler%20Hunter%20Security%20report.pdf",
+    "https://github.com/euler-xyz/reward-streams/blob/master/audits/Euler%20MixBytes%20report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d52d06ceb8dcdeeb40cfd9f17489b350dd7f8a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

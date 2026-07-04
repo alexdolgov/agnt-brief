@@ -1,0 +1,18 @@
+{
+  "component": "AddLiquidityHelper",
+  "main_contract": "AddLiquidityHelper",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xae672d88eff0bc3f561044e7f41ee7099610fa97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

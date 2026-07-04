@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Custom",
+  "main_contract": "ERC20Custom",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5aa158404fed6b4730c13f49d3a7f820e14a636f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

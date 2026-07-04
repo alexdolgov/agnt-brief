@@ -1,0 +1,18 @@
+{
+  "component": "Foo",
+  "main_contract": "Foo",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x04bc95d6049ff64885d503614521966c91792722",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

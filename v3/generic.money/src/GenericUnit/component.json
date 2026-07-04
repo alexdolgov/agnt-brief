@@ -1,0 +1,28 @@
+{
+  "component": "GenericUnit",
+  "main_contract": "GenericUnit",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.generic.money/audits/2026-01-19-report-cantinacode-generic-money.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8c307badbd78bea5a1ccf9677caa58e7a2172502",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee77df35586d3b61f53d424ca201cd4b8d3d69d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

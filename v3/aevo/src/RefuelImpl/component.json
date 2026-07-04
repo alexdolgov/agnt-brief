@@ -1,0 +1,18 @@
+{
+  "component": "RefuelImpl",
+  "main_contract": "RefuelImpl",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0f933f6a58d885586d356d6677dc87995bdc1b51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

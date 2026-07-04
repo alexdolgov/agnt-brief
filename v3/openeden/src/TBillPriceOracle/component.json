@@ -1,0 +1,18 @@
+{
+  "component": "TBillPriceOracle",
+  "main_contract": "TBillPriceOracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3347d0c6e2bd23b1148fbb7fef5f0fed281612a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

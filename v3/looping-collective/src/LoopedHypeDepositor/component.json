@@ -1,0 +1,18 @@
+{
+  "component": "LoopedHypeDepositor",
+  "main_contract": "LoopedHypeDepositor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x6e358dd1204c3fb1d24e569df0899f48fabe5337",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

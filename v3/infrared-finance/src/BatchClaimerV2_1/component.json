@@ -1,0 +1,18 @@
+{
+  "component": "BatchClaimerV2_1",
+  "main_contract": "BatchClaimerV2_1",
+  "source_file_count": 86,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xd45b101981d907a2bd0157dd83fb12a04d96723c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

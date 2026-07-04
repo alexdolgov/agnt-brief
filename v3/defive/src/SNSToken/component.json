@@ -1,0 +1,18 @@
+{
+  "component": "SNSToken",
+  "main_contract": "SNSToken",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7b0a41f0c17474e41a0c36c0bf33b9aed06ee9f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

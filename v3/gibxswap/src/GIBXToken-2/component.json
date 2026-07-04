@@ -1,0 +1,18 @@
+{
+  "component": "GIBXToken-2",
+  "main_contract": "GIBXToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x10ee036c8dc47e74b063f56f750b5b22d76785df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

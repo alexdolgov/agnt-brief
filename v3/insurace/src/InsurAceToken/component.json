@@ -1,0 +1,18 @@
+{
+  "component": "InsurAceToken",
+  "main_contract": "InsurAceToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1452b535ebeb212026f77511147dfdc821d91cbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

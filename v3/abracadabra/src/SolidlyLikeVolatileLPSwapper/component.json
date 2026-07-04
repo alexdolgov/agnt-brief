@@ -1,0 +1,26 @@
+{
+  "component": "SolidlyLikeVolatileLPSwapper",
+  "main_contract": "SolidlyLikeVolatileLPSwapper",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x601c5634c8435ceea8e87d0b5404c206f1e305db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x70b868191b588384b96233cad7c27457026a7493",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PglStakingContract",
+  "main_contract": "PglStakingContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x58a2929eadfa4e9577f79ab06a4263e28fadd0bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

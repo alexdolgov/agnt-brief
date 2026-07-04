@@ -1,0 +1,18 @@
+{
+  "component": "RevenueSharingPool-2",
+  "main_contract": "RevenueSharingPool",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbbc86f201c14a4062ee0de8c580da38c6e38cd2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

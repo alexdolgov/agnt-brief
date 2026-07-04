@@ -1,0 +1,18 @@
+{
+  "component": "Boardroom",
+  "main_contract": "Boardroom",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa2c94fdc0f6c1656bda4b571235f48bfcb39d665",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

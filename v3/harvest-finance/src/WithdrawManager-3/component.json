@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawManager-3",
+  "main_contract": "WithdrawManager",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x468de989457f45c7bba362227274ae67e96d7b76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

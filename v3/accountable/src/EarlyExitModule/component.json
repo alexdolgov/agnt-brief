@@ -1,0 +1,18 @@
+{
+  "component": "EarlyExitModule",
+  "main_contract": "EarlyExitModule",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

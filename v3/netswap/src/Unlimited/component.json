@@ -1,0 +1,26 @@
+{
+  "component": "Unlimited",
+  "main_contract": "Unlimited",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x0f21d33f6f4fcab61e6c21539280c90a140def34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xe5991f3b3d468e6c904f56a4d9c0613c3e3ab4db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

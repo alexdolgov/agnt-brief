@@ -1,0 +1,18 @@
+{
+  "component": "ArbswapStableSwapWBNBHelper",
+  "main_contract": "ArbswapStableSwapWBNBHelper",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x318080b1590e06db79d55ce7a348765c3d5283ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

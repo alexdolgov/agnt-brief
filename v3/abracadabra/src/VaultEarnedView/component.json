@@ -1,0 +1,18 @@
+{
+  "component": "VaultEarnedView",
+  "main_contract": "VaultEarnedView",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x382cd669d473a35202c9c3c74168518e0ab3d925",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

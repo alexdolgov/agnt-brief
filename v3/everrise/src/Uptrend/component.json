@@ -1,0 +1,18 @@
+{
+  "component": "Uptrend",
+  "main_contract": "Uptrend",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc4ed752d658989fe86db8ddad3f6f19271552d23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

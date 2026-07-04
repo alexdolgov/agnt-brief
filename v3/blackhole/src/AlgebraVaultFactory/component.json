@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraVaultFactory",
+  "main_contract": "AlgebraVaultFactory",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdc0b5db6f5f957ad0ac5e0af8a2c084077d079b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

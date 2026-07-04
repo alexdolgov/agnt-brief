@@ -1,0 +1,18 @@
+{
+  "component": "Payments",
+  "main_contract": "Payments",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x250d62a67254a46c0de472d2c9215e1d890cc90f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

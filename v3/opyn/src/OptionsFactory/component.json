@@ -1,0 +1,26 @@
+{
+  "component": "OptionsFactory",
+  "main_contract": "OptionsFactory",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb529964f86fbf99a6aa67f72a27e59fa3fa4feac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BSNAKE",
+  "main_contract": "BSNAKE",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc12e661e0b452964fc85d4b0f4de99fe3eda5e3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

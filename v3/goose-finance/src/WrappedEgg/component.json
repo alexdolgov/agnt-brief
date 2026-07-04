@@ -1,0 +1,18 @@
+{
+  "component": "WrappedEgg",
+  "main_contract": "WrappedEgg",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb8157e2506238b06f2d1f3030593f3d620b90a16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

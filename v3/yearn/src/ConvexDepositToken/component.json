@@ -1,0 +1,18 @@
+{
+  "component": "ConvexDepositToken",
+  "main_contract": "ConvexDepositToken",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x000ca04b3225137b9110e77e12f1b484cc227de9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

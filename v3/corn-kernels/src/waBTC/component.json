@@ -1,0 +1,18 @@
+{
+  "component": "waBTC",
+  "main_contract": "waBTC",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RootChainManager",
+  "main_contract": "RootChainManager",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bff34272af650632236703a3d6d8e3c133421cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RegularVaultFactory",
+  "main_contract": "RegularVaultFactory",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3bb28f8e936c48499a4bebbe906e05e8eae2bef8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

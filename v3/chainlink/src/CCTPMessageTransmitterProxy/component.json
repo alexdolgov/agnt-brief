@@ -1,0 +1,18 @@
+{
+  "component": "CCTPMessageTransmitterProxy",
+  "main_contract": "CCTPMessageTransmitterProxy",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xe94e3b78be62e7fb7a388884c1f9000f6818037a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "component": "CommunityVault",
+  "main_contract": "CommunityVault",
+  "source_file_count": 22,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-28%5D%20Cyfrin%20-%20CL%20Rewards%20Claiming.pdf",
+    "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-03-23%5D%20Cyfrin%20-%20Rebase%20Batching.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63b26ebd8586c18ed7e0ddba8df2ff690d803b5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94277a23095b27041bef93eaf9df81e8d733791a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe162e1093f30fd0b9434b9b654fc6bd8cf96a850",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

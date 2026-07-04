@@ -1,0 +1,18 @@
+{
+  "component": "UNIFORM",
+  "main_contract": "UNIFORM",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3018234c038d524147ff47148baa8381306f28cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

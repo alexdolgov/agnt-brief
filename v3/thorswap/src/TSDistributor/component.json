@@ -1,0 +1,18 @@
+{
+  "component": "TSDistributor",
+  "main_contract": "TSDistributor",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf061e3f6068cdbb3b1ab042d0e022c06fb3e3528",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

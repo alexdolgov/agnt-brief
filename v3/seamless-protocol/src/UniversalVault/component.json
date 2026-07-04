@@ -1,0 +1,18 @@
+{
+  "component": "UniversalVault",
+  "main_contract": "UniversalVault",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe8bb3fc413114efbaeeecbb16a96cdde4938af77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BeanstalkERC20",
+  "main_contract": "BeanstalkERC20",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bea0050e63e05fbb5d8ba2f10cf5800b6224449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bea3ccd22f4ebd3d37d731ba31eeca95713716d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

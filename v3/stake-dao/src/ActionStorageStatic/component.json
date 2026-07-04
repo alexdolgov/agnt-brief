@@ -1,0 +1,18 @@
+{
+  "component": "ActionStorageStatic",
+  "main_contract": "ActionStorageStatic",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a60b5d39b27e18f63aa937ad09acc2b3d46d2a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

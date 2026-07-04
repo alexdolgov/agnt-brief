@@ -1,0 +1,26 @@
+{
+  "component": "OriginWithdrawRequestManager",
+  "main_contract": "OriginWithdrawRequestManager",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bc6d6c4f7ca318c07de9ce75bbad6cc0fbb7251",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59aa04b190ec76c95a1eb02d9a184b7fdd64b9fb",
+      "is_proxy": true,
+      "implementation_address": "0x0bc6d6c4f7ca318c07de9ce75bbad6cc0fbb7251",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WstETHPriceFeed",
+  "main_contract": "WstETHPriceFeed",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x950620918c66b080990b18635f1d7d4f70d23fc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

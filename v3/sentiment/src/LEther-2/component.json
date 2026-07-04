@@ -1,0 +1,18 @@
+{
+  "component": "LEther-2",
+  "main_contract": "LEther",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcb3703f47a547347b515a463968d03e0fd0b8228",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SquadLimitOrder",
+  "main_contract": "SquadLimitOrder",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x62490b11b335f3b27fc3fbadc29ccdaf7b56aab9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

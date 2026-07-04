@@ -1,0 +1,26 @@
+{
+  "component": "OracleRelay",
+  "main_contract": "OracleRelay",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x45b265c7919d7fd8a0d673d7acaa8f5a7abb430d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa81b396270730dbd276d3ee002b0b7ff68d86f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

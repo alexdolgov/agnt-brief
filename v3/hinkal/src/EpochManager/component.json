@@ -1,0 +1,18 @@
+{
+  "component": "EpochManager",
+  "main_contract": "EpochManager",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3fab259f2392f733c60c19492b5678e5d2d2ee31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

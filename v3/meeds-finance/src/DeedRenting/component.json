@@ -1,0 +1,26 @@
+{
+  "component": "DeedRenting",
+  "main_contract": "DeedRenting",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0af49e83e36256158c654ef549849d80f51fd76c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x427aa8f31013960e0e5e73977c1918e15d693baa",
+      "is_proxy": true,
+      "implementation_address": "0x0af49e83e36256158c654ef549849d80f51fd76c",
+      "liveness": "inactive"
+    }
+  ]
+}

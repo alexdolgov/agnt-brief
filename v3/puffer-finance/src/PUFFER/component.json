@@ -1,0 +1,18 @@
+{
+  "component": "PUFFER",
+  "main_contract": "PUFFER",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d1c297d39c5c1277964d0e3f8aa901493664530",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

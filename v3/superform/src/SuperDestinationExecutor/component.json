@@ -1,0 +1,22 @@
+{
+  "component": "SuperDestinationExecutor",
+  "main_contract": "SuperDestinationExecutor",
+  "source_file_count": 72,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.05.05-nodesecurity.pdf",
+    "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.06.02-cantina-competition.pdf",
+    "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ac58e854798d4aae5989b18ad5a1c0ff17817ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

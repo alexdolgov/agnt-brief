@@ -1,0 +1,18 @@
+{
+  "component": "X509Verifier",
+  "main_contract": "X509Verifier",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe242c27cd0568feadc46f09811a55f9b24c754a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MultiSigWalletWithDailyLimit",
+  "main_contract": "MultiSigWalletWithDailyLimit",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x028933a66dd0ccc239a3d5c2243b2d96672f11f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

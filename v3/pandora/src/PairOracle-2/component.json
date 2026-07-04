@@ -1,0 +1,18 @@
+{
+  "component": "PairOracle-2",
+  "main_contract": "PairOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x168768dfa6287fa9489396ada234027be71c263c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RewardsProcessingFacet-3",
+  "main_contract": "RewardsProcessingFacet",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd8de50803d77d4bc20276cc884f8d00f3a755a4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

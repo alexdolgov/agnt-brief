@@ -1,0 +1,18 @@
+{
+  "component": "RewardToken",
+  "main_contract": "RewardToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x255707b70bf90aa112006e1b07b9aea6de021424",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

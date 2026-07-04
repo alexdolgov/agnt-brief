@@ -1,0 +1,18 @@
+{
+  "component": "ContractChecker",
+  "main_contract": "ContractChecker",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x38296f0efbf5a8b8d496468f791b9f75d8eefa21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

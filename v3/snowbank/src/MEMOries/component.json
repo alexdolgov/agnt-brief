@@ -1,0 +1,18 @@
+{
+  "component": "MEMOries",
+  "main_contract": "MEMOries",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe9eb40d52ce4744322204d4a29af63c30f0260a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

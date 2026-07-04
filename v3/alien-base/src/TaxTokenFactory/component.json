@@ -1,0 +1,42 @@
+{
+  "component": "TaxTokenFactory",
+  "main_contract": "TaxTokenFactory",
+  "source_file_count": 26,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x13de15f0c5e8cc78ad3a7001ba2cb882aae96373",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1b2468af57518dbfaffa94c54619090b7eddb484",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9f36431ff85072168e0e5e9980e5297f8e922c9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcbac7772bdb35ab605a030612849aedba2068436",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

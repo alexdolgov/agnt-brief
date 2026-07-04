@@ -1,0 +1,21 @@
+{
+  "component": "PriceOracle-2",
+  "main_contract": "PriceOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md",
+    "https://www.openzeppelin.com/news/set-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a663b74b9ea021099649320c4042af289ec5a75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

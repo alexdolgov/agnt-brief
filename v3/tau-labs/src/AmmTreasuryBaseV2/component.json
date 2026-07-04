@@ -1,0 +1,42 @@
+{
+  "component": "AmmTreasuryBaseV2",
+  "main_contract": "AmmTreasuryBaseV2",
+  "source_file_count": 37,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30ae182cc30d312dd4f2824c635b8dc5f805153c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63395edaf74a80aa1155db7cd9bba976a88dee4e",
+      "is_proxy": true,
+      "implementation_address": "0x30ae182cc30d312dd4f2824c635b8dc5f805153c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb1c0ccb170f0af6ec8ad6a8622d0136fb744f0c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc2ff2d38666723ea56c122097f6215b90d74196",
+      "is_proxy": true,
+      "implementation_address": "0xb1c0ccb170f0af6ec8ad6a8622d0136fb744f0c0",
+      "liveness": "live"
+    }
+  ]
+}

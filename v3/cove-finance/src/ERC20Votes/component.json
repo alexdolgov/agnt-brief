@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Votes",
+  "main_contract": "ERC20Votes",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32fb7d6e0cbeb9433772689aa4647828cc7cbba8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

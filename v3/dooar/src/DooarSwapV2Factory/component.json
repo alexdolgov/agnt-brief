@@ -1,0 +1,18 @@
+{
+  "component": "DooarSwapV2Factory",
+  "main_contract": "DooarSwapV2Factory",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

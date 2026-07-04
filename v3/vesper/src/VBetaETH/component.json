@@ -1,0 +1,18 @@
+{
+  "component": "VBetaETH",
+  "main_contract": "VBetaETH",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2c361913e2da663e1898162ec01497c46eb87abf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

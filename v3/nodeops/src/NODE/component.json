@@ -1,0 +1,21 @@
+{
+  "component": "NODE",
+  "main_contract": "NODE",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Quillhash/QuillAudit_Reports/blob/master/NodeOPS%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf",
+    "https://github.com/oak-security/audit-reports/blob/main/NodeOps/2025-06-25%20Audit%20Report%20-%20NodeOps%20Network.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3de45d2226bb302fe86dee98a34b2d49729e5bd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

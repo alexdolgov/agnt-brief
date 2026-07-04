@@ -1,0 +1,18 @@
+{
+  "component": "YoERC4626Adapter",
+  "main_contract": "YoERC4626Adapter",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x206ff3f58f57d00c48af6010de6dc26f913efd64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

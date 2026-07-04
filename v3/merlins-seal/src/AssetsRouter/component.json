@@ -1,0 +1,18 @@
+{
+  "component": "AssetsRouter",
+  "main_contract": "AssetsRouter",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x219e157c79f5b188397f6ccdb6d0f97600eadfb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626VaultLeverage",
+  "main_contract": "ERC4626VaultLeverage",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b0e943d2cbae1da34ac6fbb7cd15b6cf05759b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe964295d09c540d0408f48ccafd4ec399bd3ed37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

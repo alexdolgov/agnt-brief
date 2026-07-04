@@ -1,0 +1,18 @@
+{
+  "component": "EthPriceFeed",
+  "main_contract": "EthPriceFeed",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x999e0e091014eed2683aca527805394be2447291",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

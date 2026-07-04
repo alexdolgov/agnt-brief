@@ -1,0 +1,18 @@
+{
+  "component": "ConstantPriceFeed",
+  "main_contract": "ConstantPriceFeed",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72e9b6f907365d76c6192ad49c0c5ba356b7fa48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

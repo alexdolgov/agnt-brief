@@ -1,0 +1,20 @@
+{
+  "component": "RageBuyingProtocol",
+  "main_contract": "RageBuyingProtocol",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://ultraroundmoney.com/rage/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xff70cd1e1931372f869c936582a7f42e49b6da4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

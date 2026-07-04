@@ -1,0 +1,26 @@
+{
+  "component": "MultiCallUtils",
+  "main_contract": "MultiCallUtils",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb40d2ba22217c24cee52e28755bb4a2275a8e1e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x9182c733d52f1662c278ba089d2e9f7e6aca7646",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

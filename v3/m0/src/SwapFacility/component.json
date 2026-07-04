@@ -1,0 +1,28 @@
+{
+  "component": "SwapFacility",
+  "main_contract": "SwapFacility",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/m0-foundation/evm-m-extensions/blob/main/audits/ChainSecurity_M0_M_Extensions_audit.pdf",
+    "https://github.com/m0-foundation/evm-m-extensions/blob/main/audits/GuardianAudits_M0_MExtensions_report.pdf",
+    "https://github.com/m0-foundation/liquidity-delivery/blob/main/audits/v1/phase_one/guardian_report.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/Certora%20MExtension%20Security%20Assessment%20Final%20Report.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/ChainSecurity_M0_M_Extensions_audit_draft.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/Guardian%20Audits%20M0%20Extensions%20Report%20Aug%205.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/JMI/2025_12_10_Final_M0_Collaborative_Audit_Report_1765332345.pdf",
+    "https://github.com/m0-platform/evm-m-extensions/blob/main/audits/JMI/M0_EVM-M_Extensions_Review_report.pdf",
+    "https://github.com/m0-platform/m-portal-v2/blob/main/evm/audits/Guardian_M0_Portal_V2_Liquidity_Delivery.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x07dd9e3b00002f9cb178670159d4e6fe0d8cd146",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

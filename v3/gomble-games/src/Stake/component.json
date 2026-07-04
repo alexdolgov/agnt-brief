@@ -1,0 +1,52 @@
+{
+  "component": "Stake",
+  "main_contract": "Stake",
+  "source_file_count": 22,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://beosin.com/audits/GOMBLE_202402231621.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0094ba6365976030ea63ac83c419119befd1b71a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9b777e00b4163c2c35c3734f2baf78fbd0a11fb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xab8c9eb287796f075c821ffafbac5fedaa4604d5",
+      "is_proxy": true,
+      "implementation_address": "0x542fa52180689ca7c9ddf3c292cf6875e9f02e3f",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe945e760dbcaac77bcef071290b6082dd8c61846",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xee9fcf0eb017af4143a5cd04d70d61a62648b4e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

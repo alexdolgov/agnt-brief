@@ -1,0 +1,18 @@
+{
+  "component": "TimeswapV2Option",
+  "main_contract": "TimeswapV2Option",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x17385e95cb74a20150e4fa092aa72d57330896c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

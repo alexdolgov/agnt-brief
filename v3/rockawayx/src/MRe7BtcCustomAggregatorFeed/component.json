@@ -1,0 +1,18 @@
+{
+  "component": "MRe7BtcCustomAggregatorFeed",
+  "main_contract": "MRe7BtcCustomAggregatorFeed",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x091f974e277a19485b9a713ac768850bc5af383b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

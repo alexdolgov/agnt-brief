@@ -1,0 +1,18 @@
+{
+  "component": "StrategyPngAvaxgOhm",
+  "main_contract": "StrategyPngAvaxgOhm",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x08f49bb40ae8b988fb507ac10aea55487fa73ef9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

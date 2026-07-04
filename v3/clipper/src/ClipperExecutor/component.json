@@ -1,0 +1,18 @@
+{
+  "component": "ClipperExecutor",
+  "main_contract": "ClipperExecutor",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f7c9c7d9e69d0cfbfd6f009cc59ae341f68b738",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

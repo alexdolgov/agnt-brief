@@ -1,0 +1,26 @@
+{
+  "component": "OneInchDex",
+  "main_contract": "OneInchDex",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa6031a6d87b82b2d60df9b78e578537a2aeae93a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5ac3ad8788c5eb8c8cc88022c42ba9a3f51afac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

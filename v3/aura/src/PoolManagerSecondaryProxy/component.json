@@ -1,0 +1,18 @@
+{
+  "component": "PoolManagerSecondaryProxy",
+  "main_contract": "PoolManagerSecondaryProxy",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x153dfc50f7a93c4f3d049c105dde9786d3cfc72a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

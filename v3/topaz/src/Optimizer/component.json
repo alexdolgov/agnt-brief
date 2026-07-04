@@ -1,0 +1,18 @@
+{
+  "component": "Optimizer",
+  "main_contract": "Optimizer",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x62b3cea3c6028029e56a880e71b659af523f06b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "QiAvaxHelper",
+  "main_contract": "QiAvaxHelper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcc2de440f9fc5eec73e28373f6bb69643dc804d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

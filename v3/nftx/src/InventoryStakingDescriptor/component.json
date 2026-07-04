@@ -1,0 +1,18 @@
+{
+  "component": "InventoryStakingDescriptor",
+  "main_contract": "InventoryStakingDescriptor",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39d9a925d7fca17e430b731882b97e2d10e9f8bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

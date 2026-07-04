@@ -1,0 +1,26 @@
+{
+  "component": "zeroGUSDV",
+  "main_contract": "zeroGUSDV",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x733acea2a9193a249fdb58ede4ea3c8ddc5fa347",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x766255b53ae70fa39a18aa296f41fab17db6a810",
+      "is_proxy": true,
+      "implementation_address": "0x733acea2a9193a249fdb58ede4ea3c8ddc5fa347",
+      "liveness": "live"
+    }
+  ]
+}

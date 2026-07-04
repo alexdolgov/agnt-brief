@@ -1,0 +1,42 @@
+{
+  "component": "LiquidatorsRegistryExtension",
+  "main_contract": "LiquidatorsRegistryExtension",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x3fa4bc2fcac5515d5b758d4d580bbd626c93d621",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x6aa80aa164910a31b2309ea4c00da78c1a03c103",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x95e4cd4786ede1c0aa42f7dc9aecf32af4ae8294",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xdd7f712af76074993f05c0d544331792997bd39b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

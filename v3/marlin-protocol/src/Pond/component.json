@@ -1,0 +1,18 @@
+{
+  "component": "Pond",
+  "main_contract": "Pond",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8b0bca2bb41b126a2bd43453cc0c25a4b8f7cc31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

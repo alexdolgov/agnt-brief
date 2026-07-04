@@ -1,0 +1,18 @@
+{
+  "component": "DMT",
+  "main_contract": "DMT",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3eb05a201817f87c198930b86f40c6829340b4b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

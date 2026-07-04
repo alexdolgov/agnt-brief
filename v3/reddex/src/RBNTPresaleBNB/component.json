@@ -1,0 +1,18 @@
+{
+  "component": "RBNTPresaleBNB",
+  "main_contract": "RBNTPresaleBNB",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x476f888cc4b612425eeceebca449cbfc0e803cc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

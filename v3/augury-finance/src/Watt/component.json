@@ -1,0 +1,18 @@
+{
+  "component": "Watt",
+  "main_contract": "Watt",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x725a937a7b80d615719f66e79a245f3c7766c45b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

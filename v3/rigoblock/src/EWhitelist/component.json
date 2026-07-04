@@ -1,0 +1,18 @@
+{
+  "component": "EWhitelist",
+  "main_contract": "EWhitelist",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb43bad2638696f8bc82247b92bd56b8df37d89ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

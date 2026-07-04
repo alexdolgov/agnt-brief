@@ -1,0 +1,26 @@
+{
+  "component": "TheCounter",
+  "main_contract": "TheCounter",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa27a69ae180e202fde5d38189a3f24fe24e55861",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7ab90c2ea9271efb31f5fa2843eeb4b331eafa0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

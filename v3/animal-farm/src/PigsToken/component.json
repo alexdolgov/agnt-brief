@@ -1,0 +1,18 @@
+{
+  "component": "PigsToken",
+  "main_contract": "PigsToken",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a4c15f96b3b058ab3fb5faf1440cc19e7ae07ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

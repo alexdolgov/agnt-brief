@@ -1,0 +1,18 @@
+{
+  "component": "InstantLiquidity",
+  "main_contract": "InstantLiquidity",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x93c8cd2d1e94e79efe205eb7b19ecae59f3b47d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

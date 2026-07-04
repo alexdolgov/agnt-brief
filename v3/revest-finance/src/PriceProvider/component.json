@@ -1,0 +1,18 @@
+{
+  "component": "PriceProvider",
+  "main_contract": "PriceProvider",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x8df7c553cde03d1b50066774a2d352c3bd647ea5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

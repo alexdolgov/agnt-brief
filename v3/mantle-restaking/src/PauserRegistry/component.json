@@ -1,0 +1,26 @@
+{
+  "component": "PauserRegistry",
+  "main_contract": "PauserRegistry",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x075a48633dc6845f92339741e9c96b88f1b2a86f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ca725d446ece6e3ffd3e072a6f2a6a16ca492d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

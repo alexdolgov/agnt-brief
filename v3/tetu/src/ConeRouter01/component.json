@@ -1,0 +1,18 @@
+{
+  "component": "ConeRouter01",
+  "main_contract": "ConeRouter01",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbf1fc29668e5f5eaa819948599c9ac1b1e03e75f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AnteTest-49",
+  "main_contract": "AnteTest",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa7c69437000fd0fe13929a71d5404c3bb9cd2858",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

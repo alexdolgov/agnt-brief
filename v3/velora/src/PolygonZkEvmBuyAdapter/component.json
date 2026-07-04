@@ -1,0 +1,26 @@
+{
+  "component": "PolygonZkEvmBuyAdapter",
+  "main_contract": "PolygonZkEvmBuyAdapter",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8de036910e34b0d8447dd0d34c742636de1ddfeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaa26f55ac49caed6feea1a2b6884d92dd9bf8cdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

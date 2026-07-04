@@ -1,0 +1,18 @@
+{
+  "component": "BoostedMultiRewarder",
+  "main_contract": "BoostedMultiRewarder",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x12d6a56e7c6ba8c7299b860428cbd1491d73bf7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

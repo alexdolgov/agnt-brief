@@ -1,0 +1,18 @@
+{
+  "component": "BaseAdminUpgradeabilityProxy",
+  "main_contract": "BaseAdminUpgradeabilityProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x06246100ba403608b98adfb006d82a7484f5d9ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "BaseFactory",
+  "main_contract": "BaseFactory",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20EVK%20Periphery.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5151a8125b91a220ffe8fea2ab2815b46ecaaffb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

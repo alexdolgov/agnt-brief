@@ -1,0 +1,18 @@
+{
+  "component": "OnyxDAORegistry",
+  "main_contract": "OnyxDAORegistry",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xadb90c593e0bc8395a53087d8c558f5563df3b31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RomeProFactoryStorage",
+  "main_contract": "RomeProFactoryStorage",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x12badddcba4144b74d4b9d62f80479d29d70c569",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

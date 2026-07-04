@@ -1,0 +1,18 @@
+{
+  "component": "RewardFactory",
+  "main_contract": "RewardFactory",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45aad11f2fa2c215bc9686eb6f06d46e0474f356",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

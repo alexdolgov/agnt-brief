@@ -1,0 +1,18 @@
+{
+  "component": "Salt",
+  "main_contract": "Salt",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc17030798a6d6e1a76382cf8f439182eb0342d93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

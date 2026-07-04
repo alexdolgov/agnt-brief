@@ -1,0 +1,18 @@
+{
+  "component": "RedstoneCoreOracle",
+  "main_contract": "RedstoneCoreOracle",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03ed909ab6102c3f1bb9c665839ae580ac472dac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

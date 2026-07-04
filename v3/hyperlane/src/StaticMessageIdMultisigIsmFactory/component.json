@@ -1,0 +1,18 @@
+{
+  "component": "StaticMessageIdMultisigIsmFactory",
+  "main_contract": "StaticMessageIdMultisigIsmFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x113d00bab9efe06d61803837f07881a10a9fb189",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

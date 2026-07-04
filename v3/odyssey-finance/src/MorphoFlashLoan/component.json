@@ -1,0 +1,18 @@
+{
+  "component": "MorphoFlashLoan",
+  "main_contract": "MorphoFlashLoan",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6aa69c031170b04e2d6ec02520b6f49d649031b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

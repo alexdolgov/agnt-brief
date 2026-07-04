@@ -1,0 +1,18 @@
+{
+  "component": "BBC",
+  "main_contract": "BBC",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x015628ce9150db1bce2fbb717a09e846f8a32436",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

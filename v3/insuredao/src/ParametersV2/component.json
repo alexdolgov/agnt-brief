@@ -1,0 +1,18 @@
+{
+  "component": "ParametersV2",
+  "main_contract": "ParametersV2",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf29571145b421f660775fa3deb16d9ff6085d0e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

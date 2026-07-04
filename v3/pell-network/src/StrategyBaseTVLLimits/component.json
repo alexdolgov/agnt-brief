@@ -1,0 +1,18 @@
+{
+  "component": "StrategyBaseTVLLimits",
+  "main_contract": "StrategyBaseTVLLimits",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TaskReward",
+  "main_contract": "TaskReward",
+  "source_file_count": 136,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x681392bf14623dc4ba704ec89bb2537d939616ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

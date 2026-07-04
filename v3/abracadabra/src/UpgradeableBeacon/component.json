@@ -1,0 +1,18 @@
+{
+  "component": "UpgradeableBeacon",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xded8823234e28f18a824abe4f64fa7863b626341",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

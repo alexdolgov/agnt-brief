@@ -1,0 +1,18 @@
+{
+  "component": "EnumerableCollection",
+  "main_contract": "EnumerableCollection",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0993c9ca4e45a3d41463e2e632f67e1d2505b230",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

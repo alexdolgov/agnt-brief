@@ -1,0 +1,18 @@
+{
+  "component": "NarOpenSale",
+  "main_contract": "NarOpenSale",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4b79a1e357bd7f924415d4e3ac277f3b24aaa6af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

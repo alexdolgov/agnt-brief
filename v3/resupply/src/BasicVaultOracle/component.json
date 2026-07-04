@@ -1,0 +1,18 @@
+{
+  "component": "BasicVaultOracle",
+  "main_contract": "BasicVaultOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb7e25fbbd8afe4ce73d7dac647dbc3d847f3c82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

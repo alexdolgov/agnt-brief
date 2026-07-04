@@ -1,0 +1,18 @@
+{
+  "component": "LzApp",
+  "main_contract": "LzApp",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00507f433022b27f3e337af46affa9888246a39e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

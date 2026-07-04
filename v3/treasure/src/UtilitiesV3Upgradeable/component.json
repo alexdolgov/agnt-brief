@@ -1,0 +1,18 @@
+{
+  "component": "UtilitiesV3Upgradeable",
+  "main_contract": "UtilitiesV3Upgradeable",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1111010a2ba8927251cb0bff0b076a5b85d95c81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

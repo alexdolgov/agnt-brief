@@ -1,0 +1,18 @@
+{
+  "component": "KineRanch",
+  "main_contract": "KineRanch",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LockReleaseTokenPoolAndProxy",
+  "main_contract": "LockReleaseTokenPoolAndProxy",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x56b82775d7f442c4ac1d76e6ed570bff10ae8dc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

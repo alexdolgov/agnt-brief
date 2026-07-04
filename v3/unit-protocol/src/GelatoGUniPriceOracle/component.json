@@ -1,0 +1,18 @@
+{
+  "component": "GelatoGUniPriceOracle",
+  "main_contract": "GelatoGUniPriceOracle",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea3633b38c747cea231adb74b511dc2ed3992b43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

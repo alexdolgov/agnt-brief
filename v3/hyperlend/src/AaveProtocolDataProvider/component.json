@@ -1,0 +1,20 @@
+{
+  "component": "AaveProtocolDataProvider",
+  "main_contract": "AaveProtocolDataProvider",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hyperlendx/audits/blob/master/aave/02-05-2024_MixBytes_AaveV3.1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x4f4d4ca1e0a8a21fe0b460613bebe917f2eb4326",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Connector",
+  "main_contract": "Connector",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x424c2a31976c2d609819582c84f534b15b001793",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SimpleERC20",
+  "main_contract": "SimpleERC20",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4849d2a7fec8572f12f369659cf48a826601cc5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

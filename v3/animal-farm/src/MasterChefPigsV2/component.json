@@ -1,0 +1,18 @@
+{
+  "component": "MasterChefPigsV2",
+  "main_contract": "MasterChefPigsV2",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8536178222fc6ec5fac49bbfebd74ca3051c638f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UniV2ExpectedOutCalculator",
+  "main_contract": "UniV2ExpectedOutCalculator",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb418cd485e6835af43c6583e80087564068bb256",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BaseToken",
+  "main_contract": "BaseToken",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x00a0b6d11ca762fce125597a52135f2b007d19dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "PopsicleUSDCWETHSwapper",
+  "main_contract": "PopsicleUSDCWETHSwapper",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e0e2c6204976ba791fba95efbb54f9f76556a57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc97c7f6e60fdd610a0fca4792bbbd1dbd028d474",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

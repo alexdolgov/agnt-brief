@@ -1,0 +1,18 @@
+{
+  "component": "ERC20UpgradeSafe-6",
+  "main_contract": "ERC20UpgradeSafe",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x74c14af2d2bdea20435eef2ec75e2e5d9ac99bfe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

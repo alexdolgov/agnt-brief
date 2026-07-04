@@ -1,0 +1,66 @@
+{
+  "component": "AddyStrategy",
+  "main_contract": "AddyStrategy",
+  "source_file_count": 3,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x186e2e7610c3d82931ce6fb2329c2e177fedd405",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2b4db8c34f8e568b4741a6f7372e2164727166ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3606ec7c6ef844d928428a7ac4359b18a3d7b846",
+      "is_proxy": true,
+      "implementation_address": "0x2b4db8c34f8e568b4741a6f7372e2164727166ab",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3e1c6c4933bb37eb2fc9a2e7ec9c75c41c299a6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x43b5bf72168c2c0185d109b78710b0429a167990",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x75f363a459b735e7e39bfda90f8a6086eb5358d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfdf49c5acba12a691e0932163eafda15d88af41f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

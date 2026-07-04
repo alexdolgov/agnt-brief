@@ -1,0 +1,18 @@
+{
+  "component": "CrossAdapter",
+  "main_contract": "CrossAdapter",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07a573bb8c5278d5cbea3ec04e316ca8c3feb7c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CDRPricingStrategy",
+  "main_contract": "CDRPricingStrategy",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x437ef588307a6e1367e29283edb1740a8b5cbeaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

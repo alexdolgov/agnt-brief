@@ -1,0 +1,18 @@
+{
+  "component": "ReseedBarn",
+  "main_contract": "ReseedBarn",
+  "source_file_count": 83,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xea4b9b59a52feeb98e8cb7380b791e0126818266",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

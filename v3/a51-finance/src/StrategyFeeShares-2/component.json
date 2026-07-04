@@ -1,0 +1,18 @@
+{
+  "component": "StrategyFeeShares-2",
+  "main_contract": "StrategyFeeShares",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6e7e838e20ed6657aaf1166f9b7a845565956f51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

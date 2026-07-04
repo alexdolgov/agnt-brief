@@ -1,0 +1,26 @@
+{
+  "component": "HBUsdcRedemptionVaultWithSwapper",
+  "main_contract": "HBUsdcRedemptionVaultWithSwapper",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3bf41767bc03cfd7850f0ba92d104c7ebc75a28c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xbb820d0c85c0b5d1b0dc8c6d3541fbb1ab4c7a60",
+      "is_proxy": true,
+      "implementation_address": "0x3bf41767bc03cfd7850f0ba92d104c7ebc75a28c",
+      "liveness": "live"
+    }
+  ]
+}

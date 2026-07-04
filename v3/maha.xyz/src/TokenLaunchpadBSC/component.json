@@ -1,0 +1,130 @@
+{
+  "component": "TokenLaunchpadBSC",
+  "main_contract": "TokenLaunchpadBSC",
+  "source_file_count": 57,
+  "deployment_count": 15,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d886389b02b4ee9161bf1aeac3de9d839c9e3ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x12f9a38485818f8f9d2140896950a001b3b22c22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e66b2fdf72f5b198f2cdd8c72fb28ec6a546536",
+      "is_proxy": true,
+      "implementation_address": "0x0d886389b02b4ee9161bf1aeac3de9d839c9e3ae",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x297f89e072598b81f2c3b9fad49da1ba7ede1bcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2d6340fef9f3acd55c33e82564607ae786983274",
+      "is_proxy": true,
+      "implementation_address": "0x7fa33056b3e8d441523faf85a488a87aaa3ca644",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x460f0411ccfb0951ffb526c41e98ba3a28620aa9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f6b998f5573f900c9e2382871c76261d5c48255",
+      "is_proxy": true,
+      "implementation_address": "0x7b7af4ee05867f0c690971f094deb11b86b8e6ea",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7b7af4ee05867f0c690971f094deb11b86b8e6ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7fa33056b3e8d441523faf85a488a87aaa3ca644",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8280b5e0e49a14c6e209316c738cb9ecfec47a51",
+      "is_proxy": true,
+      "implementation_address": "0x460f0411ccfb0951ffb526c41e98ba3a28620aa9",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x833fbab688f80cf6edb533220cad83b37513f029",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x87808d36d516d998def982b8d2319d5792ec1556",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc6a671a7f5ed641c2f7ab7e2d2f587d671a5a637",
+      "is_proxy": true,
+      "implementation_address": "0x87808d36d516d998def982b8d2319d5792ec1556",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xce193ff7a7e625523688e478115ce6c4b5c2f241",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xddcbb9a3a06e1235b27ddc5bb7aa2d322dbe5587",
+      "is_proxy": true,
+      "implementation_address": "0xce193ff7a7e625523688e478115ce6c4b5c2f241",
+      "liveness": "inactive"
+    }
+  ]
+}

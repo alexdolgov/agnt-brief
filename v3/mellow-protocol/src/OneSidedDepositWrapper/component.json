@@ -1,0 +1,18 @@
+{
+  "component": "OneSidedDepositWrapper",
+  "main_contract": "OneSidedDepositWrapper",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc2ef057b5d99e8cc70073f4be29f6c49c92cac6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

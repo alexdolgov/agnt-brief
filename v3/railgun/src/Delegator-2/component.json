@@ -1,0 +1,22 @@
+{
+  "component": "Delegator-2",
+  "main_contract": "Delegator",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://assets.railgun.org/docs/audits/2021-11-02%20Hacken.pdf",
+    "https://assets.railgun.org/docs/audits/2021-11-03%20Zokyo.pdf",
+    "https://assets.railgun.org/docs/audits/2022-09-14%20Zokyo.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb6d513f6222ee92fff975e901bd792e2513fb53b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

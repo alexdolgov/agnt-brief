@@ -1,0 +1,26 @@
+{
+  "component": "MarketLensFacet",
+  "main_contract": "MarketLensFacet",
+  "source_file_count": 55,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6c2c1764faf6d28a9582c156fefb9dba39161661",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6fe58d6f5bb00145255e966c2bd926544a18f774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

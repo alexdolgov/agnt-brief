@@ -1,0 +1,18 @@
+{
+  "component": "BasicModel",
+  "main_contract": "BasicModel",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x846b62d627f07fe5e2804a32cd5a0cec408b98f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

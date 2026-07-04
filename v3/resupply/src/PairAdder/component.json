@@ -1,0 +1,18 @@
+{
+  "component": "PairAdder",
+  "main_contract": "PairAdder",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09500002956877b910acec25c4b4dd57950e1d27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

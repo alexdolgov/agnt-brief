@@ -1,0 +1,18 @@
+{
+  "component": "ClockAuctionBase",
+  "main_contract": "ClockAuctionBase",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb1690c08e213a35ed9bab7b318de14420fb57d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

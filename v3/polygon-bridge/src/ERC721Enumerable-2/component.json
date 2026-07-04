@@ -1,0 +1,18 @@
+{
+  "component": "ERC721Enumerable-2",
+  "main_contract": "ERC721Enumerable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96cddf45c0cd9a59876a2a29029d7c54f6e54ad3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

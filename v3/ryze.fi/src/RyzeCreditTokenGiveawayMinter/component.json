@@ -1,0 +1,18 @@
+{
+  "component": "RyzeCreditTokenGiveawayMinter",
+  "main_contract": "RyzeCreditTokenGiveawayMinter",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82fadfdfab43e6babdf988fac431e96a9f133e16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

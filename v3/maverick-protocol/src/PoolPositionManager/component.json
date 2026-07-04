@@ -1,0 +1,68 @@
+{
+  "component": "PoolPositionManager",
+  "main_contract": "PoolPositionManager",
+  "source_file_count": 30,
+  "deployment_count": 7,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/maverickprotocol/audits/blob/main/phase-2/Maverick%20Pool%20Positions%20Audit%20-%20Mar%20'23.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1468d02ba11037552dcd61bd4da81fbcca99aeed",
+      "is_proxy": true,
+      "implementation_address": "0x1468d02ba11037552dcd61bd4da81fbcca99aeed",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x26ed58a583992cec22793a91147a14dcd386937f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x873bbcc36be3fd695a0a2f4fc964a87078b2efb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc402d13b0d04867649a632f17528c753d8f6fbd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7583af5121a8f583efd82767cccfeb71069d93a",
+      "is_proxy": true,
+      "implementation_address": "0xe7583af5121a8f583efd82767cccfeb71069d93a",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0c33ee1918850710675ba7aff30c15e3e7909e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffd7b20e269d6428a759365de8400282aab8ecca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

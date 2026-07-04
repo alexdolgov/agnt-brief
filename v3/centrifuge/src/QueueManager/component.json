@@ -1,0 +1,18 @@
+{
+  "component": "QueueManager",
+  "main_contract": "QueueManager",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x971aca9b4ab4895f400ba042fd10a31c7918d220",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

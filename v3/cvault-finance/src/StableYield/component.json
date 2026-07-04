@@ -1,0 +1,18 @@
+{
+  "component": "StableYield",
+  "main_contract": "StableYield",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3554fc4998f83967dcab5b2ef858e8e63fefbd26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

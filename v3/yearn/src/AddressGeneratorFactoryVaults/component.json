@@ -1,0 +1,18 @@
+{
+  "component": "AddressGeneratorFactoryVaults",
+  "main_contract": "AddressGeneratorFactoryVaults",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa654be30cb4a1e25d18da0629e48b13fb970d5be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

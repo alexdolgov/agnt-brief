@@ -1,0 +1,18 @@
+{
+  "component": "AmmPoolsLensWeEth",
+  "main_contract": "AmmPoolsLensWeEth",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb0d64c0375201911e09b0f8c4d38c5a286e165a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

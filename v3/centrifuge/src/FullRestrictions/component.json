@@ -1,0 +1,18 @@
+{
+  "component": "FullRestrictions",
+  "main_contract": "FullRestrictions",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e680873b4c77e6088b4ba0abd59d100c3d224a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

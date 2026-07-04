@@ -1,0 +1,18 @@
+{
+  "component": "BalancerV3BatchSwap-2",
+  "main_contract": "BalancerV3BatchSwap",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x6de328ea43d143e3993e8dbc8dd2499ab6729033",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Multicall",
+  "main_contract": "Multicall",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34f6bb84bcc8dd2fa157afd03491a053eabcf9dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

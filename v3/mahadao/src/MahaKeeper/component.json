@@ -1,0 +1,18 @@
+{
+  "component": "MahaKeeper",
+  "main_contract": "MahaKeeper",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d0657bc3ea29044baa0d02e6baaad078305a479",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

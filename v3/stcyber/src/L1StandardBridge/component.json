@@ -1,0 +1,26 @@
+{
+  "component": "L1StandardBridge",
+  "main_contract": "L1StandardBridge",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01b46e02fce5fc0731076711affe73beecd87997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12a580c05466eefb2c467c6b115844cdaf55b255",
+      "is_proxy": true,
+      "implementation_address": "0x64b5a5ed26dcb17370ff4d33a8d503f0fbd06cff",
+      "liveness": "live"
+    }
+  ]
+}

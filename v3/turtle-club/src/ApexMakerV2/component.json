@@ -1,0 +1,18 @@
+{
+  "component": "ApexMakerV2",
+  "main_contract": "ApexMakerV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3bf59726d92a382256d2d30434c1bdcbdc4e53ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

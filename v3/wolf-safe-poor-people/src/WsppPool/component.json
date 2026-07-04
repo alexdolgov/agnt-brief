@@ -1,0 +1,18 @@
+{
+  "component": "WsppPool",
+  "main_contract": "WsppPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x644cad85544ec57bdd3ed10d3f8a9a5e8144ce80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

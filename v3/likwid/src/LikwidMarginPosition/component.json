@@ -1,0 +1,21 @@
+{
+  "component": "LikwidMarginPosition",
+  "main_contract": "LikwidMarginPosition",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/likwid-fi/likwid-margin/blob/main/audits/2025_11_13_Zenith_Likwid_V2_2_Audit_Report.pdf",
+    "https://github.com/likwid-fi/likwid-margin/blob/main/audits/2026_02_05_Sherlock_Likwid_V2_2_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6bec0c1dc4898484b7f094566ddf8bc82ed7abe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "component": "PrimaryMarket",
+  "main_contract": "PrimaryMarket",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Tranchess-v1.0.pdf",
+    "https://github.com/tranchess/contract-core/blob/main/audits/certik-2021-06-02.pdf",
+    "https://github.com/tranchess/contract-core/blob/main/audits/peckshield-2021-06-28.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x19ca3baaeaf37b857026dfed3a0ba63987a1008d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x57c8041c6aa3440843b5e48b16016a95f822195f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

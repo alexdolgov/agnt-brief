@@ -1,0 +1,18 @@
+{
+  "component": "SwordToken",
+  "main_contract": "SwordToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8c9827cd430d945ae5a5c3cfdc522f8d342334b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

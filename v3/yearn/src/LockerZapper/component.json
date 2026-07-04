@@ -1,0 +1,18 @@
+{
+  "component": "LockerZapper",
+  "main_contract": "LockerZapper",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ba61c8e19414dcb8fe769a7be63b508c8062bba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WHIRL",
+  "main_contract": "WHIRL",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4f6cbaca3151f7746273004fd7295933a9b70e69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

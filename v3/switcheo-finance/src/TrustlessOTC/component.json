@@ -1,0 +1,26 @@
+{
+  "component": "TrustlessOTC",
+  "main_contract": "TrustlessOTC",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93dc6a333a99c0ede1cd346ccf079ea8451013db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbaea5bc6568dcb1f1c5aa24223a47333a6b3a8f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

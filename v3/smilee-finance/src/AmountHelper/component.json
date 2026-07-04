@@ -1,0 +1,18 @@
+{
+  "component": "AmountHelper",
+  "main_contract": "AmountHelper",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe1b1a246a6363b88654351554ce4d82c5135979c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

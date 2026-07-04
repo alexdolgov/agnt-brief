@@ -1,0 +1,26 @@
+{
+  "component": "fBOMB",
+  "main_contract": "fBOMB",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x807c19badabc848336fe0379bd659e4e4608542d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xedf8b632b537d5993adb5e2e15882cd791c284cb",
+      "is_proxy": true,
+      "implementation_address": "0x807c19badabc848336fe0379bd659e4e4608542d",
+      "liveness": "live"
+    }
+  ]
+}

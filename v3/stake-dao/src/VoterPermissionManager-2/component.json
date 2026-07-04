@@ -1,0 +1,18 @@
+{
+  "component": "VoterPermissionManager-2",
+  "main_contract": "VoterPermissionManager",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe73256a4f337633eb825344af36efe3982297cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

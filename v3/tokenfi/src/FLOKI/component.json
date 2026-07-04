@@ -1,0 +1,18 @@
+{
+  "component": "FLOKI",
+  "main_contract": "FLOKI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2b3f34e9d4b127797ce6244ea341a83733ddd6e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

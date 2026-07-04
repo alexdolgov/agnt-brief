@@ -1,0 +1,18 @@
+{
+  "component": "elCHR_Depositor",
+  "main_contract": "elCHR_Depositor",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x88c3211ed3220c08376a28a3ba7c67d7d4be7db1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

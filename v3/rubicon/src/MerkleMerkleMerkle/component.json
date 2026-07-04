@@ -1,0 +1,18 @@
+{
+  "component": "MerkleMerkleMerkle",
+  "main_contract": "MerkleMerkleMerkle",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2618bee17579a416db232cfa7c0afa43586f59ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

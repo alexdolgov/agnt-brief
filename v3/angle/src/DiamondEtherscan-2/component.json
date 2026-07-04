@@ -1,0 +1,18 @@
+{
+  "component": "DiamondEtherscan-2",
+  "main_contract": "DiamondEtherscan",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa94cd9d711de75695693c877beca5473462cf12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

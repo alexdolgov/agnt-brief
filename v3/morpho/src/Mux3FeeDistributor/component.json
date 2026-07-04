@@ -1,0 +1,18 @@
+{
+  "component": "Mux3FeeDistributor",
+  "main_contract": "Mux3FeeDistributor",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x11a276fad46490052ecba26b9736441e9130bfd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

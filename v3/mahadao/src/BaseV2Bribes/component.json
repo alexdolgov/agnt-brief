@@ -1,0 +1,18 @@
+{
+  "component": "BaseV2Bribes",
+  "main_contract": "BaseV2Bribes",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x122aca85d59c34effc1171e645be80c238aa4c24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

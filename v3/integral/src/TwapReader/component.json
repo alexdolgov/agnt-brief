@@ -1,0 +1,18 @@
+{
+  "component": "TwapReader",
+  "main_contract": "TwapReader",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb5c08263c1d2c9651ea6d91a9908460e40095f7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

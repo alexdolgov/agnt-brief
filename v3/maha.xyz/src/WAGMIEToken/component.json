@@ -1,0 +1,26 @@
+{
+  "component": "WAGMIEToken",
+  "main_contract": "WAGMIEToken",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x297f89e072598b81f2c3b9fad49da1ba7ede1bcf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc98efa2ca64bd014c35990dac0a8c603683176c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

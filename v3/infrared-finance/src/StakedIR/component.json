@@ -1,0 +1,18 @@
+{
+  "component": "StakedIR",
+  "main_contract": "StakedIR",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x4b5274376f4e7ed198bc9af848120fcad0a71dbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

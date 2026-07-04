@@ -1,0 +1,26 @@
+{
+  "component": "SimpleSwapNFT",
+  "main_contract": "SimpleSwapNFT",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2a192c2b8342a4e5ada593ff93a10bd3997fbe99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x97b86e4d651ea6bc9c68f5bac2000ce29b79c4eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

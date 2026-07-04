@@ -1,0 +1,18 @@
+{
+  "component": "GenericJar",
+  "main_contract": "GenericJar",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0297b9ad2ad90ea328b6cf28bc5c09c37656cb13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

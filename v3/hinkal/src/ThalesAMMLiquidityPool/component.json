@@ -1,0 +1,18 @@
+{
+  "component": "ThalesAMMLiquidityPool",
+  "main_contract": "ThalesAMMLiquidityPool",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x092e6b8dfddb4b732c89deb4a700868cc5d58b70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

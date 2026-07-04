@@ -1,0 +1,21 @@
+{
+  "component": "WiseLending-2",
+  "main_contract": "WiseLending",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://app.wiselending.com/omni-audit-v1.pdf",
+    "https://github.com/hats-finance/Wise-Lending-0xa2ca45d6e249641e595d50d1d9c69c9e3cd22573/blob/master/report.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78190e4c7c7b2c2c3b0562f1f155a1fc2f5160ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

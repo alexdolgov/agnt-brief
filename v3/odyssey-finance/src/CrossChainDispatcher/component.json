@@ -1,0 +1,26 @@
+{
+  "component": "CrossChainDispatcher",
+  "main_contract": "CrossChainDispatcher",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50361afaafd269c1e9b74866a14579bbc512a41c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa7584c7d375694b4351e520af1097d9a36fcee2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

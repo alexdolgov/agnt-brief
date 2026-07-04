@@ -1,0 +1,18 @@
+{
+  "component": "StrategySwitchHelper",
+  "main_contract": "StrategySwitchHelper",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad0b079fe32a1fd6581147796d3c9744d7a998f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

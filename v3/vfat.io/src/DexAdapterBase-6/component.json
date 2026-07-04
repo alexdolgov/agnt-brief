@@ -1,0 +1,18 @@
+{
+  "component": "DexAdapterBase-6",
+  "main_contract": "DexAdapterBase",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x3d660d59095288fc22b7fc5d244f60ed9c492813",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

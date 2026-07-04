@@ -1,0 +1,18 @@
+{
+  "component": "SinkManager",
+  "main_contract": "SinkManager",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5aee5f0e6c2055ebd776db25f48f6c9a68abcdae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

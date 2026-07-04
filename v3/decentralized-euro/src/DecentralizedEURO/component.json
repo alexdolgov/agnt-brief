@@ -1,0 +1,21 @@
+{
+  "component": "DecentralizedEURO",
+  "main_contract": "DecentralizedEURO",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/d-EURO/landingPage/blob/develop/audits/ChainSecurity_dEURO_dEURO_audit.pdf",
+    "https://github.com/d-EURO/landingPage/blob/develop/audits/deuro_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xba3f535bbcccca2a154b573ca6c5a49baae0a3ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

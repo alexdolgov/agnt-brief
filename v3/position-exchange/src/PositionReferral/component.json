@@ -1,0 +1,18 @@
+{
+  "component": "PositionReferral",
+  "main_contract": "PositionReferral",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d6662a4a7545311e2b9ccedd243571c5fb752d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

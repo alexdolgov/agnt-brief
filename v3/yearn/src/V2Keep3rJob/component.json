@@ -1,0 +1,18 @@
+{
+  "component": "V2Keep3rJob",
+  "main_contract": "V2Keep3rJob",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2150b45626199cfa5089368bdca30cd0bfb152d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

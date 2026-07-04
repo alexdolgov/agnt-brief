@@ -1,0 +1,18 @@
+{
+  "component": "HubRegistry",
+  "main_contract": "HubRegistry",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19f46d8130e610c6c0f0116ea40fb781defade93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

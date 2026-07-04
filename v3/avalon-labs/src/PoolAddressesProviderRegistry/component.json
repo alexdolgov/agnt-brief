@@ -1,0 +1,26 @@
+{
+  "component": "PoolAddressesProviderRegistry",
+  "main_contract": "PoolAddressesProviderRegistry",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x01efe2ac009d26c51c057ffa261fab648f017de2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x4b9d58314aa14ada0b96714cc87486a7a17231d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

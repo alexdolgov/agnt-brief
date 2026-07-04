@@ -1,0 +1,18 @@
+{
+  "component": "BoringHelperV1",
+  "main_contract": "BoringHelperV1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1dd4d86180eee39ac4fb35eca67cacf608ab5741",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

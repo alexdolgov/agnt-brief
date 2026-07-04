@@ -1,0 +1,18 @@
+{
+  "component": "Oasis",
+  "main_contract": "Oasis",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0dc9fc0669f068e04ad79f7d70618d3f9aad439",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

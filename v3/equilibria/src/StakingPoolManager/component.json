@@ -1,0 +1,34 @@
+{
+  "component": "StakingPoolManager",
+  "main_contract": "StakingPoolManager",
+  "source_file_count": 23,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x473e8407f2ad24148ac1fe18873b8a22aa8a713b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50c6f7aa9c05b4435a6e4ebb0dfd1eaa38da5e97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbf6871fddb01384fc4d8bf4db029c0a1998b372c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

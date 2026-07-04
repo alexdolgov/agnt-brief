@@ -1,0 +1,22 @@
+{
+  "component": "Stella",
+  "main_contract": "Stella",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2469068479-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fk79kvXbQmvjLmP78Scbp%2Fuploads%2FQolsnfHM3bYqao9tSFVo%2FCertik%20Full%20Audit.pdf",
+    "https://2598174527-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fk79kvXbQmvjLmP78Scbp%2Fuploads%2Ft3l7dQ9CV3XBe5ByzBWo%2FCertik%20Full%20Audit.pdf",
+    "https://skynet.certik.com/projects/stellaswap"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x0e358838ce72d5e61e0018a2ffac4bec5f4c88d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

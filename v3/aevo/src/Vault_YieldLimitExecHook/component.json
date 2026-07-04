@@ -1,0 +1,18 @@
+{
+  "component": "Vault_YieldLimitExecHook",
+  "main_contract": "Vault_YieldLimitExecHook",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6f9234d3063f1cf7986c4511ef46721f794cf8f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

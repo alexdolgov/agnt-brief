@@ -1,0 +1,18 @@
+{
+  "component": "PancakeV3LmPoolDeployer",
+  "main_contract": "PancakeV3LmPoolDeployer",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1ce47d33023def9d5c34c23c80a948fe137c6d27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

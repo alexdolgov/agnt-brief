@@ -1,0 +1,26 @@
+{
+  "component": "SnuggleVaultAdminSatellite",
+  "main_contract": "SnuggleVaultAdminSatellite",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1195c074f898b7644ba732407619c9804dfe6dce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x45405901ab9cba6b4a4e60e0c191819bbcd7d3f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

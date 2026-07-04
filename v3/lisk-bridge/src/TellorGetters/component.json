@@ -1,0 +1,18 @@
+{
+  "component": "TellorGetters",
+  "main_contract": "TellorGetters",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73e34dac4e76bda81724d333a02d850ca7fbb038",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

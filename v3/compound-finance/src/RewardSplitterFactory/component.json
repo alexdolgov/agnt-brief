@@ -1,0 +1,18 @@
+{
+  "component": "RewardSplitterFactory",
+  "main_contract": "RewardSplitterFactory",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x256af27ce81282a0491a5361172c1db08f6cc5f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

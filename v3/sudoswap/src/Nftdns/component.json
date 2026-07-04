@@ -1,0 +1,18 @@
+{
+  "component": "Nftdns",
+  "main_contract": "Nftdns",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe37bb18b86d228831a61872f5df3b5f24b6218da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

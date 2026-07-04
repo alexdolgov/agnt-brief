@@ -1,0 +1,18 @@
+{
+  "component": "TimeLockContract",
+  "main_contract": "TimeLockContract",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5e8c3f0ea1d4004f32dfae54bca88c78d065d869",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

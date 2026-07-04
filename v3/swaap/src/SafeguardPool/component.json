@@ -1,0 +1,60 @@
+{
+  "component": "SafeguardPool",
+  "main_contract": "SafeguardPool",
+  "source_file_count": 48,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://www.chainsecurity.com/security-audit/swaap-finance-safeguardpool"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x30985450cb225ec53fffb013171cadf6264b8b39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x46d0c6f1e64664d366b4378a87bccfc61ad32796",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x55e5695994857fa12162a17887241d53e7d1ca56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x98134802ef46c049f1c69bf87ee088be1a60137a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbc0cb9521b592d7993a2d8a6c7b471c18b599c1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc54ba936c9e40e5c5d31c241e8e3cba90e0084e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

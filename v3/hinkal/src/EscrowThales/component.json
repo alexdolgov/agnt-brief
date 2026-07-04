@@ -1,0 +1,18 @@
+{
+  "component": "EscrowThales",
+  "main_contract": "EscrowThales",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x566d358f3386abac32cbe750489306c73caac9c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

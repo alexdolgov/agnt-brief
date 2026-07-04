@@ -1,0 +1,18 @@
+{
+  "component": "Voter",
+  "main_contract": "Voter",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8fbb1ecebb9e9839bc0de00b9c4c585cabdd0462",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Hegic",
+  "main_contract": "Hegic",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x584bc13c7d411c00c01a62e8019472de68768430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

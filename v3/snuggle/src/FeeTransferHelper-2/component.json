@@ -1,0 +1,20 @@
+{
+  "component": "FeeTransferHelper-2",
+  "main_contract": "FeeTransferHelper",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.snuggle.fi/security"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf84b575e4e6d9fc07a3f2b863cb6a23cc11dcddc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

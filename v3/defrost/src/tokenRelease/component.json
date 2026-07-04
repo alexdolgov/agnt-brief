@@ -1,0 +1,26 @@
+{
+  "component": "tokenRelease",
+  "main_contract": "tokenRelease",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x577f4499566e9ed9c14c699bfe765536fd3dc0c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd91c4127b48fff27e2f9fd77d3c8540b59b45334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

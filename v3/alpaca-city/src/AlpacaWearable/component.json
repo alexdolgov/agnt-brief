@@ -1,0 +1,18 @@
+{
+  "component": "AlpacaWearable",
+  "main_contract": "AlpacaWearable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

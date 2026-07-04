@@ -1,0 +1,21 @@
+{
+  "component": "PauseManager",
+  "main_contract": "PauseManager",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/fb329103-8bd1-45ac-91d8-4f75e1abf812",
+    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Halborn-Audit-Feb-2025.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fdad576c5d9432fc424c2922efdce92f48cd578",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

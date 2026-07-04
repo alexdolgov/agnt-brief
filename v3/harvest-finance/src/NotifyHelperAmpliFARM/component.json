@@ -1,0 +1,18 @@
+{
+  "component": "NotifyHelperAmpliFARM",
+  "main_contract": "NotifyHelperAmpliFARM",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd9b13b448ae9d93dc7b9fbc7facc83e9b1f4c9dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

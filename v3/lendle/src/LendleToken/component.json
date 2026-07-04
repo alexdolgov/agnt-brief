@@ -1,0 +1,20 @@
+{
+  "component": "LendleToken",
+  "main_contract": "LendleToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sourcehat.com/audits/Lendle"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x25356aeca4210ef7553140edb9b8026089e49396",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

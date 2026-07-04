@@ -1,0 +1,18 @@
+{
+  "component": "superAErc20V2",
+  "main_contract": "superAErc20V2",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc0142e718873429a0bdd7f039087682f005d4774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

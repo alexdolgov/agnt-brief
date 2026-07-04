@@ -1,0 +1,18 @@
+{
+  "component": "ElkDexV3Pool",
+  "main_contract": "ElkDexV3Pool",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4b094aecf5598ca868c4470dc2c99425da6256f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

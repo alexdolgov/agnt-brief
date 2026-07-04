@@ -1,0 +1,18 @@
+{
+  "component": "baoDummy",
+  "main_contract": "baoDummy",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb70268dcbe8e7b8c6e93f57fb8a54daeb3e578e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolBase-4",
+  "main_contract": "ProtocolBase",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4ba93f34b174ed520eb8ac472c35defe524dbb06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

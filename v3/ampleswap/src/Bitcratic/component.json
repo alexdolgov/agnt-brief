@@ -1,0 +1,18 @@
+{
+  "component": "Bitcratic",
+  "main_contract": "Bitcratic",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa757862f02fc26065c3d46ce692b4099e45034bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

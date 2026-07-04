@@ -1,0 +1,20 @@
+{
+  "component": "EthenaLPStaking",
+  "main_contract": "EthenaLPStaking",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://596495599-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FsBsPyff5ft3inFy9jyjt%2Fuploads%2FBCV8xxvUneCO2WlUk2KS%2FEthena-security-review%20(1).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8707f238936c12c309bfc2b9959c35828acfc512",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

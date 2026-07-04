@@ -1,0 +1,28 @@
+{
+  "component": "EVCUtil-3",
+  "main_contract": "EVCUtil",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/f145854a-327f-4f2c-a8bf-f61f95ae23dd",
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20ChainSecurity%20report.pdf",
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20Omniscia%20report.pdf",
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20OpenZeppelin%20report.pdf",
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20Spearbit%20report.pdf",
+    "https://github.com/euler-xyz/ethereum-vault-connector/blob/master/audits/Euler%20yAudit%20report%20(EVC%20%2B%20EVK%20%2B%20Price%20Oracle).pdf",
+    "https://github.com/euler-xyz/euler-price-oracle/blob/master/audits/Euler_Price_Oracle_yAudit_Report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/Spearbit_EVK_report.pdf",
+    "https://github.com/euler-xyz/euler-vault-kit/blob/master/audits/yAudit_EVK_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x88b077130b43a19942c641b66a50418b02d2f7d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "XaveStratXSGDUSDCIndexUSDCv2",
+  "main_contract": "XaveStratXSGDUSDCIndexUSDCv2",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x156f3f49ca3ef1721e5af39bf70f9c6bd8193c29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FlashModule-2",
+  "main_contract": "FlashModule",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xbd6aba1ef82a4cd6e15cb05e95f433ef48dfb5df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "component": "OrigamiOFT",
+  "main_contract": "OrigamiOFT",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Electisec_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Nethermind_hOHM.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/hOHM/Panprog_hOHM.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x5bad2b7a0a2eee88a4ef05d5470cdedb0ff948ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

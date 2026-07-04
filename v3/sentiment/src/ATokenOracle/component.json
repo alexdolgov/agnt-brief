@@ -1,0 +1,36 @@
+{
+  "component": "ATokenOracle",
+  "main_contract": "ATokenOracle",
+  "source_file_count": 7,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arbitraryexecution/publications/blob/main/assessments/Sentiment_Oracle_20220727.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6cb48ade65fe10fd55231b661adbb00ab4a7d8bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9fa1188ca23e7f92db83c04bcf45fe1c82bbffc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbd50d480991f2b432da458d1759ba959408b4729",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

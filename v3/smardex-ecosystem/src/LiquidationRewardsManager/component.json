@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationRewardsManager",
+  "main_contract": "LiquidationRewardsManager",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9514d3496f46572e8461da381b200812d5db202c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

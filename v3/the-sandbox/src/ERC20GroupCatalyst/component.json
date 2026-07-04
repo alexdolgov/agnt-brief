@@ -1,0 +1,20 @@
+{
+  "component": "ERC20GroupCatalyst",
+  "main_contract": "ERC20GroupCatalyst",
+  "source_file_count": 75,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://immunefi.com/bug-bounty/hashflow/information"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2fc246149b4b8d7bcef6188a10af1791380227f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

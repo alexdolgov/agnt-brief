@@ -1,0 +1,18 @@
+{
+  "component": "LUDWIG",
+  "main_contract": "LUDWIG",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe6cc4d855b4fd4a9d02f46b9adae4c5efb1764b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

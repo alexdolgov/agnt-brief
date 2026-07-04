@@ -1,0 +1,18 @@
+{
+  "component": "PriceOracleProxyUSD",
+  "main_contract": "PriceOracleProxyUSD",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x107b31d84bf6cec672f3af924471bb6f4fb8555a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

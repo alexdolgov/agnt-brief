@@ -1,0 +1,18 @@
+{
+  "component": "CougarToken",
+  "main_contract": "CougarToken",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

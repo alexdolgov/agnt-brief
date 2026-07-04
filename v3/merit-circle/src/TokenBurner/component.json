@@ -1,0 +1,18 @@
+{
+  "component": "TokenBurner",
+  "main_contract": "TokenBurner",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f2e21062db87d1023e6e5941c5e8c2de32b44a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

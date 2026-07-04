@@ -1,0 +1,18 @@
+{
+  "component": "MasterAugur",
+  "main_contract": "MasterAugur",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6ad70613d14c34aa69e1604af91c39e0591a132e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

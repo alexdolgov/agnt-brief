@@ -1,0 +1,18 @@
+{
+  "component": "SupplyLock",
+  "main_contract": "SupplyLock",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b8a0bf64bc0290c8ba2570bade02201a099530c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

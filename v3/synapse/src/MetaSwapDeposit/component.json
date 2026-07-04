@@ -1,0 +1,34 @@
+{
+  "component": "MetaSwapDeposit",
+  "main_contract": "MetaSwapDeposit",
+  "source_file_count": 19,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x41e95b1f1c7849c50bb9caf92ab33302c0de945f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5d5f01aaec428356b54ee091502dbbeaa935f21a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9f72004d0ff5ccf2857a3564f7b3329057d15599",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

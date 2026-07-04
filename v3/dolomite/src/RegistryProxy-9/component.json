@@ -1,0 +1,18 @@
+{
+  "component": "RegistryProxy-9",
+  "main_contract": "RegistryProxy",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa2faf5d1bf7ea66f9dae29ab24ce1613b455f6b0",
+      "is_proxy": true,
+      "implementation_address": "0x5296adc33f75785b6dd87a2de8bdade9fdedbb56",
+      "liveness": null
+    }
+  ]
+}

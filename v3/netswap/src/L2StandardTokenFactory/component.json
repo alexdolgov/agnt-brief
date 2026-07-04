@@ -1,0 +1,18 @@
+{
+  "component": "L2StandardTokenFactory",
+  "main_contract": "L2StandardTokenFactory",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x4f2185589c43ab8e0ff91e6bba9921414ede8eae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

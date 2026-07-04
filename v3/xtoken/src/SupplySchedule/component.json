@@ -1,0 +1,18 @@
+{
+  "component": "SupplySchedule",
+  "main_contract": "SupplySchedule",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d203c458d536fe0f97e9f741bc231eac8cd91cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

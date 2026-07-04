@@ -1,0 +1,26 @@
+{
+  "component": "PositionsManager",
+  "main_contract": "PositionsManager",
+  "source_file_count": 59,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4592e45e0c5dbee94a135720ccff2e4353dac6de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcecc755730904b3a6c20ce9aaba181aa4593f869",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

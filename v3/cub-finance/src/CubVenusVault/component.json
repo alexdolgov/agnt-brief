@@ -1,0 +1,18 @@
+{
+  "component": "CubVenusVault",
+  "main_contract": "CubVenusVault",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x49d6ad854930b168a3b2c800eb9f5a27d1d35c30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

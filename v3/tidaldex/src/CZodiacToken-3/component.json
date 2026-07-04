@@ -1,0 +1,18 @@
+{
+  "component": "CZodiacToken-3",
+  "main_contract": "CZodiacToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4ff64012d85e3ab2b8aa58b755631057f49cca76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

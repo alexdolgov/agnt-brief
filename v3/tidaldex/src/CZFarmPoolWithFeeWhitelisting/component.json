@@ -1,0 +1,18 @@
+{
+  "component": "CZFarmPoolWithFeeWhitelisting",
+  "main_contract": "CZFarmPoolWithFeeWhitelisting",
+  "source_file_count": 10,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3829723ce582ae372571a8ce5adcb1107422bbf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

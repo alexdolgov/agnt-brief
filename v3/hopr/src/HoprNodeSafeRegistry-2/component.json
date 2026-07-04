@@ -1,0 +1,18 @@
+{
+  "component": "HoprNodeSafeRegistry-2",
+  "main_contract": "HoprNodeSafeRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0e4e1a2d851663462523bf38ca56259aceccbc76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

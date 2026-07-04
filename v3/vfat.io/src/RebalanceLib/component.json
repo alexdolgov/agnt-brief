@@ -1,0 +1,26 @@
+{
+  "component": "RebalanceLib",
+  "main_contract": "RebalanceLib",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6917570f7989d13fd2592b0162ce6fa97c58437a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa4fb47efcad2a06706dc4459b3745df90a552682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ApproveAndCall",
+  "main_contract": "ApproveAndCall",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1f7a12b40bfc8e8561008bc2ca1fbdc71a36d0e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

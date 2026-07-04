@@ -1,0 +1,18 @@
+{
+  "component": "CKValuer",
+  "main_contract": "CKValuer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3e3dc628fd41a88fd5a6cd78088dc078f7be6ade",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

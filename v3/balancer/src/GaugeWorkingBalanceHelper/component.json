@@ -1,0 +1,18 @@
+{
+  "component": "GaugeWorkingBalanceHelper",
+  "main_contract": "GaugeWorkingBalanceHelper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdab2583911e872a00a851fb80dcc78a4b46ba57c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Presale",
+  "main_contract": "Presale",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d1079b3d396925329e19b4b947c38afe5513145",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

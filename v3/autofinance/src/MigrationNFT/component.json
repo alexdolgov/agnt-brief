@@ -1,0 +1,18 @@
+{
+  "component": "MigrationNFT",
+  "main_contract": "MigrationNFT",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72baaa523a4662856f413b0fc0a9e3068f39fe76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

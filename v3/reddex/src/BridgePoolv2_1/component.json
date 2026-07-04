@@ -1,0 +1,18 @@
+{
+  "component": "BridgePoolv2_1",
+  "main_contract": "BridgePoolv2_1",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xda685e31e5dab8584b8b4c21763a4427732b2a9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

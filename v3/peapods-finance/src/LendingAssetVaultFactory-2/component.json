@@ -1,0 +1,18 @@
+{
+  "component": "LendingAssetVaultFactory-2",
+  "main_contract": "LendingAssetVaultFactory",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3cc2a9d0cab4176ee485016f5620c88b8a875cfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

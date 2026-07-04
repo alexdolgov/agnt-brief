@@ -1,0 +1,18 @@
+{
+  "component": "HunnyPlayV2BABY",
+  "main_contract": "HunnyPlayV2BABY",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x44dce2150fb7a6a8073a9b82020d5a0d1a54e0e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

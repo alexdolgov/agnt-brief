@@ -1,0 +1,526 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+// Interfaces
+import {IQuoter} from "./interfaces/IQuoter.sol";
+import {IVault} from "core/interfaces/IVault.sol";
+import {IOracle} from "core/interfaces/IOracle.sol";
+import {IUniswapV3Pool} from "v3-core/interfaces/IUniswapV3Pool.sol";
+
+// Contracts and libraries
+import {SirStructs} from "core/libraries/SirStructs.sol";
+import {SystemConstants} from "core/libraries/SystemConstants.sol";
+import {FullMath} from "core/libraries/FullMath.sol";
+import {IWETH9, IERC20} from "core/interfaces/IWETH9.sol";
+import {UniswapPoolAddress} from "core/libraries/UniswapPoolAddress.sol";
+import {AddressClone} from "core/libraries/AddressClone.sol";
+import {TickMath} from "v3-core/libraries/TickMath.sol";
+
+import "forge-std/console.sol";
+
+/**
+ * @notice Helper functions for SIR protocol
+ */
+contract Assistant {
+    IVault public immutable VAULT;
+    IOracle private immutable SIR_ORACLE;
+    address private immutable UNISWAPV3_FACTORY;
+    IQuoter private immutable UNISWAPV3_QUOTER;
+
+    error VaultDoesNotExist();
+    error AmountTooLow();
+    error TooMuchCollateral();
+    error TEAMaxSupplyExceeded();
+
+    enum VaultStatus {
+        InvalidVault,
+        NoUniswapPool,
+        VaultCanBeCreated,
+        VaultAlreadyExists
+    }
+
+    constructor(address vault, address oracle, address uniswapV3Factory) {
+        VAULT = IVault(vault);
+        SIR_ORACLE = IOracle(oracle);
+        UNISWAPV3_FACTORY = uniswapV3Factory;
+
+        if (block.chainid == 1) UNISWAPV3_QUOTER = IQuoter(0x5e55C9e631FAE526cd4B0526C4818D6e0a9eF0e3);
+        else if (block.chainid == 11155111) UNISWAPV3_QUOTER = IQuoter(0xe3c07ebF66b9D070b589bCCa30903891F71A92Be);
+        else revert("Network not supported");
+    }
+
+    /**
+     *  @notice It returns the reserves of the vaults specified in vaultIds
+     */
+    function getReserves(uint48[] calldata vaultIds) external view returns (SirStructs.Reserves[] memory reserves) {
+        reserves = new SirStructs.Reserves[](vaultIds.length);
+        SirStructs.VaultParameters memory vaultParams;
+        for (uint256 i = 0; i < vaultIds.length; i++) {
+            vaultParams = VAULT.paramsById(vaultIds[i]);
+            reserves[i] = VAULT.getReserves(vaultParams);
+        }
+    }
+
+    /**
+     *  @notice It returns the balances of the user in vaults [offset + 1, offset + numVaults].
+     *  @param user The address of the user.
+     *  @param offset The offset of the vaults.
+     *  @param numVaults The number of vaults.
+     */
+    function getUserBalances(
+        address user,
+        uint offset,
+        uint numVaults
+    )
+        external
+        view
+        returns (uint256[] memory apeBalances, uint256[] memory teaBalances, uint80[] memory unclaimedSirRewards)
+    {
+        IERC20 ape;
+        apeBalances = new uint256[](numVaults);
+        teaBalances = new uint256[](numVaults);
+        unclaimedSirRewards = new uint80[](numVaults);
+        for (uint256 vaultId = offset + 1; vaultId <= offset + numVaults; vaultId++) {
+            ape = IERC20(AddressClone.getAddress(address(VAULT), vaultId));
+            apeBalances[vaultId - offset - 1] = ape.balanceOf(user);
+            teaBalances[vaultId - offset - 1] = VAULT.balanceOf(user, vaultId);
+            unclaimedSirRewards[vaultId - offset - 1] = VAULT.unclaimedRewards(vaultId, user);
+        }
+    }
+
+    /**
+     * @notice It returns the ideal price of TEA.
+     * To get the price as [units of Collateral][per unit of TEA], divide num by den.
+     */
+    function priceOfTEA(
+        SirStructs.VaultParameters calldata vaultParams
+    ) external view returns (uint256 num, uint256 den) {
+        // Get current reserves
+        SirStructs.Reserves memory reserves = VAULT.getReserves(vaultParams);
+        num = reserves.reserveLPers;
+
+        // Get supply of TEA
+        SirStructs.VaultState memory vaultState = VAULT.vaultStates(vaultParams);
+        den = VAULT.totalSupply(vaultState.vaultId);
+    }
+
+    /**
+     * @notice It returns the price of the APE token.
+     * To get the price as [units of Collateral][per unit of APE], divide num by den.
+     */
+    function priceOfAPE(
+        SirStructs.VaultParameters calldata vaultParams
+    ) external view returns (uint256 num, uint256 den) {
+        // Get current reserves
+        SirStructs.Reserves memory reserves = VAULT.getReserves(vaultParams);
+
+        // Get system parameters
+        SirStructs.SystemParameters memory systemParams = VAULT.systemParams();
+
+        // Substract fees
+        num = _feeAPE(reserves.reserveApes, systemParams.baseFee.fee, vaultParams.leverageTier);
+
+        // Get supply of APE
+        SirStructs.VaultState memory vaultState = VAULT.vaultStates(vaultParams);
+        den = IERC20(getAddressAPE(vaultState.vaultId)).totalSupply();
+    }
+
+    /**
+     * @notice It returns the status of the vault.
+     * 0: InvalidVault - returned when the ERC20 tokens are not valid.
+     * 1: NoUniswapPool - returned when no Uniswap pool of the two tokens does not exist.
+     * 2: VaultCanBeCreated - vault does not exist and it can be created.
+     * 3: VaultAlreadyExists - vault already exists.
+     */
+    function getVaultStatus(SirStructs.VaultParameters calldata vaultParams) external view returns (VaultStatus) {
+        // Check if the token addresses are a smart contract
+        if (vaultParams.collateralToken.code.length == 0) return VaultStatus.InvalidVault;
+        if (vaultParams.debtToken.code.length == 0) return VaultStatus.InvalidVault;
+
+        // Check if the token returns total supply
+        (bool success, ) = vaultParams.collateralToken.staticcall(abi.encodeWithSelector(IERC20.totalSupply.selector));
+        if (!success) return VaultStatus.InvalidVault;
+        (success, ) = vaultParams.debtToken.staticcall(abi.encodeWithSelector(IERC20.totalSupply.selector));
+        if (!success) return VaultStatus.InvalidVault;
+
+        // Check if the leverage tier is valid
+        if (
+            vaultParams.leverageTier < SystemConstants.MIN_LEVERAGE_TIER ||
+            vaultParams.leverageTier > SystemConstants.MAX_LEVERAGE_TIER
+        ) return VaultStatus.InvalidVault;
+
+        // Check if a Uniswap pool exists
+        if (
+            !_checkFeeTierExists(vaultParams, 100) &&
+            !_checkFeeTierExists(vaultParams, 500) &&
+            !_checkFeeTierExists(vaultParams, 3000) &&
+            !_checkFeeTierExists(vaultParams, 10000)
+        ) return VaultStatus.NoUniswapPool;
+
+        // Check if vault already exists
+        SirStructs.VaultState memory vaultState = VAULT.vaultStates(vaultParams);
+        if (vaultState.vaultId == 0) return VaultStatus.VaultCanBeCreated;
+        return VaultStatus.VaultAlreadyExists;
+    }
+
+    function getAddressAPE(uint48 vaultId) public view returns (address) {
+        return AddressClone.getAddress(address(VAULT), vaultId);
+    }
+
+    /*////////////////////////////////////////////////////////////////
+                            QUOTE FUNCTIONS
+    ////////////////////////////////////////////////////////////////*/
+
+    /**
+     * @notice It returns the amount of TEA/APE tokens that would be obtained by depositing collateral token.
+     * @dev If quoteMint reverts, mint will revert as well; vice versa is not necessarily true.
+     * @return amountTokens that would be obtained by depositing amountCollateral.
+     */
+    function quoteMint(
+        bool isAPE,
+        SirStructs.VaultParameters calldata vaultParams,
+        uint144 amountCollateral
+    ) public view returns (uint256 amountTokens) {
+        // Get vault state
+        SirStructs.VaultState memory vaultState = VAULT.vaultStates(vaultParams);
+        if (vaultState.vaultId == 0) revert VaultDoesNotExist();
+        if (amountCollateral == 0) revert AmountTooLow();
+
+        // Get current reserves
+        SirStructs.Reserves memory reserves = VAULT.getReserves(vaultParams);
+
+        SirStructs.SystemParameters memory systemParams = VAULT.systemParams();
+        if (isAPE) {
+            // Compute how much collateral actually gets deposited
+            uint256 collateralIn = _feeAPE(amountCollateral, systemParams.baseFee.fee, vaultParams.leverageTier);
+
+            // Get supply of APE
+            address ape = getAddressAPE(vaultState.vaultId);
+            uint256 supplyAPE = IERC20(ape).totalSupply();
+
+            // Calculate tokens
+            amountTokens = supplyAPE == 0
+                ? collateralIn + reserves.reserveApes
+                : FullMath.mulDiv(supplyAPE, collateralIn, reserves.reserveApes);
+        } else {
+            // Get collateralIn
+            uint256 collateralIn = _feeMintTEA(amountCollateral, systemParams.lpFee.fee);
+
+            // Get supply of TEA
+            uint256 supplyTEA = VAULT.totalSupply(vaultState.vaultId);
+
+            // Calculate tokens
+            amountTokens = supplyTEA == 0
+                ? _amountFirstMint(vaultParams.collateralToken, amountCollateral + reserves.reserveLPers)
+                : FullMath.mulDiv(supplyTEA, amountCollateral, reserves.reserveLPers);
+
+            // Check that total supply does not overflow
+            if (amountTokens > SystemConstants.TEA_MAX_SUPPLY - supplyTEA) revert TEAMaxSupplyExceeded();
+
+            // Minter's share of TEA
+            amountTokens = FullMath.mulDiv(
+                amountTokens,
+                collateralIn,
+                supplyTEA == 0
+                    ? amountCollateral + reserves.reserveLPers // In the first mint, reserveLPers contains orphaned fees from apes
+                    : amountCollateral
+            );
+        }
+
+        if (amountTokens == 0) revert AmountTooLow();
+    }
+
+    /**
+     * @notice It returns the amount of TEA/APE tokens that would be obtained by depositing debt token
+     * @dev If quoteMint reverts, mint will revert as well; vice versa is not necessarily true.
+     * @return amountTokens that would be obtained.
+     */
+    function quoteMintWithDebtToken(
+        bool isAPE,
+        SirStructs.VaultParameters calldata vaultParams,
+        uint256 amountDebtToken
+    ) external view returns (uint256 amountTokens, uint256 amountCollateral, uint256 amountCollateralIdeal) {
+        if (amountDebtToken == 0) revert AmountTooLow();
+
+        // Get fee tier
+        uint24 feeTier = SIR_ORACLE.uniswapFeeTierOf(vaultParams.debtToken, vaultParams.collateralToken);
+
+        // Quote Uniswap v3
+        (amountCollateral, , , ) = UNISWAPV3_QUOTER.quoteExactInputSingle(
+            IQuoter.QuoteExactInputSingleParams({
+                tokenIn: vaultParams.debtToken,
+                tokenOut: vaultParams.collateralToken,
+                amountIn: amountDebtToken,
+                fee: feeTier,
+                sqrtPriceLimitX96: 0
+            })
+        );
+
+        // Check that amountCollateral does not overflow
+        if (amountCollateral > type(uint144).max) revert TooMuchCollateral();
+
+        // Calculate ideal collateral amount using instant pool price (no slippage)
+        // Get Uniswap pool
+        address uniswapPool = SIR_ORACLE.uniswapFeeTierAddressOf(vaultParams.debtToken, vaultParams.collateralToken);
+
+        // Get current price
+        (uint160 sqrtPriceX96, , , , , , ) = IUniswapV3Pool(uniswapPool).slot0();
+
+        // Calculate price fraction with better precision if it doesn't overflow when multiplied by itself
+        bool inverse = vaultParams.collateralToken == IUniswapV3Pool(uniswapPool).token1();
+        if (sqrtPriceX96 <= type(uint128).max) {
+            uint256 priceX192 = uint256(sqrtPriceX96) * sqrtPriceX96;
+            amountCollateralIdeal = inverse
+                ? FullMath.mulDiv(priceX192, amountDebtToken, 1 << 192)
+                : FullMath.mulDiv(1 << 192, amountDebtToken, priceX192);
+        } else {
+            uint256 priceX128 = FullMath.mulDiv(sqrtPriceX96, sqrtPriceX96, 1 << 64);
+            amountCollateralIdeal = inverse
+                ? FullMath.mulDiv(priceX128, amountDebtToken, 1 << 128)
+                : FullMath.mulDiv(1 << 128, amountDebtToken, priceX128);
+        }
+
+        // Given that we know how much collateral we will get from Uniswap, we can now use the quoteMint function
+        amountTokens = quoteMint(isAPE, vaultParams, uint144(amountCollateral));
+    }
+
+    function quoteCollateralToDebtToken(
+        address debtToken,
+        address collateralToken,
+        uint256 amountCollateral
+    ) external view returns (uint256 amountDebtToken) {
+        // Get Uniswap pool
+        address uniswapPool = SIR_ORACLE.uniswapFeeTierAddressOf(debtToken, collateralToken);
+
+        // Get current price
+        (uint160 sqrtPriceX96, , , , , , ) = IUniswapV3Pool(uniswapPool).slot0();
+
+        // Calculate price fraction with better precision if it doesn't overflow when multiplied by itself
+        bool inverse = collateralToken == IUniswapV3Pool(uniswapPool).token1();
+        if (sqrtPriceX96 <= type(uint128).max) {
+            uint256 priceX192 = uint256(sqrtPriceX96) * sqrtPriceX96;
+            return
+                !inverse
+                    ? FullMath.mulDiv(priceX192, amountCollateral, 1 << 192)
+                    : FullMath.mulDiv(1 << 192, amountCollateral, priceX192);
+        } else {
+            uint256 priceX128 = FullMath.mulDiv(sqrtPriceX96, sqrtPriceX96, 1 << 64);
+            return
+                !inverse
+                    ? FullMath.mulDiv(priceX128, amountCollateral, 1 << 128)
+                    : FullMath.mulDiv(1 << 128, amountCollateral, priceX128);
+        }
+    }
+
+    /**
+     * @notice If quoteBurn reverts, burn in Vault.sol will revert as well; vice versa is not necessarily true.
+     * @return amountCollateral that would be obtained by burning amountTokens.
+     * @return amountDebtToken the equivalent amount in debt token using Oracle TWAP price.
+     */
+    function quoteBurn(
+        bool isAPE,
+        SirStructs.VaultParameters calldata vaultParams,
+        uint256 amountTokens
+    ) external view returns (uint144 amountCollateral, uint256 amountDebtToken) {
+        // Get vault state
+        SirStructs.VaultState memory vaultState = VAULT.vaultStates(vaultParams);
+        if (vaultState.vaultId == 0) revert VaultDoesNotExist();
+        if (amountTokens == 0) revert AmountTooLow();
+
+        // Get current reserves
+        SirStructs.Reserves memory reserves = VAULT.getReserves(vaultParams);
+
+        if (isAPE) {
+            // Get supply of APE
+            address ape = getAddressAPE(vaultState.vaultId);
+            uint256 supplyAPE = IERC20(ape).totalSupply();
+
+            // Get collateralOut
+            uint144 collateralOut = uint144(FullMath.mulDiv(reserves.reserveApes, amountTokens, supplyAPE));
+
+            // Get system parameters
+            SirStructs.SystemParameters memory systemParams = VAULT.systemParams();
+
+            // Get collateral withdrawn
+            amountCollateral = _feeAPE(collateralOut, systemParams.baseFee.fee, vaultParams.leverageTier);
+        } else {
+            // Get supply of TEA
+            uint256 supplyTEA = VAULT.totalSupply(vaultState.vaultId);
+
+            // Get amount of collateral that would be withdrawn
+            amountCollateral = uint144(FullMath.mulDiv(reserves.reserveLPers, amountTokens, supplyTEA));
+        }
+
+        // Convert collateral amount to debt token amount using Oracle TWAP
+        amountDebtToken = _convertCollateralToDebtTokenUsingTWAP(
+            vaultParams.collateralToken,
+            vaultParams.debtToken,
+            amountCollateral
+        );
+    }
+
+    /**
+     * @notice Converts collateral amount to debt token amount using the Oracle's TWAP price.
+     * @dev This uses the same TWAP price calculation as the Oracle contract for consistency.
+     * @param collateralToken The collateral token address.
+     * @param debtToken The debt token address.
+     * @param amountCollateral The amount of collateral to convert.
+     * @return amountDebtToken The equivalent amount in debt tokens.
+     */
+    function _convertCollateralToDebtTokenUsingTWAP(
+        address collateralToken,
+        address debtToken,
+        uint256 amountCollateral
+    ) private view returns (uint256 amountDebtToken) {
+        // Get the pool address from Oracle
+        address poolAddress = SIR_ORACLE.uniswapFeeTierAddressOf(collateralToken, debtToken);
+
+        IUniswapV3Pool pool = IUniswapV3Pool(poolAddress);
+
+        // Get TWAP observation data similar to Oracle
+        uint32[] memory secondsAgos = new uint32[](2);
+        secondsAgos[0] = 1800; // 30 minutes (TWAP_DURATION from Oracle)
+        secondsAgos[1] = 0;
+
+        int56[] memory tickCumulatives;
+
+        try pool.observe(secondsAgos) returns (int56[] memory tickCumulatives_, uint160[] memory) {
+            tickCumulatives = tickCumulatives_;
+        } catch {
+            // If 30-minute TWAP not available, try to get the oldest available observation
+            // This mimics Oracle's fallback behavior
+            (, , uint16 observationIndex, uint16 observationCardinality, , , ) = pool.slot0();
+
+            if (observationCardinality > 1) {
+                // Get oldest observation
+                uint32 oldestObservationSeconds;
+                int56 oldestTickCumulative;
+                bool initialized;
+
+                // Try to get the oldest initialized observation
+                uint16 oldestIndex = (observationIndex + 1) % observationCardinality;
+                (oldestObservationSeconds, oldestTickCumulative, , initialized) = pool.observations(oldestIndex);
+
+                if (!initialized) {
+                    // Fallback to index 0 which is always initialized
+                    (oldestObservationSeconds, oldestTickCumulative, , ) = pool.observations(0);
+                }
+
+                // Calculate time difference
+                uint32 timeElapsed = uint32(block.timestamp) - oldestObservationSeconds;
+
+                if (timeElapsed > 0) {
+                    // Get current observation
+                    secondsAgos[0] = timeElapsed;
+                    tickCumulatives = new int56[](2);
+                    (tickCumulatives, ) = pool.observe(secondsAgos);
+                } else {
+                    // Use spot price if no TWAP available
+                    (, int24 currentTick, , , , , ) = pool.slot0();
+                    tickCumulatives = new int56[](2);
+                    tickCumulatives[0] = currentTick;
+                    tickCumulatives[1] = currentTick;
+                    secondsAgos[0] = 1; // Avoid division by zero
+                }
+            } else {
+                // Use spot price if cardinality is 1
+                (, int24 currentTick, , , , , ) = pool.slot0();
+                tickCumulatives = new int56[](2);
+                tickCumulatives[0] = currentTick;
+                tickCumulatives[1] = currentTick;
+                secondsAgos[0] = 1; // Avoid division by zero
+            }
+        }
+
+        // Calculate average tick over the period
+        int24 arithmeticMeanTick = int24((tickCumulatives[1] - tickCumulatives[0]) / int56(uint56(secondsAgos[0])));
+
+        // Convert tick to price
+        // The price is in terms of token1/token0 in the pool
+        bool collateralIsToken0 = collateralToken < debtToken;
+
+        // Calculate sqrt price from tick
+        uint160 sqrtPriceX96 = TickMath.getSqrtRatioAtTick(arithmeticMeanTick);
+
+        // Calculate the amount of debt tokens
+        // Price calculation depends on token order in the pool
+        if (collateralIsToken0) {
+            // collateral is token0, debt is token1
+            // Price is debt/collateral (token1/token0)
+            // amountDebtToken = amountCollateral * price
+            if (sqrtPriceX96 <= type(uint128).max) {
+                uint256 priceX192 = uint256(sqrtPriceX96) * sqrtPriceX96;
+                amountDebtToken = FullMath.mulDiv(amountCollateral, priceX192, 1 << 192);
+            } else {
+                uint256 priceX128 = FullMath.mulDiv(sqrtPriceX96, sqrtPriceX96, 1 << 64);
+                amountDebtToken = FullMath.mulDiv(amountCollateral, priceX128, 1 << 128);
+            }
+        } else {
+            // collateral is token1, debt is token0
+            // Price is still token1/token0, but we need debt/collateral
+            // So we need to invert: amountDebtToken = amountCollateral / price
+            if (sqrtPriceX96 <= type(uint128).max) {
+                uint256 priceX192 = uint256(sqrtPriceX96) * sqrtPriceX96;
+                amountDebtToken = FullMath.mulDiv(amountCollateral, 1 << 192, priceX192);
+            } else {
+                uint256 priceX128 = FullMath.mulDiv(sqrtPriceX96, sqrtPriceX96, 1 << 64);
+                amountDebtToken = FullMath.mulDiv(amountCollateral, 1 << 128, priceX128);
+            }
+        }
+    }
+
+    /*////////////////////////////////////////////////////////////////
+                            PRIVATE FUNCTIONS
+    ////////////////////////////////////////////////////////////////*/
+
+    function _feeAPE(
+        uint144 collateralDepositedOrOut,
+        uint16 baseFee,
+        int256 leverageTier
+    ) private pure returns (uint144 collateralInOrWithdrawn) {
+        unchecked {
+            uint256 feeNum;
+            uint256 feeDen;
+            if (leverageTier >= 0) {
+                feeNum = 10000; // baseFee is uint16, leverageTier is int8, so feeNum does not require more than 24 bits
+                feeDen = 10000 + (uint256(baseFee) << uint256(leverageTier));
+            } else {
+                uint256 temp = 10000 << uint256(-leverageTier);
+                feeNum = temp;
+                feeDen = temp + uint256(baseFee);
+            }
+
+            collateralInOrWithdrawn = uint144((uint256(collateralDepositedOrOut) * feeNum) / feeDen);
+        }
+    }
+
+    function _feeMintTEA(uint144 collateralDeposited, uint16 lpFee) private pure returns (uint144 collateralIn) {
+        unchecked {
+            uint256 feeNum = 10000;
+            uint256 feeDen = 10000 + uint256(lpFee);
+
+            collateralIn = uint144((uint256(collateralDeposited) * feeNum) / feeDen);
+        }
+    }
+
+    function _checkFeeTierExists(
+        SirStructs.VaultParameters calldata vaultParams,
+        uint24 feeTier
+    ) private view returns (bool) {
+        return
+            UniswapPoolAddress
+                .computeAddress(
+                    UNISWAPV3_FACTORY,
+                    UniswapPoolAddress.getPoolKey(vaultParams.collateralToken, vaultParams.debtToken, feeTier)
+                )
+                .code
+                .length != 0;
+    }
+
+    function _amountFirstMint(address collateral, uint144 collateralDeposited) private view returns (uint256 amount) {
+        uint256 collateralTotalSupply = IERC20(collateral).totalSupply();
+        amount = collateralTotalSupply > SystemConstants.TEA_MAX_SUPPLY / 1e6
+            ? FullMath.mulDiv(SystemConstants.TEA_MAX_SUPPLY, collateralDeposited, collateralTotalSupply)
+            : collateralDeposited * 1e6;
+    }
+}

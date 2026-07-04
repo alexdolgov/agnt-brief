@@ -1,0 +1,18 @@
+{
+  "component": "AggregationRouter",
+  "main_contract": "AggregationRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf1a1b60f2d438842916c0adc43748768353ec25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SablierV2LockupLinear",
+  "main_contract": "SablierV2LockupLinear",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafb979d9afad1ad27c5eff4e27226e3ab9e5dcc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

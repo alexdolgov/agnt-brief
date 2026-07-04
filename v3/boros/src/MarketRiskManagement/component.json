@@ -1,0 +1,18 @@
+{
+  "component": "MarketRiskManagement",
+  "main_contract": "MarketRiskManagement",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xda1ccbc1a234080216938d003ec6946ac4a73a7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

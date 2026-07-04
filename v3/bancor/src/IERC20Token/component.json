@@ -1,0 +1,20 @@
+{
+  "component": "IERC20Token",
+  "main_contract": "IERC20Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://gist.github.com/Arachnid/c65fd1bd61a8e0294aef95a4808edc78"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

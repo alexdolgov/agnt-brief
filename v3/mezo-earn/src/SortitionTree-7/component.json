@@ -1,0 +1,18 @@
+{
+  "component": "SortitionTree-7",
+  "main_contract": "SortitionTree",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x024a697788918007592572f7cd020df2bc2abd84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PeggedTokenBridge",
+  "main_contract": "PeggedTokenBridge",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xbb7684cc5408f4dd0921e5c2cadd547b8f1ad573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

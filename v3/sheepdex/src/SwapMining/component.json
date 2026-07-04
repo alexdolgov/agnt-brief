@@ -1,0 +1,18 @@
+{
+  "component": "SwapMining",
+  "main_contract": "SwapMining",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x58469aee3436a000698d0a8e648f5d14f31ee019",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WarRedeemer",
+  "main_contract": "WarRedeemer",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4787ef084c1d57ed87d58a716d991f8a9cd3828c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

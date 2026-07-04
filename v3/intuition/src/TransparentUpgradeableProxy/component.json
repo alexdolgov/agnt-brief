@@ -1,0 +1,31 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xIntuition/intuition-contracts-v0.1/blob/main/audits/tob/Intuition%20-%20Smart%20Contracts%20-%20Summary%20Report%20with%20Fix%20Review%20Appendix.pdf",
+    "https://github.com/0xIntuition/intuition-contracts-v0.1/blob/main/audits/tob/Intuition%20Summary%20Report%20-%20ToB%20Audit%201.pdf",
+    "https://github.com/0xIntuition/intuition-contracts-v2/blob/main/audits/Diligence-Audit-Report-1.pdf",
+    "https://github.com/trailofbits/publications/blob/master/reviews/2024-03-intuition-smart-contracts-securityreview.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7745bdee668501e5eef7e9605c746f9cdfb60667",
+      "is_proxy": true,
+      "implementation_address": "0xd235b804f25b062d99457da82f3787671573c355",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb2ade5cb220f9edd121a623526c720a819191232",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

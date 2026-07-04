@@ -1,0 +1,18 @@
+{
+  "component": "BAGCOIN",
+  "main_contract": "BAGCOIN",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x808688c820ab080a6ff1019f03e5ec227d9b522b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

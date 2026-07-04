@@ -1,0 +1,18 @@
+{
+  "component": "RBACTimelock",
+  "main_contract": "RBACTimelock",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1e2faed390be7945acbf22fc25173c4bdda3ea45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

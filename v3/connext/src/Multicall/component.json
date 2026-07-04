@@ -1,0 +1,20 @@
+{
+  "component": "Multicall",
+  "main_contract": "Multicall",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/connext/audits/blob/main/amarok/Connext-Spearbit-Security-Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63377166e406ee6a992b8e20961f047bb12e4d81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ArbMCBv2",
+  "main_contract": "ArbMCBv2",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdb967d37651532dbac06ec3bcf8e548d43f2d7ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

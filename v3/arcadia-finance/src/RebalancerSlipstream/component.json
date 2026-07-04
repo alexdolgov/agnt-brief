@@ -1,0 +1,36 @@
+{
+  "component": "RebalancerSlipstream",
+  "main_contract": "RebalancerSlipstream",
+  "source_file_count": 36,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2026-01%20Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x37c6258aee125d520b6f03fc2cb490955050d557",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5802454749cc0c4a6f28d5001b4cd84432e2b79f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x953ff365d0b562cec658dc46b394e9282338d9ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

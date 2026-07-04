@@ -1,0 +1,18 @@
+{
+  "component": "MochiNFTEngine",
+  "main_contract": "MochiNFTEngine",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x091a8460e20761bb3ced9bc3a0de62aab3d24115",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

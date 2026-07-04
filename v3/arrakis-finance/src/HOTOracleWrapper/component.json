@@ -1,0 +1,26 @@
+{
+  "component": "HOTOracleWrapper",
+  "main_contract": "HOTOracleWrapper",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf126798061555cf2778465bb5a001dc8d99356dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf23d83da92844c53ad57e6031c231dc93ec4ee80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

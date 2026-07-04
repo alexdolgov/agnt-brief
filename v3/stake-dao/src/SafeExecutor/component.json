@@ -1,0 +1,18 @@
+{
+  "component": "SafeExecutor",
+  "main_contract": "SafeExecutor",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5a7198ceb108dd0a4b0bf109dc6543f67fa9e3b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

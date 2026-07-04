@@ -1,0 +1,18 @@
+{
+  "component": "Voting_Escrow",
+  "main_contract": "Voting Escrow",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13daffdf8863c47290363b0109b681e3f37470a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

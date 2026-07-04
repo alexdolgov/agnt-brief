@@ -1,0 +1,18 @@
+{
+  "component": "StakingNetworkpool",
+  "main_contract": "StakingNetworkpool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc5e60b0530f4927a2adde93ab49f863b88327621",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

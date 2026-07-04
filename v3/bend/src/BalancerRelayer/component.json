@@ -1,0 +1,18 @@
+{
+  "component": "BalancerRelayer",
+  "main_contract": "BalancerRelayer",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x6044f181ab5e9c05a4ed9ce295f3b178d2492ee7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

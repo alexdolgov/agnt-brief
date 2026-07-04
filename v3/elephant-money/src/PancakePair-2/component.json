@@ -1,0 +1,18 @@
+{
+  "component": "PancakePair-2",
+  "main_contract": "PancakePair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

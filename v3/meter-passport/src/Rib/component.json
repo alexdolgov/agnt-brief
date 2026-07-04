@@ -1,0 +1,18 @@
+{
+  "component": "Rib",
+  "main_contract": "Rib",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x4bde98731149093a12579d71338fd3741fe6e5ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

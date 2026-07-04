@@ -1,0 +1,50 @@
+{
+  "component": "BridgedLSTCalculator",
+  "main_contract": "BridgedLSTCalculator",
+  "source_file_count": 66,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x58897ec6b7d7102bb24a29e99a14a6d9e517943e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa80b38da84e7c7a094e6d0093de374a00e892934",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb081af21468deb33aab9e37eae6f5004cc1cbdb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb5182945caa19e3a9fa35e70502fc3269d1fa9ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbaf2ee1c91cc8a00b386b14d65bdb4918604e1a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

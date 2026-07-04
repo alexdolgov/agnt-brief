@@ -1,0 +1,58 @@
+{
+  "component": "VeDistributor",
+  "main_contract": "VeDistributor",
+  "source_file_count": 16,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2c4599a079d029f0304b284f4696d009c0281806",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3ee71391bf1c6a7ed1a8a0aa6600ffd2a149dab9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5d07d0624d0b06932e9841e62e04dc36d586d810",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x619151606267da7d1d78be06e59e55134329004d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa264650215244fada7ebe7599de619f35e7791f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf8d97ec3a778028e84d4364bcd72bb3e2fb5d18e",
+      "is_proxy": true,
+      "implementation_address": "0x1e7ceaceada7bbab356613bc49806fa570e34c11",
+      "liveness": "live"
+    }
+  ]
+}

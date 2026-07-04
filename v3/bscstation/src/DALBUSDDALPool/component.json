@@ -1,0 +1,18 @@
+{
+  "component": "DALBUSDDALPool",
+  "main_contract": "DALBUSDDALPool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb801d820852010b46bcbd2c85e9cde07052fe17a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "InfiniFiOFT",
+  "main_contract": "InfiniFiOFT",
+  "source_file_count": 44,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x60b14ec49874af1ba471685cb11132101aebdf09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9fa1202516916534ade66962ee91410d559f1c10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

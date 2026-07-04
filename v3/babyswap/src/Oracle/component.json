@@ -1,0 +1,42 @@
+{
+  "component": "Oracle",
+  "main_contract": "Oracle",
+  "source_file_count": 77,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5db99da94d967e268bbc4b6d9ffbe5da88fb47a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x726cb726c9d8463f4c999c1d3b4fd558a51f9528",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb81d4780780e5b66ba80a17e8c496dd1616fa468",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc26a75fbb4c9e1fd06080a1c5f616de95e603597",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StatsTransientCacheStore",
+  "main_contract": "StatsTransientCacheStore",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34712f37aee81b3a0d2fe03fea9f4cb25961bb88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

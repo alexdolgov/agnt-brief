@@ -1,0 +1,18 @@
+{
+  "component": "AltoTimelockController",
+  "main_contract": "AltoTimelockController",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9f06fefc4c53ded77a90cb798ed08dc068bb6dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "OffchainOracle",
+  "main_contract": "OffchainOracle",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe26a18b00e4827ed86bc136b2c1e95d5ae115edd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfbd61b037c325b959c0f6a7e69d8f37770c2c550",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

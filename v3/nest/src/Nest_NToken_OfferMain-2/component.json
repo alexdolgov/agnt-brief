@@ -1,0 +1,18 @@
+{
+  "component": "Nest_NToken_OfferMain-2",
+  "main_contract": "Nest_NToken_OfferMain",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc40d7b9ca90eaca4a6e067b6ec689fd29f4a8b3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

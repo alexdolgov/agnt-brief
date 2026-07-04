@@ -1,0 +1,18 @@
+{
+  "component": "BasePluginV1Factory",
+  "main_contract": "BasePluginV1Factory",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x98b2ec80a27b712e01cd085969def226aaf8e34a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

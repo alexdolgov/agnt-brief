@@ -1,0 +1,18 @@
+{
+  "component": "CityFactory",
+  "main_contract": "CityFactory",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x66182e72c7d3b1268d304a48ddd9bd4a5d9c5c94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

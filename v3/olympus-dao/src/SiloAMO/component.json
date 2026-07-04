@@ -1,0 +1,18 @@
+{
+  "component": "SiloAMO",
+  "main_contract": "SiloAMO",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa8578c9a73c2b4f75968ec76d6689045ff68b97c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

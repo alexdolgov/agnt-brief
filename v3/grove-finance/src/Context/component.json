@@ -1,0 +1,18 @@
+{
+  "component": "Context",
+  "main_contract": "Context",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e9eb19fb06e56f5bd1e3207e7a61d39dd22c6b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

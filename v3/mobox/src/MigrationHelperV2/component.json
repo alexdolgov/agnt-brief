@@ -1,0 +1,26 @@
+{
+  "component": "MigrationHelperV2",
+  "main_contract": "MigrationHelperV2",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x00b3ea589c4e566fe55974ffc129a5803f7d1d3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4e24019b743a283b92d3f4b8bc6dc077e50b67c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

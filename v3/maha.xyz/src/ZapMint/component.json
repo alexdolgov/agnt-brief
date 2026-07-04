@@ -1,0 +1,18 @@
+{
+  "component": "ZapMint",
+  "main_contract": "ZapMint",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x480c32c8df2a0b7004b294049ca2f799c752f147",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

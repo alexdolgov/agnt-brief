@@ -1,0 +1,18 @@
+{
+  "component": "PendleExternalRewardDistributor",
+  "main_contract": "PendleExternalRewardDistributor",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x068def65b9dbaff02b4ee54572a9fa7dfb188ea3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

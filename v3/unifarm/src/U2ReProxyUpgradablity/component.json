@@ -1,0 +1,18 @@
+{
+  "component": "U2ReProxyUpgradablity",
+  "main_contract": "U2ReProxyUpgradablity",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x652862b61c71c8d955ccbd973d2830c68e46ce78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

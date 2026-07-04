@@ -1,0 +1,18 @@
+{
+  "component": "VaultAPSStrat",
+  "main_contract": "VaultAPSStrat",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc0b52c04cdc0099aefcca8b0675a00cf8f6d7dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

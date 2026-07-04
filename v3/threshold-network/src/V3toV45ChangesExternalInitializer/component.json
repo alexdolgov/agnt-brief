@@ -1,0 +1,18 @@
+{
+  "component": "V3toV45ChangesExternalInitializer",
+  "main_contract": "V3toV45ChangesExternalInitializer",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1753593fb64c7338e945e3dac16df92ab1f92ed8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

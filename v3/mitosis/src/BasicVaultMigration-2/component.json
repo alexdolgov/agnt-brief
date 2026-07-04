@@ -1,0 +1,18 @@
+{
+  "component": "BasicVaultMigration-2",
+  "main_contract": "BasicVaultMigration",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xa0eeb418213f8472cba2c842378e1bb64e28bd28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

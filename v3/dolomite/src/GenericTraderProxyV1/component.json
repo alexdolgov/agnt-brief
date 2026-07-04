@@ -1,0 +1,26 @@
+{
+  "component": "GenericTraderProxyV1",
+  "main_contract": "GenericTraderProxyV1",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x8a13c00facd1971fbb7ced5ebf88f9e900419d5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xd432c30de38b5d6f30257a353ed853503ed2edab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

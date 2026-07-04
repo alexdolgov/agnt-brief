@@ -1,0 +1,18 @@
+{
+  "component": "WrappedmSLV",
+  "main_contract": "WrappedmSLV",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d1555d8cb3c846bb4f7d5b1b1080872c3166676",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WrapperModule",
+  "main_contract": "WrapperModule",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1a4d55d6f936f9069163fa86e984592ce66749d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

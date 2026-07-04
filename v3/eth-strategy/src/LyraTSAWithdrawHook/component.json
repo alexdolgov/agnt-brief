@@ -1,0 +1,42 @@
+{
+  "component": "LyraTSAWithdrawHook",
+  "main_contract": "LyraTSAWithdrawHook",
+  "source_file_count": 48,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5240cf9e4aee511f4a2de7fe10c146f3e97ecf88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcae1214f37b6a88fa41e1312563cf3103ca09181",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6eada8340cc4666c76cb1d789356e12436f4064",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb737867af205fa5dd06e0852f6584067236bfdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

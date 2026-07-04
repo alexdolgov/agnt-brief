@@ -1,0 +1,18 @@
+{
+  "component": "PND",
+  "main_contract": "PND",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5fff1443cb859e17e9a6786f7e24c369f22fd002",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

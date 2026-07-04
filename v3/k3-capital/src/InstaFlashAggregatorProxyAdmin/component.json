@@ -1,0 +1,18 @@
+{
+  "component": "InstaFlashAggregatorProxyAdmin",
+  "main_contract": "InstaFlashAggregatorProxyAdmin",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x9c0ee5e73d2350e19a6e29ad8416b58101b6eac8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

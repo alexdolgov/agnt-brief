@@ -1,0 +1,18 @@
+{
+  "component": "LooksRareExchange",
+  "main_contract": "LooksRareExchange",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x59728544b08ab483533076417fbbb2fd0b17ce3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakingHpl",
+  "main_contract": "StakingHpl",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x09b2236327d76fcd9e4b72db70a6608c21a94292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

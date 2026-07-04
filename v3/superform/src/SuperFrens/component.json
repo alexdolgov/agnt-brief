@@ -1,0 +1,60 @@
+{
+  "component": "SuperFrens",
+  "main_contract": "SuperFrens",
+  "source_file_count": 17,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superform-xyz/superform-core/blob/main/security-review/report-cantinacode-superform.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4fdf7e39b8d3bb2503e97f49360e199c38c1dfee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x55bf2f25bd1e5a97b948948f2e64bf0720093822",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5a3c6729ac93d87cfd3788c307478c0df2a402b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x73317659b5a768b712d8d079f4df298510053135",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9c451e5f05c03cefc30404dfd193788799c58c7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb5fec2c7344cfba8e785dbada927f32559a4741d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

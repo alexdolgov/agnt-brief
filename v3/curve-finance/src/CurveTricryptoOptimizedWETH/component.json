@@ -1,0 +1,20 @@
+{
+  "component": "CurveTricryptoOptimizedWETH",
+  "main_contract": "CurveTricryptoOptimizedWETH",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/ChainSecurity_Curve_tricrypto-ng_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0c59d36b23f809f8b6c7cb4c8c590a0ac103baef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

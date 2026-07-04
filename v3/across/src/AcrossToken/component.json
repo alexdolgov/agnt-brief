@@ -1,0 +1,20 @@
+{
+  "component": "AcrossToken",
+  "main_contract": "AcrossToken",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/across-token-and-token-distributor-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44108f0223a3c3028f5fe7aec7f9bb2e66bef82f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

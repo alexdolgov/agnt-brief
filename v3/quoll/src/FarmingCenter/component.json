@@ -1,0 +1,18 @@
+{
+  "component": "FarmingCenter",
+  "main_contract": "FarmingCenter",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0cd53eeb75d72ee0e3e64206b63d7204351d08bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

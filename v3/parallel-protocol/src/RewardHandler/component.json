@@ -1,0 +1,18 @@
+{
+  "component": "RewardHandler",
+  "main_contract": "RewardHandler",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2b6c7c275404e93a14a05b549af292231d6e4dec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

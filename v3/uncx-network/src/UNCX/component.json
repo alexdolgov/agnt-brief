@@ -1,0 +1,18 @@
+{
+  "component": "UNCX",
+  "main_contract": "UNCX",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xadb2437e6f65682b85f814fbc12fec0508a7b1d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

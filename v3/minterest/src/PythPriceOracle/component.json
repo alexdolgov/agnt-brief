@@ -1,0 +1,18 @@
+{
+  "component": "PythPriceOracle",
+  "main_contract": "PythPriceOracle",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xe491e4c70f8c74380e68a8c4e1a0352fd1ae7359",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ArbitrumCoreBranchRouter",
+  "main_contract": "ArbitrumCoreBranchRouter",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x38defd1a1a1e7d6af860ec1eda6f4c75741d9e7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaaa6c918bc5b391553221a1a32423658480943fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

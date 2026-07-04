@@ -1,0 +1,18 @@
+{
+  "component": "AUG2024Timelock",
+  "main_contract": "AUG2024Timelock",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49ee78939b248a037623f75c4169cc80213f5880",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

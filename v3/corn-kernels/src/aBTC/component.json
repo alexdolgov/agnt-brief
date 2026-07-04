@@ -1,0 +1,18 @@
+{
+  "component": "aBTC",
+  "main_contract": "aBTC",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e14fe5ea32ee54c6cb3c237ffdce1c57df2a0be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

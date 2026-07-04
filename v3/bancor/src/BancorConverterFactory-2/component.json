@@ -1,0 +1,18 @@
+{
+  "component": "BancorConverterFactory-2",
+  "main_contract": "BancorConverterFactory",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a8079ce1fd9b1ae682d9f1b709609a05bf9b236",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

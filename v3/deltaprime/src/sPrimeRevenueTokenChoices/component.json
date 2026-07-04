@@ -1,0 +1,18 @@
+{
+  "component": "sPrimeRevenueTokenChoices",
+  "main_contract": "sPrimeRevenueTokenChoices",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xedbe47785c5ac7429b2240bd2466a93a1e8f4434",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

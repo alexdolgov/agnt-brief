@@ -1,0 +1,18 @@
+{
+  "component": "ComitiumFacet",
+  "main_contract": "ComitiumFacet",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x36d9f7465822eec6ab8090de665738397ef5711c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

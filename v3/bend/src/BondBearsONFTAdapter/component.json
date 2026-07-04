@@ -1,0 +1,26 @@
+{
+  "component": "BondBearsONFTAdapter",
+  "main_contract": "BondBearsONFTAdapter",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6b1c374105467d1fc1090c989bcbbcc172c8a89c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82dcc9b6e438c30ae7be40bfb022fb02d61157fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

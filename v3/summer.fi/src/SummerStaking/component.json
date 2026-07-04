@@ -1,0 +1,26 @@
+{
+  "component": "SummerStaking",
+  "main_contract": "SummerStaking",
+  "source_file_count": 114,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x902ac48f45fefec167fe65963bff714287470a3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe94e8f40132da5366bb4d63015d25545f0ed248f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

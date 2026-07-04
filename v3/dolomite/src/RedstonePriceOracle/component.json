@@ -1,0 +1,18 @@
+{
+  "component": "RedstonePriceOracle",
+  "main_contract": "RedstonePriceOracle",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x67d5c219e9a91b1918a129c721a58d0f88c7f759",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

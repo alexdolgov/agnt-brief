@@ -1,0 +1,77 @@
+# buttonwood — deployments
+
+57 verified deployment(s) across 36 component(s).
+
+| chain | address | component | kind | liveness | audited |
+|---|---|---|---|---|---|
+| base | `0x23aafbcd479d14ca802bd39d70a03c7384daca85` | ButtonToken | impl | live | yes |
+| base | `0x4322f635ac515bb3b6eda73a33e3955443d710f1` | ETHButtonswapRouter | impl | inactive | no |
+| base | `0x47d44ec7b0608f9bc34235817f36ab0875136243` | Points2Manager | impl | inactive | no |
+| base | `0x5f51466c781e74c53c043f441e700d3bb80373e1` | InstanceRegistry | impl | inactive | no |
+| base | `0x5f9348a845f0fe74bcc343c2cde11b65f1ed4cc1` | ButtonToken | impl | live | yes |
+| base | `0x6a6bd97dbb3001dbc306cffefa8f1b900457144a` | InstanceRegistry | impl | inactive | no |
+| base | `0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a` | ButtonswapPair | impl | inactive | no |
+| base | `0x814dbbf5ce11e5e171f5154be95e620a6fe596d0` | Points2Manager | impl | inactive | no |
+| base | `0x8648e218d128bf89d48b4d3b797990fc5f6529a5` | ETHButtonswapRouter | impl | inactive | no |
+| base | `0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f` | GenericButtonswapRouter | impl | live | no |
+| base | `0xd16ec98b906a17fe7e1fccd0b53858da87e6caa2` | Points | impl | inactive | no |
+| ethereum | `0x019fa32d71bb96922695c6cdea33774fdeb04ac0` | BondFactory | impl | live | yes |
+| ethereum | `0x0266513bb58095b161afe978f3f06bbd7659d314` | PairLauncher | impl | inactive | no |
+| ethereum | `0x124e3ccc6e8fd6f949c9f1773e1c465b99067de9` | TrancheFactory | impl | inactive | no |
+| ethereum | `0x154797797df7668855045d6737d38e80dd5f9468` | UniV3LoanRouter | impl | inactive | no |
+| ethereum | `0x17550f48c61915a67f216a083ced89e04d91fd54` | BondFactory | impl | live | yes |
+| ethereum | `0x18f4f8d9aef590c8af2a70f46d46572f955b62cf` | ETHxOracle | impl | inactive | no |
+| ethereum | `0x1e938ce66af91b02ef7e1c753ef3efb692ef5006` | MultiMine | impl | inactive | no |
+| ethereum | `0x20c0fe2f2f49e3c56879635dec82e5857ff89bea` | RewardPoolFactory | impl | inactive | no |
+| ethereum | `0x25e9a0f785b63dd721c28dfc0b338551af69da17` | SwETHOracle | impl | inactive | no |
+| ethereum | `0x26fa9931ac24b2abdc2e2de23ae722ede5915464` | UniV3LoanRouter | impl | inactive | no |
+| ethereum | `0x36787412f5ddc051c95c313138b8ae4e396af137` | Tranche | impl | live | yes |
+| ethereum | `0x37a528b28062096d994a0569db6be5a0550165de` | UnbuttonToken | impl | inactive | no |
+| ethereum | `0x3a6d958dd0aa07ddd4d2cf9c8a91b3fd3e542d6b` | UniETHOracle | impl | inactive | no |
+| ethereum | `0x3de5a3735699e689d4e2f2c68204553776e2e493` | Plot | impl | inactive | no |
+| ethereum | `0x44e7061f723ff38c501d6334b23337dad87187f4` | InceptionTokenOracle | impl | inactive | no |
+| ethereum | `0x46a731c5a16fa8b4b085287e4b98e505990d24c2` | MarzResources | impl | inactive | no |
+| ethereum | `0x46f1a3889552c3e4bab3a4572ed3951ecc87663b` | MevEthOracle | impl | inactive | no |
+| ethereum | `0x58c3fc934df9fdb469add40245622d51d96ea1c1` | GeyserRegistry | impl | inactive | no |
+| ethereum | `0x5bdd0812f0f6ce66024ddaa92650f838e94d253e` | UniV3LoanRouter | impl | inactive | no |
+| ethereum | `0x5ea1864ce8669036f0eb082e29fffad4adaefd64` | ERC721Upgradeable | impl | inactive | no |
+| ethereum | `0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a` | Plot | impl | inactive | no |
+| ethereum | `0x6bea94c2651b1ccda2c15a12ca6e7e9e8512f9fc` | AnkrETHOracle | impl | inactive | no |
+| ethereum | `0x6e252827a23f5dd89185395d9aea19fe0c282f24` | ETHxOracle | impl | inactive | no |
+| ethereum | `0x7532e3e303e721b81f8a2492344e8b15f11be5cb` | MarzResources | impl | inactive | no |
+| ethereum | `0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x75ff649d6119fab43dea5e5e9e02586f27fc8b8f` | InstanceRegistry-2 | impl | inactive | no |
+| ethereum | `0x7c4ec89c64286976e471a9d672e7c4fdddda7f0c` | Points | impl | inactive | no |
+| ethereum | `0x812599fc02981a1c22c370119d5d3081e805a9e0` | PowerSwitch | impl | inactive | no |
+| ethereum | `0x84d7a34f3efbe552b2855d158b10c3970b19cc04` | BondController | impl | live | yes |
+| ethereum | `0xa1889fe86ef694be1470e4a0ce5fd9f030cf2b0e` | PartyVaultRouter | impl | inactive | no |
+| ethereum | `0xaacc96f18aac0dd16a8c854e9a4f14b55a366145` | Points | impl | inactive | no |
+| ethereum | `0xac89770f49700b38bb9174a8c6a951149e023ca9` | Geyser | impl | inactive | no |
+| ethereum | `0xb08c5e2e8e73d0fb9842171496b2da04e8e80a0d` | ButtonTokenWethRouter | impl | inactive | no |
+| ethereum | `0xb0c0a78d7b2191bbb2f534989d6415cd365476e3` | PairLauncher | impl | inactive | no |
+| ethereum | `0xb36ffea8bd59728970faab35ac9d29b90288a9f1` | SDaiOracle | impl | inactive | no |
+| ethereum | `0xb482c27d2753a734196d330d07b6ffa8e9afc73d` | UniV3LoanRouter | impl | inactive | no |
+| ethereum | `0xc1ec9d57f5295a82e8bd24e045db83100d09f053` | Geyser-2 | impl | inactive | no |
+| ethereum | `0xc4a0a55a949012b8b52611f4e78cd9e924ae4d45` | MarzResources | proxy | live | no |
+| ethereum | `0xc905e46a1207dc4a4a19538f21fc7d0c890ad2c9` | Geyser-3 | impl | inactive | no |
+| ethereum | `0xcabb66c9d320e7b267076770c2855ccf881b9785` | PairLauncher | impl | inactive | no |
+| ethereum | `0xd0ba8b19b0f5e25c11ed233302e75794c9d3142b` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0xd1a59b7900633f7aa78feec1db2938afd5e7e0be` | PairLauncher | impl | inactive | no |
+| ethereum | `0xdb422932496bc97aa626ae9f8efaf1344cd99652` | AdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0xdced448603e3c1e0f2dfe136b2f9ba2f5779e869` | PairLauncher | impl | inactive | no |
+| ethereum | `0xe897769d639f68005e2bf56e8f7f11094ac2777f` | GeyserViewer | impl | inactive | no |
+| ethereum | `0xf7764821280afc17e010a149346e1fbb7822fd30` | MarzResources | impl | inactive | no |
+
+## Source unavailable (10)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- ethereum `0x5c2539bdb5487877876265cd3f31500e1afb1d6e`
+- ethereum `0x65bc95ac790f8afd47fc9b83640bf722a73bc021`
+- ethereum `0x6cf6ac4712fe64cda8138009b042b36e80f072be`
+- ethereum `0x84d0f1cd873122f2a87673e079ea69cd80b51960`
+- ethereum `0x97040ab746803e7645779d2383da216e8ef4eac5`
+- ethereum `0x9af5c1fa62d0dedb7be3c68939a4b2d96d010fb3`
+- ethereum `0x9dd61f638712adc3f7d92ceaa08253e2ef5fe14b`
+- ethereum `0xab4691ad011adb810610e9610a74be77c553e9f9`
+- ethereum `0xf4a25f7d15fa822e060f64d0eb83bf7200657071`
+- ethereum `0xfa5914837f3c225a9e6ae93f9e35d2d85f54adc5`

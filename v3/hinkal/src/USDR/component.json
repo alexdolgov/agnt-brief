@@ -1,0 +1,18 @@
+{
+  "component": "USDR",
+  "main_contract": "USDR",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0531dfd07643b549a07f21dd5ba1da1e1c43142e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

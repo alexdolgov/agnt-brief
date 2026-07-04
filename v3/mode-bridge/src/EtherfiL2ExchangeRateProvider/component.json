@@ -1,0 +1,26 @@
+{
+  "component": "EtherfiL2ExchangeRateProvider",
+  "main_contract": "EtherfiL2ExchangeRateProvider",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x35fa164735182de50811e8e2e824cfb9b6118ac2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x8608ef6dcf4864e29db54e34180f4fdf166ce5e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

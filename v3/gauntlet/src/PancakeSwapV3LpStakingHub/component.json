@@ -1,0 +1,18 @@
+{
+  "component": "PancakeSwapV3LpStakingHub",
+  "main_contract": "PancakeSwapV3LpStakingHub",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3da4f7c6b5dc3c7b35fba746001542a4844b5606",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

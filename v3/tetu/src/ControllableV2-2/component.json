@@ -1,0 +1,18 @@
+{
+  "component": "ControllableV2-2",
+  "main_contract": "ControllableV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x574d055c0d6064f417766a39d6a1c2c13a267f53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

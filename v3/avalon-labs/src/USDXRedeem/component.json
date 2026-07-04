@@ -1,0 +1,18 @@
+{
+  "component": "USDXRedeem",
+  "main_contract": "USDXRedeem",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0eaf6fe1aed8631114d1de78317982ce73d82f7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

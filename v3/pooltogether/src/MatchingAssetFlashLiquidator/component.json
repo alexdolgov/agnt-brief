@@ -1,0 +1,26 @@
+{
+  "component": "MatchingAssetFlashLiquidator",
+  "main_contract": "MatchingAssetFlashLiquidator",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x29c102109d6cb2d866cfec380e0e10e9a287a75f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7865d01da4c9ba2f69b7879e6d2483ab6b354d95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

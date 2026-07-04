@@ -1,0 +1,18 @@
+{
+  "component": "VolatilityOraclePluginImplementation",
+  "main_contract": "VolatilityOraclePluginImplementation",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5aefba317baba46eaf98fd6f381d07673bca6467",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

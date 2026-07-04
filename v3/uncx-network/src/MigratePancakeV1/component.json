@@ -1,0 +1,18 @@
+{
+  "component": "MigratePancakeV1",
+  "main_contract": "MigratePancakeV1",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d1317bdb1f22b9a1849f128c8ff2dc13c0edf7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

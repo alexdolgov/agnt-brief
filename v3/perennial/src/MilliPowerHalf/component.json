@@ -1,0 +1,18 @@
+{
+  "component": "MilliPowerHalf",
+  "main_contract": "MilliPowerHalf",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbca65ce3629167600d52492b61a97627305f4e0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

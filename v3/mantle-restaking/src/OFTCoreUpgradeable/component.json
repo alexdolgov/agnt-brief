@@ -1,0 +1,26 @@
+{
+  "component": "OFTCoreUpgradeable",
+  "main_contract": "OFTCoreUpgradeable",
+  "source_file_count": 38,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x078382dfdc3b1b984b53c38268e6a683fa348a79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f73bdb6403051d6e3c4f854300d7e8277402b89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

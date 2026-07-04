@@ -1,0 +1,26 @@
+{
+  "component": "AvalanchePool_R2",
+  "main_contract": "AvalanchePool_R2",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4755c0be76536309f40b924781b258faa0caba60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf3a2749cd9b0cbde9a1e165e5a8e121146817d14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "stkCvxCrvStrategy",
+  "main_contract": "stkCvxCrvStrategy",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d2aee9a7d581f3ed29e961a05c54f2be90eb7f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec221ae5c62029cb03d91eff85611a378a1f8883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

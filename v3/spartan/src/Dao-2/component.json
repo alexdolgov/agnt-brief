@@ -1,0 +1,20 @@
+{
+  "component": "Dao-2",
+  "main_contract": "Dao",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2021-07-spartan"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x80531284f27d8b479aca8dba18fd6303b4bf1567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

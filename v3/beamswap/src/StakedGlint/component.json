@@ -1,0 +1,18 @@
+{
+  "component": "StakedGlint",
+  "main_contract": "StakedGlint",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x63d43d0edda7de4b5ed9b2f2aa855f81fbd71697",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "MerkleBox",
+  "main_contract": "MerkleBox",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x469c9fb59ebc19e141927c0308d98f2a9c400d2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x693c78ca4c7b061eadf65ab3e6c12448af2b6cfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

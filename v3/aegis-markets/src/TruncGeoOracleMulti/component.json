@@ -1,0 +1,42 @@
+{
+  "component": "TruncGeoOracleMulti",
+  "main_contract": "TruncGeoOracleMulti",
+  "source_file_count": 29,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x22e086c085fbda3214db238f8a930d22228facb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x23ff89455d190e2cff95a65d2ae01d3f170984ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2699565b992723113794679b02eff025bebe054a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xbe4f23b9488300c532a5d9d8d11b0b8163be6abf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

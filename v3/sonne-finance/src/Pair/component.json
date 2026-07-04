@@ -1,0 +1,18 @@
+{
+  "component": "Pair",
+  "main_contract": "Pair",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc899c4d73ed8df2ead1543ab915888b0bf7d57a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SparkArbitrumOne_20250320",
+  "main_contract": "SparkArbitrumOne_20250320",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1d54a093b8fddfcc6fbb411d9af31d96e034b3d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

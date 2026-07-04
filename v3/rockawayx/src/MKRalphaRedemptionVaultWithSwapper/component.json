@@ -1,0 +1,18 @@
+{
+  "component": "MKRalphaRedemptionVaultWithSwapper",
+  "main_contract": "MKRalphaRedemptionVaultWithSwapper",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34f70193d920fa9824f4a467c08f1a45e3651ede",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

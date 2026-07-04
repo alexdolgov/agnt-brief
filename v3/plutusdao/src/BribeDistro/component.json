@@ -1,0 +1,18 @@
+{
+  "component": "BribeDistro",
+  "main_contract": "BribeDistro",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x11731da3ebf671f5ab2e2a4a61a8cf1293862d9e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

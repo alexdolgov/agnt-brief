@@ -1,0 +1,18 @@
+{
+  "component": "ARTHRedeemer",
+  "main_contract": "ARTHRedeemer",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x394f4f7db617a1e4612072345f9601235f64b326",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

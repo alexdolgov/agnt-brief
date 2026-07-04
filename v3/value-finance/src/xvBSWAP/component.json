@@ -1,0 +1,18 @@
+{
+  "component": "xvBSWAP",
+  "main_contract": "xvBSWAP",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8ca88018713f2c7aa970bdb45c8df2f42c4bd8b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

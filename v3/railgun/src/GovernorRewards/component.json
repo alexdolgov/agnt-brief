@@ -1,0 +1,50 @@
+{
+  "component": "GovernorRewards",
+  "main_contract": "GovernorRewards",
+  "source_file_count": 21,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x046e871ba524e4a868bd80f3b31721212847a682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d9ef64f35b6afda8d258d1d2548a9ac997e35a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa7a9582c2563a1b923dbff6a8a2fa625ee2fb1f8",
+      "is_proxy": true,
+      "implementation_address": "0xae4b2dccb9029c8ebd673626ffdfd6b29613af16",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xae4b2dccb9029c8ebd673626ffdfd6b29613af16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd0198dde1187b12af01a743d9e9f2b4b84e8f59b",
+      "is_proxy": true,
+      "implementation_address": "0x7d9ef64f35b6afda8d258d1d2548a9ac997e35a1",
+      "liveness": "inactive"
+    }
+  ]
+}

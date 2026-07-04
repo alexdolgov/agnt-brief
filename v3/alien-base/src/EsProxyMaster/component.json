@@ -1,0 +1,26 @@
+{
+  "component": "EsProxyMaster",
+  "main_contract": "EsProxyMaster",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd3968a4a07d64c6e16982d45191b9a09a261ec88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfea31de4ba3e90855aa88a8f19a1234e8cde63d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

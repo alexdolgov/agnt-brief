@@ -1,0 +1,18 @@
+{
+  "component": "BanditMasterRoutable",
+  "main_contract": "BanditMasterRoutable",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x04465426ab669fa0f2755bf23127eaa0dcf61a38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "QuoterV2-2",
+  "main_contract": "QuoterV2",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x4f205d69834f9b101b9289f7affac9b77b3ff9b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

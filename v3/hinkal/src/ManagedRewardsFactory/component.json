@@ -1,0 +1,18 @@
+{
+  "component": "ManagedRewardsFactory",
+  "main_contract": "ManagedRewardsFactory",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcdd9585005095ac7447d1fdbc990c5cfb805cff0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

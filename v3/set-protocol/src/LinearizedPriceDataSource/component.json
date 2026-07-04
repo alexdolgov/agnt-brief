@@ -1,0 +1,18 @@
+{
+  "component": "LinearizedPriceDataSource",
+  "main_contract": "LinearizedPriceDataSource",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27323356c56049b47244680a2d76fc2fc050d2d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

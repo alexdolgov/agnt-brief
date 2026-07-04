@@ -1,0 +1,41 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.20;
+
+interface IMinterHandler {
+    struct Order {
+        string message;
+        address user;
+        address collateralAddress;
+        uint256 collateralAmount;
+        uint256 usnAmount;
+        uint256 expiry;
+        uint256 nonce;
+    }
+
+    error ZeroAddress();
+    error UserNotWhitelisted(address user);
+    error CollateralNotWhitelisted(address collateral);
+    error SignatureExpired(uint256 expiry, uint256 currentTime);
+    error NonceAlreadyUsed(address user, uint256 nonce);
+    error ZeroAmount();
+    error CollateralUsnMismatch(uint256 collateralAmount, uint256 usnAmount);
+    error InvalidSignature();
+    error MintLimitExceeded(uint256 limit, uint256 requested);
+    error UserAlreadyWhitelisted(address user);
+    error CollateralAlreadyWhitelisted(address collateral);
+
+    event CustodialWalletSet(address indexed custodialWallet);
+    event MintLimitPerBlockUpdated(uint256 indexed mintLimitPerBlock);
+    event Mint(address indexed user, uint256 collateralAmount, uint256 usnAmount, address collateralAddress);
+    event WhitelistedUserAdded(address indexed user);
+    event WhitelistedUserRemoved(address indexed user);
+    event WhitelistedCollateralAdded(address indexed collateral);
+    event WhitelistedCollateralRemoved(address indexed collateral);
+
+    function mint(Order calldata order, bytes calldata signature) external;
+    function hashOrder(Order calldata order) external view returns (bytes32);
+    function encodeOrder(Order calldata order) external pure returns (bytes memory);
+}
+
+
+

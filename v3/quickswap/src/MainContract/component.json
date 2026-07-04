@@ -1,0 +1,18 @@
+{
+  "component": "MainContract",
+  "main_contract": "MainContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5316d1fb8543dfe6b292cb82be1aec5573baeea6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

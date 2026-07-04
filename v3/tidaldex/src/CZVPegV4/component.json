@@ -1,0 +1,18 @@
+{
+  "component": "CZVPegV4",
+  "main_contract": "CZVPegV4",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1fe977592733413d3fa91e4e728cdaa30c342073",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

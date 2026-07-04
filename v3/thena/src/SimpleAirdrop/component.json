@@ -1,0 +1,26 @@
+{
+  "component": "SimpleAirdrop",
+  "main_contract": "SimpleAirdrop",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e0a496c3bed9d7199a539f010e2efbd03d110c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9e237b0a94fc69efa99f2a66e4d9ddce183397fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

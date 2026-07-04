@@ -1,0 +1,18 @@
+{
+  "component": "Rome",
+  "main_contract": "Rome",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x4a436073552044d5f2f49b176853ad3ad473d9d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CerebrumDAOToken",
+  "main_contract": "CerebrumDAOToken",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab814ce69e15f6b9660a3b184c0b0c97b9394a6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

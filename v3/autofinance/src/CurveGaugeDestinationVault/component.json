@@ -1,0 +1,34 @@
+{
+  "component": "CurveGaugeDestinationVault",
+  "main_contract": "CurveGaugeDestinationVault",
+  "source_file_count": 81,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x04f7cee4169276e9245d09b2cf074b193f94f051",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9b19857171aad69896f8cd6912c91608435c4410",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdd78eaf244da68429ada4f3a8767f3a9f307b0fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

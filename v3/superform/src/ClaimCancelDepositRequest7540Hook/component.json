@@ -1,0 +1,18 @@
+{
+  "component": "ClaimCancelDepositRequest7540Hook",
+  "main_contract": "ClaimCancelDepositRequest7540Hook",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf958a047d90b202a7097b5f9b67bb8cb5285858",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

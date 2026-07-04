@@ -1,0 +1,26 @@
+{
+  "component": "RebalanceSwapLogic",
+  "main_contract": "RebalanceSwapLogic",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x0ab9cff1202930cfa30436bea1ac0357387330c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x54e4115b1275e569cb50d90728bcb3d760ec588c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

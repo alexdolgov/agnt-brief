@@ -1,0 +1,20 @@
+{
+  "component": "MessageProxy",
+  "main_contract": "MessageProxy",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/skalenetwork/IMA/blob/develop/audits/SKALE_Audit_Bramah.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d3c18a87df66cc3f8e176f5bef4cde0c40d50e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

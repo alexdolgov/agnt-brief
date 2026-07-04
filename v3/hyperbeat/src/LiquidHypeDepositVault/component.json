@@ -1,0 +1,34 @@
+{
+  "component": "LiquidHypeDepositVault",
+  "main_contract": "LiquidHypeDepositVault",
+  "source_file_count": 38,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x0de56f6dd79d85fd71efaf12d1a1d39ee2c0f2f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x67efa4990a0ba7a10cb8ea94ed8c32bb1787e37d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xf538675d292d8b372712f44eaf306cc66cf6d8dc",
+      "is_proxy": true,
+      "implementation_address": "0x67efa4990a0ba7a10cb8ea94ed8c32bb1787e37d",
+      "liveness": "live"
+    }
+  ]
+}

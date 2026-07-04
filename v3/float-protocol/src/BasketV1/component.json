@@ -1,0 +1,18 @@
+{
+  "component": "BasketV1",
+  "main_contract": "BasketV1",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73650f79b15abe064eccb5f1bb448cb5df6d5894",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

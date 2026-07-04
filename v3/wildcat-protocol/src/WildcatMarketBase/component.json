@@ -1,0 +1,18 @@
+{
+  "component": "WildcatMarketBase",
+  "main_contract": "WildcatMarketBase",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa1a18eea2a9e81bf84c131282a4b99867dd6aa4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

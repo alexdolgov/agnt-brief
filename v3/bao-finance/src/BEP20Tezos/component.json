@@ -1,0 +1,18 @@
+{
+  "component": "BEP20Tezos",
+  "main_contract": "BEP20Tezos",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x16939ef78684453bfdfb47825f8a5f714f12623a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

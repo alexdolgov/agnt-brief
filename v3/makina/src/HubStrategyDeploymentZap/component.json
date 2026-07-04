@@ -1,0 +1,18 @@
+{
+  "component": "HubStrategyDeploymentZap",
+  "main_contract": "HubStrategyDeploymentZap",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33d1f3cb1c09b85614d662446a3dbd58ca43e4bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

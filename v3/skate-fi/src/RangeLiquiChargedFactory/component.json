@@ -1,0 +1,50 @@
+{
+  "component": "RangeLiquiChargedFactory",
+  "main_contract": "RangeLiquiChargedFactory",
+  "source_file_count": 18,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06d38cfa75fe0e9c41b0c58f102bcb2df2577732",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x56422cc9d0dfa26436ded5c0967a7d695f095279",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0ec3ef49b81a9a763c7697a02ea3a9f1e58f418",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec2257ff8335ed058a1af564b2adcc668bdf349e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec8fc371d66e4f8c73ad254da5e4fe1c9101beb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

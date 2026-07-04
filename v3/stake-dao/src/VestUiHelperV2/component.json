@@ -1,0 +1,18 @@
+{
+  "component": "VestUiHelperV2",
+  "main_contract": "VestUiHelperV2",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x05ca37df1b23a58777f19d44f8242a32126e7997",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

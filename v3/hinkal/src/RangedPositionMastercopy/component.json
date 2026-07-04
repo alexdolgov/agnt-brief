@@ -1,0 +1,18 @@
+{
+  "component": "RangedPositionMastercopy",
+  "main_contract": "RangedPositionMastercopy",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x34ed3d919ad7f533bfafe9295363d9f37c0c5658",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SherlockClaimManager",
+  "main_contract": "SherlockClaimManager",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfeedd254ae4b7c44a0472bb836b813ce4625eb84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

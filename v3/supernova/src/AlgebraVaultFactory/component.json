@@ -1,0 +1,26 @@
+{
+  "component": "AlgebraVaultFactory",
+  "main_contract": "AlgebraVaultFactory",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x789a0e0a6aedf3e6c090d305ac59cfaf75a43e62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafc0497f052a3b5274659308d0b875271c03038d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

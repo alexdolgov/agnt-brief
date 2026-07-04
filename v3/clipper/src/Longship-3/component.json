@@ -1,0 +1,18 @@
+{
+  "component": "Longship-3",
+  "main_contract": "Longship",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x840e960c9c0989929160361b73ff9acd9b8ff003",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

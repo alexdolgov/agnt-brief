@@ -1,0 +1,18 @@
+{
+  "component": "Rysk",
+  "main_contract": "Rysk",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4263bddb3ee3593c4d92276a9f482355f61fe1ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

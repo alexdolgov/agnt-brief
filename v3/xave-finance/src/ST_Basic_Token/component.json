@@ -1,0 +1,18 @@
+{
+  "component": "ST_Basic_Token",
+  "main_contract": "ST_Basic_Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa9a66d796e38a9f5154d023f68d6f7b3b6c9b949",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "SmartChefInitializable",
+  "main_contract": "SmartChefInitializable",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0608b0d2fdf03a00da4b56cf68d79005bdba7aff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7751d14c5f6f195ed9199618fb8f8e522679dfcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

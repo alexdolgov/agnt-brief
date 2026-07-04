@@ -1,0 +1,26 @@
+{
+  "component": "ParaSwapV6Adapter",
+  "main_contract": "ParaSwapV6Adapter",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4c8026a88f1da2d299c539b8c070c1c44372d53c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe01f0599e9a0104fc9bbf3d789a39bc80683638e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "BoneLocker",
+  "main_contract": "BoneLocker",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44c652d679d99bb406167de9651d2535850fb479",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

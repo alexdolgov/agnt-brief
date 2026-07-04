@@ -1,0 +1,18 @@
+{
+  "component": "DolaBorrowingRights",
+  "main_contract": "DolaBorrowingRights",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xad038eb671c44b853887a7e32528fab35dc5d710",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

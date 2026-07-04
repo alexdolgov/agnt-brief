@@ -1,0 +1,18 @@
+{
+  "component": "SushiSwapDEXFacet",
+  "main_contract": "SushiSwapDEXFacet",
+  "source_file_count": 83,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9523615c15d3743cb3198b4464048b064f1530b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

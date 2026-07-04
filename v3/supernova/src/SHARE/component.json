@@ -1,0 +1,18 @@
+{
+  "component": "SHARE",
+  "main_contract": "SHARE",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62e134d7274efadb9d165baff76c7340e663f0e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

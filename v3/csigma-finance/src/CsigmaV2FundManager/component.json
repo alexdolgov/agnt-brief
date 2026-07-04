@@ -1,0 +1,26 @@
+{
+  "component": "CsigmaV2FundManager",
+  "main_contract": "CsigmaV2FundManager",
+  "source_file_count": 40,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2c787e74af551ae67feb2dec611166851729510b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x47a290f03420af9cb179c69d0a814c80350ca5d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

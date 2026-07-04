@@ -1,0 +1,26 @@
+{
+  "component": "PrizeDistributionBuffer",
+  "main_contract": "PrizeDistributionBuffer",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x748f6d44590c4c37a1ce54a41fb7a3c6defa563b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc8faa39e06ddb8362cb8e3ffdadeb5bf7877eccb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

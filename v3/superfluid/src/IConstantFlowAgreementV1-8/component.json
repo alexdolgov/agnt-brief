@@ -1,0 +1,20 @@
+{
+  "component": "IConstantFlowAgreementV1-8",
+  "main_contract": "IConstantFlowAgreementV1",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/automation-contracts/scheduler/audit/Superfluid-Scheduler-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3fa8b653f9abf91428800c0ba0f8d145a71f97a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

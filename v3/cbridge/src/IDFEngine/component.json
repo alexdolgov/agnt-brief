@@ -1,0 +1,18 @@
+{
+  "component": "IDFEngine",
+  "main_contract": "IDFEngine",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

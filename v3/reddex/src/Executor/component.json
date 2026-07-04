@@ -1,0 +1,18 @@
+{
+  "component": "Executor",
+  "main_contract": "Executor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1864cbc5eec7ed6892909c8f81c30b2b4587b239",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "BridgeMiddleware",
+  "main_contract": "BridgeMiddleware",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x248c731b155af4cae198af705fb803f087a0b01e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3766eb5f07dbc60d39a2059a9a29fd9b7d3c356d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

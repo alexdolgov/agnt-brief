@@ -1,0 +1,42 @@
+{
+  "component": "ImpulseStakingMulti",
+  "main_contract": "ImpulseStakingMulti",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0a684421ef48b431803bfd75f38675eab1e38ed5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x53439555e3894fadd5187c55faa29172f4d4f1c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xccc1ac92cfac48fa04a135b06d7595abacbce5f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfa7ca14a28cd419a69e45e8416ca4fa87457ace8",
+      "is_proxy": true,
+      "implementation_address": "0xccc1ac92cfac48fa04a135b06d7595abacbce5f2",
+      "liveness": "inactive"
+    }
+  ]
+}

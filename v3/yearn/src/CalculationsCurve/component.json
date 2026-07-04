@@ -1,0 +1,18 @@
+{
+  "component": "CalculationsCurve",
+  "main_contract": "CalculationsCurve",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0ffe8434eae67c9838b12c3cd11ac4005daa7227",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

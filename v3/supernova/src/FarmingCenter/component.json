@@ -1,0 +1,18 @@
+{
+  "component": "FarmingCenter",
+  "main_contract": "FarmingCenter",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x428ea5b4ac84ab687851e6a2688411bdbd6c91af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

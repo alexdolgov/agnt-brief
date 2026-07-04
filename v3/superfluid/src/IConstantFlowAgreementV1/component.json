@@ -1,0 +1,26 @@
+{
+  "component": "IConstantFlowAgreementV1",
+  "main_contract": "IConstantFlowAgreementV1",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe39ec59fcbf4439acd2785c15e52e7cec0dafcd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf2429176ff1fae7b3a2f2cd836860282c31856a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "component": "FunctionsAccessControl",
+  "main_contract": "FunctionsAccessControl",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xZothio/zVault/blob/dev/audits/CLAUDE.pdf",
+    "https://github.com/0xZothio/zVault/blob/dev/audits/ENTERSOFT.pdf",
+    "https://github.com/0xZothio/zVault/blob/dev/audits/EVMBENCH.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x58722c4f1a8bca491dcf074ae3c6b519cc859cb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ERC1155",
+  "main_contract": "ERC1155",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd19cc137bb848d3a48ad8ad883886b67c26761dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

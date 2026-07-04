@@ -1,0 +1,18 @@
+{
+  "component": "BaseAIDollarAlpha-2",
+  "main_contract": "BaseAIDollarAlpha",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d976f56343e33a6a4d6e26af7d59358d1359dd4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

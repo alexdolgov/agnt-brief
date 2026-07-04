@@ -1,0 +1,18 @@
+{
+  "component": "AllocationIDTracker",
+  "main_contract": "AllocationIDTracker",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5b2f33d7ca6ec88f5586f2528f58c20843d9fe7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

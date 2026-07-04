@@ -1,0 +1,18 @@
+{
+  "component": "MultiBridgeToken",
+  "main_contract": "MultiBridgeToken",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d15fd46ce9e551498328b1c83071d9509e2c3a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

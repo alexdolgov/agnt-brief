@@ -1,0 +1,22 @@
+{
+  "component": "LpToken",
+  "main_contract": "LpToken",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://conic.finance/media/ChainSecurity-Audit-Report-ConicFinance.pdf",
+    "https://conic.finance/media/MixBytes-Audit-Report-ConicFinance.pdf",
+    "https://conic.finance/media/PeckShield-Audit-Report-ConicFinance.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9961bdbe8b7091e584c2bf9d0a160c583f564a8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

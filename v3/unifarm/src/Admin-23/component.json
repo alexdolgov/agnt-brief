@@ -1,0 +1,18 @@
+{
+  "component": "Admin-23",
+  "main_contract": "Admin",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x96537bac94c8adc38fd17d70077ebcb958c1362f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CCTPStrategy",
+  "main_contract": "CCTPStrategy",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6447b88c071b98900c40da7c7957537c977ef295",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CommitDeposit",
+  "main_contract": "CommitDeposit",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3b2a7e46ff1c5003ea1bc0d125a226989f471fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

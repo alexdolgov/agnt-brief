@@ -1,0 +1,18 @@
+{
+  "component": "OptimismRootGaugeFactory",
+  "main_contract": "OptimismRootGaugeFactory",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3083a1c455ff38d39e58dbac5040f465cf73c5c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

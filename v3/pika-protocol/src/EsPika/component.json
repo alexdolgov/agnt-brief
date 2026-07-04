@@ -1,0 +1,34 @@
+{
+  "component": "EsPika",
+  "main_contract": "EsPika",
+  "source_file_count": 14,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1508fbb7928aedc86bee68c91bc4afcf493b0e78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8d86106c614f25daf3b60d83974e131824f6e589",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfebe2216be8c5d7c5c9407622229cd8627fd5ecb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

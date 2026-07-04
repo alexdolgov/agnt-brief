@@ -1,0 +1,18 @@
+{
+  "component": "LiquidityMigrator2",
+  "main_contract": "LiquidityMigrator2",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6a65e062ce8290007301296f3c6ae446af7bdeec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

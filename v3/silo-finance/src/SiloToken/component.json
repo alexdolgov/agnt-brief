@@ -1,0 +1,18 @@
+{
+  "component": "SiloToken",
+  "main_contract": "SiloToken",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0b2dd79324a66d2108c961d680f7616e1486bb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

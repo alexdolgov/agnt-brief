@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626Upgradeable-2",
+  "main_contract": "ERC4626Upgradeable",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb2378660daebb9ba6c1ce2a38d3ee1d6a6e4dc14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Ownable",
+  "main_contract": "Ownable",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2bb324ab59c52a7714f164ed6b13a6ff4a1a2d88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

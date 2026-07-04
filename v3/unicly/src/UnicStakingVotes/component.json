@@ -1,0 +1,18 @@
+{
+  "component": "UnicStakingVotes",
+  "main_contract": "UnicStakingVotes",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4788eff8a1771239a3a38cd9aed02bd7ea8af729",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

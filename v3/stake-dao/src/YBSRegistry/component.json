@@ -1,0 +1,18 @@
+{
+  "component": "YBSRegistry",
+  "main_contract": "YBSRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x262be1d31d0754399d8d5dc63b99c22146e9f738",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

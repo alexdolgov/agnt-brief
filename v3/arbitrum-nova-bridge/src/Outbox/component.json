@@ -1,0 +1,34 @@
+{
+  "component": "Outbox",
+  "main_contract": "Outbox",
+  "source_file_count": 8,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x186267690cb723d72a7edbc002476e23d694cb33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7402fdca6f5b01302a6fd0d6768e8fd132eb752",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc89410298e009fae66b5b70d389e0fd6fd5f12d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

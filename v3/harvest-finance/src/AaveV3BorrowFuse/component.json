@@ -1,0 +1,26 @@
+{
+  "component": "AaveV3BorrowFuse",
+  "main_contract": "AaveV3BorrowFuse",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3abae104b259c523f022a880ad4a73ea8de4c5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf020b954e02d8b8419cf5625d4371f16a678d884",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

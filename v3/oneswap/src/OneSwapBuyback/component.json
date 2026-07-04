@@ -1,0 +1,18 @@
+{
+  "component": "OneSwapBuyback",
+  "main_contract": "OneSwapBuyback",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28a359cb732bfb74e77d282ace88e43db28a5f33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OracleFreeDollar",
+  "main_contract": "OracleFreeDollar",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7479791022eb1030bbc3b09f6575c5db4ddc0b90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

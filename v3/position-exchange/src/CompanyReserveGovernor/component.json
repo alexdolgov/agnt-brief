@@ -1,0 +1,18 @@
+{
+  "component": "CompanyReserveGovernor",
+  "main_contract": "CompanyReserveGovernor",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9fc54b27f32b33d8275f8ba230bdc1eeef947b5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

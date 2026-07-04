@@ -1,0 +1,26 @@
+{
+  "component": "EulerRewardLib",
+  "main_contract": "EulerRewardLib",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x349e418073d660dbd419ffc407d4ba077b6d59dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc6383b2eafb95808618299bfc627c01b0fda5393",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

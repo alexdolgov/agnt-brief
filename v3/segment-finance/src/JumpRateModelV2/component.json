@@ -1,0 +1,58 @@
+{
+  "component": "JumpRateModelV2",
+  "main_contract": "JumpRateModelV2",
+  "source_file_count": 5,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6a4e7e205801f8999a2a5f39f9ad83f616d35ecd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x0db993d4917581444395ee54566a632831ec2087",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x29797f6c9bdb375818fcb16c5565c31becba8d3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x882cc1dcf920ca591004706b0b71db0afbe181f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x8b5abbf3c0d9914442a6b95f7ac5f96b5eaec17c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0xb161fc2e23843ba47e1b479d42ec6eff8c0511d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

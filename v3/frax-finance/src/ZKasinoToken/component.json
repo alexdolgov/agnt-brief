@@ -1,0 +1,18 @@
+{
+  "component": "ZKasinoToken",
+  "main_contract": "ZKasinoToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc91c885580da11ac060bdd692bdaa7ee29cfc976",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

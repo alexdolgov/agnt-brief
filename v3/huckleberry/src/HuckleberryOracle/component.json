@@ -1,0 +1,18 @@
+{
+  "component": "HuckleberryOracle",
+  "main_contract": "HuckleberryOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x063bf33bb0ac1bde7e0b8e0cfe625556844262cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

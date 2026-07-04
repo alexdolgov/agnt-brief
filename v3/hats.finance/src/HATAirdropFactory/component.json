@@ -1,0 +1,18 @@
+{
+  "component": "HATAirdropFactory",
+  "main_contract": "HATAirdropFactory",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf4153be482582e4cd542e2214745a5d3ce5db128",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

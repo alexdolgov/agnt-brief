@@ -1,0 +1,18 @@
+{
+  "component": "ERC20Token",
+  "main_contract": "ERC20Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x062a0a2efb3dfb6b975b7ea8d2d3ca9dacbdff22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

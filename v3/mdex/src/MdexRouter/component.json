@@ -1,0 +1,44 @@
+{
+  "component": "MdexRouter",
+  "main_contract": "MdexRouter",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://mdex.com/slowmist_bsc.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0384e9ad329396c3a6a401243ca71633b2bc4333",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x518a6e9fb2832ada41415775e5c45de6efcf1a3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x62c1a0d92b09d0912f7bb9c96c5ecdc7f2b87059",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7dae51bd3e3376b8c7c4900e9107f12be3af1ba8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

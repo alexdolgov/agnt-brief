@@ -1,0 +1,20 @@
+{
+  "component": "GovTimelockController",
+  "main_contract": "GovTimelockController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2026-06-16_GMX_V2_Review_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4bd1cdaab4254fc43ef6424653ca2375b4c94c0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

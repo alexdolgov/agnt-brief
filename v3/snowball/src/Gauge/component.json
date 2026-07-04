@@ -1,0 +1,18 @@
+{
+  "component": "Gauge",
+  "main_contract": "Gauge",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3d09a80369071e6ac91634e0bf889ee54dd510c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

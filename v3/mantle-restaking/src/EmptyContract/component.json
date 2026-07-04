@@ -1,0 +1,26 @@
+{
+  "component": "EmptyContract",
+  "main_contract": "EmptyContract",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b28a6cdf1bc937a984334ef5409b755489fb585",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b6c86d2c0cc65cb4138cc01c97ec4e1d5712478",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

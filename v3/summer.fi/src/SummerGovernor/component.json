@@ -1,0 +1,26 @@
+{
+  "component": "SummerGovernor",
+  "main_contract": "SummerGovernor",
+  "source_file_count": 107,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbe5a4dd68c3526f32b454fe28c9909ca0601e9fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd76ad62dd879f63a9f5e500a1684f598aa798d0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

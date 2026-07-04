@@ -1,0 +1,42 @@
+{
+  "component": "FxUSDBasePoolV2Facet",
+  "main_contract": "FxUSDBasePoolV2Facet",
+  "source_file_count": 15,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93cc21b713cc78264b6c060105429dd805d144b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb2624f0a3ddc72a6c66d9dad5569ead1e4774345",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbc22dd6ae3638655f59aed42b94c03bfe37ea6ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe5fca74806879c7614d130eae76c378674801d45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

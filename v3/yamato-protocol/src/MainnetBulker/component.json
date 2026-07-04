@@ -1,0 +1,26 @@
+{
+  "component": "MainnetBulker",
+  "main_contract": "MainnetBulker",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d5a4af7dfb3bd265bfb0153254d91c2ee4e47b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8a140f95ce959d5ebc6e8945636716c1a9e4700e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "LibLockedUnderlying",
+  "main_contract": "LibLockedUnderlying",
+  "source_file_count": 7,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8968bf3c83cb25830d34ac3065453460adb9002d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9046d16e793eba3ece85e3a6cbec2e0ce69b04b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

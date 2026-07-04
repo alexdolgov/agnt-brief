@@ -1,0 +1,18 @@
+{
+  "component": "CrowdProposal",
+  "main_contract": "CrowdProposal",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62134f1897e236e06ed34841ba91cef55945df23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

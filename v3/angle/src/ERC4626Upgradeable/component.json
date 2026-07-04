@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626Upgradeable",
+  "main_contract": "ERC4626Upgradeable",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1e5b48c08d6b5efe0792d04f27602bd90026514a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

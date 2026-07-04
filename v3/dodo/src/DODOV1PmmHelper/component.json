@@ -1,0 +1,18 @@
+{
+  "component": "DODOV1PmmHelper",
+  "main_contract": "DODOV1PmmHelper",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x17644d3b366273fac75a07996e2f90a99a2946a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

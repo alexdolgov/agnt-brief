@@ -1,0 +1,18 @@
+{
+  "component": "tBTCESTPolicy",
+  "main_contract": "tBTCESTPolicy",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa9e668f43be8572d4207e8548c05f8b0e505a179",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

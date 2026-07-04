@@ -1,0 +1,18 @@
+{
+  "component": "ArenaReferral",
+  "main_contract": "ArenaReferral",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4adac261bce955a1b1b4ffa158a910da19d83b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

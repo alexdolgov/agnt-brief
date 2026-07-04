@@ -1,0 +1,18 @@
+{
+  "component": "UpgradeableBeacon",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7e10ff4d0e6f20a054f516a72ec0dc4833a2feff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

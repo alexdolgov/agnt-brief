@@ -1,0 +1,18 @@
+{
+  "component": "StrategyPngAVAXSNOBMiniLp",
+  "main_contract": "StrategyPngAVAXSNOBMiniLp",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0bcf9dca633dce9a519bf809535beb60900d3b24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

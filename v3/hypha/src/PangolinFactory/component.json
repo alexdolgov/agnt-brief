@@ -1,0 +1,26 @@
+{
+  "component": "PangolinFactory",
+  "main_contract": "PangolinFactory",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcdeea31e087f0cf463043d246a45b87f4e959737",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xefa94de7a4656d787667c749f7e1223d71e9fd88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

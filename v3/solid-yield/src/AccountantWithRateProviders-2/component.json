@@ -1,0 +1,18 @@
+{
+  "component": "AccountantWithRateProviders-2",
+  "main_contract": "AccountantWithRateProviders",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10f3996904f1fa09db48e5d46aadd6d9fd516efe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

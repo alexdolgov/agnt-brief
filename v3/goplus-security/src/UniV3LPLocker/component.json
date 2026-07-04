@@ -1,0 +1,26 @@
+{
+  "component": "UniV3LPLocker",
+  "main_contract": "UniV3LPLocker",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0a478109e214433bc1e4211465e0586db2f101ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x25c9c4b56e820e0dea438b145284f02d9ca9bd52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

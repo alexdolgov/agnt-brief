@@ -1,0 +1,42 @@
+{
+  "component": "RebalanceLogic",
+  "main_contract": "RebalanceLogic",
+  "source_file_count": 28,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x07a4b168f9dae741b3b88bf6424434655af8a711",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3f7dd8bb37465d3944e45de7c0177af0f6ad0223",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xab965ebdb1fb5254c4f8fb8b0b9151abd951ea3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc2cecbefb6ea8387ad1112ae2975f6bffd4dfaae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

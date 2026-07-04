@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3TwapQuoter",
+  "main_contract": "UniswapV3TwapQuoter",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcad3b037b56cbd2b4cae2b35b878894e541af68a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

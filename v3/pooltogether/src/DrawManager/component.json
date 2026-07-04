@@ -1,0 +1,26 @@
+{
+  "component": "DrawManager",
+  "main_contract": "DrawManager",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0aa9e2e0b37fb54c19e45cb246b17b0e700ab98d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x98305eb9a29d45ec93ce44ba02b315b631c675a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

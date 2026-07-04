@@ -1,0 +1,21 @@
+{
+  "component": "ButtonswapPair",
+  "main_contract": "ButtonswapPair",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2693699415-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F1OyEScoUCIfVRkK0pfQm%2Fuploads%2FRAecNiY4W8m84dbjdayw%2Fbuttonswap.pdf",
+    "https://github.com/buttonwood-protocol/buttonswap-core/blob/main/notes/statemind_2023-08-11.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

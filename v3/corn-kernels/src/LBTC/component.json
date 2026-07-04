@@ -1,0 +1,18 @@
+{
+  "component": "LBTC",
+  "main_contract": "LBTC",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12364c9d095a2a43abb71b0d8313663ff0348eea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

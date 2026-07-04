@@ -1,0 +1,18 @@
+{
+  "component": "X2Y2Token",
+  "main_contract": "X2Y2Token",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

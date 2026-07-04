@@ -1,0 +1,18 @@
+{
+  "component": "TokenMigration",
+  "main_contract": "TokenMigration",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2f2047300c34af65eb8a28c14d2d5ed311566a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

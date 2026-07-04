@@ -1,0 +1,18 @@
+{
+  "component": "leverageFactory",
+  "main_contract": "leverageFactory",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdc8c63dfc31325aea8cb37ecec1a760bbb5b43e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

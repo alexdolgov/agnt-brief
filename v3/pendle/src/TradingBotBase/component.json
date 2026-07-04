@@ -1,0 +1,18 @@
+{
+  "component": "TradingBotBase",
+  "main_contract": "TradingBotBase",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x263833d47ea3fa4a30f269323aba6a107f9eb14c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

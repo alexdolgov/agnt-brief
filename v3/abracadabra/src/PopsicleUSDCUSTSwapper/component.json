@@ -1,0 +1,18 @@
+{
+  "component": "PopsicleUSDCUSTSwapper",
+  "main_contract": "PopsicleUSDCUSTSwapper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b95bf93b5873c8cb9ae3374e3054736a5b79676",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

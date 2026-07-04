@@ -1,0 +1,18 @@
+{
+  "component": "HMXStaking",
+  "main_contract": "HMXStaking",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4381e041f39f96b71b0699ea7a1057cf1344c48a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

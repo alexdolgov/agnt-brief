@@ -1,0 +1,18 @@
+{
+  "component": "GenericHandler",
+  "main_contract": "GenericHandler",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x30b7026e9e5b35c844f6b115ab4558c3f7e7e3b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "FoundationWallet",
+  "main_contract": "FoundationWallet",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7fe1c0a5da0fcbe4a8f38662a71c6dbe2260ffd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

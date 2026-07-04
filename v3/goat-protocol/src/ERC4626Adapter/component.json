@@ -1,0 +1,42 @@
+{
+  "component": "ERC4626Adapter",
+  "main_contract": "ERC4626Adapter",
+  "source_file_count": 28,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x13b90978cce7d738c7b732d2ff54e8b9bd828a96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9cd240522564d2855cc660d72a0257f7ba0b60db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa4ec385ff6f15eda574f1e82a9bd66b888762413",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe11cd37aa115e2bafc2e7960dbf612dfbf656e5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

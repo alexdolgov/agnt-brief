@@ -1,0 +1,18 @@
+{
+  "component": "UNXwapV3Pool",
+  "main_contract": "UNXwapV3Pool",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

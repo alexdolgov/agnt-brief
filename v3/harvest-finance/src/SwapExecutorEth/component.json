@@ -1,0 +1,26 @@
+{
+  "component": "SwapExecutorEth",
+  "main_contract": "SwapExecutorEth",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1ea20fde8521fd8c53f1f344886c2fd25e0adc5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x954339759d876e06df67e0814158e15012442310",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

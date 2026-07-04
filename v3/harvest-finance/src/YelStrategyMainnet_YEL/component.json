@@ -1,0 +1,18 @@
+{
+  "component": "YelStrategyMainnet_YEL",
+  "main_contract": "YelStrategyMainnet_YEL",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a50c42ae146fb74bccc4fce850b3a49c1626321",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

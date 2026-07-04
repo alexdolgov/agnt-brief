@@ -1,0 +1,18 @@
+{
+  "component": "PlatformV2",
+  "main_contract": "PlatformV2",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5005e8dc0033e78af80cfc8d10f5163f2fcf0e79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

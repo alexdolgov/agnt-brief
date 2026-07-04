@@ -1,0 +1,18 @@
+{
+  "component": "Liquidator",
+  "main_contract": "Liquidator",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1849cc9ecfcaa09ba4279a283745c9f6a2b1a3de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

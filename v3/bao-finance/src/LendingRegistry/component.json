@@ -1,0 +1,18 @@
+{
+  "component": "LendingRegistry",
+  "main_contract": "LendingRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc94bc5c62c53e88d67c3874f5e8f91c6a99656ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

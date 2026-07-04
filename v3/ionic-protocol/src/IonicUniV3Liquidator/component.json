@@ -1,0 +1,50 @@
+{
+  "component": "IonicUniV3Liquidator",
+  "main_contract": "IonicUniV3Liquidator",
+  "source_file_count": 57,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x0472de8cb207aa872796de41bb1f21c077740a9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4d7da54bdfc8e68bae4bdbf640ac427184e96b72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x79ac787a52b7a82f1173d8902d0d58d25ff5b14c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x88911e638f04b5d25242e8b587b3f8c8054b0d8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xe807fec91f6f2c7a1c4881d3b1236c9af23df5b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

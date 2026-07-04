@@ -1,0 +1,18 @@
+{
+  "component": "RyzeCreditToken",
+  "main_contract": "RyzeCreditToken",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3ce9aefa68a97824e609aa6549428e293d1ae427",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

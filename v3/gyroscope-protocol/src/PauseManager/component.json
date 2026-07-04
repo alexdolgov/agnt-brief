@@ -1,0 +1,18 @@
+{
+  "component": "PauseManager",
+  "main_contract": "PauseManager",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xfce81cafe4b3f7e2263efc2d907f488ebf2b238e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

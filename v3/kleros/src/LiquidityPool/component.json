@@ -1,0 +1,34 @@
+{
+  "component": "LiquidityPool",
+  "main_contract": "LiquidityPool",
+  "source_file_count": 7,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x012791f389d54a882952926a2d4349679083ab56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x097b814e6c299a8b2348ee96774c0a0820783850",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5850ce2de61a57f7a5e060f286389cf996101b63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

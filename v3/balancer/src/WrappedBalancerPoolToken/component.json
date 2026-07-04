@@ -1,0 +1,18 @@
+{
+  "component": "WrappedBalancerPoolToken",
+  "main_contract": "WrappedBalancerPoolToken",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27ad56b2bfcb923091d80ca2d657aeba5ac3121c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

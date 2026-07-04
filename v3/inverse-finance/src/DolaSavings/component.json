@@ -1,0 +1,18 @@
+{
+  "component": "DolaSavings",
+  "main_contract": "DolaSavings",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc91b5f3a2b6393130d5f3c20ce6d2c28f07f2b20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

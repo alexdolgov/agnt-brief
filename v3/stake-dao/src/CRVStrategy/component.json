@@ -1,0 +1,21 @@
+{
+  "component": "CRVStrategy",
+  "main_contract": "CRVStrategy",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Stake-DAO/audits/blob/main/onlyboost/2023-11-22_zachobront_onlyboost.md",
+    "https://github.com/stake-dao/audits/blob/main/onlyboost/2023-11-22_zachobront_onlyboost.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94155052e2be3c9ad6d57f1b13f914626946d8f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

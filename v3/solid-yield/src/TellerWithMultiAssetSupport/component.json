@@ -1,0 +1,18 @@
+{
+  "component": "TellerWithMultiAssetSupport",
+  "main_contract": "TellerWithMultiAssetSupport",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

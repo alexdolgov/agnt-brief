@@ -1,0 +1,18 @@
+{
+  "component": "BlackScholes",
+  "main_contract": "BlackScholes",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x85c100eb32c3e2f6ea0444e553f3a9bce468cb8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

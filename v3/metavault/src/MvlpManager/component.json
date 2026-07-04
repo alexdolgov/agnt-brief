@@ -1,0 +1,18 @@
+{
+  "component": "MvlpManager",
+  "main_contract": "MvlpManager",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x13e733ddd6725a8133bec31b2fc5994fa5c26ea9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

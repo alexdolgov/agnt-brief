@@ -1,0 +1,18 @@
+{
+  "component": "Spotter",
+  "main_contract": "Spotter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf3aee748355bb07cbe702b4ff8dbe6118b34e2a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

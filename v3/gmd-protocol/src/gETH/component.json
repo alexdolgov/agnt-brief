@@ -1,0 +1,18 @@
+{
+  "component": "gETH",
+  "main_contract": "gETH",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0f1711c7b25437c1a29c6e2bad0e2bc18496d7d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

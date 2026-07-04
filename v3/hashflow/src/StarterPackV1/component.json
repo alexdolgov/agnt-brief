@@ -1,0 +1,18 @@
+{
+  "component": "StarterPackV1",
+  "main_contract": "StarterPackV1",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x157372f9d3c94609adfb967741a0afc0c1db1bbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

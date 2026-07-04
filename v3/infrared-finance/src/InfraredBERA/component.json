@@ -1,0 +1,18 @@
+{
+  "component": "InfraredBERA",
+  "main_contract": "InfraredBERA",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x94b5d53483117fe3832c8e08d2a71ab8ab546d81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

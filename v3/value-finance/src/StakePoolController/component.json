@@ -1,0 +1,18 @@
+{
+  "component": "StakePoolController",
+  "main_contract": "StakePoolController",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x14abdb3fe4727852dcc0226240a307640b4b7678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

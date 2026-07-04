@@ -1,0 +1,18 @@
+{
+  "component": "RootPort",
+  "main_contract": "RootPort",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5399eee5073bc1018233796a291ffd6a78e26cbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

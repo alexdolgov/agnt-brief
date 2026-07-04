@@ -1,0 +1,18 @@
+{
+  "component": "AccountableYield",
+  "main_contract": "AccountableYield",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e05bedb3ea09a145bae551ec93b49385ba689da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

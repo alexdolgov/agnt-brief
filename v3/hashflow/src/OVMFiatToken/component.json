@@ -1,0 +1,18 @@
+{
+  "component": "OVMFiatToken",
+  "main_contract": "OVMFiatToken",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

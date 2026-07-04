@@ -1,0 +1,18 @@
+{
+  "component": "BalancerPoolDataQueries",
+  "main_contract": "BalancerPoolDataQueries",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf24917fb88261a37cc57f686ebc831a5c0b9fd39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

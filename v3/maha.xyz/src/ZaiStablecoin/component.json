@@ -1,0 +1,20 @@
+{
+  "component": "ZaiStablecoin",
+  "main_contract": "ZaiStablecoin",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mahaxyz/contracts/blob/master/audits/2024-08-halborn-core.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x69000dfd5025e82f48eb28325a2b88a241182ced",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

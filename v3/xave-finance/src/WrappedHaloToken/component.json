@@ -1,0 +1,18 @@
+{
+  "component": "WrappedHaloToken",
+  "main_contract": "WrappedHaloToken",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x18e7bdb379928a651f093ef1bc328889b33a560c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "MembershipManager-4",
+  "main_contract": "MembershipManager",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x325ea059f11d6860e50a803ae52d49ef35c85fb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

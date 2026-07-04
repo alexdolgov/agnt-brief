@@ -1,0 +1,18 @@
+{
+  "component": "ContangoLens",
+  "main_contract": "ContangoLens",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x121b7580fbb1972774f74f5c1d0afb6a2783e0c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

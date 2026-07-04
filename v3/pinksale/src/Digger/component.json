@@ -1,0 +1,18 @@
+{
+  "component": "Digger",
+  "main_contract": "Digger",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x339cca50e9a4a01beb061747c75aba61a7e087c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

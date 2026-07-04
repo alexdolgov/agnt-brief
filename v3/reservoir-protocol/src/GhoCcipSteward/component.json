@@ -1,0 +1,18 @@
+{
+  "component": "GhoCcipSteward",
+  "main_contract": "GhoCcipSteward",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x20fd5f3fcac8883a3a0a2bbcd658a2d2c6efa6b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

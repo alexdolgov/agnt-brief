@@ -1,0 +1,18 @@
+{
+  "component": "benqiOracle",
+  "main_contract": "benqiOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1840bd0c12e2ad69f88630e1c0dd2139005626a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

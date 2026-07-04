@@ -1,0 +1,18 @@
+{
+  "component": "DragonLair",
+  "main_contract": "DragonLair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x958d208cdf087843e9ad98d23823d32e17d723a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LiqLocker",
+  "main_contract": "LiqLocker",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x703b9994c47ba7521b432b8fac0a954cf6f1ebf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "KandelSeeder",
+  "main_contract": "KandelSeeder",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x075420cb1f213857fcbaf2c9dbfc6ca6295124a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

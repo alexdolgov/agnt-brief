@@ -1,0 +1,18 @@
+{
+  "component": "FlashloanFrankencoin",
+  "main_contract": "FlashloanFrankencoin",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d60dbd18b930b1710b76b88461e33dcadec96a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

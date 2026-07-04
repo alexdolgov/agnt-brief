@@ -1,0 +1,34 @@
+{
+  "component": "PausableUpgradableProxy-2",
+  "main_contract": "PausableUpgradableProxy",
+  "source_file_count": 6,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39f3df0a8a2a7469e03a9519a4cdd22525b080c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4890eaf3d9b2b947980573934d7e0fa23dff11ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d933226dcc39b9dcfcf0683c30ef49c8ccc5c98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

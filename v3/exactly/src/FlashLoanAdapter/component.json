@@ -1,0 +1,20 @@
+{
+  "component": "FlashLoanAdapter",
+  "main_contract": "FlashLoanAdapter",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/exactly/audits/blob/main/ABDK%20Protocol%20Update%20(Oct-25).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd2b94b457d17bfe14f0a850299f924d2f269bde2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

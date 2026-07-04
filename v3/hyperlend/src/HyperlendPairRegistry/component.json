@@ -1,0 +1,20 @@
+{
+  "component": "HyperlendPairRegistry",
+  "main_contract": "HyperlendPairRegistry",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hyperlendx/audits/blob/master/hyperlend/2025-01-11-pashov-security-review-hyperlend.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x43ba7e2e99c05ac0829c16cb514e06eb82e88885",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RouterV2",
+  "main_contract": "RouterV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4ae6eca985340dd434d38f470accce4dc78d109",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

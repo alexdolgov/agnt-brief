@@ -1,0 +1,26 @@
+{
+  "component": "VaultV2",
+  "main_contract": "VaultV2",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2eaad0d586cf9fd73bb2c09cf6a7e3e187d68cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

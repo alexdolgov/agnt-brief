@@ -1,0 +1,28 @@
+{
+  "component": "CrossProxy",
+  "main_contract": "CrossProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/wanchain/Audits/blob/master/Wanchain%201.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x079ae74b9ebd1d4f51ce2d1848565829b081099e",
+      "is_proxy": true,
+      "implementation_address": "0xc9ea89502f43162ab724eb5f7687f2c590056c9d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a",
+      "is_proxy": true,
+      "implementation_address": "0xc6d1bb32c6b214d1337c5e79c965d51b7f39ac63",
+      "liveness": "live"
+    }
+  ]
+}

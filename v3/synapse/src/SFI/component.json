@@ -1,0 +1,18 @@
+{
+  "component": "SFI",
+  "main_contract": "SFI",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb753428af26e81097e7fd17f40c88aaa3e04902c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626Helper",
+  "main_contract": "ERC4626Helper",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99e38696ada09433afa79123595701a80a406780",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfbd90607cc42f8ae0e8b0ac94e7ab1631e494abd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DXswapFeeReceiver",
+  "main_contract": "DXswapFeeReceiver",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

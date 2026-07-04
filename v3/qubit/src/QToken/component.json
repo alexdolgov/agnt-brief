@@ -1,0 +1,182 @@
+{
+  "component": "QToken",
+  "main_contract": "QToken",
+  "source_file_count": 21,
+  "deployment_count": 21,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/PancakeBunny-finance/qubit-finance/blob/master/audits/PeckShield-Audit-Report-Qubit-v1.0.pdf",
+    "https://github.com/PancakeBunny-finance/qubit-finance/blob/master/audits/mound_qubit_audit_rev1.1.pdf",
+    "https://github.com/PancakeBunny-finance/qubit-finance/blob/master/audits/mound_qubit_xChain_audit_rev1.1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1a67a436104d2ab3b685043926330a715d4f0cb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1f6021de57891107f92d46660fb2a2cb946d2bb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x275ccb2eb9c1839b38779d8147be9711000d9850",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2dfab0eebec0d3deb37c72f3c2ec62116178040e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3a783ace7fd7403584b89fb7979c536b22c2495c",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d80d724574a1de5d5dfcba4b0abdb7940e9d619",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x837b580db2cfc966777b72cd5bd2205c8db88efa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86e8e7c985614379947ce09d74cdba7f15ae9095",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x872773a7cc30f15ae22b24cacca114e34b84758b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93b4c48d54f9ccb7ea6032fce0c8bfbd12834307",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x97fd26e8f185dacb3c7d5e946569a330c6fe7619",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa2a1c4469f7cd1ca1298085aa0c73f69ff668835",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc33908b12064538960e9080e32dc8eb98f93dd79",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd0cecf8ca3969178795123d89c3f50c8d2891665",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd274a1b63b96ef7a3e62a988e4fed7beaa029f91",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeaf1da1d139cb5d510f42a28316331e9447be278",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xed6f544b495159739676354dcb525a887359681a",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xefb6200ff7cb8c7db063677bfdcc5644ecd0807c",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf309025cba96e48205fb00b97520dcc432cf5690",
+      "is_proxy": true,
+      "implementation_address": "0x0ec672cd9645e6affb6b72c4566184e28a4c46ec",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfae4cf4050211b7b7dc309b8944cfe5315231455",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

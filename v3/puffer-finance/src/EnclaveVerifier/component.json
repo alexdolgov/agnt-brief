@@ -1,0 +1,18 @@
+{
+  "component": "EnclaveVerifier",
+  "main_contract": "EnclaveVerifier",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d03e4bcc928795b1eeac1205fa9ddc4a3241d95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

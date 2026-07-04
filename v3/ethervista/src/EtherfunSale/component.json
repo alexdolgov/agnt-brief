@@ -1,0 +1,26 @@
+{
+  "component": "EtherfunSale",
+  "main_contract": "EtherfunSale",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75924504b696f3d29fefd01b2bde7ae21ed99515",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

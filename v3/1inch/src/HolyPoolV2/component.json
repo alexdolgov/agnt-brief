@@ -1,0 +1,18 @@
+{
+  "component": "HolyPoolV2",
+  "main_contract": "HolyPoolV2",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e7062f6458d67e74f84c37c189ab3e69eefdb58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

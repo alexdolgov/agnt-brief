@@ -1,0 +1,18 @@
+{
+  "component": "FullRangeConvertorV2",
+  "main_contract": "FullRangeConvertorV2",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0127b2a8064194810328a898a7573b86644261ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

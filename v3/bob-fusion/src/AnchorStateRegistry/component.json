@@ -1,0 +1,18 @@
+{
+  "component": "AnchorStateRegistry",
+  "main_contract": "AnchorStateRegistry",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7b465370bb7a333f99edd19599eb7fb1c2d3f8d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

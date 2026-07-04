@@ -1,0 +1,26 @@
+{
+  "component": "SupplyRewardFactory",
+  "main_contract": "SupplyRewardFactory",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x725c9da2efcf67866632f8fa5009e7859c21bc13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd66ae82346087a19fcf0b0cc7e07b039c4a3fe59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

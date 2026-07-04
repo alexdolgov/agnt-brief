@@ -1,0 +1,21 @@
+{
+  "component": "FLIP",
+  "main_contract": "FLIP",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/chainflip-io/chainflip-backend/blob/main/audits/2023-04-TrailOfBits-securityreview.pdf",
+    "https://github.com/trailofbits/publications/blob/master/reviews/2023-04-chainflip-securityreview.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x826180541412d574cf1336d22c0c0a287822678a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

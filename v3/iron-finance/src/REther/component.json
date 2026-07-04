@@ -1,0 +1,18 @@
+{
+  "component": "REther",
+  "main_contract": "REther",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4f8d28180a23a1cbd59ba1cd1ea2822c66512a73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

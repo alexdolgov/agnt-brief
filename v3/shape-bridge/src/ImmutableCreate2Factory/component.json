@@ -1,0 +1,18 @@
+{
+  "component": "ImmutableCreate2Factory",
+  "main_contract": "ImmutableCreate2Factory",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0000000000ffe8b47b3e2130213b802212439497",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TimelockController-2",
+  "main_contract": "TimelockController",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7e47f4b446e42b8379207998822095438040fb9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

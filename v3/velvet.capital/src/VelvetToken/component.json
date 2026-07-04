@@ -1,0 +1,18 @@
+{
+  "component": "VelvetToken",
+  "main_contract": "VelvetToken",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8b194370825e37b33373e74a41009161808c1488",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

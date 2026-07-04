@@ -1,0 +1,18 @@
+{
+  "component": "EACAggregatorProxy",
+  "main_contract": "EACAggregatorProxy",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0017abac5b6f291f9164e35b1234ca1d697f9cf4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

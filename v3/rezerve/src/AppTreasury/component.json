@@ -1,0 +1,36 @@
+{
+  "component": "AppTreasury",
+  "main_contract": "AppTreasury",
+  "source_file_count": 23,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/rezervemoney/code/blob/main/audits/2025-06-21-halborn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00ff05abab62c88d5fa50583b08e35908b70db99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x41d1cedaaa770ec7e1041a6f6c827a795bc85585",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x57626a0160a933513b49d199df5bff729275cc4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

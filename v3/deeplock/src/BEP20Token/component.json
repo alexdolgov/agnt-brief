@@ -1,0 +1,26 @@
+{
+  "component": "BEP20Token",
+  "main_contract": "BEP20Token",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x89313ffffd74e00c9e88b167564ad4b3f5c1b20a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa3f0a9ad24a749f3aa14f33c019b708259cfa514",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

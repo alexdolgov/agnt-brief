@@ -1,0 +1,20 @@
+{
+  "component": "OFTAdapterUpgradeable",
+  "main_contract": "OFTAdapterUpgradeable",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/euler-xyz/evk-periphery/blob/master/audits/Paladin%20LayerZero%20Adapters.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3bf1bd5db4457d22a85d45791b6291b98d0fc5b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

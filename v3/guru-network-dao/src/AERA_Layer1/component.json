@@ -1,0 +1,18 @@
+{
+  "component": "AERA_Layer1",
+  "main_contract": "AERA_Layer1",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x63d73d848b7f5142f11974188e9fe3f5de28f88c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

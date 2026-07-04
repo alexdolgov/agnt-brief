@@ -1,0 +1,20 @@
+{
+  "component": "ERC1967Proxy-10",
+  "main_contract": "ERC1967Proxy",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2e1193a4219c5539f8bd5fd1c6e765158caf278c",
+      "is_proxy": true,
+      "implementation_address": "0xc667602b4067a759908cd747706f55c77779face",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DataFeed-8",
+  "main_contract": "DataFeed",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3cce99e0a53dd5490defd2ee0c7a6842cd01cd56",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

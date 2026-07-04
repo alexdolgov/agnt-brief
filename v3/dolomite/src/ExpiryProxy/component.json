@@ -1,18 +1,26 @@
 {
   "component": "ExpiryProxy",
   "main_contract": "ExpiryProxy",
-  "source_file_count": 31,
-  "deployment_count": 1,
+  "source_file_count": 32,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x075a0614a64467f852cc3af3876574afc5fecc65",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1b39f7c19d952752f255536e72726a592167e7bc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x1b39f7c19d952752f255536e72726a592167e7bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

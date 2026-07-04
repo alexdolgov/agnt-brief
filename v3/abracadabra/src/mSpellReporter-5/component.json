@@ -1,0 +1,26 @@
+{
+  "component": "mSpellReporter-5",
+  "main_contract": "mSpellReporter",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x59b3d5ddf93a3782f7b7a4be1214722fc6fecd45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd2b62aef2102c09f475b23dda6b61072e848cf28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,23 @@
 {
   "component": "CustomUnstakedFeeModule-2",
   "main_contract": "CustomUnstakedFeeModule",
-  "source_file_count": 17,
-  "deployment_count": 1,
+  "source_file_count": 16,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x5a6f7f478cd55904216f1354b2a36d56b826678a",
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x21fcc0c421ae0a5f6919535ecf000688a0413b92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb8e41db4be1f6249cec64f48ce4349004442d5c5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

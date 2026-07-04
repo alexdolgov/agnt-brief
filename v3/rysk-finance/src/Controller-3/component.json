@@ -1,0 +1,26 @@
+{
+  "component": "Controller-3",
+  "main_contract": "Controller",
+  "source_file_count": 68,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dc108f81337c9be13ec4db55156fe42c5760a87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x98261903d3e566b15a6c49b7d7ea3b8c67211e14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Zharta_Renting_Vault_Contract-2",
+  "main_contract": "Zharta Renting Vault Contract",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x102c160714119e32b0f82a597b8a9fa7cfe89a47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

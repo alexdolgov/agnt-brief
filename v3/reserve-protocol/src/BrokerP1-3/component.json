@@ -1,0 +1,18 @@
+{
+  "component": "BrokerP1-3",
+  "main_contract": "BrokerP1",
+  "source_file_count": 67,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ce1e9c0595796e897d4596cbeac4046bbc7e095",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

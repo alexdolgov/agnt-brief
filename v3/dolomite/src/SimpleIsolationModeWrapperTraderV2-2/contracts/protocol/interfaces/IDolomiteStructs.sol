@@ -171,7 +171,7 @@ interface IDolomiteStructs {
 
     struct Par {
         bool sign;
-        uint128 value;
+        uint256 value;
     }
 
     struct RiskLimits {

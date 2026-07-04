@@ -3,7 +3,7 @@ pragma solidity >=0.5.0;
 
 /// @title Provides functions for deriving a pool address from the factory, tokens, and the fee
 library PoolAddress {
-    bytes32 internal constant POOL_INIT_CODE_HASH = 0x44113574c54c83e2e97155af10462bef97d2b6027fe7569e984020f726725a2a;
+    bytes32 internal constant POOL_INIT_CODE_HASH = 0x6ce8eb472fa82df5469c6ab6d485f17c3ad13c8cd7af59b3d4a8026c5ce0f7e2;
 
     /// @notice The identifying key of the pool
     struct PoolKey {
@@ -27,7 +27,7 @@ library PoolAddress {
     }
 
     /// @notice Deterministically computes the pool address given the factory and PoolKey
-    /// @param deployer The DackieSwap V3 deployer contract address
+    /// @param deployer The PancakeSwap V3 deployer contract address
     /// @param key The PoolKey
     /// @return pool The contract address of the V3 pool
     function computeAddress(address deployer, PoolKey memory key) internal pure returns (address pool) {

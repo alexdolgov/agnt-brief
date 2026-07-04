@@ -1,0 +1,26 @@
+{
+  "component": "BridgeEndpointWithSwap-6",
+  "main_contract": "BridgeEndpointWithSwap",
+  "source_file_count": 46,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb89873b32b6c4a8eedfb76f12078e1d732ae3f78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc355e278bf9631173501393dbcdcd5356d3a1334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

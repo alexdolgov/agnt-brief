@@ -1,31 +1,59 @@
 # smardex-ecosystem — deployments
 
-70 verified deployment(s) across 43 component(s).
+107 verified deployment(s) across 56 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x26727794764e66aaae50a4ec518e24a00544fcc9` | ERC20 | impl | live | no |
+| arbitrum | `0x41a00e3fbe7f479a99ba6822704d9c5deb611f22` | SmardexFactory-2 | impl | live | no |
 | arbitrum | `0x53d165df0414bd02e91747775450934bf2257f69` | FarmingRangeL2Arbitrum | impl | live | no |
 | arbitrum | `0x5c622dcc96b6d96ac6c154f99cf081815094cbc9` | RewardManagerL2Arbitrum | impl | live | no |
 | arbitrum | `0x863799a120edd11ca8718a3a93f1beb138a97c41` | RewardManagerWithdrawableArbitrum | impl | live | no |
-| base | `0x02fb6161eb60d653a951bf71993cda7bef9f3e02` | AutoSwapperL2 | impl | inactive | no |
+| arbitrum | `0x894abf02947e840ee3501fba393aedd50011b739` | SmarDexDegen | impl | inactive | no |
+| arbitrum | `0x89c64b435947bfc0bf74b645f088d67206f0cc54` | AutoSwapperL2-2 | impl | inactive | no |
+| arbitrum | `0xabd587f2607542723b17f14d00d99b987c29b074` | BridgeToken-4 | proxy | live | no |
+| arbitrum | `0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b` | AutoSwapperL2 | impl | inactive | no |
+| arbitrum | `0xda3970a20cdc2b1269fc96c4e8d300e0fddb7b3d` | SmardexRouter-3 | impl | live | no |
+| arbitrum | `0xdd4536dd9636564d891c919416880a3e250f975a` | SmardexRouter-2 | impl | live | no |
+| base | `0x02fb6161eb60d653a951bf71993cda7bef9f3e02` | AutoSwapperL2-3 | impl | inactive | no |
 | base | `0x45f23f8ca9b5a4b6c22aaa451920be4566bc6d6e` | SmarDexDegen | impl | inactive | no |
 | base | `0x5c622dcc96b6d96ac6c154f99cf081815094cbc9` | SmardexRouter-2 | impl | live | no |
-| base | `0x7240aac0f57fa0126c107673597ce3cd5b907e38` | AutoSwapperL2 | impl | inactive | no |
+| base | `0x7240aac0f57fa0126c107673597ce3cd5b907e38` | AutoSwapperL2-3 | impl | inactive | no |
+| base | `0xa5d378c05192e3f1f365d6298921879c4d51c5a3` | FarmingRange-3 | impl | live | no |
+| base | `0xccfdbee02f8216e4f4da392a54e425285613cf2c` | RewardManagerWithdrawable | impl | live | no |
+| base | `0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b` | RewardManagerL2-3 | impl | live | no |
+| base | `0xdd4536dd9636564d891c919416880a3e250f975a` | SmardexFactory-2 | impl | live | no |
+| base | `0xedd758d17175dc9131992ebd02f55cc4ebeb7b7c` | ERC20 | impl | live | no |
+| base | `0xf03d133627364e5eddab8134fab3a030cf7b3020` | SmardexRouter-3 | impl | live | no |
+| base | `0xfd4330b0312fdeec6d4225075b82e00493ff2e3f` | BridgeToken-3 | proxy | live | no |
+| bsc | `0x391becc8daaf32b9ba8e602e9527bf9da04c8deb` | SmardexRouter-2 | impl | live | no |
+| bsc | `0x41a00e3fbe7f479a99ba6822704d9c5deb611f22` | AutoSwapperL2 | impl | inactive | no |
+| bsc | `0x7bc796aa36f462d98aea94c4be5859a5b176458c` | ERC20 | impl | live | no |
+| bsc | `0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30` | RewardManagerL2 | impl | live | no |
+| bsc | `0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33` | SmardexFactory-2 | impl | live | no |
+| bsc | `0xab3699b71e89a53c529ec037c3389b5a2caf545a` | SmardexRouter-3 | impl | live | no |
+| bsc | `0xb891aeb2130805171796644a2af76fc7ff25a0b9` | FarmingRange | impl | live | no |
+| bsc | `0xcff24ade26ad0043f637279c08ed6f6959fa9835` | AutoSwapperL2-2 | impl | inactive | no |
+| bsc | `0xd48d45ca7f39811c2f9d8270e6af7ad9c0be78a7` | SmarDexDegen | impl | inactive | no |
+| bsc | `0xde0ceb9fca050f30f07a7187beffbbbe6a04055a` | RewardManagerWithdrawable | impl | live | no |
+| bsc | `0xfdc66a08b0d0dc44c17bbd471b88f49f50cdd20f` | BridgeToken | proxy | live | no |
 | ethereum | `0x037768ddeddb392201d1a31ce05f0b7013043a0c` | SmardexToken | impl | live | no |
 | ethereum | `0x0de8af2200c88a51b1a53d640729ed459acfba38` | UsdnProtocolCoreLibrary | impl | live | no |
 | ethereum | `0x1b6476f672d0d00f8a7bb90d95056b9ed58a2670` | SmardexToken | impl | live | no |
 | ethereum | `0x24575e1250467f1a90a1c16f1e921c1674b70e6e` | PUMP | impl | live | no |
 | ethereum | `0x25c4b95f00a01d3739815f026c52126f44034837` | RewardManager | impl | live | no |
 | ethereum | `0x271df5517a4daacb7cab988aa64d23debda4c498` | UsdnProtocolImpl | impl | live | no |
+| ethereum | `0x2d2a9a8b734eecfde916dbdf3a9850d903d384ed` | AutoSwapperL2-4 | impl | inactive | no |
 | ethereum | `0x30246df2cb213d3522dd1ca1f1f8740d4e883f14` | DoubleEndedQueue | impl | live | no |
 | ethereum | `0x337cdb4a10732b0e7a30f4e47dc94dc5ba83bc67` | SmardexToken | impl | live | no |
 | ethereum | `0x3403868cd7368b3c12d03ec677fe1d5c9e8b1764` | SmardexRouter | impl | live | no |
 | ethereum | `0x346c0ca93354383a31d78d4944290d51f3b3f920` | AutoSwapper | impl | inactive | no |
 | ethereum | `0x3aedcb9e2f3d70f67f2116592f68f370c02d7e81` | SmardexFactory | impl | live | no |
 | ethereum | `0x3cd4351ce89db404ca87457c3d7c89d2f9a5d13c` | SmardexRouter | impl | live | no |
-| ethereum | `0x40a8ee345887c7e92a24c3cd57a191d1b2d6f3cf` | RewardManagerWithdrawable | impl | live | no |
+| ethereum | `0x40a8ee345887c7e92a24c3cd57a191d1b2d6f3cf` | RewardManagerWithdrawable-2 | impl | live | no |
 | ethereum | `0x44a7d8430464ba59d07f83d4fa6092b039fed13f` | PUMP | impl | live | no |
 | ethereum | `0x48d19891158223530e336c2290fa977d935cbaf7` | Accumulator | impl | live | no |
+| ethereum | `0x49e9366c8733c96485632ba7f662d1bfd860dcce` | ERC20 | impl | live | no |
 | ethereum | `0x49f66b1616865b2a59caecb8352bbf2ac80983e1` | UniversalRouter | impl | live | yes |
 | ethereum | `0x52e7b23e1faba6d83376725e2ccad75efbd8736e` | SmardexToken-2 | impl | live | no |
 | ethereum | `0x5a3b25f3de702ff2209ef4c11e80bd97bb6d53eb` | UsdnProtocolVaultLibrary | impl | live | no |
@@ -33,7 +61,7 @@
 | ethereum | `0x656cb8c6d154aad29d8771384089be5b5141f01a` | UsdnProtocolImpl | proxy | inactive | no |
 | ethereum | `0x74333736a0ea8d1d3607a848a458618e1f882abb` | SmardexFactory | impl | live | no |
 | ethereum | `0x7753f36e711b66a0350a753aba9f5651bae76a1d` | SmardexFactory | impl | live | no |
-| ethereum | `0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523` | FarmingRange | impl | live | no |
+| ethereum | `0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523` | FarmingRange-2 | impl | live | no |
 | ethereum | `0x7e473d028b80ad6408eb9fc1a54b4584cad69231` | AutoSwapper | impl | inactive | no |
 | ethereum | `0x80497049b005fd236591c3cd431dbd6e06eb1a31` | Staking | impl | live | no |
 | ethereum | `0x825f1c65dab9684db454e26030ea89e344e07fff` | SmardexToken | impl | live | no |
@@ -62,6 +90,7 @@
 | ethereum | `0xd82b365f821e42009c217ec103941b5f1532da53` | SmardexToken | impl | live | no |
 | ethereum | `0xd9e0b1b9156e27a55ea9d53e81380651443b737d` | AiWhitelister | impl | live | no |
 | ethereum | `0xde17a000ba631c5d7c2bd9fb692efea52d90dee2` | Usdn | impl | live | yes |
+| ethereum | `0xe47f8ba48d155383e1b2c4654833bde2b0e8b44a` | ERC20 | impl | live | no |
 | ethereum | `0xea10c7fceb16779234e0a5ebe7e963df2c7f136a` | UsdnProtocolSettersLibrary | impl | live | no |
 | ethereum | `0xea243413bf5674d5b674e97beaa505a26441e943` | TickMath | impl | live | no |
 | ethereum | `0xedcd18ff9a17dbc3485d7cb97a41a9b12d61f1ec` | SmardexToken | impl | live | no |
@@ -72,46 +101,13 @@
 | ethereum | `0xf9d36078a248af249aa57ae1d5d0c1033d6bbe27` | UsdnLongFarming | impl | live | no |
 | ethereum | `0xffc37455f53cbc0360ef3f3cccb6a967e1ae2a45` | UsdnProtocolActionsLongLibrary | impl | live | no |
 | polygon | `0x2662b8b1bda7e5810c1f080f302cb8de0a81ad6c` | ERC20 | impl | live | no |
-| polygon | `0x391becc8daaf32b9ba8e602e9527bf9da04c8deb` | RewardManagerL2 | impl | live | no |
-| polygon | `0x6899face15c14348e1759371049ab64a3a06bfa6` | BridgeToken | proxy | live | no |
-
-## Source unavailable (37)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x26727794764e66aaae50a4ec518e24a00544fcc9`
-- arbitrum `0x41a00e3fbe7f479a99ba6822704d9c5deb611f22`
-- arbitrum `0x894abf02947e840ee3501fba393aedd50011b739`
-- arbitrum `0x89c64b435947bfc0bf74b645f088d67206f0cc54`
-- arbitrum `0xabd587f2607542723b17f14d00d99b987c29b074`
-- arbitrum `0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b`
-- arbitrum `0xda3970a20cdc2b1269fc96c4e8d300e0fddb7b3d`
-- arbitrum `0xdd4536dd9636564d891c919416880a3e250f975a`
-- base `0xa5d378c05192e3f1f365d6298921879c4d51c5a3`
-- base `0xccfdbee02f8216e4f4da392a54e425285613cf2c`
-- base `0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b`
-- base `0xdd4536dd9636564d891c919416880a3e250f975a`
-- base `0xedd758d17175dc9131992ebd02f55cc4ebeb7b7c`
-- base `0xf03d133627364e5eddab8134fab3a030cf7b3020`
-- base `0xfd4330b0312fdeec6d4225075b82e00493ff2e3f`
-- bsc `0x391becc8daaf32b9ba8e602e9527bf9da04c8deb`
-- bsc `0x41a00e3fbe7f479a99ba6822704d9c5deb611f22`
-- bsc `0x7bc796aa36f462d98aea94c4be5859a5b176458c`
-- bsc `0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30`
-- bsc `0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33`
-- bsc `0xab3699b71e89a53c529ec037c3389b5a2caf545a`
-- bsc `0xb891aeb2130805171796644a2af76fc7ff25a0b9`
-- bsc `0xcff24ade26ad0043f637279c08ed6f6959fa9835`
-- bsc `0xd48d45ca7f39811c2f9d8270e6af7ad9c0be78a7`
-- bsc `0xde0ceb9fca050f30f07a7187beffbbbe6a04055a`
-- bsc `0xfdc66a08b0d0dc44c17bbd471b88f49f50cdd20f`
-- ethereum `0x2d2a9a8b734eecfde916dbdf3a9850d903d384ed`
-- ethereum `0x49e9366c8733c96485632ba7f662d1bfd860dcce`
-- ethereum `0xe47f8ba48d155383e1b2c4654833bde2b0e8b44a`
-- polygon `0x561a557737426ececc07c898e23fce571f52db32`
-- polygon `0x671e5ea2ae9efc707132cb82e27b9f78ab867837`
-- polygon `0x7db73a1e526db36c40e508b09428420c1fa8e46b`
-- polygon `0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30`
-- polygon `0x9a1e1681f6d59ca051776410465afada6384398f`
-- polygon `0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33`
-- polygon `0xab3699b71e89a53c529ec037c3389b5a2caf545a`
-- polygon `0xedd758d17175dc9131992ebd02f55cc4ebeb7b7c`
+| polygon | `0x391becc8daaf32b9ba8e602e9527bf9da04c8deb` | RewardManagerL2-2 | impl | live | no |
+| polygon | `0x561a557737426ececc07c898e23fce571f52db32` | AutoSwapperL2-2 | impl | inactive | no |
+| polygon | `0x671e5ea2ae9efc707132cb82e27b9f78ab867837` | SmarDexDegen | impl | inactive | no |
+| polygon | `0x6899face15c14348e1759371049ab64a3a06bfa6` | BridgeToken-2 | proxy | live | no |
+| polygon | `0x7db73a1e526db36c40e508b09428420c1fa8e46b` | FarmingRange | impl | live | no |
+| polygon | `0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30` | AutoSwapperL2 | impl | inactive | no |
+| polygon | `0x9a1e1681f6d59ca051776410465afada6384398f` | SmardexFactory-2 | impl | live | no |
+| polygon | `0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33` | SmardexRouter-2 | impl | live | no |
+| polygon | `0xab3699b71e89a53c529ec037c3389b5a2caf545a` | RewardManagerWithdrawable | impl | live | no |
+| polygon | `0xedd758d17175dc9131992ebd02f55cc4ebeb7b7c` | SmardexRouter-3 | impl | live | no |

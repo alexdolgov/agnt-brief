@@ -2,12 +2,28 @@
   "component": "SportsAMMV2",
   "main_contract": "SportsAMMV2",
   "source_file_count": 24,
-  "deployment_count": 6,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit"
   ],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcae2aca6b011e2b02150fd00d5554e79380fa036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcf999f7afacae720c31481cd62f320c43bed3852",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

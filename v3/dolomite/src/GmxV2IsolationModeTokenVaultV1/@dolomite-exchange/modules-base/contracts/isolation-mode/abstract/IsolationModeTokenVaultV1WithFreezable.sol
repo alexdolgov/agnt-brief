@@ -24,18 +24,18 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { IsolationModeTokenVaultV1 } from "./IsolationModeTokenVaultV1.sol";
-import { IGenericTraderBase } from "../../interfaces/IGenericTraderBase.sol";
 import { IGenericTraderProxyV1 } from "../../interfaces/IGenericTraderProxyV1.sol";
 import { IHandlerRegistry } from "../../interfaces/IHandlerRegistry.sol";
 import { AccountBalanceLib } from "../../lib/AccountBalanceLib.sol";
+import { DolomiteMarginVersionWrapperLib } from "../../lib/DolomiteMarginVersionWrapperLib.sol";
 import { IDolomiteMargin } from "../../protocol/interfaces/IDolomiteMargin.sol";
 import { IDolomiteStructs } from "../../protocol/interfaces/IDolomiteStructs.sol";
 import { IWETH } from "../../protocol/interfaces/IWETH.sol";
+import { DecimalLib } from "../../protocol/lib/DecimalLib.sol";
 import { Require } from "../../protocol/lib/Require.sol";
 import { IFreezableIsolationModeVaultFactory } from "../interfaces/IFreezableIsolationModeVaultFactory.sol";
 import { IIsolationModeTokenVaultV1 } from "../interfaces/IIsolationModeTokenVaultV1.sol";
 import { IIsolationModeTokenVaultV1WithFreezable } from "../interfaces/IIsolationModeTokenVaultV1WithFreezable.sol";
-import { IsolationModeTokenVaultV1ActionsImpl } from "./impl/IsolationModeTokenVaultV1ActionsImpl.sol";
 
 
 /**
@@ -50,6 +50,8 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
     IsolationModeTokenVaultV1
 {
     using Address for address payable;
+    using DecimalLib for uint256;
+    using DolomiteMarginVersionWrapperLib for IDolomiteMargin;
     using SafeERC20 for IERC20;
 
     // ===================================================
@@ -139,54 +141,34 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
 
     modifier _addCollateralAndSwapExactInputForOutputFreezableValidator(
         uint256 _borrowAccountNumber,
-        uint256 _inputMarketId,
-        uint256 _outputMarketId,
-        uint256 _inputAmount,
-        uint256 _minOutputAmount
+        uint256 _outputMarketId
     ) {
-        _requireTrustedConverterIfFrozenOrUnwrapper(_inputMarketId);
-        _validateIfWrapToUnderlying(
+        _requireNotFrozen();
+        _requireNotLiquidatableIfWrapToUnderlying(
             /* _accountNumber = */ _borrowAccountNumber,
-            _inputMarketId,
-            _outputMarketId,
-            _inputAmount,
-            _minOutputAmount
+            /* _outputMarketId = */ _outputMarketId
         );
         _;
     }
 
     modifier _swapExactInputForOutputAndRemoveCollateralFreezableValidator(
         uint256 _borrowAccountNumber,
-        uint256 _inputMarketId,
-        uint256 _outputMarketId,
-        uint256 _inputAmount,
-        uint256 _minOutputAmount
+        uint256 _outputMarketId
     ) {
-        _requireTrustedConverterIfFrozenOrUnwrapper(_inputMarketId);
-        _validateIfWrapToUnderlying(
+        _requireNotFrozen();
+        _requireNotLiquidatableIfWrapToUnderlying(
             /* _accountNumber = */ _borrowAccountNumber,
-            _inputMarketId,
-            _outputMarketId,
-            _inputAmount,
-            _minOutputAmount
+            /* _outputMarketId = */ _outputMarketId
         );
         _;
         _refundExecutionFeeIfNecessary(_borrowAccountNumber);
     }
 
-    modifier _swapExactInputForOutputFreezableValidator(
-        uint256 _tradeAccountNumber,
-        uint256[] memory _marketIds,
-        uint256 _inputAmount,
-        uint256 _minOutputAmount
-    ) {
-        _requireTrustedConverterIfFrozenOrUnwrapper(_marketIds[0]);
-        _validateIfWrapToUnderlying(
+    modifier _swapExactInputForOutputFreezableValidator(uint256 _tradeAccountNumber, uint256[] memory _marketIds) {
+        _requireNotFrozen();
+        _requireNotLiquidatableIfWrapToUnderlying(
             /* _accountNumber = */ _tradeAccountNumber,
-            /* _inputMarketId = */ _marketIds[0],
-            /* _outputMarketId = */ _marketIds[_marketIds.length - 1],
-            _inputAmount,
-            _minOutputAmount
+            /* _outputMarketId = */ _marketIds[_marketIds.length - 1]
         );
         _;
     }
@@ -540,10 +522,7 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
         override
         _addCollateralAndSwapExactInputForOutputFreezableValidator(
             _borrowAccountNumber,
-            /* _inputMarketId = */ _marketIdsPath[0],
-            /* _outputMarketId = */ _marketIdsPath[_marketIdsPath.length - 1],
-            _inputAmountWei,
-            _minOutputAmountWei
+            _marketIdsPath[_marketIdsPath.length - 1]
         )
     {
         super._addCollateralAndSwapExactInputForOutput(
@@ -573,10 +552,7 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
         override
         _swapExactInputForOutputAndRemoveCollateralFreezableValidator(
             _borrowAccountNumber,
-            /* _inputMarketId = */ _marketIdsPath[0],
-            /* _outputMarketId = */ _marketIdsPath[_marketIdsPath.length - 1],
-            _inputAmountWei,
-            _minOutputAmountWei
+            _marketIdsPath[_marketIdsPath.length - 1]
         )
     {
         super._swapExactInputForOutputAndRemoveCollateral(
@@ -597,12 +573,7 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
         internal
         virtual
         override
-        _swapExactInputForOutputFreezableValidator(
-            _params.tradeAccountNumber,
-            _params.marketIdsPath,
-            _params.inputAmountWei,
-            _params.minOutputAmountWei
-        )
+        _swapExactInputForOutputFreezableValidator(_params.tradeAccountNumber, _params.marketIdsPath)
     {
         super._swapExactInputForOutput(
             _params
@@ -691,9 +662,8 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
             number: _tradeAccountNumber
         });
         IDolomiteMargin dolomiteMargin = DOLOMITE_MARGIN();
-        IsolationModeTokenVaultV1ActionsImpl.requireMinAmountIsNotTooLargeForLiquidation(
+        _requireMinAmountIsNotTooLargeForLiquidation(
             dolomiteMargin,
-            CHAIN_ID,
             liquidAccount,
             marketId(),
             dolomiteMargin.getMarketIdByTokenAddress(_outputToken),
@@ -797,13 +767,6 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
         );
     }
 
-    function _requireTrustedConverterIfFrozenOrUnwrapper(uint256 _inputMarketId) private view {
-        if (_inputMarketId == marketId() || isVaultFrozen()) {
-            // Only a trusted converter can initiate unwraps (via the callback) OR execute swaps if the vault is frozen
-            _requireOnlyConverter(msg.sender);
-        }
-    }
-
     function _requireVaultAccountNotFrozen(uint256 _accountNumber) private view {
         Require.that(
             !isVaultAccountFrozen(_accountNumber),
@@ -813,24 +776,40 @@ abstract contract IsolationModeTokenVaultV1WithFreezable is
         );
     }
 
-    function _validateIfWrapToUnderlying(
+    function _requireNotLiquidatableIfWrapToUnderlying(
         uint256 _accountNumber,
+        uint256 _outputMarketId
+    ) internal view {
+        uint256 underlyingMarketId = DOLOMITE_MARGIN().getMarketIdByTokenAddress(VAULT_FACTORY());
+        if (_outputMarketId== underlyingMarketId) {
+            _requireNotLiquidatable(_accountNumber);
+        }
+    }
+
+    function _requireMinAmountIsNotTooLargeForLiquidation(
+        IDolomiteMargin _dolomiteMargin,
+        IDolomiteStructs.AccountInfo memory _liquidAccount,
         uint256 _inputMarketId,
         uint256 _outputMarketId,
-        uint256 _inputAmount,
+        uint256 _inputTokenAmount,
         uint256 _minOutputAmount
     ) internal view {
-        if (_outputMarketId == marketId()) {
-            _requireNotLiquidatable(_accountNumber);
-            IsolationModeTokenVaultV1ActionsImpl.requireMinAmountIsNotTooLargeForWrapToUnderlying(
-                dolomiteRegistry(),
-                DOLOMITE_MARGIN(),
-                _accountNumber,
-                _inputMarketId,
-                _outputMarketId,
-                _inputAmount,
-                _minOutputAmount
-            );
-        }
+        uint256 inputValue = _dolomiteMargin.getMarketPrice(_inputMarketId).value * _inputTokenAmount;
+        uint256 outputValue = _dolomiteMargin.getMarketPrice(_outputMarketId).value * _minOutputAmount;
+
+        IDolomiteMargin.Decimal memory spread = _dolomiteMargin.getVersionedLiquidationSpreadForPair(
+            CHAIN_ID,
+            _liquidAccount,
+            /* heldMarketId = */ _inputMarketId,
+            /* ownedMarketId = */ _outputMarketId
+        );
+        spread.value /= 2;
+        uint256 inputValueAdj = inputValue - inputValue.mul(spread);
+
+        Require.that(
+            outputValue <= inputValueAdj,
+            _FILE,
+            "minOutputAmount too large"
+        );
     }
 }

@@ -1,0 +1,42 @@
+{
+  "component": "ProxyAdmin-2",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6de1ba8e7942cddf728b27046dcdf28d0187bed9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x02a5b3151df6621453b6d976144d3621514a9d9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5a33c008fc80afe089ef5c7390ef3e17bfca0645",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe7e22ad06493b97dd86875c7f59f0d71c664c75e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

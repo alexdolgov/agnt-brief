@@ -1,0 +1,18 @@
+{
+  "component": "FlashLoanLooping-6",
+  "main_contract": "FlashLoanLooping",
+  "source_file_count": 154,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf3b60bff862291a7e7903ef55806e54705081bb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

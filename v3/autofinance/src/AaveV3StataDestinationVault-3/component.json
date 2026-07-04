@@ -1,0 +1,18 @@
+{
+  "component": "AaveV3StataDestinationVault-3",
+  "main_contract": "AaveV3StataDestinationVault",
+  "source_file_count": 75,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x588354024ecf620337f6d6cd5f0684e9d6940406",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

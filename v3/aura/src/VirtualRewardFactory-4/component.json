@@ -1,0 +1,18 @@
+{
+  "component": "VirtualRewardFactory-4",
+  "main_contract": "VirtualRewardFactory",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x05589cbbe1cc0357986df6de4031b953819079c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

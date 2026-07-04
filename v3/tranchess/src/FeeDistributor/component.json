@@ -1,31 +1,55 @@
 {
   "component": "FeeDistributor",
   "main_contract": "FeeDistributor",
-  "source_file_count": 15,
-  "deployment_count": 3,
+  "source_file_count": 11,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x00db7b1300b2b24fb9bdf4f661f650a2998e367a",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d8dcec171be8cb32ac9a39f6b024879459b7bb7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbc428f6573827db9773f9e4bc1f5c899c884842c",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x57c6df30436c9f1864536315e157cb999ee20edb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe6e659ad43029e8d89ded5d3ff030ddc5c909cbf",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5bd53b0258c38cbf3e57950697f06021c037eb22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x857486754792f1a8cacfc2c07cb4e227ec20e0e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4ecd920aa06639cf27e817c358d5480dafafb69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe5f4efe076b830f69a6b3bad6005618f86dad5c6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

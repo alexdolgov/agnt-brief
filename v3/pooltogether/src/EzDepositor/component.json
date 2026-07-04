@@ -1,15 +1,31 @@
 {
   "component": "EzDepositor",
   "main_contract": "EzDepositor",
-  "source_file_count": 11,
-  "deployment_count": 1,
+  "source_file_count": 6,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x4e30c0a8cce76940d87ae62eb12f3ac536a996f4",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84882eb46da981d1ad2f154359061942ca1c062f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x68a100a3729fc04ab26fb4c0862df22ceec2f18b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x69fc8095b949c0ff703ead99bf7d6620843c37ef",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

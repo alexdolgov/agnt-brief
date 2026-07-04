@@ -1,0 +1,26 @@
+{
+  "component": "LiquidationFacet-3",
+  "main_contract": "LiquidationFacet",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaa7afce203bc6dc68602d1f1efad9ea9d3ac5e36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5ec1626cf63671bf169fd01d2d3cd7fa5f91e71c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

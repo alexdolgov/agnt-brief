@@ -33,7 +33,7 @@ library SharedStructs {
     }
 
     /// @notice Last used strategy parameters
-    /// @dev Packed across 3 storage slots (bool flags spill into a third slot)
+    /// @dev Efficiently packed into 2 storage slots
     struct StrategyParams {
         address strategy; // 20 bytes
         int24 centerTick; // 3 bytes

@@ -1,0 +1,18 @@
+{
+  "component": "AuctionWithBuyoutLoanLiquidator-2",
+  "main_contract": "AuctionWithBuyoutLoanLiquidator",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xb166ec953fef89c6ee2e39e60fbd49b19cf4c6ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

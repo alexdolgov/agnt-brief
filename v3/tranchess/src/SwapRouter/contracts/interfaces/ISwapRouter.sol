@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity >=0.6.10 <0.8.0;
 
 import "./IStableSwap.sol";
@@ -6,23 +6,21 @@ import "./IStableSwap.sol";
 interface ISwapRouter {
     function getSwap(address baseToken, address quoteToken) external view returns (IStableSwap);
 
-    function getAmountsOut(uint256 amount, address[] memory path)
+    function getAmountsOut(
+        uint256 amount,
+        address[] memory path
+    )
         external
         view
-        returns (
-            uint256[] memory amounts,
-            IStableSwap[] memory swaps,
-            bool[] memory isBuy
-        );
+        returns (uint256[] memory amounts, IStableSwap[] memory swaps, bool[] memory isBuy);
 
-    function getAmountsIn(uint256 amount, address[] memory path)
+    function getAmountsIn(
+        uint256 amount,
+        address[] memory path
+    )
         external
         view
-        returns (
-            uint256[] memory amounts,
-            IStableSwap[] memory swaps,
-            bool[] memory isBuy
-        );
+        returns (uint256[] memory amounts, IStableSwap[] memory swaps, bool[] memory isBuy);
 
     function addLiquidity(
         address baseToken,

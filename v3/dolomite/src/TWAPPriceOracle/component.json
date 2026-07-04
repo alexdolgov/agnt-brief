@@ -1,15 +1,23 @@
 {
   "component": "TWAPPriceOracle",
   "main_contract": "TWAPPriceOracle",
-  "source_file_count": 24,
-  "deployment_count": 1,
+  "source_file_count": 20,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x1093e0e82ec11080d6239538a5d5c60d155af851",
+      "address": "0x7dc900ee1ada0cb1b45c3c10b829682187d5e127",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8ddfa821ec6000e589de93d17b75687c9ebf8b21",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

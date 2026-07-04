@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at moonriver.moonscan.io on 2022-08-01
-*/
-
 // File: contracts/libraries/Math.sol
 
 

@@ -1,0 +1,18 @@
+{
+  "component": "BridgeableTokenP-3",
+  "main_contract": "BridgeableTokenP",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

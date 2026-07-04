@@ -1,0 +1,36 @@
+{
+  "component": "StoneBTC-2",
+  "main_contract": "StoneBTC",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/STONE%20BTC%20-%20SlowMist%20Audit%20Report_en-us.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x094c0e36210634c3cfa25dc11b96b562e0b07624",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c344c6191fee58f0de2604721f596efbc9f7822",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc939bee0e1ccd198a5af5ac1f90ea0b8ee03cd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

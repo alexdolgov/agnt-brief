@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-pragma solidity 0.8.29;
+pragma solidity 0.8.28;
 
 /// @notice Provides a flexible and updatable auth pattern which is completely separate from application logic.
 /// @author Solmate (https://github.com/transmissions11/solmate/blob/main/src/auth/Auth.sol)

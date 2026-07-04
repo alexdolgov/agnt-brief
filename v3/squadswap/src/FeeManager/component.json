@@ -2,7 +2,7 @@
   "component": "FeeManager",
   "main_contract": "FeeManager",
   "source_file_count": 12,
-  "deployment_count": 24,
+  "deployment_count": 25,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -194,6 +194,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xffa78f1a6ba9287aea5311a2c8ff18c484da9c9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa6eb2979d4092567ebe93e491a8e0d8291e2f85",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

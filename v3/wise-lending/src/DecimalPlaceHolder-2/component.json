@@ -1,0 +1,18 @@
+{
+  "component": "DecimalPlaceHolder-2",
+  "main_contract": "DecimalPlaceHolder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa91be51fabba475e495faa2d5467682f0c05f90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -160,6 +160,7 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
 
     /// @inheritdoc IInitCore
     function createPos(uint16 _mode, address _viewer) public virtual nonReentrant returns (uint posId) {
+        _require(_mode != 0, Errors.INVALID_MODE);
         posId = IPosManager(POS_MANAGER).createPos(msg.sender, _mode, _viewer);
         emit CreatePosition(msg.sender, posId, _mode, _viewer);
     }
@@ -176,7 +177,6 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         // get current collaterals in the position
         (address[] memory pools,, address[] memory wLps, uint[][] memory ids,) =
             IPosManager(POS_MANAGER).getPosCollInfo(_posId);
-
         uint16 currentMode = _getPosMode(_posId);
         ModeStatus memory currentModeStatus = _config.getModeStatus(currentMode);
         ModeStatus memory newModeStatus = _config.getModeStatus(_mode);
@@ -195,8 +195,6 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
                 _require(_config.isAllowedForCollateral(_mode, IBaseWrapLp(wLps[i]).lp(ids[i][j])), Errors.INVALID_MODE);
             }
         }
-        // validate max wLp count
-        _validateModeMaxWLpCount(_config, _mode, _posId);
         // get current debts in the position
         uint[] memory shares;
         (pools, shares) = IPosManager(POS_MANAGER).getPosBorrInfo(_posId);
@@ -261,9 +259,7 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         _require(_config.isAllowedForCollateral(mode, IBaseWrapLp(_wLp).lp(_tokenId)), Errors.INVALID_MODE);
         // update collateral on the position
         uint amtColl = IPosManager(POS_MANAGER).addCollateralWLp(_posId, _wLp, _tokenId);
-        // validate max wLp count
-        _validateModeMaxWLpCount(_config, mode, _posId);
-        emit CollateralizeWLp(_posId, _wLp, _tokenId, amtColl);
+        emit CollateralizeWLp(_wLp, _tokenId, _posId, amtColl);
     }
 
     /// @inheritdoc IInitCore
@@ -281,7 +277,7 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         _require(_config.whitelistedWLps(_wLp), Errors.TOKEN_NOT_WHITELISTED);
         // update and take _wLp from position to _to
         uint amtDecoll = IPosManager(POS_MANAGER).removeCollateralWLpTo(_posId, _wLp, _tokenId, _amt, _to);
-        emit DecollateralizeWLp(_posId, _wLp, _tokenId, _to, amtDecoll);
+        emit Decollateralize(_wLp, _posId, _to, amtDecoll);
     }
 
     /// @inheritdoc IInitCore
@@ -366,8 +362,8 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         virtual
         nonReentrant
     {
-        // validate that _pools is sorted and not duplicate
-        _require(AddressArrayLib.isSortedAndNotDuplicate(_pools), Errors.INVALID_FLASHLOAN);
+        // validate _pools and _amts length & validate _pools contain distinct addresses to avoid paying less flash fees
+        _require(_validateFlash(_pools, _amts), Errors.INVALID_FLASHLOAN);
         // check that is not multicall tx
         _require(!isMulticallTx, Errors.LOCKED_MULTICALL);
         uint[] memory balanceBefores = new uint[](_pools.length);
@@ -515,6 +511,7 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         virtual
         returns (bytes memory result)
     {
+        _require(_to != address(this), Errors.INVALID_CALLBACK_ADDRESS);
         // call _to with _data
         return ICallbackReceiver(_to).coreCallback{value: _value}(msg.sender, _data);
     }
@@ -566,6 +563,12 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         isHealthy = getPosHealthCurrent_e18(_posId) >= ONE_E18;
     }
 
+    /// @dev validate flash data
+    function _validateFlash(address[] calldata _pools, uint[] calldata _amts) internal pure returns (bool) {
+        if (_pools.length != _amts.length) return false;
+        return AddressArrayLib.isSortedAndNotDuplicate(_pools);
+    }
+
     /// @dev check that the position health after liquidation does not exceed the threshold
     function _ensurePosHealthAfterLiq(IConfig _config, uint _posId, uint16 _mode) internal {
         uint healthAfterLiquidation_e18 = _config.getMaxHealthAfterLiq_e18(_mode);
@@ -590,13 +593,5 @@ contract InitCore is IInitCore, Multicall, ReentrancyGuardUpgradeable, UnderACM 
         _require(vars.health_e18 < ONE_E18, Errors.POSITION_HEALTHY);
 
         (vars.repayToken, vars.repayAmt) = _repay(vars.config, vars.mode, _posId, _poolToRepay, _repayShares);
-    }
-
-    /// @dev validate mode max wlp count internal logic
-    function _validateModeMaxWLpCount(IConfig _config, uint16 _mode, uint _posId) internal view {
-        _require(
-            IPosManager(POS_MANAGER).getPosCollWLpCount(_posId) <= _config.getModeMaxCollWLpCount(_mode),
-            Errors.MAX_COLLATERAL_COUNT_REACHED
-        );
     }
 }

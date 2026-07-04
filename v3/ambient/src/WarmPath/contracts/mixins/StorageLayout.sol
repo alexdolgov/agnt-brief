@@ -114,13 +114,6 @@ contract StorageLayout {
         bool atomicLiq_;
     }
 
-    struct RangePosition72 {
-        uint128 liquidity_;
-        uint72 feeMileage_;
-        uint32 timestamp_;
-        bool atomicLiq_;
-    }
-
     struct AmbientPosition {
         uint128 seeds_;
         uint32 timestamp_;
@@ -155,12 +148,6 @@ contract StorageLayout {
 
     address treasury_;
     uint64 treasuryStartTime_;
-
-    // Since take rate is represented in 1/256, this represents a maximum possible take 
-    // rate of 50%.
-    uint8 MAX_TAKE_RATE = 128;
-
-    mapping(bytes32 => RangePosition72) internal positions72_;
 }
 
 /* @notice Contains the storage or storage hash offsets of the fields and sidecars
@@ -177,14 +164,11 @@ library CrocSlots {
     uint constant public KO_PIVOT_SLOT = 65539;
     uint constant public KO_MERKLE_SLOT = 65540;
     uint constant public KO_POS_SLOT = 65541;
-    uint constant public POOL_TEMPL_SLOT = 65544;
-    uint constant public POOL_PARAM_SLOT = 65545;
     uint constant public FEE_MAP_SLOT = 65548;
     uint constant public POS_MAP_SLOT = 65549;
     uint constant public AMB_MAP_SLOT = 65550;
     uint constant public CURVE_MAP_SLOT = 65551;
     uint constant public BAL_MAP_SLOT = 65552;
-    uint constant public POS_MAP_SLOT_72 = 65554;
 
         
     // The slots of the currently attached sidecar proxy contracts. These are set by
@@ -193,23 +177,14 @@ library CrocSlots {
     // a pre-existing proxy sidecar.
     uint16 constant BOOT_PROXY_IDX = 0;
     uint16 constant SWAP_PROXY_IDX = 1;
-    uint16 constant LP_PROXY_IDX = 128;
+    uint16 constant LP_PROXY_IDX = 2;
     uint16 constant COLD_PROXY_IDX = 3;
-    uint16 constant LONG_PROXY_IDX = 130;
-    uint16 constant MICRO_PROXY_IDX = 131;
+    uint16 constant LONG_PROXY_IDX = 4;
+    uint16 constant MICRO_PROXY_IDX = 5;
     uint16 constant MULTICALL_PROXY_IDX = 6;
     uint16 constant KNOCKOUT_LP_PROXY_IDX = 7;
     uint16 constant FLAG_CROSS_PROXY_IDX = 3500;
     uint16 constant SAFE_MODE_PROXY_PATH = 9999;
-
-    // Used as proxy contracts by previous deployments. These slots should not be re-used
-    // to preserve backwards compatibility.
-    uint16 constant LP_PROXY_LEGACY_IDX = 2;
-    uint16 constant LONG_PROXY_LEGACY_IDX = 4;
-    uint16 constant MICRO_PROXY_LEGACY_IDX = 5;
-
-    // Blast Extension proxy contract
-    uint16 constant BLAST_PROXY_INDEX = 24648;
 }
 
 // Not used in production. Just used so we can easily check struct size in hardhat.

@@ -1,6 +1,6 @@
 # hypersurface — deployments
 
-321 verified deployment(s) across 68 component(s).
+332 verified deployment(s) across 74 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,6 +19,7 @@
 | base | `0x1111111111166b7fe7bd91427724b487980afc69` | Zora | impl | live | no |
 | base | `0x125d3eeb43f99f2d1450f3db38e4ddda03742fe8` | Multicall | impl | inactive | no |
 | base | `0x12c16c4168e7d6d6ceae7ad8be773501a8a30546` | VaultManager | impl | live | no |
+| base | `0x135fedc0159391ac8e3f0bf88d8fe319086679d2` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0x13c7e59312903787f0b9f71ab4adeced257de37a` | VaultManager | impl | inactive | no |
 | base | `0x141d8b7f279785424070dd88a5bfc4c97a2a7257` | Multicall | impl | inactive | no |
 | base | `0x142f39471d2c322d447bc6daef0f36aa7dbcb76c` | MamoStrategyRegistry | impl | live | no |
@@ -35,7 +36,7 @@
 | base | `0x1a110bba13a1f16cca4b79758bd39290f29de82d` | ERC1967Upgrade | proxy | live | no |
 | base | `0x1a172d9ba45ed78a41855a9918a9218cd898d287` | PriceAggregator | impl | live | no |
 | base | `0x1b8b7deaaf29b8fcdcf904a26ea4d83e54508f97` | MamoStrategyRegistry | impl | live | no |
-| base | `0x1c69cc8be2b29225b74743752a721ca21d0203a5` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0x1c69cc8be2b29225b74743752a721ca21d0203a5` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | base | `0x1d1a3c6420d949249b7e663a39800649b2014ee2` | SlippagePriceChecker | impl | inactive | no |
 | base | `0x1d75c4dda3d28b4f2ab634c439e495cf211a216f` | Trig | impl | inactive | no |
 | base | `0x1ddaef2ead56cc4544c35d6957ba4e948f57310c` | ERC1967Proxy | proxy | live | no |
@@ -69,7 +70,7 @@
 | base | `0x31093641ac0a6930f5c0909c4540d295051188a4` | MAMO | impl | inactive | no |
 | base | `0x311935cd80b76769bf2ecc9d8ab7635b2139cf82` | CrossChainERC20 | impl | live | no |
 | base | `0x31b83d13c2a4c7fc034206ee8b89ada3b73e47f9` | USDCStrategyFactory | impl | live | no |
-| base | `0x3409ddb621ab0f6dcc82d656c4a4bc8c0d1edbe4` | HedgedPoolLib | impl | live | yes |
+| base | `0x3409ddb621ab0f6dcc82d656c4a4bc8c0d1edbe4` | HedgedPoolLib-2 | impl | live | yes |
 | base | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | Gauge | impl | live | no |
 | base | `0x373faea72a86bd0eb33ef08e01c5918a95919349` | TradingCallbacks | impl | inactive | no |
 | base | `0x3a93922fd64bac36ba63ebc52fe982bb7ce6d64d` | PairStorage-2 | impl | live | no |
@@ -80,6 +81,7 @@
 | base | `0x413c38b68fe730f2bc30d8cde965967d1c7bc599` | SlippagePriceChecker | impl | inactive | no |
 | base | `0x420dd381b31aef6683db6b902084cb0ffece40da` | PoolFactory | proxy | inactive | no |
 | base | `0x4263f0725962909899cb8a45d27f63744deea20c` | TradingCallbacks | impl | inactive | no |
+| base | `0x433cf96e9245aa1b576b564effd3054b0533f943` | HedgedPool-2 | impl | live | yes |
 | base | `0x433cf9e346b8d15b4f9269c4c75144398262db49` | PairStorage-3 | impl | live | no |
 | base | `0x4417b1f0e50af737ab04b109dee4041d108dfc00` | USDCStrategyFactory | impl | live | no |
 | base | `0x44914408af82bc9983bbb330e3578e1105e11d4e` | Trading | proxy | live | no |
@@ -94,7 +96,7 @@
 | base | `0x4859a4dfa2f787f8b9acec5d4ac8e48bf43c6f6e` | PairInfos | impl | live | no |
 | base | `0x488eef7561e97f4f8186f30cf7dd502b28bbc67e` | ERC20MoonwellMorphoStrategy | impl | live | no |
 | base | `0x4ab200dca5e3c594fa7ab98af67b46b3c5ada864` | VaultManager | impl | live | no |
-| base | `0x4c5a1728585cf5692c477d874db4c83012ba1dbf` | HedgedPoolLib | impl | live | yes |
+| base | `0x4c5a1728585cf5692c477d874db4c83012ba1dbf` | HedgedPoolLib-2 | impl | live | yes |
 | base | `0x4dadd07575aebd1204ff566b7d90b4af9f0f8a04` | PairStorage | impl | live | no |
 | base | `0x4efea74ffd48cfa37dd7282df0ee4b22f08e74f9` | PriceAggregator | impl | live | no |
 | base | `0x4fecdb9bfcd385771fde2b802f732ab71a7a523e` | ERC1967Proxy | proxy | live | no |
@@ -125,6 +127,7 @@
 | base | `0x6588285ff85032cb2a1a0f404e405e80cd3748b4` | Trading | impl | inactive | no |
 | base | `0x65b3cc065991fde0a58640c54fcc22ddcda5bc39` | PairStorage | impl | live | no |
 | base | `0x680149878b2bc3f5c0db4b4d62b9b8b879fc421c` | TradingCallbacks | impl | live | no |
+| base | `0x68893915f202e5da2ef01493463c50b2f68df56d` | HedgedPool-3 | proxy | live | yes |
 | base | `0x689e1e8026a17a80e5c539cad43eb9982cbec032` | ERC20MoonwellMorphoStrategy | impl | live | no |
 | base | `0x68e0dcae2c3cd40f91c18152f2c2fd84c43fd08f` | PairStorage | impl | live | no |
 | base | `0x68efd623f47acf218f5c2063f5a4fb2d2eab7bb0` | SlippagePriceChecker | proxy | live | no |
@@ -144,6 +147,7 @@
 | base | `0x7240519388acd7632ff38753f514fcc993abed09` | MamoStakingRegistry-3 | impl | live | no |
 | base | `0x7300b37dfdfab110d83290a29dfb31b1740219fe` | Votes | impl | live | no |
 | base | `0x7597418ec9f9630773b841da05af7a8b05b6fe29` | MamoStrategyRegistry | impl | live | no |
+| base | `0x770eb2941045f7f7d675f6b522d142df2e078928` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0x7855b0821401ab078f6cf457deafae775ff6c7a3` | MultiRewards | impl | live | no |
 | base | `0x79c1921fc8cd076415cbd1ebb330629f4ec7bbd1` | BurnAndEarn | impl | live | no |
 | base | `0x79c50438e00ad5e9a1bde2ea1acd8eb1aa6050c8` | Trading | impl | live | no |
@@ -178,7 +182,7 @@
 | base | `0x9229b667dde658d5c98404a290cab4233b9e71e4` | TradingStorage | impl | live | no |
 | base | `0x9294ea619d273a7a9d9daca79472a18d03ce6852` | MAMO2 | impl | inactive | no |
 | base | `0x9323cb21d72e9409192d12b2fbac88c88c2ad489` | PairInfos | impl | inactive | no |
-| base | `0x93c08dac9b36c28e6065c4ef3d7bdc3dc76663ca` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| base | `0x93c08dac9b36c28e6065c4ef3d7bdc3dc76663ca` | TransparentUpgradeableProxy-3 | impl | inactive | no |
 | base | `0x93f547dec160c65c19c993b0aad6eb4b3c587ce4` | PriceAggregator | impl | live | no |
 | base | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | EIP712 | impl | live | no |
 | base | `0x94c012a23a8a65a6f40608da30534a46a433f410` | ProtocolGovernor | impl | inactive | no |
@@ -216,9 +220,11 @@
 | base | `0xb5c87722a0d4f285ba117e8aa11d80beb34d65d0` | MamoStrategyRegistry | impl | live | no |
 | base | `0xb85e0ffc5f7799170724c6220209826e9854194c` | StakedToken | impl | live | no |
 | base | `0xb916e6847de484bdb37e16e7a81e695ffe4ae5c3` | TradingStorage | impl | live | no |
+| base | `0xbac1bce3f9e1e2d689071cb86290169d9607fac7` | HedgedPoolLib | impl | live | yes |
 | base | `0xbb42bcf182c3734286f9510cb2a5462c71e5fef7` | SlippagePriceChecker | impl | inactive | no |
 | base | `0xbd958a04fcf91e7a6a72e0918646fbd4389c70b0` | Trading | impl | inactive | no |
 | base | `0xbe4c3bdbd45cf79ba21e5396e1d0c8ff29073be5` | PriceAggregator | impl | inactive | no |
+| base | `0xbec3a272dbe9388dc798074166c0d4338c848081` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0xbeddace886664ad29fb1c1929cd4cf8ab2e2684f` | PriceAggregator | impl | live | no |
 | base | `0xbf8d255830e71f071dc4bf06f8db8bcfeb2542b3` | PairStorage | impl | inactive | no |
 | base | `0xbfd59caa3faf7cabbfa3ee1776a9fd3853c6a589` | MAMO | impl | inactive | no |
@@ -231,6 +237,7 @@
 | base | `0xc3769e440e3515ba374372837f76aafdc4fba26d` | Tranche | impl | live | no |
 | base | `0xc40153ecbdea90c4e0a409f38f4a50e58f5e7eda` | Multicall | proxy | live | no |
 | base | `0xc4fdf7a922df734363f7cea253a9aecfddc70e85` | MamoStrategyRegistry | impl | live | no |
+| base | `0xc738e6c690931aaa4aad73d214e6c76349458414` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0xc90f6d74f81cb551c19d138b50456c644f9b3284` | FeeSplitter | impl | live | no |
 | base | `0xcb28068e0f6cf42dc480fce67ef6630391156ad8` | Trading | impl | inactive | no |
 | base | `0xce3137a3ce65f6bae20f44cc4877419f823c6030` | USDCStrategyFactory | impl | live | no |
@@ -254,6 +261,7 @@
 | base | `0xd973b86d336ff55198d4d33f504a6e77306d9783` | Trading | impl | inactive | no |
 | base | `0xdb7b172054aeecb5c6bc3f988bc19528318cfbfb` | PairInfos | impl | live | no |
 | base | `0xdbff9642962cc9a2d3fe9fa1960846ad88e7760b` | TradingStorage | impl | live | no |
+| base | `0xdd1095e98957b6549b65db6801ca71ad90025751` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0xdd6d9134268feb42c226d24ac0711750af068673` | Tranche | impl | live | no |
 | base | `0xdf85bfd38c6694fbffc67a60f5a09d9932b58df9` | PairInfos | impl | live | no |
 | base | `0xe0aa215086ddf76098fe84d1ea5b71eacc775942` | Multicall | impl | live | no |
@@ -274,6 +282,7 @@
 | base | `0xe8ae5603b0fe6265592cbfd36bb596e223e966d8` | TradingStorage | impl | inactive | no |
 | base | `0xe9992487b2ee03b7a91241695a58e0ef3654643e` | VeArtProxy | impl | live | no |
 | base | `0xea4d74a452f89d7a8fd9e4bc2c1edeb57015a44e` | USDCStrategyFactory | impl | live | no |
+| base | `0xea63abd2ce0e3a4e353ed3a8323007ec9407dfa2` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter | impl | live | no |
 | base | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | VotingEscrow | impl | live | no |
 | base | `0xec2fa154343958a8912a2e2bccdcdfd74362dfa3` | MamoStakingRegistry-2 | impl | live | no |
@@ -310,6 +319,7 @@
 | chain-999 | `0x25dd9eaae2e0b118a2cefdd229233654840ba7a0` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0x2ccf2a0bd960b849e5bf4502e114acb4332d282c` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0x2ef31a3c848e0789feefc56377b46db63329d0c5` | HedgedPool | impl | live | yes |
+| chain-999 | `0x384dfc8d5e0a6256a13fa257415563f219ea1a71` | HedgedPoolLib | impl | live | yes |
 | chain-999 | `0x4a400778ddd7331a4f716f062eda4f66ef3bbb51` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0x596d60051bbc2181944fd4799c4f4d598c95144e` | ProxyAdmin | impl | live | no |
 | chain-999 | `0x5d2cbe54e4a27fdbffaf8de29b95c584c910269d` | MMTradeHelper | proxy | live | no |
@@ -321,23 +331,13 @@
 | chain-999 | `0x9749a02658008b814eee4c123e8b18a2055ab298` | HedgedPool | impl | live | yes |
 | chain-999 | `0xa8c9403bdf554c047ad91a448ddb24208ab5313c` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0xd347d9f5f0f4bb25a2a40fde1207e81b406c6266` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-999 | `0xe16f4b4204534ca3bdb6b817c841d1c938d1f48b` | HedgedPoolLib-3 | impl | live | yes |
 | chain-999 | `0xeea2e4459b4065be147d7f060f4b331b3c95ed61` | Whitelist | impl | live | yes |
 | chain-999 | `0xf1de5b1982e86595724d29346a95a28d90b5fea0` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0xf6d788dd55738f82d03f97597660221ca8b4c98d` | OtokenFactory | impl | live | yes |
 | chain-999 | `0xf82062a5ce27c4ee6fb4b5e7b4abeeeb3b156aa6` | TransparentUpgradeableProxy | proxy | live | no |
 
-## Source unavailable (12)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- base `0x135fedc0159391ac8e3f0bf88d8fe319086679d2`
-- base `0x433cf96e9245aa1b576b564effd3054b0533f943`
-- base `0x68893915f202e5da2ef01493463c50b2f68df56d`
-- base `0x770eb2941045f7f7d675f6b522d142df2e078928`
 - base `0x9aba7a212d479ed1678d903ba851778bc2fb3103`
-- base `0xbac1bce3f9e1e2d689071cb86290169d9607fac7`
-- base `0xbec3a272dbe9388dc798074166c0d4338c848081`
-- base `0xc738e6c690931aaa4aad73d214e6c76349458414`
-- base `0xdd1095e98957b6549b65db6801ca71ad90025751`
-- base `0xea63abd2ce0e3a4e353ed3a8323007ec9407dfa2`
-- chain-999 `0x384dfc8d5e0a6256a13fa257415563f219ea1a71`
-- chain-999 `0xe16f4b4204534ca3bdb6b817c841d1c938d1f48b`

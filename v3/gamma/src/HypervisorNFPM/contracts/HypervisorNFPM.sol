@@ -12,7 +12,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
 import "@cryptoalgebra/integral-periphery/contracts/interfaces/INonfungiblePositionManager.sol";
 import "@cryptoalgebra/integral-farming/contracts/interfaces/IFarmingCenter.sol";
-import "./interfaces/IIncentiveMaker.sol";
+import "@cryptoalgebra/integral-farming/contracts/interfaces/IAlgebraEternalFarming.sol";
+import "@cryptoalgebra/integral-farming/contracts/base/IncentiveKey.sol";
 import "./interfaces/IHypervisorState.sol";
 import "./interfaces/IMultiFeeDistribution.sol";
 
@@ -32,7 +33,6 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
     IAlgebraPool public pool;
     INonfungiblePositionManager public nonfungiblePositionManager;
     IFarmingCenter public farmingCenter;
-    IIncentiveMaker public incentiveMaker;
     IMultiFeeDistribution public receiver;
     IncentiveKey public currentIncentiveKey;
 
@@ -41,7 +41,7 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
     IERC20 public rewardToken;
     IERC20 public bonusRewardToken;
 
-    uint8 public fee = 15;
+    uint8 public fee = 1;
     int24 public tickSpacing;
 
     int24 public baseLower;
@@ -60,9 +60,8 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
 
     constructor(
         address _pool,
-        address _nonfungiblePositionManager,  
-        address _incentiveMaker,  
-        address _receiver, 
+        address _nonfungiblePositionManager,
+        address _receiver,
         string memory name,
         string memory symbol
     ) ERC20(name, symbol) ERC20Permit(name) {
@@ -76,13 +75,17 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
         pool = IAlgebraPool(_pool);
         nonfungiblePositionManager = INonfungiblePositionManager(_nonfungiblePositionManager);
         farmingCenter = IFarmingCenter(nonfungiblePositionManager.farmingCenter());
-        incentiveMaker = IIncentiveMaker(_incentiveMaker);
         receiver = IMultiFeeDistribution(_receiver);
 
-        // Set initial incentive maker and reward tokens
-        if (_incentiveMaker != address(0)) {
-            incentiveMaker = IIncentiveMaker(_incentiveMaker);
-            currentIncentiveKey = incentiveMaker.poolToKey(_pool);
+        // Get incentive key from farming center
+        (
+            currentIncentiveKey.rewardToken,
+            currentIncentiveKey.bonusRewardToken,
+            currentIncentiveKey.pool,
+            currentIncentiveKey.nonce
+        ) = farmingCenter.eternalFarming().incentiveKeys(_pool);
+
+        if (address(currentIncentiveKey.rewardToken) != address(0)) {
             rewardToken = IERC20(address(currentIncentiveKey.rewardToken));
             bonusRewardToken = IERC20(address(currentIncentiveKey.bonusRewardToken));
         }
@@ -522,8 +525,14 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
             return;
         }
 
-        // Get the key from incentive maker
-        IncentiveKey memory key = incentiveMaker.poolToKey(address(pool));
+        // Get the incentive key from eternal farming
+        IncentiveKey memory key;
+        (
+            key.rewardToken,
+            key.bonusRewardToken,
+            key.pool,
+            key.nonce
+        ) = farmingCenter.eternalFarming().incentiveKeys(address(pool));
 
         // Check if there's an existing deposit and if its incentive is deactivated
         bytes32 incentiveId = keccak256(abi.encode(key));
@@ -543,7 +552,7 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
             }
 
         // Get position information to check width
-        (,,,,int24 tickLower,int24 tickUpper,,,,,) = nonfungiblePositionManager.positions(tokenId);
+        (,,,,,int24 tickLower,int24 tickUpper,,,,,) = nonfungiblePositionManager.positions(tokenId);
         
         // Get incentive parameters
         (,,, uint24 minimalPositionWidth,,) = farmingCenter.eternalFarming().incentives(incentiveId);
@@ -678,24 +687,28 @@ contract HypervisorNFPM is IHypervisorState, Ownable, Pausable, ERC20Permit, Ree
         farmingCenter = IFarmingCenter(_farmingCenter);
     }
 
-    /// @notice Update incentive maker and handle reward token changes
-    /// @param _incentiveMaker New incentive maker address
-    function updateIncentiveMaker(address _incentiveMaker) external onlyOwner {
-        // Update incentive maker and get new key
-        incentiveMaker = IIncentiveMaker(_incentiveMaker);
-        IncentiveKey memory newKey = incentiveMaker.poolToKey(address(pool));
-        
-        // Update tokens and key
-        rewardToken = IERC20(address(newKey.rewardToken));
-        bonusRewardToken = IERC20(address(newKey.bonusRewardToken));
-        currentIncentiveKey = newKey;
-        
-        emit IncentiveKeyUpdated(
-            address(newKey.rewardToken),
-            address(newKey.bonusRewardToken),
-            address(newKey.pool),
-            newKey.nonce
-        );
+    /// @notice Manually set incentive key for farming
+    /// @param _rewardToken The reward token address
+    /// @param _bonusRewardToken The bonus reward token address
+    /// @param _pool The pool address (must match current pool)
+    /// @param _nonce The incentive nonce
+    function setIncentiveKey(
+        address _rewardToken,
+        address _bonusRewardToken,
+        address _pool,
+        uint256 _nonce
+    ) external onlyOwner {
+        require(_pool == address(pool));
+
+        currentIncentiveKey = IncentiveKey({
+            rewardToken: IERC20Minimal(_rewardToken),
+            bonusRewardToken: IERC20Minimal(_bonusRewardToken),
+            pool: IAlgebraPool(_pool),
+            nonce: _nonce
+        });
+
+        rewardToken = IERC20(address(_rewardToken));
+        bonusRewardToken = IERC20(address(_bonusRewardToken));
     }
 
     // Instead of separate functions for each NFT ID

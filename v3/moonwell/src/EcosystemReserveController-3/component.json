@@ -1,18 +1,18 @@
 {
   "component": "EcosystemReserveController-3",
   "main_contract": "EcosystemReserveController",
-  "source_file_count": 5,
+  "source_file_count": 7,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0xca889f40aae37fff165bccf69aef1e82b5c511b9",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1d776f9dc5fb96a2b60862973d90418d684dee1e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

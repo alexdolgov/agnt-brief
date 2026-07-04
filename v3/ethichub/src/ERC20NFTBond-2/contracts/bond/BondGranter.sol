@@ -74,14 +74,6 @@ abstract contract BondGranter is Initializable, InterestParameters {
         return principal + Math.mulDiv(principal, interest * timeElapsed, 100 ether);
     }
 
-    function _afterBondExited(uint256 tokenId, uint256 principal, address beneficiary) internal virtual {}
-
-    /**
-     * ////// [v1.0, v1.1, v1.2, v2.0, v2.1, v2.2, v2.2.1, v2.2.2] //////
-     * 1 bonds
-     * 49 __gap
-     * 50 (deployed with 50 store gaps)
-     */
     uint256[49] private __gap;
 
 }

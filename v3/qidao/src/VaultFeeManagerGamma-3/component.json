@@ -1,0 +1,18 @@
+{
+  "component": "VaultFeeManagerGamma-3",
+  "main_contract": "VaultFeeManagerGamma",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdcc1c692110e0e53bd57d5b2234867e9c5b98158",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

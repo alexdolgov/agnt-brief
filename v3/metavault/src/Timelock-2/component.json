@@ -1,0 +1,18 @@
+{
+  "component": "Timelock-2",
+  "main_contract": "Timelock",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb0e71da1b27ea768b0c178479c59b2d03d5009ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

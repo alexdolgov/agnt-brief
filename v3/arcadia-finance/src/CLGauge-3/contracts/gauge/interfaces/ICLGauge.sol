@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity =0.7.6;
 
-import {INonfungiblePositionManager} from "contracts/periphery/interfaces/INonfungiblePositionManager.sol";
 import {IVoter} from "contracts/core/interfaces/IVoter.sol";
-import {ICLPool} from "contracts/core/interfaces/ICLPool.sol";
+import {ICLPool} from "contracts/gauge/interfaces/ICLPool.sol";
 import {ICLGaugeFactory} from "contracts/gauge/interfaces/ICLGaugeFactory.sol";
+import {INonfungiblePositionManager} from "contracts/gauge/interfaces/INonfungiblePositionManager.sol";
 
 interface ICLGauge {
     event NotifyReward(address indexed from, uint256 amount);
@@ -12,6 +12,7 @@ interface ICLGauge {
     event Withdraw(address indexed user, uint256 indexed tokenId, uint128 indexed liquidityToStake);
     event ClaimFees(address indexed from, uint256 claimed0, uint256 claimed1);
     event ClaimRewards(address indexed from, uint256 amount);
+    event EarlyWithdrawPenalty(address indexed from, uint256 indexed tokenId, uint256 penalty);
 
     /// @notice NonfungiblePositionManager used to create nfts this gauge accepts
     function nft() external view returns (INonfungiblePositionManager);
@@ -25,6 +26,9 @@ interface ICLGauge {
     /// @notice Address of the factory that created this gauge
     function gaugeFactory() external view returns (ICLGaugeFactory);
 
+    /// @notice Address of the minter, cached from gaugeFactory on initialization
+    function minter() external view returns (address);
+
     /// @notice Address of the FeesVotingReward contract linked to the gauge
     function feesVotingReward() external view returns (address);
 
@@ -33,11 +37,6 @@ interface ICLGauge {
 
     /// @notice Current reward rate of rewardToken to distribute per second
     function rewardRate() external view returns (uint256);
-
-    /// @notice Returns the amount of emissions deposited into a gauge in a given epoch
-    /// @param _epochStart The start of the epoch to view the emissions for
-    /// @return The emissions distributed to the gauge in the given epoch
-    function rewardsByEpoch(uint256 _epochStart) external view returns (uint256);
 
     /// @notice Claimable rewards by tokenId
     function rewards(uint256 tokenId) external view returns (uint256);
@@ -53,9 +52,6 @@ interface ICLGauge {
 
     /// @notice Cached amount of fees generated from the Pool linked to the Gauge of token1
     function fees1() external view returns (uint256);
-
-    /// @notice Cached address of WETH9
-    function WETH9() external view returns (address);
 
     /// @notice Cached address of token0, corresponding to token0 of the pool
     function token0() external view returns (address);
@@ -75,13 +71,15 @@ interface ICLGauge {
     /// @notice To provide compatibility support with the old voter
     function isPool() external view returns (bool);
 
-    /// @notice Checks whether the gauge supports payments in Native tokens
-    function supportsPayable() external view returns (bool);
-
     /// @notice Returns the rewardGrowthInside of the position at the last user action (deposit, withdraw, getReward)
     /// @param tokenId The tokenId of the position
     /// @return The rewardGrowthInside for the position
     function rewardGrowthInside(uint256 tokenId) external view returns (uint256);
+
+    /// @notice Returns the timestamp at which a position was deposited
+    /// @param tokenId The tokenId of the position
+    /// @return The deposit timestamp for the position
+    function depositTimestamp(uint256 tokenId) external view returns (uint256);
 
     /// @notice Called on gauge creation by CLGaugeFactory
     /// @param _pool The address of the pool

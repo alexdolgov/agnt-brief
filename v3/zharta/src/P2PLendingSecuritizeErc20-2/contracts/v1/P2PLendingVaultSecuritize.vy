@@ -19,16 +19,12 @@ interface Vault:
     def withdraw(amount: uint256, wallet: address): nonpayable
     def withdrawable_balance() -> uint256: view
     def withdraw_funds(payment_token: address, amount: uint256): nonpayable
-    def transfer_funds(payment_token: address, amount: uint256, wallet: address): nonpayable
 
-struct DsTokenAmountResult:
-    ds_token_amount: uint256
-    rate: uint256
-    fee: uint256
 
 interface SecuritizeSwap:
-    def calculateDsTokenAmount(_stableCoinAmount: uint256) -> DsTokenAmountResult: view
-    def swap(_liquidityAmount: uint256, _minOutAmount: uint256): nonpayable
+    def calculateDsTokenAmount(_stableCoinAmount: uint256) -> (uint256, uint256): view
+    def calculateStableCoinAmount(_dsTokenAmount: uint256) -> uint256: view
+    def buy(_dsTokenAmount: uint256, _maxStableCoinAmount: uint256): nonpayable
 
 
 interface SecuritizeDSToken:
@@ -40,7 +36,7 @@ interface P2PLendingContract:
 implements: Vault
 
 
-VERSION: public(constant(String[30])) = "P2PLendingVaultSecur.20260310"
+VERSION: public(constant(String[30])) = "P2PLendingVaultSecur.20251211"
 
 # Structs
 
@@ -185,47 +181,28 @@ def withdraw_funds(payment_token: address, amount: uint256):
 
 
 @external
-def transfer_funds(payment_token: address, amount: uint256, wallet: address):
-    """
-    @notice Transfer specified funds from the vault to a specified wallet.
-    @dev Transfers the specified amount of payment tokens from the vault to the specified wallet.
-    @param payment_token The address of the payment token to withdraw.
-    @param amount The amount of tokens to withdraw.
-    @param wallet The address of the wallet to which tokens will be transferred.
-    """
-
-    assert self._check_user(self.caller), "unauthorized"
-    if amount > 0:
-        assert extcall IERC20(payment_token).transfer(wallet, amount), "transfer failed"
-
-
-@external
-def buy(payment_token: address, min_ds_token_amount: uint256, stable_coin_amount: uint256):
+def buy(payment_token: address, ds_token_amount: uint256, max_stable_coin_amount: uint256):
     """
     @notice Buy DS tokens using stable coins via the SecuritizeSwap contract.
     @dev Approves the SecuritizeSwap contract to spend stable coins and executes the buy operation.
-    @param min_ds_token_amount The minimum amount of DS tokens to receive.
-    @param stable_coin_amount The amount of stable coins to spend.
+    @param ds_token_amount The amount of DS tokens to buy.
+    @param max_stable_coin_amount The maximum amount of stable coins to spend.
     """
 
     assert self._check_user(self.owner), "unauthorized"
 
     securitize_swap_contract: address = staticcall SecuritizeDSToken(self.token).getDSService(1<<14)
 
-    ds_token_amount: DsTokenAmountResult = staticcall SecuritizeSwap(securitize_swap_contract).calculateDsTokenAmount(stable_coin_amount)
-    assert ds_token_amount.ds_token_amount >= min_ds_token_amount, "ds token amount lt min"
-
     initial_balance: uint256 = staticcall IERC20(payment_token).balanceOf(self)
-    assert extcall IERC20(payment_token).transferFrom(msg.sender, self, stable_coin_amount), "transferFrom failed"
-    extcall IERC20(payment_token).approve(securitize_swap_contract, stable_coin_amount)
-    extcall SecuritizeSwap(securitize_swap_contract).swap(stable_coin_amount, min_ds_token_amount)
+    extcall IERC20(payment_token).transferFrom(msg.sender, self, max_stable_coin_amount)
+    extcall IERC20(payment_token).approve(securitize_swap_contract, max_stable_coin_amount)
+    extcall SecuritizeSwap(securitize_swap_contract).buy(ds_token_amount, max_stable_coin_amount)
 
-    self.pending_transfers[self.owner] += ds_token_amount.ds_token_amount
-    self.pending_transfers_total += ds_token_amount.ds_token_amount
+    self.pending_transfers[self.owner] += ds_token_amount
+    self.pending_transfers_total += ds_token_amount
 
     remaining_balance: uint256 = staticcall IERC20(payment_token).balanceOf(self)
-    if remaining_balance > initial_balance:
-        extcall IERC20(payment_token).transfer(msg.sender, remaining_balance - initial_balance)
+    extcall IERC20(payment_token).transfer(msg.sender, remaining_balance - initial_balance)
 
 @internal
 def _check_user(user: address) -> bool:

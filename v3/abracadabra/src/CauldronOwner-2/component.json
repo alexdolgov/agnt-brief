@@ -1,0 +1,50 @@
+{
+  "component": "CauldronOwner-2",
+  "main_contract": "CauldronOwner",
+  "source_file_count": 12,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x358a429f2fe8605f895d70480c51950a56cf3289",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x6335163c8faee040ac1f9a4a7fcf6182ed6caae4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x635693f0d3ff2eeb95d19e680ed5fbecc5e7d3be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x8e534c5d52c921dbd6debc56503cf0e2dce6d534",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x9b0f7675e7f0246bbced0a352194026ed2ff5fd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

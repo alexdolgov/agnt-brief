@@ -1,19 +1,11 @@
 {
   "component": "ZeroBalanceFuse",
   "main_contract": "ZeroBalanceFuse",
-  "source_file_count": 6,
-  "deployment_count": 5,
+  "source_file_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3aae99dfdf99bf86c400b618f470f1d2de94ee51",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
@@ -29,14 +21,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb5c14b4c741391d5625a56f70049ab2d720be9c9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
     },
     {
       "chain": "ethereum",

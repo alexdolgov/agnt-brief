@@ -1,18 +1,18 @@
 {
   "component": "VNXDGR-3",
   "main_contract": "VNXDGR",
-  "source_file_count": 22,
+  "source_file_count": 3,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x0bd93484ca448205ed78f77b2de7596a49a910eb",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c17d67706423735b8bbf5b234d63b872bd584c4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

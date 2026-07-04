@@ -1,0 +1,26 @@
+{
+  "component": "UpgradeableBeacon-5",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe5e30e97449d10ddb8af57bdf2b37312f4e78443",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe632aa7dd9b3808fcac0944e05fc5105af32e456",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

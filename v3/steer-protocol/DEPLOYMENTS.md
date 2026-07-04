@@ -1,6 +1,6 @@
 # steer-protocol — deployments
 
-97 verified deployment(s) across 49 component(s).
+105 verified deployment(s) across 52 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -62,10 +62,13 @@
 | arbitrum | `0xd778a415a3ab81ef27da61218c71a5f31a4d10be` | ERC1155AdminMinter | impl | live | no |
 | arbitrum | `0xd964811233b8a0185d3c93664df82136c80d1bb2` | StrategyRegistry | proxy | live | yes |
 | arbitrum | `0xdca3251ebe8f85458e8d95813bcb816460e4bef1` | WhitelistedSingleLiquidityManager | impl | live | yes |
+| arbitrum | `0xe1c56f99a459ed47b629f3d818bcc84826bced66` | BaseLiquidityManager-2 | proxy | live | yes |
 | arbitrum | `0xe868427c366ba8f1037b20faafe7f3da3bfe8e68` | CamelotWhitelistedMultiLiquidityManager | impl | inactive | no |
+| arbitrum | `0xf4de4180829272ae5f69acacf820f4f7d547513b` | Proxy-2 | impl | live | yes |
 | arbitrum | `0xf71bb63b641031150220f84fa0326f851ecb3d30` | QuoterV2 | impl | inactive | no |
 | arbitrum | `0xff46e1b60dd9de89aa04902d5c3c5ca01f8576a4` | Staking | impl | live | no |
 | base | `0x00d0cc8db826da3f68b0f645acc7785f917aaff8` | BaseLiquidityManager | impl | live | yes |
+| base | `0x07536e7fbc498bd886d393fb693e71c8c4e45b97` | Staking | impl | live | no |
 | base | `0x09eb271b444d1db7163c8555919de85b20be7d1d` | WhitelistRegistry | impl | inactive | yes |
 | base | `0x116dba5dce9ccda828218b7eb46406810632014c` | Proxy | proxy | live | yes |
 | base | `0x1578228d5c62e2705aee5ba1debd6d9a68830189` | BasexBaseLiquidityManager | impl | inactive | no |
@@ -80,19 +83,23 @@
 | base | `0x391cf3047db983cab8dd95b16c4e6c3918d72d23` | QuickSwapIntegralBaseLiquidityManager | impl | inactive | no |
 | base | `0x3985abe504a085c88621005c484ffed9033c7d79` | Proxy | proxy | inactive | yes |
 | base | `0x3b41454cb7858b6d0535e61bae9362af0151cc2d` | Proxy | proxy | live | yes |
+| base | `0x4655196cbec85a507450f8d8252e38bedbf0e2d5` | Proxy | impl | inactive | yes |
 | base | `0x491bf4aca9a475e107cfa4bcdd836648b72c34e5` | DynamicJobs | impl | live | yes |
 | base | `0x4cb98e1eeef513086b6a724f6b5401031b125649` | BasexBaseLiquidityManager-3 | impl | inactive | no |
 | base | `0x62726c1dfad7a13ab11fd61fc9f2e20a972dec54` | VeloStakedPositionManager | impl | inactive | no |
 | base | `0x64833f91df7e9b5b1f35510a7febd213201aa06e` | Proxy | impl | live | yes |
+| base | `0x6d5a04974ba2cdc3e307135fe5886b8c7c499e9a` | Staking | impl | inactive | no |
 | base | `0x7760d5cb6366dd1dead394012186202b1834cde5` | Proxy | impl | live | yes |
 | base | `0x8032d063992f4f6a14bc2be69a0d24cb563365de` | KimBaseLiquidityManager | impl | inactive | no |
 | base | `0x806c2240793b3738000fcb62c66bf462764b903f` | DynamicJobs | proxy | live | yes |
+| base | `0x8fb2cd40046b08f155d06c3a31b69c1bd2c971e2` | Proxy | proxy | live | yes |
 | base | `0x99eca0e5db125900e3a0389f6d3503837e99f59b` | WhitelistRegistry | impl | live | yes |
 | base | `0xa1dd21fbd9e1f0bf28d41f18bdc22326e50c02e9` | Proxy | impl | live | yes |
 | base | `0xa3fd4b3bd38ab8bbf3f26bb17aa410222b9965bc` | BasexBaseLiquidityManager-4 | impl | inactive | no |
 | base | `0xa98376572375692455172f6750c67339667974fe` | Helper | impl | inactive | no |
 | base | `0xab36d30c1a1c683037bd7aac67f29b2e3ecc6576` | DynamicJobs | impl | live | yes |
 | base | `0xac4d51669b80d09d8cc5eeff50026c4d1d3290e6` | Proxy | proxy | inactive | yes |
+| base | `0xbcf95873ed5397bc0b2e0a35b06c0dd9ac84c8b8` | Proxy | impl | inactive | yes |
 | base | `0xbfd2e0c4cf82d91ec13731e7bc14ac6120cd01f5` | Proxy | impl | live | yes |
 | base | `0xc1ecd10398a6d7036ccee1f50551ff169715081c` | Proxy | impl | live | yes |
 | base | `0xcb77e4c30d92c8b959811e99213625c7b9490b96` | ThickBaseLiquidityManager | impl | inactive | no |
@@ -100,16 +107,5 @@
 | base | `0xd02c0ebedf6a39f427c2583657400414c403f76b` | Proxy | impl | inactive | yes |
 | base | `0xd964811233b8a0185d3c93664df82136c80d1bb2` | Proxy | impl | live | yes |
 | base | `0xefecc1ceb7325c269fdb6337208e096f73f76ced` | BaseSwapBaseLiquidityManager | impl | inactive | no |
+| base | `0xf4de4180829272ae5f69acacf820f4f7d547513b` | Orchestrator-2 | impl | live | yes |
 | base | `0xff42cd42d8a5812cb38fb3c0720dfc490912f48b` | Proxy | impl | inactive | yes |
-
-## Source unavailable (8)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0xe1c56f99a459ed47b629f3d818bcc84826bced66`
-- arbitrum `0xf4de4180829272ae5f69acacf820f4f7d547513b`
-- base `0x07536e7fbc498bd886d393fb693e71c8c4e45b97`
-- base `0x4655196cbec85a507450f8d8252e38bedbf0e2d5`
-- base `0x6d5a04974ba2cdc3e307135fe5886b8c7c499e9a`
-- base `0x8fb2cd40046b08f155d06c3a31b69c1bd2c971e2`
-- base `0xbcf95873ed5397bc0b2e0a35b06c0dd9ac84c8b8`
-- base `0xf4de4180829272ae5f69acacf820f4f7d547513b`

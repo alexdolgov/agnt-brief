@@ -19,7 +19,7 @@
 pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
-import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
+import { Math } from "./Math.sol";
 
 
 /**
@@ -37,6 +37,6 @@ library Time {
         view
         returns (uint32)
     {
-        return DolomiteMarginMath.to32(block.timestamp);
+        return Math.to32(block.timestamp);
     }
 }

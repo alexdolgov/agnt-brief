@@ -1,0 +1,50 @@
+{
+  "component": "Strategy-2",
+  "main_contract": "Strategy",
+  "source_file_count": 27,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1144e14e9b0aa9e181342c7e6e0a9badb4ced295",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7acfe277ded15caba6a8da2972b1eb93fe1e2ccd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e8d6ab093905c400d583efd37fbeeb1ee1c0c39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcda62a19da5ee9dc6e3110cf211b483046b0f7d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfbc322415cbc532b54749e31979a803009516b5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

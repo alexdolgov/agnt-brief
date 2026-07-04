@@ -2,14 +2,22 @@
   "component": "RouterETH-2",
   "main_contract": "RouterETH",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xb49c4e680174e331cb0a7ff3ab58afc9738d5f8b",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x50b6ebc2103bfec165949cc946d739d5650d7ae4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

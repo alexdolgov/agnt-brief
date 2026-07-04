@@ -1,15 +1,17 @@
 # quoll — deployments
 
-134 verified deployment(s) across 60 component(s).
+138 verified deployment(s) across 62 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x03ac59ffa25227747d299b200179201738d4f18e` | AdminUpgradeabilityProxy | proxy | live | no |
 | arbitrum | `0x4f878dca03d9970bb2a9b770df7f7e49226510bc` | ERC1967Upgrade-2 | impl | live | no |
 | arbitrum | `0x51148dcf0cedc9d7a6b3fb0fcf134a57600ac677` | AdminUpgradeabilityProxy | proxy | live | no |
+| arbitrum | `0x5e6c67aaf033c4fdbade1ddeeb662021356c4d11` | VlQuoV2-2 | impl | live | no |
 | arbitrum | `0x70bb16463ae8237ac1a17418d8d2059d0d0cb4d2` | AdminUpgradeabilityProxy | proxy | live | no |
 | arbitrum | `0xe49a317a3327715d006ed83d34c9dc25182ba50a` | AdminUpgradeabilityProxy | proxy | live | no |
 | arbitrum | `0xf00d8790a76ee5a5dbc10eacac39151aa2af0331` | BridgeToken | proxy | live | no |
+| arbitrum | `0xfda75e7b04627611dfd016a492d1243399287a6a` | WombatVoterProxy-2 | impl | live | no |
 | bsc | `0x0321d1d769cc1e81ba21a157992b635363740f86` | DynamicAsset | impl | live | no |
 | bsc | `0x0520451b19ad0bb00ed35ef391086a692cfc74b2` | OptimizedTransparentUpgradeableProxy | proxy | live | no |
 | bsc | `0x08c79b06826604d86aeaed44ac85df9f5e1f2f5e` | PCSVoterProxy | impl | live | no |
@@ -50,6 +52,7 @@
 | bsc | `0x4a99218cecfbd4dee0ed49e22b4d1f40367ea454` | Referral | impl | live | no |
 | bsc | `0x4f95fe57bea74b7f642cf9c097311959b9b988f7` | Asset | impl | live | no |
 | bsc | `0x5a65cb65c601a396e79ff9e03650bdc97ed2de8b` | DynamicAsset | impl | live | no |
+| bsc | `0x5d00b9cbfe5e726dfce873bc20e1f82a2910232a` | ERC1967Upgrade | impl | live | no |
 | bsc | `0x5d64ed5f5121d0a3452ad36d8aefa554d4060f4a` | BnbxAsset | impl | live | no |
 | bsc | `0x5e83f2f467b4809ed7cad49ac0049eca48818554` | QMilesPts | impl | live | no |
 | bsc | `0x60a97c0e44d1a6f67c086455913cce682126d608` | ThenaDelegatePool | impl | live | no |
@@ -70,6 +73,7 @@
 | bsc | `0x80ad2f2ed4f00b152d7ca5e74920c944bfef0701` | IncentiveMaker | proxy | live | no |
 | bsc | `0x82f144accf4779ca8c49928be28fac5fa157d218` | VotingIncentivesFactory | impl | live | no |
 | bsc | `0x87073ba87517e7ca981aae3636754bca95c120e4` | Asset | impl | live | no |
+| bsc | `0x887a9c74ec188829d09c2eaf77d41fb9dd97bfc5` | ERC1967Upgrade | impl | live | no |
 | bsc | `0x88beb144352bd3109c79076202fac2bceab87117` | SkimmableAsset | impl | live | no |
 | bsc | `0x8d03febf03cd8e6f2388e587a6a1263360f639ec` | TradingCompetitionManager | impl | live | no |
 | bsc | `0x8df8b50b73849f0433ee3314bd956e624e67b3ce` | Asset | impl | live | no |
@@ -138,11 +142,3 @@
 | bsc | `0xf9bdc872d75f76b946e0770f96851b1f2f653cac` | Asset | impl | live | no |
 | bsc | `0xfb5defea3f66c8b17d0746b1f8b7f9f8ccf3ab22` | VlQuoV2 | impl | live | yes |
 | bsc | `0xfbbf371c9b0b994eebfcc977cef603f7f31c070d` | VotingEscrow | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x5e6c67aaf033c4fdbade1ddeeb662021356c4d11`
-- arbitrum `0xfda75e7b04627611dfd016a492d1243399287a6a`
-- bsc `0x5d00b9cbfe5e726dfce873bc20e1f82a2910232a`
-- bsc `0x887a9c74ec188829d09c2eaf77d41fb9dd97bfc5`

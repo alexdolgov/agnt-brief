@@ -1,79 +1,119 @@
 {
   "component": "ProxyAdmin-2",
   "main_contract": "ProxyAdmin",
-  "source_file_count": 16,
-  "deployment_count": 9,
+  "source_file_count": 30,
+  "deployment_count": 14,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x0392e9cf758cd1566dab547fdaf3ddcfed1d7375",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x12de0352dd4187af5797f5147c4179f9624346e2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
+      "chain": "chain-146",
+      "chain_id": 146,
       "address": "0x3e864a2ae46fa8e7eaac25012f517907f3ace120",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x6987f4db541cb615714112b6129c3d0bdb5d4e49",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6255ab31db76f82fda66d0bca46bbe221f8b8909",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x700e21a4de8e82b8dfcc8dd43868dd1efb66caf6",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6b44c878f869cf742a6d4dd60180a19c3b09716e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x84da347c0fe5ce5d03470ecb174d5c6d66f3f191",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
       "address": "0x87fc464fa528260f1eeab94fa20f73fed8536eb7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9f6d3e88c09face21bbc4bb5944551967083399e",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8f371825ee8dbe65d221d1aeb143778006ea5787",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb32ceff9663c28935b9f8d00fda46b2ad82c9c8c",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9303e1783a99f1ee4dbf0f78ce4832b4d475802c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe7502f1f0dff684d0d02d08b9bd57c5f42489808",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xae16f9d330f37e8f077d2280ac0433bce7c7f16a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb6e3b44975f2966707a91747f89d2002ff8d62db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xccde63f39d7d528ab270375a960c748238d37f77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd7a652118799b7a84478982a0b68ffa7f78c7133",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xdb91d232e93969130272de309d3d914547604426",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfc3f164042a1da15287a8fc682f0298f1fee4864",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfc4ac3af357ebe6d556dcd72453e9b30f6dc6873",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

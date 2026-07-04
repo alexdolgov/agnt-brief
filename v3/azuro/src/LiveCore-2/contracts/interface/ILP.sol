@@ -1,32 +1,34 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.4;
 
-import "./IBetting.sol";
-import "./IOrder.sol";
+import "./ICore.sol";
 import "./IOwnable.sol";
-import "@openzeppelin/contracts/interfaces/IERC721Enumerable.sol";
 
-interface ILP is IOrder {
+interface ILP is IOwnable {
+    enum FeeType {
+        DAO,
+        ORACLE,
+        AFFILIATE
+    }
+
     enum CoreState {
         UNKNOWN,
         ACTIVE,
         INACTIVE
     }
 
-    enum FeeType {
-        DAO,
-        DATA_PROVIDER,
-        AFFILIATES
+    struct Game {
+        bytes32 ipfsHash;
+        uint128 lockedLiquidity;
+        uint64 startsAt;
+        bool canceled;
+        Condition[] conditions;
     }
 
-    struct CoreData {
-        CoreState state;
-        uint64 reinforcementAbility; // total ability consist of ordinary + combo
-        uint64 reinforcementAbilityCombo;
-        uint128 minBet;
-        uint128 lockedLiquidity;
-        uint128 lockedLiquidityCombo;
+    struct Condition {
+        address core;
+        uint256 conditionId;
     }
 
     struct Reward {
@@ -34,8 +36,11 @@ interface ILP is IOrder {
         uint64 claimedAt;
     }
 
-    event AffiliateChanged(address newAffilaite);
-    event AffiliateRewardsClaimed(uint256 rewards);
+    event CoreUpdated(address indexed core, bool active);
+
+    event RoleUpdated(address indexed actor, uint8 role, bool active);
+
+    event AffiliateRewarded(address indexed affiliate, uint256 amount);
     event BettorWin(
         address indexed core,
         address indexed bettor,
@@ -43,170 +48,140 @@ interface ILP is IOrder {
         uint256 amount
     );
     event ClaimTimeoutChanged(uint64 newClaimTimeout);
-    event CoreSettingsUpdated(
-        address indexed core,
-        CoreState state,
-        uint64 reinforcementAbility,
-        uint64 reinforcementAbilityCombo,
-        uint128 minBet
-    );
-    event DataProviderChanged(address newDataProvider);
     event FeeChanged(FeeType feeType, uint64 fee);
+    event GameCanceled(uint256 indexed gameId);
+    event GameShifted(uint256 indexed gameId, uint64 newStart);
     event LiquidityAdded(
         address indexed account,
-        uint48 indexed depositId,
+        uint48 indexed leaf,
         uint256 amount
     );
     event LiquidityRemoved(
         address indexed account,
-        uint48 indexed depositId,
-        uint40 percent,
+        uint48 indexed leaf,
         uint256 amount
     );
     event MinDepoChanged(uint128 newMinDepo);
-    event WithdrawTimeoutChanged(uint64 newWithdrawTimeout);
-    event LegacyLPSet(address indexed legacyLP);
-    event DepositsMigrated(
-        address indexed depositor,
-        uint48 indexed depositId,
-        uint48[] oldDepositIds
+    event NewGame(
+        uint256 indexed oracleGameId,
+        uint256 indexed gameId,
+        bytes32 ipfsHash,
+        uint64 startsAt
     );
-    event RelayerSet(address indexed relayer);
+    event ReinforcementAbilityChanged(uint128 newReinforcementAbility);
+    event WithdrawTimeoutChanged(uint64 newWithdrawTimeout);
 
     error OnlyFactory();
 
+    error OnlyRole(uint8 role);
+
+    error AmountMustNotBeZero();
+    error AmountNotSufficient();
+    error MinDepoNotSufficient();
+
+    error NoReward();
+
+    error BetExpired();
     error CoreNotActive();
-    error ClaimTimeout(uint64 waitTime);
-    error IncorrectCoreState();
-    error IncorrectAmount();
+    error GameAlreadyCanceled();
+    error GameAlreadyCreated();
+    error GameCanceled_();
+    error GameNotExists();
     error IncorrectFee();
-    error IncorrectLegacyLP();
-    error IncorrectMinBet();
-    error IncorrectMinDepo();
     error IncorrectReinforcementAbility();
-    error IncorrectRelayer();
-    error InsufficientReward();
+    error IncorrectTimestamp();
     error LiquidityNotOwned();
-    error LockedBetToken(uint256 tokenId);
-    error LockedLiquidityLimitReached();
-    error LockedLiquidityComboLimitReached();
-    error SmallBet();
-    error SmallDepo();
+    error LiquidityIsLocked();
+    error NoLiquidity();
+    error NotEnoughLiquidity();
     error UnknownCore();
     error WithdrawalTimeout(uint64 waitTime);
+    error ClaimTimeout(uint64 waitTime);
 
     function initialize(
-        address access,
-        address vault,
-        address dataProvider,
-        address affiliate,
-        uint128 minDepo,
+        address token,
         uint64 daoFee,
-        uint64 dataProviderFee,
-        uint64 affiliateFee
+        uint64 oracleFee,
+        uint64 affiliateFee,
+        address oracle
     ) external;
 
     function addCore(address core) external;
 
-    function addDeposit(uint128 amount) external returns (uint48);
+    function addLiquidity(uint128 amount) external;
 
-    function addDepositFor(
-        address account,
-        uint128 amount
-    ) external returns (uint48);
+    function addLiquidityNative() external payable;
 
-    function withdrawDeposit(
-        uint48 depositId,
-        uint40 percent
-    ) external returns (uint128);
+    function withdrawLiquidity(
+        uint48 depNum,
+        uint40 percent,
+        bool isNative
+    ) external;
 
-    function viewPayout(
+    function viewPayout(address core, uint256 tokenId)
+        external
+        view
+        returns (uint128 payout);
+
+    function betFor(
+        address bettor,
         address core,
-        uint256 tokenId
-    ) external view returns (uint128 payout);
+        uint128 amount,
+        uint64 expiresAt,
+        ICoreBase.BetData calldata data
+    ) external returns (uint256 tokenId);
 
-    /**
-     * @notice Make batch of bets for `bettor`.
-     * @notice Emits bet tokens to `bettor`.
-     * @param core core to calc and execution bets
-     * @param order see { IOrder.OrderData }
-     * @param betOwner owner of bet token most case is same as order.betOwner, in freebet case is PayMaster (freebet supplier)
-     */
-    function betOrder(
+    function betNative(
         address core,
-        OrderData calldata order,
-        address betOwner,
-        bytes calldata data
-    ) external returns (uint256[] memory tokenIds);
+        uint64 expiresAt,
+        ICoreBase.BetData calldata data
+    ) external payable returns (uint256 tokenId);
 
-    function changeDataProvider(address newDataProvider) external;
+    function bet(
+        address core,
+        uint128 amount,
+        uint64 expiresAt,
+        ICoreBase.BetData calldata data
+    ) external returns (uint256 tokenId);
 
-    function claimReward() external returns (uint128);
+    function getReserve() external view returns (uint128);
 
     function addReserve(
+        uint256 gameId,
         uint128 lockedReserve,
         uint128 profitReserve,
-        uint48 depositId,
-        bool isCombo
-    ) external;
+        uint48 leaf,
+        address oracle
+    ) external returns (uint128 affiliatesReward);
+
+    function addCondition(uint256 gameId, uint256 conditionId)
+        external
+        returns (uint64);
 
     function withdrawPayout(
         address core,
-        uint256 tokenId
-    ) external returns (uint128);
-
-    function withdrawPayouts(address core, uint256[] calldata tokenId) external;
-
-    function changeLockedLiquidity(int128 deltaReserve, bool isCombo) external;
-
-    function getLockedLiquidityLimit(
-        address core
-    ) external view returns (uint128 maxLiquidity, uint128 maxLiquidityCombo);
-
-    function checkAccess(
-        address account,
-        address target,
-        bytes4 selector
+        uint256 tokenId,
+        bool isNative
     ) external;
 
-    function checkCore(address core) external view;
+    function changeLockedLiquidity(uint256 gameId, int128 deltaReserve)
+        external;
 
-    function getLastDepositId() external view returns (uint48 depositId);
+    function getGameInfo(uint256 gameId)
+        external
+        view
+        returns (uint64 startsAt, bool canceled);
 
-    function isDepositExists(uint256 depositId) external view returns (bool);
+    function isGameCanceled(uint256 gameId)
+        external
+        view
+        returns (bool canceled);
 
-    function token() external view returns (address);
+    function getLeaf() external view returns (uint48 leaf);
 
-    function fees(uint256) external view returns (uint64);
+    function coreAffRewards(address) external view returns (uint128);
 
-    function factory() external view returns (IOwnable);
+    function checkRole(address actor, uint8 role) external view;
 
-    function changeByPercent(
-        bool isIncrease,
-        uint256 amount
-    ) external view returns (uint128);
-
-    function dataProvider() external view returns (address);
-
-    function checkOwner(address owner) external view;
-
-    function rejectConditionFee(uint256 conditionId) external;
-
-    function rejectFee(
-        uint128 amount,
-        uint256 conditionId,
-        uint64 timestamp
-    ) external;
-
-    function rejectFeeComboPart(
-        uint128 betAmount,
-        uint256 conditionId,
-        uint256 count,
-        uint256 element,
-        uint64 timestamp
-    ) external;
-
-    function relayer() external view returns (address);
-
-    function releaseFee(uint256 conditionId) external;
+    function cores(address core) external view returns (CoreState);
 }

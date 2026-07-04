@@ -9,7 +9,7 @@
     {
       "chain": "chain-1284",
       "chain_id": 1284,
-      "address": "0x7a3909c7996efe42d425cd932fc44e3840fcab71",
+      "address": "0x5c93cbf67c74daf14e36002d955ed5c7bd49887a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

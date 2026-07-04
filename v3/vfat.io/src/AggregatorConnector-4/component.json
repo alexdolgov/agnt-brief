@@ -1,0 +1,58 @@
+{
+  "component": "AggregatorConnector-4",
+  "main_contract": "AggregatorConnector",
+  "source_file_count": 4,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ed2b28b3d4dde9e7c35526672f3a91a1bd99f69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4b01ccc18392be409fd14ce0b33d426da8d2602b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5bc457e175f89594e7f25d199bec0550ae472566",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x7affad07d8fe82923d24d0fcf09993e4ee181fe2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd95b78d270810547d8203a6bb8f86a31857e9303",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2a9ac5223a85c07b024c13b1cbf48e2ddf18c1bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

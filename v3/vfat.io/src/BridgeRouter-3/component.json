@@ -1,0 +1,18 @@
+{
+  "component": "BridgeRouter-3",
+  "main_contract": "BridgeRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x564dde51c3e4725542fceebf38d60f5d3068dae1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

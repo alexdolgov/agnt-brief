@@ -1,6 +1,6 @@
 # superform — deployments
 
-213 verified deployment(s) across 128 component(s).
+216 verified deployment(s) across 131 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -92,10 +92,10 @@
 | arbitrum | `0xcc3b785186951cafd4cf1867dd5f98b5b7e54cde` | VKAVesting | impl | inactive | no |
 | arbitrum | `0xcddb0a102f23409e1789dea69d6105ddd4e787a9` | ProxyAdmin | impl | inactive | no |
 | arbitrum | `0xcede40b40f7af69f5aa6b12d75fd5ea9ce138b93` | MultiStrategyVault | impl | live | no |
-| arbitrum | `0xd11a312a7d9745c62dfc014d72e7bb2403dabf72` | Vault | impl | inactive | no |
+| arbitrum | `0xd11a312a7d9745c62dfc014d72e7bb2403dabf72` | Vault-2 | impl | inactive | no |
 | arbitrum | `0xd11ea666f6b7b05ab4bca8c240c659dfe759d1c4` | VKAVesting | impl | inactive | no |
 | arbitrum | `0xd318de159b1320bed03b4553eb58591a43156c47` | TransparentUpgradeableProxy-4 | impl | inactive | no |
-| arbitrum | `0xd3a17928245064b6df5095a76e277fe441d538a4` | Vault | impl | inactive | no |
+| arbitrum | `0xd3a17928245064b6df5095a76e277fe441d538a4` | Vault-3 | impl | inactive | no |
 | arbitrum | `0xd6dfe8b986e89ce841331f833ba82dc12b8cd828` | AdapterBase | impl | inactive | no |
 | arbitrum | `0xdb197b57be684148c905a433252dc87d0dc50b87` | TransparentUpgradeableProxy-5 | impl | inactive | no |
 | arbitrum | `0xdd0d135b5b52b7edd90a83d4a4112c55a1a6d23a` | StakingVault | impl | inactive | no |
@@ -120,7 +120,7 @@
 | base | `0x4fdf7e39b8d3bb2503e97f49360e199c38c1dfee` | SuperFrens | impl | live | yes |
 | base | `0x55bf2f25bd1e5a97b948948f2e64bf0720093822` | SuperFrens | impl | live | yes |
 | base | `0x5a3c6729ac93d87cfd3788c307478c0df2a402b3` | SuperFrens | impl | live | yes |
-| base | `0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b` | UpOFT | impl | live | no |
+| base | `0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b` | UpOFT-2 | impl | live | no |
 | base | `0x73317659b5a768b712d8d079f4df298510053135` | SuperFrens | impl | live | yes |
 | base | `0x7f68862632a1c27a16fe75cd4225628547da6450` | SuperVault | impl | live | yes |
 | base | `0x9bbfe54d18bced9a2dd7304a676f7b898b5bcb1a` | PiggyDAO | impl | inactive | no |
@@ -130,6 +130,7 @@
 | base | `0xd8ba05abcbe0baf1ee748104da11fb8f717fd291` | SuperVault | impl | live | yes |
 | base | `0xe7c75ab140bdae8bcda92fc1c8de6b1e29da336d` | PiggyBBQ | impl | inactive | no |
 | base | `0xe9f2a5f9f3c846f29066d7fb3564f8e6b6b2d65b` | SuperVault | proxy | live | yes |
+| chain-999 | `0x642ffc3496aca19106bab7a42f1f221a329654fe` | UpOFT | impl | live | no |
 | ethereum | `0x00fbc4e3608a26e0d05905759c2a6188fda0e2cd` | CircleGatewayRemoveDelegateHook | impl | live | yes |
 | ethereum | `0x02a0a95c379220e9759960a8ee923cbbc2d305cd` | PendleRouterSwapHook | impl | live | yes |
 | ethereum | `0x04916bb42564cded96e10f55c059d65e4fcb1be6` | SuperLedger | impl | live | yes |
@@ -214,13 +215,8 @@
 | ethereum | `0xe61774aa87a05fb1b5665158f2b5e0e10c71b5e2` | MarkRootAsUsedHook | impl | live | yes |
 | ethereum | `0xec64fe4256e9e2b935f9acb13cf0b1ce06c6dd5c` | ERC5115YieldSourceOracle | impl | live | yes |
 | ethereum | `0xeebb42210d8a8b165dcf154b325c588ee8df149a` | SuperVaultYieldSourceOracle | impl | live | no |
+| ethereum | `0xef101508bf4dc6cf0f0a0c135f39a41fab4e4389` | SuperVault | proxy | live | yes |
 | ethereum | `0xf37535d96712fbaef6d868e721e7b987ad1e6a86` | ApproveAndDeposit4626VaultHook | impl | live | yes |
+| ethereum | `0xf7de3c70f2db39a188a81052d2f3c8e3e217822a` | SuperVault | proxy | live | yes |
 | ethereum | `0xfbadc4f18ddc7ebdbc920d3f9b0ca7a1296788d1` | ERC1967Upgrade | proxy | live | no |
 | ethereum | `0xfbbd9a7026e29e889d28882606660fc5be0bea73` | OfframpTokensHook | impl | live | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-999 `0x642ffc3496aca19106bab7a42f1f221a329654fe`
-- ethereum `0xef101508bf4dc6cf0f0a0c135f39a41fab4e4389`
-- ethereum `0xf7de3c70f2db39a188a81052d2f3c8e3e217822a`

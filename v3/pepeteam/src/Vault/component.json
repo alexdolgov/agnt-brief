@@ -2,7 +2,7 @@
   "component": "Vault",
   "main_contract": "Vault",
   "source_file_count": 8,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -20,6 +20,14 @@
       "address": "0xe239b640aa534b1313012faff581c868f3207854",
       "is_proxy": true,
       "implementation_address": "0xa3fb113e482f7b79109040aba7fc2ebc17c42e51",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcb0c5e85ad943bd40320476d1cc95ceacc5a00cc",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "inactive"
     }
   ]

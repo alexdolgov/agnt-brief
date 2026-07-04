@@ -1,0 +1,18 @@
+{
+  "component": "AppUIHelperRead-4",
+  "main_contract": "AppUIHelperRead",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13173edbd7a290f593d70cfd4f4f8e6eafdebaf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

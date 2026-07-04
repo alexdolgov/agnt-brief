@@ -1,0 +1,26 @@
+{
+  "component": "RewardsController-2",
+  "main_contract": "RewardsController",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4881fd4d2d056745098d79b3ee2a45b31e1bac0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x95feaae6f7991fadcc565c39aebd7b2e6deb0dc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

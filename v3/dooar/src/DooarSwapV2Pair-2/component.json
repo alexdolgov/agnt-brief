@@ -1,0 +1,18 @@
+{
+  "component": "DooarSwapV2Pair-2",
+  "main_contract": "DooarSwapV2Pair",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

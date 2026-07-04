@@ -2,13 +2,21 @@
   "component": "PancakeSwapV3StandardModulePrivate",
   "main_contract": "PancakeSwapV3StandardModulePrivate",
   "source_file_count": 43,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x49083cb8204c5bf830c75fd65d8eb3be1c3d4b11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x49083cb8204c5bf830c75fd65d8eb3be1c3d4b11",
       "is_proxy": false,
       "implementation_address": null,

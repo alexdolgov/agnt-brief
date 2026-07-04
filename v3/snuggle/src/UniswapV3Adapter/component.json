@@ -2,12 +2,28 @@
   "component": "UniswapV3Adapter",
   "main_contract": "UniswapV3Adapter",
   "source_file_count": 25,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://www.snuggle.fi/security"
   ],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xca4cf963c71234a4f7d44a750b4d3847b4debabd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf757c96463cb5588dc7d8eba464c947b08f33010",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

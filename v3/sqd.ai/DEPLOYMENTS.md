@@ -1,12 +1,13 @@
 # sqd.ai — deployments
 
-62 verified deployment(s) across 33 component(s).
+63 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x070feb1a767fd7b6b81d4e5c3fcd9d58640d7c25` | MerkleDistributor | impl | inactive | no |
 | arbitrum | `0x0afe1dc5892eff2c7cc059479049f831e0867099` | TransparentUpgradeableProxy | proxy | inactive | no |
 | arbitrum | `0x0eb27b1cbba04698dd7ce0f2364584d33a616545` | LinearToSqrtCap | impl | inactive | no |
+| arbitrum | `0x1337420ded5adb9980cfc35f8f2b054ea86f8ab1` | SQD-2 | impl | live | no |
 | arbitrum | `0x14926ebf05a904b8e2e2bf05c10ecca9a54d8d0d` | TemporaryHoldingFactory | impl | inactive | no |
 | arbitrum | `0x159550d2589cff1ff604af715130642256b88847` | NetworkController | impl | inactive | no |
 | arbitrum | `0x17776c473d94d6910d66ff69656825051ea2c7ca` | GatewayRegistry | impl | inactive | no |
@@ -66,8 +67,3 @@
 | ethereum | `0xe982615d461dd5cd06575bbea87624fda4e3de17` | MasterMinter | impl | inactive | no |
 | ethereum | `0xec0f22b4339b4adcae3347bd5cad539700ac4beb` | MasterMinter | impl | inactive | no |
 | ethereum | `0xed24bd79a3f2ba4325e9c553164e299c65e272fc` | V2Upgrader | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x1337420ded5adb9980cfc35f8f2b054ea86f8ab1`

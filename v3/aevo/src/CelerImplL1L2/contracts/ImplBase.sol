@@ -38,6 +38,14 @@ abstract contract ImplBase is Ownable {
         IERC20(token).safeTransfer(userAddress, amount);
     }
 
+    function rescueEther(
+        address payable userAddress,
+        uint256 amount
+    ) external onlyOwner {
+        userAddress.transfer(amount);
+    }
+
+
     function outboundTransferTo(
         uint256 _amount,
         address _from,

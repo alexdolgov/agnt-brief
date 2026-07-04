@@ -93,7 +93,6 @@ contract KineControllerInterface {
     /*** Liquidity/Liquidation Calculations ***/
 
     function liquidateCalculateSeizeTokens(
-        address target,
         address kTokenBorrowed,
         address kTokenCollateral,
         uint repayAmount) external view returns (uint);

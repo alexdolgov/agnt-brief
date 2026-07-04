@@ -2,22 +2,30 @@
   "component": "MixedRouteQuoterV1",
   "main_contract": "MixedRouteQuoterV1",
   "source_file_count": 28,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0a5aa5d3a4d28014f967bf0f29eaa3ff9807d5c6",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7e4b995fc2a96f5f95cd5dcbc17f8090fcaa7406",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe2af5fde219b4c6047aaec44444f120675b406e2",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa4ac92a0f54f1a447c55a4082c90742f5e76df62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfaa0a0c8ba31f79dc621f0d6b10f95589a4301f2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

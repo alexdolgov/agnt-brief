@@ -277,8 +277,6 @@ contract CTokenInterface is CTokenStorage {
 
     function allowance(address owner, address spender) external view returns (uint256);
 
-    function getOwner() external view returns (address);
-
     function balanceOf(address owner) external view returns (uint256);
 
     function balanceOfUnderlying(address owner) external returns (uint256);

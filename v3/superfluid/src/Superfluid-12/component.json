@@ -1,0 +1,18 @@
+{
+  "component": "Superfluid-12",
+  "main_contract": "Superfluid",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xebbe9a6688be25d058c9469ee4807e5ef192897f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

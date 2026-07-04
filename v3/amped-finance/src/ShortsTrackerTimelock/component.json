@@ -2,7 +2,7 @@
   "component": "ShortsTrackerTimelock",
   "main_contract": "ShortsTrackerTimelock",
   "source_file_count": 5,
-  "deployment_count": 3,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,6 +26,46 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0xee99f931601832773fedd982e3b389290e88d914",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x181f8afe7e52850492c1e85c5cf006ba4b6fe983",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1a1aae77a0fcdc7620cd496ab4bae251b9147287",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6183bbda0bb5aded43a87d32b0ec08b1b0be7354",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc1e8a4346fe814e23dd564363c61864dc46495ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x15391e6e1ad9643141f9ab8c7d8a37140e2a5d9f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

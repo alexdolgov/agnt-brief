@@ -1,0 +1,42 @@
+{
+  "component": "Governor-5",
+  "main_contract": "Governor",
+  "source_file_count": 79,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3c8cd9fca9925780598eb097d9718df3da482c2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5fb4e33e7952ed4b1dc6c08966d797c61bbff021",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7906238833bb9e4fec24a1735c94f47cb194f678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7f946356c26043326aeb2597703a8ae05561d8c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

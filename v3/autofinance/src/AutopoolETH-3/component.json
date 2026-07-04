@@ -1,0 +1,26 @@
+{
+  "component": "AutopoolETH-3",
+  "main_contract": "AutopoolETH",
+  "source_file_count": 70,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0591c1f3e0d587f88261509c0f8295ce8474eb4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x67da05fa6f53b6481c9f02fd8ae894035a31fe06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

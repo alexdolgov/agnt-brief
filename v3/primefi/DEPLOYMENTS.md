@@ -1,6 +1,6 @@
 # primefi — deployments
 
-114 verified deployment(s) across 57 component(s).
+128 verified deployment(s) across 60 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,15 +12,18 @@
 | base | `0x163a1e3cd4726f3c92eb005a942308029c27f64b` | TransparentUpgradeableProxy-2 | impl | live | no |
 | base | `0x16db157393eb152a0c708d053c2b91e5a350e38e` | PRFIVesting | impl | live | no |
 | base | `0x17e450be3ba9557f2378e20d64ad417e59ef9a34` | FeeLibV1 | impl | inactive | no |
+| base | `0x1ff5e0037b478547715a4ce337d9fcff86a30401` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | base | `0x21e6738985aea7d8c547616ffb52d4fe56d92b9e` | CreditMessaging | impl | inactive | no |
 | base | `0x2230393edad0299b7e7b59f20aa856cd1bed52e1` | MasterMinter | impl | inactive | no |
 | base | `0x22bdf9633f3e679785638db690b85dc0dc8b35b8` | RewardLib | impl | inactive | no |
 | base | `0x27a16dc786820b16e5c9028b75b99f6f604b5d26` | StargateBase | impl | live | no |
+| base | `0x2a50be4df06202a239384e828d6e67f9f2fa954e` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | base | `0x33cd734739c6ded500fd080d476d93135cb813ef` | WalletBalanceProvider | impl | live | no |
 | base | `0x41a5b0470d96656fb3e8f68a218b39adbca3420b` | TokenMessaging | impl | inactive | no |
 | base | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | base | `0x44312db52c13fbd33a975db5d12840c17c80b89c` | PRFIVestingV2Proxy | proxy | live | no |
 | base | `0x47af6fba7160e9ff9997f2757232d026ff97d34e` | ONFTMainchain | impl | inactive | no |
+| base | `0x47c4d740016411bb8f5c9d9bdb3f866c9b46e0a4` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | base | `0x515fbd7124a782818ba6719e48e94c489ba769f4` | ProxyAdmin | proxy | live | no |
 | base | `0x5634c4a5fed09819e3c46d86a965dd9447d86e47` | TokenMessaging | impl | inactive | no |
 | base | `0x5b6d95545750f1bb1812f5c564d9a401d3debd80` | ProxyAdmin | proxy | live | no |
@@ -30,9 +33,12 @@
 | base | `0x6b73d3cbbb278ce2e8698e983aeccdd94dc4594b` | CreditMessaging | impl | inactive | no |
 | base | `0x6d0c9a70d85e42ba8b76dc06620d4e988ec8d0c1` | FiatTokenV2_1 | impl | inactive | no |
 | base | `0x76c6452e7c4711ee986b4911243ea20d8b28f506` | ProxyAdmin | proxy | live | no |
+| base | `0x7b7cd09465ff2cab67360d5cd24a3cc3ad0c856a` | AaveProtocolDataProvider-2 | impl | live | no |
 | base | `0x7bbcf1b600565ae023a1806ef637af4739de3255` | PRFI | impl | live | no |
+| base | `0x7d08e488fa39e7f29701c90eb49cc766857895a8` | LockerList | impl | live | no |
 | base | `0x7f2ebfb68be75e56bb6c14c504bb0a0c0b6eb8df` | ProxyAdmin | proxy | live | no |
 | base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | AdminUpgradeabilityProxy | proxy | live | no |
+| base | `0x834695a5d33967f8cc27e6d15684c0aa36ca4375` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | base | `0x87b417af600312df37f551a05ae14bcc3d55bc36` | UniswapV2Pair | impl | live | no |
 | base | `0x8a619d8e3bfab54f7c30ef39ce16c53429c739c3` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | base | `0x8db623d439c8c4dfa1ca94e4cd3eb8b3aaff8331` | RewardRegistryLib | impl | inactive | no |
@@ -40,12 +46,19 @@
 | base | `0x95d7a59c230d184f16b497c3c1bb834ca397c241` | ProxyAdmin | proxy | live | no |
 | base | `0x9a01d4f32a6ba70185b736588dfc77c25852472a` | PRFIVestingV2 | impl | live | no |
 | base | `0xa76cd3a43751090c40a35c37b38aa06973cc6184` | FeeLibV1 | impl | inactive | no |
+| base | `0xaae0d3c0b4aa454ceb5b5346ba1e95a86395d656` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
+| base | `0xb16aecafa1310a1c51f66ebdf6fb753bfa76450e` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0xb7a05a3a687ef09cc70e3f98b5f6a62f32e3ae58` | Treasurer | impl | inactive | no |
+| base | `0xb9a14b24c6e669d24e76dab65f7c4dc52f68741c` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
+| base | `0xbc2adf6bee6e8468f9e60dfc017d4e2ce682be0c` | LendingPoolAddressesProvider-2 | impl | live | no |
 | base | `0xbfee735e3868f8990787cceaa4b920c9ed162b07` | ProxyAdmin | impl | live | no |
+| base | `0xc12bdd620a54149df6b73fad9726d387402a9066` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | base | `0xc7c567e10656eb2f4b1024757263a587ac1942ad` | Multicall3-2 | impl | live | no |
 | base | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | AdminUpgradeabilityProxy-2 | proxy | live | no |
 | base | `0xd433efa0ef993b14fe67ca92fcd555e95486f184` | OFTWrapper | impl | inactive | no |
 | base | `0xd47b03ee6d86cf251ee7860fb2acf9f91b9fd4d7` | Treasurer | impl | inactive | no |
+| base | `0xd719084151f1f47b7dcb937bb33845656580b79d` | LendingRateOracle-2 | impl | live | no |
+| base | `0xdbed51f298901987651faf1daed8bb575942d406` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | base | `0xdc181bd607330aeebef6ea62e03e5e1fb4b6f7c7` | StargatePoolNative | impl | live | no |
 | base | `0xe8df0d0cba73403ca89e07e6deca9252e1af4084` | ProxyAdmin | proxy | live | no |
 | chain-999 | `0x04edbf3904789d80b0c991e0b66577f2208a2be6` | DataStreamConsumer | impl | live | no |
@@ -106,6 +119,7 @@
 | chain-999 | `0xab008abd38ac3fb371d8c442d48e10225cd46db6` | StableAndVariableTokensHelper | impl | live | no |
 | chain-999 | `0xac57f0d2f8ef17b8d26189ba0db353361374b2ca` | WETHGateway | impl | live | no |
 | chain-999 | `0xb0241128b4e66ea783f12dcb2b73ff19d8789e0e` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-999 | `0xb380637652cafbb37e08ecafc015ffcb800618d0` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0xb3dd71a3ef63b7becefbc68a87352fcc4507ba97` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-999 | `0xbc2adf6bee6e8468f9e60dfc017d4e2ce682be0c` | LendingPoolAddressesProviderRegistry | impl | live | no |
 | chain-999 | `0xc1f647c2fb6d21ad13070fca9d543d8c2f9d6e25` | TransparentUpgradeableProxy | impl | inactive | no |
@@ -118,21 +132,3 @@
 | chain-999 | `0xf532fdfdf2787c5af15c2b09e8ec6a31247f6b30` | GenericLogic | impl | live | no |
 | chain-999 | `0xfb5c7dc83caa47e9ab314073fb5152191380ed8a` | TransparentUpgradeableProxy | impl | inactive | no |
 | chain-999 | `0xfebc15460a5af7bd5c0f2d6746aab00c9531747d` | LendingPoolConfigurator | impl | live | no |
-
-## Source unavailable (14)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x1ff5e0037b478547715a4ce337d9fcff86a30401`
-- base `0x2a50be4df06202a239384e828d6e67f9f2fa954e`
-- base `0x47c4d740016411bb8f5c9d9bdb3f866c9b46e0a4`
-- base `0x7b7cd09465ff2cab67360d5cd24a3cc3ad0c856a`
-- base `0x7d08e488fa39e7f29701c90eb49cc766857895a8`
-- base `0x834695a5d33967f8cc27e6d15684c0aa36ca4375`
-- base `0xaae0d3c0b4aa454ceb5b5346ba1e95a86395d656`
-- base `0xb16aecafa1310a1c51f66ebdf6fb753bfa76450e`
-- base `0xb9a14b24c6e669d24e76dab65f7c4dc52f68741c`
-- base `0xbc2adf6bee6e8468f9e60dfc017d4e2ce682be0c`
-- base `0xc12bdd620a54149df6b73fad9726d387402a9066`
-- base `0xd719084151f1f47b7dcb937bb33845656580b79d`
-- base `0xdbed51f298901987651faf1daed8bb575942d406`
-- chain-999 `0xb380637652cafbb37e08ecafc015ffcb800618d0`

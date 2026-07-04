@@ -3,30 +3,44 @@ pragma solidity ^0.8.28;
 
 import {ClaimingFacet} from "./ClaimingFacet.sol";
 import {IRewardsDistributor} from "../../../interfaces/IRewardsDistributor.sol";
+import {IGaugeManager} from "../../../Blackhole/interfaces/IGaugeManager.sol";
 
 /**
  * @title BlackholeClaimingFacet
- * @dev ClaimingFacet adapted for Blackhole's dual rewards distributors.
- *      Claims rebase from both the primary and secondary rewards distributors.
+ * @dev ClaimingFacet adapted for Blackhole-style deployments 
  */
 contract BlackholeClaimingFacet is ClaimingFacet {
-    IRewardsDistributor public constant PRIMARY_REWARDS_DISTRIBUTOR = IRewardsDistributor(0x88a49cFCee0Ed5B176073DDE12186C4c922A9cD0);
-    IRewardsDistributor public constant SECONDARY_REWARDS_DISTRIBUTOR = IRewardsDistributor(0x7c7BD86BaF240dB3DbCc3f7a22B35c5bAa83bA28);
+    IRewardsDistributor public immutable _secondaryRewardsDistributor;
+    IGaugeManager public immutable _gaugeManager;
 
     constructor(
         address portfolioFactory,
         address votingEscrow,
         address voter,
+        address gaugeManager,
+        address rewardsDistributor,
+        address secondaryRewardsDistributor,
         address loanConfig,
         address swapConfig,
         address vault
     )
-        ClaimingFacet(portfolioFactory, votingEscrow, voter, address(PRIMARY_REWARDS_DISTRIBUTOR), loanConfig, swapConfig, vault)
-    {}
+        ClaimingFacet(portfolioFactory, votingEscrow, voter, rewardsDistributor, loanConfig, swapConfig, vault)
+    {
+        require(gaugeManager != address(0));
+        _gaugeManager = IGaugeManager(gaugeManager);
+        // secondary rewards distributor is optional (Blackhole/Avax has two, SuperNova/Ethereum has one)
+        _secondaryRewardsDistributor = IRewardsDistributor(secondaryRewardsDistributor);
+    }
+
+    function _claimFees(address[] calldata fees, address[][] calldata tokens, uint256 tokenId) internal override {
+        _gaugeManager.claimBribes(fees, tokens, tokenId);
+    }
 
     function claimRebase(uint256 tokenId) public override {
-        _claimFromDistributor(PRIMARY_REWARDS_DISTRIBUTOR, tokenId);
-        _claimFromDistributor(SECONDARY_REWARDS_DISTRIBUTOR, tokenId);
+        _claimFromDistributor(_rewardsDistributor, tokenId);
+        if (address(_secondaryRewardsDistributor) != address(0)) {
+            _claimFromDistributor(_secondaryRewardsDistributor, tokenId);
+        }
         _updateLockedCollateral(tokenId);
     }
 

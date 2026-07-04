@@ -1,6 +1,6 @@
 # gro — deployments
 
-203 verified deployment(s) across 69 component(s).
+206 verified deployment(s) across 70 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -83,7 +83,7 @@
 | avalanche | `0xf446480a77a837353873078d209e571ef2293b31` | AHv2Farmer | impl | inactive | no |
 | ethereum | `0x001c249c09090d79dc350a286247479f08c7aad7` | LPTokenStaker | impl | inactive | no |
 | ethereum | `0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720` | GMerkleVestor | impl | live | no |
-| ethereum | `0x03b298d27b0426758cb70c4add6523927bd7cc8e` | Vyper_contract | impl | inactive | no |
+| ethereum | `0x03b298d27b0426758cb70c4add6523927bd7cc8e` | Vyper_contract-2 | impl | inactive | no |
 | ethereum | `0x0537d3da1ed1dd7350ff1f3b92b727dfdbab80f1` | GROInvVesting | impl | inactive | no |
 | ethereum | `0x0a656f8fc4f1d4996d70e36b7b5bdf4970b3776f` | GGelatoResolver | impl | inactive | no |
 | ethereum | `0x0d8f52c8d809f58ace0bdb593c1bb14f2f6b08a6` | HarvestResolver | impl | inactive | no |
@@ -133,6 +133,7 @@
 | ethereum | `0x63d3376aabddd618daafbb29d8f27ce47a28a952` | GenericLevComp | impl | inactive | no |
 | ethereum | `0x63d96236fd0e1c395d3e464a38f46b1adca247de` | GRODaoVesting | impl | inactive | no |
 | ethereum | `0x641befa4db601578a64f0fc1f4e89e9869268fe7` | WithdrawHandler | impl | inactive | no |
+| ethereum | `0x6a01bc748d71489372bd8fb743b23f63d99aac85` | Vyper_contract | impl | inactive | no |
 | ethereum | `0x6a23a7c1fa98728e7f57989a79ef555690f1426e` | GenericLevComp | impl | inactive | no |
 | ethereum | `0x6a25fd29e2033d9519b77fa0d649dc9aed219a13` | PriceOracle | impl | inactive | no |
 | ethereum | `0x6b1bff72f00cc147b5dc7a5b156fe7a6fd206dda` | AirDrop | impl | inactive | no |
@@ -145,6 +146,7 @@
 | ethereum | `0x7c268bf50e64258835029c30c91daa65a9e55b5a` | GROHodler | impl | inactive | no |
 | ethereum | `0x7d17c9b9b154b1b31add5115f5f519ec50a59421` | Buoy3Pool | impl | inactive | no |
 | ethereum | `0x7d39eeab3bf514b4896b520d3035ce034ed45380` | MultiSend | impl | inactive | no |
+| ethereum | `0x8029157b06be67693dc0e94fbfc55b200180f548` | Vyper_contract | impl | inactive | no |
 | ethereum | `0x82bbee051744299486da61e5914d04a862f0b85c` | GROTeamVesting | impl | inactive | no |
 | ethereum | `0x886a5790ba2f549b511a5b59fbeedf8184f60318` | StopLossLogic | impl | inactive | no |
 | ethereum | `0x88e82d0ada60a24b2607d51551448c64eb990b2d` | GRODistributer | impl | inactive | no |
@@ -156,6 +158,7 @@
 | ethereum | `0x952df3e800f0649c2d0b130c206bb547d475387c` | Buoy3Pool | impl | inactive | no |
 | ethereum | `0x9645cee8d720a70e2d79b7d7c7070dc7a580bb0f` | GenericCream | impl | inactive | no |
 | ethereum | `0x9c05b74b2dc5a57682e66ddf35e1f220b5ac0aa1` | RedemptionPoolAlloyX | impl | inactive | no |
+| ethereum | `0x9cd696a225d7a3c9ce1ed71f5bdb031234a86d79` | Vyper_contract | impl | inactive | no |
 | ethereum | `0xa28693bf01dc261887b238646bb9636cb3a3730b` | GROVesting | impl | inactive | no |
 | ethereum | `0xa646109d183f83225e861c0acb7fe53e78d21f90` | tokenCounter | impl | inactive | no |
 | ethereum | `0xa699d9a4f9970bbf3fcf8a6100189f8acdbf18e8` | GenericCream | impl | inactive | no |
@@ -167,7 +170,7 @@
 | ethereum | `0xb732473b9b1e56f8d1e68bc3fd8bb65e9a338e03` | GVault-2 | impl | live | no |
 | ethereum | `0xb74baccdf70f6b8d009fd7a7fb4cc3755ad00921` | GenericCream | impl | inactive | no |
 | ethereum | `0xbc1c7ab50e423b28ec1b76b75fcafc2b0a498d8a` | PnLFixedRate | impl | inactive | no |
-| ethereum | `0xbcb91e689114b9cc865ad7871845c95241df4105` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0xbcb91e689114b9cc865ad7871845c95241df4105` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0xbd35356d494934f71cf39205853d152b3811477c` | xGro | impl | inactive | no |
 | ethereum | `0xbd49a881e5e87d4d078536e9d11475453013b455` | StrategyHarvestStable | impl | inactive | no |
 | ethereum | `0xbd5ff7ec8fe734eae41204d2cd0122cae22eec41` | RouterOracle | impl | live | no |
@@ -207,10 +210,3 @@
 | ethereum | `0xf67a426e110c74c566174a37c9269780fb48096d` | PnL | impl | inactive | no |
 | ethereum | `0xfac5bbf09c7421a2dc7288163864f5d0bd708f03` | xGro | impl | inactive | no |
 | ethereum | `0xfe620d20b3ed77ec0934fbe9df2147f6f3c62599` | RouterOracle-2 | impl | live | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x6a01bc748d71489372bd8fb743b23f63d99aac85`
-- ethereum `0x8029157b06be67693dc0e94fbfc55b200180f548`
-- ethereum `0x9cd696a225d7a3c9ce1ed71f5bdb031234a86d79`

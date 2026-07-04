@@ -1,0 +1,34 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.17;
+
+import "./base/SickleStorage.sol";
+import "./base/Multicall.sol";
+
+/// @title Sickle contract
+/// @author vfat.tools
+/// @notice Sickle facilitates farming and interactions with MasterChef
+/// contracts
+/// @dev Base contract inheriting from all the other "manager" contracts
+contract Sickle is SickleStorage, Multicall {
+    /// @notice Function to receive ETH
+    receive() external payable { }
+
+    /// @param sickleRegistry_ Address of the SickleRegistry contract
+    constructor(address sickleRegistry_)
+        initializer
+        Multicall(sickleRegistry_)
+    {
+        _Sickle_initialize(address(0));
+    }
+
+    /// @param sickleOwner_ Address of the Sickle owner
+    function initialize(address sickleOwner_) external initializer {
+        _Sickle_initialize(sickleOwner_);
+    }
+
+    /// INTERNALS ///
+
+    function _Sickle_initialize(address sickleOwner_) internal {
+        SickleStorage._SickleStorage_initialize(sickleOwner_);
+    }
+}

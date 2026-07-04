@@ -1,0 +1,18 @@
+{
+  "component": "WooWithdrawManagerV2-3",
+  "main_contract": "WooWithdrawManagerV2",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbfe3d22b223909a06469854e7af374ab449f09ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

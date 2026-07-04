@@ -1,0 +1,18 @@
+{
+  "component": "PlasmaVaultRequestSharesFuse-3",
+  "main_contract": "PlasmaVaultRequestSharesFuse",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xef40141ea3263004d398136ff9eb75e5d6743c09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

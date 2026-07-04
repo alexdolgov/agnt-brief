@@ -5,9 +5,9 @@ import {IERC165} from "openzeppelin-contracts/utils/introspection/IERC165.sol";
 
 import {INFTContractMetadata} from "./INFTContractMetadata.sol";
 
-import {ERC721ACloneable} from "seadrop/src/clones/ERC721ACloneable.sol";
+import {ERC721ACloneable} from "./ERC721ACloneable.sol";
 
-import {TwoStepOwnable} from "utility-contracts/TwoStepOwnable.sol";
+import {Ownable2StepUpgradeable} from "openzeppelin-contracts-upgradeable/access/Ownable2StepUpgradeable.sol";
 
 /**
  * @title  ERC721ContractMetadataCloneable
@@ -22,7 +22,7 @@ import {TwoStepOwnable} from "utility-contracts/TwoStepOwnable.sol";
  */
 abstract contract ERC721ContractMetadataCloneable is
     ERC721ACloneable, // 3 inherited components
-    TwoStepOwnable, // 2 inherited components
+    Ownable2StepUpgradeable, // 2 inherited components
     INFTContractMetadata // 1 inherited component
 {
     /// @notice Track the max supply.
@@ -38,6 +38,8 @@ abstract contract ERC721ContractMetadataCloneable is
     ///         for random reveals.
     /// @custom:audit Made `internal` compared to `seadrop` library.
     bytes32 internal _provenanceHash;
+
+    error OnlyOwner();
 
     /**
      * @dev Reverts if the sender is not the owner or the contract itself.
@@ -72,7 +74,7 @@ abstract contract ERC721ContractMetadataCloneable is
 
         // Emit an event with the update.
         if (totalSupply() != 0) {
-            emit BatchMetadataUpdate(1, _nextTokenId() - 1);
+            emit BatchMetadataUpdate(_startTokenId(), _nextTokenId() - 1);
         }
     }
 

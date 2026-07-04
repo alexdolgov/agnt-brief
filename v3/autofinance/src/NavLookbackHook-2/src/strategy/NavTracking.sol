@@ -26,13 +26,13 @@ library NavTracking {
             if (self.lastFinalizedTimestamp > 0) {
                 self.currentIndex = (self.currentIndex + 1) % MAX_NAV_TRACKING;
             }
-            if (self.len < MAX_NAV_TRACKING) {
-                self.len += 1;
-            }
             self.lastFinalizedTimestamp = timestamp;
         }
 
         self.history[self.currentIndex] = navPerShare;
+        if (self.len < MAX_NAV_TRACKING) {
+            self.len += 1;
+        }
 
         emit NavHistoryInsert(navPerShare, timestamp);
     }

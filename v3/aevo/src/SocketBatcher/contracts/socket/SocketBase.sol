@@ -18,8 +18,8 @@ abstract contract SocketBase is SocketConfig, AccessControlExtended {
     bytes32 public immutable version;
     // ChainSlug for this deployed socket instance
     uint32 public immutable chainSlug;
-    // Counter for messages going outbound from current chain
-    uint64 public globalMessageCount;
+    // Counter for messages giong outbound from current chain
+    uint64 public globalMessageCount = 0;
 
     /**
      * @dev constructs a new Socket contract instance.

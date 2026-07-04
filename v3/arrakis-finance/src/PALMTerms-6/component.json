@@ -1,0 +1,18 @@
+{
+  "component": "PALMTerms-6",
+  "main_contract": "PALMTerms",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc73fb100a995b33f9fa181d420f4c8d74506df66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

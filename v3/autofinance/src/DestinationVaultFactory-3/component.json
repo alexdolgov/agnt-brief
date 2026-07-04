@@ -1,0 +1,26 @@
+{
+  "component": "DestinationVaultFactory-3",
+  "main_contract": "DestinationVaultFactory",
+  "source_file_count": 69,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xc895bbd0fcb39bdcb66151fa6316b5b13f5c288a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd6683672269b6a109a51825e71a015678559225a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

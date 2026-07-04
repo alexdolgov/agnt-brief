@@ -1,23 +1,47 @@
 {
   "component": "OnERC721Received",
   "main_contract": "OnERC721Received",
-  "source_file_count": 10,
-  "deployment_count": 2,
+  "source_file_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x0e87b7d4a55b0c8fd3940e833c614dfc5e291550",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x564b759c1a7976476649452e804a13b963610065",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xd3131a72256dce18ec687a33f30e7ee3989729b0",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x34302c4267d0da0a8c65510282cc22e9e39df51f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3080d639341b62d870dc0a1220cd198c24b5cae7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6152a41f6e8cab97a58d7cc8f07b1578006fa956",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x27eb327b7255a2bf666ebb4d60ab4752da4611b9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

@@ -1,11 +1,19 @@
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.19;
+// SPDX-License-Identifier: GPL-3.0-or-later
+pragma solidity 0.8.25;
 
 import {AccessControlDefaultAdminRules} from
-    "openzeppelin-contracts/contracts/access/AccessControlDefaultAdminRules.sol";
+    "openzeppelin-contracts/contracts/access/extensions/AccessControlDefaultAdminRules.sol";
 import {SafeERC20, IERC20} from "openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
+import {IDividendDistributor} from "./IDividendDistributor.sol";
 
-contract DividendDistribution is AccessControlDefaultAdminRules {
+/// @notice Distributes tokens to users over time.
+/// @dev This contract allows a DISTRIBUTOR_ROLE to create a distribution of tokens to users.
+/// It is intended as a flexible way to handle payouts while recording those payouts on-chain.
+/// A distribution is created with a pool of tokens and an end time.
+/// A DISTRIBUTOR_ROLE can then distribute from that pool to users until the end time.
+/// After the end time, the DISTRIBUTOR_ROLE can reclaim any remaining tokens.
+/// @author Dinari (https://github.com/dinaricrypto/sbt-contracts/blob/main/src/dividend/DividendDistribution.sol)
+contract DividendDistribution is AccessControlDefaultAdminRules, IDividendDistributor {
     using SafeERC20 for IERC20;
 
     /// ------------------- Types ------------------- ///
@@ -17,6 +25,8 @@ contract DividendDistribution is AccessControlDefaultAdminRules {
         uint256 endTime; // The timestamp when the distribution stops
     }
 
+    event MinDistributionTimeSet(uint64 minDistributionTime);
+
     // Event emitted when tokens are claimed from an distribution.
     event Distributed(uint256 indexed distributionId, address indexed account, uint256 amount);
 
@@ -27,7 +37,7 @@ contract DividendDistribution is AccessControlDefaultAdminRules {
     event DistributionReclaimed(uint256 indexed distributionId, uint256 totalReclaimed);
 
     // Custom errors
-    error EndTimeInPast(); // Error thrown when endtime is in the past.
+    error EndTimeBeforeMin(); // Error thrown when endtime is prior to minDistributionTime from now.
     error DistributionRunning(); // Error thrown when trying to reclaim tokens from an distribution that is still running.
     error DistributionEnded(); // Error thrown when trying to claim tokens from an distribution that has ended.
     error NotReclaimable(); // Error thrown when the distribution has already been reclaimed or does not exist.
@@ -42,28 +52,32 @@ contract DividendDistribution is AccessControlDefaultAdminRules {
     // Mapping to store the information of each distribution by its ID.
     mapping(uint256 => Distribution) public distributions;
 
+    /// @notice The next distribution ID to be used.
     uint256 public nextDistributionId;
+
+    /// @notice The minimum time that must pass between the creation of a distribution and its end time.
+    uint64 public minDistributionTime = 1 days;
 
     /// ------------------- Initialization ------------------- ///
 
     constructor(address owner) AccessControlDefaultAdminRules(0, owner) {}
 
+    /// @notice Set the minimum time that must pass between the creation of a distribution and its end time.
+    function setMinDistributionTime(uint64 _minDistributionTime) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        minDistributionTime = _minDistributionTime;
+        emit MinDistributionTimeSet(_minDistributionTime);
+    }
+
     /// ------------------- Distribution Lifecycle ------------------- ///
 
-    /**
-     * @notice Creates a new distribution.
-     * @param token The address of the token to be distributed.
-     * @param totalDistribution The total amount of tokens to be distributed.
-     * @param endTime The timestamp when the distribution stops.
-     * @dev Only the owner can create a new distribution.
-     */
+    /// @inheritdoc IDividendDistributor
     function createDistribution(address token, uint256 totalDistribution, uint256 endTime)
         external
         onlyRole(DISTRIBUTOR_ROLE)
         returns (uint256 distributionId)
     {
         // Check if the endtime is in the past.
-        if (endTime <= block.timestamp) revert EndTimeInPast();
+        if (endTime <= block.timestamp + minDistributionTime) revert EndTimeBeforeMin();
 
         // Load the next distribution id into memory and increment it for the next time
         distributionId = nextDistributionId++;
@@ -78,13 +92,7 @@ contract DividendDistribution is AccessControlDefaultAdminRules {
         IERC20(token).safeTransferFrom(msg.sender, address(this), totalDistribution);
     }
 
-    /**
-     * @notice Distributes tokens to recipient.
-     * @param _distributionId The ID of the distribution.
-     * @param _recipient The address of the user claiming tokens.
-     * @param _amount The amount of tokens the user is claiming.
-     * @dev Can only be called by the owner.
-     */
+    /// @inheritdoc IDividendDistributor
     function distribute(uint256 _distributionId, address _recipient, uint256 _amount)
         external
         onlyRole(DISTRIBUTOR_ROLE)
@@ -102,21 +110,18 @@ contract DividendDistribution is AccessControlDefaultAdminRules {
         IERC20(distributions[_distributionId].token).safeTransfer(_recipient, _amount);
     }
 
-    /**
-     * @notice Reclaims unclaimed tokens from an distribution.
-     * @param _distributionId The ID of the distribution to reclaim tokens from.
-     * @dev Can only be called by the distributor after the claim window has passed.
-     */
+    /// @inheritdoc IDividendDistributor
     function reclaimDistribution(uint256 _distributionId) external onlyRole(DISTRIBUTOR_ROLE) {
         uint256 endTime = distributions[_distributionId].endTime;
         if (endTime == 0) revert NotReclaimable();
         if (block.timestamp < endTime) revert DistributionRunning();
 
         uint256 totalReclaimed = distributions[_distributionId].remainingDistribution;
-        emit DistributionReclaimed(_distributionId, totalReclaimed);
 
         address token = distributions[_distributionId].token;
         delete distributions[_distributionId];
+
+        emit DistributionReclaimed(_distributionId, totalReclaimed);
 
         // Transfer the unclaimed tokens back to the distributor
         IERC20(token).safeTransfer(msg.sender, totalReclaimed);

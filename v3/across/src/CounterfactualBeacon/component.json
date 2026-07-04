@@ -2,10 +2,26 @@
   "component": "CounterfactualBeacon",
   "main_contract": "CounterfactualBeacon",
   "source_file_count": 18,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8a5f5a624a806c79384e282d6d44dc2701c2daca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc186fa914353c44b2e33ebe05f21846f1048beda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

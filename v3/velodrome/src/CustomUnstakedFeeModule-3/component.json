@@ -1,0 +1,18 @@
+{
+  "component": "CustomUnstakedFeeModule-3",
+  "main_contract": "CustomUnstakedFeeModule",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5a6f7f478cd55904216f1354b2a36d56b826678a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

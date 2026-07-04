@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-// solhint-disable max-line-length
-
 pragma solidity ^0.8.24;
 
 library Roles {
@@ -15,13 +13,8 @@ library Roles {
     bytes32 public constant DESTINATION_VAULT_FACTORY_MANAGER = keccak256("CREATE_DESTINATION_VAULT_ROLE");
     bytes32 public constant DESTINATION_VAULT_REGISTRY_MANAGER = keccak256("DESTINATION_VAULT_REGISTRY_MANAGER");
     bytes32 public constant DESTINATION_VAULT_MANAGER = keccak256("DESTINATION_VAULT_MANAGER");
-    bytes32 public constant DESTINATION_VAULT_CREATOR = keccak256("DESTINATION_VAULT_CREATOR");
-
     bytes32 public constant FLUID_DESTINATION_VAULT_MANAGER = keccak256("FLUID_DESTINATION_VAULT_MANAGER");
     bytes32 public constant DESTINATION_MERKLE_CLAIM_MANAGER = keccak256("DESTINATION_MERKLE_CLAIM_MANAGER");
-    bytes32 public constant EULER_REWARD_MANAGER = keccak256("EULER_REWARD_MANAGER");
-    bytes32 public constant EULER_REWARD_EXECUTOR = keccak256("EULER_REWARD_EXECUTOR");
-    bytes32 public constant DESTINATION_VAULT_SHUTDOWN_MANAGER = keccak256("DESTINATION_VAULT_SHUTDOWN_MANAGER");
 
     // Auto Pool Factory and Registry Management
     bytes32 public constant AUTO_POOL_REGISTRY_UPDATER = keccak256("REGISTRY_UPDATER");
@@ -36,13 +29,6 @@ library Roles {
     bytes32 public constant AUTO_POOL_MANAGER = keccak256("AUTO_POOL_ADMIN");
     bytes32 public constant REBALANCER = keccak256("REBALANCER_ROLE");
     bytes32 public constant STATS_HOOK_POINTS_ADMIN = keccak256("STATS_HOOK_POINTS_ADMIN");
-    bytes32 public constant AUTO_POOL_WITHDRAWAL_QUEUE_MANAGER = keccak256("AUTO_POOL_WITHDRAWAL_QUEUE_MANAGER");
-    bytes32 public constant AUTO_POOL_DIRECT_DESTINATION_MANAGER = keccak256("AUTO_POOL_DIRECT_DESTINATION_MANAGER");
-    bytes32 public constant AUTO_POOL_DIRECT_DESTINATION_DEPOSITOR = keccak256("AUTO_POOL_DIRECT_DESTINATION_DEPOSITOR");
-    bytes32 public constant AUTO_POOL_DIRECT_DESTINATION_WITHDRAWER =
-        keccak256("AUTO_POOL_DIRECT_DESTINATION_WITHDRAWER");
-    bytes32 public constant AUTO_POOL_SYS_DEPOSITOR = keccak256("AUTO_POOL_SYS_DEPOSITOR");
-    bytes32 public constant AUTO_POOL_DEST_REDEEMER = keccak256("AUTO_POOL_DEST_REDEEMER");
 
     // Reward Management
     bytes32 public constant LIQUIDATOR_MANAGER = keccak256("LIQUIDATOR_ROLE");
@@ -51,7 +37,6 @@ library Roles {
     bytes32 public constant EXTRA_REWARD_MANAGER = keccak256("EXTRA_REWARD_MANAGER_ROLE");
     bytes32 public constant REWARD_LIQUIDATION_EXECUTOR = keccak256("REWARD_LIQUIDATION_EXECUTOR");
     bytes32 public constant BANK_SWAP_MANAGER = keccak256("BANK_SWAP_MANAGER");
-    bytes32 public constant AUTOPOOL_DESTINATION_REWARD_EXECUTOR = keccak256("AUTOPOOL_DESTINATION_REWARD_EXECUTOR");
 
     // Statistics and Reporting
     bytes32 public constant STATS_CALC_REGISTRY_MANAGER = keccak256("STATS_CALC_REGISTRY_MANAGER");
@@ -80,14 +65,12 @@ library Roles {
     bytes32 public constant ORACLE_MANAGER = keccak256("ORACLE_MANAGER_ROLE");
     bytes32 public constant CUSTOM_ORACLE_EXECUTOR = keccak256("CUSTOM_ORACLE_EXECUTOR");
     bytes32 public constant MAVERICK_FEE_ORACLE_EXECUTOR = keccak256("MAVERICK_FEE_ORACLE_MANAGER");
-    bytes32 public constant PENDLE_ORACLE_REGISTRATION_MANAGER = keccak256("PENDLE_ORACLE_REGISTRATION_MANAGER");
 
     // AccToke Roles
     bytes32 public constant ACC_TOKE_MANAGER = keccak256("ACC_TOKE_MANAGER");
 
     // Admin Roles
     bytes32 public constant TOKEN_RECOVERY_MANAGER = keccak256("TOKEN_RECOVERY_ROLE");
-    bytes32 public constant TOKEN_RECOVERY_ADMIN = keccak256("TOKEN_RECOVERY_ADMIN");
     bytes32 public constant INFRASTRUCTURE_MANAGER = keccak256("INFRASTRUCTURE_MANAGER");
 
     // Cross chain communications roles
@@ -98,7 +81,4 @@ library Roles {
 
     // Backing Oracle
     bytes32 public constant BACKING_ORACLE_MANAGER = keccak256("BACKING_ORACLE_MANAGER");
-
-    // Silo Vault Reward Manager
-    bytes32 public constant DESTINATION_VAULT_SILO_MANAGER = keccak256("DESTINATION_VAULT_SILO_MANAGER");
 }

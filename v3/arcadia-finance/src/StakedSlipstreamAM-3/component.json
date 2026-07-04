@@ -1,0 +1,18 @@
+{
+  "component": "StakedSlipstreamAM-3",
+  "main_contract": "StakedSlipstreamAM",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "WhitelistWrappedPlasmaVaultFactory",
   "main_contract": "WhitelistWrappedPlasmaVaultFactory",
   "source_file_count": 38,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa5f2e760b0d9586db391098b9ac1f97f1a7d8db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

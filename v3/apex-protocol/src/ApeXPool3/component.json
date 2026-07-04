@@ -2,10 +2,18 @@
   "component": "ApeXPool3",
   "main_contract": "ApeXPool3",
   "source_file_count": 4,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf7d1a0c128d392d99c8bd4e6b880ff95e8b907b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "mantle",
       "chain_id": 5000,

@@ -1,0 +1,18 @@
+{
+  "component": "Copump-4",
+  "main_contract": "Copump",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x38fea0959656ff4009a8d807adaa5247dbfeb590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

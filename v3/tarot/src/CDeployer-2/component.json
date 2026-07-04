@@ -1,15 +1,55 @@
 {
   "component": "CDeployer-2",
   "main_contract": "CDeployer",
-  "source_file_count": 20,
-  "deployment_count": 1,
+  "source_file_count": 18,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb6193df61351736e5190bf1deb2e4f0769bd1bf2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd4a6a05081fd270dc111332845a778a49fe01741",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x952e9c6391d9c0f6c6174d395aa9b4ec1030335a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x6b80958cfd3ceb8af809e3ed441b64ab2e7c7227",
+      "address": "0xee618ce849f8fe87981e6455653635d4d06c64bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd4a6a05081fd270dc111332845a778a49fe01741",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6108feaa628155b073150f408d0b390ec3121834",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

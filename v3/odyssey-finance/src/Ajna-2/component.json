@@ -1,0 +1,20 @@
+{
+  "component": "Ajna-2",
+  "main_contract": "Ajna",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://3883616881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqoKcdbT2jNpuAI4A3RLd%2Fuploads%2FfUYd8p9pJEcVmjIGTTJ6%2FAudit_Report_Odyssey_REVIEW.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82e6b5675977f0650c88659716a2210f536ac3a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

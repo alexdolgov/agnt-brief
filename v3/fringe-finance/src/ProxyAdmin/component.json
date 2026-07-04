@@ -2,7 +2,7 @@
   "component": "ProxyAdmin",
   "main_contract": "ProxyAdmin",
   "source_file_count": 70,
-  "deployment_count": 16,
+  "deployment_count": 11,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -41,31 +41,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x553ec478a66be27ba25a6bc5db20aec2ed6a1b4a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
       "address": "0x7f4a928af1508356fe37ae196f4fb780f4f7b948",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x85ff346f4412b6dc7f6a31ac45ebf38272bb940b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x934452d12b24b834877d6096ebdecbbf0e97adda",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -97,14 +73,6 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xb06fba9db5be606a2b84c7230316bbb1e9cdcf03",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
       "address": "0xb404765105f1f556a5f50a852d0035b45b7adb84",
       "is_proxy": false,
       "implementation_address": null,
@@ -122,14 +90,6 @@
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xe18be0113c38c91b3b429d04fdeb84359fbcb2eb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xed9d63a96c27f87b07115b56b2e3572827f21646",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

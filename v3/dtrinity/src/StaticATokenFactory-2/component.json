@@ -1,0 +1,18 @@
+{
+  "component": "StaticATokenFactory-2",
+  "main_contract": "StaticATokenFactory",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb8f92b9e8b368bfe690a5c6f39a0d6920e1d877",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

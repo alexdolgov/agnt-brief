@@ -1,0 +1,20 @@
+{
+  "component": "ERC4626OracleHardcodeQuote-2",
+  "main_contract": "ERC4626OracleHardcodeQuote",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20-%20Silo%20-%20Aggregator%20and%20Manageable%20Oracle%20-%20Final%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x72b387cede7f25d24e9f139e2175bb80d135945f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

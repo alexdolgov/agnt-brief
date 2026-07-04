@@ -1,0 +1,18 @@
+{
+  "component": "CErc20Delegator-22",
+  "main_contract": "CErc20Delegator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x20d5d319c2964ecb52e1b006a4c059b7f6d6ad0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

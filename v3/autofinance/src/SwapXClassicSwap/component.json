@@ -1,0 +1,18 @@
+{
+  "component": "SwapXClassicSwap",
+  "main_contract": "SwapXClassicSwap",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x09cf827dd2a80281d5e1bbd210df526f4338eeb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

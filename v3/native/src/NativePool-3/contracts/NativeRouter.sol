@@ -33,10 +33,11 @@ contract NativeRouter is
 {
     using Orders for bytes;
     using SafeCast for uint256;
-    uint256 public constant TEN_THOUSAND_DENOMINATOR = 10000;
-    // keccak256("NativeSwapCalldata(bytes32 orders,address recipient,address signer,address feeRecipient,uint256 feeRate)")
+    uint public constant TEN_THOUSAND_DENOMINATOR = 10000;
     bytes32 private constant EXACT_INPUT_SIGNATURE_HASH =
-        0x50633b43aed804655952b7d637f3a9e9e37e437639698443e3c5b2136f0885b7;
+        keccak256(
+            "NativeSwapCalldata(bytes32 orders,address recipient,address signer,address feeRecipient,uint256 feeRate)"
+        );
 
     struct SwapCallbackData {
         bytes orders;
@@ -45,7 +46,12 @@ contract NativeRouter is
 
     event SwapCalculations(uint256 amountIn, address recipient);
 
-    function initialize(address factory, address weth9, address _widgetFeeSigner) public initializer {
+    function initialize(
+        address factory,
+        address weth9,
+        address _widgetFeeSigner,
+        address pancakeswapRouter
+    ) public initializer {
         initializeState(factory, weth9);
         __EIP712_init("native router", "1");
         __ReentrancyGuard_init();
@@ -53,6 +59,7 @@ contract NativeRouter is
         __UUPSUpgradeable_init();
         setWidgetFeeSigner(_widgetFeeSigner);
         __Pausable_init();
+        __ExternalSwapRouter_init(pancakeswapRouter);
     }
 
     /// @custom:oz-upgrades-unsafe-allow constructor
@@ -67,24 +74,11 @@ contract NativeRouter is
     function _authorizeUpgrade(address newImplementation) internal override onlyOwner {}
 
     function setWeth9Unwrapper(address payable _weth9Unwrapper) public override onlyOwner {
-        if (_weth9Unwrapper == address(0)) {
-            revert ZeroAddressInput();
-        }
+        require(_weth9Unwrapper != address(0), "zero address input");
         weth9Unwrapper = _weth9Unwrapper;
     }
 
-    function setPauser(address _pauser) external onlyOwner {
-        pauser = _pauser;
-    }
-
-    modifier onlyOwnerOrPauser() {
-        if (msg.sender != owner() && msg.sender != pauser) {
-            revert onlyOwnerOrPauserCanCall();
-        }
-        _;
-    }
-
-    function pause() external onlyOwnerOrPauser {
+    function pause() external onlyOwner {
         _pause();
     }
 
@@ -92,10 +86,15 @@ contract NativeRouter is
         _unpause();
     }
 
+    function setPancakeswapRouter(address _pancakeswapRouter) external onlyOwner {
+        _setPancakeswapRouter(_pancakeswapRouter);
+    }
+
     function setWidgetFeeSigner(address _widgetFeeSigner) public onlyOwner {
-        if (_widgetFeeSigner == address(0)) {
-            revert ZeroAddressInput();
-        }
+        require(
+            _widgetFeeSigner != address(0),
+            "Widget fee signer address specified should not be zero address"
+        );
         widgetFeeSigner = _widgetFeeSigner;
         emit SetWidgetFeeSigner(widgetFeeSigner);
     }
@@ -105,15 +104,11 @@ contract NativeRouter is
         int256 amount1Delta,
         bytes calldata _data
     ) external override whenNotPaused {
-        if (amount0Delta <= 0 && amount1Delta <= 0) {
-            revert InvalidDeltaValue(amount0Delta, amount1Delta);
-        }
+        require(amount0Delta > 0 || amount1Delta > 0, "Delta is negative");
         SwapCallbackData memory data = abi.decode(_data, (SwapCallbackData));
 
         (Orders.Order memory order, ) = data.orders.decodeFirstOrder();
-        if (msg.sender != order.buyer) {
-            revert CallbackNotFromOrderBuyer(msg.sender);
-        }
+        require(msg.sender == order.buyer, "callback is not from order buyer");
 
         CallbackValidation.verifyCallback(factory, order.buyer);
 
@@ -121,50 +116,26 @@ contract NativeRouter is
         pay(order.sellerToken, data.payer, msg.sender, amountToPay);
     }
 
-    function setContractCallerWhitelistToggle(bool value) external onlyOwner {
-        contractCallerWhitelistEnabled = value;
-    }
-
-    function setContractCallerWhitelist(address caller, bool value) external onlyOwner {
-        contractCallerWhitelist[caller] = value;
-    }
-
-    modifier onlyEOAorWhitelistContract() {
-        if (msg.sender != tx.origin && contractCallerWhitelistEnabled && !contractCallerWhitelist[msg.sender]) {
-            revert CallerNotEOAAndNotWhitelisted();
-        }
-        _;
-    }
-
     function exactInputSingle(
         ExactInputParams memory params
-    ) external payable override nonReentrant whenNotPaused onlyEOAorWhitelistContract returns (uint256 amountOut) {
-        if (params.orders.hasMultiplePools()) {
-            revert MultipleOrdersForInputSingle();
-        }
-        if (params.fallbackSwapDataArray.length > 1) {
-            revert MultipleFallbackDataForInputSingle();
-        }
-        if (!verifyWidgetFeeSignature(params, params.widgetFeeSignature)) {
-            revert InvalidWidgetFeeSignature();
-        }
-        if (params.widgetFee.feeRate > TEN_THOUSAND_DENOMINATOR) {
-            revert InvalidWidgetFeeRate();
-        }
+    ) external payable override nonReentrant whenNotPaused returns (uint256 amountOut) {
+        require(!params.orders.hasMultiplePools(), "exactInputSingle: multiple orders");
+        require(
+            verifyWidgetFeeSignature(params, params.widgetFeeSignature),
+            "widget fee signature is invalid"
+        );
+        require(params.widgetFee.feeRate <= TEN_THOUSAND_DENOMINATOR, "invalid widget fee");
         bool hasAlreadyPaid;
         (Orders.Order memory order, ) = params.orders.decodeFirstOrder();
         if (params.amountIn == 0) {
             hasAlreadyPaid = true;
             params.amountIn = IERC20(order.sellerToken).balanceOf(address(this));
         }
-        if (params.amountIn <= 0) {
-            revert InvalidAmountInValue();
-        }
-        if (order.caller != msg.sender) {
-            revert CallerNotMsgSender(order.caller, msg.sender);
-        }
+        require(params.amountIn > 0, "invalid amountIn value");
+        require(order.txOrigin == msg.sender, "txOrigin needs to be msg.sender");
 
-        uint256 widgetFeeAmount = (params.amountIn * params.widgetFee.feeRate) / TEN_THOUSAND_DENOMINATOR;
+        uint widgetFeeAmount = (params.amountIn * params.widgetFee.feeRate) /
+            TEN_THOUSAND_DENOMINATOR;
 
         if (msg.value > 0 && order.sellerToken == WETH9) {
             TransferHelper.safeTransferETH(params.widgetFee.feeRecipient, widgetFeeAmount);
@@ -195,42 +166,39 @@ contract NativeRouter is
         amountOut = exactInputInternal(
             params.amountIn,
             params.recipient,
-            SwapCallbackData({orders: params.orders, payer: hasAlreadyPaid ? address(this) : msg.sender}),
-            params.fallbackSwapDataArray.length > 0 ? params.fallbackSwapDataArray[0] : bytes("")
+            SwapCallbackData({
+                orders: params.orders,
+                payer: hasAlreadyPaid ? address(this) : msg.sender
+            })
         );
-        if (amountOut < params.amountOutMinimum) {
-            revert NotEnoughAmountOut(amountOut, params.amountOutMinimum);
-        }
+        require(amountOut >= params.amountOutMinimum, "Too little received");
 
-        if (address(this).balance > 0) TransferHelper.safeTransferETH(msg.sender, address(this).balance);
+        if (address(this).balance > 0)
+            TransferHelper.safeTransferETH(msg.sender, address(this).balance);
     }
 
     /// @inheritdoc INativeRouter
     function exactInput(
         ExactInputParams memory params
-    ) external payable override nonReentrant whenNotPaused onlyEOAorWhitelistContract returns (uint256 amountOut) {
-        if (!verifyWidgetFeeSignature(params, params.widgetFeeSignature)) {
-            revert InvalidWidgetFeeSignature();
-        }
-        if (params.widgetFee.feeRate > TEN_THOUSAND_DENOMINATOR) {
-            revert InvalidWidgetFeeRate();
-        }
+    ) external payable override nonReentrant whenNotPaused returns (uint256 amountOut) {
+        require(
+            verifyWidgetFeeSignature(params, params.widgetFeeSignature),
+            "widget fee signature is invalid"
+        );
+        require(params.widgetFee.feeRate <= TEN_THOUSAND_DENOMINATOR, "invalid widget fee");
         bool hasAlreadyPaid;
         (Orders.Order memory order, ) = params.orders.decodeFirstOrder();
         if (params.amountIn == 0) {
             hasAlreadyPaid = true;
             params.amountIn = IERC20(order.sellerToken).balanceOf(address(this));
         }
-        if (params.amountIn <= 0) {
-            revert InvalidAmountInValue();
-        }
-        if (order.caller != msg.sender) {
-            revert CallerNotMsgSender(order.caller, msg.sender);
-        }
+        require(params.amountIn > 0, "invalid amountIn value");
+        require(order.txOrigin == msg.sender, "txOrigin needs to be msg.sender");
 
         address payer = hasAlreadyPaid ? address(this) : msg.sender;
 
-        uint256 widgetFeeAmount = (params.amountIn * params.widgetFee.feeRate) / TEN_THOUSAND_DENOMINATOR;
+        uint widgetFeeAmount = (params.amountIn * params.widgetFee.feeRate) /
+            TEN_THOUSAND_DENOMINATOR;
         if (msg.value > 0 && order.sellerToken == WETH9) {
             TransferHelper.safeTransferETH(params.widgetFee.feeRecipient, widgetFeeAmount);
             emit WidgetFeeTransfer(
@@ -257,19 +225,8 @@ contract NativeRouter is
         params.amountIn -= widgetFeeAmount;
         emit SwapCalculations(params.amountIn, params.recipient);
 
-        uint256 fallbackSwapDataIdx = 0;
         while (true) {
             bool hasMultiplePools = params.orders.hasMultiplePools();
-            bytes memory fallbackSwapData;
-            if (order.buyer == ONE_INCH_ROUTER_ADDRESS || order.buyer == UNISWAP_V3_ROUTER_ADDRESS) {
-                if (params.fallbackSwapDataArray.length <= fallbackSwapDataIdx) {
-                    revert Missing1inchCalldata();
-                }
-                fallbackSwapData = params.fallbackSwapDataArray[fallbackSwapDataIdx];
-                unchecked {
-                    fallbackSwapDataIdx++;
-                }
-            }
             // the outputs of prior swaps become the inputs to subsequent ones
             params.amountIn = exactInputInternal(
                 params.amountIn,
@@ -277,26 +234,23 @@ contract NativeRouter is
                 SwapCallbackData({
                     orders: params.orders.getFirstOrder(), // only the first pool in the path is necessary
                     payer: payer
-                }),
-                fallbackSwapData
+                })
             );
 
             // decide whether to continue or terminate
             if (hasMultiplePools) {
                 payer = address(this);
                 params.orders = params.orders.skipOrder();
-                (order, ) = params.orders.decodeFirstOrder();
             } else {
                 amountOut = params.amountIn;
                 break;
             }
         }
 
-        if (amountOut < params.amountOutMinimum) {
-            revert NotEnoughAmountOut(amountOut, params.amountOutMinimum);
-        }
+        require(amountOut >= params.amountOutMinimum, "Too little received");
 
-        if (address(this).balance > 0) TransferHelper.safeTransferETH(msg.sender, address(this).balance);
+        if (address(this).balance > 0)
+            TransferHelper.safeTransferETH(msg.sender, address(this).balance);
     }
 
     // private methods
@@ -304,8 +258,7 @@ contract NativeRouter is
     function exactInputInternal(
         uint256 amountIn,
         address recipient,
-        SwapCallbackData memory data,
-        bytes memory fallbackSwapData
+        SwapCallbackData memory data
     ) private returns (uint256 amountOut) {
         (Orders.Order memory order, bytes memory signature) = data.orders.decodeFirstOrder();
 
@@ -319,26 +272,19 @@ contract NativeRouter is
                 recipient,
                 abi.encode(data)
             );
-        } else if (order.buyer == PANCAKESWAP_ROUTER_ADDRESS) {
+        } else if (order.buyer == pancakeswapRouter) {
             (amount0Delta, amount1Delta) = swapPancake(order, amountIn, recipient, data.payer);
         } else if (order.buyer == UNISWAP_V3_ROUTER_ADDRESS) {
-            uint24 feeTier = uint24(bytes3(fallbackSwapData));
-            if (feeTier != 100 && feeTier != 500 && feeTier != 3000 && feeTier != 10000) {
-                revert InvalidUniswapV3FeeTierInput(feeTier);
-            }
-            (amount0Delta, amount1Delta) = swapUniswapV3(order, amountIn, recipient, data.payer, feeTier);
-        } else if (order.buyer == ONE_INCH_ROUTER_ADDRESS) {
-            if (fallbackSwapData.length <= 0) {
-                revert Missing1inchCalldata();
-            }
-            (amount0Delta, amount1Delta) = swap1inch(order, amountIn, recipient, data.payer, fallbackSwapData);
+            (amount0Delta, amount1Delta) = swapUniswapV3(order, amountIn, recipient, data.payer);
         } else {
-            revert InvalidOrderBuyer();
+            revert("invalid order buyer");
         }
         return uint256(-(amount0Delta > 0 ? amount1Delta : amount0Delta));
     }
 
-    function getExactInputMessageHash(ExactInputParams memory inputParams) internal pure returns (bytes32) {
+    function getExactInputMessageHash(
+        ExactInputParams memory inputParams
+    ) internal pure returns (bytes32) {
         bytes32 hash = keccak256(
             abi.encode(
                 EXACT_INPUT_SIGNATURE_HASH,
@@ -356,9 +302,7 @@ contract NativeRouter is
         ExactInputParams memory params,
         bytes memory signature
     ) internal view returns (bool) {
-        if (params.widgetFee.signer != widgetFeeSigner) {
-            revert InvalidWidgetFeeSinger();
-        }
+        require(params.widgetFee.signer == widgetFeeSigner, "widget fee signer is invalid");
         bytes32 digest = _hashTypedDataV4(getExactInputMessageHash(params));
 
         address recoveredSigner = ECDSAUpgradeable.recover(digest, signature);

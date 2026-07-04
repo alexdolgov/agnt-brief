@@ -1,23 +1,23 @@
 {
   "component": "SimpleRewarder",
   "main_contract": "SimpleRewarder",
-  "source_file_count": 10,
+  "source_file_count": 6,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1e35ebf875f8a2185edf22da02e7dbca0f5558ab",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc09d3bb5c87e8a8b239cda9551279801a92c317f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x492ebe7816b6934cc55f3001e1ac165a6c5afab0",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe8e1a94f0c960d64e483ca9088a7ec52e77194c2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

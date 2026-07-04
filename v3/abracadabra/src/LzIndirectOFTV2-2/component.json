@@ -1,18 +1,18 @@
 {
   "component": "LzIndirectOFTV2-2",
   "main_contract": "LzIndirectOFTV2",
-  "source_file_count": 26,
+  "source_file_count": 28,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x0c11084f9bb72e4305088d329a5a1a64a6df2a3c",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4035957323fc05ad9704230e3dc1e7663091d262",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

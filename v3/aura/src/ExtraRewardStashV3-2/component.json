@@ -1,20 +1,18 @@
 {
   "component": "ExtraRewardStashV3-2",
   "main_contract": "ExtraRewardStashV3",
-  "source_file_count": 11,
+  "source_file_count": 13,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://2520301408-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fr4kLuYPt1EhIEVbkxHD8%2Fuploads%2FDuQMD5ULdRtqravKUwxQ%2FCode4rena-Audit-Report-AuraFinance-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xf9c0f3431f859e773ed052758052e06b6d175742",
+      "address": "0x0dbffba31097510d291ad9150b150b3bb07d8852",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     }
   ]
 }

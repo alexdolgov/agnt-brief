@@ -1,0 +1,18 @@
+{
+  "component": "CWrappedNativeDelegate-6",
+  "main_contract": "CWrappedNativeDelegate",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x468a7bf78f11da82c90b17a93adb7b14999af5ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

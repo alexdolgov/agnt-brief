@@ -1,0 +1,26 @@
+{
+  "component": "Pool-2",
+  "main_contract": "Pool",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbdf5575ec1cc0a14bd3e94648a2453fdc7b56943",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8e557363ac9e5cbf09a2616a302ca3c8f6ab2b7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

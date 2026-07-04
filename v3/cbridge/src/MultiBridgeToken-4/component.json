@@ -1,0 +1,109 @@
+{
+  "component": "MultiBridgeToken-4",
+  "main_contract": "MultiBridgeToken",
+  "source_file_count": 9,
+  "deployment_count": 12,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x15eef5ad78c4d9e5f247e68978ca32b5d25ca524",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x212137adfabbc3525f73183022a403c70c4e8ae6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x33cce3a8ba0bf7ec56b2ccd2ad9306748a84e4cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa9c125bf4c8bb26f299c00969532b66732b1f758",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf3c96924d85566c031ddc48dbc63b2d71da6d0f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x23c748fef17518b8de55065338d7fa20327472eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7c83caeb3166a53aee0681549e6452a1f5d94107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xe9460bd2ffb12b668fa32919c785c239f974d37c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6c68eb45d5c2019136c8362cc928fb4f13f5385d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xda0019e7e50ee4990440b1aa5dffcac6e27ee27b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xee396d4ee16fd8c7d9bfb039d05f271d3c92e57d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfc6da929c031162841370af240dec19099861d3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

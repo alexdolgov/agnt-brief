@@ -1,57 +1,107 @@
 # bifi — deployments
 
-103 verified deployment(s) across 72 component(s).
+173 verified deployment(s) across 130 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| avalanche | `0x0a58f7955497b9e56d1328512e1ca427d689f577` | CoinSI | impl | live | yes |
-| avalanche | `0x1074fd06b7b1c65f5a450e81ed0245bc90bcba65` | MarketHandlerDataStorage-3 | impl | inactive | no |
-| avalanche | `0x18676678690985a08e5a541200ae0df924a8d85a` | UsdcSIDataStorage | impl | inactive | no |
+| avalanche | `0x0a58f7955497b9e56d1328512e1ca427d689f577` | CoinSI-3 | impl | live | yes |
+| avalanche | `0x1074fd06b7b1c65f5a450e81ed0245bc90bcba65` | MarketHandlerDataStorage-2 | impl | inactive | no |
+| avalanche | `0x18676678690985a08e5a541200ae0df924a8d85a` | UsdcSIDataStorage-2 | impl | inactive | no |
 | avalanche | `0x217db0d688889b5b151d26f267082f12f364b34b` | LiquidationManager | impl | live | yes |
-| avalanche | `0x23964e4677e178647bba6fb94f19e9b3ec95dbc2` | HandlerManager | impl | live | yes |
-| avalanche | `0x2449119d95753bb87fec59bc2ae02ad94137c95c` | UsdtHandlerDataStorage-2 | impl | inactive | no |
-| avalanche | `0x2b26d2fbd439de9ebdf2b681da32dacbeab6745c` | EtherSIDataStorage | impl | inactive | no |
+| avalanche | `0x23964e4677e178647bba6fb94f19e9b3ec95dbc2` | HandlerManager-6 | impl | live | yes |
+| avalanche | `0x2449119d95753bb87fec59bc2ae02ad94137c95c` | UsdtHandlerDataStorage-3 | impl | inactive | no |
+| avalanche | `0x25cb77ddda15075dcf3f681fdc36b14fed27f2a0` | InterestModel-5 | impl | live | yes |
+| avalanche | `0x2a8c94e2397361cde5114ca1618bab46eb8d71bf` | InterestModel-4 | impl | live | yes |
+| avalanche | `0x2b26d2fbd439de9ebdf2b681da32dacbeab6745c` | EtherSIDataStorage-2 | impl | inactive | no |
 | avalanche | `0x33672fe5df9539ca391e57332557c882c469fab0` | CoinSIDataStorage | impl | inactive | no |
 | avalanche | `0x34da42143b0c6e321ceb76931c637c12bd865f7e` | ReqCoinProxy | impl | live | no |
-| avalanche | `0x449e4e12d8fdc140c31f278352d64f5d1deb465e` | TokenSI | impl | live | yes |
-| avalanche | `0x56f243c149cae1c3bd5bea8fdc697181e0ea0f18` | CoinHandlerDataStorage-2 | impl | inactive | no |
-| avalanche | `0x74326d2bfbf22312158850ac3b4f7ae8a0a347fd` | Manager | impl | live | no |
-| avalanche | `0x7d2da860c2a22f6c6c58d5f004346fcf61ab7529` | EtherInterestModel | impl | inactive | no |
+| avalanche | `0x3b441812d2081366ae2422eef5a0ec592d7f9f69` | CoinHandlerProxy-5 | impl | live | yes |
+| avalanche | `0x3bb4b71bc78cef5202ca88ad061e2589dadf9fab` | OracleProxy-2 | impl | live | yes |
+| avalanche | `0x446881360d6d39779d292662fca9bc85c5789db3` | CoinHandlerProxy-6 | proxy | live | yes |
+| avalanche | `0x449e4e12d8fdc140c31f278352d64f5d1deb465e` | TokenSI-2 | impl | live | yes |
+| avalanche | `0x46a9d54ed07db5a470412d492ee437bf0d079cd7` | InterestModel-6 | impl | live | yes |
+| avalanche | `0x491f5e2661bb203b56834866dc08027c8be76f25` | CoinInterestModel-3 | impl | inactive | no |
+| avalanche | `0x4d30d8343093ba8512a411d4633592ea2be21d5d` | OracleProxy-2 | impl | live | yes |
+| avalanche | `0x56f243c149cae1c3bd5bea8fdc697181e0ea0f18` | CoinHandlerDataStorage-3 | impl | inactive | no |
+| avalanche | `0x71c5e8ab83f3cf56faa3e22b7a70aa44200a4f79` | OracleProxy-5 | impl | live | yes |
+| avalanche | `0x739068b9cb728c18f04cd7e7f0fe2ef707744c5e` | tokenHandler-10 | impl | live | yes |
+| avalanche | `0x74326d2bfbf22312158850ac3b4f7ae8a0a347fd` | Manager-2 | impl | live | no |
+| avalanche | `0x7d2da860c2a22f6c6c58d5f004346fcf61ab7529` | EtherInterestModel-2 | impl | inactive | no |
+| avalanche | `0x8385ea36dd4bdc84b3f2ac718c332e18c1e42d36` | tokenHandler-11 | proxy | live | yes |
+| avalanche | `0x85b8636c1f368d55c1fd5889e9e4391c30081d40` | CoinInterestModel-4 | impl | inactive | no |
 | avalanche | `0x8aba88e8a4ab28319b782199cb17f0001ee67984` | EtherHandlerProxy | impl | live | no |
-| avalanche | `0xd3ad10e22f8d74dd73a225b281bbf07cddebd028` | EtherHandlerDataStorage | impl | inactive | no |
-| avalanche | `0xd78fdca4864b8c888940765990043dc635a4d9d5` | MarketSIHandlerDataStorage-3 | impl | inactive | no |
-| avalanche | `0xdef0e8f0c3ab944a015554c83fbcf346d3c98f3b` | ManagerFlashLoan-2 | impl | live | yes |
-| avalanche | `0xe6211b248d624e57051a92d5614d12b37f9f682c` | MarketHandlerDataStorage-4 | impl | inactive | no |
-| avalanche | `0xe893233515b7d02dd4e3d888162d4c87dc837943` | ReqTokenProxy-2 | impl | live | no |
-| bsc | `0x00a29c8e3a2a8171506b5d67ba4d59441c267178` | InterestModel | impl | live | yes |
+| avalanche | `0x9ee793f342da93bc69e3c9df4a49e4d0cd7cd9ed` | MarketSIHandlerDataStorage-5 | impl | inactive | no |
+| avalanche | `0xbf81872c3fc6abdae40b8e98247a6593c3d5992c` | MarketSIHandlerDataStorage-6 | impl | inactive | no |
+| avalanche | `0xc4d1e935f02a44d44985e6b1c0ee1ee616fc146a` | ReqTokenProxy-2 | impl | live | no |
+| avalanche | `0xd377750886a5e13d2598ffbd64498da0de3f592b` | MarketHandlerDataStorage-2 | impl | inactive | no |
+| avalanche | `0xd3ad10e22f8d74dd73a225b281bbf07cddebd028` | EtherHandlerDataStorage-2 | impl | inactive | no |
+| avalanche | `0xd78fdca4864b8c888940765990043dc635a4d9d5` | MarketSIHandlerDataStorage-7 | impl | inactive | no |
+| avalanche | `0xdef0e8f0c3ab944a015554c83fbcf346d3c98f3b` | ManagerFlashLoan-3 | impl | live | yes |
+| avalanche | `0xe0322f306d285d97eb411cd2e9a86bb92b88c427` | managerDataStorage-3 | impl | live | yes |
+| avalanche | `0xe6211b248d624e57051a92d5614d12b37f9f682c` | MarketHandlerDataStorage-6 | impl | inactive | no |
+| avalanche | `0xe893233515b7d02dd4e3d888162d4c87dc837943` | ReqTokenProxy-3 | impl | live | no |
+| avalanche | `0xeb86b3592915dce5c0eff780f60b7b8b0af1b5b3` | ManagerSlotSetter | impl | inactive | no |
+| avalanche | `0xef0443c3871345d7e05a9f81232bdcd489f75e4f` | OracleProxy-6 | impl | live | yes |
+| avalanche | `0xfc36eecbf3fca5d65c73951d4cd7fea1d845c29c` | InterestModel-4 | impl | live | yes |
+| bsc | `0x00a29c8e3a2a8171506b5d67ba4d59441c267178` | InterestModel-2 | impl | live | yes |
 | bsc | `0x042f2b4838d98c58561fd3a047258603b77c8766` | MarketHandlerDataStorage | impl | inactive | no |
-| bsc | `0x073646a0e6eebe48416881c412cfe254e711f7a7` | MarketSIHandlerDataStorage | impl | inactive | no |
+| bsc | `0x073646a0e6eebe48416881c412cfe254e711f7a7` | MarketSIHandlerDataStorage-2 | impl | inactive | no |
 | bsc | `0x0a95a3b05da318983741360abe29dcda63dbb4d3` | managerDataStorage-2 | impl | live | yes |
+| bsc | `0x0ed96ea272e634ef5df9150a6d29a0c4c6f61567` | OracleProxy-3 | impl | live | yes |
 | bsc | `0x170b6aa872166ec2f8515c2b855c34b6c7563c18` | CoinHandlerProxy-2 | proxy | live | yes |
+| bsc | `0x17aacf9dc6ec3113ce50d943ca931330ad361407` | CoinSI-2 | impl | live | yes |
 | bsc | `0x17eebab632425e4574c1382e328340c2ee11573d` | Updater | impl | inactive | no |
+| bsc | `0x18be1743efc40228879c07d55f36ae9ff5127fc3` | CoinInterestModel-2 | impl | inactive | no |
 | bsc | `0x1b0ba3b6fc27c4189869e4a2ecef2404e3e3d996` | ReqTokenProxy | impl | live | yes |
 | bsc | `0x1cf8428c23753d315840293f097bd6d702f2df5f` | etherLiquidationManager-2 | impl | live | yes |
 | bsc | `0x1fb028d9676ab353482588a1eb2be5d62eeb384e` | marketSIHandlerDataStorage | impl | inactive | no |
 | bsc | `0x26363f6fb3a5dce8f9bdcf5ae40d772a1582184d` | interestModel-3 | impl | live | yes |
 | bsc | `0x26d0e4707af1c1daad8e9ba21b99cda7fd24c40b` | ReqTokenProxy | proxy | live | yes |
+| bsc | `0x2a29598cbc17ba112c8fd0e07fbf5402ef57e6b8` | tokenHandler-2 | proxy | live | yes |
 | bsc | `0x2e092daa1db9822382028a4e1b4f7867188df97e` | Observer | impl | inactive | no |
 | bsc | `0x327dce0ad2ca4ae718b94ae6f5b7eec9a6cbf0b4` | marketSIHandlerDataStorage-2 | impl | inactive | no |
 | bsc | `0x3513bab078e69209d5749291fc540f744d32993f` | StrategyLogic-2 | impl | live | yes |
-| bsc | `0x38f64765d37c50213ad0b5c062c42b51cb0f7712` | MarketSIHandlerDataStorage | impl | inactive | no |
+| bsc | `0x3560c0eccc7c83a1fd33088a6b5007d78011a866` | EtherSIDataStorage | impl | inactive | no |
+| bsc | `0x38f64765d37c50213ad0b5c062c42b51cb0f7712` | MarketSIHandlerDataStorage-2 | impl | inactive | no |
+| bsc | `0x3a54444c3c9e608e41c9cea7c04d3320b272cb37` | UsdtHandlerDataStorage-2 | impl | inactive | no |
 | bsc | `0x522b3ade2bf7f5922afc54d93447afb481d526f0` | NFToken | impl | inactive | no |
-| bsc | `0x6b61068d079fcc88228975c7495c77ac8306778d` | MarketSIHandlerDataStorage | impl | inactive | no |
-| bsc | `0x73e781578af6bfbbe950b7059dc2e99c76d00f20` | InterestModel | impl | live | yes |
+| bsc | `0x5553bcd4cc9af1a395da99fe8dd0ed3ad4bfdcf1` | CoinHandlerProxy-3 | impl | live | yes |
+| bsc | `0x618343a112a12a1f41b9b65bc82b134636852bae` | XFactoryExternal-2 | impl | inactive | no |
+| bsc | `0x6198176773cf5e2401c2b87afe2a6eb17bffc204` | DaiHandlerDataStorage-2 | impl | inactive | no |
+| bsc | `0x653db994ab70efe391782a265975ca0a614c6b79` | UsdtInterestModel-2 | impl | inactive | no |
+| bsc | `0x6b61068d079fcc88228975c7495c77ac8306778d` | MarketSIHandlerDataStorage-2 | impl | inactive | no |
+| bsc | `0x72e419713551410297b407bf1b61a0dcc1cf5d0a` | HandlerManager-4 | impl | live | yes |
+| bsc | `0x73e781578af6bfbbe950b7059dc2e99c76d00f20` | InterestModel-2 | impl | live | yes |
+| bsc | `0x77c59ef81bcb6b5aa5efefa58b9914b2b115941b` | tokenHandler-3 | impl | live | yes |
+| bsc | `0x8010f9e14c8286b9312e624370fddc07fee2fc75` | HandlerManager-5 | proxy | live | yes |
+| bsc | `0x8138840d438d2bd78f978c4a27faded119f266f0` | PositionStorage-2 | impl | live | yes |
 | bsc | `0x81f2c2b38c2c347e353f6e6ee50f9814c3dfc28e` | StrategyLogic | impl | live | yes |
+| bsc | `0x829ed2a2bef8b72e648f92cbf01587c7e12e8c1e` | tokenHandler-4 | proxy | live | yes |
 | bsc | `0x8c0b650f149a0817be2e0767a636122994ac49ad` | ManagerSlotSetter-2 | impl | inactive | no |
-| bsc | `0x8cc8a0d4759d94ecd1e5a0ae2866b3cbe65c4493` | ManagerFlashLoan | impl | live | yes |
+| bsc | `0x8cc8a0d4759d94ecd1e5a0ae2866b3cbe65c4493` | ManagerFlashLoan-2 | impl | live | yes |
 | bsc | `0x8f6181c85ce204f792a6cb750872a4aa70844558` | MarketHandlerDataStorage | impl | inactive | no |
+| bsc | `0x9650255a3077d3012deb944b2dfa5741eb2e1929` | TokenSI | impl | live | yes |
+| bsc | `0x9c9d3acc1a65c3ff0c1075ed23f383d05f1a9bd6` | Manager | impl | inactive | no |
 | bsc | `0xa4917b10aae8969346bdbcbb0be823bd62529b07` | marketHandlerDataStorage | impl | inactive | no |
+| bsc | `0xaa2e64d6077fac803c449a8e64b21aafcb360d60` | observerOracle-2 | impl | inactive | no |
+| bsc | `0xb67c5433d234d656002f12664d15ab4b40666d9b` | tokenHandler-5 | proxy | live | yes |
 | bsc | `0xb766acab14077b9b30cf435b216d93403b729fd7` | MarketHandlerDataStorage | impl | inactive | no |
+| bsc | `0xb8621b5451e00149b3424fbb709e2de687ea23c2` | DaiInterestModel-2 | impl | inactive | no |
+| bsc | `0xba9de5a8fd91408826616f2d6d7470a11e34c9f0` | tokenHandler-6 | proxy | live | yes |
+| bsc | `0xbb9ce7c152f9d6fbbebd90e9b06d021f64e6052b` | tokenHandler-7 | impl | live | yes |
 | bsc | `0xbcc4468b7dc953b5ed81fe937de11e6da0ea7d34` | StrategyLogic | proxy | live | yes |
-| bsc | `0xc7b7dc64ac2412bd33cb85d5c552276b66612e8b` | InterestModel | impl | live | yes |
-| bsc | `0xc86097ec0bbe0d0b58b36165594f7755e3dd5488` | MarketSIHandlerDataStorage | impl | inactive | no |
+| bsc | `0xc712bf219aae27b64fb354f2ddd4d6e4e22c9b6e` | tokenHandler-8 | impl | live | yes |
+| bsc | `0xc7b7dc64ac2412bd33cb85d5c552276b66612e8b` | InterestModel-2 | impl | live | yes |
+| bsc | `0xc86097ec0bbe0d0b58b36165594f7755e3dd5488` | MarketSIHandlerDataStorage-2 | impl | inactive | no |
+| bsc | `0xca62d43e8824b02029444072c9a45bba6d4a198e` | EtherInterestModel | impl | inactive | no |
+| bsc | `0xcef7762dc835d3cf80caf81e73eaaf88bafe2289` | CoinHandlerProxy-4 | impl | live | yes |
+| bsc | `0xd323359a39fc4fdb283f9a787cfec80afe4c8910` | UsdcSIDataStorage | impl | inactive | no |
+| bsc | `0xdd80fb1c16a1eb446be94655e5f762c19c7fa89e` | OracleProxy-4 | impl | live | yes |
 | bsc | `0xe468f7156a5cf3dba5be4ded88b0d1a51d5b3b24` | Updater | impl | inactive | no |
 | bsc | `0xea0c08aa00f1e890a618be400cb0e1ada52926d5` | callProxyManagerCallProxyHandlerCallProxyMarketCallProxyUserCallProxySISafeMath-2 | impl | inactive | no |
+| bsc | `0xf852d45ecf138b4db32208f3d1d074c5ada101d2` | EtherHandlerDataStorage | impl | inactive | no |
+| bsc | `0xf86d8218bcc15874f5d25c191fddd43f2334c3eb` | tokenHandler-9 | proxy | live | yes |
+| bsc | `0xfc23789de7ba9491d9b305c04b2029fe8f57cefe` | CoinHandlerDataStorage-2 | impl | inactive | no |
 | ethereum | `0x00be030392f68736a79415e4c5f378933fe270e5` | CoinInterestModel | impl | inactive | no |
 | ethereum | `0x04189e20e4691136af0d9bff884cb122a8bf2e16` | tokenHandler | impl | live | yes |
 | ethereum | `0x06c8fec203be5b45fadc3f139efdf4444cf8828e` | observerOracle | impl | inactive | no |
@@ -63,16 +113,21 @@
 | ethereum | `0x128647690c7733593aa3dd149eebc5e256e79217` | tokenHandler | proxy | live | yes |
 | ethereum | `0x13000c4a215efe7e414bb329b2f11c39bcf92d78` | CoinHandlerProxy | proxy | live | yes |
 | ethereum | `0x18740cea640cba9ce836dc80ce61c7b9ca4f11cb` | externalModule | impl | live | no |
-| ethereum | `0x2146922c1d5a8a553afbc051da276814dd0629c0` | MarketSIHandlerDataStorage-2 | impl | inactive | no |
+| ethereum | `0x2146922c1d5a8a553afbc051da276814dd0629c0` | MarketSIHandlerDataStorage-3 | impl | inactive | no |
+| ethereum | `0x23219ff3b4d838c94a8c8ae37ab3ff0ac0743047` | MarketHandlerDataStorage-3 | impl | inactive | no |
+| ethereum | `0x24231014199e0c1a8ec2d963389008d85b658f7d` | InterestModel | impl | live | yes |
 | ethereum | `0x2438b33ee508069ba1e3feb0ee7eb1a47568ebae` | UsdtSI | impl | inactive | no |
 | ethereum | `0x25567603eb61a4a49f27e433652b5b8940d10682` | tokenHandler | proxy | live | yes |
 | ethereum | `0x257d6f962f23b7848792665ed9513a1ab72ecde4` | DaiSI | impl | inactive | no |
 | ethereum | `0x2791bfd60d232150bff86b39b7146c0eaaa2ba81` | ERC20 | impl | live | yes |
-| ethereum | `0x2ed04ce9a032b9a101975172f59a8d33e877bb1f` | MarketHandlerDataStorage-2 | impl | inactive | no |
+| ethereum | `0x29ecabde2c57b6d4183f915ebca1a25804a60db1` | InterestModel | impl | live | yes |
+| ethereum | `0x2ed04ce9a032b9a101975172f59a8d33e877bb1f` | MarketHandlerDataStorage-4 | impl | inactive | no |
+| ethereum | `0x320c3391d1dc3d36e0e1da26809db9e0463517c7` | CoinSI | impl | live | yes |
 | ethereum | `0x34e45203669aadd0d6ac342538aa7b62c9128f4a` | managerDataStorage | impl | live | yes |
 | ethereum | `0x38b3a3b5b53987c9aaf4c41f3534425ac93369b8` | tokenHandler | impl | live | yes |
 | ethereum | `0x3aff7b16489fcc59483de44e96bd9ec533915924` | ERC721 | impl | inactive | no |
 | ethereum | `0x3d6d4f3640ae84c0baef0a76c35d1ec5668b70e9` | XFactoryExternal | impl | inactive | yes |
+| ethereum | `0x3ff1dd4646f0db3b0a1fd8bb3ad7be906e26f1a0` | MarketSIHandlerDataStorage | impl | inactive | no |
 | ethereum | `0x4596302baaaeae0732fbdd9cdf7aec5e83c3cfba` | DaiHandlerDataStorage | impl | inactive | no |
 | ethereum | `0x47be3d1def039bd85e7570864bb5148e7491a65f` | tokenHandler | impl | live | yes |
 | ethereum | `0x488933457e89656d7ef7e69c10f2f80c7aca19b5` | externalModule-2 | impl | live | no |
@@ -80,25 +135,39 @@
 | ethereum | `0x4ce8acc2afc1ab5c77915fedb1f74f8d9b63b287` | callProxyManagerCallProxyHandlerCallProxyMarketCallProxyUser | impl | unknown | no |
 | ethereum | `0x4f5f62a3e013e56be3fcfc9e3b2182525f18df97` | UsdtInterestModel | impl | inactive | no |
 | ethereum | `0x52d5fd317cb3bd71d1c7b24960a8f4b7275eb18c` | Updater | impl | inactive | no |
+| ethereum | `0x54b932b5512d984ac6c02ebe4f32ad032c41b1b5` | HandlerManager | impl | live | yes |
 | ethereum | `0x58a059180901fae4089ac5e775e3ce6333f00580` | CoinHandlerProxy | impl | live | yes |
+| ethereum | `0x614661d42d81eb446f740424ccac24f09e97417e` | InterestModel-3 | impl | live | yes |
 | ethereum | `0x6323a4e6fa95a100db47c925d369581e38272d7f` | LinkInterestModel | impl | inactive | no |
 | ethereum | `0x64d18fd81a30150b8f881cb424677f178ea25c33` | CoinHandlerProxy | impl | live | yes |
 | ethereum | `0x66a2ea39b0413d672fd032389731fc7ee0a33a57` | tokenHandler | impl | live | yes |
 | ethereum | `0x6ba1ddd63a5680b7c666b74a50be28b24d507beb` | OracleProxy | impl | live | yes |
 | ethereum | `0x6e464417a4523ae2f3d59665b0b1fc37c1d17a2f` | etherManager | impl | inactive | no |
+| ethereum | `0x7146ed71b1cb0d90e705ef20066b3453809e89e8` | MarketHandlerDataStorage-5 | impl | inactive | no |
+| ethereum | `0x7560ad17e2a0b790019734bf4f9790323cd68cb6` | InterestModel | impl | live | yes |
+| ethereum | `0x75a7ce14e9a07428384c63dc7dd0adefe3b229c2` | InterestModel-3 | impl | live | yes |
 | ethereum | `0x808c3ba97268dbf9695b1ec10729e09c7e67a9e3` | tokenHandler | proxy | live | yes |
 | ethereum | `0x836c3afe6104066da3b2d3c244f66d6698623ba9` | PositionStorage | impl | live | yes |
+| ethereum | `0x83e0bdd46831ee2b00fbfeb8e0488c7cd14284c0` | MarketSIHandlerDataStorage-3 | impl | inactive | no |
 | ethereum | `0x864290a03fa4d75b6f0a2afdf5e2b6213f0760db` | interestModel-2 | impl | live | yes |
+| ethereum | `0x913f2dee2746cda2ab34106c47abc4a8f4e36fa5` | HandlerManager-2 | proxy | live | yes |
 | ethereum | `0x93948aa8488f522d5b079af84fe411fbce476e9f` | tokenHandler | proxy | live | yes |
 | ethereum | `0x97ae437edbaca2db40cff2e0436b894ff72988af` | XFactoryExternal | proxy | live | yes |
 | ethereum | `0x986eb51e67e154901ff9b482835788b8f3054076` | tokenHandler | proxy | live | yes |
+| ethereum | `0x9c06a381bfde2a14d8961057cb81a34b72fb0fb6` | MarketSIHandlerDataStorage | impl | inactive | no |
+| ethereum | `0x9d4633e89a86bba1bec66b4a45781b8c3343b4b9` | Updater-2 | impl | inactive | no |
 | ethereum | `0x9f9347afc304d5c3c0683a5ed523e5f010e4736f` | XFactory | impl | live | yes |
 | ethereum | `0xb74e18c6d337c1c9268a209fa244134f4f60c9b5` | XFactory | impl | live | yes |
+| ethereum | `0xba9b7567ef2b441c99f32a3fb0eeaa248281586d` | MarketSIHandlerDataStorage | impl | inactive | no |
 | ethereum | `0xbb0aee2fe7e9d73a5dc3354136231a617717db03` | CoinHandlerDataStorage | impl | inactive | no |
 | ethereum | `0xc06b71ec195ccaa98a57dd4ba9e90a7469c37d13` | LinkSI | impl | inactive | no |
 | ethereum | `0xc6c99a98bfe1ba7f9bd1dbaf0c9a74103e99af0d` | etherManager | impl | inactive | no |
+| ethereum | `0xcbf361d934e2ac49b2c47c2910ea9489ab955829` | InterestModel | impl | live | yes |
 | ethereum | `0xcd9632707ec422759be2a5b348f8178ff280a453` | ManagerSlotSetter | impl | inactive | no |
+| ethereum | `0xd0d87cd79965841780022419bf3b8e0bec0e0500` | MarketSIHandlerDataStorage-4 | impl | inactive | no |
 | ethereum | `0xd76b7060f1b646fa14740ff6ac670a4f0a6fc5e3` | tokenHandler | proxy | live | yes |
+| ethereum | `0xdb684577f71f8febfe6af208461e948eae255025` | MarketSIHandlerDataStorage | impl | inactive | no |
+| ethereum | `0xe2f26b242107f4c6ee48039555d7211d018ace37` | ManagerFlashLoan | impl | live | yes |
 | ethereum | `0xe4c383fb3d7046ce7f9e5c537493cd192e9ae23c` | LinkHandlerDataStorage | impl | inactive | no |
 | ethereum | `0xeace4e60f68e20797fc696c870066f1e19c2b37d` | externalModule-3 | impl | live | no |
 | ethereum | `0xf725c0d72d3e5e284077d8fcc357bf8547fa3e8d` | tokenHandler | impl | live | yes |
@@ -106,80 +175,11 @@
 | ethereum | `0xfa7a7e8639d88e6d024df967401f7c208e9073ff` | callProxyManagerCallProxyHandlerCallProxyMarketCallProxyUserCallProxySISafeMath | impl | inactive | no |
 | ethereum | `0xfd514b33a361b82fe5d89070db6917cd4f73285d` | etherLiquidationManager | impl | live | no |
 | ethereum | `0xfdc7d058bede981ea865fb64d06382a2206a1c42` | UsdtHandlerDataStorage | impl | inactive | no |
+| ethereum | `0xfed2eddbdf201d6b5469cbd6866d19808d8879fb` | HandlerManager-3 | impl | live | yes |
 | ethereum | `0xfef1974aeb87a92e8b8b99b7bc260f116679938f` | TokenManager | impl | live | yes |
 
-## Source unavailable (72)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- avalanche `0x25cb77ddda15075dcf3f681fdc36b14fed27f2a0`
-- avalanche `0x2a8c94e2397361cde5114ca1618bab46eb8d71bf`
-- avalanche `0x3b441812d2081366ae2422eef5a0ec592d7f9f69`
-- avalanche `0x3bb4b71bc78cef5202ca88ad061e2589dadf9fab`
-- avalanche `0x446881360d6d39779d292662fca9bc85c5789db3`
-- avalanche `0x46a9d54ed07db5a470412d492ee437bf0d079cd7`
-- avalanche `0x491f5e2661bb203b56834866dc08027c8be76f25`
-- avalanche `0x4d30d8343093ba8512a411d4633592ea2be21d5d`
-- avalanche `0x71c5e8ab83f3cf56faa3e22b7a70aa44200a4f79`
-- avalanche `0x739068b9cb728c18f04cd7e7f0fe2ef707744c5e`
-- avalanche `0x8385ea36dd4bdc84b3f2ac718c332e18c1e42d36`
-- avalanche `0x85b8636c1f368d55c1fd5889e9e4391c30081d40`
-- avalanche `0x9ee793f342da93bc69e3c9df4a49e4d0cd7cd9ed`
-- avalanche `0xbf81872c3fc6abdae40b8e98247a6593c3d5992c`
-- avalanche `0xc4d1e935f02a44d44985e6b1c0ee1ee616fc146a`
-- avalanche `0xd377750886a5e13d2598ffbd64498da0de3f592b`
-- avalanche `0xe0322f306d285d97eb411cd2e9a86bb92b88c427`
-- avalanche `0xeb86b3592915dce5c0eff780f60b7b8b0af1b5b3`
-- avalanche `0xef0443c3871345d7e05a9f81232bdcd489f75e4f`
-- avalanche `0xfc36eecbf3fca5d65c73951d4cd7fea1d845c29c`
-- bsc `0x0ed96ea272e634ef5df9150a6d29a0c4c6f61567`
-- bsc `0x17aacf9dc6ec3113ce50d943ca931330ad361407`
-- bsc `0x18be1743efc40228879c07d55f36ae9ff5127fc3`
-- bsc `0x2a29598cbc17ba112c8fd0e07fbf5402ef57e6b8`
-- bsc `0x3560c0eccc7c83a1fd33088a6b5007d78011a866`
-- bsc `0x3a54444c3c9e608e41c9cea7c04d3320b272cb37`
-- bsc `0x5553bcd4cc9af1a395da99fe8dd0ed3ad4bfdcf1`
-- bsc `0x618343a112a12a1f41b9b65bc82b134636852bae`
-- bsc `0x6198176773cf5e2401c2b87afe2a6eb17bffc204`
-- bsc `0x653db994ab70efe391782a265975ca0a614c6b79`
-- bsc `0x72e419713551410297b407bf1b61a0dcc1cf5d0a`
-- bsc `0x77c59ef81bcb6b5aa5efefa58b9914b2b115941b`
-- bsc `0x8010f9e14c8286b9312e624370fddc07fee2fc75`
-- bsc `0x8138840d438d2bd78f978c4a27faded119f266f0`
-- bsc `0x829ed2a2bef8b72e648f92cbf01587c7e12e8c1e`
-- bsc `0x9650255a3077d3012deb944b2dfa5741eb2e1929`
-- bsc `0x9c9d3acc1a65c3ff0c1075ed23f383d05f1a9bd6`
-- bsc `0xaa2e64d6077fac803c449a8e64b21aafcb360d60`
-- bsc `0xb67c5433d234d656002f12664d15ab4b40666d9b`
-- bsc `0xb8621b5451e00149b3424fbb709e2de687ea23c2`
-- bsc `0xba9de5a8fd91408826616f2d6d7470a11e34c9f0`
-- bsc `0xbb9ce7c152f9d6fbbebd90e9b06d021f64e6052b`
-- bsc `0xc712bf219aae27b64fb354f2ddd4d6e4e22c9b6e`
-- bsc `0xca62d43e8824b02029444072c9a45bba6d4a198e`
-- bsc `0xcef7762dc835d3cf80caf81e73eaaf88bafe2289`
-- bsc `0xd323359a39fc4fdb283f9a787cfec80afe4c8910`
-- bsc `0xdd80fb1c16a1eb446be94655e5f762c19c7fa89e`
-- bsc `0xf852d45ecf138b4db32208f3d1d074c5ada101d2`
-- bsc `0xf86d8218bcc15874f5d25c191fddd43f2334c3eb`
-- bsc `0xfc23789de7ba9491d9b305c04b2029fe8f57cefe`
-- ethereum `0x23219ff3b4d838c94a8c8ae37ab3ff0ac0743047`
-- ethereum `0x24231014199e0c1a8ec2d963389008d85b658f7d`
-- ethereum `0x29ecabde2c57b6d4183f915ebca1a25804a60db1`
-- ethereum `0x320c3391d1dc3d36e0e1da26809db9e0463517c7`
-- ethereum `0x3ff1dd4646f0db3b0a1fd8bb3ad7be906e26f1a0`
-- ethereum `0x54b932b5512d984ac6c02ebe4f32ad032c41b1b5`
-- ethereum `0x614661d42d81eb446f740424ccac24f09e97417e`
-- ethereum `0x7146ed71b1cb0d90e705ef20066b3453809e89e8`
-- ethereum `0x7560ad17e2a0b790019734bf4f9790323cd68cb6`
-- ethereum `0x75a7ce14e9a07428384c63dc7dd0adefe3b229c2`
-- ethereum `0x83e0bdd46831ee2b00fbfeb8e0488c7cd14284c0`
-- ethereum `0x913f2dee2746cda2ab34106c47abc4a8f4e36fa5`
-- ethereum `0x9c06a381bfde2a14d8961057cb81a34b72fb0fb6`
-- ethereum `0x9d4633e89a86bba1bec66b4a45781b8c3343b4b9`
 - ethereum `0xaf9b1d6e89db4d43f3ff9347d5da2d169e97994e`
-- ethereum `0xba9b7567ef2b441c99f32a3fb0eeaa248281586d`
-- ethereum `0xcbf361d934e2ac49b2c47c2910ea9489ab955829`
-- ethereum `0xd0d87cd79965841780022419bf3b8e0bec0e0500`
-- ethereum `0xdb684577f71f8febfe6af208461e948eae255025`
-- ethereum `0xe2f26b242107f4c6ee48039555d7211d018ace37`
 - ethereum `0xf54c97004eb4d19947fc7d4d011696474532d76b`
-- ethereum `0xfed2eddbdf201d6b5469cbd6866d19808d8879fb`

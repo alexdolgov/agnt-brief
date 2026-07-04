@@ -391,8 +391,10 @@ contract LeverageConcentrator is ILeverageConcentrator, Ownable, ERC721Holder, R
      */
     function imbalanceCheck() public view returns (bool outOfRange, int24 currentTick) {
         currentTick = _checkPriceDeviation();
-        uint24 deviation = uint24(_getMintedTick(currentTick) - lastMintedTick);
-        outOfRange = deviation > currentOperationLogic.threshold;
+        int24 deviation = _getMintedTick(currentTick) - lastMintedTick;
+        outOfRange = deviation > 0
+            ? uint24(deviation) > currentOperationLogic.threshold
+            : uint24(-deviation) > currentOperationLogic.threshold;
     }
 
     /// @dev Struct to cache values during calculation of strategies mint amounts.
@@ -545,13 +547,7 @@ contract LeverageConcentrator is ILeverageConcentrator, Ownable, ERC721Holder, R
                 if (amts.amount1Desired > balances.amount1) {
                     amts.amount1Desired = balances.amount1;
                 }
-                (uint256 tokenId, uint128 liquidity) = _mintAndApprove(
-                    lowerTick,
-                    upperTick,
-                    amts.amount0Desired,
-                    amts.amount1Desired
-                );
-                tokenIdToLiquidity[tokenId] = liquidity;
+                _mintAndApprove(lowerTick, upperTick, amts.amount0Desired, amts.amount1Desired);
             }
 
             unchecked {
@@ -572,14 +568,15 @@ contract LeverageConcentrator is ILeverageConcentrator, Ownable, ERC721Holder, R
         int24 tickUpper,
         uint256 amount0Desired,
         uint256 amount1Desired
-    ) private returns (uint256 tokenId, uint128 liquidity) {
+    ) private {
         (amount0Desired == 0 && amount1Desired == 0).revertError(
             ErrLib.ErrorCode.MINT_ZERO_AMOUNTS
         );
         _maxApproveIfNecessary(token0, UNDERLYING_POSITION_MANAGER_ADDRESS);
         _maxApproveIfNecessary(token1, UNDERLYING_POSITION_MANAGER_ADDRESS);
-        (tokenId, liquidity, , ) = INonfungiblePositionManager(UNDERLYING_POSITION_MANAGER_ADDRESS)
-            .mint(
+        (uint256 tokenId, uint128 liquidity, , ) = INonfungiblePositionManager(
+            UNDERLYING_POSITION_MANAGER_ADDRESS
+        ).mint(
                 INonfungiblePositionManager.MintParams({
                     token0: token0,
                     token1: token1,

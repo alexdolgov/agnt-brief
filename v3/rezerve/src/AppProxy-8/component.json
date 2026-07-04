@@ -1,0 +1,18 @@
+{
+  "component": "AppProxy-8",
+  "main_contract": "AppProxy",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x635ad38f96aed1242dbb0dbb5e9125f560d87270",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

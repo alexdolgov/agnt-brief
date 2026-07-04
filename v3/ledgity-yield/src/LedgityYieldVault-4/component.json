@@ -1,0 +1,18 @@
+{
+  "component": "LedgityYieldVault-4",
+  "main_contract": "LedgityYieldVault",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf9eece93f43abd5a2287df083c8c510da7a9b56f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

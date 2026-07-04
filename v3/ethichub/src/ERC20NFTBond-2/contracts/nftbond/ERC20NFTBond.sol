@@ -12,13 +12,11 @@ import './NFTBond.sol';
  * @dev Contains functions related to buying and liquidating bonds,
  * and borrowing and returning funds when the principal is ERC20 token
  * @author Ethichub
- * @custom:dedication For Alexis — sorry for not seeing the need for a voluntary exit sooner.
  */
 contract ERC20NFTBond is NFTBond {
     using SafeERC20Upgradeable for IERC20MetadataUpgradeable;
-    IERC20MetadataUpgradeable private _principalToken_deprecated; // Rename in v2.2.2 from principalToken to _principalToken_deprecated (unused variable)
+    IERC20MetadataUpgradeable private _principalToken_deprecated; // Rename in v2.3 from principalToken to _principalToken_deprecated (unused variable)
     IMultiTokenReserve public liquidityReserve;
-    bool public investorGated; // if true, buyBond/redeemBond/requestExit/exitBond require INVESTOR role
 
     struct NFTParams {
         string name;
@@ -27,7 +25,6 @@ contract ERC20NFTBond is NFTBond {
 
     event LiquidityReserveUpdated(address liquidityReserve);
     event PrincipalTokensSwept(uint256 principalTokenAmount);
-    event PrincipalTokensSet(address principalToken);
 
     function initialize(
         address _principalToken,
@@ -69,12 +66,7 @@ contract ERC20NFTBond is NFTBond {
         string memory imageCID
     )
     external whenNotPaused {
-        if (investorGated && !_hasRole(INVESTOR, msg.sender)) revert MissingRole();
         super._buyBond(beneficiary, maturity, principal, imageCID);
-    }
-
-    function setInvestorGated(bool _investorGated) external onlyRole(DEFAULT_ADMIN_ROLE) {
-        investorGated = _investorGated;
     }
 
     /**
@@ -101,7 +93,6 @@ contract ERC20NFTBond is NFTBond {
      * @dev External function to redeem a bond and returns the amount of the bond
      */
     function redeemBond(uint256 tokenId) external {
-        if (investorGated && !_hasRole(INVESTOR, msg.sender)) revert MissingRole();
         super._redeemBond(tokenId);
     }
 
@@ -113,24 +104,17 @@ contract ERC20NFTBond is NFTBond {
         _unpause();
     }
 
-    function setPrincipalToken(address _newPrincipalToken) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function setPrincipalToken(address _newPrincipalToken) external  onlyRole(DEFAULT_ADMIN_ROLE) {
         principalToken = IERC20MetadataUpgradeable(_newPrincipalToken);
-        emit PrincipalTokensSet(_newPrincipalToken);
     }
 
     /**
      * @dev Transfers from the buyer to this contract the principal token amount
+     *
+     * @param beneficiary address
+     * @param maturity uint256
+     * @param principal uint256
      */
-    function requestExit(uint256 tokenId) public override {
-        if (investorGated && !_hasRole(INVESTOR, msg.sender)) revert MissingRole();
-        super.requestExit(tokenId);
-    }
-
-    function exitBond(uint256 tokenId) public override {
-        if (investorGated && !_hasRole(INVESTOR, msg.sender)) revert MissingRole();
-        super.exitBond(tokenId);
-    }
-
     function _beforeBondPurchased(
         address beneficiary,
         uint256 maturity,
@@ -165,30 +149,6 @@ contract ERC20NFTBond is NFTBond {
         }
     }
 
-    /**
-     * @dev Pays only the principal to the bond owner on early exit.
-     * No interest is paid; any shortfall falls back to collateral.
-     */
-    function _afterBondExited(
-        uint256 tokenId,
-        uint256 principal,
-        address beneficiary
-    )
-    internal override {
-        super._afterBondExited(tokenId, principal, beneficiary);
-        if (liquidityReserve.balance(address(principalToken)) < principal) {
-            uint256 amountOfCollateral = (principal - liquidityReserve.balance(address(principalToken))) * collateralMultiplier;
-            liquidityReserve.transfer(address(principalToken), beneficiary, liquidityReserve.balance(address(principalToken)));
-            if (collateralReserve.balance() < amountOfCollateral) {
-                collateralReserve.transfer(beneficiary, collateralReserve.balance());
-            } else {
-                collateralReserve.transfer(beneficiary, amountOfCollateral);
-            }
-        } else {
-            liquidityReserve.transfer(address(principalToken), beneficiary, principal);
-        }
-    }
-
     function _pause() internal override {
         super._pause();
     }
@@ -196,7 +156,6 @@ contract ERC20NFTBond is NFTBond {
     function _unpause() internal override {
         super._unpause();
     }
-
     /**
      * ////// [v1.0, v1.1, v1.2, v2.0, v2.1] //////
      * 1 principalToken
@@ -208,7 +167,7 @@ contract ERC20NFTBond is NFTBond {
      * 1 liquidityReserve
      * 49 __gap
      * 51 (mistakenly deployed with 51 store gaps)
-     * ////// [v2.2.1, v2.2.2, v2.3.1, v2.3.2, v2.4.1, v2.4.2] //////
+     * ////// [v2.3] //////
      * 1 _principalToken_deprecated
      * 1 liquidityReserve
      * 49 __gap

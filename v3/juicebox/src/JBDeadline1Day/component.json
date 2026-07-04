@@ -1,14 +1,30 @@
 {
   "component": "JBDeadline1Day",
   "main_contract": "JBDeadline1Day",
-  "source_file_count": 9,
-  "deployment_count": 1,
+  "source_file_count": 6,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcffdd1303f24145bd2c84e7bf15af1eb6ab924d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcffdd1303f24145bd2c84e7bf15af1eb6ab924d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0xcffdd1303f24145bd2c84e7bf15af1eb6ab924d7",
       "is_proxy": false,
       "implementation_address": null,

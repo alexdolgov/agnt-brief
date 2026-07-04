@@ -1,0 +1,42 @@
+{
+  "component": "VolatilityOracle-2",
+  "main_contract": "VolatilityOracle",
+  "source_file_count": 27,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x264271f0f4d37215cca7aec8899797d2fb3d4334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x43b7c364fc5957551f1c5e6dd406a3d53338b9f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbe42a3442a9e6585c3a4c6356cf03c09141accc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd5fbd136ab7a0342ec2c633a08b16e448d0d21f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

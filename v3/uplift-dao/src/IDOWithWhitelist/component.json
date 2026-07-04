@@ -1,0 +1,18 @@
+{
+  "component": "IDOWithWhitelist",
+  "main_contract": "IDOWithWhitelist",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb425eab1c12fb5b87dce169bb25769ae0636ae2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

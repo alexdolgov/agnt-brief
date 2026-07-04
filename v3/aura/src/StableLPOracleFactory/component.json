@@ -2,7 +2,7 @@
   "component": "StableLPOracleFactory",
   "main_contract": "StableLPOracleFactory",
   "source_file_count": 61,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc09244c585f59cb61cfb08e4fe7a560cd448834b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

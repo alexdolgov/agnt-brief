@@ -1,0 +1,20 @@
+{
+  "component": "LibOrderBook-3",
+  "main_contract": "LibOrderBook",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mux-world/mux3-protocol/blob/main/audit/MUX%203%20Protocol%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

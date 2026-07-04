@@ -2,14 +2,22 @@
   "component": "UniV4LiquidityLocker-2",
   "main_contract": "UniV4LiquidityLocker",
   "source_file_count": 59,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e",
+      "address": "0x41f3e9948d4e97e547d800acfd31df9fd741e41b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf5cdadd3cb89a69ab72da3cfd93c505c1b9fcca1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,9 +1,12 @@
 # shift-protocol — deployments
 
-21 verified deployment(s) across 8 component(s).
+24 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x6d7c897cd8b402690c07e7263c9f59b3777ae3c2` | ShiftVault-2 | impl | live | no |
+| arbitrum | `0x7174f0bd02664bebdb6aa79a99faf949570a10bd` | ShiftVault-2 | impl | live | no |
+| arbitrum | `0x956bdd9c18b786b082fd50c52722d254f0cb6964` | ShiftVault-2 | impl | live | no |
 | base | `0x092b558d933f069c7145c0ef4ad4c966e5d3132e` | ShiftAccessControl | impl | live | yes |
 | base | `0x106f8a84e2a58376b36973c166d338f2d94a9723` | ExitWindow | impl | inactive | no |
 | base | `0x12bb794760afc19b2e4363b0fa4a938133a76123` | SYBaseV2 | impl | inactive | no |
@@ -25,10 +28,3 @@
 | base | `0xaf69bf9ea9e0166498c0502af5b5945980ed1e0e` | ShiftVault | impl | live | yes |
 | base | `0xdbe599c184cc13d82f956fa5adaa1b18c0ff67d3` | ShiftTvlFeed | impl | live | yes |
 | base | `0xe98d8f9c61c2251ab7f7f6126ab93fff15ab0aba` | ExitWindow | impl | inactive | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x6d7c897cd8b402690c07e7263c9f59b3777ae3c2`
-- arbitrum `0x7174f0bd02664bebdb6aa79a99faf949570a10bd`
-- arbitrum `0x956bdd9c18b786b082fd50c52722d254f0cb6964`

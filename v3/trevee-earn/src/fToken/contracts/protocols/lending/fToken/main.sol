@@ -940,9 +940,6 @@ abstract contract fTokenPermit2Deposits is fTokenActions {
 /// The fToken implements withdrawals via EIP-2612 permits and deposits with Permit2 or EIP-2612 (if underlying supports it) signatures.
 /// fTokens are not upgradeable.
 /// @dev For view methods / accessing data, use the "LendingResolver" periphery contract.
-//
-// fTokens can only be deployed for underlying tokens that are listed at Liquidity (`_getLiquidityExchangePrice()` reverts
-// otherwise, which is called in the constructor).
 contract fToken is fTokenAdmin, fTokenActions, fTokenEIP2612Withdrawals, fTokenPermit2Deposits, fTokenEIP2612Deposits {
     /// @param liquidity_ liquidity contract address
     /// @param lendingFactory_ lending factory contract address

@@ -248,11 +248,7 @@ interface IAutopool is IERC4626, IERC20Permit {
     function autoPoolStrategy() external view returns (IAutopoolStrategy);
 
     /// @notice Allow token recoverer to collect dust / unintended transfers (non-tracked assets only)
-    function recover(
-        address[] calldata tokens,
-        uint256[] calldata amounts,
-        address[] calldata destinations
-    ) external;
+    function recover(address[] calldata tokens, uint256[] calldata amounts, address[] calldata destinations) external;
 
     /// @notice Set the order of destination vaults used for withdrawals
     // NOTE: will be done going directly to strategy (IStrategy) vault points to.

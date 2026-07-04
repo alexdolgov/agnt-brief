@@ -1,0 +1,42 @@
+{
+  "component": "SlotsBitmapLibrary-4",
+  "main_contract": "SlotsBitmapLibrary",
+  "source_file_count": 3,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9538c41a136362645489be85f84f0d94c74116a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5ce00022e18f9c9843e42919aa7a451d0663e2b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5d7dd53d990bc4d582dd791874da216241584572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc02d95c3df22639a3920cd6079991ae80ebfbb42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

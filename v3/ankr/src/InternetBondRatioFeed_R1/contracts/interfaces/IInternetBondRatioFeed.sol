@@ -2,8 +2,12 @@
 pragma solidity ^0.8.6;
 
 interface IInternetBondRatioFeed {
+    event RatioThresholdChanged(uint256 oldValue, uint256 newValue);
 
-    function updateRatioBatch(address[] calldata addresses, uint256[] calldata ratios) external;
+    function updateRatioBatch(
+        address[] calldata addresses,
+        uint256[] calldata ratios
+    ) external;
 
     function getRatioFor(address) external view returns (uint256);
 }

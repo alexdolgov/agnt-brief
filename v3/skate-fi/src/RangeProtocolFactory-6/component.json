@@ -1,0 +1,18 @@
+{
+  "component": "RangeProtocolFactory-6",
+  "main_contract": "RangeProtocolFactory",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde07a0d5c9ca371e41a869451141ace84bcad119",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

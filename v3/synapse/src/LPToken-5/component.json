@@ -1,0 +1,26 @@
+{
+  "component": "LPToken-5",
+  "main_contract": "LPToken",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x003107b3aeee133804eabe7d1df200ddfbb51dce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe0fa08834465ecc36c494f2b6c87b82ab7970413",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

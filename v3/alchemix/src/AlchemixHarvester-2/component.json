@@ -1,18 +1,18 @@
 {
   "component": "AlchemixHarvester-2",
   "main_contract": "AlchemixHarvester",
-  "source_file_count": 1,
+  "source_file_count": 7,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9b2ef5617430b13741bc95157a3fa3387a00ab11",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7879a9c464af7805712404cf4a8366c475034f91",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

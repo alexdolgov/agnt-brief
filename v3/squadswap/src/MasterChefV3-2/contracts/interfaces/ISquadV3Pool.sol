@@ -8,9 +8,7 @@ interface ISquadV3Pool {
 
     function token1() external view returns (address);
 
-    function defaultFee() external view returns (uint24);
+    function fee() external view returns (uint24);
 
     function lmPool() external view returns (address);
-
-    function liquidity() external view returns (uint128);
 }

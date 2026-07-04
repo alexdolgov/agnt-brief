@@ -1,0 +1,18 @@
+{
+  "component": "ETHButtonswapRouter-3",
+  "main_contract": "ETHButtonswapRouter",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6cf6ac4712fe64cda8138009b042b36e80f072be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

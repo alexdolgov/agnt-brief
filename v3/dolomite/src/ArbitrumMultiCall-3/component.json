@@ -1,0 +1,18 @@
+{
+  "component": "ArbitrumMultiCall-3",
+  "main_contract": "ArbitrumMultiCall",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4e4d9aa828a4597d82e3f02f9181668aab82b9f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

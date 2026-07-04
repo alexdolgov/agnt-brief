@@ -1,0 +1,18 @@
+{
+  "component": "Folio-3",
+  "main_contract": "Folio",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x089357a774151ffdd24269204cb789e298e31f09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

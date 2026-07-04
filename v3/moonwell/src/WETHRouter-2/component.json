@@ -1,0 +1,18 @@
+{
+  "component": "WETHRouter-2",
+  "main_contract": "WETHRouter",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa218a4776e2487eaa25e738e6d6a64f21593ca22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "TemplarToken-2",
+  "main_contract": "TemplarToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd86e3f7b2ff4e803f90c799d702955003bca9875",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

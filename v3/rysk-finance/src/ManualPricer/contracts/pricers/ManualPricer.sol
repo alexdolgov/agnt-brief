@@ -40,9 +40,6 @@ contract ManualPricer is OpynPricerInterface, Ownable {
     /// @notice historicalPrice mapping of timestamp to price
     mapping(uint256 => uint256) public historicalPrice;
 
-    /// @notice emits an event when the bot address is updated
-    event BotUpdated(address indexed previousBot, address indexed newBot);
-
     /**
      * @param _bot priveleged address that can call setExpiryPriceInOracle
      * @param _asset asset that this pricer will get a price for
@@ -63,7 +60,6 @@ contract ManualPricer is OpynPricerInterface, Ownable {
         oracle = OracleInterface(_oracle);
         asset = _asset;
         addressbook = AddressBookInterface(_addressbook);
-        deviationMultiplier = MULTIPLIER_FACTOR; // default 1.00x — no deviation allowed until explicitly configured
     }
 
     /**
@@ -73,17 +69,6 @@ contract ManualPricer is OpynPricerInterface, Ownable {
         require(msg.sender == bot, "ManualPricer: unauthorized sender");
 
         _;
-    }
-
-    /**
-     * @notice allows the owner to update the bot address
-     * @param _bot new bot address
-     */
-    function setBot(address _bot) external onlyOwner {
-        require(_bot != address(0), "ManualPricer: Cannot set 0 address as bot");
-
-        emit BotUpdated(bot, _bot);
-        bot = _bot;
     }
 
     /**
@@ -101,7 +86,7 @@ contract ManualPricer is OpynPricerInterface, Ownable {
      * @param _deviationMultiplier deviation multiplier between new and previous price (2 decimals - eg. 1.75 = 175)
      */
     function setDeviationMultiplier(uint256 _deviationMultiplier) external onlyOwner {
-        require(_deviationMultiplier >= MULTIPLIER_FACTOR, "ManualPricer: deviation multiplier must be >= 100");
+        require(_deviationMultiplier > 0, "ManualPricer: deviation multiplier cannot be 0");
 
         deviationMultiplier = _deviationMultiplier;
     }
@@ -112,7 +97,6 @@ contract ManualPricer is OpynPricerInterface, Ownable {
      * @param _price price of the asset in USD, scaled by 1e8
      */
     function setExpiryPriceInOracle(uint256 _expiryTimestamp, uint256 _price) external onlyBot {
-        require(_price > 0, "ManualPricer: price cannot be zero");
         require(_expiryTimestamp <= now, "ManualPricer: expiries prices cannot be set for the future");
 
         uint256 previousPrice = historicalPrice[lastExpiryTimestamp];

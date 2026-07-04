@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x39d1c99a244aa02502defc109e6f2d88efd6b06f",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcb46bfb835a2e9c76ab935b1df627b0981c5db70",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

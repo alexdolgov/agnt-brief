@@ -1,15 +1,23 @@
 {
   "component": "DODOV2Proxy02",
   "main_contract": "DODOV2Proxy02",
-  "source_file_count": 5,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x3a343f2e4e142412c5dd130359edb765a6054965",
+      "address": "0x8f8dd7db1bda5ed3da8c9daf3bfa471c12d58486",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd56281ef996b6b29874c77d2e1464216e8043127",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

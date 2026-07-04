@@ -1,0 +1,21 @@
+{
+  "component": "MarginlyPool-4",
+  "main_contract": "MarginlyPool",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://698120604-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FQiFBW4qPpAjrKQaezZ3s%2Fuploads%2F44riQdio4FbpMe9uuLzp%2Fmarginly-final-report.pdf",
+    "https://698120604-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FQiFBW4qPpAjrKQaezZ3s%2Fuploads%2FQeydGxQVvNL332dL7Xi2%2FMarginly%20Oracle%20Feature%20Final%20Report%202.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xb312d61915c878938fce09d13dd3006c6835b3e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

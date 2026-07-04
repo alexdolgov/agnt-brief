@@ -1,6 +1,6 @@
 # frankencoin — deployments
 
-54 verified deployment(s) across 42 component(s).
+56 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -33,6 +33,7 @@
 | ethereum | `0x637f00cab9665cb07d91bfb9c6f3fa8fabfef8bc` | SavingsVaultZCHF | impl | inactive | no |
 | ethereum | `0x63cf7c82460c5d84d10be2219d80f746d8706b7e` | PositionFactory-2 | impl | live | no |
 | ethereum | `0x64335c4fea9108c07e72609c7f97be6f505f3032` | AuthorizePositionV2 | impl | inactive | no |
+| ethereum | `0x6a9ffb6727dfd8811b7e67a578e2e576f779ab7e` | ReferenceTransfer | impl | inactive | no |
 | ethereum | `0x728310feaca72dc46cd5bf7d739556d5668472ba` | PositionFactory-3 | impl | live | no |
 | ethereum | `0x745211a1e1a58b2b11b932855b30d411c31e25d5` | Stablecoin | impl | inactive | no |
 | ethereum | `0x7546762fdb1a6d9146b33960545c3f6394265219` | MintingHub-3 | impl | live | yes |
@@ -46,6 +47,7 @@
 | ethereum | `0x8e4318e2cb1ae291254b187001a59a1f8ac78cef` | UniswapV3Pool | impl | live | no |
 | ethereum | `0x8f36bbee57acb4857cb97898020b529969fdf221` | VaultAdapterRecoverV1 | impl | inactive | no |
 | ethereum | `0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0x998d0c734bae49b8757157c7fe3847e2e416f8fd` | IFALCUSDCProxyPriceAdapter | impl | inactive | no |
 | ethereum | `0xa05bfd161ed9b9e7bacd5c03635cb8073e72c4c4` | SleeperBid | impl | inactive | no |
 | ethereum | `0xad0107d3da540fd54b1931735b65110c909ea6b6` | PositionRoller | impl | live | yes |
 | ethereum | `0xb58e61c3098d85632df34eecfb899a1ed80921cb` | Equity | impl | live | yes |
@@ -59,16 +61,14 @@
 | ethereum | `0xfa6d71ed122a7b3b494116317c2ac3b4e5269339` | RewardRouterV0 | impl | inactive | no |
 | ethereum | `0xfd23272dfcb13dc3fabd8db851fcd4827af876eb` | Governance | impl | live | no |
 
-## Source unavailable (10)
+## Source unavailable (8)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - ethereum `0x46eadde3d63612251a2fc962973caa0f0bd80437`
 - ethereum `0x50fae3c51a00a46bc2bbceb7390c28caa6794a1c`
-- ethereum `0x6a9ffb6727dfd8811b7e67a578e2e576f779ab7e`
 - ethereum `0x77350f85c1570393be6fda586cf978608ba72786`
 - ethereum `0x83aec9c352c9095d19821b0e2272d691860005b8`
 - ethereum `0x8ef854f54df588785e5d16ede9785760d760f52e`
-- ethereum `0x998d0c734bae49b8757157c7fe3847e2e416f8fd`
 - ethereum `0xaf285ce08541908ba3e2b449656f4763a37eda8c`
 - ethereum `0xbabad428f76d05cba8a3e81035c41579cb610bef`
 - ethereum `0xd4bbb9cadae5d31d083456827e2dfd94eae7b971`

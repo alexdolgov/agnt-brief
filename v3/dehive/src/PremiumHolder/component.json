@@ -2,10 +2,18 @@
   "component": "PremiumHolder",
   "main_contract": "PremiumHolder",
   "source_file_count": 2,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc483622c06631400e5cb13ed015f9dc41a14bc12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

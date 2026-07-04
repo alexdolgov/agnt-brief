@@ -1,6 +1,6 @@
 # elyfi — deployments
 
-29 verified deployment(s) across 24 component(s).
+30 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,6 +10,7 @@
 | bsc | `0x51ec26d9c0806e42a6bb8fba40bcc5f7d54400ef` | Rate | impl | live | no |
 | bsc | `0x5bb4d02a0ba38fb8b916758f11d9b256967a1f7f` | LToken | impl | inactive | no |
 | bsc | `0x66368d5be45fbf209fc1f34733da31708a7c03a0` | Index | impl | live | no |
+| bsc | `0x73653254ed0f28d6e5a59191bbb38b06c899fbca` | StakingPoolV2-2 | impl | live | no |
 | bsc | `0x926f61222cd96dd1f1c4066f8626e8514babb016` | Validation | impl | live | no |
 | bsc | `0x979c7aef8ef58aa9cd456f8195258140da275688` | InterestRateModel | impl | inactive | no |
 | bsc | `0xa63830cccdcd380b00ef00f070357cb03cdc2e7b` | DataPipeline | impl | inactive | no |
@@ -33,8 +34,3 @@
 | ethereum | `0xa33cfb48338450aecc3e7da69e7f99ac923cfc28` | StakingPoolV2 | impl | live | no |
 | ethereum | `0xc10b6dafe4d7f7c693f44c51e716166b599644ba` | ERC20Metadata | impl | live | no |
 | ethereum | `0xf26546ee9562ed60f680c747f28a6ae67a805c90` | StakingPoolV2 | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x73653254ed0f28d6e5a59191bbb38b06c899fbca`

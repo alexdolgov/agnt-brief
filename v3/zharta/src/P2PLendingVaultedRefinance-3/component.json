@@ -1,0 +1,18 @@
+{
+  "component": "P2PLendingVaultedRefinance-3",
+  "main_contract": "P2PLendingVaultedRefinance",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf700511333209db6b8a68be72f90e8c73da016a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

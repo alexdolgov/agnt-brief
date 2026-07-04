@@ -1,0 +1,26 @@
+{
+  "component": "DistributionManager-5",
+  "main_contract": "DistributionManager",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd55a06a1d30e575a37949fbb9da85c3518f21fba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8e5715fd87606c2955a04ff9f31553e0d0bff5e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

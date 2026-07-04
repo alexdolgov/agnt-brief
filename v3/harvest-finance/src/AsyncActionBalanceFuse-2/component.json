@@ -1,0 +1,18 @@
+{
+  "component": "AsyncActionBalanceFuse-2",
+  "main_contract": "AsyncActionBalanceFuse",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x89a204aa373a56b02abad265bea12b70c4f2a142",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

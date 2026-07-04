@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: None
 pragma solidity ^0.8.19;
 
 /// @title Multicall Interface
+/// @notice Enables calling multiple methods in a single call to the contract
 interface IMulticall {
-    /// @dev Perform multiple calls according to the provided _data. Reverts with reason if any of the calls failed.
-    /// @notice `msg.value` should not be trusted or used in the multicall data.
-    /// @param _data The encoded function data for each subcall.
-    /// @return results The call results, if success.
-    function multicall(bytes[] calldata _data) external payable returns (bytes[] memory results);
+    /// @notice Call multiple functions in the current contract and return the data from all of them if they all succeed
+    /// @dev The `msg.value` should not be trusted for any method callable from multicall.
+    /// @param data The encoded function data for each of the calls to make to this contract
+    /// @return results The results from each of the calls passed in via data
+    function multicall(bytes[] calldata data) external payable returns (bytes[] memory results);
 }

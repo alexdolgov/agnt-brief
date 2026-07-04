@@ -3,7 +3,9 @@ pragma solidity >=0.5.0;
 
 /// @title Provides functions for deriving a pool address from the deployer, tokens, and the fee
 library PoolAddress {
-    bytes32 internal constant POOL_INIT_CODE_HASH = 0xc701ee63862761c31d620a4a083c61bdc1e81761e6b9c9267fd19afd22e0821d;
+    bytes32 internal constant POOL_INIT_CODE_HASH = 0x27c3e2ae1bcb368a6736910a5545ee0e77b18926879503a168ca167c0861fe56;
+
+    error TokenOrder();
 
     /// @notice The identifying key of the pool
     struct PoolKey {
@@ -27,7 +29,7 @@ library PoolAddress {
     /// @param key The PoolKey
     /// @return pool The contract address of the V3 pool
     function computeAddress(address deployer, PoolKey memory key) internal pure returns (address pool) {
-        require(key.token0 < key.token1, "!TokenOrder");
+        require(key.token0 < key.token1, TokenOrder());
         pool = address(
             uint160(
                 uint256(
@@ -35,7 +37,7 @@ library PoolAddress {
                         abi.encodePacked(
                             hex'ff',
                             deployer,
-                            keccak256(abi.encode(key.token0, key.token1, key.tickSpacing)),
+                            keccak256(abi.encodePacked(key.token0, key.token1, key.tickSpacing)),
                             POOL_INIT_CODE_HASH
                         )
                     )

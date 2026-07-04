@@ -1,0 +1,18 @@
+{
+  "component": "LockersLogic-3",
+  "main_contract": "LockersLogic",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x729c6c89581c4b79e5d8edba194154850bd3bf16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

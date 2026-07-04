@@ -115,6 +115,7 @@ contract CsigmaV2Pool is
         poolSize = _poolSize;
         nonReservePercentage = 9000;
         pauseDuration = 7200;
+        pauseStartTime = 85805;
     }
 
     /// @notice This function is used to get the total amount of the underlying asset that is “managed” by Vault

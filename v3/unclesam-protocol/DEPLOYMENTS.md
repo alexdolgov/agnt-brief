@@ -1,11 +1,12 @@
 # unclesam-protocol — deployments
 
-62 verified deployment(s) across 45 component(s).
+63 verified deployment(s) across 45 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x80a3d4999b2836a5ac90b4742da133f5f5f6c27d` | UncleSam | impl | live | yes |
 | base | `0xfa766ebd05145979799f827067cec87c4455d096` | SAMLPLock | impl | inactive | no |
+| bsc | `0xfb4b1eeffcb1c22a589b1a2d6a091ccb9bdd0015` | StandardToken | impl | live | no |
 | ethereum | `0x0a6c7d5b442ddf53d963581d87932f25743dd3a0` | SIMPLEHUB | impl | live | no |
 | ethereum | `0x0dcf47346f3ae24b4d3efa102437d2002560518b` | DOGEPOOP | impl | inactive | no |
 | ethereum | `0x0dcfdd78fe724d86794a6c29e04e8f2b7ad1aca2` | HyprDropDore | impl | live | no |
@@ -66,8 +67,3 @@
 | ethereum | `0xfc4eb70fc13f5f25f67938cd4249b8c450e50c3c` | BONFIREERC | impl | live | no |
 | ethereum | `0xfd26e39807772251c3bb90fb1fcd9ce5b80c5c24` | CODEX | impl | live | no |
 | ethereum | `0xfed74242dadcc824e2e0ad90ecd5d913252ce1ca` | Cyberquad | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xfb4b1eeffcb1c22a589b1a2d6a091ccb9bdd0015`

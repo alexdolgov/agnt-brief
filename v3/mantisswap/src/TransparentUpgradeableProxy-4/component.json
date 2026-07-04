@@ -1,0 +1,20 @@
+{
+  "component": "TransparentUpgradeableProxy-4",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd"
+  ],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xd4cd95ee7fe89d0cd1982a7336634ec5cb400ca3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

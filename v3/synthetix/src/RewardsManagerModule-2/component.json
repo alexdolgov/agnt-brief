@@ -1,0 +1,18 @@
+{
+  "component": "RewardsManagerModule-2",
+  "main_contract": "RewardsManagerModule",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x184f59ee143d01dd3fb1c14363c8fac99a7f2477",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

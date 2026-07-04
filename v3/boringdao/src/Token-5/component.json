@@ -1,0 +1,18 @@
+{
+  "component": "Token-5",
+  "main_contract": "Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xffeecbf8d7267757c2dc3d13d730e97e15bfdf7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

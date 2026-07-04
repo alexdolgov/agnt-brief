@@ -1,0 +1,42 @@
+{
+  "component": "IncentivizedERC20-9",
+  "main_contract": "IncentivizedERC20",
+  "source_file_count": 40,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x0b233ac4e5227aed780797937fb4a20fdf3e523e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x8264e84690ccafb8a3f00a782b80d5b10c8c8e77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x912b425d867a09608a884c83b3d5075e9037aa6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xf5f4ce2445d23fb92f6d7115f3443bd79186a757",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

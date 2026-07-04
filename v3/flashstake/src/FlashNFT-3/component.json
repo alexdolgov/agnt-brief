@@ -1,0 +1,18 @@
+{
+  "component": "FlashNFT-3",
+  "main_contract": "FlashNFT",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe15314691e916087028a6bf4b8bd1ced1fd41996",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

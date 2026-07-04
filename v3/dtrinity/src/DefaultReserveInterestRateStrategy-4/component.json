@@ -1,0 +1,26 @@
+{
+  "component": "DefaultReserveInterestRateStrategy-4",
+  "main_contract": "DefaultReserveInterestRateStrategy",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x09ddf55a7ec642635788970dcbf4b6aa2552bb14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x8b7d6bff57d840613a6f627f77741ecb226e98c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

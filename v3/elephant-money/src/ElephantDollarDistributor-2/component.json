@@ -1,0 +1,26 @@
+{
+  "component": "ElephantDollarDistributor-2",
+  "main_contract": "ElephantDollarDistributor",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9462e7d37c7765a5acbb55cd3eebeabe9f46de89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb702b3df8a4ae675c4dd392f8f44a08321c9529c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

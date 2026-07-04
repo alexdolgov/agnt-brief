@@ -84,7 +84,7 @@ contract Proxy {
      *
      * @param _implementation Address of the implementation contract.
      */
-    function upgradeTo(address _implementation) public virtual proxyCallIfNotAdmin {
+    function upgradeTo(address _implementation) external proxyCallIfNotAdmin {
         _setImplementation(_implementation);
     }
 
@@ -96,9 +96,8 @@ contract Proxy {
      * @param _data           Calldata to delegatecall the new implementation with.
      */
     function upgradeToAndCall(address _implementation, bytes calldata _data)
-        public
+        external
         payable
-        virtual
         proxyCallIfNotAdmin
         returns (bytes memory)
     {
@@ -113,7 +112,7 @@ contract Proxy {
      *
      * @param _admin New owner of the proxy contract.
      */
-    function changeAdmin(address _admin) public virtual proxyCallIfNotAdmin {
+    function changeAdmin(address _admin) external proxyCallIfNotAdmin {
         _changeAdmin(_admin);
     }
 
@@ -122,7 +121,7 @@ contract Proxy {
      *
      * @return Owner address.
      */
-    function admin() public virtual proxyCallIfNotAdmin returns (address) {
+    function admin() external proxyCallIfNotAdmin returns (address) {
         return _getAdmin();
     }
 
@@ -131,7 +130,7 @@ contract Proxy {
      *
      * @return Implementation address.
      */
-    function implementation() public virtual proxyCallIfNotAdmin returns (address) {
+    function implementation() external proxyCallIfNotAdmin returns (address) {
         return _getImplementation();
     }
 

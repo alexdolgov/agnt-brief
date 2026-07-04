@@ -1,0 +1,18 @@
+{
+  "component": "AcrossV3AmountAdapter-2",
+  "main_contract": "AcrossV3AmountAdapter",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x21c690aea1cd096e291b3132cdef4a1a0c9d11fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

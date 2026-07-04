@@ -1,0 +1,18 @@
+{
+  "component": "SystemRegistry-3",
+  "main_contract": "SystemRegistry",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x734f854c33a149ff7efe120a921c9b39b397d5b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

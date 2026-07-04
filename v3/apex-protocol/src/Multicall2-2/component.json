@@ -1,0 +1,26 @@
+{
+  "component": "Multicall2-2",
+  "main_contract": "Multicall2",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4c9363c2a27ba2e4fb172c31972832348838a4ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82d550b27ba4fd402aad58ece8c393fcec6b4afa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

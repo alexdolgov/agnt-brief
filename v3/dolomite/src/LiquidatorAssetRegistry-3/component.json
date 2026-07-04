@@ -1,0 +1,18 @@
+{
+  "component": "LiquidatorAssetRegistry-3",
+  "main_contract": "LiquidatorAssetRegistry",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x10d98759762efac656bd4be7f2f5599208f44fac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "component": "DelegationSupervisor",
   "main_contract": "DelegationSupervisor",
-  "source_file_count": 34,
+  "source_file_count": 31,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xdd5e5ec73707d74210f380f5b9bb85868639b79e",
+      "address": "0xafa904152e04abff56701223118be2832a4449e0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     }
   ]
 }

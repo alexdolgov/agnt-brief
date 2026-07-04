@@ -1,19 +1,23 @@
 {
   "component": "AddressProviderV3",
   "main_contract": "AddressProviderV3",
-  "source_file_count": 8,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Dec%20-%20ABDK_Gearbox_Core_V3.pdf",
-    "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Oct%20-%20ChainSecurity_Gearbox_Protocol_Partial_Migration_to_V3_audit.pdf",
-    "https://github.com/Gearbox-protocol/security/blob/main/audits/2024%20Mar%20-%20ChainSecurity_Gearbox_Core_V3.pdf"
-  ],
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3761ca4bfacfcffc1b8034e69f19116dd6756726",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4b27b296273b72d7c7bfee1ace93dc081467c41b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7d04ecdb892ae074f03b5d0aba03796f90f3f2af",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

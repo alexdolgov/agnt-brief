@@ -1,0 +1,38 @@
+{
+  "component": "MetaSwap-4",
+  "main_contract": "MetaSwap",
+  "source_file_count": 27,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/saddle-finance/saddle-audits/blob/master/10-29-2020_Certik.pdf",
+    "https://github.com/saddle-finance/saddle-audits/blob/master/12-09-2020_Quantstamp.pdf",
+    "https://www.openzeppelin.com/news/saddle-contracts-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9dc37020f261758871104f9d8b87e575ee45bc5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc55e8c79e5a6c3216d4023769559d06fa9a7732e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5dd186f8809147f96d3ffc4508f3c82694e58c9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

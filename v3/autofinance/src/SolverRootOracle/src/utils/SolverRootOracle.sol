@@ -72,7 +72,6 @@ contract SolverRootOracle is SystemComponent, IRootPriceOracle {
         address pool,
         address quoteToken
     ) external override returns (uint256, uint256, bool) {
-        // slither-disable-next-line unused-return
         return _root().getRangePricesLP(lpToken, pool, quoteToken);
     }
 

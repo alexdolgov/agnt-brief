@@ -87,8 +87,11 @@ abstract contract BridgeAdapterBase is GuardianAdmin {
         }
     }
 
-    /// @dev Forward up to `amount` tokens to `to`, capped to actual balance.
-    /// Handles fee-on-transfer tokens and bridge under-delivery.
+    /// @dev Forward up to `amount` tokens to `to`, capped to the adapter's
+    /// current balance so a bridge under-delivery does not revert the
+    /// forwarding leg. The returned `sent` is the nominal amount transferred
+    /// out by this contract; for fee-on-transfer or tax tokens the recipient
+    /// may receive less than `sent`, which downstream callers do not measure.
     function _forwardAvailable(
         address token,
         address to,

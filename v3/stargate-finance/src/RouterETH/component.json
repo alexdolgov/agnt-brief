@@ -1,18 +1,23 @@
 {
   "component": "RouterETH",
   "main_contract": "RouterETH",
-  "source_file_count": 7,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26%20RouterETH%20Audit%201.1%20(17th%20June%202022)%20-%20Ackee.pdf",
-    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26RouterETH%20Audit%201.0%20(17th%20June%202022)%20-%20Ackee.pdf"
-  ],
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb49c4e680174e331cb0a7ff3ab58afc9738d5f8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbf22f0f184bccbea268df387a49ff5238dd23e40",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

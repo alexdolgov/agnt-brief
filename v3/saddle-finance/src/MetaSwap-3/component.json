@@ -1,0 +1,50 @@
+{
+  "component": "MetaSwap-3",
+  "main_contract": "MetaSwap",
+  "source_file_count": 29,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c8bae14c9f9bf2c953997c881befac7729fd314",
+      "is_proxy": true,
+      "implementation_address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f1d224557afa4365155ea77ce4bc32d5dae2174",
+      "is_proxy": true,
+      "implementation_address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x505736d427c313cdecdbf72049eb944e53b3065b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x824dcd7b044d60df2e89b1bb888e66d8bcf41491",
+      "is_proxy": true,
+      "implementation_address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

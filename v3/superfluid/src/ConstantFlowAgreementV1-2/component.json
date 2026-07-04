@@ -1,0 +1,74 @@
+{
+  "component": "ConstantFlowAgreementV1-2",
+  "main_contract": "ConstantFlowAgreementV1",
+  "source_file_count": 34,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20d9e5190b01fd6c4761b7c1dfeabb39108e020b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe821ecae59cb7cf128d226f8ea41b0d0d03a53f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x23e9a1d629ac39e60c60c7592eb12fb8247bd52a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x886d2cae1bf0d6d090be04e06fba35edbb6e5e02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9967664fd98c78531f9c041c5c037d1e67bb18c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3903df4f25d9099b15b0b868f5c9876b1013b3b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5a2362c459006836de9ef9de8c3a0180a2f6ed42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xd571f5ec96a5b362d10615ff999f06fac4c9e141",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

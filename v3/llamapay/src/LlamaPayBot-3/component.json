@@ -1,0 +1,26 @@
+{
+  "component": "LlamaPayBot-3",
+  "main_contract": "LlamaPayBot",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6f9fb43274e9011804bf516e78caf5e89856301a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf13563b612574d3e5372dddc6c06b7a0f3bac057",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

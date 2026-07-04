@@ -1,14 +1,20 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 interface IBaseRewarder {
     error RecoverDurationPending();
 
     event RewardAdded(
-        uint256 reward, uint256 rewardRate, uint256 lastUpdateTime, uint256 periodFinish, uint256 historicalRewards
+        uint256 reward,
+        uint256 rewardRate,
+        uint256 lastUpdateBlock,
+        uint256 periodInBlockFinish,
+        uint256 historicalRewards
     );
-    event UserRewardUpdated(address indexed user, uint256 amount, uint256 rewardPerTokenStored, uint256 lastUpdateTime);
+    event UserRewardUpdated(
+        address indexed user, uint256 amount, uint256 rewardPerTokenStored, uint256 lastUpdateBlock
+    );
     event Staked(address indexed user, uint256 amount);
     event Withdrawn(address indexed user, uint256 amount);
     event RewardPaid(address indexed user, address indexed recipient, uint256 reward);
@@ -37,24 +43,22 @@ interface IBaseRewarder {
      * @param account Address of the account.
      * @return The earned rewards for the given account.
      */
-    function earned(
-        address account
-    ) external view returns (uint256);
+    function earned(address account) external view returns (uint256);
 
     /**
-     * @notice Calculates the rewards per token for the current second.
+     * @notice Calculates the rewards per token for the current block.
      * @dev The total amount of rewards available in the system is fixed, and it needs to be distributed among the users
      * based on their token balances and staking duration.
-     * Rewards per token represent the amount of rewards that each token is entitled to receive at the current second.
+     * Rewards per token represent the amount of rewards that each token is entitled to receive at the current block.
      * The calculation takes into account the reward rate, the time duration since the last update,
      * and the total supply of tokens in the staking pool.
-     * @return The updated rewards per token value for the current second.
+     * @return The updated rewards per token value for the current block.
      */
     function rewardPerToken() external view returns (uint256);
 
     /**
-     * @notice Get the current reward rate per second.
-     * @return The current reward rate per second.
+     * @notice Get the current reward rate per block.
+     * @return The current reward rate per block.
      */
     function rewardRate() external view returns (uint256);
 
@@ -65,10 +69,10 @@ interface IBaseRewarder {
     function tokeLockDuration() external view returns (uint256);
 
     /**
-     * @notice Get the last timestamp where rewards are applicable.
-     * @return The last timestamp where rewards are applicable.
+     * @notice Get the last block where rewards are applicable.
+     * @return The last block number where rewards are applicable.
      */
-    function lastTimeRewardApplicable() external view returns (uint256);
+    function lastBlockRewardApplicable() external view returns (uint256);
 
     /**
      * @notice The total amount of tokens staked
@@ -79,17 +83,13 @@ interface IBaseRewarder {
      * @notice The amount of tokens staked for the specified account
      * @param account The address of the account to get the balance of
      */
-    function balanceOf(
-        address account
-    ) external view returns (uint256);
+    function balanceOf(address account) external view returns (uint256);
 
     /**
      * @notice Queue new rewards to be distributed.
      * @param newRewards The amount of new rewards to be queued.
      */
-    function queueNewRewards(
-        uint256 newRewards
-    ) external;
+    function queueNewRewards(uint256 newRewards) external;
 
     /**
      * @notice Token distributed as rewards
@@ -101,17 +101,13 @@ interface IBaseRewarder {
      * @notice Add an address to the whitelist.
      * @param wallet The address to be added to the whitelist.
      */
-    function addToWhitelist(
-        address wallet
-    ) external;
+    function addToWhitelist(address wallet) external;
 
     /**
      * @notice Remove an address from the whitelist.
      * @param wallet The address to be removed from the whitelist.
      */
-    function removeFromWhitelist(
-        address wallet
-    ) external;
+    function removeFromWhitelist(address wallet) external;
 
     /**
      * @notice Recovers tokens from the rewarder. However, a recovery duration of 1 year is applicable for reward token
@@ -125,7 +121,5 @@ interface IBaseRewarder {
      * @param wallet The address to be checked.
      * @return bool indicating if the address is whitelisted.
      */
-    function isWhitelisted(
-        address wallet
-    ) external view returns (bool);
+    function isWhitelisted(address wallet) external view returns (bool);
 }

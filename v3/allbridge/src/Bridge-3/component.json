@@ -1,0 +1,26 @@
+{
+  "component": "Bridge-3",
+  "main_contract": "Bridge",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa314330482f325d38a83b492ef6b006224a3bea9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7e6c2522fee4e74a0182b9c6159048361bc3260a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "AdmiralsQuarters",
   "main_contract": "AdmiralsQuarters",
   "source_file_count": 63,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -42,6 +42,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x92176c8ce4f6c9925ba2dbfae0e2a395f03512c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8423c38af6b70d27d613c17595e1110b25d3a983",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

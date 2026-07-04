@@ -1,7 +1,7 @@
 {
   "component": "TokenSI",
   "main_contract": "TokenSI",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x449e4e12d8fdc140c31f278352d64f5d1deb465e",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9650255a3077d3012deb944b2dfa5741eb2e1929",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

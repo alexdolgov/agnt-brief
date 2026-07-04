@@ -1,6 +1,6 @@
 # itrust-finance — deployments
 
-537 verified deployment(s) across 156 component(s).
+540 verified deployment(s) across 156 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -63,6 +63,7 @@
 | ethereum | `0x1a4d23403c31ba26a4b84af09364d503ad2bcc68` | KeyringIdleWhitelist | impl | live | no |
 | ethereum | `0x1c89df6c8b1ab81ef90855120fafb93d7fca3254` | IdleCreditVaultWriteOffEscrow | impl | unknown | no |
 | ethereum | `0x1cbd086e16f1188e0e15a153124d6f5c81e57f3e` | TransparentUpgradeableProxy | proxy | unknown | no |
+| ethereum | `0x1cd24f833af78ae877f90569eaec3174d6769995` | Vyper_contract | impl | unknown | no |
 | ethereum | `0x1d659f4357e30de73ed2dc02ed4e34bca262dcc8` | TransparentUpgradeableProxy-9 | proxy | unknown | no |
 | ethereum | `0x1ea9ae797972ad9fc52c55105d184d8b059bb716` | IdleCDO | impl | unknown | no |
 | ethereum | `0x1eb1b47d0d8bcd9d761f52d26fcd90bba225344c` | TransparentUpgradeableProxy-21 | proxy | unknown | no |
@@ -185,6 +186,7 @@
 | ethereum | `0x56050f117d675041da6a4b501f0cb75d455759a1` | IdleCDOPoLidoVariant | impl | unknown | no |
 | ethereum | `0x562c4fd96f0652f5fcfa96b0a33088b5a6eaee9b` | IdleBatchedMint | proxy | unknown | no |
 | ethereum | `0x577d963246d28dbe0dc579048adda421b054924a` | AdminUpgradeabilityProxy | impl | unknown | no |
+| ethereum | `0x57d59d4bbb0e2432f1698f33d4a47b3c7a9754f3` | Vyper_contract | impl | unknown | no |
 | ethereum | `0x57e142278e93d721f3ebd52ec5d2d28484862f32` | TransparentUpgradeableProxy-29 | proxy | unknown | no |
 | ethereum | `0x58676340f458b36997608672be6548c92ce50714` | Claims | impl | unknown | no |
 | ethereum | `0x587fe6430a1148df4868e9e71357a179110c608a` | IdleDSR | impl | unknown | no |
@@ -296,6 +298,7 @@
 | ethereum | `0x8c85dcf93c20d6c166398eb2279a9e4e9f155f02` | IdleFulcrumV2 | impl | unknown | no |
 | ethereum | `0x8daed2da38f4a4eb0c46f2e0e6811f63b7c7752c` | Visor | impl | unknown | no |
 | ethereum | `0x8e0a8a5c1e5b3ac0670ea5a613bb15724d51fc37` | IdleCDOInstadappLiteVariant | proxy | unknown | no |
+| ethereum | `0x8f195979f7af6c500b4688e492d07036c730c1b2` | Vyper_contract | impl | unknown | no |
 | ethereum | `0x8f4cb6a9bc3856264ec5f9680ab1cb5fb81574eb` | TranchesChainlinkOracle | impl | unknown | no |
 | ethereum | `0x8f889dc453750c91c921bd6fb9a33a8a579b1baa` | ConvexStrategyPlainPool3Token | impl | unknown | no |
 | ethereum | `0x8fb3f730fb2ab4b28e3d39a67e916dc98d59745c` | IdleCDOEpochVariant | impl | unknown | no |
@@ -541,10 +544,3 @@
 | ethereum | `0xffec41c97e070ab5ebeb6e24258b38f69eed5020` | TokenManager | impl | unknown | no |
 | optimism | `0xab599b2697d836e665706dc59566363e2fe0995a` | StakingData | impl | live | yes |
 | optimism | `0xcc134245424fe9e10a011961451d5ad6cd0c087c` | StakingData | proxy | unknown | yes |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x1cd24f833af78ae877f90569eaec3174d6769995`
-- ethereum `0x57d59d4bbb0e2432f1698f33d4a47b3c7a9754f3`
-- ethereum `0x8f195979f7af6c500b4688e492d07036c730c1b2`

@@ -1,0 +1,18 @@
+{
+  "component": "ProxyAdmin-4",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd88c8e0ae21bea6ade41a41130bb4cd43e6b1723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

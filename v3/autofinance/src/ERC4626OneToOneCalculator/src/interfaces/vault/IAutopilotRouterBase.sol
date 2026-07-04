@@ -105,10 +105,7 @@ interface IAutopilotRouterBase {
     /// @param vault IERC20 instance of an Autopool to stake to.
     /// @param maxAmount Maximum amount for user to stake.  Amount > balanceOf(user) will stake all present tokens.
     /// @return staked Returns total amount staked.
-    function stakeVaultToken(
-        IERC20 vault,
-        uint256 maxAmount
-    ) external payable returns (uint256 staked);
+    function stakeVaultToken(IERC20 vault, uint256 maxAmount) external payable returns (uint256 staked);
 
     /// @notice Unstakes vault token from corresponding rewarder.
     /// @param vault IAutopool instance of the vault token to withdraw.
@@ -127,23 +124,7 @@ interface IAutopilotRouterBase {
     /// @param vault IAutopool instance of vault token to claim rewards for.
     /// @param rewarder Rewarder to claim rewards from.
     /// @param recipient Address to claim rewards for.
-    function claimAutopoolRewards(
-        IAutopool vault,
-        IMainRewarder rewarder,
-        address recipient
-    ) external payable;
-
-    /// @notice Claims rewards on user stake of vault token.
-    /// @param vault IAutopool instance of vault token to claim rewards for.
-    /// @param rewarder Rewarder to claim rewards from.
-    /// @param recipient Address to claim rewards for.
-    /// @param claimExtras Whether to claim for all the rewarders or just the root
-    function claimAutopoolRewards(
-        IAutopool vault,
-        IMainRewarder rewarder,
-        address recipient,
-        bool claimExtras
-    ) external payable;
+    function claimAutopoolRewards(IAutopool vault, IMainRewarder rewarder, address recipient) external payable;
 
     /// @notice Checks if timestamp is expired. Purpose is to check the execution deadline with the multicall.
     /// @param timestamp Timestamp to check.

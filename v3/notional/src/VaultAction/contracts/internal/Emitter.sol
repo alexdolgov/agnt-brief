@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -275,7 +275,6 @@ library Emitter {
         emit TransferSingle(msg.sender, Constants.SETTLEMENT_RESERVE, address(0), id, uint256(fCashDebtInReserve.abs()));
         // The settled prime debt doesn't exist in this case since we don't add the debt to the
         // total prime debt so we just "burn" the prime cash that only exists in an off chain accounting context.
-        // TODO: may want to emit a repay event here instead...
         emitMintOrBurnPrimeCash(Constants.SETTLEMENT_RESERVE, currencyId, settledPrimeCash);
         if (excessCash > 0) {
             // Any excess prime cash in reserve is "transferred" to the fee reserve
@@ -445,9 +444,9 @@ library Emitter {
         if (vaultAccount.maturity != 0 && prior.maturity != vaultAccount.maturity) {
             // Need to mint the shares for the new vault maturity, this may be a new entrant into
             // the vault or the vault account rolling to a new maturity
-            baseId = _encodeVaultId(vaultConfig.vault, vaultConfig.borrowCurrencyId, vaultAccount.maturity, 0);
-            ids[0] = baseId | Constants.VAULT_DEBT_ASSET_TYPE;
-            ids[1] = baseId | Constants.VAULT_SHARE_ASSET_TYPE;
+            uint256 newBaseId = _encodeVaultId(vaultConfig.vault, vaultConfig.borrowCurrencyId, vaultAccount.maturity, 0);
+            ids[0] = newBaseId | Constants.VAULT_DEBT_ASSET_TYPE;
+            ids[1] = newBaseId | Constants.VAULT_SHARE_ASSET_TYPE;
             values[0] = newDebtStorageValue;
             values[1] = vaultAccount.vaultShares;
             emit TransferBatch(msg.sender, address(0), vaultAccount.account, ids, values);
@@ -468,14 +467,13 @@ library Emitter {
 
     /// @notice Emits events during a vault deleverage, where a vault account receives cash and loses
     /// vault shares as a result.
-    function emitVaultDeleverage(
+    function emitVaultDeleverageDebt(
         address liquidator,
         address account,
         address vault,
         uint16 currencyId,
         uint256 maturity,
         int256 depositAmountPrimeCash,
-        uint256 vaultSharesToLiquidator,
         PrimeRate memory pr
     ) internal {
         // Liquidator transfer prime cash to vault
@@ -505,10 +503,22 @@ library Emitter {
                 depositAmountPrimeCash.toUint()
             );
         }
+    }
 
+    function emitTransferVaultShares(
+        address liquidator,
+        address account,
+        address vault,
+        uint16 vaultSharesCurrencyId,
+        uint256 maturity,
+        uint256 vaultSharesToLiquidator
+    ) internal {
         // Transfer vault shares to the liquidator
+        uint256 vaultSharesId = _encodeVaultId(
+            vault, vaultSharesCurrencyId, maturity, Constants.VAULT_SHARE_ASSET_TYPE
+        );
         emit TransferSingle(
-            msg.sender, account, liquidator, baseId | Constants.VAULT_SHARE_ASSET_TYPE, vaultSharesToLiquidator
+            msg.sender, account, liquidator, vaultSharesId, vaultSharesToLiquidator
         );
     }
 

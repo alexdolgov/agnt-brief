@@ -1,6 +1,6 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.12;
+pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
@@ -28,17 +28,6 @@ import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
  */
 contract TransparentUpgradeableProxy is ERC1967Proxy {
     /**
-     * @dev Modifier used internally that will delegate the call to the implementation unless the sender is the admin.
-     */
-    modifier ifAdmin() {
-        if (msg.sender == _getAdmin()) {
-            _;
-        } else {
-            _fallback();
-        }
-    }
-
-    /**
      * @dev Initializes an upgradeable proxy managed by `_admin`, backed by the implementation at `_logic`, and
      * optionally initialized with `_data` as explained in {ERC1967Proxy-constructor}.
      */
@@ -49,6 +38,17 @@ contract TransparentUpgradeableProxy is ERC1967Proxy {
     ) payable ERC1967Proxy(_logic, _data) {
         assert(_ADMIN_SLOT == bytes32(uint256(keccak256("eip1967.proxy.admin")) - 1));
         _changeAdmin(admin_);
+    }
+
+    /**
+     * @dev Modifier used internally that will delegate the call to the implementation unless the sender is the admin.
+     */
+    modifier ifAdmin() {
+        if (msg.sender == _getAdmin()) {
+            _;
+        } else {
+            _fallback();
+        }
     }
 
     /**
@@ -109,17 +109,17 @@ contract TransparentUpgradeableProxy is ERC1967Proxy {
     }
 
     /**
+     * @dev Returns the current admin.
+     */
+    function _admin() internal view virtual returns (address) {
+        return _getAdmin();
+    }
+
+    /**
      * @dev Makes sure the admin cannot access the fallback function. See {Proxy-_beforeFallback}.
      */
     function _beforeFallback() internal virtual override {
         require(msg.sender != _getAdmin(), "TransparentUpgradeableProxy: admin cannot fallback to proxy target");
         super._beforeFallback();
-    }
-
-    /**
-     * @dev Returns the current admin.
-     */
-    function _admin() internal view virtual returns (address) {
-        return _getAdmin();
     }
 }

@@ -2,7 +2,7 @@
   "component": "WooSuperChargerVault",
   "main_contract": "WooSuperChargerVault",
   "source_file_count": 18,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": true,
   "audits_covering": [
     "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-WooFiEarn-v1.0.pdf"
@@ -28,6 +28,22 @@
       "chain": "polygon",
       "chain_id": 137,
       "address": "0x8ea0eb2cebda4d7c88183ac8fbf3a9ae6ae07a5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x86a6391d5d7c02245927e2dc0cbfa3e5f1b9abc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfc0e57b5f8adcadc5e6e37578bb9aa30cee312af",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

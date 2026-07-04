@@ -75,31 +75,18 @@ library AutopoolToken {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 
     /// @dev Sets a `value` amount of tokens as the allowance of `spender` over the caller's tokens.
-    function approve(
-        TokenData storage data,
-        address spender,
-        uint256 value
-    ) external returns (bool) {
+    function approve(TokenData storage data, address spender, uint256 value) external returns (bool) {
         address owner = msg.sender;
         approve(data, owner, spender, value);
         return true;
     }
 
     /// @dev Sets `value` as the allowance of `spender` over the `owner` s tokens.
-    function approve(
-        TokenData storage data,
-        address owner,
-        address spender,
-        uint256 value
-    ) public {
+    function approve(TokenData storage data, address owner, address spender, uint256 value) public {
         _approve(data, owner, spender, value, true);
     }
 
-    function transfer(
-        TokenData storage data,
-        address to,
-        uint256 value
-    ) external returns (bool) {
+    function transfer(TokenData storage data, address to, uint256 value) external returns (bool) {
         address owner = msg.sender;
         _transfer(data, owner, to, value);
         return true;
@@ -107,12 +94,7 @@ library AutopoolToken {
 
     /// @dev Moves a `value` amount of tokens from `from` to `to` using the allowance mechanism.
     /// value` is then deducted from the caller's allowance.
-    function transferFrom(
-        TokenData storage data,
-        address from,
-        address to,
-        uint256 value
-    ) external returns (bool) {
+    function transferFrom(TokenData storage data, address from, address to, uint256 value) external returns (bool) {
         address spender = msg.sender;
         _spendAllowance(data, from, spender, value);
         _transfer(data, from, to, value);
@@ -120,11 +102,7 @@ library AutopoolToken {
     }
 
     /// @dev Creates a `value` amount of tokens and assigns them to `account`, by transferring it from address(0).
-    function mint(
-        TokenData storage data,
-        address account,
-        uint256 value
-    ) external {
+    function mint(TokenData storage data, address account, uint256 value) external {
         if (account == address(0)) {
             revert ERC20InvalidReceiver(address(0));
         }
@@ -132,11 +110,7 @@ library AutopoolToken {
     }
 
     /// @dev Destroys a `value` amount of tokens from `account`, lowering the total supply.
-    function burn(
-        TokenData storage data,
-        address account,
-        uint256 value
-    ) external {
+    function burn(TokenData storage data, address account, uint256 value) external {
         if (account == address(0)) {
             revert ERC20InvalidSender(address(0));
         }
@@ -178,12 +152,7 @@ library AutopoolToken {
     }
 
     /// @dev Moves a `value` amount of tokens from `from` to `to`.
-    function _transfer(
-        TokenData storage data,
-        address from,
-        address to,
-        uint256 value
-    ) private {
+    function _transfer(TokenData storage data, address from, address to, uint256 value) private {
         if (from == address(0)) {
             revert ERC20InvalidSender(address(0));
         }
@@ -194,12 +163,7 @@ library AutopoolToken {
     }
 
     /// @dev Updates `owner` s allowance for `spender` based on spent `value`.
-    function _spendAllowance(
-        TokenData storage data,
-        address owner,
-        address spender,
-        uint256 value
-    ) private {
+    function _spendAllowance(TokenData storage data, address owner, address spender, uint256 value) private {
         uint256 currentAllowance = data.allowances[owner][spender];
         if (currentAllowance != type(uint256).max) {
             if (currentAllowance < value) {
@@ -213,12 +177,7 @@ library AutopoolToken {
 
     /// @dev Transfers a `value` amount of tokens from `from` to `to`, or alternatively mints (or burns) if `from`
     /// (or `to`) is the zero address.
-    function _update(
-        TokenData storage data,
-        address from,
-        address to,
-        uint256 value
-    ) private {
+    function _update(TokenData storage data, address from, address to, uint256 value) private {
         if (from == address(0)) {
             // Overflow check required: The rest of the code assumes that totalSupply never overflows
             data.totalSupply += value;
@@ -249,13 +208,7 @@ library AutopoolToken {
     }
 
     /// @dev Variant of `_approve` with an optional flag to enable or disable the Approval event.
-    function _approve(
-        TokenData storage data,
-        address owner,
-        address spender,
-        uint256 value,
-        bool emitEvent
-    ) private {
+    function _approve(TokenData storage data, address owner, address spender, uint256 value, bool emitEvent) private {
         if (owner == address(0)) {
             revert ERC20InvalidApprover(address(0));
         }

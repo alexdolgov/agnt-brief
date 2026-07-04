@@ -1,15 +1,87 @@
 {
   "component": "TimelockControllerWithCounter",
   "main_contract": "TimelockControllerWithCounter",
-  "source_file_count": 15,
-  "deployment_count": 1,
+  "source_file_count": 12,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x09d81464c7293c774203e46e3c921559c8e9d53f",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc9025cef778a8032a689ac52798c66939c17c22f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0f2b510bfb0b83fc692b5601ef7a800d1d9d2fef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x20b63ccfdb926904c2cfa8c9424b28c4bfd8fb36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x64b478b7537395036c65468a6eb9b52fa6096a1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x769a713bf0589d495008e5a7c78fabafb9c35f39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x7b979b965cd124501d87007b2421d0e585733525",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x80d1cd24b10c0ba5d6ee5043cbdc80e00830381b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb2ea590fcea142dcceaeb3912da4c1df721848ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd2a211acea98c799a67ac47c274ebdf7dee24396",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x169487a55de79476125a56b07c36ca8dbf37a373",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "IsolationModeTokenVaultV1ActionsImpl-8",
+  "main_contract": "IsolationModeTokenVaultV1ActionsImpl",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf3766d95549fdfb37e17bbc7bd47defb57a792dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

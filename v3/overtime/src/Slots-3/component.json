@@ -1,0 +1,26 @@
+{
+  "component": "Slots-3",
+  "main_contract": "Slots",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x62188ab6808ffbf6a24350db67ef6583748072d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfa904de83517dc3315bc64f08226232880a37cfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

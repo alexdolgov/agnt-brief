@@ -1,10 +1,10 @@
-// Sources flattened with hardhat v2.6.8 https://hardhat.org
-
-// File @openzeppelin/contracts/utils/Context.sol@v4.3.3
+/**
+ *Submitted for verification at BscScan.com on 2021-12-06
+*/
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma solidity 0.8.4;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -25,13 +25,6 @@ abstract contract Context {
         return msg.data;
     }
 }
-
-
-// File @openzeppelin/contracts/access/Ownable.sol@v4.3.3
-
-
-
-pragma solidity ^0.8.0;
 
 /**
  * @dev Contract module which provides a basic access control mechanism, where
@@ -98,13 +91,6 @@ abstract contract Ownable is Context {
         emit OwnershipTransferred(oldOwner, newOwner);
     }
 }
-
-
-// File @openzeppelin/contracts/utils/math/SafeMath.sol@v4.3.3
-
-
-
-pragma solidity ^0.8.0;
 
 // CAUTION
 // This version of SafeMath should only be used with Solidity 0.8 or later,
@@ -329,13 +315,6 @@ library SafeMath {
     }
 }
 
-
-// File contracts/interfaces/IBEP20.sol
-
-
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Interface of the BEP20 standard as defined in the EIP.
  */
@@ -420,20 +399,9 @@ interface IBEP20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-
-// File contracts/interfaces/IRewardDistributor.sol
-
 interface IRewardDistributor {
     function addRewardHolderShare(address rewardRecipient, uint256 amount) external;
 }
-
-
-// File contracts/interfaces/IUniswap.sol
-
-
-
-pragma solidity ^0.8.0;
-
 
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
@@ -638,15 +606,6 @@ interface IUniswapV2Factory {
 }
 
 
-// File contracts/HuhToken.sol
-
-//      ██╗  ██╗██╗   ██╗██╗  ██╗    ████████╗ ██████╗ ██╗  ██╗███████╗███╗   ██╗
-//      ██║  ██║██║   ██║██║  ██║    ╚══██╔══╝██╔═══██╗██║ ██╔╝██╔════╝████╗  ██║
-//      ███████║██║   ██║███████║       ██║   ██║   ██║█████╔╝ █████╗  ██╔██╗ ██║
-//      ██╔══██║██║   ██║██╔══██║       ██║   ██║   ██║██╔═██╗ ██╔══╝  ██║╚██╗██║
-//      ██║  ██║╚██████╔╝██║  ██║       ██║   ╚██████╔╝██║  ██╗███████╗██║ ╚████║
-//      ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝       ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝
-
 contract HuhToken is Context, IBEP20, Ownable {
     using SafeMath for uint256;
 
@@ -743,14 +702,14 @@ contract HuhToken is Context, IBEP20, Ownable {
     event UpdateAmountOfTokensToAddToLiquidityThreshold(uint256 indexed amountOfTokensToAddToLiquidityThreshold);
     event SetMaxTxPercent(uint256 indexed maxTxPercent);
 
-    constructor(IRewardDistributor _rewardDistributor, address _router) {
-        IUniswapV2Router02 _pancakeswapV2Router = IUniswapV2Router02(_router);
+    constructor() {
+        IUniswapV2Router02 _pancakeswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
 
         pcsV2Pair = IUniswapV2Factory(_pancakeswapV2Router.factory()).createPair(address(this), _pancakeswapV2Router.WETH());
         pcsV2Router = _pancakeswapV2Router;
         _allowances[address(this)][address(pcsV2Router)] = _MAX;
 
-        rewardDistributor = _rewardDistributor;
+        rewardDistributor = IRewardDistributor(0xc15e89f2149bCC0cBd5FB204C9e77fe878f1e9b2);
         _allowances[address(this)][address(rewardDistributor)] = _MAX;
         _allowances[address(rewardDistributor)][address(pcsV2Router)] = _MAX;
 

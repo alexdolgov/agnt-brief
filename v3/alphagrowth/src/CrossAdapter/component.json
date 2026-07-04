@@ -2,7 +2,7 @@
   "component": "CrossAdapter",
   "main_contract": "CrossAdapter",
   "source_file_count": 7,
-  "deployment_count": 27,
+  "deployment_count": 29,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -121,6 +121,14 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x8e8cfcbe490da27032a6edacb6a8436be904cd4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0xa5263145d8c9bfc89c7a55ea21fb5b617c7b6cff",
       "is_proxy": false,
       "implementation_address": null,
@@ -165,6 +173,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0156a894f2d14b127a8c37360d6879891f62efa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     },
     {
       "chain": "ethereum",

@@ -2,10 +2,18 @@
   "component": "PositionComponentCorrectionModule",
   "main_contract": "PositionComponentCorrectionModule",
   "source_file_count": 27,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8868c2762d86d9636a3fa17df54c814232bcabb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

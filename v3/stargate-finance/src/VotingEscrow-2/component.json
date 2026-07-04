@@ -1,15 +1,18 @@
 {
   "component": "VotingEscrow-2",
   "main_contract": "VotingEscrow",
-  "source_file_count": 8,
+  "source_file_count": 12,
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20VE%20Audit%201.0%20(March%2029th%202022)%20-%20Ackee.pdf",
+    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20VE%20Audit%201.1%20(April%2013th%202022)%20-%20Ackee.pdf"
+  ],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x43d2761ed16c89a2c4342e2b16a3c61ccf88f05b",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e42acbd23faee03249daff896b78d7e79fbd58e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

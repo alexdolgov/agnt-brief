@@ -2,7 +2,6 @@
 pragma solidity >=0.5.0;
 
 import {IVoter} from "contracts/core/interfaces/IVoter.sol";
-import {ICLFactory} from "contracts/core/interfaces/ICLFactory.sol";
 import {IFactoryRegistry} from "contracts/core/interfaces/IFactoryRegistry.sol";
 
 /// @title The interface for the CL Factory
@@ -62,11 +61,6 @@ interface ICLFactory {
     /// @return The address of the factory registry
     function factoryRegistry() external view returns (IFactoryRegistry);
 
-    /// @notice The address of the legacy CLFactory
-    /// @dev The legacy CLFactory that operates concurrently with this pool factory
-    /// @return The address of the legacy pool factory
-    function legacyCLFactory() external view returns (ICLFactory);
-
     /// @notice Returns the current owner of the factory
     /// @dev Can be changed by the current owner via setOwner
     /// @return The address of the factory owner
@@ -113,6 +107,14 @@ interface ICLFactory {
     /// @dev tokenA and tokenB may be passed in either token0/token1 or token1/token0 order
     /// @param tokenA The contract address of either token0 or token1
     /// @param tokenB The contract address of the other token
+    /// @param tickSpacing The tick spacing of the pool in uint24
+    /// @return pool The pool address
+    function getPool(address tokenA, address tokenB, uint24 tickSpacing) external view returns (address pool);
+
+    /// @notice Returns the pool address for a given pair of tokens and a tick spacing, or address 0 if it does not exist
+    /// @dev tokenA and tokenB may be passed in either token0/token1 or token1/token0 order
+    /// @param tokenA The contract address of either token0 or token1
+    /// @param tokenB The contract address of the other token
     /// @param tickSpacing The tick spacing of the pool
     /// @return pool The pool address
     function getPool(address tokenA, address tokenB, int24 tickSpacing) external view returns (address pool);
@@ -129,7 +131,7 @@ interface ICLFactory {
     /// @notice Used in VotingEscrow to determine if a contract is a valid pool of the factory
     /// @param pool The address of the pool to check
     /// @return Whether the pool is a valid pool of the factory
-    function isPool(address pool) external view returns (bool);
+    function isPair(address pool) external view returns (bool);
 
     /// @notice Get swap & flash fee for a given pool. Accounts for default and dynamic fees
     /// @dev Swap & flash fee is denominated in pips. i.e. 1e-6
@@ -143,7 +145,17 @@ interface ICLFactory {
     /// @return The unstaked fee for the given pool
     function getUnstakedFee(address pool) external view returns (uint24);
 
-    /// @notice Creates a pool for the given two tokens and fee
+    /// @notice Creates a pool for the given two tokens and tick spacing
+    /// @param tokenA One of the two tokens in the desired pool
+    /// @param tokenB The other of the two tokens in the desired pool
+    /// @param tickSpacing The desired tick spacing for the pool
+    /// @dev Use encodeSqrtPrice(1,1) as price
+    /// @dev Used to programmatically create pools in case one does not exist
+    /// @dev Invalid tickSpacing will revert the transaction
+    /// @return pool The address of the newly created pool
+    function createPool(address tokenA, address tokenB, uint24 tickSpacing) external returns (address pool);
+
+    /// @notice Creates a pool for the given two tokens and tick spacing
     /// @param tokenA One of the two tokens in the desired pool
     /// @param tokenB The other of the two tokens in the desired pool
     /// @param tickSpacing The desired tick spacing for the pool

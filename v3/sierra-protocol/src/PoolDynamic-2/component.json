@@ -1,0 +1,18 @@
+{
+  "component": "PoolDynamic-2",
+  "main_contract": "PoolDynamic",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x33b13987d69f3f117579bef4b235ae909225a507",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

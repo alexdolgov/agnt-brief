@@ -1,8 +1,8 @@
 {
   "component": "Staking",
   "main_contract": "Staking",
-  "source_file_count": 13,
-  "deployment_count": 2,
+  "source_file_count": 5,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://assets.railgun.org/docs/audits/2021-11-02%20Hacken.pdf",
@@ -12,18 +12,26 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x3bb38cd4c801cb0bed481bc3fc4b14b06d81c5d2",
+      "address": "0xee6a649aa3766bd117e12c161726b693a1b2ee20",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4f8e20f55f879bee7bc010bd6bd2138b34ac65c8",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x753f0f9ba003dda95eb9284533cf5b0f19e441dc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9ac2ba4bf7facb0bbb33447e5ff8f8d63b71ddc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

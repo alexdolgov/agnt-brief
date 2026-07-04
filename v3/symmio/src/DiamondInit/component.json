@@ -2,10 +2,18 @@
   "component": "DiamondInit",
   "main_contract": "DiamondInit",
   "source_file_count": 5,
-  "deployment_count": 6,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xda7e347d4bd1846a38e1642237260604a7b4a369",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,
@@ -47,9 +55,25 @@
       "liveness": "live"
     },
     {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe516f085d6bb465ffe44855ce586dbbaa89fbf5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x663db73309226debe1d2f6e5cb9180c7e7dbcbbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd6ee1fd75d11989e57b57aa6fd75f558fbf02a5e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

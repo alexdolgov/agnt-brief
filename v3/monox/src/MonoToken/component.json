@@ -3,23 +3,21 @@
   "main_contract": "MonoToken",
   "source_file_count": 14,
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/MonoX_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x05323017c00874198cf1b0832922074beea0db83",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x988b49da1c7bf39edaf85004f9f9131fe995b2cd",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2f96856d2d1907a0ef95ec85c273affa80ebd16b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

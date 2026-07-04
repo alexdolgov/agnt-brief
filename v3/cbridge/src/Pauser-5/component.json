@@ -1,15 +1,28 @@
 {
   "component": "Pauser-5",
   "main_contract": "Pauser",
-  "source_file_count": 12,
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 120,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/CertiK_sgn_cbridge.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_sgn_cbridge.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_message.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_sgn_cbridge.pdf"
+  ],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x697ac93c9263346c5ad0412f9356d5789a3aa687",
+      "address": "0x9b36f165bab9ebe611d491180418d8de4b8f3a1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf5c6825015280cdfd0b56903f9f8b5a2233476f5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

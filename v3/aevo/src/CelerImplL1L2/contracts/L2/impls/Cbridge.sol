@@ -21,6 +21,7 @@ contract CelerImplL1L2 is ImplBase, ReentrancyGuard {
     using SafeERC20 for IERC20;
     using Pb for Pb.Buffer;
     ICBridge public immutable router;
+    address immutable wethAddress;
     mapping(bytes32 => address) public transferIdAdrressMap;
     uint64 public immutable chainId;
 
@@ -37,10 +38,18 @@ contract CelerImplL1L2 is ImplBase, ReentrancyGuard {
     @notice Constructor sets the router address and registry address.
     @dev Celer Bridge address is constant. so no setter function required.
     */
-    constructor(ICBridge _router, address _registry) ImplBase(_registry) {
+    constructor(
+        ICBridge _router,
+        address _registry,
+        address _wethAddress
+    ) ImplBase(_registry) {
         router = _router;
         chainId = uint64(block.chainid);
+        wethAddress = _wethAddress;
     }
+
+    // Function to receive Ether. msg.data must be empty
+    receive() external payable {}
 
     /**
     @notice function responsible for calling cross chain transfer using celer bridge.
@@ -60,28 +69,28 @@ contract CelerImplL1L2 is ImplBase, ReentrancyGuard {
         uint256 _toChainId,
         bytes memory _data
     ) external payable override onlyRegistry nonReentrant {
-        (uint64 nonce, uint32 maxSlippage) = abi.decode(
+        (uint64 nonce, uint32 maxSlippage, address senderAddress) = abi.decode(
             _data,
-            (uint64, uint32)
+            (uint64, uint32, address)
         );
-        bytes32 transferId = keccak256(
-            abi.encodePacked(
-                address(this),
-                _receiverAddress,
-                _token,
-                _amount,
-                uint64(_toChainId),
-                nonce,
-                chainId
-            )
-        );
-        require(
-            transferIdAdrressMap[transferId] == address(0),
-            "Transfer Id already exist in map"
-        );
-        transferIdAdrressMap[transferId] = _from;
         if (_token == NATIVE_TOKEN_ADDRESS) {
             require(msg.value == _amount, MovrErrors.VALUE_NOT_EQUAL_TO_AMOUNT);
+            bytes32 transferId = keccak256(
+                abi.encodePacked(
+                    address(this),
+                    _receiverAddress,
+                    wethAddress,
+                    _amount,
+                    uint64(_toChainId),
+                    nonce,
+                    chainId
+                )
+            );
+            require(
+                transferIdAdrressMap[transferId] == address(0),
+                "Transfer Id already exist in map"
+            );
+            transferIdAdrressMap[transferId] = senderAddress;
             router.sendNative{value: _amount}(
                 _receiverAddress,
                 _amount,
@@ -93,6 +102,22 @@ contract CelerImplL1L2 is ImplBase, ReentrancyGuard {
             require(msg.value == 0, MovrErrors.VALUE_SHOULD_BE_ZERO);
             IERC20(_token).safeTransferFrom(_from, address(this), _amount);
             IERC20(_token).safeIncreaseAllowance(address(router), _amount);
+            bytes32 transferId = keccak256(
+                abi.encodePacked(
+                    address(this),
+                    _receiverAddress,
+                    _token,
+                    _amount,
+                    uint64(_toChainId),
+                    nonce,
+                    chainId
+                )
+            );
+            require(
+                transferIdAdrressMap[transferId] == address(0),
+                "Transfer Id already exist in map"
+            );
+            transferIdAdrressMap[transferId] = senderAddress;
             router.send(
                 _receiverAddress,
                 _token,
@@ -120,7 +145,7 @@ contract CelerImplL1L2 is ImplBase, ReentrancyGuard {
                 request.amount
             )
         );
-
+        uint256 _initialBalanceTokenOut = address(this).balance;
         if (!router.withdraws(transferId)) {
             router.withdraw(_request, _sigs, _signers, _powers);
         }
@@ -131,7 +156,11 @@ contract CelerImplL1L2 is ImplBase, ReentrancyGuard {
             _receiver != address(0),
             "Unknown transfer id or already refunded"
         );
-        IERC20(request.token).safeTransfer(_receiver, request.amount);
+        if (address(this).balance > _initialBalanceTokenOut) {
+            payable(_receiver).transfer(request.amount);
+        } else {
+            IERC20(request.token).safeTransfer(_receiver, request.amount);
+        }
     }
 
     function decWithdrawMsg(bytes memory raw)

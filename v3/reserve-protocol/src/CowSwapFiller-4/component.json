@@ -1,0 +1,18 @@
+{
+  "component": "CowSwapFiller-4",
+  "main_contract": "CowSwapFiller",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1011ffd4c0aa024a5c5f2d2212aed90bd3beccbd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

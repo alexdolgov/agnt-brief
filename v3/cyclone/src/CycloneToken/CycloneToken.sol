@@ -1,6 +1,6 @@
 // File: contracts/token/IERC20Basic.sol
 
-pragma solidity <0.6 >=0.4.21;
+pragma solidity ^0.5.17;
 
 
 /**
@@ -17,7 +17,7 @@ contract IERC20Basic {
 
 // File: contracts/token/IERC20.sol
 
-pragma solidity <0.6 >=0.4.21;
+pragma solidity ^0.5.17;
 
 
 
@@ -36,7 +36,7 @@ contract IERC20 is IERC20Basic {
 
 // File: contracts/token/IMintableToken.sol
 
-pragma solidity <0.6 >=0.4.24;
+pragma solidity ^0.5.17;
 
 
 contract IMintableToken is IERC20 {
@@ -51,7 +51,7 @@ contract IMintableToken is IERC20 {
 
 // File: contracts/math/SafeMath.sol
 
-pragma solidity <0.6 >=0.4.21;
+pragma solidity ^0.5.17;
 
 
 /**
@@ -136,7 +136,7 @@ library SafeMath {
 
 // File: contracts/token/BasicToken.sol
 
-pragma solidity <0.6 >=0.4.21;
+pragma solidity ^0.5.17;
 
 
 
@@ -210,7 +210,7 @@ contract BasicToken is IERC20Basic {
 
 // File: contracts/token/StandardToken.sol
 
-pragma solidity <0.6 >=0.4.21;
+pragma solidity ^0.5.17;
 
 
 
@@ -349,7 +349,7 @@ contract StandardToken is IERC20, BasicToken {
 
 // File: contracts/ownership/Ownable.sol
 
-pragma solidity <6.0 >=0.4.0;
+pragma solidity ^0.5.17;
 
 
 /**
@@ -394,7 +394,7 @@ contract Ownable {
 
 // File: contracts/lifecycle/Pausable.sol
 
-pragma solidity <0.6 >=0.4.24;
+pragma solidity ^0.5.17;
 
 
 /**
@@ -443,7 +443,7 @@ contract Pausable is Ownable {
 
 // File: contracts/token/ShadowToken.sol
 
-pragma solidity <0.6 >=0.4.24;
+pragma solidity ^0.5.17;
 
 
 
@@ -495,7 +495,7 @@ contract ShadowToken is StandardToken, IMintableToken, Pausable {
 
 // File: contracts/token/CycloneToken.sol
 
-pragma solidity <0.6 >=0.4.24;
+pragma solidity ^0.5.17;
 
 
 
@@ -523,10 +523,10 @@ contract CycloneToken is StandardToken, IMintableToken, Pausable {
     constructor(address _operator, address _lp) public {
         require (_operator != address(0), "invalid address");
         if (_lp != address(0)) {
-            // mint 202.1 CYC for community
-            totalSupply_ = totalSupply_.add(2021 * 100000000000000000); 
-            balances[_lp] = balances[_lp].add(2021 * 100000000000000000);
-            _moveDelegates(address(0), delegates[_lp], 2021 * 100000000000000000);
+            // mint 2021 CYC for community
+            totalSupply_ = totalSupply_.add(2021 * 1000000000000000000);	
+            balances[_lp] = balances[_lp].add(2021 * 1000000000000000000);
+            _moveDelegates(address(0), delegates[_lp], 2021 * 1000000000000000000);
         }
         operator = _operator;
     }

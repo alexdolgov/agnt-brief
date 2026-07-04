@@ -1,19 +1,22 @@
-// SPDX-License-Identifier: MIT
-pragma solidity >= 0.8.11;
+// SPDX-License-Identifier: AGPLv3
+pragma solidity >= 0.8.4;
 
-import { ISuperfluid } from "./ISuperfluid.sol";
+import { ISuperAgreement } from "./ISuperAgreement.sol";
 import { ISuperToken } from "./ISuperToken.sol";
-import { ISuperfluidToken } from "./ISuperfluidToken.sol";
+import { ISuperfluidToken  } from "./ISuperfluidToken.sol";
+import { ISuperfluid } from "./ISuperfluid.sol";
+
 
 /**
  * @title Superfluid governance interface
  * @author Superfluid
  */
 interface ISuperfluidGovernance {
-
+    
     /**************************************************************************
      * Errors
      *************************************************************************/
+    error SF_GOV_ARRAYS_NOT_SAME_LENGTH();                  // 0x27743aa6
     error SF_GOV_INVALID_LIQUIDATION_OR_PATRICIAN_PERIOD(); // 0xe171980a
     error SF_GOV_MUST_BE_CONTRACT();                        // 0x80dddd73
 
@@ -34,15 +37,14 @@ interface ISuperfluidGovernance {
     /**
      * @dev Update logics of the contracts
      *
-     * @custom:note
+     * @custom:note 
      * - Because they might have inter-dependencies, it is good to have one single function to update them all
      */
     function updateContracts(
         ISuperfluid host,
         address hostNewLogic,
         address[] calldata agreementClassNewLogics,
-        address superTokenFactoryNewLogic,
-        address beaconNewLogic
+        address superTokenFactoryNewLogic
     ) external;
 
     /**
@@ -51,16 +53,7 @@ interface ISuperfluidGovernance {
     function batchUpdateSuperTokenLogic(
         ISuperfluid host,
         ISuperToken[] calldata tokens) external;
-
-    /**
-     * @dev Update supertoken logic contract to the provided logic contracts.
-     *      Note that this is an overloaded version taking an additional argument `tokenLogics`
-     */
-    function batchUpdateSuperTokenLogic(
-        ISuperfluid host,
-        ISuperToken[] calldata tokens,
-        address[] calldata tokenLogics) external;
-
+    
     /**
      * @dev Set configuration as address value
      */
@@ -70,7 +63,7 @@ interface ISuperfluidGovernance {
         bytes32 key,
         address value
     ) external;
-
+    
     /**
      * @dev Set configuration as uint256 value
      */

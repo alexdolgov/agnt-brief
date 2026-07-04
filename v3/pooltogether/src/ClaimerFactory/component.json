@@ -2,14 +2,46 @@
   "component": "ClaimerFactory",
   "main_contract": "ClaimerFactory",
   "source_file_count": 46,
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd84c4c7675e6eb79ea28d04c001e702ccc679e80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x94f51a697920fd4c2be9a7675ca8e97475779cc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "gnosis",
       "chain_id": 100,
       "address": "0x22e3857db02c4db38870dddc286d0543869ea47e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x804657333bcc97afa4bd38c4e8fd41d06e21c63c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x64e77e749943a82bd2b7d81ae35ab9717b4de554",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

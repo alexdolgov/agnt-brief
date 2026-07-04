@@ -2,10 +2,18 @@
   "component": "EIP173Proxy",
   "main_contract": "EIP173Proxy",
   "source_file_count": 2,
-  "deployment_count": 11,
+  "deployment_count": 16,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x22b64323bee73a2f0f850c68a91e3fa820fb4fb8",
+      "is_proxy": true,
+      "implementation_address": "0xf745eab91a1359766efeca0e3d7b7610401101f0",
+      "liveness": "inactive"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -20,6 +28,14 @@
       "address": "0x5dcb742d09ade3da6461024f91f53518bb309ad5",
       "is_proxy": true,
       "implementation_address": "0xa38ce8f596c81333692a739162ae7eda236800ed",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f951dbac2c510c9f1ed5778a4d023c7564c4c12",
+      "is_proxy": true,
+      "implementation_address": "0x30965e42101c81d147c5ba8fbf8ff244921991f1",
       "liveness": "inactive"
     },
     {
@@ -44,6 +60,22 @@
       "address": "0xa38ce8f596c81333692a739162ae7eda236800ed",
       "is_proxy": false,
       "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd7fee535f38055f71d1958a1a4219eafccac1d42",
+      "is_proxy": true,
+      "implementation_address": "0x28c3ec13075801c96d109f815aee45303d5dc2dd",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf1632012f6679fcf464721433afaae9c11ad9e03",
+      "is_proxy": true,
+      "implementation_address": "0xd6ab788159423fb1b0703ad997762e8fc856df9d",
       "liveness": "inactive"
     },
     {
@@ -84,6 +116,14 @@
       "address": "0xd7fee535f38055f71d1958a1a4219eafccac1d42",
       "is_proxy": false,
       "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf57db884606a0ed589c06320d9004fbed4f81e4a",
+      "is_proxy": true,
+      "implementation_address": "0xc4e86cece4faa79e93df420d74ce909292d72970",
       "liveness": "inactive"
     },
     {

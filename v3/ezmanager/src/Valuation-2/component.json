@@ -1,0 +1,28 @@
+{
+  "component": "Valuation-2",
+  "main_contract": "Valuation",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43ea78157b39fbacc599162f63b855e4a8d49799",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x738db78bf64dcf2d9b6d9d9a5708083d946727e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

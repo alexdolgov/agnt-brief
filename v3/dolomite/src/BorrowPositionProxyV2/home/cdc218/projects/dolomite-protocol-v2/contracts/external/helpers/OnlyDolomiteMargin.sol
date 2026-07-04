@@ -33,7 +33,7 @@ contract OnlyDolomiteMargin {
 
     // ============ Constants ============
 
-    bytes32 constant FILE = "OnlyDolomiteMargin";
+    bytes32 private constant FILE = "OnlyDolomiteMargin";
 
     // ============ Storage ============
 
@@ -56,6 +56,26 @@ contract OnlyDolomiteMargin {
             _from == address(DOLOMITE_MARGIN),
             FILE,
             "Only Dolomite can call function",
+            _from
+        );
+        _;
+    }
+
+    modifier onlyDolomiteMarginOwner(address _from) {
+        Require.that(
+            _from == DOLOMITE_MARGIN.owner(),
+            FILE,
+            "Only Dolomite owner can call",
+            _from
+        );
+        _;
+    }
+
+    modifier onlyGlobalOperator(address _from) {
+        Require.that(
+            DOLOMITE_MARGIN.getIsGlobalOperator(_from),
+            FILE,
+            "Only global operator can call",
             _from
         );
         _;

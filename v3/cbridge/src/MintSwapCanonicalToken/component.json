@@ -2,7 +2,7 @@
   "component": "MintSwapCanonicalToken",
   "main_contract": "MintSwapCanonicalToken",
   "source_file_count": 9,
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": true,
   "audits_covering": [
     "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
@@ -13,6 +13,38 @@
       "chain": "chain-1284",
       "chain_id": 1284,
       "address": "0x3795c36e7d12a8c252a20c5a7b455f7c57b60283",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x6a2d262d56735dba19dd70682b39f6be9a931d98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x81ecac0d6be0550a00ff064a4f9dd2400585fe9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x8c75adb1d9f38f6c2af54be8120f598b9dba446c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xb74527786818ae18b69b6a823960bfaf3906182f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

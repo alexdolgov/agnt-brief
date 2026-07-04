@@ -1,0 +1,34 @@
+{
+  "component": "ProxyOracle-9",
+  "main_contract": "ProxyOracle",
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d76568d84de8a0f34bbf315f53d7772c1fabcd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa32d03497ff5c32bcfeebe6a677dbe4a496fd918",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1e21573cfc456f8add4c27ff16b50112e3adc7ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

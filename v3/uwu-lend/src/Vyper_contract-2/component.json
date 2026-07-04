@@ -2,14 +2,38 @@
   "component": "Vyper_contract-2",
   "main_contract": "Vyper_contract",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x575ccd8e2d300e2377b43478339e364000318e2c",
+      "address": "0x70fc957eb90e37af82acdbd12675699797745f68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8282bd15dca2ea2bdf24163e8f2781b30c43a2ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8484673ca7bff40f82b041916881aea15ee84834",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb08717451aae9ef950a2524e33b6dcaba60147b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

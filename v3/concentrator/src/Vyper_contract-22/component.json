@@ -1,0 +1,18 @@
+{
+  "component": "Vyper_contract-22",
+  "main_contract": "Vyper_contract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0921691c7debc698e6e372c6f74dc01fc9d3778",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

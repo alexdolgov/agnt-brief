@@ -1,0 +1,42 @@
+{
+  "component": "Pool-2",
+  "main_contract": "Pool",
+  "source_file_count": 22,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5476f8424f362c53029ee159b7d9fccb60ad6c51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6055896622859f91399b5e69ee45e90cd087f5c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd5826be6b7999cf38de403dafd96fff3ec66f006",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd59a8fff4efc7fc7aef9b1b0ff3e293a0447a530",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,29 +1,34 @@
 {
   "component": "sPRL1",
   "main_contract": "sPRL1",
-  "source_file_count": 45,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf",
-    "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf"
-  ],
+  "source_file_count": 41,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x01fa35fde0e813e2d6687660a74a313d8d922e48",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xead729472f82e5ec2ff4e691d67633077c1b5901",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xefc1309b67a52c5dfc2588bfc2d97a66afc4d2ce",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdb7be3a50bdf5641757ebea38e8014e1f0aa9475",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

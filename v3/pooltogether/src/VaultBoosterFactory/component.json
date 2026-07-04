@@ -1,23 +1,47 @@
 {
   "component": "VaultBoosterFactory",
   "main_contract": "VaultBoosterFactory",
-  "source_file_count": 48,
-  "deployment_count": 2,
+  "source_file_count": 46,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x02d37f2654b4161801c8d7369b43a8762a31530e",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25d6927cbe94323ec88b8c60ecd57f3002850004",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xa2ba3d22e2469bc0b46d57145d4bd212d3550ec2",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x31ec883727af3b9eb87b815550b0e33498f483e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x858029ed93b97d9015a63a5cc63e5872ee67f88c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x8cfffffa42407db9dcb974c2c744425c3e58d832",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8cfffffa42407db9dcb974c2c744425c3e58d832",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -2,7 +2,7 @@
   "component": "CauldronV3_1",
   "main_contract": "CauldronV3_1",
   "source_file_count": 16,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,6 +18,14 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xc7a161cfd0e133d289b13692b636b8e8b5cd8d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd98bfb05dd6aa37ba5624479eb4264de9a3384ee",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

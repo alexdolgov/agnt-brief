@@ -6,20 +6,6 @@ pragma solidity 0.8.20;
 
 interface INonfungiblePositionManager {
 
-    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
-
-    /// @notice Creates a new pool if it does not exist, then initializes if not initialized
-    /// @dev This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool
-    /// @param token0 The contract address of token0 of the pool
-    /// @param token1 The contract address of token1 of the pool
-    /// @param sqrtPriceX96 The initial square root price of the pool as a Q64.96 value
-    /// @return pool Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary
-    function createAndInitializePoolIfNecessary(
-        address token0,
-        address token1,
-        uint160 sqrtPriceX96
-    ) external payable returns (address pool);
-
     function approve(address to, uint256 tokenId) external;
     
     function safeTransferFrom(
@@ -31,6 +17,7 @@ interface INonfungiblePositionManager {
     struct MintParams {
         address token0;
         address token1;
+        uint24 fee;
         int24 tickLower;
         int24 tickUpper;
         uint256 amount0Desired;
@@ -58,6 +45,7 @@ interface INonfungiblePositionManager {
         address operator;
         address token0;
         address token1;
+        uint24 fee;
         int24 tickLower;
         int24 tickUpper;
         uint128 liquidity;
@@ -77,6 +65,7 @@ interface INonfungiblePositionManager {
             address operator,
             address token0,
             address token1,
+            uint24 fee,
             int24 tickLower,
             int24 tickUpper,
             uint128 liquidity,
@@ -149,6 +138,4 @@ interface INonfungiblePositionManager {
     function factory() external view returns (address);
 
     function burn(uint256 tokenId) external payable;
-
-    function ownerOf(uint256 tokenId) external view returns (address owner);
 }

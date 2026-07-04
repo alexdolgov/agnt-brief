@@ -1,11 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity 0.8.28;
 
-import {Auth} from "src/misc/Auth.sol";
-import {IERC6909} from "src/misc/interfaces/IERC6909.sol";
-import {SafeTransferLib} from "src/misc/libraries/SafeTransferLib.sol";
-import {IRecoverable, ETH_ADDRESS} from "src/misc/interfaces/IRecoverable.sol";
+import {Auth} from "./Auth.sol";
+import {IERC6909} from "./interfaces/IERC6909.sol";
+import {SafeTransferLib} from "./libraries/SafeTransferLib.sol";
+import {IRecoverable, ETH_ADDRESS} from "./interfaces/IRecoverable.sol";
 
+/// @title  Recoverable
+/// @notice Abstract contract that provides emergency token recovery functionality, allowing authorized parties
+///         to retrieve accidentally sent ETH, ERC20, or ERC6909 tokens from the contract to a specified
+///         receiver address.
 abstract contract Recoverable is Auth, IRecoverable {
     /// @inheritdoc IRecoverable
     function recoverTokens(address token, address receiver, uint256 amount) public auth {

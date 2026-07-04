@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.0;
 
 import { AbstractBase } from "./AbstractBase.sol";
 import { IPositionManagerV3 } from "../interfaces/IPositionManagerV3.sol";
@@ -214,33 +214,13 @@ abstract contract UniswapV3 is AbstractBase {
      */
     function _burn(uint256[] memory balances, address, PositionState memory position) internal virtual override {
         // Remove liquidity of the position and claim outstanding fees.
-        _decreaseLiquidity(balances, address(0), position, position.liquidity);
-
-        // Burn the position.
-        POSITION_MANAGER.burn(position.id);
-    }
-
-    /* ///////////////////////////////////////////////////////////////
-                    DECREASE LIQUIDITY LOGIC
-    /////////////////////////////////////////////////////////////// */
-
-    /**
-     * @notice Decreases liquidity of the Liquidity Position.
-     * @param balances The balances of the underlying tokens.
-     * param positionManager The contract address of the Position Manager.
-     * @param position A struct with position and pool related variables.
-     * @param liquidity The amount of liquidity to decrease.
-     * @dev Must update the balances and delta liquidity after the decrease.
-     */
-    function _decreaseLiquidity(uint256[] memory balances, address, PositionState memory position, uint128 liquidity)
-        internal
-        virtual
-        override
-    {
-        // Decrease liquidity of the position and claim outstanding fees.
         POSITION_MANAGER.decreaseLiquidity(
             IPositionManagerV3.DecreaseLiquidityParams({
-                tokenId: position.id, liquidity: liquidity, amount0Min: 0, amount1Min: 0, deadline: block.timestamp
+                tokenId: position.id,
+                liquidity: position.liquidity,
+                amount0Min: 0,
+                amount1Min: 0,
+                deadline: block.timestamp
             })
         );
 
@@ -255,6 +235,9 @@ abstract contract UniswapV3 is AbstractBase {
         );
         balances[0] += amount0;
         balances[1] += amount1;
+
+        // Burn the position.
+        POSITION_MANAGER.burn(position.id);
     }
 
     /* ///////////////////////////////////////////////////////////////
@@ -360,7 +343,7 @@ abstract contract UniswapV3 is AbstractBase {
     /////////////////////////////////////////////////////////////// */
 
     /**
-     * @notice Increases liquidity of the Liquidity Position.
+     * @notice Swaps one token for another to rebalance the Liquidity Position.
      * @param balances The balances of the underlying tokens.
      * param positionManager The contract address of the Position Manager.
      * @param position A struct with position and pool related variables.

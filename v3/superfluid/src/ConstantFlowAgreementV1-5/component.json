@@ -1,0 +1,58 @@
+{
+  "component": "ConstantFlowAgreementV1-5",
+  "main_contract": "ConstantFlowAgreementV1",
+  "source_file_count": 32,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62ce6fdffb11cbcd1e3d8e72d39cb922dc4081ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8ca3027f38732828d00cfe0a2c0f73c69c37f226",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5b81ffb2677f38ed3cb0771d02cc19cfff41e9ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc2aa659a2ecebb8bf2814d47aff643cb7963943c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd73afbe2c076bf9aece8befabe455be67cb77b5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xf3668829f6af94c88e2afdfab4ef953dad62a629",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

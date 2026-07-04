@@ -1,15 +1,20 @@
 {
   "component": "FiatCollateral-8",
   "main_contract": "FiatCollateral",
-  "source_file_count": 57,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 62,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%20-%20April%2025%202024.pdf",
+    "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%203.4.0.pdf",
+    "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol.pdf",
+    "https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%20Report%203_1_0.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1c0a14a44c4a6834fe23632da2f493cc4cf87dba",
+      "address": "0x00a07ac1b3f9c5f7ad4c6935b1cb2028debb6555",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +22,15 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x9fc417439d8c12159a89962c28d8a8ded9ea9dde",
+      "address": "0x07b2b41037d89f91dc91ad1ddcca3e8515ff049e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3da655331649b86bfe3356bed99258083599543",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

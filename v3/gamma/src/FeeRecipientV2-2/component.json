@@ -1,0 +1,34 @@
+{
+  "component": "FeeRecipientV2-2",
+  "main_contract": "FeeRecipientV2",
+  "source_file_count": 5,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9df9f76a86afb0597be998ab96938e7f123e97b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaabc1cb5f40ea4dd6f188005bd7c451a123f476c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfb92d3d539351160ef22830c5004e395dbbf2671",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

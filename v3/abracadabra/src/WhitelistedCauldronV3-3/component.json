@@ -1,0 +1,18 @@
+{
+  "component": "WhitelistedCauldronV3-3",
+  "main_contract": "WhitelistedCauldronV3",
+  "source_file_count": 104,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe9c057d6d4edc8935c931ec307df225a1c2d04ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IPriceOracle } from "src/interfaces/oracles/IPriceOracle.sol";
 import { Errors } from "src/utils/Errors.sol";
@@ -27,13 +27,14 @@ abstract contract BaseOracleDenominations is SystemComponent, IPriceOracle, Secu
      */
     address public constant ETH_IN_USD = address(bytes20("ETH_IN_USD"));
 
-    constructor(
-        ISystemRegistry _systemRegistry
-    ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) {
+    constructor(ISystemRegistry _systemRegistry)
+        SystemComponent(_systemRegistry)
+        SecurityBase(address(_systemRegistry.accessController()))
+    {
         Errors.verifyNotZero(address(_systemRegistry.rootPriceOracle()), "rootPriceOracle");
     }
 
-    // Handles non-Eth denomination if necessary.
+    // Handles non-Eth denomination if neccessary.
     function _denominationPricing(
         Denomination denomination,
         uint256 normalizedPrice,
@@ -52,9 +53,7 @@ abstract contract BaseOracleDenominations is SystemComponent, IPriceOracle, Secu
      *
      * @param normalizedPrice  Normalized price of asset in USD
      */
-    function _getPriceDenominationUSD(
-        uint256 normalizedPrice
-    ) private returns (uint256) {
+    function _getPriceDenominationUSD(uint256 normalizedPrice) private returns (uint256) {
         uint256 ethInUsd = systemRegistry.rootPriceOracle().getPriceInEth(ETH_IN_USD);
 
         return (normalizedPrice * (10 ** 18) / ethInUsd);

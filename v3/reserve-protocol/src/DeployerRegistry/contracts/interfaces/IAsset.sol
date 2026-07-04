@@ -1,17 +1,10 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.19;
+pragma solidity 0.8.9;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import "../libraries/Fixed.sol";
+import "contracts/libraries/Fixed.sol";
 import "./IMain.sol";
-import "./IRewardable.sol";
-
-// Not used directly in the IAsset interface, but used by many consumers to save stack space
-struct Price {
-    uint192 low; // {UoA/tok}
-    uint192 high; // {UoA/tok}
-}
 
 /**
  * @title IAsset
@@ -19,23 +12,18 @@ struct Price {
  * whether it is used as RToken backing or not. Any token that can report a price in the UoA
  * is eligible to be an asset.
  */
-interface IAsset is IRewardable {
-    /// Refresh saved price
-    /// The Reserve protocol calls this at least once per transaction, before relying on
-    /// the Asset's other functions.
-    /// @dev Called immediately after deployment, before use
-    function refresh() external;
+interface IAsset {
+    /// Can return 0, can revert
+    /// Shortcut for price(false)
+    /// @return {UoA/tok} The current price(), without considering fallback prices
+    function strictPrice() external view returns (uint192);
 
-    /// Should not revert
-    /// @return low {UoA/tok} The lower end of the price estimate
-    /// @return high {UoA/tok} The upper end of the price estimate
-    function price() external view returns (uint192 low, uint192 high);
-
-    /// Should not revert
-    /// lotLow should be nonzero when the asset might be worth selling
-    /// @return lotLow {UoA/tok} The lower end of the lot price estimate
-    /// @return lotHigh {UoA/tok} The upper end of the lot price estimate
-    function lotPrice() external view returns (uint192 lotLow, uint192 lotHigh);
+    /// Can return 0
+    /// Should not revert if `allowFallback` is true. Can revert if false.
+    /// @param allowFallback Whether to try the fallback price in case precise price reverts
+    /// @return isFallback If the price is a failover price
+    /// @return {UoA/tok} The current price(), or if it's reverting, a fallback price
+    function price(bool allowFallback) external view returns (bool isFallback, uint192);
 
     /// @return {tok} The balance of the ERC20 in whole tokens
     function bal(address account) external view returns (uint192);
@@ -49,26 +37,24 @@ interface IAsset is IRewardable {
     /// @return If the asset is an instance of ICollateral or not
     function isCollateral() external view returns (bool);
 
-    /// @return {UoA} The max trade volume, in UoA
+    /// @param {UoA} The max trade volume, in UoA
     function maxTradeVolume() external view returns (uint192);
 
-    /// @return {s} The timestamp of the last refresh() that saved prices
-    function lastSave() external view returns (uint48);
+    // ==== Rewards ====
+
+    /// Get the message needed to call in order to claim rewards for holding this asset.
+    /// Returns zero values if there is no reward function to call.
+    /// @return _to The address to send the call to
+    /// @return _calldata The calldata to send
+    function getClaimCalldata() external view returns (address _to, bytes memory _calldata);
+
+    /// The ERC20 token address that this Asset's rewards are paid in.
+    /// If there are no rewards, will return a zero value.
+    function rewardERC20() external view returns (IERC20 reward);
 }
 
-// Used only in Testing. Strictly speaking an Asset does not need to adhere to this interface
 interface TestIAsset is IAsset {
-    /// @return The address of the chainlink feed
     function chainlinkFeed() external view returns (AggregatorV3Interface);
-
-    /// {1} The max % deviation allowed by the oracle
-    function oracleError() external view returns (uint192);
-
-    /// @return {s} Seconds that an oracle value is considered valid
-    function oracleTimeout() external view returns (uint48);
-
-    /// @return {s} Seconds that the lotPrice should decay over, after stale price
-    function priceTimeout() external view returns (uint48);
 }
 
 /// CollateralStatus must obey a linear ordering. That is:
@@ -96,15 +82,15 @@ interface ICollateral is IAsset {
     /// Emitted whenever the collateral status is changed
     /// @param newStatus The old CollateralStatus
     /// @param newStatus The updated CollateralStatus
-    event CollateralStatusChanged(
+    event DefaultStatusChanged(
         CollateralStatus indexed oldStatus,
         CollateralStatus indexed newStatus
     );
 
-    /// @dev refresh()
     /// Refresh exchange rates and update default status.
-    /// VERY IMPORTANT: In any valid implemntation, status() MUST become DISABLED in refresh() if
-    /// refPerTok() has ever decreased since last call.
+    /// The Reserve protocol calls this at least once per transaction, before relying on
+    /// this collateral's prices or default status.
+    function refresh() external;
 
     /// @return The canonical name of this collateral's target unit.
     function targetName() external view returns (bytes32);
@@ -119,13 +105,7 @@ interface ICollateral is IAsset {
 
     /// @return {target/ref} Quantity of whole target units per whole reference unit in the peg
     function targetPerRef() external view returns (uint192);
-}
 
-// Used only in Testing. Strictly speaking a Collateral does not need to adhere to this interface
-interface TestICollateral is TestIAsset, ICollateral {
-    /// @return The epoch timestamp when the collateral will default from IFFY to DISABLED
-    function whenDefault() external view returns (uint256);
-
-    /// @return The amount of time a collateral must be in IFFY status until being DISABLED
-    function delayUntilDefault() external view returns (uint48);
+    /// @return {UoA/target} The price of the target unit in UoA (usually this is {UoA/UoA} = 1)
+    function pricePerTarget() external view returns (uint192);
 }

@@ -1,9 +1,14 @@
 # mantra-dao — deployments
 
-154 verified deployment(s) across 61 component(s).
+179 verified deployment(s) across 76 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x41a32c610fa23dea9e85d471cad66ea828853153` | StakingPool-2 | impl | live | no |
+| bsc | `0xcbf42ace1dbd895ffdcabc1b841488542626014d` | UniStakingSyntheticToken-3 | impl | live | no |
+| bsc | `0xefc2d65302eb6345a7c0e212b791e0d45c2c3c91` | StakingPool-3 | impl | live | no |
+| bsc | `0xf0185520cc773502f0f208433ca178f2f57157a9` | StakingPool-5 | impl | live | no |
+| bsc | `0xf25897a7edf1dfa9c65f5db7ec4bad868873805b` | UniStakingSyntheticToken-4 | impl | live | no |
 | ethereum | `0x04493f715b08dea8af77814d600bef22f1f0c63b` | StakingPool | impl | live | no |
 | ethereum | `0x067158586f6469f5269a74337b4c8e27e7c3588e` | LinearFee | impl | live | no |
 | ethereum | `0x08dba95c9a59aac68d3d30d3778fe953eb1005d1` | LinearFee | impl | live | no |
@@ -43,6 +48,7 @@
 | ethereum | `0x6283beac30a925fb49da7c9c1150fc465a3c7e56` | LinearFee | impl | live | no |
 | ethereum | `0x68844b9140111d4ddba75ff1e42d7367b80be6b1` | LinearFee | impl | live | no |
 | ethereum | `0x69d57b9d705ead73a5d2f2476c30c55bd755cc2f` | Quoter | impl | live | no |
+| ethereum | `0x6ad6a4f233f1e33613e996ccc17409b93ff8bf5f` | TickLens-2 | impl | live | no |
 | ethereum | `0x6ae05b5db520011bf76645ebb4d6a697e5b3774b` | StakingPool | impl | live | no |
 | ethereum | `0x6bbee1dfecf126f42ec0b211d32686f56e3a149c` | RoutingFee | impl | live | no |
 | ethereum | `0x6bcdc61a7a6d86f7b7b66d461b7ef7fa268571a0` | StakingPool | impl | live | no |
@@ -58,12 +64,15 @@
 | ethereum | `0x81d387219627833452f3d615a76b2eaa71383a5b` | StakingPoolsMigrator | impl | live | no |
 | ethereum | `0x81de9be5dcb080db6e8fc6ff76836959c228a899` | FixedSwap | impl | live | no |
 | ethereum | `0x83523ee653e712f078b13f30f599808cdab82795` | LinearFee | impl | live | no |
+| ethereum | `0x83d4a9ea77a4dba073cd90b30410ac9f95f93e7c` | AlgebraEternalFarming | impl | live | no |
 | ethereum | `0x888b035e6f64b1c1aebcd6ddf0c9fd7aebea39ed` | SwapRouter-2 | impl | live | no |
+| ethereum | `0x8c97d1566ed686249b6e818e664ace873ccfe442` | AlgebraCommunityVault | impl | live | no |
 | ethereum | `0x8cc02c2ee1d8013da28d0022c15803b8b4c82c74` | LinearFee | impl | live | no |
 | ethereum | `0x95e325a85b9e6cb4dea2ccd96218e5f8365e0b0f` | AlgebraFactory | impl | live | no |
 | ethereum | `0x9a9da7056cb14d7361487b709d91b3aa49b19102` | LinearFee | impl | live | no |
-| ethereum | `0x9e15ad979919bb4db331bfe864475ae3bffeba93` | StakingPool-2 | impl | live | no |
+| ethereum | `0x9e15ad979919bb4db331bfe864475ae3bffeba93` | StakingPool-4 | impl | live | no |
 | ethereum | `0x9e57a6c31a72cc12af119d8c76e36d8299dc67ec` | HypERC20Collateral | impl | live | no |
+| ethereum | `0x9fd38604ed3ca1477650125fbd5e99f7bbf244f9` | UniStakingSyntheticToken-2 | impl | live | no |
 | ethereum | `0xa01892d97e9c8290c2c225fb0b756bfe26bc9802` | StakingPool | impl | live | no |
 | ethereum | `0xa4a7e48e9c763de709ee33b2db4b13a95e203ef3` | LinearFee | impl | live | no |
 | ethereum | `0xa85efbe23e614e1745e5f39b05be3fc04b1bcba7` | ProxyAdmin | impl | live | no |
@@ -74,6 +83,7 @@
 | ethereum | `0xb1aeed624f3e0ffaa6d76ebed53325708c3551a1` | LinearFee | impl | live | no |
 | ethereum | `0xb1d38fc65111d2cb93d1f51fa7337b40c896b385` | LinearFee | impl | live | no |
 | ethereum | `0xb312b5f089caea7f2e2129043738903707629805` | LinearFee | impl | live | no |
+| ethereum | `0xb4f9b6b019e75cbe51af4425b2fc12797e2ee2a1` | QuoterV2 | impl | live | no |
 | ethereum | `0xb76d057cb31f1c3f0890b9aec36207f27f54820e` | ProxyAdmin | impl | live | no |
 | ethereum | `0xb9d58155b9ea1e082b3a1e548929498641d8d2f7` | RoutingFee | impl | live | no |
 | ethereum | `0xbb0eac527a57d662aea06bb73ca43527aff7203a` | ProxyAdmin | impl | live | no |
@@ -97,6 +107,7 @@
 | ethereum | `0xea5b509048d2a89d023adec2cb2bd6b9099e1b09` | ProxyAdmin | impl | live | no |
 | ethereum | `0xebb2ac9d214c164093f97da92d975999f5e397cc` | ProxyAdmin | impl | live | no |
 | ethereum | `0xec0343416595e6899c160fd2fc905eb3d937190e` | HypERC20Collateral | impl | live | no |
+| ethereum | `0xec250e6856e14a494cb1f0abc61d72348c79f418` | FarmingCenter | impl | live | no |
 | ethereum | `0xed191b89d9d1f73357ce0c2392393633e4b3a330` | ProxyAdmin | impl | live | no |
 | ethereum | `0xeefbdd73e057571e578d65c4b7494121ea55c532` | ProxyAdmin | impl | live | no |
 | ethereum | `0xf2a0bc44debd394076c67962bb4869fd43c78018` | DynamicFeePluginImplementation | impl | live | no |
@@ -104,6 +115,7 @@
 | ethereum | `0xf7333d171c25d36d64443b57b06956bada2236db` | LinearFee | impl | live | no |
 | ethereum | `0xfd06542f8a6adc17c54d2d6ef6cc9e544d451c75` | LinearFee | impl | live | no |
 | ethereum | `0xfdc4ca4f70c59d3cd306beb3ecd83b1d1c71172c` | RoyaleLP | impl | live | no |
+| ethereum | `0xfe3becd788320465ab649015f34f7771220a88b2` | AlgebraPoolDeployer | impl | live | no |
 | polygon | `0x000000000022d473030f116ddee9f6b43ac78ba3` | Permit2 | impl | live | no |
 | polygon | `0x0000000071727de22e5e9d8baf0edac6f37da032` | EntryPoint | impl | live | no |
 | polygon | `0x0968c90198f08b67365840fa37631b29fe2aa9fc` | JumpRateModel | impl | live | no |
@@ -122,13 +134,14 @@
 | polygon | `0x398a5fee22e0deb67da1bd15fa4841b6aa64c471` | JumpRateModel | impl | live | no |
 | polygon | `0x3b22094a64d3d6801a27db4e58ac0b859a4c066d` | TickLens | impl | live | no |
 | polygon | `0x3f6b3595ecf70735d3f48d69b09c4e4506db3f47` | GameStationToken | impl | live | no |
+| polygon | `0x427756e0bbb792f24018e670d570b1b147dbf1f8` | StakingPool-2 | impl | live | no |
 | polygon | `0x431fb6b15be099bb3cdeb0986e23e68eae150303` | AlgebraPoolDeployer | impl | live | no |
 | polygon | `0x480b4b4f8f7d3f2ce48e592dbdea2efc8e144d68` | MevxPluginImplementation | impl | live | no |
 | polygon | `0x4b194de9c22d0a24ecf5ead4cf687d97b3a69aa3` | TickLens | impl | live | no |
 | polygon | `0x4ccfc37c06f99ef96bba3d04d798ef5ca44400e1` | FarmingCenter | impl | live | no |
 | polygon | `0x510f22c161387473de5e82cb882312facf6979a5` | V3Migrator | impl | live | no |
 | polygon | `0x5a55c731b73b325f7df53a013529267f79cce8e4` | CErc20 | impl | live | no |
-| polygon | `0x5da34437a38da232094f9a17dd5c5eef92dbc6f9` | AlgebraCommunityVault | impl | live | no |
+| polygon | `0x5da34437a38da232094f9a17dd5c5eef92dbc6f9` | AlgebraCommunityVault-2 | impl | live | no |
 | polygon | `0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789` | EntryPoint | impl | live | no |
 | polygon | `0x6929e97453575eb2a3a2679a74f0340b9c2a919f` | JumpRateModel | impl | live | no |
 | polygon | `0x6cd7dcd88f3994e57557690d20d20105b72c1cba` | NonfungiblePositionManager | impl | live | no |
@@ -137,53 +150,36 @@
 | polygon | `0x7779c2df9e64932eb63797b4aa2ea1e352ce12e8` | AlgebraCustomPoolEntryPoint-2 | impl | live | no |
 | polygon | `0x7a6b92507653f2d36f3132afbc28743859771421` | AlgebraPoolDeployer | impl | live | no |
 | polygon | `0x7e7dca93606cdca0981423d7d38793eed6860604` | AlgebraPoolDeployer | impl | live | no |
+| polygon | `0x7f71e9b6c3d60ae3a0e68961dd4109d135fe6fb3` | NonfungiblePositionManager-2 | impl | live | no |
+| polygon | `0x827da8df165436f46a31fbb0e0d09d9a4f1d25df` | SecurityRegistry-2 | impl | live | no |
 | polygon | `0x89d065572136814230a55ddeeddec9df34eb0b76` | AutoFarmV2_CrossChain | impl | live | no |
+| polygon | `0x8a5164be96b21194e37de2053f18736f10ea22fd` | Quoter-2 | impl | live | no |
 | polygon | `0x92fce8affb2a68d418badf8e360e0cde06c39356` | UniStakingSyntheticToken | impl | live | no |
 | polygon | `0x94dbc4e017415885e65e45ac984a62cb87465900` | LimitOrderManager | impl | live | no |
 | polygon | `0x9552594ac707941e7ecf474eabcc018770c9241f` | AlgebraVaultFactoryStub | impl | live | no |
 | polygon | `0x9713d284abddfb84328babaf4306ca57b099d4ad` | AlgebraUpgradeablePlugin-2 | impl | live | no |
 | polygon | `0x9d611847985fab636bb8603cf0e4d1339754f0e7` | MevxPluginImplementation | impl | live | no |
+| polygon | `0xa0d8885e59bda7a8f6c5d253410582275b05fd6c` | AlgebraFactory | impl | live | no |
 | polygon | `0xa19b72cc2490c557296c4a44c0ee765009ce1794` | AlgebraInterfaceMulticall-2 | impl | live | no |
 | polygon | `0xa278e7e32c3f646bfefe6bb6eec396f9c207b2f9` | TickLens | impl | live | no |
 | polygon | `0xa2f3c48cea95bd77a3695fa2849f862a0d5fd250` | AlgebraPoolDeployer | impl | live | no |
+| polygon | `0xb496aaaed649a640bd5e3c99e45a67991f9d587f` | AlgebraFactory-2 | impl | live | no |
 | polygon | `0xc3ec80343d2bae2f8e680fdadde7c17e71e114ea` | UChildERC20Proxy | proxy | live | no |
 | polygon | `0xc552de9b0eee964fe6e49b8d571e5b8b147f9d5f` | UniStakingSyntheticToken | impl | live | no |
+| polygon | `0xca11bde05977b3631167028862be2a173976ca11` | Multicall3-2 | impl | live | no |
+| polygon | `0xcdd0f77a2a158b0c7cfe38d00443e9a4731d6ea6` | StakingPool-3 | impl | live | no |
+| polygon | `0xce0042b868300000d44a59004da54a005ffdcf9f` | SingletonFactory-2 | impl | live | no |
+| polygon | `0xd1ecdc553651dab068486d9c4d066ecdc614416e` | StakingPool-6 | impl | live | no |
 | polygon | `0xd3f3545b140dbffb4280e3aae0ff7b1a93bcebf2` | JumpRateModel | impl | live | no |
+| polygon | `0xd77f495ce60cd9414f99670bec8657a021e34c83` | StakingPool-7 | impl | live | no |
 | polygon | `0xd9a0ffa58143cdc5c1767208dddb64a1889d78ae` | TickLens | impl | live | no |
 | polygon | `0xdf4a44510f4cbfcf435113814cf1456cd7051d05` | AlgebraPoolDeployer | impl | live | no |
+| polygon | `0xe1f7f36b7fda6ae5deda904e29cf23daefc77f3b` | AlgebraFactory-2 | impl | live | no |
 | polygon | `0xe2d496ca2a350f431cf0fe6c705b83c2f30677b6` | ZenterestPriceFeed | impl | live | no |
 | polygon | `0xe8041548c62aad4c55e36b8ec83fc26f28dc3db7` | Issuance | impl | live | no |
+| polygon | `0xed24dcb9cb0a96eab2e19ff2b2dc757d68068f4e` | Quoter | impl | live | no |
 | polygon | `0xefdf672bdbb047597fcd018e20a649c809f7a54c` | AlgebraPoolDeployer | impl | live | no |
 | polygon | `0xf362506e11d7692af1e6df4a0c1cfd64c5d9bed0` | SwapRouter | impl | live | no |
 | polygon | `0xf533c78c0790676008d576c5cc2e63e0856ed4f0` | JumpRateModel | impl | live | no |
 | polygon | `0xfd7cfcb74e630d1ddf090342d6d6a7968a2e2326` | AlgebraPoolDeployer | impl | live | no |
 | polygon | `0xff2bbcb399ad50bbd06debadd47d290933ae1038` | UniswapV2Pair | impl | live | no |
-
-## Source unavailable (25)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x41a32c610fa23dea9e85d471cad66ea828853153`
-- bsc `0xcbf42ace1dbd895ffdcabc1b841488542626014d`
-- bsc `0xefc2d65302eb6345a7c0e212b791e0d45c2c3c91`
-- bsc `0xf0185520cc773502f0f208433ca178f2f57157a9`
-- bsc `0xf25897a7edf1dfa9c65f5db7ec4bad868873805b`
-- ethereum `0x6ad6a4f233f1e33613e996ccc17409b93ff8bf5f`
-- ethereum `0x83d4a9ea77a4dba073cd90b30410ac9f95f93e7c`
-- ethereum `0x8c97d1566ed686249b6e818e664ace873ccfe442`
-- ethereum `0x9fd38604ed3ca1477650125fbd5e99f7bbf244f9`
-- ethereum `0xb4f9b6b019e75cbe51af4425b2fc12797e2ee2a1`
-- ethereum `0xec250e6856e14a494cb1f0abc61d72348c79f418`
-- ethereum `0xfe3becd788320465ab649015f34f7771220a88b2`
-- polygon `0x427756e0bbb792f24018e670d570b1b147dbf1f8`
-- polygon `0x7f71e9b6c3d60ae3a0e68961dd4109d135fe6fb3`
-- polygon `0x827da8df165436f46a31fbb0e0d09d9a4f1d25df`
-- polygon `0x8a5164be96b21194e37de2053f18736f10ea22fd`
-- polygon `0xa0d8885e59bda7a8f6c5d253410582275b05fd6c`
-- polygon `0xb496aaaed649a640bd5e3c99e45a67991f9d587f`
-- polygon `0xca11bde05977b3631167028862be2a173976ca11`
-- polygon `0xcdd0f77a2a158b0c7cfe38d00443e9a4731d6ea6`
-- polygon `0xce0042b868300000d44a59004da54a005ffdcf9f`
-- polygon `0xd1ecdc553651dab068486d9c4d066ecdc614416e`
-- polygon `0xd77f495ce60cd9414f99670bec8657a021e34c83`
-- polygon `0xe1f7f36b7fda6ae5deda904e29cf23daefc77f3b`
-- polygon `0xed24dcb9cb0a96eab2e19ff2b2dc757d68068f4e`

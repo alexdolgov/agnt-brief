@@ -1,15 +1,15 @@
 {
   "component": "VariableDebtToken",
   "main_contract": "VariableDebtToken",
-  "source_file_count": 26,
+  "source_file_count": 22,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x00170fbbc27793837f1b7fb073f91f5ed8dbaee8",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd320771c447855bb9b3ef0a4793c9264f893c36f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

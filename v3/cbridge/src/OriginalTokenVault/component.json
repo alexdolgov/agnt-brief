@@ -2,7 +2,7 @@
   "component": "OriginalTokenVault",
   "main_contract": "OriginalTokenVault",
   "source_file_count": 16,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
@@ -10,9 +10,25 @@
   ],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x78bc5ee9f11d133a08b331c2e18fe81be0ed02dc",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbcfef6bb4597e724d720735d32a9249e0640aa11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfe31bfc4f7c9b69246a6dc0087d91a91cb040f76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5427fefa711eff984124bfbb1ab6fbf5e3da1820",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

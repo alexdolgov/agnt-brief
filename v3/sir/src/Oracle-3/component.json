@@ -1,0 +1,18 @@
+{
+  "component": "Oracle-3",
+  "main_contract": "Oracle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed89af5e62965c45956a0125a5d078218228497a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

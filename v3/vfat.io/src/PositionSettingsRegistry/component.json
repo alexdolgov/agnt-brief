@@ -1,42 +1,55 @@
 {
   "component": "PositionSettingsRegistry",
   "main_contract": "PositionSettingsRegistry",
-  "source_file_count": 30,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf",
-    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-sickle-report.pdf"
-  ],
+  "source_file_count": 25,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x06e7023faf11476b8a6c732c3a744f2a1cf7d142",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8145e20b0f14d1486261e3bfde46be426d329e98",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x869e37e67baa9f1022b71ec5e9423d12ed884850",
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x23eb5ce64769b969b58f008154d396957a7ade3b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x91105e3dd163cd27c7f735a3692b6a392c9f29fb",
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xab2ee5770becce48cd5c18b92c9bae317a3518be",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf7b4a389612fc4a749926db661af64d3a52546d5",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9a961b0683135d3ea5f4d6ba02159c9e33078901",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3508a7918ac8f31ef3af71f8bb637926b8983596",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x85e28f55a4a4313e436bc2fe61f19860f1c12aac",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

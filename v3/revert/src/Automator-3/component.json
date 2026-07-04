@@ -1,0 +1,42 @@
+{
+  "component": "Automator-3",
+  "main_contract": "Automator",
+  "source_file_count": 40,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x87f44220d8895d6b9fc3f80f104a1a6cb87fdca5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5e54224a75d459f57ac4c76ce7c560a353374a5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa8549424b20a514eb9e7a829ec013065bef9dc1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5ff2195ba28d2544aed91e30e5f74b87d4f158de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

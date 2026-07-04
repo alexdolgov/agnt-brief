@@ -1,0 +1,18 @@
+{
+  "component": "InstantDistributionAgreementV1-6",
+  "main_contract": "InstantDistributionAgreementV1",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf21019b8688e7730ca6d9002569ecbaf8d1a3083",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

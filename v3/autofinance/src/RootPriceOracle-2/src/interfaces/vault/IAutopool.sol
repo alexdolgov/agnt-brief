@@ -327,5 +327,5 @@ interface IAutopool is IERC4626, IERC20Permit {
     /// @return assets The number of assets received
     /// @dev This function is used to redeem shares proportionally from all destination vaults including idle
     /// Any sort of recoup or credit is taken into account when redeeming
-    // function redeemProrata(uint256 shares, address receiver, address owner) external returns (uint256 assets);
+    function redeemProrata(uint256 shares, address receiver, address owner) external returns (uint256 assets);
 }

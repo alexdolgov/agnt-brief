@@ -1,8 +1,4 @@
 /**
- *Submitted for verification at moonriver.moonscan.io on 2021-10-22
-*/
-
-/**
  *Submitted for verification at BscScan.com on 2021-06-15
 */
 

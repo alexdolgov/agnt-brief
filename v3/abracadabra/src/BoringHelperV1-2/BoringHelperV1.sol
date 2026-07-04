@@ -1,19 +1,9 @@
-// File: contracts/boringcrypto/BoringHelperV1.sol
+/**
+ *Submitted for verification at polygonscan.com on 2021-08-09
+*/
 
 // SPDX-License-Identifier: MIT
-
-/**
- * This is a helper contract used by Sushiswap frontend to get all pool data.
- * Contract is available only via etherscan: https://etherscan.io/address/0x11ca5375adafd6205e41131a4409f182677996e6#code
- * It needs flattened due to cyclic dependencies.
- * BoringHelperV1 has been modified by:
- *  - Renaming Sushi -> Joe
- *  - Renaming ETH -> AVAX
- *  - Removed bentobox/kashi logic.
- *
- */
-
-pragma solidity 0.6.12;
+pragma solidity 0.7.6;
 pragma experimental ABIEncoderV2;
 
 // Copyright (c) 2021 BoringCrypto
@@ -26,11 +16,13 @@ interface IERC20 {
 
     function balanceOf(address account) external view returns (uint256);
 
-    function allowance(address owner, address spender) external view returns (uint256);
+    function allowance(address holder, address spender) external view returns (uint256);
 
     function approve(address spender, uint256 amount) external returns (bool);
 
     function owner() external view returns (address);
+    
+    function nonces(address user) external view returns (uint256);
 
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
@@ -38,6 +30,8 @@ interface IERC20 {
 
 interface IMasterChef {
     function BONUS_MULTIPLIER() external view returns (uint256);
+
+    function bonusEndBlock() external view returns (uint256);
 
     function devaddr() external view returns (address);
 
@@ -47,9 +41,9 @@ interface IMasterChef {
 
     function startBlock() external view returns (uint256);
 
-    function joe() external view returns (address);
+    function sushi() external view returns (address);
 
-    function joePerBlock() external view returns (uint256);
+    function sushiPerBlock() external view returns (uint256);
 
     function totalAllocPoint() external view returns (uint256);
 
@@ -67,15 +61,7 @@ interface IMasterChef {
 
     function userInfo(uint256 nr, address who) external view returns (uint256, uint256);
 
-    function pendingTokens(uint256 pid, address who)
-        external
-        view
-        returns (
-            uint256,
-            address,
-            string memory,
-            uint256
-        );
+    function pendingSushi(uint256 nr, address who) external view returns (uint256);
 }
 
 interface IPair is IERC20 {
@@ -107,27 +93,27 @@ interface IFactory {
 
 library BoringMath {
     function add(uint256 a, uint256 b) internal pure returns (uint256 c) {
-        require((c = a + b) >= b, "BoringMath: Add Overflow");
+        require((c = a + b) >= b);
     }
 
     function sub(uint256 a, uint256 b) internal pure returns (uint256 c) {
-        require((c = a - b) <= a, "BoringMath: Underflow");
+        require((c = a - b) <= a);
     }
 
     function mul(uint256 a, uint256 b) internal pure returns (uint256 c) {
-        require(b == 0 || (c = a * b) / b == a, "BoringMath: Mul Overflow");
+        require(b == 0 || (c = a * b) / b == a);
     }
 }
 
 contract Ownable {
     address public immutable owner;
 
-    constructor() internal {
+    constructor() {
         owner = msg.sender;
     }
 
     modifier onlyOwner() {
-        require(owner == msg.sender, "Ownable: caller is not the owner");
+        require(owner == msg.sender);
         _;
     }
 }
@@ -147,7 +133,7 @@ library BoringERC20 {
             }
             return string(bytesArray);
         } else {
-            return "???";
+            return "?";
         }
     }
 
@@ -171,12 +157,10 @@ library BoringERC20 {
         return success && data.length == 32 ? abi.decode(data, (bytes32)) : bytes32(0);
     }
 
-    function nonces(IERC20 token, address owner) internal view returns (uint256) {
-        (bool success, bytes memory data) = address(token).staticcall{gas: 5000}(
-            abi.encodeWithSelector(0x7ecebe00, owner)
-        );
-        return success && data.length == 32 ? abi.decode(data, (uint256)) : uint256(-1); // Use max uint256 to signal failure to retrieve nonce (probably not supported)
-    }
+    // function nonces(IERC20 token, address owner) internal view returns (uint256) {
+    //     (bool success, bytes memory data) = address(token).staticcall{gas: 5000}(abi.encodeWithSelector(0x7ecebe00, owner));
+    //     return success && data.length == 32 ? abi.decode(data, (uint256)) : uint256(-1); // Use max uint256 to signal failure to retrieve nonce (probably not supported)
+    // }
 }
 
 library BoringPair {
@@ -188,44 +172,16 @@ library BoringPair {
 
 interface IStrategy {
     function skim(uint256 amount) external;
-
     function harvest(uint256 balance, address sender) external returns (int256 amountAdded);
-
     function withdraw(uint256 amount) external returns (uint256 actualAmount);
-
     function exit(uint256 balance) external returns (int256 amountAdded);
 }
 
 interface IBentoBox {
-    event LogDeploy(address indexed masterContract, bytes data, address indexed cloneAddress);
-    event LogDeposit(address indexed token, address indexed from, address indexed to, uint256 amount, uint256 share);
-    event LogFlashLoan(
-        address indexed borrower,
-        address indexed token,
-        uint256 amount,
-        uint256 feeAmount,
-        address indexed receiver
-    );
-    event LogRegisterProtocol(address indexed protocol);
-    event LogSetMasterContractApproval(address indexed masterContract, address indexed user, bool approved);
-    event LogStrategyDivest(address indexed token, uint256 amount);
-    event LogStrategyInvest(address indexed token, uint256 amount);
-    event LogStrategyLoss(address indexed token, uint256 amount);
-    event LogStrategyProfit(address indexed token, uint256 amount);
-    event LogStrategyQueued(address indexed token, address indexed strategy);
-    event LogStrategySet(address indexed token, address indexed strategy);
-    event LogStrategyTargetPercentage(address indexed token, uint256 targetPercentage);
-    event LogTransfer(address indexed token, address indexed from, address indexed to, uint256 share);
-    event LogWhiteListMasterContract(address indexed masterContract, bool approved);
-    event LogWithdraw(address indexed token, address indexed from, address indexed to, uint256 amount, uint256 share);
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
     function balanceOf(IERC20, address) external view returns (uint256);
 
-    function batch(bytes[] calldata calls, bool revertOnFail)
-        external
-        payable
-        returns (bool[] memory successes, bytes[] memory results);
+    function batch(bytes[] calldata calls, bool revertOnFail) external payable returns (bool[] memory successes, bytes[] memory results);
 
     function claimOwnership() external;
 
@@ -506,7 +462,20 @@ interface IKashiPair {
 
     function withdrawFees() external;
 }
-
+/*
+[
+"0x0000000000000000000000000000000000000000",
+"0x0000000000000000000000000000000000000000",
+"0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
+"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+"0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+"0xc35dadb65012ec5796536bd9864ed8773abc74c4",
+"0x5757371414417b8c6caad45baef941abc7d3ab32",
+"0x0000000000000000000000000000000000000000",
+"0x0319000133d3ada02600f0875d2cf03d442c3367"
+]
+"0x0000000000000000000000000000000000000000","0x0000000000000000000000000000000000000000","0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a","0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6","0xc35dadb65012ec5796536bd9864ed8773abc74c4","0x5757371414417b8c6caad45baef941abc7d3ab32","0x0000000000000000000000000000000000000000","0x0319000133d3ada02600f0875d2cf03d442c3367"
+*/
 contract BoringHelperV1 is Ownable {
     using BoringMath for uint256;
     using BoringERC20 for IERC20;
@@ -514,85 +483,95 @@ contract BoringHelperV1 is Ownable {
     using BoringPair for IPair;
 
     IMasterChef public chef; // IMasterChef(0xc2EdaD668740f1aA35E4D8f227fB8E17dcA888Cd);
-    address public maker; // IJoeMaker(0xE11fc0B43ab98Eb91e9836129d1ee7c3Bc95df50);
-    IERC20 public joe; // IJoeToken(0x6B3595068778DD592e39A122f4f5a5cF09C90fE2);
-    IERC20 public WAVAX; // 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-    IFactory public joeFactory; // IFactory(0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac);
-    IFactory public pangolinFactory; // IFactory(0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f);
+    address public maker; // ISushiMaker(0xE11fc0B43ab98Eb91e9836129d1ee7c3Bc95df50);
+    IERC20 public sushi; // ISushiToken(0x6B3595068778DD592e39A122f4f5a5cF09C90fE2);
+    IERC20 public WETH; // 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+    IERC20 public WBTC; // 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
+    IFactory public sushiFactory; // IFactory(0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac);
+    IFactory public uniV2Factory; // IFactory(0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f);
     IERC20 public bar; // 0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272;
+    IBentoBox public bentoBox; // 0xB5891167796722331b7ea7824F036b3Bdcb4531C
 
     constructor(
         IMasterChef chef_,
         address maker_,
-        IERC20 joe_,
-        IERC20 WAVAX_,
-        IFactory joeFactory_,
-        IFactory pangolinFactory_,
-        IERC20 bar_
-    ) public {
+        IERC20 sushi_,
+        IERC20 WETH_,
+        IERC20 WBTC_,
+        IFactory sushiFactory_,
+        IFactory uniV2Factory_,
+        IERC20 bar_,
+        IBentoBox bentoBox_
+    ) {
         chef = chef_;
         maker = maker_;
-        joe = joe_;
-        WAVAX = WAVAX;
-        joeFactory = joeFactory_;
-        pangolinFactory = pangolinFactory_;
+        sushi = sushi_;
+        WETH = WETH_;
+        WBTC = WBTC_;
+        sushiFactory = sushiFactory_;
+        uniV2Factory = uniV2Factory_;
         bar = bar_;
+        bentoBox = bentoBox_;
     }
 
     function setContracts(
         IMasterChef chef_,
         address maker_,
-        IERC20 joe_,
-        IERC20 WAVAX_,
-        IFactory joeFactory_,
-        IFactory pangolinFactory_,
-        IERC20 bar_
+        IERC20 sushi_,
+        IERC20 WETH_,
+        IERC20 WBTC_,
+        IFactory sushiFactory_,
+        IFactory uniV2Factory_,
+        IERC20 bar_,
+        IBentoBox bentoBox_
     ) public onlyOwner {
         chef = chef_;
         maker = maker_;
-        joe = joe_;
-        WAVAX = WAVAX_;
-        joeFactory = joeFactory_;
-        pangolinFactory = pangolinFactory_;
+        sushi = sushi_;
+        WETH = WETH_;
+        WBTC = WBTC_;
+        sushiFactory = sushiFactory_;
+        uniV2Factory = uniV2Factory_;
         bar = bar_;
+        bentoBox = bentoBox_;
     }
 
-    function getAVAXRate(IERC20 token) public view returns (uint256) {
-        if (token == WAVAX) {
+    function getETHRate(IERC20 token) public view returns (uint256) {
+        if (token == WETH) {
             return 1e18;
         }
-        IPair pairPangolin;
-        IPair pairJoe;
-        if (pangolinFactory != IFactory(0)) {
-            pairPangolin = IPair(pangolinFactory.getPair(token, WAVAX));
+        IPair pairUniV2;
+        IPair pairSushi;
+        if (uniV2Factory != IFactory(0)) {
+            pairUniV2 = IPair(uniV2Factory.getPair(token, WETH));
         }
-        if (joeFactory != IFactory(0)) {
-            pairJoe = IPair(joeFactory.getPair(token, WAVAX));
+        if (sushiFactory != IFactory(0)) {
+            pairSushi = IPair(sushiFactory.getPair(token, WETH));
         }
-        if (address(pairPangolin) == address(0) && address(pairJoe) == address(0)) {
+        if (address(pairUniV2) == address(0) && address(pairSushi) == address(0)) {
             return 0;
         }
 
         uint112 reserve0;
         uint112 reserve1;
         IERC20 token0;
-        if (address(pairPangolin) != address(0)) {
-            (uint112 reserve0Pangolin, uint112 reserve1Pangolin, ) = pairPangolin.getReserves();
-            reserve0 += reserve0Pangolin;
-            reserve1 += reserve1Pangolin;
-            token0 = pairPangolin.token0();
+        if (address(pairUniV2) != address(0)) {
+            (uint112 reserve0UniV2, uint112 reserve1UniV2, ) = pairUniV2.getReserves();
+            reserve0 += reserve0UniV2;
+            reserve1 += reserve1UniV2;
+            token0 = pairUniV2.token0();
         }
 
-        if (address(pairJoe) != address(0)) {
-            (uint112 reserve0Joe, uint112 reserve1Joe, ) = pairJoe.getReserves();
-            reserve0 += reserve0Joe;
-            reserve1 += reserve1Joe;
+        if (address(pairSushi) != address(0)) {
+            (uint112 reserve0Sushi, uint112 reserve1Sushi, ) = pairSushi.getReserves();
+            reserve0 += reserve0Sushi;
+            reserve1 += reserve1Sushi;
             if (token0 == IERC20(0)) {
-                token0 = pairJoe.token0();
+                token0 = pairSushi.token0();
             }
         }
 
-        if (token0 == WAVAX) {
+        if (token0 == WETH) {
             return (uint256(reserve1) * 1e18) / reserve0;
         } else {
             return (uint256(reserve0) * 1e18) / reserve1;
@@ -605,18 +584,19 @@ contract BoringHelperV1 is Ownable {
     }
 
     struct UIInfo {
-        uint256 avaxBalance;
-        uint256 joeBalance;
-        uint256 joeBarBalance;
-        uint256 xjoeBalance;
-        uint256 xjoeSupply;
-        uint256 joeBarAllowance;
+        uint256 ethBalance;
+        uint256 sushiBalance;
+        uint256 sushiBarBalance;
+        uint256 xsushiBalance;
+        uint256 xsushiSupply;
+        uint256 sushiBarAllowance;
         Factory[] factories;
-        uint256 avaxRate;
-        uint256 joeRate;
+        uint256 ethRate;
+        uint256 sushiRate;
         uint256 btcRate;
-        uint256 pendingJoe;
+        uint256 pendingSushi;
         uint256 blockTimeStamp;
+        bool[] masterContractApproved;
     }
 
     function getUIInfo(
@@ -626,7 +606,7 @@ contract BoringHelperV1 is Ownable {
         address[] calldata masterContracts
     ) public view returns (UIInfo memory) {
         UIInfo memory info;
-        info.avaxBalance = who.balance;
+        info.ethBalance = who.balance;
 
         info.factories = new Factory[](factoryAddresses.length);
         for (uint256 i = 0; i < factoryAddresses.length; i++) {
@@ -635,30 +615,38 @@ contract BoringHelperV1 is Ownable {
             info.factories[i].allPairsLength = factory.allPairsLength();
         }
 
-        if (currency != IERC20(0)) {
-            info.avaxRate = getAVAXRate(currency);
+        info.masterContractApproved = new bool[](masterContracts.length);
+        for (uint256 i = 0; i < masterContracts.length; i++) {
+            info.masterContractApproved[i] = bentoBox.masterContractApproved(masterContracts[i], who);
         }
 
-        if (joe != IERC20(0)) {
-            info.joeRate = getAVAXRate(joe);
-            info.joeBalance = joe.balanceOf(who);
-            info.joeBarBalance = joe.balanceOf(address(bar));
-            info.joeBarAllowance = joe.allowance(who, address(bar));
+        if (currency != IERC20(0)) {
+            info.ethRate = getETHRate(currency);
+        }
+
+        if (WBTC != IERC20(0)) {
+            info.btcRate = getETHRate(WBTC);
+        }
+
+        if (sushi != IERC20(0)) {
+            info.sushiRate = getETHRate(sushi);
+            info.sushiBalance = sushi.balanceOf(who);
+            info.sushiBarBalance = sushi.balanceOf(address(bar));
+            info.sushiBarAllowance = sushi.allowance(who, address(bar));
         }
 
         if (bar != IERC20(0)) {
-            info.xjoeBalance = bar.balanceOf(who);
-            info.xjoeSupply = bar.totalSupply();
+            info.xsushiBalance = bar.balanceOf(who);
+            info.xsushiSupply = bar.totalSupply();
         }
 
         if (chef != IMasterChef(0)) {
             uint256 poolLength = chef.poolLength();
-            uint256 pendingJoe;
+            uint256 pendingSushi;
             for (uint256 i = 0; i < poolLength; i++) {
-                (uint256 pendingJoeAmt, , , ) = chef.pendingTokens(i, who);
-                pendingJoe += pendingJoeAmt;
+                pendingSushi += chef.pendingSushi(i, who);
             }
-            info.pendingJoe = pendingJoe;
+            info.pendingSushi = pendingSushi;
         }
         info.blockTimeStamp = block.timestamp;
 
@@ -668,13 +656,18 @@ contract BoringHelperV1 is Ownable {
     struct Balance {
         IERC20 token;
         uint256 balance;
+        uint256 bentoBalance;
     }
 
     struct BalanceFull {
         IERC20 token;
         uint256 totalSupply;
         uint256 balance;
+        uint256 bentoBalance;
+        uint256 bentoAllowance;
         uint256 nonce;
+        uint128 bentoAmount;
+        uint128 bentoShare;
         uint256 rate;
     }
 
@@ -692,7 +685,6 @@ contract BoringHelperV1 is Ownable {
         for (uint256 i = 0; i < addresses.length; i++) {
             IERC20 token = IERC20(addresses[i]);
             infos[i].token = token;
-
             infos[i].name = token.name();
             infos[i].symbol = token.symbol();
             infos[i].decimals = token.decimals();
@@ -710,21 +702,26 @@ contract BoringHelperV1 is Ownable {
             IERC20 token = IERC20(addresses[i]);
             balances[i].token = token;
             balances[i].balance = token.balanceOf(who);
+            balances[i].bentoBalance = bentoBox.balanceOf(token, who);
         }
 
         return balances;
     }
 
     function getBalances(address who, IERC20[] calldata addresses) public view returns (BalanceFull[] memory) {
+        
         BalanceFull[] memory balances = new BalanceFull[](addresses.length);
-
+        
         for (uint256 i = 0; i < addresses.length; i++) {
             IERC20 token = addresses[i];
-            balances[i].totalSupply = token.totalSupply();
             balances[i].token = token;
-            balances[i].balance = token.balanceOf(who);
-            balances[i].nonce = token.nonces(who);
-            balances[i].rate = getAVAXRate(token);
+            balances[i].rate = getETHRate(token);
+            try token.totalSupply()                          { balances[i].totalSupply = token.totalSupply(); }                               catch { balances[i].totalSupply = 0; }
+            try token.balanceOf(who)                         { balances[i].balance = token.balanceOf(who); }                                  catch { balances[i].balance = 0; }
+            try token.allowance(who, address(bentoBox))      { balances[i].bentoAllowance = token.allowance(who, address(bentoBox)); }        catch { balances[i].bentoAllowance = 0; }
+            try token.nonces(who)                            { balances[i].nonce = token.nonces(who); }                                       catch { balances[i].nonce = uint256(-1); }
+            try bentoBox.balanceOf(token, who)               { balances[i].bentoBalance = bentoBox.balanceOf(token, who); }                   catch { balances[i].bentoBalance = 0; }
+            try bentoBox.totals(token)                       { (balances[i].bentoAmount, balances[i].bentoShare) = bentoBox.totals(token); }  catch { (balances[i].bentoAmount, balances[i].bentoShare) = (0, 0); }
         }
 
         return balances;
@@ -806,19 +803,19 @@ contract BoringHelperV1 is Ownable {
         for (uint256 i = 0; i < pids.length; i++) {
             pools[i].pid = pids[i];
             (address lpToken, uint256 allocPoint, , ) = chef.poolInfo(pids[i]);
-            IPair pair = IPair(lpToken);
-            pools[i].lpToken = pair;
+            IPair uniV2 = IPair(lpToken);
+            pools[i].lpToken = uniV2;
             pools[i].allocPoint = allocPoint;
 
-            pools[i].name = pair.name();
-            pools[i].symbol = pair.symbol();
-            pools[i].decimals = pair.decimals();
+            pools[i].name = uniV2.name();
+            pools[i].symbol = uniV2.symbol();
+            pools[i].decimals = uniV2.decimals();
 
-            pools[i].factory = pair.factory();
+            pools[i].factory = uniV2.factory();
             if (pools[i].factory != IFactory(0)) {
                 pools[i].isPair = true;
-                pools[i].token0 = pair.token0();
-                pools[i].token1 = pair.token1();
+                pools[i].token0 = uniV2.token0();
+                pools[i].token1 = uniV2.token1();
             }
         }
         return (info, pools);
@@ -859,24 +856,66 @@ contract BoringHelperV1 is Ownable {
         for (uint256 i = 0; i < pids.length; i++) {
             (uint256 amount, ) = chef.userInfo(pids[i], who);
             pools[i].balance = amount;
-            (uint256 pendingJoe, , , ) = chef.pendingTokens(pids[i], who);
-            pools[i].pending = pendingJoe;
+            pools[i].pending = chef.pendingSushi(pids[i], who);
 
             (address lpToken, , , ) = chef.poolInfo(pids[i]);
             pools[i].pid = pids[i];
-            IPair pair = IPair(lpToken);
-            IFactory factory = pair.factory();
+            IPair uniV2 = IPair(lpToken);
+            IFactory factory = uniV2.factory();
             if (factory != IFactory(0)) {
-                pools[i].totalSupply = pair.balanceOf(address(chef));
-                pools[i].lpAllowance = pair.allowance(who, address(chef));
-                pools[i].lpBalance = pair.balanceOf(who);
-                pools[i].lpTotalSupply = pair.totalSupply();
+                pools[i].totalSupply = uniV2.balanceOf(address(chef));
+                pools[i].lpAllowance = uniV2.allowance(who, address(chef));
+                pools[i].lpBalance = uniV2.balanceOf(who);
+                pools[i].lpTotalSupply = uniV2.totalSupply();
 
-                (uint112 reserve0, uint112 reserve1, ) = pair.getReserves();
+                (uint112 reserve0, uint112 reserve1, ) = uniV2.getReserves();
                 pools[i].reserve0 = reserve0;
                 pools[i].reserve1 = reserve1;
             }
         }
         return pools;
+    }
+
+    struct KashiPairPoll {
+        IERC20 collateral;
+        IERC20 asset;
+        IOracle oracle;
+        bytes oracleData;
+        uint256 totalCollateralShare;
+        uint256 userCollateralShare;
+        Rebase totalAsset;
+        uint256 userAssetFraction;
+        Rebase totalBorrow;
+        uint256 userBorrowPart;
+        uint256 currentExchangeRate;
+        uint256 spotExchangeRate;
+        uint256 oracleExchangeRate;
+        AccrueInfo accrueInfo;
+    }
+
+    function pollKashiPairs(address who, IKashiPair[] calldata pairsIn) public view returns (KashiPairPoll[] memory) {
+        uint256 len = pairsIn.length;
+        KashiPairPoll[] memory pairs = new KashiPairPoll[](len);
+
+        for (uint256 i = 0; i < len; i++) {
+            IKashiPair pair = pairsIn[i];
+            pairs[i].collateral = pair.collateral();
+            pairs[i].asset = pair.asset();
+            pairs[i].oracle = pair.oracle();
+            pairs[i].oracleData = pair.oracleData();
+            pairs[i].totalCollateralShare = pair.totalCollateralShare();
+            pairs[i].userCollateralShare = pair.userCollateralShare(who);
+            pairs[i].totalAsset = pair.totalAsset();
+            pairs[i].userAssetFraction = pair.balanceOf(who);
+            pairs[i].totalBorrow = pair.totalBorrow();
+            pairs[i].userBorrowPart = pair.userBorrowPart(who);
+
+            pairs[i].currentExchangeRate = pair.exchangeRate();
+            (, pairs[i].oracleExchangeRate) = pair.oracle().peek(pair.oracleData());
+            pairs[i].spotExchangeRate = pair.oracle().peekSpot(pair.oracleData());
+            pairs[i].accrueInfo = pair.accrueInfo();
+        }
+
+        return pairs;
     }
 }

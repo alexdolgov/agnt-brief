@@ -1,15 +1,15 @@
 {
   "component": "SyncPlug",
   "main_contract": "SyncPlug",
-  "source_file_count": 4,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x50d1f0d98a59441e43ecd259598d90b305803319",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x74af6d7b484729384342dd68c60d73a3bf7081df",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at snowtrace.io on 2022-02-21
-*/
-
 // File: contracts/lib/CloneFactory.sol
 
 /*

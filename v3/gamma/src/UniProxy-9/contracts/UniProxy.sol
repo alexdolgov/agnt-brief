@@ -1,0 +1,116 @@
+/// SPDX-License-Identifier: BUSL-1.1
+
+pragma solidity =0.8.20;
+pragma abicoder v2;
+
+import "./interfaces/IBlast.sol";
+import "./interfaces/IBlastPoints.sol";
+import "./interfaces/IERC20Rebasing.sol";
+import "./interfaces/IHypervisor.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+
+interface IClearing {
+
+	function clearDeposit(
+    uint256 deposit0,
+    uint256 deposit1,
+    address from,
+    address to,
+    address pos,
+    uint256[4] memory minIn
+  ) external view returns (bool cleared);
+
+	function clearShares(
+    address pos,
+    uint256 shares
+  ) external view returns (bool cleared);
+
+  function getDepositAmount(
+    address pos,
+    address token,
+    uint256 _deposit
+  ) external view returns (uint256 amountStart, uint256 amountEnd);
+}
+
+/// @title UniProxy v1.2.3
+/// @notice Proxy contract for hypervisor positions management
+contract UniProxy is ReentrancyGuard {
+
+	IClearing public clearance;
+  address public owner;
+
+  IBlast public constant BLAST = IBlast(0x4300000000000000000000000000000000000002);
+  IERC20Rebasing private constant USDB = IERC20Rebasing(0x4300000000000000000000000000000000000003);
+  IERC20Rebasing private constant WETHB = IERC20Rebasing(0x4300000000000000000000000000000000000004);
+  address private constant BLAST_POINTS = 0x2536FE9ab3F511540F2f9e2eC2A805005C3Dd800;
+
+  constructor(address _clearance, address _owner, address _pointsOperator) {
+		clearance = IClearing(_clearance);	
+    owner = _owner;
+    BLAST.configureClaimableGas();
+    USDB.configure(YieldMode.CLAIMABLE);
+    WETHB.configure(YieldMode.CLAIMABLE);
+    IBlastPoints(BLAST_POINTS).configurePointsOperator(_pointsOperator);
+  }
+
+  /// @notice Deposit into the given position
+  /// @param deposit0 Amount of token0 to deposit
+  /// @param deposit1 Amount of token1 to deposit
+  /// @param to Address to receive liquidity tokens
+  /// @param pos Hypervisor Address
+  /// @param minIn min assets to expect in position during a direct deposit 
+  /// @return shares Amount of liquidity tokens received
+  function deposit(
+    uint256 deposit0,
+    uint256 deposit1,
+    address to,
+    address pos,
+    uint256[4] memory minIn
+  ) nonReentrant external returns (uint256 shares) {
+    require(to != address(0), "to should be non-zero");
+		require(clearance.clearDeposit(deposit0, deposit1, msg.sender, to, pos, minIn), "deposit not cleared");
+
+		/// transfer assets from msg.sender and mint lp tokens to provided address 
+		shares = IHypervisor(pos).deposit(deposit0, deposit1, to, msg.sender, minIn);
+		require(clearance.clearShares(pos, shares), "shares not cleared");
+  }
+
+  /// @notice Get the amount of token to deposit for the given amount of pair token
+  /// @param pos Hypervisor Address
+  /// @param token Address of token to deposit
+  /// @param _deposit Amount of token to deposit
+  /// @return amountStart Minimum amounts of the pair token to deposit
+  /// @return amountEnd Maximum amounts of the pair token to deposit
+  function getDepositAmount(
+    address pos,
+    address token,
+    uint256 _deposit
+  ) public view returns (uint256 amountStart, uint256 amountEnd) {
+		return clearance.getDepositAmount(pos, token, _deposit);
+	}
+
+	function transferClearance(address newClearance) external onlyOwner {
+    require(newClearance != address(0), "newClearance should be non-zero");
+		clearance = IClearing(newClearance);
+	}
+
+  function transferOwnership(address newOwner) external onlyOwner {
+    require(newOwner != address(0), "newOwner should be non-zero");
+    owner = newOwner;
+  }
+
+  function claimYieldAll(address _recipient, uint256 _amountWETH, uint256 _amountUSDB) 
+      external  
+      onlyOwner
+      returns (uint256 amountWETH, uint256 amountUSDB, uint256 amountGas) 
+  {
+      amountWETH = IERC20Rebasing(WETHB).claim(_recipient, _amountWETH);
+      amountUSDB = IERC20Rebasing(USDB).claim(_recipient, _amountUSDB);
+      amountGas = IBlast(BLAST).claimMaxGas(address(this), _recipient);
+  }
+
+  modifier onlyOwner {
+    require(msg.sender == owner, "only owner");
+    _;
+  }
+}

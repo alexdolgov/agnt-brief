@@ -1,19 +1,15 @@
 {
   "component": "MangroveOffer-7",
   "main_contract": "MangroveOffer",
-  "source_file_count": 35,
+  "source_file_count": 30,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/mangrovedao/audits/blob/main/strats/v0/ChainSecurity_Mangrove_Association_ADDMA_MangroveOrder_audit-7e289d0c705233f1d69d419d7689cab5.pdf",
-    "https://github.com/mangrovedao/audits/blob/main/strats/v1/2024-02-14-NM-0162-Nethermind_SmartRouter_MangroveOrder_MangroveAmplifier_audit-26ca97c4578d39c3ca4cb82ae7a0f374.pdf",
-    "https://github.com/mangrovedao/audits/blob/main/strats/v1/ChainSecurity_Mangrove_Association_Mangrove_Strategies_audit-caa8fc55eadb26bf40eead2b80af0c99.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x50793d97a0c905ea51c1c93f37fc73abe6d2ffcc",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1d7c32b43409ac66a9f5666daf674e2ef21427d0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

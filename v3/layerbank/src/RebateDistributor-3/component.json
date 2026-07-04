@@ -1,0 +1,18 @@
+{
+  "component": "RebateDistributor-3",
+  "main_contract": "RebateDistributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xea01659b66a682d41f4718bb62134ea8109fbfc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

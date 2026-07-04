@@ -27,8 +27,7 @@ interface IPancakeV3PoolState {
             uint16 observationIndex,
             uint16 observationCardinality,
             uint16 observationCardinalityNext,
-            uint16 feeProtocol0,
-            uint16 feeProtocol1,
+            uint32 feeProtocol,
             bool unlocked
         );
 

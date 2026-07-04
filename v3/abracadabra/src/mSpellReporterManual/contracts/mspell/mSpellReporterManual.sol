@@ -60,14 +60,13 @@ contract mSpellReporterManual {
             destChain,
             abi.encodePacked(mSpellSender),
             payload,
-            payable(this),
+            payable(msg.sender),
             address(0),
             bytes("")
         );
 
         lastUpdated = block.timestamp;
 
-        msg.sender.call("");
     }
 
     function sendAmount (address to) external payable {
@@ -78,14 +77,12 @@ contract mSpellReporterManual {
             destChain,
             abi.encodePacked(mSpellSender),
             payload,
-            payable(this),
+            payable(msg.sender),
             address(0),
             bytes("")
         );
 
         lastUpdated = block.timestamp;
-
-        msg.sender.call("");
     }
     fallback() external payable {}
     receive() external payable {}

@@ -1,15 +1,23 @@
 {
   "component": "WeightedPoolFactory-2",
   "main_contract": "WeightedPoolFactory",
-  "source_file_count": 40,
-  "deployment_count": 1,
+  "source_file_count": 52,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8e9aa87e45e92bad84d5f8dd1bff34fb92637de9",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xeb1eeabf0126d813589c3d2cfeffe410d9ae3863",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7ba29fe8e83dd6097a7298075c4affdbda3121cc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

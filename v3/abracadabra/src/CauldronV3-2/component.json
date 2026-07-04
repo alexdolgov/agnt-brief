@@ -2,14 +2,38 @@
   "component": "CauldronV3-2",
   "main_contract": "CauldronV3",
   "source_file_count": 102,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x3e2a2bc69e5c22a8da4056b413621d1820eb493e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0x7ce7d9ed62b9a6c5ace1c6ec9aeb115fa3064757",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6b2b3fe7c3d7a6f823d9106e22e66660709001e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd31e19a0574dbf09310c3b06f3416661b4dc7324",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -38,6 +38,7 @@ interface IMultiPositionFactory {
     function deployMultiPositionManager(PoolKey memory poolKey, address owner, string memory name)
         external
         returns (address);
+    function grantRelayerRoleForManager(address mpm, address relayer) external;
     function computeAddress(PoolKey memory poolKey, address managerOwner, string memory name)
         external
         view

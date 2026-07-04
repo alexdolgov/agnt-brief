@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x15452454a9735d68df430879b2941316a09295b1",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe9fe4720fa99f9b28584da44abb8cf91f15990e8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

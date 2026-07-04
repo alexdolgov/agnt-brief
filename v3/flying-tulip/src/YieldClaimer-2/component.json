@@ -1,0 +1,18 @@
+{
+  "component": "YieldClaimer-2",
+  "main_contract": "YieldClaimer",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff81e06af64e92203c1229930426cb41e7fac9e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

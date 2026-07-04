@@ -529,37 +529,6 @@ interface IWETH {
 pragma solidity 0.6.12;
 
 interface IVault {
-    function isInitialized() external view returns (bool);
-    function isSwapEnabled() external view returns (bool);
-    function isLeverageEnabled() external view returns (bool);
-
-    function setError(uint256 _errorCode, string calldata _error) external;
-
-    function router() external view returns (address);
-    function usdg() external view returns (address);
-    function gov() external view returns (address);
-
-    function whitelistedTokenCount() external view returns (uint256);
-    function maxLeverage() external view returns (uint256);
-
-    function minProfitTime() external view returns (uint256);
-    function hasDynamicFees() external view returns (bool);
-    function fundingInterval() external view returns (uint256);
-    function totalTokenWeights() external view returns (uint256);
-
-    function inManagerMode() external view returns (bool);
-    function inPrivateLiquidationMode() external view returns (bool);
-
-    function maxGasPrice() external view returns (uint256);
-
-    function approvedRouters(address _account, address _router) external view returns (bool);
-    function isLiquidator(address _account) external view returns (bool);
-    function isManager(address _account) external view returns (bool);
-
-    function minProfitBasisPoints(address _token) external view returns (uint256);
-    function tokenBalances(address _token) external view returns (uint256);
-    function lastFundingTimes(address _token) external view returns (uint256);
-
     function setInManagerMode(bool _inManagerMode) external;
     function setManager(address _manager, bool _isManager) external;
     function setIsSwapEnabled(bool _isSwapEnabled) external;
@@ -606,13 +575,11 @@ interface IVault {
     function getNextFundingRate(address _token) external view returns (uint256);
     function getFeeBasisPoints(address _token, uint256 _usdgDelta, uint256 _feeBasisPoints, uint256 _taxBasisPoints, bool _increment) external view returns (uint256);
 
-    function liquidationFeeUsd() external view returns (uint256);
     function taxBasisPoints() external view returns (uint256);
     function stableTaxBasisPoints() external view returns (uint256);
     function mintBurnFeeBasisPoints() external view returns (uint256);
     function swapFeeBasisPoints() external view returns (uint256);
     function stableSwapFeeBasisPoints() external view returns (uint256);
-    function marginFeeBasisPoints() external view returns (uint256);
 
     function allWhitelistedTokensLength() external view returns (uint256);
     function allWhitelistedTokens(uint256) external view returns (address);

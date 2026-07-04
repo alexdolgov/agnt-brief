@@ -2,14 +2,38 @@
   "component": "DutchAuctionErrors",
   "main_contract": "DutchAuctionErrors",
   "source_file_count": 45,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5dfacd9c14ba264d76548549af1d27440b877407",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0x355e2e10a0056a0ae18f5f67925b74fdd9ba87d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3a4c99d6e70e5e4042d4de84aa21618d72edbb99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4b3d7d50f2773216d9ba19add4d8bdb90b8e0e80",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

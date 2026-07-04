@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 
 import {Constants} from "../global/Constants.sol";
@@ -69,6 +69,14 @@ library SafeUint256 {
         return a / b;
     }
 
+    function max(uint256 x, uint256 y) internal pure returns (uint256) {
+        return x > y ? x : y;
+    }
+
+    function min(uint256 x, uint256 y) internal pure returns (uint256) {
+        return x < y ? x : y;
+    }
+
     /**
      * @dev Returns the remainder of dividing two unsigned integers. (unsigned integer modulo),
      * reverting when dividing by zero.
@@ -128,7 +136,7 @@ library SafeUint256 {
     }
 
     function toUint72(uint256 x) internal pure returns (uint72) {
-        require(x <= type(uint8).max);
+        require(x <= type(uint72).max);
         return uint72(x);
     }
     
@@ -150,6 +158,11 @@ library SafeUint256 {
     function toUint112(uint256 x) internal pure returns (uint112) {
         require(x <= type(uint112).max);
         return uint112(x);
+    }
+
+    function toUint128(uint256 x) internal pure returns (uint128) {
+        require(x <= type(uint128).max);
+        return uint128(x);
     }
 
     function toInt(uint256 x) internal pure returns (int256) {

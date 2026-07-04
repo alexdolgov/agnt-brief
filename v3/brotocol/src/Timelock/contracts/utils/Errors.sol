@@ -12,7 +12,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 // solhint-disable
 
@@ -146,10 +146,6 @@ library Errors {
   uint256 internal constant ZERO_TOKEN_ADDRESS = 213;
   uint256 internal constant INVALID_TOKEN_DECIMALS = 214;
   uint256 internal constant RECIPIENT_ON_WATCHLIST = 215;
-  uint256 internal constant INVALID_ORDER = 216;
-  uint256 internal constant FEE_PCT_GREATER_THAN_ONE = 217;
-  uint256 internal constant MIN_AMT_GREATER_THAN_MAX = 218;
-  uint256 internal constant MIN_FEE_GREATER_THAN_MIN_AMT = 219;
 
   // Token
   uint256 internal constant TRANSFER_NOT_ALLOWED = 300;

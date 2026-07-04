@@ -1,6 +1,6 @@
 # fx-protocol — deployments
 
-185 verified deployment(s) across 142 component(s).
+187 verified deployment(s) across 142 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -178,20 +178,16 @@
 | ethereum | `0xeecd843ed9f3d07757565e5cb91111718270a44f` | MultiMerkleStash | impl | live | no |
 | ethereum | `0xf0ab759d3a1a4956e8c3c52c71ccb50f20bc342b` | TransferProxy | impl | inactive | no |
 | ethereum | `0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4` | ERC1967Upgrade-2 | proxy | live | no |
+| ethereum | `0xf29b80b512f7055f164a33aa13105dfac3b01b6b` | Voting_Escrow | impl | live | no |
 | ethereum | `0xf32ffd90133c7ec15e1519b9f7de8143310961ac` | PoolStorage-6 | impl | live | no |
 | ethereum | `0xf35df253d05d704f9b9ea29abd9bd187cd28a09d` | RockXStaking-21 | impl | inactive | no |
 | ethereum | `0xf3d24bb506038f6639b34b5175e0fcf2d610a098` | PoolStorage | impl | live | no |
 | ethereum | `0xf422446f7730e50b9cab4618343425d9927b35ed` | Fundraising_Gauge_Fx | impl | live | no |
 | ethereum | `0xf4954ae0f18b236b643a4bf126e743f23f755024` | TimelockController-2 | impl | live | no |
 | ethereum | `0xf50dbaf3d057164fc79c1aa435ffa011c6bcdae9` | uniBTCRate | impl | inactive | no |
+| ethereum | `0xf594bdfafe4197144c6459fca611d7b868d36bea` | Fundraising_Gauge_Fx | impl | live | no |
 | ethereum | `0xf74ca519fe35ec6a862a4debd8e317bed3c47c87` | Market | impl | live | no |
 | ethereum | `0xfc3862c33b54e0bba61d966ff51973c20be4fc62` | FxInitialFund | impl | live | no |
 | ethereum | `0xfc9268e8c699071c62f63711de06097a4e9d4c36` | RewardPool-2 | impl | inactive | no |
 | ethereum | `0xfd3a6540e21d0e285f88fbfd904883b23e08f5c8` | PoolStorage-9 | impl | live | no |
 | ethereum | `0xffe563c168c01e05da4f3d81938af158466ad793` | FxLSDOracleV2Base-2 | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xf29b80b512f7055f164a33aa13105dfac3b01b6b`
-- ethereum `0xf594bdfafe4197144c6459fca611d7b868d36bea`

@@ -1,0 +1,18 @@
+{
+  "component": "CauldronV4WithRewarder-4",
+  "main_contract": "CauldronV4WithRewarder",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd404bef05e9e256765440a1b9a6b56750c4cedec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Router02-3",
+  "main_contract": "Router02",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa516b9c7378799799e6dfadbdabf45d5b584405f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd4a6a05081fd270dc111332845a778a49fe01741",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,18 +1,15 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { Errors } from "src/utils/Errors.sol";
 import { LibAdapter } from "src/libs/LibAdapter.sol";
 import { IDestinationVault } from "src/interfaces/vault/IDestinationVault.sol";
 import { Math } from "openzeppelin-contracts/utils/math/Math.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
-import { IStrategy } from "src/interfaces/strategy/IStrategy.sol";
 import { SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import { IERC3156FlashBorrower } from "openzeppelin-contracts/interfaces/IERC3156FlashBorrower.sol";
-import { IAutopoolStrategy } from "src/interfaces/strategy/IAutopoolStrategy.sol";
 import { StructuredLinkedList } from "src/strategy/StructuredLinkedList.sol";
 import { WithdrawalQueue } from "src/strategy/WithdrawalQueue.sol";
 import { IAutopool } from "src/interfaces/vault/IAutopool.sol";
@@ -20,6 +17,9 @@ import { IMainRewarder } from "src/interfaces/rewarders/IMainRewarder.sol";
 import { AutopoolToken } from "src/vault/libs/AutopoolToken.sol";
 import { IRootPriceOracle } from "src/interfaces/oracles/IRootPriceOracle.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
+import { AutopoolState, ProcessRebalanceParams } from "src/vault/libs/AutopoolState.sol";
+import { AutopoolStrategyHooks } from "src/vault/libs/AutopoolStrategyHooks.sol";
+import { IStrategyHook, HookFunctionIndex } from "src/interfaces/strategy/IStrategyHook.sol";
 
 library AutopoolDebt {
     using Math for uint256;
@@ -33,7 +33,6 @@ library AutopoolDebt {
 
     error VaultShutdown();
     error WithdrawShareCalcInvalid(uint256 currentShares, uint256 cachedShares);
-    error RebalanceDestinationsMatch(address destinationVault);
     error RebalanceFailed(string message);
     error InvalidPrices();
     error InvalidTotalAssetPurpose();
@@ -42,6 +41,11 @@ library AutopoolDebt {
     error SharesAndAssetsReceived(uint256 assets, uint256 shares);
     error AmountExceedsAllowance(uint256 shares, uint256 allowed);
     error PositivePriceRecoupNotCovered(uint256 remaining);
+    error RebalanceDestinationsMatch();
+    error InsufficientAssets(address asset);
+    error RebalanceDestinationUnderlyerMismatch(address destination, address trueUnderlyer, address providedUnderlyer);
+    error OnlyRebalanceToIdleAvailable();
+    error UnregisteredDestination(address dest);
 
     event DestinationDebtReporting(
         address destination, AutopoolDebt.IdleDebtUpdates debtInfo, uint256 claimed, uint256 claimGasUsed
@@ -80,6 +84,15 @@ library AutopoolDebt {
         uint256 totalMaxDebtDecrease;
     }
 
+    struct AssetChanges {
+        uint256 startingIdle;
+        uint256 startingDebt;
+        uint256 startingTotalSupply;
+        uint256 newIdle;
+        uint256 newDebt;
+        uint256 endingTotalSupply;
+    }
+
     struct RebalanceOutParams {
         /// Address that will received the withdrawn underlyer
         address receiver;
@@ -112,8 +125,6 @@ library AutopoolDebt {
     }
 
     struct FlashRebalanceParams {
-        uint256 totalIdle;
-        uint256 totalDebt;
         IERC20 baseAsset;
         bool shutdown;
     }
@@ -124,27 +135,56 @@ library AutopoolDebt {
         bytes32 flashResult;
     }
 
+    function processRebalance(
+        AutopoolState storage $,
+        ProcessRebalanceParams memory args,
+        bytes calldata data,
+        bytes memory hooks
+    ) external returns (AutopoolDebt.AssetChanges memory updates) {
+        validateRebalanceParams($, args);
+
+        updates.startingIdle = $.assetBreakdown.totalIdle;
+        updates.startingDebt = $.assetBreakdown.totalDebt;
+
+        AutopoolDebt.IdleDebtUpdates memory result = flashRebalance($, args, data, hooks);
+
+        updates.newIdle = updates.startingIdle + result.totalIdleIncrease - result.totalIdleDecrease;
+        updates.newDebt = updates.startingDebt + result.totalDebtIncrease - result.totalDebtDecrease;
+
+        $.assetBreakdown.totalIdle = updates.newIdle;
+        $.assetBreakdown.totalDebt = updates.newDebt;
+        $.assetBreakdown.totalDebtMin =
+            $.assetBreakdown.totalDebtMin + result.totalMinDebtIncrease - result.totalMinDebtDecrease;
+        $.assetBreakdown.totalDebtMax =
+            $.assetBreakdown.totalDebtMax + result.totalMaxDebtIncrease - result.totalMaxDebtDecrease;
+    }
+
     function flashRebalance(
-        DestinationInfo storage destInfoOut,
-        DestinationInfo storage destInfoIn,
-        IERC3156FlashBorrower receiver,
-        IStrategy.RebalanceParams memory params,
-        IStrategy.SummaryStats memory destSummaryOut,
-        IAutopoolStrategy autoPoolStrategy,
-        FlashRebalanceParams memory flashParams,
-        bytes calldata data
-    ) external returns (IdleDebtUpdates memory result) {
+        AutopoolState storage $,
+        ProcessRebalanceParams memory args,
+        bytes calldata data,
+        bytes memory hooks
+    ) private returns (IdleDebtUpdates memory result) {
+        DestinationInfo storage destInfoOut = $.destinationInfo[args.rebalanceParams.destinationOut];
+        DestinationInfo storage destInfoIn = $.destinationInfo[args.rebalanceParams.destinationIn];
+
+        AutopoolStrategyHooks.executeHooks(
+            hooks,
+            uint256(HookFunctionIndex.onRebalanceStart),
+            abi.encodeCall(IStrategyHook.onRebalanceStart, (args, msg.sender))
+        );
+
         // Handle decrease (shares going "Out", cashing in shares and sending underlying back to swapper)
         // If the tokenOut is _asset we assume they are taking idle
         // which is already in the contract
         result = _handleRebalanceOut(
             AutopoolDebt.RebalanceOutParams({
-                receiver: address(receiver),
-                destinationOut: params.destinationOut,
-                amountOut: params.amountOut,
-                tokenOut: params.tokenOut,
-                _baseAsset: flashParams.baseAsset,
-                _shutdown: flashParams.shutdown
+                receiver: address(args.receiver),
+                destinationOut: args.rebalanceParams.destinationOut,
+                amountOut: args.rebalanceParams.amountOut,
+                tokenOut: args.rebalanceParams.tokenOut,
+                _baseAsset: args.baseAsset,
+                _shutdown: $.shutdown
             }),
             destInfoOut
         );
@@ -153,55 +193,141 @@ library AutopoolDebt {
             revert InvalidPrices();
         }
 
+        AutopoolStrategyHooks.executeHooks(
+            hooks,
+            uint256(HookFunctionIndex.onRebalanceOutAssetsReady),
+            abi.encodeCall(IStrategyHook.onRebalanceOutAssetsReady, (args, msg.sender))
+        );
+
         // Handle increase (shares coming "In", getting underlying from the swapper and trading for new shares)
-        if (params.amountIn > 0) {
-            FlashResultInfo memory flashResultInfo;
-            // get "before" counts
-            flashResultInfo.tokenInBalanceBefore = IERC20(params.tokenIn).balanceOf(address(this));
 
-            // Give control back to the solver so they can make use of the "out" assets
-            // and get our "in" asset
-            flashResultInfo.flashResult = receiver.onFlashLoan(msg.sender, params.tokenIn, params.amountIn, 0, data);
+        FlashResultInfo memory flashResultInfo;
+        // get "before" counts
+        flashResultInfo.tokenInBalanceBefore = IERC20(args.rebalanceParams.tokenIn).balanceOf(address(this));
 
-            // We assume the solver will send us the assets
-            flashResultInfo.tokenInBalanceAfter = IERC20(params.tokenIn).balanceOf(address(this));
+        // Give control back to the solver so they can make use of the "out" assets
+        // and get our "in" asset
+        flashResultInfo.flashResult =
+            args.receiver.onFlashLoan(msg.sender, args.rebalanceParams.tokenIn, args.rebalanceParams.amountIn, 0, data);
 
-            // Make sure the call was successful and verify we have at least the assets we think
-            // we were getting
-            if (
-                flashResultInfo.flashResult != keccak256("ERC3156FlashBorrower.onFlashLoan")
-                    || flashResultInfo.tokenInBalanceAfter < flashResultInfo.tokenInBalanceBefore + params.amountIn
-            ) {
-                revert Errors.FlashLoanFailed(params.tokenIn, params.amountIn);
+        // We assume the solver will send us the assets
+        flashResultInfo.tokenInBalanceAfter = IERC20(args.rebalanceParams.tokenIn).balanceOf(address(this));
+
+        // Make sure the call was successful and verify we have at least the assets we think
+        // we were getting
+        if (
+            flashResultInfo.flashResult != keccak256("ERC3156FlashBorrower.onFlashLoan")
+                || flashResultInfo.tokenInBalanceAfter
+                    < flashResultInfo.tokenInBalanceBefore + args.rebalanceParams.amountIn
+        ) {
+            revert Errors.FlashLoanFailed(args.rebalanceParams.tokenIn, args.rebalanceParams.amountIn);
+        }
+
+        AutopoolStrategyHooks.executeHooks(
+            hooks,
+            uint256(HookFunctionIndex.onRebalanceInAssetsReturned),
+            abi.encodeCall(IStrategyHook.onRebalanceInAssetsReturned, (args, msg.sender))
+        );
+
+        if (args.rebalanceParams.tokenIn != address(args.baseAsset)) {
+            IdleDebtUpdates memory inDebtResult = _handleRebalanceIn(
+                destInfoIn,
+                IDestinationVault(args.rebalanceParams.destinationIn),
+                args.rebalanceParams.tokenIn,
+                flashResultInfo.tokenInBalanceAfter
+            );
+            if (!inDebtResult.pricesWereSafe) {
+                revert InvalidPrices();
             }
+            result.totalDebtDecrease += inDebtResult.totalDebtDecrease;
+            result.totalDebtIncrease += inDebtResult.totalDebtIncrease;
+            result.totalMinDebtDecrease += inDebtResult.totalMinDebtDecrease;
+            result.totalMinDebtIncrease += inDebtResult.totalMinDebtIncrease;
+            result.totalMaxDebtDecrease += inDebtResult.totalMaxDebtDecrease;
+            result.totalMaxDebtIncrease += inDebtResult.totalMaxDebtIncrease;
+        } else {
+            result.totalIdleIncrease += flashResultInfo.tokenInBalanceAfter - flashResultInfo.tokenInBalanceBefore;
+        }
 
-            {
-                // make sure we have a valid path
-                (bool success, string memory message) = autoPoolStrategy.verifyRebalance(params, destSummaryOut);
-                if (!success) {
-                    revert RebalanceFailed(message);
-                }
-            }
+        AutopoolStrategyHooks.executeHooks(
+            hooks,
+            uint256(HookFunctionIndex.onRebalanceDestinationVaultUpdated),
+            abi.encodeCall(IStrategyHook.onRebalanceDestinationVaultUpdated, (args, msg.sender))
+        );
+    }
 
-            if (params.tokenIn != address(flashParams.baseAsset)) {
-                IdleDebtUpdates memory inDebtResult = _handleRebalanceIn(
-                    destInfoIn,
-                    IDestinationVault(params.destinationIn),
-                    params.tokenIn,
-                    flashResultInfo.tokenInBalanceAfter
+    function validateRebalanceParams(AutopoolState storage $, ProcessRebalanceParams memory args) private view {
+        address autopool = address(this);
+
+        Errors.verifyNotZero(args.rebalanceParams.destinationIn, "destinationIn");
+        Errors.verifyNotZero(args.rebalanceParams.destinationOut, "destinationOut");
+        Errors.verifyNotZero(args.rebalanceParams.tokenIn, "tokenIn");
+        Errors.verifyNotZero(args.rebalanceParams.tokenOut, "tokenOut");
+        Errors.verifyNotZero(args.rebalanceParams.amountIn, "amountIn");
+        Errors.verifyNotZero(args.rebalanceParams.amountOut, "amountOut");
+
+        ensureDestinationRegistered(autopool, args.rebalanceParams.destinationIn);
+        ensureDestinationRegistered(autopool, args.rebalanceParams.destinationOut);
+
+        // when a vault is shutdown, rebalancing can only pull assets from destinations back to the vault
+        if ($.shutdown && args.rebalanceParams.destinationIn != autopool) {
+            revert OnlyRebalanceToIdleAvailable();
+        }
+
+        if (args.rebalanceParams.destinationIn == args.rebalanceParams.destinationOut) {
+            revert RebalanceDestinationsMatch();
+        }
+
+        address baseAsset = address(args.baseAsset);
+
+        // if the in/out destination is the AutopoolETH then the in/out token must be the baseAsset
+        // if the in/out is not the AutopoolETH then the in/out token must match the destinations underlying token
+        if (args.rebalanceParams.destinationIn == autopool) {
+            if (args.rebalanceParams.tokenIn != baseAsset) {
+                revert RebalanceDestinationUnderlyerMismatch(
+                    args.rebalanceParams.destinationIn, args.rebalanceParams.tokenIn, baseAsset
                 );
-                if (!inDebtResult.pricesWereSafe) {
-                    revert InvalidPrices();
-                }
-                result.totalDebtDecrease += inDebtResult.totalDebtDecrease;
-                result.totalDebtIncrease += inDebtResult.totalDebtIncrease;
-                result.totalMinDebtDecrease += inDebtResult.totalMinDebtDecrease;
-                result.totalMinDebtIncrease += inDebtResult.totalMinDebtIncrease;
-                result.totalMaxDebtDecrease += inDebtResult.totalMaxDebtDecrease;
-                result.totalMaxDebtIncrease += inDebtResult.totalMaxDebtIncrease;
-            } else {
-                result.totalIdleIncrease += flashResultInfo.tokenInBalanceAfter - flashResultInfo.tokenInBalanceBefore;
             }
+        } else {
+            IDestinationVault inDest = IDestinationVault(args.rebalanceParams.destinationIn);
+            if (args.rebalanceParams.tokenIn != inDest.underlying()) {
+                revert RebalanceDestinationUnderlyerMismatch(
+                    args.rebalanceParams.destinationIn, inDest.underlying(), args.rebalanceParams.tokenIn
+                );
+            }
+        }
+
+        if (args.rebalanceParams.destinationOut == autopool) {
+            if (args.rebalanceParams.tokenOut != baseAsset) {
+                revert RebalanceDestinationUnderlyerMismatch(
+                    args.rebalanceParams.destinationOut, args.rebalanceParams.tokenOut, baseAsset
+                );
+            }
+            if (args.rebalanceParams.amountOut > $.assetBreakdown.totalIdle) {
+                revert InsufficientAssets(args.rebalanceParams.tokenOut);
+            }
+        } else {
+            IDestinationVault outDest = IDestinationVault(args.rebalanceParams.destinationOut);
+            if (args.rebalanceParams.tokenOut != outDest.underlying()) {
+                revert RebalanceDestinationUnderlyerMismatch(
+                    args.rebalanceParams.destinationOut, outDest.underlying(), args.rebalanceParams.tokenOut
+                );
+            }
+            if (args.rebalanceParams.amountOut > outDest.balanceOf(autopool)) {
+                revert InsufficientAssets(args.rebalanceParams.tokenOut);
+            }
+        }
+    }
+
+    function ensureDestinationRegistered(address autopool, address dest) private view {
+        if (dest == address(autopool)) return;
+        if (
+            !(
+                IAutopool(autopool).isDestinationRegistered(dest)
+                    || IAutopool(autopool).isDestinationQueuedForRemoval(dest)
+            )
+        ) {
+            revert UnregisteredDestination(dest);
         }
     }
 
@@ -229,6 +355,12 @@ library AutopoolDebt {
         result = _recalculateDestInfo(destInfo, dvIn, originalShareBal, originalShareBal + newShares);
     }
 
+    function oldestDebtReporting(
+        AutopoolState storage $
+    ) public view returns (uint256) {
+        return $.destinationInfo[$.debtReportQueue.peekHead()].lastReport;
+    }
+
     /**
      * @notice Perform withdraw and debt info update for the "out" destination during a rebalance
      * @dev This "out" function performs more validations and handles idle as opposed to "in" which does not
@@ -247,45 +379,38 @@ library AutopoolDebt {
         // Handle decrease (shares going "Out", cashing in shares and sending underlying back to swapper)
         // If the tokenOut is _asset we assume they are taking idle
         // which is already in the contract
-        if (params.amountOut > 0) {
-            if (params.tokenOut != address(params._baseAsset)) {
-                IDestinationVault dvOut = IDestinationVault(params.destinationOut);
 
-                // Snapshot our current shares so we know how much to back out
-                uint256 originalShareBal = dvOut.balanceOf(address(this));
+        if (params.tokenOut != address(params._baseAsset)) {
+            IDestinationVault dvOut = IDestinationVault(params.destinationOut);
 
-                // Burning our shares will claim any pending baseAsset
-                // rewards and send them to us.
-                // Get our starting balance
-                uint256 beforeBaseAssetBal = params._baseAsset.balanceOf(address(this));
+            // Snapshot our current shares so we know how much to back out
+            uint256 originalShareBal = dvOut.balanceOf(address(this));
 
-                // Withdraw underlying from the destination vault
-                // Shares are sent directly to the flashRebalance receiver
-                // slither-disable-next-line unused-return
-                dvOut.withdrawUnderlying(params.amountOut, params.receiver);
+            // Burning our shares will claim any pending baseAsset
+            // rewards and send them to us.
+            // Get our starting balance
+            uint256 beforeBaseAssetBal = params._baseAsset.balanceOf(address(this));
 
-                // Update the debt info snapshot
-                assetChange =
-                    _recalculateDestInfo(destOutInfo, dvOut, originalShareBal, originalShareBal - params.amountOut);
+            // Withdraw underlying from the destination vault
+            // Shares are sent directly to the flashRebalance receiver
+            // slither-disable-next-line unused-return
+            dvOut.withdrawUnderlying(params.amountOut, params.receiver);
 
-                // Capture any rewards we may have claimed as part of withdrawing
-                assetChange.totalIdleIncrease = params._baseAsset.balanceOf(address(this)) - beforeBaseAssetBal;
-            } else {
-                // If we are shutdown then the only operations we should be performing are those that get
-                // the base asset back to the vault. We shouldn't be sending out more
+            // Update the debt info snapshot
+            assetChange =
+                _recalculateDestInfo(destOutInfo, dvOut, originalShareBal, originalShareBal - params.amountOut);
 
-                if (params._shutdown) {
-                    revert VaultShutdown();
-                }
-                // Working with idle baseAsset which should be in the vault already
-                // Just send it out
-                IERC20(params.tokenOut).safeTransfer(params.receiver, params.amountOut);
-                assetChange.totalIdleDecrease = params.amountOut;
+            // Capture any rewards we may have claimed as part of withdrawing
+            assetChange.totalIdleIncrease = params._baseAsset.balanceOf(address(this)) - beforeBaseAssetBal;
+        } else {
+            // Working with idle baseAsset which should be in the vault already
+            // Just send it out
+            IERC20(params.tokenOut).safeTransfer(params.receiver, params.amountOut);
+            assetChange.totalIdleDecrease = params.amountOut;
 
-                // We weren't dealing with any debt or pricing, just idle, so we can just mark
-                // it as safe
-                assetChange.pricesWereSafe = true;
-            }
+            // We weren't dealing with any debt or pricing, just idle, so we can just mark
+            // it as safe
+            assetChange.pricesWereSafe = true;
         }
     }
 
@@ -313,6 +438,7 @@ library AutopoolDebt {
 
         // Prices are per LP token and whether or not the prices are safe to use
         // If they aren't safe then just continue and we'll get it on the next go around
+
         (uint256 spotPrice, uint256 safePrice, bool isSpotSafe) = destVault.getRangePricesLP();
 
         // Calculate what we're backing out based on the original shares
@@ -347,15 +473,14 @@ library AutopoolDebt {
     }
 
     function totalAssetsTimeChecked(
-        StructuredLinkedList.List storage debtReportQueue,
-        mapping(address => AutopoolDebt.DestinationInfo) storage destinationInfo,
+        AutopoolState storage $,
         IAutopool.TotalAssetPurpose purpose
     ) external returns (uint256) {
-        IDestinationVault destVault = IDestinationVault(debtReportQueue.peekHead());
+        IDestinationVault destVault = IDestinationVault($.debtReportQueue.peekHead());
         uint256 recalculatedTotalAssets = IAutopool(address(this)).totalAssets(purpose);
 
         while (address(destVault) != address(0)) {
-            uint256 lastReport = destinationInfo[address(destVault)].lastReport;
+            uint256 lastReport = $.destinationInfo[address(destVault)].lastReport;
 
             if (lastReport + MAX_DEBT_REPORT_AGE_SECONDS > block.timestamp) {
                 // Its not stale
@@ -377,16 +502,16 @@ library AutopoolDebt {
 
                     // Round down. We are subtracting this value out of the total so some left
                     // behind just increases the value which is what we want
-                    staleDebt = destinationInfo[address(destVault)].cachedMaxDebtValue.mulDiv(
-                        currentShares, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Down
+                    staleDebt = $.destinationInfo[address(destVault)].cachedMaxDebtValue.mulDiv(
+                        currentShares, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Down
                     );
                 } else if (purpose == IAutopool.TotalAssetPurpose.Withdraw) {
                     // We use min value so that we value the shares as worth less
                     extremePrice = destVault.getUnderlyerFloorPrice();
                     // Round up. We are subtracting this value out of the total so if we take a little
                     // extra it just decreases the value which is what we want
-                    staleDebt = destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
-                        currentShares, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+                    staleDebt = $.destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
+                        currentShares, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
                     );
                 } else {
                     revert InvalidTotalAssetPurpose();
@@ -395,6 +520,7 @@ library AutopoolDebt {
                 // Back out our stale debt, add in its new value
                 // Our goal is to find the most conservative value in each situation. If the current
                 // value we have represents that, then use it. Otherwise, use the new one.
+
                 uint256 newValue = (currentShares * extremePrice) / destVault.ONE();
 
                 if (purpose == IAutopool.TotalAssetPurpose.Deposit && staleDebt > newValue) {
@@ -406,21 +532,27 @@ library AutopoolDebt {
                 recalculatedTotalAssets = recalculatedTotalAssets + newValue - staleDebt;
             }
 
-            destVault = IDestinationVault(debtReportQueue.getAdjacent(address(destVault), true));
+            destVault = IDestinationVault($.debtReportQueue.getAdjacent(address(destVault), true));
         }
 
         return recalculatedTotalAssets;
     }
 
-    function _updateDebtReporting(
-        StructuredLinkedList.List storage debtReportQueue,
-        mapping(address => AutopoolDebt.DestinationInfo) storage destinationInfo,
-        uint256 numToProcess
-    ) external returns (IdleDebtUpdates memory result) {
-        numToProcess = Math.min(numToProcess, debtReportQueue.sizeOf());
+    function updateDebtReporting(
+        AutopoolState storage $,
+        uint256 numToProcess,
+        bytes memory hooks
+    ) external returns (AssetChanges memory changes) {
+        IdleDebtUpdates memory result;
+
+        // Persist our change in idle and debt
+        changes.startingIdle = $.assetBreakdown.totalIdle;
+        changes.startingDebt = $.assetBreakdown.totalDebt;
+
+        numToProcess = Math.min(numToProcess, $.debtReportQueue.sizeOf());
 
         for (uint256 i = 0; i < numToProcess; ++i) {
-            IDestinationVault destVault = IDestinationVault(debtReportQueue.popHead());
+            IDestinationVault destVault = IDestinationVault($.debtReportQueue.popHead());
 
             // Get the reward value we've earned. DV rewards are always in terms of base asset
             // We track the gas used purely for off-chain stats purposes
@@ -438,7 +570,7 @@ library AutopoolDebt {
             uint256 currentShareBalance = destVault.balanceOf(address(this));
 
             AutopoolDebt.IdleDebtUpdates memory debtResult = _recalculateDestInfo(
-                destinationInfo[address(destVault)], destVault, currentShareBalance, currentShareBalance
+                $.destinationInfo[address(destVault)], destVault, currentShareBalance, currentShareBalance
             );
 
             result.totalDebtDecrease += debtResult.totalDebtDecrease;
@@ -453,13 +585,29 @@ library AutopoolDebt {
             // and that will only happen if we have shares.
             // A rebalance where we move "in" to the position will refresh the data at that time
             if (currentShareBalance > 0) {
-                debtReportQueue.addToTail(address(destVault));
+                $.debtReportQueue.addToTail(address(destVault));
             }
 
             claimGasUsed -= gasleft();
 
             emit DestinationDebtReporting(address(destVault), debtResult, claimedRewardValue, claimGasUsed);
+
+            AutopoolStrategyHooks.executeHooks(
+                hooks,
+                uint256(HookFunctionIndex.onDestinationDebtReport),
+                abi.encodeCall(IStrategyHook.onDestinationDebtReport, (address(destVault), debtResult))
+            );
         }
+
+        changes.newIdle = changes.startingIdle + result.totalIdleIncrease;
+        changes.newDebt = changes.startingDebt + result.totalDebtIncrease - result.totalDebtDecrease;
+
+        $.assetBreakdown.totalIdle = changes.newIdle;
+        $.assetBreakdown.totalDebt = changes.newDebt;
+        $.assetBreakdown.totalDebtMin =
+            $.assetBreakdown.totalDebtMin + result.totalMinDebtIncrease - result.totalMinDebtDecrease;
+        $.assetBreakdown.totalDebtMax =
+            $.assetBreakdown.totalDebtMax + result.totalMaxDebtIncrease - result.totalMaxDebtDecrease;
     }
 
     function _initiateWithdrawInfo(
@@ -502,13 +650,11 @@ library AutopoolDebt {
     }
 
     function withdraw(
+        AutopoolState storage $,
         uint256 assets,
-        uint256 applicableTotalAssets,
-        IAutopool.AssetBreakdown storage assetBreakdown,
-        StructuredLinkedList.List storage withdrawalQueue,
-        mapping(address => AutopoolDebt.DestinationInfo) storage destinationInfo
+        uint256 applicableTotalAssets
     ) public returns (uint256 actualAssets, uint256 actualShares, uint256 debtBurned) {
-        WithdrawInfo memory info = _initiateWithdrawInfo(assets, assetBreakdown);
+        WithdrawInfo memory info = _initiateWithdrawInfo(assets, $.assetBreakdown);
 
         // Pull the market if there aren't enough funds in idle to cover the entire amount
 
@@ -528,7 +674,7 @@ library AutopoolDebt {
 
         uint256 dvSharesToBurn;
         while (info.assetsToPull > 0) {
-            IDestinationVault destVault = IDestinationVault(withdrawalQueue.peekHead());
+            IDestinationVault destVault = IDestinationVault($.withdrawalQueue.peekHead());
 
             // We've run out of destinations
             if (address(destVault) == address(0)) {
@@ -544,8 +690,8 @@ library AutopoolDebt {
                     // We use the min debt value here because its a withdrawal and we're trying to cover an amount
                     // of assets. Undervaluing the shares may mean we pull more but given that we expect slippage
                     // that is desirable.
-                    dvSharesValue = destinationInfo[address(destVault)].cachedMinDebtValue * dvShares
-                        / destinationInfo[address(destVault)].ownedShares;
+                    dvSharesValue = $.destinationInfo[address(destVault)].cachedMinDebtValue * dvShares
+                        / $.destinationInfo[address(destVault)].ownedShares;
                 } else {
                     // When we've pulled from this destination before, i.e. destinationRound > 0, then we
                     // know a more accurate exchange rate and its worse than we were expecting.
@@ -589,7 +735,7 @@ library AutopoolDebt {
             uint256 debtValueBurned;
             // Get the base asset back from the Destination. Also performs a check that we aren't receiving
             // poor execution on our swaps based on safe prices
-            (info, pulledAssets, debtValueBurned) = _withdrawAssets(info, destinationInfo, destVault, dvSharesToBurn);
+            (info, pulledAssets, debtValueBurned) = _withdrawAssets(info, $.destinationInfo, destVault, dvSharesToBurn);
 
             info.assetsPulled += pulledAssets;
 
@@ -604,7 +750,7 @@ library AutopoolDebt {
             // We need to leave it in the debt report queue though so that our destination specific
             // debt tracking values can be updated
             if (dvShares == dvSharesToBurn) {
-                withdrawalQueue.popAddress(address(destVault));
+                $.withdrawalQueue.popAddress(address(destVault));
                 info.destinationRound = 0;
                 info.lastRoundSlippage = 0;
             } else {
@@ -664,25 +810,25 @@ library AutopoolDebt {
         // We may also have some increase to account for it we over pulled
         // or received better execution than we were anticipating
         // slither-disable-next-line events-maths
-        assetBreakdown.totalIdle = info.currentIdle + info.idleIncrease - info.assetsFromIdle;
+        $.assetBreakdown.totalIdle = info.currentIdle + info.idleIncrease - info.assetsFromIdle;
 
         // Save off our various debt numbers
-        if (info.debtDecrease > assetBreakdown.totalDebt) {
-            assetBreakdown.totalDebt = 0;
+        if (info.debtDecrease > $.assetBreakdown.totalDebt) {
+            $.assetBreakdown.totalDebt = 0;
         } else {
-            assetBreakdown.totalDebt -= info.debtDecrease;
+            $.assetBreakdown.totalDebt -= info.debtDecrease;
         }
 
         if (info.debtMinDecrease > info.totalMinDebt) {
-            assetBreakdown.totalDebtMin = 0;
+            $.assetBreakdown.totalDebtMin = 0;
         } else {
-            assetBreakdown.totalDebtMin -= info.debtMinDecrease;
+            $.assetBreakdown.totalDebtMin -= info.debtMinDecrease;
         }
 
-        if (info.debtMaxDecrease > assetBreakdown.totalDebtMax) {
-            assetBreakdown.totalDebtMax = 0;
+        if (info.debtMaxDecrease > $.assetBreakdown.totalDebtMax) {
+            $.assetBreakdown.totalDebtMax = 0;
         } else {
-            assetBreakdown.totalDebtMax -= info.debtMaxDecrease;
+            $.assetBreakdown.totalDebtMax -= info.debtMaxDecrease;
         }
     }
 
@@ -722,7 +868,8 @@ library AutopoolDebt {
                 uint256 tokenLen = tokensBurned.length;
                 IRootPriceOracle rootPriceOracle = ISystemRegistry(destVault.getSystemRegistry()).rootPriceOracle();
                 for (uint256 i = 0; i < tokenLen;) {
-                    totalValueBurned += amountsBurned[i] * rootPriceOracle.getPriceInEth(tokensBurned[i])
+                    totalValueBurned += amountsBurned[i]
+                        * rootPriceOracle.getPriceInQuote(tokensBurned[i], destVault.baseAsset())
                         / (10 ** IERC20(tokensBurned[i]).decimals());
                     unchecked {
                         ++i;
@@ -800,18 +947,16 @@ library AutopoolDebt {
     /// @notice Perform a removal of assets via the redeem path where the shares are the limiting factor.
     /// This means we break out whenever we reach either `assets` retrieved or debt value equivalent to `assets` burned
     function redeem(
+        AutopoolState storage $,
         uint256 assets,
-        uint256 applicableTotalAssets,
-        IAutopool.AssetBreakdown storage assetBreakdown,
-        StructuredLinkedList.List storage withdrawalQueue,
-        mapping(address => AutopoolDebt.DestinationInfo) storage destinationInfo
+        uint256 applicableTotalAssets
     ) public returns (uint256 actualAssets, uint256 actualShares, uint256 debtBurned) {
-        WithdrawInfo memory info = _initiateWithdrawInfo(assets, assetBreakdown);
+        WithdrawInfo memory info = _initiateWithdrawInfo(assets, $.assetBreakdown);
 
         // If not enough funds in idle, then pull what we need from destinations
         bool exhaustedDestinations = false;
         while (info.assetsToPull > 0) {
-            IDestinationVault destVault = IDestinationVault(withdrawalQueue.peekHead());
+            IDestinationVault destVault = IDestinationVault($.withdrawalQueue.peekHead());
             if (address(destVault) == address(0)) {
                 exhaustedDestinations = true;
                 break;
@@ -822,8 +967,8 @@ library AutopoolDebt {
             {
                 // Valuing these shares higher, rounding up, will result in us burning less of them
                 // in the event we don't burn all of them. Good thing.
-                uint256 dvSharesValue = destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
-                    dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+                uint256 dvSharesValue = $.destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
+                    dvSharesToBurn, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
                 );
 
                 // If the dv shares we own are worth more than we need, limit the shares to burn
@@ -841,13 +986,13 @@ library AutopoolDebt {
             // Get the base asset back from the Destination. Also performs a check that we aren't receiving
             // poor execution on our swaps based on safe prices
             // slither-disable-next-line unused-return
-            (info, pulledAssets, debtValueBurned) = _withdrawAssets(info, destinationInfo, destVault, dvSharesToBurn);
+            (info, pulledAssets, debtValueBurned) = _withdrawAssets(info, $.destinationInfo, destVault, dvSharesToBurn);
 
             // If we've exhausted all shares we can remove the destination from the withdrawal queue
             // We need to leave it in the debt report queue though so that our destination specific
             // debt tracking values can be updated
             if (dvShares == dvSharesToBurn) {
-                withdrawalQueue.popAddress(address(destVault));
+                $.withdrawalQueue.popAddress(address(destVault));
             }
 
             info.assetsPulled += pulledAssets;
@@ -932,47 +1077,129 @@ library AutopoolDebt {
         // We may also have some increase to account for it we over pulled
         // or received better execution than we were anticipating
         // slither-disable-next-line events-maths
-        assetBreakdown.totalIdle = info.currentIdle + info.idleIncrease - info.assetsFromIdle;
+        $.assetBreakdown.totalIdle = info.currentIdle + info.idleIncrease - info.assetsFromIdle;
 
         // Save off our various debt numbers
-        if (info.debtDecrease > assetBreakdown.totalDebt) {
-            assetBreakdown.totalDebt = 0;
+        if (info.debtDecrease > $.assetBreakdown.totalDebt) {
+            $.assetBreakdown.totalDebt = 0;
         } else {
-            assetBreakdown.totalDebt -= info.debtDecrease;
+            $.assetBreakdown.totalDebt -= info.debtDecrease;
         }
 
         if (info.debtMinDecrease > info.totalMinDebt) {
-            assetBreakdown.totalDebtMin = 0;
+            $.assetBreakdown.totalDebtMin = 0;
         } else {
-            assetBreakdown.totalDebtMin -= info.debtMinDecrease;
+            $.assetBreakdown.totalDebtMin -= info.debtMinDecrease;
         }
 
-        if (info.debtMaxDecrease > assetBreakdown.totalDebtMax) {
-            assetBreakdown.totalDebtMax = 0;
+        if (info.debtMaxDecrease > $.assetBreakdown.totalDebtMax) {
+            $.assetBreakdown.totalDebtMax = 0;
         } else {
-            assetBreakdown.totalDebtMax -= info.debtMaxDecrease;
+            $.assetBreakdown.totalDebtMax -= info.debtMaxDecrease;
         }
+    }
+
+    /// @notice Perform a proportional redemption from all destination vaults based on their debt share
+    function redeemProrata(
+        AutopoolState storage $,
+        uint256 shares
+    ) public returns (uint256 actualAssets, uint256 actualShares, uint256 debtBurned) {
+        uint256 totalSupply = $.token.totalSupply;
+        WithdrawInfo memory info = WithdrawInfo({
+            currentIdle: $.assetBreakdown.totalIdle,
+            assetsFromIdle: Math.mulDiv($.assetBreakdown.totalIdle, shares, totalSupply, Math.Rounding.Down),
+            totalAssetsToPull: 0,
+            assetsToPull: 0,
+            assetsPulled: 0,
+            idleIncrease: 0,
+            debtDecrease: 0,
+            debtMinDecrease: 0,
+            debtMaxDecrease: 0,
+            totalMinDebt: $.assetBreakdown.totalDebtMin,
+            destinationRound: 0,
+            lastRoundSlippage: 0,
+            expectedAssets: 0,
+            remainingRecoup: 0
+        });
+
+        address currentDest = $.withdrawalQueue.peekHead();
+
+        while (currentDest != address(0)) {
+            uint256 dvShares = IDestinationVault(currentDest).balanceOf(address(this));
+            uint256 dvSharesToBurn = Math.mulDiv(shares, dvShares, totalSupply, Math.Rounding.Down);
+
+            if (dvSharesToBurn == 0) {
+                currentDest = $.withdrawalQueue.getAdjacent(currentDest, true);
+                continue;
+            }
+
+            (uint256 pulledAssets,,) = IDestinationVault(currentDest).withdrawBaseAsset(dvSharesToBurn, address(this));
+            info.assetsPulled += pulledAssets;
+
+            info.debtMinDecrease += $.destinationInfo[address(currentDest)].cachedMinDebtValue.mulDiv(
+                dvSharesToBurn, $.destinationInfo[address(currentDest)].ownedShares, Math.Rounding.Up
+            );
+            info.debtDecrease += $.destinationInfo[address(currentDest)].cachedDebtValue.mulDiv(
+                dvSharesToBurn, $.destinationInfo[address(currentDest)].ownedShares, Math.Rounding.Up
+            );
+            info.debtMaxDecrease += $.destinationInfo[address(currentDest)].cachedMaxDebtValue.mulDiv(
+                dvSharesToBurn, $.destinationInfo[address(currentDest)].ownedShares, Math.Rounding.Up
+            );
+
+            address popDestination = currentDest;
+
+            currentDest = $.withdrawalQueue.getAdjacent(currentDest, true);
+
+            if (dvShares == dvSharesToBurn) {
+                $.withdrawalQueue.popAddress(address(popDestination));
+            }
+        }
+
+        debtBurned = info.assetsFromIdle + info.debtMinDecrease;
+        actualAssets = info.assetsFromIdle + info.assetsPulled;
+
+        // Update assetBreakdown
+        $.assetBreakdown.totalIdle = info.currentIdle - info.assetsFromIdle;
+
+        // Update debt numbers
+        if (info.debtDecrease > $.assetBreakdown.totalDebt) {
+            $.assetBreakdown.totalDebt = 0;
+        } else {
+            $.assetBreakdown.totalDebt -= info.debtDecrease;
+        }
+
+        if (info.debtMinDecrease > info.totalMinDebt) {
+            $.assetBreakdown.totalDebtMin = 0;
+        } else {
+            $.assetBreakdown.totalDebtMin -= info.debtMinDecrease;
+        }
+
+        if (info.debtMaxDecrease > $.assetBreakdown.totalDebtMax) {
+            $.assetBreakdown.totalDebtMax = 0;
+        } else {
+            $.assetBreakdown.totalDebtMax -= info.debtMaxDecrease;
+        }
+
+        return (actualAssets, shares, debtBurned);
     }
 
     /**
      * @notice Function to complete a withdrawal or redeem.  This runs after shares to be burned and assets to be
      *    transferred are calculated.
+     * @param $ Storage related to the calling Autopool
      * @param assets Amount of assets to be transferred to receiver.
      * @param shares Amount of shares to be burned from owner.
      * @param owner Owner of shares, user to burn shares from.
      * @param receiver The receiver of the baseAsset.
      * @param baseAsset Base asset of the Autopool.
-     * @param assetBreakdown Asset breakdown for the Autopool.
-     * @param tokenData Token data for the Autopool.
      */
     function completeWithdrawal(
+        AutopoolState storage $,
         uint256 assets,
         uint256 shares,
         address owner,
         address receiver,
-        IERC20 baseAsset,
-        IAutopool.AssetBreakdown storage assetBreakdown,
-        AutopoolToken.TokenData storage tokenData
+        IERC20 baseAsset
     ) external {
         if (msg.sender != owner) {
             uint256 allowed = IAutopool(address(this)).allowance(owner, msg.sender);
@@ -980,18 +1207,18 @@ library AutopoolDebt {
                 if (shares > allowed) revert AmountExceedsAllowance(shares, allowed);
 
                 unchecked {
-                    tokenData.approve(owner, msg.sender, allowed - shares);
+                    $.token.approve(owner, msg.sender, allowed - shares);
                 }
             }
         }
 
-        tokenData.burn(owner, shares);
+        $.token.burn(owner, shares);
 
         uint256 ts = IAutopool(address(this)).totalSupply();
 
         emit Withdraw(msg.sender, receiver, owner, assets, shares);
 
-        emit Nav(assetBreakdown.totalIdle, assetBreakdown.totalDebt, ts);
+        emit Nav($.assetBreakdown.totalIdle, $.assetBreakdown.totalDebt, ts);
 
         baseAsset.safeTransfer(receiver, assets);
     }
@@ -999,24 +1226,20 @@ library AutopoolDebt {
     /**
      * @notice A helper function to get estimates of what would happen on a withdraw or redeem.
      * @dev Reverts all changing state.
+     * @param $ Storage related to the calling Autopool.
      * @param previewWithdraw Bool denoting whether to preview a redeem or withdrawal.
      * @param assets Assets to be withdrawn or redeemed.
      * @param applicableTotalAssets Operation dependent assets in the Autopool.
      * @param functionCallEncoded Abi encoded function signature for recursive call.
-     * @param assetBreakdown Breakdown of vault assets from Autopool storage.
-     * @param withdrawalQueue Destination vault withdrawal queue from Autopool storage.
-     * @param destinationInfo Mapping of information for destinations.
      * @return assetsAmount Preview of amount of assets to send to receiver.
      * @return sharesAmount Preview of amount of assets to burn from owner.
      */
     function preview(
+        AutopoolState storage $,
         bool previewWithdraw,
         uint256 assets,
         uint256 applicableTotalAssets,
-        bytes memory functionCallEncoded,
-        IAutopool.AssetBreakdown storage assetBreakdown,
-        StructuredLinkedList.List storage withdrawalQueue,
-        mapping(address => AutopoolDebt.DestinationInfo) storage destinationInfo
+        bytes memory functionCallEncoded
     ) external returns (uint256 assetsAmount, uint256 sharesAmount) {
         if (msg.sender != address(this)) {
             // Perform a recursive call the function in `funcCallEncoded`.  This will result in a call back to
@@ -1062,11 +1285,9 @@ library AutopoolDebt {
             uint256 previewAssets;
             uint256 previewShares;
             if (previewWithdraw) {
-                (previewAssets, previewShares,) =
-                    withdraw(assets, applicableTotalAssets, assetBreakdown, withdrawalQueue, destinationInfo);
+                (previewAssets, previewShares,) = withdraw($, assets, applicableTotalAssets);
             } else {
-                (previewAssets, previewShares,) =
-                    redeem(assets, applicableTotalAssets, assetBreakdown, withdrawalQueue, destinationInfo);
+                (previewAssets, previewShares,) = redeem($, assets, applicableTotalAssets);
             }
 
             // Revert with the computed amount as an error.

@@ -2,10 +2,42 @@
   "component": "AugustusRFQ",
   "main_contract": "AugustusRFQ",
   "source_file_count": 13,
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe92b586627cca7a83dc919cc7127196d70f55a06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8dcdfe88ef0351f27437284d0710cd65b20288bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf3cd476c3c4d3ac5ca2724767f269070ca09a043",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa003dfba51c9e1e56c67ae445b852bded7ac5eed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

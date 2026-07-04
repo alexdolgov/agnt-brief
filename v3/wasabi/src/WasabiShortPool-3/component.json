@@ -1,20 +1,23 @@
 {
   "component": "WasabiShortPool-3",
   "main_contract": "WasabiShortPool",
-  "source_file_count": 43,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://wasabi-public.s3.amazonaws.com/audits/v1/Wasabi+Perps+-+Zellic+Audit+Report.pdf",
-    "https://wasabi-public.s3.amazonaws.com/audits/v1/WasabiPerps+Security+Assessment-1+(2).pdf",
-    "https://wasabi-public.s3.us-east-1.amazonaws.com/audits/v1/Wasabi+Perps+-+Zellic+Audit+Report+2.pdf",
-    "https://wasabi-public.s3.us-east-1.amazonaws.com/audits/v1/Wasabi_Perps_EVM_Audit_Sherlock.pdf"
-  ],
+  "source_file_count": 46,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1536f738d1dd76a90d3667dca58e85867ea3662b",
+      "address": "0x96ce21931e8a6abb2977ef17541eee80fb137f78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5a09a0827c3d91e8530deee3b73edae6b33ae95",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

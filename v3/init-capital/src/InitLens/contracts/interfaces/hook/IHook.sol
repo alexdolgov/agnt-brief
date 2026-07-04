@@ -12,12 +12,4 @@ interface IHook {
     /// @param _posId position id
     /// @return initPosId init position id (nft id)
     function initPosIds(address _user, uint _posId) external view returns (uint initPosId);
-
-    /// @dev get init core address
-    /// @return core core address
-    function CORE() external view returns (address core);
-
-    /// @dev get init posManager address
-    /// @return posManager posManager address
-    function POS_MANAGER() external view returns (address posManager);
 }

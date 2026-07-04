@@ -1,6 +1,6 @@
 # eventum-bridge — deployments
 
-109 verified deployment(s) across 47 component(s).
+110 verified deployment(s) across 49 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -25,7 +25,7 @@
 | arbitrum | `0x2f8577f68d8306aeb48f9015ac61744bbadfd713` | SetFiveMillionProposalThresholdAction | impl | inactive | no |
 | arbitrum | `0x2fa063182c6f0f953c99abf46add4d2c9f6ff61a` | ArbUXRNFT | impl | inactive | no |
 | arbitrum | `0x372a183192d9f9e978a1c826bc4d3568a2b7b3f8` | TransparentUpgradeableProxy | proxy | live | no |
-| arbitrum | `0x38f03b4e740c0b73d857ccd0003362ee4ca036e8` | ProxyAdmin | impl | live | no |
+| arbitrum | `0x38f03b4e740c0b73d857ccd0003362ee4ca036e8` | ProxyAdmin-5 | impl | live | no |
 | arbitrum | `0x3e84af3743cc4e7f516570b341ced56530d901e8` | L2AddressRegistry | impl | inactive | no |
 | arbitrum | `0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9` | BridgeMiddlewareV2 | impl | live | no |
 | arbitrum | `0x4a9196b06f339ad9f3ee752c987b401f2e1e2718` | MultiSigWallet | impl | inactive | no |
@@ -36,7 +36,7 @@
 | arbitrum | `0x553ec478a66be27ba25a6bc5db20aec2ed6a1b4a` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x56c4e9eb6c63acdd19aec2b1a00e4f0d7abda9d3` | L2AddressRegistry | impl | inactive | no |
 | arbitrum | `0x57e915c05107ff8d9d883052f7c66555c57aa79b` | SetFiveMillionProposalThresholdAction | impl | inactive | no |
-| arbitrum | `0x5db54b55ffd0887bf1634a865db1e7db7a3dd797` | ProxyAdmin-4 | impl | live | no |
+| arbitrum | `0x5db54b55ffd0887bf1634a865db1e7db7a3dd797` | ProxyAdmin-6 | impl | live | no |
 | arbitrum | `0x5fbf447c301e3029b3c3f2a7743a80ae56521b82` | BridgeMiddlewareV2 | impl | live | no |
 | arbitrum | `0x6274106eedd4848371d2c09e0352d67b795ed516` | AIP1Point2Action | impl | inactive | no |
 | arbitrum | `0x665842c0ea5e72d985c61faf462cef13a2f8a2d0` | ERC1967Proxy-2 | proxy | live | no |
@@ -108,13 +108,9 @@
 | ethereum | `0x73699b0c5542472b927dd779f2a1085ac9bd2704` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x7ad6d5c9435aa7781a817913b3afec2645ef78be` | PythAggregatorV3 | impl | live | no |
 | ethereum | `0x90ec5b8a21349751d0c2654b5f1fbedfd6342d8c` | OpenfortUpgradeableProxy | proxy | unknown | no |
+| ethereum | `0x92650ddc467ed628868bdba23cf81eafaab60175` | ProxyAdmin-4 | impl | live | no |
 | ethereum | `0xa3db7558260423a539cbdc8aef0de9bc15b93b47` | DVFDepositContract | impl | inactive | no |
 | ethereum | `0xa78951b6badc9f4740f6f456e9144705d5c5e4b2` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xbca3039a18c0d2f2f84ba8a028c67290bc045afa` | BeaconProxy | proxy | live | no |
 | ethereum | `0xdd24f84d36bf92c65f92307595335bdfab5bbd21` | PythUpgradable | impl | inactive | no |
 | ethereum | `0xec909352e059930e74dbefd471d16b9a920cf9b5` | TransparentUpgradeableProxy-4 | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x92650ddc467ed628868bdba23cf81eafaab60175`

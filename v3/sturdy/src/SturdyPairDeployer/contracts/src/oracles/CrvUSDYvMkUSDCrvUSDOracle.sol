@@ -77,7 +77,7 @@ contract CrvUSDYvMkUSDCrvUSDOracle {
         if (_answer <= 0 || (block.timestamp - _updatedAt > MAX_ORACLE_DELAY)) {
             revert CHAINLINK_BAD_PRICE();
         }
-        crvUSDPrice = crvUSDPrice * 1e18 / uint256(_answer);    // crvUSD/ETH
+        crvUSDPrice = crvUSDPrice * 1e26 / uint256(_answer);    // crvUSD/ETH
 
         return Math.min(rate, crvUSDPrice);
     }
@@ -87,7 +87,7 @@ contract CrvUSDYvMkUSDCrvUSDOracle {
      */
     function _getYvMkUSDCrvUSDPrice(uint256 _crvUSDPrice) internal view returns (uint256) {
         // Get MKUSD price from curve pool
-        uint256 mkUSDRatio = 1e36 / ICurvePool(CURVE_CRVUSD_MKUSD_POOL).price_oracle();
+        uint256 mkUSDRatio = ICurvePool(CURVE_CRVUSD_MKUSD_POOL).price_oracle();
         uint256 minStable = Math.min(mkUSDRatio, 1e18) * _crvUSDPrice / 1e18;
         uint256 curveLPTokenPrice = (ICurvePool(CURVE_CRVUSD_MKUSD_POOL).get_virtual_price() * minStable) / 1e18;
 

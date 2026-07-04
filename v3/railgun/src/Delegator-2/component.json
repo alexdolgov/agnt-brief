@@ -2,7 +2,7 @@
   "component": "Delegator-2",
   "main_contract": "Delegator",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://assets.railgun.org/docs/audits/2021-11-02%20Hacken.pdf",
@@ -14,6 +14,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xb6d513f6222ee92fff975e901bd792e2513fb53b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5f67441090fbdf57f1d9f28dd65a29b0bb3e83a7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

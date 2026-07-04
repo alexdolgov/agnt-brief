@@ -1,0 +1,23 @@
+{
+  "component": "RibbonThetaVault-2",
+  "main_contract": "RibbonThetaVault",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ChainSafe/audits/blob/main/Ribbon%20Finance/RibbonV2-July-2021.pdf",
+    "https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf",
+    "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf",
+    "https://www.openzeppelin.com/news/ribbon-finance-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7f00bb1c0a2b7db66f9a93c8356fd1af93ae9c83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

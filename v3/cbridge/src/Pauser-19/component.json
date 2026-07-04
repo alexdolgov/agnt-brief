@@ -1,0 +1,22 @@
+{
+  "component": "Pauser-19",
+  "main_contract": "Pauser",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/CertiK_sgn_cbridge.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_sgn_cbridge.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_sgn_cbridge.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x9b36f165bab9ebe611d491180418d8de4b8f3a1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

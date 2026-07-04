@@ -45,30 +45,21 @@ interface IStrategyHook {
     /// @dev No LP/Idle changes have occurred yet
     /// @param params Rebalance parameters
     /// @param solverCaller Solver who initiated the rebalance
-    function onRebalanceStart(
-        ProcessRebalanceParams calldata params,
-        address solverCaller
-    ) external;
+    function onRebalanceStart(ProcessRebalanceParams calldata params, address solverCaller) external;
 
     /// Flag 2
     /// @notice Fires when LP has been removed from a DestinationVault but before solver has control
     /// @param params Rebalance parameters
     /// @param solverCaller Solver who initiated the rebalance
     /// @dev When this is an idle-out, the state of assets between here and Start() is the same
-    function onRebalanceOutAssetsReady(
-        ProcessRebalanceParams calldata params,
-        address solverCaller
-    ) external;
+    function onRebalanceOutAssetsReady(ProcessRebalanceParams calldata params, address solverCaller) external;
 
     /// Flag 4
     /// @notice Fires when LP/Idle has been returned from the Solver
     /// @param params Rebalance parameters
     /// @param solverCaller Solver who initiated the rebalance
     /// @dev Solver has performed all market operations at this point
-    function onRebalanceInAssetsReturned(
-        ProcessRebalanceParams calldata params,
-        address solverCaller
-    ) external;
+    function onRebalanceInAssetsReturned(ProcessRebalanceParams calldata params, address solverCaller) external;
 
     /// Flag 8
     /// @notice Fires after assets have been deposited into DestinationVault
@@ -94,10 +85,7 @@ interface IStrategyHook {
     /// @notice Fires at the end of the rebalance
     /// @param params Rebalance parameters
     /// @param solverCaller Solver who initiated the rebalance
-    function onRebalanceComplete(
-        ProcessRebalanceParams calldata params,
-        address solverCaller
-    ) external;
+    function onRebalanceComplete(ProcessRebalanceParams calldata params, address solverCaller) external;
 
     /// =====================================================
     /// Debt Reporting
@@ -109,10 +97,7 @@ interface IStrategyHook {
     /// @dev Autopool has possession of auto-compounded rewards
     /// @param destination Target DestinationVault address
     /// @param debtResult Change in values due to debt reporting
-    function onDestinationDebtReport(
-        address destination,
-        AutopoolDebt.IdleDebtUpdates memory debtResult
-    ) external;
+    function onDestinationDebtReport(address destination, AutopoolDebt.IdleDebtUpdates memory debtResult) external;
 
     /// =====================================================
     /// Nav Updates

@@ -2,7 +2,7 @@
   "component": "Autopool4626",
   "main_contract": "Autopool4626",
   "source_file_count": 62,
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,38 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x0fe85151d909f5571ac698ae756c5ff924a81159",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6d9be4f758bfb67403e4138321cf5a06c4a2213f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x4480bc3de6c1c23882f341fc9bd428b609a9109b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc80e125126576dba8b822b50a8cd25952e159416",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x299c6408f29512448e8f0118e41ea04cce642108",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -6,8 +6,8 @@ import "./interfaces/IBorrowable.sol";
 import "./interfaces/ICDeployer.sol";
 import "./interfaces/ICollateral.sol";
 import "./interfaces/IERC20.sol";
-import "./interfaces/IBaseV1Pair.sol";
-import "./interfaces/ITarotSolidlyPriceOracleV2.sol";
+import "./interfaces/IUniswapV2Pair.sol";
+import "./interfaces/ITarotPriceOracle.sol";
 
 contract Factory is IFactory {
     address public admin;
@@ -32,7 +32,7 @@ contract Factory is IFactory {
 
     IBDeployer public bDeployer;
     ICDeployer public cDeployer;
-    ITarotSolidlyPriceOracleV2 public tarotPriceOracle;
+    ITarotPriceOracle public tarotPriceOracle;
 
     event LendingPoolInitialized(
         address indexed uniswapV2Pair,
@@ -60,7 +60,7 @@ contract Factory is IFactory {
         address _reservesAdmin,
         IBDeployer _bDeployer,
         ICDeployer _cDeployer,
-        ITarotSolidlyPriceOracleV2 _tarotPriceOracle
+        ITarotPriceOracle _tarotPriceOracle
     ) public {
         admin = _admin;
         reservesAdmin = _reservesAdmin;
@@ -76,8 +76,8 @@ contract Factory is IFactory {
         view
         returns (address token0, address token1)
     {
-        token0 = IBaseV1Pair(uniswapV2Pair).token0();
-        token1 = IBaseV1Pair(uniswapV2Pair).token1();
+        token0 = IUniswapV2Pair(uniswapV2Pair).token0();
+        token1 = IUniswapV2Pair(uniswapV2Pair).token1();
     }
 
     function _createLendingPool(address uniswapV2Pair) private {
@@ -138,7 +138,6 @@ contract Factory is IFactory {
     }
 
     function initializeLendingPool(address uniswapV2Pair) external {
-        require(IBaseV1Pair(uniswapV2Pair).stable(), "Tarot: STABLE");
         (address token0, address token1) = _getTokens(uniswapV2Pair);
         LendingPool memory lPool = getLendingPool[uniswapV2Pair];
         require(!lPool.initialized, "Tarot: ALREADY_INITIALIZED");
@@ -156,7 +155,9 @@ contract Factory is IFactory {
             "Tarot: BORROWABLE1_NOT_CREATED"
         );
 
-        tarotPriceOracle.getResult(uniswapV2Pair);
+        (, , , , , bool oracleInitialized) =
+            tarotPriceOracle.getPair(uniswapV2Pair);
+        if (!oracleInitialized) tarotPriceOracle.initialize(uniswapV2Pair);
 
         ICollateral(lPool.collateral)._initialize(
             "Tarot Collateral",

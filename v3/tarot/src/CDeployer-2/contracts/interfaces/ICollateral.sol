@@ -95,19 +95,15 @@ interface ICollateral {
 
     function tarotPriceOracle() external view returns (address);
 
-    function safetyMargin() external view returns (uint256);
-
-    function mTolerance() external view returns (uint256);
+    function safetyMarginSqrt() external view returns (uint256);
 
     function liquidationIncentive() external view returns (uint256);
-
+ 
     function liquidationFee() external view returns (uint256);
 
     function liquidationPenalty() external view returns (uint256);
 
     function getPrices() external returns (uint256 price0, uint256 price1);
-
-    function getReserves() external returns (uint112 reserve0, uint112 reserve1);
 
     function tokensUnlocked(address from, uint256 value)
         external
@@ -146,15 +142,10 @@ interface ICollateral {
     event NewSafetyMargin(uint256 newSafetyMarginSqrt);
     event NewLiquidationIncentive(uint256 newLiquidationIncentive);
     event NewLiquidationFee(uint256 newLiquidationFee);
-    event NewMTolerance(uint256 mTolerance);
 
-    function M_TOLERANCE_MIN() external pure returns (uint256);
-    
-    function M_TOLERANCE_MAX() external pure returns (uint256);
+    function SAFETY_MARGIN_SQRT_MIN() external pure returns (uint256);
 
-    function SAFETY_MARGIN_MIN() external pure returns (uint256);
-
-    function SAFETY_MARGIN_MAX() external pure returns (uint256);
+    function SAFETY_MARGIN_SQRT_MAX() external pure returns (uint256);
 
     function LIQUIDATION_INCENTIVE_MIN() external pure returns (uint256);
 
@@ -170,13 +161,9 @@ interface ICollateral {
         address _borrowable1
     ) external;
 
-    function _setSafetyMargin(uint256 newSafetyMargin) external;
+    function _setSafetyMarginSqrt(uint256 newSafetyMarginSqrt) external;
 
     function _setLiquidationIncentive(uint256 newLiquidationIncentive) external;
 
     function _setLiquidationFee(uint256 newLiquidationFee) external;
-    
-    function _setMTolerance(uint256 newMTolerance) external;
-
-    function isUnderlyingVaultToken() external view returns (bool);
 }

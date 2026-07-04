@@ -1,0 +1,18 @@
+{
+  "component": "EulerV2BorrowFuse-3",
+  "main_contract": "EulerV2BorrowFuse",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x906496f0d4c733275f892b1a6fc92ed56639b379",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

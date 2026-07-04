@@ -1,0 +1,18 @@
+{
+  "component": "CollateralConfigurationModule-3",
+  "main_contract": "CollateralConfigurationModule",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfc10ce0c846b990bf02864eb61e6e2d050643a41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

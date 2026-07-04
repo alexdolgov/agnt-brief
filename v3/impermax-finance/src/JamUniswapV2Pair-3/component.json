@@ -1,0 +1,18 @@
+{
+  "component": "JamUniswapV2Pair-3",
+  "main_contract": "JamUniswapV2Pair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7e5e74b52b9ada1042594cfd8abbdee506cc6c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

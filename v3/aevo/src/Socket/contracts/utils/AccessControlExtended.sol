@@ -16,11 +16,6 @@ contract AccessControlExtended is AccessControl {
     constructor(address owner_) AccessControl(owner_) {}
 
     /**
-     * @dev thrown when array lengths are not equal
-     */
-    error UnequalArrayLengths();
-
-    /**
      * @dev Checks if an address has the role.
      * @param roleName_ The name of the role.
      * @param chainSlug_ The chain slug associated with the role.
@@ -60,10 +55,7 @@ contract AccessControlExtended is AccessControl {
         uint32[] calldata slugs_,
         address[] calldata grantees_
     ) external virtual onlyOwner {
-        if (
-            roleNames_.length != grantees_.length ||
-            roleNames_.length != slugs_.length
-        ) revert UnequalArrayLengths();
+        require(roleNames_.length == grantees_.length);
         for (uint256 index = 0; index < roleNames_.length; index++) {
             if (slugs_[index] > 0)
                 _grantRoleWithSlug(
@@ -86,10 +78,7 @@ contract AccessControlExtended is AccessControl {
         uint32[] calldata slugs_,
         address[] calldata grantees_
     ) external virtual onlyOwner {
-        if (
-            roleNames_.length != grantees_.length ||
-            roleNames_.length != slugs_.length
-        ) revert UnequalArrayLengths();
+        require(roleNames_.length == grantees_.length);
         for (uint256 index = 0; index < roleNames_.length; index++) {
             if (slugs_[index] > 0)
                 _revokeRoleWithSlug(

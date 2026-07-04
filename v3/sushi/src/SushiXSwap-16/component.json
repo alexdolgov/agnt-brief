@@ -1,0 +1,18 @@
+{
+  "component": "SushiXSwap-16",
+  "main_contract": "SushiXSwap",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x843d0aad40295f2198ef528ad747cdf6ab9000e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

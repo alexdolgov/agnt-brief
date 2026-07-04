@@ -1,0 +1,18 @@
+{
+  "component": "LPoolInterface-3",
+  "main_contract": "LPoolInterface",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x201adc2e33ffdfed03286f061aa92c7fb2c50c8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # zoo-finance — deployments
 
-108 verified deployment(s) across 43 component(s).
+110 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -23,12 +23,13 @@
 | arbitrum | `0xf16fff83de694bceaeec224eea64a78af7a2a130` | CheckerClaimAndWithdraw | proxy | live | no |
 | arbitrum | `0xf74b2eab9763e412849f7923317d31be49118b3b` | ERC1967Proxy-2 | proxy | live | no |
 | arbitrum | `0xfa4dfdedf41e3b41529cc161b542d84c4a3f31da` | CheckerNFTClaim | impl | live | no |
+| base | `0x24ef95c39dfaa8f9a5adf58edf76c5b22c34ef46` | VestingToken | impl | live | no |
 | base | `0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24` | UniswapV2Router02 | impl | live | no |
 | base | `0xff8104251e7761163fac3211ef5583fb3f8583d6` | AgentTokenV2 | impl | live | no |
 | bsc | `0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0x101d82428437127bf1608f699cd651e6abf9766e` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0x170265370499b8f388883004fbad9ebde34f3781` | NFTDescriptorTest | impl | inactive | no |
-| bsc | `0x24ef95c39dfaa8f9a5adf58edf76c5b22c34ef46` | VestingToken | impl | live | no |
+| bsc | `0x24ef95c39dfaa8f9a5adf58edf76c5b22c34ef46` | VestingToken-2 | impl | live | no |
 | bsc | `0x32681814957e0c13117ddc0c2aba232b5c9e760f` | V3Migrator | impl | live | no |
 | bsc | `0x589b4931d426146864f6e3df652316a6d643ed8f` | ProxyAdmin | impl | live | no |
 | bsc | `0x70421847195a77586ca46192e6e0337d610b0d7c` | TransparentUpgradeableProxy | impl | live | no |
@@ -51,6 +52,7 @@
 | chain-1329 | `0x34975246b5a3c8e9e1c19bf9b6a6088b741d4e2d` | DragonswapStakerFactory | impl | live | no |
 | chain-1329 | `0x69d40c24552a9e6884345e5c9966363178c708df` | DragonswapStakerBoosted | impl | inactive | no |
 | chain-1329 | `0x71f6b49ae1558357bbb5a6074f1143c46cbca03d` | DragonswapFactory | impl | live | no |
+| chain-1329 | `0x92838ccdb9dceabc8e77415d73ecb06f8050cc5f` | VestingToken | impl | live | no |
 | chain-1329 | `0xa4cf2f53d1195addde9e4d3aca54f556895712f2` | DragonswapRouter | impl | live | no |
 | chain-1329 | `0xcfea00728f0ae7b791ce05c2f8e194f3ab9e0a62` | DragonswapStaker | impl | inactive | no |
 | chain-1329 | `0xde04d386543176967c06763adcf6760b18122139` | DragonswapStakerBoosted | impl | inactive | no |
@@ -112,9 +114,3 @@
 | chain-80094 | `0xf791de7f4ad91ffc67f9147ee919c93215b2155a` | RedeemPoolFactory | impl | inactive | no |
 | chain-80094 | `0xf8dfaa0967c812a43d02059f2b14786dceb84e8b` | ProtocolSettings | impl | inactive | no |
 | chain-80094 | `0xfbfaf4eb4ed2e241510a1b7917f58401986492ad` | VaultCalculator-2 | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x24ef95c39dfaa8f9a5adf58edf76c5b22c34ef46`
-- chain-1329 `0x92838ccdb9dceabc8e77415d73ecb06f8050cc5f`

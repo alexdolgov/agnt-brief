@@ -9,15 +9,15 @@
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x6709660a6237723f278188bcae9e21b21eff8aab",
+      "address": "0x5521b00e7952948babc84f052b5d017792784429",
       "is_proxy": true,
-      "implementation_address": "0x89a205e66b02e315fe7c8d56deeed16f9c6cd002",
+      "implementation_address": "0xd826d8ba0e6d181fe1d9ffd7d432145454031299",
       "liveness": "live"
     },
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x89a205e66b02e315fe7c8d56deeed16f9c6cd002",
+      "address": "0xd826d8ba0e6d181fe1d9ffd7d432145454031299",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 
 import {Deployments} from "../../../global/Deployments.sol";
@@ -7,6 +7,8 @@ import {SafeUint256} from "../../../math/SafeUint256.sol";
 
 library GenericToken {
     using SafeUint256 for uint256;
+
+    event LowLevelCallFailed(address indexed target, uint256 msgValue, bytes callData, string revertMessage);
 
     function transferNativeTokenOut(
         address account,
@@ -65,7 +67,7 @@ library GenericToken {
         address target,
         uint256 msgValue,
         bytes memory callData
-    ) internal {
+    ) internal  {
         (bool status, bytes memory returnData) = target.call{value: msgValue}(callData);
         require(status, checkRevertMessage(returnData));
     }

@@ -2,10 +2,18 @@
   "component": "RewarderAutoLoader",
   "main_contract": "RewarderAutoLoader",
   "source_file_count": 65,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa117337d7b8797db2b31d4ee393c15f50630bf38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

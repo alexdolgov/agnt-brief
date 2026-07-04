@@ -70,20 +70,6 @@ interface IAutopool is IERC4626, IERC20Permit {
         Withdraw
     }
 
-    // @notice Instruction type for reordering the withdrawal queue
-    enum ReorderType {
-        None,
-        InsertBefore,
-        InsertAfter
-    }
-
-    /// @notice Instruction for reordering the withdrawal queue
-    struct ReorderInstruction {
-        ReorderType instructionType;
-        address anchor;
-        address movingNode;
-    }
-
     /* ******************************** */
     /*      Events                      */
     /* ******************************** */
@@ -99,8 +85,6 @@ interface IAutopool is IERC4626, IERC20Permit {
     event Shutdown(IAutopool.VaultShutdownStatus reason);
     event RewarderSet(address newRewarder, address oldRewarder);
     event SymbolAndDescSet(string symbol, string desc);
-    event AllowedDirectDestinationAdded(address destination, bool deposit);
-    event AllowedDirectDestinationRemoved(address destination, bool deposit);
 
     // AutopoolDebt
 
@@ -120,7 +104,6 @@ interface IAutopool is IERC4626, IERC20Permit {
     event WithdrawalQueueSet(address[] destinations);
     event AddedToRemovalQueue(address destination);
     event RemovedFromRemovalQueue(address destination);
-    event WithdrawalQueueReordered(ReorderInstruction[] instructions);
 
     // AutopoolFees
 
@@ -170,7 +153,6 @@ interface IAutopool is IERC4626, IERC20Permit {
     // AutopoolDestination
 
     error BaseAssetMismatch(address destinationVault);
-    error NodesCantMatch(address node);
 
     // AutopoolDebt
 
@@ -189,7 +171,6 @@ interface IAutopool is IERC4626, IERC20Permit {
     error OnlyRebalanceToIdleAvailable();
     error UnregisteredDestination(address dest);
     error RebalanceDestinationsMatch();
-    error StaleDebtReporting();
 
     // AutopoolFees
 
@@ -253,23 +234,6 @@ interface IAutopool is IERC4626, IERC20Permit {
     /// @dev The nonce used for an `account` is not the expected current nonce.
     error InvalidAccountNonce(address account, uint256 currentNonce);
 
-    /// @notice Deposit an amount of an underlying token directly to the destination
-    /// @param destination `DestinationVault` to deposit the underlying token to
-    /// @param underlyerAmount Amount of the `DestinationVault.underlying()` to deposit
-    /// @param receiver Address to receive the minted Autopool shares
-    /// @return Amount of Autopool shares minted
-    function depositUnderlying(
-        address destination,
-        uint256 underlyerAmount,
-        address receiver
-    ) external returns (uint256);
-
-    /// @notice Get the list of DestinationVault we allow direct deposits to
-    function getAllowedDestinationDirectDeposits() external view returns (address[] memory);
-
-    /// @notice Get a list of DestinationVault we allow direct withdrawals from
-    function getAllowedDestinationDirectWithdrawals() external view returns (address[] memory);
-
     /// @notice A full unit of this pool
     // solhint-disable-next-line func-name-mixedcase
     function ONE() external view returns (uint256);
@@ -318,12 +282,6 @@ interface IAutopool is IERC4626, IERC20Permit {
         Math.Rounding rounding
     ) external view returns (uint256 shares);
 
-    /// @notice Calculate asset value given amount of shares
-    /// @param shares Amount of shares to value
-    /// @param totalAssetsForPurpose Current valuation of held assets for given purpose
-    /// @param supply Total supply of the Autopool
-    /// @param rounding Direction to round calculations
-    /// @return assets Amount of assets for given shares in an ideal scenario where all the conditions are met.
     function convertToAssets(
         uint256 shares,
         uint256 totalAssetsForPurpose,
@@ -361,43 +319,4 @@ interface IAutopool is IERC4626, IERC20Permit {
     function isPastRewarder(
         address _pastRewarder
     ) external view returns (bool);
-
-    /// @notice Returns the `lastReport` for the oldest destinations debt reporting
-    function oldestDebtReporting() external view returns (uint256);
-
-    /// @notice Deposit function for solver and nested destinations
-    /// @dev Runs at mid point valuation so the pricing spread doesn't apply to users multiple times
-    /// @param assets The amount of asset to deposit
-    /// @param receiver The address that will receive the newly minted shares
-    /// @return shares THe number of newly minted shares
-    function depositSys(uint256 assets, address receiver) external returns (uint256 shares);
-
-    /// @notice Burns exactly shares from owner and sends assets of underlying tokens to receiver.
-    /// @dev Runs at mid point valuation so the pricing spread doesn't apply to users multiple times
-    /// @param shares The number of shares to burn
-    /// @param receiver Who should received the assets
-    /// @param owner The owner of the shares being burned
-    /// @return assets The amount of the asset the receiver will get
-    function redeemSys(uint256 shares, address receiver, address owner) external returns (uint256 assets);
-
-    /// @notice Burns exactly shares from owner, from provide destinations, and sends assets to receiver.
-    /// @param shares The number of shares to burn
-    /// @param receiver Who should received the assets
-    /// @param owner The owner of the shares being burned
-    /// @param fromDestinations The destinations to burn from
-    function redeemDestinations(
-        uint256 shares,
-        address receiver,
-        address owner,
-        address[] memory fromDestinations
-    ) external returns (uint256 assets);
-
-    /// @notice Redeem exact shares proportionally from all destination vaults including idle
-    /// @param shares The number of shares to redeem
-    /// @param receiver The address to receive the assets
-    /// @param owner The address of the owner of the shares to be redeemed
-    /// @return assets The number of assets received
-    /// @dev This function is used to redeem shares proportionally from all destination vaults including idle
-    /// Any sort of recoup or credit is taken into account when redeeming
-    // function redeemProrata(uint256 shares, address receiver, address owner) external returns (uint256 assets);
 }

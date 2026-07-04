@@ -1,0 +1,18 @@
+{
+  "component": "DolomiteRegistryImplementation-4",
+  "main_contract": "DolomiteRegistryImplementation",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1f578eb5937fb4bb121083911667673458202e52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

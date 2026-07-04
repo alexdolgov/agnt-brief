@@ -2,10 +2,18 @@
   "component": "ProxyAdmin",
   "main_contract": "ProxyAdmin",
   "source_file_count": 11,
-  "deployment_count": 5,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe90db309b80357631069b689fc3481aca2c65be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,
@@ -42,6 +50,30 @@
       "chain": "chain-252",
       "chain_id": 252,
       "address": "0x1e5be5059d4a95297604355dc6abd0baf036cc95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x75998c3009e881f7b3f3d6847bd82649ff4afecc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xaf3bb48f9b27ae41e8f4c33c77422b9367694cb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xdcd3965334adeff932f00b7be6a0254fa7fdfa5c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

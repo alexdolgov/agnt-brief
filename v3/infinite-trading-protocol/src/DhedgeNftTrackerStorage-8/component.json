@@ -1,15 +1,23 @@
 {
   "component": "DhedgeNftTrackerStorage-8",
   "main_contract": "DhedgeNftTrackerStorage",
-  "source_file_count": 40,
-  "deployment_count": 1,
+  "source_file_count": 104,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x997699f0992b2f5ac94aaa90fcd9c328bc47bb09",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd5a7176b84f4fd74f96fe65dc8d6cabc73aa3caf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb93954d861928ae577608d41eab5a8bc61985f83",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

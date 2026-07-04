@@ -18,7 +18,6 @@ import {BeforeSwapDeltaLibrary, toBeforeSwapDelta} from "v4-core/types/BeforeSwa
 import {SafeCast} from "v4-core/libraries/SafeCast.sol";
 import {FixedPointMathLib} from "solmate/src/utils/FixedPointMathLib.sol";
 import {IAccessControl} from "@openzeppelin/contracts/access/IAccessControl.sol";
-import {IOrderBookFactory} from "../interfaces/IOrderBookFactory.sol";
 import {VolatilityOracle} from "../libraries/VolatilityOracle.sol";
 
 /// @title VolatilityDynamicFeeLimitOrderHook
@@ -78,6 +77,7 @@ contract VolatilityDynamicFeeLimitOrderHook is BaseHook, Ownable {
     // Errors
     error TradingNotYetEnabled(uint256 enabledBlock, uint256 currentBlock);
     error PoolReservedForOther();
+    error OnlyOrderBookFactory();
     error InvalidFeeConfiguration();
 
     // Events
@@ -144,26 +144,17 @@ contract VolatilityDynamicFeeLimitOrderHook is BaseHook, Ownable {
         });
     }
 
-    /// @notice Validates pool initialization - enforces reservation system for front-running protection
-    /// @dev If a pool is reserved, only the reserved strategy or OrderBookFactory can initialize it.
-    ///      Unreserved pools remain permissionless.
+    /// @notice Validates pool initialization - enforces front-running protection
+    /// @dev Only OrderBookFactory is allowed to initialize pools using this hook.
     /// @param sender The address that called poolManager.initialize()
-    /// @param key The pool key being initialized
-    function _beforeInitialize(address sender, PoolKey calldata key, uint160)
+    function _beforeInitialize(address sender, PoolKey calldata, uint160)
         internal
         override
         returns (bytes4)
     {
-        bytes32 poolId = PoolId.unwrap(key.toId());
-        address reservedFor = IOrderBookFactory(orderBookFactory).reservedPools(poolId);
-
-        // If pool is reserved, only the reserved strategy or OrderBookFactory can initialize
-        if (reservedFor != address(0)) {
-            if (sender != reservedFor && sender != orderBookFactory) {
-                revert PoolReservedForOther();
-            }
-        }
-        // If not reserved, anyone can initialize (permissionless)
+        // Prevent attackers from initializing the pool directly via PoolManager, which would
+        // permanently block OrderBookFactory from registering/configuring the hook state.
+        if (sender != orderBookFactory) revert OnlyOrderBookFactory();
 
         return this.beforeInitialize.selector;
     }

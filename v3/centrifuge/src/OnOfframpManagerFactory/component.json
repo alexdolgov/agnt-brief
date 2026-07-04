@@ -2,13 +2,53 @@
   "component": "OnOfframpManagerFactory",
   "main_contract": "OnOfframpManagerFactory",
   "source_file_count": 39,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
       "is_proxy": false,
       "implementation_address": null,

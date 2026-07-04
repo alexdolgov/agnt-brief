@@ -1,83 +1,103 @@
 {
   "component": "SuperToken",
   "main_contract": "SuperToken",
-  "source_file_count": 44,
-  "deployment_count": 9,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2021-01%20PeckShield%20-%20Audit-Report-Superfluid-v1.0.pdf",
-    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2022-02%20Halborn%20-%20Superfluid_Finance_Smart_Contract_Security_Audit_Report_.pdf",
-    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2026-01-27%20-%20Final%20-%20Superfluid%20Collaborative%20Audit%20Report%201769517931.pdf"
-  ],
+  "source_file_count": 40,
+  "deployment_count": 12,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x036ea0dca13615c2a8b48b7a3407cc255d50ff74",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78743a68d52c9d6ccf3ff4558f3af510592e3c2d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x28dc4cea5580804921bcfd7871963f1df18c8b65",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb75bd19c682e62e6a0c35399bb3a2538fcc9cef6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x3929146ef091b87f48dd9c4ba113f06341fd3788",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2e1d01c297294b601975fc19cfebb5a15dd5ae93",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x3fa9e82372477613bce77ebe09a85f2d4de11105",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfcb633f4ff90241391ad92e4678ec2a11a94a990",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x74e4e82abc09f99e6a62889de1224f3b7692181a",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1c971e8863c63e1f1bdaf7dbf4831eca197c9508",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x7daa2aca70626425213129c2b60439a5b1b1436a",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x31d5847e2b7c43b90aee696519465a8d9f75e9ec",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x90ce40198f1ff9a274cb7d1021e8e23e13e64d08",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x37a024d7f9ea1c7ebb658f5a14caeddd30f212b7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xf59bf2a89fd413b0adb3f556304b3dfbde245c73",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5f4f9a643ea05444ff3e450d9197874d0f5b6058",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xff2c723f7d19e32db09670786eab0a50176ff255",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe68143171ed8149009225bee60b97fecc41e960e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe9748b7edf99ca28d071fd8e9fc2fa7a1b60ff47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x165152bbcdb9c2f4c94b0bc2c61a62273a2e623e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x9967664fd98c78531f9c041c5c037d1e67bb18c1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

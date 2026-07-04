@@ -1,0 +1,50 @@
+{
+  "component": "PoolNFTBase-4",
+  "main_contract": "PoolNFTBase",
+  "source_file_count": 31,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcdd4276815ff39535d18f014e600c84e08b01913",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf3f4fa77f4427f6a1c1a96556194b40fc9dbf02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdb0afd78753225ac80b042bc9f6260f76840a96d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x48acf0fbc6a8b38bc8b70b7c02a90c66858649ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79ae8bf8ee9238d8e848f7dbbf74ddb3365f6c11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,34 +1,66 @@
 {
   "component": "HypeRegistry",
   "main_contract": "HypeRegistry",
-  "source_file_count": 3,
-  "deployment_count": 3,
+  "source_file_count": 1,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x04dd4bd444e1fb7863787a434a31fb5f1213ab51",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x670003267ddff9c2c740ec9a1645569cccdc6bf7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xa9fe99aba4b3dfc184ba939e7a3fac18c684b915",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x683292172e2175bd08e3927a5e72fc301b161300",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xb7f05d27759e1d5cf2b74297b92bebbdeeb740bc",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x8a9570ec97534277ade6e46d100939fbce4968f0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xc27ddd78fc49875fe6f844b72bbf31dfbb099881",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xd6cc4a33da7557a629e819c68fb805ddb225f517",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x38f61169d8bcc08ce303401a13332259f557b35f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xfc13ebe7feb9595d70195e9168aa7f3ace153621",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

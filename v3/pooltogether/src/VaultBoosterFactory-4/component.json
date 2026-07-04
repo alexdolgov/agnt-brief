@@ -1,0 +1,18 @@
+{
+  "component": "VaultBoosterFactory-4",
+  "main_contract": "VaultBoosterFactory",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x17b9d77a393f2aa311e5ef08b73f3239b7f66837",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

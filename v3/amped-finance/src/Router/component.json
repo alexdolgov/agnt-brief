@@ -2,7 +2,7 @@
   "component": "Router",
   "main_contract": "Router",
   "source_file_count": 9,
-  "deployment_count": 4,
+  "deployment_count": 11,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -34,6 +34,62 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0x711212584311549aff840cf21e9de3443588ce99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x52c38cb77154ae7850bd55a127a5f3a10726bc41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x700d165ef6e5c79b9bd83d2c328391fe61917af6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x834a06e4ab191f6ff3ed3d7eb75a09264630dce8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdea75415aa22103249e8194f13c0c3c2d28433da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe42be5f9e68949ea21a5d399699ecb07a1944375",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf7e4ce7dc65797e1b7557e69f1dbbe7a861820be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x05d8084e4b73f7a33542858bb7bf903d10e1286e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

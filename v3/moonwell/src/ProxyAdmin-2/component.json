@@ -1,15 +1,71 @@
 {
   "component": "ProxyAdmin-2",
   "main_contract": "ProxyAdmin",
-  "source_file_count": 14,
-  "deployment_count": 1,
+  "source_file_count": 12,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8a798a50a7274a13449b7f2dd6df22faf2d40e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5294cdbc1a1699d48a101bcc58a7ab287991a7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6e7c22db18d8a6a1fb21d0b70bc6865cb9aca7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8568a675384d761f36ec269d695d6ce4423cfab1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x8d7d2230a2d195f023588edd13dbad56dd69770f",
+      "address": "0x3fca08493283e79cbd1e733ca3cb8ec8c6074dec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7465c2cfa4a9ab6acaacbf8eaa28257f6a1d1486",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc7867f143a6550e32df4d880a2c1cee3ab8adb2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf4cf0fdfb2f55da6916887675c332fac1e90099f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

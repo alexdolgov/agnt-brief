@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.22;
 
-import {IDeployer, ValueType} from "src/interfaces/IDeployer.sol";
+import {IDeployer} from "src/interfaces/IDeployer.sol";
+import {RegistryEntry, ValueType} from "src/interfaces/IMetaVaultsRegistryV2.sol";
 import {IMetaVaultFactory} from "src/interfaces/IMetaVaultFactory.sol";
 
 /// @title RegistryV2Deployer

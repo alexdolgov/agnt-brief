@@ -20,20 +20,24 @@ pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
+
 import { Account } from "./Account.sol";
 import { Bits } from "./Bits.sol";
 import { Cache } from "./Cache.sol";
 import { Decimal } from "./Decimal.sol";
 import { Interest } from "./Interest.sol";
 import { EnumerableSet } from "./EnumerableSet.sol";
-import { Math } from "./Math.sol";
+import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
 import { Monetary } from "./Monetary.sol";
 import { Require } from "./Require.sol";
 import { Time } from "./Time.sol";
 import { Token } from "./Token.sol";
 import { Types } from "./Types.sol";
+
+import { IAccountRiskOverrideSetter } from "../interfaces/IAccountRiskOverrideSetter.sol";
 import { IERC20Detailed } from "../interfaces/IERC20Detailed.sol";
 import { IInterestSetter } from "../interfaces/IInterestSetter.sol";
+import { IOracleSentinel } from "../interfaces/IOracleSentinel.sol";
 import { IPriceOracle } from "../interfaces/IPriceOracle.sol";
 
 
@@ -46,7 +50,7 @@ import { IPriceOracle } from "../interfaces/IPriceOracle.sol";
 library Storage {
     using Cache for Cache.MarketCache;
     using Storage for Storage.State;
-    using Math for uint256;
+    using DolomiteMarginMath for uint256;
     using Types for Types.Par;
     using Types for Types.Wei;
     using SafeMath for uint256;
@@ -54,7 +58,7 @@ library Storage {
 
     // ============ Constants ============
 
-    bytes32 internal constant FILE = "Storage";
+    bytes32 private constant FILE = "Storage";
 
     // ============ Structs ============
 
@@ -65,9 +69,6 @@ library Storage {
 
         // Whether additional borrows are allowed for this market
         bool isClosing;
-
-        // Whether this market can be removed and its ID can be recycled and reused
-        bool isRecyclable;
 
         // Total aggregated supply and borrow amount of the entire market
         Types.TotalPar totalPar;
@@ -94,12 +95,21 @@ library Storage {
         // `liquidationSpread = liquidationSpread * (1 + spreadPremium)`
         // NOTE: This formula is applied up to two times - one for each market whose spreadPremium is greater than 0
         // (when performing a liquidation between two markets)
-        Decimal.D256 spreadPremium;
+        Decimal.D256 liquidationSpreadPremium;
 
         // The maximum amount that can be held by the protocol. This allows the protocol to cap any additional risk
-        // that is inferred by allowing borrowing against low-cap or assets with increased volatility. Settings this
+        // that is inferred by allowing borrowing against low-cap or assets with increased volatility. Setting this
         // value to 0 is analogous to having no limit. This value can never be below 0.
-        Types.Wei maxWei;
+        Types.Wei maxSupplyWei;
+
+        // The maximum amount that can be borrowed by the protocol. This allows the protocol to cap any additional risk
+        // that is inferred by allowing borrowing against low-cap or assets with increased volatility. Setting this
+        // value to 0 is analogous to having no limit. This value can never be greater than 0.
+        Types.Wei maxBorrowWei;
+
+        // The percentage of interest paid that is passed along from borrowers to suppliers. Setting this to 0 will
+        // default to RiskParams.earningsRate.
+        Decimal.D256 earningsRateOverride;
     }
 
     // The global risk parameters that govern the health and security of the system
@@ -119,6 +129,23 @@ library Storage {
 
         // The maximum number of markets a user can have a non-zero balance for a given account.
         uint256 accountMaxNumberOfMarketsWithBalances;
+
+        // The oracle sentinel used to disable borrowing/liquidations if the sequencer goes down
+        IOracleSentinel oracleSentinel;
+
+        // The gas limit used for making callbacks via `IExternalCallback::onInternalBalanceChange` to smart contract
+        // wallets. Setting to 0 will effectively disable callbacks; setting it super large is not desired since it
+        // could lead to DOS attacks on the protocol; however, hard coding a max value isn't preferred since some chains
+        // can calculate gas usage differently (like ArbGas before Arbitrum rolled out nitro)
+        uint256 callbackGasLimit;
+
+        // The default account risk override setter. By default, we ping this for any overrides in risk controls,
+        // if the `accountRiskOverrideSetterMap` resolves to 0x0. If this value is set to `0x0` there is no default.
+        IAccountRiskOverrideSetter defaultAccountRiskOverrideSetter;
+
+        // Certain addresses are allowed to borrow with different LTV requirements. When an account's risk is overrode,
+        // the global risk parameters are ignored and the account's risk parameters are used instead.
+        mapping(address => IAccountRiskOverrideSetter) accountRiskOverrideSetterMap;
     }
 
     // The maximum RiskParam values that can be set
@@ -139,7 +166,13 @@ library Storage {
         // The highest liquidation reward that can be applied to a particular market. This percentage is applied
         // in addition to the liquidation spread in `RiskParams`. Meaning a value of 1e18 is 100%. It is calculated as:
         // `liquidationSpread * Decimal.onePlus(spreadPremium)`
-        uint64 spreadPremiumMax;
+        uint64 liquidationSpreadPremiumMax;
+        // The highest that the borrow interest rate can ever be. If the rate returned is ever higher, the rate is
+        // capped at this value instead of reverting. The goal is to keep Dolomite operational under all circumstances
+        // instead of inadvertently DOS'ing the protocol.
+        uint96 interestRateMax;
+        // The highest that the minBorrowedValue can be. This is the minimum amount of value that must be borrowed.
+        // Typically a value of $100 (100 * 1e18) is more than sufficient.
         uint128 minBorrowedValueMax;
     }
 
@@ -154,20 +187,17 @@ library Storage {
         // token address => marketId
         mapping (address => uint256) tokenToMarketId;
 
-        // Linked list from marketId to the next recycled market id
-        mapping(uint256 => uint256) recycledMarketIds;
-
         // owner => account number => Account
         mapping (address => mapping (uint256 => Account.Storage)) accounts;
 
         // Addresses that can control other users accounts
-        mapping (address => mapping (address => bool)) operators;
+        mapping (address => mapping (address => uint256)) operators;
 
         // Addresses that can control all users accounts
-        mapping (address => bool) globalOperators;
+        mapping (address => uint256) globalOperators;
 
         // Addresses of auto traders that can only be called by global operators. IE for expirations
-        mapping (address => bool) specialAutoTraders;
+        mapping (address => uint256) specialAutoTraders;
 
         // mutable risk parameters of the system
         RiskParams riskParams;
@@ -200,7 +230,7 @@ library Storage {
         return state.markets[marketId].totalPar;
     }
 
-    function getMaxWei(
+    function getMaxSupplyWei(
         Storage.State storage state,
         uint256 marketId
     )
@@ -208,7 +238,18 @@ library Storage {
         view
         returns (Types.Wei memory)
     {
-        return state.markets[marketId].maxWei;
+        return state.markets[marketId].maxSupplyWei;
+    }
+
+    function getMaxBorrowWei(
+        Storage.State storage state,
+        uint256 marketId
+    )
+        internal
+        view
+        returns (Types.Wei memory)
+    {
+        return state.markets[marketId].maxBorrowWei;
     }
 
     function getIndex(
@@ -291,17 +332,6 @@ library Storage {
         return Interest.parToWei(par, index);
     }
 
-    function getMarketsWithBalancesSet(
-        Storage.State storage state,
-        Account.Info memory account
-    )
-    internal
-    view
-    returns (EnumerableSet.Set storage)
-    {
-        return state.accounts[account.owner][account.number].marketsWithNonZeroBalanceSet;
-    }
-
     function getMarketsWithBalances(
         Storage.State storage state,
         Account.Info memory account
@@ -347,8 +377,9 @@ library Storage {
         return state.accounts[account.owner][account.number].numberOfMarketsWithDebt;
     }
 
-    function getLiquidationSpreadForPair(
+    function getLiquidationSpreadForAccountAndPair(
         Storage.State storage state,
+        Account.Info memory account,
         uint256 heldMarketId,
         uint256 owedMarketId
     )
@@ -356,9 +387,14 @@ library Storage {
         view
         returns (Decimal.D256 memory)
     {
+        (, Decimal.D256 memory liquidationSpreadOverride) = getAccountRiskOverride(state, account);
+        if (liquidationSpreadOverride.value != 0) {
+            return liquidationSpreadOverride;
+        }
+
         uint256 result = state.riskParams.liquidationSpread.value;
-        result = Decimal.mul(result, Decimal.onePlus(state.markets[heldMarketId].spreadPremium));
-        result = Decimal.mul(result, Decimal.onePlus(state.markets[owedMarketId].spreadPremium));
+        result = Decimal.mul(result, Decimal.onePlus(state.markets[heldMarketId].liquidationSpreadPremium));
+        result = Decimal.mul(result, Decimal.onePlus(state.markets[owedMarketId].liquidationSpreadPremium));
         return Decimal.D256({
             value: result
         });
@@ -375,11 +411,17 @@ library Storage {
     {
         Interest.Rate memory rate = state.fetchInterestRate(marketId, index);
 
+        Decimal.D256 memory earningsRate = state.markets[marketId].earningsRateOverride;
+        if (earningsRate.value == 0) {
+            // The earnings rate was not override, fall back to the global one
+            earningsRate = state.riskParams.earningsRate;
+        }
+
         return Interest.calculateNewIndex(
             index,
             rate,
             state.getTotalPar(marketId),
-            state.riskParams.earningsRate
+            earningsRate
         );
     }
 
@@ -404,6 +446,11 @@ library Storage {
             supplyWei.value
         );
 
+        if (rate.value > state.riskLimits.interestRateMax) {
+            // Cap the interest rate at the max instead of reverting. We don't want to DOS the protocol
+            rate.value = state.riskLimits.interestRateMax;
+        }
+
         return rate;
     }
 
@@ -427,11 +474,13 @@ library Storage {
         return price;
     }
 
+    // solium-disable-next-line security/no-assign-params
     function getAccountValues(
         Storage.State storage state,
         Account.Info memory account,
         Cache.MarketCache memory cache,
-        bool adjustForLiquidity
+        bool adjustForLiquidity,
+        Decimal.D256 memory marginRatioOverride
     )
         internal
         view
@@ -440,20 +489,23 @@ library Storage {
         Monetary.Value memory supplyValue;
         Monetary.Value memory borrowValue;
 
+        // Only adjust for liquidity if prompted AND if there is no override
+        adjustForLiquidity = adjustForLiquidity && marginRatioOverride.value == 0;
+
         uint256 numMarkets = cache.getNumMarkets();
-        for (uint256 i = 0; i < numMarkets; i++) {
+        for (uint256 i; i < numMarkets; ++i) {
             Types.Wei memory userWei = state.getWei(account, cache.getAtIndex(i).marketId, cache.getAtIndex(i).index);
 
             if (userWei.isZero()) {
                 continue;
             }
 
-            uint256 assetValue = userWei.value.mul(cache.getAtIndex(i).price.value);
             Decimal.D256 memory adjust = Decimal.one();
             if (adjustForLiquidity) {
                 adjust = Decimal.onePlus(state.markets[cache.getAtIndex(i).marketId].marginPremium);
             }
 
+            uint256 assetValue = userWei.value.mul(cache.getAtIndex(i).price.value);
             if (userWei.sign) {
                 supplyValue.value = supplyValue.value.add(Decimal.div(assetValue, adjust));
             } else {
@@ -479,15 +531,18 @@ library Storage {
             return true;
         }
 
-        // get account values (adjusted for liquidity)
+        // get account values (adjusted for liquidity, if there isn't a margin ratio override)
+        (Decimal.D256 memory marginRatio,) = getAccountRiskOverride(state, account);
         (
             Monetary.Value memory supplyValue,
             Monetary.Value memory borrowValue
-        ) = state.getAccountValues(account, cache, /* adjustForLiquidity = */ true);
+        ) = state.getAccountValues(
+            account,
+            cache,
+            /* adjustForLiquidity = */ true,
+            marginRatio
+        );
 
-        if (borrowValue.value == 0) {
-            return true;
-        }
         if (requireMinBorrow) {
             Require.that(
                 borrowValue.value >= state.riskParams.minBorrowedValue.value,
@@ -498,7 +553,11 @@ library Storage {
             );
         }
 
-        uint256 requiredMargin = Decimal.mul(borrowValue.value, state.riskParams.marginRatio);
+        if (marginRatio.value == 0) {
+            marginRatio = state.riskParams.marginRatio;
+        }
+
+        uint256 requiredMargin = Decimal.mul(borrowValue.value, marginRatio);
 
         return supplyValue.value >= borrowValue.value.add(requiredMargin);
     }
@@ -511,7 +570,7 @@ library Storage {
         view
         returns (bool)
     {
-        return state.globalOperators[operator];
+        return state.globalOperators[operator] == 1;
     }
 
     function isAutoTraderSpecial(
@@ -522,7 +581,7 @@ library Storage {
         view
         returns (bool)
     {
-        return state.specialAutoTraders[autoTrader];
+        return state.specialAutoTraders[autoTrader] == 1;
     }
 
     function isLocalOperator(
@@ -534,7 +593,7 @@ library Storage {
         view
         returns (bool)
     {
-        return state.operators[owner][operator];
+        return state.operators[owner][operator] == 1;
     }
 
     function requireIsGlobalOperator(
@@ -573,6 +632,33 @@ library Storage {
             "Unpermissioned operator",
             operator
         );
+    }
+
+    function getAccountRiskOverride(
+        Storage.State storage state,
+        Account.Info memory account
+    )
+        internal
+        view
+        returns (Decimal.D256 memory marginRatioOverride, Decimal.D256 memory liquidationSpreadOverride)
+    {
+        IAccountRiskOverrideSetter riskOverrideSetter = state.riskParams.accountRiskOverrideSetterMap[account.owner];
+        if (address(riskOverrideSetter) != address(0)) {
+            (marginRatioOverride, liquidationSpreadOverride) = riskOverrideSetter.getAccountRiskOverride(account);
+            validateAccountRiskOverrideValues(state, marginRatioOverride, liquidationSpreadOverride);
+            return (marginRatioOverride, liquidationSpreadOverride);
+        }
+
+        riskOverrideSetter = state.riskParams.defaultAccountRiskOverrideSetter;
+        if (address(riskOverrideSetter) != address(0)) {
+            (marginRatioOverride, liquidationSpreadOverride) = riskOverrideSetter.getAccountRiskOverride(account);
+            validateAccountRiskOverrideValues(state, marginRatioOverride, liquidationSpreadOverride);
+            return (marginRatioOverride, liquidationSpreadOverride);
+        } else {
+            marginRatioOverride = Decimal.zero();
+            liquidationSpreadOverride = Decimal.zero();
+            return (marginRatioOverride, liquidationSpreadOverride);
+        }
     }
 
     /**
@@ -687,7 +773,7 @@ library Storage {
     {
         bool hasNegative = false;
         uint256 numMarkets = cache.getNumMarkets();
-        for (uint256 i = 0; i < numMarkets; i++) {
+        for (uint256 i; i < numMarkets; ++i) {
             Types.Par memory par = state.getPar(account, cache.getAtIndex(i).marketId);
             if (par.isZero()) {
                 continue;
@@ -698,6 +784,37 @@ library Storage {
             }
         }
         return hasNegative;
+    }
+
+    function validateAccountRiskOverrideValues(
+        Storage.State storage state,
+        Decimal.D256 memory marginRatioOverride,
+        Decimal.D256 memory liquidationSpreadOverride
+    ) internal view {
+        Require.that(
+            marginRatioOverride.value <= state.riskLimits.marginRatioMax,
+            FILE,
+            "Ratio too high"
+        );
+        Require.that(
+            liquidationSpreadOverride.value <= state.riskLimits.liquidationSpreadMax,
+            FILE,
+            "Spread too high"
+        );
+
+        if (marginRatioOverride.value != 0 && liquidationSpreadOverride.value != 0) {
+            Require.that(
+                liquidationSpreadOverride.value < marginRatioOverride.value,
+                FILE,
+                "Spread cannot be >= ratio"
+            );
+        } else {
+            Require.that(
+                liquidationSpreadOverride.value == 0 && marginRatioOverride.value == 0,
+                FILE,
+                "Spread and ratio must both be 0"
+            );
+        }
     }
 
     // =============== Setter Functions ===============
@@ -808,45 +925,41 @@ library Storage {
      */
     function initializeCache(
         Storage.State storage state,
-        Cache.MarketCache memory cache
+        Cache.MarketCache memory cache,
+        bool fetchFreshIndex
     ) internal view {
         cache.markets = new Cache.MarketInfo[](cache.marketsLength);
-        uint counter = 0;
 
         // Really neat byproduct of iterating through a bitmap using the least significant bit, where each set flag
         // represents the marketId, --> the initialized `cache.markets` array is sorted in O(n)!
         // Meaning, this function call is O(n) where `n` is the number of markets in the cache
-        for (uint i = 0; i < cache.marketBitmaps.length; i++) {
-            uint bitmap = cache.marketBitmaps[i];
+        uint256 marketBitmapsLength = cache.marketBitmaps.length;
+        for (uint256 i; i < marketBitmapsLength; ++i) {
+            uint256 bitmap = cache.marketBitmaps[i];
             while (bitmap != 0) {
-                uint nextSetBit = Bits.getLeastSignificantBit(bitmap);
-                uint marketId = Bits.getMarketIdFromBit(i, nextSetBit);
+                uint256 nextSetBit = Bits.getLeastSignificantBit(bitmap);
+                uint256 marketId = Bits.getMarketIdFromBit(i, nextSetBit);
                 address token = state.getToken(marketId);
                 Types.TotalPar memory totalPar = state.getTotalPar(marketId);
-                cache.markets[counter++] = Cache.MarketInfo({
+                Interest.Index memory index = state.getIndex(marketId);
+                cache.markets[cache.counter++] = Cache.MarketInfo({
                     marketId: marketId,
                     token: token,
                     isClosing: state.markets[marketId].isClosing,
                     borrowPar: totalPar.borrow,
                     supplyPar: totalPar.supply,
-                    index: state.getIndex(marketId),
+                    index: fetchFreshIndex ? state.fetchNewIndex(marketId, index) : index,
                     price: state.fetchPrice(marketId, token)
                 });
 
                 // unset the set bit
                 bitmap = Bits.unsetBit(bitmap, nextSetBit);
             }
-            if (counter == cache.marketsLength) {
+            if (cache.counter == cache.marketsLength) {
                 break;
             }
         }
 
-        Require.that(
-            cache.marketsLength == counter,
-            FILE,
-            "cache initialized improperly",
-            cache.marketsLength,
-            cache.markets.length
-        );
+        assert(cache.marketsLength == cache.counter);
     }
 }

@@ -2,14 +2,30 @@
   "component": "SwapperAdapter",
   "main_contract": "SwapperAdapter",
   "source_file_count": 2,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x833adb5f597ef5f257914ff9f7f227812bd3d4e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
       "chain": "chain-9745",
       "chain_id": 9745,
       "address": "0x22babd3e0db07b69bb265e58c52d6a131234c56f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xdf0797c98a704f9c98ae83797d3ad2024da075ff",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

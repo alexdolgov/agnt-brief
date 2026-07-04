@@ -1,0 +1,34 @@
+{
+  "component": "AdmiralsQuarters-2",
+  "main_contract": "AdmiralsQuarters",
+  "source_file_count": 63,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fff8345cff27fbf204644fbbcc08450d7fc63ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc5b2e6fdbc3ebdc72aa070b8e4573d2c6d125459",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b966c2b4999d85ac175bee4f68fc42005f57f0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

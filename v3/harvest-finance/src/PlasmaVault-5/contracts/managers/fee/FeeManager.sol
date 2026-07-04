@@ -9,9 +9,6 @@ import {PlasmaVaultGovernance} from "../../vaults/PlasmaVaultGovernance.sol";
 import {RecipientFee} from "./FeeManagerFactory.sol";
 import {FeeManagerStorageLib, FeeRecipientDataStorage} from "./FeeManagerStorageLib.sol";
 import {ContextClient} from "../context/ContextClient.sol";
-import {HighWaterMarkPerformanceFeeStorage, HighWaterMarkPerformanceFeeStorage} from "./FeeManagerStorageLib.sol";
-import {SafeCast} from "@openzeppelin/contracts/utils/math/SafeCast.sol";
-import {IERC20Metadata} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 /// @notice Struct containing initialization data for the fee manager
 /// @param initialAuthority Address of the initial authority
@@ -51,12 +48,10 @@ enum FeeType {
 /// Total management fee percentage is the sum of all recipients management fees + DAO management fee, represented in percentage with 2 decimals, example 10000 is 100%, 100 is 1%
 /// @dev Inherits from AccessManaged for access control.
 contract FeeManager is AccessManagedUpgradeable, ContextClient {
-    using SafeCast for uint256;
     event HarvestManagementFee(address receiver, uint256 amount);
     event HarvestPerformanceFee(address receiver, uint256 amount);
     event PerformanceFeeUpdated(uint256 totalFee, address[] recipients, uint256[] fees);
     event ManagementFeeUpdated(uint256 totalFee, address[] recipients, uint256[] fees);
-    event FeeAccountDeployed(address performanceFeeAccount, address managementFeeAccount);
 
     /// @notice Thrown when trying to call a function before initialization
     error NotInitialized();
@@ -69,12 +64,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
 
     /// @notice Thrown when trying to set an invalid authority
     error InvalidAuthority();
-
-    /// @notice Thrown when trying to set an invalid high water mark
-    error InvalidHighWaterMark();
-
-    /// @notice Thrown when trying to call a function from a non-plasma vault contract
-    error NotPlasmaVault();
 
     uint64 private constant INITIALIZED_VERSION = 10;
 
@@ -105,6 +94,7 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
 
         super.__AccessManaged_init_unchained(initData_.initialAuthority);
         PLASMA_VAULT = initData_.plasmaVault;
+
         PERFORMANCE_FEE_ACCOUNT = address(new FeeAccount(address(this)));
         MANAGEMENT_FEE_ACCOUNT = address(new FeeAccount(address(this)));
 
@@ -124,11 +114,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
 
             for (uint256 i; i < recipientManagementFeesLength; i++) {
                 managementFeeRecipientAddresses[i] = initData_.recipientManagementFees[i].recipient;
-
-                if (initData_.recipientManagementFees[i].recipient == address(0)) {
-                    revert InvalidFeeRecipientAddress();
-                }
-
                 totalManagementFee += initData_.recipientManagementFees[i].feeValue;
                 FeeManagerStorageLib.setManagementFeeRecipientFee(
                     initData_.recipientManagementFees[i].recipient,
@@ -143,11 +128,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
 
             for (uint256 i; i < recipientPerformanceFeesLength; i++) {
                 performanceFeeRecipientAddresses[i] = initData_.recipientPerformanceFees[i].recipient;
-
-                if (initData_.recipientPerformanceFees[i].recipient == address(0)) {
-                    revert InvalidFeeRecipientAddress();
-                }
-
                 totalPerformanceFee += initData_.recipientPerformanceFees[i].feeValue;
                 FeeManagerStorageLib.setPerformanceFeeRecipientFee(
                     initData_.recipientPerformanceFees[i].recipient,
@@ -161,8 +141,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
         /// @dev Values stored in FeeManager have to be equal to the values stored in PlasmaVault
         FeeManagerStorageLib.setPlasmaVaultTotalPerformanceFee(totalPerformanceFee);
         FeeManagerStorageLib.setPlasmaVaultTotalManagementFee(totalManagementFee);
-
-        emit FeeAccountDeployed(PERFORMANCE_FEE_ACCOUNT, MANAGEMENT_FEE_ACCOUNT);
     }
 
     /// @notice Initializes the FeeManager contract by setting up fee account approvals
@@ -174,7 +152,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
     function initialize() external reinitializer(INITIALIZED_VERSION) {
         FeeAccount(PERFORMANCE_FEE_ACCOUNT).approveMaxForFeeManager(PLASMA_VAULT);
         FeeAccount(MANAGEMENT_FEE_ACCOUNT).approveMaxForFeeManager(PLASMA_VAULT);
-        _updateHighWaterMarkPerformanceFee();
     }
 
     /// @notice Harvests both management and performance fees
@@ -457,169 +434,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
         return FeeManagerStorageLib.getIporDaoFeeRecipientAddress();
     }
 
-    /// @notice Updates the high water mark (HWM) for performance fee calculation to the current exchange rate
-    /// @dev This function should be called to synchronize the HWM with the current vault state.
-    ///      The HWM is used to ensure that performance fees are only charged on new profits above the previous maximum.
-    ///      Only callable by addresses with the `restricted` modifier (e.g., governance or automation).
-    ///      The new HWM is set to the current asset value per share (exchange rate) of the vault.
-    ///      Reverts if the current exchange rate is zero (prevents setting an invalid HWM).
-    /// @custom:security Only callable by authorized roles to prevent manipulation.
-    /// @custom:security Ensures HWM cannot be set to zero, which would allow fee abuse.
-    /// @custom:see EIP-4626 for vault fee patterns and best practices.
-    function updateHighWaterMarkPerformanceFee() external restricted {
-        _updateHighWaterMarkPerformanceFee();
-    }
-
-    /// @notice Updates the minimum interval between high water mark (HWM) updates for performance fee calculation
-    /// @dev This function sets the minimum time (in seconds) that must elapse before the HWM can be updated again.
-    ///      The interval helps prevent frequent HWM updates, which could be exploited to reduce or avoid performance fees.
-    ///      Only callable by addresses with the `restricted` modifier (e.g., governance or automation).
-    ///      Setting the interval to zero disables the time restriction, allowing HWM to be updated at any time.
-    /// @param updateInterval_ The new minimum update interval in seconds
-    /// @custom:security Only callable by authorized roles to prevent manipulation.
-    /// @custom:security Setting a reasonable interval is important to mitigate fee gaming and ensure fair accrual.
-    /// @custom:see EIP-4626 for vault fee patterns and best practices.
-    function updateIntervalHighWaterMarkPerformanceFee(uint32 updateInterval_) external restricted {
-        FeeManagerStorageLib.updateIntervalHighWaterMarkPerformanceFee(updateInterval_);
-    }
-
-    /// @notice Sets the deposit fee percentage for the plasma vault
-    /// @dev This function configures the deposit fee that will be charged on all new deposits
-    ///      to the plasma vault. The fee is calculated as a percentage of the deposited assets
-    ///      and is deducted from the user's deposit amount before minting shares.
-    ///
-    /// @param fee_ Deposit fee percentage with 18 decimal precision (1e18 = 100%, 1e16 = 1%)
-    ///              Must be less than 1e18 (100%) to prevent total loss of deposited assets
-    ///
-    /// @dev Flow:
-    /// 1. Validates that the fee is within acceptable bounds (should be < 100%)
-    /// 2. Updates the deposit fee in storage via FeeManagerStorageLib
-    /// 3. The new fee will apply to all subsequent deposits
-    ///
-    /// @custom:access Restricted to authorized roles (ATOMIST_ROLE)
-    /// @custom:security Fee should be reasonable to maintain vault attractiveness
-    /// @custom:security Fee is deducted from user deposits, not added on top
-    /// @custom:see EIP-4626 for vault fee patterns and best practices
-    /// @custom:example Setting fee_ to 1e16 (1e18 * 0.01) sets a 1% deposit fee
-    function setDepositFee(uint256 fee_) external restricted {
-        FeeManagerStorageLib.setPlasmaVaultDepositFee(fee_);
-    }
-
-    /// @notice Calculates performance fee based on high water mark mechanism
-    /// @dev This function implements a high water mark (HWM) based performance fee calculation
-    ///      where fees are only charged on gains above the previous highest value.
-    ///      The function can only be called by the plasma vault contract.
-    ///
-    /// @param actualExchangeRate_ Current exchange rate between shares and assets
-    /// @param totalSupply_ Total supply of vault shares
-    /// @param performanceFee_ Performance fee percentage with 2 decimal precision (10000 = 100%)
-    /// @param assetDecimals_ Number of decimals in the underlying asset
-    ///
-    /// @return recipient Address of the performance fee recipient (PERFORMANCE_FEE_ACCOUNT or address(0))
-    /// @return feeShares Number of shares to be minted as performance fee
-    ///
-    /// @dev Flow:
-    /// 1. If HWM is 0 (first time), sets HWM to current rate and returns 0 fee
-    /// 2. If current rate is below HWM:
-    ///    - If update interval not passed: returns 0 fee
-    ///    - If update interval passed: updates HWM to current rate and returns 0 fee
-    /// 3. If current rate is above HWM:
-    ///    - Calculates fee based on the gain above HWM
-    ///    - Returns fee recipient and calculated shares
-    ///
-    /// @custom:security Uses SafeCast for uint256 to uint128 conversion
-    /// @custom:security Implements reentrancy protection via plasma vault pattern
-    /// @custom:security Only callable by plasma vault to prevent unauthorized fee generation
-    function calculateAndUpdatePerformanceFee(
-        uint128 actualExchangeRate_,
-        uint256 totalSupply_,
-        uint256 performanceFee_,
-        uint256 assetDecimals_
-    ) external returns (address recipient, uint256 feeShares) {
-        if (msg.sender != PLASMA_VAULT) {
-            revert NotPlasmaVault();
-        }
-
-        HighWaterMarkPerformanceFeeStorage memory highWaterMarkStorage = FeeManagerStorageLib
-            .getPlasmaVaultHighWaterMarkPerformanceFee();
-
-        if (highWaterMarkStorage.highWaterMark == 0) {
-            FeeManagerStorageLib.updateHighWaterMarkPerformanceFee(actualExchangeRate_);
-            return (address(0), 0);
-        }
-
-        if (actualExchangeRate_ <= highWaterMarkStorage.highWaterMark) {
-            if (
-                highWaterMarkStorage.updateInterval != 0 &&
-                block.timestamp >= highWaterMarkStorage.lastUpdate + highWaterMarkStorage.updateInterval
-            ) {
-                FeeManagerStorageLib.updateHighWaterMarkPerformanceFee(actualExchangeRate_);
-            }
-            return (address(0), 0);
-        }
-
-        uint256 delta = actualExchangeRate_ - uint256(highWaterMarkStorage.highWaterMark);
-        uint256 sharesToHarvest = Math.mulDiv(totalSupply_, delta, 10 ** assetDecimals_);
-        feeShares = Math.mulDiv(sharesToHarvest, performanceFee_, 10000);
-
-        FeeManagerStorageLib.updateHighWaterMarkPerformanceFee(actualExchangeRate_);
-        return (PERFORMANCE_FEE_ACCOUNT, feeShares);
-    }
-
-    /// @notice Calculates the deposit fee for a given amount of assets
-    /// @dev This function calculates the deposit fee based on the configured deposit fee percentage
-    ///      and the amount of assets being deposited. The deposit fee is calculated as a percentage
-    ///      of the deposited assets using 18 decimal precision (1e18 = 100%, 1e16 = 1%).
-    ///
-    /// @param shares_ The amount of shares being deposited (in share units)
-    ///
-    /// @return The calculated deposit fee amount (in share units)
-    ///
-    /// @dev Flow:
-    /// 1. Retrieves the current deposit fee percentage from storage
-    /// 2. If deposit fee is 0, returns 0 (no fee)
-    /// 3. Calculates fee using Math.mulDiv for precision: (shares_ * depositFee) / 1e18
-    ///
-    /// @custom:security Uses Math.mulDiv to prevent overflow and maintain precision
-    /// @custom:security View function - no state changes, safe for external calls
-    /// @custom:see EIP-4626 for vault fee patterns and best practices
-    /// @custom:example If depositFee is 1e16 (1%) and shares_ is 1000e18, returns 10e18
-    function calculateDepositFee(uint256 shares_) external view returns (uint256) {
-        uint256 depositFee = FeeManagerStorageLib.getPlasmaVaultDepositFee();
-        if (depositFee == 0) {
-            return 0;
-        }
-        return Math.mulDiv(shares_, depositFee, 1e18);
-    }
-
-    /// @notice Gets the current deposit fee percentage for the plasma vault
-    /// @dev This function retrieves the currently configured deposit fee percentage
-    ///      that will be applied to all new deposits. The fee is returned in 18 decimal
-    ///      precision format where 1e18 represents 100% and 1e16 represents 1%.
-    ///
-    /// @return The current deposit fee percentage with 18 decimal precision
-    ///         (1e18 = 100%, 1e16 = 1%, 0 = no fee)
-    ///
-    /// @dev Flow:
-    /// 1. Retrieves the deposit fee from storage via FeeManagerStorageLib
-    /// 2. Returns the raw fee value without any calculations
-    ///
-    /// @custom:security View function - no state changes, safe for external calls
-    /// @custom:security Returns the raw fee percentage, not the calculated fee amount
-    /// @custom:see EIP-4626 for vault fee patterns and best practices
-    /// @custom:example If deposit fee is 1%, returns 1e16 (1e18 * 0.01)
-    function getDepositFee() external view returns (uint256) {
-        return FeeManagerStorageLib.getPlasmaVaultDepositFee();
-    }
-
-    function getPlasmaVaultHighWaterMarkPerformanceFee()
-        external
-        view
-        returns (HighWaterMarkPerformanceFeeStorage memory)
-    {
-        return FeeManagerStorageLib.getPlasmaVaultHighWaterMarkPerformanceFee();
-    }
-
     /// @notice Internal function to transfer fees to the DAO
     /// @param feeAccount_ The address of the fee account
     /// @param feeBalance_ The balance of the fee account
@@ -702,17 +516,6 @@ contract FeeManager is AccessManagedUpgradeable, ContextClient {
         }
 
         return remainingBalance_;
-    }
-
-    function _updateHighWaterMarkPerformanceFee() private {
-        uint256 highWaterMark = IERC4626(PLASMA_VAULT).convertToAssets(
-            10 ** uint256(IERC20Metadata(PLASMA_VAULT).decimals())
-        );
-        if (highWaterMark > 0) {
-            FeeManagerStorageLib.updateHighWaterMarkPerformanceFee(highWaterMark.toUint128());
-        } else {
-            revert InvalidHighWaterMark();
-        }
     }
 
     /// @notice Internal function to get the message sender from context

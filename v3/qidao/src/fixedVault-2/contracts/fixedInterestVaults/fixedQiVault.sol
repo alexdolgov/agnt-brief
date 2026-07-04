@@ -266,4 +266,8 @@ contract stableQiVault is fixedVault, Ownable {
         uri = _uri;
         emit UpdatedTokenURI(uri);
     }
+
+    function setRouter(address _router) external onlyOwner {
+        router=_router;
+    }
 }

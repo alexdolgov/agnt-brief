@@ -1,6 +1,6 @@
 # wavesbridge — deployments
 
-64 verified deployment(s) across 27 component(s).
+66 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -57,6 +57,8 @@
 | arbitrum | `0xfa843add03f881304af116caf704549867142541` | VirtualPriceSender | impl | inactive | no |
 | arbitrum | `0xfa9dc4d47cbe235d38810f3d23bd7c0b8dd1e88a` | BasePoolAdapter | impl | inactive | no |
 | arbitrum | `0xfc2e04dbf969f4869a381a8da4c9145e6ebfaf3e` | VestingManager | impl | inactive | no |
+| bsc | `0x3ac7a6635d99f376c3c05442f7eef62d349c3a55` | Bridge-2 | impl | live | no |
+| bsc | `0xf787128e3eb8161174944117b9fe1204a22097fb` | Validator-2 | impl | inactive | no |
 | ethereum | `0x025c6da5bd0e6a5dd1350fda9e3b6a614b205a1f` | AirdropGrapesToken | impl | inactive | no |
 | ethereum | `0x1a920b0eae5b49c51ebf042a61c3fa58dae04882` | RealGames | impl | live | no |
 | ethereum | `0x32f411f32dd14f142c087062335032f89bdecb0e` | SATO | impl | inactive | no |
@@ -68,9 +70,3 @@
 | ethereum | `0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee` | Neiro | impl | live | no |
 | ethereum | `0x9d696dc16bc0d49daadb80d9bf312cec2c3f7501` | Tweet | impl | inactive | no |
 | ethereum | `0xf787128e3eb8161174944117b9fe1204a22097fb` | Validator | impl | inactive | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x3ac7a6635d99f376c3c05442f7eef62d349c3a55`
-- bsc `0xf787128e3eb8161174944117b9fe1204a22097fb`

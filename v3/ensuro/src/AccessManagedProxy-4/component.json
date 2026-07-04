@@ -1,0 +1,18 @@
+{
+  "component": "AccessManagedProxy-4",
+  "main_contract": "AccessManagedProxy",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x167107ec321f723c5a412968e19731cfcd16b823",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

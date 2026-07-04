@@ -1,31 +1,47 @@
 {
   "component": "MasterChefV3ReceiverV2",
   "main_contract": "MasterChefV3ReceiverV2",
-  "source_file_count": 12,
-  "deployment_count": 3,
+  "source_file_count": 8,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0x1643f6acd56a7bed6005155abeb822bba6c5e970",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbd9aa882f5a9423b515721d84e9ead5ac40ae3de",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0x18a7f032a893095a08df1b7cd457abf4d0a3e3d6",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd592e2c815e0cf4b62169e09934faab28299708e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0x95cb91118a5a2b64ddac8965e49173a30e521f4e",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc42c649cdb9d4aa2a142b4909923c3d2d32141c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6510e68561f04c1d111e616750dac2a063ff5055",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xbb87917ccc567ebe43561306ebd69bb37a119013",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

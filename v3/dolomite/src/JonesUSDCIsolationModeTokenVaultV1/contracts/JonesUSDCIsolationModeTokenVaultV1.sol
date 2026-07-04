@@ -26,7 +26,7 @@ import { IsolationModeTokenVaultV1WithPausableAndOnlyEoa } from "@dolomite-excha
 import { IJonesUSDCIsolationModeTokenVaultV1 } from "./interfaces/IJonesUSDCIsolationModeTokenVaultV1.sol";
 import { IJonesUSDCIsolationModeVaultFactory } from "./interfaces/IJonesUSDCIsolationModeVaultFactory.sol";
 import { IJonesUSDCRegistry } from "./interfaces/IJonesUSDCRegistry.sol";
-import { IJonesWhitelistControllerV2 } from "./interfaces/IJonesWhitelistControllerV2.sol";
+import { IJonesWhitelistController } from "./interfaces/IJonesWhitelistController.sol";
 
 
 /**
@@ -67,15 +67,15 @@ contract JonesUSDCIsolationModeTokenVaultV1 is
     }
 
     function isExternalRedemptionPaused() public override view returns (bool) {
-        IJonesWhitelistControllerV2 whitelistController = registry().whitelistController();
+        IJonesWhitelistController whitelistController = registry().whitelistController();
         address unwrapperTrader = registry().unwrapperTraderForLiquidation();
         bytes32 unwrapperRole = whitelistController.getUserRole(unwrapperTrader);
-        IJonesWhitelistControllerV2.RoleInfo memory unwrapperRoleInfo = whitelistController.getRoleInfo(unwrapperRole);
+        IJonesWhitelistController.RoleInfo memory unwrapperRoleInfo = whitelistController.getRoleInfo(unwrapperRole);
 
         // if the ecosystem is emergency paused (cannot process redemptions) or if instant redemptions are disabled or
         // if the contract is not whitelisted
-        return !unwrapperRoleInfo.BYPASS_COOLDOWN
-            || registry().jUSDCRouter().isPaused()
+        return !unwrapperRoleInfo.jUSDC_BYPASS_TIME
+            || registry().glpVaultRouter().emergencyPaused()
             || !whitelistController.isWhitelistedContract(unwrapperTrader);
     }
 }

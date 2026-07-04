@@ -2,7 +2,7 @@
   "component": "LPStaking",
   "main_contract": "LPStaking",
   "source_file_count": 14,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,6 +18,22 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xea8dfee1898a7e0a59f7527f076106d7e44c2176",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

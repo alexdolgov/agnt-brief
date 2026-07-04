@@ -44,6 +44,7 @@ interface IMultiPositionManager is IERC20, IImmutableState {
         uint256 weight0;
         uint256 weight1;
         bool useCarpet; // Use full-range floor
+        int24 limitReferenceTick;
     }
 
     struct RebalanceSwapParams {
@@ -131,6 +132,7 @@ interface IMultiPositionManager is IERC20, IImmutableState {
             uint120 weight0,
             uint120 weight1,
             bool useCarpet,
+            int24 limitReferenceTick,
             bool useSwap,
             bool useAssetWeights
         );

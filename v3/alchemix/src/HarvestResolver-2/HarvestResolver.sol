@@ -1,5 +1,1264 @@
 // Sources flattened with hardhat v2.9.9 https://hardhat.org
 
+// File src/interfaces/external/aave/IRewardsController.sol
+
+pragma solidity >=0.8.10;
+
+/**
+ * @title IRewardsController
+ * @author Aave
+ * @notice Defines the basic interface for a Rewards Controller.
+ */
+interface IRewardsController {
+
+  /**
+   * @dev Whitelists an address to claim the rewards on behalf of another address
+   * @param user The address of the user
+   * @param claimer The address of the claimer
+   */
+  function setClaimer(address user, address claimer) external;
+
+  /**
+   * @dev Get the price aggregator oracle address
+   * @param reward The address of the reward
+   * @return The price oracle of the reward
+   */
+  function getRewardOracle(address reward) external view returns (address);
+
+  /**
+   * @dev Returns the whitelisted claimer for a certain address (0x0 if not set)
+   * @param user The address of the user
+   * @return The claimer address
+   */
+  function getClaimer(address user) external view returns (address);
+
+  /**
+   * @dev Returns the Transfer Strategy implementation contract address being used for a reward address
+   * @param reward The address of the reward
+   * @return The address of the TransferStrategy contract
+   */
+  function getTransferStrategy(address reward) external view returns (address);
+
+  /**
+   * @dev Called by the corresponding asset on any update that affects the rewards distribution
+   * @param user The address of the user
+   * @param userBalance The user balance of the asset
+   * @param totalSupply The total supply of the asset
+   **/
+  function handleAction(
+    address user,
+    uint256 userBalance,
+    uint256 totalSupply
+  ) external;
+
+  /**
+   * @dev Claims reward for a user to the desired address, on all the assets of the pool, accumulating the pending rewards
+   * @param assets List of assets to check eligible distributions before claiming rewards
+   * @param amount The amount of rewards to claim
+   * @param to The address that will be receiving the rewards
+   * @param reward The address of the reward token
+   * @return The amount of rewards claimed
+   **/
+  function claimRewards(
+    address[] calldata assets,
+    uint256 amount,
+    address to,
+    address reward
+  ) external returns (uint256);
+
+  /**
+   * @dev Returns a single rewards balance of a user, including virtually accrued and unrealized claimable rewards.
+   * @param assets List of incentivized assets to check eligible distributions
+   * @param user The address of the user
+   * @param reward The address of the reward token
+   * @return The rewards amount
+   **/
+  function getUserRewards(
+    address[] calldata assets,
+    address user,
+    address reward
+  ) external view returns (uint256);
+
+  /**
+   * @dev Claims reward for a user on behalf, on all the assets of the pool, accumulating the pending rewards. The
+   * caller must be whitelisted via "allowClaimOnBehalf" function by the RewardsAdmin role manager
+   * @param assets The list of assets to check eligible distributions before claiming rewards
+   * @param amount The amount of rewards to claim
+   * @param user The address to check and claim rewards
+   * @param to The address that will be receiving the rewards
+   * @param reward The address of the reward token
+   * @return The amount of rewards claimed
+   **/
+  function claimRewardsOnBehalf(
+    address[] calldata assets,
+    uint256 amount,
+    address user,
+    address to,
+    address reward
+  ) external returns (uint256);
+
+  /**
+   * @dev Claims reward for msg.sender, on all the assets of the pool, accumulating the pending rewards
+   * @param assets The list of assets to check eligible distributions before claiming rewards
+   * @param amount The amount of rewards to claim
+   * @param reward The address of the reward token
+   * @return The amount of rewards claimed
+   **/
+  function claimRewardsToSelf(
+    address[] calldata assets,
+    uint256 amount,
+    address reward
+  ) external returns (uint256);
+
+  /**
+   * @dev Claims all rewards for a user to the desired address, on all the assets of the pool, accumulating the pending rewards
+   * @param assets The list of assets to check eligible distributions before claiming rewards
+   * @param to The address that will be receiving the rewards
+   * @return rewardsList List of addresses of the reward tokens
+   * @return claimedAmounts List that contains the claimed amount per reward, following same order as "rewardList"
+   **/
+  function claimAllRewards(address[] calldata assets, address to)
+    external
+    returns (address[] memory rewardsList, uint256[] memory claimedAmounts);
+
+  /**
+   * @dev Claims all rewards for a user on behalf, on all the assets of the pool, accumulating the pending rewards. The caller must
+   * be whitelisted via "allowClaimOnBehalf" function by the RewardsAdmin role manager
+   * @param assets The list of assets to check eligible distributions before claiming rewards
+   * @param user The address to check and claim rewards
+   * @param to The address that will be receiving the rewards
+   * @return rewardsList List of addresses of the reward tokens
+   * @return claimedAmounts List that contains the claimed amount per reward, following same order as "rewardsList"
+   **/
+  function claimAllRewardsOnBehalf(
+    address[] calldata assets,
+    address user,
+    address to
+  ) external returns (address[] memory rewardsList, uint256[] memory claimedAmounts);
+
+  /**
+   * @dev Claims all reward for msg.sender, on all the assets of the pool, accumulating the pending rewards
+   * @param assets The list of assets to check eligible distributions before claiming rewards
+   * @return rewardsList List of addresses of the reward tokens
+   * @return claimedAmounts List that contains the claimed amount per reward, following same order as "rewardsList"
+   **/
+  function claimAllRewardsToSelf(address[] calldata assets)
+    external
+    returns (address[] memory rewardsList, uint256[] memory claimedAmounts);
+
+
+  /**
+   * @dev Returns the accrued rewards balance of a user, not including virtually accrued rewards since last distribution.
+   * @param user The address of the user
+   * @param reward The address of the reward token
+   * @return Unclaimed rewards, not including new distributions
+   **/
+  function getUserAccruedRewards(address user, address reward) external view returns (uint256);
+}
+
+
+// File src/interfaces/IRewardCollector.sol
+
+pragma solidity ^0.8.13;
+
+interface IRewardCollector {
+    /// @notice Gets the current version.
+    ///
+    /// @return The version.
+    function version() external view returns (string memory);
+
+    /// @notice Gets the current reward token.
+    ///
+    /// @return The reward token.
+    function rewardToken() external view returns (address);
+
+    /// @notice Gets the current swap router.
+    ///
+    /// @return The swap router address.
+    function swapRouter() external view returns (address);
+
+    /// @notice Gets the current debt token.
+    ///
+    /// @return The debt token
+    function debtToken() external view returns (address);
+
+    /// @notice Claims rewards tokens, swaps for alUSD.
+    ///
+    /// @param  token                The yield token to claim rewards for.
+    /// @param  minimumAmountOut     The minimum returns to accept.
+    ///
+    /// @return claimed              The amount of reward tokens claimed.
+    function claimAndDistributeRewards(address token, uint256 minimumAmountOut) external returns (uint256 claimed);
+}
+
+
+// File src/interfaces/external/velodrome/IVelodromeSwapRouter.sol
+
+pragma solidity >=0.5.0;
+
+
+interface IVelodromeSwapRouter {
+    struct route {
+        address from;
+        address to;
+        bool stable;
+    }
+    function swapExactTokensForTokens(
+        uint amountIn,
+        uint amountOutMin,
+        route[] calldata routes,
+        address to,
+        uint deadline
+    ) external returns (uint[] memory amounts);
+
+    function getAmountsOut(
+        uint amountIn,
+        route[] memory routes
+    ) external view returns (uint[] memory amounts);
+}
+
+
+// File lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol
+
+// OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20 {
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    /**
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `to`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address to, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `from` to `to` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(
+        address from,
+        address to,
+        uint256 amount
+    ) external returns (bool);
+}
+
+
+// File src/interfaces/external/aave/IScaledBalanceToken.sol
+
+pragma solidity >=0.5.0;
+
+interface IScaledBalanceToken {
+  /// @dev Returns the scaled balance of the user. The scaled balance is the sum of all the updated stored balance
+  ///      divided by the reserve's liquidity index at the moment of the update.
+  ///
+  /// @param user The user whose balance is calculated.
+  ///
+  /// @return The scaled balance of the user.
+  function scaledBalanceOf(address user) external view returns (uint256);
+
+  /// @dev Returns the scaled balance of the user and the scaled total supply.
+  ///
+  /// @param user The address of the user.
+  ///
+  /// @return scaledBalance     The scaled balance of the user.
+  /// @return scaledTotalSupply The scaled balance and the scaled total supply.
+  function getScaledUserBalanceAndSupply(address user)
+    external view
+    returns (
+      uint256 scaledBalance,
+      uint256 scaledTotalSupply
+    );
+
+  /// @dev Returns the scaled total supply of the variable debt token. Represents sum(debt/index).
+  ///
+  /// @return The scaled total supply.
+  function scaledTotalSupply() external view returns (uint256);
+}
+
+
+// File src/interfaces/external/aave/DataTypes.sol
+
+pragma solidity >=0.5.0;
+
+// @dev Refer to the whitepaper, section 1.1 basic concepts for a formal description of these properties.
+struct ReserveData {
+  // Stores the reserve configuration.
+  ReserveConfigurationMap configuration;
+  // The liquidity index. Expressed in ray.
+  uint128 liquidityIndex;
+  // Variable borrow index. Expressed in ray.
+  uint128 variableBorrowIndex;
+  // The current supply rate. Expressed in ray.
+  uint128 currentLiquidityRate;
+  // The current variable borrow rate. Expressed in ray.
+  uint128 currentVariableBorrowRate;
+  // The current stable borrow rate. Expressed in ray.
+  uint128 currentStableBorrowRate;
+  uint40 lastUpdateTimestamp;
+  // Tokens addresses.
+  address aTokenAddress;
+  address stableDebtTokenAddress;
+  address variableDebtTokenAddress;
+  // Address of the interest rate strategy.
+  address interestRateStrategyAddress;
+  // The id of the reserve. Represents the position in the list of the active reserves.
+  uint8 id;
+}
+
+struct ReserveConfigurationMap {
+  //bit 0-15: LTV
+  //bit 16-31: Liq. threshold
+  //bit 32-47: Liq. bonus
+  //bit 48-55: Decimals
+  //bit 56: Reserve is active
+  //bit 57: reserve is frozen
+  //bit 58: borrowing is enabled
+  //bit 59: stable rate borrowing enabled
+  //bit 60-63: reserved
+  //bit 64-79: reserve factor
+  uint256 data;
+}
+
+struct UserConfigurationMap {
+  uint256 data;
+}
+
+enum InterestRateMode {
+  NONE,
+  STABLE,
+  VARIABLE
+}
+
+
+// File src/interfaces/external/aave/ILendingPoolAddressesProvider.sol
+
+pragma solidity >=0.5.0;
+
+/// @title  ILendingPoolAddressesProvider
+/// @author Aave
+///
+/// @dev Main registry of addresses part of or connected to the protocol, including permissioned roles.
+///
+/// - Acting also as factory of proxies and admin of those, so with right to change its implementations.
+/// - Owned by the Aave Governance.
+interface ILendingPoolAddressesProvider {
+  event MarketIdSet(string newMarketId);
+  event LendingPoolUpdated(address indexed newAddress);
+  event ConfigurationAdminUpdated(address indexed newAddress);
+  event EmergencyAdminUpdated(address indexed newAddress);
+  event LendingPoolConfiguratorUpdated(address indexed newAddress);
+  event LendingPoolCollateralManagerUpdated(address indexed newAddress);
+  event PriceOracleUpdated(address indexed newAddress);
+  event LendingRateOracleUpdated(address indexed newAddress);
+  event ProxyCreated(bytes32 id, address indexed newAddress);
+  event AddressSet(bytes32 id, address indexed newAddress, bool hasProxy);
+
+  function getMarketId() external view returns (string memory);
+
+  function setMarketId(string calldata marketId) external;
+
+  function setAddress(bytes32 id, address newAddress) external;
+
+  function setAddressAsProxy(bytes32 id, address impl) external;
+
+  function getAddress(bytes32 id) external view returns (address);
+
+  function getLendingPool() external view returns (address);
+
+  function setLendingPoolImpl(address pool) external;
+
+  function getLendingPoolConfigurator() external view returns (address);
+
+  function setLendingPoolConfiguratorImpl(address configurator) external;
+
+  function getLendingPoolCollateralManager() external view returns (address);
+
+  function setLendingPoolCollateralManager(address manager) external;
+
+  function getPoolAdmin() external view returns (address);
+
+  function setPoolAdmin(address admin) external;
+
+  function getEmergencyAdmin() external view returns (address);
+
+  function setEmergencyAdmin(address admin) external;
+
+  function getPriceOracle() external view returns (address);
+
+  function setPriceOracle(address priceOracle) external;
+
+  function getLendingRateOracle() external view returns (address);
+
+  function setLendingRateOracle(address lendingRateOracle) external;
+}
+
+
+// File src/interfaces/external/aave/ILendingPool.sol
+
+pragma solidity >=0.5.0;
+
+interface ILendingPool {
+  /// @dev Emitted on `deposit`.
+  ///
+  /// @param reserve    The address of the underlying asset of the reserve.
+  /// @param user       The address initiating the deposit.
+  /// @param onBehalfOf The beneficiary of the deposit, receiving the aTokens.
+  /// @param amount     The amount deposited.
+  /// @param referral   The referral code used.
+  event Deposit(
+    address indexed reserve,
+    address user,
+    address indexed onBehalfOf,
+    uint256 amount,
+    uint16 indexed referral
+  );
+
+  /// @dev Emitted on `withdraw`.
+  ///
+  /// @param reserve The address of the underlying asset being withdrawn.
+  /// @param user    The address initiating the withdrawal, owner of aTokens.
+  /// @param to      Address that will receive the underlying.
+  /// @param amount  The amount to be withdrawn.
+  event Withdraw(address indexed reserve, address indexed user, address indexed to, uint256 amount);
+  
+  /// @dev Emitted on `borrow` and `flashLoan` when debt needs to be opened.
+  ///
+  /// @param reserve        The address of the underlying asset being borrowed.
+  /// @param user           The address of the user initiating the `borrow`, receiving the funds on `borrow` or just
+  ///                       initiator of the transaction on `flashLoan`.
+  /// @param onBehalfOf     The address that will be getting the debt.
+  /// @param amount         The amount borrowed out.
+  /// @param borrowRateMode The rate mode: 1 for Stable, 2 for Variable.
+  /// @param borrowRate     The numeric rate at which the user has borrowed.
+  /// @param referral       The referral code used.
+  event Borrow(
+    address indexed reserve,
+    address user,
+    address indexed onBehalfOf,
+    uint256 amount,
+    uint256 borrowRateMode,
+    uint256 borrowRate,
+    uint16 indexed referral
+  );
+
+  /// @dev Emitted on `repay`.
+  ///
+  /// @param reserve The address of the underlying asset of the reserve.
+  /// @param user    The beneficiary of the repayment, getting his debt reduced.
+  /// @param repayer The address of the user initiating the `repay`, providing the funds.
+  /// @param amount  The amount repaid.
+  event Repay(address indexed reserve, address indexed user, address indexed repayer, uint256 amount);
+  
+  /// @dev Emitted on `swapBorrowRateMode`.
+  ///
+  /// @param reserve  The address of the underlying asset of the reserve
+  /// @param user     The address of the user swapping his rate mode
+  /// @param rateMode The rate mode that the user wants to swap to
+  event Swap(address indexed reserve, address indexed user, uint256 rateMode);
+  
+  /// @dev Emitted on `setUserUseReserveAsCollateral`.
+  ///
+  /// @param reserve The address of the underlying asset of the reserve
+  /// @param user    The address of the user enabling the usage as collateral
+  event ReserveUsedAsCollateralEnabled(address indexed reserve, address indexed user);
+
+  /// @dev Emitted on `setUserUseReserveAsCollateral`.
+  ///
+  /// @param reserve The address of the underlying asset of the reserve
+  /// @param user    The address of the user enabling the usage as collateral
+  event ReserveUsedAsCollateralDisabled(address indexed reserve, address indexed user);
+  
+  /// @dev Emitted on `rebalanceStableBorrowRate`.
+  ///
+  /// @param reserve The address of the underlying asset of the reserve
+  /// @param user    The address of the user for which the rebalance has been executed
+  event RebalanceStableBorrowRate(address indexed reserve, address indexed user);
+
+  /// @dev Emitted on `flashLoan`.
+  ///
+  /// @param target       The address of the flash loan receiver contract.
+  /// @param initiator    The address initiating the flash loan.
+  /// @param asset        The address of the asset being flash borrowed.
+  /// @param amount       The amount flash borrowed.
+  /// @param premium      The fee flash borrowed.
+  /// @param referralCode The referral code used.
+  event FlashLoan(
+    address indexed target,
+    address indexed initiator,
+    address indexed asset,
+    uint256 amount,
+    uint256 premium,
+    uint16 referralCode
+  );
+
+  /// @dev Emitted when the pause is triggered.
+  event Paused();
+
+  /// @dev Emitted when the pause is lifted.
+  event Unpaused();
+
+  /// @dev Emitted when a borrower is liquidated. This event is emitted by the LendingPool via LendingPoolCollateral
+  ///      manager using a DELEGATECALL.
+  ///
+  /// This allows to have the events in the generated ABI for LendingPool.
+  ///
+  /// @param collateralAsset            The address of the underlying asset used as collateral, to receive as result of
+  ///                                   the liquidation.
+  /// @param debtAsset                  The address of the underlying borrowed asset to be repaid with the liquidation.
+  /// @param user                       The address of the borrower getting liquidated.
+  /// @param debtToCover                The debt amount of borrowed `asset` the liquidator wants to cover.
+  /// @param liquidatedCollateralAmount The amount of collateral received by the liquidator.
+  /// @param liquidator                 The address of the liquidator
+  /// @param receiveAToken              `true` if the liquidators wants to receive the collateral aTokens, `false` if
+  ///                                   he wants to receive the underlying collateral asset directly.
+  event LiquidationCall(
+    address indexed collateralAsset,
+    address indexed debtAsset,
+    address indexed user,
+    uint256 debtToCover,
+    uint256 liquidatedCollateralAmount,
+    address liquidator,
+    bool receiveAToken
+  );
+
+  /// @dev Emitted when the state of a reserve is updated.
+  ///
+  /// NOTE: This event is actually declared in the ReserveLogic library and emitted in the `updateInterestRates`
+  /// function. Since the function is internal, the event will actually be fired by the LendingPool contract. The event
+  /// is therefore replicated here so it gets added to the LendingPool ABI.
+  ///
+  /// @param reserve             The address of the underlying asset of the reserve.
+  /// @param liquidityRate       The new liquidity rate.
+  /// @param stableBorrowRate    The new stable borrow rate.
+  /// @param variableBorrowRate  The new variable borrow rate.
+  /// @param liquidityIndex      The new liquidity index
+  /// @param variableBorrowIndex The new variable borrow index
+  event ReserveDataUpdated(
+    address indexed reserve,
+    uint256 liquidityRate,
+    uint256 stableBorrowRate,
+    uint256 variableBorrowRate,
+    uint256 liquidityIndex,
+    uint256 variableBorrowIndex
+  );
+
+  /// @dev Deposits an `amount` of underlying asset into the reserve, receiving in return overlying aTokens.
+  ///
+  /// - E.g. User deposits 100 USDC and gets in return 100 aUSDC.
+  ///
+  /// @param asset        The address of the underlying asset to deposit.
+  /// @param amount       The amount to be deposited.
+  /// @param onBehalfOf   The address that will receive the aTokens, same as msg.sender if the user wants to receive
+  ///                     them on his own wallet, or a different address if the beneficiary of aTokens is a different
+  ///                     wallet.
+  /// @param referralCode Code used to register the integrator originating the operation, for potential rewards.0 if the
+  ///                     action is executed directly by the user, without any middle-man
+  function deposit(
+    address asset,
+    uint256 amount,
+    address onBehalfOf,
+    uint16 referralCode
+  ) external;
+
+  /// @dev Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned.
+  ///
+  /// E.g. User has 100 aUSDC, calls `withdraw` and receives 100 USDC, burning the 100 aUSDC.
+  ///
+  /// @param asset  The address of the underlying asset to withdraw
+  /// @param amount The underlying amount to be withdrawn.
+  /// @param to     Address that will receive the underlying, same as msg.sender if the user wants to receive it on his
+  ///               own wallet, or a different address if the beneficiary is a different wallet.
+  ///
+  /// @return amountWithdrawn The final amount withdrawn
+  function withdraw(
+    address asset,
+    uint256 amount,
+    address to
+  ) external returns (uint256 amountWithdrawn);
+
+  /// @dev Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower
+  ///     already deposited enough collateral, or he was given enough allowance by a credit delegator on the
+  ///     corresponding debt token (StableDebtToken or VariableDebtToken).
+  ///
+  /// - E.g. User borrows 100 USDC passing as `onBehalfOf` his own address, receiving the 100 USDC in his wallet and
+  ///   100 stable/variable debt tokens, depending on the `interestRateMode`.
+  ///
+  /// @param asset            The address of the underlying asset to borrow.
+  /// @param amount           The amount to be borrowed.
+  /// @param interestRateMode The interest rate mode at which the user wants to borrow: 1 for Stable, 2 for Variable
+  /// @param referralCode     Code used to register the integrator originating the operation, for potential rewards.
+  ///                         0 if the action is executed directly by the user, without any middle-man
+  /// @param onBehalfOf       Address of the user who will receive the debt. Should be the address of the borrower
+  ///                         itself calling the function if he wants to borrow against his own collateral, or the
+  ///                         address of the credit delegator if he has been given credit delegation allowance
+  function borrow(
+    address asset,
+    uint256 amount,
+    uint256 interestRateMode,
+    uint16 referralCode,
+    address onBehalfOf
+  ) external;
+
+  /// @notice Repays a borrowed `amount` on a specific reserve, burning the equivalent debt tokens owned.
+  ///
+  /// - E.g. User repays 100 USDC, burning 100 variable/stable debt tokens of the `onBehalfOf` address.
+  ///
+  /// @param asset      The address of the borrowed underlying asset previously borrowed.
+  /// @param amount     The amount to repay.
+  /// @param rateMode   The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable
+  /// @param onBehalfOf Address of the user who will get his debt reduced/removed. Should be the address of the user
+  ///                   calling the function if he wants to reduce/remove his own debt, or the address of any other
+  ///                   other borrower whose debt should be removed.
+  ///
+  /// @return amountRepaid The final amount repaid.
+  function repay(
+    address asset,
+    uint256 amount,
+    uint256 rateMode,
+    address onBehalfOf
+  ) external returns (uint256 amountRepaid);
+
+  /// @dev Allows a borrower to swap his debt between stable and variable mode, or vice versa.
+  ///
+  /// @param asset    The address of the underlying asset borrowed.
+  /// @param rateMode The rate mode that the user wants to swap to.
+  function swapBorrowRateMode(address asset, uint256 rateMode) external;
+
+  /// @dev Rebalances the stable interest rate of a user to the current stable rate defined on the reserve.
+  ///
+  /// - Users can be rebalanced if the following conditions are satisfied:
+  ///   1. Usage ratio is above 95%
+  ///   2. the current deposit APY is below REBALANCE_UP_THRESHOLD  maxVariableBorrowRate, which means that too much
+  ///      has been borrowed at a stable rate and depositors are not earning enough.
+  ///
+  /// @param asset The address of the underlying asset borrowed.
+  /// @param user The address of the user to be rebalanced.
+  function rebalanceStableBorrowRate(address asset, address user) external;
+
+  /// @dev Allows depositors to enable/disable a specific deposited asset as collateral.
+  ///
+  /// @param asset            The address of the underlying asset deposited.
+  /// @param useAsCollateral `true` if the user wants to use the deposit as collateral, `false` otherwise.
+  function setUserUseReserveAsCollateral(address asset, bool useAsCollateral) external;
+  
+  /// @dev Function to liquidate a non-healthy position collateral-wise, with Health Factor below 1.
+  ///
+  /// - The caller (liquidator) covers `debtToCover` amount of debt of the user getting liquidated, and receives a
+  ///   proportionally amount of the `collateralAsset` plus a bonus to cover market risk.
+  ///
+  /// @param collateralAsset The address of the underlying asset used as collateral, to receive as result of the
+  ///                        liquidation.
+  /// @param debtAsset       The address of the underlying borrowed asset to be repaid with the liquidation.
+  /// @param user            The address of the borrower getting liquidated.
+  /// @param debtToCover     The debt amount of borrowed `asset` the liquidator wants to cover.
+  /// @param receiveAToken   `true` if the liquidators wants to receive the collateral aTokens, `false` if he wants to
+  ///                        receive the underlying collateral asset directly
+  function liquidationCall(
+    address collateralAsset,
+    address debtAsset,
+    address user,
+    uint256 debtToCover,
+    bool receiveAToken
+  ) external;
+
+  /// @dev Allows smart contracts to access the liquidity of the pool within one transaction, as long as the amount
+  ///      taken plus a fee is returned.
+  ///
+  /// IMPORTANT There are security concerns for developers of flash loan receiver contracts that must be kept into
+  /// consideration.
+  ///
+  /// For further details please visit https://developers.aave.com.
+  ///
+  /// @param receiverAddress The address of the contract receiving the funds, implementing the IFlashLoanReceiver
+  ///                        interface.
+  /// @param assets          The addresses of the assets being flash-borrowed.
+  /// @param amounts         The amounts amounts being flash-borrowed.
+  /// @param modes           Types of the debt to open if the flash loan is not returned.
+  /// @param onBehalfOf      The address  that will receive the debt in the case of using on `modes` 1 or 2.
+  /// @param params          Variadic packed params to pass to the receiver as extra information.
+  /// @param referralCode    Code used to register the integrator originating the operation, for potential rewards. 0
+  ///                        if the action is executed directly by the user, without any middle-man
+  function flashLoan(
+    address receiverAddress,
+    address[] calldata assets,
+    uint256[] calldata amounts,
+    uint256[] calldata modes,
+    address onBehalfOf,
+    bytes calldata params,
+    uint16 referralCode
+  ) external;
+
+  /// @dev Returns the user account data across all the reserves.
+  ///
+  /// @param user The address of the user.
+  ///
+  /// @return totalCollateralETH          The total collateral in ETH of the user.
+  /// @return totalDebtETH                The total debt in ETH of the user.
+  /// @return availableBorrowsETH         The borrowing power left of the user.
+  /// @return currentLiquidationThreshold The liquidation threshold of the user.
+  /// @return ltv                         The loan to value of the user.
+  /// @return healthFactor                The current health factor of the user.
+  function getUserAccountData(address user)
+    external
+    view
+    returns (
+      uint256 totalCollateralETH,
+      uint256 totalDebtETH,
+      uint256 availableBorrowsETH,
+      uint256 currentLiquidationThreshold,
+      uint256 ltv,
+      uint256 healthFactor
+    );
+
+  function initReserve(
+    address reserve,
+    address aTokenAddress,
+    address stableDebtAddress,
+    address variableDebtAddress,
+    address interestRateStrategyAddress
+  ) external;
+
+    /**
+   * @notice Supplies an `amount` of underlying asset into the reserve, receiving in return overlying aTokens.
+   * - E.g. User supplies 100 USDC and gets in return 100 aUSDC
+   * @param asset The address of the underlying asset to supply
+   * @param amount The amount to be supplied
+   * @param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user
+   *   wants to receive them on his own wallet, or a different address if the beneficiary of aTokens
+   *   is a different wallet
+   * @param referralCode Code used to register the integrator originating the operation, for potential rewards.
+   *   0 if the action is executed directly by the user, without any middle-man
+   **/
+  function supply(
+    address asset,
+    uint256 amount,
+    address onBehalfOf,
+    uint16 referralCode
+  ) external;
+
+  function setReserveInterestRateStrategyAddress(address reserve, address rateStrategyAddress) external;
+
+  function setConfiguration(address reserve, uint256 configuration) external;
+
+  /// @dev Returns the configuration of the reserve.
+  ///
+  /// @param asset The address of the underlying asset of the reserve.
+  ///
+  /// @return The configuration of the reserve.
+  function getConfiguration(address asset) external view returns (ReserveConfigurationMap memory);
+
+  /// @dev Returns the configuration of the user across all the reserves.
+  ///
+  /// @param user The user address.
+  ///
+  /// @return The configuration of the user.
+  function getUserConfiguration(address user) external view returns (UserConfigurationMap memory);
+  
+  /// @dev Returns the normalized income normalized income of the reserve.
+  ///
+  /// @param asset The address of the underlying asset of the reserve.
+  ///
+  /// @return The reserve's normalized income.
+  function getReserveNormalizedIncome(address asset) external view returns (uint256);
+
+  /// @dev Returns the normalized variable debt per unit of asset.`
+  ///
+  /// @param asset The address of the underlying asset of the reserve.
+  ///
+  /// @return The reserve normalized variable debt.
+  function getReserveNormalizedVariableDebt(address asset) external view returns (uint256);
+
+  /// @dev Returns the state and configuration of the reserve.
+  ///
+  /// @param asset The address of the underlying asset of the reserve.
+  ///
+  /// @return The state of the reserve.
+  function getReserveData(address asset) external view returns (ReserveData memory);
+
+  function finalizeTransfer(
+    address asset,
+    address from,
+    address to,
+    uint256 amount,
+    uint256 balanceFromAfter,
+    uint256 balanceToBefore
+  ) external;
+
+  function getReservesList() external view returns (address[] memory);
+
+  function getAddressesProvider() external view returns (ILendingPoolAddressesProvider);
+
+  function setPause(bool val) external;
+
+  function paused() external view returns (bool);
+}
+
+
+// File src/interfaces/external/aave/IAaveIncentivesController.sol
+
+pragma solidity >=0.5.0;
+pragma experimental ABIEncoderV2;
+
+interface IAaveIncentivesController {
+  event RewardsAccrued(address indexed user, uint256 amount);
+
+  event RewardsClaimed(address indexed user, address indexed to, uint256 amount);
+
+  event RewardsClaimed(
+    address indexed user,
+    address indexed to,
+    address indexed claimer,
+    uint256 amount
+  );
+
+  event ClaimerSet(address indexed user, address indexed claimer);
+
+  /*
+   * @dev Returns the configuration of the distribution for a certain asset
+   * @param asset The address of the reference asset of the distribution
+   * @return The asset index, the emission per second and the last updated timestamp
+   **/
+  function getAssetData(address asset)
+    external
+    view
+    returns (
+      uint256,
+      uint256,
+      uint256
+    );
+
+  /**
+   * @dev Whitelists an address to claim the rewards on behalf of another address
+   * @param user The address of the user
+   * @param claimer The address of the claimer
+   */
+  function setClaimer(address user, address claimer) external;
+
+  /**
+   * @dev Returns the whitelisted claimer for a certain address (0x0 if not set)
+   * @param user The address of the user
+   * @return The claimer address
+   */
+  function getClaimer(address user) external view returns (address);
+
+  /**
+   * @dev Configure assets for a certain rewards emission
+   * @param assets The assets to incentivize
+   * @param emissionsPerSecond The emission for each asset
+   */
+  function configureAssets(address[] calldata assets, uint256[] calldata emissionsPerSecond)
+    external;
+
+  /**
+   * @dev Called by the corresponding asset on any update that affects the rewards distribution
+   * @param asset The address of the user
+   * @param userBalance The balance of the user of the asset in the lending pool
+   * @param totalSupply The total supply of the asset in the lending pool
+   **/
+  function handleAction(
+    address asset,
+    uint256 userBalance,
+    uint256 totalSupply
+  ) external;
+
+  /**
+   * @dev Returns the total of rewards of an user, already accrued + not yet accrued
+   * @param user The address of the user
+   * @return The rewards
+   **/
+  function getRewardsBalance(address[] calldata assets, address user)
+    external
+    view
+    returns (uint256);
+
+  /**
+   * @dev Claims reward for an user, on all the assets of the lending pool, accumulating the pending rewards
+   * @param amount Amount of rewards to claim
+   * @param to Address that will be receiving the rewards
+   * @return Rewards claimed
+   **/
+  function claimRewards(
+    address[] calldata assets,
+    uint256 amount,
+    address to
+  ) external returns (uint256);
+
+  /**
+   * @dev Claims reward for an user on behalf, on all the assets of the lending pool, accumulating the pending rewards. The caller must
+   * be whitelisted via "allowClaimOnBehalf" function by the RewardsAdmin role manager
+   * @param amount Amount of rewards to claim
+   * @param user Address to check and claim rewards
+   * @param to Address that will be receiving the rewards
+   * @return Rewards claimed
+   **/
+  function claimRewardsOnBehalf(
+    address[] calldata assets,
+    uint256 amount,
+    address user,
+    address to
+  ) external returns (uint256);
+
+  /**
+   * @dev returns the unclaimed rewards of the user
+   * @param user the address of the user
+   * @return the unclaimed user rewards
+   */
+  function getUserUnclaimedRewards(address user) external view returns (uint256);
+
+  /**
+   * @dev returns the unclaimed rewards of the user
+   * @param user the address of the user
+   * @param asset The asset to incentivize
+   * @return the user index for the asset
+   */
+  function getUserAssetData(address user, address asset) external view returns (uint256);
+
+  /**
+   * @dev for backward compatibility with previous implementation of the Incentives controller
+   */
+  function REWARD_TOKEN() external view returns (address);
+
+  /**
+   * @dev for backward compatibility with previous implementation of the Incentives controller
+   */
+  function PRECISION() external view returns (uint8);
+}
+
+
+// File src/interfaces/external/aave/IInitializableAToken.sol
+
+pragma solidity >=0.5.0;
+
+
+/**
+ * @title IInitializableAToken
+ * @notice Interface for the initialize function on AToken
+ * @author Aave
+ **/
+interface IInitializableAToken {
+  /**
+   * @dev Emitted when an aToken is initialized
+   * @param underlyingAsset The address of the underlying asset
+   * @param pool The address of the associated lending pool
+   * @param treasury The address of the treasury
+   * @param incentivesController The address of the incentives controller for this aToken
+   * @param aTokenDecimals the decimals of the underlying
+   * @param aTokenName the name of the aToken
+   * @param aTokenSymbol the symbol of the aToken
+   * @param params A set of encoded parameters for additional initialization
+   **/
+  event Initialized(
+    address indexed underlyingAsset,
+    address indexed pool,
+    address treasury,
+    address incentivesController,
+    uint8 aTokenDecimals,
+    string aTokenName,
+    string aTokenSymbol,
+    bytes params
+  );
+
+  /**
+   * @dev Initializes the aToken
+   * @param pool The address of the lending pool where this aToken will be used
+   * @param treasury The address of the Aave treasury, receiving the fees on this aToken
+   * @param underlyingAsset The address of the underlying asset of this aToken (E.g. WETH for aWETH)
+   * @param incentivesController The smart contract managing potential incentives distribution
+   * @param aTokenDecimals The decimals of the aToken, same as the underlying asset's
+   * @param aTokenName The name of the aToken
+   * @param aTokenSymbol The symbol of the aToken
+   */
+  function initialize(
+    ILendingPool pool,
+    address treasury,
+    address underlyingAsset,
+    IAaveIncentivesController incentivesController,
+    uint8 aTokenDecimals,
+    string calldata aTokenName,
+    string calldata aTokenSymbol,
+    bytes calldata params
+  ) external;
+}
+
+
+// File src/interfaces/external/aave/IAToken.sol
+
+pragma solidity >=0.5.0;
+
+
+
+
+interface IAToken is IERC20, IScaledBalanceToken, IInitializableAToken {
+  /**
+   * @dev Emitted after the mint action
+   * @param from The address performing the mint
+   * @param value The amount being
+   * @param index The new liquidity index of the reserve
+   **/
+  event Mint(address indexed from, uint256 value, uint256 index);
+
+  /**
+   * @dev Mints `amount` aTokens to `user`
+   * @param user The address receiving the minted tokens
+   * @param amount The amount of tokens getting minted
+   * @param index The new liquidity index of the reserve
+   * @return `true` if the the previous balance of the user was 0
+   */
+  function mint(
+    address user,
+    uint256 amount,
+    uint256 index
+  ) external returns (bool);
+
+  /**
+   * @dev Emitted after aTokens are burned
+   * @param from The owner of the aTokens, getting them burned
+   * @param target The address that will receive the underlying
+   * @param value The amount being burned
+   * @param index The new liquidity index of the reserve
+   **/
+  event Burn(address indexed from, address indexed target, uint256 value, uint256 index);
+
+  /**
+   * @dev Emitted during the transfer action
+   * @param from The user whose tokens are being transferred
+   * @param to The recipient
+   * @param value The amount being transferred
+   * @param index The new liquidity index of the reserve
+   **/
+  event BalanceTransfer(address indexed from, address indexed to, uint256 value, uint256 index);
+
+  /**
+   * @dev Burns aTokens from `user` and sends the equivalent amount of underlying to `receiverOfUnderlying`
+   * @param user The owner of the aTokens, getting them burned
+   * @param receiverOfUnderlying The address that will receive the underlying
+   * @param amount The amount being burned
+   * @param index The new liquidity index of the reserve
+   **/
+  function burn(
+    address user,
+    address receiverOfUnderlying,
+    uint256 amount,
+    uint256 index
+  ) external;
+
+  /**
+   * @dev Mints aTokens to the reserve treasury
+   * @param amount The amount of tokens getting minted
+   * @param index The new liquidity index of the reserve
+   */
+  function mintToTreasury(uint256 amount, uint256 index) external;
+
+  /**
+   * @dev Transfers aTokens in the event of a borrow being liquidated, in case the liquidators reclaims the aToken
+   * @param from The address getting liquidated, current owner of the aTokens
+   * @param to The recipient
+   * @param value The amount of tokens getting transferred
+   **/
+  function transferOnLiquidation(
+    address from,
+    address to,
+    uint256 value
+  ) external;
+
+  /**
+   * @dev Transfers the underlying asset to `target`. Used by the LendingPool to transfer
+   * assets in borrow(), withdraw() and flashLoan()
+   * @param user The recipient of the underlying
+   * @param amount The amount getting transferred
+   * @return The amount transferred
+   **/
+  function transferUnderlyingTo(address user, uint256 amount) external returns (uint256);
+
+  /**
+   * @dev Invoked to execute actions on the aToken side after a repayment.
+   * @param user The user executing the repayment
+   * @param amount The amount getting repaid
+   **/
+  function handleRepayment(address user, uint256 amount) external;
+
+  /**
+   * @dev Returns the address of the incentives controller contract
+   **/
+  function getIncentivesController() external view returns (IAaveIncentivesController);
+
+  /**
+   * @dev Returns the address of the underlying asset of this aToken (E.g. WETH for aWETH)
+   **/
+  function UNDERLYING_ASSET_ADDRESS() external view returns (address);
+}
+
+
+// File src/interfaces/external/aave/IStaticAToken.sol
+
+pragma solidity >=0.5.0;
+
+
+/// @title  IStaticAToken
+/// @author Aave
+///
+/// @dev Wrapper token that allows to deposit tokens on the Aave protocol and receive token which balance doesn't
+///      increase automatically, but uses an ever-increasing exchange rate. Only supporting deposits and withdrawals.
+interface IStaticAToken is IERC20 {
+  struct SignatureParams {
+    uint8 v;
+    bytes32 r;
+    bytes32 s;
+  }
+
+  function LENDING_POOL() external returns (ILendingPool);
+  function ATOKEN() external view returns (IERC20);
+  function ASSET() external returns (IERC20);
+
+  function _nonces(address owner) external returns (uint256);
+
+  function claimRewards() external;
+
+  function deposit(
+    address recipient,
+    uint256 amount,
+    uint16 referralCode,
+    bool fromUnderlying
+  ) external returns (uint256);
+
+  function withdraw(
+    address recipient,
+    uint256 amount,
+    bool toUnderlying
+  ) external returns (uint256, uint256);
+
+  function withdrawDynamicAmount(
+    address recipient,
+    uint256 amount,
+    bool toUnderlying
+  ) external returns (uint256, uint256);
+
+  function permit(
+    address owner,
+    address spender,
+    uint256 value,
+    uint256 deadline,
+    uint8 v,
+    bytes32 r,
+    bytes32 s,
+    uint256 chainId
+  ) external;
+
+  function metaDeposit(
+    address depositor,
+    address recipient,
+    uint256 value,
+    uint16 referralCode,
+    bool fromUnderlying,
+    uint256 deadline,
+    SignatureParams calldata sigParams,
+    uint256 chainId
+  ) external returns (uint256);
+
+  function metaWithdraw(
+    address owner,
+    address recipient,
+    uint256 staticAmount,
+    uint256 dynamicAmount,
+    bool toUnderlying,
+    uint256 deadline,
+    SignatureParams calldata sigParams,
+    uint256 chainId
+  ) external returns (uint256, uint256);
+
+  function dynamicBalanceOf(address account) external view returns (uint256);
+
+  /// @dev Converts a static amount (scaled balance on aToken) to the aToken/underlying value, using the current
+  ///      liquidity index on Aave.
+  ///
+  /// @param amount The amount to convert from.
+  ///
+  /// @return dynamicAmount The dynamic amount.
+  function staticToDynamicAmount(uint256 amount) external view returns (uint256 dynamicAmount);
+
+  /// @dev Converts an aToken or underlying amount to the what it is denominated on the aToken as scaled balance,
+  ///      function of the principal and the liquidity index.
+  ///
+  /// @param amount The amount to convert from.
+  ///
+  /// @return staticAmount The static (scaled) amount.
+  function dynamicToStaticAmount(uint256 amount) external view returns (uint256 staticAmount);
+
+  /// @dev Returns the Aave liquidity index of the underlying aToken, denominated rate here as it can be considered as
+  ///      an ever-increasing exchange rate.
+  ///
+  /// @return The rate.
+  function rate() external view returns (uint256);
+
+  /// @dev Function to return a dynamic domain separator, in order to be compatible with forks changing chainId.
+  ///
+  /// @param chainId The chain id.
+  ///
+  /// @return The domain separator.
+  function getDomainSeparator(uint256 chainId) external returns (bytes32);
+}
+
+
 // File src/interfaces/keepers/IResolver.sol
 
 pragma solidity ^0.8.13;
@@ -710,6 +1969,15 @@ interface IAlchemistV2AdminActions {
     /// @param yieldToken The address of the yield token whose rewards are being swept.
     function sweepRewardTokens(address rewardToken, address yieldToken) external;
 
+     /// @notice Sweep all of 'token' from the alchemist into the admin.
+    ///
+    /// @notice `msg.sender` must be the admin or this call will revert with an {Unauthorized} error.
+    /// @notice `token` must not be a yield or underlying token or this call will revert with a {UnsupportedToken} error.
+    ///
+    /// @param token The address of the token to sweep.
+    /// @param amount The amount of 'token' to sweep to the admin.
+    function sweepTokens(address token, uint256 amount) external;
+
     /// @notice Set the address of the V1 transfer adapter.
     ///
     /// @notice `msg.sender` must be the admin or this call will revert with an {Unauthorized} error.
@@ -1322,10 +2590,10 @@ pragma solidity ^0.8.13;
 interface IAlchemixHarvester {
   function harvest(
     address alchemist,
-    address yieldToken
+    address yieldToken,
+    uint256 minimumAmountOut,
+    uint256 expectedExchange
   ) external;
-
-  function setRewardRouter(address router) external;
 }
 
 
@@ -1379,88 +2647,287 @@ interface ITokenAdapter {
 }
 
 
-// File lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol
+// File src/interfaces/external/vesper/IVesperRewards.sol
 
-// OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)
 
-pragma solidity ^0.8.0;
+pragma solidity >=0.6.12;
 
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20 {
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
+interface IVesperRewards {
+    function claimReward(address) external;
 
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
+    function claimable(address) external view returns (address[] memory, uint256[] memory);
 
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
+    function rewardTokens(uint256) external view returns (address);
+}
 
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
 
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `to`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address to, uint256 amount) external returns (bool);
+// File src/interfaces/external/chainlink/IChainlinkOracle.sol
 
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
+pragma solidity >= 0.6.6;
 
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
+interface IChainlinkOracle {
+  function latestAnswer() external view returns (int256);
+  function latestTimestamp() external view returns (uint256);
+  function latestRound() external view returns (uint256);
+  function getAnswer(uint256 roundId) external view returns (int256);
+  function getTimestamp(uint256 roundId) external view returns (uint256);
 
-    /**
-     * @dev Moves `amount` tokens from `from` to `to` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(
-        address from,
-        address to,
-        uint256 amount
-    ) external returns (bool);
+  event AnswerUpdated(int256 indexed current, uint256 indexed roundId, uint256 updatedAt);
+  event NewRound(uint256 indexed roundId, address indexed startedBy, uint256 startedAt);
+}
+
+
+// File src/interfaces/external/uniswap/IUniswapV3Factory.sol
+
+pragma solidity >=0.5.0;
+
+/// @title The interface for the Uniswap V3 Factory
+/// @notice The Uniswap V3 Factory facilitates creation of Uniswap V3 pools and control over the protocol fees
+interface IUniswapV3Factory {
+    /// @notice Emitted when the owner of the factory is changed
+    /// @param oldOwner The owner before the owner was changed
+    /// @param newOwner The owner after the owner was changed
+    event OwnerChanged(address indexed oldOwner, address indexed newOwner);
+
+    /// @notice Emitted when a pool is created
+    /// @param token0 The first token of the pool by address sort order
+    /// @param token1 The second token of the pool by address sort order
+    /// @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip
+    /// @param tickSpacing The minimum number of ticks between initialized ticks
+    /// @param pool The address of the created pool
+    event PoolCreated(
+        address indexed token0,
+        address indexed token1,
+        uint24 indexed fee,
+        int24 tickSpacing,
+        address pool
+    );
+
+    /// @notice Emitted when a new fee amount is enabled for pool creation via the factory
+    /// @param fee The enabled fee, denominated in hundredths of a bip
+    /// @param tickSpacing The minimum number of ticks between initialized ticks for pools created with the given fee
+    event FeeAmountEnabled(uint24 indexed fee, int24 indexed tickSpacing);
+
+    /// @notice Returns the current owner of the factory
+    /// @dev Can be changed by the current owner via setOwner
+    /// @return The address of the factory owner
+    function owner() external view returns (address);
+
+    /// @notice Returns the tick spacing for a given fee amount, if enabled, or 0 if not enabled
+    /// @dev A fee amount can never be removed, so this value should be hard coded or cached in the calling context
+    /// @param fee The enabled fee, denominated in hundredths of a bip. Returns 0 in case of unenabled fee
+    /// @return The tick spacing
+    function feeAmountTickSpacing(uint24 fee) external view returns (int24);
+
+    /// @notice Returns the pool address for a given pair of tokens and a fee, or address 0 if it does not exist
+    /// @dev tokenA and tokenB may be passed in either token0/token1 or token1/token0 order
+    /// @param tokenA The contract address of either token0 or token1
+    /// @param tokenB The contract address of the other token
+    /// @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip
+    /// @return pool The pool address
+    function getPool(
+        address tokenA,
+        address tokenB,
+        uint24 fee
+    ) external view returns (address pool);
+
+    /// @notice Creates a pool for the given two tokens and fee
+    /// @param tokenA One of the two tokens in the desired pool
+    /// @param tokenB The other of the two tokens in the desired pool
+    /// @param fee The desired fee for the pool
+    /// @dev tokenA and tokenB may be passed in either order: token0/token1 or token1/token0. tickSpacing is retrieved
+    /// from the fee. The call will revert if the pool already exists, the fee is invalid, or the token arguments
+    /// are invalid.
+    /// @return pool The address of the newly created pool
+    function createPool(
+        address tokenA,
+        address tokenB,
+        uint24 fee
+    ) external returns (address pool);
+
+    /// @notice Updates the owner of the factory
+    /// @dev Must be called by the current owner
+    /// @param _owner The new owner of the factory
+    function setOwner(address _owner) external;
+
+    /// @notice Enables a fee amount with the given tickSpacing
+    /// @dev Fee amounts may never be removed once enabled
+    /// @param fee The fee amount to enable, denominated in hundredths of a bip (i.e. 1e-6)
+    /// @param tickSpacing The spacing between ticks to be enforced for all pools created with the given fee amount
+    function enableFeeAmount(uint24 fee, int24 tickSpacing) external;
+}
+
+
+// File src/interfaces/external/uniswap/pool/IUniswapV3PoolState.sol
+
+pragma solidity >=0.5.0;
+
+/// @title Pool state that can change
+/// @notice These methods compose the pool's state, and can change with any frequency including multiple times
+/// per transaction
+interface IUniswapV3PoolState {
+    /// @notice The 0th storage slot in the pool stores many values, and is exposed as a single method to save gas
+    /// when accessed externally.
+    /// @return sqrtPriceX96 The current price of the pool as a sqrt(token1/token0) Q64.96 value
+    /// tick The current tick of the pool, i.e. according to the last tick transition that was run.
+    /// This value may not always be equal to SqrtTickMath.getTickAtSqrtRatio(sqrtPriceX96) if the price is on a tick
+    /// boundary.
+    /// observationIndex The index of the last oracle observation that was written,
+    /// observationCardinality The current maximum number of observations stored in the pool,
+    /// observationCardinalityNext The next maximum number of observations, to be updated when the observation.
+    /// feeProtocol The protocol fee for both tokens of the pool.
+    /// Encoded as two 4 bit values, where the protocol fee of token1 is shifted 4 bits and the protocol fee of token0
+    /// is the lower 4 bits. Used as the denominator of a fraction of the swap fee, e.g. 4 means 1/4th of the swap fee.
+    /// unlocked Whether the pool is currently locked to reentrancy
+    function slot0()
+        external
+        view
+        returns (
+            uint160 sqrtPriceX96,
+            int24 tick,
+            uint16 observationIndex,
+            uint16 observationCardinality,
+            uint16 observationCardinalityNext,
+            uint8 feeProtocol,
+            bool unlocked
+        );
+
+    /// @notice The fee growth as a Q128.128 fees of token0 collected per unit of liquidity for the entire life of the pool
+    /// @dev This value can overflow the uint256
+    function feeGrowthGlobal0X128() external view returns (uint256);
+
+    /// @notice The fee growth as a Q128.128 fees of token1 collected per unit of liquidity for the entire life of the pool
+    /// @dev This value can overflow the uint256
+    function feeGrowthGlobal1X128() external view returns (uint256);
+
+    /// @notice The amounts of token0 and token1 that are owed to the protocol
+    /// @dev Protocol fees will never exceed uint128 max in either token
+    function protocolFees() external view returns (uint128 token0, uint128 token1);
+
+    /// @notice The currently in range liquidity available to the pool
+    /// @dev This value has no relationship to the total liquidity across all ticks
+    function liquidity() external view returns (uint128);
+
+    /// @notice Look up information about a specific tick in the pool
+    /// @param tick The tick to look up
+    /// @return liquidityGross the total amount of position liquidity that uses the pool either as tick lower or
+    /// tick upper,
+    /// liquidityNet how much liquidity changes when the pool price crosses the tick,
+    /// feeGrowthOutside0X128 the fee growth on the other side of the tick from the current tick in token0,
+    /// feeGrowthOutside1X128 the fee growth on the other side of the tick from the current tick in token1,
+    /// tickCumulativeOutside the cumulative tick value on the other side of the tick from the current tick
+    /// secondsPerLiquidityOutsideX128 the seconds spent per liquidity on the other side of the tick from the current tick,
+    /// secondsOutside the seconds spent on the other side of the tick from the current tick,
+    /// initialized Set to true if the tick is initialized, i.e. liquidityGross is greater than 0, otherwise equal to false.
+    /// Outside values can only be used if the tick is initialized, i.e. if liquidityGross is greater than 0.
+    /// In addition, these values are only relative and must be used only in comparison to previous snapshots for
+    /// a specific position.
+    function ticks(int24 tick)
+        external
+        view
+        returns (
+            uint128 liquidityGross,
+            int128 liquidityNet,
+            uint256 feeGrowthOutside0X128,
+            uint256 feeGrowthOutside1X128,
+            int56 tickCumulativeOutside,
+            uint160 secondsPerLiquidityOutsideX128,
+            uint32 secondsOutside,
+            bool initialized
+        );
+
+    /// @notice Returns 256 packed tick initialized boolean values. See TickBitmap for more information
+    function tickBitmap(int16 wordPosition) external view returns (uint256);
+
+    /// @notice Returns the information about a position by the position's key
+    /// @param key The position's key is a hash of a preimage composed by the owner, tickLower and tickUpper
+    /// @return _liquidity The amount of liquidity in the position,
+    /// Returns feeGrowthInside0LastX128 fee growth of token0 inside the tick range as of the last mint/burn/poke,
+    /// Returns feeGrowthInside1LastX128 fee growth of token1 inside the tick range as of the last mint/burn/poke,
+    /// Returns tokensOwed0 the computed amount of token0 owed to the position as of the last mint/burn/poke,
+    /// Returns tokensOwed1 the computed amount of token1 owed to the position as of the last mint/burn/poke
+    function positions(bytes32 key)
+        external
+        view
+        returns (
+            uint128 _liquidity,
+            uint256 feeGrowthInside0LastX128,
+            uint256 feeGrowthInside1LastX128,
+            uint128 tokensOwed0,
+            uint128 tokensOwed1
+        );
+
+    /// @notice Returns data about a specific observation index
+    /// @param index The element of the observations array to fetch
+    /// @dev You most likely want to use #observe() instead of this method to get an observation as of some amount of time
+    /// ago, rather than at a specific index in the array.
+    /// @return blockTimestamp The timestamp of the observation,
+    /// Returns tickCumulative the tick multiplied by seconds elapsed for the life of the pool as of the observation timestamp,
+    /// Returns secondsPerLiquidityCumulativeX128 the seconds per in range liquidity for the life of the pool as of the observation timestamp,
+    /// Returns initialized whether the observation has been initialized and the values are safe to use
+    function observations(uint256 index)
+        external
+        view
+        returns (
+            uint32 blockTimestamp,
+            int56 tickCumulative,
+            uint160 secondsPerLiquidityCumulativeX128,
+            bool initialized
+        );
+}
+
+
+// File src/interfaces/external/uniswap/IUniswapV3Pool.sol
+
+pragma solidity >=0.5.0;
+
+// import './pool/IUniswapV3PoolImmutables.sol';
+
+// import './pool/IUniswapV3PoolDerivedState.sol';
+// import './pool/IUniswapV3PoolActions.sol';
+// import './pool/IUniswapV3PoolOwnerActions.sol';
+// import './pool/IUniswapV3PoolEvents.sol';
+
+/// @title The interface for a Uniswap V3 Pool
+/// @notice A Uniswap pool facilitates swapping and automated market making between any two assets that strictly conform
+/// to the ERC20 specification
+/// @dev The pool interface is broken up into many smaller pieces
+interface IUniswapV3Pool is
+    // IUniswapV3PoolImmutables,
+    IUniswapV3PoolState
+    // IUniswapV3PoolDerivedState,
+    // IUniswapV3PoolActions,
+    // IUniswapV3PoolOwnerActions,
+    // IUniswapV3PoolEvents
+{
+
+}
+
+
+// File src/utils/UniswapEstimatedPrice.sol
+
+pragma solidity ^0.8.13;
+
+
+/// @title  UniswapEstimatedPrice
+/// @author Alchemix Finance
+contract UniswapEstimatedPrice {
+    // Set `token2` == 0 address for only one swap
+    function getExpectedExchange(address factory, address token0, address token1, uint24 fee0, address token2, uint24 fee1, uint256 amount) external returns (uint256) {
+        IUniswapV3Factory uniswapFactory = IUniswapV3Factory(factory);
+
+        IUniswapV3Pool pool = IUniswapV3Pool(uniswapFactory.getPool(token0, token1, fee0));
+        (uint160 sqrtPriceX96,,,,,,) =  pool.slot0();
+        uint256 price0 = uint(sqrtPriceX96) * (uint(sqrtPriceX96)) * (1e18) >> (96 * 2);
+
+        if (token2 == address(0)) return amount * price0 / 1e18;
+
+        pool = IUniswapV3Pool(uniswapFactory.getPool(token1, token2, fee1));
+        ( sqrtPriceX96,,,,,,) =  pool.slot0();
+        uint256 price1 = uint(sqrtPriceX96) * (uint(sqrtPriceX96)) * (1e18) >> (96 * 2);
+
+        return amount * price0 / price1;
+    }
 }
 
 
@@ -1863,7 +3330,32 @@ pragma solidity ^0.8.13;
 
 
 
+
+
+
+
+
+
+
 contract HarvestResolver is IResolver, Ownable {
+  address constant alUsdOptimism = 0xCB8FA9a76b8e203D8C3797bF438d8FB81Ea3326A;
+  address constant alEthOptimism = 0x3E29D3A9316dAB217754d13b28646B76607c5f04;
+  address constant ethAlchemistAddress = 0x062Bf725dC4cDF947aa79Ca2aaCCD4F385b13b5c;
+  address constant usdAlchemistAddress = 0x5C6374a2ac4EBC38DeA0Fc1F8716e5Ea1AdD94dd;
+  address constant dai = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
+  address constant opRewardsController = 0x929EC64c34a17401F460460D4B9390518E5B473e;
+  address constant opToUsdOracle = 0x0D276FC14719f9292D5C1eA2198673d1f4269246;
+  address constant ethToUsdOracle = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
+  address constant uniswapFactory = 0x1F98431c8aD98523631AE4a59f267346ea31F984;
+  address constant wethAddress = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+  address constant vaDAI = 0x0538C8bAc84E95A9dF8aC10Aad17DbE81b9E36ee;
+  address constant vaUSDC = 0xa8b607Aa09B6A2E306F93e74c282Fb13f6A80452;
+  address constant vaETH = 0xd1C117319B3595fbc39b471AB1fd485629eb05F2;
+  address constant vesperRewardsDai = 0x35864296944119F72AA1B468e13449222f3f0E67;
+  address constant vesperRewardsUsdc = 0x2F59B0F98A08E733C66dFB42Bd8E366dC2cfedA6;
+  address constant vesperRewardsEth = 0x2F59B0F98A08E733C66dFB42Bd8E366dC2cfedA6;
+  address constant vspRewardToken = 0x1b40183EFB4Dd766f11bDa7A7c3AD8982e998421;
+
   /// @notice Thrown when the yield token of a harvest job being added is disabled in the alchemist of the harvest job being added.
   error YieldTokenDisabled();
   /// @notice Thrown when attempting to remove a harvest job that does not currently exist.
@@ -1873,12 +3365,12 @@ contract HarvestResolver is IResolver, Ownable {
   event SetHarvestJob(
     bool active,
     address alchemist,
+    address reward,
     address yieldToken,
     uint256 minimumHarvestAmount,
     uint256 minimumDelay,
     uint256 slippageBps
   );
-
   /// @notice Emitted when a harvester status is updated.
   event SetHarvester(address harvester, bool status);
 
@@ -1891,6 +3383,7 @@ contract HarvestResolver is IResolver, Ownable {
   struct HarvestJob {
     bool active;
     address alchemist;
+    address reward;
     address yieldToken;
     uint256 lastHarvest;
     uint256 minimumHarvestAmount;
@@ -1948,12 +3441,14 @@ contract HarvestResolver is IResolver, Ownable {
   ///
   /// @param active               A flag for whether or not the harvest job is active.
   /// @param alchemist            The address of the alchemist to be harvested.
+  /// @param reward               Address of the reward token. 0 for none.
   /// @param yieldToken           The address of the yield token to be harvested.
   /// @param minimumHarvestAmount The minimum amount of harvestable funds required in order to run the harvest job.
   /// @param minimumDelay         The minimum delay (in seconds) needed between successive runs of the job.
   function addHarvestJob(
     bool active,
     address alchemist,
+    address reward,
     address yieldToken,
     uint256 minimumHarvestAmount,
     uint256 minimumDelay,
@@ -1971,6 +3466,7 @@ contract HarvestResolver is IResolver, Ownable {
     harvestJobs[yieldToken] = HarvestJob(
       active,
       alchemist,
+      reward,
       yieldToken,
       block.timestamp,
       minimumHarvestAmount,
@@ -1978,7 +3474,7 @@ contract HarvestResolver is IResolver, Ownable {
       slippageBps
     );
 
-    emit SetHarvestJob(active, alchemist, yieldToken, minimumHarvestAmount, minimumDelay, slippageBps);
+    emit SetHarvestJob(active, alchemist, reward, yieldToken, minimumHarvestAmount, minimumDelay, slippageBps);
 
     // Only add the yield token to the list if it doesnt exist yet.
     for (uint256 i = 0; i < yieldTokens.length; i++) {
@@ -2086,15 +3582,77 @@ contract HarvestResolver is IResolver, Ownable {
             uint256 minimumAmountOut = currentValue - ytp.expectedValue;
             minimumAmountOut = minimumAmountOut - (minimumAmountOut * h.slippageBps) / SLIPPAGE_PRECISION;
 
-            return (
-              true,
-              abi.encodeWithSelector(IAlchemixHarvester.harvest.selector, h.alchemist, yieldToken)
-            );
+            uint256 expectedExchange;
+
+            // If vault has rewards to be collected
+            if (h.reward == vspRewardToken) {
+              // alUSD route for vesper swap
+              if (h.alchemist == usdAlchemistAddress) {
+                if (h.yieldToken == vaDAI) {
+                  (address[] memory tokens, uint256[] memory amounts) = IVesperRewards(vesperRewardsDai).claimable(usdAlchemistAddress);
+                  expectedExchange = _getExpectedExchange(uniswapFactory, h.reward, wethAddress, uint24(3000), dai, uint24(3000), amounts[0]);
+                } else if (h.yieldToken == vaUSDC) {
+                  (address[] memory tokens, uint256[] memory amounts) = IVesperRewards(vesperRewardsUsdc).claimable(usdAlchemistAddress);
+                  expectedExchange = _getExpectedExchange(uniswapFactory, h.reward, wethAddress, uint24(3000), dai, uint24(3000), amounts[0]);
+                }
+              // alETH route for vesper swap
+              } else if (h.alchemist == ethAlchemistAddress) {
+                (address[] memory tokens, uint256[] memory amounts) = IVesperRewards(vesperRewardsEth).claimable(ethAlchemistAddress);
+                expectedExchange = _getExpectedExchange(uniswapFactory, h.reward, wethAddress, uint24(3000), address(0), uint24(0), amounts[0]);
+              }
+              return (
+                true,
+                abi.encodeWithSelector(IAlchemixHarvester.harvest.selector, h.alchemist, yieldToken, minimumAmountOut, expectedExchange * 9900 / 10000)
+              );
+            }
+
+            // If reward is not the address of a token then it is the address of a reward collector.
+            // We can assume that this is optimism and handle rewards accordingly.
+            if (h.reward != address(0)) {
+              address[] memory token = new address[](1);
+              token[0] = address(IStaticAToken(h.yieldToken).ATOKEN());
+              uint256 claimable = IRewardsController(opRewardsController).getUserRewards(token, yieldToken, IRewardCollector(h.reward).rewardToken());
+              // Find expected amount out before calling harvest
+              if (IRewardCollector(h.reward).debtToken() == alUsdOptimism) {
+                expectedExchange = claimable * uint(IChainlinkOracle(opToUsdOracle).latestAnswer()) / 1e8;
+              } else if (IRewardCollector(h.reward).debtToken() == alEthOptimism) {
+                expectedExchange = claimable * uint(IChainlinkOracle(opToUsdOracle).latestAnswer()) / uint(IChainlinkOracle(ethToUsdOracle).latestAnswer());
+              } else {
+                  revert IllegalState();
+              }
+              return (
+                true,
+                abi.encodeWithSelector(IAlchemixHarvester.harvest.selector, h.alchemist, yieldToken, minimumAmountOut, expectedExchange * 9900 / 10000)
+              );
+            // If reward equals the 0 address then we handle the harvest without rewards.
+            } else {
+              return (
+                true,
+                abi.encodeWithSelector(IAlchemixHarvester.harvest.selector, h.alchemist, yieldToken, minimumAmountOut, 0)
+              );
+            }
           }
         }
       }
     }
     return (false, abi.encode(0));
+  }
+  
+  // Get expected exchange from reward token to debt token.
+  function _getExpectedExchange(address factory, address token0, address token1, uint24 fee0, address token2, uint24 fee1, uint256 amount) internal view returns (uint256) {
+      IUniswapV3Factory uniswapFactory = IUniswapV3Factory(factory);
+
+      IUniswapV3Pool pool = IUniswapV3Pool(uniswapFactory.getPool(token0, token1, fee0));
+      (uint160 sqrtPriceX96,,,,,,) =  pool.slot0();
+      uint256 price0 = uint(sqrtPriceX96) * (uint(sqrtPriceX96)) * (1e18) >> (96 * 2);
+
+      if (token2 == address(0)) return amount * price0 / 1e18;
+
+      pool = IUniswapV3Pool(uniswapFactory.getPool(token1, token2, fee1));
+      ( sqrtPriceX96,,,,,,) =  pool.slot0();
+      uint256 price1 = uint(sqrtPriceX96) * (uint(sqrtPriceX96)) * (1e18) >> (96 * 2);
+
+      return amount * price0 / price1;
   }
 
   function recordHarvest(address yieldToken) external onlyHarvester {

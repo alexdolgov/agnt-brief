@@ -1,20 +1,66 @@
 {
   "component": "Whitelist-2",
   "main_contract": "Whitelist",
-  "source_file_count": 1,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf"
-  ],
+  "source_file_count": 8,
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x2e76a67ee5f134c939c4380c9e2b6bbf93aa668b",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x211c74db951c161c5a379363716ebdca5125ef59",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35b2c16de6f283ab0949964d90ccf930f378ade6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f950f06064a43d42a8e7c199bb77b8e3a4b2096",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x46f992d00c2dfb6fbbbb64d69ab353c2fc435ace",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78537a6ceba16f412e123a90472c6e0e9a8f1132",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3dfccbad1333dc69997da28c961ff8b2879e653",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdd8ac2d5a739bb4a591c5b0c7e613b810fe83ff1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

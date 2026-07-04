@@ -1,0 +1,18 @@
+{
+  "component": "StampedeEngine-4",
+  "main_contract": "StampedeEngine",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdd8ad431c5143e06c68d35dad1974ce3987b68a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

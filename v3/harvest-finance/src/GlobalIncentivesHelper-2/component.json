@@ -1,0 +1,18 @@
+{
+  "component": "GlobalIncentivesHelper-2",
+  "main_contract": "GlobalIncentivesHelper",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x84891022d6f0d478c1aa59a336aaaf555b3da093",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

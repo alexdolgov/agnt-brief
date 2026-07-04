@@ -1,0 +1,18 @@
+{
+  "component": "elTokenManager-3",
+  "main_contract": "elTokenManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x861fe22b721602954d34f2e4a5843e6a295811c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 # untangled — deployments
 
-18 verified deployment(s) across 11 component(s).
+19 verified deployment(s) across 12 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| chain-42220 | `0x2a68c98bd43aa24331396f29166aef2bfd51343f` | Vault-2 | impl | live | no |
+| arbitrum | `0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9` | Vault-2 | impl | live | no |
+| chain-42220 | `0x2a68c98bd43aa24331396f29166aef2bfd51343f` | Vault-3 | impl | live | no |
 | polygon | `0x02c25ac43ae068d5808b726af720f47b87b38a48` | Vault | impl | live | no |
 | polygon | `0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9` | ValuationModule | impl | unknown | no |
 | polygon | `0x237f754e3b7567a8932ebe2fbb64ad9d107247d6` | TransparentUpgradeableProxy | proxy | inactive | no |
@@ -22,8 +23,3 @@
 | polygon | `0xf2742cba7de47029213aed8db080290b3634b62c` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0xf532b78ec895183120aa18e5f6679e13493d4c0d` | Vault | impl | live | no |
 | polygon | `0xfa171ad7d5e88f6afdbcb9a52118285d8c6a5036` | Hook | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9`

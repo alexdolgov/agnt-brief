@@ -1,0 +1,18 @@
+{
+  "component": "UserWithdrawController-2",
+  "main_contract": "UserWithdrawController",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd99c8fd21a61029d9df72195764a65612e3a648",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

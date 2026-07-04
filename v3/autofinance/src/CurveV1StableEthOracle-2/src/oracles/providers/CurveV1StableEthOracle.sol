@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 // solhint-disable var-name-mixedcase
 
@@ -21,6 +21,7 @@ import { Roles } from "src/libs/Roles.sol";
 /// @title Price oracle for Curve StableSwap pools
 /// @dev getPriceEth is not a view fn to support reentrancy checks. Don't actually change state.
 contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOracle {
+    ICurveResolver public immutable curveResolver;
     uint256 public constant FEE_PRECISION = 1e10;
 
     // solhint-disable-next-line var-name-mixedcase
@@ -44,11 +45,14 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
     mapping(address => address) public poolToLpToken;
 
     constructor(
-        ISystemRegistry _systemRegistry
+        ISystemRegistry _systemRegistry,
+        ICurveResolver _curveResolver
     ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) {
         // System registry must be properly initialized first
         Errors.verifyNotZero(address(_systemRegistry.rootPriceOracle()), "rootPriceOracle");
+        Errors.verifyNotZero(address(_curveResolver), "_curveResolver");
 
+        curveResolver = _curveResolver;
         WETH = address(_systemRegistry.weth());
     }
 
@@ -65,8 +69,6 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
     function registerPool(address curvePool, address curveLpToken) external hasRole(Roles.ORACLE_MANAGER) {
         Errors.verifyNotZero(curvePool, "curvePool");
         Errors.verifyNotZero(curveLpToken, "curveLpToken");
-
-        ICurveResolver curveResolver = ICurveResolver(systemRegistry.curveResolver());
 
         (address[8] memory tokens, uint256 numTokens, address lpToken, bool isStableSwap) =
             curveResolver.resolveWithLpToken(curvePool);
@@ -107,9 +109,7 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
     /// @dev Must already exist. More lenient than register with expectation checks, it's already in,
     /// assume you know what you're doing
     /// @param curveLpToken token to unregister
-    function unregister(
-        address curveLpToken
-    ) external hasRole(Roles.ORACLE_MANAGER) {
+    function unregister(address curveLpToken) external hasRole(Roles.ORACLE_MANAGER) {
         Errors.verifyNotZero(curveLpToken, "curveLpToken");
 
         // You're calling unregister so you're expecting it to be here
@@ -127,9 +127,7 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
         emit TokenUnregistered(curveLpToken);
     }
 
-    function getLpTokenToUnderlying(
-        address lpToken
-    ) external view returns (address[] memory tokens) {
+    function getLpTokenToUnderlying(address lpToken) external view returns (address[] memory tokens) {
         uint256 len = lpTokenToUnderlying[lpToken].length;
         tokens = new address[](len);
 
@@ -227,7 +225,6 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
             revert NotRegistered(lpToken);
         }
 
-        ICurveResolver curveResolver = ICurveResolver(systemRegistry.curveResolver());
         uint256[8] memory balances = curveResolver.getReservesInfo(pool);
         reserves = new ReserveItemInfo[](nTokens);
         for (uint256 i = 0; i < nTokens; ++i) {
@@ -246,9 +243,7 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
         }
     }
 
-    function _checkEth(
-        address tokenToCheck
-    ) private view returns (address) {
+    function _checkEth(address tokenToCheck) private view returns (address) {
         if (tokenToCheck == LibAdapter.CURVE_REGISTRY_ETH_ADDRESS_POINTER) {
             return WETH;
         }

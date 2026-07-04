@@ -1,0 +1,26 @@
+{
+  "component": "Gyro2CLPPoolFactory-2",
+  "main_contract": "Gyro2CLPPoolFactory",
+  "source_file_count": 56,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x579653927bf509b361f6e3813f5d4b95331d98c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8342b910815b0127c98e7717d4276c1d393478b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

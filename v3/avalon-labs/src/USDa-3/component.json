@@ -1,0 +1,26 @@
+{
+  "component": "USDa-3",
+  "main_contract": "USDa",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x44850c6ea2de19c84609db47220217c11322e697",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x22a2151962ba98b09f87937869b51a145bf1ec41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

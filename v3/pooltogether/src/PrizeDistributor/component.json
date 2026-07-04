@@ -2,10 +2,18 @@
   "component": "PrizeDistributor",
   "main_contract": "PrizeDistributor",
   "source_file_count": 22,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

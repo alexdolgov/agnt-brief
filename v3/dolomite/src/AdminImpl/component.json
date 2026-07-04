@@ -1,0 +1,18 @@
+{
+  "component": "AdminImpl",
+  "main_contract": "AdminImpl",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x23cc48d69a44dd13fa428c1131aa249bab3c5fb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

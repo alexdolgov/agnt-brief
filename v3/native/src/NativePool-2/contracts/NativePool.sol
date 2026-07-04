@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import {INativePool} from "./interfaces/INativePool.sol";
 import {INativeRouter} from "./interfaces/INativeRouter.sol";
-import {INativeTreasury} from "./interfaces/INativeTreasury.sol";
+import {INativeTreasuryV2} from "./interfaces/INativeTreasury.sol";
 import {IWETH9} from "./libraries/IWETH9.sol";
 import {Orders} from "./libraries/Order.sol";
 import {Blacklistable} from "./Blacklistable.sol";
@@ -40,11 +40,8 @@ contract NativePool is
     uint256 public constant CONSTANT_SUM_PRICE_MODEL_ID = 0;
     uint256 public constant UNISWAP_V2_PRICE_MODEL_ID = 1;
     uint256 internal constant TEN_THOUSAND_DENOMINATOR = 10000;
-    uint256 internal constant TOKEN_ARRAY_MAX_LENGTH = 10;
-    bytes32 private constant ORDER_SIGNATURE_HASH =
-        keccak256(
-            "Order(uint256 id,address signer,address buyer,address seller,address buyerToken,address sellerToken,uint256 buyerTokenAmount,uint256 sellerTokenAmount,uint256 deadlineTimestamp,address txOrigin,bytes16 quoteId)"
-        );
+    // keccak256("Order(uint256 id,address signer,address buyer,address seller,address buyerToken,address sellerToken,uint256 buyerTokenAmount,uint256 sellerTokenAmount,uint256 deadlineTimestamp,address caller,bytes16 quoteId)");
+    bytes32 private constant ORDER_SIGNATURE_HASH = 0xcdd3cf1659a8da07564b163a4df90f66944547e93f0bb61ba676c459a2db4e20;
 
     modifier onlyRouter() {
         require(msg.sender == router, "Message sender should only be the router");
@@ -67,46 +64,37 @@ contract NativePool is
     }
 
     function initialize(
-        address _treasury,
-        address _treasuryOwner,
-        address _signer,
-        address _pricingModelRegistry,
-        address _router,
-        uint256[] memory _fees,
-        address[] memory _tokenAs,
-        address[] memory _tokenBs,
-        uint256[] memory _pricingModelIds,
-        bool _isTreasuryContract,
-        bool _isPublicTreasury
+        NewPoolConfig calldata poolConfig,
+        address _pricingModelRegistry
     ) external override initializer {
         __EIP712_init("native pool", "1");
         __ReentrancyGuard_init();
         __Ownable_init();
         __Pausable_init();
         __NoDelegateCall_init();
-        require(_treasury != address(0), "treasury address specified should not be zero address");
+        require(poolConfig.treasuryAddress != address(0), "treasury address specified should not be zero address");
         require(
-            _treasuryOwner != address(0),
+            poolConfig.poolOwnerAddress != address(0),
             "treasuryOwner address specified should not be zero address"
         );
-        require(_signer != address(0), "signer address specified should not be zero address");
+        require(poolConfig.signerAddress != address(0), "signer address specified should not be zero address");
         require(
             _pricingModelRegistry != address(0),
             "pricingModelRegistry address specified should not be zero address"
         );
-        treasury = _treasury;
-        treasuryOwner = _treasuryOwner;
-        isSigner[_signer] = true;
+        treasury = poolConfig.treasuryAddress;
+        treasuryOwner = poolConfig.poolOwnerAddress;
+        isSigner[poolConfig.signerAddress] = true;
         pricingModelRegistry = _pricingModelRegistry;
-        setRouter(_router);
-        executeUpdatePairs(_fees, _tokenAs, _tokenBs, _pricingModelIds);
+        setRouter(poolConfig.routerAddress);
+        executeUpdatePairs(poolConfig.fees, poolConfig.tokenAs, poolConfig.tokenBs, poolConfig.pricingModelIds);
         poolFactory = msg.sender;
-        isTreasuryContract = _isTreasuryContract;
-        isPublicTreasury = _isPublicTreasury;
+        isTreasuryContract = poolConfig.isTreasuryContract;
+        isPublicTreasury = poolConfig.isPublicTreasury;
 
         emit SetTreasury(treasury);
         emit SetTreasuryOwner(treasuryOwner);
-        emit AddSigner(_signer);
+        emit AddSigner(poolConfig.signerAddress);
     }
 
     function _authorizeUpgrade(address) internal view override {
@@ -133,17 +121,32 @@ contract NativePool is
             address tokenB = tokenBs[0];
             Pair storage pair = pairs[tokenA][tokenB];
             return
-                pair.pricingModelId == CONSTANT_SUM_PRICE_MODEL_ID ||
-                pair.pricingModelId == UNISWAP_V2_PRICE_MODEL_ID;
+                pair.pricingModelId == CONSTANT_SUM_PRICE_MODEL_ID || pair.pricingModelId == UNISWAP_V2_PRICE_MODEL_ID;
         }
     }
 
-    function pause() external onlyOwner {
+    function setPauser(address _pauser) external onlyOwner {
+        pauser = _pauser;
+    }
+
+    modifier onlyOwnerOrPauserOrPoolFactory() {
+        if (msg.sender != owner() && msg.sender != pauser && msg.sender != poolFactory) {
+            revert onlyOwnerOrPauserOrPoolFactoryCanCall();
+        }
+        _;
+    }
+
+    function pause() external onlyOwnerOrPauserOrPoolFactory {
         _pause();
     }
 
     function unpause() external onlyOwner {
         _unpause();
+    }
+
+    function setTreasury(address newTreasury) external override onlyOwner {
+        treasury = newTreasury;
+        emit SetTreasury(newTreasury);
     }
 
     function addSigner(address _signer) external override onlyOwner whenNotPaused {
@@ -170,11 +173,12 @@ contract NativePool is
             require(verifySignature(_order, signature), "Signature is invalid");
         }
         require(_order.deadlineTimestamp > block.timestamp, "Order is expired");
-        require(_order.id == nonce[_order.txOrigin] + 1, "Incorrect nonce");
-        nonce[_order.txOrigin]++;
+        require(!nonceMapping[_order.caller][_order.id], "Nonce already used");
+        nonceMapping[_order.caller][_order.id] = true;
+
         require(pairExist(_order.sellerToken, _order.buyerToken), "Pair not exist");
         require(flexibleAmount != 0, "Flexible amount cannot be 0");
-        require(!blacklisted[_order.txOrigin], "Account is blacklisted");
+        require(!blacklisted[_order.caller], "Account is blacklisted");
 
         uint256 buyerTokenAmount;
         uint256 sellerTokenAmount;
@@ -182,11 +186,7 @@ contract NativePool is
 
         pricingModelId = getPairPricingModel(_order.sellerToken, _order.buyerToken);
         {
-            (buyerTokenAmount, sellerTokenAmount) = calculateTokenAmount(
-                flexibleAmount,
-                _order,
-                pricingModelId
-            );
+            (buyerTokenAmount, sellerTokenAmount) = calculateTokenAmount(flexibleAmount, _order, pricingModelId);
         }
         {
             (int256 amount0Delta, int256 amount1Delta) = executeSwap(
@@ -202,38 +202,55 @@ contract NativePool is
             uint256 fee = getPairFee(_order.sellerToken, _order.buyerToken);
             if (amount0Delta < 0) {
                 emit Swap(
-                    _order.txOrigin,
+                    _order.caller,
                     recipient,
                     _order.sellerToken,
                     _order.buyerToken,
                     amount1Delta,
                     amount0Delta,
                     FullMath.mulDivRoundingUp(uint256(amount1Delta), fee, TEN_THOUSAND_DENOMINATOR),
-                    _order.quoteId
+                    _order.quoteId,
+                    _order.signer
                 );
+                if (isTreasuryContract) {
+                    // call aqua vault here
+                    INativeTreasuryV2(treasury).postSwapCallback(
+                        _order.signer,
+                        _order.sellerToken,
+                        amount1Delta,
+                        _order.buyerToken,
+                        -amount0Delta
+                    );
+                }
             } else {
                 emit Swap(
-                    _order.txOrigin,
+                    _order.caller,
                     recipient,
                     _order.sellerToken,
                     _order.buyerToken,
                     amount0Delta,
                     amount1Delta,
                     FullMath.mulDivRoundingUp(uint256(amount0Delta), fee, TEN_THOUSAND_DENOMINATOR),
-                    _order.quoteId
+                    _order.quoteId,
+                    _order.signer
                 );
-            }
-            if (isTreasuryContract) {
-                INativeTreasury(treasury).syncReserve();
+                if (isTreasuryContract) {
+                    // call aqua vault here
+                    INativeTreasuryV2(treasury).postSwapCallback(
+                        _order.signer,
+                        _order.sellerToken,
+                        -amount0Delta,
+                        _order.buyerToken,
+                        amount1Delta
+                    );
+                }
             }
             return (amount0Delta, amount1Delta);
         }
     }
 
     function pairExist(address tokenIn, address tokenOut) public view returns (bool exist) {
-        (address token0, address token1) = tokenIn < tokenOut
-            ? (tokenIn, tokenOut)
-            : (tokenOut, tokenIn);
+        (address token0, address token1) = tokenIn < tokenOut ? (tokenIn, tokenOut) : (tokenOut, tokenIn);
         return pairs[token0][token1].isExist;
     }
 
@@ -245,22 +262,15 @@ contract NativePool is
         return tokenBs;
     }
 
-    function getPairPricingModel(
-        address tokenIn,
-        address tokenOut
-    ) public view returns (uint256 pricingModelId) {
+    function getPairPricingModel(address tokenIn, address tokenOut) public view returns (uint256 pricingModelId) {
         require(pairExist(tokenIn, tokenOut), "Pair not exist");
-        (address token0, address token1) = tokenIn < tokenOut
-            ? (tokenIn, tokenOut)
-            : (tokenOut, tokenIn);
+        (address token0, address token1) = tokenIn < tokenOut ? (tokenIn, tokenOut) : (tokenOut, tokenIn);
         return pairs[token0][token1].pricingModelId;
     }
 
     function getPairFee(address tokenIn, address tokenOut) public view returns (uint256 fee) {
         require(pairExist(tokenIn, tokenOut), "Pair not exist");
-        (address token0, address token1) = tokenIn < tokenOut
-            ? (tokenIn, tokenOut)
-            : (tokenOut, tokenIn);
+        (address token0, address token1) = tokenIn < tokenOut ? (tokenIn, tokenOut) : (tokenOut, tokenIn);
         return pairs[token0][token1].fee;
     }
 
@@ -278,10 +288,7 @@ contract NativePool is
         );
         for (uint i = 0; i < _fees.length; ) {
             require(_tokenAs[i] != _tokenBs[i], "Identical addresses");
-            require(
-                (_fees[i] >= 0) && (_fees[i] <= 10000),
-                "Fee should be between 0 and 10k basis points"
-            );
+            require(_fees[i] <= 10000, "Fee should be between 0 and 10k basis points");
             (address token0, address token1) = _tokenAs[i] < _tokenBs[i]
                 ? (_tokenAs[i], _tokenBs[i])
                 : (_tokenBs[i], _tokenAs[i]);
@@ -291,15 +298,9 @@ contract NativePool is
             bool isPairExist = pairExist(token0, token1);
 
             if (isPmm) {
-                require(
-                    _pricingModelIds[i] == PMM_PRICE_MODEL_ID,
-                    "Can only add PMM pairs to pool using PMM"
-                );
+                require(_pricingModelIds[i] == PMM_PRICE_MODEL_ID, "Can only add PMM pairs to pool using PMM");
             } else {
-                require(
-                    pairCount == 0 || isPairExist,
-                    "Can not have more than 1 pair for non PMM pool"
-                );
+                require(pairCount == 0 || isPairExist, "Can not have more than 1 pair for non PMM pool");
             }
 
             uint256 pricingModelIdOld = 0;
@@ -313,29 +314,15 @@ contract NativePool is
                 pricingModelIdOld = pairs[token0][token1].pricingModelId;
                 feeOld = pairs[token0][token1].fee;
             }
-            pairs[token0][token1] = Pair({
-                fee: _fees[i],
-                isExist: true,
-                pricingModelId: _pricingModelIds[i]
-            });
+            pairs[token0][token1] = Pair({fee: _fees[i], isExist: true, pricingModelId: _pricingModelIds[i]});
             if (!isPmm && _pricingModelIds[i] == PMM_PRICE_MODEL_ID) {
                 isPmm = true;
             }
 
-            emit UpdatePair(
-                token0,
-                token1,
-                feeOld,
-                _fees[i],
-                pricingModelIdOld,
-                _pricingModelIds[i]
-            );
+            emit UpdatePair(token0, token1, feeOld, _fees[i], pricingModelIdOld, _pricingModelIds[i]);
             unchecked {
                 i++;
             }
-        }
-        if (tokenAs.length > TOKEN_ARRAY_MAX_LENGTH) {
-            revert TokenArrayLengthExceedLimit(tokenAs.length);
         }
     }
 
@@ -349,48 +336,25 @@ contract NativePool is
         executeUpdatePairs(_fees, _tokenAs, _tokenBs, _pricingModelIds);
     }
 
-    function removePair(address tokenIn, address tokenOut) public whenNotPaused {
+    function removePair(uint256 removingIdx) public whenNotPaused {
+        require(removingIdx < pairCount, "removePair: index out of range");
+        require(removingIdx < tokenAs.length, "removePair: index out of range");
         require(msg.sender == treasuryOwner, "Unauthorized to whitelist pairs");
-        require(pairExist(tokenIn, tokenOut), "Pair not exist");
-        (address token0, address token1) = tokenIn < tokenOut
-            ? (tokenIn, tokenOut)
-            : (tokenOut, tokenIn);
+        address token0 = tokenAs[removingIdx];
+        address token1 = tokenBs[removingIdx];
+        require(pairExist(token0, token1), "Pair not exist");
+
         delete pairs[token0][token1];
-        uint tokenAsLength = tokenAs.length;
-        for (uint i = 0; i < tokenAsLength; ) {
-            if (tokenAs[i] == token0 && tokenBs[i] == token1) {
-                tokenAs[i] = tokenAs[tokenAs.length - 1];
-                tokenAs.pop();
-                tokenBs[i] = tokenBs[tokenBs.length - 1];
-                tokenBs.pop();
-                pairCount--;
-                break;
-            }
-            unchecked {
-                i++;
-            }
-        }
+        tokenAs[removingIdx] = tokenAs[tokenAs.length - 1];
+        tokenAs.pop();
+        tokenBs[removingIdx] = tokenBs[tokenBs.length - 1];
+        tokenBs.pop();
+        pairCount--;
+
         emit RemovePair(token0, token1);
     }
 
-    function getNonce(address txOrigin) public view returns (uint256) {
-        return nonce[txOrigin];
-    }
-
-    function increaseNonce(address txOrigin) public whenNotPaused returns (uint256) {
-        require(
-            msg.sender == treasury || msg.sender == treasuryOwner,
-            "Unauthorized to change nonce"
-        );
-        nonce[txOrigin]++;
-        return nonce[txOrigin];
-    }
-
-    function getAmountOut(
-        uint256 amountIn,
-        address _tokenIn,
-        address _tokenOut
-    ) public view returns (uint amountOut) {
+    function getAmountOut(uint256 amountIn, address _tokenIn, address _tokenOut) public view returns (uint amountOut) {
         uint256 pricingModelId = getPairPricingModel(_tokenIn, _tokenOut);
         require(
             pricingModelId != FIXED_PRICE_MODEL_ID && pricingModelId != PMM_PRICE_MODEL_ID,
@@ -403,16 +367,7 @@ contract NativePool is
 
         uint256 fee = getPairFee(tokenIn, tokenOut);
 
-        return
-            registry.getAmountOut(
-                amountIn,
-                fee,
-                pricingModelId,
-                treasury,
-                tokenIn,
-                tokenOut,
-                isTreasuryContract
-            );
+        return registry.getAmountOut(amountIn, fee, pricingModelId, treasury, tokenIn, tokenOut, isTreasuryContract);
     }
 
     function getPricingModelRegistry() public view returns (address) {
@@ -428,27 +383,14 @@ contract NativePool is
         uint256 buyerTokenAmount;
         uint256 sellerTokenAmount;
 
-        sellerTokenAmount = flexibleAmount >= _order.sellerTokenAmount
-            ? _order.sellerTokenAmount
-            : flexibleAmount;
+        sellerTokenAmount = flexibleAmount >= _order.sellerTokenAmount ? _order.sellerTokenAmount : flexibleAmount;
 
         if (pricingModelId != FIXED_PRICE_MODEL_ID && pricingModelId != PMM_PRICE_MODEL_ID) {
-            buyerTokenAmount = getAmountOut(
-                sellerTokenAmount,
-                _order.sellerToken,
-                _order.buyerToken
-            );
+            buyerTokenAmount = getAmountOut(sellerTokenAmount, _order.sellerToken, _order.buyerToken);
         } else {
-            require(
-                _order.sellerTokenAmount > 0 && _order.buyerTokenAmount > 0,
-                "Non-zero amount required"
-            );
+            require(_order.sellerTokenAmount > 0 && _order.buyerTokenAmount > 0, "Non-zero amount required");
 
-            buyerTokenAmount = FullMath.mulDiv(
-                sellerTokenAmount,
-                _order.buyerTokenAmount,
-                _order.sellerTokenAmount
-            );
+            buyerTokenAmount = FullMath.mulDiv(sellerTokenAmount, _order.buyerTokenAmount, _order.sellerTokenAmount);
         }
         require(buyerTokenAmount > 0 && sellerTokenAmount > 0, "Non-zero amount required");
 
@@ -482,17 +424,14 @@ contract NativePool is
                 _order.buyerTokenAmount,
                 _order.sellerTokenAmount,
                 _order.deadlineTimestamp,
-                _order.txOrigin,
+                _order.caller,
                 _order.quoteId
             )
         );
         return hash;
     }
 
-    function verifySignature(
-        Orders.Order memory _order,
-        bytes calldata signature
-    ) internal view returns (bool) {
+    function verifySignature(Orders.Order memory _order, bytes calldata signature) internal view returns (bool) {
         require(isSigner[_order.signer], "Signer is invalid");
         bytes32 digest = _hashTypedDataV4(getMessageHash(_order));
 
@@ -500,11 +439,7 @@ contract NativePool is
         return _order.signer == recoveredSigner;
     }
 
-    function executeSwapFromTreasury(
-        uint256 amount,
-        Orders.Order memory _order,
-        address recipient
-    ) internal {
+    function executeSwapFromTreasury(uint256 amount, Orders.Order memory _order, address recipient) internal {
         address buyerToken = _order.buyerToken;
         uint256 treasuryBalanceInitial = IERC20Upgradeable(buyerToken).balanceOf(address(treasury));
         require(treasuryBalanceInitial >= amount, "Insufficient fund in treasury");
@@ -532,23 +467,14 @@ contract NativePool is
         int256 outputSellerTokenAmount = int256(sellerTokenAmount);
         int256 outputBuyerTokenAmount = -1 * int256(buyerTokenAmount);
         address sellerToken = _order.sellerToken;
-        uint256 treasuryBalanceInitial = IERC20Upgradeable(sellerToken).balanceOf(
-            address(treasury)
-        );
+        uint256 treasuryBalanceInitial = IERC20Upgradeable(sellerToken).balanceOf(address(treasury));
         uint256 treasuryBalanceFinal;
 
-        INativeRouter(msg.sender).swapCallback(
-            outputBuyerTokenAmount,
-            outputSellerTokenAmount,
-            callback
-        );
+        INativeRouter(msg.sender).swapCallback(outputBuyerTokenAmount, outputSellerTokenAmount, callback);
         TransferHelper.safeTransfer(sellerToken, treasury, sellerTokenAmount);
         treasuryBalanceFinal = IERC20Upgradeable(sellerToken).balanceOf(address(treasury));
 
-        require(
-            (treasuryBalanceFinal - treasuryBalanceInitial) == sellerTokenAmount,
-            "Swap amount not match"
-        );
+        require((treasuryBalanceFinal - treasuryBalanceInitial) == sellerTokenAmount, "Swap amount not match");
 
         return (outputBuyerTokenAmount, outputSellerTokenAmount);
     }

@@ -1,17 +1,23 @@
 {
   "component": "ReferralTracker",
   "main_contract": "ReferralTracker",
-  "source_file_count": 5,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://www.snuggle.fi/security"
-  ],
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2536a771111861bc0be61bd986f0c2dc0f68d9ee",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6915b555dd117a901b400ccd3fb4aefa1101cd00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb52cca444e459ae8b2d0a6e29df01204e9e4705e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

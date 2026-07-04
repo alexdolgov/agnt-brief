@@ -1,0 +1,20 @@
+{
+  "component": "NftSettingsRegistry-8",
+  "main_contract": "NftSettingsRegistry",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-sickle-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2d6a2a8837bad9ce42bbec462fa62900439f6940",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

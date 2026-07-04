@@ -1,0 +1,26 @@
+{
+  "component": "sYUSD-2",
+  "main_contract": "sYUSD",
+  "source_file_count": 28,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc48ea88272e723366e124d9fd2607216969382ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf07781182b47e728b040f9e35321260e359ff9f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

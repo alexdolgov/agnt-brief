@@ -2,14 +2,22 @@
   "component": "ImpermaxV2UniV2Router01",
   "main_contract": "ImpermaxV2UniV2Router01",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x46b9b1a483f5e64a20bbbeecbf54224167b699df",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8f4065d7cf393e1e82cc6141dc638431c70970fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf09d8f374bab880d7abdd6ebe34e3e62eb1c2232",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

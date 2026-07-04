@@ -1,0 +1,18 @@
+{
+  "component": "ChainlinkPriceOracleV3-2",
+  "main_contract": "ChainlinkPriceOracleV3",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x465e5105e6106acd15e491953bb7b674247ae191",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

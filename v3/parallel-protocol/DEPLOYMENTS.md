@@ -1,61 +1,185 @@
 # parallel-protocol — deployments
 
-76 verified deployment(s) across 44 component(s).
+209 verified deployment(s) across 82 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| avalanche | `0x0d45b129dc868963025db79a9074ea9c9e32cae4` | GenericHarvester-3 | impl | live | no |
-| avalanche | `0x23d491aa7c0972087f8a607f6f4c7106a02ba95d` | DiamondLoupe-2 | impl | live | no |
-| avalanche | `0x57265a3d7db8f4a4a155eadf6c7326926cac1490` | Swapper-2 | impl | live | no |
-| avalanche | `0x5beada21a6b9cb229117b3ea2c0d1594785013a2` | SettersGovernor-2 | impl | live | no |
+| arbitrum | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | ERC1967Proxy | proxy | inactive | no |
+| arbitrum | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | impl | live | no |
+| arbitrum | `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9` | ERC1967Proxy-2 | impl | inactive | no |
+| arbitrum | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | BridgeableTokenP | impl | live | no |
+| arbitrum | `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | ERC1967Proxy | proxy | inactive | no |
+| arbitrum | `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ERC1967Proxy-3 | impl | inactive | no |
+| arbitrum | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | yes |
+| avalanche | `0x0d45b129dc868963025db79a9074ea9c9e32cae4` | GenericHarvester-4 | impl | live | no |
+| avalanche | `0x23d491aa7c0972087f8a607f6f4c7106a02ba95d` | DiamondLoupe-4 | impl | live | no |
+| avalanche | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | RewardHandler-4 | impl | live | no |
+| avalanche | `0x41d58951cbd12d4ef49b0437897677bbf5547c80` | DiamondProxy | impl | live | no |
+| avalanche | `0x506ba37aa8e265be445913b9c4080852277f3c5a` | DiamondInitializer | impl | live | no |
+| avalanche | `0x57265a3d7db8f4a4a155eadf6c7326926cac1490` | Swapper-5 | impl | live | no |
+| avalanche | `0x5beada21a6b9cb229117b3ea2c0d1594785013a2` | SettersGovernor-3 | impl | live | no |
 | avalanche | `0x645feabb38283d13249845881778b6c24a25884d` | Savings | impl | live | no |
-| avalanche | `0x6efeddf9269c3683ba516cb0e2124fe335f262a2` | Redeemer-2 | impl | live | no |
-| avalanche | `0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84` | SettersGuardian-2 | impl | live | no |
-| base | `0x01fa35fde0e813e2d6687660a74a313d8d922e48` | sPRL1 | impl | live | yes |
-| base | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | ERC1967Proxy-2 | proxy | inactive | no |
-| base | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager-2 | impl | live | no |
+| avalanche | `0x657acb8a3bf9383e561565d422ea9b9a90ce0052` | DiamondCut-4 | impl | live | no |
+| avalanche | `0x6efeddf9269c3683ba516cb0e2124fe335f262a2` | Redeemer-4 | impl | live | no |
+| avalanche | `0x7d2c6c944907ead0be1b6c84c9cfe3db4d4907c5` | SideChainFeeCollector | impl | inactive | no |
+| avalanche | `0x9d92c21205383651610f90722131655a5b8ed3e0` | ERC1967Proxy | proxy | inactive | no |
+| avalanche | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | ERC1967Proxy | proxy | inactive | no |
+| avalanche | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ERC1967Proxy | proxy | inactive | no |
+| avalanche | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
+| avalanche | `0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84` | SettersGuardian-4 | impl | live | no |
+| avalanche | `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ERC1967Proxy-2 | impl | inactive | no |
+| avalanche | `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ERC1967Proxy-3 | impl | inactive | no |
+| avalanche | `0xf6cc47e981ed5902be382dbe7b54e3696de22dbb` | Getters-4 | impl | live | no |
+| avalanche | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| base | `0x01fa35fde0e813e2d6687660a74a313d8d922e48` | sPRL1-2 | impl | live | yes |
+| base | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | ERC1967Proxy-6 | proxy | inactive | no |
+| base | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | impl | live | no |
 | base | `0x13e867f55043302925971e88ab8fab704241a96b` | RewardMerkleDistributor-2 | impl | inactive | no |
-| base | `0x15452454a9735d68df430879b2941316a09295b1` | DiamondCut | impl | live | no |
-| base | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | DiamondLoupe | impl | live | no |
-| base | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | RewardHandler | impl | live | no |
-| base | `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7` | DiamondInitializer-2 | impl | live | no |
+| base | `0x15452454a9735d68df430879b2941316a09295b1` | DiamondCut-3 | impl | live | no |
+| base | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | DiamondLoupe-3 | impl | live | no |
+| base | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | RewardHandler-3 | impl | live | no |
+| base | `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7` | DiamondInitializer-3 | impl | live | no |
+| base | `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9` | ERC1967Proxy-2 | impl | inactive | no |
 | base | `0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7` | ERC1967Upgrade | proxy | inactive | no |
 | base | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | BridgeableTokenP | impl | live | no |
-| base | `0x5d49c8b8cc691533742602d6ab3127904959b7e3` | MainFeeDistributor-2 | impl | inactive | no |
+| base | `0x5d49c8b8cc691533742602d6ab3127904959b7e3` | MainFeeDistributor-3 | impl | inactive | no |
+| base | `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | ERC1967Proxy | proxy | inactive | no |
 | base | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | ERC1967Upgrade | impl | live | no |
 | base | `0xa65821ffe86e6eb613daa1f70af350c5a21759df` | ERC1967Upgrade | impl | inactive | no |
 | base | `0xb22f5edbc62adcc093307025b8fdf75a0aa00e24` | TimeLockPenaltyERC20-2 | impl | inactive | no |
-| base | `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ERC1967Proxy-2 | impl | inactive | no |
-| base | `0xefc1309b67a52c5dfc2588bfc2d97a66afc4d2ce` | sPRL1 | impl | inactive | yes |
+| base | `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ERC1967Proxy-6 | impl | inactive | no |
+| base | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | Getters-3 | impl | live | no |
+| base | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | Swapper-3 | proxy | inactive | no |
+| base | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | GenericHarvester | impl | live | no |
+| base | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | SettersGuardian-3 | impl | live | no |
+| base | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | Redeemer-3 | impl | live | no |
+| base | `0xefc1309b67a52c5dfc2588bfc2d97a66afc4d2ce` | sPRL1-2 | impl | inactive | yes |
+| base | `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7` | Swapper-4 | impl | inactive | no |
+| base | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | yes |
 | bsc | `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c` | ERC1967Proxy | proxy | inactive | no |
 | bsc | `0x411dc65548c066fb0f85bf48a72306d321c783bd` | ERC1967Proxy | impl | inactive | no |
+| bsc | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | BridgeableTokenP | impl | live | no |
+| bsc | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ERC1967Proxy-3 | impl | inactive | no |
+| bsc | `0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa` | ERC1967Proxy | proxy | inactive | no |
+| bsc | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| chain-130 | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | ERC1967Proxy | proxy | inactive | no |
+| chain-130 | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ERC1967Proxy | proxy | inactive | no |
+| chain-130 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
+| chain-130 | `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-130 | `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ERC1967Proxy-3 | impl | inactive | no |
+| chain-130 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| chain-1329 | `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c` | ERC1967Proxy | proxy | inactive | no |
+| chain-1329 | `0x411dc65548c066fb0f85bf48a72306d321c783bd` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-1329 | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | BridgeableTokenP | impl | live | no |
+| chain-1329 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ERC1967Proxy-3 | impl | inactive | no |
+| chain-1329 | `0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa` | ERC1967Proxy | proxy | inactive | no |
 | chain-1329 | `0xd8cc2a51556da84b5db309e86f30ff98b5309862` | VaultsV2Feed | impl | live | no |
 | chain-1329 | `0xeb197439d1425f3129f01f7763ec511df2489095` | VaultsV2Feed | impl | live | no |
+| chain-1329 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
 | chain-146 | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | ERC1967Proxy | proxy | inactive | no |
-| chain-146 | `0x120805265fa944834dc6e930de2995768806a9d2` | GenericHarvester-2 | impl | live | no |
+| chain-146 | `0x120805265fa944834dc6e930de2995768806a9d2` | GenericHarvester | impl | live | no |
+| chain-146 | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | DiamondLoupe | impl | live | no |
 | chain-146 | `0x2cb56df31b909854b01d4b1ead5676cf90e885e7` | ERC1967Proxy | proxy | inactive | no |
 | chain-146 | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | ERC1967Proxy | impl | inactive | no |
+| chain-146 | `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811` | sPRL1 | impl | live | no |
+| chain-146 | `0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78` | ParallelAccessManager | impl | live | no |
 | chain-146 | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | Getters | impl | live | no |
+| chain-146 | `0xa7eb076f57960e265b91514c03d1d1281055a75c` | ParallelAccessManager | impl | inactive | no |
+| chain-146 | `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e` | ERC1967Upgrade-2 | impl | inactive | no |
+| chain-146 | `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-146 | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | DiamondInitializer-2 | impl | live | no |
+| chain-146 | `0xbefbae2330186f031b469e26283acc66bb5f8826` | Swapper | proxy | inactive | no |
+| chain-146 | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | SettersGovernor-2 | impl | live | no |
+| chain-146 | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | SettersGuardian | impl | live | no |
+| chain-146 | `0xda818995ddeee3ac36bf492133e1feae1fa377e6` | BridgeableTokenP | impl | live | no |
 | chain-146 | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | Redeemer | impl | live | no |
+| chain-146 | `0xe8a3da6f5ed1cf04c58ac7f6a7383641e877517b` | ERC1967Proxy | proxy | inactive | no |
+| chain-146 | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | DiamondCut | impl | live | no |
+| chain-146 | `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7` | RewardHandler | impl | live | no |
 | chain-146 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | yes |
+| chain-252 | `0x10eb3f443baa258b3417d6c318f7865ad61b539b` | ERC1967Proxy-4 | impl | inactive | no |
+| chain-252 | `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7` | ERC1967Proxy-5 | impl | inactive | no |
+| chain-252 | `0x46b053ce47f16390574bb8f54caccd04c1e3faf2` | ERC1967Proxy | proxy | inactive | no |
+| chain-252 | `0x8fcf9118fdd359f6277cdd143c2da206e64140f3` | ERC1967Proxy | proxy | inactive | no |
+| chain-252 | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP-2 | impl | live | no |
+| chain-252 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-2 | impl | live | no |
+| chain-80094 | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | ERC1967Proxy | proxy | inactive | no |
+| chain-80094 | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ERC1967Proxy | proxy | inactive | no |
+| chain-80094 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
+| chain-80094 | `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ERC1967Proxy-2 | impl | inactive | no |
+| chain-80094 | `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ERC1967Proxy-3 | impl | inactive | no |
+| chain-80094 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| chain-9745 | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ERC1967Proxy-5 | impl | inactive | no |
+| chain-9745 | `0x10eb3f443baa258b3417d6c318f7865ad61b539b` | ERC1967Proxy-4 | impl | inactive | no |
+| chain-9745 | `0x46b053ce47f16390574bb8f54caccd04c1e3faf2` | ERC1967Proxy | proxy | inactive | no |
+| chain-9745 | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP-2 | impl | live | no |
+| chain-9745 | `0xc2f8b5d893217462ae9c9879c9285a5a3aabcb8f` | ERC1967Proxy | proxy | inactive | no |
+| chain-9745 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-2 | impl | live | no |
 | chain-999 | `0x056566077da53b0a349af9b9bdbfa2658ccc2c3f` | DiamondInitializer | impl | inactive | no |
 | chain-999 | `0x120805265fa944834dc6e930de2995768806a9d2` | Getters-2 | impl | inactive | no |
 | chain-999 | `0x1250304f66404cd153fa39388ddcdaec7e0f1707` | DiamondProxy | impl | live | no |
-| chain-999 | `0x1b2741db9f46a0411852e4cc28ddc476851b5179` | Swapper | impl | inactive | no |
+| chain-999 | `0x15452454a9735d68df430879b2941316a09295b1` | ERC1967Proxy | proxy | inactive | no |
+| chain-999 | `0x1b2741db9f46a0411852e4cc28ddc476851b5179` | Swapper-2 | impl | inactive | no |
+| chain-999 | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | ERC1967Proxy-2 | impl | inactive | no |
 | chain-999 | `0x2f77c2fe829ecc1cc4fe891ca05d121971908574` | SideChainFeeCollector | impl | inactive | no |
+| chain-999 | `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7` | ERC1967Proxy-3 | impl | inactive | no |
 | chain-999 | `0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7` | SettersGovernor | impl | inactive | no |
+| chain-999 | `0x57770c1721eb35509f38210a935c8b1911db7e0e` | GenericHarvester-3 | impl | live | no |
 | chain-999 | `0x769f533139eb1723c41cadec243ce10bc4d400fd` | SettersGovernor | impl | inactive | no |
 | chain-999 | `0x8b899796b4a442e7723e02f8b5b65a39f27edaf1` | DiamondInitializer | impl | inactive | no |
 | chain-999 | `0x9b3a8f7cec208e247d97dee13313690977e24459` | SettersGovernor | proxy | inactive | no |
-| chain-999 | `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e` | SettersGuardian | impl | inactive | no |
+| chain-999 | `0xa5d9caa2ef06d39d5992b5046e2defff6d5cbd18` | RewardHandler-2 | impl | inactive | no |
+| chain-999 | `0xa65821ffe86e6eb613daa1f70af350c5a21759df` | DiamondCut-2 | impl | inactive | no |
+| chain-999 | `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e` | SettersGuardian-2 | impl | inactive | no |
+| chain-999 | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | ERC1967Proxy | proxy | inactive | no |
+| chain-999 | `0xbefbae2330186f031b469e26283acc66bb5f8826` | DiamondLoupe-2 | impl | inactive | no |
+| chain-999 | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | BridgeableTokenP | impl | live | no |
+| chain-999 | `0xf92ed96c7bec4ad46ff7937cae633c907ebdf594` | Redeemer-2 | impl | inactive | no |
+| chain-999 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| ethereum | `0x173ae6283a717b6cdd5491eac5f82c082a8c674b` | VaultsCore | impl | live | yes |
 | ethereum | `0x25fc7ffa8f9da3582a36633d04804f0004706f9b` | GnosisSafeProxyFactory | proxy | live | no |
-| ethereum | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | GenericHarvester | impl | live | no |
+| ethereum | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | GenericHarvester-2 | impl | live | no |
+| ethereum | `0x4fbb33fe9fc784ab5a86dc19cce4ecd29c20cd46` | VaultsCore | impl | inactive | yes |
+| ethereum | `0x5208f5de46c25273e2fb8d5a73d605997bc4ca3f` | BridgeableToken | impl | inactive | no |
+| ethereum | `0x5362a6bf52b07c3c6a795ab03675f041a3e3de64` | VaultsCoreState | impl | inactive | yes |
+| ethereum | `0x62461591ffee0c539be1bb51a22624e6f3815bfb` | BridgeableToken | impl | inactive | no |
+| ethereum | `0x68e88c802f146ead2f99f3a91fb880d1a2509672` | VaultsCore-2 | impl | inactive | no |
 | ethereum | `0x74e3f9d724da6d7e4db8ecab4f18e6ba44f60e30` | BridgeableToken-2 | impl | live | yes |
+| ethereum | `0x78bb4882b77d74ad9b04ab71fe8e61f72595823c` | BridgeableTokenP | impl | live | no |
+| ethereum | `0x78c48a7d7fc69735fdab448fe6068bba44a920e6` | VaultsCore-3 | impl | inactive | no |
+| ethereum | `0x86afa59ff739b5be56ce8a81a424af17b29668e9` | BridgeableToken-2 | impl | inactive | yes |
+| ethereum | `0x917b9d8e62739986ec182e0f988c7f938651afd7` | VaultsCore-4 | impl | inactive | no |
+| ethereum | `0x94ea8800444017695345156319e96bdb1e355f7a` | ParallelAccessManager | impl | live | no |
+| ethereum | `0x963d9858651fa21e903e83c5d985fc74f6745249` | VaultsCoreState | impl | live | yes |
+| ethereum | `0xdb75531e12ca4bb6cd5cfe77f10522b08806386f` | VaultsCoreState-2 | impl | live | no |
+| ethereum | `0xe0a86c3a7038e33cb31531222fae33a51b5022b2` | BridgeableToken | impl | inactive | no |
+| ethereum | `0xe26348d30694aa7e879b9335252362df3df93204` | VaultsCore-5 | impl | live | no |
 | ethereum | `0xe8a2d848fe656e34a6caa35f375b42979e322135` | TimeLockPenaltyERC20 | impl | live | yes |
-| optimism | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | impl | live | no |
+| ethereum | `0xead729472f82e5ec2ff4e691d67633077c1b5901` | sPRL1 | impl | live | no |
+| gnosis | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | ERC1967Proxy | proxy | inactive | no |
+| gnosis | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ERC1967Proxy | proxy | inactive | no |
+| gnosis | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
+| gnosis | `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ERC1967Proxy-2 | impl | inactive | no |
+| gnosis | `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ERC1967Proxy-3 | impl | inactive | no |
+| gnosis | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| linea | `0x10eb3f443baa258b3417d6c318f7865ad61b539b` | ERC1967Proxy-4 | impl | inactive | no |
+| linea | `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7` | ERC1967Proxy-5 | impl | inactive | no |
+| linea | `0x46b053ce47f16390574bb8f54caccd04c1e3faf2` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x8fcf9118fdd359f6277cdd143c2da206e64140f3` | ERC1967Proxy | proxy | inactive | no |
+| linea | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP-2 | impl | live | no |
+| linea | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-2 | impl | live | no |
+| optimism | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager-3 | impl | live | no |
+| optimism | `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9` | ERC1967Proxy | proxy | inactive | no |
+| optimism | `0x4def531c3060686948f00ecc7504f2e0b71eda14` | ERC1967Proxy-3 | impl | inactive | no |
+| optimism | `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | BridgeableTokenP | impl | live | no |
+| optimism | `0x90337e484b1cb02132fc150d3afa262147348545` | ERC1967Proxy | proxy | inactive | no |
+| optimism | `0xe8a2d848fe656e34a6caa35f375b42979e322135` | ERC1967Proxy-2 | impl | inactive | no |
+| optimism | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | yes |
 | polygon | `0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8` | VaultsCoreState | impl | live | yes |
+| polygon | `0x09f3964874d3c8494f2e98e9e003e53c2750ab72` | ERC1967Proxy-3 | impl | inactive | no |
 | polygon | `0x0a9202c6417a7b6b166e7f7fe2719b09261b400f` | VaultsCore | impl | live | yes |
 | polygon | `0x0f3acbc30da85612588c2e2dfd81ac667b662b48` | VaultsCoreState | impl | inactive | yes |
+| polygon | `0x1250304f66404cd153fa39388ddcdaec7e0f1707` | ERC1967Proxy | proxy | inactive | no |
 | polygon | `0x1b03d006a47df53b440b9a94af88f38f63583342` | BridgeableToken | impl | inactive | no |
 | polygon | `0x1d58251e035654fdd4b8ca53c0bb06fb4af4c595` | MIMOVaultActions | impl | inactive | no |
 | polygon | `0x4311321f144e2cf24df87deefe79e9c4e232273b` | BridgeableToken | impl | inactive | no |
@@ -65,157 +189,33 @@
 | polygon | `0x7790dd69aa10ed3f1271e41cd7222d2a7d2d5948` | PeripheralPRL | impl | live | yes |
 | polygon | `0x78c48a7d7fc69735fdab448fe6068bba44a920e6` | VaultsCore | impl | inactive | yes |
 | polygon | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | RewardMerkleDistributor | impl | live | yes |
+| polygon | `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811` | ParallelAccessManager-4 | impl | live | no |
 | polygon | `0x7e6bc0dc649f5e48842c881e97666c7e21d0a433` | BridgeableToken | impl | inactive | no |
+| polygon | `0x8fcf9118fdd359f6277cdd143c2da206e64140f3` | ParallelAccessManager-5 | impl | inactive | no |
 | polygon | `0x90337e484b1cb02132fc150d3afa262147348545` | MainFeeDistributor | impl | live | yes |
 | polygon | `0x917b9d8e62739986ec182e0f988c7f938651afd7` | BridgeableToken | impl | inactive | no |
 | polygon | `0x9912c16db85d6075df6f0725a08b95f63a11a172` | VaultsCore | impl | inactive | yes |
+| polygon | `0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9` | BridgeableTokenP | impl | live | no |
 | polygon | `0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb` | PeripheralMigrationContract | impl | live | yes |
 | polygon | `0xa8b25d675e793521f24de3a07c35f79496c13546` | MIMOVaultActions | impl | inactive | no |
+| polygon | `0xb4af56f42e19f6555611c5b2f5075eecd17cbaa1` | MainFeeDistributor-2 | impl | inactive | no |
 | polygon | `0xc0459eff90be3dcd1ada71e1e8bdb7619a16c1a4` | VaultsCore | impl | inactive | yes |
+| polygon | `0xc15fd01a21e8f6625f709b16f6b3562d2848da5f` | ERC1967Proxy | proxy | inactive | no |
 | polygon | `0xcababc1feb7c5298f69b635099d75975ad5e6e5f` | VaultsCore | impl | live | yes |
+| polygon | `0xdb7be3a50bdf5641757ebea38e8014e1f0aa9475` | sPRL1 | impl | live | no |
 | polygon | `0xde91eb8206c228f4208c34510cf0c61c9302a434` | MIMOVaultActions | impl | inactive | no |
 | polygon | `0xe462df8d4aa7db3aecfe810ec8d1fa4f716bc9a8` | BridgeableToken | impl | live | no |
 | polygon | `0xeb259d5778942b5626bd2d3de0616b4644b66d4b` | MIMOVaultActions | impl | inactive | no |
 | polygon | `0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58` | MIMOVaultActions | impl | inactive | no |
 | polygon | `0xfad382ee9b8229fb9b05df9f9391bac5dd81f346` | VaultsCoreState | impl | live | yes |
 | polygon | `0xfaee16d1d150107bb19bff0f5c2e302ab76b5711` | VaultsCore | impl | inactive | yes |
+| polygon | `0xfefc8635edf0faad83312a713cb67722d049c9bc` | ERC1967Proxy-2 | impl | inactive | no |
 | scroll | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ERC1967Upgrade | impl | unknown | no |
+| scroll | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP-3 | impl | unknown | no |
+| scroll | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-6 | impl | unknown | no |
 
-## Source unavailable (135)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`
-- arbitrum `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`
-- arbitrum `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`
-- arbitrum `0x4dde0e308cfb60515218c6ad2df1134fc48531fc`
-- arbitrum `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5`
-- arbitrum `0xb3dbece41acdd6ad76d037b8da2e53c58826746c`
-- arbitrum `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- avalanche `0x36da06796fd9d22bcd6287b66a87ffdadb12636c`
-- avalanche `0x41d58951cbd12d4ef49b0437897677bbf5547c80`
-- avalanche `0x506ba37aa8e265be445913b9c4080852277f3c5a`
-- avalanche `0x657acb8a3bf9383e561565d422ea9b9a90ce0052`
-- avalanche `0x7d2c6c944907ead0be1b6c84c9cfe3db4d4907c5`
-- avalanche `0x9d92c21205383651610f90722131655a5b8ed3e0`
-- avalanche `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`
-- avalanche `0x9ee1963f05553ef838604dd39403be21cef26aa4`
-- avalanche `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- avalanche `0xcb3e564293393e0d4f43305a250d4e1716de600b`
-- avalanche `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`
-- avalanche `0xf6cc47e981ed5902be382dbe7b54e3696de22dbb`
-- avalanche `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- base `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`
-- base `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5`
-- base `0xbe65f0f410a72bec163dc65d46c83699e957d588`
-- base `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`
-- base `0xca43ecfcdfba1fed003649e946ae6091646b410a`
-- base `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8`
-- base `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8`
-- base `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7`
-- base `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- bsc `0x7b54f3d993d3bca077946034ea710f9c07420c72`
-- bsc `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- bsc `0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa`
-- bsc `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- chain-130 `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`
-- chain-130 `0x9ee1963f05553ef838604dd39403be21cef26aa4`
-- chain-130 `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- chain-130 `0xcb3e564293393e0d4f43305a250d4e1716de600b`
-- chain-130 `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`
-- chain-130 `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- chain-1329 `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c`
-- chain-1329 `0x411dc65548c066fb0f85bf48a72306d321c783bd`
-- chain-1329 `0x7b54f3d993d3bca077946034ea710f9c07420c72`
-- chain-1329 `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- chain-1329 `0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa`
-- chain-1329 `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- chain-146 `0x2b6c7c275404e93a14a05b549af292231d6e4dec`
-- chain-146 `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811`
-- chain-146 `0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78`
 - chain-146 `0xa65821ffe86e6eb613daa1f70af350c5a21759df`
-- chain-146 `0xa7eb076f57960e265b91514c03d1d1281055a75c`
-- chain-146 `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e`
-- chain-146 `0xb3dbece41acdd6ad76d037b8da2e53c58826746c`
-- chain-146 `0xbe65f0f410a72bec163dc65d46c83699e957d588`
-- chain-146 `0xbefbae2330186f031b469e26283acc66bb5f8826`
-- chain-146 `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`
-- chain-146 `0xca43ecfcdfba1fed003649e946ae6091646b410a`
-- chain-146 `0xda818995ddeee3ac36bf492133e1feae1fa377e6`
-- chain-146 `0xe8a3da6f5ed1cf04c58ac7f6a7383641e877517b`
-- chain-146 `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8`
-- chain-146 `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7`
-- chain-252 `0x10eb3f443baa258b3417d6c318f7865ad61b539b`
-- chain-252 `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7`
-- chain-252 `0x46b053ce47f16390574bb8f54caccd04c1e3faf2`
-- chain-252 `0x8fcf9118fdd359f6277cdd143c2da206e64140f3`
-- chain-252 `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7`
-- chain-252 `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- chain-80094 `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`
-- chain-80094 `0x9ee1963f05553ef838604dd39403be21cef26aa4`
-- chain-80094 `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- chain-80094 `0xcb3e564293393e0d4f43305a250d4e1716de600b`
-- chain-80094 `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`
-- chain-80094 `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- chain-9745 `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`
-- chain-9745 `0x10eb3f443baa258b3417d6c318f7865ad61b539b`
-- chain-9745 `0x46b053ce47f16390574bb8f54caccd04c1e3faf2`
-- chain-9745 `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7`
-- chain-9745 `0xc2f8b5d893217462ae9c9879c9285a5a3aabcb8f`
-- chain-9745 `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- chain-999 `0x15452454a9735d68df430879b2941316a09295b1`
-- chain-999 `0x24cef236056834f38e9247a1fff6681dd313d3aa`
-- chain-999 `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7`
-- chain-999 `0x57770c1721eb35509f38210a935c8b1911db7e0e`
-- chain-999 `0xa5d9caa2ef06d39d5992b5046e2defff6d5cbd18`
-- chain-999 `0xa65821ffe86e6eb613daa1f70af350c5a21759df`
-- chain-999 `0xbe65f0f410a72bec163dc65d46c83699e957d588`
-- chain-999 `0xbefbae2330186f031b469e26283acc66bb5f8826`
-- chain-999 `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`
-- chain-999 `0xf92ed96c7bec4ad46ff7937cae633c907ebdf594`
-- chain-999 `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- ethereum `0x173ae6283a717b6cdd5491eac5f82c082a8c674b`
-- ethereum `0x4fbb33fe9fc784ab5a86dc19cce4ecd29c20cd46`
-- ethereum `0x5208f5de46c25273e2fb8d5a73d605997bc4ca3f`
-- ethereum `0x5362a6bf52b07c3c6a795ab03675f041a3e3de64`
-- ethereum `0x62461591ffee0c539be1bb51a22624e6f3815bfb`
-- ethereum `0x68e88c802f146ead2f99f3a91fb880d1a2509672`
-- ethereum `0x78bb4882b77d74ad9b04ab71fe8e61f72595823c`
-- ethereum `0x78c48a7d7fc69735fdab448fe6068bba44a920e6`
-- ethereum `0x86afa59ff739b5be56ce8a81a424af17b29668e9`
-- ethereum `0x917b9d8e62739986ec182e0f988c7f938651afd7`
-- ethereum `0x94ea8800444017695345156319e96bdb1e355f7a`
-- ethereum `0x963d9858651fa21e903e83c5d985fc74f6745249`
 - ethereum `0xd4dee6e089969600d3359cdbcd34e3111bc838eb`
-- ethereum `0xdb75531e12ca4bb6cd5cfe77f10522b08806386f`
-- ethereum `0xe0a86c3a7038e33cb31531222fae33a51b5022b2`
-- ethereum `0xe26348d30694aa7e879b9335252362df3df93204`
-- ethereum `0xead729472f82e5ec2ff4e691d67633077c1b5901`
-- gnosis `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`
-- gnosis `0x9ee1963f05553ef838604dd39403be21cef26aa4`
-- gnosis `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- gnosis `0xcb3e564293393e0d4f43305a250d4e1716de600b`
-- gnosis `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`
-- gnosis `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- linea `0x10eb3f443baa258b3417d6c318f7865ad61b539b`
-- linea `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7`
-- linea `0x46b053ce47f16390574bb8f54caccd04c1e3faf2`
-- linea `0x8fcf9118fdd359f6277cdd143c2da206e64140f3`
-- linea `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7`
-- linea `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- optimism `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`
-- optimism `0x4def531c3060686948f00ecc7504f2e0b71eda14`
-- optimism `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5`
-- optimism `0x90337e484b1cb02132fc150d3afa262147348545`
-- optimism `0xe8a2d848fe656e34a6caa35f375b42979e322135`
-- optimism `0xfd28f108e95f4d41daae9dbfff707d677985998e`
-- polygon `0x09f3964874d3c8494f2e98e9e003e53c2750ab72`
-- polygon `0x1250304f66404cd153fa39388ddcdaec7e0f1707`
-- polygon `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811`
-- polygon `0x8fcf9118fdd359f6277cdd143c2da206e64140f3`
-- polygon `0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9`
-- polygon `0xb4af56f42e19f6555611c5b2f5075eecd17cbaa1`
-- polygon `0xc15fd01a21e8f6625f709b16f6b3562d2848da5f`
-- polygon `0xdb7be3a50bdf5641757ebea38e8014e1f0aa9475`
-- polygon `0xfefc8635edf0faad83312a713cb67722d049c9bc`
-- scroll `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`
-- scroll `0xfd28f108e95f4d41daae9dbfff707d677985998e`

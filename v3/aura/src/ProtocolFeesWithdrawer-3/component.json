@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolFeesWithdrawer-3",
+  "main_contract": "ProtocolFeesWithdrawer",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xacf05be5134d64d150d153818f8c67ee36996650",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

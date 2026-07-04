@@ -1,15 +1,23 @@
 {
   "component": "Savings",
   "main_contract": "Savings",
-  "source_file_count": 44,
-  "deployment_count": 1,
+  "source_file_count": 27,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfd2ccc920d498db30fbe9c13d5705ae2c72670f9",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6c04c39b9e73ac91106d12f828e2e29fd8ef1024",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xadf56645e6796e32a805e5bc70267c656d0eaf7c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

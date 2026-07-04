@@ -1,0 +1,18 @@
+{
+  "component": "BurnRegistryV1-2",
+  "main_contract": "BurnRegistryV1",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xf8edaf6771af2ca9a328366e95e12502fd5b89f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

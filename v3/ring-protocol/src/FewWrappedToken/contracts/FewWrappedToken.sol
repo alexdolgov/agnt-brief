@@ -7,15 +7,14 @@ import './interfaces/IFewWrappedToken.sol';
 import './libraries/SafeMath.sol';
 import './refs/ICoreRef.sol';
 import './interfaces/IFewFactory.sol';
-import './BlastManagerFromFactory.sol';
 
 /// @title Few Wrapped Token
-contract FewWrappedToken is IFewWrappedToken, BlastManagerFromFactory {
+contract FewWrappedToken is IFewWrappedToken {
     using SafeMath for uint;
 
     string public override name;
     string public override symbol;
-    uint8 public override constant decimals = 18;
+    uint8 public override decimals;
     uint  public override totalSupply;
     mapping(address => uint) public override balanceOf;
     mapping(address => mapping(address => uint)) public override allowance;
@@ -59,6 +58,7 @@ contract FewWrappedToken is IFewWrappedToken, BlastManagerFromFactory {
         token = IFewFactory(msg.sender).parameter();
         name = string(abi.encodePacked("Few Wrapped ", IERC20(token).name()));
         symbol = string(abi.encodePacked("fw", IERC20(token).symbol()));
+        decimals = IERC20(token).decimals();
 
         DOMAIN_SEPARATOR = keccak256(
             abi.encode(

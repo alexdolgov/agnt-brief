@@ -1,0 +1,18 @@
+{
+  "component": "SiloRouterV2-4",
+  "main_contract": "SiloRouterV2",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf380f025675a868ed5614a1dd77c6b05f4147004",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

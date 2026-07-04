@@ -2,12 +2,36 @@
   "component": "LimitOrderLens",
   "main_contract": "LimitOrderLens",
   "source_file_count": 47,
-  "deployment_count": 4,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86c495640d58475f7cab41acfca1cb89e30dac37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x979012887c43ea4acc752dcc86ad3cac89d019eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc8da5863fd94644b181e6a4da313ef30675f6959",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -36,6 +60,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0xb9b7e1ad0d1abba7cf0bf23d0ee1f8a7513e473e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaea3a204e36c418029b5db58372f2113081044d4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,14 +1,14 @@
 # mux-protocol — deployments
 
-73 verified deployment(s) across 35 component(s).
+79 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0035f6ca0417cd36eb62764bcbbe163e7d296059` | LibOrderBook2 | impl | live | no |
-| arbitrum | `0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6` | GnosisSafeProxy | proxy | live | no |
+| arbitrum | `0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6` | GnosisSafeProxy-2 | proxy | live | no |
 | arbitrum | `0x11c0c4dd6ce692b2aa2d65da07aa38687f603bd9` | LibGmx | impl | live | no |
 | arbitrum | `0x19b9ecd3fa2dc9272cd815ee05f300534b4f1d8b` | DataStore | impl | live | no |
-| arbitrum | `0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef` | LibOrderBook | impl | live | yes |
+| arbitrum | `0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef` | LibOrderBook-3 | impl | live | yes |
 | arbitrum | `0x1dc6de1bba19e04c069da8d0a8f367ace33cb1cf` | MuxLpOracle | impl | live | no |
 | arbitrum | `0x2257dc42b363d611898057354c031a670934ed3f` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x2a2987c407e76782fc422a27240c9821206b8d9f` | DataStore-2 | impl | live | no |
@@ -47,6 +47,7 @@
 | arbitrum | `0xf89adc4e0f3659e9b69aa4f8606176e8fd6b72be` | GmxAdapter | impl | live | no |
 | arbitrum | `0xfe2afaf34b3016dda8cf2df75ded256ddffeb115` | GmxV2Adapter | impl | live | no |
 | avalanche | `0x3d44efa23a531fae02d8daf9ee8daaac61d66475` | LiquidityPoolHop1 | impl | live | yes |
+| avalanche | `0x8564c77261094abeee6d60a26d40f8dbaf23fc94` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0x1ea32f93cd1edfbdd8279f7cfc1da9546e0e5b3b` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0x2257dc42b363d611898057354c031a670934ed3f` | ProxyAdmin | impl | live | no |
 | bsc | `0x2b9d445dc03fecd49d52da986b5aca38a7e7771d` | NativeUnwrapper | impl | live | yes |
@@ -58,6 +59,7 @@
 | bsc | `0x393df1b7f96f9818973d300c9751a0f6503ef457` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0x3e3ae3250a51851242f59d2876db3147a3a9706f` | Admin | impl | live | yes |
 | bsc | `0x480894501d4050763d3b54e741bb82fd5f91df89` | Admin | impl | live | yes |
+| bsc | `0x48be7a0f822d68f7a26d49d2c7cb7f3e072f0b84` | LibOrderBook | impl | live | no |
 | bsc | `0x4b4b0a545630284fdbb41f4edf78a7087595db31` | Account | impl | live | no |
 | bsc | `0x4e1b11d29106cca13b38d0a834ae3e18e8701441` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0x505659f2eea25e3a46d8ebd2cf28a883c897e785` | Admin | impl | live | yes |
@@ -69,6 +71,7 @@
 | bsc | `0x782ffe1aae2d0529f5f6eb257b740e21887f318d` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0x7f65424bf920d4c25ab87583b9ab3585554379ee` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0x826111ca9f8ab0a1f35fc9de2f01e96c31b95be1` | OrderBook | impl | live | yes |
+| bsc | `0x973db3142aa601ef11c1c8148e6ea8e7a4ee6b07` | LiquidityPoolHop1 | impl | live | yes |
 | bsc | `0x9b699ab715123f250417d76ddba25173427665fe` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0xb3022de15628d44c51aaaaf68e9e0fd9a23c5fca` | ProxyAdmin | impl | live | no |
 | bsc | `0xcd4e22065ce153b00c229872d8c6601dc8abcf8c` | Admin | impl | live | yes |
@@ -76,14 +79,7 @@
 | bsc | `0xe6c1278ad6e5785f8f84199a7ae9fa26449a4722` | TransparentUpgradeableProxy | impl | live | no |
 | bsc | `0xe837ada634a2eac39e3d8a2999a725dde378a3a4` | Admin | impl | live | yes |
 | bsc | `0xee3b94e7eabedf97981558644188fb813e94dffa` | Admin | impl | live | yes |
+| bsc | `0xf483423315e2a14fbeaa97451fa3866fb37a27dd` | LibOrderBook-2 | impl | live | no |
+| bsc | `0xf67d9ec4f3362589e56ab0dbee448eb7a4964204` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0xfb0dcdc30bf892ec981255e7133aecb8ea642b76` | Account | impl | live | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0x8564c77261094abeee6d60a26d40f8dbaf23fc94`
-- bsc `0x48be7a0f822d68f7a26d49d2c7cb7f3e072f0b84`
-- bsc `0x973db3142aa601ef11c1c8148e6ea8e7a4ee6b07`
-- bsc `0xf483423315e2a14fbeaa97451fa3866fb37a27dd`
-- bsc `0xf67d9ec4f3362589e56ab0dbee448eb7a4964204`
-- optimism `0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5`
+| optimism | `0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5` | GnosisSafeProxy | proxy | live | no |

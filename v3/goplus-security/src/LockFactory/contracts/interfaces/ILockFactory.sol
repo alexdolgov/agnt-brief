@@ -20,8 +20,6 @@ interface ILockFactory {
     function feeSigner() external view returns (address);
 
     function twapInterval() external view returns (uint16);
-    
-    function getTwapIntervals(address pool) external view returns (uint16);
 
     function getFeeConfig(string memory feeType) external view returns (FeeConfig memory);
 

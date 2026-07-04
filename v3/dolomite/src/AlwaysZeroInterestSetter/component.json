@@ -2,10 +2,18 @@
   "component": "AlwaysZeroInterestSetter",
   "main_contract": "AlwaysZeroInterestSetter",
   "source_file_count": 9,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ecbbceb49c39a59d18b064b7049aac2d4d28ca2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "mantle",
       "chain_id": 5000,
@@ -13,6 +21,22 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9ecbbceb49c39a59d18b064b7049aac2d4d28ca2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x9ecbbceb49c39a59d18b064b7049aac2d4d28ca2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

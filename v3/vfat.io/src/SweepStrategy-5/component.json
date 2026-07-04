@@ -1,0 +1,26 @@
+{
+  "component": "SweepStrategy-5",
+  "main_contract": "SweepStrategy",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4a1daaa42496a208b138c92bcca3345c53a7b5b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x5ce9c2e3e803712e6fec5368968b61a55d851cdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

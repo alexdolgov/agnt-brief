@@ -1,20 +1,27 @@
 # xwin-finance — deployments
 
-179 verified deployment(s) across 23 component(s).
+213 verified deployment(s) across 28 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x00cc95c352f783438c0a95515b79620d8c3c74a8` | FundV2 | impl | live | yes |
 | arbitrum | `0x07f42f4972cf2b8d59ab9543741f21f772bfb537` | xWinERC20Alpha | impl | inactive | no |
 | arbitrum | `0x093d0496303de127806aefd8050ebb3ea44125d5` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x107c86796d5f76c7319e2e3e913220a2f0bbb428` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x1602d4ecf7f2ca9f7159e27d6149c90f39b4d763` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x190d055eb4ad2b50908ee8178492fa4dd35912b2` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x22c0fa31871adbb005a18b12d6339544ba707eeb` | FundV2Factory | impl | inactive | no |
 | arbitrum | `0x24745cd498a41904677725afe224a74c4a1fed3f` | xWinSwapV3 | impl | inactive | no |
 | arbitrum | `0x263e488747f48b7839d14ccc263a571712a5b5ae` | FundV2 | impl | live | yes |
+| arbitrum | `0x2adac8ca6c089aa34e359a95651192916462cab3` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x2d119a6d43f897907ac5810105d887939958f6b1` | xWinSwapV3 | impl | inactive | no |
 | arbitrum | `0x3986e36b1451c1fef62a312941c95d47d192bff7` | xWinPriceMaster | impl | inactive | no |
 | arbitrum | `0x3d40f1a7e18653152fac61b3e93f8032bfcbcca5` | xWinSwapV3 | impl | inactive | no |
+| arbitrum | `0x438c6fd1ee1d25536b851a495d4baffa86a95250` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x48334ec0cfeaef6bb6b857a32c5ce3323b1f6ce4` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x4917b129c45709b0fe8ad0b0580d70b244e99184` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x4c4cbc2aa5c477747b32530d2edd83254f61fa71` | xWinERC20Alpha | proxy | live | no |
+| arbitrum | `0x5834542ee7b6fe644cd568e3ad48a5b0d58ec8ba` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x5daa157604918fd37c031636f3f7a9668d709578` | xWinERC20Alpha | impl | inactive | no |
 | arbitrum | `0x631b0f08fa93fbbcf78dfd8224efd5ab5aaabd52` | xWinPriceMaster | impl | inactive | no |
 | arbitrum | `0x667b40645f9b2ea7b369548585a240d8f52978a1` | xWinSwapV3 | impl | inactive | no |
@@ -22,14 +29,29 @@
 | arbitrum | `0x6ae47584953ee351db0c089ece8e69429daebda6` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x6cc1cad8b330731e6ff469eaebf19961ea1dfc03` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x70223e133a512396fcdbe5752bc3b629ed33a1b5` | FundV2 | proxy | live | yes |
+| arbitrum | `0x72d24bd13eebd6747bf1724583d826bb9f170534` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| arbitrum | `0x7e2177468d51a1863d600996abf674a98de2f137` | TransparentUpgradeableProxy | impl | live | yes |
 | arbitrum | `0x800b4980bcd3218761f43ac2098fc82a9670406a` | xWinSwapV3 | proxy | live | no |
 | arbitrum | `0x813b16f668fdff16a36ee6a5e253cdc24ea58415` | FundV2 | impl | live | yes |
+| arbitrum | `0x83202e0505c192e49a9383c39feac509ba2717c9` | xWinStrategy | impl | inactive | no |
+| arbitrum | `0x87b34058a5d38bf6cabd0a1ac497183a1f7b8e5a` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x8a0fa3b0010c76099e935e2c8909d5441390ff62` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x8a3c24716447992c85a86231606759931f83c667` | xWinPriceMaster | proxy | live | no |
 | arbitrum | `0x8ec9c001f8985611106b779494723898ec802b8e` | FundV2 | impl | live | yes |
 | arbitrum | `0x935b12d8953d59a86aee8bf5ed0255a0ddd3deaa` | FundV2Factory | impl | inactive | no |
+| arbitrum | `0x9ccd1d6c0992c57d064745b8261cc7d5fbad8c80` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xa26e810850ce282217b3c251b99299725bbdad8c` | TransparentUpgradeableProxy-4 | impl | inactive | no |
 | arbitrum | `0xa3960cb557872d5f68ef06dc63a14b7e6b64d552` | xWinERC20Alpha | proxy | live | no |
+| arbitrum | `0xa5de4fac8eff39a6bda854d11116ffb6e442ce65` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xb65fce638c4549fedb2949baaf176c17504e07cd` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xba083e47d729be0978cd3dcfca8c2ee688b46d3d` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0xc41f7e081d99010be7ad4f085d6cf10c772f688e` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xc6c06ef7377bb1e13fa8ae05f63e82bb710ad65e` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xc9471c28dbb275400d6721d74598d40964c94cb8` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xdb0b5ef474db9b8216a8b2fdac0e7edc4668533d` | xWinEmitEvent | impl | inactive | no |
+| arbitrum | `0xe77dc6ccf4431823ffb10a5be8731ca8cf2bdd2e` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xee56939d0a02ea8d30f53fd62e9a37cf76df7c79` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0xffd33048185ac99acf2e2ef8e8cbc75417eff011` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x051dcb25cd999f88d0bc43eedeee27c605361fe1` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x05542f7f07574848c222b50df298037bf7202ed2` | xWinEmitEvent | impl | inactive | no |
 | bsc | `0x072f09c9adbe49cc16d9eec37d3d5727d5b08462` | TransparentUpgradeableProxy | impl | live | yes |
@@ -55,9 +77,12 @@
 | bsc | `0x30f77aa64f69285efb077c3813d10c6f908d9146` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0x31518c844114c72982f2fc7bc3c4249de260ba38` | FundV2-2 | impl | live | yes |
 | bsc | `0x367712b4be88d71cc82dd9b18640d3718ed979e7` | xWinMasterChef | impl | inactive | no |
+| bsc | `0x3809f24eaece0d829eb052badc567d988bbe1563` | FundV2 | impl | live | yes |
 | bsc | `0x3914a81d1a1f6cab9b8cf26ad2919247ee86f166` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0x39623135eaeb7a007f19fe8a7672de0168b2882b` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x396d759cb982bc5f7a9b714a97ab66d135ba106c` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x3b62af067bd036b8c9f0d1b9193ec41b25496f4b` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0x3c7a18b2f36002da46ce10e7dc3c5a4beb634240` | xWinERC20Alpha-2 | impl | inactive | no |
 | bsc | `0x41b74417e869918fd89574014fd0d303526d124e` | TransparentUpgradeableProxy-2 | impl | live | no |
 | bsc | `0x431de8a6e3c1cdc850a69cb576226cd58a848291` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x44195aa5f3116d99373c080c49732c4bb6748edb` | TransparentUpgradeableProxy | impl | live | yes |
@@ -95,6 +120,7 @@
 | bsc | `0x72111518fc8973b9e334fcbb81d85cd8a92241de` | TransparentUpgradeableProxy | impl | inactive | yes |
 | bsc | `0x7348bea317beb7273bfd69fd60abb5780e4da53e` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x74f33aae19795536603591ba14386d029d10a2ae` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| bsc | `0x76d6cc66f2e29b979224aaa6f500902a10edc447` | FundV2-3 | impl | live | yes |
 | bsc | `0x77d2ffa19cbd57b4a549640fd69c4467f2134b0b` | TransparentUpgradeableProxy-2 | impl | live | no |
 | bsc | `0x7a0dec70473602cd0ef3dc3d909b6dc3fa42116c` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x7a8aa080eada0b670fb719d7e53f87898a1299ac` | UniSwapV2TWAPOracle | impl | live | no |
@@ -111,6 +137,7 @@
 | bsc | `0x9031dee43b8697985fbc0c603f891ff7a8661221` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0x911ba5335233de5d2f44a82e73a231104e314a5e` | TransparentUpgradeableProxy | impl | inactive | yes |
 | bsc | `0x91501708e806a33e9a4a769db75502318ecac3dc` | TransparentUpgradeableProxy | proxy | live | yes |
+| bsc | `0x91d8816beafe8256f75b0f2156c741d76489db25` | FundV2Factory | impl | inactive | no |
 | bsc | `0x91faf1bc82b3d333d2e73bffc7579210f621421c` | TransparentUpgradeableProxy | impl | live | yes |
 | bsc | `0x9236a0e741e688f89dd697404611c81eb8269b22` | xWinFarm | impl | live | no |
 | bsc | `0x92befe8daa544b73b2889da286c36540b85d06a5` | TransparentUpgradeableProxy | impl | inactive | yes |
@@ -119,6 +146,7 @@
 | bsc | `0x96160da74d56e311ab7b5f0a9ee93703d61c948c` | TransparentUpgradeableProxy | impl | inactive | yes |
 | bsc | `0x96303976fc1df9aaa2707861c7e44b365e4b9dc5` | xWinFund | impl | live | no |
 | bsc | `0x9a54717818e89d6d99af2353fa53a865734cc78f` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| bsc | `0x9ab3c504de0fda0087d378123bdc318aadbc60a0` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x9ce3fcffaeb4b7fbdf39e9313f845d977393d8d1` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x9e0039feb55f00d4183b150f48d205242e6a8803` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x9fd5bfa4ab63ca608cc99ece69723f0242fc1099` | TransparentUpgradeableProxy | impl | inactive | yes |
@@ -132,8 +160,10 @@
 | bsc | `0xac01d131c04546c8db2eace57e323046caf3d390` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0xaf91db52bee0b35efed1024fef4b8f7d6c8535f9` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0xb0bc79e36855419038a7da20b86ea45578081d6e` | TransparentUpgradeableProxy-2 | impl | live | no |
+| bsc | `0xb1233713fea0984fff84c7456d2cced43e5e48e2` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0xb26012db23683b823c6ca317e228e225f3845944` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0xb805048ee58a7d8bc46e5c3b1faab7f5492bd505` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| bsc | `0xb97f617e22c3f02916ae94f40e2ab9817c55ecb5` | xWinERC20Alpha | impl | inactive | no |
 | bsc | `0xba37d829e1f64633b013837cb135c098267cdf7f` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0xbeac3585a91e0bd15e955dcc572ee2f3dd8db739` | TransparentUpgradeableProxy | impl | live | yes |
 | bsc | `0xbf694dd2f1124db06ddfeb60e4cd9c4787aac9b4` | TransparentUpgradeableProxy | impl | live | yes |
@@ -155,6 +185,7 @@
 | bsc | `0xd60373aecd0c6241002441b86111c80c0c1b15ab` | TransparentUpgradeableProxy | impl | inactive | yes |
 | bsc | `0xd66b0f31e921f220e36f2a8ed382e853220097c2` | TransparentUpgradeableProxy | impl | inactive | yes |
 | bsc | `0xd6f8548cffd8d37b0be85b563e73c082b961b810` | TransparentUpgradeableProxy | impl | inactive | yes |
+| bsc | `0xd712df1d0d82f9e244418b467a4d923a0d90c77a` | xWinPriceMaster-2 | impl | inactive | no |
 | bsc | `0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28` | XWINToken | impl | live | no |
 | bsc | `0xda728cf7a18e81a5a15329ca8d21268316899092` | TransparentUpgradeableProxy | impl | live | yes |
 | bsc | `0xda9814a5f5eaee62e21238ccd9b241a85066785f` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -183,42 +214,11 @@
 | polygon | `0x4259ed91681159e455629a35d81c0b0020e3feed` | TransparentUpgradeableProxy | proxy | live | yes |
 | polygon | `0x5493881d5fc68be3519cb25f2a4717d192800707` | TransparentUpgradeableProxy | proxy | live | yes |
 | polygon | `0x75dab5000af15e7a9dd9c2365ae69e394c252a5a` | TransparentUpgradeableProxy | proxy | live | yes |
+| polygon | `0x9ebc52d849f961b43289d6da55663f3b9f628a68` | TransparentUpgradeableProxy | proxy | live | yes |
+| polygon | `0xb4319e7dfbb84c8160846359eba6d3b9b9440f69` | TransparentUpgradeableProxy | proxy | live | yes |
+| polygon | `0xc1c53b4a16b834599b1f6acfd869765b08d422ac` | TransparentUpgradeableProxy | proxy | live | yes |
 
-## Source unavailable (35)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x107c86796d5f76c7319e2e3e913220a2f0bbb428`
-- arbitrum `0x190d055eb4ad2b50908ee8178492fa4dd35912b2`
-- arbitrum `0x2adac8ca6c089aa34e359a95651192916462cab3`
-- arbitrum `0x438c6fd1ee1d25536b851a495d4baffa86a95250`
-- arbitrum `0x48334ec0cfeaef6bb6b857a32c5ce3323b1f6ce4`
-- arbitrum `0x4917b129c45709b0fe8ad0b0580d70b244e99184`
 - arbitrum `0x556aa1a4e4941bdde0c7a2c834600100d35cf1d0`
-- arbitrum `0x5834542ee7b6fe644cd568e3ad48a5b0d58ec8ba`
-- arbitrum `0x72d24bd13eebd6747bf1724583d826bb9f170534`
-- arbitrum `0x7e2177468d51a1863d600996abf674a98de2f137`
-- arbitrum `0x83202e0505c192e49a9383c39feac509ba2717c9`
-- arbitrum `0x87b34058a5d38bf6cabd0a1ac497183a1f7b8e5a`
-- arbitrum `0x9ccd1d6c0992c57d064745b8261cc7d5fbad8c80`
-- arbitrum `0xa26e810850ce282217b3c251b99299725bbdad8c`
-- arbitrum `0xa5de4fac8eff39a6bda854d11116ffb6e442ce65`
-- arbitrum `0xb65fce638c4549fedb2949baaf176c17504e07cd`
-- arbitrum `0xba083e47d729be0978cd3dcfca8c2ee688b46d3d`
-- arbitrum `0xc6c06ef7377bb1e13fa8ae05f63e82bb710ad65e`
-- arbitrum `0xc9471c28dbb275400d6721d74598d40964c94cb8`
-- arbitrum `0xdb0b5ef474db9b8216a8b2fdac0e7edc4668533d`
-- arbitrum `0xe77dc6ccf4431823ffb10a5be8731ca8cf2bdd2e`
-- arbitrum `0xee56939d0a02ea8d30f53fd62e9a37cf76df7c79`
-- arbitrum `0xffd33048185ac99acf2e2ef8e8cbc75417eff011`
-- bsc `0x3809f24eaece0d829eb052badc567d988bbe1563`
-- bsc `0x39623135eaeb7a007f19fe8a7672de0168b2882b`
-- bsc `0x3c7a18b2f36002da46ce10e7dc3c5a4beb634240`
-- bsc `0x76d6cc66f2e29b979224aaa6f500902a10edc447`
-- bsc `0x91d8816beafe8256f75b0f2156c741d76489db25`
-- bsc `0x9ab3c504de0fda0087d378123bdc318aadbc60a0`
-- bsc `0xb1233713fea0984fff84c7456d2cced43e5e48e2`
-- bsc `0xb97f617e22c3f02916ae94f40e2ab9817c55ecb5`
-- bsc `0xd712df1d0d82f9e244418b467a4d923a0d90c77a`
-- polygon `0x9ebc52d849f961b43289d6da55663f3b9f628a68`
-- polygon `0xb4319e7dfbb84c8160846359eba6d3b9b9440f69`
-- polygon `0xc1c53b4a16b834599b1f6acfd869765b08d422ac`

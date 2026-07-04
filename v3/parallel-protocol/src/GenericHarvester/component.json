@@ -1,15 +1,23 @@
 {
   "component": "GenericHarvester",
   "main_contract": "GenericHarvester",
-  "source_file_count": 19,
-  "deployment_count": 1,
+  "source_file_count": 36,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x36da06796fd9d22bcd6287b66a87ffdadb12636c",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x120805265fa944834dc6e930de2995768806a9d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

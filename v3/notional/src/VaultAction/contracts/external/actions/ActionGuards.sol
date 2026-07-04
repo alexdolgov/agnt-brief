@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -21,7 +21,7 @@ abstract contract ActionGuards is StorageLayoutV1 {
 
     modifier nonReentrant() {
         // On the first call to nonReentrant, _notEntered will be true
-        require(reentrancyStatus != _ENTERED, "Reentrant call");
+        require(reentrancyStatus != _ENTERED); // dev: reentered
 
         // Any calls to nonReentrant after this point will fail
         reentrancyStatus = _ENTERED;

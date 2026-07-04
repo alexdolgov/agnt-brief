@@ -17,11 +17,6 @@ library RescueFundsLib {
         address(0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE);
 
     /**
-     * @dev thrown when the given token address don't have any code
-     */
-    error InvalidTokenAddress();
-
-    /**
      * @dev Rescues funds from a contract.
      * @param token_ The address of the token contract.
      * @param userAddress_ The address of the user.
@@ -38,7 +33,10 @@ library RescueFundsLib {
             (bool success, ) = userAddress_.call{value: amount_}("");
             require(success);
         } else {
-            if (token_.code.length == 0) revert InvalidTokenAddress();
+            require(
+                token_.code.length > 0,
+                "RescueFundsLib: Invalid token address"
+            );
             IERC20(token_).safeTransfer(userAddress_, amount_);
         }
     }

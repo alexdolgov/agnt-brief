@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.19;
+pragma solidity 0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "../libraries/Fixed.sol";
+import "contracts/libraries/Fixed.sol";
 import "./IAsset.sol";
-import "./IComponent.sol";
 import "./ITrade.sol";
 import "./IRewardable.sol";
 
@@ -12,9 +11,9 @@ import "./IRewardable.sol";
  * @title ITrading
  * @notice Common events and refresher function for all Trading contracts
  */
-interface ITrading is IComponent, IRewardableComponent {
-    event MaxTradeSlippageSet(uint192 oldVal, uint192 newVal);
-    event MinTradeVolumeSet(uint192 oldVal, uint192 newVal);
+interface ITrading is IRewardable {
+    event MaxTradeSlippageSet(uint192 indexed oldVal, uint192 indexed newVal);
+    event MinTradeVolumeSet(uint192 indexed oldVal, uint192 indexed newVal);
 
     /// Emitted when a trade is started
     /// @param trade The one-time-use trade contract that was just deployed
@@ -45,10 +44,8 @@ interface ITrading is IComponent, IRewardableComponent {
     );
 
     /// Settle a single trade, expected to be used with multicall for efficient mass settlement
-    /// @param sell The sell token in the trade
-    /// @return The trade settled
     /// @custom:refresher
-    function settleTrade(IERC20 sell) external returns (ITrade);
+    function settleTrade(IERC20 sell) external;
 
     /// @return {%} The maximum trade slippage acceptable
     function maxTradeSlippage() external view returns (uint192);
@@ -58,12 +55,6 @@ interface ITrading is IComponent, IRewardableComponent {
 
     /// @return The ongoing trade for a sell token, or the zero address
     function trades(IERC20 sell) external view returns (ITrade);
-
-    /// @return The number of ongoing trades open
-    function tradesOpen() external view returns (uint48);
-
-    /// @return The number of total trades ever opened
-    function tradesNonce() external view returns (uint256);
 }
 
 interface TestITrading is ITrading {
@@ -72,4 +63,7 @@ interface TestITrading is ITrading {
 
     /// @custom:governance
     function setMinTradeVolume(uint192 val) external;
+
+    /// @return The number of ongoing trades open
+    function tradesOpen() external view returns (uint48);
 }

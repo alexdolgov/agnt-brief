@@ -1,17 +1,39 @@
 {
   "component": "Locker",
   "main_contract": "Locker",
-  "source_file_count": 9,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf"
-  ],
+  "source_file_count": 7,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x5b64cecc5cf3e4b1a668abd895d16bddc0c77a17",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa3dcf3ca587d9929d540868c924f208726dc9ab6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa3dcf3ca587d9929d540868c924f208726dc9ab6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa3dcf3ca587d9929d540868c924f208726dc9ab6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa3dcf3ca587d9929d540868c924f208726dc9ab6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

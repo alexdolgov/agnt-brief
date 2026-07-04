@@ -2,16 +2,62 @@
   "component": "MetaVaultWrapper",
   "main_contract": "MetaVaultWrapper",
   "source_file_count": 29,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://1608032478-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSE6NakmHsqUzyells7H%2Fuploads%2FoaRoctf29lEXC7Gi2dy6%2FMetaVault%20-%20Spectra%20Finance%20Audit%20-%20Sherlock.pdf"
-  ],
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x082ee010d8470050cb979fcd6e4996773721324c",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3dca7195e00b65d28e447c270eac1abf33486201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x422db71253da7d8e71e716ea9fc5c319bd0c2641",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5339dceaa0f96c623cdf343ec95c3fcce7fd5820",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7adc44362f7ce36cf3d4b438c17bfbe804899c21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x82b7eea41638fc59eda9a3c12e11419079b8ecd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa51a24d99c65c5bd3a3b8d43bb06f9bf3e529061",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc92ff9aa64f9139129d4b1aa5a099dc70ab00278",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

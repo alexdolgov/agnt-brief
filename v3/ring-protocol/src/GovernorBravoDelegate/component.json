@@ -2,10 +2,18 @@
   "component": "GovernorBravoDelegate",
   "main_contract": "GovernorBravoDelegate",
   "source_file_count": 2,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf9cfaa38ca767a32a8447b0f3a7c4f43451635eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "blast",
       "chain_id": 81457,

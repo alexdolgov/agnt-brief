@@ -17,6 +17,11 @@ interface ICLPoolConstants {
     /// @return The token contract address
     function token1() external view returns (address);
 
+    /// @notice The two tokens of the pool
+    /// @return The token0 contract address
+    /// @return The token1 contract address
+    function tokens() external view returns (address, address);
+
     /// @notice The gauge corresponding to this pool
     /// @return The gauge contract address
     function gauge() external view returns (address);
@@ -24,10 +29,6 @@ interface ICLPoolConstants {
     /// @notice The nft manager
     /// @return The nft manager contract address
     function nft() external view returns (address);
-
-    /// @notice The factory registry that manages pool <> gauge <> reward factory relationships
-    /// @return The factory registry contract address
-    function factoryRegistry() external view returns (address);
 
     /// @notice The pool tick spacing
     /// @dev Ticks can only be used at multiples of this value, minimum of 1 and always positive

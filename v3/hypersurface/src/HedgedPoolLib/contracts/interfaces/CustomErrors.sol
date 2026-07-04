@@ -32,4 +32,13 @@ interface CustomErrors {
     error TokenIndexMismatch();
     error InvalidPendingAmount();
     error PositionManagerIsNotSet(address token);
+    error InvalidReceiver();
+    error OrderAlreadyProcessed();
+    error OrderIsNotSubmitted();
+    error InvalidSellAmount();
+    error InvalidBuyAmount();
+    error SwapRouterIsNotWhitelisted();
+    error TokenIsNotWhitelisted();
+    error InvalidOrderTokens();
+    error PoolDoesNotExist();
 }

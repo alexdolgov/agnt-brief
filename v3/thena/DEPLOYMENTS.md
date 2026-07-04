@@ -1,6 +1,6 @@
 # thena — deployments
 
-450 verified deployment(s) across 109 component(s).
+457 verified deployment(s) across 114 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -451,17 +451,13 @@
 | bsc | `0xfdacbe57802b731a9445821779cddcda54dfff34` | TransparentUpgradeableProxy | impl | inactive | yes |
 | bsc | `0xfec52c54f8450fed9967afefd6e2c66b83852cea` | TradingCompetitionSpotFactory | impl | inactive | no |
 | bsc | `0xffb2ade60d3df7eb5fbdfda355ee13197b5c7bc2` | veNFTAPI | impl | inactive | no |
+| chain-204 | `0x2ac5617f1c04641393bd3246f38521ede0fc9011` | TransparentUpgradeableProxy-3 | impl | live | no |
 | chain-204 | `0x306f06c147f064a010530292a1eb6737c3e378e4` | AlgebraPoolDeployer-2 | impl | inactive | no |
 | chain-204 | `0x327dd3208f0bcf590a66110acb6e5e6941a4efa0` | TickLens | impl | inactive | no |
+| chain-204 | `0x4e944464f0482d80dd666c427e88ff4a723557c4` | AlgebraPoolDeployer-2 | impl | inactive | no |
+| chain-204 | `0x8089ed19d7ce5132003b9b135bb4d8c3f36e3168` | NonfungiblePositionManager-3 | impl | inactive | no |
 | chain-204 | `0x9356934eb3fbae6274eae6efc905b292f04f0122` | TickLens | impl | live | no |
-
-## Source unavailable (7)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-204 `0x2ac5617f1c04641393bd3246f38521ede0fc9011`
-- chain-204 `0x4e944464f0482d80dd666c427e88ff4a723557c4`
-- chain-204 `0x8089ed19d7ce5132003b9b135bb4d8c3f36e3168`
-- chain-204 `0x9e92b57bff702530a0c3be9ff5fe2c24f95a91f6`
-- chain-204 `0xa51adb08cbe6ae398046a23bec013979816b77ab`
-- chain-204 `0xc89f69baa3ff17a842ab2de89e5fc8a8e2cc7358`
-- chain-204 `0xf15b76244c184b4ccd37f419e0f4591b3fab9290`
+| chain-204 | `0x9e92b57bff702530a0c3be9ff5fe2c24f95a91f6` | AlgebraFactory-3 | impl | inactive | no |
+| chain-204 | `0xa51adb08cbe6ae398046a23bec013979816b77ab` | NonfungibleTokenPositionDescriptor-2 | impl | inactive | no |
+| chain-204 | `0xc89f69baa3ff17a842ab2de89e5fc8a8e2cc7358` | AlgebraPoolDeployer-2 | impl | inactive | no |
+| chain-204 | `0xf15b76244c184b4ccd37f419e0f4591b3fab9290` | Quoter-3 | impl | inactive | no |

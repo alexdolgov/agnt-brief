@@ -1,0 +1,74 @@
+{
+  "component": "ProxyOracle-4",
+  "main_contract": "ProxyOracle",
+  "source_file_count": 4,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x105cc8faca360bbecf2242d1b6a11d2d00db36ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39dba7955cee12578b7548df7ebf88f835d51be1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9141fd00c1d2fbc5e92361dcd9854417409cadb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x04146736fef83a25e39834a972cf6a5c011acead",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0cc93802f800ccee67914c3072e80d23e920a3e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7e0f0cc086b069d1ae3edb7e7aeecc770b6d3aeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb69c154030ce89340cdceca8eed93283499a8276",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf8b72e847e648bc87c8269fe258cbe908fa2a71d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

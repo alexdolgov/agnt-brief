@@ -2,9 +2,9 @@
 pragma solidity 0.8.28;
 
 import {ShareTokenLib} from "../lib/ShareTokenLib.sol";
-import {SiloMathLib} from "../lib/SiloMathLib.sol";
 import {ShareCollateralTokenLib} from "../lib/ShareCollateralTokenLib.sol";
-import {IShareToken, ShareToken, ISilo} from "./ShareToken.sol";
+import {IShareToken, ShareToken} from "./ShareToken.sol";
+import {IVersioned} from "../interfaces/IVersioned.sol";
 
 /// @title ShareCollateralToken
 /// @notice ERC20 compatible token representing collateral in Silo
@@ -19,6 +19,11 @@ abstract contract ShareCollateralToken is ShareToken {
     function burn(address _owner, address _spender, uint256 _amount) external virtual override onlySilo {
         if (_owner != _spender) _spendAllowance(_owner, _spender, _amount);
         _burn(_owner, _amount);
+    }
+
+    /// @inheritdoc IVersioned
+    function VERSION() external pure virtual returns (string memory) { // solhint-disable-line func-name-mixedcase
+        return "ShareCollateralToken 4.1.3";
     }
 
     /// @dev Check if sender is solvent after the transfer

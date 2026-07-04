@@ -1,6 +1,6 @@
 # llama-airforce — deployments
 
-162 verified deployment(s) across 99 component(s).
+177 verified deployment(s) across 107 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -25,6 +25,8 @@
 | ethereum | `0x1d2fc9222633d33271f03255b56e7e50636c8e37` | BBUSDHandler | impl | inactive | no |
 | ethereum | `0x1f409ec6f395493ad39f5b27945f1a6658a23908` | stkCvxFxsZaps | impl | live | no |
 | ethereum | `0x1f9409933aa273dab349ceba255f5ad8f854defb` | stkCvxPrismaHarvester | impl | inactive | no |
+| ethereum | `0x20b68b9efbe3c925b10d07a09391a83a78a751c1` | Vyper_contract | impl | live | no |
+| ethereum | `0x218403ebc5ee1ee088823985b496cabffb0a953c` | Vyper_contract-2 | impl | inactive | no |
 | ethereum | `0x22530d384cd9915e096ead2db7f82ee81f8eb468` | FeeAllocator | impl | live | no |
 | ethereum | `0x2604ab21546775e8d9b6e230a3c85a37ff05a2ed` | stkCvxCrvDistributorZaps | impl | live | no |
 | ethereum | `0x27a11054b62c29c166f3fab2b0ac708043b0cb49` | CVXMerkleDistributor | impl | inactive | no |
@@ -59,10 +61,13 @@
 | ethereum | `0x4ebad8dbd4edbd74db0278714fbd67ebc76b89b7` | stkCvxCrvVault | impl | live | no |
 | ethereum | `0x4fcd115f7e7e161d82c6a9fbe8cfd35b6e8c73e2` | AuraHandler | impl | inactive | no |
 | ethereum | `0x5053371da4ba1f6c65e61a4bba86cedee49733c7` | PxCvx | impl | live | no |
+| ethereum | `0x505b5ff8f6a33050b5950e28eda7c524b553f7d4` | Vyper_contract | impl | live | no |
 | ethereum | `0x53443740ea74c4e816a9e167704f9f9fae3595a3` | SemiLog_monetary_policy | impl | inactive | no |
 | ethereum | `0x55b2b51f661e269aed638a5ddbf2fc930125690a` | sReUsdDistributor | impl | live | no |
 | ethereum | `0x5682a28919389b528ae74dd627e0d632ca7e398c` | stkCvxFxsMerkleDistributor | impl | live | no |
 | ethereum | `0x56e9db574c8d5015d198671cbf1200b6bb2ed944` | DistributorZaps | impl | live | no |
+| ethereum | `0x59c952823c271da02b52debcf4b5582ad9114310` | Vyper_contract | impl | live | no |
+| ethereum | `0x5af5e91dede935c1f92e08e9bb4c961f387c2e71` | PirexClaimAll-2 | impl | live | no |
 | ethereum | `0x5b62f91278f9439bcffd25d9fdc08043b46328de` | CrvUsdSwapper | impl | inactive | no |
 | ethereum | `0x5beef400f378df4f353fb42e58498f9779002624` | stkCvxPrismaZaps | impl | inactive | no |
 | ethereum | `0x5c53174c8d88f0f56c33f923b8c6a84a1760e484` | BBUSDHandler | impl | inactive | no |
@@ -77,6 +82,7 @@
 | ethereum | `0x6f76c6c2fefa72bac17d2864e05b93abe7b1441c` | MerkleStash | impl | inactive | no |
 | ethereum | `0x6fc5afc727d7807c21ed0a961f0fa6e4c25ee8a4` | AuraBalStrategy | impl | inactive | no |
 | ethereum | `0x7374c3dcaf8ff2c9bb706eaff7bf4ebbf9ac6067` | AuraBalZaps | impl | inactive | no |
+| ethereum | `0x76052439a4a632b65cc03074df1c7766ba0e0471` | Vyper_contract-3 | impl | inactive | no |
 | ethereum | `0x77e5bb2c91cac7c7a8a74c38804fdb372baf7328` | AuraBalVault | impl | live | no |
 | ethereum | `0x783c13b94123ccdcc5d597deb93a69983e1d4a51` | PirexDistributorZaps-2 | impl | live | no |
 | ethereum | `0x7a3d81cfc5a942abe9ec656eff818f7dab4e0fe1` | ERC1155Solmate | impl | live | no |
@@ -92,9 +98,12 @@
 | ethereum | `0x853dcbf4dd00dbc6a70002ff87be3671ac966067` | UnionZap | impl | inactive | no |
 | ethereum | `0x86446124258f8fae2fd8a7637816111f555c073e` | PCvxZaps | impl | inactive | no |
 | ethereum | `0x8659fc767cad6005de79af65dafe4249c57927af` | UnionPirexVault | impl | live | no |
+| ethereum | `0x874942096ed129c1a7c99de6c7aa6fa0b679f322` | FeeAllocator-2 | impl | inactive | no |
 | ethereum | `0x88011c72623777f6452a7d6d8bab10ec67e89e01` | stkCvxPrismaStrategy | impl | inactive | no |
 | ethereum | `0x8b37af33127aeb54d9e602f98c53f279f46acf15` | UnionZap | impl | inactive | no |
+| ethereum | `0x8bd873dad13493d3d0f3585ff221fba389a7b44a` | PirexClaimAll-3 | impl | live | no |
 | ethereum | `0x8c4eb0fc6805ee7337ac126f89a807271a88dd67` | GenericUnionVault-2 | impl | live | no |
+| ethereum | `0x8c7aa3c15ffead950d4556cfecafec2b742f292c` | Vyper_contract | impl | live | no |
 | ethereum | `0x8d2aee9a7d581f3ed29e961a05c54f2be90eb7f3` | stkCvxCrvStrategy | impl | inactive | no |
 | ethereum | `0x8e6d5cf9b9659d4f8e68ee040bf26e728ef1baa4` | AirdropDistributor | impl | inactive | no |
 | ethereum | `0x8e705c0694795516178c63b6c40339ac2be686c2` | PirexMigrationV1 | impl | inactive | no |
@@ -123,7 +132,9 @@
 | ethereum | `0xae12bf0ad604ddb1c5f048e14b48d719fbdc7d7c` | stkCvxFxsDistributorZaps | impl | live | no |
 | ethereum | `0xaef6ea60f6443bad046e825c1d2b0c0b5ebc1f16` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0xb0a21aca8b04f852fd70c928ad9c3ece97d6acd3` | cow_harvester | impl | live | no |
+| ethereum | `0xb10c27e4370b95c807915f3e64e94717591c106c` | Vyper_contract-4 | impl | inactive | no |
 | ethereum | `0xb192908e533fc64109a20ee7d056175a24f17a55` | PCvxZaps-2 | impl | live | no |
+| ethereum | `0xb40359ce3d7494adb696697855537640f85156d7` | Vyper_contract | impl | live | no |
 | ethereum | `0xb4fb1fd4aec780bc255bf231189e9a244475d260` | VotiumVeCRV | impl | inactive | no |
 | ethereum | `0xb58f3295b3db1a9bc0f909d591c6f0e600488487` | Swapper | impl | inactive | no |
 | ethereum | `0xb70ec1ae115d184d9401e30510dc20b294ff48ac` | AuraBalVault | impl | live | no |
@@ -138,6 +149,7 @@
 | ethereum | `0xc9c7c0eae2d6c6244814467f7718407e2571487d` | EasySign | impl | inactive | no |
 | ethereum | `0xca7b5b6a9b135fc7e29ba7bc5d4cca936395025c` | AuraBalStrategy | impl | inactive | no |
 | ethereum | `0xcc2a0f5e95c88aabd7b8e0db5c5252820cd47f91` | UnionZap | impl | inactive | no |
+| ethereum | `0xcc40a1c97a87792f341bbd8e05bd2d309daea6dc` | Vyper_contract-5 | impl | inactive | no |
 | ethereum | `0xcd215f053c0cd288e894e7bac1a1519071dd9216` | SpaceAuction | impl | inactive | no |
 | ethereum | `0xce45e2e9a1ca8ba9a311bf862606b890c1f5d988` | UnionZap | impl | inactive | no |
 | ethereum | `0xcfa23b8f9062369b21049b9f4a4ce79d640d1873` | AssetRegistry | impl | live | no |
@@ -152,6 +164,7 @@
 | ethereum | `0xd94b0763dadd691a1e9688cf0ef8238d95422154` | PrismaSwapper | impl | inactive | no |
 | ethereum | `0xdd5eb7d90f856f0df11ba59876a8981cebe4bc04` | AddressRegistry | impl | inactive | no |
 | ethereum | `0xde2bef0a01845257b4aef2a2eaa48f6eaeafa8b7` | stkCvxCrvVault | impl | live | no |
+| ethereum | `0xe1ca332516a74e136575bac99205c60888982989` | RAAC_Stable_Vault_Factory | impl | live | no |
 | ethereum | `0xe33ed45c38a1def9c0bfb592d6b4f9788898d4a8` | BBUSDHandlerv2 | impl | inactive | no |
 | ethereum | `0xe47e8b5b4ee05b7663b15087381bd47bcbd20fc3` | ERC1155Solmate | impl | live | no |
 | ethereum | `0xe63f4ef026a3e30a267c5ff39765a283ca37b931` | MerkleStash | impl | inactive | no |
@@ -161,27 +174,10 @@
 | ethereum | `0xed41c3402c4b62777939b7334b4d3d2407517ff9` | PirexClaims-2 | impl | live | no |
 | ethereum | `0xf09320ed7db384cab7fce9ea9947436a806754d3` | stkCvxPrismaMerkleDistributor | impl | live | no |
 | ethereum | `0xf14d2128e4d36aa81b3a46ce57bf427629b5dc9f` | stkCvxCrvHarvester | impl | inactive | no |
+| ethereum | `0xf222593a4c8f68336b4709ec57e1a76a7e3ed9ba` | RAAC_CoW_Harvester-2 | impl | live | no |
 | ethereum | `0xf4112931c955fda9fb7f184da3518e6050a30eb7` | UnionZap | impl | inactive | no |
 | ethereum | `0xf761c0098967d756c9673f2798dbf23342badff8` | CvxFxsStrategy | impl | inactive | no |
 | ethereum | `0xf964b0e3ffdea659c44a5a52bc0b82a24b89ce0e` | GenericUnionVault-3 | impl | live | no |
 | ethereum | `0xf97d26bbf79cd7b319f54e5dd8a6f581605dafef` | CvxFxsZaps | impl | inactive | no |
+| ethereum | `0xfb9b21087f5cf9f1c1e0217628afab98ba447281` | Vyper_contract | impl | live | no |
 | ethereum | `0xff87da30e779ca78ff2e9b1582d6c15c1ac31a95` | stkCvxCrvZaps | impl | inactive | no |
-
-## Source unavailable (15)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x20b68b9efbe3c925b10d07a09391a83a78a751c1`
-- ethereum `0x218403ebc5ee1ee088823985b496cabffb0a953c`
-- ethereum `0x505b5ff8f6a33050b5950e28eda7c524b553f7d4`
-- ethereum `0x59c952823c271da02b52debcf4b5582ad9114310`
-- ethereum `0x5af5e91dede935c1f92e08e9bb4c961f387c2e71`
-- ethereum `0x76052439a4a632b65cc03074df1c7766ba0e0471`
-- ethereum `0x874942096ed129c1a7c99de6c7aa6fa0b679f322`
-- ethereum `0x8bd873dad13493d3d0f3585ff221fba389a7b44a`
-- ethereum `0x8c7aa3c15ffead950d4556cfecafec2b742f292c`
-- ethereum `0xb10c27e4370b95c807915f3e64e94717591c106c`
-- ethereum `0xb40359ce3d7494adb696697855537640f85156d7`
-- ethereum `0xcc40a1c97a87792f341bbd8e05bd2d309daea6dc`
-- ethereum `0xe1ca332516a74e136575bac99205c60888982989`
-- ethereum `0xf222593a4c8f68336b4709ec57e1a76a7e3ed9ba`
-- ethereum `0xfb9b21087f5cf9f1c1e0217628afab98ba447281`

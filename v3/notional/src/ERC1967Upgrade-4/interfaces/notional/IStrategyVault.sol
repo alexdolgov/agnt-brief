@@ -1,63 +1,63 @@
-// SPDX-License-Identifier: BSUL-1.1
+// SPDX-License-Identifier: GPL-v3
 pragma solidity >=0.7.6;
 
 interface IStrategyVault {
 
-    /// @notice MUST always return 8. All strategy vaults must use 8 decimal precision. Where
-    /// underlying yield strategies use larger precision, vaults will round down at 8 decimals.
+    struct StrategyVaultRoles {
+        bytes32 emergencyExit;
+        bytes32 rewardReinvestment;
+        bytes32 staticSlippageTrading;
+    }
+
     function decimals() external view returns (uint8);
-
-    /// @notice A specific name for an individual vault instance, to be displayed on a user interface.
-    /// SHOULD include some indication of the borrowed currency in the case of multiple vault instances
-    /// that borrow different currencies.
     function name() external view returns (string memory);
-
-    /// @notice A unique 4 byte identifier for the strategy. All instances of a vault that implement
-    /// the same yield strategy must return the same 4 byte identifier. Allows user interfaces to
-    /// identify any additional front end code that must be loaded for this vault.
     function strategy() external view returns (bytes4 strategyId);
 
-    /// @notice Will be called after an account has executed a borrow and `depositAmount` has been
-    /// transferred to the contract. The vault will then enter into it's yield strategy position and
-    /// return the strategy tokens minted for this particular account.
-    /// @dev MUST revert if called by any other contract than Notional. 
+    // Tells a vault to deposit some amount of tokens from Notional and mint strategy tokens with it.
     function depositFromNotional(
         address account,
         uint256 depositAmount,
         uint256 maturity,
         bytes calldata data
-    ) external payable returns (uint256 vaultSharesMinted);
+    ) external payable returns (uint256 strategyTokensMinted);
 
-    /// @notice Called when an account is exiting a position and the vault must transfer tokens
-    /// back to Notional in order to repay debts. The vault will redeem `vaultShares` for underlying
-    /// tokens and send `underlyingToRepayDebt` back to the Notional. Any remaining tokens must be
-    /// sent to the `receiver` address.
-    /// @dev MUST revert if called by any other contract than Notional.
-    /// @return transferToReceiver the amount of tokens transferred to the receiver so that Notional
-    /// can log the event.
+    // Tells a vault to redeem some amount of strategy tokens from Notional and transfer the resulting asset cash
     function redeemFromNotional(
         address account,
         address receiver,
-        uint256 vaultShares,
+        uint256 strategyTokens,
         uint256 maturity,
         uint256 underlyingToRepayDebt,
         bytes calldata data
     ) external returns (uint256 transferToReceiver);
 
-    /// @notice Called in order to get the value of strategy tokens denominated in the borrowed
-    /// currency.
     function convertStrategyToUnderlying(
         address account,
-        uint256 vaultShares,
+        uint256 strategyTokens,
         uint256 maturity
     ) external view returns (int256 underlyingValue);
 
-    /// @notice Called during vault account settlement when the vault does not allow rolling
-    /// maturities, will convert strategy tokens from the given maturity into prime cash strategy
-    /// tokens.
+    function getExchangeRate(uint256 maturity) external view returns (int256);
+
+    function deleverageAccount(
+        address account,
+        address vault,
+        address liquidator,
+        uint16 currencyIndex,
+        int256 depositUnderlyingInternal
+    ) external payable returns (uint256 vaultSharesFromLiquidation, int256 depositAmountPrimeCash);
+
+    function liquidateVaultCashBalance(
+        address account,
+        address vault,
+        address liquidator,
+        uint256 currencyIndex,
+        int256 fCashDeposit
+    ) external returns (int256 cashToLiquidator);
+
     function convertVaultSharesToPrimeMaturity(
         address account,
         uint256 vaultShares,
         uint256 maturity
-    ) external returns (uint256 primeStrategyTokens);
+    ) external returns (uint256 primeVaultShares);
 }

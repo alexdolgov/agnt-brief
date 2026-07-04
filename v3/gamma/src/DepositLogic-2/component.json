@@ -1,0 +1,18 @@
+{
+  "component": "DepositLogic-2",
+  "main_contract": "DepositLogic",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x9224a25f82d0cacfb46ea4eae0fdfc995cc8dbc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

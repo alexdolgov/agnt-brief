@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolFeeRouter-4",
+  "main_contract": "ProtocolFeeRouter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xeebb4b00f916436244ca045f8ce8d1fe00054ae2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

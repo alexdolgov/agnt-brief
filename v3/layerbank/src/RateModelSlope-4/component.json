@@ -1,0 +1,26 @@
+{
+  "component": "RateModelSlope-4",
+  "main_contract": "RateModelSlope",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x709be039a87e5c6f1a085de0d167fa0a4e7477fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc690549e0215192d1ffb527bb3ca4d4ba638cad2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

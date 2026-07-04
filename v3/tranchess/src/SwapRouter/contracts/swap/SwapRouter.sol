@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity >=0.6.10 <0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
@@ -8,6 +8,7 @@ import "../interfaces/ISwapRouter.sol";
 import "../interfaces/ITrancheIndexV2.sol";
 import "../fund/ShareStaking.sol";
 import "../interfaces/IWrappedERC20.sol";
+import "../interfaces/IWstETH.sol";
 
 /// @title Tranchess Swap Router
 /// @notice Router for stateless execution of swaps against Tranchess stable swaps
@@ -15,34 +16,38 @@ contract SwapRouter is ISwapRouter, ITrancheIndexV2, Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
+    address public immutable wstETH;
+    address public immutable stETH;
+
+    constructor(address wstETH_) public {
+        wstETH = wstETH_;
+        stETH = IWstETH(wstETH_).stETH();
+    }
+
     event SwapAdded(address addr0, address addr1, address swap);
 
     mapping(address => mapping(address => IStableSwap)) private _swapMap;
 
     /// @dev Returns the swap for the given token pair and fee. The swap contract may or may not exist.
-    function getSwap(address baseAddress, address quoteAddress)
-        public
-        view
-        override
-        returns (IStableSwap)
-    {
-        (address addr0, address addr1) =
-            baseAddress < quoteAddress ? (baseAddress, quoteAddress) : (quoteAddress, baseAddress);
+    function getSwap(
+        address baseAddress,
+        address quoteAddress
+    ) public view override returns (IStableSwap) {
+        (address addr0, address addr1) = baseAddress < quoteAddress
+            ? (baseAddress, quoteAddress)
+            : (quoteAddress, baseAddress);
         return _swapMap[addr0][addr1];
     }
 
-    function addSwap(
-        address baseAddress,
-        address quoteAddress,
-        address swap
-    ) external onlyOwner {
+    function addSwap(address baseAddress, address quoteAddress, address swap) external onlyOwner {
         require(
             swap == address(0) ||
                 (baseAddress == IStableSwap(swap).baseAddress() &&
                     quoteAddress == IStableSwap(swap).quoteAddress())
         ); // sanity check
-        (address addr0, address addr1) =
-            baseAddress < quoteAddress ? (baseAddress, quoteAddress) : (quoteAddress, baseAddress);
+        (address addr0, address addr1) = baseAddress < quoteAddress
+            ? (baseAddress, quoteAddress)
+            : (quoteAddress, baseAddress);
         _swapMap[addr0][addr1] = IStableSwap(swap);
         emit SwapAdded(addr0, addr1, swap);
     }
@@ -59,6 +64,9 @@ contract SwapRouter is ISwapRouter, ITrancheIndexV2, Ownable {
         uint256 deadline
     ) external payable override checkDeadline(deadline) {
         IStableSwap swap = getSwap(baseAddress, quoteAddress);
+        if (quoteAddress == stETH) {
+            swap = getSwap(baseAddress, wstETH);
+        }
         require(address(swap) != address(0), "Unknown swap");
 
         swap.fund().trancheTransferFrom(
@@ -72,6 +80,11 @@ contract SwapRouter is ISwapRouter, ITrancheIndexV2, Ownable {
             require(msg.value == quoteIn); // sanity check
             IWrappedERC20(quoteAddress).deposit{value: quoteIn}();
             IERC20(quoteAddress).safeTransfer(address(swap), quoteIn);
+        } else if (quoteAddress == stETH) {
+            IERC20(stETH).safeTransferFrom(msg.sender, address(this), quoteIn);
+            IERC20(stETH).approve(wstETH, quoteIn);
+            quoteIn = IWstETH(wstETH).wrap(quoteIn);
+            IERC20(wstETH).safeTransfer(address(swap), quoteIn);
         } else {
             IERC20(quoteAddress).safeTransferFrom(msg.sender, address(swap), quoteIn);
         }
@@ -241,15 +254,14 @@ contract SwapRouter is ISwapRouter, ITrancheIndexV2, Ownable {
         require(success, "Transfer failed");
     }
 
-    function getAmountsOut(uint256 amount, address[] memory path)
+    function getAmountsOut(
+        uint256 amount,
+        address[] memory path
+    )
         public
         view
         override
-        returns (
-            uint256[] memory amounts,
-            IStableSwap[] memory swaps,
-            bool[] memory isBuy
-        )
+        returns (uint256[] memory amounts, IStableSwap[] memory swaps, bool[] memory isBuy)
     {
         amounts = new uint256[](path.length);
         swaps = new IStableSwap[](path.length - 1);
@@ -267,15 +279,14 @@ contract SwapRouter is ISwapRouter, ITrancheIndexV2, Ownable {
         }
     }
 
-    function getAmountsIn(uint256 amount, address[] memory path)
+    function getAmountsIn(
+        uint256 amount,
+        address[] memory path
+    )
         public
         view
         override
-        returns (
-            uint256[] memory amounts,
-            IStableSwap[] memory swaps,
-            bool[] memory isBuy
-        )
+        returns (uint256[] memory amounts, IStableSwap[] memory swaps, bool[] memory isBuy)
     {
         amounts = new uint256[](path.length);
         swaps = new IStableSwap[](path.length - 1);

@@ -1,18 +1,34 @@
 {
   "component": "PriceFeed",
   "main_contract": "PriceFeed",
-  "source_file_count": 3,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x060d6784d770d54dcb37fc2cb2d896d929b6e0b1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x22e12a53cb40533707881607f808c7939cde9e0c",
+      "is_proxy": true,
+      "implementation_address": "0x5d3174731f2a8c564fcfb2120709f69059642d4e",
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbf7f22f78d25fc1dc77f18a93e8e6e153487f6ac",
+      "is_proxy": true,
+      "implementation_address": "0x9434bdb4f2d0233904e0301f8bf09ceaf9c72bcc",
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcd9c0e99396627c7746b4363b880939ac2828d3e",
+      "is_proxy": true,
+      "implementation_address": "0x6b33b99e3d3213df963375e6d94aba968351f803",
+      "liveness": "live"
     }
   ]
 }

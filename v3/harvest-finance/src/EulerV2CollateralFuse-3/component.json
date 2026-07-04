@@ -1,0 +1,18 @@
+{
+  "component": "EulerV2CollateralFuse-3",
+  "main_contract": "EulerV2CollateralFuse",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf569a44710deb64c8dc9751d8595bb90962f7a67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StargateToken-4",
+  "main_contract": "StargateToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe3b53af74a4bf62ae5511055290838050bf764df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

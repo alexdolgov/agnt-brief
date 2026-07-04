@@ -2,7 +2,7 @@
   "component": "OFT",
   "main_contract": "OFT",
   "source_file_count": 40,
-  "deployment_count": 7,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -58,6 +58,22 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xa716249b1f06483d08c2073a46e4308b9539ae13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb5259c05764468c33c9c36e327caad020a8e5fe1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc6fffa0e234e5ec80b8654cb351da90a092f6c95",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "BridgeReceiver-2",
+  "main_contract": "BridgeReceiver",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x6510d4e6d2991db86383932c26c5ed2077f385de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

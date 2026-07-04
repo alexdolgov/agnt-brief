@@ -1,0 +1,18 @@
+{
+  "component": "FeeRateModelImpl-3",
+  "main_contract": "FeeRateModelImpl",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x418ade5929fb6a9e3666ab19332e70a0f0a64470",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

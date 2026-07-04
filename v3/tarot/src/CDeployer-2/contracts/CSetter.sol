@@ -6,18 +6,15 @@ import "./interfaces/IFactory.sol";
 import "./interfaces/ITarotSolidlyPriceOracleV2.sol";
 
 contract CSetter is PoolToken, CStorage {
-    uint256 public constant SAFETY_MARGIN_MIN = 1.00e18; //safetyMargin: 100%
-    uint256 public constant SAFETY_MARGIN_MAX = 1.50e18; //safetyMargin: 150%
+    uint256 public constant SAFETY_MARGIN_SQRT_MIN = 1.00e18; //safetyMargin: 100%
+    uint256 public constant SAFETY_MARGIN_SQRT_MAX = 1.58113884e18; //safetyMargin: 250%
     uint256 public constant LIQUIDATION_INCENTIVE_MIN = 1.00e18; //100%
     uint256 public constant LIQUIDATION_INCENTIVE_MAX = 1.05e18; //105%
-	uint256 public constant LIQUIDATION_FEE_MAX = 0.05e18; //5%
-    uint256 public constant M_TOLERANCE_MIN = 1;
-    uint256 public constant M_TOLERANCE_MAX = 1e12;
+    uint256 public constant LIQUIDATION_FEE_MAX = 0.05e18; //5%
 
-    event NewSafetyMargin(uint256 newSafetyMargin);
+    event NewSafetyMargin(uint256 newSafetyMarginSqrt);
     event NewLiquidationIncentive(uint256 newLiquidationIncentive);
     event NewLiquidationFee(uint256 newLiquidationFee);
-    event NewMTolerance(uint256 newMTolerance);
 
     // called once by the factory at the time of deployment
     function _initialize(
@@ -35,17 +32,17 @@ contract CSetter is PoolToken, CStorage {
         tarotPriceOracle = IFactory(factory).tarotPriceOracle();
     }
 
-    function _setSafetyMargin(uint256 newSafetyMargin)
+    function _setSafetyMarginSqrt(uint256 newSafetyMarginSqrt)
         external
         nonReentrant
     {
         _checkSetting(
-            newSafetyMargin,
-            SAFETY_MARGIN_MIN,
-            SAFETY_MARGIN_MAX
+            newSafetyMarginSqrt,
+            SAFETY_MARGIN_SQRT_MIN,
+            SAFETY_MARGIN_SQRT_MAX
         );
-        safetyMargin = newSafetyMargin;
-        emit NewSafetyMargin(newSafetyMargin);
+        safetyMarginSqrt = newSafetyMarginSqrt;
+        emit NewSafetyMargin(newSafetyMarginSqrt);
     }
 
     function _setLiquidationIncentive(uint256 newLiquidationIncentive)
@@ -72,19 +69,6 @@ contract CSetter is PoolToken, CStorage {
         );
         liquidationFee = newLiquidationFee;
         emit NewLiquidationFee(newLiquidationFee);
-    }
-
-    function _setMTolerance(uint256 newMTolerance)
-        external
-        nonReentrant
-    {
-        _checkSetting(
-            newMTolerance,
-            M_TOLERANCE_MIN,
-            M_TOLERANCE_MAX
-        );
-        mTolerance = newMTolerance;
-        emit NewMTolerance(newMTolerance);
     }
 
     function _checkSetting(

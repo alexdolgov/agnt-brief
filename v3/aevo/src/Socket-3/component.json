@@ -1,0 +1,42 @@
+{
+  "component": "Socket-3",
+  "main_contract": "Socket",
+  "source_file_count": 68,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x16e4a6af6e81c7997fc784c8e621316e480a4ee8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9e3e4755411f8529cbed5a974a85fa9a8a13a9d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbc080a2e2593045fffc1b8c3cafc67732f8306a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfb6daf96202bd3815b2e602464adc10317634066",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

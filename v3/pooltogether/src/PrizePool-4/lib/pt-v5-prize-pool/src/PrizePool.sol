@@ -5,19 +5,12 @@ import { SafeCast } from "openzeppelin/utils/math/SafeCast.sol";
 import { IERC20 } from "openzeppelin/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "openzeppelin/token/ERC20/utils/SafeERC20.sol";
 import { SD59x18, convert, sd } from "prb-math/SD59x18.sol";
-import { UD60x18, convert } from "prb-math/UD60x18.sol";
+import { SD1x18, unwrap, UNIT } from "prb-math/SD1x18.sol";
 import { TwabController } from "pt-v5-twab-controller/TwabController.sol";
 
 import { DrawAccumulatorLib, Observation, MAX_OBSERVATION_CARDINALITY } from "./libraries/DrawAccumulatorLib.sol";
 import { TieredLiquidityDistributor, Tier } from "./abstract/TieredLiquidityDistributor.sol";
 import { TierCalculationLib } from "./libraries/TierCalculationLib.sol";
-
-/* ============ Constants ============ */
-
-// The minimum draw timeout. A timeout of two is necessary to allow for enough time to close and award a draw.
-uint24 constant MINIMUM_DRAW_TIMEOUT = 2;
-
-/* ============ Errors ============ */
 
 /// @notice Thrown when the prize pool is constructed with a first draw open timestamp that is in the past
 error FirstDrawOpensInPast();
@@ -96,10 +89,8 @@ error InvalidPrizeIndex(uint32 invalidPrizeIndex, uint32 prizeCount, uint8 tier)
 /// @notice Thrown when there are no awarded draws when a computation requires an awarded draw.
 error NoDrawsAwarded();
 
-/// @notice Thrown when the prize pool is initialized with a draw timeout lower than the minimum.
-/// @param drawTimeout The draw timeout that was set
-/// @param minimumDrawTimeout The minimum draw timeout
-error DrawTimeoutLtMinimum(uint24 drawTimeout, uint24 minimumDrawTimeout);
+/// @notice Thrown when the Prize Pool is constructed with a draw timeout of zero
+error DrawTimeoutIsZero();
 
 /// @notice Thrown when the Prize Pool is constructed with a draw timeout greater than the grand prize period draws
 error DrawTimeoutGTGrandPrizePeriodDraws();
@@ -165,6 +156,14 @@ struct ConstructorParams {
   uint8 canaryShares;
   uint8 reserveShares;
   uint24 drawTimeout;
+}
+
+/// @notice A struct to represent a shutdown portion of liquidity for a vault and account
+/// @param numerator The numerator of the portion
+/// @param denominator The denominator of the portion
+struct ShutdownPortion {
+  uint256 numerator;
+  uint256 denominator;
 }
 
 /// @title PoolTogether V5 Prize Pool
@@ -281,7 +280,7 @@ contract PrizePool is TieredLiquidityDistributor {
   /// @notice The timestamp at which the first draw will open.
   uint48 public immutable firstDrawOpensAt;
 
-  /// @notice The maximum number of draws that can pass since the last awarded draw before the prize pool is considered inactive.
+  /// @notice The maximum number of draws that can be missed before the prize pool is considered inactive.
   uint24 public immutable drawTimeout;
 
   /// @notice The address that is allowed to set the draw manager
@@ -318,7 +317,7 @@ contract PrizePool is TieredLiquidityDistributor {
   mapping(address vault => mapping(address account => Observation lastWithdrawalTotalContributedObservation)) internal _withdrawalObservations;
 
   /// @notice The shutdown portion of liquidity for a vault and account
-  mapping(address vault => mapping(address account => UD60x18 shutdownPortion)) internal _shutdownPortions;
+  mapping(address vault => mapping(address account => ShutdownPortion shutdownPortion)) internal _shutdownPortions;
 
   /* ============ Constructor ============ */
 
@@ -336,8 +335,8 @@ contract PrizePool is TieredLiquidityDistributor {
       params.grandPrizePeriodDraws
     )
   {
-    if (params.drawTimeout < MINIMUM_DRAW_TIMEOUT) {
-      revert DrawTimeoutLtMinimum(params.drawTimeout, MINIMUM_DRAW_TIMEOUT);
+    if (params.drawTimeout == 0) {
+      revert DrawTimeoutIsZero();
     }
 
     if (params.drawTimeout > params.grandPrizePeriodDraws) {
@@ -693,7 +692,7 @@ contract PrizePool is TieredLiquidityDistributor {
   /// @return The number of draws
   function getTierAccrualDurationInDraws(uint8 _tier) external view returns (uint24) {
     return
-      TierCalculationLib.estimatePrizeFrequencyInDraws(getTierOdds(_tier, numberOfTiers), grandPrizePeriodDraws);
+      uint24(TierCalculationLib.estimatePrizeFrequencyInDraws(getTierOdds(_tier, numberOfTiers)));
   }
 
   /// @notice The total amount of prize tokens that have been withdrawn as fees or prizes
@@ -871,7 +870,7 @@ contract PrizePool is TieredLiquidityDistributor {
   /// @param _vault The vault whose contributions are measured
   /// @param _account The account whose vault twab is measured
   /// @return The portion of the shutdown balance that the account is entitled to.
-  function computeShutdownPortion(address _vault, address _account) public view returns (UD60x18) {
+  function computeShutdownPortion(address _vault, address _account) public view returns (ShutdownPortion memory) {
     uint24 drawIdPriorToShutdown = getShutdownDrawId() - 1;
     uint24 startDrawIdInclusive = computeRangeStartDrawIdInclusive(drawIdPriorToShutdown, grandPrizePeriodDraws);
 
@@ -888,15 +887,11 @@ contract PrizePool is TieredLiquidityDistributor {
       drawIdPriorToShutdown
     );
 
-    if (_vaultTwabTotalSupply == 0 || totalContrib == 0) {
-      return UD60x18.wrap(0);
+    if (_vaultTwabTotalSupply == 0) {
+      return ShutdownPortion(0, 0);
     }
 
-    // first division purposely done before multiplication to avoid overflow
-    return convert(vaultContrib)
-      .div(convert(totalContrib))
-      .mul(convert(_userTwab))
-      .div(convert(_vaultTwabTotalSupply));
+    return ShutdownPortion(vaultContrib * _userTwab, totalContrib * _vaultTwabTotalSupply);
   }
 
   /// @notice Returns the shutdown balance for a given vault and account. The prize pool must already be shutdown.
@@ -912,7 +907,7 @@ contract PrizePool is TieredLiquidityDistributor {
     }
 
     Observation memory withdrawalObservation = _withdrawalObservations[_vault][_account];
-    UD60x18 shutdownPortion;
+    ShutdownPortion memory shutdownPortion;
     uint256 balance;
 
     // if we haven't withdrawn yet, add the portion of the shutdown balance
@@ -924,7 +919,7 @@ contract PrizePool is TieredLiquidityDistributor {
       shutdownPortion = _shutdownPortions[_vault][_account];
     }
 
-    if (shutdownPortion.unwrap() == 0) {
+    if (shutdownPortion.denominator == 0) {
       return 0;
     }
 
@@ -933,7 +928,7 @@ contract PrizePool is TieredLiquidityDistributor {
     Observation memory newestObs = _totalAccumulator.newestObservation();
     balance += (newestObs.available + newestObs.disbursed) - (withdrawalObservation.available + withdrawalObservation.disbursed);
 
-    return convert(convert(balance).mul(shutdownPortion));
+    return (shutdownPortion.numerator * balance) / shutdownPortion.denominator;
   }
 
   /// @notice Withdraws the shutdown balance for a given vault and sender
@@ -962,7 +957,7 @@ contract PrizePool is TieredLiquidityDistributor {
   /// @notice Returns the timestamp at which the prize pool will be considered inactive and shutdown
   /// @return The timestamp at which the prize pool will be considered inactive
   function shutdownAt() public view returns (uint256) {
-    uint256 twabShutdownAt = drawOpensAt(getDrawId(twabController.lastObservationAt()));
+    uint256 twabShutdownAt = twabController.lastObservationAt();
     uint256 drawTimeoutAt_ = drawTimeoutAt();
     return drawTimeoutAt_ < twabShutdownAt ? drawTimeoutAt_ : twabShutdownAt;
   }
@@ -1016,7 +1011,7 @@ contract PrizePool is TieredLiquidityDistributor {
     }
 
     SD59x18 tierOdds = getTierOdds(_tier, numberOfTiers);
-    uint24 startDrawIdInclusive = computeRangeStartDrawIdInclusive(lastAwardedDrawId_, TierCalculationLib.estimatePrizeFrequencyInDraws(tierOdds, grandPrizePeriodDraws));
+    uint24 startDrawIdInclusive = computeRangeStartDrawIdInclusive(lastAwardedDrawId_, uint24(TierCalculationLib.estimatePrizeFrequencyInDraws(tierOdds)));
 
     uint32 tierPrizeCount = uint32(TierCalculationLib.prizeCount(_tier));
 

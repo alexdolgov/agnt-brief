@@ -1,0 +1,18 @@
+{
+  "component": "OracleAggregatorV2-4",
+  "main_contract": "OracleAggregatorV2",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x28a17ecb649aa6d225da8cae1ac6d1495e1d8b9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "component": "FarmStrategy-2",
+  "main_contract": "FarmStrategy",
+  "source_file_count": 33,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x59a1c34ac8514fead9af3c0c96c92794284063a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd34d1328103d9cf65037aaa7e736f74b8f878dd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x8cf93e63cbd02d790523bea5cafc7db08e5fdcc0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x13c59ec73585f1437728cdf29535ae088f125089",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4b516a9dfed2c4a1a2cf76e760b680536f751023",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1e2bc5c694af33a3dd8dc8f06b7b959e70612f72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xded5c1fcf79f762094eec6e6ed5e6104e6ed9938",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x1e2bc5c694af33a3dd8dc8f06b7b959e70612f72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

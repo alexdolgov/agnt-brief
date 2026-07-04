@@ -10,13 +10,6 @@
 //  | (__ / _` || || || |/ _` | | '_|/ _ \| ' \))
 //   \___|\__,_| \_,_||_|\__,_| |_|  \___/|_||_|
 
-// Copyright (c) 2021 BoringCrypto - All rights reserved
-// Twitter: @Boring_Crypto
-
-// Special thanks to:
-// @0xKeno - for all his invaluable contributions
-// @burger_crypto - for the idea of trying to let the LPs benefit from liquidations
-
 pragma solidity >=0.8.0;
 import "BoringSolidity/BoringOwnable.sol";
 import "BoringSolidity/ERC20.sol";
@@ -107,25 +100,25 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
 
     AccrueInfo public accrueInfo;
 
-    uint64 private constant ONE_PERCENT_RATE = 317097920;
+    uint64 internal constant ONE_PERCENT_RATE = 317097920;
 
     /// @notice tracking of last interest update
-    uint256 private lastInterestUpdate;
+    uint256 internal lastInterestUpdate;
 
     // Settings
     uint256 public COLLATERIZATION_RATE;
-    uint256 private constant COLLATERIZATION_RATE_PRECISION = 1e5; // Must be less than EXCHANGE_RATE_PRECISION (due to optimization in math)
+    uint256 internal constant COLLATERIZATION_RATE_PRECISION = 1e5; // Must be less than EXCHANGE_RATE_PRECISION (due to optimization in math)
 
-    uint256 private constant EXCHANGE_RATE_PRECISION = 1e18;
+    uint256 internal constant EXCHANGE_RATE_PRECISION = 1e18;
 
     uint256 public LIQUIDATION_MULTIPLIER; 
-    uint256 private constant LIQUIDATION_MULTIPLIER_PRECISION = 1e5;
+    uint256 internal constant LIQUIDATION_MULTIPLIER_PRECISION = 1e5;
 
     uint256 public BORROW_OPENING_FEE;
-    uint256 private constant BORROW_OPENING_FEE_PRECISION = 1e5;
+    uint256 internal constant BORROW_OPENING_FEE_PRECISION = 1e5;
 
-    uint256 private constant DISTRIBUTION_PART = 10;
-    uint256 private constant DISTRIBUTION_PRECISION = 100;
+    uint256 internal constant DISTRIBUTION_PART = 10;
+    uint256 internal constant DISTRIBUTION_PRECISION = 100;
 
     modifier onlyMasterContractOwner() {
         require(msg.sender == masterContract.owner(), "Caller is not the owner");
@@ -137,18 +130,29 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         bentoBox = bentoBox_;
         magicInternetMoney = magicInternetMoney_;
         masterContract = this;
+        
+        blacklistedCallees[address(bentoBox)] = true;
+        blacklistedCallees[address(this)] = true;
+        blacklistedCallees[BoringOwnable(address(bentoBox)).owner()] = true;
     }
 
     /// @notice Serves as the constructor for clones, as clones can't have a regular constructor
     /// @dev `data` is abi encoded in the format: (IERC20 collateral, IERC20 asset, IOracle oracle, bytes oracleData)
-    function init(bytes calldata data) public payable override {
+    function init(bytes calldata data) public virtual payable override {
         require(address(collateral) == address(0), "Cauldron: already initialized");
         (collateral, oracle, oracleData, accrueInfo.INTEREST_PER_SECOND, LIQUIDATION_MULTIPLIER, COLLATERIZATION_RATE, BORROW_OPENING_FEE) = abi.decode(data, (IERC20, IOracle, bytes, uint64, uint256, uint256, uint256));
         borrowLimit = BorrowCap(type(uint128).max, type(uint128).max);
         require(address(collateral) != address(0), "Cauldron: bad pair");
 
         magicInternetMoney.approve(address(bentoBox), type(uint256).max);
+
+        blacklistedCallees[address(bentoBox)] = true;
+        blacklistedCallees[address(this)] = true;
+        blacklistedCallees[BoringOwnable(address(bentoBox)).owner()] = true;
+
         (, exchangeRate) = oracle.get(oracleData);
+
+        accrue();
     }
 
     /// @notice Accrues the interest on the borrowed tokens and handles the accumulation of fees.
@@ -242,6 +246,8 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         }
     }
 
+    function _afterAddCollateral(address user, uint256 collateralShare) internal virtual {}
+
     /// @notice Adds `collateral` from msg.sender to the account `to`.
     /// @param to The receiver of the tokens.
     /// @param skim True if the amount should be skimmed from the deposit balance of msg.sender.x
@@ -251,18 +257,22 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         address to,
         bool skim,
         uint256 share
-    ) public {
+    ) public virtual {
         userCollateralShare[to] = userCollateralShare[to].add(share);
         uint256 oldTotalCollateralShare = totalCollateralShare;
         totalCollateralShare = oldTotalCollateralShare.add(share);
         _addTokens(collateral, share, oldTotalCollateralShare, skim);
+        _afterAddCollateral(to, share);
         emit LogAddCollateral(skim ? address(bentoBox) : msg.sender, to, share);
     }
 
+    function _afterRemoveCollateral(address from, address to, uint256 collateralShare) internal virtual {}
+
     /// @dev Concrete implementation of `removeCollateral`.
-    function _removeCollateral(address to, uint256 share) internal {
+    function _removeCollateral(address to, uint256 share) internal virtual {
         userCollateralShare[msg.sender] = userCollateralShare[msg.sender].sub(share);
         totalCollateralShare = totalCollateralShare.sub(share);
+        _afterRemoveCollateral(msg.sender, to, share);
         emit LogRemoveCollateral(msg.sender, to, share);
         bentoBox.transfer(collateral, address(this), to, share);
     }
@@ -274,6 +284,10 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         // accrue must be called because we check solvency
         accrue();
         _removeCollateral(to, share);
+    }
+
+    function _preBorrowAction(address to, uint256 amount, uint256 newBorrowPart, uint256 part) internal virtual {
+
     }
 
     /// @dev Concrete implementation of `borrow`.
@@ -289,6 +303,7 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         
         uint256 newBorrowPart = userBorrowPart[msg.sender].add(part);
         require(newBorrowPart <= cap.borrowPartPerAddress, "Borrow Limit reached");
+        _preBorrowAction(to, amount, newBorrowPart, part);
 
         userBorrowPart[msg.sender] = newBorrowPart;
 
@@ -360,6 +375,9 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
     uint8 internal constant ACTION_LIQUIDATE = 31;
     uint8 internal constant ACTION_RELEASE_COLLATERAL_FROM_STRATEGY = 33;
 
+    // Custom cook actions
+    uint8 internal constant ACTION_CUSTOM_START_INDEX = 100;
+
     int256 internal constant USE_VALUE1 = -1;
     int256 internal constant USE_VALUE2 = -2;
 
@@ -415,12 +433,14 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
             callData = abi.encodePacked(callData, value1, value2);
         }
 
-        require(callee != address(bentoBox) && callee != address(this) && !blacklistedCallees[callee], "Cauldron: can't call");
+        require(!blacklistedCallees[callee], "Cauldron: can't call");
 
         (bool success, bytes memory returnData) = callee.call{value: value}(callData);
         require(success, "Cauldron: call failed");
         return (returnData, returnValues);
     }
+
+   function _additionalCookAction(uint8 action, uint256 value, bytes memory data, uint256 value1, uint256 value2) internal virtual returns (bytes memory, uint8) {}
 
     struct CookStatus {
         bool needsSolvencyCheck;
@@ -501,6 +521,13 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
                 
                 (, previousStrategyTargetPercentage,) = bentoBox.strategyData(collateral);
                 IBentoBoxOwner(bentoBox.owner()).setStrategyTargetPercentageAndRebalance(collateral, 0);
+            } else {
+                (bytes memory returnData, uint8 returnValues) = _additionalCookAction(action, values[i], datas[i], value1, value2);
+                if (returnValues == 1) {
+                    (value1) = abi.decode(returnData, (uint256));
+                } else if (returnValues == 2) {
+                    (value1, value2) = abi.decode(returnData, (uint256, uint256));
+                }
             }
         }
 
@@ -514,10 +541,16 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         }
     }
 
-    function _cookActionLiquidate(bytes calldata data) private {
+    function _cookActionLiquidate(bytes calldata data) internal {
          (address[] memory users, uint256[] memory maxBorrowParts, address to, ISwapperV2 swapper, bytes memory swapperData) = abi.decode(data, (address[], uint256[], address, ISwapperV2, bytes));
         liquidate(users, maxBorrowParts, to, swapper, swapperData);
     }
+
+    function _beforeUsersLiquidated(address[] memory users, uint256[] memory maxBorrowPart) internal virtual {}
+
+    function _beforeUserLiquidated(address user, uint256 borrowPart, uint256 borrowAmount, uint256 collateralShare) internal virtual {}
+
+    function _afterUserLiquidated(address user, uint256 collateralShare) internal virtual {}
 
     /// @notice Handles the liquidation of users' balances, once the users' amount of collateral is too low.
     /// @param users An array of user addresses.
@@ -529,7 +562,7 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         address to,
         ISwapperV2 swapper,
         bytes memory swapperData
-    ) public {
+    ) public virtual {
         // Oracle can fail but we still need to allow liquidations
         (, uint256 _exchangeRate) = updateExchangeRate();
         accrue();
@@ -538,15 +571,15 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         uint256 allBorrowAmount;
         uint256 allBorrowPart;
         Rebase memory bentoBoxTotals = bentoBox.totals(collateral);
+        _beforeUsersLiquidated(users, maxBorrowParts);
+
         for (uint256 i = 0; i < users.length; i++) {
             address user = users[i];
             if (!_isSolvent(user, _exchangeRate)) {
                 uint256 borrowPart;
-                {
-                    uint256 availableBorrowPart = userBorrowPart[user];
-                    borrowPart = maxBorrowParts[i] > availableBorrowPart ? availableBorrowPart : maxBorrowParts[i];
-                    userBorrowPart[user] = availableBorrowPart.sub(borrowPart);
-                }
+                uint256 availableBorrowPart = userBorrowPart[user];
+                borrowPart = maxBorrowParts[i] > availableBorrowPart ? availableBorrowPart : maxBorrowParts[i];
+
                 uint256 borrowAmount = totalBorrow.toElastic(borrowPart, false);
                 uint256 collateralShare =
                     bentoBoxTotals.toBase(
@@ -555,7 +588,11 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
                         false
                     );
 
+                _beforeUserLiquidated(user, borrowPart, borrowAmount, collateralShare);
+                userBorrowPart[user] = availableBorrowPart.sub(borrowPart);
                 userCollateralShare[user] = userCollateralShare[user].sub(collateralShare);
+                _afterUserLiquidated(user, collateralShare);
+
                 emit LogRemoveCollateral(user, to, collateralShare);
                 emit LogRepay(msg.sender, user, borrowAmount, borrowPart);
                 emit LogLiquidation(msg.sender, user, to, collateralShare, borrowAmount, borrowPart);
@@ -666,6 +703,9 @@ contract CauldronV4 is BoringOwnable, IMasterContract {
         }
 
         uint128 previousElastic = totalBorrow.elastic;
+
+        require(previousElastic - amount > 1000 * 1e18, "Total Elastic too small");
+
         totalBorrow.elastic = previousElastic - amount;
 
         emit LogRepayForAll(amount, previousElastic, totalBorrow.elastic);

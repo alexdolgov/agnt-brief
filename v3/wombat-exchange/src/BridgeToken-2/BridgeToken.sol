@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Arbiscan.io on 2023-03-22
+*/
+
 // File: @openzeppelin/contracts/proxy/beacon/IBeacon.sol
 
 pragma solidity ^0.8.0;

@@ -1,6 +1,6 @@
 # vest-markets — deployments
 
-25 verified deployment(s) across 4 component(s).
+31 verified deployment(s) across 8 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -20,7 +20,7 @@
 | arbitrum | `0x705aaffeccb370883531f09c64133d3abb6fa7f9` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x7b3e67687a99e608492a0ac460c88c56b43a4ad2` | SrcBridge | impl | inactive | no |
 | arbitrum | `0x8092c5c45822a9861340e3a2e1c81146e89e1799` | DevSrcBridge | impl | inactive | no |
-| arbitrum | `0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00` | SrcBridge-2 | proxy | live | no |
 | arbitrum | `0x8952c806da8fa2eccd408ee257647f2712209a97` | SrcBridge | impl | inactive | no |
 | arbitrum | `0x8f158704fc662684555f1e46de0950a38304cbd3` | SrcBridge | impl | inactive | no |
 | arbitrum | `0x9e55503859c886f415e938ef80d83d88854d2564` | SrcBridge | impl | inactive | no |
@@ -29,13 +29,9 @@
 | arbitrum | `0xb3df0644f6bce62e0f6914ea92380cc456ccfcf5` | DevSrcBridge | impl | inactive | no |
 | arbitrum | `0xbfe4c29a799865bfa5d0ef888a723d4a56b83dc8` | DevSrcBridge | impl | inactive | no |
 | arbitrum | `0xf863a918073dff26a57cbb49037f98c2b22f78da` | SrcBridge | impl | inactive | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x42cd5231648fd412900e34d4deb14f602a958b7b`
-- bsc `0xb2f86eae1197032fa85389cc6c0f3b06b58dd1ea`
-- bsc `0xca0d26a9c82d0b6133e624ce26f7d7d50ebe71cb`
-- bsc `0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974`
-- bsc `0xecd91c77b98d507e3c20bac86d2541ecbdc881e3`
-- bsc `0xef14da66876476c1a75dc057343b97b6bd372c41`
+| bsc | `0x42cd5231648fd412900e34d4deb14f602a958b7b` | SrcBridge-3 | impl | inactive | no |
+| bsc | `0xb2f86eae1197032fa85389cc6c0f3b06b58dd1ea` | SrcBridge-4 | impl | inactive | no |
+| bsc | `0xca0d26a9c82d0b6133e624ce26f7d7d50ebe71cb` | ProxyAdmin | impl | live | no |
+| bsc | `0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974` | SrcBridge-5 | impl | inactive | no |
+| bsc | `0xecd91c77b98d507e3c20bac86d2541ecbdc881e3` | SrcBridge-6 | impl | inactive | no |
+| bsc | `0xef14da66876476c1a75dc057343b97b6bd372c41` | SrcBridge-2 | proxy | live | no |

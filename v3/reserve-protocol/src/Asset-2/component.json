@@ -1,0 +1,18 @@
+{
+  "component": "Asset-2",
+  "main_contract": "Asset",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbcb71ee9c3372f3444cbbe3e1b263204967edbe3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,14 +2,38 @@
   "component": "AdaptiveCurveIrm",
   "main_contract": "AdaptiveCurveIrm",
   "source_file_count": 11,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63c5d47ef01abfa18f7bb74c6b1a40fecfdaccc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "bsc",
       "chain_id": 56,
       "address": "0x172e1f86277c9e7e2ec175c6b3d1d47576c11b3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcd4b353a836ca04c88e0720599a7aae738811b3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbf61206266e770b5d54480995ea8130f7b33c703",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import { ISuperToken } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
-import { IStrategy } from "../interfaces/IStrategy.sol";
+import "../interfaces/IStrategy.sol";
 
 interface IManager {
     event WrapScheduleCreated(

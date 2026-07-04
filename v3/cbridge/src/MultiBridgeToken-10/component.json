@@ -1,0 +1,45 @@
+{
+  "component": "MultiBridgeToken-10",
+  "main_contract": "MultiBridgeToken",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x4a63afc71427807586da190bb0d3adb461ff9589",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x516e6d96896aea92ce5e78b0348fd997f13802ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x5d96d4287d1ff115ee50fac0526cf43ecf79bfc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x75364d4f779d0bd0facd9a218c67f87dd9aff3b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "LiquidityManager-2",
+  "main_contract": "LiquidityManager",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93c22fbeff4448f2fb6e432579b0638838ff9581",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xac9788cfea201950db91d7db6f28c448cf3a4b29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

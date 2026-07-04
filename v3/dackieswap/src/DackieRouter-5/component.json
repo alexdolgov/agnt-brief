@@ -1,0 +1,18 @@
+{
+  "component": "DackieRouter-5",
+  "main_contract": "DackieRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

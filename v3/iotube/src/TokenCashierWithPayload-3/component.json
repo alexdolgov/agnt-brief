@@ -1,0 +1,18 @@
+{
+  "component": "TokenCashierWithPayload-3",
+  "main_contract": "TokenCashierWithPayload",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6bba6bab7faa5aa720f84468cba6086e0821e049",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

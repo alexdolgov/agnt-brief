@@ -1,8 +1,9 @@
-// SPDX-License-Identifier: GPL-v3
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity >=0.7.6;
 pragma abicoder v2;
 
 import {
+    VaultConfigParams,
     VaultConfigStorage,
     VaultConfig,
     VaultState,
@@ -38,7 +39,7 @@ interface IVaultAction {
     /// @notice Governance only method to whitelist a particular vault
     function updateVault(
         address vaultAddress,
-        VaultConfigStorage calldata vaultConfig,
+        VaultConfigParams memory vaultConfig,
         uint80 maxPrimaryBorrowCapacity
     ) external;
 
@@ -243,7 +244,7 @@ interface IVaultAccountHealth {
         int256 vaultAccountCashBalance
     ) external view returns (int256 fCashRequired, int256 discountFactor);
 
-    function checkVaultAccountCollateralRatio(address vault, address account) external;
+    function checkVaultAccountCollateralRatio(address vault, address account, bool checkDebtCap) external;
 
     function getVaultAccount(address account, address vault) external view returns (VaultAccount memory);
     function getVaultAccountWithFeeAccrual(

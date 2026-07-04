@@ -1,0 +1,26 @@
+{
+  "component": "PrizeVaultFactory-4",
+  "main_contract": "PrizeVaultFactory",
+  "source_file_count": 64,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe32f6344875494ca3643198d87524519dc396ddf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x44be003e55e7ce8a2e0ecc3266f8a9a9de2c07bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

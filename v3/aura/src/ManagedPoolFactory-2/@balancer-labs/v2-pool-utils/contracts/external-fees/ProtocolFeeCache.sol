@@ -15,14 +15,12 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IProtocolFeeCache.sol";
 import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
 import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
 
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol";
 
-import "../lib/VaultReentrancyLib.sol";
 import "../RecoveryMode.sol";
 
 /**
@@ -35,7 +33,7 @@ import "../RecoveryMode.sol";
  * values in every single user interaction. Instead, we keep a local copy that can be permissionlessly updated by anyone
  * with the real value. We also pack these values together, performing a single storage read to get them all.
  */
-abstract contract ProtocolFeeCache is IProtocolFeeCache, RecoveryMode {
+abstract contract ProtocolFeeCache is RecoveryMode {
     using SafeCast for uint256;
     using WordCodec for bytes32;
 
@@ -133,10 +131,11 @@ abstract contract ProtocolFeeCache is IProtocolFeeCache, RecoveryMode {
         return _feeIds.decodeUint(offset, _FEE_TYPE_ID_WIDTH);
     }
 
-    /// @inheritdoc IProtocolFeeCache
-    function updateProtocolFeePercentageCache() external override {
-        VaultReentrancyLib.ensureNotInVaultContext(_getVault());
-
+    /**
+     * @notice Updates the cache to the latest value set by governance.
+     * @dev Can be called by anyone to update the cached fee percentages.
+     */
+    function updateProtocolFeePercentageCache() external {
         _beforeProtocolFeeCacheUpdate();
 
         _updateProtocolFeeCache(_protocolFeeProvider, _feeIds);

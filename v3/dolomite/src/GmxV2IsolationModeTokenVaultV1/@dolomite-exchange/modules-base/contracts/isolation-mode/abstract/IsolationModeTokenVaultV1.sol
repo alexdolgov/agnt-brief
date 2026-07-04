@@ -695,7 +695,7 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
     }
 
     function _requireNotLiquidatable(uint256 _accountNumber) internal view {
-        IsolationModeTokenVaultV1ActionsImpl.validateIsNotLiquidatable(
+        IsolationModeTokenVaultV1ActionsImpl.checkIsLiquidatable(
             /* _vault = */ this,
             _accountNumber
         );

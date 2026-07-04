@@ -2,10 +2,34 @@
   "component": "LiquidStrategy-2",
   "main_contract": "LiquidStrategy",
   "source_file_count": 22,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11eee9a3c60a74ed55da84157036dd0278be8a59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6df7ff4b8c6743b3ded7bb3c8f21ce7f5b9d11f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd462e8929282495a6f9196c30639cde8d687ac14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

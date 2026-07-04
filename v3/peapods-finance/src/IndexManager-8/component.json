@@ -1,0 +1,18 @@
+{
+  "component": "IndexManager-8",
+  "main_contract": "IndexManager",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0bb39ba2ee60f825348676f9a87b7cd1e3b4ae6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

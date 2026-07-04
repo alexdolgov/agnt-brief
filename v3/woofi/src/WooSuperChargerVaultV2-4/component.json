@@ -1,0 +1,26 @@
+{
+  "component": "WooSuperChargerVaultV2-4",
+  "main_contract": "WooSuperChargerVaultV2",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5cb9ba4a6f05c4125d61172e1b2c1dbe3afb3158",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6fc2c9f904a98caeeef6aaba6de625b5698f3f08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

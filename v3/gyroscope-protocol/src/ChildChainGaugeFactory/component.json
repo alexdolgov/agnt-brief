@@ -1,23 +1,15 @@
 {
   "component": "ChildChainGaugeFactory",
   "main_contract": "ChildChainGaugeFactory",
-  "source_file_count": 26,
-  "deployment_count": 2,
+  "source_file_count": 8,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2498a2b0d6462d2260eac50ae1c3e03f4829ba95",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb1a4fe1c6d25a0ddab47431a92a723dd71d9021f",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe6338d702941998102fc4d7550a36ea9e833bd7c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

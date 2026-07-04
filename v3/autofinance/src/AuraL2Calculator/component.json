@@ -2,7 +2,7 @@
   "component": "AuraL2Calculator",
   "main_contract": "AuraL2Calculator",
   "source_file_count": 69,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9254926b61c205e8b64ed00681fe0b2de94b62f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     },
     {
       "chain": "base",

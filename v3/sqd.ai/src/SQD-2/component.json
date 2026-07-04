@@ -1,0 +1,18 @@
+{
+  "component": "SQD-2",
+  "main_contract": "SQD",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1337420ded5adb9980cfc35f8f2b054ea86f8ab1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

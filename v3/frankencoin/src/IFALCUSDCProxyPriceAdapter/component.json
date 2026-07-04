@@ -1,0 +1,18 @@
+{
+  "component": "IFALCUSDCProxyPriceAdapter",
+  "main_contract": "IFALCUSDCProxyPriceAdapter",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x998d0c734bae49b8757157c7fe3847e2e416f8fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

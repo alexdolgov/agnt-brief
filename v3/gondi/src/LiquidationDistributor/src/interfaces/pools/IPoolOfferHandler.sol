@@ -11,11 +11,12 @@ interface IPoolOfferHandler {
     error InvalidMaxSeniorRepaymentError();
 
     /// @notice Validate an offer
+    /// @param _baseRate Base rate
     /// @param _tokenId Token ID
     /// @param _offer Offer data
     /// @return principalAmount Principal amount
     /// @return aprBps APR in basis points
-    function validateOffer(uint256 _tokenId, bytes calldata _offer)
+    function validateOffer(uint256 _baseRate, uint256 _tokenId, bytes calldata _offer)
         external
         returns (uint256 principalAmount, uint256 aprBps);
 

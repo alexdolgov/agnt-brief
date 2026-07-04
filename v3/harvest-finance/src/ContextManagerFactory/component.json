@@ -2,7 +2,7 @@
   "component": "ContextManagerFactory",
   "main_contract": "ContextManagerFactory",
   "source_file_count": 17,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,6 +26,22 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xea0b119ef6b6a9648e08b7922c72747d81607815",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaa7f40f31ca2b9413405065abaa346a5e4fa2f6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd2d3a04ee69dfea8df5e082a7657351af2a384bd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

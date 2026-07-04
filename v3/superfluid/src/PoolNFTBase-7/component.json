@@ -1,0 +1,18 @@
+{
+  "component": "PoolNFTBase-7",
+  "main_contract": "PoolNFTBase",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa347bdc5965323f92ccd950a8b7012c0e438e178",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,10 +2,18 @@
   "component": "SmartFarmingManager-2",
   "main_contract": "SmartFarmingManager",
   "source_file_count": 41,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfc51f8edc0f1bc897ba1e0909aa48f04cbeb08bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

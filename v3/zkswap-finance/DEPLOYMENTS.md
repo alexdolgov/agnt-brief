@@ -1,6 +1,6 @@
 # zkswap-finance — deployments
 
-59 verified deployment(s) across 30 component(s).
+62 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -51,22 +51,18 @@
 | chain-146 | `0xc98628cc4cc8bf606e247bacb8cfcf33151e453c` | ZFSwap2EarnRewarder | impl | live | no |
 | chain-146 | `0xc9c49728a43bbf0f804ef56becd081137fc85849` | AggregatorSmart | impl | live | no |
 | chain-146 | `0xcb3d626005e3e209fe7fbf661a9cbe4874c35087` | ZFGovernanceStaking | impl | live | yes |
+| chain-146 | `0xcd219ae923b5f20cb36ad316a129d8f9015d1822` | ZFRouter | impl | live | no |
 | chain-146 | `0xce98a0e578b639aa90ee96ed5ba8e5a4022de529` | ZFFactory | impl | inactive | no |
 | chain-146 | `0xcf7ff4717d5e1468c82aa69dba8dacb18ed5b585` | NFTDescriptor | impl | inactive | no |
 | chain-146 | `0xd25b7aeef85483a6bd04d9a6a6dfb89effac3891` | ZFOFT | impl | live | no |
 | chain-146 | `0xda85e083f4d8156ecdbc1c295892357022d23e8d` | ZFRewardDistributor | impl | live | no |
 | chain-146 | `0xf43fc445204174ea98cf45b21504463d32c28189` | ZFStableSwapTwoPoolDeployer | impl | inactive | no |
+| chain-146 | `0xf5cf2b71b8b368c84c4c4903af453e790d392285` | ZFRouter | impl | inactive | no |
 | chain-146 | `0xf5df07accb7f319016e81d10a0acf3882af47113` | ZFSwap2EarnRewarder | impl | live | no |
 | chain-146 | `0xf5fb98fce5ee81b4e2c5ac1829b12259f32ae0d5` | NonfungibleTokenPositionDescriptor | proxy | inactive | no |
 | chain-146 | `0xf82343c8b777badb0921ee4c4f7581c968687b6b` | NonfungibleTokenPositionDescriptor | impl | inactive | no |
 | chain-146 | `0xf8850ee55f2ee1f5eb9a39478e73466339ccf360` | ZFOFT | impl | inactive | no |
 | chain-146 | `0xfcc8d30c138f3859eba263696d8726c0725d3164` | ZFRewardDistributor | impl | live | no |
 | chain-146 | `0xfe57143bf436f0e3b4c0bf224d478316a81ecd49` | LongOFT | impl | inactive | no |
-| zksync | `0x18381c0f738146fb694de18d1106bde2be040fa4` | ZFRouter | impl | live | yes |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-146 `0xcd219ae923b5f20cb36ad316a129d8f9015d1822`
-- chain-146 `0xf5cf2b71b8b368c84c4c4903af453e790d392285`
-- zksync `0xe8a9c651c29469f0de2ce0506002828a7e683860`
+| zksync | `0x18381c0f738146fb694de18d1106bde2be040fa4` | ZFRouter-2 | impl | live | yes |
+| zksync | `0xe8a9c651c29469f0de2ce0506002828a7e683860` | NonfungiblePositionManager-2 | impl | unknown | no |

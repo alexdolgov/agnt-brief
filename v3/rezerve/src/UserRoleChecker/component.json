@@ -2,10 +2,18 @@
   "component": "UserRoleChecker",
   "main_contract": "UserRoleChecker",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb47274592645a209ac1bc21c8b9d2e3140372e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,

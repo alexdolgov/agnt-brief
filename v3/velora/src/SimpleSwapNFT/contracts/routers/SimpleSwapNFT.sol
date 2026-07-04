@@ -18,14 +18,9 @@ contract SimpleSwapNFT is FeeModel, IRouterNFT {
     constructor(
         uint256 _partnerSharePercent,
         uint256 _maxFeePercent,
-        uint256 _paraswapReferralShare,
-        uint256 _paraswapSlippageShare,
         IFeeClaimer _feeClaimer,
         address _augustusRFQ
-    )
-        public
-        FeeModel(_partnerSharePercent, _maxFeePercent, _paraswapReferralShare, _paraswapSlippageShare, _feeClaimer)
-    {
+    ) public FeeModel(_partnerSharePercent, _maxFeePercent, _feeClaimer) {
         augustusRFQ = _augustusRFQ;
     }
 
@@ -116,13 +111,12 @@ contract SimpleSwapNFT is FeeModel, IRouterNFT {
 
         // take slippage from src token
         remainingAmount = Utils.tokenBalance(fromToken, address(this));
-
-        takeSlippageAndTransferBuy(
+        takeFromTokenFeeSlippageAndTransfer(
             fromToken,
-            partner,
+            fromAmount,
             expectedAmount,
-            fromAmount.sub(remainingAmount),
             remainingAmount,
+            partner,
             feePercent
         );
 

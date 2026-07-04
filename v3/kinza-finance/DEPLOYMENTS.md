@@ -1,12 +1,12 @@
 # kinza-finance — deployments
 
-118 verified deployment(s) across 50 component(s).
+142 verified deployment(s) across 71 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| bsc | `0x00170fbbc27793837f1b7fb073f91f5ed8dbaee8` | VariableDebtToken | impl | inactive | no |
+| bsc | `0x00170fbbc27793837f1b7fb073f91f5ed8dbaee8` | VariableDebtToken-2 | impl | inactive | no |
 | bsc | `0x004a9eac7ceaf27b4a1a7746d677bfa704d9cba6` | TimelockController | impl | inactive | no |
-| bsc | `0x0b4115d1fa43e4bc57513899c1cfb2acfd614e4c` | Pool | impl | inactive | no |
+| bsc | `0x0b4115d1fa43e4bc57513899c1cfb2acfd614e4c` | Pool-2 | impl | inactive | no |
 | bsc | `0x0c2d7e456b0d0ab80dca148e60d23cf6304fe543` | DefaultReserveInterestRateStrategy | impl | inactive | no |
 | bsc | `0x0df5a3c7f28514873ab3b2c11a76d30073d95eb5` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0x107a0d2b34fc76f19ad64e9a9d27340a049b4ac2` | IncentivizedERC20-4 | impl | inactive | no |
@@ -19,17 +19,18 @@
 | bsc | `0x1ec9f9a460214eea7d11d2fbee17626763b902e8` | WalletBalanceProvider | impl | inactive | no |
 | bsc | `0x1f0d4b5e45e9d471aa67e3a1eb0a786e82450794` | ReservesSetupHelper | impl | live | no |
 | bsc | `0x1f84bf932e1c60ee94bf04d1ab1c08dff9f0db11` | DefaultReserveInterestRateStrategy | impl | inactive | no |
-| bsc | `0x25b36ed1e5b5b2b2978d473ed42928d3b6e902bb` | PoolConfigurator | impl | live | no |
+| bsc | `0x25b36ed1e5b5b2b2978d473ed42928d3b6e902bb` | PoolConfigurator-2 | impl | live | no |
 | bsc | `0x26c8c9d74eae6182316b30de9ac60e2adc9f4a04` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | bsc | `0x2994413c2b20555f7eeed0b7a9455cecbb8dd02b` | IncentivizedERC20-5 | impl | inactive | no |
 | bsc | `0x2a81080e4fdba4e8cb28688a3162f3bc9e3b22b8` | ReservesSetupHelper | impl | live | no |
 | bsc | `0x2baa974739a2f311f74d2e383e997238d7672b25` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0x2c1c96ec1a855d98cafdd07d857581352d25d4f7` | DefaultReserveInterestRateStrategy | impl | inactive | no |
-| bsc | `0x306ca8e36c1dcc1e160f94d1eb5fd97cea889871` | BaseImmutableAdminUpgradeabilityProxy | impl | live | no |
-| bsc | `0x30777a478886ecfca0dc8b023e4fd19b133d616f` | IncentivizedERC20-7 | impl | inactive | no |
+| bsc | `0x306ca8e36c1dcc1e160f94d1eb5fd97cea889871` | BaseImmutableAdminUpgradeabilityProxy-2 | impl | live | no |
+| bsc | `0x30777a478886ecfca0dc8b023e4fd19b133d616f` | IncentivizedERC20-12 | impl | inactive | no |
 | bsc | `0x32264d29e4b00377da13d2d12690e56e84e767fd` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0x3402cebf0a798ef53d838231439406e23e9d2add` | DefaultReserveInterestRateStrategy | impl | inactive | no |
 | bsc | `0x342019c99ea2869e1233bb461420078c149a00f1` | IncentivizedERC20-5 | impl | inactive | no |
+| bsc | `0x37d7eb561e189895e5c8601cd03eeab67c269189` | PoolAddressesProviderRegistry | impl | inactive | no |
 | bsc | `0x3828f7a1e42d1507136cc5121db1bed3470d4cae` | WalletBalanceProvider | impl | inactive | no |
 | bsc | `0x3b029a06bd83512347cc69978fc6ef1b663eadd5` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0x3c6fa8e7bb152970958b6d4ce8b0476605fb7d5c` | LiquidationAdaptor | impl | inactive | no |
@@ -72,16 +73,22 @@
 | bsc | `0xa6265a8ce6f89610d3f97851abcf7f8203b006fb` | IncentivizedERC20-3 | impl | inactive | no |
 | bsc | `0xa8fe77c5a6f67278b3288011be155723ae160c1a` | WalletBalanceProvider | impl | inactive | no |
 | bsc | `0xaf8665ac61a54bc7d4af9c4f8862030c16c0404a` | LiquidationAdaptor | impl | inactive | no |
+| bsc | `0xb62afd0f911af3ae28fb69a3eee3292b67fa8345` | PoolAddressesProviderRegistry | impl | inactive | no |
 | bsc | `0xbb5f2d30c0fc9b0f71f7b19daf19e7cf3d23eb5e` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0xc01ef1ca67153c0b6fdf3e9ee0ed7c1e3e6bc041` | IncentivizedERC20-4 | impl | inactive | no |
-| bsc | `0xc3752d2ce05cd638523cccaa090ef5e25a2b87b4` | StableDebtToken | impl | inactive | no |
+| bsc | `0xc3752d2ce05cd638523cccaa090ef5e25a2b87b4` | StableDebtToken-2 | impl | inactive | no |
 | bsc | `0xc53d4728a1d03f7e25e3b2224bf21fa69839d7df` | WalletBalanceProvider | impl | inactive | no |
 | bsc | `0xc62cd18829b049b1dc5b98adb95c690225ad0aa1` | DefaultReserveInterestRateStrategy | impl | inactive | no |
 | bsc | `0xc7da75e3c5d15eb2002af72ce958cddc49a67e8a` | AToken | impl | inactive | no |
+| bsc | `0xc8cb15bc73b7f5f95af33aece738bc9b62cb28d9` | IncentivizedERC20-13 | impl | inactive | no |
+| bsc | `0xca20a50ea454bd9f37a895182ff3309f251fd7ce` | PoolAddressesProvider-2 | impl | live | no |
 | bsc | `0xcb0620b181140e57d1c0d8b724cde623ca963c8c` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| bsc | `0xcc650b486f723c924370656b509a82bd69526739` | WrappedTokenGatewayV3-2 | impl | live | no |
 | bsc | `0xcc7e5528b4a30d6156985a4b3393901be6036b7d` | DefaultReserveInterestRateStrategy | impl | inactive | no |
+| bsc | `0xcf46f77cd75a17900d59676fbe4b88aadcba9533` | BorrowableDataProvider-2 | impl | inactive | no |
 | bsc | `0xd41a4094e2665ceff58709967e335396abcac2cf` | SNBNBBinanceOracleCustomAggregator | impl | inactive | no |
 | bsc | `0xd67ff7722f29c83bf828c35b0b2e807dbeeff410` | DefaultReserveInterestRateStrategy | impl | inactive | no |
+| bsc | `0xd6a287daf9b35ed8e59742c0e8b00aebb065c5f2` | BorrowableDataProvider-3 | impl | inactive | no |
 | bsc | `0xd73d7f28ef7ba655f3095bf6b0e2029efc203e7f` | SNBNBBinanceOracleAggregator | impl | inactive | no |
 | bsc | `0xd8e9cb8e17d7801fa2145be6f2aa973cb20cc7d8` | HAYTWAPAggregator | impl | inactive | no |
 | bsc | `0xd9c5bdf9c17934d480dfa47c3c1276458f788f57` | ReservesSetupHelper | impl | live | no |
@@ -90,12 +97,14 @@
 | bsc | `0xe3aad8bd71e9be91a60770159242325e06af86b4` | IncentivizedERC20-5 | impl | inactive | no |
 | bsc | `0xe3e610d05ea18c09278c42f208402c2b366e35cb` | DefaultReserveInterestRateStrategy | impl | inactive | no |
 | bsc | `0xe48967b3ea41484cf70f171627948084cb796f5c` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
-| bsc | `0xe85d5d7f0b627a545e29248cb1a6807b28ca2d51` | EmissionManager | impl | inactive | no |
+| bsc | `0xe85d5d7f0b627a545e29248cb1a6807b28ca2d51` | EmissionManager-2 | impl | inactive | no |
 | bsc | `0xe8fcad9bc9b0d2740e027ebc79ecbd79355ceb4d` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0xec95829b445112b07d7cb37bd4bf77480f9b9851` | LiquidationAdaptor | impl | inactive | no |
 | bsc | `0xee2585c8f2a1debad9f43ee764e3d0766e2a4273` | IncentivizedERC20-3 | impl | inactive | no |
 | bsc | `0xf5e0adda6fb191a332a787deedfd2cffc72dba0c` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | bsc | `0xf711ae1761b6512a25d6ce241b341f4d7f12d805` | WalletBalanceProvider | impl | inactive | no |
+| bsc | `0xfe2506302c4863a7ad56fc3ece502acede6f8099` | RewardsController-2 | impl | inactive | no |
+| chain-204 | `0x55033063c7801eacfda99e97429f92523e9b1ed3` | GnosisSafeProxy-3 | impl | live | no |
 | ethereum | `0x01b32790c5cd5fc7b916ed9fcdbe9c31ed2530ea` | pumpBTCPriceAdaptor | impl | inactive | no |
 | ethereum | `0x0218890dd636c3a1cf0f98557ee2d3612c6bd953` | PoolAddressesProvider | impl | live | no |
 | ethereum | `0x0339e70aadaacda0102a471c4c07cc6383a557c8` | pufETHPriceAdaptor | impl | inactive | no |
@@ -104,49 +113,36 @@
 | ethereum | `0x1031a3093cb7d58015e78ea2bfcaf9ab37537a0a` | wstETHPriceAdaptor | impl | inactive | no |
 | ethereum | `0x2864aa9e7cbe4b114306be82aa23ffe2036d33ee` | BorrowableDataProvider | impl | inactive | no |
 | ethereum | `0x2e2b783b7e8c1e72d114af009ef5de6260d2db57` | rETHPriceAdaptor | impl | inactive | no |
-| ethereum | `0x37c9e6eeabe799878ff9d32984a3a0b91243cbc6` | PoolAddressesProviderRegistry | impl | inactive | no |
+| ethereum | `0x37c9e6eeabe799878ff9d32984a3a0b91243cbc6` | PoolAddressesProviderRegistry-2 | impl | inactive | no |
 | ethereum | `0x39abeda13579fbb4effb31b5f38bdc91ae754a39` | AaveOracle | impl | live | no |
 | ethereum | `0x3f2845e6ce191237d1727b7b889d16f426a5e6c6` | EthAtomicReservesSetupHelper | impl | inactive | no |
 | ethereum | `0x4579eff1b5b7b6245c6c7ff86530338b194f4289` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x4e68bcd17c6e47cd7c80d66770f80161296c4273` | IncentivizedERC20-6 | impl | inactive | no |
 | ethereum | `0x51221550f9ce9435ef252f7f863403600804ae9c` | weETHPriceAdaptor | impl | inactive | no |
 | ethereum | `0x55c31b8ba65a00ce225711d59cc5a2cdb9e52066` | rETHPriceAdaptor | impl | inactive | no |
+| ethereum | `0x5c7afebba742a0d4ee204bd3a079bea31918efb8` | WalletBalanceProvider-2 | impl | inactive | no |
+| ethereum | `0x5d9991711ebc3e8f69b1e2cf99b8cade98792c2b` | IncentivizedERC20-7 | impl | inactive | no |
+| ethereum | `0x7b9ef905da91f6aecaf1f36ffaf1c9ddfc78e95c` | Pool | impl | inactive | no |
 | ethereum | `0x7f60edd6aabd5c7e9c2870284262ac36bdbacf35` | RewardsController | impl | inactive | no |
 | ethereum | `0x818a8dc7b1ac212aa0649b2c1dfa2c924ad92f85` | rETHPriceAdaptor | impl | inactive | no |
+| ethereum | `0x824a5b69e35ccee5d399461bf922fab5b11eabbd` | PoolConfigurator | impl | live | no |
 | ethereum | `0x85c81344af6a564e276a9e224e40e7613a619b4a` | BorrowableDataProvider | impl | inactive | no |
 | ethereum | `0x8c99b0141849d8097309c8ea78f86b7bb65baa58` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x9074fca9c7a77c7078b5bbfec33f74191d095fdb` | ACLManager | impl | live | no |
+| ethereum | `0x92139dd5d45eed7e16af48ccc0cf57b00a2a8276` | TimelockController | impl | inactive | no |
+| ethereum | `0x9f3de000b98a7227348869d40e6cf739989b8b4d` | IncentivizedERC20-2 | impl | inactive | no |
 | ethereum | `0xa3ec77d52696d249440c2d2466b917c5e3edfd16` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0xa4cd4b5004ab42758bcb8893a10c5b3532781087` | WrappedTokenGatewayV3 | impl | live | no |
+| ethereum | `0xb2a2c005b57ba13d2f6730abc05fb1086de75c94` | IncentivizedERC20-8 | impl | inactive | no |
 | ethereum | `0xb30a57f7e04e0e3adf99effdc6860e2450d201db` | ezETHPriceAdaptor | impl | inactive | no |
+| ethereum | `0xc981354bdca1829ac6d40ade968898703b2e0cb1` | IncentivizedERC20-9 | impl | inactive | no |
+| ethereum | `0xcdeaad1bc5ba9000059fd2e76b28101fea2f2ce0` | InitializableImmutableAdminUpgradeabilityProxy-2 | impl | inactive | no |
+| ethereum | `0xd0209f725637631153f1fcb3a2d869aca9afdf88` | IncentivizedERC20-10 | impl | inactive | no |
+| ethereum | `0xd320771c447855bb9b3ef0a4793c9264f893c36f` | VariableDebtToken | impl | inactive | no |
+| ethereum | `0xd74d4495936b066218eb9bf20995bff93574bc8d` | BaseImmutableAdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0xe6f87565576785693ab8ed298dfabb99efbca163` | IncentivizedERC20-11 | impl | inactive | no |
 | ethereum | `0xe7fd996de92746a22a18ba59b0730156c4634437` | wstETHPriceAdaptor | impl | inactive | no |
+| ethereum | `0xf8a60ad22873c6019b9f964505778bcf32db53fd` | StableDebtToken | impl | inactive | no |
+| ethereum | `0xfcc7501a4001eb8ebec44ebda16367bd7d130195` | EmissionManager | impl | inactive | no |
 | mantle | `0x3cc8dc73aee77f787f3322e3ce61e14e58561d68` | GnosisSafeProxy-2 | impl | live | no |
 | mantle | `0xb00083e6c3c57c2443ad5d7b98314d98ea12ee28` | GnosisSafeProxy-2 | impl | live | no |
-
-## Source unavailable (24)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x37d7eb561e189895e5c8601cd03eeab67c269189`
-- bsc `0xb62afd0f911af3ae28fb69a3eee3292b67fa8345`
-- bsc `0xc8cb15bc73b7f5f95af33aece738bc9b62cb28d9`
-- bsc `0xca20a50ea454bd9f37a895182ff3309f251fd7ce`
-- bsc `0xcc650b486f723c924370656b509a82bd69526739`
-- bsc `0xcf46f77cd75a17900d59676fbe4b88aadcba9533`
-- bsc `0xd6a287daf9b35ed8e59742c0e8b00aebb065c5f2`
-- bsc `0xfe2506302c4863a7ad56fc3ece502acede6f8099`
-- chain-204 `0x55033063c7801eacfda99e97429f92523e9b1ed3`
-- ethereum `0x5c7afebba742a0d4ee204bd3a079bea31918efb8`
-- ethereum `0x5d9991711ebc3e8f69b1e2cf99b8cade98792c2b`
-- ethereum `0x7b9ef905da91f6aecaf1f36ffaf1c9ddfc78e95c`
-- ethereum `0x824a5b69e35ccee5d399461bf922fab5b11eabbd`
-- ethereum `0x92139dd5d45eed7e16af48ccc0cf57b00a2a8276`
-- ethereum `0x9f3de000b98a7227348869d40e6cf739989b8b4d`
-- ethereum `0xb2a2c005b57ba13d2f6730abc05fb1086de75c94`
-- ethereum `0xc981354bdca1829ac6d40ade968898703b2e0cb1`
-- ethereum `0xcdeaad1bc5ba9000059fd2e76b28101fea2f2ce0`
-- ethereum `0xd0209f725637631153f1fcb3a2d869aca9afdf88`
-- ethereum `0xd320771c447855bb9b3ef0a4793c9264f893c36f`
-- ethereum `0xd74d4495936b066218eb9bf20995bff93574bc8d`
-- ethereum `0xe6f87565576785693ab8ed298dfabb99efbca163`
-- ethereum `0xf8a60ad22873c6019b9f964505778bcf32db53fd`
-- ethereum `0xfcc7501a4001eb8ebec44ebda16367bd7d130195`

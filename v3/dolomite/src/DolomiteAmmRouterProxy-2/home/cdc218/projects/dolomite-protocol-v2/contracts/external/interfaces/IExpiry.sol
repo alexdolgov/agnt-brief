@@ -19,8 +19,8 @@
 pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
-import { Account } from "../../protocol/lib/Account.sol";
-import { Monetary } from "../../protocol/lib/Monetary.sol";
+import {Account} from "../../protocol/lib/Account.sol";
+import {Monetary} from "../../protocol/lib/Monetary.sol";
 
 
 /**

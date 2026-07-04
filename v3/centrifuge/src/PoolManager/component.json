@@ -2,10 +2,18 @@
   "component": "PoolManager",
   "main_contract": "PoolManager",
   "source_file_count": 25,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x91808b5e2f6d7483d41a681034d7c9dbb64b9e29",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -26,6 +34,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x7f192f34499ddb2be06c4754cff2a21c4b056994",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x91808b5e2f6d7483d41a681034d7c9dbb64b9e29",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

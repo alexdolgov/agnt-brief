@@ -2,7 +2,7 @@
   "component": "FlashRepayFactory",
   "main_contract": "FlashRepayFactory",
   "source_file_count": 158,
-  "deployment_count": 10,
+  "deployment_count": 12,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -82,6 +82,22 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xe529d641f6aa878290ed867927a73f0b15eb14d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xab4d34e92940c1673e7c12f31418d536f4508774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc486ec29cabffad20b3c365505461a5221982b29",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

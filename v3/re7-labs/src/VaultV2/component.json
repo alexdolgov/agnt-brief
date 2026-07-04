@@ -2,7 +2,7 @@
   "component": "VaultV2",
   "main_contract": "VaultV2",
   "source_file_count": 13,
-  "deployment_count": 4,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -34,6 +34,46 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x787fc686879eace7ad94a63fcecd520fdeaf7af9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3d63934715b6d4c4dfbbc1a00fe2a2145079dd76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0b7ee82ad75b2d3fc7f3a110a51ba68714171d25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x618495ccc4e751178c4914b1e939c0fe0fb07b9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc9c474c6aa0e930ed42fd1f40be5b1d6a5ead645",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xca120dcc42f45427ed0d0f060d56104c4a8edec4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

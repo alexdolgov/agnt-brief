@@ -1,7 +1,7 @@
 {
   "component": "UpgradeableProxy-4",
   "main_contract": "UpgradeableProxy",
-  "source_file_count": 16,
+  "source_file_count": 22,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xec0f08bc015a0d0fba1df0b8b11d4779f5a04326",
+      "address": "0x946f4a316e8ae3c7fdcdf86e84496c3ee3fbf26d",
       "is_proxy": true,
-      "implementation_address": "0x63d906be17224ca2201b19bf6c4fd1124c8e30e4",
-      "liveness": "live"
+      "implementation_address": "0x01d96345e533269b53c282b8c93ed7507c4e2c5c",
+      "liveness": null
     }
   ]
 }

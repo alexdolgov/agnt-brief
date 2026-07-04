@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity >=0.7.6;
 
 /// @title All shared constants for the Notional system should be declared here.
@@ -134,6 +134,7 @@ library Constants {
     uint8 internal constant RESIDUAL_PURCHASE_TIME_BUFFER = 2;
     uint8 internal constant PV_HAIRCUT_PERCENTAGE = 3;
     uint8 internal constant RESIDUAL_PURCHASE_INCENTIVE = 4;
+    uint8 internal constant MAX_MINT_DEVIATION_LIMIT = 5;
 
     // Liquidation parameters
     // Default percentage of collateral that a liquidator is allowed to liquidate, will be higher if the account
@@ -156,10 +157,22 @@ library Constants {
     // Placeholder constant to mark the variable rate prime cash maturity
     uint40 internal constant PRIME_CASH_VAULT_MATURITY = type(uint40).max;
 
-    // This represents the maximum difference in internal precision units
-    // before and after a rebalancing. 10_000 represents 0.0001 units delta
+    // This represents the maximum percent change allowed before and after 
+    // a rebalancing. 100_000 represents a 0.01% change
     // as a result of rebalancing. We should expect to never lose value as
     // a result of rebalancing, but some rounding errors may exist as a result
     // of redemption and deposit.
-    int256 internal constant REBALANCING_UNDERLYING_DELTA = 10_000;
+    int256 internal constant REBALANCING_UNDERLYING_DELTA_PERCENT = 100_000;
+
+    // Ensures that the minimum total underlying held by the contract continues
+    // to accrue interest so that money market oracle rates are properly updated
+    // between rebalancing. With a minimum rebalancing cool down time of 6 hours
+    // we would be able to detect at least 1 unit of accrual at 8 decimal precision
+    // at an interest rate of 2.8 basis points (0.0288%) with 0.05e8 minimum balance
+    // held in a given token.
+    //
+    //                          MIN_ACCRUAL * (86400 / REBALANCING_COOL_DOWN_HOURS)
+    // MINIMUM_INTEREST_RATE =  ---------------------------------------------------
+    //                                     MINIMUM_UNDERLYING_BALANCE
+    int256 internal constant MIN_TOTAL_UNDERLYING_VALUE = 0.05e8;
 }

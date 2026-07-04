@@ -1,15 +1,23 @@
 {
   "component": "RegistryV2Deployer",
   "main_contract": "RegistryV2Deployer",
-  "source_file_count": 5,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x00cd6829b5df2cf4a757d690fdcedb3f3a89a53d",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d4cbde79bdbbd72b5bb6052b0c69f1d0a868ea0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb01d18f2cf464b2a9382d477a0414445dd080cd2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

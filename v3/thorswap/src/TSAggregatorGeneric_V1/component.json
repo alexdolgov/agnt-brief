@@ -1,23 +1,23 @@
 {
   "component": "TSAggregatorGeneric_V1",
   "main_contract": "TSAggregatorGeneric_V1",
-  "source_file_count": 11,
+  "source_file_count": 8,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x6e5add41c751e89432cda5763156a3f41f1b17ac",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xfa3f3348a2765ec19d1598ad446e2ab463d01e9a",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb1970f2157a1b24d40f98b252f4f60b45c7aaeed",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

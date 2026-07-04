@@ -2,10 +2,18 @@
   "component": "EpochRewardsVault-2",
   "main_contract": "EpochRewardsVault",
   "source_file_count": 49,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea95e4636badc00881f8f73a0623b0fe8627b6da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,

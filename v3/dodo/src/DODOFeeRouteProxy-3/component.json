@@ -1,0 +1,26 @@
+{
+  "component": "DODOFeeRouteProxy-3",
+  "main_contract": "DODOFeeRouteProxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x200d866edf41070de251ef92715a6ea825a5eb80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x2933c0374089d7d98ba0c71c5e02e1a0e09debee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

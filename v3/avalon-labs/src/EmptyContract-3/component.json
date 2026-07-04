@@ -1,0 +1,18 @@
+{
+  "component": "EmptyContract-3",
+  "main_contract": "EmptyContract",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x266f93db3771ab1459ef19cfe5cae37107116cc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

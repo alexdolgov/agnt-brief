@@ -1,0 +1,18 @@
+{
+  "component": "BeaconProxy-6",
+  "main_contract": "BeaconProxy",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8299aa83da805de4c4544ffc62c78a3f7286b5d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

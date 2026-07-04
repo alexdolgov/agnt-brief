@@ -1,0 +1,18 @@
+{
+  "component": "GmxV2MarketTokenPriceOracle-2",
+  "main_contract": "GmxV2MarketTokenPriceOracle",
+  "source_file_count": 55,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf6cb6348716e27e86189730b71f7db27fd1048cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -19,9 +19,8 @@
 pragma solidity >=0.5.0;
 pragma experimental ABIEncoderV2;
 
-import { Account } from "../../protocol/lib/Account.sol";
-import { Actions } from "../../protocol/lib/Actions.sol";
-
+import "../../protocol/lib/Account.sol";
+import "../../protocol/lib/Actions.sol";
 
 interface IDolomiteAmmFactory {
 

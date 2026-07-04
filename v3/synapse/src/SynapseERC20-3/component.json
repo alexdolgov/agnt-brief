@@ -1,0 +1,58 @@
+{
+  "component": "SynapseERC20-3",
+  "main_contract": "SynapseERC20",
+  "source_file_count": 15,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5a5fff6f753d7c11a56a52fe47a177a87e431655",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x67c10c397dd0ba417329543c1a40eb48aaa7cd00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x809dc529f07651bd43a172e8db6f4a7a0d771036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x50882fb56e618d89d463b99ec6ec9d9aace63f4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd1c374252b657df2a9702590758a6b9d551ae46b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd80d8688b02b3fd3afb81cdb124f188bb5ad0445",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

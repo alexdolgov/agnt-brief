@@ -30,18 +30,18 @@ import { Types } from "../../protocol/lib/Types.sol";
  * @title AccountBalanceLib
  * @author Dolomite
  *
- * Library contract that checks a user's balance after transaction to be non-negative
+ * Library contract that checks a user's balance after an operation to be non-negative
  */
 library AccountBalanceLib {
     using Types for Types.Par;
 
     // ============ Constants ============
 
-    bytes32 constant FILE = "AccountBalanceLib";
+    bytes32 private constant FILE = "AccountBalanceLib";
 
     // ============ Types ============
 
-    /// Checks that either BOTH, FROM, or TO accounts all have non-negative balances
+    /// Checks that either BOTH, FROM, or TO accounts do not have negative balances
     enum BalanceCheckFlag {
         Both,
         From,

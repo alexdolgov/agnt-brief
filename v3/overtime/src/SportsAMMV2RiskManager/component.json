@@ -2,7 +2,7 @@
   "component": "SportsAMMV2RiskManager",
   "main_contract": "SportsAMMV2RiskManager",
   "source_file_count": 14,
-  "deployment_count": 6,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -50,6 +50,22 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xf9581c6ac16444f47addb6549668d83c34f2a5a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe58ba556bc3871d8add080e85db0b4e7f7103949",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x55a2a341508f23cf2466b8646c226a21a1c581d0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

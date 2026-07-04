@@ -1,7 +1,7 @@
 {
   "component": "HedgedPoolLib",
   "main_contract": "HedgedPoolLib",
-  "source_file_count": 23,
+  "source_file_count": 61,
   "deployment_count": 2,
   "audited": true,
   "audits_covering": [
@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x3409ddb621ab0f6dcc82d656c4a4bc8c0d1edbe4",
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x384dfc8d5e0a6256a13fa257415563f219ea1a71",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -19,7 +19,7 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x4c5a1728585cf5692c477d874db4c83012ba1dbf",
+      "address": "0xbac1bce3f9e1e2d689071cb86290169d9607fac7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

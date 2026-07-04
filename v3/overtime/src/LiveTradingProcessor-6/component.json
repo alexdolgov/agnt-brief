@@ -1,0 +1,18 @@
+{
+  "component": "LiveTradingProcessor-6",
+  "main_contract": "LiveTradingProcessor",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3b834149f21b9a6c2ddc9f6ce97f2fd1097f8eab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

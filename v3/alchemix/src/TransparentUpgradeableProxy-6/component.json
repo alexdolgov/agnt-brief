@@ -2,22 +2,22 @@
   "component": "TransparentUpgradeableProxy-6",
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 18,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x653e76977c275df945a5c7417297d50ebcadd273",
+      "address": "0x303241e2b3b4aed0bb0f8623e7442368fed8faf3",
       "is_proxy": true,
-      "implementation_address": "0xc129bd3fd93ec09237369c70ba5e1c06fc5dacb0",
+      "implementation_address": "0x380cbf190318c0f9d07e6565247b9518227d2302",
       "liveness": "live"
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xb1cfd0753ca65c03f0457150c59f107f7115bb86",
+      "address": "0x380cbf190318c0f9d07e6565247b9518227d2302",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
@@ -25,7 +25,15 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xc129bd3fd93ec09237369c70ba5e1c06fc5dacb0",
+      "address": "0x49000f5e208349d2fa678263418e21365208e498",
+      "is_proxy": true,
+      "implementation_address": "0x380cbf190318c0f9d07e6565247b9518227d2302",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e57806138cb011a0c8f95becb9574c3dda04483",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
@@ -33,7 +41,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xfcc143dc4dd62ad53c464db08f668904e3b04617",
+      "address": "0xaf11680b507b66884ecf049d842a7e3c1e15e386",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

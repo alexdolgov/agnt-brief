@@ -1,0 +1,26 @@
+{
+  "component": "JonesUSDCIsolationModeTokenVaultV1-2",
+  "main_contract": "JonesUSDCIsolationModeTokenVaultV1",
+  "source_file_count": 65,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6f2a6b46ac26cdd7b66e01a0cf8b15c29b1e482b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x81501e1ce9d5c2aecd206fea827a0809b5ed1a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

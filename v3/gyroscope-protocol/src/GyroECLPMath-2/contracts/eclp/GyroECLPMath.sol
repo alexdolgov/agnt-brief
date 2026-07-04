@@ -431,9 +431,9 @@ library GyroECLPMath {
         val = val > 0 ? GyroPoolMath._sqrt(val.toUint256(), 5).toInt256() : 0;
     }
 
-    /** @dev Spot price of token 0 in units of token 1.
+    /** @dev Instantanteous price.
      *  See Prop. 12 in 2.1.6 Computing Prices */
-    function calcSpotPrice0in1(
+    function calculatePrice(
         uint256[] memory balances,
         Params memory params,
         DerivedParams memory derived,

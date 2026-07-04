@@ -1,0 +1,18 @@
+{
+  "component": "CTokenAdmin-3",
+  "main_contract": "CTokenAdmin",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0dfd3bca58f7e0639e87fba6f778c87bfa138ba7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

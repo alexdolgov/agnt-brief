@@ -1,15 +1,23 @@
 {
   "component": "SturdyPairDeployer",
   "main_contract": "SturdyPairDeployer",
-  "source_file_count": 125,
-  "deployment_count": 1,
+  "source_file_count": 91,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x298d679cb18dece7271f56589859bc4da6c91f87",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0382a9eca5276d7b4bbcc503e4159c046c120ec",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

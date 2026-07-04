@@ -2,7 +2,7 @@
   "component": "EulerDestinationVault",
   "main_contract": "EulerDestinationVault",
   "source_file_count": 78,
-  "deployment_count": 6,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -50,6 +50,30 @@
       "chain": "chain-9745",
       "chain_id": 9745,
       "address": "0xf5a4fa89f88a9dc6b7fbf22d71d748da810f684c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x39841737112ec884406b66a487f3efcdbfd80085",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc32572fcc9990977b79a6d744f60d78ac6ea15a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe6a2b1ade3f61fe4d957bb0c792ea85ece08fc71",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

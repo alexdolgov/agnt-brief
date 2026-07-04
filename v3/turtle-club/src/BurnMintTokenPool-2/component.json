@@ -1,0 +1,18 @@
+{
+  "component": "BurnMintTokenPool-2",
+  "main_contract": "BurnMintTokenPool",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3bd7db2b40dbee54ca70a34921fde8a8d2f8bbb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

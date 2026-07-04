@@ -2,7 +2,7 @@
   "component": "ConfigureInstantWithdrawalFuse",
   "main_contract": "ConfigureInstantWithdrawalFuse",
   "source_file_count": 9,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xd58f0ef796618f09f7fc6e63c25fae25ceb33799",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe37d4448cc6bcfc934d80220d076c874adab1cca",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

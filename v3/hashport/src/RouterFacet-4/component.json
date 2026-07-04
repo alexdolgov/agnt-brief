@@ -1,0 +1,26 @@
+{
+  "component": "RouterFacet-4",
+  "main_contract": "RouterFacet",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf9fe427563b12ec644e79a42b68e148273942b34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa2f8f68d5d83f90b8401990196d0c233dc0d4d7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

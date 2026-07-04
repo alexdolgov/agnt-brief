@@ -1,34 +1,56 @@
 # mev-capital — deployments
 
-129 verified deployment(s) across 51 component(s).
+154 verified deployment(s) across 55 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x6d57dad0f1c4da0c1d5443ae8f7f8a50bdb9cf75` | MetaMorphoV1_1 | impl | live | no |
+| arbitrum | `0x9b33073eb98a9a1eb408dedcd08616fe850b3f09` | MetaMorphoV1_1 | impl | live | no |
+| arbitrum | `0xa60643c90a542a95026c0f1dbdb0615ff42019cf` | MetaMorphoV1_1 | impl | live | no |
 | avalanche | `0x1f8e769b5b6010b2c2bbcd68629ea1a0a0eda7e3` | SiloVault | proxy | live | no |
 | avalanche | `0x4c9edf85b8b33198f0c29a799965b6df1ae67435` | SiloVault | impl | live | no |
 | avalanche | `0x4dc1ce9b9f9ef00c144bfad305f16c62293dc0e8` | SiloVault | proxy | live | no |
+| base | `0x45f8cc9a58285b7e7000eb14738346569963179d` | MetaMorphoV1_1-3 | impl | live | no |
 | bsc | `0x6402d64f035e18f9834591d3b994dfe41a0f162d` | ERC1967Proxy-2 | proxy | live | no |
-| chain-146 | `0x0532d4f06ba9b159d0b456662cc488eefe2fe34f` | PrincipalToken-2 | impl | live | no |
-| chain-146 | `0x196f3c7443e940911ee2bb88e019fd71400349d9` | BeaconProxy-2 | proxy | live | no |
-| chain-80094 | `0x1dfb669df5e70d4238f2cc0a9ee3b1a21ff91bc0` | BeaconProxy-2 | impl | live | no |
-| chain-80094 | `0x34018ac9dc4b114036ca148aa18c8f75594e5e95` | BeaconProxy-2 | proxy | live | no |
-| chain-80094 | `0x413dfb1814a6b5fe4488c49f86e2a74d285ffd5b` | BeaconProxy-2 | impl | live | no |
-| chain-80094 | `0x91e1ec1e948f635c127dad41eae1af899399f15a` | BeaconProxy-2 | impl | live | no |
-| ethereum | `0x01d1a1cd5955b2fefb167e8bc200a00bfada8977` | BeaconProxy | proxy | live | no |
+| chain-130 | `0x3f93576d13091bfbf6825f7421ef33cc353dc433` | MetaMorphoV1_1 | impl | live | no |
+| chain-130 | `0xc063181747e56c034ac14dc82db663409566fdf6` | MetaMorphoV1_1 | impl | live | no |
+| chain-146 | `0x0532d4f06ba9b159d0b456662cc488eefe2fe34f` | PrincipalToken-4 | impl | live | no |
+| chain-146 | `0x196f3c7443e940911ee2bb88e019fd71400349d9` | BeaconProxy | proxy | live | no |
+| chain-146 | `0x1cda7e7b2023c3f3c94aa1999937358fa9d01aab` | BeaconProxy | proxy | live | no |
+| chain-146 | `0x6832f3090867449c058e1e3088e552e12ab18f9e` | BeaconProxy | proxy | live | no |
+| chain-146 | `0x90a804d316a06e00755444d56b9ef52e5c4f4d73` | BeaconProxy | proxy | live | no |
+| chain-146 | `0x9144c0f0614dd0ace859c61cc37e5386d2ada43a` | BeaconProxy | proxy | live | no |
+| chain-146 | `0xb38d431e932fea77d1df0ae0dfe4400c97e597b8` | BeaconProxy | proxy | live | no |
+| chain-146 | `0xb936137169d777fcb8b7cf02329620b78fccec0a` | BeaconProxy | proxy | live | no |
+| chain-146 | `0xdebdab749330bb976fd10dc52f9a452aaf029028` | BeaconProxy | proxy | live | no |
+| chain-146 | `0xf71b17ccf362b6dcc1b6917a05820477cf7802a0` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x1371dd58ce95ecd624340f072f97212a2661a280` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x1dfb669df5e70d4238f2cc0a9ee3b1a21ff91bc0` | BeaconProxy | impl | live | no |
+| chain-80094 | `0x2cccd307bb616e5f896ab61cae09ef4e5e9fedb7` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x34018ac9dc4b114036ca148aa18c8f75594e5e95` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x3de0ca4af11108c94c9066a935ee67e53b7f9447` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x413dfb1814a6b5fe4488c49f86e2a74d285ffd5b` | BeaconProxy | impl | live | no |
+| chain-80094 | `0x4eb3351066494852a03ffbbde40a9776380ce20d` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x558b16e07b8558b2a54946ca973b7b20b86a8b87` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x6d976915bd9de43de1a60c39e128e320dadda000` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0x91e1ec1e948f635c127dad41eae1af899399f15a` | BeaconProxy | impl | live | no |
+| chain-80094 | `0xad9e5e2647efb9137b6b8d688d4906fa51476870` | BeaconProxy | proxy | live | no |
+| chain-80094 | `0xd538b6aef78e4bdde4fd4576e9e3a403704602bc` | BeaconProxy | proxy | live | no |
+| ethereum | `0x01d1a1cd5955b2fefb167e8bc200a00bfada8977` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x0aecdf39d9d02833a055bf1eca518a83f66f4802` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x0c3f5fafb87318c0deaebff096aba019501fcb69` | WrappedEEthAdapter | impl | live | no |
-| ethereum | `0x0de3821015518a6179a51d27bc7ed4a0a3c45b52` | BeaconProxy | proxy | live | no |
+| ethereum | `0x0de3821015518a6179a51d27bc7ed4a0a3c45b52` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x0f37f1ff51fc2f8a9907ef3e226a12fdc47de4ad` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x0fdf3b986d62be6ae1d5228e5da90ff6f00c15f6` | MigratableEntityProxy | proxy | live | no |
 | ethereum | `0x10e2352da4790e547095f06fa3ef3093881080fb` | mHYPER | impl | live | no |
 | ethereum | `0x12570b84b633629b1db532fd3420f34a30acfc68` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x1265a81d42d513df40d0031f8f2e1346954d665a` | MetaMorpho | impl | live | no |
-| ethereum | `0x1334d0e5ca5855a803998fcc78548142bef36e3b` | BeaconProxy | proxy | live | no |
+| ethereum | `0x1334d0e5ca5855a803998fcc78548142bef36e3b` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x1af14ebc81e8f92e0da13d2912091d556a4ac47b` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x1dd1889702a64bfc6197ac9a2c206b723918dc18` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x22eb9ab4ca9914d5821e05256f0efec2f675f59e` | TermDiscountRateAdapter | impl | live | no |
-| ethereum | `0x2306e17c7198282985a95b1ce0f63820846d0290` | BeaconProxy | proxy | live | no |
-| ethereum | `0x28d24d4380b26a1ef305ad8d8db258159e472f33` | MetaMorphoV1_1 | impl | live | no |
+| ethereum | `0x2306e17c7198282985a95b1ce0f63820846d0290` | BeaconProxy-2 | proxy | live | no |
+| ethereum | `0x28d24d4380b26a1ef305ad8d8db258159e472f33` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0x2adfb82dd33165b76d55b926a2edabed49efa2a2` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x2b715634134220ffeee9458b4e34e41a41418607` | TermFinanceGovernor | impl | live | no |
 | ethereum | `0x2be901715468c3c5393efa841525a713c583a8ec` | Strategy | proxy | live | no |
@@ -46,7 +68,7 @@
 | ethereum | `0x4386307a07c4de7ba11b4f4ec3e1f37bbe95dc99` | CustomAggregatorV3CompatibleFeedDiscounted | impl | live | no |
 | ethereum | `0x440040d670efe06ac666957692d0cd7c36e3498e` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x446970400e1787814ca050a4b45ae9d21b3f7ea7` | MigratableEntityProxy | proxy | live | no |
-| ethereum | `0x463af6add7b5806cf0ea30ec30f2030bf4f05175` | BeaconProxy | proxy | live | no |
+| ethereum | `0x463af6add7b5806cf0ea30ec30f2030bf4f05175` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x4718da79cf9eaecfd3f7319c74dc2ecfbcbb9f78` | Strategy | proxy | live | no |
 | ethereum | `0x4b10deba312d6ff12fda13535009816660fc4463` | Strategy | proxy | live | no |
 | ethereum | `0x4d371cc63fb8efd48aff59c5a0c064863ae4999c` | MApolloDepositVault | impl | live | yes |
@@ -64,13 +86,13 @@
 | ethereum | `0x6808e4d8add893d0227690f435e1ff734d9ccdf4` | TACmBtcRedemptionVault | impl | live | yes |
 | ethereum | `0x690f305e51650e7549fb60182cd0db81bafb7687` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x6a6092d9c47a7e4c085f2ed9fd4a376124587ae0` | AcreAdapter | impl | live | no |
-| ethereum | `0x6b6976aa97cd2473b388fa9b9eeb8cca4f5a77a4` | BeaconProxy | proxy | live | no |
-| ethereum | `0x6c37d34a895456aa29cabe0cacb60fc56309c7ac` | BeaconProxy | proxy | live | no |
+| ethereum | `0x6b6976aa97cd2473b388fa9b9eeb8cca4f5a77a4` | BeaconProxy-2 | proxy | live | no |
+| ethereum | `0x6c37d34a895456aa29cabe0cacb60fc56309c7ac` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x6e053c62888f54ce39a9f405fa2743b0df2ca3f8` | Strategy | proxy | live | no |
 | ethereum | `0x70558848f6b31ae03ad5a25868cd3d25e0fe8506` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x71c79f6f345df0ea7045d9259c4bc131deaea0bb` | MerkleDistributorWithDeadline | impl | live | no |
 | ethereum | `0x73d596efeae0a6833079e4fc999fd5cee55770a5` | TransparentUpgradeableProxy-2 | proxy | live | no |
-| ethereum | `0x749794e985af5a9a384b9cee6d88dab4ce1576a1` | MetaMorphoV1_1 | impl | live | no |
+| ethereum | `0x749794e985af5a9a384b9cee6d88dab4ce1576a1` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0x74e0a55ea3db85f6106ffd69ef7c9829fd130888` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x7c0391a651c080e99b38c179575342512769d9d5` | acreBTC | impl | live | no |
 | ethereum | `0x84568bccd84f7fd8c680e9101da0ef75a024b6b9` | TransparentUpgradeableProxy | proxy | live | no |
@@ -80,10 +102,10 @@
 | ethereum | `0x8e3c0a68f8065dc666065f16cf902596a60d540e` | MetaMorpho | impl | live | no |
 | ethereum | `0x901d94b9b6cf8b0eb84888b8bf7e978b16ec7bff` | Strategy | proxy | live | no |
 | ethereum | `0x9205c82d529a79b941a9df2f621a160891f57a0d` | MigratableEntityProxy | proxy | live | no |
-| ethereum | `0x9426c7a40d5c9dd709cbc2894a7e6481f265b6bb` | BeaconProxy | proxy | live | no |
+| ethereum | `0x9426c7a40d5c9dd709cbc2894a7e6481f265b6bb` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x98cf0b67da0f16e1f8f1a1d23ad8dc64c0c70e0b` | MetaMorpho | impl | live | no |
 | ethereum | `0x9903e9a950d4d50e23e833de0a27083f4dc781ae` | mHYPER | impl | live | no |
-| ethereum | `0x9913790dd5d3d8389f682a15e4fa90a22891ff49` | BeaconProxy | proxy | live | no |
+| ethereum | `0x9913790dd5d3d8389f682a15e4fa90a22891ff49` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x9a8bc3b04b7f3d87cfc09ba407dced575f2d61d8` | MetaMorpho | impl | live | no |
 | ethereum | `0x9e3fd82a18d72a74308c65193269f1af2f076f4e` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xa0df4e2d295a450e4704c3603b54b33eb7d086c0` | MidasLzMintBurnOFTAdapter | impl | live | no |
@@ -94,73 +116,51 @@
 | ethereum | `0xa7ea8d927f99f0d1ab2c8006df40fa7c437d8606` | ZeroGEthvCustomAggregatorFeed | impl | live | no |
 | ethereum | `0xa869cbc273daae91d6109ee5bb958ac6b7198b67` | SyrupUSDCAdapter | impl | live | no |
 | ethereum | `0xa8bb0307b255925718e7f76788fb663f23d9bbfb` | mHYPER | impl | live | no |
+| ethereum | `0xa97087d21d0b470cb1a09255d26e34e1a392cbfd` | PrincipalToken-2 | impl | live | no |
 | ethereum | `0xac6f2295156026cccddffbadbfa975e8c6d340be` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xad298d3ec4af69af52701a539d3bd14873ac8493` | SyrupAdapter | impl | live | no |
 | ethereum | `0xad391d0c554391c7cd81ebaf410866d1967c77d2` | ManageableVault-4 | impl | live | yes |
-| ethereum | `0xb07bf05af5a13d357aa1220c661bb0fb791bedcb` | BeaconProxy | proxy | live | no |
+| ethereum | `0xb07bf05af5a13d357aa1220c661bb0fb791bedcb` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0xb1e60a45de12adb09d67bc361ed7a79ffd237850` | SyrupAdapter | impl | live | no |
 | ethereum | `0xb4e41e6eef1a77e700b46abacdf6d426fd256791` | Strategy | proxy | live | no |
 | ethereum | `0xb79301126f9641b20771e3276b9011a481534bcc` | WrappedEEthAdapter | impl | live | no |
 | ethereum | `0xc32652ab236f32482f5018b027c8b54c13750ebf` | TEthRedemptionVaultWithSwapper | impl | live | yes |
-| ethereum | `0xc5ff8dde483903ffd2fbe5bf54a02b80f2bae7f7` | BeaconProxy | proxy | live | no |
+| ethereum | `0xc5ff8dde483903ffd2fbe5bf54a02b80f2bae7f7` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0xc65433845ecd16688eda196497fa9130d6c47bd8` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0xc76e6105f79feb40ae04efbb10d994386c1c04c5` | MidasLzMintBurnOFTAdapter | impl | live | no |
 | ethereum | `0xc87fce4358dd5f82e937a885bc10269660a12470` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xcffed53ce828d1e3fa2fc0ec6e8496029b8c84ee` | ManageableVault-5 | impl | live | no |
 | ethereum | `0xd071079c4c450af995e17afca91d03446b368f5f` | SyrupAdapter | impl | live | no |
 | ethereum | `0xd25f31806de8d608d05dfeaeb1140c1d365864b3` | MigratableEntityProxy | proxy | live | no |
-| ethereum | `0xd41830d88dfd08678b0b886e0122193d54b02acc` | MetaMorphoV1_1 | impl | live | no |
+| ethereum | `0xd41830d88dfd08678b0b886e0122193d54b02acc` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0xd50af9206e6b27056bc80463f8ce7e064a60b0ce` | Strategy | proxy | live | no |
-| ethereum | `0xd50da5f859811a91fd1876c9461fd39c23c747ad` | MetaMorphoV1_1 | impl | live | no |
+| ethereum | `0xd50da5f859811a91fd1876c9461fd39c23c747ad` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0xd52ba087e30928886baba15b1584d4ac9abaab2a` | RsEthAdapter | impl | live | no |
 | ethereum | `0xd63070114470f685b75b74d60eec7c1113d33a3d` | MetaMorpho | impl | live | no |
 | ethereum | `0xd731f94c778f7c1090e2e0d797150a647de5188a` | PlasmaVault | proxy | live | no |
 | ethereum | `0xdadeacc03a59639c0ece5ec4ff3bc0d9920a47ec` | TermMaxVault | impl | live | no |
 | ethereum | `0xdc47953c816531a8ca9e1d461ab53687d48eea26` | Proxy | proxy | live | no |
+| ethereum | `0xdc87d00d83153374e150d17b960fc74aa413d03a` | PrincipalToken-3 | impl | live | no |
 | ethereum | `0xddb8f495ab27457f91fa7aae4d986ecd78195495` | Strategy | proxy | live | no |
-| ethereum | `0xe00a44e1210bae0eaceeeaf202c349d4b16480fe` | BeaconProxy | proxy | live | no |
+| ethereum | `0xe00a44e1210bae0eaceeeaf202c349d4b16480fe` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0xe2ad97033e8c0844655f27dc0cc5f21028fe48ba` | TransparentUpgradeableProxy | proxy | live | no |
-| ethereum | `0xe2d6a2a16ff6d3bbc4c90736a7e6f7cc3c9b8fa9` | BeaconProxy | proxy | live | no |
-| ethereum | `0xe3ea69f8661ffac04e269f99c14ba73e2bb10633` | BeaconProxy | proxy | live | no |
+| ethereum | `0xe2d6a2a16ff6d3bbc4c90736a7e6f7cc3c9b8fa9` | BeaconProxy-2 | proxy | live | no |
+| ethereum | `0xe3ea69f8661ffac04e269f99c14ba73e2bb10633` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0xe3eee3e0d2398799c884a47fc40c029c8e241852` | MidasTimelockController | impl | live | no |
 | ethereum | `0xe43d2d52c047e2ca3f7ba3a0d03e513536eccad6` | MidasLzMintBurnOFTAdapter | impl | live | no |
 | ethereum | `0xea0f2ea61998346ad39dddef7513ae90915afb3c` | MigratableEntityProxy-2 | proxy | live | no |
-| ethereum | `0xf1fd8ac6346ec7bc4116ba7adc81102b2bc4c52d` | MetaMorphoV1_1 | impl | live | no |
+| ethereum | `0xf1fd8ac6346ec7bc4116ba7adc81102b2bc4c52d` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0xf406f9b5d1c78d6ee2d0d1d297057b1721dfcb01` | mHYPER | impl | live | no |
 | ethereum | `0xf4b77b6d4062deafc2d4a9aa1daf6a406933d6f3` | ManageableVault-6 | impl | live | yes |
 | ethereum | `0xf526ed1ffbc6e1be3cecb4f287b2368df73c0e9d` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xf60e6e6d8648fdbc2834ef7bc6f5e49ab55bec31` | MigratableEntityProxy | proxy | live | no |
-| ethereum | `0xfc1b4e3d8291746ccdeb813805c8912bbe0a7316` | BeaconProxy | proxy | live | no |
+| ethereum | `0xfc1b4e3d8291746ccdeb813805c8912bbe0a7316` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0xfc36c2edb18829308fa9ee9500e8be6520a47caf` | Strategy-2 | impl | live | no |
 | ethereum | `0xfeb770ae942ef5ed377c6d4bbc50f9d3b25cf69b` | ManageableVault-7 | impl | live | yes |
+| polygon | `0xf2532428472a4cbdf27f20ca39e81da6deb420b5` | MetaMorphoV1_1 | impl | live | no |
 
-## Source unavailable (27)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x6d57dad0f1c4da0c1d5443ae8f7f8a50bdb9cf75`
-- arbitrum `0x9b33073eb98a9a1eb408dedcd08616fe850b3f09`
-- arbitrum `0xa60643c90a542a95026c0f1dbdb0615ff42019cf`
-- base `0x45f8cc9a58285b7e7000eb14738346569963179d`
 - base `0x8773447e6369472d9b72f064ea62e405216e9084`
-- chain-130 `0x3f93576d13091bfbf6825f7421ef33cc353dc433`
-- chain-130 `0xc063181747e56c034ac14dc82db663409566fdf6`
-- chain-146 `0x1cda7e7b2023c3f3c94aa1999937358fa9d01aab`
-- chain-146 `0x6832f3090867449c058e1e3088e552e12ab18f9e`
-- chain-146 `0x90a804d316a06e00755444d56b9ef52e5c4f4d73`
-- chain-146 `0x9144c0f0614dd0ace859c61cc37e5386d2ada43a`
-- chain-146 `0xb38d431e932fea77d1df0ae0dfe4400c97e597b8`
-- chain-146 `0xb936137169d777fcb8b7cf02329620b78fccec0a`
-- chain-146 `0xdebdab749330bb976fd10dc52f9a452aaf029028`
-- chain-146 `0xf71b17ccf362b6dcc1b6917a05820477cf7802a0`
-- chain-80094 `0x1371dd58ce95ecd624340f072f97212a2661a280`
-- chain-80094 `0x2cccd307bb616e5f896ab61cae09ef4e5e9fedb7`
-- chain-80094 `0x3de0ca4af11108c94c9066a935ee67e53b7f9447`
-- chain-80094 `0x4eb3351066494852a03ffbbde40a9776380ce20d`
-- chain-80094 `0x558b16e07b8558b2a54946ca973b7b20b86a8b87`
-- chain-80094 `0x6d976915bd9de43de1a60c39e128e320dadda000`
-- chain-80094 `0xad9e5e2647efb9137b6b8d688d4906fa51476870`
-- chain-80094 `0xd538b6aef78e4bdde4fd4576e9e3a403704602bc`
 - ethereum `0x8eb9f9e97d6a63aab7572ad0d96fa3f09255cce9`
-- ethereum `0xa97087d21d0b470cb1a09255d26e34e1a392cbfd`
-- ethereum `0xdc87d00d83153374e150d17b960fc74aa413d03a`
-- polygon `0xf2532428472a4cbdf27f20ca39e81da6deb420b5`

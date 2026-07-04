@@ -2,7 +2,7 @@
   "component": "UniversalTokenSwapperFuse",
   "main_contract": "UniversalTokenSwapperFuse",
   "source_file_count": 26,
-  "deployment_count": 3,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,22 +10,6 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x54c860323ccd609405a18e46b0f799beb5df5d50",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x641b81e993e1c52a74a84caf17f1ad50a49675b3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa301d6f34f2c8399e8564681cf675999cc1f1584",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

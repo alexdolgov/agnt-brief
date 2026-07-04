@@ -1,15 +1,17 @@
 {
   "component": "ERC1967Upgrade-4",
   "main_contract": "ERC1967Upgrade",
-  "source_file_count": 19,
+  "source_file_count": 45,
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sherlock-audit/2022-09-notional-judging/blob/main/Audit_Report.pdf"
+  ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1b3534ca262343e57e837a351100a6db9e0292d7",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe78d09c8b6ccf9c1732d14353a708b75f6c67c67",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "Lens-9",
+  "main_contract": "Lens",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaf05c205444c5884f53492500bed22a8f617aa9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

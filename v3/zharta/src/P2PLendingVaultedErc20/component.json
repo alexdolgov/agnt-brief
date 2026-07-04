@@ -1,15 +1,87 @@
 {
   "component": "P2PLendingVaultedErc20",
   "main_contract": "P2PLendingVaultedErc20",
-  "source_file_count": 6,
-  "deployment_count": 1,
+  "source_file_count": 3,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x051c3253b791abd27fb1c7a9a247c531ae7722aa",
+      "address": "0x1a7113e4787e979169b85bca56193fb08e5562c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25d504c227591295c4cb6bd40edbd29443ada35c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a2fecc4f791271ee81dca6793d798cef69f6d5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e33a48312ab8e902f9626ba7b3e1cda0fb6ff35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e1f36e68c160bc7fd4ee80205215791fbe20718",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8107f63f1ac0e5a4faebb333cefeb1fdf57345b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84cf87ed4bdc0aabb354b7aaa6c709c00c705d2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa484590c5f1a4b968f44d750739fcbd1569ed969",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdef19b9a0f29060553f27ca753cad381998a1768",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf0c6d8aa140557a0751750a40de1795c6105387c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

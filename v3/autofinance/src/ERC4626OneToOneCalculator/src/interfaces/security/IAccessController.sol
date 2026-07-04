@@ -12,10 +12,7 @@ interface IAccessController is IAccessControlEnumerable {
      * @param role The role to setup
      * @param account The account to setup the role for
      */
-    function setupRole(
-        bytes32 role,
-        address account
-    ) external;
+    function setupRole(bytes32 role, address account) external;
 
     /**
      * @notice Verify if an account is an owner. Reverts if not

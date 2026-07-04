@@ -345,17 +345,12 @@ contract aOHMMigration is Ownable {
         require(isInitialized, "not initialized");
         _;
     }
-    
-    modifier notInitialized() {
-        require( !isInitialized, "already initialized" );
-        _;
-    }
 
-    function initialize (
+    function initialize(
         address _OHM,
         address _aOHM,
         uint256 _swapDuration
-    ) public onlyOwner() notInitialized() {
+    ) public {
         OHM = IERC20(_OHM);
         aOHM = IERC20(_aOHM);
         swapEndBlock = block.number.add(_swapDuration);
@@ -377,7 +372,7 @@ contract aOHMMigration is Ownable {
     function reclaim() external {
         require(senderInfo[msg.sender] > 0, "user has no aOHM to withdraw");
         require(
-            block.number > swapEndBlock,
+            block.timestamp > swapEndBlock,
             "aOHM swap is still ongoing"
         );
 

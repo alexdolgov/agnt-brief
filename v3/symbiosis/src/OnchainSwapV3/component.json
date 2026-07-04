@@ -2,12 +2,20 @@
   "component": "OnchainSwapV3",
   "main_contract": "OnchainSwapV3",
   "source_file_count": 5,
-  "deployment_count": 12,
+  "deployment_count": 14,
   "audited": true,
   "audits_covering": [
     "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/onchain-swap/Symbiosis%20Onchain%20Swap%20Audit%20-%20Decurity.pdf"
   ],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf85fc807d05d3ab2309364226970aac57b4e1ea4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -100,6 +108,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0xf951789c6a356bfbc3033648aa10b5dd3e9d88c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbba322c98601b707cffb98092010e0b95d538bb7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

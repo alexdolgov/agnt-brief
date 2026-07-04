@@ -1,0 +1,18 @@
+{
+  "component": "DistributorP1-2",
+  "main_contract": "DistributorP1",
+  "source_file_count": 60,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5593f9d1141e2dcae50a5315fa9ee0ad64d88f32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

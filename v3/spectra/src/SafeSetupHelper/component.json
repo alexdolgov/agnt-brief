@@ -1,15 +1,39 @@
 {
   "component": "SafeSetupHelper",
   "main_contract": "SafeSetupHelper",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x34a1580ad0db0a009d4392af37ac49eba1f2f217",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4f5139adced4f2a43bad490341b8e3ca8aef23e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf2d266e4bf3f95160144d9fbb015fed8ae2d5ab4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcb61f6a8d9496f427ce7357ecc5e7406e55af793",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf85a6c95bf447f30b512d7dce2858101fd528529",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

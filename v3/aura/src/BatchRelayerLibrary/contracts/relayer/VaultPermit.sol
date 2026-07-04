@@ -15,16 +15,16 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20Permit.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20PermitDAI.sol";
-import "@balancer-labs/v2-vault/contracts/interfaces/IVault.sol";
+import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20Permit.sol";
+import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20PermitDAI.sol";
+import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
 
-import "../interfaces/IBaseRelayerLibrary.sol";
+import "./IBaseRelayerLibrary.sol";
 
 /**
  * @title VaultPermit
- * @notice Allows users to approve the Balancer Vault to use their tokens using permit (where supported)
- * @dev All functions must be payable so that it can be called as part of a multicall involving ETH
+ * @notice Allows users to use permit (where supported) to approve the Balancer Vault to use their tokens
+ * @dev All functions must be payable so they can be called from a multicall involving ETH
  */
 abstract contract VaultPermit is IBaseRelayerLibrary {
     function vaultPermit(

@@ -1,18 +1,18 @@
 {
   "component": "NullVotingEscrow-2",
   "main_contract": "NullVotingEscrow",
-  "source_file_count": 3,
+  "source_file_count": 5,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x311334883921fb1b813826e585df1c2be4358615",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x013d4382f291be5688afbcc741ee8a24c66b2c92",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     }
   ]
 }

@@ -18,21 +18,21 @@
 
 pragma solidity >=0.5.0;
 
-import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
 
-import { Require } from "../../protocol/lib/Require.sol";
+import "../../protocol/lib/Require.sol";
 
-import { IUniswapV2Pair } from "../uniswap-v2/interfaces/IUniswapV2Pair.sol";
+import "../uniswap-v2/interfaces/IUniswapV2Pair.sol";
 
-import { IDolomiteAmmFactory } from "../interfaces/IDolomiteAmmFactory.sol";
-import { IDolomiteAmmPair } from "../interfaces/IDolomiteAmmPair.sol";
+import "../interfaces/IDolomiteAmmFactory.sol";
+import "../interfaces/IDolomiteAmmPair.sol";
 
 
 library DolomiteAmmLibrary {
     using SafeMath for uint;
 
     bytes32 private constant FILE = "DolomiteAmmLibrary";
-    bytes32 private constant PAIR_INIT_CODE_HASH = 0x3a71df2e5dedc0551796096fa5135dd704506f5cdcd786351b313d77f498666e;
+    bytes32 private constant PAIR_INIT_CODE_HASH = 0x13613659a8fb260634987eac314e43a23a2f6ae932427b0ed2c90b8f8785e592;
 
     function getPairInitCodeHash(address factory) internal pure returns (bytes32) {
         // Instead of only returning PAIR_INIT_CODE_HASH, this value is used to make running test coverage possible;
@@ -209,12 +209,13 @@ library DolomiteAmmLibrary {
             "insufficient output amount"
         );
         Require.that(
-            reserveIn > 0 && reserveOut > 0 && reserveOut > amountOut,
+            reserveIn > 0 && reserveOut > 0,
             FILE,
             "insufficient liquidity"
         );
         uint numerator = reserveIn.mul(amountOut).mul(1000);
         uint denominator = reserveOut.sub(amountOut).mul(997);
+        // reverts from the 'sub'
         amountIn = numerator.div(denominator).add(1);
     }
 
@@ -223,13 +224,18 @@ library DolomiteAmmLibrary {
         address factory,
         uint amountIn,
         address[] memory path
-    ) internal view returns (uint[] memory) {
-        return getAmountsOutWei(
-            factory,
-            getPairInitCodeHash(factory),
-            amountIn,
-            path
+    ) internal view returns (uint[] memory amounts) {
+        Require.that(
+            path.length >= 2,
+            FILE,
+            "invalid path"
         );
+        amounts = new uint[](path.length);
+        amounts[0] = amountIn;
+        for (uint i; i < path.length - 1; i++) {
+            (uint reserveIn, uint reserveOut) = getReservesWei(factory, path[i], path[i + 1]);
+            amounts[i + 1] = getAmountOut(amounts[i], reserveIn, reserveOut);
+        }
     }
 
     // performs chained getAmountOut calculations on any number of pairs

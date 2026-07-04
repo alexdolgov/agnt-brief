@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-// solhint-disable custom-errors,no-global-import
-
 import "@openzeppelin4/contracts-upgradeable/proxy/utils/Initializable.sol";
 import { IERC20Upgradeable as IERC20 } from "@openzeppelin4/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import { SafeERC20Upgradeable as SafeERC20 } from "@openzeppelin4/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol";
@@ -15,14 +13,10 @@ import "../interfaces/events/Destinations.sol";
 import "../interfaces/events/BalanceUpdateEvent.sol";
 import "../interfaces/events/IEventSender.sol";
 
-import "./interfaces/IAccToke.sol";
-import "../autopilot/interfaces/IAutopilotAccToke.sol";
-import "../autopilot/interfaces/IAutopilotSystemRegistry.sol";
+import "./IAccToke.sol";
 
 contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSender, AccessControl {
 	using SafeERC20 for IERC20;
-
-	address public immutable deployer;
 
 	// wallet address -> deposit info for user (lock cycle / amount / lockedFor)
 	mapping(address => DepositInfo) private _deposits;
@@ -52,9 +46,6 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 	bytes32 private constant EVENT_TYPE_DEPOSIT = bytes32("Deposit");
 	bytes32 private constant EVENT_TYPE_WITHDRAW_REQUEST = bytes32("Withdrawal Request");
 
-	// Autopilot SystemRegistry instance
-	IAutopilotSystemRegistry public autopilotSystemRegistry;
-
 	modifier onEventSend() {
 		if (_eventSend) {
 			_;
@@ -65,7 +56,6 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 	//solhint-disable-next-line no-empty-blocks
 	constructor() {
 		_disableInitializers();
-		deployer = msg.sender;
 	}
 
 	/// @param _manager Address of manager contract
@@ -80,9 +70,6 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 		IERC20 _toke,
 		uint256 _maxCap
 	) external initializer {
-		if (msg.sender != deployer) {
-			revert("nd");
-		}
 		require(_manager != address(0), "INVALID_MANAGER_ADDRESS");
 		require(_minLockCycles > 0, "INVALID_MIN_LOCK_CYCLES");
 		require(_maxLockCycles > 0, "INVALID_MAX_LOCK_CYCLES");
@@ -141,24 +128,15 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 
 		// get current cycle ID (+1 if in rollover currently)
 		uint256 currentCycleID = getCurrentCycleID();
-		if (manager.getRolloverStatus()) {
-			// We do not have a situation where this can feasibly get to type(uint256).max
-			unchecked {
-				currentCycleID++;
-			}
-		}
+		if (manager.getRolloverStatus()) currentCycleID++;
 
 		// transfer toke to us
 		toke.safeTransferFrom(msg.sender, address(this), tokeAmount);
+		// update total supply
+		accTotalSupply += tokeAmount;
 
-		// Both of these are protected by maxCap check above
-		unchecked {
-			// update total supply
-			accTotalSupply += tokeAmount;
-
-			// update balance
-			_balances[account] += tokeAmount;
-		}
+		// update balance
+		_balances[account] += tokeAmount;
 
 		// save user's deposit info
 		DepositInfo storage deposit = _deposits[account];
@@ -183,7 +161,7 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 		require(amount <= balanceOf(msg.sender), "INSUFFICIENT_BALANCE");
 
 		// check to make sure we can request withdrawal in this cycle to begin with
-		uint256 currentCycleID = _canRequestWithdrawalCheck();
+		_canRequestWithdrawalCheck();
 
 		WithdrawalInfo storage withdrawalInfo = requestedWithdrawals[msg.sender];
 
@@ -192,10 +170,7 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 
 		withdrawalInfo.amount = amount;
 		// set withdrawal cycle: if not rollover then current+1, otherwise current+2
-		unchecked {
-			// Not feasible for cycle to get above type(uint256).max in our system
-			withdrawalInfo.minCycle = currentCycleID + (!manager.getRolloverStatus() ? 1 : 2);
-		}
+		withdrawalInfo.minCycle = getCurrentCycleID() + (!manager.getRolloverStatus() ? 1 : 2);
 
 		// L1 event (just a record of request)
 		emit WithdrawalRequestedEvent(msg.sender, amount);
@@ -233,14 +208,12 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 
 		// decrease withdrawal request
 		WithdrawalInfo storage withdrawalInfo = requestedWithdrawals[msg.sender];
+		withdrawalInfo.amount -= amount;
 
-		unchecked {
-			withdrawalInfo.amount -= amount;
-			// update balances
-			_balances[msg.sender] -= amount;
-			accTotalSupply -= amount;
-			withheldLiquidity -= amount;
-		}
+		// update balances
+		_balances[msg.sender] -= amount;
+		accTotalSupply -= amount;
+		withheldLiquidity -= amount;
 
 		// if no more balance, wipe out deposit info completely
 		if (_balances[msg.sender] == 0) {
@@ -258,72 +231,6 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 		// L1 event
 		emit WithdrawalEvent(msg.sender, amount);
 		// L2 update: NOTE: not needed! since amount was already taken out when request was made
-	}
-
-	//////////////////////////////////////////////////
-	//												//
-	//					Migration					//
-	//												//
-	//////////////////////////////////////////////////
-
-	function accTokeMigration(
-		address accTokeToMigrateTo,
-		uint256 migrationAmount,
-		uint256 duration,
-		address to
-	) external override whenNotPaused nonReentrant {
-		_validateAccToke(accTokeToMigrateTo);
-		require(migrationAmount > 0, "INVALID_AMOUNT");
-		require(duration > 0, "INVALID_DURATION");
-		require(to != address(0), "INVALID_ADDRESS");
-
-		// Store locally - need later.
-		uint256 userBalanceBeforeMigration = balanceOf(msg.sender);
-		require(migrationAmount <= userBalanceBeforeMigration, "INSUFFICIENT_BALANCE");
-
-		// Get withdrawal request amount, amount not requested for withdrawal.
-		WithdrawalInfo storage withdrawalInfo = requestedWithdrawals[msg.sender];
-		uint256 withdrawalRequestedAmountBeforeMigration = withdrawalInfo.amount;
-		uint256 userBalanceNotRequestedForWithdrawal = userBalanceBeforeMigration -
-			withdrawalRequestedAmountBeforeMigration;
-
-		// Migration amount is taken from funds that are not requested for withdrawal first.
-		//    If there is an overlap (ie. not enough free funds to fulfill `migrationAmount`),
-		//    the withdrawal request total is adjusted.
-		if (migrationAmount > userBalanceNotRequestedForWithdrawal) {
-			// Means overlap is happening.
-			uint256 withdrawalRequestMigrationAmountOverlap;
-			unchecked {
-				withdrawalRequestMigrationAmountOverlap = migrationAmount - userBalanceNotRequestedForWithdrawal;
-				withdrawalInfo.amount -= withdrawalRequestMigrationAmountOverlap;
-				withheldLiquidity -= withdrawalRequestMigrationAmountOverlap;
-			}
-
-			if (withdrawalInfo.amount == 0) {
-				delete requestedWithdrawals[msg.sender];
-			}
-		}
-
-		// Update balances.
-		_balances[msg.sender] -= migrationAmount;
-		accTotalSupply -= migrationAmount;
-
-		// Check to see if balances and withdrawal requests can be deleted.
-		if (_balances[msg.sender] == 0) {
-			delete _deposits[msg.sender];
-		}
-
-		// Approvals
-		toke.safeApprove(accTokeToMigrateTo, migrationAmount);
-
-		// Migrate to Autopilot AccToke.sol
-		IAutopilotAccToke(accTokeToMigrateTo).stake(migrationAmount, duration, to);
-
-		// Emit event.
-		emit AutopilotAccTokeMigration(accTokeToMigrateTo, migrationAmount, to);
-
-		// Send L2 event
-		encodeAndSendData(EVENT_TYPE_WITHDRAW_REQUEST, msg.sender, _getUserVoteBalance(msg.sender));
 	}
 
 	//////////////////////////////////////////////////
@@ -397,22 +304,10 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 	}
 
 	function setMaxCap(uint256 _maxCap) public override onlyRole(DEFAULT_ADMIN_ROLE) {
-		// L2s have float supply
-		// require(_maxCap <= toke.totalSupply(), "LT_TOKE_SUPPLY");
+		require(_maxCap <= toke.totalSupply(), "LT_TOKE_SUPPLY");
 		maxCap = _maxCap;
 
 		emit MaxCapSetEvent(maxCap);
-	}
-
-	/// @inheritdoc IAccToke
-	function setAutopilotSystemRegistry(
-		address _autoPilotSystemRegistry
-	) external override onlyRole(DEFAULT_ADMIN_ROLE) {
-		require(_autoPilotSystemRegistry != address(0), "INVALID_ADDRESS");
-
-		autopilotSystemRegistry = IAutopilotSystemRegistry(_autoPilotSystemRegistry);
-
-		emit AutopilotSystemRegistrySet(_autoPilotSystemRegistry);
 	}
 
 	//////////////////////////////////////////////////
@@ -476,8 +371,8 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 		}
 	}
 
-	function _canRequestWithdrawalCheck() internal view returns (uint256 currentCycleID) {
-		currentCycleID = getCurrentCycleID();
+	function _canRequestWithdrawalCheck() internal view {
+		uint256 currentCycleID = getCurrentCycleID();
 		DepositInfo memory deposit = _deposits[msg.sender];
 		// must be in correct cycle (past initial lock cycle, and when the lock expires)
 		require(
@@ -500,11 +395,5 @@ contract AccToke is IAccToke, Initializable, Pausable, ReentrancyGuard, IEventSe
 	/// @dev Get user balance: acctoke amount - what's requested for withdraw
 	function _getUserVoteBalance(address account) internal view returns (uint256) {
 		return _balances[account] - requestedWithdrawals[account].amount;
-	}
-
-	function _validateAccToke(address accToke) private view {
-		// Taken from v2-core/scr/libs/ContractTypes.sol
-		bytes32 accTokeInstance = keccak256("ACC_TOKE_INSTANCE");
-		require(autopilotSystemRegistry.isValidContract(accTokeInstance, accToke), "INVALID_ACCTOKE_INSTANCE");
 	}
 }

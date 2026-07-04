@@ -2,17 +2,73 @@
   "component": "BridgeToken-2",
   "main_contract": "BridgeToken",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x0d3c781313b1d4abbb45459621f0168826a6cf07",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x70727228db8c7491bf0ad42c180dbf8d95b257e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x7a087e75807f2e5143c161a817e64df6dc5eafe0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xa831a4e181f25d3b35949e582ff27cc44e703f37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xcd5ed0b0b1e107d331833715932b4a596bfba378",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xd0d1b59ca62ce194e882455fd36632d6277b192a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xd15b997505739c02564de7f0e010b42b2f81520d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xdfd0660032c2d0d38a9092a43d1669d6568caf71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

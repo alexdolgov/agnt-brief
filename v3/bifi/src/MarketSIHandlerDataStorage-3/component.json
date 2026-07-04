@@ -2,14 +2,22 @@
   "component": "MarketSIHandlerDataStorage-3",
   "main_contract": "MarketSIHandlerDataStorage",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xd78fdca4864b8c888940765990043dc635a4d9d5",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2146922c1d5a8a553afbc051da276814dd0629c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x83e0bdd46831ee2b00fbfeb8e0488c7cd14284c0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

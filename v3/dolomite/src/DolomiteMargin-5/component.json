@@ -1,0 +1,18 @@
+{
+  "component": "DolomiteMargin-5",
+  "main_contract": "DolomiteMargin",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9f7779a8af28de91262ba9d6383fef899102e876",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

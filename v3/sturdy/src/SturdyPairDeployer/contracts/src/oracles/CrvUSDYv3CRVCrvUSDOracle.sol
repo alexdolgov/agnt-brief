@@ -84,7 +84,7 @@ contract CrvUSDYv3CRVCrvUSDOracle {
         if (_answer <= 0 || (block.timestamp - _updatedAt > MAX_ORACLE_DELAY)) {
             revert CHAINLINK_BAD_PRICE();
         }
-        crvUSDPrice = crvUSDPrice * 1e18 / uint256(_answer);    // crvUSD/ETH
+        crvUSDPrice = crvUSDPrice * 1e26 / uint256(_answer);    // crvUSD/ETH
 
         return Math.min(rate, crvUSDPrice);
     }

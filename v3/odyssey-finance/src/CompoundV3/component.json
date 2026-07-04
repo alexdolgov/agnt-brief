@@ -1,16 +1,24 @@
 {
   "component": "CompoundV3",
   "main_contract": "CompoundV3",
-  "source_file_count": 12,
-  "deployment_count": 1,
+  "source_file_count": 8,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://3883616881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqoKcdbT2jNpuAI4A3RLd%2Fuploads%2FfUYd8p9pJEcVmjIGTTJ6%2FAudit_Report_Odyssey_REVIEW.pdf"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x13f9f7e31a8a1cfb9dfd4a2961786d0cbbee6d40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0x13f9f7e31a8a1cfb9dfd4a2961786d0cbbee6d40",
       "is_proxy": false,
       "implementation_address": null,

@@ -1,0 +1,26 @@
+{
+  "component": "LToken-2",
+  "main_contract": "LToken",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x10ce08736900e6e3a46dcd9f4ddb2b44b82be5d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9cfbf905a444b5c871f0b447e137e8ce7eed0bce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -67,12 +67,7 @@ interface IHypervisorState {
     
     // Add new event for key mismatch
     event IncentiveKeyMismatch(uint256 tokenId, IncentiveKey foundKey, IncentiveKey currentKey);
-    event IncentiveKeyUpdated(
-        address rewardToken,
-        address bonusRewardToken,
-        address pool,
-        uint256 nonce
-    );
+
     event RewardsTransferredToOwner(
         address indexed rewardToken,
         address indexed bonusRewardToken,

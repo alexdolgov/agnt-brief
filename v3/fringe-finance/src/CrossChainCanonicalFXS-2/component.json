@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainCanonicalFXS-2",
+  "main_contract": "CrossChainCanonicalFXS",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9d2f299715d94d8a7e6f5eaa8e654e8c74a988a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

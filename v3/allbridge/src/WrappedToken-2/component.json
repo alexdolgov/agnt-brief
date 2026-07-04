@@ -1,0 +1,74 @@
+{
+  "component": "WrappedToken-2",
+  "main_contract": "WrappedToken",
+  "source_file_count": 1,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x08709543199edd2c0fa6937651695d88eef1863f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2bd1f344a2398340c2b1119da98816ea723f5f0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x34ac7e32ff0e580893aeb0743a1e798baa52d469",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x572614bd5bf32bc8d9cc3ebb8ac247d9f49ab9da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x934ac3ffdc82a3abcc71c1831bdf5c766f6ee8a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac5c23cc0bf378b2f2d53da71d407b6deb94c294",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0x486d4c62b50febf379749206ca982e68b83d785b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0x7b8d182a04a364966b17639901f6e40199bc51eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

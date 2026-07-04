@@ -12,7 +12,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "../vault/IVault.sol";
@@ -24,11 +24,7 @@ import "../vault/IVault.sol";
 interface IBalancerRelayer {
     function getLibrary() external view returns (address);
 
-    function getQueryLibrary() external view returns (address);
-
     function getVault() external view returns (IVault);
 
     function multicall(bytes[] calldata data) external payable returns (bytes[] memory results);
-
-    function vaultActionsQueryMulticall(bytes[] calldata data) external returns (bytes[] memory results);
 }

@@ -1,0 +1,34 @@
+{
+  "component": "ProxyAdmin-3",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3bfce37b5401bef13c78830d3a9fb14294d18c4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb13ceca4f3809b49658cd1472c917a584626138b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcc4e08a5bfa887621ad68826a0d5913d7a2cb392",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

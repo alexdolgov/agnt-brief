@@ -1,0 +1,18 @@
+{
+  "component": "FeeClaimer-4",
+  "main_contract": "FeeClaimer",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8dcdfe88ef0351f27437284d0710cd65b20288bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

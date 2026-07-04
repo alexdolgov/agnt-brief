@@ -2,10 +2,42 @@
   "component": "SymmioSymbolManager",
   "main_contract": "SymmioSymbolManager",
   "source_file_count": 11,
-  "deployment_count": 3,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1786ac43e205cd6d0630551946c6fb3326d6dedd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x551c904776a869d518a7072262dd1739327e2b1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x9ab075f54f026b2decfb4f5546898a26e2436844",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb4d660df395bc66acaa5d149083d4c4d04e7aa53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -23,9 +55,25 @@
       "liveness": "inactive"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe07f8a7ceeec88dbe1d7d41222d4726eef37c730",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2f374c48b902cf3b55339a358126329dc35f1a12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xba45a0299cfeb8e6f4aa87a1c530069ea532363c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe07e635fdb1dfeb5968a3cf198ece5040befaa3c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

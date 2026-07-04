@@ -1,0 +1,18 @@
+{
+  "component": "CDeployer-5",
+  "main_contract": "CDeployer",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3f352c936ce9c29c40d8befae9caebbcc0b6252",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Incrementer-3",
+  "main_contract": "Incrementer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xed175ae20f12ab737b148ce81a3c4229100d2403",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

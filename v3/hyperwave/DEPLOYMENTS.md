@@ -1,6 +1,6 @@
 # hyperwave — deployments
 
-31 verified deployment(s) across 12 component(s).
+33 verified deployment(s) across 13 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -31,14 +31,14 @@
 | ethereum | `0x23878914efe38d27c4d67ab83ed1b93a74d4086a` | BaseImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x4f5923fc5fd4a93352581b38b7cd26943012decf` | BaseImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x9ba2edc44e0a4632eb4723e81d4142353e1bb160` | BoringVault-2 | impl | live | no |
+| ethereum | `0x9fd7466f987fd4c45a5bbde22ed8aba5bc8d72d1` | BoringVault | impl | live | no |
 | ethereum | `0xbeef01735c132ada46aa9aa4c54623caa92a64cb` | MetaMorpho | impl | live | no |
 | ethereum | `0xbeef047a543e45807105e51a8bbefcc5950fcfba` | MetaMorpho | impl | live | no |
 | ethereum | `0xbeefff209270748ddd194831b3fa287a5386f5bc` | MetaMorpho-2 | impl | live | no |
 | ethereum | `0xd63070114470f685b75b74d60eec7c1113d33a3d` | MetaMorpho | impl | live | no |
 
-## Source unavailable (3)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - base `0x7bfa7c4f149e7415b73bdedfe609237e29cbf34a`
-- ethereum `0x9ba2edc44e0a4632eb4723e81d4142353e1bb160`
-- ethereum `0x9fd7466f987fd4c45a5bbde22ed8aba5bc8d72d1`

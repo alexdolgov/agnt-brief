@@ -16,11 +16,7 @@ library LibAdapter {
     error InvalidBalanceChange();
 
     // Utils
-    function _approve(
-        IERC20 token,
-        address spender,
-        uint256 amount
-    ) internal {
+    function _approve(IERC20 token, address spender, uint256 amount) internal {
         uint256 currentAllowance = token.allowance(address(this), spender);
         if (currentAllowance > 0) {
             token.safeDecreaseAllowance(spender, currentAllowance);

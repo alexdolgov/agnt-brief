@@ -10,8 +10,8 @@ contract VelodromeGaugeConnector is IFarmConnector {
     function deposit(
         Farm calldata farm,
         address token,
-        bytes memory // extraData
-    ) external override {
+        bytes memory // _extraData
+    ) external payable override {
         uint256 amount = IERC20(token).balanceOf(address(this));
         SafeTransferLib.safeApprove(token, farm.stakingContract, amount);
         IGauge(farm.stakingContract).deposit(amount);
@@ -20,39 +20,15 @@ contract VelodromeGaugeConnector is IFarmConnector {
     function withdraw(
         Farm calldata farm,
         uint256 amount,
-        bytes memory // extraData
+        bytes memory // _extraData
     ) external override {
         IGauge(farm.stakingContract).withdraw(amount);
     }
 
     function claim(
         Farm memory farm,
-        bytes memory // extraData
+        bytes memory // _extraData
     ) external override {
         IGauge(farm.stakingContract).getReward(address(this));
-    }
-
-    function balanceOf(
-        Farm calldata farm,
-        address user
-    ) external view override returns (uint256) {
-        return IGauge(farm.stakingContract).balanceOf(user);
-    }
-
-    function earned(
-        Farm calldata farm,
-        address user,
-        address[] calldata // rewardTokens
-    ) external view override returns (uint256[] memory) {
-        uint256[] memory rewards = new uint256[](1);
-        rewards[0] = IGauge(farm.stakingContract).earned(user);
-        return rewards;
-    }
-
-    function isStaked(
-        Farm calldata,
-        address // user
-    ) external pure override returns (bool) {
-        return true;
     }
 }

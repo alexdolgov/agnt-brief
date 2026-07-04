@@ -1,0 +1,18 @@
+{
+  "component": "Gyro3CLPPoolFactory-4",
+  "main_contract": "Gyro3CLPPoolFactory",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x977e8a3917dffe582afbb2ee5a6be3e9fa043079",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

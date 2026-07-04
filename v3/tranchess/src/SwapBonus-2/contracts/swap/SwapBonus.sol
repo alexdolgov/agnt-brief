@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.10 <0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -24,7 +24,11 @@ contract SwapBonus is Ownable {
         bonusToken = bonusToken_;
     }
 
-    function updateBonus(uint256 amount, uint256 start, uint256 interval) external onlyOwner {
+    function updateBonus(
+        uint256 amount,
+        uint256 start,
+        uint256 interval
+    ) external onlyOwner {
         require(start >= block.timestamp, "Start time in the past");
         require(
             endTimestamp < block.timestamp && endTimestamp == lastTimestamp,

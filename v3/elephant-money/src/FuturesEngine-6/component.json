@@ -1,0 +1,18 @@
+{
+  "component": "FuturesEngine-6",
+  "main_contract": "FuturesEngine",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x778c191ecc493fe03a0a2364cfea264cb5e38440",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

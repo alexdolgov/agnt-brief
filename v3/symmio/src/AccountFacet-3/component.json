@@ -1,0 +1,26 @@
+{
+  "component": "AccountFacet-3",
+  "main_contract": "AccountFacet",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x78eb97977432f656c9dc7703b1239580322f5d42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe55ff3b0fe1d388c2089037d5eea25f1e370593d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

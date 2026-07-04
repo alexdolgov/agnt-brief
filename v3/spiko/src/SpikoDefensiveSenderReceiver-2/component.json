@@ -1,0 +1,50 @@
+{
+  "component": "SpikoDefensiveSenderReceiver-2",
+  "main_contract": "SpikoDefensiveSenderReceiver",
+  "source_file_count": 50,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x17e2b2eed8e07328302a7b4135ed1b2dc57c447c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1b952b0db5c39ef801fedd1cbbef47d404689b1e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x77926af72cadbc6d6a308c6a6b6aaa5fbdf43218",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8513fcdd66e148e4b5e4940be21f50c20d112731",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa390a927d0ea7438cf8f3409791b540d56a6ddcd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

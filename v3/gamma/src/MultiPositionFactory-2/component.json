@@ -1,0 +1,42 @@
+{
+  "component": "MultiPositionFactory-2",
+  "main_contract": "MultiPositionFactory",
+  "source_file_count": 65,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xda490ec085c00c53e16f2621f4d3f091fbd09331",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc0c06eb994063a145de36e98b41d79ba0c602560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x33d9b8624dac44635d628312eac16dd059adbaf9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x252c3d711c7815f6e643604312d38ed77d3f5d74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

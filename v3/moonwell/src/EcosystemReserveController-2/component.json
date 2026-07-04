@@ -1,18 +1,34 @@
 {
   "component": "EcosystemReserveController-2",
   "main_contract": "EcosystemReserveController",
-  "source_file_count": 7,
-  "deployment_count": 1,
+  "source_file_count": 5,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x1d776f9dc5fb96a2b60862973d90418d684dee1e",
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x300fc6cb2f5bd222521710855cfb747487fc9ad9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd94f826c17e870a6327b7b1de6b43c5a9ef21044",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xee793a6509d673cca29a3646f43b7e9ae9ee435c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

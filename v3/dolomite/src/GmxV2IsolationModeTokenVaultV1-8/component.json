@@ -1,0 +1,18 @@
+{
+  "component": "GmxV2IsolationModeTokenVaultV1-8",
+  "main_contract": "GmxV2IsolationModeTokenVaultV1",
+  "source_file_count": 93,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbb86e997e5fafdc37d1e34b92749772059d4524f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

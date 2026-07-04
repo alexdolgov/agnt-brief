@@ -2,10 +2,58 @@
   "component": "RouteProcessor3_2",
   "main_contract": "RouteProcessor3_2",
   "source_file_count": 14,
-  "deployment_count": 1,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5550d13389bb70f45fcef58f19f6b6e87f6e747d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeb94eca012ec0bbb254722fdda2ce7475875a52b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd36990d74b947ec4ad9f52fe3d49d14addb51e44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x7a4af156379f512de147ed3b96393047226d923f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe7eb31f23a5befeeff76dbd2ed6adc822568a5d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xf70c086618dcf2b1a461311275e00d6b722ef914",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -13,6 +61,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8f54301f315c56c112d492d9443047d4745dbe9e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

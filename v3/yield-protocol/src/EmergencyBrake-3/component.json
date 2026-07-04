@@ -1,0 +1,18 @@
+{
+  "component": "EmergencyBrake-3",
+  "main_contract": "EmergencyBrake",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x84066caea6186a02ed74ebf32bf008a47cbe26ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

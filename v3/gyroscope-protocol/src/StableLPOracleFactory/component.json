@@ -2,7 +2,7 @@
   "component": "StableLPOracleFactory",
   "main_contract": "StableLPOracleFactory",
   "source_file_count": 61,
-  "deployment_count": 3,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,22 +10,6 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xb96524227c4b5ab908fc3d42005fe3b07aba40e9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xc4c4940dc7c57df46d3a217647db1649721cf468",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

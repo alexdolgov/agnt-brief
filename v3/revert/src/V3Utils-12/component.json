@@ -1,0 +1,18 @@
+{
+  "component": "V3Utils-12",
+  "main_contract": "V3Utils",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xde1734bbb63409165e829f456d853b021836eeb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

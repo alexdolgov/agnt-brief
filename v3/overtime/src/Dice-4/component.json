@@ -1,0 +1,26 @@
+{
+  "component": "Dice-4",
+  "main_contract": "Dice",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xecc65b8b42b897ec779bafbd7c45bdede51ee62c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8d18e68563d53be97c2ed791ca4354911f16a54b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

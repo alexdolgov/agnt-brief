@@ -395,7 +395,7 @@ library LiquidityCalcs {
             // temp_ = timeElapsed_ (last timestamp can not be > current timestamp)
             temp_ =
                 block.timestamp -
-                ((userBorrowData_ >> LiquiditySlotsLink.BITS_USER_BORROW_LAST_UPDATE_TIMESTAMP) & X33); // extract last update timestamp
+                ((userBorrowData_ >> LiquiditySlotsLink.BITS_USER_BORROW_LAST_UPDATE_TIMESTAMP) & X33); // extract last udpate timestamp
         }
 
         // currentBorrowLimit_ = expandedBorrowableAmount + extract last set borrow limit
@@ -516,7 +516,7 @@ library LiquidityCalcs {
         // y = mx + c.
         // y is borrow rate
         // x is utilization
-        // m = slope (m can also be negative for declining rates)
+        // m = slope (m can be 0 but never negative)
         // c is constant (c can be negative)
 
         uint256 y1_;
@@ -542,19 +542,19 @@ library LiquidityCalcs {
         }
 
         int256 constant_;
-        int256 slope_;
+        uint256 slope_;
         unchecked {
             // calculating slope with twelve decimal precision. m = (y2 - y1) / (x2 - x1).
-            // utilization of x2 can not be <= utilization of x1 (so no underflow or 0 divisor)
+            // utilization of x2 can not be <= utilization of x1 (so no underflow or 0 divisor) and rate at y2 can not be < rate at y1
             // y is in 1e2 so can not overflow when multiplied with TWELVE_DECIMALS
-            slope_ = (int256(y2_ - y1_) * int256(TWELVE_DECIMALS)) / int256((x2_ - x1_));
+            slope_ = ((y2_ - y1_) * TWELVE_DECIMALS) / (x2_ - x1_);
 
             // calculating constant at 12 decimal precision. slope is already in 12 decimal hence only multiple with y1. c = y - mx.
             // maximum y1_ value is 65535. 65535 * 1e12 can not overflow int256
             // maximum slope is 65535 - 0 * TWELVE_DECIMALS / 1 = 65535 * 1e12;
             // maximum x1_ is 100% (9_999 actually) => slope_ * x1_ can not overflow int256
             // subtraction most extreme case would be  0 - max value slope_ * x1_ => can not underflow int256
-            constant_ = int256(y1_ * TWELVE_DECIMALS) - (slope_ * int256(x1_));
+            constant_ = int256(y1_ * TWELVE_DECIMALS) - int256(slope_ * x1_);
 
             // calculating new borrow rate
             // - slope_ max value is 65535 * 1e12,
@@ -562,11 +562,7 @@ library LiquidityCalcs {
             // - constant max value is 65535 * 1e12
             // so max values are 65535 * 1e12 * 50_000 + 65535 * 1e12 -> 3.2768*10^21, which easily fits int256
             // divisor TWELVE_DECIMALS can not be 0
-            slope_ = (slope_ * int256(utilization_)) + constant_; // reusing `slope_` as variable for gas savings
-            if (slope_ < 0) {
-                revert FluidLiquidityCalcsError(ErrorTypes.LiquidityCalcs__BorrowRateNegative);
-            }
-            rate_ = uint256(slope_) / TWELVE_DECIMALS;
+            rate_ = (uint256(int256(slope_ * utilization_) + constant_)) / TWELVE_DECIMALS;
         }
     }
 
@@ -587,7 +583,7 @@ library LiquidityCalcs {
         // y = mx + c.
         // y is borrow rate
         // x is utilization
-        // m = slope (m can also be negative for declining rates)
+        // m = slope (m can be 0 but never negative)
         // c is constant (c can be negative)
 
         uint256 y1_;
@@ -623,19 +619,19 @@ library LiquidityCalcs {
         }
 
         int256 constant_;
-        int256 slope_;
+        uint256 slope_;
         unchecked {
             // calculating slope with twelve decimal precision. m = (y2 - y1) / (x2 - x1).
-            // utilization of x2 can not be <= utilization of x1 (so no underflow or 0 divisor)
+            // utilization of x2 can not be <= utilization of x1 (so no underflow or 0 divisor) and rate at y2 can not be < rate at y1
             // y is in 1e2 so can not overflow when multiplied with TWELVE_DECIMALS
-            slope_ = (int256(y2_ - y1_) * int256(TWELVE_DECIMALS)) / int256((x2_ - x1_));
+            slope_ = ((y2_ - y1_) * TWELVE_DECIMALS) / (x2_ - x1_);
 
             // calculating constant at 12 decimal precision. slope is already in 12 decimal hence only multiple with y1. c = y - mx.
             // maximum y1_ value is 65535. 65535 * 1e12 can not overflow int256
             // maximum slope is 65535 - 0 * TWELVE_DECIMALS / 1 = 65535 * 1e12;
             // maximum x1_ is 100% (9_999 actually) => slope_ * x1_ can not overflow int256
             // subtraction most extreme case would be  0 - max value slope_ * x1_ => can not underflow int256
-            constant_ = int256(y1_ * TWELVE_DECIMALS) - (slope_ * int256(x1_));
+            constant_ = int256(y1_ * TWELVE_DECIMALS) - int256(slope_ * x1_);
 
             // calculating new borrow rate
             // - slope_ max value is 65535 * 1e12,
@@ -643,11 +639,7 @@ library LiquidityCalcs {
             // - constant max value is 65535 * 1e12
             // so max values are 65535 * 1e12 * 50_000 + 65535 * 1e12 -> 3.2768*10^21, which easily fits int256
             // divisor TWELVE_DECIMALS can not be 0
-            slope_ = (slope_ * int256(utilization_)) + constant_; // reusing `slope_` as variable for gas savings
-            if (slope_ < 0) {
-                revert FluidLiquidityCalcsError(ErrorTypes.LiquidityCalcs__BorrowRateNegative);
-            }
-            rate_ = uint256(slope_) / TWELVE_DECIMALS;
+            rate_ = (uint256(int256(slope_ * utilization_) + constant_)) / TWELVE_DECIMALS;
         }
     }
 

@@ -1,0 +1,26 @@
+{
+  "component": "Ticket-2",
+  "main_contract": "Ticket",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9edc7007b0803a0ec913d575ce1a3a85a9b8bde6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb27f379c050f6ed0973a01667458af6ecebc1d90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

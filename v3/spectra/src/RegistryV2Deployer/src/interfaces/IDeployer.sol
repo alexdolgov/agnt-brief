@@ -2,15 +2,7 @@
 pragma solidity 0.8.22;
 
 import {IMetaVaultFactory} from "./IMetaVaultFactory.sol";
-
-/// @title ValueType
-/// @notice Constants for RegistryEntry.valueType field.
-library ValueType {
-    uint8 constant STRING = 0;
-    uint8 constant ADDRESS = 1;
-    uint8 constant UINT256 = 2;
-    uint8 constant BYTES = 3;
-}
+import {RegistryEntry} from "./IMetaVaultsRegistryV2.sol";
 
 /// @title IDeployer
 /// @notice Interface for factory deployer contracts.
@@ -23,13 +15,6 @@ interface IDeployer {
     struct SafeCall {
         address to;
         bytes data;
-    }
-
-    struct RegistryEntry {
-        bytes32 key;
-        bytes value;
-        uint8 valueType; // Use ValueType.STRING, .ADDRESS, .UINT256, .BYTES
-        bool lock;
     }
 
     struct DeploymentOutput {

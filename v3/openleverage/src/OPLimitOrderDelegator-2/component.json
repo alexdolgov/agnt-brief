@@ -1,0 +1,20 @@
+{
+  "component": "OPLimitOrderDelegator-2",
+  "main_contract": "OPLimitOrderDelegator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OpenLeverage-LimitOrder-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x544a316642bbdde240e9975fb2f5543860348dfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

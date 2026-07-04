@@ -1,18 +1,26 @@
 {
   "component": "LiquidityGaugeV2-2",
   "main_contract": "LiquidityGaugeV2",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 23,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "scroll",
-      "chain_id": 534352,
-      "address": "0x3c8465c04e7478b11c7b5cee3919781db5e6d464",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2871956fb1cde2b28f8d77bbecb4d806a4664a9f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6ef5cbb4ca84e3dceb71192130d5bc3675963a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -21,8 +21,6 @@ import "@balancer-labs/v2-interfaces/contracts/pool-utils/IBasePoolFactory.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/BaseSplitCodeFactory.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/SingletonAuthentication.sol";
 
-import "./FactoryWidePauseWindow.sol";
-
 /**
  * @notice Base contract for Pool factories.
  *
@@ -37,12 +35,7 @@ import "./FactoryWidePauseWindow.sol";
  * become increasingly important. Governance can deprecate a factory by calling `disable`, which will permanently
  * prevent the creation of any future pools from the factory.
  */
-abstract contract BasePoolFactory is
-    IBasePoolFactory,
-    BaseSplitCodeFactory,
-    SingletonAuthentication,
-    FactoryWidePauseWindow
-{
+abstract contract BasePoolFactory is IBasePoolFactory, BaseSplitCodeFactory, SingletonAuthentication {
     IProtocolFeePercentagesProvider private immutable _protocolFeeProvider;
 
     mapping(address => bool) private _isPoolFromFactory;
@@ -54,14 +47,8 @@ abstract contract BasePoolFactory is
     constructor(
         IVault vault,
         IProtocolFeePercentagesProvider protocolFeeProvider,
-        uint256 initialPauseWindowDuration,
-        uint256 bufferPeriodDuration,
         bytes memory creationCode
-    )
-        BaseSplitCodeFactory(creationCode)
-        SingletonAuthentication(vault)
-        FactoryWidePauseWindow(initialPauseWindowDuration, bufferPeriodDuration)
-    {
+    ) BaseSplitCodeFactory(creationCode) SingletonAuthentication(vault) {
         _protocolFeeProvider = protocolFeeProvider;
     }
 
@@ -89,10 +76,10 @@ abstract contract BasePoolFactory is
         return _protocolFeeProvider;
     }
 
-    function _create(bytes memory constructorArgs, bytes32 salt) internal virtual override returns (address) {
+    function _create(bytes memory constructorArgs) internal virtual override returns (address) {
         _ensureEnabled();
 
-        address pool = super._create(constructorArgs, salt);
+        address pool = super._create(constructorArgs);
 
         _isPoolFromFactory[pool] = true;
 

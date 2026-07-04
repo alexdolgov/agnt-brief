@@ -1,11 +1,12 @@
 # aegis-markets — deployments
 
-34 verified deployment(s) across 19 component(s).
+35 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x498581ff718922c3f8e6a244956af099b2652b2b` | PoolManager-2 | impl | live | no |
 | base | `0x7c5f5a4bbd8fd63184577525326123b519429bdc` | PositionManager | proxy | live | no |
+| base | `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc` | Spot-2 | impl | live | no |
 | chain-130 | `0x16b40ca9b9366aba4cfdb3d6827491b66994d958` | DynamicFeeManager | impl | live | no |
 | chain-130 | `0x1f98400000000000000000000000000000000004` | PoolManager | impl | live | no |
 | chain-130 | `0x22e086c085fbda3214db238f8a930d22228facb5` | TruncGeoOracleMulti | impl | live | no |
@@ -38,8 +39,3 @@
 | chain-130 | `0xee8e373c05a6876d43a8a054a47b16345662c0c3` | RewardCenter | impl | live | no |
 | chain-130 | `0xf0e74f35a5c7e1b6a35877afe8ac2ace0c510603` | Timelock | impl | live | no |
 | chain-130 | `0xf9a8f837337118960d78e2d0de8dbe17acfae04a` | TestToken | impl | unknown | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc`

@@ -1,0 +1,18 @@
+{
+  "component": "AlgebraRouterAdapter-3",
+  "main_contract": "AlgebraRouterAdapter",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0385c27306e0fa285633590ead2814419c0ebec6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "ShareToken-5",
+  "main_contract": "ShareToken",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9e2679eabff131b8b1b48ff7566140794e0eedc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

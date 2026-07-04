@@ -1,0 +1,18 @@
+{
+  "component": "ARBIsolationModeTokenVaultV1-4",
+  "main_contract": "ARBIsolationModeTokenVaultV1",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x48431fbc7a014bdc42946646c074d781cc366a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

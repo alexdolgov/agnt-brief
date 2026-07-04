@@ -1,0 +1,26 @@
+{
+  "component": "BoringOnChainQueue-2",
+  "main_contract": "BoringOnChainQueue",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3754480db8b3e607fbe125697eb496a44a1be720",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x555f4df2180df6257860f23b29d653c1aafb7957",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,14 +2,62 @@
   "component": "StratX",
   "main_contract": "StratX",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x0989454fcf48c66aee3fe8cf4feccae2e9b4205d",
+      "address": "0x164d0474ed98187c13fca034f80a40d120517b70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x172d40422ba9699a6bff92244fea0d0018240ec5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x512090bfc8416bab0e8df0541aa0759e8abb58a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f93026bcf9120ccf719882fcde147a52da8ca5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8db789ec00b617e4ca7c68033e622db68ddbb5d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xae9720c6dac3495e6537d4b39e62ea81d14868e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe8adf98a266d0dba1caac2e857a3bf125bcc2f72",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

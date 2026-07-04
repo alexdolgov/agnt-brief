@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x45dd22ace398002b34cb37b363b2f02c7dd47842",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

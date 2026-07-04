@@ -1,18 +1,26 @@
 {
   "component": "ZeroOFT",
   "main_contract": "ZeroOFT",
-  "source_file_count": 54,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x11dcc26d4bdac03ffa8841f69313c38240fc429e",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x39655dd658a1bb9cd090c793f83d2e355d97d94e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x64d904e62e76a00ab21dd75a15ab68d9a2222797",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

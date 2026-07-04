@@ -1,0 +1,18 @@
+{
+  "component": "RebalancerSlipstream-2",
+  "main_contract": "RebalancerSlipstream",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5802454749cc0c4a6f28d5001b4cd84432e2b79f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

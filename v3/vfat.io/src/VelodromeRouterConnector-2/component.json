@@ -1,23 +1,41 @@
 {
   "component": "VelodromeRouterConnector-2",
   "main_contract": "VelodromeRouterConnector",
-  "source_file_count": 8,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 9,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf"
+  ],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x475a0f48d432d715bc64eab5bd8b24a50f52d8e4",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5bf3530851c971cf93467136eb4169d2c63c81bf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x4a1c264c8cc04fe6d5454026e2262d576bc4b299",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7bb5af2a8ba0b35a705b8c5107a3775e56900bc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9ff07c1da316baee384c75e42ff73531074a53ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa94afaeabe8fd769c65282d7486660d8912b09c9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "FakeStablecoin-3",
+  "main_contract": "FakeStablecoin",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5aee30c5a5649cb8a46a43bf7978619b506de896",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

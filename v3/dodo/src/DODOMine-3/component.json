@@ -1,0 +1,18 @@
+{
+  "component": "DODOMine-3",
+  "main_contract": "DODOMine",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb14da65459db957bceec86a79086036dea6fc3ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

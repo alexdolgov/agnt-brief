@@ -1,15 +1,15 @@
 {
-  "component": "MarketSIHandlerDataStorage-2",
-  "main_contract": "MarketSIHandlerDataStorage",
+  "component": "marketSIHandlerDataStorage-2",
+  "main_contract": "marketSIHandlerDataStorage",
   "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2146922c1d5a8a553afbc051da276814dd0629c0",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x327dce0ad2ca4ae718b94ae6f5b7eec9a6cbf0b4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

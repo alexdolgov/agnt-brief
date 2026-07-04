@@ -1,17 +1,15 @@
 {
   "component": "TimelockController-4",
   "main_contract": "TimelockController",
-  "source_file_count": 59,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_max_vault_withdrawer_audit_report.pdf"
-  ],
+  "source_file_count": 11,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xa4ce33a1e22c79330873ba8010e69f0bd016610c",
+      "address": "0x5671aeb696c32d3cd1590ce55e6204e6c5b772c3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -19,7 +17,23 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xee25e8160061ce1d79e2ea4cea5a9ade0c322684",
+      "address": "0x8b25aefd9aa488d0e2493f533e9e79d29ddeee73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb73f8a5b0074b27c6df026c77fa08b0111d017a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6ca36961eb569586287a850710c252a9b42d46b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

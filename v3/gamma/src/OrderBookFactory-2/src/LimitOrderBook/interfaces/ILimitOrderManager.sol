@@ -139,7 +139,8 @@ interface ILimitOrderManager {
         bool isToken0,
         int24 targetTick,
         uint256 amount,
-        PoolKey calldata key
+        PoolKey calldata key,
+        address recipient
     ) external payable returns (CreateOrderResult memory);
 
     function createScaleOrders(
@@ -149,7 +150,8 @@ interface ILimitOrderManager {
         uint256 totalAmount,
         uint256 totalOrders,
         uint256 sizeSkew,
-        PoolKey calldata key
+        PoolKey calldata key,
+        address recipient
     ) external payable returns (CreateOrderResult[] memory results);
 
     // function setHook(address _hook) external;

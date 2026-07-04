@@ -1,0 +1,18 @@
+{
+  "component": "MarginCalculator-5",
+  "main_contract": "MarginCalculator",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xb362911250381400fbacea1f9cb0d3942d90ed22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

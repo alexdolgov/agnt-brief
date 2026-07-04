@@ -1,6 +1,6 @@
 # seamless-protocol — deployments
 
-295 verified deployment(s) across 96 component(s).
+305 verified deployment(s) across 101 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -39,13 +39,13 @@
 | base | `0x1959139f7a53819b2ae7e550a72f71db0ec98a85` | SeamVestingWalletV2 | proxy | live | no |
 | base | `0x1a70f2dc666e2a27e50668cd3994532352c83b02` | SeamVestingWalletV2 | impl | inactive | no |
 | base | `0x1bbd5560a483e10098500eb43c36b4719cda2235` | SeamVestingWalletV2 | proxy | live | no |
-| base | `0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85` | ERC1967Proxy-2 | proxy | live | no |
+| base | `0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85` | ERC1967Proxy-3 | proxy | live | no |
 | base | `0x1d9eca99a4b4ab73fa1181f617107c66e1d44551` | IncentivizedERC20 | impl | live | no |
 | base | `0x1e7f54b7d1a2fdd8ae738ec463d2d7b7da523cc6` | SeamVestingWalletV2 | proxy | live | no |
 | base | `0x1fdfc3872a70a7af5a818f27bb14fbea4ee38f9c` | SeamEmissionManager | impl | inactive | no |
 | base | `0x204fe70b59c32f05bcf60c445d37876b2fb5406a` | ERC1967Proxy | proxy | live | no |
 | base | `0x21033e28be63a4f0ea7b1c7339733f511fb8d65b` | ERC1967Proxy-4 | impl | inactive | no |
-| base | `0x213fb4bbe3bfb56d967459bdb2749b4597513d24` | ERC1967Proxy-2 | impl | inactive | no |
+| base | `0x213fb4bbe3bfb56d967459bdb2749b4597513d24` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0x216cc63cec6b6219b6bae7d07e00b9301780d5b0` | ERC1967Proxy | proxy | live | no |
 | base | `0x2181be388ced00754e7c1ee33dbcf78397dd89ac` | EscrowSeamTransferStrategy | impl | inactive | no |
 | base | `0x2182b918f29ee7d621128dde8dc07efaa5fe8d2e` | CalldataLogic | impl | live | no |
@@ -75,7 +75,7 @@
 | base | `0x36321e1b5e41f3b719e7618dae96619164d1bd89` | InitializableAdminUpgradeabilityProxy | impl | inactive | no |
 | base | `0x37e3f6df10a3ded02a7b9ba38b6e80fdd592d33c` | ERC1967Proxy | proxy | live | no |
 | base | `0x3800da378e17a5b8d07d0144c321163591475977` | VariableDebtToken | impl | inactive | no |
-| base | `0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8` | ERC1967Proxy-3 | proxy | live | no |
+| base | `0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8` | ERC1967Proxy-2 | proxy | live | no |
 | base | `0x38f5c07a734a722e488c2863308e3a422fdfc184` | ACLManager | impl | inactive | no |
 | base | `0x391a369b6904fef62dca2785cbfc0e6e20bc0afa` | DeployLoopStrategyETHoverUSDCGuardianPayload | impl | live | no |
 | base | `0x3932674032b0fc4b816530d7a8d0961a3dbad29f` | ERC1967Proxy | proxy | live | no |
@@ -106,7 +106,7 @@
 | base | `0x56908a201eb6a4c4a35b833e5e9749650228ff5e` | RewardPoolFactory | impl | inactive | no |
 | base | `0x57460dc21bf1574b8e6e00d372b8ca5ec41b3955` | SeamEmissionManager | proxy | live | no |
 | base | `0x57a80301975a1c7b05c40c3858a745f2787f536d` | DefaultReserveInterestRateStrategy | impl | inactive | no |
-| base | `0x57b4b7f830244fc854cd1123ff14afd4c1aefd3f` | ERC1967Proxy-2 | impl | inactive | no |
+| base | `0x57b4b7f830244fc854cd1123ff14afd4c1aefd3f` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0x588313d69f6ca189029d83a3012fd3c40be4eac5` | LoopStrategy | impl | live | no |
 | base | `0x597ce0e9cf5ccb070a37efbaca2fd13c193952b6` | ERC1967Proxy | proxy | live | no |
 | base | `0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8` | RouterV1 | impl | inactive | no |
@@ -116,7 +116,7 @@
 | base | `0x5c24d71f079443384fd47cdad2372c9aed653163` | StataOracle | impl | inactive | no |
 | base | `0x5c37eb148d4a261acd101e2b997a0f163fb3e351` | VeloraAdapter | impl | live | no |
 | base | `0x5c855237bcedf7265a9fb1e48d1bc14806bc76a4` | CLSynchronicityPriceAdapterPegToBase | impl | inactive | no |
-| base | `0x5d0ee49c3ea38edee7419e5e7f2ce3e193da76ec` | ERC1967Proxy-2 | impl | inactive | no |
+| base | `0x5d0ee49c3ea38edee7419e5e7f2ce3e193da76ec` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0x5d1afc39c3b58caa934fa8a9fd1f8f70fdec65f1` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | base | `0x5d6fcde71293286ccd4418bbba444f2d67f17895` | BaseImmutableAdminUpgradeabilityProxy | impl | inactive | no |
 | base | `0x5d8df7515493a804da1d16c73d75bd9479d49bad` | IncentivizedERC20-3 | impl | live | no |
@@ -178,6 +178,7 @@
 | base | `0x932d779f46fcd37d946ecdcf85905eaa5929d19c` | ERC1967Proxy | proxy | live | no |
 | base | `0x93b1d6c6bd373b995e1c378afae5235f0ed838fb` | ERC1967Proxy | impl | inactive | no |
 | base | `0x93f4997999d6e9dea108d63f2055b27708773d49` | ERC1967Proxy | impl | inactive | no |
+| base | `0x94e337608d6f3afd4e5e1de9aaa0804e3ab92c4c` | PricingAdapter-2 | impl | inactive | no |
 | base | `0x95029e427a1e8b7ada3471a493054058193f5133` | SeamVestingWalletV2 | impl | inactive | no |
 | base | `0x9558b339bb03246c44c57fcee184645dbfab253f` | LeverageRouter | impl | live | yes |
 | base | `0x9610d3ba6576c2ac6ffc75d02003cf811732ae33` | DefaultReserveInterestRateStrategy | impl | inactive | no |
@@ -191,14 +192,16 @@
 | base | `0x9bb43bf6b4b5e43580ab67c93a49802657904c0e` | LoanLogic | impl | live | no |
 | base | `0x9c764c663f8b377bacc3bce7f1f480a9417cdb67` | LoopStrategy | impl | live | no |
 | base | `0x9ce33cc39bddc13730469d7186f16cf65a53dd7e` | SeamVestingWalletV2 | proxy | live | no |
+| base | `0x9d04f65b58ced1fddef50aec8b0b3d64fe64220e` | MulticallExecutor | impl | live | no |
 | base | `0x9da10c50b63e9fa0c6abaac09dcf5e4eb28191ba` | SeamVestingWalletV2 | impl | inactive | no |
 | base | `0x9f5af07189b4ae59845d36a2b0562478870fa915` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | base | `0xa193ed138a4b04e7e3e47b13de1c0868784cc226` | DefaultReserveInterestRateStrategy | impl | inactive | no |
 | base | `0xa1b5f2cc9b407177cd8a4acf1699fa0b99955a22` | GnosisSafeProxy | proxy | live | no |
 | base | `0xa409495a6fb69b06b82f7a68766266357743d6fb` | IncentivizedERC20-4 | impl | live | no |
+| base | `0xa530e6ea09eb118a1549aca73731379ba546dd32` | ERC1967Proxy-2 | proxy | live | no |
 | base | `0xa6d3fce31854049398eb47cf9a995ee871450f98` | ERC1967Proxy-5 | proxy | live | no |
 | base | `0xa70c94ee51fb4ddfafa5dc9c30580c25878ca97b` | LoopStrategy | impl | live | no |
-| base | `0xa900d0ca830e79b79b9dc993122c30d7e754b8c4` | ERC1967Proxy-2 | impl | inactive | no |
+| base | `0xa900d0ca830e79b79b9dc993122c30d7e754b8c4` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0xa96448469520666edc351eff7676af2247b16718` | SeamTimelockController | proxy | live | no |
 | base | `0xa9d2a060bbb51e8626c5b40a3b145ead41947168` | ERC1967Proxy | proxy | live | no |
 | base | `0xab74b1598df064a838b8939ec85e283402fd2db4` | DefaultReserveInterestRateStrategy | impl | inactive | no |
@@ -224,7 +227,7 @@
 | base | `0xbac77ffc3f59e45d94017b09e7163a5b0be08b8a` | ERC1967Proxy | impl | inactive | no |
 | base | `0xbe170d7d3cda6e9db39e012d0fe25ab83fff790d` | SeamTimelockController | impl | inactive | no |
 | base | `0xbedb9b2b5c334635b64e3f6de436d082aa8fdde7` | EsSEAMAirdrop | impl | inactive | no |
-| base | `0xbf20bac485ede6a189b800ca841f323e5d3895c1` | ERC1967Proxy-2 | impl | inactive | no |
+| base | `0xbf20bac485ede6a189b800ca841f323e5d3895c1` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0xbfb7391282a3576892bd1da328269ebac1b086cf` | PoolConfigurator | impl | inactive | no |
 | base | `0xbfbc3bbbc3216a30207a8aa1cafa61a74b3f430c` | ERC1967Proxy | impl | inactive | no |
 | base | `0xbff0e0262a427c3dd20af6ab5a8edf27d351b2d6` | LoopStrategy | impl | live | no |
@@ -243,6 +246,7 @@
 | base | `0xc9be03b39ce2a56ababc3d19265cc0968e9f2fc0` | Swapper | proxy | live | no |
 | base | `0xcbc78472f58b7b526ff91cc33d73e5b207391d6e` | ERC1967Proxy | proxy | live | no |
 | base | `0xcc76e71283963a72d005c5b48f4ab2218d56f54b` | IncentivizedERC20-7 | impl | live | no |
+| base | `0xce05fbed9260810bdded179adfdaf737be7ded71` | PricingAdapter | impl | live | yes |
 | base | `0xcebbf1a8e6cdd813e7efce223a4820d7d2877972` | IncentivizedERC20-5 | impl | live | no |
 | base | `0xcecef475167f7bfd8995c0cbb577644b623cd7cf` | L2Encoder | impl | inactive | no |
 | base | `0xced653f5c689ec80881b1a8b9ab2b64df2b963bd` | DefaultReserveInterestRateStrategy | impl | inactive | no |
@@ -252,6 +256,7 @@
 | base | `0xd8133539579b5e005c6e68b505f6b90d3b85af2f` | ERC1967Proxy | impl | inactive | no |
 | base | `0xd815218fa8c9bd605c2b048f26cd374a752caa76` | CLSynchronicityPriceAdapterPegToBase | impl | inactive | no |
 | base | `0xd90eac90f5f067283954b96bbc3d28e34ebe55bb` | ERC20TransferStrategy | impl | inactive | no |
+| base | `0xd923b2522e1f369e207d151cfe6a1bcd8ec24912` | ERC1967Proxy-7 | impl | live | no |
 | base | `0xdb0f02421f830398d7b59dae8d385e2cd5ed5cf7` | WalletBalanceProvider | impl | inactive | no |
 | base | `0xdba92fc3dc10a17b96b6e807a908155c389a887c` | LeverageRouter | impl | live | yes |
 | base | `0xdbe56b929d1dd73a9d2ce6f7c8a5c174cecdc4af` | PullRewardsTransferStrategy | impl | inactive | no |
@@ -267,7 +272,7 @@
 | base | `0xe7723279a8a142d95a3fffc98f70f574ee89aca8` | DeployLoopStrategyUSDCoverETHGuardianPayload | impl | live | no |
 | base | `0xe8bb3fc413114efbaeeecbb16a96cdde4938af77` | UniversalVault | impl | inactive | no |
 | base | `0xe9acd23ad60cd6419c6028b99e40eea3e4e3a55b` | SeamVestingWalletV2 | proxy | live | no |
-| base | `0xeb0221bf6cdaa74c94129771d5b0c9a994bb2b7c` | ERC1967Proxy-3 | impl | inactive | no |
+| base | `0xeb0221bf6cdaa74c94129771d5b0c9a994bb2b7c` | ERC1967Proxy-2 | impl | inactive | no |
 | base | `0xf070598338defd70068732290617c98cdb8add30` | ERC20BalanceSplitterTwoPayee | impl | inactive | no |
 | base | `0xf1c220ac75a8e50c3e7e923d2c03d23ff601e14c` | ERC1967Proxy | proxy | live | no |
 | base | `0xf345e93907d8e8b3e92c5e77e7bd9bacda37de4d` | EsSEAMAirdrop | impl | inactive | no |
@@ -282,34 +287,25 @@
 | base | `0xfc233cf59f4d07c698983ca6cbd517647380f2eb` | ERC1967Proxy | impl | inactive | no |
 | base | `0xfdd4e83890bccd1fbf9b10d71a5cc0a738753b01` | AaveOracle | impl | live | no |
 | base | `0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942` | SwapAdapter | impl | live | yes |
-| base | `0xfe9101349354e278970489f935a54905de2e1856` | ERC1967Proxy-3 | impl | inactive | no |
+| base | `0xfe9101349354e278970489f935a54905de2e1856` | ERC1967Proxy-2 | impl | inactive | no |
 | base | `0xff017d02020a6dc3505b00816981c5908daf4bb8` | IncentivizedERC20-8 | impl | live | no |
 | base | `0xff7c1fdc6294a42104896854c5483711a45e7847` | VotesUpgradeable | impl | live | no |
 | ethereum | `0x00c66934ebca0f2a845812bc368b230f6da11a5c` | MorphoLendingAdapter | impl | live | yes |
-| ethereum | `0x0a4490233fd6ea02873af11c744d286dc3d6c127` | ERC1967Proxy-3 | proxy | live | no |
+| ethereum | `0x0a4490233fd6ea02873af11c744d286dc3d6c127` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0x16d02ebd89988cad1ce945807b963ab7a9fd22e1` | MulticallExecutor | impl | live | no |
-| ethereum | `0x1d0c191a0fe2917e244826d3a8d0a64503efaec8` | ERC1967Proxy-3 | impl | live | no |
+| ethereum | `0x1d0c191a0fe2917e244826d3a8d0a64503efaec8` | ERC1967Proxy-2 | impl | live | no |
 | ethereum | `0x4466d52b714ef32657db89ec61fab1b7e30a0352` | LeverageTokenDeploymentBatcher | impl | live | no |
 | ethereum | `0x44ccebea0dac17105e91a59e182f65f8d176c88f` | PricingAdapter | impl | live | yes |
 | ethereum | `0x4fdf852d7ce01b1594d38808be5cca9812417708` | SeamL1 | impl | inactive | no |
+| ethereum | `0x5c37eb148d4a261acd101e2b997a0f163fb3e351` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0x603da735780e6bc7d04f3fb85c26dcccd4ff0a82` | LeverageToken-2 | proxy | inactive | no |
 | ethereum | `0x6b66ccd1340c479b07b390d326eadcbb84e726ba` | EIP712 | impl | live | no |
+| ethereum | `0x9d04f65b58ced1fddef50aec8b0b3d64fe64220e` | ERC1967Proxy-6 | impl | inactive | no |
 | ethereum | `0xb0764de7eef0ac69855c431334b7bc51a96e6dba` | MorphoLendingAdapter | impl | live | yes |
 | ethereum | `0xb224f589297a5a207e6069de5dafd4b120129817` | MorphoLendingAdapter | impl | live | yes |
+| ethereum | `0xc4e5812976279cbcec943a6a148c95eaac7db6ba` | ERC1967Proxy-2 | impl | live | no |
 | ethereum | `0xcb1effb6f6e531137ccc1508a8d4982e873aee58` | MorphoLendingAdapter | impl | live | yes |
 | ethereum | `0xce05fbed9260810bdded179adfdaf737be7ded71` | MorphoLendingAdapterFactory | impl | live | yes |
 | ethereum | `0xe33eaf6ee64f4b9353ff2ce3748fa05eeb9bd809` | MorphoLendingAdapter | impl | live | yes |
 | ethereum | `0xe9a32ae2d53459ac490f1dbe0cfd0786fb298f1f` | MorphoLendingAdapter | impl | live | yes |
-
-## Source unavailable (10)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x94e337608d6f3afd4e5e1de9aaa0804e3ab92c4c`
-- base `0x9d04f65b58ced1fddef50aec8b0b3d64fe64220e`
-- base `0xa530e6ea09eb118a1549aca73731379ba546dd32`
-- base `0xce05fbed9260810bdded179adfdaf737be7ded71`
-- base `0xd923b2522e1f369e207d151cfe6a1bcd8ec24912`
-- ethereum `0x5c37eb148d4a261acd101e2b997a0f163fb3e351`
-- ethereum `0x603da735780e6bc7d04f3fb85c26dcccd4ff0a82`
-- ethereum `0x9d04f65b58ced1fddef50aec8b0b3d64fe64220e`
-- ethereum `0xc4e5812976279cbcec943a6a148c95eaac7db6ba`
-- ethereum `0xfe9101349354e278970489f935a54905de2e1856`
+| ethereum | `0xfe9101349354e278970489f935a54905de2e1856` | LeverageToken-3 | impl | inactive | no |

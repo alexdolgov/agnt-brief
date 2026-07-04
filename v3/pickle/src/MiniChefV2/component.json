@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x20b2a3fc7b13ca0ccf7af81a68a14cb3116e8749",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x849c283375a156a6632e8ee928308fcb61306b7b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

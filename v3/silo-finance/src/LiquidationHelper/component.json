@@ -2,7 +2,7 @@
   "component": "LiquidationHelper",
   "main_contract": "LiquidationHelper",
   "source_file_count": 35,
-  "deployment_count": 14,
+  "deployment_count": 17,
   "audited": true,
   "audits_covering": [
     "https://docs.silo.finance/assets/files/SP_Silo_Core_Security_Assessment_Report_v2.0-6c5f5bb40b34450300b9fe59133ea870.pdf"
@@ -116,6 +116,30 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0xf5d7d0a4d98f8d696558b17a7c1742e2dc8d1144",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1157de9f428231dda3c3ab282f02259178fbf779",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xca1658fe7c04e7cf739c3072a1f60948506efd83",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdb8838f8d035e5fa48b3481867424f5fc6231d87",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

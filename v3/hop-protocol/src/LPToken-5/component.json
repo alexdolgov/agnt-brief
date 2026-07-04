@@ -1,0 +1,18 @@
+{
+  "component": "LPToken-5",
+  "main_contract": "LPToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb67c014fa700e69681a673876eb8bafaa36bff71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

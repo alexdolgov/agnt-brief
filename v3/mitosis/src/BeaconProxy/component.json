@@ -1,17 +1,25 @@
 {
   "component": "BeaconProxy",
   "main_contract": "BeaconProxy",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0109e9f292516dab3e15efc61811c5e5a7fa5358",
-      "is_proxy": true,
-      "implementation_address": "0xe322e8c197cf7d83a686bbd1e19f7f0085cdc320",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xa30c1544d12309a519a205a486f6af0515dfa442",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xbed575b0feda4f84b71144634693dacc07749471",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     }
   ]

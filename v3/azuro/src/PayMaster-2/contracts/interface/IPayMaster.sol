@@ -20,7 +20,7 @@ interface IPayMaster is IOrder {
         uint256 amount
     );
 
-    event FreeBetReturned(
+    event FreebetReturned(
         address indexed core,
         address indexed bettor,
         uint256 indexed betId,
@@ -51,7 +51,7 @@ interface IPayMaster is IOrder {
     error AlreadyPaid();
     error BetDoesNotExist();
     error InsufficientFeeFund();
-    error InsufficientFreeBetFund();
+    error InsufficientFreebetFund();
     error IncorrectRelayer();
     error LpNotMatch();
     error NothingChanged();
@@ -63,5 +63,11 @@ interface IPayMaster is IOrder {
         uint128 betAmount,
         uint128[] memory amounts,
         bytes memory hashes
-    ) external returns (uint128 amountPaidByBettor, uint256 feePaidByBettor);
+    )
+        external
+        returns (
+            uint128 amountPaidByBettor,
+            uint256 feePaidByBettor,
+            uint256[] memory tokenIds
+        );
 }

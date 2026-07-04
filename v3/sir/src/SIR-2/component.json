@@ -1,0 +1,18 @@
+{
+  "component": "SIR-2",
+  "main_contract": "SIR",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7f3856d63e74516ef142a51c7445fbbc373fed5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

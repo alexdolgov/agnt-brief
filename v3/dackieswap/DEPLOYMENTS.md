@@ -1,15 +1,28 @@
 # dackieswap — deployments
 
-158 verified deployment(s) across 79 component(s).
+263 verified deployment(s) across 123 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x2417036313b66eb0495f573f11142efdaead7f9b` | QuoterV2 | impl | inactive | no |
+| arbitrum | `0x195fbc5b8fbd5ac739c1ba57d4ef6d5a704f34f7` | MasterChefV3KeeperV2 | impl | inactive | no |
+| arbitrum | `0x2417036313b66eb0495f573f11142efdaead7f9b` | QuoterV2-2 | impl | inactive | no |
 | arbitrum | `0x4a66d7a0fe99e8e666062fd2908c17b9754d1f67` | DackieV3LmPoolDeployerV3 | impl | inactive | no |
-| arbitrum | `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30` | DackieTreasury | impl | inactive | no |
-| arbitrum | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | QuoterV2 | impl | live | no |
-| arbitrum | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | QuoterV2 | impl | inactive | no |
+| arbitrum | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | NonfungiblePositionManager | impl | live | no |
+| arbitrum | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | DackieFactory | impl | inactive | no |
+| arbitrum | `0x5ba546a342bbee029a7729a7e8e0adb844a53802` | MasterChefV3 | impl | inactive | no |
+| arbitrum | `0x6510e68561f04c1d111e616750dac2a063ff5055` | MasterChefV3ReceiverV2 | impl | inactive | no |
+| arbitrum | `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30` | DackieTreasury-2 | impl | inactive | no |
+| arbitrum | `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84` | TransparentUpgradeableProxy-4 | impl | inactive | no |
+| arbitrum | `0x8bf8204bcbc27bc49b96cb80588c1b87de16196d` | DackieV3LmPoolDeployerV2-2 | impl | inactive | no |
+| arbitrum | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | QuoterV2-2 | impl | live | no |
+| arbitrum | `0xaedc38bd52b0380b2af4980948925734fd54fbf4` | PancakeV3Factory | impl | inactive | no |
+| arbitrum | `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| arbitrum | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | QuoterV2-2 | impl | inactive | no |
+| arbitrum | `0xcfb05ab06d338fd85bbf4486e69809d96a906b77` | MasterChefV2 | impl | inactive | no |
+| arbitrum | `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc` | MasterChefV3 | impl | live | no |
+| arbitrum | `0xe4efb979968ae4b85a166e5e083f7b166e70fe20` | Multicall2 | impl | inactive | no |
 | arbitrum | `0xee0126cbbdbe0fcb443a661a83acd04fc67466b4` | DackieV3LmPoolDeployerV3 | impl | inactive | no |
+| arbitrum | `0xf79a36f6f440392c63ad61252a64d5d3c43f860d` | PancakeV3PoolDeployer | impl | inactive | no |
 | base | `0x002fab86692e4807782136ea470d587fbdb16cf0` | SmartRouterHelper-2 | impl | live | no |
 | base | `0x00c25980d2d6018569ec769c6b0c54bd1ca3cf9d` | MasterChefV3Receiver | impl | inactive | no |
 | base | `0x03d573c792a074ad71ddd9cd04ed93bac0b8050e` | DackieTokenMigrator | impl | live | no |
@@ -22,10 +35,12 @@
 | base | `0x13642860ba5649d74588c7c0b519af9fe1057b98` | SmartStakingPoolV1 | impl | live | no |
 | base | `0x18fb8d5227e71dd8d8bad69f9f32026f3e3de9af` | SmartStakingDackieUSD | impl | live | no |
 | base | `0x195fbc5b8fbd5ac739c1ba57d4ef6d5a704f34f7` | ApproveAndCall | impl | live | no |
+| base | `0x1a4b306ba14d3fb8a49925675f8edb7ef607c422` | TransparentUpgradeableProxy-2 | impl | inactive | no |
 | base | `0x1c6e9f59670a348a0d541c3a83ac088d739f79c1` | QuackOFTAdapter | impl | inactive | no |
 | base | `0x1ce2f909c039a85a5ea6dac0deb7e5737fabc2b0` | SmartStakingPoolV1 | impl | live | no |
 | base | `0x2150a32d02780aeb5a11c2e8ddcdf17381870ff4` | SmartStakingPoolV1 | impl | live | no |
 | base | `0x217b59e3aec168393e67097d0c47215059a7cebc` | IDackie | impl | inactive | no |
+| base | `0x2d1b823962c401a7b229e1a9b38760d2f1715678` | ProxyAdmin-2 | impl | live | no |
 | base | `0x2f7204205b605668950634631c8058c2b0bfca86` | SmartStakingPoolV1 | impl | live | no |
 | base | `0x3046381d375dbeebe7e10f7b1440192b1a7aec3b` | DackiePadDeployerFCFS | impl | inactive | no |
 | base | `0x319fbdf0a1c749a33fb54761b0d638878cc2e002` | IDackieTier | impl | live | no |
@@ -34,17 +49,17 @@
 | base | `0x3905f0c724a284095353befafd932204ee6b94ad` | MasterChefDACKIE | impl | live | no |
 | base | `0x3d0b75949c26a5eca1bfd115c261154271516227` | SmartChefFactoryByTier | impl | inactive | no |
 | base | `0x3d237ac6d2f425d2e890cc99198818cc1fa48870` | PlunderV3Factory | impl | inactive | no |
-| base | `0x3df41177096d1e18c1d4447fa16ecc12175fcbee` | MasterChefV3-2 | impl | live | yes |
+| base | `0x3df41177096d1e18c1d4447fa16ecc12175fcbee` | MasterChefV3-3 | impl | live | yes |
 | base | `0x40222f7ca890bef5b1b4464de4a84def6ce1f5b4` | DackieOracle | impl | inactive | no |
 | base | `0x4064156b6c3b48d67d31182b6594f0c658226ffd` | SmartStakingPoolV1 | impl | live | no |
 | base | `0x475e6beb696108247468eb975b909ee978aa4963` | DackieUSDFactory | impl | inactive | no |
 | base | `0x4a911c7c98088a3e762273c9e962bf7456a4005c` | DackieVaultReward | impl | live | no |
 | base | `0x4ad387bcb03b92a6e22a72391cc37493fc388b05` | DackiePool | impl | live | no |
 | base | `0x4ad57dee33d31ba3c45dc5771b03cf37bc3d4dc5` | SmartStakingPoolV1 | impl | live | no |
-| base | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | PancakeV3PoolDeployer-2 | impl | inactive | no |
+| base | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | PancakeV3PoolDeployer-3 | impl | inactive | no |
 | base | `0x4f4c2dcef0c882cf1ba544fa9ba407e2e09723ab` | DackieV3LmPoolDeployerV1 | impl | inactive | no |
 | base | `0x4f5ada70aeedc767edbc8c0c4bad142fb9b5556b` | DackiePadDeployerFCFS | impl | inactive | no |
-| base | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | Multicall2 | impl | inactive | no |
+| base | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | Multicall2-2 | impl | inactive | no |
 | base | `0x5083e8d08e1e154e1465b1f044ba3a524de67fa1` | MasterChefV2 | impl | live | no |
 | base | `0x57782cec483ef0ab633a350c69a45dc78b364042` | SmartStakingPoolV1 | impl | live | no |
 | base | `0x591f122d1df761e616c13d265006fcbf4c6d6551` | PlunderV3Factory | impl | inactive | no |
@@ -61,6 +76,7 @@
 | base | `0x66e30c8220d7dca31f595e40ba5f23a5e9d88df2` | SmartChefFactoryByTier | impl | inactive | no |
 | base | `0x694a17888ffe225967901e8886f054e3f40d1322` | SmartChefFactoryByTier | impl | inactive | no |
 | base | `0x6e2981f062dbb33ca49f29dd6177cb5a506c07d3` | QuackToken | impl | inactive | no |
+| base | `0x6f887c0bee01fafaca39e46ca14cc1d48e28090f` | SmartRouter-3 | impl | live | no |
 | base | `0x729de4a888f6942d7bc4805533cfaaeb9e1a7d6d` | IDackieTier | impl | live | no |
 | base | `0x72c9cc42b7372f658e6392bcf6aacb749a8f9fda` | FarmBoosterV3 | impl | inactive | no |
 | base | `0x73326b4d0225c429bed050c11c4422d91470aaf4` | DackieSuperchain | impl | live | no |
@@ -77,9 +93,11 @@
 | base | `0x9b48d99ba3bacff8d8e7a326e3fe1f9c9a08f19a` | SmartStakingPoolV1 | impl | live | no |
 | base | `0xa0b61b17d868bf614b8b74f982d4c18360277ae4` | DackieClaimReward | impl | inactive | no |
 | base | `0xa3e450331591679a2b7208782fa528cb7d4fddde` | QuackOFTAdapter | impl | inactive | no |
+| base | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | DackieTreasury | impl | inactive | no |
 | base | `0xa4aef5563d0436a7d1275b8d87041e7cdaac14c7` | SmartStakingPoolV1 | impl | live | no |
 | base | `0xa77493be13f9b6345b8b5c00a2dec34d8537635d` | SmartChefFactory | impl | inactive | no |
 | base | `0xa8a2c14ea12be9b6954db8b4eb67b252a20f7bd2` | DackieUSDFactoryV1 | impl | inactive | no |
+| base | `0xabb67904a172b858ceb3f8ee52b27d87376f6c37` | DackieV3LmPoolDeployer-3 | impl | inactive | no |
 | base | `0xacb4d7cb35afaa4024e0eda21e7ac8a3ad0807aa` | SmartStakingPoolV1 | impl | live | no |
 | base | `0xb2e1558d6e37bf6ccae3de7d4912c1a0ce899864` | DackieUSDFactory | impl | inactive | no |
 | base | `0xb5131d689c5fd93d72502c0fc0d3bd0f7b7f91cc` | SmartStakingPoolV1 | impl | live | no |
@@ -92,12 +110,20 @@
 | base | `0xc02ee6c231c74bf806cf246406def16a0c06738f` | SmartStakingNFTPoolV1 | impl | live | no |
 | base | `0xc0b2e49dfac1b85369f29a30ee074f2194b7cb52` | UpgradeKingDackie | impl | inactive | no |
 | base | `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b` | DackieToken | impl | live | no |
+| base | `0xc42c649cdb9d4aa2a142b4909923c3d2d32141c1` | MasterChefV3ReceiverV2 | impl | inactive | no |
 | base | `0xc55c947a4ec4237d9a79bf3dff28203d4f040db6` | SmartStakingPoolV1 | impl | live | no |
+| base | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | DackieRouter-3 | impl | inactive | no |
 | base | `0xc8042bc0bdb08a2ec55be7c1c1d0b726c12a7da6` | SmartStakingPoolV1 | impl | live | no |
 | base | `0xc845cc515335b7f9251a96d0cc4a64e65434a43b` | DackieFlexiblePool | impl | live | no |
 | base | `0xc928ec2b628e339405b806da133bcd3d0fcd6ff9` | SmartChefFactoryByTier | impl | inactive | no |
+| base | `0xca4eaa32e7081b0c4ba47e2bdf9b7163907fe56f` | DackieRouter-4 | impl | live | no |
+| base | `0xcbcd63c5de434fe6a0851b4cea66e6711726e3c7` | MasterChefV3KeeperV2 | impl | inactive | no |
+| base | `0xcd554fde84ef08a84d086f2917f8682c0cf39630` | MixedRouteQuoterV1 | impl | live | no |
+| base | `0xcfb05ab06d338fd85bbf4486e69809d96a906b77` | NonfungiblePositionManager-2 | proxy | live | no |
+| base | `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc` | QuoterV2 | impl | inactive | no |
 | base | `0xd2256cd9fedb129c2f20cfa7dd808b7285e8bda6` | QuackToken | impl | inactive | no |
 | base | `0xd4d117449954df07429ba512ec01163f4891f32d` | SmartChefNFTFactory | impl | inactive | no |
+| base | `0xd592e2c815e0cf4b62169e09934faab28299708e` | DackieV3LmPoolDeployer-4 | impl | inactive | no |
 | base | `0xd98060e28842f0ccb0b207d508d96a1ac2c5f75a` | IDackieTier | impl | live | no |
 | base | `0xd9f521dea133ea13ac30026792e2f141cf42069a` | DackiePadDeployerFCFS | impl | inactive | no |
 | base | `0xdd23df0df178ff0f25e8b4875fed6c814de67988` | DackieVault | impl | live | no |
@@ -107,170 +133,144 @@
 | base | `0xea1ec4d57f0213dfd0607451bf2f4b2f6cadd997` | DackieOracle | impl | inactive | no |
 | base | `0xebcec2e959bad4137925f9ddb68e163cca72242b` | DackieNFT-2 | impl | live | yes |
 | base | `0xf19e42727be0beca8846bee4374db15a56455bfd` | SmartStakingNFTPoolV1 | impl | live | no |
+| base | `0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d` | MasterChefV3 | impl | live | no |
+| base | `0xf5190e64db4cbf7ee5e72b55cc5b2297e20264c2` | ProxyAdmin-2 | proxy | live | no |
 | base | `0xf6c5b5df9bcee40cd474ccd6373f99b56dbcf5e5` | DackiePool | impl | live | no |
 | base | `0xf76a8b5e904345fa17f739c5b1b2e0f582aef442` | SmartStakingPoolV1 | impl | live | no |
 | base | `0xfc804468f550845506789eb6d1c5d7272a8076c9` | DDACKIEPOOL | impl | inactive | no |
 | base | `0xfc8f2a790e752773d6cac0eb6e7b651d574e8092` | IDackieTier | impl | live | no |
 | base | `0xfff26bd732f2483e6b0edc5833b7682e5d5ca21a` | DackieBurn | impl | inactive | no |
-| blast | `0x000b484e6f25eb9daec9f8cf5be79f44f350b2e2` | MasterChefV3KeeperV2 | impl | inactive | no |
-| blast | `0x03d1ae0b435c0b7064eb35461605974b7ee839bc` | MasterChefV3 | impl | inactive | no |
+| blast | `0x000b484e6f25eb9daec9f8cf5be79f44f350b2e2` | MasterChefV3KeeperV2-2 | impl | inactive | no |
+| blast | `0x03d1ae0b435c0b7064eb35461605974b7ee839bc` | MasterChefV3-2 | impl | inactive | no |
 | blast | `0x0dfc80b2fb2f42408a9913ab5cc584b5beb1bc29` | DackieV3LmPoolDeployer | impl | inactive | no |
-| blast | `0x0f7fb3bb52a41288fe3250f0f90b9c26676d8872` | SmartRouter | impl | live | no |
-| blast | `0x11ca45eb43517d4a84b79671104654954535290d` | NonfungiblePositionManager | impl | live | no |
-| blast | `0x1643f6acd56a7bed6005155abeb822bba6c5e970` | MasterChefV3ReceiverV2 | impl | inactive | no |
-| blast | `0x18a7f032a893095a08df1b7cd457abf4d0a3e3d6` | MasterChefV3ReceiverV2 | impl | inactive | no |
+| blast | `0x0f7fb3bb52a41288fe3250f0f90b9c26676d8872` | SmartRouter-2 | impl | live | no |
+| blast | `0x11ca45eb43517d4a84b79671104654954535290d` | NonfungiblePositionManager-3 | impl | live | no |
+| blast | `0x126045d03160ee1edd9b3dfc0b3e7facb3086903` | TransparentUpgradeableProxy | proxy | live | no |
+| blast | `0x1643f6acd56a7bed6005155abeb822bba6c5e970` | MasterChefV3ReceiverV2-2 | impl | inactive | no |
+| blast | `0x18a7f032a893095a08df1b7cd457abf4d0a3e3d6` | MasterChefV3ReceiverV2-2 | impl | inactive | no |
 | blast | `0x1a4b306ba14d3fb8a49925675f8edb7ef607c422` | MixedRouteQuoterV1 | impl | live | no |
-| blast | `0x2417036313b66eb0495f573f11142efdaead7f9b` | SmartRouter | impl | live | no |
-| blast | `0x28b90c75ffea5d1f8bd4e27dc8b87b13ba53309c` | MasterChefV3 | impl | inactive | no |
-| blast | `0x71bfd74e61e75c1302208b554160885cf5fc4af2` | MasterChefV3KeeperV2 | impl | inactive | no |
+| blast | `0x2417036313b66eb0495f573f11142efdaead7f9b` | SmartRouter-2 | impl | live | no |
+| blast | `0x28b90c75ffea5d1f8bd4e27dc8b87b13ba53309c` | MasterChefV3-2 | impl | inactive | no |
+| blast | `0x3d237ac6d2f425d2e890cc99198818cc1fa48870` | SmartRouterHelper | impl | live | no |
+| blast | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | QuoterV2 | impl | inactive | no |
+| blast | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | DackieRouter | impl | inactive | no |
+| blast | `0x5ba546a342bbee029a7729a7e8e0adb844a53802` | DackieRouter-6 | impl | live | no |
+| blast | `0x6510e68561f04c1d111e616750dac2a063ff5055` | PancakeV3PoolDeployer-5 | impl | inactive | no |
+| blast | `0x65a49813ec8f0049955171a69c463cfdff7a9589` | PancakeV3PoolDeployer-6 | impl | inactive | no |
+| blast | `0x71bfd74e61e75c1302208b554160885cf5fc4af2` | MasterChefV3KeeperV2-2 | impl | inactive | no |
+| blast | `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30` | DackieFactory | impl | inactive | no |
 | blast | `0x77f0e2903ad385f48b8cbf51b722e85996b2839d` | DackieV3LmPoolDeployer | impl | inactive | no |
-| blast | `0x7e89ad4a37cec2acd48e39f223dabad2e98cb36b` | MasterChefV3KeeperV2 | impl | inactive | no |
-| blast | `0x95cb91118a5a2b64ddac8965e49173a30e521f4e` | MasterChefV3ReceiverV2 | impl | inactive | no |
-| blast | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | NonfungiblePositionManager | impl | inactive | no |
+| blast | `0x7e89ad4a37cec2acd48e39f223dabad2e98cb36b` | MasterChefV3KeeperV2-2 | impl | inactive | no |
+| blast | `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84` | TransparentUpgradeableProxy | proxy | live | no |
+| blast | `0x95cb91118a5a2b64ddac8965e49173a30e521f4e` | MasterChefV3ReceiverV2-2 | impl | inactive | no |
+| blast | `0xa0b61b17d868bf614b8b74f982d4c18360277ae4` | QuoterV2-5 | impl | inactive | no |
+| blast | `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291` | TransparentUpgradeableProxy | impl | live | no |
+| blast | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | NonfungiblePositionManager-3 | impl | inactive | no |
+| blast | `0xaedc38bd52b0380b2af4980948925734fd54fbf4` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| blast | `0xb9010964301326160173da694c0697a2fce82f39` | DackieV3Factory | impl | inactive | no |
+| blast | `0xbe7cff2963b38ef8452549c7a1901ac736f6fb3d` | TransparentUpgradeableProxy | proxy | live | no |
 | blast | `0xbf1f264fcb190a65aece3cb8aade57ac71548b79` | DackieV3LmPoolDeployer | impl | inactive | no |
 | blast | `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b` | DackieInterfaceMulticall | impl | inactive | no |
-| blast | `0xcae74867add50fd8fac90c07db02e3d0c51a1241` | MasterChefV3 | impl | inactive | no |
+| blast | `0xc4dfd83800942d4e3cda9b20d4167eac05cd9874` | SmartRouterHelper-4 | impl | live | no |
+| blast | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | PancakeV3PoolDeployer-2 | impl | inactive | no |
+| blast | `0xcae74867add50fd8fac90c07db02e3d0c51a1241` | MasterChefV3-2 | impl | inactive | no |
+| blast | `0xcfc8bfd74422472277fb5bc4ec8851d98ecb2976` | PlunderV3Factory-4 | impl | inactive | no |
+| blast | `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc` | PlunderV3Factory-5 | impl | inactive | no |
+| blast | `0xd53e4377e27e927fba3b99306b0be2c2b1e7194b` | SmartRouterHelper-5 | impl | live | no |
 | blast | `0xd592e2c815e0cf4b62169e09934faab28299708e` | DackieInterfaceMulticall | impl | inactive | no |
 | blast | `0xe3ee26929beaf7d0bb6be1d90860c59b49239d4e` | DackieInterfaceMulticall | impl | inactive | no |
-| blast | `0xe5535dc64e0b305b4769e5bfa99a1522c2708159` | SmartRouter | impl | live | no |
-| blast | `0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d` | NonfungiblePositionManager | impl | live | no |
+| blast | `0xe5535dc64e0b305b4769e5bfa99a1522c2708159` | SmartRouter-2 | impl | live | no |
+| blast | `0xef9ed1a8f6197d9cbbc3c41381bdddbaa87576ea` | TransparentUpgradeableProxy | proxy | live | no |
+| blast | `0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d` | NonfungiblePositionManager-3 | impl | live | no |
+| blast | `0xf5190e64db4cbf7ee5e72b55cc5b2297e20264c2` | DackieFactory-3 | impl | inactive | no |
+| blast | `0xf74b821beca5301308d94c1eaa4be934223029e5` | QuoterV2-6 | impl | inactive | no |
+| chain-130 | `0x2417036313b66eb0495f573f11142efdaead7f9b` | SmartRouter | impl | live | no |
 | chain-130 | `0x3d237ac6d2f425d2e890cc99198818cc1fa48870` | SmartRouterHelper | impl | live | no |
-| chain-130 | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | QuoterV2-2 | impl | live | no |
+| chain-130 | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | QuoterV2 | impl | live | no |
 | chain-130 | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | SmartRouterHelper | impl | live | no |
+| chain-130 | `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-130 | `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291` | TransparentUpgradeableProxy | impl | live | no |
+| chain-130 | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | NonfungiblePositionManager-2 | impl | live | no |
+| chain-130 | `0xaedc38bd52b0380b2af4980948925734fd54fbf4` | TransparentUpgradeableProxy-2 | impl | inactive | no |
 | chain-130 | `0xb9010964301326160173da694c0697a2fce82f39` | DackieV3Factory | impl | live | no |
-| chain-130 | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | DackieV3PoolDeployer | impl | live | no |
+| chain-130 | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | PancakeV3PoolDeployer-2 | impl | live | no |
+| chain-130 | `0xe4efb979968ae4b85a166e5e083f7b166e70fe20` | DackieRouter | impl | live | no |
 | ethereum | `0x1a4b306ba14d3fb8a49925675f8edb7ef607c422` | PancakeV3PoolDeployer | impl | live | no |
-| ethereum | `0x2417036313b66eb0495f573f11142efdaead7f9b` | DackieRouter | impl | live | no |
+| ethereum | `0x2417036313b66eb0495f573f11142efdaead7f9b` | DackieRouter-2 | impl | live | no |
 | ethereum | `0x2d1b823962c401a7b229e1a9b38760d2f1715678` | PancakeV3Factory | impl | live | no |
 | ethereum | `0x3d237ac6d2f425d2e890cc99198818cc1fa48870` | DackieFactory | impl | live | no |
 | ethereum | `0x5ba546a342bbee029a7729a7e8e0adb844a53802` | AdminUpgradeabilityProxy | impl | live | no |
-| ethereum | `0xef9ed1a8f6197d9cbbc3c41381bdddbaa87576ea` | DackieRouter | impl | live | no |
-| linea | `0x10809f05f3582923585353270218ffda72941ab9` | TransparentUpgradeableProxy | proxy | live | no |
-| linea | `0x300b889a782594317245b8219d299141cf92c0f8` | TransparentUpgradeableProxy | impl | inactive | no |
-| linea | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | DackieOFT-2 | impl | live | no |
+| ethereum | `0x6510e68561f04c1d111e616750dac2a063ff5055` | NonfungiblePositionManager | impl | live | no |
+| ethereum | `0xcfb05ab06d338fd85bbf4486e69809d96a906b77` | TransparentUpgradeableProxy-4 | impl | inactive | no |
+| ethereum | `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0xef9ed1a8f6197d9cbbc3c41381bdddbaa87576ea` | DackieRouter-2 | impl | live | no |
+| linea | `0x0f6fc9e2e38c5c672f21ed6a2410abe95ccf0105` | SmartRouterHelper | impl | live | no |
+| linea | `0x10809f05f3582923585353270218ffda72941ab9` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| linea | `0x300b889a782594317245b8219d299141cf92c0f8` | TransparentUpgradeableProxy-5 | impl | inactive | no |
+| linea | `0x38cef896b6ac4c6af80c7e72841dc6f7989216cf` | DackieOFT | impl | inactive | no |
+| linea | `0x40908aeeae8bbfe86abf1639d86d5fab13b59f6d` | MasterChefV2 | impl | inactive | no |
+| linea | `0x46b22cd275967ddf055a567e7f36ec89ee3f1139` | PancakeV3PoolDeployer | impl | inactive | no |
+| linea | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | DackieOFT | impl | live | no |
+| linea | `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30` | DackieOFT | impl | live | no |
+| linea | `0x776c05325329c1de3242f55fc86ed591a7017f93` | NonfungiblePositionManager | impl | live | no |
+| linea | `0x79b3a60ccb3938042448c5576a23b8c325177cbb` | DackieRouter | impl | live | no |
+| linea | `0x7b6602ceab4672561ba4b2eef8eca4d302f6ca3c` | SmartRouter | impl | live | no |
+| linea | `0x9790713770039cefcf4faaf076e2846c9b7a4630` | DackieFactory | impl | inactive | no |
+| linea | `0xbb87917ccc567ebe43561306ebd69bb37a119013` | MasterChefV3ReceiverV2 | impl | inactive | no |
+| linea | `0xbeb8ee794b685cff736734cd0368f069149c8a25` | QuoterV2-4 | impl | inactive | no |
+| linea | `0xc6255ec7cdb11c890d02ebfe77825976457b2470` | PancakeV3Factory | impl | inactive | no |
+| linea | `0xc8613899117cc6ea464fdc717a9e2b7ccd23d139` | ProxyAdmin-4 | impl | live | no |
 | mode | `0x07a2fb203e656e1d5cebe244b703c91bf3da5143` | MasterChefV2-2 | impl | unknown | no |
-| mode | `0x36a0638f3c85261477a0b1d239df3c623f7f3d79` | DackieOFT | impl | unknown | no |
-| mode | `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291` | TransparentUpgradeableProxy-2 | impl | live | no |
+| mode | `0x36a0638f3c85261477a0b1d239df3c623f7f3d79` | DackieOFT-2 | impl | unknown | no |
+| mode | `0x3d237ac6d2f425d2e890cc99198818cc1fa48870` | SmartRouter-4 | impl | unknown | no |
+| mode | `0x43ffd81f19e3fa4b774288eb9f7680619391f435` | MasterChefV3KeeperV2-3 | impl | unknown | no |
+| mode | `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7` | SmartRouterHelper-3 | impl | live | no |
+| mode | `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c` | DackieRouter-5 | impl | unknown | no |
+| mode | `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30` | DackieFactory-2 | impl | unknown | no |
+| mode | `0x8817d540325f3680c59cf4ac6225f3e1173a4a99` | MasterChefV3-4 | impl | unknown | no |
+| mode | `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84` | NonfungiblePositionManager-4 | impl | unknown | no |
+| mode | `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291` | TransparentUpgradeableProxy-6 | impl | live | no |
+| mode | `0xaedc38bd52b0380b2af4980948925734fd54fbf4` | ProxyAdmin-3 | impl | live | no |
+| mode | `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b` | QuoterV2-3 | impl | unknown | no |
+| mode | `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7` | PlunderV3Factory-3 | impl | unknown | no |
 | mode | `0xd2ecb0cb0a65479d18b291c3c0f18130e7973c35` | QuackOFT | impl | unknown | no |
-| mode | `0xf15578bcdb3ccba8585c563af9aae200c1413bca` | DackieOFT | impl | unknown | no |
+| mode | `0xe4efb979968ae4b85a166e5e083f7b166e70fe20` | PancakeV3PoolDeployer-4 | impl | unknown | no |
+| mode | `0xf15578bcdb3ccba8585c563af9aae200c1413bca` | DackieOFT-2 | impl | unknown | no |
 | mode | `0xfa564e0131730498be55bfb98aa0ea443fc4369f` | SoneiumV3LmPoolDeployer | impl | unknown | no |
+| optimism | `0x1a4b306ba14d3fb8a49925675f8edb7ef607c422` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | optimism | `0x1d01aae6ef5d13406fdabab0e6c12fb862e342c5` | DackieUSDOFT | impl | live | no |
+| optimism | `0x2243eef144c3914642eee7694c5a0a2c9126a893` | MasterChefV3KeeperV2 | impl | inactive | no |
 | optimism | `0x2417036313b66eb0495f573f11142efdaead7f9b` | ProxyAdmin | impl | live | no |
+| optimism | `0x2d1b823962c401a7b229e1a9b38760d2f1715678` | NonfungiblePositionManager-2 | impl | live | no |
+| optimism | `0x3d237ac6d2f425d2e890cc99198818cc1fa48870` | TransparentUpgradeableProxy-2 | impl | inactive | no |
 | optimism | `0x50eef105100209976392c743d3185e256d554046` | SmartStakingNFTPoolV1-2 | impl | live | no |
+| optimism | `0x5ba546a342bbee029a7729a7e8e0adb844a53802` | SmartRouterHelper | impl | live | no |
+| optimism | `0x6510e68561f04c1d111e616750dac2a063ff5055` | TransparentUpgradeableProxy-3 | impl | live | no |
+| optimism | `0x6e4350509ed78ab82393136ebc4cf5441e1ad9ae` | DackieV3LmPoolDeployer-2 | impl | inactive | no |
+| optimism | `0x7527463e29bf23efe425aff996425c3a75ab70a6` | SmartStakingPoolV1 | impl | live | no |
+| optimism | `0x7b4fdc4ed00cfffcae61f6411b864bafa00d5377` | SmartStakingPoolV1 | impl | live | no |
+| optimism | `0x823b825931ebeb17c441298ec974a1d8089ab4db` | DackieTreasury | impl | inactive | no |
 | optimism | `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84` | ProxyAdmin | impl | inactive | no |
+| optimism | `0x8e953362ca29a40c4a3919566fe6eda0fdb41ddb` | DackieV3LmPoolDeployer-2 | impl | inactive | no |
 | optimism | `0x95cdf6143f702869e3c74fdaad607945acdd69b7` | DackieUSDOFT | impl | inactive | no |
+| optimism | `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291` | Multicall2 | impl | inactive | no |
+| optimism | `0xa466ebcfa58848feb6d8022081f1c21a884889bb` | PancakeV3PoolDeployer-2 | impl | inactive | no |
+| optimism | `0xaedc38bd52b0380b2af4980948925734fd54fbf4` | TransparentUpgradeableProxy-2 | impl | inactive | no |
+| optimism | `0xbd9aa882f5a9423b515721d84e9ead5ac40ae3de` | MasterChefV3ReceiverV2 | impl | inactive | no |
 | optimism | `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b` | PlunderV3Factory-2 | impl | inactive | no |
 | optimism | `0xcfb05ab06d338fd85bbf4486e69809d96a906b77` | ProxyAdmin | impl | inactive | no |
+| optimism | `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc` | SmartRouter | impl | live | no |
+| optimism | `0xd592e2c815e0cf4b62169e09934faab28299708e` | MasterChefV3ReceiverV2 | impl | inactive | no |
+| optimism | `0xe8ff69d16185aed8859920e04121161b3ee57e63` | MasterChefV2 | impl | inactive | no |
+| optimism | `0xef9ed1a8f6197d9cbbc3c41381bdddbaa87576ea` | MasterChefV2 | impl | inactive | no |
+| optimism | `0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d` | MasterChefV3 | impl | inactive | no |
 | optimism | `0xf5190e64db4cbf7ee5e72b55cc5b2297e20264c2` | AlgebraInterfaceMulticall | impl | inactive | no |
+| optimism | `0xf74b821beca5301308d94c1eaa4be934223029e5` | MasterChefV3KeeperV2 | impl | inactive | no |
+| optimism | `0xfa8db5b44309b077bb14f4362cc653e943a0cd6d` | MasterChefV3 | impl | inactive | no |
 
-## Source unavailable (108)
+## Source unavailable (3)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x195fbc5b8fbd5ac739c1ba57d4ef6d5a704f34f7`
-- arbitrum `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7`
-- arbitrum `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c`
-- arbitrum `0x5ba546a342bbee029a7729a7e8e0adb844a53802`
-- arbitrum `0x6510e68561f04c1d111e616750dac2a063ff5055`
-- arbitrum `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84`
-- arbitrum `0x8bf8204bcbc27bc49b96cb80588c1b87de16196d`
-- arbitrum `0xaedc38bd52b0380b2af4980948925734fd54fbf4`
-- arbitrum `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b`
-- arbitrum `0xcfb05ab06d338fd85bbf4486e69809d96a906b77`
-- arbitrum `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc`
-- arbitrum `0xe4efb979968ae4b85a166e5e083f7b166e70fe20`
-- arbitrum `0xf79a36f6f440392c63ad61252a64d5d3c43f860d`
-- base `0x1a4b306ba14d3fb8a49925675f8edb7ef607c422`
-- base `0x2d1b823962c401a7b229e1a9b38760d2f1715678`
-- base `0x6f887c0bee01fafaca39e46ca14cc1d48e28090f`
-- base `0xa466ebcfa58848feb6d8022081f1c21a884889bb`
-- base `0xabb67904a172b858ceb3f8ee52b27d87376f6c37`
-- base `0xc42c649cdb9d4aa2a142b4909923c3d2d32141c1`
-- base `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7`
-- base `0xca4eaa32e7081b0c4ba47e2bdf9b7163907fe56f`
-- base `0xcbcd63c5de434fe6a0851b4cea66e6711726e3c7`
-- base `0xcd554fde84ef08a84d086f2917f8682c0cf39630`
-- base `0xcfb05ab06d338fd85bbf4486e69809d96a906b77`
-- base `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc`
-- base `0xd592e2c815e0cf4b62169e09934faab28299708e`
-- base `0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d`
-- base `0xf5190e64db4cbf7ee5e72b55cc5b2297e20264c2`
-- blast `0x126045d03160ee1edd9b3dfc0b3e7facb3086903`
-- blast `0x3d237ac6d2f425d2e890cc99198818cc1fa48870`
-- blast `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7`
-- blast `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c`
-- blast `0x5ba546a342bbee029a7729a7e8e0adb844a53802`
-- blast `0x6510e68561f04c1d111e616750dac2a063ff5055`
-- blast `0x65a49813ec8f0049955171a69c463cfdff7a9589`
-- blast `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30`
-- blast `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84`
-- blast `0xa0b61b17d868bf614b8b74f982d4c18360277ae4`
-- blast `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291`
-- blast `0xaedc38bd52b0380b2af4980948925734fd54fbf4`
-- blast `0xb9010964301326160173da694c0697a2fce82f39`
-- blast `0xbe7cff2963b38ef8452549c7a1901ac736f6fb3d`
-- blast `0xc4dfd83800942d4e3cda9b20d4167eac05cd9874`
-- blast `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7`
-- blast `0xcfc8bfd74422472277fb5bc4ec8851d98ecb2976`
-- blast `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc`
-- blast `0xd53e4377e27e927fba3b99306b0be2c2b1e7194b`
-- blast `0xef9ed1a8f6197d9cbbc3c41381bdddbaa87576ea`
-- blast `0xf5190e64db4cbf7ee5e72b55cc5b2297e20264c2`
-- blast `0xf74b821beca5301308d94c1eaa4be934223029e5`
-- chain-130 `0x2417036313b66eb0495f573f11142efdaead7f9b`
-- chain-130 `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84`
-- chain-130 `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291`
-- chain-130 `0xa466ebcfa58848feb6d8022081f1c21a884889bb`
-- chain-130 `0xaedc38bd52b0380b2af4980948925734fd54fbf4`
-- chain-130 `0xe4efb979968ae4b85a166e5e083f7b166e70fe20`
-- ethereum `0x6510e68561f04c1d111e616750dac2a063ff5055`
-- ethereum `0xcfb05ab06d338fd85bbf4486e69809d96a906b77`
-- ethereum `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc`
-- linea `0x0f6fc9e2e38c5c672f21ed6a2410abe95ccf0105`
-- linea `0x38cef896b6ac4c6af80c7e72841dc6f7989216cf`
-- linea `0x40908aeeae8bbfe86abf1639d86d5fab13b59f6d`
-- linea `0x46b22cd275967ddf055a567e7f36ec89ee3f1139`
-- linea `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30`
-- linea `0x776c05325329c1de3242f55fc86ed591a7017f93`
-- linea `0x79b3a60ccb3938042448c5576a23b8c325177cbb`
-- linea `0x7b6602ceab4672561ba4b2eef8eca4d302f6ca3c`
-- linea `0x9790713770039cefcf4faaf076e2846c9b7a4630`
-- linea `0xbb87917ccc567ebe43561306ebd69bb37a119013`
-- linea `0xbeb8ee794b685cff736734cd0368f069149c8a25`
-- linea `0xc6255ec7cdb11c890d02ebfe77825976457b2470`
-- linea `0xc8613899117cc6ea464fdc717a9e2b7ccd23d139`
-- mode `0x3d237ac6d2f425d2e890cc99198818cc1fa48870`
-- mode `0x43ffd81f19e3fa4b774288eb9f7680619391f435`
-- mode `0x4f205d69834f9b101b9289f7affac9b77b3ff9b7`
-- mode `0x507940c2469e6e3b33032f1d4ff8d123bdde2f5c`
-- mode `0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30`
-- mode `0x8817d540325f3680c59cf4ac6225f3e1173a4a99`
-- mode `0x88651e15a6f1ecff6bbc6390c16f6572bc285e84`
-- mode `0xaedc38bd52b0380b2af4980948925734fd54fbf4`
-- mode `0xc2bc7a73613b9bd5f373fe10b55c59a69f4d617b`
-- mode `0xc6f3966e5d08ced98ac30f8b65beab5882be54c7`
 - mode `0xddf7afe630c74bb82677b9afbc181e62410df8f0`
 - mode `0xdfd26cd5345323bbd1a98549546f05aa64953524`
-- mode `0xe4efb979968ae4b85a166e5e083f7b166e70fe20`
 - mode `0xfdf91d8289e30bbf9a34fb3e0246fd98d1914c2f`
-- optimism `0x1a4b306ba14d3fb8a49925675f8edb7ef607c422`
-- optimism `0x2243eef144c3914642eee7694c5a0a2c9126a893`
-- optimism `0x2d1b823962c401a7b229e1a9b38760d2f1715678`
-- optimism `0x3d237ac6d2f425d2e890cc99198818cc1fa48870`
-- optimism `0x5ba546a342bbee029a7729a7e8e0adb844a53802`
-- optimism `0x6510e68561f04c1d111e616750dac2a063ff5055`
-- optimism `0x6e4350509ed78ab82393136ebc4cf5441e1ad9ae`
-- optimism `0x7527463e29bf23efe425aff996425c3a75ab70a6`
-- optimism `0x7b4fdc4ed00cfffcae61f6411b864bafa00d5377`
-- optimism `0x823b825931ebeb17c441298ec974a1d8089ab4db`
-- optimism `0x8e953362ca29a40c4a3919566fe6eda0fdb41ddb`
-- optimism `0xa0e595e31e78659c1c64825a5cbb7f6b93d10291`
-- optimism `0xa466ebcfa58848feb6d8022081f1c21a884889bb`
-- optimism `0xaedc38bd52b0380b2af4980948925734fd54fbf4`
-- optimism `0xbd9aa882f5a9423b515721d84e9ead5ac40ae3de`
-- optimism `0xd1575b2e0c82fba9eddc3de9c9aaf923afa670cc`
-- optimism `0xd592e2c815e0cf4b62169e09934faab28299708e`
-- optimism `0xe8ff69d16185aed8859920e04121161b3ee57e63`
-- optimism `0xef9ed1a8f6197d9cbbc3c41381bdddbaa87576ea`
-- optimism `0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d`
-- optimism `0xf74b821beca5301308d94c1eaa4be934223029e5`
-- optimism `0xfa8db5b44309b077bb14f4362cc653e943a0cd6d`

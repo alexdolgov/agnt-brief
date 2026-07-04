@@ -1,0 +1,18 @@
+{
+  "component": "UpgradeableBeacon-7",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd1025891129f02f0e66d5126fc73e52aecb918c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

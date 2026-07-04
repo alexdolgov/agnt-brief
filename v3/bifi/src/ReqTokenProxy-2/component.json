@@ -1,7 +1,7 @@
 {
   "component": "ReqTokenProxy-2",
   "main_contract": "ReqTokenProxy",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0xe893233515b7d02dd4e3d888162d4c87dc837943",
+      "address": "0xc4d1e935f02a44d44985e6b1c0ee1ee616fc146a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

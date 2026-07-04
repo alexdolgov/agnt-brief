@@ -1,0 +1,18 @@
+{
+  "component": "MetavaultsRegistry-6",
+  "main_contract": "MetavaultsRegistry",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x36e22ec7b1f82f9efb05e346bfae45d38a9d9bba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

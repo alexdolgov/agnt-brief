@@ -1,0 +1,18 @@
+{
+  "component": "CWrappedNativeDelegate-3",
+  "main_contract": "CWrappedNativeDelegate",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1cc6cf8455f7783980b1ee06ecd4ed9acd94e1c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

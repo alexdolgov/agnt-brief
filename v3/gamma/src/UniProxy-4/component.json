@@ -1,0 +1,26 @@
+{
+  "component": "UniProxy-4",
+  "main_contract": "UniProxy",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x3f474e5a15f42481ac18681a84d99691b828d5d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xef4f95d8c252d64308c04f711fb31892cc4c9965",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

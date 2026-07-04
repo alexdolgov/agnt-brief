@@ -1,0 +1,18 @@
+{
+  "component": "DODOFeeRouteProxy-4",
+  "main_contract": "DODOFeeRouteProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x70b9c57e1ff24761c1c3ced57ddae9a3f3570698",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

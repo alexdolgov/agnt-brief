@@ -1,0 +1,42 @@
+{
+  "component": "PancakeV3Connector-4",
+  "main_contract": "PancakeV3Connector",
+  "source_file_count": 25,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf699938513710126709380706eeee40a1d77a55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe653b9f946320232e3aae53d5466fd08362cfbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe9ef6d9580a4f93154c980d8f9d57882c49a7ab1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc50d61f144783e88aff1ffe0e300d43d1b456bd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

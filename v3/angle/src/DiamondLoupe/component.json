@@ -1,15 +1,31 @@
 {
   "component": "DiamondLoupe",
   "main_contract": "DiamondLoupe",
-  "source_file_count": 14,
-  "deployment_count": 1,
+  "source_file_count": 12,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x65ddeedf8e68f26d787b678e28af13fde0249967",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc06481fc1d0196c138770fd2148dcb306cb24e20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd31d6e964f96b38b8e324212fc423b6b4e52e20b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xdd6a0a00fe3353e813f3b3864694d55d2a7ce11c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

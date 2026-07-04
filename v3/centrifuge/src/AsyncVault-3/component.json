@@ -1,0 +1,26 @@
+{
+  "component": "AsyncVault-3",
+  "main_contract": "AsyncVault",
+  "source_file_count": 38,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x381f4f3b43c30b78c1f7777553236e57bb8ae9ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2da40f061536c2f3a8f95f23a5f4c133d07d393a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

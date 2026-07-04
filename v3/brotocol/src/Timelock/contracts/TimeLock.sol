@@ -101,13 +101,17 @@ contract TimeLock is
     _;
   }
 
-  constructor(address _owner, uint48 _releaseDelay, address _restoreAddress) {
+  constructor(
+    MultisigWallet _owner,
+    uint48 _releaseDelay,
+    address _restoreAddress
+  ) {
+    _transferOwnership(address(_owner));
     _grantRole(DEFAULT_ADMIN_ROLE, address(_owner));
     _grantRole(EMERGENCY_ADMIN_ROLE, address(_owner));
 
     releaseDelay = _releaseDelay;
     restoreAddress = _restoreAddress;
-    _transferOwnership(_owner);
   }
 
   // governance functions

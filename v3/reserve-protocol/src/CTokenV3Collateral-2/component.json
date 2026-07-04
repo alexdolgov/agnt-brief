@@ -1,0 +1,26 @@
+{
+  "component": "CTokenV3Collateral-2",
+  "main_contract": "CTokenV3Collateral",
+  "source_file_count": 60,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3d08ef64830137fbd426cbe3153a404104e4b103",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf5366f67ff66a3cefcb18809a762d5b5931febf8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

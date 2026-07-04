@@ -3,21 +3,16 @@ pragma solidity ^0.8.0;
 
 import {
     INftFarmConnector,
-    Farm,
     NftPosition
 } from "contracts/interfaces/INftFarmConnector.sol";
 import { ICLGauge } from "contracts/interfaces/external/aerodrome/ICLGauge.sol";
 import { IERC721 } from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import { IERC721Enumerable } from
-    "@openzeppelin/contracts/interfaces/IERC721Enumerable.sol";
-import { INonfungiblePositionManager } from
-    "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
 
 contract SlipstreamGaugeConnector is INftFarmConnector {
     function depositExistingNft(
         NftPosition calldata position,
         bytes calldata // extraData
-    ) external payable {
+    ) external {
         IERC721(address(position.nft)).approve(
             position.farm.stakingContract, position.tokenId
         );
@@ -27,7 +22,7 @@ contract SlipstreamGaugeConnector is INftFarmConnector {
     function withdrawNft(
         NftPosition calldata position,
         bytes calldata // extraData
-    ) external payable {
+    ) external {
         ICLGauge(position.farm.stakingContract).withdraw(position.tokenId);
     }
 
@@ -37,7 +32,7 @@ contract SlipstreamGaugeConnector is INftFarmConnector {
         uint128, // maxAmount0,
         uint128, // maxAmount1,
         bytes calldata // extraData
-    ) external payable {
+    ) external {
         ICLGauge(position.farm.stakingContract).getReward(position.tokenId);
     }
 

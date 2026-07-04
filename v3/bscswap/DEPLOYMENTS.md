@@ -1,6 +1,6 @@
 # bscswap — deployments
 
-109 verified deployment(s) across 30 component(s).
+110 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | bsc | `0x354d80e7aa08878fe97e019f3dac87cb86f9ed39` | BurnPool | impl | inactive | no |
 | bsc | `0x357d922c71a2db0ce4a7af07d3fb6c97a8db2bc4` | ProxyRegistry | impl | inactive | no |
 | bsc | `0x3973a1cf4507d44356ff332d035b7721721e65f0` | DegenPool | impl | inactive | no |
+| bsc | `0x39c56bda66dc8c2e17feb350dc504e12b98abde2` | Vyper_contract-2 | impl | inactive | no |
 | bsc | `0x3bee8422f2e6f99c43351ebe53b0b7a6c3079255` | Earth | impl | inactive | no |
 | bsc | `0x3e5619b262d1492c03c6388004493654e17a329c` | IDO | impl | inactive | no |
 | bsc | `0x3e9e1eaac6d9e745ef1ad4e4d032b56086e54393` | BurnPool | impl | inactive | no |
@@ -113,8 +114,3 @@
 | bsc | `0xf5746b8278fea8f0964679fcd08c6f1bab78bd49` | LaunchField | impl | inactive | no |
 | bsc | `0xf7441726283bb51be9599d3011489adeaa2b61c7` | IDO | impl | inactive | no |
 | bsc | `0xff795d617a1d2aadaab7745d9626402680fa63a5` | MoonRabit | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x39c56bda66dc8c2e17feb350dc504e12b98abde2`

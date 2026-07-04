@@ -6,21 +6,31 @@ import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 contract ReqHelpers {
     // 0x00: ethereum
     // 0x01: arbitrum
+    // 0x02: bnb smart chain
+    // 0x03: polygon
+    // 0x04: optimism
+    // 0x05: avalanche
+    // 0x06: base
+    // 0x07: linea
+    // 0x08: zksync
+    // 0x09: scroll
     // 0x0a: mode
+    // 0x0b: manta
+    // 0x0c: zklink
     // 0x10: merlin
     // 0x11: b2
     // 0x12: bitlayer
     // 0xf0: sepolia
     // 0xf1: merlin-testnet
     // 0xf2: b2-testnet
-    uint8 constant CHAIN = 0x01;
+    uint8 constant CHAIN = 0x07;
 
     // This value should be different for different bridge deployments
-    string constant BRIDGE_CHANNEL = "B2 Network EVM Bridge";
+    string constant BRIDGE_CHANNEL = "SolvBTC Bridge";
 
-    uint256 constant PROPOSE_PERIOD = 2 hours;
-    uint256 constant EXPIRE_PERIOD = 24 hours;
-    uint256 constant EXPIRE_EXTRA_PERIOD = 36 hours;
+    uint256 constant PROPOSE_PERIOD = 48 hours;
+    uint256 constant EXPIRE_PERIOD = 72 hours;
+    uint256 constant EXPIRE_EXTRA_PERIOD = 96 hours;
 
     struct ReqHelpersStorage {
         mapping(uint8 => address) _tokens;

@@ -1,0 +1,58 @@
+{
+  "component": "HourglassERC20TBT-3",
+  "main_contract": "HourglassERC20TBT",
+  "source_file_count": 22,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x326b1129a3ec2ad5c4016d2bb4b912687890ae6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x4865bb6598e6b3ff44b0d94b70b5b3ca86647560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x62b9fda6d73d0aa12452707dd199ebc7830c92d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x8fc1e4ecdb25bf258cadb37f2303b11f33b5fef3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x979ecd3cf8650ce306b7658652617bb93d3d01ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xbfe0e27c67e6453e5529c5ee8d8762c5d82470c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

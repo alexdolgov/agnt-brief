@@ -1,0 +1,18 @@
+{
+  "component": "SOLACE-2",
+  "main_contract": "SOLACE",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x501ace9c35e60f03a2af4d484f49f9b1efde9f40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

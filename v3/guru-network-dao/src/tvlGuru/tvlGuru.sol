@@ -1,8 +1,4 @@
 /**
- *Submitted for verification at Arbiscan.io on 2023-03-24
-*/
-
-/**
  *Submitted for verification at BscScan.com on 2023-01-19
 */
 

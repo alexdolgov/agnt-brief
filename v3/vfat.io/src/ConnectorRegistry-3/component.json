@@ -1,71 +1,81 @@
 {
   "component": "ConnectorRegistry-3",
   "main_contract": "ConnectorRegistry",
-  "source_file_count": 30,
-  "deployment_count": 8,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 31,
+  "deployment_count": 9,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf"
+  ],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x20070181c6d6ad127bf1bcba08f5f679d8f3157b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4a695de5c6d2e12a76a4ee6ab7b7ce704a73058c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x3615b82bf3ae77479ca6455910627c67f0edd51a",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5a1b745155b556216b35b615cd7e2ab01fe7889b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x70b7af8c55f1770eff4b1b9188014c4192d6126a",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x764f216dd1628d50b3b22ea70c315b885d1d0a51",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x9d70b9e5ac2862c405d64a0193b4a4757aab7f95",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x768caf810ea58f32054da66ba951c14ca998d19f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb347cd0a0c5b61db97e40f2105f6701250cdfc18",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x99460bacb828041128b18c0913f0366fc01ef5e7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xc7ba8fcc3154a4a1fe13bd038369bb650026a646",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xae94ea057c4059dca8bfc04fa1c0e801b7fdb97a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xd9fa471faa5b1e3b52728154f1ef58df02686693",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd14395d3ba320f2bac1b3d9c8924fea39c4d2661",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xda84141c1d30b1c471882a2c32a6b5cc53ffe663",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xda56dbed5f95ff1c3a2bebb81323d13c5ebd67fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe4cdcb723abbd3bf6031d5c3d0500f768a9af07c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

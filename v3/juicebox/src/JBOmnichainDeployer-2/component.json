@@ -1,0 +1,26 @@
+{
+  "component": "JBOmnichainDeployer-2",
+  "main_contract": "JBOmnichainDeployer",
+  "source_file_count": 93,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f5ded85c40b50d223269c1f922a056e72101590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

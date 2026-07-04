@@ -1,6 +1,6 @@
 # everrise — deployments
 
-364 verified deployment(s) across 98 component(s).
+383 verified deployment(s) across 110 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -41,6 +41,7 @@
 | avalanche | `0x1fcfdee3ab694032255cd5ffe24d66b6c85501ad` | TokenVesting | impl | live | no |
 | avalanche | `0x217945d4cb3386420252da73743f1730f38266e9` | BoostedMasterChefJoe | impl | live | no |
 | avalanche | `0x2274491950b2d6d79b7e69b683b482282ba14885` | RewardDistributor | impl | live | no |
+| avalanche | `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e` | nftEverRise | impl | live | no |
 | avalanche | `0x23eb4187580524d25ff93a3571b1969b8018f628` | TokenVesting | impl | live | no |
 | avalanche | `0x25dd4a2900ee3b16f8381349a34813d41d29d7cc` | TokenVesting | impl | live | no |
 | avalanche | `0x267a4576293d55b53c769606e886e1f343149df5` | JWrappedNativeDelegate | impl | inactive | no |
@@ -206,6 +207,7 @@
 | avalanche | `0xd7c24697963cb02d6e63130812970cbdd08c3ed5` | JCollateralCapErc20Delegate | impl | inactive | no |
 | avalanche | `0xd915fdb10530ef2a8337b4b0bb33f1b0bc015531` | JWrappedNativeDelegate | impl | inactive | no |
 | avalanche | `0xdb5b4cc0276389a943dba9eb07a97c10e8a475d3` | JoeMakerV3 | impl | live | no |
+| avalanche | `0xdba7b24257fc6e397cb7368b4bc922e944072f1b` | veRise | impl | live | no |
 | avalanche | `0xdc0730f8fc5f0efa1c304716a50d0a96ce4a7c62` | BoringHelperV1 | impl | live | no |
 | avalanche | `0xdc0d421bef747406bb5c947dd75e7fda5ea187a7` | TokenVesting | impl | live | no |
 | avalanche | `0xdc13687554205e5b89ac783db14bb5bba4a1edac` | JToken-2 | proxy | live | no |
@@ -241,15 +243,18 @@
 | avalanche | `0xfc2f38445be02504df62753216fd2a4566747bbb` | TokenVesting | impl | live | no |
 | avalanche | `0xfdf50fea3527fad31fa840b748fd3694ae8a47cc` | JoeLens | impl | inactive | no |
 | bsc | `0x0164845b9ebeefb0888728013f0b727a1671e011` | Spooky | impl | inactive | no |
+| bsc | `0x025c9f1146d4d94f8f369b9d98104300a3c8ca23` | MTGY-2 | impl | live | no |
 | bsc | `0x02ee06c137a106255299589b3184f5ba438b689f` | PancakeRouter | impl | inactive | no |
 | bsc | `0x10ed43c718714eb63d5aa57b78b54704e256024e` | PancakeRouter-2 | impl | inactive | no |
-| bsc | `0x199f788ddb566b7ebb59bf35b36914f2acdb33de` | DeFido | impl | live | no |
+| bsc | `0x199f788ddb566b7ebb59bf35b36914f2acdb33de` | DeFido-2 | impl | live | no |
+| bsc | `0x1b9a8c4f2df5dc7b8744b1a170d8d727360c67ee` | Momento-2 | impl | live | no |
 | bsc | `0x1e07f7ad3e722f434604e7617d6dae0a9a48a878` | MTGYFaaS | impl | live | no |
 | bsc | `0x1f5ecb6efb4e1fd82ae6ff6f200e262329ff1996` | PancakeRouter | impl | inactive | no |
 | bsc | `0x21e9d965404befefb80ea7bae582ab3c4c8d75e0` | MyContractOwn | impl | live | no |
+| bsc | `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e` | nftEverRise | impl | live | no |
 | bsc | `0x2ad2c5314028897aecfcf37fd923c079beeb2c56` | PancakeRouter | impl | inactive | no |
 | bsc | `0x3202b26f60ab51731f7e9a88262e12cfe6ec8607` | FactoryViewer | impl | inactive | no |
-| bsc | `0x3dbfc6387560a7216174a367573290db14556321` | Landarno | impl | live | no |
+| bsc | `0x3dbfc6387560a7216174a367573290db14556321` | Landarno-2 | impl | live | no |
 | bsc | `0x3f4cdb2c31842e37a268fdd4fafb81075816a647` | Spooky | impl | inactive | no |
 | bsc | `0x3ffdb968b20c95e3f7f33182482903ed37f16e54` | ERC721Staking | impl | live | no |
 | bsc | `0x467aa670862dc9179af2fb656faa509887983123` | FactoryViewer | impl | inactive | no |
@@ -258,11 +263,12 @@
 | bsc | `0x54ae42ae0b0a31cdf99a61212e67a0b829809c36` | FactoryViewer | impl | inactive | no |
 | bsc | `0x55e1d9d077cbee2f39f9e1a45e9f73235891bd55` | MTGYOKLGSwap | impl | live | no |
 | bsc | `0x5990a27bccaf2ea39d3e8ff1fd29c60bf02931cd` | KishuForever | impl | live | no |
-| bsc | `0x5b88b0cfaf3f97fb1a66b16681f6e502ec03627e` | MTGYAtomicSwap | impl | live | no |
+| bsc | `0x5b88b0cfaf3f97fb1a66b16681f6e502ec03627e` | MTGYAtomicSwap-2 | impl | live | no |
 | bsc | `0x5c2723df8ca0b6605501bb4c4e604a532bb9ebe4` | Spooky-2 | impl | inactive | no |
 | bsc | `0x612e353a8595f0481e6ddf507935e897c38ddc93` | Spooky-3 | impl | live | no |
 | bsc | `0x68e85862a4c48cc5697c31e6609d13f86f90314c` | SpookyShiba | impl | inactive | no |
 | bsc | `0x6c19e81a125c792bfbc83b158f1e0447c976ce70` | Spooky | impl | inactive | no |
+| bsc | `0x746baddcec5b90b182d1389c9aa454f18551ae2b` | MUSO-2 | impl | live | no |
 | bsc | `0x75a6bfe6faf7afd61cd3c9ea16fbcc755de037be` | MyContractOwn | impl | live | no |
 | bsc | `0x7818bd4b7bae6a4be0a2ebb04d166a7f69eed948` | Spooky | impl | live | no |
 | bsc | `0x7ea29936a330844f307d4e0af9c1b9182424ce21` | SpookyShiba_V2 | impl | inactive | no |
@@ -270,6 +276,9 @@
 | bsc | `0x84f4f7cdb4574c9556a494dab18ffc1d1d22316c` | KINGSHIBA | impl | live | no |
 | bsc | `0x87184884fc32594d4e347874cbd8294d61c18df3` | CellToken | impl | live | no |
 | bsc | `0x877fe7f4e22e21be397cd9364fafd4af4e15edb6` | PancakeFactory | impl | inactive | no |
+| bsc | `0x89dd305ffbd8e684c77758288c48cdf4f4abe0f4` | EverOwn-2 | impl | live | no |
+| bsc | `0x99fe7b37639ae33d0f15f61f4288a2fc9cff7bc1` | EverRise | impl | live | no |
+| bsc | `0x9c171ab0d912154bff2eb0e3967d28e6d30e0b01` | MTGYAirdropper-2 | impl | live | no |
 | bsc | `0x9c2b1b3780a8b36b695f0b2781668664ac1bf25a` | SpookyShiba_V2-2 | impl | live | no |
 | bsc | `0xa03c494ed39aa54f9b1d85647a54670f54fa91c8` | PabloEscoMars | impl | live | no |
 | bsc | `0xa4013e1e4f99f5cd22584424552c1d28342e77b1` | EFT | impl | live | no |
@@ -282,10 +291,12 @@
 | bsc | `0xb322d779fc25f99deafa8897823fe33c797402b5` | FactoryViewer | impl | inactive | no |
 | bsc | `0xb3a7f44a3296628c8822c4786a7ccd60f0f8df80` | DexUtils | impl | inactive | no |
 | bsc | `0xb72962568345253f71a18318d67e13a282b187e6` | EFT | impl | live | no |
+| bsc | `0xbd3f48b42407aa5ca75b9e7cf0765b227aca1024` | MTGYRaffle-2 | impl | live | no |
 | bsc | `0xbd573ddc3ab93d7984012b897821f6c09f4d24e3` | DiamondQ | impl | live | no |
-| bsc | `0xc08e10b7eb0736368a0b92ee7a140ec8c63a2dd1` | MUSO-2 | impl | live | no |
+| bsc | `0xc08e10b7eb0736368a0b92ee7a140ec8c63a2dd1` | MUSO-3 | impl | live | no |
 | bsc | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise-3 | impl | live | no |
 | bsc | `0xc3ae8df7bbab3e676d70ef7eb258eaf03e02fa20` | SimpleToken | impl | inactive | no |
+| bsc | `0xc3f2a5d962d86a6305c5f9bd0badf3af6a017272` | MTGYAirdropper-3 | impl | live | no |
 | bsc | `0xc46fe585f349b782ae319046683868b6227bca67` | LiquidityGeneratorToken | impl | live | no |
 | bsc | `0xc4ed752d658989fe86db8ddad3f6f19271552d23` | Uptrend | impl | live | no |
 | bsc | `0xca143ce32fe78f1f7019d7d551a6402fc5350c73` | PancakePair | impl | live | no |
@@ -307,16 +318,20 @@
 | ethereum | `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e` | nftEverRise | impl | live | no |
 | ethereum | `0x24bc6f1f7d954345c989be71934d2396c0d668c4` | OKLGRewards | impl | live | no |
 | ethereum | `0x266bffc052a5f02d4797a3dd99c3455ac9d49eb6` | MTGYTrustedTimestamping | impl | unknown | no |
+| ethereum | `0x306996a2f45f3ca3472caba245d772d566d4aab7` | MTGYFaaS-2 | impl | live | no |
 | ethereum | `0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f` | UniswapV2Pair | impl | live | no |
 | ethereum | `0x6d02744ef4418cb0d72f54c1ee53140430b9dbed` | KetherNFTLoaner | impl | live | no |
 | ethereum | `0x78ab99dae7302ea91e36962f4b23418a89d3a69d` | EverOwn | impl | live | no |
 | ethereum | `0x87db3450ae10ae95b4e683c2d4a2270a7cfc8a97` | MTGYAirdropper | impl | live | no |
 | ethereum | `0x8a31f723fbfa371308e5f5dd637246e0f6c573a5` | MTGYSpend | impl | live | no |
 | ethereum | `0x92446b00281dc85185053fe4d7e5062f65fe820e` | PigToken | impl | live | no |
-| ethereum | `0x99fe7b37639ae33d0f15f61f4288a2fc9cff7bc1` | EverRise | impl | live | no |
+| ethereum | `0x99fe7b37639ae33d0f15f61f4288a2fc9cff7bc1` | EverRise-2 | impl | live | no |
 | ethereum | `0x9e26185f07d890266e25af6da810dd31cef93902` | MTGYAirdropper | impl | unknown | no |
-| ethereum | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise-2 | proxy | live | no |
+| ethereum | `0xa6c81ea7a97432f330f878650a5d5d376795d919` | MTGYAtomicSwap | impl | live | no |
+| ethereum | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise | proxy | live | no |
 | ethereum | `0xc8dd32752abe732bc586dd42740895b6736619e2` | MTGYPasswordManager | impl | unknown | no |
+| ethereum | `0xd5641ab6c45b30b401aeafbef72052e5eba5afb2` | Landarno | impl | live | no |
+| ethereum | `0xf32122561d51e891b823dec2b42f644884c1cd91` | DeFido | impl | live | no |
 | polygon | `0x0000000000000000000000000000000000001010` | MRC20 | impl | live | no |
 | polygon | `0x02a2d80ce5c021a40aec9062a6273bbc33537e1c` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | WMATIC | impl | inactive | no |
@@ -325,6 +340,7 @@
 | polygon | `0x17d0a95553625cff6a7320c69ad0060969331e39` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x1bd1fa073a843ca84463cdc9db91c66ea39a7fda` | VamToken | impl | inactive | no |
 | polygon | `0x1c165a20a67910137bdd9deed5fa6e2a1abe6eec` | VamToken | impl | inactive | no |
+| polygon | `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e` | nftEverRise | impl | live | no |
 | polygon | `0x29d051419dc36272af7a20cda27361552d17d503` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea` | QuickConverter | impl | live | no |
 | polygon | `0x3b8fed20005406853ff79083860ac075289a3417` | StakingRewardsFactory | impl | live | no |
@@ -340,11 +356,13 @@
 | polygon | `0x6a1b5649f8ed938e8ce2d405eb6ddbf783551548` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x729129b140105f763999cb2fc1bcaf9db132c4ae` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x7732d1a405f64ccd92adfbb946caa662d19fdcee` | VamToken | impl | inactive | no |
+| polygon | `0x7dd45e9be23219fd8ccfc584b652775aba62fdef` | EverOwn-3 | impl | live | no |
 | polygon | `0x80f13018eb0cbd2579924eb8039c5d36e467eb49` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x831753dd7087cac61ab5644b308642cc1c33dc13` | Quick | impl | inactive | no |
 | polygon | `0x8a121aecbffa81a9d4b1eea6290f20c4487d990d` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x8e396f5726a93c5c994d2cf12178b15b70f5e758` | QuickConverter | impl | live | no |
 | polygon | `0x91f16b7fc489745753f2ca82f060c21560c3908e` | StakingRewardsFactory | impl | live | no |
+| polygon | `0x99fe7b37639ae33d0f15f61f4288a2fc9cff7bc1` | EverRise | impl | live | no |
 | polygon | `0x9d451d51b37adb943b52d1fedcb1a5e2faf11e80` | StakingRewardsFactory | impl | live | no |
 | polygon | `0x9f170081d39dd2aaa86ae04ffffe3550a9aab86c` | StakingRewardsFactory | impl | live | no |
 | polygon | `0xa239accd24a47111a46315882acde0d18e2705b4` | StakingRewardsFactory | impl | live | no |
@@ -355,6 +373,7 @@
 | polygon | `0xbd20fadbdd65a73a15452ce0adf7d4943e102b69` | StakingRewardsFactory | impl | live | no |
 | polygon | `0xbd4b6c0de852b54ea5513e5437656e87ef1e7e30` | StakingRewardsFactory | impl | live | no |
 | polygon | `0xbee2bd586ebe52ca486786a51beab794d95adca5` | VamToken | impl | inactive | no |
+| polygon | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise | impl | live | no |
 | polygon | `0xce2944738ca9ae803e692124f6fa78c1cbe3a354` | StakingRewardsFactory | impl | live | no |
 | polygon | `0xd8e8b9d9351f05e23672714a2f8e518f216d20e7` | VamToken | impl | inactive | no |
 | polygon | `0xe592edaa9f81cff9a36f6a30d18cdef158e00d8f` | StakingRewardsFactory | impl | live | no |
@@ -369,29 +388,10 @@
 | polygon | `0xf3e85144b21298c00770f2569dedb43e70953d22` | DragonLair | impl | inactive | no |
 | polygon | `0xf48ac6fff09430ab00bca83dc70e992ee73acd02` | StakingRewardsFactory | impl | live | no |
 
-## Source unavailable (23)
+## Source unavailable (4)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- avalanche `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e`
-- avalanche `0xdba7b24257fc6e397cb7368b4bc922e944072f1b`
-- bsc `0x025c9f1146d4d94f8f369b9d98104300a3c8ca23`
-- bsc `0x1b9a8c4f2df5dc7b8744b1a170d8d727360c67ee`
-- bsc `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e`
-- bsc `0x746baddcec5b90b182d1389c9aa454f18551ae2b`
-- bsc `0x89dd305ffbd8e684c77758288c48cdf4f4abe0f4`
-- bsc `0x99fe7b37639ae33d0f15f61f4288a2fc9cff7bc1`
-- bsc `0x9c171ab0d912154bff2eb0e3967d28e6d30e0b01`
-- bsc `0xbd3f48b42407aa5ca75b9e7cf0765b227aca1024`
-- bsc `0xc3f2a5d962d86a6305c5f9bd0badf3af6a017272`
 - ethereum `0x207b1ab683ee9e29d76fa2690be0c4e1391d3c39`
-- ethereum `0x306996a2f45f3ca3472caba245d772d566d4aab7`
 - ethereum `0x5cfc47359381526615f7eb91d8460f4eb73534e1`
 - ethereum `0x7c20dbf097bda344b6fb8fcb5e7a96e2e8c0c51d`
-- ethereum `0xa6c81ea7a97432f330f878650a5d5d376795d919`
-- ethereum `0xd5641ab6c45b30b401aeafbef72052e5eba5afb2`
-- ethereum `0xf32122561d51e891b823dec2b42f644884c1cd91`
 - ethereum `0xf99693b010e35b38274835ce91cccbb1eb89b32a`
-- polygon `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e`
-- polygon `0x7dd45e9be23219fd8ccfc584b652775aba62fdef`
-- polygon `0x99fe7b37639ae33d0f15f61f4288a2fc9cff7bc1`
-- polygon `0xc17c30e98541188614df99239cabd40280810ca3`

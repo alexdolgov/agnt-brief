@@ -1,0 +1,50 @@
+{
+  "component": "StargateStaking-2",
+  "main_contract": "StargateStaking",
+  "source_file_count": 1,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x1343994e136b6b15cbb2eb4075e0e73b8c4ebce0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x4e422b0acb2bd7e3ac70b5c0e5eb806e86a94038",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xcc3633a02d2a9fa29e83cd205d37d186a12fea34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xde48600aa18ae707f5d57e0faafec7c118abaeb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xf1fcb4cbd57b67d683972a59b6a7b1e2e8bf27e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

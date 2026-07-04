@@ -1,0 +1,18 @@
+{
+  "component": "CircuitBreaker-4",
+  "main_contract": "CircuitBreaker",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2e43f825fba9018d6303e9cf978cad9ac54b04ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

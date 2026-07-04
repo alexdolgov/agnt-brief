@@ -1,0 +1,50 @@
+{
+  "component": "fixedVault-5",
+  "main_contract": "fixedVault",
+  "source_file_count": 1,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x636e7372e359421623318ac0dbc60496972656b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7f0e5732e418276d4d09dc6dca9d5f09c6bbf723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9a05b116b56304f5f4b3f1d5da4641bffffae6ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb1f28350539b06d5a35d016908eef0424bd13c4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb89d22f8e32e56335c3716ba6b2d9614917bad95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

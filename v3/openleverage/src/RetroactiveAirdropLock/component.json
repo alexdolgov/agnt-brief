@@ -1,15 +1,15 @@
 {
   "component": "RetroactiveAirdropLock",
   "main_contract": "RetroactiveAirdropLock",
-  "source_file_count": 7,
+  "source_file_count": 4,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x41690f3ac3befb5aee178413092092f040ad1c0c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe14e5ed1513744bf039d3fac30381e0c5d6e97e1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

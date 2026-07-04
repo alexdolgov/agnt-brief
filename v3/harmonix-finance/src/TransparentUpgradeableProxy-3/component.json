@@ -3,17 +3,15 @@
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 116,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20Kelp%20Delta.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x05427aa001303115b14634673dd3ff53e94db7c5",
       "is_proxy": true,
-      "implementation_address": "0xb114e0a7bddee39f6cff9a8eed6070fe6c99a928",
+      "implementation_address": "0x9efd0be06ff3c935efbc5ddeb4a9b9bde880253c",
       "liveness": "live"
     }
   ]

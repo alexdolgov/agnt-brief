@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity 0.8.17;
+pragma solidity 0.8.9;
 
-import "./Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 abstract contract Governor is Ownable {
     mapping(address => bool) public governors;

@@ -16,6 +16,9 @@ pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "@balancer-labs/v2-interfaces/contracts/solidity-utils/misc/IERC4626.sol";
+import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+
+import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol";
 
 import "./IBaseRelayerLibrary.sol";
 
@@ -25,6 +28,8 @@ import "./IBaseRelayerLibrary.sol";
  * @dev All functions must be payable so they can be called from a multicall involving ETH
  */
 abstract contract ERC4626Wrapping is IBaseRelayerLibrary {
+    using Address for address payable;
+
     function wrapERC4626(
         IERC4626 wrappedToken,
         address sender,
@@ -32,13 +37,25 @@ abstract contract ERC4626Wrapping is IBaseRelayerLibrary {
         uint256 amount,
         uint256 outputReference
     ) external payable {
+        if (_isChainedReference(amount)) {
+            amount = _getChainedReferenceValue(amount);
+        }
+
         IERC20 underlying = IERC20(wrappedToken.asset());
 
-        amount = _resolveAmountPullTokenAndApproveSpender(underlying, address(wrappedToken), amount, sender);
+        // The wrap caller is the implicit sender of tokens, so if the goal is for the tokens
+        // to be sourced from outside the relayer, we must first pull them here.
+        if (sender != address(this)) {
+            require(sender == msg.sender, "Incorrect sender");
+            _pullToken(sender, underlying, amount);
+        }
 
+        underlying.approve(address(wrappedToken), amount);
         uint256 result = wrappedToken.deposit(amount, recipient);
 
-        _setChainedReference(outputReference, result);
+        if (_isChainedReference(outputReference)) {
+            _setChainedReferenceValue(outputReference, result);
+        }
     }
 
     function unwrapERC4626(
@@ -48,10 +65,21 @@ abstract contract ERC4626Wrapping is IBaseRelayerLibrary {
         uint256 amount,
         uint256 outputReference
     ) external payable {
-        amount = _resolveAmountAndPullToken(wrappedToken, amount, sender);
+        if (_isChainedReference(amount)) {
+            amount = _getChainedReferenceValue(amount);
+        }
+
+        // The unwrap caller is the implicit sender of tokens, so if the goal is for the tokens
+        // to be sourced from outside the relayer, we must first pull them here.
+        if (sender != address(this)) {
+            require(sender == msg.sender, "Incorrect sender");
+            _pullToken(sender, wrappedToken, amount);
+        }
 
         uint256 result = wrappedToken.redeem(amount, recipient, address(this));
 
-        _setChainedReference(outputReference, result);
+        if (_isChainedReference(outputReference)) {
+            _setChainedReferenceValue(outputReference, result);
+        }
     }
 }

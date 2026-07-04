@@ -1,0 +1,18 @@
+{
+  "component": "Voter-6",
+  "main_contract": "Voter",
+  "source_file_count": 63,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9334f3ce4569e04437665daa254e0189d145af21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

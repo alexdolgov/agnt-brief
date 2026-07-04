@@ -1,0 +1,18 @@
+{
+  "component": "StratVLEV-16",
+  "main_contract": "StratVLEV",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa05d4f39ac22c5fe8b2bd3600c88f051433a1dec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

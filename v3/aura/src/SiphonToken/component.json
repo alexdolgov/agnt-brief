@@ -1,15 +1,39 @@
 {
   "component": "SiphonToken",
   "main_contract": "SiphonToken",
-  "source_file_count": 8,
-  "deployment_count": 1,
+  "source_file_count": 5,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x71061c238ea7736d3709e801d61e09423e4be4ad",
+      "address": "0xa348a39a98418dd78b242e2fd7b14e18ac080e75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb7a6ec509d42177c100273b4cd785816daf8e4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc9307d63b3709f537d2158f43199a69682ff0967",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfeda1cda61c7f066d19b774599a2de6e516129e8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

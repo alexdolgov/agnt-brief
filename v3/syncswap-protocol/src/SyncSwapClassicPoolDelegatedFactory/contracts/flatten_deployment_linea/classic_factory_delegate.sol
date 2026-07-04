@@ -1480,7 +1480,7 @@ error InsufficientLiquidityMinted();
 contract SyncSwapClassicPoolDelegated is ERC20Permit2, PoolFlashLoans {
     using Math for uint;
 
-    address private constant WETH = 0x5300000000000000000000000000000000000004; // Linea WETH
+    address private constant WETH = 0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f; // Linea WETH
     uint private constant MINIMUM_LIQUIDITY = 1000;
     uint private constant MAX_FEE = 1e5; /// @dev 100%.
 
@@ -1490,7 +1490,7 @@ contract SyncSwapClassicPoolDelegated is ERC20Permit2, PoolFlashLoans {
     uint16 public constant poolType = 1;
 
     address public constant vault = 0x7160570BB153Edd0Ea1775EC2b2Ac9b65F1aB61B; // Linea Vault
-    address public constant master = 0x4318a74425E5353a1194CF26138Baa87B607657C; // Linea V2 Pool Master
+    address public constant master = 0x16743bEd2b7D3a1a6b0a0c6528B66aB60C630cc0; // Linea V2 Pool Master
 
     address public immutable token0;
     address public immutable token1;
@@ -1583,7 +1583,7 @@ contract SyncSwapClassicPoolDelegated is ERC20Permit2, PoolFlashLoans {
             // out and outsize are 0 because we don't know the size yet.
             let result := delegatecall(
                 gas(),
-                0x29e0c59A242676Ae4F82D428C7e509FdDC1937E7,
+                0xF7df795697D80506A86a595Ce6FEA3a59fa9C475,
                 0,
                 calldatasize(),
                 0,

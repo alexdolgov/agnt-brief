@@ -66,6 +66,7 @@ abstract contract LPoolStorage {
      */
     uint public totalBorrows;
 
+    //useless
     uint internal totalCash;
 
     /**
@@ -98,6 +99,11 @@ abstract contract LPoolStorage {
 
     mapping(address => BorrowSnapshot) internal accountBorrows;
 
+
+    /**
+    * Block timestamp that interest was last accrued at
+    */
+    uint public accrualBlockTimestamp;
 
 
 
@@ -192,7 +198,7 @@ abstract contract LPoolInterface is LPoolStorage {
 
     function mint(uint mintAmount) external virtual;
 
-    function mintTo(address to) external payable virtual;
+    function mintTo(address to, uint amount) external payable virtual;
 
     function mintEth() external payable virtual;
 
@@ -228,8 +234,6 @@ abstract contract LPoolInterface is LPoolStorage {
 
     function accrueInterest() public virtual;
 
-    function sync() public virtual;
-
     /*** Admin Functions ***/
 
     function setController(address newController) external virtual;
@@ -240,7 +244,7 @@ abstract contract LPoolInterface is LPoolStorage {
 
     function setReserveFactor(uint newReserveFactorMantissa) external virtual;
 
-    function addReserves(uint addAmount) external virtual;
+    function addReserves(uint addAmount) external payable virtual;
 
     function reduceReserves(address payable to, uint reduceAmount) external virtual;
 

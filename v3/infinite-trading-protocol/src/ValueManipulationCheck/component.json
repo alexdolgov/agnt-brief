@@ -2,14 +2,38 @@
   "component": "ValueManipulationCheck",
   "main_contract": "ValueManipulationCheck",
   "source_file_count": 2,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfc8d50aadcc21e9042c1fcd346e8f90e00a64c85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbb30f5ff9124245ebe8e07cb679deb139c93db2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x42e8b6cdcd6bff2bc4e30e3faec8a0858e1c2336",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa39daafc1c004087495d75af9ded3f15288f61c4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

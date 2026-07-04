@@ -1,0 +1,18 @@
+{
+  "component": "NativeRouter-21",
+  "main_contract": "NativeRouter",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcba65c8e4f85c1cf7260000c8aaaa3e2018de457",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SwapAdapter-5",
+  "main_contract": "SwapAdapter",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3d39b3339063e70d03cd2d77822a0f7f61b7f5ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

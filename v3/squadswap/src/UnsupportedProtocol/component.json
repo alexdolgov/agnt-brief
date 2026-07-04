@@ -2,10 +2,18 @@
   "component": "UnsupportedProtocol",
   "main_contract": "UnsupportedProtocol",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x27f233059ee83406a67730fb7ca31af27ad8cfaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

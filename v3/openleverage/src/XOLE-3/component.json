@@ -1,0 +1,18 @@
+{
+  "component": "XOLE-3",
+  "main_contract": "XOLE",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x335ace4dc018d3454655baccf67d273b7ba60976",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -19,18 +19,12 @@ import "./relayer/BaseRelayerLibrary.sol";
 
 import "./relayer/AaveWrapping.sol";
 import "./relayer/ERC4626Wrapping.sol";
-import "./relayer/EulerWrapping.sol";
 import "./relayer/GaugeActions.sol";
-import "./relayer/GearboxWrapping.sol";
 import "./relayer/LidoWrapping.sol";
-import "./relayer/CompoundV2Wrapping.sol";
 import "./relayer/UnbuttonWrapping.sol";
 import "./relayer/ReaperWrapping.sol";
-import "./relayer/TetuWrapping.sol";
-import "./relayer/SiloWrapping.sol";
 import "./relayer/VaultActions.sol";
 import "./relayer/VaultPermit.sol";
-import "./relayer/YearnWrapping.sol";
 
 /**
  * @title Batch Relayer Library
@@ -41,26 +35,18 @@ contract BatchRelayerLibrary is
     AaveWrapping,
     BaseRelayerLibrary,
     ERC4626Wrapping,
-    EulerWrapping,
     GaugeActions,
-    GearboxWrapping,
     LidoWrapping,
     UnbuttonWrapping,
-    CompoundV2Wrapping,
     ReaperWrapping,
-    SiloWrapping,
-    TetuWrapping,
     VaultActions,
-    VaultPermit,
-    YearnWrapping
+    VaultPermit
 {
     constructor(
         IVault vault,
         IERC20 wstETH,
-        IBalancerMinter minter,
-        bool canCallUserCheckpoint,
-        string memory version
-    ) BaseRelayerLibrary(vault, version) LidoWrapping(wstETH) GaugeActions(minter, canCallUserCheckpoint) {
+        IBalancerMinter minter
+    ) BaseRelayerLibrary(vault) LidoWrapping(wstETH) GaugeActions(minter) {
         // solhint-disable-previous-line no-empty-blocks
     }
 }

@@ -1,0 +1,42 @@
+{
+  "component": "ProtectedMultiPath-2",
+  "main_contract": "ProtectedMultiPath",
+  "source_file_count": 13,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab8e3b12d71b248b6de1e688be6e1f80845e478a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x737e642eec6e5bd675022adc6d726eb19ff74383",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd12a55bbadac324f09674e58b500b275374cccec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9a61002219e354a6e02331a510f0651a6d31edf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

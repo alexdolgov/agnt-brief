@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { Clones } from "@openzeppelin/contracts/proxy/Clones.sol";
-import { SickleRegistry } from "contracts/SickleRegistry.sol";
-import { Sickle } from "contracts/Sickle.sol";
-import { Admin } from "contracts/base/Admin.sol";
+import "@openzeppelin/contracts/proxy/Clones.sol";
+
+import "./Sickle.sol";
+import "./base/Admin.sol";
 
 /// @title SickleFactory contract
 /// @author vfat.tools
@@ -64,9 +64,6 @@ contract SickleFactory is Admin {
         previousFactory = SickleFactory(previousFactory_);
     }
 
-    /// @notice Update the isActive flag.
-    /// @dev Effectively pauses and unpauses new Sickle deployments.
-    /// @custom:access Restricted to protocol admin.
     function setActive(bool active) external onlyAdmin {
         isActive = active;
     }

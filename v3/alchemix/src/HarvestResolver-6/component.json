@@ -1,0 +1,18 @@
+{
+  "component": "HarvestResolver-6",
+  "main_contract": "HarvestResolver",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0370ada82f7a9397ca26ea5c9f13b937513ef754",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

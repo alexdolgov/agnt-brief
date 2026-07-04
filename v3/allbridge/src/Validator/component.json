@@ -2,13 +2,21 @@
   "component": "Validator",
   "main_contract": "Validator",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x93746538d4519c809827205bd1c2c7a0e15bd74b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
       "address": "0x93746538d4519c809827205bd1c2c7a0e15bd74b",
       "is_proxy": false,
       "implementation_address": null,

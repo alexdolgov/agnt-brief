@@ -1,18 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity ^0.8.0;
 
-import { IUniswapV3Pool } from
-    "contracts/interfaces/external/uniswap/IUniswapV3Pool.sol";
-import { INonfungiblePositionManager } from
-    "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
-import { FixedPoint128 } from
-    "contracts/interfaces/external/uniswap/v3/libraries/FixedPoint128.sol";
-import { TickMath } from
-    "contracts/interfaces/external/uniswap/v3/libraries/TickMath.sol";
-import { LiquidityAmounts } from
-    "contracts/interfaces/external/uniswap/v3/libraries/LiquidityAmounts.sol";
-import { FullMath } from
-    "contracts/interfaces/external/uniswap/v3/libraries/FullMath.sol";
+import "contracts/interfaces/external/uniswap/IUniswapV3Pool.sol";
+import "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
+import "contracts/interfaces/external/uniswap/v3/libraries/FixedPoint128.sol";
+import "contracts/interfaces/external/uniswap/v3/libraries/TickMath.sol";
+import "contracts/interfaces/external/uniswap/v3/libraries/LiquidityAmounts.sol";
 
 /// @title Returns information about the token value held in a Uniswap V3 NFT
 contract PositionValue {
@@ -129,23 +122,19 @@ contract PositionValue {
             pool, feeParams.tickLower, feeParams.tickUpper
         );
 
-        unchecked {
-            amount0 = feeParams.tokensOwed0
-                + FullMath.mulDiv(
-                    poolFeeGrowthInside0LastX128
-                        - feeParams.positionFeeGrowthInside0LastX128,
-                    feeParams.liquidity,
-                    FixedPoint128.Q128
-                );
+        amount0 = FullMath.mulDiv(
+            poolFeeGrowthInside0LastX128
+                - feeParams.positionFeeGrowthInside0LastX128,
+            feeParams.liquidity,
+            FixedPoint128.Q128
+        ) + feeParams.tokensOwed0;
 
-            amount1 = feeParams.tokensOwed1
-                + FullMath.mulDiv(
-                    poolFeeGrowthInside1LastX128
-                        - feeParams.positionFeeGrowthInside1LastX128,
-                    feeParams.liquidity,
-                    FixedPoint128.Q128
-                );
-        }
+        amount1 = FullMath.mulDiv(
+            poolFeeGrowthInside1LastX128
+                - feeParams.positionFeeGrowthInside1LastX128,
+            feeParams.liquidity,
+            FixedPoint128.Q128
+        ) + feeParams.tokensOwed1;
     }
 
     function _get_fee_growth_outside_tick(

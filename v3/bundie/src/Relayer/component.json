@@ -2,10 +2,18 @@
   "component": "Relayer",
   "main_contract": "Relayer",
   "source_file_count": 32,
-  "deployment_count": 2,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd23f238baf436b2836ea6ce3c419cd7ee439f37b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -21,6 +29,22 @@
       "is_proxy": true,
       "implementation_address": "0x0d0a61b76a8b893aaa58405669d85b3ee6755018",
       "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8c03ef8d41ea5f2fdd7b1890c36ea69832926075",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0e256d69c288f7459f0309abbf1d950c5b441335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -7,25 +7,25 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x2d2b8121e9b5024021b30c6ab3ad9ca89b618cfa",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6e05d1f13e4ca13149cb4f9bec102c3f6a0e0895",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x44c69f0ef7a0d96b77437ec2e1bf9d74f5c5e7a2",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa148fba85b307e2350a3dc0ce1b7375af13ba3cd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x64336133656a9660b3cc9156c3217e99bee6ac90",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfb9821de6670836963abe4246c6db1b32c787748",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

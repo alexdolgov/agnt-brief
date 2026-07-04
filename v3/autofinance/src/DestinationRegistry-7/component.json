@@ -1,0 +1,18 @@
+{
+  "component": "DestinationRegistry-7",
+  "main_contract": "DestinationRegistry",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x66b9eba2cef184dfaf3b9e11b104be0a1c6e258c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

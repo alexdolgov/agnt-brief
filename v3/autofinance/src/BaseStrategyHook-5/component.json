@@ -1,0 +1,18 @@
+{
+  "component": "BaseStrategyHook-5",
+  "main_contract": "BaseStrategyHook",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x798b8a1dd081ac4cec410e40f8dd0616b4824645",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,23 @@
 {
   "component": "MultiAccount-2",
   "main_contract": "MultiAccount",
-  "source_file_count": 54,
-  "deployment_count": 1,
+  "source_file_count": 21,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x1ecabf0eba136920677c9575faccee36f30592cf",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8f06459f184553e5d04f07f868720bdacab39395",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaeac164dd743e188f4825503edcc2735134486df",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -2,10 +2,18 @@
   "component": "AssimilatorFactory",
   "main_contract": "AssimilatorFactory",
   "source_file_count": 14,
-  "deployment_count": 12,
+  "deployment_count": 13,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x65071363538824f18a0261200843f03f7293757a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

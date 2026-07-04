@@ -1,0 +1,18 @@
+{
+  "component": "ERC1967Upgrade-3",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf047f23acfdb1315cf63ad8ab5146d5fda4267af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0 ^0.8.1 ^0.8.2;
+pragma solidity =0.8.23 ^0.8.0 ^0.8.1 ^0.8.2;
 
-// dependencies/@openzeppelin-contracts-4.9.3/interfaces/IERC1967.sol
+// node_modules/@openzeppelin/contracts/interfaces/IERC1967.sol
 
 // OpenZeppelin Contracts (last updated v4.9.0) (interfaces/IERC1967.sol)
 
@@ -27,7 +27,7 @@ interface IERC1967 {
     event BeaconUpgraded(address indexed beacon);
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/interfaces/draft-IERC1822.sol
+// node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol
 
 // OpenZeppelin Contracts (last updated v4.5.0) (interfaces/draft-IERC1822.sol)
 
@@ -47,7 +47,7 @@ interface IERC1822Proxiable {
     function proxiableUUID() external view returns (bytes32);
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/proxy/Proxy.sol
+// node_modules/@openzeppelin/contracts/proxy/Proxy.sol
 
 // OpenZeppelin Contracts (last updated v4.6.0) (proxy/Proxy.sol)
 
@@ -133,7 +133,7 @@ abstract contract Proxy {
     function _beforeFallback() internal virtual {}
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/proxy/beacon/IBeacon.sol
+// node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol
 
 // OpenZeppelin Contracts v4.4.1 (proxy/beacon/IBeacon.sol)
 
@@ -149,7 +149,7 @@ interface IBeacon {
     function implementation() external view returns (address);
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/utils/Address.sol
+// node_modules/@openzeppelin/contracts/utils/Address.sol
 
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/Address.sol)
 
@@ -393,7 +393,7 @@ library Address {
     }
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/utils/StorageSlot.sol
+// node_modules/@openzeppelin/contracts/utils/StorageSlot.sol
 
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/StorageSlot.sol)
 // This file was procedurally generated from scripts/generate/templates/StorageSlot.js.
@@ -531,7 +531,7 @@ library StorageSlot {
     }
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/proxy/ERC1967/ERC1967Upgrade.sol
+// node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol
 
 // OpenZeppelin Contracts (last updated v4.9.0) (proxy/ERC1967/ERC1967Upgrade.sol)
 
@@ -682,7 +682,7 @@ abstract contract ERC1967Upgrade is IERC1967 {
     }
 }
 
-// dependencies/@openzeppelin-contracts-4.9.3/proxy/beacon/BeaconProxy.sol
+// node_modules/@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol
 
 // OpenZeppelin Contracts (last updated v4.7.0) (proxy/beacon/BeaconProxy.sol)
 

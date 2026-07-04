@@ -1,31 +1,47 @@
 {
   "component": "OmniV3Connector",
   "main_contract": "OmniV3Connector",
-  "source_file_count": 26,
-  "deployment_count": 3,
+  "source_file_count": 24,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x00dc7a6cb7f1a9c7c38dbc426801133ab9ed4d1d",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xbb478c4a6397bc589905d40d13fc922b3c38fd10",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x2e075edf77ac8df12b88f22170bb064c2ffbed44",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x166efafcb715f80af561d23ca375e6cf1afc37b4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xaa0c34c6c3f24fddee2c51b23073a2707c16a714",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6792410b7167395fc3d98bceb9a5e31cf6d4ca54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e03a634093035396d1bb29772e81e5fe34a7276",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf5691e739f1f78087cb73110c572cc1ed07da704",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

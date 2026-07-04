@@ -1,0 +1,18 @@
+{
+  "component": "LTokenSignaler-3",
+  "main_contract": "LTokenSignaler",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xeee2ca6f97ac13d2d0df1a2d45fc9ec30939c331",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

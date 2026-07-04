@@ -1,0 +1,18 @@
+{
+  "component": "FeeClaimer-3",
+  "main_contract": "FeeClaimer",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2df17455b96dde3618fd6b1c3a9aa06d6ab89347",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

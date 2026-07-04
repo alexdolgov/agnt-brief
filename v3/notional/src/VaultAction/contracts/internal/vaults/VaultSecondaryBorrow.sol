@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -295,15 +295,15 @@ library VaultSecondaryBorrow {
         PrimeRate[2] memory pr,
         bool checkMinBorrow,
         bool emitEvents
-    ) internal {
+    ) internal returns (int256 accountDebtOne, int256 accountDebtTwo) {
         VaultAccountSecondaryDebtShareStorage storage accountStorage = 
             LibStorage.getVaultAccountSecondaryDebtShare()[account][vaultConfig.vault];
         // Check maturity
         uint256 accountMaturity = accountStorage.maturity;
         require(accountMaturity == maturity || accountMaturity == 0);
 
-        int256 accountDebtOne = VaultStateLib.readDebtStorageToUnderlying(pr[0], maturity, accountStorage.accountDebtOne);
-        int256 accountDebtTwo = VaultStateLib.readDebtStorageToUnderlying(pr[1], maturity, accountStorage.accountDebtTwo);
+        accountDebtOne = VaultStateLib.readDebtStorageToUnderlying(pr[0], maturity, accountStorage.accountDebtOne);
+        accountDebtTwo = VaultStateLib.readDebtStorageToUnderlying(pr[1], maturity, accountStorage.accountDebtTwo);
         if (netUnderlyingDebtOne != 0) {
             accountDebtOne = accountDebtOne.add(netUnderlyingDebtOne);
 

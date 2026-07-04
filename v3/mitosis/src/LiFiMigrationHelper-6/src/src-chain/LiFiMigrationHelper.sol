@@ -10,8 +10,6 @@ import { AccessControlEnumerableUpgradeable } from
 import { UUPSUpgradeable } from '@ozu/proxy/utils/UUPSUpgradeable.sol';
 import { ReentrancyGuardUpgradeable } from '@ozu/utils/ReentrancyGuardUpgradeable.sol';
 
-import { ERC7201Utils } from '@mito/lib/ERC7201Utils.sol';
-
 import { IExpeditionVault } from './IExpeditionVault.sol';
 
 contract LiFiMigrationHelper is
@@ -23,27 +21,14 @@ contract LiFiMigrationHelper is
   using SafeERC20 for IExpeditionVault;
   using Address for address;
   using Address for address payable;
-  using ERC7201Utils for string;
-
-  /// @custom:storage-location mitosis.storage.LiFiMigrationHelper
-  struct StorageV1 {
-    uint256 destinationGas; // gas on middleware chain
-    address destinationGasReceiver; // receiver of the destination gas
-    mapping(address => uint256) operationNonces;
-    mapping(address => bool) allowedVaults;
-  }
 
   event DestinationGasSet(uint256 gas);
   event DestinationGasReceiverSet(address receiver);
-  event VaultAllowed(address indexed vault, bool allowed);
+  event LiFiFunctionSelectorSet(bytes4 selector, bool allowed);
+  event MaxDestinationGasSet(uint256 maxGas);
 
   event MigrationInitiated(
-    bytes32 indexed operationId,
-    address indexed sender,
-    address indexed vaultAddr,
-    uint256 amount,
-    uint256 redeemed,
-    uint256 lifiGas
+    address indexed vaultAddr, uint256 amount, uint256 redeemed, uint256 lifiGas
   );
 
   error InsufficientBalance();
@@ -52,25 +37,17 @@ contract LiFiMigrationHelper is
   error AllowanceNotSpent();
   error InvalidVaultAddress();
   error InvalidAmount();
+  error InvalidCalldata();
+  error UnauthorizedLiFiFunction();
+  error ExcessiveGasRequest();
   error InvalidReceiver();
-  error VaultNotAllowed();
-
-  // =========================== NOTE: STORAGE DEFINITIONS =========================== //
-
-  string private constant _NAMESPACE = 'mitosis.storage.LiFiMigrationHelper';
-  bytes32 private immutable _slot = _NAMESPACE.storageSlot();
-
-  function _getStorage() private view returns (StorageV1 storage $) {
-    bytes32 slot = _slot;
-    // slither-disable-next-line assembly
-    assembly {
-      $.slot := slot
-    }
-  }
-
-  // ================================================================================= //
 
   address public immutable lifi;
+  uint256 public destinationGas; // gas on middleware chain
+  address public destinationGasReceiver; // receiver of the destination gas
+
+  // Mapping to track allowed LiFi function selectors
+  mapping(bytes4 => bool) public allowedLiFiSelectors;
 
   constructor(address _lifi) {
     require(_lifi != address(0), InvalidReceiver());
@@ -88,46 +65,32 @@ contract LiFiMigrationHelper is
     _grantRole(DEFAULT_ADMIN_ROLE, admin);
   }
 
-  receive() external payable {
-    // redirect to the destination gas receiver
-    payable(_getStorage().destinationGasReceiver).sendValue(msg.value);
-  }
-
-  function destinationGas() external view returns (uint256) {
-    return _getStorage().destinationGas;
-  }
-
-  function destinationGasReceiver() external view returns (address) {
-    return _getStorage().destinationGasReceiver;
-  }
-
   function setDestinationGas(uint256 gas) external onlyRole(DEFAULT_ADMIN_ROLE) {
-    _getStorage().destinationGas = gas;
+    destinationGas = gas;
 
     emit DestinationGasSet(gas);
   }
 
   function setDestinationGasReceiver(address receiver) external onlyRole(DEFAULT_ADMIN_ROLE) {
-    _getStorage().destinationGasReceiver = receiver;
+    destinationGasReceiver = receiver;
 
     emit DestinationGasReceiverSet(receiver);
   }
 
-  function setVaultAllowed(address vault, bool allowed) external onlyRole(DEFAULT_ADMIN_ROLE) {
-    _getStorage().allowedVaults[vault] = allowed;
-    emit VaultAllowed(vault, allowed);
+  function setLiFiFunctionSelector(bytes4 selector, bool allowed)
+    external
+    onlyRole(DEFAULT_ADMIN_ROLE)
+  {
+    allowedLiFiSelectors[selector] = allowed;
+
+    emit LiFiFunctionSelectorSet(selector, allowed);
   }
 
-  function operationNonce(address sender) external view returns (uint256) {
-    return _getStorage().operationNonces[sender];
-  }
+  function _validateLiFiCalldata(bytes calldata data) internal view {
+    require(data.length >= 4, InvalidCalldata());
 
-  function nextOperationId(address sender) external view returns (bytes32) {
-    return _buildOperationId(sender, _getStorage().operationNonces[sender]);
-  }
-
-  function isVaultAllowed(address vault) external view returns (bool) {
-    return _getStorage().allowedVaults[vault];
+    bytes4 selector = bytes4(data[:4]);
+    require(allowedLiFiSelectors[selector], UnauthorizedLiFiFunction());
   }
 
   function migrate(address vaultAddr, uint256 amount, bytes calldata lifiCalldata)
@@ -139,12 +102,15 @@ contract LiFiMigrationHelper is
     require(vaultAddr != address(0), InvalidVaultAddress());
     require(amount > 0, InvalidAmount());
 
+    // Validate LiFi calldata
+    _validateLiFiCalldata(lifiCalldata);
+
     IExpeditionVault vault = IExpeditionVault(vaultAddr);
 
     vault.safeTransferFrom(_msgSender(), address(this), amount);
 
     uint256 redeemed = vault.previewRedeem(amount);
-    address(vault).functionCall(abi.encodeCall(vault.redeem, (amount, address(this))));
+    vault.redeem(amount, address(this));
 
     IERC20 asset = vault.asset();
     uint256 assetBalance = asset.balanceOf(address(this));
@@ -152,31 +118,26 @@ contract LiFiMigrationHelper is
     // Ensure we have sufficient balance (should be >= redeemed amount)
     require(assetBalance >= redeemed, InsufficientBalance());
 
-    StorageV1 storage $ = _getStorage();
-    require($.allowedVaults[vaultAddr], VaultNotAllowed());
-
-    uint256 gasDemand = $.destinationGas;
+    uint256 gasDemand = destinationGas;
     require(gasDemand <= msg.value, InsufficientDestinationGas());
 
     uint256 lifiGas = msg.value - gasDemand;
     require(lifiGas > 0, InsufficientLiFiGas());
 
-    if ($.destinationGasReceiver != address(0)) {
-      payable($.destinationGasReceiver).sendValue(gasDemand);
+    if (destinationGasReceiver != address(0)) {
+      payable(destinationGasReceiver).sendValue(gasDemand);
     }
 
+    // CRITICAL: Approve LiFi contract to spend the redeemed tokens
+    // LiFi needs approval to transfer tokens for cross-chain operations
     asset.forceApprove(lifi, redeemed);
+
+    // Call LiFi contract with the provided calldata and any ETH value
     lifi.functionCallWithValue(lifiCalldata, lifiGas);
+
     require(asset.allowance(address(this), lifi) == 0, AllowanceNotSpent());
 
-    uint256 nonce = $.operationNonces[_msgSender()]++;
-    bytes32 operationId = _buildOperationId(_msgSender(), nonce);
-
-    emit MigrationInitiated(operationId, _msgSender(), vaultAddr, amount, redeemed, lifiGas);
-  }
-
-  function _buildOperationId(address sender, uint256 nonce) internal view returns (bytes32) {
-    return keccak256(abi.encodePacked(block.chainid, sender, nonce));
+    emit MigrationInitiated(vaultAddr, amount, redeemed, lifiGas);
   }
 
   function _authorizeUpgrade(address) internal override onlyRole(DEFAULT_ADMIN_ROLE) { }

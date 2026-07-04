@@ -1,0 +1,18 @@
+{
+  "component": "Bn128SchnorrVerifier-6",
+  "main_contract": "Bn128SchnorrVerifier",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8d42d317b2bd6b60183461ed41bd00f17c3f3fe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

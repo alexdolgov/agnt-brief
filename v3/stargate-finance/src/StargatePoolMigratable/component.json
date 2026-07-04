@@ -1,15 +1,55 @@
 {
   "component": "StargatePoolMigratable",
   "main_contract": "StargatePoolMigratable",
-  "source_file_count": 49,
-  "deployment_count": 1,
+  "source_file_count": 47,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x0db9afb4c33be43a0a0e396fd1383b4ea97ab10a",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x933597a323eb81cae705c5bc29985172fd5a3973",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x19cfce47ed54a88614648dc3f19a5980097007dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x138eb30f73bc423c6455c53df6d89cb01d9ebc63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd47b03ee6d86cf251ee7860fb2acf9f91b9fd4d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb715b85682b731db9d5063187c450095c91c57fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xce8cca271ebc0533920c83d39f417ed6a0abb7d0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,15 +1,23 @@
 {
   "component": "CCIPWaypoint-2",
   "main_contract": "CCIPWaypoint",
-  "source_file_count": 23,
-  "deployment_count": 1,
+  "source_file_count": 27,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x2e2a2516898e52560d421a2e46a5e7c534336890",
+      "address": "0x7cedc206cc7db6db7f9fcd143128ef9e2550bffd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd1cc75dd7b340b9786b3d17cad85e69c1c7d7869",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

@@ -1,0 +1,18 @@
+{
+  "component": "FlashRepayFactory-5",
+  "main_contract": "FlashRepayFactory",
+  "source_file_count": 158,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe4fa6f552f07fbe2ed8eecb29ed4ca9c41c94101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

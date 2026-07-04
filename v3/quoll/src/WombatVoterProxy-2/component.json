@@ -1,0 +1,18 @@
+{
+  "component": "WombatVoterProxy-2",
+  "main_contract": "WombatVoterProxy",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfda75e7b04627611dfd016a492d1243399287a6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

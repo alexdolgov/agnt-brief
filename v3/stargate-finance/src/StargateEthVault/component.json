@@ -3,24 +3,21 @@
   "main_contract": "StargateEthVault",
   "source_file_count": 5,
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26%20RouterETH%20Audit%201.1%20(17th%20June%202022)%20-%20Ackee.pdf",
-    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26RouterETH%20Audit%201.0%20(17th%20June%202022)%20-%20Ackee.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x224d8fd7ab6ad4c6eb4611ce56ef35dec2277f03",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x72e2f4830b9e45d52f80ac08cb2bec0fef72ed9c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x224d8fd7ab6ad4c6eb4611ce56ef35dec2277f03",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82cbecf39bee528b5476fe6d1550af59a9db6fc0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

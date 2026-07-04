@@ -1,0 +1,21 @@
+{
+  "component": "St1inch-4",
+  "main_contract": "St1inch",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/1inch/1inch-audits/blob/master/Fusion%20mode%20and%20Token-plugins/1inch_FusionMode_Hexens.2.pdf",
+    "https://github.com/1inch/1inch-audits/blob/master/Fusion%20mode%20and%20Token-plugins/1inch_FusionMode_OpenZepplin.1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaccfac2339e16dc80c50d2fa81b5c2b049b4f947",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,13 +2,53 @@
   "component": "SyncDepositVaultFactory",
   "main_contract": "SyncDepositVaultFactory",
   "source_file_count": 39,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
       "is_proxy": false,
       "implementation_address": null,

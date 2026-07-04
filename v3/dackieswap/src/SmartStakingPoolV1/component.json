@@ -2,10 +2,26 @@
   "component": "SmartStakingPoolV1",
   "main_contract": "SmartStakingPoolV1",
   "source_file_count": 12,
-  "deployment_count": 18,
+  "deployment_count": 20,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7527463e29bf23efe425aff996425c3a75ab70a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7b4fdc4ed00cfffcae61f6411b864bafa00d5377",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

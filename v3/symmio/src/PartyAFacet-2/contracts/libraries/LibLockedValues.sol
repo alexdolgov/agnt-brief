@@ -7,6 +7,13 @@ pragma solidity >=0.8.18;
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "../storages/QuoteStorage.sol";
 
+struct LockedValues {
+	uint256 cva;
+	uint256 lf;
+	uint256 partyAmm;
+	uint256 partyBmm;
+}
+
 library LockedValuesOps {
 	using SafeMath for uint256;
 

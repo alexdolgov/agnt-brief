@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
 // solhint-disable func-name-mixedcase func-visibility
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.9;
 
 /// @title FixedPoint, a fixed-point arithmetic library defining the custom type uint192
 /// @author Matt Elder <matt.elder@reserve.org> and the Reserve Team <https://reserve.org>
@@ -30,7 +30,6 @@ pragma solidity ^0.8.19;
 
 // A uint value passed to this library was out of bounds for uint192 operations
 error UIntOutOfBounds();
-bytes32 constant UIntOutofBoundsHash = keccak256(abi.encodeWithSignature("UIntOutOfBounds()"));
 
 // Used by P1 implementation for easier casting
 uint256 constant FIX_ONE_256 = 1e18;
@@ -65,7 +64,7 @@ RoundingMode constant CEIL = RoundingMode.CEIL;
 
 /* @dev Solidity 0.8.x only allows you to change one of type or size per type conversion.
    Thus, all the tedious-looking double conversions like uint256(uint256 (foo))
-   See: https://docs.soliditylang.org/en/v0.8.17/080-breaking-changes.html#new-restrictions
+   See: https://docs.soliditylang.org/en/v0.8.9/080-breaking-changes.html#new-restrictions
  */
 
 /// Explicitly convert a uint256 to a uint192. Revert if the input is out of bounds.
@@ -96,12 +95,11 @@ function shiftl_toFix(
     int8 shiftLeft,
     RoundingMode rounding
 ) pure returns (uint192) {
-    // conditions for avoiding overflow
-    if (x == 0) return 0;
-    if (shiftLeft <= -96) return (rounding == CEIL ? 1 : 0); // 0 < uint.max / 10**77 < 0.5
-    if (40 <= shiftLeft) revert UIntOutOfBounds(); // 10**56 < FIX_MAX < 10**57
-
     shiftLeft += 18;
+
+    if (x == 0) return 0;
+    if (shiftLeft <= -77) return (rounding == CEIL ? 1 : 0); // 0 < uint.max / 10**77 < 0.5
+    if (57 <= shiftLeft) revert UIntOutOfBounds(); // 10**56 < FIX_MAX < 10**57
 
     uint256 coeff = 10**abs(shiftLeft);
     uint256 shifted = (shiftLeft >= 0) ? x * coeff : _divrnd(x, coeff, rounding);
@@ -207,11 +205,6 @@ library FixLib {
         int8 decimals,
         RoundingMode rounding
     ) internal pure returns (uint192) {
-        // Handle overflow cases
-        if (x == 0) return 0;
-        if (decimals <= -59) return (rounding == CEIL ? 1 : 0); // 59, because 1e58 > 2**192
-        if (58 <= decimals) revert UIntOutOfBounds(); // 58, because x * 1e58 > 2 ** 192 if x != 0
-
         uint256 coeff = uint256(10**abs(decimals));
         return _safeWrap(decimals >= 0 ? x * coeff : _divrnd(x, coeff, rounding));
     }
@@ -309,23 +302,25 @@ library FixLib {
 
     uint64 constant FIX_HALF = uint64(FIX_SCALE) / 2;
 
-    /// Raise this uint192 to a nonnegative integer power. Requires that x_ <= FIX_ONE
-    /// Gas cost is O(lg(y)), precision is +- 1e-18.
+    /// Raise this uint192 to a nonnegative integer power.
+    /// Intermediate muls do nearest-value rounding.
+    /// Presumes that powu(0.0, 0) = 1
+    /// @dev The gas cost is O(lg(y))
     /// @return x_ ** y
     // as-ints: x_ ** y / 1e18**(y-1)    <- technically correct for y = 0. :D
     function powu(uint192 x_, uint48 y) internal pure returns (uint192) {
-        require(x_ <= FIX_ONE);
+        // The algorithm is exponentiation by squaring. See: https://w.wiki/4LjE
         if (y == 1) return x_;
         if (x_ == FIX_ONE || y == 0) return FIX_ONE;
-        uint256 x = uint256(x_) * FIX_SCALE; // x is D36
-        uint256 result = FIX_SCALE_SQ; // result is D36
+        uint256 x = uint256(x_);
+        uint256 result = FIX_SCALE;
         while (true) {
-            if (y & 1 == 1) result = (result * x + FIX_SCALE_SQ / 2) / FIX_SCALE_SQ;
+            if (y & 1 == 1) result = (result * x + FIX_HALF) / FIX_SCALE;
             if (y <= 1) break;
-            y = (y >> 1);
-            x = (x * x + FIX_SCALE_SQ / 2) / FIX_SCALE_SQ;
+            y = y >> 1;
+            x = (x * x + FIX_HALF) / FIX_SCALE;
         }
-        return _safeWrap(result / FIX_SCALE);
+        return _safeWrap(result);
     }
 
     /// Comparison operators...
@@ -384,13 +379,7 @@ library FixLib {
         int8 decimals,
         RoundingMode rounding
     ) internal pure returns (uint256) {
-        // Handle overflow cases
-        if (x == 0) return 0; // always computable, no matter what decimals is
-        if (decimals <= -42) return (rounding == CEIL ? 1 : 0);
-        if (96 <= decimals) revert UIntOutOfBounds();
-
         decimals -= 18; // shift so that toUint happens at the same time.
-
         uint256 coeff = uint256(10**abs(decimals));
         return decimals >= 0 ? uint256(x * coeff) : uint256(_divrnd(x, coeff, rounding));
     }
@@ -479,125 +468,6 @@ library FixLib {
         RoundingMode rounding
     ) internal pure returns (uint192) {
         return _safeWrap(mulDiv256(x, y, z, rounding));
-    }
-
-    // === safe*() ===
-
-    /// Multiply two fixes, rounding up to FIX_MAX and down to 0
-    /// @param a First param to multiply
-    /// @param b Second param to multiply
-    function safeMul(
-        uint192 a,
-        uint192 b,
-        RoundingMode rounding
-    ) internal pure returns (uint192) {
-        // untestable:
-        //      a will never = 0 here because of the check in _price()
-        if (a == 0 || b == 0) return 0;
-        // untestable:
-        //      a = FIX_MAX iff b = 0
-        if (a == FIX_MAX || b == FIX_MAX) return FIX_MAX;
-
-        // return FIX_MAX instead of throwing overflow errors.
-        unchecked {
-            // p and mul *are* Fix values, so have 18 decimals (D18)
-            uint256 rawDelta = uint256(b) * a; // {D36} = {D18} * {D18}
-            // if we overflowed, then return FIX_MAX
-            if (rawDelta / b != a) return FIX_MAX;
-            uint256 shiftDelta = rawDelta;
-
-            // add in rounding
-            if (rounding == RoundingMode.ROUND) shiftDelta += (FIX_ONE / 2);
-            else if (rounding == RoundingMode.CEIL) shiftDelta += FIX_ONE - 1;
-
-            // untestable (here there be dragons):
-            // (below explanation is for the ROUND case, but it extends to the FLOOR/CEIL too)
-            //          A)  shiftDelta = rawDelta + (FIX_ONE / 2)
-            //      shiftDelta overflows if:
-            //          B)  shiftDelta = MAX_UINT256 - FIX_ONE/2 + 1
-            //              rawDelta + (FIX_ONE/2) = MAX_UINT256 - FIX_ONE/2 + 1
-            //              b * a = MAX_UINT256 - FIX_ONE + 1
-            //      therefore shiftDelta overflows if:
-            //          C)  b = (MAX_UINT256 - FIX_ONE + 1) / a
-            //      MAX_UINT256 ~= 1e77 , FIX_MAX ~= 6e57 (6e20 difference in magnitude)
-            //      a <= 1e21 (MAX_TARGET_AMT)
-            //      a must be between 1e19 & 1e20 in order for b in (C) to be uint192,
-            //      but a would have to be < 1e18 in order for (A) to overflow
-            if (shiftDelta < rawDelta) return FIX_MAX;
-
-            // return FIX_MAX if return result would truncate
-            if (shiftDelta / FIX_ONE > FIX_MAX) return FIX_MAX;
-
-            // return _div(rawDelta, FIX_ONE, rounding)
-            return uint192(shiftDelta / FIX_ONE); // {D18} = {D36} / {D18}
-        }
-    }
-
-    /// Divide two fixes, rounding up to FIX_MAX and down to 0
-    /// @param a Numerator
-    /// @param b Denominator
-    function safeDiv(
-        uint192 a,
-        uint192 b,
-        RoundingMode rounding
-    ) internal pure returns (uint192) {
-        if (a == 0) return 0;
-        if (b == 0) return FIX_MAX;
-
-        uint256 raw = _divrnd(FIX_ONE_256 * a, uint256(b), rounding);
-        if (raw >= FIX_MAX) return FIX_MAX;
-        return uint192(raw); // don't need _safeWrap
-    }
-
-    /// Multiplies two fixes and divide by a third
-    /// @param a First to multiply
-    /// @param b Second to multiply
-    /// @param c Denominator
-    function safeMulDiv(
-        uint192 a,
-        uint192 b,
-        uint192 c,
-        RoundingMode rounding
-    ) internal pure returns (uint192 result) {
-        if (a == 0 || b == 0) return 0;
-        if (a == FIX_MAX || b == FIX_MAX || c == 0) return FIX_MAX;
-
-        uint256 result_256;
-        unchecked {
-            (uint256 hi, uint256 lo) = fullMul(a, b);
-            if (hi >= c) return FIX_MAX;
-            uint256 mm = mulmod(a, b, c);
-            if (mm > lo) hi -= 1;
-            lo -= mm;
-            uint256 pow2 = c & (0 - c);
-
-            uint256 c_256 = uint256(c);
-            // Warning: Should not access c below this line
-
-            c_256 /= pow2;
-            lo /= pow2;
-            lo += hi * ((0 - pow2) / pow2 + 1);
-            uint256 r = 1;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            r *= 2 - c_256 * r;
-            result_256 = lo * r;
-
-            // Apply rounding
-            if (rounding == CEIL) {
-                if (mm > 0) result_256 += 1;
-            } else if (rounding == ROUND) {
-                if (mm > ((c_256 - 1) / 2)) result_256 += 1;
-            }
-        }
-
-        if (result_256 >= FIX_MAX) return FIX_MAX;
-        return uint192(result_256);
     }
 }
 

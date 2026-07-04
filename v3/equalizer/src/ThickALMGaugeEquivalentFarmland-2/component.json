@@ -1,0 +1,26 @@
+{
+  "component": "ThickALMGaugeEquivalentFarmland-2",
+  "main_contract": "ThickALMGaugeEquivalentFarmland",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd057ef7249ed884b4a1114cd0b853367aed965ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf3e31b7e8f9ba4bca8aa81ff63052d97b6a8bda9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

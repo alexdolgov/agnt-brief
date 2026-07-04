@@ -2,10 +2,34 @@
   "component": "RingLaunchpad",
   "main_contract": "RingLaunchpad",
   "source_file_count": 20,
-  "deployment_count": 2,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaf3277fe89fbb38375d76541d4a66b70408164f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb3ad7754f363af676dc1c5be40423fe538a47920",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xd69ed581480239357515e200560353af1bbaa46a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

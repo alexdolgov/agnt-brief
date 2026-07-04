@@ -2,10 +2,18 @@
   "component": "SpotOracle",
   "main_contract": "SpotOracle",
   "source_file_count": 2,
-  "deployment_count": 3,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfff0d064b1cbf5d4c97d0af56a73a4c7e31dfb0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,
@@ -26,6 +34,22 @@
       "chain": "polygon",
       "chain_id": 137,
       "address": "0x97e10bf110bc477f35334c6275b91b59c1c786ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xab08ff5dd91636fe556f692825cadd7ba04a4c97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd0fb7977df47d7fe946a21679dabce877f7a3a05",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

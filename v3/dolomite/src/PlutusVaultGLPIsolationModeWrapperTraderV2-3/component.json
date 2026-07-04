@@ -1,0 +1,18 @@
+{
+  "component": "PlutusVaultGLPIsolationModeWrapperTraderV2-3",
+  "main_contract": "PlutusVaultGLPIsolationModeWrapperTraderV2",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x89649b0eea975a1930a36e13314d8bdde11f4698",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

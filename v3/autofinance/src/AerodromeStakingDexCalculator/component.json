@@ -2,7 +2,7 @@
   "component": "AerodromeStakingDexCalculator",
   "main_contract": "AerodromeStakingDexCalculator",
   "source_file_count": 62,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -21,6 +21,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcef50bf75ed027b8bae5c49562b3f27b4f253985",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     },
     {
       "chain": "base",

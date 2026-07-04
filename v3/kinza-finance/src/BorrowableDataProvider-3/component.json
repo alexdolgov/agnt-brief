@@ -1,0 +1,18 @@
+{
+  "component": "BorrowableDataProvider-3",
+  "main_contract": "BorrowableDataProvider",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd6a287daf9b35ed8e59742c0e8b00aebb065c5f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

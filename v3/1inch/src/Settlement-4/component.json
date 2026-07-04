@@ -1,0 +1,18 @@
+{
+  "component": "Settlement-4",
+  "main_contract": "Settlement",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5e918e6e950f7286ef4b7a87fe14d20fd8a2e335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

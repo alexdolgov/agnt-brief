@@ -1,15 +1,47 @@
 {
   "component": "SpokeRewardsV2Common",
   "main_contract": "SpokeRewardsV2Common",
-  "source_file_count": 21,
-  "deployment_count": 1,
+  "source_file_count": 19,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x1b2a8d56967d00700dd5c94e27b1a116a1def8df",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6c682b1d8c7b402c6ed8aba3a6238eb956c38cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x531490b7674ef239c9fec39d2cf3cc10645d14d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6bc1439b7663820dacebc8e8b9a5ba29201ed352",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd97af2ff3a44427e4a412fed0cb8ebcbf09d4ae3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6bc1439b7663820dacebc8e8b9a5ba29201ed352",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

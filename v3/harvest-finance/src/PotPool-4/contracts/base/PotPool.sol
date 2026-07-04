@@ -1,34 +1,36 @@
-// SPDX-License-Identifier: Unlicense
-pragma solidity 0.6.12;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.5.16;
 
 import "./inheritance/Controllable.sol";
 import "./interface/IController.sol";
-
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol";
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/math/Math.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/GSN/Context.sol";
+import "@openzeppelin/contracts/ownership/Ownable.sol";
 
-abstract contract IRewardDistributionRecipient is Ownable {
+contract IRewardDistributionRecipient is Ownable {
 
     mapping (address => bool) public rewardDistribution;
 
     constructor(address[] memory _rewardDistributions) public {
-        // multisig on Base
-        rewardDistribution[0x97b3e5712CDE7Db13e939a188C8CA90Db5B05131] = true;
         // NotifyHelper
-        rewardDistribution[0xC0cE53f755feAe93Fd219b2Cd0F58a4Fd0d535Dd] = true;
+        rewardDistribution[0xE20c31e3d08027F5AfACe84A3A46B7b3B165053c] = true;
+
+        // FeeRewardForwarderV5
+        rewardDistribution[0x153C544f72329c1ba521DDf5086cf2fA98C86676] = true;
 
         for(uint256 i = 0; i < _rewardDistributions.length; i++) {
           rewardDistribution[_rewardDistributions[i]] = true;
         }
     }
 
-    function notifyTargetRewardAmount(address rewardToken, uint256 reward) external virtual;
-    function notifyRewardAmount(uint256 reward) external virtual;
+    function notifyTargetRewardAmount(address rewardToken, uint256 reward) external;
+    function notifyRewardAmount(uint256 reward) external;
 
     modifier onlyRewardDistribution() {
         require(rewardDistribution[_msgSender()], "Caller is not reward distribution");
@@ -45,7 +47,7 @@ abstract contract IRewardDistributionRecipient is Ownable {
     }
 }
 
-contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
+contract PotPool is IRewardDistributionRecipient, Controllable, ERC20, ERC20Detailed {
 
     using Address for address;
     using SafeERC20 for IERC20;
@@ -71,11 +73,6 @@ contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
     event RewardPaid(address indexed user, address rewardToken, uint256 reward);
     event RewardDenied(address indexed user, address rewardToken, uint256 reward);
     event SmartContractRecorded(address indexed smartContractAddress, address indexed smartContractInitiator);
-
-    modifier onlyGovernanceOrRewardDistribution() {
-      require(msg.sender == governance() || rewardDistribution[msg.sender], "Not governance nor reward distribution");
-      _;
-    }
 
     modifier updateRewards(address account) {
       for(uint256 i = 0; i < rewardTokens.length; i++ ){
@@ -144,23 +141,15 @@ contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
         string memory _symbol,
         uint8 _decimals
       ) public
-      ERC20(_name, _symbol)
+      ERC20Detailed(_name, _symbol, _decimals)
       IRewardDistributionRecipient(_rewardDistribution)
       Controllable(_storage) // only used for referencing the grey list
     {
-        require(_decimals == ERC20(_lpToken).decimals(), "decimals has to be aligned with the lpToken");
+        require(_decimals == ERC20Detailed(_lpToken).decimals(), "decimals has to be aligned with the lpToken");
         require(_rewardTokens.length != 0, "should initialize with at least 1 rewardToken");
         rewardTokens = _rewardTokens;
         lpToken = _lpToken;
         duration = _duration;
-    }
-
-    //Overwrite ERC20's transfer function to block transfer of pTokens,
-    //as transferring the token does not transfer the rewards or rights to unstake.
-    function transfer(address recipient, uint256 amount) public override returns (bool) {
-      if (amount > 0) {
-        revert("Staked assets cannot be transferred");
-      }
     }
 
     function lastTimeRewardApplicable(uint256 i) public view returns (uint256) {
@@ -292,12 +281,12 @@ contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
       }
     }
 
-    function addRewardToken(address rt) public onlyGovernanceOrRewardDistribution {
+    function addRewardToken(address rt) public onlyGovernance {
       require(getRewardTokenIndex(rt) == uint256(-1), "Reward token already exists");
       rewardTokens.push(rt);
     }
 
-    function removeRewardToken(address rt) public onlyGovernanceOrRewardDistribution {
+    function removeRewardToken(address rt) public onlyGovernance {
       uint256 i = getRewardTokenIndex(rt);
       require(i != uint256(-1), "Reward token does not exists");
       require(periodFinishForToken[rewardTokens[i]] < block.timestamp, "Can only remove when the reward period has passed");
@@ -308,7 +297,7 @@ contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
       rewardTokens[i] = rewardTokens[lastIndex];
 
       // delete last element
-      rewardTokens.pop();
+      rewardTokens.length--;
     }
 
     // If the return value is MAX_UINT256, it means that
@@ -322,7 +311,7 @@ contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
     }
 
     function notifyTargetRewardAmount(address _rewardToken, uint256 reward)
-        public override
+        public
         onlyRewardDistribution
         updateRewards(address(0))
     {
@@ -345,7 +334,7 @@ contract PotPool is IRewardDistributionRecipient, Controllable, ERC20 {
     }
 
     function notifyRewardAmount(uint256 reward)
-        external override
+        external
         onlyRewardDistribution
         updateRewards(address(0))
     {

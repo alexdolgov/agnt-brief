@@ -21,6 +21,7 @@ library CurveswapAdapter {
   address constant ETH = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
 
   function swapExactTokensForTokens(
+    address addressesProvider,
     address assetToSwapFrom,
     address assetToSwapTo,
     uint256 amountToSwap,
@@ -50,7 +51,7 @@ library CurveswapAdapter {
     } else {
       balanceOfAsset = IERC20(assetToSwapTo).balanceOf(address(this));
     }
-    if (balanceOfAsset < receivedAmount - 2) revert SW_MISMATCH_RETURNED_AMOUNT();
-    return balanceOfAsset;
+    if (balanceOfAsset < receivedAmount) revert SW_MISMATCH_RETURNED_AMOUNT();
+    return receivedAmount;
   }
 }

@@ -29,7 +29,7 @@ abstract contract Base is TokenERC20 {
     ) internal virtual {
         controller = _controller;
         interestRateModel = _interestRateModel;
-        accrualBlockNumber = block.number;
+        accrualBlockNumber = getBlockNumber();
         borrowIndex = BASE;
         flashloanFeeRatio = 0.0008e18;
         protocolFeeRatio = 0.25e18;
@@ -87,7 +87,8 @@ abstract contract Base is TokenERC20 {
     function _updateInterest() internal virtual override {
         // When more calls in the same block, only the first one takes effect, so for the
         // following calls, nothing updates.
-        if (block.number != accrualBlockNumber) {
+        uint256 _currentBlockNumber = getBlockNumber();
+        if (_currentBlockNumber != accrualBlockNumber) {
             InterestLocalVars memory _vars;
             _vars.currentCash = _getCurrentCash();
             _vars.totalBorrows = totalBorrows;
@@ -105,7 +106,7 @@ abstract contract Base is TokenERC20 {
             );
 
             // Records the current block number.
-            _vars.currentBlockNumber = block.number;
+            _vars.currentBlockNumber = _currentBlockNumber;
 
             // Calculates the number of blocks elapsed since the last accrual.
             _vars.blockDelta = _vars.currentBlockNumber.sub(accrualBlockNumber);
@@ -373,7 +374,7 @@ abstract contract Base is TokenERC20 {
         );
 
         require(
-            _dlCollateral.accrualBlockNumber() == block.number,
+            _dlCollateral.accrualBlockNumber() == getBlockNumber(),
             "_liquidateBorrowInternal: Failed to update block number in collateral asset!"
         );
 

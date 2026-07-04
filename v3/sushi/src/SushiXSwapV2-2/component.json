@@ -1,18 +1,26 @@
 {
   "component": "SushiXSwapV2-2",
   "main_contract": "SushiXSwapV2",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 13,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x804b526e5bf4349819fe2db65349d0825870f8ee",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x54ea633385c52263846b37409649b5b8fa5ed402",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3115b68e69886dc9dbcc674db35e73cd91e9053",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

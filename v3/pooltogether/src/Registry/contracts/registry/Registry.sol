@@ -2,12 +2,12 @@
 
 pragma solidity >=0.5.0 <0.7.0;
 
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";
 
 import "./RegistryInterface.sol";
 
 /// @title Interface that allows a user to draw an address using an index
-contract Registry is OwnableUpgradeable, RegistryInterface {
+contract Registry is OwnableUpgradeSafe, RegistryInterface {
   address private pointer;
 
   event Registered(address indexed pointer);

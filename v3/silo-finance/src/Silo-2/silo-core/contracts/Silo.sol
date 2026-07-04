@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
+
 pragma solidity 0.8.28;
 
 import {SafeERC20} from "openzeppelin5/token/ERC20/utils/SafeERC20.sol";
@@ -6,6 +7,7 @@ import {IERC20} from "openzeppelin5/token/ERC20/IERC20.sol";
 
 import {ISilo, IERC4626, IERC3156FlashLender} from "./interfaces/ISilo.sol";
 import {IShareToken} from "./interfaces/IShareToken.sol";
+import {IVersioned} from "./interfaces/IVersioned.sol";
 
 import {IERC3156FlashBorrower} from "./interfaces/IERC3156FlashBorrower.sol";
 import {ISiloConfig} from "./interfaces/ISiloConfig.sol";
@@ -34,6 +36,7 @@ import {SiloStorageLib} from "./lib/SiloStorageLib.sol";
 contract Silo is ISilo, ShareCollateralToken {
     using SafeERC20 for IERC20;
 
+    // forge-lint: disable-next-line(screaming-snake-case-immutable)
     ISiloFactory public immutable factory;
 
     /// @custom:oz-upgrades-unsafe-allow constructor
@@ -49,6 +52,12 @@ contract Silo is ISilo, ShareCollateralToken {
     /// @inheritdoc IShareToken
     function silo() external view virtual override returns (ISilo) {
         return this;
+    }
+
+    /// @inheritdoc IVersioned
+    // solhint-disable-next-line func-name-mixedcase
+    function VERSION() external pure virtual override returns (string memory) {
+        return "Silo 4.1.3";
     }
 
     /// @inheritdoc ISilo
@@ -122,6 +131,11 @@ contract Silo is ISilo, ShareCollateralToken {
     }
 
     /// @inheritdoc ISilo
+    function getFractionsStorage() external view returns (Fractions memory fractions) {
+        fractions = Views.getFractionsStorage();
+    }
+
+    /// @inheritdoc ISilo
     function getCollateralAssets() external view virtual returns (uint256 totalCollateralAssets) {
         totalCollateralAssets = _totalAssets();
     }
@@ -159,6 +173,9 @@ contract Silo is ISilo, ShareCollateralToken {
     }
 
     /// @inheritdoc IERC4626
+    /// @notice Returns the total amount of the underlying asset that is “managed” by Vault.
+    /// When accrue interest in memory, in extreme scenario result may be overestimated by 1wei, because on view method
+    /// we do not apply math for fractions.
     function totalAssets() external view virtual returns (uint256 totalManagedAssets) {
         totalManagedAssets = _totalAssets();
     }
@@ -400,7 +417,7 @@ contract Silo is ISilo, ShareCollateralToken {
 
     /// @inheritdoc ISilo
     function maxBorrow(address _borrower) external view virtual returns (uint256 maxAssets) {
-        (maxAssets,) = Views.maxBorrow({_borrower: _borrower, _sameAsset: false});
+        (maxAssets,) = Views.maxBorrow({_borrower: _borrower});
     }
 
     /// @inheritdoc ISilo
@@ -421,8 +438,9 @@ contract Silo is ISilo, ShareCollateralToken {
         returns (uint256 shares)
     {
         uint256 assets;
+        bool collateralTypeChanged;
 
-        (assets, shares) = Actions.borrow(
+        (assets, shares, collateralTypeChanged) = Actions.borrow(
             BorrowArgs({
                 assets: _assets,
                 shares: 0,
@@ -432,11 +450,13 @@ contract Silo is ISilo, ShareCollateralToken {
         );
 
         emit Borrow(msg.sender, _receiver, _borrower, assets, shares);
+
+        if (collateralTypeChanged) emit CollateralTypeChanged(msg.sender);
     }
 
     /// @inheritdoc ISilo
     function maxBorrowShares(address _borrower) external view virtual returns (uint256 maxShares) {
-        (,maxShares) = Views.maxBorrow({_borrower: _borrower, _sameAsset: false});
+        (,maxShares) = Views.maxBorrow({_borrower: _borrower});
     }
 
     /// @inheritdoc ISilo
@@ -457,8 +477,9 @@ contract Silo is ISilo, ShareCollateralToken {
         returns (uint256 assets)
     {
         uint256 shares;
+        bool collateralTypeChanged;
 
-        (assets, shares) = Actions.borrow(
+        (assets, shares, collateralTypeChanged) = Actions.borrow(
             BorrowArgs({
                 assets: 0,
                 shares: _shares,
@@ -468,31 +489,18 @@ contract Silo is ISilo, ShareCollateralToken {
         );
 
         emit Borrow(msg.sender, _receiver, _borrower, assets, shares);
+
+        if (collateralTypeChanged) emit CollateralTypeChanged(msg.sender);
     }
 
     /// @inheritdoc ISilo
-    function maxBorrowSameAsset(address _borrower) external view virtual returns (uint256 maxAssets) {
-        (maxAssets,) = Views.maxBorrow({_borrower: _borrower, _sameAsset: true});
+    function maxBorrowSameAsset(address) external pure virtual returns (uint256) {
+        return 0;
     }
 
     /// @inheritdoc ISilo
-    function borrowSameAsset(uint256 _assets, address _receiver, address _borrower)
-        external
-        virtual
-        returns (uint256 shares)
-    {
-        uint256 assets;
-
-        (assets, shares) = Actions.borrowSameAsset(
-            BorrowArgs({
-                assets: _assets,
-                shares: 0,
-                receiver: _receiver,
-                borrower: _borrower
-            })
-        );
-
-        emit Borrow(msg.sender, _receiver, _borrower, assets, shares);
+    function borrowSameAsset(uint256, address, address) external virtual returns (uint256) {
+        revert Deprecated();
     }
 
     /// @inheritdoc ISilo
@@ -526,8 +534,7 @@ contract Silo is ISilo, ShareCollateralToken {
 
     /// @inheritdoc ISilo
     function switchCollateralToThisSilo() external virtual {
-        Actions.switchCollateralToThisSilo();
-        emit CollateralTypeChanged(msg.sender);
+        revert Deprecated();
     }
 
     /// @inheritdoc ISilo
@@ -637,8 +644,9 @@ contract Silo is ISilo, ShareCollateralToken {
     /// @inheritdoc ISilo
     function withdrawFees() external virtual {
         _accrueInterest();
-        (uint256 daoFees, uint256 deployerFees) = Actions.withdrawFees(this);
-        emit WithdrawnFeed(daoFees, deployerFees);
+        (uint256 daoFees, uint256 deployerFees, bool redirectedDeployerFees) = Actions.withdrawFees(this);
+
+        emit WithdrawnFees(daoFees, deployerFees, redirectedDeployerFees);
     }
 
     function _totalAssets() internal view virtual returns (uint256 totalManagedAssets) {

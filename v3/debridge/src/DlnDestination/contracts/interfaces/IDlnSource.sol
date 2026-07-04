@@ -19,37 +19,18 @@ interface IDlnSource {
     function globalTransferFeeBps() external returns (uint16);
 
     /**
-     * @dev Places a new order with pseudo-random orderId onto the DLN
-     * @notice deprecated
-     * @param _orderCreation a structured parameter from the DlnOrderLib.OrderCreation library, containing all the necessary information required for creating a new order.
-     * @param _affiliateFee a bytes parameter specifying the affiliate fee that will be rewarded to the beneficiary. It includes the beneficiary's details and the affiliate amount.
-     * @param _referralCode a 32-bit unsigned integer containing the referral code. This code is traced back to the referral source or person that facilitated this order. This code is also emitted in an event for tracking purposes.
-     * @param _permitEnvelope a bytes parameter that is used to approve the spender through a signature. It contains the amount, the deadline, and the signature.
-     * @return bytes32 identifier (orderId) of a newly placed order
+     * @notice The `createOrder` function is used in the DLN protocol to initialize a new order.
+     * @dev The function takes arguments:
+     * @param _orderCreation is a structured parameter from the DlnOrderLib.OrderCreation library, containing all the necessary information required for creating a new order.
+     * @param _affiliateFee is a bytes parameter specifying the affiliate fee that will be rewarded to the beneficiary. It includes the beneficiary's details and the affiliate amount.
+     * @param _referralCode is a 32-bit unsigned integer containing the referral code. This code is traced back to the referral source or person that facilitated this order. This code is also emitted in an event for tracking purposes.
+     * @param _permitEnvelope is a bytes parameter that is used to approve the spender through a signature. It contains the amount, the deadline, and the signature.
+     * @return bytes32 Unique identifier for the newly created order.
      */
     function createOrder(
         DlnOrderLib.OrderCreation calldata _orderCreation,
         bytes calldata _affiliateFee,
         uint32 _referralCode,
         bytes calldata _permitEnvelope
-    ) external payable returns (bytes32);
-
-    /**
-     * @dev Places a new order with deterministic orderId onto the DLN
-     * @param _orderCreation a structured parameter from the DlnOrderLib.OrderCreation library, containing all the necessary information required for creating a new order.
-     * @param _salt an input source of randomness for getting a deterministic identifier of an order (orderId)
-     * @param _affiliateFee a bytes parameter specifying the affiliate fee that will be rewarded to the beneficiary. It includes the beneficiary's details and the affiliate amount.
-     * @param _referralCode a 32-bit unsigned integer containing the referral code. This code is traced back to the referral source or person that facilitated this order. This code is also emitted in an event for tracking purposes.
-     * @param _permitEnvelope a bytes parameter that is used to approve the spender through a signature. It contains the amount, the deadline, and the signature.
-     * @param _payload an arbitrary data to be tied together with the order for future off-chain analysis
-     * @return bytes32 identifier (orderId) of a newly placed order
-     */
-    function createSaltedOrder(
-        DlnOrderLib.OrderCreation calldata _orderCreation,
-        uint64 _salt,
-        bytes calldata _affiliateFee,
-        uint32 _referralCode,
-        bytes calldata _permitEnvelope,
-        bytes calldata _payload
     ) external payable returns (bytes32);
 }

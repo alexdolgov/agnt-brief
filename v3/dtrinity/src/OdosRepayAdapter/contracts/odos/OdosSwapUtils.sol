@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GNU AGPLv3
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 import "./interface/IOdosRouterV2.sol";
 import "@rari-capital/solmate/src/utils/SafeTransferLib.sol";

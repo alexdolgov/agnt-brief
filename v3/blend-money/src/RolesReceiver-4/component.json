@@ -1,0 +1,18 @@
+{
+  "component": "RolesReceiver-4",
+  "main_contract": "RolesReceiver",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x6f94ac2c4129a7f1435532f39913dfd23d061263",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

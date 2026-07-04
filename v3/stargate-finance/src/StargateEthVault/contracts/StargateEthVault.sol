@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: BUSL-1.1
-
 // Copyright (C) 2015, 2016, 2017 Dapphub
 
 // This program is free software: you can redistribute it and/or modify
@@ -24,9 +22,9 @@ import "./interfaces/IStargateEthVault.sol";
 // This contract always UNWRAPS the erc20 for native gas token on transfer + transferFrom.
 // If you wish to disable the transfer auto-unwrap, you can specify _to addresses with `setNoUnwrapTo`
 contract StargateEthVault is IStargateEthVault, Ownable, ReentrancyGuard {
-    string public constant name = "Stargate Ether Vault";
-    string public constant symbol = "SGETH";
-    uint8 public constant decimals = 18;
+    string public constant name     = "Stargate Ether Vault";
+    string public constant symbol   = "SGETH";
+    uint8  public constant decimals = 18;
 
     uint256 public totalSupply;
 
@@ -36,9 +34,9 @@ contract StargateEthVault is IStargateEthVault, Ownable, ReentrancyGuard {
     event Withdrawal(address indexed src, uint wad);
     event TransferNative(address indexed src, address indexed dst, uint wad);
 
-    mapping(address => uint) public balanceOf;
-    mapping(address => mapping(address => uint)) public allowance;
-    mapping(address => bool) public noUnwrapTo;
+    mapping (address => uint)                       public  balanceOf;
+    mapping (address => mapping (address => uint))  public  allowance;
+    mapping (address => bool)                       public  noUnwrapTo;
 
     // if you do NOT wish to unwrap eth on transfers TO certain addresses
     function setNoUnwrapTo(address _addr) external onlyOwner {
@@ -69,11 +67,7 @@ contract StargateEthVault is IStargateEthVault, Ownable, ReentrancyGuard {
         return transferFrom(msg.sender, dst, wad);
     }
 
-    function transferFrom(
-        address src,
-        address dst,
-        uint wad
-    ) public override nonReentrant returns (bool) {
+    function transferFrom(address src, address dst, uint wad) public override nonReentrant returns (bool) {
         require(balanceOf[src] >= wad);
 
         if (src != msg.sender && allowance[src][msg.sender] != uint(-1)) {
@@ -84,10 +78,11 @@ contract StargateEthVault is IStargateEthVault, Ownable, ReentrancyGuard {
         // always decrement the src (payer) address
         balanceOf[src] -= wad;
 
-        if (noUnwrapTo[dst]) {
+        if(noUnwrapTo[dst]){
             // we do *not* unwrap
             balanceOf[dst] += wad;
             emit Transfer(src, dst, wad);
+
         } else {
             // unwrap and send native gas token
             totalSupply -= wad; // if its getting unwrapped, decrement the totalSupply
@@ -104,4 +99,5 @@ contract StargateEthVault is IStargateEthVault, Ownable, ReentrancyGuard {
     receive() external payable {
         deposit();
     }
+
 }

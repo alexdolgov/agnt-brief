@@ -1,0 +1,18 @@
+{
+  "component": "BoringChef-2",
+  "main_contract": "BoringChef",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0bf101ab5cc8c6be93d9fb6742e1e4d724afa414",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

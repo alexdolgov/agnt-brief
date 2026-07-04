@@ -20,11 +20,6 @@ from ethereum.ercs import IERC20Detailed
 
 from contracts.v1 import P2PLendingVaultSecuritize as vault
 
-# Workaround for allowing static calls to functions that delegate to other facets
-interface StaticSelf:
-    def _simulate_partial_liquidation(loan: base.Loan) -> base.PartialLiquidationResult: view
-
-
 event LoanCreated:
     id: bytes32
     amount: uint256
@@ -49,11 +44,7 @@ event LoanCreated:
     full_liquidation_fee: uint256
     offer_id: bytes32
     offer_tracing_id: bytes32
-    oracle_rate_num: uint256
-    oracle_rate_den: uint256
     vault_id: uint256
-    vault_addr: address
-
 
 event LoanPaid:
     id: bytes32
@@ -179,13 +170,11 @@ event LoanLiquidated:
     liquidation_fee: uint256
     protocol_settlement_fee_amount: uint256
 
-event LoanMaturityExtended:
-    loan_id: bytes32
-    original_maturity: uint256
-    new_maturity: uint256
-    lender: address
+event LoanCalled:
+    id: bytes32
     borrower: address
-    caller: address
+    lender: address
+    call_time: uint256
 
 event OwnerProposed:
     owner: address
@@ -203,10 +192,6 @@ event TransferAgentChanged:
 event SecuritizeRedemptionWalletChanged:
     old_wallet: address
     new_wallet: address
-
-event VaultRegistrarChanged:
-    old_registrar: address
-    new_registrar: address
 
 
 event ProtocolFeeSet:
@@ -257,7 +242,7 @@ event LoanCollateralRedeemStarted:
 BPS: constant(uint256) = 10000
 YEAR_TO_SECONDS: constant(uint256) = 365 * 24 * 60 * 60
 
-VERSION: public(constant(String[31])) = "P2PLendingSErc20.20260310"
+VERSION: public(constant(String[31])) = "P2PLendingSErc20.20260126"
 
 payment_token: public(immutable(address))
 collateral_token: public(immutable(address))
@@ -295,8 +280,7 @@ def __init__(
     _liquidation_addr: address,
     _vault_impl_addr: address,
     _transfer_agent: address,
-    _securitize_redemption_wallet: address,
-    _vault_registrar_addr: address
+    _securitize_redemption_wallet: address
 ):
 
     """
@@ -317,7 +301,6 @@ def __init__(
     @param _vault_impl_addr The address of the vault implementation contract.
     @param _transfer_agent The wallet address for the transfer agent role.
     @param _securitize_redemption_wallet The wallet address for Securitize redemptions.
-    @param _vault_registrar_addr The address of the vault registrar connector contract.
     """
 
     base.__init__()
@@ -339,7 +322,6 @@ def __init__(
     base.protocol_wallet = _protocol_wallet
     base.transfer_agent = _transfer_agent
     base.securitize_redemption_wallet = _securitize_redemption_wallet
-    base.vault_registrar = _vault_registrar_addr
     base.partial_liquidation_fee = _partial_liquidation_fee
     base.full_liquidation_fee = _full_liquidation_fee
 
@@ -352,7 +334,6 @@ def __init__(
             self
         )
     )
-
 
 
 # Config functions
@@ -504,19 +485,6 @@ def set_securitize_redemption_wallet(_address: address):
     log SecuritizeRedemptionWalletChanged(old_wallet=base.securitize_redemption_wallet, new_wallet=_address)
     base.securitize_redemption_wallet = _address
 
-@external
-def change_vault_registrar(new_vault_registrar: address):
-
-    """
-    @notice Change the vault registrar
-    @dev Changes the vault registrar to the given address and logs the event. Admin function.
-    @param new_vault_registrar The new vault registrar.
-    """
-
-    assert msg.sender == base.owner
-    log VaultRegistrarChanged(old_registrar=base.vault_registrar, new_registrar=new_vault_registrar)
-    base.vault_registrar = new_vault_registrar
-
 
 # Core functions
 
@@ -605,7 +573,7 @@ def create_loan(
     base._check_and_update_offer_state(offer, principal)
     base.loans[loan.id] = base._loan_state_hash(loan)
 
-    _vault: vault.Vault = base._create_new_vault(loan.borrower, vault_impl_addr, collateral_token, base.vault_registrar)
+    _vault: vault.Vault = base._create_vault_if_needed(loan.borrower, vault_impl_addr, collateral_token)
     base._receive_collateral(loan.borrower, loan.collateral_amount, _vault)
     self._transfer_funds(loan.lender, loan.borrower, loan.amount - loan.origination_fee_amount)
 
@@ -636,16 +604,13 @@ def create_loan(
         full_liquidation_fee=loan.full_liquidation_fee,
         offer_id=offer_id,
         offer_tracing_id=offer.offer.tracing_id,
-        oracle_rate_num=convertion_rate.numerator,
-        oracle_rate_den=convertion_rate.denominator,
-        vault_id=loan.vault_id,
-        vault_addr=_vault.address,
+        vault_id=loan.vault_id
     )
     return loan.id
 
 
 @external
-def settle_loan(loan: base.Loan, redeem_result: base.SignedRedeemResult):
+def settle_loan(loan: base.Loan):
 
     """
     @notice Settle a loan.
@@ -660,8 +625,8 @@ def settle_loan(loan: base.Loan, redeem_result: base.SignedRedeemResult):
     in_vault_collateral: uint256 = 0
     in_vault_payment_token: uint256 = 0
     if base._is_loan_redeemed(loan):
-        assert base._is_loan_redeem_concluded(loan, _vault, redeem_result), "redeem not concluded"
-        in_vault_payment_token, in_vault_collateral = base._get_redeem_balances(loan, _vault, payment_token, redeem_result.result)
+        assert base._is_loan_redeem_concluded(loan), "redeem not concluded"
+        in_vault_payment_token, in_vault_collateral = base._get_redeem_balances(_vault, payment_token)
 
     interest: uint256 = base._compute_settlement_interest(loan)
     protocol_settlement_fee: uint256 = loan.protocol_settlement_fee * interest // BPS
@@ -731,7 +696,7 @@ def partially_liquidate_loan(loan: base.Loan):
 
 
 @external
-def liquidate_loan(loan: base.Loan, redeem_result: base.SignedRedeemResult):
+def liquidate_loan(loan: base.Loan):
 
     """
     @notice Fully liquidates a defaulted loan. Can be called by anyone.
@@ -742,7 +707,6 @@ def liquidate_loan(loan: base.Loan, redeem_result: base.SignedRedeemResult):
         liquidation_addr,
         abi_encode(
             loan,
-            redeem_result,
             payment_token,
             collateral_token,
             oracle_addr,
@@ -752,10 +716,73 @@ def liquidate_loan(loan: base.Loan, redeem_result: base.SignedRedeemResult):
             payment_token_decimals,
             offer_sig_domain_separator,
             vault_impl_addr,
-            method_id=method_id("liquidate_loan((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256),((address,uint256,uint256,uint256),(uint256,uint256,uint256)),address,address,address,bool,address,uint256,uint256,bytes32,address)"),
+            method_id=method_id("liquidate_loan((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256),address,address,address,bool,address,uint256,uint256,bytes32,address)"),
         ),
         is_delegate_call=True
     )
+
+@external
+def call_loan(loan: base.Loan):
+
+    """
+    @notice Call a loan.
+    @param loan The loan to be called.
+    """
+
+    raw_call(
+        liquidation_addr,
+        abi_encode(
+            loan,
+            method_id=method_id("call_loan((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256))"),
+        ),
+        is_delegate_call=True
+    )
+    # assert base._is_loan_valid(loan), "invalid loan"
+    # assert base._check_user(loan.lender), "not lender"
+
+    # assert loan.call_eligibility > 0, "loan not callable"
+    # assert loan.call_time == 0, "loan already called"
+    # assert block.timestamp >= loan.start_time + loan.call_eligibility, "call eligibility not reached"
+    # assert not base._is_loan_defaulted(loan), "loan defaulted"
+
+    # updated_loan: base.Loan = base.Loan(
+    #     id=loan.id,
+    #     offer_id=loan.offer_id,
+    #     offer_tracing_id=loan.offer_tracing_id,
+    #     initial_amount=loan.initial_amount,
+    #     amount=loan.amount,
+    #     apr=loan.apr,
+    #     payment_token=loan.payment_token,
+    #     maturity=loan.maturity,
+    #     start_time=loan.start_time,
+    #     accrual_start_time=loan.accrual_start_time,
+    #     borrower=loan.borrower,
+    #     lender=loan.lender,
+    #     collateral_token=loan.collateral_token,
+    #     collateral_amount=loan.collateral_amount,
+    #     min_collateral_amount=loan.min_collateral_amount,
+    #     origination_fee_amount=loan.origination_fee_amount,
+    #     protocol_upfront_fee_amount=loan.protocol_upfront_fee_amount,
+    #     protocol_settlement_fee=loan.protocol_settlement_fee,
+    #     partial_liquidation_fee=loan.partial_liquidation_fee,
+    #     full_liquidation_fee=loan.full_liquidation_fee,
+    #     call_eligibility=loan.call_eligibility,
+    #     call_window=loan.call_window,
+    #     liquidation_ltv= loan.liquidation_ltv,
+    #     oracle_addr=loan.oracle_addr,
+    #     initial_ltv= loan.initial_ltv,
+    #     call_time=block.timestamp,
+    #     vault_id=loan.vault_id,
+    #     redeem_start=loan.redeem_start,
+    #     redeem_residual_collateral=loan.redeem_residual_collateral,
+    # )
+    # base.loans[loan.id] = base._loan_state_hash(updated_loan)
+    # log LoanCalled(
+    #     id=loan.id,
+    #     borrower=loan.borrower,
+    #     lender=loan.lender,
+    #     call_time=updated_loan.call_time,
+    # )
 
 
 @external
@@ -894,58 +921,6 @@ def remove_collateral_from_loan(loan: base.Loan, collateral_amount: uint256):
         new_ltv=new_ltv
     )
 
-
-@external
-def extend_loan(
-    loan: base.Loan,
-    offer: base.SignedLoanExtensionOffer,
-    new_maturity: uint256,
-):
-
-    """
-    @notice Extend a loan.
-    @dev All loan parameters remain the same except the maturity which is extended to the new maturity. Must be called by the borrower and the offer must be signed by the lender.
-    @param loan The current loan.
-    @param offer The signed offer for the loan extension.
-    @param new_maturity The new maturity timestamp for the loan.
-    """
-
-    raw_call(
-        refinance_addr,
-        abi_encode(
-            loan,
-            offer,
-            new_maturity,
-            offer_sig_domain_separator,
-            method_id=method_id("extend_loan((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256),((bytes32,uint256,uint256),(uint256,uint256,uint256)),uint256,bytes32)"),
-        ),
-        is_delegate_call=True
-    )
-
-
-
-@external
-def extend_loan_lender(loan: base.Loan, new_maturity: uint256):
-
-    """
-    @notice Extend a loan.
-    @dev All loan parameters remain the same except the maturity which is extended to the new maturity. Must be called by the lender.
-    @param loan The current loan.
-    @param new_maturity The new maturity timestamp for the loan.
-    """
-
-    raw_call(
-        refinance_addr,
-        abi_encode(
-            loan,
-            new_maturity,
-            method_id=method_id("extend_loan_lender((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256),uint256)"),
-        ),
-        is_delegate_call=True
-    )
-
-
-
 @external
 def revoke_offer(offer: base.SignedOffer):
 
@@ -1018,32 +993,49 @@ def is_loan_redeemed(loan: base.Loan) -> bool:
 
 @view
 @external
-def simulate_partial_liquidation(loan: base.Loan) -> base.PartialLiquidationResult:
+def _is_loan_redeem_concluded(loan: base.Loan) -> bool:
     """
-    @notice Simulates a partial liquidation of a loan.
-    @param loan The loan to simulate a partial liquidation for.
-    @return The result of the partial liquidation simulation.
+    @notice Check if a loan redeem is completed.
+    @param loan The loan to check.
+    @return True if the loan redeem is completed, false otherwise.
     """
-    return staticcall StaticSelf(self)._simulate_partial_liquidation(loan)
+
+    return base._is_loan_redeem_concluded(loan)
 
 
+@view
 @external
-def _simulate_partial_liquidation(loan: base.Loan) -> base.PartialLiquidationResult:
+def simulate_partial_liquidation(loan: base.Loan) -> base.PartialLiquidationResult:
 
-    assert msg.sender == self
-    return abi_decode(raw_call(
-        liquidation_addr,
-        abi_encode(
-            loan,
-            oracle_addr,
-            oracle_reverse,
-            payment_token_decimals,
-            collateral_token_decimals,
-            method_id=method_id("simulate_partial_liquidation((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256),address,bool,uint256,uint256)"),
-        ),
-        max_outsize=128,
-        is_delegate_call=True,
-    ), base.PartialLiquidationResult)
+    assert base._is_loan_valid(loan), "invalid loan"
+    assert not base._is_loan_defaulted(loan), "loan defaulted"
+    assert not base._is_loan_redeemed(loan), "loan redeemed"
+
+    current_interest: uint256 = base._compute_settlement_interest(loan)
+    convertion_rate: base.UInt256Rational = self._get_oracle_rate()
+    current_ltv: uint256 = self._compute_ltv(loan.collateral_amount, loan.amount + current_interest, convertion_rate)
+
+    assert current_ltv >= loan.liquidation_ltv, "ltv lt liquidation ltv"
+
+    debt_written_off: uint256 = 0
+    collateral_claimed: uint256 = 0
+    liquidation_fee: uint256 = 0
+    debt_written_off, collateral_claimed, liquidation_fee = self._compute_partial_liquidation(
+        loan.collateral_amount,
+        loan.amount + current_interest,
+        loan.initial_ltv,
+        loan.partial_liquidation_fee,
+        convertion_rate,
+    )
+
+    assert debt_written_off < loan.amount + current_interest, "written off ge debt"
+
+    return base.PartialLiquidationResult(
+        collateral_claimed=collateral_claimed,
+        liquidation_fee=liquidation_fee,
+        debt_written_off=debt_written_off,
+        updated_ltv=self._compute_ltv(loan.collateral_amount - collateral_claimed - liquidation_fee, loan.amount + current_interest - debt_written_off, convertion_rate)
+    )
 
 
 @external
@@ -1161,7 +1153,7 @@ def create_vault_if_needed(wallet: address):
     @param wallet The wallet address
     """
 
-    base._create_vault_if_needed(wallet, vault_impl_addr, collateral_token, base.vault_registrar)
+    base._create_vault_if_needed(wallet, vault_impl_addr, collateral_token)
 
 
 @external
@@ -1175,7 +1167,6 @@ def redeem(loan: base.Loan, residual_collateral: uint256):
     assert base._check_user(loan.borrower), "not borrower"
     assert not base._is_loan_defaulted(loan), "loan defaulted"
     assert not base._is_loan_redeemed(loan), "loan already redeemed"
-    assert base.securitize_redemption_wallet != empty(address), "redemption wallet not set"
 
     assert residual_collateral <= loan.collateral_amount, "residual collateral gt total"
 
@@ -1222,45 +1213,76 @@ def redeem(loan: base.Loan, residual_collateral: uint256):
         collateral_token=loan.collateral_token,
         vault_id=loan.vault_id,
         redeem_start=updated_loan.redeem_start,
-        redeem_residual_collateral=updated_loan.redeem_residual_collateral,
+        redeem_residual_collateral=loan.redeem_residual_collateral,
     )
 
 
-@external
-def transfer_loan(loan: base.Loan, new_borrower: address, new_borrower_kyc: base.SignedWalletValidation, redeem_result: base.SignedRedeemResult):
-
-    """
-    @notice Transfer a loan to a new borrower.
-    @dev Only allowed to be called by the transfer agent. Used for supporting cases of death, lost keys, or legal transfers
-    @param loan The loan to be transferred.
-    @param new_borrower The address of the new borrower.
-    @param new_borrower_kyc The signed KYC validation for the new borrower.
-    @param redeem_result The signed redeem result if the loan is in redeem, empty otherwise.
-    """
-
-    raw_call(
-        liquidation_addr,
-        abi_encode(
-            loan,
-            new_borrower,
-            new_borrower_kyc,
-            redeem_result,
-            payment_token,
-            collateral_token,
-            oracle_addr,
-            oracle_reverse,
-            kyc_validator_addr,
-            collateral_token_decimals,
-            payment_token_decimals,
-            offer_sig_domain_separator,
-            vault_impl_addr,
-            base.vault_registrar,
-            method_id=method_id("transfer_loan((bytes32,bytes32,bytes32,uint256,uint256,uint256,address,uint256,uint256,uint256,address,address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,uint256,uint256,uint256,uint256,uint256),address,((address,uint256),(uint256,uint256,uint256)),((address,uint256,uint256,uint256),(uint256,uint256,uint256)),address,address,address,bool,address,uint256,uint256,bytes32,address,address)"),
-        ),
-        is_delegate_call=True
-    )
-
-
+# @external
+# def transfer_loan(loan: base.Loan, new_borrower: address, new_borrower_kyc: base.SignedWalletValidation):
+#
+#     """
+#     @notice Transfer a loan to a new borrower.
+#     @dev Only allowed to be called by the transfer agent. Used for supporting cases of death, lost keys, or legal transfers
+#     @param loan The loan to be transferred.
+#     @param new_borrower The address of the new borrower.
+#     @param new_borrower_kyc The signed KYC validation for the new borrower.
+#     """
+#
+#     assert base._is_loan_valid(loan), "invalid loan"
+#     assert base._check_user(base.transfer_agent), "not transfer agent"
+#
+#     assert staticcall base.KYCValidator(kyc_validator_addr).check_validation(new_borrower_kyc), "KYC validation fail"
+#     assert new_borrower_kyc.validation.wallet == new_borrower, "KYC validation fail"
+#
+#     updated_loan: base.Loan = base.Loan(
+#         id=empty(bytes32),
+#         offer_id=loan.offer_id,
+#         offer_tracing_id=loan.offer_tracing_id,
+#         initial_amount=loan.initial_amount,
+#         amount=loan.amount,
+#         apr=loan.apr,
+#         payment_token=loan.payment_token,
+#         maturity=loan.maturity,
+#         start_time=loan.start_time,
+#         accrual_start_time=loan.accrual_start_time,
+#         borrower=new_borrower,
+#         lender=loan.lender,
+#         collateral_token=loan.collateral_token,
+#         collateral_amount=loan.collateral_amount,
+#         min_collateral_amount=loan.min_collateral_amount,
+#         origination_fee_amount=loan.origination_fee_amount,
+#         protocol_upfront_fee_amount=loan.protocol_upfront_fee_amount,
+#         protocol_settlement_fee=loan.protocol_settlement_fee,
+#         partial_liquidation_fee=loan.partial_liquidation_fee,
+#         full_liquidation_fee=loan.full_liquidation_fee,
+#         call_eligibility=loan.call_eligibility,
+#         call_window=loan.call_window,
+#         liquidation_ltv= loan.liquidation_ltv,
+#         oracle_addr=loan.oracle_addr,
+#         initial_ltv= loan.initial_ltv,
+#         call_time=loan.call_time,
+#         vault_id=base.vault_count[new_borrower],
+#         redeem_start=loan.redeem_start,
+#         redeem_residual_collateral=loan.redeem_residual_collateral,
+#     )
+#     updated_loan.id = base._compute_loan_id(updated_loan)
+#     base.loans[updated_loan.id] = base._loan_state_hash(updated_loan)
+#     base.loans[loan.id] = empty(bytes32)
+#
+#     base._send_collateral(
+#         base._create_vault_if_needed(new_borrower, vault_impl_addr, collateral_token).address,
+#         loan.collateral_amount,
+#         base._get_vault(loan.borrower, loan.vault_id, vault_impl_addr)
+#     )
+#
+#     log LoanBorrowerTransferred(
+#         loan_id=loan.id,
+#         new_loan_id=updated_loan.id,
+#         old_borrower=loan.borrower,
+#         new_borrower=new_borrower,
+#         lender=loan.lender,
+#         vault_id=updated_loan.vault_id
+#     )
 
 # Internal functions
 
@@ -1298,3 +1320,23 @@ def _receive_funds(_from: address, _amount: uint256):
 @internal
 def _transfer_funds(_from: address, _to: address, _amount: uint256):
     base._transfer_funds(_from, _to, _amount, payment_token)
+
+
+@view
+@internal
+def _compute_partial_liquidation(
+    collateral_amount: uint256,
+    outstanding_debt: uint256,
+    initial_ltv: uint256,
+    partial_liquidation_fee: uint256,
+    convertion_rate: base.UInt256Rational,
+) -> (uint256, uint256, uint256):
+    return base._compute_partial_liquidation(
+        collateral_amount,
+        outstanding_debt,
+        initial_ltv,
+        partial_liquidation_fee,
+        convertion_rate,
+        payment_token_decimals,
+        collateral_token_decimals
+    )

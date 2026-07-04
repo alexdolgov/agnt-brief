@@ -1,0 +1,18 @@
+{
+  "component": "SwapperUpgrader-2",
+  "main_contract": "SwapperUpgrader",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc9ffa23308d02dc9cffe955fcce5ffd117a03b46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

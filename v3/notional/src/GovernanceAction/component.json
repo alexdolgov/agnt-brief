@@ -1,15 +1,15 @@
 {
   "component": "GovernanceAction",
   "main_contract": "GovernanceAction",
-  "source_file_count": 71,
+  "source_file_count": 70,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x10aae34011c256a9e63ab5ac50154c2539c0f51d",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x514f9563ace90bde2f0f00091208236e1864690f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

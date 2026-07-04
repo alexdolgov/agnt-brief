@@ -1,0 +1,18 @@
+{
+  "component": "CErc20Upgradable-2",
+  "main_contract": "CErc20Upgradable",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x9c45db7ef823e208963777d2d3dfb83468c08f41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

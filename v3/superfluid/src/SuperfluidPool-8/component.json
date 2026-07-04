@@ -1,0 +1,61 @@
+{
+  "component": "SuperfluidPool-8",
+  "main_contract": "SuperfluidPool",
+  "source_file_count": 51,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2023-12%20Trail%20of%20Bits%20-%20Changes%20Since%20Audit.md",
+    "https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2023-12%20Trail%20of%20Bits%20-%20Comprehensive%20Report%20with%20Fix%20Review.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0fcddf2d5023219145e902cb3b0c44159ab59d61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x57897b796ece6633fc7c0c6490b4eb84d58509e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x83fd14e2384e7b2f1bae7abacfacf66e33dd82d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x91bd026276c23cd88011a6a7f3dba309b07796fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93839e0ab1ce35f980150cf3b5659cd354246328",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb0ee1412d5bbcda698e369ebc2dc314ebf7be313",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

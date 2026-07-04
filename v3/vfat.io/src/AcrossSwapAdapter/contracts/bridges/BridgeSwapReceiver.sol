@@ -1,20 +1,30 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
+import { SwapStep } from "contracts/dex/SwapTypes.sol";
 
 import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
 import { GuardianAdmin } from "contracts/base/GuardianAdmin.sol";
-import { MultiSwapRouter } from "contracts/MultiSwapRouter.sol";
+import { SwapRouter } from "contracts/SwapRouter.sol";
+
+interface IWETHBridgeSwapReceiver {
+    function withdraw(
+        uint256
+    ) external;
+}
 
 /// @title BridgeSwapReceiver
 /// @author vfat.tools
 /// @notice Receives bridged tokens from whitelisted adapters and swaps them
-/// via MultiSwapRouter. Bridge-specific callback handling is delegated to
+/// via SwapRouter. Bridge-specific callback handling is delegated to
 /// per-bridge adapter contracts (e.g. StargateSwapAdapter).
 contract BridgeSwapReceiver is GuardianAdmin {
     /// ERRORS ///
-
     error NotWhitelistedAdapter();
     error ZeroAddress();
+    error OnlySelf();
+    error NativeGasDropTokenNotWrappedNative();
+    error NativeGasDropExceedsAmount();
+    error NativeGasDropTokenConflicts();
 
     /// EVENTS ///
 
@@ -27,16 +37,14 @@ contract BridgeSwapReceiver is GuardianAdmin {
     );
 
     event BridgeSwapFallback(
-        address indexed recipient,
-        address token,
-        uint256 amount
+        address indexed recipient, address token, uint256 amount
     );
 
     event WhitelistedAdapterSet(address adapter, bool whitelisted);
 
     /// STORAGE ///
 
-    MultiSwapRouter public immutable msr;
+    SwapRouter public immutable msr;
 
     mapping(address => bool) public whitelistedAdapters;
     address[] private _adapters;
@@ -44,7 +52,7 @@ contract BridgeSwapReceiver is GuardianAdmin {
 
     /// CONSTRUCTOR ///
 
-    /// @param msr_ MultiSwapRouter address
+    /// @param msr_ SwapRouter address
     /// @param admin_ Admin address for configuration
     constructor(
         address msr_,
@@ -52,7 +60,7 @@ contract BridgeSwapReceiver is GuardianAdmin {
         address guardian_
     ) GuardianAdmin(admin_, guardian_) {
         if (msr_ == address(0)) revert ZeroAddress();
-        msr = MultiSwapRouter(payable(msr_));
+        msr = SwapRouter(payable(msr_));
     }
 
     /// PUBLIC VIEW ///
@@ -118,7 +126,9 @@ contract BridgeSwapReceiver is GuardianAdmin {
     }
 
     /// @notice Rescue ETH stuck in this contract
-    function rescueETH(address to) external onlyAdmin {
+    function rescueETH(
+        address to
+    ) external onlyAdmin {
         SafeTransferLib.safeTransferETH(to, address(this).balance);
     }
 
@@ -126,15 +136,49 @@ contract BridgeSwapReceiver is GuardianAdmin {
 
     /// @notice Execute a swap with bridged tokens. Callable only by
     /// whitelisted adapters which have already transferred tokens here.
+    /// @param nativeGasDrop Native gas to leave for `recipient` on this
+    /// callback execution chain, denominated in wei. Supported only when
+    /// `token` is this chain's wrapped native token.
     function executeSwap(
         address token,
         uint256 amount,
         address recipient,
-        MultiSwapRouter.SwapStep[] calldata swapSteps,
+        SwapStep[] calldata swapSteps,
+        uint256 minAmountOut,
+        uint256 nativeGasDrop
+    ) external {
+        _onlyWhitelistedAdapter();
+        _swapOrFallback(
+            token, amount, recipient, swapSteps, minAmountOut, nativeGasDrop
+        );
+    }
+
+    /// @notice Execute a swap while reserving native gas from a separately
+    /// bridged wrapped-native token.
+    /// @param nativeGasDropToken Token delivered by the adapter for the gas
+    /// drop. Must be this chain's wrapped native token and must differ from
+    /// `token`; use `executeSwap(..., nativeGasDrop)` for primary-WETH drops.
+    /// @param nativeGasDrop Amount of `nativeGasDropToken` to unwrap and send
+    /// to `recipient`, denominated in wei.
+    function executeSwapWithNativeGasDropToken(
+        address token,
+        uint256 amount,
+        address nativeGasDropToken,
+        uint256 nativeGasDrop,
+        address recipient,
+        SwapStep[] calldata swapSteps,
         uint256 minAmountOut
     ) external {
         _onlyWhitelistedAdapter();
-        _swapOrFallback(token, amount, recipient, swapSteps, minAmountOut);
+        _swapOrFallbackWithNativeGasDropToken(
+            token,
+            amount,
+            nativeGasDropToken,
+            nativeGasDrop,
+            recipient,
+            swapSteps,
+            minAmountOut
+        );
     }
 
     /// INTERNAL ///
@@ -150,35 +194,164 @@ contract BridgeSwapReceiver is GuardianAdmin {
         address token,
         uint256 amount,
         address recipient,
-        MultiSwapRouter.SwapStep[] memory swapSteps,
-        uint256 minAmountOut
+        SwapStep[] calldata swapSteps,
+        uint256 minAmountOut,
+        uint256 nativeGasDrop
     ) internal {
-        SafeTransferLib.safeApprove(token, address(msr), 0);
-        SafeTransferLib.safeApprove(token, address(msr), amount);
-
-        try msr.swap(
-            swapSteps, amount, minAmountOut, recipient, block.timestamp
-        ) returns (uint256 amountOut) {
-            SafeTransferLib.safeApprove(token, address(msr), 0);
-            address tokenOut = swapSteps[swapSteps.length - 1].tokenOut;
+        try this.swapExternal(
+            token, amount, recipient, swapSteps, minAmountOut, nativeGasDrop
+        ) returns (
+            address tokenOut, uint256 swapAmount, uint256 amountOut
+        ) {
             emit BridgeSwapExecuted(
-                recipient, token, tokenOut, amount, amountOut
+                recipient, token, tokenOut, swapAmount, amountOut
             );
         } catch {
-            SafeTransferLib.safeApprove(token, address(msr), 0);
             uint256 fallbackAmount =
                 _transferAvailable(token, recipient, amount);
             emit BridgeSwapFallback(recipient, token, fallbackAmount);
         }
     }
 
+    function _swapOrFallbackWithNativeGasDropToken(
+        address token,
+        uint256 amount,
+        address nativeGasDropToken,
+        uint256 nativeGasDrop,
+        address recipient,
+        SwapStep[] calldata swapSteps,
+        uint256 minAmountOut
+    ) internal {
+        try this.swapWithNativeGasDropTokenExternal(
+            token,
+            amount,
+            nativeGasDropToken,
+            nativeGasDrop,
+            recipient,
+            swapSteps,
+            minAmountOut
+        ) returns (
+            address tokenOut, uint256 swapAmount, uint256 amountOut
+        ) {
+            emit BridgeSwapExecuted(
+                recipient, token, tokenOut, swapAmount, amountOut
+            );
+        } catch {
+            uint256 fallbackAmount =
+                _transferAvailable(token, recipient, amount);
+            if (nativeGasDrop > 0) {
+                _transferAvailable(nativeGasDropToken, recipient, nativeGasDrop);
+            }
+            emit BridgeSwapFallback(recipient, token, fallbackAmount);
+        }
+    }
+
+    function swapExternal(
+        address token,
+        uint256 amount,
+        address recipient,
+        SwapStep[] calldata swapSteps,
+        uint256 minAmountOut,
+        uint256 nativeGasDrop
+    )
+        external
+        returns (address tokenOut, uint256 swapAmount, uint256 amountOut)
+    {
+        if (msg.sender != address(this)) {
+            revert OnlySelf();
+        }
+
+        swapAmount =
+            _reserveNativeGasDrop(token, amount, recipient, nativeGasDrop);
+        SafeTransferLib.safeApprove(token, address(msr), 0);
+        SafeTransferLib.safeApprove(token, address(msr), swapAmount);
+
+        amountOut = msr.swap(
+            swapSteps, swapAmount, minAmountOut, recipient, block.timestamp
+        );
+
+        SafeTransferLib.safeApprove(token, address(msr), 0);
+        tokenOut = swapSteps[swapSteps.length - 1].tokenOut;
+    }
+
+    function swapWithNativeGasDropTokenExternal(
+        address token,
+        uint256 amount,
+        address nativeGasDropToken,
+        uint256 nativeGasDrop,
+        address recipient,
+        SwapStep[] calldata swapSteps,
+        uint256 minAmountOut
+    )
+        external
+        returns (address tokenOut, uint256 swapAmount, uint256 amountOut)
+    {
+        if (msg.sender != address(this)) {
+            revert OnlySelf();
+        }
+
+        _sendNativeGasDropToken(
+            token, nativeGasDropToken, recipient, nativeGasDrop
+        );
+        swapAmount = amount;
+
+        SafeTransferLib.safeApprove(token, address(msr), 0);
+        SafeTransferLib.safeApprove(token, address(msr), swapAmount);
+
+        amountOut = msr.swap(
+            swapSteps, swapAmount, minAmountOut, recipient, block.timestamp
+        );
+
+        SafeTransferLib.safeApprove(token, address(msr), 0);
+        tokenOut = swapSteps[swapSteps.length - 1].tokenOut;
+    }
+
+    function _reserveNativeGasDrop(
+        address token,
+        uint256 amount,
+        address recipient,
+        uint256 nativeGasDrop
+    ) internal returns (uint256 swapAmount) {
+        if (nativeGasDrop == 0) return amount;
+        if (nativeGasDrop >= amount) revert NativeGasDropExceedsAmount();
+
+        address wrappedNative = msr.wrappedNative();
+        if (token != wrappedNative) {
+            revert NativeGasDropTokenNotWrappedNative();
+        }
+
+        IWETHBridgeSwapReceiver(wrappedNative).withdraw(nativeGasDrop);
+        SafeTransferLib.safeTransferETH(recipient, nativeGasDrop);
+
+        return amount - nativeGasDrop;
+    }
+
+    function _sendNativeGasDropToken(
+        address token,
+        address nativeGasDropToken,
+        address recipient,
+        uint256 nativeGasDrop
+    ) internal {
+        if (nativeGasDrop == 0) return;
+
+        address wrappedNative = msr.wrappedNative();
+        if (nativeGasDropToken != wrappedNative) {
+            revert NativeGasDropTokenNotWrappedNative();
+        }
+        if (nativeGasDropToken == token) {
+            revert NativeGasDropTokenConflicts();
+        }
+
+        IWETHBridgeSwapReceiver(wrappedNative).withdraw(nativeGasDrop);
+        SafeTransferLib.safeTransferETH(recipient, nativeGasDrop);
+    }
+
     function _tokenBalance(
         address token,
         address account
     ) internal view returns (uint256) {
-        (bool success, bytes memory data) = token.staticcall(
-            abi.encodeWithSelector(0x70a08231, account)
-        );
+        (bool success, bytes memory data) =
+            token.staticcall(abi.encodeWithSelector(0x70a08231, account));
         if (!success || data.length < 32) return 0;
         return abi.decode(data, (uint256));
     }
@@ -194,4 +367,6 @@ contract BridgeSwapReceiver is GuardianAdmin {
             SafeTransferLib.safeTransfer(token, to, sent);
         }
     }
+
+    receive() external payable { }
 }

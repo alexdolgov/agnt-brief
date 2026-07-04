@@ -1,0 +1,26 @@
+{
+  "component": "LedgityDataProvider-2",
+  "main_contract": "LedgityDataProvider",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xda106c9c52579fef0001158e2206e60cce818a39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6cdb485bedd95c5460eef6dfe1886d7a7bc3b2ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

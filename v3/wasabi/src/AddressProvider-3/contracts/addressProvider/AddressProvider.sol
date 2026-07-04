@@ -17,21 +17,24 @@ contract AddressProvider is Ownable, IAddressProvider {
     address public feeReceiver;
     address public immutable wethAddress;
     address public liquidationFeeReceiver;
-    uint256 public liquidationFeeBps;
-
+    address public stakingAccountFactory;
+    IPartnerFeeManager public partnerFeeManager;
     constructor(
         IDebtController _debtController,
         IWasabiRouter _wasabiRouter,
         address _feeReceiver,
         address _wethAddress,
-        address _liquidationFeeReceiver
+        address _liquidationFeeReceiver,
+        address _stakingAccountFactory,
+        IPartnerFeeManager _partnerFeeManager
     ) Ownable(msg.sender) {
         debtController = _debtController;
         wasabiRouter = _wasabiRouter;
         feeReceiver = _feeReceiver;
         wethAddress = _wethAddress;
         liquidationFeeReceiver = _liquidationFeeReceiver;
-        liquidationFeeBps = 500; // 5%
+        stakingAccountFactory = _stakingAccountFactory;
+        partnerFeeManager = _partnerFeeManager;
     }
 
     /// @inheritdoc IAddressProvider
@@ -80,8 +83,13 @@ contract AddressProvider is Ownable, IAddressProvider {
     }
 
     /// @inheritdoc IAddressProvider
-    function getLiquidationFeeBps() external view override returns (uint256) {
-        return liquidationFeeBps;
+    function getStakingAccountFactory() external view returns (address) {
+        return stakingAccountFactory;
+    }
+
+    /// @inheritdoc IAddressProvider
+    function getPartnerFeeManager() external view returns (IPartnerFeeManager) {
+        return partnerFeeManager;
     }
 
     /// @dev sets the debt controller
@@ -110,10 +118,17 @@ contract AddressProvider is Ownable, IAddressProvider {
         liquidationFeeReceiver = _liquidationFeeReceiver;
     }
 
-    /// @dev sets the fee controller
-    /// @param _liquidationFeeBps the fee receiver
-    function setLiquidationFeeBps(uint256 _liquidationFeeBps) external onlyOwner {
-        if (_liquidationFeeBps > 500) revert InvalidLiquidationFee();
-        liquidationFeeBps = _liquidationFeeBps;
+    /// @dev sets the staking account factory
+    /// @param _stakingAccountFactory the staking account factory
+    function setStakingAccountFactory(address _stakingAccountFactory) external onlyOwner {
+        if (_stakingAccountFactory == address(0)) revert InvalidAddress();
+        stakingAccountFactory = _stakingAccountFactory;
+    }
+
+    /// @dev sets the partner fee manager
+    /// @param _partnerFeeManager the partner fee manager
+    function setPartnerFeeManager(address _partnerFeeManager) external onlyOwner {
+        if (_partnerFeeManager == address(0)) revert InvalidAddress();
+        partnerFeeManager = IPartnerFeeManager(_partnerFeeManager);
     }
 }

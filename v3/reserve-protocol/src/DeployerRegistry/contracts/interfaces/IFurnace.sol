@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.19;
+pragma solidity 0.8.9;
 
-import "../libraries/Fixed.sol";
+import "contracts/libraries/Fixed.sol";
 import "./IComponent.sol";
 
 /**
@@ -10,12 +10,26 @@ import "./IComponent.sol";
  */
 interface IFurnace is IComponent {
     // Initialization
-    function init(IMain main_, uint192 ratio_) external;
+    function init(
+        IMain main_,
+        uint48 period_,
+        uint192 ratio_
+    ) external;
+
+    /// Emitted when the melting period is changed
+    /// @param oldPeriod The old period
+    /// @param newPeriod The new period
+    event PeriodSet(uint48 indexed oldPeriod, uint48 indexed newPeriod);
+
+    function period() external view returns (uint48);
+
+    /// @custom:governance
+    function setPeriod(uint48) external;
 
     /// Emitted when the melting ratio is changed
     /// @param oldRatio The old ratio
     /// @param newRatio The new ratio
-    event RatioSet(uint192 oldRatio, uint192 newRatio);
+    event RatioSet(uint192 indexed oldRatio, uint192 indexed newRatio);
 
     function ratio() external view returns (uint192);
 

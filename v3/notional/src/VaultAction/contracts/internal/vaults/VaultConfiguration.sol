@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -17,6 +17,7 @@ import {LibStorage} from "../../global/LibStorage.sol";
 import {Constants} from "../../global/Constants.sol";
 import {SafeInt256} from "../../math/SafeInt256.sol";
 import {SafeUint256} from "../../math/SafeUint256.sol";
+import {FloatingPoint} from "../../math/FloatingPoint.sol";
 
 import {Emitter} from "../Emitter.sol";
 import {DateTime} from "../markets/DateTime.sol";
@@ -77,7 +78,6 @@ library VaultConfiguration {
         vaultConfig.vault = vaultAddress;
         vaultConfig.flags = s.flags;
         vaultConfig.borrowCurrencyId = s.borrowCurrencyId;
-        vaultConfig.minAccountBorrowSize = int256(s.minAccountBorrowSize).mul(Constants.INTERNAL_TOKEN_PRECISION);
         vaultConfig.feeRate = int256(uint256(s.feeRate5BPS).mul(Constants.FIVE_BASIS_POINTS));
         vaultConfig.minCollateralRatio = int256(uint256(s.minCollateralRatioBPS).mul(Constants.BASIS_POINT));
         vaultConfig.maxDeleverageCollateralRatio = int256(uint256(s.maxDeleverageCollateralRatioBPS).mul(Constants.BASIS_POINT));
@@ -87,9 +87,11 @@ library VaultConfiguration {
         vaultConfig.reserveFeeShare = int256(uint256(s.reserveFeeShare));
         vaultConfig.maxBorrowMarketIndex = s.maxBorrowMarketIndex;
         vaultConfig.secondaryBorrowCurrencies = s.secondaryBorrowCurrencies;
-        vaultConfig.minAccountSecondaryBorrow[0] = int256(uint256(s.minAccountSecondaryBorrow[0])).mul(Constants.INTERNAL_TOKEN_PRECISION);
-        vaultConfig.minAccountSecondaryBorrow[1] = int256(uint256(s.minAccountSecondaryBorrow[1])).mul(Constants.INTERNAL_TOKEN_PRECISION);
         vaultConfig.excessCashLiquidationBonus = int256(uint256(s.excessCashLiquidationBonus));
+
+        vaultConfig.minAccountBorrowSize = int256(FloatingPoint.unpackFromBits(s.minAccountBorrowSize));
+        vaultConfig.minAccountSecondaryBorrow[0] = int256(FloatingPoint.unpackFromBits(s.minAccountSecondaryBorrow[0]));
+        vaultConfig.minAccountSecondaryBorrow[1] = int256(FloatingPoint.unpackFromBits(s.minAccountSecondaryBorrow[1]));
     }
 
     function getVaultConfigNoPrimeRate(
@@ -140,7 +142,7 @@ library VaultConfiguration {
 
     function setVaultConfig(
         address vaultAddress,
-        VaultConfigStorage calldata vaultConfig
+        VaultConfigStorage memory vaultConfig
     ) internal {
         mapping(address => VaultConfigStorage) storage store = LibStorage.getVaultConfig();
         VaultConfig memory existingVaultConfig = _getVaultConfig(vaultAddress);
@@ -202,6 +204,16 @@ library VaultConfiguration {
         Token memory underlyingToken = TokenHandler.getUnderlyingToken(vaultConfig.borrowCurrencyId);
         require(!underlyingToken.hasTransferFee); 
 
+        if (vaultConfig.secondaryBorrowCurrencies[0] != 0) {
+            require(!TokenHandler.getUnderlyingToken(
+                vaultConfig.secondaryBorrowCurrencies[0]).hasTransferFee);
+        }
+
+        if (vaultConfig.secondaryBorrowCurrencies[1] != 0) {
+            require(!TokenHandler.getUnderlyingToken(
+                vaultConfig.secondaryBorrowCurrencies[1]).hasTransferFee);
+        }
+
         store[vaultAddress] = vaultConfig;
     }
 
@@ -222,10 +234,10 @@ library VaultConfiguration {
     ) internal view {
         if (getFlag(vaultConfig, onlyVaultFlag)) {
             // If the only vault method is flagged, then the sender must be the vault
-            require(msg.sender == vaultConfig.vault, "Unauthorized");
+            require(msg.sender == vaultConfig.vault); // dev: unauthorized
         } else {
             // The base case is that the account must be the msg.sender
-            require(account == msg.sender, "Unauthorized");
+            require(account == msg.sender); // dev: unauthorized
         }
     }
 
@@ -406,6 +418,7 @@ library VaultConfiguration {
     ) internal returns (uint256) {
         int256 underlyingExternalTransferred = TokenHandler.withdrawPrimeCash(
             receiver,
+            receiver,
             currencyId,
             cashToTransferInternal.neg(), // represents a withdraw
             primeRate,
@@ -476,7 +489,7 @@ library VaultConfiguration {
         // amountTransferred should never be much more than underlyingExternalToRepay (it should
         // be exactly equal) as long as the vault behaves according to spec. Any dust amounts will
         // accrue to the protocol since vaultAccount.tempCashBalance is cleared
-        require(amountTransferred >= underlyingExternalToRepay, "Insufficient repayment");
+        require(amountTransferred >= underlyingExternalToRepay);
 
         // Clear tempCashBalance to remove the dust from internal accounting. tempCashBalance must be
         // negative in this method (required at the top).

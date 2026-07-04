@@ -1,0 +1,18 @@
+{
+  "component": "tvlGuru-2",
+  "main_contract": "tvlGuru",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x18c7ad880a07d363f2d034a8523ae34b8068845a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

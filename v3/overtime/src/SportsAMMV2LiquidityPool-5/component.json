@@ -1,0 +1,18 @@
+{
+  "component": "SportsAMMV2LiquidityPool-5",
+  "main_contract": "SportsAMMV2LiquidityPool",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8f672638986f2d0b8842e8f949ac83c434340c5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

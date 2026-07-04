@@ -1,0 +1,26 @@
+{
+  "component": "FeeCalculatorFacet-3",
+  "main_contract": "FeeCalculatorFacet",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2bf0c79ce13a405a1f752f77227a28eec621f94c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9010ee70ec5d75be46ba5f7366776a3c7ad9ab1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "Pool",
   "main_contract": "Pool",
   "source_file_count": 92,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/pool/Symbiosis%20Pool%20Audit%20-%20Zokyo.pdf"
@@ -12,6 +12,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84deb7fc54a1f734aef6ddc0c0f74182bdf941a8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -167,9 +167,6 @@ interface IObserver {
 }
 
 // File: contracts/interfaces/IProxy.sol
-
-
-
 pragma solidity 0.6.12;
 
 /**
@@ -579,9 +576,9 @@ pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
 /**
-  * @title BiFi-X ManagerFlashloan contract
-  * @author BiFi-X(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
-  */
+* @title BiFi-X ManagerFlashloan contract
+* @author BiFi-X(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
+*/
 contract ManagerFlashLoan is ManagerSlot {
   	event FlashLoan(address receiver, address asset, uint256 amount, uint256 fee);
 

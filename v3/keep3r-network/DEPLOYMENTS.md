@@ -1,6 +1,6 @@
 # keep3r-network — deployments
 
-188 verified deployment(s) across 52 component(s).
+193 verified deployment(s) across 54 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -31,7 +31,7 @@
 | ethereum | `0x181aea6936b407514ebfc0754a37704eb8d98f91` | yInsure | impl | live | no |
 | ethereum | `0x18ee956e99cc606530c20d9cadd6af5ece08d89f` | UniswapV2Pair | impl | live | no |
 | ethereum | `0x197070723ce0d3810a0e47f06e935c30a480d4fc` | CErc20Delegator | proxy | live | no |
-| ethereum | `0x19b080fe1ffa0553469d20ca36219f17fcf03859` | Vyper_contract | impl | live | no |
+| ethereum | `0x19b080fe1ffa0553469d20ca36219f17fcf03859` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x19d1666f543d42ef17f66e376944a22aea1a8e46` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x1b3e95e8ecf7a7cab6c4de1b344f94865abd12d5` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x1b428b6c389e25133bf0f466fc5d3e2764f3582b` | MMVault | impl | live | no |
@@ -59,13 +59,14 @@
 | ethereum | `0x2ba592f78db6436527729929aaf6c908497cb200` | Comp | impl | live | no |
 | ethereum | `0x2ead6dd0706c2d95c63ca26b39222a54f058d285` | xVault | impl | unknown | no |
 | ethereum | `0x2f08119c6f07c006695e079aafc638b8789faf18` | yVault | impl | live | no |
+| ethereum | `0x2fc52c61fb0c03489649311989ce2689d93dc1a2` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0x30190a3b52b5ab1daf70d46d72536f5171f22340` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x3225e3c669b39c7c8b3e204a8614bb218c5e31bc` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x338286c0bc081891a4bda39c7667ae150bf5d206` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x3623387773010d9214b10c551d6e7fc375d31f58` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x374513251ef47db34047f07998e31740496c6faa` | MMVault | impl | live | no |
 | ethereum | `0x37d19d1c4e1fa9dc47bd1ea12f742a0887eda74a` | yVault | impl | live | no |
-| ethereum | `0x3986425b96f11972d31c78ff340908832c5c0043` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0x3986425b96f11972d31c78ff340908832c5c0043` | Vyper_contract-4 | impl | live | no |
 | ethereum | `0x39ea01a0298c315d149a490e34b59dbf2ec7e48f` | MixinSystemSettings | impl | live | no |
 | ethereum | `0x3c6c553a95910f9fc81c98784736bd628636d296` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x3c9f5385c288ce438ed55620938a4b967c080101` | CErc20Delegator | proxy | live | no |
@@ -107,8 +108,10 @@
 | ethereum | `0x81e346729723c4d15d0fb1c5679b9f2926ff13c6` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x8379baa817c5c5ab929b03ee8e3c48e45018ae41` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x83f798e925bcd4017eb265844fddabb448f1707d` | yUSDT | impl | live | no |
+| ethereum | `0x8461a004b50d321cb22b7d034969ce6803911899` | Vyper_contract | impl | live | no |
 | ethereum | `0x85759961b116f1d36fd697855c57a6ae40793d9b` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x86bbd9ac8b9b44c95ffc6baae58e25033b7548aa` | CErc20Delegator | proxy | live | no |
+| ethereum | `0x8818a9bb44fbf33502be7c15c500d0c783b73067` | Vyper_contract | impl | live | no |
 | ethereum | `0x881b06da56bb5675c54e4ed311c21e54c5025298` | yWrappedVault | impl | live | no |
 | ethereum | `0x89e42987c39f72e2ead95a8a5bc92114323d5828` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x8b3ff1ed4f36c2c2be675afb13cc3aa5d73685a5` | CErc20Delegator | proxy | live | no |
@@ -122,6 +125,7 @@
 | ethereum | `0x97fe22e7341a0cd8db6f6c021a24dc8f4dad855f` | ProxyERC20 | impl | live | no |
 | ethereum | `0x98e329eb5aae2125af273102f3440de19094b77c` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3` | MagicInternetMoneyV1 | impl | live | no |
+| ethereum | `0x9c2c8910f113181783c249d8f6aa41b51cde0f0c` | Vyper_contract | impl | live | no |
 | ethereum | `0x9e8e207083ffd5bdc3d99a1f32d1e6250869c1a9` | CErc20Delegator | proxy | live | no |
 | ethereum | `0xa1787206d5b1be0f432c4c4f96dc4d1257a1dd14` | yUSDT | impl | live | no |
 | ethereum | `0xa283aa7cfbb27ef0cfbcb2493dd9f4330e0fd304` | MMToken | impl | live | no |
@@ -137,7 +141,7 @@
 | ethereum | `0xb0f1a38f5531b398e2081c2f9e61edd2a924b488` | MMVault | impl | live | no |
 | ethereum | `0xb8c5af54bbdcc61453144cf472a9276ae36109f9` | CErc20Delegator | proxy | live | no |
 | ethereum | `0xba2e7fed597fd0e3e70f5130bcdbbfe06bb94fe1` | yVault | impl | live | no |
-| ethereum | `0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf` | Vyper_contract-5 | impl | live | no |
 | ethereum | `0xbd2fbaf2dc95bd78cf1cd3c5235b33d1165e6797` | mSpellStaking | impl | live | no |
 | ethereum | `0xbe86e8918dfc7d3cb10d295fc220f941a1470c5c` | CErc20Delegator | proxy | live | no |
 | ethereum | `0xc25eae724f189ba9030b2556a1533e7c8a732e14` | CErc20Delegator | proxy | live | no |
@@ -156,6 +160,7 @@
 | ethereum | `0xd5103afcd0b3fa865997ef2984c66742c51b2a8b` | CErc20Delegator | proxy | live | no |
 | ethereum | `0xd5586c1804d2e1795f3fbbafb1fbb9099ee20a6c` | CreamLock | impl | live | no |
 | ethereum | `0xd692ac3245bb82319a31068d6b8412796ee85d2c` | CErc20Delegator | proxy | live | no |
+| ethereum | `0xd6ac1cb9019137a896343da59dde6d097f710538` | Vyper_contract | impl | live | no |
 | ethereum | `0xd6ad7a6750a7593e092a9b218d66c0a814a3436e` | yUSDC-2 | impl | live | no |
 | ethereum | `0xd71ecff9342a5ced620049e616c5035f1db98620` | ProxyERC20 | impl | live | no |
 | ethereum | `0xd7394428536f63d5659cc869ef69d10f9e66314b` | CErc20Delegator | proxy | live | no |
@@ -192,12 +197,3 @@
 | ethereum | `0xfbaedde70732540ce2b11a8ac58eb2dc0d69de10` | StakingRewards | impl | live | no |
 | ethereum | `0xfd609a03b393f1a1cfcacedabf068cad09a924e2` | CErc20Delegator | proxy | live | no |
 | ethereum | `0xfeeb92386a055e2ef7c2b598c872a4047a7db59f` | CErc20Delegator | proxy | live | no |
-
-## Source unavailable (5)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x2fc52c61fb0c03489649311989ce2689d93dc1a2`
-- ethereum `0x8461a004b50d321cb22b7d034969ce6803911899`
-- ethereum `0x8818a9bb44fbf33502be7c15c500d0c783b73067`
-- ethereum `0x9c2c8910f113181783c249d8f6aa41b51cde0f0c`
-- ethereum `0xd6ac1cb9019137a896343da59dde6d097f710538`

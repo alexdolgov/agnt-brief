@@ -1,13 +1,46 @@
 # atlantis-loans — deployments
 
-176 verified deployment(s) across 32 component(s).
+210 verified deployment(s) across 45 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x093d2b3e9c21ef5dd7431344dd533bf745894827` | CommunityVaultProxy-2 | impl | inactive | no |
+| avalanche | `0x0d7c6790ee6967bca60ae31ecc1b587221ac03f0` | ABep20Delegator-2 | proxy | inactive | no |
 | avalanche | `0x0ebfa175418b328a6849097328d73076f49b4400` | CommunityStore-2 | impl | inactive | no |
-| avalanche | `0x3533e4617b4a6734fc6a9513f521ce5f4e9b3c9c` | Unitroller | impl | live | no |
-| avalanche | `0x7f0201383d9ef401259ff60a379dc14fa285f5ce` | Unitroller | impl | live | no |
-| avalanche | `0xcee2143040ed4213be4717a9673cbafcd2bde2a1` | Unitroller | impl | live | no |
+| avalanche | `0x13047b242dd799340fdc1ff8df8038a06f5b2a38` | ABep20Delegator-2 | proxy | inactive | no |
+| avalanche | `0x294c94559c7449b44015ce692e3d2fb75845abfc` | CommunityVaultProxy-3 | impl | inactive | no |
+| avalanche | `0x299767e14f9d347d3723b7edf2c6f5581d3c8312` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0x3533e4617b4a6734fc6a9513f521ce5f4e9b3c9c` | Unitroller | impl | live | yes |
+| avalanche | `0x38ac3742eb9bcc2967e49a61192a2ba122dbd1b3` | CommunityVaultProxy-2 | impl | inactive | no |
+| avalanche | `0x4088af705f06e6b3a79f16a3d32fd43392994775` | AtlantisLens-2 | impl | live | no |
+| avalanche | `0x49fc5dcf135199d3e74cb779770ffaa5d928d55e` | BentoBox-2 | impl | inactive | no |
+| avalanche | `0x4def8adf4c6b6347213fc89c1ba9093d0d321124` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0x4fa1530ef565833840f59a53e70fb3d9021f0b78` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0x50f620083d77a04fe44bb2fb294133c71cfce3b1` | CommunityVaultProxy-4 | proxy | inactive | no |
+| avalanche | `0x5b98e5e673a7be4d12020ce794e573652e8cb875` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0x5f79e25dbf729c0758de96dedf30ce6257384050` | ABep20Delegator-2 | proxy | inactive | no |
+| avalanche | `0x6bd2154fbc086cb43411966e0e72584196ccd065` | ABep20Delegator-2 | proxy | live | no |
+| avalanche | `0x7a14cf755e4f0fc71409b980940f8552dc5548cd` | Comptroller-2 | impl | live | yes |
+| avalanche | `0x7efb1043cb1fff9f6dbc84042a417629192fb07c` | ABep20Delegator-2 | proxy | inactive | no |
+| avalanche | `0x7f0201383d9ef401259ff60a379dc14fa285f5ce` | Unitroller | impl | live | yes |
+| avalanche | `0x84e64e0b42e13e9354159a5318ba609bbb54dc17` | KashiPair-2 | impl | inactive | no |
+| avalanche | `0x8a0ffb0fa77e35da1402eee1abbdcc732b5becf4` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0x8e2bef70778461ebaac58d4f04f7de9633fba2d0` | JumpRateModelV2-3 | impl | inactive | no |
+| avalanche | `0x8f85ee1c0a96734cb76870106dd9c016db6de09a` | Unitroller | proxy | live | yes |
+| avalanche | `0xa65722af4957cef481edb4cb255f804dd36e8adc` | ABep20Delegator-4 | impl | live | no |
+| avalanche | `0xaee09ac4c33935f9685d25a768b47625b99ecb1e` | ABep20Delegator-2 | proxy | inactive | no |
+| avalanche | `0xb2a7cbd2bdb29f6b16e2bbc9a825d9e71e27cb6f` | AtlantisMultiSwapper-2 | impl | inactive | no |
+| avalanche | `0xb3e91b3f1d2ba099a283c00d807177e942aaa759` | Comptroller-2 | impl | live | yes |
+| avalanche | `0xc33bc01c5caaab948c707afa3b753b79a3615e63` | JumpRateModelV2-2 | impl | inactive | no |
+| avalanche | `0xccf9a98742e0169548d58996b3fda0e9c8be92d7` | AtlantisLens-2 | impl | live | no |
+| avalanche | `0xcee2143040ed4213be4717a9673cbafcd2bde2a1` | Unitroller | impl | live | yes |
+| avalanche | `0xd9c5c1f80156036b7a5ae082a5a9602db07cf2b1` | CommunityVaultProxy-5 | impl | inactive | no |
+| avalanche | `0xdfd17c440493c1872f5b531d2618cc8bf7eee23b` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0xe140c6fbcc523ea5c0c6479d9b7e87b8b85af2d1` | JumpRateModelV2-2 | impl | inactive | no |
+| avalanche | `0xed93d8856d9cc0087a575aae774879d50d99d6ff` | JumpRateModelV2-2 | impl | inactive | no |
+| avalanche | `0xef62c8e86f92615febde9b33ce75e7cce60e016e` | ABep20Delegator-3 | impl | inactive | no |
+| avalanche | `0xf1b52ed4dceae3c098c4b3b515118228447bdfe7` | ABep20Delegator-2 | proxy | inactive | no |
+| avalanche | `0xf7cc73a06e9ada845c314cbe3da075d475ea6357` | ABep20Delegator-2 | proxy | inactive | no |
 | bsc | `0x0046214a8a8cdc635e5ba0b7980fb91c3aa62601` | ABep20Delegator | proxy | inactive | no |
 | bsc | `0x02a7de4598da1f18cb6ab85d342b4688fec66e6b` | ABep20Delegator | proxy | inactive | no |
 | bsc | `0x032dd2cd4e64d8c30fed171d0d0b6cf4a7995c29` | ABNB | impl | live | yes |
@@ -162,6 +195,7 @@
 | bsc | `0xdc90ad34df7be9544600a5e79172dee72b22e1fe` | ABep20Delegator | impl | inactive | no |
 | bsc | `0xdcb2face257ca25d7957fe4f747817b92c01bbbb` | CommunityVaultProxy | impl | inactive | no |
 | bsc | `0xdda605680d0f754b30c18d3a85656481b17ea9d3` | JumpRateModelV2 | impl | inactive | no |
+| bsc | `0xe47fdb06970a25c51a56b0fa99aaf019dfa3f375` | CommunityStore | impl | inactive | no |
 | bsc | `0xe56c4d86c8178e752c4d55c88a74422979cce22e` | Comptroller | impl | live | yes |
 | bsc | `0xe7e304f136c054ee71199efa6e26e8b0dae242f3` | Comptroller | proxy | live | yes |
 | bsc | `0xe7fc7813effca92a8446dbfe91ba5d74641da1fb` | AtlantisPriceOracle | impl | inactive | no |
@@ -180,41 +214,3 @@
 | bsc | `0xface793a1e684304930cade13324848906fe59b7` | JumpRateModelV2 | impl | inactive | no |
 | bsc | `0xfb7112a7ed75b342ceb38447cfe6bc9a2d9bfde4` | ABep20Delegator-2 | impl | inactive | no |
 | bsc | `0xfead9619e88464e5ad1ea9df458dcc147f03ea0c` | ABep20Delegator | proxy | inactive | no |
-
-## Source unavailable (34)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0x093d2b3e9c21ef5dd7431344dd533bf745894827`
-- avalanche `0x0d7c6790ee6967bca60ae31ecc1b587221ac03f0`
-- avalanche `0x13047b242dd799340fdc1ff8df8038a06f5b2a38`
-- avalanche `0x294c94559c7449b44015ce692e3d2fb75845abfc`
-- avalanche `0x299767e14f9d347d3723b7edf2c6f5581d3c8312`
-- avalanche `0x38ac3742eb9bcc2967e49a61192a2ba122dbd1b3`
-- avalanche `0x4088af705f06e6b3a79f16a3d32fd43392994775`
-- avalanche `0x49fc5dcf135199d3e74cb779770ffaa5d928d55e`
-- avalanche `0x4def8adf4c6b6347213fc89c1ba9093d0d321124`
-- avalanche `0x4fa1530ef565833840f59a53e70fb3d9021f0b78`
-- avalanche `0x50f620083d77a04fe44bb2fb294133c71cfce3b1`
-- avalanche `0x5b98e5e673a7be4d12020ce794e573652e8cb875`
-- avalanche `0x5f79e25dbf729c0758de96dedf30ce6257384050`
-- avalanche `0x6bd2154fbc086cb43411966e0e72584196ccd065`
-- avalanche `0x7a14cf755e4f0fc71409b980940f8552dc5548cd`
-- avalanche `0x7efb1043cb1fff9f6dbc84042a417629192fb07c`
-- avalanche `0x84e64e0b42e13e9354159a5318ba609bbb54dc17`
-- avalanche `0x8a0ffb0fa77e35da1402eee1abbdcc732b5becf4`
-- avalanche `0x8e2bef70778461ebaac58d4f04f7de9633fba2d0`
-- avalanche `0x8f85ee1c0a96734cb76870106dd9c016db6de09a`
-- avalanche `0xa65722af4957cef481edb4cb255f804dd36e8adc`
-- avalanche `0xaee09ac4c33935f9685d25a768b47625b99ecb1e`
-- avalanche `0xb2a7cbd2bdb29f6b16e2bbc9a825d9e71e27cb6f`
-- avalanche `0xb3e91b3f1d2ba099a283c00d807177e942aaa759`
-- avalanche `0xc33bc01c5caaab948c707afa3b753b79a3615e63`
-- avalanche `0xccf9a98742e0169548d58996b3fda0e9c8be92d7`
-- avalanche `0xd9c5c1f80156036b7a5ae082a5a9602db07cf2b1`
-- avalanche `0xdfd17c440493c1872f5b531d2618cc8bf7eee23b`
-- avalanche `0xe140c6fbcc523ea5c0c6479d9b7e87b8b85af2d1`
-- avalanche `0xed93d8856d9cc0087a575aae774879d50d99d6ff`
-- avalanche `0xef62c8e86f92615febde9b33ce75e7cce60e016e`
-- avalanche `0xf1b52ed4dceae3c098c4b3b515118228447bdfe7`
-- avalanche `0xf7cc73a06e9ada845c314cbe3da075d475ea6357`
-- bsc `0xe47fdb06970a25c51a56b0fa99aaf019dfa3f375`

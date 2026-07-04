@@ -1,0 +1,42 @@
+{
+  "component": "DynamicFeeHookRegistry-2",
+  "main_contract": "DynamicFeeHookRegistry",
+  "source_file_count": 30,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7fc0c8c4f4b9b9b85e4992f3b802a92131607623",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaad422fa8440d565ed60f5077f0ceb82e333cb13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xadc465d1b7c451f42643443c9658c829f895f474",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xff327cba9ce268ab83216b4b2fc2261b607d242a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

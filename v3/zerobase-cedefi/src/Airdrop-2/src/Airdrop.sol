@@ -37,7 +37,7 @@ contract Airdrop {
             require(!hasAirdrop[tokens[i]][recipients[i]], "Only can airdrop once!");
             hasAirdrop[tokens[i]][recipients[i]] = true;
 
-            vault.sendLpTokens(tokens[i], recipients[i], amounts[i], true); //@remind 后续发空投设置为false
+            vault.sendLpTokens(tokens[i], recipients[i], amounts[i], true);
         }
     }
 

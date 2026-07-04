@@ -1,0 +1,18 @@
+{
+  "component": "VeToken-3",
+  "main_contract": "VeToken",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8b5264f0d38ca099a97fec2d3cf493a8311c73a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

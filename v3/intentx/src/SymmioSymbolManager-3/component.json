@@ -1,0 +1,18 @@
+{
+  "component": "SymmioSymbolManager-3",
+  "main_contract": "SymmioSymbolManager",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5d55d608127e6b72c9030b8c1be0d57d5932700b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

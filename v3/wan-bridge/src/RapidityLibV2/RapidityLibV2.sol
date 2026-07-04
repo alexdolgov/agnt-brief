@@ -25,7 +25,7 @@
 //    \_/\_/ \__,_|_| |_|\___|_| |_|\__,_|_|_| |_|\__,_|\___| \_/
 //
 //
-
+pragma experimental ABIEncoderV2;
 pragma solidity ^0.4.26;
 
 library RapidityTxLib {
@@ -383,7 +383,7 @@ library SafeMath {
 //
 
 pragma solidity ^0.4.26;
-pragma experimental ABIEncoderV2;
+
 
 
 library HTLCTxLib {
@@ -887,6 +887,7 @@ interface ISmgFeeProxy {
 //
 
 pragma solidity ^0.4.26;
+
 
 
 

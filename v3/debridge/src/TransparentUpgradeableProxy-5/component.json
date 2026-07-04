@@ -1,17 +1,41 @@
 {
   "component": "TransparentUpgradeableProxy-5",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 18,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x413dddce3d0ead2489648e482d192a7758c2b1b4",
+      "is_proxy": true,
+      "implementation_address": "0x57d69a7a9781fca922fcc0667789c1431c86a837",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251",
       "is_proxy": true,
       "implementation_address": "0x3c857ed51c8a2747ee8c6f30edda5ea0d487cc64",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8b0e35838b04221e285e82fb88c54066ceb01278",
+      "is_proxy": true,
+      "implementation_address": "0x55c93b20dd2f790ac429d6341a022a781791654a",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "is_proxy": true,
+      "implementation_address": "0xa1cc7e623423169e1c10e6e5cc8ae6f1d11042de",
       "liveness": "live"
     }
   ]

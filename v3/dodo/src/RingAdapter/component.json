@@ -2,7 +2,7 @@
   "component": "RingAdapter",
   "main_contract": "RingAdapter",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,22 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x1d2bc7963fe592f08155fcaa6158186eb414433b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcdd753f2470e97e3901f0d38b21342dced6bfedf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x895df30e99956ad8e831988e160060c3530d7193",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

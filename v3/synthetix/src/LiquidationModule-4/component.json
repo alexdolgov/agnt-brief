@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationModule-4",
+  "main_contract": "LiquidationModule",
+  "source_file_count": 81,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x94433f0da8b5bfb473ea8cd7ad10d9c8aef4ab7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

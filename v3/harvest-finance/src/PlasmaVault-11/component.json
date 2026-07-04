@@ -1,0 +1,42 @@
+{
+  "component": "PlasmaVault-11",
+  "main_contract": "PlasmaVault",
+  "source_file_count": 65,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcee55bd8ce0361a67f9a48888a2b519c9d207a97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0a4732398084bf361f7ff530446b8f217c22b050",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa97daeea8bce646090ebccff7c198bc2cde809ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf5395190c6534f806c1ee0377d6a88e9aeb3616f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

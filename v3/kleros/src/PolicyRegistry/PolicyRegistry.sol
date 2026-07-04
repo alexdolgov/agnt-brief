@@ -1,3 +1,5 @@
+// File: contracts/kleros/PolicyRegistry.sol
+
 pragma solidity ^0.4.24;
 
 /**
@@ -43,7 +45,7 @@ contract PolicyRegistry {
      *  @param _policy The URI of the policy JSON.
      */
     function setPolicy(uint _subcourtID, string _policy) external onlyByGovernor {
-        emit PolicyUpdate(_subcourtID, policies[_subcourtID]);
         policies[_subcourtID] = _policy;
+        emit PolicyUpdate(_subcourtID, policies[_subcourtID]);
     }
 }

@@ -2,7 +2,7 @@
   "component": "PartyAFacet",
   "main_contract": "PartyAFacet",
   "source_file_count": 32,
-  "deployment_count": 5,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,30 +18,6 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x6caee219c128617b64b7a89c29cbdce854278fba",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x878de03f03207bd984747e977f9646110bc2cb5c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb3d411b0201606231efd531d78b2cd4e4c93c9e1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xc3ce7a2d02738a0f600f6ddc23b08b786cb7ab9c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

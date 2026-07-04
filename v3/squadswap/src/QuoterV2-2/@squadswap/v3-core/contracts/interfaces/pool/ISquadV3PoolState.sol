@@ -113,8 +113,4 @@ interface ISquadV3PoolState {
             uint160 secondsPerLiquidityCumulativeX128,
             bool initialized
         );
-
-    /// @notice The pool's customizable fee in hundredths of a bip, i.e. 1e-6
-    /// @return The fee
-    function fee() external view returns (uint24);
 }

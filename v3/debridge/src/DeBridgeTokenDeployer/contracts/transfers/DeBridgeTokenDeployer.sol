@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.7;
+pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
@@ -8,6 +8,7 @@ import "../interfaces/IDeBridgeTokenDeployer.sol";
 import "../periphery/DeBridgeToken.sol";
 import "../periphery/DeBridgeTokenProxy.sol";
 
+/// @dev Deploys a deToken(DeBridgeTokenProxy) for an asset.
 contract DeBridgeTokenDeployer is
     Initializable,
     AccessControlUpgradeable,
@@ -18,7 +19,7 @@ contract DeBridgeTokenDeployer is
 
     /// @dev Address of deBridgeToken implementation
     address public tokenImplementation;
-    /// @dev An address to set as admin for any deployed deBridgeToken
+    /// @dev An addres to set as admin for any deployed deBridgeToken
     address public deBridgeTokenAdmin;
     /// @dev Debridge gate address
     address public debridgeAddress;
@@ -60,6 +61,10 @@ contract DeBridgeTokenDeployer is
 
     /* ========== CONSTRUCTOR  ========== */
 
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor() initializer {
+    }
+
     /// @dev Constructor that initializes the most important configurations.
     /// @param _tokenImplementation Address of deBridgeToken implementation
     /// @param _deBridgeTokenAdmin Address to set as admin for any deployed deBridgeToken
@@ -76,16 +81,20 @@ contract DeBridgeTokenDeployer is
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     }
 
-    /// @inheritdoc IDeBridgeTokenDeployer
+    /// @dev Deploy a deToken for an asset
+    /// @param _debridgeId Asset identifier
+    /// @param _name Asset name
+    /// @param _symbol Asset symbol
+    /// @param _decimals Asset decimals
     function deployAsset(
         bytes32 _debridgeId,
         string memory _name,
         string memory _symbol,
         uint8 _decimals)
-    external
-    override
-    onlyDeBridgeGate
-    returns (address deBridgeTokenAddress)
+        external
+        override
+        onlyDeBridgeGate
+        returns (address deBridgeTokenAddress)
     {
         if (getDeployedAssetAddress[_debridgeId] != address(0)) revert DeployedAlready();
 
@@ -177,6 +186,6 @@ contract DeBridgeTokenDeployer is
     // ============ Version Control ============
     /// @dev Get this contract's version
     function version() external pure returns (uint256) {
-        return 110; // 1.1.0
+        return 111; // 1.1.1
     }
 }

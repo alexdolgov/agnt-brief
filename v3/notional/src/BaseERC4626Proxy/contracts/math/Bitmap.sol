@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity =0.7.6;
+pragma solidity ^0.7.0;
 pragma abicoder v2;
 
-import {Constants} from "../global/Constants.sol";
+import "../global/Types.sol";
+import "../global/Constants.sol";
 
 /// @notice Helper methods for bitmaps, they are big-endian and 1-indexed.
 library Bitmap {

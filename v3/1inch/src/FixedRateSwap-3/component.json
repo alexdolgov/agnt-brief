@@ -1,0 +1,18 @@
+{
+  "component": "FixedRateSwap-3",
+  "main_contract": "FixedRateSwap",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x40bbde0ec6f177c4a67360d0f0969cfc464b0bb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

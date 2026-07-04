@@ -2,17 +2,41 @@
   "component": "MinterPool-2",
   "main_contract": "MinterPool",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x4799d57abf5f12ca4ef5375c9dadf8fe7fa5a454",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x12af43ef94b05a0a3447a05eee629c7d88a30a5f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd2165d222b3daf2528fc1b1aa2db18b8821ee623",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf72cfb704d49ac7bb7ffa420ae5f084c671a29be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x12af43ef94b05a0a3447a05eee629c7d88a30a5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

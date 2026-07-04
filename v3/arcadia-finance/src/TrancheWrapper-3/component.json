@@ -1,0 +1,26 @@
+{
+  "component": "TrancheWrapper-3",
+  "main_contract": "TrancheWrapper",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xbc10718571fcb3c3f67800e7c0887e450d2ff398",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "StakedToken-2",
+  "main_contract": "StakedToken",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xe335abb943ecf2d7555d0f732ecc19ce79c39afd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

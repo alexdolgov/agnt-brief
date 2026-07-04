@@ -1,0 +1,18 @@
+{
+  "component": "PartyBPositionActionsFacet-3",
+  "main_contract": "PartyBPositionActionsFacet",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1052f9ec3be13dbb2086ec675ee4f567b23667c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

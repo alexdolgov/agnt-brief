@@ -1,0 +1,18 @@
+{
+  "component": "FeeDistributor-8",
+  "main_contract": "FeeDistributor",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe06f85862af08c1c5f67f96e41ea663e29639dae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

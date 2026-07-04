@@ -1,25 +1,23 @@
 {
   "component": "AugustusSwapper",
   "main_contract": "AugustusSwapper",
-  "source_file_count": 19,
+  "source_file_count": 15,
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20ParaSwap%20%5B20.01.2021%5D.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x59c7c832e96d2568bea6db468c1aadcbbda08a52",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x64f72fcfd9c624e3e471223f043060981c83aafc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x793a0bb089c6787e84277f08179dac594edb9443",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbd09504819a604ca503f30d2cc9d0ef4c76dac33",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "AssimilatorFactory-5",
+  "main_contract": "AssimilatorFactory",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x583ef72807095cd68ffde9a764cf73df401cb772",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

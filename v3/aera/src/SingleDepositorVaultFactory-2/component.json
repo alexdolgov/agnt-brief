@@ -1,0 +1,18 @@
+{
+  "component": "SingleDepositorVaultFactory-2",
+  "main_contract": "SingleDepositorVaultFactory",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f1fdb45160234d6e7e3653f5af8e09a2ce25aeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

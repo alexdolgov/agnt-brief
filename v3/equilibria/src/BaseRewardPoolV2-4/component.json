@@ -1,0 +1,18 @@
+{
+  "component": "BaseRewardPoolV2-4",
+  "main_contract": "BaseRewardPoolV2",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x9cb59c379fab6e2a0b6312eb2b0cc40008cc7353",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

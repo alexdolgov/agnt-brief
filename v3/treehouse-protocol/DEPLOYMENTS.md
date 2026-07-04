@@ -1,13 +1,14 @@
 # treehouse-protocol — deployments
 
-127 verified deployment(s) across 112 component(s).
+139 verified deployment(s) across 123 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x65c2d90b33f7bf693a7ef54662435f2cf3251c21` | ComposableStablePool-2 | impl | live | no |
 | avalanche | `0x07fa18a8d49e02ba9693af1e15337ba66535e0f5` | ActionRegistry-2 | impl | live | yes |
 | avalanche | `0x14a84f1a61ccd7d1be596a6cc11fe33a36bc1646` | ERC1967Proxy-2 | proxy | live | yes |
 | avalanche | `0x18b0bbf62c5b7bf6182c9b46573dcbeff16577ff` | ActionBase | impl | live | no |
-| avalanche | `0x20df2d2ccbafbb07a5df452ac3f094747dc83055` | StrategyStorage-3 | impl | live | yes |
+| avalanche | `0x20df2d2ccbafbb07a5df452ac3f094747dc83055` | StrategyStorage-4 | impl | live | yes |
 | avalanche | `0x24fe445449f323561ba259a4abea8c51383b10d1` | RateProviderRegistry-2 | impl | live | yes |
 | avalanche | `0x28c1d5fc29b9690651b50adce14417eb34f75b19` | ActionBase-2 | impl | live | no |
 | avalanche | `0x2e3559254469ceff47526d9c40cf94d0a22cf821` | RateProviderRegistry-3 | impl | live | yes |
@@ -15,31 +16,37 @@
 | avalanche | `0x30c030eec5c6b2ce609e1a69a54d0fd311be48c3` | PnlAccounting | impl | live | no |
 | avalanche | `0x34a9c96d00dce4d78f3a5a32a3e47bb40e691485` | RateProviderRegistry-4 | impl | live | yes |
 | avalanche | `0x3cfd9a81a16e26f9fde9c751a0be0b9d8360892d` | PnlAccounting | impl | live | no |
-| avalanche | `0x3d00a639183b07e35efef044ee6cc14e8598a01c` | StrategyStorage-4 | impl | live | yes |
-| avalanche | `0x3fc60aac1d843e4e181c7ab727a4027cb1ac99ed` | StrategyStorage-5 | impl | live | yes |
-| avalanche | `0x4728aa3b08c22c1005633690712e5c6b1997c080` | StrategyStorage-6 | impl | live | yes |
+| avalanche | `0x3d00a639183b07e35efef044ee6cc14e8598a01c` | StrategyStorage-5 | impl | live | yes |
+| avalanche | `0x3fc60aac1d843e4e181c7ab727a4027cb1ac99ed` | StrategyStorage-6 | impl | live | yes |
+| avalanche | `0x4728aa3b08c22c1005633690712e5c6b1997c080` | StrategyStorage-7 | impl | live | yes |
 | avalanche | `0x4c916ad137b97b03ab5f105cea77c5d5f98a2a09` | Proxy | proxy | live | yes |
-| avalanche | `0x4d9f1b673aa23e8c427d78df2d9390f724706755` | StrategyStorage-7 | impl | live | yes |
+| avalanche | `0x4d9f1b673aa23e8c427d78df2d9390f724706755` | StrategyStorage-8 | impl | live | yes |
 | avalanche | `0x568bf0d3d0ef982b8f4978bea05d287dd47a15bb` | StrategyStorage | impl | live | yes |
-| avalanche | `0x5f4d2e6c118b5e3c74f0b61de40f627ca9873d6e` | StrategyStorage-8 | impl | live | yes |
-| avalanche | `0x6276c3dc4f91fc231b9913eb6cc6c4da2e5dbb6c` | StrategyStorage-9 | impl | live | yes |
+| avalanche | `0x5ac32e4c756bd57630eadf216668ba16fa4635a2` | InternalAccountingUnit-2 | impl | live | no |
+| avalanche | `0x5f4d2e6c118b5e3c74f0b61de40f627ca9873d6e` | StrategyStorage-9 | impl | live | yes |
+| avalanche | `0x6276c3dc4f91fc231b9913eb6cc6c4da2e5dbb6c` | StrategyStorage-10 | impl | live | yes |
+| avalanche | `0x63fff9df7f427cc5b9a753e46bf7c4f2c263f183` | ProtocolPoolController-2 | impl | live | yes |
 | avalanche | `0x6406a2916f2a44a8d0dc722ae3c03621302cdcd8` | VDWAVAXRateProvider | impl | inactive | no |
 | avalanche | `0x69c5725b500c7a160f8ce50474c439dbc353f094` | BenqiClaimReward | impl | live | yes |
 | avalanche | `0x6a5ebe1e6db9ae132fe68bdb838718e7d54e35b3` | SavaxUnlock | impl | live | yes |
 | avalanche | `0x6c1823a7089bf2962206f1cddea1569facc7c702` | ActionBase-3 | impl | live | no |
-| avalanche | `0x6f5d00a263de6d40b4b2342996d2682e34f8a454` | InternalAccountingUnit-2 | impl | live | no |
+| avalanche | `0x6f5d00a263de6d40b4b2342996d2682e34f8a454` | InternalAccountingUnit-3 | impl | live | no |
 | avalanche | `0x75e8f855c22213b676fc7dc07252e075414bd200` | ActionBase-4 | impl | inactive | no |
-| avalanche | `0x765f6dc8496ca7ef1e4a391be10185229aacf04b` | StrategyStorage-10 | impl | live | yes |
+| avalanche | `0x765f6dc8496ca7ef1e4a391be10185229aacf04b` | StrategyStorage-11 | impl | live | yes |
 | avalanche | `0x8126f3385c7dc4072a67f17d585cec8ccab3d9bb` | RateProviderRegistry-5 | impl | live | yes |
 | avalanche | `0x832f8e068e92d56b94205ea605e5cdaa7cded1f0` | BalancerPoolToken | impl | live | no |
 | avalanche | `0x87899c5c9b083e437a552a371004161fdf4ad472` | ActionBase-5 | impl | live | yes |
 | avalanche | `0x882fdc376c300f8689f281759ff74d17c2f62316` | StrategyStorage | impl | live | yes |
+| avalanche | `0x8e41b7b3fae77107d54a9f670feae912cf442e46` | MerklClaim-2 | impl | live | yes |
 | avalanche | `0x9217e7f9a6dc9e460208488f0ad92f6eac4d2b1a` | ActionBase-6 | impl | inactive | no |
 | avalanche | `0x950d8545bb4e58b61230d47314549cae5bcedcc6` | NavRegistry-2 | impl | live | yes |
 | avalanche | `0xa3b087634e78731cc593ac1b93a042eb1de0d714` | QISAVAXSupplyRateProvider | impl | inactive | no |
+| avalanche | `0xa969faf6757fd7873f35650aa3a67823310fb54b` | Strategy-3 | impl | live | yes |
 | avalanche | `0xad9ac791fca10f95248edfc953db15ba9e29f2f3` | Proxy | impl | live | yes |
 | avalanche | `0xb6374448c68186e3138c994fce4437d26d486d3a` | ERC1967Proxy-2 | impl | live | yes |
-| avalanche | `0xbb906a265f09caa02d878d0581543b554fb2b815` | StrategyStorage-11 | impl | live | yes |
+| avalanche | `0xbb906a265f09caa02d878d0581543b554fb2b815` | StrategyStorage-12 | impl | live | yes |
+| avalanche | `0xc41561f2ca84302b6e920d68b46fa21104d0676b` | FastlaneFee-2 | impl | live | no |
+| avalanche | `0xca8539b480f1bb97697f763a77d08fa733abbb51` | StrategyExecutor-2 | impl | live | yes |
 | avalanche | `0xcfc69c96385b1f193f6379772ab00de1ee6c7273` | SAVAXRateProvider | impl | inactive | no |
 | avalanche | `0xd78718932070661a00ab40ea082f001b0c90f7cb` | ActionBase-7 | impl | inactive | no |
 | avalanche | `0xe24faee4c390758846cf6791349cc0eca56fff6b` | TAvaxExchangeRateProvider | impl | live | yes |
@@ -92,7 +99,9 @@
 | ethereum | `0x9305c1dbfe22c12c66339184c0025d7006f0f1cc` | OracleReportSanityChecker | impl | inactive | no |
 | ethereum | `0x94af5994eb6841e1d930c95ad0c9f89771c3073f` | ActionRegistry | impl | live | yes |
 | ethereum | `0x97c03f52244e60bb18511cbf03f890d5886f1f47` | StrategyStorage-2 | impl | live | yes |
+| ethereum | `0x98273a098e2bb7663be83b48ee2c0ac3ecc02455` | StrategyStorage-3 | impl | live | no |
 | ethereum | `0xa0a105e10801b52bf89a042bdb40c7389e57af36` | NavErc20 | impl | live | yes |
+| ethereum | `0xa10d15538e09479186b4d3278ba5c979110dddb1` | CurveStableSwapNG-2 | impl | live | no |
 | ethereum | `0xa1150cd4a014e06f5e0a6ec9453fe0208da5adab` | tETH | proxy | live | yes |
 | ethereum | `0xa14a1a1646980c2b78eddd51b66ec220aefe6109` | WstETHRateProvider | impl | inactive | no |
 | ethereum | `0xa1c069c2f77b26a54e9f175fa2eade21c34a94e1` | ESRV1 | proxy | live | no |
@@ -105,6 +114,7 @@
 | ethereum | `0xb7ce3cb5bc5c00cd2f9b39d9b0580f5355535709` | TreehouseAccounting | impl | live | no |
 | ethereum | `0xba12222222228d8ba445958a75a0704d566bf2c8` | Vault-2 | impl | live | no |
 | ethereum | `0xbf05a929c3d7885a6aead833a992da6e5ac23b09` | OracleDaemonConfig | impl | inactive | no |
+| ethereum | `0xbfdf0af6df48e645bd076802b95ddef0b1e02a9d` | StrategyStorage | impl | live | yes |
 | ethereum | `0xc1b6a630ae2252eac7b0b8c7f4a174b4d7f51023` | ERC1967Proxy | impl | inactive | no |
 | ethereum | `0xc77f8768774e1c9244beed705c4354f2113cfc09` | DepositSecurityModule | impl | inactive | no |
 | ethereum | `0xc780112305ed959ceeeb0de692e2407e4145fc3a` | VaultSend | impl | live | no |
@@ -116,6 +126,7 @@
 | ethereum | `0xd0b6c01e9a8d21ed05726f9020b577a614bedce7` | RateProviderRegistry | impl | live | yes |
 | ethereum | `0xd11c452fc99cf405034ee446803b6f6c1f6d5ed8` | ERC1967Proxy-3 | proxy | live | yes |
 | ethereum | `0xd15a672319cf0352560ee76d9e89eab0889046d3` | Burner | impl | inactive | no |
+| ethereum | `0xd1a622566f277aa76c3c47a30469432aaec95e38` | ERC1967Proxy-4 | impl | live | yes |
 | ethereum | `0xd624b08c83baecf0807dd2c6880c3154a5f0b288` | HashConsensus | impl | live | no |
 | ethereum | `0xd8784e748f59ba711fb5643191ec3fadd50fb6df` | StakingRouter | impl | inactive | no |
 | ethereum | `0xd88fb00573adfdc98536ab60b1b4efafd41337e1` | PnlAccountingHelper | impl | live | no |
@@ -131,19 +142,4 @@
 | ethereum | `0xfda0b8bca5d0a5a5093141d8a45d133a9f09b258` | NavLens | impl | live | no |
 | ethereum | `0xfddf38947afb03c621c71b06c9c70bce73f12999` | OssifiableProxy-4 | proxy | live | no |
 | ethereum | `0xff62ad6200a54fff9288c997f8ca2d480a0c48bc` | NavErc20WithDebt | impl | live | yes |
-
-## Source unavailable (12)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x65c2d90b33f7bf693a7ef54662435f2cf3251c21`
-- avalanche `0x5ac32e4c756bd57630eadf216668ba16fa4635a2`
-- avalanche `0x63fff9df7f427cc5b9a753e46bf7c4f2c263f183`
-- avalanche `0x8e41b7b3fae77107d54a9f670feae912cf442e46`
-- avalanche `0xa969faf6757fd7873f35650aa3a67823310fb54b`
-- avalanche `0xc41561f2ca84302b6e920d68b46fa21104d0676b`
-- avalanche `0xca8539b480f1bb97697f763a77d08fa733abbb51`
-- ethereum `0x98273a098e2bb7663be83b48ee2c0ac3ecc02455`
-- ethereum `0xa10d15538e09479186b4d3278ba5c979110dddb1`
-- ethereum `0xbfdf0af6df48e645bd076802b95ddef0b1e02a9d`
-- ethereum `0xd1a622566f277aa76c3c47a30469432aaec95e38`
-- mantle `0x5e4acca7a9989007cd74ae4ed1b096c000779dcc`
+| mantle | `0x5e4acca7a9989007cd74ae4ed1b096c000779dcc` | SimpleStakingERC20-2 | impl | live | no |

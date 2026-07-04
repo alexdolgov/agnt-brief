@@ -11,7 +11,7 @@ interface ILiquidityConnector {
 
     function addLiquidity(
         AddLiquidityParams memory addLiquidityParams
-    ) external;
+    ) external payable;
 
     function removeLiquidity(
         RemoveLiquidityParams memory removeLiquidityParams

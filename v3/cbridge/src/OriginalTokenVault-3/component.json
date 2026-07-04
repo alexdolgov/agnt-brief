@@ -1,0 +1,21 @@
+{
+  "component": "OriginalTokenVault-3",
+  "main_contract": "OriginalTokenVault",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xd9d1034ef3d21221f008c7e96346ca999966752c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

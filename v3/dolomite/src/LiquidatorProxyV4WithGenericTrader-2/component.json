@@ -1,0 +1,26 @@
+{
+  "component": "LiquidatorProxyV4WithGenericTrader-2",
+  "main_contract": "LiquidatorProxyV4WithGenericTrader",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2adeafd960366411215ce8706c1afe2853c5487b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6c75d62fe0d4e584ab6248cd0121d28a4cb6220a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

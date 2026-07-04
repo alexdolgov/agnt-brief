@@ -63,10 +63,7 @@ interface IIncentivesPricingStats {
     /// @notice get the latest prices for an incentive token. Reverts if token is not registered
     /// @return fastPrice the price based on the faster filter (weighted toward current prices)
     /// @return slowPrice the price based on the slower filter (weighted toward older prices, relative to fast)
-    function getPrice(
-        address token,
-        uint40 staleCheck
-    ) external view returns (uint256 fastPrice, uint256 slowPrice);
+    function getPrice(address token, uint40 staleCheck) external view returns (uint256 fastPrice, uint256 slowPrice);
 
     /// @notice get the latest prices for an incentive token or zero if the token is not registered
     /// @return fastPrice the price based on the faster filter (weighted toward current prices)

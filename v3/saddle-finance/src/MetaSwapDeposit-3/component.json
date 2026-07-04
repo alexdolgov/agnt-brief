@@ -1,0 +1,34 @@
+{
+  "component": "MetaSwapDeposit-3",
+  "main_contract": "MetaSwapDeposit",
+  "source_file_count": 20,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3a0c2a793a8db779e0293699d0ce77c77617fe0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdca5b16a96f984ffb2a3022cff339eb049126101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

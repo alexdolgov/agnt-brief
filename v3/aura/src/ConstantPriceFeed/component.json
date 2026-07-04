@@ -2,7 +2,7 @@
   "component": "ConstantPriceFeed",
   "main_contract": "ConstantPriceFeed",
   "source_file_count": 13,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0x4eff2d77d9ffbaefb4b141a3e494c085b3ff4cb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

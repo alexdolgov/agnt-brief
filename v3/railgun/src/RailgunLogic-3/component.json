@@ -1,0 +1,18 @@
+{
+  "component": "RailgunLogic-3",
+  "main_contract": "RailgunLogic",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6368d9998ea333b37eb869f4e1749b9296e6d09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

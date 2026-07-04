@@ -2,17 +2,25 @@
   "component": "OnlyAddress-2",
   "main_contract": "OnlyAddress",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd071eddff4728f7a33bafd2759db6543b6545da7",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d0488e99ca487cc91457b957664a9db647986d2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8a013835727fa93975b0cbc37ad99670f0819064",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

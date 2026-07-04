@@ -2,13 +2,21 @@
   "component": "Executor",
   "main_contract": "Executor",
   "source_file_count": 34,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://1570067552-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FHCv4CkXABCLemz93mpi7%2Fuploads%2Fa73mi2pbsoZwjmQ8TN5F%2FSlowMist%20Audit%20Report%20-%20MYX%20Protocol%20Phase2.pdf",
     "https://1570067552-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FHCv4CkXABCLemz93mpi7%2Fuploads%2FjSF3929CurPBEmPKgS1C%2FSlowMist%20Audit%20Report%20-%20MYX%20Protocol.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe8b8d0efd1206801a6665e001b289522c96de6e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

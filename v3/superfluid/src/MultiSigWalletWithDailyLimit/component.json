@@ -2,22 +2,46 @@
   "component": "MultiSigWalletWithDailyLimit",
   "main_contract": "MultiSigWalletWithDailyLimit",
   "source_file_count": 1,
-  "deployment_count": 2,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x1bf9d75d50fd828a93f69ecb06f2b85767792ceb",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4c10ff299642118a28b527682f714dbf64287ea7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xee07d9fce4cf2a891bc979e9d365929506c2982f",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfc63b7c762b10670eda15cf3ca3970bcdb28c9ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8b5a2cf69a56d7f8fa027edca23594cddf544ddc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xee1bd2c743bf40b1206b090fa9ab27a0c57d7b90",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

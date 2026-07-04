@@ -7,17 +7,17 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x68f498c230015254aff0e1eb6f85da558dff2362",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8227965a7f42956549afaec319f4e444aa438df5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xb6957806b7fd389323628674bcdfcd61b9cc5e02",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe19b0d53b6416d139b2a447c3ae7fb9fe161a12c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedPlasmaVaultFactory-2",
+  "main_contract": "WrappedPlasmaVaultFactory",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x780ae3454f86b725d572cea4417d8cf681ba8da7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

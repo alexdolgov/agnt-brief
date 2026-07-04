@@ -15,10 +15,7 @@ library WithdrawalQueue {
     error NodeDoesNotExist();
 
     /// @notice Returns true if the address is in the queue.
-    function addressExists(
-        StructuredLinkedList.List storage queue,
-        address addr
-    ) public view returns (bool) {
+    function addressExists(StructuredLinkedList.List storage queue, address addr) public view returns (bool) {
         return StructuredLinkedList.nodeExists(queue, _addressToUint(addr));
     }
 
@@ -75,10 +72,7 @@ library WithdrawalQueue {
     }
 
     /// @notice remove address toRemove from queue if it exists.
-    function popAddress(
-        StructuredLinkedList.List storage queue,
-        address toRemove
-    ) public {
+    function popAddress(StructuredLinkedList.List storage queue, address toRemove) public {
         uint256 addrAsUint = _addressToUint(toRemove);
         uint256 _removedNode = StructuredLinkedList.remove(queue, addrAsUint);
         if (!((_removedNode == addrAsUint) || (_removedNode == 0))) {
@@ -96,10 +90,7 @@ library WithdrawalQueue {
     /// @notice if addr in queue, move it to the top
     // if addr not in queue, add it to the top of the queue.
     // if queue is empty, make a new queue with addr as the only node
-    function addToHead(
-        StructuredLinkedList.List storage queue,
-        address addr
-    ) public {
+    function addToHead(StructuredLinkedList.List storage queue, address addr) public {
         if (addr == address(0)) {
             revert CannotInsertZeroAddress();
         }
@@ -125,10 +116,7 @@ library WithdrawalQueue {
     /// @notice if addr in queue, move it to the end
     // if addr not in queue, add it to the end of the queue.
     // if queue is empty, make a new queue with addr as the only node
-    function addToTail(
-        StructuredLinkedList.List storage queue,
-        address addr
-    ) public {
+    function addToTail(StructuredLinkedList.List storage queue, address addr) public {
         if (addr == address(0)) {
             revert CannotInsertZeroAddress();
         }

@@ -1,0 +1,18 @@
+{
+  "component": "Vault-6",
+  "main_contract": "Vault",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80d40e32fad8be8da5c6a42b8af1e181984d137c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

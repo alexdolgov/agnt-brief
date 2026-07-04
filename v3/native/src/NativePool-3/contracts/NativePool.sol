@@ -40,8 +40,11 @@ contract NativePool is
     uint256 public constant CONSTANT_SUM_PRICE_MODEL_ID = 0;
     uint256 public constant UNISWAP_V2_PRICE_MODEL_ID = 1;
     uint256 internal constant TEN_THOUSAND_DENOMINATOR = 10000;
-    // keccak256("Order(uint256 id,address signer,address buyer,address seller,address buyerToken,address sellerToken,uint256 buyerTokenAmount,uint256 sellerTokenAmount,uint256 deadlineTimestamp,address caller,bytes16 quoteId)");
-    bytes32 private constant ORDER_SIGNATURE_HASH = 0xcdd3cf1659a8da07564b163a4df90f66944547e93f0bb61ba676c459a2db4e20;
+    uint256 internal constant TOKEN_ARRAY_MAX_LENGTH = 10;
+    bytes32 private constant ORDER_SIGNATURE_HASH =
+        keccak256(
+            "Order(uint256 id,address signer,address buyer,address seller,address buyerToken,address sellerToken,uint256 buyerTokenAmount,uint256 sellerTokenAmount,uint256 deadlineTimestamp,address txOrigin,bytes16 quoteId)"
+        );
 
     modifier onlyRouter() {
         require(msg.sender == router, "Message sender should only be the router");
@@ -63,35 +66,47 @@ contract NativePool is
         _disableInitializers();
     }
 
-    function initialize(NewPoolConfig calldata poolConfig, address _pricingModelRegistry) external override initializer {
+    function initialize(
+        address _treasury,
+        address _treasuryOwner,
+        address _signer,
+        address _pricingModelRegistry,
+        address _router,
+        uint256[] memory _fees,
+        address[] memory _tokenAs,
+        address[] memory _tokenBs,
+        uint256[] memory _pricingModelIds,
+        bool _isTreasuryContract,
+        bool _isPublicTreasury
+    ) external override initializer {
         __EIP712_init("native pool", "1");
         __ReentrancyGuard_init();
         __Ownable_init();
         __Pausable_init();
         __NoDelegateCall_init();
-        require(poolConfig.treasuryAddress != address(0), "treasury address specified should not be zero address");
+        require(_treasury != address(0), "treasury address specified should not be zero address");
         require(
-            poolConfig.poolOwnerAddress != address(0),
+            _treasuryOwner != address(0),
             "treasuryOwner address specified should not be zero address"
         );
-        require(poolConfig.signerAddress != address(0), "signer address specified should not be zero address");
+        require(_signer != address(0), "signer address specified should not be zero address");
         require(
             _pricingModelRegistry != address(0),
             "pricingModelRegistry address specified should not be zero address"
         );
-        treasury = poolConfig.treasuryAddress;
-        treasuryOwner = poolConfig.poolOwnerAddress;
-        isSigner[poolConfig.signerAddress] = true;
+        treasury = _treasury;
+        treasuryOwner = _treasuryOwner;
+        isSigner[_signer] = true;
         pricingModelRegistry = _pricingModelRegistry;
-        setRouter(poolConfig.routerAddress);
-        executeUpdatePairs(poolConfig.fees, poolConfig.tokenAs, poolConfig.tokenBs, poolConfig.pricingModelIds);
+        setRouter(_router);
+        executeUpdatePairs(_fees, _tokenAs, _tokenBs, _pricingModelIds);
         poolFactory = msg.sender;
-        isTreasuryContract = poolConfig.isTreasuryContract;
-        isPublicTreasury = poolConfig.isPublicTreasury;
+        isTreasuryContract = _isTreasuryContract;
+        isPublicTreasury = _isPublicTreasury;
 
         emit SetTreasury(treasury);
         emit SetTreasuryOwner(treasuryOwner);
-        emit AddSigner(poolConfig.signerAddress);
+        emit AddSigner(_signer);
     }
 
     function _authorizeUpgrade(address) internal view override {
@@ -123,18 +138,7 @@ contract NativePool is
         }
     }
 
-    function setPauser(address _pauser) external onlyOwner {
-        pauser = _pauser;
-    }
-
-    modifier onlyOwnerOrPauserOrPoolFactory() {
-        if (msg.sender != owner() && msg.sender != pauser && msg.sender != poolFactory) {
-            revert onlyOwnerOrPauserOrPoolFactoryCanCall();
-        }
-        _;
-    }
-
-    function pause() external onlyOwnerOrPauserOrPoolFactory {
+    function pause() external onlyOwner {
         _pause();
     }
 
@@ -166,12 +170,11 @@ contract NativePool is
             require(verifySignature(_order, signature), "Signature is invalid");
         }
         require(_order.deadlineTimestamp > block.timestamp, "Order is expired");
-        require(!nonceMapping[_order.caller][_order.id], "Nonce already used");
-        nonceMapping[_order.caller][_order.id] = true;
-
+        require(_order.id == nonce[_order.txOrigin] + 1, "Incorrect nonce");
+        nonce[_order.txOrigin]++;
         require(pairExist(_order.sellerToken, _order.buyerToken), "Pair not exist");
         require(flexibleAmount != 0, "Flexible amount cannot be 0");
-        require(!blacklisted[_order.caller], "Account is blacklisted");
+        require(!blacklisted[_order.txOrigin], "Account is blacklisted");
 
         uint256 buyerTokenAmount;
         uint256 sellerTokenAmount;
@@ -199,7 +202,7 @@ contract NativePool is
             uint256 fee = getPairFee(_order.sellerToken, _order.buyerToken);
             if (amount0Delta < 0) {
                 emit Swap(
-                    _order.caller,
+                    _order.txOrigin,
                     recipient,
                     _order.sellerToken,
                     _order.buyerToken,
@@ -210,7 +213,7 @@ contract NativePool is
                 );
             } else {
                 emit Swap(
-                    _order.caller,
+                    _order.txOrigin,
                     recipient,
                     _order.sellerToken,
                     _order.buyerToken,
@@ -275,7 +278,10 @@ contract NativePool is
         );
         for (uint i = 0; i < _fees.length; ) {
             require(_tokenAs[i] != _tokenBs[i], "Identical addresses");
-            require(_fees[i] <= 10000, "Fee should be between 0 and 10k basis points");
+            require(
+                (_fees[i] >= 0) && (_fees[i] <= 10000),
+                "Fee should be between 0 and 10k basis points"
+            );
             (address token0, address token1) = _tokenAs[i] < _tokenBs[i]
                 ? (_tokenAs[i], _tokenBs[i])
                 : (_tokenBs[i], _tokenAs[i]);
@@ -328,6 +334,9 @@ contract NativePool is
                 i++;
             }
         }
+        if (tokenAs.length > TOKEN_ARRAY_MAX_LENGTH) {
+            revert TokenArrayLengthExceedLimit(tokenAs.length);
+        }
     }
 
     function updatePairs(
@@ -340,22 +349,41 @@ contract NativePool is
         executeUpdatePairs(_fees, _tokenAs, _tokenBs, _pricingModelIds);
     }
 
-    function removePair(uint256 removingIdx) public whenNotPaused {
-        require(removingIdx < pairCount, "removePair: index out of range");
-        require(removingIdx < tokenAs.length, "removePair: index out of range");
+    function removePair(address tokenIn, address tokenOut) public whenNotPaused {
         require(msg.sender == treasuryOwner, "Unauthorized to whitelist pairs");
-        address token0 = tokenAs[removingIdx];
-        address token1 = tokenBs[removingIdx];
-        require(pairExist(token0, token1), "Pair not exist");
-
+        require(pairExist(tokenIn, tokenOut), "Pair not exist");
+        (address token0, address token1) = tokenIn < tokenOut
+            ? (tokenIn, tokenOut)
+            : (tokenOut, tokenIn);
         delete pairs[token0][token1];
-        tokenAs[removingIdx] = tokenAs[tokenAs.length - 1];
-        tokenAs.pop();
-        tokenBs[removingIdx] = tokenBs[tokenBs.length - 1];
-        tokenBs.pop();
-        pairCount--;
-
+        uint tokenAsLength = tokenAs.length;
+        for (uint i = 0; i < tokenAsLength; ) {
+            if (tokenAs[i] == token0 && tokenBs[i] == token1) {
+                tokenAs[i] = tokenAs[tokenAs.length - 1];
+                tokenAs.pop();
+                tokenBs[i] = tokenBs[tokenBs.length - 1];
+                tokenBs.pop();
+                pairCount--;
+                break;
+            }
+            unchecked {
+                i++;
+            }
+        }
         emit RemovePair(token0, token1);
+    }
+
+    function getNonce(address txOrigin) public view returns (uint256) {
+        return nonce[txOrigin];
+    }
+
+    function increaseNonce(address txOrigin) public whenNotPaused returns (uint256) {
+        require(
+            msg.sender == treasury || msg.sender == treasuryOwner,
+            "Unauthorized to change nonce"
+        );
+        nonce[txOrigin]++;
+        return nonce[txOrigin];
     }
 
     function getAmountOut(
@@ -454,7 +482,7 @@ contract NativePool is
                 _order.buyerTokenAmount,
                 _order.sellerTokenAmount,
                 _order.deadlineTimestamp,
-                _order.caller,
+                _order.txOrigin,
                 _order.quoteId
             )
         );

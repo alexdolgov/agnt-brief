@@ -217,6 +217,11 @@ contract ControllerLogic is Initializable, OwnableUpgradeSafe, ReentrancyGuardUp
 
         (, uint256 typeVault, ) = controller.getVaultWithDetails(_args.owner, _args.vaultId);
 
+        if (typeVault == 1) {
+            controller.increaseNakedPoolBalance(_args.asset, _args.amount);
+
+            require(controller.getNakedPoolBalance(_args.asset) <= controller.getNakedCap(_args.asset), "C37");
+        }
         controller.updateVault(4, _args.owner, _args.vaultId, _args.asset, _args.amount);
 
         pool.transferToPool(_args.asset, _args.from, _args.amount);
@@ -234,6 +239,10 @@ contract ControllerLogic is Initializable, OwnableUpgradeSafe, ReentrancyGuardUp
             OtokenInterface otoken = OtokenInterface(vault.shortOtokens[0]);
 
             require(now < otoken.expiryTimestamp(), "C22");
+        }
+
+        if (typeVault == 1) {
+            controller.reduceNakedPoolBalance(_args.asset, _args.amount);
         }
 
         controller.updateVault(5, _args.owner, _args.vaultId, _args.asset, _args.amount);
@@ -505,6 +514,10 @@ contract ControllerLogic is Initializable, OwnableUpgradeSafe, ReentrancyGuardUp
         }
 
         controller.updateVault(6, _args.owner, _args.vaultId, address(0), 0);
+
+        if (typeVault == 1) {
+            controller.reduceNakedPoolBalance(settleMem.collateral, settleMem.collateralPayout);
+        }
 
         pool.transferToUser(settleMem.collateral, _args.to, settleMem.collateralPayout);
         if (settleMem.strikePayout > 0) {

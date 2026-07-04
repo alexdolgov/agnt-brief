@@ -62,7 +62,7 @@ abstract contract CollateralizedBondGranter is BondGranter {
         uint8 principalDecimals = principalToken.decimals();
         uint8 collateralDecimals = collateralToken.decimals();
         collateralMultiplier = multiplierIndex * 10 ** (collateralDecimals - principalDecimals);
-        emit CollateralMultiplierUpdated(multiplierIndex);
+        emit CollateralMultiplierUpdated(collateralMultiplier);
     }
 
     /**
@@ -134,13 +134,6 @@ abstract contract CollateralizedBondGranter is BondGranter {
         return false;
     }
 
-    function _afterBondExited(uint256 tokenId, uint256 principal, address beneficiary) internal virtual override {
-        uint256 collateralAmount = collaterals[tokenId];
-        totalCollateralizedAmount -= collateralAmount;
-        emit CollateralReleased(tokenId, collateralAmount);
-        super._afterBondExited(tokenId, principal, beneficiary);
-    }
-
     /**
      * ///////// [v1.0, v1.1] /////////
      * 1 collateralToken
@@ -157,7 +150,15 @@ abstract contract CollateralizedBondGranter is BondGranter {
      * 1 collaterals
      * 24 __gap
      * 28 (v1.1 deployed reduced to 28 store gaps)
-     * ///////// [v2.2, v2.2.1, v2.2.2] /////////
+     * ///////// [v2.2] /////////
+     * 1 collateralToken
+     * 1 collateralMultiplier
+     * 1 totalCollateralizedAmount
+     * 1 collaterals
+     * 1 collateralReserve
+     * 23 __gap
+     * 28 (v1.2 deployed with same 28 store gaps)
+     * ///////// [v2.3] /////////
      * 1 collateralToken
      * 1 collateralMultiplier
      * 1 totalCollateralizedAmount

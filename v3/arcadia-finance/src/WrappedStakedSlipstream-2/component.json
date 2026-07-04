@@ -1,0 +1,26 @@
+{
+  "component": "WrappedStakedSlipstream-2",
+  "main_contract": "WrappedStakedSlipstream",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc4d3d804ed64c1f78097799208d46b1db4252749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd74339e0f10fce96894916b93e5cc7de89c98272",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

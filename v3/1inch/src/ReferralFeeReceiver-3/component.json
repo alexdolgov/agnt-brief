@@ -1,0 +1,18 @@
+{
+  "component": "ReferralFeeReceiver-3",
+  "main_contract": "ReferralFeeReceiver",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x735247fb0a604c0adc6cab38ace16d0dba31295f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

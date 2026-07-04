@@ -178,7 +178,7 @@ library TruncatedOracle {
             }
 
             // now, set before to the oldest observation
-            beforeOrAt = self[0];
+            beforeOrAt = self[(index + 1) % cardinality];
             if (!beforeOrAt.initialized) beforeOrAt = self[0];
 
             // ensure that the target is chronologically at or after the oldest observation
@@ -202,18 +202,18 @@ library TruncatedOracle {
         Observation[512] storage self,
         uint32 time,
         uint32 target,
-        uint16,
+        uint16 index,
         uint16 cardinality
     ) private view returns (Observation memory beforeOrAt, Observation memory atOrAfter) {
         unchecked {
-            uint256 l = 0;
-            uint256 r = cardinality - 1;
+            uint256 l = (uint256(index) + 1) % cardinality; // oldest observation
+            uint256 r = l + cardinality - 1; // newest observation (virtual index)
             uint256 i;
 
             while (true) {
                 i = (l + r) / 2;
 
-                beforeOrAt = self[i];
+                beforeOrAt = self[i % cardinality];
 
                 // we've landed on an uninitialized tick, keep searching higher (more recently)
                 if (!beforeOrAt.initialized) {
@@ -221,7 +221,7 @@ library TruncatedOracle {
                     continue;
                 }
 
-                atOrAfter = self[i + 1];
+                atOrAfter = self[(i + 1) % cardinality];
 
                 bool targetAtOrAfter = lte(time, beforeOrAt.blockTimestamp, target);
 

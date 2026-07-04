@@ -1,0 +1,18 @@
+{
+  "component": "AutopoolStrategyHooks-2",
+  "main_contract": "AutopoolStrategyHooks",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1d39bfee43a17bab3d35ce3503194309fe89f876",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

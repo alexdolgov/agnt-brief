@@ -1,0 +1,21 @@
+{
+  "component": "HakkaRewardsVesting-4",
+  "main_contract": "HakkaRewardsVesting",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hakkafinance/audit-reports/blob/main/Hakka%20Finance%20Urban%20Giggle%20Audit.pdf",
+    "https://github.com/hakkafinance/audit-reports/blob/main/PeckShield-Audit-Report-Urban-Giggle-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x735a80510536a9a18c8824f40dbc92824640c95a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -3,34 +3,16 @@ pragma solidity 0.8.7;
 
 import "./SwitchboardBase.sol";
 
-/**
- * @title OptimisticSwitchboard
- * @notice A contract that extends the SwitchboardBase contract and implements the
- * allowPacket and fee getter functions.
- */
 contract OptimisticSwitchboard is SwitchboardBase {
-    /**
-     * @notice Creates an OptimisticSwitchboard instance with the specified parameters.
-     * @param owner_ The address of the contract owner.
-     * @param socket_ The address of the socket contract.
-     * @param chainSlug_ The chain slug.
-     * @param timeoutInSeconds_ The timeout period in seconds.
-     * @param signatureVerifier_ The address of the signature verifier contract
-     */
     constructor(
         address owner_,
         address socket_,
-        uint32 chainSlug_,
-        uint256 timeoutInSeconds_,
-        ISignatureVerifier signatureVerifier_
+        address gasPriceOracle_,
+        uint256 chainSlug_,
+        uint256 timeoutInSeconds_
     )
         AccessControlExtended(owner_)
-        SwitchboardBase(
-            socket_,
-            chainSlug_,
-            timeoutInSeconds_,
-            signatureVerifier_
-        )
+        SwitchboardBase(gasPriceOracle_, socket_, chainSlug_, timeoutInSeconds_)
     {}
 
     /**
@@ -47,5 +29,12 @@ contract OptimisticSwitchboard is SwitchboardBase {
         if (tripGlobalFuse || tripSinglePath[srcChainSlug_]) return false;
         if (block.timestamp - proposeTime_ < timeoutInSeconds) return false;
         return true;
+    }
+
+    function _getMinSwitchboardFees(
+        uint256,
+        uint256
+    ) internal pure override returns (uint256) {
+        return 0;
     }
 }

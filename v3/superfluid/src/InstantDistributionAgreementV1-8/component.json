@@ -1,0 +1,18 @@
+{
+  "component": "InstantDistributionAgreementV1-8",
+  "main_contract": "InstantDistributionAgreementV1",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xac4ef44848b6ae6bedd12e0e3f806caf4d333cdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

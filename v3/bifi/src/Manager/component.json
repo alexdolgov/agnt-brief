@@ -1,18 +1,18 @@
 {
   "component": "Manager",
   "main_contract": "Manager",
-  "source_file_count": 4,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x74326d2bfbf22312158850ac3b4f7ae8a0a347fd",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9c9d3acc1a65c3ff0c1075ed23f383d05f1a9bd6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

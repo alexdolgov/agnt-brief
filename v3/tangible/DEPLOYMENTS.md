@@ -1,12 +1,12 @@
 # tangible — deployments
 
-1961 verified deployment(s) across 233 component(s).
+1981 verified deployment(s) across 244 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x05d71db24f436e40d4bcb54724dc458eb641c2f1` | USDR | impl | live | yes |
 | arbitrum | `0x2ddaa8aead8f8f213a2bbc4e00b12f3ecce55c5d` | ChildWUSDR | impl | live | no |
-| arbitrum | `0x2fd1ed402e067b450a0c688c0cfa9ac059df6647` | ProxyAdmin | impl | live | no |
+| arbitrum | `0x2fd1ed402e067b450a0c688c0cfa9ac059df6647` | ProxyAdmin-2 | impl | live | no |
 | arbitrum | `0x509a5a600a2258d1e984b87e0db190c6742d4cb1` | USDR | impl | live | yes |
 | arbitrum | `0x5ec27daf28d49a7d61d8f919c846eab626e11372` | ChildWUSDR | impl | live | no |
 | arbitrum | `0x70c32d99d6c16fe962eccac6ab4274077b249039` | USDRMigrationV2 | impl | live | no |
@@ -15,8 +15,11 @@
 | arbitrum | `0xaef9f05f794a49123f1cfd796a13a6487f243c21` | ChildWUSDR | impl | live | no |
 | arbitrum | `0xc03b43d492d904406db2d7d57e67c7e8234ba752` | USDR | impl | live | yes |
 | arbitrum | `0xc419568e7673bdc0d65ab3b56986ccec7776d7f2` | USDRMigrationV2 | impl | live | no |
+| arbitrum | `0xc7fbb8e24adc561b2a16cc21534acc5bd3bef3ef` | WadRayMath-2 | impl | live | yes |
+| arbitrum | `0xddc0385169797937066bbd8ef409b5b3c0dfeb52` | AnyswapV6ERC20 | impl | live | no |
+| arbitrum | `0xe19848f158efd31d45a6975320365251c92040c1` | GnosisSafeProxy-2 | proxy | live | no |
 | base | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | Voter-2 | impl | live | no |
-| base | `0x227f65131a261548b057215bb1d5ab2997964c7d` | RewardsDistributor | impl | live | no |
+| base | `0x227f65131a261548b057215bb1d5ab2997964c7d` | RewardsDistributor-5 | impl | live | no |
 | base | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | Gauge-2 | impl | live | no |
 | base | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | EIP712 | impl | live | no |
 | base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router-2 | impl | live | no |
@@ -24,7 +27,11 @@
 | base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter-2 | impl | live | no |
 | base | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | VotingEscrow-2 | impl | live | no |
 | bsc | `0x2952beb1326accbb5243725bd4da2fc937bca087` | AnyswapV6ERC20 | impl | live | no |
+| bsc | `0x9483ab65847a447e36d21af1cab8c87e9712ff93` | WadRayMath-2 | impl | live | yes |
 | ethereum | `0x83fedbc0b85c6e29b589aa6bdefb1cc581935ecd` | Proxy | proxy | live | yes |
+| ethereum | `0xd5a14081a34d256711b02bbef17e567da48e80b5` | AnyswapV6ERC20 | impl | live | no |
+| optimism | `0x340fe1d898eccaad394e2ba0fc1f93d27c7b717a` | AnyswapV6ERC20 | impl | live | no |
+| optimism | `0xf1a443de2ec82952d0d0da4d29de14defd816237` | USDRMigrationV2-2 | impl | live | no |
 | polygon | `0x002fe8b38f7c261dddd2125875413a6ebd7e40d3` | TetuProxyControlled | proxy | live | no |
 | polygon | `0x0066ce773fffb87476827a66cc55acd296448d7d` | TetuProxyControlled | impl | live | no |
 | polygon | `0x0085bb209c54b0f90cd20257b930c51fc7b8630a` | StrategyQuickSwapLpAc | impl | live | no |
@@ -563,6 +570,7 @@
 | polygon | `0x440f45fa2134b5e3920ffa2215adf0fb79c4dbc8` | TetuProxyControlled | proxy | live | no |
 | polygon | `0x44100ed95c83ee1a669742dca58f9461fd8f9a78` | FractionStorageManagerDeployer | impl | live | no |
 | polygon | `0x4414717cac4eba95d47ca77929654746130073cb` | TNGBLPriceOracle | impl | live | yes |
+| polygon | `0x446beecf9a5ceb5b24d186af58f8c83a9861039d` | ERC1967Upgrade | impl | live | no |
 | polygon | `0x44881136d2dffc7129baba6aa35282bbb353d786` | UpgradeableProxy | impl | live | no |
 | polygon | `0x44c5c686522d45680efa4297d1fde62ef8279f60` | TetuProxyControlled | impl | live | no |
 | polygon | `0x44d764218d1a663078450ea9e7521ec4c469be02` | TetuProxyControlled | impl | live | no |
@@ -646,6 +654,7 @@
 | polygon | `0x4f38d17462866f91684168f70498292141d44e09` | TetuProxyControlled | impl | live | no |
 | polygon | `0x4f49e38ad961c9cd75d0ad18c5664c2e12c782f0` | StrategyTetuSwap | impl | live | no |
 | polygon | `0x4f4d57d53e5d4de86040696cb9f7ed4592f2d3b4` | StrategyQuickSwapLp | impl | live | no |
+| polygon | `0x4f57e583a4c4f6b023577c4a52346414f16cd53b` | ERC1967Upgrade | impl | live | no |
 | polygon | `0x4f63b49aa81c4d0b3915d22d02f76d051514566b` | DebtToken | impl | live | no |
 | polygon | `0x4f765306760c490a60803fbfc87a2156740e7f8d` | TetuProxyControlled | impl | live | no |
 | polygon | `0x4f777d02db299f387da08efd75c520374a320e9e` | TetuProxyControlled | impl | live | no |
@@ -785,6 +794,7 @@
 | polygon | `0x60fef6f739e809b4e960692293ab2a68cb0b14f5` | TetuProxyControlled | impl | live | no |
 | polygon | `0x6135691e089f8e1b97965579cc4298ca1c73e749` | StrategyWaultLpWithAc | impl | live | no |
 | polygon | `0x61362944b057665a66f7ed592e22ae2ba9cde07d` | TetuProxyControlled | impl | live | no |
+| polygon | `0x613fa5ffcddf4773a894093a05b0419f3b785121` | RewardsDistributor | impl | live | no |
 | polygon | `0x614bfd873eeea233b2f5128dbe1a958eb625415b` | TetuProxyControlled | impl | live | no |
 | polygon | `0x619151606267da7d1d78be06e59e55134329004d` | VeDistributor | impl | live | no |
 | polygon | `0x61b227a7cbaa92fd0e46a517fa421df87a9cbb17` | Multicall | impl | live | no |
@@ -884,6 +894,7 @@
 | polygon | `0x6eeb3f66d945a7ca97e8e0ce2c876f8ed6cc8d7f` | StrategyQuickSwapLpV2 | impl | live | no |
 | polygon | `0x6ef682f0223687c625e6c4a115f544a80c37da33` | USDRTreasury | impl | live | yes |
 | polygon | `0x6f2fb669b52e4ed21a019e9db197f27f4b88ebf9` | TetuProxyControlled | proxy | live | no |
+| polygon | `0x6f44ee3c86296f3ae49b9a921a47d18ec3df293c` | RewardsDistributor-2 | impl | live | no |
 | polygon | `0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4` | VeTetu | proxy | live | no |
 | polygon | `0x6fb3bf8fc7751e77fda80da68b8a43637a004d8c` | StrategyBalBridgedStaking | proxy | live | no |
 | polygon | `0x7028e9fe310f37261c197bf624f450cccf23b5bc` | IncentiveVault | impl | live | yes |
@@ -1083,6 +1094,7 @@
 | polygon | `0x8ce82917856827a1ce16004306fff623750b415b` | TetuProxyControlled | impl | live | no |
 | polygon | `0x8d0820528c5f5c8a0fb2d951c177089f3463fb83` | TetuProxyControlled | proxy | live | no |
 | polygon | `0x8d1573146357abf8f41a382118196147c10115c7` | TetuProxyControlled | impl | live | no |
+| polygon | `0x8d7651fa9b38da16fd0ed97507f0b2721f150700` | ProxyAdmin | impl | live | no |
 | polygon | `0x8d841558b1bbbcaa120b26628b217cbdb7d5a340` | Controllable | impl | live | no |
 | polygon | `0x8d9f5c77806d7118a67921f1552452de2e386f10` | TreasuryTracker | impl | live | yes |
 | polygon | `0x8dc75a2377027fcd93227d4d20d9692cafc0597c` | MaiStablecoinPipe | impl | live | no |
@@ -1198,6 +1210,7 @@
 | polygon | `0x9ce692f32a6fdb9fca33a3543c3fc9ebef1f0db7` | TetuProxyControlled | impl | live | no |
 | polygon | `0x9d112f4958776bac64be5a7bf739da708ec4ee1d` | TetuProxyControlled | impl | live | no |
 | polygon | `0x9d44520ebd4c988f3787c246fd1c34648d2fce31` | StrategyPenroseTetuUsdPlus | impl | live | no |
+| polygon | `0x9d79067149b03d0868f956318c8682613ba34388` | RewardsDistributor-3 | impl | live | no |
 | polygon | `0x9daaf475d6773e08aa6bd9d3c10372c3a6ed426f` | TetuProxyControlled | impl | live | no |
 | polygon | `0x9db15ee49e2bbc7b59aa089e5a0f34ba65d7a292` | RequestsManager | impl | live | no |
 | polygon | `0x9de4826243af6229bd680a1bfc2ff545ea6c6832` | TetuProxyControlled | impl | live | no |
@@ -1285,6 +1298,7 @@
 | polygon | `0xa9a9dcd9a57b2e2a5a1b5e1c61eac8d2e119874a` | TetuProxyControlled | impl | live | no |
 | polygon | `0xa9adaba1ec2741867cbb49ee8bb2ae3452d6681a` | TetuProxyControlled | impl | live | no |
 | polygon | `0xaa2c0ce4e2058f9602451bb5a038675522ff3e1a` | TetuProxyControlled | impl | live | no |
+| polygon | `0xaa3836e67485b627eb3e3c3a6792c942f75e6d30` | ERC1967Upgrade | impl | live | no |
 | polygon | `0xaa43e2cc199dc946b3d528c6e00ebb3f4cc2fc0e` | TetuProxyControlled | proxy | live | no |
 | polygon | `0xaa92f7cef77fca237a09bbbed34396a01af15ac7` | TetuProxyControlled | impl | live | no |
 | polygon | `0xaacccfe443e89ef88fe9ebec136f2920101cd068` | VaultFactory | impl | live | no |
@@ -1457,6 +1471,7 @@
 | polygon | `0xbff5254bac5b72f6aced9093b5b6b9b0ca688249` | StrategyIronUniPair | impl | live | no |
 | polygon | `0xc00c057ce93199c48be823762d521437696c7a55` | StrategyQuickSwapLp | impl | live | no |
 | polygon | `0xc0142d54e0f1d885cf6d76a125f406eb8cdebe47` | TetuProxyControlled | impl | live | no |
+| polygon | `0xc030f48894c1c5d3fb7758e0f88f21b14dda0ab2` | USDRMigrationV2-3 | impl | live | no |
 | polygon | `0xc04c2b5e22dbeb99b45c770b0bf946c5380362ad` | TetuProxyControlled | impl | live | no |
 | polygon | `0xc06c7d29d8eb30b18d0377c1f73f9e5d8d332c77` | VeTetuLogo | impl | live | no |
 | polygon | `0xc082da9bd9e472e36f910ff7245b0d5da1724546` | MultiSwap | impl | live | no |
@@ -1582,6 +1597,7 @@
 | polygon | `0xce97c1c24a3e6efe49e6494acec65e7ea58674f9` | StrategyQuickSwapLp | impl | live | no |
 | polygon | `0xce9f7173420b41678320cd4bb93517382b6d48e8` | TetuProxyControlled | impl | live | no |
 | polygon | `0xced6998485b1cc3f47bbc80f7456cdb9b02bf8e1` | StrategyWaultLp | impl | live | no |
+| polygon | `0xcedc4acd2eb0fe6243db8eb1122390ea696228ac` | Vyper_contract | impl | live | no |
 | polygon | `0xcefa92388a8e558817ded97f6613fc993926fa5b` | StrategyQuickSwapLp | impl | live | no |
 | polygon | `0xcefbb211d4afaad467d46e6aa7921d2b28e3b3f0` | UpgradeableProxy | impl | live | no |
 | polygon | `0xcf1f972135a0a7066010942ac9bfda5802bc57d3` | TetuProxyControlled | impl | live | no |
@@ -1638,6 +1654,7 @@
 | polygon | `0xd8222e75d481a4fff51402ad478d128a3f3723af` | PawnShopReader | impl | live | no |
 | polygon | `0xd8288634480414740eaf387c412d211432543f36` | TetuProxyControlled | proxy | live | no |
 | polygon | `0xd85b704c101772cb4c8d04dfa0f965a184e87ec2` | FeeRewardForwarder | impl | live | no |
+| polygon | `0xd86a8c65d5a25ff0318e0927d75adb5000d284d0` | USDRMigrationV2-4 | impl | live | no |
 | polygon | `0xd89682cdeb9142c7ede789729e9752f30161e093` | DAIBond | impl | live | yes |
 | polygon | `0xd89aedd13e37739d6adeab1794f9e3c002614ca0` | StrategyQuickSwapLp | impl | live | no |
 | polygon | `0xd8f91e1165d83499d3a267b8eb7f54f6fd3dd792` | TetuProxyControlled | proxy | live | no |
@@ -1711,6 +1728,7 @@
 | polygon | `0xe16e318147cab1b8c442cf61d59abfd81120b2e5` | StrategyMeshStaking | impl | live | no |
 | polygon | `0xe17eb4bf4d00aab1015b3116e2b438cacfb140a8` | ProxyControlled-2 | impl | live | no |
 | polygon | `0xe19748d6d8d6a7c5af5553bb014a99b25024b8d8` | TetuProxyControlled | proxy | live | no |
+| polygon | `0xe1aa33c704d6603c1f7a5961aae29615744ac973` | Vyper_contract-2 | impl | live | no |
 | polygon | `0xe1ab835baf8c31f579417300c9abbbd3c3052b29` | ERC1967Upgrade | impl | live | no |
 | polygon | `0xe28e3146306ff247b00ccce00d7893775b0fb696` | TetuProxyControlled | proxy | live | no |
 | polygon | `0xe29d72e3f072a6b93f54f08c8644dd3429fe69a7` | TetuProxyControlled | proxy | live | no |
@@ -1885,6 +1903,7 @@
 | polygon | `0xf70d4360b5f38e51e251881dd83200e265e4ee49` | TetuProxyControlled | impl | live | no |
 | polygon | `0xf710277064c49f4689f061b4263d8930e395c61d` | BalVaultPipe | impl | live | no |
 | polygon | `0xf712fb209665a4f60c313573e98e8dc0ba8af674` | TetuProxyControlled | proxy | live | no |
+| polygon | `0xf7433be66cfe98a87599bad6db088f3186e54ab9` | RewardsDistributor-4 | impl | live | no |
 | polygon | `0xf74a9fd7d62969704da09a26b291a8a43a4f1fe1` | TetuProxyControlled | impl | live | no |
 | polygon | `0xf74d6b2047610010aa49c54054be58ace89f80c6` | TetuProxyControlled | impl | live | no |
 | polygon | `0xf7a424f27eeb1777e0e2d579f53c4e99fbdf055d` | StrategyQuickSwapLp | impl | live | no |
@@ -1937,6 +1956,7 @@
 | polygon | `0xfbfea2ac489c1cba19b68581fcc08004d5db13f5` | PawnShopReader | impl | live | no |
 | polygon | `0xfc09e2d57f47320fd69f1b48cba6174e069baa65` | TetuProxyControlled | impl | live | no |
 | polygon | `0xfc723668de17dd03a390956c15b437628d28b5f0` | TetuProxyControlled | impl | live | no |
+| polygon | `0xfcae164118bf4f12bea7969d114fdc42d59a27f5` | ProxyAdmin | impl | live | no |
 | polygon | `0xfcb440ae751c0b90e2706a6fe7f31c305a76c121` | GasPool | impl | live | no |
 | polygon | `0xfcc514062fb1bd9eb81efd3cd7ef6f973229ad33` | TetuProxyControlled | impl | live | no |
 | polygon | `0xfd0bceee9a478140922612a1489b656b93716bbf` | StrategyQuickSwapLp | impl | live | no |
@@ -1965,27 +1985,3 @@
 | polygon | `0xffbaaa72f320efb3586c8163ba6b108b4f8d22de` | PawnShopReader | impl | live | no |
 | polygon | `0xffd36165c665a6c9146b0f592b0503295b9deff3` | NidhiLegacyNFT | impl | live | no |
 | polygon | `0xfff6b3da4c4507ceb3525c188f2bb011b56e8a0c` | TetuProxyControlled | impl | live | no |
-
-## Source unavailable (20)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0xc7fbb8e24adc561b2a16cc21534acc5bd3bef3ef`
-- arbitrum `0xddc0385169797937066bbd8ef409b5b3c0dfeb52`
-- arbitrum `0xe19848f158efd31d45a6975320365251c92040c1`
-- bsc `0x9483ab65847a447e36d21af1cab8c87e9712ff93`
-- ethereum `0xd5a14081a34d256711b02bbef17e567da48e80b5`
-- optimism `0x340fe1d898eccaad394e2ba0fc1f93d27c7b717a`
-- optimism `0xf1a443de2ec82952d0d0da4d29de14defd816237`
-- polygon `0x446beecf9a5ceb5b24d186af58f8c83a9861039d`
-- polygon `0x4f57e583a4c4f6b023577c4a52346414f16cd53b`
-- polygon `0x613fa5ffcddf4773a894093a05b0419f3b785121`
-- polygon `0x6f44ee3c86296f3ae49b9a921a47d18ec3df293c`
-- polygon `0x8d7651fa9b38da16fd0ed97507f0b2721f150700`
-- polygon `0x9d79067149b03d0868f956318c8682613ba34388`
-- polygon `0xaa3836e67485b627eb3e3c3a6792c942f75e6d30`
-- polygon `0xc030f48894c1c5d3fb7758e0f88f21b14dda0ab2`
-- polygon `0xcedc4acd2eb0fe6243db8eb1122390ea696228ac`
-- polygon `0xd86a8c65d5a25ff0318e0927d75adb5000d284d0`
-- polygon `0xe1aa33c704d6603c1f7a5961aae29615744ac973`
-- polygon `0xf7433be66cfe98a87599bad6db088f3186e54ab9`
-- polygon `0xfcae164118bf4f12bea7969d114fdc42d59a27f5`

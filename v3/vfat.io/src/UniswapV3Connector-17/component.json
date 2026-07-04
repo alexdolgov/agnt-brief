@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3Connector-17",
+  "main_contract": "UniswapV3Connector",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xfc4c50957f928ecbef15409cf9f8b3e1d0cd564b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "UpgradeableBeacon-2",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 17,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0c8ed8745d1352707c729956a4aa2ab49cf848b4",
+      "is_proxy": true,
+      "implementation_address": "0x9cb7494cde9bd1000174c15120010cbc37843f9a",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7de353f0b111a5c91c90aa597a1f5e7729c36503",
+      "is_proxy": true,
+      "implementation_address": "0xf1a9c57f8917c5d8ac22ef51581f585ad0382413",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd3e1adc259e0bfc2072e923c3318badcbb4600d8",
+      "is_proxy": true,
+      "implementation_address": "0xadc240fc047c6d65173ae73a45c1a6af917a58d5",
+      "liveness": "inactive"
+    }
+  ]
+}

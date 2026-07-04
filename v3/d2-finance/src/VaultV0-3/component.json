@@ -1,0 +1,26 @@
+{
+  "component": "VaultV0-3",
+  "main_contract": "VaultV0",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x47ba9c71f26ed0896ab24c6c6d03da5d8c52dc44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbee7a85e28a79ad4e8fc9ae7b5d0cf2b529b62fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

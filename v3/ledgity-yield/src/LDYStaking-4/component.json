@@ -1,0 +1,18 @@
+{
+  "component": "LDYStaking-4",
+  "main_contract": "LDYStaking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x06f54b7f27eec56616b951598baa3b84d7660ab4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

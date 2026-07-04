@@ -1,0 +1,18 @@
+{
+  "component": "ImpulseStakingMulti-2",
+  "main_contract": "ImpulseStakingMulti",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0e8f97585151325fbabd7bd94cb1b76da9c88b26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

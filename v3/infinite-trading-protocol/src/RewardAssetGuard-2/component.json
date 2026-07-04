@@ -1,0 +1,18 @@
+{
+  "component": "RewardAssetGuard-2",
+  "main_contract": "RewardAssetGuard",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x61647d32ef723089ec60a62d92a2bc611ac2713c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

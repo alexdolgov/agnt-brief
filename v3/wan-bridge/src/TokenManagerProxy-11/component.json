@@ -1,0 +1,18 @@
+{
+  "component": "TokenManagerProxy-11",
+  "main_contract": "TokenManagerProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xc814ff82e04c556fba1639f1fddc158709184169",
+      "is_proxy": true,
+      "implementation_address": "0x7f70d0047ae63131ab77f179a90f1a41ceea93aa",
+      "liveness": "inactive"
+    }
+  ]
+}

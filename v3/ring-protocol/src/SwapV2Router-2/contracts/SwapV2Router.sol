@@ -87,8 +87,8 @@ contract SwapV2Router is ISwapV2Router {
         address pair = SwapV2Library.pairFor(factory, wrappedTokenA, wrappedTokenB);
         TransferHelper.safeTransferFrom(tokenA, msg.sender, address(this), amountA);
         TransferHelper.safeTransferFrom(tokenB, msg.sender, address(this), amountB);
-        TransferHelper.safeApprove(tokenA, wrappedTokenA, amountA);
-        TransferHelper.safeApprove(tokenB, wrappedTokenB, amountB);
+        IERC20(tokenA).approve(wrappedTokenA, amountA);
+        IERC20(tokenB).approve(wrappedTokenB, amountB);
         IFewWrappedToken(wrappedTokenA).wrapTo(amountA, pair);
         IFewWrappedToken(wrappedTokenB).wrapTo(amountB, pair);
         liquidity = IUniswapV2Pair(pair).mint(to);
@@ -117,8 +117,8 @@ contract SwapV2Router is ISwapV2Router {
         address pair = SwapV2Library.pairFor(factory, wrappedToken, fwWETH);
         TransferHelper.safeTransferFrom(token, msg.sender, address(this), amountToken);
         IWETH(WETH).deposit{value: amountETH}();
-        TransferHelper.safeApprove(token, wrappedToken, amountToken);
-        TransferHelper.safeApprove(WETH, fwWETH, amountETH);
+        IERC20(token).approve(wrappedToken, amountToken);
+        IERC20(WETH).approve(fwWETH, amountETH);
         IFewWrappedToken(wrappedToken).wrapTo(amountToken, pair);
         IFewWrappedToken(fwWETH).wrapTo(amountETH, pair);
         liquidity = IUniswapV2Pair(pair).mint(to);
@@ -222,7 +222,7 @@ contract SwapV2Router is ISwapV2Router {
         require(amounts[amounts.length - 1] >= amountOutMin, 'SwapV2Router: INSUFFICIENT_OUTPUT_AMOUNT');
         address srcToken = IFewWrappedToken(path[0]).token();
         TransferHelper.safeTransferFrom(srcToken, msg.sender, address(this), amounts[0]);
-        TransferHelper.safeApprove(srcToken, path[0], amounts[0]);
+        IERC20(srcToken).approve(path[0], amounts[0]);
         IFewWrappedToken(path[0]).wrapTo(amounts[0], SwapV2Library.pairFor(factory, path[0], path[1]));
         _swap(amounts, path, address(this));
         address dstWrappedToken = path[path.length - 1];
@@ -239,7 +239,7 @@ contract SwapV2Router is ISwapV2Router {
         require(amounts[0] <= amountInMax, 'SwapV2Router: EXCESSIVE_INPUT_AMOUNT');
         address srcToken = IFewWrappedToken(path[0]).token();
         TransferHelper.safeTransferFrom(srcToken, msg.sender, address(this), amounts[0]);
-        TransferHelper.safeApprove(srcToken, path[0], amounts[0]);
+        IERC20(srcToken).approve(path[0], amounts[0]);
         IFewWrappedToken(path[0]).wrapTo(amounts[0], SwapV2Library.pairFor(factory, path[0], path[1]));
         _swap(amounts, path, address(this));
         address dstWrappedToken = path[path.length - 1];
@@ -257,7 +257,7 @@ contract SwapV2Router is ISwapV2Router {
         amounts = SwapV2Library.getAmountsOut(factory, msg.value, path);
         require(amounts[amounts.length - 1] >= amountOutMin, 'SwapV2Router: INSUFFICIENT_OUTPUT_AMOUNT');
         IWETH(WETH).deposit{value: amounts[0]}();
-        TransferHelper.safeApprove(WETH, fwWETH, amounts[0]);
+        IERC20(WETH).approve(fwWETH, amounts[0]);
         IFewWrappedToken(fwWETH).wrapTo(amounts[0], SwapV2Library.pairFor(factory, path[0], path[1]));
         _swap(amounts, path, address(this));
         address dstWrappedToken = path[path.length - 1];
@@ -275,7 +275,7 @@ contract SwapV2Router is ISwapV2Router {
         require(amounts[0] <= amountInMax, 'SwapV2Router: EXCESSIVE_INPUT_AMOUNT');
         address srcToken = IFewWrappedToken(path[0]).token();
         TransferHelper.safeTransferFrom(srcToken, msg.sender, address(this), amounts[0]);
-        TransferHelper.safeApprove(srcToken, path[0], amounts[0]);
+        IERC20(srcToken).approve(path[0], amounts[0]);
         IFewWrappedToken(path[0]).wrapTo(amounts[0], SwapV2Library.pairFor(factory, path[0], path[1]));
         _swap(amounts, path, address(this));
         IFewWrappedToken(fwWETH).unwrap(amounts[amounts.length - 1]);
@@ -294,7 +294,7 @@ contract SwapV2Router is ISwapV2Router {
         require(amounts[amounts.length - 1] >= amountOutMin, 'SwapV2Router: INSUFFICIENT_OUTPUT_AMOUNT');
         address srcToken = IFewWrappedToken(path[0]).token();
         TransferHelper.safeTransferFrom(srcToken, msg.sender, address(this), amounts[0]);
-        TransferHelper.safeApprove(srcToken, path[0], amounts[0]);
+        IERC20(srcToken).approve(path[0], amounts[0]);
         IFewWrappedToken(path[0]).wrapTo(amounts[0], SwapV2Library.pairFor(factory, path[0], path[1]));
         _swap(amounts, path, address(this));
         IFewWrappedToken(fwWETH).unwrapTo(amounts[amounts.length - 1], address(this));
@@ -313,7 +313,7 @@ contract SwapV2Router is ISwapV2Router {
         amounts = SwapV2Library.getAmountsIn(factory, amountOut, path);
         require(amounts[0] <= msg.value, 'SwapV2Router: EXCESSIVE_INPUT_AMOUNT');
         IWETH(WETH).deposit{value: amounts[0]}();
-        TransferHelper.safeApprove(WETH, fwWETH, amounts[0]);
+        IERC20(WETH).approve(fwWETH, amounts[0]);
         IFewWrappedToken(fwWETH).wrapTo(amounts[0], SwapV2Library.pairFor(factory, path[0], path[1]));
         _swap(amounts, path, address(this));
         address dstWrappedToken = path[path.length - 1];

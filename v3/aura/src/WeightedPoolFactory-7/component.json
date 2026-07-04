@@ -1,0 +1,18 @@
+{
+  "component": "WeightedPoolFactory-7",
+  "main_contract": "WeightedPoolFactory",
+  "source_file_count": 73,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x78ad1e1c10033b18ceaa20088e4e490be42a5417",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

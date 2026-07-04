@@ -2,16 +2,40 @@
   "component": "FeeManagerFactory",
   "main_contract": "FeeManagerFactory",
   "source_file_count": 32,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.04.09%20-%20Final%20-%20Bundie%20Collaborative%20Audit%20Report%201775738963.pdf"
   ],
   "addresses": [
     {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4add05f6f75411f6b1648d8c2ff1f57448cd28fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x47565e3fcd37a2cee1401adda7c2d05df8751b0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x56c5ffa751c0455f79abe09f3465af7800feb6b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8f1e79038842d0d9cdd325898bafcc0515c5842a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

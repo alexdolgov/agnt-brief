@@ -2,30 +2,38 @@
   "component": "CustomUnstakedFeeModule",
   "main_contract": "CustomUnstakedFeeModule",
   "source_file_count": 14,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5a993209065ea74b50e23a378ddb7068189345d0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe3cb2e5ad752eb67518b33d5342a3a46fe657939",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdf9db1c1e6958f67ac972c3d35bd31461b560653",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe4324a564f079cb0e59271914549e3aa9c826be7",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe07eaacb21f26efe4c64314ceb6258d517eced54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe9321cec56a525c5ce2cae403dad7fbff5bc6f50",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

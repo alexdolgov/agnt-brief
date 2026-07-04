@@ -2,10 +2,18 @@
   "component": "Automator",
   "main_contract": "Automator",
   "source_file_count": 31,
-  "deployment_count": 14,
+  "deployment_count": 16,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b74e52ae52ef26ebd4b77aa1929dd06f187cca9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -114,6 +122,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xf82a64e421601bb16fdc33f6b99b877bd746b826",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xca7134443f4bd65c4f7ab30983858c239d88b906",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

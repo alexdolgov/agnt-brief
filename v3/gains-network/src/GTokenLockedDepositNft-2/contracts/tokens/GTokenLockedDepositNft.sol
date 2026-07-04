@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity 0.8.23;
 
 import {ERC721, ERC721Enumerable} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import {IERC20Metadata} from "@openzeppelin/contracts/interfaces/IERC20Metadata.sol";
@@ -8,7 +8,7 @@ import {IERC4626} from "@openzeppelin/contracts/interfaces/IERC4626.sol";
 import "../interfaces/IGTokenLockedDepositNft.sol";
 
 /**
- * @custom:version 6.3
+ * @dev Receipt NFT for a gToken locked deposits
  */
 contract GTokenLockedDepositNft is ERC721Enumerable, IGTokenLockedDepositNft {
     address public immutable gToken;

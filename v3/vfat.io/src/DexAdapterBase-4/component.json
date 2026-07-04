@@ -9,7 +9,7 @@
     {
       "chain": "chain-130",
       "chain_id": 130,
-      "address": "0x5d2fc3c37e3d4d8110a2c1ad51bd6f8e26f2ed53",
+      "address": "0x3b8886c3f6d3ba4a75d3becb3c83864c0c01e1f3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

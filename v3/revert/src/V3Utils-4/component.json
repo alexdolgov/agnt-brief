@@ -1,0 +1,34 @@
+{
+  "component": "V3Utils-4",
+  "main_contract": "V3Utils",
+  "source_file_count": 17,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x531110418d8591c92e9cbbfc722db8ffb604fafd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2a017f2fb369f4ca061b8d8a922bb05100e8f8c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x95a8cc9ab71b26bdacbe6a7ccf519456edc2a164",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AppStaking-5",
+  "main_contract": "AppStaking",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf5df434c01802d7629ae80985ed2e60b7f8a920a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

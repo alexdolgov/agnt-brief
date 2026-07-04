@@ -9,15 +9,15 @@
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x0917c28b736746f9a32652cd2c66e918cc9d26c9",
+      "address": "0x42842f88c3ea0eb39f3303a80a03f7f55db31b28",
       "is_proxy": true,
-      "implementation_address": "0x28d3e29c5e1d953acb7361aa1e3a1d9abedee14e",
+      "implementation_address": "0x4e717f87aafb53ea88378b5079b177628b082ed7",
       "liveness": "live"
     },
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x28d3e29c5e1d953acb7361aa1e3a1d9abedee14e",
+      "address": "0x4e717f87aafb53ea88378b5079b177628b082ed7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -25,9 +25,9 @@
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0xe98aaae0df8bcaf501c27373eb9c3eedde623e85",
-      "is_proxy": false,
-      "implementation_address": null,
+      "address": "0xdfc75aa0ceab89c40cd4b78e7f4179632fe06e93",
+      "is_proxy": true,
+      "implementation_address": "0x4e717f87aafb53ea88378b5079b177628b082ed7",
       "liveness": "live"
     }
   ]

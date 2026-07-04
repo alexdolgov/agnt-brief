@@ -6,62 +6,17 @@ import "../interfaces/IPlug.sol";
 
 import "./SocketBase.sol";
 
-/**
- * @title SocketDst
- * @dev SocketDst is an abstract contract that inherits from SocketBase and
- * provides additional functionality for message execution, packet proposal, and verification.
- * It manages the mapping of message execution status, packet ID roots, and root proposed
- * timestamps. It emits events for packet proposal and root updates.
- * It also includes functions for message execution and verification, as well as a function
- * to check if a packet has been proposed.
- */
 abstract contract SocketDst is SocketBase {
-    /*
-     * @dev Error emitted when a packet has already been proposed
-     */
-    error AlreadyProposed();
-
-    /*
-     * @dev Error emitted when a packet has not been proposed
-     */
-    error PacketNotProposed();
-    /*
-     * @dev Error emitted when a packet root is invalid
-     */
-    error InvalidPacketRoot();
-    /*
-     * @dev Error emitted when a packet id is invalid
-     */
-    error InvalidPacketId();
-
-    /**
-     * @dev Error emitted when proof is invalid
-     */
+    error AlreadyAttested();
     error InvalidProof();
-    /**
-     * @dev Error emitted when a retry is invalid
-     */
     error InvalidRetry();
-    /**
-     * @dev Error emitted when a message has already been executed
-     */
     error MessageAlreadyExecuted();
-    /**
-     * @dev Error emitted when the attester is not valid
-     */
     error NotExecutor();
-    /**
-     * @dev Error emitted when verification fails
-     */
     error VerificationFailed();
 
-    /**
-     * @dev msgId => message status mapping
-     */
+    // msgId => message status
     mapping(bytes32 => bool) public messageExecuted;
-    /**
-     * @dev capacitorAddr|chainSlug|packetId mapping to packetIdRoots
-     */
+    // capacitorAddr|chainSlug|packetId
     mapping(bytes32 => bytes32) public override packetIdRoots;
     mapping(bytes32 => uint256) public rootProposedAt;
 
@@ -85,28 +40,21 @@ abstract contract SocketDst is SocketBase {
      */
     event PacketRootUpdated(bytes32 packetId, bytes32 oldRoot, bytes32 newRoot);
 
-    /**
-     * @dev Function to propose a packet
-     * @param packetId_ Packet ID
-     * @param root_ Packet root
-     * @param signature_ Signature
-     */
     function propose(
         bytes32 packetId_,
         bytes32 root_,
         bytes calldata signature_
     ) external override {
-        if (packetId_ == bytes32(0)) revert InvalidPacketId();
-        if (packetIdRoots[packetId_] != bytes32(0)) revert AlreadyProposed();
+        if (packetIdRoots[packetId_] != bytes32(0)) revert AlreadyAttested();
 
         (address transmitter, bool isTransmitter) = transmitManager__
             .checkTransmitter(
                 uint32(_decodeSlug(packetId_)),
-                keccak256(abi.encode(version, chainSlug, packetId_, root_)),
+                keccak256(abi.encode(chainSlug, packetId_, root_)),
                 signature_
             );
 
-        if (!isTransmitter) revert InvalidTransmitter();
+        if (!isTransmitter) revert InvalidAttester();
 
         packetIdRoots[packetId_] = root_;
         rootProposedAt[packetId_] = block.timestamp;
@@ -117,10 +65,12 @@ abstract contract SocketDst is SocketBase {
     /**
      * @notice executes a message, fees will go to recovered executor address
      * @param packetId_ packet id
+     * @param localPlug_ remote plug address
      * @param messageDetails_ the details needed for message verification
      */
     function execute(
         bytes32 packetId_,
+        address localPlug_,
         ISocket.MessageDetails calldata messageDetails_,
         bytes memory signature_
     ) external override {
@@ -128,19 +78,15 @@ abstract contract SocketDst is SocketBase {
             revert MessageAlreadyExecuted();
         messageExecuted[messageDetails_.msgId] = true;
 
-        if (packetId_ == bytes32(0)) revert InvalidPacketId();
-        if (packetIdRoots[packetId_] == bytes32(0)) revert PacketNotProposed();
+        uint256 remoteSlug = _decodeSlug(messageDetails_.msgId);
 
-        uint32 remoteSlug = _decodeSlug(messageDetails_.msgId);
-        address localPlug = _decodePlug(messageDetails_.msgId);
-
-        PlugConfig storage plugConfig = _plugConfigs[localPlug][remoteSlug];
+        PlugConfig storage plugConfig = _plugConfigs[localPlug_][remoteSlug];
 
         bytes32 packedMessage = hasher__.packMessage(
             remoteSlug,
             plugConfig.siblingPlug,
             chainSlug,
-            localPlug,
+            localPlug_,
             messageDetails_.msgId,
             messageDetails_.msgGasLimit,
             messageDetails_.executionFee,
@@ -161,7 +107,7 @@ abstract contract SocketDst is SocketBase {
         _execute(
             executor,
             messageDetails_.executionFee,
-            localPlug,
+            localPlug_,
             remoteSlug,
             messageDetails_.msgGasLimit,
             messageDetails_.msgId,
@@ -171,7 +117,7 @@ abstract contract SocketDst is SocketBase {
 
     function _verify(
         bytes32 packetId_,
-        uint32 remoteChainSlug_,
+        uint256 remoteChainSlug_,
         bytes32 packedMessage_,
         PlugConfig storage plugConfig_,
         bytes memory decapacitorProof_
@@ -194,16 +140,11 @@ abstract contract SocketDst is SocketBase {
         ) revert InvalidProof();
     }
 
-    /**
-     * This function assumes localPlug_ will have code while executing. As the message
-     * execution failure is not blocking the system, it is not necessary to check if
-     * code exists in the given address.
-     */
     function _execute(
         address executor,
         uint256 executionFee,
         address localPlug_,
-        uint32 remoteChainSlug_,
+        uint256 remoteChainSlug_,
         uint256 msgGasLimit_,
         bytes32 msgId_,
         bytes calldata payload_
@@ -231,32 +172,13 @@ abstract contract SocketDst is SocketBase {
         }
     }
 
-    /**
-     * @dev Checks whether the specified packet has been proposed.
-     * @param packetId_ The ID of the packet to check.
-     * @return A boolean indicating whether the packet has been proposed or not.
-     */
     function isPacketProposed(bytes32 packetId_) external view returns (bool) {
         return packetIdRoots[packetId_] == bytes32(0) ? false : true;
     }
 
-    /**
-     * @dev Decodes the plug address from a given message id.
-     * @param id_ The ID of the msg to decode the plug from.
-     * @return plug_ The address of sibling plug decoded from the message ID.
-     */
-    function _decodePlug(bytes32 id_) internal pure returns (address plug_) {
-        plug_ = address(uint160(uint256(id_) >> 64));
-    }
-
-    /**
-     * @dev Decodes the chain ID from a given packet/message ID.
-     * @param id_ The ID of the packet/msg to decode the chain slug from.
-     * @return chainSlug_ The chain slug decoded from the packet/message ID.
-     */
     function _decodeSlug(
         bytes32 id_
-    ) internal pure returns (uint32 chainSlug_) {
-        chainSlug_ = uint32(uint256(id_) >> 224);
+    ) internal pure returns (uint256 chainSlug_) {
+        chainSlug_ = uint256(id_) >> 224;
     }
 }

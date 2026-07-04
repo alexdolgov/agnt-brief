@@ -1,15 +1,15 @@
 {
   "component": "RapidityLibV2",
   "main_contract": "RapidityLibV2",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x8d508595f094c42ade6d3625a206abe9551c5858",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

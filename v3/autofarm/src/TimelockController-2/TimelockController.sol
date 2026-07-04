@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity 0.6.12;
 
 pragma solidity >=0.6.9 <0.8.0;
@@ -1245,9 +1244,7 @@ interface IStrategy {
 
     function rebalance(uint256 _borrowRate, uint256 _borrowDepth) external;
 
-    function deleverageOnce() external;
-
-    function wrapBNB() external; // Specifically for the Venus WBNB vault.
+    function wrapBNB() external; // Specifically for the Venus BNB vault.
 
     // In case new vaults require functions without a timelock as well, hoping to avoid having multiple timelock contracts
     function noTimeLockFunc1() external;
@@ -1283,10 +1280,11 @@ contract TimelockController is AccessControl {
     uint256 internal constant _DONE_TIMESTAMP = uint256(1);
 
     mapping(bytes32 => uint256) private _timestamps;
-    uint256 public minDelay; // seconds - to be increased in production
-    uint256 public minDelayReduced; // seconds - to be increased in production
+    uint256 private _minDelay;
+    uint256 private _delayReduced = 10; //seconds
 
-    address payable public devWalletAddress;
+    address payable public devWalletAddress =
+        0xF482404f0Ee4bbC780199b2995A43882a8595adA; // prod
     /**
      * @dev Emitted when a call is scheduled as part of operation `id`.
      */
@@ -1334,7 +1332,7 @@ contract TimelockController is AccessControl {
      */
     event MinDelayChange(uint256 oldDuration, uint256 newDuration);
 
-    event MinDelayReducedChange(uint256 oldDuration, uint256 newDuration);
+    event DelaySetChange(uint256 oldDuration, uint256 newDuration);
 
     event SetScheduled(
         bytes32 indexed id,
@@ -1349,15 +1347,10 @@ contract TimelockController is AccessControl {
     /**
      * @dev Initializes the contract with a given `minDelay`.
      */
-    constructor(
-        address payable _devWalletAddress,
-        uint256 _minDelay,
-        uint256 _minDelayReduced // address[] memory proposers, address[] memory executors
-    ) public {
-        devWalletAddress = _devWalletAddress;
-        minDelay = _minDelay;
-        minDelayReduced = _minDelayReduced;
-
+    constructor()
+        public
+    // address[] memory proposers, address[] memory executors
+    {
         _setRoleAdmin(TIMELOCK_ADMIN_ROLE, TIMELOCK_ADMIN_ROLE);
         _setRoleAdmin(PROPOSER_ROLE, TIMELOCK_ADMIN_ROLE);
         _setRoleAdmin(EXECUTOR_ROLE, TIMELOCK_ADMIN_ROLE);
@@ -1370,15 +1363,22 @@ contract TimelockController is AccessControl {
         // for (uint256 i = 0; i < proposers.length; ++i) {
         //     _setupRole(PROPOSER_ROLE, proposers[i]);
         // }
-        _setupRole(PROPOSER_ROLE, devWalletAddress);
+        _setupRole(
+            PROPOSER_ROLE,
+            devWalletAddress
+        );
 
         // // register executors
         // for (uint256 i = 0; i < executors.length; ++i) {
         //     _setupRole(EXECUTOR_ROLE, executors[i]);
         // }
-        _setupRole(EXECUTOR_ROLE, devWalletAddress);
+        _setupRole(
+            EXECUTOR_ROLE,
+            devWalletAddress
+        );
 
-        emit MinDelayChange(0, minDelay);
+        _minDelay = 30; // seconds
+        emit MinDelayChange(0, _minDelay);
     }
 
     /**
@@ -1438,7 +1438,7 @@ contract TimelockController is AccessControl {
      * This value can be changed by executing an operation that calls `updateDelay`.
      */
     function getMinDelay() public view returns (uint256 duration) {
-        return minDelay;
+        return _minDelay;
     }
 
     /**
@@ -1541,7 +1541,7 @@ contract TimelockController is AccessControl {
             _timestamps[id] == 0,
             "TimelockController: operation already scheduled"
         );
-        require(delay >= minDelay, "TimelockController: insufficient delay");
+        require(delay >= _minDelay, "TimelockController: insufficient delay");
         // solhint-disable-next-line not-rely-on-time
         _timestamps[id] = SafeMath.add(block.timestamp, delay);
     }
@@ -1669,22 +1669,22 @@ contract TimelockController is AccessControl {
      * - the caller must be the timelock itself. This can only be achieved by scheduling and later executing
      * an operation where the timelock is the target and the data is the ABI-encoded call to this function.
      */
-    function updateMinDelay(uint256 newDelay) external virtual {
+    function updateDelay(uint256 newDelay) external virtual {
         require(
             msg.sender == address(this),
             "TimelockController: caller must be timelock"
         );
-        emit MinDelayChange(minDelay, newDelay);
-        minDelay = newDelay;
+        emit MinDelayChange(_minDelay, newDelay);
+        _minDelay = newDelay;
     }
 
-    function updateMinDelayReduced(uint256 newDelay) external virtual {
+    function updateDelaySet(uint256 newDelay) external virtual {
         require(
             msg.sender == address(this),
             "TimelockController: caller must be timelock"
         );
-        emit MinDelayReducedChange(minDelayReduced, newDelay);
-        minDelayReduced = newDelay;
+        emit DelaySetChange(_delayReduced, newDelay);
+        _delayReduced = newDelay;
     }
 
     function setDevWalletAddress(address payable _devWalletAddress) public {
@@ -1724,7 +1724,7 @@ contract TimelockController is AccessControl {
             "TimelockController: operation already scheduled"
         );
 
-        _timestamps[id] = SafeMath.add(block.timestamp, minDelayReduced);
+        _timestamps[id] = SafeMath.add(block.timestamp, _delayReduced);
         emit SetScheduled(
             id,
             0,
@@ -1732,7 +1732,7 @@ contract TimelockController is AccessControl {
             _allocPoint,
             _withUpdate,
             predecessor,
-            minDelayReduced
+            _delayReduced
         );
     }
 
@@ -1778,11 +1778,10 @@ contract TimelockController is AccessControl {
 
     function add(
         address _autofarmAddress,
-        address _want,
-        bool _withUpdate,
-        address _strat
+        uint256 _pid,
+        bool _withUpdate
     ) public onlyRole(EXECUTOR_ROLE) {
-        IAutoFarm(_autofarmAddress).add(0, _want, _withUpdate, _strat); // allocPoint = 0. Schedule set (timelocked) to increase allocPoint.
+        IAutoFarm(_autofarmAddress).set(_pid, 0, _withUpdate); // allocPoint = 0. Schedule set (timelocked) to increase allocPoint.
     }
 
     function earn(address _stratAddress) public onlyRole(EXECUTOR_ROLE) {
@@ -1807,13 +1806,6 @@ contract TimelockController is AccessControl {
         uint256 _borrowDepth
     ) public onlyRole(EXECUTOR_ROLE) {
         IStrategy(_stratAddress).rebalance(_borrowRate, _borrowDepth);
-    }
-
-    function deleverageOnce(address _stratAddress)
-        public
-        onlyRole(EXECUTOR_ROLE)
-    {
-        IStrategy(_stratAddress).deleverageOnce();
     }
 
     function wrapBNB(address _stratAddress) public onlyRole(EXECUTOR_ROLE) {

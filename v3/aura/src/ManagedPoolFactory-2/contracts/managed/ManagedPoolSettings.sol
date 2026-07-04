@@ -27,12 +27,12 @@ import "@balancer-labs/v2-pool-utils/contracts/lib/PoolRegistrationLib.sol";
 import "@balancer-labs/v2-pool-utils/contracts/external-fees/InvariantGrowthProtocolSwapFees.sol";
 import "@balancer-labs/v2-pool-utils/contracts/external-fees/ProtocolFeeCache.sol";
 import "@balancer-labs/v2-pool-utils/contracts/external-fees/ExternalAUMFees.sol";
-import "@balancer-labs/v2-pool-utils/contracts/lib/VaultReentrancyLib.sol";
-import "@balancer-labs/v2-pool-utils/contracts/NewBasePool.sol";
 
 import "../lib/GradualValueChange.sol";
 import "../managed/CircuitBreakerStorageLib.sol";
 import "../WeightedMath.sol";
+
+import "./vendor/BasePool.sol";
 
 import "./ManagedPoolStorageLib.sol";
 import "./ManagedPoolAumStorageLib.sol";
@@ -42,7 +42,7 @@ import "./ManagedPoolAddRemoveTokenLib.sol";
 /**
  * @title Managed Pool Settings
  */
-abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManagedPool {
+abstract contract ManagedPoolSettings is BasePool, ProtocolFeeCache, IManagedPool {
     // ManagedPool weights and swap fees can change over time: these periods are expected to be long enough (e.g. days)
     // that any timestamp manipulation would achieve very little.
     // solhint-disable not-rely-on-time
@@ -92,9 +92,12 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
     // If mustAllowlistLPs is enabled, this is the list of addresses allowed to join the pool
     mapping(address => bool) private _allowedAddresses;
 
-    struct ManagedPoolSettingsParams {
+    struct NewPoolParams {
+        string name;
+        string symbol;
         IERC20[] tokens;
         uint256[] normalizedWeights;
+        address[] assetManagers;
         uint256 swapFeePercentage;
         bool swapEnabledOnStart;
         bool mustAllowlistLPs;
@@ -102,28 +105,7 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         uint256 aumFeeId;
     }
 
-    /**
-     * @dev Ensure we are not in a Vault context when this function is called, by attempting a no-op internal
-     * balance operation. If we are already in a Vault transaction (e.g., a swap, join, or exit), the Vault's
-     * reentrancy protection will cause this function to revert.
-     *
-     * Use this modifier with any function that can cause a state change in a pool and is either public itself,
-     * or called by a public function *outside* a Vault operation (e.g., join, exit, or swap).
-     * See https://forum.balancer.fi/t/reentrancy-vulnerability-scope-expanded/4345 for reference.
-     */
-    modifier whenNotInVaultContext() {
-        _ensureNotInVaultContext();
-        _;
-    }
-
-    /**
-     * @dev Reverts if called in the middle of a Vault operation; has no effect otherwise.
-     */
-    function _ensureNotInVaultContext() private {
-        VaultReentrancyLib.ensureNotInVaultContext(getVault());
-    }
-
-    constructor(ManagedPoolSettingsParams memory params, IProtocolFeePercentagesProvider protocolFeeProvider)
+    constructor(NewPoolParams memory params, IProtocolFeePercentagesProvider protocolFeeProvider)
         ProtocolFeeCache(
             protocolFeeProvider,
             ProviderFeeIDs({ swap: ProtocolFeeType.SWAP, yield: ProtocolFeeType.YIELD, aum: params.aumFeeId })
@@ -133,7 +115,7 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         _require(totalTokens >= _MIN_TOKENS, Errors.MIN_TOKENS);
         _require(totalTokens <= _MAX_TOKENS, Errors.MAX_TOKENS);
 
-        InputHelpers.ensureInputLengthMatch(totalTokens, params.normalizedWeights.length);
+        InputHelpers.ensureInputLengthMatch(totalTokens, params.normalizedWeights.length, params.assetManagers.length);
 
         // Validate and set initial fees
         _setManagementAumFeePercentage(params.managementAumFeePercentage);
@@ -166,9 +148,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
         // If true, only addresses on the manager-controlled allowlist may join the pool.
         _setMustAllowlistLPs(params.mustAllowlistLPs);
-
-        // Joins and exits are enabled by default on start.
-        _setJoinExitEnabled(true);
     }
 
     function _getPoolState() internal view returns (bytes32) {
@@ -195,7 +174,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
     // Actual Supply
 
-    /// @inheritdoc IManagedPool
     function getActualSupply() external view override returns (uint256) {
         return _getActualSupply(_getVirtualSupply());
     }
@@ -222,7 +200,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         return ManagedPoolStorageLib.getSwapFeePercentage(_poolState);
     }
 
-    /// @inheritdoc IManagedPool
     function getGradualSwapFeeUpdateParams()
         external
         view
@@ -237,7 +214,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         return ManagedPoolStorageLib.getSwapFeeFields(_poolState);
     }
 
-    /// @inheritdoc IManagedPool
     function updateSwapFeeGradually(
         uint256 startTime,
         uint256 endTime,
@@ -303,7 +279,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         }
     }
 
-    /// @inheritdoc IManagedPool
     function getNormalizedWeights() external view override returns (uint256[] memory) {
         (IERC20[] memory tokens, ) = _getPoolTokens();
         return _getNormalizedWeights(tokens);
@@ -320,7 +295,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
             );
     }
 
-    /// @inheritdoc IManagedPool
     function getGradualWeightUpdateParams()
         external
         view
@@ -346,7 +320,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         }
     }
 
-    /// @inheritdoc IManagedPool
     function updateWeightsGradually(
         uint256 startTime,
         uint256 endTime,
@@ -404,50 +377,35 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         emit GradualWeightUpdateScheduled(startTime, endTime, startWeights, endWeights);
     }
 
-    // Join / Exit Enabled
-
-    /// @inheritdoc IManagedPool
-    function getJoinExitEnabled() external view override returns (bool) {
-        return ManagedPoolStorageLib.getJoinExitEnabled(_poolState);
-    }
-
-    /// @inheritdoc IManagedPool
-    function setJoinExitEnabled(bool joinExitEnabled) external override authenticate whenNotPaused {
-        _setJoinExitEnabled(joinExitEnabled);
-    }
-
-    function _setJoinExitEnabled(bool joinExitEnabled) private {
-        _poolState = ManagedPoolStorageLib.setJoinExitEnabled(_poolState, joinExitEnabled);
-
-        emit JoinExitEnabledSet(joinExitEnabled);
-    }
-
     // Swap Enabled
 
-    /// @inheritdoc IManagedPool
     function getSwapEnabled() external view override returns (bool) {
-        return ManagedPoolStorageLib.getSwapEnabled(_poolState);
+        return ManagedPoolStorageLib.getSwapsEnabled(_poolState);
     }
 
-    /// @inheritdoc IManagedPool
     function setSwapEnabled(bool swapEnabled) external override authenticate whenNotPaused {
         _setSwapEnabled(swapEnabled);
     }
 
     function _setSwapEnabled(bool swapEnabled) private {
-        _poolState = ManagedPoolStorageLib.setSwapEnabled(_poolState, swapEnabled);
+        _poolState = ManagedPoolStorageLib.setSwapsEnabled(_poolState, swapEnabled);
 
         emit SwapEnabledSet(swapEnabled);
     }
 
     // LP Allowlist
 
-    /// @inheritdoc IManagedPool
     function getMustAllowlistLPs() external view override returns (bool) {
         return ManagedPoolStorageLib.getLPAllowlistEnabled(_poolState);
     }
 
-    /// @inheritdoc IManagedPool
+    /**
+     * @notice Check whether an LP address is on the allowlist.
+     * @dev This simply checks the list, regardless of whether the allowlist feature is enabled, so that the allowlist
+     * can be inspected at any time.
+     * @param member - The address to check against the allowlist.
+     * @return true if the given address is on the allowlist.
+     */
     function isAddressOnAllowlist(address member) public view override returns (bool) {
         return _allowedAddresses[member];
     }
@@ -463,7 +421,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         return !ManagedPoolStorageLib.getLPAllowlistEnabled(poolState) || isAddressOnAllowlist(member);
     }
 
-    /// @inheritdoc IManagedPool
     function addAllowedAddress(address member) external override authenticate whenNotPaused {
         _require(!isAddressOnAllowlist(member), Errors.ADDRESS_ALREADY_ALLOWLISTED);
 
@@ -471,7 +428,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         emit AllowlistAddressAdded(member);
     }
 
-    /// @inheritdoc IManagedPool
     function removeAllowedAddress(address member) external override authenticate whenNotPaused {
         _require(isAddressOnAllowlist(member), Errors.ADDRESS_NOT_ALLOWLISTED);
 
@@ -479,7 +435,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         emit AllowlistAddressRemoved(member);
     }
 
-    /// @inheritdoc IManagedPool
     function setMustAllowlistLPs(bool mustAllowlistLPs) external override authenticate whenNotPaused {
         _setMustAllowlistLPs(mustAllowlistLPs);
     }
@@ -492,7 +447,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
     // AUM management fees
 
-    /// @inheritdoc IManagedPool
     function getManagementAumFeeParams()
         public
         view
@@ -508,13 +462,11 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         }
     }
 
-    /// @inheritdoc IManagedPool
     function setManagementAumFeePercentage(uint256 managementAumFeePercentage)
         external
         override
         authenticate
         whenNotPaused
-        whenNotInVaultContext
         returns (uint256 amount)
     {
         // We want to prevent the pool manager from retroactively increasing the amount of AUM fees payable.
@@ -546,8 +498,7 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         _aumState = ManagedPoolAumStorageLib.setLastCollectionTimestamp(_aumState, block.timestamp);
     }
 
-    /// @inheritdoc IManagedPool
-    function collectAumManagementFees() external override whenNotPaused whenNotInVaultContext returns (uint256) {
+    function collectAumManagementFees() external override whenNotPaused returns (uint256) {
         // It only makes sense to collect AUM fees after the pool is initialized (as before then the AUM is zero).
         // We can query if the pool is initialized by checking for a nonzero total supply.
         // Reverting here prevents zero value AUM fee collections causing bogus events.
@@ -604,14 +555,13 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
     // Add/Remove tokens
 
-    /// @inheritdoc IManagedPool
     function addToken(
         IERC20 tokenToAdd,
         address assetManager,
         uint256 tokenToAddNormalizedWeight,
         uint256 mintAmount,
         address recipient
-    ) external override authenticate whenNotPaused whenNotInVaultContext {
+    ) external override authenticate whenNotPaused {
         {
             // This complex operation might mint BPT, altering the supply. For simplicity, we forbid adding tokens
             // before initialization (i.e. before BPT is first minted). We must also collect AUM fees every time the
@@ -661,12 +611,11 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         emit TokenAdded(tokenToAdd, tokenToAddNormalizedWeight);
     }
 
-    /// @inheritdoc IManagedPool
     function removeToken(
         IERC20 tokenToRemove,
         uint256 burnAmount,
         address sender
-    ) external override authenticate whenNotPaused whenNotInVaultContext {
+    ) external override authenticate whenNotPaused {
         {
             // Add new scope to avoid stack too deep.
 
@@ -728,7 +677,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
     // Scaling Factors
 
-    /// @inheritdoc IBasePool
     function getScalingFactors() external view override returns (uint256[] memory) {
         (IERC20[] memory tokens, ) = _getPoolTokens();
         return _scalingFactors(tokens);
@@ -765,7 +713,9 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
     // Recovery Mode
 
-    /// @inheritdoc IRecoveryMode
+    /**
+     * @notice Returns whether the pool is in Recovery Mode.
+     */
     function inRecoveryMode() public view override returns (bool) {
         return ManagedPoolStorageLib.getRecoveryModeEnabled(_poolState);
     }
@@ -790,7 +740,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
 
     // Circuit Breakers
 
-    /// @inheritdoc IManagedPool
     function getCircuitBreakerState(IERC20 token)
         external
         view
@@ -824,7 +773,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         upperBptPriceBound = _upscale(upperBptPriceBound, tokenScalingFactor);
     }
 
-    /// @inheritdoc IManagedPool
     function setCircuitBreakers(
         IERC20[] memory tokens,
         uint256[] memory bptPrices,
@@ -881,7 +829,6 @@ abstract contract ManagedPoolSettings is NewBasePool, ProtocolFeeCache, IManaged
         return
             (actionId == getActionId(ManagedPoolSettings.updateWeightsGradually.selector)) ||
             (actionId == getActionId(ManagedPoolSettings.updateSwapFeeGradually.selector)) ||
-            (actionId == getActionId(ManagedPoolSettings.setJoinExitEnabled.selector)) ||
             (actionId == getActionId(ManagedPoolSettings.setSwapEnabled.selector)) ||
             (actionId == getActionId(ManagedPoolSettings.addAllowedAddress.selector)) ||
             (actionId == getActionId(ManagedPoolSettings.removeAllowedAddress.selector)) ||

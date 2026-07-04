@@ -1,0 +1,18 @@
+{
+  "component": "V4Utils-3",
+  "main_contract": "V4Utils",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x6a5023628e1a9a811548a99291f8d5d5cae1dfb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,47 @@
 {
   "component": "StakingVault",
   "main_contract": "StakingVault",
-  "source_file_count": 16,
-  "deployment_count": 1,
+  "source_file_count": 12,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x2c30004ec09e731dffcd5783569fb2e09c473732",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x68a100a3729fc04ab26fb4c0862df22ceec2f18b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c1aca6f110db0246e859c2bd47d2eb78b489969",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x9ef19fc007b7fb0b0d378b9899b4b33c200ef172",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x854f3d91e53d0fc9dba9822bc74f574c7380436d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf59e484934b64121a698b17bef386d443554da1f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

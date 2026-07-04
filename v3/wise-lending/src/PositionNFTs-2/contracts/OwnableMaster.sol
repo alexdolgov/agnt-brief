@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: -- WISE --
 
-pragma solidity =0.8.25;
+pragma solidity =0.8.23;
 
 error NoValue();
 error NotMaster();
@@ -45,15 +45,6 @@ contract OwnableMaster {
         revert NotProposed();
     }
 
-    event MasterProposed(
-        address indexed proposer,
-        address indexed proposedMaster
-    );
-
-    event RenouncedOwnership(
-        address indexed previousMaster
-    );
-
     constructor(
         address _master
     ) {
@@ -78,11 +69,6 @@ contract OwnableMaster {
         }
 
         proposedMaster = _proposedOwner;
-
-        emit MasterProposed(
-            msg.sender,
-            _proposedOwner
-        );
     }
 
     /**
@@ -93,7 +79,7 @@ contract OwnableMaster {
         external
         onlyProposed
     {
-        master = msg.sender;
+        master = proposedMaster;
     }
 
     /**
@@ -106,9 +92,5 @@ contract OwnableMaster {
     {
         master = ZERO_ADDRESS;
         proposedMaster = ZERO_ADDRESS;
-
-        emit RenouncedOwnership(
-            msg.sender
-        );
     }
 }

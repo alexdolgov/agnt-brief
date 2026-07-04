@@ -1,7 +1,7 @@
 {
   "component": "Controller",
   "main_contract": "Controller",
-  "source_file_count": 83,
+  "source_file_count": 1,
   "deployment_count": 2,
   "audited": true,
   "audits_covering": [
@@ -12,17 +12,17 @@
   ],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x02b70ab8fd23f95e0cd8f8ea604415eb7cfc0e18",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c19858f2f317ccf413b3046c2bed49f346b7d0f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xeadf3d94b902c06c13a2e64b223b1df5057aa23d",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc2fd280a669a4453b30b5e72871ad3e2a2663d0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

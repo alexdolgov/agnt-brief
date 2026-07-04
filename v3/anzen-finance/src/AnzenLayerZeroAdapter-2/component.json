@@ -1,0 +1,26 @@
+{
+  "component": "AnzenLayerZeroAdapter-2",
+  "main_contract": "AnzenLayerZeroAdapter",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xe31ee12bdfdd0573d634124611e85338e2cbf0cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

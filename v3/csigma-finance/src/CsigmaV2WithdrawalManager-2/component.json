@@ -1,0 +1,26 @@
+{
+  "component": "CsigmaV2WithdrawalManager-2",
+  "main_contract": "CsigmaV2WithdrawalManager",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6d72617fc05d9689133ef8c82c4ba118c79345b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4313b859f026792c750ad619fc454bd6f9279c19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

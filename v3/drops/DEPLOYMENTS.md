@@ -1,6 +1,6 @@
 # drops — deployments
 
-256 verified deployment(s) across 87 component(s).
+257 verified deployment(s) across 88 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -241,6 +241,7 @@
 | ethereum | `0xeae8bfdc42777903dd1c8ce86868f77eba81671c` | WstETHPriceOracle | impl | inactive | no |
 | ethereum | `0xedafa6c38ee44810367a77d38d9b99fdafee8513` | CErc721V2Delegator | proxy | inactive | no |
 | ethereum | `0xee2ed59082a60c0af4bb2132b90d581134ea1fd5` | CTokenMoonbirdImmutable | impl | inactive | no |
+| ethereum | `0xef181de80ca41298c4031176f8b2c4268e0c9203` | Vyper_contract-2 | impl | inactive | no |
 | ethereum | `0xef5804d6640af705c385fe3f5526674509f70968` | CErc721MoonbirdDelegator | impl | inactive | no |
 | ethereum | `0xef6e27fa2e89b5334bfa8889fb766e15896e6089` | FlashLoanProvider | impl | inactive | no |
 | ethereum | `0xf00de3d44228856b2ca1d4550c2eacba153daca7` | CErc20Immutable | impl | inactive | no |
@@ -260,8 +261,3 @@
 | ethereum | `0xfb0fceb2f620009c7e29f9e770ab7cf1d7956ecc` | CErc20Immutable | impl | inactive | no |
 | ethereum | `0xfde76511a27a7a5b8c802e5fda14cc0f879bc2c6` | BridgedOracleArtBlocks | impl | inactive | no |
 | ethereum | `0xff1858fbe92235b89ec8ea38ebb560177de41986` | GovernorAlpha | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xef181de80ca41298c4031176f8b2c4268e0c9203`

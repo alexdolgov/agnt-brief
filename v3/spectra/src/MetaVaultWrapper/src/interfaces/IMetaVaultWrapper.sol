@@ -86,36 +86,6 @@ interface IMetaVaultWrapper is IERC7540 {
     error ZeroDecreaseAmount();
     error DecreaseAmountExceedsPending(uint256 pendingAmount, uint256 decreaseAmount);
     error InvalidUnderlying();
-    error Blacklisted(address user);
-
-    /*//////////////////////////////////////////////////////////////
-                            BLACKLIST EVENTS
-    //////////////////////////////////////////////////////////////*/
-
-    /// @notice Emitted when a user is added to the blacklist.
-    /// @param user The address that was blacklisted.
-    event UserBlacklisted(address indexed user);
-
-    /// @notice Emitted when a user is removed from the blacklist.
-    /// @param user The address that was removed from the blacklist.
-    event UserUnblacklisted(address indexed user);
-
-    /*//////////////////////////////////////////////////////////////
-                          BLACKLIST FUNCTIONS
-    //////////////////////////////////////////////////////////////*/
-
-    /// @notice Add a user to the blacklist. Only callable by the owner.
-    /// @param user The address to blacklist.
-    function blacklist(address user) external;
-
-    /// @notice Remove a user from the blacklist. Only callable by the owner.
-    /// @param user The address to remove from the blacklist.
-    function unblacklist(address user) external;
-
-    /// @notice Check if a user is blacklisted.
-    /// @param user The address to check.
-    /// @return True if the user is blacklisted.
-    function isBlacklisted(address user) external view returns (bool);
 
     /*//////////////////////////////////////////////////////////////
                                 GETTERS

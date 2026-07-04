@@ -12,13 +12,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.7.0;
 
-import "../solidity-utils/openzeppelin/IERC20.sol";
+import "./IBalancerTokenAdmin.sol";
+import "./IGaugeController.sol";
 
-/**
- * @dev Base minter interface, applicable to Mainnet minter or L2 pseudo minters.
- */
 interface IBalancerMinter {
     event Minted(address indexed recipient, address gauge, uint256 minted);
 
@@ -26,6 +24,16 @@ interface IBalancerMinter {
      * @notice Returns the address of the Balancer Governance Token
      */
     function getBalancerToken() external view returns (IERC20);
+
+    /**
+     * @notice Returns the address of the Balancer Token Admin contract
+     */
+    function getBalancerTokenAdmin() external view returns (IBalancerTokenAdmin);
+
+    /**
+     * @notice Returns the address of the Gauge Controller
+     */
+    function getGaugeController() external view returns (IGaugeController);
 
     /**
      * @notice Mint everything which belongs to `msg.sender` and send to them

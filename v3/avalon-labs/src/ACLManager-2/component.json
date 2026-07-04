@@ -1,0 +1,26 @@
+{
+  "component": "ACLManager-2",
+  "main_contract": "ACLManager",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x1239848014aacfcfd2d0f516a8f6764042bad727",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x93638a1bb9e3353086ec576e1d67b55950412b20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

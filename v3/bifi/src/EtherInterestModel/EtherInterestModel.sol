@@ -1,28 +1,26 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-03
-*/
+// File: contracts/interfaces/interestModelInterface.sol
 
-// File: contracts/interfaces/IInterestModel.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's interest model interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IInterestModel {
+interface interestModelInterface {
 	function getInterestAmount(address handlerDataStorageAddr, address payable userAddr, bool isView) external view returns (bool, uint256, uint256, bool, uint256, uint256);
 	function viewInterestAmount(address handlerDataStorageAddr, address payable userAddr) external view returns (bool, uint256, uint256, bool, uint256, uint256);
 	function getSIRandBIR(uint256 depositTotalAmount, uint256 borrowTotalAmount) external view returns (uint256, uint256);
 }
 
-// File: contracts/interfaces/IMarketHandlerDataStorage.sol
+// File: contracts/interfaces/marketHandlerDataStorageInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketHandlerDataStorage  {
+interface marketHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function setNewCustomer(address payable userAddr) external returns (bool);
@@ -121,7 +119,12 @@ interface IMarketHandlerDataStorage  {
 }
 
 // File: contracts/SafeMath.sol
+
+
 pragma solidity ^0.6.12;
+
+// from: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol
+// Subject to the MIT license.
 
 /**
  * @title BiFi's safe-math Contract
@@ -188,6 +191,7 @@ library SafeMath {
 }
 
 // File: contracts/Errors.sol
+
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -243,39 +247,22 @@ contract ManagerDataStorageErrors is ManagerModifier {
     string internal constant NULL_ADDRESS = "err addr null";
 }
 
-// File: contracts/context/BlockContext.sol
+// File: contracts/interestModel/interestModel.sol
+
 pragma solidity 0.6.12;
 
 /**
- * @title BiFi's BlockContext contract
- * @notice BiFi getter Contract for Block Context Information
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-contract BlockContext {
-    function _blockContext() internal view returns(uint256 context) {
-        // block number chain
-        // context = block.number;
-
-        // block timestamp chain
-        context = block.timestamp;
-    }
-}
-
-// File: contracts/interestModel/InterestModel.sol
-pragma solidity 0.6.12;
-
- /**
-  * @title Bifi InterestModel Contract
-  * @notice Contract for InterestModel
-  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
-  */
-contract InterestModel is IInterestModel, InterestErrors, BlockContext {
+* @title Bifi interestModel Contract
+* @notice Contract for interestModel
+* @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
+*/
+contract interestModel is interestModelInterface, InterestErrors {
 	using SafeMath for uint256;
 
 	address owner;
 	mapping(address => bool) public operators;
 
-	uint256 public blocksPerYear = 31536000;
+	uint256 public blocksPerYear;
 	uint256 constant unifiedPoint = 10 ** 18;
 
 	uint256 minRate;
@@ -320,7 +307,7 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 	}
 
 	/**
-	* @dev Construct a new InterestModel contract
+	* @dev Construct a new interestModel contract
 	* @param _minRate minimum interest rate
 	* @param _jumpPoint Threshold of utilizationRate to which normal interest model
 	* @param _basicSensitivity liquidity basicSensitivity
@@ -422,7 +409,7 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 	 */
 	function _getInterestAmount(address handlerDataStorageAddr, address payable userAddr) internal view returns (bool, uint256, uint256, bool, uint256, uint256)
 	{
-		IMarketHandlerDataStorage handlerDataStorage = IMarketHandlerDataStorage(handlerDataStorageAddr);
+		marketHandlerDataStorageInterface handlerDataStorage = marketHandlerDataStorageInterface(handlerDataStorageAddr);
 		uint256 delta = handlerDataStorage.getInactiveActionDelta();
 		uint256 actionDepositEXR;
 		uint256 actionBorrowEXR;
@@ -438,8 +425,8 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 	 */
 	function _viewInterestAmount(address handlerDataStorageAddr, address payable userAddr) internal view returns (bool, uint256, uint256, bool, uint256, uint256)
 	{
-		IMarketHandlerDataStorage handlerDataStorage = IMarketHandlerDataStorage(handlerDataStorageAddr);
-		uint256 blockDelta = _blockContext().sub(handlerDataStorage.getLastUpdatedBlock());
+		marketHandlerDataStorageInterface handlerDataStorage = marketHandlerDataStorageInterface(handlerDataStorageAddr);
+		uint256 blockDelta = block.number.sub(handlerDataStorage.getLastUpdatedBlock());
 		/* check action in block */
 		uint256 globalDepositEXR;
 		uint256 globalBorrowEXR;
@@ -456,7 +443,7 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 	function _calcInterestAmount(address handlerDataStorageAddr, address payable userAddr, uint256 delta, uint256 actionDepositEXR, uint256 actionBorrowEXR) internal view returns (bool, uint256, uint256, bool, uint256, uint256)
 	{
 		InterestUpdateModel memory interestUpdateModel;
-		IMarketHandlerDataStorage handlerDataStorage = IMarketHandlerDataStorage(handlerDataStorageAddr);
+		marketHandlerDataStorageInterface handlerDataStorage = marketHandlerDataStorageInterface(handlerDataStorageAddr);
 		(interestUpdateModel.depositTotalAmount, interestUpdateModel.borrowTotalAmount, interestUpdateModel.userDepositAmount, interestUpdateModel.userBorrowAmount) = handlerDataStorage.getAmount(userAddr);
 		(interestUpdateModel.SIR, interestUpdateModel.BIR) = _getSIRandBIRonBlock(interestUpdateModel.depositTotalAmount, interestUpdateModel.borrowTotalAmount);
 		(interestUpdateModel.userDepositEXR, interestUpdateModel.userBorrowEXR) = handlerDataStorage.getUserEXR(userAddr);
@@ -497,8 +484,9 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 	 * @return (uint256, uin256)
 	 */
 	function _getSIRandBIR(uint256 depositTotalAmount, uint256 borrowTotalAmount) internal view returns (uint256, uint256)
+	// TODO: update comment(jump rate)
 	{
-		/* UtilRate = TotalBorrow / TotalDeposit */
+		/* UtilRate = TotalBorrow / (TotalDeposit + TotalBorrow) */
 		uint256 utilRate = _getUtilizationRate(depositTotalAmount, borrowTotalAmount);
 		uint256 BIR;
 		uint256 _jmpPoint = jumpPoint;
@@ -506,18 +494,16 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 		if(utilRate < _jmpPoint) {
 			BIR = utilRate.unifiedMul(basicSensitivity).add(minRate);
 		} else {
-			/*
-			Formula : BIR = minRate
-							+ jumpPoint * basicSensitivity
-							+ (utilRate - jumpPoint) * jumpSensitivity
+      /*
+      Formula : BIR = minRate + jumpPoint * basicSensitivity + (utilRate - jumpPoint) * jumpSensitivity
 
 			uint256 _baseBIR = _jmpPoint.unifiedMul(basicSensitivity);
 			uint256 _jumpBIR = utilRate.sub(_jmpPoint).unifiedMul(jumpSensitivity);
 			BIR = minRate.add(_baseBIR).add(_jumpBIR);
-			*/
-			BIR = minRate
-			.add( _jmpPoint.unifiedMul(basicSensitivity) )
-			.add( utilRate.sub(_jmpPoint).unifiedMul(jumpSensitivity) );
+      */
+      BIR = minRate
+      .add( _jmpPoint.unifiedMul(basicSensitivity) )
+      .add( utilRate.sub(_jmpPoint).unifiedMul(jumpSensitivity) );
 		}
 
 		/* SIR = UtilRate * BIR */
@@ -588,7 +574,7 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 
 		return ( true, unifiedPoint.sub(EXR) );
 	}
-	//TODO: Need comment
+
 	function getMinRate() external view returns (uint256) {
 		return minRate;
 	}
@@ -639,10 +625,11 @@ contract InterestModel is IInterestModel, InterestErrors, BlockContext {
 	}
 }
 
-// SPDX-License-Identifier: BSD-3-Clause
+// File: contracts/truffleKit/InterestModel.sol
+
 pragma solidity 0.6.12;
 
-contract EtherInterestModel is InterestModel {
+contract EtherInterestModel is interestModel {
     constructor(
         uint256 _minRate,
         uint256 _jumpPoint,
@@ -650,7 +637,7 @@ contract EtherInterestModel is InterestModel {
         uint256 _jumpSensitivity,
         uint256 _spreadRate
     )
-    InterestModel(
+    interestModel(
         _minRate,
         _jumpPoint,
         _basicSensitivity,

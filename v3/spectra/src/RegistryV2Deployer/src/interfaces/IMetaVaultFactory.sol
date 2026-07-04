@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.22;
 
-import {IDeployer} from "./IDeployer.sol";
+import {RegistryEntry} from "./IMetaVaultsRegistryV2.sol";
 
 interface IMetaVaultFactory {
     // --- Structs ---
@@ -14,7 +14,7 @@ interface IMetaVaultFactory {
         bytes32 pipelineId;
         address[] contracts;
         address safeModule;
-        IDeployer.RegistryEntry[] registryEntries;
+        RegistryEntry[] registryEntries;
     }
 
     struct DeploymentResult {

@@ -1,15 +1,23 @@
 {
   "component": "ArbitrumBridgeSender",
   "main_contract": "ArbitrumBridgeSender",
-  "source_file_count": 11,
-  "deployment_count": 1,
+  "source_file_count": 8,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x713e883c22fa543fb28ce96e0677ae347096fbe6",
+      "address": "0xa7e41a0ab0dad61bf3aec60315b53f1d4de2815c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xabdce19340efd0f17b6c4b361d9a7e5beed6afba",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

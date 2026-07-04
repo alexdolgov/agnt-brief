@@ -43,10 +43,6 @@ interface IPoolLogic {
     ComplexAsset[] memory _complexAssetsData
   ) external;
 
-  function setPoolPrivate(bool _privatePool) external;
-
-  function totalSupply() external view returns (uint256 supply);
-
   function transfer(address to, uint256 value) external returns (bool);
 
   function balanceOf(address owner) external view returns (uint256);

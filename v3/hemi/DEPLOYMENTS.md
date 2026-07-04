@@ -1,6 +1,6 @@
 # hemi — deployments
 
-80 verified deployment(s) across 34 component(s).
+81 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -84,8 +84,4 @@
 | optimism | `0x4200000000000000000000000000000000000020` | Proxy-19 | proxy | live | no |
 | optimism | `0x4200000000000000000000000000000000000021` | Proxy-20 | proxy | live | no |
 | optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- optimism `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2`
+| optimism | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafe-2 | impl | live | no |

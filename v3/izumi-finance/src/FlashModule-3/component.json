@@ -1,0 +1,26 @@
+{
+  "component": "FlashModule-3",
+  "main_contract": "FlashModule",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2c6df0fdbce9d2ded2b52a117126f2dc991f770f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4a41ebea62e7ab70413356d30df73ca803aae41c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

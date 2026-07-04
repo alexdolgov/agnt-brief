@@ -1,0 +1,26 @@
+{
+  "component": "EmissionManager-2",
+  "main_contract": "EmissionManager",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xa22de22cbfdd8699ed00e1ceef5f7e0a621890ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xb5250a29df1d8de7131e96156d3beeda0bfbb57d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

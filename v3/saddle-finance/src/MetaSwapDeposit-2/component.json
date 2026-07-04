@@ -1,0 +1,58 @@
+{
+  "component": "MetaSwapDeposit-2",
+  "main_contract": "MetaSwapDeposit",
+  "source_file_count": 20,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3f1d224557afa4365155ea77ce4bc32d5dae2174",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb10ac31a6e613c6fcb5522c19f4bdbcffa94f89d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdf815ea6b066ac9f3107d8863a6c19aa2a5d24d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x18d2469a9788fafd0df277a0044da5ea637a3760",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1d434f50acf16ba013be3536e9a3cdb5d7d4e694",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc8dfcfc329e19fdaf43a338ad6038dba02a5079b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

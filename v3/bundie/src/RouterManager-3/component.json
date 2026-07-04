@@ -1,0 +1,18 @@
+{
+  "component": "RouterManager-3",
+  "main_contract": "RouterManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xfc309ed1facd18e942e3a245964d4f94fb4953f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

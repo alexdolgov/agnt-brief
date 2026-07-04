@@ -17,4 +17,5 @@ library EqbConstants {
     bytes32 public constant EPENDLE_VAULT_SIDECHAIN =
         keccak256("EPENDLE_VAULT_SIDECHAIN");
     bytes32 public constant SMART_CONVERTOR = keccak256("SMART_CONVERTOR");
+    bytes32 public constant EQB_ZAP = keccak256("EQB_ZAP");
 }

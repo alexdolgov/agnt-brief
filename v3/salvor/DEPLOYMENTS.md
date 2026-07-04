@@ -1,6 +1,6 @@
 # salvor — deployments
 
-417 verified deployment(s) across 127 component(s).
+427 verified deployment(s) across 130 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,13 +18,13 @@
 | avalanche | `0x0ab862653f8ab1f1846e887d7f6a060e6dd01664` | LPTP | impl | unknown | no |
 | avalanche | `0x0c58c2041da4cfccf5818bbe3b66dbc23b3902d9` | Airdrop | impl | unknown | no |
 | avalanche | `0x0d4c97526dc88b7c208b36644d131a7ee7134a4b` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0x0d8db5209ac4994b8cb78b5d777ea854d7e18a15` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x0d8db5209ac4994b8cb78b5d777ea854d7e18a15` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x0eb749a42ca15d6ee8ad30e789586c09c2c52388` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0x0f4ee6a202bca16430021fdf1d36fb026cc3dcc5` | LPTP | impl | unknown | no |
 | avalanche | `0x10526c0f2da061debad70c4087876bab42d24c77` | KovinJeckpotData | impl | unknown | no |
 | avalanche | `0x11032f940848a70a6d50409853a20dddb414a4e0` | KovinJeckpot | impl | unknown | no |
 | avalanche | `0x11522c62712c4791db1258b8a8dc96e2e71453c9` | JuicySubscriptions | impl | unknown | no |
-| avalanche | `0x174b0d6b0f4cc58e5c7a223841594052c741df6a` | PaymentManager-2 | impl | live | yes |
+| avalanche | `0x174b0d6b0f4cc58e5c7a223841594052c741df6a` | PaymentManager-3 | impl | live | yes |
 | avalanche | `0x17ce2a490cb260b48891ade019a86f4b4a5520d4` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0x18e0155c8dbd145bd8ebd32bc4cccdd2fa25a649` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x19b7cc0af65bd5557c24307e326ed4dfb07f4fed` | BIFKN314Mintable | impl | live | no |
@@ -50,15 +50,15 @@
 | avalanche | `0x21e32d59b1f9574674006a4101150a004d93c24f` | Laifu | impl | live | no |
 | avalanche | `0x22bafb9c882a8ba7ee5559186540bcd8dba1d073` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0x23904c60c3fe69d70b7dcc629454281c93f8d044` | TransparentUpgradeableProxy | proxy | unknown | no |
-| avalanche | `0x2542d357c731b07283d71e25b3c9adb51f9a2521` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x2542d357c731b07283d71e25b3c9adb51f9a2521` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x2644daed660c7f78611668458e4905cec1cf29e5` | PortalzSquadz | impl | unknown | no |
 | avalanche | `0x26ab72d5f5bdcf68e3469ecfe19029e53c3124d5` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0x273a7a0bff2c24c0e022d472649dfff961433025` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0x27b12fb099fe0881cebb577c2c738b6d9ac84c7e` | ERC1967Proxy-2 | impl | unknown | no |
+| avalanche | `0x27b12fb099fe0881cebb577c2c738b6d9ac84c7e` | ERC1967Proxy | impl | unknown | no |
 | avalanche | `0x284a2c979fe7cd1a9bc5d94b95f1e9ab408d3b89` | kovinBuyer | impl | unknown | no |
 | avalanche | `0x28f699f63324f9fa09515c0d7642108a1fad020c` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0x2aaad91c486488ac0e59777f6800305037974761` | BIFKN314Mintable | impl | unknown | no |
-| avalanche | `0x2aabaffcf9fdcd8303c073fb1a9747e43a32a2b2` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x2aabaffcf9fdcd8303c073fb1a9747e43a32a2b2` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x2af654340459b0a294f9b441b374e64b9a038306` | BIFKN314FeeHook | impl | unknown | no |
 | avalanche | `0x2b8c3c4d13142d7457dc80c92db4c62f3543751c` | StakingV3 | impl | unknown | no |
 | avalanche | `0x2c31ea97d6d727ee346cddaa81ed6af4706710eb` | KovinButton | impl | unknown | no |
@@ -86,7 +86,7 @@
 | avalanche | `0x3dc34920e12067de82de2a94cd46544b255d08e2` | WithdrawQueue | impl | live | no |
 | avalanche | `0x3e186d38f7529d5a40393c30b9b6b6be68b54b7e` | Storage | impl | unknown | no |
 | avalanche | `0x3f722938182af1bc4a8b65808972b0a1f3a2416a` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0x3fa691e4a0a48c52e0b3e4d7dfd2c2a578691f9d` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x3fa691e4a0a48c52e0b3e4d7dfd2c2a578691f9d` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x4043da5d66530f70f2ae1dfbea13d02051b45e6e` | WithdrawQueue | impl | live | no |
 | avalanche | `0x412cb1580c33c421b2765e91a6c231a246347839` | OrbMerger | impl | live | no |
 | avalanche | `0x4169cf88c7ed811e6f6e61917c5b915bea49476c` | ClaimProtocolDAO | impl | unknown | no |
@@ -114,7 +114,7 @@
 | avalanche | `0x4da6c437264dbad9d5dc9783e1294fa3879dd044` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x4df08c8f17fb7bc1261cd308b049dfce59f5dc9a` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x4ecd8bdc617d68789ac2afefbab5d24e2859f450` | BIFKN314FactoryV2 | impl | unknown | no |
-| avalanche | `0x4f70785606938b4ba963feea1bf74a1c80eaf769` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x4f70785606938b4ba963feea1bf74a1c80eaf769` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x4f94b8aef08c92fefe416af073f1df1e284438ec` | Landwolf | impl | live | no |
 | avalanche | `0x5163308728d99a70956ed12ade644fa2e5e5d7cb` | KovinVRF | impl | unknown | no |
 | avalanche | `0x518a8d2929ff2b2650a42852d54d8669d76715b0` | BIFKNRewarder | impl | unknown | no |
@@ -128,10 +128,10 @@
 | avalanche | `0x5463fb623fe9806b78d8ebc41f4671200295a9d0` | MerkleDistributor | impl | unknown | no |
 | avalanche | `0x55eadf68ab32c4f782828148b465a76c54bd8a16` | WithdrawQueue | impl | live | no |
 | avalanche | `0x576d98d26419c5ce9595833403f64d919eca7323` | TokenggAVAX | impl | live | no |
-| avalanche | `0x576fbda4f271551d285b6a7006cc371157da622b` | ERC1967Proxy | impl | unknown | no |
-| avalanche | `0x58dd219e2ffdcba8dbed71087ff9f9833799eded` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0x576fbda4f271551d285b6a7006cc371157da622b` | PaymentManager | impl | unknown | yes |
+| avalanche | `0x58dd219e2ffdcba8dbed71087ff9f9833799eded` | PaymentManager | impl | unknown | yes |
 | avalanche | `0x58fc11578b37ab6f02a6a15ccf3e3ef20929f5f2` | JuicyStaking | impl | unknown | no |
-| avalanche | `0x5974d0a7cab5b7fd7ef4b9493b9c7dddca1be4a8` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x5974d0a7cab5b7fd7ef4b9493b9c7dddca1be4a8` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x5995876c9c6e2c23c1c5fc902661127ff9ed38d3` | BIFKNChefV2 | impl | live | no |
 | avalanche | `0x59c76d26788f283cc9c7bbb1cbbecbc1acbfb5ac` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x5a2c7bf3c3aaecb33cbb1f2930c058d26c5124b5` | kovinBuyer | impl | unknown | no |
@@ -178,13 +178,13 @@
 | avalanche | `0x6e8fd36d51d159209054dadda7f87aa4e1aed940` | ProxyAdmin-2 | impl | live | no |
 | avalanche | `0x6ec18092ee47fcc8f1fe15899156ff20c64ab3d7` | BellumToken | impl | live | no |
 | avalanche | `0x6fe73770af08ea3a93e679a1ccd331b3e7f3907d` | KovinJeckpot | impl | unknown | no |
-| avalanche | `0x709d667c0f7cb42e6099b1a2b2b71409086315cc` | ERC1967Proxy-3 | proxy | unknown | no |
+| avalanche | `0x709d667c0f7cb42e6099b1a2b2b71409086315cc` | ERC1967Proxy-2 | proxy | unknown | no |
 | avalanche | `0x70b145d9636747e45fc2fc6245b0f9cd4d7febc3` | KovinJeckpot-2 | impl | live | no |
 | avalanche | `0x70e5e1a266a151403a31673c7fc2163f4171d058` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x70fd1a4419cd4436e4d44744c09f09a743fd1b65` | ProtocolDAO | impl | unknown | no |
 | avalanche | `0x722f29e7fa60e9d49555cf31cee7404234a2d1bc` | tip | impl | unknown | no |
 | avalanche | `0x72b73fa1569df9ff1ae9b29cd5b164af6c02ebaa` | TransparentUpgradeableProxy-6 | proxy | live | yes |
-| avalanche | `0x72cf3a3890b5e5a23539b818aabb18983b7cd315` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0x72cf3a3890b5e5a23539b818aabb18983b7cd315` | PaymentManager | impl | unknown | yes |
 | avalanche | `0x736ee8325a5c826d91a28f15531b2eae400dab57` | KovinButton | impl | unknown | no |
 | avalanche | `0x737729ed488a4cde80b4acd244d5efa533ad4893` | BurstToken | impl | unknown | no |
 | avalanche | `0x737805fde929e5ded9266c481926c34f076a2e68` | BIFKN314WrapperMintable | impl | live | no |
@@ -192,8 +192,8 @@
 | avalanche | `0x741c5f9778d15910b406e2ebdbe4d9366617690c` | ProxyAdmin | impl | unknown | no |
 | avalanche | `0x746f2c0cf9cdac51e6aa7bc7020f9fda6ac1ecd8` | MinipoolStreamliner | impl | unknown | no |
 | avalanche | `0x752ab1da3f8fb0e715976bd5c3416a3a8e163ae1` | MinipoolStreamliner | proxy | unknown | no |
-| avalanche | `0x754a0c42c35562ee7a41eb824d14bc1259820f01` | ERC1967Proxy | proxy | unknown | no |
-| avalanche | `0x759a06a75fc8c55876d8fb44ed7959e1afc7a8e5` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x754a0c42c35562ee7a41eb824d14bc1259820f01` | PaymentManager | proxy | unknown | yes |
+| avalanche | `0x759a06a75fc8c55876d8fb44ed7959e1afc7a8e5` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x772ebf2767407b6d94d7bc0f0941e28ecf308cdc` | BIFKN314Mintable | impl | unknown | no |
 | avalanche | `0x7759c62e0e3c1c6ee5789b60ccd0826936cb618d` | StAvaxWavaxOracle | impl | live | no |
 | avalanche | `0x77cb12d513e120248ce622f08e26e09ffe9e8573` | BIFKN314WrapperMintable | impl | live | no |
@@ -206,6 +206,7 @@
 | avalanche | `0x7d84168f0037fff3064bb9e933868d94b74332b0` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x7e37a6ca2fcecdbd594cd0d6617b292fbd1050a1` | swapper | impl | unknown | no |
 | avalanche | `0x7e41260fc1946826a30a2427c7232e3240811b5d` | BIFKN314WrapperMintable | impl | live | no |
+| avalanche | `0x7e71e483986b1e87d2c871595201fab9e3ee4813` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x7fc6d48e6e8e8b9505c171325539c651bf1d51d4` | WAVAX | impl | unknown | no |
 | avalanche | `0x7fff419c562dd8b3cf16c335a01cdb37ea1b6a3b` | MultisigManager | impl | unknown | no |
 | avalanche | `0x80108981f046846b97ab14a3e1b89adf0d8b89e9` | BIFKN314 | impl | unknown | no |
@@ -220,10 +221,11 @@
 | avalanche | `0x84e71ced65470fab9d9d2d1a7eab33e1ddceb922` | TokenggAVAX | impl | live | no |
 | avalanche | `0x85677d7fa03819d55c3fdff7f34c3caee52eab7e` | KovinJeckpot | impl | unknown | no |
 | avalanche | `0x856ddc26e986b4eca3984e77b8f990e0ed664349` | OFTCore | impl | unknown | no |
-| avalanche | `0x85d1483d7c39158928a76e471170aac8f805c927` | ERC1967Proxy | proxy | unknown | no |
+| avalanche | `0x85d1483d7c39158928a76e471170aac8f805c927` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x87c1b4de866b686e2b44e63521f02026e2b48a64` | WithdrawQueue | impl | live | no |
 | avalanche | `0x87f07395c5747b45f525fbee289b09e4dc74d66e` | BIFKNChefV2 | impl | unknown | no |
 | avalanche | `0x88234236a30db8d521318bc14a00124265aed475` | BIFKNRewarder | impl | unknown | no |
+| avalanche | `0x883594f6cd822dc01228f4581b4d1edf1b8bb723` | IndexFeeDistributor | impl | unknown | no |
 | avalanche | `0x88440014c897cea2ab0b1ca04fc00e2883e2ec61` | BIFKN314Wrapper | impl | unknown | no |
 | avalanche | `0x8890c465eb3a33853afd9609cafcef2da71aad8b` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x88db874870da9fc77ed4a327577f8728b69d97f3` | BIFKNRewarder | impl | unknown | no |
@@ -232,6 +234,7 @@
 | avalanche | `0x8a34528c3879fbdbf2fa6273c5fc7a6854311ced` | DirectDistributor | impl | unknown | no |
 | avalanche | `0x8ab6a068cd1e5fb8be5b7225275a94900dc4aa02` | BIFKN314Mintable | impl | unknown | no |
 | avalanche | `0x8ad25b0083c9879942a64f00f20a70d3278f6187` | Meow | impl | live | no |
+| avalanche | `0x8ade2c3c04731d382a29d871d67296e15b1d591b` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0x8b85ca6e43f5b057793fb7567b4b4667dff33d0b` | TransparentUpgradeableProxy-2 | proxy | unknown | no |
 | avalanche | `0x8bb1e4fb686020363c55755cc0d2dec36d324bed` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x8c05d78066431c3b11bbfb6f3546fd3f1396115c` | MinipoolStreamliner | impl | unknown | no |
@@ -244,13 +247,13 @@
 | avalanche | `0x9189d18f453b1ec1f02e40a8e3711334f9ea210b` | Ocyticus | impl | unknown | no |
 | avalanche | `0x91c5f275afb2ae344687dfcde5354477326a5f3f` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0x93640f79cca740bdaaec37cd0eaf553ae5d7dcc5` | Vesting | impl | live | yes |
-| avalanche | `0x9484d5da62664d65744de5d2c148c0ee89416c71` | ProxyAdmin | impl | unknown | no |
+| avalanche | `0x9484d5da62664d65744de5d2c148c0ee89416c71` | ProxyAdmin-2 | impl | unknown | no |
 | avalanche | `0x958704931f5a1dbb6df3c548ed68b9161f486a92` | BIFKN314 | impl | unknown | no |
 | avalanche | `0x96a97d36fc007075e300399da892f5cedfdab0f0` | BIFKN314Factory | impl | live | no |
 | avalanche | `0x978f58455318c7a0ffa14216d62760b4c8a7e951` | BIFKN314Wrapper | impl | unknown | no |
 | avalanche | `0x982c4710a8db96b973d3f7edb4193f4e2bda4418` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x9928555fb856692004ebcbd4f391e06f69e1bb97` | SalvorPortalz | impl | unknown | no |
-| avalanche | `0x9946e68490d71fe976951e360f295c4cf8531d00` | Staking | impl | unknown | no |
+| avalanche | `0x9946e68490d71fe976951e360f295c4cf8531d00` | Staking-3 | impl | unknown | no |
 | avalanche | `0x995c599322d52118035b0661395da31b7b92ec1b` | KovinJeckpot | impl | unknown | no |
 | avalanche | `0x99ac3548ac5654b23282d6fd52c6ec76a07c88a2` | JuicyStaking | impl | unknown | no |
 | avalanche | `0x9a25d82d48766f72abef1ebb3f3225c05af70736` | BIFKN314Mintable | impl | live | no |
@@ -276,8 +279,8 @@
 | avalanche | `0xa6d21c577c218db78f7911019009cde51d11a682` | BIFKN314RouterV2 | impl | unknown | no |
 | avalanche | `0xaa8fd06cc3f1059b6d35870bbf625c1bac7c1b1d` | RewardsPool | impl | live | no |
 | avalanche | `0xaaab9d12a30504559b0c5a9a5977fee4a6081c6b` | EmissionsToken | impl | live | no |
-| avalanche | `0xab935686c63933d56a04491aa4623eec430d1ad6` | ERC1967Proxy-2 | impl | unknown | no |
-| avalanche | `0xabfbfed6fa208cf637b1078399abf5b37f345e9a` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0xab935686c63933d56a04491aa4623eec430d1ad6` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0xabfbfed6fa208cf637b1078399abf5b37f345e9a` | PaymentManager | impl | unknown | yes |
 | avalanche | `0xac48e02ac18299e061897345991857a80e5026ba` | KONG | impl | unknown | no |
 | avalanche | `0xac59c21adfddb1e56a959dd60a08c07aaed2f3ba` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0xac7b33a50f0c7db16641838c0cc4d3799e3817b6` | swapper | impl | unknown | no |
@@ -291,7 +294,8 @@
 | avalanche | `0xb244b1507d7cfb8de6883fd985ee5e205d3c6c54` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7` | WAVAX | impl | unknown | no |
 | avalanche | `0xb32f181a0d4bff8d8e410f5223f5895521d8163e` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0xb392246ffcd4ca16f739f7037704c26fd271e8c9` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0xb392246ffcd4ca16f739f7037704c26fd271e8c9` | PaymentManager | impl | unknown | yes |
+| avalanche | `0xb41b3d801af59b90f69011e67c9a886743536978` | CopperOrbMinter | impl | unknown | no |
 | avalanche | `0xb42cfad450b46fdc9cac5fbf14bc2e6091afc35c` | ClaimNodeOp | impl | live | no |
 | avalanche | `0xb44b645b5058f7e393f3ae6af58a4cef67006196` | BellumToken | impl | live | no |
 | avalanche | `0xb47f0dff0282dd1da22484b5df7512d77c7ce5c3` | BIFKN314WrapperMintable | impl | live | no |
@@ -301,17 +305,17 @@
 | avalanche | `0xb683a33600d9f91fffcd1fc698cfcd6603eff7b0` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xb6ddbf75e2f0c7fc363b47b84b5c03959526aecb` | MinipoolStreamliner | impl | live | no |
 | avalanche | `0xb79a1ff59b58c7be91ac122c2b1a7ac704a75c67` | TransparentUpgradeableProxy | proxy | unknown | no |
-| avalanche | `0xb83ad9bf9ae8841ff1e0ec37cbf83d4c5d13a903` | ERC1967Proxy-2 | proxy | unknown | no |
+| avalanche | `0xb83ad9bf9ae8841ff1e0ec37cbf83d4c5d13a903` | ERC1967Proxy | proxy | unknown | no |
 | avalanche | `0xb84fa022c7fe1ce3a1f94c49f2f13236c3d1ed08` | MinipoolManager | impl | unknown | no |
 | avalanche | `0xb85afff031ab2931501f8b86ba0812468c655d9e` | tip | impl | unknown | no |
-| avalanche | `0xb86490dc4897e72ce029919992040122ba0a2b6d` | ERC1967Proxy-2 | impl | unknown | no |
-| avalanche | `0xb91b66dc436aeb6bbbd2fa74150f01e185f463d1` | ERC1967Proxy-2 | impl | unknown | no |
+| avalanche | `0xb86490dc4897e72ce029919992040122ba0a2b6d` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0xb91b66dc436aeb6bbbd2fa74150f01e185f463d1` | ERC1967Proxy | impl | unknown | no |
 | avalanche | `0xb9ad5f3f447f2c7902924a575a0441b62ae318e1` | StakingV3 | proxy | unknown | no |
 | avalanche | `0xba239e83c77b2a77b3f5af15fe9d291b2c48885d` | TransparentUpgradeableProxy | proxy | unknown | no |
 | avalanche | `0xbb5deb03b4cd369b713428def5d389f969efff66` | BurstToken | impl | unknown | no |
 | avalanche | `0xbc47f3bd40635489dbe77600d21c19fe4a09890b` | BIFKN314 | impl | unknown | no |
-| avalanche | `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190` | ProxyAdmin | impl | live | no |
-| avalanche | `0xbc74a3c24d8aa980445adc889577e29089c07cdd` | ERC1967Proxy-4 | proxy | unknown | no |
+| avalanche | `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190` | ProxyAdmin-2 | impl | live | no |
+| avalanche | `0xbc74a3c24d8aa980445adc889577e29089c07cdd` | ERC1967Proxy-3 | proxy | unknown | no |
 | avalanche | `0xbca48e3fda5a0f8fb02098ca150b948986626891` | Orbs | impl | unknown | no |
 | avalanche | `0xbd2890ce5a3df6c7e26b83e8da202c7d37410bbc` | StakingV2 | impl | unknown | no |
 | avalanche | `0xbe2ff43bd8cb2454f40cbcf611fddb3dabfc545b` | BIFKN314Mintable | impl | live | no |
@@ -325,6 +329,7 @@
 | avalanche | `0xc158d2d31a854644ac7b1ff13fcb1c1def67194f` | BIFKNRewarder-2 | impl | unknown | no |
 | avalanche | `0xc1c19ffac5320fc5356757bf78f38fb943d8ff1e` | JuicyStaking | impl | unknown | no |
 | avalanche | `0xc300bc9b4b690ba7a182126299a0618ece268ee7` | MinipoolManager | impl | live | no |
+| avalanche | `0xc331d7843e92d3b6cc1e448d15fe4fd24c3a9f8b` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0xc36a0b1c3a2313275978d5db1d83fd13117da63d` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xc3943c34420f0f174d1b491e8890feb4d52e9504` | JuicyAirdrops | impl | unknown | no |
 | avalanche | `0xc448e3de6101c260882724d001cd8ccdbc43d087` | KovinJeckpotData | impl | unknown | no |
@@ -354,6 +359,7 @@
 | avalanche | `0xd189d2a687238efe5ab4ec41a6e0952b3dd8daac` | ApexPremier | impl | unknown | no |
 | avalanche | `0xd45cb6f5aca41afaaaebdbe4efba49c1bc41e6ba` | Vault | impl | unknown | no |
 | avalanche | `0xd491c8b0ccd615c05728cc40de4cd3415c0f9734` | Orbs | impl | unknown | no |
+| avalanche | `0xd49d18fe6cfa45396e2d4c27b216ccee6dbfb6e7` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0xd5e8ac004bdea58285ac5eaa15fff8350723bda6` | tip | impl | unknown | no |
 | avalanche | `0xd714f26e6d0bb8de4e70e00f77932fca77fba4ec` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0xd74fd3133bdcac78c437764654343131a7eab9e7` | BIFKN314 | impl | unknown | no |
@@ -362,19 +368,21 @@
 | avalanche | `0xd9d021f424fa8855c2d0a5e59d4e6673eeff1dc1` | Storage | impl | unknown | no |
 | avalanche | `0xda44ffde48244c8ca4423f5726af34813ae64251` | KovinJeckpotData | impl | unknown | no |
 | avalanche | `0xda5d3f44652c6671748ba66efafb8ba18db00947` | BIFKN314Mintable | impl | live | no |
-| avalanche | `0xdaebd8983c80cd185867a167b14bd1ca7d71b72a` | ERC1967Proxy-2 | impl | unknown | no |
+| avalanche | `0xdaebd8983c80cd185867a167b14bd1ca7d71b72a` | ERC1967Proxy | impl | unknown | no |
 | avalanche | `0xdbfe1e9feb0e297c2c580a5eb5a97c4f46a56aa7` | ProxyAdmin | impl | unknown | no |
 | avalanche | `0xdc35e5d3c5fcc2d9c82bec32edfc490ca742e34c` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0xdcaecebc332c76121af6e89f444630fd3e81f99a` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0xdcaecebc332c76121af6e89f444630fd3e81f99a` | PaymentManager | impl | unknown | yes |
 | avalanche | `0xdd4bfa270c5926db781faf9bf8d33998c6956d14` | BIFKN314Mintable | impl | live | no |
+| avalanche | `0xdd4d94efba79f589bf0f092562b65f905291ad42` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0xde24686268bb5ddfac35d032e2663c1d700114a1` | BIFKN314WrapperMintable | impl | live | no |
-| avalanche | `0xde2762aa18fe86dcce4ab89539eaad446cd0c9a7` | ERC1967Proxy-4 | impl | unknown | no |
+| avalanche | `0xde2762aa18fe86dcce4ab89539eaad446cd0c9a7` | ERC1967Proxy-3 | impl | unknown | no |
 | avalanche | `0xde485a725e70355d0a0ef8786b50d28357ddf650` | JuicyTokenSale | impl | unknown | no |
 | avalanche | `0xde7780318f860d8f9cb72fabd77f9c3b2ee015b2` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xe0ee1acf6a85b0c63c20077c6b05d43920ef035e` | BIFKN314 | impl | unknown | no |
 | avalanche | `0xe0f912f528c26686690e77d6c78592589b56cca7` | Storage | impl | unknown | no |
 | avalanche | `0xe33d4430a36b6625341b1b0b8a16afdf7cb2928d` | BurstToken | impl | unknown | no |
 | avalanche | `0xe3418a4d0c4aba68cac317bf6f5d9062fe79c871` | MerkleDistributor | impl | unknown | no |
+| avalanche | `0xe3593df71edd22e8857df0d738db0adfb28f8cfa` | PaymentManager | proxy | unknown | yes |
 | avalanche | `0xe4d695387e7cfc3dfd388f1cf8bd6eba7e4e3027` | ProxyAdmin-3 | impl | unknown | no |
 | avalanche | `0xe507d2ead1a1503b6d97f8a4623bdfd8924d2f76` | kovinBuyer | impl | unknown | no |
 | avalanche | `0xe51262211948c338c50640f1d5bdba4f4d208dea` | MinipoolManager | impl | unknown | no |
@@ -391,7 +399,7 @@
 | avalanche | `0xec18aa29d678f5e5767076e9b5a293e21af8450c` | Orbs | proxy | unknown | no |
 | avalanche | `0xec3492a2508ddf4fdc0cd76f31f340b30d1793e6` | ColonyGovernanceToken | impl | live | no |
 | avalanche | `0xeda36190479ce4f08c00f2f465da74bce9026a71` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0xeed4362c7fa7962937b85af811dec81678afb465` | ERC1967Proxy | impl | unknown | no |
+| avalanche | `0xeed4362c7fa7962937b85af811dec81678afb465` | PaymentManager | impl | unknown | yes |
 | avalanche | `0xefa94de7a4656d787667c749f7e1223d71e9fd88` | PangolinFactory | impl | unknown | no |
 | avalanche | `0xefac81f709d314604a7daee9ca234da978c2be20` | Vesting-2 | impl | live | no |
 | avalanche | `0xf04aa1700694881761de6d1cc1c490102ff8a9ed` | TransparentUpgradeableProxy-2 | impl | unknown | no |
@@ -402,6 +410,7 @@
 | avalanche | `0xf25dc803dba114830b086e4cc09cfdebe2c10afd` | WithdrawQueue | impl | unknown | no |
 | avalanche | `0xf31856c9c5b890a07eb5a1e6d045205e517d639a` | BIFKN314WrapperMintable | impl | unknown | no |
 | avalanche | `0xf43d68e775642f81181061ae10aa3e517533a15e` | BIFKN314Wrapper | impl | unknown | no |
+| avalanche | `0xf451171872e9395021316e44d9f5475c90e27848` | TransparentUpgradeableProxy-2 | proxy | unknown | no |
 | avalanche | `0xf4a52e4eede1f4f6c3fb6f13e59b2fff5f32b43e` | ChiknPortalz | impl | unknown | no |
 | avalanche | `0xf4c5626c39570f0637c1785b378b0ef45a1620a9` | ProxyAdmin | impl | live | no |
 | avalanche | `0xf563cb4b20d951a72abca3ea486d32d8b3399106` | tip | impl | unknown | no |
@@ -412,7 +421,7 @@
 | avalanche | `0xf99516bc189af00ff8effd5a1f2295b67d70a90e` | SalvorGovernanceToken | impl | live | yes |
 | avalanche | `0xfad33e5854d7d0065cd4cd1e2ee9a64928163752` | TokenggAVAX | impl | unknown | no |
 | avalanche | `0xfb0cf88aec79024f31c7b64d10bf68019ed29332` | BIFKN314WrapperMintable | impl | live | no |
-| avalanche | `0xfb68c97424f1e8707a9fcf6cc11d0107d75c5bd2` | ERC1967Proxy-3 | impl | unknown | no |
+| avalanche | `0xfb68c97424f1e8707a9fcf6cc11d0107d75c5bd2` | ERC1967Proxy-2 | impl | unknown | no |
 | avalanche | `0xfc3ea32c03b4be326bced178431789f7e2d8051a` | ProtocolDAO-2 | impl | live | no |
 | avalanche | `0xfc6c9b50554828bf53de0954002f8d7a934e3d81` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0xfd3a5aae749ae1b398c4237fddd5ae48881cdee3` | BIFKN314Wrapper | impl | unknown | no |
@@ -420,9 +429,10 @@
 | avalanche | `0xfe47b6f358825fda93ffeee245d096c60ed529ee` | BIFKN314 | impl | unknown | no |
 | avalanche | `0xffdc3b731c57a7179b90fe7f5c2b5b87a5ad5542` | ProtocolDAO-3 | impl | live | no |
 | avalanche | `0xffff003a6bad9b743d658048742935fffe2b6ed7` | Ket | impl | live | no |
-| base | `0x8e4fa97e4e8d0b8618065809197e1bbf4fab19ab` | PaymentManager | impl | live | yes |
+| base | `0x8e4fa97e4e8d0b8618065809197e1bbf4fab19ab` | PaymentManager-2 | impl | live | yes |
+| base | `0xef4364fe4487353df46eb7c811d4fac78b856c7f` | PaymentManager | proxy | live | yes |
 
-## Source unavailable (88)
+## Source unavailable (78)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - avalanche `0x1f240def4c98408e22a28daec1e920810ef8b1d2`
@@ -463,12 +473,9 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - avalanche `0x734d8cfeccd8485df397719e7128ca153dd38f79`
 - avalanche `0x7a842a6f4580edd3df41c1f31e0395044de6bc75`
 - avalanche `0x7ccff2d7d97f0577fd79e91c2f28e30bb65a54cf`
-- avalanche `0x7e71e483986b1e87d2c871595201fab9e3ee4813`
 - avalanche `0x7f3590d488d29bc15ba3cd242b34230977b547e3`
 - avalanche `0x82d7d932e3e12d18f01838d4c01c1dbb539c4050`
 - avalanche `0x84926d9d604ff16dfa19b783c0a7284127913d8b`
-- avalanche `0x883594f6cd822dc01228f4581b4d1edf1b8bb723`
-- avalanche `0x8ade2c3c04731d382a29d871d67296e15b1d591b`
 - avalanche `0x8e3751e7e4bd1093fddcd68fdb10cc86d785f63d`
 - avalanche `0x8f56421dc48dcce052d9afc80b696291ddaa832a`
 - avalanche `0x96b9058ea3af4c47223d470ac8d20322b719d672`
@@ -482,12 +489,10 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - avalanche `0xae1e7b06544a13315e6f7301cc161761813ce4b1`
 - avalanche `0xae51aa005bb123f211730fed55a5fbf2a620770a`
 - avalanche `0xaeb261db831fd11a3f700014f3ace6073da06e22`
-- avalanche `0xb41b3d801af59b90f69011e67c9a886743536978`
 - avalanche `0xba6a7aa3c1737dedb2f8db71a359fe8dde9e60d2`
 - avalanche `0xbb6b570f861646d3fcdfaed1d021eab4f8a7d43a`
 - avalanche `0xc095ece2c0f315381b4bf6de169fbc219b24194c`
 - avalanche `0xc0ae43589e7b27cab0c1c56906a3801838006ca4`
-- avalanche `0xc331d7843e92d3b6cc1e448d15fe4fd24c3a9f8b`
 - avalanche `0xc84c8b7acb8a41b0ef8ba02ca999f6fd87276c20`
 - avalanche `0xc874be82cb1f5d6842783e21333e76b2e17b565a`
 - avalanche `0xc9871bf1ee787f2134f69d6c6ed010bd636fa33b`
@@ -496,20 +501,15 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - avalanche `0xcf5de4fc5d7b9cf3f8d7c6d9a2129c2957e8f857`
 - avalanche `0xcf7b2caee040def16bfa1090c8c9f69d61ee3532`
 - avalanche `0xd13510243226c8182abc11bb2a59fe385b8bf5c8`
-- avalanche `0xd49d18fe6cfa45396e2d4c27b216ccee6dbfb6e7`
 - avalanche `0xd63bbc7afd3a76da88f42702ec9a7aade7cfdfe8`
 - avalanche `0xd92558cce4a2e23c4685dcdb9c3f5d7aa2c4929f`
 - avalanche `0xda54f80ddf96fad96be883e349e40b458352e311`
-- avalanche `0xdd4d94efba79f589bf0f092562b65f905291ad42`
 - avalanche `0xdef6738dd9da7639a4ba29a7628c5f2440ad5ef6`
 - avalanche `0xdfb8803797b11c64cd8520b611816924ce845802`
-- avalanche `0xe3593df71edd22e8857df0d738db0adfb28f8cfa`
 - avalanche `0xe6666f6fa8bc1759b9266d30d41cb443025926c9`
 - avalanche `0xe9affc054f4066a9acaef1f8bea564e5ab3fbbc1`
 - avalanche `0xef89a728cd6319f603e266c9b9ad249623276644`
-- avalanche `0xf451171872e9395021316e44d9f5475c90e27848`
 - avalanche `0xf755a817f9891954c99bf33bb731b8f9e8393754`
 - avalanche `0xf93b7ab02ee9f3cd7d0478352c2d8d7d095cc4a8`
 - avalanche `0xfe6ca6cd383d1e213f5d1015dd0bb35275e8fe3e`
 - avalanche `0xffdb03050a5ffcfbb2d777623e6608d99622da98`
-- base `0xef4364fe4487353df46eb7c811d4fac78b856c7f`

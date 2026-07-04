@@ -70,26 +70,21 @@ contract PayMaster is OwnableUpgradeable, IPayMaster {
     }
 
     /**
-     * @notice Deposit affiliate account funds
-     * @param account affiliate account - funds owner
+     * @notice Affiliate deposit funds
      * @param freeBetAmount increase value of freebet funds
      * @param feeAmount increase value of fee funds
      */
-    function depositFor(
-        address account,
-        uint256 freeBetAmount,
-        uint256 feeAmount
-    ) external {
+    function deposit(uint256 freeBetAmount, uint256 feeAmount) external {
         TransferHelper.safeTransferFrom(
             token,
             msg.sender,
             address(this),
             freeBetAmount + feeAmount
         );
-        feeFund[account] += feeAmount;
-        freeBetsFund[account] += freeBetAmount;
+        feeFund[msg.sender] += feeAmount;
+        freeBetsFund[msg.sender] += freeBetAmount;
 
-        emit DepositedFunds(account, freeBetAmount, feeAmount);
+        emit DepositedFunds(msg.sender, freeBetAmount, feeAmount);
     }
 
     /**
@@ -102,6 +97,7 @@ contract PayMaster is OwnableUpgradeable, IPayMaster {
      * @param hashes to check signatures
      * @return amountPaidByBettor value to pay by bettor if not sponsored
      * @return feePaidByBettor fee value to pay by bettor if not fee sponsored
+     * @return tokenIds list of sponsored bet ids
      */
     function pay(
         address relayExecutor,
@@ -113,7 +109,11 @@ contract PayMaster is OwnableUpgradeable, IPayMaster {
     )
         external
         override
-        returns (uint128 amountPaidByBettor, uint256 feePaidByBettor)
+        returns (
+            uint128 amountPaidByBettor,
+            uint256 feePaidByBettor,
+            uint256[] memory tokenIds
+        )
     {
         if (relayer != msg.sender) revert IncorrectRelayer();
 
@@ -135,13 +135,13 @@ contract PayMaster is OwnableUpgradeable, IPayMaster {
         // sponsored bet
         if (data.isBetSponsored) {
             if (freeBetsFund[data.affiliate] < betAmount)
-                revert InsufficientFreeBetFund();
+                revert InsufficientFreebetFund();
             freeBetsFund[data.affiliate] -= betAmount;
 
             // send amount for bet to relayer
             TransferHelper.safeTransfer(token, msg.sender, betAmount);
 
-            uint256[] memory tokenIds = IRelayer(msg.sender).betOrder(
+            tokenIds = IRelayer(msg.sender).betOrder(
                 relayExecutor,
                 data,
                 order,
@@ -180,7 +180,7 @@ contract PayMaster is OwnableUpgradeable, IPayMaster {
      */
     function withdraw(uint256 freeBetAmount, uint256 feeAmount) external {
         if (freeBetsFund[msg.sender] < freeBetAmount)
-            revert InsufficientFreeBetFund();
+            revert InsufficientFreebetFund();
         if (feeFund[msg.sender] < feeAmount) revert InsufficientFeeFund();
 
         freeBetsFund[msg.sender] -= freeBetAmount;
@@ -232,7 +232,7 @@ contract PayMaster is OwnableUpgradeable, IPayMaster {
             // If the bet cancelled, the freebet amount is returned back
             if (fullPayout == betAmount) {
                 freeBetsFund[affiliate] += betAmount;
-                emit FreeBetReturned(
+                emit FreebetReturned(
                     core,
                     bettor,
                     azuroBetId,

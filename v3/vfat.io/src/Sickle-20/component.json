@@ -1,0 +1,18 @@
+{
+  "component": "Sickle-20",
+  "main_contract": "Sickle",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea895dcacb615d3553e434913c9429ad22e168ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

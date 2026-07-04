@@ -1,7 +1,7 @@
 {
   "component": "OracleLens-2",
   "main_contract": "OracleLens",
-  "source_file_count": 10,
+  "source_file_count": 14,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0f8560f6361051de80cd15dc439c76199c47bd4f",
+      "address": "0x0c47736aabee757ab8c8f60776741e39dbf3f183",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

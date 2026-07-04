@@ -8,7 +8,7 @@ interface IFarmConnector {
         Farm calldata farm,
         address token,
         bytes memory extraData
-    ) external;
+    ) external payable;
 
     function withdraw(
         Farm calldata farm,

@@ -1,9 +1,14 @@
 # pickle — deployments
 
-63 verified deployment(s) across 33 component(s).
+72 verified deployment(s) across 42 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x7ecc7163469f37b777d7b8f45a667314030ace24` | MiniChefV2-4 | impl | live | no |
+| arbitrum | `0x94feade0d3d832e4a05d459ebea9350c6cdd3bca` | PickleJar-5 | impl | live | no |
+| arbitrum | `0x973b669ef8c1459f7cb685bf7d7bcd4150977504` | PickleJar-6 | impl | live | no |
+| chain-1088 | `0x22ce2f89d2efd9d4efba4e0e51d73720fa81a150` | MiniChefV2-3 | impl | unknown | no |
+| chain-1088 | `0xadd50d6396b53876ac58752e153e3431c1e9ba93` | PickleJar-4 | impl | unknown | no |
 | chain-1088 | `0xd556018e7b37e66f618a65737144a2ae2b98127f` | ControllerV4 | impl | unknown | no |
 | ethereum | `0x04aa51bbcb46541455ccf1b8bef2ebc5d3787ec9` | yWBTC | impl | live | no |
 | ethereum | `0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e` | YFI | impl | live | no |
@@ -38,6 +43,7 @@
 | ethereum | `0x67c472fdd2851666abe99b1ec0f091ce3e06c365` | xVault | impl | unknown | no |
 | ethereum | `0x68d14d66b2b0d6e157c06dc8fefa3d8ba0e66a89` | PickleJar | impl | live | no |
 | ethereum | `0x73a052500105205d34daf004eab301916da8190f` | yTUSD | impl | live | no |
+| ethereum | `0x74c6cade3ef61d64dcc9b97490d9fbb231e4bdcc` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x77c8a58d940a322aea02dbc8ee4a30350d4239ad` | PickleJar | impl | live | no |
 | ethereum | `0x7ff566e1d69deff32a7b244ae7276b9f90e9d0f6` | yVault | impl | live | no |
 | ethereum | `0x83f798e925bcd4017eb265844fddabb448f1707d` | yUSDT | impl | live | no |
@@ -47,7 +53,7 @@
 | ethereum | `0xa1787206d5b1be0f432c4c4f96dc4d1257a1dd14` | yUSDT | impl | live | no |
 | ethereum | `0xacd43e627e64355f1861cec6d3a6688b31a6f952` | yVault | impl | live | no |
 | ethereum | `0xba2e7fed597fd0e3e70f5130bcdbbfe06bb94fe1` | yVault | impl | live | no |
-| ethereum | `0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0xbd17b1ce622d73bd438b9e658aca5996dc394b0d` | MasterChef | impl | live | yes |
 | ethereum | `0xc2cb1040220768554cf699b0d863a3cd4324ce32` | yDAI | impl | live | no |
 | ethereum | `0xd6ad7a6750a7593e092a9b218d66c0a814a3436e` | yUSDC-2 | impl | live | no |
@@ -59,24 +65,14 @@
 | ethereum | `0xe4ffd682380c571a6a07dd8f20b402412e02830e` | EminenceCurrency | impl | live | no |
 | ethereum | `0xe6354ed5bc4b393a5aad09f21c46e101e692d447` | yUSDT | impl | live | no |
 | ethereum | `0xed35197cadf01fcbfe6cfc11081f299cffb095bf` | EminenceCurrency | impl | live | no |
+| ethereum | `0xed4064f376cb8d68f770fb1ff088a3d0f3ff5c4d` | Vyper_contract-4 | impl | live | no |
 | ethereum | `0xef0881ec094552b2e128cf945ef17a6752b4ec5d` | MasterChefV2 | impl | live | no |
 | ethereum | `0xf5bd1a4894a6ac1d786c7820bc1f36b1535147f6` | Gauge | impl | live | yes |
 | ethereum | `0xf61718057901f84c4eec4339ef8f0d86d2b45600` | ySUSD | impl | live | no |
 | ethereum | `0xf79ae82dccb71ca3042485c85588a3e0c395d55b` | PickleJar | impl | live | no |
 | ethereum | `0xfaa267c3bb25a82cfdb604136a29895d30fd3fd8` | Gauge-2 | impl | live | no |
+| optimism | `0x849c283375a156a6632e8ee928308fcb61306b7b` | MiniChefV2 | impl | live | no |
 | optimism | `0xc335740c951f45200b38c5ca84f0a9663b51aec6` | PickleJarUniV3Optimism | impl | live | no |
-| polygon | `0x20b2a3fc7b13ca0ccf7af81a68a14cb3116e8749` | MiniChefV2 | impl | live | no |
+| polygon | `0x20b2a3fc7b13ca0ccf7af81a68a14cb3116e8749` | MiniChefV2-2 | impl | live | no |
+| polygon | `0x261b5619d85b710f1c2570b65ee945975e2cc221` | PickleJar-3 | impl | live | no |
 | polygon | `0x74dc9cdca9a96fd0b7900e6eb953d1ea8567c3ce` | PickleJarDepositFeeInitializable | impl | live | no |
-
-## Source unavailable (9)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x7ecc7163469f37b777d7b8f45a667314030ace24`
-- arbitrum `0x94feade0d3d832e4a05d459ebea9350c6cdd3bca`
-- arbitrum `0x973b669ef8c1459f7cb685bf7d7bcd4150977504`
-- chain-1088 `0x22ce2f89d2efd9d4efba4e0e51d73720fa81a150`
-- chain-1088 `0xadd50d6396b53876ac58752e153e3431c1e9ba93`
-- ethereum `0x74c6cade3ef61d64dcc9b97490d9fbb231e4bdcc`
-- ethereum `0xed4064f376cb8d68f770fb1ff088a3d0f3ff5c4d`
-- optimism `0x849c283375a156a6632e8ee928308fcb61306b7b`
-- polygon `0x261b5619d85b710f1c2570b65ee945975e2cc221`

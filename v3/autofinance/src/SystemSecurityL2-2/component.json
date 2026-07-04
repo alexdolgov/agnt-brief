@@ -1,0 +1,18 @@
+{
+  "component": "SystemSecurityL2-2",
+  "main_contract": "SystemSecurityL2",
+  "source_file_count": 61,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8c58aff94d7fcb0e8dac43fc3713fcddac8b4006",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

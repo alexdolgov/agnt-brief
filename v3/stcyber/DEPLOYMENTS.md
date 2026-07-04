@@ -1,10 +1,14 @@
 # stcyber — deployments
 
-52 verified deployment(s) across 35 component(s).
+57 verified deployment(s) across 37 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x14778860e937f509e651192a90589de711fb88a9` | CyberToken | impl | live | no |
+| base | `0x9a9d5a29206dde4f70825032df32333de5f63921` | CyberTokenController | impl | live | no |
 | base | `0x9b20927a5dbf71d0539d48173c5f5b342bc67798` | Create2Deployer | impl | inactive | no |
+| bsc | `0x14778860e937f509e651192a90589de711fb88a9` | CyberToken | impl | live | no |
+| bsc | `0x9a9d5a29206dde4f70825032df32333de5f63921` | CyberTokenController | impl | live | no |
 | ethereum | `0x0048defca9f0da952cfd1ae9f8e962937d3e4143` | MIPS | impl | live | no |
 | ethereum | `0x01b46e02fce5fc0731076711affe73beecd87997` | L1StandardBridge | impl | live | no |
 | ethereum | `0x0747ef2570e3dbf65f0a12b371f19ca4a66a8dde` | PreimageOracle | impl | live | no |
@@ -12,7 +16,7 @@
 | ethereum | `0x10e34efe14e4d270c0f77bf1af01b6c832161b49` | DataAvailabilityChallenge | proxy | live | no |
 | ethereum | `0x1234c7a75f40551fce5aff1d58efd72f2ee2afb1` | L1ERC721Bridge | impl | live | no |
 | ethereum | `0x12a580c05466eefb2c467c6b115844cdaf55b255` | L1StandardBridge | proxy | live | no |
-| ethereum | `0x14778860e937f509e651192a90589de711fb88a9` | CyberToken | impl | live | no |
+| ethereum | `0x14778860e937f509e651192a90589de711fb88a9` | CyberToken-2 | impl | live | no |
 | ethereum | `0x18eed20f71bef84b605253c89a7576e3634134c0` | CyberStakingPool | impl | live | yes |
 | ethereum | `0x19b5804b88f10262a55ac731f28a3bbc4209853a` | AddressManager | impl | live | no |
 | ethereum | `0x1aec4c3be47c30d0befa7514cf9d99eac596959d` | Proxy-2 | proxy | live | no |
@@ -26,7 +30,7 @@
 | ethereum | `0x557bc59ad1c68126f4f9ee9be0ee9d7710f68242` | Executor | proxy | live | no |
 | ethereum | `0x588dad44201885ff23068f1142e303d52d103919` | Proxy-5 | proxy | live | no |
 | ethereum | `0x5d1f4bbaf6d484fa9d5d9705f92de6063bff6055` | Proxy-6 | proxy | live | no |
-| ethereum | `0x61c1ed69b3b89242b8e898b0f0aec7b19e2dbd58` | CyberToken | impl | inactive | no |
+| ethereum | `0x61c1ed69b3b89242b8e898b0f0aec7b19e2dbd58` | CyberToken-2 | impl | inactive | no |
 | ethereum | `0x726c6ac8a53061e56afb2c890545348ba6f0df0e` | SystemConfig-2 | impl | live | no |
 | ethereum | `0x7e54107731ec43e78da678dfa5fb6222ad036e03` | ProxyAdmin-2 | impl | live | no |
 | ethereum | `0x81759adbf5520ad94da10991dfa29ff147d3337b` | TimelockController | impl | inactive | no |
@@ -54,14 +58,6 @@
 | ethereum | `0xfc4328e6888ee5079185dc1a3a0d0283a141bf36` | ProxyAdmin | impl | live | no |
 | ethereum | `0xfe42cc6ac1f47d1b343a631a31b6d242dbf36b0c` | PermissionedDisputeGame | impl | inactive | no |
 | ethereum | `0xfe98ba9d562f8359981269c9e22fdbf02717b723` | TimelockController | impl | inactive | no |
-| optimism | `0x9a9d5a29206dde4f70825032df32333de5f63921` | CyberTokenController | impl | live | no |
+| optimism | `0x14778860e937f509e651192a90589de711fb88a9` | CyberToken | impl | live | no |
+| optimism | `0x9a9d5a29206dde4f70825032df32333de5f63921` | CyberTokenController-2 | impl | live | no |
 | optimism | `0xb2bbfc07948fedeb5935316203c33ce70bef57d0` | MerkleDistributorWithDeadline | impl | inactive | no |
-
-## Source unavailable (5)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x14778860e937f509e651192a90589de711fb88a9`
-- base `0x9a9d5a29206dde4f70825032df32333de5f63921`
-- bsc `0x14778860e937f509e651192a90589de711fb88a9`
-- bsc `0x9a9d5a29206dde4f70825032df32333de5f63921`
-- optimism `0x14778860e937f509e651192a90589de711fb88a9`

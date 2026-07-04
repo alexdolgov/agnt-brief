@@ -1,6 +1,6 @@
 # hybra — deployments
 
-19 verified deployment(s) across 13 component(s).
+21 verified deployment(s) across 15 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | chain-999 | `0x348b11cbb801fab12834e66691b7f25fe72b8aa5` | GrowthHYBR | impl | live | no |
 | chain-999 | `0x48b88f07f22fcab3b72e5659f94f1bb773097350` | NonfungiblePositionManager | impl | live | no |
 | chain-999 | `0x6879db7e84c38e5f580b464d2f19e91e09f4bc98` | RewardHYBR | impl | live | no |
+| chain-999 | `0x6ba9f916068cea67766de6951f2cbd4aeb7f752a` | BribeFactoryV3 | impl | inactive | no |
 | chain-999 | `0x84fa8d513ee93ddea72b6fbd45fa957bd9e0de45` | GaugeFactory | impl | inactive | no |
 | chain-999 | `0x88d4c35b2107c976770922162fb64fa40243176f` | NonfungiblePositionManager | impl | live | no |
 | chain-999 | `0x8a89c7f32f0ed4d186eb73d458354fda68e01d2f` | MinterUpgradeable | impl | inactive | no |
@@ -21,11 +22,6 @@
 | chain-999 | `0xa421f7aada7d11eb6002bc53090fb8d5409552ab` | CLPool | impl | live | no |
 | chain-999 | `0xbec2bf10b7172c8e5621569bd285e9adb1806426` | SwapRouter | impl | live | no |
 | chain-999 | `0xcc9e3991360229fd13694022b9456d371f1a2568` | NonfungiblePositionManager | impl | live | no |
+| chain-999 | `0xcd9599ff0b72d2cc5246b15bc6d6836581920576` | VoterV3 | impl | inactive | no |
 | chain-999 | `0xe31c7b8485053417c0c0a2ff50ef369f354e1e23` | CLPool | impl | live | no |
 | chain-999 | `0xf5fcffd0cca480042efe7af480024f577829a3e6` | QuoterV2 | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-999 `0x6ba9f916068cea67766de6951f2cbd4aeb7f752a`
-- chain-999 `0xcd9599ff0b72d2cc5246b15bc6d6836581920576`

@@ -1,0 +1,18 @@
+{
+  "component": "SimpleIsolationModeUnwrapperTraderV2-5",
+  "main_contract": "SimpleIsolationModeUnwrapperTraderV2",
+  "source_file_count": 37,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe437e70a287a7204125d1d16390071903841d9b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

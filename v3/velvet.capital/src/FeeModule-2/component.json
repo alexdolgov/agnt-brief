@@ -1,0 +1,18 @@
+{
+  "component": "FeeModule-2",
+  "main_contract": "FeeModule",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a090fc08fc2940b47e78106486fa34c7e4e2994",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -134,8 +134,7 @@ contract VariableInterestRate is IRateCalculatorV2 {
         uint256 _utilization,
         uint64 _oldFullUtilizationInterest
     ) external view returns (uint64 _newRatePerSec, uint64 _newFullUtilizationInterest) {
-        // _newFullUtilizationInterest = getFullUtilizationInterest(_deltaTime, _utilization, _oldFullUtilizationInterest);
-        _newFullUtilizationInterest = uint64(MAX_FULL_UTIL_RATE);
+        _newFullUtilizationInterest = getFullUtilizationInterest(_deltaTime, _utilization, _oldFullUtilizationInterest);
 
         // _vertexInterest is calculated as the percentage of the delta between min and max interest
         uint256 _vertexInterest = (((_newFullUtilizationInterest - ZERO_UTIL_RATE) * VERTEX_RATE_PERCENT) / RATE_PREC) +

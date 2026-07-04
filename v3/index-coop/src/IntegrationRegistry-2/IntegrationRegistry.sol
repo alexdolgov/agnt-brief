@@ -1,8 +1,39 @@
-// Dependency file: @openzeppelin/contracts/GSN/Context.sol
+// Sources flattened with hardhat v2.0.7 https://hardhat.org
+// SPDX-License-Identifier: Apache License, Version 2.0
+
+// File contracts/interfaces/IController.sol
+
+/*
+    Copyright 2020 Set Labs Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/
+
+pragma solidity 0.6.10;
+pragma experimental ABIEncoderV2;
+
+interface IController {
+    function addSet(address _setToken) external;
+    function feeRecipient() external view returns(address);
+    function getModuleFee(address _module, uint256 _feeType) external view returns(uint256);
+    function isModule(address _module) external view returns(bool);
+    function isSet(address _setToken) external view returns(bool);
+    function isSystemContract(address _contractAddress) external view returns (bool);
+    function resourceId(uint256 _id) external view returns(address);
+}
 
 
-
-// pragma solidity ^0.6.0;
+// File @openzeppelin/contracts/GSN/Context.sol@v3.3.0
 
 /*
  * @dev Provides information about the current execution context, including the
@@ -25,13 +56,9 @@ abstract contract Context {
     }
 }
 
-// Dependency file: @openzeppelin/contracts/access/Ownable.sol
 
+// File @openzeppelin/contracts/access/Ownable.sol@v3.3.0
 
-
-// pragma solidity ^0.6.0;
-
-// import "../GSN/Context.sol";
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -44,7 +71,7 @@ abstract contract Context {
  * `onlyOwner`, which can be applied to your functions to restrict their use to
  * the owner.
  */
-contract Ownable is Context {
+abstract contract Ownable is Context {
     address private _owner;
 
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
@@ -96,7 +123,8 @@ contract Ownable is Context {
     }
 }
 
-// Dependency file: contracts/interfaces/IController.sol
+
+// File contracts/protocol/IntegrationRegistry.sol
 
 /*
     Copyright 2020 Set Labs Inc.
@@ -113,42 +141,8 @@ contract Ownable is Context {
     See the License for the specific language governing permissions and
     limitations under the License.
 
-
-*/
-// pragma solidity 0.6.10;
-
-interface IController {
-    function addSet(address _setToken) external;
-    function feeRecipient() external view returns(address);
-    function getModuleFee(address _module, uint256 _feeType) external view returns(uint256);
-    function isModule(address _module) external view returns(bool);
-    function isSet(address _setToken) external view returns(bool);
-    function isSystemContract(address _contractAddress) external view returns (bool);
-    function resourceId(uint256 _id) external view returns(address);
-}
-/*
-    Copyright 2020 Set Labs Inc.
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
-
 */
 
-pragma solidity 0.6.10;
-pragma experimental ABIEncoderV2;
-
-// import { IController } from "../interfaces/IController.sol";
-// import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title IntegrationRegistry

@@ -3,8 +3,7 @@
 pragma solidity ^0.8.19;
 
 import { UniformRandomNumber } from "uniform-random-number/UniformRandomNumber.sol";
-import { E, SD59x18, sd, unwrap, convert, ceil } from "prb-math/SD59x18.sol";
-import { UD60x18, convert as convertUD60x18 } from "prb-math/UD60x18.sol";
+import { SD59x18, sd, unwrap, convert } from "prb-math/SD59x18.sol";
 
 /// @title Tier Calculation Library
 /// @author PoolTogether Inc. Team
@@ -20,15 +19,11 @@ library TierCalculationLib {
     uint8 _numberOfTiers,
     uint24 _grandPrizePeriod
   ) internal pure returns (SD59x18) {
-    return sd(1).div(
-      sd(int24(_grandPrizePeriod))
-    ).pow(
-      sd(
-        int8(_tier) - (int8(_numberOfTiers) - 1)
-      ).div(
-        sd((-1 * int8(_numberOfTiers) + 1))
-      )
-    );
+    int8 oneMinusNumTiers = 1 - int8(_numberOfTiers);
+    return
+      sd(1).div(sd(int24(_grandPrizePeriod))).pow(
+        sd(int8(_tier) + oneMinusNumTiers).div(sd(oneMinusNumTiers)).sqrt()
+      );
   }
 
   /// @notice Estimates the number of draws between a tier occurring.
@@ -42,9 +37,7 @@ library TierCalculationLib {
   /// @param _tier The tier to compute for
   /// @return The number of prizes
   function prizeCount(uint8 _tier) internal pure returns (uint256) {
-    uint256 _numberOfPrizes = 4 ** _tier;
-
-    return _numberOfPrizes;
+    return 4 ** _tier;
   }
 
   /// @notice Determines if a user won a prize tier.
@@ -64,19 +57,17 @@ library TierCalculationLib {
     if (_vaultTwabTotalSupply == 0) {
       return false;
     }
-    /*
-      The user-held portion of the total supply is the "winning zone".
-      If the above pseudo-random number falls within the winning zone, the user has won this tier.
-      However, we scale the size of the zone based on:
-        - Odds of the tier occurring
-        - Number of prizes
-        - Portion of prize that was contributed by the vault
-    */
-    // first constrain the random number to be within the vault total supply
-    uint256 constrainedRandomNumber = UniformRandomNumber.uniform(_userSpecificRandomNumber, _vaultTwabTotalSupply);
-    uint256 winningZone = calculateWinningZone(_userTwab, _vaultContributionFraction, _tierOdds);
 
-    return constrainedRandomNumber < winningZone;
+    /// The user-held portion of the total supply is the "winning zone".
+    /// If the above pseudo-random number falls within the winning zone, the user has won this tier.
+    /// However, we scale the size of the zone based on:
+    ///   - Odds of the tier occurring
+    ///   - Number of prizes
+    ///   - Portion of prize that was contributed by the vault
+
+    return
+      UniformRandomNumber.uniform(_userSpecificRandomNumber, _vaultTwabTotalSupply) <
+      calculateWinningZone(_userTwab, _vaultContributionFraction, _tierOdds);
   }
 
   /// @notice Calculates a pseudo-random number that is unique to the user, tier, and winning random number.
@@ -88,14 +79,17 @@ library TierCalculationLib {
   /// @param _winningRandomNumber The winning random number
   /// @return A pseudo-random number
   function calculatePseudoRandomNumber(
-    uint32 _drawId,
+    uint24 _drawId,
     address _vault,
     address _user,
     uint8 _tier,
     uint32 _prizeIndex,
     uint256 _winningRandomNumber
   ) internal pure returns (uint256) {
-    return uint256(keccak256(abi.encode(_drawId, _vault, _user, _tier, _prizeIndex, _winningRandomNumber)));
+    return
+      uint256(
+        keccak256(abi.encode(_drawId, _vault, _user, _tier, _prizeIndex, _winningRandomNumber))
+      );
   }
 
   /// @notice Calculates the winning zone for a user. If their pseudo-random number falls within this zone, they win the tier.
@@ -109,24 +103,15 @@ library TierCalculationLib {
     SD59x18 _tierOdds
   ) internal pure returns (uint256) {
     return
-      uint256(
-        convert(convert(int256(_userTwab)).mul(_tierOdds).mul(_vaultContributionFraction))
-      );
+      uint256(convert(convert(int256(_userTwab)).mul(_tierOdds).mul(_vaultContributionFraction)));
   }
 
   /// @notice Computes the estimated number of prizes per draw for a given tier and tier odds.
   /// @param _tier The tier
   /// @param _odds The odds of the tier occurring for the draw
   /// @return The estimated number of prizes per draw for the given tier and tier odds
-  function tierPrizeCountPerDraw(
-    uint8 _tier,
-    SD59x18 _odds
-  ) internal pure returns (uint32) {
-    return uint32(
-      uint256(
-        unwrap(sd(int256(prizeCount(_tier))).mul(_odds))
-      )
-    );
+  function tierPrizeCountPerDraw(uint8 _tier, SD59x18 _odds) internal pure returns (uint32) {
+    return uint32(uint256(unwrap(sd(int256(prizeCount(_tier))).mul(_odds))));
   }
 
   /// @notice Checks whether a tier is a valid tier

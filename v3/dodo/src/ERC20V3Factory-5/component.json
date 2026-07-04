@@ -1,0 +1,18 @@
+{
+  "component": "ERC20V3Factory-5",
+  "main_contract": "ERC20V3Factory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xc0f9553df63de5a97fe64422c8578d0657c360f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

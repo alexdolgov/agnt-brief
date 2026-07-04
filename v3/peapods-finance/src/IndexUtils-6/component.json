@@ -1,0 +1,26 @@
+{
+  "component": "IndexUtils-6",
+  "main_contract": "IndexUtils",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x9e341711c58ef919fec9448e0dead5c852e3400c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x9e93507942f7e1bf9aaeb9608562957e8aefdbe6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

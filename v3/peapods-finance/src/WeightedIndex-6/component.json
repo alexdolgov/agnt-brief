@@ -1,0 +1,26 @@
+{
+  "component": "WeightedIndex-6",
+  "main_contract": "WeightedIndex",
+  "source_file_count": 38,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2556d7768dabff8d028700a516ef05ae4b0c0200",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf38009a8c1026b95985b171154abc89408e7e625",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

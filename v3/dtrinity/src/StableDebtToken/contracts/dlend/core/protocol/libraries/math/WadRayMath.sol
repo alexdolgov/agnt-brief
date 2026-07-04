@@ -45,7 +45,9 @@ library WadRayMath {
     function wadMul(uint256 a, uint256 b) internal pure returns (uint256 c) {
         // to avoid overflow, a <= (type(uint256).max - HALF_WAD) / b
         assembly {
-            if iszero(or(iszero(b), iszero(gt(a, div(sub(not(0), HALF_WAD), b))))) {
+            if iszero(
+                or(iszero(b), iszero(gt(a, div(sub(not(0), HALF_WAD), b))))
+            ) {
                 revert(0, 0)
             }
 
@@ -63,7 +65,10 @@ library WadRayMath {
     function wadDiv(uint256 a, uint256 b) internal pure returns (uint256 c) {
         // to avoid overflow, a <= (type(uint256).max - halfB) / WAD
         assembly {
-            if or(iszero(b), iszero(iszero(gt(a, div(sub(not(0), div(b, 2)), WAD))))) {
+            if or(
+                iszero(b),
+                iszero(iszero(gt(a, div(sub(not(0), div(b, 2)), WAD))))
+            ) {
                 revert(0, 0)
             }
 
@@ -81,7 +86,9 @@ library WadRayMath {
     function rayMul(uint256 a, uint256 b) internal pure returns (uint256 c) {
         // to avoid overflow, a <= (type(uint256).max - HALF_RAY) / b
         assembly {
-            if iszero(or(iszero(b), iszero(gt(a, div(sub(not(0), HALF_RAY), b))))) {
+            if iszero(
+                or(iszero(b), iszero(gt(a, div(sub(not(0), HALF_RAY), b))))
+            ) {
                 revert(0, 0)
             }
 
@@ -99,7 +106,10 @@ library WadRayMath {
     function rayDiv(uint256 a, uint256 b) internal pure returns (uint256 c) {
         // to avoid overflow, a <= (type(uint256).max - halfB) / RAY
         assembly {
-            if or(iszero(b), iszero(iszero(gt(a, div(sub(not(0), div(b, 2)), RAY))))) {
+            if or(
+                iszero(b),
+                iszero(iszero(gt(a, div(sub(not(0), div(b, 2)), RAY))))
+            ) {
                 revert(0, 0)
             }
 

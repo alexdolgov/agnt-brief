@@ -2,13 +2,21 @@
   "component": "BimaToken",
   "main_contract": "BimaToken",
   "source_file_count": 43,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x49ce2eabdeaf65864a9d6542b2de9d384dfaef15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x49ce2eabdeaf65864a9d6542b2de9d384dfaef15",
       "is_proxy": false,
       "implementation_address": null,

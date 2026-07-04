@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.19;
+pragma solidity 0.8.9;
 
 import "@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -49,38 +49,29 @@ interface IAuth is IAccessControlUpgradeable {
     /// Emitted when `unfreezeAt` is changed
     /// @param oldVal The old value of `unfreezeAt`
     /// @param newVal The new value of `unfreezeAt`
-    event UnfreezeAtSet(uint48 oldVal, uint48 newVal);
+    event UnfreezeAtSet(uint48 indexed oldVal, uint48 indexed newVal);
 
     /// Emitted when the short freeze duration governance param is changed
     /// @param oldDuration The old short freeze duration
     /// @param newDuration The new short freeze duration
-    event ShortFreezeDurationSet(uint48 oldDuration, uint48 newDuration);
+    event ShortFreezeDurationSet(uint48 indexed oldDuration, uint48 indexed newDuration);
 
     /// Emitted when the long freeze duration governance param is changed
     /// @param oldDuration The old long freeze duration
     /// @param newDuration The new long freeze duration
-    event LongFreezeDurationSet(uint48 oldDuration, uint48 newDuration);
+    event LongFreezeDurationSet(uint48 indexed oldDuration, uint48 indexed newDuration);
 
-    /// Emitted when the system is paused or unpaused for trading
-    /// @param oldVal The old value of `tradingPaused`
-    /// @param newVal The new value of `tradingPaused`
-    event TradingPausedSet(bool oldVal, bool newVal);
-
-    /// Emitted when the system is paused or unpaused for issuance
-    /// @param oldVal The old value of `issuancePaused`
-    /// @param newVal The new value of `issuancePaused`
-    event IssuancePausedSet(bool oldVal, bool newVal);
+    /// Emitted when the system is paused or unpaused
+    /// @param oldVal The old value of `paused`
+    /// @param newVal The new value of `paused`
+    event PausedSet(bool indexed oldVal, bool indexed newVal);
 
     /**
-     * Trading Paused: Disable everything except for OWNER actions, RToken.issue, RToken.redeem,
-     * StRSR.stake, and StRSR.payoutRewards
-     * Issuance Paused: Disable RToken.issue
-     * Frozen: Disable everything except for OWNER actions + StRSR.stake (for governance)
+     * Paused: Disable everything except for OWNER actions and RToken.redeem/cancel
+     * Frozen: Disable everything except for OWNER actions
      */
 
-    function tradingPausedOrFrozen() external view returns (bool);
-
-    function issuancePausedOrFrozen() external view returns (bool);
+    function pausedOrFrozen() external view returns (bool);
 
     function frozen() external view returns (bool);
 
@@ -102,13 +93,9 @@ interface IAuth is IAccessControlUpgradeable {
     // onlyRole(OWNER)
     function unfreeze() external;
 
-    function pauseTrading() external;
+    function pause() external;
 
-    function unpauseTrading() external;
-
-    function pauseIssuance() external;
-
-    function unpauseIssuance() external;
+    function unpause() external;
 }
 
 interface IComponentRegistry {
@@ -118,39 +105,39 @@ interface IComponentRegistry {
 
     function rToken() external view returns (IRToken);
 
-    event StRSRSet(IStRSR oldVal, IStRSR newVal);
+    event StRSRSet(IStRSR indexed oldVal, IStRSR indexed newVal);
 
     function stRSR() external view returns (IStRSR);
 
-    event AssetRegistrySet(IAssetRegistry oldVal, IAssetRegistry newVal);
+    event AssetRegistrySet(IAssetRegistry indexed oldVal, IAssetRegistry indexed newVal);
 
     function assetRegistry() external view returns (IAssetRegistry);
 
-    event BasketHandlerSet(IBasketHandler oldVal, IBasketHandler newVal);
+    event BasketHandlerSet(IBasketHandler indexed oldVal, IBasketHandler indexed newVal);
 
     function basketHandler() external view returns (IBasketHandler);
 
-    event BackingManagerSet(IBackingManager oldVal, IBackingManager newVal);
+    event BackingManagerSet(IBackingManager indexed oldVal, IBackingManager indexed newVal);
 
     function backingManager() external view returns (IBackingManager);
 
-    event DistributorSet(IDistributor oldVal, IDistributor newVal);
+    event DistributorSet(IDistributor indexed oldVal, IDistributor indexed newVal);
 
     function distributor() external view returns (IDistributor);
 
-    event RSRTraderSet(IRevenueTrader oldVal, IRevenueTrader newVal);
+    event RSRTraderSet(IRevenueTrader indexed oldVal, IRevenueTrader indexed newVal);
 
     function rsrTrader() external view returns (IRevenueTrader);
 
-    event RTokenTraderSet(IRevenueTrader oldVal, IRevenueTrader newVal);
+    event RTokenTraderSet(IRevenueTrader indexed oldVal, IRevenueTrader indexed newVal);
 
     function rTokenTrader() external view returns (IRevenueTrader);
 
-    event FurnaceSet(IFurnace oldVal, IFurnace newVal);
+    event FurnaceSet(IFurnace indexed oldVal, IFurnace indexed newVal);
 
     function furnace() external view returns (IFurnace);
 
-    event BrokerSet(IBroker oldVal, IBroker newVal);
+    event BrokerSet(IBroker indexed oldVal, IBroker indexed newVal);
 
     function broker() external view returns (IBroker);
 }
@@ -189,7 +176,5 @@ interface TestIMain is IMain {
 
     function longFreezes(address account) external view returns (uint256);
 
-    function tradingPaused() external view returns (bool);
-
-    function issuancePaused() external view returns (bool);
+    function paused() external view returns (bool);
 }

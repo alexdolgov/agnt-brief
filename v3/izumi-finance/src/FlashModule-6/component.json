@@ -1,0 +1,18 @@
+{
+  "component": "FlashModule-6",
+  "main_contract": "FlashModule",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x79d175ef5fbe31b5d84b3ee359fcbbb466153e39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

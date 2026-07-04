@@ -2,10 +2,18 @@
   "component": "NonTransferrableRebasingTokenVault",
   "main_contract": "NonTransferrableRebasingTokenVault",
   "source_file_count": 114,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc157c6055085249b0128d4f03177ca3a6e30d808",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

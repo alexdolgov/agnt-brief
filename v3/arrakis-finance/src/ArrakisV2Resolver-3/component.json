@@ -1,0 +1,26 @@
+{
+  "component": "ArrakisV2Resolver-3",
+  "main_contract": "ArrakisV2Resolver",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x535c5fdf31477f799366df6e4899a12a801cc7b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x535c5fdf31477f799366df6e4899a12a801cc7b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

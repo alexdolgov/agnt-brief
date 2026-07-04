@@ -555,11 +555,7 @@ contract Copump is ICopump, Ownable2Step {
         (address token0, address token1) = (wethAddress < listedAddress) ?
             (wethAddress, listedAddress) :
             (listedAddress, wethAddress);
-        IUniswapV2Factory factory = IUniswapV2Factory(factoryAddress);
-        address poolAddress = factory.getPair(token0, token1);
-        if (poolAddress == address(0)) {
-            poolAddress = factory.createPair(token0, token1);
-        }
+        address poolAddress = IUniswapV2Factory(factoryAddress).createPair(token0, token1);
         emit TokenListed(
             address(token),
             poolAddress,

@@ -2,7 +2,7 @@
   "component": "SiloHookV3",
   "main_contract": "SiloHookV3",
   "source_file_count": 71,
-  "deployment_count": 6,
+  "deployment_count": 9,
   "audited": true,
   "audits_covering": [
     "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v2/Silo%20-%20Defaulting%20Liquidations%20-%20Final%20Report%20.pdf",
@@ -10,6 +10,30 @@
     "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x889be50f7ef7e0d88c2023c509f4e02d378dbdf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8c3024280bf126db4bdba2b5de5b22cccb26db98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xde67a8bbd0b3118b21ede247588444af374450cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

@@ -1,0 +1,18 @@
+{
+  "component": "CompounderUniswapV3-2",
+  "main_contract": "CompounderUniswapV3",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PolicyRegistry-3",
+  "main_contract": "PolicyRegistry",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x15e5964c7751df8563ea4bc000301582c79bc454",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

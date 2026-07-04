@@ -1,0 +1,20 @@
+{
+  "component": "TransparentUpgradeableProxy-27",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2F5r1RtgYBP522L4FGQ3lx%2FEquilibria_Audit_Report_by_WatchPug.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x22fc5a29bd3d6cce19a06f844019fd506fce4455",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

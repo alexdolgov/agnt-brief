@@ -1,0 +1,18 @@
+{
+  "component": "FlashSwapRouterV3-2",
+  "main_contract": "FlashSwapRouterV3",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f2217f0e67af3a6571cf4356dd8f6aeb6c60024",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

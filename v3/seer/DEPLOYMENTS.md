@@ -1,6 +1,6 @@
 # seer — deployments
 
-209 verified deployment(s) across 70 component(s).
+223 verified deployment(s) across 78 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,30 +8,40 @@
 | ethereum | `0x0956b70ac0eca45db9661a1cee96b2e7062d8a1c` | FutarchyProposal-2 | impl | live | no |
 | ethereum | `0x12bb49deb8f293435e27f6f4ab140184604ce346` | RealitioArbitratorProxy | impl | inactive | no |
 | ethereum | `0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
+| ethereum | `0x1f728c2fd6a3008935c1446a965a313e657b7904` | MarketFactory-2 | impl | live | no |
 | ethereum | `0x1f98431c8ad98523631ae4a59f267346ea31f984` | UniswapV3Pool | impl | live | no |
+| ethereum | `0x3124e97ebf4c9592a17d40e54623953ff3c77a73` | MarketFactory-2 | impl | live | no |
+| ethereum | `0x336695ec9efbafd6322fb82eaadbcda02e38f348` | MarketFactory-2 | impl | live | no |
 | ethereum | `0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b` | LMSRMarketMakerFactory | impl | inactive | no |
 | ethereum | `0x3af2ae62f0d3353c9f15b7fe678ccdaf2b2157c9` | Whitelist | impl | inactive | no |
 | ethereum | `0x42b24a95702b9986e82d421cc3568932790a48ec` | NFTDescriptor | impl | inactive | no |
+| ethereum | `0x44921b4c7510fb306d8e58cf3894fa2bc8a79f00` | MarketView-2 | impl | live | no |
 | ethereum | `0x5250b9241d0c63a2b60afb7f2b24b12d94d8ae7d` | Whitelist | impl | inactive | no |
 | ethereum | `0x61ffe014ba17989e743c5f6cb21bf9697530b21e` | QuoterV2 | impl | inactive | no |
 | ethereum | `0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45` | ApproveAndCall | proxy | inactive | no |
 | ethereum | `0x75a6d6251511af081f77f2b531c14808fb3805f3` | Fixed192x64Math | impl | inactive | no |
 | ethereum | `0x886ef0a78fabbae942f1da1791a8ed02a5af8bc6` | MainnetRouter | impl | live | no |
+| ethereum | `0x8bdc504dc3a05310059c1c67e0a2667309d27b93` | Market | impl | live | no |
 | ethereum | `0x91ae842a5ffd8d12023116943e72a606179294f3` | NonfungibleTokenPositionDescriptor-2 | impl | inactive | no |
 | ethereum | `0xa5644e29708357803b5a882d272c41cc0df92b34` | SelfPermit | proxy | inactive | no |
 | ethereum | `0xa638f22cdd13013494971b0e1325718aa45280dc` | FutarchyProposal | impl | live | no |
+| ethereum | `0xab797c4c6022a401c31543e316d3cd04c67a87fc` | MarketView-3 | impl | live | no |
+| ethereum | `0xac9bf8eba6bd31f8e8c76f8e8b2aad0bd93f98dc` | FutarchyRouter-2 | impl | live | no |
 | ethereum | `0xb1e1ae60607f24a6647d0339050cb69c312f43ee` | Enum | impl | inactive | no |
 | ethereum | `0xb27308f9f90d607463bb33ea1bebb41c27ce5ab6` | Quoter | impl | inactive | no |
+| ethereum | `0xb2ab74afe47e6f9d8c392fa15b139ac02684771a` | MarketView-4 | impl | live | no |
 | ethereum | `0xb753548f6e010e7e680ba186f9ca1bdab2e90cf2` | ProxyAdmin | impl | inactive | no |
 | ethereum | `0xb8be713fee0b3f437be4793a23f96fec7eae4316` | RewardClaimHandler | impl | inactive | no |
 | ethereum | `0xba22d73c079ceb97db93f2effb1f1054fe1cfcd6` | DutchXCompleteModule | impl | inactive | no |
 | ethereum | `0xbfd8137f7d1516d3ea5ca83523914859ec47f573` | NonfungiblePositionManager | impl | inactive | no |
 | ethereum | `0xc59b0e4de5f1248c1140964e0ff287b192407e0c` | ConditionalTokens | impl | live | no |
+| ethereum | `0xc72f738e331b6b7a5d77661277074bb60ca0ca9e` | Market | impl | live | no |
 | ethereum | `0xd194319d1804c1051dd21ba1dc931ca72410b79f` | Wrapped1155Factory | impl | live | no |
 | ethereum | `0xe3ebeb3a6a535131f2861f866d98d555580aa84d` | DutchXSellerModule | impl | inactive | no |
 | ethereum | `0xe592427a0aece92de3edee1f18e0157c05861564` | SwapRouter | proxy | inactive | no |
 | ethereum | `0xee6a57ec80ea46401049e92587e52f5ec1c24785` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0xf5ccbf74121edba492725f325d55356d517723b9` | RealitioForeignArbitrationProxyWithAppeals | impl | inactive | no |
+| ethereum | `0xf9369c0f7a84cac3b7ef78c837cf7313309d3678` | FutarchyFactory-2 | impl | live | no |
 | ethereum | `0xfe8bf5140f00de6f75bafa3ca0f4ebf2084a46b2` | MainnetRouter | impl | live | no |
 | ethereum | `0xff2e231b3d6260937edc698da5f77b6d3d377370` | Disbursement | impl | inactive | no |
 | gnosis | `0x023b8c515aca703a23627a2bcdaa9c116d08866e` | NonfungibleTokenPositionDescriptor | impl | inactive | no |
@@ -164,6 +174,7 @@
 | gnosis | `0xb5786fa17cc3e262d855240a074978c133438e7b` | FutarchyProposal | impl | live | no |
 | gnosis | `0xb5a01f794418e51c5872861759470b3be622f1d9` | SlateFactory | impl | live | no |
 | gnosis | `0xbb85caa9a52af56239e57b2392dd3df513dfdf8d` | MarketView | impl | live | no |
+| gnosis | `0xbba6c5de2685150189b1393df6329af4df05be7d` | FutarchyProposal-3 | impl | live | no |
 | gnosis | `0xbbf8f7e40a9234d965f59802c1b3720b21bcc32e` | Market | impl | live | no |
 | gnosis | `0xbc9a9424cdb3644e80bad621b7a5736aed174d66` | Seer_LP_Point | impl | inactive | no |
 | gnosis | `0xc1b576ac6ec749d5ace1787bf9ec6340908ddb47` | AlgebraPoolDeployer | impl | inactive | no |
@@ -174,10 +185,12 @@
 | gnosis | `0xc73323208740452d3856c7ff65fa527af2b1131c` | MarketFactory | impl | live | no |
 | gnosis | `0xca6dbafb77666a0a96983a904a28cdb8f70340a3` | SportsSlateFactory | impl | inactive | no |
 | gnosis | `0xcbad9fdf0d2814659eb26f600efdeaf005eda0f7` | Quoter-2 | impl | inactive | no |
+| gnosis | `0xceafdd6bc0bef976fdcd1112955828e00543c0ce` | ConditionalTokens-2 | impl | live | no |
 | gnosis | `0xceeb6a9013699199aacd44ab87c4d6abcf583183` | GovernedRecipient | impl | inactive | no |
 | gnosis | `0xd0ee785c434eb42e1d439e4fd75334a4c66d6c40` | WrappedERC20Factory | impl | live | no |
 | gnosis | `0xd1220eed2a71bf5415b7c1a925ba6c1884821948` | MarketFactory | impl | live | no |
 | gnosis | `0xd1f885c2d368a2700c8edf74d23f34d5ef36414a` | MarketView | impl | live | no |
+| gnosis | `0xd342be91a711e70736c4f0880af3438b835eab66` | FutarchyProposal | impl | live | no |
 | gnosis | `0xd34b071ee9aa581cc4fb6bdb854b47340be849e2` | MarketView | impl | live | no |
 | gnosis | `0xd45d4b7736bb7158aac2fc12bc3997c5e95d35e7` | MarketView | impl | live | no |
 | gnosis | `0xda834fe8ecd5f56c03429a7ff2adf541f99d9dbf` | MarketView | impl | live | no |
@@ -193,6 +206,7 @@
 | gnosis | `0xe820d073f8885f4a24328ba9fbb8a745114bb647` | Market | impl | live | no |
 | gnosis | `0xe94d6564ec3c4918cf4401fd7ac444c5c4837389` | GnosisRouter | impl | live | no |
 | gnosis | `0xeb021407f8b7fbae4feb90f1dac5aa0b2fc20e6d` | MarketFactory | impl | live | no |
+| gnosis | `0xec4fb999db0e8ca28011d85ead177810055b484c` | FutarchyProposal | impl | live | no |
 | gnosis | `0xec9048b59b3467415b1a38f63416407ea0c70fb8` | Market-3 | impl | live | no |
 | gnosis | `0xecfbc2272c85dee97d7816cb25a4ffb80230942f` | FutarchyFactory | impl | live | no |
 | gnosis | `0xedd48e43ebd4e2b31238a5cba8fd548fc051acaf` | SeerCredits | impl | live | no |
@@ -213,21 +227,3 @@
 | gnosis | `0xfe8bf5140f00de6f75bafa3ca0f4ebf2084a46b2` | GnosisRouter | impl | inactive | no |
 | gnosis | `0xfeb801b97b10625fabee2a7839cddb6e37c9768b` | CreditsManager | impl | live | no |
 | gnosis | `0xffb643e73f280b97809a8b41f7232ab401a04ee1` | SwapRouter-2 | impl | inactive | no |
-
-## Source unavailable (14)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x1f728c2fd6a3008935c1446a965a313e657b7904`
-- ethereum `0x3124e97ebf4c9592a17d40e54623953ff3c77a73`
-- ethereum `0x336695ec9efbafd6322fb82eaadbcda02e38f348`
-- ethereum `0x44921b4c7510fb306d8e58cf3894fa2bc8a79f00`
-- ethereum `0x8bdc504dc3a05310059c1c67e0a2667309d27b93`
-- ethereum `0xab797c4c6022a401c31543e316d3cd04c67a87fc`
-- ethereum `0xac9bf8eba6bd31f8e8c76f8e8b2aad0bd93f98dc`
-- ethereum `0xb2ab74afe47e6f9d8c392fa15b139ac02684771a`
-- ethereum `0xc72f738e331b6b7a5d77661277074bb60ca0ca9e`
-- ethereum `0xf9369c0f7a84cac3b7ef78c837cf7313309d3678`
-- gnosis `0xbba6c5de2685150189b1393df6329af4df05be7d`
-- gnosis `0xceafdd6bc0bef976fdcd1112955828e00543c0ce`
-- gnosis `0xd342be91a711e70736c4f0880af3438b835eab66`
-- gnosis `0xec4fb999db0e8ca28011d85ead177810055b484c`

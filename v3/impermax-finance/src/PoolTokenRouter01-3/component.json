@@ -1,0 +1,18 @@
+{
+  "component": "PoolTokenRouter01-3",
+  "main_contract": "PoolTokenRouter01",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x544dac9eb8f2d0bfeb9637180f7a751be1690cd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

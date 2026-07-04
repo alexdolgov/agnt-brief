@@ -1,0 +1,18 @@
+{
+  "component": "Expiry-8",
+  "main_contract": "Expiry",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xee34b48a6fc757386763409183bbab704a0b22e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # yield-protocol — deployments
 
-387 verified deployment(s) across 234 component(s).
+423 verified deployment(s) across 254 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,18 +8,20 @@
 | arbitrum | `0x035072cb2912daab7b578f468bd6f0d32a269e32` | FYToken | impl | live | no |
 | arbitrum | `0x067fb37dd51a4ef6fea0e006caf689db6c705812` | Strategy | impl | live | no |
 | arbitrum | `0x06aaf385809c7bc00698f1e266ed4c78d6b8ba75` | TetherJoin | impl | inactive | no |
-| arbitrum | `0x07c2c74811cb14a5003c3ccff7ec436d504fffb6` | Witch | impl | inactive | no |
-| arbitrum | `0x08173d0885b00bdd640aae57d05abb74cd00d669` | Witch | impl | inactive | no |
+| arbitrum | `0x07c2c74811cb14a5003c3ccff7ec436d504fffb6` | Witch-2 | impl | inactive | no |
+| arbitrum | `0x08173d0885b00bdd640aae57d05abb74cd00d669` | Witch-2 | impl | inactive | no |
 | arbitrum | `0x0a4b2e37bfef8e54dea997a87749a403353134e8` | Strategy | impl | live | no |
 | arbitrum | `0x0ad9ef93673b6081c0c3b753ccaabddd8d2e7848` | AccumulatorMultiOracle | impl | inactive | no |
 | arbitrum | `0x0e7727f4ee78d60f1d3aa30744b3ab6610f04170` | FYToken | impl | live | no |
 | arbitrum | `0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a` | FiatTokenV2_1-3 | impl | live | no |
 | arbitrum | `0x0fa29eeb169cde6c779326d7b16c54529eca1dd5` | Pool | impl | live | no |
+| arbitrum | `0x1229c71482e458fa2cd51d13eb157bd2b5d5d1ee` | Join-2 | impl | inactive | no |
 | arbitrum | `0x13ab946c6a9645edff2a33880e0fc37f67122170` | Pool | impl | live | no |
-| arbitrum | `0x16e25cf364cecc305590128335b8f327975d0560` | Ladle | proxy | live | yes |
+| arbitrum | `0x16e25cf364cecc305590128335b8f327975d0560` | Ladle-3 | proxy | live | yes |
 | arbitrum | `0x1cd29a42882c163bad7a7c0124c3195a0584c518` | PoolNonTv | impl | live | no |
 | arbitrum | `0x1dc344513b290f217074b86188c13aad9c9aa571` | PoolNonTv | impl | live | no |
 | arbitrum | `0x1eec5ed8e01e0232f5ab2d70bb00231250ab2e7a` | PoolNonTv | impl | live | no |
+| arbitrum | `0x23cc87fbebdd67cce167fa9ec6ad3b7fe3892e30` | Cauldron-2 | impl | inactive | no |
 | arbitrum | `0x2769abe33010c710e24ea6af8a2683c630bbd7d0` | PoolNonTv | impl | live | no |
 | arbitrum | `0x29e0de79ef2ea2cf8e6c95c9fae8d4c3774df3f7` | PoolNonTv | impl | live | no |
 | arbitrum | `0x2c918c4db3843f715556c65646f9e4a04c4bfba6` | Strategy | impl | live | no |
@@ -32,13 +34,13 @@
 | arbitrum | `0x3b4ffd93ce5fcf97e61aa8275ec241c76cc01a47` | Strategy | impl | live | no |
 | arbitrum | `0x3b560caa508ca8e58f07263f58ee2353044c0d5c` | FYToken | impl | live | no |
 | arbitrum | `0x3e0a639c4a6d4d39a0deae07c228ff080de55eee` | PoolNonTv | impl | live | no |
-| arbitrum | `0x3e9d89a883c00608d932f92bbd8bd948bf1a9cf6` | PoolView | impl | live | no |
+| arbitrum | `0x3e9d89a883c00608d932f92bbd8bd948bf1a9cf6` | PoolView-2 | impl | live | no |
 | arbitrum | `0x3ea4618ce652eab330f00935fd075f5cb614e689` | PoolNonTv | impl | live | no |
 | arbitrum | `0x4276beaa49de905eed06fcdc0ad438a19d3861dd` | Strategy | impl | live | no |
 | arbitrum | `0x4771522accac6fecf89a6365ceaf05667ed95886` | Strategy | impl | live | no |
 | arbitrum | `0x4cd01ed221d6d198e2656c16c32803bf78134568` | WrapEtherModule | impl | inactive | no |
-| arbitrum | `0x4f9b5e639447456ddc784bc441f5a6fd7ce80729` | FYToken-3 | impl | live | yes |
-| arbitrum | `0x511707b1311d6c3319e7a5be6edb12d3777be0da` | YieldMath | impl | live | no |
+| arbitrum | `0x4f9b5e639447456ddc784bc441f5a6fd7ce80729` | FYToken-2 | impl | live | yes |
+| arbitrum | `0x511707b1311d6c3319e7a5be6edb12d3777be0da` | YieldMath-3 | impl | live | no |
 | arbitrum | `0x523803c57a497c3ad0e850766c8276d4864edea5` | FYToken | impl | live | no |
 | arbitrum | `0x530648558a27fe1d1bfc7356f67a34f4a7f06b6d` | PoolNonTv | impl | live | no |
 | arbitrum | `0x536edc2a3db3bfe558cae74cedccd30f07f7121b` | PoolNonTv | impl | live | no |
@@ -57,6 +59,7 @@
 | arbitrum | `0x60a6a7fabe11ff36cbe917a17666848f0ff3a60a` | FYToken | impl | live | no |
 | arbitrum | `0x65142d171151d0a6f28385c45ce3fd642c9d155a` | PoolNonTv | impl | live | no |
 | arbitrum | `0x6651f8e1ff6863eb366a319f9a94191346d0e323` | Pool | impl | live | no |
+| arbitrum | `0x667f185407c4cab52aeb681f0006e4642d8091df` | EmergencyBrake-2 | impl | inactive | no |
 | arbitrum | `0x68e9e0d89f96f40a98d3f42dc22430abbf662a1a` | FYToken | impl | live | no |
 | arbitrum | `0x69f402e82d549674cfaffb7d1227164596e37618` | FYToken | impl | live | no |
 | arbitrum | `0x6ef79df8ebd6e7ce4f24773a59fd3f54d79857f3` | FYToken | impl | live | no |
@@ -67,6 +70,7 @@
 | arbitrum | `0x7f0dd461d77f84cdd3ced46f9d550e35f1969a24` | PoolNonTv | impl | live | no |
 | arbitrum | `0x7fc2c417021d46a4790463030fb01a948d54fc04` | Pool | impl | live | no |
 | arbitrum | `0x83e99a843607cfffc97a3aca15422ac672a463ef` | PoolNonTv | impl | live | no |
+| arbitrum | `0x84066caea6186a02ed74ebf32bf008a47cbe26ad` | EmergencyBrake-3 | impl | inactive | no |
 | arbitrum | `0x861509a3fa7d87faa0154aae2cb6c1f92639339a` | Strategy | impl | live | no |
 | arbitrum | `0x892fa63af42585bbe8a578278c95705391ca15e1` | FYToken | impl | live | no |
 | arbitrum | `0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36` | MasterMinter-6 | impl | inactive | no |
@@ -80,6 +84,7 @@
 | arbitrum | `0x9a364e874258d6b76091d928ce69512cd905ee68` | PoolNonTv | impl | live | no |
 | arbitrum | `0x9b19889794a30056a1e5be118ee0a6647b184c5f` | FYToken | impl | live | no |
 | arbitrum | `0x9ca40b35c3a8a717d4d54fac0905bbf889ddb281` | FYToken | impl | live | no |
+| arbitrum | `0x9ca4d6fbe0ba91d553e74805d2e2545b04abefea` | EmergencyBrake-2 | impl | inactive | no |
 | arbitrum | `0x9f873e17a629718b71e8e8f4e40f795883841efb` | PoolNonTv | impl | live | no |
 | arbitrum | `0xa3ecaf5c5e98c1a500f4596576dad3328a701c73` | FYToken | impl | live | no |
 | arbitrum | `0xa6624d8cf4a1ba950d380d1e38a2d5261b711145` | Strategy | impl | live | no |
@@ -91,20 +96,23 @@
 | arbitrum | `0xa9d104c4e020087944332632a8c5b451885fba4a` | Strategy | impl | live | no |
 | arbitrum | `0xad1983745d6c739537feab5bed45795f47a940b3` | Strategy | impl | live | no |
 | arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy-3 | proxy | live | no |
+| arbitrum | `0xaf93a04d5d8d85f69af65ed66a9717db0796fb10` | Join-2 | impl | inactive | no |
 | arbitrum | `0xb268e2c85861b74ec75fe728ae40d9a2308ad9bb` | PoolNonTv | impl | live | no |
 | arbitrum | `0xb71db5f70fe5af728db8c05930d48553e5a0eb98` | PoolNonTv | impl | live | no |
 | arbitrum | `0xbc62d88182ffa86918d0129f5bd35dea8df9213a` | PoolNonTv | impl | live | no |
+| arbitrum | `0xbd6bee8d3b9d1ee6b8105bed11a61fdcae4bff8b` | SafeERC20Namer-2 | impl | live | no |
 | arbitrum | `0xbd7a1069f56b1d4100202f72119e5cffb4bdfe38` | Strategy | impl | live | no |
 | arbitrum | `0xbfcee2057bda64152becb8015a171967bfe5d8f9` | PoolNonTv | impl | live | no |
 | arbitrum | `0xc24da474a71c44d2b644089020ba255908ada6e1` | FYToken | impl | live | no |
+| arbitrum | `0xc31cce4ffa203d8f8d865b6cfaa4f36ad77e9810` | Join-2 | impl | inactive | no |
 | arbitrum | `0xc3a965beaf6e16ac98341232be2be016c0c61974` | Strategy | impl | live | no |
-| arbitrum | `0xc445d7e3cdc96840439560675ca9023204ea9acd` | YieldMathExtensions | impl | live | no |
+| arbitrum | `0xc445d7e3cdc96840439560675ca9023204ea9acd` | YieldMathExtensions-2 | impl | live | no |
 | arbitrum | `0xc4b24ec9fb2dc32b3a545e0d873d2598031b80c5` | FYToken | impl | live | no |
 | arbitrum | `0xc54734f39c20526c6a85fc4bf636174c9f9272b9` | Unwind | impl | inactive | no |
 | arbitrum | `0xc6078e090641cc32b05a7f3f102f272a4ee19867` | PoolNonTv | impl | live | no |
 | arbitrum | `0xc7d2e96ca94e1870605c286268313785886d2257` | Strategy | impl | live | no |
 | arbitrum | `0xca9d3b5de1550c79155b1311ef54ebc73954d470` | FYToken | impl | live | no |
-| arbitrum | `0xcb60bd598bf48be1e24262e8bf1e3703feca3470` | FlashJoin | impl | inactive | no |
+| arbitrum | `0xcb60bd598bf48be1e24262e8bf1e3703feca3470` | FlashJoin-2 | impl | inactive | no |
 | arbitrum | `0xcbb7eba13f9e1d97b2138f588f5ca2f5167f06cc` | FYToken | impl | live | no |
 | arbitrum | `0xceaf1cbf0cfdd1f7ea4c1c850c0bc032a60431db` | Strategy | impl | live | no |
 | arbitrum | `0xcf275fdd705b321789cd046694cebbf678c45fa3` | PoolNonTv | impl | live | no |
@@ -163,6 +171,7 @@
 | ethereum | `0x0e98db51010dd1ade14dd3fb164e218805fdba1b` | TetherToken | impl | inactive | no |
 | ethereum | `0x0eda20f7499aae7bdadc4e52fd72e49663733ed4` | TopFab | impl | inactive | no |
 | ethereum | `0x0fbbc6a4e951b00b1ac170325763bd4d5149a77f` | FiatTokenV1 | impl | live | no |
+| ethereum | `0x1144e14e9b0aa9e181342c7e6e0a9badb4ced295` | Strategy-2 | impl | live | no |
 | ethereum | `0x137b7b51e4bc0574ca529af77f01c2289951700b` | TokenVesting-3 | impl | inactive | no |
 | ethereum | `0x140dca39e274397acaf3fd955af31400091a1c49` | SupporterVester-3 | impl | inactive | no |
 | ethereum | `0x141a206ece672e3198086c5d21f7858ad03669ea` | MomFab | impl | inactive | no |
@@ -197,6 +206,7 @@
 | ethereum | `0x354f861227fc9b7abf55389e0038163047d9ba87` | TetherToken-2 | impl | inactive | no |
 | ethereum | `0x35d753a30a750c0291cd86baedef7d27d55879f9` | CrabOracle | impl | inactive | no |
 | ethereum | `0x3721a8e6239a8d0489a13725265dd02657ed3b57` | TetherToken-3 | impl | inactive | no |
+| ethereum | `0x3771c99c087a81df4633b50d8b149afaa83e3c9e` | Pool-2 | impl | live | yes |
 | ethereum | `0x38ce5e45d0f5d03e83863bb19b3b1a272c186f48` | TimelockController | impl | live | no |
 | ethereum | `0x392113ca9a6c8955a1445fe0a163f1e976cbbf17` | RevokableVester-3 | impl | inactive | no |
 | ethereum | `0x39bb9cbe0221d769e30bd08d185842065bce1706` | SafeERC20Namer | impl | live | no |
@@ -205,6 +215,7 @@
 | ethereum | `0x3d80583c830af6f2a2628318bee3720ce5421bc4` | YieldStEthLever | impl | inactive | no |
 | ethereum | `0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a` | DaoModule | impl | inactive | no |
 | ethereum | `0x3ea4618ce652eab330f00935fd075f5cb614e689` | StrategyOracle | impl | inactive | no |
+| ethereum | `0x407353d527053f3a6140aaa7819b93af03114227` | Pool-2 | impl | live | yes |
 | ethereum | `0x40ad51ad1713a8275793f9ce81e5e4390a2ecc64` | MasterMinter-2 | impl | inactive | no |
 | ethereum | `0x414b1da0bb6e948dc0559d14ebde9fa9572499bf` | VoxFab | impl | inactive | no |
 | ethereum | `0x431e935209d79706b5866eb42137a3491d845692` | GemFab | impl | inactive | no |
@@ -222,6 +233,9 @@
 | ethereum | `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x521c420c2a2b461034becbb41d4888b68951f14f` | TapFab | impl | inactive | no |
 | ethereum | `0x52e860327bcc464014259a7cd16daa5763d7dc99` | Cvx3CrvOracle | impl | inactive | no |
+| ethereum | `0x532759c8d84172a6c9974905820c5a3191032d35` | Witch-3 | impl | inactive | no |
+| ethereum | `0x53c2a1ba37ff3cdaccb3ea030db3de39358e5593` | FYToken-2 | impl | live | yes |
+| ethereum | `0x53c3760670f6091e1ec76b4dd27f73ba4cad5061` | Witch | impl | inactive | no |
 | ethereum | `0x540df7c6e0f04513338b7cbb83460653971cc737` | RevokableVester-8 | impl | inactive | no |
 | ethereum | `0x542ba659e226251dcc9d66604c8ecfa50425bcbe` | RevokableVester-9 | impl | inactive | no |
 | ethereum | `0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | YoRegistry | impl | inactive | no |
@@ -239,6 +253,7 @@
 | ethereum | `0x5bb78e530d9365aef75664c5093e40b0001f7ccd` | Join | impl | inactive | no |
 | ethereum | `0x5bdc9b09ffe1b149f7ab7866743bfe00b419cdc1` | TokenVesting-10 | impl | inactive | no |
 | ethereum | `0x5c6a76a0217d41a5f7c4132b042b0b2cdfd488cf` | SupporterVester-17 | impl | inactive | no |
+| ethereum | `0x5d14ab14adb3a3d9769a67a1d09634634bde4c9b` | Pool-3 | impl | live | no |
 | ethereum | `0x5d15048211ea6614593bb2ec432316f89c07b4b0` | SupporterVester-18 | impl | inactive | no |
 | ethereum | `0x5e007bc170861e27952ca4118d7af3e8aa5e4753` | FiatTokenProxy-2 | proxy | live | no |
 | ethereum | `0x5e0f9be7bccbcf500fa1a586a8781a44a35a3e32` | SupporterVester-19 | impl | inactive | no |
@@ -254,6 +269,8 @@
 | ethereum | `0x69076e44a9c70a67d5b79d95795aba299083c275` | GemPit | impl | inactive | no |
 | ethereum | `0x6a9a903c82f662d07497cd066b134e000b1f06a6` | SupporterVester-20 | impl | inactive | no |
 | ethereum | `0x6abb43dae012e7c85355df7e752fea5c6666ae0b` | TokenVesting-12 | impl | inactive | no |
+| ethereum | `0x6bac09a67ed1e1f42c29563847f77c28ec3a04fc` | Pool-4 | impl | live | no |
+| ethereum | `0x6cb18ff2a33e981d1e38a663ca056c0a5265066a` | Ladle | proxy | live | no |
 | ethereum | `0x6cba14acf33de1e581774e7b6b33dd1810a3d956` | SupporterVester-21 | impl | inactive | no |
 | ethereum | `0x6d9fa95c2c78c5dcea102cae8a4ac597066d2f32` | SupporterVester-22 | impl | inactive | no |
 | ethereum | `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` | YoOracle | impl | live | no |
@@ -267,22 +284,28 @@
 | ethereum | `0x77ff810d6d687df28adbe34bba9c7a0a4276bfc6` | Timelock | impl | inactive | no |
 | ethereum | `0x79b2aab4e9c331bcc26bbc6e840be4eb1b330896` | TokenVesting-14 | impl | inactive | no |
 | ethereum | `0x7a06b23e138f2cc2a5ccec7e0648f589fbc8cede` | SupporterVester-25 | impl | inactive | no |
+| ethereum | `0x7acfe277ded15caba6a8da2972b1eb93fe1e2ccd` | Strategy-2 | impl | live | no |
 | ethereum | `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` | YoERC4626VaultRegistry | impl | live | no |
 | ethereum | `0x7cb6ceabd9fa6895a8ce52e5e3459b67bc71e705` | Join | impl | inactive | no |
 | ethereum | `0x7de1f04204ef29229d84e7c0c2d1216c28645a15` | DVFInterface4 | impl | inactive | no |
+| ethereum | `0x80142add3a597b1ed1de392a56b2cef3d8302797` | Pool-2 | impl | live | yes |
 | ethereum | `0x804bf114530000c1a55825a8b57248af01494c63` | Wand | impl | inactive | no |
 | ethereum | `0x82375994c79e902286d347c9ede644ea12659fcc` | EmergencyBrake | impl | inactive | no |
 | ethereum | `0x839fd7873702c2cc238dc87338ff3cbf4ee33d66` | SupporterVester-26 | impl | inactive | no |
+| ethereum | `0x856ddd1a74b6e620d043efd6f74d81b8bf34868d` | YieldMath | impl | live | no |
 | ethereum | `0x856fcc085290ac1e40392442211e6a333afb873e` | ProxyAdmin | impl | live | no |
 | ethereum | `0x8aa593464d906512372ddb2a5719f2ecbec49a56` | SupporterVester-27 | impl | inactive | no |
 | ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | inactive | no |
 | ethereum | `0x8d5a41e85f4ce2433beef476305d307b9205d98d` | NectarController-2 | impl | inactive | no |
+| ethereum | `0x8dcc6e8d4a2e57690eab0acd009445ffc4b20f16` | Witch | impl | inactive | no |
 | ethereum | `0x8e2a84d6ade1e7fffee039a35ef5f19f13057152` | DSChief | impl | inactive | no |
+| ethereum | `0x8e8d6ab093905c400d583efd37fbeeb1ee1c0c39` | Strategy-2 | impl | live | no |
 | ethereum | `0x904249766b2ccf6795d7b34441cc0bcae5cb7640` | NectarController-3 | impl | inactive | no |
 | ethereum | `0x93a3a3325de6ab429523d144b41a032e7d7456ab` | YoMorphoAdapter | impl | live | no |
 | ethereum | `0x93a70c645c70307ca47bad645706c9d9aa429cf2` | SupporterVester-28 | impl | inactive | no |
 | ethereum | `0x93d070772066c977d605d69b602d316adafc25e3` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x93d232213cca6e5e7105199abd8590293c3eb106` | StEthConverter | impl | inactive | no |
+| ethereum | `0x93dee161a396af75c7458a65687895299bfeb437` | Strategy-3 | impl | live | no |
 | ethereum | `0x93e5260ac975b475af8bf818c14deee7fefd5927` | SafeProxy | proxy | live | no |
 | ethereum | `0x94dc1141a5163b369f8a3aa9f4e50a2e5ece921a` | TokenVesting-15 | impl | inactive | no |
 | ethereum | `0x963c3c9bd821bb435822e7a17db32bd323a8eaa0` | ProxyAdmin-2 | impl | live | no |
@@ -304,7 +327,7 @@
 | ethereum | `0xa4dab784d7feb04c4405816c50c14893df34f5f0` | Relay | impl | inactive | no |
 | ethereum | `0xa4f32c250431554aa3bc2ddd9269a179536ed11c` | TokenVesting-16 | impl | inactive | no |
 | ethereum | `0xa5e64f55f1d7244475ee3842e06295c1973482ed` | Timelock | impl | inactive | no |
-| ethereum | `0xa718ff3fa10fa9f797e98e35fd3a0bec9e0aa67c` | FYToken-2 | impl | live | no |
+| ethereum | `0xa718ff3fa10fa9f797e98e35fd3a0bec9e0aa67c` | FYToken-3 | impl | live | no |
 | ethereum | `0xa7675ec8b81639caa8a6bd61138d8a45aed297bb` | SupporterVester-34 | impl | inactive | no |
 | ethereum | `0xa8e1b76426ac2b1b93502b30b92445d504d5e9da` | SupporterVester-35 | impl | inactive | no |
 | ethereum | `0xa98f3211997fdb072b6a8e2c2a26c34bc447f873` | Giver | impl | inactive | no |
@@ -317,9 +340,11 @@
 | ethereum | `0xaec71b3be50bc4cd99b44ea84fcf1ecc913bc33d` | WETH | impl | inactive | no |
 | ethereum | `0xb05ad4e4087cbd315f193532e8c63db3d1523179` | RevokableVester-15 | impl | inactive | no |
 | ethereum | `0xb28cde620b8682eae958d027ed16d9174b3ff2f8` | TokenVesting-17 | impl | inactive | no |
+| ethereum | `0xb38ba395d15392796b51057490bbc790871dd6a0` | FYToken-4 | impl | live | no |
 | ethereum | `0xb3b67099121e1fbde6276b2802048d1a7dd1b987` | TubFab | impl | inactive | no |
 | ethereum | `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` | YoApprovalRegistry | impl | live | no |
 | ethereum | `0xb4da3d9576bd931dafd34b6e6d6a5668cc9448c7` | TokenVesting-18 | impl | inactive | no |
+| ethereum | `0xb57d6abb871c9c38f33162be62fb647ae2629a75` | Ladle | impl | inactive | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | live | no |
 | ethereum | `0xb9a5d8f774f6c3085e0cdd2e028b3dff0c848e96` | RevokableVester-16 | impl | inactive | no |
 | ethereum | `0xb9f14f36b33e43b1e913dfeb14949b78af3ced36` | FlashLiquidator | impl | inactive | no |
@@ -340,6 +365,8 @@
 | ethereum | `0xcb9737bdd076251744704cc37ce961e8417fdd7f` | YoMorphoMarketRegistry | impl | live | no |
 | ethereum | `0xcc3eb61737b3161438ab859d1d0dd1a1138c30ab` | SupporterVester-40 | impl | inactive | no |
 | ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | inactive | no |
+| ethereum | `0xcda62a19da5ee9dc6e3110cf211b483046b0f7d2` | Strategy-2 | impl | live | no |
+| ethereum | `0xce4bc6315555411ca162350a5adff3fac2afa952` | PoolView | impl | live | no |
 | ethereum | `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` | YoSwapPairRegistry | impl | live | no |
 | ethereum | `0xcfffbd937a2b03808a5582b550e9f8f151a463ab` | SupporterVester-41 | impl | inactive | no |
 | ethereum | `0xd131ef0fc4ae1af2e1ca3641a8e542731e3b36b4` | TetherToken-6 | impl | inactive | no |
@@ -359,6 +386,7 @@
 | ethereum | `0xdf79be157c4fabcf3644c2043de48fe97cbf80a3` | RevokableVester-18 | impl | inactive | no |
 | ethereum | `0xdf9b32a3a072881257583e7f0e10ba74feefcf43` | TokenVesting-21 | impl | inactive | no |
 | ethereum | `0xe05685cd4b6b3f120ee7539c6c44647caa413ab8` | SupporterVester-43 | impl | inactive | no |
+| ethereum | `0xe2f6f40192f3e4568a62577e0541ac823b6f0d9e` | PoolNonTv-2 | impl | live | no |
 | ethereum | `0xe4d5a6128308b4d5c5d1a107be136ab75c9944be` | PoolFactory | impl | live | no |
 | ethereum | `0xe522b300071b43d31965a2fc7a70d78783b6ce94` | DVFInterface2-3 | impl | inactive | no |
 | ethereum | `0xe5df61285e8492d1d4dd6e4651821383512f012f` | DadFab | impl | inactive | no |
@@ -366,68 +394,36 @@
 | ethereum | `0xe711a0489deae50340e9950fa14072ab40a75d95` | SupporterVester-44 | impl | inactive | no |
 | ethereum | `0xe7ef4a761f195c5c6e9574d874b6a82d9caa6423` | SupporterVester-45 | impl | inactive | no |
 | ethereum | `0xe982615d461dd5cd06575bbea87624fda4e3de17` | MasterMinter | impl | inactive | no |
+| ethereum | `0xea3d459b61ed77447fade80e5a3de617e947aa1e` | YieldMathExtensions | impl | live | no |
 | ethereum | `0xec0f22b4339b4adcae3347bd5cad539700ac4beb` | MasterMinter | impl | inactive | no |
 | ethereum | `0xec1fa58a65ddd50a7d1ae1f4ca9a55b3f0fe24cc` | DVFInterface2-4 | impl | inactive | no |
+| ethereum | `0xec202c3beacd59e6e0dcafb2e2a31ebfc3196899` | FlashJoin | impl | inactive | no |
 | ethereum | `0xec4d29fd22066e75746eb68cb51d8a7df7d28356` | TubFab | impl | inactive | no |
 | ethereum | `0xecd62a8bbd3503710765a53218c480127b3c816e` | YoGateway-2 | impl | live | no |
 | ethereum | `0xed24bd79a3f2ba4325e9c553164e299c65e272fc` | V2Upgrader | impl | live | no |
 | ethereum | `0xed9d63a96c27f87b07115b56b2e3572827f21646` | AdminUpgradeabilityProxy-3 | proxy | live | no |
+| ethereum | `0xeda38a5b1653ef0b460f10b93ff08c839bd32cc3` | Ladle-2 | impl | inactive | no |
 | ethereum | `0xee508c827a8990c04798b242fa801c5351012b23` | Join | impl | inactive | no |
 | ethereum | `0xef0d1247f9fb0148a85bb342eb8b98b56ba338d3` | SupporterVester-46 | impl | inactive | no |
+| ethereum | `0xef82611c6120185d3bf6e020d1993b49471e7da0` | Pool-3 | impl | live | no |
 | ethereum | `0xef98e4cad451f55178e3af2fca79e67b9d4c587b` | SupporterVester-47 | impl | inactive | no |
+| ethereum | `0xf003bd8a847a7ec2a76813495e734bc247ca6851` | YieldMath-2 | impl | live | no |
 | ethereum | `0xf07674f6ac6632e253c291b694f9c2e2ed69ebbb` | DaiFab | impl | inactive | no |
 | ethereum | `0xf12de004d643a8e942267a1f0a1933ec4168312e` | SupporterVester-48 | impl | inactive | no |
 | ethereum | `0xf1b86628c060603d213d23076df06abbf86a2b6f` | SupporterVester-49 | impl | inactive | no |
 | ethereum | `0xf1eee0957267b1a474323ff9cff7719e964969fa` | YoGateway | proxy | live | no |
 | ethereum | `0xf1f61f7d92c4d242180f83d331f82453f56107d9` | RevokableVester-19 | impl | inactive | no |
 | ethereum | `0xf2748c4bc1842b38f466a860d30de2330203c0e0` | SupporterVester-50 | impl | inactive | no |
-| ethereum | `0xf374ab6b299945ff81c1523008d0d407380a396f` | FYToken-2 | impl | live | no |
+| ethereum | `0xf374ab6b299945ff81c1523008d0d407380a396f` | FYToken-3 | impl | live | no |
 | ethereum | `0xf4232686a18468fdd4c60b69033235e6c61e4f22` | SupporterVester-51 | impl | inactive | no |
 | ethereum | `0xf558094831fbe4edb248e401847229230c8ad347` | RevokableVester-20 | impl | inactive | no |
 | ethereum | `0xf5b59c107f3f7b1c2a7c3d09234bd0a055ad8d55` | GemPit | impl | inactive | no |
+| ethereum | `0xf5fd5a9db9cccc6dc9f5ef1be3a859c39983577c` | Pool-4 | impl | live | no |
 | ethereum | `0xf6445627bc9d06516d317a0dbbc4660bab7a17c0` | TetherToken-10 | impl | inactive | no |
 | ethereum | `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` | YoLidoAdapter | impl | live | no |
 | ethereum | `0xfa1807d861cad31255bf75534e41e7115d498ed7` | SupporterVester-52 | impl | inactive | no |
+| ethereum | `0xfbc322415cbc532b54749e31979a803009516b5d` | Strategy-2 | impl | live | no |
 | ethereum | `0xfc19ce8f91955458ad135beddd201d554db4cd09` | SupporterVester-53 | impl | inactive | no |
+| ethereum | `0xfcb9b8c5160cf2999f9879d8230dced469e72eeb` | FYToken-2 | impl | live | yes |
 | ethereum | `0xfd48c0263de3691e524b5001db8f1c6e82659751` | TokenVesting-23 | impl | inactive | no |
 | ethereum | `0xfec8457d1bddfc52633da3323f812fc5c1800f61` | Join | impl | inactive | no |
-
-## Source unavailable (36)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x1229c71482e458fa2cd51d13eb157bd2b5d5d1ee`
-- arbitrum `0x23cc87fbebdd67cce167fa9ec6ad3b7fe3892e30`
-- arbitrum `0x667f185407c4cab52aeb681f0006e4642d8091df`
-- arbitrum `0x84066caea6186a02ed74ebf32bf008a47cbe26ad`
-- arbitrum `0x9ca4d6fbe0ba91d553e74805d2e2545b04abefea`
-- arbitrum `0xaf93a04d5d8d85f69af65ed66a9717db0796fb10`
-- arbitrum `0xbd6bee8d3b9d1ee6b8105bed11a61fdcae4bff8b`
-- arbitrum `0xc31cce4ffa203d8f8d865b6cfaa4f36ad77e9810`
-- ethereum `0x1144e14e9b0aa9e181342c7e6e0a9badb4ced295`
-- ethereum `0x3771c99c087a81df4633b50d8b149afaa83e3c9e`
-- ethereum `0x407353d527053f3a6140aaa7819b93af03114227`
-- ethereum `0x532759c8d84172a6c9974905820c5a3191032d35`
-- ethereum `0x53c2a1ba37ff3cdaccb3ea030db3de39358e5593`
-- ethereum `0x53c3760670f6091e1ec76b4dd27f73ba4cad5061`
-- ethereum `0x5d14ab14adb3a3d9769a67a1d09634634bde4c9b`
-- ethereum `0x6bac09a67ed1e1f42c29563847f77c28ec3a04fc`
-- ethereum `0x6cb18ff2a33e981d1e38a663ca056c0a5265066a`
-- ethereum `0x7acfe277ded15caba6a8da2972b1eb93fe1e2ccd`
-- ethereum `0x80142add3a597b1ed1de392a56b2cef3d8302797`
-- ethereum `0x856ddd1a74b6e620d043efd6f74d81b8bf34868d`
-- ethereum `0x8dcc6e8d4a2e57690eab0acd009445ffc4b20f16`
-- ethereum `0x8e8d6ab093905c400d583efd37fbeeb1ee1c0c39`
-- ethereum `0x93dee161a396af75c7458a65687895299bfeb437`
-- ethereum `0xb38ba395d15392796b51057490bbc790871dd6a0`
-- ethereum `0xb57d6abb871c9c38f33162be62fb647ae2629a75`
-- ethereum `0xcda62a19da5ee9dc6e3110cf211b483046b0f7d2`
-- ethereum `0xce4bc6315555411ca162350a5adff3fac2afa952`
-- ethereum `0xe2f6f40192f3e4568a62577e0541ac823b6f0d9e`
-- ethereum `0xea3d459b61ed77447fade80e5a3de617e947aa1e`
-- ethereum `0xec202c3beacd59e6e0dcafb2e2a31ebfc3196899`
-- ethereum `0xeda38a5b1653ef0b460f10b93ff08c839bd32cc3`
-- ethereum `0xef82611c6120185d3bf6e020d1993b49471e7da0`
-- ethereum `0xf003bd8a847a7ec2a76813495e734bc247ca6851`
-- ethereum `0xf5fd5a9db9cccc6dc9f5ef1be3a859c39983577c`
-- ethereum `0xfbc322415cbc532b54749e31979a803009516b5d`
-- ethereum `0xfcb9b8c5160cf2999f9879d8230dced469e72eeb`

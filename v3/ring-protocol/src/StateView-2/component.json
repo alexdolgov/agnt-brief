@@ -1,0 +1,20 @@
+{
+  "component": "StateView-2",
+  "main_contract": "StateView",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/RingProtocol/v4-periphery/blob/main/audits/OpenZeppelin_audit_periphery_universal_router.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x86e8631a016f9068c3f085faf484ee3f5fdee8f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

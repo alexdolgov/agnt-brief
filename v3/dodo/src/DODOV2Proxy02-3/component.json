@@ -1,0 +1,18 @@
+{
+  "component": "DODOV2Proxy02-3",
+  "main_contract": "DODOV2Proxy02",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfd9d2827ad469b72b69329daa325ba7afbdb3c98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

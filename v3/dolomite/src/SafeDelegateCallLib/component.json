@@ -2,7 +2,7 @@
   "component": "SafeDelegateCallLib",
   "main_contract": "SafeDelegateCallLib",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaa65096ebb42635238865eca79f6a9f61d8bb425",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

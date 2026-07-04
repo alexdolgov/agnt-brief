@@ -2,12 +2,116 @@
   "component": "ProtocolReserve",
   "main_contract": "ProtocolReserve",
   "source_file_count": 12,
-  "deployment_count": 2,
+  "deployment_count": 15,
   "audited": true,
   "audits_covering": [
     "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38de5bd4e7a6fdb66a25329b23a7a7f9726f5323",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7adce92b8bc6f1dfaf63cbeccd8999e67e8659f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x953b248f203d57e65dcb2e132fe679cbee06b278",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa71df71ab49814eb79c41f0d306e260cd2f08012",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf3af047b66ad5d38fe7f2471bb401789a47b5889",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf3e9dcf940a880044c7f17a6d0d0b0188973f23d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x43ea78157b39fbacc599162f63b855e4a8d49799",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7adce92b8bc6f1dfaf63cbeccd8999e67e8659f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x898ec6efce764eccdc2f4b5923dfc1e882772650",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xbcab6cc4b2f1990f8e6e9f11c881a229d69cbb27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6c50a44aad8da3957d7ad92ac77c173003bfe973",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb55cb1a9fd97b629b89944374707c0553590edc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe24135604d1d4add8f795153d5884ae1eb2e6811",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

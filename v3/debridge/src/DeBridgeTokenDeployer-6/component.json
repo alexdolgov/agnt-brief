@@ -1,0 +1,18 @@
+{
+  "component": "DeBridgeTokenDeployer-6",
+  "main_contract": "DeBridgeTokenDeployer",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

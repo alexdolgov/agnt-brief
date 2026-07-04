@@ -2,17 +2,35 @@
   "component": "SetValuer-2",
   "main_contract": "SetValuer",
   "source_file_count": 1,
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md"
+  ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6f4d1397c15c8ab6ea218f80f397acb71835654f",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x48cf49701028cfbbce18a963c9134f7a86e71a22",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4e9290b32b817d42128ac13450848adbb7f24389",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdfcd0b065e828cec30d7918576b918eb47f29e46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

@@ -1,34 +1,50 @@
 # reservoir-protocol — deployments
 
-183 verified deployment(s) across 81 component(s).
+204 verified deployment(s) across 86 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x1a996cb54bb95462040408c06122d45d6cdb6096` | fToken-2 | impl | live | no |
-| base | `0x050ce30b927da55177a4914ec73480238bad56f0` | VaultV2 | impl | live | no |
-| base | `0x71356761fd23e77e5d78c37c70fe78229ca75a72` | DamOft | impl | live | no |
-| base | `0xbeef0e0834849acc03f0089f01f4f1eeb06873c9` | VaultV2-2 | impl | live | no |
+| arbitrum | `0x5c0c306aaa9f877de636f4d5822ca9f2e81563ba` | MetaMorphoV1_1 | impl | live | no |
+| arbitrum | `0x6ea313859a5d9f6ff2a68f529e6361174bfd2225` | LPToken | impl | live | no |
+| arbitrum | `0x7e97fa6893871a2751b5fe961978dccb2c201e65` | MetaMorphoV1_1 | impl | live | no |
+| arbitrum | `0x8d66ff1845b1bacc6e87d867ca4680d05a349ca8` | LPToken | impl | live | no |
+| arbitrum | `0xbeeff1d5de8f79ff37a151681100b039661da518` | VaultV2 | impl | live | no |
+| arbitrum | `0xbeeff77ce5c059445714e6a3490e273fe7f2492f` | VaultV2 | impl | live | no |
+| arbitrum | `0xbeefff13dd098de415e07f033dae65205b31a894` | VaultV2 | impl | live | no |
+| base | `0x050ce30b927da55177a4914ec73480238bad56f0` | VaultV2-2 | impl | live | no |
+| base | `0x09d4214c03d01f49544c0448dbe3a27f768f2b34` | RusdOft | impl | live | no |
+| base | `0x62344be8ca1c339b46274a4017dd87af436900b1` | WsrusdOft | impl | live | no |
+| base | `0x71356761fd23e77e5d78c37c70fe78229ca75a72` | DamOft-2 | impl | live | no |
+| base | `0xbeef0e0834849acc03f0089f01f4f1eeb06873c9` | VaultV2-3 | impl | live | no |
 | base | `0xee8f4ec5672f09119b96ab6fb59c27e1b7e44b61` | MetaMorpho | impl | live | no |
 | bsc | `0x09d4214c03d01f49544c0448dbe3a27f768f2b34` | RusdOft | impl | live | no |
+| bsc | `0x4809010926aec940b550d34a46a52739f996d75d` | WsrusdOft | impl | live | no |
+| bsc | `0xf9ca3fe094212ffa705742d3626a8ab96aababf8` | DamOft | impl | live | no |
 | chain-80094 | `0x1fb6c1ade4f9083b2ea42ed3fa9342e41788d4b5` | KodiakIslandWithRouter | impl | live | no |
-| chain-80094 | `0x30bba9cd9eb8c95824aa42faa1bb397b07545bc1` | MetaMorphoV1_1 | impl | live | no |
+| chain-80094 | `0x30bba9cd9eb8c95824aa42faa1bb397b07545bc1` | MetaMorphoV1_1-3 | impl | live | no |
 | chain-80094 | `0x551fb0309dd7e1c6e1a59d9389ef10da864a552e` | CollateralVault | impl | live | no |
 | chain-80094 | `0x688e72142674041f8f6af4c808a4045ca1d6ac82` | BYUSDOFT | impl | live | no |
 | chain-80094 | `0x7fd165b73775884a38aa8f2b384a53a3ca7400e6` | KodiakIslandWithRouter | impl | live | no |
 | chain-80094 | `0xde04c469ad658163e2a5e860a03a86b52f6fa8c8` | ComposableStablePool | impl | live | no |
 | chain-9745 | `0x1dd4b13fcae900c60a350589be8052959d2ed27b` | fToken | impl | live | no |
+| chain-9745 | `0x20fd5f3fcac8883a3a0a2bbcd658a2d2c6efa6b6` | GhoCcipSteward | impl | live | no |
 | chain-9745 | `0x2ce400703dacc37b7edfa99d228b8e70a4d3831b` | GhoBucketSteward | impl | live | no |
-| chain-9745 | `0x5d72a9d9a9510cd8cbdba12ac62593a58930a948` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
+| chain-9745 | `0x5d72a9d9a9510cd8cbdba12ac62593a58930a948` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | chain-9745 | `0x66be42a0bda425a8c3b3c2cf4f4cb9edfcaed21d` | EulerEarn | impl | live | no |
+| chain-9745 | `0x7519403e12111ff6b710877fcd821d0c12caf43a` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | chain-9745 | `0xb0e1c7830aa781362f79225559aa068e6bdaf1d1` | GhoOracle | impl | live | no |
+| chain-9745 | `0xd8f824d4252cae7d5e49b95d47b0efafe6f2d570` | fToken | impl | live | no |
 | chain-9745 | `0xe818ad0d20d504c55601b9d5e0e137314414dec4` | EulerEarn | impl | live | no |
 | chain-999 | `0x04716db62c085d9e08050fcf6f7d775a03d07720` | WsrusdOft | impl | live | no |
+| chain-999 | `0x866d66f64fb81461903e1e38d998e747ecf35e78` | RusdOft | impl | live | no |
+| chain-999 | `0xc6eab56426ae6e0dfe72ec1ce2aaf73dae0e4ff4` | DamOft | impl | live | no |
 | ethereum | `0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d` | DolomiteMargin | impl | live | no |
 | ethereum | `0x04716db62c085d9e08050fcf6f7d775a03d07720` | CreditEnforcer | impl | live | yes |
 | ethereum | `0x09d4214c03d01f49544c0448dbe3a27f768f2b34` | Stablecoin | impl | live | yes |
 | ethereum | `0x0aa752c9dda32d237a22f04a5971976c71e96036` | OpportunityOVault | impl | live | no |
 | ethereum | `0x0aecdf39d9d02833a055bf1eca518a83f66f4802` | TransparentUpgradeableProxy | proxy | live | no |
-| ethereum | `0x0c0d01abf3e6adfca0989ebba9d6e85dd58eab1e` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x0c0d01abf3e6adfca0989ebba9d6e85dd58eab1e` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0x0c3f5fafb87318c0deaebff096aba019501fcb69` | WrappedEEthAdapter | impl | live | no |
 | ethereum | `0x0ccb9a2a5ad747baeebf00385da9e98f2e5dc829` | Rebalance | impl | live | yes |
 | ethereum | `0x0fedba9178b70e8b54e2af08ebffcf28a1e5a43b` | DAM | impl | live | yes |
@@ -36,7 +52,7 @@
 | ethereum | `0x10e2352da4790e547095f06fa3ef3093881080fb` | mHYPER | impl | live | no |
 | ethereum | `0x1135b22d6e8fd0809392478eedcd8c107db6af9d` | PendlePrincipalToken | impl | live | no |
 | ethereum | `0x12570b84b633629b1db532fd3420f34a30acfc68` | TransparentUpgradeableProxy-2 | proxy | live | no |
-| ethereum | `0x17bbc9bd51a52aaf4d2cc6652630daf4fdb358f7` | LPToken | impl | live | no |
+| ethereum | `0x17bbc9bd51a52aaf4d2cc6652630daf4fdb358f7` | LPToken-2 | impl | live | no |
 | ethereum | `0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x1dd1889702a64bfc6197ac9a2c206b723918dc18` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x2147bdf49a0b78b4b5058eb8306ab61026bbc5fd` | MultiSign | impl | live | no |
@@ -69,7 +85,7 @@
 | ethereum | `0x55b40c5ebc53c4b03a7cba602c6ceed3fc2349c6` | MidasLzMintBurnOFTAdapter | impl | live | no |
 | ethereum | `0x570f37365fffff0a3884892b7363c0a8615bbc08` | TACmBtcDepositVault | impl | live | no |
 | ethereum | `0x5c1e4c263d8cd3bde0e7dfa8fa9aa5583d18608b` | MultiSign | impl | live | no |
-| ethereum | `0x5daaee9ef143faff495b581e9863570e83f99d31` | LPToken | impl | live | no |
+| ethereum | `0x5daaee9ef143faff495b581e9863570e83f99d31` | LPToken-2 | impl | live | no |
 | ethereum | `0x5eff78782e823de725974a9db02d440c1a2e7887` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x62c6e813b9589c3631ba0cdb013acdb8544038b7` | PendlePrincipalToken | impl | live | no |
 | ethereum | `0x6360f43803732eaeb9f1967b9f74d117e03154b3` | RusdMintBridge | impl | live | yes |
@@ -91,9 +107,10 @@
 | ethereum | `0x738d1115b90efa71ae468f1287fc864775e23a31` | Savingcoin | impl | live | yes |
 | ethereum | `0x74a56c3255c55c9f324eac74923406dc02e913a1` | MockERC20 | impl | unknown | no |
 | ethereum | `0x74e0a55ea3db85f6106ffd69ef7c9829fd130888` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x777791c4d6dc2ce140d00d2828a7c93503c67777` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0x797dd80692c3b2dadabce8e30c07fde5307d48a9` | BeaconProxy | proxy | live | no |
 | ethereum | `0x7c0391a651c080e99b38c179575342512769d9d5` | acreBTC | impl | live | no |
-| ethereum | `0x7c0477d085ecb607cf8429f3ec91ae5e1e460f4f` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x7c0477d085ecb607cf8429f3ec91ae5e1e460f4f` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0x7f9922bae30ccc28d32ae284ee69e47f94c6de44` | MultiSign | impl | live | no |
 | ethereum | `0x813b0857e016b7ae5fb57f464dfad8ee7b74232e` | PSM | impl | live | no |
 | ethereum | `0x8292bb45bf1ee4d140127049757c2e0ff06317ed` | StablecoinProxy | proxy | live | no |
@@ -163,7 +180,7 @@
 | ethereum | `0xe0a80d35bb6618cba260120b279d357978c42bce` | BeaconProxy | proxy | live | no |
 | ethereum | `0xe230900ece18f5ca83c8640b2eb73de74f9df5ae` | MultiSign | impl | live | no |
 | ethereum | `0xe2ad97033e8c0844655f27dc0cc5f21028fe48ba` | TransparentUpgradeableProxy | proxy | live | no |
-| ethereum | `0xe3190143eb552456f88464662f0c0c4ac67a77eb` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
+| ethereum | `0xe3190143eb552456f88464662f0c0c4ac67a77eb` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xe3eee3e0d2398799c884a47fc40c029c8e241852` | MidasTimelockController | impl | live | no |
 | ethereum | `0xe43d2d52c047e2ca3f7ba3a0d03e513536eccad6` | MidasLzMintBurnOFTAdapter | impl | live | no |
 | ethereum | `0xe7b9d18af42b80bba370dfdd9c4d7b6f0b820cef` | MockUSD | impl | live | no |
@@ -187,29 +204,12 @@
 | mantle | `0x20fd5f3fcac8883a3a0a2bbcd658a2d2c6efa6b6` | GhoCcipSteward | impl | live | no |
 | mantle | `0x2ce400703dacc37b7edfa99d228b8e70a4d3831b` | GhoBucketSteward | impl | live | no |
 | mantle | `0x360d8aa8f6b09b7bc57af34db2eb84dd87bf4d12` | GhoOracle | impl | live | no |
+| mantle | `0x7053bad224f0c021839f6ac645bdae5f8b585b69` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| mantle | `0x8917d4ee4609f991b559daf8d0ad1b892c13b127` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| optimism | `0x8d66ff1845b1bacc6e87d867ca4680d05a349ca8` | LPToken | impl | live | no |
+| optimism | `0xc30ce6a5758786e0f640cc5f881dd96e9a1c5c59` | MetaMorphoV1_1 | impl | live | no |
 
-## Source unavailable (22)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x5c0c306aaa9f877de636f4d5822ca9f2e81563ba`
-- arbitrum `0x6ea313859a5d9f6ff2a68f529e6361174bfd2225`
-- arbitrum `0x7e97fa6893871a2751b5fe961978dccb2c201e65`
-- arbitrum `0x8d66ff1845b1bacc6e87d867ca4680d05a349ca8`
-- arbitrum `0xbeeff1d5de8f79ff37a151681100b039661da518`
-- arbitrum `0xbeeff77ce5c059445714e6a3490e273fe7f2492f`
-- arbitrum `0xbeefff13dd098de415e07f033dae65205b31a894`
-- base `0x09d4214c03d01f49544c0448dbe3a27f768f2b34`
-- base `0x62344be8ca1c339b46274a4017dd87af436900b1`
 - base `0xbeefe94c8ad530842bfe7d8b397938ffc1cb83b2`
-- bsc `0x4809010926aec940b550d34a46a52739f996d75d`
-- bsc `0xf9ca3fe094212ffa705742d3626a8ab96aababf8`
-- chain-9745 `0x20fd5f3fcac8883a3a0a2bbcd658a2d2c6efa6b6`
-- chain-9745 `0x7519403e12111ff6b710877fcd821d0c12caf43a`
-- chain-9745 `0xd8f824d4252cae7d5e49b95d47b0efafe6f2d570`
-- chain-999 `0x866d66f64fb81461903e1e38d998e747ecf35e78`
-- chain-999 `0xc6eab56426ae6e0dfe72ec1ce2aaf73dae0e4ff4`
-- ethereum `0x777791c4d6dc2ce140d00d2828a7c93503c67777`
-- mantle `0x7053bad224f0c021839f6ac645bdae5f8b585b69`
-- mantle `0x8917d4ee4609f991b559daf8d0ad1b892c13b127`
-- optimism `0x8d66ff1845b1bacc6e87d867ca4680d05a349ca8`
-- optimism `0xc30ce6a5758786e0f640cc5f881dd96e9a1c5c59`

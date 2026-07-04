@@ -180,7 +180,7 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
     /* 
      * @notice Mapping of claimed flight bonuses for each account and epoch.
      */
-    mapping(address => mapping(uint256 => uint256)) public flightBonusClaimed;
+    mapping(address => mapping(uint256 => bool)) public flightBonusClaimed;
 
     /* 
      * @notice A checkpoint for marking balance.
@@ -226,8 +226,6 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
     /* 
      * @custom:oz-upgrades-unsafe-allow constructor
      */
-
-     
     constructor() {
         _disableInitializers();
     }
@@ -270,11 +268,11 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
         threshold = _threshold;
         IVotingEscrow(_votingEscrow).transferFrom(msg.sender, address(this), _tokenId);
         IVotingEscrow(_votingEscrow).approve(_loanContract, _tokenId);
-        ILoan(_loanContract).requestLoan(_tokenId, 0, ILoan.ZeroBalanceOption.PayToOwner, 500, address(0), false, false);
+        ILoan(_loanContract).requestLoan(_tokenId, 0, ILoan.ZeroBalanceOption.PayToOwner, 500, address(0), false);
         tokenId = _tokenId;
         loanContract = _loanContract;
     }
-    
+
     /* 
      * @notice Transfers tokens to a recipient.
      * @param _recipient The address of the recipient.
@@ -541,29 +539,26 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
         address _owner
     ) external {
         address sender = _msgSender();
+        if(_owner == address(this)) return; // skip if this contract is the owner
         if (sender != authorized) revert NotAuthorized();
         if (_amount == 0) revert ZeroAmount();
         if (tokenId != _tokenId) {
             _escrow(_owner, _tokenId, _amount);
             return;
         }
-        if(_owner == address(this)) {
-            _owner =  IOwnable(loanContract).owner();
-        }
         _deposit(_amount, _owner);
     }
 
     function _deposit(uint256 _amount, address _owner) internal {
-        // NOTE: Minting functionality has been deprecated
-        // Community reward shares are no longer minted on deposits
+        _mint(_owner, _amount);
 
-        // NOTE: Checkpoint writing has been deprecated along with minting
-        // Balance and supply tracking is no longer needed without share minting
+        _writeCheckpoint(_owner, balanceOf(_owner));
+        _writeSupplyCheckpoint();
 
-        // NOTE: Flight deposit tracking has been deprecated
-        // Flight deposit tracking is no longer needed
+        uint256 currentFlight = ProtocolTimeLibrary.epochStart(block.timestamp) - ProtocolTimeLibrary.epochStart(block.timestamp) % (4 * ProtocolTimeLibrary.WEEK);
+        flightDeposits[_owner][currentFlight] += _amount;
+        totalFlightDeposits[currentFlight] += _amount;
 
-        // Deposit will still emit an event for accountability
         emit Deposit(_owner, _amount);
     }
 
@@ -598,20 +593,19 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
         }
     }
 
-    function getReward(address[] memory _tokens) external nonReentrant returns (uint256) {
-        return _getReward(msg.sender, _tokens);
+    function getReward(address[] memory _tokens) external nonReentrant {
+        _getReward(msg.sender, _tokens);
     }
 
     function getRewardForUser(
         address _owner,
         address[] memory _tokens
-    ) external nonReentrant returns (uint256) {
-        return _getReward(_owner, _tokens);
+    ) external nonReentrant {
+        _getReward(_owner, _tokens);
     }
 
-    function _getReward(address _owner, address[] memory _tokens) internal returns (uint256) {
+    function _getReward(address _owner, address[] memory _tokens) internal {
         uint256 _length = _tokens.length;
-        uint256 _totalReward = 0;
         for (uint256 i = 0; i < _length; i++) {
             uint256 _reward = earned(_tokens[i], _owner);
             if (lastNotify[_tokens[i]] == 0) {
@@ -624,9 +618,7 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
             if (_reward > 0) IERC20(_tokens[i]).safeTransfer(_owner, _reward);
 
             emit ClaimRewards(_owner, _tokens[i], _reward);
-            _totalReward += _reward;
         }
-        return _totalReward;
     }
 
     /**
@@ -650,6 +642,7 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
         uint256 previousFlight = ProtocolTimeLibrary.epochStart(block.timestamp) - ProtocolTimeLibrary.epochStart(block.timestamp) % (4 * ProtocolTimeLibrary.WEEK) - 4 * ProtocolTimeLibrary.WEEK;
         flightBonus[previousFlight] += amount;
 
+
         emit NotifyFlightBonus(previousFlight, amount);
     }
 
@@ -660,25 +653,23 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
      * @param owner The address of the user claiming their flight bonus
      * @param flight The identifier of the flight for which the bonus is being claimed
      */
-    function claimFlightBonus(address owner, uint256 flight) external nonReentrant returns (uint256) {
-        uint256 claimedBonus = flightBonusClaimed[owner][flight];
+    function claimFlightBonus(address owner, uint256 flight) external nonReentrant {
+        if (flightBonusClaimed[owner][flight]) revert();
 
         uint256 ownerDeposit = flightDeposits[owner][flight];
         uint256 totalDeposit = totalFlightDeposits[flight];
         uint256 bonus = flightBonus[flight];
 
-        if (totalDeposit == 0 || bonus == 0 || ownerDeposit == 0) return 0; 
+        if (totalDeposit == 0 || bonus == 0 || ownerDeposit == 0) return;
 
-        uint256 rewardAmount = (ownerDeposit * bonus) / totalDeposit - claimedBonus;
-        if (rewardAmount == 0) return 0; // No bonus to claim
-        flightBonusClaimed[owner][flight] += rewardAmount;
+        uint256 rewardAmount = (ownerDeposit * bonus) / totalDeposit;
+        flightBonusClaimed[owner][flight] = true;
 
         _mint(owner, rewardAmount);
         _writeCheckpoint(owner, balanceOf(owner));
         _writeSupplyCheckpoint();
 
         emit ClaimFlightBonus(owner, flight, rewardAmount);
-        return rewardAmount;
     }
 
     /**
@@ -692,24 +683,5 @@ contract CommunityRewards is Initializable, UUPSUpgradeable, ERC20Upgradeable, R
         address sender = _msgSender();
         if (sender != IOwnable(loanContract).owner()) revert NotAuthorized();
         ILoan(authorized).setIncreasePercentage(tokenId, _increasePercentage);
-    }
-
-    function claimManagedNftCollateral(address _votingEscrow, address _usdc) external {
-        address sender = _msgSender();
-        if (sender != IOwnable(loanContract).owner()) revert NotAuthorized();
-        
-        IERC20 usdc = IERC20(_usdc);
-        IVotingEscrow _ve = IVotingEscrow(_votingEscrow);
-        // Claim the collateral from the loan contract
-        // This will transfer the veNFT from the loan contract to the owner
-        ILoan(loanContract).claimCollateral(tokenId);
-
-        // Transfer the veNFT from this contract to the owner
-        _ve.transferFrom(address(this), IOwnable(loanContract).owner(), tokenId);
-
-        uint256 balanceOfUsdc = usdc.balanceOf(address(this));
-        if (balanceOfUsdc > 0) {
-            usdc.transfer(IOwnable(loanContract).owner(), balanceOfUsdc);
-        }
     }
 }

@@ -1,26 +1,26 @@
 {
   "component": "TransparentUpgradeableProxy-18",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 14,
+  "source_file_count": 16,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x0282515de1f3ba5953298a72f1357cfda6ef2275",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc98dce50f707f7563ec8ba0274b43bcf940919cb",
       "is_proxy": true,
-      "implementation_address": "0xc6a889ecfceda834767e91b7c49a2452b2014b34",
+      "implementation_address": "0xd4f8ccf7872413a85d516cd2e05282b59deb514d",
       "liveness": "live"
     },
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x5940a60866255031830aa1edfdd8b56ab39765b7",
-      "is_proxy": true,
-      "implementation_address": "0x3798699893b3a459e80152b7aab9f4663b4402e9",
-      "liveness": "live"
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd4f8ccf7872413a85d516cd2e05282b59deb514d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

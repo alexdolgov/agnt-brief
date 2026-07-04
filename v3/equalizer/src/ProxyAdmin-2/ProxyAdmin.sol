@@ -1,8 +1,4 @@
 /**
- *Submitted for verification at basescan.org on 2023-09-19
-*/
-
-/**
  *  EQUALIZER EXCHANGE
  *  The New Liquidity Hub of Fantom chain!
  *  https://equalizer.exchange  (Dapp)
@@ -935,14 +931,6 @@ contract ProxyAdmin is Ownable {
     function deployProxy(address _i, address _a, bytes memory _d) public payable virtual onlyOwner {
         TransparentUpgradeableProxy _p = new TransparentUpgradeableProxy(_i, _a, _d);
         emit Deployed(_i, _a, address(_p), _d);
-    }
-
-    /**
-     * @dev Deploy a new `proxy` for `implementation`
-     */
-    function deployProxy(address _i) public payable virtual onlyOwner {
-        TransparentUpgradeableProxy _p = new TransparentUpgradeableProxy(_i, owner(), "");
-        emit Deployed(_i, owner(), address(_p), "");
     }
 
     /**

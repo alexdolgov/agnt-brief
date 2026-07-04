@@ -1,0 +1,18 @@
+{
+  "component": "RedStonePullOracle-2",
+  "main_contract": "RedStonePullOracle",
+  "source_file_count": 76,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a65e1853381199ca04593ee5c396291e489b811",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,18 +1,42 @@
 {
   "component": "Quoter-2",
   "main_contract": "Quoter",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 8,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x33531bdbfe34fa6fd5963d0423f7699775aacaaf",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0e79c263eebc37977038f26fb86dfa84636cfe84",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2db0afd0045f3518c77ec6591a542e326befd3d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2db0afd0045f3518c77ec6591a542e326befd3d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe6805638db944ea605e774e72c6f0d15fb6a1347",
+      "is_proxy": true,
+      "implementation_address": "0xe6805638db944ea605e774e72c6f0d15fb6a1347",
+      "liveness": "inactive"
     }
   ]
 }

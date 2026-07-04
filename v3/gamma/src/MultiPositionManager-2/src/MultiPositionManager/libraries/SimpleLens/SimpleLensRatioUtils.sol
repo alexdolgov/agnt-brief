@@ -14,6 +14,7 @@ import {LiquidityAmounts} from "@uniswap/v4-core/test/utils/LiquidityAmounts.sol
 import {SimpleLensInMin} from "./SimpleLensInMin.sol";
 import {SimpleLensRatioUtilsPositions} from "./SimpleLensRatioUtilsPositions.sol";
 import {DepositRatioLib} from "../DepositRatioLib.sol";
+import {LiquidityAmountsCapped} from "../LiquidityAmountsCapped.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {Currency} from "v4-core/types/Currency.sol";
 import {RebalanceLogic} from "../RebalanceLogic.sol";
@@ -340,22 +341,9 @@ library SimpleLensRatioUtils {
     {
         (sqrtPriceX96, currentTick,,) = poolManager.getSlot0(poolKey.toId());
 
-        // Resolve sentinel value and snap to tickSpacing grid
-        {
-            if (params.centerTick == type(int24).max) {
-                int24 compressed = currentTick / poolKey.tickSpacing;
-                if (currentTick < 0 && currentTick % poolKey.tickSpacing != 0) {
-                    compressed--;
-                }
-                resolvedCenterTick = compressed * poolKey.tickSpacing;
-            } else {
-                // Snap to tickSpacing grid using floor division (matches on-chain behavior)
-                resolvedCenterTick = (params.centerTick / poolKey.tickSpacing) * poolKey.tickSpacing;
-                if (params.centerTick < 0 && params.centerTick % poolKey.tickSpacing != 0) {
-                    resolvedCenterTick -= poolKey.tickSpacing;
-                }
-            }
-        }
+        // Resolve center tick exactly like on-chain rebalance (floor-snap + clamp).
+        resolvedCenterTick =
+            RebalanceLogic.resolveAndClampCenterTick(params.centerTick, currentTick, poolKey.tickSpacing);
 
         // Get density weights from strategy
         weights = _callStrategyForWeights(ranges, params, resolvedCenterTick, currentTick, poolKey.tickSpacing);
@@ -440,7 +428,7 @@ library SimpleLensRatioUtils {
                         sqrtPriceX96, ctx.sqrtPriceLower, ctx.sqrtPriceUpper, targetLiquidity
                     );
 
-                    liquidities[i] = LiquidityAmounts.getLiquidityForAmounts(
+                    liquidities[i] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
                         sqrtPriceX96, ctx.sqrtPriceLower, ctx.sqrtPriceUpper, amount0, amount1
                     );
                 }
@@ -944,22 +932,9 @@ library SimpleLensRatioUtils {
         PoolKey memory poolKey = manager.poolKey();
         (uint160 sqrtPriceX96, int24 currentTick,,) = poolManager.getSlot0(poolKey.toId());
 
-        // Resolve center tick (always floor-divide for alignment)
-        int24 resolvedCenter;
-        if (centerTick == type(int24).max) {
-            int24 compressed = currentTick / poolKey.tickSpacing;
-            if (currentTick < 0 && currentTick % poolKey.tickSpacing != 0) {
-                compressed--;
-            }
-            resolvedCenter = compressed * poolKey.tickSpacing;
-        } else {
-            // Floor-divide user-provided centerTick
-            int24 compressed = centerTick / poolKey.tickSpacing;
-            if (centerTick < 0 && centerTick % poolKey.tickSpacing != 0) {
-                compressed--;
-            }
-            resolvedCenter = compressed * poolKey.tickSpacing;
-        }
+        // Resolve center tick exactly like on-chain rebalance (floor-snap + clamp).
+        int24 resolvedCenter =
+            RebalanceLogic.resolveAndClampCenterTick(centerTick, currentTick, poolKey.tickSpacing);
 
         // Use provided weights OR calculate from strategy
         if (weight0 == 0 && weight1 == 0) {
@@ -1118,23 +1093,9 @@ library SimpleLensRatioUtils {
         PoolKey memory poolKey = manager.poolKey();
         int24 tickSpacing = poolKey.tickSpacing;
 
-        // Resolve CENTER_AT_CURRENT_TICK sentinel value
-        if (centerTick == type(int24).max) {
-            IPoolManager pm = manager.poolManager();
-            (, int24 currentTick,,) = pm.getSlot0(poolKey.toId());
-            int24 compressed = currentTick / tickSpacing;
-            if (currentTick < 0 && currentTick % tickSpacing != 0) {
-                compressed--; // Round down for negative ticks with remainder
-            }
-            centerTick = compressed * tickSpacing;
-        } else {
-            // Snap to tickSpacing grid using floor division (matches on-chain behavior)
-            int24 compressed = centerTick / tickSpacing;
-            if (centerTick < 0 && centerTick % tickSpacing != 0) {
-                compressed--;
-            }
-            centerTick = compressed * tickSpacing;
-        }
+        IPoolManager pm = manager.poolManager();
+        (, int24 currentTick,,) = pm.getSlot0(poolKey.toId());
+        centerTick = RebalanceLogic.resolveAndClampCenterTick(centerTick, currentTick, tickSpacing);
 
         // Generate ranges from strategy
         if (strategyAddress == address(0)) revert("No strategy specified");
@@ -1376,22 +1337,8 @@ library SimpleLensRatioUtils {
     ) external view returns (IMultiPositionManager.Range[] memory baseRanges) {
         int24 tickSpacing = poolKey.tickSpacing;
 
-        // Resolve CENTER_AT_CURRENT_TICK sentinel value
-        if (centerTick == type(int24).max) {
-            (, int24 currentTick,,) = poolManager.getSlot0(poolKey.toId());
-            int24 compressed = currentTick / tickSpacing;
-            if (currentTick < 0 && currentTick % tickSpacing != 0) {
-                compressed--;
-            }
-            centerTick = compressed * tickSpacing;
-        } else {
-            // Snap to tickSpacing grid using floor division (matches on-chain behavior)
-            int24 compressed = centerTick / tickSpacing;
-            if (centerTick < 0 && centerTick % tickSpacing != 0) {
-                compressed--;
-            }
-            centerTick = compressed * tickSpacing;
-        }
+        (, int24 currentTick,,) = poolManager.getSlot0(poolKey.toId());
+        centerTick = RebalanceLogic.resolveAndClampCenterTick(centerTick, currentTick, tickSpacing);
 
         // Generate ranges from strategy
         if (strategyAddress == address(0)) revert NoStrategySpecified();

@@ -1,14 +1,30 @@
 {
   "component": "Root",
   "main_contract": "Root",
-  "source_file_count": 7,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7ed48c31f2fdc40d37407cbabf0870b2b688368f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7ed48c31f2fdc40d37407cbabf0870b2b688368f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x7ed48c31f2fdc40d37407cbabf0870b2b688368f",
       "is_proxy": false,
       "implementation_address": null,

@@ -1,0 +1,18 @@
+{
+  "component": "VotingEscrow-2",
+  "main_contract": "VotingEscrow",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfbd849e6007f9bc3cc2d6eb159c045b8dc660268",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

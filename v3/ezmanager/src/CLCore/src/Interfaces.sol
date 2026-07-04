@@ -190,7 +190,6 @@ interface ICLCore {
     function protocolFeeBps() external view returns (uint16);
     function botFeeBps() external view returns (uint16);
     function protocolReserve() external view returns (address);
-    function manager() external view returns (address);
     function positions(bytes32 key) external view returns (
         address owner,
         uint256 tokenId,
@@ -226,75 +225,8 @@ interface ICLCore {
 }
 
 interface ICLManager {
-    function openPosition(
-        address pool,
-        int24 tickLower,
-        int24 tickUpper,
-        uint256 usdcAmount,
-        bool botAllowed,
-        uint256 slippageBps
-    ) external returns (bytes32);
-
-    function openPosition(
-        address pool,
-        int24 tickLower,
-        int24 tickUpper,
-        uint256 usdcAmount,
-        bool botAllowed,
-        uint256 slippageBps,
-        address referrer
-    ) external returns (bytes32);
-
-    function openPositionEz(
-        address user,
-        address pool,
-        int24 tickLower,
-        int24 tickUpper,
-        uint256 usdcAmount,
-        bool botAllowed,
-        uint256 slippageBps,
-        address referrer
-    ) external returns (bytes32);
-
-    function copyPosition(
-        bytes32 sourceKey,
-        uint256 usdcAmount,
-        bool botAllowed,
-        uint256 slippageBps
-    ) external returns (bytes32);
-
-    function importNft(uint256 tokenId, address pool, bool botAllowed) external returns (bytes32);
-    function importNft(uint256 tokenId, address pool, bool botAllowed, address referrer) external returns (bytes32);
-
-    function addCollateral(bytes32 key, uint256 usdcAmount, uint256 slippageBps) external;
-    function removeCollateral(bytes32 key, uint256 withdrawUSDC, uint256 slippageBps) external;
-    function exitPosition(bytes32[] calldata keys, uint256 slippageBps) external;
-    function returnNft(bytes32[] calldata keys) external;
-}
-
-interface IEZWrapper {
-    function userForKey(bytes32 key) external view returns (address);
-    function creditBotActionProceeds(bytes32 key, uint256 amount, bool positionClosed) external;
-    function creditReturnedNft(bytes32 key, address npm, uint256 tokenId, uint256 dustReturned) external;
-}
-
-interface IReferralManager {
-    function referralShareBps() external view returns (uint16);
-    function copyReferralShareBps() external view returns (uint16);
-    function defaultReferrer() external view returns (address);
-    function referrers(address user) external view returns (address);
-    function referrerUserCount(address referrer) external view returns (uint256);
-    function storeReferrer(address user, address candidate) external returns (address referrer);
-    function storedReferrer(address user) external view returns (address referrer);
-    function creditReferralFee(
-        address referrer,
-        address user,
-        bytes32 key,
-        uint256 grossUSDC,
-        uint256 referralFee,
-        uint256 netUSDC,
-        uint8 feeType
-    ) external;
+    function protocolFeeBps() external view returns (uint256);
+    function botFeeBps() external view returns (uint256);
 }
 
 interface IValuation {
@@ -486,7 +418,6 @@ interface IAerodromeFactory {
     function getPool(address tokenA, address tokenB, int24 tickSpacing) external view returns (address);
     function tickSpacings() external view returns (int24[] memory);
     function tickSpacingToFee(int24 tickSpacing) external view returns (uint24);
-    function getSwapFee(address pool) external view returns (uint24);
 }
 
 interface IUniswapV3Pool {
@@ -498,7 +429,6 @@ interface IUniswapV3Pool {
     function factory() external view returns (address);
     function slot0() external view returns (uint160 sqrtPriceX96, int24 tick, uint16, uint16, uint16, uint8, bool);
     function observe(uint32[] calldata secondsAgos) external view returns (int56[] memory, uint160[] memory);
-    function tickBitmap(int16 wordPosition) external view returns (uint256);
     function ticks(int24 tick) external view returns (
         uint128 liquidityGross,
         int128 liquidityNet,

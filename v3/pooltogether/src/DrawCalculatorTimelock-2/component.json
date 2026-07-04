@@ -1,0 +1,26 @@
+{
+  "component": "DrawCalculatorTimelock-2",
+  "main_contract": "DrawCalculatorTimelock",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ab2c44a548b8ac1d166afbf490b200ad4261c15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x676a541cf8cba8c324ace66e8dfd19cacf9c7484",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

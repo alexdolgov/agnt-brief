@@ -1,17 +1,47 @@
 {
   "component": "RolesGuard",
   "main_contract": "RolesGuard",
-  "source_file_count": 22,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/blendmoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf"
-  ],
+  "source_file_count": 19,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0a55aa9881b64bf370738f088154f997b975f718",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb4021d387a48ffe32150f8154c57892e6c6156c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xad7188d0970cbedbdb233f0e5b7367cf149c3449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x920029f02b87c7bb0013c8e17e245209c03dd7bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xab6a8f5a37cee7a979622138524c4ddf22debc49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7d55a2bd88ed4e886ba8a95871df823db70acddf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

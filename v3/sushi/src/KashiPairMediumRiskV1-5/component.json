@@ -1,0 +1,18 @@
+{
+  "component": "KashiPairMediumRiskV1-5",
+  "main_contract": "KashiPairMediumRiskV1",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x513037395fa0c9c35e41f89189cedfe3bd42fadb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

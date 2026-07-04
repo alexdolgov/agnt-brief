@@ -2,7 +2,7 @@
   "component": "PriceFeedTimelock",
   "main_contract": "PriceFeedTimelock",
   "source_file_count": 14,
-  "deployment_count": 6,
+  "deployment_count": 11,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -50,6 +50,46 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0xd8b8bcf3fcdbf2c2685f52be234ec2109a2a2a4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8846d38481f8e3f9a7ddcbe1dff0981db2bc04a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x950ca2b3369aabd2524b6d96a29574387a822e06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb4135c002ffad7b571392bddaf4004f2810e7777",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd806306dc9bf7984a7d5ca997d40d18097d2aab8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x26da41a4d7f2b24fc4230fafdcc61f34d3efaaad",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

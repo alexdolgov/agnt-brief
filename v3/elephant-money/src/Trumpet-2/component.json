@@ -1,0 +1,18 @@
+{
+  "component": "Trumpet-2",
+  "main_contract": "Trumpet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb6a68ae7defe1f0ba7e02c0fa0864e68367ef81c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

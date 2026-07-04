@@ -18,49 +18,17 @@ pragma experimental ABIEncoderV2;
 import "./relayer/BaseRelayerLibrary.sol";
 
 import "./relayer/AaveWrapping.sol";
-import "./relayer/ERC4626Wrapping.sol";
-import "./relayer/EulerWrapping.sol";
-import "./relayer/GaugeActions.sol";
-import "./relayer/GearboxWrapping.sol";
 import "./relayer/LidoWrapping.sol";
-import "./relayer/CompoundV2Wrapping.sol";
-import "./relayer/UnbuttonWrapping.sol";
-import "./relayer/ReaperWrapping.sol";
-import "./relayer/TetuWrapping.sol";
-import "./relayer/SiloWrapping.sol";
 import "./relayer/VaultActions.sol";
 import "./relayer/VaultPermit.sol";
-import "./relayer/YearnWrapping.sol";
 
 /**
  * @title Batch Relayer Library
  * @notice This contract is not a relayer by itself and calls into it directly will fail.
  * The associated relayer can be found by calling `getEntrypoint` on this contract.
  */
-contract BatchRelayerLibrary is
-    AaveWrapping,
-    BaseRelayerLibrary,
-    ERC4626Wrapping,
-    EulerWrapping,
-    GaugeActions,
-    GearboxWrapping,
-    LidoWrapping,
-    UnbuttonWrapping,
-    CompoundV2Wrapping,
-    ReaperWrapping,
-    SiloWrapping,
-    TetuWrapping,
-    VaultActions,
-    VaultPermit,
-    YearnWrapping
-{
-    constructor(
-        IVault vault,
-        IERC20 wstETH,
-        IBalancerMinter minter,
-        bool canCallUserCheckpoint,
-        string memory version
-    ) BaseRelayerLibrary(vault, version) LidoWrapping(wstETH) GaugeActions(minter, canCallUserCheckpoint) {
+contract BatchRelayerLibrary is BaseRelayerLibrary, AaveWrapping, LidoWrapping, VaultActions, VaultPermit {
+    constructor(IVault vault, IERC20 wstETH) BaseRelayerLibrary(vault) LidoWrapping(wstETH) {
         // solhint-disable-previous-line no-empty-blocks
     }
 }

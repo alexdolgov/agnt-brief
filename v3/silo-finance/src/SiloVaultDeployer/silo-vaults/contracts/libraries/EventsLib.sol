@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
+
 pragma solidity ^0.8.28;
 
 import {IERC4626} from "openzeppelin5/interfaces/IERC4626.sol";
 
-import {PendingAddress} from "./PendingLib.sol";
 import {ISiloVault} from "../interfaces/ISiloVault.sol";
 import {FlowCapsConfig} from "../interfaces/IPublicAllocator.sol";
 
@@ -105,6 +105,8 @@ library EventsLib {
         string name,
         string symbol
     );
+
+    event VaultIncentiveModule(address indexed siloVault, address indexed vaultIncentiveModule);
 
     event CreateIdleVault(address indexed idleVault, address indexed vault);
 

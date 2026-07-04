@@ -1,0 +1,26 @@
+{
+  "component": "TokenCashierWithPayload-2",
+  "main_contract": "TokenCashierWithPayload",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x78de1e0b76523ac6e190f89ffc46571346940204",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x990b503f8c7353f1cab6f9d5bbf8f0be2718d731",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

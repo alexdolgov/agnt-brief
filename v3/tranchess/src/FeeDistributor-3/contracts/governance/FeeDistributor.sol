@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity >=0.6.10 <0.8.0;
 pragma experimental ABIEncoderV2;
 
@@ -11,11 +11,15 @@ import "../utils/SafeDecimalMath.sol";
 import "../utils/CoreUtility.sol";
 
 import "../interfaces/IVotingEscrow.sol";
+import "../interfaces/IWrappedERC20.sol";
 
 contract FeeDistributor is CoreUtility, Ownable {
     using SafeMath for uint256;
     using SafeDecimalMath for uint256;
     using SafeERC20 for IERC20;
+
+    event AdminUpdated(address newAdmin);
+    event AdminFeeRateUpdated(uint256 newAdminFeeRate);
 
     /// @notice 60% as the max admin fee rate
     uint256 public constant MAX_ADMIN_FEE_RATE = 6e17;
@@ -86,12 +90,11 @@ contract FeeDistributor is CoreUtility, Ownable {
         address admin_,
         uint256 adminFeeRate_
     ) public {
-        require(adminFeeRate_ <= MAX_ADMIN_FEE_RATE, "Cannot exceed max admin fee rate");
         rewardToken = IERC20(rewardToken_);
         votingEscrow = IVotingEscrow(votingEscrow_);
         _maxTime = IVotingEscrow(votingEscrow_).maxTime();
-        admin = admin_;
-        adminFeeRate = adminFeeRate_;
+        _updateAdmin(admin_);
+        _updateAdminFeeRate(adminFeeRate_);
         checkpointTimestamp = block.timestamp;
     }
 
@@ -103,11 +106,10 @@ contract FeeDistributor is CoreUtility, Ownable {
         return _totalSupplyAtTimestamp(block.timestamp);
     }
 
-    function balanceOfAtTimestamp(address account, uint256 timestamp)
-        external
-        view
-        returns (uint256)
-    {
+    function balanceOfAtTimestamp(
+        address account,
+        uint256 timestamp
+    ) external view returns (uint256) {
         require(timestamp >= checkpointTimestamp, "Must be current or future time");
         return _balanceAtTimestamp(userLockedBalances[account], timestamp);
     }
@@ -146,9 +148,10 @@ contract FeeDistributor is CoreUtility, Ownable {
         userCheckpoint(account);
 
         uint256 nextWeek = _endOfWeek(block.timestamp);
-        IVotingEscrow.LockedBalance memory newLockedBalance =
-            votingEscrow.getLockedBalance(account);
-        if (newLockedBalance.amount == 0 || newLockedBalance.unlockTime <= nextWeek) {
+        IVotingEscrow.LockedBalance memory newLockedBalance = votingEscrow.getLockedBalance(
+            account
+        );
+        if (newLockedBalance.unlockTime <= nextWeek) {
             return;
         }
         IVotingEscrow.LockedBalance memory oldLockedBalance = userLockedBalances[account];
@@ -159,8 +162,7 @@ contract FeeDistributor is CoreUtility, Ownable {
         if (oldLockedBalance.amount > 0 && oldLockedBalance.unlockTime > nextWeek) {
             scheduledUnlock[oldLockedBalance.unlockTime] = scheduledUnlock[
                 oldLockedBalance.unlockTime
-            ]
-                .sub(oldLockedBalance.amount);
+            ].sub(oldLockedBalance.amount);
             newNextWeekLocked = newNextWeekLocked.sub(oldLockedBalance.amount);
             newNextWeekSupply = newNextWeekSupply.sub(
                 oldLockedBalance.amount.mul(oldLockedBalance.unlockTime - nextWeek) / _maxTime
@@ -194,11 +196,25 @@ contract FeeDistributor is CoreUtility, Ownable {
     }
 
     function claimRewards(address account) external returns (uint256 rewards) {
+        rewards = _claimRewards(account);
+        rewardToken.safeTransfer(account, rewards);
+    }
+
+    function claimRewardsAndUnwrap(address account) external returns (uint256 rewards) {
+        rewards = _claimRewards(account);
+        IWrappedERC20(address(rewardToken)).withdraw(rewards);
+        (bool success, ) = account.call{value: rewards}("");
+        require(success, "Transfer failed");
+    }
+
+    /// @notice Receive unwrapped transfer from the wrapped token.
+    receive() external payable {}
+
+    function _claimRewards(address account) private returns (uint256 rewards) {
         checkpoint();
         rewards = claimableRewards[account].add(_rewardCheckpoint(account));
         claimableRewards[account] = 0;
         lastRewardBalance = lastRewardBalance.sub(rewards);
-        rewardToken.safeTransfer(account, rewards);
     }
 
     /// @notice Make a global checkpoint. If the period since the last checkpoint spans over
@@ -269,13 +285,24 @@ contract FeeDistributor is CoreUtility, Ownable {
         checkpointTimestamp = block.timestamp;
     }
 
-    function updateAdmin(address newAdmin) external onlyOwner {
+    function _updateAdmin(address newAdmin) private {
         admin = newAdmin;
+        emit AdminUpdated(newAdmin);
+    }
+
+    function updateAdmin(address newAdmin) external onlyOwner {
+        _updateAdmin(newAdmin);
+    }
+
+    function _updateAdminFeeRate(uint256 newAdminFeeRate) private {
+        require(newAdminFeeRate <= MAX_ADMIN_FEE_RATE, "Cannot exceed max admin fee rate");
+        adminFeeRate = newAdminFeeRate;
+        emit AdminFeeRateUpdated(newAdminFeeRate);
     }
 
     function updateAdminFeeRate(uint256 newAdminFeeRate) external onlyOwner {
-        require(newAdminFeeRate <= MAX_ADMIN_FEE_RATE, "Cannot exceed max admin fee rate");
-        adminFeeRate = newAdminFeeRate;
+        checkpoint();
+        _updateAdminFeeRate(newAdminFeeRate);
     }
 
     /// @dev Calculate rewards since a user's last checkpoint and make a new checkpoint.
@@ -299,10 +326,9 @@ contract FeeDistributor is CoreUtility, Ownable {
 
         // The week of the last user checkpoint has ended.
         uint256 lastBalance = userLastBalances[account];
-        uint256 rewards =
-            lastBalance > 0
-                ? lastBalance.mul(rewardsPerWeek[weekCursor]) / veSupplyPerWeek[weekCursor]
-                : 0;
+        uint256 rewards = lastBalance > 0
+            ? lastBalance.mul(rewardsPerWeek[weekCursor]) / veSupplyPerWeek[weekCursor]
+            : 0;
         weekCursor += 1 weeks;
 
         // Iterate over succeeding weeks and calculate rewards.

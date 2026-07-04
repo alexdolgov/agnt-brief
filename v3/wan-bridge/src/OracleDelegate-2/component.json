@@ -1,18 +1,42 @@
 {
   "component": "OracleDelegate-2",
   "main_contract": "OracleDelegate",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 6,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xc21e5553c8dddf2e4a93e5bedbae436d4291f603",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x70114d2a0ec788bafee869acf7fd1f8c76491799",
+      "is_proxy": true,
+      "implementation_address": "0x290108879b633557cb35e8baa57ea9216278a61b",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x4c0cadc3f72992c95475e55506b27b451b04c11a",
+      "is_proxy": true,
+      "implementation_address": "0x9c11539603661b6c90e65e96aa8ac4b8e4b914c8",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xdf8af8c2e8cad112e501c4c3c639a3380985e3fe",
+      "is_proxy": true,
+      "implementation_address": "0x7e0195a43a5dd27c507a1f0b2371d543c9e4dfc9",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x8d42d317b2bd6b60183461ed41bd00f17c3f3fe8",
+      "is_proxy": true,
+      "implementation_address": "0xbe5187c2a7eb776c1caeed2c37e7599fb05000d3",
+      "liveness": "inactive"
     }
   ]
 }

@@ -54,8 +54,8 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
     bytes32 private constant _REENTRANCY_GUARD_SLOT = bytes32(uint256(keccak256("eip1967.proxy.reentrancyGuard")) - 1);
     bytes32 private constant _VAULT_FACTORY_SLOT = bytes32(uint256(keccak256("eip1967.proxy.vaultFactory")) - 1);
 
-    uint256 internal constant _NOT_ENTERED = 1;
-    uint256 internal constant _ENTERED = 2;
+    uint256 private constant _NOT_ENTERED = 1;
+    uint256 private constant _ENTERED = 2;
 
     // =================================================
     // ================ Field Variables ================
@@ -94,21 +94,9 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
      *      the `nonReentrant` function external, and making it call a `private` function that does the actual work.
      */
     modifier nonReentrant() {
-        // @notice:  This MUST stay as `value != _ENTERED` otherwise it will DOS old vaults that don't have the
-        //          `initialize` fix
-        Require.that(
-            _getUint256(_REENTRANCY_GUARD_SLOT) != _ENTERED,
-            _FILE,
-            "Reentrant call"
-        );
-
-        // Any calls to nonReentrant after this point will fail
-        _setUint256(_REENTRANCY_GUARD_SLOT, _ENTERED);
-
+        _nonReentrantBefore();
         _;
-
-        // By storing the original value once again, a refund is triggered (see https://eips.ethereum.org/EIPS/eip-2200)
-        _setUint256(_REENTRANCY_GUARD_SLOT, _NOT_ENTERED);
+        _nonReentrantAfter();
     }
 
     // ===================================================
@@ -265,15 +253,10 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
         nonReentrant
         onlyVaultOwnerOrConverter(msg.sender)
     {
-        Require.that(
-            _marketIdsPath[0] == marketId(),
-            _FILE,
-            "Invalid first marketId",
-            _marketIdsPath[0]
-        );
         _checkMsgValue();
-        _openBorrowPosition(_fromAccountNumber, _borrowAccountNumber, _inputAmountWei);
-        _swapExactInputForOutput(
+        _openBorrowPosition(_fromAccountNumber, _borrowAccountNumber, /* _amountWei = */ 0);
+        _addCollateralAndSwapExactInputForOutput(
+            _fromAccountNumber,
             _borrowAccountNumber,
             _marketIdsPath,
             _inputAmountWei,
@@ -530,7 +513,8 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
             _marketId,
             _amountWei,
             _balanceCheckFlag,
-            /* _checkAllowableCollateralMarketFlag =  */ true
+            /* _checkAllowableCollateralMarketFlag =  */ true,
+            /* _bypassAccountNumberCheck = */ false
         );
     }
 
@@ -566,7 +550,8 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
             _toAccountNumber,
             _marketId,
             _amountWei,
-            _balanceCheckFlag
+            _balanceCheckFlag,
+            /* _bypassAccountNumberCheck = */ false
         );
     }
 
@@ -658,7 +643,8 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
             _tradersPath,
             _makerAccounts,
             _userConfig,
-            /* _checkOutputMarketIdFlag = */ true
+            /* _checkOutputMarketIdFlag = */ true,
+            /* _bypassAccountNumberCheck = */ false
         );
     }
 
@@ -718,5 +704,27 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
             _FILE,
             "Cannot send ETH"
         );
+    }
+
+    // ===========================================
+    // ============ Private Functions ============
+    // ===========================================
+
+    function _nonReentrantBefore() private {
+        // @notice:  This MUST stay as `value != _ENTERED` otherwise it will DOS old vaults that don't have the
+        //          `initialize` fix
+        Require.that(
+            _getUint256(_REENTRANCY_GUARD_SLOT) != _ENTERED,
+            _FILE,
+            "Reentrant call"
+        );
+
+        // Any calls to nonReentrant after this point will fail
+        _setUint256(_REENTRANCY_GUARD_SLOT, _ENTERED);
+    }
+
+    function _nonReentrantAfter() private {
+        // By storing the original value once again, a refund is triggered (see https://eips.ethereum.org/EIPS/eip-2200)
+        _setUint256(_REENTRANCY_GUARD_SLOT, _NOT_ENTERED);
     }
 }

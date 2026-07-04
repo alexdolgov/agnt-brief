@@ -1,0 +1,18 @@
+{
+  "component": "NonfungibleTokenPositionDescriptor-2",
+  "main_contract": "NonfungibleTokenPositionDescriptor",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0xa51adb08cbe6ae398046a23bec013979816b77ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

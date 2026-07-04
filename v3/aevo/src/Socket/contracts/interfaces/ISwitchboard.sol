@@ -8,16 +8,16 @@ pragma solidity 0.8.7;
  */
 interface ISwitchboard {
     /**
-     * @notice Registers itself in Socket for given `siblingChainSlug_`.
-     * @dev This function is expected to be only called by admin as it handles the capacitor config for given chain
-     * @param siblingChainSlug_ The slug of the sibling chain to register switchboard with.
-     * @param maxPacketLength_ The maximum length of a packet allowed by the switchboard.
-     * @param capacitorType_ The type of capacitor that the switchboard uses.
+     * @notice Registers a capacitor to the switchboard.
+     * @dev The capacitor is identified by its address and a unique `siblingChainSlug`.
+     * @param siblingChainSlug_ The unique identifier for the sibling chain the capacitor is connected to.
+     * @param capacitor_ The address of the capacitor contract.
+     * @param maxPacketSize_ The maximum size of the packets that can be sent through this capacitor.
      */
-    function registerSiblingSlug(
+    function registerCapacitor(
         uint32 siblingChainSlug_,
-        uint256 maxPacketLength_,
-        uint256 capacitorType_
+        address capacitor_,
+        uint256 maxPacketSize_
     ) external;
 
     /**

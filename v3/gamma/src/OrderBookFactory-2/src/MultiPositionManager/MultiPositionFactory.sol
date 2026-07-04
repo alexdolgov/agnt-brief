@@ -44,7 +44,7 @@ contract MultiPositionFactory is IMultiPositionFactory, Ownable, Multicall {
     address public feeRecipient;
 
     // Protocol fee (denominator for fee calculation, e.g., 10 = 10%, 20 = 5%)
-    uint16 public protocolFee = 20;
+    uint16 public protocolFee = 10;
 
     // Pool manager for all deployments
     IPoolManager public immutable poolManager;
@@ -186,6 +186,20 @@ contract MultiPositionFactory is IMultiPositionFactory, Ownable, Multicall {
         return managerAddress;
     }
 
+    /**
+     * @notice Grants relayer role on an existing manager through the canonical factory trust path
+     * @param mpm The manager to update
+     * @param relayer The relayer to authorize
+     */
+    function grantRelayerRoleForManager(address mpm, address relayer) external override {
+        if (msg.sender != owner() && !_roles[CLAIM_MANAGER][msg.sender] && !_roles[FEE_MANAGER][msg.sender]) {
+            revert UnauthorizedAccess();
+        }
+        if (managers[mpm].managerAddress == address(0)) revert InvalidAddress();
+
+        MultiPositionManager(payable(mpm)).grantRelayerRoleFromFactory(relayer);
+    }
+
     function _validateExistingManager(address managerAddress, PoolKey memory poolKey, address managerOwner)
         private
         view
@@ -198,10 +212,8 @@ contract MultiPositionFactory is IMultiPositionFactory, Ownable, Multicall {
 
     function _poolKeysEqual(PoolKey memory a, PoolKey memory b) private pure returns (bool) {
         return Currency.unwrap(a.currency0) == Currency.unwrap(b.currency0)
-            && Currency.unwrap(a.currency1) == Currency.unwrap(b.currency1)
-            && a.fee == b.fee
-            && a.tickSpacing == b.tickSpacing
-            && address(a.hooks) == address(b.hooks);
+            && Currency.unwrap(a.currency1) == Currency.unwrap(b.currency1) && a.fee == b.fee
+            && a.tickSpacing == b.tickSpacing && address(a.hooks) == address(b.hooks);
     }
 
     /**
@@ -229,6 +241,7 @@ contract MultiPositionFactory is IMultiPositionFactory, Ownable, Multicall {
         // Input validation
         if (managerOwner == address(0)) revert InvalidAddress();
         if (to == address(0)) revert InvalidAddress();
+        if (!isPoolInitialized(poolKey)) revert PoolNotInitialized();
 
         address predicted = _computeAddress(poolKey, managerOwner, name);
         if (predicted.code.length > 0) {
@@ -289,6 +302,7 @@ contract MultiPositionFactory is IMultiPositionFactory, Ownable, Multicall {
         if (swapParams.aggregatorAddress != aggregatorAddress[uint8(swapParams.aggregator)]) {
             revert InvalidAddress();
         }
+        if (!isPoolInitialized(poolKey)) revert PoolNotInitialized();
 
         address predicted = _computeAddress(poolKey, managerOwner, name);
         if (predicted.code.length > 0) {
@@ -354,7 +368,7 @@ contract MultiPositionFactory is IMultiPositionFactory, Ownable, Multicall {
         if (existing.basePositionsLength() != 0 || existing.limitPositionsLength() != 0) {
             revert MPMAlreadyInitialized();
         }
-        (address strategy,,,,,,,,,) = existing.lastStrategyParams();
+        (address strategy,,,,,,,,,,) = existing.lastStrategyParams();
         if (strategy != address(0)) revert MPMAlreadyInitialized();
     }
 

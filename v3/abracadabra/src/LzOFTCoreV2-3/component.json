@@ -1,0 +1,50 @@
+{
+  "component": "LzOFTCoreV2-3",
+  "main_contract": "LzOFTCoreV2",
+  "source_file_count": 22,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa3ba2164553d2f266863968641a9ca47525cb11d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xab137bb12e93fedb8b639771c4c4fe29ac138ee6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf4b36812d1645dca9d562846e3abf416d590349e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x15f57fbcb7a443ac6022e051a46cae19491bc298",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x56d924066bf9ef61caa26f8f1aeb451ea950e475",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

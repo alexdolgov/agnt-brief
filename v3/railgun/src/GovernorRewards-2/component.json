@@ -1,0 +1,44 @@
+{
+  "component": "GovernorRewards-2",
+  "main_contract": "GovernorRewards",
+  "source_file_count": 17,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://assets.railgun.org/docs/audits/2022-08-29%20Hashcloak.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27d30e803a0ec079daa3a2e6c3590cca9f63c9d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9cfa13a191cc37ee5f76c2f070bfab8a3208f465",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7d9ef64f35b6afda8d258d1d2548a9ac997e35a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb8af889809211fb9496de885240593c1a9efd3a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

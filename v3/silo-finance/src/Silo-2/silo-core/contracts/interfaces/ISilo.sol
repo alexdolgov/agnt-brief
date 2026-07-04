@@ -1,13 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0;
 
-import {IERC4626, IERC20, IERC20Metadata} from "openzeppelin5/interfaces/IERC4626.sol";
+import {IERC4626, IERC20} from "openzeppelin5/interfaces/IERC4626.sol";
 
 import {IERC3156FlashLender} from "./IERC3156FlashLender.sol";
 import {ISiloConfig} from "./ISiloConfig.sol";
 import {ISiloFactory} from "./ISiloFactory.sol";
-
-import {IHookReceiver} from "./IHookReceiver.sol";
 
 // solhint-disable ordering
 interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
@@ -99,12 +97,24 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
         uint64 interestRateTimestamp;
     }
 
+    /// @dev Interest and revenue may be rounded down to zero if the underlying token's decimal is low.
+    /// Because of that, we need to store fractions for further calculation to minimize losses.
+    struct Fractions {
+        /// @dev interest value that we could not convert to full token in 36 decimals, max value for it is 1e18.
+        /// this value was not yet apply as interest for borrowers
+        uint64 interest;
+        /// @dev revenue value that we could not convert to full token in 36 decimals, max value for it is 1e18.
+        uint64 revenue;
+    }
+
     struct SiloStorage {
         /// @param daoAndDeployerRevenue Current amount of assets (fees) accrued by DAO and Deployer
         /// but not yet withdrawn
         uint192 daoAndDeployerRevenue;
         /// @dev timestamp of the last interest accrual
         uint64 interestRateTimestamp;
+        /// @dev Interest and revenue fractions for more precise calculations
+        Fractions fractions;
 
         /// @dev silo is just for one asset,
         /// but this one asset can be of three types: mapping key is uint256(AssetType), so we store `assets` by type.
@@ -162,11 +172,14 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
 
     event FlashLoan(uint256 amount);
 
-    event WithdrawnFeed(uint256 daoFees, uint256 deployerFees);
+    event WithdrawnFees(uint256 daoFees, uint256 deployerFees, bool redirectedDeployerFees);
+
+    event DeployerFeesRedirected(uint256 deployerFees);
 
     error UnsupportedFlashloanToken();
     error FlashloanAmountTooBig();
     error NothingToWithdraw();
+    error ProtectedProtection();
     error NotEnoughLiquidity();
     error NotSolvent();
     error BorrowNotPossible();
@@ -183,6 +196,7 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
     error InputZeroShares();
     error ReturnZeroAssets();
     error ReturnZeroShares();
+    error Deprecated();
 
     /// @return siloFactory The associated factory of the silo
     function factory() external view returns (ISiloFactory siloFactory);
@@ -236,6 +250,9 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
             uint256 collateralAssets,
             uint256 debtAssets
         );
+
+    /// @notice Direct access to silo storage fractions variables
+    function getFractionsStorage() external view returns (Fractions memory fractions);
 
     /// @notice Retrieves the total amount of collateral (borrowable) assets with interest
     /// @return totalCollateralAssets The total amount of assets of type 'Collateral'
@@ -343,19 +360,10 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
     /// @return assets Amount of assets equivalent to the provided share amount
     function previewBorrowShares(uint256 _shares) external view returns (uint256 assets);
 
-    /// @notice Calculates the maximum amount of assets that can be borrowed by the given address
-    /// @param _borrower Address of the potential borrower
-    /// @return maxAssets Maximum amount of assets that the borrower can borrow, this value is underestimated
-    /// That means, in some cases when you borrow maxAssets, you will be able to borrow again eg. up to 2wei
-    /// Reason for underestimation is to return value that will not cause borrow revert
+    /// @notice deprecated
     function maxBorrowSameAsset(address _borrower) external view returns (uint256 maxAssets);
 
-    /// @notice Allows an address to borrow a specified amount of assets that will be back up with deposit made with the
-    /// same asset
-    /// @param _assets Amount of assets to borrow
-    /// @param _receiver Address receiving the borrowed assets
-    /// @param _borrower Address responsible for the borrowed assets
-    /// @return shares Amount of shares equivalent to the borrowed assets
+    /// @notice deprecated
     function borrowSameAsset(uint256 _assets, address _receiver, address _borrower)
         external returns (uint256 shares);
 
@@ -411,8 +419,7 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
         external
         returns (uint256 assets);
 
-    /// @notice Switches the collateral silo to this silo
-    /// @dev Revert if the collateral silo is already set
+    /// @notice deprecated
     function switchCollateralToThisSilo() external;
 
     /// @notice Accrues interest for the asset and returns the accrued interest amount

@@ -1,0 +1,34 @@
+{
+  "component": "StratX-5",
+  "main_contract": "StratX",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4551e51d882a7cf23b80f189fcce2aa1c1b6ee99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa5ca6b946eb8a2218045489c7514d5b63b6b1e22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf2aec8da15e910da8b6da0c343c05315b747209d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

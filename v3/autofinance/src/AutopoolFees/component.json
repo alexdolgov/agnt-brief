@@ -1,15 +1,39 @@
 {
   "component": "AutopoolFees",
   "main_contract": "AutopoolFees",
-  "source_file_count": 64,
-  "deployment_count": 1,
+  "source_file_count": 61,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x05e14bc4e4eb7db75354256ae239b8567f372c45",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06958df2389591f4818658d02d03f2e3ed32cfc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x852212777486685b4a0965c2f52e95422cdbafff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8350c5246808d1def878e41e8668b76df709b11e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x4edb7c820526a247d640d5bdccbbd2b6c35e2c64",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

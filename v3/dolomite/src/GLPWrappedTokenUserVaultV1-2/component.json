@@ -1,0 +1,18 @@
+{
+  "component": "GLPWrappedTokenUserVaultV1-2",
+  "main_contract": "GLPWrappedTokenUserVaultV1",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc525abadae4c27b40c462fae8a1e7011e3f1531",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

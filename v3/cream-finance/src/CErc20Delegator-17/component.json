@@ -1,0 +1,18 @@
+{
+  "component": "CErc20Delegator-17",
+  "main_contract": "CErc20Delegator",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaac5b4bd9528887802e5bd6994afdf1bb0fb1cc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

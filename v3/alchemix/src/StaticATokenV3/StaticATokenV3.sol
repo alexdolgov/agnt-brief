@@ -668,6 +668,7 @@ interface IScaledBalanceToken {
 // File src/interfaces/external/aave/IAaveIncentivesController.sol
 
 pragma solidity >=0.5.0;
+pragma experimental ABIEncoderV2;
 
 interface IAaveIncentivesController {
   event RewardsAccrued(address indexed user, uint256 amount);
@@ -1649,7 +1650,7 @@ library Address {
      * imposed by `transfer`, making them unable to receive funds via
      * `transfer`. {sendValue} removes this limitation.
      *
-     * https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/[Learn more].
+     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].
      *
      * IMPORTANT: because control is transferred to `recipient`, care must be
      * taken to not create reentrancy vulnerabilities. Consider using
@@ -1948,7 +1949,7 @@ library SafeERC20 {
      */
     function _callOptionalReturn(IERC20 token, bytes memory data) private {
         // We need to perform a low level call here, to bypass Solidity's return data size checking mechanism, since
-        // we're implementing it ourselves. We use {Address-functionCall} to perform this call, which verifies that
+        // we're implementing it ourselves. We use {Address.functionCall} to perform this call, which verifies that
         // the target address contains contract code and also asserts for success in the low-level call.
 
         bytes memory returndata = address(token).functionCall(data, "SafeERC20: low-level call failed");
@@ -2438,7 +2439,6 @@ error IllegalArgument();
 // File src/external/aave/StaticATokenV3.sol
 
 pragma solidity >=0.5.0;
-pragma experimental ABIEncoderV2;
 
 
 

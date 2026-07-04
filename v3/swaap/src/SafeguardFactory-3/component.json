@@ -1,0 +1,37 @@
+{
+  "component": "SafeguardFactory-3",
+  "main_contract": "SafeguardFactory",
+  "source_file_count": 61,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/swaap-labs/swaap-v2-monorepo/blob/main/audits/quantstamp/quantstamp_SafeguardPool_audit.pdf",
+    "https://reports.chainsecurity.com/Swaap/ChainSecurity_Swaap_SafeguardPool_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03c01acae3d0173a93d819efdc832c7c4f153b06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc74bd5d8d2d333d14475e022325555eba3369b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd315a9c38ec871068fec378e4ce78af528c76293",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "SportsAMMV2RiskManager-4",
+  "main_contract": "SportsAMMV2RiskManager",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2c18ac2b33e6f9d97abf8b3bf02d6bbee75eb3fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc51bbdb18db3ffe3685f0294a2cc98b442ca0088",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

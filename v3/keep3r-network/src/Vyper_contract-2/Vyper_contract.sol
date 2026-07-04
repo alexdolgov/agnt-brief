@@ -1,686 +1,812 @@
-# @version 0.2.4
+# @version 0.2.15
 """
-@title Voting Escrow
-@author Curve Finance
-@license MIT
-@notice Votes have a weight depending on time, so that users are
-        committed to the future of (whatever they are voting for)
-@dev Vote weight decays linearly over time. Lock time cannot be
-     more than `MAXTIME` (4 years).
+@title StableSwap
+@author Curve.Fi
+@license Copyright (c) Curve.Fi, 2020-2021 - all rights reserved
+@notice 2 coin pool implementation with no lending
+@dev Optimized to only support ERC20's with 18 decimals that return True/revert
 """
 
-# Voting escrow to have time-weighted votes
-# Votes have a weight depending on time, so that users are committed
-# to the future of (whatever they are voting for).
-# The weight in this implementation is linear, and lock cannot be more than maxtime:
-# w ^
-# 1 +        /
-#   |      /
-#   |    /
-#   |  /
-#   |/
-# 0 +--------+------> time
-#       maxtime (4 years?)
+from vyper.interfaces import ERC20
 
-struct Point:
-    bias: int128
-    slope: int128  # - dweight / dt
-    ts: uint256
-    blk: uint256  # block
-# We cannot really do block numbers per se b/c slope is per time, not per block
-# and per block could be fairly bad b/c Ethereum changes blocktimes.
-# What we can do is to extrapolate ***At functions
-
-struct LockedBalance:
-    amount: int128
-    end: uint256
+interface Factory:
+    def convert_fees() -> bool: nonpayable
+    def get_fee_receiver(_pool: address) -> address: view
+    def admin() -> address: view
 
 
-interface ERC20:
-    def decimals() -> uint256: view
-    def name() -> String[64]: view
-    def symbol() -> String[32]: view
-    def transfer(to: address, amount: uint256) -> bool: nonpayable
-    def transferFrom(spender: address, to: address, amount: uint256) -> bool: nonpayable
-
-
-# Interface for checking whether address belongs to a whitelisted
-# type of a smart wallet.
-# When new types are added - the whole contract is changed
-# The check() method is modifying to be able to use caching
-# for individual wallet addresses
-interface SmartWalletChecker:
-    def check(addr: address) -> bool: nonpayable
-
-DEPOSIT_FOR_TYPE: constant(int128) = 0
-CREATE_LOCK_TYPE: constant(int128) = 1
-INCREASE_LOCK_AMOUNT: constant(int128) = 2
-INCREASE_UNLOCK_TIME: constant(int128) = 3
-
-event SetBreaker:
-    _break: bool
-
-event CommitOwnership:
-    admin: address
-
-event ApplyOwnership:
-    admin: address
-
-event Deposit:
-    provider: indexed(address)
+event Transfer:
+    sender: indexed(address)
+    receiver: indexed(address)
     value: uint256
-    locktime: indexed(uint256)
-    type: int128
-    ts: uint256
 
-event Withdraw:
-    provider: indexed(address)
+event Approval:
+    owner: indexed(address)
+    spender: indexed(address)
     value: uint256
-    ts: uint256
 
-event Supply:
-    prevSupply: uint256
-    supply: uint256
+event TokenExchange:
+    buyer: indexed(address)
+    sold_id: int128
+    tokens_sold: uint256
+    bought_id: int128
+    tokens_bought: uint256
+
+event AddLiquidity:
+    provider: indexed(address)
+    token_amounts: uint256[N_COINS]
+    fees: uint256[N_COINS]
+    invariant: uint256
+    token_supply: uint256
+
+event RemoveLiquidity:
+    provider: indexed(address)
+    token_amounts: uint256[N_COINS]
+    fees: uint256[N_COINS]
+    token_supply: uint256
+
+event RemoveLiquidityOne:
+    provider: indexed(address)
+    token_amount: uint256
+    coin_amount: uint256
+    token_supply: uint256
+
+event RemoveLiquidityImbalance:
+    provider: indexed(address)
+    token_amounts: uint256[N_COINS]
+    fees: uint256[N_COINS]
+    invariant: uint256
+    token_supply: uint256
+
+event RampA:
+    old_A: uint256
+    new_A: uint256
+    initial_time: uint256
+    future_time: uint256
+
+event StopRampA:
+    A: uint256
+    t: uint256
 
 
-WEEK: constant(uint256) = 7 * 86400  # all future times are rounded by week
-MAXTIME: constant(uint256) = 4 * 365 * 86400  # 4 years
-MULTIPLIER: constant(uint256) = 10 ** 18
+N_COINS: constant(int128) = 2
+PRECISION: constant(int128) = 10 ** 18
 
-token: public(address)
-supply: public(uint256)
-breaker: public(bool) # breaker, to protect withdraws if anything ever goes wrong
+FEE_DENOMINATOR: constant(uint256) = 10 ** 10
+ADMIN_FEE: constant(uint256) = 5000000000
 
+A_PRECISION: constant(uint256) = 100
+MAX_A: constant(uint256) = 10 ** 6
+MAX_A_CHANGE: constant(uint256) = 10
+MIN_RAMP_TIME: constant(uint256) = 86400
 
-locked: public(HashMap[address, LockedBalance])
+factory: address
 
-epoch: public(uint256)
-point_history: public(Point[100000000000000000000000000000])  # epoch -> unsigned point
-user_point_history: public(HashMap[address, Point[1000000000]])  # user -> Point[user_epoch]
-user_point_epoch: public(HashMap[address, uint256])
-slope_changes: public(HashMap[uint256, int128])  # time -> signed slope change
+coins: public(address[N_COINS])
+balances: public(uint256[N_COINS])
+fee: public(uint256)  # fee * 1e10
 
-# Aragon's view methods for compatibility
-controller: public(address)
-transfersEnabled: public(bool)
+initial_A: public(uint256)
+future_A: public(uint256)
+initial_A_time: public(uint256)
+future_A_time: public(uint256)
 
 name: public(String[64])
 symbol: public(String[32])
-version: public(String[32])
-decimals: public(uint256)
 
-# Checker for whitelisted (smart contract) wallets which are allowed to deposit
-# The goal is to prevent tokenizing the escrow
-future_smart_wallet_checker: public(address)
-smart_wallet_checker: public(address)
-
-admin: public(address)  # Can and will be a smart contract
-future_admin: public(address)
+balanceOf: public(HashMap[address, uint256])
+allowance: public(HashMap[address, HashMap[address, uint256]])
+totalSupply: public(uint256)
 
 
 @external
-def __init__(token_addr: address, _name: String[64], _symbol: String[32], _version: String[32]):
+def __init__():
+    # we do this to prevent the implementation contract from being used as a pool
+    self.fee = 31337
+
+
+@external
+def initialize(
+    _name: String[32],
+    _symbol: String[10],
+    _coins: address[4],
+    _rate_multipliers: uint256[4],
+    _A: uint256,
+    _fee: uint256,
+):
     """
     @notice Contract constructor
-    @param token_addr `ERC20CRV` token address
-    @param _name Token name
+    @param _name Name of the new pool
     @param _symbol Token symbol
-    @param _version Contract version - required for Aragon compatibility
+    @param _coins List of all ERC20 conract addresses of coins
+    @param _rate_multipliers List of number of decimals in coins
+    @param _A Amplification coefficient multiplied by n ** (n - 1)
+    @param _fee Fee to charge for exchanges
     """
-    self.admin = msg.sender
-    self.token = token_addr
-    self.point_history[0].blk = block.number
-    self.point_history[0].ts = block.timestamp
-    self.controller = msg.sender
-    self.transfersEnabled = True
+    # check if fee was already set to prevent initializing contract twice
+    assert self.fee == 0
 
-    _decimals: uint256 = ERC20(token_addr).decimals()
-    assert _decimals <= 255
-    self.decimals = _decimals
+    for i in range(N_COINS):
+        coin: address = _coins[i]
+        if coin == ZERO_ADDRESS:
+            break
+        self.coins[i] = coin
+        assert _rate_multipliers[i] == PRECISION
 
-    self.name = _name
-    self.symbol = _symbol
-    self.version = _version
+    A: uint256 = _A * A_PRECISION
+    self.initial_A = A
+    self.future_A = A
+    self.fee = _fee
+    self.factory = msg.sender
+
+    self.name = concat("Curve.fi Factory Plain Pool: ", _name)
+    self.symbol = concat(_symbol, "-f")
+
+    # fire a transfer event so block explorers identify the contract as an ERC20
+    log Transfer(ZERO_ADDRESS, self, 0)
 
 
+### ERC20 Functionality ###
+
+@view
 @external
-def set_breaker(_break: bool):
+def decimals() -> uint256:
     """
-    @notice set _break = True so that users can withdraw, ignoring lock end time
-    @param _break Boolean the break state
+    @notice Get the number of decimals for this token
+    @dev Implemented as a view method to reduce gas costs
+    @return uint256 decimal places
     """
-    assert msg.sender == self.admin  # dev: admin only
-    self.breaker = _break
-    log SetBreaker(_break)
-
-@external
-def commit_transfer_ownership(addr: address):
-    """
-    @notice Transfer ownership of VotingEscrow contract to `addr`
-    @param addr Address to have ownership transferred to
-    """
-    assert msg.sender == self.admin  # dev: admin only
-    self.future_admin = addr
-    log CommitOwnership(addr)
-
-
-@external
-def apply_transfer_ownership():
-    """
-    @notice Apply ownership transfer
-    """
-    assert msg.sender == self.admin  # dev: admin only
-    _admin: address = self.future_admin
-    assert _admin != ZERO_ADDRESS  # dev: admin not set
-    self.admin = _admin
-    log ApplyOwnership(_admin)
-
-
-@external
-def commit_smart_wallet_checker(addr: address):
-    """
-    @notice Set an external contract to check for approved smart contract wallets
-    @param addr Address of Smart contract checker
-    """
-    assert msg.sender == self.admin
-    self.future_smart_wallet_checker = addr
-
-
-@external
-def apply_smart_wallet_checker():
-    """
-    @notice Apply setting external contract to check approved smart contract wallets
-    """
-    assert msg.sender == self.admin
-    self.smart_wallet_checker = self.future_smart_wallet_checker
+    return 18
 
 
 @internal
-def assert_not_contract(addr: address):
-    """
-    @notice Check if the call is from a whitelisted smart contract, revert if not
-    @param addr Address to be checked
-    """
-    if addr != tx.origin:
-        checker: address = self.smart_wallet_checker
-        if checker != ZERO_ADDRESS:
-            if SmartWalletChecker(checker).check(addr):
-                return
-        raise "Smart contract depositors not allowed"
+def _transfer(_from: address, _to: address, _value: uint256):
+    # # NOTE: vyper does not allow underflows
+    # #       so the following subtraction would revert on insufficient balance
+    self.balanceOf[_from] -= _value
+    self.balanceOf[_to] += _value
+
+    log Transfer(_from, _to, _value)
 
 
 @external
-@view
-def get_last_user_slope(addr: address) -> int128:
+def transfer(_to : address, _value : uint256) -> bool:
     """
-    @notice Get the most recently recorded rate of voting power decrease for `addr`
-    @param addr Address of the user wallet
-    @return Value of the slope
+    @dev Transfer token for a specified address
+    @param _to The address to transfer to.
+    @param _value The amount to be transferred.
     """
-    uepoch: uint256 = self.user_point_epoch[addr]
-    return self.user_point_history[addr][uepoch].slope
+    self._transfer(msg.sender, _to, _value)
+    return True
 
 
 @external
-@view
-def user_point_history__ts(_addr: address, _idx: uint256) -> uint256:
+def transferFrom(_from : address, _to : address, _value : uint256) -> bool:
     """
-    @notice Get the timestamp for checkpoint `_idx` for `_addr`
-    @param _addr User wallet address
-    @param _idx User epoch number
-    @return Epoch time of the checkpoint
+     @dev Transfer tokens from one address to another.
+     @param _from address The address which you want to send tokens from
+     @param _to address The address which you want to transfer to
+     @param _value uint256 the amount of tokens to be transferred
     """
-    return self.user_point_history[_addr][_idx].ts
+    self._transfer(_from, _to, _value)
+
+    _allowance: uint256 = self.allowance[_from][msg.sender]
+    if _allowance != MAX_UINT256:
+        self.allowance[_from][msg.sender] = _allowance - _value
+
+    return True
 
 
 @external
+def approve(_spender : address, _value : uint256) -> bool:
+    """
+    @notice Approve the passed address to transfer the specified amount of
+            tokens on behalf of msg.sender
+    @dev Beware that changing an allowance via this method brings the risk that
+         someone may use both the old and new allowance by unfortunate transaction
+         ordering: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+    @param _spender The address which will transfer the funds
+    @param _value The amount of tokens that may be transferred
+    @return bool success
+    """
+    self.allowance[msg.sender][_spender] = _value
+
+    log Approval(msg.sender, _spender, _value)
+    return True
+
+
+### StableSwap Functionality ###
+
 @view
-def locked__end(_addr: address) -> uint256:
-    """
-    @notice Get timestamp when `_addr`'s lock finishes
-    @param _addr User wallet
-    @return Epoch time of the lock end
-    """
-    return self.locked[_addr].end
+@external
+def get_balances() -> uint256[N_COINS]:
+    return self.balances
 
 
+@view
 @internal
-def _checkpoint(addr: address, old_locked: LockedBalance, new_locked: LockedBalance):
+def _A() -> uint256:
     """
-    @notice Record global and per-user data to checkpoint
-    @param addr User's wallet address. No user checkpoint if 0x0
-    @param old_locked Pevious locked amount / end lock time for the user
-    @param new_locked New locked amount / end lock time for the user
+    Handle ramping A up or down
     """
-    u_old: Point = empty(Point)
-    u_new: Point = empty(Point)
-    old_dslope: int128 = 0
-    new_dslope: int128 = 0
-    _epoch: uint256 = self.epoch
+    t1: uint256 = self.future_A_time
+    A1: uint256 = self.future_A
 
-    if addr != ZERO_ADDRESS:
-        # Calculate slopes and biases
-        # Kept at zero when they have to
-        if old_locked.end > block.timestamp and old_locked.amount > 0:
-            u_old.slope = old_locked.amount / MAXTIME
-            u_old.bias = u_old.slope * convert(old_locked.end - block.timestamp, int128)
-        if new_locked.end > block.timestamp and new_locked.amount > 0:
-            u_new.slope = new_locked.amount / MAXTIME
-            u_new.bias = u_new.slope * convert(new_locked.end - block.timestamp, int128)
+    if block.timestamp < t1:
+        A0: uint256 = self.initial_A
+        t0: uint256 = self.initial_A_time
+        # Expressions in uint256 cannot have negative numbers, thus "if"
+        if A1 > A0:
+            return A0 + (A1 - A0) * (block.timestamp - t0) / (t1 - t0)
+        else:
+            return A0 - (A0 - A1) * (block.timestamp - t0) / (t1 - t0)
 
-        # Read values of scheduled changes in the slope
-        # old_locked.end can be in the past and in the future
-        # new_locked.end can ONLY by in the FUTURE unless everything expired: than zeros
-        old_dslope = self.slope_changes[old_locked.end]
-        if new_locked.end != 0:
-            if new_locked.end == old_locked.end:
-                new_dslope = old_dslope
+    else:  # when t1 == 0 or block.timestamp >= t1
+        return A1
+
+
+@view
+@external
+def admin_fee() -> uint256:
+    return ADMIN_FEE
+
+
+@view
+@external
+def A() -> uint256:
+    return self._A() / A_PRECISION
+
+
+@view
+@external
+def A_precise() -> uint256:
+    return self._A()
+
+
+@pure
+@internal
+def get_D(_xp: uint256[N_COINS], _amp: uint256) -> uint256:
+    """
+    D invariant calculation in non-overflowing integer operations
+    iteratively
+
+    A * sum(x_i) * n**n + D = A * D * n**n + D**(n+1) / (n**n * prod(x_i))
+
+    Converging solution:
+    D[j+1] = (A * n**n * sum(x_i) - D[j]**(n+1) / (n**n prod(x_i))) / (A * n**n - 1)
+    """
+    S: uint256 = 0
+    for x in _xp:
+        S += x
+    if S == 0:
+        return 0
+
+    D: uint256 = S
+    Ann: uint256 = _amp * N_COINS
+    for i in range(255):
+        D_P: uint256 = D * D / _xp[0] * D / _xp[1] / (N_COINS)**2
+        Dprev: uint256 = D
+        D = (Ann * S / A_PRECISION + D_P * N_COINS) * D / ((Ann - A_PRECISION) * D / A_PRECISION + (N_COINS + 1) * D_P)
+        # Equality with the precision of 1
+        if D > Dprev:
+            if D - Dprev <= 1:
+                return D
+        else:
+            if Dprev - D <= 1:
+                return D
+    # convergence typically occurs in 4 rounds or less, this should be unreachable!
+    # if it does happen the pool is borked and LPs can withdraw via `remove_liquidity`
+    raise
+
+
+@view
+@external
+def get_virtual_price() -> uint256:
+    """
+    @notice The current virtual price of the pool LP token
+    @dev Useful for calculating profits
+    @return LP token virtual price normalized to 1e18
+    """
+    amp: uint256 = self._A()
+    D: uint256 = self.get_D(self.balances, amp)
+    # D is in the units similar to DAI (e.g. converted to precision 1e18)
+    # When balanced, D = n * x_u - total virtual value of the portfolio
+    return D * PRECISION / self.totalSupply
+
+
+@view
+@external
+def calc_token_amount(_amounts: uint256[N_COINS], _is_deposit: bool) -> uint256:
+    """
+    @notice Calculate addition or reduction in token supply from a deposit or withdrawal
+    @dev This calculation accounts for slippage, but not fees.
+         Needed to prevent front-running, not for precise calculations!
+    @param _amounts Amount of each coin being deposited
+    @param _is_deposit set True for deposits, False for withdrawals
+    @return Expected amount of LP tokens received
+    """
+    amp: uint256 = self._A()
+    balances: uint256[N_COINS] = self.balances
+
+    D0: uint256 = self.get_D(balances, amp)
+    for i in range(N_COINS):
+        amount: uint256 = _amounts[i]
+        if _is_deposit:
+            balances[i] += amount
+        else:
+            balances[i] -= amount
+    D1: uint256 = self.get_D(balances, amp)
+    diff: uint256 = 0
+    if _is_deposit:
+        diff = D1 - D0
+    else:
+        diff = D0 - D1
+    return diff * self.totalSupply / D0
+
+
+@external
+@nonreentrant('lock')
+def add_liquidity(
+    _amounts: uint256[N_COINS],
+    _min_mint_amount: uint256,
+    _receiver: address = msg.sender
+) -> uint256:
+    """
+    @notice Deposit coins into the pool
+    @param _amounts List of amounts of coins to deposit
+    @param _min_mint_amount Minimum amount of LP tokens to mint from the deposit
+    @param _receiver Address that owns the minted LP tokens
+    @return Amount of LP tokens received by depositing
+    """
+    amp: uint256 = self._A()
+    old_balances: uint256[N_COINS] = self.balances
+
+    # Initial invariant
+    D0: uint256 = self.get_D(old_balances, amp)
+
+    total_supply: uint256 = self.totalSupply
+    new_balances: uint256[N_COINS] = old_balances
+    for i in range(N_COINS):
+        amount: uint256 = _amounts[i]
+        if total_supply == 0:
+            assert amount > 0  # dev: initial deposit requires all coins
+        new_balances[i] += amount
+
+    # Invariant after change
+    D1: uint256 = self.get_D(new_balances, amp)
+    assert D1 > D0
+
+    # We need to recalculate the invariant accounting for fees
+    # to calculate fair user's share
+    fees: uint256[N_COINS] = empty(uint256[N_COINS])
+    mint_amount: uint256 = 0
+    if total_supply > 0:
+        # Only account for fees if we are not the first to deposit
+        base_fee: uint256 = self.fee * N_COINS / (4 * (N_COINS - 1))
+        for i in range(N_COINS):
+            ideal_balance: uint256 = D1 * old_balances[i] / D0
+            difference: uint256 = 0
+            new_balance: uint256 = new_balances[i]
+            if ideal_balance > new_balance:
+                difference = ideal_balance - new_balance
             else:
-                new_dslope = self.slope_changes[new_locked.end]
+                difference = new_balance - ideal_balance
+            fees[i] = base_fee * difference / FEE_DENOMINATOR
+            self.balances[i] = new_balance - (fees[i] * ADMIN_FEE / FEE_DENOMINATOR)
+            new_balances[i] -= fees[i]
+        D2: uint256 = self.get_D(new_balances, amp)
+        mint_amount = total_supply * (D2 - D0) / D0
+    else:
+        self.balances = new_balances
+        mint_amount = D1  # Take the dust if there was any
 
-    last_point: Point = Point({bias: 0, slope: 0, ts: block.timestamp, blk: block.number})
-    if _epoch > 0:
-        last_point = self.point_history[_epoch]
-    last_checkpoint: uint256 = last_point.ts
-    # initial_last_point is used for extrapolation to calculate block number
-    # (approximately, for *At methods) and save them
-    # as we cannot figure that out exactly from inside the contract
-    initial_last_point: Point = last_point
-    block_slope: uint256 = 0  # dblock/dt
-    if block.timestamp > last_point.ts:
-        block_slope = MULTIPLIER * (block.number - last_point.blk) / (block.timestamp - last_point.ts)
-    # If last point is already recorded in this block, slope=0
-    # But that's ok b/c we know the block in such case
+    assert mint_amount >= _min_mint_amount, "Slippage screwed you"
 
-    # Go over weeks to fill history and calculate what the current point is
-    t_i: uint256 = (last_checkpoint / WEEK) * WEEK
-    for i in range(255):
-        # Hopefully it won't happen that this won't get used in 5 years!
-        # If it does, users will be able to withdraw but vote weight will be broken
-        t_i += WEEK
-        d_slope: int128 = 0
-        if t_i > block.timestamp:
-            t_i = block.timestamp
-        else:
-            d_slope = self.slope_changes[t_i]
-        last_point.bias -= last_point.slope * convert(t_i - last_checkpoint, int128)
-        last_point.slope += d_slope
-        if last_point.bias < 0:  # This can happen
-            last_point.bias = 0
-        if last_point.slope < 0:  # This cannot happen - just in case
-            last_point.slope = 0
-        last_checkpoint = t_i
-        last_point.ts = t_i
-        last_point.blk = initial_last_point.blk + block_slope * (t_i - initial_last_point.ts) / MULTIPLIER
-        _epoch += 1
-        if t_i == block.timestamp:
-            last_point.blk = block.number
-            break
-        else:
-            self.point_history[_epoch] = last_point
+    # Take coins from the sender
+    for i in range(N_COINS):
+        amount: uint256 = _amounts[i]
+        if amount > 0:
+            assert ERC20(self.coins[i]).transferFrom(msg.sender, self, amount)
 
-    self.epoch = _epoch
-    # Now point_history is filled until t=now
+    # Mint pool tokens
+    total_supply += mint_amount
+    self.balanceOf[_receiver] += mint_amount
+    self.totalSupply = total_supply
+    log Transfer(ZERO_ADDRESS, _receiver, mint_amount)
 
-    if addr != ZERO_ADDRESS:
-        # If last point was in this block, the slope change has been applied already
-        # But in such case we have 0 slope(s)
-        last_point.slope += (u_new.slope - u_old.slope)
-        last_point.bias += (u_new.bias - u_old.bias)
-        if last_point.slope < 0:
-            last_point.slope = 0
-        if last_point.bias < 0:
-            last_point.bias = 0
+    log AddLiquidity(msg.sender, _amounts, fees, D1, total_supply)
 
-    # Record the changed point into history
-    self.point_history[_epoch] = last_point
-
-    if addr != ZERO_ADDRESS:
-        # Schedule the slope changes (slope is going down)
-        # We subtract new_user_slope from [new_locked.end]
-        # and add old_user_slope to [old_locked.end]
-        if old_locked.end > block.timestamp:
-            # old_dslope was <something> - u_old.slope, so we cancel that
-            old_dslope += u_old.slope
-            if new_locked.end == old_locked.end:
-                old_dslope -= u_new.slope  # It was a new deposit, not extension
-            self.slope_changes[old_locked.end] = old_dslope
-
-        if new_locked.end > block.timestamp:
-            if new_locked.end > old_locked.end:
-                new_dslope -= u_new.slope  # old slope disappeared at this point
-                self.slope_changes[new_locked.end] = new_dslope
-            # else: we recorded it already in old_dslope
-
-        # Now handle user history
-        user_epoch: uint256 = self.user_point_epoch[addr] + 1
-
-        self.user_point_epoch[addr] = user_epoch
-        u_new.ts = block.timestamp
-        u_new.blk = block.number
-        self.user_point_history[addr][user_epoch] = u_new
+    return mint_amount
 
 
+@view
 @internal
-def _deposit_for(_addr: address, _value: uint256, unlock_time: uint256, locked_balance: LockedBalance, type: int128):
+def get_y(i: int128, j: int128, x: uint256, xp: uint256[N_COINS]) -> uint256:
     """
-    @notice Deposit and lock tokens for a user
-    @param _addr User's wallet address
-    @param _value Amount to deposit
-    @param unlock_time New time when to unlock the tokens, or 0 if unchanged
-    @param locked_balance Previous locked amount / timestamp
+    Calculate x[j] if one makes x[i] = x
+
+    Done by solving quadratic equation iteratively.
+    x_1**2 + x_1 * (sum' - (A*n**n - 1) * D / (A * n**n)) = D ** (n + 1) / (n ** (2 * n) * prod' * A)
+    x_1**2 + b*x_1 = c
+
+    x_1 = (x_1**2 + c) / (2*x_1 + b)
     """
-    _locked: LockedBalance = locked_balance
-    supply_before: uint256 = self.supply
+    # x in the input is converted to the same price/precision
 
-    self.supply = supply_before + _value
-    old_locked: LockedBalance = _locked
-    # Adding to existing lock, or if a lock is expired - creating a new one
-    _locked.amount += convert(_value, int128)
-    if unlock_time != 0:
-        _locked.end = unlock_time
-    self.locked[_addr] = _locked
+    assert i != j       # dev: same coin
+    assert j >= 0       # dev: j below zero
+    assert j < N_COINS  # dev: j above N_COINS
 
-    # Possibilities:
-    # Both old_locked.end could be current or expired (>/< block.timestamp)
-    # value == 0 (extend lock) or value > 0 (add to lock or extend lock)
-    # _locked.end > block.timestamp (always)
-    self._checkpoint(_addr, old_locked, _locked)
+    # should be unreachable, but good for safety
+    assert i >= 0
+    assert i < N_COINS
 
-    if _value != 0:
-        assert ERC20(self.token).transferFrom(_addr, self, _value)
+    amp: uint256 = self._A()
+    D: uint256 = self.get_D(xp, amp)
+    S_: uint256 = 0
+    _x: uint256 = 0
+    y_prev: uint256 = 0
+    c: uint256 = D
+    Ann: uint256 = amp * N_COINS
 
-    log Deposit(_addr, _value, _locked.end, type, block.timestamp)
-    log Supply(supply_before, supply_before + _value)
+    for _i in range(N_COINS):
+        if _i == i:
+            _x = x
+        elif _i != j:
+            _x = xp[_i]
+        else:
+            continue
+        S_ += _x
+        c = c * D / (_x * N_COINS)
+
+    c = c * D * A_PRECISION / (Ann * N_COINS)
+    b: uint256 = S_ + D * A_PRECISION / Ann  # - D
+    y: uint256 = D
+
+    for _i in range(255):
+        y_prev = y
+        y = (y*y + c) / (2 * y + b - D)
+        # Equality with the precision of 1
+        if y > y_prev:
+            if y - y_prev <= 1:
+                return y
+        else:
+            if y_prev - y <= 1:
+                return y
+    raise
 
 
+@view
 @external
-def checkpoint():
+def get_dy(i: int128, j: int128, dx: uint256) -> uint256:
     """
-    @notice Record global data to checkpoint
+    @notice Calculate the current output dy given input dx
+    @dev Index values can be found via the `coins` public getter method
+    @param i Index value for the coin to send
+    @param j Index valie of the coin to recieve
+    @param dx Amount of `i` being exchanged
+    @return Amount of `j` predicted
     """
-    self._checkpoint(ZERO_ADDRESS, empty(LockedBalance), empty(LockedBalance))
+    xp: uint256[N_COINS] = self.balances
 
-
-@external
-@nonreentrant('lock')
-def deposit_for(_addr: address, _value: uint256):
-    """
-    @notice Deposit `_value` tokens for `_addr` and add to the lock
-    @dev Anyone (even a smart contract) can deposit for someone else, but
-         cannot extend their locktime and deposit for a brand new user
-    @param _addr User's wallet address
-    @param _value Amount to add to user's lock
-    """
-    _locked: LockedBalance = self.locked[_addr]
-
-    assert _value > 0  # dev: need non-zero value
-    assert _locked.amount > 0, "No existing lock found"
-    assert _locked.end > block.timestamp, "Cannot add to expired lock. Withdraw"
-
-    self._deposit_for(_addr, _value, 0, self.locked[_addr], DEPOSIT_FOR_TYPE)
-
-
-@external
-@nonreentrant('lock')
-def create_lock(_value: uint256, _unlock_time: uint256):
-    """
-    @notice Deposit `_value` tokens for `msg.sender` and lock until `_unlock_time`
-    @param _value Amount to deposit
-    @param _unlock_time Epoch time when tokens unlock, rounded down to whole weeks
-    """
-    self.assert_not_contract(msg.sender)
-    unlock_time: uint256 = (_unlock_time / WEEK) * WEEK  # Locktime is rounded down to weeks
-    _locked: LockedBalance = self.locked[msg.sender]
-
-    assert _value > 0  # dev: need non-zero value
-    assert _locked.amount == 0, "Withdraw old tokens first"
-    assert unlock_time > block.timestamp, "Can only lock until time in the future"
-    assert unlock_time <= block.timestamp + MAXTIME, "Voting lock can be 4 years max"
-
-    self._deposit_for(msg.sender, _value, unlock_time, _locked, CREATE_LOCK_TYPE)
+    x: uint256 = xp[i] + dx
+    y: uint256 = self.get_y(i, j, x, xp)
+    dy: uint256 = xp[j] - y - 1
+    fee: uint256 = self.fee * dy / FEE_DENOMINATOR
+    return dy - fee
 
 
 @external
 @nonreentrant('lock')
-def increase_amount(_value: uint256):
+def exchange(
+    i: int128,
+    j: int128,
+    _dx: uint256,
+    _min_dy: uint256,
+    _receiver: address = msg.sender,
+) -> uint256:
     """
-    @notice Deposit `_value` additional tokens for `msg.sender`
-            without modifying the unlock time
-    @param _value Amount of tokens to deposit and add to the lock
+    @notice Perform an exchange between two coins
+    @dev Index values can be found via the `coins` public getter method
+    @param i Index value for the coin to send
+    @param j Index valie of the coin to recieve
+    @param _dx Amount of `i` being exchanged
+    @param _min_dy Minimum amount of `j` to receive
+    @return Actual amount of `j` received
     """
-    self.assert_not_contract(msg.sender)
-    _locked: LockedBalance = self.locked[msg.sender]
+    old_balances: uint256[N_COINS] = self.balances
 
-    assert _value > 0  # dev: need non-zero value
-    assert _locked.amount > 0, "No existing lock found"
-    assert _locked.end > block.timestamp, "Cannot add to expired lock. Withdraw"
+    x: uint256 = old_balances[i] + _dx
+    y: uint256 = self.get_y(i, j, x, old_balances)
 
-    self._deposit_for(msg.sender, _value, 0, _locked, INCREASE_LOCK_AMOUNT)
+    dy: uint256 = old_balances[j] - y - 1  # -1 just in case there were some rounding errors
+    dy_fee: uint256 = dy * self.fee / FEE_DENOMINATOR
+
+    # Convert all to real units
+    dy -= dy_fee
+    assert dy >= _min_dy, "Exchange resulted in fewer coins than expected"
+
+    dy_admin_fee: uint256 = dy_fee * ADMIN_FEE / FEE_DENOMINATOR
+
+    # Change balances exactly in same way as we change actual ERC20 coin amounts
+    self.balances[i] = old_balances[i] + _dx
+    # When rounding errors happen, we undercharge admin fee in favor of LP
+    self.balances[j] = old_balances[j] - dy - dy_admin_fee
+
+    assert ERC20(self.coins[i]).transferFrom(msg.sender, self, _dx)
+    assert ERC20(self.coins[j]).transfer(_receiver, dy)
+
+    log TokenExchange(msg.sender, i, _dx, j, dy)
+
+    return dy
 
 
 @external
 @nonreentrant('lock')
-def increase_unlock_time(_unlock_time: uint256):
+def remove_liquidity(
+    _burn_amount: uint256,
+    _min_amounts: uint256[N_COINS],
+    _receiver: address = msg.sender
+) -> uint256[N_COINS]:
     """
-    @notice Extend the unlock time for `msg.sender` to `_unlock_time`
-    @param _unlock_time New epoch time for unlocking
+    @notice Withdraw coins from the pool
+    @dev Withdrawal amounts are based on current deposit ratios
+    @param _burn_amount Quantity of LP tokens to burn in the withdrawal
+    @param _min_amounts Minimum amounts of underlying coins to receive
+    @param _receiver Address that receives the withdrawn coins
+    @return List of amounts of coins that were withdrawn
     """
-    self.assert_not_contract(msg.sender)
-    _locked: LockedBalance = self.locked[msg.sender]
-    unlock_time: uint256 = (_unlock_time / WEEK) * WEEK  # Locktime is rounded down to weeks
+    total_supply: uint256 = self.totalSupply
+    amounts: uint256[N_COINS] = empty(uint256[N_COINS])
 
-    assert _locked.end > block.timestamp, "Lock expired"
-    assert _locked.amount > 0, "Nothing is locked"
-    assert unlock_time > _locked.end, "Can only increase lock duration"
-    assert unlock_time <= block.timestamp + MAXTIME, "Voting lock can be 4 years max"
+    for i in range(N_COINS):
+        old_balance: uint256 = self.balances[i]
+        value: uint256 = old_balance * _burn_amount / total_supply
+        assert value >= _min_amounts[i], "Withdrawal resulted in fewer coins than expected"
+        self.balances[i] = old_balance - value
+        amounts[i] = value
+        assert ERC20(self.coins[i]).transfer(_receiver, value)
 
-    self._deposit_for(msg.sender, 0, unlock_time, _locked, INCREASE_UNLOCK_TIME)
+    total_supply -= _burn_amount
+    self.balanceOf[msg.sender] -= _burn_amount
+    self.totalSupply = total_supply
+    log Transfer(msg.sender, ZERO_ADDRESS, _burn_amount)
+
+    log RemoveLiquidity(msg.sender, amounts, empty(uint256[N_COINS]), total_supply)
+
+    return amounts
 
 
 @external
 @nonreentrant('lock')
-def withdraw():
+def remove_liquidity_imbalance(
+    _amounts: uint256[N_COINS],
+    _max_burn_amount: uint256,
+    _receiver: address = msg.sender
+) -> uint256:
     """
-    @notice Withdraw all tokens for `msg.sender`
-    @dev Only possible if the lock has expired
+    @notice Withdraw coins from the pool in an imbalanced amount
+    @param _amounts List of amounts of underlying coins to withdraw
+    @param _max_burn_amount Maximum amount of LP token to burn in the withdrawal
+    @param _receiver Address that receives the withdrawn coins
+    @return Actual amount of the LP token burned in the withdrawal
     """
-    _locked: LockedBalance = self.locked[msg.sender]
-    if not self.breaker:
-        assert block.timestamp >= _locked.end, "The lock didn't expire"
-    value: uint256 = convert(_locked.amount, uint256)
+    amp: uint256 = self._A()
+    old_balances: uint256[N_COINS] = self.balances
+    D0: uint256 = self.get_D(old_balances, amp)
 
-    old_locked: LockedBalance = _locked
-    _locked.end = 0
-    _locked.amount = 0
-    self.locked[msg.sender] = _locked
-    supply_before: uint256 = self.supply
-    self.supply = supply_before - value
+    new_balances: uint256[N_COINS] = old_balances
+    for i in range(N_COINS):
+        new_balances[i] -= _amounts[i]
+    D1: uint256 = self.get_D(new_balances, amp)
 
-    # old_locked can have either expired <= timestamp or zero end
-    # _locked has only 0 end
-    # Both can have >= 0 amount
-    self._checkpoint(msg.sender, old_locked, _locked)
+    fees: uint256[N_COINS] = empty(uint256[N_COINS])
+    base_fee: uint256 = self.fee * N_COINS / (4 * (N_COINS - 1))
+    for i in range(N_COINS):
+        ideal_balance: uint256 = D1 * old_balances[i] / D0
+        difference: uint256 = 0
+        new_balance: uint256 = new_balances[i]
+        if ideal_balance > new_balance:
+            difference = ideal_balance - new_balance
+        else:
+            difference = new_balance - ideal_balance
+        fees[i] = base_fee * difference / FEE_DENOMINATOR
+        self.balances[i] = new_balance - (fees[i] * ADMIN_FEE / FEE_DENOMINATOR)
+        new_balances[i] -= fees[i]
+    D2: uint256 = self.get_D(new_balances, amp)
 
-    assert ERC20(self.token).transfer(msg.sender, value)
+    total_supply: uint256 = self.totalSupply
+    burn_amount: uint256 = ((D0 - D2) * total_supply / D0) + 1
+    assert burn_amount > 1  # dev: zero tokens burned
+    assert burn_amount <= _max_burn_amount, "Slippage screwed you"
 
-    log Withdraw(msg.sender, value, block.timestamp)
-    log Supply(supply_before, supply_before - value)
+    total_supply -= burn_amount
+    self.totalSupply = total_supply
+    self.balanceOf[msg.sender] -= burn_amount
+    log Transfer(msg.sender, ZERO_ADDRESS, burn_amount)
+
+    for i in range(N_COINS):
+        if _amounts[i] != 0:
+            assert ERC20(self.coins[i]).transfer(_receiver, _amounts[i])
+
+    log RemoveLiquidityImbalance(msg.sender, _amounts, fees, D1, total_supply)
+
+    return burn_amount
 
 
-# The following ERC20/minime-compatible methods are not real balanceOf and supply!
-# They measure the weights for the purpose of voting, so they don't represent
-# real coins.
-
+@pure
 @internal
-@view
-def find_block_epoch(_block: uint256, max_epoch: uint256) -> uint256:
+def get_y_D(A: uint256, i: int128, xp: uint256[N_COINS], D: uint256) -> uint256:
     """
-    @notice Binary search to estimate timestamp for block number
-    @param _block Block to find
-    @param max_epoch Don't go beyond this epoch
-    @return Approximate timestamp for block
+    Calculate x[i] if one reduces D from being calculated for xp to D
+
+    Done by solving quadratic equation iteratively.
+    x_1**2 + x_1 * (sum' - (A*n**n - 1) * D / (A * n**n)) = D ** (n + 1) / (n ** (2 * n) * prod' * A)
+    x_1**2 + b*x_1 = c
+
+    x_1 = (x_1**2 + c) / (2*x_1 + b)
     """
-    # Binary search
-    _min: uint256 = 0
-    _max: uint256 = max_epoch
-    for i in range(128):  # Will be always enough for 128-bit numbers
-        if _min >= _max:
-            break
-        _mid: uint256 = (_min + _max + 1) / 2
-        if self.point_history[_mid].blk <= _block:
-            _min = _mid
+    # x in the input is converted to the same price/precision
+
+    assert i >= 0  # dev: i below zero
+    assert i < N_COINS  # dev: i above N_COINS
+
+    S_: uint256 = 0
+    _x: uint256 = 0
+    y_prev: uint256 = 0
+    c: uint256 = D
+    Ann: uint256 = A * N_COINS
+
+    for _i in range(N_COINS):
+        if _i != i:
+            _x = xp[_i]
         else:
-            _max = _mid - 1
-    return _min
+            continue
+        S_ += _x
+        c = c * D / (_x * N_COINS)
 
+    c = c * D * A_PRECISION / (Ann * N_COINS)
+    b: uint256 = S_ + D * A_PRECISION / Ann
+    y: uint256 = D
 
-@external
-@view
-def balanceOf(addr: address, _t: uint256 = block.timestamp) -> uint256:
-    """
-    @notice Get the current voting power for `msg.sender`
-    @dev Adheres to the ERC20 `balanceOf` interface for Aragon compatibility
-    @param addr User wallet address
-    @param _t Epoch time to return voting power at
-    @return User voting power
-    """
-    _epoch: uint256 = self.user_point_epoch[addr]
-    if _epoch == 0:
-        return 0
-    else:
-        last_point: Point = self.user_point_history[addr][_epoch]
-        last_point.bias -= last_point.slope * convert(_t - last_point.ts, int128)
-        if last_point.bias < 0:
-            last_point.bias = 0
-        return convert(last_point.bias, uint256)
-
-
-@external
-@view
-def balanceOfAt(addr: address, _block: uint256) -> uint256:
-    """
-    @notice Measure voting power of `addr` at block height `_block`
-    @dev Adheres to MiniMe `balanceOfAt` interface: https://github.com/Giveth/minime
-    @param addr User's wallet address
-    @param _block Block to calculate the voting power at
-    @return Voting power
-    """
-    # Copying and pasting totalSupply code because Vyper cannot pass by
-    # reference yet
-    assert _block <= block.number
-
-    # Binary search
-    _min: uint256 = 0
-    _max: uint256 = self.user_point_epoch[addr]
-    for i in range(128):  # Will be always enough for 128-bit numbers
-        if _min >= _max:
-            break
-        _mid: uint256 = (_min + _max + 1) / 2
-        if self.user_point_history[addr][_mid].blk <= _block:
-            _min = _mid
+    for _i in range(255):
+        y_prev = y
+        y = (y*y + c) / (2 * y + b - D)
+        # Equality with the precision of 1
+        if y > y_prev:
+            if y - y_prev <= 1:
+                return y
         else:
-            _max = _mid - 1
-
-    upoint: Point = self.user_point_history[addr][_min]
-
-    max_epoch: uint256 = self.epoch
-    _epoch: uint256 = self.find_block_epoch(_block, max_epoch)
-    point_0: Point = self.point_history[_epoch]
-    d_block: uint256 = 0
-    d_t: uint256 = 0
-    if _epoch < max_epoch:
-        point_1: Point = self.point_history[_epoch + 1]
-        d_block = point_1.blk - point_0.blk
-        d_t = point_1.ts - point_0.ts
-    else:
-        d_block = block.number - point_0.blk
-        d_t = block.timestamp - point_0.ts
-    block_time: uint256 = point_0.ts
-    if d_block != 0:
-        block_time += d_t * (_block - point_0.blk) / d_block
-
-    upoint.bias -= upoint.slope * convert(block_time - upoint.ts, int128)
-    if upoint.bias >= 0:
-        return convert(upoint.bias, uint256)
-    else:
-        return 0
+            if y_prev - y <= 1:
+                return y
+    raise
 
 
+@view
 @internal
-@view
-def supply_at(point: Point, t: uint256) -> uint256:
-    """
-    @notice Calculate total voting power at some point in the past
-    @param point The point (bias/slope) to start search from
-    @param t Time to calculate the total voting power at
-    @return Total voting power at that time
-    """
-    last_point: Point = point
-    t_i: uint256 = (last_point.ts / WEEK) * WEEK
-    for i in range(255):
-        t_i += WEEK
-        d_slope: int128 = 0
-        if t_i > t:
-            t_i = t
+def _calc_withdraw_one_coin(_burn_amount: uint256, i: int128) -> uint256[2]:
+    # First, need to calculate
+    # * Get current D
+    # * Solve Eqn against y_i for D - _token_amount
+    amp: uint256 = self._A()
+    balances: uint256[N_COINS] = self.balances
+    D0: uint256 = self.get_D(balances, amp)
+
+    total_supply: uint256 = self.totalSupply
+    D1: uint256 = D0 - _burn_amount * D0 / total_supply
+    new_y: uint256 = self.get_y_D(amp, i, balances, D1)
+
+    base_fee: uint256 = self.fee * N_COINS / (4 * (N_COINS - 1))
+    xp_reduced: uint256[N_COINS] = empty(uint256[N_COINS])
+
+    for j in range(N_COINS):
+        dx_expected: uint256 = 0
+        xp_j: uint256 = balances[j]
+        if j == i:
+            dx_expected = xp_j * D1 / D0 - new_y
         else:
-            d_slope = self.slope_changes[t_i]
-        last_point.bias -= last_point.slope * convert(t_i - last_point.ts, int128)
-        if t_i == t:
-            break
-        last_point.slope += d_slope
-        last_point.ts = t_i
+            dx_expected = xp_j - xp_j * D1 / D0
+        xp_reduced[j] = xp_j - base_fee * dx_expected / FEE_DENOMINATOR
 
-    if last_point.bias < 0:
-        last_point.bias = 0
-    return convert(last_point.bias, uint256)
+    dy: uint256 = xp_reduced[i] - self.get_y_D(amp, i, xp_reduced, D1)
+    dy_0: uint256 = (balances[i] - new_y)  # w/o fees
+    dy = (dy - 1)  # Withdraw less to account for rounding errors
+
+    return [dy, dy_0 - dy]
+
+
+@view
+@external
+def calc_withdraw_one_coin(_burn_amount: uint256, i: int128, _previous: bool = False) -> uint256:
+    """
+    @notice Calculate the amount received when withdrawing a single coin
+    @param _burn_amount Amount of LP tokens to burn in the withdrawal
+    @param i Index value of the coin to withdraw
+    @return Amount of coin received
+    """
+    return self._calc_withdraw_one_coin(_burn_amount, i)[0]
 
 
 @external
-@view
-def totalSupply(t: uint256 = block.timestamp) -> uint256:
+@nonreentrant('lock')
+def remove_liquidity_one_coin(
+    _burn_amount: uint256,
+    i: int128,
+    _min_received: uint256,
+    _receiver: address = msg.sender,
+) -> uint256:
     """
-    @notice Calculate total voting power
-    @dev Adheres to the ERC20 `totalSupply` interface for Aragon compatibility
-    @return Total voting power
+    @notice Withdraw a single coin from the pool
+    @param _burn_amount Amount of LP tokens to burn in the withdrawal
+    @param i Index value of the coin to withdraw
+    @param _min_received Minimum amount of coin to receive
+    @param _receiver Address that receives the withdrawn coins
+    @return Amount of coin received
     """
-    _epoch: uint256 = self.epoch
-    last_point: Point = self.point_history[_epoch]
-    return self.supply_at(last_point, t)
+    dy: uint256[2] = self._calc_withdraw_one_coin(_burn_amount, i)
+    assert dy[0] >= _min_received, "Not enough coins removed"
+
+    self.balances[i] -= (dy[0] + dy[1] * ADMIN_FEE / FEE_DENOMINATOR)
+    total_supply: uint256 = self.totalSupply - _burn_amount
+    self.totalSupply = total_supply
+    self.balanceOf[msg.sender] -= _burn_amount
+    log Transfer(msg.sender, ZERO_ADDRESS, _burn_amount)
+
+    assert ERC20(self.coins[i]).transfer(_receiver, dy[0])
+
+    log RemoveLiquidityOne(msg.sender, _burn_amount, dy[0], total_supply)
+
+    return dy[0]
 
 
 @external
-@view
-def totalSupplyAt(_block: uint256) -> uint256:
-    """
-    @notice Calculate total voting power at some point in the past
-    @param _block Block to calculate the total voting power at
-    @return Total voting power at `_block`
-    """
-    assert _block <= block.number
-    _epoch: uint256 = self.epoch
-    target_epoch: uint256 = self.find_block_epoch(_block, _epoch)
+def ramp_A(_future_A: uint256, _future_time: uint256):
+    assert msg.sender == Factory(self.factory).admin()  # dev: only owner
+    assert block.timestamp >= self.initial_A_time + MIN_RAMP_TIME
+    assert _future_time >= block.timestamp + MIN_RAMP_TIME  # dev: insufficient time
 
-    point: Point = self.point_history[target_epoch]
-    dt: uint256 = 0
-    if target_epoch < _epoch:
-        point_next: Point = self.point_history[target_epoch + 1]
-        if point.blk != point_next.blk:
-            dt = (_block - point.blk) * (point_next.ts - point.ts) / (point_next.blk - point.blk)
+    _initial_A: uint256 = self._A()
+    _future_A_p: uint256 = _future_A * A_PRECISION
+
+    assert _future_A > 0 and _future_A < MAX_A
+    if _future_A_p < _initial_A:
+        assert _future_A_p * MAX_A_CHANGE >= _initial_A
     else:
-        if point.blk != block.number:
-            dt = (_block - point.blk) * (block.timestamp - point.ts) / (block.number - point.blk)
-    # Now dt contains info on how far are we beyond point
+        assert _future_A_p <= _initial_A * MAX_A_CHANGE
 
-    return self.supply_at(point, point.ts + dt)
+    self.initial_A = _initial_A
+    self.future_A = _future_A_p
+    self.initial_A_time = block.timestamp
+    self.future_A_time = _future_time
 
+    log RampA(_initial_A, _future_A_p, block.timestamp, _future_time)
 
-# Dummy methods for compatibility with Aragon
 
 @external
-def changeController(_newController: address):
-    """
-    @dev Dummy method required for Aragon compatibility
-    """
-    assert msg.sender == self.controller
-    self.controller = _newController
+def stop_ramp_A():
+    assert msg.sender == Factory(self.factory).admin()  # dev: only owner
+
+    current_A: uint256 = self._A()
+    self.initial_A = current_A
+    self.future_A = current_A
+    self.initial_A_time = block.timestamp
+    self.future_A_time = block.timestamp
+    # now (block.timestamp < t1) is always False, so we return saved A
+
+    log StopRampA(current_A, block.timestamp)
+
+
+@view
+@external
+def admin_balances(i: uint256) -> uint256:
+    return ERC20(self.coins[i]).balanceOf(self) - self.balances[i]
+
+
+@external
+def withdraw_admin_fees():
+    receiver: address = Factory(self.factory).get_fee_receiver(self)
+
+    for i in range(N_COINS):
+        coin: address = self.coins[i]
+        fees: uint256 = ERC20(coin).balanceOf(self) - self.balances[i]
+        ERC20(coin).transfer(receiver, fees)

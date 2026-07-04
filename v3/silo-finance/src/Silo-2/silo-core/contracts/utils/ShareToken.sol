@@ -13,6 +13,8 @@ import {Hook} from "../lib/Hook.sol";
 import {CallBeforeQuoteLib} from "../lib/CallBeforeQuoteLib.sol";
 import {NonReentrantLib} from "../lib/NonReentrantLib.sol";
 import {ShareTokenLib} from "../lib/ShareTokenLib.sol";
+import {SiloMathLib} from "../lib/SiloMathLib.sol";
+import {IVersioned} from "../interfaces/IVersioned.sol";
 
 
 /// @title ShareToken
@@ -57,7 +59,7 @@ import {ShareTokenLib} from "../lib/ShareTokenLib.sol";
 ///
 /// _Available since v4.7._
 /// @custom:security-contact security@silo.finance
-abstract contract ShareToken is ERC20PermitUpgradeable, IShareToken {
+abstract contract ShareToken is ERC20PermitUpgradeable, IShareToken, IVersioned {
     using Hook for uint24;
     using CallBeforeQuoteLib for ISiloConfig.ConfigData;
 
@@ -102,6 +104,11 @@ abstract contract ShareToken is ERC20PermitUpgradeable, IShareToken {
         $.transferWithChecks = false;
         _transfer(_from, _to, _amount);
         $.transferWithChecks = true;
+    }
+
+    /// @inheritdoc IShareToken
+    function decimalsOffset() external view virtual returns (uint256) {
+        return SiloMathLib._DECIMALS_OFFSET;
     }
 
     function silo() external view virtual returns (ISilo) {
@@ -174,10 +181,34 @@ abstract contract ShareToken is ERC20PermitUpgradeable, IShareToken {
         ERC20PermitUpgradeable.permit(owner, spender, value, deadline, v, r, s);
     }
 
-    /// @dev decimals of share token
+    /* solhint-disable */
+    /// @notice Decimals are the same as underlaying asset. Decimal offset is not accounted for in decimals.
+    /// @dev This does not imply a 1:1 ratio between shares and assets.
+    ///
+    /// Silo:
+    ///     decimals(): same as underlying asset
+    ///     offset: 3
+    ///     minted shares per 1 wei of asset deposited: 1000
+    /// ProtectedShareToken:
+    ///     decimals(): same as underlying asset
+    ///     offset: 3
+    ///     minted shares per 1 wei of asset deposited: 1000
+    /// DebtShareToken:
+    ///     decimals(): same as underlying asset
+    ///     offset: 0
+    ///     minted shares per 1 wei of asset borrowed: 1
+    ///
+    /// Learn more about the offset here:
+    /// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/a7d38c7a3321e3832ca84f7ba1125dff9a91361e/contracts/token/ERC20/extensions/ERC4626.sol#L31
+    ///
+    /// The share-to-asset ratio may change over time due to interest accrual. As assets grow with interest
+    /// but the number of shares remains constant, the ratio will adjust dynamically.
+    ///
+    /// To determine the current conversion rate, use the vault’s `convertToShares(1 asset)` method.
     function decimals() public view virtual override(ERC20Upgradeable, IERC20Metadata) returns (uint8) {
         return ShareTokenLib.decimals();
     }
+    /* solhint-enable */
 
     /// @dev Name convention:
     ///      NAME - asset name

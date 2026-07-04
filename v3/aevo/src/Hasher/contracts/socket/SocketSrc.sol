@@ -4,10 +4,6 @@ pragma solidity 0.8.7;
 import "../interfaces/ICapacitor.sol";
 import "./SocketBase.sol";
 
-/**
- * @title SocketSrc
- * @dev The SocketSrc contract inherits from SocketBase and provides the functionality to send messages from the local chain to a remote chain via a Capacitor.
- */
 abstract contract SocketSrc is SocketBase {
     error InsufficientFees();
 
@@ -33,18 +29,18 @@ abstract contract SocketSrc is SocketBase {
      * @param payload_ the data which is needed by plug at inbound call on remote
      */
     function outbound(
-        uint32 remoteChainSlug_,
+        uint256 remoteChainSlug_,
         uint256 msgGasLimit_,
         bytes calldata payload_
     ) external payable override returns (bytes32 msgId) {
-        PlugConfig memory plugConfig = _plugConfigs[msg.sender][
+        PlugConfig storage plugConfig = _plugConfigs[msg.sender][
             remoteChainSlug_
         ];
-        uint32 localChainSlug = chainSlug;
+        uint256 localChainSlug = chainSlug;
 
-        msgId = _encodeMsgId(localChainSlug, plugConfig.siblingPlug);
+        msgId = _encodeMsgId(localChainSlug);
 
-        ISocket.Fees memory fees = _validateAndGetFees(
+        ISocket.Fees memory fees = _deductFees(
             msgGasLimit_,
             uint32(remoteChainSlug_),
             plugConfig.outboundSwitchboard__
@@ -62,14 +58,6 @@ abstract contract SocketSrc is SocketBase {
         );
 
         plugConfig.capacitor__.addPackedMessage(packedMessage);
-
-        _deductFees(
-            msgGasLimit_,
-            uint32(remoteChainSlug_),
-            plugConfig.outboundSwitchboard__,
-            fees
-        );
-
         emit MessageOutbound(
             localChainSlug,
             msg.sender,
@@ -82,14 +70,7 @@ abstract contract SocketSrc is SocketBase {
         );
     }
 
-    /**
-     * @dev Calculates fees needed for message transmission and execution and checks if msg value is enough
-     * @param msgGasLimit_ The gas limit needed to execute the payload on the remote chain
-     * @param remoteChainSlug_ The slug of the remote chain
-     * @param switchboard__ The address of the switchboard contract
-     * @return fees The fees object
-     */
-    function _validateAndGetFees(
+    function _deductFees(
         uint256 msgGasLimit_,
         uint32 remoteChainSlug_,
         ISwitchboard switchboard__
@@ -112,41 +93,20 @@ abstract contract SocketSrc is SocketBase {
                 msg.value -
                 fees.transmissionFees -
                 fees.switchboardFees;
+
+            transmitManager__.payFees{value: fees.transmissionFees}(
+                remoteChainSlug_
+            );
+            switchboard__.payFees{value: fees.switchboardFees}(
+                remoteChainSlug_
+            );
+            executionManager__.payFees{value: fees.executionFee}(
+                msgGasLimit_,
+                remoteChainSlug_
+            );
         }
     }
 
-    /**
-     * @dev Deducts the fees needed for message transmission and execution
-     * @param msgGasLimit_ The gas limit needed to execute the payload on the remote chain
-     * @param remoteChainSlug_ The slug of the remote chain
-     * @param switchboard__ The address of the switchboard contract
-     * @param fees_ The fees object
-     */
-    function _deductFees(
-        uint256 msgGasLimit_,
-        uint32 remoteChainSlug_,
-        ISwitchboard switchboard__,
-        Fees memory fees_
-    ) internal {
-        transmitManager__.payFees{value: fees_.transmissionFees}(
-            remoteChainSlug_
-        );
-        executionManager__.payFees{value: fees_.executionFee}(
-            msgGasLimit_,
-            remoteChainSlug_
-        );
-
-        // call to unknown external contract at the end
-        switchboard__.payFees{value: fees_.switchboardFees}(remoteChainSlug_);
-    }
-
-    /**
-     * @notice Retrieves the minimum fees required for a message with a specified gas limit and destination chain.
-     * @param msgGasLimit_ The gas limit of the message.
-     * @param remoteChainSlug_ The slug of the destination chain for the message.
-     * @param plug_ The address of the plug through which the message is sent.
-     * @return totalFees The minimum fees required for the specified message.
-     */
     function getMinFees(
         uint256 msgGasLimit_,
         uint32 remoteChainSlug_,
@@ -194,12 +154,6 @@ abstract contract SocketSrc is SocketBase {
         executionFee = msgExecutionFee + verificationFee;
     }
 
-    /**
-     * @notice seals data in capacitor for specific batchSizr
-     * @param batchSize_ size of batch to be sealed
-     * @param capacitorAddress_ address of capacitor
-     * @param signature_ signed Data needed for verification
-     */
     function seal(
         uint256 batchSize_,
         address capacitorAddress_,
@@ -214,29 +168,19 @@ abstract contract SocketSrc is SocketBase {
         (address transmitter, bool isTransmitter) = transmitManager__
             .checkTransmitter(
                 siblingChainSlug,
-                keccak256(
-                    abi.encode(version, siblingChainSlug, packetId, root)
-                ),
+                keccak256(abi.encode(siblingChainSlug, packetId, root)),
                 signature_
             );
 
-        if (!isTransmitter) revert InvalidTransmitter();
+        if (!isTransmitter) revert InvalidAttester();
         emit PacketVerifiedAndSealed(transmitter, packetId, root, signature_);
     }
 
     // Packs the local plug, local chain slug, remote chain slug and nonce
     // messageCount++ will take care of msg id overflow as well
-    // msgId(256) = localChainSlug(32) | siblingPlug_(160) | nonce(64)
-    function _encodeMsgId(
-        uint32 slug_,
-        address siblingPlug_
-    ) internal returns (bytes32) {
-        return
-            bytes32(
-                (uint256(slug_) << 224) |
-                    (uint256(uint160(siblingPlug_)) << 64) |
-                    messageCount++
-            );
+    // msgId(256) = localChainSlug(32) | nonce(224)
+    function _encodeMsgId(uint256 slug_) internal returns (bytes32) {
+        return bytes32((uint256(uint32(slug_)) << 224) | messageCount++);
     }
 
     function _encodePacketId(

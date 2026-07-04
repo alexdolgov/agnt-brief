@@ -5,66 +5,43 @@ import "../interfaces/ISocket.sol";
 import "../interfaces/ICapacitorFactory.sol";
 import "../interfaces/ISwitchboard.sol";
 import "../utils/AccessControlExtended.sol";
-
 import {GOVERNANCE_ROLE} from "../utils/AccessRoles.sol";
 
-/**
- * @title SocketConfig
- * @notice An abstract contract for configuring socket connections between different chains
- * @dev This contract is meant to be inherited by other contracts that require socket configuration functionality
- */
 abstract contract SocketConfig is ISocket, AccessControlExtended {
-    /**
-     * @dev Struct to hold the configuration for a plug connection
-     */
     struct PlugConfig {
-        // address of the sibling plug on the remote chain
         address siblingPlug;
-        // capacitor instance for the plug connection
         ICapacitor capacitor__;
-        // decapacitor instance for the plug connection
         IDecapacitor decapacitor__;
-        // inbound switchboard instance for the plug connection
         ISwitchboard inboundSwitchboard__;
-        // outbound switchboard instance for the plug connection
         ISwitchboard outboundSwitchboard__;
     }
 
-    // Capacitor factory contract
     ICapacitorFactory public capacitorFactory__;
 
-    // capacitor address => siblingChainSlug
+    // siblingChainSlug => capacitor address
     mapping(address => uint32) public capacitorToSlug;
 
     // switchboard => siblingChainSlug => ICapacitor
-    mapping(address => mapping(uint32 => ICapacitor)) public capacitors__;
+    mapping(address => mapping(uint256 => ICapacitor)) public capacitors__;
     // switchboard => siblingChainSlug => IDecapacitor
-    mapping(address => mapping(uint32 => IDecapacitor)) public decapacitors__;
+    mapping(address => mapping(uint256 => IDecapacitor)) public decapacitors__;
 
     // plug => remoteChainSlug => (siblingPlug, capacitor__, decapacitor__, inboundSwitchboard__, outboundSwitchboard__)
-    mapping(address => mapping(uint32 => PlugConfig)) internal _plugConfigs;
+    mapping(address => mapping(uint256 => PlugConfig)) internal _plugConfigs;
 
-    // Event triggered when a new switchboard is added
     event SwitchboardAdded(
         address switchboard,
-        uint32 siblingChainSlug,
+        uint256 siblingChainSlug,
         address capacitor,
         address decapacitor,
         uint256 maxPacketLength,
-        uint256 capacitorType
+        uint32 capacitorType
     );
-    // Event triggered when the capacitor factory is set
     event CapacitorFactorySet(address capacitorFactory);
 
-    // Error triggered when a switchboard already exists
     error SwitchboardExists();
-    // Error triggered when a connection is invalid
     error InvalidConnection();
 
-    /**
-     * @dev Set the capacitor factory contract
-     * @param capacitorFactory_ The address of the capacitor factory contract
-     */
     function setCapacitorFactory(
         address capacitorFactory_
     ) external onlyRole(GOVERNANCE_ROLE) {
@@ -72,19 +49,12 @@ abstract contract SocketConfig is ISocket, AccessControlExtended {
         emit CapacitorFactorySet(capacitorFactory_);
     }
 
-    /**
-     * @dev Register a switchboard with the given configuration
-     * @dev It's msg.sender's responsibility to set correct sibling slug
-     * @param switchBoardAddress_ The address of the switchboard to register
-     * @param maxPacketLength_ The maximum packet length supported by the switchboard
-     * @param siblingChainSlug_ The sibling chain slug to register the switchboard with
-     * @param capacitorType_ The type of capacitor to use for the switchboard
-     */
+    // it's msg.sender's responsibility to set correct sibling slug
     function registerSwitchBoard(
         address switchBoardAddress_,
         uint256 maxPacketLength_,
         uint32 siblingChainSlug_,
-        uint256 capacitorType_
+        uint32 capacitorType_
     ) external override {
         // only capacitor checked, decapacitor assumed will exist if capacitor does
         if (
@@ -121,15 +91,8 @@ abstract contract SocketConfig is ISocket, AccessControlExtended {
         );
     }
 
-    /**
-     * @notice sets the config specific to the plug
-     * @param siblingChainSlug_ the sibling chain slug
-     * @param siblingPlug_ address of plug present at sibling chain to call inbound
-     * @param inboundSwitchboard_ the address of switchboard to use for receiving messages
-     * @param outboundSwitchboard_ the address of switchboard to use for sending messages
-     */
     function connect(
-        uint32 siblingChainSlug_,
+        uint256 siblingChainSlug_,
         address siblingPlug_,
         address inboundSwitchboard_,
         address outboundSwitchboard_
@@ -166,14 +129,9 @@ abstract contract SocketConfig is ISocket, AccessControlExtended {
         );
     }
 
-    /**
-     * @notice returns the config for given plug and sibling
-     * @param siblingChainSlug_ the sibling chain slug
-     * @param plugAddress_ address of plug present at current chain
-     */
     function getPlugConfig(
         address plugAddress_,
-        uint32 siblingChainSlug_
+        uint256 siblingChainSlug_
     )
         external
         view

@@ -1,0 +1,18 @@
+{
+  "component": "BeforeRedeemHook-2",
+  "main_contract": "BeforeRedeemHook",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x44f9499122a7434252aa7df727d9552c2ba9c03b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

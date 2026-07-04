@@ -16,6 +16,8 @@ import {Roles} from "./libraries/Roles.sol";
 contract KIBTAggregator is KIBTAggregatorInterface {
     using PercentageMath for uint256;
 
+    uint256 public constant MIN_TERM = 4 weeks;
+
     uint8 private constant _VERSION = 1;
     uint8 private constant _DECIMALS = 8;
 

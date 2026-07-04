@@ -1,0 +1,18 @@
+{
+  "component": "FeeHandler-3",
+  "main_contract": "FeeHandler",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa9ea2b6f533db3679eeda162e23c1159439347bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

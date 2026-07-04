@@ -1,15 +1,47 @@
 {
   "component": "EPendleOFT",
   "main_contract": "EPendleOFT",
-  "source_file_count": 25,
-  "deployment_count": 1,
+  "source_file_count": 21,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x06fd8e5dae63afcbfdf10604efca3143df534f37",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8a5a4348f5cfe9da08b0f3d9ae76bef6e8bbd36c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7700eb46bb40163985c5337de39704482aed33b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x7700eb46bb40163985c5337de39704482aed33b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2350ea954113b1a1eebaaccc47f3a4985f709913",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8c9b5b2e6e136b6ee66fca6229191e749c0029f5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

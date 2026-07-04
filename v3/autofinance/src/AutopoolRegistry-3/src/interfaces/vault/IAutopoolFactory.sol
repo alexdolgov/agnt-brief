@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 interface IAutopoolFactory {
     ///////////////////////////////////////////////////////////////////
@@ -23,13 +23,9 @@ interface IAutopoolFactory {
         bytes calldata extraParams
     ) external payable returns (address newVaultAddress);
 
-    function addStrategyTemplate(
-        address strategyTemplate
-    ) external;
+    function addStrategyTemplate(address strategyTemplate) external;
 
-    function removeStrategyTemplate(
-        address strategyTemplate
-    ) external;
+    function removeStrategyTemplate(address strategyTemplate) external;
 
     /// @notice Returns the template used to create Autopools
     function template() external returns (address);

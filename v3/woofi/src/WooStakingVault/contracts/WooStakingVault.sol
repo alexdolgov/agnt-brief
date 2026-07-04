@@ -112,10 +112,7 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
     /* ----- External Functions ----- */
 
     function deposit(uint256 amount) external nonReentrant whenNotPaused {
-        // require(amount > 0, 'WooStakingVault: amount_CAN_NOT_BE_ZERO');
-        if (amount == 0) {
-            return;
-        }
+        require(amount > 0, 'WooStakingVault: amount_CAN_NOT_BE_ZERO');
 
         uint256 balanceBefore = balance();
         TransferHelper.safeTransferFrom(address(stakedToken), msg.sender, address(this), amount);
@@ -124,7 +121,6 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
 
         uint256 xTotalSupply = totalSupply();
         uint256 shares = xTotalSupply == 0 ? amount : amount.mul(xTotalSupply).div(balanceBefore);
-        require(shares > 0, '!shares');
 
         // must be executed before _mint
         _updateCostSharePrice(amount, shares);

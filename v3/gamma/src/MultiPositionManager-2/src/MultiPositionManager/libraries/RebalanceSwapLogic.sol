@@ -260,29 +260,24 @@ library RebalanceSwapLogic {
             ctx.weight0 = params.weight0;
             ctx.weight1 = params.weight1;
         }
+        if (!ctx.useAssetWeights && ctx.weight0 + ctx.weight1 != 1e18) {
+            revert RebalanceLogic.InvalidWeightSum();
+        }
 
         ctx.resolvedStrategy = params.strategy != address(0) ? params.strategy : s.lastStrategyParams.strategy;
 
-        if (params.center == type(int24).max) {
-            // Always round down to ensure the range contains the current tick
-            int24 compressed = currentTick / s.poolKey.tickSpacing;
-            if (currentTick < 0 && currentTick % s.poolKey.tickSpacing != 0) {
-                compressed--; // Round down for negative ticks with remainder
-            }
-            ctx.center = compressed * s.poolKey.tickSpacing;
-        } else {
-            // Snap to tickSpacing grid using floor division (handles negatives correctly)
-            int24 tickSpacing = s.poolKey.tickSpacing;
-            ctx.center = (params.center / tickSpacing) * tickSpacing;
-            if (params.center < 0 && params.center % tickSpacing != 0) {
-                ctx.center -= tickSpacing;
-            }
-        }
+        ctx.center = RebalanceLogic.resolveAndClampCenterTick(params.center, currentTick, s.poolKey.tickSpacing);
 
         ctx.tLeft = params.tLeft;
         ctx.tRight = params.tRight;
         ctx.useCarpet = params.useCarpet;
-        ctx.limitWidth = params.limitWidth;
+        // In proportional mode (weights 0,0), force limitWidth to 0
+        // Limit positions don't make sense when weights are derived from amounts
+        if (ctx.useAssetWeights) {
+            ctx.limitWidth = 0;
+        } else {
+            ctx.limitWidth = params.limitWidth;
+        }
 
         if (ctx.resolvedStrategy == address(0)) revert NoStrategySpecified();
         ctx.strategy = ILiquidityStrategy(ctx.resolvedStrategy);

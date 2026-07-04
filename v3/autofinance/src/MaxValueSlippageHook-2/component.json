@@ -1,0 +1,18 @@
+{
+  "component": "MaxValueSlippageHook-2",
+  "main_contract": "MaxValueSlippageHook",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3b16c8e0a1059e5551bb56a3592a61cd8743cfc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

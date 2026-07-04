@@ -7,25 +7,25 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x361384a0d755f972e5eea26e4f4efbaf976b6461",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb03a9c6b6ebde80bc358c1bf8694f41b4f83bb9d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x9ba51a66ff7e8043f43a793ea70c82472490cd42",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5b79304d18cfb7ad1fd340aecc41a59ee925002a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xb49329bf1d95d51681f4e4f644eb37f58e398abd",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6ca841f23e270d5f2e71f818b5385e05c4a18462",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "AsyncSwapperRegistry-3",
+  "main_contract": "AsyncSwapperRegistry",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73526d80ac5db9ccd2aa46436744c542ef9c0b75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

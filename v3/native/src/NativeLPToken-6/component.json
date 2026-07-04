@@ -1,0 +1,18 @@
+{
+  "component": "NativeLPToken-6",
+  "main_contract": "NativeLPToken",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7fb8c24af82a215a4309583954ae4699c13bec6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

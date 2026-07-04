@@ -1,0 +1,18 @@
+{
+  "component": "UniswapAdapter-4",
+  "main_contract": "UniswapAdapter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0fac58f632b4be80e9c040134cb6867b0f6fc1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

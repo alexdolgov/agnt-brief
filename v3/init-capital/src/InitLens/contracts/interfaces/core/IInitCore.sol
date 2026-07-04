@@ -15,8 +15,8 @@ interface IInitCore {
     event SetPositionMode(uint indexed posId, uint16 mode);
     event Collateralize(uint indexed posId, address indexed pool, uint amt);
     event Decollateralize(uint indexed posId, address indexed pool, address indexed to, uint amt);
-    event CollateralizeWLp(uint indexed posId, address indexed wLp, uint indexed tokenId, uint amt);
-    event DecollateralizeWLp(uint indexed posId, address indexed wLp, uint indexed tokenId, address to, uint amt);
+    event CollateralizeWLp(address indexed wLp, uint indexed tokenId, uint indexed posId, uint amt);
+    event Decollateralize(address indexed wLp, uint indexed posId, address indexed to, uint amt);
     event Liquidate(uint indexed posId, address indexed liquidator, address poolOut, uint shares);
     event LiquidateWLp(uint indexed posId, address indexed liquidator, address wLpOut, uint tokenId, uint amt);
 

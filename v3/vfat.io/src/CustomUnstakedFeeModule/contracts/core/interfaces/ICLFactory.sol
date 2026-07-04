@@ -111,19 +111,10 @@ interface ICLFactory {
     /// @return pool The pool address
     function getPool(address tokenA, address tokenB, int24 tickSpacing) external view returns (address pool);
 
-    /// @notice Return address of pool created by this factory given its `index`
-    /// @param index Index of the pool
-    /// @return The pool address in the given index
-    function allPools(uint256 index) external view returns (address);
-
-    /// @notice Returns the number of pools created from this factory
-    /// @return Number of pools created from this factory
-    function allPoolsLength() external view returns (uint256);
-
     /// @notice Used in VotingEscrow to determine if a contract is a valid pool of the factory
     /// @param pool The address of the pool to check
     /// @return Whether the pool is a valid pool of the factory
-    function isPool(address pool) external view returns (bool);
+    function isPair(address pool) external view returns (bool);
 
     /// @notice Get swap & flash fee for a given pool. Accounts for default and dynamic fees
     /// @dev Swap & flash fee is denominated in pips. i.e. 1e-6

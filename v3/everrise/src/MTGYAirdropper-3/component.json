@@ -1,0 +1,18 @@
+{
+  "component": "MTGYAirdropper-3",
+  "main_contract": "MTGYAirdropper",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc3f2a5d962d86a6305c5f9bd0badf3af6a017272",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

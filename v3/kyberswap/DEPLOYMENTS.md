@@ -1,23 +1,31 @@
 # kyberswap — deployments
 
-233 verified deployment(s) across 126 component(s).
+243 verified deployment(s) across 134 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x316772cfec9a3e976fde42c3ba21f5a13aaaff12` | AnyswapV6ERC20 | impl | live | no |
+| arbitrum | `0x360e68faccca8ca495c1b759fd9eee466db9fb32` | PoolManager-3 | impl | live | no |
+| arbitrum | `0xb448ec505c924944ca8b2c55ef05c299ee0781df` | BurnableMintableCappedERC20-2 | impl | live | no |
 | arbitrum | `0xe4dddfe67e7164b0fe14e218d80dc4c08edc01cb` | ClonableBeaconProxy | proxy | live | no |
 | avalanche | `0x39fc9e94caeacb435842fadedecb783589f50f5f` | AnyswapV5ERC20 | impl | live | no |
+| avalanche | `0x8efa5a9ad6d594cf76830267077b78ce0bc5a5f8` | DMMRouter02-4 | impl | live | no |
+| avalanche | `0x91c9d4373b077ef8082f468c7c97f2c499e36f5b` | MultiSigWalletWithDailyLimit-2 | impl | live | no |
 | avalanche | `0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7` | WAVAX | impl | live | no |
+| avalanche | `0xd69d7a1031e6e63a162414f9a77278757690c30e` | MultiSigWalletWithDailyLimit-2 | impl | live | no |
 | base | `0x28fe69ff6864c1c218878bdca01482d36b9d57b1` | OptimismMintableERC20 | impl | live | no |
 | base | `0x498581ff718922c3f8e6a244956af099b2652b2b` | PoolManager | impl | live | no |
 | bsc | `0x44428c6ce391915d51f963c0dd395cd0f95fdfd2` | PancakeSwapInfinityKEMHook | impl | live | yes |
 | bsc | `0x635dffee858a9f941d058401b393fcfab41d7841` | KSRemoveLiquidityUniswapV4Hook | impl | live | no |
 | bsc | `0x72473de0b52d079ca21709ea67085757c3bb1851` | KSRemoveLiquidityUniswapV3Hook | impl | live | no |
+| bsc | `0x78df70615ffc8066cc0887917f2cd72092c86409` | DMMRouter02-2 | impl | live | no |
 | bsc | `0xaee04d31696d14bce773db6d1acec3398ee09974` | KSSmartIntentRouter | impl | live | yes |
 | bsc | `0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c` | WBNB | impl | live | no |
+| bsc | `0xcf591ce5574258ac4550d96c545e4f3fd49a74ec` | Multicall | impl | live | no |
 | bsc | `0xf67476e5d3fa43e0470f8f1d3c43bf202dc50eec` | KSRemoveLiquidityPancakeV4CLHook | impl | live | no |
 | bsc | `0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b` | BEP20UpgradeableProxy | proxy | live | no |
 | chain-130 | `0x1f98400000000000000000000000000000000004` | PoolManager-2 | impl | live | no |
+| chain-130 | `0x444139d6b32c1ad0b00f24a616072f74b2f880c4` | UniswapV4KEMHook-2 | impl | live | yes |
 | ethereum | `0x000000000004444c5dc75cb358380d2e3de08a90` | PoolManager | impl | live | no |
 | ethereum | `0x0e97c887b61ccd952a53578b04763e7134429e05` | KSZapRouterPosition | impl | live | no |
 | ethereum | `0x1c87257f5e8609940bc751a07bb085bb7f8cdbe6` | DMMRouter02 | impl | live | no |
@@ -231,23 +239,11 @@
 | ethereum | `0xfbd73581af42b26295cf4b88b74a5af71f209f8b` | EpochVotingPowerStrategy | impl | live | no |
 | linea | `0x3b2f62d42db19b30588648bf1c184865d4c3b1d6` | BeaconProxy | proxy | live | no |
 | optimism | `0x2b1c7b41f6a8f2b2bc45c3233a5d5fb3cd6dc9a8` | BasePositionManager | impl | live | no |
+| optimism | `0x4518231a8fdf6ac553b9bbd51bbb86825b583263` | AnyswapV6ERC20 | impl | live | no |
 | optimism | `0xa00e3a3511aac35ca78530c85007afcd31753819` | L2StandardERC20 | impl | live | no |
 | polygon | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | WMATIC | impl | live | no |
 | polygon | `0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c` | UpgradableProxy | proxy | live | no |
 | polygon | `0x46371c90fcce4d7367a61cb43ea7922406bc707a` | BurnableMintableCappedERC20 | impl | live | no |
-| polygon | `0x878dfe971d44e9122048308301f540910bbd934c` | Multicall | impl | live | no |
+| polygon | `0x546c79662e028b661dfb4767664d0273184e4dd1` | DMMRouter02-3 | impl | live | no |
+| polygon | `0x878dfe971d44e9122048308301f540910bbd934c` | Multicall-2 | impl | live | no |
 | scroll | `0x608ef9a3bffe206b86c3108218003b3cfbf99c84` | ScrollStandardERC20 | impl | unknown | no |
-
-## Source unavailable (10)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x360e68faccca8ca495c1b759fd9eee466db9fb32`
-- arbitrum `0xb448ec505c924944ca8b2c55ef05c299ee0781df`
-- avalanche `0x8efa5a9ad6d594cf76830267077b78ce0bc5a5f8`
-- avalanche `0x91c9d4373b077ef8082f468c7c97f2c499e36f5b`
-- avalanche `0xd69d7a1031e6e63a162414f9a77278757690c30e`
-- bsc `0x78df70615ffc8066cc0887917f2cd72092c86409`
-- bsc `0xcf591ce5574258ac4550d96c545e4f3fd49a74ec`
-- chain-130 `0x444139d6b32c1ad0b00f24a616072f74b2f880c4`
-- optimism `0x4518231a8fdf6ac553b9bbd51bbb86825b583263`
-- polygon `0x546c79662e028b661dfb4767664d0273184e4dd1`

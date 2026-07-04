@@ -10,6 +10,7 @@ contract Signers is Ownable, ISigsVerifier {
     using ECDSA for bytes32;
 
     bytes32 public ssHash;
+    uint256 public triggerTime; // timestamp when last update was triggered
 
     // reset can be called by the owner address for emergency recovery
     uint256 public resetTime;
@@ -24,7 +25,7 @@ contract Signers is Ownable, ISigsVerifier {
      * @notice Verifies that a message is signed by a quorum among the signers
      * The sigs must be sorted by signer addresses in ascending order.
      * @param _msg signed message
-     * @param _sigs list of signatures sorted by signer addresses
+     * @param _sigs list of signatures sorted by signer addresses in ascending order
      * @param _signers sorted list of current signers
      * @param _powers powers of current signers
      */
@@ -43,19 +44,26 @@ contract Signers is Ownable, ISigsVerifier {
      * @notice Update new signers.
      * @param _newSigners sorted list of new signers
      * @param _curPowers powers of new signers
-     * @param _sigs list of signatures sorted by signer addresses
+     * @param _sigs list of signatures sorted by signer addresses in ascending order
      * @param _curSigners sorted list of current signers
      * @param _curPowers powers of current signers
      */
     function updateSigners(
+        uint256 _triggerTime,
         address[] calldata _newSigners,
         uint256[] calldata _newPowers,
         bytes[] calldata _sigs,
         address[] calldata _curSigners,
         uint256[] calldata _curPowers
     ) external {
-        verifySigs(abi.encodePacked(_newSigners, _newPowers), _sigs, _curSigners, _curPowers);
+        // use trigger time for nonce protection, must be ascending
+        require(_triggerTime > triggerTime, "Trigger time is not increasing");
+        // make sure triggerTime is not too large, as it cannot be decreased once set
+        require(_triggerTime < block.timestamp + 3600, "Trigger time is too large");
+        bytes32 domain = keccak256(abi.encodePacked(block.chainid, address(this), "UpdateSigners"));
+        verifySigs(abi.encodePacked(domain, _triggerTime, _newSigners, _newPowers), _sigs, _curSigners, _curPowers);
         _updateSigners(_newSigners, _newPowers);
+        triggerTime = _triggerTime;
     }
 
     /**

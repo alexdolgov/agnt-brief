@@ -2,14 +2,62 @@
   "component": "DepositTokenV2",
   "main_contract": "DepositTokenV2",
   "source_file_count": 19,
-  "deployment_count": 1,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x299c643a5d84c227705efa2eea00c41b6fc748af",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x370d080f56256d9270e7e38f699600623a0ef7aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x642c9d741ab3de9a8b43b79f7e5bc8a953e3ec81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcb2dc3481e7e9dbe3e269c993a431737d1f66ea4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x500d5e0d9d7337963ed6449e81cb52928184d3d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x500d5e0d9d7337963ed6449e81cb52928184d3d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa6ec3c5a9124f9fd9ce02b24ed41cfd3489f05c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xd8d51c42557343f8f1696eb63d9c3c96a2aae903",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

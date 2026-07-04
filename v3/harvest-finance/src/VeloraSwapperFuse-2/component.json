@@ -1,0 +1,18 @@
+{
+  "component": "VeloraSwapperFuse-2",
+  "main_contract": "VeloraSwapperFuse",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc929259a052f091339d4533db9844b900c56b588",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

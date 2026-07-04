@@ -1,0 +1,82 @@
+{
+  "component": "InitializableImmutableAdminUpgradeabilityProxy-3",
+  "main_contract": "InitializableImmutableAdminUpgradeabilityProxy",
+  "source_file_count": 1,
+  "deployment_count": 9,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x27c7733d7a0f142720af777e70ebc33ca485d014",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x2e207eca8b6bf77a6ac82763eeed2a94de4f081d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x476f206511a18c9956fc79726108a03e647a1817",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x508c39cd02736535d5cb85f3925218e5e0e8f07a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x607f422f2e2de0fd1b084223ed16ae51c2453b06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xa2703dc9fbaccd6ec2e4cbfa700989d0238133f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xb4ffef15daf4c02787bc5332580b838ce39805f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xcb2da0f5aece616e2cbf29576cfc795fb15c6133",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xd07e6a4da4e360ba6edde42ce7867051ea4be024",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

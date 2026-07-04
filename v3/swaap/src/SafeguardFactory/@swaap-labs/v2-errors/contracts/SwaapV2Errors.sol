@@ -12,7 +12,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity >=0.7.0 <0.9.0;
 
 library SwaapV2Errors {
     // Safeguard Pool
@@ -47,6 +47,11 @@ library SwaapV2Errors {
     uint256 internal constant OUTDATED_ORACLE_ROUND_ID = 28;
     uint256 internal constant LOW_SWAP_AMOUNT_IN = 29;
     uint256 internal constant LOW_SWAP_AMOUNT_OUT = 30;
+    uint256 internal constant PAUSED = 31;
+    uint256 internal constant INVALID_AGGREGATOR = 32;
+    uint256 internal constant PASSED_DEADLINE = 33;
+    uint256 internal constant SAME_TOKENS = 34;
+    uint256 internal constant INVALID_DATA_LENGTH = 35;
 }
 
 /**

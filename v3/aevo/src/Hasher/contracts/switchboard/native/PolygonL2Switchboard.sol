@@ -4,59 +4,44 @@ pragma solidity 0.8.7;
 import "lib/contracts/contracts/tunnel/FxBaseChildTunnel.sol";
 import "./NativeSwitchboardBase.sol";
 
-/**
- * @title Polygon L2 Switchboard
- * @dev The Polygon L2 Switchboard contract facilitates the bridging
- *    of tokens and messages between the Polygon L1 and L2 networks.
- *    It inherits from the NativeSwitchboardBase and FxBaseChildTunnel contracts.
- */
 contract PolygonL2Switchboard is NativeSwitchboardBase, FxBaseChildTunnel {
-    /**
-     * @dev Event emitted when the fxChildTunnel address is updated.
-     * @param oldFxChild The old fxChildTunnel address.
-     * @param newFxChild The new fxChildTunnel address.
-     */
+    uint256 public confirmGasLimit;
+
     event FxChildUpdate(address oldFxChild, address newFxChild);
-
-    /**
-     * @dev Event emitted when the fxRootTunnel address is updated.
-     * @param fxRootTunnel The fxRootTunnel address.
-     * @param newFxRootTunnel The new fxRootTunnel address.
-     */
     event FxRootTunnelSet(address fxRootTunnel, address newFxRootTunnel);
+    event UpdatedConfirmGasLimit(uint256 confirmGasLimit);
 
-    /**
-     * @dev Modifier that restricts access to the onlyRemoteSwitchboard.
-     * This modifier is inherited from the NativeSwitchboardBase contract.
-     */
     modifier onlyRemoteSwitchboard() override {
-        revert("ONLY_FX_CHILD");
+        require(true, "ONLY_FX_CHILD");
 
         _;
     }
 
-    /**
-     * @dev Constructor for the PolygonL2Switchboard contract.
-     * @param chainSlug_ The chainSlug for the contract.
-     * @param fxChild_ The address of the fxChildTunnel contract.
-     * @param owner_ The owner of the contract.
-     * @param socket_ The socket address.
-     */
     constructor(
-        uint32 chainSlug_,
+        uint256 chainSlug_,
+        uint256 confirmGasLimit_,
+        uint256 initiateGasLimit_,
+        uint256 executionOverhead_,
         address fxChild_,
         address owner_,
         address socket_,
-        ISignatureVerifier signatureVerifier_
+        IGasPriceOracle gasPriceOracle_
     )
         AccessControlExtended(owner_)
-        NativeSwitchboardBase(socket_, chainSlug_, signatureVerifier_)
+        NativeSwitchboardBase(
+            socket_,
+            chainSlug_,
+            initiateGasLimit_,
+            executionOverhead_,
+            gasPriceOracle_
+        )
         FxBaseChildTunnel(fxChild_)
-    {}
+    {
+        confirmGasLimit = confirmGasLimit_;
+    }
 
     /**
-     * @dev Sends a message to the root chain to initiate a native confirmation with the given packet ID.
-     * @param packetId_ The packet ID for which the native confirmation needs to be initiated.
+     * @param packetId_ - packet id
      */
     function initiateNativeConfirmation(bytes32 packetId_) external payable {
         bytes memory data = _encodeRemoteCall(packetId_);
@@ -65,11 +50,6 @@ contract PolygonL2Switchboard is NativeSwitchboardBase, FxBaseChildTunnel {
         emit InitiatedNativeConfirmation(packetId_);
     }
 
-    /**
-     * @dev Encodes the remote call to be sent to the root chain to initiate a native confirmation.
-     * @param packetId_ The packet ID for which the native confirmation needs to be initiated.
-     * @return data encoded remote call data.
-     */
     function _encodeRemoteCall(
         bytes32 packetId_
     ) internal view returns (bytes memory data) {
@@ -77,11 +57,7 @@ contract PolygonL2Switchboard is NativeSwitchboardBase, FxBaseChildTunnel {
     }
 
     /**
-     * @notice This function processes the message received from the Root contract.
-     * @dev decodes the data received and stores the packetId and root in packetIdToRoot mapping.
-     *       emits a RootReceived event to indicate that a new root has been received.
-     * @param rootMessageSender_ The address of the Root contract that sent the message.
-     * @param data_ The data received from the Root contract.
+     * validate sender verifies if `rootMessageSender` is the root contract (notary) on L1.
      */
     function _processMessageFromRoot(
         uint256,
@@ -96,6 +72,44 @@ contract PolygonL2Switchboard is NativeSwitchboardBase, FxBaseChildTunnel {
         emit RootReceived(packetId, root);
     }
 
+    function _getMinSwitchboardFees(
+        uint256,
+        uint256 dstRelativeGasPrice_,
+        uint256 sourceGasPrice_
+    ) internal view override returns (uint256) {
+        return
+            initiateGasLimit *
+            sourceGasPrice_ +
+            confirmGasLimit *
+            dstRelativeGasPrice_;
+    }
+
+    function updateConfirmGasLimit(
+        uint256 nonce_,
+        uint256 confirmGasLimit_,
+        bytes memory signature_
+    ) external {
+        address gasLimitUpdater = SignatureVerifierLib.recoverSignerFromDigest(
+            keccak256(
+                abi.encode(
+                    "L1_RECEIVE_GAS_LIMIT_UPDATE",
+                    chainSlug,
+                    nonce_,
+                    confirmGasLimit_
+                )
+            ),
+            signature_
+        );
+
+        if (!_hasRole(GAS_LIMIT_UPDATER_ROLE, gasLimitUpdater))
+            revert NoPermit(GAS_LIMIT_UPDATER_ROLE);
+        uint256 nonce = nextNonce[gasLimitUpdater]++;
+        if (nonce_ != nonce) revert InvalidNonce();
+
+        confirmGasLimit = confirmGasLimit_;
+        emit UpdatedConfirmGasLimit(confirmGasLimit_);
+    }
+
     /**
      * @notice Update the address of the FxChild
      * @param fxChild_ The address of the new FxChild
@@ -107,11 +121,6 @@ contract PolygonL2Switchboard is NativeSwitchboardBase, FxBaseChildTunnel {
         fxChild = fxChild_;
     }
 
-    /**
-     * @notice setFxRootTunnel is a function in the PolygonL2Switchboard contract that allows the contract owner to set the address of the root tunnel contract on the Ethereum mainnet.
-     * @dev This function can only be called by an address with the GOVERNANCE_ROLE role.
-     * @param fxRootTunnel_ The address of the root tunnel contract on the Ethereum mainnet.
-     */
     function setFxRootTunnel(
         address fxRootTunnel_
     ) external override onlyRole(GOVERNANCE_ROLE) {

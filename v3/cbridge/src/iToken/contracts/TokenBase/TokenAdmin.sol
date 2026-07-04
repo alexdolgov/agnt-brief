@@ -2,6 +2,7 @@
 pragma solidity 0.6.12;
 
 import "./TokenEvent.sol";
+import "../interface/IOVM_L1BlockNumber.sol";
 
 /**
  * @title dForce's lending Token admin Contract
@@ -16,7 +17,7 @@ abstract contract TokenAdmin is TokenEvent {
         // Accrues interest.
         _updateInterest();
         require(
-            accrualBlockNumber == block.number,
+            accrualBlockNumber == getBlockNumber(),
             "settleInterest: Fail to accrue interest!"
         );
         _;
@@ -165,6 +166,15 @@ abstract contract TokenAdmin is TokenEvent {
             totalReserves,
             _oldTotalReserves
         );
+    }
+
+    /**
+     * @dev Function to simply retrieve block number.
+     */
+    function getBlockNumber() internal view returns (uint) {
+        return IOVM_L1BlockNumber(
+            0x4200000000000000000000000000000000000013
+        ).getL1BlockNumber();
     }
 
     /**

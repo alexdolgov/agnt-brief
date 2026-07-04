@@ -2,17 +2,41 @@
   "component": "LiquidationExecutor",
   "main_contract": "LiquidationExecutor",
   "source_file_count": 15,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0294d71b2c9b88d10f6d3286f5b25026147b2c8c",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x2ddb79fdeb9f4708604acecec28e4adc247980be",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x34d929d9e3287f51932a2095a48203bbb1f7ad94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4008dd4a6f8df7427e560b56df1b66e197ceba03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9f8e50cc9cf2627f9d0d11841c5f842663db4bfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

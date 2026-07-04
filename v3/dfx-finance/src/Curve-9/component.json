@@ -1,0 +1,18 @@
+{
+  "component": "Curve-9",
+  "main_contract": "Curve",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x50e5f616598c8eae1fea9c4337987d2fc1723636",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

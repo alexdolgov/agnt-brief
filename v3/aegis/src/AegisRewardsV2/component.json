@@ -2,7 +2,7 @@
   "component": "AegisRewardsV2",
   "main_contract": "AegisRewardsV2",
   "source_file_count": 30,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x8340f5af4d2eebb402102143e7267aca7112eebd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd859e938258a62d684235f617d551149bf21debd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

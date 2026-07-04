@@ -1,0 +1,18 @@
+{
+  "component": "FlashRepayV1-3",
+  "main_contract": "FlashRepayV1",
+  "source_file_count": 154,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb80c45d1a6540dc5a29b0eb7861aaf554ae1370d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

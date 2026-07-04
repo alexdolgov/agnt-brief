@@ -2,32 +2,38 @@
   "component": "CLCore",
   "main_contract": "CLCore",
   "source_file_count": 18,
-  "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
-  ],
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x10c6d38f0c19c09b7cefde5f42494e4feca08eb2",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a5e783c9e7b24505d0baee021d555e81ea86e79",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x78af86bc355283a984d1770600abadf58ce4b5b1",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab264652495d3d0bdccfcccc308c794ea0160312",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xc4aafef081445fd6fcc794f9b47e686b3d30e05c",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x61c36aff32be348a3d1fe1e2b4745048f652770f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd52170ae01b9198246842d9a4ad964acd786ae91",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

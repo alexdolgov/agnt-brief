@@ -1,23 +1,47 @@
 {
   "component": "Router03",
   "main_contract": "Router03",
-  "source_file_count": 22,
-  "deployment_count": 2,
+  "source_file_count": 14,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0022358ebfd5261c325f8160c7c17bc8671d07b4",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9761d46ef36e07131e8c56af06e35cac23b9a91e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6108feaa628155b073150f408d0b390ec3121834",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3b47f0e57a6c537ecc198833728ccd5d02e29771",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd7cabef2c1fd77a31c5ba97c724b82d3e25fc83c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6108feaa628155b073150f408d0b390ec3121834",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2217aec3440e8fd6d49a118b1502e539f88dba55",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

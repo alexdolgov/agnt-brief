@@ -29,12 +29,14 @@ contract Permissions {
     }
 
     modifier onlyAdmin() {
-        require(msg.sender == getAdmin(), "Require admin");
+        PermissionsStorage storage $ = _getPermissionsStorage();
+        require(msg.sender == $._admin, "Require admin");
         _;
     }
 
-    modifier onlyVaultWithAdminFallback() {
-        require(msg.sender == _getVaultWithAdminFallback(), "Require vault");
+    modifier onlyVault() {
+        PermissionsStorage storage $ = _getPermissionsStorage();
+        require(msg.sender == $._vault, "Require vault");
         _;
     }
 
@@ -44,7 +46,7 @@ contract Permissions {
         _;
     }
 
-    function getAdmin() public view returns (address) {
+    function getAdmin() external view returns (address) {
         PermissionsStorage storage $ = _getPermissionsStorage();
         return $._admin;
     }
@@ -70,12 +72,6 @@ contract Permissions {
         return $._vault;
     }
 
-    function _getVaultWithAdminFallback() internal view returns (address) {
-        PermissionsStorage storage $ = _getPermissionsStorage();
-        address vault = $._vault;
-        return vault == address(0) ? $._admin : vault;
-    }
-
     event VaultTransferred(address indexed prevVault, address indexed newVault);
 
     function _initVault(address vault) internal {
@@ -84,7 +80,7 @@ contract Permissions {
         emit VaultTransferred(address(0), vault);
     }
 
-    function transferVault(address newVault) external onlyVaultWithAdminFallback {
+    function transferVault(address newVault) external onlyVault {
         PermissionsStorage storage $ = _getPermissionsStorage();
         address prevVault = $._vault;
         $._vault = newVault;

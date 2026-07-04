@@ -1,0 +1,18 @@
+{
+  "component": "SelfCompoundor-3",
+  "main_contract": "SelfCompoundor",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc5d8fa6439a5a8caa4ab24025751255296f1551a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

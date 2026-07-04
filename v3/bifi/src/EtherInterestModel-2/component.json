@@ -1,0 +1,18 @@
+{
+  "component": "EtherInterestModel-2",
+  "main_contract": "EtherInterestModel",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7d2da860c2a22f6c6c58d5f004346fcf61ab7529",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Spoke-3",
+  "main_contract": "Spoke",
+  "source_file_count": 41,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd30da1d7f964e5f6c2d9fe2aaa97517f6b23fa2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec3582fcdc34078a4b7a8c75a5a3ae46f48525ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "component": "OmniV3Connector-3",
+  "main_contract": "OmniV3Connector",
+  "source_file_count": 24,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc7d6e281c24e2f2c9e4a61efd5322b4910c2940b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa6bb36e3a345df75449dbd191c9ee5a13b17c436",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x99f30997d02f53d2502945fd5e94b8c0ec9fc84c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x064abb264f2290b5d69345426ac9031bec16a5e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

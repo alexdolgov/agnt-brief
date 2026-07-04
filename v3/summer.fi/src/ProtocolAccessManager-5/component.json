@@ -1,15 +1,15 @@
 {
   "component": "ProtocolAccessManager-5",
   "main_contract": "ProtocolAccessManager",
-  "source_file_count": 64,
-  "deployment_count": 2,
+  "source_file_count": 65,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xd84247a3e0ee8480214a0472d6fbc5c04251404d",
+      "address": "0x40087b15127791ff55746c4e87e4e4afb88a8aeb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +17,15 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xf285361059b2c17e4f3c562bd8a1868ce22ae826",
+      "address": "0x756ca6d02523c908972c4f82a4821c15f740d275",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7d3607937fac84aa6d41beb67e252098e52ecd6b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

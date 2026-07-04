@@ -2,18 +2,24 @@
   "component": "NFTXVaultUpgradeable-2",
   "main_contract": "NFTXVaultUpgradeable",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
-    "https://268710349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MObsGdLeFkbdDe8_KiT-2910905616%2Fuploads%2FxxMQXacJ9gspSb09eUCz%2FToB_Audit.pdf",
-    "https://code4rena.com/reports/2021-05-nftx",
-    "https://code4rena.com/reports/2021-12-nftx"
+    "https://268710349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MObsGdLeFkbdDe8_KiT-2910905616%2Fuploads%2FxxMQXacJ9gspSb09eUCz%2FToB_Audit.pdf"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x36b799160cdc2d9809d108224d1967cc9b7d321c",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd4031c7cf0e726c1d67832d5218a3bf7c5034338",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfde612740eb6d59d6a316e1e7fccf7c59cb05342",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

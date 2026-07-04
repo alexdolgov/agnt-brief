@@ -1,31 +1,15 @@
 {
   "component": "BalancerPoolToken-2",
   "main_contract": "BalancerPoolToken",
-  "source_file_count": 64,
-  "deployment_count": 3,
+  "source_file_count": 76,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x1fc7f1f84cfe61a04224ac8d3f87f56214fec08c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x16b50f6bf8c8ca73c07e17762188c5deee7ae5db",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xeaedc32a51c510d35ebc11088fd5ff2b47aacf2e",
+      "address": "0x8d217cb74f675b46cc2767c8cf0aab53be1c4818",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

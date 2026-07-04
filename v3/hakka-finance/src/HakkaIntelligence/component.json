@@ -2,7 +2,7 @@
   "component": "HakkaIntelligence",
   "main_contract": "HakkaIntelligence",
   "source_file_count": 1,
-  "deployment_count": 7,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -58,6 +58,22 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xd8b3ff98025cf203ba6d7bb2d25dbeef9539e6fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe3476ea2a0f98463f1742f8f208a40a8ca8d99bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfa9e6187a3c8c7bba7710aa8d8c22702865f69d3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

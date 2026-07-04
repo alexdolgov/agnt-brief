@@ -19,7 +19,6 @@ import {SqrtPriceMath} from "v4-core/libraries/SqrtPriceMath.sol";
 import {SafeCast} from "v4-core/libraries/SafeCast.sol";
 import {SignedMath} from "@openzeppelin/contracts/utils/math/SignedMath.sol";
 import {IMultiPositionManager} from "../interfaces/IMultiPositionManager.sol";
-import {LiquidityAmountsCapped} from "./LiquidityAmountsCapped.sol";
 
 library PoolManagerUtils {
     using PoolIdLibrary for PoolKey;
@@ -37,8 +36,6 @@ library PoolManagerUtils {
     error SlippageExceeded();
     error InvalidPositionData(IMultiPositionManager.Position position);
     error PoolNotInitialized(PoolKey poolKey);
-
-    uint128 internal constant MAX_LIQUIDITY_DELTA = uint128(type(int128).max);
 
     function mintLiquidities(
         IPoolManager poolManager,
@@ -177,14 +174,13 @@ library PoolManagerUtils {
             revert InvalidPositionData(pos);
         }
 
-        uint128 liquidity = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+        uint128 liquidity = LiquidityAmounts.getLiquidityForAmounts(
             sqrtPriceX96,
             TickMath.getSqrtPriceAtTick(range.lowerTick),
             TickMath.getSqrtPriceAtTick(range.upperTick),
             amount0,
             amount1
         );
-        liquidity = _capLiquidityForModify(liquidity);
 
         uint256 actualAmount0;
         uint256 actualAmount1;
@@ -212,11 +208,6 @@ library PoolManagerUtils {
 
         return
             IMultiPositionManager.PositionData({liquidity: liquidity, amount0: actualAmount0, amount1: actualAmount1});
-    }
-
-    function _capLiquidityForModify(uint128 liquidity) internal pure returns (uint128) {
-        if (liquidity > MAX_LIQUIDITY_DELTA) return MAX_LIQUIDITY_DELTA;
-        return liquidity;
     }
 
     function burnLiquidities(
@@ -308,7 +299,7 @@ library PoolManagerUtils {
         uint256 liquidityForShares = FullMath.mulDiv(liquidity, shares, totalSupply);
 
         if (liquidityForShares != 0) {
-            (BalanceDelta callerDelta, BalanceDelta feesAccrued) = poolManager.modifyLiquidity(
+            (BalanceDelta callerDelta,) = poolManager.modifyLiquidity(
                 poolKey,
                 ModifyLiquidityParams({
                     tickLower: range.lowerTick,
@@ -323,15 +314,10 @@ library PoolManagerUtils {
             // callerDelta is always positive
             // when adding liquidity, most of time callerDelta is negative but could be positive
             //  when fee is larger than liquidity itself (but fee already settled in `zeroBurn`)
-            // Slippage checks should only apply to principal (exclude accrued fees).
-            BalanceDelta principalDelta = callerDelta - feesAccrued;
-            uint256 principalOut0 = principalDelta.amount0().toUint128();
-            uint256 principalOut1 = principalDelta.amount1().toUint128();
-
             amountOut0 = callerDelta.amount0().toUint128();
             amountOut1 = callerDelta.amount1().toUint128();
 
-            if (principalOut0 < outMin[0] || principalOut1 < outMin[1]) {
+            if (amountOut0 < outMin[0] || amountOut1 < outMin[1]) {
                 revert SlippageExceeded();
             }
         }

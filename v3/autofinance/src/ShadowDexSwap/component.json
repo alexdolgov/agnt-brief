@@ -2,10 +2,18 @@
   "component": "ShadowDexSwap",
   "main_contract": "ShadowDexSwap",
   "source_file_count": 12,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xadc55207b2f7b9642c4c94a0725a29abb833e2cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

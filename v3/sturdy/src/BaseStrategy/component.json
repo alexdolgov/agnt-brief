@@ -2,17 +2,41 @@
   "component": "BaseStrategy",
   "main_contract": "BaseStrategy",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6d66cb69ed9bafc9b4da30bb187b3a93d5ebe920",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x168f6c2c46a58f4394924d14b9dc0a2b394519d9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x63e3ca7f666c4923d2b1d0bb1c301ba9a57f9560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x6cef966e111362ff22d8789b1fa886e4ef674c5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

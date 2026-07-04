@@ -9,7 +9,6 @@ import "./ControllerStorage.sol";
 import "./Unitroller.sol";
 import "./KineOracleInterface.sol";
 import "./KineSafeMath.sol";
-import "./Math.sol";
 
 /**
 Copyright 2020 Compound Labs, Inc.
@@ -53,9 +52,6 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
 
     /// @notice Emitted when liquidation incentive is changed by admin
     event NewLiquidationIncentive(uint oldLiquidationIncentiveMantissa, uint newLiquidationIncentiveMantissa);
-
-    /// @notice Emitted when redemption params is changed by admin
-    event NewRedemptionInitialPunishment(uint oldRedemptionInitialPunishmentMantissa, uint newRedemptionInitialPunishmentMantissa);
 
     /// @notice Emitted when price oracle is changed
     event NewPriceOracle(KineOracleInterface oldPriceOracle, KineOracleInterface newPriceOracle);
@@ -309,7 +305,7 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
         }
 
         /* Otherwise, perform a hypothetical liquidity check to guard against shortfall */
-        (, uint shortfall,,) = getHypotheticalAccountLiquidityInternal(redeemer, KToken(kToken), redeemTokens, 0);
+        (, uint shortfall) = getHypotheticalAccountLiquidityInternal(redeemer, KToken(kToken), redeemTokens, 0);
         if (shortfall > 0) {
             allowed = false;
             reason = INSUFFICIENT_LIQUIDITY;
@@ -379,7 +375,7 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
             }
         }
 
-        (, uint shortfall,,) = getHypotheticalAccountLiquidityInternal(borrower, KToken(kToken), 0, borrowAmount);
+        (, uint shortfall) = getHypotheticalAccountLiquidityInternal(borrower, KToken(kToken), 0, borrowAmount);
         if (shortfall > 0) {
             allowed = false;
             reason = INSUFFICIENT_LIQUIDITY;
@@ -486,6 +482,14 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
         if (KToken(kTokenCollateral).controller() != KToken(kTokenBorrowed).controller()) {
             allowed = false;
             reason = CONTROLLER_MISMATCH;
+            return (allowed, reason);
+        }
+
+        /* The borrower must have shortfall in order to be liquidatable */
+        (, uint shortfall) = getAccountLiquidityInternal(borrower);
+        if (shortfall == 0) {
+            allowed = false;
+            reason = INSUFFICIENT_SHORTFALL;
             return (allowed, reason);
         }
 
@@ -653,7 +657,6 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
      *  In Kine system, user can only borrow Kine MCD, the `borrowBalance` is the amount of Kine MCD account has borrowed.
      */
     struct AccountLiquidityLocalVars {
-        uint sumStaking;
         uint sumCollateral;
         uint sumBorrowPlusEffects;
         uint kTokenBalance;
@@ -667,22 +670,18 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
     /**
      * @notice Determine the current account liquidity wrt collateral requirements
      * @return (account liquidity in excess of collateral requirements,
-     *          account shortfall below collateral requirements,
-     *          account staking asset value,
-     *          account collateral value)
+     *          account shortfall below collateral requirements)
      */
-    function getAccountLiquidity(address account) public view returns (uint, uint, uint, uint) {
+    function getAccountLiquidity(address account) public view returns (uint, uint) {
         return getHypotheticalAccountLiquidityInternal(account, KToken(0), 0, 0);
     }
 
     /**
      * @notice Determine the current account liquidity wrt collateral requirements
      * @return (account liquidity in excess of collateral requirements,
-     *          account shortfall below collateral requirements
-     *          account staking asset value,
-     *          account collateral value)
+     *          account shortfall below collateral requirements)
      */
-    function getAccountLiquidityInternal(address account) internal view returns (uint, uint, uint, uint) {
+    function getAccountLiquidityInternal(address account) internal view returns (uint, uint) {
         return getHypotheticalAccountLiquidityInternal(account, KToken(0), 0, 0);
     }
 
@@ -700,8 +699,7 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
         address kTokenModify,
         uint redeemTokens,
         uint borrowAmount) public view returns (uint, uint) {
-        (uint liquidity, uint shortfall,,) = getHypotheticalAccountLiquidityInternal(account, KToken(kTokenModify), redeemTokens, borrowAmount);
-        return (liquidity, shortfall);
+        return getHypotheticalAccountLiquidityInternal(account, KToken(kTokenModify), redeemTokens, borrowAmount);
     }
 
     /**
@@ -717,7 +715,7 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
         address account,
         KToken kTokenModify,
         uint redeemTokens,
-        uint borrowAmount) internal view returns (uint, uint, uint, uint) {
+        uint borrowAmount) internal view returns (uint, uint) {
 
         AccountLiquidityLocalVars memory vars;
 
@@ -737,9 +735,6 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
 
             // Pre-compute a conversion factor
             vars.tokensToDenom = mulExp(vars.collateralFactor, vars.oraclePrice);
-
-            // sumStaking += oraclePrice * kTokenBalance
-            vars.sumStaking = mulScalarTruncateAddUInt(vars.oraclePrice, vars.kTokenBalance, vars.sumStaking);
 
             // sumCollateral += tokensToDenom * kTokenBalance
             vars.sumCollateral = mulScalarTruncateAddUInt(vars.tokensToDenom, vars.kTokenBalance, vars.sumCollateral);
@@ -761,9 +756,9 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
 
         // These are safe, as the underflow condition is checked first
         if (vars.sumCollateral > vars.sumBorrowPlusEffects) {
-            return (vars.sumCollateral - vars.sumBorrowPlusEffects, 0, vars.sumStaking, vars.sumCollateral);
+            return (vars.sumCollateral - vars.sumBorrowPlusEffects, 0);
         } else {
-            return (0, vars.sumBorrowPlusEffects - vars.sumCollateral, vars.sumStaking, vars.sumCollateral);
+            return (0, vars.sumBorrowPlusEffects - vars.sumCollateral);
         }
     }
 
@@ -775,37 +770,22 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
      * @param actualRepayAmount The amount of kTokenBorrowed underlying to convert into kTokenCollateral tokens
      * @return number of kTokenCollateral tokens to be seized in a liquidation
      */
-    function liquidateCalculateSeizeTokens(address target, address kTokenBorrowed, address kTokenCollateral, uint actualRepayAmount) external view returns (uint) {
+    function liquidateCalculateSeizeTokens(address kTokenBorrowed, address kTokenCollateral, uint actualRepayAmount) external view returns (uint) {
         /* Read oracle prices for borrowed and collateral markets */
         uint priceBorrowedMantissa = oracle.getUnderlyingPrice(kTokenBorrowed);
         uint priceCollateralMantissa = oracle.getUnderlyingPrice(kTokenCollateral);
         require(priceBorrowedMantissa != 0 && priceCollateralMantissa != 0, "price error");
 
-        uint cf = markets[address(kTokenCollateral)].collateralFactorMantissa;
-
-        (uint liquidity, uint shortfall, uint stakingValue, uint collateralValue) = getAccountLiquidityInternal(target);
-
-        uint incentiveOrPunishment;
-        if (shortfall > 0) {
-            // a liquidation occurs, incentive will be adjusted as below
-            // adjusted liquidation incentive = min((1-cf)/2 + 100%, (shortfall/collateralValue/cf)^2 + liquidationIncentive)
-            uint r = shortfall.mul(expScale).div(collateralValue).mul(expScale).div(cf);
-            incentiveOrPunishment = Math.min(mantissaOne.sub(cf).div(2).add(mantissaOne), r.mul(r).div(expScale).add(liquidationIncentiveMantissa));
-        } else {
-            require(!redemptionPaused, "Redemption paused");
-            require(!redemptionPausedPerAsset[kTokenCollateral], "Asset Redemption paused");
-            // a redemption occurs, punishment will be adjusted as below
-            // adjusted redemption punishment = 1 - (redemptionInitialPunishment + (liquidity/collateralValue*cf)^2)
-            uint r = liquidity.mul(expScale).div(collateralValue).mul(cf).div(expScale);
-            incentiveOrPunishment = mantissaOne.sub(redemptionInitialPunishmentMantissa.add(r.mul(r).div(expScale)));
-        }
-
         /*
          *  calculate the number of collateral tokens to seize:
          *  seizeTokens = actualRepayAmount * liquidationIncentive * priceBorrowed / priceCollateral
         */
-        Exp memory ratio = divExp(mulExp(incentiveOrPunishment, priceBorrowedMantissa), Exp({mantissa : priceCollateralMantissa}));
-        return mulScalarTruncate(ratio, actualRepayAmount);
+        Exp memory numerator = mulExp(liquidationIncentiveMantissa, priceBorrowedMantissa);
+        Exp memory denominator = Exp({mantissa : priceCollateralMantissa});
+        Exp memory ratio = divExp(numerator, denominator);
+        uint seizeTokens = mulScalarTruncate(ratio, actualRepayAmount);
+
+        return seizeTokens;
     }
 
     /*** Admin Functions ***/
@@ -994,29 +974,6 @@ contract Controller is ControllerStorage, KineControllerInterface, Exponential, 
         seizeGuardianPaused = state;
         emit ActionPaused("Seize", state);
         return state;
-    }
-
-    function _setRedemptionPaused(bool state) public returns (bool) {
-        require(msg.sender == pauseGuardian || msg.sender == admin, "only pause guardian and admin can pause/unpause");
-
-        redemptionPaused = state;
-        emit ActionPaused("Redemption", state);
-        return state;
-    }
-
-    function _setRedemptionPausedPerAsset(KToken kToken, bool state) public returns (bool) {
-        require(markets[address(kToken)].isListed, "cannot pause a market that is not listed");
-        require(msg.sender == pauseGuardian || msg.sender == admin, "only pause guardian and admin can pause/unpause");
-
-        redemptionPausedPerAsset[address(kToken)] = state;
-        emit ActionPaused(kToken, "Redemption", state);
-        return state;
-    }
-
-    function _setRedemptionInitialPunishment(uint newRedemptionInitialPunishmentMantissa) external onlyAdmin() {
-        uint oldRedemptionInitialPunishmentMantissa = redemptionInitialPunishmentMantissa;
-        redemptionInitialPunishmentMantissa = newRedemptionInitialPunishmentMantissa;
-        emit NewRedemptionInitialPunishment(oldRedemptionInitialPunishmentMantissa, newRedemptionInitialPunishmentMantissa);
     }
 
     function _become(Unitroller unitroller) public {

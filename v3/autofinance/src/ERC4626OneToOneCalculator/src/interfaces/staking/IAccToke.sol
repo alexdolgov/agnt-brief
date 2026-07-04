@@ -83,11 +83,7 @@ interface IAccToke {
      * @param duration in seconds for the stake
      * @param to address to receive ownership of the stake
      */
-    function stake(
-        uint256 amount,
-        uint256 duration,
-        address to
-    ) external;
+    function stake(uint256 amount, uint256 duration, address to) external;
 
     /**
      * @notice Stake TOKE
@@ -99,10 +95,7 @@ interface IAccToke {
      * @param amount TOKE to lockup in the stake
      * @param duration in seconds for the stake
      */
-    function stake(
-        uint256 amount,
-        uint256 duration
-    ) external;
+    function stake(uint256 amount, uint256 duration) external;
 
     /**
      * @notice Collect staked TOKE for a lockup and any earned rewards.
@@ -118,11 +111,7 @@ interface IAccToke {
      * @param user address of the user to unstake for
      * @param to address to receive the unstaked TOKE
      */
-    function unstake(
-        uint256[] memory lockupIds,
-        address user,
-        address to
-    ) external;
+    function unstake(uint256[] memory lockupIds, address user, address to) external;
 
     /**
      * @notice Extend a stake lockup for additional points.
@@ -136,10 +125,7 @@ interface IAccToke {
      * @param lockupIds the id of the old lockup to extend
      * @param durations number of seconds from now to stake for
      */
-    function extend(
-        uint256[] memory lockupIds,
-        uint256[] memory durations
-    ) external;
+    function extend(uint256[] memory lockupIds, uint256[] memory durations) external;
 
     ///////////////////////////////////////////////////////////////////
     //
@@ -167,10 +153,7 @@ interface IAccToke {
      * @return points staking points that would be returned
      * @return end staking period end date
      */
-    function previewPoints(
-        uint256 amount,
-        uint256 duration
-    ) external view returns (uint256, uint256);
+    function previewPoints(uint256 amount, uint256 duration) external view returns (uint256, uint256);
 
     /// @notice Preview the reward amount a caller can claim
     function previewRewards() external view returns (uint256);
@@ -184,10 +167,7 @@ interface IAccToke {
     function collectRewards() external returns (uint256);
 
     /// @notice Claim rewards for the user and send to recipient
-    function collectRewards(
-        address user,
-        address recipient
-    ) external returns (uint256);
+    function collectRewards(address user, address recipient) external returns (uint256);
 
     /// @notice Check if amount can be staked
     function isStakeableAmount(

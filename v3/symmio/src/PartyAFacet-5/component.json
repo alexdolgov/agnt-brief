@@ -1,0 +1,18 @@
+{
+  "component": "PartyAFacet-5",
+  "main_contract": "PartyAFacet",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x760c1c617f89dc74c429d0a62d2f1c2959b110f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

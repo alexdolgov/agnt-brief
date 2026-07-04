@@ -1,0 +1,18 @@
+{
+  "component": "FundingTracker-2",
+  "main_contract": "FundingTracker",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x86d7d86733214f4adc0f93f8714df5de2539f7c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

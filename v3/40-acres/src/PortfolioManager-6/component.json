@@ -1,0 +1,18 @@
+{
+  "component": "PortfolioManager-6",
+  "main_contract": "PortfolioManager",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x40ac2e40acb7bdd6ec83e468143262fe216529ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

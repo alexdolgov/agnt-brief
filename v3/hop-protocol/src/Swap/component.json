@@ -1,47 +1,47 @@
 {
   "component": "Swap",
   "main_contract": "Swap",
-  "source_file_count": 19,
+  "source_file_count": 17,
   "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x0ded0d521ac7b0d312871d18ea4fde79f03ee7ca",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x24afdca4653042c6d08fb1a754b2535dacf6eb24",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x10541b07d8ad2647dc6cd67abd4c03575dade261",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x3aa637d6853f1d9a9354fe4301ab852a88b237e7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x652d27c0f72771ce5c76fd400edd61b406ac6d97",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x4014dc015641c08788f15bd6eb20da4c47d936d8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xa5a33ab9063395a90ccbea2d86a62eccf27b5742",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5c32143c8b198f392d01f8446b754c181224ac26",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xffe42d3ba79ee5ee74a999cad0c60ef1153f0b82",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xaa30d6bba6285d0585722e2440ff89e23ef68864",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

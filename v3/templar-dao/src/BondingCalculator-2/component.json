@@ -1,0 +1,18 @@
+{
+  "component": "BondingCalculator-2",
+  "main_contract": "BondingCalculator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd7fe341fce9f3882d57eba5692221877830a5ddd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

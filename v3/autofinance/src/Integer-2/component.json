@@ -1,0 +1,18 @@
+{
+  "component": "Integer-2",
+  "main_contract": "Integer",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8a397abc023dc1b5b4d3bb9559915cc57594a71c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

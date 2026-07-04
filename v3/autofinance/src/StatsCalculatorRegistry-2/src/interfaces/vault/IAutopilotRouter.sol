@@ -1,11 +1,12 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IAutopool } from "src/interfaces/vault/IAutopool.sol";
 import { IAutopilotRouterBase } from "src/interfaces/vault/IAutopilotRouterBase.sol";
 import { IRewards } from "src/interfaces/rewarders/IRewards.sol";
 import { SwapParams } from "src/interfaces/liquidation/IAsyncSwapper.sol";
+import { ISwapRouterV2 } from "src/interfaces/swapper/ISwapRouterV2.sol";
 
 /**
  * @title IAutopilotRouter Interface
@@ -105,6 +106,24 @@ interface IAutopilotRouter is IAutopilotRouterBase {
     ) external payable returns (uint256 amountOut);
 
     /**
+     * @notice redeem `shares` shares from a AutopoolETH with a custom route
+     * @param vault The AutopoolETH to redeem shares from.
+     * @param to The destination of assets.
+     * @param shares The amount of shares to redeem from vault.
+     * @param minAmountOut The min amount of assets received by `to`.
+     * @param customRoute The custom route to use for the swap.
+     * @return amountOut the amount of assets received by `to`.
+     * @dev throws MinAmountError
+     */
+    function redeemWithRoutes(
+        IAutopool vault,
+        address to,
+        uint256 shares,
+        uint256 minAmountOut,
+        ISwapRouterV2.UserSwapData[] calldata customRoute
+    ) external payable returns (uint256 amountOut);
+
+    /**
      * @notice swaps token
      * @param swapper Address of the swapper to use
      * @param swapParams  Parameters for the swap
@@ -174,4 +193,11 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @return amountReceived Swap output amount
      */
     function collectAccTokeRewards(address accToke, address recipient) external payable returns (uint256);
+
+    /**
+     * @notice AccTokeV1 function to lock TOKE for `numOfCycles` cycles
+     * @param amount Amount of TOKE to lock up
+     * @param duration Number of cycles to lock for
+     */
+    function lockTokeFor(uint256 amount, uint256 duration) external payable;
 }

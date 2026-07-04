@@ -1,0 +1,18 @@
+{
+  "component": "nBeaconProxy-5",
+  "main_contract": "nBeaconProxy",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb2577109a7c636f0e65b75d2c1cb55a54fd8ec5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

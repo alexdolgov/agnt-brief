@@ -1,109 +1,98 @@
-// File: @openzeppelin/contracts/proxy/beacon/IBeacon.sol
+/**
+ *Submitted for verification at BscScan.com on 2021-12-09
+*/
 
+// File: @openzeppelin/contracts/utils/StorageSlot.sol
+
+
+// OpenZeppelin Contracts v4.4.0 (utils/StorageSlot.sol)
 
 pragma solidity ^0.8.0;
 
 /**
- * @dev This is the interface that {BeaconProxy} expects of its beacon.
- */
-interface IBeacon {
-    /**
-     * @dev Must return an address that can be used as a delegate call target.
-     *
-     * {BeaconProxy} will check that this address is a contract.
-     */
-    function implementation() external view returns (address);
-}
-
-// File: @openzeppelin/contracts/proxy/Proxy.sol
-
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev This abstract contract provides a fallback function that delegates all calls to another contract using the EVM
- * instruction `delegatecall`. We refer to the second contract as the _implementation_ behind the proxy, and it has to
- * be specified by overriding the virtual {_implementation} function.
+ * @dev Library for reading and writing primitive types to specific storage slots.
  *
- * Additionally, delegation to the implementation can be triggered manually through the {_fallback} function, or to a
- * different contract through the {_delegate} function.
+ * Storage slots are often used to avoid storage conflict when dealing with upgradeable contracts.
+ * This library helps with reading and writing to such slots without the need for inline assembly.
  *
- * The success and return data of the delegated call will be returned back to the caller of the proxy.
+ * The functions in this library return Slot structs that contain a `value` member that can be used to read or write.
+ *
+ * Example usage to set ERC1967 implementation slot:
+ * ```
+ * contract ERC1967 {
+ *     bytes32 internal constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;
+ *
+ *     function _getImplementation() internal view returns (address) {
+ *         return StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value;
+ *     }
+ *
+ *     function _setImplementation(address newImplementation) internal {
+ *         require(Address.isContract(newImplementation), "ERC1967: new implementation is not a contract");
+ *         StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value = newImplementation;
+ *     }
+ * }
+ * ```
+ *
+ * _Available since v4.1 for `address`, `bool`, `bytes32`, and `uint256`._
  */
-abstract contract Proxy {
+library StorageSlot {
+    struct AddressSlot {
+        address value;
+    }
+
+    struct BooleanSlot {
+        bool value;
+    }
+
+    struct Bytes32Slot {
+        bytes32 value;
+    }
+
+    struct Uint256Slot {
+        uint256 value;
+    }
+
     /**
-     * @dev Delegates the current call to `implementation`.
-     *
-     * This function does not return to its internall call site, it will return directly to the external caller.
+     * @dev Returns an `AddressSlot` with member `value` located at `slot`.
      */
-    function _delegate(address implementation) internal virtual {
+    function getAddressSlot(bytes32 slot) internal pure returns (AddressSlot storage r) {
         assembly {
-            // Copy msg.data. We take full control of memory in this inline assembly
-            // block because it will not return to Solidity code. We overwrite the
-            // Solidity scratch pad at memory position 0.
-            calldatacopy(0, 0, calldatasize())
-
-            // Call the implementation.
-            // out and outsize are 0 because we don't know the size yet.
-            let result := delegatecall(gas(), implementation, 0, calldatasize(), 0, 0)
-
-            // Copy the returned data.
-            returndatacopy(0, 0, returndatasize())
-
-            switch result
-            // delegatecall returns 0 on error.
-            case 0 {
-                revert(0, returndatasize())
-            }
-            default {
-                return(0, returndatasize())
-            }
+            r.slot := slot
         }
     }
 
     /**
-     * @dev This is a virtual function that should be overriden so it returns the address to which the fallback function
-     * and {_fallback} should delegate.
+     * @dev Returns an `BooleanSlot` with member `value` located at `slot`.
      */
-    function _implementation() internal view virtual returns (address);
-
-    /**
-     * @dev Delegates the current call to the address returned by `_implementation()`.
-     *
-     * This function does not return to its internall call site, it will return directly to the external caller.
-     */
-    function _fallback() internal virtual {
-        _beforeFallback();
-        _delegate(_implementation());
+    function getBooleanSlot(bytes32 slot) internal pure returns (BooleanSlot storage r) {
+        assembly {
+            r.slot := slot
+        }
     }
 
     /**
-     * @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if no other
-     * function in the contract matches the call data.
+     * @dev Returns an `Bytes32Slot` with member `value` located at `slot`.
      */
-    fallback() external payable virtual {
-        _fallback();
+    function getBytes32Slot(bytes32 slot) internal pure returns (Bytes32Slot storage r) {
+        assembly {
+            r.slot := slot
+        }
     }
 
     /**
-     * @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if call data
-     * is empty.
+     * @dev Returns an `Uint256Slot` with member `value` located at `slot`.
      */
-    receive() external payable virtual {
-        _fallback();
+    function getUint256Slot(bytes32 slot) internal pure returns (Uint256Slot storage r) {
+        assembly {
+            r.slot := slot
+        }
     }
-
-    /**
-     * @dev Hook that is called before falling back to the implementation. Can happen as part of a manual `_fallback`
-     * call, or as part of the Solidity `fallback` or `receive` functions.
-     *
-     * If overriden should call `super._beforeFallback()`.
-     */
-    function _beforeFallback() internal virtual {}
 }
 
 // File: @openzeppelin/contracts/utils/Address.sol
 
+
+// OpenZeppelin Contracts v4.4.0 (utils/Address.sol)
 
 pragma solidity ^0.8.0;
 
@@ -320,95 +309,121 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/utils/StorageSlot.sol
+// File: @openzeppelin/contracts/proxy/Proxy.sol
 
+
+// OpenZeppelin Contracts v4.4.0 (proxy/Proxy.sol)
 
 pragma solidity ^0.8.0;
 
 /**
- * @dev Library for reading and writing primitive types to specific storage slots.
+ * @dev This abstract contract provides a fallback function that delegates all calls to another contract using the EVM
+ * instruction `delegatecall`. We refer to the second contract as the _implementation_ behind the proxy, and it has to
+ * be specified by overriding the virtual {_implementation} function.
  *
- * Storage slots are often used to avoid storage conflict when dealing with upgradeable contracts.
- * This library helps with reading and writing to such slots without the need for inline assembly.
+ * Additionally, delegation to the implementation can be triggered manually through the {_fallback} function, or to a
+ * different contract through the {_delegate} function.
  *
- * The functions in this library return Slot structs that contain a `value` member that can be used to read or write.
- *
- * Example usage to set ERC1967 implementation slot:
- * ```
- * contract ERC1967 {
- *     bytes32 internal constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;
- *
- *     function _getImplementation() internal view returns (address) {
- *         return StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value;
- *     }
- *
- *     function _setImplementation(address newImplementation) internal {
- *         require(Address.isContract(newImplementation), "ERC1967: new implementation is not a contract");
- *         StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value = newImplementation;
- *     }
- * }
- * ```
- *
- * _Available since v4.1 for `address`, `bool`, `bytes32`, and `uint256`._
+ * The success and return data of the delegated call will be returned back to the caller of the proxy.
  */
-library StorageSlot {
-    struct AddressSlot {
-        address value;
-    }
-
-    struct BooleanSlot {
-        bool value;
-    }
-
-    struct Bytes32Slot {
-        bytes32 value;
-    }
-
-    struct Uint256Slot {
-        uint256 value;
-    }
-
+abstract contract Proxy {
     /**
-     * @dev Returns an `AddressSlot` with member `value` located at `slot`.
+     * @dev Delegates the current call to `implementation`.
+     *
+     * This function does not return to its internall call site, it will return directly to the external caller.
      */
-    function getAddressSlot(bytes32 slot) internal pure returns (AddressSlot storage r) {
+    function _delegate(address implementation) internal virtual {
         assembly {
-            r.slot := slot
+            // Copy msg.data. We take full control of memory in this inline assembly
+            // block because it will not return to Solidity code. We overwrite the
+            // Solidity scratch pad at memory position 0.
+            calldatacopy(0, 0, calldatasize())
+
+            // Call the implementation.
+            // out and outsize are 0 because we don't know the size yet.
+            let result := delegatecall(gas(), implementation, 0, calldatasize(), 0, 0)
+
+            // Copy the returned data.
+            returndatacopy(0, 0, returndatasize())
+
+            switch result
+            // delegatecall returns 0 on error.
+            case 0 {
+                revert(0, returndatasize())
+            }
+            default {
+                return(0, returndatasize())
+            }
         }
     }
 
     /**
-     * @dev Returns an `BooleanSlot` with member `value` located at `slot`.
+     * @dev This is a virtual function that should be overriden so it returns the address to which the fallback function
+     * and {_fallback} should delegate.
      */
-    function getBooleanSlot(bytes32 slot) internal pure returns (BooleanSlot storage r) {
-        assembly {
-            r.slot := slot
-        }
+    function _implementation() internal view virtual returns (address);
+
+    /**
+     * @dev Delegates the current call to the address returned by `_implementation()`.
+     *
+     * This function does not return to its internall call site, it will return directly to the external caller.
+     */
+    function _fallback() internal virtual {
+        _beforeFallback();
+        _delegate(_implementation());
     }
 
     /**
-     * @dev Returns an `Bytes32Slot` with member `value` located at `slot`.
+     * @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if no other
+     * function in the contract matches the call data.
      */
-    function getBytes32Slot(bytes32 slot) internal pure returns (Bytes32Slot storage r) {
-        assembly {
-            r.slot := slot
-        }
+    fallback() external payable virtual {
+        _fallback();
     }
 
     /**
-     * @dev Returns an `Uint256Slot` with member `value` located at `slot`.
+     * @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if call data
+     * is empty.
      */
-    function getUint256Slot(bytes32 slot) internal pure returns (Uint256Slot storage r) {
-        assembly {
-            r.slot := slot
-        }
+    receive() external payable virtual {
+        _fallback();
     }
+
+    /**
+     * @dev Hook that is called before falling back to the implementation. Can happen as part of a manual `_fallback`
+     * call, or as part of the Solidity `fallback` or `receive` functions.
+     *
+     * If overriden should call `super._beforeFallback()`.
+     */
+    function _beforeFallback() internal virtual {}
+}
+
+// File: @openzeppelin/contracts/proxy/beacon/IBeacon.sol
+
+
+// OpenZeppelin Contracts v4.4.0 (proxy/beacon/IBeacon.sol)
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev This is the interface that {BeaconProxy} expects of its beacon.
+ */
+interface IBeacon {
+    /**
+     * @dev Must return an address that can be used as a delegate call target.
+     *
+     * {BeaconProxy} will check that this address is a contract.
+     */
+    function implementation() external view returns (address);
 }
 
 // File: @openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol
 
 
+// OpenZeppelin Contracts v4.4.0 (proxy/ERC1967/ERC1967Upgrade.sol)
+
 pragma solidity ^0.8.2;
+
 
 
 
@@ -601,7 +616,10 @@ abstract contract ERC1967Upgrade {
 // File: @openzeppelin/contracts/proxy/beacon/BeaconProxy.sol
 
 
+// OpenZeppelin Contracts v4.4.0 (proxy/beacon/BeaconProxy.sol)
+
 pragma solidity ^0.8.0;
+
 
 
 
@@ -659,11 +677,13 @@ contract BeaconProxy is Proxy, ERC1967Upgrade {
     }
 }
 
-// File: contracts/bridge/token/Token.sol
+// File: github/certusone/wormhole/ethereum/contracts/bridge/token/Token.sol
 
 // contracts/Structs.sol
 
+
 pragma solidity ^0.8.0;
+
 
 contract BridgeToken is BeaconProxy {
     constructor(address beacon, bytes memory data) BeaconProxy(beacon, data) {

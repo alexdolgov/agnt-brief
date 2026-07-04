@@ -1,21 +1,23 @@
 # yo-protocol — deployments
 
-220 verified deployment(s) across 182 component(s).
+222 verified deployment(s) across 183 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x0000000f2eb9f69274678c76222b35eec7588a65` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a` | FiatTokenV2_1-3 | impl | live | no |
+| arbitrum | `0x7e715d9731ee8c29e0bde2e852891e9fbef262bb` | TransparentUpgradeableProxy-6 | impl | inactive | no |
 | arbitrum | `0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36` | MasterMinter-6 | impl | inactive | no |
 | arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy-3 | proxy | live | no |
-| base | `0x0000000f2eb9f69274678c76222b35eec7588a65` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| base | `0x0000000f2eb9f69274678c76222b35eec7588a65` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf` | YoGateway | impl | live | yes |
 | base | `0x114b64a8bf7bf0ab2a8a64a3e348307bd568726e` | MasterMinter-4 | impl | inactive | no |
 | base | `0x2230393edad0299b7e7b59f20aa856cd1bed52e1` | MasterMinter-5 | impl | inactive | no |
 | base | `0x32578ee59e91028216f5e9f1a5ee77d298d123f7` | YoVault | impl | live | yes |
-| base | `0x3a43aec53490cb9fa922847385d82fe25d0e9de7` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| base | `0x3a43aec53490cb9fa922847385d82fe25d0e9de7` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0x4200000000000000000000000000000000000006` | WETH9-2 | impl | live | no |
 | base | `0x4fd9f5f7a2c074fcacf13dcd207413b5d4e7d7da` | RoadrunnerWithdrawer | impl | live | no |
-| base | `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| base | `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | YoRegistry | impl | inactive | no |
 | base | `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | YoRegistry | proxy | live | no |
 | base | `0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42` | AdminUpgradeabilityProxy-4 | proxy | live | no |
@@ -23,7 +25,7 @@
 | base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | AdminUpgradeabilityProxy-5 | proxy | live | no |
 | base | `0x957c92c28a635f9c784628baaba69ae981792358` | YoVault | impl | live | yes |
 | base | `0xae11f170491edf4a139e32386153936792a3d262` | SafeProxy | impl | live | no |
-| base | `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| base | `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0xc33660b771db437e15e9234cc424e750376f903e` | YoGateway | impl | inactive | yes |
 | base | `0xc5da2b9174234f34c5857295776f5ea1fe70ebca` | Escrow | impl | inactive | yes |
 | base | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | AdminUpgradeabilityProxy-6 | proxy | live | no |
@@ -33,7 +35,7 @@
 | base | `0xf1eee0957267b1a474323ff9cff7719e964969fa` | YoGateway | proxy | live | yes |
 | base | `0xf5ebf57bc4ece32d1036ad907db1fa0a68556cae` | YoGateway | impl | live | yes |
 | base | `0xfe41964c2acccbe2da28b27f9034a227b6891e10` | Escrow | impl | live | yes |
-| ethereum | `0x0000000f2eb9f69274678c76222b35eec7588a65` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x0000000f2eb9f69274678c76222b35eec7588a65` | TransparentUpgradeableProxy-2 | proxy | live | yes |
 | ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | inactive | no |
 | ethereum | `0x01c1103d765f62a0d909499d7b615c382cdb072d` | DadFab | impl | inactive | no |
 | ethereum | `0x02398771fd1db790ef2b656ca3bcb3075f27a72c` | MasterMinter | impl | inactive | no |
@@ -90,14 +92,14 @@
 | ethereum | `0x4d05fa79f65b57778ef782d426ad2618e3903d84` | RevokableVester-7 | impl | inactive | no |
 | ethereum | `0x4e1adfd70cb9fbbe78e3a0d7f3d995cdc31abe02` | SupporterVester-12 | impl | inactive | no |
 | ethereum | `0x4f113098d798e7444255c0d0be7c64a1508fd0ba` | SupporterVester-13 | impl | inactive | no |
-| ethereum | `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` | TransparentUpgradeableProxy-2 | proxy | live | yes |
 | ethereum | `0x521c420c2a2b461034becbb41d4888b68951f14f` | TapFab | impl | inactive | no |
 | ethereum | `0x540df7c6e0f04513338b7cbb83460653971cc737` | RevokableVester-8 | impl | inactive | no |
 | ethereum | `0x542ba659e226251dcc9d66604c8ecfa50425bcbe` | RevokableVester-9 | impl | inactive | no |
 | ethereum | `0x5503e7690e550045e984c2b55902d8986ca2808e` | WETH | impl | inactive | no |
 | ethereum | `0x552f355ccb9b91c8fb47d9c011abad5b72ec30e9` | GemFab | impl | inactive | no |
 | ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter-3 | impl | inactive | no |
-| ethereum | `0x586675a3a46b008d8408933cf42d8ff6c9cc61a1` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x586675a3a46b008d8408933cf42d8ff6c9cc61a1` | TransparentUpgradeableProxy-2 | proxy | live | yes |
 | ethereum | `0x59adcf176ed2f6788a41b8ea4c4904518e62b6a4` | DSToken | impl | inactive | no |
 | ethereum | `0x59fbb80184cec833981d0940044bb59a69e5e7cd` | SupporterVester-14 | impl | inactive | no |
 | ethereum | `0x5a6d5344b786d96fe4237f8fe75e11e4b6f2fbd9` | SupporterVester-15 | impl | inactive | no |
@@ -173,7 +175,7 @@
 | ethereum | `0xb9fe6b5d872f2efe7f2472a6a0ea18cb1088a676` | RevokableVester-17 | impl | inactive | no |
 | ethereum | `0xba4eee20f434bc3908a0b18da496348657133a7e` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0xbc619735fdf48bba5e2bb403e42a5d457db684d5` | DVFInterface2 | impl | inactive | no |
-| ethereum | `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` | TransparentUpgradeableProxy-2 | proxy | live | yes |
 | ethereum | `0xbe48fb5d4d1cf72f77685b943a291c7293490164` | SupporterVester-37 | impl | inactive | no |
 | ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xc0562baaad3ef9e78ac449e3508a4a31c9395e57` | DSToken | impl | inactive | no |
@@ -224,9 +226,3 @@
 | ethereum | `0xfa1807d861cad31255bf75534e41e7115d498ed7` | SupporterVester-52 | impl | inactive | no |
 | ethereum | `0xfc19ce8f91955458ad135beddd201d554db4cd09` | SupporterVester-53 | impl | inactive | no |
 | ethereum | `0xfd48c0263de3691e524b5001db8f1c6e82659751` | TokenVesting-23 | impl | inactive | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x0000000f2eb9f69274678c76222b35eec7588a65`
-- arbitrum `0x7e715d9731ee8c29e0bde2e852891e9fbef262bb`

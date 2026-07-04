@@ -1,0 +1,26 @@
+{
+  "component": "ViewFacet-3",
+  "main_contract": "ViewFacet",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x7e8b57477727c46d13d573340d72dd27e4dd98d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x67d3bbbf68eb9ba032ae65552643fc20461b9054",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

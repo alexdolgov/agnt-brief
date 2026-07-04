@@ -2,10 +2,18 @@
   "component": "CrosschainERC20",
   "main_contract": "CrosschainERC20",
   "source_file_count": 1,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf79deabc1406a3ad07c70877fbaeb90777b77e68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

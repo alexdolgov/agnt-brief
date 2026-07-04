@@ -1,0 +1,26 @@
+{
+  "component": "SGPTradingProcessor-2",
+  "main_contract": "SGPTradingProcessor",
+  "source_file_count": 34,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc26595eb47b546b41e55e28167c4e59a4b73012f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdf079f12a2b0b88684d6c809dbeeb732bd44feed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

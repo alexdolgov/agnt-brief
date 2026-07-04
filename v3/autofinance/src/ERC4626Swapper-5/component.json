@@ -1,0 +1,26 @@
+{
+  "component": "ERC4626Swapper-5",
+  "main_contract": "ERC4626Swapper",
+  "source_file_count": 62,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x84c1ce81e54084863b274d4278c2e8f2bbe5d152",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb22f75f1d57751ec585d1ed331ddf0ac6fe22f34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

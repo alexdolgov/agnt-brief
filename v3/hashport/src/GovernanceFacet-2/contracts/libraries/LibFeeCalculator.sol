@@ -111,9 +111,19 @@ library LibFeeCalculator {
     function accrue(FeeCalculator storage _fc) internal returns (uint256) {
         uint256 members = LibGovernance.membersCount();
         uint256 amount = (_fc.feesAccrued - _fc.previousAccrued) / members;
+        //slither-disable-next-line divide-before-multiply
         _fc.previousAccrued += amount * members;
         _fc.accumulator = _fc.accumulator + amount;
 
         return _fc.accumulator;
+    }
+
+    /// @notice Accrues fees to a fee calculator
+    /// @param _token The target token to which fee calculator the amount will be accrued
+    /// @param _amount The amount to be accrued
+    function accrueFee(address _token, uint256 _amount) internal {
+        LibFeeCalculator.Storage storage fcs = feeCalculatorStorage();
+        FeeCalculator storage fc = fcs.nativeTokenFeeCalculators[_token];
+        fc.feesAccrued = fc.feesAccrued + _amount;
     }
 }

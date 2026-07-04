@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BUSL-1.1
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 import "./utils/Errors.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
@@ -137,7 +137,6 @@ contract MultisigWallet is AccessControlEnumerable {
         numConfirmations: 1
       })
     );
-    isConfirmed[txIndex][msg.sender] = true;
 
     emit SubmitTransaction(msg.sender, txIndex, _targets, _values, _data);
   }

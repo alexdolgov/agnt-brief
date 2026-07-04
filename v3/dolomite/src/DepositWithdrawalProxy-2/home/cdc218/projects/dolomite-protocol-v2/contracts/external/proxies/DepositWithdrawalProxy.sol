@@ -22,7 +22,6 @@ pragma experimental ABIEncoderV2;
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { ReentrancyGuard } from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import { WETH9 } from "canonical-weth/contracts/WETH9.sol";
 
 import { IDolomiteMargin } from "../../protocol/interfaces/IDolomiteMargin.sol";
 
@@ -32,8 +31,11 @@ import { Require } from "../../protocol/lib/Require.sol";
 import { Types } from "../../protocol/lib/Types.sol";
 
 import { OnlyDolomiteMargin } from "../helpers/OnlyDolomiteMargin.sol";
+import { AccountActionLib } from "../lib/AccountActionLib.sol";
+import { AccountBalanceLib } from "../lib/AccountBalanceLib.sol";
 
 import { IDepositWithdrawalProxy } from "../interfaces/IDepositWithdrawalProxy.sol";
+import { IWETH } from "../interfaces/IWETH.sol";
 
 
 /**
@@ -48,11 +50,11 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
 
     // ============ Constants ============
 
-    bytes32 constant FILE = "DepositWithdrawalProxy";
+    bytes32 private constant FILE = "DepositWithdrawalProxy";
 
     // ============ Field Variables ============
 
-    WETH9 WETH;
+    IWETH WETH;
     uint256 ETH_MARKET_ID;
     bool g_initialized;
 
@@ -95,21 +97,23 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
             "already initialized"
         );
         g_initialized = true;
-        WETH = WETH9(_weth);
+        WETH = IWETH(_weth);
         ETH_MARKET_ID = DOLOMITE_MARGIN.getMarketIdByTokenAddress(_weth);
         WETH.approve(address(DOLOMITE_MARGIN), uint(-1));
     }
 
     function depositWei(
-        uint _accountIndex,
-        uint _marketId,
-        uint _amountWei
+        uint256 _toAccountNumber,
+        uint256 _marketId,
+        uint256 _amountWei
     )
     external
     nonReentrant {
-        _deposit(
-            /* _from = */ msg.sender,
-            _accountIndex,
+        AccountActionLib.deposit(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccount = */ msg.sender, // solium-disable-line indentation
+            _toAccountNumber,
             _marketId,
             Types.AssetAmount({
                 sign: true,
@@ -121,16 +125,18 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     }
 
     function depositETH(
-        uint _accountIndex
+        uint256 _toAccountNumber
     )
     external
     payable
     requireIsInitialized
     nonReentrant {
         _wrap();
-        _deposit(
-            /* _from = */ address(this),
-            _accountIndex,
+        AccountActionLib.deposit(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccount = */ address(this), // solium-disable-line indentation
+            _toAccountNumber,
             ETH_MARKET_ID,
             Types.AssetAmount({
                 sign: true,
@@ -142,14 +148,16 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     }
 
     function depositWeiIntoDefaultAccount(
-        uint _marketId,
-        uint _amountWei
+        uint256 _marketId,
+        uint256 _amountWei
     )
     external
     nonReentrant {
-        _deposit(
-            /* _from = */ msg.sender,
-            /* _accountIndex = */ 0,
+        AccountActionLib.deposit(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccount = */ msg.sender, // solium-disable-line indentation
+            /* _toAccountNumber = */ 0, // solium-disable-line indentation
             _marketId,
             Types.AssetAmount({
                 sign: true,
@@ -166,9 +174,11 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     requireIsInitialized
     nonReentrant {
         _wrap();
-        _deposit(
-            /* _from = */ address(this),
-            /* _accountIndex = */ 0,
+        AccountActionLib.deposit(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccount = */ address(this), // solium-disable-line indentation
+            /* _toAccountNumber = */ 0, // solium-disable-line indentation
             ETH_MARKET_ID,
             Types.AssetAmount({
                 sign: true,
@@ -180,81 +190,97 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     }
 
     function withdrawWei(
-        uint _accountIndex,
-        uint _marketId,
-        uint _amountWei
+        uint256 _fromAccountNumber,
+        uint256 _marketId,
+        uint256 _amountWei,
+        AccountBalanceLib.BalanceCheckFlag _balanceCheckFlag
     )
     external
     nonReentrant {
-        _withdraw(
-            /* _to = */ msg.sender,
-            _accountIndex,
+        AccountActionLib.withdraw(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            _fromAccountNumber,
+            /* _toAccount = */ msg.sender, // solium-disable-line indentation
             _marketId,
             Types.AssetAmount({
                 sign: false,
                 denomination: Types.AssetDenomination.Wei,
                 ref: _amountWei == uint(-1) ? Types.AssetReference.Target : Types.AssetReference.Delta,
                 value: _amountWei == uint(-1) ? 0 : _amountWei
-            })
+            }),
+            _balanceCheckFlag
         );
     }
 
     function withdrawETH(
-        uint _accountIndex,
-        uint _amountWei
+        uint256 _fromAccountNumber,
+        uint256 _amountWei,
+        AccountBalanceLib.BalanceCheckFlag _balanceCheckFlag
     )
     external
     requireIsInitialized
     nonReentrant {
-        _withdraw(
-            /* _to = */ address(this),
-            _accountIndex,
+        AccountActionLib.withdraw(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            _fromAccountNumber,
+            /* _toAccount = */ address(this), // solium-disable-line indentation
             ETH_MARKET_ID,
             Types.AssetAmount({
                 sign: false,
                 denomination: Types.AssetDenomination.Wei,
                 ref: _amountWei == uint(-1) ? Types.AssetReference.Target : Types.AssetReference.Delta,
                 value: _amountWei == uint(-1) ? 0 : _amountWei
-            })
+            }),
+            _balanceCheckFlag
         );
         _unwrapAndSend();
     }
 
     function withdrawWeiFromDefaultAccount(
-        uint _marketId,
-        uint _amountWei
+        uint256 _marketId,
+        uint256 _amountWei,
+        AccountBalanceLib.BalanceCheckFlag _balanceCheckFlag
     )
     external
     nonReentrant {
-        _withdraw(
-            /* _to = */ msg.sender,
-            /* _accountIndex = */ 0,
+        AccountActionLib.withdraw(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccountNumber = */ 0, // solium-disable-line indentation
+            /* _toAccount = */ msg.sender, // solium-disable-line indentation
             _marketId,
             Types.AssetAmount({
                 sign: false,
                 denomination: Types.AssetDenomination.Wei,
                 ref: _amountWei == uint(-1) ? Types.AssetReference.Target : Types.AssetReference.Delta,
                 value: _amountWei == uint(-1) ? 0 : _amountWei
-            })
+            }),
+            _balanceCheckFlag
         );
     }
 
     function withdrawETHFromDefaultAccount(
-        uint _amountWei
+        uint256 _amountWei,
+        AccountBalanceLib.BalanceCheckFlag _balanceCheckFlag
     )
     external
     requireIsInitialized
     nonReentrant {
-        _withdraw(
-            /* _to = */ address(this),
-            0,
+        AccountActionLib.withdraw(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccountNumber = */ 0, // solium-disable-line indentation
+            /* _toAccount = */ address(this), // solium-disable-line indentation
             ETH_MARKET_ID,
             Types.AssetAmount({
                 sign: false,
                 denomination: Types.AssetDenomination.Wei,
                 ref: _amountWei == uint(-1) ? Types.AssetReference.Target : Types.AssetReference.Delta,
                 value: _amountWei == uint(-1) ? 0 : _amountWei
-            })
+            }),
+            _balanceCheckFlag
         );
         _unwrapAndSend();
     }
@@ -262,15 +288,17 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     // ========================= Par Functions =========================
 
     function depositPar(
-        uint _accountIndex,
-        uint _marketId,
-        uint _amountPar
+        uint256 _toAccountNumber,
+        uint256 _marketId,
+        uint256 _amountPar
     )
     external
     nonReentrant {
-        _deposit(
-            /* _from = */ msg.sender,
-            _accountIndex,
+        AccountActionLib.deposit(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccount = */ msg.sender, // solium-disable-line indentation
+            _toAccountNumber,
             _marketId,
             Types.AssetAmount({
                 sign: true,
@@ -282,14 +310,16 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     }
 
     function depositParIntoDefaultAccount(
-        uint _marketId,
-        uint _amountPar
+        uint256 _marketId,
+        uint256 _amountPar
     )
     external
     nonReentrant {
-        _deposit(
-            /* _from = */ msg.sender,
-            /* _accountIndex = */ 0,
+        AccountActionLib.deposit(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccount = */ msg.sender, // solium-disable-line indentation
+            /* _toAccountNumber = */ 0, // solium-disable-line indentation
             _marketId,
             Types.AssetAmount({
                 sign: true,
@@ -301,41 +331,49 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     }
 
     function withdrawPar(
-        uint _accountIndex,
-        uint _marketId,
-        uint _amountPar
+        uint256 _fromAccountNumber,
+        uint256 _marketId,
+        uint256 _amountPar,
+        AccountBalanceLib.BalanceCheckFlag _balanceCheckFlag
     )
     external
     nonReentrant {
-        _withdraw(
-            /* _to = */ msg.sender,
-            _accountIndex,
+        AccountActionLib.withdraw(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            _fromAccountNumber,
+            /* _toAccount = */ msg.sender, // solium-disable-line indentation
             _marketId,
             Types.AssetAmount({
                 sign: false,
                 denomination: Types.AssetDenomination.Par,
                 ref: _amountPar == uint(-1) ? Types.AssetReference.Target : Types.AssetReference.Delta,
                 value: _amountPar == uint(-1) ? 0 : _amountPar
-            })
+            }),
+            _balanceCheckFlag
         );
     }
 
     function withdrawParFromDefaultAccount(
-        uint _marketId,
-        uint _amountPar
+        uint256 _marketId,
+        uint256 _amountPar,
+        AccountBalanceLib.BalanceCheckFlag _balanceCheckFlag
     )
     external
     nonReentrant {
-        _withdraw(
-            /* _to = */ msg.sender,
-            /* _accountIndex = */ 0,
+        AccountActionLib.withdraw(
+            DOLOMITE_MARGIN,
+            /* _accountOwner = */ msg.sender, // solium-disable-line indentation
+            /* _fromAccountNumber = */ 0, // solium-disable-line indentation
+            /* _toAccount = */ msg.sender, // solium-disable-line indentation
             _marketId,
             Types.AssetAmount({
                 sign: false,
                 denomination: Types.AssetDenomination.Par,
                 ref: _amountPar == uint(-1) ? Types.AssetReference.Target : Types.AssetReference.Delta,
                 value: _amountPar == uint(-1) ? 0 : _amountPar
-            })
+            }),
+            _balanceCheckFlag
         );
     }
 
@@ -346,68 +384,13 @@ contract DepositWithdrawalProxy is IDepositWithdrawalProxy, OnlyDolomiteMargin, 
     }
 
     function _unwrapAndSend() internal {
-        WETH9 _WETH = WETH;
+        IWETH _WETH = WETH;
         uint amount = _WETH.balanceOf(address(this));
         _WETH.withdraw(amount);
         msg.sender.sendValue(amount);
     }
 
-    function _getSenderBalance(uint _marketId) internal view returns (uint) {
+    function _getSenderBalance(uint256 _marketId) internal view returns (uint) {
         return IERC20(DOLOMITE_MARGIN.getMarketTokenAddress(_marketId)).balanceOf(msg.sender);
     }
-
-    function _deposit(
-        address _from,
-        uint _accountIndex,
-        uint _marketId,
-        Types.AssetAmount memory _amount
-    ) internal {
-        Account.Info[] memory accounts = new Account.Info[](1);
-        accounts[0] = Account.Info({
-            owner: msg.sender,
-            number: _accountIndex
-        });
-
-        Actions.ActionArgs[] memory actions = new Actions.ActionArgs[](1);
-        actions[0] = Actions.ActionArgs({
-            actionType: Actions.ActionType.Deposit,
-            accountId: 0,
-            amount: _amount,
-            primaryMarketId: _marketId,
-            secondaryMarketId: 0,
-            otherAddress: _from,
-            otherAccountId: 0,
-            data: bytes("")
-        });
-
-        DOLOMITE_MARGIN.operate(accounts, actions);
-    }
-
-    function _withdraw(
-        address _to,
-        uint _accountIndex,
-        uint _marketId,
-        Types.AssetAmount memory _amount
-    ) internal {
-        Account.Info[] memory accounts = new Account.Info[](1);
-        accounts[0] = Account.Info({
-            owner: msg.sender,
-            number: _accountIndex
-        });
-
-        Actions.ActionArgs[] memory actions = new Actions.ActionArgs[](1);
-        actions[0] = Actions.ActionArgs({
-            actionType: Actions.ActionType.Withdraw,
-            accountId: 0,
-            amount: _amount,
-            primaryMarketId: _marketId,
-            secondaryMarketId: 0,
-            otherAddress: _to,
-            otherAccountId: 0,
-            data: bytes("")
-        });
-
-        DOLOMITE_MARGIN.operate(accounts, actions);
-    }
-
 }

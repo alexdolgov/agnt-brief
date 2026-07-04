@@ -1,0 +1,26 @@
+{
+  "component": "xWELL-3",
+  "main_contract": "xWELL",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2585d82da7a7f8a85b10e6964814a74d999a14e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x54720dbdb9bc6bcce6796b3c57d4527e848e5873",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

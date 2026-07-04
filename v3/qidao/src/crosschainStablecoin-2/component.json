@@ -1,0 +1,18 @@
+{
+  "component": "crosschainStablecoin-2",
+  "main_contract": "crosschainStablecoin",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd2fe44055b5c874fee029119f70336447c8e8827",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

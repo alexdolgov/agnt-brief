@@ -1,0 +1,30 @@
+{
+  "component": "InterestModel-4",
+  "main_contract": "InterestModel",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/ENG/(ENG)_BiFi_Lending_Sooho_EN_Public.pdf",
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/bifrost_bifi_audit.pdf",
+    "https://github.com/bifrost-platform/BiFi-X/blob/main/docs/bifrost_bifix_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2a8c94e2397361cde5114ca1618bab46eb8d71bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfc36eecbf3fca5d65c73951d4cd7fea1d845c29c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

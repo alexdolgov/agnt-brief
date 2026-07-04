@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.28;
+pragma solidity 0.8.28;
 
 import { IERC4626 } from "@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol";
 import { IERC20, SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
@@ -55,18 +55,15 @@ contract UnstakingManager {
     function cancelLock(uint256 lockId) external {
         Lock storage lock = locks[lockId];
 
-        address user = lock.user;
-        uint256 amount = lock.amount;
-
-        require(user == msg.sender, UnstakingManager__Unauthorized());
+        require(lock.user == msg.sender, UnstakingManager__Unauthorized());
         require(lock.claimedAt == 0, UnstakingManager__AlreadyClaimed());
 
-        delete locks[lockId];
-
-        SafeERC20.forceApprove(targetToken, address(vault), amount);
-        vault.deposit(amount, user);
+        SafeERC20.forceApprove(targetToken, address(vault), lock.amount);
+        vault.deposit(lock.amount, lock.user);
 
         emit LockCancelled(lockId);
+
+        delete locks[lockId];
     }
 
     function claimLock(uint256 lockId) external {

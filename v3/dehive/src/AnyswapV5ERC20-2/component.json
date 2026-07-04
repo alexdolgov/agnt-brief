@@ -1,0 +1,18 @@
+{
+  "component": "AnyswapV5ERC20-2",
+  "main_contract": "AnyswapV5ERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5fcb9de282af6122ce3518cde28b7089c9f97b26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

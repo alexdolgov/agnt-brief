@@ -1,0 +1,18 @@
+{
+  "component": "ERC721SequentialId-2",
+  "main_contract": "ERC721SequentialId",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b89974f0363b0f85e40a80dd23d35d1fae4552f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

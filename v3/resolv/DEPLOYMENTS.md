@@ -1,6 +1,6 @@
 # resolv — deployments
 
-186 verified deployment(s) across 70 component(s).
+187 verified deployment(s) across 70 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,6 +10,7 @@
 | bsc | `0x4254813524695def4163a169e901f3d7a1a55429` | OFTCoreUpgradeable | proxy | live | no |
 | bsc | `0x5943026e21e3936538620ba27e01525bba311255` | OFTCoreUpgradeable | impl | inactive | no |
 | bsc | `0x8ade71febab1337ce08062fe5208a611ee6e86e9` | TransparentUpgradeableProxy-4 | impl | live | no |
+| bsc | `0xc31389794ffac23331e0d9f611b7953f90aa5fdc` | Timelock-2 | impl | inactive | no |
 | bsc | `0xda6cef7f667d992a60eb823ab215493aa0c6b360` | OFTCoreUpgradeable | proxy | live | no |
 | chain-9745 | `0x2a52b289ba68bbd02676640aa9f605700c9e5699` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | chain-9745 | `0x35533f54740f1f1aa4179e57ba37039dfa16868b` | TransparentUpgradeableProxy-4 | proxy | live | no |
@@ -190,8 +191,3 @@
 | ethereum | `0xfc7d46929bc3dc2ca9533a6fc5e9896d401604a4` | StakedTokenDistributor | impl | live | no |
 | ethereum | `0xfe4bce4b3949c35fb17691d8b03c3cadbe2e5e23` | BurnRegistryV1 | proxy | live | no |
 | ethereum | `0xfff16789c95d987c214bcba466e26dfc5dc01ad6` | AddressesWhitelist | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xc31389794ffac23331e0d9f611b7953f90aa5fdc`

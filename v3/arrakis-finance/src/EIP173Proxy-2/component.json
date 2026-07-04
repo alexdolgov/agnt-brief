@@ -1,42 +1,82 @@
 {
   "component": "EIP173Proxy-2",
   "main_contract": "EIP173Proxy",
-  "source_file_count": 5,
-  "deployment_count": 4,
+  "source_file_count": 2,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x18d1bc899a8e9baaadab80f401cb3a6c2b3c7994",
+      "address": "0x83c1aef2d4ce3b7c09930ad1cdda626839f93608",
       "is_proxy": true,
-      "implementation_address": "0xddda52773510b3c8dc9fd70259fe9fcac54dfed0",
+      "implementation_address": "0x86d62a8ad19998e315e6242b63eb73f391d4674b",
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb378c842521698720b45239d3f7317a46191a2f1",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x232ea11b244b1b36d034ba57b15ad514149aea2e",
       "is_proxy": true,
-      "implementation_address": "0xddda52773510b3c8dc9fd70259fe9fcac54dfed0",
+      "implementation_address": "0x8c99b6edd92b83cb123c84514ee9ec5f53afc501",
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc2b92cd8ba2871259083fe7171b3c514899a7174",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6aaee18f61d0a8c94117b927406180e59e285b37",
       "is_proxy": true,
-      "implementation_address": "0xddda52773510b3c8dc9fd70259fe9fcac54dfed0",
+      "implementation_address": "0x8c99b6edd92b83cb123c84514ee9ec5f53afc501",
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xddda52773510b3c8dc9fd70259fe9fcac54dfed0",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd9723fffda369d119fbd66a15113144bf76e281c",
+      "is_proxy": true,
+      "implementation_address": "0x8c99b6edd92b83cb123c84514ee9ec5f53afc501",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5aabe80f1d80842408da860384a05a85e9a64e98",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x75830bca247c671a338526f01f47e29384116540",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb76359a71843bcef4cc749f0f0cf1a2672f604ba",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd39977d67519b1297e4a3aab0aa684f35624bb01",
+      "is_proxy": true,
+      "implementation_address": "0xe81e1851f1f0511a7451f4c86f7920e466e12181",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe54e04fe47713fa99d9912ab08c7e72435a5d270",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live"
     }
   ]
 }

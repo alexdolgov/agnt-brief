@@ -7,8 +7,8 @@ import {
 } from "@ribbon-finance/rvol/contracts/interfaces/IPriceOracle.sol";
 import {IOptionsPremiumPricer} from "../interfaces/IRibbon.sol";
 import {
-    IVolatilityOracle
-} from "@ribbon-finance/rvol/contracts/interfaces/IVolatilityOracle.sol";
+    IManualVolatilityOracle
+} from "@ribbon-finance/rvol/contracts/interfaces/IManualVolatilityOracle.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import {Vault} from "../libraries/Vault.sol";
 
@@ -20,7 +20,7 @@ contract DeltaStrikeSelection is Ownable {
      */
     IOptionsPremiumPricer public immutable optionsPremiumPricer;
 
-    IVolatilityOracle public immutable volatilityOracle;
+    IManualVolatilityOracle public immutable volatilityOracle;
 
     // delta for options strike price selection. 1 is 10000 (10**4)
     uint256 public delta;
@@ -50,8 +50,9 @@ contract DeltaStrikeSelection is Ownable {
         require(_delta > 0, "!_delta");
         require(_delta <= DELTA_MULTIPLIER, "newDelta cannot be more than 1");
         require(_step > 0, "!_step");
+
         optionsPremiumPricer = IOptionsPremiumPricer(_optionsPremiumPricer);
-        volatilityOracle = IVolatilityOracle(
+        volatilityOracle = IManualVolatilityOracle(
             IOptionsPremiumPricer(_optionsPremiumPricer).volatilityOracle()
         );
         // ex: delta = 7500 (.75)
@@ -63,8 +64,7 @@ contract DeltaStrikeSelection is Ownable {
                 )
                     .decimals();
 
-        // ex: step = 1000
-        step = _step.mul(_assetOracleMultiplier);
+        step = _step;
 
         assetOracleMultiplier = _assetOracleMultiplier;
     }
@@ -77,12 +77,51 @@ contract DeltaStrikeSelection is Ownable {
      * @return newStrikePrice is the strike price of the option (ex: for BTC might be 45000 * 10 ** 8)
      * @return newDelta is the delta of the option given its parameters
      */
-
     function getStrikePrice(uint256 expiryTimestamp, bool isPut)
         external
         view
         returns (uint256 newStrikePrice, uint256 newDelta)
     {
+        // asset's annualized volatility
+        uint256 annualizedVol =
+            volatilityOracle.annualizedVol(optionsPremiumPricer.optionId()).mul(
+                10**10
+            );
+        return _getStrikePrice(expiryTimestamp, isPut, annualizedVol);
+    }
+
+    /**
+     * @notice Gets the strike price satisfying the delta value
+     * given the expiry timestamp and whether option is call or put
+     * @param expiryTimestamp is the unix timestamp of expiration
+     * @param isPut is whether option is put or call
+     * @param annualizedVol is IV of the asset at the specified delta
+     * @return newStrikePrice is the strike price of the option (ex: for BTC might be 45000 * 10 ** 8)
+     * @return newDelta is the delta of the option given its parameters
+     */
+    function getStrikePriceWithVol(
+        uint256 expiryTimestamp,
+        bool isPut,
+        uint256 annualizedVol
+    ) external view returns (uint256 newStrikePrice, uint256 newDelta) {
+        return
+            _getStrikePrice(expiryTimestamp, isPut, annualizedVol.mul(10**10));
+    }
+
+    /**
+     * @notice Gets the strike price satisfying the delta value
+     * given the expiry timestamp and whether option is call or put
+     * @param expiryTimestamp is the unix timestamp of expiration
+     * @param isPut is whether option is put or call
+     * @return newStrikePrice is the strike price of the option (ex: for BTC might be 45000 * 10 ** 8)
+     * @return newDelta is the delta of the option given its parameters
+     */
+
+    function _getStrikePrice(
+        uint256 expiryTimestamp,
+        bool isPut,
+        uint256 annualizedVol
+    ) internal view returns (uint256 newStrikePrice, uint256 newDelta) {
         require(
             expiryTimestamp > block.timestamp,
             "Expiry must be in the future!"
@@ -90,12 +129,6 @@ contract DeltaStrikeSelection is Ownable {
 
         // asset price
         uint256 assetPrice = optionsPremiumPricer.getUnderlyingPrice();
-
-        // asset's annualized volatility
-        uint256 annualizedVol =
-            volatilityOracle.annualizedVol(optionsPremiumPricer.pool()).mul(
-                10**10
-            );
 
         // For each asset prices with step of 'step' (down if put, up if call)
         //   if asset's getOptionDelta(currStrikePrice, spotPrice, annualizedVol, t) == (isPut ? 1 - delta:delta)
@@ -107,7 +140,7 @@ contract DeltaStrikeSelection is Ownable {
                 ? assetPrice.sub(assetPrice % step).sub(step)
                 : assetPrice.add(step - (assetPrice % step)).add(step);
         uint256 targetDelta = isPut ? DELTA_MULTIPLIER.sub(delta) : delta;
-        uint256 prevDelta = DELTA_MULTIPLIER;
+        uint256 prevDelta = isPut ? 0 : DELTA_MULTIPLIER;
 
         while (true) {
             uint256 currDelta =
@@ -227,7 +260,7 @@ contract DeltaStrikeSelection is Ownable {
     function setStep(uint256 newStep) external onlyOwner {
         require(newStep > 0, "!newStep");
         uint256 oldStep = step;
-        step = newStep.mul(assetOracleMultiplier);
+        step = newStep;
         emit StepSet(oldStep, newStep, msg.sender);
     }
 }

@@ -1,0 +1,18 @@
+{
+  "component": "DiamondCut-2",
+  "main_contract": "DiamondCut",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xa65821ffe86e6eb613daa1f70af350c5a21759df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

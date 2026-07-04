@@ -42,15 +42,12 @@ abstract contract BaseLocker is ReentrancyGuardUpgradeable, ERC721EnumerableUpgr
   IERC20 internal _underlying;
   mapping(uint256 => LockedBalance) internal _locked;
 
-  address public admin;
-
   function __BaseLocker_init(
     string memory _name,
     string memory _symbol,
     address _token,
     address _staking,
-    uint256 _maxTime,
-    address _admin
+    uint256 _maxTime
   ) internal {
     __ERC721_init(_name, _symbol);
     __ReentrancyGuard_init();
@@ -61,7 +58,6 @@ abstract contract BaseLocker is ReentrancyGuardUpgradeable, ERC721EnumerableUpgr
     staking = IOmnichainStaking(_staking);
     _underlying = IERC20(_token);
     _setApprovalForAll(address(this), _staking, true);
-    admin = _admin;
   }
 
   /// @dev Interface identification is specified in ERC-165.
@@ -302,10 +298,5 @@ abstract contract BaseLocker is ReentrancyGuardUpgradeable, ERC721EnumerableUpgr
   ) public view virtual override returns (string memory) {
     // todo
     return "";
-  }
-
-  function adminTransfer(uint256 _tokenId, address _to) external {
-    require(msg.sender == admin, "!admin");
-    _transfer(ownerOf(_tokenId), _to, _tokenId);
   }
 }

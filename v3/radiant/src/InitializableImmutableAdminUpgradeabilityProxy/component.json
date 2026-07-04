@@ -2,10 +2,42 @@
   "component": "InitializableImmutableAdminUpgradeabilityProxy",
   "main_contract": "InitializableImmutableAdminUpgradeabilityProxy",
   "source_file_count": 6,
-  "deployment_count": 12,
+  "deployment_count": 16,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5cc83215c1e225105fe787b6f21a884c75aecf22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7473d4eddd1d78b7df950219003d1b9d74e3980f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x75ccd694d057086db838e0cbe91e92223a6b5c55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x94b6f75cb5c5e01cdfd1396420b499f3a7496300",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

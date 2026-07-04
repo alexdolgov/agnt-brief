@@ -1,0 +1,18 @@
+{
+  "component": "VaultProxy-16",
+  "main_contract": "VaultProxy",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc0ce53f755feae93fd219b2cd0f58a4fd0d535dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

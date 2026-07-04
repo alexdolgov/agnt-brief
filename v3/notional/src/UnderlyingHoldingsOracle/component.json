@@ -1,55 +1,55 @@
 {
   "component": "UnderlyingHoldingsOracle",
   "main_contract": "UnderlyingHoldingsOracle",
-  "source_file_count": 26,
+  "source_file_count": 23,
   "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x0eae7badef8f95de91fddb74a89a786cf891eb0e",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x218af5cb9d59edb85dcb3d58e51b09a98792ef29",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x253b767f9086d04d7f38c467f75ae9044b27ce13",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25bbd37e79fe182fcbdc0f98521cca0649a24067",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x4af053d9dbc7cbb4345f63c0d2bf71154551207f",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a04991503dba313fe8bb93c38312c9e1f7d985f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x614bc6ebd3048498078fb2f8303c4c217d05c914",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7cb8922521055a1054acecddb8a34eecd8bce3f7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x913f575653c933ac15c8eb5996ed71a5547977d8",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85ced2ea5b044b2d6e9064a2845951df209f01f0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x96d2c6d81ccfabc45179caa72091f3192fcf1052",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8129e6545f5feaa67a42c750ad9f36f9f1b4505",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

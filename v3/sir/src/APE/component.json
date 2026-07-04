@@ -2,7 +2,7 @@
   "component": "APE",
   "main_contract": "APE",
   "source_file_count": 36,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x24616f1df1c737d11745286fe9330462937d7cc8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7dad75dd36de234c937c105e652b6e50d68b0309",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

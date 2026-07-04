@@ -1,0 +1,18 @@
+{
+  "component": "NftFarmStrategy-24",
+  "main_contract": "NftFarmStrategy",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea4b92960dade95440351987e673c593dfd349b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # myx-finance — deployments
 
-12 verified deployment(s) across 6 component(s).
+13 verified deployment(s) across 6 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,9 +15,5 @@
 | bsc | `0xb7696b138b377969212da962dcf91d8a2689b44d` | ERC20 | impl | live | no |
 | bsc | `0xc44f5086b631cbd0918c82fec0d1a81188397207` | ERC1967Proxy | impl | live | no |
 | bsc | `0xd82544bf0dfe8385ef8fa34d67e6e4940cc63e16` | MYX | impl | live | no |
+| bsc | `0xe8b8d0efd1206801a6665e001b289522c96de6e0` | Executor | impl | live | yes |
 | linea | `0x417bac72f5fe2aa0e3c21f150ccf6261ed7cb982` | Executor | impl | live | yes |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xe8b8d0efd1206801a6665e001b289522c96de6e0`

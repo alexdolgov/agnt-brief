@@ -1,0 +1,26 @@
+{
+  "component": "Vyper_contract-6",
+  "main_contract": "Vyper_contract",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x245e8bb5427822fb8fd6ce062d8dd853fbcfabf5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xab499095961516f058245c1395f9c0410764b6cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

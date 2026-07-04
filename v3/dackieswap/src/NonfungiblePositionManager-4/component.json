@@ -1,0 +1,18 @@
+{
+  "component": "NonfungiblePositionManager-4",
+  "main_contract": "NonfungiblePositionManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x88651e15a6f1ecff6bbc6390c16f6572bc285e84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

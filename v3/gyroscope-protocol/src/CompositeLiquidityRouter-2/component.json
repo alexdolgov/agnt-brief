@@ -1,0 +1,18 @@
+{
+  "component": "CompositeLiquidityRouter-2",
+  "main_contract": "CompositeLiquidityRouter",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xcf21664262774ebb2c2b559e13b47f6ca10f3e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

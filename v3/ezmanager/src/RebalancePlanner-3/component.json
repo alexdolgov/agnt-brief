@@ -1,0 +1,26 @@
+{
+  "component": "RebalancePlanner-3",
+  "main_contract": "RebalancePlanner",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x06f655a7642bb53caa8723b2bf2410915b9799be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4e7855a053ad1880eacd25cdefd3069d961f2e24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

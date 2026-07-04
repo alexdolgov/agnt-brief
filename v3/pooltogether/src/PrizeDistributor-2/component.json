@@ -1,0 +1,26 @@
+{
+  "component": "PrizeDistributor-2",
+  "main_contract": "PrizeDistributor",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x83332f908f403ce795d90f677ce3f382fe73f3d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc5d8623c92c543a60893ac8d38604559d365ae38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

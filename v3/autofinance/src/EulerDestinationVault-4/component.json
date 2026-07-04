@@ -1,0 +1,18 @@
+{
+  "component": "EulerDestinationVault-4",
+  "main_contract": "EulerDestinationVault",
+  "source_file_count": 78,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x59e6e9d53db8feaf8185c79a6c5116c7ebe12afb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

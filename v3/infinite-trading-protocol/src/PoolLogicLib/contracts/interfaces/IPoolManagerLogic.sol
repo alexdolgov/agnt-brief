@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.7.6;
+pragma solidity 0.7.6;
 
 interface IPoolManagerLogic {
   function poolLogic() external view returns (address);
@@ -36,8 +36,4 @@ interface IPoolManagerLogic {
     external
     view
     returns (uint256 exitFeeNumerator, uint256 poolFeeShareNumerator, uint256 feeDenominator);
-
-  function maxSupplyCap() external view returns (uint256 supplyCap);
-
-  function getReferralShare() external view returns (uint256 shareNumerator);
 }

@@ -1,192 +1,376 @@
-# @version ^0.2.0
+# @version 0.2.7
 """
-@title Curve LP Token
+@title "Zap" Depositer for Curve pool
 @author Curve.Fi
-@notice Base implementation for an LP token provided for
-        supplying liquidity to `StableSwap`
-@dev Follows the ERC-20 token standard as defined at
-     https://eips.ethereum.org/EIPS/eip-20
+@license Copyright (c) Curve.Fi, 2020 - all rights reserved
 """
 
 from vyper.interfaces import ERC20
 
-implements: ERC20
 
-interface Curve:
-    def owner() -> address: view
+interface CurveMeta:
+    def add_liquidity(amounts: uint256[N_COINS], min_mint_amount: uint256) -> uint256: nonpayable
+    def remove_liquidity(_amount: uint256, min_amounts: uint256[N_COINS]) -> uint256[N_COINS]: nonpayable
+    def remove_liquidity_one_coin(_token_amount: uint256, i: int128, min_amount: uint256) -> uint256: nonpayable
+    def remove_liquidity_imbalance(amounts: uint256[N_COINS], max_burn_amount: uint256) -> uint256: nonpayable
+    def calc_withdraw_one_coin(_token_amount: uint256, i: int128) -> uint256: view
+    def calc_token_amount(amounts: uint256[N_COINS], deposit: bool) -> uint256: view
+    def base_pool() -> address: view
+    def coins(i: uint256) -> address: view
+
+interface CurveBase:
+    def add_liquidity(amounts: uint256[BASE_N_COINS], min_mint_amount: uint256): nonpayable
+    def remove_liquidity(_amount: uint256, min_amounts: uint256[BASE_N_COINS]): nonpayable
+    def remove_liquidity_one_coin(_token_amount: uint256, i: int128, min_amount: uint256): nonpayable
+    def remove_liquidity_imbalance(amounts: uint256[BASE_N_COINS], max_burn_amount: uint256): nonpayable
+    def calc_withdraw_one_coin(_token_amount: uint256, i: int128) -> uint256: view
+    def calc_token_amount(amounts: uint256[BASE_N_COINS], deposit: bool) -> uint256: view
+    def coins(i: uint256) -> address: view
+    def fee() -> uint256: view
 
 
-event Transfer:
-    _from: indexed(address)
-    _to: indexed(address)
-    _value: uint256
+N_COINS: constant(int128) = 2
+MAX_COIN: constant(int128) = N_COINS-1
+BASE_N_COINS: constant(int128) = 3
+N_ALL_COINS: constant(int128) = N_COINS + BASE_N_COINS - 1
 
-event Approval:
-    _owner: indexed(address)
-    _spender: indexed(address)
-    _value: uint256
+# An asset which may have a transfer fee (USDT)
+FEE_ASSET: constant(address) = 0xdAC17F958D2ee523a2206206994597C13D831ec7
+
+FEE_DENOMINATOR: constant(uint256) = 10 ** 10
+FEE_IMPRECISION: constant(uint256) = 100 * 10 ** 8  # % of the fee
 
 
-name: public(String[64])
-symbol: public(String[32])
+pool: public(address)
+token: public(address)
+base_pool: public(address)
 
-balanceOf: public(HashMap[address, uint256])
-allowance: public(HashMap[address, HashMap[address, uint256]])
-totalSupply: public(uint256)
-
-minter: public(address)
+coins: public(address[N_COINS])
+base_coins: public(address[BASE_N_COINS])
 
 
 @external
-def __init__(_name: String[64], _symbol: String[32]):
-    self.name = _name
-    self.symbol = _symbol
-    self.minter = msg.sender
-    log Transfer(ZERO_ADDRESS, msg.sender, 0)
+def __init__(_pool: address, _token: address):
+    """
+    @notice Contract constructor
+    @param _pool Metapool address
+    @param _token Pool LP token address
+    """
+    self.pool = _pool
+    self.token = _token
+    _base_pool: address = CurveMeta(_pool).base_pool()
+    self.base_pool = _base_pool
+
+    for i in range(N_COINS):
+        coin: address = CurveMeta(_pool).coins(convert(i, uint256))
+        self.coins[i] = coin
+        # approve coins for infinite transfers
+        _response: Bytes[32] = raw_call(
+            coin,
+            concat(
+                method_id("approve(address,uint256)"),
+                convert(_pool, bytes32),
+                convert(MAX_UINT256, bytes32),
+            ),
+            max_outsize=32,
+        )
+        if len(_response) > 0:
+            assert convert(_response, bool)
+
+    for i in range(BASE_N_COINS):
+        coin: address = CurveBase(_base_pool).coins(convert(i, uint256))
+        self.base_coins[i] = coin
+        # approve underlying coins for infinite transfers
+        _response: Bytes[32] = raw_call(
+            coin,
+            concat(
+                method_id("approve(address,uint256)"),
+                convert(_base_pool, bytes32),
+                convert(MAX_UINT256, bytes32),
+            ),
+            max_outsize=32,
+        )
+        if len(_response) > 0:
+            assert convert(_response, bool)
+
+
+@external
+def add_liquidity(amounts: uint256[N_ALL_COINS], min_mint_amount: uint256) -> uint256:
+    """
+    @notice Wrap underlying coins and deposit them in the pool
+    @param amounts List of amounts of underlying coins to deposit
+    @param min_mint_amount Minimum amount of LP tokens to mint from the deposit
+    @return Amount of LP tokens received by depositing
+    """
+    meta_amounts: uint256[N_COINS] = empty(uint256[N_COINS])
+    base_amounts: uint256[BASE_N_COINS] = empty(uint256[BASE_N_COINS])
+    deposit_base: bool = False
+
+    # Transfer all coins in
+    for i in range(N_ALL_COINS):
+        amount: uint256 = amounts[i]
+        if amount == 0:
+            continue
+        coin: address = ZERO_ADDRESS
+        if i < MAX_COIN:
+            coin = self.coins[i]
+            meta_amounts[i] = amount
+        else:
+            x: int128 = i - MAX_COIN
+            coin = self.base_coins[x]
+            base_amounts[x] = amount
+            deposit_base = True
+        # "safeTransferFrom" which works for ERC20s which return bool or not
+        _response: Bytes[32] = raw_call(
+            coin,
+            concat(
+                method_id("transferFrom(address,address,uint256)"),
+                convert(msg.sender, bytes32),
+                convert(self, bytes32),
+                convert(amount, bytes32),
+            ),
+            max_outsize=32,
+        )  # dev: failed transfer
+        if len(_response) > 0:
+            assert convert(_response, bool)  # dev: failed transfer
+        # end "safeTransferFrom"
+        # Handle potential Tether fees
+        if coin == FEE_ASSET:
+            amount = ERC20(FEE_ASSET).balanceOf(self)
+            if i < MAX_COIN:
+                meta_amounts[i] = amount
+            else:
+                base_amounts[i - MAX_COIN] = amount
+
+    # Deposit to the base pool
+    if deposit_base:
+        CurveBase(self.base_pool).add_liquidity(base_amounts, 0)
+        meta_amounts[MAX_COIN] = ERC20(self.coins[MAX_COIN]).balanceOf(self)
+
+    # Deposit to the meta pool
+    CurveMeta(self.pool).add_liquidity(meta_amounts, min_mint_amount)
+
+    # Transfer meta token back
+    _lp_token: address = self.token
+    _lp_amount: uint256 = ERC20(_lp_token).balanceOf(self)
+    assert ERC20(_lp_token).transfer(msg.sender, _lp_amount)
+
+    return _lp_amount
+
+
+@external
+def remove_liquidity(_amount: uint256, min_amounts: uint256[N_ALL_COINS]) -> uint256[N_ALL_COINS]:
+    """
+    @notice Withdraw and unwrap coins from the pool
+    @dev Withdrawal amounts are based on current deposit ratios
+    @param _amount Quantity of LP tokens to burn in the withdrawal
+    @param min_amounts Minimum amounts of underlying coins to receive
+    @return List of amounts of underlying coins that were withdrawn
+    """
+    _token: address = self.token
+    assert ERC20(_token).transferFrom(msg.sender, self, _amount)
+
+    min_amounts_meta: uint256[N_COINS] = empty(uint256[N_COINS])
+    min_amounts_base: uint256[BASE_N_COINS] = empty(uint256[BASE_N_COINS])
+    amounts: uint256[N_ALL_COINS] = empty(uint256[N_ALL_COINS])
+
+    # Withdraw from meta
+    for i in range(MAX_COIN):
+        min_amounts_meta[i] = min_amounts[i]
+    CurveMeta(self.pool).remove_liquidity(_amount, min_amounts_meta)
+
+    # Withdraw from base
+    _base_amount: uint256 = ERC20(self.coins[MAX_COIN]).balanceOf(self)
+    for i in range(BASE_N_COINS):
+        min_amounts_base[i] = min_amounts[MAX_COIN+i]
+    CurveBase(self.base_pool).remove_liquidity(_base_amount, min_amounts_base)
+
+    # Transfer all coins out
+    for i in range(N_ALL_COINS):
+        coin: address = ZERO_ADDRESS
+        if i < MAX_COIN:
+            coin = self.coins[i]
+        else:
+            coin = self.base_coins[i - MAX_COIN]
+        amounts[i] = ERC20(coin).balanceOf(self)
+        # "safeTransfer" which works for ERC20s which return bool or not
+        _response: Bytes[32] = raw_call(
+            coin,
+            concat(
+                method_id("transfer(address,uint256)"),
+                convert(msg.sender, bytes32),
+                convert(amounts[i], bytes32),
+            ),
+            max_outsize=32,
+        )  # dev: failed transfer
+        if len(_response) > 0:
+            assert convert(_response, bool)  # dev: failed transfer
+        # end "safeTransfer"
+
+    return amounts
+
+
+@external
+def remove_liquidity_one_coin(_token_amount: uint256, i: int128, _min_amount: uint256) -> uint256:
+    """
+    @notice Withdraw and unwrap a single coin from the pool
+    @param _token_amount Amount of LP tokens to burn in the withdrawal
+    @param i Index value of the coin to withdraw
+    @param _min_amount Minimum amount of underlying coin to receive
+    @return Amount of underlying coin received
+    """
+    assert ERC20(self.token).transferFrom(msg.sender, self, _token_amount)
+
+    coin: address = ZERO_ADDRESS
+    if i < MAX_COIN:
+        coin = self.coins[i]
+        # Withdraw a metapool coin
+        CurveMeta(self.pool).remove_liquidity_one_coin(_token_amount, i, _min_amount)
+    else:
+        coin = self.base_coins[i - MAX_COIN]
+        # Withdraw a base pool coin
+        CurveMeta(self.pool).remove_liquidity_one_coin(_token_amount, MAX_COIN, 0)
+        CurveBase(self.base_pool).remove_liquidity_one_coin(
+            ERC20(self.coins[MAX_COIN]).balanceOf(self), i-MAX_COIN, _min_amount
+        )
+
+    # Tranfer the coin out
+    coin_amount: uint256 = ERC20(coin).balanceOf(self)
+    # "safeTransfer" which works for ERC20s which return bool or not
+    _response: Bytes[32] = raw_call(
+        coin,
+        concat(
+            method_id("transfer(address,uint256)"),
+            convert(msg.sender, bytes32),
+            convert(coin_amount, bytes32),
+        ),
+        max_outsize=32,
+    )  # dev: failed transfer
+    if len(_response) > 0:
+        assert convert(_response, bool)  # dev: failed transfer
+    # end "safeTransfer"
+
+    return coin_amount
+
+
+@external
+def remove_liquidity_imbalance(amounts: uint256[N_ALL_COINS], max_burn_amount: uint256) -> uint256:
+    """
+    @notice Withdraw coins from the pool in an imbalanced amount
+    @param amounts List of amounts of underlying coins to withdraw
+    @param max_burn_amount Maximum amount of LP token to burn in the withdrawal.
+                           This value cannot exceed the caller's LP token balance.
+    @return Actual amount of the LP token burned in the withdrawal
+    """
+    _base_pool: address = self.base_pool
+    _meta_pool: address = self.pool
+    _base_coins: address[BASE_N_COINS] = self.base_coins
+    _meta_coins: address[N_COINS] = self.coins
+    _lp_token: address = self.token
+
+    fee: uint256 = CurveBase(_base_pool).fee() * BASE_N_COINS / (4 * (BASE_N_COINS - 1))
+    fee += fee * FEE_IMPRECISION / FEE_DENOMINATOR  # Overcharge to account for imprecision
+
+    # Transfer the LP token in
+    assert ERC20(_lp_token).transferFrom(msg.sender, self, max_burn_amount)
+
+    withdraw_base: bool = False
+    amounts_base: uint256[BASE_N_COINS] = empty(uint256[BASE_N_COINS])
+    amounts_meta: uint256[N_COINS] = empty(uint256[N_COINS])
+    leftover_amounts: uint256[N_COINS] = empty(uint256[N_COINS])
+
+    # Prepare quantities
+    for i in range(MAX_COIN):
+        amounts_meta[i] = amounts[i]
+
+    for i in range(BASE_N_COINS):
+        amount: uint256 = amounts[MAX_COIN + i]
+        if amount != 0:
+            amounts_base[i] = amount
+            withdraw_base = True
+
+    if withdraw_base:
+        amounts_meta[MAX_COIN] = CurveBase(self.base_pool).calc_token_amount(amounts_base, False)
+        amounts_meta[MAX_COIN] += amounts_meta[MAX_COIN] * fee / FEE_DENOMINATOR + 1
+
+    # Remove liquidity and deposit leftovers back
+    CurveMeta(_meta_pool).remove_liquidity_imbalance(amounts_meta, max_burn_amount)
+    if withdraw_base:
+        CurveBase(_base_pool).remove_liquidity_imbalance(amounts_base, amounts_meta[MAX_COIN])
+        leftover_amounts[MAX_COIN] = ERC20(_meta_coins[MAX_COIN]).balanceOf(self)
+        if leftover_amounts[MAX_COIN] > 0:
+            CurveMeta(_meta_pool).add_liquidity(leftover_amounts, 0)
+
+    # Transfer all coins out
+    for i in range(N_ALL_COINS):
+        coin: address = ZERO_ADDRESS
+        amount: uint256 = 0
+        if i < MAX_COIN:
+            coin = _meta_coins[i]
+            amount = amounts_meta[i]
+        else:
+            coin = _base_coins[i - MAX_COIN]
+            amount = amounts_base[i - MAX_COIN]
+        # "safeTransfer" which works for ERC20s which return bool or not
+        if amount > 0:
+            _response: Bytes[32] = raw_call(
+                coin,
+                concat(
+                    method_id("transfer(address,uint256)"),
+                    convert(msg.sender, bytes32),
+                    convert(amount, bytes32),
+                ),
+                max_outsize=32,
+            )  # dev: failed transfer
+            if len(_response) > 0:
+                assert convert(_response, bool)  # dev: failed transfer
+            # end "safeTransfer"
+
+    # Transfer the leftover LP token out
+    leftover: uint256 = ERC20(_lp_token).balanceOf(self)
+    if leftover > 0:
+        assert ERC20(_lp_token).transfer(msg.sender, leftover)
+
+    return max_burn_amount - leftover
 
 
 @view
 @external
-def decimals() -> uint256:
+def calc_withdraw_one_coin(_token_amount: uint256, i: int128) -> uint256:
     """
-    @notice Get the number of decimals for this token
-    @dev Implemented as a view method to reduce gas costs
-    @return uint256 decimal places
+    @notice Calculate the amount received when withdrawing and unwrapping a single coin
+    @param _token_amount Amount of LP tokens to burn in the withdrawal
+    @param i Index value of the underlying coin to withdraw
+    @return Amount of coin received
     """
-    return 18
+    if i < MAX_COIN:
+        return CurveMeta(self.pool).calc_withdraw_one_coin(_token_amount, i)
+    else:
+        _base_tokens: uint256 = CurveMeta(self.pool).calc_withdraw_one_coin(_token_amount, MAX_COIN)
+        return CurveBase(self.base_pool).calc_withdraw_one_coin(_base_tokens, i-MAX_COIN)
 
 
+@view
 @external
-def transfer(_to : address, _value : uint256) -> bool:
+def calc_token_amount(amounts: uint256[N_ALL_COINS], is_deposit: bool) -> uint256:
     """
-    @dev Transfer token for a specified address
-    @param _to The address to transfer to.
-    @param _value The amount to be transferred.
+    @notice Calculate addition or reduction in token supply from a deposit or withdrawal
+    @dev This calculation accounts for slippage, but not fees.
+         Needed to prevent front-running, not for precise calculations!
+    @param amounts Amount of each underlying coin being deposited
+    @param is_deposit set True for deposits, False for withdrawals
+    @return Expected amount of LP tokens received
     """
-    # NOTE: vyper does not allow underflows
-    #       so the following subtraction would revert on insufficient balance
-    self.balanceOf[msg.sender] -= _value
-    self.balanceOf[_to] += _value
+    meta_amounts: uint256[N_COINS] = empty(uint256[N_COINS])
+    base_amounts: uint256[BASE_N_COINS] = empty(uint256[BASE_N_COINS])
 
-    log Transfer(msg.sender, _to, _value)
-    return True
+    for i in range(MAX_COIN):
+        meta_amounts[i] = amounts[i]
 
+    for i in range(BASE_N_COINS):
+        base_amounts[i] = amounts[i + MAX_COIN]
 
-@external
-def transferFrom(_from : address, _to : address, _value : uint256) -> bool:
-    """
-     @dev Transfer tokens from one address to another.
-     @param _from address The address which you want to send tokens from
-     @param _to address The address which you want to transfer to
-     @param _value uint256 the amount of tokens to be transferred
-    """
-    self.balanceOf[_from] -= _value
-    self.balanceOf[_to] += _value
+    _base_tokens: uint256 = CurveBase(self.base_pool).calc_token_amount(base_amounts, is_deposit)
+    meta_amounts[MAX_COIN] = _base_tokens
 
-    _allowance: uint256 = self.allowance[_from][msg.sender]
-    if _allowance != MAX_UINT256:
-        self.allowance[_from][msg.sender] = _allowance - _value
-
-    log Transfer(_from, _to, _value)
-    return True
-
-
-@external
-def approve(_spender : address, _value : uint256) -> bool:
-    """
-    @notice Approve the passed address to transfer the specified amount of
-            tokens on behalf of msg.sender
-    @dev Beware that changing an allowance via this method brings the risk
-         that someone may use both the old and new allowance by unfortunate
-         transaction ordering. This may be mitigated with the use of
-         {increaseAllowance} and {decreaseAllowance}.
-         https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-    @param _spender The address which will transfer the funds
-    @param _value The amount of tokens that may be transferred
-    @return bool success
-    """
-    self.allowance[msg.sender][_spender] = _value
-
-    log Approval(msg.sender, _spender, _value)
-    return True
-
-
-@external
-def increaseAllowance(_spender: address, _added_value: uint256) -> bool:
-    """
-    @notice Increase the allowance granted to `_spender` by the caller
-    @dev This is alternative to {approve} that can be used as a mitigation for
-         the potential race condition
-    @param _spender The address which will transfer the funds
-    @param _added_value The amount of to increase the allowance
-    @return bool success
-    """
-    allowance: uint256 = self.allowance[msg.sender][_spender] + _added_value
-    self.allowance[msg.sender][_spender] = allowance
-
-    log Approval(msg.sender, _spender, allowance)
-    return True
-
-
-@external
-def decreaseAllowance(_spender: address, _subtracted_value: uint256) -> bool:
-    """
-    @notice Decrease the allowance granted to `_spender` by the caller
-    @dev This is alternative to {approve} that can be used as a mitigation for
-         the potential race condition
-    @param _spender The address which will transfer the funds
-    @param _subtracted_value The amount of to decrease the allowance
-    @return bool success
-    """
-    allowance: uint256 = self.allowance[msg.sender][_spender] - _subtracted_value
-    self.allowance[msg.sender][_spender] = allowance
-
-    log Approval(msg.sender, _spender, allowance)
-    return True
-
-
-@external
-def mint(_to: address, _value: uint256) -> bool:
-    """
-    @dev Mint an amount of the token and assigns it to an account.
-         This encapsulates the modification of balances such that the
-         proper events are emitted.
-    @param _to The account that will receive the created tokens.
-    @param _value The amount that will be created.
-    """
-    assert msg.sender == self.minter
-
-    self.totalSupply += _value
-    self.balanceOf[_to] += _value
-
-    log Transfer(ZERO_ADDRESS, _to, _value)
-    return True
-
-
-@external
-def burnFrom(_to: address, _value: uint256) -> bool:
-    """
-    @dev Burn an amount of the token from a given account.
-    @param _to The account whose tokens will be burned.
-    @param _value The amount that will be burned.
-    """
-    assert msg.sender == self.minter
-
-    self.totalSupply -= _value
-    self.balanceOf[_to] -= _value
-
-    log Transfer(_to, ZERO_ADDRESS, _value)
-    return True
-
-
-@external
-def set_minter(_minter: address):
-    assert msg.sender == self.minter
-    self.minter = _minter
-
-
-@external
-def set_name(_name: String[64], _symbol: String[32]):
-    assert Curve(self.minter).owner() == msg.sender
-    self.name = _name
-    self.symbol = _symbol
+    return CurveMeta(self.pool).calc_token_amount(meta_amounts, is_deposit)

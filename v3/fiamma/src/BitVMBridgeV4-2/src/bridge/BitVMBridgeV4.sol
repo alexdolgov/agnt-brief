@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "./interface/IBridge.sol";
 import "./interface/IVaultRouter.sol";
-import "../fia_btc/interface/IMintableBurnable.sol";
+import "@layerzerolabs/oft-evm/contracts/interfaces/IMintableBurnable.sol";
 import "../liquidity_provider/interface/ILPManager.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
@@ -240,7 +240,7 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
     /// @param blockNum Block number
     /// @param inclusionProof Bitcoin transaction proof
     /// @param txOutIx Transaction output index
-    /// @param destScriptHash Destination script hash
+    /// @param destScriptHash Destination script sha256 hash
     /// @param amountSats Amount in satoshis
     function _validateBtcTransaction(
         uint256 value,
@@ -248,7 +248,6 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
         BtcTxProof calldata inclusionProof,
         uint256 txOutIx,
         bytes32 destScriptHash,
-        BitcoinScriptType scriptType,
         uint256 amountSats,
         bool checkOpReturn,
         uint256 opReturnOutIx,
@@ -268,7 +267,6 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
             inclusionProof,
             txOutIx,
             destScriptHash,
-            scriptType,
             amountSats,
             checkOpReturn,
             opReturnOutIx,
@@ -331,7 +329,6 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
                 peg.inclusionProof,
                 peg.txOutIx,
                 peg.destScriptHash,
-                BitcoinScriptType.P2WSH,
                 peg.amountSats,
                 false,
                 0,
@@ -389,7 +386,6 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
                 invest.inclusionProof,
                 invest.txOutIx,
                 invest.destScriptHash,
-                BitcoinScriptType.P2WSH,
                 invest.amountSats,
                 true,
                 invest.opReturnOutIx,
@@ -442,6 +438,9 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
     {
         _validateBurnRestrictions(_value, _fee_rate);
 
+        LPInfo memory lpInfo = lpManager.getLPInfo(_operator_id);
+        if (lpInfo.evm_addr != msg.sender) revert InvalidLPID();
+
         btcPeg.burn(msg.sender, _value);
         emit Burn(msg.sender, _btc_addr, _fee_rate, _value, _operator_id);
     }
@@ -452,7 +451,7 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
      *      Only callable when burn is not paused.
      * @param _withdraw_id Unique identifier for the withdrawal
      * @param _btc_addr Bitcoin address where the withdrawn funds should be sent
-     * @param _receiver_script_hash Script hash of the receiver
+     * @param _receiver_script_hash Script sha256 hash of the receiver
      * @param _receive_min_amount Minimum amount of BTC to receive (in satoshis)
      * @param _lp_id LP ID to which the withdrawal belongs
      * @param _value Amount of tokens to withdraw (in satoshis)
@@ -516,7 +515,6 @@ contract BitVMBridgeV4 is IBitVMBridge, IInvest, AccessControlUpgradeable, Reent
                 _lp_claim_info.inclusionProof,
                 _lp_claim_info.txOutIx,
                 lpWithdraw.receiver_script_hash,
-                BitcoinScriptType.P2TR,
                 _lp_claim_info.amountSats,
                 false,
                 0,

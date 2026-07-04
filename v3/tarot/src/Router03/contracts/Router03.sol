@@ -745,7 +745,7 @@ contract Router03 is IRouter03, ITarotCallee {
                         hex"ff",
                         bDeployer,
                         keccak256(abi.encodePacked(factory, underlying, index)),
-                        hex"395cea33582aa76fdbf6a549e06bd8df47f4126708805f42bb1e05eacbb65d8f" // Borrowable bytecode keccak256
+                        hex"e2178358c9dc0146850e3eed50a8ecc18cf189e86f46d09f1a696530142753e8" // Borrowable bytecode keccak256
                     )
                 )
             )
@@ -766,7 +766,7 @@ contract Router03 is IRouter03, ITarotCallee {
                         hex"ff",
                         cDeployer,
                         keccak256(abi.encodePacked(factory, underlying)),
-                        hex"140d37d0a16c25fa05a48ae5a423f248fced47fe2c37e9ef67a3339b03dcc1db" // Collateral bytecode keccak256
+                        hex"6389d6f61d6e8491844f94c4542056bfb7bf194236f134f6b6df7b4015430a11" // Collateral bytecode keccak256
                     )
                 )
             )

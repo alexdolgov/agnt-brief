@@ -4,12 +4,12 @@ pragma solidity 0.8.23;
 /**
  * @notice Shared enum representing the different status of a phase or the whole IGO.
  *
- * @custom:value NOT_STARTED IGO/Phase created but not started; allocation buys are in a pending state.
- * @custom:value OPENED IGO/Phase started according to start date; allocations can be reserved.
- * @custom:value COMPLETED IGO/Phase everything has been sold or time has been elapsed; allocations
- *               can't be reserved anymore.
- * @custom:value PAUSED IGO/Phase has been paused by the owner; allocations can't be reserved until
- *               further notice.
+ * @custom:value NOT_STARTED IGO/Phase created but not started; allocations/buyAndMint are allowed.
+ * @custom:value OPENED IGO/Phase started according to start date; allocations/buyAndMint are allowed.
+ * @custom:value COMPLETED IGO/Phase everything has been sold or time has been elapsed;
+ *               allocations/buyAndMint can't be reserved anymore.
+ * @custom:value PAUSED IGO/Phase has been paused by the owner; allocations/buyAndMint can't be
+ *               reserved until further notice.
  */
 enum Status {
     NOT_STARTED,
@@ -57,7 +57,7 @@ struct BuyPermission {
  * @param merkleRoot Merkle root of the merkle tree containing whitelisted data.
  * @param startAt Timestamp at which the phase will be opened to reserve allocation.
  * @param endAt Timestamp at which the phase will not accept allocation reservation anymore.
- * @param maxPhaseCap Maximum amount funds or NFT for this phase.
+ * @param maxPhaseCap Maximum amount of {SaleStorage.SetUp.paymentToken} for this phase.
  */
 struct Phase {
     Status status;

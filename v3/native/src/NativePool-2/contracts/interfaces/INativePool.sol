@@ -10,6 +10,19 @@ interface INativePool {
         uint256 pricingModelId;
     }
 
+    struct NewPoolConfig {
+        address treasuryAddress;
+        address poolOwnerAddress;
+        address signerAddress;
+        address routerAddress;
+        bool isPublicTreasury;
+        bool isTreasuryContract;
+        uint256[] fees;
+        address[] tokenAs;
+        address[] tokenBs;
+        uint256[] pricingModelIds;
+    }
+
     struct SwapParam {
         uint256 buyerTokenAmount;
         uint256 sellerTokenAmount;
@@ -20,18 +33,11 @@ interface INativePool {
     }
 
     function initialize(
-        address _treasury,
-        address _treasuryOwner,
-        address _signer,
-        address _pricingModelRegistry,
-        address _router,
-        uint256[] memory _fees,
-        address[] memory _tokenAs,
-        address[] memory _tokenBs,
-        uint256[] memory _pricingModelIds,
-        bool _isTreasuryContract,
-        bool _isPublicTreasury
+        NewPoolConfig calldata poolConfig,
+        address _pricingModelRegistry
     ) external;
+
+    function setTreasury(address newTreasury) external;
 
     function addSigner(address _signer) external;
 
@@ -45,6 +51,8 @@ interface INativePool {
         bytes calldata callback
     ) external returns (int256, int256);
 
+    function setPauser(address _pauser) external;
+
     event Swap(
         address indexed sender,
         address indexed recipient,
@@ -53,7 +61,8 @@ interface INativePool {
         int256 amountIn,
         int256 amountOut,
         uint256 fee,
-        bytes16 quoteId
+        bytes16 quoteId,
+        address signer
     );
 
     event UpdatePair(
@@ -91,5 +100,5 @@ interface INativePool {
         address treasuryOwner
     );
 
-    error TokenArrayLengthExceedLimit(uint arrayLength);
+    error onlyOwnerOrPauserOrPoolFactoryCanCall();
 }

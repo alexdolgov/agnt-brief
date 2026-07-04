@@ -1,15 +1,23 @@
 {
   "component": "Proxy-2",
   "main_contract": "Proxy",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x161f4baab4052f20f5f4347ec4422556aa0477f0",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x028781ceed4a2264466ef5ab73c91603087fa131",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x5bc75b03601c2728f905164ac31a44374fa73e61",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

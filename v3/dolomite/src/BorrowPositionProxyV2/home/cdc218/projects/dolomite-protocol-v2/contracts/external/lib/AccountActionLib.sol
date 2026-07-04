@@ -41,7 +41,7 @@ library AccountActionLib {
 
     // ============ Constants ============
 
-    bytes32 constant FILE = "AccountActionLib";
+    bytes32 private constant FILE = "AccountActionLib";
 
     uint256 constant ALL = uint256(-1);
 
@@ -191,8 +191,12 @@ library AccountActionLib {
         return Actions.ActionArgs({
             actionType : Actions.ActionType.Call,
             accountId : _accountId,
-            // solium-disable-next-line arg-overflow
-            amount : Types.AssetAmount(true, Types.AssetDenomination.Wei, Types.AssetReference.Delta, 0),
+            amount : Types.AssetAmount({
+                sign: true,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Delta,
+                value: 0
+            }),
             primaryMarketId : 0,
             secondaryMarketId : 0,
             otherAddress : _callee,
@@ -224,19 +228,13 @@ library AccountActionLib {
         uint256 _accountId,
         uint256 _owedMarketId,
         address _expiry,
-        uint256 _expiryTimeDelta
+        uint32 _expiryTimeDelta
     ) internal pure returns (Actions.ActionArgs memory) {
-        Require.that(
-            _expiryTimeDelta == uint32(_expiryTimeDelta),
-            FILE,
-            "invalid expiry time"
-        );
-
         IExpiry.SetExpiryArg[] memory expiryArgs = new IExpiry.SetExpiryArg[](1);
         expiryArgs[0] = IExpiry.SetExpiryArg({
             account : _account,
             marketId : _owedMarketId,
-            timeDelta : uint32(_expiryTimeDelta),
+            timeDelta : _expiryTimeDelta,
             forceUpdate : true
         });
 
@@ -254,44 +252,73 @@ library AccountActionLib {
         uint256 _heldMarketId,
         address _expiryProxy,
         uint32 _expiry,
+        uint256 _solidHeldUpdateWithReward,
+        uint256 _owedWeiToLiquidate,
         bool _flipMarkets
     ) internal pure returns (Actions.ActionArgs memory) {
-        return Actions.ActionArgs({
-        actionType: Actions.ActionType.Trade,
-            accountId: _solidAccountId,
-            amount: Types.AssetAmount({
+        Types.AssetAmount memory assetAmount;
+        if (!_flipMarkets) {
+            // Make the amount positive so the liquid account's owedMarket goes up (gets repaid).
+            assetAmount = Types.AssetAmount({
                 sign: true,
                 denomination: Types.AssetDenomination.Wei,
-                ref: Types.AssetReference.Target,
-                value: 0
-            }),
+                ref: Types.AssetReference.Delta,
+                value: _owedWeiToLiquidate
+            });
+        } else {
+            assert(_flipMarkets);
+            // Make the amount negative so the liquid account's heldMarket goes down (gets spent to repay owedMarket).
+            assetAmount = Types.AssetAmount({
+                sign: false,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Delta,
+                value: _solidHeldUpdateWithReward
+            });
+        }
+
+        return Actions.ActionArgs({
+            actionType: Actions.ActionType.Trade,
+            accountId: _solidAccountId,
+            amount: assetAmount,
             primaryMarketId: !_flipMarkets ? _owedMarketId : _heldMarketId,
             secondaryMarketId: !_flipMarkets ? _heldMarketId : _owedMarketId,
             otherAddress: _expiryProxy,
             otherAccountId: _liquidAccountId,
-            data: abi.encode(_owedMarketId, _expiry)
+            data: abi.encode(
+                /* calculateAmountWithMakerAccount = */ true,
+                abi.encode(_owedMarketId, _expiry)
+            )
         });
     }
 
-    function encodeInternalTradeAction(
+    function encodeInternalTradeActionWithCustomData(
         uint256 _fromAccountId,
         uint256 _toAccountId,
         uint256 _primaryMarketId,
         uint256 _secondaryMarketId,
         address _traderAddress,
         uint256 _amountInWei,
-        uint256 _amountOutWei
+        bytes memory _orderData
     ) internal pure returns (Actions.ActionArgs memory) {
+        // internal trades calculate inputAmount based on `_toAccountId` (the maker account), so the sign should be
+        // positive to reflect this
         return Actions.ActionArgs({
-            actionType : Actions.ActionType.Trade,
-            accountId : _fromAccountId,
-            // solium-disable-next-line arg-overflow
-            amount : Types.AssetAmount(true, Types.AssetDenomination.Wei, Types.AssetReference.Delta, _amountInWei),
-            primaryMarketId : _primaryMarketId,
-            secondaryMarketId : _secondaryMarketId,
-            otherAddress : _traderAddress,
-            otherAccountId : _toAccountId,
-            data : abi.encode(_amountOutWei)
+            actionType: Actions.ActionType.Trade,
+            accountId: _fromAccountId,
+            amount: Types.AssetAmount({
+                sign: false,
+                denomination: Types.AssetDenomination.Wei,
+                ref: _amountInWei == ALL ? Types.AssetReference.Target : Types.AssetReference.Delta,
+                value: _amountInWei == ALL ? 0 : _amountInWei
+            }),
+            primaryMarketId: _primaryMarketId,
+            secondaryMarketId: _secondaryMarketId,
+            otherAddress: _traderAddress,
+            otherAccountId: _toAccountId,
+            data: abi.encode(
+                /* calculateAmountWithMakerAccount = */ false,
+                _orderData
+            )
         });
     }
 
@@ -331,7 +358,6 @@ library AccountActionLib {
         return Actions.ActionArgs({
             actionType : Actions.ActionType.Sell,
             accountId : _fromAccountId,
-            // solium-disable-next-line arg-overflow
             amount : Types.AssetAmount({
                 sign : false,
                 denomination : Types.AssetDenomination.Wei,
@@ -354,24 +380,47 @@ library AccountActionLib {
     ) internal pure returns (Actions.ActionArgs memory) {
         Types.AssetAmount memory assetAmount;
         if (_amountWei == uint(- 1)) {
-            assetAmount = Types.AssetAmount(
-                true,
-                Types.AssetDenomination.Wei,
-                Types.AssetReference.Target,
-                0
-            );
+            assetAmount = Types.AssetAmount({
+                sign: true,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Target,
+                value: 0
+            });
         } else {
-            assetAmount = Types.AssetAmount(
-                false,
-                Types.AssetDenomination.Wei,
-                Types.AssetReference.Delta,
-                _amountWei
-            );
+            assetAmount = Types.AssetAmount({
+                sign: false,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Delta,
+                value: _amountWei
+            });
         }
         return Actions.ActionArgs({
             actionType : Actions.ActionType.Transfer,
             accountId : _fromAccountId,
             amount : assetAmount,
+            primaryMarketId : _marketId,
+            secondaryMarketId : 0,
+            otherAddress : address(0),
+            otherAccountId : _toAccountId,
+            data : bytes("")
+        });
+    }
+
+    function encodeTransferToTargetAmountAction(
+        uint256 _fromAccountId,
+        uint256 _toAccountId,
+        uint256 _marketId,
+        Types.Wei memory _targetAmountWei
+    ) internal pure returns (Actions.ActionArgs memory) {
+        return Actions.ActionArgs({
+            actionType : Actions.ActionType.Transfer,
+            accountId : _fromAccountId,
+            amount : Types.AssetAmount({
+                sign: _targetAmountWei.sign,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Target,
+                value: _targetAmountWei.value
+            }),
             primaryMarketId : _marketId,
             secondaryMarketId : 0,
             otherAddress : address(0),

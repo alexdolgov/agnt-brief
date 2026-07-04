@@ -1,0 +1,18 @@
+{
+  "component": "BaseBulker-2",
+  "main_contract": "BaseBulker",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x59e242d352ae13166b4987ae5c990c232f7f7cd6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

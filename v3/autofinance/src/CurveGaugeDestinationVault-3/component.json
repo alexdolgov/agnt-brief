@@ -1,0 +1,18 @@
+{
+  "component": "CurveGaugeDestinationVault-3",
+  "main_contract": "CurveGaugeDestinationVault",
+  "source_file_count": 81,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6652b0ef73bc4f11cb4dc01cf15ec4ba139bcbe2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

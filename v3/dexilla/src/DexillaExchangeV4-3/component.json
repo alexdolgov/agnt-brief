@@ -1,0 +1,20 @@
+{
+  "component": "DexillaExchangeV4-3",
+  "main_contract": "DexillaExchangeV4",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/dexilla/protocol/blob/main/audits/mythx_all.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x44f1c33ed3bf77a5883cbece1c1b34e71425ce84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

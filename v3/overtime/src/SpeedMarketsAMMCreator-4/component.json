@@ -1,0 +1,18 @@
+{
+  "component": "SpeedMarketsAMMCreator-4",
+  "main_contract": "SpeedMarketsAMMCreator",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4385f3d85e81f97a555e9327eb83ccd263e7ee45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

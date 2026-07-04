@@ -1,0 +1,29 @@
+{
+  "component": "SickleFactory-12",
+  "main_contract": "SickleFactory",
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf",
+    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-sickle-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x5bc457e175f89594e7f25d199bec0550ae472566",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

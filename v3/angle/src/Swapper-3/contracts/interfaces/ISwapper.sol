@@ -1,29 +1,74 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.12;
-
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+pragma solidity >=0.5.0;
 
 /// @title ISwapper
 /// @author Angle Labs, Inc.
-/// @notice Interface for Swapper contracts
-/// @dev This interface defines the key functions `Swapper` contracts should have when interacting with
-/// Angle
 interface ISwapper {
-    /// @notice Notifies a contract that an address should be given `outToken` from `inToken`
-    /// @param inToken Address of the token received
-    /// @param outToken Address of the token to obtain
-    /// @param outTokenRecipient Address to which the outToken should be sent
-    /// @param outTokenOwed Minimum amount of outToken the `outTokenRecipient` address should have at the end of the call
-    /// @param inTokenObtained Amount of collateral obtained by a related address prior
-    /// to the call to this function
-    /// @param data Extra data needed (to encode Uniswap swaps for instance)
-    function swap(
-        IERC20 inToken,
-        IERC20 outToken,
-        address outTokenRecipient,
-        uint256 outTokenOwed,
-        uint256 inTokenObtained,
-        bytes calldata data
-    ) external;
+    /// @notice Swaps (that is to say mints or burns) an exact amount of `tokenIn` for an amount of `tokenOut`
+    /// @param amountIn Amount of `tokenIn` to bring
+    /// @param amountOutMin Minimum amount of `tokenOut` to get: if `amountOut` is inferior to this amount, the
+    /// function will revert
+    /// @param tokenIn Token to bring for the swap
+    /// @param tokenOut Token to get out of the swap
+    /// @param to Address to which `tokenOut` must be sent
+    /// @param deadline Timestamp before which the transaction must be executed
+    /// @return amountOut Amount of `tokenOut` obtained through the swap
+    function swapExactInput(
+        uint256 amountIn,
+        uint256 amountOutMin,
+        address tokenIn,
+        address tokenOut,
+        address to,
+        uint256 deadline
+    ) external returns (uint256 amountOut);
+
+    /// @notice Same as `swapExactInput`, but using Permit2 signatures for `tokenIn`
+    /// @dev Can only be used to mint, hence `tokenOut` is not needed
+    function swapExactInputWithPermit(
+        uint256 amountIn,
+        uint256 amountOutMin,
+        address tokenIn,
+        address to,
+        uint256 deadline,
+        bytes calldata permitData
+    ) external returns (uint256 amountOut);
+
+    /// @notice Swaps (that is to say mints or burns) an amount of `tokenIn` for an exact amount of `tokenOut`
+    /// @param amountOut Amount of `tokenOut` to obtain from the swap
+    /// @param amountInMax Maximum amount of `tokenIn` to bring in order to get `amountOut` of `tokenOut`
+    /// @param tokenIn Token to bring for the swap
+    /// @param tokenOut Token to get out of the swap
+    /// @param to Address to which `tokenOut` must be sent
+    /// @param deadline Timestamp before which the transaction must be executed
+    /// @return amountIn Amount of `tokenIn` used to perform the swap
+    function swapExactOutput(
+        uint256 amountOut,
+        uint256 amountInMax,
+        address tokenIn,
+        address tokenOut,
+        address to,
+        uint256 deadline
+    ) external returns (uint256 amountIn);
+
+    /// @notice Same as `swapExactOutput`, but using Permit2 signatures for `tokenIn`
+    /// @dev Can only be used to mint, hence `tokenOut` is not needed
+    function swapExactOutputWithPermit(
+        uint256 amountOut,
+        uint256 amountInMax,
+        address tokenIn,
+        address to,
+        uint256 deadline,
+        bytes calldata permitData
+    ) external returns (uint256 amountIn);
+
+    /// @notice Simulates what a call to `swapExactInput` with `amountIn` of `tokenIn` for `tokenOut` would give.
+    /// If called right before and at the same block, the `amountOut` outputted by this function is exactly the
+    /// amount that will be obtained with `swapExactInput`
+    function quoteIn(uint256 amountIn, address tokenIn, address tokenOut) external view returns (uint256 amountOut);
+
+    /// @notice Simulates what a call to `swapExactOutput` for `amountOut` of `tokenOut` with `tokenIn` would give.
+    /// If called right before and at the same block, the `amountIn` outputted by this function is exactly the
+    /// amount that will be obtained with `swapExactOutput`
+    function quoteOut(uint256 amountOut, address tokenIn, address tokenOut) external view returns (uint256 amountIn);
 }

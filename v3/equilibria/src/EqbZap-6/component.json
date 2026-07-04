@@ -1,0 +1,18 @@
+{
+  "component": "EqbZap-6",
+  "main_contract": "EqbZap",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc7517f481cc0a645e63f870830a4b2e580421e32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

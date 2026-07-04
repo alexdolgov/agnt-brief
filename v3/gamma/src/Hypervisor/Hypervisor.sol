@@ -10,21 +10,21 @@ import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/drafts/ERC20Permit.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-import "./algebra/interfaces/callback/IAlgebraMintCallback.sol";
-import "./algebra/interfaces/IAlgebraPool.sol";
-import "./algebra/libraries/TickMath.sol";
+import "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3MintCallback.sol";
+import "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol";
+import "@uniswap/v3-core/contracts/libraries/TickMath.sol";
 import "@uniswap/v3-core/contracts/libraries/FullMath.sol";
 import "@uniswap/v3-periphery/contracts/libraries/LiquidityAmounts.sol";
 
-/// @title Hypervisor 1.3.1
-/// @notice A V2-like interface with fungible liquidity to Camelot
+/// @title Hypervisor v1.3
+/// @notice A Uniswap V2-like interface with fungible liquidity to Uniswap V3
 /// which allows for arbitrary liquidity provision: one-sided, lop-sided, and balanced
-contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
+contract Hypervisor is IUniswapV3MintCallback, ERC20Permit, ReentrancyGuard {
     using SafeERC20 for IERC20;
     using SafeMath for uint256;
     using SignedSafeMath for int256;
 
-    IAlgebraPool public pool;
+    IUniswapV3Pool public pool;
     IERC20 public token0;
     IERC20 public token1;
     uint8 public fee = 5;
@@ -76,7 +76,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
     event SetFee(uint8 newFee);
 
 
-    /// @param _pool Camelot pool for which liquidity is managed
+    /// @param _pool Uniswap V3 pool for which liquidity is managed
     /// @param _owner Owner of the Hypervisor
     constructor(
         address _pool,
@@ -86,7 +86,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
     ) ERC20Permit(name) ERC20(name, symbol) {
         require(_pool != address(0));
         require(_owner != address(0));
-        pool = IAlgebraPool(_pool);
+        pool = IUniswapV3Pool(_pool);
         token0 = IERC20(pool.token0());
         token1 = IERC20(pool.token1());
         require(address(token0) != address(0));
@@ -122,7 +122,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
         /// update fees
         zeroBurn();
 
-        (uint160 sqrtPrice, , , , , , , ) = pool.globalState();
+        (uint160 sqrtPrice, , , , , , ) = pool.slot0();
         uint256 price = FullMath.mulDiv(uint256(sqrtPrice).mul(uint256(sqrtPrice)), PRECISION, 2**(96 * 2));
 
         (uint256 pool0, uint256 pool1) = getTotalAmounts();
@@ -226,7 +226,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
         /// update fees
         zeroBurn();
 
-        /// Withdraw liquidity from Camelot pool
+        /// Withdraw liquidity from Uniswap pool
         (uint256 base0, uint256 base1) = _burnLiquidity(
             baseLower,
             baseUpper,
@@ -297,7 +297,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
         /// update fees
         zeroBurn();
 
-        /// Withdraw all liquidity and collect all fees from Camelot pool
+        /// Withdraw all liquidity and collect all fees from Uniswap pool
         (uint128 baseLiquidity, uint256 feesLimit0, uint256 feesLimit1) = _position(baseLower, baseUpper);
         (uint128 limitLiquidity, uint256 feesBase0, uint256 feesBase1) = _position(limitLower, limitUpper);
 
@@ -396,8 +396,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
     ) internal {
         if (liquidity > 0) {
             mintCalled = true;
-            (uint256 amount0, uint256 amount1, ) = pool.mint(
-                address(this),
+            (uint256 amount0, uint256 amount1) = pool.mint(
                 address(this),
                 tickLower,
                 tickUpper,
@@ -468,16 +467,12 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
             uint128 tokensOwed1
         )
     {
-      bytes32 positionKey;
-      address This = address(this);
-      assembly {
-        positionKey := or(shl(24, or(shl(24, This), and(tickLower, 0xFFFFFF))), and(tickUpper, 0xFFFFFF))
-      }
-        (liquidity, , , , tokensOwed0, tokensOwed1) = pool.positions(positionKey);
+        bytes32 positionKey = keccak256(abi.encodePacked(address(this), tickLower, tickUpper));
+        (liquidity, , , tokensOwed0, tokensOwed1) = pool.positions(positionKey);
     }
 
-    /// @notice Callback function of Camelot Pool mint
-    function algebraMintCallback(
+    /// @notice Callback function of uniswapV3Pool mint
+    function uniswapV3MintCallback(
         uint256 amount0,
         uint256 amount1,
         bytes calldata data
@@ -557,7 +552,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
         int24 tickUpper,
         uint128 liquidity
     ) internal view returns (uint256, uint256) {
-        (uint160 sqrtRatioX96, , , , , , , ) = pool.globalState();
+        (uint160 sqrtRatioX96, , , , , , ) = pool.slot0();
         return
             LiquidityAmounts.getAmountsForLiquidity(
                 sqrtRatioX96,
@@ -579,7 +574,7 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
         uint256 amount0,
         uint256 amount1
     ) internal view returns (uint128) {
-        (uint160 sqrtRatioX96, , , , , , , ) = pool.globalState();
+        (uint160 sqrtRatioX96, , , , , , ) = pool.slot0();
         return
             LiquidityAmounts.getLiquidityForAmounts(
                 sqrtRatioX96,
@@ -590,9 +585,9 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
             );
     }
 
-    /// @return tick Camelot pool's current price tick
+    /// @return tick Uniswap pool's current price tick
     function currentTick() public view returns (int24 tick) {
-        (, tick, , , , , , ) = pool.globalState();
+        (, tick, , , , , ) = pool.slot0();
     }
 
     function _uint128Safe(uint256 x) internal pure returns (uint128) {
@@ -615,10 +610,6 @@ contract Hypervisor is IAlgebraMintCallback, ERC20Permit, ReentrancyGuard {
         fee = newFee;
         emit SetFee(fee);
     }
-    /// @notice set tickSpacing if updated by FactoryOwner 
-    function setTickSpacing(int24 newTickSpacing) external onlyOwner {
-        tickSpacing = newTickSpacing;
-    }    
 
     /// @notice Toggle Direct Deposit
     function toggleDirectDeposit() external onlyOwner {

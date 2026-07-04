@@ -9,7 +9,7 @@ import { IPriceOracle } from "src/interfaces/oracles/IPriceOracle.sol";
 import { IERC20Metadata } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 import { SystemComponent } from "src/SystemComponent.sol";
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 
 import { Address } from "openzeppelin-contracts/utils/Address.sol";
 
@@ -23,7 +23,7 @@ contract ERC4626VaultShareEthOracle is SystemComponent, IPriceOracle {
     constructor(
         ISystemRegistry _systemRegistry
     ) SystemComponent(_systemRegistry) {
-        AutopilotErrors.verifyNotZero(address(_systemRegistry.rootPriceOracle()), "rootPriceOracle");
+        Errors.verifyNotZero(address(_systemRegistry.rootPriceOracle()), "rootPriceOracle");
     }
 
     /// @inheritdoc IPriceOracle
@@ -49,7 +49,7 @@ contract ERC4626VaultShareEthOracle is SystemComponent, IPriceOracle {
         if (data.length != 0) {
             vaultAsset = IERC20Metadata(abi.decode(data, (address)));
 
-            AutopilotErrors.verifyNotZero(address(vaultAsset), "vaultAsset");
+            Errors.verifyNotZero(address(vaultAsset), "vaultAsset");
             vault = IERC4626(token);
         } else {
             revert Not4626Vault();

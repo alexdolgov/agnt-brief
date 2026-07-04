@@ -10,6 +10,7 @@
 pragma solidity 0.6.9;
 
 
+
 interface IDODOV2Proxy01 {
     function dodoSwapV2ETHToToken(
         address toToken,
@@ -159,6 +160,7 @@ interface IDODOV2Proxy01 {
 
 // File: contracts/SmartRoute/intf/IDODOV2.sol
 
+
 interface IDODOV2 {
 
     //========== Common ==================
@@ -249,7 +251,6 @@ interface IDODOV2 {
 }
 
 // File: contracts/SmartRoute/intf/IDODOV1.sol
-
 
 interface IDODOV1 {
     function init(
@@ -469,6 +470,7 @@ contract DODOApproveProxy is InitializableOwnable {
 
 // File: contracts/lib/SafeMath.sol
 
+
 /**
  * @title SafeMath
  * @author DODO Breeder
@@ -524,7 +526,6 @@ library SafeMath {
 }
 
 // File: contracts/lib/DecimalMath.sol
-
 
 
 /**
@@ -857,8 +858,6 @@ interface IERC20 {
 // File: contracts/intf/IWETH.sol
 
 
-
-
 interface IWETH {
     function totalSupply() external view returns (uint256);
 
@@ -882,7 +881,6 @@ interface IWETH {
 }
 
 // File: contracts/SmartRoute/intf/IUni.sol
-
 
 
 interface IUni {
@@ -911,8 +909,6 @@ interface IChi {
 }
 
 // File: contracts/lib/SafeERC20.sol
-
-
 
 /**
  * @title SafeERC20
@@ -1047,7 +1043,6 @@ library UniversalERC20 {
 
 // File: contracts/lib/ReentrancyGuard.sol
 
-
 /**
  * @title ReentrancyGuard
  * @author DODO Breeder
@@ -1068,10 +1063,6 @@ contract ReentrancyGuard {
 }
 
 // File: contracts/DODOToken/DODOIncentive.sol
-
-
-
-
 
 interface IDODOIncentive {
     function triggerIncentive(
@@ -1220,6 +1211,7 @@ contract DODOIncentive is InitializableOwnable {
 }
 
 // File: contracts/SmartRoute/intf/IDODOAdapter.sol
+
 
 interface IDODOAdapter {
     

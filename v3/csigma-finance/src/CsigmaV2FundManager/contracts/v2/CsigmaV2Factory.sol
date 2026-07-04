@@ -10,6 +10,7 @@ import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 import "./CsigmaV2Pool.sol";
 import "./CsigmaV2FundManager.sol";
 import "./CsigmaV2StakingPool.sol";
+import "./CsigmaV2WithdrawalManager.sol";
 
 error InvalidAddress(address _poolManager);
 error InvalidPoolName(string _poolName);
@@ -41,6 +42,9 @@ contract CsigmaV2Factory is
     mapping (address => bool) public isStakingPoolCreated;
     mapping (string => bool) private isPoolNameUsed;
     address[] public pools;
+    address public withdrawalManagerImplementation;
+
+    bytes32 public constant ROLE_MANAGER = keccak256("ROLE_MANAGER");
 
     event PoolImplementationUpdated(address _prevImpl, address _newImpl);
     event FundManagerImplementationUpdated(address _prevImpl, address _newImpl);
@@ -61,6 +65,7 @@ contract CsigmaV2Factory is
         uint256 _poolSize
     );
     event StakingPoolCreated(address indexed _stakingPool, address indexed _pool);
+    event WithdrawalManagerCreated(address indexed _withdrawalManager, address indexed _pool);
     event PoolManagerUpdated(address indexed _pool, address indexed _oldManager, address indexed _newManager);
     event PoolSizeUpdated(address indexed _pool, uint256 _oldValue, uint256 _newValue);
     event AdminTransferred(address _oldOwner, address _newOwner);
@@ -109,7 +114,7 @@ contract CsigmaV2Factory is
 
     /// @notice Updates the pool implementation address
     /// @param _newImpl The address of the new pool implementation
-    function updatePoolImplementation(address _newImpl) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updatePoolImplementation(address _newImpl) external onlyRole(ROLE_MANAGER) {
         if(_newImpl == address(0)) {
             revert InvalidAddress(_newImpl);
         }
@@ -119,7 +124,7 @@ contract CsigmaV2Factory is
 
     /// @notice Updates the fund manager implementation address
     /// @param _newImpl The address of the new fund manager implementation
-    function updateFundManagerImplementation(address _newImpl) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updateFundManagerImplementation(address _newImpl) external onlyRole(ROLE_MANAGER) {
         if(_newImpl == address(0)) {
             revert InvalidAddress(_newImpl);
         }
@@ -127,9 +132,19 @@ contract CsigmaV2Factory is
         fundManagerImplementation = _newImpl;
     }
 
+    /// @notice Updates the withdrawal manager implementation address
+    /// @param _newImpl The address of the new withdrawal manager implementation
+    function updateWithdrawalManagerImplementation(address _newImpl) external onlyRole(ROLE_MANAGER) {
+        if(_newImpl == address(0)) {
+            revert InvalidAddress(_newImpl);
+        }
+        emit FundManagerImplementationUpdated(withdrawalManagerImplementation, _newImpl);
+        withdrawalManagerImplementation = _newImpl;
+    }
+
     /// @notice Updates the staking pool implementation address
     /// @param _newImpl The address of the new staking pool implementation
-    function updateStakingPoolImplementation(address _newImpl) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updateStakingPoolImplementation(address _newImpl) external onlyRole(ROLE_MANAGER) {
         if(_newImpl == address(0)) {
             revert InvalidAddress(_newImpl);
         }
@@ -139,7 +154,7 @@ contract CsigmaV2Factory is
 
     /// @notice Updates the chainalysis contract address
     /// @param _newAddr The address of the new chainalysis contract
-    function updateChainalysisAddress(address _newAddr) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updateChainalysisAddress(address _newAddr) external onlyRole(ROLE_MANAGER) {
         if(_newAddr == address(0)) {
             revert InvalidAddress(_newAddr);
         }
@@ -148,7 +163,7 @@ contract CsigmaV2Factory is
     }
 
     /// @notice Updates the sigma token address
-    function updateSigmaTokenAddress(address _newAddr) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updateSigmaTokenAddress(address _newAddr) external onlyRole(ROLE_MANAGER) {
         if(_newAddr == address(0)) {
             revert InvalidAddress(_newAddr);
         }
@@ -158,7 +173,7 @@ contract CsigmaV2Factory is
 
     /// @notice Adds a pool manager to the factory
     /// @param _poolManager The address of the pool manager
-    function addPoolManager(address _poolManager) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function addPoolManager(address _poolManager) external onlyRole(ROLE_MANAGER) {
         if(_poolManager == address(0) || isPoolManager[_poolManager]) {
             revert InvalidAddress(_poolManager);
         }
@@ -168,7 +183,7 @@ contract CsigmaV2Factory is
 
     /// @notice Removes a pool manager from the factory
     /// @param _poolManager The address of the pool manager
-    function removePoolManager(address _poolManager) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function removePoolManager(address _poolManager) external onlyRole(ROLE_MANAGER) {
         if(!isPoolManager[_poolManager]) {
             revert InvalidAddress(_poolManager);
         }
@@ -178,7 +193,7 @@ contract CsigmaV2Factory is
 
     /// @notice Adds a token to the whitelist
     /// @param _token The address of the token
-    function addTokenToWhitelist(address _token) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function addTokenToWhitelist(address _token) external onlyRole(ROLE_MANAGER) {
         if(_token == address(0) || isWhitelistedToken[_token]) {
             revert InvalidAddress(_token);
         }
@@ -188,7 +203,7 @@ contract CsigmaV2Factory is
 
     /// @notice Removes a token from the whitelist
     /// @param _token The address of the token
-    function removeTokenFromWhitelist(address _token) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function removeTokenFromWhitelist(address _token) external onlyRole(ROLE_MANAGER) {
         if(!isWhitelistedToken[_token]) {
             revert InvalidAddress(_token);
         }
@@ -214,7 +229,7 @@ contract CsigmaV2Factory is
         address _oracleManager,
         uint256 _projectedAPY,
         uint256 _poolSize
-    ) external onlyRole(DEFAULT_ADMIN_ROLE) returns (address _poolAddress, address _fundManager) {
+    ) external onlyRole(ROLE_MANAGER) returns (address _poolAddress, address _fundManager) {
         if(!isPoolManager[_poolManager]) {
             revert InvalidAddress(_poolManager);
         }
@@ -230,7 +245,7 @@ contract CsigmaV2Factory is
             )
         );
         _poolAddress = address(new ERC1967Proxy(
-            poolImplementation,
+                poolImplementation,
             abi.encodeWithSelector(
                 CsigmaV2Pool.initialize.selector,
                 string(abi.encodePacked("c", _poolName)),
@@ -248,20 +263,30 @@ contract CsigmaV2Factory is
         emit PoolCreated(_poolAddress, _poolManager, _fundManager, _poolToken, _oracleManager, _projectedAPY, _poolSize);
     }
 
+    /// @notice Creates a new withdrawal manager
+    /// @param _underlyingToken The address of the underlying token
+    /// @param _pool The address of the pool
+    /// @return _withdrawalManager The address of the withdrawal manager
+    function createWithdrawalManager(address _underlyingToken, address _pool) external onlyRole(ROLE_MANAGER) returns (address _withdrawalManager) {
+        _withdrawalManager = address(new ERC1967Proxy(withdrawalManagerImplementation, abi.encodeWithSelector(CsigmaV2WithdrawalManager.initialize.selector, _underlyingToken, _pool)));
+        CsigmaV2Pool(_pool).setWithdrawalManager(_withdrawalManager);
+        emit WithdrawalManagerCreated(_withdrawalManager, _pool);
+    }
+
     /// @notice Creates a new staking pool
     /// @param _pool The address of the pool for which the staking pool is to be created
-    function createStakingPool(address _pool) external onlyRole(DEFAULT_ADMIN_ROLE) returns (address _stakingPool) {
+    function createStakingPool(address _pool, address timelock) external onlyRole(ROLE_MANAGER) returns (address _stakingPool) {
         if(isStakingPoolCreated[_pool]) {
             revert StakingPoolExist(_pool);
         }
-        _stakingPool = address(new ERC1967Proxy(stakingPoolImplementation, abi.encodeWithSelector(CsigmaV2StakingPool.initialize.selector, _msgSender(), _pool, sigmaToken)));
+        _stakingPool = address(new ERC1967Proxy(stakingPoolImplementation, abi.encodeWithSelector(CsigmaV2StakingPool.initialize.selector, timelock, _pool, sigmaToken)));
         isStakingPoolCreated[_pool] = true;
         emit StakingPoolCreated(_stakingPool, _pool);
     }
 
     /// @notice Updates the pool manager of a pool
     /// @param _pool The address of the pool whose pool manager is to be updated
-    function updatePoolManager(address _pool, address _poolManager) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updatePoolManager(address _pool, address _poolManager) external onlyRole(ROLE_MANAGER) {
         if(!isPoolManager[_poolManager]) {
             revert InvalidAddress(_poolManager);
         }
@@ -271,20 +296,20 @@ contract CsigmaV2Factory is
 
     /// @notice Updates the pool size of a pool
     /// @param _pool The address of the pool whose pool size is to be updated
-    function updatePoolSize(address _pool, uint256 _poolSize) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updatePoolSize(address _pool, uint256 _poolSize) external onlyRole(ROLE_MANAGER) {
         emit PoolSizeUpdated(_pool, CsigmaV2Pool(_pool).poolSize(), _poolSize);
         CsigmaV2Pool(_pool).updatePoolSize(_poolSize);
     }
 
     /// @notice Updates the pool investment limit
     /// @param _pool The address of the pool whose investment limit is to be updated
-    function updatePoolInvestmentLimit(address _pool, uint256 _limit) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updatePoolInvestmentLimit(address _pool, uint256 _limit) external onlyRole(ROLE_MANAGER) {
         CsigmaV2Pool(_pool).updateMinimumInvestmentLimit(_limit);
     }
 
     /// @notice Updates the status of the pool to closed
     /// @param _pool The address of the pool whose status is to be updated to closed
-    function closePool(address _pool) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function closePool(address _pool) external onlyRole(ROLE_MANAGER) {
         CsigmaV2Pool(_pool).closePool();
     }
 
@@ -296,29 +321,45 @@ contract CsigmaV2Factory is
 
     /// @notice Removes an oracle manager from a pool
     /// @param _pool The address of the pool from which the oracle manager is to be removed
-    function removeOracleManager(address _pool, address _manager) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function removeOracleManager(address _pool, address _manager) external onlyRole(ROLE_MANAGER) {
         CsigmaV2Pool(_pool).removeOracleManager(_manager);
     }
 
     /// @notice Updates the pause start time of a pool
     /// @param _pool The address of the pool whose pause start time is to be updated
     /// @param _pauseStartTime The new pause start time
-    function updatePauseStartTime(address _pool, uint64 _pauseStartTime) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updatePauseStartTime(address _pool, uint64 _pauseStartTime) external onlyRole(ROLE_MANAGER) {
         CsigmaV2Pool(_pool).updatePauseStartTime(_pauseStartTime);
     }
 
     /// @notice Updates the pause duration of a pool
     /// @param _pool The address of the pool whose pause duration is to be updated
     /// @param _pauseDuration The new pause duration
-    function updatePauseDuration(address _pool, uint64 _pauseDuration) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updatePauseDuration(address _pool, uint64 _pauseDuration) external onlyRole(ROLE_MANAGER) {
         CsigmaV2Pool(_pool).updatePauseDuration(_pauseDuration);
     }
 
     /// @notice Updates the reserve percentage of a pool
     /// @param _pool The address of the pool whose reserve percentage is to be updated
     /// @param _percentage The new reserve percentage
-    function updateNonReservePercentage(address _pool, uint64 _percentage) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function updateNonReservePercentage(address _pool, uint64 _percentage) external onlyRole(ROLE_MANAGER) {
         CsigmaV2Pool(_pool).updateNonReservePercentage(_percentage);
+    }
+
+    /// @notice This function is used to update the AUM update cooldown period
+    /// @dev Only the admin can call this function
+    /// @param _pool The address of the pool
+    /// @param _cooldownPeriod The new cooldown period
+    function updateAUMUpdateCooldownPeriod(address _pool, uint64 _cooldownPeriod) external onlyRole(ROLE_MANAGER) {
+        CsigmaV2Pool(_pool).updateAUMUpdateCooldownPeriod(_cooldownPeriod);
+    }
+
+    /// @notice This function is used to update the AUM change threshold percentage
+    /// @dev Only the admin can call this function
+    /// @param _pool The address of the pool
+    /// @param _thresholdPercentage The new threshold percentage
+    function updateAUMChangeThresholdPercentage(address _pool, uint64 _thresholdPercentage) external onlyRole(ROLE_MANAGER) {
+        CsigmaV2Pool(_pool).updateAUMChangeThresholdPercentage(_thresholdPercentage);
     }
 
     /// @notice Updates the implementation of a proxy which maybe a pool,staking pool or fund manager
@@ -330,13 +371,13 @@ contract CsigmaV2Factory is
     
     /// @notice Pauses a target contract
     /// @param _target The address of the target contract
-    function pauseTarget(address _target) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function pauseTarget(address _target) external onlyRole(ROLE_MANAGER) {
         AccessControl(_target).pause();
     }
 
     /// @notice Unpauses a target contract
     /// @param _target The address of the target contract
-    function unpauseTarget(address _target) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function unpauseTarget(address _target) external onlyRole(ROLE_MANAGER) {
         AccessControl(_target).unpause();
     }
 
@@ -344,6 +385,13 @@ contract CsigmaV2Factory is
     /// @param _target The address of the target contract
     function emergencyWithdraw(address _target, address _token, address _to, uint256 _amount) external onlyRole(DEFAULT_ADMIN_ROLE) {
         AccessControl(_target).emergencyWithdraw(_token, _to, _amount);
+    }
+
+    /// @notice Updates the AUM of a pool
+    /// @param _pool The address of the pool
+    /// @param _assetUnderManagement The new AUM
+    function emergencyUpdateAUM(address _pool, uint256 _assetUnderManagement) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        CsigmaV2Pool(_pool).emergencyUpdateAUM(_assetUnderManagement);
     }
 
     /// @notice Grants a role to an account in a target contract
@@ -358,7 +406,7 @@ contract CsigmaV2Factory is
     /// @param _target The address of the target contract
     /// @param role The role to be revoked
     /// @param _account The address of the account from which the role is to be revoked
-    function revokeRoleTarget(address _target, bytes32 role, address _account) external onlyRole(DEFAULT_ADMIN_ROLE) {
+    function revokeRoleTarget(address _target, bytes32 role, address _account) external onlyRole(ROLE_MANAGER) {
         AccessControl(_target).revokeRole(role, _account);
     }
 

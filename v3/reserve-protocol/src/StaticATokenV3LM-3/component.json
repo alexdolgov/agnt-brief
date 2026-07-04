@@ -1,0 +1,26 @@
+{
+  "component": "StaticATokenV3LM-3",
+  "main_contract": "StaticATokenV3LM",
+  "source_file_count": 32,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3a7949464e074da5f707efedff75414c83c0f5fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde554e8f0f045a4707ff7d0f386c01c8dd566e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

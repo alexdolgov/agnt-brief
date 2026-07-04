@@ -36,7 +36,7 @@ contract UniswapV3Connector is
 
     function addLiquidity(
         NftAddLiquidity memory addLiquidityParams
-    ) external override {
+    ) external payable override {
         if (addLiquidityParams.tokenId == 0) {
             _mint(addLiquidityParams);
         } else {
@@ -80,12 +80,12 @@ contract UniswapV3Connector is
     function depositExistingNft(
         NftPosition calldata, // position,
         bytes calldata // extraData
-    ) external virtual override { }
+    ) external payable virtual override { }
 
     function withdrawNft(
         NftPosition calldata, // position,
         bytes calldata // extraData
-    ) external virtual override { }
+    ) external payable virtual override { }
 
     function claim(
         NftPosition calldata position,
@@ -93,7 +93,7 @@ contract UniswapV3Connector is
         uint128 amount0Max,
         uint128 amount1Max,
         bytes calldata // extraData
-    ) external virtual override {
+    ) external payable virtual override {
         if (amount0Max > 0 || amount1Max > 0) {
             _collect(position.nft, position.tokenId, amount0Max, amount1Max);
         }

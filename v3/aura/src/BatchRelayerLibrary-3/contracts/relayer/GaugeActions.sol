@@ -17,8 +17,9 @@ pragma experimental ABIEncoderV2;
 
 import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IBalancerMinter.sol";
 import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IStakingLiquidityGauge.sol";
+import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol";
+import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol";
 
 import "./IBaseRelayerLibrary.sol";
 
@@ -27,26 +28,16 @@ import "./IBaseRelayerLibrary.sol";
  * @dev All functions must be payable so they can be called from a multicall involving ETH
  */
 abstract contract GaugeActions is IBaseRelayerLibrary {
-    using SafeERC20 for IERC20;
+    using Address for address payable;
 
     IBalancerMinter private immutable _balancerMinter;
-    bool private immutable _canCallUserCheckpoint;
 
     /**
      * @dev The zero address may be passed as balancerMinter to safely disable features
      *      which only exist on mainnet
      */
-    constructor(IBalancerMinter balancerMinter, bool canCallUserCheckpoint) {
+    constructor(IBalancerMinter balancerMinter) {
         _balancerMinter = balancerMinter;
-        _canCallUserCheckpoint = canCallUserCheckpoint;
-    }
-
-    /**
-     * @notice Returns true if the relayer is configured to checkpoint gauges directly via `user_checkpoint`.
-     * @dev This method is not expected to be called inside `multicall` so it is not marked as `payable`.
-     */
-    function canCallUserCheckpoint() external view returns (bool) {
-        return _canCallUserCheckpoint;
     }
 
     function gaugeDeposit(
@@ -55,11 +46,21 @@ abstract contract GaugeActions is IBaseRelayerLibrary {
         address recipient,
         uint256 amount
     ) external payable {
+        if (_isChainedReference(amount)) {
+            amount = _getChainedReferenceValue(amount);
+        }
+
         // We can query which token to pull and approve from the wrapper contract.
         IERC20 bptToken = gauge.lp_token();
 
-        amount = _resolveAmountPullTokenAndApproveSpender(bptToken, address(gauge), amount, sender);
+        // The deposit caller is the implicit sender of tokens, so if the goal is for the tokens
+        // to be sourced from outside the relayer, we must first pull them here.
+        if (sender != address(this)) {
+            require(sender == msg.sender, "Incorrect sender");
+            _pullToken(sender, bptToken, amount);
+        }
 
+        bptToken.approve(address(gauge), amount);
         gauge.deposit(amount, recipient);
     }
 
@@ -69,7 +70,16 @@ abstract contract GaugeActions is IBaseRelayerLibrary {
         address recipient,
         uint256 amount
     ) external payable {
-        amount = _resolveAmountAndPullToken(gauge, amount, sender);
+        if (_isChainedReference(amount)) {
+            amount = _getChainedReferenceValue(amount);
+        }
+
+        // The unwrap caller is the implicit sender of tokens, so if the goal is for the tokens
+        // to be sourced from outside the relayer, we must first pull them here.
+        if (sender != address(this)) {
+            require(sender == msg.sender, "Incorrect sender");
+            _pullToken(sender, IERC20(gauge), amount);
+        }
 
         // No approval is needed here, as the gauge Tokens are burned directly from the relayer's account.
         gauge.withdraw(amount);
@@ -79,14 +89,16 @@ abstract contract GaugeActions is IBaseRelayerLibrary {
         if (recipient != address(this)) {
             IERC20 bptToken = gauge.lp_token();
 
-            bptToken.safeTransfer(recipient, amount);
+            bptToken.transfer(recipient, amount);
         }
     }
 
     function gaugeMint(address[] calldata gauges, uint256 outputReference) external payable {
         uint256 balMinted = _balancerMinter.mintManyFor(gauges, msg.sender);
 
-        _setChainedReference(outputReference, balMinted);
+        if (_isChainedReference(outputReference)) {
+            _setChainedReferenceValue(outputReference, balMinted);
+        }
     }
 
     function gaugeSetMinterApproval(
@@ -105,50 +117,5 @@ abstract contract GaugeActions is IBaseRelayerLibrary {
         for (uint256 i; i < numGauges; ++i) {
             gauges[i].claim_rewards(msg.sender);
         }
-    }
-
-    /**
-     * @notice Perform a user checkpoint for the given user on the given set of gauges.
-     * @dev Both mainnet and child chain gauges are supported.
-     */
-    function gaugeCheckpoint(address user, IStakingLiquidityGauge[] calldata gauges) external payable {
-        if (_canCallUserCheckpoint) {
-            _checkpointGaugesViaUserCheckpoint(user, gauges);
-        } else {
-            _checkpointGaugesViaUserBalance(user, gauges);
-        }
-    }
-
-    function _checkpointGaugesViaUserCheckpoint(address user, IStakingLiquidityGauge[] calldata gauges) internal {
-        uint256 numGauges = gauges.length;
-        // In L2s (child chain gauges), `user_checkpoint` is not permissioned, so we can just call it directly.
-        for (uint256 i = 0; i < numGauges; ++i) {
-            gauges[i].user_checkpoint(user);
-        }
-    }
-
-    function _checkpointGaugesViaUserBalance(address user, IStakingLiquidityGauge[] calldata gauges) internal {
-        uint256 numGauges = gauges.length;
-        IVault.UserBalanceOp[] memory ops = new IVault.UserBalanceOp[](numGauges);
-
-        // In mainnet, `user_checkpoint` is permissioned for liquidity gauges, so we cannot call it directly.
-        // However, some non-permissioned actions cause the gauge to checkpoint a user as a side effect,
-        // even if the operation itself is a no-op. The simplest of these is a gauge token transfer, which we
-        // perform here. Since the Vault has an unlimited allowance for gauge tokens, and user balance
-        // operations use the Vault allowance, no approvals are necessary.
-        // The amount has to be greater than 0 for the checkpoint to take place, so we use 1 wei.
-        // There is no actual value transfer since the sender and the recipient are the same.
-        for (uint256 i = 0; i < numGauges; ++i) {
-            // We first prepare all the transfer operations for each of the gauges.
-            ops[i] = IVault.UserBalanceOp({
-                asset: IAsset(address(gauges[i])),
-                amount: 1,
-                sender: user,
-                recipient: payable(address(user)),
-                kind: IVault.UserBalanceOpKind.TRANSFER_EXTERNAL
-            });
-        }
-        // And we execute all of them at once.
-        getVault().manageUserBalance(ops);
     }
 }

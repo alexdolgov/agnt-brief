@@ -1,6 +1,6 @@
 # emiswap — deployments
 
-21 verified deployment(s) across 12 component(s).
+23 verified deployment(s) across 14 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,7 +18,9 @@
 | ethereum | `0xe629c4dc9538614019d17d09f54617ef89e1a3af` | EmiVamp | impl | unknown | no |
 | ethereum | `0xf3d22b81df85d586506bcc52aa5426fe182ff9bd` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0x0065f29d7c5bd66510c2d11a6f124ab1b2df6224` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
+| polygon | `0x23c1b313152e276e0cf61665dc3ac160b3c5ab19` | EmiFactory-2 | impl | inactive | no |
 | polygon | `0x316aae7c679c01d09014b3e2ee4b4c42aed4c018` | RewardPool | impl | inactive | no |
+| polygon | `0x38680777a6a402e98fa4609725664f6766c2c46a` | EmiRouter-2 | impl | live | no |
 | polygon | `0x8933a6e58eeee063b5fd3221f2e1d17821dc1031` | RewardPool | impl | inactive | no |
 | polygon | `0xc235d7c9493c4fc579de7583142c5c24351cc22b` | TransparentUpgradeableProxy-2 | impl | inactive | no |
 | polygon | `0xc2fe71e23ae5a508d1e6039af282ba19122c26c6` | Ether | impl | inactive | no |
@@ -26,9 +28,7 @@
 | polygon | `0xdf1166d3a5b06301e580ce1b5afec0ce234a94a8` | RewardPool | impl | inactive | no |
 | polygon | `0xf1dc6ff264ced9f629b9690850f2732fe116cd7e` | Multicall | impl | inactive | no |
 
-## Source unavailable (3)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- polygon `0x23c1b313152e276e0cf61665dc3ac160b3c5ab19`
-- polygon `0x38680777a6a402e98fa4609725664f6766c2c46a`
 - polygon `0xa1dcc591f2d7c339df626d4a37bc418cfa4f9ad4`

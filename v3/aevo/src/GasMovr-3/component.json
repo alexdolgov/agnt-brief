@@ -1,0 +1,18 @@
+{
+  "component": "GasMovr-3",
+  "main_contract": "GasMovr",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0e02aa55d10e38855e13b64a8e1387a04681a00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,18 +1,29 @@
 {
   "component": "Oracle-2",
   "main_contract": "Oracle",
-  "source_file_count": 15,
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf",
+    "https://www.openzeppelin.com/news/opyn-gamma-protocol-audit"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x65d66c76447ccb45daf1e8044e918fa786a483a1",
+      "address": "0x414b66ce4f304385edd47d372fcc4a11dde7d16e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x789cd7ab3742e23ce0952f6bc3eb3a73a0e08833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

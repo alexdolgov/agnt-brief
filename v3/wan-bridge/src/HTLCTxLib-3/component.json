@@ -1,0 +1,18 @@
+{
+  "component": "HTLCTxLib-3",
+  "main_contract": "HTLCTxLib",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x63c5acc9bd1cfc14582a5520415480c33734f18f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

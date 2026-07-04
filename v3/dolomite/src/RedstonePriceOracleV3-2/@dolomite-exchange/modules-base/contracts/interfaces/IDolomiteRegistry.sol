@@ -20,11 +20,14 @@
 
 pragma solidity ^0.8.9;
 
+import { IBorrowPositionProxyV2 } from "./IBorrowPositionProxyV2.sol";
+import { IDolomiteAccountRegistry } from "./IDolomiteAccountRegistry.sol";
+import { IDolomiteMigrator } from "./IDolomiteMigrator.sol";
 import { IEventEmitterRegistry } from "./IEventEmitterRegistry.sol";
 import { IExpiry } from "./IExpiry.sol";
-import { IGenericTraderProxyV1 } from "./IGenericTraderProxyV1.sol";
 import { ILiquidatorAssetRegistry } from "./ILiquidatorAssetRegistry.sol";
 import { IDolomitePriceOracle } from "../protocol/interfaces/IDolomitePriceOracle.sol";
+import { IGenericTraderProxyV2 } from "../proxies/interfaces/IGenericTraderProxyV2.sol";
 
 
 /**
@@ -35,22 +38,42 @@ import { IDolomitePriceOracle } from "../protocol/interfaces/IDolomitePriceOracl
  */
 interface IDolomiteRegistry {
 
+    struct IsolationModeStorage {
+        bytes4[] isolationModeMulticallFunctions;
+    }
+
     // ========================================================
     // ======================== Events ========================
     // ========================================================
 
+    event BorrowPositionProxySet(address indexed _borrowPositionProxy);
     event GenericTraderProxySet(address indexed _genericTraderProxy);
     event ExpirySet(address indexed _expiry);
+    event FeeAgentSet(address indexed _feeAgent);
     event SlippageToleranceForPauseSentinelSet(uint256 _slippageTolerance);
     event LiquidatorAssetRegistrySet(address indexed _liquidatorAssetRegistry);
     event EventEmitterSet(address indexed _eventEmitter);
     event ChainlinkPriceOracleSet(address indexed _chainlinkPriceOracle);
+    event DolomiteMigratorSet(address indexed _dolomiteMigrator);
     event RedstonePriceOracleSet(address indexed _redstonePriceOracle);
     event OracleAggregatorSet(address indexed _oracleAggregator);
+    event DolomiteAccountRegistrySet(address indexed _dolomiteAccountRegistry);
+    event TrustedInternalTradersSet(address[] _trustedInternalTraders, bool[] _isTrusted);
+    event IsolationModeMulticallFunctionsSet(bytes4[] _selectors);
+    event TreasurySet(address indexed _treasury);
+    event DaoSet(address indexed _dao);
 
     // ========================================================
-    // =================== Admin Functions ====================
+    // =================== Write Functions ====================
     // ========================================================
+
+    function lazyInitialize(address _dolomiteMigrator, address _oracleAggregator) external;
+
+    /**
+     *
+     * @param  _borrowPositionProxy  The new address of the borrow position proxy
+     */
+    function ownerSetBorrowPositionProxy(address _borrowPositionProxy) external;
 
     /**
      *
@@ -63,6 +86,12 @@ interface IDolomiteRegistry {
      * @param  _expiry  The new address of the expiry contract
      */
     function ownerSetExpiry(address _expiry) external;
+
+    /**
+     *
+     * @param  _feeAgent  The new address of the fee agent
+     */
+    function ownerSetFeeAgent(address _feeAgent) external;
 
     /**
      *
@@ -92,6 +121,12 @@ interface IDolomiteRegistry {
 
     /**
      *
+     * @param  _dolomiteMigrator    The new address of the Dolomite migrator
+     */
+    function ownerSetDolomiteMigrator(address _dolomiteMigrator) external;
+
+    /**
+     *
      * @param  _redstonePriceOracle    The new address of the Redstone price oracle that's compatible with
      *                                  DolomiteMargin.
      */
@@ -104,14 +139,53 @@ interface IDolomiteRegistry {
      */
     function ownerSetOracleAggregator(address _oracleAggregator) external;
 
+    /**
+     *
+     * @param  _dolomiteAccountRegistry    The new address of the Dolomite address registry
+     */
+    function ownerSetDolomiteAccountRegistry(address _dolomiteAccountRegistry) external;
+
+    /**
+     *
+     * @param  _trustedInternalTraders    The addresses of the trusted internal traders
+     * @param  _isTrusted                 The boolean values for whether the traders are trusted
+     */
+    function ownerSetTrustedInternalTraders(
+        address[] memory _trustedInternalTraders,
+        bool[] memory _isTrusted
+    ) external;
+
+    /**
+     *
+     * @param  _treasury    The new address of the treasury
+     */
+    function ownerSetTreasury(address _treasury) external;
+
+    /**
+     *
+     * @param  _dao    The new address of the DAO
+     */
+    function ownerSetDao(address _dao) external;
+
+    /**
+     *
+     * @param  _selectors    Allowed function selectors for isolation mode multicall
+     */
+    function ownerSetIsolationModeMulticallFunctions(bytes4[] memory _selectors) external;
+
     // ========================================================
     // =================== Getter Functions ===================
     // ========================================================
 
     /**
+     * @return  The address of the borrow position proxy
+     */
+    function borrowPositionProxy() external view returns (IBorrowPositionProxyV2);
+
+    /**
      * @return  The address of the generic trader proxy for making zaps
      */
-    function genericTraderProxy() external view returns (IGenericTraderProxyV1);
+    function genericTraderProxy() external view returns (IGenericTraderProxyV2);
 
     /**
      * @return  The address of the expiry contract
@@ -134,9 +208,19 @@ interface IDolomiteRegistry {
     function eventEmitter() external view returns (IEventEmitterRegistry);
 
     /**
+     * @return The address of the fee agent
+     */
+    function feeAgent() external view returns (address);
+
+    /**
      * @return The address of the Chainlink price oracle that's compatible with DolomiteMargin
      */
     function chainlinkPriceOracle() external view returns (IDolomitePriceOracle);
+
+    /**
+     * @return The address of the migrator contract
+     */
+    function dolomiteMigrator() external view returns (IDolomiteMigrator);
 
     /**
      * @return The address of the Redstone price oracle that's compatible with DolomiteMargin
@@ -149,7 +233,34 @@ interface IDolomiteRegistry {
     function oracleAggregator() external view returns (IDolomitePriceOracle);
 
     /**
+     * @return The address of the Dolomite address registry
+     */
+    function dolomiteAccountRegistry() external view returns (IDolomiteAccountRegistry);
+
+    /**
+     * @return The array of allowed function selectors for isolation mode multicall
+     */
+    function isolationModeMulticallFunctions() external view returns (bytes4[] memory);
+
+    /**
      * @return The base (denominator) for the slippage tolerance variable. Always 1e18.
      */
     function slippageToleranceForPauseSentinelBase() external pure returns (uint256);
+
+    /**
+     *
+     * @param  _trader  The address of the trader
+     * @return  Whether the trader is trusted
+     */
+    function isTrustedInternalTrader(address _trader) external view returns (bool);
+
+    /**
+     * @return The address of the treasury
+     */
+    function treasury() external view returns (address);
+
+    /**
+     * @return The address of the DAO multisig
+     */
+    function dao() external view returns (address);
 }

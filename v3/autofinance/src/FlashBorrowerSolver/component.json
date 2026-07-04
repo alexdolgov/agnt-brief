@@ -1,39 +1,111 @@
 {
   "component": "FlashBorrowerSolver",
   "main_contract": "FlashBorrowerSolver",
-  "source_file_count": 25,
-  "deployment_count": 4,
+  "source_file_count": 21,
+  "deployment_count": 13,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x044e1609efb154150436cec9d03e95847f81b776",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20d76238f3a972a6950cf51620883682025885b9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x5ae89e5fbc313a29a99b9b380b69503c4dda9e20",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2795b6a09df08891ef21f7153f4799cfbe3ae6b6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xfbe1cefb85716c0e43ecfd399372996646b992c1",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7a6119d37083353a602e9aa6d7b5d5e10d05e819",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9491a1f3fdb42df62a598c0c76cf01c4bb6f3690",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xfff19270583bb6a37e023a3fd499caa5cea3a304",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xace0eb6dee9f9e1df3204f7a11992d92c8b36704",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc97cc6b9defb70838151711c47f3834b8c97919",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfbfad8907885d2b5ced80b7deffda6f0588349dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xaf6f21f1a0c6d47b61388b982954666dd030e10c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf5a10654bc75e09fb5f341d687305e9cc4b09ec0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x371b3cc4cad4bffc25729c9db4d8c97ecab29488",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3dbbb74e6b232bce52a0dc6afc67faf32d56fce9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x796115b3851247e54cf271001350fe39afe6a9dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe085d420cdf152ab504ff05e9dce440e45d62a03",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

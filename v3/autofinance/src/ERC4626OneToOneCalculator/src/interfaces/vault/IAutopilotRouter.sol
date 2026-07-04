@@ -181,11 +181,7 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @param accToke contract address of the AccToke
      * @param to The destination of ownership shares.
      */
-    function stakeAccBalance(
-        address accToke,
-        uint256 duration,
-        address to
-    ) external payable;
+    function stakeAccBalance(address accToke, uint256 duration, address to) external payable;
 
     /**
      * @notice stake Acc token for specified amount
@@ -194,12 +190,7 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @param duration The duration of the stake
      * @param to The destination of ownership shares.
      */
-    function stakeAcc(
-        address accToke,
-        uint256 amount,
-        uint256 duration,
-        address to
-    ) external payable;
+    function stakeAcc(address accToke, uint256 amount, uint256 duration, address to) external payable;
 
     /**
      * @notice unstake Acc token balance
@@ -207,11 +198,7 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @param lockupIds The lockup ids to unstake
      * @param to The destination of staked TOKE.
      */
-    function unstakeAcc(
-        address accToke,
-        uint256[] memory lockupIds,
-        address to
-    ) external payable;
+    function unstakeAcc(address accToke, uint256[] memory lockupIds, address to) external payable;
 
     /**
      * @notice Collect staking rewards
@@ -220,20 +207,14 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @param recipient The recipient of the rewards
      * @return amountReceived Swap output amount
      */
-    function collectAccTokeRewards(
-        address accToke,
-        address recipient
-    ) external payable returns (uint256);
+    function collectAccTokeRewards(address accToke, address recipient) external payable returns (uint256);
 
     /**
      * @notice AccTokeV1 function to lock TOKE for `numOfCycles` cycles
      * @param amount Amount of TOKE to lock up
      * @param duration Number of cycles to lock for
      */
-    function lockTokeFor(
-        uint256 amount,
-        uint256 duration
-    ) external payable;
+    function lockTokeFor(uint256 amount, uint256 duration) external payable;
 
     // /**
     //  * @notice Redeem prorata from a AutopoolETH.

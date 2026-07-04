@@ -1,0 +1,26 @@
+{
+  "component": "FundingRateFacet-5",
+  "main_contract": "FundingRateFacet",
+  "source_file_count": 25,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7d6ea847c4838183864dcc2b4aa2836ef15a206b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf8e5ef82a4e7206332e36a9e160acd08a13467cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

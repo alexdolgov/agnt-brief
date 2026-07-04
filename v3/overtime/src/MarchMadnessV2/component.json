@@ -2,7 +2,7 @@
   "component": "MarchMadnessV2",
   "main_contract": "MarchMadnessV2",
   "source_file_count": 18,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,22 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0x30b887a0ef84c65624518ca749fe0fbbaaf404df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x94a00a4501780fca8a1657c6a454afe67e2da207",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x94dbb1b8d4fcd49252c6f452f679d75c70b02c07",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -2,7 +2,6 @@
 pragma solidity 0.8.7;
 
 import "../interfaces/IHasher.sol";
-import "../interfaces/ISocket.sol";
 import "../libraries/RescueFundsLib.sol";
 
 import "../utils/AccessControl.sol";
@@ -29,7 +28,10 @@ contract Hasher is IHasher, AccessControl {
         address srcPlug_,
         uint32 dstChainSlug_,
         address dstPlug_,
-        ISocket.MessageDetails memory messageDetails_
+        bytes32 msgId_,
+        uint256 msgGasLimit_,
+        uint256 executionFee_,
+        bytes calldata payload_
     ) external pure override returns (bytes32) {
         return
             keccak256(
@@ -38,11 +40,10 @@ contract Hasher is IHasher, AccessControl {
                     srcPlug_,
                     dstChainSlug_,
                     dstPlug_,
-                    messageDetails_.msgId,
-                    messageDetails_.msgGasLimit,
-                    messageDetails_.extraParams,
-                    messageDetails_.executionFee,
-                    messageDetails_.payload
+                    msgId_,
+                    msgGasLimit_,
+                    executionFee_,
+                    payload_
                 )
             );
     }

@@ -2,7 +2,7 @@
   "component": "PerformanceFeePolicy",
   "main_contract": "PerformanceFeePolicy",
   "source_file_count": 4,
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -31,12 +31,28 @@
       "liveness": "inactive"
     },
     {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x78e7a4e87408462e4212885b96f56184c390b7f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x2b77378c70f4b43de2824d217e9ae4910cddf6a8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8c677e63abb1a771f7c2c6c1fe7469231d88fa36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -42,17 +42,10 @@ contract ComptrollerV1Storage is UnitrollerAdminStorage {
     uint256 public liquidationIncentiveMantissa;
 
     /**
-     * @notice Max number of assets a single account can participate in (borrow or use as collateral)
-     */
-    uint256 public maxAssets;
-
-    /**
-     * @notice Per-account mapping of "assets you are in", capped by maxAssets
+     * @notice Per-account mapping of "assets you are in"
      */
     mapping(address => CToken[]) public accountAssets;
-}
 
-contract ComptrollerV2Storage is ComptrollerV1Storage {
     enum Version {
         VANILLA,
         COLLATERALCAP,
@@ -70,8 +63,6 @@ contract ComptrollerV2Storage is ComptrollerV1Storage {
         uint256 collateralFactorMantissa;
         /// @notice Per-market mapping of "accounts in this asset"
         mapping(address => bool) accountMembership;
-        /// @notice Whether or not this market receives COMP
-        bool isComped;
         /// @notice CToken version
         Version version;
     }
@@ -94,50 +85,17 @@ contract ComptrollerV2Storage is ComptrollerV1Storage {
     bool public seizeGuardianPaused;
     mapping(address => bool) public mintGuardianPaused;
     mapping(address => bool) public borrowGuardianPaused;
-}
-
-contract ComptrollerV3Storage is ComptrollerV2Storage {
-    struct CompMarketState {
-        /// @notice The market's last updated compBorrowIndex or compSupplyIndex
-        uint224 index;
-        /// @notice The block number the index was last updated at
-        uint32 block;
-    }
+    mapping(address => bool) public flashloanGuardianPaused;
 
     /// @notice A list of all markets
     CToken[] public allMarkets;
 
-    /// @notice The rate at which the flywheel distributes COMP, per block
-    uint256 public compRate;
-
-    /// @notice The portion of compRate that each market currently receives
-    mapping(address => uint256) public compSpeeds;
-
-    /// @notice The COMP market supply state for each market
-    mapping(address => CompMarketState) public compSupplyState;
-
-    /// @notice The COMP market borrow state for each market
-    mapping(address => CompMarketState) public compBorrowState;
-
-    /// @notice The COMP borrow index for each market for each supplier as of the last time they accrued COMP
-    mapping(address => mapping(address => uint256)) public compSupplierIndex;
-
-    /// @notice The COMP borrow index for each market for each borrower as of the last time they accrued COMP
-    mapping(address => mapping(address => uint256)) public compBorrowerIndex;
-
-    /// @notice The COMP accrued but not yet transferred to each user
-    mapping(address => uint256) public compAccrued;
-}
-
-contract ComptrollerV4Storage is ComptrollerV3Storage {
     // @notice The borrowCapGuardian can set borrowCaps to any number for any market. Lowering the borrow cap could disable borrowing on the given market.
     address public borrowCapGuardian;
 
     // @notice Borrow caps enforced by borrowAllowed for each cToken address. Defaults to zero which corresponds to unlimited borrowing.
     mapping(address => uint256) public borrowCaps;
-}
 
-contract ComptrollerV5Storage is ComptrollerV4Storage {
     // @notice The supplyCapGuardian can set supplyCaps to any number for any market. Lowering the supply cap could disable supplying to the given market.
     address public supplyCapGuardian;
 
@@ -146,14 +104,7 @@ contract ComptrollerV5Storage is ComptrollerV4Storage {
 
     // @notice creditLimits allowed specific protocols to borrow and repay specific markets without collateral.
     mapping(address => mapping(address => uint256)) public creditLimits;
-}
 
-contract ComptrollerV6Storage is ComptrollerV5Storage {
-    // @notice flashloanGuardianPaused can pause flash loan as a safety mechanism.
-    mapping(address => bool) public flashloanGuardianPaused;
-}
-
-contract ComptrollerV7Storage is ComptrollerV6Storage {
     /// @notice liquidityMining the liquidity mining module that handles the LM rewards distribution.
     address public liquidityMining;
 }

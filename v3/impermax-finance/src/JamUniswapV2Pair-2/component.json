@@ -1,0 +1,18 @@
+{
+  "component": "JamUniswapV2Pair-2",
+  "main_contract": "JamUniswapV2Pair",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5f819f510ca9b1469e6a3ffe4ecd7f0c1126f8f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.4;
+pragma solidity 0.8.12;
 
 import "@layerzerolabs/solidity-examples/contracts/token/oft/v2/OFTV2.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
@@ -112,7 +112,7 @@ contract RadiantOFT is OFTV2, Pausable {
 		bytes memory _adapterParams
 	) internal override returns (uint amount) {
 		uint256 fee = getBridgeFee(_amount);
-		require(msg.value >= fee, "ETH sent is not enough for the fee payment");
+		require(msg.value >= fee, "ETH sent is not enough for fee");
 		payable(treasury).transfer(fee);
 
 		_checkAdapterParams(_dstChainId, PT_SEND, _adapterParams, NO_EXTRA_GAS);

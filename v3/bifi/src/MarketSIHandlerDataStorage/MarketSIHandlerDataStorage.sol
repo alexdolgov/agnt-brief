@@ -1,12 +1,6 @@
-// File: contracts/interfaces/IMarketSIHandlerDataStorage.sol
-
 pragma solidity 0.6.12;
 
-/**
- * @title BiFi's market si handler data storage interface
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-interface IMarketSIHandlerDataStorage  {
+interface marketSIHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function updateRewardPerBlockStorage(uint256 _rewardPerBlock) external returns (bool);
@@ -14,100 +8,19 @@ interface IMarketSIHandlerDataStorage  {
 	function getRewardInfo(address userAddr) external view returns (uint256, uint256, uint256, uint256, uint256, uint256);
 
 	function getMarketRewardInfo() external view returns (uint256, uint256, uint256);
+
 	function setMarketRewardInfo(uint256 _rewardLane, uint256 _rewardLaneUpdateAt, uint256 _rewardPerBlock) external returns (bool);
 
 	function getUserRewardInfo(address userAddr) external view returns (uint256, uint256, uint256);
+
 	function setUserRewardInfo(address userAddr, uint256 _rewardLane, uint256 _rewardLaneUpdateAt, uint256 _rewardAmount) external returns (bool);
 
 	function getBetaRate() external view returns (uint256);
+
 	function setBetaRate(uint256 _betaRate) external returns (bool);
 }
 
-// File: contracts/Errors.sol
-
-pragma solidity 0.6.12;
-
-contract Modifier {
-    string internal constant ONLY_OWNER = "O";
-    string internal constant ONLY_MANAGER = "M";
-    string internal constant CIRCUIT_BREAKER = "emergency";
-}
-
-contract ManagerModifier is Modifier {
-    string internal constant ONLY_HANDLER = "H";
-    string internal constant ONLY_LIQUIDATION_MANAGER = "LM";
-    string internal constant ONLY_BREAKER = "B";
-}
-
-contract HandlerDataStorageModifier is Modifier {
-    string internal constant ONLY_BIFI_CONTRACT = "BF";
-}
-
-contract SIDataStorageModifier is Modifier {
-    string internal constant ONLY_SI_HANDLER = "SI";
-}
-
-contract HandlerErrors is Modifier {
-    string internal constant USE_VAULE = "use value";
-    string internal constant USE_ARG = "use arg";
-    string internal constant EXCEED_LIMIT = "exceed limit";
-    string internal constant NO_LIQUIDATION = "no liquidation";
-    string internal constant NO_LIQUIDATION_REWARD = "no enough reward";
-    string internal constant NO_EFFECTIVE_BALANCE = "not enough balance";
-    string internal constant TRANSFER = "err transfer";
-}
-
-contract SIErrors is Modifier { }
-
-contract InterestErrors is Modifier { }
-
-contract LiquidationManagerErrors is Modifier {
-    string internal constant NO_DELINQUENT = "not delinquent";
-}
-
-contract ManagerErrors is ManagerModifier {
-    string internal constant REWARD_TRANSFER = "RT";
-    string internal constant UNSUPPORTED_TOKEN = "UT";
-}
-
-contract OracleProxyErrors is Modifier {
-    string internal constant ZERO_PRICE = "price zero";
-}
-
-contract RequestProxyErrors is Modifier { }
-
-contract ManagerDataStorageErrors is ManagerModifier {
-    string internal constant NULL_ADDRESS = "err addr null";
-}
-
-// File: contracts/context/BlockContext.sol
-
-pragma solidity 0.6.12;
-
-/**
- * @title BiFi's BlockContext contract
- * @notice BiFi getter Contract for Block Context Information
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-contract BlockContext {
-    function _blockContext() internal view returns(uint256 context) {
-        // block number chain
-        context = block.number;
-
-        // block timestamp chain
-        // context = block.timestamp;
-    }
-}
-
-// File: contracts/marketHandler/marketHandlerDataStorage/MarketSIHandlerDataStorage.sol
-
-pragma solidity 0.6.12;
-
-/**
- * @title BiFi's market si handler data storage contract
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorageModifier, BlockContext {
+contract marketSIHandlerDataStorage is marketSIHandlerDataStorageInterface {
 	bool emergency;
 
 	address owner;
@@ -133,28 +46,22 @@ contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorag
 	uint256 betaRate;
 
 	modifier onlyOwner {
-		require(msg.sender == owner, ONLY_OWNER);
+		require(msg.sender == owner, "onlyOwner function");
 		_;
 	}
 
 	modifier onlySIHandler {
 		address msgSender = msg.sender;
-		require((msgSender == SIHandlerAddr) || (msgSender == owner), ONLY_SI_HANDLER);
+		require((msgSender == SIHandlerAddr) || (msgSender == owner), "onlySIHandler function");
 		_;
 	}
 
-	modifier circuitBreaker {
-		address msgSender = msg.sender;
-		require((!emergency) || (msgSender == owner), CIRCUIT_BREAKER);
-		_;
-	}
-
-	constructor (address _SIHandlerAddr) public
+	constructor (address _SIHandlerAddr) public 
 	{
 		owner = msg.sender;
 		SIHandlerAddr = _SIHandlerAddr;
 		betaRate = 5 * (10 ** 17);
-		marketRewardInfo.rewardLaneUpdateAt = _blockContext();
+		marketRewardInfo.rewardLaneUpdateAt = block.number;
 	}
 
 	function ownershipTransfer(address _owner) onlyOwner external returns (bool)
@@ -175,10 +82,9 @@ contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorag
 		return true;
 	}
 
-	function updateRewardPerBlockStorage(uint256 _rewardPerBlock) onlySIHandler circuitBreaker external override returns (bool)
+	function updateRewardPerBlockStorage(uint256 _rewardPerBlock) onlySIHandler external override returns (bool)
 	{
 		marketRewardInfo.rewardPerBlock = _rewardPerBlock;
-		return true;
 	}
 
 	function getSIHandlerAddr() public view returns (address)
@@ -199,7 +105,7 @@ contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorag
 		return (vars.rewardLane, vars.rewardLaneUpdateAt, vars.rewardPerBlock);
 	}
 
-	function setMarketRewardInfo(uint256 _rewardLane, uint256 _rewardLaneUpdateAt, uint256 _rewardPerBlock) onlySIHandler circuitBreaker external override returns (bool)
+	function setMarketRewardInfo(uint256 _rewardLane, uint256 _rewardLaneUpdateAt, uint256 _rewardPerBlock) onlySIHandler external override returns (bool)
 	{
 		MarketRewardInfo memory vars;
 		vars.rewardLane = _rewardLane;
@@ -215,7 +121,7 @@ contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorag
 		return (vars.rewardLane, vars.rewardLaneUpdateAt, vars.rewardAmount);
 	}
 
-	function setUserRewardInfo(address userAddr, uint256 _rewardLane, uint256 _rewardLaneUpdateAt, uint256 _rewardAmount) onlySIHandler circuitBreaker external override returns (bool)
+	function setUserRewardInfo(address userAddr, uint256 _rewardLane, uint256 _rewardLaneUpdateAt, uint256 _rewardAmount) onlySIHandler external override returns (bool)
 	{
 		UserRewardInfo memory vars;
 		vars.rewardLane = _rewardLane;

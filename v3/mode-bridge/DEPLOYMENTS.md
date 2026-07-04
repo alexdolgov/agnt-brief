@@ -1,6 +1,6 @@
 # mode-bridge — deployments
 
-121 verified deployment(s) across 73 component(s).
+122 verified deployment(s) across 74 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -105,6 +105,7 @@
 | mode | `0xb6260bb430a92cbad7701962d2be811d99e139fe` | SupraSValueFeedStorage | impl | unknown | no |
 | mode | `0xb8161f28a5a38ce58f155d9a96bdac0104985fac` | OssifiableProxy-2 | impl | unknown | no |
 | mode | `0xbdf38f9e6bdfcc23668c7464ce5afe899a358d52` | RsETHTokenWrapper | impl | unknown | no |
+| mode | `0xbe7777e4dc21e8c96c468eaae933d8d8c3d61f60` | ProxyAdmin-2 | impl | unknown | no |
 | mode | `0xc0ce92b23108cb4bdbf88788a3933546a85cd772` | FiatTokenV2_2 | impl | unknown | no |
 | mode | `0xc0f566304a44d27c40d4f81d629520ac4ed1850e` | PythAggregatorV3 | impl | unknown | no |
 | mode | `0xc42853c0c6624f42fcb8219aceb67ad188087dcb` | TransparentUpgradeableProxy | impl | unknown | no |
@@ -125,8 +126,3 @@
 | mode | `0xf27b1b121e55a13047d66dc4aaa8c17ba72c762a` | ERC20Bridged | impl | unknown | no |
 | mode | `0xf419234b27d0efb71d93d522804df370a4107be1` | OptimismMintableERC20 | impl | live | no |
 | mode | `0xf5a7135651f65c9ff03e365c33eec821b2dfdf10` | SuperchainIronclad | impl | unknown | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- mode `0xbe7777e4dc21e8c96c468eaae933d8d8c3d61f60`

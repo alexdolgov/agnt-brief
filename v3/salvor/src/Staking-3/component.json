@@ -1,0 +1,18 @@
+{
+  "component": "Staking-3",
+  "main_contract": "Staking",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9946e68490d71fe976951e360f295c4cf8531d00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

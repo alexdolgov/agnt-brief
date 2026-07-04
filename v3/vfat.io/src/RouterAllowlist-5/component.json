@@ -1,0 +1,26 @@
+{
+  "component": "RouterAllowlist-5",
+  "main_contract": "RouterAllowlist",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbe56530729e389d6d88c6f27cac315bb90152bf4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xab22e41e6e737a898bd2fcf036b3eb1d14816357",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

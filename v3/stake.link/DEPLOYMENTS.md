@@ -1,11 +1,13 @@
 # stake.link — deployments
 
-177 verified deployment(s) across 54 component(s).
+181 verified deployment(s) across 58 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x3106e2e148525b3db36795b04691d444c24972fb` | BurnMintERC677 | impl | live | no |
 | arbitrum | `0xdfea35757264f5b6c0ff21104151d9f991d0eec0` | BurnMintERC677 | impl | live | no |
+| base | `0xe5b64a705db9d2395c471af1608972ccbace26e6` | FactoryBurnMintERC20-2 | impl | live | no |
+| base | `0xf2f7901b7bba5799493b617b06ead1862f771297` | FactoryBurnMintERC20-3 | impl | live | no |
 | ethereum | `0x025ca436f644b61ded1bc9fcdb1f0b560b27bad1` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x02a0f6242c43a3cb59e58d5fa7acd9e79bba3aba` | SDLVesting | impl | live | yes |
 | ethereum | `0x03c1c19adb2009895422ead742a5e96a08b1ff94` | SDLVesting | impl | live | yes |
@@ -143,6 +145,7 @@
 | ethereum | `0xd2e7381d8d3fcc97c1b4d88761bdbc8dd26a0200` | FundFlowController | proxy | live | yes |
 | ethereum | `0xd6999c1dcb675ae5568931bb0cfca0c4f4fe21ca` | L1Strategy | impl | live | no |
 | ethereum | `0xd6dbdda416c10ae2b7acbe2d141c0e52b1802c59` | RewardsPoolWSD | impl | live | yes |
+| ethereum | `0xd7cf0e0fc12fb97e03841ce4f3086db327ce0f2b` | BurnMintERC677-2 | impl | inactive | no |
 | ethereum | `0xd9d1b5132ef63fc0e9056d063880e7b943ea2c6b` | Vesting | impl | live | no |
 | ethereum | `0xda669f2ea3a54150242965238392d351235b1c1f` | RebaseController | impl | live | yes |
 | ethereum | `0xda77b1a19850606d1f4faa0e200e035faa85fb15` | LINKMigrator | impl | live | yes |
@@ -177,15 +180,8 @@
 | polygon | `0x0f6c1f639c76b8461476da030e654f25ddfb6e84` | BurnMintERC20 | impl | live | no |
 | polygon | `0x1d0347c535c88cf6bb72df75aed34363edb4b2ae` | BurnMintERC20-2 | impl | live | no |
 | polygon | `0x282d9953b1c1e8d010de44bb98ed1ba9d8a52c54` | BurnMintERC20 | impl | live | no |
+| polygon | `0x48c5ca5de19a51083554cf58c6d9710c3d4b4122` | LockReleaseTokenPool-2 | impl | live | no |
 | polygon | `0x593722ed549a7fc69e60ce75b39924e38caba494` | BurnMintERC20 | impl | live | no |
 | polygon | `0xb4d2c033ea68674e56f6071b0d826d03152376db` | BurnMintTokenPool | impl | live | no |
 | polygon | `0xba754d80d0b417f62aeda94a82b6b72e4fd8f553` | BurnMintERC20 | impl | live | no |
 | polygon | `0xc271a17db5ce6f53745a3f466077ec816bc20a9c` | FactoryBurnMintERC20 | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0xe5b64a705db9d2395c471af1608972ccbace26e6`
-- base `0xf2f7901b7bba5799493b617b06ead1862f771297`
-- ethereum `0xd7cf0e0fc12fb97e03841ce4f3086db327ce0f2b`
-- polygon `0x48c5ca5de19a51083554cf58c6d9710c3d4b4122`

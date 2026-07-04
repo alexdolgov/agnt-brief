@@ -2,7 +2,7 @@
   "component": "BeaconProxy",
   "main_contract": "BeaconProxy",
   "source_file_count": 1,
-  "deployment_count": 11,
+  "deployment_count": 16,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -63,6 +63,38 @@
       "liveness": "live"
     },
     {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x230fb94b27da4e18f2eb6b66498ab3e9c860facd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xa467ad3929e8ffdfd955f32756ec8b1522274ef2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xd3da8d58de01c99d9bb971ca284b89a2bb60798a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xf510385f5d74256bc677fbba4e0e3079be245bd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "linea",
       "chain_id": 59144,
       "address": "0x140bd9a62ba84fbf78d9e3dd4a94fdafc999faf5",
@@ -84,6 +116,14 @@
       "address": "0x3cc7963fa503fe32053f177c444855a71068a839",
       "is_proxy": false,
       "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x4789d8066cac17fd24f24206a49abc72830604f1",
+      "is_proxy": true,
+      "implementation_address": "0x58270c41552bb2bef3dc4e103b6f0c226032f007",
       "liveness": "live"
     },
     {

@@ -1,0 +1,18 @@
+{
+  "component": "Size-7",
+  "main_contract": "Size",
+  "source_file_count": 122,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd0a29929328f7e9b5439fb33083d86a57eac3e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

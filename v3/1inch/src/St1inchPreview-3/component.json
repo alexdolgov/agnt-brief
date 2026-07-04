@@ -1,0 +1,18 @@
+{
+  "component": "St1inchPreview-3",
+  "main_contract": "St1inchPreview",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x722e140f1222d404916b8d0a8fd2f6233d446905",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

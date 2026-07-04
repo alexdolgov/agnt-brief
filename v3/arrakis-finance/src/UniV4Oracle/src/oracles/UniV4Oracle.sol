@@ -4,9 +4,6 @@ pragma solidity ^0.8.19;
 import {IOracleWrapper} from "../interfaces/IOracleWrapper.sol";
 import {IUniV4Oracle} from "../interfaces/IUniV4Oracle.sol";
 
-import {IUniV4StandardModule} from
-    "../interfaces/IUniV4StandardModule.sol";
-
 // #region uniswap v4.
 
 import {PoolKey} from "@uniswap/v4-core/src/types/PoolKey.sol";
@@ -30,84 +27,60 @@ import {
 
 import {IERC20Metadata} from
     "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import {Initializable} from
-    "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
 // #endregion openzeppelin.
 
-contract UniV4Oracle is
-    IOracleWrapper,
-    IUniV4Oracle,
-    Initializable
-{
+contract UniV4Oracle is IOracleWrapper, IUniV4Oracle {
     using StateLibrary for IPoolManager;
     using PoolIdLibrary for PoolKey;
 
     // #region immutables.
 
+    PoolId public immutable pool;
     address public immutable poolManager;
+    uint8 public immutable decimals0;
+    uint8 public immutable decimals1;
     bool public immutable isInversed;
 
     // #endregion immutables.
 
-    address public module;
-    uint8 internal _decimals0;
-    uint8 internal _decimals1;
-
     // #region constructor.
-    constructor(address poolManager_, bool isInversed_) {
+    constructor(
+        PoolKey memory poolKey_,
+        address poolManager_,
+        bool isInversed_
+    ) {
         if (poolManager_ == address(0)) {
             revert AddressZero();
         }
 
-        poolManager = poolManager_;
-        isInversed = isInversed_;
-    }
-    // #endregion constructor.
+        PoolId _pool = poolKey_.toId();
 
-    // #region initialize function.
+        (uint160 sqrtPriceX96,,,) =
+            IPoolManager(poolManager_).getSlot0(_pool);
 
-    function initialize(
-        address module_
-    ) external override initializer {
-        if (module_ == address(0)) {
-            revert AddressZero();
+        if (sqrtPriceX96 == 0) {
+            revert SqrtPriceZero();
         }
 
-        PoolKey memory poolKey;
-        (poolKey.currency0, poolKey.currency1,,,) =
-            IUniV4StandardModule(module_).poolKey();
+        pool = _pool;
+        poolManager = poolManager_;
 
-        module = module_;
-
-        if (CurrencyLibrary.isAddressZero(poolKey.currency0)) {
-            _decimals0 = 18;
+        if (CurrencyLibrary.isAddressZero(poolKey_.currency0)) {
+            decimals0 = 18;
         } else {
-            _decimals0 = IERC20Metadata(
-                Currency.unwrap(poolKey.currency0)
+            decimals0 = IERC20Metadata(
+                Currency.unwrap(poolKey_.currency0)
             ).decimals();
         }
 
-        _decimals1 = IERC20Metadata(Currency.unwrap(poolKey.currency1))
-            .decimals();
+        decimals1 = IERC20Metadata(
+            Currency.unwrap(poolKey_.currency1)
+        ).decimals();
+
+        isInversed = isInversed_;
     }
-
-    // #endregion initialize function.
-
-    function decimals0() external view returns (uint8) {
-        if (isInversed) {
-            return _decimals1;
-        }
-        return _decimals0;
-    }
-
-    function decimals1() external view returns (uint8) {
-        if (isInversed) {
-            return _decimals0;
-        }
-        return _decimals1;
-    }
-
+    // #endregion constructor.
 
     function getPrice0() external view returns (uint256 price0) {
         if (isInversed) {
@@ -126,24 +99,13 @@ contract UniV4Oracle is
     }
 
     function _getPrice0() internal view returns (uint256 price0) {
-        PoolKey memory poolKey;
-        (
-            poolKey.currency0,
-            poolKey.currency1,
-            poolKey.fee,
-            poolKey.tickSpacing,
-            poolKey.hooks
-        ) = IUniV4StandardModule(module).poolKey();
-
-        PoolId pool = poolKey.toId();
-
         (uint160 sqrtPriceX96,,,) =
             IPoolManager(poolManager).getSlot0(pool);
 
         if (sqrtPriceX96 <= type(uint128).max) {
             price0 = FullMath.mulDiv(
                 uint256(sqrtPriceX96) * uint256(sqrtPriceX96),
-                10 ** _decimals0,
+                10 ** decimals0,
                 2 ** 192
             );
         } else {
@@ -153,37 +115,26 @@ contract UniV4Oracle is
                     uint256(sqrtPriceX96),
                     1 << 64
                 ),
-                10 ** _decimals0,
+                10 ** decimals0,
                 1 << 128
             );
         }
     }
 
     function _getPrice1() internal view returns (uint256 price1) {
-        PoolKey memory poolKey;
-        (
-            poolKey.currency0,
-            poolKey.currency1,
-            poolKey.fee,
-            poolKey.tickSpacing,
-            poolKey.hooks
-        ) = IUniV4StandardModule(module).poolKey();
-
-        PoolId pool = poolKey.toId();
-
         (uint160 sqrtPriceX96,,,) =
             IPoolManager(poolManager).getSlot0(pool);
 
         if (sqrtPriceX96 <= type(uint128).max) {
             price1 = FullMath.mulDiv(
                 2 ** 192,
-                10 ** _decimals1,
+                10 ** decimals1,
                 uint256(sqrtPriceX96) * uint256(sqrtPriceX96)
             );
         } else {
             price1 = FullMath.mulDiv(
                 1 << 128,
-                10 ** _decimals1,
+                10 ** decimals1,
                 FullMath.mulDiv(
                     uint256(sqrtPriceX96),
                     uint256(sqrtPriceX96),

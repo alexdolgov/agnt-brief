@@ -1,15 +1,15 @@
 {
   "component": "MangroveOffer-5",
   "main_contract": "MangroveOffer",
-  "source_file_count": 30,
+  "source_file_count": 46,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1d7c32b43409ac66a9f5666daf674e2ef21427d0",
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x4476bdf5d97b2ba9604b3cf2104c0860823d7c60",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

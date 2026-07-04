@@ -1,0 +1,18 @@
+{
+  "component": "CustomSetOracle-5",
+  "main_contract": "CustomSetOracle",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x92c726da82389e0e9e81575960411bd6e8eae3ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

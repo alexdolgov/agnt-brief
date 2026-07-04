@@ -1,32 +1,45 @@
 # sector-finance — deployments
 
-83 verified deployment(s) across 19 component(s).
+97 verified deployment(s) across 30 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-1285 | `0x0517ca29c3948779cd61849a51dca85449fe3128` | ScionTimelock | impl | inactive | yes |
 | chain-1285 | `0x087932f702aa80bbec47875186702ec41fab5ada` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0x09fce40f017e0ac7551b49a372760ee474f5f1bc` | MasterChefCompMulti | impl | live | yes |
+| chain-1285 | `0x33c996f17a37fa323586017bf87c14247d9d3ee9` | ERC4626U-2 | impl | live | yes |
 | chain-1285 | `0x402b16adae502e5b5a49f4593face220ab0b6dfb` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0x615c884c42c3bca1b93d6e28f7d416916d9f4bf8` | HLPVault | impl | live | yes |
 | chain-1285 | `0x689c5e52ea6104b9632905d58a5fcf63e2ae3a4d` | MasterChefCompMulti | impl | live | yes |
-| chain-1285 | `0x7115f16c3db03056f67963ca48e227c3cde59363` | SectorTimelock | impl | live | yes |
+| chain-1285 | `0x710663be3ac476e3c8dc84a7e98316b7de239380` | ERC4626U-3 | impl | live | yes |
+| chain-1285 | `0x7115f16c3db03056f67963ca48e227c3cde59363` | SectorTimelock-2 | impl | live | yes |
 | chain-1285 | `0x813a1942d4be93e1b33764108b5273b4c8f6c739` | ScionVaultFactory | impl | live | no |
+| chain-1285 | `0x91c9b2e4e79b3f89ced5bf62fb5f2608362694b9` | ERC4626U | impl | live | yes |
+| chain-1285 | `0x92dbea6fa85a1cd839b604d1f2852abfb7fa2897` | UniUtils-2 | impl | live | yes |
 | chain-1285 | `0x94ea9337db519602ee42aa2238aa1927c96a6989` | USDCmovrSOLARwell | impl | live | no |
 | chain-1285 | `0x96b6a3e2048db602ffd71e5a2c7351673a77e1f6` | VaultUpgradable | impl | live | no |
 | chain-1285 | `0x97b4d169014c15e7a5890123992fa543086e6b51` | VaultUpgradable | impl | live | no |
+| chain-1285 | `0x97dd9a5a017f682bb0872f2f8a3b7aa6ff040b90` | UniUtils-3 | impl | live | yes |
+| chain-1285 | `0x995a364c5f949c900fa230333a0b4eb511e48cbf` | UniUtils-4 | impl | live | yes |
+| chain-1285 | `0x9ea78f462f4f2ef1ff2841772024d8fe1149dd76` | SectorBeacon-4 | impl | live | yes |
+| chain-1285 | `0xaa40216ce9f6b9baab726fbc83a184944a993b2a` | UpgradeableBeacon | impl | live | no |
 | chain-1285 | `0xaa47c9422fd5e12f1a364e659b593e1a10fc5436` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0xaa87f56c1fc6c7a82ebaee7f4a97176faa1bfe91` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0xb04adb86f205c92a21df891ac107b1c8890f9222` | USDCmovrSOLARwell | impl | live | no |
 | chain-1285 | `0xb2e0ff67be42a569f6b1f50a5a43e5fd0952e58a` | HLPVault | impl | live | yes |
 | chain-1285 | `0xbf84671e68ec305abe63a813c2abb1d0f9f32123` | USDCmovrSOLARwell | impl | live | no |
+| chain-1285 | `0xc85f25eb74eaa5ad74eb6d9e8bdf686089a156d5` | SectorFactory-2 | impl | live | yes |
+| chain-1285 | `0xccadd7a856a71375db47e32abc5c5fd5f6b00454` | SectorBeacon-5 | impl | live | yes |
+| chain-1285 | `0xcfe9710df9b8d95f1c503a70ac44a7d84d8c1f97` | ERC4626U-4 | impl | live | yes |
 | chain-1285 | `0xd40bd3bcb176314b4e929ace8ece1c081fe9fea2` | USDCmovrSOLARwell | impl | live | no |
-| chain-1285 | `0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2` | SectorBeacon-3 | impl | live | no |
+| chain-1285 | `0xd8f376dfae76bad02dcec4260795dfd5c9d200a9` | SectorBase | impl | live | yes |
+| chain-1285 | `0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2` | SectorBeacon-2 | impl | live | no |
 | chain-1285 | `0xdd1c16ef03a9269d44faaf13782f89ac356bd990` | VaultUpgradable | impl | inactive | no |
 | chain-1285 | `0xdfceb0c84ba7f3754c10336ffefeb4386a39587d` | USDCmovrSOLARwell | impl | live | no |
 | chain-1285 | `0xe206074595d33bd315aa436f3eb5159668ec8f8b` | USDCmovrSOLARwell | impl | live | no |
 | chain-1285 | `0xebd48b25b4f9fabbdf2ef734d22a3832230efa01` | ScionTimelock | impl | inactive | yes |
 | chain-1285 | `0xefce3bf365af5b99550f32042007f73ba36a25a7` | ScionTimelock | impl | live | yes |
+| chain-1285 | `0xefe2d26cf7479a43fc9bde7a33600a9fb8389f66` | SectorBeacon-2 | impl | live | no |
 | optimism | `0x00ca56477620b13c7b1d4d221aecd960ab697715` | IMX | impl | live | yes |
 | optimism | `0x0517ca29c3948779cd61849a51dca85449fe3128` | SectorRegistry | impl | live | yes |
 | optimism | `0x0bab493632e27325a3f6c02de14c04ba006abe3e` | IMX | impl | live | yes |
@@ -37,7 +50,7 @@
 | optimism | `0x2c7bba60bf6a8b6b042a3b43c9349345da7ad078` | IMXVault | impl | live | yes |
 | optimism | `0x339d70eae3a7ca14c515f5924dea4a2862d75a54` | IMXVault | impl | live | yes |
 | optimism | `0x36eeae644b247cb285f4c299c72e6a56bb50f2d6` | SectorBeacon | proxy | live | yes |
-| optimism | `0x39d1d72cf5a46176b0cf135720d5b56d0ccf402d` | SectorBeacon-2 | impl | live | no |
+| optimism | `0x39d1d72cf5a46176b0cf135720d5b56d0ccf402d` | SectorBeacon-3 | impl | live | no |
 | optimism | `0x402b16adae502e5b5a49f4593face220ab0b6dfb` | IMX | impl | live | yes |
 | optimism | `0x424ea8a23f9c45184799b75bf0b13ab2d0f8c414` | IMXVault | impl | live | yes |
 | optimism | `0x42ed2bd88bda5c7b03f454cbc9303e35a0c3c57d` | UniUtils | impl | live | yes |
@@ -75,6 +88,7 @@
 | optimism | `0xb93968f5da93ad1065abb614c93d5e2836950e6e` | IMX | impl | live | yes |
 | optimism | `0xbec463c31b463eace35aae233c5d0a386721a192` | SectorBeacon | impl | live | yes |
 | optimism | `0xc0d1bee2836528ad62c29753b900c39b278b609a` | IMX | impl | live | yes |
+| optimism | `0xc86faf9e55696f0079cd6b679292d0462f6798de` | SectorTimelock | impl | live | yes |
 | optimism | `0xcc2e880fcddc4fbde66fb573ef04c44fd04f130b` | UniUtils | impl | live | yes |
 | optimism | `0xdb613730c823f260a1a8ac2dcdd6b8b82b491919` | IMXVault | impl | live | yes |
 | optimism | `0xdbaf794ac3f2d5e90ff453332067f9f1a647c62a` | IMXVault | impl | live | yes |
@@ -88,22 +102,8 @@
 | optimism | `0xfd6f41d11e7e256a4157b1e44bcfa5f013ee1a38` | IMX | impl | live | yes |
 | optimism | `0xff44d03b6cf6a40bd1b6261150f3272243d569c9` | SectorBase | impl | live | yes |
 
-## Source unavailable (16)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- chain-1285 `0x33c996f17a37fa323586017bf87c14247d9d3ee9`
-- chain-1285 `0x710663be3ac476e3c8dc84a7e98316b7de239380`
-- chain-1285 `0x91c9b2e4e79b3f89ced5bf62fb5f2608362694b9`
-- chain-1285 `0x92dbea6fa85a1cd839b604d1f2852abfb7fa2897`
-- chain-1285 `0x97dd9a5a017f682bb0872f2f8a3b7aa6ff040b90`
-- chain-1285 `0x995a364c5f949c900fa230333a0b4eb511e48cbf`
-- chain-1285 `0x9ea78f462f4f2ef1ff2841772024d8fe1149dd76`
-- chain-1285 `0xaa40216ce9f6b9baab726fbc83a184944a993b2a`
-- chain-1285 `0xc85f25eb74eaa5ad74eb6d9e8bdf686089a156d5`
-- chain-1285 `0xccadd7a856a71375db47e32abc5c5fd5f6b00454`
-- chain-1285 `0xcfe9710df9b8d95f1c503a70ac44a7d84d8c1f97`
-- chain-1285 `0xd8f376dfae76bad02dcec4260795dfd5c9d200a9`
-- chain-1285 `0xefe2d26cf7479a43fc9bde7a33600a9fb8389f66`
 - optimism `0x84ac58149abdc777f732f6a464c1538ae2841903`
 - optimism `0x84b6a7f1f47056eb90ac641e76fb7c8d3cb46b4d`
-- optimism `0xc86faf9e55696f0079cd6b679292d0462f6798de`

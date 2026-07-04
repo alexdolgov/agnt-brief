@@ -1,0 +1,18 @@
+{
+  "component": "DShareFactory-3",
+  "main_contract": "DShareFactory",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x95bc50555c7dcc39e28d97be68070a200f053a96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

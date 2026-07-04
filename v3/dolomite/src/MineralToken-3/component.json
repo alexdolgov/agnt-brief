@@ -1,0 +1,18 @@
+{
+  "component": "MineralToken-3",
+  "main_contract": "MineralToken",
+  "source_file_count": 89,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd81bc90e4f329be8519cefe00b55bb1c327401ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

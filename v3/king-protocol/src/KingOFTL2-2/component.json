@@ -1,0 +1,28 @@
+{
+  "component": "KingOFTL2-2",
+  "main_contract": "KingOFTL2",
+  "source_file_count": 76,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/King-Protocol/king-cross-chain/blob/master/audit/NM_0452_King_Cross_Chain_FINAL.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x548c4116a97e0138f78000088ea3f155717b98ed",
+      "is_proxy": true,
+      "implementation_address": "0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0",
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

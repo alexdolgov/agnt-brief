@@ -1,13 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity =0.6.6;
 pragma experimental ABIEncoderV2;
-
-import "./BlastManager.sol";
-
 // Forked from Uniswap's UNI
 // Reference: https://etherscan.io/address/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984#code
 
-contract RingLiquidityToken is BlastManager {
+contract RingLiquidityToken {
     /// @notice EIP-20 token name for this token
     // solhint-disable-next-line const-name-snakecase
     string public constant name = "Ring.Exchange";

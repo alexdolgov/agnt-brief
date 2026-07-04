@@ -1,15 +1,12 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-06
-*/
+// File: contracts/interfaces/marketHandlerDataStorageInterface.sol
 
-// File: contracts/interfaces/IMarketHandlerDataStorage.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketHandlerDataStorage  {
+interface marketHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function setNewCustomer(address payable userAddr) external returns (bool);
@@ -108,6 +105,7 @@ interface IMarketHandlerDataStorage  {
 }
 
 // File: contracts/Errors.sol
+
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -163,32 +161,15 @@ contract ManagerDataStorageErrors is ManagerModifier {
     string internal constant NULL_ADDRESS = "err addr null";
 }
 
-// File: contracts/context/BlockContext.sol
-pragma solidity 0.6.12;
+// File: contracts/marketHandler/marketHandlerDataStorage/handlerDataStorage.sol
 
-/**
- * @title BiFi's BlockContext contract
- * @notice BiFi getter Contract for Block Context Information
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-contract BlockContext {
-    function _blockContext() internal view returns(uint256 context) {
-        // block number chain
-        // context = block.number;
-
-        // block timestamp chain
-        context = block.timestamp;
-    }
-}
-
-// File: contracts/marketHandler/marketHandlerDataStorage/MarketHandlerDataStorage.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market handler data storage contract
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-contract MarketHandlerDataStorage is IMarketHandlerDataStorage, HandlerDataStorageModifier, BlockContext {
+contract marketHandlerDataStorage is marketHandlerDataStorageInterface, HandlerDataStorageModifier {
 	address payable owner;
 
 	bool emergency = false;
@@ -589,7 +570,7 @@ contract MarketHandlerDataStorage is IMarketHandlerDataStorage, HandlerDataStora
 
 	function _initializeEXR() internal
 	{
-		uint256 currectBlockNumber = _blockContext();
+		uint256 currectBlockNumber = block.number;
 		actionDepositEXR = unifiedPoint;
 		actionBorrowEXR = unifiedPoint;
 		globalDepositEXR = unifiedPoint;
@@ -755,11 +736,10 @@ contract MarketHandlerDataStorage is IMarketHandlerDataStorage, HandlerDataStora
 }
 
 // File: contracts/truffleKit/marketHandlerSide/marketHandlerDataStorages.sol
-// SPDX-License-Identifier: BSD-3-Clause
 
 pragma solidity 0.6.12;
 
-contract EtherHandlerDataStorage is MarketHandlerDataStorage {
+contract EtherHandlerDataStorage is marketHandlerDataStorage {
     constructor (uint256 _borrowLimit, uint256 _marginCallLimit, uint256 _minimumInterestRate, uint256 _liquiditySensitivity)
-    MarketHandlerDataStorage(_borrowLimit, _marginCallLimit, _minimumInterestRate, _liquiditySensitivity) public {}
+    marketHandlerDataStorage(_borrowLimit, _marginCallLimit, _minimumInterestRate, _liquiditySensitivity) public {}
 }

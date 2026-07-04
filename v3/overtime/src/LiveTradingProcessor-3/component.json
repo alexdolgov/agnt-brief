@@ -1,0 +1,26 @@
+{
+  "component": "LiveTradingProcessor-3",
+  "main_contract": "LiveTradingProcessor",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x545a692f97e4ed43ea76d7a95d2533e4903082c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xefbbefdb969df1e2e3038a24241043fe78dc370c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,17 +1,39 @@
 {
   "component": "KUMAAccessController",
   "main_contract": "KUMAAccessController",
-  "source_file_count": 11,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/code-423n4/2023-02-kuma"
-  ],
+  "source_file_count": 9,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5fad6f80312aee6f19784a7fc359f90d441163de",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfe72616cbaec279a658f1c3bc3c1aa964aa42a54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x85dd3aec1ae4fa5fb495980cbf9fd3e8423be78f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xad5c32d6e67d95e460206b7268168c073974ad6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb9cee0c302ef2844ef78f41800ce73c13b6a52ae",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,50 @@
+{
+  "component": "StakingDHV-2",
+  "main_contract": "StakingDHV",
+  "source_file_count": 1,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x35f28aa0b2f34eff17d2830135312ab2a777de36",
+      "is_proxy": true,
+      "implementation_address": "0x10617450573c64d87df65476ba2f85e15a764cfa",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3dc97bffad8f87e63905b946bea715a6a311206e",
+      "is_proxy": true,
+      "implementation_address": "0xf979165d6b75d295d93fa6d192608434490d894e",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x589ea336092184d9ed74b8263c4eeca73ed0ce7a",
+      "is_proxy": true,
+      "implementation_address": "0x039c5211fdc5d5210218558883e0f0303425951d",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5dd69ed0209b59280c3c997d0b4eb461156bdf15",
+      "is_proxy": true,
+      "implementation_address": "0x6424732bd7672fcc0da37d1e70a38a3c8ac5f807",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe45713a2d7d87bd7a55d84da55aeb9ec21067870",
+      "is_proxy": true,
+      "implementation_address": "0xb32e05f11b01a31516bfcddfe5abf52564c6dfe3",
+      "liveness": "inactive"
+    }
+  ]
+}

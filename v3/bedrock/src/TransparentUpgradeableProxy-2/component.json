@@ -1,36 +1,58 @@
 {
   "component": "TransparentUpgradeableProxy-2",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 10,
-  "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf"
-  ],
+  "source_file_count": 1,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
-      "is_proxy": true,
-      "implementation_address": "0xe0e6a124d500be28bbdc47e6123e68b23b039cad",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x20d70277afc6e1304b89fc1a30d84130f1634510",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3376ebca0a85fc8d791b1001a571c41fdd61514a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd8b81b8950981efba4c00eed567f903580a6649c",
-      "is_proxy": true,
-      "implementation_address": "0x20d70277afc6e1304b89fc1a30d84130f1634510",
-      "liveness": "live"
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x552b0c6688fcae5cf0164f27fd129b882a42fa05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa161132371c94299d215915d4cbc3b629e2059be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd3c8da379d71a33bfee8875f87ac2748beb1d58d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdfc7d2d003a053b2e0490531e9317a59962b511e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

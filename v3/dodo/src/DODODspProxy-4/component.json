@@ -1,0 +1,18 @@
+{
+  "component": "DODODspProxy-4",
+  "main_contract": "DODODspProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5245f5e66792cfbacb64efaef3121e7c5ccd879b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

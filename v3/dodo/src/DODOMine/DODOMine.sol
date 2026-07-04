@@ -10,6 +10,7 @@
 pragma solidity 0.6.9;
 pragma experimental ABIEncoderV2;
 
+
 /**
  * @title Ownable
  * @author DODO Breeder
@@ -41,6 +42,7 @@ contract Ownable {
     }
 
     function transferOwnership(address newOwner) external onlyOwner {
+        require(newOwner != address(0), "INVALID_OWNER");
         emit OwnershipTransferPrepared(_OWNER_, newOwner);
         _NEW_OWNER_ = newOwner;
     }
@@ -53,7 +55,14 @@ contract Ownable {
     }
 }
 
+
 // File: contracts/lib/SafeMath.sol
+
+/*
+
+    Copyright 2020 DODO ZOO.
+
+*/
 
 /**
  * @title SafeMath
@@ -109,7 +118,14 @@ library SafeMath {
     }
 }
 
+
 // File: contracts/lib/DecimalMath.sol
+
+/*
+
+    Copyright 2020 DODO ZOO.
+
+*/
 
 /**
  * @title DecimalMath
@@ -120,36 +136,29 @@ library SafeMath {
 library DecimalMath {
     using SafeMath for uint256;
 
-    uint256 internal constant ONE = 10**18;
-    uint256 internal constant ONE2 = 10**36;
+    uint256 constant ONE = 10**18;
 
-    function mulFloor(uint256 target, uint256 d) internal pure returns (uint256) {
-        return target.mul(d) / (10**18);
+    function mul(uint256 target, uint256 d) internal pure returns (uint256) {
+        return target.mul(d) / ONE;
     }
 
     function mulCeil(uint256 target, uint256 d) internal pure returns (uint256) {
-        return target.mul(d).divCeil(10**18);
+        return target.mul(d).divCeil(ONE);
     }
 
     function divFloor(uint256 target, uint256 d) internal pure returns (uint256) {
-        return target.mul(10**18).div(d);
+        return target.mul(ONE).div(d);
     }
 
     function divCeil(uint256 target, uint256 d) internal pure returns (uint256) {
-        return target.mul(10**18).divCeil(d);
-    }
-
-    function reciprocalFloor(uint256 target) internal pure returns (uint256) {
-        return uint256(10**36).div(target);
-    }
-
-    function reciprocalCeil(uint256 target) internal pure returns (uint256) {
-        return uint256(10**36).divCeil(target);
+        return target.mul(ONE).divCeil(d);
     }
 }
 
+
 // File: contracts/intf/IERC20.sol
 
+// This is a file copied from https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -163,8 +172,6 @@ interface IERC20 {
     function decimals() external view returns (uint8);
 
     function name() external view returns (string memory);
-
-    function symbol() external view returns (string memory);
 
     /**
      * @dev Returns the amount of tokens owned by `account`.
@@ -221,7 +228,15 @@ interface IERC20 {
     ) external returns (bool);
 }
 
+
 // File: contracts/lib/SafeERC20.sol
+
+/*
+
+    Copyright 2020 DODO ZOO.
+    This is a simplified version of OpenZepplin's SafeERC20 library
+
+*/
 
 /**
  * @title SafeERC20
@@ -299,9 +314,14 @@ library SafeERC20 {
     }
 }
 
-// File: contracts/DODOToken/DODORewardVault.sol
 
+// File: contracts/token/DODORewardVault.sol
 
+/*
+
+    Copyright 2020 DODO ZOO.
+
+*/
 
 interface IDODORewardVault {
     function reward(address to, uint256 amount) external;
@@ -322,7 +342,14 @@ contract DODORewardVault is Ownable {
     }
 }
 
-// File: contracts/DODOToken/DODOMine.sol
+
+// File: contracts/token/DODOMine.sol
+
+/*
+
+    Copyright 2020 DODO ZOO.
+
+*/
 
 contract DODOMine is Ownable {
     using SafeMath for uint256;
@@ -465,7 +492,7 @@ contract DODOMine is Ownable {
                 .div(totalAllocPoint);
             accDODOPerShare = accDODOPerShare.add(DecimalMath.divFloor(DODOReward, lpSupply));
         }
-        return DecimalMath.mulFloor(user.amount, accDODOPerShare).sub(user.rewardDebt);
+        return DecimalMath.mul(user.amount, accDODOPerShare).sub(user.rewardDebt);
     }
 
     function getAllPendingReward(address _user) external view returns (uint256) {
@@ -489,7 +516,7 @@ contract DODOMine is Ownable {
                 accDODOPerShare = accDODOPerShare.add(DecimalMath.divFloor(DODOReward, lpSupply));
             }
             totalReward = totalReward.add(
-                DecimalMath.mulFloor(user.amount, accDODOPerShare).sub(user.rewardDebt)
+                DecimalMath.mul(user.amount, accDODOPerShare).sub(user.rewardDebt)
             );
         }
         return totalReward;
@@ -545,14 +572,14 @@ contract DODOMine is Ownable {
         UserInfo storage user = userInfo[pid][msg.sender];
         updatePool(pid);
         if (user.amount > 0) {
-            uint256 pending = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare).sub(
+            uint256 pending = DecimalMath.mul(user.amount, pool.accDODOPerShare).sub(
                 user.rewardDebt
             );
             safeDODOTransfer(msg.sender, pending);
         }
         IERC20(pool.lpToken).safeTransferFrom(address(msg.sender), address(this), _amount);
         user.amount = user.amount.add(_amount);
-        user.rewardDebt = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare);
+        user.rewardDebt = DecimalMath.mul(user.amount, pool.accDODOPerShare);
         emit Deposit(msg.sender, pid, _amount);
     }
 
@@ -562,12 +589,10 @@ contract DODOMine is Ownable {
         UserInfo storage user = userInfo[pid][msg.sender];
         require(user.amount >= _amount, "withdraw too much");
         updatePool(pid);
-        uint256 pending = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare).sub(
-            user.rewardDebt
-        );
+        uint256 pending = DecimalMath.mul(user.amount, pool.accDODOPerShare).sub(user.rewardDebt);
         safeDODOTransfer(msg.sender, pending);
         user.amount = user.amount.sub(_amount);
-        user.rewardDebt = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare);
+        user.rewardDebt = DecimalMath.mul(user.amount, pool.accDODOPerShare);
         IERC20(pool.lpToken).safeTransfer(address(msg.sender), _amount);
         emit Withdraw(msg.sender, pid, _amount);
     }
@@ -595,10 +620,8 @@ contract DODOMine is Ownable {
         PoolInfo storage pool = poolInfos[pid];
         UserInfo storage user = userInfo[pid][msg.sender];
         updatePool(pid);
-        uint256 pending = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare).sub(
-            user.rewardDebt
-        );
-        user.rewardDebt = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare);
+        uint256 pending = DecimalMath.mul(user.amount, pool.accDODOPerShare).sub(user.rewardDebt);
+        user.rewardDebt = DecimalMath.mul(user.amount, pool.accDODOPerShare);
         safeDODOTransfer(msg.sender, pending);
     }
 
@@ -613,14 +636,14 @@ contract DODOMine is Ownable {
             UserInfo storage user = userInfo[pid][msg.sender];
             updatePool(pid);
             pending = pending.add(
-                DecimalMath.mulFloor(user.amount, pool.accDODOPerShare).sub(user.rewardDebt)
+                DecimalMath.mul(user.amount, pool.accDODOPerShare).sub(user.rewardDebt)
             );
-            user.rewardDebt = DecimalMath.mulFloor(user.amount, pool.accDODOPerShare);
+            user.rewardDebt = DecimalMath.mul(user.amount, pool.accDODOPerShare);
         }
         safeDODOTransfer(msg.sender, pending);
     }
 
-    // Safe DODO transfer function
+    // Safe DODO transfer function, just in case if rounding error causes pool to not have enough DODOs.
     function safeDODOTransfer(address _to, uint256 _amount) internal {
         IDODORewardVault(dodoRewardVault).reward(_to, _amount);
         realizedReward[_to] = realizedReward[_to].add(_amount);

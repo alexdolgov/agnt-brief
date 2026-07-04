@@ -1,14 +1,56 @@
 {
   "component": "MCV2_Token",
   "main_contract": "MCV2_Token",
-  "source_file_count": 8,
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 6,
+  "deployment_count": 6,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf"
+  ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xff45161474c39cb00699070dd49582e417b57a7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
       "is_proxy": false,
       "implementation_address": null,

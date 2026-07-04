@@ -1,0 +1,18 @@
+{
+  "component": "BackingRootOracle-7",
+  "main_contract": "BackingRootOracle",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x47cabfe7c68dc09b1e26ac62655664295481ed2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

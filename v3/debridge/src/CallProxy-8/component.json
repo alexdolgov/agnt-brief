@@ -1,0 +1,34 @@
+{
+  "component": "CallProxy-8",
+  "main_contract": "CallProxy",
+  "source_file_count": 13,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd5317e82bfeff70b4773f0fcab5e2abfa3c7d63b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd5317e82bfeff70b4773f0fcab5e2abfa3c7d63b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd5317e82bfeff70b4773f0fcab5e2abfa3c7d63b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

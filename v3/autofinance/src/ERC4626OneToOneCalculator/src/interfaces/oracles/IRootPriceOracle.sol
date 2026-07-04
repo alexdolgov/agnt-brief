@@ -16,20 +16,14 @@ interface IRootPriceOracle {
     /// @param token token to get the spot price of
     /// @param pool liquidity pool to be used for price determination
     /// @return price the spot price of the token in ETH based on the provided pool
-    function getSpotPriceInEth(
-        address token,
-        address pool
-    ) external returns (uint256);
+    function getSpotPriceInEth(address token, address pool) external returns (uint256);
 
     /// @notice Returns a price for base token in quote token.
     /// @dev Requires both tokens to be registered.
     /// @param base Address of base token.
     /// @param quote Address of quote token.
     /// @return price Price of the base token in quote token.
-    function getPriceInQuote(
-        address base,
-        address quote
-    ) external returns (uint256 price);
+    function getPriceInQuote(address base, address quote) external returns (uint256 price);
 
     /// @notice Retrieve the price of LP token based on the reserves
     /// @param lpToken LP token to get the price of
@@ -56,15 +50,7 @@ interface IRootPriceOracle {
         bool ceiling
     ) external returns (uint256 floorOrCeilingPerLpToken);
 
-    function getFloorPrice(
-        address,
-        address,
-        address
-    ) external returns (uint256 price);
+    function getFloorPrice(address, address, address) external returns (uint256 price);
 
-    function getCeilingPrice(
-        address,
-        address,
-        address
-    ) external returns (uint256 price);
+    function getCeilingPrice(address, address, address) external returns (uint256 price);
 }

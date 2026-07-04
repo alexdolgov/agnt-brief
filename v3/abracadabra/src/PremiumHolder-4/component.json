@@ -1,0 +1,18 @@
+{
+  "component": "PremiumHolder-4",
+  "main_contract": "PremiumHolder",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbc500378194e14e2dec7f2dda2e2f4618f4b4220",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

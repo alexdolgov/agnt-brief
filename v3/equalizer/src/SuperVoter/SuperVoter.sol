@@ -181,6 +181,9 @@ contract ReentrancyGuarded {
 	/// @dev counter to allow mutex lock with only one SSTORE operation
 	uint256 public interactions;
 
+	bool public paused;
+	address public pauser;
+
 	/**
 	/// constructor is useless in our initializable pattern.
 	/// we set it up in the outermost initialization
@@ -191,6 +194,16 @@ contract ReentrancyGuarded {
 	}
 	**/
 
+	function setPaused(bool p) external {
+		require(!p==paused && msg.sender == pauser,"!P");
+		paused = p;
+	}
+
+	function setPauser(address p) external {
+		require(msg.sender == pauser,"!P");
+		pauser = p;
+	}
+
 	/**
 	 * @dev Prevents a contract from calling itself, directly or indirectly.
 	 * Calling a `Guarded` function from another `Guarded`
@@ -199,6 +212,7 @@ contract ReentrancyGuarded {
 	 * `private` function that does the actual work.
 	 */
 	modifier Guarded() {
+		require(!paused,"P||");
 		require(interactions % 2 == 0,"RG!");
 		interactions += 1;
 		uint256 localCounter = interactions;
@@ -210,8 +224,6 @@ contract ReentrancyGuarded {
 
 contract SuperVoter is ReentrancyGuarded {
 
-	bool public paused;
-	address public immutable pauser;
 	IVoter public immutable VOTER;
 	IVE public immutable VE;
 	mapping(address => address) public managerOf;
@@ -224,12 +236,7 @@ contract SuperVoter is ReentrancyGuarded {
 		VE = IVE(VOTER._ve());
 	}
 
-	function setPaused(bool p) external {
-		require(!p==paused && msg.sender == pauser,"!P");
-		paused = p;
-	}
-
-	function setManager(address _man) external {
+	function setManager(address _man) external Guarded {
 		managerOf[ msg.sender ] = _man;
 		emit ManagerSet(msg.sender, _man, block.timestamp);
 	}

@@ -1,15 +1,15 @@
 {
   "component": "MangroveDiaOracleFactory-2",
   "main_contract": "MangroveDiaOracleFactory",
-  "source_file_count": 61,
+  "source_file_count": 67,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0cf19437dc140308d8f87fb824c61c9b9fdd87a3",
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x035d53d54aef1815e882fea7ef4795de214518a1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,7 +1,7 @@
 {
   "component": "ERC20Mine-2",
   "main_contract": "ERC20Mine",
-  "source_file_count": 1,
+  "source_file_count": 3,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x322b43e406d1b4df9bc36d058317dd1cd3b0385f",
+      "address": "0x1322315622bf090e0c20f82ab1351f6f6db6a630",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

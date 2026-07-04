@@ -1,17 +1,19 @@
 {
   "component": "TransparentUpgradeableProxy-19",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 10,
+  "source_file_count": 12,
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xb7019c9184580b2e1f66fcdc3eb6c62621732064",
+      "address": "0x1419b48e5c1f5ce413cf02d6dcbe1314170e3386",
       "is_proxy": true,
-      "implementation_address": "0x2ece4e4a49ca13ea2bef60bfe6e347a06c3b06eb",
+      "implementation_address": "0xc7d81a22b384e4bbe6cc3a860e246501728334c7",
       "liveness": "live"
     }
   ]

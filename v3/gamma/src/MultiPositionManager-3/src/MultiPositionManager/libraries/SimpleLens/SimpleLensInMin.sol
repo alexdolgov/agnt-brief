@@ -21,7 +21,6 @@ import {PoolManagerUtils} from "../PoolManagerUtils.sol";
 import {RebalanceLogic} from "../RebalanceLogic.sol";
 import {WithdrawLogic} from "../WithdrawLogic.sol";
 import {PositionLogic} from "../PositionLogic.sol";
-import {LiquidityAmountsCapped} from "../LiquidityAmountsCapped.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 library SimpleLensInMin {
@@ -381,8 +380,14 @@ library SimpleLensInMin {
 
         // Block 3: Prepare density params
         {
-            int24 resolvedCenterTick =
-                RebalanceLogic.resolveAndClampCenterTick(params.centerTick, calcData.currentTick, calcData.tickSpacing);
+            int24 resolvedCenterTick = params.centerTick;
+            if (params.centerTick == type(int24).max) {
+                int24 compressed = calcData.currentTick / calcData.tickSpacing;
+                if (calcData.currentTick < 0 && calcData.currentTick % calcData.tickSpacing != 0) {
+                    compressed--;
+                }
+                resolvedCenterTick = compressed * calcData.tickSpacing;
+            }
 
             // For proportional weights, calculate from post-swap amounts (matches RebalanceLogic behavior)
             // When swap=true, amounts are already post-swap. When swap=false, amounts are current.
@@ -538,7 +543,7 @@ library SimpleLensInMin {
             uint160 sqrtPriceUpper = TickMath.getSqrtPriceAtTick(upperTicks[i]);
 
             // 2. Get liquidity that will be minted (constraining factor)
-            uint128 liquidity = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+            uint128 liquidity = LiquidityAmounts.getLiquidityForAmounts(
                 sqrtPriceX96, sqrtPriceLower, sqrtPriceUpper, data.token0Allocations[i], data.token1Allocations[i]
             );
 
@@ -604,9 +609,16 @@ library SimpleLensInMin {
         uint160 sqrtPriceX96,
         int24 currentTick
     ) private view returns (uint256 weight0, uint256 weight1) {
-        // Resolve center tick exactly like on-chain rebalance (floor-snap + clamp).
-        int24 centerTick =
-            RebalanceLogic.resolveAndClampCenterTick(params.centerTick, currentTick, poolKey.tickSpacing);
+        // Get resolved center tick
+        int24 centerTick = params.centerTick;
+        if (params.centerTick == type(int24).max) {
+            int24 tickSpacing = poolKey.tickSpacing;
+            int24 compressed = currentTick / tickSpacing;
+            if (currentTick < 0 && currentTick % tickSpacing != 0) {
+                compressed--;
+            }
+            centerTick = compressed * tickSpacing;
+        }
 
         // Calculate target weights from strategy (not from current amounts)
         weight0 = params.weight0;
@@ -884,7 +896,16 @@ library SimpleLensInMin {
     {
         (sqrtPriceX96, currentTick,,) = poolManager.getSlot0(poolKey.toId());
 
-        resolvedCenter = RebalanceLogic.resolveAndClampCenterTick(centerTick, currentTick, poolKey.tickSpacing);
+        // Resolve center tick
+        resolvedCenter = centerTick;
+        if (centerTick == type(int24).max) {
+            int24 tickSpacing = poolKey.tickSpacing;
+            int24 compressed = currentTick / tickSpacing;
+            if (currentTick < 0 && currentTick % tickSpacing != 0) {
+                compressed--;
+            }
+            resolvedCenter = compressed * tickSpacing;
+        }
 
         return (sqrtPriceX96, currentTick, resolvedCenter);
     }
@@ -1089,7 +1110,7 @@ library SimpleLensInMin {
 
             // Lower limit (below current tick) gets remainder token1
             if (lowerLimit.lowerTick != lowerLimit.upperTick && remainderToken1 > 0) {
-                allLiquidities[baseRanges.length] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length] = LiquidityAmounts.getLiquidityForAmounts(
                     ctx.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(lowerLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(lowerLimit.upperTick),
@@ -1102,7 +1123,7 @@ library SimpleLensInMin {
 
             // Upper limit (above current tick) gets remainder token0
             if (upperLimit.lowerTick != upperLimit.upperTick && remainderToken0 > 0) {
-                allLiquidities[baseRanges.length + 1] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length + 1] = LiquidityAmounts.getLiquidityForAmounts(
                     ctx.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(upperLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(upperLimit.upperTick),
@@ -1373,7 +1394,7 @@ library SimpleLensInMin {
 
             // Lower limit (below current tick) gets remainder token1
             if (lowerLimit.lowerTick != lowerLimit.upperTick && remainderToken1 > 0) {
-                allLiquidities[baseRanges.length] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length] = LiquidityAmounts.getLiquidityForAmounts(
                     params.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(lowerLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(lowerLimit.upperTick),
@@ -1386,7 +1407,7 @@ library SimpleLensInMin {
 
             // Upper limit (above current tick) gets remainder token0
             if (upperLimit.lowerTick != upperLimit.upperTick && remainderToken0 > 0) {
-                allLiquidities[baseRanges.length + 1] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length + 1] = LiquidityAmounts.getLiquidityForAmounts(
                     params.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(upperLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(upperLimit.upperTick),

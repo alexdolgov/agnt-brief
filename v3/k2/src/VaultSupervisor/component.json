@@ -1,15 +1,23 @@
 {
   "component": "VaultSupervisor",
   "main_contract": "VaultSupervisor",
-  "source_file_count": 41,
-  "deployment_count": 1,
+  "source_file_count": 43,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x210cafd20672ca2bd98ccd4b9ec52fbe1877292c",
+      "address": "0x7cc94305fb1d0b3cf9a3e7e1c77acb3454a39d0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf29ef36046689a23193cb9d82bafd6a95ebee457",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

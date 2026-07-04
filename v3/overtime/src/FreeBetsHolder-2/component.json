@@ -1,0 +1,26 @@
+{
+  "component": "FreeBetsHolder-2",
+  "main_contract": "FreeBetsHolder",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0a713b8282b01e95b73fe9aed43157863d70e823",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x12e6c6233ab1cf850c624939adb17d2b4b8f5961",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

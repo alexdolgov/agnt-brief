@@ -18,7 +18,6 @@ pragma experimental ABIEncoderV2;
 import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
 import "@balancer-labs/v2-interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
 import "@balancer-labs/v2-interfaces/contracts/pool-stable/StablePoolUserData.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/BasePoolUserData.sol";
 
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/VaultHelpers.sol";
@@ -32,10 +31,7 @@ import "./IBaseRelayerLibrary.sol";
  * @dev Since the relayer is not expected to hold user funds, we expect the user to be the recipient of any token
  * transfers from the Vault.
  *
- * All functions must be payable so they can be called from a multicall involving ETH.
- *
- * Note that this is a base contract for VaultQueryActions. Any functions that should not be called in a query context
- * (e.g., `manageUserBalance`), should be virtual here, and overridden to revert in VaultQueryActions.
+ * All functions must be payable so they can be called from a multicall involving ETH
  */
 abstract contract VaultActions is IBaseRelayerLibrary {
     using Math for uint256;
@@ -66,14 +62,14 @@ abstract contract VaultActions is IBaseRelayerLibrary {
         uint256 deadline,
         uint256 value,
         uint256 outputReference
-    ) external payable virtual returns (uint256 result) {
+    ) external payable {
         require(funds.sender == msg.sender || funds.sender == address(this), "Incorrect sender");
 
         if (_isChainedReference(singleSwap.amount)) {
             singleSwap.amount = _getChainedReferenceValue(singleSwap.amount);
         }
 
-        result = getVault().swap{ value: value }(singleSwap, funds, limit, deadline);
+        uint256 result = getVault().swap{ value: value }(singleSwap, funds, limit, deadline);
 
         if (_isChainedReference(outputReference)) {
             _setChainedReferenceValue(outputReference, result);
@@ -89,7 +85,7 @@ abstract contract VaultActions is IBaseRelayerLibrary {
         uint256 deadline,
         uint256 value,
         OutputReference[] calldata outputReferences
-    ) external payable virtual returns (int256[] memory results) {
+    ) external payable {
         require(funds.sender == msg.sender || funds.sender == address(this), "Incorrect sender");
 
         for (uint256 i = 0; i < swaps.length; ++i) {
@@ -99,7 +95,7 @@ abstract contract VaultActions is IBaseRelayerLibrary {
             }
         }
 
-        results = getVault().batchSwap{ value: value }(kind, swaps, assets, funds, limits, deadline);
+        int256[] memory results = getVault().batchSwap{ value: value }(kind, swaps, assets, funds, limits, deadline);
 
         for (uint256 i = 0; i < outputReferences.length; ++i) {
             require(_isChainedReference(outputReferences[i].key), "invalid chained reference");
@@ -117,7 +113,7 @@ abstract contract VaultActions is IBaseRelayerLibrary {
         IVault.UserBalanceOp[] memory ops,
         uint256 value,
         OutputReference[] calldata outputReferences
-    ) external payable virtual {
+    ) external payable {
         for (uint256 i = 0; i < ops.length; i++) {
             require(ops[i].sender == msg.sender || ops[i].sender == address(this), "Incorrect sender");
 
@@ -148,7 +144,7 @@ abstract contract VaultActions is IBaseRelayerLibrary {
         IVault.JoinPoolRequest memory request,
         uint256 value,
         uint256 outputReference
-    ) external payable virtual {
+    ) external payable {
         require(sender == msg.sender || sender == address(this), "Incorrect sender");
 
         // The output of a join will be the Pool's token contract, typically known as BPT (Balancer Pool Tokens).
@@ -175,7 +171,7 @@ abstract contract VaultActions is IBaseRelayerLibrary {
      * references as necessary.
      */
     function _doJoinPoolChainedReferenceReplacements(PoolKind kind, bytes memory userData)
-        internal
+        private
         returns (bytes memory)
     {
         if (kind == PoolKind.WEIGHTED) {
@@ -264,7 +260,7 @@ abstract contract VaultActions is IBaseRelayerLibrary {
         address payable recipient,
         IVault.ExitPoolRequest memory request,
         OutputReference[] calldata outputReferences
-    ) external payable virtual {
+    ) external payable {
         require(sender == msg.sender || sender == address(this), "Incorrect sender");
 
         // To track the changes of internal balances, we need an array of token addresses.
@@ -318,14 +314,10 @@ abstract contract VaultActions is IBaseRelayerLibrary {
      * references as necessary.
      */
     function _doExitPoolChainedReferenceReplacements(PoolKind kind, bytes memory userData)
-        internal
+        private
         returns (bytes memory)
     {
-        // Must check for the recovery mode ExitKind first, which is common to all pool types.
-        // If it is just a regular exit, pass it to the appropriate PoolKind handler for interpretation.
-        if (BasePoolUserData.isRecoveryModeExitKind(userData)) {
-            return _doRecoveryExitReplacements(userData);
-        } else if (kind == PoolKind.WEIGHTED) {
+        if (kind == PoolKind.WEIGHTED) {
             return _doWeightedExitChainedReferenceReplacements(userData);
         } else {
             if (kind == PoolKind.LEGACY_STABLE) {
@@ -372,18 +364,6 @@ abstract contract VaultActions is IBaseRelayerLibrary {
         if (_isChainedReference(bptAmountIn)) {
             bptAmountIn = _getChainedReferenceValue(bptAmountIn);
             return abi.encode(WeightedPoolUserData.ExitKind.EXACT_BPT_IN_FOR_TOKENS_OUT, bptAmountIn);
-        } else {
-            // Save gas by only re-encoding the data if we actually performed a replacement
-            return userData;
-        }
-    }
-
-    function _doRecoveryExitReplacements(bytes memory userData) private returns (bytes memory) {
-        uint256 bptAmountIn = BasePoolUserData.recoveryModeExit(userData);
-
-        if (_isChainedReference(bptAmountIn)) {
-            bptAmountIn = _getChainedReferenceValue(bptAmountIn);
-            return abi.encode(BasePoolUserData.RECOVERY_MODE_EXIT_KIND, bptAmountIn);
         } else {
             // Save gas by only re-encoding the data if we actually performed a replacement
             return userData;

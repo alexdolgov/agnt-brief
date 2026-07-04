@@ -1,305 +1,192 @@
-# @version 0.2.7
+# @version ^0.2.0
 """
-@title Synth Burner
-@notice Converts BTC denominated coins to USDC and transfers to `UnderlyingBurner`
+@title Curve LP Token
+@author Curve.Fi
+@notice Base implementation for an LP token provided for
+        supplying liquidity to `StableSwap`
+@dev Follows the ERC-20 token standard as defined at
+     https://eips.ethereum.org/EIPS/eip-20
 """
 
 from vyper.interfaces import ERC20
 
+implements: ERC20
 
-interface AddressProvider:
-    def get_registry() -> address: view
-    def get_address(_id: uint256) -> address: view
-
-interface Registry:
-    def find_pool_for_coins(_from: address, _to: address) -> address: view
-
-interface RegistrySwap:
-    def exchange_with_best_rate(
-        _from: address,
-        _to: address,
-        _amount: uint256,
-        _expected: uint256,
-        _receiver: address,
-    ) -> uint256: payable
-
-interface Synthetix:
-    def exchange(
-        sourceCurrencyKey: bytes32,
-        sourceAmount: uint256,
-        destinationCurrencyKey: bytes32,
-    ): nonpayable
-    def settle(currencyKey: bytes32) -> uint256[3]: nonpayable
+interface Curve:
+    def owner() -> address: view
 
 
-ADDRESS_PROVIDER: constant(address) = 0x0000000022D53366457F9d5E68Ec105046FC4383
+event Transfer:
+    _from: indexed(address)
+    _to: indexed(address)
+    _value: uint256
 
-SNX: constant(address) = 0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F
-SBTC: constant(address) = 0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6
-SUSD: constant(address) = 0x57Ab1ec28D129707052df4dF418D58a2D46d5f51
-USDC: constant(address) = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
-
-# currency keys used to identify synths during exchange
-SBTC_CURRENCY_KEY: constant(bytes32) = 0x7342544300000000000000000000000000000000000000000000000000000000
-SUSD_CURRENCY_KEY: constant(bytes32) = 0x7355534400000000000000000000000000000000000000000000000000000000
+event Approval:
+    _owner: indexed(address)
+    _spender: indexed(address)
+    _value: uint256
 
 
-is_approved: HashMap[address, HashMap[address, bool]]
-swap_for: HashMap[address, address]
+name: public(String[64])
+symbol: public(String[32])
 
-receiver: public(address)
-recovery: public(address)
-is_killed: public(bool)
+balanceOf: public(HashMap[address, uint256])
+allowance: public(HashMap[address, HashMap[address, uint256]])
+totalSupply: public(uint256)
 
-owner: public(address)
-emergency_owner: public(address)
-future_owner: public(address)
-future_emergency_owner: public(address)
+minter: public(address)
 
 
 @external
-def __init__(_receiver: address, _recovery: address, _owner: address, _emergency_owner: address):
-    """
-    @notice Contract constructor
-    @param _receiver Address that converted tokens are transferred to.
-                     Should be set to an `UnderlyingBurner` deployment.
-    @param _recovery Address that tokens are transferred to during an
-                     emergency token recovery.
-    @param _owner Owner address. Can kill the contract, recover tokens
-                  and modify the recovery address.
-    @param _emergency_owner Emergency owner address. Can kill the contract
-                            and recover tokens.
-    """
-    self.receiver = _receiver
-    self.recovery = _recovery
-    self.owner = _owner
-    self.emergency_owner = _emergency_owner
+def __init__(_name: String[64], _symbol: String[32]):
+    self.name = _name
+    self.symbol = _symbol
+    self.minter = msg.sender
+    log Transfer(ZERO_ADDRESS, msg.sender, 0)
 
-    # hBTC -> wBTC
-    self.swap_for[0x0316EB71485b0Ab14103307bf65a021042c6d380] = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
+
+@view
+@external
+def decimals() -> uint256:
+    """
+    @notice Get the number of decimals for this token
+    @dev Implemented as a view method to reduce gas costs
+    @return uint256 decimal places
+    """
+    return 18
 
 
 @external
-def set_swap_for(_coin: address, _swap_for: address) -> bool:
+def transfer(_to : address, _value : uint256) -> bool:
     """
-    @notice Set an intermediate swap coin for coins that cannot
-            directly swap to sBTC
-    @param _coin Coin being burned
-    @param _swap_for Intermediate coin that can be swapped for
-            both `_coin` and sBTC
-    @return bool success
+    @dev Transfer token for a specified address
+    @param _to The address to transfer to.
+    @param _value The amount to be transferred.
     """
-    registry: address = AddressProvider(ADDRESS_PROVIDER).get_registry()
-    direct_pool: address = Registry(registry).find_pool_for_coins(_coin, SBTC)
+    # NOTE: vyper does not allow underflows
+    #       so the following subtraction would revert on insufficient balance
+    self.balanceOf[msg.sender] -= _value
+    self.balanceOf[_to] += _value
 
-    if _swap_for == ZERO_ADDRESS:
-        # removing an intermediary swap, ensure direct swap is possible
-        assert direct_pool != ZERO_ADDRESS
-    else:
-        # adding an intermediary swap, ensure direct swap is not possible
-        # and that intermediate route exists
-        assert direct_pool == ZERO_ADDRESS
-        assert Registry(registry).find_pool_for_coins(_coin, _swap_for) != ZERO_ADDRESS
-        assert Registry(registry).find_pool_for_coins(_swap_for, SBTC) != ZERO_ADDRESS
-
-    self.swap_for[_coin] = _swap_for
-
-    return True
-
-
-@internal
-def _swap(_registry_swap: address, _from: address, _to: address, _amount: uint256, _receiver: address):
-    if not self.is_approved[_registry_swap][_from]:
-        response: Bytes[32] = raw_call(
-            _from,
-            concat(
-                method_id("approve(address,uint256)"),
-                convert(_registry_swap, bytes32),
-                convert(MAX_UINT256, bytes32),
-            ),
-            max_outsize=32,
-        )
-        if len(response) != 0:
-            assert convert(response, bool)
-        self.is_approved[_registry_swap][_from] = True
-
-    RegistrySwap(_registry_swap).exchange_with_best_rate(_from, _to, _amount, 0, _receiver)
-
-
-@external
-def burn(_coin: address) -> bool:
-    """
-    @notice Receive `_coin` and convert to sUSD via sBTC
-    @param _coin Address of the coin being converted
-    @return bool success
-    """
-    assert not self.is_killed  # dev: is killed
-    coin: address = _coin
-
-    # transfer coins from caller
-    amount: uint256 = ERC20(coin).balanceOf(msg.sender)
-    if amount != 0:
-        response: Bytes[32] = raw_call(
-            coin,
-            concat(
-                method_id("transferFrom(address,address,uint256)"),
-                convert(msg.sender, bytes32),
-                convert(self, bytes32),
-                convert(amount, bytes32),
-            ),
-            max_outsize=32,
-        )
-        if len(response) != 0:
-            assert convert(response, bool)
-
-    # get actual balance in case of transfer fee or pre-existing balance
-    amount = ERC20(coin).balanceOf(self)
-
-    if amount != 0:
-        if coin != SBTC:
-            registry_swap: address = AddressProvider(ADDRESS_PROVIDER).get_address(2)
-            swap_for: address = self.swap_for[coin]
-            if swap_for != ZERO_ADDRESS:
-                # sometimes an intermediate swap is required to get to sBTC
-                self._swap(registry_swap, coin, swap_for, amount, self)
-                coin = swap_for
-                amount = ERC20(coin).balanceOf(self)
-
-            # swap to sBTC
-            self._swap(registry_swap, coin, SBTC, amount, self)
-
-        # convert sBTC to sUSD
-        Synthetix(SNX).exchange(
-            SBTC_CURRENCY_KEY,
-            ERC20(SBTC).balanceOf(self),
-            SUSD_CURRENCY_KEY,
-        )
-
+    log Transfer(msg.sender, _to, _value)
     return True
 
 
 @external
-def execute() -> bool:
+def transferFrom(_from : address, _to : address, _value : uint256) -> bool:
     """
-    @notice Convert sUSD to USDC and transfer to the underlying burner
-    @dev Synths are locked for 3 minutes after they are exchanged, so
-         this call will revert unless sufficient time has passed since
-         the last `burn`
-    @return bool success
+     @dev Transfer tokens from one address to another.
+     @param _from address The address which you want to send tokens from
+     @param _to address The address which you want to transfer to
+     @param _value uint256 the amount of tokens to be transferred
     """
-    assert not self.is_killed  # dev: is killed
+    self.balanceOf[_from] -= _value
+    self.balanceOf[_to] += _value
 
-    amount: uint256 = ERC20(SUSD).balanceOf(self)
+    _allowance: uint256 = self.allowance[_from][msg.sender]
+    if _allowance != MAX_UINT256:
+        self.allowance[_from][msg.sender] = _allowance - _value
 
-    if amount != 0:
-        Synthetix(SNX).settle(SUSD_CURRENCY_KEY)
-        registry_swap: address = AddressProvider(ADDRESS_PROVIDER).get_address(2)
-        self._swap(registry_swap, SUSD, USDC, amount, self.receiver)
-
+    log Transfer(_from, _to, _value)
     return True
 
 
 @external
-def recover_balance(_coin: address) -> bool:
+def approve(_spender : address, _value : uint256) -> bool:
     """
-    @notice Recover ERC20 tokens from this contract
-    @dev Tokens are sent to the recovery address
-    @param _coin Token address
+    @notice Approve the passed address to transfer the specified amount of
+            tokens on behalf of msg.sender
+    @dev Beware that changing an allowance via this method brings the risk
+         that someone may use both the old and new allowance by unfortunate
+         transaction ordering. This may be mitigated with the use of
+         {increaseAllowance} and {decreaseAllowance}.
+         https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+    @param _spender The address which will transfer the funds
+    @param _value The amount of tokens that may be transferred
     @return bool success
     """
-    assert msg.sender in [self.owner, self.emergency_owner]  # dev: only owner
+    self.allowance[msg.sender][_spender] = _value
 
-    amount: uint256 = ERC20(_coin).balanceOf(self)
-    response: Bytes[32] = raw_call(
-        _coin,
-        concat(
-            method_id("transfer(address,uint256)"),
-            convert(self.recovery, bytes32),
-            convert(amount, bytes32),
-        ),
-        max_outsize=32,
-    )
-    if len(response) != 0:
-        assert convert(response, bool)
-
+    log Approval(msg.sender, _spender, _value)
     return True
 
 
 @external
-def set_recovery(_recovery: address) -> bool:
+def increaseAllowance(_spender: address, _added_value: uint256) -> bool:
     """
-    @notice Set the token recovery address
-    @param _recovery Token recovery address
+    @notice Increase the allowance granted to `_spender` by the caller
+    @dev This is alternative to {approve} that can be used as a mitigation for
+         the potential race condition
+    @param _spender The address which will transfer the funds
+    @param _added_value The amount of to increase the allowance
     @return bool success
     """
-    assert msg.sender == self.owner  # dev: only owner
-    self.recovery = _recovery
+    allowance: uint256 = self.allowance[msg.sender][_spender] + _added_value
+    self.allowance[msg.sender][_spender] = allowance
 
+    log Approval(msg.sender, _spender, allowance)
     return True
 
 
 @external
-def set_killed(_is_killed: bool) -> bool:
+def decreaseAllowance(_spender: address, _subtracted_value: uint256) -> bool:
     """
-    @notice Set killed status for this contract
-    @dev When killed, the `burn` function cannot be called
-    @param _is_killed Killed status
+    @notice Decrease the allowance granted to `_spender` by the caller
+    @dev This is alternative to {approve} that can be used as a mitigation for
+         the potential race condition
+    @param _spender The address which will transfer the funds
+    @param _subtracted_value The amount of to decrease the allowance
     @return bool success
     """
-    assert msg.sender in [self.owner, self.emergency_owner]  # dev: only owner
-    self.is_killed = _is_killed
+    allowance: uint256 = self.allowance[msg.sender][_spender] - _subtracted_value
+    self.allowance[msg.sender][_spender] = allowance
 
-    return True
-
-
-
-@external
-def commit_transfer_ownership(_future_owner: address) -> bool:
-    """
-    @notice Commit a transfer of ownership
-    @dev Must be accepted by the new owner via `accept_transfer_ownership`
-    @param _future_owner New owner address
-    @return bool success
-    """
-    assert msg.sender == self.owner  # dev: only owner
-    self.future_owner = _future_owner
-
+    log Approval(msg.sender, _spender, allowance)
     return True
 
 
 @external
-def accept_transfer_ownership() -> bool:
+def mint(_to: address, _value: uint256) -> bool:
     """
-    @notice Accept a transfer of ownership
-    @return bool success
+    @dev Mint an amount of the token and assigns it to an account.
+         This encapsulates the modification of balances such that the
+         proper events are emitted.
+    @param _to The account that will receive the created tokens.
+    @param _value The amount that will be created.
     """
-    assert msg.sender == self.future_owner  # dev: only owner
-    self.owner = msg.sender
+    assert msg.sender == self.minter
 
+    self.totalSupply += _value
+    self.balanceOf[_to] += _value
+
+    log Transfer(ZERO_ADDRESS, _to, _value)
     return True
 
 
 @external
-def commit_transfer_emergency_ownership(_future_owner: address) -> bool:
+def burnFrom(_to: address, _value: uint256) -> bool:
     """
-    @notice Commit a transfer of ownership
-    @dev Must be accepted by the new owner via `accept_transfer_ownership`
-    @param _future_owner New owner address
-    @return bool success
+    @dev Burn an amount of the token from a given account.
+    @param _to The account whose tokens will be burned.
+    @param _value The amount that will be burned.
     """
-    assert msg.sender == self.emergency_owner  # dev: only owner
-    self.future_emergency_owner = _future_owner
+    assert msg.sender == self.minter
 
+    self.totalSupply -= _value
+    self.balanceOf[_to] -= _value
+
+    log Transfer(_to, ZERO_ADDRESS, _value)
     return True
 
 
 @external
-def accept_transfer_emergency_ownership() -> bool:
-    """
-    @notice Accept a transfer of ownership
-    @return bool success
-    """
-    assert msg.sender == self.future_emergency_owner  # dev: only owner
-    self.emergency_owner = msg.sender
+def set_minter(_minter: address):
+    assert msg.sender == self.minter
+    self.minter = _minter
 
-    return True
+
+@external
+def set_name(_name: String[64], _symbol: String[32]):
+    assert Curve(self.minter).owner() == msg.sender
+    self.name = _name
+    self.symbol = _symbol

@@ -28,11 +28,7 @@ interface IMainRewarder is IBaseRewarder {
      * @param claim If true, claims all rewards for the account from this contract and any linked extra reward
      * contracts.
      */
-    function withdraw(
-        address account,
-        uint256 amount,
-        bool claim
-    ) external;
+    function withdraw(address account, uint256 amount, bool claim) external;
 
     /**
      * @notice Claims and transfers all rewards for the specified account from this contract and any linked extra reward
@@ -42,11 +38,7 @@ interface IMainRewarder is IBaseRewarder {
      * @param recipient The address to send the rewards to.
      * @param claimExtras If true, claims rewards from linked extra reward contracts.
      */
-    function getReward(
-        address account,
-        address recipient,
-        bool claimExtras
-    ) external;
+    function getReward(address account, address recipient, bool claimExtras) external;
 
     /**
      * @notice Number of extra rewards currently registered

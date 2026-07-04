@@ -1,0 +1,26 @@
+{
+  "component": "GpBoostHook-2",
+  "main_contract": "GpBoostHook",
+  "source_file_count": 45,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6be9c23aa3c2cfeff92d884e20d1ec9e134ab076",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x65f3aea2594d82024b7ee98ddcf08f991ab1c626",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

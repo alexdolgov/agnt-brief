@@ -1,0 +1,18 @@
+{
+  "component": "AppTreasury-4",
+  "main_contract": "AppTreasury",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9ccab5d967cf834932ef9b22aa961392dc42e43f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

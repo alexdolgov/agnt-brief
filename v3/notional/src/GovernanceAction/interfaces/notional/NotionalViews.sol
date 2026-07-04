@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity >=0.7.6;
 pragma abicoder v2;
 
@@ -80,7 +80,9 @@ interface NotionalViews {
         PrimeRate memory primeRate,
         PrimeCashFactors memory factors,
         uint256 maxUnderlyingSupply,
-        uint256 totalUnderlyingSupply
+        uint256 totalUnderlyingSupply,
+        uint256 maxUnderlyingDebt,
+        uint256 totalUnderlyingDebt
     );
 
     function getPrimeFactorsStored(uint16 currencyId) external view returns (PrimeCashFactors memory);
@@ -89,7 +91,17 @@ interface NotionalViews {
 
     function getPrimeInterestRateCurve(uint16 currencyId) external view returns (InterestRateParameters memory);
 
-    function getTotalfCashDebtOutstanding(uint16 currencyId, uint256 maturity) external view returns (int256);
+    function getPrimeInterestRate(uint16 currencyId) external view returns (
+        uint256 annualDebtRatePreFee,
+        uint256 annualDebtRatePostFee,
+        uint256 annualSupplyRate
+    );
+
+    function getTotalfCashDebtOutstanding(uint16 currencyId, uint256 maturity) external view returns (
+        int256 totalfCashDebt,
+        int256 fCashDebtHeldInSettlementReserve,
+        int256 primeCashHeldInSettlementReserve
+    );
 
     function getSettlementRate(uint16 currencyId, uint40 maturity)
         external
@@ -124,7 +136,7 @@ interface NotionalViews {
             uint256 totalSupply,
             uint256 incentiveAnnualEmissionRate,
             uint256 lastInitializedTime,
-            bytes5 nTokenParameters,
+            bytes6 nTokenParameters,
             int256 cashBalance,
             uint256 accumulatedNOTEPerNToken,
             uint256 lastAccumulatedTime
@@ -175,9 +187,8 @@ interface NotionalViews {
 
     function getReserveBuffer(uint16 currencyId) external view returns (uint256);
 
-    function getRebalancingTarget(uint16 currencyId, address holding) external view returns (uint8);
-
-    function getRebalancingCooldown(uint16 currencyId) external view returns (uint40);
+    function getRebalancingFactors(uint16 currencyId) external view
+      returns (address holding, uint8 target, uint16 externalWithdrawThreshold, RebalancingContextStorage memory context);
 
     function getStoredTokenBalances(address[] calldata tokens) external view returns (uint256[] memory balances);
 

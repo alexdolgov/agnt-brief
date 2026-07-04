@@ -20,6 +20,7 @@ pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
 import { Bits } from "./Bits.sol";
+import { Interest } from "./Interest.sol";
 import { Monetary } from "./Monetary.sol";
 import { Require } from "./Require.sol";
 
@@ -34,7 +35,7 @@ library Cache {
 
     // ============ Constants ============
 
-    bytes32 internal constant FILE = "Cache";
+    bytes32 private constant FILE = "Cache";
 
     // ============ Structs ============
 
@@ -43,11 +44,14 @@ library Cache {
         address token;
         bool isClosing;
         uint128 borrowPar;
+        uint128 supplyPar;
+        Interest.Index index;
         Monetary.Price price;
     }
 
     struct MarketCache {
         MarketInfo[] markets;
+        uint256 counter; // used for iterating through the bitmaps and incrementing
         uint256[] marketBitmaps;
         uint256 marketsLength;
     }
@@ -66,6 +70,7 @@ library Cache {
     {
         return MarketCache({
             markets: new MarketInfo[](0),
+            counter: 0,
             marketBitmaps: Bits.createBitmaps(numMarkets),
             marketsLength: 0
         });
@@ -103,7 +108,7 @@ library Cache {
         returns (MarketInfo memory)
     {
         Require.that(
-            cache.markets.length > 0,
+            cache.markets.length != 0,
             FILE,
             "not initialized"
         );
@@ -161,11 +166,10 @@ library Cache {
         uint marketId
     ) private pure returns (MarketInfo memory) {
         uint len = endExclusive - beginInclusive;
-        if (len == 0 || (len == 1 && data[beginInclusive].marketId != marketId)) {
-            revert("Cache: item not found");
-        }
+        // If length equals 0 OR length equals 1 but the item wasn't found, revert
+        assert(!(len == 0 || (len == 1 && data[beginInclusive].marketId != marketId)));
 
-        uint mid = beginInclusive + len / 2;
+        uint mid = beginInclusive + (len >> 1);
         uint midMarketId = data[mid].marketId;
         if (marketId < midMarketId) {
             return _getInternal(

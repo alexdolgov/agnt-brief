@@ -1,0 +1,18 @@
+{
+  "component": "SushiXSwap-13",
+  "main_contract": "SushiXSwap",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6c5a9e667297b409b5dd9850b38889ab84110c2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

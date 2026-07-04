@@ -1,0 +1,18 @@
+{
+  "component": "CrossChainBridge-3",
+  "main_contract": "CrossChainBridge",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6dcc8adb5bfab15d76ebd3ce27c1a71d835be8cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

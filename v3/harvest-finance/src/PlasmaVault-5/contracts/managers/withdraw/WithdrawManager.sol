@@ -8,7 +8,6 @@ import {WithdrawManagerStorageLib} from "./WithdrawManagerStorageLib.sol";
 import {WithdrawRequest} from "./WithdrawManagerStorageLib.sol";
 import {ContextClient} from "../context/ContextClient.sol";
 import {IPlasmaVaultBase} from "../../interfaces/IPlasmaVaultBase.sol";
-import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 struct WithdrawRequestInfo {
     uint256 shares;
@@ -27,7 +26,7 @@ struct WithdrawRequestInfo {
  * - ATOMIST_ROLE: Required for updateWithdrawWindow
  * - PUBLIC_ROLE: Can call request, getLastReleaseFundsTimestamp, getWithdrawWindow, and requestInfo
  */
-contract WithdrawManager is Initializable, AccessManagedUpgradeable, ContextClient {
+contract WithdrawManager is AccessManagedUpgradeable, ContextClient {
     error WithdrawManagerInvalidTimestamp(uint256 timestamp);
     error WithdrawManagerInvalidSharesToRelease(
         uint256 sharesToRelease,
@@ -37,19 +36,8 @@ contract WithdrawManager is Initializable, AccessManagedUpgradeable, ContextClie
     error WithdrawManagerZeroShares();
     error WithdrawManagerInvalidFee(uint256 fee);
 
-    /// @notice Constructor that initializes the WithdrawManager with access control
-    /// @dev Used when deploying directly without proxy
-    /// @param accessManager_ The address of the access control manager that will manage roles and permissions
-    /// @custom:oz-upgrades-unsafe-allow constructor
     constructor(address accessManager_) initializer {
-        __AccessManaged_init(accessManager_);
-    }
-
-    /// @notice Initializes the WithdrawManager with access manager (for cloning)
-    /// @param accessManager_ The address of the access control manager
-    /// @dev This method is called after cloning to initialize the contract
-    function proxyInitialize(address accessManager_) external initializer {
-        __AccessManaged_init(accessManager_);
+        super.__AccessManaged_init(accessManager_);
     }
 
     /**
@@ -163,7 +151,7 @@ contract WithdrawManager is Initializable, AccessManagedUpgradeable, ContextClie
         );
         uint256 sharesToRelease = WithdrawManagerStorageLib.getSharesToRelease();
 
-        if (sharesToRelease > 0 && plasmaVaultBalanceOfUnallocatedShares < sharesToRelease + shares_) {
+        if (plasmaVaultBalanceOfUnallocatedShares < sharesToRelease + shares_) {
             revert WithdrawManagerInvalidSharesToRelease(
                 sharesToRelease,
                 shares_,

@@ -1,0 +1,18 @@
+{
+  "component": "WasabiRouter-4",
+  "main_contract": "WasabiRouter",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x760d9ce30059537686074d9162d0cb6938b52d64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

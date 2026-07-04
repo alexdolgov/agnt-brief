@@ -12,6 +12,7 @@ contract ERC4626OneToOneCalculator is LSTCalculatorBase {
     /// =====================================================
     /// Functions - Construction
     /// =====================================================
+
     constructor(
         ISystemRegistry _systemRegistry
     ) LSTCalculatorBase(_systemRegistry) { }

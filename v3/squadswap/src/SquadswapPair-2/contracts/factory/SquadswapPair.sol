@@ -7,11 +7,10 @@ import './libraries/UQ112x112.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/ISquadswapFactory.sol';
 import './interfaces/ISquadswapCallee.sol';
-import './interfaces/ISquadV3PoolManager.sol';
+
 contract SquadswapPair is SquadswapERC20 {
     using UQ112x112 for uint224;
 
-    uint public constant FEE_DENOMINATOR = 1000000;
     uint public constant MINIMUM_LIQUIDITY = 10**3;
     bytes4 private constant SELECTOR = bytes4(keccak256(bytes('transfer(address,uint256)')));
 
@@ -35,21 +34,10 @@ contract SquadswapPair is SquadswapERC20 {
         unlocked = 1;
     }
 
-    function getFee() public view returns (uint fee) {
-        address poolManagerAddress = ISquadswapFactory(factory).poolManager();
-        ISquadV3PoolManagerStates poolManager = ISquadV3PoolManagerStates(
-            poolManagerAddress
-        );
-
-        uint defaultFee = ISquadswapFactory(factory).defaultFee();
-        fee = uint(poolManager.getFee(address(this), uint24(defaultFee)));
-    }
-
-    function getReserves() public view returns (uint112 _reserve0, uint112 _reserve1, uint32 _blockTimestampLast, uint _fee) {
+    function getReserves() public view returns (uint112 _reserve0, uint112 _reserve1, uint32 _blockTimestampLast) {
         _reserve0 = reserve0;
         _reserve1 = reserve1;
         _blockTimestampLast = blockTimestampLast;
-        _fee = getFee();
     }
 
     function _safeTransfer(address token, address to, uint value) private {
@@ -96,6 +84,7 @@ contract SquadswapPair is SquadswapERC20 {
         emit Sync(reserve0, reserve1);
     }
 
+    // if fee is on, mint liquidity equivalent to 4/5 of the growth in sqrt(k) so that protocal fee is 0.2% * 4 / 5 = 0.16%
     function _mintFee(uint112 _reserve0, uint112 _reserve1) private returns (bool feeOn) {
         address feeTo = ISquadswapFactory(factory).feeTo();
         feeOn = feeTo != address(0);
@@ -105,23 +94,20 @@ contract SquadswapPair is SquadswapERC20 {
                 uint rootK = Math.sqrt(uint(_reserve0) * uint(_reserve1));
                 uint rootKLast = Math.sqrt(_kLast);
                 if (rootK > rootKLast) {
-                    uint protocolFeePercentage = ISquadswapFactory(factory).protocolFee();
-                    uint numerator = totalSupply * (rootK - rootKLast) * protocolFeePercentage;
-                    uint denominator = (rootK * (FEE_DENOMINATOR-protocolFeePercentage)) + (rootKLast * protocolFeePercentage);
-                    uint feeAmount = numerator / denominator;
-                    if (feeAmount > 0) {
-                        _mint(feeTo, feeAmount);
-                    }
+                    uint numerator = totalSupply * (rootK - rootKLast) * 4;
+                    uint denominator = rootK + rootKLast * 4;
+                    uint liquidity = numerator / denominator;
+                    if (liquidity > 0) _mint(feeTo, liquidity);
                 }
             }
         } else if (_kLast != 0) {
             kLast = 0;
         }
     }
-        
+
     // this low-level function should be called from a contract which performs important safety checks
     function mint(address to) external lock returns (uint liquidity) {
-        (uint112 _reserve0, uint112 _reserve1, ,) = getReserves(); // gas savings
+        (uint112 _reserve0, uint112 _reserve1,) = getReserves(); // gas savings
         uint balance0 = IERC20(token0).balanceOf(address(this));
         uint balance1 = IERC20(token1).balanceOf(address(this));
         uint amount0 = balance0 - _reserve0;
@@ -147,7 +133,7 @@ contract SquadswapPair is SquadswapERC20 {
 
     // this low-level function should be called from a contract which performs important safety checks
     function burn(address to) external lock returns (uint amount0, uint amount1) {
-        (uint112 _reserve0, uint112 _reserve1, ,) = getReserves(); // gas savings
+        (uint112 _reserve0, uint112 _reserve1,) = getReserves(); // gas savings
         address _token0 = token0;                                // gas savings
         address _token1 = token1;                                // gas savings
         uint balance0 = IERC20(_token0).balanceOf(address(this));
@@ -172,7 +158,7 @@ contract SquadswapPair is SquadswapERC20 {
     // this low-level function should be called from a contract which performs important safety checks
     function swap(uint amount0Out, uint amount1Out, address to, bytes calldata data) external lock {
         require(amount0Out > 0 || amount1Out > 0, 'Squadswap: INSUFFICIENT_OUTPUT_AMOUNT');
-        (uint112 _reserve0, uint112 _reserve1, ,) = getReserves(); // gas savings
+        (uint112 _reserve0, uint112 _reserve1,) = getReserves(); // gas savings
         require(amount0Out < _reserve0 && amount1Out < _reserve1, 'Squadswap: INSUFFICIENT_LIQUIDITY');
 
         uint balance0;
@@ -191,10 +177,9 @@ contract SquadswapPair is SquadswapERC20 {
         uint amount1In = balance1 > _reserve1 - amount1Out ? balance1 - (_reserve1 - amount1Out) : 0;
         require(amount0In > 0 || amount1In > 0, 'Squadswap: INSUFFICIENT_INPUT_AMOUNT');
         { // scope for reserve{0,1}Adjusted, avoids stack too deep errors
-        uint fee = getFee();
-        uint balance0Adjusted = balance0 * (FEE_DENOMINATOR) - (amount0In * fee);
-        uint balance1Adjusted = balance1 * (FEE_DENOMINATOR) - (amount1In * fee);
-        require(balance0Adjusted * (balance1Adjusted) >= uint(_reserve0) * (_reserve1) * (FEE_DENOMINATOR**2), 'Squadswap: K');
+        uint balance0Adjusted = balance0 * (1000) - (amount0In * 2);
+        uint balance1Adjusted = balance1 * (1000) - (amount1In * 2);
+        require(balance0Adjusted * (balance1Adjusted) >= uint(_reserve0) * (_reserve1) * (1000**2), 'Squadswap: K');
         }
 
         _update(balance0, balance1, _reserve0, _reserve1);

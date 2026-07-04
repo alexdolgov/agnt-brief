@@ -2,7 +2,7 @@
   "component": "USDa",
   "main_contract": "USDa",
   "source_file_count": 43,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/avalonfinancexyz/USDa-audit-blocksec/blob/main/blocksec_avalon_v1.0-signed.pdf",
@@ -12,6 +12,14 @@
     "https://github.com/avalonfinancexyz/USDa-audit-slowmist/blob/main/Avalon%20Finance%20-%20SlowMist%20Audit%20Report.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9356086146be5158e98ad827e21b5cf944699894",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "mantle",
       "chain_id": 5000,

@@ -1,0 +1,26 @@
+{
+  "component": "UsdPlusMinter-5",
+  "main_contract": "UsdPlusMinter",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6a71a411758a2a3b4044ebf5b323dce03b76b6a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4dc7e4ff3fd69d7616289e48652a812ef6e18119",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

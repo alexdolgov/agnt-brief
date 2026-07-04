@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { Initializable } from
-    "@openzeppelin/contracts/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
+
+import "../SickleRegistry.sol";
 
 library SickleStorageEvents {
     event ApprovedAddressChanged(address newApproved);

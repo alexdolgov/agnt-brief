@@ -1,0 +1,18 @@
+{
+  "component": "NonfungiblePositionManager-2",
+  "main_contract": "NonfungiblePositionManager",
+  "source_file_count": 87,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8ad238377531547838370b9c4ac346b9ed5466ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

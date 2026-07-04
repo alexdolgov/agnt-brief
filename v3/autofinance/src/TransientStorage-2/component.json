@@ -1,0 +1,18 @@
+{
+  "component": "TransientStorage-2",
+  "main_contract": "TransientStorage",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc54851ba7a5e47ec092a798a75093a0677a30833",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

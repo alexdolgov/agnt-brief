@@ -1,0 +1,20 @@
+{
+  "component": "TimelockController-12",
+  "main_contract": "TimelockController",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_max_vault_withdrawer_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd19c84487847b699ae9eb48de864fc3b9f85231b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

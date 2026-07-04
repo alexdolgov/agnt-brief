@@ -1,15 +1,39 @@
 {
   "component": "Hypervisor",
   "main_contract": "Hypervisor",
-  "source_file_count": 33,
-  "deployment_count": 1,
+  "source_file_count": 29,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x33412fef1af035d6dba8b2f9b33b022e4c31dbb4",
+      "address": "0x388a3938fb6c9c6cb0415946dd5d026f7d98e22c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d7f0f7395dd58da2e6680453a0d0b4b19d0c832",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf402ced61500147c19d6944ef85f27f213adbd9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6eeca73646ea6a5c878814e6508e87facc7927c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

@@ -16,7 +16,18 @@ pragma solidity 0.8.21;
 import {BaseLocker} from "./BaseLocker.sol";
 
 contract LockerToken is BaseLocker {
-  function initialize(address _token, address _staking, address _admin) external reinitializer(3) {
-    __BaseLocker_init("Locked MAHA Tokens", "MAHAX", _token, _staking, 4 * 365 * 86_400, _admin);
+  function initialize(address _token, address _staking) external initializer {
+    __BaseLocker_init("Locked MAHA Tokens", "MAHAX", _token, _staking, 4 * 365 * 86_400);
+  }
+
+  /// @notice Update the start date of a lock
+  /// @param _id The lock id
+  /// @param _startDate The new start date
+  /// @dev This function can only be called by the staking contract
+  function updateLockDates(uint256 _id, uint256 _startDate, uint256 _endDate) external {
+    require(msg.sender == address(staking), "!_staking");
+    _locked[_id].start = _startDate;
+    _locked[_id].end = _endDate;
+    _locked[_id].power = _calculatePower(_locked[_id]);
   }
 }

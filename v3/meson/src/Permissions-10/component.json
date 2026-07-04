@@ -1,0 +1,18 @@
+{
+  "component": "Permissions-10",
+  "main_contract": "Permissions",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4fa09f02d5da21b53c32fa6172c099d5d25ac822",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

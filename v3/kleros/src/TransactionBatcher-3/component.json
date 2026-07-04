@@ -1,0 +1,18 @@
+{
+  "component": "TransactionBatcher-3",
+  "main_contract": "TransactionBatcher",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6426800f8508b15aed271337498fa5e7d0794d46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

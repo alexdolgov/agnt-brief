@@ -1,15 +1,23 @@
 {
   "component": "CsigmaPermissionedWithdrawalManager",
   "main_contract": "CsigmaPermissionedWithdrawalManager",
-  "source_file_count": 28,
-  "deployment_count": 1,
+  "source_file_count": 25,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x25f7e3b56bf360250f94307fb22aa9b8049dacb9",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4c158bfe194df7b74a4fd3d316017615229192dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5acb4882ccd0171efb9ea32e70aa5a05978153d1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

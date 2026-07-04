@@ -1,0 +1,18 @@
+{
+  "component": "EthPeggedOracle-6",
+  "main_contract": "EthPeggedOracle",
+  "source_file_count": 57,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe33703c5c1e1a5415b260f8c8eb8a2f49e746aa9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

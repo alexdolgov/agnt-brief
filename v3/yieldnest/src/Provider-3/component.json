@@ -1,0 +1,28 @@
+{
+  "component": "Provider-3",
+  "main_contract": "Provider",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_max_vault_withdrawer_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcff9d39e1c8e675868a3105b619a987caa147d59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe5e9f6e3d99e8dda9b93653bc716be936871d0f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

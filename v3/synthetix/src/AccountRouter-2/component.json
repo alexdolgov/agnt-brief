@@ -1,0 +1,18 @@
+{
+  "component": "AccountRouter-2",
+  "main_contract": "AccountRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7e06f2b2199d91f620e6967f1c7d594e77a3ac67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

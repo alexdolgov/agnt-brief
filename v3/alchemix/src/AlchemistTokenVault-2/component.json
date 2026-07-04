@@ -1,0 +1,28 @@
+{
+  "component": "AlchemistTokenVault-2",
+  "main_contract": "AlchemistTokenVault",
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0a2dc30e6a74a02cb745e44cc546d9b44eecd857",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x347371c17d14ee7943943995e2a0a9df4fd83d50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

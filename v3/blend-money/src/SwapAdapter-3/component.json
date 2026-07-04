@@ -1,0 +1,42 @@
+{
+  "component": "SwapAdapter-3",
+  "main_contract": "SwapAdapter",
+  "source_file_count": 15,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x920029f02b87c7bb0013c8e17e245209c03dd7bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xad7188d0970cbedbdb233f0e5b7367cf149c3449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf76d87abb1c22a2a820888483956298a172def4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6f94ac2c4129a7f1435532f39913dfd23d061263",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

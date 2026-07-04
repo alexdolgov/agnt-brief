@@ -1,15 +1,23 @@
 {
   "component": "STreasury",
   "main_contract": "STreasury",
-  "source_file_count": 13,
-  "deployment_count": 1,
+  "source_file_count": 7,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xbab56fe68fff46a0ab1f03728abad41b2588a983",
+      "address": "0x3a833e6e977e0442e3cbe911507f8d9178f134b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-204",
+      "chain_id": 204,
+      "address": "0x2f67784d367bab5fd7b8dc607504e0c8de0ad696",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

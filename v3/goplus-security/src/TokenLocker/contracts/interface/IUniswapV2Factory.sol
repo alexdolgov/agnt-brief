@@ -13,7 +13,7 @@ interface IUniswapV2Factory {
 
   function feeToSetter() external view returns (address);
 
-  function getPair(address tokenA, address tokenB, bool stable)
+  function getPair(address tokenA, address tokenB)
     external
     view
     returns (address pair);

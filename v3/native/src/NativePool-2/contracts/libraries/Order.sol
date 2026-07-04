@@ -19,7 +19,7 @@ library Orders {
         uint256 buyerTokenAmount;
         uint256 sellerTokenAmount;
         uint256 deadlineTimestamp;
-        address txOrigin;
+        address caller;
         bytes16 quoteId;
     }
 
@@ -55,7 +55,7 @@ library Orders {
         order.buyerTokenAmount = orders.toUint256(UINT256_SIZE + ADDR_SIZE * 5);
         order.sellerTokenAmount = orders.toUint256(UINT256_SIZE * 2 + ADDR_SIZE * 5);
         order.deadlineTimestamp = orders.toUint256(UINT256_SIZE * 3 + ADDR_SIZE * 5);
-        order.txOrigin = orders.toAddress(UINT256_SIZE * 4 + ADDR_SIZE * 5);
+        order.caller = orders.toAddress(UINT256_SIZE * 4 + ADDR_SIZE * 5);
         order.quoteId = bytes16(orders.slice(UINT256_SIZE * 4 + ADDR_SIZE * 6, UUID_SIZE));
         signature = orders.slice(ORDER_SIZE, SIG_SIZE);
     }

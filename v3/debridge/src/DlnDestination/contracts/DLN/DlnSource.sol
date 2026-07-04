@@ -10,14 +10,15 @@ import "../interfaces/IDlnSource.sol";
 contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
     using SafeERC20Upgradeable for IERC20Upgradeable;
     using SafeCast for uint256;
-    using BytesLib for bytes;
-    
+
     /* ========== STATE VARIABLES ========== */
 
     /// @dev Fixed fee in native asset
     uint88 public globalFixedNativeFee;
     /// @dev Transfer fee in BPS
     uint16 public globalTransferFeeBps;
+
+    // ============ Structs ============
 
     /// @dev Maps chainId to address of dlnDestination contract on that chain
     mapping(uint256 => bytes) public dlnDestinationAddresses;
@@ -84,8 +85,7 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
         bytes affiliateFee,
         uint256 nativeFixFee,
         uint256 percentFee,
-        uint32 referralCode,
-        bytes payload
+        uint32 referralCode
     );
 
     event IncreasedGiveAmount(bytes32 orderId, uint256 orderGiveFinalAmount, uint256 finalPercentFee);
@@ -117,7 +117,7 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
 
     event UnexpectedOrderStatusForCancel(bytes32 orderId, OrderGiveStatus status, address beneficiary);
 
-    event SetDlnDestinationAddress(uint256 chainIdTo, bytes dlnDestinationAddress, DlnOrderLib.ChainEngine chainEngine);
+    event SetDlnDestinationAddress(uint256 chainIdTo, bytes dlnDestinationAddress, ChainEngine chainEngine);
 
     event WithdrawnFee(address tokenAddress, uint256 amount, address beneficiary);
 
@@ -129,6 +129,8 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
 
     error WrongFixedFee(uint256 received, uint256 actual);
     error WrongAffiliateFeeLength();
+
+    error ExternalCallIsBlocked();
     error MismatchNativeGiveAmount();
     error CriticalMismatchTakeChainId(bytes32 orderId, uint48 takeChainId, uint256 submissionsChainIdFrom);
 
@@ -158,57 +160,36 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
         uint32 _referralCode,
         bytes calldata _permitEnvelope
     ) external payable nonReentrant whenNotPaused returns (bytes32) {
-        return _createSaltedOrder(
-            _orderCreation,
-            uint64(masterNonce[tx.origin]++),
-            _affiliateFee,
-            _referralCode,
-            _permitEnvelope,
-            bytes("")
-        );
-    }
 
-    /**
-     * @inheritdoc IDlnSource
-     */
-    function createSaltedOrder(
-        DlnOrderLib.OrderCreation calldata _orderCreation,
-        uint64 _salt,
-        bytes calldata _affiliateFee,
-        uint32 _referralCode,
-        bytes calldata _permitEnvelope,
-        bytes memory _payload
-    ) external payable nonReentrant whenNotPaused returns (bytes32) {
-        return _createSaltedOrder(
-            _orderCreation,
-            _salt,
-            _affiliateFee,
-            _referralCode,
-            _permitEnvelope,
-            _payload
-        );
-    }
 
-    function _createSaltedOrder(
-        DlnOrderLib.OrderCreation calldata _orderCreation,
-        uint64 _salt,
-        bytes calldata _affiliateFee,
-        uint32 _referralCode,
-        bytes calldata _permitEnvelope,
-        bytes memory _payload
-    ) internal returns (bytes32) {
+        if (_orderCreation.externalCall.length > 0) revert ExternalCallIsBlocked();
 
         uint256 affiliateAmount;
+        address affiliateBeneficiary;
         if (_affiliateFee.length > 0) {
             if (_affiliateFee.length != 52) revert WrongAffiliateFeeLength();
+            affiliateBeneficiary = BytesLib.toAddress(_affiliateFee, 0);
             affiliateAmount = BytesLib.toUint256(_affiliateFee, 20);
+            if (affiliateAmount > 0 && affiliateBeneficiary == address(0)) revert ZeroAddress();
         }
 
-        DlnOrderLib.Order memory _order = validateCreationOrder(_orderCreation, tx.origin, _salt);
+        DlnOrderLib.Order memory _order = validateCreationOrder(_orderCreation, msg.sender);
 
-        // take tokens from the user's wallet
-        _pullTokens(_orderCreation, _order, _permitEnvelope);
+        if (_orderCreation.giveTokenAddress == address(0)) {
+            if (msg.value != _order.giveAmount + globalFixedNativeFee) revert MismatchNativeGiveAmount();
+        }
+        else
+        {
+            if (msg.value != globalFixedNativeFee) revert WrongFixedFee(msg.value, globalFixedNativeFee);
 
+            _executePermit(_orderCreation.giveTokenAddress, _permitEnvelope);
+            _safeTransferFrom(
+                _orderCreation.giveTokenAddress,
+                msg.sender,
+                address(this),
+                _order.giveAmount
+            );
+        }
         // reduce giveAmount on (percentFee + affiliateFee)
         uint256 percentFee = (globalTransferFeeBps * _order.giveAmount) / BPS_DENOMINATOR;
         _order.giveAmount -= percentFee + affiliateAmount;
@@ -216,8 +197,6 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
         bytes32 orderId = getOrderId(_order);
         {
             GiveOrderState storage orderState = giveOrders[orderId];
-            if (orderState.status != OrderGiveStatus.NotSet) revert IncorrectOrderStatus();
-
             orderState.status = OrderGiveStatus.Created;
             orderState.giveTokenAddress =  uint160(_orderCreation.giveTokenAddress);
             orderState.nativeFixFee = globalFixedNativeFee;
@@ -226,22 +205,20 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
             orderState.giveAmount = _order.giveAmount;
             // save affiliate_fee to storage
             if (affiliateAmount > 0) {
-                address affiliateBeneficiary = BytesLib.toAddress(_affiliateFee, 0);
-                if (affiliateAmount > 0 && affiliateBeneficiary == address(0)) revert ZeroAddress();
                 orderState.affiliateAmount = affiliateAmount;
                 orderState.affiliateBeneficiary = affiliateBeneficiary;
             }
         }
-
         emit CreatedOrder(
             _order,
             orderId,
             _affiliateFee,
             globalFixedNativeFee,
             percentFee,
-            _referralCode,
-            _payload
+            _referralCode
         );
+        // Increment user nonces
+        masterNonce[msg.sender]++;
 
         return orderId;
     }
@@ -323,13 +300,13 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
         bytes calldata _permitEnvelope
     ) external payable nonReentrant whenNotPaused {
         bytes32 orderId = getOrderId(_order);
-        if (_order.givePatchAuthoritySrc.toAddress() != msg.sender)
+        if (BytesLib.toAddress(_order.givePatchAuthoritySrc, 0) != msg.sender)
             revert Unauthorized();
         if (_addGiveAmount == 0) revert WrongArgument();
         GiveOrderState storage orderState = giveOrders[orderId];
         if (orderState.status != OrderGiveStatus.Created) revert IncorrectOrderStatus();
 
-        address giveTokenAddress = _order.giveTokenAddress.toAddress();
+        address giveTokenAddress = BytesLib.toAddress(_order.giveTokenAddress, 0);
         if (giveTokenAddress == address(0)) {
             if (msg.value != _addGiveAmount) revert MismatchNativeGiveAmount();
         }
@@ -355,11 +332,11 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
     /// @dev Set DLN destination contract address in another chain
     /// @param _chainIdTo Chain id
     /// @param _dlnDestinationAddress Contract address in another chain
-    function setDlnDestinationAddress(uint256 _chainIdTo, bytes memory _dlnDestinationAddress, DlnOrderLib.ChainEngine _chainEngine)
+    function setDlnDestinationAddress(uint256 _chainIdTo, bytes memory _dlnDestinationAddress,  ChainEngine _chainEngine)
         external
         onlyAdmin
     {
-        if(_chainEngine == DlnOrderLib.ChainEngine.UNDEFINED) revert WrongArgument();
+        if(_chainEngine == ChainEngine.UNDEFINED) revert WrongArgument();
         dlnDestinationAddresses[_chainIdTo] = _dlnDestinationAddress;
         chainEngines[_chainIdTo] = _chainEngine;
         emit SetDlnDestinationAddress(_chainIdTo, _dlnDestinationAddress, _chainEngine);
@@ -392,21 +369,10 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
 
     /* ========== VIEW ========== */
 
-    /**
-     * @dev Validates the creation of an order. Throws an exception if incorrect parameters are passed.
-     * @param _orderCreation Details of the order to be validated.
-     * @param _signer EOA (Externally Owned Account) address that will sign the transaction.
-     * @return order Returns the validated order details.
-     */
-    function validateCreationOrder(DlnOrderLib.OrderCreation memory _orderCreation, address _signer)
-        public
-        view
-        returns (DlnOrderLib.Order memory order)
-    {
-        return validateCreationOrder(_orderCreation, _signer, uint64(masterNonce[_signer]));
-    }
-
-    function validateCreationOrder(DlnOrderLib.OrderCreation memory _orderCreation, address _signer, uint64 _salt)
+    /// @dev Validate creation of order. Will throw exception if incorrect params was passed
+    /// @param _orderCreation information about order
+    /// @param _sender Sender who create order
+    function validateCreationOrder(DlnOrderLib.OrderCreation memory _orderCreation, address _sender)
         public
         view
         returns (DlnOrderLib.Order memory order)
@@ -424,9 +390,21 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
                 _orderCreation.allowedCancelBeneficiarySrc.length != EVM_ADDRESS_LENGTH)
         ) revert WrongAddressLength();
 
+        // Validate external call params
+        if (_orderCreation.externalCall.length > 0) {
+            ExternalCall memory externalCall = abi.decode(
+                _orderCreation.externalCall,
+                (ExternalCall)
+            );
+            if (externalCall.executionFee > _orderCreation.takeAmount) revert ProposedFeeTooHigh();
+            if (
+                externalCall.data.length > 0 &&
+                externalCall.fallbackAddress.length != dstAddressLength
+            ) revert WrongAddressLength();
+        }
         order.giveChainId = getChainId();
-        order.makerOrderNonce = _salt;
-        order.makerSrc = abi.encodePacked(_signer);
+        order.makerOrderNonce = uint64(masterNonce[_sender]);
+        order.makerSrc = abi.encodePacked(_sender);
         order.giveTokenAddress = abi.encodePacked(_orderCreation.giveTokenAddress);
         order.giveAmount = _orderCreation.giveAmount;
         order.takeTokenAddress = _orderCreation.takeTokenAddress;
@@ -442,25 +420,6 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
 
 
     /* ========== INTERNAL ========== */
-
-    function _pullTokens(DlnOrderLib.OrderCreation calldata _orderCreation, DlnOrderLib.Order memory _order, bytes calldata _permitEnvelope) internal {
-
-        if (_orderCreation.giveTokenAddress == address(0)) {
-            if (msg.value != _order.giveAmount + globalFixedNativeFee) revert MismatchNativeGiveAmount();
-        }
-        else
-        {
-            if (msg.value != globalFixedNativeFee) revert WrongFixedFee(msg.value, globalFixedNativeFee);
-
-            _executePermit(_orderCreation.giveTokenAddress, _permitEnvelope);
-            _safeTransferFrom(
-                _orderCreation.giveTokenAddress,
-                msg.sender,
-                address(this),
-                _order.giveAmount
-            );
-        }
-    }
 
     /// @dev Claim unlock order that was called from take chain
     /// @param _orderId Order id for unlock
@@ -586,6 +545,6 @@ contract DlnSource is DlnBase, ReentrancyGuardUpgradeable, IDlnSource {
 
     /// @dev Get this contract's version
     function version() external pure returns (string memory) {
-        return "1.3.0";
+        return "1.0.0.2";
     }
 }

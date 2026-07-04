@@ -1,18 +1,26 @@
 {
   "component": "PoolFactory-2",
   "main_contract": "PoolFactory",
-  "source_file_count": 35,
-  "deployment_count": 1,
+  "source_file_count": 31,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xc05f412bf08f4eef69324fdc4ae8e50862cc3f08",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7d720ff1b97308c1f6b9a8f05909244adf5ce62b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xf8f48f1f7cd31a3c45e0668aab0babd0861b84b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # noon — deployments
 
-63 verified deployment(s) across 31 component(s).
+66 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,8 +8,10 @@
 | chain-999 | `0x6086d52f28c7b7481d8ae0fadd4349cbb608c2bd` | TransparentUpgradeableProxy-3 | proxy | inactive | no |
 | chain-999 | `0x6e498b02c0036235c8164a502b0eecc7660bd889` | UpgradeableStork | impl | inactive | no |
 | chain-999 | `0x73d59063212c1a3fd32882d46a84efb37911550d` | Timelock | impl | live | no |
+| chain-999 | `0x9a137fdbe8bbb6065626098818dc82d26c20659b` | StorkChainlinkAdapter | impl | live | no |
 | chain-999 | `0xacc0a0cf13571d30b4b8637996f5d6d774d4fd62` | UpgradeableStork | proxy | inactive | no |
 | chain-999 | `0xda67b4284609d2d48e5d10cfac411572727dc1ed` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| chain-999 | `0xf08c4a8f113c8a90788f02b8151085eb9bc01e0e` | StorkChainlinkAdapter | impl | live | no |
 | ethereum | `0x054f96a1733be7e6916e93e0be30f9f1400e3cc0` | MinterHandlerV2 | impl | live | no |
 | ethereum | `0x0ada1cb43ac67fffa2773b169920bfab4c6391b7` | USNUpgradeable | impl | inactive | no |
 | ethereum | `0x0dabc0d9b270c9b0c4c77aaceaa712b56d0f9178` | WithdrawalHandler | impl | live | no |
@@ -37,7 +39,7 @@
 | ethereum | `0x6b872fafee64dd53f2b38dbbd05a4fb323f15f12` | WithdrawalHandler | impl | inactive | no |
 | ethereum | `0x6bdc8104ec827cd48b9cac526420b59a31bc8397` | USNUpgradeableHyperlane | impl | inactive | no |
 | ethereum | `0x6c243e90c2bec1126e3b835b25e23e16ded11f93` | stakeNOON | impl | inactive | no |
-| ethereum | `0x6e46353f6ba66e22289aae9ffa79e1bfd593219e` | StorkChainlinkAdapter | impl | live | no |
+| ethereum | `0x6e46353f6ba66e22289aae9ffa79e1bfd593219e` | StorkChainlinkAdapter-2 | impl | live | no |
 | ethereum | `0x76d048e47e1d77940416b656d8d7fed34931a393` | SpectraPriceOracle | impl | live | no |
 | ethereum | `0x78fc48b3bb59d8a1f29d4ff8c78bba64e9374f97` | TransparentUpgradeableProxy-4 | impl | inactive | no |
 | ethereum | `0x7a3619213cc83c1d21c1374f4f8dad343f020992` | DomainMapper | impl | live | no |
@@ -63,14 +65,8 @@
 | ethereum | `0xd876130832bc6da605eed9fee6ceb4f45666aa42` | StakingVaultOFTUpgradeableHyperlane | impl | live | yes |
 | ethereum | `0xda67b4284609d2d48e5d10cfac411572727dc1ed` | USNUpgradeableHyperlane | proxy | inactive | no |
 | ethereum | `0xe24a3dc889621612422a64e6388927901608b91d` | StakingVaultOFTUpgradeableHyperlane | proxy | live | yes |
+| ethereum | `0xe5e412c212b4fbbf550a94e7bd5e83db0b315a7f` | Timelock | impl | live | no |
 | ethereum | `0xe63fb61f3c83722bb87ec2ebf8ff4cff0d725ae0` | DomainMapper | impl | live | no |
 | ethereum | `0xf5deafcdfbc21cb1e558906d00a1fdb4b56173e8` | RedeemHandler | impl | live | no |
 | ethereum | `0xf8a3713d4f1e922f40e6738929152d41e73bec26` | DomainMapper | impl | live | no |
 | ethereum | `0xfc9249b1e027d22c10d27292cb1ed00675197259` | MinterHandlerV2 | impl | live | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-999 `0x9a137fdbe8bbb6065626098818dc82d26c20659b`
-- chain-999 `0xf08c4a8f113c8a90788f02b8151085eb9bc01e0e`
-- ethereum `0xe5e412c212b4fbbf550a94e7bd5e83db0b315a7f`

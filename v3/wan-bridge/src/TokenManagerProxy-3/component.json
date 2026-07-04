@@ -1,18 +1,42 @@
 {
   "component": "TokenManagerProxy-3",
   "main_contract": "TokenManagerProxy",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 9,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x1ed3538383bbfdb80343b18f85d6c5a5fb232fb6",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x09cdfc56439643d151585b77899d0dc0f982bcd2",
+      "is_proxy": true,
+      "implementation_address": "0x8d42d317b2bd6b60183461ed41bd00f17c3f3fe8",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x50133f6836cb91237e17177e2985cbdad51f0cf2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8d42d317b2bd6b60183461ed41bd00f17c3f3fe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xffb876bd5bee99e992cac826a04396002f5f4a65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

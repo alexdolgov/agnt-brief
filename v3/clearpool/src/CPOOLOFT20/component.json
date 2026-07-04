@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb08b3603c5f2629ef83510e6049edeefdc3a2d91",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

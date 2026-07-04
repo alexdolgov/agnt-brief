@@ -1,0 +1,20 @@
+{
+  "component": "AaveV3BorrowStrategy-2",
+  "main_contract": "AaveV3BorrowStrategy",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://3883616881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqoKcdbT2jNpuAI4A3RLd%2Fuploads%2FfUYd8p9pJEcVmjIGTTJ6%2FAudit_Report_Odyssey_REVIEW.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3efcee552716472dd2b321326654e4097f58d79b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

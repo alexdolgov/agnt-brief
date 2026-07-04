@@ -2,7 +2,7 @@
   "component": "FolioDeployer-2",
   "main_contract": "FolioDeployer",
   "source_file_count": 83,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf",
@@ -10,6 +10,14 @@
     "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe3b47587ceeff7d48008a0114f51cd571bec63a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

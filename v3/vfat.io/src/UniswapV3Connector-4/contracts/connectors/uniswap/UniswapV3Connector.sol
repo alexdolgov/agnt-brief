@@ -7,8 +7,12 @@ import { INonfungiblePositionManager } from
     "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
 import { PositionValue } from
     "contracts/interfaces/external/uniswap/v3/PositionValue.sol";
-import { IUniswapV3Pool } from
-    "contracts/interfaces/external/uniswap/IUniswapV3Pool.sol";
+import { ISwapRouter } from
+    "contracts/interfaces/external/uniswap/ISwapRouter.sol";
+import {
+    IUniswapV3Pool,
+    IUniswapV3PoolState
+} from "contracts/interfaces/external/uniswap/IUniswapV3Pool.sol";
 import { IUniswapV3Factory } from
     "contracts/interfaces/external/uniswap/IUniswapV3Factory.sol";
 
@@ -20,11 +24,17 @@ import {
     NftPoolKey,
     NftPositionInfo
 } from "contracts/structs/NftLiquidityStructs.sol";
+import { SwapParams } from "contracts/structs/LiquidityStructs.sol";
 import {
     NftAddLiquidity,
-    NftRemoveLiquidity
+    NftRemoveLiquidity,
+    Pool
 } from "contracts/structs/NftLiquidityStructs.sol";
 import { NftPosition } from "contracts/structs/NftFarmStrategyStructs.sol";
+
+struct UniswapV3SwapExtraData {
+    bytes path;
+}
 
 contract UniswapV3Connector is
     INftLiquidityConnector,
@@ -75,6 +85,29 @@ contract UniswapV3Connector is
         if (currentLiquidity == 0) {
             removeLiquidityParams.nft.burn(removeLiquidityParams.tokenId);
         }
+    }
+
+    function swapExactTokensForTokens(
+        SwapParams memory swap
+    ) external payable virtual override {
+        UniswapV3SwapExtraData memory extraData =
+            abi.decode(swap.extraData, (UniswapV3SwapExtraData));
+
+        ISwapRouter(swap.router).exactInput(
+            ISwapRouter.ExactInputParams({
+                path: extraData.path,
+                recipient: address(this),
+                deadline: block.timestamp,
+                amountIn: swap.amountIn,
+                amountOutMinimum: swap.minAmountOut
+            })
+        );
+    }
+
+    function swapExactETHForTokens(
+        SwapParams memory
+    ) external payable virtual override {
+        revert NotSupported();
     }
 
     function depositExistingNft(

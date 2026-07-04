@@ -1,15 +1,23 @@
 {
   "component": "RelayAdapt",
   "main_contract": "RelayAdapt",
-  "source_file_count": 25,
-  "deployment_count": 1,
+  "source_file_count": 22,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x25f795a8ec8af7904aa403ff2cc7205ce683bf52",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x969ee9ac1e0b5f5dd781f63a168c52b73062ff86",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

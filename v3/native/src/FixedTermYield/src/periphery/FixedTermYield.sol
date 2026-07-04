@@ -4,9 +4,8 @@ pragma solidity 0.8.28;
 import {Ownable2Step} from "@openzeppelin/contracts/access/Ownable2Step.sol";
 import {IERC20Metadata as IERC20} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
-import {WrappedNLP} from "../WrappedNLP.sol";
 import {SafeERC20} from "../libraries/SafeERC20.sol";
-import {ErrorsLib} from "../libraries/ErrorsLib.sol";
+import {WrappedNLP} from "../WrappedNLP.sol";
 import {ReentrancyGuardTransient} from "../libraries/ReentrancyGuardTransient.sol";
 
 /**
@@ -77,18 +76,21 @@ contract FixedTermYield is Ownable2Step, ReentrancyGuardTransient {
     /// @notice Mapping of reward token => reward distribution information
     mapping(address => RewardInfo) public rewardTokenInfo;
 
-    /// @notice Mapping of whitelisted addresses that can receive redeemed tokens and callback calls via redeemToAndCall
-    mapping(address => bool) public redeemToWhitelist;
-
     /*//////////////////////////////////////////////////////////////////////////
                                         EVENTS
     //////////////////////////////////////////////////////////////////////////*/
 
     /// @notice Emitted when a user deposits funds
+    /// @param user Address of the depositor
+    /// @param amount Amount of tokens deposited
+    /// @param shares Amount of yield shares received
     event Deposited(address indexed user, uint256 amount, uint256 shares);
 
     /// @notice Emitted when a user redeems their investment
-    event Redeemed(address indexed user, address indexed to, uint256 shares, uint256 amount);
+    /// @param user Address of the redeemer
+    /// @param shares Amount of yield shares redeemed
+    /// @param amount Amount of tokens received
+    event Redeemed(address indexed user, uint256 shares, uint256 amount);
 
     /// @notice Emitted when update pool is called
     event UpdatePool();
@@ -107,9 +109,6 @@ contract FixedTermYield is Ownable2Step, ReentrancyGuardTransient {
 
     /// @notice Emitted when tokens are recovered from the contract
     event TokenRecovery(address indexed token, uint256 amount);
-
-    /// @notice Emitted when an redeem whitelist address updated
-    event RedeemToWhitelistUpdated(address indexed account, bool status);
 
     /*//////////////////////////////////////////////////////////////////////////
                                      CONSTRUCTOR
@@ -188,22 +187,49 @@ contract FixedTermYield is Ownable2Step, ReentrancyGuardTransient {
     /// @notice Allows users to redeem all their principal and accumulated rewards after term ends
     /// @return amount Amount of principal tokens received
     function redeem() external nonReentrant returns (uint256 amount) {
-        return _redeemTo(msg.sender, msg.sender);
-    }
+        require(block.timestamp >= endTimestamp, "Fixed term not ended");
 
-    /// @notice Redeem funds to a whitelisted contract and execute a callback
-    /// @param _to Whitelisted contract that receives funds and callback
-    /// @param _data Calldata passed to `_to` after redemption
-    /// @return amount Amount of principal tokens sent to `_to`
-    function redeemToAndCall(address _to, bytes calldata _data) external nonReentrant returns (uint256 amount) {
-        require(_to != address(0), ErrorsLib.ZeroAddress());
-        require(redeemToWhitelist[_to], "Address not whitelisted");
+        UserInfo storage user = userInfo[msg.sender];
+        uint256 sharesToRedeem = user.shares;
+        require(sharesToRedeem > 0, "No shares to redeem");
 
-        amount = _redeemTo(msg.sender, _to);
+        // Finalize pools once after term ends for saving gas
+        if (!poolsFinalized) {
+            _updatePools();
+            poolsFinalized = true;
+        }
 
-        (bool success,) = _to.call(_data);
+        // Accumulate remaining pending rewards
+        _harvestRewards(msg.sender);
 
-        require(success, "External call failed");
+        // Redeem principal
+        if (underlying != address(0)) {
+            amount = WrappedNLP(address(yieldToken)).unwrapAndRedeem(sharesToRedeem, msg.sender);
+        } else {
+            yieldToken.safeTransfer(msg.sender, sharesToRedeem);
+            amount = sharesToRedeem;
+        }
+
+        // Update global and user shares
+        totalShares -= sharesToRedeem;
+        user.shares = 0;
+
+        // Claim all accumulated rewards
+        for (uint256 i = 0; i < rewardTokens.length; i++) {
+            address token = rewardTokens[i];
+            uint256 claimableAmount = user.unclaimedRewards[token];
+
+            // Reset user's reward to 0
+            user.rewardDebts[token] = 0;
+
+            if (claimableAmount > 0) {
+                user.unclaimedRewards[token] = 0;
+                IERC20(token).safeTransfer(msg.sender, claimableAmount);
+                emit RewardHarvested(msg.sender, token, claimableAmount);
+            }
+        }
+
+        emit Redeemed(msg.sender, sharesToRedeem, amount);
     }
 
     /// @notice Emergency redeem funds without caring about rewards
@@ -304,18 +330,6 @@ contract FixedTermYield is Ownable2Step, ReentrancyGuardTransient {
         emit EmergencyRedeemStatusUpdated(_enabled);
     }
 
-    /// @notice Batch update whitelist status for contracts that may receive `redeemToAndCall` payouts
-    /// @param accounts Recipient addresses to update
-    /// @param statuses Desired whitelist flags aligned with `accounts`
-    function setRedeemToWhitelist(address[] calldata accounts, bool[] calldata statuses) external onlyOwner {
-        for (uint256 i = 0; i < accounts.length; i++) {
-            require(accounts[i] != address(0), ErrorsLib.ZeroAddress());
-
-            redeemToWhitelist[accounts[i]] = statuses[i];
-            emit RedeemToWhitelistUpdated(accounts[i], statuses[i]);
-        }
-    }
-
     /// @notice View function to see pending rewards for a user
     /// @param _user Address of the user to check
     /// @return tokens Array of reward token addresses
@@ -349,52 +363,6 @@ contract FixedTermYield is Ownable2Step, ReentrancyGuardTransient {
     /*//////////////////////////////////////////////////////////////////////////
                                 INTERNAL FUNCTIONS
     //////////////////////////////////////////////////////////////////////////*/
-
-    function _redeemTo(address _from, address _to) internal returns (uint256 amount) {
-        require(block.timestamp >= endTimestamp, "Fixed term not ended");
-
-        UserInfo storage user = userInfo[_from];
-        uint256 sharesToRedeem = user.shares;
-        require(sharesToRedeem > 0, "No shares to redeem");
-
-        // Finalize pools once after term ends for saving gas
-        if (!poolsFinalized) {
-            _updatePools();
-            poolsFinalized = true;
-        }
-
-        // Accumulate remaining pending rewards
-        _harvestRewards(_from);
-
-        // Redeem principal
-        if (underlying != address(0)) {
-            amount = WrappedNLP(address(yieldToken)).unwrapAndRedeem(sharesToRedeem, _to);
-        } else {
-            yieldToken.safeTransfer(_to, sharesToRedeem);
-            amount = sharesToRedeem;
-        }
-
-        // Update global and user shares
-        totalShares -= sharesToRedeem;
-        user.shares = 0;
-
-        // Claim all accumulated rewards
-        for (uint256 i = 0; i < rewardTokens.length; i++) {
-            address token = rewardTokens[i];
-            uint256 claimableAmount = user.unclaimedRewards[token];
-
-            // Reset user's reward to 0
-            user.rewardDebts[token] = 0;
-
-            if (claimableAmount > 0) {
-                user.unclaimedRewards[token] = 0;
-                IERC20(token).safeTransfer(_to, claimableAmount);
-                emit RewardHarvested(_to, token, claimableAmount);
-            }
-        }
-
-        emit Redeemed(_from, _to, sharesToRedeem, amount);
-    }
 
     function _updatePools() internal {
         for (uint256 i = 0; i < rewardTokens.length; i++) {

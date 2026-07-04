@@ -1,39 +1,56 @@
 # inverse-finance — deployments
 
-360 verified deployment(s) across 151 component(s).
+389 verified deployment(s) across 155 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x0173804066f7403e0815680f3dda125a6cd10f7c` | ProgrammableDataTokenTransfers-2 | impl | inactive | no |
+| arbitrum | `0x0173804066f7403e0815680f3dda125a6cd10f7c` | ProgrammableDataTokenTransfers | impl | inactive | no |
 | arbitrum | `0x02eaa69646183c069fc2b64f15923f27b9cf3b03` | AuraFarmer | impl | inactive | no |
-| arbitrum | `0x1230bd56bf23bf7adf95b9f861711301e3ccd6b3` | GovernanceProxy | impl | inactive | no |
+| arbitrum | `0x1230bd56bf23bf7adf95b9f861711301e3ccd6b3` | GovernanceProxy-2 | impl | inactive | no |
 | arbitrum | `0x1992af61fbf8ee38741bcc57d636caa22a1a7702` | AuraFarmer | impl | inactive | no |
 | arbitrum | `0x2457937668a345305fe08736f407fba3f39cbf2f` | AuraFarmer | impl | inactive | no |
 | arbitrum | `0x402f38457800c32c67c5983381a685a4a1d4f8bb` | ExchangeRateUpdater | impl | live | no |
 | arbitrum | `0x4c7b266b4bf0a8758fa85e69292ee55c212236cf` | AuraFarmer | impl | inactive | no |
-| arbitrum | `0x607bcd974bb69c78ecdbf0b68748b791bba24d94` | GovernanceProxy | impl | live | no |
+| arbitrum | `0x607bcd974bb69c78ecdbf0b68748b791bba24d94` | GovernanceProxy-2 | impl | live | no |
 | arbitrum | `0x788c3efc8182393915e216174a03cd81395f8c7a` | AuraFarmer | impl | live | no |
 | arbitrum | `0x7a1e123e41458aabab8068bfed6010d8f9480898` | AuraFarmer | impl | live | no |
 | arbitrum | `0x80819e03829a71fee5fdca95acbc006e2ebf91f0` | AuraFarmer | impl | inactive | no |
 | arbitrum | `0x8bbd036d018657e454f679e7c4726f7a8ece2773` | AuraFarmer | impl | inactive | no |
 | arbitrum | `0x9060a61994f700632d16d6d2938ca3c7a1d344cb` | AuraFarmer | impl | inactive | no |
+| arbitrum | `0x912fa810fc246bc60689a7b537d7344ee0366f69` | BurnTokenPoolFactory | impl | live | no |
 | arbitrum | `0x93685185666c8d34ad4c574b3dbf41231bbfb31b` | ExchangeRateUpdater | impl | live | no |
-| arbitrum | `0xaff87cc246ba8a7d4000d01635b424319ad80ce6` | ProgrammableDataTokenTransfers-2 | impl | inactive | no |
-| arbitrum | `0xc6279a7cd38819ebbf6ad3a05a0998f887df2740` | ProgrammableDataTokenTransfers-2 | impl | inactive | no |
-| arbitrum | `0xc761ebd4e2bd6cc171cbfb29e81bc9819e7f2a16` | GovernanceProxy | impl | live | no |
+| arbitrum | `0xaff87cc246ba8a7d4000d01635b424319ad80ce6` | ProgrammableDataTokenTransfers | impl | inactive | no |
+| arbitrum | `0xbbc28db61df26b76d5f7d5eed17ed4d6c278460e` | BurnMintTokenPool-2 | impl | live | no |
+| arbitrum | `0xc6279a7cd38819ebbf6ad3a05a0998f887df2740` | ProgrammableDataTokenTransfers | impl | inactive | no |
+| arbitrum | `0xc761ebd4e2bd6cc171cbfb29e81bc9819e7f2a16` | GovernanceProxy-2 | impl | live | no |
 | arbitrum | `0xcbb162b761b83578b2a0226cbaf4c1ade0d60b2e` | AuraFarmer | impl | inactive | no |
 | arbitrum | `0xde1697a5da5d06904c9755e3fc287d215579daf0` | AuraFarmer | impl | inactive | no |
 | arbitrum | `0xe96e99a5a3512468a4aafc317d77c6fa0289f5f3` | AuraFarmer | impl | inactive | no |
+| arbitrum | `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb` | LockedTokenPoolFactory | impl | live | no |
 | arbitrum | `0xfd0bf44f31a83d407c8d0e46d352e25560397905` | AuraFarmer | impl | inactive | no |
-| base | `0x0173804066f7403e0815680f3dda125a6cd10f7c` | ProgrammableDataTokenTransfers | impl | inactive | no |
+| base | `0x0173804066f7403e0815680f3dda125a6cd10f7c` | ProgrammableDataTokenTransfers-2 | impl | inactive | no |
+| base | `0x1c064265e053d23d120c518fdbb542e6537f82d1` | GovernanceProxy | impl | live | no |
 | base | `0x2457937668a345305fe08736f407fba3f39cbf2f` | AeroFed | impl | inactive | no |
-| base | `0xaff87cc246ba8a7d4000d01635b424319ad80ce6` | ProgrammableDataTokenTransfers | impl | inactive | no |
-| base | `0xc6279a7cd38819ebbf6ad3a05a0998f887df2740` | ProgrammableDataTokenTransfers | impl | inactive | no |
+| base | `0x5d5392505ee69f9fe7a6a1c1af14f17db3b3e364` | GovernanceProxy-2 | impl | inactive | no |
+| base | `0x788c3efc8182393915e216174a03cd81395f8c7a` | ExchangeRateUpdater | impl | live | no |
+| base | `0x7a1e123e41458aabab8068bfed6010d8f9480898` | ExchangeRateUpdater | impl | live | no |
+| base | `0x80819e03829a71fee5fdca95acbc006e2ebf91f0` | ERC20Mintable | impl | inactive | no |
+| base | `0x8bbd036d018657e454f679e7c4726f7a8ece2773` | ERC20Mintable | impl | inactive | no |
+| base | `0x9060a61994f700632d16d6d2938ca3c7a1d344cb` | ERC20Mintable | impl | inactive | no |
+| base | `0x912fa810fc246bc60689a7b537d7344ee0366f69` | BurnTokenPoolFactory | impl | live | no |
+| base | `0xaff87cc246ba8a7d4000d01635b424319ad80ce6` | ProgrammableDataTokenTransfers-2 | impl | inactive | no |
+| base | `0xc415ff1574a106e238bc29693457af5d224ec27c` | GovernanceProxy | impl | live | no |
+| base | `0xc6279a7cd38819ebbf6ad3a05a0998f887df2740` | ProgrammableDataTokenTransfers-2 | impl | inactive | no |
+| base | `0xca78ee4544ec5a33af86f1e786efc7d3652bf005` | ERC20Mintable-2 | impl | live | no |
+| base | `0xd84e1b7e1a7a8d49167884855c3985ef4bca45ab` | BurnMintTokenPool | impl | live | no |
 | base | `0xde1697a5da5d06904c9755e3fc287d215579daf0` | AeroFed | impl | inactive | no |
 | base | `0xe96e99a5a3512468a4aafc317d77c6fa0289f5f3` | AeroFarmer | impl | inactive | no |
+| base | `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb` | ERC20Mintable-2 | impl | live | no |
 | base | `0xfd0bf44f31a83d407c8d0e46d352e25560397905` | AeroFarmer | impl | inactive | no |
-| chain-80094 | `0x02eaa69646183c069fc2b64f15923f27b9cf3b03` | ERC20Mintable | impl | live | no |
-| chain-80094 | `0x1992af61fbf8ee38741bcc57d636caa22a1a7702` | GovernanceProxy-2 | impl | live | no |
+| chain-80094 | `0x02eaa69646183c069fc2b64f15923f27b9cf3b03` | ERC20Mintable-2 | impl | live | no |
+| chain-80094 | `0x1992af61fbf8ee38741bcc57d636caa22a1a7702` | GovernanceProxy | impl | live | no |
+| chain-80094 | `0x8bbd036d018657e454f679e7c4726f7a8ece2773` | BurnMintTokenPool | impl | live | no |
+| chain-80094 | `0xde1697a5da5d06904c9755e3fc287d215579daf0` | ExchangeRateUpdater | impl | live | no |
 | ethereum | `0x01eca33e20a4c379bd8a5361f896a7dd2bae4ce8` | BorrowController | impl | inactive | no |
 | ethereum | `0x043646a09fa89a1d8f48788008e70299bb269855` | Migration | impl | live | no |
 | ethereum | `0x0539638ba429c87ae2e8f7951e105df372a1e3bf` | Helper | impl | live | no |
@@ -180,6 +197,7 @@
 | ethereum | `0x6d27dd57a7dbf5b27a3fcabd75c916ac765a346c` | FiRMSlashingModule | impl | live | yes |
 | ethereum | `0x6d961c9dcf1ad73566822ba4b087892e3839b849` | Factory | proxy | live | no |
 | ethereum | `0x6f80a22a57c7f0257094ea8d426af3f747defbc7` | JDola | impl | live | yes |
+| ethereum | `0x70f3795c1ef726c58ffea2e1a51526ac5707c066` | ProgrammableDataTokenTransfers | impl | inactive | no |
 | ethereum | `0x7163d6308dcc712488eba2e965ad0cf517293a8b` | ArbiFed | impl | inactive | no |
 | ethereum | `0x7275fd8a1b5f4874b10066236309d8901a848228` | ArbiAuraFarmerMessenger | impl | inactive | no |
 | ethereum | `0x731b65a993c7a4ff10d304d5204afc51033cda4c` | Comptroller | impl | live | no |
@@ -191,6 +209,7 @@
 | ethereum | `0x783719ddf09d2ee0960bb365f7ef652bfe35f54d` | BaseFedCCTP | impl | inactive | no |
 | ethereum | `0x788c3efc8182393915e216174a03cd81395f8c7a` | VeloFarmerMessenger | impl | inactive | no |
 | ethereum | `0x79ef6d28c41e47a588e2f2ffb4140eb6d952aec4` | Market | impl | live | no |
+| ethereum | `0x7a43c13f7fb3a0bf19ceb3fbc583a0cada6d29a2` | ProgrammableDataTokenTransfers | impl | inactive | no |
 | ethereum | `0x7be97685990602a40e86a1a34294c5e3d6e41a4e` | BorrowController | impl | inactive | no |
 | ethereum | `0x7cac7f6be1f74d00d874bbacb98b531fa889d613` | Auction | impl | live | no |
 | ethereum | `0x7cd14096cd6f81e31e945afb7de41a5d7d970589` | InvPriceFeed | impl | inactive | no |
@@ -302,7 +321,9 @@
 | ethereum | `0xd21cba93074fbe899338c2b6ec4ff711c865428c` | StethFeed | impl | inactive | no |
 | ethereum | `0xd398e8beee7dfdc52f066295a3db18bc177048c4` | ERC4626Feed | impl | live | no |
 | ethereum | `0xd3d6ddb266dc9db2b71b095840c3b98e17e6f1a7` | FixedRateIRM | impl | live | no |
+| ethereum | `0xd5a3416f7863f306ca7cd9b12f067fffd5d57a61` | ExchangeRateUpdater | impl | live | no |
 | ethereum | `0xd60b06b457bff7fc38ac5e7ece2b5ad16b288326` | CToken | impl | live | no |
+| ethereum | `0xd6376e280b76eb83d36f690c360bdd6bfd704089` | ExchangeRateUpdater | impl | live | no |
 | ethereum | `0xd68d3a44d46dd50bfeba8cca544717b76e7c4b29` | Market | impl | live | no |
 | ethereum | `0xd79bcf0ad38e06bc0be56768939f57278c7c42f7` | CToken | impl | live | no |
 | ethereum | `0xd7d1eb9a02668fe56b7e2037a8ac91576bb27595` | ArbiGovMessengerL1 | impl | inactive | no |
@@ -354,46 +375,21 @@
 | optimism | `0x02eaa69646183c069fc2b64f15923f27b9cf3b03` | VeloFarmer | impl | inactive | no |
 | optimism | `0x1992af61fbf8ee38741bcc57d636caa22a1a7702` | VeloFarmer | impl | inactive | no |
 | optimism | `0x2457937668a345305fe08736f407fba3f39cbf2f` | VeloFarmer | impl | inactive | no |
+| optimism | `0x43d3942f46c8dc6e9adc8e0678e3ca073bae1e86` | GovernanceProxy | impl | live | no |
+| optimism | `0x474e3e8a1818c33864a728f30ee8035c4010fa42` | ProgrammableDataTokenTransfers-3 | impl | inactive | no |
 | optimism | `0x4c7b266b4bf0a8758fa85e69292ee55c212236cf` | VeloFarmer | impl | inactive | no |
 | optimism | `0x5d5392505ee69f9fe7a6a1c1af14f17db3b3e364` | VeloFarmer | impl | inactive | no |
-| optimism | `0x63fad99705a255fe2d500e498dbb3a9ae5aa1ee8` | BurnTokenPoolFactory | impl | live | no |
+| optimism | `0x63fad99705a255fe2d500e498dbb3a9ae5aa1ee8` | BurnTokenPoolFactory-2 | impl | live | no |
 | optimism | `0x80819e03829a71fee5fdca95acbc006e2ebf91f0` | VeloFarmerV2 | impl | inactive | no |
 | optimism | `0x8404024d8f74ad2d20e82c184816b64d4184a018` | BurnMintTokenPool | impl | live | no |
 | optimism | `0x8bbd036d018657e454f679e7c4726f7a8ece2773` | VeloFarmerV2 | impl | inactive | no |
 | optimism | `0x9060a61994f700632d16d6d2938ca3c7a1d344cb` | VeloFarmerV3 | impl | inactive | no |
 | optimism | `0x912fa810fc246bc60689a7b537d7344ee0366f69` | VeloFarmer | impl | live | no |
+| optimism | `0xaf956837af704d825c1fcbe2651d5c3c37ad5289` | GovernanceProxy | impl | live | no |
+| optimism | `0xb5a998e90aded2c97f7cedbb7c45bbc27e82dfdd` | ProgrammableDataTokenTransfers | impl | inactive | no |
+| optimism | `0xc53ea7734e189f446c1afc5a69230527c2f28387` | ProgrammableDataTokenTransfers-3 | impl | inactive | no |
+| optimism | `0xca78ee4544ec5a33af86f1e786efc7d3652bf005` | ExchangeRateUpdater | impl | live | no |
+| optimism | `0xcbb162b761b83578b2a0226cbaf4c1ade0d60b2e` | GovernanceProxy-2 | impl | inactive | no |
 | optimism | `0xde1697a5da5d06904c9755e3fc287d215579daf0` | VeloFarmer | impl | inactive | no |
+| optimism | `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb` | ExchangeRateUpdater | impl | live | no |
 | optimism | `0xfc63c9c8ba44ae89c01265453ed4f427c80cbd4e` | VeloFarmer | impl | live | no |
-
-## Source unavailable (29)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x912fa810fc246bc60689a7b537d7344ee0366f69`
-- arbitrum `0xbbc28db61df26b76d5f7d5eed17ed4d6c278460e`
-- arbitrum `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb`
-- base `0x1c064265e053d23d120c518fdbb542e6537f82d1`
-- base `0x5d5392505ee69f9fe7a6a1c1af14f17db3b3e364`
-- base `0x788c3efc8182393915e216174a03cd81395f8c7a`
-- base `0x7a1e123e41458aabab8068bfed6010d8f9480898`
-- base `0x80819e03829a71fee5fdca95acbc006e2ebf91f0`
-- base `0x8bbd036d018657e454f679e7c4726f7a8ece2773`
-- base `0x9060a61994f700632d16d6d2938ca3c7a1d344cb`
-- base `0x912fa810fc246bc60689a7b537d7344ee0366f69`
-- base `0xc415ff1574a106e238bc29693457af5d224ec27c`
-- base `0xca78ee4544ec5a33af86f1e786efc7d3652bf005`
-- base `0xd84e1b7e1a7a8d49167884855c3985ef4bca45ab`
-- base `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb`
-- chain-80094 `0x8bbd036d018657e454f679e7c4726f7a8ece2773`
-- chain-80094 `0xde1697a5da5d06904c9755e3fc287d215579daf0`
-- ethereum `0x70f3795c1ef726c58ffea2e1a51526ac5707c066`
-- ethereum `0x7a43c13f7fb3a0bf19ceb3fbc583a0cada6d29a2`
-- ethereum `0xd5a3416f7863f306ca7cd9b12f067fffd5d57a61`
-- ethereum `0xd6376e280b76eb83d36f690c360bdd6bfd704089`
-- optimism `0x43d3942f46c8dc6e9adc8e0678e3ca073bae1e86`
-- optimism `0x474e3e8a1818c33864a728f30ee8035c4010fa42`
-- optimism `0xaf956837af704d825c1fcbe2651d5c3c37ad5289`
-- optimism `0xb5a998e90aded2c97f7cedbb7c45bbc27e82dfdd`
-- optimism `0xc53ea7734e189f446c1afc5a69230527c2f28387`
-- optimism `0xca78ee4544ec5a33af86f1e786efc7d3652bf005`
-- optimism `0xcbb162b761b83578b2a0226cbaf4c1ade0d60b2e`
-- optimism `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb`

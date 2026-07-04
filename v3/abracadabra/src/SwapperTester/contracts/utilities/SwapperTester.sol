@@ -27,15 +27,14 @@ interface ILevSwapper {
 contract SwapperTester is Ownable {
     using SafeTransferLib for ERC20;
 
-    address public degenBox;
     address public mim;
 
-    constructor(address _mim, address _degenBox) {
+    constructor(address _mim) {
         mim = _mim;
-        degenBox = _degenBox;
     }
 
     function testLiquidation(
+        address degenBox,
         address swapper,
         address collateral,
         uint256 amount,
@@ -52,6 +51,7 @@ contract SwapperTester is Ownable {
     }
 
     function testLeveraging(
+        address degenBox,
         address swapper,
         address collateral,
         uint256 amount,

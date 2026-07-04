@@ -83,4 +83,7 @@ library Roles {
 
     // Backing Oracle
     bytes32 public constant BACKING_ORACLE_MANAGER = keccak256("BACKING_ORACLE_MANAGER");
+
+    // Silo Vault Reward Manager
+    bytes32 public constant DESTINATION_VAULT_SILO_MANAGER = keccak256("DESTINATION_VAULT_SILO_MANAGER");
 }

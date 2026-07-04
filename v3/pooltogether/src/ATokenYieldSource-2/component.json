@@ -1,0 +1,18 @@
+{
+  "component": "ATokenYieldSource-2",
+  "main_contract": "ATokenYieldSource",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32e8d4c9d1b711bc958d0ce8d14b41f77bb03a64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

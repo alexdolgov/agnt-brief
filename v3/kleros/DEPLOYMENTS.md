@@ -1,6 +1,6 @@
 # kleros — deployments
 
-272 verified deployment(s) across 84 component(s).
+311 verified deployment(s) across 100 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,9 +9,12 @@
 | arbitrum | `0x0cb3626edf41f27a192102630d0502ccd93cf043` | SortitionModuleNeo | impl | inactive | no |
 | arbitrum | `0x0cfbaca5c72e7ca5ffabe768e135654fb3f2a5a2` | DisputeTemplateRegistryProxy | proxy | inactive | no |
 | arbitrum | `0x0d41cb0c9da123a7554c5eee87ad289874e85e48` | SBT | impl | live | no |
+| arbitrum | `0x15e5964c7751df8563ea4bc000301582c79bc454` | PolicyRegistry-3 | impl | inactive | no |
 | arbitrum | `0x17c39ab53a7072b167a74a85d47b30385c98ae89` | KlerosCoreNeo | impl | inactive | no |
 | arbitrum | `0x21a9402adb818744b296e1d1be58c804118dc03d` | SortitionModuleNeo | proxy | inactive | no |
+| arbitrum | `0x26c1980120f1c82cf611d666ce81d2b54d018547` | PolicyRegistry-4 | proxy | inactive | no |
 | arbitrum | `0x2a2f1fbbf07c1372371cf4a65cb28c2df681850b` | SBT | impl | live | no |
+| arbitrum | `0x2ac2edfd336732bc6963f1ad03ed98b22db949da` | PolicyRegistry-5 | impl | inactive | no |
 | arbitrum | `0x330bd769382cfc6d50175903434ccc8d206dcae5` | ClonableBeaconProxy | proxy | live | no |
 | arbitrum | `0x3645f9e08d80e47c82ad9e33fcb4ea703822c831` | DisputeResolver | impl | live | no |
 | arbitrum | `0x39d123fc4cfd24ea5bb76195f9ecfe1f0df35b0b` | BlockHashRNG | impl | live | no |
@@ -22,6 +25,7 @@
 | arbitrum | `0x4ce87329d40f15509d5f9bf4d9ce1a081a80cefb` | DisputeTemplateRegistryProxy | impl | inactive | no |
 | arbitrum | `0x4dd8b69958ef1d7d5da9347e9d9f57adfc3dc284` | KlerosCoreNeo | impl | inactive | no |
 | arbitrum | `0x52c9f5634361ed3641016e5d9783310f9eff9e25` | DisputeTemplateRegistryProxy | proxy | inactive | no |
+| arbitrum | `0x553dcbf6ab3ae06a1064b5200df1b5a9fb403d3c` | DisputeTemplateRegistryProxy | proxy | inactive | no |
 | arbitrum | `0x57efd43dafceb6c58df57932b2b299f46fef5c87` | DisputeTemplateRegistryProxy | impl | inactive | no |
 | arbitrum | `0x5d64cb92c351e46615ce427015a2f1e0823a2402` | EscrowUniversal | impl | live | no |
 | arbitrum | `0x614498118850184c62f82d08261109334bfb050f` | SortitionModuleNeo | proxy | inactive | no |
@@ -49,6 +53,7 @@
 | arbitrum | `0xb5526d022962a1fff6ed32c93e8b714c901f4323` | DisputeResolver-2 | impl | live | no |
 | arbitrum | `0xb7c292cd9fd3d20de84a71ae1caf054eeb6374a9` | DisputeKitClassic | proxy | inactive | no |
 | arbitrum | `0xb80fb682dc65db6b8bec19ae2fd47abfbb6adf43` | SBT | impl | live | no |
+| arbitrum | `0xbc5ef8d9ad307154447ae148c088f083d2dea4ef` | TransactionBatcher-4 | impl | live | no |
 | arbitrum | `0xbcf80cb53f173ff8be96813a40be20efab2b59ed` | SBT | impl | live | no |
 | arbitrum | `0xc0169e0b19ae02ac4fadd689260cf038726dfe13` | KlerosCoreRuler | proxy | inactive | no |
 | arbitrum | `0xc1210493804eef123096f9581ee82b915150e54c` | KlerosCoreNeo | impl | inactive | no |
@@ -66,8 +71,9 @@
 | arbitrum | `0xf1a7cd3115f5852966430f8e3877d2221f074a2e` | RandomizerRNGProxy | impl | inactive | no |
 | arbitrum | `0xf3103b46403a0bbd4551648bfb29bcc2b8783947` | DisputeKitShutterProxy | impl | inactive | no |
 | arbitrum | `0xf327200420f21baafce8f1c03b1eedf926074b95` | SortitionModuleNeo | impl | inactive | no |
+| arbitrum | `0xf7ee0cd4e33c832dc05fb359896add6e14e96c28` | PolicyRegistry-6 | impl | inactive | no |
 | ethereum | `0x01aeac2635c607137318e217c0c29360c91cbddc` | MiniMeTokenFactory | impl | inactive | no |
-| ethereum | `0x03a9458d77dd705829fa758c64dbe770385295cc` | PolicyRegistry | impl | inactive | no |
+| ethereum | `0x03a9458d77dd705829fa758c64dbe770385295cc` | PolicyRegistry-2 | impl | inactive | no |
 | ethereum | `0x08cc5a88ce4a0d047ba21c523240c2b8d1ac4474` | TokensViewV3 | impl | inactive | no |
 | ethereum | `0x0b3b0ce0471cfcabc7fdc11b6b67201ca35100f0` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x0d67440946949fe293b45c52efd8a9b3d51e2522` | MultipleArbitrableTransaction | impl | live | no |
@@ -80,17 +86,19 @@
 | ethereum | `0x13fc0a6ac946a6d1c29ff0b7266d6138d83215db` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x15daedbebf8083620ffbe9a675fb53b40c12d2ac` | RealitioArbitratorProxy | impl | inactive | no |
 | ethereum | `0x1c2811550551d84030cd1b608e6fe3fd6fd5fc0d` | Realitio_v2_1_ArbitratorWithAppeals-2 | impl | live | no |
+| ethereum | `0x2018038203aee8e7a29dabd73771b0355d4f85ad` | Realitio_v2_1_ArbitratorWithAppeals-2 | impl | inactive | no |
 | ethereum | `0x211f01e59b425253c0a0e9a7bf612605b42ce82c` | Kleros | impl | live | no |
 | ethereum | `0x2224264f8588c37c8ecbd0818187b5e87ede46f8` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x291b079cfeb16de397be079338c43ea21239d085` | ArbitrableAddressList | impl | inactive | no |
 | ethereum | `0x2b639ac410b27c52b04d792f359ad443227768cb` | TransparentUpgradeableProxy | proxy | inactive | no |
-| ethereum | `0x2ce3f8c16da2bcb45ad0ccbbd82151b0c04eccc8` | LightGeneralizedTCR | impl | inactive | no |
+| ethereum | `0x2ce3f8c16da2bcb45ad0ccbbd82151b0c04eccc8` | LightGeneralizedTCR-2 | impl | inactive | no |
 | ethereum | `0x327a29fce0a6490e4236240be176daa282eccfdf` | KlerosGovernor | impl | live | no |
 | ethereum | `0x32bcdc9776692679cfbbf8350bad67da13faaa3f` | RealitioForeignArbitrationProxyWithAppeals | impl | inactive | no |
 | ethereum | `0x33c2a5577090ab3ef0586c543f89dcb37bc2d9d7` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x34eaaa425e11a3b40857457b1ccafd8b615f5495` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x38aa214dc986d0bab53e5861071f3d5a56066b4d` | BatchWithdraw | impl | inactive | no |
 | ethereum | `0x393df49b027575a567d0d726505267878d8ee923` | AdminUpgradeabilityProxy | proxy | inactive | no |
+| ethereum | `0x395ba214c57a8e5270c094f4f8d85edcefb38940` | Realitio_v2_1_ArbitratorWithAppeals-3 | impl | inactive | no |
 | ethereum | `0x395df49c20e34a7ea995cbf546e54f66172992ea` | MiniMeToken | impl | live | no |
 | ethereum | `0x3b6c03b232f87aee2ea6561ec7bf080a7710d667` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x412c0617f357e640406ff0b4ee55f547c3692ba7` | RealitioForeignProxyPolygon | impl | live | no |
@@ -115,12 +123,14 @@
 | ethereum | `0x5a3304e716bd2495438602f8ee80342364658d8d` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x5c6363cfa9462ae11e22d2a5a0eb15dbb8719e4a` | LightBatchWithdraw | impl | inactive | no |
 | ethereum | `0x60d968067655f9e363191883495d2e714f6da2ed` | ArbitrableTCRViewV2 | impl | inactive | no |
+| ethereum | `0x631c8209684e5184e1d3f7ef2bef669c3ae67eaa` | ProxyAdmin-2 | impl | inactive | no |
 | ethereum | `0x63feb162fa524f77c82ce74f243536ed235023b2` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x67a57535b11445506a9e340662cd0c9755e5b1b4` | MultiSigWallet | impl | live | no |
 | ethereum | `0x68c4cc21378301cfdd5702d66d58a036d7bafe28` | RealitioForeignArbitrationProxyWithAppeals | impl | inactive | no |
 | ethereum | `0x6b3d669381808c1aa593339f0e2a79e206ed688a` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x713e11c146911b2cba7df18b89bffaa64f2c9d24` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x71879ed2897033eb9e4f3b94be21ed810f759456` | AdminUpgradeabilityProxy | proxy | inactive | no |
+| ethereum | `0x728cba71a3723caab33ea416cb46e2cc9215a596` | Realitio_v2_1_ArbitratorWithAppeals-3 | impl | inactive | no |
 | ethereum | `0x7392b85edc92ea6cb0f252a42aab80f96fb908de` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x746d94f1161c991675ede99abcdb0412a4fee43e` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x772fbe99852051a848776fdc5a99689a73c2857e` | TransparentUpgradeableProxy | proxy | inactive | no |
@@ -128,6 +138,7 @@
 | ethereum | `0x7d206232f7e9e22796f3a2316f2f8a8019fd599a` | GTCRFactory | impl | inactive | no |
 | ethereum | `0x7f05191abf1ac9a105413a3d203ad96ba401e824` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x800643d341068e60c29c3d0fea2a2a6642b7225e` | AmbGreeterReceiver | impl | live | no |
+| ethereum | `0x82458d1c812d7c930bb3229c9e159cbabd9aa8cb` | TransactionBatcher-2 | impl | live | no |
 | ethereum | `0x8453ba2c9ea5bae36fde6cbd61c12c05b6552425` | RealitioForeignArbitrationProxyWithAppeals | impl | inactive | no |
 | ethereum | `0x87aade1067ed0276ec9bef6db8e17abe27a6b454` | TruthPost | impl | inactive | no |
 | ethereum | `0x87c260900c391559fd2816c9fbf078de37e2f520` | MiniMeToken | impl | live | no |
@@ -142,6 +153,7 @@
 | ethereum | `0x950722fe21fd4deaed25fe618c22047323e5eea6` | TokensViewV3 | impl | inactive | no |
 | ethereum | `0x963d41e65890e18870212d9921edcd62538030b6` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x975abc8c4e935385e85b0c53c88e468dcad961c1` | AdminUpgradeabilityProxy | proxy | inactive | no |
+| ethereum | `0x988b3a538b618c7a603e1c11ab82cd16dbe28069` | KlerosLiquid | proxy | inactive | no |
 | ethereum | `0x98f1309f96044000174a89c2a0e2001ea5d7a524` | GeneralizedTCRView | impl | inactive | no |
 | ethereum | `0x99489d7bb33539f3d1a401741e56e8f02b9ae0cf` | ArbitrableProxy | impl | inactive | no |
 | ethereum | `0xa08e7697a450bf2b3e7bf84e7963be6ef552ff21` | TransparentUpgradeableProxy | proxy | inactive | no |
@@ -160,13 +172,14 @@
 | ethereum | `0xba615fa326414f64afaf7306fa06fcf15f5318b8` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0xbae1abd20d674f5314100bec68971210af92157c` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0xbbb9a4ddbbcc89d2428002bec854f8d99af60d36` | RealitioForeignProxyPolygon | impl | live | no |
+| ethereum | `0xc45d8d9b2b6843528a4dc2d8b5858e5c258d2992` | Realitio_v2_1_ArbitratorWithAppeals-2 | impl | inactive | no |
 | ethereum | `0xc5e9ddebb09cd64dfacab4011a0d5cedaf7c9bdb` | ProofOfHumanity | impl | live | no |
 | ethereum | `0xce56f10d9dc0547b2ed77ae17f43dc2bbd8f8f11` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0xd5ee4cbe30b127987541a68dd545293c4524bf77` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0xd6bf90e1daaa5cdec82235d2db1b93a9d50c6046` | RealitioForeignProxyPolygon | impl | live | no |
 | ethereum | `0xd6d29815329bc0b31c5b3ce13683441afabf0ef6` | Kleros | impl | live | no |
 | ethereum | `0xd8b33e3f5426db753d1c6c78b43d5151970cd928` | RealitioForeignProxyOptimism | impl | live | no |
-| ethereum | `0xda47f3252bb03c5c7950d7bb2fd32637fc5ad943` | KlerosLiquid | impl | inactive | no |
+| ethereum | `0xda47f3252bb03c5c7950d7bb2fd32637fc5ad943` | KlerosLiquid-2 | impl | inactive | no |
 | ethereum | `0xdceae1e433c6bd32681f39b34e1c4e43aa87c680` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0xddde61c2a24d7a6961d0b2ce35ae0e767f8e6202` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0xde2849c8b3baaab590960a899bea3b7d2ef24d78` | TransparentUpgradeableProxy | proxy | inactive | no |
@@ -185,7 +198,9 @@
 | ethereum | `0xf237b14ee18f426c53bab460f188dc7252881cc6` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0xf3d3945712c23c876ede5ef1d4a36e32a81af505` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0xf50771256a5339272cbceceadc5b70acf6dcba81` | TransparentUpgradeableProxy | proxy | inactive | no |
+| ethereum | `0xf72cfd1b34a91a64f9a98537fe63fbab7530adca` | Realitio_v2_1_ArbitratorWithAppeals-4 | impl | live | no |
 | ethereum | `0xfe0eb5fc686f929eb26d541d75bb59f816c0aa68` | RealitioForeignArbitrationProxyWithAppeals-2 | impl | live | no |
+| ethereum | `0xff32eff53459485074b4db14633252c9dca3791a` | Realitio_v2_1_ArbitratorWithAppeals-2 | impl | inactive | no |
 | gnosis | `0x012791f389d54a882952926a2d4349679083ab56` | LiquidityPool | impl | unknown | no |
 | gnosis | `0x02d68e2763e393e4abb77f106b3d4c1f82767171` | ProxyAdmin | impl | inactive | no |
 | gnosis | `0x097b814e6c299a8b2348ee96774c0a0820783850` | LiquidityPool | impl | unknown | no |
@@ -195,19 +210,25 @@
 | gnosis | `0x0db38fd51525cb4d7d2814ccd3fee3acee391137` | GnosisChainReceiverV2 | impl | unknown | no |
 | gnosis | `0x0f0797c62a6fbd2f0effedef3de7324449e9b6d4` | CurateProxy | impl | inactive | no |
 | gnosis | `0x163930d3a46cc9e2d9b41f5918c6e043e8cdb265` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
+| gnosis | `0x16ebb305f58324b1a7a3bd436f6305c1e95e425d` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0x17ddccd97f5e17060969b9e89ffd5f98e1d1b6d0` | xKlerosLiquidExtraViews | impl | inactive | no |
 | gnosis | `0x1aba45d6c40317ab1b9e74af367a523874f9d1c9` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
 | gnosis | `0x1b44e434976f42a6de60706fb484eb00e0371a65` | CurateProxy | impl | inactive | no |
 | gnosis | `0x1c0d5a1ff532715a58d0456ef10532e3eb6ec5de` | xKlerosLiquidExtraViews | impl | inactive | no |
 | gnosis | `0x23ac77dde48eefaab344ef9de372fd40e0d782c8` | Market | impl | live | no |
 | gnosis | `0x2700ed443fadd750894a5b406c456d78e9c86bed` | GnosisUBIBurner | impl | inactive | no |
+| gnosis | `0x2826698ee38c47a7aa0090084b9a6bfef2a114cc` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0x29f39de98d750eb77b5fafb31b2837f079fce222` | RealitioHomeArbitrationProxy | impl | inactive | no |
 | gnosis | `0x2a2bab2c2d4eb5007b0389720b287d4d19dc4001` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
 | gnosis | `0x2e39b8f43d0870ba896f516f78f57cde773cf805` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
+| gnosis | `0x2f0895732bfacdcf2fdb19962fe609d0da695f21` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0x30f3cd11fadf16fc95d09fb538a8dc3cad662283` | CurateProxy | impl | inactive | no |
 | gnosis | `0x348f2706ae7d647461ce90f9e3569014e7d135dc` | GnosisChainReceiver | impl | unknown | no |
+| gnosis | `0x35a331d064264956658aad72ee45d042d53fff3f` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
+| gnosis | `0x3828f77eda78702c26c96b67db14cdcc344d85a3` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0x3c3fb8affcbcfe23acabb037d8c841dc682c9925` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
 | gnosis | `0x3d03a8e805b913f973fe3c126b6a32592425bc96` | CurateProxySVG | impl | unknown | no |
+| gnosis | `0x3ff09d3e7a08c2d6350facf7902b4507f2490840` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0x4340f7b893c6957853a943db48f1cde4c3012c1e` | TransactionBatcher | impl | inactive | no |
 | gnosis | `0x43c9e4ba77aedff42679d41f27dbd1f1647ed35c` | BetNFTDescriptor | impl | live | no |
 | gnosis | `0x43e9062f3d4b87c49b96ada5de230b1ce69485c3` | GnosisUBIBurner | impl | inactive | no |
@@ -215,28 +236,34 @@
 | gnosis | `0x45b01141ed201a37cb83b04add7d85ba0014d37c` | CurateProxy | impl | unknown | no |
 | gnosis | `0x49c53ebbca0bd728895b6c5c0671ff7c1ca4a56d` | Market | impl | live | no |
 | gnosis | `0x4af550e1a9befd646fe8c886ac0aed0bafccf996` | Market | impl | live | no |
+| gnosis | `0x4b850c97cab9abef3bbf5ec15af68fa383cf5070` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0x4d20acd5b1d9d3065ccc53d5285095d32c3520b0` | Market | impl | live | no |
 | gnosis | `0x514a627f4b1300b95e28abb5bc6bbd511cca67ea` | ProxyAdmin | impl | inactive | no |
 | gnosis | `0x5850ce2de61a57f7a5e060f286389cf996101b63` | LiquidityPool | impl | inactive | no |
 | gnosis | `0x5a53e5cea02df6db9ed57b9fd34b8f0badc0f5e2` | CurateProxy | impl | unknown | no |
 | gnosis | `0x5dab82561c4140c43667c79ea56f8b38c2f94bec` | CurateProxy | impl | inactive | no |
-| gnosis | `0x6426800f8508b15aed271337498fa5e7d0794d46` | TransactionBatcher-2 | impl | live | no |
+| gnosis | `0x640ebf9403bfc2bd8914081be673411c34a5fba3` | PolicyRegistry | impl | inactive | no |
+| gnosis | `0x6426800f8508b15aed271337498fa5e7d0794d46` | TransactionBatcher-3 | impl | live | no |
 | gnosis | `0x65d546a32d8063bb4b2a1bfe9013a66c89e14298` | SVG | impl | unknown | no |
-| gnosis | `0x66260c69d03837016d88c9877e61e08ef74c59f2` | LightGeneralizedTCR-2 | impl | live | no |
+| gnosis | `0x66260c69d03837016d88c9877e61e08ef74c59f2` | LightGeneralizedTCR | impl | live | no |
+| gnosis | `0x6631f1f834ff59f3c8b121b65a98f0d591c05b53` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0x6767bcc090cc6208e01805d66b96a5d8bde386ec` | CurateProxy | impl | unknown | no |
 | gnosis | `0x67d3673cf19a6b0ad70d76b4e9c6f715177eb48b` | MarketFactory | impl | live | no |
 | gnosis | `0x6d65f6975e7175e3bdff8ee84f1d95e71b34cd59` | Market | impl | live | no |
 | gnosis | `0x6e30b4f5525392f08208862ef33846f3156e4ea5` | RealitioHomeArbitrationProxy | impl | inactive | no |
+| gnosis | `0x70a64a4e06bbd354ab1c8aabad2339bdcbfe467c` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0x726584e6b2d41f21ebc607610229e56b78e60f7d` | CurateProxySVG | impl | unknown | no |
 | gnosis | `0x7761d33924bb90129ef56480fc1bd8da79c8069b` | RealitioHomeArbitrationProxy | impl | inactive | no |
 | gnosis | `0x77c60805deb7f4ae102d442d367bd3ff7ebb737f` | Market | impl | live | no |
 | gnosis | `0x78fe89e1eeeb73edbc45091aee59cd18303efaf2` | GnosisChainReceiverV2 | impl | unknown | no |
+| gnosis | `0x79833a5434432abcdcd518360f7aab720e77de48` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0x7ae716d9935f41f173d944fe6557c1e117d561e9` | SortitionSumTreeFactory | impl | inactive | no |
 | gnosis | `0x8114633ddb61a5c7f04d6b3c4a3b981796e88ca6` | Market | impl | live | no |
 | gnosis | `0x8167f4bf6f39c178be68536c290e44e49925ce5f` | CurateProxySVG | impl | unknown | no |
 | gnosis | `0x855b3e53996f63d806d96054184382a35fd5f5f9` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
 | gnosis | `0x87e1bfeb31ac4fa857a08471847122ec338f3cf2` | xKlerosLiquid | impl | inactive | no |
 | gnosis | `0x9378c3f269f5a3f87956ff8dbf2d83e361a7166c` | Distributor | impl | inactive | no |
+| gnosis | `0x957a53a994860be4750810131d9c876b2f52d6e1` | LightGeneralizedTCR | impl | live | no |
 | gnosis | `0x95b66b7da268f54864a1f418565dee63da5d2c24` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
 | gnosis | `0x96920673ef681d55d935a4a3c9092df2e730b69e` | RealitioHomeArbitrationProxy | impl | inactive | no |
 | gnosis | `0x96f3cce0eb9e2891bea984c45ff9d725786eea9d` | Market | impl | live | no |
@@ -244,11 +271,15 @@
 | gnosis | `0x9b59eeea37618ed5227c3fb2420f68fe5cd1151a` | Distributor | impl | inactive | no |
 | gnosis | `0x9b8559f64a96e3ecb6e607af6a1a5036777808af` | Market | impl | live | no |
 | gnosis | `0x9c1da9a04925bdfdedf0f6421bc7eea8305f9002` | xKlerosLiquid | proxy | inactive | no |
+| gnosis | `0x9d494768936b6bdaabc46733b8d53a937a6c6d7e` | PolicyRegistry | impl | inactive | no |
 | gnosis | `0xa0c7c6b97e89db82bcb77f8cce72147c61be548e` | RealitioHomeArbitrationProxy | impl | inactive | no |
+| gnosis | `0xa1bff74550d62ef2514ed80c07cff61dffa1ebfa` | PolicyRegistry | impl | inactive | no |
 | gnosis | `0xa60f464d5b71b5d2960713c8d1f95243cd2cfa78` | xKlerosLiquidExtraViews | impl | inactive | no |
 | gnosis | `0xa73a872efd768bb23efb24ceeb9e330bcca259d6` | TransactionBatcher | impl | live | no |
+| gnosis | `0xacc285cbb0ee2de661d1449bfe2f493fb3cc96a6` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0xad17051dba7d6992dab13a0989ecb8e3b2ae519b` | WrappedPinakion | impl | inactive | no |
 | gnosis | `0xaee2f2b8e3e20c70070ad3816dc51f3041a184f4` | CurateProxySVG | impl | unknown | no |
+| gnosis | `0xb01e369265ed325133efb980fe902c06977bda8c` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0xb4cd0456e7094d80ecd2e18dad3868542a35eeca` | Market | impl | live | no |
 | gnosis | `0xb7ec1c87cfa7d4e8aa38f3b1be90de0f057d0f42` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
 | gnosis | `0xb93e0806bf82054134c372304c1ed620ae3d8ec7` | ProxyAdmin | impl | inactive | no |
@@ -260,63 +291,32 @@
 | gnosis | `0xcb3231aba3b451343e0fddfc45883c842f223846` | WrappedPinakion | proxy | inactive | no |
 | gnosis | `0xd1a711a863afb85d1b4e721dcb3e48c477e46475` | ProxyAdmin | impl | inactive | no |
 | gnosis | `0xd3bccdc9303fd760141fda7b137591d04725327b` | CurateProxy | impl | inactive | no |
+| gnosis | `0xd401c7cdeae5bccaabf2c0b7f8f28a5deab7d50c` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0xd71285ddf84857706a5244af1be713d6992093be` | BetNFTDescriptor | proxy | inactive | no |
+| gnosis | `0xd8eb9b5e2ba4105573072bafca9f642cedb01b49` | PolicyRegistry | impl | inactive | no |
 | gnosis | `0xda86232029a048c9aa0f642239a002b481283ba9` | CurateProxySVG | impl | unknown | no |
 | gnosis | `0xdcdb82e595b3c80e569ebb52c08b05f053ad7478` | FirstPriceAuction | impl | unknown | no |
 | gnosis | `0xe0441ecf50205d3548456b29fde2a3010f9a61f3` | TransactionBatcher | impl | inactive | no |
 | gnosis | `0xe40dd83a262da3f56976038f1554fe541fa75ecd` | RealitioHomeArbitrationProxy | impl | inactive | no |
 | gnosis | `0xe71ee4d1ac550eddf20c21e394405353ef80c994` | SVG | impl | unknown | no |
+| gnosis | `0xe8bf7b1ddd2273dbe6ea86a66805682bcad98763` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0xe9b3b233502ea70d03e20e88fabe8f3f27807daf` | Realitio_v2_1_ArbitratorWithAppeals | impl | inactive | no |
+| gnosis | `0xeaee250d42b1796ad56bccc903e3f6081ee03ab0` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
 | gnosis | `0xeb4938abb8db78a6a18540bd7bf25aa5997b249a` | Market | impl | live | no |
 | gnosis | `0xedafaeda401c1751e4200194132b4c4cf4b65ffb` | TransactionBatcher | impl | inactive | no |
 | gnosis | `0xf11d01506731cc293d78f749bcfae08d9d83841c` | Market | impl | live | no |
+| gnosis | `0xf29223083c232bf83ea021fbb6c075dd4a640f01` | AdminUpgradeabilityProxy-3 | impl | inactive | no |
+| gnosis | `0xf3297842d3d6c41714953d4d849dc6c0a0b04b0e` | AdminUpgradeabilityProxy-2 | impl | inactive | no |
 | gnosis | `0xfa71f907b48f27d22f670d9e446f8137b0769e4b` | xKlerosLiquidExtraViews | impl | inactive | no |
 | gnosis | `0xfd5300fb615fd66a7c912d2fbca5df71f9d79901` | GnosisChainReceiverV2 | impl | inactive | no |
+| polygon | `0x5afa42b30955f137e10f89dfb5ef1542a186f90e` | RealitioHomeArbitrationProxy-2 | impl | inactive | no |
 | polygon | `0x6116e64366a1d70a270235f31c8ff29012e58812` | RealitioHomeProxyPolygon | impl | live | no |
+| polygon | `0x68154ea682f95bf582b80dd6453fa401737491dc` | RealitioHomeArbitrationProxy-3 | impl | inactive | no |
 | polygon | `0xb4fc64c6ffe0b04ea1ec9bf27fb2e8696c82b2ef` | RealitioHomeProxyPolygon | impl | live | no |
 | polygon | `0xbc966489400c7d0322f2e93cf75345360f080799` | RealitioHomeProxyPolygon | impl | live | no |
 | polygon | `0xe69a359f5fb27c12e6cf4e75e326329d13e0d7f6` | RealitioHomeProxyPolygon | impl | live | no |
 
-## Source unavailable (40)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x15e5964c7751df8563ea4bc000301582c79bc454`
-- arbitrum `0x26c1980120f1c82cf611d666ce81d2b54d018547`
-- arbitrum `0x2ac2edfd336732bc6963f1ad03ed98b22db949da`
-- arbitrum `0x553dcbf6ab3ae06a1064b5200df1b5a9fb403d3c`
-- arbitrum `0xbc5ef8d9ad307154447ae148c088f083d2dea4ef`
-- arbitrum `0xf7ee0cd4e33c832dc05fb359896add6e14e96c28`
-- ethereum `0x2018038203aee8e7a29dabd73771b0355d4f85ad`
-- ethereum `0x395ba214c57a8e5270c094f4f8d85edcefb38940`
-- ethereum `0x631c8209684e5184e1d3f7ef2bef669c3ae67eaa`
-- ethereum `0x728cba71a3723caab33ea416cb46e2cc9215a596`
 - ethereum `0x7837638b3b1546c70dfcbfbd1ce55ac88758d517`
-- ethereum `0x82458d1c812d7c930bb3229c9e159cbabd9aa8cb`
-- ethereum `0x988b3a538b618c7a603e1c11ab82cd16dbe28069`
-- ethereum `0xc45d8d9b2b6843528a4dc2d8b5858e5c258d2992`
-- ethereum `0xf72cfd1b34a91a64f9a98537fe63fbab7530adca`
-- ethereum `0xff32eff53459485074b4db14633252c9dca3791a`
-- gnosis `0x16ebb305f58324b1a7a3bd436f6305c1e95e425d`
-- gnosis `0x2826698ee38c47a7aa0090084b9a6bfef2a114cc`
-- gnosis `0x2f0895732bfacdcf2fdb19962fe609d0da695f21`
-- gnosis `0x35a331d064264956658aad72ee45d042d53fff3f`
-- gnosis `0x3828f77eda78702c26c96b67db14cdcc344d85a3`
-- gnosis `0x3ff09d3e7a08c2d6350facf7902b4507f2490840`
-- gnosis `0x4b850c97cab9abef3bbf5ec15af68fa383cf5070`
-- gnosis `0x640ebf9403bfc2bd8914081be673411c34a5fba3`
-- gnosis `0x6631f1f834ff59f3c8b121b65a98f0d591c05b53`
-- gnosis `0x70a64a4e06bbd354ab1c8aabad2339bdcbfe467c`
-- gnosis `0x79833a5434432abcdcd518360f7aab720e77de48`
-- gnosis `0x957a53a994860be4750810131d9c876b2f52d6e1`
-- gnosis `0x9d494768936b6bdaabc46733b8d53a937a6c6d7e`
-- gnosis `0xa1bff74550d62ef2514ed80c07cff61dffa1ebfa`
-- gnosis `0xacc285cbb0ee2de661d1449bfe2f493fb3cc96a6`
-- gnosis `0xb01e369265ed325133efb980fe902c06977bda8c`
-- gnosis `0xd401c7cdeae5bccaabf2c0b7f8f28a5deab7d50c`
-- gnosis `0xd8eb9b5e2ba4105573072bafca9f642cedb01b49`
-- gnosis `0xe8bf7b1ddd2273dbe6ea86a66805682bcad98763`
-- gnosis `0xeaee250d42b1796ad56bccc903e3f6081ee03ab0`
-- gnosis `0xf29223083c232bf83ea021fbb6c075dd4a640f01`
-- gnosis `0xf3297842d3d6c41714953d4d849dc6c0a0b04b0e`
-- polygon `0x5afa42b30955f137e10f89dfb5ef1542a186f90e`
-- polygon `0x68154ea682f95bf582b80dd6453fa401737491dc`

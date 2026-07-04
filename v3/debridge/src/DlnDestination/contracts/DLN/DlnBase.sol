@@ -38,9 +38,26 @@ abstract contract DlnBase is
     /* ========== STATE VARIABLES ========== */
 
     // @dev Maps chainId => type of chain engine
-    mapping(uint256 => DlnOrderLib.ChainEngine) public chainEngines;
+    mapping(uint256 => ChainEngine) public chainEngines;
 
     IDeBridgeGate public deBridgeGate;
+
+    /* ========== ENUMS ========== */
+
+    enum ChainEngine {
+        UNDEFINED, //0
+        EVM, // 1
+        SOLANA // 2
+    }
+
+    /* ========== STRUCTS ========== */
+
+    struct ExternalCall {
+        uint256 executionFee;
+        // uint256 flags;
+        bytes fallbackAddress;
+        bytes data;
+    }
 
     /* ========== ERRORS ========== */
 
@@ -52,6 +69,7 @@ abstract contract DlnBase is
     error MismatchedOrderId();
     error WrongAddressLength();
     error ZeroAddress();
+    error ProposedFeeTooHigh();
     error NotSupportedDstChain();
     error EthTransferFailed();
     error Unauthorized();
@@ -209,7 +227,10 @@ abstract contract DlnBase is
         // | 1     | 8    | Allowed Cancel Beneficiary Src Address Size          |
         // | N     | 8*N  | * Allowed Cancel Beneficiary Address Src             |
         // | 1     | 8    | Is External Call Presented 0x0 - Not, != 0x0 - Yes   |
-        // | 32    | 256  | * External Call Envelope Hash
+        // | 32    | 256  | * Execution Fee                                      |
+        // | 1     | 8    | * Fallback Address Dst Address Size (!=1)            |
+        // | N     | 8*N  | * Fallback Address Dst Address                       |
+        // | 32    | 256  | * External Call Hash
 
         encoded = abi.encodePacked(
             _order.makerOrderNonce,
@@ -257,9 +278,18 @@ abstract contract DlnBase is
             );
         }
         if (_order.externalCall.length > 0) {
+            ExternalCall memory externalCall = abi.decode(
+                _order.externalCall,
+                (ExternalCall)
+            );
+            if (externalCall.fallbackAddress.length > MAX_ADDRESS_LENGTH) revert WrongAddressLength();
+
             encoded = abi.encodePacked(
                 encoded,
-                keccak256(_order.externalCall)
+                externalCall.executionFee,
+                (uint8)(externalCall.fallbackAddress.length),
+                externalCall.fallbackAddress,
+                keccak256(externalCall.data)
             );
         }
         return encoded;

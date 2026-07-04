@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at BscScan.com on 2022-06-13
-*/
-
 pragma solidity 0.5.17;
 
 library SafeMath {

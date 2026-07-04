@@ -35,9 +35,9 @@
 
 pragma solidity ^0.8.17;
 
-import { UUPSUpgradeable } from "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-import { ICore } from "../interfaces/ICore.sol";
+import "../interfaces/ICore.sol";
 import "../utils/Errors.sol";
 
 /// @title UUPSHelper

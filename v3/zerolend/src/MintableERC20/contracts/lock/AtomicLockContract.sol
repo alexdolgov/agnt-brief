@@ -48,23 +48,21 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
 
         uint256 amount = _amountFrom(reqId);
         address tokenAddr = _tokenFrom(reqId);
-        if (tokenAddr == address(1)) {
-            require(msg.value >= amount, "Transferred amount (tx.value) insufficient");
-        }
         proposedLock[reqId] = proposer;
 
-        if (action & 0x10 > 0) {
-            address vault = getVault();
-            require(vault != address(0), "Vault not activated");
-
-            if (tokenAddr == address(1)) {
+        if (tokenAddr == address(1)) {
+            require(amount == msg.value, "msg.value should equal the amount encoded in reqId");
+            if (action & 0x10 > 0) {
+                address vault = getVault();
                 (bool success, ) = vault.call{value: amount}("");
                 require(success, "Transfer failed");
-            } else {
-                IERC20(tokenAddr).safeTransferFrom(proposer, vault, amount);
             }
-        } else if (tokenAddr != address(1)) {
-            IERC20(tokenAddr).safeTransferFrom(proposer, address(this), amount);
+        } else {
+            if (action & 0x10 > 0) {
+                IERC20(tokenAddr).safeTransferFrom(proposer, getVault(), amount);
+            } else {
+                IERC20(tokenAddr).safeTransferFrom(proposer, address(this), amount);
+            }
         }
 
         emit TokenLockProposed(reqId, proposer);
@@ -76,7 +74,11 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
         address proposer = proposedLock[reqId];
         require(proposer > address(1), "Invalid reqId");
 
-        bytes32 digest = _digestFromReqSigningMessage(reqId);
+        bytes32 digest = keccak256(abi.encodePacked(
+            ETH_SIGN_HEADER, Strings.toString(3 + bytes(BRIDGE_CHANNEL).length + 29 + 66),
+            "[", BRIDGE_CHANNEL, "]\n",
+            "Sign to execute a lock-mint:\n", Strings.toHexString(uint256(reqId), 32)
+        ));
         _checkMultiSignatures(digest, r, yParityAndS, executors, exeIndex);
 
         proposedLock[reqId] = address(1);
@@ -102,14 +104,10 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
             (bool success, ) = proposer.call{value: amount}("");
             require(success, "Transfer failed");
         } else {
-            address vault;
             if (_actionFrom(reqId) & 0x10 > 0) {
-                vault = getVault();
-            }
-            if (vault == address(0)) {
-                IERC20(tokenAddr).safeTransfer(proposer, amount);
+                IERC20(tokenAddr).safeTransferFrom(getVault(), proposer, amount);
             } else {
-                IERC20(tokenAddr).safeTransferFrom(vault, proposer, amount);
+                IERC20(tokenAddr).safeTransfer(proposer, amount);
             }
         }
 
@@ -138,7 +136,11 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
         address recipient = proposedUnlock[reqId];
         require(recipient > address(1), "Invalid reqId");
 
-        bytes32 digest = _digestFromReqSigningMessage(reqId);
+        bytes32 digest = keccak256(abi.encodePacked(
+            ETH_SIGN_HEADER, Strings.toString(3 + bytes(BRIDGE_CHANNEL).length + 31 + 66),
+            "[", BRIDGE_CHANNEL, "]\n",
+            "Sign to execute a burn-unlock:\n", Strings.toHexString(uint256(reqId), 32)
+        ));
         _checkMultiSignatures(digest, r, yParityAndS, executors, exeIndex);
 
         proposedUnlock[reqId] = address(1);
@@ -149,14 +151,10 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
             (bool success, ) = recipient.call{value: amount}("");
             require(success, "Transfer failed");
         } else {
-            address vault;
             if (_actionFrom(reqId) & 0x10 > 0) {
-                vault = getVault();
-            }
-            if (vault == address(0)) {
-                IERC20(tokenAddr).safeTransfer(recipient, amount);
+                IERC20(tokenAddr).safeTransferFrom(getVault(), recipient, amount);
             } else {
-                IERC20(tokenAddr).safeTransferFrom(vault, recipient, amount);
+                IERC20(tokenAddr).safeTransfer(recipient, amount);
             }
         }
 

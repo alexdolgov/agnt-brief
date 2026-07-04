@@ -102,11 +102,14 @@ library AutopoolStrategyHooks {
     ///   0000000000000000000000000000000000000000
     ///   0000000000000000000000000000000000000000
     ///   0000000000000000000000000000000000000000
+
     /// Adding hooks should append to the lowest empty of the section
     /// Removing hooks should shift remainder down to maintain order
+
     /// =====================================================
     /// Constants
     /// =====================================================
+
     /// @notice Returns maximum number of hooks supported
     uint256 public constant NUM_HOOKS = 10;
 
@@ -160,11 +163,7 @@ library AutopoolStrategyHooks {
     /// @param hooks Packed hooks configuration data
     /// @param fnIndex Index of the function to execute
     /// @param call Call to make to the hook
-    function executeHooks(
-        bytes memory hooks,
-        uint256 fnIndex,
-        bytes memory call
-    ) external {
+    function executeHooks(bytes memory hooks, uint256 fnIndex, bytes memory call) external {
         uint256 hookIx = (fnIndex * NUM_HOOKS * 20) + 32; // 32 for the length of bytes
         uint256 hookEndIx = hookIx + (20 * NUM_HOOKS);
 
@@ -195,11 +194,7 @@ library AutopoolStrategyHooks {
     /// @param $ Storage data of the calling Autopool
     /// @param newHooks Set of hooks to add to the Autopool
     /// @param configDatas Set of datas to pass to the onRegistered function of the hook
-    function addHooks(
-        AutopoolState storage $,
-        IStrategyHook[] memory newHooks,
-        bytes[] memory configDatas
-    ) external {
+    function addHooks(AutopoolState storage $, IStrategyHook[] memory newHooks, bytes[] memory configDatas) external {
         bytes memory flags = getHookBytes($);
 
         uint256 len = newHooks.length;
@@ -221,11 +216,7 @@ library AutopoolStrategyHooks {
     /// @param $ Storage data of the calling Autopool
     /// @param hookToRemove Hook to remove from to the Autopool
     /// @param cleanupData Data to pass to the onUnregistered function of the hook
-    function removeHook(
-        AutopoolState storage $,
-        IStrategyHook hookToRemove,
-        bytes calldata cleanupData
-    ) external {
+    function removeHook(AutopoolState storage $, IStrategyHook hookToRemove, bytes calldata cleanupData) external {
         Errors.verifyNotZero(address(hookToRemove), "hookToRemove");
 
         bytes memory flags;

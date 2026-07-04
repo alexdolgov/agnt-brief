@@ -2,38 +2,70 @@
   "component": "SynapseERC20",
   "main_contract": "SynapseERC20",
   "source_file_count": 15,
-  "deployment_count": 4,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x080f6aed32fc474dd5717105dba5ea57268f46eb",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f2d719407fdbeff09d87557abb7232601fd9f29",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x2913e812cf0dcca30fb28e6cac3d2dcff4497688",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x23b891e5c62e0955ae2bd185990103928ab817b3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x3ea9b0ab55f34fb188824ee288ceaefc63cf908e",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f300aec9573bec1ed161e07bb6564e03154e68a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x809dc529f07651bd43a172e8db6f4a7a0d771036",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4080f1778e69467e905b8d6f72f6e441f9e9484",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb6c473756050de474286bed418b77aeac39b02af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xca3281e99e2b7a2a889158944c409bf41f3c140d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd8ca34fd379d9ca3c6ee3b3905678320f5b45195",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf8f9efc0db77d8881500bb06ff5d6abc3070e695",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

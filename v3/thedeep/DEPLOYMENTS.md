@@ -1,15 +1,23 @@
 # thedeep — deployments
 
-75 verified deployment(s) across 25 component(s).
+96 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x065cb8139e9fed6c97f8b0851e599c56286ea031` | ICHIVault | impl | live | yes |
 | base | `0x1b0ef045830466171d617dd0f1142ad699a4cd63` | ProxyAdmin | impl | live | no |
+| base | `0x2d2c72c4dc71aa32d64e5142e336741131a73fc0` | ERC1967Proxy-2 | proxy | live | no |
 | base | `0x5507b537650897493aed459457255996bf98d8b7` | ICHIVault | impl | live | yes |
+| base | `0xabe5b5ac472ead17b4b4cac7faf42430748ab3b3` | ICHIVaultFactory-3 | impl | live | yes |
 | base | `0xb177cf10f4382f671e5923c6c06f7b601d5a04e2` | ICHIVault | impl | live | yes |
 | base | `0xbbb97d634460dacca0d41e249510bb741ef46ad3` | ProxyAdmin | impl | live | no |
+| base | `0xbf38e4ffb0b0aa075531b38d71d3b18a5f599819` | ICHIVaultDepositGuard | impl | live | yes |
 | base | `0xbf60a8e623d4e776f6ffa94d8bb7ef7c22e057a1` | ICHIVault | impl | live | yes |
+| base | `0xbff23e60f41a11cf131b7180cbd2bd3d47d17ad1` | ICHIVaultFactory-4 | impl | live | yes |
+| base | `0xe2381b5afae99b899596bc550184a080daa31f26` | ICHIVaultDepositGuard | impl | live | yes |
+| base | `0xf6b5ab192f2696921f60a1ff00b99596c4045fa6` | ICHIVaultFactory-5 | impl | live | yes |
+| base | `0xf8b3f6727e44abb211c0049fc849fbb091ff765e` | ERC1967Proxy-2 | proxy | live | no |
+| base | `0xfbf38920ccbcff7268ad714ae5f9fad6df607065` | ICHIVaultFactory-6 | impl | live | yes |
 | chain-42220 | `0x065cb8139e9fed6c97f8b0851e599c56286ea031` | UV3Math | impl | live | yes |
 | chain-42220 | `0x0de3ba021a151030f344f8d05595672bbe31658c` | VaultLocker | impl | live | no |
 | chain-42220 | `0x101eb16bdba37979a771c86e1caafbadbabfc879` | ERC1967Proxy | proxy | live | no |
@@ -21,6 +29,7 @@
 | chain-42220 | `0x289dc4313997f78f04c2959a9a50aec4739df1cd` | AegisVault | impl | live | no |
 | chain-42220 | `0x2a8d0321cdac91be9da82d069c6116106ed0e337` | VaultLocker | impl | live | no |
 | chain-42220 | `0x2f4b480a83b4e0bc1a8203ed039539fb2c36d085` | ICHIVaultFactory | impl | live | yes |
+| chain-42220 | `0x2fb24195c965b4a0cdfc27dd5c85ec1a46d7a931` | ProxyAdmin-2 | impl | live | no |
 | chain-42220 | `0x3586c614486ee965275f7e33a17295fdfeffa98f` | AegisVault | impl | live | no |
 | chain-42220 | `0x3b5fbce2bd4587036dc1d7df44296f19094e0d3b` | Context-2 | impl | live | yes |
 | chain-42220 | `0x4608121a8d9a5f54664649e95e40829286898738` | UV3Math | impl | live | yes |
@@ -38,7 +47,7 @@
 | chain-42220 | `0x772960d9a88004cdb2cc0fca020e04bfea3790b3` | MultiFeeDistributionFactory | impl | live | no |
 | chain-42220 | `0x7a4ae815d561d267a0695b0fe8fe7f01728ede18` | UV3Math | impl | live | yes |
 | chain-42220 | `0x7ba715350fa7d3120712b4ab1e3fc89f9090bb56` | ICHIVaultMigrationGuard | impl | live | no |
-| chain-42220 | `0x7df494ad51faeafb8c46c63d23ee40a48b14e975` | ICHIVault-2 | impl | live | yes |
+| chain-42220 | `0x7df494ad51faeafb8c46c63d23ee40a48b14e975` | ICHIVault-3 | impl | live | yes |
 | chain-42220 | `0x7f2eaf858c5ebac086eabf3a3afeb0742fad8a65` | VaultLocker | impl | live | no |
 | chain-42220 | `0x7f659c9010e5566a2628d1eaf0cebf149be3dc06` | UV3Math | impl | live | yes |
 | chain-42220 | `0x82dca62c4b5dd28cc85ce8ae3b170ce020e33870` | ICHIVaultFactory | impl | live | yes |
@@ -57,6 +66,7 @@
 | chain-42220 | `0xb1fa728d712bf35ea1adf0f949410f820e7bd171` | QuoterV1 | impl | inactive | no |
 | chain-42220 | `0xb3bf88cb919a222a6f9c90ca8a9ac261cbd3e5bf` | ICHIVaultFactory | impl | live | yes |
 | chain-42220 | `0xb78144a950ed367f8fb94322bfa079f30bc8eb68` | UV3Math | impl | live | yes |
+| chain-42220 | `0xb978c58fa57bbd3951d053edea493e5c3ff1a415` | ProxyAdmin-2 | impl | live | no |
 | chain-42220 | `0xb9b42bf1478334df3557cf7a3793f6a3ff626dcc` | UV3Math | impl | live | yes |
 | chain-42220 | `0xbed3cea309c8e413f785e1b547d06f37c49de85e` | Context-3 | impl | live | no |
 | chain-42220 | `0xbeff7973ff3dfca2aa86e1da41abc8321334f6dd` | AegisVaultFactory-2 | impl | live | no |
@@ -79,28 +89,14 @@
 | chain-42220 | `0xfa196a6c9137b320e8801252e3020f25aee5c234` | ERC1967Proxy | proxy | live | no |
 | chain-42220 | `0xfab743b967ea5b8268e4d8f11159ad9e8e7c068b` | UV3Math | impl | live | yes |
 | chain-42220 | `0xfbf38920ccbcff7268ad714ae5f9fad6df607065` | UV3Math | impl | live | yes |
-
-## Source unavailable (21)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x2d2c72c4dc71aa32d64e5142e336741131a73fc0`
-- base `0xabe5b5ac472ead17b4b4cac7faf42430748ab3b3`
-- base `0xbf38e4ffb0b0aa075531b38d71d3b18a5f599819`
-- base `0xbff23e60f41a11cf131b7180cbd2bd3d47d17ad1`
-- base `0xe2381b5afae99b899596bc550184a080daa31f26`
-- base `0xf6b5ab192f2696921f60a1ff00b99596c4045fa6`
-- base `0xf8b3f6727e44abb211c0049fc849fbb091ff765e`
-- base `0xfbf38920ccbcff7268ad714ae5f9fad6df607065`
-- chain-42220 `0x2fb24195c965b4a0cdfc27dd5c85ec1a46d7a931`
-- chain-42220 `0xb978c58fa57bbd3951d053edea493e5c3ff1a415`
-- polygon `0x2b8ca8e6768e49f1256f91bf5b0d8f30a776d4c6`
-- polygon `0x39db7da035752c969265ef0cc5ab8481ba38510a`
-- polygon `0x4608121a8d9a5f54664649e95e40829286898738`
-- polygon `0x6e2bbd6035cb8d2b97be8e0c1e06c6b61fd1c814`
-- polygon `0x7f659c9010e5566a2628d1eaf0cebf149be3dc06`
-- polygon `0x827cce45e8d39088e21cef2642f43100d0543047`
-- polygon `0x8d6cdb3d442dd1e6842f44ff3004e9be79a9fc0d`
-- polygon `0xd20feb1df00171aa2f59c9f53c4dd230dc1f39a6`
-- polygon `0xeecb7ba52f1a689574e2f64242743f0a0ad9eb3c`
-- polygon `0xf39a4c7c87310116ad915833769d301c599b0298`
-- polygon `0xfb6c432e2fd193d3fc59519aa8a676f5d6bb4417`
+| polygon | `0x2b8ca8e6768e49f1256f91bf5b0d8f30a776d4c6` | ICHIVaultDepositGuard-2 | impl | live | yes |
+| polygon | `0x39db7da035752c969265ef0cc5ab8481ba38510a` | VaultLocker | impl | live | no |
+| polygon | `0x4608121a8d9a5f54664649e95e40829286898738` | VaultLocker | impl | live | no |
+| polygon | `0x6e2bbd6035cb8d2b97be8e0c1e06c6b61fd1c814` | VaultLocker | impl | live | no |
+| polygon | `0x7f659c9010e5566a2628d1eaf0cebf149be3dc06` | ICHIVaultDepositGuard-2 | impl | live | yes |
+| polygon | `0x827cce45e8d39088e21cef2642f43100d0543047` | VaultLocker | impl | live | no |
+| polygon | `0x8d6cdb3d442dd1e6842f44ff3004e9be79a9fc0d` | UV3Math-2 | impl | live | yes |
+| polygon | `0xd20feb1df00171aa2f59c9f53c4dd230dc1f39a6` | ICHIVault-2 | impl | live | yes |
+| polygon | `0xeecb7ba52f1a689574e2f64242743f0a0ad9eb3c` | ICHIVaultDepositGuard-2 | impl | live | yes |
+| polygon | `0xf39a4c7c87310116ad915833769d301c599b0298` | ICHIVaultFactory-2 | impl | live | yes |
+| polygon | `0xfb6c432e2fd193d3fc59519aa8a676f5d6bb4417` | ICHIVaultDepositGuard-2 | impl | live | yes |

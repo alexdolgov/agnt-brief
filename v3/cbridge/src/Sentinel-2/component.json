@@ -1,0 +1,42 @@
+{
+  "component": "Sentinel-2",
+  "main_contract": "Sentinel",
+  "source_file_count": 17,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4c401db8cddc3ed80bfd978243c0da4350baf213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x09236aff6b36a5dbf97b5030a5a650e06931c51e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x91abe4f3491fb63cb96a7bea8227d3c57b684e07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x54fb7125ed44a4cc3856eaef0bed7c9b35350f3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

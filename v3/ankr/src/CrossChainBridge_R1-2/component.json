@@ -1,15 +1,15 @@
 {
   "component": "CrossChainBridge_R1-2",
   "main_contract": "CrossChainBridge_R1",
-  "source_file_count": 28,
+  "source_file_count": 27,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x3743d1fac8addc60ebe2eee8bffd4244645c0fc3",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4b695f0363b58b8d1de40c201c2f85e96771fe2a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

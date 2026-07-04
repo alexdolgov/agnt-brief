@@ -71,7 +71,6 @@ interface IDODOApprove {
 
 // File: contracts/lib/InitializableOwnable.sol
 
-
 /**
  * @title Ownable
  * @author DODO Breeder
@@ -122,8 +121,6 @@ contract InitializableOwnable {
 }
 
 // File: contracts/SmartRoute/DODOApproveProxy.sol
-
-
 
 
 interface IDODOApproveProxy {

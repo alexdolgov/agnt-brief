@@ -1,0 +1,18 @@
+{
+  "component": "ProtectedSimpleSwap-6",
+  "main_contract": "ProtectedSimpleSwap",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc2b5a8082d2e1867a9cbbf41b625e3ae9df81f8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

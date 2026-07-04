@@ -1,0 +1,18 @@
+{
+  "component": "TimelockController-2",
+  "main_contract": "TimelockController",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5c249a5f396638253470c4eae7bc5092dde21886",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

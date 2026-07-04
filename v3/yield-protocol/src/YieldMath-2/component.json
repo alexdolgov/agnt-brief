@@ -1,0 +1,18 @@
+{
+  "component": "YieldMath-2",
+  "main_contract": "YieldMath",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf003bd8a847a7ec2a76813495e734bc247ca6851",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,39 @@
 {
   "component": "RouterCommon",
   "main_contract": "RouterCommon",
-  "source_file_count": 45,
-  "deployment_count": 1,
+  "source_file_count": 41,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe2fa4e1d17725e72dcdafe943ecf45df4b9e285b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0xad89051bed8d96f045e8912ae1672c6c0bf8a85e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa523f47a933d5020b23629ddf689695aa94612dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc9b36096f5201ea332db35d6d195774ea0d5988f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

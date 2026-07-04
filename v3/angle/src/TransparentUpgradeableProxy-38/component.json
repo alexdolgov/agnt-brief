@@ -3,15 +3,17 @@
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 10,
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/AngleProtocol/angle-core/blob/main/audits/Sigma%20Prime%20Audit%20Report%20July%2021.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x5efe48f8383921d950683c46b87e28e21dea9fb5",
+      "address": "0x5addc89785d75c86ab939e9e15bfbbb7fc086a87",
       "is_proxy": true,
-      "implementation_address": "0x9ca144c12a9dce3b72be31048cf54c79b42e02df",
+      "implementation_address": "0x282dffb8d0215d7efb8d8c5ff90aed185d8850ab",
       "liveness": "live"
     }
   ]

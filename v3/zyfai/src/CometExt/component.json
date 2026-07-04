@@ -1,23 +1,39 @@
 {
   "component": "CometExt",
   "main_contract": "CometExt",
-  "source_file_count": 10,
-  "deployment_count": 2,
+  "source_file_count": 6,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1b2e88cc7365d90e7e81392432482925bd8437e9",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c58d4479a1e9b2d19ee052143fa73f0ee79a36e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x27c348936400791b7350d80fb81bc61ad68df4ae",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x95dedd64b551f05e9f59a101a519b024b6b116e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x995e394b8b2437ac8ce61ee0bc610d617962b214",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe165155c34fe4cbfc55fc554437907bdb1af7e3e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

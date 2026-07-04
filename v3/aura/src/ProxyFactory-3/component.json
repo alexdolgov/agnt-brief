@@ -1,20 +1,18 @@
 {
   "component": "ProxyFactory-3",
   "main_contract": "ProxyFactory",
-  "source_file_count": 1,
+  "source_file_count": 3,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/aurafinance/aura-contracts/blob/main/security/audits/Halborn-Audit-Report-AuraFinance-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x731886426a3199b988194831031dfb993f25d961",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ed9003c6003eace1e8c3ae99f0bb19894377b0f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

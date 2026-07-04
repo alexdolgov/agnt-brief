@@ -1,0 +1,18 @@
+{
+  "component": "SyncSwapStablePoolDelegatedFactory-2",
+  "main_contract": "SyncSwapStablePoolDelegatedFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xa2aca673c00495a184f88de533bba8e1b7f38d00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

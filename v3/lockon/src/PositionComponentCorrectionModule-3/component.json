@@ -1,0 +1,18 @@
+{
+  "component": "PositionComponentCorrectionModule-3",
+  "main_contract": "PositionComponentCorrectionModule",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9a462036285d38a84ad8a45f010ad42719b041ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

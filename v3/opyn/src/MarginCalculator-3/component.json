@@ -1,0 +1,23 @@
+{
+  "component": "MarginCalculator-3",
+  "main_contract": "MarginCalculator",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/akiratechhq/review-opyn-gamma-2021-08",
+    "https://github.com/peckshield/publications/blob/master/audit_reports/peckshield-audit-report-Opyn-v1.0.pdf",
+    "https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf",
+    "https://www.openzeppelin.com/news/opyn-gamma-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfaa67e3736572645b38af7410b3e1006708e13f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

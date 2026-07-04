@@ -1,0 +1,18 @@
+{
+  "component": "xWinPriceMaster-2",
+  "main_contract": "xWinPriceMaster",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd712df1d0d82f9e244418b467a4d923a0d90c77a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

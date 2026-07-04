@@ -1,18 +1,18 @@
 {
   "component": "CowSwapFeeBurner-4",
   "main_contract": "CowSwapFeeBurner",
-  "source_file_count": 37,
+  "source_file_count": 39,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x5915dea04ce390f0f44ca0806f7c6dd99ce2f941",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf4743d026f3d07af3747bb7d05bed06d177241d7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "TokenManagerProxy-8",
+  "main_contract": "TokenManagerProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9b1f4c3091e825a6abe451d0a266ee18005839e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

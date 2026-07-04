@@ -2,9 +2,8 @@ pragma solidity =0.6.6;
 pragma experimental ABIEncoderV2;
 
 import "./SafeMath.sol";
-import "./BlastManager.sol";
 
-contract RingToken is BlastManager {
+contract RingToken {
     /// @notice EIP-20 token name for this token
     string public constant name = "Ring Governance Token";
 

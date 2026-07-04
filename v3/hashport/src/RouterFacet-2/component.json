@@ -1,19 +1,47 @@
 {
   "component": "RouterFacet-2",
   "main_contract": "RouterFacet",
-  "source_file_count": 24,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://omniscia.io/reports/limechain-hashport",
-    "https://omniscia.io/reports/limechain-hashport-round-2",
-    "https://www.hashport.network/wp-content/uploads/Hashport-Smart-Contract-Review-v1.0-3-1.pdf"
-  ],
+  "source_file_count": 23,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xd9cde0457e04f0fc9a5a9fd314fd185d00ef42e8",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2e195f12e4d049126f9ffb9a57782d730c4de6f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcccaffc62f0e9f3a59a9e42946203082143e981b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2e195f12e4d049126f9ffb9a57782d730c4de6f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcccaffc62f0e9f3a59a9e42946203082143e981b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd050edc322915341baf5e8e9e1dcd25c92db11cc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

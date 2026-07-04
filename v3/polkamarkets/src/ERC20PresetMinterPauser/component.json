@@ -2,7 +2,7 @@
   "component": "ERC20PresetMinterPauser",
   "main_contract": "ERC20PresetMinterPauser",
   "source_file_count": 17,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,6 +18,14 @@
       "chain": "polygon",
       "chain_id": 137,
       "address": "0x9ab1213d360bea3eda75d88d81d7fbfc9fd37f2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x83d3f4769a19f1b43337888b0290f5473cf508b2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

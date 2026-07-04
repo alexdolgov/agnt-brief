@@ -1,6 +1,6 @@
 # unichain-bridge — deployments
 
-57 verified deployment(s) across 31 component(s).
+58 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -50,6 +50,7 @@
 | ethereum | `0x9a3d64e386c18cb1d6d5179a9596a4b5736e98a6` | ResolvedDelegateProxy-2 | proxy | live | no |
 | ethereum | `0x9c065e11870b891d214bc2da7ef1f9ddfa1be277` | PreimageOracle-2 | impl | live | no |
 | ethereum | `0x9e7569992f417cad770b8114d2df4078f0b98eb5` | L1ChugSplashProxy | proxy | live | no |
+| ethereum | `0xa2b597eaeacb6f627e088cbead319e934ed5edad` | Proxy | proxy | live | no |
 | ethereum | `0xa35f3d6b5c1ab1de36fe830fc4288fd585685772` | PermissionedDisputeGame | impl | live | yes |
 | ethereum | `0xb0c4c487c5cf6d67807bc2008c66fa7e2ce744ec` | SafeProxy | proxy | live | no |
 | ethereum | `0xb1b8a68841220fa442048f9c2f976315478ab3b9` | ProxyAdmin | impl | live | no |
@@ -61,8 +62,3 @@
 | ethereum | `0xd04d0d87e0bd4d2e50286760a3ef323fea6849cf` | Proxy-6 | proxy | live | no |
 | ethereum | `0xd3a31c6de8f346e5b456fbc3e4b5eabb3a2b3963` | Proxy-3 | proxy | live | no |
 | ethereum | `0xe62b0279f6a466c5e1676f3ea955086300bcd0ac` | Proxy | proxy | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xa2b597eaeacb6f627e088cbead319e934ed5edad`

@@ -1,15 +1,31 @@
 {
   "component": "VNXManager-2",
   "main_contract": "VNXManager",
-  "source_file_count": 3,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcdb3867935247049e87c38ea270edd305d84c9ae",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb6622a9ec19561b0a39de87a71b845ffa5cb60ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa67ec5147971fe38e2a8fe1ebd7b4af4ccc10278",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x86f3f198713f487bbc227a3d31fe4e06cb6c387b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

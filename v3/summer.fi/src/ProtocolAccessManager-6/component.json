@@ -1,15 +1,15 @@
 {
   "component": "ProtocolAccessManager-6",
   "main_contract": "ProtocolAccessManager",
-  "source_file_count": 26,
-  "deployment_count": 2,
+  "source_file_count": 12,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x5e59a629103809b105745178649e2692e0cb6c70",
+      "address": "0xa435f1d7bcdcd57c030ca44c2640e6cfc659c278",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +17,15 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x803c5a2718527c071ea24dedc0ed8320bcb4cb6c",
+      "address": "0xb53dbe0aaf5fa27efae744eb29cb0273dedc8905",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x57047ebc3adeda70d58c51676301bf3990bcbb0c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

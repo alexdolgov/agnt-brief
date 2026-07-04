@@ -1,9 +1,10 @@
 # katana-pre-launch — deployments
 
-169 verified deployment(s) across 50 component(s).
+174 verified deployment(s) across 51 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x89063623f00238106c9a60032fae2ab702b8a1fb` | ERC1967Upgrade-2 | impl | live | no |
 | ethereum | `0x0000000000000068f116a894984e2db1123eb395` | Seaport | impl | live | no |
 | ethereum | `0x000000000022d473030f116ddee9f6b43ac78ba3` | Permit2 | impl | live | no |
 | ethereum | `0x00000000efe302beaa2b3e6e1b18d08d69a9012a` | AgoraDollarErc1967Proxy | proxy | live | no |
@@ -118,6 +119,7 @@
 | ethereum | `0xa4755cd68ca2092447c8c842659a2931f9110320` | CommitStore | impl | live | no |
 | ethereum | `0xa48269e5c9a234dabfebe98b82390be705536d1c` | CommitStore | impl | live | no |
 | ethereum | `0xa58818d1acd8d62ab077a1f79606fcb5ce3741b9` | CommitStore | impl | live | no |
+| ethereum | `0xa5dab32dbe68e6fa784e1e50e4f620a0477d3896` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0xa627f208c5c32e5638c64147d0ac98bb40f758f0` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xa7a8e43ef0e579c3d64618d2a34dd456ae14dc0a` | OptimismPortal2-2 | impl | live | no |
 | ethereum | `0xa8c12a859225531254ddef7079030f7dd6992a14` | EVM2EVMOffRamp | impl | live | no |
@@ -143,6 +145,7 @@
 | ethereum | `0xd079265e929c845707e816e3855721d055d40235` | CommitStore | impl | live | no |
 | ethereum | `0xd1b3015cefcac84db3efcbb18fbdd50ba5af49de` | TokenPool-2 | impl | live | no |
 | ethereum | `0xd2428f8c62fbfea4b44a703cf11e02d7b0a6cd99` | CommitStore | impl | live | no |
+| ethereum | `0xd8063123bba3b480569244ae66bfe72b6c84b00d` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0xd8f93aff87dc2aeee0d0b0df347bada861bff802` | CommitStore | impl | live | no |
 | ethereum | `0xd98e80c79a15e4dbaf4c40b6ccdf690fe619bfbb` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xd9d3d90d729f50794741da7a2d54d8b12dc3da72` | CommitStore | impl | live | no |
@@ -156,6 +159,7 @@
 | ethereum | `0xdf615ef8d4c64d0ed8fd7824bbed2f6a10245ac9` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xdfd8c353044ab175cc96fd4261c2af3e3ab768a4` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xe0efe934dc4744090e8ef93f1d125e4015a857fe` | AccountantWithRateProviders | impl | live | no |
+| ethereum | `0xe1ac97e2616ad80f69f705ff007a4bbb3655544a` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0xe41677500b425999cb4133950ca3ab79ea7470a6` | CommitStore | impl | live | no |
 | ethereum | `0xe50a6c887c18c5541d8cf311825016fbbb282c74` | Pauser | impl | live | no |
 | ethereum | `0xeb8f9227f5e6012fd4e0d52461a6cd0226a0275f` | ERC1967Upgrade | impl | live | no |
@@ -166,6 +170,7 @@
 | ethereum | `0xf2eb4ce854c8c0aaea6080ef825efa5a84a8656a` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xf3ac96642f9ba5de3bbc864d609e3f534dd3b7f9` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xf4468e56179e6ef59d6f5b133d9355aad91ea9ae` | EVM2EVMOffRamp | impl | live | no |
+| ethereum | `0xf470eb50b4a60c9b069f7fd6032532b8f5cc014d` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0xf7b343a17445f175f2dd9f5cb29baf0a8de75ed3` | CommitStore | impl | live | no |
 | ethereum | `0xf7d68ccc92b836316c40b24ea77f6805dcbb8f02` | CommitStore | impl | live | no |
 | ethereum | `0xfa94e57b12b6c45a3ad3cbb9451ba99a997eb210` | CommitStore | impl | live | no |
@@ -173,12 +178,3 @@
 | ethereum | `0xfc92c3b8a374f70cb46cf884d4f02bb120f0f0a3` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0xfe73bccc5b88d22969099ebb4e2eb5e19efb0165` | CommitStore | impl | live | no |
 | ethereum | `0xffbd6b0146c9e16a9f9e77dc8898cbff6e2aa389` | EVM2EVMOnRamp | impl | live | no |
-
-## Source unavailable (5)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x89063623f00238106c9a60032fae2ab702b8a1fb`
-- ethereum `0xa5dab32dbe68e6fa784e1e50e4f620a0477d3896`
-- ethereum `0xd8063123bba3b480569244ae66bfe72b6c84b00d`
-- ethereum `0xe1ac97e2616ad80f69f705ff007a4bbb3655544a`
-- ethereum `0xf470eb50b4a60c9b069f7fd6032532b8f5cc014d`

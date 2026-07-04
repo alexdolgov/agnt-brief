@@ -2,12 +2,20 @@
   "component": "MetaRouter",
   "main_contract": "MetaRouter",
   "source_file_count": 7,
-  "deployment_count": 5,
+  "deployment_count": 7,
   "audited": true,
   "audits_covering": [
     "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/metarouter-v3/Symbiosis%20Protocol%20MRv3%20Audit%20-%20Zokyo.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf621fb08bbe51af70e7e0f4ea63496894166ff7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "optimism",
       "chain_id": 10,
@@ -44,6 +52,14 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xce8f24a58d85ed5c5a6824f7be1f8d4711a0eb4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa260e3732593e4ecf9ddc144fd6c4c5fe7077978",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

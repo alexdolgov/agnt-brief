@@ -1,18 +1,26 @@
 {
   "component": "SwapV2Router-2",
   "main_contract": "SwapV2Router",
-  "source_file_count": 18,
-  "deployment_count": 1,
+  "source_file_count": 14,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x224749cdd5791480ecebe452e5ffaefef94cd254",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x290ef7a04b07fc5b150b83320d9e7ec098615c2e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf09f1899074b5659148c615dd30c29060f264894",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

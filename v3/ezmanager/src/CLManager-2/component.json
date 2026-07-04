@@ -1,0 +1,50 @@
+{
+  "component": "CLManager-2",
+  "main_contract": "CLManager",
+  "source_file_count": 16,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x43f44c3936e90ce5a32d70fe32779b715c6a884d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d5a83c157026c28ff3aabbfb3d713a2704be153",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x84ff6013e88a9414205f8ea9de8427fe91815fc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x52dcc445e56694f5a4e4bc0631d01ebb90bd48a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x57f5b24e2c55d51ea171f405c0e2c122bf2bc2aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

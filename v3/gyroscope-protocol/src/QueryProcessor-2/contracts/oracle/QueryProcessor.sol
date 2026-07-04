@@ -18,7 +18,7 @@ pragma experimental ABIEncoderV2;
 import "contracts/helpers/BalancerErrors.sol";
 import "contracts/helpers/LogCompression.sol";
 
-import "contracts/interfaces/IPriceOracle.sol";
+import "interfaces/IPriceOracle.sol";
 
 import "contracts/oracle/Buffer.sol";
 import "contracts/oracle/Samples.sol";

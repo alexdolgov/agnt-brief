@@ -36,7 +36,6 @@ interface ISocket {
         uint256 executionFee;
         // The maximum amount of gas that can be used to execute the message.
         uint256 msgGasLimit;
-        bytes32 extraParams;
         // The payload data to be executed in the message.
         bytes payload;
         // The proof data required by the Decapacitor contract to verify the message's authenticity.
@@ -60,7 +59,6 @@ interface ISocket {
         address dstPlug,
         bytes32 msgId,
         uint256 msgGasLimit,
-        bytes32 extraParams,
         bytes payload,
         Fees fees
     );
@@ -121,7 +119,6 @@ interface ISocket {
     function outbound(
         uint32 remoteChainSlug_,
         uint256 msgGasLimit_,
-        bytes32 extraParams_,
         bytes calldata payload_
     ) external payable returns (bytes32 msgId);
 
@@ -134,7 +131,7 @@ interface ISocket {
         bytes32 packetId,
         ISocket.MessageDetails calldata messageDetails_,
         bytes memory signature
-    ) external payable;
+    ) external;
 
     /**
      * @notice seals data in capacitor for specific batchSizr
@@ -175,16 +172,18 @@ interface ISocket {
     ) external;
 
     /**
-     * @notice Registers a switchboard with a specified max packet length, sibling chain slug, and capacitor type.
-     * @param siblingChainSlug_ The slug of the sibling chain that the switchboard is registered with.
+     * @notice Registers a switchboard with a specified address, max packet length, sibling chain slug, and capacitor type.
+     * @param switchBoardAddress_ The address of the switchboard to be registered.
      * @param maxPacketLength_ The maximum length of a packet allowed by the switchboard.
+     * @param siblingChainSlug_ The slug of the sibling chain that the switchboard is registered with.
      * @param capacitorType_ The type of capacitor that the switchboard uses.
      */
     function registerSwitchBoard(
-        uint32 siblingChainSlug_,
+        address switchBoardAddress_,
         uint256 maxPacketLength_,
+        uint32 siblingChainSlug_,
         uint256 capacitorType_
-    ) external returns (address capacitor);
+    ) external;
 
     /**
      * @notice Retrieves the packet id roots for a specified packet id.
@@ -202,8 +201,6 @@ interface ISocket {
      */
     function getMinFees(
         uint256 msgGasLimit_,
-        uint256 payloadSize_,
-        bytes32 extraParams_,
         uint32 remoteChainSlug_,
         address plug_
     ) external view returns (uint256 totalFees);

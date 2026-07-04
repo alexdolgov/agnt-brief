@@ -1,0 +1,18 @@
+{
+  "component": "SpokeErc20Token-3",
+  "main_contract": "SpokeErc20Token",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcb66564d0cf3d28b26a1b6d4ecb830d6e216a75a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

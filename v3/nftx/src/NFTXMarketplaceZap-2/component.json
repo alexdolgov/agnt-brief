@@ -1,0 +1,18 @@
+{
+  "component": "NFTXMarketplaceZap-2",
+  "main_contract": "NFTXMarketplaceZap",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x66f26e38bd50fd52a50da8e87e435f04f98001b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,39 @@
 {
   "component": "EIP712",
   "main_contract": "EIP712",
-  "source_file_count": 40,
-  "deployment_count": 1,
+  "source_file_count": 33,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8cee050527b758c8aa0221bc696a03a674fe6ea2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafbb4891d49aab0d71251a4d47cad582a47465e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x391f047683f60f7cbc29ca39b19fd70091cdd34c",
+      "address": "0x75153a486244dae7c469cb2098c200f01f93a99b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xda39759b7a4fc66bb86c34103f9903253e330b85",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

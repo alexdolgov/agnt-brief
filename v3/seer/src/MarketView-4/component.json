@@ -1,0 +1,18 @@
+{
+  "component": "MarketView-4",
+  "main_contract": "MarketView",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb2ab74afe47e6f9d8c392fa15b139ac02684771a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

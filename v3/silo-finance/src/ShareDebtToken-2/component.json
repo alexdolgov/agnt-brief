@@ -1,0 +1,42 @@
+{
+  "component": "ShareDebtToken-2",
+  "main_contract": "ShareDebtToken",
+  "source_file_count": 54,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x2ca8f56ba6302477eb9e47e312db07706befef3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8cb5473553944689c53de976119b40e9bef3b5ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcf827892dbfe1f1b4756789620f5f87357bf8627",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xee6845d30c2529ba0a9a1adffa06c377fe2ddedd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

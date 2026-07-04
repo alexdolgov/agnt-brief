@@ -1,0 +1,18 @@
+{
+  "component": "PerpManager-6",
+  "main_contract": "PerpManager",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff9f87ec3592984cb706d3071a39e33ac24d39dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

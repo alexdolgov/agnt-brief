@@ -1,33 +1,39 @@
 {
   "component": "RebalancePlanner",
   "main_contract": "RebalancePlanner",
-  "source_file_count": 15,
-  "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
-  ],
+  "source_file_count": 18,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x06dff44b626cd0fa34bd18ea061fb1b4d4ca2e6c",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x61f3d9ade7a9a4fbd467fbc4a659b8c84a7b0a45",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x9a1fce1d87b922a6714c0946a2206a3699e19b7b",
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc3687d944fce91c80a4cd34793c4391fc9167804",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbcab6cc4b2f1990f8e6e9f11c881a229d69cbb27",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x84600d1a569520dc41bb417f3b3025949888643a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa7e6a3d530bdf6933e0f4d1f9fe62e052fee09b4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

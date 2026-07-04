@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
+import { SwapStep } from "contracts/dex/SwapTypes.sol";
 
 import { BridgeAdapterBase } from "./BridgeAdapterBase.sol";
 import { BridgeSwapReceiver } from "contracts/bridges/BridgeSwapReceiver.sol";
-import { MultiSwapRouter } from "contracts/MultiSwapRouter.sol";
+import { SwapRouter } from "contracts/SwapRouter.sol";
 import {
     IAcrossMessageHandler
 } from "contracts/bridges/interfaces/IAcrossMessageHandler.sol";
@@ -28,15 +29,21 @@ contract AcrossSwapAdapter is BridgeAdapterBase, IAcrossMessageHandler {
         _onlyWhitelistedEndpoint();
         (
             address recipient,
-            MultiSwapRouter.SwapStep[] memory swapSteps,
-            uint256 minAmountOut
+            SwapStep[] memory swapSteps,
+            uint256 minAmountOut,
+            uint256 nativeGasDrop
         ) = abi.decode(
-            message, (address, MultiSwapRouter.SwapStep[], uint256)
+            message, (address, SwapStep[], uint256, uint256)
         );
         uint256 forwarded =
             _forwardAvailable(tokenSent, address(receiver), amount);
         receiver.executeSwap(
-            tokenSent, forwarded, recipient, swapSteps, minAmountOut
+            tokenSent,
+            forwarded,
+            recipient,
+            swapSteps,
+            minAmountOut,
+            nativeGasDrop
         );
     }
 }

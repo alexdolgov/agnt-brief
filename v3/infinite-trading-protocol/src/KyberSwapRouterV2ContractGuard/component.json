@@ -2,14 +2,38 @@
   "component": "KyberSwapRouterV2ContractGuard",
   "main_contract": "KyberSwapRouterV2ContractGuard",
   "source_file_count": 22,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeb39819256408929b051f8f5440689a4da97859e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc80700f6555112c790b6bfc52a42061d84a609ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x24bd15453bd493361f7985a40d1903346bd9c20d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd585dcc441e885458a18385c2ac4b30a9d001ff2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

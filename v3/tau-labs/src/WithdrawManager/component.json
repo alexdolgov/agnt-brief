@@ -2,7 +2,7 @@
   "component": "WithdrawManager",
   "main_contract": "WithdrawManager",
   "source_file_count": 26,
-  "deployment_count": 25,
+  "deployment_count": 13,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -17,39 +17,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x19e5ac38a67d2422c87992150cbffb40de02737c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0x22524fd9da2fb68c9603ad32fdd29dd2952bd0a1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4ba0f214d1b7f572d11dabe8fe0be9c99e25e6fd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5903e1aeec722943cc5f816cb8c688b30777b2dd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5b7aecdc033968ccbf74f529f7de39df727b5c81",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -73,30 +41,6 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x79f140cf8ae51880fa00468c9621da125e79bbdb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7f447457a771745688de5ec7c68c12fb47722349",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8138fd4f5b62237c201b4d6c721b702dc64584e1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0x83bc53e2663ad903b4d1f7d89fb5527cf5df28b7",
       "is_proxy": false,
       "implementation_address": null,
@@ -105,39 +49,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xa76aa0b3d570ae04fcdd3e03fd217bfc5511448c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0xa90196785a133ad5f1768347eb407fcb1b44b77d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xac84794ad9aa87fd001e019bbeb53c5c0bc69c2b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbacf97aa4bcb35b285b5838e5a459b632580ad28",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcb1ceae1645f721a378357d64f57527d0280b111",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -194,14 +106,6 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xf08cb48bfc705ffb4f2064c578987a27daad1386",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf215cf8b8accd1f87edcdcddcf979fef0ffbd101",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

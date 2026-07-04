@@ -3,7 +3,7 @@ pragma solidity >=0.5.0;
 
 /// @title Provides functions for deriving a pool address from the factory, tokens, and the fee
 library PoolAddress {
-    bytes32 internal constant POOL_INIT_CODE_HASH = 0xf08a35894b6b71b07d95a23022375630f6cee63a27d724c703617c17c4fc387d;
+    bytes32 internal constant POOL_INIT_CODE_HASH = 0x4df55b716c4860761850d688a7522eee33a4b056dbe088d6f002a236eb9b6b56;
 
     /// @notice The identifying key of the pool
     struct PoolKey {
@@ -27,7 +27,7 @@ library PoolAddress {
     }
 
     /// @notice Deterministically computes the pool address given the factory and PoolKey
-    /// @param deployer The SquadSwap V3 deployer contract address
+    /// @param deployer The CryptoSwap V3 deployer contract address
     /// @param key The PoolKey
     /// @return pool The contract address of the V3 pool
     function computeAddress(address deployer, PoolKey memory key) internal pure returns (address pool) {

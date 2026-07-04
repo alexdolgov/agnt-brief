@@ -1,0 +1,18 @@
+{
+  "component": "crosschainQiStablecoinSlimV2-2",
+  "main_contract": "crosschainQiStablecoinSlimV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1f8f7a1d38e41eaf0ed916def29bdd13f2a3f11a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

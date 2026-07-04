@@ -1,18 +1,22 @@
 # lisk-bridge — deployments
 
-208 verified deployment(s) across 123 component(s).
+235 verified deployment(s) across 149 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | inactive | no |
-| ethereum | `0x0129c6f26ba8ab0f9575ffe2c0678253a5de930d` | Vyper_contract | impl | inactive | no |
+| ethereum | `0x0129c6f26ba8ab0f9575ffe2c0678253a5de930d` | Vyper_contract-2 | impl | inactive | no |
 | ethereum | `0x02398771fd1db790ef2b656ca3bcb3075f27a72c` | MasterMinter | impl | live | no |
+| ethereum | `0x02454e9dd8d8d49d4a20df27f5e1c3a51b4c1c27` | Vyper_contract-3 | impl | inactive | no |
 | ethereum | `0x03bbc1313d3db4b356fb307dbe86a001f29c1576` | AddressManager | impl | live | no |
 | ethereum | `0x0454092516c9a4d636d3cafa1e82161376c8a748` | LivenessModule | impl | inactive | no |
 | ethereum | `0x0479e6757eb4743843b309dddf78e6ba242f38be` | Proxy-2 | impl | live | no |
 | ethereum | `0x04b5129735b5d9b1b54109f2c4c06ea23b506a95` | Tellor | impl | inactive | no |
 | ethereum | `0x055860f40533c4d9e7cd38105f4c0d1eb0593072` | ProxyAdmin | impl | live | no |
 | ethereum | `0x05f23282ffdca8286e4738c1af79079f3d843750` | Proxy-5 | proxy | live | no |
+| ethereum | `0x0627054d17eae63ec23c6d8b07d8db7a66ffd45a` | Vyper_contract-4 | impl | inactive | no |
+| ethereum | `0x07be9bb2b1789b8f5b2f9345f18378a8b036a171` | Vyper_contract-5 | impl | inactive | no |
+| ethereum | `0x082a5956d63b44685a7cca89379d565c439fdf3c` | Vyper_contract-6 | impl | inactive | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | live | no |
 | ethereum | `0x089df6de0498c9dea212d80b72641984425c00ab` | AddressManager | impl | live | no |
 | ethereum | `0x095102ec7bea1c5f25090705b196a6ea2e6b64f6` | PermissionedDisputeGame | impl | live | yes |
@@ -35,6 +39,7 @@
 | ethereum | `0x18a0b8c653c291d69f21a6ef9a1000335f71618e` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0x1920666fa17a87b4454f08665176cbe9ecc0b7bc` | AddressManager | impl | live | no |
 | ethereum | `0x19708f0e1b9f4645907b75386a9d5bb75ea03acc` | Dotc | impl | inactive | no |
+| ethereum | `0x19bc15849b392519a9a9131df32c00cc3497892d` | UpgradeableProxy | proxy | live | no |
 | ethereum | `0x1a2356d54aeead105f203a5c51a6307ec100494e` | SwarmBuyerBurner | impl | inactive | no |
 | ethereum | `0x1abaea1f7c830bd89acc67ec4af516284b1bc33c` | FiatTokenProxy | proxy | live | no |
 | ethereum | `0x1d0d0516385d2ff6748a3b87ba2c2cc37f287d4a` | TransparentUpgradeableProxy | proxy | live | no |
@@ -46,6 +51,7 @@
 | ethereum | `0x23afd2bd797b87394d797dd0134022c42432f7fe` | BurnMintTokenPool | impl | live | no |
 | ethereum | `0x24424336f04440b1c28685a38303ac33c9d14a25` | GnosisSafe | impl | inactive | no |
 | ethereum | `0x247d082cd7649098d377ff8812d84aa354b55c14` | XTokenFactory | impl | inactive | no |
+| ethereum | `0x2618e94a7f6118aced2e51e0a05da43d2e2ed40c` | Vyper_contract-7 | impl | inactive | no |
 | ethereum | `0x2658723bf70c7667de6b25f99fcce13a16d25d08` | L1ChugSplashProxy | proxy | live | no |
 | ethereum | `0x26c7bfb430d68bf74d2d52497836d4336b555de7` | Proxy | proxy | live | no |
 | ethereum | `0x26db93f8b8b4f7016240af62f7730979d353f9a7` | Proxy-7 | proxy | live | no |
@@ -55,8 +61,12 @@
 | ethereum | `0x2b418d9b1e0c203ab93c8b5a54258bb3e6babbc6` | DotcEscrowV2 | impl | live | no |
 | ethereum | `0x2b498bae947c80e358f59a277adda90f76344456` | xGoldBundleStorage | impl | live | no |
 | ethereum | `0x2b9dc65253c035eb21778cb3898eab5a0ada0cce` | XTokenWrapper | impl | inactive | no |
+| ethereum | `0x2bdfd3de0ff23373b621cdad0ad3df1580efe701` | Vyper_contract-8 | impl | inactive | no |
+| ethereum | `0x2c1b89e799bfe4774cb42996971aaac319d027e3` | Vyper_contract-9 | impl | inactive | no |
+| ethereum | `0x2ca788280fb10384946d3ecc838d94deca505cf4` | Vyper_contract-10 | impl | inactive | no |
 | ethereum | `0x2df7057d3f25212e51afea8da628668229ea423f` | AddressManager | impl | live | no |
 | ethereum | `0x2fcab60dc6ad65be5f2aae6a1b2e2ecb93017888` | SwarmBuyerBurner | impl | inactive | no |
+| ethereum | `0x310459750ce8f46b8615378e79dbd985ba77332b` | Vyper_contract-11 | impl | inactive | no |
 | ethereum | `0x31b72d76fb666844c41edf08df0254875dbb7edb` | ResolvedDelegateProxy | proxy | live | no |
 | ethereum | `0x31efc2c8012c56e007e5bdb8e5b7955d197c168e` | Proxy-3 | proxy | live | no |
 | ethereum | `0x33a032ec93ec0c492ec4bf0b30d5f51986e5a314` | SystemConfig | impl | inactive | no |
@@ -68,13 +78,15 @@
 | ethereum | `0x3c4b07ecdad1b58ac05fa5a3c3c598b1c16232c7` | Distributor | impl | inactive | no |
 | ethereum | `0x3d24faf8f7bed929a11269eb615a0f2de64d03b7` | ProxyAdmin | impl | live | no |
 | ethereum | `0x40ad51ad1713a8275793f9ce81e5e4390a2ecc64` | MasterMinter-2 | impl | inactive | no |
+| ethereum | `0x40c5fb9bf63e30364646022b04ebc1c6ee13869a` | Vyper_contract-12 | impl | inactive | no |
 | ethereum | `0x41b9ea80986f6efd7ff4d5604e283362cbb682b2` | ContextUpgradeable | impl | live | no |
 | ethereum | `0x423126258e7684356c0b11bf23c7e73a1d9ed3e5` | DotcV2_1 | impl | live | no |
 | ethereum | `0x429737c0ddf17779803aba8b5e6133012952b4c3` | DotcManager | impl | inactive | no |
 | ethereum | `0x4654c4eafb2561d21633d7b099d9960857e2c748` | V2_2Upgrader | impl | live | no |
 | ethereum | `0x4877d1b8c028095582f4e4f273d0ec914e15a53a` | DotcEscrowV2 | proxy | live | no |
+| ethereum | `0x489f04eeff0ba8441d42736549a1f1d6cca74775` | Vyper_contract | impl | inactive | no |
 | ethereum | `0x4afe7d5d85ed6b4aa02ce49f907248cd8810a368` | SmtPriceFeed | impl | inactive | no |
-| ethereum | `0x513251fab2542532753972b8fe9a7b60621affad` | Vyper_contract-2 | impl | inactive | no |
+| ethereum | `0x513251fab2542532753972b8fe9a7b60621affad` | Vyper_contract-13 | impl | inactive | no |
 | ethereum | `0x5321647f3c3769bc7bb9e10ab10d7f5c2e402c56` | BPoolProxy | impl | inactive | no |
 | ethereum | `0x53fbfe5b1dfea7923f4691f819ca6e278de4e337` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x5405dd4306a4ec1e15c71275ba9a58425759c194` | Main | impl | inactive | no |
@@ -91,6 +103,7 @@
 | ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | inactive | no |
 | ethereum | `0x632f2fe528d59ae71ecd38d7f1fdf8d5b5b1cf25` | Dotc | proxy | live | no |
 | ethereum | `0x6738c99eda2333b45d6ba8e212262305ffe34bf2` | Proxy | proxy | live | no |
+| ethereum | `0x6875ce8f1edd02665b72accf8a152c5a5134914f` | Vyper_contract-14 | impl | inactive | no |
 | ethereum | `0x6b0f858ac88f13bb26081a8e86d3dd723c8031ac` | SmtDistributor | impl | live | no |
 | ethereum | `0x6b8808910c298239aabf6475e99ea468f1d52a0d` | DotcOfferHelper | impl | live | no |
 | ethereum | `0x6da68d65583460742ba8711b166ad51540713ff7` | SmtPriceFeed | impl | inactive | no |
@@ -98,11 +111,15 @@
 | ethereum | `0x6e5ff00e8aaf55fa55e8ee9976622409fd187824` | Proxy | proxy | live | no |
 | ethereum | `0x6eb57991c31f8dd2481a702090edc0962ae50fae` | BurnMintTokenPool | impl | live | no |
 | ethereum | `0x7005e13e8118b72f0d77e3418cdf4b48e768c820` | ActionManager | impl | inactive | no |
-| ethereum | `0x707f9118e33a9b8998bea41dd0d46f38bb963fc8` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0x707f9118e33a9b8998bea41dd0d46f38bb963fc8` | Vyper_contract-15 | impl | live | no |
 | ethereum | `0x73e34dac4e76bda81724d333a02d850ca7fbb038` | TellorGetters | impl | inactive | no |
+| ethereum | `0x76c6f14efdf3c755308a14db2ce22e309297ba45` | Vyper_contract-16 | impl | inactive | no |
 | ethereum | `0x7753736456451f639281fcdc5b4151fe7791450d` | BundleStorage | proxy | live | no |
+| ethereum | `0x777cee2a757bd958939d3fbfd8af17aa5a34051d` | Vyper_contract-17 | impl | inactive | no |
+| ethereum | `0x7859f9187837f99fc4a75f86b2afe61314f21ee4` | Vyper_contract-18 | impl | inactive | no |
 | ethereum | `0x7a3d18271d54d6159104d2b5e791662f07dffad1` | ProxyAdmin | impl | live | no |
 | ethereum | `0x7ad0d165b9607960ad850090ddd7b9eb381d9c1e` | Proxy-3 | proxy | live | no |
+| ethereum | `0x7b64b0116fb2d7f80392173bb21c2dc1143d6bdd` | Vyper_contract-19 | impl | inactive | no |
 | ethereum | `0x7df140dd919e29cb1c8d6186f2bba6e407c7106f` | Proxy-2 | impl | live | no |
 | ethereum | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | WstETH | impl | live | no |
 | ethereum | `0x7f94388a552580712c4ec724f470c6e4a74b5244` | xGold | impl | live | no |
@@ -114,6 +131,7 @@
 | ethereum | `0x820758b04721bd0b69a091fe8ef657d936bf35c5` | Dotc | impl | inactive | no |
 | ethereum | `0x83fc9db9ce83325f77f1aefeba1a3412d0d26fdb` | Proxy-2 | impl | live | no |
 | ethereum | `0x86a6f51ca732828ea6df0b377f417ba5f68490b1` | Proxy-2 | impl | live | no |
+| ethereum | `0x86bb5d880d177a95995aebc74a5b1db2aa39c2ae` | Vyper_contract-20 | impl | inactive | no |
 | ethereum | `0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0` | TellorMaster | proxy | live | no |
 | ethereum | `0x88f3cb3500c9bcee361f334727dd4bfc9013dfd5` | ProxyAdmin | impl | live | no |
 | ethereum | `0x899de169fda163f57b12852a0144bb886578d7b6` | Proxy-2 | impl | live | no |
@@ -143,11 +161,14 @@
 | ethereum | `0x9eb97469ad44e8ccdf5c1ff669d7c57c7235c49c` | AddressManager | impl | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | live | no |
+| ethereum | `0xa2f987a546d4cd1c607ee8141276876c26b72bdf` | AnchorVaultProxy | proxy | live | no |
 | ethereum | `0xa306065a144a16dbc99f06e16737dd400e6e1778` | StakingRewards | impl | inactive | no |
 | ethereum | `0xa4d9ef479884d875a5b95b541f024f4e837f6fcd` | Proxy-2 | impl | live | no |
 | ethereum | `0xa58a4f5c4bb043d2cc1e170613b74e767c94189b` | UTUToken-2 | impl | live | no |
 | ethereum | `0xa75d8afd8d3a36dd3935078e4d05153946cee84c` | TokenTransferor | impl | live | no |
+| ethereum | `0xa9b2f5ce3aae7374a62313473a74c98baa7fa70e` | Vyper_contract-21 | impl | inactive | no |
 | ethereum | `0xab235c5b80860899f67f88370ba69c2c80499f23` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xab55bf4dfbf469ebfe082b7872557d1f87692fe6` | PriceFeedProxy | proxy | live | no |
 | ethereum | `0xab7aa6495f8694656b59bc6309d3f6190dbc8b14` | SX1155NFTFactory | impl | live | no |
 | ethereum | `0xabc2108199f33adf0343ef3a67565313c0aed6c1` | ProtocolFee | impl | inactive | no |
 | ethereum | `0xabdf147870235fcfc34153828c769a70b3fae01f` | TetherToken-3 | impl | inactive | no |
@@ -156,6 +177,7 @@
 | ethereum | `0xad89eededf3f4996932c6949ab37d9398bfbb215` | Distributor | impl | inactive | no |
 | ethereum | `0xb05963a6bed7e9db887eceb2775a03414d00fac9` | BurnMintTokenPool | impl | live | no |
 | ethereum | `0xb17548c7b510427baac4e267bea62e800b247173` | SwarmMarketsToken | impl | live | no |
+| ethereum | `0xb2022ea377994f66a81c01eb3e9170245afeaa52` | Vyper_contract | impl | inactive | no |
 | ethereum | `0xb441417e6ff3acf60b9f0216d8c3179913080daa` | PermissionItems | impl | inactive | no |
 | ethereum | `0xb4950517fac0a3467605bd5f83ef60c8f2cde441` | AddressManager | impl | live | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | live | no |
@@ -182,6 +204,7 @@
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken-4 | impl | live | no |
 | ethereum | `0xdb149235b6f40dc08810aa69869783be101790e7` | DepositSecurityModule | impl | inactive | no |
 | ethereum | `0xdb46c277da1599390eab394327602889e9546296` | MerkleDistributor | impl | inactive | no |
+| ethereum | `0xdb99fdb42fec8ba414ea60b3a189208bbdbfa321` | Vyper_contract-22 | impl | inactive | no |
 | ethereum | `0xdd9c27910327d3f4a4007ad8f7b53332db6f1079` | Proxy-4 | proxy | live | no |
 | ethereum | `0xde0aa21af41176cb05e5a80f26dd7949380f0195` | FiatTokenV1 | proxy | live | no |
 | ethereum | `0xe09899a4c98473460bc19d136b330608b465dc55` | ERC1967Proxy | proxy | live | no |
@@ -190,6 +213,7 @@
 | ethereum | `0xe214d97ba7ff83144699737f73d271c006013d91` | TransparentUpgradeableProxy-7 | proxy | live | no |
 | ethereum | `0xe2b0cfef892c017d84d8220b8d2ac249624cd087` | L1VestingWalletPaused | impl | unknown | no |
 | ethereum | `0xe3622468ea7dd804702b56ca2a4f88c0936995e6` | ERC1967Proxy-3 | proxy | live | no |
+| ethereum | `0xe3c8a4de3b8a484ff890a38d6d7b5d278d697fb7` | Vyper_contract-23 | impl | inactive | no |
 | ethereum | `0xe44cb98048afedb3cb21a7933b517165254ebd46` | ProxyAdmin | impl | live | no |
 | ethereum | `0xe6227e07c0dd1604f3c820ad779792bbe56a9ed8` | Extension | impl | inactive | no |
 | ethereum | `0xe982615d461dd5cd06575bbea87624fda4e3de17` | MasterMinter | impl | inactive | no |
@@ -208,38 +232,10 @@
 | ethereum | `0xf6445627bc9d06516d317a0dbbc4660bab7a17c0` | TetherToken-5 | impl | inactive | no |
 | ethereum | `0xf70cee7c7e638f9364c4076a01226337ec51fca5` | EthPriceFeed | impl | inactive | no |
 | ethereum | `0xf7a2e44ed9cc2a571d4b1f44110b38fb254e8675` | Proxy | proxy | live | no |
+| ethereum | `0xf8b237d60af4865192bd8b8d2bc1b2d607c1ffad` | Vyper_contract-24 | impl | inactive | no |
 | ethereum | `0xf96e9a7ce4c68d85198f959f4138ca449943a0fe` | PermissionItems | impl | inactive | no |
 | ethereum | `0xf9ff7c0d236745399ce6bdbf3a54028339288ba3` | TransparentUpgradeableProxy-3 | impl | inactive | no |
 | ethereum | `0xfa9f3c42e063d78a46a4f1e5b6b4c365203d478e` | ConfigurableOracleMockFactory | impl | inactive | no |
+| ethereum | `0xfb27310beda96af0005e9ab2f029a088740da180` | Vyper_contract-25 | impl | inactive | no |
 | ethereum | `0xfc63b16f5dfaf3c9e1b4bde873f79ce02c216b33` | SwarmMarketsToken | impl | inactive | no |
-
-## Source unavailable (27)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x02454e9dd8d8d49d4a20df27f5e1c3a51b4c1c27`
-- ethereum `0x0627054d17eae63ec23c6d8b07d8db7a66ffd45a`
-- ethereum `0x07be9bb2b1789b8f5b2f9345f18378a8b036a171`
-- ethereum `0x082a5956d63b44685a7cca89379d565c439fdf3c`
-- ethereum `0x19bc15849b392519a9a9131df32c00cc3497892d`
-- ethereum `0x2618e94a7f6118aced2e51e0a05da43d2e2ed40c`
-- ethereum `0x2bdfd3de0ff23373b621cdad0ad3df1580efe701`
-- ethereum `0x2c1b89e799bfe4774cb42996971aaac319d027e3`
-- ethereum `0x2ca788280fb10384946d3ecc838d94deca505cf4`
-- ethereum `0x310459750ce8f46b8615378e79dbd985ba77332b`
-- ethereum `0x40c5fb9bf63e30364646022b04ebc1c6ee13869a`
-- ethereum `0x489f04eeff0ba8441d42736549a1f1d6cca74775`
-- ethereum `0x6875ce8f1edd02665b72accf8a152c5a5134914f`
-- ethereum `0x76c6f14efdf3c755308a14db2ce22e309297ba45`
-- ethereum `0x777cee2a757bd958939d3fbfd8af17aa5a34051d`
-- ethereum `0x7859f9187837f99fc4a75f86b2afe61314f21ee4`
-- ethereum `0x7b64b0116fb2d7f80392173bb21c2dc1143d6bdd`
-- ethereum `0x86bb5d880d177a95995aebc74a5b1db2aa39c2ae`
-- ethereum `0xa2f987a546d4cd1c607ee8141276876c26b72bdf`
-- ethereum `0xa9b2f5ce3aae7374a62313473a74c98baa7fa70e`
-- ethereum `0xab55bf4dfbf469ebfe082b7872557d1f87692fe6`
-- ethereum `0xb2022ea377994f66a81c01eb3e9170245afeaa52`
-- ethereum `0xdb99fdb42fec8ba414ea60b3a189208bbdbfa321`
-- ethereum `0xe3c8a4de3b8a484ff890a38d6d7b5d278d697fb7`
-- ethereum `0xf8b237d60af4865192bd8b8d2bc1b2d607c1ffad`
-- ethereum `0xfb27310beda96af0005e9ab2f029a088740da180`
-- ethereum `0xfef762dfdc87f79879aaef221a6a5d302833fe27`
+| ethereum | `0xfef762dfdc87f79879aaef221a6a5d302833fe27` | Vyper_contract-26 | impl | inactive | no |

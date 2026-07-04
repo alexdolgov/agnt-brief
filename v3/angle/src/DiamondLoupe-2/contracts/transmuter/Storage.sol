@@ -42,20 +42,18 @@ enum QuoteType {
 enum OracleReadType {
     CHAINLINK_FEEDS,
     EXTERNAL,
-    NO_ORACLE
+    NO_ORACLE,
+    STABLE,
+    WSTETH,
+    CBETH,
+    RETH,
+    SFRXETH,
+    PYTH
 }
 
 enum OracleQuoteType {
     UNIT,
     TARGET
-}
-
-enum OracleTargetType {
-    STABLE,
-    WSTETH,
-    CBETH,
-    RETH,
-    SFRXETH
 }
 
 enum WhitelistType {
@@ -94,6 +92,10 @@ struct DiamondStorage {
     IAccessControlManager accessControlManager;  // Contract handling access control
 }
 
+struct ImplementationStorage {
+    address implementation;                      // Dummy implementation address for Etherscan usability
+}
+
 struct ManagerStorage {
     IERC20[] subCollaterals;                     // Subtokens handled by the manager or strategies
     bytes config;                                // Additional configuration data
@@ -118,6 +120,7 @@ struct Collateral {
 struct TransmuterStorage {
     IAgToken agToken;                            // agToken handled by the system
     uint8 isRedemptionLive;                      // If redemption is unpaused
+    uint8 statusReentrant;                        // If call is reentrant or not
     uint128 normalizedStables;                   // Normalized amount of stablecoins issued by the system
     uint128 normalizer;                          // To reconcile `normalizedStables` values with the actual amount
     address[] collateralList;                    // List of collateral assets supported by the system

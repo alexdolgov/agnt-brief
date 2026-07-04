@@ -1,0 +1,18 @@
+{
+  "component": "TurbineProxy-2",
+  "main_contract": "TurbineProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6beadd1bc88c0caad109f46ba72e5842e442ded1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

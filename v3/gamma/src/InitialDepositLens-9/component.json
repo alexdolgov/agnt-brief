@@ -1,0 +1,18 @@
+{
+  "component": "InitialDepositLens-9",
+  "main_contract": "InitialDepositLens",
+  "source_file_count": 90,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x505aadb1c8e1024d3ed911738b09e09232d09947",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

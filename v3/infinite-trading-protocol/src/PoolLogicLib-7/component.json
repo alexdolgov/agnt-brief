@@ -1,0 +1,18 @@
+{
+  "component": "PoolLogicLib-7",
+  "main_contract": "PoolLogicLib",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x23a7fbadeebd1b92481300515932af3eebe7d0b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "RegistryV2Deployer-3",
+  "main_contract": "RegistryV2Deployer",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x49015f95905bbeda62daea34852e603d255a1a7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

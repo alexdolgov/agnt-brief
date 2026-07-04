@@ -2,13 +2,37 @@
   "component": "UniversalRouter",
   "main_contract": "UniversalRouter",
   "source_file_count": 93,
-  "deployment_count": 2,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/RingProtocol/v4-periphery/blob/main/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf",
     "https://github.com/RingProtocol/v4-periphery/blob/main/audits/OpenZeppelin_audit_periphery_universal_router.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x851116d9223fabed8e56c0e6b8ad0c31d98b3507",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1906c1d672b88cd1b9ac7593301ca990f94eae07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,
@@ -21,6 +45,30 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x6ff5693b99212da76ad316178a184ab56d299b43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa51afafe0263b40edaef0df8781ea9aa03e381a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x94b75331ae8d42c1b61065089b7d48fe14aa73b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xeabbcb3e8e415306207ef514f660a3f820025be3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

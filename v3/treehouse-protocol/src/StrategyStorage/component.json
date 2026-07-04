@@ -2,12 +2,20 @@
   "component": "StrategyStorage",
   "main_contract": "StrategyStorage",
   "source_file_count": 8,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbfdf0af6df48e645bd076802b95ddef0b1e02a9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

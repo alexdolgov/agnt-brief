@@ -28,7 +28,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     uint256 private constant REQUEST_ID = 0;
 
     IRoot public immutable root;
-
+    address public immutable escrow;
     IInvestmentManager public manager;
 
     /// @inheritdoc IERC7540Vault
@@ -60,15 +60,22 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     // --- Events ---
     event File(bytes32 indexed what, address data);
 
-    constructor(uint64 poolId_, bytes16 trancheId_, address asset_, address share_, address root_, address manager_)
-        Auth(msg.sender)
-    {
+    constructor(
+        uint64 poolId_,
+        bytes16 trancheId_,
+        address asset_,
+        address share_,
+        address root_,
+        address escrow_,
+        address manager_
+    ) Auth(msg.sender) {
         poolId = poolId_;
         trancheId = trancheId_;
         asset = asset_;
         share = share_;
         _shareDecimals = IERC20Metadata(share).decimals();
         root = IRoot(root_);
+        escrow = escrow_;
         manager = IInvestmentManager(manager_);
 
         nameHash = keccak256(bytes("Centrifuge"));
@@ -91,7 +98,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
 
     // --- ERC-7540 methods ---
     /// @inheritdoc IERC7540Deposit
-    function requestDeposit(uint256 assets, address controller, address owner) external returns (uint256) {
+    function requestDeposit(uint256 assets, address controller, address owner) public returns (uint256) {
         require(owner == msg.sender || isOperator[owner][msg.sender], "ERC7540Vault/invalid-owner");
         require(IERC20(asset).balanceOf(owner) >= assets, "ERC7540Vault/insufficient-balance");
 
@@ -99,14 +106,14 @@ contract ERC7540Vault is Auth, IERC7540Vault {
             manager.requestDeposit(address(this), assets, controller, owner, msg.sender),
             "ERC7540Vault/request-deposit-failed"
         );
-        SafeTransferLib.safeTransferFrom(asset, owner, manager.escrow(), assets);
+        SafeTransferLib.safeTransferFrom(asset, owner, address(escrow), assets);
 
         emit DepositRequest(controller, owner, REQUEST_ID, msg.sender, assets);
         return REQUEST_ID;
     }
 
     /// @inheritdoc IERC7540Deposit
-    function pendingDepositRequest(uint256, address controller) external view returns (uint256 pendingAssets) {
+    function pendingDepositRequest(uint256, address controller) public view returns (uint256 pendingAssets) {
         pendingAssets = manager.pendingDepositRequest(address(this), controller);
     }
 
@@ -116,7 +123,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     /// @inheritdoc IERC7540Redeem
-    function requestRedeem(uint256 shares, address controller, address owner) external returns (uint256) {
+    function requestRedeem(uint256 shares, address controller, address owner) public returns (uint256) {
         require(ITranche(share).balanceOf(owner) >= shares, "ERC7540Vault/insufficient-balance");
 
         // If msg.sender is operator of owner, the transfer is executed as if
@@ -128,11 +135,14 @@ contract ERC7540Vault is Auth, IERC7540Vault {
             "ERC7540Vault/request-redeem-failed"
         );
 
-        address escrow = manager.escrow();
-        try ITranche(share).authTransferFrom(sender, owner, escrow, shares) returns (bool) {}
+        require(
+            ITranche(share).checkTransferRestriction(owner, address(escrow), shares), "ERC7540Vault/restrictions-failed"
+        );
+
+        try ITranche(share).authTransferFrom(sender, owner, address(escrow), shares) returns (bool) {}
         catch {
             // Support tranche tokens that block authTransferFrom. In this case ERC20 approval needs to be set
-            require(ITranche(share).transferFrom(owner, escrow, shares), "ERC7540Vault/transfer-from-failed");
+            require(ITranche(share).transferFrom(owner, address(escrow), shares), "ERC7540Vault/transfer-from-failed");
         }
 
         emit RedeemRequest(controller, owner, REQUEST_ID, msg.sender, shares);
@@ -140,7 +150,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     /// @inheritdoc IERC7540Redeem
-    function pendingRedeemRequest(uint256, address controller) external view returns (uint256 pendingShares) {
+    function pendingRedeemRequest(uint256, address controller) public view returns (uint256 pendingShares) {
         pendingShares = manager.pendingRedeemRequest(address(this), controller);
     }
 
@@ -158,16 +168,12 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     /// @inheritdoc IERC7540CancelDeposit
-    function pendingCancelDepositRequest(uint256, address controller) external view returns (bool isPending) {
+    function pendingCancelDepositRequest(uint256, address controller) public view returns (bool isPending) {
         isPending = manager.pendingCancelDepositRequest(address(this), controller);
     }
 
     /// @inheritdoc IERC7540CancelDeposit
-    function claimableCancelDepositRequest(uint256, address controller)
-        external
-        view
-        returns (uint256 claimableAssets)
-    {
+    function claimableCancelDepositRequest(uint256, address controller) public view returns (uint256 claimableAssets) {
         claimableAssets = manager.claimableCancelDepositRequest(address(this), controller);
     }
 
@@ -178,7 +184,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     {
         _validateController(controller);
         assets = manager.claimCancelDepositRequest(address(this), receiver, controller);
-        emit CancelDepositClaim(controller, receiver, REQUEST_ID, msg.sender, assets);
+        emit CancelDepositClaim(receiver, controller, REQUEST_ID, msg.sender, assets);
     }
 
     /// @inheritdoc IERC7540CancelRedeem
@@ -189,16 +195,12 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     /// @inheritdoc IERC7540CancelRedeem
-    function pendingCancelRedeemRequest(uint256, address controller) external view returns (bool isPending) {
+    function pendingCancelRedeemRequest(uint256, address controller) public view returns (bool isPending) {
         isPending = manager.pendingCancelRedeemRequest(address(this), controller);
     }
 
     /// @inheritdoc IERC7540CancelRedeem
-    function claimableCancelRedeemRequest(uint256, address controller)
-        external
-        view
-        returns (uint256 claimableShares)
-    {
+    function claimableCancelRedeemRequest(uint256, address controller) public view returns (uint256 claimableShares) {
         claimableShares = manager.claimableCancelRedeemRequest(address(this), controller);
     }
 
@@ -209,11 +211,11 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     {
         _validateController(controller);
         shares = manager.claimCancelRedeemRequest(address(this), receiver, controller);
-        emit CancelRedeemClaim(controller, receiver, REQUEST_ID, msg.sender, shares);
+        emit CancelRedeemClaim(receiver, controller, REQUEST_ID, msg.sender, shares);
     }
 
     /// @inheritdoc IERC7540Operator
-    function setOperator(address operator, bool approved) external virtual returns (bool success) {
+    function setOperator(address operator, bool approved) public virtual returns (bool success) {
         require(msg.sender != operator, "ERC7540Vault/cannot-set-self-as-operator");
         isOperator[msg.sender][operator] = approved;
         emit OperatorSet(msg.sender, operator, approved);
@@ -221,7 +223,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     /// @inheritdoc IERC7540Vault
-    function setEndorsedOperator(address owner, bool approved) external virtual {
+    function setEndorsedOperator(address owner, bool approved) public virtual {
         require(msg.sender != owner, "ERC7540Vault/cannot-set-self-as-operator");
         require(root.endorsed(msg.sender), "ERC7540Vault/not-endorsed");
         isOperator[owner][msg.sender] = approved;
@@ -290,7 +292,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     /// @inheritdoc IERC7575
     /// @notice     The calculation is based on the token price from the most recent epoch retrieved from Centrifuge.
     ///             The actual conversion MAY change between order submission and execution.
-    function convertToShares(uint256 assets) external view returns (uint256 shares) {
+    function convertToShares(uint256 assets) public view returns (uint256 shares) {
         shares = manager.convertToShares(address(this), assets);
     }
 
@@ -310,7 +312,7 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     function deposit(uint256 assets, address receiver, address controller) public returns (uint256 shares) {
         _validateController(controller);
         shares = manager.deposit(address(this), assets, receiver, controller);
-        emit Deposit(controller, receiver, assets, shares);
+        emit Deposit(receiver, controller, assets, shares);
     }
 
     /// @inheritdoc IERC7575
@@ -329,21 +331,22 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     function mint(uint256 shares, address receiver, address controller) public returns (uint256 assets) {
         _validateController(controller);
         assets = manager.mint(address(this), shares, receiver, controller);
-        emit Deposit(controller, receiver, assets, shares);
+        emit Deposit(receiver, controller, assets, shares);
     }
 
     /// @inheritdoc IERC7575
-    function mint(uint256 shares, address receiver) external returns (uint256 assets) {
+    function mint(uint256 shares, address receiver) public returns (uint256 assets) {
         assets = mint(shares, receiver, msg.sender);
     }
 
     /// @inheritdoc IERC7575
-    function maxWithdraw(address controller) external view returns (uint256 maxAssets) {
+    function maxWithdraw(address controller) public view returns (uint256 maxAssets) {
         maxAssets = manager.maxWithdraw(address(this), controller);
     }
 
     /// @inheritdoc IERC7575
-    function withdraw(uint256 assets, address receiver, address controller) external returns (uint256 shares) {
+    /// @notice     DOES NOT support controller != msg.sender since shares are already transferred on requestRedeem
+    function withdraw(uint256 assets, address receiver, address controller) public returns (uint256 shares) {
         _validateController(controller);
         shares = manager.withdraw(address(this), assets, receiver, controller);
         emit Withdraw(msg.sender, receiver, controller, assets, shares);
@@ -355,7 +358,8 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     /// @inheritdoc IERC7575
-    /// @notice     When claiming redemption requests using redeem(), there can be some precision loss leading to dust.
+    /// @notice     DOES NOT support controller != msg.sender since shares are already transferred on requestRedeem.
+    ///             When claiming redemption requests using redeem(), there can be some precision loss leading to dust.
     ///             It is recommended to use withdraw() to claim redemption requests instead.
     function redeem(uint256 shares, address receiver, address controller) external returns (uint256 assets) {
         _validateController(controller);
@@ -384,38 +388,33 @@ contract ERC7540Vault is Auth, IERC7540Vault {
     }
 
     // --- Event emitters ---
-    /// @inheritdoc IERC7540Vault
-    function onRedeemRequest(address controller, address owner, uint256 shares) external auth {
+    function onRedeemRequest(address controller, address owner, uint256 shares) public auth {
         emit RedeemRequest(controller, owner, REQUEST_ID, msg.sender, shares);
     }
 
-    /// @inheritdoc IERC7540Vault
-    function onDepositClaimable(address controller, uint256 assets, uint256 shares) external auth {
+    function onDepositClaimable(address controller, uint256 assets, uint256 shares) public auth {
         emit DepositClaimable(controller, REQUEST_ID, assets, shares);
     }
 
-    /// @inheritdoc IERC7540Vault
-    function onRedeemClaimable(address controller, uint256 assets, uint256 shares) external auth {
+    function onRedeemClaimable(address controller, uint256 assets, uint256 shares) public auth {
         emit RedeemClaimable(controller, REQUEST_ID, assets, shares);
     }
 
-    /// @inheritdoc IERC7540Vault
-    function onCancelDepositClaimable(address controller, uint256 assets) external auth {
+    function onCancelDepositClaimable(address controller, uint256 assets) public auth {
         emit CancelDepositClaimable(controller, REQUEST_ID, assets);
     }
 
-    /// @inheritdoc IERC7540Vault
-    function onCancelRedeemClaimable(address controller, uint256 shares) external auth {
+    function onCancelRedeemClaimable(address controller, uint256 shares) public auth {
         emit CancelRedeemClaimable(controller, REQUEST_ID, shares);
     }
 
     // --- Helpers ---
-    /// @inheritdoc IERC7540Vault
+    /// @notice Price of 1 unit of share, quoted in the decimals of the asset.
     function pricePerShare() external view returns (uint256) {
         return convertToAssets(10 ** _shareDecimals);
     }
 
-    /// @inheritdoc IERC7540Vault
+    /// @notice Returns timestamp of the last share price update.
     function priceLastUpdated() external view returns (uint64) {
         return manager.priceLastUpdated(address(this));
     }

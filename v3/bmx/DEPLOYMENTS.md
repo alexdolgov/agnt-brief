@@ -1,6 +1,6 @@
 # bmx — deployments
 
-248 verified deployment(s) across 59 component(s).
+262 verified deployment(s) across 73 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -111,6 +111,7 @@
 | base | `0x5f37dac9f1a7e2531f5237f66ff411f73b4c06ce` | PositionManagerAdapter | impl | live | no |
 | base | `0x5fda452e408b7069f6904eb9886ef67b7cbc4929` | IncentiveGauge | impl | live | no |
 | base | `0x6456039168d3fe3bc5fcd9e46f3b716c1abd4ff4` | RewardRouterV4 | impl | live | no |
+| base | `0x64755939a80bc89e1d2d0f93a312908d348bc8de` | StakedGlp | impl | live | no |
 | base | `0x64f250ab410500044dd7c23860ef0474c536b051` | VestingStream | impl | live | no |
 | base | `0x6506477df1d3f7c273e442fe87df50f4930b41c2` | FeeProcessor | impl | live | no |
 | base | `0x6582fb4d6d98cd1bfe919fafb419c1a82183a004` | V2PositionHandler | impl | live | no |
@@ -150,6 +151,7 @@
 | base | `0x8ab178c07184ffd44f0adff4ea2ce6cfc33f3b86` | BeaconProxy | proxy | live | no |
 | base | `0x8e4ecbc8ecae876d61efeb17dbf908e6acb796f0` | SudoSingleFactoryWrapper | impl | live | no |
 | base | `0x9206d9d8f7f1b212a4183827d20de32af3a23c59` | BeaconProxy | proxy | live | no |
+| base | `0x927f9c03d1ac6e2630d31e614f226b5ed028d443` | PositionRouter | impl | live | no |
 | base | `0x94cbdb9c7c71a847dc45cb8c224856820cdf6c12` | FeeProcessor | impl | live | no |
 | base | `0x955bf2997ebc97932f6abbfb8a0f867b1a1fb567` | PresaleManager | impl | live | no |
 | base | `0x9576175a570eb7f2b0f47a47125aea6d9957bbbe` | BoardwalkLPManager | impl | live | no |
@@ -173,8 +175,10 @@
 | base | `0xb07cc74e88dbb0b4cdeb36b466c8f75774066a63` | FeeProcessor | impl | live | no |
 | base | `0xb24f95403bc2b5114aa05fbcb5507cd1d4de3ec6` | SignatureStore | impl | live | no |
 | base | `0xb5cdace11e2a7340954233078bbc9b8515f9cee7` | LPLocker | impl | live | no |
+| base | `0xb6e64e19d043ca22691a28e4558c541b659af9e0` | StakingRewardsZap | impl | live | no |
 | base | `0xb71f0431a4bdf347aa017b0277d58a59190e1c45` | LPStaking | impl | live | no |
 | base | `0xb727a2171c2bce984cf806115831fb79c7896a05` | IncentiveGauge | impl | live | no |
+| base | `0xb8372b8c8fbb4e72938d9e1cdd66b135e43faa2a` | OrderBook | impl | live | no |
 | base | `0xb86418ea8f3526397c20ecf29d696de01ecb9dc7` | IncentiveGauge | impl | live | no |
 | base | `0xb960afea0c71010f41b5562fcc40c00dc329e666` | Voter | impl | live | no |
 | base | `0xba05efb8590d4a3544e3c7a74a2774b8d6d3a6ff` | FeeDistributor | impl | live | no |
@@ -183,7 +187,7 @@
 | base | `0xc02ee577f7ad0495fa0f51dc4cb62eff7dc82cf3` | GovernanceVoter | impl | live | no |
 | base | `0xc04f6471652d666a1fed1b76a1841dbc2c162b6a` | IncentiveGauge | impl | live | no |
 | base | `0xc14dd40fb6ef1503e07db970906acab4d5f7f375` | BoardwalkLPManager | impl | live | no |
-| base | `0xc19e66d08350eb88a41377b16c8ab93ee0fb4996` | SignatureStore | impl | live | no |
+| base | `0xc19e66d08350eb88a41377b16c8ab93ee0fb4996` | SignatureStore-2 | impl | live | no |
 | base | `0xc26a8bee6e30c1f3f7851b14a5ca35fee71f74b5` | FeeDistributor | impl | live | no |
 | base | `0xc2882243656eb2ecab04473b7d7b923e667c1de5` | BoardwalkToken | impl | live | no |
 | base | `0xc3006b52e88146c26546284dfc29bc284965b4a2` | BoardwalkFeeCollector | impl | live | no |
@@ -191,6 +195,7 @@
 | base | `0xc3adb35f8ce60ab4397ed2c2069248c6b5058807` | LPStaking | impl | live | no |
 | base | `0xc3b4085b4d5d5c3d05f8806ba63aa5afa257ebcb` | V2PositionHandler | impl | live | no |
 | base | `0xc41b642190bfc329f47eb5de7b353f8d1d946c1a` | V2PositionHandler | impl | live | no |
+| base | `0xc608188e753b1e9558731724b7f7cdde40c3b174` | Router | impl | live | no |
 | base | `0xc89b2ef7030e133bd46815e6db4ef0bb95e7097c` | PresaleManager | impl | live | no |
 | base | `0xc8c4b6bdd73bff1039c58b3e14d58e4df5d64441` | IncentiveGauge | impl | live | no |
 | base | `0xc8cffacb51aabdf1d436a7b38275a612dbf548d1` | V4PositionHandler | impl | live | no |
@@ -235,6 +240,7 @@
 | base | `0xf76fb397a09a4a1a701599ece8fe5061019646da` | V2PositionHandler | impl | live | no |
 | base | `0xf78cb6fbc742de6318274326e5b763daed19a878` | LPStaking | impl | live | no |
 | base | `0xf984b34b4e6f7e31196bbd1f0766bd1f24d24a26` | BoardwalkLPManager | impl | live | no |
+| base | `0xf9fc0b2859f9b6d33fd1cea5b0a9f1d56c258178` | OrderBook-2 | impl | live | no |
 | base | `0xfa170b03fce2e53fd103a752206f28d41859ab96` | BoardwalkFeeCollector | impl | live | no |
 | base | `0xfb7f4c18e4df5658a3e06ca2d7b65404a49699c3` | VaultUtils | impl | live | no |
 | base | `0xfbbdcc77f9ce195e1c92f56e1a09b73a6bf225a4` | ParticipationDistributor | impl | live | no |
@@ -245,30 +251,24 @@
 | base | `0xff12748ed4e4cd5864a5e0b22e69bf572827a903` | BmxLockingContract | impl | live | no |
 | base | `0xffebacee18069b406d6d2c4e4c8d98541577bd84` | V2PositionHandler | impl | live | no |
 | chain-146 | `0x55f1234662bb538231d56636bb182915b43d4364` | OrderBook | impl | live | no |
-| mode | `0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a` | StakedGlp | impl | unknown | no |
-| mode | `0x22a2983ee9cc75d53c5f4adecf6299a77b8e94f4` | StakingRewardsZap | impl | unknown | no |
-| mode | `0x6d6ec3bd7c94ab35e7a0a6fda864ee35eb9fae04` | PositionRouter | impl | unknown | no |
+| mode | `0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a` | StakedGlp-2 | impl | unknown | no |
+| mode | `0x22a2983ee9cc75d53c5f4adecf6299a77b8e94f4` | StakingRewardsZap-2 | impl | unknown | no |
+| mode | `0x366152fc0fc4680e0a05ce9739a4210228c72ba3` | RewardDistributorV2-2 | impl | unknown | no |
+| mode | `0x3cb54f0eb62c371065d739a34a775cc16f46563e` | PositionManager-2 | impl | unknown | no |
+| mode | `0x3d220d2747fc2b25f771b859dbc38a6963c2b0e4` | FastPriceFeed-2 | impl | unknown | no |
+| mode | `0x4ab0b747411b42e8817ea18aab69e415841cb78b` | StakingRewardsMulti-2 | impl | unknown | no |
+| mode | `0x66eed5ff1701e6ed8470dc391f05e27b1d0657eb` | BaseToken-2 | impl | unknown | no |
+| mode | `0x6c5a770b2cf09cb36b7f42e80641c4756d41bdd5` | Timelock-2 | impl | unknown | no |
+| mode | `0x6d6ec3bd7c94ab35e7a0a6fda864ee35eb9fae04` | PositionRouter-2 | impl | unknown | no |
+| mode | `0x73bf80506f891030570fdc4d53a71f44a442353c` | RewardRouterV4-2 | impl | unknown | no |
+| mode | `0x740cfc641556868734ec2a0dc387497381819f7e` | StrategyVelodromeMultiRewards-2 | impl | unknown | no |
 | mode | `0x7bf2e95088f127522d27ca0277a70ba03f0c37f0` | wMLTRouter | impl | unknown | no |
 | mode | `0x8b2eea0999876aab1e7955fe01a5d261b570452c` | Vyper_contract | impl | unknown | no |
-| mode | `0xaa40201575140862e9ae4f00515245670582e6e0` | Router | impl | unknown | no |
+| mode | `0xaa40201575140862e9ae4f00515245670582e6e0` | Router-2 | impl | unknown | no |
 | mode | `0xc0ff4b56f62f20ba45f4229cc6baad986fa2a904` | TransparentUpgradeableProxy | impl | live | no |
 
-## Source unavailable (16)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- base `0x64755939a80bc89e1d2d0f93a312908d348bc8de`
-- base `0x927f9c03d1ac6e2630d31e614f226b5ed028d443`
-- base `0xb6e64e19d043ca22691a28e4558c541b659af9e0`
-- base `0xb8372b8c8fbb4e72938d9e1cdd66b135e43faa2a`
-- base `0xc608188e753b1e9558731724b7f7cdde40c3b174`
-- base `0xf9fc0b2859f9b6d33fd1cea5b0a9f1d56c258178`
-- mode `0x366152fc0fc4680e0a05ce9739a4210228c72ba3`
-- mode `0x3cb54f0eb62c371065d739a34a775cc16f46563e`
-- mode `0x3d220d2747fc2b25f771b859dbc38a6963c2b0e4`
-- mode `0x4ab0b747411b42e8817ea18aab69e415841cb78b`
-- mode `0x66eed5ff1701e6ed8470dc391f05e27b1d0657eb`
-- mode `0x6c5a770b2cf09cb36b7f42e80641c4756d41bdd5`
-- mode `0x73bf80506f891030570fdc4d53a71f44a442353c`
-- mode `0x740cfc641556868734ec2a0dc387497381819f7e`
 - mode `0xf054327c43330dd6754ff40d8767790ed33ebb1a`
 - mode `0xff745bdb76afcba9d3acdcd71664d4250ef1ae49`

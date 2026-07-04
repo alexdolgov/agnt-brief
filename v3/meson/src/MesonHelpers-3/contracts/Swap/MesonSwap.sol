@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 import "./IMesonSwapEvents.sol";
 import "../utils/MesonStates.sol";
@@ -16,8 +16,9 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   ///   salt: The salt value of this swap, carrying some information below:
   ///     salt & 0x80000000000000000000 == true => will release to an EOA address, otherwise a smart contract;
   ///     salt & 0x40000000000000000000 == true => will waive *service fee*;
-  ///     salt & 0x20000000000000000000 == true => meson.to;
-  ///     salt & 0x10000000000000000000 == true => API;
+  ///     salt & 0x30000000000000000000 == 0x3. => from TransferToMesonContract;
+  ///     salt & 0x30000000000000000000 == 0x2. => meson.to;
+  ///     salt & 0x30000000000000000000 == 0x1. => API;
   ///     salt & 0x08000000000000000000 == true => use *non-typed signing* (some wallets such as hardware wallets don't support EIP-712v1);
   ///     salt & 0x04000000000000000000 == true => swap for core token (n/a for releasing to contract);
   ///         salt & 0xfffff00000000000         => price for core token;
@@ -25,6 +26,8 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   ///     salt & 0x02000000000000000000 == true => share some release amount to partner;
   ///         salt & 0xffff000000000000 + 65536 => pool index to share;
   ///         salt & 0x0000ffff00000000         => amount to share;
+  ///     salt & 0x01000000000000000000 == true => use points to waive service fee;
+  ///                                              in reality, the salt header would be 0x41
   ///     salt & 0x0000ffffffffffffffff: customized data that can be passed to integrated 3rd-party smart contract;
   ///   fee: The fee given to LPs (liquidity providers). An extra service fee maybe charged afterwards;
   ///   expireTs: The expiration time of this swap on the initial chain. The LP should `executeSwap` and receive his funds before `expireTs`;
@@ -32,15 +35,27 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   ///   outToken: The index of the token on the target chain. See `tokenForIndex` in `MesonToken.sol`;
   ///   inChain: The initial chain of a cross-chain swap (given by the last 2 bytes of SLIP-44);
   ///   inToken: The index of the token on the initial chain. See `tokenForIndex` in `MesonToken.sol`.
-  /// value: `postedSwap` in format of `initiator:address|poolIndex:uint40`
+  /// value: `postedSwap` in format of `tokenNotFromInitiator:byte1|initiator:address|poolIndex:uint40`
+  ///   tokenNotFromInitiator: Token not from initiator (usually sent from a smart contract);
   ///   initiator: The swap initiator who created and signed the swap request (not necessarily the one who posted the swap);
   //    poolIndex: The index of an LP pool. See `ownerOfPool` in `MesonStates.sol` for more information.
-  mapping(uint256 => uint200) internal _postedSwaps;
+  mapping(uint256 => uint208) internal _postedSwaps;
 
   /// @dev This empty reserved space is put in place to allow future versions to
   /// add new variables without shifting down storage in the inheritance chain.
   /// See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps
   uint256[50] private __gap;
+
+  function postSwap(uint256 encodedSwap, address initiator, uint40 poolIndex)
+    payable public matchProtocolVersion(encodedSwap) verifyEncodedSwap(encodedSwap)
+  {
+    _postedSwaps[encodedSwap] = _postedSwapFrom(initiator, poolIndex, _msgSender() != initiator);
+
+    uint8 tokenIndex = _inTokenIndexFrom(encodedSwap);
+    _unsafeDepositToken(tokenIndex, _msgSender(), _amountFrom(encodedSwap));
+
+    emit SwapPosted(encodedSwap);
+  }
 
   /// @notice Anyone can call this method to post a swap request. This is step 1️⃣ in a swap.
   /// The r,s,v signature must be signed by the swap initiator. The initiator can call
@@ -59,19 +74,18 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   /// @param encodedSwap Encoded swap information; also used as the key of `_postedSwaps`
   /// @param r Part of the signature
   /// @param yParityAndS Part of the signature
-  /// @param postingValue The value to be written to `_postedSwaps`. See `_postedSwaps` for encoding format
-  function postSwap(uint256 encodedSwap, bytes32 r, bytes32 yParityAndS, uint200 postingValue)
+  /// @param initiator Initiator
+  /// @param poolIndex Pool index
+  function postSwapWithSignature(uint256 encodedSwap, bytes32 r, bytes32 yParityAndS, address initiator, uint40 poolIndex)
     external matchProtocolVersion(encodedSwap) verifyEncodedSwap(encodedSwap)
   {
-    address initiator = _initiatorFromPosted(postingValue);
-    uint40 poolIndex = _poolIndexFromPosted(postingValue);
     if (poolIndex > 0 && _msgSender() != initiator) {
       // If pool index is given, the signer should be the initiator or an authorized address
       require(poolOfAuthorizedAddr[_msgSender()] == poolIndex, "Signer should be an authorized address of the given pool");
     } // Otherwise, this is posted without bonding to a specific pool. Need to execute `bondSwap` later
 
     _checkRequestSignature(encodedSwap, r, yParityAndS, initiator);
-    _postedSwaps[encodedSwap] = postingValue;
+    _postedSwaps[encodedSwap] = _postedSwapFrom(initiator, poolIndex, false);
 
     uint8 tokenIndex = _inTokenIndexFrom(encodedSwap);
     _unsafeDepositToken(tokenIndex, initiator, _amountFrom(encodedSwap));
@@ -79,30 +93,9 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
     emit SwapPosted(encodedSwap);
   }
 
-  function postSwapFromInitiator(uint256 encodedSwap, uint200 postingValue)
-    payable external matchProtocolVersion(encodedSwap) verifyEncodedSwap(encodedSwap)
-  {
-    address initiator = _initiatorFromPosted(postingValue);
-    require(_msgSender() == initiator, "Transaction should be sent from initiator");
-    _postedSwaps[encodedSwap] = postingValue;
-
-    uint8 tokenIndex = _inTokenIndexFrom(encodedSwap);
-    _unsafeDepositToken(tokenIndex, initiator, _amountFrom(encodedSwap));
-
-    emit SwapPosted(encodedSwap);
-  }
-
-  function postSwapFromContract(uint256 encodedSwap, uint200 postingValue, address contractAddress)
-    payable external matchProtocolVersion(encodedSwap) verifyEncodedSwap(encodedSwap)
-  {
-    address initiator = _initiatorFromPosted(postingValue);
-    require(_msgSender() == contractAddress, "Transaction should be sent from contractAddress");
-    _postedSwaps[encodedSwap] = postingValue;
-
-    uint8 tokenIndex = _inTokenIndexFrom(encodedSwap);
-    _unsafeDepositToken(tokenIndex, contractAddress, _amountFrom(encodedSwap));
-
-    emit SwapPosted(encodedSwap);
+  // deprecated
+  function postSwapFromInitiator(uint256 encodedSwap, uint200 postingValue) payable external {
+    postSwap(encodedSwap, _initiatorFromPosted(postingValue), _poolIndexFromPosted(postingValue));
   }
 
   /// @notice If `postSwap` is called by the initiator of the swap and `poolIndex`
@@ -111,7 +104,7 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   /// @param encodedSwap Encoded swap information; also used as the key of `_postedSwaps`
   /// @param poolIndex The index of an LP pool. See `ownerOfPool` in `MesonStates.sol` for more information.
   function bondSwap(uint256 encodedSwap, uint40 poolIndex) external {
-    uint200 postedSwap = _postedSwaps[encodedSwap];
+    uint208 postedSwap = _postedSwaps[encodedSwap];
     require(postedSwap > 1, "Swap does not exist");
     require(_poolIndexFromPosted(postedSwap) == 0, "Swap bonded to another pool");
     require(poolOfAuthorizedAddr[_msgSender()] == poolIndex, "Signer should be an authorized address of the given pool");
@@ -125,9 +118,10 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   /// @dev Designed to be used by swap initiators
   /// @param encodedSwap Encoded swap information; also used as the key of `_postedSwaps`
   function cancelSwap(uint256 encodedSwap) external {
-    uint200 postedSwap = _postedSwaps[encodedSwap];
+    uint208 postedSwap = _postedSwaps[encodedSwap];
     require(postedSwap > 1, "Swap does not exist");
     require(_expireTsFrom(encodedSwap) < block.timestamp, "Swap is still locked");
+    require((postedSwap >> 200) == 0, "Swap token not from initiator");
 
     delete _postedSwaps[encodedSwap]; // Swap expired so the same one cannot be posted again
 
@@ -137,13 +131,12 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
     emit SwapCancelled(encodedSwap);
   }
 
-  function cancelSwapTo(uint256 encodedSwap, address recipient, bytes32 r, bytes32 yParityAndS) external {
-    uint200 postedSwap = _postedSwaps[encodedSwap];
+  function cancelSwapTo(uint256 encodedSwap, address recipient) external {
+    require(_isPremiumManager(), "Caller is not the premium manager");
+
+    uint208 postedSwap = _postedSwaps[encodedSwap];
     require(postedSwap > 1, "Swap does not exist");
     require(_expireTsFrom(encodedSwap) < block.timestamp, "Swap is still locked");
-
-    bytes32 digest = keccak256(abi.encodePacked(encodedSwap, recipient));
-    _checkSignature(digest, r, yParityAndS, _initiatorFromPosted(postedSwap));
 
     delete _postedSwaps[encodedSwap]; // Swap expired so the same one cannot be posted again
 
@@ -169,7 +162,7 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
     address recipient,
     bool depositToPool
   ) external {
-    uint200 postedSwap = _postedSwaps[encodedSwap];
+    uint208 postedSwap = _postedSwaps[encodedSwap];
     require(postedSwap > 1, "Swap does not exist");
 
     // Swap expiredTs < current + MIN_BOND_TIME_PERIOD
@@ -218,6 +211,8 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   function simpleExecuteSwap(uint256 encodedSwap)
     payable external matchProtocolVersion(encodedSwap) verifyEncodedSwap(encodedSwap)
   {
+    _postedSwaps[encodedSwap] = 1;
+
     uint256 amount = _amountFrom(encodedSwap);
     uint8 tokenIndex = _inTokenIndexFrom(encodedSwap);
     _balanceOfPoolToken[_poolTokenIndexFrom(tokenIndex, 1)] += amount;
@@ -231,7 +226,7 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
   function getPostedSwap(uint256 encodedSwap) external view
     returns (address initiator, address poolOwner, bool exist)
   {
-    uint200 postedSwap = _postedSwaps[encodedSwap];
+    uint208 postedSwap = _postedSwaps[encodedSwap];
     initiator = _initiatorFromPosted(postedSwap);
     exist = postedSwap > 0;
     if (initiator == address(0)) {
@@ -257,6 +252,4 @@ contract MesonSwap is IMesonSwapEvents, MesonStates {
 
     _;
   }
-
-  function _isPremiumManager() internal view virtual returns (bool) {}
 }

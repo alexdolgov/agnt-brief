@@ -1,0 +1,18 @@
+{
+  "component": "LABDistributor-3",
+  "main_contract": "LABDistributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x67c10b7b8eefe92eb4dfdeeedd94263632e483b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

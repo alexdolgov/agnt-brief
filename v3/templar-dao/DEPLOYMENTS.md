@@ -1,6 +1,6 @@
 # templar-dao — deployments
 
-55 verified deployment(s) across 31 component(s).
+74 verified deployment(s) across 45 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,11 +27,12 @@
 | bsc | `0x6ca5c879e7822ec6bb4836c5df7297ab5a5a80ba` | ManagerFund | impl | inactive | no |
 | bsc | `0x77316b0dacc23cce10f1fcfce388ac81870e30ae` | PoolFund-2 | impl | inactive | no |
 | bsc | `0x8049ffeabd65d043895de3c70634f328b294b6fa` | ManagerFund | impl | inactive | no |
-| bsc | `0x8baaefcb8bd969f548aa3c6c71297063f694780f` | BondDepository-2 | impl | live | no |
+| bsc | `0x8baaefcb8bd969f548aa3c6c71297063f694780f` | BondDepository-3 | impl | live | no |
 | bsc | `0x8c9827cd430d945ae5a5c3cfdc522f8d342334b9` | SwordToken | impl | live | no |
 | bsc | `0x8d1ae20de3d77ca2332343238a2bf7bead106c40` | TemplarRouter | impl | inactive | no |
 | bsc | `0x8dd1ff96c1b2766c4479c802687b44c5e8feea87` | StakingHelper | impl | inactive | no |
 | bsc | `0x9ce6ee045d9a3e71836fe78918baa21fdfa255d8` | TemplarRouter | impl | inactive | no |
+| bsc | `0xa1dcc9aa18a74ad0cd1de25f8efe03dfb814cb45` | PoolFund | impl | inactive | no |
 | bsc | `0xa1f61ca61fe8655d2a204b518f6de964145a9324` | Staking | impl | live | no |
 | bsc | `0xaf4053d37309df4d295a6e0f64bc8b2039140b2d` | BridgeHelper | impl | inactive | no |
 | bsc | `0xc06cd90b23c8a165647fdef5091e6cadc1a0bbe2` | ManagerFund | impl | inactive | no |
@@ -40,6 +41,7 @@
 | bsc | `0xca5eeab1a111cfd29cd5717f16216769cbd463e8` | Treasury | impl | inactive | no |
 | bsc | `0xcbffdeb456aa6b35ac345dbe14776c1d99d88105` | StakingWarmup | impl | inactive | no |
 | bsc | `0xd01e8d805bb310f06411e70fd50eb58cae2b4c27` | Treasury | impl | inactive | no |
+| bsc | `0xd1e5493260a510a2e34566e5b3bc62a3e12d156b` | TemplarBridge-3 | impl | inactive | no |
 | bsc | `0xd7fe341fce9f3882d57eba5692221877830a5ddd` | BondingCalculator | impl | inactive | no |
 | bsc | `0xd93e4d6cfa40bf9ed141d690e2af038aaf59ab7e` | BondDepository | impl | inactive | no |
 | bsc | `0xe5955161a8e74667a931a63f93db767ee7fcbe74` | BondDepository | impl | inactive | no |
@@ -57,29 +59,27 @@
 | chain-1285 | `0x1c37c41973f8cf95b075a5985c8d093817e3e21e` | TemplarBridge | impl | inactive | no |
 | chain-1285 | `0x208173f002c58fb766e5e11471fea8f91eb2406d` | PoolFund | impl | inactive | no |
 | chain-1285 | `0x301c82821ce20b9a1a6f4299f3a3306f524ce0b7` | BondReferral-2 | impl | inactive | no |
+| chain-1285 | `0x377896d053a2b17cabcb9d7b1afdada5af891c13` | Distributor-2 | impl | inactive | no |
+| chain-1285 | `0x534bd77db3ada353c7a30d5d591407c3e0c74bd2` | BondDepository-2 | impl | inactive | no |
+| chain-1285 | `0x6510d4e6d2991db86383932c26c5ed2077f385de` | BridgeReceiver-2 | impl | inactive | no |
+| chain-1285 | `0x8c9827cd430d945ae5a5c3cfdc522f8d342334b9` | SwordToken | impl | inactive | no |
+| chain-1285 | `0xa1f61ca61fe8655d2a204b518f6de964145a9324` | Staking-2 | impl | live | no |
 | chain-1285 | `0xa492039ec2e65de908e2cab1d1f8c5faf68ce154` | PoolFund | impl | inactive | no |
+| chain-1285 | `0xacc628c05e41eeed7dcfdf042215a296f7bdd047` | MasterChef-2 | impl | inactive | no |
+| chain-1285 | `0xb1fc154f4132f1660678820137cd24397f3462ba` | BridgeHelper-2 | impl | inactive | no |
 | chain-1285 | `0xb774a34ddb1829df147a88f14716ce56ac8f6b5c` | BridgeConverter | impl | inactive | no |
+| chain-1285 | `0xbb5d4f8fc1ef4b3c16f7cbfa00b185d9efdb2adf` | StakingHelper-2 | impl | inactive | no |
+| chain-1285 | `0xca2915886d7893a6f36a3db44484ba0bf610b465` | BondDepository-4 | impl | inactive | no |
+| chain-1285 | `0xcbffdeb456aa6b35ac345dbe14776c1d99d88105` | BondDepository-2 | impl | inactive | no |
+| chain-1285 | `0xd01e8d805bb310f06411e70fd50eb58cae2b4c27` | Treasury-2 | impl | inactive | no |
+| chain-1285 | `0xd7fe341fce9f3882d57eba5692221877830a5ddd` | BondingCalculator-2 | impl | inactive | no |
+| chain-1285 | `0xd86e3f7b2ff4e803f90c799d702955003bca9875` | TemplarToken-2 | impl | inactive | no |
+| chain-1285 | `0xe1b9b34b03ec34b0802398b7669de6d0d43c9871` | WrapSword | impl | inactive | no |
+| chain-1285 | `0xea90aee91eab61ccacce6b4af270a75ab8e78e8c` | StakingWarmup-2 | impl | inactive | no |
+| chain-1285 | `0xef7d6f1fe8778c82abf67060deaf163eff3d98f0` | BondDepository-2 | impl | inactive | no |
+| chain-1285 | `0xf4a0b875751486b55f9cd50df2f120e4b50a79d0` | RedeemHelper-2 | impl | inactive | no |
 
-## Source unavailable (20)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- bsc `0xa1dcc9aa18a74ad0cd1de25f8efe03dfb814cb45`
-- bsc `0xd1e5493260a510a2e34566e5b3bc62a3e12d156b`
-- chain-1285 `0x377896d053a2b17cabcb9d7b1afdada5af891c13`
-- chain-1285 `0x534bd77db3ada353c7a30d5d591407c3e0c74bd2`
-- chain-1285 `0x6510d4e6d2991db86383932c26c5ed2077f385de`
-- chain-1285 `0x8c9827cd430d945ae5a5c3cfdc522f8d342334b9`
-- chain-1285 `0xa1f61ca61fe8655d2a204b518f6de964145a9324`
-- chain-1285 `0xacc628c05e41eeed7dcfdf042215a296f7bdd047`
-- chain-1285 `0xb1fc154f4132f1660678820137cd24397f3462ba`
-- chain-1285 `0xbb5d4f8fc1ef4b3c16f7cbfa00b185d9efdb2adf`
-- chain-1285 `0xca2915886d7893a6f36a3db44484ba0bf610b465`
-- chain-1285 `0xcbffdeb456aa6b35ac345dbe14776c1d99d88105`
-- chain-1285 `0xd01e8d805bb310f06411e70fd50eb58cae2b4c27`
-- chain-1285 `0xd7fe341fce9f3882d57eba5692221877830a5ddd`
-- chain-1285 `0xd86e3f7b2ff4e803f90c799d702955003bca9875`
-- chain-1285 `0xe1b9b34b03ec34b0802398b7669de6d0d43c9871`
-- chain-1285 `0xea90aee91eab61ccacce6b4af270a75ab8e78e8c`
-- chain-1285 `0xef7d6f1fe8778c82abf67060deaf163eff3d98f0`
 - chain-1285 `0xf3e56078e6e6bcae6ccda0804923ce03cac10520`
-- chain-1285 `0xf4a0b875751486b55f9cd50df2f120e4b50a79d0`

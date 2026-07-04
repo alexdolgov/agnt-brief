@@ -1,0 +1,18 @@
+{
+  "component": "SpellEthereum-2",
+  "main_contract": "SpellEthereum",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x36b87b860857e6a6d4c2d24be11dc9b230f00f03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

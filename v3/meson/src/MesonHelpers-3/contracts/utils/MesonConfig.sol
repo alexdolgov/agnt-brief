@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 /// @notice Parameters of the Meson contract
-/// for BNB Smart Chain
+/// for Polygon PoS
 contract MesonConfig {
   uint8 constant MESON_PROTOCOL_VERSION = 1;
 
   // Ref https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-  uint16 constant SHORT_COIN_TYPE = 0x02ca;
+  uint16 constant SHORT_COIN_TYPE = 0x03c6;
 
   uint256 constant MAX_SWAP_AMOUNT = 1e11; // 100,000.000000 = 100k
   uint256 constant SERVICE_FEE_RATE = 5; // service fee = 5 / 10000 = 0.05%

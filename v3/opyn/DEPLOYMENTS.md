@@ -1,12 +1,12 @@
 # opyn — deployments
 
-128 verified deployment(s) across 40 component(s).
+137 verified deployment(s) across 50 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | avalanche | `0x00bf1e9b876d63f5cd4ee114211a9a7b7fb54f2d` | Oracle | impl | live | yes |
 | avalanche | `0x00d27cbb90ae158f2db39c899e006a05df960d81` | StrikeSelection | impl | inactive | no |
-| avalanche | `0x02b70ab8fd23f95e0cd8f8ea604415eb7cfc0e18` | Controller | impl | live | yes |
+| avalanche | `0x02b70ab8fd23f95e0cd8f8ea604415eb7cfc0e18` | Controller-2 | impl | live | yes |
 | avalanche | `0x03b28469a3f5cbdcba91485b82de17d64b9ed931` | Otoken | impl | live | yes |
 | avalanche | `0x03bb97fa0fe4f85e378f6bc32a4ef9141876e66e` | OptionsPremiumPricer | impl | inactive | no |
 | avalanche | `0x05351bd699860ce7c7282eb4ac3c92f188e3dbed` | StrikeSelection | impl | inactive | no |
@@ -39,7 +39,7 @@
 | avalanche | `0x459a8ba81a0f0ea672856d2415e25e50d4224677` | Otoken | impl | live | yes |
 | avalanche | `0x47a8fa114036c50765eabb110d7a21e648c1a89a` | Oracle | impl | live | yes |
 | avalanche | `0x4980d7757098a80deb6893d4384ec014212289d0` | Whitelist | impl | live | yes |
-| avalanche | `0x4c659888cd942a6feb2306c05a631c9cdfba4904` | Whitelist | impl | live | yes |
+| avalanche | `0x4c659888cd942a6feb2306c05a631c9cdfba4904` | Whitelist-2 | impl | live | yes |
 | avalanche | `0x4fc945f00a7a7cd2b1d7422c913e4ab002f7ba3e` | StrikeSelection | impl | inactive | no |
 | avalanche | `0x52751426a3043dd7a27ddb534eb090018866d50e` | MarginPool | impl | live | yes |
 | avalanche | `0x54daf3a63a6cc2e2079031e70b2d35b6083cab89` | OptionsPremiumPricer | impl | inactive | no |
@@ -58,19 +58,20 @@
 | avalanche | `0x6f010d2fc520b710f707157c26acc18d4ebd7c9f` | Oracle | impl | live | yes |
 | avalanche | `0x6fb3f1d106540184d35abb1c614a80600c3b0b14` | OtokenFactory | impl | live | yes |
 | avalanche | `0x72c959244bb8c953aacefe6e7b20d727b91d45ad` | Oracle | impl | live | yes |
-| avalanche | `0x7f00bb1c0a2b7db66f9a93c8356fd1af93ae9c83` | AdminUpgradeabilityProxy | impl | inactive | no |
-| avalanche | `0x87e94618b305c5305b4502807c86b6c28ad5b592` | AdminUpgradeabilityProxy | impl | inactive | no |
+| avalanche | `0x7f00bb1c0a2b7db66f9a93c8356fd1af93ae9c83` | AdminUpgradeabilityProxy-3 | impl | inactive | no |
+| avalanche | `0x87e94618b305c5305b4502807c86b6c28ad5b592` | AdminUpgradeabilityProxy-4 | impl | inactive | no |
 | avalanche | `0x8b5685586f43c07aa0f911bb5d5db8b56252858a` | MarginVault-2 | impl | live | yes |
 | avalanche | `0x8b5bffcbd5a9170839fe27f5d75915de847aa0eb` | AddressBook | impl | live | yes |
 | avalanche | `0x8f17165de054d6266b44fb162153ad43266b89fb` | SAvaxOracle | impl | inactive | no |
 | avalanche | `0x90fcbde91805b8d32b51bcc674a56bde09249eae` | OtokenFactory | impl | live | yes |
 | avalanche | `0x9395889ba1131a2bd70beffdcaeddf487b32fa93` | Whitelist | impl | live | yes |
-| avalanche | `0x98d03125c62dae2328d9d3cb32b7b969e6a87787` | AdminUpgradeabilityProxy-2 | proxy | live | no |
+| avalanche | `0x98d03125c62dae2328d9d3cb32b7b969e6a87787` | AdminUpgradeabilityProxy | proxy | live | no |
+| avalanche | `0x9b011cb12899ce70b8bb59fc3f324d1d7888912f` | MarginVault-3 | impl | live | yes |
 | avalanche | `0x9c31f6fafda0b9cd762f2850c3438d20a87464e8` | OptionsPremiumPricerInStables | impl | inactive | no |
 | avalanche | `0x9c7918f3bd12d3eb1fc58e418fd5a6f75b48017a` | MarginPool | impl | live | yes |
-| avalanche | `0x9d725c6d242e816da485d676056466e18cb52b13` | RibbonDeltaVault | proxy | inactive | no |
+| avalanche | `0x9d725c6d242e816da485d676056466e18cb52b13` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | avalanche | `0x9d7915bbeeb48f511bcff079e6649609fd4fe904` | Otoken | impl | live | yes |
-| avalanche | `0x9dd6be071b4292cc88b8190ab718329adea3e3a3` | AdminUpgradeabilityProxy-2 | proxy | live | no |
+| avalanche | `0x9dd6be071b4292cc88b8190ab718329adea3e3a3` | AdminUpgradeabilityProxy | proxy | live | no |
 | avalanche | `0x9e5e8d3b1dc92c4b840150ff243a176ba2ed05dd` | OptionsPremiumPricer | impl | inactive | no |
 | avalanche | `0xa2466926c9974e2b5621c6bd7c3520c478b7ce9f` | OptionsPremiumPricerInStables | impl | inactive | no |
 | avalanche | `0xa7516c430024366aa5b0cafd8dfcfeecb5ece8bb` | Oracle | impl | live | yes |
@@ -98,10 +99,10 @@
 | avalanche | `0xe0854ddd162ffe4e2ff1db6e62b544521cb9223e` | VaultLifecycle | impl | inactive | no |
 | avalanche | `0xe0ebdd9c29d5724385136fecc3dec5fdd60c7bfe` | Otoken | impl | live | yes |
 | avalanche | `0xe0fdbad497898e3a75d550102e1961c489729698` | DepositAndPlaceOrder | impl | inactive | no |
-| avalanche | `0xe3243bbc363486be2f3f4e5fbd17f16b8ed2c1fe` | Whitelist | impl | live | yes |
+| avalanche | `0xe3243bbc363486be2f3f4e5fbd17f16b8ed2c1fe` | Whitelist-2 | impl | live | yes |
 | avalanche | `0xe6325f8465dd875be46c6997f955d6615766d8be` | VaultQueue | impl | inactive | no |
-| avalanche | `0xe9963affc9a53e293c9bb547c52902071e6087c9` | Whitelist | impl | live | yes |
-| avalanche | `0xeadf3d94b902c06c13a2e64b223b1df5057aa23d` | Controller | impl | live | yes |
+| avalanche | `0xe9963affc9a53e293c9bb547c52902071e6087c9` | Whitelist-2 | impl | live | yes |
+| avalanche | `0xeadf3d94b902c06c13a2e64b223b1df5057aa23d` | Controller-2 | impl | live | yes |
 | avalanche | `0xee5b96b402bf853a6f1308739b019b269994785c` | AdminUpgradeabilityProxy | impl | inactive | no |
 | avalanche | `0xef3b91345dd7be2c5c1f95c40545e9bf274ee698` | AddressBook | impl | live | yes |
 | avalanche | `0xf9745ad6c6ff4fe9d8a0a2668a7f9e2944ea0955` | OtokenFactory | impl | live | yes |
@@ -110,9 +111,11 @@
 | avalanche | `0xfe9c8549d2b6b308baf71e0267bec14fb6f5591f` | MarginPool | impl | live | yes |
 | ethereum | `0x1460771b713e8e58e350f9d82f7b83acb6b2e75f` | OptionsExchange | impl | inactive | no |
 | ethereum | `0x21a8d15322c257abd2b22a56edde758398be0f32` | ABDKMath64x64 | impl | live | yes |
+| ethereum | `0x3035b72d76d06ff66114e9a8d2fc5035f8828005` | Otoken-2 | impl | live | yes |
 | ethereum | `0x39246c4f3f6592c974ebc44f80ba6dc69b817c71` | OptionsExchange | impl | inactive | no |
 | ethereum | `0x3b4095d5ff0e629972caaa50bd3004b09a1632c5` | ShortHelper | impl | live | no |
 | ethereum | `0x3b960e47784150f5a63777201ee2b15253d713e8` | CrabStrategyV2 | impl | live | no |
+| ethereum | `0x414b66ce4f304385edd47d372fcc4a11dde7d16e` | Oracle-2 | impl | live | yes |
 | ethereum | `0x4c65680554c35c27dddb2f276f95225953513401` | StakedaoPricer | impl | inactive | no |
 | ethereum | `0x4d3a52a0e98144caf46ac226d83e8f144b5c654d` | MarginVault | impl | live | yes |
 | ethereum | `0x4d6e00c28090a40f6c9c8aa386bc21ccbb566d8f` | StakedaoPricer | impl | inactive | no |
@@ -120,28 +123,21 @@
 | ethereum | `0x5778f2824a114f6115dc74d432685d3336216017` | UniswapExchangeInterface | impl | live | no |
 | ethereum | `0x64187ae08781b09368e6253f9e94951243a493d5` | ABDKMath64x64 | proxy | live | yes |
 | ethereum | `0x642b994887be211d76bb3f87450b5ebe3ee4caed` | StakedaoPricer | impl | inactive | no |
-| ethereum | `0x65d66c76447ccb45daf1e8044e918fa786a483a1` | Oracle-2 | impl | inactive | no |
+| ethereum | `0x65d66c76447ccb45daf1e8044e918fa786a483a1` | Oracle-3 | impl | inactive | no |
 | ethereum | `0x67c083ae303741372f0f321bf9cad567cfefe2dc` | Timelock | impl | inactive | no |
+| ethereum | `0x7054e08461e3ecb7718b63540addb3c3a1746415` | Oracle-4 | impl | live | yes |
+| ethereum | `0x789cd7ab3742e23ce0952f6bc3eb3a73a0e08833` | Oracle-2 | impl | live | yes |
+| ethereum | `0x7c19858f2f317ccf413b3046c2bed49f346b7d0f` | Controller | impl | live | yes |
 | ethereum | `0x90b7d718477cc835fbf8330fdaef47cb2173caa7` | MarginVault | impl | live | yes |
+| ethereum | `0x9a33230f59cc7cc9a084e0098a2b2934fc7bf7c0` | MarginCalculator-2 | impl | live | yes |
 | ethereum | `0x9cf8dcbcf115b06d8f577e73cb9edfdb27828460` | SqrtPriceMathPartial | impl | live | no |
 | ethereum | `0xa1cab67a4383312718a5799eaa127906e9d4b19e` | CrabStrategy | impl | live | no |
 | ethereum | `0xa653e22a963ff0026292cc8b67941c0ba7863a38` | ShortPowerPerp | impl | live | no |
 | ethereum | `0xaf751edcbb35beb33c945bd625eb008cd37b35d3` | StakedaoPricer | impl | inactive | no |
 | ethereum | `0xb4cbbd4b1f8b9c4abf3ab1e144afd1d2151b39c3` | StakedaoPricer | impl | inactive | no |
 | ethereum | `0xb529964f86fbf99a6aa67f72a27e59fa3fa4feac` | OptionsFactory | impl | inactive | no |
+| ethereum | `0xcc2fd280a669a4453b30b5e72871ad3e2a2663d0` | Controller | impl | live | yes |
 | ethereum | `0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c` | OptionsFactory | impl | inactive | no |
 | ethereum | `0xf1b99e3e573a1a9c5e6b2ce818b617f0e664e86b` | WPowerPerp | impl | live | no |
 | ethereum | `0xf205ad80bb86ac92247638914265887a8baa437d` | CrabStrategy-2 | impl | live | no |
-
-## Source unavailable (9)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0x9b011cb12899ce70b8bb59fc3f324d1d7888912f`
-- ethereum `0x3035b72d76d06ff66114e9a8d2fc5035f8828005`
-- ethereum `0x414b66ce4f304385edd47d372fcc4a11dde7d16e`
-- ethereum `0x7054e08461e3ecb7718b63540addb3c3a1746415`
-- ethereum `0x789cd7ab3742e23ce0952f6bc3eb3a73a0e08833`
-- ethereum `0x7c19858f2f317ccf413b3046c2bed49f346b7d0f`
-- ethereum `0x9a33230f59cc7cc9a084e0098a2b2934fc7bf7c0`
-- ethereum `0xcc2fd280a669a4453b30b5e72871ad3e2a2663d0`
-- ethereum `0xfaa67e3736572645b38af7410b3e1006708e13f4`
+| ethereum | `0xfaa67e3736572645b38af7410b3e1006708e13f4` | MarginCalculator-3 | impl | live | yes |

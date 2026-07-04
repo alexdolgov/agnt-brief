@@ -1,0 +1,58 @@
+{
+  "component": "Universal_SpokePool-3",
+  "main_contract": "Universal_SpokePool",
+  "source_file_count": 49,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3b8a0cafcdd97e4c5ed3e96aded04db8cc5f377b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x45fa0a76d08725c59936dfcf64ded56f82b5c0a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x89cb50586e137a718973f45120954b005b4ebbf0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x9fe3788c73ebf505d07a4a4828d3c5055ea3ee67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xbf9949b42a02a167dff350d3ba16b20be53088ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xcf78e38a7309fbecf3d670e8091c4e7e51620a1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

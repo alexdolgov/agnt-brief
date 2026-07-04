@@ -22,14 +22,13 @@ pragma solidity ^0.8.9;
 // solhint-disable max-line-length
 import { IDolomiteRegistry } from "@dolomite-exchange/modules-base/contracts/interfaces/IDolomiteRegistry.sol";
 import { IGenericTraderBase } from "@dolomite-exchange/modules-base/contracts/interfaces/IGenericTraderBase.sol";
-import { IGenericTraderProxyV1 } from "@dolomite-exchange/modules-base/contracts/interfaces/IGenericTraderProxyV1.sol";
 import { IsolationModeTokenVaultV1WithFreezable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithFreezable.sol";
-import { IsolationModeTokenVaultV1WithFreezableAndPausable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithFreezableAndPausable.sol";
+import { IsolationModeTokenVaultV1WithFreezableAndPausable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithFreezableAndPausable.sol"; // solhint-disable-line max-line-length
 import { IsolationModeTokenVaultV1WithPausable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithPausable.sol";
 import { IFreezableIsolationModeVaultFactory } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IFreezableIsolationModeVaultFactory.sol";
 import { IIsolationModeVaultFactory } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IIsolationModeVaultFactory.sol";
-import { IUpgradeableAsyncIsolationModeUnwrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeUnwrapperTrader.sol";
-import { IUpgradeableAsyncIsolationModeWrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeWrapperTrader.sol";
+import { IUpgradeableAsyncIsolationModeUnwrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeUnwrapperTrader.sol"; // solhint-disable-line max-line-length
+import { IUpgradeableAsyncIsolationModeWrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeWrapperTrader.sol"; // solhint-disable-line max-line-length
 import { IDolomiteStructs } from "@dolomite-exchange/modules-base/contracts/protocol/interfaces/IDolomiteStructs.sol";
 import { IWETH } from "@dolomite-exchange/modules-base/contracts/protocol/interfaces/IWETH.sol";
 import { DecimalLib } from "@dolomite-exchange/modules-base/contracts/protocol/lib/DecimalLib.sol";
@@ -170,67 +169,48 @@ contract GmxV2IsolationModeTokenVaultV1 is
         );
     }
 
-    function _addCollateralAndSwapExactInputForOutput(
-        uint256 _fromAccountNumber,
-        uint256 _borrowAccountNumber,
-        uint256[] calldata _marketIdsPath,
-        uint256 _inputAmountWei,
-        uint256 _minOutputAmountWei,
-        IGenericTraderProxyV1.TraderParam[] memory _tradersPath,
-        IDolomiteStructs.AccountInfo[] memory _makerAccounts,
-        IGenericTraderProxyV1.UserConfig memory _userConfig
-    )
-        internal
-        override
-    {
-        _validateExecutionFeeIfWrapToUnderlying(_borrowAccountNumber, _tradersPath);
-        super._addCollateralAndSwapExactInputForOutput(
-            _fromAccountNumber,
-            _borrowAccountNumber,
-            _marketIdsPath,
-            _inputAmountWei,
-            _minOutputAmountWei,
-            _tradersPath,
-            _makerAccounts,
-            _userConfig
-        );
-    }
-
-    function _swapExactInputForOutputAndRemoveCollateral(
-        uint256 _toAccountNumber,
-        uint256 _borrowAccountNumber,
-        uint256[] calldata _marketIdsPath,
-        uint256 _inputAmountWei,
-        uint256 _minOutputAmountWei,
-        IGenericTraderBase.TraderParam[] memory _tradersPath,
-        IDolomiteStructs.AccountInfo[] memory _makerAccounts,
-        IGenericTraderProxyV1.UserConfig memory _userConfig
-    )
-        internal
-        override
-    {
-        _validateExecutionFeeIfWrapToUnderlying(_borrowAccountNumber, _tradersPath);
-        super._swapExactInputForOutputAndRemoveCollateral(
-            _toAccountNumber,
-            _borrowAccountNumber,
-            _marketIdsPath,
-            _inputAmountWei,
-            _minOutputAmountWei,
-            _tradersPath,
-            _makerAccounts,
-            _userConfig
-        );
-    }
-
+    /**
+     *
+     *  @dev  _minOutputAmountWei MUST BE greater than 0 or call will revert
+     */
     function _swapExactInputForOutput(
         SwapExactInputForOutputParams memory _params
     )
-        internal
-        virtual
-        override
-    {
-        _validateExecutionFeeIfWrapToUnderlying(_params.tradeAccountNumber, _params.tradersPath);
-        super._swapExactInputForOutput(_params);
+    internal
+    virtual
+    override {
+        uint256 len = _params.tradersPath.length;
+        if (_params.tradersPath[len - 1].traderType == IGenericTraderBase.TraderType.IsolationModeWrapper) {
+            GmxV2Library.depositAndApproveWethForWrapping(this);
+            Require.that(
+                msg.value <= IFreezableIsolationModeVaultFactory(VAULT_FACTORY()).maxExecutionFee(),
+                _FILE,
+                "Invalid execution fee"
+            );
+            _params.tradersPath[len - 1].tradeData = abi.encode(_params.tradeAccountNumber, abi.encode(msg.value));
+        } else {
+            Require.that(
+                msg.value == 0,
+                _FILE,
+                "Cannot send ETH for non-wrapper"
+            );
+        }
+
+        if (
+            _params.tradersPath[0].traderType == IGenericTraderBase.TraderType.IsolationModeUnwrapper ||
+            isVaultFrozen()
+        ) {
+            // Only a trusted converter can initiate unwraps (via the callback) OR execute swaps if the vault is frozen
+            _requireOnlyConverter(msg.sender);
+        }
+
+        // Ignore the freezable implementation and call the pausable one directly
+        _requireNotLiquidatableIfWrapToUnderlying(
+            _params.tradeAccountNumber,
+            _params.marketIdsPath[_params.marketIdsPath.length - 1]
+        );
+
+        IsolationModeTokenVaultV1WithPausable._swapExactInputForOutput(_params);
     }
 
     function _initiateUnwrapping(
@@ -300,41 +280,19 @@ contract GmxV2IsolationModeTokenVaultV1 is
             return;
         }
 
-        IDolomiteStructs.AccountInfo memory liquidAccount = IDolomiteStructs.AccountInfo({
+        IDolomiteStructs.AccountInfo memory tradeAccount = IDolomiteStructs.AccountInfo({
             owner: address(this),
             number: _tradeAccountNumber
         });
 
         GmxV2Library.validateMinAmountIsNotTooLargeForLiquidation(
             IGmxV2IsolationModeVaultFactory(VAULT_FACTORY()),
-            liquidAccount,
+            tradeAccount,
             _inputAmount,
             _outputToken,
             _minOutputAmount,
             _extraData,
             CHAIN_ID
         );
-    }
-
-    function _validateExecutionFeeIfWrapToUnderlying(
-        uint256 _tradeAccountNumber,
-        IGenericTraderBase.TraderParam[] memory _tradersPath
-    ) private {
-        uint256 len = _tradersPath.length;
-        if (_tradersPath[len - 1].traderType == IGenericTraderBase.TraderType.IsolationModeWrapper) {
-            GmxV2Library.depositAndApproveWethForWrapping(this);
-            Require.that(
-                msg.value <= IFreezableIsolationModeVaultFactory(VAULT_FACTORY()).maxExecutionFee(),
-                _FILE,
-                "Invalid execution fee"
-            );
-            _tradersPath[len - 1].tradeData = abi.encode(_tradeAccountNumber, abi.encode(msg.value));
-        } else {
-            Require.that(
-                msg.value == 0,
-                _FILE,
-                "Cannot send ETH for non-wrapper"
-            );
-        }
     }
 }

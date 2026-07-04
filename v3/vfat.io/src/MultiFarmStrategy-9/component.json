@@ -1,0 +1,26 @@
+{
+  "component": "MultiFarmStrategy-9",
+  "main_contract": "MultiFarmStrategy",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf8d2b58823ab2604f01fc2e87250fee99df980cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xfd2d0de5a902d19b3823d31f1bce9d8f70d850e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

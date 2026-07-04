@@ -1,23 +1,31 @@
 {
   "component": "WithdrawBatch",
   "main_contract": "WithdrawBatch",
-  "source_file_count": 19,
-  "deployment_count": 2,
+  "source_file_count": 16,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1fb1b6485a2b1b3227d48ed62759771831382644",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x61a3ada892b07f5934e7c9a43ee2bd6e378802ab",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa45bb9de8341ab05842cc98b28f3652ce0ab2fb9",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaead7d9202f3efb73657ca031f645c6b46cfe177",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe38d68f391ba204ac9afda86927babdd163ba86c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

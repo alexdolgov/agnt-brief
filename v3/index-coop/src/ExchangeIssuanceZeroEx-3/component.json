@@ -1,7 +1,7 @@
 {
   "component": "ExchangeIssuanceZeroEx-3",
   "main_contract": "ExchangeIssuanceZeroEx",
-  "source_file_count": 16,
+  "source_file_count": 17,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xf42ecdc112365ff79a745b4cf7d4c266bd6e4b25",
+      "address": "0x9d648e5564b794b918d99c84b0fbf4b0bf36ce45",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

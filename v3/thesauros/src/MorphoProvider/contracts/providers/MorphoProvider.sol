@@ -1,17 +1,47 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.23;
 
-import {MarketParamsLib} from "../libraries/morpho/MarketParamsLib.sol";
-import {MorphoBalancesLib} from "../libraries/morpho/MorphoBalancesLib.sol";
-import {MathLib} from "../libraries/morpho/MathLib.sol";
+import {MarketParamsLib} from "morpho-blue/libraries/MarketParamsLib.sol";
+import {MorphoBalancesLib} from "morpho-blue/libraries/periphery/MorphoBalancesLib.sol";
+import {MathLib} from "morpho-blue/libraries/MathLib.sol";
 import {IMetaMorpho} from "../interfaces/morpho/IMetaMorpho.sol";
-import {IMorpho, Id, MarketParams, Market} from "../interfaces/morpho/IMorpho.sol";
-import {IIrm} from "../interfaces/morpho/IIrm.sol";
+import {IMorpho, Id, MarketParams, Market} from "morpho-blue/interfaces/IMorpho.sol";
+import {IIrm} from "morpho-blue/interfaces/IIrm.sol";
 import {IProvider} from "../interfaces/IProvider.sol";
 import {IVault} from "../interfaces/IVault.sol";
 
 /**
  * @title MorphoProvider
+ * @notice Provider implementation for Morpho Blue protocol integration
+ * @dev This provider integrates with Morpho Blue's MetaMorpho vaults to provide
+ *      yield generation through automated market making and lending strategies.
+ *
+ * @custom:architecture The provider works with MetaMorpho vaults that:
+ * - Automatically allocate funds across multiple Morpho Blue markets
+ * - Optimize yield through dynamic rebalancing
+ * - Handle complex market interactions transparently
+ *
+ * @custom:yield-calculation The APY calculation considers:
+ * - Individual market rates from Interest Rate Models (IRM)
+ * - Market utilization rates
+ * - Protocol fees
+ * - Asset allocation across markets
+ *
+ * @custom:security Features:
+ * - Uses MetaMorpho's battle-tested vault strategies
+ * - Leverages Morpho Blue's peer-to-peer lending model
+ * - Implements proper access controls through IProvider interface
+ *
+ * @custom:usage Example:
+ * ```solidity
+ * // Deploy with a MetaMorpho vault address
+ * MorphoProvider provider = new MorphoProvider(metaMorphoVaultAddress);
+ *
+ * // The vault can now deposit/withdraw through this provider
+ * provider.deposit(amount, vault);
+ * uint256 balance = provider.getDepositBalance(user, vault);
+ * uint256 apy = provider.getDepositRate(vault);
+ * ```
  */
 contract MorphoProvider is IProvider {
     using MathLib for uint256;

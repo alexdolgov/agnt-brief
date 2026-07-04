@@ -1,0 +1,18 @@
+{
+  "component": "MetaMorphoV1_1-2",
+  "main_contract": "MetaMorphoV1_1",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe108fbc04852b5df72f9e44d7c29f47e7a993add",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

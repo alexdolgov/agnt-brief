@@ -1,15 +1,23 @@
 {
   "component": "SignatureVerifier-3",
   "main_contract": "SignatureVerifier",
-  "source_file_count": 3,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x4f1d3d9ce4bb7646c35dcd05d3296f106f12345c",
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xc565ed1e12ce78f3a1df9f8c3e0a1b7e8577702c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8818c74956ae90c6c7b317439373052073e62999",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

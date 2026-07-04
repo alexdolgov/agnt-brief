@@ -1,0 +1,18 @@
+{
+  "component": "CauldronOwner-7",
+  "main_contract": "CauldronOwner",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x793a15caf24fb54657fb54b593007a4bd454442d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

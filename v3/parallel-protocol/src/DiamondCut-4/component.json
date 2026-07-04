@@ -1,0 +1,18 @@
+{
+  "component": "DiamondCut-4",
+  "main_contract": "DiamondCut",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x657acb8a3bf9383e561565d422ea9b9a90ce0052",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

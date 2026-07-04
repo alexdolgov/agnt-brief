@@ -1,0 +1,18 @@
+{
+  "component": "ProxyAdmin",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x398f357de0e7fad7b7fd07a93d4c84d0818198ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

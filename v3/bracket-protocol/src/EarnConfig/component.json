@@ -1,0 +1,18 @@
+{
+  "component": "EarnConfig",
+  "main_contract": "EarnConfig",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe01f4fa6a7dab6afa7e60666d4fc6759e0d33a57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "CometProxyAdmin",
   "main_contract": "CometProxyAdmin",
   "source_file_count": 12,
-  "deployment_count": 6,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -42,6 +42,22 @@
       "chain": "polygon",
       "chain_id": 137,
       "address": "0xd712ace4ca490d4f3e92992ecf3de12251b975f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa5edbdd9646f8dff606d7448e414884c7d905dca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbde8f31d2ddda895264e27dd990fab3dc87b372d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

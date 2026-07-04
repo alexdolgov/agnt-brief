@@ -1,39 +1,39 @@
 {
   "component": "SpeedMarketsAMM-3",
   "main_contract": "SpeedMarketsAMM",
-  "source_file_count": 26,
+  "source_file_count": 38,
   "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x02950ed910b447a0b849cd58edcc121d051d7a06",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x689fbe4f1abade46846cc01da2da9488c85af049",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x659b8efb8f42084b9713b65fe8545acaba303d82",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9e74032ef877469e55fb2b83ff745373b7e89619",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x99cbaf37c1fe28af3f553f4b968c342a8c3b9335",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd1bf511ea9eebad597608b4473947438f18d0748",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb52a6cc2002acc19035afe1cb6872f9403c640c5",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe9be4fe38b05a985ccf643b357e5d137086ce022",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

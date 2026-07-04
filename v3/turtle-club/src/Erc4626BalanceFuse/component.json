@@ -2,7 +2,7 @@
   "component": "Erc4626BalanceFuse",
   "main_contract": "Erc4626BalanceFuse",
   "source_file_count": 17,
-  "deployment_count": 18,
+  "deployment_count": 13,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,14 +26,6 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x19e332aba9cd9387e9310c9645b0a4b03a6e7906",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2c10c36028c430f445a4ba9f7dd096a5dcc75d5e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -97,39 +89,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x933bff1078ff1a0ca3b53dad00d7b1850af8749b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa0777a5b44d36ee425dc0ca828549f06e40e0cee",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0xa72f8391d7c9f1991769b76858b8ac54ccee92cf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcb6bb5ab51cdc6efb3b81c84f252cfe6bfba6566",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe1fd88a76e95dd735c6dda45b2aba9e5ffa9a7f3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

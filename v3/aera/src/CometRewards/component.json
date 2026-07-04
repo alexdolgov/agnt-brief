@@ -1,18 +1,26 @@
 {
   "component": "CometRewards",
   "main_contract": "CometRewards",
-  "source_file_count": 13,
-  "deployment_count": 1,
+  "source_file_count": 9,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1b0e765f6224c21223aea2af16c1c46e38885a40",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x45939657d1ca34a8fa39a924b71d28fe8431e581",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8a6ba3c7a192636efd4d4c9aae7e09472a04c6f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "UsdIntoEthOracle-2",
+  "main_contract": "UsdIntoEthOracle",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c206290af6891f942ff95e18d4aef19bb5eee17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

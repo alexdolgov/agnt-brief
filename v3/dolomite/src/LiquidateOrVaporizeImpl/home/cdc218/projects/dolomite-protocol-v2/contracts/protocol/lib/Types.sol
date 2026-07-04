@@ -20,7 +20,7 @@ pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
-import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
+import { Math } from "./Math.sol";
 
 
 /**
@@ -30,7 +30,7 @@ import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
  * Library for interacting with the basic structs used in DolomiteMargin
  */
 library Types {
-    using DolomiteMarginMath for uint256;
+    using Math for uint256;
 
     // ============ Permission ============
 

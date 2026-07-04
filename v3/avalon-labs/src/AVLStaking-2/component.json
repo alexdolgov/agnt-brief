@@ -1,0 +1,18 @@
+{
+  "component": "AVLStaking-2",
+  "main_contract": "AVLStaking",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1c961a18882661dc2aea540108a1165dfa69ec3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

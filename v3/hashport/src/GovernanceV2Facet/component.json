@@ -1,15 +1,47 @@
 {
   "component": "GovernanceV2Facet",
   "main_contract": "GovernanceV2Facet",
-  "source_file_count": 15,
-  "deployment_count": 1,
+  "source_file_count": 13,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x0381d726d3146e2171ffe48ae04bbc20a473f1b8",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2e1a4ca7ad1f461df9368d6659810385dcd9f2a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x8dfc5461c63a4d8227ad50880485a2e07a9a2a3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xefb5b1b474edd4869538676f6b17f2dc7941bc50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1e2b227791d2f65baeadf9e248622898f3226dbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x41ae06d8c52babb15d9dce3a9ba3f0c4b1311d1c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

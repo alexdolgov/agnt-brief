@@ -1,0 +1,18 @@
+{
+  "component": "JonesUSDCIsolationModeUnwrapperTraderV2-4",
+  "main_contract": "JonesUSDCIsolationModeUnwrapperTraderV2",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x87763a4f392bdfd00c39f264db63a0b93831ac08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

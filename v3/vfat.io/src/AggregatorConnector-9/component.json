@@ -1,0 +1,18 @@
+{
+  "component": "AggregatorConnector-9",
+  "main_contract": "AggregatorConnector",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4c0639d8e6aedf56103d80fe69cb58bc457bbb07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

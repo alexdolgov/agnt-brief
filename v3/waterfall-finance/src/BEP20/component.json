@@ -2,14 +2,22 @@
   "component": "BEP20",
   "main_contract": "BEP20",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x49a21e7ae826cd5f0c0cb1dc942d1ded66d21191",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd0834ff6122ff8dcf38e3eb79372c00faeafa08b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd5b3dd2054a67155ad5e75a3c06dfbf2bb0bb96a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

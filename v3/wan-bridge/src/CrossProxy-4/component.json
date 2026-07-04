@@ -1,0 +1,18 @@
+{
+  "component": "CrossProxy-4",
+  "main_contract": "CrossProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

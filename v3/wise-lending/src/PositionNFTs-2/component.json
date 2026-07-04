@@ -1,21 +1,26 @@
 {
   "component": "PositionNFTs-2",
   "main_contract": "PositionNFTs",
-  "source_file_count": 15,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://app.wiselending.com/omni-audit-v1.pdf",
-    "https://github.com/hats-finance/Wise-Lending-0xa2ca45d6e249641e595d50d1d9c69c9e3cd22573/blob/master/report.md"
-  ],
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x6cd8c86f5253f49c06fe913182e14dad313298f9",
+      "address": "0x2337dc439f39bfcd56dcdaa956cf5f53bf0c24a5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xee540862dec7b92abd7a1bf903a5b18e8807cc90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

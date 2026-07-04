@@ -2,7 +2,7 @@
   "component": "Silo",
   "main_contract": "Silo",
   "source_file_count": 68,
-  "deployment_count": 21,
+  "deployment_count": 26,
   "audited": true,
   "audits_covering": [
     "https://docs.silo.finance/assets/files/SP_Silo_Core_Security_Assessment_Report_v2.0-6c5f5bb40b34450300b9fe59133ea870.pdf",
@@ -14,6 +14,22 @@
     "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/report-cli-cantina-silo-finance-0124.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1de3ba67da79a81bc0c3922689c98550e4bd9bc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90957ad08d1ec15d4ccf5461444ffb0dc499eb2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,
@@ -178,6 +194,30 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0xed9777944a2fb32504a410d23f246463b3f40908",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2433d6ac11193b4695d9ca73530de93c538ad18a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9b550bf0351986342959d4447c5851e570766238",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xacb7432a4bb15402ce2afe0a7c9d5b738604f6f9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

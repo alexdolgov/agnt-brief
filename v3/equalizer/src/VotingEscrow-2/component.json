@@ -9,10 +9,10 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x3ce7ba8ad19fe33ae2ce20a4cc1b0d91c5053549",
+      "address": "0x1d6dc86c3910c3fdedad9fd59c5ecf634b2e71d7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,11 +1,12 @@
 # harvest-finance — deployments
 
-4593 verified deployment(s) across 689 component(s).
+5005 verified deployment(s) across 836 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x8553d254cb6934b16f87d2e486b64bbd24c83c70` | ClonableBeaconProxy | proxy | live | no |
 | arbitrum | `0x9dca587dc65ac0a043828b0acd946d71eb8d46c1` | ClonableBeaconProxy | proxy | live | no |
+| arbitrum | `0xf54537b19796d2c75ecb6760a299b8482ea717fb` | VaultProxy-7 | proxy | live | yes |
 | base | `0x00b6bdcf8fe1d43082ce09eaec4695ebf80c831b` | RequestFeeRefundFuse | impl | inactive | no |
 | base | `0x00d373ae70c82cb30c02eee65b7827c262ee7ad3` | CLVault | impl | live | no |
 | base | `0x0109620ccc53d8ca65025d71072ba56a6efbdebb` | IporProtocolRouterAbstract | impl | inactive | no |
@@ -26,7 +27,7 @@
 | base | `0x05e75b02fae21bdb10f570fa7a2db0605e7df2d9` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x061886648f40c3f38badf2f64705bfdf0f6b12b3` | Reader | impl | inactive | no |
 | base | `0x06a4071bd7c1f16bf6839d0a743bfa74631e5005` | BaseUpgradeableStrategyStorage-34 | impl | live | no |
-| base | `0x06b64da8de97b14c0de01a199dca1fe13735a7ae` | PlasmaVault-5 | impl | live | no |
+| base | `0x06b64da8de97b14c0de01a199dca1fe13735a7ae` | PlasmaVault-8 | impl | live | no |
 | base | `0x06d08a6281a68c487609bfbc62ea38523f914050` | ERC1967Proxy-9 | proxy | inactive | no |
 | base | `0x06dc45973ca91f4049a895fe4261a9028d9f9b77` | BaseUpgradeableStrategyStorage-35 | impl | live | no |
 | base | `0x078c52ba0e7bd210949581f3d1a2fc500217fd00` | BaseUpgradeableStrategyStorage-6 | impl | live | no |
@@ -34,9 +35,11 @@
 | base | `0x07c547bcc5f7e66333c259b3f8938a4049aa44df` | PlasmaVaultRedeemFromRequestFuse-2 | impl | inactive | no |
 | base | `0x07d212988ecdf8d2c2ab448114685ce5fdf07a4c` | UniversalLiquidatorRegistry-2 | impl | inactive | no |
 | base | `0x08d1efc2c29f0bc2b0c319ea0c0ae1e94d65af88` | ERC1967Proxy-9 | proxy | inactive | no |
-| base | `0x09388e18d5c331449c6ef636726dd1fd007b8ddf` | ERC1967Proxy-7 | proxy | inactive | no |
+| base | `0x09388e18d5c331449c6ef636726dd1fd007b8ddf` | ERC1967Proxy-3 | proxy | inactive | no |
 | base | `0x09cebe390d2cd46e2919c6d87b5d5a23601a4033` | CLWrapper | impl | live | no |
+| base | `0x09f77a2552b83e157cd5d49867b5d580b50588ea` | PlasmaVault-5 | impl | live | no |
 | base | `0x0a1d90eb4232ab85f3f5105cc94bd2f7819e0086` | PriceOracleMiddlewareManager-2 | impl | live | no |
+| base | `0x0a4732398084bf361f7ff530446b8f217c22b050` | PlasmaVault-11 | impl | live | no |
 | base | `0x0a48e903d7502dce596d3a101f9932be39c2ccd0` | ZeroBalanceFuse | impl | inactive | no |
 | base | `0x0ad775665eec739ae776b49604e99806a840282f` | BaseUpgradeableStrategyStorage-5 | impl | live | no |
 | base | `0x0b2eb332c5b38f13f0c2d0b1039e0302f985be09` | ERC1967Proxy | proxy | inactive | no |
@@ -45,20 +48,25 @@
 | base | `0x0ca78dca6eda9360cee43631b60252f5835b4b06` | PlasmaVault-2 | impl | live | no |
 | base | `0x0d1ab3a667fcd4d8659fe8f3f4c8e05d40ffa76b` | BaseUpgradeableStrategyStorage | impl | live | no |
 | base | `0x0d1aca4e94c1e2a11f030d6d6979d97286f71ac9` | CLWrapper | impl | live | no |
+| base | `0x0d1cf457d9c1e5f60c4226aeac6b0481ef7e7881` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x0d30fa6f32f1fe83c8461b66498aec00a96b698a` | CLWrapper | impl | live | no |
 | base | `0x0d6fcbef8d0179d148a1d0af99ae6785361e4437` | BaseUpgradeableStrategyStorage-19 | impl | live | no |
-| base | `0x0d877dc7c8fa3ad980dfdb18b48ec9f8768359c4` | PlasmaVault-7 | proxy | live | no |
+| base | `0x0d877dc7c8fa3ad980dfdb18b48ec9f8768359c4` | PlasmaVault-15 | proxy | live | no |
+| base | `0x0da39bc9efe94bd7229f3597d19658e250408381` | VaultProxy-6 | proxy | live | no |
 | base | `0x0db8d3fd81900ff95ca25d7bc30a4da1b289e670` | EulerV2SwapDeployFuse | impl | inactive | no |
 | base | `0x0de0723e8feea3001eeeb310690d2a70d2f69eb9` | PlasmaVault | impl | live | no |
 | base | `0x0de43f1b7883a61a8f66fda00e9b1b4b738f6711` | AmmCloseSwapServiceWstEthBaseV2 | impl | inactive | no |
 | base | `0x0dff2420d35b926d89031f444ee8eaa6c83ad8b2` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x0e767ad14cb94fa770b46ad9766545675167b877` | BaseUpgradeableStrategyStorage-36 | impl | live | no |
 | base | `0x0e7d80555256711790b4a7da8bebc5f5c1cddf1f` | PlasmaVault | impl | live | no |
+| base | `0x0e95dbb1f8bc45d6bbb65bb53e92fe1e6a92db4a` | VaultProxy-6 | proxy | live | no |
 | base | `0x0eb64f28e54a1c5f5ad98b54f951496d9a330887` | AmmPoolsServiceBaseV1 | impl | inactive | no |
 | base | `0x0ef0e1d2e17275565f62b1b7c8a5bfe59f3c58e6` | BaseUpgradeableStrategyStorage-20 | impl | live | no |
 | base | `0x0f5959aa61e5c873f37bb1260afd5b055f6c925b` | BaseUpgradeableStrategyStorage-37 | impl | live | no |
 | base | `0x0f86a5eca11a0a2539cc24ec27826c65cc0094ed` | EulerV2ControllerFuse | impl | inactive | no |
+| base | `0x0f96775ca3fc68fdc85fde54ba245e88466dd924` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x0feedbec85935e5f7439cecfb66f4c7ba51c7298` | PlasmaVault | impl | live | no |
+| base | `0x1016508d9bb2f546b7f07171311b9de1692576af` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x108c8cfb9e00681ffa1fa3b654937e8b3bcd2e64` | EulerV2ControllerFuse | impl | inactive | no |
 | base | `0x10e64e5f2f2bd098f31849b48d0ba1b92331ce88` | PauseFunctionPreHook-2 | impl | inactive | no |
 | base | `0x10f63e727bab2709a90e6ca1e9046e3d63155931` | MoonwellFoldStrategyV2Mainnet_EURC | impl | live | no |
@@ -71,17 +79,23 @@
 | base | `0x120ac289e1a68e4a8d87d4091f153d3eb296ac8b` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x123f08f40d8b7afec854479e1b3d1947557f9aa1` | WithdrawManager | impl | live | no |
 | base | `0x12bdfdbf97d68fc3ccc45ef6e9c3ca2c1f3f7522` | AmmPoolsServiceUsdcBaseV1 | impl | inactive | no |
+| base | `0x12c479f8ab53d4884fc76f803dd24eb8b6d17a94` | EulerV2CollateralFuse-2 | impl | inactive | no |
 | base | `0x12e9b15ad32faeb1a02f5ddd99254309faf5f2f8` | PlasmaVault | impl | live | no |
 | base | `0x1349b569fd8da3e372936b2f306a1f43bde68125` | BaseUpgradeableStrategyStorage-21 | impl | live | no |
 | base | `0x1362a41ebf9d49b0526e26f101017e146746488b` | StrategyProxy-3 | proxy | live | no |
 | base | `0x13d452845d5a7a78a2074c8e226153a5e49325a7` | BaseUpgradeableStrategyStorage-38 | impl | live | no |
 | base | `0x13e2928fedd0e0613bbad5ddc6950f161a9eed99` | CLRebalanceHelper | impl | inactive | no |
+| base | `0x1435f6d8b4629a16e5e830f832440f20dcbe32ce` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0x1455717668fa96534f675856347a973fa907e922` | ERC1967Proxy | proxy | inactive | no |
 | base | `0x14a33ff21f722837286659c670b5747f7e7277e1` | BaseUpgradeableStrategyStorage-11 | impl | live | no |
 | base | `0x14bbeabfaca24f87503421683937e43e81fe6ce7` | EulerLendStrategyMainnet_USR_AR | impl | live | no |
 | base | `0x1536190e4f647e09198b049ada3e635d413a6fc8` | Erc4626BalanceFuse | impl | inactive | no |
-| base | `0x15aa5cd0ed90c77b8d5a6f6b163cf8d374eff55b` | StakeService-2 | impl | inactive | no |
+| base | `0x1573f3a1a67a6c90577584b142de802fed4e4cfa` | StrategyProxy-3 | impl | live | no |
+| base | `0x157ba7c03eb9853900d3602200a58d0361655e27` | PriceOracleMiddlewareManager | impl | live | no |
+| base | `0x15aa5cd0ed90c77b8d5a6f6b163cf8d374eff55b` | StakeService-3 | impl | inactive | no |
 | base | `0x163c63a6e88bb137003cd6f06b0b87787af273d1` | BaseUpgradeableStrategyStorage-39 | impl | live | no |
 | base | `0x16880dc1f798e5c73b07f45668d1458589ad9cb8` | BaseUpgradeableStrategyStorage-4 | impl | live | no |
+| base | `0x168826ea6576c93cfca473a16ba14f245a188346` | PlasmaVault-16 | impl | live | no |
 | base | `0x1695a1be5e2d67554baaec18d97f2d1f92271718` | RewardForwarder | impl | live | no |
 | base | `0x16aa01ff394ef3de6cd1f7278a684b94e6cb2e7c` | BaseUpgradeableStrategyStorage-22 | impl | live | no |
 | base | `0x172213ff89213e161afc8a27f8a81dc98f5a5bfc` | Erc4626BalanceFuse | impl | inactive | no |
@@ -93,10 +107,11 @@
 | base | `0x187937aab9b2d57d606d0c3fb98816301fce0d1f` | PlasmaVault | impl | live | no |
 | base | `0x1889c7c26edeaae79896014a53675a880d8fdb79` | BaseUpgradeableStrategyStorage-42 | impl | live | no |
 | base | `0x18bf511b1f3ee9345d098931ec947cd8fac0a248` | BaseUpgradeableStrategyStorage-43 | impl | live | no |
+| base | `0x195f6d86ef29107dbf6270e7f9a7c01e7f03efff` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x19b3af91334a49d80161a90459c91f1be06ed80e` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x19d1ee4a5fd93d57bc37d0fc630909e2b7f7a169` | BaseUpgradeableStrategyStorage-23 | impl | live | no |
 | base | `0x1a5b5992a5d0222f34d2b4d836cf76d02b65c30d` | PlasmaVault | impl | live | no |
-| base | `0x1aba7a3c3bec8139b10a4807087084064a454a24` | ERC1967Proxy-7 | proxy | inactive | no |
+| base | `0x1aba7a3c3bec8139b10a4807087084064a454a24` | ERC1967Proxy-3 | proxy | inactive | no |
 | base | `0x1b400dfb3233f26ab3589c0704466956aa4ec2bc` | PlasmaVault-2 | impl | live | no |
 | base | `0x1b916432df19227fd9b8363704154d934f2bd74e` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x1c18bc4e6e6fe3921e4a500203a6aca8598a8cbf` | WithdrawManager | impl | live | no |
@@ -104,6 +119,7 @@
 | base | `0x1c70688b3deaab658a6db0204f41eea1bdb4fd01` | BaseUpgradeableStrategyStorage-2 | impl | live | no |
 | base | `0x1cb4eaf830874c6d6fcba455a058c55bb7e30591` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x1d0890b7d9605c09bff29317a7d71ec33524edbf` | CLVault | impl | live | no |
+| base | `0x1d27d2350de151139c969c23261e08b57326b004` | VaultProxy-6 | proxy | live | no |
 | base | `0x1d59868d7767d703929393bdab313302840f533c` | StrategyProxy-3 | proxy | live | no |
 | base | `0x1d6fd9c383b1d8fa5a958f639a6b622c379a5e8b` | CLWrapper | impl | live | no |
 | base | `0x1dc6ec62bd4225ec063049238cef89635cdbff72` | UniversalTokenSwapperEthFuse | impl | inactive | no |
@@ -114,6 +130,7 @@
 | base | `0x1e905e572100134afeee01e88703cdbb0adaf62c` | RewardPrePayMorhpo | impl | live | no |
 | base | `0x1ea20fde8521fd8c53f1f344886c2fd25e0adc5d` | SwapExecutorEth | impl | inactive | no |
 | base | `0x1ec83eb417e5bdc6a61cf021de461c1d88cb6fac` | BaseUpgradeableStrategyStorage-44 | impl | live | no |
+| base | `0x1ee02be02f475e4c2faa93e2173f31eda4689a51` | ContextManager | impl | live | no |
 | base | `0x1f1b4668f6af1a6714e20ac1eee6ae9ce566c2b5` | BaseUpgradeableStrategyCLStorage | impl | live | no |
 | base | `0x1f8401f677777eb8ae8908e3333a7d873346d6d8` | BaseUpgradeableStrategyStorage | impl | live | no |
 | base | `0x1f941bc36399b8e3471568523f22f4f4f918af01` | MidasSupplyFuse | impl | inactive | no |
@@ -126,24 +143,34 @@
 | base | `0x226f65877d47348a9ddf28d76290047603b31155` | Drip | impl | live | no |
 | base | `0x22f3ffd6766ee32c63eb3b48439005895ee91d5e` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x231b5182aa64fbef121097adf7510ff73ee4f792` | BaseUpgradeableStrategyStorage-46 | impl | live | no |
+| base | `0x23c2a2249a325e728e215dbcb1e04c40d7b7b4b6` | ContextManager-2 | impl | live | no |
 | base | `0x23ddf353f2d0a3c32db04ebefae908750e016393` | BaseUpgradeableStrategyStorage-47 | impl | live | no |
 | base | `0x23e702b7a5695b3fe87be1faa50ff9c8f4e82b01` | BaseUpgradeableStrategyStorage | impl | live | no |
+| base | `0x23ed445bfe9455941665bf12dac2199c0eb5c33f` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x2466f56b0e7fc3c0be4ffa9abca4dad2c6c338be` | BaseUpgradeableStrategyStorage-48 | impl | live | no |
 | base | `0x24864d44f38bba51f77d9a8a547b7f424a558fd7` | CLRebalanceHelper | impl | inactive | no |
+| base | `0x2505763d644c7fa61275ae64b3c14029b1b0120c` | PtPriceFeedFactory-2 | impl | inactive | no |
 | base | `0x250f79a64c018e77d33262105c5c5484ae10013e` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x256cea43cf74c42f0b90f860666b97068d5cb7b4` | BaseUpgradeableStrategyStorage-8 | impl | live | no |
+| base | `0x25c275cbffb6539d81e00afcdbfdbd962f5d3202` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0x2627a9829b00816c5fc54196bfdfd1c8ec999540` | RewardEulerTokenClaimFuse | impl | inactive | no |
 | base | `0x264aa7a907c14b4da075af068283a8a7dd6fcdfe` | SwapExecutorEth-2 | impl | inactive | no |
+| base | `0x2655821cfe114a3e0c1f51365a154697196d5e8f` | ContextManager | impl | live | no |
 | base | `0x269528125b9c3a433468d46794626b48c734e02f` | PlasmaVault-2 | impl | live | no |
 | base | `0x2696e8017a422af7ee764fa598c7ac3b75007fdb` | StrategyProxy-3 | proxy | live | no |
 | base | `0x26a1b0e3c71f0f4f9258269f58de8ad4d55f1e07` | BaseUpgradeabilityProxy | impl | live | no |
-| base | `0x270ff943e353aa937a044991410ffad866e7fd1e` | ERC1967Proxy-7 | impl | inactive | no |
+| base | `0x270ff943e353aa937a044991410ffad866e7fd1e` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0x277ffc9d4905ee60c447f9e7da944ebbbd36c275` | AerodromeLiquidityFuse | impl | inactive | no |
+| base | `0x27c83584660af078ab10e67d38be0ab39321f7f8` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x2869a6919aba4c88a260258fcd0a34dd1f072842` | BaseUpgradeableStrategyStorage-13 | impl | live | no |
 | base | `0x2902fa1c5ca409579dfec3b7457f416eb4de1a43` | UniversalTokenSwapperFuse | impl | inactive | no |
 | base | `0x29361d1c3748379e9147472f8eff9df9182896e7` | PlasmaVault | impl | live | no |
+| base | `0x29399d76921e23314ae259cf5e17116f48ae65b7` | ERC1967Proxy-3 | proxy | inactive | no |
+| base | `0x294f7af841b80505f28d1f94d68d4885ff2827c7` | FusionFactory-3 | impl | live | no |
 | base | `0x298351028ac96467206b8ad74ab4daedb3da5151` | PlasmaVaultFactory | impl | live | no |
 | base | `0x298704eca825594f786dcb0248ff3b6986554332` | BaseUpgradeableStrategyStorage | impl | live | no |
+| base | `0x29ba38ed242b4ad1fd03be6a5d98c9a1895401cd` | FusionFactory-4 | impl | live | no |
+| base | `0x29cfd745a2d32b9b1475063c7793fe55c2cc6947` | FusionFactory-5 | impl | live | no |
 | base | `0x29ec819313e04000e1af47cbca9c09767434707f` | BaseUpgradeableStrategyCLStorage | impl | live | no |
 | base | `0x2a05d770df998dfee01ef7332df4b799d59a01b9` | BaseUpgradeableStrategyStorage-49 | impl | live | no |
 | base | `0x2abd257d2bc14709997ddf597a30024c6b2b4001` | StrategyProxy-3 | impl | live | no |
@@ -153,6 +180,7 @@
 | base | `0x2bc5bcb96d2d10a5ff1f75ffe44ccbe26d6662d3` | ERC1967Proxy | impl | inactive | no |
 | base | `0x2c0b82ead75339f68df55f15ef243b3f22ac2fa7` | StrategyProxy-3 | impl | live | no |
 | base | `0x2c8a3dd370289895354a78ed74bcc307cbf40133` | MoonwellFoldStrategyV2Mainnet_cbBTC | impl | live | no |
+| base | `0x2cac1faa0536dff29c3649c608444168b0409629` | PlasmaVault-9 | impl | live | no |
 | base | `0x2cbc31d2af935663ca4df91fdf2f048ffa651e24` | CLWrapper | impl | live | no |
 | base | `0x2cece198f8de4efc699f47b6dd380e4ba77b47e1` | BaseUpgradeableStrategyStorage-51 | impl | live | no |
 | base | `0x2d095fbf3abef7a096bc3b19758a14f61729416b` | BaseUpgradeableStrategyStorage-52 | impl | live | no |
@@ -168,22 +196,33 @@
 | base | `0x3033c274d3ccc8d12b4ea567f6f94849507c37ae` | PlasmaVault | impl | live | no |
 | base | `0x3075a82e51e3ef3990656e4b3829507fb5275b53` | AreodromeSlipstreamBalanceFuse | impl | inactive | no |
 | base | `0x310e6133a904761d717ee13d76e180e4eecf907a` | MerklClaimFuse | impl | inactive | no |
+| base | `0x312388f28803dae19dd5d6fe999ef13c600c201f` | ContextManager | impl | live | no |
+| base | `0x31a36d3eab4a8e0d365eb72ee9079603af6c421c` | PlasmaVault-13 | proxy | live | no |
+| base | `0x31a421271414641cb5063b71594b642d2666db6b` | PlasmaVault-15 | proxy | live | no |
 | base | `0x31d5bf7c8ef784c8ea1868b80c17a28b4e420ab8` | SpreadBaseV2 | impl | inactive | no |
+| base | `0x32809307a554535ac7a4b0f41bb08a7d3b7a4f35` | FusionFactory-6 | impl | live | no |
 | base | `0x328a2dc3285273bc5453c9ef434e054275c3867a` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
 | base | `0x32b8389d5cc5e50221c9a127ae2b47968919fd74` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x32df46cff7e6cab610ed6113d7a57f242d061d68` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0x32e1cfdd1ae280583abad81623f4fc7bd884be1b` | PlasmaVault-2 | impl | live | no |
 | base | `0x332aeb7102ad5f4d4b671067e7f60f5becc86eb8` | UniversalTokenSwapperEthFuse | impl | inactive | no |
 | base | `0x33c1bc4e11fd75be8f73304cb4a77abd5bebd7cf` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0x33ed640fc033a9bbe96c8469d1f32b106a4ae8c9` | Erc4626SupplyFuse-3 | impl | inactive | no |
 | base | `0x341d2459606feb164a986767cb72ddd8230744fe` | ZeroBalanceFuse | impl | inactive | no |
 | base | `0x34275906f6b12860d3d5688718aada0501229738` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0x3438ac64930d0d5076899026f98bf80fde196f18` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x34bdf84117a2a681e1d9563074079e8e1ed7e109` | BaseUpgradeableStrategyStorage-3 | impl | live | no |
+| base | `0x34c7b39f9c1311403b14a8592e4a0ff363f66b7f` | ContextManager | impl | live | no |
 | base | `0x3539a10eecea52c06bfcbabc5003da184a5ec3c4` | BaseUpgradeableStrategyStorage-13 | impl | live | no |
+| base | `0x354de72a148aa91f046265798c61b991de6bdfc0` | ERC1967Proxy | proxy | inactive | no |
 | base | `0x3585378360fa02e5784b5da4a49cc447f72e966a` | CLWrapper | impl | live | no |
 | base | `0x361d91b18d6e38e81b5a820d69fe3a063df64530` | CLVault | proxy | live | no |
 | base | `0x363a2e33196953b23ef45bb9e79d4d1fd3007351` | CLRebalanceHelper | impl | inactive | no |
 | base | `0x367878a40667f3dfd45ff0cb6144b0ed1411e401` | PlasmaVaultFactory | impl | live | no |
 | base | `0x36eb9e5f13af1aa87a44604d66fb8eea08021032` | WithdrawManager | impl | live | no |
 | base | `0x37061f938501a02f61292086d62bf4929dfe3eb4` | StrategyProxy-3 | proxy | live | no |
+| base | `0x370a3d2800b1ea990634835a5709fb31082de6d9` | PlasmaVault-13 | proxy | live | no |
+| base | `0x3710fff6d6a0a2d4c90476b643264a1a920dfc43` | PriceOracleMiddleware-2 | impl | inactive | no |
 | base | `0x373a098e9b8eb621480a1bf45dd945ffcde22009` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x377a5b195e3c074d982bd7bac66b48d4c3006353` | MoonwellBorrowFuse | impl | inactive | no |
 | base | `0x3812989702b06c642222f50906b0feed37d530d6` | Moonwell2AssetFoldStrategy | impl | live | no |
@@ -195,8 +234,11 @@
 | base | `0x396690f021f5f73abc5d1aaa8cf3a991abd01cea` | BaseUpgradeableStrategyStorage-24 | impl | live | no |
 | base | `0x399242db4eb946ac48bf6e98b20e962fcb5100d8` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x399599ac1807eb7f6ee6499a1ebc2ba68e01a21a` | AreodromeSlipstreamCLGaugeFuse | impl | inactive | no |
+| base | `0x39e8aaa46320cf7f0dcd46b2fff7f446d1d8a633` | BaseUpgradeabilityProxy | impl | live | no |
+| base | `0x3a42e938b344013858bd6434fba691587fdb4aee` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x3a9a57f475baa3bc7ca904505a52bbb5796330f1` | BaseUpgradeableStrategyStorage-53 | impl | live | no |
 | base | `0x3b8849bac047d601bdf3dda9da96549ab6dc2bea` | BaseUpgradeableStrategyCLStorage | impl | live | no |
+| base | `0x3ba9022735c7d570ad99563b428e0e122cb0e1eb` | PlasmaVault-36 | impl | live | no |
 | base | `0x3bde3a399c550d6523b66c306985726dbd7df816` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x3c18c53fb42ef56508c4f03720d4dd1785478249` | BaseUpgradeableStrategyStorage-6 | impl | live | no |
 | base | `0x3c304e03e8ba4daa23671fffab45288505bf3992` | UniV3Dex | impl | inactive | no |
@@ -208,36 +250,52 @@
 | base | `0x3dd2455c55fef6e2445c0a085f4beeb1a275e3ba` | FuseWhitelist | proxy | inactive | no |
 | base | `0x3dfe25f60191aaee4213080398d2fdf65ec3cf2f` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x3e3c5d3e4b34ab5d387e394877d77e173004c841` | BaseUpgradeableStrategyStorage-9 | impl | live | no |
+| base | `0x3efe69bb024ba8f96fa12eff3dc734ddec1ee6b0` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x3f28efea16a11069a0b16f289358a43ba0804423` | BaseUpgradeableStrategyStorage-55 | impl | live | no |
 | base | `0x3f6e4574ff7e2bf6bc6afd77549170ba08196a3b` | BaseUpgradeableStrategyStorage-56 | impl | live | no |
 | base | `0x3fbc0cb49195ef8763bbca1b4a42862c0cb81257` | BaseUpgradeableStrategyStorage-57 | impl | live | no |
+| base | `0x3ff6d9ab0599b7200c223e9eb0b609fb2167b32c` | PriceOracleMiddlewareManager | impl | live | no |
 | base | `0x4080348fa12b508773cece306b73dfc35e561f63` | WithdrawManager | impl | live | no |
 | base | `0x4084e842e232d8b4460deb0bf792e94d513caa33` | PowerTokenLens-2 | impl | inactive | no |
+| base | `0x4092d7bf734d7b129f76899667b218f745f05cc0` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x40a8a6232267cbaf4d8d7349cedbc279aa253d8f` | BaseUpgradeableStrategyStorage-25 | impl | live | no |
 | base | `0x414e852a854b21f8ef22db560f2a7d8b50444a2e` | AreodromeSlipstreamCollectFuse | impl | inactive | no |
 | base | `0x4177a55bd35098fe893f52f7985aeeecce086825` | CLWrapper | impl | live | no |
+| base | `0x41883f367ab187b1c676a4a4767758916a6a01fa` | ERC1967Proxy | proxy | inactive | no |
+| base | `0x4195daa3500e418e864954e1abe9e1d710ce824e` | PriceOracleMiddlewareManager | impl | live | no |
 | base | `0x41cfe273c51e2c1391f9efa5ce7236810323eadc` | PlasmaVault | impl | live | no |
+| base | `0x42409d20a2f5c75936eb1553ded054b09b2c7e2f` | FusionFactory-7 | impl | live | no |
+| base | `0x42c12f941b83276d5691d9caef9b040f787c6b3a` | WithdrawManagerFactory-3 | impl | live | no |
 | base | `0x431e3bdc1eec2d756d264833712a6b4e9ef79ee4` | Erc4626BalanceFuse | impl | inactive | no |
-| base | `0x43285ef3244300fe7ed5b41e24b5953caf7ac58d` | PotPool-4 | impl | live | no |
+| base | `0x43285ef3244300fe7ed5b41e24b5953caf7ac58d` | PotPool-7 | impl | live | no |
 | base | `0x4360119c77b464dea3e8f18d8274cada8d8e04c8` | AerodromeGaugeFuse | impl | inactive | no |
 | base | `0x43fe585e9b52ba622a184ae07810213da869496e` | BaseUpgradeableStrategyStorage | proxy | live | no |
 | base | `0x4426a0a9ace4a784abb0417b88bc9f3091ac210f` | AreodromeSlipstreamNewPositionFuse | impl | inactive | no |
 | base | `0x44b13c4af19d97af4da32c46b533c3e632000bf8` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x45484a246f520a3b570ceb19f2d2950bd16a2372` | FusionFactory-2 | impl | live | no |
 | base | `0x456173684d54689cb7833d587ecfa0361a01905a` | BaseUpgradeableStrategyStorage-58 | impl | live | no |
+| base | `0x45aa96f0b3188d47a1dafdbefce1db6b37f58216` | PlasmaVault-17 | proxy | live | no |
 | base | `0x46238ca6c7bcd6a44642dbabd0a03d0e762e249a` | BaseUpgradeableStrategyStorage-59 | impl | live | no |
 | base | `0x465e57ceffe60e1eccc5cbf94ae8592c8696dc9e` | PriceOracleMiddlewareManager-2 | impl | live | no |
 | base | `0x47226fbbffeb3583842b71e988ad44113f75c3f8` | CLVault-4 | impl | live | no |
 | base | `0x4772de1c0781d560f3fa18a21a72c77180dff641` | BaseUpgradeableStrategyStorage-9 | impl | live | no |
 | base | `0x4795afa6ff3e23b2ea5c95fece44143670fd942b` | BaseUpgradeableStrategyStorage-2 | impl | live | no |
 | base | `0x47acfd052b9252e750aa7ad8be9ae8ce37742e26` | PlasmaVault | impl | live | no |
+| base | `0x47ad28c63b9d3acbd43ea42aac6a1a865d9f928e` | WithdrawManagerFactory-4 | impl | live | no |
+| base | `0x47da5b0a176b00676a3a58c75c374494383c2025` | ContextManager | impl | live | no |
 | base | `0x48eae1beeb30b7419ee5586163f679a1b504100a` | CLVault | proxy | live | no |
 | base | `0x48fb3891e94ae4312520fa935cb2a6b98bdd871e` | PlasmaVault-2 | impl | live | no |
+| base | `0x492eaafef7b6abb3ace03c0baa1a2c4bdfc0fc16` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x49416c3134227d3ba0de3fa9e1bf5ff0179d4e70` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
+| base | `0x496e39f0aa349c24032e5636e9180e7265c3fecd` | PlasmaVault-5 | impl | live | no |
 | base | `0x498eb532c9d3b4cf20351b8767dceb4b5d28fe4c` | AmmGovernanceServiceBaseV1-2 | impl | inactive | no |
 | base | `0x49b9a2f243ab72a51ce78c0215f4ff9708abf923` | EulerV2SwapRegistryFuse | impl | inactive | no |
 | base | `0x49e7af6426d48b83b0fa15ecf32dc622fb411f34` | Drip | impl | live | no |
 | base | `0x49fbad6a2b95595b72563c37c1816d02e2f4c597` | BaseUpgradeableStrategyStorage-60 | impl | live | no |
+| base | `0x4a84a8618816855632f1d39280bc2e6a464dae15` | ContextManager | impl | live | no |
+| base | `0x4a8b953f1d82f315fe58ea3de63e82b578477510` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x4a8fed809d7e7a068c581fe9848c84f53935f5a8` | BaseUpgradeableStrategyStorage-61 | impl | live | no |
+| base | `0x4abae7c3503c31f1a60df7ca60ad46ba4e791996` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x4aee7072ac1a49a3f84d0a95e32f3b7d1c97fb30` | IpToken | impl | inactive | no |
 | base | `0x4b0e155589602d4acaead85949eab3b34619403b` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x4b69ac30feddd922eb26adb30713984d5fb0e972` | Erc4626BalanceFuse | impl | inactive | no |
@@ -249,49 +307,73 @@
 | base | `0x4d58d9b7e9ef898b542fa622dc773941286550cf` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
 | base | `0x4eb5f78f5de651cefa81a038105224fe1dc68d02` | BaseUpgradeableStrategyStorage-4 | proxy | live | no |
 | base | `0x4edc6950e5ecf00de4eca0dedbe48aa8341556fa` | IporProtocolRouterAbstract | impl | inactive | no |
-| base | `0x4f40da75da4849ed40b6db01a5a5126914bf488c` | PlasmaVault-5 | impl | live | no |
+| base | `0x4f40da75da4849ed40b6db01a5a5126914bf488c` | PlasmaVault-8 | impl | live | no |
 | base | `0x4f6560bb214b6c2d309db83a7e23d54ad0563eea` | BaseUpgradeableStrategyStorage-22 | impl | live | no |
 | base | `0x504f9343067d428a9830625e6abfa19beeb4cc7a` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x5077b42243e06ffd3fa239fd499b620c532f85b2` | MidasRequestSupplyFuse-2 | impl | inactive | no |
 | base | `0x50c2cb4dfc1bb4d91997b81f5c3a758959e19ded` | BaseUpgradeableStrategyCLStorage | impl | live | no |
+| base | `0x51de88c331426d59f04e33c7adbf7bae80c3b495` | FusionFactory-2 | impl | live | no |
 | base | `0x52aef476b70a4c20d27e5ec142af20cd4f4846fb` | RewardForwarder | impl | live | no |
 | base | `0x52f288b352e8dc39777c3f41dbd0474f4583b237` | AreodromeSlipstreamGaugeClaimFuse | impl | inactive | no |
 | base | `0x530427963165075fe2a42cae0d08e4f1c977893c` | BaseUpgradeableStrategyStorage-11 | impl | live | no |
 | base | `0x530df2495fec53eb6571cb61b4c92b37eebfaeec` | BaseUpgradeableStrategyCLStorage-2 | impl | live | no |
 | base | `0x5326e926131b3fa1545ac6ceed57b7476445f417` | WrappedPlasmaVault | impl | inactive | no |
+| base | `0x53defd9d61134847b8de75385891dcd32b3ad5d4` | PlasmaVault-37 | impl | live | no |
 | base | `0x53ecf9f3a8581e1f1dbcfac0401e17f697f88f76` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
 | base | `0x556a7be8e875d9b5e16cb0ec737c85704202be0e` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x55a3d0f6c2e9efe0462f8de232268275fe76e15b` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0x55d8d6e5f17f153f3250b229d5aac9437e908a77` | PlasmaVault-17 | impl | live | no |
 | base | `0x55efca1c0f5f8ddf93ecdde3db96b08ee768c184` | WithdrawManager | impl | live | no |
 | base | `0x56e00812a78158c405f5433246a0376719f0da81` | WithdrawManager | impl | live | no |
 | base | `0x56eb01ab4c938bcb32356146d41f2315a78d37fa` | PriceOracleMiddlewareManager-2 | impl | live | no |
 | base | `0x56fb8147992336026f0d7e4a4a7b0d02b0fe2171` | CLVault | impl | live | no |
+| base | `0x57866b47994aff5d0e7d122f8d6aed0eb9c97870` | PlasmaVault-23 | impl | live | no |
 | base | `0x57d862bcc4d371fc032b65c2216f8b9392d14a4e` | BaseUpgradeableStrategyStorage-64 | impl | live | no |
 | base | `0x583f12edccb5f1e27e5f493006b6d18fed7fce77` | BaseUpgradeabilityProxy-2 | impl | live | no |
 | base | `0x589ff9f1e9f517b232808280c46a64a36ac557d5` | UniversalLiquidator-2 | impl | inactive | no |
 | base | `0x58c24515507a12940019a5c710961ca317cb2375` | PlasmaVault-2 | impl | live | no |
 | base | `0x58e27468ff2708ee0ebd3dd93883f5fee77af949` | BaseUpgradeableStrategyStorage-8 | impl | live | no |
+| base | `0x598326fcede2c1b8e9023a20c18fff6dea5306a4` | EulerV2SupplyFuse-3 | impl | inactive | no |
 | base | `0x59a7b9570301432f2c953a18fbc9b97ef11b746f` | PlasmaVault-2 | impl | live | no |
 | base | `0x59ab09d5562161b4fc9f9ee900349b2c4783fa52` | WithdrawManager | impl | live | no |
 | base | `0x59f6a25ac62d78863d5c11d7f12a111f9e9993dc` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x5a1259fb06acfa14aa397a3c04fde4ddc8a4f8ed` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
 | base | `0x5a3f6cff9da787f43e3b52b7c4bcd14d3afbe485` | Moonwell2AssetFoldStrategy-2 | impl | live | no |
+| base | `0x5ac8c0d9d11ddd7a335af0b72eacbf33d500e7cc` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x5ad7ab72abef77522e6726965ceeafc1253f8469` | PlasmaVault | impl | live | no |
+| base | `0x5b36e95abff98a476fbaeb3e2434dee3eb463f48` | Erc4626SupplyFuse-2 | impl | inactive | no |
+| base | `0x5bd0b6ba37f8bc04279e47e040d7a253824a535c` | PlasmaVault-23 | impl | live | no |
 | base | `0x5beaa9f7724d027f9410b6e9778b5aa44cff6768` | CLVault | impl | live | no |
+| base | `0x5c53d7c26254b5623f22081bd26776b380bd1601` | ERC1967Proxy-14 | impl | inactive | no |
+| base | `0x5cec9bfe577ed59ccd164ec9777093c0663b5170` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x5d710376dd1e990e5fb4e9146d09b3846e304ea0` | BaseUpgradeableStrategyStorage-65 | impl | live | no |
 | base | `0x5da219208372217361681370ea6818a3f6936e5c` | PriceOracleMiddlewareManager-2 | impl | live | no |
 | base | `0x5dcccfa2a3d8944819a5f42d53fcd3824724fa4b` | BaseUpgradeableStrategyStorage-2 | impl | live | no |
 | base | `0x5f565d142815eb430ab14bc9bda9d12c9fca3c6c` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x5ff3d964d0f60d715de3b65a2fb6c9eaf291a046` | FusionFactory-8 | impl | live | no |
 | base | `0x60491b5c146c5d7c3b6dc9ca1ce233819029d128` | BaseUpgradeableStrategyCLStorage-2 | impl | live | no |
+| base | `0x60664eb6b193204df730d269f064c1548453beed` | PlasmaVault-24 | proxy | live | no |
 | base | `0x60a31914879dc9f5d18181533df09c25deb40507` | BaseUpgradeableStrategyStorage-9 | impl | live | no |
+| base | `0x60ce35e58f6ced1538c16a15ff7ff75b0538898f` | EulerV2BatchFuse-2 | impl | live | no |
+| base | `0x610152a79be7f2aa3aa70520c9331c18fe8d33b7` | FusionFactory-9 | impl | live | no |
 | base | `0x623d6c719662cece1205b4405265af19a2868b97` | BaseUpgradeableStrategyStorage-66 | impl | live | no |
+| base | `0x625e4fea516dbc44014e8f5a10bacb2f0500849f` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0x62611146121706f601e137bb46f18da0e9754a4c` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x62796e93641500acd80ac472544d0ee6ad574a83` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x628dd1b5f4f9a44df8cd915eeff7570ef0e23b22` | BaseUpgradeableStrategyStorage-67 | impl | live | no |
+| base | `0x62ec84e9bbd97342a8493365ecf7329f89ef7ee4` | MidasBalanceFuse-2 | impl | inactive | no |
+| base | `0x633d78849fb91a336077ff25afc3c72c8f6a7045` | Erc4626SupplyFuse-3 | impl | inactive | no |
 | base | `0x6343a839a0e7eedfd7d5e820ec64b570e627cf7f` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x63b939a52549dc80a176ef7d2e823ac20ef986dc` | ERC1967Proxy | impl | inactive | no |
 | base | `0x63dfe27676d53f24e251cbbc0e37ffdc856319a2` | AerodromeDex | impl | inactive | no |
+| base | `0x63f92c796221b7dbb85f14477eefdbf2b58d32cc` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x645ae5de61d5e586440c22595c32fef6631c4006` | CLWrapper | impl | live | no |
 | base | `0x6498a1cb481104c6973f55107af36b0b368542bf` | BaseUpgradeableStrategyStorage-4 | impl | live | no |
+| base | `0x64eca0c58f4371f73921f51081f0960b982c7532` | CallbackHandlerEuler-2 | impl | live | no |
+| base | `0x6539fd9916bc76c4324b747398ab066a256b8dd1` | PlasmaVault-24 | impl | live | no |
 | base | `0x6562790cdd1aeee1fc683f8810da3da4b455c997` | BaseUpgradeableStrategyStorage-26 | impl | live | no |
 | base | `0x659fd0f2d1668965ba2cc2c2f18dd37db4b364ee` | PlasmaVault-2 | impl | live | no |
+| base | `0x6629dbc8aebae849b2359b0ba2e70d3ad20fd7f2` | IporOracle-2 | impl | inactive | no |
 | base | `0x6652a6653b5d711083120e5830fdb333cfa49e3d` | BaseUpgradeableStrategyCLStorage | impl | live | no |
 | base | `0x66d11de5379b774af57f166871829ffbd8024da3` | BaseUpgradeableStrategyStorage-68 | impl | live | no |
 | base | `0x6708f8eba2a347a762aaac785247828ce2f71740` | BaseUpgradeableStrategyStorage-2 | impl | live | no |
@@ -301,10 +383,15 @@
 | base | `0x6834bdfe5864c6b1703b999d04b092229a322943` | AmmSwapsLensBaseV1 | impl | inactive | no |
 | base | `0x684b5c8866aade4e21f8a30697a56a805b108a67` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x689f9805997c7f7420513315cb1e81c641c636d2` | BaseUpgradeableStrategyStorage-69 | impl | live | no |
-| base | `0x68b2fc1566f411c1af8ff5bfda3dd4f3f3e59d03` | PotPool-2 | impl | live | no |
+| base | `0x68b2fc1566f411c1af8ff5bfda3dd4f3f3e59d03` | PotPool-3 | impl | live | no |
 | base | `0x68e6cdd3ec0d359480d28a4480699c0bea0c558c` | BaseUpgradeableStrategyCLStorage | impl | live | no |
 | base | `0x691b1c80c1314ee67d60f51fe7519ab852af2617` | BaseUpgradeableStrategyCLStorage | impl | live | no |
+| base | `0x6966d64e13a4d454025b94b73adfb30fd1efedba` | CallbackHandlerReader-2 | impl | live | no |
 | base | `0x698cd9e7c36cecbdcbe2c483a18979957fd4e2eb` | WithdrawManager | impl | live | no |
+| base | `0x69e2a72805185c97f112c70724247deaf1388205` | BaseUpgradeabilityProxy | impl | live | no |
+| base | `0x69edbaec3d573cf2560f25a81bb315ba77b49ad0` | PriceOracleMiddlewareManager-3 | impl | live | no |
+| base | `0x6aa5c137894d7f579eb3541584e0c4fb087e17b4` | VaultProxy-12 | impl | live | no |
+| base | `0x6af40c13de7443433c161dd7c838379760e02221` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x6baf2cd9c2758b23363bab33575680a74521cbd2` | BaseUpgradeableStrategyStorage-70 | impl | live | no |
 | base | `0x6be0874245150369a22e2dd0eb33d4d4fa7f30cc` | BaseUpgradeableStrategyStorage-71 | impl | live | no |
 | base | `0x6c9206aef38a9138ed4c34fca17acb89dffe45f0` | MoonwellFoldStrategyV2Mainnet_cbBTC | impl | live | no |
@@ -312,11 +399,16 @@
 | base | `0x6e1e4d6a4dce267fd276270d139955340bb5681e` | BaseUpgradeableStrategyStorage-19 | impl | live | no |
 | base | `0x6e386eca6eb9fae44e0ae2a20bcceee627ad9e6a` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x6e818cab4b3e3a8f7178d0c510e856cac65dc41a` | BaseUpgradeableStrategyStorage-6 | impl | live | no |
+| base | `0x6f4fcbb1f742311398532862684c8586a9a5deb3` | ContextManager | impl | live | no |
 | base | `0x6fd8d9eeb89daa3b862dade107e4cac32101812f` | BaseUpgradeableStrategyStorage-26 | impl | live | no |
 | base | `0x6fef68187e27f99e74b148672b054a045ec7ee4b` | PlasmaVaultFactory | impl | live | no |
+| base | `0x704515ff838bca8a773bdaa2c3ae790bfa2ce887` | ContextManagerFactory-2 | impl | live | no |
 | base | `0x709d39784907843409a7c53462ca7806af860581` | BaseUpgradeableStrategyStorage-72 | impl | live | no |
+| base | `0x709e1601b99bfd246d26a71ee15a294e15548a62` | AccessManagerFactory-2 | impl | live | no |
 | base | `0x710543f204c4d91c78e846b66efaada318a30e84` | BaseUpgradeableStrategyStorage-73 | impl | live | no |
 | base | `0x71214dd40cc3feac5f355140c1a53776c1973b3b` | PlasmaVaultFactory | impl | live | no |
+| base | `0x71f856a030b1f5e75a85779a770d8cf96fb4a1cb` | PlasmaVault-16 | impl | live | no |
+| base | `0x722c6a91dd120262887158da5e742eb4b365cd58` | ContextManager-4 | impl | live | no |
 | base | `0x7232e39344e07b038bd9c64dc5f5c15c06ad1e6e` | BaseUpgradeableStrategyStorage-74 | impl | live | no |
 | base | `0x72713c061bc9d16f9920023ab843e0d4674db8df` | OneValuePriceFeed-2 | impl | inactive | no |
 | base | `0x72981b3380e9cf93db731d0d8a3a639f8fc13023` | Erc4626BalanceFuse | impl | inactive | no |
@@ -329,21 +421,27 @@
 | base | `0x762a4db8bafffcf6c4c65fa3371d77b8ede04596` | FuseWhitelist | proxy | inactive | no |
 | base | `0x76d7ae1e430a6ab63dc5f35200ed60bc4beae753` | CLVault | proxy | live | no |
 | base | `0x77aa62d7cd6279fa433d96bf63fe9d39c502193e` | ERC1967Proxy-9 | impl | inactive | no |
+| base | `0x780ae3454f86b725d572cea4417d8cf681ba8da7` | WrappedPlasmaVaultFactory-2 | impl | inactive | no |
 | base | `0x781ca258faf45b2490d4018a3cfdb45cb8ade650` | CLWrapper | impl | live | no |
 | base | `0x786afbbb9876b193f8f01b04a2c08861551d02d0` | AmmPoolsServiceUsdcBaseV1 | impl | inactive | no |
+| base | `0x7872893e528fe2c0829e405960db5b742112aa97` | PlasmaVault-15 | proxy | live | no |
 | base | `0x7879981c2617c59be580fec5ab0a8946e219542e` | AmmTreasuryBaseV1 | impl | inactive | no |
 | base | `0x78fffcfa0fde6baaba959c999b62da5a4852bc4c` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0x7924184350e9d555a576153fe5feeec86270530a` | PlasmaVault-25 | impl | live | no |
 | base | `0x7942f4187202dfba0d600b0ef0fc8f3e7ca2cc34` | BaseUpgradeableStrategyCLStorage | impl | live | no |
 | base | `0x7978ab0822093a2916e83d67d2b63319c06f9340` | BaseUpgradeableStrategyStorage-76 | impl | live | no |
 | base | `0x7991ab93223e5add01386f30388c012188db20a5` | BaseUpgradeableStrategyStorage-77 | impl | live | no |
 | base | `0x799b31118cf87c96da151885cc15da4a61dd4deb` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x79d31b98382c5d325ab42353ce1ae7081757c89a` | PreHooksInfoReader-2 | impl | inactive | no |
 | base | `0x79d8535366514bbfdbb98ff08daddbaae4716dbc` | BaseUpgradeableStrategyStorage-78 | impl | live | no |
 | base | `0x7a43d01fc23f0cc061ec57ad1a6c1bed076e8448` | CLWrapper | impl | live | no |
+| base | `0x7a5869aa7fd85cc6226fd4d3487cb6b4b5b30199` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x7a641c65ed5e5031938494e5badd3b9719e94357` | BaseUpgradeableStrategyStorage-14 | impl | live | no |
 | base | `0x7ad80032812907d65632209c46f8881e163d7bad` | PlasmaVault | impl | live | no |
 | base | `0x7be5b4ee711581ad7afb0730a97643905671b412` | CLVault | proxy | live | no |
 | base | `0x7c2984beb66667bddc80390046378b41411d1279` | BaseUpgradeableStrategyStorage-79 | impl | live | no |
 | base | `0x7c3a7feca625265083e6d1ffc09c61e1dfba08cb` | PlasmaVault | impl | live | no |
+| base | `0x7ce0b2272776e437b28c64d75c2c94c27d4c6161` | ViewerNotifyHelperStateful-3 | impl | live | no |
 | base | `0x7d01d400132c2fa059f59ecaef8567a4d3e111e6` | BaseUpgradeableStrategyStorage-7 | impl | live | no |
 | base | `0x7d4a5f95fc812510fefe6a4abab721c564c81074` | CLVault | impl | live | no |
 | base | `0x7d5eaa763759b728586fdbe74bb1271741c4ad12` | BaseUpgradeableStrategyStorage-80 | impl | live | no |
@@ -351,25 +449,35 @@
 | base | `0x7eac0cf23b44d98da7e981ede82bd40878c36f85` | BaseUpgradeableStrategyStorage-81 | impl | live | no |
 | base | `0x7eb185d7f93fc95fc0276e3267f28800d6e3a957` | BaseUpgradeableStrategyStorage-82 | impl | live | no |
 | base | `0x7ed269eccd7214c14d38773805bcdd40a1547c6e` | PlasmaVault | impl | live | no |
+| base | `0x7f378328c91f6a4d1dc5dd08daecb6e983f18e61` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x7f4d9efde7efebbafbb506ca3f711764cbc96391` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x7f80241a2b8da1e11b96b5749991e9a9a40b62a9` | BurnRequestFeeFuse-2 | impl | inactive | no |
 | base | `0x7f84144c6bf137ecb207464f1976c25dc1ad1911` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x7fb24e4eebe1879c16c50b5249e589e9b1b7fb00` | WithdrawManager | impl | live | no |
+| base | `0x801467ea9e305927365097ae3319ffde6bf60912` | PlasmaVault-13 | impl | live | no |
 | base | `0x802da57bfe4243d486b71154812f4b5c8c4dfe31` | BaseUpgradeableStrategyStorage-83 | impl | live | no |
+| base | `0x80c441de2e0ccd968ce8ea6ccabc114b6c6cbf0d` | ContextManager | impl | live | no |
 | base | `0x80c90851ff7f425fafb4eec772d76d8b597f2136` | CLVault | proxy | live | no |
 | base | `0x81dd870620839a927d076cbe40432ccaa3e53740` | AreodromeSlipstreamModifyPositionFuse | impl | inactive | no |
 | base | `0x823ed7d40c549df3fa889cee6b3acd644e907699` | PlasmaVault-2 | impl | live | no |
 | base | `0x828450cc17f32c7bf4686c6f475d2edca55330c9` | BaseUpgradeableStrategyStorage-84 | impl | live | no |
-| base | `0x82a1fc634417127ddc30e3647e092823485b1f1f` | ERC1967Proxy-7 | impl | inactive | no |
+| base | `0x82a1fc634417127ddc30e3647e092823485b1f1f` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0x82a2463a1f141efacb12007c7697e40cf51785e1` | WithdrawManager | impl | live | no |
+| base | `0x82c57fa0aa63989ee21e9aa73cb5494098624f02` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x82f3ed02954740a506a36c10c6a066baa4c12fe6` | PlasmaVault | impl | live | no |
 | base | `0x8323824d05620244238d6053f148409d9dccbcb7` | BaseUpgradeableStrategyStorage | proxy | live | no |
 | base | `0x845cecc419dfb52bce125853a821cdbb015cbd8b` | BaseUpgradeableStrategyStorage-8 | impl | live | no |
+| base | `0x84891022d6f0d478c1aa59a336aaaf555b3da093` | GlobalIncentivesHelper-2 | impl | live | no |
+| base | `0x85564fb392e18a84a64343a3fb65839206936c0f` | ERC1967Proxy-3 | proxy | inactive | no |
 | base | `0x8572eb57f92f50913d9da78e5c6a8065b0449a3d` | AmmCloseSwapServiceUsdcBaseV2 | impl | inactive | no |
+| base | `0x8598432cda45fd6dc836728d6b12f325f78b62b6` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0x85def13cafe6afb1d810203324b7169040968843` | RewardPrePayMorhpo | impl | live | no |
 | base | `0x8611053a05080914e72d0c84ff95a11d10edf36e` | CLVault | proxy | live | no |
 | base | `0x861ae891d547a3022474ffc903c9f8924baaf1c4` | WithdrawManager | impl | live | no |
+| base | `0x86688857794d1280e068a4283f4bc8e9a704ac7a` | VaultProxy-6 | proxy | live | no |
 | base | `0x867838b9e11915516e19c6b768d815f369931138` | UniV3Dex | impl | inactive | no |
 | base | `0x86b8e5fc263e3760a44886fd50e9279e31eddf4f` | CLVault | proxy | live | no |
+| base | `0x86d94f5bacb94dac2088a0096e88b06b1944ab1d` | ERC1967Proxy-3 | proxy | inactive | no |
 | base | `0x8728e11868d8e870573f00d7ba6da02e1f61d976` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x87ebf5f74fab3febdd9dff97e010974674d2e826` | RequestFeeRefundFuse | impl | live | no |
 | base | `0x885a3105a8fd07a7de33d283f4f15c84dc8d6077` | BaseUpgradeableStrategyStorage-27 | impl | live | no |
@@ -377,9 +485,14 @@
 | base | `0x88a1041e764049e87bc84dca97208ec30dfee7a5` | PlasmaVault-2 | impl | live | no |
 | base | `0x88b9f84d5e426ef0fae6352b1c26778e0f4bbe6e` | BaseUpgradeableStrategyStorage-85 | impl | live | no |
 | base | `0x894410719f8cc9a5846daf1e1792498ddcc0dfab` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0x89a204aa373a56b02abad265bea12b70c4f2a142` | AsyncActionBalanceFuse-2 | impl | inactive | no |
 | base | `0x8a6d94386a65e3965ae3456204e58c37b0260f2a` | WithdrawManager | impl | live | no |
+| base | `0x8aad082f04d04d1db2e92160baa630e31c22c073` | BurnRequestFeeFuse-3 | impl | inactive | no |
 | base | `0x8aaf6a328a3ad2dc4560029b3c4095e821513021` | BaseUpgradeableStrategyStorage-24 | impl | live | no |
+| base | `0x8ab30cfee8410a51a5da4e656c2d35b1e184a27e` | PriceOracleMiddlewareManager-5 | impl | live | no |
+| base | `0x8acf503d1f2b2267074483dea37404917218005d` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x8b1ed8a4ed60ed4e311140a658cad9e85c3def33` | WrappedPlasmaVault | impl | inactive | no |
+| base | `0x8b41e7b78876bb09e9f11c9edac6c1285276f1b3` | AccessManagerFactory-3 | impl | live | no |
 | base | `0x8b9d1750dd6877e6fa2f4107ecaa8b97a4bfdb86` | BaseUpgradeableStrategyStorage-5 | impl | live | no |
 | base | `0x8cccd2467add6053c8273042ac742eb438444389` | MTokenInterface | impl | live | no |
 | base | `0x8cda67f188a341bcc71ed126777a9fad7bb05469` | CLWrapper | impl | live | no |
@@ -387,17 +500,24 @@
 | base | `0x8d3a43fb9c56c53e40665d5cdf72ac24e21c93fc` | CLVault | impl | live | no |
 | base | `0x8d46878b0d28a38263ac8b96f81477773460d8cf` | BaseUpgradeableStrategyStorage-86 | impl | live | no |
 | base | `0x8d85fd0e10e9ae713205fb2ceb523214ca86c861` | CLWrapper | impl | live | no |
+| base | `0x8de4b34d78b8431d6e9479a99cb21bcc5c50b792` | Storage-4 | impl | live | no |
 | base | `0x8e0e841aeb7a7f3929a7e19e8b4d90a64da57f9c` | BaseUpgradeableStrategyStorage-3 | impl | live | no |
+| base | `0x8e95e58677759d1328ad36f316a3796a693c783e` | PlasmaVault-10 | impl | live | no |
 | base | `0x8eef2ca744faa2e25f90f9a20ab32d3d327a7360` | Erc4626BalanceFuse | impl | inactive | no |
-| base | `0x8f0d40c95047c6b09f08905c110d002e65e96c7d` | PotPool-2 | impl | live | no |
+| base | `0x8f04cfea381465785d65e1f69b17dc4bcfdca5cc` | ContextManager | impl | live | no |
+| base | `0x8f0d40c95047c6b09f08905c110d002e65e96c7d` | PotPool-3 | impl | live | no |
 | base | `0x8f8c4b57c32483c5743a4318bfb74515c7e0fad6` | BaseUpgradeableStrategyStorage-28 | impl | live | no |
 | base | `0x8fe406ea145497dc3d87abe251bb57f3d30a427d` | BaseUpgradeableStrategyStorage-25 | impl | live | no |
 | base | `0x8fff1a092f187f7b137ce513281143f3219d3352` | CLVault | proxy | live | no |
+| base | `0x90188fed247002e81dac2bc74f547c5e4f703c5d` | VaultProxy-13 | impl | live | no |
 | base | `0x903c1abb5a303cf717196e8d12ce87f46de56719` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0x906496f0d4c733275f892b1a6fc92ed56639b379` | EulerV2BorrowFuse-3 | impl | inactive | no |
 | base | `0x906943775855e8e66cd19812a35b1e8076d05303` | BaseUpgradeableStrategyStorage-28 | impl | live | no |
 | base | `0x918911970e944910908c66d4ee8c233a8a442f51` | ERC4626Dex | impl | inactive | no |
 | base | `0x919f3a8f1d41ba87bf2e971678c133b3a79e7f41` | BaseUpgradeableStrategyStorage-87 | impl | live | no |
 | base | `0x91ad48ae378d70586703cd2e525e96563039825e` | AerodromeGaugeClaimFuse | impl | inactive | no |
+| base | `0x91cffcc1fe6b9da316e8848e141badb8cd41ba00` | VaultProxy-14 | impl | live | no |
+| base | `0x928c217e669d9f0f3fc08fb8ac322133a12e1f43` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0x929c83d67dedace19da4a0ab52ae223a707bd18c` | BaseUpgradeableStrategyStorage-88 | impl | live | no |
 | base | `0x92b99cab171bf5eb85f6bd040027b7ba7a321fb9` | BaseUpgradeableStrategyStorage-89 | impl | live | no |
 | base | `0x9322c3879457e6d13331b76947b8f8e47a821af5` | BaseUpgradeabilityProxy | proxy | live | no |
@@ -406,64 +526,105 @@
 | base | `0x93644f401881fca068694b2ef6ad2a602b0134a2` | PlasmaVault-2 | impl | live | no |
 | base | `0x9365a8c1bef5c5b0f4423ca18b64f0b060786646` | CLVault-5 | impl | live | no |
 | base | `0x93b0e1e9c0ee29010658933ee8665639f2e4a709` | BaseUpgradeableStrategyCLStorage | impl | live | no |
+| base | `0x93f4c0e8d719895a9212dc3af5efb357d08cf5c9` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0x9493946bf9ec7936723c8456863e1d986a0591d3` | BaseUpgradeableStrategyStorage-90 | impl | live | no |
+| base | `0x9493f32e3d94f9c5fd7d953259197fb285aa49ac` | VaultProxy-15 | impl | live | no |
 | base | `0x949a4a54deecbac1e239fe4372a70d9fc8192a51` | BaseUpgradeableStrategyStorage-15 | impl | live | no |
-| base | `0x94eb7cd3358c99c83fe55e7824d548730010cae8` | ERC1967Proxy-7 | impl | inactive | no |
+| base | `0x94d2de617cf5805233cc4367a96deac53073e695` | PlasmaVault-18 | impl | live | no |
+| base | `0x94eb7cd3358c99c83fe55e7824d548730010cae8` | ERC1967Proxy-3 | impl | inactive | no |
 | base | `0x94fec0a3cff7399a2a693857cebe77aed22ba408` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0x954339759d876e06df67e0814158e15012442310` | SwapExecutorEth | impl | inactive | no |
 | base | `0x95c6cc541a3280d6a307c88e55a8487c796e1c16` | BaseUpgradeableStrategyStorage-91 | impl | live | no |
+| base | `0x95cfd16bc1b37c8cc2efcb523393e3e0660696d2` | AccessManagerFactory-4 | impl | live | no |
 | base | `0x9688b351d41188633800b637ef84511465876b5b` | PlasmaVault-2 | impl | live | no |
+| base | `0x96901b9a10f2a7f856a97ff148c4cf3a0077d1ab` | EulerV2SupplyFuse-4 | impl | inactive | no |
+| base | `0x978337f42e07eac6c6c28418fe3bb744b137b605` | WithdrawManagerFactory-2 | impl | live | no |
+| base | `0x9792eadd39a6068198f08d6d868c363cd3141ce9` | ContextManager-3 | impl | live | no |
 | base | `0x986fd02d727fd489a32e9786d4cd8ab29bad5bd0` | CLWrapper | impl | live | no |
+| base | `0x98e03c6ed7374f1e58ff022f1d2d8239526e13f9` | Storage-5 | impl | live | no |
 | base | `0x98f36e82aac675d53a780e6cb46406548e7df5f8` | UniversalTokenSwapperFuse | impl | inactive | no |
+| base | `0x99b171c59e4ed4257deae1f472cfa7e02b85d93f` | StrategyProxy-3 | impl | live | no |
 | base | `0x9a4184df85898caa4a34590e4d65ff699ce04b4c` | BaseUpgradeableStrategyStorage-92 | impl | live | no |
 | base | `0x9acd578d13194d4df5e7bc30007dc09ede230726` | BaseUpgradeableStrategyStorage-93 | impl | live | no |
-| base | `0x9ccd7cf2ad402e8f807c714647aeb9e29fdcd791` | Storage-3 | impl | live | no |
+| base | `0x9c0f3393e3c0df870f7b1878bc9a5d313665a891` | RegularVaultFactory-2 | impl | live | no |
+| base | `0x9ccd7cf2ad402e8f807c714647aeb9e29fdcd791` | Storage-6 | impl | live | no |
 | base | `0x9d0376ce38044dfb46fb3ee0dbf17ea9dd788d24` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0x9d73c84cd18bde216e001a01bd237286baae8d9b` | CLVault | impl | live | no |
+| base | `0x9d7cd23f298816a3390782210dc5ccb43d1d8cec` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0x9d8265676080489d68482b106620b0b7ed463ea0` | RewardForwarder | impl | live | no |
 | base | `0x9ef42570e8c17a4b838f974aef379803129a4f90` | WithdrawManager | impl | live | no |
 | base | `0x9f02ac045e163625c1c59dbd6488867c6524e5f4` | Moonwell2AssetFoldStrategy-2 | impl | live | no |
 | base | `0x9f5a4e32a8249ccf02f6ae0c4e63088008243d8b` | BaseUpgradeableStrategyStorage-13 | impl | live | no |
+| base | `0xa0200eeed8d90aa01de741daefab5f86c09d5785` | VaultProxy-7 | proxy | live | yes |
 | base | `0xa0417653a69503d7abd838cc601172720893f9f1` | MidasSupplyFuse | impl | inactive | no |
+| base | `0xa121d23cecd8050082d13a1fc062598c5449dbe9` | PlasmaVault-12 | impl | live | no |
+| base | `0xa1e14262e6613fa969ea94dcf008010db954e5d1` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xa24d51a7ef5e6e87255abecad07b073388d69218` | BaseUpgradeableStrategyStorage-94 | impl | live | no |
+| base | `0xa2600fe963457a7ab738101aec531799a0c3a4bc` | PlasmaVault-17 | impl | live | no |
 | base | `0xa2c8a60b0ac47e5b61250a7e1b17894a2948cffc` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xa2faa0afe3321f820e8c1a9562288aff9d4cb95d` | CLWrapper | impl | live | no |
 | base | `0xa47ba8fe6110ac337c3f71be4aff802538af0468` | RequestFeeRefundFuse | impl | live | no |
 | base | `0xa4989a9225f6dd130e8ce4a4b5ef7902c8c389dc` | AmmPoolsLensBaseV1-2 | impl | inactive | no |
+| base | `0xa4e7b6e83b8135da25ee2650472d6a8d459d1fe8` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xa515a9a05b4f0011711cc6e3d25e8340697d0cbd` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0xa51787e262e53220bbeef297613ee28a9c011937` | PlasmaVault-38 | proxy | live | no |
 | base | `0xa565a0225cd16370c7959c9fcb0025446e937504` | CLVault-2 | impl | live | no |
 | base | `0xa5aa84a71999e00864bcd672029f6b53f84224a2` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
+| base | `0xa5fffbf2c63e098f46de2f3032998251789d771b` | PriceOracleMiddlewareManager-6 | impl | live | no |
 | base | `0xa667bc2607bb7a8816cb2231aca71070176573ab` | BaseUpgradeableStrategyStorage-95 | impl | live | no |
 | base | `0xa68b486667978e283636e2b1f37bf5e4eb3fe167` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
+| base | `0xa6b2d83a83de1c21324cf17909085d0d20eaa99e` | PowerToken-2 | impl | inactive | no |
+| base | `0xa74899047da5f0ee393444dc4be6046c7da0d8e9` | ContextManager-2 | impl | live | no |
+| base | `0xa8799d46a00ad19b2ebd0d0d18792b4baf26c0cc` | ERC1967Proxy-3 | proxy | inactive | no |
 | base | `0xa8f0c02b1f91b23f2fc688de3224aef1980b4d25` | BaseUpgradeableStrategyStorage-29 | impl | live | no |
+| base | `0xa912d926e7c7ac44be2280ba4247df1fb4ef02ae` | VaultProxy-7 | proxy | live | yes |
 | base | `0xa92ff8a137a5771880948d8326cd2998eb739e20` | EulerLendStrategyMainnet_USR_AR | impl | live | no |
 | base | `0xa959454ed4e72fc23e2c406f17509aed98ae75ee` | ExchangeRateValidatorPreHook-2 | impl | inactive | no |
+| base | `0xa97daeea8bce646090ebccff7c198bc2cde809ba` | PlasmaVault-11 | impl | live | no |
 | base | `0xa9c589936bb9801143f3f31b5c1fdc74d7d3978a` | BaseUpgradeableStrategyStorage-16 | impl | live | no |
+| base | `0xaa7f40f31ca2b9413405065abaa346a5e4fa2f6e` | ContextManagerFactory | impl | live | no |
 | base | `0xab128139cbcedab336cafd69163fd78baaeb6dfa` | CLVault | impl | live | no |
+| base | `0xac0655f0c6b092513be56a890110dc19858e4edc` | ERC1967Proxy | proxy | inactive | no |
 | base | `0xac0ad21df4f978b419f41cab8f1eda0141960c90` | PlasmaVaultFactory | impl | live | no |
 | base | `0xacddaf331766291461e48125425cc95f67d5957c` | PlasmaVault | impl | live | no |
 | base | `0xad556498b0e3d34a06ff9066d7124da95beda8ea` | MoonwellFoldStrategyMainnet_DAI | impl | live | no |
+| base | `0xad5caf5c1d338d7881f5163ad8085a5f21408854` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0xad7ac657d4a9fc5aab65520fbe2f61cf3cca45b9` | PlasmaVault-18 | impl | live | no |
 | base | `0xaed326f23f4d93d8e548840eae5f7da463c2a536` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0xaf46fc30b90c7a31ac40f2f60c39e8eea82b3a3f` | PlasmaVault-39 | impl | live | no |
+| base | `0xafd4ebc65483ac6222beb2608113d95730b3d64b` | FusionFactory-10 | impl | live | no |
 | base | `0xaff9bbbea884ef4db30e4db6a3f68d50e44e1188` | AreodromeSlipstreamBalanceFuse | impl | inactive | no |
+| base | `0xb002337c59a4133e328d91ed82c5012472952c6f` | FluidProofClaimFuse-2 | impl | inactive | no |
 | base | `0xb01cdde1e41d27d8833c5b4640dbb5802b10f071` | BaseUpgradeableStrategyCLStorage-2 | impl | live | no |
+| base | `0xb02d87eb201f56ba6afa24c0969982bc4c4e8599` | PlasmaVault-5 | proxy | live | no |
 | base | `0xb02e3d3c9e9d84d860eeb195a8b88682b3559b72` | BaseUpgradeableStrategyStorage-96 | impl | live | no |
 | base | `0xb054193e67e62d566272e10e87b1948e170b2547` | BaseUpgradeableStrategyStorage-97 | impl | live | no |
+| base | `0xb0767c4b439b2d1e57b23480ee0db22a5e6bdea8` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0xb187050408857fc2a57be0a5618e39b331425e77` | Erc4626SupplyFuse-3 | impl | inactive | no |
+| base | `0xb1951faac31f58830c514561c17b640355529ec0` | MidasBalanceFuse | impl | inactive | no |
 | base | `0xb1c12a239a72ee518a065da79e62dae97cb21a5b` | MerklClaimWrapperFuse | impl | inactive | no |
 | base | `0xb21ecb5fb777daaab878fb863482934df4fa77fe` | BaseUpgradeableStrategyStorage-7 | impl | live | no |
 | base | `0xb2713d276a771a8805e25ae539cef29585def021` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xb2cde8ccc646708715cc405c2a28b7f98bec1030` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xb30ead2faccd5dff5921f16fc470f436ad9ceabe` | BaseUpgradeableStrategyStorage-3 | proxy | live | no |
+| base | `0xb355c889fc2b7e593730e396416e7ab75448d256` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0xb38145e7e4f8e20f41283bd061c93c437533966d` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xb3aa3dd4bc30a520b60506b431d8c3064dcefc01` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0xb40095ddff108339b82a9f32c3d6a4faab3a2e32` | ContextManagerFactory-3 | impl | live | no |
 | base | `0xb42c209e68d6a20b70ec71915a02c4b4e1f2aa90` | CLVault | proxy | live | no |
 | base | `0xb4dfb199325d4658ce1ddd585a64f4d9b300f1c0` | BaseUpgradeableStrategyCLStorage | impl | live | no |
+| base | `0xb56aea3a2a403c1472717e118d39ac3b11055a48` | ContextManager | impl | live | no |
 | base | `0xb59e9c7ab9b6724c0956c7158aff318829dc4ad7` | PlasmaVault | impl | live | no |
 | base | `0xb5afa80d8373ac800a68f8fa8c2c0c8971b8edf3` | BaseUpgradeableStrategyStorage-98 | impl | live | no |
 | base | `0xb60a10960714a60730b9b5ef1f25878cab399280` | BaseUpgradeableStrategyStorage-99 | impl | live | no |
 | base | `0xb64ef73a216a0d72141ad541dbbe05d732209d87` | BaseUpgradeableStrategyStorage-100 | impl | live | no |
 | base | `0xb6a36f64aa10ffc8b6220c2f47c06670c18bac5d` | AreodromeSlipstreamNewPositionFuse | impl | inactive | no |
 | base | `0xb6ca12645b511f691c433c673d3ea5c68bc410e3` | WithdrawManager | impl | live | no |
+| base | `0xb6e7b5a43000b737fff36c5fd8eaa76a0be7e302` | PlasmaVault-25 | impl | live | no |
 | base | `0xb7c0b2c7edc2454d443cbde2c274d73a574770f0` | StrategyProxy-3 | impl | live | no |
+| base | `0xb88aa4ef11876dd5627d4218b1baf1bc84a63a49` | WithdrawManagerFactory-2 | impl | live | no |
 | base | `0xb90835c4b7b11e49264f7403e07516e9dc789a03` | AeroCLDex | impl | inactive | no |
+| base | `0xb995c4ea64ed9da2f8ecc9eb6707b6c4dda2293e` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xb9c7a519ba2d6213f9e77f334b6ad8d8a2749cb9` | AmmCloseSwapLensBaseV1 | impl | inactive | no |
 | base | `0xba861c9b65683616d5630f9d6d5d9846c05daf44` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xbacff45da5adb4312c6a9efe07773090bd3bf944` | BaseUpgradeableStrategyStorage-18 | impl | live | no |
@@ -473,35 +634,46 @@
 | base | `0xbca7bd2e81f69444030771bfb4a19a60e1c1ae24` | PlasmaVault-2 | impl | live | no |
 | base | `0xbcaa84a59a0480a5c8b9010cb0d4147a756a9d38` | CLVault-2 | impl | live | no |
 | base | `0xbd044aa0afc93012d26276da86fdf7a9303a94c4` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0xbd2dd55083aeb351358856f63b529a60a6c6d125` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xbd35631a8083bde1c48c55eae88198c5c3789901` | StrategyProxy-3 | impl | live | no |
 | base | `0xbd74cef22ee3bb4e23aeee16ef170caa1723d269` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xbe03c1e0f8dd1b82e7ebc61e8be339de210f6ccd` | BaseUpgradeableStrategyStorage | impl | live | no |
+| base | `0xbe8ab5217f4f251e4a667650fc34a63035c231a8` | Erc4626SupplyFuse-3 | impl | inactive | no |
 | base | `0xbec0d617638c09a13378f797b6a73a6bc08f7443` | PlasmaVault | impl | live | no |
 | base | `0xbf660037529ca2c460288fb5012e04c3dc3aa7ee` | BaseUpgradeableStrategyStorage-10 | impl | live | no |
+| base | `0xbf73aa954c113b3958b97416df972aeac23a4206` | ContextManager | impl | live | no |
 | base | `0xbf94d842886704bf72e2303e403899db8ab37399` | SeamlessFoldStrategyMainnet_cbETH | impl | live | no |
 | base | `0xc07e6ee49d8448910186ff35e1aebbb94dcccecc` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xc081477e9933bf44b25607018f2573fdca496e19` | OdosSwapperFuse-2 | impl | inactive | no |
 | base | `0xc08f9ecfd9b43e3ff8284bc4ffca71f375b36055` | BaseUpgradeableStrategyStorage-6 | proxy | live | no |
+| base | `0xc0934de072b5fd902bd049077f56255d82e98de7` | ContextManager | impl | live | no |
 | base | `0xc0a80d1ffacc034bce6adb7793a8efb1010240cb` | BaseUpgradeableStrategyStorage-10 | impl | live | no |
+| base | `0xc0ce53f755feae93fd219b2cd0f58a4fd0d535dd` | VaultProxy-16 | impl | live | no |
 | base | `0xc0dddb5f725fcf32854d371a3c5e8bff24b0d5dc` | PlasmaVault-2 | impl | live | no |
 | base | `0xc1e7e775c4de42d0814d5a610e3e2812b7ed5bcc` | BaseUpgradeableStrategyStorage-101 | impl | live | no |
 | base | `0xc202d851841e634d7ba0527ac783d8b9d049ea29` | AerodromeVolatileStrategyMainnet_fBOMB_ETH | impl | live | no |
 | base | `0xc23f5291e2437e517642ab031d39704a3d597901` | BaseUpgradeableStrategyStorage-30 | impl | live | no |
 | base | `0xc27a66ec318bd0be69c048d734eee9bbd773f6ed` | ArcadiaLendStrategyMainnet_ETH | impl | live | no |
+| base | `0xc2f8ed10db79aae0b24598b31f4503e25dc62ea6` | ERC1967Proxy | proxy | inactive | no |
 | base | `0xc2fead0a78716e99b80ef7d27e4d8f719800ba27` | IporProtocolRouterAbstract | impl | inactive | no |
 | base | `0xc337c6e2a8da1488b5e3223699d31bdf489fbb24` | BaseUpgradeableStrategyStorage-102 | impl | live | no |
 | base | `0xc3577de35f52ba3410af57f066b5f99c1ede47f4` | AmmPoolsServiceBaseV1 | impl | inactive | no |
 | base | `0xc36623a7ecec074c850fb2f650eab9af24920d4f` | BaseUpgradeableStrategyStorage-23 | impl | live | no |
+| base | `0xc3b44addfae29fd170196c324ba0c233c870c77a` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0xc4198ac881c15515693477c1979b4d9c9ea02b77` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xc41cee8409341187c5d5e9107df630d6cbcb7b8e` | SwapExecutorEth-2 | impl | inactive | no |
 | base | `0xc43c21e25efe3771959064b6de90d4a41e3604e5` | BaseUpgradeableStrategyStorage-12 | impl | live | no |
 | base | `0xc4451ee0861535d96cba09ca0fed2f39f953824e` | BaseUpgradeableStrategyStorage-103 | impl | live | no |
+| base | `0xc4c00d8b323f37527eeda27c87412378be9f68ec` | PlasmaVault-9 | proxy | live | no |
+| base | `0xc4ccefe822b78898c81aef6826d2c589bc50cd61` | PlasmaVault-16 | impl | live | no |
 | base | `0xc57e342f9032d188526b7d292d32655c8b84036d` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xc5d840b15b8dce3f38989f4be9f42a9308ed8fce` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xc610d580a2eba150b7aaba43f744d51fd9cd9fe4` | MoonwellFoldStrategyV2Mainnet_cbBTC | impl | live | no |
+| base | `0xc69171ab8722e511bc41b68bc7463bd89eff476b` | GlobalIncentivesExecutor-2 | impl | live | no |
 | base | `0xc6b0b993d017fc6b62d25745b54f1646e27a81fa` | PlasmaVault-2 | impl | live | no |
 | base | `0xc6f50d0c80b2270880e2af2a0085d023bbf57f58` | BaseUpgradeableStrategyCLStorage | impl | live | no |
 | base | `0xc7622c7a1bba16a8248bf7683a11f2be023aceb5` | BaseUpgradeableStrategyCLStorage | proxy | live | no |
+| base | `0xc777031d50f632083be7080e51e390709062263e` | VaultProxy-7 | proxy | live | yes |
 | base | `0xc84c5213133451a46709b0230abe0825592c2022` | FuseWhitelist | impl | inactive | no |
 | base | `0xc85143305ba028437f07c8e3cc4f2a2d68b98eda` | BaseUpgradeableStrategyStorage-104 | impl | live | no |
 | base | `0xc8a552bf7279a932b9fca8f527ef292083c5b87f` | ZeroBalanceFuse | impl | inactive | no |
@@ -509,67 +681,102 @@
 | base | `0xc8fda8cc055907d5018194ce8da2dfeabf7923d1` | BaseUpgradeableStrategyStorage-31 | impl | live | no |
 | base | `0xc92115957e6b6efa883554a002838f25123680f4` | BaseUpgradeableStrategyStorage-10 | impl | live | no |
 | base | `0xc922d5d095bbdb1c3c4926f9274404baad94d104` | BaseUpgradeableStrategyStorage-14 | impl | live | no |
+| base | `0xc929259a052f091339d4533db9844b900c56b588` | VeloraSwapperFuse-2 | impl | inactive | no |
 | base | `0xca455084efb8f6a084f5a0dde72699a3e4699464` | BaseUpgradeableStrategyStorage-3 | impl | live | no |
+| base | `0xcabc40118e83236c751d9a3089e9b5cf53ee4414` | BurnRequestFeeFuse-4 | impl | inactive | no |
 | base | `0xcad543add5857097802b51adc96a0f3a3108828c` | BaseUpgradeableStrategyStorage-105 | impl | live | no |
+| base | `0xcb648a122e662988bd16f1f53aef59899dbb58e1` | FusionFactory-11 | impl | live | no |
 | base | `0xcb8b6828121480479734f73fa9dbd9f411f594e0` | PlasmaVault | impl | live | no |
 | base | `0xcbd6b2e0c0c7ea4662f6e0d64d531f714c1d1321` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xcc00dd51b3ae372a5450031c9261052da9521fc3` | CLVault | proxy | live | no |
 | base | `0xcc2f9bbf61da0bd5b281d71e95f3fcd5a7ecbc7d` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xcc7d3d98f64763f789852cbf66e8c97eea2cd26b` | BaseUpgradeableStrategyStorage-4 | impl | live | no |
+| base | `0xccc7316475c8ba10a9f4c1393a77a31c73435e41` | ContextManager | impl | live | no |
+| base | `0xccf76dcceb202786417dc996a077e3666fb2f236` | AccessManagerFactory-5 | impl | live | no |
 | base | `0xcd045d2010e3624319a1f510b36cb2cc71c98033` | BaseUpgradeableStrategyStorage-32 | impl | live | no |
-| base | `0xcd719739c3ece8b576d649be97195ad03e676a2c` | Storage-4 | impl | live | no |
+| base | `0xcd719739c3ece8b576d649be97195ad03e676a2c` | Storage-7 | impl | live | no |
+| base | `0xce0c20b46572ff810978390e99cae79565d0f15f` | ContextManager-3 | impl | live | no |
 | base | `0xce470ca5f1cb39d41d8c30d2aa08a0846bac0fe9` | BaseUpgradeableStrategyStorage-106 | impl | live | no |
 | base | `0xce5833251fcc922acf0e21c50d9a2bccb1202704` | StrategyProxy-3 | proxy | live | no |
 | base | `0xce6568c80d43f7a2c1b33c00abde2f4fc7d81682` | BaseUpgradeableStrategyStorage-32 | impl | live | no |
 | base | `0xcf1e01e973a04c37c6da37ad6d5d824a51f6d878` | ERC1967Proxy | impl | inactive | no |
+| base | `0xcf2fc50b62c0d263abc0439cab2a0b76066a78d4` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xcf38dee0570c5640ab08a0337cb906fb9f78e42c` | FuseWhitelist | impl | inactive | no |
+| base | `0xcf4267c130c070bd4a188a289a839e08fac139b8` | ContextManager | impl | live | no |
+| base | `0xcf9bb53460f1963b90409fd155f49c5750a45b7d` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xcfd2f32e6d533653ced5ba7e5fe1a76c3c626757` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0xd00e821c550ce92ebd4a70becb02657da7a5c562` | PlasmaVault-13 | proxy | live | no |
 | base | `0xd0301159076d676dbca17099e076fed374e11d51` | WithdrawManager | impl | live | no |
 | base | `0xd058ceac32c7dc18d747dd06f33cd307ad184925` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xd08a2917653d4e460893203471f0000826fb4034` | OptimismMintableERC20 | impl | live | no |
 | base | `0xd1166da83948d7f4d521f7242aec8fae8c228bc3` | BaseUpgradeableStrategyStorage-107 | impl | live | no |
+| base | `0xd14a7db76bfbdca43a5e985b8255e7ae0633532c` | ContextManager-2 | impl | live | no |
 | base | `0xd163b519c3509eb72f4c1bb0ae12b3693eb368b7` | BaseUpgradeableStrategyStorage-15 | impl | live | no |
 | base | `0xd16e4bef78549af6f433f0882e4e3fd98588576b` | CLVault-2 | impl | live | no |
 | base | `0xd19e091f1103c9734e310219450ebd9406fc78eb` | ERC1967Proxy-9 | impl | inactive | no |
 | base | `0xd24ce2d3528f51f3d15bea320a6c95ffdce93295` | BaseUpgradeableStrategyStorage-108 | impl | live | no |
 | base | `0xd251865319c905c1913f59bb5bb1af2322f1c5bd` | BaseUpgradeabilityProxy | proxy | live | no |
+| base | `0xd2d3a04ee69dfea8df5e082a7657351af2a384bd` | ContextManagerFactory | impl | live | no |
 | base | `0xd34eeacef4b33ef53ec21f561ed8b0399f0269cd` | FuseWhitelist | impl | inactive | no |
 | base | `0xd3626cf9dc33bb6bdecc6cc1e2b6a6a69b561faf` | SpreadBaseV1-3 | impl | inactive | no |
 | base | `0xd3c0d2506fa9c2020dd6880857eb4ae46ee32fb1` | BaseUpgradeableStrategyStorage-3 | proxy | live | no |
 | base | `0xd4338927577215e91435d34f2a7d6d3c680cfd78` | CLVault | proxy | live | no |
 | base | `0xd4ba641e05a3d6c24de97251d1f1097bc8063edf` | BaseUpgradeableStrategyStorage-12 | impl | live | no |
+| base | `0xd52962deaf7252ecbf119dcb18d9e39d42ae5f88` | VaultProxy-17 | impl | live | no |
+| base | `0xd5629b35153cce6eb860b3db671e6241866d083b` | ContextManager | impl | live | no |
+| base | `0xd61498ff21c11761b976e8a25d919decb6b42bc2` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xd6fcceb90198a79981e91a7378d2abc3fa4fd0a8` | BaseUpgradeableStrategyStorage-109 | impl | live | no |
+| base | `0xd7412a93db3d39aa7ab9c30c471f069a3f059ad5` | PlasmaVault-12 | proxy | live | no |
 | base | `0xd759827d167a33110fff0c5b041fdd993e299ca8` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0xd76b9c813e5a17879f01d50cf5c90a2ed17a8dbb` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xd7b15c06ce4cc807ea0510b862407bb680c95344` | AreodromeSlipstreamGaugeClaimFuse | impl | inactive | no |
 | base | `0xd8a23de047f62fdabe6fb621bcf4330ad8495b92` | BaseUpgradeableStrategyStorage-10 | impl | live | no |
 | base | `0xd9256785f93b459538cffb8a98116f659f19f86a` | BaseUpgradeableStrategyCLStorage-2 | proxy | live | no |
 | base | `0xd9b73af0b29cbaf88f01384ea1fb5adcb608bed0` | ERC1967Proxy | proxy | inactive | no |
+| base | `0xda0711a0b1b1dd289c4d7c08704dd1e4ccea80c1` | Erc4626SupplyFuse-3 | impl | inactive | no |
+| base | `0xda101a7cb92fa81b5d5e2ea3d76048c4675cec0d` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xda4fb2300c9d80f14ff815193ee0f0810b79e3ce` | BaseUpgradeableStrategyStorage-9 | proxy | live | no |
+| base | `0xdab31950ddcc814c49e6bbd5153dd2062e44f368` | PlasmaVault-18 | impl | live | no |
+| base | `0xdb6b7c05e2ce7a1f0f0ee8eed788e5d52c909def` | FlowsService-2 | impl | inactive | no |
 | base | `0xdbbe09c09fce1b841fe46ac6b06e2a4f8128c838` | AerodromeBalanceFuse | impl | inactive | no |
+| base | `0xdc1491e90d77cb7513c4be3827dfa0c9e859271b` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xdc7ddb6b40d28f0a18647873b723cb7a6c80da9a` | ExtraFiLendStrategyMainnet_USDC_2 | impl | live | no |
+| base | `0xdcfc262ea3ea1bba4a898f793eaa74668d255cd3` | FusionFactory-12 | impl | live | no |
 | base | `0xdd53688af72f677fd999bc1564a62a98abccab45` | PlasmaVault-2 | impl | live | no |
 | base | `0xddcf70751a7983e3e798dbf7df8e1c107ef6568b` | MoonwellFoldStrategyV2Mainnet_cbXRP | impl | live | no |
+| base | `0xddd2ea42b8bccada2dded9db3170ab2f533d1b73` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xde335c41089931e0aa634d5154cccb250841c7c7` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xdf6d4f865cc29dd250d73e4422b9efb7715ee3ba` | WithdrawManager | impl | live | no |
 | base | `0xdf884ccef3f18b107e0b9423aae3b605461bb54d` | AmmOpenSwapServiceBaseV1 | impl | inactive | no |
+| base | `0xdfe1af9eb54ac362b7d698d34d560acdc5b96a20` | ContextManager | impl | live | no |
 | base | `0xe017c7326d371828a6877727e46a203e915af0fd` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xe06b10720ab0402cdccbc809de91ea5f7712e662` | BaseUpgradeableStrategyStorage-110 | impl | live | no |
+| base | `0xe0c43958a9a49a3290de54b4eff72ef7b324c2ee` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xe0e3647e160bf14cacbcb3f69fd26e65aa0b4530` | BaseUpgradeableStrategyStorage | impl | live | no |
+| base | `0xe14a69438daa58ca2dbf70b74e10626aa39c616b` | PlasmaVaultRequestSharesFuse-2 | impl | live | no |
 | base | `0xe1725cc2af00941db5847a59b4aa8bf47ad35bdf` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xe1abf1a5df1c69f395916460f26bfa2fe381a9e4` | PlasmaVault | impl | live | no |
+| base | `0xe1cce1485f5a22d64b89d8e0ba2190ca4e8f1ea2` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0xe204685a65cfb40653537bb9351b050fa27b85ce` | BaseUpgradeableStrategyStorage-111 | impl | live | no |
 | base | `0xe20c7e2039a9fab41d8f2678d9cde0fba1bf42e6` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xe2162c0e8c957705e581ee0bce066d230a255e35` | BaseUpgradeableStrategyStorage-30 | impl | live | no |
 | base | `0xe24b9b3371b9dc53e187211706eba7c63ed75761` | LiquidityMiningInternal | impl | inactive | no |
 | base | `0xe259305fb9e42597ddcaede053281ae0b483bc3c` | BaseUpgradeableStrategyStorage-112 | impl | live | no |
+| base | `0xe2996fe2d49b41e37b5c01df32cdfc125329e5d0` | PlasmaVault-3 | impl | live | no |
 | base | `0xe2d3f10e0dd48453c57065c5384195dfaf76ac04` | BaseUpgradeableStrategyStorage-113 | impl | live | no |
 | base | `0xe30208aa8de3af86d656a1eb4783d3ba71a0e2bc` | Moonwell2AssetFoldStrategy | impl | live | no |
+| base | `0xe33f6a15d382ceabb8f351320bf63ee2860e8203` | BalanceFusesReader-2 | impl | inactive | no |
 | base | `0xe362619deafee8b717a0efbfcbfaccdc51889fc9` | BaseUpgradeableStrategyStorage-114 | impl | live | no |
+| base | `0xe37d4448cc6bcfc934d80220d076c874adab1cca` | ConfigureInstantWithdrawalFuse | impl | inactive | no |
 | base | `0xe38388200f5559475fad9d8c9a38da1f42e972f6` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xe3dce2393d35ab86acf5821ce6554b51d0738f80` | CLWrapper | impl | live | no |
 | base | `0xe4a973828ee730a3fdb3a5d470263e54f97d9adf` | ZeroBalanceFuse | impl | inactive | no |
+| base | `0xe5beacb6d013314e3601f45b3ed226ffa5f138e2` | VaultProxy-7 | proxy | live | yes |
 | base | `0xe5decdcdaf136eba8d8e2f3be255af79f2e92e0e` | PlasmaVault | impl | live | no |
+| base | `0xe727feb09515c5eb86bd5f5eba7f3228252a2e30` | VaultProxy-18 | impl | live | no |
 | base | `0xe7798f023fc62146e8aa1b36da45fb70855a77ea` | OptimismMintableERC20 | impl | live | no |
+| base | `0xe78285a51f51916f2311b7017db036d8351f3cf9` | VaultProxy-6 | proxy | live | no |
+| base | `0xe83697362d91af8f505e3e693f2847a30cd81a8e` | MidasRequestSupplyFuse-3 | impl | inactive | no |
 | base | `0xe8b2b03f5f41215bcffab3ba3dfebc2acebfe507` | BaseUpgradeableStrategyStorage-115 | impl | live | no |
 | base | `0xe8e14d1ecb323e264ec905341b434e0647103240` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xe90ce666d4fadda6c5e16ef9500211fa6153a136` | PlasmaVault-2 | impl | live | no |
@@ -578,17 +785,27 @@
 | base | `0xe9331948766593ee9cebbb426fae317b44daf0f2` | LiquidityMiningInternal | proxy | inactive | no |
 | base | `0xe9a79539b31492f5a807532754b5fc520bf32eb7` | BaseUpgradeableStrategyStorage-29 | impl | live | no |
 | base | `0xea166bcf8be7cd790eeb0f72a3b5327f436d5f66` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0xea1b36c9c655470cbb6e171b9d025783b079da0e` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xea67e2a0423e461d8992b4e0f96e49051e47e746` | AmmCloseSwapServiceWstEthBaseV2 | impl | inactive | no |
 | base | `0xea73d5c5496e5d310fb6f2e415a0505a6c90a01e` | BaseUpgradeableStrategyStorage-7 | proxy | live | no |
+| base | `0xeade917a252a9b0bcfbdd3a37ae9955877feea8b` | ERC1967Proxy-14 | impl | inactive | no |
 | base | `0xeb65413efd6b5382ec216e2c1627374c55a80623` | BaseUpgradeableStrategyStorage-21 | impl | live | no |
+| base | `0xebcf47837ad71fc98d5b608356eac1ff38fa67db` | ERC4626ZapInWithNativeToken | impl | inactive | no |
 | base | `0xebf1626b29d2e83f669fd0d918d75e50028e5781` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xec073a410641c920d6453cbbc388272d58c42f78` | PlasmaVault-2 | impl | live | no |
 | base | `0xec0c0007ee5872268997a92c07aaec5ff5eb6a3c` | CLVault | proxy | live | no |
 | base | `0xec433f7c21db2b201a60954fcf0dbe958f18c387` | BaseUpgradeableStrategyStorage-3 | impl | live | no |
+| base | `0xec5b8b2243fa7317b6368d9cd976d88ffe1800e7` | BaseUpgradeabilityProxy | impl | live | no |
 | base | `0xec9aa9eeccc4555807c4a1a4ae12b7e8b02f207c` | BaseUpgradeableStrategyStorage-2 | impl | live | no |
+| base | `0xecd2bf892e2ee99cf2cbbc81f6877132e25e34db` | ReferralPlasmaVault | impl | inactive | no |
 | base | `0xecdae253c6ec3268d99ab89cf783904f812edffd` | BaseUpgradeableStrategyStorage-8 | impl | live | no |
-| base | `0xed60552cde8038f2fa83a7cef2459036c7220495` | PlasmaVault-5 | impl | live | no |
+| base | `0xed5d22f133bb20dee41629b84348f60925e8bde0` | PlasmaVault-40 | impl | live | no |
+| base | `0xed5ec535e6e6a3051105a8ea2e8bd178951a9eac` | Erc4626SupplyFuse-3 | impl | inactive | no |
+| base | `0xed60552cde8038f2fa83a7cef2459036c7220495` | PlasmaVault-8 | impl | live | no |
 | base | `0xed91e825201d8a7a75b892be2e1e7970a3f15c2b` | BaseUpgradeableStrategyCLStorage-2 | impl | live | no |
+| base | `0xee01bb433e74c8432f581696e04d7ec0171a2496` | Erc4626SupplyFuse | impl | inactive | no |
+| base | `0xeefbde9bdf1a75dd5799c8d79cc06aad41986766` | VaultProxy-19 | impl | live | no |
+| base | `0xef40141ea3263004d398136ff9eb75e5d6743c09` | PlasmaVaultRequestSharesFuse-3 | impl | live | no |
 | base | `0xef51c336c2d727618892ae3107aad4cbebc3b3ea` | PlasmaVault-2 | impl | live | no |
 | base | `0xef52875f61cca6bdf99a32962089d38a82ee9458` | BaseUpgradeableStrategyStorage-16 | impl | live | no |
 | base | `0xefc57105d0595fc44e241e2ad7d8e9d20d6fa5d5` | MidasExecutor | impl | inactive | no |
@@ -599,19 +816,32 @@
 | base | `0xf16899fc66c099481d9d140f4ec4bb8619e001de` | AerodromeClaimFeesFuse | impl | inactive | no |
 | base | `0xf1d5630b646e2d3afc1fc31f057df349620f48ec` | CLVault | proxy | live | no |
 | base | `0xf2f8cdb791bff8e95734689d433ce0ac57a89d6c` | BaseUpgradeableStrategyStorage-116 | impl | live | no |
+| base | `0xf328e4e84446cf5400f9baf1482e939f88a9e460` | AsyncActionFuse-2 | impl | inactive | no |
 | base | `0xf33d16444a4be0bec9417909cf0c4fabe69bf1a1` | WithdrawManager | impl | live | no |
+| base | `0xf3ce837d8eba7332ce16b698d8262247d6cb277d` | Erc4626SupplyFuse-3 | impl | inactive | no |
 | base | `0xf43b8f07a9a7e42dd5e4eb8255c41075bffd461c` | Erc4626BalanceFuse | impl | inactive | no |
+| base | `0xf4fb53b8831dd70b628f225ab8bbaadc0a93e2dc` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | base | `0xf5294f9fb8802a4c893c3f17a319cd60ccaf9655` | BaseUpgradeableStrategyStorage-117 | impl | live | no |
 | base | `0xf5336cfcb0b571e1b7d786c7e1168d2e6b60650e` | CLVault | impl | live | no |
+| base | `0xf5395190c6534f806c1ee0377d6a88e9aeb3616f` | PlasmaVault-11 | impl | live | no |
+| base | `0xf569a44710deb64c8dc9751d8595bb90962f7a67` | EulerV2CollateralFuse-3 | impl | inactive | no |
+| base | `0xf590aa3c618249f3fd2b66e35f899b5dd2d16ecb` | PlasmaVault-41 | impl | live | no |
+| base | `0xf5c604608df82eb527661ab669973de152eb1f6f` | Erc4626SupplyFuse | impl | inactive | no |
 | base | `0xf6006a1da8cd7a7d99fc608f3879df65fe06f281` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xf61f502b01aa184701d593ae3444e00781680789` | RewardEulerTokenClaimFuse | impl | inactive | no |
+| base | `0xf69058ab88f4cb5f49b35b012ed4106a760ae746` | NotifyHelperGeneric-2 | impl | live | no |
 | base | `0xf6ba89a76b5b058a92dfa43552b316de60e98f2d` | BaseUpgradeableStrategyStorage-31 | impl | live | no |
 | base | `0xf760384518c9157b82cdc4ecb0f53799970728d9` | Erc4626BalanceFuse | impl | inactive | no |
-| base | `0xf79adaf3cbe7b3d628f7c356cce09b2d6d5a212c` | PlasmaVault-5 | impl | live | no |
+| base | `0xf79adaf3cbe7b3d628f7c356cce09b2d6d5a212c` | PlasmaVault-8 | impl | live | no |
 | base | `0xf7d31f76ccf67ff2850bafe23fb63a2197fd91b9` | PlasmaVault-2 | impl | live | no |
 | base | `0xf8002309c626ddbbd2cd1535a73557db8dfe7eb6` | BaseUpgradeabilityProxy | proxy | live | no |
 | base | `0xf83648df279004cdceee1bee3a92b9194cd3b94e` | CLVault | proxy | live | no |
 | base | `0xf853b48ecea540edc3ad0c7da977524a0af29652` | BaseUpgradeableStrategyStorage-4 | impl | live | no |
+| base | `0xf8a6aa09bb55f2319113b0da88883f392e66a5fa` | EulerV2BalanceFuse-3 | impl | inactive | no |
+| base | `0xf8bb9a9051f6e94d097686544021e6df17ea6caf` | EulerV2BalanceFuse-4 | impl | inactive | no |
+| base | `0xf90ff0f7c8db52bf1bf869f74226ead125efa745` | Controller-3 | impl | live | no |
+| base | `0xf9f7ffd661f4c8de141732eee07cee7447c013d4` | LiquidityMiningLens-2 | impl | inactive | no |
+| base | `0xfa00806c871558cef982dfc02d7a87e4ad0ec0fa` | EulerV2SupplyFuse-5 | impl | inactive | no |
 | base | `0xfadf88b9f81028d5d02f698e9559b0d7d41adf9a` | WithdrawManager | impl | live | no |
 | base | `0xfb1f83feec67bd49d68add2699d346b62d3b00ad` | PlasmaVault-2 | impl | live | no |
 | base | `0xfba70e497cf3827152031adaa94c462275d8c087` | Erc4626BalanceFuse | impl | inactive | no |
@@ -624,13 +854,16 @@
 | base | `0xfda71a44f29fa1b541a1d1fda6580538c7daac2e` | Drip | impl | live | no |
 | base | `0xfdca6d7e112eeb7eae9cb0e7d5e6813047c2c1d1` | BaseUpgradeableStrategyStorage-15 | impl | live | no |
 | base | `0xfe3f01311f6798889829c2816c4a9a4b01be8288` | CLRebalanceHelper | impl | inactive | no |
+| base | `0xfe8b23b493579e5c3a0a3bc5bbf20662b3072de6` | PlasmaVault-12 | proxy | live | no |
+| base | `0xfe9390299b5eda1814df88e97785beb5f4fbf16c` | ContextManager | impl | live | no |
 | base | `0xfedbe02e2e172ccfb0abe409c40420df51c355f8` | FuseWhitelist | impl | inactive | no |
 | base | `0xfee84b6af26a481c1819655dade5f5588416e19f` | Erc4626BalanceFuse | impl | inactive | no |
 | base | `0xff21fe7307d7bd62ecba90188aa45498c90692d6` | StrategyProxy-3 | impl | live | no |
 | base | `0xff7907cdca84db03f09702a4a49c262908af48af` | IpToken | impl | inactive | no |
 | bsc | `0x00b7ba155debf38f2347a199178c99a9bc89a1f6` | PancakeStrategyMainnet_BUSD_BNB | impl | live | no |
-| bsc | `0x01fcb5bc16e8d945ba276dccfee068231da4ce33` | StrategyProxy-4 | proxy | live | no |
+| bsc | `0x01fcb5bc16e8d945ba276dccfee068231da4ce33` | StrategyProxy-5 | proxy | live | no |
 | bsc | `0x03292bdfe36591f70575c77847d7f004ffd0966a` | PotPool | impl | live | no |
+| bsc | `0x0392f36d2896c966e141c8fd9eca58a7ca9fa8af` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x03b58ce34e9cb6a908b019228778cbb9f3a1a2ba` | PotPool | impl | live | no |
 | bsc | `0x0477b3b746f99010d255f6556444039e2e58864e` | bDollarStrategyMainnet_BDO_BNB | impl | live | no |
 | bsc | `0x049d68029688eabf473097a2fc38ef61633a3c7a` | AnyswapV3ERC20 | impl | live | no |
@@ -639,8 +872,9 @@
 | bsc | `0x0694e3cb1055ff33d774d51a55272ddee305f745` | PotPool | impl | live | no |
 | bsc | `0x08b6732e1d07726e8f398a0ea97200d26e172066` | PotPool | impl | live | no |
 | bsc | `0x0a25f4c30bc02be4a5eea2f755fa5a60e5700ec4` | PancakeStrategyMainnet_BUSD_BNB | impl | live | no |
+| bsc | `0x0a7d74604b39229d444855ef294f287099774ac8` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x0acbd1f071290e94ed175dd59fe3df5e766d6f7b` | GlobalIncentivesExecutor | impl | inactive | no |
-| bsc | `0x0bb94083d5718a8cb716fadc016187a0d6c99425` | VaultProxy-7 | proxy | live | no |
+| bsc | `0x0bb94083d5718a8cb716fadc016187a0d6c99425` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x0bcaace441c9c0b5c1904450e7722ce3672745dc` | StrategyProxy | impl | live | no |
 | bsc | `0x0c253359c7074325211f0e07e31853e1192bd0b8` | PopsicleStrategtMainnet_ICE_BNB | impl | live | no |
 | bsc | `0x0c4224683a6272d64c7b9b847529aeb60a99d2f6` | StrategyProxy | impl | live | no |
@@ -653,30 +887,39 @@
 | bsc | `0x11b3154f12551ec4ae665aaebf88dc21f378f7c9` | VenusFoldStrategyMainnet_DAI | impl | live | no |
 | bsc | `0x11babd0b619bec0bd1b7b2689f4cd11b25a54e56` | StrategyProxy | proxy | live | no |
 | bsc | `0x11d4f0398d135b979d1d20761c43878fbb81417f` | StrategyProxy-2 | proxy | live | no |
+| bsc | `0x1274b70bf34e1a57e78c2a2f3e28a4e1b66cbe48` | VaultProxy-2 | proxy | live | no |
+| bsc | `0x129ccee12a9542ff77e066e6f8d7df49f8cbf89d` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x12d83dbabef9404a807c872a8fe92b6c041109f0` | VaultMigratable_Pancake_BDO_BNB | impl | live | no |
+| bsc | `0x14cb410659b4a4a7ccea99e6f6c9eac8718160df` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x158edb94d0bfc093952fb3009deeed613042907c` | StrategyProxy | proxy | live | no |
-| bsc | `0x15dbf9695b5fdb9866352d28e585f304c1cb454c` | VaultProxy-7 | impl | live | no |
+| bsc | `0x15dbf9695b5fdb9866352d28e585f304c1cb454c` | VaultProxy-2 | impl | live | no |
 | bsc | `0x15f62fe6a8ff19e710525ae285ee2b01647e696b` | VaultMigratable_Pancake_BELT_BNB | impl | live | no |
 | bsc | `0x16438572ce90caacd83f175b4b9e22e360a76b48` | PancakeStrategyMainnet_USDT_BNB | impl | live | no |
 | bsc | `0x176413fca54884e8eef87f8703f984ef98880387` | StrategyProxy-2 | proxy | live | no |
-| bsc | `0x18c4325ae10fc84895c77c8310d6d98c748e9533` | StrategyProxy-4 | impl | live | no |
+| bsc | `0x18c4325ae10fc84895c77c8310d6d98c748e9533` | StrategyProxy-5 | impl | live | no |
 | bsc | `0x19b3aba7ba46f9cac08ba2872cbcf8f96ae8de15` | GlobalIncentivesHelper | impl | live | no |
 | bsc | `0x19f8ce19c9730a1d0db5149e65e48c2f0daa9919` | StrategyProxy | proxy | live | no |
 | bsc | `0x1b7e1226ceee76a4acb079c76b532d8d02ce9279` | VenusFoldStrategyMainnet_BTCB | impl | live | no |
 | bsc | `0x1bb6fdaf6258071f4d2e96d70ffeb8ad392f299b` | PotPool | impl | live | no |
-| bsc | `0x1c4adff419f6b91e51d0ade953c9bbf5d16a583f` | VaultProxy-8 | proxy | live | no |
+| bsc | `0x1bfb4ed996f4356aa705891dedb7d7776402bec1` | VaultProxy-2 | proxy | live | no |
+| bsc | `0x1c4adff419f6b91e51d0ade953c9bbf5d16a583f` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x1f63670f1fac519ec57fca17b986871d6cf7b52f` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x1f7216fdb338247512ec99715587bb97bbf96eae` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x20099e925aad6d77803f6e9f3e3dae4ea4782d14` | Amplifier | impl | live | no |
+| bsc | `0x21fa8c490e7c1a0d3f1c82e63a5d2ee276614c60` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x221ed06024ee4296fb544a44cfeddf7c9f882cf3` | PotPool | impl | live | no |
+| bsc | `0x222412af183bceadefd72e4cb1b71f1889953b1c` | Controller-2 | impl | live | no |
 | bsc | `0x23d5b0fa22e566a4b1131c0f6f6b1ce34e480177` | PancakeStrategyMainnet_BUSD_BNB | impl | live | no |
+| bsc | `0x2427da81376a0c0a0c654089a951887242d67c92` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x2442afe6cf6958bf6a026bce5d9c6cc07e03a6c9` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x25597bd69ecc324ea3b7a1b018f18c913d564ee3` | StrategyProxy | impl | live | no |
 | bsc | `0x26a4fe4c858f0d8a11442d358d182f2832a7f84c` | PotPool | impl | live | no |
 | bsc | `0x27d7321443d5c9d2ab692897c248d97386d77d5f` | BoostStaking | impl | live | no |
 | bsc | `0x28db270691b840a7c2249d39435049be1f617b02` | StrategyProxy | impl | live | no |
 | bsc | `0x2965b50883e60af251964ec3cfea0db8be1f051f` | PopsicleStrategtMainnet_ICE_BNBv2 | impl | live | no |
+| bsc | `0x299b00d031ba65ca3a22a8f7e8059dab0b072247` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x2a1ac3ef4c75552305d6c8a60061af8276fdb64b` | PancakeStrategyMainnet_CAKE_BNB | impl | live | no |
+| bsc | `0x2ce34b1bb247f242f1d2a33811e01138968efbff` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x2d9893f8fe18757b1b387eaf0276defa99c37d8d` | PancakeStrategyMainnet_XVS_BNB | impl | live | no |
 | bsc | `0x2df3c237d1ca034f6299ec00257e95528d085f94` | FeeRewardForwarderV2 | impl | live | no |
 | bsc | `0x2e0a0feef0912d38c4c59a877bd06130f8c09d59` | StrategyProxy-2 | impl | live | no |
@@ -689,12 +932,16 @@
 | bsc | `0x3243aa5a23e91706daa564d865c565c2ff8d003f` | StrategyProxy | impl | live | no |
 | bsc | `0x3331039530dd04b5df06c2d226ac28e958bacc0f` | PotPool | impl | live | no |
 | bsc | `0x336e072764f1eb1f85a2000da8820569277afa5f` | PancakeStrategyMainnet_BUSD_BNB | proxy | live | no |
+| bsc | `0x33da6b1a05b4afcc5a321aacaa1334bda4345a14` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x35c95fc315e5c04047edf01fa44529df263d3eb3` | StrategyProxy | impl | live | no |
 | bsc | `0x36a1f264b79f41048d165341b06630d0d201c90f` | bDollarStrategyMainnet_SBDO_BUSD | impl | live | no |
 | bsc | `0x3736f98190383bb0490d0099cbedd4175f89653a` | StrategyProxy-2 | proxy | live | no |
+| bsc | `0x374787234b369b56b3701e0b932051b37726096a` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x377203420f3f05c053639233bb96880d7d5825b4` | PancakeStrategyMainnet_CAKE_BNB | impl | live | no |
 | bsc | `0x381b02359bebe2566c7c08fd7d0b078269bcff9f` | StrategyProxy-2 | proxy | live | no |
 | bsc | `0x3839ed8bbb003ec6bccf1c0b71966debd72d6998` | StrategyProxy-2 | impl | live | no |
+| bsc | `0x394e653bbfc9a3497a0487abee153ca6498f053d` | VaultProxy-2 | proxy | live | no |
+| bsc | `0x3d5b0a8cd80e2a87953525fc136c33112e4b885a` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x3de9c7d3aec7b75bda9ea73600704f945f63476c` | VaultMigratable_Pancake_BUSD_BNB | impl | live | no |
 | bsc | `0x3f14c78fb55d53e9c897e59af0ff0e54b37d88d4` | VenusFoldStrategyMainnet_BETH | impl | live | no |
 | bsc | `0x3fd2d3cd77d9189f772c9a27d6660a0c67859b75` | PancakeStrategyMainnet_XVS_BNB | impl | live | no |
@@ -715,6 +962,7 @@
 | bsc | `0x4e48c585565581ffc1d2a6a53020927cdca97161` | PancakeStrategyMainnet_BUSD_BNB | proxy | live | no |
 | bsc | `0x4ee876b94bb00e1792cc25d290c7fca820a4ced2` | StrategyProxy-2 | proxy | live | no |
 | bsc | `0x4f027307fd676669c36f8289b3f2b786f9f25111` | StrategyProxy | impl | live | no |
+| bsc | `0x5089ea6c884a03823672888b57ebce929ece63ca` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x52735122306e32e41cdf0257c8647244d475cb4b` | VenusFoldStrategyMainnet_DAI | proxy | live | no |
 | bsc | `0x5365a2c47b90ee8c9317fac20edc3ce7037384fb` | VenusFoldStrategyMainnet_BTCB | impl | live | no |
 | bsc | `0x53df6664b3dde086dce6315c317d1002b14b87e3` | StrategyProxy | impl | live | no |
@@ -728,7 +976,7 @@
 | bsc | `0x58db126c3f30f31180b2b7184b5e7b04f1cc1926` | StrategyProxy | impl | live | no |
 | bsc | `0x59258f4e15a5fc74a7284055a8094f58108dbd4f` | PancakeStrategyMainnet_BUSD_BNB | proxy | live | no |
 | bsc | `0x5954f9d5afb005eba67813b5ab82398fac7f0178` | StrategyProxy | proxy | live | no |
-| bsc | `0x59565d8f24bba0e0ca183a0b67624abe0ed87ad4` | StrategyProxy-4 | impl | live | no |
+| bsc | `0x59565d8f24bba0e0ca183a0b67624abe0ed87ad4` | StrategyProxy-5 | impl | live | no |
 | bsc | `0x5986d5c77c65e5801a5caa4fae80089f870a71da` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x598c48fa731291499edf40e8f6f39a45be1f63d9` | StrategyProxy | impl | live | no |
 | bsc | `0x59a369de3b3c350041202f59eb425363a035f933` | GooseStrategyMainnet_EGG_BNB | impl | live | no |
@@ -736,35 +984,41 @@
 | bsc | `0x5c6bc2287c48a2c9fc2f0533de2b2acfe7a9230a` | VenusFoldStrategyMainnet_BTCB | proxy | live | no |
 | bsc | `0x5c6fe09fcefeaca84dc18018cf8acf7476b2498f` | PotPool | impl | live | no |
 | bsc | `0x5cf7cef972f3deeed205b00bf6c2f8cf070de679` | GooseStrategyMainnet_EGG | impl | live | no |
+| bsc | `0x5da237ad194b8bbb008ac8916df99a92a8a7c8eb` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x5ed5881b2acf6ff6b1691d1e9048f0add21d9df2` | PancakeStrategyMainnet_BUSD_BNB | impl | live | no |
 | bsc | `0x5fd7a4d33f23967e890ae77dd4e065bc01db343b` | OneInchStrategyMainnet_1INCH_BNB | impl | live | no |
 | bsc | `0x611db2a533087ec76945f26aeae1c3e0ace68caa` | StrategyProxy | impl | live | no |
 | bsc | `0x627524d78b4fc840c887ffec90563c7a42b671fd` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x633a050832519e824367859895a955d14714ad6a` | Amplifier | impl | live | no |
+| bsc | `0x63671425ef4d25ec2b12c7d05de855c143f16e3b` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x66b7611f35e48e311929e25d73428410c2335c34` | StrategyProxy | impl | live | no |
 | bsc | `0x6895bdb740c1ae2b39f94d7d285e730a88b9f0c0` | VaultMigratable_Pancake_ETH_BNB | impl | live | no |
 | bsc | `0x69019a2b392eac397dbfa1862a8f6d900e832c5d` | StrategyProxy-2 | impl | live | no |
+| bsc | `0x6a0d7383762962be039c197462bf1df377410853` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x6a545f9c64d8f7b957d8d2e6410b52095a9e6c29` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x6aa85f9faf4639c6f290e04815b2aa45d78468f4` | StrategyProxy | proxy | live | no |
 | bsc | `0x6b138b1214ddb18cdaeecdcb31ee0de2498b0081` | StrategyProxy | impl | live | no |
 | bsc | `0x6b95e2801dbaf00c3b3a9ce6f0ae486393e7a2dd` | VaultMigratable_Pancake_BUSD_BNB | impl | live | no |
 | bsc | `0x6c55c0445e1d40cbda02cd127ddd52a287bd2374` | PopsicleStrategtMainnet_ICE_BNBv2 | proxy | live | no |
 | bsc | `0x6cec99c30d0437a87bf0228369062fb29df7f74c` | StrategyProxy | impl | live | no |
+| bsc | `0x6d386490e2367fc31b4acc99ab7c7d4d998a3121` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x6e5226a7b14b3b8d8135510aaa133a03b117cefb` | StrategyProxy | impl | live | no |
 | bsc | `0x6f354127754a8e37cbfc1539a13220a6671558d1` | StrategyProxy | impl | live | no |
 | bsc | `0x6f8a975758436a5ec38d2f9d2336504430465517` | VenusFoldStrategyMainnet_BETH | impl | live | no |
 | bsc | `0x7002fc2d41d4185787f7b019c2517bb8490b9368` | PotPool | impl | live | no |
-| bsc | `0x70aec98d696c201dbf7549fd08a47a64a316308e` | StrategyProxy-4 | proxy | live | no |
+| bsc | `0x70aec98d696c201dbf7549fd08a47a64a316308e` | StrategyProxy-5 | proxy | live | no |
 | bsc | `0x71fb9b8e84b4c6c808315c28981eeffac6eff86d` | StrategyProxy | impl | live | no |
 | bsc | `0x7384eafcd81c399cd823e7e412151bc0e791b41b` | PancakeStrategyMainnet_BUSD_BNB | impl | live | no |
 | bsc | `0x74d3df6a64dccf906debfe133186dd18f68ba127` | StrategyProxy | impl | live | no |
 | bsc | `0x74f2f30bbbead70253567a5864f7b05e40e3c2ed` | StrategyProxy | impl | live | no |
 | bsc | `0x74fad021134e5851896fa58f536981c6eb4da5e6` | bDollarStrategyMainnet_SBDO_BUSD | impl | live | no |
+| bsc | `0x75071f2653fbc902ebaff908d4c68712a5d1c960` | VaultProxy-3 | proxy | live | no |
 | bsc | `0x76aaddf1ebaf9300dad18469d01a0ee62633abe7` | PotPool | impl | live | no |
 | bsc | `0x77ee32430ca49f99b590782f5ff83405272f0676` | bDollarStrategyMainnet_SBDO_BUSD | proxy | live | no |
 | bsc | `0x78963b538c4835e00648df764029196700ea8ee9` | PotPool | impl | live | no |
 | bsc | `0x78ac817a889849b7b362600e391229a90913dd5b` | BeltSingleAssetStrategyMainnet_BeltETH | impl | live | no |
 | bsc | `0x78c3e52db6abee5cbd353a429e4c88b23e36b089` | StrategyProxy | impl | live | no |
+| bsc | `0x78cf4a86ba3b4c5246d097e5cd0833cb641c1425` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x79cfebb879b8c3695284384d77be2478c52b0a09` | StrategyProxy | impl | live | no |
 | bsc | `0x7a299a197cae373036d4f136a947963b15f09370` | StrategyProxy | impl | live | no |
 | bsc | `0x7a2af29b859fb916979dad64f4c3a21fa8b5e1a0` | PancakeStrategyMainnet_USDT_BNB | proxy | live | no |
@@ -777,6 +1031,7 @@
 | bsc | `0x8134bca488b63d7a6ca33183f0e0a9c139c691fe` | VenusFoldStrategyMainnet_BTCB | proxy | live | no |
 | bsc | `0x826a37148978e8b51641c7cc339e41eca6ddb909` | StrategyProxy | proxy | live | no |
 | bsc | `0x84619b9bf8304a98240b6c32fd1a491e9d89efd5` | GooseStrategyMainnet_EGG | impl | live | no |
+| bsc | `0x84646f736795a8bc22ab34e05c8982cd058328c7` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x84c882a4d8eb448ce086ea19418ca0f32f106117` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x85e0d28d517671982dc610c84faabda6520ffc3b` | VaultMigratable_Pancake_BDO_BNB | impl | live | no |
 | bsc | `0x869c125fec9ce963967fba1edd5601170a76d49e` | StrategyProxy-2 | impl | live | no |
@@ -793,6 +1048,7 @@
 | bsc | `0x8e8ca3719360809cd4bfe175de58992e7d3e7874` | PotPool | impl | live | no |
 | bsc | `0x8f2f868f75fdfa14c4bb093a24d6e008f3a09650` | bDollarStrategyMainnet_BDO_BNB | impl | live | no |
 | bsc | `0x9048a123ae6c86a2b9fdc3ea28ed1911de8363a6` | StrategyProxy-2 | impl | live | no |
+| bsc | `0x9090bccd472b9d11de302572167ded6632e185ab` | VaultProxy-2 | proxy | live | no |
 | bsc | `0x90d6958b0f46782eadf474f731796608fac12267` | StrategyProxy | impl | live | no |
 | bsc | `0x9178f402453b118b6b897ff520256ed63b2d9998` | PotPool | impl | live | no |
 | bsc | `0x91d88f60d6f26fb21f7d117bdea130ff6b640e8f` | VaultMigratable_Pancake_ETH_BNB | impl | live | no |
@@ -806,9 +1062,11 @@
 | bsc | `0x99b0d6641a63ce173e6eb063b3d3aed9a35cf9bf` | VenusFoldStrategyMainnet_BETH | proxy | live | no |
 | bsc | `0x9a77979af01416539b1b41cf2332fa6ce753002a` | StrategyProxy | impl | live | no |
 | bsc | `0x9b36e1dcbb21dfa6863b2711ed6f0f080888072c` | PotPool | impl | live | no |
+| bsc | `0x9be089e60ae934ca6d9a263d04905ac6aaa48995` | PotPool-2 | impl | live | no |
 | bsc | `0x9c90e9c14525e8d71ccceeaa257139b5c56595a4` | VenusFoldStrategyMainnet_BETH | impl | live | no |
 | bsc | `0x9e0846677ea91ea5308d3f525c09e782ef17da21` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0x9e54db9b985acd63a5a6ac3c78c1c1cf44c294d4` | VaultMigratable_Pancake_ETH_BNB | impl | live | no |
+| bsc | `0xa0246c9032bc3a600820415ae600c6388619a14d` | FeeRewardForwarder-2 | impl | live | no |
 | bsc | `0xa0e883b284b7a6fb1063e24ab3eb87f6a2ef240d` | PancakeStrategyMainnet_XVS_BNB | impl | live | no |
 | bsc | `0xa166ea8ab98c68523ad048aeb5ececa815b75dab` | GooseStrategyMainnet_EGG | impl | live | no |
 | bsc | `0xa4571fdef9196e60b2cce242984a48aef04daec3` | BoostProxy | impl | inactive | no |
@@ -817,7 +1075,7 @@
 | bsc | `0xa6fe292ff497816cf3144ead564ccd7b44f66021` | StrategyProxy | impl | live | no |
 | bsc | `0xa75ac798935d7f79652f9cc83b50d6ff1f23c015` | StrategyProxy | impl | live | no |
 | bsc | `0xa832926e3f6a3339ae68f70d76860d212959e0e7` | PancakeStrategyMainnet_ETH_BNB | impl | live | no |
-| bsc | `0xa8d0876ac67682c8fedc3587905fc3449b87775c` | StrategyProxy-4 | impl | live | no |
+| bsc | `0xa8d0876ac67682c8fedc3587905fc3449b87775c` | StrategyProxy-5 | impl | live | no |
 | bsc | `0xad941e12544f49077fc6425cda1871e11cea5288` | VaultMigratable_Pancake_BELT_BNB | proxy | live | no |
 | bsc | `0xae3a7a640616cb65234c88be89a65d89b0b5df41` | StrategyProxy | impl | live | no |
 | bsc | `0xaf2d2e5c5af90c782c008b5b287f20334eeb308e` | VenusFoldStrategyMainnet_BETH | impl | live | no |
@@ -833,17 +1091,20 @@
 | bsc | `0xb5fd62ff112104128119dcab515aa61398243313` | StrategyProxy | impl | live | no |
 | bsc | `0xb60e69f21b469a93ab6e3f4a831e833bcfb7c7de` | GooseStrategyMainnet_EGG_BNB | proxy | live | no |
 | bsc | `0xb7506271fe72fe2cdc3a7ee6ead8749ad54df8c2` | VenusFoldStrategyMainnet_BETH | proxy | live | no |
+| bsc | `0xb75f4c87ebed0a2c6e3d6ff62844e3663cf83bb8` | VaultProxy-3 | impl | live | no |
 | bsc | `0xb83f699f7748fed4d276ceeaad45c788ea6dfe4e` | VenusFoldStrategyMainnet_BETH | impl | live | no |
 | bsc | `0xb858ec7cc0560349293aa2a6cb25d3baadba2492` | StrategyProxy | impl | live | no |
 | bsc | `0xb91f62a423de007ce25e5538d747b259fb207938` | GooseStrategyMainnet_EGG_BUSD | impl | live | no |
 | bsc | `0xb99c358d91d57612236c74643306ea035645887e` | VenusFoldStrategyMainnet_BTCB | impl | live | no |
 | bsc | `0xba314e966cf0937781198e3b13c55b42bc0aff31` | PopsicleStrategtMainnet_ICE_BNB | proxy | live | no |
 | bsc | `0xbcdf4eaec6166b94e54e2b1f0a4c2c30cea834ca` | PopsicleStrategtMainnet_ICE_BNB | proxy | live | no |
+| bsc | `0xbf2989575de9850f0a4b534740a88f5d2b460a4f` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xbf2eba36a42120e24d32eca70ccb539b383b27a1` | StrategyProxy | impl | live | no |
 | bsc | `0xc022b483062f3d1ad4f54762598db5a40eb791b2` | GooseStrategyMainnet_EGG_BNB | impl | live | no |
 | bsc | `0xc11f5f4cdaebab98cab29501466ba05d41675a3e` | GooseStrategyMainnet_EGG | proxy | live | no |
 | bsc | `0xc24da7a6b5adc8771588d58b6109ef52c95a311e` | VenusFoldStrategyV2Mainnet_USDT | impl | live | no |
 | bsc | `0xc2a1fa5753b7c3272f32abec19140658d539e61c` | PotPool | impl | live | no |
+| bsc | `0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xc417b45e6090bd4201d9400b48f84c9f34f4d0a5` | AnyswapV3ERC20 | impl | live | no |
 | bsc | `0xc4f8507a26b778eb16bbe6d8f074b3a8b01d0e90` | StrategyProxy | impl | live | no |
 | bsc | `0xc547c527d6ce9a0a0cea928b50fbd3a598d349a2` | GooseStrategyMainnet_EGG_BUSD | proxy | live | no |
@@ -851,11 +1112,15 @@
 | bsc | `0xc6f39cff6797bac5e29275177b6e8e315cf87d95` | PotPool | impl | live | no |
 | bsc | `0xc7cc4cf5e46666e7c13581413348408750e6af8c` | StrategyProxy | impl | live | no |
 | bsc | `0xc843bbdda92124f173a09db47e5e9b1d3823d4af` | SpaceStrategy_SPACE_BNB | impl | live | no |
+| bsc | `0xc95cbe4ca30055c787cb784be99d6a8494d0d197` | Storage-3 | impl | live | no |
+| bsc | `0xc97ddaa8091abaf79a4910b094830cce5cdd78f4` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xc9c1ac8f4df9d0b4107a9c0e392cca71b6574b40` | StrategyProxy-2 | impl | live | no |
 | bsc | `0xc9d33792e9f53f0b196820b571454ac0510d0dde` | StrategyProxy | impl | live | no |
 | bsc | `0xcb9681ac1ba9eef6886e7a0edf4b5baa1355294f` | StrategyProxy-2 | impl | live | no |
+| bsc | `0xcd8fb1302c30fde56bce5b34211e84561bbf0df1` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xced431a35704053597fdb7fe8d2d8e4634695628` | StrategyProxy | impl | live | no |
-| bsc | `0xcf4e33b9205d3e154e573c1b155d993f47ff40ff` | VaultProxy-8 | impl | live | no |
+| bsc | `0xcf4e33b9205d3e154e573c1b155d993f47ff40ff` | VaultProxy-3 | impl | live | no |
+| bsc | `0xcf5f83f8fe0ab0f9e9c1db07e6606dd598b2bbf5` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xcfe542363abe4ab9bc9a0c1f98dce356787e4d64` | GooseStrategyMainnet_EGG | impl | live | no |
 | bsc | `0xd16a735656f0a310e6ea8f502cf1d6307803d76a` | PotPool | impl | live | no |
 | bsc | `0xd22a669c7ee9d2f6ca0a572da2008912b1848e2f` | VenusFoldStrategyV2Mainnet_BETH | impl | live | no |
@@ -864,6 +1129,7 @@
 | bsc | `0xd4bc6001937c6ff493e4bae3ba0f812799f86ab0` | PotPool | impl | live | no |
 | bsc | `0xd70e3826927ba72bc5c01014a2c447a918e54919` | bDollarStrategyMainnet_BDO_BUSD | proxy | live | no |
 | bsc | `0xd7338145d79771d0d6926db134ac040abb48e835` | PopsicleStrategtMainnet_ICE | proxy | live | no |
+| bsc | `0xd75ffa16ffbcf4078d55ff246cfba79bb8ce3f63` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xd77e6bde0270b18bc1abc964557e025023d2a989` | StrategyProxy | impl | live | no |
 | bsc | `0xd8707e6dca55a52f4827738367b1c2b17872b07d` | BeltSingleAssetStrategyMainnet_BeltBTCB | impl | live | no |
 | bsc | `0xd8f5a5bea95740d2749d20f4c26d543579a7b6d8` | bDollarStrategyMainnet_BDO_BUSD | impl | live | no |
@@ -874,13 +1140,17 @@
 | bsc | `0xdae22b8ca6fd74829ebe8f6b668bac2ace81cf03` | VaultMigratable_Pancake_ETH_BNB | impl | live | no |
 | bsc | `0xdc27244311c56ed038e7acf104245ec6a040d07f` | VenusFoldStrategyV2Mainnet_USDT | proxy | live | no |
 | bsc | `0xde11168101e7fee8bb7bc5d4b89dff4a654a24a5` | PancakeStrategyMainnet_XVS_BNB | impl | live | no |
+| bsc | `0xde7099898619e6264b4a3b702a9c69bf1f2eca1c` | PotPool-2 | impl | live | no |
 | bsc | `0xdeb314a2222884b6c1e848bffcf68dcfbc5c1406` | PotPool | impl | live | no |
 | bsc | `0xe10f2e9bc4c59e8f40759675b44778f7a044d94a` | BoostStaking | proxy | inactive | no |
 | bsc | `0xe1f9a3ee001a2ecc906e8de637dbf20bb2d44633` | VaultMigratable_Pancake_ETH_BNB | proxy | live | no |
 | bsc | `0xe24e96ab1564dcb444159c8cb2374e13412a01fc` | StrategyProxy | impl | live | no |
+| bsc | `0xe3f309f151746b3c0953e4c0e455bff3dc2176aa` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xe5464f455211ebf1b5bb7ca7e571997188f461fa` | PancakeStrategyMainnet_USDT_BNB | impl | live | no |
 | bsc | `0xe5f7396b7f7d52c024be5e8fe229b8e11eefccc1` | PotPool | impl | live | no |
+| bsc | `0xe604fd5b1317babd0cf2c72f7f5f2ad8c00adbe1` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xe637e7d1e37875c787b773dbeb28fcc55fe91c16` | PotPool | impl | live | no |
+| bsc | `0xe64bfe13aa99335487f1f42a56cddbffaec83bbf` | VaultProxy-3 | proxy | live | no |
 | bsc | `0xe6cad08d92aca2f5c5345882b6dbf13d12c26dd8` | BeltSingleAssetStrategyMainnet_BeltBTCB | proxy | live | no |
 | bsc | `0xe7666f2af0a6f5199281944c112ca8511f27c330` | PancakeStrategyMainnet_CAKE_BNB | impl | live | no |
 | bsc | `0xe7a6991e2af7f9a9d36bafcde8d0b8a057e4db8c` | StrategyProxy | impl | live | no |
@@ -890,6 +1160,7 @@
 | bsc | `0xea2c3c25985fbb5418c61451c2cbd1311e0ebe9e` | PotPool | impl | live | no |
 | bsc | `0xeab819e2be63ffc0df64e7bba4ddb3bdea280310` | PotPool | impl | live | no |
 | bsc | `0xed274dd486bb9c6bac8bdd937160f6c9ca7102c2` | PancakeStrategyMainnet_ETH_BNB | impl | live | no |
+| bsc | `0xef08a639cac2009fdad3773cc9f56d6a8feb1153` | FeeRewardForwarder-2 | impl | live | no |
 | bsc | `0xf0109eb6820a1beaf7048353e41a2b0cf265a0a4` | VenusFoldStrategyMainnet_BTCB | impl | live | no |
 | bsc | `0xf1082963bf1a5ae8733c0462ec6e8c76c1a4ea26` | AmpliFARMProxy | impl | live | no |
 | bsc | `0xf1121f56961c6dfd40355dde61404d51b3f1c34e` | PotPool | impl | live | no |
@@ -897,27 +1168,35 @@
 | bsc | `0xf1ae8ec1072674447bf2fba3b96f9a8093f11e90` | StrategyProxy-2 | impl | live | no |
 | bsc | `0xf328f799a9c719f446e05385eb64c8a29d3b0674` | NotifyHelperGeneric | impl | live | no |
 | bsc | `0xf53c6789f35c4ecf152d2168ca203808595cb524` | PotPool | impl | live | no |
+| bsc | `0xf553e1f826f42716cdfe02bde5ee76b2a52fc7eb` | VaultProxy-3 | proxy | live | no |
+| bsc | `0xf5a5f4fa631c3e66abeee478bba5a2eb1f939084` | ViewerNotifyHelperStateful-2 | impl | live | no |
+| bsc | `0xf5eaa5d5e5d0c345297d414b7ecd26d64a83371f` | PotPool-2 | impl | live | no |
+| bsc | `0xf608fb8832bec233a40c6b67fba349dace964791` | Reader-3 | impl | live | no |
 | bsc | `0xf60afebb76c43f636e4d1a099847fc97dc8bded0` | PancakeStrategyMainnet_CAKE | impl | live | no |
+| bsc | `0xf71042c88458ff1702c3870f62f4c764712cc9f0` | NotifyHelper-2 | impl | live | no |
 | bsc | `0xf7a3a95d0f7e8a5eeae483cdd7b76af287283d34` | VaultMigratable_Pancake_BUSD_BNB | proxy | live | no |
 | bsc | `0xf7d6c4762411acd456ef0df7cb9994dc17d88747` | VenusFoldStrategyMainnet_BETH | proxy | live | no |
 | bsc | `0xf869e383a204312d43eab0c640a4fc4574a9a8c5` | StrategyProxy-2 | impl | live | no |
+| bsc | `0xf8ce90c2710713552fb564869694b2505bfc0846` | VaultProxy-11 | impl | live | no |
 | bsc | `0xf8f7498b051f4d2428354b083227a0bd6d03d9f2` | EllipsisFUSDTStrategyMainnet | impl | live | no |
 | bsc | `0xfbc74ee9d8b55c29a23fc6fbeef22661f06c2e58` | PancakeStrategyMainnet_ETH_BNB | proxy | live | no |
 | bsc | `0xfc8c1f0e25d91cb10db243acbca5ac3c422a6277` | PotPool | impl | live | no |
 | bsc | `0xfe11d37e6a6181028d0130808ff5dd745f8fbe67` | StrategyProxy | impl | live | no |
 | bsc | `0xfe7f456f8274355f17243b7282bd88129e894b1a` | PotPool | impl | live | no |
+| bsc | `0xfeb902db08e4e1f362866628098d6110dbe3d072` | VaultProxy-3 | proxy | live | no |
+| bsc | `0xffbd102fafbd9e15c9122d9c62ab299afd4d3e4f` | VaultProxy-2 | proxy | live | no |
 | bsc | `0xffbf7902b0c46257ec8c8afed66f717b9aa8cc70` | SpaceStrategy_SPACE_BNB | impl | live | no |
-| ethereum | `0x000d02bb5e9ff7bd7aec0c37999b4d1031857704` | StrategyProxy-13 | proxy | live | no |
+| ethereum | `0x000d02bb5e9ff7bd7aec0c37999b4d1031857704` | StrategyProxy-14 | proxy | live | no |
 | ethereum | `0x00b0c40cfff6bb23816f110387593032b26fe521` | WithdrawManagerFactory | impl | live | no |
 | ethereum | `0x00f9d525828beebf1ee75fb72b1f21932e195bdf` | CRVStrategySwerveUSDCMainnet | impl | inactive | no |
 | ethereum | `0x01112a60f427205dca6e229425306923c3cc2073` | VaultProxy | proxy | live | no |
-| ethereum | `0x01579527d5734c03b8220e96dd5754346bfdfd63` | StrategyProxy-14 | proxy | live | no |
+| ethereum | `0x01579527d5734c03b8220e96dd5754346bfdfd63` | StrategyProxy-15 | proxy | live | no |
 | ethereum | `0x017ec1772a45d2cf68c429a820ef374f0662c57c` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x01bd09a1124960d9be04b638b142df9df942b04a` | VaultProxy | proxy | live | no |
-| ethereum | `0x01d4fa645f3b98fc9d870dd687de3665f0d45cdf` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x01d4fa645f3b98fc9d870dd687de3665f0d45cdf` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x01f9caad0f9255b0c0aa2fbd1c1aa06ad8af7254` | NoMintRewardPool-2 | impl | live | yes |
 | ethereum | `0x01fcb5bc16e8d945ba276dccfee068231da4ce33` | CRVStrategySwerveUSDTMainnet | impl | inactive | no |
-| ethereum | `0x0250038b2444665f2f146e6ed5cd881eb5756029` | StrategyProxy-15 | proxy | live | no |
+| ethereum | `0x0250038b2444665f2f146e6ed5cd881eb5756029` | StrategyProxy-16 | proxy | live | no |
 | ethereum | `0x02d77f6925f4ef89ee2c35eb3dd5793f5695356f` | VaultProxy | proxy | live | no |
 | ethereum | `0x03292bdfe36591f70575c77847d7f004ffd0966a` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0x034947614513e69d4bd8d31e464276d1bfcf88a8` | FusionFactory | impl | live | no |
@@ -926,28 +1205,28 @@
 | ethereum | `0x0477b3b746f99010d255f6556444039e2e58864e` | CRVStrategySwerveUSDTMainnet | impl | inactive | no |
 | ethereum | `0x04bd1e6caf008ed831f888ced406cd616c671870` | AsyncActionFuse | impl | inactive | no |
 | ethereum | `0x04edb1420a01547944ea57bbd4ebebae04ac116b` | UniVaultProxy | proxy | live | no |
-| ethereum | `0x053c80ea73dc6941f518a68e2fc52ac45bde7c9c` | VaultProxy-3 | proxy | live | yes |
-| ethereum | `0x0552e28123a19ff2853d1ed3be75ef1329bb6ca8` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0x053c80ea73dc6941f518a68e2fc52ac45bde7c9c` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0x0552e28123a19ff2853d1ed3be75ef1329bb6ca8` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x056e01b3566f10b98f5130c819de34ee535b4924` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x05f9cd69cefc73872731911293e3734d36ecb39b` | Basis2FarmStrategyMainnet_BAC_DAIV3 | impl | live | no |
 | ethereum | `0x060bf70ae6ec15121c819a081e56456d5f40556a` | AmmTreasuryBaseV1-2 | impl | inactive | no |
 | ethereum | `0x061d41f63d37231a3c7a4ed74c7b222e6ac88985` | FeeManagerFactory | impl | live | no |
 | ethereum | `0x0623cf5d4cd761e2c237fb02d1fa6424e03f5c8c` | CRVStrategy3PoolMainnet | impl | inactive | no |
 | ethereum | `0x066cbd24d8285e25cb38222ea669735bdebbaac2` | AmmCloseSwapLens | impl | inactive | no |
-| ethereum | `0x06a2e6347353edd5653b240d70cdc97f37d080ee` | StrategyProxy-16 | proxy | live | no |
-| ethereum | `0x06b53af012499d6429741b9d53e868fd89a5d3b2` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x06a2e6347353edd5653b240d70cdc97f37d080ee` | StrategyProxy-17 | proxy | live | no |
+| ethereum | `0x06b53af012499d6429741b9d53e868fd89a5d3b2` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x072467b69354fd3274123c908adbc75f9f1dd183` | AmmCloseSwapServiceDai | impl | inactive | no |
-| ethereum | `0x079158beca3c0ee6ae44b43357c6317e339ddc69` | PotPool-3 | impl | live | yes |
+| ethereum | `0x079158beca3c0ee6ae44b43357c6317e339ddc69` | PotPool-4 | impl | live | yes |
 | ethereum | `0x07d80997d57ad9489a4c48f6134df91822e36514` | EulerV2CollateralFuse | impl | inactive | no |
 | ethereum | `0x07dbe6aa35ef70dad124f4e2b748ffa6c9e1963a` | VaultProxy | proxy | live | no |
 | ethereum | `0x07fc092fa44c52516decd5f7545061316d062930` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x086aca94aa413932c6ac5e09b863ac2cbe17998f` | SiloV2BalanceFuse | impl | inactive | no |
 | ethereum | `0x086d4daab14741b195dee65aff050ba184b65045` | ERC1967Proxy-8 | proxy | inactive | no |
 | ethereum | `0x08732ec4a818c774928fac48c75a8ca9d421d497` | FusionFactory | impl | live | no |
-| ethereum | `0x08a8ec037df2e54194b397cd7c761631440197c6` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0x08a8ec037df2e54194b397cd7c761631440197c6` | ERC1967Proxy-5 | proxy | inactive | no |
 | ethereum | `0x08aa65118996eaa61372b65978cfa684f2c749b2` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x08c795e57ff0c2695ea8733cf04ab75af3909e5a` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0x08dd57a51025a266cecc85154860aa4e71e48ee8` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x08dd57a51025a266cecc85154860aa4e71e48ee8` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x09321c70b4e51f3f21bdad79c61d11fba1024da2` | PriceOracleMiddleware | impl | inactive | no |
 | ethereum | `0x093c2ae5e6f3d2a897459aa24551289d462449ad` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x0973ede03cae07837ff0e2c2695ea219dfad840c` | SNXRewardUniLPStrategy | impl | live | no |
@@ -968,6 +1247,7 @@
 | ethereum | `0x0ca19915439c12b16c0a8c119ec05fa801365a15` | VaultProxy | proxy | live | no |
 | ethereum | `0x0ccccdc5b809c71ce5cd298907aad117513ab361` | AmmOpenSwapServiceStEth-2 | impl | inactive | no |
 | ethereum | `0x0cf053385492fef81e538f849e1e5308befc1a5c` | UpdateBalancesIgnoreDustPreHook | impl | live | no |
+| ethereum | `0x0d3921ee9b5e39bccaf6e792512f12bc755c6c0e` | StrategyProxy-4 | proxy | live | no |
 | ethereum | `0x0d55221929cf67c8ca060f799a6bb1d0d9dc59b2` | MiltonUsdt | impl | inactive | no |
 | ethereum | `0x0d60285f0c37d977260d22e23df7984a0800a740` | AccessManagerFactory | impl | live | no |
 | ethereum | `0x0df24f8fd05279b34c432b165a470e9146199d92` | VaultMigratorStrategy | impl | inactive | no |
@@ -994,18 +1274,20 @@
 | ethereum | `0x12d83dbabef9404a807c872a8fe92b6c041109f0` | AutoStake | impl | inactive | no |
 | ethereum | `0x12db4a4c442944a10ed153db64c500beb006039f` | VaultProxy | proxy | live | no |
 | ethereum | `0x12e75bb878b26a1cbfc0c1704654aa1423b07f5a` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x12fd0ee183c85940caedd4877f5d3fc637515870` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x12fd0ee183c85940caedd4877f5d3fc637515870` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x13027a850db05f9397d89664640d7dbd919179f6` | VaultProxy | proxy | live | no |
 | ethereum | `0x13627b75cf955eee2d57fc11a7082de5c36050c3` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0x137000352b4ed784e8fa8815d225c713ab2e7dc9` | ERC1967Proxy-2 | proxy | inactive | no |
 | ethereum | `0x13ca81acea3c6fd3ae64bae7e2a5ef04d7330fd6` | VaultMigratorStrategy | impl | inactive | no |
 | ethereum | `0x145f39b3c6e6a885aa6a8fade4ca69d64bab69c8` | VaultProxy | proxy | live | no |
+| ethereum | `0x1469e4f7c78805c48b550fc4f49e4e2995512ee8` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x14ac1bddd9160866590c6c4ec16853a1510845b9` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x14e7a00109d95c6340799a108133f4427161d865` | VaultProxy | proxy | live | no |
+| ethereum | `0x14e7c30c939302c13a6dac5fe71835c3d4932f2a` | StrategyProxy-18 | impl | live | no |
 | ethereum | `0x153c544f72329c1ba521ddf5086cf2fa98c86676` | FeeRewardForwarder | impl | live | no |
 | ethereum | `0x15417a101cb7db7c85b82a4ecc9910ce6f45d9df` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x156733b89ac5c704f3217fee2949a9d4a73764b5` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x1571ed0bed4d987fe2b498ddbae7dfa19519f651` | VaultProxy-4 | proxy | live | no |
+| ethereum | `0x1571ed0bed4d987fe2b498ddbae7dfa19519f651` | VaultProxy-8 | proxy | live | no |
 | ethereum | `0x158edb94d0bfc093952fb3009deeed613042907c` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x15ada3630227a33751e986f3e77b0a073f77d17d` | OneInchStrategy_ETH_WBTC | impl | live | no |
 | ethereum | `0x15aeb9b209fec67c672dbf5113827dab0b80f390` | CRVStrategyStableMainnet | impl | live | no |
@@ -1017,13 +1299,13 @@
 | ethereum | `0x16d104009964e694761c0bf09d7be49b7e3c26fd` | ERC1967Proxy-11 | proxy | inactive | no |
 | ethereum | `0x16d2369a3206d084ce2c3e4a7843adf19c4dd42e` | MiltonDai | impl | inactive | no |
 | ethereum | `0x16fbb193f99827c92a4cc22efe8ed7390465bfa3` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x1703fea13672dfe8899e44c21f7e0b626550d08d` | StrategyProxy-17 | proxy | live | no |
+| ethereum | `0x1703fea13672dfe8899e44c21f7e0b626550d08d` | StrategyProxy-19 | proxy | live | no |
 | ethereum | `0x170f77e70e488fb7d486ab916e305ca85d45364f` | Klondike2FarmStrategyMainnet_WBTC_KLONX | impl | live | no |
 | ethereum | `0x174678b2632910e97bfdf284fa0583ba717b980f` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x176f645b837663f4af2579f37059bdc22ee69584` | StEthWrapperFuse | impl | inactive | no |
 | ethereum | `0x17bf30c41606404dc4fbe0a1dbd8c6fdb994095d` | AmmCloseSwapLens | impl | inactive | no |
 | ethereum | `0x17ea335b82844212468000e7aeb5f55d63948c47` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0x180a71c5688ac7e2368890ef77b0036af8e261b6` | StrategyProxy-5 | proxy | live | no |
+| ethereum | `0x180a71c5688ac7e2368890ef77b0036af8e261b6` | StrategyProxy-6 | proxy | live | no |
 | ethereum | `0x1822a8c3c807f1ec415ee82752dae0ec74664d4f` | ContextManager | impl | live | no |
 | ethereum | `0x1823bd01c84844668e2902e4c86b7948483680d4` | InvestmentVaultStrategy | impl | live | no |
 | ethereum | `0x1851a8fa2ca4d8fb8b5c56eac1813fd890998efc` | UniVaultProxy | proxy | live | no |
@@ -1032,11 +1314,13 @@
 | ethereum | `0x18c4325ae10fc84895c77c8310d6d98c748e9533` | CRVStrategySwerveUSDCMainnet | impl | inactive | no |
 | ethereum | `0x18fbe81e56133118669660a46d050546045ab9b3` | MirrorMainnet_mTWTR_UST | impl | live | no |
 | ethereum | `0x18fda40bee2a2ec4fff630dedba78a2aa0187d5e` | PriceOracleMiddlewareManager-3 | impl | live | no |
-| ethereum | `0x18fe4b095dc23411857e174d8c561c860c6c7cd5` | StrategyProxy-18 | proxy | live | no |
+| ethereum | `0x18fe4b095dc23411857e174d8c561c860c6c7cd5` | StrategyProxy-20 | proxy | live | no |
 | ethereum | `0x192e9d29d43db385063799bc239e772c3b6888f3` | Vault | impl | live | yes |
 | ethereum | `0x193c55abe92744f430259c36dc972a30cf02e2d1` | VaultMigratable_DAIBASV2 | impl | live | no |
 | ethereum | `0x1997e59399bad38068b07d20d64bbdbc6882501b` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x199effc20793197d6c5100b32aaae880d1061004` | CRVStrategyStableMainnet | impl | live | no |
+| ethereum | `0x19e332aba9cd9387e9310c9645b0a4b03a6e7906` | Erc4626BalanceFuse-2 | impl | inactive | no |
+| ethereum | `0x19e5ac38a67d2422c87992150cbffb40de02737c` | WithdrawManager-3 | impl | live | no |
 | ethereum | `0x19f8ce19c9730a1d0db5149e65e48c2f0daa9919` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x1a0b8b5c603cac03b3b6b7a9679f5e2c1e98f248` | Klondike2FarmStrategyMainnet_WBTC_KLON | impl | live | no |
 | ethereum | `0x1a0e125ba607714d83260b8e28a68cab97db8e52` | CRVStrategyStableMainnet | impl | live | no |
@@ -1064,21 +1348,22 @@
 | ethereum | `0x1f44c5ada019cbb0729e277775877ccdb940e04a` | AmmPoolsLens | impl | inactive | no |
 | ethereum | `0x1f8397de7c32cc7f042477326892953ca102ded0` | RewardsClaimManager-2 | impl | live | no |
 | ethereum | `0x1fbd08857ceebd7012a058df93ea642bdc0ff864` | MiltonDai | impl | inactive | no |
-| ethereum | `0x1fdf5dc3f915cb40e0ad5690de51e3cb464d1bad` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0x1fdf5dc3f915cb40e0ad5690de51e3cb464d1bad` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x1fe9cfdaf56c2ca079e20db8e8e5d183d5704573` | FeeRewardForwarder | impl | live | no |
 | ethereum | `0x1ffebbc55e2b85dab87cf7d11558180dbe25d3bf` | IdleStrategyWETHMainnet | impl | live | no |
 | ethereum | `0x203e97aa6eb65a1a02d9e80083414058303f241e` | VaultProxy | proxy | live | no |
 | ethereum | `0x2059711f1cf4c215f48dbbbc4cf6af5ac5131c82` | NoopStrategyStable | impl | inactive | no |
 | ethereum | `0x20a5d253d6e79972516f5061e2ae5d49a1b2cdd7` | IporOracle | impl | inactive | no |
 | ethereum | `0x20c782c94800d709541660e322035785c89e32c2` | EulerV2BorrowFuse | impl | inactive | no |
-| ethereum | `0x20e934c725b6703f0ac696f1689008057db9ac44` | PlasmaVault-6 | impl | live | no |
+| ethereum | `0x20e934c725b6703f0ac696f1689008057db9ac44` | PlasmaVault-26 | impl | live | no |
 | ethereum | `0x21353473a7847bd8e44b0ab5e5d466b0cb4d7100` | SoapIndicatorRebalanceLogic | impl | inactive | no |
 | ethereum | `0x21396b545f70617fc957b0858610bb1626de0197` | YelHodlStrategyMainnet_YEL_WETH | impl | live | no |
 | ethereum | `0x213bb78f9d9e66f557450f229e47d49f6775dc4d` | PriceOracleMiddlewareManager | impl | live | no |
-| ethereum | `0x21546068903b82695c6cc26164b4cd15ad906f60` | StrategyProxy-6 | proxy | live | no |
-| ethereum | `0x21e22315bcfcba1c02fc40903bf02b3bd78c6e13` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x21546068903b82695c6cc26164b4cd15ad906f60` | StrategyProxy-7 | proxy | live | no |
+| ethereum | `0x21e22315bcfcba1c02fc40903bf02b3bd78c6e13` | VaultProxy-4 | impl | live | no |
 | ethereum | `0x222412af183bceadefd72e4cb1b71f1889953b1c` | Controller | impl | inactive | no |
 | ethereum | `0x22363bb570ed9eb039b2f153a1f0e50aceb9466d` | LiquidityMining | impl | inactive | no |
+| ethereum | `0x22524fd9da2fb68c9603ad32fdd29dd2952bd0a1` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0x225d3e01d3ba0ddf904e1fbb46256f7d3a7e7bf0` | EulerV2SupplyFuse | impl | inactive | no |
 | ethereum | `0x226b2cd64a8b8656423e4426f6b77e1b52a6d167` | ContextManager | impl | live | no |
 | ethereum | `0x227a46266329767cea8883bfc81d21f1ea0edbb3` | VaultProxy | proxy | live | no |
@@ -1088,6 +1373,7 @@
 | ethereum | `0x22d87b298fd83cdfc38616f722d0c47169e9a4d6` | MiltonDai | impl | inactive | no |
 | ethereum | `0x230d3e848d04516826067acb08fa6c5a552d3e62` | VaultProxy | proxy | live | no |
 | ethereum | `0x2357685b07469ee80a389819c7a41edcd70cd88c` | UniVaultProxy | proxy | live | no |
+| ethereum | `0x23c8dc9520df31c69c725c6ed4657ae6cc21cdec` | PlasmaVault-19 | impl | live | no |
 | ethereum | `0x2427da81376a0c0a0c654089a951887242d67c92` | CRVStrategyYCRVMainnet | impl | inactive | no |
 | ethereum | `0x24c562e24a4b5d905f16f2391e07213efcfd216e` | VaultProxy | proxy | live | no |
 | ethereum | `0x254a663790cdaff53204c7072cf0c75231b505ff` | OraclePublisher | impl | inactive | no |
@@ -1105,12 +1391,12 @@
 | ethereum | `0x284d7200a0dabb05ee6de698da10d00df164f61d` | DelayMinter | impl | inactive | no |
 | ethereum | `0x28a139eb3323d5471b5db62443d3bd4824d90442` | MirrorMainnet_mAMZN_UST | impl | inactive | no |
 | ethereum | `0x28bc58e600ef718b9e97d294098abecb8c96b687` | ERC1967Proxy-2 | proxy | inactive | no |
-| ethereum | `0x2941a48956a2bd476eac6671d76921b6b7e8c89b` | StrategyProxy-19 | proxy | live | no |
+| ethereum | `0x2941a48956a2bd476eac6671d76921b6b7e8c89b` | StrategyProxy-21 | proxy | live | no |
 | ethereum | `0x296606a0b0c4560db4c9a650f35340854ca7c6ed` | BasisGoldStrategyMainnet_DAI_BSG | impl | live | no |
 | ethereum | `0x29780c39164ebbd62e9ddde50c151810070140f2` | VaultProxy | proxy | live | no |
 | ethereum | `0x298a92daf7c71ced261c79300a620e8bee54daa6` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x29a88c78c0d52536e487edbf4c0e6a2501b0ac61` | NFT20Strategy_MEME | impl | inactive | no |
-| ethereum | `0x29d322dd088e9b9d1416f43188954f08748fafbb` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x29d322dd088e9b9d1416f43188954f08748fafbb` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x29ec64560ab14d3166222bf07c3f29c4916e0027` | VaultProxy | proxy | live | no |
 | ethereum | `0x2a32dcbb121d48c106f6d94cf2b4714c0b4dfe48` | VaultProxy | proxy | live | no |
 | ethereum | `0x2a7b568729113ab29298d3fae7d46f107637c498` | MerkleDistributorUSDT | impl | inactive | no |
@@ -1118,16 +1404,19 @@
 | ethereum | `0x2a83655c0bb11554f3f13a301b2afc75c99ab2c0` | ComplifiStrategyClaimMainnet_COMFI_WETH | impl | live | no |
 | ethereum | `0x2a8998bfbecfd39136572def74c6df6f9e5600ac` | MiltonSpreadModelUsdc | impl | inactive | no |
 | ethereum | `0x2ab43e7fb17dbbbcc5bb31a7f08e9a2d8baf948d` | Basis2FarmStrategyMainnet_DAI_BASV3 | impl | live | no |
-| ethereum | `0x2b027700173745e6239c928009c5161472f114d0` | ERC1967Proxy-4 | impl | inactive | no |
+| ethereum | `0x2b027700173745e6239c928009c5161472f114d0` | ERC1967Proxy-5 | impl | inactive | no |
 | ethereum | `0x2b7caa7d87c01152a82c266791ada69ccfe64045` | CRVStrategyBUSDMainnet | impl | inactive | no |
 | ethereum | `0x2bb5cafee239687ec1cd0644bb7fd6f4563a4391` | FeeManager | impl | live | no |
 | ethereum | `0x2bd2ba6cca8a9e1ffbcdfe9a3ccf7fb7d4f83ec4` | CRVStrategyStableMainnet | impl | live | no |
+| ethereum | `0x2c10c36028c430f445a4ba9f7dd096a5dcc75d5e` | Erc4626BalanceFuse-3 | impl | inactive | no |
 | ethereum | `0x2c748e4f5247deccafdd5115bbb8646671c17c19` | HardWorkHelper | impl | inactive | no |
 | ethereum | `0x2c92c7f94761746a59cd8d6857ac82168573b732` | Klondike2FarmStrategyMainnet_KXUSD_DAI | impl | inactive | no |
 | ethereum | `0x2ce34b1bb247f242f1d2a33811e01138968efbff` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0x2cf4ceb36172fb2196a47490419d57584234cbd4` | SNXRewardUniLPStrategy | impl | live | no |
+| ethereum | `0x2d1a21f4138a31f978857b28ed6f079408af2792` | PlasmaVault-20 | impl | live | no |
 | ethereum | `0x2de7320004f837925ba31326ff66210be90171ab` | PlasmaVaultBase | impl | live | no |
 | ethereum | `0x2e25800957742c52b4d69b65f9c67abc5ccbffe6` | NoMintRewardPool | impl | live | no |
+| ethereum | `0x2e3266358674c8a54ead81610c3c41033279e7dd` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x2e916cf581547c1641bd259c01507136b4ac6454` | CRVStrategyOBTCMainnet | impl | live | no |
 | ethereum | `0x2eadfb06f9d890eba80e999eaba2d445bc70f006` | CRVStrategyRENBTCMainnet | impl | inactive | no |
 | ethereum | `0x2f54ecc31757b6c068c6c3caef65c35485d651a3` | IdleStrategyWBTCMainnet | impl | live | no |
@@ -1137,24 +1426,27 @@
 | ethereum | `0x307e2752e8b8a9c29005001be66b1c012ca9cdb7` | VaultProxy | proxy | live | no |
 | ethereum | `0x30ade01153cb697bb751cacb6392f49c22558fe0` | FluidProofClaimFuse | impl | inactive | no |
 | ethereum | `0x30ae182cc30d312dd4f2824c635b8dc5f805153c` | AmmTreasuryBaseV2 | impl | inactive | no |
-| ethereum | `0x3151cee0cdb517c0e7db2b55ff5085e7d1809d90` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x3151cee0cdb517c0e7db2b55ff5085e7d1809d90` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x316de40f36da4c54aff11c1d83081555cca41270` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0x318dc5d24bcc71ba0127a45e009b64bdba0c2edf` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x31a69b3d430a08c711faca9c2c0b4a50f593626b` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x323c726c899ca9fb7b747ff61bc30183bdeb3c09` | KlondikeStrategyMainnet_renBTC | impl | live | no |
-| ethereum | `0x32448d412e1821e5fb598291dc2de2ad91a78658` | StrategyProxy-7 | proxy | live | no |
+| ethereum | `0x32448d412e1821e5fb598291dc2de2ad91a78658` | StrategyProxy-8 | proxy | live | no |
 | ethereum | `0x326293feb79193e97d63e1ec3d6bcd774beac8eb` | AmmPoolsLensUsdm | impl | inactive | no |
+| ethereum | `0x32971e61678b0a77a07425f617f83c6d5aecf8e7` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x32ab947e9de950ccc9eb8bf147f94feca7abeae3` | LiquidityMining | impl | inactive | no |
 | ethereum | `0x32d8d5b8b46b15d102c7f2440759d4aaec65ff49` | IporWeighted | impl | inactive | no |
+| ethereum | `0x337b95a972c34e478af17d10750c846c6d5c0062` | StrategyProxy-4 | impl | live | no |
 | ethereum | `0x33a57da38c313520e9348432d314ff54386a1fe3` | LQTYStakingStrategyMainnet | impl | live | no |
-| ethereum | `0x33c5a44fd6e76fc2b50a9187cfeac336a74324ac` | ERC1967Proxy-5 | proxy | inactive | no |
+| ethereum | `0x33c5a44fd6e76fc2b50a9187cfeac336a74324ac` | ERC1967Proxy-6 | proxy | inactive | no |
 | ethereum | `0x33da6b1a05b4afcc5a321aacaa1334bda4345a14` | HardRewards | impl | inactive | no |
-| ethereum | `0x33ed34dd7c40ef807356316b484d595ddda832ab` | VaultProxy-6 | proxy | live | no |
-| ethereum | `0x33fed4ccb4175484a692c83942d4374fcd1a3cd4` | StrategyProxy-20 | proxy | live | no |
+| ethereum | `0x33ed34dd7c40ef807356316b484d595ddda832ab` | VaultProxy-10 | proxy | live | no |
+| ethereum | `0x33fed4ccb4175484a692c83942d4374fcd1a3cd4` | StrategyProxy-22 | proxy | live | no |
 | ethereum | `0x346523a81f16030110e6c858ee0e11f156840bd1` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x3483ad82d405b9ab480ec061dae3c62dbe538cba` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x34d358cd25e4bbdcf7d30887c55fe68e0f25dc65` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x35de0d0f9448b35a09e1e884c7d23a00027fbd8f` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0x361baf77c94f4504691d9f3c463f9950591c9434` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x361baf77c94f4504691d9f3c463f9950591c9434` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x3631a32c959c5c52bc90ab5b7d212a8d00321918` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x364f116352eb95033d73822ba81257b8c1f5b1ce` | AmmStorage | proxy | inactive | no |
 | ethereum | `0x36618ce1615305f3b99eeb9df8d4272e729a81ab` | Spread60Days | impl | inactive | no |
@@ -1165,10 +1457,11 @@
 | ethereum | `0x378c314028071c92efe15d6990b6cf93594fcb9d` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x3790383f8685b439391dc1bc56f7b3f82236f6c7` | StakeService | impl | inactive | no |
 | ethereum | `0x37fb994757856ec994203d01b54adb7ae092bf6f` | AsyncActionBalanceFuse | impl | inactive | no |
-| ethereum | `0x380d1862488e7096a9f16d4f7145c0d9a9e47085` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x380d1862488e7096a9f16d4f7145c0d9a9e47085` | VaultProxy-4 | impl | live | no |
 | ethereum | `0x3843f9b977c5731b0459bb44de6bf8fd3cc18915` | CalculateWeightedLpTokenBalanceEthereum | impl | inactive | no |
 | ethereum | `0x3860bd4f060c2f4b44596b537507ffee9459b3f5` | VaultProxy | proxy | live | no |
 | ethereum | `0x38a40966ab05af4c8c9996253b36b4ac0adaaee2` | IporProtocolRouter | impl | inactive | no |
+| ethereum | `0x390e7ed143bf42ba327dae48a44a48d84168aabd` | AmmTreasuryBaseV1-3 | impl | inactive | no |
 | ethereum | `0x3943568797a280cbc51844c63bc2555c6e49df44` | PlasmaVaultBase-2 | impl | live | no |
 | ethereum | `0x394e653bbfc9a3497a0487abee153ca6498f053d` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0x3952555b3be488f51f0b03315a85560a83c24e04` | CRVStrategyWRenBTCMixMainnet | impl | inactive | no |
@@ -1176,10 +1469,11 @@
 | ethereum | `0x39ad7127896db44389b84c23bfa325e4161c9da3` | OneInchStrategy_ETH_DAI | impl | live | no |
 | ethereum | `0x3a0073726e60fd202fd228a9c88288f331977d04` | CRVStrategyLINKMainnet | impl | live | no |
 | ethereum | `0x3a0f8be248402a85b1557d434074b84e640f3793` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x3a58d6d52d68460cbbda93dd858f4353878ef697` | PlasmaVault-4 | impl | live | no |
-| ethereum | `0x3aae99dfdf99bf86c400b618f470f1d2de94ee51` | ZeroBalanceFuse-2 | impl | inactive | no |
+| ethereum | `0x3a58d6d52d68460cbbda93dd858f4353878ef697` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0x3aae99dfdf99bf86c400b618f470f1d2de94ee51` | ZeroBalanceFuse-3 | impl | inactive | no |
 | ethereum | `0x3ac6556d1d8ff91cc83b9b4cf03178ee9d189b5a` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x3ad9618bc51463d3367de12f6d3ecc3caca2e5f4` | MirrorMainnet_mTWTR_UST | impl | inactive | no |
+| ethereum | `0x3b1dacc212b9420d472c61a3311088c027b967b1` | PlasmaVault-6 | impl | live | no |
 | ethereum | `0x3b219fd68a7bf5c505503d0cb528148a06d98602` | CallbackHandlerEuler | impl | live | no |
 | ethereum | `0x3b808a7d8ccdf8893d1360ff421bef4440376842` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x3b984969b20c7c9db50fe0b7b893565bf25af0db` | VaultMigratorStrategy | impl | inactive | no |
@@ -1197,6 +1491,7 @@
 | ethereum | `0x3da9d911301f8144bdf5c3c67886e5373dcdff8e` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x3db87a14412c488f5ca11b0a214b0e7d2aa910c1` | ContextManager | impl | live | no |
 | ethereum | `0x3df9d7be4017e3d72ea39b96ed4c7070c19eabae` | IporFusionAccessManager-2 | impl | live | no |
+| ethereum | `0x3e9dbaac4290d4ddc5faf23df8829b3204b9c67c` | PlasmaVault-6 | impl | live | no |
 | ethereum | `0x3ecae4fff1bb7f9b54d09972097789e00b31e800` | OneInchStrategy_1INCH_WBTC | impl | live | no |
 | ethereum | `0x3eea8a8967c3c56967f46597613ccc633b5eca9e` | MiltonSpreadModelUsdt | impl | inactive | no |
 | ethereum | `0x3f16b084ff94c8a3f5a1b60834046f1febd15595` | UniVaultProxy | proxy | live | no |
@@ -1204,40 +1499,41 @@
 | ethereum | `0x3f68a6a4fca2e6b85d041a53eb4090f6ac3311f5` | WrappedPlasmaVaultFactory | impl | inactive | no |
 | ethereum | `0x3f8861d92e7470c63731a590d8e3e7b37cce5ad7` | VaultProxy | impl | live | no |
 | ethereum | `0x4050475bf052c25f2a66b5eae7254e1c7a0cf806` | VaultMigratorStrategy | impl | inactive | no |
-| ethereum | `0x405fe1198edabae6a85c494dcf09f7be6a957b1d` | StrategyProxy-8 | proxy | live | no |
+| ethereum | `0x405fe1198edabae6a85c494dcf09f7be6a957b1d` | StrategyProxy-9 | proxy | live | no |
 | ethereum | `0x406812ac6f106f7d53b4181d42342e2565428be1` | AmmPoolsServiceStEth | impl | inactive | no |
 | ethereum | `0x40c34b0e1bb6984810e17474c6b0bcc6a6b46614` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x40d94aefec6ac00fa80689a38135d83eeaa58999` | StrategyProxy-21 | proxy | live | no |
+| ethereum | `0x40d94aefec6ac00fa80689a38135d83eeaa58999` | StrategyProxy-23 | proxy | live | no |
 | ethereum | `0x4157bebdebb508a62874c841b07ae4013db8b274` | LiftStrategyMainnet_wBTC_lfBTC | impl | live | no |
 | ethereum | `0x41e34756a7772a4ca1115afbe2e2afbd1b0172cf` | AmmSwapsLens | impl | inactive | no |
 | ethereum | `0x4214625e00fc03b05a226e592768df50eea0b91f` | NoopStrategyStable | impl | inactive | no |
 | ethereum | `0x421c69eaa54646294db30026aee80d01988a6876` | IporOracle | proxy | inactive | no |
 | ethereum | `0x4230ff3aed735f4715b56347d3427d6361df31d7` | NFT20Strategy_ROPE | impl | inactive | no |
 | ethereum | `0x4282b7b7d3d8826a058028ee0279c3f830481191` | VaultProxy | proxy | live | no |
+| ethereum | `0x428691bf4313981a8c008f4c5c93fbb677c6d585` | PlasmaVault-5 | impl | live | no |
 | ethereum | `0x43286f57cf5981a5db56828df91a46cfab983e58` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x4329e2178d41d058cf2808c11436a9e83bc5d8b0` | WstETHPriceFeedEthereum | impl | inactive | no |
-| ethereum | `0x43a32d4f6c582f281c52393f8f9e5ace1d4a1e68` | PlasmaVault-3 | proxy | live | no |
-| ethereum | `0x43dd45cfddb3798096c3dd38612252d36e2d3a62` | VaultProxy-2 | impl | live | no |
-| ethereum | `0x43ee0243ea8cf02f7087d8b16c8d2007cc9c7ca2` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x43a32d4f6c582f281c52393f8f9e5ace1d4a1e68` | PlasmaVault-4 | proxy | live | no |
+| ethereum | `0x43dd45cfddb3798096c3dd38612252d36e2d3a62` | VaultProxy-4 | impl | live | no |
+| ethereum | `0x43ee0243ea8cf02f7087d8b16c8d2007cc9c7ca2` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x44173f2fb495c0c397b9d66110bfacd5a626cc7a` | InvestmentVaultStrategy | impl | live | no |
 | ethereum | `0x44356324864a30216e89193bc8b0f6309227d690` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x446f855e5cbed2be262b00954f0fdfefab700153` | ContextManager | impl | live | no |
-| ethereum | `0x44fa58099a9d51093b6d1523f8beb4c87426158b` | StrategyProxy-8 | impl | inactive | no |
-| ethereum | `0x4503af30fe799c4677cf5814ec8160efc98af72e` | StrategyProxy-22 | proxy | live | no |
+| ethereum | `0x44fa58099a9d51093b6d1523f8beb4c87426158b` | StrategyProxy-9 | impl | inactive | no |
+| ethereum | `0x4503af30fe799c4677cf5814ec8160efc98af72e` | StrategyProxy-24 | proxy | live | no |
 | ethereum | `0x4508ce1ab61fccac39ba28ff0e7acd5823e8c0f0` | AmmStorage | impl | inactive | no |
 | ethereum | `0x45209c7f307894fd19fb0560827107b7c4bdcab8` | MidasRequestSupplyFuse | impl | inactive | no |
 | ethereum | `0x45336f3fa7b0f6e030f60eada71de147bff1493e` | SpreadStorageService | impl | inactive | no |
-| ethereum | `0x45809a7b6e47cf134d09598df4aacb44c95ec2bc` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x45809a7b6e47cf134d09598df4aacb44c95ec2bc` | VaultProxy-4 | impl | live | no |
 | ethereum | `0x45a760b3e83ff8c107c4df955b1483de0982f393` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x45a78debfb4d9e94836dc1680d7faf32b3994a83` | UniVaultProxy | proxy | live | no |
 | ethereum | `0x45a9e027ddd8486fad6fca647bb132ad03303ec2` | VaultProxy | proxy | live | no |
 | ethereum | `0x45d0e14d946990c5fce42b95195b15f27974c115` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x45d17d7c638a0ab6ec4eb736f87313d91effbbd5` | OneInchStrategy_ETH_ONEINCH | impl | live | no |
 | ethereum | `0x45f3bf4f5318d9683357fa8f9f4442263f7dda6f` | EulerV2BatchFuse | impl | live | no |
-| ethereum | `0x468de989457f45c7bba362227274ae67e96d7b76` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0x468de989457f45c7bba362227274ae67e96d7b76` | WithdrawManager-4 | impl | live | no |
 | ethereum | `0x46a361b9ae9ddaaf95dd263633c0bff61a03dc52` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0x46ec909099f9691b43b64413f1bc662edfbee00a` | SNXRewardUniLPStrategy | impl | live | no |
-| ethereum | `0x470c3a35daf7e64748f8f2187937f69105baa37f` | ERC1967Proxy-5 | impl | inactive | no |
+| ethereum | `0x470c3a35daf7e64748f8f2187937f69105baa37f` | ERC1967Proxy-6 | impl | inactive | no |
 | ethereum | `0x473285a1ead29ee13ba33c67f937ffea39a197b0` | MiltonUsdt | impl | inactive | no |
 | ethereum | `0x4752db62083b71c6af1aed227305572f36882a96` | LiquidityRecipient | impl | inactive | no |
 | ethereum | `0x476c44e60a377c1d23877e9dd2955c384b2dcd8c` | AmmSwapsLens | impl | inactive | no |
@@ -1246,102 +1542,121 @@
 | ethereum | `0x47f4fc5706a10a605b41b7f791740086323d21cc` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x48473e51a1c50b6de5981ec4faec4620a8b4ffad` | VaultProxy | proxy | live | no |
 | ethereum | `0x489c78aa0969118439176c14af22b3b56bd1d46e` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0x48bd852d83f6e58af59255abc708e3ddecb1d1e6` | ZeroBalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x4938960c507a4d7094c53a8cddcf925835393b8f` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x49938d0e7ab1f224ac091058e8638e4b8da08da6` | IdleStrategyUSDTMainnet | impl | inactive | no |
+| ethereum | `0x49cceda0d17d533edc103ceef57ba057c4527c06` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x49f2825fbcd6cb2b0d13ebdf44457e15b0a3a8b0` | MiltonSpreadModelUsdt | impl | inactive | no |
 | ethereum | `0x4a6a553d28913c0308474b9c10f34146f972c7c2` | MirrorMainnet_mNFLX_UST | impl | inactive | no |
 | ethereum | `0x4b1cbd6f6d8676ace5e412c78b7a59b4a1bbb68a` | VaultProxy | proxy | live | no |
-| ethereum | `0x4bf633a09bd593f6fb047db3b4c25ef5b9c5b99e` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0x4ba0f214d1b7f572d11dabe8fe0be9c99e25e6fd` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0x4bf633a09bd593f6fb047db3b4c25ef5b9c5b99e` | VaultProxy-9 | proxy | live | yes |
 | ethereum | `0x4bfea07593844155c0bd5ee656ce54e864ca9b55` | EulerV2ControllerFuse-2 | impl | inactive | no |
-| ethereum | `0x4c992088252441ee1840ad0213bf27e7b8825064` | StrategyProxy-11 | proxy | live | no |
+| ethereum | `0x4c992088252441ee1840ad0213bf27e7b8825064` | StrategyProxy-12 | proxy | live | no |
 | ethereum | `0x4c9a6f37b3552777c06b1cc9e6041612d564a2b0` | SoapIndicatorRebalanceLogic | impl | inactive | no |
-| ethereum | `0x4cad48bf9a362d3576d2aacd5fd0dbd4f9e9fab8` | StrategyProxy-23 | proxy | live | no |
+| ethereum | `0x4cad48bf9a362d3576d2aacd5fd0dbd4f9e9fab8` | StrategyProxy-25 | proxy | live | no |
 | ethereum | `0x4d4b6f8efb685b774234fd427201b3a9bf36ffc8` | VaultProxy | proxy | live | no |
 | ethereum | `0x4d4d85c6a1ffe6bb7a1bef51c9e2282893fee521` | VaultProxy | proxy | live | no |
+| ethereum | `0x4d99e7e470a3fc64d4b4b25304c74ad8413bddb3` | PlasmaVault-6 | impl | live | no |
+| ethereum | `0x4dca6fd6f153ee18602ac77b4396070476ec6c25` | EulerV2ControllerFuse-3 | impl | inactive | no |
+| ethereum | `0x4de58c0cdbf95e875e741a7ce90c72397a7d3e23` | PlasmaVault-7 | impl | live | no |
 | ethereum | `0x4de6cd6c558e7b5b4af26e0e3ae3056318f31b86` | NFT20Strategy_ROPE | impl | live | no |
 | ethereum | `0x4e015af8e1c5eb020f91063661cc5ce43719ebcf` | WETHCreamNoFoldStrategy | impl | inactive | no |
 | ethereum | `0x4e0b22a5052b640967c55b92401b1c067fda53e0` | UniversalTokenSwapperWithVerificationFuse-2 | impl | inactive | no |
 | ethereum | `0x4e3c90d8eb0f12e86f2b9f00d21f625f4c83575b` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x4ef45eccc64e4bb36b9c46b9ad353855a48016d1` | AmmOpenSwapService | impl | inactive | no |
 | ethereum | `0x4f1f516654cdf103c2be26210943d380ebaa3dd2` | ContextManager | impl | live | no |
-| ethereum | `0x4f4f1613e9bb13e874d1d066dfeb2aacfe84ef8c` | ERC1967Proxy-4 | impl | inactive | no |
+| ethereum | `0x4f4f1613e9bb13e874d1d066dfeb2aacfe84ef8c` | ERC1967Proxy-5 | impl | inactive | no |
 | ethereum | `0x4f7c28ccb0f1dbd1388209c67eec234273c878bd` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x4f7ef28c5416b536a7baefb14fdd3dda37bda46d` | AmmGovernanceService | impl | inactive | no |
+| ethereum | `0x4f9a5893cedf67cd01904da919b191826a2e256e` | PlasmaVault-27 | impl | live | no |
 | ethereum | `0x5038734aeed0a287ea4368fb338315a501b3ab72` | ContextManager | impl | live | no |
 | ethereum | `0x50dccf8f83cce8aa9168637c2ec0114ae934f6d1` | UniVaultProxy | proxy | live | no |
 | ethereum | `0x50f1191f3059069888d9e16a327b96afdd26c6fd` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0x50f3cfb398a25a5918b27c77465e9c3ede7888b7` | CRVStrategyUSDNMainnet | impl | inactive | no |
 | ethereum | `0x516658d83a68747c34fd5aecba7068ad4bd4783d` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x51ebe128f197bbf087ce79db51960eb6e86bbf0f` | Basis2FarmStrategyMainnet_BAC_DAIV4 | impl | live | no |
-| ethereum | `0x5258a2be7c16215175faf28486d248af5d4ff5f8` | StrategyProxy-12 | proxy | live | no |
-| ethereum | `0x526d0047725d48bbc6e24c7b82a3e47c1af1f62f` | ERC1967Proxy-6 | proxy | inactive | no |
+| ethereum | `0x5258a2be7c16215175faf28486d248af5d4ff5f8` | StrategyProxy-13 | proxy | live | no |
+| ethereum | `0x526d0047725d48bbc6e24c7b82a3e47c1af1f62f` | ERC1967Proxy-7 | proxy | inactive | no |
 | ethereum | `0x52d8f04f071dd397c71514853a58664613b91192` | CRVStrategySTETHMainnet | impl | live | no |
 | ethereum | `0x5334cf3a2006f05f879f8677a6a1fb94c6ba7861` | Klondike2FarmStrategyMainnet_WBTC_KBTC | impl | live | no |
 | ethereum | `0x5365a2c47b90ee8c9317fac20edc3ce7037384fb` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0x5367835812d64e18c78e4dac78decfc3b77a91a9` | PlasmaVault-7 | impl | live | no |
 | ethereum | `0x538613a19eb84d86a4ccfcb63548244a52ab0b68` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x53b4c5efcd68001f64fa3ee4f602e283efb288d9` | IporWeighted | impl | inactive | no |
-| ethereum | `0x53ecc250d70c9f8b88edb817a9097c6caac81a6b` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x53ecc250d70c9f8b88edb817a9097c6caac81a6b` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x54740125e6ec6d66b06c7317182cfbce7a2a8079` | NarwhaleStrategyMainnet_ESD | proxy | live | no |
 | ethereum | `0x54941af9eff1484df58e250fe2fd3d79054ba269` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x54c860323ccd609405a18e46b0f799beb5df5d50` | UniversalTokenSwapperFuse-2 | impl | inactive | no |
 | ethereum | `0x5526f8ff02d9ba6540c625e1bc51e440c7fcb165` | FloatStrategyMainnet_DAI | impl | live | no |
-| ethereum | `0x56cfc57bc1c5b40dc739b88fbebcc96b05056bb6` | StrategyProxy-24 | proxy | live | no |
+| ethereum | `0x560c836581476a95b5adf65b1986fba3cf7772f0` | Erc4626BalanceFuse-2 | impl | inactive | no |
+| ethereum | `0x56cfc57bc1c5b40dc739b88fbebcc96b05056bb6` | StrategyProxy-26 | proxy | live | no |
 | ethereum | `0x56db0fbaea64d776b64a4a5824e47f6465a5433c` | CRVStrategyStableMainnet | impl | live | no |
+| ethereum | `0x56e76720dcf764a32766c5c0c7f3827ba8b4af56` | PlasmaVault-14 | impl | live | no |
 | ethereum | `0x5765d00dee4cb808b266a46411059a518795294c` | AmmPoolsServiceUsdm | impl | inactive | no |
 | ethereum | `0x5774260ccd87f4fffc4456260857207fc8bcb89a` | VaultProxy | proxy | live | no |
 | ethereum | `0x578ba09c35532e878764c54e879308dbf82973c2` | AmmCloseSwapServiceStEth | impl | inactive | no |
-| ethereum | `0x5833e0b0ddd01e2a70e18cf6c6288ca8802a42e8` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x57d771f5b266f57775e0247dc8b7b9d427ba6508` | PlasmaVault-5 | impl | live | no |
+| ethereum | `0x5833e0b0ddd01e2a70e18cf6c6288ca8802a42e8` | VaultProxy-4 | impl | live | no |
 | ethereum | `0x586a819aad974f6ef49e2bd425a7526f3f2551f4` | EbisuZapperCreateFuse | impl | inactive | no |
 | ethereum | `0x586ac86675bd933c4b9a26c55b6e62b6496d49eb` | PowerToken | impl | inactive | no |
-| ethereum | `0x58703da5295794ed4e82323fcce7371272c5127d` | ERC1967Proxy-6 | proxy | inactive | no |
+| ethereum | `0x58703da5295794ed4e82323fcce7371272c5127d` | ERC1967Proxy-7 | proxy | inactive | no |
 | ethereum | `0x587a7ae8220f61fc72966aa0e0edc69135b76aef` | FeeManagerFactory | impl | live | no |
 | ethereum | `0x58f50b191048f29d2af12cd0ece48eea79f4cb9b` | ContextManager | impl | live | no |
-| ethereum | `0x5904da6c07a15884ff9c480f240bc57fe9032eb2` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0x5903e1aeec722943cc5f816cb8c688b30777b2dd` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0x5904da6c07a15884ff9c480f240bc57fe9032eb2` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x5905569d78ed1fa22299eab74ef0443d02b40000` | CRVStrategyHUSDMainnet | impl | inactive | no |
 | ethereum | `0x59258f4e15a5fc74a7284055a8094f58108dbd4f` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x596355e19910dd683c294906df14ed212f76411c` | StrategyProxy-25 | proxy | live | no |
+| ethereum | `0x596355e19910dd683c294906df14ed212f76411c` | StrategyProxy-27 | proxy | live | no |
 | ethereum | `0x59a87ab7407371b933cad65001400342519a79bb` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0x59b5562455b6db440265e0ae63dab8d59fe4c16b` | StrategyProxy-26 | proxy | live | no |
+| ethereum | `0x59b5562455b6db440265e0ae63dab8d59fe4c16b` | StrategyProxy-28 | proxy | live | no |
 | ethereum | `0x59da0ce05cfcf0da3257a96446e5b98edb788c25` | FluidInstadappClaimFuse | impl | inactive | no |
-| ethereum | `0x59e58d1a800426df9fddddbd248da0acc4d38f89` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x59e58d1a800426df9fddddbd248da0acc4d38f89` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x59eeb34065db1621c68d26f37ffeff3a89e5fa8b` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x5a1cf5e3cee2463de40206d9b62125218b4c50c2` | AmmSwapsLens | impl | inactive | no |
 | ethereum | `0x5a4fc8f98ca356b7e957d18c155bc62e32d21ec3` | PowerTokenLens | impl | inactive | no |
+| ethereum | `0x5a5f437f0c481ace6cda50355bd4bacc8918aa01` | PlasmaVault-21 | impl | live | no |
 | ethereum | `0x5aab6c393c641b1ab1f32e61f9a81640008c22b0` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x5ade382f38a09a1f8759d06ffe2067992ab5c78e` | VaultProxy | proxy | live | no |
 | ethereum | `0x5b05841aa46db37510e65ea6e61a569e9c20e393` | CallbackHandlerReader | impl | live | no |
 | ethereum | `0x5b1a6b2e6af64e74275015a65687de0ca941f537` | SyrupClaimFuse | impl | inactive | no |
+| ethereum | `0x5b7aecdc033968ccbf74f529f7de39df727b5c81` | WithdrawManager-3 | impl | live | no |
 | ethereum | `0x5b96d6b56d4051cb54269f3620c262db22366194` | IdleStrategyUSDTMainnet | impl | inactive | no |
 | ethereum | `0x5bd997039fff16f653ef15d1428f2c791519f58d` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x5be6e757763a3b7106d211df5017823366ce3c1e` | StakeDaoV2SupplyFuse | impl | inactive | no |
 | ethereum | `0x5c0a3f55aac52aa320ff5f280e77517cbaf85524` | VaultProxy | proxy | live | no |
 | ethereum | `0x5c49e0386215077d1a3ecc425cc30ce34ec08b60` | UniVaultProxy | proxy | live | no |
-| ethereum | `0x5c5f87cabdeb5c57192174ef11b2ce6625f0c7a5` | VaultProxy-2 | impl | live | no |
-| ethereum | `0x5c6cdf14ff13851a38a1cb44973439aeb1f871da` | VaultProxy-6 | impl | live | no |
+| ethereum | `0x5c5f87cabdeb5c57192174ef11b2ce6625f0c7a5` | VaultProxy-4 | impl | live | no |
+| ethereum | `0x5c6cdf14ff13851a38a1cb44973439aeb1f871da` | VaultProxy-10 | impl | live | no |
+| ethereum | `0x5cb733ecaf07681c0e79f76b7b02844b66208a71` | PlasmaVault-28 | impl | live | no |
 | ethereum | `0x5cd9db40639013a08d797a839c9becd6ec5dcd4d` | VaultProxy | proxy | live | no |
-| ethereum | `0x5d9d25c7c457dd82fc8668ffc6b9746b674d4ecb` | VaultProxy-3 | proxy | live | yes |
-| ethereum | `0x5ddd768bae05b01828ea58167f76efa2e7787d88` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0x5d4474a85b445671bd0d33da944036d9522b9a9a` | Erc4626BalanceFuse-2 | impl | inactive | no |
+| ethereum | `0x5d9d25c7c457dd82fc8668ffc6b9746b674d4ecb` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0x5d9f02e85cccec44450c4c9c5bc71fb09bc3c71a` | PlasmaVault-29 | impl | live | no |
+| ethereum | `0x5ddd768bae05b01828ea58167f76efa2e7787d88` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x5e10a2a23393118306cce080e3d3fc5447d0151b` | CRVStrategyHBTCMainnet | impl | inactive | no |
+| ethereum | `0x5e1af85b66a45cdb87d38bcf34ac7d43274e0dac` | StrategyProxy-29 | impl | live | no |
 | ethereum | `0x5e3654082406519e35a5426bb54f29d2651bd1c4` | SwapExecutorEth-3 | impl | inactive | no |
-| ethereum | `0x5e58d1f3c9155c74fc43dbbd0157ef49bafa6a88` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x5e58d1f3c9155c74fc43dbbd0157ef49bafa6a88` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x5ea131eab385386538b2d6ad117f87c58e9a262e` | Klondike2FarmStrategyMainnet_WBTC_KLONX | impl | inactive | no |
 | ethereum | `0x5ea74c6abf0e523fdecfe218ccb3d2fde2339613` | VaultProxy | proxy | live | no |
 | ethereum | `0x5ed17ca557359eab39fea1de8240bac4b9c7beca` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x5f4829b14a27e73dcbd1c9238d8c4fc9a594c1d2` | MiltonStorage | impl | inactive | no |
-| ethereum | `0x5f5fb79ff63a39bebe72d724ce8d5f72fd1003fc` | StrategyProxy-27 | proxy | live | no |
+| ethereum | `0x5f5fb79ff63a39bebe72d724ce8d5f72fd1003fc` | StrategyProxy-30 | proxy | live | no |
 | ethereum | `0x604925ad5b715f32f6ed4b3edc8de89d764dc583` | VaultProxy | proxy | live | no |
 | ethereum | `0x6055d7f2e84e334176889f6d8c3f84580ca4f507` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x6091bbf60ca294f223b03b7c05f98cae1226363f` | LiftStrategyMainnet_lfBTC_LIFT | impl | live | no |
-| ethereum | `0x610a02867877cf9438438d85a33230c4366e1354` | StrategyProxy-9 | proxy | live | no |
+| ethereum | `0x610a02867877cf9438438d85a33230c4366e1354` | StrategyProxy-10 | proxy | live | no |
 | ethereum | `0x611ac252ed4bf54b7980ff64bc94058f5dcb5bb2` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x61e7c4d48285f02ef6f60153508bd9ed0b3ad37f` | BancorDex | impl | inactive | no |
 | ethereum | `0x61ecfe8eb3522ec685c70f4732cf32c39cfd7d36` | Basis2FarmStrategyMainnet_DAI_BAS | impl | live | no |
 | ethereum | `0x622827f76a106aa9f4399d8e2f5ff9822a593f2e` | AmmStorage | impl | inactive | no |
 | ethereum | `0x623750823f8cf4fa1b804723be024d56e1673d95` | AmmCloseSwapServiceUsdc | impl | inactive | no |
-| ethereum | `0x62679b25956d525703c810a6c13e2324312649e8` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x62679b25956d525703c810a6c13e2324312649e8` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x6291ece696cb6682a9bb1d42fca4160771b1d7cc` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x62f21e688ed98764668ae86fcf6bb812131e7ead` | VaultMigratorStrategy | impl | inactive | no |
-| ethereum | `0x630d435934e07151db105d2d43bf5a3d3705e781` | StrategyProxy-28 | proxy | live | no |
+| ethereum | `0x630d435934e07151db105d2d43bf5a3d3705e781` | StrategyProxy-31 | proxy | live | no |
+| ethereum | `0x63395edaf74a80aa1155db7cd9bba976a88dee4e` | ERC1967Proxy-15 | proxy | inactive | no |
 | ethereum | `0x633c4861a4e9522353eda0bb652878b079fb75fd` | VaultProxy | proxy | live | no |
 | ethereum | `0x63671425ef4d25ec2b12c7d05de855c143f16e3b` | VaultProxy | impl | live | no |
 | ethereum | `0x636a37802da562f7d562c1915cc2a948a1d3e5a0` | MithCash2FarmStrategyMainnet_MIS_USDT | impl | live | no |
@@ -1351,12 +1666,14 @@
 | ethereum | `0x64035b583c8c694627a199243e863bb33be60745` | VaultProxy | proxy | live | no |
 | ethereum | `0x640704d106e79e105fda424f05467f005418f1b5` | VaultProxy | proxy | live | no |
 | ethereum | `0x6416e385f08421f524e2c7335444e56e897f7ddd` | AssetManagementUsdt | impl | inactive | no |
+| ethereum | `0x641b81e993e1c52a74a84caf17f1ad50a49675b3` | UniversalTokenSwapperFuse-3 | impl | inactive | no |
 | ethereum | `0x644149b80028622d02a25d4825188c7e1e831069` | MiltonStorage | impl | inactive | no |
 | ethereum | `0x6447ed2e0a95f8df84a82beacbb17a003b6a2d5e` | IdleStrategyUSDCMainnet | impl | live | no |
 | ethereum | `0x648c7b8882dd79a6d36cba3164c0160b84ec7e1e` | VestingMerkleDistributor | impl | inactive | no |
-| ethereum | `0x64d47d8516034857c6fc040ecd405e03643a464f` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x64d47d8516034857c6fc040ecd405e03643a464f` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x654ff36e03d51a8710917b9fe4162e0e3ad776b1` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x6555c79a8829b793f332f1535b0efb1fe4c11958` | NoMintRewardPool | impl | live | no |
+| ethereum | `0x6558eb96c61ccb8b23cfa26a6b91facd6a0ab162` | PriceOracleMiddlewareManager-2 | impl | live | no |
 | ethereum | `0x6561e55a43545bcc9eae3202f3075b3dc5283e90` | IdleStrategyWBTCMainnet | impl | inactive | no |
 | ethereum | `0x6589fe1271a0f29346796c6baf0cdf619e25e58e` | Grain | impl | live | no |
 | ethereum | `0x65fefab5ebeb38cbde82c4c20e226834db15ed9f` | Basis2FarmStrategyMainnet_BAC_DAI | impl | live | no |
@@ -1367,6 +1684,7 @@
 | ethereum | `0x677ad66025063be55b070685e618a84ff3dd62be` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x67d0904de3c9b3df44d5c1e11e83d0971d717c54` | MirrorMainnet_mNFLX_UST | impl | inactive | no |
 | ethereum | `0x683e683fbe6cf9b635539712c999f3b3edcb8664` | VaultProxy | proxy | live | no |
+| ethereum | `0x6857b21d872141e960d2eac6f92480c2c666e0c7` | PlasmaVault-14 | impl | live | no |
 | ethereum | `0x68e6aa634b22dd28c4c22cc9fc4c1900e8bea90b` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0x6945f180b339825ac734649c12a1557e93b2b73a` | CRVStrategyYCRVMainnet | impl | inactive | no |
 | ethereum | `0x694a3ab31241d2c49f93eac5a4f3b05c6fb7964b` | CRVStrategyStableMainnet | impl | live | no |
@@ -1375,21 +1693,23 @@
 | ethereum | `0x695d748aba7c7946bcf3a4cdda607ecad268de3a` | ContextManager | impl | live | no |
 | ethereum | `0x6966defb920d4d0aa8886feddc7f84e1b1c5a318` | AmmPoolsServiceWeEth | impl | inactive | no |
 | ethereum | `0x69672c04601d62ce5f161a258ff24e03914b60a6` | ComplifiStrategyMainnet_COMFI_WETH | impl | live | no |
-| ethereum | `0x6a19aea134cc3c6069b2d89b5a1042cabc683cde` | StrategyProxy-29 | proxy | live | no |
+| ethereum | `0x69c121cd7f5e962c2698ae9352db1a0d751d5532` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0x6a19aea134cc3c6069b2d89b5a1042cabc683cde` | StrategyProxy-32 | proxy | live | no |
 | ethereum | `0x6a259c315c7c7c0a00c57768c3beb99502e7eb48` | MiltonUsdc | impl | inactive | no |
 | ethereum | `0x6ac4a7ab91e6fd098e13b7d347c6d4d1494994a2` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x6ac7575a340a3dab2ae9ca07c4dbfc6bf8e7e281` | CRVStrategySwerveDAIMainnet | impl | inactive | no |
+| ethereum | `0x6aeb7b0abd625f493f45f6d413421c6bef064b1a` | StrategyProxy-4 | impl | live | no |
 | ethereum | `0x6b2245bdf3de7b252d8dd15a902cd0e97e1b422f` | MirrorMainnet_mTSLA_UST | impl | inactive | no |
 | ethereum | `0x6b339a926328b9a5a5705fd051aa5028d9f7f2f6` | EulerV2BorrowFuse-2 | impl | inactive | no |
 | ethereum | `0x6b477831b8af02393f1fedd36956418ce9927894` | Basis2FarmStrategyMainnet_BAC_DAIV2 | impl | live | no |
 | ethereum | `0x6b4e1e0656dd38f36c318b077134487b9b0cf7a6` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x6b506e285772227377ff4b7bc5b4a4b0b485a502` | NoopStrategyStable | impl | inactive | no |
 | ethereum | `0x6b671290b51446c4cd01a2731f72fda1d180f270` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0x6b9489369015233e049f548ce6c0dedcf17bfb90` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x6b9489369015233e049f548ce6c0dedcf17bfb90` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x6bcb297e56709ecb5a5f546309da4fce6d245467` | MiltonSpreadModelUsdc | impl | inactive | no |
 | ethereum | `0x6bccd7e983e438a56ba2844883a664da87e4c43b` | VaultProxy | proxy | live | no |
 | ethereum | `0x6bf0ff8767f488a91cf63ace04881660e20385c9` | PriceOracleMiddleware | impl | inactive | no |
-| ethereum | `0x6c0bc8a9df387c499a7e22201c4a6589b6007e46` | StrategyProxy-8 | proxy | live | no |
+| ethereum | `0x6c0bc8a9df387c499a7e22201c4a6589b6007e46` | StrategyProxy-9 | proxy | live | no |
 | ethereum | `0x6cb5e2fc7c258a1ec07f6a251f8e67a4e485812f` | Klondike2FarmStrategyMainnet_WBTC_KBTCV2 | impl | live | no |
 | ethereum | `0x6ce6b6c9bda2348dea69d827314e2c1419843792` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x6cf5a86713b245623216faea3fcec3915a02ff18` | VestingMerkleDistributor | impl | inactive | no |
@@ -1404,15 +1724,15 @@
 | ethereum | `0x6f14165c6d529ea3bfe1814d0998449e9c8d157d` | VaultProxy | proxy | live | no |
 | ethereum | `0x6f18b9f56bdee7f3b930804004629670f300787d` | ERC1967Proxy-8 | impl | inactive | no |
 | ethereum | `0x6f4506e47277ed3a816422a17b7f7d697edc5944` | ERC1967Proxy-2 | impl | inactive | no |
-| ethereum | `0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x6f8a975758436a5ec38d2f9d2336504430465517` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x6fc653ce2190289d7ee4a4cb557b348600d85334` | VaultMigratorStrategy | impl | inactive | no |
-| ethereum | `0x707d816272ed15174c72f92eccc4149d1dcb7a80` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0x707d816272ed15174c72f92eccc4149d1dcb7a80` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x708b1066dc5840a125510e9c1c3b22f3fa6ed47d` | VaultProxy | proxy | live | no |
 | ethereum | `0x7130383298822097531cf5cc5e3414dda1e09542` | PlasmaVaultRequestSharesFuse | impl | live | no |
 | ethereum | `0x71316a3465e0fbcd08e665d6675caa8f7b1dd40a` | NotifyHelperStateful | impl | live | no |
 | ethereum | `0x719d70457658358f2e785b38307cfe24071b7417` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0x71b9ec42bb3cb40f017d8ad8011be8e384a95fa5` | VaultProxy-3 | proxy | live | yes |
+| ethereum | `0x71b9ec42bb3cb40f017d8ad8011be8e384a95fa5` | VaultProxy-5 | proxy | live | yes |
 | ethereum | `0x720e64a1c8912ba48ddf7ca7076ef016fab144ee` | CockpitDataProvider | proxy | inactive | no |
 | ethereum | `0x72c50e6fd8cc5506e166c273b6e814342aa0a3c1` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x72f8561b41fade563be5ca245545e9bacb906283` | MiltonUsdt | impl | inactive | no |
@@ -1420,13 +1740,16 @@
 | ethereum | `0x743bd82331cae227fa2c8c97f345a6846f8383b1` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x74714bc6fbf7c2dfabc7650dd40e97f05e8b2c12` | WrappedPlasmaVault-2 | impl | inactive | no |
 | ethereum | `0x747318cf3171d4e2a1a52bbd3fcc9f9c690448b4` | NoMintRewardPool | impl | live | no |
-| ethereum | `0x7497fd6fad202d2236775b8519827aaae7235262` | StrategyProxy-10 | proxy | live | no |
+| ethereum | `0x7497fd6fad202d2236775b8519827aaae7235262` | StrategyProxy-11 | proxy | live | no |
 | ethereum | `0x74ca34c2c47d0865856a54060246ab736a0bb0d0` | UpdateWithdrawManagerMaintenanceFuse | impl | inactive | no |
 | ethereum | `0x74fad021134e5851896fa58f536981c6eb4da5e6` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x75071f2653fbc902ebaff908d4c68712a5d1c960` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x7520c967cad6d872c8b0fa1444ed3ed26025015b` | ERC1967Proxy-12 | proxy | inactive | no |
 | ethereum | `0x754b632c4b4b7a308fa960c434f21c5d252cb257` | InvestmentVaultStrategy | impl | live | no |
+| ethereum | `0x75742cc3d48720de065814428f62622c56db6a86` | WithdrawManager-2 | impl | live | no |
+| ethereum | `0x757e1bb7ade1ee157690b2c2d600a5a87cfb7058` | WrappedPlasmaVault | impl | inactive | no |
 | ethereum | `0x758e7d537fc3233ccb77a634a9419eabcf621a7e` | LiquidityMining | impl | inactive | no |
+| ethereum | `0x759ddf11e56d2915fe10ea8c4dbfc44a8d048e6e` | ZeroBalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x75c99182a70ed72623748e041746b11f70b7bf5b` | ContextManager | impl | live | no |
 | ethereum | `0x7674622c63bee7f46e86a4a5a18976693d54441b` | VaultProxy | proxy | live | no |
 | ethereum | `0x768762712eca97bc9ec930320d3ee0bd91a358fb` | SpreadBaseV1 | impl | inactive | no |
@@ -1436,22 +1759,26 @@
 | ethereum | `0x7724844189cd0bb08caad3d2f47d826ecb33afe5` | ComplifiStrategyClaimMainnet_COMFI_WETH | proxy | live | no |
 | ethereum | `0x77bf38d1963cab600d6673c3e5396a8ce8ff549c` | CalculateWeightedLpTokenBalanceEthereum | impl | inactive | no |
 | ethereum | `0x77ee32430ca49f99b590782f5ff83405272f0676` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0x77fcae921e3df22810c5a1ac1d33f2586bba028f` | ERC1967Proxy-6 | proxy | inactive | no |
-| ethereum | `0x77fe3a8e8d1d73df54ca07674bf1bd6c5841e3b5` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0x77fcae921e3df22810c5a1ac1d33f2586bba028f` | ERC1967Proxy-7 | proxy | inactive | no |
+| ethereum | `0x77fcb2c2c7ea27f97a47bd9641677d297382a8a9` | StrategyProxy-4 | impl | live | no |
+| ethereum | `0x77fe3a8e8d1d73df54ca07674bf1bd6c5841e3b5` | ERC1967Proxy-5 | proxy | inactive | no |
 | ethereum | `0x78034b17f80c6209400b26ab7b217c31f87ae119` | AmmOpenSwapService | impl | inactive | no |
+| ethereum | `0x784008e32c9f07d564f272ff8d6ea746e6842c1b` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0x7846bed0b55048db0e6a5388b89e92f091984d59` | PauseFunctionPreHook | impl | inactive | no |
 | ethereum | `0x7882172921e99d590e097cd600554339fbdbc480` | UniversalLiquidatorRegistry | impl | inactive | no |
 | ethereum | `0x78c3e52db6abee5cbd353a429e4c88b23e36b089` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0x78cc1353b07a049f39b68e24a0670859ef7a64fe` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0x78cc1353b07a049f39b68e24a0670859ef7a64fe` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0x78dbf1ea2042fbef4af542aaaa81adb26884a0f7` | PowerToken | impl | inactive | no |
-| ethereum | `0x78eb4e2b2df8a02c0f4a1a1176abfe19ac42c0cc` | StrategyProxy-7 | proxy | live | no |
+| ethereum | `0x78eb4e2b2df8a02c0f4a1a1176abfe19ac42c0cc` | StrategyProxy-8 | proxy | live | no |
 | ethereum | `0x78f46f2c4aaa83a4c26dc5ac05d272f8f55a4357` | DualCrossReferencePriceFeedFactory | impl | inactive | no |
 | ethereum | `0x7931d6263798f99a082caf1416b2457605628e2d` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x797f1171dc5001b7a79ff7dca68c9539329cce48` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x79e8b115bd41baee318c1940f42f1a2d94d29ab4` | BurnRequestFeeFuse | impl | inactive | no |
+| ethereum | `0x79f140cf8ae51880fa00468c9621da125e79bbdb` | WithdrawManager-5 | impl | live | no |
+| ethereum | `0x7a79b55893a8799ee0184ca18fffc84699749aea` | PlasmaVault-20 | impl | live | no |
 | ethereum | `0x7a9990e754f2224dcb441f7f690da1851b00073a` | MiltonDai | impl | inactive | no |
 | ethereum | `0x7aa7b0b738c2570c2f9f892cb7ca5bb89b9bf260` | ERC1967Proxy-13 | proxy | inactive | no |
-| ethereum | `0x7ac7cd6776208d316861f46eb99dcaf5faece3f0` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x7ac7cd6776208d316861f46eb99dcaf5faece3f0` | VaultProxy-4 | impl | live | no |
 | ethereum | `0x7aeb36e22e60397098c2a5c51f0a5fb06e7b859c` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x7af4458d3abd61c3fd187bb9f1bbf917cd4be9b8` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x7b071c5a3b43b2d6624df1a649fe78ead2e475ac` | AmmPoolsServiceWeEth | impl | inactive | no |
@@ -1459,51 +1786,62 @@
 | ethereum | `0x7bd04d55cbba9996e6799fd7b0380cc43e7c493f` | VaultPausableTemp | impl | inactive | no |
 | ethereum | `0x7bf835e8975623063e498c4ca0ea92283100f2b3` | LiquidityRecipient | impl | inactive | no |
 | ethereum | `0x7c0e72f431fd69560d951e4c04a4de3657621a88` | IpTokenUsdt | impl | inactive | no |
+| ethereum | `0x7c20c94ac1e818bb768d34c015b7dca5fc28cc6c` | PlasmaVault-5 | impl | live | no |
 | ethereum | `0x7c497298d9576499e17f9564ce4e13faa87a9b33` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x7c6f94e4d72c90eb87463fdc2e0604a9da8ec03e` | PriceOracleMiddlewareManager | impl | live | no |
+| ethereum | `0x7c9119fbb87eb1a08224ad225362bdec213007e2` | PlasmaVaultFactory-3 | impl | live | no |
 | ethereum | `0x7cd10fe8a9b5c8f5792d155e05da640410be5d04` | ERC1967Proxy-8 | impl | inactive | no |
 | ethereum | `0x7ce0c1e2985677743a789dc4b64e9230f8862395` | NFT20Strategy_ROPE | proxy | live | no |
+| ethereum | `0x7d49c68cb11f6203178d13b4186d39c454e3fe82` | PriceOracleMiddlewareManager-4 | impl | live | no |
 | ethereum | `0x7db901d1847ca5fa0058a7672ac8cb7ce89d912d` | VaultMigratorStrategy | impl | inactive | no |
 | ethereum | `0x7dc23a56c2e611b569e96ba788048c895a10ecb5` | AmmCloseSwapService | impl | inactive | no |
 | ethereum | `0x7ddc3fff0612e75ea5ddc0d6bd4e268f70362cff` | VaultProxy | proxy | live | no |
 | ethereum | `0x7e2a45ea5223ed02fe80e5020aa650121a7361ab` | BasisGoldStrategyMainnet_ESD | impl | live | no |
-| ethereum | `0x7e33ef42d0b7f2b25e27b49004ce79e1b11f2649` | StrategyProxy-9 | proxy | live | no |
-| ethereum | `0x7e3c4230e047349a6bd5b154194115acd5b8ef83` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x7e33ef42d0b7f2b25e27b49004ce79e1b11f2649` | StrategyProxy-10 | proxy | live | no |
+| ethereum | `0x7e3c4230e047349a6bd5b154194115acd5b8ef83` | VaultProxy-4 | impl | live | no |
 | ethereum | `0x7ebc0974a4b9e5d20077de1c7a0840db52f1b1b6` | IporOracleFacadeDataProvider | proxy | inactive | no |
 | ethereum | `0x7ec22c4defe53ec35f03f0b6468ec319c577defc` | StakeDaoV2ClaimFuse | impl | inactive | no |
-| ethereum | `0x7ef926cb565fde40dacaa3d5712cfb488a6964d2` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0x7ef926cb565fde40dacaa3d5712cfb488a6964d2` | PlasmaVault-4 | impl | live | no |
 | ethereum | `0x7f31e05ce311a8b457e877933349a29c92456c19` | CRVStrategyEURSV2Mainnet | impl | live | no |
+| ethereum | `0x7f447457a771745688de5ec7c68c12fb47722349` | WithdrawManager-6 | impl | live | no |
 | ethereum | `0x7f522f8619018f6d905a670830800903bcee544d` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0x7fb5567ac8144871a2731bae6945174a2627d89c` | NarwhaleStrategyMainnet_DSD | impl | live | no |
 | ethereum | `0x7fb83f9c82065e8aa2321b4d86bde76f381a4b0d` | OneInchStrategy_ETH_USDT | impl | live | no |
-| ethereum | `0x7fdc189eb16eb4ac49e3fab1ab8c3cb2de756a1b` | StrategyProxy-6 | impl | live | no |
+| ethereum | `0x7fdc189eb16eb4ac49e3fab1ab8c3cb2de756a1b` | StrategyProxy-7 | impl | live | no |
 | ethereum | `0x7ff633bcb94a89f64aa3efd85b5e7857b7b1091c` | IporOracle | impl | inactive | no |
+| ethereum | `0x806b55f731b0bf5d32d9d14785743589ea23fb94` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0x807a637a1c82ca37d4bac0ab2684b33600c4a60a` | CRVStrategyEURSV2Mainnet | impl | live | no |
 | ethereum | `0x8085407a8b5cc475cc5c02f872b39b57e4ee3bcf` | Storage | impl | live | no |
-| ethereum | `0x80a66dd69ed1b7ddf6ae622aa942c8187dfc0b75` | StrategyProxy-30 | proxy | live | no |
+| ethereum | `0x80a66dd69ed1b7ddf6ae622aa942c8187dfc0b75` | StrategyProxy-33 | proxy | live | no |
 | ethereum | `0x80c0865d7d290a4b8a511f0f71f2c75740b8c1aa` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x80def4b6c7097904d2fa3a54f76d38aec04fa53e` | MiltonUsdt | impl | inactive | no |
-| ethereum | `0x80fa9fea3c7aa52303eab13849c82f93b3b36b28` | StrategyProxy-7 | impl | live | no |
+| ethereum | `0x80fa9fea3c7aa52303eab13849c82f93b3b36b28` | StrategyProxy-8 | impl | live | no |
 | ethereum | `0x810b83fc33e6f5da9be9ae5dd0f918338e980938` | CRVStrategyStableMainnet | impl | inactive | no |
+| ethereum | `0x8138fd4f5b62237c201b4d6c721b702dc64584e1` | WithdrawManager | impl | live | no |
+| ethereum | `0x818912488f1023419426d1410d351d7daa7df7aa` | PlasmaVault-14 | impl | live | no |
 | ethereum | `0x8193caea6e5aa7006aeb25d55afc10615ec96eb2` | MidasBalanceFuse | impl | inactive | no |
-| ethereum | `0x81a276cc1323a76ad0c71657139e6bcdc3c52b30` | VaultProxy-3 | proxy | live | yes |
+| ethereum | `0x81a276cc1323a76ad0c71657139e6bcdc3c52b30` | VaultProxy-5 | proxy | live | yes |
 | ethereum | `0x81daba3ea5c56f36bacbfb85dbfa4986907dc7cd` | PickleStrategyDaiMainnet | impl | inactive | no |
 | ethereum | `0x8255fe84f769ba086dcab2db14f20dfaf79bc5ee` | VaultProxy | proxy | live | no |
 | ethereum | `0x829d3e890367d31139a0a6f23709141ba21da2ad` | CRVStrategyEURSV2Mainnet | impl | live | no |
 | ethereum | `0x82bdac405762482f9411a7d970841ce55f64e04b` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0x82d3d0ad22411fdf11d6b87be7ca15160b52196c` | PlasmaVault-5 | impl | live | no |
 | ethereum | `0x8334a61012a779169725fcc43adcff1f581350b7` | VaultProxy | proxy | live | no |
-| ethereum | `0x83be46881aaeba80b3d647e08a47301db2e4e754` | Erc4626SupplyFuse | impl | inactive | no |
-| ethereum | `0x83ddbb631595cc92ca34b17e0cfc24e059093fa1` | StrategyProxy-31 | proxy | live | no |
+| ethereum | `0x83bc53e2663ad903b4d1f7d89fb5527cf5df28b7` | WithdrawManager-2 | impl | live | no |
+| ethereum | `0x83be46881aaeba80b3d647e08a47301db2e4e754` | Erc4626SupplyFuse-2 | impl | inactive | no |
+| ethereum | `0x83ddbb631595cc92ca34b17e0cfc24e059093fa1` | StrategyProxy-34 | proxy | live | no |
 | ethereum | `0x841f5af969153976989cca7f8822ea92f3d126a5` | Basis2FarmStrategyMainnet_BAC_DAIV3 | impl | inactive | no |
-| ethereum | `0x84249464ca6f1591b4be126a2b531517fd7d5062` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0x84249464ca6f1591b4be126a2b531517fd7d5062` | PlasmaVault-4 | impl | live | no |
 | ethereum | `0x84646f736795a8bc22ab34e05c8982cd058328c7` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x84a1dfadd698886a614fd70407936816183c0a02` | VaultProxy | proxy | live | no |
-| ethereum | `0x84bae33581a5d35d636a36b983b22f3ca3bb06af` | VaultProxy-2 | impl | live | no |
+| ethereum | `0x84bae33581a5d35d636a36b983b22f3ca3bb06af` | VaultProxy-4 | impl | live | no |
+| ethereum | `0x84c87f41b9b650fed730258fb0fcb3b8a0375cb1` | PlasmaVault-7 | impl | live | no |
 | ethereum | `0x8537b194bff354c4738e9f3c81d67e3371dadaf8` | IpTokenDai | impl | inactive | no |
-| ethereum | `0x857be610838b6c16b51fff8bfdd039fa3007c565` | StrategyProxy-32 | proxy | live | no |
-| ethereum | `0x859222dd0b249d0ea960f5102dab79b294d6874a` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0x857be610838b6c16b51fff8bfdd039fa3007c565` | StrategyProxy-35 | proxy | live | no |
+| ethereum | `0x859222dd0b249d0ea960f5102dab79b294d6874a` | VaultProxy-9 | proxy | live | yes |
 | ethereum | `0x85b23b710c74685484f7dda47746eb7d272cbe74` | Migrations | impl | inactive | no |
 | ethereum | `0x85f11e0480cc8f0a1c9b24b6421fadd9c10b485f` | CRVStrategyStableMainnet | impl | live | no |
+| ethereum | `0x85fd7686ff4c4a3fbe3815eb90be46d17172325e` | PlasmaVault-5 | impl | live | no |
 | ethereum | `0x8609fe43e38448fa0d5f7ae9852570e90b7ec16b` | MerkleDistributor | impl | inactive | no |
 | ethereum | `0x866d6c951c4b29120e5a545440280ad8d4a0eb49` | ERC1967Proxy-2 | impl | inactive | no |
 | ethereum | `0x86de355d20ce83692ec4744b71b74f01a8e838b3` | CRVStrategyRENBTCMainnet | impl | inactive | no |
@@ -1514,35 +1852,39 @@
 | ethereum | `0x876433f4c4a190b7dbd4b8db750448841d43a4c3` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x8771e28451f0a2b891b3401c94bcfa272215d48b` | VeloraSwapperFuse | impl | inactive | no |
 | ethereum | `0x87858b848c4b64bda3d694a554c5188f4c3e20e0` | VestingAirdrop | impl | inactive | no |
-| ethereum | `0x87cef19aca214d12082e201e6130432df39fc774` | ERC1967Proxy-3 | proxy | inactive | no |
-| ethereum | `0x87e3b7c430368eb4684ef622bae0d4c8c0cd590b` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x87cef19aca214d12082e201e6130432df39fc774` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0x87e3b7c430368eb4684ef622bae0d4c8c0cd590b` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x885d59830c1fdb120b54d62790db7a6a1f534463` | PickleStrategy3PoolMainnet | impl | inactive | no |
 | ethereum | `0x892171eb51d56dc340e586652068cf758e5f798c` | CRVStrategySwerveUSDTMainnet | impl | inactive | no |
-| ethereum | `0x895cc1b32aa6f5fedf0e113eac556309ad225322` | StrategyProxy-5 | proxy | live | no |
+| ethereum | `0x895cc1b32aa6f5fedf0e113eac556309ad225322` | StrategyProxy-6 | proxy | live | no |
 | ethereum | `0x897d96a7c91e2f1b8213f240cad031f9acdefa56` | SiloV2SupplyNonBorrowableCollateralFuse | impl | inactive | no |
-| ethereum | `0x89f6dd2f2615471c008e60c86ab0f6727c65c475` | StrategyProxy-33 | proxy | live | no |
+| ethereum | `0x89f6dd2f2615471c008e60c86ab0f6727c65c475` | StrategyProxy-36 | proxy | live | no |
+| ethereum | `0x8a0ee16a4484d390049388a78bf49440fc422c7c` | StrategyProxy-4 | impl | live | no |
 | ethereum | `0x8a0f6b8a53556bdceddb5c710bb8f27f4bea33e7` | VaultProxy | proxy | live | no |
 | ethereum | `0x8aa055990f9ea583f4f5c86fa4ad57898c18ff21` | VaultProxy | proxy | live | no |
 | ethereum | `0x8ab3342a692935a8ad23214d7403403d224d2ba4` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x8ab4d16beb4e06b576b3e1828c7e69f7e66e2023` | AmmGovernanceService | impl | inactive | no |
-| ethereum | `0x8ae47cc57fab1bfd6d582256446cad4fde1c319b` | ERC1967Proxy-5 | impl | inactive | no |
+| ethereum | `0x8ae47cc57fab1bfd6d582256446cad4fde1c319b` | ERC1967Proxy-6 | impl | inactive | no |
 | ethereum | `0x8af7eb5a93076f6a2316261ac8d42f97adaab64e` | NotifyHelperIFARM | impl | live | no |
 | ethereum | `0x8b1ebe26fe0f97024dfd1c62496dd396dd8029e8` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x8b6bef8d373d959a5f20d959bc44ebca876f5464` | GamestopStrategyMainnet_DSD | impl | live | no |
+| ethereum | `0x8b94c156ebc20a3a385e898bb7a7973d46d0b303` | ERC1967Proxy | proxy | inactive | no |
 | ethereum | `0x8bcbf139b8d7b26f37d89f2c8aa9de810b5a3814` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x8bea65298c3e1a6cbb961a44b720d0216028be1e` | AmmPoolsLensEth | impl | inactive | no |
 | ethereum | `0x8bf3c1c7b1961764ecb19b4fc4491150ceb1abb1` | VaultProxy | proxy | live | no |
-| ethereum | `0x8cff95cb59a22543c9525f1c8b7577b5eddc7c81` | StrategyProxy-34 | proxy | live | no |
+| ethereum | `0x8bff06434c52306358749b0cc58db7d9aa1c654d` | PlasmaVault-10 | impl | live | no |
+| ethereum | `0x8c8f2a5250d440bdf6ac21b097be04b07cce78af` | Erc4626BalanceFuse-2 | impl | inactive | no |
+| ethereum | `0x8cff95cb59a22543c9525f1c8b7577b5eddc7c81` | StrategyProxy-37 | proxy | live | no |
 | ethereum | `0x8d2450c6e35c765fa4d43fc9eea87be269e1ab5b` | VaultProxy | proxy | live | no |
 | ethereum | `0x8d640378c983c6aab076bdb5d86a58f9179055ed` | BasisGold2FarmStrategyMainnet_DAI_BSG | impl | live | no |
 | ethereum | `0x8d7da935c449be284b27d96b6f215d6dba95d8d1` | OneInchStrategy_1INCH_USDC | impl | live | no |
 | ethereum | `0x8d99d6a89c906fe89eb977fc0b9b979716132aa0` | AmmCloseSwapLens | impl | inactive | no |
 | ethereum | `0x8dc427cbcc75cae58dd4f386979eba6662f5c158` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x8e298734681adbfc41ee5d17ff8b0d6d803e7098` | VaultProxy | impl | live | no |
-| ethereum | `0x8e53031462e930827a8d482e7d80603b1f86e32d` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0x8e53031462e930827a8d482e7d80603b1f86e32d` | VaultProxy-9 | proxy | live | yes |
 | ethereum | `0x8e54bb5e1411be9c776b17b0cd267f2955377e32` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x8e679c1d67af0cd4b314896856f09ece9e64d6b5` | AssetManagementUsdt | proxy | inactive | no |
-| ethereum | `0x8e8c911d46badc3e69d781744d57884eef6b4c43` | StrategyProxy-35 | proxy | live | no |
+| ethereum | `0x8e8c911d46badc3e69d781744d57884eef6b4c43` | StrategyProxy-38 | proxy | live | no |
 | ethereum | `0x8ea2db065f74064daf96ab1af9637131d5fa4d95` | OneInchStrategy_ETH_USDC | impl | live | no |
 | ethereum | `0x8ec9aef0241a19ffb278b3963d0eaae7de52158d` | AmmGovernanceService | impl | inactive | no |
 | ethereum | `0x8f0279e4a5d3447e6dd9b536e03504f20313a817` | StanleyDai | impl | inactive | no |
@@ -1553,16 +1895,18 @@
 | ethereum | `0x9044d3a001ec3557d0ca55eb789db3a93532c23a` | NFT20Strategy_ROPE | proxy | live | no |
 | ethereum | `0x905cf5217002f1031425549d398c66adf72ec4f2` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x906af6a42079adaf1abd92f924a5d4263653af0d` | PlasmaVaultRedeemFromRequestFuse | impl | inactive | no |
-| ethereum | `0x90e938c50f56aee8ed12d72b3b178bf5c395bdc5` | StrategyProxy-36 | proxy | live | no |
+| ethereum | `0x90e938c50f56aee8ed12d72b3b178bf5c395bdc5` | StrategyProxy-39 | proxy | live | no |
 | ethereum | `0x91087247391fe889033fd5c2fd29110c372ff4f1` | FloatStrategyMainnet_USDC | impl | live | no |
 | ethereum | `0x912ae5d95bd86f4ae6e580a0fa14a124c998f337` | AmmPoolsService | impl | inactive | no |
 | ethereum | `0x9162022c32b5fe50dd46b3b245749ea87fd3aa48` | ERC1967Proxy-2 | impl | inactive | no |
 | ethereum | `0x917d6480ec60cbddd6cbd0c8ea317bcc709ea77b` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x91b5cd52fde8dbac37c95ecafef0a70ba4c182fc` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x91c35e8edc103468692d2394b48b0b3d228f6ab1` | AmmStorage | impl | inactive | no |
-| ethereum | `0x923ca6dcef62030bed25aa3ef854f39dc45dda65` | StrategyProxy-37 | proxy | live | no |
+| ethereum | `0x922350d9ff1217b2f2ce63a890be0d377deb1d42` | PlasmaVault-30 | impl | live | no |
+| ethereum | `0x923ca6dcef62030bed25aa3ef854f39dc45dda65` | StrategyProxy-40 | proxy | live | no |
 | ethereum | `0x92ddd3be3d178542c339533a713079cea5f7618d` | RewardDistributionSwitcher | impl | live | no |
 | ethereum | `0x9304345dda22aaaec97d0410bdf0b8a444d41367` | FusionFactory | impl | live | no |
+| ethereum | `0x933bff1078ff1a0ca3b53dad00d7b1850af8749b` | Erc4626BalanceFuse-3 | impl | inactive | no |
 | ethereum | `0x93577cf141fa174de6296185610d4bd0d2e97537` | FloatStrategyMainnet_USDT | impl | live | no |
 | ethereum | `0x937d4b84f139bec548b825fdce33b172c5bf755a` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x9397bd6fb1ec46b7860c8073d2cb83be34270d94` | FeeRewardForwarder | impl | live | no |
@@ -1572,27 +1916,29 @@
 | ethereum | `0x94529ee7eb499015652908eb2745cea2d4460a53` | ShibaswapDex | impl | inactive | no |
 | ethereum | `0x948548414a364c7d6f379ed73aeddb3c795dcacd` | SpreadCloseSwapService | impl | inactive | no |
 | ethereum | `0x9494a3026f28d0b189252428cebbfa52e69608c4` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0x94c3490c84bcce4afad6e47ceff9c2aab3786bb4` | StrategyProxy-9 | impl | inactive | no |
+| ethereum | `0x94c3490c84bcce4afad6e47ceff9c2aab3786bb4` | StrategyProxy-10 | impl | inactive | no |
 | ethereum | `0x94e74a1cac19c8cb051887eebe4d9d383840cdbb` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0x9523fdc055f503f73ff40d7f66850f409d80ef34` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0x95257efe3ab9d36969d0014553eafcdca594a281` | ERC1967Proxy-4 | impl | inactive | no |
+| ethereum | `0x95257efe3ab9d36969d0014553eafcdca594a281` | ERC1967Proxy-5 | impl | inactive | no |
 | ethereum | `0x95665e4b45912525cf2607a9aee460bcca2a6d32` | Klondike2FarmStrategyMainnet_WBTC_KBTC | impl | live | no |
+| ethereum | `0x956d09551251493f165eca171bd377c247ba8f4b` | PlasmaVault-22 | impl | live | no |
 | ethereum | `0x9594cab6f4d47bcea0c477616582122fd11659ba` | DEGOSimpleStrategy | impl | inactive | no |
-| ethereum | `0x95acdf1c8f4447e655a097aea3f92fb15035485d` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x95acdf1c8f4447e655a097aea3f92fb15035485d` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x95d2e18c069175523f56b617f96be7575e381547` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0x95fcbf69373552b3db416dcf97fd06af743141b3` | NarwhaleStrategyMainnet_BAC | impl | live | no |
 | ethereum | `0x962131e9120a337202c448e8fdd61c0db890ee87` | PriceOracleMiddlewareManager | impl | live | no |
+| ethereum | `0x96266192b8216a509026112e6515a33aa020256d` | PlasmaVault-5 | impl | live | no |
 | ethereum | `0x9627ed4dc359504a551a9c772e289706fd236014` | ContextManager | impl | live | no |
 | ethereum | `0x966a70a4d3719a6de6a94236532a0167d5246c72` | VaultProxy | proxy | live | no |
-| ethereum | `0x970b4f5522685d4826eceb0377b3ddbf12836dfd` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0x970b4f5522685d4826eceb0377b3ddbf12836dfd` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x970cc1e0bdb3b29a6a12bde1954a8509acbc9158` | UniVaultProxy | proxy | live | no |
 | ethereum | `0x973d0408dee278203c8613178c1732fd60182916` | MinterHelper | impl | live | no |
 | ethereum | `0x974672fa995917fec4a5c9db32784d36c370805d` | SDaiPriceFeedEthereum | impl | inactive | no |
 | ethereum | `0x97487c1f352a8076a738fbdcd316a10f01046567` | MirrorMainnet_mNFLX_UST | impl | live | no |
-| ethereum | `0x9781413baff29db7bebdc52c475c780591c7b37b` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0x9781413baff29db7bebdc52c475c780591c7b37b` | PlasmaVault-4 | impl | live | no |
 | ethereum | `0x98123c13af94bf49b5338d780551c45295de36da` | AmmStorage | impl | inactive | no |
-| ethereum | `0x981a6c7ca4496acc3ff7bcdcc3b834fe0c4db5bc` | PlasmaVault-4 | impl | live | no |
-| ethereum | `0x9824dcdac89f208bf8b5cb5c4dc41f04a0878607` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x981a6c7ca4496acc3ff7bcdcc3b834fe0c4db5bc` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0x9824dcdac89f208bf8b5cb5c4dc41f04a0878607` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x987a168e19f6f64d6ab08ae0e0fe77ea3d79baac` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0x98ba5e432933e2d536e24a2c021debb8404588c1` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x991c40f931446321e3219a867a36b505b76e9522` | IndexStrategyMainnet_MVI_ETH | impl | live | no |
@@ -1602,8 +1948,9 @@
 | ethereum | `0x99b0d6641a63ce173e6eb063b3d3aed9a35cf9bf` | NoMintRewardPool | impl | live | no |
 | ethereum | `0x99bc0136ba3cc8d1a920e68eadff4fd899bec386` | MidasSupplyFuse-2 | impl | inactive | no |
 | ethereum | `0x99c2564c9d4767c13e13f38ab073d4758af396ae` | VaultProxy | proxy | live | no |
-| ethereum | `0x99f3157a9b96245a3c5a57a762c58474a06c3f7c` | StrategyProxy-6 | proxy | live | no |
+| ethereum | `0x99f3157a9b96245a3c5a57a762c58474a06c3f7c` | StrategyProxy-7 | proxy | live | no |
 | ethereum | `0x9a293ac079fdeaa54fcf3810e07b914672a28458` | MiningCalculationAccountPowerUp | impl | inactive | no |
+| ethereum | `0x9a449edc45550fea15ad1bcfd1448b8a2c37123b` | AmmTreasuryBaseV1-4 | proxy | inactive | no |
 | ethereum | `0x9a50c42ae146fb74bccc4fce850b3a49c1626321` | YelStrategyMainnet_YEL | impl | live | no |
 | ethereum | `0x9a5b39a667e3f80a3661271173b68340c59a9850` | ContextManagerFactory | impl | live | no |
 | ethereum | `0x9a63d269b17e18dad592b219fea3d06201f5f946` | NoMintRewardPool | impl | inactive | no |
@@ -1611,6 +1958,7 @@
 | ethereum | `0x9a94e4d777f81de7e390d5f93b40269cdf7c4539` | FixedAirdrop | impl | inactive | no |
 | ethereum | `0x9a9a6148f7b0a9767ac1fdc67343d1e3e219fddf` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0x9a9f60349e2da59250433276b3ef474f1f69f8e8` | AmmCloseSwapServiceUsdc | impl | inactive | no |
+| ethereum | `0x9aa21e5101279229a02326e411dafcbd48ba6db1` | MidasSupplyFuse | impl | inactive | no |
 | ethereum | `0x9aa8f427a17d6b0d91b6262989edc7d45d6aedf8` | VaultProxy | proxy | live | no |
 | ethereum | `0x9ac5092e027f0d9f24b4a1065c70973f3afda4cb` | IpToken-2 | impl | inactive | no |
 | ethereum | `0x9af516e9095069972528eeba8e55275e31fe7734` | VaultProxy | proxy | live | no |
@@ -1622,24 +1970,26 @@
 | ethereum | `0x9bcde34f504a1a9bc3496ba9f1aea4c5fc400517` | AmmPoolsService | impl | inactive | no |
 | ethereum | `0x9bd2177027edee300dc9f1fb88f24db6e5e1edc6` | IpTokenUsdt | impl | inactive | no |
 | ethereum | `0x9bedf37edb278e6840328453c256c70d6139037b` | BasisGoldStrategyMainnet_DAI_BSGS | impl | live | no |
+| ethereum | `0x9beff376ff554c81888031fe8899dcd9dfe42051` | PlasmaVault-6 | impl | live | no |
 | ethereum | `0x9c2a4edaed59a5b9de11c1c0eafd8b7da751d64c` | IporOracle | impl | inactive | no |
 | ethereum | `0x9c6fbdbf59808cd920fdb166c25e2e9fcf708dd1` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0x9c9846495ba219d5cb941d78020ab5c6b0701017` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0x9c9846495ba219d5cb941d78020ab5c6b0701017` | ERC1967Proxy-5 | proxy | inactive | no |
 | ethereum | `0x9cae0da40bb40a93931f40a664603b01b5c2ce95` | SoapIndicatorRebalanceLogic | impl | inactive | no |
 | ethereum | `0x9cb5e8dfa46da44248ce4ce6ac71d74aa4d3cfd8` | ERC1967Proxy-8 | impl | inactive | no |
 | ethereum | `0x9cf5ab89f48194c9eeaacbb47cdecee0e96110b7` | UpgradableStrategyFactory | impl | live | no |
 | ethereum | `0x9cf78e518507b8922634a3ac02e8d8136768c5d9` | MiltonSpreadModelDai | impl | inactive | no |
 | ethereum | `0x9d356fda8437f7c7b6a4bc84466a98a4a6eec462` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0x9d4bd8cb9da419a9ca1343a5340ed4ce07e85140` | IporWeighted | proxy | inactive | no |
-| ethereum | `0x9dbb8f4f5769e5c2c218905eb127e974059dd819` | StrategyProxy-11 | impl | live | no |
-| ethereum | `0x9dc2819b49c3d39b11a5f4c8c0c17bd7e18126d9` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0x9dbb8f4f5769e5c2c218905eb127e974059dd819` | StrategyProxy-12 | impl | live | no |
+| ethereum | `0x9dc2819b49c3d39b11a5f4c8c0c17bd7e18126d9` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0x9def0a21ac8e2a402a58da00034014d0861143c7` | MiltonDai | impl | inactive | no |
 | ethereum | `0x9e315822a18f8d332782d1c3f3f24bb10d2161ad` | FloatStrategyMainnet_WBTC | impl | live | no |
 | ethereum | `0x9f357122f72a056e8a58ce89d3d88f62411c465c` | IdleStrategyDAIMainnet | impl | live | no |
-| ethereum | `0x9f45f195232c9561a38c994d6895d3466f468b27` | VaultProxy-4 | impl | inactive | no |
+| ethereum | `0x9f45f195232c9561a38c994d6895d3466f468b27` | VaultProxy-8 | impl | inactive | no |
 | ethereum | `0x9f69939b5160841b0cbeb94b93a0cba389dc8548` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0xa0246c9032bc3a600820415ae600c6388619a14d` | RewardToken | impl | live | yes |
 | ethereum | `0xa03833a5eef48fad3295c11e6c1e5701c2817e16` | Klondike2FarmStrategyMainnet_KXUSD_DAI | impl | live | no |
+| ethereum | `0xa0777a5b44d36ee425dc0ca828549f06e40e0cee` | Erc4626BalanceFuse-4 | impl | inactive | no |
 | ethereum | `0xa07780fdaf46c0efd5c4f6349268065e5d1fdbe5` | UniversalTokenSwapperEthFuse-2 | impl | inactive | no |
 | ethereum | `0xa07f30cb9797b537f7bc4739477ab3a650292734` | AmmCloseSwapServiceStEthBaseV2 | impl | inactive | no |
 | ethereum | `0xa10a749a5a2a2d3f0c0317a92c3e9159df567e34` | VaultProxy | proxy | live | no |
@@ -1648,10 +1998,11 @@
 | ethereum | `0xa239d5b5bf3deeb53e6e19635e82edce515d32f4` | AutoStakeMultiAsset | impl | inactive | no |
 | ethereum | `0xa23c6f2d85fe47e613ce6bbb40e74acb49ae281a` | DEGOSimpleStrategy | impl | inactive | no |
 | ethereum | `0xa2bd15c3611caa3e7d492a7feaf5f5181553897c` | CRVStrategyStableMainnet | impl | inactive | no |
+| ethereum | `0xa301d6f34f2c8399e8564681cf675999cc1f1584` | UniversalTokenSwapperFuse-4 | impl | inactive | no |
 | ethereum | `0xa30845738443aa2dd6bd0783a47b0af8c01a9bed` | AmmPoolsServiceEth | impl | inactive | no |
 | ethereum | `0xa3babe2e9a1fda1350b76eb77c40dd394c836102` | EbisuZapperLeverModifyFuse | impl | inactive | no |
 | ethereum | `0xa3cf8d1cee996253fad1f8e3d68bdcba7b3a3db5` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0xa44ffa733f1d500fd10c613cf66c87320d87ebee` | StrategyProxy-38 | proxy | live | no |
+| ethereum | `0xa44ffa733f1d500fd10c613cf66c87320d87ebee` | StrategyProxy-41 | proxy | live | no |
 | ethereum | `0xa505917c1326670451eff9ea75fe0d49a3853acf` | CRVStrategyGUSDMainnet | impl | inactive | no |
 | ethereum | `0xa56522bca0a09f57b85c52c0cc8ba1b5edbc64ef` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xa5a091fd156ff5e44f22bef544923cdc850d9d46` | MirrorMainnet_mAAPL_UST | impl | live | no |
@@ -1662,11 +2013,13 @@
 | ethereum | `0xa613249ef6d0c3df83d0593abb63e0638d1d590f` | FluidInstadappStakingSupplyFuse | impl | inactive | no |
 | ethereum | `0xa63852397f712fd69617d435aaa4c147fe37bdf7` | CRVStrategyGUSDMainnet | impl | inactive | no |
 | ethereum | `0xa6ac8b6af789319a1db994e25760eb86f796e2b0` | AssetManagementDai | proxy | inactive | no |
-| ethereum | `0xa6f539785fa4c33c9f3ad21fc6a366a2ff7f15f7` | VaultProxy-4 | impl | inactive | no |
+| ethereum | `0xa6f539785fa4c33c9f3ad21fc6a366a2ff7f15f7` | VaultProxy-8 | impl | inactive | no |
 | ethereum | `0xa6f85bb21ff71ac0a5890f76fd2514d76e0035ef` | CRVStrategyStableMainnet | impl | live | no |
+| ethereum | `0xa72f8391d7c9f1991769b76858b8ac54ccee92cf` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0xa7336377c882f511b1dbfb4c8649117edf593cab` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xa735b8993778a10de2382f57a8282738497dd508` | OraclePublisher | proxy | inactive | no |
-| ethereum | `0xa788fe8aae24220e277d43b70426d384e2288e1a` | StrategyProxy-39 | proxy | live | no |
+| ethereum | `0xa76aa0b3d570ae04fcdd3e03fd217bfc5511448c` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0xa788fe8aae24220e277d43b70426d384e2288e1a` | StrategyProxy-42 | proxy | live | no |
 | ethereum | `0xa79a083fdd87f73c2f983c5551ec974685d6bb36` | VaultProxy | proxy | live | no |
 | ethereum | `0xa81363950847ac250a2165d9fb2513ca0895e786` | SNXRewardUniLPStrategy_MIC_USDT | impl | inactive | no |
 | ethereum | `0xa82660a0a468bba63db950532cdbda47144c212c` | SNXRewardUniLPStrategy | impl | live | no |
@@ -1674,6 +2027,7 @@
 | ethereum | `0xa85f818a4634c13e8be795240e9aca2cb7c70ccf` | VaultProxy | proxy | live | no |
 | ethereum | `0xa860a99ba32f1768a4b46d898beae303637f0bc7` | VaultProxy | proxy | live | no |
 | ethereum | `0xa89cbbe676562ebd0728e6cfa431debe77184090` | SNXRewardUniLPStrategy_BAC_DAI | impl | inactive | no |
+| ethereum | `0xa90196785a133ad5f1768347eb407fcb1b44b77d` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xa96865a53fcca2bd131d47ebdb9263cdc603a6f8` | InvestmentVaultStrategy | impl | live | no |
 | ethereum | `0xa9acab4910dca42895afa62b39fb8c2304da7f96` | HardWorkHelper | impl | inactive | no |
 | ethereum | `0xa9ca706797702a50ea76ac9920774c8e982e4436` | SNXRewardUniLPStrategy_DAI_BAS | impl | inactive | no |
@@ -1684,10 +2038,10 @@
 | ethereum | `0xab2e513c9f92a7b0f36f7feef680cd0f502b23dc` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xab4ae725223a91c3363e050619a088c0903e6d84` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0xab662863ce609f4cf32601601ba64653e04c5917` | HarvestAP | impl | inactive | no |
-| ethereum | `0xab7fa2b2985bccfc13c6d86b1d5a17486ab1e04c` | VaultProxy-3 | proxy | live | yes |
+| ethereum | `0xab7fa2b2985bccfc13c6d86b1d5a17486ab1e04c` | VaultProxy-5 | proxy | live | yes |
 | ethereum | `0xab97e49fcb752f7713090814199b4458b4ea1bad` | StEthWrapperFuse | impl | inactive | no |
 | ethereum | `0xab9f3c22a580e04fa20650fef7aefd937feca833` | OneInchStrategy_ETH_USDC | impl | live | no |
-| ethereum | `0xabab980f0ecb232d52f422c6b68d25c3d0c18e3e` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0xabab980f0ecb232d52f422c6b68d25c3d0c18e3e` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0xabc0fdd71077e415e81cca77a088f6664967df0e` | ContextManager | impl | live | no |
 | ethereum | `0xabcb3ad4f5ec4f662c4e253916d952244049a82b` | ERC1967Proxy-2 | impl | inactive | no |
 | ethereum | `0xabcea95e3603c0604c81c2d95ed3abd91c013ae6` | NoopStrategyStable | impl | inactive | no |
@@ -1695,6 +2049,7 @@
 | ethereum | `0xac0dcbe1296ae5ae69351a05e6b5803c3eab644e` | LiquidityMining | impl | inactive | no |
 | ethereum | `0xac1c86ceacf03d5afc8b08a22fc38ec7c72338ed` | SpreadRouter | proxy | inactive | no |
 | ethereum | `0xac5b04988bc71bee96f8d93040777db3ef166125` | IpToken-3 | impl | inactive | no |
+| ethereum | `0xac84794ad9aa87fd001e019bbeb53c5c0bc69c2b` | WithdrawManager-3 | impl | live | no |
 | ethereum | `0xacbb7efa64ab9e01c4d397e3b7a6c8e289cc09f5` | CockpitDataProvider | proxy | inactive | no |
 | ethereum | `0xad0b079fe32a1fd6581147796d3c9744d7a998f6` | StrategySwitchHelper | impl | inactive | no |
 | ethereum | `0xad898d0d8c67c8a02ec7e0e74ff9a89dd3678e16` | Basis2FarmStrategyMainnet_DAI_BASV3 | impl | inactive | no |
@@ -1702,14 +2057,16 @@
 | ethereum | `0xadeb2ff65d75f971087dc8a09b149df6313c1872` | StanleyDai | impl | inactive | no |
 | ethereum | `0xae024f29c26d6f71ec71658b1980189956b0546d` | NoMintRewardPool | impl | live | no |
 | ethereum | `0xae160ae334be46d22c9906b1e2042cec410268c5` | NoMintRewardPool | impl | inactive | no |
-| ethereum | `0xae4362a98cd22f711f9b9f9f3edb9bb1379a573c` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0xae4362a98cd22f711f9b9f9f3edb9bb1379a573c` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0xae8d48de831a64787ddc3ac67fd93fd10b008606` | CRVStrategyStableMainnet | impl | live | no |
+| ethereum | `0xae92a01a3c320b4f62d535d337bbffceee2ac544` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0xae9a37dd9229687662834e6696e396e7837baabd` | EulerV2BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0xaf255ec184cc3fd6f7bb221b6a15f91289807a22` | VaultProxy | proxy | live | no |
 | ethereum | `0xaf2d2e5c5af90c782c008b5b287f20334eeb308e` | CRVStrategyWRenBTCMixMainnet | impl | inactive | no |
 | ethereum | `0xaf9486e3da0ce8d125af9b256b3ecd104a3031b9` | VaultProxy | proxy | live | no |
 | ethereum | `0xb00c99e483cee10d838988c07e0dae02159efe34` | IporWeighted | impl | inactive | no |
 | ethereum | `0xb036b53164de8423e150c1805c0f6c43aba453e5` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xb03a4f04aa4cc8ef88e6cf709d61f54571d6752e` | PlasmaVault-8 | impl | live | no |
 | ethereum | `0xb075ba5dc253e39376ac044182be13315e828ae2` | BasisGoldStrategyMainnet_BAC | impl | live | no |
 | ethereum | `0xb0984f735ffb8c959f1a015b70d4550bb55ff846` | LiquidityMiningEthereum | impl | inactive | no |
 | ethereum | `0xb0a4855134f63bf81f3dc6da38de8894fb24904a` | AmmPoolsLensStEth | impl | inactive | no |
@@ -1717,9 +2074,12 @@
 | ethereum | `0xb0d64c0375201911e09b0f8c4d38c5a286e165a6` | AmmPoolsLensWeEth | impl | inactive | no |
 | ethereum | `0xb17a9d70a73e0dcffc12563bcc0c1d68f3f353c8` | WrappedPlasmaVaultFactory | proxy | inactive | no |
 | ethereum | `0xb19ebfb37a936cce783142955d39ca70aa29d43c` | VaultProxy | impl | live | no |
+| ethereum | `0xb1c0ccb170f0af6ec8ad6a8622d0136fb744f0c0` | AmmTreasuryBaseV2 | impl | inactive | no |
 | ethereum | `0xb1cee7ba9997b505f3e01e7021f67521618fea67` | MiltonDai | impl | inactive | no |
 | ethereum | `0xb1feb6ab4ef7d0f41363da33868e85eb0f3a57ee` | VaultProxy | impl | live | no |
+| ethereum | `0xb20e1dc72f261c857b6eae41bc59a24fcf0cd802` | PlasmaVault-7 | impl | live | no |
 | ethereum | `0xb2b4054f50d5feba40af7759f4619f6b68a95520` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xb2d9f718f8e9e11dafa13d9878a742253ddf8a05` | PlasmaVault-10 | impl | live | no |
 | ethereum | `0xb33a40857fad73760730a7543e79dac1b25858c3` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xb37c79f954e3e1a4accc14a5cca3e46f226038b7` | VaultProxy | proxy | live | no |
 | ethereum | `0xb3a7f15034d664fa295b472732bffc6953eefb33` | EbisuZapperBalanceFuse | impl | inactive | no |
@@ -1727,18 +2087,22 @@
 | ethereum | `0xb3d1c1ab4d30800162da40eb18b3024154924ba5` | AmmStorage | proxy | inactive | no |
 | ethereum | `0xb3d5c1b8d512bd41d845817f84e4ea29bf038fb5` | SiloV2SupplyBorrowableCollateralFuse | impl | inactive | no |
 | ethereum | `0xb3ffe89b4f9e0b76980ee06301409521cf6825cc` | OneInchStrategy_1INCH_WBTC | impl | live | no |
+| ethereum | `0xb401b9e1104726e1c9b59580588c116cc0fdc3e2` | PlasmaVault-31 | impl | live | no |
 | ethereum | `0xb40ec624a8b3b28ef37963841ec0ace2657b4c55` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0xb43aa2c44b99bad346143fb44e264213d412b6c2` | SNXRewardUniLPStrategy | impl | live | no |
-| ethereum | `0xb4790cfdf1df71c2e4ac2f5c43dbcb975ad447ae` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0xb46dca81395659e505833cba7057df9065c1f434` | PlasmaVault-10 | impl | live | no |
+| ethereum | `0xb4790cfdf1df71c2e4ac2f5c43dbcb975ad447ae` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0xb492faeda6c9ffb9b9854a58f28d5333ff7a11bc` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xb4d1d6150dac0d1a994afb2a196adadbe639ff95` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xb4e3fc276532f27bd0f738928ce083a3b064ba61` | VaultMigratable_KLONX | proxy | live | no |
 | ethereum | `0xb50c618d63806ec1594547ecdb3e97737d6c12c6` | SpreadStorageLens | impl | inactive | no |
 | ethereum | `0xb512e32e56f270e9a1dbd56be6fa7baf0014114b` | StanleyUsdc | impl | inactive | no |
-| ethereum | `0xb530a1b5259a71187f1d69acf0488f102637a3ed` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0xb530a1b5259a71187f1d69acf0488f102637a3ed` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0xb5480a276c49b5e3a1bc13659030b4e94018a817` | MirrorMainnet_mTSLA_UST | impl | live | no |
 | ethereum | `0xb56e997d3edaa4f7f5b111c04018ca0e1c253c2c` | Migrations | impl | inactive | no |
+| ethereum | `0xb5842341920266e099209be4d622d7936d79a4c8` | PlasmaVault-7 | impl | live | no |
 | ethereum | `0xb59edcb651ef54b9e960f8ca35c36ef7904459db` | VaultProxy | proxy | live | no |
+| ethereum | `0xb5c14b4c741391d5625a56f70049ab2d720be9c9` | ZeroBalanceFuse-4 | impl | inactive | no |
 | ethereum | `0xb5f7fd6fc1a0f0b606d6f65f656af79e12c310b7` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xb64f71300626499d3d9f8e87bfa34f50c75f0470` | AmmGovernanceServiceBaseV1 | impl | inactive | no |
 | ethereum | `0xb653ed2bbd28df9dde734fbe85f9312151940d01` | AmmPoolsLens | impl | inactive | no |
@@ -1748,6 +2112,7 @@
 | ethereum | `0xb6dbc34ebf8e608e4e826ecfbcebc16903f333d8` | FarmOracle | impl | inactive | no |
 | ethereum | `0xb7018c15279e0f5990613cc00a91b6032066f2f7` | PriceOracleMiddleware | proxy | inactive | no |
 | ethereum | `0xb70a2e06e77e7d91f8b9332639f8b7ebe48d99e6` | SoapIndicatorRebalanceLogic | impl | inactive | no |
+| ethereum | `0xb7394c28d4ff1753123e823642ac7acf6475be04` | PlasmaVault-22 | impl | live | no |
 | ethereum | `0xb8671e33fcfc7fea2f7a3ea4a117f065ec4b009e` | VaultProxy | proxy | live | no |
 | ethereum | `0xb89777534acccc9ae7cba0e72163f9f214189263` | VaultProxy | proxy | live | no |
 | ethereum | `0xb8d531ea16caf1cf7b7cbc333e8963db59e8dad5` | Spread28Days | impl | inactive | no |
@@ -1763,21 +2128,27 @@
 | ethereum | `0xba26510bd3a39d8352cd4d03248fe33aff580568` | MerkleDistributorUSDT | impl | inactive | no |
 | ethereum | `0xba610f3e1cedd17e5fa5baf5d7cbfaceeaedcc7a` | IporWeighted | impl | inactive | no |
 | ethereum | `0xba68398feecb2fe95c1d0d66106ae1d432270317` | ContextManager | impl | live | no |
-| ethereum | `0xba6b43ae8ea74a5d7f4e65904aaf80bfb1bc59cb` | StrategyProxy-12 | impl | live | no |
+| ethereum | `0xba6b43ae8ea74a5d7f4e65904aaf80bfb1bc59cb` | StrategyProxy-13 | impl | live | no |
 | ethereum | `0xba84b0f6657685369215dab773ce50bc55aabe08` | FusionFactory | impl | live | no |
-| ethereum | `0xbaea438a90592dc2b4a0afd4e4db86b7e68caa6e` | VaultProxy-2 | impl | live | no |
-| ethereum | `0xbb838373c5168184abf60c2547cec94411a2a5da` | ERC1967Proxy-3 | impl | inactive | no |
+| ethereum | `0xbacf97aa4bcb35b285b5838e5a459b632580ad28` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0xbaea438a90592dc2b4a0afd4e4db86b7e68caa6e` | VaultProxy-4 | impl | live | no |
+| ethereum | `0xbb7239f73e68301a0140cf8aa971c9edb4aca752` | PotPool-5 | impl | live | no |
+| ethereum | `0xbb838373c5168184abf60c2547cec94411a2a5da` | ERC1967Proxy-4 | impl | inactive | no |
 | ethereum | `0xbb846ad2552c0669062c9eadfa63148bcba3e2b0` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xbc2907d76964510a4232878e7ac6e2b18c474efb` | ZeroBalanceFuse-2 | impl | inactive | no |
 | ethereum | `0xbd740765cd53171c9d9a5391c50e50588b95264d` | AmmGovernanceService | impl | inactive | no |
-| ethereum | `0xbd8a194d188bc27a050f271a923459cab847ca9f` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0xbd8a194d188bc27a050f271a923459cab847ca9f` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0xbdbfa2b08fc2a4e53df841fb2e2ae45f10d3f054` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xbdc7d6284bad0d7243bf3ca4dceae2a86deee37d` | StrategyProxy-4 | impl | live | no |
 | ethereum | `0xbde68fa3310bd8914a09a9d2a35e2edb3c4e2255` | FeeManager | impl | live | no |
 | ethereum | `0xbed8a5c8aedcbc5d9c1a2b0b65da4388a56d8562` | IporOracle | impl | inactive | no |
+| ethereum | `0xbf025ca78dc18e8646b706a49dc194d04537a14d` | PotPool-6 | impl | live | no |
 | ethereum | `0xbf0a6e96bd2c7d4db0d19b7479c2b107ed03f4bc` | AmmGovernanceService | impl | inactive | no |
 | ethereum | `0xbf31d6b3ada99555a0ce04c840916ec410a3b78b` | InvestmentVaultStrategy | impl | live | no |
 | ethereum | `0xbf71dde9db7557b25ef12ab758e95ed7b0ce79d5` | MiltonDai | impl | inactive | no |
 | ethereum | `0xbfa26f1354c991386125c5d9827880a6ddf67dde` | IdleBorrowableStrategyUSDTMainnet | impl | live | no |
 | ethereum | `0xc01fd7b96a6a02735e2eb50659d9eb8aca77712e` | Storage | impl | live | no |
+| ethereum | `0xc025ec32cb1d5788cabfb874a1a69b3411d545df` | PlasmaVault-9 | impl | live | no |
 | ethereum | `0xc02d1da469d68adc651dd135d1a7f6b42f4d1a57` | NoMintRewardPool | impl | live | no |
 | ethereum | `0xc02f8fe55aa542038a619e17ed42002eb7a5d247` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xc06f56b865f45d4a80707e7d1403767177c44b22` | AaveV3CollateralFuse | impl | inactive | no |
@@ -1785,27 +2156,28 @@
 | ethereum | `0xc0f51a979e762202e9bef0f62b07f600d0697de1` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xc13f3fd20556a595990c35612e9e5c1c071cb691` | OdosSwapperFuse | impl | inactive | no |
 | ethereum | `0xc1754849f48b0143359a95b9a2e24e90ec82b838` | IporProtocolRouter | impl | inactive | no |
-| ethereum | `0xc1926c01ed88e93f5c266f3b43af57c1f6e63b5d` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0xc1926c01ed88e93f5c266f3b43af57c1f6e63b5d` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0xc223ea44d522d4f07646fa00261d7ba6868cc210` | ContextManager | impl | live | no |
 | ethereum | `0xc24da7a6b5adc8771588d58b6109ef52c95a311e` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xc26be51e50a358ec6d366147d78ab94e9597239c` | ERC1967Proxy-10 | proxy | inactive | no |
 | ethereum | `0xc27100c8e424505bfb4106dd5cee9d10ad4c2923` | RewardDistributionSwitcher | impl | live | no |
-| ethereum | `0xc27bfe32e0a934a12681c1b35acf0dba0e7460ba` | VaultProxy-3 | proxy | live | yes |
-| ethereum | `0xc2c30cd4898b6004fbb82a8c7bd72d3b3734b5d1` | StrategyProxy-40 | proxy | live | no |
-| ethereum | `0xc301ecc4dbc68e6d4591df3928d1a71e7883d7df` | ERC1967Proxy-3 | impl | inactive | no |
+| ethereum | `0xc27bfe32e0a934a12681c1b35acf0dba0e7460ba` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0xc2c30cd4898b6004fbb82a8c7bd72d3b3734b5d1` | StrategyProxy-43 | proxy | live | no |
+| ethereum | `0xc301ecc4dbc68e6d4591df3928d1a71e7883d7df` | ERC1967Proxy-4 | impl | inactive | no |
 | ethereum | `0xc391d1b08c1403313b0c28d47202dfda015633c4` | VaultProxy | proxy | live | no |
 | ethereum | `0xc3eb0c3f691f3fd2fc3ab6ae03b68c7c888d5787` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0xc3ef8c4043d7cf1d15b6bb4cd307c844e0ba9d42` | VaultProxy | proxy | live | no |
 | ethereum | `0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f` | VaultUSDC | impl | live | yes |
+| ethereum | `0xc40431b6c510aeb45fbb5e21e40d49f12b0c1f0c` | IpToken-4 | impl | inactive | no |
 | ethereum | `0xc45d471c77ff31c39474d68a5080fe1ffacdbc04` | VaultProxy | proxy | live | no |
 | ethereum | `0xc47ef3da5f58e1df533bb074ac27928c65d18721` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xc4c0d58c11ec41cc0f1a5be75296cf140ca8dd87` | NoopStrategyStable | impl | inactive | no |
-| ethereum | `0xc52569b5a349a7055e9192dbdd271f1bd8133277` | ERC1967Proxy-5 | proxy | inactive | no |
+| ethereum | `0xc52569b5a349a7055e9192dbdd271f1bd8133277` | ERC1967Proxy-6 | proxy | inactive | no |
 | ethereum | `0xc55f8be3cc55cae1bfbe5558d9e5b44906ed248a` | CRVStrategyUSTMainnet | impl | live | no |
 | ethereum | `0xc5ac3ad8788c5eb8c8cc88022c42ba9a3f51afac` | OneInchDex | impl | inactive | no |
 | ethereum | `0xc5ddd0986caeb7fb7fc1556712af141e9e6a83ca` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xc5fc56779b5925218d2cdac093d0bfc6de7cc2d1` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0xc6b1e817f914b34be7b8c82b24cfda2efbee1cb5` | StrategyProxy-8 | impl | live | no |
+| ethereum | `0xc6b1e817f914b34be7b8c82b24cfda2efbee1cb5` | StrategyProxy-9 | impl | live | no |
 | ethereum | `0xc6e973b8fe772c58ad0d20099d43d2b3f0aef5c0` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0xc6f39cff6797bac5e29275177b6e8e315cf87d95` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xc78589912c85b3c86055a244580629a8c6504695` | IdleStrategyTUSDMainnet | impl | inactive | no |
@@ -1814,49 +2186,60 @@
 | ethereum | `0xc800982d906671637e23e031e907d2e3487291bc` | VaultProxy | proxy | live | no |
 | ethereum | `0xc830d162e72e33f25da4c5b2dd0d4d5bc6693a48` | NFT20Strategy_MEME | impl | live | no |
 | ethereum | `0xc8404f55015fc76ea36ca11dc8628dd38f1d6ed2` | VaultProxy | proxy | live | no |
-| ethereum | `0xc843174ffb68a02d8c64048e062b21c53ea574c9` | ERC1967Proxy-6 | impl | inactive | no |
+| ethereum | `0xc843174ffb68a02d8c64048e062b21c53ea574c9` | ERC1967Proxy-7 | impl | inactive | no |
 | ethereum | `0xc905ccc1a1ec21c8bbe0c0b53d3d048d9055d4bb` | UniVaultProxy | proxy | live | no |
 | ethereum | `0xc95cbe4ca30055c787cb784be99d6a8494d0d197` | Storage | impl | live | no |
 | ethereum | `0xc97ddaa8091abaf79a4910b094830cce5cdd78f4` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xc9eeee3ae20e9c5db213a57ef102e4063fa12612` | AaveV3WithPriceOracleMiddlewareBalanceFuse | impl | inactive | no |
 | ethereum | `0xc9f32d65a278b012371858fd3cde315b12d664c6` | ERC1967Proxy | proxy | inactive | no |
-| ethereum | `0xca0a744cc152b10a8274eb434d27afc3ba1de967` | StrategyProxy-9 | impl | live | no |
+| ethereum | `0xca0a744cc152b10a8274eb434d27afc3ba1de967` | StrategyProxy-10 | impl | live | no |
+| ethereum | `0xcb1bbc36c711ae3d36d9dc61d75dd8efff34f224` | PlasmaVault-32 | impl | live | no |
+| ethereum | `0xcb1ceae1645f721a378357d64f57527d0280b111` | WithdrawManager-7 | impl | live | no |
+| ethereum | `0xcb5d695f4c64f88ea3026b416f43913c629f2bb1` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xcb5ef939f94d1609a1d45e63e693ada259179362` | PriceOracleMiddlewareManager | impl | live | no |
+| ethereum | `0xcb6bb5ab51cdc6efb3b81c84f252cfe6bfba6566` | Erc4626BalanceFuse-5 | impl | inactive | no |
 | ethereum | `0xcb8a90333165998446f35bab8684d7efaf141242` | VaultMigratorStrategy | impl | inactive | no |
 | ethereum | `0xcbe0b706f50e2f89beb238174fc3e04f5206985e` | NarwhaleStrategyMainnet_BAC | proxy | live | no |
+| ethereum | `0xcc2ff2d38666723ea56c122097f6215b90d74196` | ERC1967Proxy-16 | proxy | inactive | no |
 | ethereum | `0xcc3fc4c9ba7f8b8aa433bc586d390a70560ff366` | LiquidityMiningEthereum | proxy | inactive | no |
 | ethereum | `0xcc735caf5354415308dbd826e9734a70b69461d6` | ERC1967Proxy-11 | impl | inactive | no |
 | ethereum | `0xcc775989e76ab386e9253df5b0c0b473e22102e2` | VaultProxy | proxy | live | no |
 | ethereum | `0xccadc4e6c1624cd49e52d1224d326783baa905e3` | MiltonUsdt | impl | inactive | no |
 | ethereum | `0xcd05909c4a1f8e501e4ed554cef4ed5e48d9b852` | FusionFactory | proxy | inactive | no |
+| ethereum | `0xcd397f64a171158d999b6f256b0cc169feed6889` | PlasmaVault-21 | impl | live | no |
 | ethereum | `0xcd7e5edb7b7da6f8cc4ad07c2b68eca060bc03be` | MiltonDai | impl | inactive | no |
 | ethereum | `0xcd96ba8995e6e0146df363b80e6f1f2b93fbebbc` | AmmPoolsServiceStEth-2 | impl | inactive | no |
 | ethereum | `0xcdac55c36f3188e42d8491f8c59a6c372764b894` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xcdb0a68935f59eaf575ca27b6efe1f65f08b5821` | PlasmaVault-19 | impl | live | no |
+| ethereum | `0xcdc7997a268abc11b44624ff39447a3a6aedc09c` | PlasmaVaultFactory-4 | impl | live | no |
 | ethereum | `0xce2fa27ad136c6035f60e8cf2ad605d805745972` | OneInchStrategy_ETH_WBTC | impl | live | no |
 | ethereum | `0xce96800a16791d68ee96706915ead714d67db70d` | AmmPoolsLensBaseV1 | impl | inactive | no |
-| ethereum | `0xce9bc5157f2d28d64749e27ddfa18159c795e5aa` | StrategyProxy-41 | proxy | live | no |
+| ethereum | `0xce9bc5157f2d28d64749e27ddfa18159c795e5aa` | StrategyProxy-44 | proxy | live | no |
 | ethereum | `0xcea315a0aa63ba8993b01bde598b3590efc58f54` | IporOracle | impl | inactive | no |
 | ethereum | `0xceceb64f9ab43b69a1f40d188d6b2542cb60ec2d` | ERC1967Proxy-10 | impl | inactive | no |
 | ethereum | `0xced97f75533e3639c45ccbb6116cb4621789305e` | AccessManagerFactory | impl | live | no |
+| ethereum | `0xcee55bd8ce0361a67f9a48888a2b519c9d207a97` | PlasmaVault-11 | impl | live | no |
 | ethereum | `0xcf16b17a215d1728b0a36a30a57beaaf7845f334` | VaultProxy | proxy | live | no |
 | ethereum | `0xcf477f117caa349ca92dedb3955481628d463bf1` | WETHCreamNoFoldStrategy | impl | inactive | no |
 | ethereum | `0xcf5f83f8fe0ab0f9e9c1db07e6606dd598b2bbf5` | CRVStrategyYCRVMainnet | impl | inactive | no |
 | ethereum | `0xcf6d6eab1176e862ea67fb6d4c1f740fa5579309` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0xcf7124e93ad63d25b26b67ba79b0bdb53cd71221` | IporOracle | impl | inactive | no |
-| ethereum | `0xcf7be43d901b348928bc14fc52cb6fe2afbc7de0` | ERC1967Proxy-3 | impl | inactive | no |
+| ethereum | `0xcf7be43d901b348928bc14fc52cb6fe2afbc7de0` | ERC1967Proxy-4 | impl | inactive | no |
 | ethereum | `0xcfe1103863f9e7cf3452ca8932eef44d314bf9c5` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xd014882cbfcf7ac1110a8898b3f14cf25d01d1ad` | MirrorMainnet_mAAPL_UST | impl | inactive | no |
 | ethereum | `0xd08cb606cee700628e55b0b0159ad65421e6c8df` | MorphoSupplyFuse | impl | inactive | no |
-| ethereum | `0xd111bdeb68295389241171d905b61abe30b1f47c` | VaultProxy-4 | proxy | live | no |
+| ethereum | `0xd0e1705ce89b77452ea7184d300b7745e0937901` | PlasmaVault-33 | impl | live | no |
+| ethereum | `0xd111bdeb68295389241171d905b61abe30b1f47c` | VaultProxy-8 | proxy | live | no |
 | ethereum | `0xd127474b8f38561819a6cb3e38572a99050c1128` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xd15b8f1fd9ed911c0032eb4b523cb33c6bc53165` | MiltonUsdt | impl | inactive | no |
-| ethereum | `0xd162395c21357b126c5afed6921bc8b13e48d690` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0xd162395c21357b126c5afed6921bc8b13e48d690` | VaultProxy-9 | proxy | live | yes |
+| ethereum | `0xd1813be33dee8709e4734a0e8c612e91b22033a6` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0xd18f256b380b30d7aa24c504b39f7320df1b2dbe` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xd21c3b9af9861b925c83046ea906fe933a50c977` | CRVStrategyYCRVMainnet | impl | inactive | no |
 | ethereum | `0xd2429c20af3eb06b15c08b5290f4971b9fac20b1` | CRVStrategyRENBTCMainnet | impl | inactive | no |
-| ethereum | `0xd29f9b9c7b0bf6137906405769979d50b89fc1b0` | ERC1967Proxy-5 | impl | inactive | no |
+| ethereum | `0xd29f9b9c7b0bf6137906405769979d50b89fc1b0` | ERC1967Proxy-6 | impl | inactive | no |
 | ethereum | `0xd2d19439e84fcbaa7d4c755b3e15b1cb67cea17b` | CRVStrategyStableMainnet | impl | live | no |
-| ethereum | `0xd3093e3efbe00f010e8f5efe3f1cb5d9b7fe0eb1` | VaultProxy-2 | impl | live | no |
+| ethereum | `0xd3093e3efbe00f010e8f5efe3f1cb5d9b7fe0eb1` | VaultProxy-4 | impl | live | no |
 | ethereum | `0xd3486d81d52b52125b9fb1ae9d674645ece665ac` | FlowsService | impl | inactive | no |
 | ethereum | `0xd3927f43d622e8bc9ce9a1111becd5d6d3cf3c90` | SNXRewardUniLPStrategy | impl | live | no |
 | ethereum | `0xd45763b40d630c8516dff003718b70ab9d44d6db` | ERC1967Proxy-10 | impl | inactive | no |
@@ -1866,34 +2249,45 @@
 | ethereum | `0xd529f458bc879be231e36ec62968416c07580199` | EthPlusPriceFeed | impl | inactive | no |
 | ethereum | `0xd55ada00494d96ce1029c201425249f9dfd216cc` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0xd58f0ef796618f09f7fc6e63c25fae25ceb33799` | ConfigureInstantWithdrawalFuse | impl | inactive | no |
-| ethereum | `0xd5d2adcb5e6ad20425b0650e4050c0ea9ec3cec0` | StrategyProxy-5 | proxy | live | no |
+| ethereum | `0xd5d2adcb5e6ad20425b0650e4050c0ea9ec3cec0` | StrategyProxy-6 | proxy | live | no |
 | ethereum | `0xd5df7e9f74b31ec8d5011600093156c9f904671d` | VaultMigratorStrategy | impl | inactive | no |
 | ethereum | `0xd5ef0d094f176fbf0925959c1ba0fb9f1b5b236c` | ERC1967Proxy-12 | impl | inactive | no |
-| ethereum | `0xd68d8bcddb4f42ddff917cdf26159009ccb2fad5` | StrategyProxy-10 | impl | inactive | no |
+| ethereum | `0xd685cec80b342117c5754148a63e161132ff44d3` | WithdrawManager-2 | impl | live | no |
+| ethereum | `0xd68d8bcddb4f42ddff917cdf26159009ccb2fad5` | StrategyProxy-11 | impl | inactive | no |
+| ethereum | `0xd6dc843a92cd90afe65cfb00432ede37549a2946` | PlasmaVault-6 | impl | live | no |
 | ethereum | `0xd6eec2e46451b136fa332e56f728421fd160aa87` | VestingMerkleDistributor | impl | inactive | no |
-| ethereum | `0xd6fa88b765846615ce14d9a444e0cb350043b783` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0xd6fa88b765846615ce14d9a444e0cb350043b783` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0xd72915b95c37ae1b16b926f85ad61cca6395409f` | PowerToken | proxy | inactive | no |
 | ethereum | `0xd75ffa16ffbcf4078d55ff246cfba79bb8ce3f63` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0xd7aa529ce055a1f745a40c1eea98ccb9b90e61cf` | OneValuePriceFeed | impl | inactive | no |
 | ethereum | `0xd7e7d5561a1c2d8cf57330746f09a9e415927ab6` | Klondike2FarmStrategyMainnet_WBTC_KLON | impl | live | no |
+| ethereum | `0xd887ea16804424dbe9e0a37533fcf1ec98eac106` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0xd8a3c7d1deccb8445a4391f6052e5a0726f2f270` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xd8f5a5bea95740d2749d20f4c26d543579a7b6d8` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xd91b06ce5a57d271f605bd58d31184b670032145` | VaultProxy | proxy | live | no |
+| ethereum | `0xd932d47fcf53d8dc1ef58455dd5910e19af2dbf0` | UniversalTokenSwapperEthFuse | impl | inactive | no |
+| ethereum | `0xd9d6ac593e62ffcb1c1106865c87d11356a401f3` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xd9f0c6ff3f1fef05f483ee0255640c4f200d2a7b` | ERC1967Proxy-13 | impl | inactive | no |
+| ethereum | `0xda376ff67d108db6783eb8c4f4cdf43ac1214721` | PlasmaVault-34 | impl | live | no |
 | ethereum | `0xda45fe8099358bba400554c9b640170246b43e50` | HarvestDoHardWorkFuse | impl | inactive | no |
 | ethereum | `0xda5e9706274d88bbf1bd1877a9b462fc40cdcfad` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xdaf066a6b51499941299b566d1b124678ebc2b3c` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xdb43c07d0abcad106d1ef60cb56d8fc0cf4afbfb` | VestingMerkleDistributor | impl | inactive | no |
 | ethereum | `0xdb75be5ae2c9d2f75322d0731fc7b18574974579` | MiltonUsdc | impl | inactive | no |
 | ethereum | `0xdb94c2817f405b4a01ddb324f8abb4d7d3705dad` | VaultProxy | proxy | live | no |
 | ethereum | `0xdb9c2eba87301e6951d6fbe7a458832eaab2137e` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xdbe385169ee000cb82021c472a3312585d7fb444` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xdbec47f0deadab1bc10a95d25b1128e3d85e7da1` | VaultMigratorStrategy | impl | inactive | no |
+| ethereum | `0xdbedfbd26f88d131353bd6f6d44a7ef9e3e372be` | StrategyProxy-4 | impl | live | no |
 | ethereum | `0xdbffc30f3b95b8ca5bab3e6c139076fea47f89b3` | ERC4626PriceFeed | impl | inactive | no |
 | ethereum | `0xdc1873c8e58e925d530b94ff14b0aa4121b04d1f` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xdc1f8dda71bf936b486b42d2f2db54efe2805f1f` | iFarmStrategy | impl | live | no |
 | ethereum | `0xdc26224466b36be16d37e98744fa1bca82ecc0f0` | BorrowRecipient | impl | live | no |
 | ethereum | `0xdc27244311c56ed038e7acf104245ec6a040d07f` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xdc558e82d0236019578f60992a528f50d04d4361` | NarwhaleStrategyMainnet_DSD | proxy | live | no |
-| ethereum | `0xdd1dfbb5a580e96c2723ccaf687227900f97f053` | StrategyProxy-5 | proxy | live | no |
+| ethereum | `0xdcf1ec5bfca5c16d7b656b3af2481b4234dd2e46` | PlasmaVault-9 | impl | live | no |
+| ethereum | `0xdd15eba9d2cd4deb479f640d08fc63f627d192a9` | PlasmaVault-3 | impl | live | no |
+| ethereum | `0xdd1dfbb5a580e96c2723ccaf687227900f97f053` | StrategyProxy-6 | proxy | live | no |
 | ethereum | `0xdd33b4b6b9a7aa6fcc5f1d1c8ebb649a796fd5b5` | EulerV2SupplyFuse | impl | inactive | no |
 | ethereum | `0xdd496a6ba1b4cf2b3ef42def132e2b2c570941fe` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xddb4669f39c03a6eda92ffb5b78a9c1a74615f1b` | VaultProxy | proxy | live | no |
@@ -1914,6 +2308,7 @@
 | ethereum | `0xe199d7b0d6b0d64d5e8784e1cf351e374b0edc64` | CRVStrategyUSTMainnet | impl | inactive | no |
 | ethereum | `0xe1ec9151eb8d9a3451b8f623ce8b62632a6d4f4d` | MegaFactory | impl | live | no |
 | ethereum | `0xe1f9a3ee001a2ecc906e8de637dbf20bb2d44633` | NoMintRewardPool | impl | inactive | no |
+| ethereum | `0xe1fd88a76e95dd735c6dda45b2aba9e5ffa9a7f3` | Erc4626BalanceFuse-4 | impl | inactive | no |
 | ethereum | `0xe20c31e3d08027f5aface84a3a46b7b3b165053c` | NotifyHelper | impl | live | yes |
 | ethereum | `0xe227a8fcfe8738d2e560baac26be203a2311413c` | BancorDex | impl | inactive | no |
 | ethereum | `0xe26126e541e029a80bf63169e4bb075c25eb6524` | AmmCloseSwapServiceStEth | impl | inactive | no |
@@ -1927,17 +2322,18 @@
 | ethereum | `0xe3abae104b259c523f022a880ad4a73ea8de4c5e` | AaveV3BorrowFuse | impl | inactive | no |
 | ethereum | `0xe3c67a3be126b6f41d66eabb89f1e346cd099195` | MiltonUsdt | impl | inactive | no |
 | ethereum | `0xe438c0fffba2a81094b6623e5191866d32814c22` | VaultProxy | proxy | live | no |
-| ethereum | `0xe49207496bb2cf8c3d4fdadcad8e5f72e780b4ae` | Erc4626SupplyFuse | impl | inactive | no |
-| ethereum | `0xe4cd9aa68be5b5276573e24fa7a0007da29ab5b1` | ERC1967Proxy-3 | proxy | inactive | no |
-| ethereum | `0xe5257cf3bd0efd397227981fe7bbd55c7582f526` | ERC1967Proxy-3 | proxy | inactive | no |
+| ethereum | `0xe49207496bb2cf8c3d4fdadcad8e5f72e780b4ae` | Erc4626SupplyFuse-2 | impl | inactive | no |
+| ethereum | `0xe4cd9aa68be5b5276573e24fa7a0007da29ab5b1` | ERC1967Proxy-4 | proxy | inactive | no |
+| ethereum | `0xe5257cf3bd0efd397227981fe7bbd55c7582f526` | ERC1967Proxy-4 | proxy | inactive | no |
 | ethereum | `0xe58f0d2956628921cded2ea6b195fc821c3a2b16` | NoMintRewardPool | impl | live | no |
+| ethereum | `0xe593cfaba9e0ddd0b0b47f270cd0e045fc0050ba` | PlasmaVault-9 | impl | live | no |
 | ethereum | `0xe5a3958b24767b30f0f5d3f47a25cfb4c08c1053` | AaveV3BalanceFuse | impl | inactive | no |
 | ethereum | `0xe5b4ff91e2842e228d93ee8c6cbcb2959449f8af` | ContextManager | impl | live | no |
 | ethereum | `0xe5b583202901556d6465c798eeb1f9ab727e6c16` | NoopStrategyStable | impl | inactive | no |
 | ethereum | `0xe5c6be56401986f8ae7e031bfad5e07c13467fd4` | MinterHelper | impl | live | no |
 | ethereum | `0xe604fd5b1317babd0cf2c72f7f5f2ad8c00adbe1` | NoMintRewardPool | impl | live | no |
 | ethereum | `0xe62a0348e37565da2ce10952abd0e0c808fcab36` | ContextManager | impl | live | no |
-| ethereum | `0xe6bf65e5a94bf8b3b3e0045bbaf9c1cb24368427` | VaultProxy-2 | impl | live | no |
+| ethereum | `0xe6bf65e5a94bf8b3b3e0045bbaf9c1cb24368427` | VaultProxy-4 | impl | live | no |
 | ethereum | `0xe6e0b4294ef6a518bb702402e9842df2a2abf1b1` | VaultProxy | proxy | live | no |
 | ethereum | `0xe7048e7186cb6f12c566a6c8a818d9d41da6df19` | CRVStrategyWBTCMainnet | impl | inactive | no |
 | ethereum | `0xe715458cd3ba5377487822f748be1a5b994db436` | NoopStrategyStable | impl | inactive | no |
@@ -1951,7 +2347,7 @@
 | ethereum | `0xe8ab8f669be4133a06b5e0b9beff9149ae126377` | NoopStrategyStable | impl | inactive | no |
 | ethereum | `0xe8c0f9e87881c1b98de73290290d9df3813c1bc7` | FeeManagerFactory | impl | live | no |
 | ethereum | `0xe8e51eff698bdf0fd7edb2aeab8e20895e7ea585` | MiningCalculationAccountPowerUp | impl | inactive | no |
-| ethereum | `0xe9385eff3f937fcb0f0085da9a3f53d6c2b4fb5f` | PlasmaVault-3 | proxy | live | no |
+| ethereum | `0xe9385eff3f937fcb0f0085da9a3f53d6c2b4fb5f` | PlasmaVault-4 | proxy | live | no |
 | ethereum | `0xe945ef2449a22958267c67a7df63519454a339e4` | StanleyDsrDai | impl | inactive | no |
 | ethereum | `0xe96141a79916adcfeff63a47eaf2faaa3ca25c50` | UniStatusViewer | impl | inactive | no |
 | ethereum | `0xe966d1cae4770cefe9410e9d14d9486ffee19048` | IvTokenUsdt | impl | inactive | no |
@@ -1962,6 +2358,7 @@
 | ethereum | `0xea2ec079345e559cbd4b06e477370d51f4ef3b10` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xea87d365530ac92a8b5df97e4f16016b3e64e0a1` | SoapIndicatorRebalanceLogic | impl | inactive | no |
 | ethereum | `0xeb011b34b0089eb8e22eb40a6edcadc66ff88a0c` | ERC1967Proxy-2 | impl | inactive | no |
+| ethereum | `0xeba87a0b152b4b672ad048d3f446810a89f9317c` | ERC1967Proxy-17 | impl | inactive | no |
 | ethereum | `0xec56a21cf0d7feb93c25587c12bffe094aa0ecda` | NoMintRewardPool | impl | live | no |
 | ethereum | `0xec6f77b79e910ee2f65edcc987d1947314d283e6` | AmmStorage | impl | inactive | no |
 | ethereum | `0xecb36d7100da9c717671b72e6eb083b07190243a` | ContextManager | impl | live | no |
@@ -1972,7 +2369,9 @@
 | ethereum | `0xedbdc6fa63306b8f8db557f9714530defbb0425f` | NoopStrategyStable | impl | inactive | no |
 | ethereum | `0xedef953cc7f36d0046495c05a25ed0526dbf0c0f` | NoopStrategy | impl | live | no |
 | ethereum | `0xee24de972295c20177e82bde34f64ca5c11958eb` | MerkleDistributor | impl | inactive | no |
+| ethereum | `0xee47a6f0556b855043d16819b057a72d2c7eb9a5` | PlasmaVaultFactory | impl | live | no |
 | ethereum | `0xee8c926a15da9e74d17283a45aa1fb414eaf484f` | OneInchStrategy_1INCH_USDC | impl | live | no |
+| ethereum | `0xee9a18f0de64e8eb399a3baef0550aa50a218768` | UniversalTokenSwapperEthFuse | impl | inactive | no |
 | ethereum | `0xeea3812b60ca4c6d0e2672a865bf7217ecd49f95` | PendleSwapPTFuse | impl | inactive | no |
 | ethereum | `0xeeae0c791d38e1e1fc9f7989d081c9fc290716dd` | NotifyHelper | impl | inactive | yes |
 | ethereum | `0xeeddc566f94fa9508a134955d3502081d0fe7d10` | ContextManager | impl | live | no |
@@ -1981,29 +2380,34 @@
 | ethereum | `0xef4da1ce3f487da2ed0be23173f76274e0d47579` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xefb78d1e3ba4272e7d806b9dc88e239e08e4082d` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xefca889e0fd37358b5fc3a8cab7fea702b5a6600` | CRVStrategyUSDPMainnet | impl | inactive | no |
+| ethereum | `0xefde29882c102fe5a4008e7c2e8067a3059fae28` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xf020b954e02d8b8419cf5625d4371f16a678d884` | AaveV3BorrowFuse | impl | inactive | no |
-| ethereum | `0xf0358e8c3cd5fa238a29301d0bea3d63a17bedbe` | VaultProxy-3 | proxy | live | yes |
+| ethereum | `0xf0358e8c3cd5fa238a29301d0bea3d63a17bedbe` | VaultProxy-5 | proxy | live | yes |
 | ethereum | `0xf066bf07e46ed527ea77717c5e78a73932d21967` | NoopStrategyStable | impl | inactive | no |
+| ethereum | `0xf08cb48bfc705ffb4f2064c578987a27daad1386` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xf1181a71cc331958ae2ca2aad0784acfc436cb93` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xf13a45ff5763cb77fe3dcaaaa25652d15f95aef2` | LQTYStakingStrategyMainnet | proxy | live | no |
-| ethereum | `0xf16119e669c1fb8264dffd92ecb1ab592f73d8e3` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0xf16119e669c1fb8264dffd92ecb1ab592f73d8e3` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0xf174dddd9dbffeaea5d908a77d695a77e53025b3` | VaultProxy | proxy | live | no |
 | ethereum | `0xf2004f64f71f110e9e50b5ff36253fe8785b2bcc` | iFarmStrategy | impl | live | no |
-| ethereum | `0xf270e3051c8552101e760f318407a86be5fc0572` | StrategyProxy-10 | impl | live | no |
+| ethereum | `0xf215cf8b8accd1f87edcdcddcf979fef0ffbd101` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0xf270e3051c8552101e760f318407a86be5fc0572` | StrategyProxy-11 | impl | live | no |
 | ethereum | `0xf2a671645d0df54d2f03e9ad7916c8f7368d1c29` | VaultProxy | proxy | live | no |
 | ethereum | `0xf2b223eb3d2b382ead8d85f3c1b7ef87c1d35f3a` | VaultYCRV | impl | live | no |
 | ethereum | `0xf32146f6ebeae1a19f035e385b75d04a9ecd6e10` | CRVStrategyStableMainnet | impl | inactive | no |
 | ethereum | `0xf330891f02f8182d7d4e1a962ed0f3086d626020` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xf3b2b174e7f36e43246ef33fc58ce5821f21f799` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xf3b6ff039c67115d8c8bbd2e4ca42a6c1c22824f` | NoopStrategyStable | impl | inactive | no |
+| ethereum | `0xf3d20ca7e35687b159c2ea4c3876c89afa27bf11` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0xf42c6b76147f0728beadbbc7316f7fb4ff8f95d2` | YelHodlStrategyMainnet_YEL_WETH | proxy | live | no |
 | ethereum | `0xf435e8e3d48c972ef536b4862b2cfec4d0a8c5f1` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xf465573288d9d89c6e89b1bc3bc9ce2b997e77df` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xf4725fa8ceeb9a3aa97f75fd83ecfb31587f3ab1` | PowerToken | impl | inactive | no |
 | ethereum | `0xf4784d07136b5b10c6223134e8b36e1dc190725b` | NoMintRewardPool | impl | live | no |
-| ethereum | `0xf47a4823588b192933333b1d918098170498ee35` | StrategyProxy-6 | impl | live | no |
-| ethereum | `0xf492e277d6d6e051f9871e66badfd089fb7bf5e7` | Erc4626SupplyFuse | impl | inactive | no |
+| ethereum | `0xf47a4823588b192933333b1d918098170498ee35` | StrategyProxy-7 | impl | live | no |
+| ethereum | `0xf492e277d6d6e051f9871e66badfd089fb7bf5e7` | Erc4626SupplyFuse-2 | impl | inactive | no |
 | ethereum | `0xf493fcc0257af49ce83db4e41a2ad0a7d1ced071` | BancorDex | impl | inactive | no |
+| ethereum | `0xf4c6fe697b65785037d04b5c614c961e3693cdc8` | PlasmaVault-6 | impl | live | no |
 | ethereum | `0xf4d0028ae2d3fd215f8077755df898b4591cffbd` | IporProtocolRouter | impl | inactive | no |
 | ethereum | `0xf4d50f60d53a230abc8268c6697972cb255cd940` | NoMintRewardPool | impl | live | no |
 | ethereum | `0xf4ead5142749316c8ca141959b510862fbba1807` | CRVStrategyStableMainnet | impl | live | no |
@@ -2012,7 +2416,9 @@
 | ethereum | `0xf553e1f826f42716cdfe02bde5ee76b2a52fc7eb` | VaultProxy | proxy | live | no |
 | ethereum | `0xf5833723b150929d1fddf785ed9d92eee722387d` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xf58d96142a6abbee5cb2f2ede750aa7429672618` | EulerV2CollateralFuse | impl | inactive | no |
+| ethereum | `0xf58fcce9370aba552032d3ea47baa486f70c0fdc` | ERC1967Proxy | proxy | inactive | no |
 | ethereum | `0xf5b221e1d9c3a094fb6847bc3e241152772bbbf8` | NoMintRewardPool | impl | live | no |
+| ethereum | `0xf5db3e3961d52ecfdd939e8c00de47b8e3d0be61` | PlasmaVault-7 | impl | live | no |
 | ethereum | `0xf5f62c527a2d6685dce359b8a337cc53b303b5ce` | MiltonDai | impl | inactive | no |
 | ethereum | `0xf6016a183745c86dd584488c9e75c00bbd61c34e` | GearboxV3FarmSupplyFuse | impl | inactive | no |
 | ethereum | `0xf60afebb76c43f636e4d1a099847fc97dc8bded0` | CRVStrategySwerveDAIMainnet | impl | inactive | no |
@@ -2020,26 +2426,30 @@
 | ethereum | `0xf710b1daab1623feeb78d32bf34e288c3ee67072` | GearboxV3FarmDTokenClaimFuse | impl | inactive | no |
 | ethereum | `0xf713395a26400c2ecd4af9faf0f6ad7c569daa97` | LiquityBalanceFuse | impl | inactive | no |
 | ethereum | `0xf739f3c3cf12a3097541eedb7c0c324dcbf2c4db` | MiltonUsdt | impl | inactive | no |
-| ethereum | `0xf7714d5c361cbfa534fc1e09b76a74f5c3ff3a4b` | StrategyProxy-7 | impl | inactive | no |
+| ethereum | `0xf7714d5c361cbfa534fc1e09b76a74f5c3ff3a4b` | StrategyProxy-8 | impl | inactive | no |
 | ethereum | `0xf82a5730adce3e30c41d057928e1edf4606c67f9` | EbisuAdjustInterestRateFuse | impl | inactive | no |
-| ethereum | `0xf84450ca246858fe12ae58da6458e46d2a03d751` | ERC1967Proxy-3 | impl | inactive | no |
+| ethereum | `0xf8302787582fb769fd30107e4d877695f0deafea` | StakeService-2 | impl | inactive | no |
+| ethereum | `0xf84450ca246858fe12ae58da6458e46d2a03d751` | ERC1967Proxy-4 | impl | inactive | no |
 | ethereum | `0xf85a6e40935ba6068449bb0ec63a08c7cc84222d` | VaultPausable | impl | live | no |
-| ethereum | `0xf8b2ef93a8c89b24324d7507c36db081fbea72ec` | StrategyProxy-42 | proxy | live | no |
+| ethereum | `0xf8b2ef93a8c89b24324d7507c36db081fbea72ec` | StrategyProxy-45 | proxy | live | no |
 | ethereum | `0xf8b7235fcfd5a75cfdcc0d7bc813817f3dd17858` | VaultMigratable_DAIBASV2 | proxy | live | no |
 | ethereum | `0xf8cbfe8817d7a7986b6f1c67e29262b8d2496102` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xf8ce90c2710713552fb564869694b2505bfc0846` | DepositHelper | impl | inactive | no |
 | ethereum | `0xf902afcd3708aa715d826ff33166739a368ea3c1` | AccessManagerFactory | impl | live | no |
 | ethereum | `0xf93e0edc76f3147c63f53e7ed245330b96009b26` | IvTokenDai | impl | inactive | no |
+| ethereum | `0xf9a1f7147d04d569af9f9e1b6b713935ca1308fe` | Erc4626BalanceFuse-2 | impl | inactive | no |
 | ethereum | `0xf9bcabd9886ec2ba1467acdebe040077ee61bee6` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xf9e5f9024c2f3f2908a1d0e7272861a767c9484b` | NoMintRewardPool | impl | inactive | no |
 | ethereum | `0xf9f58002c6659399dea4c2f42018028f03eec3de` | IporProtocolRouter | impl | inactive | no |
-| ethereum | `0xfa0186c12e5166d02ef871a89349f7c664999f8c` | ERC1967Proxy-6 | impl | inactive | no |
+| ethereum | `0xfa0186c12e5166d02ef871a89349f7c664999f8c` | ERC1967Proxy-7 | impl | inactive | no |
 | ethereum | `0xfa556d43049bb9b5b1c8c9a464ce624821f51b1c` | LiquidityMining | impl | inactive | no |
+| ethereum | `0xfa5f2e760b0d9586db391098b9ac1f97f1a7d8db` | WhitelistWrappedPlasmaVaultFactory | impl | inactive | no |
 | ethereum | `0xfab83a20d8acd21a6581370ac38a16844ca0c008` | IdleStrategyDAIMainnet | impl | live | no |
+| ethereum | `0xfb15065b1e0e9482a295324c592894ef35ccce9a` | PlasmaVault-12 | impl | live | no |
 | ethereum | `0xfb22c148f60527e1386905940d1ba51b871d11b8` | IporRiskManagementOracle | proxy | inactive | no |
 | ethereum | `0xfb2ee9b9490d999d1f50a27f66410699c7e95318` | MiltonSpreadModelDai | impl | inactive | no |
 | ethereum | `0xfb387177ff9db15294f7aebb1ea1e941f55695bc` | UniVaultProxy | proxy | live | no |
-| ethereum | `0xfb696db7a9da52b7225c61edfb56537544307541` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0xfb696db7a9da52b7225c61edfb56537544307541` | PlasmaVault-3 | impl | live | no |
 | ethereum | `0xfbe122d0ba3c75e1f7c80bd27613c9f35b81feec` | VaultProxy | impl | live | no |
 | ethereum | `0xfbfbe380489882831dad5258cfd2e29307e23b82` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xfca949e34ecd9de519542cf02054de707cf361ce` | VaultProxy | proxy | live | no |
@@ -2048,15 +2458,17 @@
 | ethereum | `0xfd1121b2292ebd475791ee2d646ccc8451c9f7ae` | CRVStrategyStableMainnet | impl | live | no |
 | ethereum | `0xfd4e29e4869112abbec6846151f6d47fd25d5ff8` | Basis2FarmStrategyMainnet_DAI_BASV4 | impl | live | no |
 | ethereum | `0xfd645a9980e1aba964283f65b03ae125a4ea4206` | MirrorMainnet_mAAPL_UST | impl | live | no |
-| ethereum | `0xfdaf72d8b6e0f553c137a03f73c8ed210712f143` | StrategyProxy-10 | proxy | live | no |
+| ethereum | `0xfdaf72d8b6e0f553c137a03f73c8ed210712f143` | StrategyProxy-11 | proxy | live | no |
+| ethereum | `0xfdb0cdb78c5a7f2fa3ff9f7a505dcfe20a62747f` | StrategyProxy-4 | impl | live | no |
 | ethereum | `0xfdb898d9bbd3f8bd0fbc80e2dbdd1c2de2f1b526` | ContextManager | impl | live | no |
 | ethereum | `0xfdd67ad159bd07cd7e701f40f1717318a68e731f` | ContextManager | impl | live | no |
 | ethereum | `0xfde5dfb79d4a65913cb72ddd9148a768705e98d4` | IdleStrategyDAIMainnet | impl | inactive | no |
-| ethereum | `0xfe09e53a81fe2808bc493ea64319109b5baa573e` | VaultProxy-3 | proxy | live | yes |
+| ethereum | `0xfe09e53a81fe2808bc493ea64319109b5baa573e` | VaultProxy-5 | proxy | live | yes |
+| ethereum | `0xfe2242d476d03f72423311629450078a4cea07b5` | PlasmaVault-35 | impl | live | no |
 | ethereum | `0xfe83a00df3a98de218c08719faf7e3741b220d0d` | NoMintRewardPool | impl | live | no |
-| ethereum | `0xff2adcf9e251b656f0c22bf6b153db4c851e4a6c` | StrategyProxy-43 | proxy | live | no |
+| ethereum | `0xff2adcf9e251b656f0c22bf6b153db4c851e4a6c` | StrategyProxy-46 | proxy | live | no |
 | ethereum | `0xff69f703de234883ad2553f1a0e37559f332aaf8` | AmmCloseSwapLens | impl | inactive | no |
-| ethereum | `0xffb090cb1829c5977fbd070cebff7425c76b0472` | PlasmaVault-4 | impl | live | no |
+| ethereum | `0xffb090cb1829c5977fbd070cebff7425c76b0472` | PlasmaVault-3 | impl | live | no |
 | polygon | `0x000de668684839f97d4845f32a43e913366ec08c` | UpgradableProxy | impl | inactive | no |
 | polygon | `0x002e97b041e42697def62afab53c99c1dd5d8dbb` | UChildERC20 | impl | inactive | no |
 | polygon | `0x0066b4fe7d66f6ef28f1712ce296987720cccd18` | UChildERC20 | impl | inactive | no |
@@ -4598,421 +5010,9 @@
 | polygon | `0xffd6cadaf1b96d2a206f68ba0155e07262404724` | UChildERC20 | impl | inactive | no |
 | polygon | `0xfff6c6c7946d4f610d40efe863247e54fa72af7a` | UChildERC20 | impl | inactive | no |
 
-## Source unavailable (415)
+## Source unavailable (3)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0xf54537b19796d2c75ecb6760a299b8482ea717fb`
-- base `0x09f77a2552b83e157cd5d49867b5d580b50588ea`
-- base `0x0a4732398084bf361f7ff530446b8f217c22b050`
-- base `0x0d1cf457d9c1e5f60c4226aeac6b0481ef7e7881`
-- base `0x0da39bc9efe94bd7229f3597d19658e250408381`
-- base `0x0e95dbb1f8bc45d6bbb65bb53e92fe1e6a92db4a`
-- base `0x0f96775ca3fc68fdc85fde54ba245e88466dd924`
-- base `0x1016508d9bb2f546b7f07171311b9de1692576af`
-- base `0x12c479f8ab53d4884fc76f803dd24eb8b6d17a94`
-- base `0x1435f6d8b4629a16e5e830f832440f20dcbe32ce`
-- base `0x1455717668fa96534f675856347a973fa907e922`
-- base `0x1573f3a1a67a6c90577584b142de802fed4e4cfa`
-- base `0x157ba7c03eb9853900d3602200a58d0361655e27`
-- base `0x168826ea6576c93cfca473a16ba14f245a188346`
-- base `0x195f6d86ef29107dbf6270e7f9a7c01e7f03efff`
-- base `0x1d27d2350de151139c969c23261e08b57326b004`
-- base `0x1ee02be02f475e4c2faa93e2173f31eda4689a51`
-- base `0x23c2a2249a325e728e215dbcb1e04c40d7b7b4b6`
-- base `0x23ed445bfe9455941665bf12dac2199c0eb5c33f`
-- base `0x2505763d644c7fa61275ae64b3c14029b1b0120c`
-- base `0x25c275cbffb6539d81e00afcdbfdbd962f5d3202`
-- base `0x2655821cfe114a3e0c1f51365a154697196d5e8f`
-- base `0x27c83584660af078ab10e67d38be0ab39321f7f8`
-- base `0x29399d76921e23314ae259cf5e17116f48ae65b7`
-- base `0x294f7af841b80505f28d1f94d68d4885ff2827c7`
-- base `0x29ba38ed242b4ad1fd03be6a5d98c9a1895401cd`
-- base `0x29cfd745a2d32b9b1475063c7793fe55c2cc6947`
-- base `0x2cac1faa0536dff29c3649c608444168b0409629`
-- base `0x312388f28803dae19dd5d6fe999ef13c600c201f`
-- base `0x31a36d3eab4a8e0d365eb72ee9079603af6c421c`
-- base `0x31a421271414641cb5063b71594b642d2666db6b`
-- base `0x32809307a554535ac7a4b0f41bb08a7d3b7a4f35`
-- base `0x32df46cff7e6cab610ed6113d7a57f242d061d68`
-- base `0x33ed640fc033a9bbe96c8469d1f32b106a4ae8c9`
-- base `0x3438ac64930d0d5076899026f98bf80fde196f18`
-- base `0x34c7b39f9c1311403b14a8592e4a0ff363f66b7f`
-- base `0x354de72a148aa91f046265798c61b991de6bdfc0`
-- base `0x370a3d2800b1ea990634835a5709fb31082de6d9`
-- base `0x3710fff6d6a0a2d4c90476b643264a1a920dfc43`
-- base `0x39e8aaa46320cf7f0dcd46b2fff7f446d1d8a633`
-- base `0x3a42e938b344013858bd6434fba691587fdb4aee`
-- base `0x3ba9022735c7d570ad99563b428e0e122cb0e1eb`
-- base `0x3efe69bb024ba8f96fa12eff3dc734ddec1ee6b0`
-- base `0x3ff6d9ab0599b7200c223e9eb0b609fb2167b32c`
-- base `0x4092d7bf734d7b129f76899667b218f745f05cc0`
-- base `0x41883f367ab187b1c676a4a4767758916a6a01fa`
-- base `0x4195daa3500e418e864954e1abe9e1d710ce824e`
-- base `0x42409d20a2f5c75936eb1553ded054b09b2c7e2f`
-- base `0x42c12f941b83276d5691d9caef9b040f787c6b3a`
-- base `0x45484a246f520a3b570ceb19f2d2950bd16a2372`
-- base `0x45aa96f0b3188d47a1dafdbefce1db6b37f58216`
-- base `0x47ad28c63b9d3acbd43ea42aac6a1a865d9f928e`
-- base `0x47da5b0a176b00676a3a58c75c374494383c2025`
-- base `0x492eaafef7b6abb3ace03c0baa1a2c4bdfc0fc16`
-- base `0x496e39f0aa349c24032e5636e9180e7265c3fecd`
-- base `0x4a84a8618816855632f1d39280bc2e6a464dae15`
-- base `0x4a8b953f1d82f315fe58ea3de63e82b578477510`
-- base `0x4abae7c3503c31f1a60df7ca60ad46ba4e791996`
-- base `0x5077b42243e06ffd3fa239fd499b620c532f85b2`
-- base `0x51de88c331426d59f04e33c7adbf7bae80c3b495`
-- base `0x53defd9d61134847b8de75385891dcd32b3ad5d4`
-- base `0x55a3d0f6c2e9efe0462f8de232268275fe76e15b`
-- base `0x55d8d6e5f17f153f3250b229d5aac9437e908a77`
-- base `0x57866b47994aff5d0e7d122f8d6aed0eb9c97870`
-- base `0x598326fcede2c1b8e9023a20c18fff6dea5306a4`
-- base `0x5ac8c0d9d11ddd7a335af0b72eacbf33d500e7cc`
-- base `0x5b36e95abff98a476fbaeb3e2434dee3eb463f48`
-- base `0x5bd0b6ba37f8bc04279e47e040d7a253824a535c`
-- base `0x5c53d7c26254b5623f22081bd26776b380bd1601`
-- base `0x5cec9bfe577ed59ccd164ec9777093c0663b5170`
-- base `0x5ff3d964d0f60d715de3b65a2fb6c9eaf291a046`
-- base `0x60664eb6b193204df730d269f064c1548453beed`
-- base `0x60ce35e58f6ced1538c16a15ff7ff75b0538898f`
-- base `0x610152a79be7f2aa3aa70520c9331c18fe8d33b7`
-- base `0x625e4fea516dbc44014e8f5a10bacb2f0500849f`
-- base `0x62611146121706f601e137bb46f18da0e9754a4c`
-- base `0x62ec84e9bbd97342a8493365ecf7329f89ef7ee4`
-- base `0x633d78849fb91a336077ff25afc3c72c8f6a7045`
-- base `0x63f92c796221b7dbb85f14477eefdbf2b58d32cc`
-- base `0x64eca0c58f4371f73921f51081f0960b982c7532`
-- base `0x6539fd9916bc76c4324b747398ab066a256b8dd1`
-- base `0x6629dbc8aebae849b2359b0ba2e70d3ad20fd7f2`
-- base `0x6966d64e13a4d454025b94b73adfb30fd1efedba`
-- base `0x69e2a72805185c97f112c70724247deaf1388205`
-- base `0x69edbaec3d573cf2560f25a81bb315ba77b49ad0`
-- base `0x6aa5c137894d7f579eb3541584e0c4fb087e17b4`
-- base `0x6af40c13de7443433c161dd7c838379760e02221`
-- base `0x6f4fcbb1f742311398532862684c8586a9a5deb3`
-- base `0x704515ff838bca8a773bdaa2c3ae790bfa2ce887`
-- base `0x709e1601b99bfd246d26a71ee15a294e15548a62`
-- base `0x71f856a030b1f5e75a85779a770d8cf96fb4a1cb`
-- base `0x722c6a91dd120262887158da5e742eb4b365cd58`
-- base `0x780ae3454f86b725d572cea4417d8cf681ba8da7`
-- base `0x7872893e528fe2c0829e405960db5b742112aa97`
-- base `0x7924184350e9d555a576153fe5feeec86270530a`
-- base `0x79d31b98382c5d325ab42353ce1ae7081757c89a`
-- base `0x7a5869aa7fd85cc6226fd4d3487cb6b4b5b30199`
-- base `0x7ce0b2272776e437b28c64d75c2c94c27d4c6161`
-- base `0x7f378328c91f6a4d1dc5dd08daecb6e983f18e61`
-- base `0x7f80241a2b8da1e11b96b5749991e9a9a40b62a9`
 - base `0x7f9179dc81cd0dbe6488ecd192cf37d2b9530f0c`
-- base `0x801467ea9e305927365097ae3319ffde6bf60912`
-- base `0x80c441de2e0ccd968ce8ea6ccabc114b6c6cbf0d`
-- base `0x82c57fa0aa63989ee21e9aa73cb5494098624f02`
-- base `0x84891022d6f0d478c1aa59a336aaaf555b3da093`
-- base `0x85564fb392e18a84a64343a3fb65839206936c0f`
-- base `0x8598432cda45fd6dc836728d6b12f325f78b62b6`
-- base `0x86688857794d1280e068a4283f4bc8e9a704ac7a`
-- base `0x86d94f5bacb94dac2088a0096e88b06b1944ab1d`
-- base `0x89a204aa373a56b02abad265bea12b70c4f2a142`
-- base `0x8aad082f04d04d1db2e92160baa630e31c22c073`
-- base `0x8ab30cfee8410a51a5da4e656c2d35b1e184a27e`
-- base `0x8acf503d1f2b2267074483dea37404917218005d`
-- base `0x8b41e7b78876bb09e9f11c9edac6c1285276f1b3`
-- base `0x8de4b34d78b8431d6e9479a99cb21bcc5c50b792`
-- base `0x8e95e58677759d1328ad36f316a3796a693c783e`
-- base `0x8f04cfea381465785d65e1f69b17dc4bcfdca5cc`
-- base `0x90188fed247002e81dac2bc74f547c5e4f703c5d`
-- base `0x906496f0d4c733275f892b1a6fc92ed56639b379`
-- base `0x91cffcc1fe6b9da316e8848e141badb8cd41ba00`
-- base `0x928c217e669d9f0f3fc08fb8ac322133a12e1f43`
-- base `0x93f4c0e8d719895a9212dc3af5efb357d08cf5c9`
-- base `0x9493f32e3d94f9c5fd7d953259197fb285aa49ac`
-- base `0x94d2de617cf5805233cc4367a96deac53073e695`
-- base `0x95cfd16bc1b37c8cc2efcb523393e3e0660696d2`
-- base `0x96901b9a10f2a7f856a97ff148c4cf3a0077d1ab`
-- base `0x978337f42e07eac6c6c28418fe3bb744b137b605`
-- base `0x9792eadd39a6068198f08d6d868c363cd3141ce9`
-- base `0x98e03c6ed7374f1e58ff022f1d2d8239526e13f9`
-- base `0x99b171c59e4ed4257deae1f472cfa7e02b85d93f`
-- base `0x9c0f3393e3c0df870f7b1878bc9a5d313665a891`
-- base `0x9d7cd23f298816a3390782210dc5ccb43d1d8cec`
-- base `0xa0200eeed8d90aa01de741daefab5f86c09d5785`
-- base `0xa121d23cecd8050082d13a1fc062598c5449dbe9`
-- base `0xa1e14262e6613fa969ea94dcf008010db954e5d1`
-- base `0xa2600fe963457a7ab738101aec531799a0c3a4bc`
-- base `0xa4e7b6e83b8135da25ee2650472d6a8d459d1fe8`
-- base `0xa51787e262e53220bbeef297613ee28a9c011937`
-- base `0xa5fffbf2c63e098f46de2f3032998251789d771b`
-- base `0xa6b2d83a83de1c21324cf17909085d0d20eaa99e`
-- base `0xa74899047da5f0ee393444dc4be6046c7da0d8e9`
-- base `0xa8799d46a00ad19b2ebd0d0d18792b4baf26c0cc`
-- base `0xa912d926e7c7ac44be2280ba4247df1fb4ef02ae`
-- base `0xa97daeea8bce646090ebccff7c198bc2cde809ba`
-- base `0xaa7f40f31ca2b9413405065abaa346a5e4fa2f6e`
-- base `0xac0655f0c6b092513be56a890110dc19858e4edc`
-- base `0xad5caf5c1d338d7881f5163ad8085a5f21408854`
-- base `0xad7ac657d4a9fc5aab65520fbe2f61cf3cca45b9`
-- base `0xaf46fc30b90c7a31ac40f2f60c39e8eea82b3a3f`
-- base `0xafd4ebc65483ac6222beb2608113d95730b3d64b`
-- base `0xb002337c59a4133e328d91ed82c5012472952c6f`
-- base `0xb02d87eb201f56ba6afa24c0969982bc4c4e8599`
-- base `0xb0767c4b439b2d1e57b23480ee0db22a5e6bdea8`
-- base `0xb187050408857fc2a57be0a5618e39b331425e77`
-- base `0xb1951faac31f58830c514561c17b640355529ec0`
-- base `0xb355c889fc2b7e593730e396416e7ab75448d256`
-- base `0xb38145e7e4f8e20f41283bd061c93c437533966d`
-- base `0xb40095ddff108339b82a9f32c3d6a4faab3a2e32`
-- base `0xb56aea3a2a403c1472717e118d39ac3b11055a48`
-- base `0xb6e7b5a43000b737fff36c5fd8eaa76a0be7e302`
-- base `0xb88aa4ef11876dd5627d4218b1baf1bc84a63a49`
-- base `0xb995c4ea64ed9da2f8ecc9eb6707b6c4dda2293e`
-- base `0xbd2dd55083aeb351358856f63b529a60a6c6d125`
-- base `0xbe8ab5217f4f251e4a667650fc34a63035c231a8`
-- base `0xbf73aa954c113b3958b97416df972aeac23a4206`
-- base `0xc0934de072b5fd902bd049077f56255d82e98de7`
-- base `0xc0ce53f755feae93fd219b2cd0f58a4fd0d535dd`
-- base `0xc2f8ed10db79aae0b24598b31f4503e25dc62ea6`
-- base `0xc3b44addfae29fd170196c324ba0c233c870c77a`
-- base `0xc4c00d8b323f37527eeda27c87412378be9f68ec`
-- base `0xc4ccefe822b78898c81aef6826d2c589bc50cd61`
-- base `0xc69171ab8722e511bc41b68bc7463bd89eff476b`
-- base `0xc777031d50f632083be7080e51e390709062263e`
-- base `0xc929259a052f091339d4533db9844b900c56b588`
-- base `0xcabc40118e83236c751d9a3089e9b5cf53ee4414`
-- base `0xcb648a122e662988bd16f1f53aef59899dbb58e1`
-- base `0xccc7316475c8ba10a9f4c1393a77a31c73435e41`
-- base `0xccf76dcceb202786417dc996a077e3666fb2f236`
-- base `0xce0c20b46572ff810978390e99cae79565d0f15f`
-- base `0xcf2fc50b62c0d263abc0439cab2a0b76066a78d4`
-- base `0xcf4267c130c070bd4a188a289a839e08fac139b8`
-- base `0xcf9bb53460f1963b90409fd155f49c5750a45b7d`
-- base `0xd00e821c550ce92ebd4a70becb02657da7a5c562`
-- base `0xd14a7db76bfbdca43a5e985b8255e7ae0633532c`
-- base `0xd2d3a04ee69dfea8df5e082a7657351af2a384bd`
-- base `0xd52962deaf7252ecbf119dcb18d9e39d42ae5f88`
-- base `0xd5629b35153cce6eb860b3db671e6241866d083b`
-- base `0xd61498ff21c11761b976e8a25d919decb6b42bc2`
-- base `0xd7412a93db3d39aa7ab9c30c471f069a3f059ad5`
-- base `0xd76b9c813e5a17879f01d50cf5c90a2ed17a8dbb`
-- base `0xda0711a0b1b1dd289c4d7c08704dd1e4ccea80c1`
-- base `0xda101a7cb92fa81b5d5e2ea3d76048c4675cec0d`
-- base `0xdab31950ddcc814c49e6bbd5153dd2062e44f368`
-- base `0xdb6b7c05e2ce7a1f0f0ee8eed788e5d52c909def`
-- base `0xdc1491e90d77cb7513c4be3827dfa0c9e859271b`
-- base `0xdcfc262ea3ea1bba4a898f793eaa74668d255cd3`
-- base `0xddd2ea42b8bccada2dded9db3170ab2f533d1b73`
-- base `0xdfe1af9eb54ac362b7d698d34d560acdc5b96a20`
-- base `0xe0c43958a9a49a3290de54b4eff72ef7b324c2ee`
-- base `0xe14a69438daa58ca2dbf70b74e10626aa39c616b`
-- base `0xe1cce1485f5a22d64b89d8e0ba2190ca4e8f1ea2`
-- base `0xe2996fe2d49b41e37b5c01df32cdfc125329e5d0`
-- base `0xe33f6a15d382ceabb8f351320bf63ee2860e8203`
-- base `0xe37d4448cc6bcfc934d80220d076c874adab1cca`
-- base `0xe5beacb6d013314e3601f45b3ed226ffa5f138e2`
-- base `0xe727feb09515c5eb86bd5f5eba7f3228252a2e30`
-- base `0xe78285a51f51916f2311b7017db036d8351f3cf9`
-- base `0xe83697362d91af8f505e3e693f2847a30cd81a8e`
-- base `0xea1b36c9c655470cbb6e171b9d025783b079da0e`
-- base `0xeade917a252a9b0bcfbdd3a37ae9955877feea8b`
-- base `0xebcf47837ad71fc98d5b608356eac1ff38fa67db`
-- base `0xec5b8b2243fa7317b6368d9cd976d88ffe1800e7`
-- base `0xecd2bf892e2ee99cf2cbbc81f6877132e25e34db`
-- base `0xed5d22f133bb20dee41629b84348f60925e8bde0`
-- base `0xed5ec535e6e6a3051105a8ea2e8bd178951a9eac`
-- base `0xee01bb433e74c8432f581696e04d7ec0171a2496`
-- base `0xeefbde9bdf1a75dd5799c8d79cc06aad41986766`
-- base `0xef40141ea3263004d398136ff9eb75e5d6743c09`
-- base `0xf328e4e84446cf5400f9baf1482e939f88a9e460`
-- base `0xf3ce837d8eba7332ce16b698d8262247d6cb277d`
-- base `0xf4fb53b8831dd70b628f225ab8bbaadc0a93e2dc`
-- base `0xf5395190c6534f806c1ee0377d6a88e9aeb3616f`
-- base `0xf569a44710deb64c8dc9751d8595bb90962f7a67`
-- base `0xf590aa3c618249f3fd2b66e35f899b5dd2d16ecb`
-- base `0xf5c604608df82eb527661ab669973de152eb1f6f`
-- base `0xf69058ab88f4cb5f49b35b012ed4106a760ae746`
-- base `0xf8a6aa09bb55f2319113b0da88883f392e66a5fa`
-- base `0xf8bb9a9051f6e94d097686544021e6df17ea6caf`
-- base `0xf90ff0f7c8db52bf1bf869f74226ead125efa745`
-- base `0xf9f7ffd661f4c8de141732eee07cee7447c013d4`
-- base `0xfa00806c871558cef982dfc02d7a87e4ad0ec0fa`
 - base `0xfd5ba41a7ce38bc901308547dfcbaded2b682b11`
-- base `0xfe8b23b493579e5c3a0a3bc5bbf20662b3072de6`
-- base `0xfe9390299b5eda1814df88e97785beb5f4fbf16c`
-- bsc `0x0392f36d2896c966e141c8fd9eca58a7ca9fa8af`
-- bsc `0x0a7d74604b39229d444855ef294f287099774ac8`
-- bsc `0x1274b70bf34e1a57e78c2a2f3e28a4e1b66cbe48`
-- bsc `0x129ccee12a9542ff77e066e6f8d7df49f8cbf89d`
-- bsc `0x14cb410659b4a4a7ccea99e6f6c9eac8718160df`
-- bsc `0x1bfb4ed996f4356aa705891dedb7d7776402bec1`
-- bsc `0x21fa8c490e7c1a0d3f1c82e63a5d2ee276614c60`
-- bsc `0x222412af183bceadefd72e4cb1b71f1889953b1c`
-- bsc `0x2427da81376a0c0a0c654089a951887242d67c92`
-- bsc `0x299b00d031ba65ca3a22a8f7e8059dab0b072247`
-- bsc `0x2ce34b1bb247f242f1d2a33811e01138968efbff`
-- bsc `0x33da6b1a05b4afcc5a321aacaa1334bda4345a14`
-- bsc `0x374787234b369b56b3701e0b932051b37726096a`
-- bsc `0x394e653bbfc9a3497a0487abee153ca6498f053d`
-- bsc `0x3d5b0a8cd80e2a87953525fc136c33112e4b885a`
-- bsc `0x5089ea6c884a03823672888b57ebce929ece63ca`
-- bsc `0x5da237ad194b8bbb008ac8916df99a92a8a7c8eb`
-- bsc `0x63671425ef4d25ec2b12c7d05de855c143f16e3b`
-- bsc `0x6a0d7383762962be039c197462bf1df377410853`
-- bsc `0x6d386490e2367fc31b4acc99ab7c7d4d998a3121`
-- bsc `0x75071f2653fbc902ebaff908d4c68712a5d1c960`
-- bsc `0x78cf4a86ba3b4c5246d097e5cd0833cb641c1425`
-- bsc `0x84646f736795a8bc22ab34e05c8982cd058328c7`
-- bsc `0x9090bccd472b9d11de302572167ded6632e185ab`
-- bsc `0x9be089e60ae934ca6d9a263d04905ac6aaa48995`
-- bsc `0xa0246c9032bc3a600820415ae600c6388619a14d`
-- bsc `0xb75f4c87ebed0a2c6e3d6ff62844e3663cf83bb8`
-- bsc `0xbf2989575de9850f0a4b534740a88f5d2b460a4f`
-- bsc `0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f`
-- bsc `0xc95cbe4ca30055c787cb784be99d6a8494d0d197`
-- bsc `0xc97ddaa8091abaf79a4910b094830cce5cdd78f4`
-- bsc `0xcd8fb1302c30fde56bce5b34211e84561bbf0df1`
-- bsc `0xcf5f83f8fe0ab0f9e9c1db07e6606dd598b2bbf5`
-- bsc `0xd75ffa16ffbcf4078d55ff246cfba79bb8ce3f63`
-- bsc `0xde7099898619e6264b4a3b702a9c69bf1f2eca1c`
-- bsc `0xe3f309f151746b3c0953e4c0e455bff3dc2176aa`
-- bsc `0xe604fd5b1317babd0cf2c72f7f5f2ad8c00adbe1`
-- bsc `0xe64bfe13aa99335487f1f42a56cddbffaec83bbf`
-- bsc `0xef08a639cac2009fdad3773cc9f56d6a8feb1153`
-- bsc `0xf553e1f826f42716cdfe02bde5ee76b2a52fc7eb`
-- bsc `0xf5a5f4fa631c3e66abeee478bba5a2eb1f939084`
-- bsc `0xf5eaa5d5e5d0c345297d414b7ecd26d64a83371f`
-- bsc `0xf608fb8832bec233a40c6b67fba349dace964791`
-- bsc `0xf71042c88458ff1702c3870f62f4c764712cc9f0`
-- bsc `0xf8ce90c2710713552fb564869694b2505bfc0846`
-- bsc `0xfeb902db08e4e1f362866628098d6110dbe3d072`
-- bsc `0xffbd102fafbd9e15c9122d9c62ab299afd4d3e4f`
-- ethereum `0x0d3921ee9b5e39bccaf6e792512f12bc755c6c0e`
-- ethereum `0x1469e4f7c78805c48b550fc4f49e4e2995512ee8`
-- ethereum `0x14e7c30c939302c13a6dac5fe71835c3d4932f2a`
-- ethereum `0x19e332aba9cd9387e9310c9645b0a4b03a6e7906`
-- ethereum `0x19e5ac38a67d2422c87992150cbffb40de02737c`
-- ethereum `0x22524fd9da2fb68c9603ad32fdd29dd2952bd0a1`
-- ethereum `0x23c8dc9520df31c69c725c6ed4657ae6cc21cdec`
-- ethereum `0x2c10c36028c430f445a4ba9f7dd096a5dcc75d5e`
-- ethereum `0x2d1a21f4138a31f978857b28ed6f079408af2792`
-- ethereum `0x2e3266358674c8a54ead81610c3c41033279e7dd`
-- ethereum `0x318dc5d24bcc71ba0127a45e009b64bdba0c2edf`
-- ethereum `0x32971e61678b0a77a07425f617f83c6d5aecf8e7`
-- ethereum `0x337b95a972c34e478af17d10750c846c6d5c0062`
-- ethereum `0x390e7ed143bf42ba327dae48a44a48d84168aabd`
-- ethereum `0x3b1dacc212b9420d472c61a3311088c027b967b1`
-- ethereum `0x3e9dbaac4290d4ddc5faf23df8829b3204b9c67c`
-- ethereum `0x428691bf4313981a8c008f4c5c93fbb677c6d585`
-- ethereum `0x48bd852d83f6e58af59255abc708e3ddecb1d1e6`
-- ethereum `0x49cceda0d17d533edc103ceef57ba057c4527c06`
-- ethereum `0x4ba0f214d1b7f572d11dabe8fe0be9c99e25e6fd`
-- ethereum `0x4d99e7e470a3fc64d4b4b25304c74ad8413bddb3`
-- ethereum `0x4dca6fd6f153ee18602ac77b4396070476ec6c25`
-- ethereum `0x4de58c0cdbf95e875e741a7ce90c72397a7d3e23`
-- ethereum `0x4f9a5893cedf67cd01904da919b191826a2e256e`
-- ethereum `0x5367835812d64e18c78e4dac78decfc3b77a91a9`
-- ethereum `0x560c836581476a95b5adf65b1986fba3cf7772f0`
-- ethereum `0x56e76720dcf764a32766c5c0c7f3827ba8b4af56`
-- ethereum `0x57d771f5b266f57775e0247dc8b7b9d427ba6508`
-- ethereum `0x5903e1aeec722943cc5f816cb8c688b30777b2dd`
-- ethereum `0x5a5f437f0c481ace6cda50355bd4bacc8918aa01`
-- ethereum `0x5b7aecdc033968ccbf74f529f7de39df727b5c81`
-- ethereum `0x5cb733ecaf07681c0e79f76b7b02844b66208a71`
-- ethereum `0x5d4474a85b445671bd0d33da944036d9522b9a9a`
-- ethereum `0x5d9f02e85cccec44450c4c9c5bc71fb09bc3c71a`
-- ethereum `0x5e1af85b66a45cdb87d38bcf34ac7d43274e0dac`
-- ethereum `0x63395edaf74a80aa1155db7cd9bba976a88dee4e`
-- ethereum `0x641b81e993e1c52a74a84caf17f1ad50a49675b3`
-- ethereum `0x6558eb96c61ccb8b23cfa26a6b91facd6a0ab162`
-- ethereum `0x6857b21d872141e960d2eac6f92480c2c666e0c7`
-- ethereum `0x69c121cd7f5e962c2698ae9352db1a0d751d5532`
-- ethereum `0x6aeb7b0abd625f493f45f6d413421c6bef064b1a`
-- ethereum `0x75742cc3d48720de065814428f62622c56db6a86`
-- ethereum `0x757e1bb7ade1ee157690b2c2d600a5a87cfb7058`
-- ethereum `0x759ddf11e56d2915fe10ea8c4dbfc44a8d048e6e`
-- ethereum `0x77fcb2c2c7ea27f97a47bd9641677d297382a8a9`
-- ethereum `0x784008e32c9f07d564f272ff8d6ea746e6842c1b`
-- ethereum `0x79f140cf8ae51880fa00468c9621da125e79bbdb`
-- ethereum `0x7a79b55893a8799ee0184ca18fffc84699749aea`
-- ethereum `0x7c20c94ac1e818bb768d34c015b7dca5fc28cc6c`
-- ethereum `0x7c9119fbb87eb1a08224ad225362bdec213007e2`
-- ethereum `0x7d49c68cb11f6203178d13b4186d39c454e3fe82`
-- ethereum `0x7f447457a771745688de5ec7c68c12fb47722349`
-- ethereum `0x806b55f731b0bf5d32d9d14785743589ea23fb94`
-- ethereum `0x8138fd4f5b62237c201b4d6c721b702dc64584e1`
-- ethereum `0x818912488f1023419426d1410d351d7daa7df7aa`
-- ethereum `0x82d3d0ad22411fdf11d6b87be7ca15160b52196c`
-- ethereum `0x83bc53e2663ad903b4d1f7d89fb5527cf5df28b7`
-- ethereum `0x84c87f41b9b650fed730258fb0fcb3b8a0375cb1`
-- ethereum `0x85fd7686ff4c4a3fbe3815eb90be46d17172325e`
-- ethereum `0x8a0ee16a4484d390049388a78bf49440fc422c7c`
-- ethereum `0x8b94c156ebc20a3a385e898bb7a7973d46d0b303`
-- ethereum `0x8bff06434c52306358749b0cc58db7d9aa1c654d`
-- ethereum `0x8c8f2a5250d440bdf6ac21b097be04b07cce78af`
-- ethereum `0x922350d9ff1217b2f2ce63a890be0d377deb1d42`
-- ethereum `0x933bff1078ff1a0ca3b53dad00d7b1850af8749b`
-- ethereum `0x956d09551251493f165eca171bd377c247ba8f4b`
-- ethereum `0x96266192b8216a509026112e6515a33aa020256d`
-- ethereum `0x9a449edc45550fea15ad1bcfd1448b8a2c37123b`
-- ethereum `0x9aa21e5101279229a02326e411dafcbd48ba6db1`
-- ethereum `0x9beff376ff554c81888031fe8899dcd9dfe42051`
-- ethereum `0xa0777a5b44d36ee425dc0ca828549f06e40e0cee`
 - ethereum `0xa19b16a40be04744c20bcdab0aad4e330b1bfaad`
-- ethereum `0xa301d6f34f2c8399e8564681cf675999cc1f1584`
-- ethereum `0xa72f8391d7c9f1991769b76858b8ac54ccee92cf`
-- ethereum `0xa76aa0b3d570ae04fcdd3e03fd217bfc5511448c`
-- ethereum `0xa90196785a133ad5f1768347eb407fcb1b44b77d`
-- ethereum `0xac84794ad9aa87fd001e019bbeb53c5c0bc69c2b`
-- ethereum `0xae92a01a3c320b4f62d535d337bbffceee2ac544`
-- ethereum `0xb03a4f04aa4cc8ef88e6cf709d61f54571d6752e`
-- ethereum `0xb1c0ccb170f0af6ec8ad6a8622d0136fb744f0c0`
-- ethereum `0xb20e1dc72f261c857b6eae41bc59a24fcf0cd802`
-- ethereum `0xb2d9f718f8e9e11dafa13d9878a742253ddf8a05`
-- ethereum `0xb401b9e1104726e1c9b59580588c116cc0fdc3e2`
-- ethereum `0xb46dca81395659e505833cba7057df9065c1f434`
-- ethereum `0xb5842341920266e099209be4d622d7936d79a4c8`
-- ethereum `0xb5c14b4c741391d5625a56f70049ab2d720be9c9`
-- ethereum `0xb7394c28d4ff1753123e823642ac7acf6475be04`
-- ethereum `0xbacf97aa4bcb35b285b5838e5a459b632580ad28`
-- ethereum `0xbb7239f73e68301a0140cf8aa971c9edb4aca752`
-- ethereum `0xbc2907d76964510a4232878e7ac6e2b18c474efb`
-- ethereum `0xbdc7d6284bad0d7243bf3ca4dceae2a86deee37d`
-- ethereum `0xbf025ca78dc18e8646b706a49dc194d04537a14d`
-- ethereum `0xc025ec32cb1d5788cabfb874a1a69b3411d545df`
-- ethereum `0xc40431b6c510aeb45fbb5e21e40d49f12b0c1f0c`
-- ethereum `0xcb1bbc36c711ae3d36d9dc61d75dd8efff34f224`
-- ethereum `0xcb1ceae1645f721a378357d64f57527d0280b111`
-- ethereum `0xcb5d695f4c64f88ea3026b416f43913c629f2bb1`
-- ethereum `0xcb6bb5ab51cdc6efb3b81c84f252cfe6bfba6566`
-- ethereum `0xcc2ff2d38666723ea56c122097f6215b90d74196`
-- ethereum `0xcd397f64a171158d999b6f256b0cc169feed6889`
-- ethereum `0xcdb0a68935f59eaf575ca27b6efe1f65f08b5821`
-- ethereum `0xcdc7997a268abc11b44624ff39447a3a6aedc09c`
-- ethereum `0xcee55bd8ce0361a67f9a48888a2b519c9d207a97`
-- ethereum `0xd0e1705ce89b77452ea7184d300b7745e0937901`
-- ethereum `0xd1813be33dee8709e4734a0e8c612e91b22033a6`
-- ethereum `0xd685cec80b342117c5754148a63e161132ff44d3`
-- ethereum `0xd6dc843a92cd90afe65cfb00432ede37549a2946`
-- ethereum `0xd887ea16804424dbe9e0a37533fcf1ec98eac106`
-- ethereum `0xd932d47fcf53d8dc1ef58455dd5910e19af2dbf0`
-- ethereum `0xd9d6ac593e62ffcb1c1106865c87d11356a401f3`
-- ethereum `0xda376ff67d108db6783eb8c4f4cdf43ac1214721`
-- ethereum `0xdaf066a6b51499941299b566d1b124678ebc2b3c`
-- ethereum `0xdbe385169ee000cb82021c472a3312585d7fb444`
-- ethereum `0xdbedfbd26f88d131353bd6f6d44a7ef9e3e372be`
-- ethereum `0xdcf1ec5bfca5c16d7b656b3af2481b4234dd2e46`
-- ethereum `0xdd15eba9d2cd4deb479f640d08fc63f627d192a9`
-- ethereum `0xe1fd88a76e95dd735c6dda45b2aba9e5ffa9a7f3`
-- ethereum `0xe593cfaba9e0ddd0b0b47f270cd0e045fc0050ba`
-- ethereum `0xeba87a0b152b4b672ad048d3f446810a89f9317c`
-- ethereum `0xee47a6f0556b855043d16819b057a72d2c7eb9a5`
-- ethereum `0xee9a18f0de64e8eb399a3baef0550aa50a218768`
-- ethereum `0xefde29882c102fe5a4008e7c2e8067a3059fae28`
-- ethereum `0xf08cb48bfc705ffb4f2064c578987a27daad1386`
-- ethereum `0xf215cf8b8accd1f87edcdcddcf979fef0ffbd101`
-- ethereum `0xf3d20ca7e35687b159c2ea4c3876c89afa27bf11`
-- ethereum `0xf4c6fe697b65785037d04b5c614c961e3693cdc8`
-- ethereum `0xf58fcce9370aba552032d3ea47baa486f70c0fdc`
-- ethereum `0xf5db3e3961d52ecfdd939e8c00de47b8e3d0be61`
-- ethereum `0xf8302787582fb769fd30107e4d877695f0deafea`
-- ethereum `0xf9a1f7147d04d569af9f9e1b6b713935ca1308fe`
-- ethereum `0xfa5f2e760b0d9586db391098b9ac1f97f1a7d8db`
-- ethereum `0xfb15065b1e0e9482a295324c592894ef35ccce9a`
-- ethereum `0xfdb0cdb78c5a7f2fa3ff9f7a505dcfe20a62747f`
-- ethereum `0xfe2242d476d03f72423311629450078a4cea07b5`

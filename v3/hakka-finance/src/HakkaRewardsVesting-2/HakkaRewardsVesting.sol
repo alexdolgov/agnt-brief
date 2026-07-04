@@ -550,9 +550,9 @@ contract LPTokenWrapper {
 }
 
 contract HakkaRewardsVesting is LPTokenWrapper, IRewardDistributionRecipient {
-    IERC20 public hakka = IERC20(0x0E29e5AbbB5FD88e28b2d355774e73BD47dE3bcd);
-    VestingVault public vault = VestingVault(0x51F12323820b3c0077864990d9E6aD9604238Ed6);
-    uint256 public constant DURATION = 7 days;
+    IERC20 public hakka = IERC20(0x1D1eb8E8293222e1a29d2C0E4cE6C0Acfd89AaaC);
+    VestingVault public vault = VestingVault(0x6dbff20CAFf68B99b1e67B50D14A9D7BBdfA94DC);
+    uint256 public constant DURATION = 30 days;
 
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;

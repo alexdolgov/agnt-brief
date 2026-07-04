@@ -16,7 +16,6 @@ contract MCV2_BondPeriphery {
     error MCV2_BondPeriphery__InvalidCurrentSupply();
     error MCV2_BondPeriphery__InvalidTokenAmount();
     error MCV2_BondPeriphery__SlippageLimitExceeded();
-    error MCV2_BondPeriphery__NoLiquidityAvailable();
 
     IMCV2_Bond public immutable BOND;
 
@@ -24,122 +23,30 @@ contract MCV2_BondPeriphery {
         BOND = IMCV2_Bond(bond_);
     }
 
-    function version() external pure returns (uint8) {
-        return 2;
-    }
-
-    /**
-     * @dev Aggregated swap function that handles swaps between Mint Club tokens and their reserve tokens.
-     * @param sellToken The address of the token to sell.
-     * @param sellAmount The amount of tokens to sell.
-     * @param buyToken The address of the token to buy.
-     * @param minBuyAmount The minimum amount of tokens to receive.
-     * @param receiver The address to receive the bought tokens.
-     * @return buyAmount The actual amount of tokens bought.
-     */
-    function swap(
-        address sellToken,
-        uint256 sellAmount,
-        address buyToken,
-        uint256 minBuyAmount,
-        address receiver
-    ) external returns (uint256 buyAmount) {
-        // Check if sellToken is a Mint Club token and buyToken is the reserve token
-        if (BOND.exists(sellToken)) {
-            (, , , , address reserveToken, ) = BOND.tokenBond(sellToken);
-
-            // Verify that buyToken matches the reserve token
-            if (buyToken != reserveToken) {
-                revert MCV2_BondPeriphery__NoLiquidityAvailable();
-            }
-
-            // Transfer the Mint Club token from sender to this contract
-            IERC20(sellToken).transferFrom(
-                msg.sender,
-                address(this),
-                sellAmount
-            );
-
-            // Approve the Bond contract to burn the tokens
-            IERC20(sellToken).approve(address(BOND), sellAmount);
-
-            // Burn the Mint Club token to get reserve tokens
-            buyAmount = BOND.burn(
-                sellToken,
-                sellAmount,
-                minBuyAmount,
-                receiver
-            );
-
-            return buyAmount;
-        }
-        // Check if buyToken is a Mint Club token and sellToken is the reserve token
-        else if (BOND.exists(buyToken)) {
-            (, , , , address reserveToken, ) = BOND.tokenBond(buyToken);
-
-            // Verify that sellToken matches the reserve token
-            if (sellToken != reserveToken) {
-                revert MCV2_BondPeriphery__NoLiquidityAvailable();
-            }
-
-            // Use the existing mintWithReserveAmount logic
-            // Note: mintWithReserveAmount already handles transferFrom internally
-            buyAmount = mintWithReserveAmount(
-                buyToken,
-                sellAmount,
-                minBuyAmount,
-                receiver
-            );
-
-            return buyAmount;
-        } else {
-            // Neither token is a Mint Club token - liquidity not available
-            revert MCV2_BondPeriphery__NoLiquidityAvailable();
-        }
-    }
-
     function mintWithReserveAmount(
         address token,
         uint256 reserveAmount,
         uint256 minTokensToMint,
         address receiver
-    ) public returns (uint256 tokensMinted) {
-        (uint256 tokensToMint, address reserveAddress) = getTokensForReserve(
-            token,
-            reserveAmount,
-            true // Use ceiling division to minimize leftover reserves
-        );
+    ) external returns (uint256) {
+        uint256 tokensToMint = getTokensForReserve(token, reserveAmount);
         if (tokensToMint < minTokensToMint)
             revert MCV2_BondPeriphery__SlippageLimitExceeded();
 
+        (, , , , address reserveAddress, ) = BOND.tokenBond(token);
         IERC20 reserveToken = IERC20(reserveAddress);
         reserveToken.transferFrom(msg.sender, address(this), reserveAmount);
+
         reserveToken.approve(address(BOND), reserveAmount);
+        BOND.mint(token, tokensToMint, reserveAmount, receiver);
 
-        // Try minting with ceiling division result first
-        try BOND.mint(token, tokensToMint, reserveAmount, receiver) {
-            // Success - send any leftover reserve tokens to receiver
-            uint256 reserveBalance = reserveToken.balanceOf(address(this));
-            if (reserveBalance > 0) {
-                reserveToken.transfer(receiver, reserveBalance);
-            }
-            return tokensToMint;
-        } catch {
-            // If minting fails, try reducing by 1 token
-            tokensToMint -= 1;
-            if (tokensToMint < minTokensToMint) {
-                revert MCV2_BondPeriphery__SlippageLimitExceeded();
-            }
-
-            // Try minting with reduced amount
-            BOND.mint(token, tokensToMint, reserveAmount, receiver);
-            uint256 reserveBalance = reserveToken.balanceOf(address(this));
-            if (reserveBalance > 0) {
-                reserveToken.transfer(receiver, reserveBalance);
-            }
-
-            return tokensToMint;
+        // Send the leftover reserve tokens to the receiver (potentially few weis left due to roundings)
+        uint256 reserveBalance = reserveToken.balanceOf(address(this));
+        if (reserveBalance > 0) {
+            reserveToken.transfer(receiver, reserveBalance);
         }
+
+        return reserveAmount;
     }
 
     /**
@@ -150,32 +57,23 @@ contract MCV2_BondPeriphery {
      *         Use this function just for estimating the number of tokens that can be minted.
      * @param tokenAddress The address of the token.
      * @param reserveAmount The amount of reserve tokens to pay.
-     * @param useCeilDivision Whether to use ceiling division (true) or floor division (false).
      * @return tokensToMint The number of tokens that can be minted.
-     * @return reserveAddress The address of the reserve token.
      */
     function getTokensForReserve(
         address tokenAddress,
-        uint256 reserveAmount,
-        bool useCeilDivision
-    ) public view returns (uint256 tokensToMint, address reserveAddress) {
+        uint256 reserveAmount
+    ) public view returns (uint256 tokensToMint) {
+        if (!BOND.exists(tokenAddress))
+            revert MCV2_BondPeriphery__InvalidParams("token");
         if (reserveAmount == 0)
             revert MCV2_BondPeriphery__InvalidParams("reserveAmount");
 
-        // Cache external calls to avoid repeated storage reads
-        (, uint16 mintRoyalty, , , address reserveTokenAddr, ) = BOND.tokenBond(
-            tokenAddress
-        );
-        if (reserveTokenAddr == address(0))
-            revert MCV2_BondPeriphery__InvalidParams("token");
-
-        reserveAddress = reserveTokenAddr;
+        (, uint16 mintRoyalty, , , , ) = BOND.tokenBond(tokenAddress);
         IMCV2_Bond.BondStep[] memory steps = BOND.getSteps(tokenAddress);
-        MCV2_ICommonToken t = MCV2_ICommonToken(tokenAddress);
 
+        MCV2_ICommonToken t = MCV2_ICommonToken(tokenAddress);
         uint256 currentSupply = t.totalSupply();
-        uint256 stepsLength = steps.length;
-        uint256 maxTokenSupply = steps[stepsLength - 1].rangeTo;
+        uint256 maxTokenSupply = steps[steps.length - 1].rangeTo;
 
         if (currentSupply >= maxTokenSupply)
             revert MCV2_BondPeriphery__ExceedMaxSupply();
@@ -187,73 +85,61 @@ contract MCV2_BondPeriphery {
         // reserveToBond = reserveAmount / (1 + (mintRoyalty) / 10000)
         uint256 reserveLeft = (reserveAmount * 10000) / (10000 + mintRoyalty);
 
-        // Find starting step index
-        uint256 i = _getCurrentStep(steps, currentSupply);
+        // Cache steps.length to avoid multiple storage reads
+        uint256 stepsLength = steps.length;
 
-        // Unchecked arithmetic for loop increment to save gas
-        unchecked {
-            for (; i < stepsLength; ++i) {
-                // Early termination if no reserve left
-                if (reserveLeft == 0) break;
+        for (
+            uint256 i = _getCurrentStep(steps, currentSupply);
+            i < stepsLength;
+            ++i
+        ) {
+            IMCV2_Bond.BondStep memory step = steps[i];
+            if (step.price == 0) continue; // Skip free minting ranges
 
-                IMCV2_Bond.BondStep memory step = steps[i];
-                if (step.price == 0) continue; // Skip free minting ranges
+            uint256 supplyLeft = step.rangeTo - currentSupply;
+            if (supplyLeft == 0) continue;
 
-                uint256 supplyLeft = step.rangeTo - currentSupply;
-                if (supplyLeft == 0) continue;
+            // Calculate how many tokens can be minted with the available reserve at this step
+            // Using floor division since we can't mint partial tokens
+            uint256 tokensAtStep = (reserveLeft * multiFactor) / step.price;
 
-                // Calculate how many tokens can be minted with the available reserve at this step
-                uint256 tokensAtStep = useCeilDivision
-                    ? Math.ceilDiv(reserveLeft * multiFactor, step.price)
-                    : (reserveLeft * multiFactor) / step.price;
+            if (tokensAtStep > supplyLeft) {
+                // Can mint all tokens in this step and have reserve left
+                tokensToMint += supplyLeft;
 
-                if (tokensAtStep > supplyLeft) {
-                    // Can mint all tokens in this step and have reserve left
-                    tokensToMint += supplyLeft;
-
-                    // Calculate how much reserve is used for this step (with ceiling division)
-                    uint256 reserveRequired = Math.ceilDiv(
-                        supplyLeft * step.price,
-                        multiFactor
-                    );
-                    reserveLeft -= reserveRequired;
-                    currentSupply += supplyLeft;
-                } else {
-                    // Can mint only a portion of this step
-                    tokensToMint += tokensAtStep;
-                    // Don't need to calculate reserveRequired as we're using all available reserve
-                    break;
-                }
-
-                if (currentSupply >= maxTokenSupply) break;
+                // Calculate how much reserve is used for this step (with ceiling division)
+                uint256 reserveRequired = Math.ceilDiv(
+                    supplyLeft * step.price,
+                    multiFactor
+                );
+                reserveLeft -= reserveRequired;
+                currentSupply += supplyLeft;
+            } else {
+                // Can mint only a portion of this step
+                tokensToMint += tokensAtStep;
+                // Don't need to calculate reserveRequired as we're using all available reserve
+                break;
             }
+
+            if (currentSupply >= maxTokenSupply || reserveLeft == 0) break;
         }
 
         if (tokensToMint == 0) revert MCV2_BondPeriphery__InvalidTokenAmount();
 
-        return (tokensToMint, reserveAddress);
+        return tokensToMint;
     }
 
     function _getCurrentStep(
         IMCV2_Bond.BondStep[] memory steps,
         uint256 currentSupply
     ) internal pure returns (uint256) {
-        uint256 left = 0;
-        uint256 right = steps.length;
-
         unchecked {
-            while (left < right) {
-                uint256 mid = (left + right) / 2;
-                if (steps[mid].rangeTo < currentSupply) {
-                    left = mid + 1;
-                } else {
-                    right = mid;
+            for (uint256 i = 0; i < steps.length; ++i) {
+                if (currentSupply <= steps[i].rangeTo) {
+                    return i;
                 }
             }
         }
-
-        if (left >= steps.length)
-            revert MCV2_BondPeriphery__InvalidCurrentSupply();
-        return left;
+        revert MCV2_BondPeriphery__InvalidCurrentSupply();
     }
 }

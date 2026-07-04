@@ -1,0 +1,21 @@
+{
+  "component": "ViewFacet-9",
+  "main_contract": "ViewFacet",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://audits.sherlock.xyz/contests/85",
+    "https://certificate.quantstamp.com/full/intent-x/a195e62f-30b6-4219-b9e5-42af8a9e2fd5/index.html"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5b5c7b6494ec52d9316a7f578ef3fbbbaa53be63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

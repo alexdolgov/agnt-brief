@@ -2,7 +2,7 @@
   "component": "FutarchyProposal",
   "main_contract": "FutarchyProposal",
   "source_file_count": 3,
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -34,6 +34,22 @@
       "chain": "gnosis",
       "chain_id": 100,
       "address": "0xc64c753685e744ce6905ed76c66b5eb778025d0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd342be91a711e70736c4f0880af3438b835eab66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xec4fb999db0e8ca28011d85ead177810055b484c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

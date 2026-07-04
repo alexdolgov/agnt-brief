@@ -1,0 +1,18 @@
+{
+  "component": "EulerV2BatchFuse-2",
+  "main_contract": "EulerV2BatchFuse",
+  "source_file_count": 78,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x60ce35e58f6ced1538c16a15ff7ff75b0538898f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

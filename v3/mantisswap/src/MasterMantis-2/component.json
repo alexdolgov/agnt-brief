@@ -1,0 +1,21 @@
+{
+  "component": "MasterMantis-2",
+  "main_contract": "MasterMantis",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-MantisSwap-v1.0.pdf",
+    "https://omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd"
+  ],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x3dcf3bcdeab8ae7487d6fe7c7cb3af95d21995fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

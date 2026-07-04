@@ -1,15 +1,39 @@
 {
   "component": "VNXProxyAdmin-2",
   "main_contract": "VNXProxyAdmin",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 14,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc8bb8eda94931ca2f20ef43ea7dbd58e68400400",
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x516fec20679a41b591780613b28449f2a813af5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d38309d072d2b6125fca946f78b6ebf950a7165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x20aac9439e48d4b26fd7fb8c1de1e037bee7827f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9b357fac02e035159dffad8dd21333e39f25a660",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

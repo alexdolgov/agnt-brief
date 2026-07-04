@@ -7,12 +7,12 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x6ebeac13f6403d19c95b6b75008b12fd21a93aab",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     }
   ]
 }

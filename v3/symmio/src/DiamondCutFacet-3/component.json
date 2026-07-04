@@ -1,0 +1,26 @@
+{
+  "component": "DiamondCutFacet-3",
+  "main_contract": "DiamondCutFacet",
+  "source_file_count": 87,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7143e60140e3d18302794e7a4bef717dc26dc9cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf39352ec34a007b2726e2c4610a13f7aea86684e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

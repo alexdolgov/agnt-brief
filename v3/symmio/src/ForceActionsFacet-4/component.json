@@ -1,0 +1,18 @@
+{
+  "component": "ForceActionsFacet-4",
+  "main_contract": "ForceActionsFacet",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9f6a2137af842bab85c7a3931a16ab6f5895445c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PowerPod-4",
+  "main_contract": "PowerPod",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdaf782667d98d5069ee7ba139932945c4d08fde9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

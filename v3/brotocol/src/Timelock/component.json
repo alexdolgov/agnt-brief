@@ -1,15 +1,23 @@
 {
   "component": "TimeLock",
   "main_contract": "TimeLock",
-  "source_file_count": 39,
-  "deployment_count": 1,
+  "source_file_count": 36,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x858d1dbd14a023a905535823a77925082507d38b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7a087e75807f2e5143c161a817e64df6dc5eafe0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

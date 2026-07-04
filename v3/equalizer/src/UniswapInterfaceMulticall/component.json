@@ -1,15 +1,15 @@
 {
   "component": "UniswapInterfaceMulticall",
   "main_contract": "UniswapInterfaceMulticall",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x4c29682a07c50dd5f6bdf36eb97fb28f5c1681e3",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9b500c0a544b870d9c4c441147dcaef599e542e7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

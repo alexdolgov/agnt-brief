@@ -1,0 +1,18 @@
+{
+  "component": "TwabRewards-4",
+  "main_contract": "TwabRewards",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7934ee0c8b877269a5688ee26dd853785212618",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "component": "CoinHandlerProxy-4",
+  "main_contract": "CoinHandlerProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/ENG/(ENG)_BiFi_Lending_Sooho_EN_Public.pdf",
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/bifrost_bifi_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcef7762dc835d3cf80caf81e73eaaf88bafe2289",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

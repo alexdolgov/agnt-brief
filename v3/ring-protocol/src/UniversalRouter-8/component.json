@@ -1,0 +1,20 @@
+{
+  "component": "UniversalRouter-8",
+  "main_contract": "UniversalRouter",
+  "source_file_count": 95,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/RingProtocol/v4-periphery/blob/main/audits/OpenZeppelin_audit_periphery_universal_router.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xcb695bc5d3aa22cad1e6df07801b061a05a0233a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -26,8 +26,6 @@ interface IPoolLogic {
 
   function deposit(address _asset, uint256 _amount) external returns (uint256 liquidityMinted);
 
-  function depositFor(address _recipient, address _asset, uint256 _amount) external returns (uint256 liquidityMinted);
-
   function depositForWithCustomCooldown(
     address _recipient,
     address _asset,
@@ -44,6 +42,10 @@ interface IPoolLogic {
     uint256 _fundTokenAmount,
     ComplexAsset[] memory _complexAssetsData
   ) external;
+
+  function setPoolPrivate(bool _privatePool) external;
+
+  function totalSupply() external view returns (uint256 supply);
 
   function transfer(address to, uint256 value) external returns (bool);
 

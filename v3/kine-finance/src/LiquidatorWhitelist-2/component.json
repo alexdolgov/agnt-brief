@@ -1,0 +1,18 @@
+{
+  "component": "LiquidatorWhitelist-2",
+  "main_contract": "LiquidatorWhitelist",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x96f4516a9d150574cb6d8ae3380f28f330e64ef7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "DolomiteERC4626WithPayable",
   "main_contract": "DolomiteERC4626WithPayable",
   "source_file_count": 48,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa8f462446f7edd7c13ffab71710726d29a1bda20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "component": "FarmStrategy-7",
+  "main_contract": "FarmStrategy",
+  "source_file_count": 26,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa7c8ecc21bcd023eb1db5bb35113b7123cb1f33b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc64cfb70cc0aa2c36ede729cc017c8fe7a2a2d4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb9e44309bf986c71223be157ad88ddf5d4e75bc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xc8994b32f10d093a5343f45473755909b9e13126",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

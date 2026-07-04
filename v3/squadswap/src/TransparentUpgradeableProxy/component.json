@@ -2,7 +2,7 @@
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 14,
-  "deployment_count": 32,
+  "deployment_count": 44,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,6 +12,14 @@
       "address": "0x0a4224cbecec4a8337f722ed105916544e377778",
       "is_proxy": true,
       "implementation_address": "0x92008f34e659f6380d5d01d858a2e7089cf88317",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x17f24a87a6ca5788ef4c65c81a034c8bfeb107f7",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     },
     {
@@ -137,9 +145,25 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x6221221c86e87905f1fa9b317e616e81ad921769",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x6967cbfb72048a7efeb23b6dbb5aee51d89ed648",
       "is_proxy": true,
       "implementation_address": "0x5a547c636c40246b53423e45861ecc28b06d8d59",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6c8d432ff748cc3b28dcb5edac5e8b95b9f1448a",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     },
     {
@@ -185,9 +209,25 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0xa313c4e4f3c52707ba84e936d809340fce41bf13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0xa4a858cd8cb232bea53f6cc65709d74487d6b362",
       "is_proxy": true,
       "implementation_address": "0x92008f34e659f6380d5d01d858a2e7089cf88317",
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4af76f9ebc9064915836c4c6d7e5275b1b3d7bf",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     },
     {
@@ -260,6 +300,62 @@
       "address": "0x07fd20b71e3ea3e2cbe21070a042e58b42838251",
       "is_proxy": false,
       "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcf2a34727c53be4ae5f6fed10a00a64e6f80ae3b",
+      "is_proxy": true,
+      "implementation_address": "0xac5b61a34b41292d1e6db6bf3c909ff0b66f72f3",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea6fd462b72cdd0f535125cacbc33b9b7ba68eed",
+      "is_proxy": true,
+      "implementation_address": "0xac5b61a34b41292d1e6db6bf3c909ff0b66f72f3",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x2149e9083a9440c74062eff56cc012651b9e1a9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x295f6ad2fd02ef9fa87a30bb337f0a40221649c5",
+      "is_proxy": true,
+      "implementation_address": "0x64d6f44907ac087d97315899bdcc35151ace3693",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x7b7a8f7d1966cd6ebb60fc11bd69b7c903cb8172",
+      "is_proxy": true,
+      "implementation_address": "0x64d6f44907ac087d97315899bdcc35151ace3693",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x7da1ec4d785120eafb290a9882268b6bdef9f620",
+      "is_proxy": true,
+      "implementation_address": "0x64d6f44907ac087d97315899bdcc35151ace3693",
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xd432617a31807c531116c2e39c251759ac905b6a",
+      "is_proxy": true,
+      "implementation_address": "0x64d6f44907ac087d97315899bdcc35151ace3693",
       "liveness": "live"
     }
   ]

@@ -1,46 +1,54 @@
-/**
- *Submitted for verification at Arbiscan on 2021-11-20
-*/
-
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.7.5;
 
-/* 
-Converted to support multiple owners.
- */
-contract Ownable {
 
-    mapping(address=>bool) internal _owners;
+interface IOwnable {
+  function policy() external view returns (address);
 
+  function renounceManagement() external;
+  
+  function pushManagement( address newOwner_ ) external;
+  
+  function pullManagement() external;
+}
+
+contract Ownable is IOwnable {
+
+    address internal _owner;
     address internal _newOwner;
 
-    event AdminPushed(address indexed addedBy, address indexed newOwner);
-    event AdminPulled(address indexed previousOwner);
+    event OwnershipPushed(address indexed previousOwner, address indexed newOwner);
+    event OwnershipPulled(address indexed previousOwner, address indexed newOwner);
 
     constructor () {
-        _owners[msg.sender] = true;
-        emit AdminPushed( address(0), msg.sender );
+        _owner = msg.sender;
+        emit OwnershipPushed( address(0), _owner );
     }
 
-    function isAdmin(address id) public view returns (bool) {
-        return _owners[id];
+    function policy() public view override returns (address) {
+        return _owner;
     }
 
-    modifier onlyAdmin() {
-        require( _owners[msg.sender], "Ownable: caller is not the owner" );
+    modifier onlyPolicy() {
+        require( _owner == msg.sender, "Ownable: caller is not the owner" );
         _;
     }
 
-    function pushAdmin( address newOwner_ ) public virtual onlyAdmin() {
+    function renounceManagement() public virtual override onlyPolicy() {
+        emit OwnershipPushed( _owner, address(0) );
+        _owner = address(0);
+    }
+
+    function pushManagement( address newOwner_ ) public virtual override onlyPolicy() {
         require( newOwner_ != address(0), "Ownable: new owner is the zero address");
-        require( !_owners[newOwner_], "Ownable: new owner is already a owner");
-        _owners[newOwner_] = true;
-        emit AdminPushed( msg.sender, newOwner_ );
+        emit OwnershipPushed( _owner, newOwner_ );
+        _newOwner = newOwner_;
     }
     
-    function renounceAdmin(address oldOwner_) public virtual onlyAdmin() {
-        _owners[oldOwner_] = false;
-        emit AdminPulled( oldOwner_ );
+    function pullManagement() public virtual override {
+        require( msg.sender == _newOwner, "Ownable: must be new owner to pull");
+        emit OwnershipPulled( _owner, _newOwner );
+        _owner = _newOwner;
     }
 }
 
@@ -752,7 +760,7 @@ contract Z2OBondDepository is Ownable {
         uint _maxDebt,
         uint _initialDebt,
         uint32 _vestingTerm
-    ) external onlyAdmin() {
+    ) external onlyPolicy() {
         require( terms.controlVariable == 0, "Bonds must be initialized from 0" );
         terms = Terms ({
             controlVariable: _controlVariable,
@@ -771,13 +779,13 @@ contract Z2OBondDepository is Ownable {
     
     /* ======== POLICY FUNCTIONS ======== */
 
-    enum PARAMETER { VESTING, PAYOUT, FEE, DEBT, MINPRICE, BCV }
+    enum PARAMETER { VESTING, PAYOUT, FEE, DEBT, MINPRICE }
     /**
      *  @notice set parameters for new bonds
      *  @param _parameter PARAMETER
      *  @param _input uint
      */
-    function setBondTerms ( PARAMETER _parameter, uint _input ) external onlyAdmin() {
+    function setBondTerms ( PARAMETER _parameter, uint _input ) external onlyPolicy() {
         if ( _parameter == PARAMETER.VESTING ) { // 0
             require( _input >= 129600, "Vesting must be longer than 36 hours" );
             terms.vestingTerm = uint32(_input);
@@ -791,8 +799,6 @@ contract Z2OBondDepository is Ownable {
             terms.maxDebt = _input;
         } else if ( _parameter == PARAMETER.MINPRICE ) { // 4
             terms.minimumPrice = _input;
-        }else if ( _parameter == PARAMETER.BCV ) { // 5
-            terms.controlVariable = _input;
         }
     }
 
@@ -808,8 +814,8 @@ contract Z2OBondDepository is Ownable {
         uint _increment, 
         uint _target,
         uint32 _buffer 
-    ) external onlyAdmin() {
-        require( _increment <= _target, "Increment too large" );
+    ) external onlyPolicy() {
+        require( _increment <= terms.controlVariable.mul( 25 ).div( 1000 ), "Increment too large" );
 
         adjustment = Adjust({
             add: _addition,
@@ -825,7 +831,7 @@ contract Z2OBondDepository is Ownable {
      *  @param _staking address
      *  @param _helper bool
      */
-    function setStaking( address _staking, bool _helper ) external onlyAdmin() {
+    function setStaking( address _staking, bool _helper ) external onlyPolicy() {
         require( _staking != address(0) );
         if ( _helper ) {
             useHelper = true;
@@ -1125,7 +1131,8 @@ contract Z2OBondDepository is Ownable {
         uint percentVested = percentVestedFor( _depositor );
         uint payout = bondInfo[ _depositor ].payout;
 
-        if ( percentVested >= 10000 ) {
+        if ( percentVested >= 10000 ) 
+        {
             pendingPayout_ = payout;
         } else {
             pendingPayout_ = payout.mul( percentVested ).div( 10000 );

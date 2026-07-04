@@ -1,0 +1,18 @@
+{
+  "component": "BulkNFTMinter-2",
+  "main_contract": "BulkNFTMinter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x112492a074e9d6b84fe73d2c76ee9be9497f7269",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

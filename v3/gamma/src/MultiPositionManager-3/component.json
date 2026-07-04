@@ -1,15 +1,39 @@
 {
   "component": "MultiPositionManager-3",
   "main_contract": "MultiPositionManager",
-  "source_file_count": 85,
-  "deployment_count": 1,
+  "source_file_count": 83,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x428dedf862f5c05f5813efa5ef54d28cc1ef7091",
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x28ed6bacdda981c9055de8c513c4a995c81f7efe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x6834119e2bd4e0dcaf61c91087adca3c782fde47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x9698ab21fdb2ed36eb01689dc007fd17950a2a01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xfdaa6e38c58f44762d5c9d268d75dd0c2548886e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

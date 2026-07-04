@@ -1,0 +1,18 @@
+{
+  "component": "RootPriceOracle-7",
+  "main_contract": "RootPriceOracle",
+  "source_file_count": 60,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbcf67d1d643c53e9c2f84acbd830a5edc2661795",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

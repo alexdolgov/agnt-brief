@@ -1,0 +1,18 @@
+{
+  "component": "OracleRouter-3",
+  "main_contract": "OracleRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb5dc6c08d7019fea2e4bde577c2951ff4f529000",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

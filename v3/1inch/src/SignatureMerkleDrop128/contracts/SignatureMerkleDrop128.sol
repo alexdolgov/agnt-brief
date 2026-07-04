@@ -1,15 +1,16 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.15;
+pragma solidity ^0.8.9;
 pragma abicoder v1;
 
 import "@openzeppelin/contracts/utils/math/Math.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
+import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@1inch/solidity-utils/contracts/libraries/SafeERC20.sol";
-import "@1inch/solidity-utils/contracts/libraries/ECDSA.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 import "./interfaces/ISignatureMerkleDrop128.sol";
+
 
 contract SignatureMerkleDrop128 is ISignatureMerkleDrop128, Ownable {
     using Address for address payable;
@@ -74,8 +75,10 @@ contract SignatureMerkleDrop128 is ISignatureMerkleDrop128, Ownable {
     }
 
     function _verifyAsm(bytes calldata proof, bytes16 root, bytes16 leaf) private view returns (bool valid, uint256 index) {
-        /// @solidity memory-safe-assembly
-        assembly {  // solhint-disable-line no-inline-assembly
+        // solhint-disable-next-line no-inline-assembly
+        assembly {
+            let mem1 := mload(0x40)
+            let mem2 := add(mem1, 0x10)
             let ptr := proof.offset
             let mask := 1
 
@@ -84,16 +87,16 @@ contract SignatureMerkleDrop128 is ISignatureMerkleDrop128, Ownable {
 
                 switch lt(leaf, node)
                 case 1 {
-                    mstore(0x00, leaf)
-                    mstore(0x10, node)
+                    mstore(mem1, leaf)
+                    mstore(mem2, node)
                 }
                 default {
-                    mstore(0x00, node)
-                    mstore(0x10, leaf)
+                    mstore(mem1, node)
+                    mstore(mem2, leaf)
                     index := or(mask, index)
                 }
 
-                leaf := keccak256(0x00, 0x20)
+                leaf := keccak256(mem1, 32)
                 mask := shl(1, mask)
             }
 

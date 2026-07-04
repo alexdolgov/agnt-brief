@@ -1,0 +1,18 @@
+{
+  "component": "KineExchangeTreasury-2",
+  "main_contract": "KineExchangeTreasury",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1d903b731b0173654afe612d12b4489c7b32a19f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

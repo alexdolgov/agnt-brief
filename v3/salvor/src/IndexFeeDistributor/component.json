@@ -1,0 +1,18 @@
+{
+  "component": "IndexFeeDistributor",
+  "main_contract": "IndexFeeDistributor",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x883594f6cd822dc01228f4581b4d1edf1b8bb723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

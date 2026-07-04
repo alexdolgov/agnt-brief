@@ -1,0 +1,18 @@
+{
+  "component": "ERC20NFTBond-7",
+  "main_contract": "ERC20NFTBond",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x4426f8d8db79a448a0c9545bf2262523e2130e3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

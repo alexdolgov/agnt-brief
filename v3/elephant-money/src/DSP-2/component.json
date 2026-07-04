@@ -1,0 +1,18 @@
+{
+  "component": "DSP-2",
+  "main_contract": "DSP",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe3c91fdce30dd5aa95138d6c4d63f43a26e9066e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

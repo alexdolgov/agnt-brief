@@ -1,0 +1,18 @@
+{
+  "component": "PrizeVault-3",
+  "main_contract": "PrizeVault",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb75af20ecadabed9049cc2f50e38bad2768b35cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

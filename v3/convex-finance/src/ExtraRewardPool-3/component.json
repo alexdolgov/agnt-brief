@@ -1,0 +1,18 @@
+{
+  "component": "ExtraRewardPool-3",
+  "main_contract": "ExtraRewardPool",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa46944d0845f786117d0e1034fc10585747c861b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

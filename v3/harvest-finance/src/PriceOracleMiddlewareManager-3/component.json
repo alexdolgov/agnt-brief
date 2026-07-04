@@ -2,7 +2,7 @@
   "component": "PriceOracleMiddlewareManager-3",
   "main_contract": "PriceOracleMiddlewareManager",
   "source_file_count": 20,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x18fda40bee2a2ec4fff630dedba78a2aa0187d5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x69edbaec3d573cf2560f25a81bb315ba77b49ad0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

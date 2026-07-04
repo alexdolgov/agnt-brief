@@ -2,10 +2,26 @@
   "component": "GovernanceFacet",
   "main_contract": "GovernanceFacet",
   "source_file_count": 12,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x93c85cc426c2a21395050dcb589b7ed1acddfdc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd387fc40af6d0b0d855c6558d6d029b1fde48f7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

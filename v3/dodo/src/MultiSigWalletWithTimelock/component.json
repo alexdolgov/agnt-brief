@@ -2,14 +2,22 @@
   "component": "MultiSigWalletWithTimelock",
   "main_contract": "MultiSigWalletWithTimelock",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x3cd6d7f5ff977bf8069548ea1f9441b061162b42",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x677dd94031b3263bd0e27ef5093c69a1a3037a00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9fcfd9ff955d36856f8ee480471b05488c0eb5ca",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

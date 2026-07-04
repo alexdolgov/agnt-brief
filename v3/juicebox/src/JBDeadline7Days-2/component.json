@@ -1,0 +1,18 @@
+{
+  "component": "JBDeadline7Days-2",
+  "main_contract": "JBDeadline7Days",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf911b94712cf117fb63b69838b16e1710636031",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

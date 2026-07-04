@@ -1,6 +1,6 @@
 # singularity-finance — deployments
 
-387 verified deployment(s) across 57 component(s).
+389 verified deployment(s) across 58 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -202,6 +202,7 @@
 | base | `0x82c14d81c0c5481fcbaa46e7260560195c21f21f` | VaultRegistry | impl | inactive | no |
 | base | `0x82f22418de1b9b30e04afc0ce303cf7ebe8d1674` | DynaLiquidityRegistry | impl | inactive | no |
 | base | `0x84f0fe6e62670dedf9a3e0aa8065b1a536c2b843` | DynaVaultManager | impl | live | no |
+| base | `0x859cf213b258b66d97a0de0dbbd701128b6b9dc9` | SDAOClaimpad | impl | inactive | no |
 | base | `0x860d8e4ec968242820bafbf480be966cece8c9ce` | DynaRouterRegistry | impl | inactive | no |
 | base | `0x86a2642ea34f83a15b43eadaa28115b0b84f708f` | VaultManagerSimulatorLib | impl | live | no |
 | base | `0x86aab402770f64d4924abb83a3b975f894f0835e` | VaultTokensLib | impl | live | no |
@@ -361,6 +362,7 @@
 | base | `0xea7975c2fec1ae9e3058bb5f99d8e26dbc816811` | DynaVault | impl | live | no |
 | base | `0xee56b20f14f4540d4adb4511a090742b02325b6a` | VaultDynaZapper | impl | inactive | no |
 | base | `0xee60b535cd61ec546a23d22e2144fa2bca48fde5` | VaultDynaZapper | impl | inactive | no |
+| base | `0xeec9f7f0ccea10bb0d08e6355c2456e85862a485` | SDAOClaimpad | impl | inactive | no |
 | base | `0xefe719160c96202396150d1fa70c4f665c52e04f` | VaultRegistry-2 | impl | inactive | no |
 | base | `0xf0d657868c8b38921bd301b3eb9c13c1b2db0e05` | VaultSimulator | impl | live | no |
 | base | `0xf1b65afcbd3747cbda6c488f3abe39a8a784d80e` | LiquidityArbitrage | impl | inactive | no |
@@ -388,12 +390,6 @@
 | base | `0xff55162fa072cf81479bd0bfa2915baefa1e25b3` | TokenWhitelistRegistry | impl | inactive | no |
 | base | `0xffeddb032791510581b2572de406c79a6b5aeb0f` | DynaLiquidityRegistry | impl | inactive | no |
 | ethereum | `0x14b4106b754954387c48bca8e7e8e003c9356e53` | ProxyOFTWithFee | impl | inactive | no |
-| ethereum | `0x731923760c28426951d0c3d81fa0abb427f77510` | SDAOClaimpad | impl | inactive | no |
+| ethereum | `0x731923760c28426951d0c3d81fa0abb427f77510` | SDAOClaimpad-2 | impl | inactive | no |
 | ethereum | `0x7636d8722fdf7cd34232a915e48e96aa3eb386bf` | SFItoken | impl | live | no |
 | ethereum | `0x8e4cc9234e49aacab2ddcee963ee414253f499c4` | MigrateToken | impl | inactive | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x859cf213b258b66d97a0de0dbbd701128b6b9dc9`
-- base `0xeec9f7f0ccea10bb0d08e6355c2456e85862a485`

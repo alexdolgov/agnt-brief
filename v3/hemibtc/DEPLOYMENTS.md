@@ -1,6 +1,6 @@
 # hemibtc — deployments
 
-83 verified deployment(s) across 37 component(s).
+84 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -87,8 +87,4 @@
 | optimism | `0x4482b6510df4c723bdf80c4441dbdbc855ab29ac` | Proxy-22 | proxy | live | no |
 | optimism | `0x5a7749f83b81b301cab5f48eb8516b986daef23d` | L2ERC721Bridge | impl | inactive | no |
 | optimism | `0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0` | OptimismMintableERC721Factory | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- optimism `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2`
+| optimism | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafe-2 | impl | live | no |

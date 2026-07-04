@@ -1,64 +1,68 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.9;
 
 import "./interface/IAccess.sol";
-import "./interface/IBetting.sol";
+import "./interface/ICoreBase.sol";
 import "./interface/ILP.sol";
 import "./interface/IOwnable.sol";
-import "./interface/IVault.sol";
+import "./interface/IBet.sol";
+import "./interface/ILiquidityManager.sol";
 import "./libraries/FixedMath.sol";
 import "./libraries/SafeCast.sol";
+import "./utils/LiquidityTree.sol";
+import "./utils/OwnableUpgradeable.sol";
 import "@uniswap/lib/contracts/libraries/TransferHelper.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol";
 
-interface ILegacyLP {
-    function withdrawLiquidity(
-        uint48 depositId,
-        uint40 percent
-    ) external returns (uint128 withdrawnAmount);
-}
-
-interface IRelayer {
-    function payMaster() external view returns (address);
-}
-
-interface IPayMaster {
-    function isLocked(uint256 tokenId) external view returns (bool);
+interface IModernLp {
+    function addDepositFor(
+        address account,
+        uint128 amount
+    ) external returns (uint48 depositId);
 }
 
 /// @title Azuro Liquidity Pool managing
-contract LP is OwnableUpgradeable, ILP {
+contract LP is
+    LiquidityTree,
+    OwnableUpgradeable,
+    ERC721EnumerableUpgradeable,
+    ILP
+{
     using FixedMath for *;
-    using SafeCast for *;
+    using SafeCast for uint256;
+    using SafeCast for uint128;
 
     IOwnable public factory;
     IAccess public access;
-    IVault public vault;
 
     address public token;
     address public dataProvider;
 
     uint128 public minDepo; // Minimum amount of liquidity deposit
+    uint128 public lockedLiquidity; // Liquidity reserved by conditions
 
     uint64 public claimTimeout; // Withdraw reward timeout
     uint64 public withdrawTimeout; // Deposit-withdraw liquidity timeout
 
     mapping(address => CoreData) public cores;
 
+    mapping(uint256 => Game) public games;
+
     uint64[3] public fees;
 
     mapping(address => Reward) public rewards;
     // withdrawAfter[depositId] = timestamp indicating when the liquidity deposit withdrawal will be available.
     mapping(uint48 => uint64) public withdrawAfter;
+    mapping(address => uint128) private unusedVariable;
+
+    ILiquidityManager public liquidityManager;
 
     address public affiliate;
 
-    address public relayer;
+    address public migrateAdmin;
 
-    // used for deposit migration from legacy LP
-    address public legacyLP;
+    bool public isBettingPaused;
 
     /**
      * @notice Check if Core `core` belongs to this Liquidity Pool and is active.
@@ -84,15 +88,23 @@ contract LP is OwnableUpgradeable, ILP {
         _;
     }
 
+    /**
+     * @notice Throw if caller have no access to function with selector `selector`.
+     */
+    modifier restricted(bytes4 selector) {
+        checkAccess(msg.sender, address(this), selector);
+        _;
+    }
+
     receive() external payable {
-        revert("This contract does not accept payments");
+        require(msg.sender == token);
     }
 
     function initialize(
         address access_,
-        address vault_,
         address dataProvider_,
         address affiliate_,
+        address token_,
         uint128 minDepo_,
         uint64 daoFee,
         uint64 dataProviderFee,
@@ -100,23 +112,19 @@ contract LP is OwnableUpgradeable, ILP {
     ) external virtual override initializer {
         if (minDepo_ == 0) revert IncorrectMinDepo();
 
-        __Ownable_init_unchained(msg.sender);
+        __Ownable_init();
+        __ERC721_init("Azuro LP NFT token", "LP-AZR");
+        __liquidityTree_init();
         factory = IOwnable(msg.sender);
         access = IAccess(access_);
-        vault = IVault(vault_);
         dataProvider = dataProvider_;
         affiliate = affiliate_;
-        minDepo = minDepo_;
+        token = token_;
         fees[0] = daoFee;
         fees[1] = dataProviderFee;
         fees[2] = affiliateFee;
-
-        address token_ = IVault(vault_).token();
-        token = token_;
-        // Max approve Vault spending
-        TransferHelper.safeApprove(token_, vault_, type(uint256).max);
-
         _checkFee();
+        minDepo = minDepo_;
     }
 
     /**
@@ -154,6 +162,16 @@ contract LP is OwnableUpgradeable, ILP {
     }
 
     /**
+     * @notice Owner: Set `newLiquidityManager` as liquidity manager contract address.
+     */
+    function changeLiquidityManager(
+        address newLiquidityManager
+    ) external onlyOwner {
+        liquidityManager = ILiquidityManager(newLiquidityManager);
+        emit LiquidityManagerChanged(newLiquidityManager);
+    }
+
+    /**
      * @notice Owner: Set `newMinDepo` as minimum liquidity deposit.
      */
     function changeMinDepo(uint128 newMinDepo) external onlyOwner {
@@ -174,14 +192,11 @@ contract LP is OwnableUpgradeable, ILP {
 
     /**
      * @notice Owner: Update Core `core` settings.
-     *         reinforcementAbility is total ability consist of ordinary + combo
-     *         reinforcementAbilityCombo set as part of total ability
      */
     function updateCoreSettings(
         address core,
         CoreState state,
         uint64 reinforcementAbility,
-        uint64 reinforcementAbilityCombo,
         uint128 minBet
     ) external onlyOwner isCore(core) {
         if (minBet == 0) revert IncorrectMinBet();
@@ -192,91 +207,94 @@ contract LP is OwnableUpgradeable, ILP {
         CoreData storage coreData = cores[core];
         coreData.minBet = minBet;
         coreData.reinforcementAbility = reinforcementAbility;
-        coreData.reinforcementAbilityCombo = reinforcementAbilityCombo;
         coreData.state = state;
 
-        emit CoreSettingsUpdated(
-            core,
-            state,
-            reinforcementAbility,
-            reinforcementAbilityCombo,
-            minBet
-        );
+        emit CoreSettingsUpdated(core, state, reinforcementAbility, minBet);
     }
 
     /**
-     * @notice Owner: Update Core `core` lockedLiquidityCombo value.
+     * @notice See {ILP-cancelGame}.
      */
-    function updateCoreLockedLiquidityCombo(
-        address core,
-        uint128 newLockedLiquidityCombo
-    ) external onlyOwner isCore(core) {
-        CoreData storage coreData = cores[core];
-        coreData.lockedLiquidityCombo = newLockedLiquidityCombo;
+    function cancelGame(
+        uint256 gameId
+    ) external restricted(this.cancelGame.selector) {
+        Game storage game = _getGame(gameId);
+        if (game.canceled) revert GameAlreadyCanceled();
+
+        lockedLiquidity -= game.lockedLiquidity;
+        game.canceled = true;
+        emit GameCanceled(gameId);
     }
 
-    function setLegacyLP(address legacyLP_) external onlyOwner {
-        legacyLP = legacyLP_;
-        emit LegacyLPSet(legacyLP_);
+    /**
+     * @notice See {ILP-createGame}.
+     */
+    function createGame(
+        uint256 gameId,
+        uint64 startsAt,
+        bytes calldata data
+    ) external restricted(this.createGame.selector) {
+        Game storage game = games[gameId];
+        if (game.startsAt > 0) revert GameAlreadyCreated();
+        if (gameId == 0) revert IncorrectGameId();
+        if (startsAt < block.timestamp) revert IncorrectTimestamp();
+
+        game.startsAt = startsAt;
+
+        emit NewGame(gameId, startsAt, data);
     }
 
-    function setRelayer(address relayer_) external onlyOwner {
-        relayer = relayer_;
-        emit RelayerSet(relayer_);
+    /**
+     * @notice See {ILP-shiftGame}.
+     */
+    function shiftGame(
+        uint256 gameId,
+        uint64 startsAt
+    ) external restricted(this.shiftGame.selector) {
+        if (startsAt == 0) revert IncorrectTimestamp();
+        _getGame(gameId).startsAt = startsAt;
+        emit GameShifted(gameId, startsAt);
+    }
+
+    /**
+     * @notice Updates the betting status by pausing or resuming betting.
+     * @param isBettingPaused_ Set to `true` to pause betting, or `false` to resume it.
+     */
+    function updateBettingStatus(bool isBettingPaused_) external onlyOwner {
+        isBettingPaused = isBettingPaused_;
+
+        emit BettingStatusChanged(isBettingPaused_);
     }
 
     /**
      * @notice Deposit liquidity in the Liquidity Pool.
      * @notice Emits deposit token to `msg.sender`.
      * @param  amount The token's amount to deposit.
+     * @param  data The additional data for processing in the Liquidity Manager contract.
      * @return depositId The deposit ID.
      */
-    function addDeposit(uint128 amount) external returns (uint48 depositId) {
-        return _transferAddDeposit(msg.sender, amount);
-    }
-
-    /**
-     * @notice Deposit liquidity in the Liquidity Pool for another account balance.
-     * @notice Emits deposit token to `msg.sender`.
-     * @param  account The account that will become the owner of the deposit.
-     * @param  amount The token's amount to deposit.
-     * @return depositId The deposit ID.
-     */
-    function addDepositFor(
-        address account,
-        uint128 amount
+    function addLiquidity(
+        uint128 amount,
+        bytes calldata data
     ) external returns (uint48 depositId) {
-        return _transferAddDeposit(account, amount);
-    }
+        if (amount < minDepo) revert SmallDepo();
 
-    /**
-     * @notice Migrate liquidity from legacy Liquidity Pool deposit(s) into the Liquidity Pool.
-     * @notice List of old deposites emits the deposit token to `msg.sender`.
-     * @param  oldDepositIds The token deposit ids from the old Liquidity Pool.
-     * @return depositId The deposit ID in the Liquidity Pool.
-     */
-    function migrateDeposits(
-        uint48[] calldata oldDepositIds
-    ) external returns (uint48 depositId) {
-        address legacyLP_ = legacyLP;
-        if (legacyLP_ == address(0)) revert IncorrectLegacyLP();
+        _deposit(amount);
 
-        uint128 amount;
-        uint256 deposits = oldDepositIds.length;
-        uint40 percent100 = uint40(FixedMath.ONE);
-        for (uint i; i < deposits; ++i) {
-            IERC721(legacyLP_).transferFrom(
+        depositId = _nodeAddLiquidity(amount);
+
+        if (address(liquidityManager) != address(0))
+            liquidityManager.beforeAddLiquidity(
                 msg.sender,
-                address(this),
-                oldDepositIds[i]
+                depositId,
+                amount,
+                data
             );
-            amount += ILegacyLP(legacyLP_).withdrawLiquidity(
-                oldDepositIds[i],
-                percent100
-            );
-        }
-        depositId = _depositVaultFor(msg.sender, amount);
-        emit DepositsMigrated(msg.sender, depositId, oldDepositIds);
+
+        withdrawAfter[depositId] = uint64(block.timestamp) + withdrawTimeout;
+        _mint(msg.sender, depositId);
+
+        emit LiquidityAdded(msg.sender, depositId, amount);
     }
 
     /**
@@ -285,20 +303,57 @@ contract LP is OwnableUpgradeable, ILP {
      * @param  percent The payout share to withdraw, where `FixedMath.ONE` is 100% of the deposit balance.
      * @return withdrawnAmount The amount of withdrawn liquidity.
      */
-    function withdrawDeposit(
+    function withdrawLiquidity(
         uint48 depositId,
         uint40 percent
     ) external returns (uint128 withdrawnAmount) {
+        if (msg.sender != ownerOf(depositId)) revert LiquidityNotOwned();
+        withdrawnAmount = _withdrawLiquidity(msg.sender, depositId, percent);
+    }
+
+    function migrateLiquidityFrom(
+        uint48 depositId
+    ) external returns (address depositOwner, uint128 withdrawnAmount) {
+        if (msg.sender != migrateAdmin) revert OnlyMigrateAdmin();
+
+        uint40 percent = uint40(FixedMath.ONE);
+
+        depositOwner = ownerOf(depositId);
+        withdrawnAmount = _withdrawLiquidity(migrateAdmin, depositId, percent);
+    }
+
+    function _withdrawLiquidity(
+        address to,
+        uint48 depositId,
+        uint40 percent
+    ) internal returns (uint128 withdrawnAmount) {
         uint64 time = uint64(block.timestamp);
         uint64 _withdrawAfter = withdrawAfter[depositId];
         if (time < _withdrawAfter)
             revert WithdrawalTimeout(_withdrawAfter - time);
-        if (msg.sender != vault.ownerOf(depositId)) revert LiquidityNotOwned();
 
         withdrawAfter[depositId] = time + withdrawTimeout;
-        withdrawnAmount = vault.withdrawDeposit(depositId, percent);
+        uint128 topNodeAmount = getReserve();
+        uint128 balance = nodeWithdrawView(depositId);
+        withdrawnAmount = _nodeWithdrawPercent(depositId, percent);
 
-        emit LiquidityRemoved(msg.sender, depositId, percent, withdrawnAmount);
+        if (address(liquidityManager) != address(0))
+            liquidityManager.afterWithdrawLiquidity(
+                depositId,
+                nodeWithdrawView(depositId)
+            );
+
+        // burn the token if the deposit is fully withdrawn
+        if (withdrawnAmount == balance) _burn(depositId);
+
+        if (withdrawnAmount > 0) {
+            // check withdrawAmount allowed in ("node #1" - "active condition reinforcements")
+            if (withdrawnAmount > (topNodeAmount - lockedLiquidity))
+                revert LiquidityIsLocked();
+
+            _withdraw(to, withdrawnAmount);
+        }
+        emit LiquidityRemoved(to, depositId, withdrawnAmount);
     }
 
     /**
@@ -321,80 +376,94 @@ contract LP is OwnableUpgradeable, ILP {
     }
 
     /**
-     * @notice Make bet by bet order: batch of new single bet(s) or combo bet.
-     * @notice Emits bet tokens to `bettor`.
-     * @notice See {ILP-betOrder}.
+     * @notice Make new bet.
+     * @notice Emits bet token to `msg.sender`.
+     * @notice See {ILP-bet}.
      */
-    function betOrder(
+    function bet(
         address core,
-        OrderData calldata order,
-        address betOwner,
-        bytes calldata data
-    ) external isActive(core) returns (uint256[] memory) {
-        if (msg.sender != relayer) revert IncorrectRelayer();
-
-        uint128 minBet = _getCore(core).minBet;
-
-        // get bets count and amounts from the `order`
-        (uint128 totalAmount, ) = IBetting(core).getOrderBetsAmounts(order);
-
-        _deposit(totalAmount);
-
-        return IBetting(core).putOrder(order, betOwner, minBet, data);
+        uint128 amount,
+        uint64 expiresAt,
+        IBet.BetData calldata betData
+    ) external override returns (uint256) {
+        _deposit(amount);
+        return _bet(msg.sender, core, amount, expiresAt, betData);
     }
 
     /**
-     * @notice Withdraw payout for bet token `tokenId` from the Core `core`.
+     * @notice Make new bet for `bettor`.
+     * @notice Emits bet token to `bettor`.
+     * @param  bettor wallet for emitting bet token
+     * @param  core address of the Core the bet is intended
+     * @param  amount amount of tokens to bet
+     * @param  expiresAt the time before which bet should be made
+     * @param  betData customized bet data
+     */
+    function betFor(
+        address bettor,
+        address core,
+        uint128 amount,
+        uint64 expiresAt,
+        IBet.BetData calldata betData
+    ) external override returns (uint256) {
+        _deposit(amount);
+        return _bet(bettor, core, amount, expiresAt, betData);
+    }
+
+    /**
+     * @notice Core: Withdraw payout for bet token `tokenId` from the Core `core`.
      * @return amount The amount of withdrawn payout.
      */
     function withdrawPayout(
         address core,
         uint256 tokenId
     ) external override isCore(core) returns (uint128 amount) {
-        return _withdrawPayout(core, tokenId);
+        address account;
+        (account, amount) = IBet(core).resolvePayout(tokenId);
+        if (amount > 0) _withdraw(account, amount);
+
+        emit BettorWin(core, account, tokenId, amount);
     }
 
     /**
-     * @notice Withdraw payouts for bet tokens `tokenIds` from the Core `core`.
+     * @notice Active Core: Check if Core `msg.sender` can create condition for game `gameId`.
      */
-    function withdrawPayouts(
-        address core,
-        uint256[] calldata tokenIds
-    ) external override isCore(core) {
-        uint256 length = tokenIds.length;
-        for (uint256 i; i < length; ++i) {
-            _withdrawPayout(core, tokenIds[i]);
-        }
+    function addCondition(
+        uint256 gameId
+    ) external view override isActive(msg.sender) returns (uint64) {
+        Game storage game = _getGame(gameId);
+        if (game.canceled) revert GameCanceled_();
+
+        return game.startsAt;
     }
 
     /**
-     * @notice Active Core: Change amount of liquidity reserved by a core.
-     * @param  deltaReserve value of the change in the amount of liquidity used by a core as a reinforcement
-     * @param  isCombo true the amount of liquidity used by a core as a combo reinforcement
+     * @notice Active Core: Change amount of liquidity reserved by the game `gameId`.
+     * @param  gameId the game ID
+     * @param  deltaReserve value of the change in the amount of liquidity used by the game as a reinforcement
      */
     function changeLockedLiquidity(
-        int128 deltaReserve,
-        bool isCombo
+        uint256 gameId,
+        int128 deltaReserve
     ) external override isActive(msg.sender) {
         if (deltaReserve > 0) {
             uint128 _deltaReserve = uint128(deltaReserve);
+            if (gameId > 0) {
+                games[gameId].lockedLiquidity += _deltaReserve;
+            }
 
             CoreData storage coreData = _getCore(msg.sender);
             coreData.lockedLiquidity += _deltaReserve;
-            if (isCombo) coreData.lockedLiquidityCombo += _deltaReserve;
+            lockedLiquidity += _deltaReserve;
 
-            vault.lockLiquidity(_deltaReserve);
-
-            (
-                uint128 maxLiquidity,
-                uint128 maxLiquidityCombo
-            ) = getLockedLiquidityLimit(msg.sender);
-            if (coreData.lockedLiquidity > maxLiquidity)
-                revert LockedLiquidityLimitReached();
-            if (isCombo && coreData.lockedLiquidityCombo > maxLiquidityCombo)
-                revert LockedLiquidityComboLimitReached();
+            uint256 reserve = getReserve();
+            if (
+                lockedLiquidity > reserve ||
+                coreData.lockedLiquidity >
+                coreData.reinforcementAbility.mul(reserve)
+            ) revert NotEnoughLiquidity();
         } else
-            _reduceLockedLiquidity(msg.sender, uint128(-deltaReserve), isCombo);
+            _reduceLockedLiquidity(msg.sender, gameId, uint128(-deltaReserve));
     }
 
     /**
@@ -404,30 +473,30 @@ contract LP is OwnableUpgradeable, ILP {
         CoreData storage coreData = _getCore(core);
         coreData.minBet = 1;
         coreData.reinforcementAbility = uint64(FixedMath.ONE);
-        coreData.reinforcementAbilityCombo = uint64(FixedMath.ONE / 2);
         coreData.state = CoreState.ACTIVE;
 
         emit CoreSettingsUpdated(
             core,
             CoreState.ACTIVE,
             uint64(FixedMath.ONE),
-            uint64(FixedMath.ONE / 2), // 50% as default part for combo
             1
         );
     }
 
     /**
      * @notice Core: Finalize changes in the balance of Liquidity Pool
+     *         after the game `gameId` condition's resolve.
+     * @param  gameId the game ID
      * @param  lockedReserve amount of liquidity reserved by condition
      * @param  finalReserve amount of liquidity that was not demand according to the condition result
-     * @param  depositId The ID of the last deposit that shares the income. In case of loss, all deposits bear the loss collectively.
-     * @param  isCombo reduce combo reserve
+     * @param  depositId The ID of the last deposit that shares the income. In case of loss, all deposits bear the loss
+     *         collectively.
      */
     function addReserve(
+        uint256 gameId,
         uint128 lockedReserve,
         uint128 finalReserve,
-        uint48 depositId,
-        bool isCombo
+        uint48 depositId
     ) external override isCore(msg.sender) {
         Reward storage daoReward = rewards[factory.owner()];
         Reward storage dataProviderReward = rewards[dataProvider];
@@ -444,7 +513,7 @@ contract LP is OwnableUpgradeable, ILP {
                 ) +
                 _chargeReward(affiliateReward, profit, FeeType.AFFILIATES));
 
-            vault.addLiquidity(profit, depositId);
+            _addLimit(profit, depositId);
         } else {
             // remove loss from liquidityTree excluding canceled conditions (when finalReserve = lockedReserve)
             if (lockedReserve - finalReserve > 0) {
@@ -457,33 +526,55 @@ contract LP is OwnableUpgradeable, ILP {
                         FeeType.DATA_PROVIDER
                     ) +
                     _chargeFine(affiliateReward, loss, FeeType.AFFILIATES));
-                vault.withdrawLiquidityFor(address(this), loss, depositId);
+
+                _remove(loss);
             }
         }
         if (lockedReserve > 0)
-            _reduceLockedLiquidity(msg.sender, lockedReserve, isCombo);
+            _reduceLockedLiquidity(msg.sender, gameId, lockedReserve);
+    }
+
+    function setMigrateAdmin(address migrateAdmin_) external onlyOwner {
+        migrateAdmin = migrateAdmin_;
     }
 
     /**
-     * @dev Throws if the passed address is not the owner.
-     */
-    function checkOwner(address owner_) external view {
-        if (super.owner() != owner_) {
-            revert OwnableUnauthorizedAccount(owner_);
-        }
-    }
-
-    /**
-     * @notice Checks if the deposit token exists (not burned) in the Vault.
+     * @notice Checks if the deposit token exists (not burned).
      */
     function isDepositExists(
         uint256 depositId
     ) external view override returns (bool) {
-        return vault.isDepositExists(depositId);
+        return _exists(depositId);
     }
 
     /**
-     * @notice Get the ID of the most recently made deposit int he Vault.
+     * @notice Get the start time of the game `gameId` and whether it was canceled.
+     */
+    function getGameInfo(
+        uint256 gameId
+    ) external view override returns (uint64, bool) {
+        Game storage game = games[gameId];
+        return (game.startsAt, game.canceled);
+    }
+
+    /**
+     * @notice Get the max amount of liquidity that can be locked by Core `core` conditions.
+     */
+    function getLockedLiquidityLimit(
+        address core
+    ) external view returns (uint128) {
+        return uint128(_getCore(core).reinforcementAbility.mul(getReserve()));
+    }
+
+    /**
+     * @notice Get the total amount of liquidity in the Pool.
+     */
+    function getReserve() public view returns (uint128 reserve) {
+        return treeNode[1].amount;
+    }
+
+    /**
+     * @notice Get the ID of the most recently made deposit.
      */
     function getLastDepositId()
         external
@@ -491,7 +582,16 @@ contract LP is OwnableUpgradeable, ILP {
         override
         returns (uint48 depositId)
     {
-        return vault.getLastDepositId();
+        return (nextNode - 1);
+    }
+
+    /**
+     * @notice Check if game `gameId` is canceled.
+     */
+    function isGameCanceled(
+        uint256 gameId
+    ) external view override returns (bool) {
+        return games[gameId].canceled;
     }
 
     /**
@@ -504,7 +604,7 @@ contract LP is OwnableUpgradeable, ILP {
         address core,
         uint256 tokenId
     ) external view isCore(core) returns (uint128) {
-        return IBetting(core).viewPayout(tokenId);
+        return IBet(core).viewPayout(tokenId);
     }
 
     /**
@@ -526,35 +626,26 @@ contract LP is OwnableUpgradeable, ILP {
     }
 
     /**
-     * @notice Get the max amount of liquidity that can be locked by Core `core` conditions and
-     *         amount of liquidity that can be locked for Combo
+     * @notice Make new bet.
+     * @param  bettor wallet for emitting bet token
+     * @param  core address of the Core the bet is intended
+     * @param  amount amount of tokens to bet
+     * @param  expiresAt the time before which bet should be made
+     * @param  betData customized bet data
      */
-    function getLockedLiquidityLimit(
-        address core
-    ) public view returns (uint128 maxLiquidity, uint128 maxLiquidityCombo) {
-        CoreData storage coredata = _getCore(core);
-        maxLiquidity = uint128(
-            coredata.reinforcementAbility.mul(vault.getReserve())
-        );
-        maxLiquidityCombo = uint128(
-            coredata.reinforcementAbilityCombo.mul(maxLiquidity)
-        );
-    }
-
-    /**
-     * @notice Deposit liquidity from liquidity pool into the Vault for account.
-     * @notice Emits deposit token to `depositor`.
-     * @param  account The account that will become the owner of the deposit.
-     * @param  amount The token's amount to deposit.
-     * @return depositId The deposit ID.
-     */
-    function _depositVaultFor(
-        address account,
-        uint128 amount
-    ) internal returns (uint48 depositId) {
-        if (amount < minDepo) revert SmallDepo();
-        depositId = vault.addDeposit(account, amount);
-        emit LiquidityAdded(account, depositId, amount);
+    function _bet(
+        address bettor,
+        address core,
+        uint128 amount,
+        uint64 expiresAt,
+        IBet.BetData memory betData
+    ) internal isActive(core) returns (uint256) {
+        if (isBettingPaused) revert BettingPaused();
+        if (block.timestamp >= expiresAt) revert BetExpired();
+        if (amount < _getCore(core).minBet) revert SmallBet();
+        // owner is default affiliate
+        if (betData.affiliate == address(0)) betData.affiliate = owner();
+        return IBet(core).putBet(bettor, amount, betData);
     }
 
     /**
@@ -596,7 +687,7 @@ contract LP is OwnableUpgradeable, ILP {
     }
 
     /**
-     * @notice Deposit `amount` of `token` tokens from `msg.sender` balance to the contract.
+     * @notice Deposit `amount` of `token` tokens from `account` balance to the contract.
      */
     function _deposit(uint128 amount) internal {
         TransferHelper.safeTransferFrom(
@@ -609,58 +700,21 @@ contract LP is OwnableUpgradeable, ILP {
 
     function _reduceLockedLiquidity(
         address core,
-        uint128 deltaReserve,
-        bool isCombo
+        uint256 gameId,
+        uint128 deltaReserve
     ) internal {
-        CoreData storage coredata = _getCore(core);
-        coredata.lockedLiquidity -= deltaReserve;
-        if (isCombo) coredata.lockedLiquidityCombo -= deltaReserve;
-        vault.unlockLiquidity(deltaReserve);
+        if (gameId > 0) {
+            games[gameId].lockedLiquidity -= deltaReserve;
+        }
+        _getCore(core).lockedLiquidity -= deltaReserve;
+        lockedLiquidity -= deltaReserve;
     }
 
     /**
-     * @notice Transfer and add deposit liquidity in the Liquidity Pool.
-     * @notice Emits deposit token to `depositor`.
-     * @param  account The account that will become the owner of the deposit.
-     * @param  amount The token's amount to deposit.
-     * @return depositId The deposit ID.
+     * @notice Withdraw `amount` of tokens to `account` balance.
      */
-    function _transferAddDeposit(
-        address account,
-        uint128 amount
-    ) internal returns (uint48 depositId) {
-        _deposit(amount);
-        depositId = _depositVaultFor(account, amount);
-
-        withdrawAfter[depositId] = uint64(block.timestamp) + withdrawTimeout;
-    }
-
-    /**
-     * @notice Withdraw `amount` of tokens to `to` balance.
-     */
-    function _withdraw(address to, uint128 amount) internal {
-        TransferHelper.safeTransfer(token, to, amount);
-    }
-
-    /**
-     * @notice Withdraw payout for bet token `tokenId` from the Core `core`.
-     * @return amount The amount of withdrawn payout.
-     */
-    function _withdrawPayout(
-        address core,
-        uint256 tokenId
-    ) internal returns (uint128 amount) {
-        address account;
-        (account, amount) = IBetting(core).resolvePayout(tokenId);
-
-        if (
-            account == IRelayer(relayer).payMaster() &&
-            _isLocked(account, tokenId)
-        ) revert LockedBetToken(tokenId);
-
-        if (amount > 0) _withdraw(account, amount);
-
-        emit BettorWin(core, account, tokenId, amount);
+    function _withdraw(address account, uint128 amount) internal {
+        TransferHelper.safeTransfer(token, account, amount);
     }
 
     /**
@@ -693,24 +747,21 @@ contract LP is OwnableUpgradeable, ILP {
         return fees[uint256(feeType)];
     }
 
+    /**
+     * @notice Get game by it's ID.
+     */
+    function _getGame(uint256 gameId) internal view returns (Game storage) {
+        Game storage game = games[gameId];
+        if (game.startsAt == 0) revert GameNotExists();
+
+        return game;
+    }
+
     function _getShare(
         uint128 amount,
         FeeType feeType
     ) internal view returns (int128) {
         return _getFee(feeType).mul(amount).toUint128().toInt128();
-    }
-
-    function _isLocked(
-        address account,
-        uint256 tokenId
-    ) internal view returns (bool) {
-        (bool success, bytes memory result) = account.staticcall(
-            abi.encodeCall(IPayMaster.isLocked, (tokenId))
-        );
-
-        if (!success) return false;
-
-        return (result.length >= 32 && abi.decode(result, (bool)) == true);
     }
 
     /**

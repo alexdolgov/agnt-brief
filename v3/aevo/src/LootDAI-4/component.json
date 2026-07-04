@@ -1,0 +1,18 @@
+{
+  "component": "LootDAI-4",
+  "main_contract": "LootDAI",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xce7c4d6e0da4f6e264277bbf2182c45d9afda626",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

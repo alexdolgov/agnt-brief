@@ -1,34 +1,26 @@
 {
   "component": "ERC1967Proxy-6",
   "main_contract": "ERC1967Proxy",
-  "source_file_count": 18,
-  "deployment_count": 3,
+  "source_file_count": 17,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x42842f88c3ea0eb39f3303a80a03f7f55db31b28",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8238884ec9668ef77b90c6dff4d1a9f4f4823bfe",
       "is_proxy": true,
-      "implementation_address": "0x4e717f87aafb53ea88378b5079b177628b082ed7",
+      "implementation_address": "0x87e3ba929c71c0e28fc1c817d107a888a59c523e",
       "liveness": "live"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x4e717f87aafb53ea88378b5079b177628b082ed7",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a074c1ac759b10c8630b71aa017004c3e091b9b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xdfc75aa0ceab89c40cd4b78e7f4179632fe06e93",
-      "is_proxy": true,
-      "implementation_address": "0x4e717f87aafb53ea88378b5079b177628b082ed7",
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

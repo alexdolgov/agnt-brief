@@ -1,0 +1,38 @@
+{
+  "component": "AccountantWithRateProviders-3",
+  "main_contract": "AccountantWithRateProviders",
+  "source_file_count": 16,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf",
+    "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf",
+    "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2ed2f77a961fc92f73d1087786099c39c894ed1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3d649799a16aefadb3fb1033192182b0f9836b32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0b738cd187872b265a689e8e4130c336e76892ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Asset-10",
+  "main_contract": "Asset",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x74f019a5c4ed2c2950ce16fad7af838549092c5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

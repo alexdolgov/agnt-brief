@@ -1,0 +1,18 @@
+{
+  "component": "BackingManagerP1-3",
+  "main_contract": "BackingManagerP1",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf73eb45d83ac86f8a6f75a6252ca1a59a9a3aed3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

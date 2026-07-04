@@ -43,10 +43,7 @@ library StructuredLinkedList {
      * @param _node a node to search for
      * @return bool true if node exists, false otherwise
      */
-    function nodeExists(
-        List storage self,
-        uint256 _node
-    ) public view returns (bool) {
+    function nodeExists(List storage self, uint256 _node) public view returns (bool) {
         if (self.list[_node][_PREV] == _HEAD && self.list[_node][_NEXT] == _HEAD) {
             if (self.list[_HEAD][_NEXT] == _node) {
                 return true;
@@ -99,10 +96,7 @@ library StructuredLinkedList {
      * @return bool, uint256, uint256 true if node exists or false otherwise, previous node, next node
      */
     // slither-disable-next-line dead-code
-    function getNode(
-        List storage self,
-        uint256 _node
-    ) public view returns (bool, uint256, uint256) {
+    function getNode(List storage self, uint256 _node) public view returns (bool, uint256, uint256) {
         if (!nodeExists(self, _node)) {
             return (false, 0, 0);
         } else {
@@ -118,11 +112,7 @@ library StructuredLinkedList {
      * @return bool, uint256 true if node exists or false otherwise, node in _direction
      */
     // slither-disable-next-line dead-code
-    function getAdjacent(
-        List storage self,
-        uint256 _node,
-        bool _direction
-    ) public view returns (bool, uint256) {
+    function getAdjacent(List storage self, uint256 _node, bool _direction) public view returns (bool, uint256) {
         if (!nodeExists(self, _node)) {
             return (false, 0);
         } else {
@@ -138,10 +128,7 @@ library StructuredLinkedList {
      * @return bool, uint256 true if node exists or false otherwise, next node
      */
     // slither-disable-next-line dead-code
-    function getNextNode(
-        List storage self,
-        uint256 _node
-    ) public view returns (bool, uint256) {
+    function getNextNode(List storage self, uint256 _node) public view returns (bool, uint256) {
         return getAdjacent(self, _node, _NEXT);
     }
 
@@ -152,10 +139,7 @@ library StructuredLinkedList {
      * @return bool, uint256 true if node exists or false otherwise, previous node
      */
     // slither-disable-next-line dead-code
-    function getPreviousNode(
-        List storage self,
-        uint256 _node
-    ) public view returns (bool, uint256) {
+    function getPreviousNode(List storage self, uint256 _node) public view returns (bool, uint256) {
         return getAdjacent(self, _node, _PREV);
     }
 
@@ -167,11 +151,7 @@ library StructuredLinkedList {
      * @return bool true if success, false otherwise
      */
     // slither-disable-next-line dead-code
-    function insertAfter(
-        List storage self,
-        uint256 _node,
-        uint256 _new
-    ) public returns (bool) {
+    function insertAfter(List storage self, uint256 _node, uint256 _new) public returns (bool) {
         return _insert(self, _node, _new, _NEXT);
     }
 
@@ -183,11 +163,7 @@ library StructuredLinkedList {
      * @return bool true if success, false otherwise
      */
     // slither-disable-next-line dead-code
-    function insertBefore(
-        List storage self,
-        uint256 _node,
-        uint256 _new
-    ) public returns (bool) {
+    function insertBefore(List storage self, uint256 _node, uint256 _new) public returns (bool) {
         return _insert(self, _node, _new, _PREV);
     }
 
@@ -197,10 +173,7 @@ library StructuredLinkedList {
      * @param _node node to remove from the list
      * @return uint256 the removed node
      */
-    function remove(
-        List storage self,
-        uint256 _node
-    ) public returns (uint256) {
+    function remove(List storage self, uint256 _node) public returns (uint256) {
         if ((_node == _NULL) || (!nodeExists(self, _node))) {
             return 0;
         }
@@ -219,10 +192,7 @@ library StructuredLinkedList {
      * @param _node new entry to push to the head
      * @return bool true if success, false otherwise
      */
-    function pushFront(
-        List storage self,
-        uint256 _node
-    ) public returns (bool) {
+    function pushFront(List storage self, uint256 _node) public returns (bool) {
         return _push(self, _node, _NEXT);
     }
 
@@ -232,10 +202,7 @@ library StructuredLinkedList {
      * @param _node new entry to push to the tail
      * @return bool true if success, false otherwise
      */
-    function pushBack(
-        List storage self,
-        uint256 _node
-    ) public returns (bool) {
+    function pushBack(List storage self, uint256 _node) public returns (bool) {
         return _push(self, _node, _PREV);
     }
 
@@ -270,11 +237,7 @@ library StructuredLinkedList {
      * @param _direction push to the head (_NEXT) or tail (_PREV)
      * @return bool true if success, false otherwise
      */
-    function _push(
-        List storage self,
-        uint256 _node,
-        bool _direction
-    ) private returns (bool) {
+    function _push(List storage self, uint256 _node, bool _direction) private returns (bool) {
         return _insert(self, _HEAD, _node, _direction);
     }
 
@@ -285,10 +248,7 @@ library StructuredLinkedList {
      * @return uint256 the removed node
      */
     // slither-disable-next-line dead-code
-    function _pop(
-        List storage self,
-        bool _direction
-    ) private returns (uint256) {
+    function _pop(List storage self, bool _direction) private returns (uint256) {
         uint256 adj;
         (, adj) = getAdjacent(self, _HEAD, _direction);
         return remove(self, adj);
@@ -302,12 +262,7 @@ library StructuredLinkedList {
      * @param _direction direction to insert node in
      * @return bool true if success, false otherwise
      */
-    function _insert(
-        List storage self,
-        uint256 _node,
-        uint256 _new,
-        bool _direction
-    ) private returns (bool) {
+    function _insert(List storage self, uint256 _node, uint256 _new, bool _direction) private returns (bool) {
         if (!nodeExists(self, _new) && nodeExists(self, _node)) {
             uint256 c = self.list[_node][_direction];
             _createLink(self, _node, _new, _direction);
@@ -328,12 +283,7 @@ library StructuredLinkedList {
      * @param _link node to link to in the _direction
      * @param _direction direction to insert node in
      */
-    function _createLink(
-        List storage self,
-        uint256 _node,
-        uint256 _link,
-        bool _direction
-    ) private {
+    function _createLink(List storage self, uint256 _node, uint256 _link, bool _direction) private {
         self.list[_link][!_direction] = _node;
         self.list[_node][_direction] = _link;
     }

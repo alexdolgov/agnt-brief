@@ -1,0 +1,18 @@
+{
+  "component": "LPool-4",
+  "main_contract": "LPool",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa6f1114e90cf94ba3a7d72c4886b4e069803cdb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

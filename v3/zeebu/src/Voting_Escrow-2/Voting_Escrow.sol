@@ -1101,3 +1101,7 @@ def changeRewardReceiver(newReceiver: address):
 
     self.rewardReceiver = newReceiver
     log RewardReceiver(newReceiver)
+
+@external
+def onERC20Receive(sender: address, amount: uint256, msgSender: address) -> bool:
+    return True

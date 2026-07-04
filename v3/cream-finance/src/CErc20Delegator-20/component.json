@@ -1,0 +1,18 @@
+{
+  "component": "CErc20Delegator-20",
+  "main_contract": "CErc20Delegator",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5b4058a9000e86fe136ac896352c4dfd539e32a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

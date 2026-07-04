@@ -48,6 +48,30 @@ interface IAutopilotRouter is IAutopilotRouterBase {
     ) external payable returns (uint256 sharesOut);
 
     /**
+     * *************************   Withdraw   **********************************
+     */
+
+    /**
+     * @notice withdraw `amount` to a AutopoolETH.
+     * @param fromVault The AutopoolETH to withdraw assets from.
+     * @param toVault The AutopoolETH to deposit assets to.
+     * @param to The destination of ownership shares.
+     * @param amount The amount of assets to withdraw from fromVault.
+     * @param maxSharesIn The max amount of fromVault shares withdrawn by caller.
+     * @param minSharesOut The min amount of toVault shares received by `to`.
+     * @return sharesOut the amount of shares received by `to`.
+     * @dev throws MaxSharesError, MinSharesError
+     */
+    function withdrawToDeposit(
+        IAutopool fromVault,
+        IAutopool toVault,
+        address to,
+        uint256 amount,
+        uint256 maxSharesIn,
+        uint256 minSharesOut
+    ) external payable returns (uint256 sharesOut);
+
+    /**
      * *************************   Redeem    ********************************
      */
 
@@ -191,18 +215,4 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @param duration Number of cycles to lock for
      */
     function lockTokeFor(uint256 amount, uint256 duration) external payable;
-
-    // /**
-    //  * @notice Redeem prorata from a AutopoolETH.
-    //  * @param vault The AutopoolETH to redeem shares from.
-    //  * @param to The destination of assets.
-    //  * @param shares The amount of shares to redeem from vault.
-    //  * @return amountOut the amount of assets received by `to`.
-    //  */
-    // function redeemProrata(
-    //     IAutopool vault,
-    //     address to,
-    //     uint256 shares,
-    //     uint256 minAmountOut
-    // ) external payable returns (uint256 amountOut);
 }

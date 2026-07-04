@@ -1,15 +1,55 @@
 {
   "component": "OptiSwap",
   "main_contract": "OptiSwap",
-  "source_file_count": 9,
-  "deployment_count": 1,
+  "source_file_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x6108feaa628155b073150f408d0b390ec3121834",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf6e008d07af2efd5325d1752a7b37b51a0b7d697",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x981bd9f77c8aafc14ebc86769503f86a3cc29af5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x981bd9f77c8aafc14ebc86769503f86a3cc29af5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x981bd9f77c8aafc14ebc86769503f86a3cc29af5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

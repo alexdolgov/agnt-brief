@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+import { SwapParams } from "contracts/structs/LiquidityStructs.sol";
 import {
     NftAddLiquidity,
     NftRemoveLiquidity,
@@ -17,6 +18,14 @@ interface INftLiquidityConnector {
     function removeLiquidity(
         NftRemoveLiquidity memory removeLiquidityParams
     ) external;
+
+    function swapExactTokensForTokens(
+        SwapParams memory swap
+    ) external payable;
+
+    function swapExactETHForTokens(
+        SwapParams memory swap
+    ) external payable;
 
     function fee(
         address pool,

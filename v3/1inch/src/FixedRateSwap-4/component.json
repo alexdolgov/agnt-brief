@@ -1,0 +1,18 @@
+{
+  "component": "FixedRateSwap-4",
+  "main_contract": "FixedRateSwap",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd9c69699c099fd64ec5ab7b34aebe970a564ae96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

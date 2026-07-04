@@ -1,26 +1,31 @@
 {
   "component": "BAMM",
   "main_contract": "BAMM",
-  "source_file_count": 5,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Fixed-Point-Solutions/published-work/blob/master/SmartContractAudits/FPS_B.AMM_Liquity_Assessment_FINAL.pdf",
-    "https://github.com/Fixed-Point-Solutions/published-work/blob/master/SmartContractAudits/FPS_B.AMM_Rari_Assessment_FINAL.pdf"
-  ],
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x00ff66ab8699aafa050ee5ef5041d1503aa0849a",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a30963a461aa4eb4252b5a06525603e49034c41",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0d3abaa7e088c2c82f54b2f47613da438ea8c598",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x12c60b3170fb43e6a8f8ba2d843621c19324329e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xebf8252756268091e523e57d293c0522b8afe66b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

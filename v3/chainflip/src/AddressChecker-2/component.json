@@ -1,0 +1,18 @@
+{
+  "component": "AddressChecker-2",
+  "main_contract": "AddressChecker",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x69c700a0debab9e349dd1f52ed62eb253a3c9892",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

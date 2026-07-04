@@ -256,10 +256,7 @@ library AutopoolDebt {
         );
     }
 
-    function validateRebalanceParams(
-        AutopoolState storage $,
-        ProcessRebalanceParams memory args
-    ) private view {
+    function validateRebalanceParams(AutopoolState storage $, ProcessRebalanceParams memory args) private view {
         address autopool = address(this);
 
         Errors.verifyNotZero(args.rebalanceParams.destinationIn, "destinationIn");
@@ -322,13 +319,14 @@ library AutopoolDebt {
         }
     }
 
-    function ensureDestinationRegistered(
-        address autopool,
-        address dest
-    ) private view {
+    function ensureDestinationRegistered(address autopool, address dest) private view {
         if (dest == address(autopool)) return;
-        if (!(IAutopool(autopool).isDestinationRegistered(dest)
-                    || IAutopool(autopool).isDestinationQueuedForRemoval(dest))) {
+        if (
+            !(
+                IAutopool(autopool).isDestinationRegistered(dest)
+                    || IAutopool(autopool).isDestinationQueuedForRemoval(dest)
+            )
+        ) {
             revert UnregisteredDestination(dest);
         }
     }
@@ -504,15 +502,17 @@ library AutopoolDebt {
 
                     // Round down. We are subtracting this value out of the total so some left
                     // behind just increases the value which is what we want
-                    staleDebt = $.destinationInfo[address(destVault)].cachedMaxDebtValue
-                        .mulDiv(currentShares, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Down);
+                    staleDebt = $.destinationInfo[address(destVault)].cachedMaxDebtValue.mulDiv(
+                        currentShares, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Down
+                    );
                 } else if (purpose == IAutopool.TotalAssetPurpose.Withdraw) {
                     // We use min value so that we value the shares as worth less
                     extremePrice = destVault.getUnderlyerFloorPrice();
                     // Round up. We are subtracting this value out of the total so if we take a little
                     // extra it just decreases the value which is what we want
-                    staleDebt = $.destinationInfo[address(destVault)].cachedMinDebtValue
-                        .mulDiv(currentShares, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up);
+                    staleDebt = $.destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
+                        currentShares, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+                    );
                 } else {
                     revert InvalidTotalAssetPurpose();
                 }
@@ -799,13 +799,12 @@ library AutopoolDebt {
             revert TooFewAssets(assets, actualAssets);
         }
 
-        actualShares = IAutopool(address(this))
-            .convertToShares(
-                Math.max(actualAssets, debtBurned),
-                applicableTotalAssets,
-                IAutopool(address(this)).totalSupply(),
-                Math.Rounding.Up
-            );
+        actualShares = IAutopool(address(this)).convertToShares(
+            Math.max(actualAssets, debtBurned),
+            applicableTotalAssets,
+            IAutopool(address(this)).totalSupply(),
+            Math.Rounding.Up
+        );
 
         // Subtract what's taken out of idle from totalIdle
         // We may also have some increase to account for it we over pulled
@@ -848,15 +847,18 @@ library AutopoolDebt {
 
             // Calculate the totalDebt we'll need to remove based on the shares we're burning
             // We're rounding up here so take care when actually applying to totalDebt
-            debtValueBurned = destinationInfo[address(destVault)].cachedMinDebtValue
-                .mulDiv(dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up);
+            debtValueBurned = destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
+                dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+            );
             info.debtMinDecrease += debtValueBurned;
 
-            info.debtDecrease += destinationInfo[address(destVault)].cachedDebtValue
-                .mulDiv(dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up);
+            info.debtDecrease += destinationInfo[address(destVault)].cachedDebtValue.mulDiv(
+                dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+            );
 
-            uint256 maxDebtBurned = destinationInfo[address(destVault)].cachedMaxDebtValue
-                .mulDiv(dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up);
+            uint256 maxDebtBurned = destinationInfo[address(destVault)].cachedMaxDebtValue.mulDiv(
+                dvSharesToBurn, destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+            );
             info.debtMaxDecrease += maxDebtBurned;
 
             // See if we received a reasonable amount of the base asset back based on the value
@@ -867,8 +869,8 @@ library AutopoolDebt {
                 IRootPriceOracle rootPriceOracle = ISystemRegistry(destVault.getSystemRegistry()).rootPriceOracle();
                 for (uint256 i = 0; i < tokenLen;) {
                     totalValueBurned += amountsBurned[i]
-                    * rootPriceOracle.getPriceInQuote(tokensBurned[i], destVault.baseAsset())
-                    / (10 ** IERC20(tokensBurned[i]).decimals());
+                        * rootPriceOracle.getPriceInQuote(tokensBurned[i], destVault.baseAsset())
+                        / (10 ** IERC20(tokensBurned[i]).decimals());
                     unchecked {
                         ++i;
                     }
@@ -965,8 +967,9 @@ library AutopoolDebt {
             {
                 // Valuing these shares higher, rounding up, will result in us burning less of them
                 // in the event we don't burn all of them. Good thing.
-                uint256 dvSharesValue = $.destinationInfo[address(destVault)].cachedMinDebtValue
-                    .mulDiv(dvSharesToBurn, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up);
+                uint256 dvSharesValue = $.destinationInfo[address(destVault)].cachedMinDebtValue.mulDiv(
+                    dvSharesToBurn, $.destinationInfo[address(destVault)].ownedShares, Math.Rounding.Up
+                );
 
                 // If the dv shares we own are worth more than we need, limit the shares to burn
                 // Any extra we get will be dropped into idle
@@ -1066,10 +1069,9 @@ library AutopoolDebt {
             revert PositivePriceRecoupNotCovered(info.remainingRecoup);
         }
 
-        actualShares = IAutopool(address(this))
-            .convertToShares(
-                debtBurned, applicableTotalAssets, IAutopool(address(this)).totalSupply(), Math.Rounding.Up
-            );
+        actualShares = IAutopool(address(this)).convertToShares(
+            debtBurned, applicableTotalAssets, IAutopool(address(this)).totalSupply(), Math.Rounding.Up
+        );
 
         // Subtract what's taken out of idle from totalIdle
         // We may also have some increase to account for it we over pulled

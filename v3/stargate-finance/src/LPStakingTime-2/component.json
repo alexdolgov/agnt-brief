@@ -1,15 +1,15 @@
 {
   "component": "LPStakingTime-2",
   "main_contract": "LPStakingTime",
-  "source_file_count": 8,
+  "source_file_count": 11,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x4dea9e918c6289a52cd469cac652727b7b412cd2",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c3000b8f475a958b87c73a5cc5780ab763122fc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

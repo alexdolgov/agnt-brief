@@ -2,7 +2,7 @@
   "component": "AlgebraFactory",
   "main_contract": "AlgebraFactory",
   "source_file_count": 31,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,6 +26,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xd265f57c36ac60d3f7931ec5c7396966f0c246a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa0d8885e59bda7a8f6c5d253410582275b05fd6c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

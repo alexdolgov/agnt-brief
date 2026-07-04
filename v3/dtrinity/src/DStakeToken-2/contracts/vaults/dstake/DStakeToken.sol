@@ -1,11 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import {ERC4626Upgradeable} from "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC4626Upgradeable.sol";
-import {ERC20Upgradeable} from "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
-import {AccessControlUpgradeable} from "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts-upgradeable-493/proxy/utils/Initializable.sol";
+import {ERC4626Upgradeable} from "@openzeppelin/contracts-upgradeable-493/token/ERC20/extensions/ERC4626Upgradeable.sol";
+import {ERC20Upgradeable} from "@openzeppelin/contracts-upgradeable-493/token/ERC20/ERC20Upgradeable.sol";
+import {AccessControlUpgradeable} from "@openzeppelin/contracts-upgradeable-493/access/AccessControlUpgradeable.sol";
+import {IERC20} from "@openzeppelin/contracts-5/token/ERC20/IERC20.sol";
+import {IERC20Metadata} from "@openzeppelin/contracts-5/token/ERC20/extensions/IERC20Metadata.sol";
+import {IERC20Upgradeable} from "@openzeppelin/contracts-upgradeable-493/token/ERC20/IERC20Upgradeable.sol";
 import {IDStakeCollateralVault} from "./interfaces/IDStakeCollateralVault.sol";
 import {IDStakeRouter} from "./interfaces/IDStakeRouter.sol";
 import {BasisPointConstants} from "../../common/BasisPointConstants.sol";
@@ -44,7 +46,7 @@ contract DStakeToken is
     }
 
     function initialize(
-        IERC20 _dStable,
+        IERC20Upgradeable _dStable,
         string memory _name,
         string memory _symbol,
         address _initialAdmin,
@@ -90,6 +92,14 @@ contract DStakeToken is
      */
     function maxWithdrawalFeeBps() public view returns (uint256) {
         return MAX_WITHDRAWAL_FEE_BPS;
+    }
+
+    /**
+     * @notice Override decimals to match the underlying dSTABLE asset decimals (6 on Fraxtal, 18 on other networks).
+     * @dev On Fraxtal, dUSD uses 6 decimals, so dSTAKE shares pass through the same decimal configuration.
+     */
+    function decimals() public view virtual override returns (uint8) {
+        return IERC20Metadata(asset()).decimals();
     }
 
     // --- ERC4626 Overrides ---
@@ -160,17 +170,16 @@ contract DStakeToken is
         address receiver,
         address owner
     ) public virtual override returns (uint256 shares) {
-        // Calculate how many shares correspond to the desired NET `assets` amount.
-        shares = previewWithdraw(assets);
+        // Calculate the gross amount needed to achieve the desired net assets after fees
+        uint256 grossAssets = _getGrossAmountRequiredForNet(assets);
+
+        // Calculate how many shares correspond to the gross asset amount
+        shares = super.previewWithdraw(grossAssets);
 
         // Ensure the owner has enough shares to cover the withdrawal (checks in share terms rather than assets).
         if (shares > maxRedeem(owner)) {
             revert ERC4626ExceedsMaxRedeem(shares, maxRedeem(owner));
         }
-
-        // Translate the shares back into the GROSS asset amount that needs to be withdrawn
-        // so that the internal logic can compute the fee only once.
-        uint256 grossAssets = convertToAssets(shares);
 
         _withdraw(_msgSender(), receiver, owner, grossAssets, shares);
         return shares;
@@ -263,6 +272,8 @@ contract DStakeToken is
 
     /**
      * @dev Preview withdraw including withdrawal fee.
+     * @param assets The net amount of assets the user wants to receive
+     * @return shares The number of shares that need to be burned
      */
     function previewWithdraw(
         uint256 assets

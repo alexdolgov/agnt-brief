@@ -39,8 +39,8 @@ abstract contract Admin {
     }
 
     /// @notice Sets a new admin
+    /// @dev Can only be called by the current admin
     /// @param newAdmin Address of the new admin
-    /// @custom:access Restricted to protocol admin.
     function setAdmin(address newAdmin) external onlyAdmin {
         emit AdminSet(admin, newAdmin);
         admin = newAdmin;

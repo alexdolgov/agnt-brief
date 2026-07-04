@@ -1,17 +1,15 @@
 {
   "component": "TSAggregatorTokenTransferProxy-2",
   "main_contract": "TSAggregatorTokenTransferProxy",
-  "source_file_count": 3,
+  "source_file_count": 5,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/THORSwap_Aggregators_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf892fef9da200d9e84c9b0647ecff0f34633abe8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

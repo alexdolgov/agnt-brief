@@ -1,18 +1,34 @@
 {
   "component": "TransparentUpgradeableProxy-5",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 18,
-  "deployment_count": 1,
+  "source_file_count": 8,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb8c1350c2fdbe2f652c6869c5cd48268d0b732a7",
       "is_proxy": true,
-      "implementation_address": "0x028e1f0db25daf4ce8c895215deafbce7a873b24",
+      "implementation_address": "0xbdd9a43790bfe85da12a9efbf0eafd8135538c99",
       "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xbdd9a43790bfe85da12a9efbf0eafd8135538c99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe77edd217c589aba9887edf802e8ebe0a57a0578",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

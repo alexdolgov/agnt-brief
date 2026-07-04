@@ -3,241 +3,152 @@
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@1inch/limit-order-protocol/contracts/interfaces/NotificationReceiver.sol";
-import "@1inch/limit-order-protocol/contracts/interfaces/IOrderMixin.sol";
-import "./helpers/WhitelistChecker.sol";
-import "./interfaces/IWhitelistRegistry.sol";
+import "@1inch/limit-order-protocol-contract/contracts/interfaces/IOrderMixin.sol";
+import "@1inch/solidity-utils/contracts/libraries/SafeERC20.sol";
 import "./interfaces/ISettlement.sol";
+import "./interfaces/IResolver.sol";
+import "./libraries/DynamicSuffix.sol";
+import "./libraries/OrderSaltParser.sol";
+import "./libraries/OrderSuffix.sol";
+import "./FeeBankCharger.sol";
 
-contract Settlement is ISettlement, Ownable, WhitelistChecker {
-    bytes1 private constant _FINALIZE_INTERACTION = 0x01;
-    uint256 private constant _ORDER_TIME_START_MASK     = 0xFFFFFFFF00000000000000000000000000000000000000000000000000000000; // prettier-ignore
-    uint256 private constant _ORDER_DURATION_MASK       = 0x00000000FFFFFFFF000000000000000000000000000000000000000000000000; // prettier-ignore
-    uint256 private constant _ORDER_INITIAL_RATE_MASK   = 0x0000000000000000FFFF00000000000000000000000000000000000000000000; // prettier-ignore
-    uint256 private constant _ORDER_FEE_MASK            = 0x00000000000000000000FFFFFFFF000000000000000000000000000000000000; // prettier-ignore
-    uint256 private constant _ORDER_TIME_START_SHIFT = 224; // orderTimeMask 224-255
-    uint256 private constant _ORDER_DURATION_SHIFT = 192; // durationMask 192-223
-    uint256 private constant _ORDER_INITIAL_RATE_SHIFT = 176; // initialRateMask 176-191
-    uint256 private constant _ORDER_FEE_SHIFT = 144; // orderFee 144-175
+contract Settlement is ISettlement, FeeBankCharger {
+    using SafeERC20 for IERC20;
+    using OrderSaltParser for uint256;
+    using DynamicSuffix for bytes;
+    using AddressLib for Address;
+    using OrderSuffix for OrderLib.Order;
+    using TakingFee for TakingFee.Data;
 
-    uint256 private constant _ORDER_FEE_BASE_POINTS = 1e15;
-    uint16 private constant _BASE_POINTS = 10000; // 100%
-    uint16 private constant _DEFAULT_INITIAL_RATE_BUMP = 1000; // 10%
-    uint32 private constant _DEFAULT_DURATION = 30 minutes;
-
-    error IncorrectOrderStartTime();
+    error AccessDenied();
     error IncorrectCalldataParams();
     error FailedExternalCall();
-    error OnlyFeeBankAccess();
-    error NotEnoughCredit();
+    error ResolverIsNotWhitelisted();
+    error WrongInteractionTarget();
 
-    address public feeBank;
-    mapping(address => uint256) public creditAllowance;
+    bytes1 private constant _FINALIZE_INTERACTION = 0x01;
+    uint256 private constant _ORDER_FEE_BASE_POINTS = 1e15;
+    uint256 private constant _BASE_POINTS = 10_000_000; // 100%
 
-    modifier onlyFeeBank() {
-        if (msg.sender != feeBank) revert OnlyFeeBankAccess();
+    IOrderMixin private immutable _limitOrderProtocol;
+
+    modifier onlyThis(address account) {
+        if (account != address(this)) revert AccessDenied();
         _;
     }
 
-    constructor(IWhitelistRegistry whitelist, address limitOrderProtocol)
-        WhitelistChecker(whitelist, limitOrderProtocol)
-    {} // solhint-disable-line no-empty-blocks
-
-    function matchOrders(
-        IOrderMixin orderMixin,
-        OrderLib.Order calldata order,
-        bytes calldata signature,
-        bytes calldata interaction,
-        uint256 makingAmount,
-        uint256 takingAmount,
-        uint256 thresholdAmount,
-        address target
-    ) external onlyWhitelisted(msg.sender) {
-        _matchOrder(orderMixin, order, msg.sender, signature, interaction, makingAmount, takingAmount, thresholdAmount, target);
+    modifier onlyLimitOrderProtocol {
+        if (msg.sender != address(_limitOrderProtocol)) revert AccessDenied();
+        _;
     }
 
-    function matchOrdersEOA(
-        IOrderMixin orderMixin,
-        OrderLib.Order calldata order,
-        bytes calldata signature,
-        bytes calldata interaction,
-        uint256 makingAmount,
-        uint256 takingAmount,
-        uint256 thresholdAmount,
-        address target
-    ) external onlyWhitelistedEOA {
-        _matchOrder(
-            orderMixin,
-            order,
-            tx.origin, // solhint-disable-line avoid-tx-origin
-            signature,
-            interaction,
-            makingAmount,
-            takingAmount,
-            thresholdAmount,
-            target
-        );
+    constructor(IOrderMixin limitOrderProtocol, IERC20 token)
+        FeeBankCharger(token)
+    {
+        _limitOrderProtocol = limitOrderProtocol;
+    }
+
+    function settleOrders(bytes calldata data) external {
+        _settleOrder(data, msg.sender, 0, new bytes(0));
     }
 
     function fillOrderInteraction(
-        address, /* taker */
+        address taker,
         uint256, /* makingAmount */
         uint256 takingAmount,
         bytes calldata interactiveData
-    ) external returns (uint256) {
-        address interactor = _onlyLimitOrderProtocol();
+    ) external onlyThis(taker) onlyLimitOrderProtocol returns (uint256 result) {
+        (DynamicSuffix.Data calldata suffix, bytes calldata tokensAndAmounts, bytes calldata interaction) = interactiveData.decodeSuffix();
+        IERC20 token = IERC20(suffix.token.get());
+        result = takingAmount * (_BASE_POINTS + suffix.rateBump) / _BASE_POINTS;
+        uint256 takingFee = result * suffix.takingFee.ratio() / TakingFee._TAKING_FEE_BASE;
+
+        bytes memory allTokensAndAmounts = new bytes(tokensAndAmounts.length + 0x40);
+        assembly {
+            let ptr := add(allTokensAndAmounts, 0x20)
+            calldatacopy(ptr, tokensAndAmounts.offset, tokensAndAmounts.length)
+            ptr := add(ptr, tokensAndAmounts.length)
+            mstore(ptr, token)
+            mstore(add(ptr, 0x20), add(result, takingFee))
+        }
+
         if (interactiveData[0] == _FINALIZE_INTERACTION) {
-            (address[] calldata targets, bytes[] calldata calldatas) = _abiDecodeFinal(interactiveData[1:]);
-
-            uint256 length = targets.length;
-            if (length != calldatas.length) revert IncorrectCalldataParams();
-            for (uint256 i = 0; i < length; i++) {
-                // solhint-disable-next-line avoid-low-level-calls
-                (bool success, ) = targets[i].call(calldatas[i]);
-                if (!success) revert FailedExternalCall();
-            }
+            _chargeFee(suffix.resolver.get(), suffix.totalFee);
+            address target = address(bytes20(interaction));
+            bytes calldata data = interaction[20:];
+            IResolver(target).resolveOrders(suffix.resolver.get(), allTokensAndAmounts, data);
         } else {
-            (
-                OrderLib.Order calldata order,
-                bytes calldata signature,
-                bytes calldata interaction,
-                uint256 makingOrderAmount,
-                uint256 takingOrderAmount,
-                uint256 thresholdAmount,
-                address target
-            ) = _abiDecodeIteration(interactiveData[1:]);
-
-            _matchOrder(
-                IOrderMixin(msg.sender),
-                order,
-                interactor,
-                signature,
+            _settleOrder(
                 interaction,
-                makingOrderAmount,
-                takingOrderAmount,
-                thresholdAmount,
-                target
+                suffix.resolver.get(),
+                suffix.totalFee,
+                allTokensAndAmounts
             );
         }
-        uint256 salt = uint256(bytes32(interactiveData[interactiveData.length - 32:]));
-        return (takingAmount * _getFeeRate(salt)) / _BASE_POINTS;
-    }
 
-    function _getFeeRate(uint256 salt) internal view returns (uint256) {
-        uint256 orderTime = (salt & _ORDER_TIME_START_MASK) >> _ORDER_TIME_START_SHIFT;
-        // solhint-disable-next-line not-rely-on-time
-        uint256 currentTimestamp = block.timestamp;
-        if (orderTime > currentTimestamp) revert IncorrectOrderStartTime();
-
-        uint256 duration = (salt & _ORDER_DURATION_MASK) >> _ORDER_DURATION_SHIFT;
-        if (duration == 0) {
-            duration = _DEFAULT_DURATION;
+        if (takingFee > 0) {
+            token.safeTransfer(suffix.takingFee.receiver(), takingFee);
         }
-        orderTime += duration;
-
-        uint256 initialRate = (salt & _ORDER_INITIAL_RATE_MASK) >> _ORDER_INITIAL_RATE_SHIFT;
-        if (initialRate == 0) {
-            initialRate = _DEFAULT_INITIAL_RATE_BUMP;
-        }
-
-        return
-            currentTimestamp < orderTime
-                ? _BASE_POINTS + (initialRate * (orderTime - currentTimestamp)) / duration
-                : _BASE_POINTS;
+        token.forceApprove(address(_limitOrderProtocol), result);
     }
 
-    function _matchOrder(
-        IOrderMixin orderMixin,
-        OrderLib.Order calldata order,
-        address interactor,
-        bytes calldata signature,
-        bytes calldata interaction,
-        uint256 makingAmount,
-        uint256 takingAmount,
-        uint256 thresholdAmount,
-        address target
-    ) private {
-        uint256 orderFee = ((order.salt & _ORDER_FEE_MASK) >> _ORDER_FEE_SHIFT) * _ORDER_FEE_BASE_POINTS;
-        uint256 currentAllowance = creditAllowance[interactor];
-        if (currentAllowance < orderFee) revert NotEnoughCredit();
-        unchecked {
-            creditAllowance[interactor] = currentAllowance - orderFee;
-        }
-        bytes memory patchedInteraction = abi.encodePacked(interaction, order.salt);
-        orderMixin.fillOrderTo(
-            order,
-            signature,
-            patchedInteraction,
-            makingAmount,
-            takingAmount,
-            thresholdAmount,
-            target
-        );
-    }
+    bytes4 private constant _FILL_ORDER_TO_SELECTOR = 0xe5d7bde6; // IOrderMixin.fillOrderTo.selector
+    bytes4 private constant _WRONG_INTERACTION_TARGET_SELECTOR = 0x5b34bf89; // WrongInteractionTarget.selector
 
-    function increaseCreditAllowance(address account, uint256 amount) external onlyFeeBank returns (uint256 allowance) {
-        allowance = creditAllowance[account];
-        allowance += amount;
-        creditAllowance[account] = allowance;
-    }
-
-    function decreaseCreditAllowance(address account, uint256 amount) external onlyFeeBank returns (uint256 allowance) {
-        allowance = creditAllowance[account];
-        allowance -= amount;
-        creditAllowance[account] = allowance;
-    }
-
-    function setFeeBank(address newFeeBank) external onlyOwner {
-        feeBank = newFeeBank;
-    }
-
-    function _abiDecodeFinal(bytes calldata cd)
-        private
-        pure
-        returns (address[] calldata targets, bytes[] calldata calldatas)
-    {
-        // solhint-disable-next-line no-inline-assembly
+    function _settleOrder(bytes calldata data, address resolver, uint256 totalFee, bytes memory tokensAndAmounts) private {
+        OrderLib.Order calldata order;
         assembly {
-            let ptr := add(cd.offset, calldataload(cd.offset))
-            targets.offset := add(ptr, 0x20)
-            targets.length := calldataload(ptr)
-
-            ptr := add(cd.offset, calldataload(add(cd.offset, 0x20)))
-            calldatas.offset := add(ptr, 0x20)
-            calldatas.length := calldataload(ptr)
+            order := add(data.offset, calldataload(data.offset))
         }
-    }
+        if (!order.checkResolver(resolver)) revert ResolverIsNotWhitelisted();
+        TakingFee.Data takingFeeData = order.takingFee();
+        totalFee += order.salt.getFee() * _ORDER_FEE_BASE_POINTS;
 
-    function _abiDecodeIteration(bytes calldata cd)
-        private
-        pure
-        returns (
-            OrderLib.Order calldata order,
-            bytes calldata signature,
-            bytes calldata interaction,
-            uint256 makingOrderAmount,
-            uint256 takingOrderAmount,
-            uint256 thresholdAmount,
-            address target
-        )
-    {
-        // solhint-disable-next-line no-inline-assembly
+        uint256 rateBump = order.rateBump();
+        uint256 suffixLength = DynamicSuffix._STATIC_DATA_SIZE + tokensAndAmounts.length + 0x20;
+        IOrderMixin limitOrderProtocol = _limitOrderProtocol;
+
         assembly {
-            order := add(cd.offset, calldataload(cd.offset))
+            function memcpy(dst, src, len) {
+                pop(staticcall(gas(), 0x4, src, len, dst, len))
+            }
 
-            let ptr := add(cd.offset, calldataload(add(cd.offset, 0x20)))
-            signature.offset := add(ptr, 0x20)
-            signature.length := calldataload(ptr)
+            let interactionLengthOffset := calldataload(add(data.offset, 0x40))
+            let interactionOffset := add(interactionLengthOffset, 0x20)
+            let interactionLength := calldataload(add(data.offset, interactionLengthOffset))
 
-            ptr := add(cd.offset, calldataload(add(cd.offset, 0x40)))
-            interaction.offset := add(ptr, 0x20)
-            interaction.length := calldataload(ptr)
+            { // stack too deep
+                let target := shr(96, calldataload(add(data.offset, interactionOffset)))
+                if or(lt(interactionLength, 20), iszero(eq(target, address()))) {
+                    mstore(0, _WRONG_INTERACTION_TARGET_SELECTOR)
+                    revert(0, 4)
+                }
+            }
 
-            makingOrderAmount := calldataload(add(cd.offset, 0x60))
-            takingOrderAmount := calldataload(add(cd.offset, 0x80))
-            thresholdAmount := calldataload(add(cd.offset, 0xa0))
-            target := calldataload(add(cd.offset, 0xc0))
+            // Copy calldata and patch interaction.length
+            let ptr := mload(0x40)
+            mstore(ptr, _FILL_ORDER_TO_SELECTOR)
+            calldatacopy(add(ptr, 4), data.offset, data.length)
+            mstore(add(add(ptr, interactionLengthOffset), 4), add(interactionLength, suffixLength))
+
+            {  // stack too deep
+                // Append suffix fields
+                let offset := add(add(ptr, interactionOffset), interactionLength)
+                mstore(add(offset, 0x04), totalFee)
+                mstore(add(offset, 0x24), resolver)
+                mstore(add(offset, 0x44), calldataload(add(order, 0x40)))  // takerAsset
+                mstore(add(offset, 0x64), rateBump)
+                mstore(add(offset, 0x84), takingFeeData)
+                let tokensAndAmountsLength := mload(tokensAndAmounts)
+                memcpy(add(offset, 0xa4), add(tokensAndAmounts, 0x20), tokensAndAmountsLength)
+                mstore(add(offset, add(0xa4, tokensAndAmountsLength)), tokensAndAmountsLength)
+            }
+
+            // Call fillOrderTo
+            if iszero(call(gas(), limitOrderProtocol, 0, ptr, add(add(4, suffixLength), data.length), ptr, 0)) {
+                returndatacopy(ptr, 0, returndatasize())
+                revert(ptr, returndatasize())
+            }
         }
     }
 }

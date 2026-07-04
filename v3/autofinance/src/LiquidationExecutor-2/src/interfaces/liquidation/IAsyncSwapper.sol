@@ -43,5 +43,5 @@ interface IAsyncSwapper {
      */
     function swap(
         SwapParams memory swapParams
-    ) external payable returns (uint256 buyTokenAmountReceived);
+    ) external returns (uint256 buyTokenAmountReceived);
 }

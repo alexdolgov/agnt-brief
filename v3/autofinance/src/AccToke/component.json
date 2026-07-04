@@ -1,18 +1,42 @@
 {
   "component": "AccToke",
   "main_contract": "AccToke",
-  "source_file_count": 21,
-  "deployment_count": 1,
+  "source_file_count": 24,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x65e1f22b8b17371e6ea93bcc3d20d5532203506e",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0cb44f5ec4f3b85e40f160c6db7b85bf0e5f907b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2af04ac8a89e800b69e6764d5434b60525eed518",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8a0e614af57772f1cf72063676621f99c0e6e718",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9995450bff590c128a7da19c7aa6afb38e8bed8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

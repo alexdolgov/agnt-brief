@@ -1,0 +1,26 @@
+{
+  "component": "SickleMultisig-3",
+  "main_contract": "SickleMultisig",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x40bd94a5295894732470328332063bcb3b78d34c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xed21763d21c09c6518e200d45ec6ce48c8274314",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

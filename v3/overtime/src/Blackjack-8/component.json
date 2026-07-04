@@ -1,0 +1,26 @@
+{
+  "component": "Blackjack-8",
+  "main_contract": "Blackjack",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe7fea42be1662e53084d82f64e5f55225d975aa0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaeb2b8a262d7118322c43449909eefee07bbbd7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

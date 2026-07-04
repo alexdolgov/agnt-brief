@@ -1,15 +1,23 @@
 {
   "component": "NativePool-2",
   "main_contract": "NativePool",
-  "source_file_count": 65,
-  "deployment_count": 1,
+  "source_file_count": 58,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x1936b310d4ac6d0fcc46a1ff15df0c6f2819c656",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaaf9086e01626db665fe23f5e60e0075e6f8684a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xda9e5fece27837a3e6798778749888f36837ea34",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

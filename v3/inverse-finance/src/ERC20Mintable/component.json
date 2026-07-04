@@ -2,17 +2,33 @@
   "component": "ERC20Mintable",
   "main_contract": "ERC20Mintable",
   "source_file_count": 2,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0x02eaa69646183c069fc2b64f15923f27b9cf3b03",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x80819e03829a71fee5fdca95acbc006e2ebf91f0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8bbd036d018657e454f679e7c4726f7a8ece2773",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9060a61994f700632d16d6d2938ca3c7a1d344cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,18 +1,15 @@
 {
   "component": "MangroveOffer-6",
   "main_contract": "MangroveOffer",
-  "source_file_count": 33,
+  "source_file_count": 48,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/mangrovedao/audits/blob/main/strats/v0/ChainSecurity_Mangrove_Association_ADDMA_Kandel_Strats_audit-db1b0f4516874f622d2a7f5bc7837f7c.pdf",
-    "https://github.com/mangrovedao/audits/blob/main/strats/v1/ChainSecurity_Mangrove_Association_Mangrove_Strategies_audit-caa8fc55eadb26bf40eead2b80af0c99.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x808bc04030bc558c99e6844e877bb22d166a089a",
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x6d5e02a56631bb0b846e0bbd521df4b3d7c6b69a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

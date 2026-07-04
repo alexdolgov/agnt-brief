@@ -1,0 +1,18 @@
+{
+  "component": "AgTokenSideChainMultiBridge-4",
+  "main_contract": "AgTokenSideChainMultiBridge",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x59153e939c5b4721543251ff3049ea04c755373b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

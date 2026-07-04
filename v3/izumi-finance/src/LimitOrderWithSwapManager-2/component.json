@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrderWithSwapManager-2",
+  "main_contract": "LimitOrderWithSwapManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x2db0afd0045f3518c77ec6591a542e326befd3d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

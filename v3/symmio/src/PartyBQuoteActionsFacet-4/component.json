@@ -1,0 +1,18 @@
+{
+  "component": "PartyBQuoteActionsFacet-4",
+  "main_contract": "PartyBQuoteActionsFacet",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaf12970d90fd3d7bf90eda281b7a741fe5fe5f8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

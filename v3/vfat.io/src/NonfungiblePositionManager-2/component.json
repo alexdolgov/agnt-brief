@@ -2,16 +2,24 @@
   "component": "NonfungiblePositionManager-2",
   "main_contract": "NonfungiblePositionManager",
   "source_file_count": 59,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
-      "is_proxy": true,
-      "implementation_address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbcb1314b88811085dca2b7dd99351d41f97ca71e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf6701675c240541bf00d552d090dcaafee77c45a",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     }
   ]

@@ -1,0 +1,26 @@
+{
+  "component": "InvestmentManager-3",
+  "main_contract": "InvestmentManager",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbbf0ab988691db1892adaf7f0ef560ca4c6dd73a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa85cb660d5dc25b6d9e5fd291ad5e5034b1aaed7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

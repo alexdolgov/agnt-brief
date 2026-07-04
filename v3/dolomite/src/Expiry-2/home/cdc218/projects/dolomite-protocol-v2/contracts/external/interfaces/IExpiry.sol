@@ -19,15 +19,15 @@
 pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
-import {Account} from "../../protocol/lib/Account.sol";
-import {Monetary} from "../../protocol/lib/Monetary.sol";
+import { Account } from "../../protocol/lib/Account.sol";
+import { Monetary } from "../../protocol/lib/Monetary.sol";
 
 
 /**
  * @title IExpiry
  * @author Dolomite
  */
-contract IExpiry {
+interface IExpiry {
 
     // ============ Enums ============
 
@@ -50,20 +50,37 @@ contract IExpiry {
         uint32 minTimeDelta;
     }
 
+    // ============ Functions ============
+
+    function g_expiryRampTime() external view returns (uint256);
+
+    function getLiquidationSpreadAdjustedPrices(
+        Account.Info calldata liquidAccount,
+        uint256 heldMarketId,
+        uint256 owedMarketId,
+        uint32 expiry
+    )
+        external
+        view
+        returns (Monetary.Price memory heldPrice, Monetary.Price memory owedPriceAdj);
+
+    /**
+     * @notice Backwards-compatible version of this function for Dolomite Margin V1
+     */
     function getSpreadAdjustedPrices(
         uint256 heldMarketId,
         uint256 owedMarketId,
         uint32 expiry
     )
-        public
+        external
         view
         returns (Monetary.Price memory heldPrice, Monetary.Price memory owedPriceAdj);
 
     function getExpiry(
-        Account.Info memory account,
+        Account.Info calldata account,
         uint256 marketId
     )
-        public
+        external
         view
         returns (uint32);
 

@@ -1,0 +1,18 @@
+{
+  "component": "GLPIsolationModeTokenVaultV2-3",
+  "main_contract": "GLPIsolationModeTokenVaultV2",
+  "source_file_count": 50,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4600e18f69cf1abfb2a4a8b388c635c6a71d256a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

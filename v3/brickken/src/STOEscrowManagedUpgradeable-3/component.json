@@ -1,0 +1,26 @@
+{
+  "component": "STOEscrowManagedUpgradeable-3",
+  "main_contract": "STOEscrowManagedUpgradeable",
+  "source_file_count": 39,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x513f0b5f188d33d6b0efbba0b5f07f37cb7cbdeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6d04327079a19297180004891051de7ac5685e89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

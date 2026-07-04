@@ -2,10 +2,18 @@
   "component": "MasterChefV3KeeperV2",
   "main_contract": "MasterChefV3KeeperV2",
   "source_file_count": 12,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8c2a363f95464184dcb6bec77a1cf19f7fcd1834",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

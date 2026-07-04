@@ -1,6 +1,6 @@
 # bracket-protocol — deployments
 
-253 verified deployment(s) across 149 component(s).
+260 verified deployment(s) across 155 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -77,6 +77,7 @@
 | ethereum | `0x3facaef31766a1a0dfb02d845ccf3e252182f0fa` | FETH_R14 | impl | inactive | no |
 | ethereum | `0x4017e2484f1c6d91eb1c0f29ba8a44506131e64f` | GlobalPool_R26 | impl | inactive | no |
 | ethereum | `0x40d6fc59fe5c3ecb045f9d7fe0bb5e18e7dad0a5` | Governance | impl | live | no |
+| ethereum | `0x4244e4d633e7ea25e8f149d0bfc4e94b878821f3` | PayAsYouGo | impl | inactive | no |
 | ethereum | `0x429ce3e9168f65f9fb938f68d9dacb2b7a180ead` | TransparentUpgradeableProxy | impl | live | no |
 | ethereum | `0x42f91df19b5bbeca0bc1ed488e282090dfeed868` | aMATICb_R4 | impl | inactive | no |
 | ethereum | `0x42fe3bf8c18b87007e8c100daccb7fe4ea07f699` | EthVaultFactory | impl | live | no |
@@ -117,8 +118,10 @@
 | ethereum | `0x5fac6bc8646bb345178d7156153ae58ba3318e8b` | NavUpdater | impl | live | no |
 | ethereum | `0x5fcd8bb2e3dde5809b2106039b741c041bd49e4e` | EthRestakeBlocklistErc20Vault | impl | live | no |
 | ethereum | `0x624d9a92c766981c2e84020f344694cfd5db2fce` | GlobalPool_R38 | impl | inactive | no |
+| ethereum | `0x63bcfd4b1208582239c530308fad317422250eaa` | PayAsYouGo | impl | inactive | no |
 | ethereum | `0x661011d6a33832d5e77b59ea445edea474c587d8` | AccessControlDefaultAdminRulesUpgradeable | proxy | live | no |
 | ethereum | `0x66bea595aefd5a65799a920974b377ed20071118` | AETHF | impl | inactive | no |
+| ethereum | `0x673ef47717642eb85eda31a8102dcf9bde704568` | AnkrProtocol | impl | inactive | no |
 | ethereum | `0x67561ca10e0c03600fc78bb7ba19ec32886aca9b` | RewardSplitter | impl | inactive | no |
 | ethereum | `0x6913030b113f368b511d1ef13b53e817c6071f0a` | PolygonPool_R2 | impl | inactive | no |
 | ethereum | `0x6a2835087c6809902a2f39b86fe64ef5dacc31e1` | EthRestakeVaultFactory | impl | live | no |
@@ -145,6 +148,7 @@
 | ethereum | `0x7df5032aaf311a3d3747129ba39e6da68d35e9e1` | GlobalPool_R37 | impl | inactive | no |
 | ethereum | `0x7e5198df09fed891e7aecd623cd2231443ceb5d5` | EthErc20Vault | impl | inactive | no |
 | ethereum | `0x7f9e9f51ac2ac8f1186ed1ae7264903d2122c770` | aMATICb_R1 | impl | inactive | no |
+| ethereum | `0x7fa0edb4f1cef0011e2c219182fb4c30f3c012dc` | PayAsYouGo-2 | impl | inactive | no |
 | ethereum | `0x8023518b2192fb5384dadc596765b3dd1cdfe471` | PriceFeed | impl | inactive | no |
 | ethereum | `0x807305c086a99cbdbff07cb4256ce556d9d6f0af` | EthRestakeVaultFactory | impl | live | no |
 | ethereum | `0x80aa1236b107ef19045f25d9b3c830ff78a5331e` | AccessControlDefaultAdminRulesUpgradeable | impl | live | no |
@@ -186,6 +190,7 @@
 | ethereum | `0xac0f906e433d58fa868f936e8a43230473652885` | ERC1967Proxy-3 | proxy | live | no |
 | ethereum | `0xac2e0b6db96f345ee19fda8a9be5907e996f335c` | FETH_R10 | impl | inactive | no |
 | ethereum | `0xac9125646185cb58e86e77d5f402efa3fafafc84` | EthValidatorsChecker | impl | inactive | no |
+| ethereum | `0xae4bff320442404ade9ad181521a0f4af4f1e0f4` | AnkrProtocol | impl | inactive | no |
 | ethereum | `0xaef614270f356d20f9fc45910b34ef71383cfeb7` | aMATICb | impl | inactive | no |
 | ethereum | `0xaf84834407090c3b159f4f78d2d51bba3175a7f2` | PolygonPool_R1 | impl | inactive | no |
 | ethereum | `0xb1bfaf188a6ce50f21486fcbd77c1a8e908197fb` | EthPrivVault | impl | inactive | no |
@@ -215,17 +220,19 @@
 | ethereum | `0xcc4e08a5bfa887621ad68826a0d5913d7a2cb392` | ProxyAdmin | impl | live | no |
 | ethereum | `0xcd3a6c3e9e823e7c13fb0ee71f9360bacdd1a42e` | Config | impl | live | no |
 | ethereum | `0xcdc3a8374532ddb762c76604f30f6a9fdd29082c` | BracketVaultLens | impl | live | no |
+| ethereum | `0xcdcdf4f8df7e09f9ec6f7029291df58d51a2f251` | AnkrProtocol-2 | impl | inactive | no |
 | ethereum | `0xcfd4b4bc15c8bf0fd820b0d4558c725727b3ce89` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0xd01ef7c0a5d8c432fc2d1a85c66cf2327362e5c6` | AdminUpgradeabilityProxy-4 | proxy | live | no |
 | ethereum | `0xd19e4b1d680a6aa672b08ebf483381bc0c9c8478` | EthBlocklistVault | impl | inactive | no |
 | ethereum | `0xd201a7df1d0f7e066efdd448cbc8433f0b88c3e9` | GlobalPool_R39 | impl | inactive | no |
 | ethereum | `0xd2468daaeb6f2d4b354dbd74593f4ac8c58f2cba` | EthVaultFactory | impl | live | no |
 | ethereum | `0xd4502103dd36c5595dccedf33e7308c61428ce3b` | aMATICb_R6 | impl | inactive | no |
-| ethereum | `0xd4f5ff3052c9bfdb35e3265780c4be1d6f7c06d1` | StakingConfigProxy | impl | live | no |
+| ethereum | `0xd4f5ff3052c9bfdb35e3265780c4be1d6f7c06d1` | StakingConfigProxy-2 | impl | live | no |
 | ethereum | `0xd6d4fe092bf124438eff841084ecedc575c44ebd` | CrossChainBridge | impl | inactive | no |
 | ethereum | `0xdada5a8e3703b1e3ea2bae5ab704627eb2659fcc` | EthVaultFactory | impl | live | no |
 | ethereum | `0xdecb606ee9140f229df78f9e40041ead61610f8f` | EthVault | impl | inactive | no |
 | ethereum | `0xe00512e3f38ec4f4e79152474da215506b5b1902` | RewardSplitter | impl | inactive | no |
+| ethereum | `0xe01f4fa6a7dab6afa7e60666d4fc6759e0d33a57` | EarnConfig | impl | inactive | no |
 | ethereum | `0xe259a9d1fc5b0d17c07e9c5cc8fd91dbe71ef796` | aMATICc_R1 | impl | inactive | no |
 | ethereum | `0xe4f104694bec6d9b1745ea0c945826d3132d145a` | BrktETH | impl | live | yes |
 | ethereum | `0xe7ac5115eeeedd1dd57649a4c7077a0f9d10b795` | CrossChainBridge_R2 | proxy | live | no |
@@ -257,14 +264,3 @@
 | ethereum | `0xfe7083e5f1002471cf6fcb19b17770625a44b521` | OsTokenVaultController | impl | inactive | no |
 | ethereum | `0xfe7aadfad823b1c90480031e9046a085ef2c3788` | NavUpdater | proxy | live | no |
 | ethereum | `0xff0650ba2387843f567e6962f1b7c96dc99362ca` | EthVaultFactory | impl | live | no |
-
-## Source unavailable (7)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x4244e4d633e7ea25e8f149d0bfc4e94b878821f3`
-- ethereum `0x63bcfd4b1208582239c530308fad317422250eaa`
-- ethereum `0x673ef47717642eb85eda31a8102dcf9bde704568`
-- ethereum `0x7fa0edb4f1cef0011e2c219182fb4c30f3c012dc`
-- ethereum `0xae4bff320442404ade9ad181521a0f4af4f1e0f4`
-- ethereum `0xcdcdf4f8df7e09f9ec6f7029291df58d51a2f251`
-- ethereum `0xe01f4fa6a7dab6afa7e60666d4fc6759e0d33a57`

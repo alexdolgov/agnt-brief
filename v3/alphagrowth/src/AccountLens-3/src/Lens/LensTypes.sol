@@ -49,88 +49,19 @@ struct VaultAccountInfo {
 struct AccountLiquidityInfo {
     bool queryFailure;
     bytes queryFailureReason;
-    address account;
-    address vault;
-    address unitOfAccount;
     int256 timeToLiquidation;
-    uint256 liabilityValueBorrowing;
-    uint256 liabilityValueLiquidation;
+    uint256 liabilityValue;
     uint256 collateralValueBorrowing;
     uint256 collateralValueLiquidation;
     uint256 collateralValueRaw;
-    address[] collaterals;
-    uint256[] collateralValuesBorrowing;
-    uint256[] collateralValuesLiquidation;
-    uint256[] collateralValuesRaw;
+    CollateralLiquidityInfo[] collateralLiquidityBorrowingInfo;
+    CollateralLiquidityInfo[] collateralLiquidityLiquidationInfo;
+    CollateralLiquidityInfo[] collateralLiquidityRawInfo;
 }
 
-struct VaultInfoERC4626 {
-    uint256 timestamp;
-    address vault;
-    string vaultName;
-    string vaultSymbol;
-    uint256 vaultDecimals;
-    address asset;
-    string assetName;
-    string assetSymbol;
-    uint256 assetDecimals;
-    uint256 totalShares;
-    uint256 totalAssets;
-    bool isEVault;
-}
-
-struct VaultInfoStatic {
-    uint256 timestamp;
-    address vault;
-    string vaultName;
-    string vaultSymbol;
-    uint256 vaultDecimals;
-    address asset;
-    string assetName;
-    string assetSymbol;
-    uint256 assetDecimals;
-    address unitOfAccount;
-    string unitOfAccountName;
-    string unitOfAccountSymbol;
-    uint256 unitOfAccountDecimals;
-    address dToken;
-    address oracle;
-    address evc;
-    address protocolConfig;
-    address balanceTracker;
-    address permit2;
-    address creator;
-}
-
-struct VaultInfoDynamic {
-    uint256 timestamp;
-    address vault;
-    uint256 totalShares;
-    uint256 totalCash;
-    uint256 totalBorrowed;
-    uint256 totalAssets;
-    uint256 accumulatedFeesShares;
-    uint256 accumulatedFeesAssets;
-    address governorFeeReceiver;
-    address protocolFeeReceiver;
-    uint256 protocolFeeShare;
-    uint256 interestFee;
-    uint256 hookedOperations;
-    uint256 configFlags;
-    uint256 supplyCap;
-    uint256 borrowCap;
-    uint256 maxLiquidationDiscount;
-    uint256 liquidationCoolOffTime;
-    address interestRateModel;
-    address hookTarget;
-    address governorAdmin;
-    VaultInterestRateModelInfo irmInfo;
-    LTVInfo[] collateralLTVInfo;
-    AssetPriceInfo liabilityPriceInfo;
-    AssetPriceInfo[] collateralPriceInfo;
-    OracleDetailedInfo oracleInfo;
-    AssetPriceInfo backupAssetPriceInfo;
-    OracleDetailedInfo backupAssetOracleInfo;
+struct CollateralLiquidityInfo {
+    address collateral;
+    uint256 collateralValue;
 }
 
 struct VaultInfoFull {
@@ -217,16 +148,14 @@ struct InterestRateInfo {
     uint256 cash;
     uint256 borrows;
     uint256 borrowSPY;
+    uint256 supplySPY;
     uint256 borrowAPY;
     uint256 supplyAPY;
 }
 
 enum InterestRateModelType {
     UNKNOWN,
-    KINK,
-    ADAPTIVE_CURVE,
-    KINKY,
-    FIXED_CYCLICAL_BINARY
+    KINK
 }
 
 struct InterestRateModelDetailedInfo {
@@ -240,31 +169,6 @@ struct KinkIRMInfo {
     uint256 slope1;
     uint256 slope2;
     uint256 kink;
-}
-
-struct AdaptiveCurveIRMInfo {
-    int256 targetUtilization;
-    int256 initialRateAtTarget;
-    int256 minRateAtTarget;
-    int256 maxRateAtTarget;
-    int256 curveSteepness;
-    int256 adjustmentSpeed;
-}
-
-struct KinkyIRMInfo {
-    uint256 baseRate;
-    uint256 slope;
-    uint256 shape;
-    uint256 kink;
-    uint256 cutoff;
-}
-
-struct FixedCyclicalBinaryIRMInfo {
-    uint256 primaryRate;
-    uint256 secondaryRate;
-    uint256 primaryDuration;
-    uint256 secondaryDuration;
-    uint256 startTimestamp;
 }
 
 struct AccountRewardInfo {
@@ -332,14 +236,6 @@ struct ChainlinkOracleInfo {
     uint256 maxStaleness;
 }
 
-struct ChainlinkInfrequentOracleInfo {
-    address base;
-    address quote;
-    address feed;
-    string feedDescription;
-    uint256 maxStaleness;
-}
-
 struct ChronicleOracleInfo {
     address base;
     address quote;
@@ -396,39 +292,6 @@ struct RateProviderOracleInfo {
     address rateProvider;
 }
 
-struct OndoOracleInfo {
-    address base;
-    address quote;
-    address rwaOracle;
-}
-
-struct PendleProviderOracleInfo {
-    address base;
-    address quote;
-    address pendleMarket;
-    uint32 twapWindow;
-}
-
-struct PendleUniversalOracleInfo {
-    address base;
-    address quote;
-    address pendleMarket;
-    uint32 twapWindow;
-}
-
-struct CurveEMAOracleInfo {
-    address base;
-    address quote;
-    address pool;
-    uint256 priceOracleIndex;
-}
-
-struct SwaapSafeguardProviderOracleInfo {
-    address base;
-    address quote;
-    bytes32 poolId;
-}
-
 struct CrossAdapterInfo {
     address base;
     address cross;
@@ -451,32 +314,45 @@ struct EulerEarnVaultInfoFull {
     uint256 assetDecimals;
     uint256 totalShares;
     uint256 totalAssets;
-    uint256 lostAssets;
-    uint256 availableAssets;
-    uint256 timelock;
+    uint256 totalAssetsDeposited;
+    uint256 totalAssetsAllocated;
+    uint256 totalAssetsAllocatable;
+    uint256 totalAllocationPoints;
+    uint256 interestAccrued;
+    uint256 lastInterestUpdate;
+    uint256 interestSmearEnd;
+    uint256 interestLeft;
+    uint256 lastHarvestTimestamp;
     uint256 performanceFee;
     address feeReceiver;
-    address owner;
-    address creator;
-    address curator;
-    address guardian;
+    uint256 hookedOperations;
+    address hookTarget;
     address evc;
+    address balanceTracker;
     address permit2;
-    uint256 pendingTimelock;
-    uint256 pendingTimelockValidAt;
-    address pendingGuardian;
-    uint256 pendingGuardianValidAt;
-    address[] supplyQueue;
+    bool isHarvestCoolDownCheckOn;
+    EulerEarnVaultAccessControlInfo accessControlInfo;
     EulerEarnVaultStrategyInfo[] strategies;
+    AssetPriceInfo backupAssetPriceInfo;
+    OracleDetailedInfo backupAssetOracleInfo;
+}
+
+struct EulerEarnVaultAccessControlInfo {
+    address[] defaultAdmins;
+    address[] guardianAdmins;
+    address[] strategyOperatorAdmins;
+    address[] yieldAggregatorManagerAdmins;
+    address[] withdrawalQueueManagerAdmins;
+    address[] guardians;
+    address[] strategyOperators;
+    address[] yieldAggregatorManagers;
+    address[] withdrawalQueueManagers;
 }
 
 struct EulerEarnVaultStrategyInfo {
     address strategy;
-    uint256 allocatedAssets;
-    uint256 availableAssets;
-    uint256 currentAllocationCap;
-    uint256 pendingAllocationCap;
-    uint256 pendingAllocationCapValidAt;
-    uint256 removableAt;
-    VaultInfoERC4626 info;
+    uint256 assetsAllocated;
+    uint256 allocationPoints;
+    uint256 allocationCap;
+    bool isInEmergency;
 }

@@ -44,7 +44,7 @@ contract IAutoTrader {
      * @param  takerAccount    The account requesting the trade
      * @param  oldInputPar     The old principal amount for the makerAccount for the inputMarketId
      * @param  newInputPar     The new principal amount for the makerAccount for the inputMarketId
-     * @param  inputWei        The change in token amount for the makerAccount for the inputMarketId
+     * @param  inputDeltaWei   The change in token amount for the makerAccount for the inputMarketId
      * @param  data            Arbitrary data passed in by the trader
      * @return                 The AssetAmount for the makerAccount for the outputMarketId
      */
@@ -55,7 +55,7 @@ contract IAutoTrader {
         Account.Info memory takerAccount,
         Types.Par memory oldInputPar,
         Types.Par memory newInputPar,
-        Types.Wei memory inputWei,
+        Types.Wei memory inputDeltaWei,
         bytes memory data
     )
         public

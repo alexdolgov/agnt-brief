@@ -1,15 +1,15 @@
 {
   "component": "MWethDelegate",
   "main_contract": "MWethDelegate",
-  "source_file_count": 21,
+  "source_file_count": 19,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x599d4a1538d686814ee11b331eacbba166d7c41a",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x66fb793e75053a07301c7c21a3cf77616123227b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

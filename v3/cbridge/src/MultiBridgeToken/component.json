@@ -2,7 +2,7 @@
   "component": "MultiBridgeToken",
   "main_contract": "MultiBridgeToken",
   "source_file_count": 9,
-  "deployment_count": 24,
+  "deployment_count": 21,
   "audited": true,
   "audits_covering": [
     "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
@@ -13,14 +13,6 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0x06fda0758c17416726f77cb11305eac94c074ec0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x07145ad7c7351c6fe86b6b841fc9bed74eb475a7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -116,14 +108,6 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x81421a49c2bb3f2f77a666f0686b4db47a26360c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
       "address": "0x904d0221641232fb40f99dc92c1d59c35698ff0b",
       "is_proxy": false,
       "implementation_address": null,
@@ -173,14 +157,6 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xea09cbb3f286f7c1a377c4db825c1cefad2476ae",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf234437596b9c90231181a2e80c668c4e5408108",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

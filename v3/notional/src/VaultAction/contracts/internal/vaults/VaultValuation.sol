@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -116,8 +116,8 @@ library VaultValuation {
         address account,
         uint256 vaultShares,
         int256 debtUnderlying
-    ) internal returns (int256 collateralRatio, int256 vaultShareValue) {
-        vaultShareValue = getPrimaryUnderlyingValueOfShare(vaultState, vaultConfig, account, vaultShares);
+    ) internal returns (int256 collateralRatio,  PrimeRate[2] memory primeRates) {
+        int256 vaultShareValue = getPrimaryUnderlyingValueOfShare(vaultState, vaultConfig, account, vaultShares);
 
         int256 debtOutstanding = getPresentValue(
             vaultConfig.primeRate,
@@ -128,7 +128,7 @@ library VaultValuation {
         );
 
         if (vaultConfig.hasSecondaryBorrows()) {
-            PrimeRate[2] memory primeRates = VaultSecondaryBorrow.getSecondaryPrimeRateStateful(vaultConfig);
+            primeRates = VaultSecondaryBorrow.getSecondaryPrimeRateStateful(vaultConfig);
             (int256 secondaryDebtInPrimary, int256 excessCashInPrimary, /* */, /* */, /* */) =
                 VaultSecondaryBorrow.getSecondaryBorrowCollateralFactors(vaultConfig, primeRates, vaultState, account);
             require(excessCashInPrimary == 0); // dev: no excess cash
@@ -268,8 +268,9 @@ library VaultValuation {
             // value). Resolving this would require additional complexity for not much gain. An
             // account within 20% of the minBorrowSize in a vault that has fCash discounting enabled
             // may experience a full liquidation as a result.
+            int256 postLiquidationDebtOutstanding = h.netDebtOutstanding[currencyIndex].neg().sub(depositUnderlyingInternal);
             require(
-                h.netDebtOutstanding[currencyIndex].sub(depositUnderlyingInternal) < minBorrowSize,
+                postLiquidationDebtOutstanding == 0 || minBorrowSize <= postLiquidationDebtOutstanding,
                 "Must Liquidate All Debt"
             );
         } else {

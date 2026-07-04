@@ -1,0 +1,18 @@
+{
+  "component": "WrappedTokenGatewayV3-3",
+  "main_contract": "WrappedTokenGatewayV3",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x598502c7a3f5445d76b6f9f5020e15cdfe484df5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

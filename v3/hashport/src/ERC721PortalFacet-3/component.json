@@ -1,0 +1,26 @@
+{
+  "component": "ERC721PortalFacet-3",
+  "main_contract": "ERC721PortalFacet",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc76c7c5e795bd853ffb5598c2aa2223f301cb737",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1c667fcf32dd76722b174aa6dd3f4a9ecaaba0ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

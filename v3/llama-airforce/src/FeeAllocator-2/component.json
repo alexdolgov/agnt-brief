@@ -1,0 +1,18 @@
+{
+  "component": "FeeAllocator-2",
+  "main_contract": "FeeAllocator",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x874942096ed129c1a7c99de6c7aa6fa0b679f322",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

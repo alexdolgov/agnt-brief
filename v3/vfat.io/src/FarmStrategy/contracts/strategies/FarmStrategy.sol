@@ -518,8 +518,8 @@ contract FarmStrategy is StrategyModule, IAutomation, FarmStrategyEvents {
         address[] calldata sweepTokens,
         bytes4 fee
     ) private {
-        address[] memory targets = new address[](4);
-        bytes[] memory data = new bytes[](4);
+        address[] memory targets = new address[](1);
+        bytes[] memory data = new bytes[](1);
 
         targets[0] = address(transferLib);
         data[0] = abi.encodeCall(
@@ -527,11 +527,17 @@ contract FarmStrategy is StrategyModule, IAutomation, FarmStrategyEvents {
             (params.tokensIn, params.amountsIn, strategyAddress, fee)
         );
 
-        targets[1] = address(zapLib);
-        data[1] = abi.encodeCall(IZapLib.zapIn, (params.zap));
+        // Transfer first to keep further actions non-payable
+        sickle.multicall{ value: msg.value }(targets, data);
 
-        targets[2] = connectorRegistry.connectorOf(params.farm.stakingContract);
-        data[2] = abi.encodeCall(
+        targets = new address[](3);
+        data = new bytes[](3);
+
+        targets[0] = address(zapLib);
+        data[0] = abi.encodeCall(IZapLib.zapIn, (params.zap));
+
+        targets[1] = connectorRegistry.connectorOf(params.farm.stakingContract);
+        data[1] = abi.encodeCall(
             IFarmConnector.deposit,
             (
                 params.farm,
@@ -540,11 +546,11 @@ contract FarmStrategy is StrategyModule, IAutomation, FarmStrategyEvents {
             )
         );
 
-        targets[3] = address(transferLib);
-        data[3] =
+        targets[2] = address(transferLib);
+        data[2] =
             abi.encodeCall(ITransferLib.transferTokensToUser, (sweepTokens));
 
-        sickle.multicall{ value: msg.value }(targets, data);
+        sickle.multicall(targets, data);
     }
 
     function _harvest(

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedDLendConversionAdapter-3",
+  "main_contract": "WrappedDLendConversionAdapter",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xced414797155d79fce11bf3d11f36b1b31860e08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

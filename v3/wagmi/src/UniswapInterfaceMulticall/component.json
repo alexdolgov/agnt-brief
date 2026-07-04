@@ -2,10 +2,18 @@
   "component": "UniswapInterfaceMulticall",
   "main_contract": "UniswapInterfaceMulticall",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdf351ec893b8c018fa12c1f7013c67bd31d1afe5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "chain-1088",
       "chain_id": 1088,

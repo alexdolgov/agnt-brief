@@ -1,0 +1,18 @@
+{
+  "component": "Sentinel-5",
+  "main_contract": "Sentinel",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x23c748fef17518b8de55065338d7fa20327472eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

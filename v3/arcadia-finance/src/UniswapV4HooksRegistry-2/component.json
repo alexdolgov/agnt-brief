@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV4HooksRegistry-2",
+  "main_contract": "UniswapV4HooksRegistry",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x8b0fd5352cae4e7c86632ca791229d132fef5d3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

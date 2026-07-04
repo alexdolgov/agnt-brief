@@ -1,0 +1,18 @@
+{
+  "component": "FeeLibV1-3",
+  "main_contract": "FeeLibV1",
+  "source_file_count": 151,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xde48600aa18ae707f5d57e0faafec7c118abaeb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

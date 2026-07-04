@@ -1,0 +1,74 @@
+{
+  "component": "Socket-2",
+  "main_contract": "Socket",
+  "source_file_count": 64,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2344621d5aa6e784e8c6f4c54b0b29dd9c3ad4b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x321767762d66a69a8ccfe07d1b9805d314707b59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc94bf98cfe43d8c891d4ee43a47435be361e5d15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdd975f8d5b2f20d574e6777001e236a05f4ae3c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1d3695c4d4eec10b813f0c3b97a7fbfb5f5eaa49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3603634999bfc14187544700e24cb0bd2e33eb55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb864fbaf80d166a275c6af7c692304436f10db22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbf05724bfdd0e8abb85c8d17bf7325cea2cbb5d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

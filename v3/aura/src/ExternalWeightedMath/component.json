@@ -1,18 +1,18 @@
 {
   "component": "ExternalWeightedMath",
   "main_contract": "ExternalWeightedMath",
-  "source_file_count": 18,
+  "source_file_count": 16,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7920bfa1b2041911b354747ca7a6cdd2dfc50cfd",
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xa8920455934da4d853faac1f94fe7bef72943ef1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

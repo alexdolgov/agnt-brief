@@ -2,10 +2,34 @@
   "component": "SportsAMMV2DataUtils",
   "main_contract": "SportsAMMV2DataUtils",
   "source_file_count": 13,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfc3b52a1a1dcb184c9a17d14f3f656039be096f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd71841fcf6f5862ceb69d8432800d0a02b1d3cb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe4908e43df228b3b94a7190ebf485e47059dcdfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

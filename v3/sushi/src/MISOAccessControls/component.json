@@ -1,15 +1,15 @@
 {
   "component": "MISOAccessControls",
   "main_contract": "MISOAccessControls",
-  "source_file_count": 7,
+  "source_file_count": 5,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x6b2a3ff504798886862ca5ce501e080947a506a2",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc35dadb65012ec5796536bd9864ed8773abc74c4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

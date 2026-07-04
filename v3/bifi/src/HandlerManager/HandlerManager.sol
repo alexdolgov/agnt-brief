@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-06
-*/
-
 // File: contracts/interfaces/ILiquidationManager.sol
 pragma solidity 0.6.12;
 
@@ -483,9 +479,6 @@ contract ManagerSlot is ManagerErrors {
 }
 
 // File: contracts/context/BlockContext.sol
-
-
-
 pragma solidity 0.6.12;
 
 /**
@@ -659,7 +652,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 		return _rewardTransfer(msg.sender, delta.mul(dataStorageInstance.getInterestUpdateRewardPerblock()));
 	}
 
-	/**
+ /**
 	* @dev (Update operation) update the rewards parameters.
 	* @param userAddr The address of operator
 	* @return Whether or not the operation succeed
@@ -675,8 +668,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 	}
 
   /**
-	* @dev (Update operation) update the rewards parameters (by using alpha- and
-	  beta-score).
+	* @dev (Update operation) update the rewards parameters (by using alpha- and beta-score).
 	* @param userAddr The address of the operator
 	* @return Whether or not this process succeed
 	*/
@@ -729,7 +721,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
   /**
 	* @dev Update rewards paramters of token handlers.
 	* @param userAddr The address of operator
-	* @return true (TODO: validate results)
+	* @return true
 	*/
 	function _calcRewardParams(address payable userAddr) internal returns (bool)
 	{
@@ -796,7 +788,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 		return true;
 	}
 
-  	/**
+  /**
 	* @dev Epilogue of _determineRewardParams for code-size savings
 	* @param _dataStorage interface of Manager Data Storage
 	* @param userAddr User Address for Reward token transfer
@@ -804,7 +796,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 	* @param _globalRewardPerBlock Reward per block
 	* @param _globalRewardDecrement Rewards decrement for a block
 	* @param _globalRewardTotalAmount Total amount of rewards
-	* @return true (TODO: validate results)
+	* @return true
 	*/
 	function _epilogueOfDetermineRewardParams(
 		IManagerDataStorage _dataStorage,
@@ -901,7 +893,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 		return claimAmountSum;
 	}
 
-	/* TODO: comment */
+
 	function claimHandlerReward(uint256 handlerID, address payable userAddr) external returns (uint256) {
 		uint256 amount = _claimHandlerRewardAmount(handlerID, userAddr);
 
@@ -910,7 +902,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 		return amount;
 	}
 
-	/* TODO: comment */
+
 	function _claimHandlerRewardAmount(uint256 handlerID, address payable userAddr) internal returns (uint256) {
 		bytes memory data;
 
@@ -936,7 +928,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 	/**
 	* @dev Transfer reward tokens to owner (for administration)
 	* @param _amount The amount of the reward token
-	* @return true (TODO: validate results)
+	* @return true
 	*/
 	function ownerRewardTransfer(uint256 _amount) onlyOwner external returns (bool)
 	{
@@ -947,7 +939,7 @@ contract HandlerManager is ManagerSlot, BlockContext {
 	* @dev Transfer reward tokens to a user
 	* @param userAddr The address of recipient
 	* @param _amount The amount of the reward token
-	* @return true (TODO: validate results)
+	* @return true
 	*/
 	function _rewardTransfer(address payable userAddr, uint256 _amount) internal returns (bool)
 	{

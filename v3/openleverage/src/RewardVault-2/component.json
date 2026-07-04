@@ -1,0 +1,20 @@
+{
+  "component": "RewardVault-2",
+  "main_contract": "RewardVault",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/OpenLeverageDev/ole-v2-contracts/blob/main/audits/PeckShield-Audit-Report-OLEv2-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3d11015d9044cabbb2504448e37f20d0d56e36f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

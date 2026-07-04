@@ -1,0 +1,18 @@
+{
+  "component": "UsdPlusRedeemer-13",
+  "main_contract": "UsdPlusRedeemer",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc7f79b0fcda6866d63d16b669d1670392942be1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

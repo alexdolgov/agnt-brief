@@ -1,0 +1,18 @@
+{
+  "component": "ERC20V3Factory-6",
+  "main_contract": "ERC20V3Factory",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x00971e21955f1bb8021a5ef2546bec2ff896ee42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

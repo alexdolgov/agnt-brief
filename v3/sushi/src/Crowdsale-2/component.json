@@ -1,0 +1,18 @@
+{
+  "component": "Crowdsale-2",
+  "main_contract": "Crowdsale",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x120140d0c1ebc938befc84840575ecdc5fe55afe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

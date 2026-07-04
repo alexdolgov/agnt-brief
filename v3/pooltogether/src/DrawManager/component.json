@@ -1,23 +1,31 @@
 {
   "component": "DrawManager",
   "main_contract": "DrawManager",
-  "source_file_count": 48,
-  "deployment_count": 2,
+  "source_file_count": 44,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0aa9e2e0b37fb54c19e45cb246b17b0e700ab98d",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7eed7444de862c4f79c5820ff867fa3a82641857",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x98305eb9a29d45ec93ce44ba02b315b631c675a7",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8a2782bedc79982ebfa3b68b315a2ee40daf6ab0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc00146957ff55fad7d27deb69ff95d79fdcd37e6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

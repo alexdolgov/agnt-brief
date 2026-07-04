@@ -1,0 +1,18 @@
+{
+  "component": "GuruMultiRewardFarmland-3",
+  "main_contract": "GuruMultiRewardFarmland",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xa0edd976462104805f939e8771f7e3e7450350e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

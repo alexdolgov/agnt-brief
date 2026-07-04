@@ -1,0 +1,34 @@
+{
+  "component": "fixedVault-8",
+  "main_contract": "fixedVault",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7198ff382b5798dab7dc72a23c1fec9dc091893b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x86f78d3cbca0636817ad9e27a44996c738ec4932",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xa478e708a27853848c6bc979668fe6225fee46fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

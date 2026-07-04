@@ -1,0 +1,18 @@
+{
+  "component": "EnsoHandler-5",
+  "main_contract": "EnsoHandler",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc1d56035f5a9a267b61c6e80e8a69119a893e17c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

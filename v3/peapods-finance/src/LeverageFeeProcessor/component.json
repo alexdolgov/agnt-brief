@@ -1,15 +1,31 @@
 {
   "component": "LeverageFeeProcessor",
   "main_contract": "LeverageFeeProcessor",
-  "source_file_count": 12,
-  "deployment_count": 1,
+  "source_file_count": 10,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x9698b93775907afa0968e9b121744f4641097ae9",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff673afd42f850fcf2f6883bc2a4d7d34fc8ae2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xedd48a71f739b5ed0776d1d604a35a5872d55544",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x97bbe65e0f1adf91c5735662ceeef1462abeccb3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

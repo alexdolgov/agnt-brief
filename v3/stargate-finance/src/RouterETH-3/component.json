@@ -1,0 +1,21 @@
+{
+  "component": "RouterETH-3",
+  "main_contract": "RouterETH",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26%20RouterETH%20Audit%201.1%20(17th%20June%202022)%20-%20Ackee.pdf",
+    "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26RouterETH%20Audit%201.0%20(17th%20June%202022)%20-%20Ackee.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

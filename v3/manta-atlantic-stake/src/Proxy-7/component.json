@@ -1,0 +1,26 @@
+{
+  "component": "Proxy-7",
+  "main_contract": "Proxy",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x4200000000000000000000000000000000000017",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x4200000000000000000000000000000000000020",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

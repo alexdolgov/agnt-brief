@@ -2,10 +2,34 @@
   "component": "MultiPath",
   "main_contract": "MultiPath",
   "source_file_count": 14,
-  "deployment_count": 2,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb41ec6e014e2ad12ae8514216eab2592b74f19e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x45d70baca3fbf6d3c518c9a9d7cea87b042322e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7719cc060a3348229db764c9464b7738e4172e19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

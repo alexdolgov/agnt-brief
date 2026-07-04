@@ -1,0 +1,26 @@
+{
+  "component": "TimelockController-2",
+  "main_contract": "TimelockController",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7cbf8d3e40458693c4965d07c9a0257106408f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff2dc15bb5ffd7d2a1e9dc6bb63b6c78a3d72145",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

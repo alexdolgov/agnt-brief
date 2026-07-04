@@ -1,0 +1,18 @@
+{
+  "component": "Lens-5",
+  "main_contract": "Lens",
+  "source_file_count": 56,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x146b5564dd061d648275e4bd3569b8c285783882",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

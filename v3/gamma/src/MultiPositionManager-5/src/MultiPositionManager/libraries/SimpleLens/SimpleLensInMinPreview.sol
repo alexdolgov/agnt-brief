@@ -17,7 +17,6 @@ import {SimpleLensRatioUtils} from "./SimpleLensRatioUtils.sol";
 import {RebalanceLogic} from "../RebalanceLogic.sol";
 import {PositionLogic} from "../PositionLogic.sol";
 import {PoolManagerUtils} from "../PoolManagerUtils.sol";
-import {LiquidityAmountsCapped} from "../LiquidityAmountsCapped.sol";
 import {WithdrawLogic} from "../WithdrawLogic.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -214,7 +213,7 @@ library SimpleLensInMinPreview {
             allRanges[baseRanges.length + 1] = upperLimit;
 
             if (lowerLimit.lowerTick != lowerLimit.upperTick && remainderToken1 > 0) {
-                allLiquidities[baseRanges.length] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length] = LiquidityAmounts.getLiquidityForAmounts(
                     ctx.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(lowerLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(lowerLimit.upperTick),
@@ -226,7 +225,7 @@ library SimpleLensInMinPreview {
             }
 
             if (upperLimit.lowerTick != upperLimit.upperTick && remainderToken0 > 0) {
-                allLiquidities[baseRanges.length + 1] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length + 1] = LiquidityAmounts.getLiquidityForAmounts(
                     ctx.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(upperLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(upperLimit.upperTick),
@@ -352,7 +351,21 @@ library SimpleLensInMinPreview {
     {
         (sqrtPriceX96, currentTick,,) = poolManager.getSlot0(poolKey.toId());
 
-        resolvedCenter = RebalanceLogic.resolveAndClampCenterTick(centerTick, currentTick, poolKey.tickSpacing);
+        int24 tickSpacing = poolKey.tickSpacing;
+        if (centerTick == type(int24).max) {
+            int24 compressed = currentTick / tickSpacing;
+            if (currentTick < 0 && currentTick % tickSpacing != 0) {
+                compressed--;
+            }
+            resolvedCenter = compressed * tickSpacing;
+        } else {
+            // Snap to tickSpacing grid using floor division (matches on-chain behavior)
+            int24 compressed = centerTick / tickSpacing;
+            if (centerTick < 0 && centerTick % tickSpacing != 0) {
+                compressed--;
+            }
+            resolvedCenter = compressed * tickSpacing;
+        }
 
         return (sqrtPriceX96, currentTick, resolvedCenter);
     }
@@ -583,7 +596,7 @@ library SimpleLensInMinPreview {
             allRanges[baseRanges.length + 1] = upperLimit;
 
             if (lowerLimit.lowerTick != lowerLimit.upperTick && remainderToken1 > 0) {
-                allLiquidities[baseRanges.length] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length] = LiquidityAmounts.getLiquidityForAmounts(
                     params.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(lowerLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(lowerLimit.upperTick),
@@ -595,7 +608,7 @@ library SimpleLensInMinPreview {
             }
 
             if (upperLimit.lowerTick != upperLimit.upperTick && remainderToken0 > 0) {
-                allLiquidities[baseRanges.length + 1] = LiquidityAmountsCapped.getLiquidityForAmountsCapped(
+                allLiquidities[baseRanges.length + 1] = LiquidityAmounts.getLiquidityForAmounts(
                     params.sqrtPriceX96,
                     TickMath.getSqrtPriceAtTick(upperLimit.lowerTick),
                     TickMath.getSqrtPriceAtTick(upperLimit.upperTick),
@@ -665,16 +678,11 @@ library SimpleLensInMinPreview {
         PoolKey memory poolKey,
         SimpleLensInMin.CalculateOtherAmountParams memory params
     ) external view returns (uint256 otherAmount) {
-        uint160 sqrtPriceX96 = params.sqrtPriceX96;
-        if (sqrtPriceX96 == 0) {
-            (sqrtPriceX96,,,) = poolManager.getSlot0(poolKey.toId());
-        }
-
         (int24[] memory lowerTicks, int24[] memory upperTicks, uint256[] memory weights) =
-            _generateRangesAndWeights(poolKey, params, sqrtPriceX96);
+            _generateRangesAndWeights(poolManager, poolKey, params);
 
         (uint256 totalWeightedToken0, uint256 totalWeightedToken1) =
-            _calculateWeightedTotals(lowerTicks, upperTicks, weights, sqrtPriceX96);
+            _calculateWeightedTotals(lowerTicks, upperTicks, weights, params.sqrtPriceX96);
 
         if (params.isToken0) {
             otherAmount =
@@ -685,25 +693,10 @@ library SimpleLensInMinPreview {
         }
     }
 
-    struct DensityCallParams {
-        ILiquidityStrategy strategy;
-        int24[] lowerTicks;
-        int24[] upperTicks;
-        int24 currentTick;
-        int24 center;
-        uint24 tLeft;
-        uint24 tRight;
-        uint256 weight0;
-        uint256 weight1;
-        bool useCarpet;
-        int24 tickSpacing;
-        bool useAssetWeights;
-    }
-
     function _generateRangesAndWeights(
+        IPoolManager poolManager,
         PoolKey memory poolKey,
-        SimpleLensInMin.CalculateOtherAmountParams memory params,
-        uint160 sqrtPriceX96
+        SimpleLensInMin.CalculateOtherAmountParams memory params
     ) private view returns (int24[] memory lowerTicks, int24[] memory upperTicks, uint256[] memory weights) {
         ILiquidityStrategy strategy = ILiquidityStrategy(params.strategyAddress);
 
@@ -711,57 +704,23 @@ library SimpleLensInMinPreview {
             params.resolvedCenterTick, params.ticksLeft, params.ticksRight, poolKey.tickSpacing, params.useCarpet
         );
 
-        bool useAssetWeights = (params.weight0 == 0 && params.weight1 == 0);
-        uint256 weight0 = params.weight0;
-        uint256 weight1 = params.weight1;
-
-        if (!params.useCarpet) {
-            bool supportsWeightedDist = false;
-            try strategy.supportsWeights() returns (bool supported) {
-                supportsWeightedDist = supported;
-            } catch {}
-
-            if (!supportsWeightedDist && (weight0 != 0.5e18 || weight1 != 0.5e18)) {
-                weight0 = 0.5e18;
-                weight1 = 0.5e18;
-            }
-        }
-
-        DensityCallParams memory callParams = DensityCallParams({
-            strategy: strategy,
-            lowerTicks: lowerTicks,
-            upperTicks: upperTicks,
-            currentTick: TickMath.getTickAtSqrtPrice(sqrtPriceX96),
-            center: params.resolvedCenterTick,
-            tLeft: params.ticksLeft,
-            tRight: params.ticksRight,
-            weight0: weight0,
-            weight1: weight1,
-            useCarpet: params.useCarpet,
-            tickSpacing: poolKey.tickSpacing,
-            useAssetWeights: useAssetWeights
-        });
-
-        weights = _calculateDensities(callParams);
-
-        weights = RebalanceLogic.adjustWeightsForFullRangeFloor(
-            weights, lowerTicks, upperTicks, poolKey.tickSpacing, params.useCarpet
-        );
-    }
-
-    function _calculateDensities(DensityCallParams memory callParams) private view returns (uint256[] memory) {
-        return callParams.strategy.calculateDensities(
-            callParams.lowerTicks,
-            callParams.upperTicks,
-            callParams.currentTick,
-            callParams.center,
-            callParams.tLeft,
-            callParams.tRight,
-            callParams.weight0,
-            callParams.weight1,
-            callParams.useCarpet,
-            callParams.tickSpacing,
-            callParams.useAssetWeights
+        weights = RebalanceLogic.calculateWeightsWithPoolKey(
+            poolKey,
+            poolManager,
+            RebalanceLogic.StrategyContext({
+                resolvedStrategy: params.strategyAddress,
+                center: params.resolvedCenterTick,
+                tLeft: params.ticksLeft,
+                tRight: params.ticksRight,
+                strategy: strategy,
+                weight0: params.weight0,
+                weight1: params.weight1,
+                useCarpet: params.useCarpet,
+                limitWidth: params.limitWidth,
+                useAssetWeights: (params.weight0 == 0 && params.weight1 == 0)
+            }),
+            lowerTicks,
+            upperTicks
         );
     }
 

@@ -1,9 +1,10 @@
 # ultron-staking-hub-nft — deployments
 
-35 verified deployment(s) across 9 component(s).
+38 verified deployment(s) across 10 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0xc685e8eddc9f078666794cbfcd8d8351bac404ef` | ERC20Custom | impl | live | no |
 | bsc | `0x0553d0a9a6b2740dc512535bd6af8ced7f701a72` | ERC1967Proxy | impl | inactive | no |
 | bsc | `0x0ed93099e67a240d0b97a87894c4530b0ef238b6` | ERC1967Proxy | impl | inactive | no |
 | bsc | `0x15bb7c94b34940cbe2f66adeb829d2a9b2ad4fa3` | Lottery | impl | inactive | no |
@@ -35,14 +36,9 @@
 | bsc | `0xce25c97689fcfbaedf75a80492233f688f88f6f8` | Lottery | impl | inactive | no |
 | bsc | `0xd60250030c2b89d8606ee1553f562c99d8ed12c1` | ERC1967Proxy | impl | inactive | no |
 | bsc | `0xd7b9beb8f947beda8663a7b3d444ff10c1eef9b0` | Wallet | impl | inactive | no |
+| bsc | `0xd983ab71a284d6371908420d8ac6407ca943f810` | ERC20Custom | impl | live | no |
 | bsc | `0xf31cafe13de6aa323901e43dd2993d0d668bbdd1` | Lottery | impl | inactive | no |
 | bsc | `0xff3731a75d4427f0c3447ee3129f1ad944f67e94` | ERC1967Proxy | proxy | inactive | no |
-| ethereum | `0x5aa158404fed6b4730c13f49d3a7f820e14a636f` | ERC20Custom | impl | live | no |
+| ethereum | `0x5aa158404fed6b4730c13f49d3a7f820e14a636f` | ERC20Custom-2 | impl | live | no |
 | ethereum | `0xfe21dd0ec80e744a473770827e1ad6393a5a94f0` | ERC20Handler | impl | inactive | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0xc685e8eddc9f078666794cbfcd8d8351bac404ef`
-- bsc `0xd983ab71a284d6371908420d8ac6407ca943f810`
-- polygon `0xfa5d5dd2517ee9c1419534a16b132adde2e3d948`
+| polygon | `0xfa5d5dd2517ee9c1419534a16b132adde2e3d948` | ERC20Custom | impl | inactive | no |

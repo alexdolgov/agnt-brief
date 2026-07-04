@@ -1,31 +1,39 @@
 {
   "component": "PrizeVaultFactory",
   "main_contract": "PrizeVaultFactory",
-  "source_file_count": 66,
-  "deployment_count": 3,
+  "source_file_count": 64,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x0c379e9b71ba7079084ada0d1c1aeb85d24dfd39",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd499ccf3e93f4cfb335ac388e3c896d59cdde7c3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xec9f59bd06465b105e719c0b0483a4ed6a656775",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc3ae3fe36a2645a93b2fe350d81e80a14831e2a6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf0f151494658bae060034c8f4f199f74910ea806",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa55a74a457d8a24d68dda0b5d1e0341746d444bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

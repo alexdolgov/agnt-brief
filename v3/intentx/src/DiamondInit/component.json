@@ -2,10 +2,18 @@
   "component": "DiamondInit",
   "main_contract": "DiamondInit",
   "source_file_count": 5,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb74629900981f2977cd7a8e37052fee0d7a4c395",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

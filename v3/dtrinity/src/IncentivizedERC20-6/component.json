@@ -1,15 +1,23 @@
 {
   "component": "IncentivizedERC20-6",
   "main_contract": "IncentivizedERC20",
-  "source_file_count": 35,
-  "deployment_count": 1,
+  "source_file_count": 33,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x81036951050a25cf6f0501ff3f981e3ed3b72786",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb7cff0c4301cd43b01d96d4d8669550bb50f8635",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xca0a90e45a55c4a7e394d1470e0c732b017e37bb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

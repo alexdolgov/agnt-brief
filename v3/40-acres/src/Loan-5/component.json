@@ -1,0 +1,18 @@
+{
+  "component": "Loan-5",
+  "main_contract": "Loan",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf007426228945bf59e3eecf025323a877ea50964",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

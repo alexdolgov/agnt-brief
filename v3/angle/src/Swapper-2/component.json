@@ -1,15 +1,23 @@
 {
   "component": "Swapper-2",
   "main_contract": "Swapper",
-  "source_file_count": 13,
-  "deployment_count": 1,
+  "source_file_count": 30,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4e4a605c1f2e3303e6967cb6d3d964474eb3c4fd",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc7f199ae6633b9336cf1b5a60c020b6cd993047d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd8f2cda6de4f6e23414a00a2226ef5f58e7ce440",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

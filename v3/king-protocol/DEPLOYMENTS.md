@@ -1,6 +1,6 @@
 # king-protocol — deployments
 
-21 verified deployment(s) across 6 component(s).
+23 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -25,9 +25,5 @@
 | base | `0xe5bb8ef2d356cc54791396eaa979328f826e29fb` | ArbitrageFoundation | impl | unknown | no |
 | base | `0xe92e65ba68e39774722678103ebcfc97a747cedb` | ArbitrageFoundation | impl | unknown | no |
 | base | `0xf25768f2ac3a4c349be98c46ee97f59a9b1d689d` | KingOFTL2 | impl | live | yes |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- mantle `0x548c4116a97e0138f78000088ea3f155717b98ed`
-- mantle `0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0`
+| mantle | `0x548c4116a97e0138f78000088ea3f155717b98ed` | KingOFTL2-2 | proxy | live | yes |
+| mantle | `0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0` | KingOFTL2-2 | impl | live | yes |

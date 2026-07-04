@@ -1,0 +1,20 @@
+{
+  "component": "RebalancerUniswapV4-2",
+  "main_contract": "RebalancerUniswapV4",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2026-01%20Sherlock.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

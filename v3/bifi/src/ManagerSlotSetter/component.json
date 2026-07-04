@@ -2,7 +2,7 @@
   "component": "ManagerSlotSetter",
   "main_contract": "ManagerSlotSetter",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xcd9632707ec422759be2a5b348f8178ff280a453",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xeb86b3592915dce5c0eff780f60b7b8b0af1b5b3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

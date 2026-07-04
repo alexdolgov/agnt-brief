@@ -1,0 +1,50 @@
+{
+  "component": "SturdySiloStrategy-3",
+  "main_contract": "SturdySiloStrategy",
+  "source_file_count": 1,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x4e72fcb2517ed90a3976dd8f50a387811ac4d883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x56a1e840bfe18e82a412134ab6b0618ab1db406d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x5829d7495110ccc36a48e35d58d3d840546ce690",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x9cf92c22c36fe62d789a489f40b136db345f414b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xcdb88a11f4f825a9372f97010b7c762e3db9e1c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

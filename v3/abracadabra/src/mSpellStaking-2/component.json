@@ -1,18 +1,26 @@
 {
   "component": "mSpellStaking-2",
   "main_contract": "mSpellStaking",
-  "source_file_count": 8,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x1df188958a8674b5177f77667b8d173c3cdd9e51",
+      "address": "0x694808221d4f31d5849f2aba08584e2c8f4b99ff",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc1f1862de85374378173566a8f3be28da3c3ec70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

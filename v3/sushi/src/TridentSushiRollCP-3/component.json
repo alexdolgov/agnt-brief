@@ -1,0 +1,18 @@
+{
+  "component": "TridentSushiRollCP-3",
+  "main_contract": "TridentSushiRollCP",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf96149e31c3af9650d209c5fe26a9b06c5bc91d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

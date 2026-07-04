@@ -2,7 +2,7 @@
   "component": "FundingRateFacet-2",
   "main_contract": "FundingRateFacet",
   "source_file_count": 24,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x3e70311e7d93d96abd8f0eef5247486e562af1ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5d51e783487a65c49c091b6b6d4ae36bd612c079",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

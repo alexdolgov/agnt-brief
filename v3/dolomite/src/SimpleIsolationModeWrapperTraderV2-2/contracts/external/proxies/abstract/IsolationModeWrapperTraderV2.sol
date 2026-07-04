@@ -22,10 +22,11 @@ pragma solidity ^0.8.9;
 
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import { IsolationModeTraderBaseV2 } from "./IsolationModeTraderBaseV2.sol";
 import { IDolomiteMargin } from "../../../protocol/interfaces/IDolomiteMargin.sol";
 import { Require } from "../../../protocol/lib/Require.sol";
-import { IIsolationModeWrapperTraderV2 } from "../../interfaces/IIsolationModeWrapperTraderV2.sol";
+import { OnlyDolomiteMargin } from "../../helpers/OnlyDolomiteMargin.sol";
+import { IIsolationModeVaultFactory } from "../../interfaces/IIsolationModeVaultFactory.sol";
+import { IIsolationModeWrapperTrader } from "../../interfaces/IIsolationModeWrapperTrader.sol";
 import { AccountActionLib } from "../../lib/AccountActionLib.sol";
 
 
@@ -36,7 +37,7 @@ import { AccountActionLib } from "../../lib/AccountActionLib.sol";
  * @notice  Abstract contract for wrapping a token into an IsolationMode token. Must be set as a token converter
  *          for the VaultWrapperFactory token.
  */
-abstract contract IsolationModeWrapperTraderV2 is IIsolationModeWrapperTraderV2, IsolationModeTraderBaseV2 {
+abstract contract IsolationModeWrapperTraderV2 is IIsolationModeWrapperTrader, OnlyDolomiteMargin {
     using SafeERC20 for IERC20;
 
     // ======================== Constants ========================
@@ -44,19 +45,17 @@ abstract contract IsolationModeWrapperTraderV2 is IIsolationModeWrapperTraderV2,
     bytes32 private constant _FILE = "IsolationModeWrapperTraderV2";
     uint256 private constant _ACTIONS_LENGTH = 1;
 
+    // ======================== Field Variables ========================
+
+    IIsolationModeVaultFactory public immutable VAULT_FACTORY; // solhint-disable-line var-name-mixedcase
+
     // ======================== Constructor ========================
 
     constructor(
         address _vaultFactory,
-        address _dolomiteMargin,
-        address _dolomiteRegistry
-    )
-    IsolationModeTraderBaseV2(
-        _vaultFactory,
-        _dolomiteMargin,
-        _dolomiteRegistry
-    ) {
-        // solhint-disable-previous-line no-empty-blocks
+        address _dolomiteMargin
+    ) OnlyDolomiteMargin(_dolomiteMargin) {
+        VAULT_FACTORY = IIsolationModeVaultFactory(_vaultFactory);
     }
 
     // ======================== External Functions ========================
@@ -125,35 +124,43 @@ abstract contract IsolationModeWrapperTraderV2 is IIsolationModeWrapperTraderV2,
     }
 
     function createActionsForWrapping(
-        CreateActionsForWrappingParams calldata _params
+        uint256 _primaryAccountId,
+        uint256 /* _otherAccountId */,
+        address /* _primaryAccountOwner */,
+        address /* _otherAccountOwner */,
+        uint256 _outputMarket,
+        uint256 _inputMarket,
+        uint256 _minAmountOut,
+        uint256 _inputAmount,
+        bytes calldata _orderData
     )
     external
     override
     view
     returns (IDolomiteMargin.ActionArgs[] memory) {
         Require.that(
-            isValidInputToken(DOLOMITE_MARGIN().getMarketTokenAddress(_params.inputMarket)),
+            isValidInputToken(DOLOMITE_MARGIN().getMarketTokenAddress(_inputMarket)),
             _FILE,
             "Invalid input market",
-            _params.inputMarket
+            _inputMarket
         );
         Require.that(
-            DOLOMITE_MARGIN().getMarketTokenAddress(_params.outputMarket) == address(VAULT_FACTORY),
+            DOLOMITE_MARGIN().getMarketTokenAddress(_outputMarket) == address(VAULT_FACTORY),
             _FILE,
             "Invalid output market",
-            _params.outputMarket
+            _outputMarket
         );
 
         IDolomiteMargin.ActionArgs[] memory actions = new IDolomiteMargin.ActionArgs[](_ACTIONS_LENGTH);
 
         actions[0] = AccountActionLib.encodeExternalSellAction(
-            _params.primaryAccountId,
-            _params.inputMarket,
-            _params.outputMarket,
+            _primaryAccountId,
+            _inputMarket,
+            _outputMarket,
             /* _trader = */ address(this),
-            /* _amountInWei = */ _params.inputAmount,
-            /* _amountOutMinWei = */ _params.minOutputAmount,
-            _params.orderData
+            /* _amountInWei = */ _inputAmount,
+            /* _amountOutMinWei = */ _minAmountOut,
+            _orderData
         );
 
         return actions;

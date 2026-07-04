@@ -2,7 +2,7 @@
   "component": "USDaf_Flash_Zapper",
   "main_contract": "USDaf Flash Zapper",
   "source_file_count": 8,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,46 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x0502dbe106d80577b156b0679342a11dca91b072",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07b152f14e53a4b24bf0e513a9743539efaead67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1a3f5ebaaf0702ec2a707cbd28b397dc4dca4baa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b2754de2e814c7fdbf86c8464ee575d1f6ae07f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x982e607b6495a63ffc715f694ed3211cb38b6fe2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf97f41f003a5b51abd62aadec12445ce47c96c8c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,6 +1,6 @@
 # locus-finance — deployments
 
-227 verified deployment(s) across 41 component(s).
+234 verified deployment(s) across 45 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,12 +8,15 @@
 | arbitrum | `0x05758130a5222e0bab6f7e9a2b7ae25fafd64183` | SaverStrategy | impl | inactive | no |
 | arbitrum | `0x0876c47cfc47e20d8b8220abdd925fee3081bca2` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0x08b77340767234ebddd64fe04d8cba201bba213a` | VaultToken | impl | inactive | no |
+| arbitrum | `0x0b4cf39b345aafe16957794636e5b0e7c90d0f87` | ProxyAdmin | impl | live | no |
+| arbitrum | `0x0cd5cda0e120f7e22516f074284e5416949882c2` | OnChainVault-3 | impl | inactive | no |
 | arbitrum | `0x0da285586c03301b9d09f26b7df6386cc3e4d0d1` | ERC1967Proxy-2 | proxy | live | no |
 | arbitrum | `0x0f6c31d923175b58c14fc436a08257774b8c4592` | ERC1967Proxy-3 | proxy | live | no |
 | arbitrum | `0x10d59e26511db3861d81a6c9d91fb801a7ac0336` | SaverStrategy | proxy | live | no |
 | arbitrum | `0x114de5aa6990097d2eca974c1b2a6e1dc3ca7faa` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0x1204c6c7ec2d60e1a12ca02473d25250767d30ce` | VaultToken | proxy | live | no |
 | arbitrum | `0x152fb6f9250fa041f9d4ee375325b1abf5fe7640` | ERC1967Proxy-4 | proxy | live | no |
+| arbitrum | `0x1b4c9a314117e037461fbdc980c9debefee6f891` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x1bd045e7ccab2686c458b5ceed4ec4dc60f5bc37` | ERC1967Proxy-4 | proxy | live | no |
 | arbitrum | `0x1c0c2133c9f2b74fb3522df0437d290f364f38a3` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0x1c70d843f571fd4ae692c75e611d33db6d87398c` | Diamond | impl | inactive | no |
@@ -69,7 +72,8 @@
 | arbitrum | `0x55a0ebd4c4c121daed4afaac049b3dda7827feea` | VaultToken | proxy | live | no |
 | arbitrum | `0x56e5f9ac681b7c23266fb0fd635b26d0afdf5b0f` | ERC1967Proxy-4 | impl | inactive | no |
 | arbitrum | `0x571dd1a2dfd851b3194072869edb2db009b299f7` | ERC1967Proxy-4 | impl | inactive | no |
-| arbitrum | `0x57c817253e0ee2b260468e81628bc6ccdd67c23f` | ERC1967Proxy-7 | proxy | live | no |
+| arbitrum | `0x57790b276194d0637021d31c14546a800664b632` | OnChainVault-2 | impl | inactive | no |
+| arbitrum | `0x57c817253e0ee2b260468e81628bc6ccdd67c23f` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0x5b5a2ab795aa731ef74a0b97f5190ef6661e460f` | ERC1967Proxy-2 | proxy | live | no |
 | arbitrum | `0x5bb916c06da66ba73b943377f49be66e0789eb28` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0x5e8d8e3c88fcc9e48cea5cdfdc2bf943a9672e0d` | PendleEtherFi | impl | inactive | no |
@@ -94,6 +98,7 @@
 | arbitrum | `0x6cd7eb459e7e534ac6930c7262662b42135aab83` | VaultToken | proxy | live | no |
 | arbitrum | `0x6ef5d0b8ae800269e99fda9587fa3dad002e23ef` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0x6f1d519d16124a254d72069c51ad9c1d7fe1c843` | VaultToken | proxy | live | no |
+| arbitrum | `0x7057e7e6874a7b46096d6e59e6ef25dc7f9e5d3d` | OnChainVault-4 | impl | inactive | no |
 | arbitrum | `0x70f92c756285f8f3cf3a3cc67ef6b264b8bd78cf` | TransparentUpgradeableProxy-2 | impl | inactive | no |
 | arbitrum | `0x74cda6bd0bed5a9027e4f62b733ed34f495f5c2d` | Diamond | impl | inactive | no |
 | arbitrum | `0x781a6c747c8cb222df43b47a20f8331034916969` | Diamond | impl | inactive | no |
@@ -116,6 +121,7 @@
 | arbitrum | `0x9400b534863ed1efb331e44d32ce4c9c47697ec9` | PendleLogic | impl | inactive | no |
 | arbitrum | `0x942044f8ba12731000b5010d54c6c50018c40f4c` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0x950e461f3f615e847c3cc80a826aa5be2f08e507` | ERC1967Proxy | proxy | live | no |
+| arbitrum | `0x9520f2c58ee46a6cbf851f8cc6da687acb93375c` | OnChainVault-2 | impl | inactive | no |
 | arbitrum | `0x95611dcbffc93b97baa9c65a23aafdec088b7f32` | VaultToken | proxy | live | no |
 | arbitrum | `0x95a7422b7dae2bef1b5e969b93db69bd1a348e9b` | ERC1967Proxy-2 | proxy | live | no |
 | arbitrum | `0x9ba15da32d597b052ed960bfa79ad7370f83bbe6` | ERC1967Proxy | proxy | live | no |
@@ -166,7 +172,7 @@
 | arbitrum | `0xc5dad0c33889693913617cee718ee147ba61b4dc` | SwapChannel | impl | inactive | no |
 | arbitrum | `0xc66534d9f18a9ab1b092861590495f6e4b4cfe14` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0xc8eb89d11264e9c8462a9623ca6239ee13819768` | VaultToken | impl | inactive | no |
-| arbitrum | `0xca271d0dbd646d64423432de8d0aa6300c9cddf5` | ERC1967Proxy-8 | proxy | live | no |
+| arbitrum | `0xca271d0dbd646d64423432de8d0aa6300c9cddf5` | ERC1967Proxy-7 | proxy | live | no |
 | arbitrum | `0xcc50dc869546524e675121fc331249727a549027` | Diamond-3 | proxy | inactive | no |
 | arbitrum | `0xceb801656b0d948bdaa3b7063d30ea74da91ad63` | PendleLogic | impl | inactive | no |
 | arbitrum | `0xd1348133404911040fe9332b3e7a0f89e60b5870` | ERC1967Proxy-2 | proxy | live | no |
@@ -194,6 +200,7 @@
 | arbitrum | `0xf5768cfe34a360442ce00609594af9841d7d7073` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0xf7d1c52fd02541f827a385c0607988e1df6f9705` | VaultToken | proxy | live | no |
 | arbitrum | `0xf8253b9bbdd1d4134831a20d1d77bf457661894c` | VaultToken | impl | inactive | no |
+| arbitrum | `0xf8f045583580c4ba954cd911a8b161fafd89a9ef` | OnChainVault-5 | proxy | live | no |
 | arbitrum | `0xf8f4d4d401e4d5aa9081a8f90f364fd07cdd7de4` | PendleLogicEEth | impl | inactive | no |
 | arbitrum | `0xfb04a44c6f3c80ff35ab9b5ee7b3f0e5afec58c1` | HopStrategy | impl | inactive | no |
 | arbitrum | `0xfb0e59eb9afdd2e3f667793864cc12c734cb845e` | VaultToken | proxy | live | no |
@@ -206,7 +213,7 @@
 | arbitrum | `0xff4965462e04144ad4a18544bb3678496d6501f7` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x05cd4b1e2d7acaeeb2d2f640a8d6f75791930c4e` | OnChainVault | impl | inactive | no |
 | ethereum | `0x0ab047fa7a19ac3d9efe7ebb3b08feda6dcea13e` | AuraTriPoolStrategy | impl | inactive | no |
-| ethereum | `0x0b4cf39b345aafe16957794636e5b0e7c90d0f87` | ProxyAdmin | impl | live | no |
+| ethereum | `0x0b4cf39b345aafe16957794636e5b0e7c90d0f87` | ProxyAdmin-2 | impl | live | no |
 | ethereum | `0x0cd5cda0e120f7e22516f074284e5416949882c2` | OnChainVault | proxy | live | no |
 | ethereum | `0x0d4fd4aae6c6ed4d16dbcc0edcee0f2304531472` | AcrossStrategy | impl | inactive | no |
 | ethereum | `0x0de43faa33a21273867b390dc02152c2872046a8` | FXSStrategy | impl | live | yes |
@@ -231,14 +238,3 @@
 | ethereum | `0xe4fb84cdd1f4d0ae9f9972d2f5da96dc67c2f859` | TransparentUpgradeableProxy-4 | impl | inactive | no |
 | ethereum | `0xf12c92cbe97f16cfb8dc007545c29a55912177fe` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0xf99302d3d4a30d2ac26b4f8e0390171b29d5f547` | CVXStrategy | proxy | live | yes |
-
-## Source unavailable (7)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x0b4cf39b345aafe16957794636e5b0e7c90d0f87`
-- arbitrum `0x0cd5cda0e120f7e22516f074284e5416949882c2`
-- arbitrum `0x1b4c9a314117e037461fbdc980c9debefee6f891`
-- arbitrum `0x57790b276194d0637021d31c14546a800664b632`
-- arbitrum `0x7057e7e6874a7b46096d6e59e6ef25dc7f9e5d3d`
-- arbitrum `0x9520f2c58ee46a6cbf851f8cc6da687acb93375c`
-- arbitrum `0xf8f045583580c4ba954cd911a8b161fafd89a9ef`

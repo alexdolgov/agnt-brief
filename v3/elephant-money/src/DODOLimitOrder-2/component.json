@@ -1,0 +1,18 @@
+{
+  "component": "DODOLimitOrder-2",
+  "main_contract": "DODOLimitOrder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdc5e86654e768d21f7d298690687ea02db7b2a04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

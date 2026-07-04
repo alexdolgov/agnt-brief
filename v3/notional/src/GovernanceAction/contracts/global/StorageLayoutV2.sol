@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -13,4 +13,6 @@ contract StorageLayoutV2 is StorageLayoutV1 {
 
     // Pending owner used in the transfer ownership / claim ownership pattern
     address internal pendingOwner;
+
+    address public rebalancingBot;
 }

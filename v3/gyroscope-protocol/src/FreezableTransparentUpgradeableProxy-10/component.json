@@ -1,0 +1,29 @@
+{
+  "component": "FreezableTransparentUpgradeableProxy-10",
+  "main_contract": "FreezableTransparentUpgradeableProxy",
+  "source_file_count": 15,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM-0051%20Security%20Review%20Gyroscope.pdf",
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0094-GYROSCOPE-PROTOCOL-FINAL.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x00a2a9bbd352ab46274433faa9fec35fe3abb4a8",
+      "is_proxy": true,
+      "implementation_address": "0xe02f11277cfa84c696370c097c51848c6a6523b3",
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe02f11277cfa84c696370c097c51848c6a6523b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

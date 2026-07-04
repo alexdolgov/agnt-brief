@@ -86,6 +86,14 @@ contract VolatilityOracle is ReentrancyGuard {
         uint16 cardinalityNext;
     }
 
+    struct ObserveContext {
+        uint32 time;
+        int24 currentTick;
+        uint128 liquidity;
+        uint16 newestLocalIdx;
+        uint16 newestCard;
+    }
+
     /* ─────────────── cached policy parameters (baseFee logic removed) ─────────────── */
     struct CachedPolicy {
         uint24 minCap;
@@ -273,8 +281,7 @@ contract VolatilityOracle is ReentrancyGuard {
     // Internal workhorse
     function _recordObservation(PoolId poolId, int24 preSwapTick) internal returns (bool tickWasCapped) {
         ObservationState storage state = states[poolId];
-        uint16 localIdx = state.index % PAGE_SIZE;
-        uint16 pageBase = state.index - localIdx;
+        uint16 index = state.index;
 
         int24 currentTick;
         // Scope to drop temporary variables
@@ -295,41 +302,49 @@ contract VolatilityOracle is ReentrancyGuard {
             }
         }
 
-        // Write observation
-        uint16 newLocalIdx;
-        uint16 newPageCard;
-        {
-            TruncatedOracle.Observation[PAGE_SIZE] storage obs = _leaf(poolId, state.index);
+        uint32 ts = uint32(block.timestamp);
+        TruncatedOracle.Observation storage last = _leaf(poolId, index)[index % PAGE_SIZE];
+        if (last.blockTimestamp != ts) {
+            uint16 cardinalityUpdated = state.cardinality;
+            uint16 cardinalityNext = state.cardinalityNext;
+            if (cardinalityNext == cardinalityUpdated && cardinalityNext < TruncatedOracle.MAX_CARDINALITY_ALLOWED) {
+                cardinalityNext = cardinalityUpdated + 1;
+            }
+
+            if (cardinalityNext > cardinalityUpdated && index == (cardinalityUpdated - 1)) {
+                cardinalityUpdated = cardinalityNext;
+                if (cardinalityUpdated > TruncatedOracle.MAX_CARDINALITY_ALLOWED) {
+                    cardinalityUpdated = TruncatedOracle.MAX_CARDINALITY_ALLOWED;
+                }
+            }
+
+            unchecked {
+                index += 1;
+            }
+            if (index >= cardinalityUpdated) {
+                index = 0;
+            }
+
             uint128 liquidity = StateLibrary.getLiquidity(poolManager, poolId);
-            uint16 pageCardinality = state.cardinality > pageBase ? state.cardinality - pageBase : 1;
-            uint16 pageCardinalityNext = pageCardinality < PAGE_SIZE ? pageCardinality + 1 : pageCardinality;
+            uint32 delta;
+            unchecked {
+                delta = ts - last.blockTimestamp;
+            }
+            TruncatedOracle.Observation storage o = _leaf(poolId, index)[index % PAGE_SIZE];
+            o.blockTimestamp = ts;
+            o.tickCumulative = last.tickCumulative + int56(currentTick) * int56(uint56(delta));
+            o.secondsPerLiquidityCumulativeX128 = last.secondsPerLiquidityCumulativeX128
+                + ((uint160(delta) << 128) / (liquidity > 0 ? liquidity : 1));
+            o.initialized = true;
 
-            (newLocalIdx, newPageCard) =
-                obs.write(localIdx, uint32(block.timestamp), currentTick, liquidity, pageCardinality, pageCardinalityNext);
-        }
+            state.index = index;
+            state.cardinality = cardinalityUpdated;
 
-        // Update state if new slot written
-        {
-            uint16 pageCard = state.cardinality > pageBase ? state.cardinality - pageBase : 1;
-            bool wroteNewSlot = (newLocalIdx != localIdx) || (newPageCard != pageCard);
-
-            if (wroteNewSlot) {
-                if (localIdx == PAGE_SIZE - 1 && newLocalIdx == 0) {
-                    unchecked { state.index = pageBase + PAGE_SIZE; }
-                } else {
-                    unchecked { state.index = pageBase + newLocalIdx; }
-                }
-
-                unchecked {
-                    if (state.cardinality < TruncatedOracle.MAX_CARDINALITY_ALLOWED) {
-                        state.cardinality += 1;
-                    }
-                }
-
-                if (state.cardinalityNext < state.cardinality + 1
-                    && state.cardinalityNext < TruncatedOracle.MAX_CARDINALITY_ALLOWED) {
-                    state.cardinalityNext = state.cardinality + 1;
-                }
+            if (
+                state.cardinalityNext < cardinalityUpdated + 1
+                    && state.cardinalityNext < TruncatedOracle.MAX_CARDINALITY_ALLOWED
+            ) {
+                state.cardinalityNext = cardinalityUpdated + 1;
             }
         }
 
@@ -447,53 +462,108 @@ contract VolatilityOracle is ReentrancyGuard {
 
         ObservationState storage state = states[poolId];
         uint16 gIdx = state.index; // global index of newest obs
-        uint32 time = uint32(block.timestamp);
 
-        // Determine oldest timestamp the caller cares about (largest secondsAgo)
-        uint32 oldestWanted;
-        if (secondsAgos.length != 0) {
-            uint32 sa = secondsAgos[secondsAgos.length - 1];
-            // Same wrap-around logic used by TruncatedOracle.observeSingle
-            oldestWanted = time >= sa ? time - sa : time + (type(uint32).max - sa) + 1;
+        uint256 len = secondsAgos.length;
+        tickCumulatives = new int56[](len);
+        secondsPerLiquidityCumulativeX128s = new uint160[](len);
+        if (len == 0) return (tickCumulatives, secondsPerLiquidityCumulativeX128s);
+
+        ObserveContext memory ctx;
+        ctx.time = uint32(block.timestamp);
+        (, ctx.currentTick,,) = StateLibrary.getSlot0(poolManager, poolId);
+        ctx.liquidity = StateLibrary.getLiquidity(poolManager, poolId);
+        ctx.newestLocalIdx = uint16(gIdx % PAGE_SIZE);
+        {
+            uint16 newestBase = gIdx - ctx.newestLocalIdx;
+            uint16 newestCard = state.cardinality > newestBase ? state.cardinality - newestBase : 1;
+            if (newestCard > PAGE_SIZE) {
+                newestCard = PAGE_SIZE;
+            }
+            ctx.newestCard = newestCard;
         }
 
-        uint16 leafCursor = gIdx;
+        for (uint256 i = 0; i < len; i++) {
+            uint32 secondsAgo = secondsAgos[i];
+            if (secondsAgo == 0) {
+                TruncatedOracle.Observation[PAGE_SIZE] storage newestPage = _leaf(poolId, gIdx);
+                (tickCumulatives[i], secondsPerLiquidityCumulativeX128s[i]) =
+                    TruncatedOracle.observeSingle(
+                        newestPage,
+                        ctx.time,
+                        0,
+                        ctx.currentTick,
+                        ctx.newestLocalIdx,
+                        ctx.liquidity,
+                        ctx.newestCard
+                    );
+                continue;
+            }
 
-        // Walk pages backwards until the first timestamp inside the leaf is <= oldestWanted
-        while (true) {
-            TruncatedOracle.Observation[PAGE_SIZE] storage page = _leaf(poolId, leafCursor);
-            uint16 localIdx = uint16(leafCursor % PAGE_SIZE);
-            uint16 pageBase = leafCursor - localIdx;
-            uint16 pageCardinality = state.cardinality > pageBase ? state.cardinality - pageBase : 1;
-
-            // slot 0 may be uninitialised if page not yet full; choose first initialised slot
-            uint16 firstSlot = pageCardinality == PAGE_SIZE ? (localIdx + 1) % PAGE_SIZE : 0;
-            uint32 firstTs = page[firstSlot].blockTimestamp;
-
-            if (oldestWanted >= firstTs || leafCursor < PAGE_SIZE) break;
-            leafCursor -= PAGE_SIZE;
+            (uint16 leafCursor, uint16 idx, uint16 card) =
+                _resolveLeafForSecondsAgo(poolId, state, gIdx, ctx.newestLocalIdx, ctx.time, secondsAgo);
+            TruncatedOracle.Observation[PAGE_SIZE] storage obs = _leaf(poolId, leafCursor);
+            (tickCumulatives[i], secondsPerLiquidityCumulativeX128s[i]) =
+                TruncatedOracle.observeSingle(obs, ctx.time, secondsAgo, ctx.currentTick, idx, ctx.liquidity, card);
         }
-
-        // Fetch the resolved leaf *after* the loop to guarantee initialization
-        TruncatedOracle.Observation[PAGE_SIZE] storage obs = _leaf(poolId, leafCursor);
-
-        uint16 idx = uint16(leafCursor % PAGE_SIZE);
-
-        // Cardinality of *this* leaf (cannot exceed PAGE_SIZE)
-        uint16 card = state.cardinality > leafCursor - idx ? state.cardinality - (leafCursor - idx) : 1;
-
-        if (card == 0) revert("empty-page-card");
-        if (card > PAGE_SIZE) {
-            card = PAGE_SIZE;
-        }
-
-        (, int24 currentTick,,) = StateLibrary.getSlot0(poolManager, poolId);
-        uint128 liquidity = StateLibrary.getLiquidity(poolManager, poolId);
-
-        (tickCumulatives, secondsPerLiquidityCumulativeX128s) =
-            obs.observe(time, secondsAgos, currentTick, idx, liquidity, card);
 
         return (tickCumulatives, secondsPerLiquidityCumulativeX128s);
+    }
+
+    function _resolveLeafForSecondsAgo(
+        PoolId poolId,
+        ObservationState storage state,
+        uint16 gIdx,
+        uint16 newestLocalIdx,
+        uint32 time,
+        uint32 secondsAgo
+    ) internal view returns (uint16 leafCursor, uint16 idx, uint16 card) {
+        uint32 target;
+        unchecked {
+            target = time >= secondsAgo ? time - secondsAgo : time + (type(uint32).max - secondsAgo) + 1;
+        }
+
+        uint16 newestBase = gIdx - newestLocalIdx;
+        uint16 pageCursor = newestBase;
+        if (state.cardinality == TruncatedOracle.MAX_CARDINALITY_ALLOWED) {
+            uint16 pageCount = TruncatedOracle.MAX_CARDINALITY_ALLOWED / PAGE_SIZE;
+            for (uint16 i = 0; i < pageCount; i++) {
+                TruncatedOracle.Observation[PAGE_SIZE] storage page = _leaf(poolId, pageCursor);
+                uint16 pageNewestIdx = pageCursor == newestBase ? newestLocalIdx : PAGE_SIZE - 1;
+                uint16 firstSlot = (pageNewestIdx + 1) % PAGE_SIZE;
+                uint32 firstTs = page[firstSlot].blockTimestamp;
+
+                if (target >= firstTs || i + 1 == pageCount) {
+                    idx = pageNewestIdx;
+                    card = PAGE_SIZE;
+                    return (pageCursor, idx, card);
+                }
+
+                if (pageCursor >= PAGE_SIZE) {
+                    pageCursor -= PAGE_SIZE;
+                } else {
+                    pageCursor = TruncatedOracle.MAX_CARDINALITY_ALLOWED - PAGE_SIZE;
+                }
+            }
+        }
+
+        while (true) {
+            TruncatedOracle.Observation[PAGE_SIZE] storage page = _leaf(poolId, pageCursor);
+            uint16 pageCardinality = state.cardinality > pageCursor ? state.cardinality - pageCursor : 1;
+            if (pageCardinality > PAGE_SIZE) {
+                pageCardinality = PAGE_SIZE;
+            }
+
+            uint16 pageNewestIdx = pageCursor == newestBase ? newestLocalIdx : pageCardinality - 1;
+            uint16 firstSlot = pageCardinality == PAGE_SIZE ? (pageNewestIdx + 1) % PAGE_SIZE : 0;
+            uint32 firstTs = page[firstSlot].blockTimestamp;
+
+            if (target >= firstTs || pageCursor == 0) {
+                idx = pageNewestIdx;
+                card = pageCardinality;
+                return (pageCursor, idx, card);
+            }
+            pageCursor -= PAGE_SIZE;
+        }
     }
 
 

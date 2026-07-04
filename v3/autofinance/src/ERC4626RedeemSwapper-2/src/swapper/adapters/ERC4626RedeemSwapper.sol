@@ -2,7 +2,7 @@
 // Copyright (c) 2025 Tokemak Foundation. All rights reserved.
 pragma solidity ^0.8.24;
 
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 import { IERC4626 } from "src/interfaces/vault/IERC4626.sol";
 import { Address } from "openzeppelin-contracts/utils/Address.sol";
 import { BaseAdapter, ISyncSwapper, ISwapRouter } from "src/swapper/adapters/BaseAdapter.sol";
@@ -20,15 +20,15 @@ contract ERC4626RedeemSwapper is BaseAdapter {
     /// @inheritdoc ISyncSwapper
     function validate(address fromAddress, ISwapRouter.SwapData memory swapData) external view virtual {
         // Swap here is technically happening on the `fromAddress`, as this is a 4626 vault operation
-        if (swapData.pool != fromAddress) revert AutopilotErrors.InvalidConfiguration();
+        if (swapData.pool != fromAddress) revert Errors.InvalidConfiguration();
 
         // Ensure that fromAddress is a 4626 vault, and that `asset()` call is returning data
         (bytes memory data) = fromAddress.functionStaticCall(abi.encodeCall(IERC4626.asset, ()));
-        if (data.length == 0) revert AutopilotErrors.InvalidDataReturned();
+        if (data.length == 0) revert Errors.InvalidDataReturned();
         address asset = abi.decode(data, (address));
 
         // Ensure that the asset token is the token that we expect
-        if (asset != swapData.token) revert AutopilotErrors.InvalidConfiguration();
+        if (asset != swapData.token) revert Errors.InvalidConfiguration();
     }
 
     /// @inheritdoc ISyncSwapper

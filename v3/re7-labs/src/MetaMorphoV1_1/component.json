@@ -1,15 +1,39 @@
 {
   "component": "MetaMorphoV1_1",
   "main_contract": "MetaMorphoV1_1",
-  "source_file_count": 65,
-  "deployment_count": 1,
+  "source_file_count": 41,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x00dfdb8c7295a03dcf1adff4d21eb5d9d19fb330",
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2c0f7e917257926ba6233b20de19d7fe3210858c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x6af5e46456a8ac80bb53a02799965def99c26e52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xa48f8a10f16bb50a588606553d9fe7338050f8cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf91d80e43272dbc610551e8c872e0438d62c1c69",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

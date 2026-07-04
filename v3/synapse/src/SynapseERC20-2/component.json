@@ -2,14 +2,62 @@
   "component": "SynapseERC20-2",
   "main_contract": "SynapseERC20",
   "source_file_count": 15,
-  "deployment_count": 1,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0f2d719407fdbeff09d87557abb7232601fd9f29",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x080f6aed32fc474dd5717105dba5ea57268f46eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2913e812cf0dcca30fb28e6cac3d2dcff4497688",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3ea9b0ab55f34fb188824ee288ceaefc63cf908e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x809dc529f07651bd43a172e8db6f4a7a0d771036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1f1e7c893855525b303f99bdf5c3c05be09ca251",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x321e7092a180bb43555132ec53aaa65a5bf84251",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcfc37a6ab183dd4aed08c204d1c2773c0b1bdf46",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

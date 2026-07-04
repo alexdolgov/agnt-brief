@@ -1,0 +1,18 @@
+{
+  "component": "TokenFacet-2",
+  "main_contract": "TokenFacet",
+  "source_file_count": 80,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4d26caf0778d651922e89c546f09ae852cc4933a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

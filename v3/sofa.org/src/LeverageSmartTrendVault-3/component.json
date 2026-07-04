@@ -1,0 +1,26 @@
+{
+  "component": "LeverageSmartTrendVault-3",
+  "main_contract": "LeverageSmartTrendVault",
+  "source_file_count": 46,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x53b4b7312e543435f77f25648fa9b269d0918bc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5dcefca5207c58dcbcf41ef017d1d0eb42d83701",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

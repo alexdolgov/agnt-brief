@@ -1,0 +1,58 @@
+{
+  "component": "Pool-2",
+  "main_contract": "Pool",
+  "source_file_count": 58,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcab34d4d532a9c9929f4f96d239653646351abad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x731822532cbc1c7c48462c9e5dc0c04a1ff29953",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x782e918ed2b3d161e90c5e154fed3e93d705c598",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xba2fba24b0dd81a67bbdd95bb7a9d0336ea094d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xd0a1ff86c2f1c3522f183400fde355f6b3d9fce1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2b5e5e6008742cd9d139c6add9cac57679c59d6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

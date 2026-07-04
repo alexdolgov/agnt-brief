@@ -1,0 +1,74 @@
+{
+  "component": "ShareV2-2",
+  "main_contract": "ShareV2",
+  "source_file_count": 1,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x09750800529e7bbcd07d4760989b19061e79165b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x0e6a005790559b60bff5b8c3ea68d2361f92ccaa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x3b97ccc0c8c5e10ac3e7f1594b55b6239a493eea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x6e20e4f0f1a3a6836840001e4195b65d7735d92d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x6f2d7ce6601a07fbfaa7b9c9608ca99d5f35ff4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x820144d59d20f1838a88cae95c946a9bb6a7fea2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xb5e3d3fd34689c27f3549781b0369b87db105839",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xbf4ff74af2f4e1b3820c32a0fc3a47530367112e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

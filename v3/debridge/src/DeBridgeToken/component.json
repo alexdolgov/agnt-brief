@@ -1,22 +1,47 @@
 {
   "component": "DeBridgeToken",
   "main_contract": "DeBridgeToken",
-  "source_file_count": 17,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Contracts_v1_Smart_Contract_Security_Audit_Report_Halborn.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Smart_Contract_Security_Audit_Report_ZOKYO.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf"
-  ],
+  "source_file_count": 15,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0e4add4dc86ae1aa0fa43bd7e6a9fb8be2d5504d",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

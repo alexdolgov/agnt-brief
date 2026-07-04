@@ -22,9 +22,10 @@ pragma solidity ^0.8.9;
 
 import { IBaseRegistry } from "@dolomite-exchange/modules-base/contracts/interfaces/IBaseRegistry.sol";
 import { IERC4626 } from "@dolomite-exchange/modules-base/contracts/interfaces/IERC4626.sol";
-import { IJonesUSDCRouter } from "./IJonesUSDCRouter.sol";
+import { IJonesGLPAdapter } from "./IJonesGLPAdapter.sol";
+import { IJonesGLPVaultRouter } from "./IJonesGLPVaultRouter.sol";
 import { IJonesUSDCFarm } from "./IJonesUSDCFarm.sol";
-import { IJonesWhitelistControllerV2 } from "./IJonesWhitelistControllerV2.sol";
+import { IJonesWhitelistController } from "./IJonesWhitelistController.sol";
 
 
 /**
@@ -39,8 +40,10 @@ interface IJonesUSDCRegistry is IBaseRegistry {
     // ======================== Events ========================
     // ========================================================
 
-    event JUSDCRouterSet(address indexed _jusdcRouter);
+    event GlpAdapterSet(address indexed _glpAdapter);
+    event GlpVaultRouterSet(address indexed _glpVaultRouter);
     event WhitelistControllerSet(address indexed _whitelistController);
+    event UsdcReceiptTokenSet(address indexed _usdcReceiptToken);
     event JUSDCSet(address indexed _jUSDC);
     event UnwrapperTraderForLiquidationSet(address indexed _unwrapperTraderForLiquidation);
     event UnwrapperTraderForZapSet(address indexed _unwrapperTraderForZap);
@@ -55,9 +58,13 @@ interface IJonesUSDCRegistry is IBaseRegistry {
         address _unwrapperTraderForZap
     ) external;
 
-    function ownerSetJUsdcRouter(address _jUsdcRouter) external;
+    function ownerSetGlpAdapter(address _glpAdapter) external;
+
+    function ownerSetGlpVaultRouter(address _glpVaultRouter) external;
 
     function ownerSetWhitelistController(address _whitelistController) external;
+
+    function ownerSetUsdcReceiptToken(address _usdcReceiptToken) external;
 
     function ownerSetJUSDC(address _jUSDC) external;
 
@@ -71,9 +78,13 @@ interface IJonesUSDCRegistry is IBaseRegistry {
     // =================== Getter Functions ===================
     // ========================================================
 
-    function jUSDCRouter() external view returns (IJonesUSDCRouter);
+    function glpAdapter() external view returns (IJonesGLPAdapter);
 
-    function whitelistController() external view returns (IJonesWhitelistControllerV2);
+    function glpVaultRouter() external view returns (IJonesGLPVaultRouter);
+
+    function whitelistController() external view returns (IJonesWhitelistController);
+
+    function usdcReceiptToken() external view returns (IERC4626);
 
     function jUSDC() external view returns (IERC4626);
 

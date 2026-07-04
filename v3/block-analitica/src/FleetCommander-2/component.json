@@ -1,0 +1,18 @@
+{
+  "component": "FleetCommander-2",
+  "main_contract": "FleetCommander",
+  "source_file_count": 79,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2bb9ad69feba5547b7cd57aafe8457d40bf834af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

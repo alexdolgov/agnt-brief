@@ -1,0 +1,18 @@
+{
+  "component": "GlobalPause-3",
+  "main_contract": "GlobalPause",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfce6c652f5e9cb2e6aef60f8d8bc4a9894f351a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

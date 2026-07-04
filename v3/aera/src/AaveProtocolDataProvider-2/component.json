@@ -1,15 +1,15 @@
 {
   "component": "AaveProtocolDataProvider-2",
   "main_contract": "AaveProtocolDataProvider",
-  "source_file_count": 20,
+  "source_file_count": 16,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x6b4e260b765b3ca1514e618c0215a6b7839ff93e",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

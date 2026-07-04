@@ -1,0 +1,20 @@
+{
+  "component": "OneInch-2",
+  "main_contract": "OneInch",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/1inch/1inch-token/blob/master/audits/MixBytes.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x111111111117dc0aa78b770fa6a738034120c302",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

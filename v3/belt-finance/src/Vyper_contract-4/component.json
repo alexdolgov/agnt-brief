@@ -1,0 +1,42 @@
+{
+  "component": "Vyper_contract-4",
+  "main_contract": "Vyper_contract",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7d72e4e99b74986ccf8f020868a367aae132b404",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa4ab839d38a0f0c1ba6509d4e7bb09026187de87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeb0eb9e9aac2b5ff9781416fe94dc0861fab9ac8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf16d312d119c13dd27fd0dc814b0bcdcaaa62dfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

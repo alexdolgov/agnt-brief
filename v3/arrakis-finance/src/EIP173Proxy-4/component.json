@@ -1,20 +1,34 @@
 {
   "component": "EIP173Proxy-4",
   "main_contract": "EIP173Proxy",
-  "source_file_count": 5,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/ArrakisFinance/vault-v1-core/blob/main/audit/REP-Gelato-UNI-2021-07-22.pdf"
-  ],
+  "source_file_count": 4,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4974a491f43de6ebcd1b3528aa52383b7692824f",
-      "is_proxy": true,
-      "implementation_address": "0x86d62a8ad19998e315e6242b63eb73f391d4674b",
-      "liveness": "live"
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1d512ba0d9ef12ae68e94f6e3f2c53da8de53d74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa6e7692c236404b9f3709ca0d444773ba60c013c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe81e1851f1f0511a7451f4c86f7920e466e12181",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

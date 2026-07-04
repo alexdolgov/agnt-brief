@@ -1,15 +1,31 @@
 {
   "component": "ERC20V3Factory",
   "main_contract": "ERC20V3Factory",
-  "source_file_count": 5,
-  "deployment_count": 1,
+  "source_file_count": 3,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5ed22a48fee263207f5caae1a1f1a27011e7dc92",
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xfd2b7994f91c08aaa5e013e899334a2dbb500df1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcb3dc90e800c961d4a206beaafd92a6d2e06495e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0226fce8c969604c3a0ad19c37d1fafac73e13c2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

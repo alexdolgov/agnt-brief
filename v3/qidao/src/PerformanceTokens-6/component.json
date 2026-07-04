@@ -1,0 +1,18 @@
+{
+  "component": "PerformanceTokens-6",
+  "main_contract": "PerformanceTokens",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2dea91e68fdc5693b63924c5fee0a28cfb78a801",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "IBean-12",
+  "main_contract": "IBean",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x649d4b21278a1771c0b196614e2c21b4c73fe801",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

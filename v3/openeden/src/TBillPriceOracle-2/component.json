@@ -1,0 +1,18 @@
+{
+  "component": "TBillPriceOracle-2",
+  "main_contract": "TBillPriceOracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0952c8ba068c887b675b4182f3a65420d045f46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

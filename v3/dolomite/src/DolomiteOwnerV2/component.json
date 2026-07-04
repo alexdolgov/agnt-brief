@@ -2,13 +2,37 @@
   "component": "DolomiteOwnerV2",
   "main_contract": "DolomiteOwnerV2",
   "source_file_count": 13,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
       "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
       "is_proxy": false,
       "implementation_address": null,

@@ -1,0 +1,20 @@
+{
+  "component": "ERC4626-2",
+  "main_contract": "ERC4626",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.04.09%20-%20Final%20-%20Bundie%20Collaborative%20Audit%20Report%201775738963.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x426c010123a6301a3ba4b874d4b2127c10515af9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

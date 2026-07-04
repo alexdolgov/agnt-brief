@@ -1,6 +1,6 @@
 # resupply — deployments
 
-217 verified deployment(s) across 139 component(s).
+220 verified deployment(s) across 141 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,7 +13,7 @@
 | ethereum | `0x08064a8eeecf71203449228f3eac65e462009fdf` | ResupplyPairCore | impl | live | no |
 | ethereum | `0x09500002956877b910acec25c4b4dd57950e1d27` | PairAdder | impl | live | no |
 | ethereum | `0x0950000465476f4470e74aed93e7dd414012bb7d` | BorrowLimitController | impl | live | no |
-| ethereum | `0x09f62a6777032329c0d49f1fd4fbe9b3468cda56` | LiquidityGaugeV6 | impl | live | no |
+| ethereum | `0x09f62a6777032329c0d49f1fd4fbe9b3468cda56` | LiquidityGaugeV6-2 | impl | live | no |
 | ethereum | `0x0dbffba31097510d291ad9150b150b3bb07d8852` | ExtraRewardStashV3 | impl | inactive | no |
 | ethereum | `0x0e4e9d97440182ea72d988d48eb9b156a0c02e11` | PoolManagerV4 | impl | inactive | no |
 | ethereum | `0x0f29b765be2de395cb6b10d9ead46975057b51ed` | ChefRewardHook | impl | inactive | no |
@@ -89,6 +89,7 @@
 | ethereum | `0x599113b0403e3fa613c318af0bf75826bedfb9ec` | JointVaultManager | impl | inactive | no |
 | ethereum | `0x59ccbaabbfcac52e007a706242c5b81a48179bf2` | VotingBalanceMax | impl | inactive | no |
 | ethereum | `0x5ae0fca14ed08a3122ffb8d624e063e07bce56a1` | CvxLocker | impl | inactive | no |
+| ethereum | `0x5c0b03914f68f2717d779a0211fd98c2cc45a4dd` | LiquidityGaugeV6 | impl | live | no |
 | ethereum | `0x5e2706946c2be55b038f4a0475cb7b19f5a67897` | ChefRewardHook | impl | inactive | no |
 | ethereum | `0x5eeb063d0abefbbc78f576e28d762a16b637a025` | RedemptionHandler | impl | live | no |
 | ethereum | `0x5f47010f230ce1568bea53a06ebaf528d05c5c1b` | PoolManagerProxy | impl | inactive | no |
@@ -159,6 +160,7 @@
 | ethereum | `0xab9f4bb0add2cfbb168da95c590205419cd71f9b` | ClaimZap | impl | inactive | no |
 | ethereum | `0xadd2f542f9ff06405fabf8cae4a74bd0fe29c673` | CvxCrvUtilities | impl | inactive | no |
 | ethereum | `0xae5f315a5b5dd4dbacd38862562a51490e500183` | PoolManagerV2 | impl | inactive | no |
+| ethereum | `0xaf01d68714e7ea67f43f08b5947e367126b889b1` | LiquidityGaugeV6 | impl | live | no |
 | ethereum | `0xafd3d38fecebcdda6d934979d4ac7f17330a96ca` | MultiRewards | impl | inactive | no |
 | ethereum | `0xb15ffb543211b558d40160811e5dcbcd7d5aaac9` | RescueToken | impl | inactive | no |
 | ethereum | `0xb32eace5d3c2bd7625e00d63203a6ff0bf638cbc` | FXSRewardHook | impl | inactive | no |
@@ -209,6 +211,7 @@
 | ethereum | `0xe79d9a5ef6e19c3f1003f4f27a1423259460f6d0` | ChefToken | impl | inactive | no |
 | ethereum | `0xe98984ad858075813ada4261af47e68a64e28fcc` | VestedEscrow | impl | inactive | no |
 | ethereum | `0xeb8121b44a290ee16981d87b92fc16b2366de6b3` | TreasuryManager-2 | impl | inactive | no |
+| ethereum | `0xed785af60bed688baa8990cd5c4166221599a441` | CurveStableSwapNG-2 | impl | live | no |
 | ethereum | `0xedccb35798fae4925718a43cc608ae136208aa8d` | RewardFactory | impl | inactive | no |
 | ethereum | `0xee351f12eae8c2b8b9d1b9bfd3c5dd565234578d` | CurveTwocryptoOptimized | impl | live | no |
 | ethereum | `0xee3ab4e439ed52c7b8668864e2452ed23a9d67e8` | Booster | impl | inactive | no |
@@ -221,10 +224,3 @@
 | ethereum | `0xfcb28d032e422ae3710c1ad74338cbb40b0749cf` | PoolUtilities | impl | inactive | no |
 | ethereum | `0xfe11a5009f2121622271e7dd0fd470264e076af6` | SafeProxy | proxy | live | no |
 | ethereum | `0xfeef77d3f69374f66429c91d732a244f074bdf74` | cvxFxsToken | impl | inactive | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x5c0b03914f68f2717d779a0211fd98c2cc45a4dd`
-- ethereum `0xaf01d68714e7ea67f43f08b5947e367126b889b1`
-- ethereum `0xed785af60bed688baa8990cd5c4166221599a441`

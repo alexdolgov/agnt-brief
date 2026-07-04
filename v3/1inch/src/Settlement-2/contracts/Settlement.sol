@@ -1,56 +1,243 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.23;
+pragma solidity 0.8.17;
 
-import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import { IOrderMixin } from "@1inch/limit-order-protocol-contract/contracts/interfaces/IOrderMixin.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@1inch/limit-order-protocol/contracts/interfaces/NotificationReceiver.sol";
+import "@1inch/limit-order-protocol/contracts/interfaces/IOrderMixin.sol";
+import "./helpers/WhitelistChecker.sol";
+import "./interfaces/IWhitelistRegistry.sol";
+import "./interfaces/ISettlement.sol";
 
-import { SimpleSettlement } from "./SimpleSettlement.sol";
+contract Settlement is ISettlement, Ownable, WhitelistChecker {
+    bytes1 private constant _FINALIZE_INTERACTION = 0x01;
+    uint256 private constant _ORDER_TIME_START_MASK     = 0xFFFFFFFF00000000000000000000000000000000000000000000000000000000; // prettier-ignore
+    uint256 private constant _ORDER_DURATION_MASK       = 0x00000000FFFFFFFF000000000000000000000000000000000000000000000000; // prettier-ignore
+    uint256 private constant _ORDER_INITIAL_RATE_MASK   = 0x0000000000000000FFFF00000000000000000000000000000000000000000000; // prettier-ignore
+    uint256 private constant _ORDER_FEE_MASK            = 0x00000000000000000000FFFFFFFF000000000000000000000000000000000000; // prettier-ignore
+    uint256 private constant _ORDER_TIME_START_SHIFT = 224; // orderTimeMask 224-255
+    uint256 private constant _ORDER_DURATION_SHIFT = 192; // durationMask 192-223
+    uint256 private constant _ORDER_INITIAL_RATE_SHIFT = 176; // initialRateMask 176-191
+    uint256 private constant _ORDER_FEE_SHIFT = 144; // orderFee 144-175
 
-/**
- * @title Settlement contract
- * @notice Contract to execute limit orders settlement on Mainnet, created by Fusion mode.
- */
-contract Settlement is SimpleSettlement {
-    error InvalidPriorityFee();
+    uint256 private constant _ORDER_FEE_BASE_POINTS = 1e15;
+    uint16 private constant _BASE_POINTS = 10000; // 100%
+    uint16 private constant _DEFAULT_INITIAL_RATE_BUMP = 1000; // 10%
+    uint32 private constant _DEFAULT_DURATION = 30 minutes;
 
-    constructor(address limitOrderProtocol, IERC20 accessToken, address weth, address owner)
-        SimpleSettlement(limitOrderProtocol, accessToken, weth, owner)
-    {}
+    error IncorrectOrderStartTime();
+    error IncorrectCalldataParams();
+    error FailedExternalCall();
+    error OnlyFeeBankAccess();
+    error NotEnoughCredit();
 
-    function _postInteraction(
-        IOrderMixin.Order calldata order,
-        bytes calldata extension,
-        bytes32 orderHash,
-        address taker,
-        uint256 makingAmount,
-        uint256 takingAmount,
-        uint256 remainingMakingAmount,
-        bytes calldata extraData
-    ) internal virtual override {
-        if (!_isPriorityFeeValid()) revert InvalidPriorityFee();
-        super._postInteraction(order, extension, orderHash, taker, makingAmount, takingAmount, remainingMakingAmount, extraData);
+    address public feeBank;
+    mapping(address => uint256) public creditAllowance;
+
+    modifier onlyFeeBank() {
+        if (msg.sender != feeBank) revert OnlyFeeBankAccess();
+        _;
     }
 
-    /**
-     * @dev Validates priority fee according to the spec
-     * https://snapshot.org/#/1inch.eth/proposal/0xa040c60050147a0f67042ae024673e92e813b5d2c0f748abf70ddfa1ed107cbe
-     * For blocks with baseFee <10.6 gwei – the priorityFee is capped at 70% of the baseFee.
-     * For blocks with baseFee between 10.6 gwei and 104.1 gwei – the priorityFee is capped at 50% of the baseFee.
-     * For blocks with baseFee >104.1 gwei – priorityFee is capped at 65% of the block’s baseFee.
-     */
-    function _isPriorityFeeValid() internal view returns(bool) {
-        unchecked {
-            uint256 baseFee = block.basefee;
-            uint256 priorityFee = tx.gasprice - baseFee;
+    constructor(IWhitelistRegistry whitelist, address limitOrderProtocol)
+        WhitelistChecker(whitelist, limitOrderProtocol)
+    {} // solhint-disable-line no-empty-blocks
 
-            if (baseFee < 10.6 gwei) {
-                return priorityFee * 100 <= baseFee * 70;
-            } else if (baseFee > 104.1 gwei) {
-                return priorityFee * 100 <= baseFee * 65;
-            } else {
-                return priorityFee * 2 <= baseFee;
+    function matchOrders(
+        IOrderMixin orderMixin,
+        OrderLib.Order calldata order,
+        bytes calldata signature,
+        bytes calldata interaction,
+        uint256 makingAmount,
+        uint256 takingAmount,
+        uint256 thresholdAmount,
+        address target
+    ) external onlyWhitelisted(msg.sender) {
+        _matchOrder(orderMixin, order, msg.sender, signature, interaction, makingAmount, takingAmount, thresholdAmount, target);
+    }
+
+    function matchOrdersEOA(
+        IOrderMixin orderMixin,
+        OrderLib.Order calldata order,
+        bytes calldata signature,
+        bytes calldata interaction,
+        uint256 makingAmount,
+        uint256 takingAmount,
+        uint256 thresholdAmount,
+        address target
+    ) external onlyWhitelistedEOA {
+        _matchOrder(
+            orderMixin,
+            order,
+            tx.origin, // solhint-disable-line avoid-tx-origin
+            signature,
+            interaction,
+            makingAmount,
+            takingAmount,
+            thresholdAmount,
+            target
+        );
+    }
+
+    function fillOrderInteraction(
+        address, /* taker */
+        uint256, /* makingAmount */
+        uint256 takingAmount,
+        bytes calldata interactiveData
+    ) external returns (uint256) {
+        address interactor = _onlyLimitOrderProtocol();
+        if (interactiveData[0] == _FINALIZE_INTERACTION) {
+            (address[] calldata targets, bytes[] calldata calldatas) = _abiDecodeFinal(interactiveData[1:]);
+
+            uint256 length = targets.length;
+            if (length != calldatas.length) revert IncorrectCalldataParams();
+            for (uint256 i = 0; i < length; i++) {
+                // solhint-disable-next-line avoid-low-level-calls
+                (bool success, ) = targets[i].call(calldatas[i]);
+                if (!success) revert FailedExternalCall();
             }
+        } else {
+            (
+                OrderLib.Order calldata order,
+                bytes calldata signature,
+                bytes calldata interaction,
+                uint256 makingOrderAmount,
+                uint256 takingOrderAmount,
+                uint256 thresholdAmount,
+                address target
+            ) = _abiDecodeIteration(interactiveData[1:]);
+
+            _matchOrder(
+                IOrderMixin(msg.sender),
+                order,
+                interactor,
+                signature,
+                interaction,
+                makingOrderAmount,
+                takingOrderAmount,
+                thresholdAmount,
+                target
+            );
+        }
+        uint256 salt = uint256(bytes32(interactiveData[interactiveData.length - 32:]));
+        return (takingAmount * _getFeeRate(salt)) / _BASE_POINTS;
+    }
+
+    function _getFeeRate(uint256 salt) internal view returns (uint256) {
+        uint256 orderTime = (salt & _ORDER_TIME_START_MASK) >> _ORDER_TIME_START_SHIFT;
+        // solhint-disable-next-line not-rely-on-time
+        uint256 currentTimestamp = block.timestamp;
+        if (orderTime > currentTimestamp) revert IncorrectOrderStartTime();
+
+        uint256 duration = (salt & _ORDER_DURATION_MASK) >> _ORDER_DURATION_SHIFT;
+        if (duration == 0) {
+            duration = _DEFAULT_DURATION;
+        }
+        orderTime += duration;
+
+        uint256 initialRate = (salt & _ORDER_INITIAL_RATE_MASK) >> _ORDER_INITIAL_RATE_SHIFT;
+        if (initialRate == 0) {
+            initialRate = _DEFAULT_INITIAL_RATE_BUMP;
+        }
+
+        return
+            currentTimestamp < orderTime
+                ? _BASE_POINTS + (initialRate * (orderTime - currentTimestamp)) / duration
+                : _BASE_POINTS;
+    }
+
+    function _matchOrder(
+        IOrderMixin orderMixin,
+        OrderLib.Order calldata order,
+        address interactor,
+        bytes calldata signature,
+        bytes calldata interaction,
+        uint256 makingAmount,
+        uint256 takingAmount,
+        uint256 thresholdAmount,
+        address target
+    ) private {
+        uint256 orderFee = ((order.salt & _ORDER_FEE_MASK) >> _ORDER_FEE_SHIFT) * _ORDER_FEE_BASE_POINTS;
+        uint256 currentAllowance = creditAllowance[interactor];
+        if (currentAllowance < orderFee) revert NotEnoughCredit();
+        unchecked {
+            creditAllowance[interactor] = currentAllowance - orderFee;
+        }
+        bytes memory patchedInteraction = abi.encodePacked(interaction, order.salt);
+        orderMixin.fillOrderTo(
+            order,
+            signature,
+            patchedInteraction,
+            makingAmount,
+            takingAmount,
+            thresholdAmount,
+            target
+        );
+    }
+
+    function increaseCreditAllowance(address account, uint256 amount) external onlyFeeBank returns (uint256 allowance) {
+        allowance = creditAllowance[account];
+        allowance += amount;
+        creditAllowance[account] = allowance;
+    }
+
+    function decreaseCreditAllowance(address account, uint256 amount) external onlyFeeBank returns (uint256 allowance) {
+        allowance = creditAllowance[account];
+        allowance -= amount;
+        creditAllowance[account] = allowance;
+    }
+
+    function setFeeBank(address newFeeBank) external onlyOwner {
+        feeBank = newFeeBank;
+    }
+
+    function _abiDecodeFinal(bytes calldata cd)
+        private
+        pure
+        returns (address[] calldata targets, bytes[] calldata calldatas)
+    {
+        // solhint-disable-next-line no-inline-assembly
+        assembly {
+            let ptr := add(cd.offset, calldataload(cd.offset))
+            targets.offset := add(ptr, 0x20)
+            targets.length := calldataload(ptr)
+
+            ptr := add(cd.offset, calldataload(add(cd.offset, 0x20)))
+            calldatas.offset := add(ptr, 0x20)
+            calldatas.length := calldataload(ptr)
+        }
+    }
+
+    function _abiDecodeIteration(bytes calldata cd)
+        private
+        pure
+        returns (
+            OrderLib.Order calldata order,
+            bytes calldata signature,
+            bytes calldata interaction,
+            uint256 makingOrderAmount,
+            uint256 takingOrderAmount,
+            uint256 thresholdAmount,
+            address target
+        )
+    {
+        // solhint-disable-next-line no-inline-assembly
+        assembly {
+            order := add(cd.offset, calldataload(cd.offset))
+
+            let ptr := add(cd.offset, calldataload(add(cd.offset, 0x20)))
+            signature.offset := add(ptr, 0x20)
+            signature.length := calldataload(ptr)
+
+            ptr := add(cd.offset, calldataload(add(cd.offset, 0x40)))
+            interaction.offset := add(ptr, 0x20)
+            interaction.length := calldataload(ptr)
+
+            makingOrderAmount := calldataload(add(cd.offset, 0x60))
+            takingOrderAmount := calldataload(add(cd.offset, 0x80))
+            thresholdAmount := calldataload(add(cd.offset, 0xa0))
+            target := calldataload(add(cd.offset, 0xc0))
         }
     }
 }

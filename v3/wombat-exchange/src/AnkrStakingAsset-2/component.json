@@ -1,0 +1,18 @@
+{
+  "component": "AnkrStakingAsset-2",
+  "main_contract": "AnkrStakingAsset",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2290281060f2ce6bb73dccf9b1735bc366f3f2c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

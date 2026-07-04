@@ -1,0 +1,18 @@
+{
+  "component": "SyncSwapRouterV2-2",
+  "main_contract": "SyncSwapRouterV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xfd541d0e2773a189450a70f06bc7edd3c1dc9115",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

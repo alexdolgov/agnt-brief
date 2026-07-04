@@ -1,0 +1,18 @@
+{
+  "component": "DefaultDepositContract-2",
+  "main_contract": "DefaultDepositContract",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x674bdf20a0f284d710bc40872100128e2d66bd3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

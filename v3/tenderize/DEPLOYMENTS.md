@@ -1,11 +1,13 @@
 # tenderize — deployments
 
-75 verified deployment(s) across 41 component(s).
+77 verified deployment(s) across 41 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x2429fc7082eb517c14946b392b195b181d0b9781` | TenderSwap | impl | live | no |
 | arbitrum | `0x43c3dbee4d6e884dc2b81e9432ecee29dd8e008d` | ERC1967Upgrade | proxy | live | yes |
 | arbitrum | `0x4a3c14d7450c30f712e89659af21f90df56bc9ba` | Tenderizer | impl | live | yes |
+| arbitrum | `0xfac38532829fdd744373fdcd4708ab90fa0c4078` | TenderToken | impl | live | no |
 | ethereum | `0x09695a6dff47b0053ef9553fee49d2d833afa68b` | GraphSale | impl | inactive | no |
 | ethereum | `0x18aaa7115705e8be94bffebde57af9bfc265b998` | AudiusAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x22a9ccfdd10382d9cd18ca4437ff375bd7a87bbd` | AudiusAdminUpgradeabilityProxy | impl | inactive | no |
@@ -79,9 +81,3 @@
 | ethereum | `0xf93bc671e463c61bd2e7f8fe8c8a37dfb633b6f6` | AudiusAdminUpgradeabilityProxy-6 | impl | inactive | no |
 | ethereum | `0xfc642533cf9756de38831ea6b3d2b0020eaa60d3` | EthRewardsManager | impl | inactive | no |
 | ethereum | `0xfcf78ac094288d7200cfdb367a8cd07108dfa128` | GraphTokenLockManager | impl | inactive | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x2429fc7082eb517c14946b392b195b181d0b9781`
-- arbitrum `0xfac38532829fdd744373fdcd4708ab90fa0c4078`

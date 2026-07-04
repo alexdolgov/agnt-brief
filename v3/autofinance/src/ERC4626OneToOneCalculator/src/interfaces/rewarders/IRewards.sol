@@ -52,24 +52,14 @@ interface IRewards {
     /// @param v v component of the payload signature
     /// @param r r component of the payload signature
     /// @param s s component of the payload signature
-    function claim(
-        Recipient calldata recipient,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    ) external returns (uint256);
+    function claim(Recipient calldata recipient, uint8 v, bytes32 r, bytes32 s) external returns (uint256);
 
     /// @notice Claim rewards on behalf of another account , invoked primarily by the router
     /// @param recipient Published rewards payload
     /// @param v v component of the payload signature
     /// @param r r component of the payload signature
     /// @param s s component of the payload signature
-    function claimFor(
-        Recipient calldata recipient,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    ) external returns (uint256);
+    function claimFor(Recipient calldata recipient, uint8 v, bytes32 r, bytes32 s) external returns (uint256);
 
     /// @notice Generate the hash of the payload
     /// @param recipient Published rewards payload

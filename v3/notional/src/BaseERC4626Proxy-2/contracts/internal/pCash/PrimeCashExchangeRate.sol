@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -201,10 +201,18 @@ library PrimeCashExchangeRate {
         s.rateOracleTimeWindow5Min = rateOracleTimeWindow5min;
     }
 
-    function setMaxUnderlyingSupply(uint16 currencyId, uint256 maxUnderlyingSupply) internal returns (uint256 unpackedSupply) {
+    function setMaxUnderlyingSupply(
+        uint16 currencyId,
+        uint256 maxUnderlyingSupply,
+        uint8 maxPrimeDebtUtilization
+    ) internal returns (uint256 unpackedSupply) {
         PrimeCashFactorsStorage storage s = LibStorage.getPrimeCashFactors()[currencyId];
         s.maxUnderlyingSupply = FloatingPoint.packTo32Bits(maxUnderlyingSupply);
         unpackedSupply = FloatingPoint.unpackFromBits(uint256(s.maxUnderlyingSupply));
+
+        // This is set in percentage of the max underlying supply
+        require(maxPrimeDebtUtilization <= Constants.PERCENTAGE_DECIMALS);
+        s.maxPrimeDebtUtilization = maxPrimeDebtUtilization;
     }
 
     /// @notice Updates prime cash interest rate curve after initialization,
@@ -297,6 +305,7 @@ library PrimeCashExchangeRate {
         s.totalPrimeSupply = newTotalPrimeSupply.toUint().toUint88();
 
         Emitter.emitBorrowOrRepayPrimeDebt(account, currencyId, netPrimeSupplyChange, netPrimeDebtChange);
+        _checkInvariant(s);
     }
 
     /// @notice Updates prime supply whenever tokens enter or exit the system.
@@ -313,6 +322,8 @@ library PrimeCashExchangeRate {
         int256 newLastTotalUnderlyingValue = int256(uint256(s.lastTotalUnderlyingValue))
             .add(netUnderlyingChange);
 
+        require(Constants.MIN_TOTAL_UNDERLYING_VALUE <= newLastTotalUnderlyingValue); // dev: min underlying
+
         // lastTotalUnderlyingValue cannot be negative since we cannot hold a negative
         // balance, if that occurs then this will revert.
         s.lastTotalUnderlyingValue = newLastTotalUnderlyingValue.toUint().toUint88();
@@ -322,6 +333,17 @@ library PrimeCashExchangeRate {
         // itself is floored at zero). If total underlying tokens held is zero, then either
         // there is no supply or the prime cash market is at 100% utilization.
         s.totalPrimeSupply = newTotalPrimeSupply.toUint().toUint88();
+
+        _checkInvariant(s);
+    }
+
+    function _checkInvariant(PrimeCashFactorsStorage storage s) private view {
+        int256 supply = int256(s.supplyScalar).mul(s.underlyingScalar).mul(s.totalPrimeSupply);
+        int256 debt = int256(s.debtScalar).mul(s.underlyingScalar).mul(s.totalPrimeDebt);
+        // Adding 1 here ensures that any balances below 1e36 that will round off will not cause
+        // invariant failures.
+        int256 underlying = int256(s.lastTotalUnderlyingValue + 1).mul(Constants.DOUBLE_SCALAR_PRECISION);
+        require(supply.sub(debt) <= underlying); // dev: invariant failed
     }
 
     function getTotalfCashDebtOutstanding(
@@ -532,20 +554,6 @@ library PrimeCashExchangeRate {
                 .mulInScalarPrecision(Constants.SCALAR_PRECISION.add(underlyingInterestRate));
             prior.lastTotalUnderlyingValue = currentUnderlyingValue;
         }
-
-        uint256 oracleMoneyMarketRate = LibStorage.getRebalancingContext()[currencyId].oracleMoneyMarketRate;
-
-        // Update the oracle supply rate, used for valuations of sub 3 month
-        // idiosyncratic fCash
-        prior.oracleSupplyRate = InterestRateCurve.updateRateOracle(
-            prior.lastAccrueTime,
-            // This is the annual prime supply rate plus the underlying oracle money
-            // market rate.
-            annualSupplyRate.add(oracleMoneyMarketRate),
-            prior.oracleSupplyRate,
-            prior.rateOracleTimeWindow,
-            blockTime
-        );
 
         // Update the last accrue time
         prior.lastAccrueTime = blockTime;

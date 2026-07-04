@@ -1,0 +1,18 @@
+{
+  "component": "Points2Manager-2",
+  "main_contract": "Points2Manager",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9dd61f638712adc3f7d92ceaa08253e2ef5fe14b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

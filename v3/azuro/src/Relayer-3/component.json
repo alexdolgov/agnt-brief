@@ -7,12 +7,12 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x5dc8cd04f0c3529a113c693efc08b95c2d9a6045",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8da05c0021e6b35865fdc959c54dcef3a4abba9d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

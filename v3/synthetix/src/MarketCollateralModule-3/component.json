@@ -1,0 +1,18 @@
+{
+  "component": "MarketCollateralModule-3",
+  "main_contract": "MarketCollateralModule",
+  "source_file_count": 54,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf326af86ff32b430d7ba01e9bce198246ef2b027",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

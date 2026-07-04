@@ -1,6 +1,6 @@
 # etherfuse — deployments
 
-137 verified deployment(s) across 7 component(s).
+141 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -36,6 +36,7 @@
 | base | `0x3cbea89ae7b9813e9a0b4ecb8c5fe12c8a4290c2` | BraleToken | impl | inactive | no |
 | base | `0x3de700b2e7178b3fcf201d061aeafed2fdf27424` | OptimizedTransparentUpgradeableProxy | impl | live | no |
 | base | `0x44e246cda5ee67ac20a155869c0876c20c308f38` | BraleToken | impl | inactive | no |
+| base | `0x46080f31351a6568f44575e3effde7f0c86867f9` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x46802bdbb7e83cbfbe7bea13b42a9db56f13e63b` | OptimizedTransparentUpgradeableProxy | impl | live | no |
 | base | `0x48ead7df8e4df7d9caf49268032784ee5abb17e1` | OptimizedTransparentUpgradeableProxy | impl | live | no |
 | base | `0x48fdf7ff8ca634699690833892db939952b419ca` | BraleToken | impl | inactive | no |
@@ -61,6 +62,8 @@
 | base | `0x7acf9aadc88338b91245d1149417894a9a8515e7` | BraleToken | impl | inactive | no |
 | base | `0x7af68b2855e9590ab4483f28f6f460a81bbbdf96` | BraleToken | impl | inactive | no |
 | base | `0x7ce3c393b07d5766c8da751f794391b5be55d1d1` | BraleToken | proxy | live | no |
+| base | `0x7cee47e7b7cd04cf984e8dd86c42595b5771a9b2` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x834df4c1d8f51be24322e39e4766697be015512f` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x86cc1214e5e41e96e91d4d8944e99f218f300299` | BraleToken | proxy | live | no |
 | base | `0x88fa272fe8685b4e73d4590bdca70a5b901f7ebc` | BraleToken | impl | inactive | no |
 | base | `0x894ec073e9e616a5aa394eae8752b35ad0da1942` | BraleToken | impl | inactive | no |
@@ -92,6 +95,7 @@
 | base | `0xc1bc0450f8bb1386ffd5150cbb3ad38da1f0dd12` | BraleToken | impl | inactive | no |
 | base | `0xc1e1a376db662064d6a2b3e8f2c0d2b5ecdbbd32` | BraleToken | proxy | live | no |
 | base | `0xc2c1f8eb98c0468be0232dd4166705d0dea3fe31` | OptimizedTransparentUpgradeableProxy | proxy | live | no |
+| base | `0xc6221856e45ed806f8325a084bed3d69d32c526d` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0xcc18b41a0f63c67f17f23388c848aec67b583422` | BraleToken | proxy | live | no |
 | base | `0xcc59201b18ca9a939c5f6ebcf948e40a1cd0dfcb` | BraleToken | impl | inactive | no |
 | base | `0xccfcfde94888380d7413e3e144d0f453f98cc6d5` | BraleToken | proxy | live | no |
@@ -141,11 +145,3 @@
 | polygon | `0xd660bb3aaca8668e674b2c7d248feb39b15acfcb` | StablebondOFTUpgradeable | impl | live | no |
 | polygon | `0xe56cee16b76903b3c8eb4af3c06d1d2fab320f95` | ProxyAdmin | proxy | live | no |
 | polygon | `0xed27d51b42744139afebb319340255362306eec5` | ProxyAdmin | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x46080f31351a6568f44575e3effde7f0c86867f9`
-- base `0x7cee47e7b7cd04cf984e8dd86c42595b5771a9b2`
-- base `0x834df4c1d8f51be24322e39e4766697be015512f`
-- base `0xc6221856e45ed806f8325a084bed3d69d32c526d`

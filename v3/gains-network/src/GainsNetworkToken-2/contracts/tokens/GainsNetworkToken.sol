@@ -1,9 +1,12 @@
 // SPDX-License-Identifier: MIT
-import { ERC20, ERC20Capped } from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
-import { AccessControlEnumerable } from "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
+pragma solidity 0.8.23;
 
-pragma solidity 0.8.17;
+import {ERC20, ERC20Capped} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
+import {AccessControlEnumerable} from "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 
+/**
+ * @dev GNS token contract, simple ERC20 token with access control and minting/burning
+ */
 contract GainsNetworkToken is ERC20Capped, AccessControlEnumerable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
@@ -14,39 +17,26 @@ contract GainsNetworkToken is ERC20Capped, AccessControlEnumerable {
         _setupRole(DEFAULT_ADMIN_ROLE, admin);
     }
 
-    function setupRoles(
-        address tradingStorage,
-        address nftRewards,
-        address referralRewards,
-        address trading,
-        address callbacks,
-        address vault
-    ) external onlyRole(DEFAULT_ADMIN_ROLE){
-        require(tradingStorage != address(0) && nftRewards != address(0) && referralRewards != address(0)
-            && trading != address(0) && callbacks != address(0) && vault != address(0), "WRONG_ADDRESSES");
-        
+    function setupRoles(address diamond, address vault) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        require(diamond != address(0) && vault != address(0), "WRONG_ADDRESSES");
+
         require(initialized == false, "INITIALIZED");
         initialized = true;
 
-        _setupRole(MINTER_ROLE, tradingStorage);
-        _setupRole(BURNER_ROLE, tradingStorage);
-
-        _setupRole(MINTER_ROLE, nftRewards);
-        _setupRole(MINTER_ROLE, referralRewards);
-        _setupRole(MINTER_ROLE, trading);
-        _setupRole(MINTER_ROLE, callbacks);
-        
+        _setupRole(MINTER_ROLE, diamond);
         _setupRole(MINTER_ROLE, vault);
+
+        _setupRole(BURNER_ROLE, diamond);
         _setupRole(BURNER_ROLE, vault);
     }
 
     // Mint tokens (called by our ecosystem contracts)
-    function mint(address to, uint amount) external onlyRole(MINTER_ROLE) {
+    function mint(address to, uint256 amount) external onlyRole(MINTER_ROLE) {
         _mint(to, amount);
     }
 
     // Burn tokens (called by our ecosystem contracts)
-    function burn(address from, uint amount) external onlyRole(BURNER_ROLE) {
+    function burn(address from, uint256 amount) external onlyRole(BURNER_ROLE) {
         _burn(from, amount);
     }
 }

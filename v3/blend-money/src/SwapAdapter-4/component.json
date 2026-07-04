@@ -1,0 +1,18 @@
+{
+  "component": "SwapAdapter-4",
+  "main_contract": "SwapAdapter",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ccedc4f8ea3362e0f85c88a6866976ad3db3406",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

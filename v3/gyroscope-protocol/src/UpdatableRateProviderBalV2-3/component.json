@@ -1,0 +1,18 @@
+{
+  "component": "UpdatableRateProviderBalV2-3",
+  "main_contract": "UpdatableRateProviderBalV2",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x32f6fc935456f5fa4e37b095ba17efe95fc41041",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

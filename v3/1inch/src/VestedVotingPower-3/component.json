@@ -1,0 +1,18 @@
+{
+  "component": "VestedVotingPower-3",
+  "main_contract": "VestedVotingPower",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb7246c98b6e6c8529c06359b237566e5bc4677c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

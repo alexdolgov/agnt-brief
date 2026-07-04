@@ -1,0 +1,18 @@
+{
+  "component": "DepositWithdrawalProxy-5",
+  "main_contract": "DepositWithdrawalProxy",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa526b730b96d0adc11b206560de19760f12737c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

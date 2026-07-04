@@ -1,15 +1,12 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-06
-*/
+// File: contracts/interfaces/marketSIHandlerDataStorageInterface.sol
 
-// File: contracts/interfaces/IMarketSIHandlerDataStorage.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market si handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketSIHandlerDataStorage  {
+interface marketSIHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function updateRewardPerBlockStorage(uint256 _rewardPerBlock) external returns (bool);
@@ -27,6 +24,7 @@ interface IMarketSIHandlerDataStorage  {
 }
 
 // File: contracts/Errors.sol
+
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -82,32 +80,15 @@ contract ManagerDataStorageErrors is ManagerModifier {
     string internal constant NULL_ADDRESS = "err addr null";
 }
 
-// File: contracts/context/BlockContext.sol
-pragma solidity 0.6.12;
+// File: contracts/marketHandler/marketHandlerDataStorage/marketSIHandlerDataStorage.sol
 
-/**
- * @title BiFi's BlockContext contract
- * @notice BiFi getter Contract for Block Context Information
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-contract BlockContext {
-    function _blockContext() internal view returns(uint256 context) {
-        // block number chain
-        // context = block.number;
-
-        // block timestamp chain
-        context = block.timestamp;
-    }
-}
-
-// File: contracts/marketHandler/marketHandlerDataStorage/MarketSIHandlerDataStorage.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market si handler data storage contract
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorageModifier, BlockContext {
+contract marketSIHandlerDataStorage is marketSIHandlerDataStorageInterface, SIDataStorageModifier {
 	bool emergency;
 
 	address owner;
@@ -154,7 +135,7 @@ contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorag
 		owner = msg.sender;
 		SIHandlerAddr = _SIHandlerAddr;
 		betaRate = 5 * (10 ** 17);
-		marketRewardInfo.rewardLaneUpdateAt = _blockContext();
+		marketRewardInfo.rewardLaneUpdateAt = block.number;
 	}
 
 	function ownershipTransfer(address _owner) onlyOwner external returns (bool)
@@ -238,11 +219,10 @@ contract MarketSIHandlerDataStorage is IMarketSIHandlerDataStorage, SIDataStorag
 }
 
 // File: contracts/truffleKit/siHandlerSide/siDataStorages.sol
-// SPDX-License-Identifier: BSD-3-Clause
 
 pragma solidity 0.6.12;
 
-contract EtherSIDataStorage is MarketSIHandlerDataStorage {
+contract EtherSIDataStorage is marketSIHandlerDataStorage {
     constructor(address _SIHandlerAddr)
-    MarketSIHandlerDataStorage(_SIHandlerAddr) public {}
+    marketSIHandlerDataStorage(_SIHandlerAddr) public {}
 }

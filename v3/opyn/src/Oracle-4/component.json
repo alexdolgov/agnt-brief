@@ -1,0 +1,21 @@
+{
+  "component": "Oracle-4",
+  "main_contract": "Oracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf",
+    "https://www.openzeppelin.com/news/opyn-gamma-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7054e08461e3ecb7718b63540addb3c3a1746415",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

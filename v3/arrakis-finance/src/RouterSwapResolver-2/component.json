@@ -1,7 +1,7 @@
 {
   "component": "RouterSwapResolver-2",
   "main_contract": "RouterSwapResolver",
-  "source_file_count": 15,
+  "source_file_count": 22,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xc6c53369c36d6b4f4a6c195441fe2d33149fb265",
+      "address": "0x2ce9e840b69a86c965f4d732e39e389fe69fda51",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

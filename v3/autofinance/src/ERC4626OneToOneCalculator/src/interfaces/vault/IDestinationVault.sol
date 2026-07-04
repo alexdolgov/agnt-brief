@@ -59,9 +59,6 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @notice Balance of underlying debt, sum of `externalDebtBalance()` and `internalDebtBalance()`.
     function balanceOfUnderlyingDebt() external view returns (uint256);
 
-    /// @notice Total balance of underlying, sum of queried balances minus debt balances.
-    function excessUnderlyingBalance() external view returns (uint256);
-
     /// @notice Rewarder for this vault
     function rewarder() external view returns (address);
 
@@ -73,22 +70,6 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
 
     /// @notice The type of pool plus any staking information
     function destType() external view returns (string memory);
-
-    /// @notice Sets a token to be tracked or not
-    /// @param token Token to start or stop tracking
-    /// @param tracked True to track. False to stop.
-    function setTrackedToken(
-        address token,
-        bool tracked
-    ) external;
-
-    /// @notice Returns tokens that are protected from transfer
-    function trackedTokens() external view returns (address[] memory);
-
-    /// @notice Returns whether a token is tracked or not
-    function isTrackedToken(
-        address
-    ) external view returns (bool);
 
     /// @notice If the pool only deals in ETH when adding or removing liquidity
     function poolDealInEth() external view returns (bool);
@@ -154,11 +135,7 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
 
     /// @notice Pull any non-tracked token to the specified destination
     /// @dev Should be limited to TOKEN_RECOVERY_MANAGER
-    function recover(
-        address[] calldata tokens,
-        uint256[] calldata amounts,
-        address[] calldata destinations
-    ) external;
+    function recover(address[] calldata tokens, uint256[] calldata amounts, address[] calldata destinations) external;
 
     /// @notice Recovers any extra underlying both in DV and staked externally not tracked as debt.
     /// @dev Should be limited to TOKEN_SAVER_ROLE.
@@ -177,10 +154,7 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @param shares amount of destination vault shares to burn
     /// @param to destination of the underlying asset
     /// @return amount underlyer amount 'to' received
-    function withdrawUnderlying(
-        uint256 shares,
-        address to
-    ) external returns (uint256 amount);
+    function withdrawUnderlying(uint256 shares, address to) external returns (uint256 amount);
 
     /// @notice Burn specified shares for underlyer swapped to base asset
     /// @param shares amount of vault shares to burn

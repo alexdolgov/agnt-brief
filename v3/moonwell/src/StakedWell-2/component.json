@@ -1,0 +1,26 @@
+{
+  "component": "StakedWell-2",
+  "main_contract": "StakedWell",
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x701551a3cd30a29ccc012e8f160fb2cac9b0f5af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb56c57cec4d56072942caf90a8f694ed766012a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-06
-*/
-
 // File: contracts/SafeMath.sol
 pragma solidity ^0.6.12;
 
@@ -252,9 +248,6 @@ interface IMarketHandler  {
 }
 
 // File: contracts/interfaces/IServiceIncentive.sol
-
-
-
 pragma solidity 0.6.12;
 
 /**

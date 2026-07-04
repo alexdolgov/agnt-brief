@@ -1,0 +1,34 @@
+{
+  "component": "DPPAdvanced-2",
+  "main_contract": "DPPAdvanced",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x64b2e6bba89e5c9788a4fb238694055a16c2f1e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x88cbf433471a0cd8240d2a12354362988b4593e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa7e60e63560c36d81d5cf80e175941a6a80e6a3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

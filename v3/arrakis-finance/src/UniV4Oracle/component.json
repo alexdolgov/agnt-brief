@@ -1,15 +1,15 @@
 {
   "component": "UniV4Oracle",
   "main_contract": "UniV4Oracle",
-  "source_file_count": 28,
+  "source_file_count": 24,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x173229f540e85376aa180d41928994163ac19ff9",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1ef0c7b9c6d347c90943be4d7342b31c9434f32",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

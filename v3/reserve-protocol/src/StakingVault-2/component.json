@@ -1,27 +1,31 @@
 {
   "component": "StakingVault-2",
   "main_contract": "StakingVault",
-  "source_file_count": 94,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf",
-    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-04-reserve-folio-solidity-2.0.0.pdf",
-    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf"
-  ],
+  "source_file_count": 97,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x02578bdd4cc437d12ba6c9d4fc0eec2c28b2af07",
+      "address": "0x5bed18aca50e6057e6658fe8498004092eedcdcf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd5aa2eed65841687eb6bc40ff94f744965e8ce0f",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2f616b82022874519cb4bb795b8b931d65564825",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbd49ceac629d7131b8a975b582acdaeb5c049bad",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

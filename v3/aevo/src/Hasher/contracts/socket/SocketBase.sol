@@ -2,12 +2,11 @@
 pragma solidity 0.8.7;
 
 import "../interfaces/IHasher.sol";
+import "../interfaces/ITransmitManager.sol";
+import "../interfaces/IExecutionManager.sol";
+
 import "./SocketConfig.sol";
 
-/**
- * @title SocketBase
- * @notice A contract that is responsible for the governance setters and inherits SocketConfig
- */
 abstract contract SocketBase is SocketConfig {
     IHasher public hasher__;
     ITransmitManager public transmitManager__;
@@ -15,39 +14,17 @@ abstract contract SocketBase is SocketConfig {
 
     uint32 public immutable chainSlug;
     // incrementing nonce, should be handled in next socket version.
-    uint64 public messageCount;
+    uint224 public messageCount;
 
-    bytes32 public immutable version;
-
-    /**
-     * @dev Constructs a new Socket contract instance.
-     * @param chainSlug_ The chain slug of the contract.
-     */
-    constructor(uint32 chainSlug_, string memory version_) {
+    constructor(uint32 chainSlug_) {
         chainSlug = chainSlug_;
-        version = keccak256(abi.encode(version_));
     }
 
-    /**
-     * @dev An error that is thrown when an invalid signer tries to seal or propose.
-     */
-    error InvalidTransmitter();
+    error InvalidAttester();
 
-    /**
-     * @notice An event that is emitted when the hasher is updated.
-     * @param hasher The address of the new hasher.
-     */
     event HasherSet(address hasher);
-    /**
-     * @notice An event that is emitted when the executionManager is updated.
-     * @param executionManager The address of the new executionManager.
-     */
     event ExecutionManagerSet(address executionManager);
 
-    /**
-     * @notice updates hasher_
-     * @param hasher_ address of hasher
-     */
     function setHasher(address hasher_) external onlyRole(GOVERNANCE_ROLE) {
         hasher__ = IHasher(hasher_);
         emit HasherSet(hasher_);

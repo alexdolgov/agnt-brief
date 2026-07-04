@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationDistributor-3",
+  "main_contract": "LiquidationDistributor",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x47a297bcadbe7c98991e3e7e3b7cc0109ace0a0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

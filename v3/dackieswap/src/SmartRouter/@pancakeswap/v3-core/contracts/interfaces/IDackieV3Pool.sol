@@ -13,12 +13,12 @@ import './pool/IDackieV3PoolEvents.sol';
 /// to the ERC20 specification
 /// @dev The pool interface is broken up into many smaller pieces
 interface IDackieV3Pool is
-IDackieV3PoolImmutables,
-IDackieV3PoolState,
-IDackieV3PoolDerivedState,
-IDackieV3PoolActions,
-IDackieV3PoolOwnerActions,
-IDackieV3PoolEvents
+    IDackieV3PoolImmutables,
+    IDackieV3PoolState,
+    IDackieV3PoolDerivedState,
+    IDackieV3PoolActions,
+    IDackieV3PoolOwnerActions,
+    IDackieV3PoolEvents
 {
 
 }

@@ -1,0 +1,18 @@
+{
+  "component": "Staking-2",
+  "main_contract": "Staking",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xa1f61ca61fe8655d2a204b518f6de964145a9324",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "component": "MixedRouteQuoterV1-2",
   "main_contract": "MixedRouteQuoterV1",
-  "source_file_count": 28,
+  "source_file_count": 32,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0xff79ec912ba114fd7989b9a2b90c65f0c1b44722",
+      "address": "0x6315dc8ffeaf4278f062a3a9137eeee54f3056a3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

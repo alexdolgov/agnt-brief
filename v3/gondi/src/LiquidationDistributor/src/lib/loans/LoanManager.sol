@@ -3,6 +3,7 @@ pragma solidity ^0.8.21;
 
 import "@openzeppelin/utils/structs/EnumerableSet.sol";
 
+import "../loans//LoanManagerParameterSetter.sol";
 import "../../interfaces/loans/ILoanManager.sol";
 import "../../interfaces/pools/IPoolOfferHandler.sol";
 import "../InputChecker.sol";
@@ -16,6 +17,9 @@ abstract contract LoanManager is ILoanManager, TwoStepOwned {
     /// @notice Time to wait before a new offerHandler can be set.
     uint256 public immutable UPDATE_WAITING_TIME;
 
+    /// @notice OfferHandler setter
+    address public immutable getParameterSetter;
+
     /// @notice Set of accepted callers.
     EnumerableSet.AddressSet internal _acceptedCallers;
     /// @dev Keep this in a separate variable as well since we need the subset of loan contracts
@@ -23,90 +27,84 @@ abstract contract LoanManager is ILoanManager, TwoStepOwned {
     /// this way for simplicity as we can use EnumerableSet.
     mapping(address => bool) internal _isLoanContract;
     /// @notice OfferHandler contract
-    address public immutable getOfferHandler;
+    address public getOfferHandler;
 
-    /// @notice Proposed accepted callers
-    ProposedCaller public getProposedCaller;
-    /// @notice Time when the proposed accepted callers were set.
-    uint256 public getProposedCallerSetTime;
-
-    event CallerRequested(ProposedCaller caller);
-    event CallerAdded(ProposedCaller caller);
+    event CallersAdded(ProposedCaller[] callers);
 
     error CallerNotAccepted();
     error InvalidCallerError();
 
-    constructor(address _owner, address _offerHandler, uint256 _updateWaitingTime)
+    constructor(address _owner, address __offerHandlerSetter, uint256 _updateWaitingTime)
         TwoStepOwned(_owner, _updateWaitingTime)
     {
         UPDATE_WAITING_TIME = _updateWaitingTime;
 
+        getParameterSetter = __offerHandlerSetter;
+        getOfferHandler = LoanManagerParameterSetter(__offerHandlerSetter).getOfferHandler();
+    }
+
+    function updateOfferHandler(address _offerHandler) external {
+        if (msg.sender != getParameterSetter) {
+            revert InvalidCallerError();
+        }
         getOfferHandler = _offerHandler;
     }
-
-    /// @notice First step in d a caller to the accepted callers list. Can be a Loan Contract or Liquidator.
-    /// @param caller The callers to add.
-    function requestAddCaller(ILoanManager.ProposedCaller calldata caller) external onlyOwner {
-        getProposedCaller = caller;
-        getProposedCallerSetTime = block.timestamp;
-
-        emit CallerRequested(caller);
-    }
-
     /// @notice Second step in d a caller to the accepted callers list. Can be a Loan Contract or Liquidator.
     /// @dev Given repayments, we don't allow callers to be removed.
-    /// @param caller The caller to add.
-    function addCaller(ProposedCaller calldata caller) external onlyOwner {
-        if (getProposedCallerSetTime + UPDATE_WAITING_TIME > block.timestamp) {
-            revert TooSoonError();
+    /// @param _callers The callers to add.
+
+    function addCallers(ProposedCaller[] calldata _callers) external {
+        if (msg.sender != getParameterSetter) {
+            revert InvalidCallerError();
+        }
+        uint256 totalCallers = _callers.length;
+        for (uint256 i = 0; i < totalCallers;) {
+            ProposedCaller calldata caller = _callers[i];
+            _acceptedCallers.add(caller.caller);
+            _isLoanContract[caller.caller] = caller.isLoanContract;
+
+            afterCallerAdded(caller.caller);
+            unchecked {
+                ++i;
+            }
         }
 
-        ProposedCaller memory proposedCaller = getProposedCaller;
-        if (proposedCaller.caller != caller.caller || proposedCaller.isLoanContract != caller.isLoanContract) {
-            revert InvalidInputError();
-        }
-
-        _acceptedCallers.add(caller.caller);
-        _isLoanContract[caller.caller] = caller.isLoanContract;
-
-        afterCallerAdded(caller.caller);
-
-        emit CallerAdded(caller);
+        emit CallersAdded(_callers);
     }
 
     /// @notice Check if a caller is accepted.
-    /// @param caller The caller to check.
+    /// @param _caller The caller to check.
     /// @return Whether the caller is accepted.
-    function isCallerAccepted(address caller) external view returns (bool) {
-        return _acceptedCallers.contains(caller);
+    function isCallerAccepted(address _caller) external view returns (bool) {
+        return _acceptedCallers.contains(_caller);
     }
 
     /// @inheritdoc ILoanManager
-    function validateOffer(uint256 tokenId, bytes calldata offer, uint256 protocolFee) external virtual;
+    function validateOffer(uint256 _tokenId, bytes calldata _offer, uint256 _protocolFee) external virtual;
 
     /// @inheritdoc ILoanManager
     function loanRepayment(
-        uint256 loanId,
-        uint256 principalAmount,
-        uint256 apr,
-        uint256 accruedInterest,
-        uint256 protocolFee,
-        uint256 startTime
+        uint256 _loanId,
+        uint256 _principalAmount,
+        uint256 _apr,
+        uint256 _accruedInterest,
+        uint256 _protocolFee,
+        uint256 _startTime
     ) external virtual;
 
     /// @inheritdoc ILoanManager
     function loanLiquidation(
-        address loanAddress,
-        uint256 loanId,
-        uint256 principalAmount,
-        uint256 apr,
-        uint256 accruedInterest,
-        uint256 protocolFee,
-        uint256 received,
-        uint256 startTime
+        address _loanAddress,
+        uint256 _loanId,
+        uint256 _principalAmount,
+        uint256 _apr,
+        uint256 _accruedInterest,
+        uint256 _protocolFee,
+        uint256 _received,
+        uint256 _startTime
     ) external virtual;
 
     /// @notice Perform operations after a caller is added. I.e: ERC20s approvals.
-    /// @param caller The caller that was added.
-    function afterCallerAdded(address caller) internal virtual;
+    /// @param _caller The caller that was added.
+    function afterCallerAdded(address _caller) internal virtual;
 }

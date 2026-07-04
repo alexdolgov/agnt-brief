@@ -81,7 +81,6 @@ interface IStash{
     function processStash() external returns (bool);
     function claimRewards() external returns (bool);
     function initialize(uint256 _pid, address _operator, address _staker, address _gauge, address _rewardFactory) external;
-    function setExtraReward(address) external;
 }
 
 interface IFeeDistributor {
@@ -125,7 +124,6 @@ interface IRewardFactory{
 
 interface IStashFactory{
     function CreateStash(uint256,address,address,uint256) external returns(address);
-    function setImplementation(address, address, address) external;
 }
 
 interface ITokenFactory{
@@ -140,8 +138,6 @@ interface IPools{
     function poolLength() external view returns (uint256);
     function gaugeMap(address) external view returns(bool);
     function setPoolManager(address _poolM) external;
-    function shutdownSystem() external;
-    function setUsedAddress(address[] memory) external;
 }
 
 interface IVestedEscrow{

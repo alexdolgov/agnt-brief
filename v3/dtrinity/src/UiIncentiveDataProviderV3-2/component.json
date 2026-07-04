@@ -1,18 +1,18 @@
 {
   "component": "UiIncentiveDataProviderV3-2",
   "main_contract": "UiIncentiveDataProviderV3",
-  "source_file_count": 24,
+  "source_file_count": 22,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x21bd81b33d4b04b94bd30c6f015484e830b68830",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3ee2d4bde6695cc1ae4a4cda466bdc6d5df479e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "Ladle-2",
+  "main_contract": "Ladle",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeda38a5b1653ef0b460f10b93ff08c839bd32cc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

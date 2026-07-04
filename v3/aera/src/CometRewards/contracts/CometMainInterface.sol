@@ -9,6 +9,30 @@ import "./CometCore.sol";
  * @author Compound
  */
 abstract contract CometMainInterface is CometCore {
+    error Absurd();
+    error AlreadyInitialized();
+    error BadAsset();
+    error BadDecimals();
+    error BadDiscount();
+    error BadMinimum();
+    error BadPrice();
+    error BorrowTooSmall();
+    error BorrowCFTooLarge();
+    error InsufficientReserves();
+    error LiquidateCFTooLarge();
+    error NoSelfTransfer();
+    error NotCollateralized();
+    error NotForSale();
+    error NotLiquidatable();
+    error Paused();
+    error SupplyCapExceeded();
+    error TimestampTooLarge();
+    error TooManyAssets();
+    error TooMuchSlippage();
+    error TransferInFailed();
+    error TransferOutFailed();
+    error Unauthorized();
+
     event Supply(address indexed from, address indexed dst, uint amount);
     event Transfer(address indexed from, address indexed to, uint amount);
     event Withdraw(address indexed src, address indexed to, uint amount);
@@ -55,6 +79,7 @@ abstract contract CometMainInterface is CometCore {
 
     function getAssetInfo(uint8 i) virtual public view returns (AssetInfo memory);
     function getAssetInfoByAddress(address asset) virtual public view returns (AssetInfo memory);
+    function getCollateralReserves(address asset) virtual public view returns (uint);
     function getReserves() virtual public view returns (int);
     function getPrice(address priceFeed) virtual public view returns (uint);
 

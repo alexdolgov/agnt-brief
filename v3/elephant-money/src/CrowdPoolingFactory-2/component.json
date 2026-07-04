@@ -1,0 +1,18 @@
+{
+  "component": "CrowdPoolingFactory-2",
+  "main_contract": "CrowdPoolingFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9c9ef6820a1aa0e25770ccde4e974f81cb28debc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

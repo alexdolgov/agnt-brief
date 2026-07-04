@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -70,9 +70,9 @@ library Market {
         int256 fCashToAccount,
         uint256 timeToMaturity,
         uint256 marketIndex
-    ) internal returns (int256 netPrimeCash) {
+    ) internal returns (int256 netPrimeCash, uint256 postFeeInterestRate) {
         int256 netPrimeCashToReserve;
-        (netPrimeCash, netPrimeCashToReserve) = InterestRateCurve.calculatefCashTrade(
+        (netPrimeCash, netPrimeCashToReserve, postFeeInterestRate) = InterestRateCurve.calculatefCashTrade(
             market,
             cashGroup,
             fCashToAccount,

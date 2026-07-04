@@ -20,11 +20,6 @@ contract ForwarderBase is Initializable, AccessControlUpgradeable {
 
     /* ========== INITIALIZERS ========== */
 
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
-
     function initializeBase() internal initializer {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     }

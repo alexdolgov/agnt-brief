@@ -9,7 +9,7 @@
     {
       "chain": "chain-999",
       "chain_id": 999,
-      "address": "0x7f26bca22b334fd8a0d45daa9cba48df77889a83",
+      "address": "0x60566290fe91f2424bbb2cb49b620a71b8aef3ff",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

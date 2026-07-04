@@ -2,10 +2,34 @@
   "component": "ShareV2",
   "main_contract": "ShareV2",
   "source_file_count": 6,
-  "deployment_count": 57,
+  "deployment_count": 60,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x379e8d9f6a8a045a8654169fabff8bcfec0d3934",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6aff2526d50fa742ca08ed1cf6e3cf7987a30f5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd2df8d600f7b32b8e708900646f8898c52158690",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

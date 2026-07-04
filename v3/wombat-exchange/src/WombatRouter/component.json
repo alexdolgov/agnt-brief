@@ -1,15 +1,31 @@
 {
   "component": "WombatRouter",
   "main_contract": "WombatRouter",
-  "source_file_count": 12,
-  "deployment_count": 1,
+  "source_file_count": 10,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x19609b03c976cca288fbdae5c21d4290e9a4add7",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x35d531fd45d5e3a5d407a4898360c757c98bdf79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -2,7 +2,7 @@
   "component": "UsdcAvaxLevSwapper",
   "main_contract": "UsdcAvaxLevSwapper",
   "source_file_count": 4,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0x2af303aa6dbcc94f16a6bbc732b6575f2294b357",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc845c5baf57f61eb925d400aebff0501c0e9d2ba",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

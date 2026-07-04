@@ -1,0 +1,18 @@
+{
+  "component": "RadiantOFT-3",
+  "main_contract": "RadiantOFT",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd722e55c1d9d9fa0021a5215cbb904b92b3dc5d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "component": "MOROFT",
   "main_contract": "MOROFT",
-  "source_file_count": 43,
+  "source_file_count": 39,
   "deployment_count": 2,
   "audited": true,
   "audits_covering": [
@@ -9,17 +9,17 @@
   ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcbb8f1bda10b9696c57e13bc128fe674769dcec0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x3c3a26c978bf6af40d7c1a36e9cbd3c1c055786e",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

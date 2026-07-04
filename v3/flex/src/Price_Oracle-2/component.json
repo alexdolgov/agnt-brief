@@ -1,0 +1,18 @@
+{
+  "component": "Price_Oracle-2",
+  "main_contract": "Price Oracle",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x38cae071526c57f95bbbb41eb12661fbf749a15a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

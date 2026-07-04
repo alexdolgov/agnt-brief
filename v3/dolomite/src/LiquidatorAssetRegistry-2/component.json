@@ -1,18 +1,18 @@
 {
   "component": "LiquidatorAssetRegistry-2",
   "main_contract": "LiquidatorAssetRegistry",
-  "source_file_count": 27,
+  "source_file_count": 26,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x10d98759762efac656bd4be7f2f5599208f44fac",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd82100524392c7dbdd7502f136a226c8a4c56cfa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

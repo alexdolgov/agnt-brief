@@ -1,0 +1,42 @@
+{
+  "component": "FluidTokenPriceAggregator-2",
+  "main_contract": "FluidTokenPriceAggregator",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x740003464e893c36d3824c21a47f21f51cbd8688",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8cd6ce8b0c90b9530260cc9aeed0b29e47afa53a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaef2f183d3fa3f393dcbebe69d0d71b84b1fea1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc34f0ef7683c9fc6cbf213ddbefd09075ec4d687",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

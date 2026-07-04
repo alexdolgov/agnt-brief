@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawBatch-6",
+  "main_contract": "WithdrawBatch",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7c0bf273230c738e80a94db5bcc8228aede1af58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

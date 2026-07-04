@@ -1,6 +1,6 @@
 # nest — deployments
 
-239 verified deployment(s) across 114 component(s).
+242 verified deployment(s) across 117 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | bsc | `0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7` | ERC20Template | impl | live | no |
 | bsc | `0x9b3718b6b001f87c8dcdc2dee7e4ab151d77aaae` | FortFutures | impl | inactive | no |
 | bsc | `0xb11a1dd1e64895c0133bae48cf5cc4efdcf02421` | HedgeOptions | impl | inactive | no |
+| bsc | `0xb16260599777effb17fd2a8fd30c449e5b71c088` | ProxyAdmin-4 | impl | live | no |
 | bsc | `0xcaa607369bfbdfb48107397ff5f48def498b6cc9` | FortSwap | impl | inactive | no |
 | bsc | `0xdac874ef2e801dc2e954820e7e111077362fea7a` | FortOptions | impl | inactive | no |
 | bsc | `0xe3940a3e94bca34b9175d156a5e9c5728dfe922f` | HedgeFutures | impl | inactive | no |
@@ -165,6 +166,7 @@
 | ethereum | `0x54397e5869323aa28cc4aa76f5e5f21ef39bc575` | PriceController | impl | inactive | no |
 | ethereum | `0x54f701415ce1b17bd02fe4fbb6974b8f6469cd45` | NEST_3_OfferData | impl | inactive | no |
 | ethereum | `0x561d0d6c498a379574eaaa4a5f2532b223ffaebf` | NESTSave | impl | inactive | no |
+| ethereum | `0x5cde6ee3b2d47b576501d9f498d9d22f01c3fac8` | ProxyAdmin-2 | impl | live | no |
 | ethereum | `0x5e7db2ffc5b2c7c47103e4f21c702bc402603fbf` | IBMapping | impl | inactive | no |
 | ethereum | `0x5f26aae41dccd5061bbae645b4acf34ba8332a14` | NTokenController | impl | inactive | no |
 | ethereum | `0x607b80a3498f01f87b889486f4e7f82c98cf0584` | Abonus | impl | inactive | no |
@@ -183,6 +185,7 @@
 | ethereum | `0x89be829d32a66b116ec8568687481101fb121751` | NEST_3_OrePoolLogic | impl | inactive | no |
 | ethereum | `0x8a4e23724c21f2ea91a45d6d931c2b9aed49516f` | AdminUpgradeabilityProxy | impl | inactive | no |
 | ethereum | `0x923f80828663e44e0ffd5eb499686dc1ccc78476` | NEST_MiningSave | impl | inactive | no |
+| ethereum | `0x92f331d779bdc58af60b7fd039cda60e89220bdd` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0x945d4d3180bf69283e490d25937d4b4828f4e07b` | NNRewardPool | impl | inactive | no |
 | ethereum | `0x94f36faa6bb4f74009637292b09c355ccd3e80eb` | Nest_3_OfferPrice | impl | inactive | no |
 | ethereum | `0x95db600f7eb94de1cff714bf99a450a0a310668d` | MiningV1Op | impl | inactive | no |
@@ -243,10 +246,3 @@
 | ethereum | `0xfa4f77c412201faf5848f9fa59201039b6716fde` | AdminUpgradeabilityProxy | impl | inactive | no |
 | ethereum | `0xfd2434dbb3f00c210269feb363062169df71058c` | NEST_3_OfferFactory | impl | inactive | no |
 | ethereum | `0xfe543efe9bb91b51a046157b73fdf0838833b841` | MiningV1Op | impl | inactive | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xb16260599777effb17fd2a8fd30c449e5b71c088`
-- ethereum `0x5cde6ee3b2d47b576501d9f498d9d22f01c3fac8`
-- ethereum `0x92f331d779bdc58af60b7fd039cda60e89220bdd`

@@ -1,15 +1,15 @@
 {
   "component": "LstPriceHook",
   "main_contract": "LstPriceHook",
-  "source_file_count": 72,
+  "source_file_count": 68,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1617c74f1e2616a6883249e490aa5e085cd5f827",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x3fab79e63b2140cacd9dff96fe59b0a5661c0626",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

@@ -1,6 +1,6 @@
 # credit-coop — deployments
 
-242 verified deployment(s) across 32 component(s).
+257 verified deployment(s) across 39 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,7 +13,7 @@
 | base | `0x07aaed2072e19519cbb03c3b1879ea882e5827dc` | LiquidStrategy | impl | inactive | no |
 | base | `0x0b9c1f07bf939c8ad14b65fbde5f15891b297ec0` | ERC7540Factory | impl | live | no |
 | base | `0x0cdc148eae17e7c865c5c2fdcdb96252276f0699` | GuardManager | impl | inactive | no |
-| base | `0x0cf11ac4ea33b6d7274cd7d6e7cea9f3f65fcf9d` | LendingVault | impl | live | no |
+| base | `0x0cf11ac4ea33b6d7274cd7d6e7cea9f3f65fcf9d` | LendingVault-2 | impl | live | no |
 | base | `0x0d9b66519274ccda53d516da1299d83a2e80edc7` | EscrowFactory | impl | inactive | no |
 | base | `0x0dd377086fa94407334d751a5164afd981513b55` | LineFactory | impl | inactive | no |
 | base | `0x0ee193f926bae9eed1bb8cb678f2fc73dbe324f4` | LendingVaultFactory | impl | live | no |
@@ -25,12 +25,12 @@
 | base | `0x1b15e15d26401b03b2036b5bca69985f70d473ca` | LineFactory | impl | inactive | no |
 | base | `0x1b32287dc71ddf63e475a68b693919f534e06712` | Oracle | impl | inactive | no |
 | base | `0x1bf220b4e6e5eca30d90a12ea369a68633c0065a` | LendingVaultFactory | impl | live | no |
-| base | `0x1c4226eb7e7d2fa8a92ad0e181abe5718aebf83d` | LendingVault-2 | impl | live | no |
+| base | `0x1c4226eb7e7d2fa8a92ad0e181abe5718aebf83d` | LendingVaultFactory-2 | impl | live | no |
 | base | `0x1c720356ae3750832085d11f3154cd74fbc61f75` | EscrowFactory | impl | inactive | no |
 | base | `0x1e43011619659b71e198fa5bd36be43e3fba00e6` | LineFactory | impl | inactive | no |
 | base | `0x2063ccfbd3e88ce3ea64ca271a7d8b58ebcf54f3` | LendingVaultFactory | impl | live | no |
 | base | `0x20d65cd29daddca6994071fcaa631e2f99f1d9ca` | Spigot | impl | inactive | no |
-| base | `0x214699b0ad2e26ffef0247fd0c244bb7fedc85ce` | LendingVault | impl | live | no |
+| base | `0x214699b0ad2e26ffef0247fd0c244bb7fedc85ce` | LendingVault-2 | impl | live | no |
 | base | `0x214931d4878d36eadd191f4abc230f16b43c18cd` | CreditPositionToken | impl | inactive | no |
 | base | `0x21d2e69e532446ab0102573ed867eefe39f25c62` | EscrowFactory | impl | inactive | no |
 | base | `0x221061c0a3283ce7db5e187503311fc6651cafb9` | Spigot | impl | inactive | no |
@@ -231,39 +231,39 @@
 | base | `0xfff5ff2191ee3e0df605b13fe3036015414080e7` | LineFactory | impl | inactive | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | inactive | no |
 | ethereum | `0x0fbbc6a4e951b00b1ac170325763bd4d5149a77f` | FiatTokenV1 | impl | inactive | no |
+| ethereum | `0x11eee9a3c60a74ed55da84157036dd0278be8a59` | LiquidStrategy-2 | impl | inactive | no |
+| ethereum | `0x144b887b5ec076e4854279595131436869bf5ce8` | EscrowFactory-2 | impl | inactive | no |
 | ethereum | `0x3429ce43339939ef627decfa05530c0d7e41ef59` | BaseSwapGuard | impl | inactive | no |
+| ethereum | `0x353aa86096063b1ca39d9e7f124e10d1b597bcf7` | LineFactory-2 | impl | inactive | no |
 | ethereum | `0x3ad165b61c711dee010817692c1be40c6805415a` | BaseConditionalOrder | impl | inactive | no |
+| ethereum | `0x3e420bc2641f3e8297dc0b5bb6d6e5aa68449ed7` | EscrowFactory-3 | impl | inactive | no |
 | ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | inactive | no |
 | ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | inactive | no |
+| ethereum | `0x6315b9ab8c81e8d7868a9795ec0e25d4d62e8757` | Oracle-2 | impl | inactive | no |
+| ethereum | `0x6c99a74a62aaf2e6aa3ff08ce7661d5c86e01dbc` | LendingVault | impl | live | no |
+| ethereum | `0x6dacaf632017e2dfc929484606b0feb93088b623` | LendingVault | impl | live | no |
+| ethereum | `0x6df7ff4b8c6743b3ded7bb3c8f21ce7f5b9d11f5` | LiquidStrategy-2 | impl | inactive | no |
 | ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | inactive | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | inactive | no |
 | ethereum | `0xb2275bf955690c0d2b175d9cdc357e9d06694bbd` | BaseSwapGuard | impl | inactive | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | inactive | no |
-| ethereum | `0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d` | CreditStrategy | impl | live | no |
+| ethereum | `0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d` | LendingVault | impl | live | no |
+| ethereum | `0xc37af9a4f698a58921850e5943ad94978d92173b` | Spigot-3 | impl | inactive | no |
+| ethereum | `0xc779aaa8c0952fa30675f6f35920cc058f7a1643` | Spigot-2 | impl | inactive | no |
 | ethereum | `0xcdb3ebdcb29d2fcdf6bd4f6b21528899483ce07c` | BaseConditionalOrder | impl | inactive | no |
 | ethereum | `0xd13689e8da0ed95b55100e27b7dbc95c03b5259b` | V2_1Upgrader | impl | inactive | no |
+| ethereum | `0xd2332aa00525e2d898fe226f512a74c47d4b695f` | CreditPositionToken | impl | inactive | no |
+| ethereum | `0xd462e8929282495a6f9196c30639cde8d687ac14` | LiquidStrategy-2 | impl | live | no |
+| ethereum | `0xd66faff834466c494be3303f36bacc52bda46d52` | ERC7540Factory-2 | impl | live | no |
 | ethereum | `0xde0aa21af41176cb05e5a80f26dd7949380f0195` | FiatTokenV1 | proxy | inactive | no |
 | ethereum | `0xde725190e345d8e4de589e8a201395141cd2b5a4` | BaseSwapGuard | impl | inactive | no |
+| ethereum | `0xecfd3e9333dd3d06588ed368e4696480aba6fa63` | LendingVaultFactory-2 | impl | live | no |
 | ethereum | `0xed24bd79a3f2ba4325e9c553164e299c65e272fc` | V2Upgrader | impl | inactive | no |
+| ethereum | `0xfff5ff2191ee3e0df605b13fe3036015414080e7` | LineFactory-3 | impl | inactive | no |
 
-## Source unavailable (17)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- ethereum `0x11eee9a3c60a74ed55da84157036dd0278be8a59`
-- ethereum `0x144b887b5ec076e4854279595131436869bf5ce8`
-- ethereum `0x353aa86096063b1ca39d9e7f124e10d1b597bcf7`
-- ethereum `0x3e420bc2641f3e8297dc0b5bb6d6e5aa68449ed7`
-- ethereum `0x6315b9ab8c81e8d7868a9795ec0e25d4d62e8757`
-- ethereum `0x6c99a74a62aaf2e6aa3ff08ce7661d5c86e01dbc`
-- ethereum `0x6dacaf632017e2dfc929484606b0feb93088b623`
-- ethereum `0x6df7ff4b8c6743b3ded7bb3c8f21ce7f5b9d11f5`
-- ethereum `0xc37af9a4f698a58921850e5943ad94978d92173b`
-- ethereum `0xc779aaa8c0952fa30675f6f35920cc058f7a1643`
-- ethereum `0xd2332aa00525e2d898fe226f512a74c47d4b695f`
-- ethereum `0xd462e8929282495a6f9196c30639cde8d687ac14`
-- ethereum `0xd66faff834466c494be3303f36bacc52bda46d52`
 - ethereum `0xe982615d461dd5cd06575bbea87624fda4e3de17`
 - ethereum `0xec0f22b4339b4adcae3347bd5cad539700ac4beb`
-- ethereum `0xecfd3e9333dd3d06588ed368e4696480aba6fa63`
-- ethereum `0xfff5ff2191ee3e0df605b13fe3036015414080e7`

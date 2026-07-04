@@ -1,0 +1,26 @@
+{
+  "component": "Router03-3",
+  "main_contract": "Router03",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x21d9d4d17255d427a5f77d23fb9eb3c5cd281ebf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc5d6cb2205349cc94684e7acf012751344bc58f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

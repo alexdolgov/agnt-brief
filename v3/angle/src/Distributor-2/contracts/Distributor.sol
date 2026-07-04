@@ -58,7 +58,7 @@ struct Claim {
 }
 
 /// @title Distributor
-/// @notice Allows to claim rewards distributed to them through Merkl
+/// @notice Allows LPs on AMMs with concentrated liquidity to claim the rewards that were distributed to them
 /// @author Angle Labs. Inc
 contract Distributor is UUPSHelper {
     using SafeERC20 for IERC20;
@@ -130,12 +130,6 @@ contract Distributor is UUPSHelper {
         _;
     }
 
-    /// @notice Checks whether the `msg.sender` has the governor role or the guardian role
-    modifier onlyGovernor() {
-        if (!core.isGovernor(msg.sender)) revert NotGovernor();
-        _;
-    }
-
     /// @notice Checks whether the `msg.sender` is the `user` address or is a trusted address
     modifier onlyTrustedOrUser(address user) {
         if (user != msg.sender && canUpdateMerkleRoot[msg.sender] != 1 && !core.isGovernorOrGuardian(msg.sender))
@@ -153,7 +147,7 @@ contract Distributor is UUPSHelper {
     }
 
     /// @inheritdoc UUPSUpgradeable
-    function _authorizeUpgrade(address) internal view override onlyGovernorUpgrader(core) {}
+    function _authorizeUpgrade(address) internal view override onlyGuardianUpgrader(core) {}
 
     // =============================== MAIN FUNCTION ===============================
 
@@ -211,7 +205,7 @@ contract Distributor is UUPSHelper {
     // ============================ GOVERNANCE FUNCTIONS ===========================
 
     /// @notice Adds or removes EOAs which are trusted to update the Merkle root
-    function toggleTrusted(address eoa) external onlyGovernor {
+    function toggleTrusted(address eoa) external onlyGovernorOrGuardian {
         uint256 trustedStatus = 1 - canUpdateMerkleRoot[eoa];
         canUpdateMerkleRoot[eoa] = trustedStatus;
         emit TrustedToggled(eoa, trustedStatus == 1);
@@ -224,7 +218,7 @@ contract Distributor is UUPSHelper {
             // A trusted address cannot update a tree right after a precedent tree update otherwise it can de facto
             // validate a tree which has not passed the dispute period
             ((canUpdateMerkleRoot[msg.sender] != 1 || block.timestamp < endOfDisputePeriod) &&
-                !core.isGovernor(msg.sender))
+                !core.isGovernorOrGuardian(msg.sender))
         ) revert NotTrusted();
         MerkleTree memory _lastTree = tree;
         tree = _tree;
@@ -284,26 +278,26 @@ contract Distributor is UUPSHelper {
     }
 
     /// @notice Recovers any ERC20 token
-    function recoverERC20(address tokenAddress, address to, uint256 amountToRecover) external onlyGovernor {
+    function recoverERC20(address tokenAddress, address to, uint256 amountToRecover) external onlyGovernorOrGuardian {
         IERC20(tokenAddress).safeTransfer(to, amountToRecover);
         emit Recovered(tokenAddress, to, amountToRecover);
     }
 
     /// @notice Sets the dispute period after which a tree update becomes effective
-    function setDisputePeriod(uint48 _disputePeriod) external onlyGovernor {
+    function setDisputePeriod(uint48 _disputePeriod) external onlyGovernorOrGuardian {
         disputePeriod = uint48(_disputePeriod);
         emit DisputePeriodUpdated(_disputePeriod);
     }
 
     /// @notice Sets the token used as a caution during disputes
-    function setDisputeToken(IERC20 _disputeToken) external onlyGovernor {
+    function setDisputeToken(IERC20 _disputeToken) external onlyGovernorOrGuardian {
         if (disputer != address(0)) revert UnresolvedDispute();
         disputeToken = _disputeToken;
         emit DisputeTokenUpdated(address(_disputeToken));
     }
 
     /// @notice Sets the amount of `disputeToken` used as a caution during disputes
-    function setDisputeAmount(uint256 _disputeAmount) external onlyGovernor {
+    function setDisputeAmount(uint256 _disputeAmount) external onlyGovernorOrGuardian {
         if (disputer != address(0)) revert UnresolvedDispute();
         disputeAmount = _disputeAmount;
         emit DisputeAmountUpdated(_disputeAmount);

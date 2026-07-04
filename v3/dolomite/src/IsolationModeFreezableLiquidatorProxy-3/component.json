@@ -1,0 +1,18 @@
+{
+  "component": "IsolationModeFreezableLiquidatorProxy-3",
+  "main_contract": "IsolationModeFreezableLiquidatorProxy",
+  "source_file_count": 147,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x76ac5542ee033a15f78d1f8b4ad48af618a33e44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

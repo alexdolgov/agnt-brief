@@ -1,15 +1,15 @@
 {
   "component": "FlashProtocolProxy",
   "main_contract": "FlashProtocolProxy",
-  "source_file_count": 14,
+  "source_file_count": 10,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x8ef21e9bfe8f40eddd9bf7828707da47d5536c4c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf597a396950f5fadab570502de3f780864ffc946",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

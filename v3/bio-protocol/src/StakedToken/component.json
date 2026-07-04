@@ -2,7 +2,7 @@
   "component": "StakedToken",
   "main_contract": "StakedToken",
   "source_file_count": 32,
-  "deployment_count": 13,
+  "deployment_count": 20,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -106,6 +106,62 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xe41ba1329c76640a5da6d995bfd1b56a08c52352",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6c85e430ac13f6e88c83434b7789b969497ca9f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x852c11e88478aafda31950f9e4f4fe86d9342e53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x85ecbc26f39fdca293d76c40fdd9feadc6a66797",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcbd956381a12cc84302344960c95e4ac313845db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe01b67eaca87d742638842fceb9e8c2f006dc29b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe1ea71e1c1dc3c2492a4d6b7618840d9f1ebe13f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xee8ea7c133d986b8d9a2708ef50d83d81ff3b4a1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

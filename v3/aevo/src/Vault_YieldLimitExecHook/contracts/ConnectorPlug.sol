@@ -12,6 +12,7 @@ contract ConnectorPlug is IConnector, IPlug, RescueBase {
     IBridge public immutable bridge__;
     ISocket public immutable socket__;
     uint32 public immutable siblingChainSlug;
+    bytes32 public immutable transmissionParams;
     uint256 public messageIdPart;
 
     event ConnectorPlugDisconnected();
@@ -19,29 +20,44 @@ contract ConnectorPlug is IConnector, IPlug, RescueBase {
     constructor(
         address bridge_,
         address socket_,
-        uint32 siblingChainSlug_
+        uint32 siblingChainSlug_,
+        bytes32 transmissionParams_
     ) AccessControl(msg.sender) {
         bridge__ = IBridge(bridge_);
         socket__ = ISocket(socket_);
         siblingChainSlug = siblingChainSlug_;
+        transmissionParams = transmissionParams_;
         _grantRole(RESCUE_ROLE, msg.sender);
     }
 
     function outbound(
         uint256 msgGasLimit_,
         bytes memory payload_,
-        bytes memory
+        bytes memory options_
     ) external payable override returns (bytes32 messageId_) {
         if (msg.sender != address(bridge__)) revert NotBridge();
+        if (options_.length == 0) {
+            return
+                socket__.outbound{value: msg.value}(
+                    siblingChainSlug,
+                    msgGasLimit_,
+                    bytes32(0),
+                    transmissionParams,
+                    payload_
+                );
+        } else {
+            if (options_.length != 32) revert InvalidOptionsLength();
+            bytes32 executionParams = abi.decode(options_, (bytes32));
 
-        return
-            socket__.outbound{value: msg.value}(
-                siblingChainSlug,
-                msgGasLimit_,
-                bytes32(0),
-                bytes32(0),
-                payload_
-            );
+            return
+                socket__.outbound{value: msg.value}(
+                    siblingChainSlug,
+                    msgGasLimit_,
+                    executionParams,
+                    transmissionParams,
+                    payload_
+                );
+        }
     }
 
     function inbound(

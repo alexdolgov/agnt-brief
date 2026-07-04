@@ -2,7 +2,7 @@
   "component": "Portal",
   "main_contract": "Portal",
   "source_file_count": 14,
-  "deployment_count": 7,
+  "deployment_count": 10,
   "audited": true,
   "audits_covering": [
     "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Omniscia.pdf",
@@ -63,6 +63,30 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xb8f275fbf7a959f4bce59999a2ef122a099e81a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1ceaeda3d17936916d0f3e866aa5ef861f544840",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x97cbe92630ec56a7f484d28bbbced857121c2aad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5b1bab64961cf72822817ef32950ff7fcab28b62",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

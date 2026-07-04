@@ -24,7 +24,7 @@ import "./interfaces/IERC20Minimal.sol";
 import "./interfaces/callback/ICLMintCallback.sol";
 import "./interfaces/callback/ICLSwapCallback.sol";
 import "./interfaces/callback/ICLFlashCallback.sol";
-import "contracts/libraries/VelodromeTimeLibrary.sol";
+import "contracts/libraries/ProtocolTimeLibrary.sol";
 
 contract CLPool is ICLPool {
     using LowGasSafeMath for uint256;

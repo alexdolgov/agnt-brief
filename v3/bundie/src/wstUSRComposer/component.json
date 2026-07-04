@@ -2,10 +2,26 @@
   "component": "wstUSRComposer",
   "main_contract": "wstUSRComposer",
   "source_file_count": 32,
-  "deployment_count": 30,
+  "deployment_count": 32,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0cded330081b6d4623e74a9dd484e916eb0b9d25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x382908d7f0efe215341694c169f98a5a67c4da5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

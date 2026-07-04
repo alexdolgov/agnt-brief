@@ -1,0 +1,18 @@
+{
+  "component": "MultiSigWalletWithTimelock-6",
+  "main_contract": "MultiSigWalletWithTimelock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6292e8f7647b3b9ddf5795b1fb77d0187e30e0f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

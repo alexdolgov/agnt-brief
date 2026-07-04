@@ -1,0 +1,18 @@
+{
+  "component": "PoolUIHelper-3",
+  "main_contract": "PoolUIHelper",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2f7a3dcc5512825aa2c6afef305bb76dadca78e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

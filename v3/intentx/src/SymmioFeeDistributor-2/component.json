@@ -2,14 +2,38 @@
   "component": "SymmioFeeDistributor-2",
   "main_contract": "SymmioFeeDistributor",
   "source_file_count": 21,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x471806397f95a1184c623465c6f79ee3188a1a4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x82895a2e3d5cc74f76694edcaeec1da0e0e5081d",
+      "address": "0x196a2bf382f55e53cc555aa018aebab32bf0c1c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x59b00d7097b7952ec9180590b3bd43c39a4608f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8452ed3225c323fcf2811a586d8005be7c258538",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

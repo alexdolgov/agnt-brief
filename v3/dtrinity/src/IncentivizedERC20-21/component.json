@@ -1,0 +1,18 @@
+{
+  "component": "IncentivizedERC20-21",
+  "main_contract": "IncentivizedERC20",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xca5cb6b3afdf1adbec6b00db6c2f17053b6d62bc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

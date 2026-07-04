@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationExecutor-4",
+  "main_contract": "LiquidationExecutor",
+  "source_file_count": 15,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5a7110ff883bf3b314621a33e9f5dc9e0a5d0ab3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

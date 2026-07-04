@@ -1,0 +1,18 @@
+{
+  "component": "Dice-6",
+  "main_contract": "Dice",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc35b11ffe5e6f7419629951cdbce50e4a354c0b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

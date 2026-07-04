@@ -1,0 +1,18 @@
+{
+  "component": "IssueUSDModule-2",
+  "main_contract": "IssueUSDModule",
+  "source_file_count": 74,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb3da45dea391b0be38f41c6214ff3c0530baa25c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

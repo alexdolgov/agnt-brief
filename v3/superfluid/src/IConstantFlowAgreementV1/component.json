@@ -1,15 +1,15 @@
 {
   "component": "IConstantFlowAgreementV1",
   "main_contract": "IConstantFlowAgreementV1",
-  "source_file_count": 17,
-  "deployment_count": 2,
+  "source_file_count": 28,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xe39ec59fcbf4439acd2785c15e52e7cec0dafcd0",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x84956c84c33c38ace22c9324f1f92028af2215ce",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +17,31 @@
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0xf2429176ff1fae7b3a2f2cd836860282c31856a5",
+      "address": "0xa7afdc46999076c295cfc6812dd73d103cf64e19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9224413b9177e6c1d5721b4a4d1d00ec84b07ce7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xcb0ff4d0ca186f0fc0301258066fe3fa258417a6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,15 +1,39 @@
 {
   "component": "Comet",
   "main_contract": "Comet",
-  "source_file_count": 9,
-  "deployment_count": 2,
+  "source_file_count": 8,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x2f9e3953b2ef89fa265f2a32ed9f80d00229125b",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50cb5e9a07f5c8db997b236761622931364d634e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1f9d71ef69f502188ec65cebac049fe646b74de4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf25212e676d1f7f89cd72ffee66158f541246445",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfbcbff945e896a42a7eb5691523f1b47cabce501",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +41,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xe2aa5194e45b043afdd6e98f467c0b1c13484ae9",
+      "address": "0xf25212e676d1f7f89cd72ffee66158f541246445",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

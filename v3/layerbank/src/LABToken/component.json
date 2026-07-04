@@ -1,18 +1,26 @@
 {
   "component": "LABToken",
   "main_contract": "LABToken",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 6,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x20a512dbdc0d006f46e6ca11329034eb3d18c997",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x91fe82ed27c9e63442af515edd9b359dd824975b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf88f8602507e1ae1ca9c2b2c50d0fcf32df2f039",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

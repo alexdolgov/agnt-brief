@@ -3,26 +3,21 @@
   "main_contract": "AdminUpgradeabilityProxy",
   "source_file_count": 4,
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/ChainSafe/audits/blob/main/Ribbon%20Finance/RibbonV2-July-2021.pdf",
-    "https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf",
-    "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf",
-    "https://www.openzeppelin.com/news/ribbon-finance-audit"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x0f403289ed880a2edb21cfc6927d5950c6d54684",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e65f34ff5925d3d43ad642bee84ac947583a939",
       "is_proxy": true,
-      "implementation_address": "0x87e94618b305c5305b4502807c86b6c28ad5b592",
-      "liveness": "live"
+      "implementation_address": "0xb9a143a9b010ff7f4408ee87ae42c401c7c9de6d",
+      "liveness": "inactive"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x1e5341cb798864e2f979d4679de35646d9fbdb5c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9a143a9b010ff7f4408ee87ae42c401c7c9de6d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x48943f145686bf5c4580d545cda405844d1f777b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3828845f4d7212b6a0dc3d67482aff4544002919",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

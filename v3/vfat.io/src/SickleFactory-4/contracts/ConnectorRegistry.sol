@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { Admin } from "contracts/base/Admin.sol";
-import { TimelockAdmin } from "contracts/base/TimelockAdmin.sol";
+import "./base/Admin.sol";
+import "./base/TimelockAdmin.sol";
 
 error ConnectorNotRegistered(address target);
 

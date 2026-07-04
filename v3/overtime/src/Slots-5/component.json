@@ -1,0 +1,18 @@
+{
+  "component": "Slots-5",
+  "main_contract": "Slots",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbe1428a2797c3ad09a4bddf421cd403102d9cec9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

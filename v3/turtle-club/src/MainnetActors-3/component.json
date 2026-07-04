@@ -1,0 +1,18 @@
+{
+  "component": "MainnetActors-3",
+  "main_contract": "MainnetActors",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x71635dfc4fba5df7bc349e4bd27e3148f080393c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

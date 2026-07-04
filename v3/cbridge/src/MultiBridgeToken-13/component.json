@@ -1,0 +1,21 @@
+{
+  "component": "MultiBridgeToken-13",
+  "main_contract": "MultiBridgeToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x8006320739fc281da67ee62eb9b4ef8add5c903a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

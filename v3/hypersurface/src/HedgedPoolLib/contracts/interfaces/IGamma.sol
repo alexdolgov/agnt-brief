@@ -222,6 +222,15 @@ interface IController {
         address _asset
     ) external view returns (int256);
 
+    function canSettleExpiry(uint256 expiry) external view returns (bool);
+
+    function setSettleDelayForExpiry(
+        uint256 _expiryTimestamp,
+        uint256 _delay
+    ) external;
+
+    function setKeeper(address _keeperAddress, bool _isPermitted) external;
+
     /// @notice emits an event when a collateral asset is deposited into a vault
     event CollateralAssetDeposited(
         address indexed asset,

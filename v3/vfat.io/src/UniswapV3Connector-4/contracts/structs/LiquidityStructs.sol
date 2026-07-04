@@ -18,3 +18,11 @@ struct RemoveLiquidityParams {
     uint256[] minAmountsOut;
     bytes extraData;
 }
+
+struct SwapParams {
+    address router;
+    uint256 amountIn;
+    uint256 minAmountOut;
+    address tokenIn;
+    bytes extraData;
+}

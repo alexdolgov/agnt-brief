@@ -1,0 +1,18 @@
+{
+  "component": "SlotsBitmapLibrary-8",
+  "main_contract": "SlotsBitmapLibrary",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xee34cb3ac309ce2c6b0beaf403d89db0e635fe85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

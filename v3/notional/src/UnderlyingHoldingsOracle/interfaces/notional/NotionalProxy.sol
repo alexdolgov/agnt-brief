@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity >=0.7.6;
 pragma abicoder v2;
 
@@ -31,6 +31,8 @@ interface NotionalProxy is
         uint256 finalIntegralTotalSupply,
         uint256 migrationTime
     );
+    /// @notice Emitted if a token address is migrated
+    event TokenMigrated(uint16 currencyId) ;
     /// @notice Emitted whenever an account context has updated
     event AccountContextUpdate(address indexed account);
     /// @notice Emitted when an account has assets that are settled
@@ -105,9 +107,7 @@ interface NotionalProxy is
     function nTokenRedeem(
         address redeemer,
         uint16 currencyId,
-        uint96 tokensToRedeem_,
-        bool sellTokenAssets,
-        bool acceptResidualAssets
+        uint96 tokensToRedeem_
     ) external returns (int256);
 
     function enablePrimeBorrow(bool allowPrimeBorrow) external;
@@ -122,16 +122,18 @@ interface NotionalProxy is
         uint256 amountExternalPrecision
     ) external payable returns (uint256);
 
-    function depositAssetToken(
-        address account,
-        uint16 currencyId,
-        uint256 amountExternalPrecision
-    ) external returns (uint256);
-
     function withdraw(
         uint16 currencyId,
         uint88 amountInternalPrecision,
         bool redeemToUnderlying
+    ) external returns (uint256);
+
+    function withdrawViaProxy(
+        uint16 currencyId,
+        address owner,
+        address receiver,
+        address spender,
+        uint88 withdrawAmountPrimeCash
     ) external returns (uint256);
 
     /** Batch Action */

@@ -5,7 +5,7 @@ import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
 
 /// @title BaseInterestModel – shared storage, rate history, debt bookkeeping
 /// @notice Concrete models (Simple / Compound) inherit this and override the
-///         virtual accrual hooks.  Designed to be inherited by EscrowV4.
+///         virtual accrual hooks.  Designed to be inherited by TristeroEscrowV4.
 ///         See escrow_math.tex for full derivations.
 abstract contract BaseInterestModel {
 

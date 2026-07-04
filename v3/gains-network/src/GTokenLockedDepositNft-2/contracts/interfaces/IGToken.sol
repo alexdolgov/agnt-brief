@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity 0.8.23;
 
 /**
- * @custom:version 7
+ * @dev Interface for GToken contract
  */
 interface IGToken {
     struct GnsPriceProvider {
@@ -62,6 +62,10 @@ interface IGToken {
     function tvl() external view returns (uint256);
 
     function marketCap() external view returns (uint256);
+
+    function shareToAssetsPrice() external view returns (uint256);
+
+    function collateralConfig() external view returns (uint128, uint128);
 
     event ManagerUpdated(address newValue);
     event AdminUpdated(address newValue);

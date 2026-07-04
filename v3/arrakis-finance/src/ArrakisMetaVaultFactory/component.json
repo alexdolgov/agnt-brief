@@ -1,14 +1,22 @@
 {
   "component": "ArrakisMetaVaultFactory",
   "main_contract": "ArrakisMetaVaultFactory",
-  "source_file_count": 43,
-  "deployment_count": 1,
+  "source_file_count": 39,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x820fb8127a689327c863de8433278d6181123982",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
       "address": "0x820fb8127a689327c863de8433278d6181123982",
       "is_proxy": false,
       "implementation_address": null,

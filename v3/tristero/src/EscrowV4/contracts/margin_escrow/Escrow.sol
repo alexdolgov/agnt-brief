@@ -18,7 +18,7 @@ import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol
 
 /**
  * =====================================================================
- *  EscrowV4 – NFT-wrapped margin positions with dynamic interest rates
+ *  TristeroEscrowV4 – NFT-wrapped margin positions with dynamic interest rates
  * =====================================================================
  *
  * See escrow_math.tex for full derivations. Variable mapping below.
@@ -82,7 +82,7 @@ import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol
  *   so the lender is never underpaid due to truncation.
  */
 
-contract EscrowV4 is IEscrow, ERC721Permit, InterestModel, ReentrancyGuard {
+contract TristeroEscrowV4 is IEscrow, ERC721Permit, InterestModel, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
     uint8 private constant POSITION_STATUS_NEVER_OPENED = 0;
@@ -181,7 +181,6 @@ contract EscrowV4 is IEscrow, ERC721Permit, InterestModel, ReentrancyGuard {
         uint64 oldRate = _rateState[key].rateBps;
 
         // Speed limit only on increases after at least one prior change
-        // TODO: re-enable rate limiter after debugging
         // if (newRateBps > oldRate && _rateState[key].lastRateChange != 0) {
         //     uint256 elapsed = block.timestamp - uint256(_rateState[key].lastRateChange);
         //     uint64 maxInc = uint64((elapsed * MAX_INCREASE_BPS_PER_WEEK) / WEEK_SECONDS);

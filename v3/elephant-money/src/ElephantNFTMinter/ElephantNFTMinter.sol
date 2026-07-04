@@ -918,8 +918,6 @@ contract ElephantNFTMinter is Ownable, ReentrancyGuard {
     IElephantNFT public nft;
 
     uint256 public deposited;
-    uint256 public busd_value_deposited;
-    uint256 public txs;
 
     event UpdateCollateralRouter(address router);
     event UpdateArbMode(uint8 prevMode, uint8 mode);
@@ -965,11 +963,6 @@ contract ElephantNFTMinter is Ownable, ReentrancyGuard {
 
         //buy immediately and send to the treasury
         collateralRouter.swapExactETHForTokensSupportingFeeOnTransferTokens{value:msg.value}(0, path, registry.coreTreasuryAddress(), block.timestamp);
-
-        //stats
-        deposited += msg.value;
-        busd_value_deposited += estimateWethToCollateral(msg.value); //cheapest way to calculate APR denominator
-        txs++;
     }
 
 
@@ -989,8 +982,6 @@ contract ElephantNFTMinter is Ownable, ReentrancyGuard {
 
         //stats
         deposited += msg.value;
-        busd_value_deposited += estimateWethToCollateral(msg.value); //cheapest way to calculate APR denominator
-        txs++;
         
     }
 
@@ -1022,20 +1013,6 @@ contract ElephantNFTMinter is Ownable, ReentrancyGuard {
         }
         
     } 
-
-    // Estimates the amount of  weth tokens getting transfered to USD collateral tokens
-    function estimateWethToCollateral(uint wethAmount) private view returns (uint collateralAmount) {
-         //Convert from core to WETH using the core's Oracle
-        address[] memory path = new address[](2);
-        path[0] = collateralRouter.WETH();
-        path[1] = address(registry.collateralAddress());
-
-        uint[] memory amounts = collateralRouter.getAmountsOut(wethAmount, path);
-    
-        collateralAmount = amounts[1];
-    }
-
-
 
 
 }

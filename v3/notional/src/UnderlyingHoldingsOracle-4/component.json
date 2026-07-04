@@ -1,0 +1,26 @@
+{
+  "component": "UnderlyingHoldingsOracle-4",
+  "main_contract": "UnderlyingHoldingsOracle",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x99745f4fe818d98bcee35abf3a2cfc80d42fc6aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc0ab10848ffa1d5422925e21acf2fd0070de9d25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ library SharedStructs {
     }
 
     /// @notice Last used strategy parameters
-    /// @dev Efficiently packed into 2 storage slots
+    /// @dev Packed across 3 storage slots. limitReferenceTick reuses the existing spill slot.
     struct StrategyParams {
         address strategy; // 20 bytes
         int24 centerTick; // 3 bytes
@@ -45,8 +45,10 @@ library SharedStructs {
         uint120 weight1; // 15 bytes
         bool useCarpet; // 1 byte (full-range floor flag)
         bool useSwap; // 1 byte
+        // Total: 32 bytes - fills slot 2 efficiently
+        int24 limitReferenceTick; // 3 bytes
         bool useAssetWeights; // 1 byte
-            // Total: 32 bytes - fills slot 2 efficiently
+        // Total: 4 bytes - reuses the existing spill slot 3
     }
 
     /// @notice Environment variables passed to libraries

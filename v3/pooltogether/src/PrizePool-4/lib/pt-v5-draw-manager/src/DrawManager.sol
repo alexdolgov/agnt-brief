@@ -73,9 +73,6 @@ error RetryLimitReached();
 /// @notice Thrown when a retry attempt is made with a stale RNG request
 error StaleRngRequest();
 
-/// @notice Thrown if `startDraw` is called when the prize pool is shutdown
-error PrizePoolShutdown();
-
 /// @title PoolTogether V5 DrawManager
 /// @author G9 Software Inc.
 /// @notice The DrawManager contract is a permissionless RNG incentive layer for a Prize Pool.
@@ -214,8 +211,8 @@ contract DrawManager {
 
   /// ================= External =================
 
-  /// @notice Completes the start draw auction. 
-  /// @dev Will revert if recipient is zero, the draw id to award has not closed, the prize pool is shutdown, the start draw was already called for this draw, or if the rng is invalid.
+  /// @notice  Completes the start draw auction. 
+  /// @dev     Will revert if recipient is zero, the draw id to award has not closed, if start draw was already called for this draw, or if the rng is invalid.
   /// @param _rewardRecipient Address that will be allocated the reward for starting the RNG request. This reward can be withdrawn from the Prize Pool after it is successfully awarded.
   /// @param _rngRequestId The RNG request ID to use for randomness. This request must be made in the same block as this call.
   /// @return The draw id for which start draw was called.
@@ -225,7 +222,6 @@ contract DrawManager {
     uint24 drawId = prizePool.getDrawIdToAward(); 
     uint48 closesAt = prizePool.drawClosesAt(drawId);
     if (closesAt > block.timestamp) revert DrawHasNotClosed();
-    if (prizePool.isShutdown()) revert PrizePoolShutdown();
     if (rng.requestedAtBlock(_rngRequestId) != block.number) revert RngRequestNotInSameBlock();
     
     StartDrawAuction memory lastRequest = getLastStartDrawAuction();
@@ -261,7 +257,7 @@ contract DrawManager {
       rngRequestId: _rngRequestId
     }));
 
-    (uint[] memory rewards,,) = _computeStartDrawRewards(closesAt, _computeAvailableRewards());
+    (uint[] memory rewards,) = _computeStartDrawRewards(closesAt, _computeAvailableRewards());
 
     emit DrawStarted(
       msg.sender,
@@ -284,18 +280,13 @@ contract DrawManager {
     StartDrawAuction memory lastStartDrawAuction = getLastStartDrawAuction();
     return (
       (
-        drawId != lastStartDrawAuction.drawId ? (
-          // if we're on a new draw
-          _computeElapsedTime(drawClosesAt, block.timestamp) <= auctionDuration
-        ) : (
-          // OR we're on the same draw, but the request has failed and we haven't retried too many times
-          rng.isRequestFailed(lastStartDrawAuction.rngRequestId) &&
-          _startDrawAuctions.length <= maxRetries &&
-          _computeElapsedTime(lastStartDrawAuction.closedAt, block.timestamp) <= auctionDuration
-        )
-      ) &&
-      !prizePool.isShutdown() &&
-      block.timestamp >= drawClosesAt // the draw has closed
+        // if we're on a new draw
+        drawId != lastStartDrawAuction.drawId ||
+        // OR we're on the same draw, but the request has failed and we haven't retried too many times
+        (rng.isRequestFailed(lastStartDrawAuction.rngRequestId) && _startDrawAuctions.length <= maxRetries)
+      ) && // we haven't started it, or we have and the request has failed
+      block.timestamp >= drawClosesAt && // the draw has closed
+      _computeElapsedTime(drawClosesAt, block.timestamp) <= auctionDuration // the draw hasn't expired
     );
   }
 
@@ -305,24 +296,15 @@ contract DrawManager {
     if (!canStartDraw()) {
       return 0;
     }
+    uint256 auctionOpenedAt;
     StartDrawAuction memory lastRequest = getLastStartDrawAuction();
-    uint24 drawIdToAward = prizePool.getDrawIdToAward();
-    uint48 drawClosedAt = prizePool.drawClosesAt(drawIdToAward);
-    uint256 availableRewards =_computeAvailableRewards();
-    UD2x18 fractionalRewardsLeft = UD2x18.wrap(1e18);
-    if (lastRequest.drawId == drawIdToAward) {
-      // deduct the rewards that have already been allocated in auctions for this draw
-      (,, fractionalRewardsLeft) = _computeStartDrawRewards(
-        drawClosedAt,
-        availableRewards
-      );
+    if (lastRequest.drawId != prizePool.getDrawIdToAward()) {
+      // if it's a new draw
+      auctionOpenedAt = prizePool.drawClosesAt(prizePool.getDrawIdToAward());
+    } else {
+      auctionOpenedAt = lastRequest.closedAt;
     }
-    (uint256 reward,) = _computeStartDrawReward(
-      lastRequest.drawId != drawIdToAward ? drawClosedAt : lastRequest.closedAt,
-      block.timestamp,
-      availableRewards,
-      fractionalRewardsLeft
-    );
+    (uint256 reward,) = _computeStartDrawReward(auctionOpenedAt, block.timestamp, _computeAvailableRewards());
     return reward;
   }
 
@@ -349,15 +331,14 @@ contract DrawManager {
     }
     
     uint256 availableRewards = _computeAvailableRewards();
-    (uint256[] memory startDrawRewards, UD2x18[] memory startDrawFractions, UD2x18 maxFinishDrawFractionalReward) = _computeStartDrawRewards(
+    (uint256[] memory startDrawRewards, UD2x18[] memory startDrawFractions) = _computeStartDrawRewards(
       prizePool.drawClosesAt(startDrawAuction.drawId),
       availableRewards
     );
     (uint256 _finishDrawReward, UD2x18 finishFraction) = _computeFinishDrawReward(
       startDrawAuction.closedAt,
       block.timestamp,
-      availableRewards,
-      maxFinishDrawFractionalReward
+      availableRewards
     );
     uint256 randomNumber = rng.randomNumber(startDrawAuction.rngRequestId);
     uint24 drawId = prizePool.awardDraw(randomNumber);
@@ -407,10 +388,9 @@ contract DrawManager {
     if (!canFinishDraw()) {
       return 0;
     }
-    uint256 availableRewards = _computeAvailableRewards();
     StartDrawAuction memory startDrawAuction = getLastStartDrawAuction();
-    (,, UD2x18 fractionalRewardsLeft) = _computeStartDrawRewards(prizePool.drawClosesAt(prizePool.getDrawIdToAward()), availableRewards);
-    (reward,) = _computeFinishDrawReward(startDrawAuction.closedAt, block.timestamp, availableRewards, fractionalRewardsLeft);
+
+    (reward,) = _computeFinishDrawReward(startDrawAuction.closedAt, block.timestamp, _computeAvailableRewards());
   }
 
   /// ================= State =================
@@ -438,18 +418,15 @@ contract DrawManager {
   }
 
   /// @notice Computes what the reward and reward fraction would be for the finish draw
-  /// @dev Caps the reward such that the total rewards cannot exceed the available rewards
   /// @param _auctionOpenedAt The time at which the auction started
   /// @param _auctionClosedAt The time at which the auction closed
   /// @param _availableRewards The amount of rewards available
-  /// @param _fractionalRewardsLeft The fraction of rewards that is available
   /// @return reward The reward for the finish draw auction
   /// @return fraction The reward fraction for the finish draw auction
   function _computeFinishDrawReward(
     uint256 _auctionOpenedAt,
     uint256 _auctionClosedAt,
-    uint256 _availableRewards,
-    UD2x18 _fractionalRewardsLeft
+    uint256 _availableRewards
   ) internal view returns (uint256 reward, UD2x18 fraction) {
     fraction = RewardLib.fractionalReward(
       _computeElapsedTime(_auctionOpenedAt, _auctionClosedAt),
@@ -457,48 +434,38 @@ contract DrawManager {
       _auctionTargetTimeFraction,
       lastFinishDrawFraction
     );
-    if (fraction.unwrap() > _fractionalRewardsLeft.unwrap()) {
-      fraction = _fractionalRewardsLeft;
-    }
     reward = RewardLib.reward(fraction, _availableRewards);
   }
 
   /// @notice Computes the rewards and reward fractions for the start draw auctions
-  /// @dev Caps the reward such that the total rewards cannot exceed the available rewards
   /// @param _firstAuctionOpenedAt The time at which the first auction started
   /// @param _availableRewards The amount of rewards available
   /// @return rewards The rewards for the start draw auctions
   /// @return fractions The reward fractions for the start draw auctions
-  /// @return totalRewardFractionLeft The total fractional rewards left [0.0, 1.0] range
   function _computeStartDrawRewards(
     uint256 _firstAuctionOpenedAt,
     uint256 _availableRewards
-  ) internal view returns (uint256[] memory rewards, UD2x18[] memory fractions, UD2x18 totalRewardFractionLeft) {
+  ) internal view returns (uint256[] memory rewards, UD2x18[] memory fractions) {
     uint256 length = _startDrawAuctions.length;
     rewards = new uint256[](length);
     fractions = new UD2x18[](length);
-    totalRewardFractionLeft = UD2x18.wrap(1e18);
     uint256 previousStartTime = _firstAuctionOpenedAt;
     for (uint256 i = 0; i < length; i++) {
-      (rewards[i], fractions[i]) = _computeStartDrawReward(previousStartTime, _startDrawAuctions[i].closedAt, _availableRewards, totalRewardFractionLeft);
-      totalRewardFractionLeft = UD2x18.wrap(totalRewardFractionLeft.unwrap() - fractions[i].unwrap());
+      (rewards[i], fractions[i]) = _computeStartDrawReward(previousStartTime, _startDrawAuctions[i].closedAt, _availableRewards);
       previousStartTime = _startDrawAuctions[i].closedAt;
     }
   }
 
   /// @notice Computes the reward and reward fraction for the start draw auction
-  /// @dev Caps the reward such that it cannot exceed the remaining amount
   /// @param _auctionOpenedAt The time at which the auction started
   /// @param _auctionClosedAt The time at which the auction closed
   /// @param _availableRewards The amount of rewards available
-  /// @param _fractionalRewardsLeft The fraction of rewards that is available
   /// @return reward The reward for the start draw auction
   /// @return fraction The reward fraction for the start draw auction
   function _computeStartDrawReward(
     uint256 _auctionOpenedAt,
     uint256 _auctionClosedAt,
-    uint256 _availableRewards,
-    UD2x18 _fractionalRewardsLeft
+    uint256 _availableRewards
   ) internal view returns (uint256 reward, UD2x18 fraction) {
     fraction = RewardLib.fractionalReward(
       _computeElapsedTime(_auctionOpenedAt, _auctionClosedAt),
@@ -506,9 +473,6 @@ contract DrawManager {
       _auctionTargetTimeFraction,
       lastStartDrawFraction
     );
-    if (fraction.unwrap() > _fractionalRewardsLeft.unwrap()) {
-      fraction = _fractionalRewardsLeft;
-    }
     reward = RewardLib.reward(fraction, _availableRewards);
   }
 

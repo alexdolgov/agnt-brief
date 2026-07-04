@@ -192,13 +192,7 @@ contract NavLookbackHook is BaseStrategyHook {
     function _onUnregistered(
         bytes memory
     ) internal override {
-        autopoolNavData[msg.sender] = NavLookbackData({
-            navLookback1InDays: 0,
-            navLookback2InDays: 0,
-            navLookback3InDays: 0,
-            pauseRebalancePeriodInDays: 0,
-            lastPausedTimestamp: 0
-        });
+        delete autopoolNavData[msg.sender];
         emit AutopoolNavLookbackConfigured(msg.sender, 0, 0, 0, 0);
     }
 
@@ -243,7 +237,7 @@ contract NavLookbackHook is BaseStrategyHook {
         Errors.verifyNotZero(navLookback1InDays, "navLookback1InDays");
 
         // the 91st spot holds current (0 days ago), so the farthest back that can be retrieved is 90 days ago
-        if (navLookback3InDays > NavTracking.MAX_NAV_TRACKING) {
+        if (navLookback3InDays >= NavTracking.MAX_NAV_TRACKING) {
             revert Errors.InvalidParam("navLookback_max");
         }
 

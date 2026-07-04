@@ -1,0 +1,18 @@
+{
+  "component": "DxFire-2",
+  "main_contract": "DxFire",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x615c9ec24f2595528fe003782f6c706de0960098",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

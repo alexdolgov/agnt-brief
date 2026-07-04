@@ -1,0 +1,18 @@
+{
+  "component": "PoolWithMultipleWinnersBuilder-3",
+  "main_contract": "PoolWithMultipleWinnersBuilder",
+  "source_file_count": 120,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5effa0823e486a5ed1d49d88a1374fc337e1f9f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

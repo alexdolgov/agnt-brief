@@ -1,0 +1,18 @@
+{
+  "component": "InitializableImmutableAdminUpgradeabilityProxy-2",
+  "main_contract": "InitializableImmutableAdminUpgradeabilityProxy",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x46a51127c3ce23fb7ab1de06226147f446e4a857",
+      "is_proxy": true,
+      "implementation_address": "0x44b4221c950fcf23a40e68dea29fed0bb88893a9",
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CommunityVaultProxy-4",
+  "main_contract": "CommunityVaultProxy",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x50f620083d77a04fe44bb2fb294133c71cfce3b1",
+      "is_proxy": true,
+      "implementation_address": "0xd9c5c1f80156036b7a5ae082a5a9602db07cf2b1",
+      "liveness": "inactive"
+    }
+  ]
+}

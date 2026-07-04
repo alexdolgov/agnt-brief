@@ -1,0 +1,18 @@
+{
+  "component": "GLPIsolationModeWrapperTraderV2-4",
+  "main_contract": "GLPIsolationModeWrapperTraderV2",
+  "source_file_count": 45,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xec3162ad61731b9e0b02f40504c88525d327f91b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

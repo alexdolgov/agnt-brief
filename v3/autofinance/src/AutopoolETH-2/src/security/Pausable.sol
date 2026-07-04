@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { Roles } from "src/libs/Roles.sol";
 import { Errors } from "src/utils/Errors.sol";
@@ -46,7 +46,9 @@ abstract contract Pausable {
         _;
     }
 
-    constructor(ISystemRegistry systemRegistry) {
+    constructor(
+        ISystemRegistry systemRegistry
+    ) {
         Errors.verifyNotZero(address(systemRegistry), "systemRegistry");
 
         // Validate the registry is in a state we can use it

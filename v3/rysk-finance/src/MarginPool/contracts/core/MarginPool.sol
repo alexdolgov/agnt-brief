@@ -122,6 +122,16 @@ contract MarginPool is OwnableUpgradeSafe {
     }
 
     /**
+     * @notice decrements assetBalance for an oToken that is being burned from the pool by ControllerLogic
+     * @dev called during settlement after ControllerLogic burns long oTokens, to keep assetBalance in sync
+     * @param _otoken address of the oToken being burned
+     * @param _amount amount being burned
+     */
+    function decrementBalanceAfterBurn(address _otoken, uint256 _amount) public onlyController {
+        assetBalance[_otoken] = assetBalance[_otoken].sub(_amount);
+    }
+
+    /**
      * @notice updates the RedemptionBalance values for an otoken
      * @param _otoken address of the otokon
      * @param _otokenAmount amount of otokens that have been minted or burned. negative for burn

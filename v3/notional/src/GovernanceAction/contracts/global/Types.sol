@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity >=0.7.6;
 pragma abicoder v2;
 
@@ -374,9 +374,9 @@ struct nTokenContext {
     // currently holds
     uint8 assetArrayLength;
     // Each byte is a specific nToken parameter
-    bytes5 nTokenParameters;
+    bytes6 nTokenParameters;
     // Reserved bytes for future usage
-    bytes15 _unused;
+    bytes14 _unused;
     // Set to true if a secondary rewarder is set
     bool hasSecondaryRewarder;
 }
@@ -508,6 +508,22 @@ struct AccountBalance {
     int256 nTokenBalance;
     uint256 lastClaimTime;
     uint256 accountIncentiveDebt;
+}
+
+struct VaultConfigParams {
+    uint16 flags;
+    uint16 borrowCurrencyId;
+    uint256 minAccountBorrowSize;
+    uint16 minCollateralRatioBPS;
+    uint8 feeRate5BPS;
+    uint8 liquidationRate;
+    uint8 reserveFeeShare;
+    uint8 maxBorrowMarketIndex;
+    uint16 maxDeleverageCollateralRatioBPS;
+    uint16[2] secondaryBorrowCurrencies;
+    uint16 maxRequiredAccountCollateralRatioBPS;
+    uint256[2] minAccountSecondaryBorrow;
+    uint8 excessCashLiquidationBonus;
 }
 
 struct VaultConfigStorage {
@@ -691,7 +707,10 @@ struct PrimeCashFactorsStorage {
     // gives us approx 7 digits of precision for each value. Because these are used
     // to maintain supply and borrow caps, they are not required to be exact.
     uint32 maxUnderlyingSupply;
-    uint128 _reserved;
+    // The maximum utilization that prime debt is allowed to reach by users borrowing prime
+    // debt via the markets directly. This cap is not applied to liquidations and settlement.
+    uint8 maxPrimeDebtUtilization;
+    uint120 _reserved;
     // Reserving the next 128 bytes for future use in case we decide to implement debt
     // caps on a currency. In that case, we will need to track the total fcash overall
     // and subtract the total debt held in vaults.
@@ -746,14 +765,12 @@ struct PrimeCashHoldingsOracle {
 
 // Per currency rebalancing context
 struct RebalancingContextStorage {
-    // Holds the previous underlying scalar to calculate the oracle money market rate
-    uint80 previousUnderlyingScalarAtRebalance;
+    // Holds the previous supply factor to calculate the oracle money market rate
+    uint128 previousSupplyFactorAtRebalance;
     // Rebalancing has a cool down period that sets the time averaging of the oracle money market rate
     uint40 rebalancingCooldownInSeconds;
     uint40 lastRebalanceTimestampInSeconds;
-    // The annualized underlying money market interest rate calculated based on the underlying scalar
-    uint32 oracleMoneyMarketRate;
-    // 64 bytes left
+    // 48 bytes left
 }
 
 struct TotalfCashDebtStorage {
@@ -762,4 +779,9 @@ struct TotalfCashDebtStorage {
     // edge conditions for leveraged vaults.
     uint80 fCashDebtHeldInSettlementReserve;
     uint80 primeCashHeldInSettlementReserve;
+}
+
+struct RebalancingTargetData {
+    uint8 targetUtilization;
+    uint16 externalWithdrawThreshold;
 }

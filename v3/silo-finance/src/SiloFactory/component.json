@@ -2,7 +2,7 @@
   "component": "SiloFactory",
   "main_contract": "SiloFactory",
   "source_file_count": 55,
-  "deployment_count": 6,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://docs.silo.finance/assets/files/SP_Silo_Core_Security_Assessment_Report_v2.0-6c5f5bb40b34450300b9fe59133ea870.pdf",
@@ -55,6 +55,22 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xccf804ee4648ec353eb665a165d90f86798878f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf81d90df1b63d48536e78564d24d5dd8f2be58ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9e64f0cd206cce2da5de08e7f482d62f57013d0e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,14 +1,16 @@
 # chainflip — deployments
 
-133 verified deployment(s) across 33 component(s).
+137 verified deployment(s) across 37 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a` | FiatTokenV2_1-2 | impl | inactive | no |
-| arbitrum | `0x79001a5e762f3befc8e5871b42f6734e00498920` | Vault | impl | live | yes |
+| arbitrum | `0x69c700a0debab9e349dd1f52ed62eb253a3c9892` | AddressChecker-2 | impl | inactive | no |
+| arbitrum | `0x79001a5e762f3befc8e5871b42f6734e00498920` | Vault-2 | impl | live | yes |
 | arbitrum | `0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36` | MasterMinter-2 | impl | inactive | no |
 | arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy | proxy | live | no |
-| arbitrum | `0xbfe612c77c2807ac5a6a41f84436287578000275` | KeyManager | impl | live | yes |
+| arbitrum | `0xbfe612c77c2807ac5a6a41f84436287578000275` | KeyManager-2 | impl | live | yes |
+| arbitrum | `0xc1b12993f760b654897f0257573202fba13d5481` | AddressChecker-3 | impl | inactive | no |
 | ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | inactive | no |
 | ethereum | `0x00b2849f4bdb572858ac144f83340a3f472830b9` | TokenVestingStaking | impl | live | no |
 | ethereum | `0x0300a77772640d81843dc33198bde8798857b03f` | TokenVestingNoStaking | impl | inactive | no |
@@ -116,6 +118,7 @@
 | ethereum | `0xc73e1dfb559b9f53fd3f812aacf642d93e920d32` | TokenVestingStaking | impl | inactive | no |
 | ethereum | `0xc9b4a2a935dceddf2e62f7acdb815ec5bd74948d` | TokenVestingStaking | impl | inactive | no |
 | ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | inactive | no |
+| ethereum | `0xcd351d3626dc244730796a3168d315168ebf08be` | KeyManager | impl | live | no |
 | ethereum | `0xce35e965ea6c5748903b2cef5b277ea806355f0e` | TokenVestingNoStaking | impl | inactive | no |
 | ethereum | `0xd13689e8da0ed95b55100e27b7dbc95c03b5259b` | V2_1Upgrader | impl | inactive | no |
 | ethereum | `0xd80a4a24ab2df822c16cc6220ca0627547828f10` | TokenVestingNoStaking | impl | inactive | no |
@@ -134,14 +137,7 @@
 | ethereum | `0xeddd18708cfded659e102e0260e6e567677cd668` | TokenVestingNoStaking | impl | inactive | no |
 | ethereum | `0xf361c439266b7ca7cf739ae379aa1813b84fe474` | TokenVestingStaking | impl | live | no |
 | ethereum | `0xf38039b0afe89e2f36831935204c1da6776d2a08` | TokenVestingStaking | impl | inactive | no |
+| ethereum | `0xf5e10380213880111522dd0efd3dbb45b9f62bcc` | Vault | impl | live | no |
 | ethereum | `0xf6445627bc9d06516d317a0dbbc4660bab7a17c0` | TetherToken-5 | impl | inactive | no |
 | ethereum | `0xf7fb8e3652f5268bc7dcabf895fc994defbe8813` | TokenVestingStaking | impl | inactive | no |
 | ethereum | `0xfa743157557ea7ecf359733a0b7325bf7f361507` | TokenVestingNoStaking | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x69c700a0debab9e349dd1f52ed62eb253a3c9892`
-- arbitrum `0xc1b12993f760b654897f0257573202fba13d5481`
-- ethereum `0xcd351d3626dc244730796a3168d315168ebf08be`
-- ethereum `0xf5e10380213880111522dd0efd3dbb45b9f62bcc`

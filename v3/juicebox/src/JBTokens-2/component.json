@@ -1,0 +1,20 @@
+{
+  "component": "JBTokens-2",
+  "main_contract": "JBTokens",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4d0edd347fb1fa21589c1e109b3474924be87636",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

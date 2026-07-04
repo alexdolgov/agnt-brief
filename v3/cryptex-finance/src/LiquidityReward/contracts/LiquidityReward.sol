@@ -14,13 +14,13 @@
 * Docs: https://docs.synthetix.io/contracts/source/contracts/StakingRewards/
 */
 
-pragma solidity ^0.8.13;
+pragma solidity 0.7.5;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/Pausable.sol";
+import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
 contract LiquidityReward is Ownable, AccessControl, ReentrancyGuard, Pausable {
@@ -40,7 +40,7 @@ contract LiquidityReward is Ownable, AccessControl, ReentrancyGuard, Pausable {
   uint256 public rewardRate = 0;
 
   /// @notice How long the rewards lasts, it updates when more rewards are added
-  uint256 public rewardsDuration = 30 days;
+  uint256 public rewardsDuration = 186 days;
 
   /// @notice Last time rewards were updated
   uint256 public lastUpdateTime;
@@ -53,6 +53,15 @@ contract LiquidityReward is Ownable, AccessControl, ReentrancyGuard, Pausable {
 
   /// @notice Tracks the user rewards
   mapping(address => uint256) public rewards;
+
+  /// @notice Time were vesting ends
+  uint256 public immutable vestingEnd;
+
+  /// @notice Vesting ratio
+  uint256 public immutable vestingRatio;
+
+  /// @notice tracks vesting amount per user
+  mapping(address => uint256) public vestingAmounts;
 
   /// @dev Tracks the total supply of staked tokens
   uint256 private _totalSupply;
@@ -83,14 +92,20 @@ contract LiquidityReward is Ownable, AccessControl, ReentrancyGuard, Pausable {
    * @param _owner address
    * @param _rewardsToken address
    * @param _stakingToken uint256
+   * @param _vestingEnd uint256
+   * @param _vestingRatio uint256
    */
   constructor(
     address _owner,
     address _rewardsToken,
-    address _stakingToken
+    address _stakingToken,
+    uint256 _vestingEnd,
+    uint256 _vestingRatio
   ) {
     rewardsToken = IERC20(_rewardsToken);
     stakingToken = IERC20(_stakingToken);
+    vestingEnd = _vestingEnd;
+    vestingRatio = _vestingRatio;
     _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     transferOwnership(_owner);
   }
@@ -149,6 +164,17 @@ contract LiquidityReward is Ownable, AccessControl, ReentrancyGuard, Pausable {
   function exit() external {
     withdraw(_balances[msg.sender]);
     getReward();
+  }
+
+  /// @notice Claims all vesting amount.
+  function claimVest() external nonReentrant {
+    require(
+      block.timestamp >= vestingEnd,
+      "LiquidityReward::claimVest: not time yet"
+    );
+    uint256 amount = vestingAmounts[msg.sender];
+    vestingAmounts[msg.sender] = 0;
+    rewardsToken.safeTransfer(msg.sender, amount);
   }
 
   /**
@@ -289,8 +315,18 @@ contract LiquidityReward is Ownable, AccessControl, ReentrancyGuard, Pausable {
     uint256 reward = rewards[msg.sender];
     if (reward > 0) {
       rewards[msg.sender] = 0;
-      rewardsToken.safeTransfer(msg.sender, reward);
-      emit RewardPaid(msg.sender, reward);
+      if (block.timestamp >= vestingEnd) {
+        rewardsToken.safeTransfer(msg.sender, reward);
+        emit RewardPaid(msg.sender, reward);
+      } else {
+        uint256 vestingReward = (reward.mul(vestingRatio)).div(100);
+        uint256 transferReward = reward.sub(vestingReward);
+        vestingAmounts[msg.sender] = vestingAmounts[msg.sender].add(
+          vestingReward
+        );
+        rewardsToken.safeTransfer(msg.sender, transferReward);
+        emit RewardPaid(msg.sender, transferReward);
+      }
     }
   }
 }

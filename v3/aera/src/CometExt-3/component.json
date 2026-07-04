@@ -1,15 +1,15 @@
 {
   "component": "CometExt-3",
   "main_contract": "CometExt",
-  "source_file_count": 10,
+  "source_file_count": 7,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x3bac64185786922292266aa92a58cf870d694e2a",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x285617313887d43256f852cae0ee4de4b68d45b0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

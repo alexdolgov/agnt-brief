@@ -2,17 +2,25 @@
   "component": "DestinationRegistry",
   "main_contract": "DestinationRegistry",
   "source_file_count": 64,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x66b9eba2cef184dfaf3b9e11b104be0a1c6e258c",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0283a267eb0b7479831fc049487d9e13ec3afb61",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa5e45be960665583e8ecc0d3209eb7fd6d6a17b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

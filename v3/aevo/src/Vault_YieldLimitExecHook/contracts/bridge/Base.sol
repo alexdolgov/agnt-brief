@@ -115,6 +115,8 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
             (transferInfo, postHookData) = hook__.srcPreHookCall(
                 SrcPreHookCallParams(connector_, msg.sender, transferInfo_)
             );
+        } else {
+            transferInfo = transferInfo_;
         }
     }
 
@@ -213,6 +215,8 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
                     transferInfo_
                 )
             );
+        } else {
+            transferInfo = transferInfo_;
         }
     }
 

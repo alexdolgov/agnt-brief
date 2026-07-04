@@ -1,0 +1,26 @@
+{
+  "component": "PoolSwapFeeHelper-3",
+  "main_contract": "PoolSwapFeeHelper",
+  "source_file_count": 43,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdada7be438bdd89416f4802b679e320b15c92d49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9d2917e41b705bf58bd28e5422230883bbe3f521",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 // File: @openzeppelin/contracts/proxy/beacon/IBeacon.sol
 
+// SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
 
 /**
@@ -15,6 +17,7 @@ interface IBeacon {
 }
 
 // File: @openzeppelin/contracts/proxy/Proxy.sol
+
 
 pragma solidity ^0.8.0;
 
@@ -410,7 +413,6 @@ pragma solidity ^0.8.2;
 
 
 
-
 /**
  * @dev This abstract contract provides getters and event emitting update functions for
  * https://eips.ethereum.org/EIPS/eip-1967[EIP1967] slots.
@@ -604,7 +606,6 @@ pragma solidity ^0.8.0;
 
 
 
-
 /**
  * @dev This contract implements a proxy that gets the implementation address for each call from a {UpgradeableBeacon}.
  *
@@ -662,10 +663,8 @@ contract BeaconProxy is Proxy, ERC1967Upgrade {
 // File: contracts/bridge/token/Token.sol
 
 // contracts/Structs.sol
-// SPDX-License-Identifier: Apache 2
 
 pragma solidity ^0.8.0;
-
 
 contract BridgeToken is BeaconProxy {
     constructor(address beacon, bytes memory data) BeaconProxy(beacon, data) {

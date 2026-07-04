@@ -1,0 +1,18 @@
+{
+  "component": "EPendleOFT-4",
+  "main_contract": "EPendleOFT",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

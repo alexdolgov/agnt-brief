@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
+
 pragma solidity ^0.8.28;
 
 import {IERC20} from "openzeppelin5/token/ERC20/IERC20.sol";
@@ -55,12 +56,12 @@ library Views {
         }
     }
 
-    function maxBorrow(address _borrower, bool _sameAsset)
+    function maxBorrow(address _borrower)
         external
         view
         returns (uint256 maxAssets, uint256 maxShares)
     {
-        return SiloLendingLib.maxBorrow(_borrower, _sameAsset);
+        return SiloLendingLib.maxBorrow(_borrower);
     }
 
     function maxWithdraw(address _owner, ISilo.CollateralType _collateralType)
@@ -108,6 +109,10 @@ library Views {
         protectedAssets = $.totalAssets[ISilo.AssetType.Protected];
         collateralAssets = $.totalAssets[ISilo.AssetType.Collateral];
         debtAssets = $.totalAssets[ISilo.AssetType.Debt];
+    }
+
+    function getFractionsStorage() internal view returns (ISilo.Fractions memory fractions) {
+        fractions = SiloStorageLib.getSiloStorage().fractions;
     }
 
     function utilizationData() internal view returns (ISilo.UtilizationData memory) {
@@ -198,7 +203,7 @@ library Views {
         configData1.callBeforeQuote = _initData.callBeforeQuote1;
     }
 
-    // solhint-disable-next-line code-complexity
+    // solhint-disable-next-line code-complexity, function-max-lines
     function validateSiloInitData(
         ISiloConfig.InitData memory _initData,
         ISiloFactory.Range memory _daoFeeRange,

@@ -1,10 +1,12 @@
 # ultrayield — deployments
 
-125 verified deployment(s) across 49 component(s).
+133 verified deployment(s) across 51 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x2d91466bcc6946b58869fe2ae521a856737c3f6e` | MetaMorphoV1_1-2 | impl | live | no |
 | base | `0x1fd3a242a549d595431442f898fdbb374f15b885` | BeaconProxy | proxy | live | no |
+| base | `0x5435bc53f2c61298167cdb11cdf0db2bfa259ca0` | MetaMorphoV1_1-3 | impl | live | no |
 | base | `0x614bd506051a8ccfcbc57c34aedcf6caffcd5d17` | BeaconProxy | proxy | live | no |
 | base | `0x78d6a3bc9d41b7c6fd52ff2e85a2df6d1f4f9b3a` | BeaconProxy | proxy | live | no |
 | base | `0x8336c93e3706251297bfc95dbdac3fc1966fece9` | RedemptionVaultWithSwapper | impl | live | yes |
@@ -13,8 +15,12 @@
 | base | `0xa67a95971b8d010c16de4b33259d1c574d256121` | BeaconProxy | proxy | live | no |
 | base | `0xbc46393223990d024fcb2b0ff2f5a4cd52602ea2` | BeaconProxy | proxy | live | no |
 | base | `0xd7c286712bd46aa8acbec4ea99d3018b32edb190` | BeaconProxy | proxy | live | no |
+| chain-9745 | `0x230fb94b27da4e18f2eb6b66498ab3e9c860facd` | BeaconProxy | impl | live | no |
 | chain-9745 | `0x2ad9fd319b10bb59734e1dbbe42e0ad06869e2fb` | EulerEarn | impl | live | no |
 | chain-9745 | `0x53e4e9b8766969c43895839cc9c673bb6bc8ac97` | PoolV3 | impl | live | no |
+| chain-9745 | `0xa467ad3929e8ffdfd955f32756ec8b1522274ef2` | BeaconProxy | impl | live | no |
+| chain-9745 | `0xd3da8d58de01c99d9bb971ca284b89a2bb60798a` | BeaconProxy | impl | live | no |
+| chain-9745 | `0xf510385f5d74256bc677fbba4e0e3079be245bd2` | BeaconProxy | impl | live | no |
 | ethereum | `0x0562ae950276b24f3eae0d0a518dadb7ad2f8d66` | MetaMorphoV1_1 | impl | live | no |
 | ethereum | `0x0aecdf39d9d02833a055bf1eca518a83f66f4802` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x0c3f5fafb87318c0deaebff096aba019501fcb69` | WrappedEEthAdapter | impl | live | no |
@@ -128,16 +134,6 @@
 | linea | `0x140bd9a62ba84fbf78d9e3dd4a94fdafc999faf5` | BeaconProxy | impl | live | no |
 | linea | `0x1da14e692956382804a06ce38b984f56de457d7d` | BeaconProxy | impl | live | no |
 | linea | `0x3cc7963fa503fe32053f177c444855a71068a839` | BeaconProxy | impl | live | no |
+| linea | `0x4789d8066cac17fd24f24206a49abc72830604f1` | BeaconProxy | proxy | live | no |
 | linea | `0xe27c2571f6d1b942bbb438a37b0171c64b469e1f` | BeaconProxy | impl | live | no |
-
-## Source unavailable (8)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x2d91466bcc6946b58869fe2ae521a856737c3f6e`
-- base `0x5435bc53f2c61298167cdb11cdf0db2bfa259ca0`
-- chain-9745 `0x230fb94b27da4e18f2eb6b66498ab3e9c860facd`
-- chain-9745 `0xa467ad3929e8ffdfd955f32756ec8b1522274ef2`
-- chain-9745 `0xd3da8d58de01c99d9bb971ca284b89a2bb60798a`
-- chain-9745 `0xf510385f5d74256bc677fbba4e0e3079be245bd2`
-- linea `0x4789d8066cac17fd24f24206a49abc72830604f1`
-- optimism `0x48921e52f70cec7d3425cf5103caace27fc0b2fe`
+| optimism | `0x48921e52f70cec7d3425cf5103caace27fc0b2fe` | MetaMorphoV1_1-2 | impl | live | no |

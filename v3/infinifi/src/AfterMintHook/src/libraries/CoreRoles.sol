@@ -4,6 +4,7 @@ pragma solidity 0.8.28;
 /// @notice Holds a complete list of all roles which can be held by contracts inside the InfiniFi protocol.
 library CoreRoles {
     /// ----------- Core roles for access control --------------
+
     /// @notice the all-powerful role. Controls all other roles and protocol functionality.
     bytes32 internal constant GOVERNOR = keccak256("GOVERNOR");
 

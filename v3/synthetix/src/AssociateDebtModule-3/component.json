@@ -1,0 +1,18 @@
+{
+  "component": "AssociateDebtModule-3",
+  "main_contract": "AssociateDebtModule",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3091acaeaf27985f33a8a4b0eefea49dc60c8506",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

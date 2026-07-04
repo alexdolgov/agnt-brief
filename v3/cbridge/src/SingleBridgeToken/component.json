@@ -2,12 +2,20 @@
   "component": "SingleBridgeToken",
   "main_contract": "SingleBridgeToken",
   "source_file_count": 6,
-  "deployment_count": 3,
+  "deployment_count": 6,
   "audited": true,
   "audits_covering": [
     "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb6c39a0b62ede31f4ae426c1202b27476b69312",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -28,6 +36,22 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xe46910336479f254723710d57e7b683f3315b22b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb1835871e00a587df6fa6b401973980811b25560",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xd85e30c5d372942810c86c4ac9d7b3bb24cc1965",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

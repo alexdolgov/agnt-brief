@@ -1,0 +1,26 @@
+{
+  "component": "SuperTokenFactory-5",
+  "main_contract": "SuperTokenFactory",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5f4f9a643ea05444ff3e450d9197874d0f5b6058",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x65bbead517e68cde6f4ec2a7682ad440e3dc5033",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

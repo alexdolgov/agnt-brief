@@ -54,7 +54,7 @@ library PositionValue {
             return (0, 0, 0);
         }
 
-        ( , , , , , , liquidity, , , tokensOwed0, tokensOwed1) = positionManager.positions(tokenId);
+        (, , , , , , , liquidity, , , tokensOwed0, tokensOwed1) = positionManager.positions(tokenId);
     }
     
     function liquidityForShares(
@@ -63,7 +63,7 @@ library PositionValue {
         uint256 shares,
         uint256 totalSupply
     ) internal view returns (uint128 liquidity) {
-        ( , , , , , , uint128 positionLiquidity, , , , ) = positionManager.positions(tokenId);
+        (, , , , , , , uint128 positionLiquidity, , , , ) = positionManager.positions(tokenId);
         // x <= type(uint128).max check
         uint256 result = FullMath.mulDiv(uint256(positionLiquidity), shares, totalSupply);
         require(result <= type(uint128).max);
@@ -75,7 +75,7 @@ library PositionValue {
         IAlgebraPool pool,    
         uint256 tokenId
     ) internal view returns (uint256 fee0, uint256 fee1) {
-        ( , , , , int24 tickLower, int24 tickUpper, uint128 liquidityBefore, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, uint128 tokensOwed0, uint128 tokensOwed1) = positionManager.positions(tokenId);
+        (, , , , , int24 tickLower, int24 tickUpper, uint128 liquidityBefore, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, uint128 tokensOwed0, uint128 tokensOwed1) = positionManager.positions(tokenId);
 
         // Early return if no liquidity
         if (liquidityBefore == 0) return (uint256(tokensOwed0), uint256(tokensOwed1));

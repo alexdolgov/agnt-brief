@@ -1,0 +1,18 @@
+{
+  "component": "Admin-7",
+  "main_contract": "Admin",
+  "source_file_count": 30,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xccb87b6b2ed593600b52489ab566d274d2609d6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AutopoolMainRewarder-4",
+  "main_contract": "AutopoolMainRewarder",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4103a467166bbbda3694ab739b391db6c6630595",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

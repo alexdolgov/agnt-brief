@@ -88,11 +88,6 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
         _;
     }
 
-    modifier requireNotLiquidatable(uint256 _accountNumber) {
-        _requireNotLiquidatable(_accountNumber);
-        _;
-    }
-
     /**
      * @dev Prevents a contract from calling itself, directly or indirectly. Calling a `nonReentrant` function from
      *      another `nonReentrant` function is not supported. It is possible to prevent this from happening by making
@@ -696,13 +691,6 @@ abstract contract IsolationModeTokenVaultV1 is IIsolationModeTokenVaultV1, Proxy
             _FILE,
             "Only converter can call",
             _from
-        );
-    }
-
-    function _requireNotLiquidatable(uint256 _accountNumber) internal view {
-        IsolationModeTokenVaultV1ActionsImpl.checkIsLiquidatable(
-            /* _vault = */ this,
-            _accountNumber
         );
     }
 

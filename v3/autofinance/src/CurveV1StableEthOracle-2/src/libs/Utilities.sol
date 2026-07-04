@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 library Utilities {
     /**
@@ -9,9 +9,7 @@ library Utilities {
      * @dev We're making this factor dynamic based on the decimals of the token.
      * @return one unit in scaled down terms, one unit to pad back out
      */
-    function getScaleDownFactor(
-        uint8 decimals
-    ) internal pure returns (uint256, uint256) {
+    function getScaleDownFactor(uint8 decimals) internal pure returns (uint256, uint256) {
         if (decimals >= 18) {
             return (10 ** (decimals - 3), 1e3);
         }

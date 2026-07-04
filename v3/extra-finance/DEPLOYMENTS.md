@@ -1,6 +1,6 @@
 # extra-finance — deployments
 
-34 verified deployment(s) across 19 component(s).
+38 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,8 +8,12 @@
 | base | `0x23479229e52ab6aad312d0b03df9f33b46753b5e` | MetaMorphoV1_1 | impl | live | no |
 | base | `0x2dad3a13ef0c6366220f989157009e501e7938f8` | EXTRAoft | impl | live | no |
 | base | `0x5a32099837d89e3a794a44fb131cbbad41f87a8c` | MetaMorphoV1_1 | impl | live | no |
+| base | `0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd` | LendingPool-2 | impl | live | no |
+| base | `0xf9cfb8a62f50e10adde5aa888b44cf01c5957055` | VeloPositionManager-2 | impl | live | no |
 | chain-80094 | `0x155620a2e6a9392c754b73296d9655061525729b` | TransparentUpgradeableProxy | proxy | inactive | no |
 | chain-80094 | `0x6fbc6914c3f263b236c2ba82458c9d98c35487b2` | TransparentUpgradeableProxy | impl | inactive | no |
+| chain-80094 | `0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd` | LendingPool-3 | impl | live | no |
+| chain-80094 | `0xc99255128f85543801f7a01360e1e994422ebd50` | TransparentUpgradeableProxy | proxy | inactive | no |
 | chain-80094 | `0xf9cfb8a62f50e10adde5aa888b44cf01c5957055` | TransparentUpgradeableProxy | proxy | inactive | no |
 | chain-80094 | `0xf9d40a60fd6bdc866daf0918264a30acce1dc9cc` | TransparentUpgradeableProxy | impl | inactive | no |
 | optimism | `0x0c9d44f5a573f6cfc9e8264a5ca72a1184616ef4` | EXTRAoftProxy | impl | live | no |
@@ -39,11 +43,7 @@
 | optimism | `0xe0bec4f45aef64cec9dcb9010d4beffb13e91466` | VeToken-2 | impl | live | no |
 | optimism | `0xf9cfb8a62f50e10adde5aa888b44cf01c5957055` | VeloPositionManager | impl | live | yes |
 
-## Source unavailable (5)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - base `0x85603119c938750dfb5904f8a501b64f3f3a01d2`
-- base `0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd`
-- base `0xf9cfb8a62f50e10adde5aa888b44cf01c5957055`
-- chain-80094 `0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd`
-- chain-80094 `0xc99255128f85543801f7a01360e1e994422ebd50`

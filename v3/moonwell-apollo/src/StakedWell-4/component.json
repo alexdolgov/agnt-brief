@@ -1,0 +1,18 @@
+{
+  "component": "StakedWell-4",
+  "main_contract": "StakedWell",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xabd65097f869f36f56be9ec60dfb4a441a00c47c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

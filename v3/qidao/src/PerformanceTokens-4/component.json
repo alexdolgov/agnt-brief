@@ -1,0 +1,18 @@
+{
+  "component": "PerformanceTokens-4",
+  "main_contract": "PerformanceTokens",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe9d954a9a6a1a61bc1120970f84cdd76562c4a0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "RizLendingPoolAddressesProvider",
   "main_contract": "RizLendingPoolAddressesProvider",
   "source_file_count": 16,
-  "deployment_count": 5,
+  "deployment_count": 12,
   "audited": true,
   "audits_covering": [
     "https://www.openzeppelin.com/news/radiant-riz-audit"
@@ -44,6 +44,62 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0xfa584191f50c61f7fc160d3fa1419ec0c936204f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x35dcfecb7bcc122766fc5ed9c5e334377a6402c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x368633123723cdbb711da83fc6fe7ed918a4ad7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x43c7f97e9a6056c6ba9140dd1e2ddcf5051441fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x58a2d3774adc5c44f8b5dba943defb86dd213a35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc4da16b15c60952de0a4cd459f42fc634462b689",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd2dfe8487fef1361242b295013e29f6cfca822ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf4664e39db8f0a5812c5c6753bfd5d19863a104e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

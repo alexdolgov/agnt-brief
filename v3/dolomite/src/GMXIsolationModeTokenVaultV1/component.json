@@ -1,15 +1,23 @@
 {
   "component": "GMXIsolationModeTokenVaultV1",
   "main_contract": "GMXIsolationModeTokenVaultV1",
-  "source_file_count": 67,
-  "deployment_count": 1,
+  "source_file_count": 45,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x0ddf58358f00165cc0463a296905278f2bc0527e",
+      "address": "0x74e373b844089ee791bc6032a8f9a91ce823ed27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc43985a8986332fdaf4e4b21dd71bd3188745c0f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

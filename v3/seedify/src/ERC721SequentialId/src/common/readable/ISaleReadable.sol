@@ -13,7 +13,25 @@ interface ISaleReadable {
      * @param account Address of the user.
      * @param phaseId Identifier of the phase.
      *
+     * @return amount Amount of paymentToken paid by phase by each user,
+     *                               expressed in {SetUp.paymentToken}.
+     */
+    function freeAllocationMintedBy(
+        address account,
+        string calldata phaseId
+    ) external view returns (uint256);
+
+    /**
+     * @return Total Sum of maximum cap of each phase, expressed in {SetUp.paymentToken}.
+     */
+    function summedMaxPhaseCap() external view returns (uint256);
+
+    /**
+     * @param account Address of the user.
+     * @param phaseId Identifier of the phase.
+     *
      * @return Amount of {SaleStorage.SetUp.paymentToken} paid by `account` for the phase `phaseId`.
+     *         If `address(0)` is returned, it means native (ETH, BNB, MATCI, etc...).
      */
     function allocationReservedByIn(
         address account,
@@ -35,6 +53,7 @@ interface ISaleReadable {
      * @param phaseId Identifier of the phase.
      *
      * @return Amount of {SaleStorage.SetUp.paymentToken} raised for the phase `phaseId`.
+     *         If `address(0)` is returned, it means native (ETH, BNB, MATCI, etc...).
      */
     function raisedInPhase(
         string memory phaseId
@@ -45,12 +64,13 @@ interface ISaleReadable {
 
     /**
      * @return paymentToken Address of the default token used to reserve allocation through the Sale.
-     * @return grandTotal Maximum amount of paymentToken that can be raised for this Sale accross all phases.
+     *         If `address(0)` is returned, it means native (ETH, BNB, MATCI, etc...).
+     * @return permit2 Address of Permit2 contract.
      */
     function setUp()
         external
         view
-        returns (address paymentToken, uint256 grandTotal);
+        returns (address paymentToken, address permit2);
 
     /// @return Total amount of {SaleStorage.SetUp.paymentToken} raised for this Sale.
     function totalRaised() external view returns (uint256);

@@ -21,7 +21,15 @@ interface WhitelistInterface {
         bool _isPut
     ) external view returns (bool);
 
+    function isNakedWhitelistedCollateral(
+        address _collateral,
+        address _underlying,
+        bool _isPut
+    ) external view returns (bool);
+
     function isWhitelistedOtoken(address _otoken) external view returns (bool);
+
+    function isWhitelistedCallee(address _callee) external view returns (bool);
 
     /* Admin / factory only functions */
     function whitelistProduct(
@@ -48,7 +56,17 @@ interface WhitelistInterface {
         bool _isPut
     ) external;
 
+    function whitelistNakedCollateral(
+        address _collateral,
+        address _underlying,
+        bool _isPut
+    ) external;
+
     function whitelistOtoken(address _otoken) external;
 
     function blacklistOtoken(address _otoken) external;
+
+    function whitelistCallee(address _callee) external;
+
+    function blacklistCallee(address _callee) external;
 }

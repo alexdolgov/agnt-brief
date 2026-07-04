@@ -2,7 +2,7 @@
   "component": "CowSwapFeeBurner",
   "main_contract": "CowSwapFeeBurner",
   "source_file_count": 31,
-  "deployment_count": 4,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -25,6 +25,14 @@
     {
       "chain": "gnosis",
       "chain_id": 100,
+      "address": "0x309abcaefa19ca6d34f0d8ff4a4103317c138657",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
       "address": "0x332694ef46d880df6ea9593e04cb8abee5f81d99",
       "is_proxy": false,
       "implementation_address": null,
@@ -37,6 +45,46 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xae563e3f8219521950555f5962419c8919758ea2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd22eecbb495380ef52b1ccef1ca594979885d484",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfc00536a0fd292c284deef6af8f644d8373d9cad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbc169a08cbdcdb218d91cd945d29b59f78c96b77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf39ca6ede9bf7820a952b52f3c94af526bab9015",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

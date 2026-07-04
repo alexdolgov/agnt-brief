@@ -1,17 +1,39 @@
 {
   "component": "DepositManager-2",
   "main_contract": "DepositManager",
-  "source_file_count": 10,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Velvet-Capital/audits/blob/main/Smart_Contract_Audit_Velvet_Capital_Corev3_13072024-1.pdf"
-  ],
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x61f18d6beeb37b0d0f6af0a98bcccf8115598448",
+      "address": "0x85d68ce1fec82c04d52780be4657f77418d01ff1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb2448bcd81b8fc2119dc645e6ef1e639da6f0c4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe3f8d5a74e28996631a69e17c1e2ff8632965739",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe4e23120a38c4348d7e22ab23976fa0c4bf6e2ed",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

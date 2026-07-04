@@ -1,18 +1,26 @@
 {
   "component": "MigrationTool-2",
   "main_contract": "MigrationTool",
-  "source_file_count": 22,
-  "deployment_count": 1,
+  "source_file_count": 3,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x6e94c527e6a1def124ebf5be38c8c876a541bffb",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2c68d03f5e7333bbd21202044778893919cb8126",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3892a5c92eafb81cec321b4304495038202ca9e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

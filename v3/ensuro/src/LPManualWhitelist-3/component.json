@@ -1,0 +1,18 @@
+{
+  "component": "LPManualWhitelist-3",
+  "main_contract": "LPManualWhitelist",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5dff0f8f5b0713405978162b146db7d896bbb9be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

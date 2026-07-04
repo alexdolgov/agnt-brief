@@ -1,0 +1,18 @@
+{
+  "component": "PriceOracle-5",
+  "main_contract": "PriceOracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x78af64b8a02ea3f6445096a4d866eb8f27141b4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

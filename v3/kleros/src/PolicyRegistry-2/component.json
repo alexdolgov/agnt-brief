@@ -1,0 +1,18 @@
+{
+  "component": "PolicyRegistry-2",
+  "main_contract": "PolicyRegistry",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x03a9458d77dd705829fa758c64dbe770385295cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "MasterMinter",
   "main_contract": "MasterMinter",
   "source_file_count": 6,
-  "deployment_count": 2,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,54 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0x3c05fae3805e4dbdec04e56adc5ee493194996ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x589cfd082b670998f4181cc6007931966f94bec7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7bc1cf3eee9c3aca357133c5ebc6d575f63ba48e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xad9ed0a257a5ddbc39f625f2619b4cb036570393",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xafcb4b8a55abc2b389a510cc53da415a2e2002d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xbe9f04237f6603d92fee25e36ab5dd4fd263b954",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc787a98e3312c1f8ad7b04dc1fc1502a9a4f8be1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

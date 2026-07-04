@@ -1,18 +1,26 @@
 {
   "component": "VirtualRewardFactory",
   "main_contract": "VirtualRewardFactory",
-  "source_file_count": 48,
-  "deployment_count": 1,
+  "source_file_count": 43,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x05589cbbe1cc0357986df6de4031b953819079c2",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x64e2df8e5463f8c14e1c28c9782f7b4b6062b2c3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdd8e702404dcf472583ad03578be015b4fa2f27b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

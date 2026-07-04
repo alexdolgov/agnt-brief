@@ -1,15 +1,15 @@
 {
   "component": "IncentivizedERC20-7",
   "main_contract": "IncentivizedERC20",
-  "source_file_count": 33,
+  "source_file_count": 36,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x30777a478886ecfca0dc8b023e4fd19b133d616f",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d9991711ebc3e8f69b1e2cf99b8cade98792c2b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

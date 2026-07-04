@@ -1,0 +1,18 @@
+{
+  "component": "DepositBatch-4",
+  "main_contract": "DepositBatch",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe08616533cbb2db7f6e6086c60b50d3a4031fe6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

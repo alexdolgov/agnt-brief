@@ -1,39 +1,47 @@
 {
   "component": "ArrakisV2Helper",
   "main_contract": "ArrakisV2Helper",
-  "source_file_count": 24,
-  "deployment_count": 4,
+  "source_file_count": 20,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
       "address": "0x07d2ceb4869dfe17e8d48c92a71edc3ae564449f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
       "address": "0x89e4be1f999e3a58d16096fbe405fc2a1d7f07d6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbaffbf289d5cc9c7aa89254a30bff837f4bba929",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xccee73ea4c7a42491c68fea78b1bddd1a35c8d9c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xccee73ea4c7a42491c68fea78b1bddd1a35c8d9c",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x07d2ceb4869dfe17e8d48c92a71edc3ae564449f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x07d2ceb4869dfe17e8d48c92a71edc3ae564449f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

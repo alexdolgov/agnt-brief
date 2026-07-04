@@ -1,0 +1,26 @@
+{
+  "component": "BalancerComposableStablePoolCalculator-2",
+  "main_contract": "BalancerComposableStablePoolCalculator",
+  "source_file_count": 70,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4fc45f7c2feb07d5698cc12717f5b8d4f30002a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x800f535ce3f430b1f5475575d7d2ff3a164820b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

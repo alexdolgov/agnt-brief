@@ -59,7 +59,7 @@ library WithdrawLogic {
     enum WithdrawPath {
         USE_CURRENT_BALANCE, // Step 1: sufficient idle balance
         USE_BALANCE_PLUS_FEES, // Step 2: need zeroBurn for fees
-        BURN_AND_WITHDRAW // Step 3: burn positions to satisfy withdrawal (no rebalance)
+        BURN_AND_REBALANCE // Step 3: burn all + rebalance remaining
 
     }
 
@@ -111,7 +111,7 @@ library WithdrawLogic {
         }
 
         // PATH 3: Need to burn and rebalance
-        info.path = WithdrawPath.BURN_AND_WITHDRAW;
+        info.path = WithdrawPath.BURN_AND_REBALANCE;
     }
 
     /**
@@ -178,8 +178,8 @@ library WithdrawLogic {
         } else {
             // For non-wallet withdrawals, just calculate unused amounts for reporting
             {
-                uint256 unusedAmount0 = FullMath.mulDiv(s.currency0.balanceOfSelf() - amount0, shares, totalSupply);
-                uint256 unusedAmount1 = FullMath.mulDiv(s.currency1.balanceOfSelf() - amount1, shares, totalSupply);
+                uint256 unusedAmount0 = FullMath.mulDiv(s.currency0.balanceOfSelf(), shares, totalSupply);
+                uint256 unusedAmount1 = FullMath.mulDiv(s.currency1.balanceOfSelf(), shares, totalSupply);
 
                 unchecked {
                     amount0 += unusedAmount0;
@@ -303,7 +303,6 @@ library WithdrawLogic {
         // Transfer actual balance when short due to rounding, otherwise transfer requested amount
         amount0Out = balance0 < params.amount0Desired ? balance0 : params.amount0Desired;
         amount1Out = balance1 < params.amount1Desired ? balance1 : params.amount1Desired;
-        if (amount0Out == 0 && amount1Out == 0) revert InsufficientBalance();
         _transferWithdrawCustom(s, params.to, amount0Out, amount1Out);
 
         // NO REBALANCING - excess remains as unused balance
@@ -392,35 +391,8 @@ library WithdrawLogic {
             poolValueInToken1 = pool1 + FullMath.mulDiv(pool0, price, PRECISION);
         }
 
-        if (poolValueInToken1 == 0) {
-            // Fallback to token0 terms if token1 valuation rounds to zero
-            uint256 withdrawalValueInToken0 = amount0Desired;
-            uint256 poolValueInToken0 = pool0;
-
-            if (price == 0) {
-                if (amount1Desired != 0 || pool1 != 0) revert InsufficientBalance();
-            } else {
-                if (amount1Desired != 0) {
-                    unchecked {
-                        withdrawalValueInToken0 += FullMath.mulDiv(amount1Desired, PRECISION, price);
-                    }
-                }
-                if (pool1 != 0) {
-                    unchecked {
-                        poolValueInToken0 += FullMath.mulDiv(pool1, PRECISION, price);
-                    }
-                }
-            }
-
-            shares = FullMath.mulDiv(withdrawalValueInToken0, totalSupply, poolValueInToken0);
-        } else {
-            // Calculate shares to burn
-            shares = FullMath.mulDiv(withdrawalValueInToken1, totalSupply, poolValueInToken1);
-        }
-
-        if (shares == 0 && (amount0Desired != 0 || amount1Desired != 0)) {
-            shares = 1;
-        }
+        // Calculate shares to burn
+        shares = FullMath.mulDiv(withdrawalValueInToken1, totalSupply, poolValueInToken1);
     }
 
     /**
@@ -466,35 +438,8 @@ library WithdrawLogic {
             poolValueInToken1 = pool1 + FullMath.mulDiv(pool0, price, PRECISION);
         }
 
-        if (poolValueInToken1 == 0) {
-            // Fallback to token0 terms if token1 valuation rounds to zero
-            uint256 withdrawalValueInToken0 = amount0Desired;
-            uint256 poolValueInToken0 = pool0;
-
-            if (price == 0) {
-                if (amount1Desired != 0 || pool1 != 0) revert InsufficientBalance();
-            } else {
-                if (amount1Desired != 0) {
-                    unchecked {
-                        withdrawalValueInToken0 += FullMath.mulDiv(amount1Desired, PRECISION, price);
-                    }
-                }
-                if (pool1 != 0) {
-                    unchecked {
-                        poolValueInToken0 += FullMath.mulDiv(pool1, PRECISION, price);
-                    }
-                }
-            }
-
-            shares = FullMath.mulDiv(withdrawalValueInToken0, totalSupply, poolValueInToken0);
-        } else {
-            // Calculate shares to burn
-            shares = FullMath.mulDiv(withdrawalValueInToken1, totalSupply, poolValueInToken1);
-        }
-
-        if (shares == 0 && (amount0Desired != 0 || amount1Desired != 0)) {
-            shares = 1;
-        }
+        // Calculate shares to burn
+        shares = FullMath.mulDiv(withdrawalValueInToken1, totalSupply, poolValueInToken1);
     }
 
     /**
@@ -591,32 +536,36 @@ library WithdrawLogic {
             PoolManagerUtils.close(poolManager, s.currency1);
             PoolManagerUtils.close(poolManager, s.currency0);
 
-            // Calculate exact splits
-            uint256 treasuryFee0;
-            uint256 treasuryFee1;
-            uint256 ownerFee0;
-            uint256 ownerFee1;
+            // If there are fees, transfer owner's portion
+            // After close, owner's fees are in contract as ETH or ERC20
+            if (s.fee != 0) {
+                // Calculate exact splits
+                uint256 treasuryFee0;
+                uint256 treasuryFee1;
+                uint256 ownerFee0;
+                uint256 ownerFee1;
 
-            unchecked {
-                treasuryFee0 = totalFee0 / s.fee;
-                treasuryFee1 = totalFee1 / s.fee;
-                ownerFee0 = totalFee0 - treasuryFee0;
-                ownerFee1 = totalFee1 - treasuryFee1;
-            }
-
-            // Transfer owner's portion (now in contract after close)
-            if (ownerFee0 != 0) {
-                if (s.currency0.isAddressZero()) {
-                    // Native token - transfer ETH
-                    s.currency0.transfer(owner, ownerFee0);
-                } else {
-                    // ERC20 token
-                    IERC20(Currency.unwrap(s.currency0)).safeTransfer(owner, ownerFee0);
+                unchecked {
+                    treasuryFee0 = totalFee0 / s.fee;
+                    treasuryFee1 = totalFee1 / s.fee;
+                    ownerFee0 = totalFee0 - treasuryFee0;
+                    ownerFee1 = totalFee1 - treasuryFee1;
                 }
-            }
-            if (ownerFee1 != 0) {
-                // Currency1 is never native, always ERC20
-                IERC20(Currency.unwrap(s.currency1)).safeTransfer(owner, ownerFee1);
+
+                // Transfer owner's portion (now in contract after close)
+                if (ownerFee0 != 0) {
+                    if (s.currency0.isAddressZero()) {
+                        // Native token - transfer ETH
+                        payable(owner).transfer(ownerFee0);
+                    } else {
+                        // ERC20 token
+                        IERC20(Currency.unwrap(s.currency0)).safeTransfer(owner, ownerFee0);
+                    }
+                }
+                if (ownerFee1 != 0) {
+                    // Currency1 is never native, always ERC20
+                    IERC20(Currency.unwrap(s.currency1)).safeTransfer(owner, ownerFee1);
+                }
             }
         }
 

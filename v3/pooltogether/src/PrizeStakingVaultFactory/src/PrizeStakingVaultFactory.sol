@@ -76,11 +76,13 @@ contract PrizeStakingVaultFactory {
       address _claimer,
       address _owner
     ) external returns (address) {
+        string memory _stakingVaultName = string.concat("Staking Vault - ", _name);
+        string memory _stakingVaultSymbol = string.concat("stk-", _symbol);
         StakingVault _stakingVault = new StakingVault{
             salt: keccak256(abi.encode(msg.sender, deployerNonces[msg.sender]++))
         }(
-            string.concat("Staking Vault - ", _name),
-            string.concat("stk-", _symbol),
+            _stakingVaultName,
+            _stakingVaultSymbol,
             _asset
         );
         
@@ -102,8 +104,8 @@ contract PrizeStakingVaultFactory {
         emit NewStakingVault(
             _stakingVault,
             _asset,
-            _name,
-            _symbol
+            _stakingVaultName,
+            _stakingVaultSymbol
         );
 
         return _prizeVault;

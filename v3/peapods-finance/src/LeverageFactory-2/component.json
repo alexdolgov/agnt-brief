@@ -1,0 +1,18 @@
+{
+  "component": "LeverageFactory-2",
+  "main_contract": "LeverageFactory",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43b9d9b0585e5e8a1e069195170adfd0461939d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

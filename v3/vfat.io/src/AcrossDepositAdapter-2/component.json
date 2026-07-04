@@ -1,0 +1,50 @@
+{
+  "component": "AcrossDepositAdapter-2",
+  "main_contract": "AcrossDepositAdapter",
+  "source_file_count": 49,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf378bd35174ca2aaf0a23c8f72e95df17905fce8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb347cd0a0c5b61db97e40f2105f6701250cdfc18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf02e0f6ab55b52f31f734a15b7ffa5aa64b330a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfb25ec438cf1e46101b92cffc7c7ab7950df38c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x5310bc35dab81be7a5cd34546b8a186d2604687a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

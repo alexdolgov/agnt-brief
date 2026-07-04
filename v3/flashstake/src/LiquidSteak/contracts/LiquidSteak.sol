@@ -19,7 +19,7 @@ contract LiquidSteak is Ownable {
     // Immutable/constant variables
     address immutable public flashProtocolAddress;
     address immutable public flashNFTAddress;
-    address constant public auctionExchangeToken = 0xc628534100180582E43271448098cb2c185795BD;
+    address constant public auctionExchangeToken = 0xB1f1F47061A7Be15C69f378CB3f69423bD58F2F8;
     uint256 constant public auctionDuration = 604838;                // 7 days and 38 seconds
     uint256 constant public auctionStartBid = 1500000 * (10**18);    // 1.5M
     uint256 constant public auctionDecayPerSecond = 248 * (10**16);  // (2.48)

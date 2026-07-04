@@ -2,7 +2,7 @@
   "component": "Unitroller",
   "main_contract": "Unitroller",
   "source_file_count": 1,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/ShoebillFinance/audit-report/blob/main/Certik-Shoebill-final-20231121T015445Z.pdf"
@@ -27,6 +27,14 @@
     {
       "chain": "chain-169",
       "chain_id": 169,
+      "address": "0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
       "address": "0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc",
       "is_proxy": false,
       "implementation_address": null,

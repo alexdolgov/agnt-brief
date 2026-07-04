@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xcaabdd9cf4b61813d4a52f980d6bc1b713fe66f5",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2f255d3f3c0a3726c6c99e74566c4b18e36e3ce6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

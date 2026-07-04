@@ -1,0 +1,18 @@
+{
+  "component": "PoolOwner-5",
+  "main_contract": "PoolOwner",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5d56ea1b2595d2dbe4f5014b967c78ce75324f0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

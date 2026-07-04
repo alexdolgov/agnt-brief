@@ -1,0 +1,18 @@
+{
+  "component": "FleetCommander-6",
+  "main_contract": "FleetCommander",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4774d1cd62d20c288dfadefdedf79d5b4cae1856",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

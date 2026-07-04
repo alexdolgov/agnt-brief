@@ -1,0 +1,18 @@
+{
+  "component": "AerodromePoolAM-3",
+  "main_contract": "AerodromePoolAM",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe0fa1fd8f8e889062f03e2f126fc7b9de6091a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

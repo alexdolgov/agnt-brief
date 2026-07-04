@@ -1,0 +1,18 @@
+{
+  "component": "OlympusBondDepository-7",
+  "main_contract": "OlympusBondDepository",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd215d166a6a0be3616cab7c938fb2f7ddb6cb580",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

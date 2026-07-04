@@ -1,0 +1,42 @@
+{
+  "component": "NativeRouter-4",
+  "main_contract": "NativeRouter",
+  "source_file_count": 37,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0f9f2366c6157f2acd3c2bfa45cd9031c152d2cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0a5d888eb9897512abefbc693bf48065de84d0c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6645147356458bad2d95bca266f8200174367cfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd547727b926648af3f31dbb89e3b93e49f78dcb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

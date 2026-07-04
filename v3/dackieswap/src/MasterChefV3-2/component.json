@@ -1,20 +1,34 @@
 {
   "component": "MasterChefV3-2",
   "main_contract": "MasterChefV3",
-  "source_file_count": 21,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-DackieSwap-v1.0.pdf"
-  ],
+  "source_file_count": 25,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x3df41177096d1e18c1d4447fa16ecc12175fcbee",
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x03d1ae0b435c0b7064eb35461605974b7ee839bc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x28b90c75ffea5d1f8bd4e27dc8b87b13ba53309c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xcae74867add50fd8fac90c07db02e3d0c51a1241",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

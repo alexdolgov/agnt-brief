@@ -1,0 +1,18 @@
+{
+  "component": "VeloVaultTokenFactory-2",
+  "main_contract": "VeloVaultTokenFactory",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3b47f0e57a6c537ecc198833728ccd5d02e29771",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

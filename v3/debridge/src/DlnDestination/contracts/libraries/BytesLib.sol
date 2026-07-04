@@ -305,17 +305,6 @@ library BytesLib {
         return tempAddress;
     }
 
-    function toAddress(bytes memory _bytes) internal pure returns (address) {
-        require(_bytes.length == 20, "toAddress_outOfBounds");
-        address tempAddress;
-
-        assembly {
-            tempAddress := div(mload(add(add(_bytes, 0x20), 0)), 0x1000000000000000000000000)
-        }
-
-        return tempAddress;
-    }
-
     function toUint8(bytes memory _bytes, uint256 _start) internal pure returns (uint8) {
         require(_bytes.length >= _start + 1 , "toUint8_outOfBounds");
         uint8 tempUint;

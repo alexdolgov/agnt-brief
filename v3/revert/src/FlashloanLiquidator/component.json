@@ -2,7 +2,7 @@
   "component": "FlashloanLiquidator",
   "main_contract": "FlashloanLiquidator",
   "source_file_count": 33,
-  "deployment_count": 9,
+  "deployment_count": 13,
   "audited": true,
   "audits_covering": [
     "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-Lend-v1.0.pdf"
@@ -76,6 +76,38 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x2867d6a7a17f88db3e7b210c7d2258216c3a8334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4b073a6bf252c8de805a778c8ff2aad093ecb73d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x83b2184ec0e99798a6acc128dbee9a84ba8e8b9a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8ddf5fc64166b4be8278293766fbf772329d7a68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe639d6868b4f096ad4b16d51f792aef1d0ecebc0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,26 @@
+{
+  "component": "SystemControl-2",
+  "main_contract": "SystemControl",
+  "source_file_count": 73,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d694d1b369bde5b274ad643fedd74f836e88543",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc91789ab7d1e7c093c418c0930ed32d07d8bcf9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "FeeLibV1",
   "main_contract": "FeeLibV1",
   "source_file_count": 19,
-  "deployment_count": 13,
+  "deployment_count": 31,
   "audited": true,
   "audits_covering": [
     "https://github.com/stargate-protocol/stargate-v2/blob/main/audits/Stargate%20V2%20-%20Zellic%20FINAL%20Audit%20Report.pdf",
@@ -106,9 +106,153 @@
       "liveness": "live"
     },
     {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1f605162282570dfa6255d27895587f4117f52fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3da4f8e456ac648c489c286b99ca37b666be7c4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x80f755e3091b2ad99c08da8d13e9c7635c1b8161",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6d205337f45d6850c3c3006e28d5b52c8a432c35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd9492653457a69e9f4987db43d7fa0112e620cb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3fc69cc4a842838bcdc9499178740226062b14e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4e422b0acb2bd7e3ac70b5c0e5eb806e86a94038",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x88853d410299bcbfe5fcc9eef93c03115e908279",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xcd4302d950e7e6606b6910cd232758b5ad423311",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x288968fff40543f168eaf29a54d5c0affd3c8df7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x2bc3141aaea1d84bcd557eeb543253fd9685c0c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x6ec3efd27d8b1070fe96910ef416d54e845045c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa81274afac523d639dbca2c32c1470f1600ccebe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x08ed1d79d509a6f1020685535028ae60c144441e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x17e450be3ba9557f2378e20d64ad417e59ef9a34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1f605162282570dfa6255d27895587f4117f52fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80f755e3091b2ad99c08da8d13e9c7635c1b8161",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xda82a31df339bfdf0123661134b4db63cb1706f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x6e3d884c96d640526f273c61dfcf08915ebd7e2b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

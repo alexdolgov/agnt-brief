@@ -1,15 +1,15 @@
 {
   "component": "IConstantFlowAgreementV1-7",
   "main_contract": "IConstantFlowAgreementV1",
-  "source_file_count": 44,
+  "source_file_count": 26,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x642332562bc60a4bd9681e7bb1588f7456a497ac",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfd0268e33111565de546af2675351a4b1587f89f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

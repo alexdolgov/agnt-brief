@@ -1,0 +1,18 @@
+{
+  "component": "WeightedPool-2",
+  "main_contract": "WeightedPool",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x32df62dc3aed2cd6224193052ce665dc18165841",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,10 +1,27 @@
 # nest-credit — deployments
 
-35 verified deployment(s) across 9 component(s).
+52 verified deployment(s) across 14 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x0b738cd187872b265a689e8e4130c336e76892ec` | AccountantWithRateProviders-3 | impl | live | yes |
+| arbitrum | `0xe72fe64840f4ef80e3ec73a1c749491b5c938cb9` | BoringVault-3 | impl | live | yes |
+| bsc | `0x119dd7daff816f29d7ee47596ae5e4bdc4299165` | BoringVault-2 | impl | live | yes |
+| bsc | `0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb` | BoringVault-2 | impl | live | yes |
 | bsc | `0x220dc6d4569c1f406d532f9633d5be5bc86e8264` | AtomicQueue | impl | live | yes |
+| bsc | `0x2ed2f77a961fc92f73d1087786099c39c894ed1d` | AccountantWithRateProviders-3 | impl | live | yes |
+| bsc | `0x3d649799a16aefadb3fb1033192182b0f9836b32` | AccountantWithRateProviders-3 | impl | live | yes |
+| bsc | `0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974` | AtomicSolverV3 | impl | live | no |
+| bsc | `0x8034c2c6c5815f5935873279716abf5c1d6f4ab9` | AccountantWithRateProviders-4 | impl | live | yes |
+| bsc | `0xa5f8e5843dd597a179453bf782844e8bf808a90b` | AccountantWithRateProviders-4 | impl | live | yes |
+| bsc | `0xd476b79dc4b805e5dd1fa002aa6f9d432d600262` | ManagerWithMerkleVerification | impl | live | yes |
+| bsc | `0xea452b14fc86847182f8dd0486206eb56dda0393` | ManagerWithMerkleVerification | impl | live | yes |
+| chain-9745 | `0x119dd7daff816f29d7ee47596ae5e4bdc4299165` | BoringVault-2 | impl | live | yes |
+| chain-9745 | `0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb` | BoringVault-2 | impl | live | yes |
+| chain-9745 | `0x220dc6d4569c1f406d532f9633d5be5bc86e8264` | AtomicQueue-2 | impl | live | no |
+| chain-9745 | `0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974` | AtomicSolverV3 | impl | live | no |
+| chain-9745 | `0xd476b79dc4b805e5dd1fa002aa6f9d432d600262` | ManagerWithMerkleVerification | impl | live | yes |
+| chain-9745 | `0xea452b14fc86847182f8dd0486206eb56dda0393` | ManagerWithMerkleVerification | impl | live | yes |
 | ethereum | `0x0b738cd187872b265a689e8e4130c336e76892ec` | AccountantWithRateProviders-2 | impl | live | yes |
 | ethereum | `0x11113ff3a60c2450f4b22515cb760417259ee94b` | BoringVault | impl | live | yes |
 | ethereum | `0x119dd7daff816f29d7ee47596ae5e4bdc4299165` | BoringVault | impl | live | yes |
@@ -39,24 +56,3 @@
 | ethereum | `0xe72fe64840f4ef80e3ec73a1c749491b5c938cb9` | BoringVault | impl | live | yes |
 | ethereum | `0xea452b14fc86847182f8dd0486206eb56dda0393` | ManagerWithMerkleVerification | impl | live | yes |
 | ethereum | `0xf288a085622808b5c616ff45d740459741a6551c` | AccountantWithRateProviders | impl | live | yes |
-
-## Source unavailable (17)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x0b738cd187872b265a689e8e4130c336e76892ec`
-- arbitrum `0xe72fe64840f4ef80e3ec73a1c749491b5c938cb9`
-- bsc `0x119dd7daff816f29d7ee47596ae5e4bdc4299165`
-- bsc `0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb`
-- bsc `0x2ed2f77a961fc92f73d1087786099c39c894ed1d`
-- bsc `0x3d649799a16aefadb3fb1033192182b0f9836b32`
-- bsc `0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974`
-- bsc `0x8034c2c6c5815f5935873279716abf5c1d6f4ab9`
-- bsc `0xa5f8e5843dd597a179453bf782844e8bf808a90b`
-- bsc `0xd476b79dc4b805e5dd1fa002aa6f9d432d600262`
-- bsc `0xea452b14fc86847182f8dd0486206eb56dda0393`
-- chain-9745 `0x119dd7daff816f29d7ee47596ae5e4bdc4299165`
-- chain-9745 `0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb`
-- chain-9745 `0x220dc6d4569c1f406d532f9633d5be5bc86e8264`
-- chain-9745 `0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974`
-- chain-9745 `0xd476b79dc4b805e5dd1fa002aa6f9d432d600262`
-- chain-9745 `0xea452b14fc86847182f8dd0486206eb56dda0393`

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2024 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { BaseOracleDenominations, ISystemRegistry } from "src/oracles/providers/base/BaseOracleDenominations.sol";
 import { IAggregatorV3Interface } from "src/interfaces/external/chainlink/IAggregatorV3Interface.sol";
@@ -44,9 +44,7 @@ abstract contract BaseAggregatorV3OracleInformation is BaseOracleDenominations {
      */
     event OracleRegistrationRemoved(address token, address oracle);
 
-    constructor(
-        ISystemRegistry _systemRegistry
-    ) BaseOracleDenominations(_systemRegistry) { }
+    constructor(ISystemRegistry _systemRegistry) BaseOracleDenominations(_systemRegistry) { }
 
     /**
      * @notice Allows oracle address and denominations to be set for token.
@@ -82,9 +80,11 @@ abstract contract BaseAggregatorV3OracleInformation is BaseOracleDenominations {
      * @param token Address of token to remove registration for.
      * @return oracleBeforeDeletion Address of oracle for 'token' before deletion.
      */
-    function removeOracleRegistration(
-        address token
-    ) public hasRole(Roles.ORACLE_MANAGER) returns (address oracleBeforeDeletion) {
+    function removeOracleRegistration(address token)
+        public
+        hasRole(Roles.ORACLE_MANAGER)
+        returns (address oracleBeforeDeletion)
+    {
         Errors.verifyNotZero(token, "tokenToRemoveOracle");
         oracleBeforeDeletion = address(tokenToOracle[token].oracle);
         if (oracleBeforeDeletion == address(0)) revert Errors.MustBeSet();
@@ -99,9 +99,7 @@ abstract contract BaseAggregatorV3OracleInformation is BaseOracleDenominations {
      * @param token Address of token to get info for.
      * @return OracleInfo struct with information on `address token`.
      */
-    function getOracleInfo(
-        address token
-    ) external view returns (OracleInfo memory) {
+    function getOracleInfo(address token) external view returns (OracleInfo memory) {
         return tokenToOracle[token];
     }
 
@@ -131,9 +129,7 @@ abstract contract BaseAggregatorV3OracleInformation is BaseOracleDenominations {
     // slither-disable-end timestamp
 
     /// @dev internal getter to access `tokenToOracle` mapping, enforces address(0) check.
-    function _getOracleInfo(
-        address token
-    ) internal view returns (OracleInfo memory oracleInfo) {
+    function _getOracleInfo(address token) internal view returns (OracleInfo memory oracleInfo) {
         oracleInfo = tokenToOracle[token];
         Errors.verifyNotZero(address(oracleInfo.oracle), "Oracle");
     }

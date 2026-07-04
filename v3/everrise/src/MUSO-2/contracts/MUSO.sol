@@ -94,7 +94,7 @@ contract MUSO is Context, IERC20, Ownable {
   // PancakeSwap: 0x10ED43C718714eb63d5aA57B78B54704E256024E
   // Uniswap V2: 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
   address private constant _uniswapRouterAddress =
-    0x10ED43C718714eb63d5aA57B78B54704E256024E;
+    0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
 
   bool private _inSwapAndLiquify;
   bool private _tradingOpen = false;

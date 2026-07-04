@@ -1,0 +1,18 @@
+{
+  "component": "GmxV2IsolationModeUnwrapperTraderV2-6",
+  "main_contract": "GmxV2IsolationModeUnwrapperTraderV2",
+  "source_file_count": 82,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8690c27cc455d4f63b59a4dd9843c882e6346130",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

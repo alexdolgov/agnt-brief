@@ -1,0 +1,18 @@
+{
+  "component": "BiconomySponsorshipPaymaster-3",
+  "main_contract": "BiconomySponsorshipPaymaster",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0000006087310897e0bffcb3f0ed3704f7146852",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -9,6 +9,4 @@ interface IFarmBooster {
     function updatePositionBoostMultiplier(uint256 _tokenId) external returns (uint256 _multiplier);
 
     function removeBoostMultiplier(address _user, uint256 _tokenId, uint256 _pid) external;
-
-    function autoActivate(uint256 _tokenId) external;
 }

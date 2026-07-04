@@ -1,18 +1,39 @@
 {
   "component": "Sickle-3",
   "main_contract": "Sickle",
-  "source_file_count": 9,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-sickle-report.pdf",
-    "https://omniscia.io/reports/vfat-sickle-contracts-678fbcce38f52b001894a175"
-  ],
+  "source_file_count": 19,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x60879567aeda2294ba3f44e744a52c00d9d1b31a",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xbbddb992caf83388b216af8aeb8a0ac8a4bdd932",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xbbddb992caf83388b216af8aeb8a0ac8a4bdd932",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x50f3c65c6b2c754fd1a3c86c61284c631e6f493f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfb25ec438cf1e46101b92cffc7c7ab7950df38c8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

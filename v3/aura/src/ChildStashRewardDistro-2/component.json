@@ -1,0 +1,18 @@
+{
+  "component": "ChildStashRewardDistro-2",
+  "main_contract": "ChildStashRewardDistro",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x1bec8fd56166ba66afb6d449e61b717fc9b482c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

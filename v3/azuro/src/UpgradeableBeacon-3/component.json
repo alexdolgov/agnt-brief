@@ -1,0 +1,218 @@
+{
+  "component": "UpgradeableBeacon-3",
+  "main_contract": "UpgradeableBeacon",
+  "source_file_count": 14,
+  "deployment_count": 26,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x9e3b91a9457a216db383eb90917bf02d4362b642",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x9f79b0754863ee4d3de8003d9c3f4ff598a2bb11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa106d64a1ea2795dc2ec1d85b1a935086a8e59d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa4d0b2651f24fe3758428fa0f682b6b36381a15c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa9b3dda18645b9d39776d6d0183d112650f64a71",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb300209cff01da00711c4abb0007f203295c8e5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xbcaecdec8817357f58858d8eccac44459bcc9140",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc34e00443063896a14a510c99324d974aed7fe9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc35dae84b9f45b4a51dee8ec078f9aa79af8cbc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc6593f90d620c5c9fad12fdb0bb027bbe05af530",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xc755080153852015a880d0976c2413e8e2a650d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd1a7247bcd856ab59916a663a5c3b6fa75bf1e57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd1bb0ceb1047c853f8337c0c3b1e1c7bd774683b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd3eefe76252b588585c6024e5bc77ef0f9cfd292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe29c2e0944d23e20f36a3c02cbe6a721a6a02a6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe6dba7744288bda2a6a33586f931ad43aa5469ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe830d535ebd785209b2c8bf8ab00065f2e3f224d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xea8bf4f1a32ec91bc5e88c51cc034119f9f6732d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xf76db744c3a41b96c19e8c475aab97274f9f4c95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfc7b2b1bdec4076bc41b0fdcc28eb293ed20098c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6edff24761f4473611b45bdae4a779ff31af14be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7b5a701d574b8a5f991b3ac791b9439e9adafd9a",
+      "is_proxy": true,
+      "implementation_address": "0xda26cb81140f2a98ded4cf25d4e2fa88b76e9818",
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xda26cb81140f2a98ded4cf25d4e2fa88b76e9818",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdaaf889cba8b39962cc78cf7038cb052524aedc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe79d39b913c57eeb2d49712576dd096f610b340",
+      "is_proxy": true,
+      "implementation_address": "0xa48f89d08a48c69c33eae6a1c9683d2763874e48",
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa219439258ca9da29e9cc4ce5596924745e12b93",
+      "is_proxy": true,
+      "implementation_address": "0xc0583e2f5930ede5fab9d57bac4169878730b010",
+      "liveness": "live"
+    }
+  ]
+}

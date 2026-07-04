@@ -4,13 +4,18 @@ pragma solidity =0.7.6;
 import './interfaces/ISquadV3Factory.sol';
 import "./interfaces/ISquadV3PoolDeployer.sol";
 import './interfaces/ISquadV3Pool.sol';
+import './blast/SquadGas.sol';
+import './blast/interfaces/IBlastPoints.sol';
 
 /// @title Canonical SquadSwap V3 factory
 /// @notice Deploys SquadSwap V3 pools and manages ownership and control over pool protocol fees
-contract SquadV3Factory is ISquadV3Factory {
+contract SquadV3Factory is ISquadV3Factory, SquadGas {
 
     /// @inheritdoc ISquadV3Factory
     address public override owner;
+
+    /// Points adminf or Blast points
+    address public override pointsAdmin;
 
     address public immutable poolDeployer;
 
@@ -36,10 +41,15 @@ contract SquadV3Factory is ISquadV3Factory {
         _;
     }
 
-    constructor(address _poolDeployer) {
+    address private constant BLAST_POINTS = 0x2536FE9ab3F511540F2f9e2eC2A805005C3Dd800; // mainnet
+    // address private constant BLAST_POINTS = 0x2fc95838c71e76ec69ff817983BFf17c710F34E0; // testnet
+
+    constructor(address _poolDeployer, address _pointsAdmin) SquadGas(msg.sender) {
         poolDeployer = _poolDeployer;
         owner = msg.sender;
         emit OwnerChanged(address(0), msg.sender);
+        pointsAdmin = _pointsAdmin;
+        IBlastPoints(BLAST_POINTS).configurePointsOperator(_pointsAdmin);
 
         feeAmountTickSpacing[100] = 1;
         feeAmountTickSpacingExtraInfo[100] = TickSpacingExtraInfo({whitelistRequested: false, enabled: true});
@@ -152,5 +162,15 @@ contract SquadV3Factory is ISquadV3Factory {
     function changeFeeManager(address _manager) external onlyOwnerOrLmPoolDeployer {
         feeManager = _manager;
         emit UpdateFeeManager(_manager);
+    }
+
+    function claimDeployerGas(address _recipient) external {
+        require(msg.sender == owner);
+        ISquadV3PoolDeployer(poolDeployer).claimGas(_recipient);
+    }
+
+    function updatePointsAdmin(address _pointsAdmin) external {
+        require(msg.sender == owner);
+        pointsAdmin = _pointsAdmin;
     }
 }

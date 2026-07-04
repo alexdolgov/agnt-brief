@@ -1,0 +1,18 @@
+{
+  "component": "FastSwitchboard-2",
+  "main_contract": "FastSwitchboard",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd5e829827f665c42326eaf68da3360bd59b42f2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

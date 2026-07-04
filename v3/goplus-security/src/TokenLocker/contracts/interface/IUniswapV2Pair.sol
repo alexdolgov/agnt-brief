@@ -71,10 +71,6 @@ interface IUniswapV2Pair {
 
   function token1() external view returns (address);
 
-  function fees() external view returns (address);
-
-  function isStable() external view returns (bool);
-
   function getReserves()
     external
     view

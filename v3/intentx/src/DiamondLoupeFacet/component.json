@@ -2,10 +2,34 @@
   "component": "DiamondLoupeFacet",
   "main_contract": "DiamondLoupeFacet",
   "source_file_count": 5,
-  "deployment_count": 3,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xcf74c49be20351ef069e3f32b6e646d4b2ba69d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xd1559bab2423644ac489ef52c76ab92b0f05fc01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xdea50824a9e50bd1e9943155938f3b82854b2eec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -26,6 +50,30 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0xa0e786f59881e549e6de6b01adf5269a5f48bb2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x45c3e20b9d8129f90c1a2ade4eb468b752552ba9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5044238ea045585c704dc2c6387d66d29ed56648",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa7f7c83ca713e48844818c4993ddb55840692342",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

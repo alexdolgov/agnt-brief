@@ -1,15 +1,23 @@
 {
   "component": "PermissionlessSwap",
   "main_contract": "PermissionlessSwap",
-  "source_file_count": 33,
-  "deployment_count": 1,
+  "source_file_count": 29,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x04b58dc190da2e9b46a3f1ac94f6eca3b683c765",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x08f8611b996bf2f0fd7523b54e69bfb92dd43a81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x21d4365834b7c61447e142ef6bcf01136cbd01c6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

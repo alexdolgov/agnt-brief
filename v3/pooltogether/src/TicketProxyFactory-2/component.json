@@ -1,0 +1,26 @@
+{
+  "component": "TicketProxyFactory-2",
+  "main_contract": "TicketProxyFactory",
+  "source_file_count": 112,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa7d0d3c4f96bb896e0878ef4b83e5ca79700acb9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb932b0bcfa5208d536600ab23c13ac55cd69ba1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

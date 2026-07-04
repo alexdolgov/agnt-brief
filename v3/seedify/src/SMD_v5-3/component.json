@@ -1,0 +1,26 @@
+{
+  "component": "SMD_v5-3",
+  "main_contract": "SMD_v5",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1315a397720ce226d531f86a103861e0c0c61dab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ed520111e8abbe8f9674a42d1974c09a0c7cf0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

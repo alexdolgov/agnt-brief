@@ -15,17 +15,24 @@
  * dTRINITY Protocol: https://github.com/dtrinity                                   *
  * ———————————————————————————————————————————————————————————————————————————————— */
 
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 import {IProxy} from "../interface/api3/IProxy.sol";
-import "../interface/api3/IAPI3Wrapper.sol";
+import "../interface/api3/BaseAPI3Wrapper.sol";
 
-contract API3Wrapper is IAPI3Wrapper {
+/**
+ * @title API3Wrapper
+ * @dev Implementation of IAPI3Wrapper for standard API3 oracles
+ */
+contract API3Wrapper is BaseAPI3Wrapper {
     mapping(address => IProxy) public assetToProxy;
 
     error ProxyNotSet(address asset);
 
-    constructor(uint256 _baseCurrencyUnit) IAPI3Wrapper(_baseCurrencyUnit) {}
+    constructor(
+        address baseCurrency,
+        uint256 _baseCurrencyUnit
+    ) BaseAPI3Wrapper(baseCurrency, _baseCurrencyUnit) {}
 
     function getPriceInfo(
         address asset

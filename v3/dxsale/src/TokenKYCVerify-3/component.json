@@ -1,0 +1,18 @@
+{
+  "component": "TokenKYCVerify-3",
+  "main_contract": "TokenKYCVerify",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x1265462f8dbbda17062c1b827cb85dc98b459b78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

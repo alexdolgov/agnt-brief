@@ -1,0 +1,18 @@
+{
+  "component": "BentoBoxV1-6",
+  "main_contract": "BentoBoxV1",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x74c764d41b77dbbb4fe771dab1939b00b146894a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

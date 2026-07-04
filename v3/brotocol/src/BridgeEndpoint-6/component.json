@@ -1,0 +1,18 @@
+{
+  "component": "BridgeEndpoint-6",
+  "main_contract": "BridgeEndpoint",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x79d1c91053baceced5c796ab8a765e4d5ab38e8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

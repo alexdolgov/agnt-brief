@@ -1,0 +1,18 @@
+{
+  "component": "OpenLevV1-5",
+  "main_contract": "OpenLevV1",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x538df51ea1e7937d6295d81ee8cbf43d78cb572f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

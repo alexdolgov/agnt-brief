@@ -1,0 +1,18 @@
+{
+  "component": "SwapRouterV2-3",
+  "main_contract": "SwapRouterV2",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x955b5adcdbba6870feca78338137191f774679ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

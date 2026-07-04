@@ -1,15 +1,10 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.19;
+pragma solidity 0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "../libraries/Fixed.sol";
+import "contracts/libraries/Fixed.sol";
 import "./IAsset.sol";
 import "./IComponent.sol";
-
-struct BasketRange {
-    uint192 bottom; // {BU}
-    uint192 top; // {BU}
-}
 
 /**
  * @title IBasketHandler
@@ -26,7 +21,7 @@ interface IBasketHandler is IComponent {
     event PrimeBasketSet(IERC20[] erc20s, uint192[] targetAmts, bytes32[] targetNames);
 
     /// Emitted when the reference basket is set
-    /// @param nonce {basketNonce} The basket nonce
+    /// @param nonce The basket nonce
     /// @param erc20s The list of collateral tokens in the reference basket
     /// @param refAmts {ref/BU} The reference amounts of the basket collateral tokens
     /// @param disabled True when the list of erc20s + refAmts may not be correct
@@ -36,20 +31,10 @@ interface IBasketHandler is IComponent {
     /// @param targetName The name of the target unit as a bytes32
     /// @param max The max number to use from `erc20s`
     /// @param erc20s The set of backup collateral tokens
-    event BackupConfigSet(bytes32 indexed targetName, uint256 max, IERC20[] erc20s);
-
-    /// Emitted when the warmup period is changed
-    /// @param oldVal The old warmup period
-    /// @param newVal The new warmup period
-    event WarmupPeriodSet(uint48 oldVal, uint48 newVal);
-
-    /// Emitted when the status of a basket has changed
-    /// @param oldStatus The previous basket status
-    /// @param newStatus The new basket status
-    event BasketStatusChanged(CollateralStatus oldStatus, CollateralStatus newStatus);
+    event BackupConfigSet(bytes32 indexed targetName, uint256 indexed max, IERC20[] erc20s);
 
     // Initialization
-    function init(IMain main_, uint48 warmupPeriod_) external;
+    function init(IMain main_) external;
 
     /// Set the prime basket
     /// @param erc20s The collateral tokens for the new prime basket
@@ -79,34 +64,17 @@ interface IBasketHandler is IComponent {
     /// @custom:interaction
     function refreshBasket() external;
 
-    /// Track the basket status changes
-    /// @custom:refresher
-    function trackStatus() external;
-
     /// @return If the BackingManager has sufficient collateral to redeem the entire RToken supply
     function fullyCollateralized() external view returns (bool);
 
     /// @return status The worst CollateralStatus of all collateral in the basket
     function status() external view returns (CollateralStatus status);
 
-    /// @return If the basket is ready to issue and trade
-    function isReady() external view returns (bool);
-
-    /// @param erc20 The ERC20 token contract for the asset
     /// @return {tok/BU} The whole token quantity of token in the reference basket
-    /// Returns 0 if erc20 is not registered or not in the basket
+    /// Returns 0 if erc20 is not registered, disabled, or not in the basket
     /// Returns FIX_MAX (in lieu of +infinity) if Collateral.refPerTok() is 0.
     /// Otherwise, returns (token's basket.refAmts / token's Collateral.refPerTok())
     function quantity(IERC20 erc20) external view returns (uint192);
-
-    /// Like quantity(), but unsafe because it DOES NOT CONFIRM THAT THE ASSET IS CORRECT
-    /// @param erc20 The ERC20 token contract for the asset
-    /// @param asset The registered asset plugin contract for the erc20
-    /// @return {tok/BU} The whole token quantity of token in the reference basket
-    /// Returns 0 if erc20 is not registered or not in the basket
-    /// Returns FIX_MAX (in lieu of +infinity) if Collateral.refPerTok() is 0.
-    /// Otherwise, returns (token's basket.refAmts / token's Collateral.refPerTok())
-    function quantityUnsafe(IERC20 erc20, IAsset asset) external view returns (uint192);
 
     /// @param amount {BU}
     /// @return erc20s The addresses of the ERC20 tokens in the reference basket
@@ -116,42 +84,17 @@ interface IBasketHandler is IComponent {
         view
         returns (address[] memory erc20s, uint256[] memory quantities);
 
-    /// Return the redemption value of `amount` BUs for a linear combination of historical baskets
-    /// @param basketNonces An array of basket nonces to do redemption from
-    /// @param portions {1} An array of Fix quantities that must add up to FIX_ONE
-    /// @param amount {BU}
-    /// @return erc20s The backing collateral erc20s
-    /// @return quantities {qTok} ERC20 token quantities equal to `amount` BUs
-    function quoteCustomRedemption(
-        uint48[] memory basketNonces,
-        uint192[] memory portions,
-        uint192 amount
-    ) external view returns (address[] memory erc20s, uint256[] memory quantities);
+    /// @return baskets {BU} The quantity of complete baskets at an address. A balance for BUs
+    function basketsHeldBy(address account) external view returns (uint192 baskets);
 
-    /// @return top {BU} The number of partial basket units: e.g max(coll.map((c) => c.balAsBUs())
-    ///         bottom {BU} The number of whole basket units held by the account
-    function basketsHeldBy(address account) external view returns (BasketRange memory);
+    /// @param allowFallback Whether to fail over to the fallback price or not
+    /// @return isFallback If any fallback prices were used
+    /// @return p {UoA/BU} The protocol's best guess at what a BU would be priced at in UoA
+    function price(bool allowFallback) external view returns (bool isFallback, uint192 p);
 
-    /// Should not revert
-    /// @return low {UoA/BU} The lower end of the price estimate
-    /// @return high {UoA/BU} The upper end of the price estimate
-    function price() external view returns (uint192 low, uint192 high);
-
-    /// Should not revert
-    /// lotLow should be nonzero if a BU could be worth selling
-    /// @return lotLow {UoA/tok} The lower end of the lot price estimate
-    /// @return lotHigh {UoA/tok} The upper end of the lot price estimate
-    function lotPrice() external view returns (uint192 lotLow, uint192 lotHigh);
+    /// @return The basket nonce, a monotonically increasing unique identifier
+    function nonce() external view returns (uint48);
 
     /// @return timestamp The timestamp at which the basket was last set
     function timestamp() external view returns (uint48);
-
-    /// @return The current basket nonce, regardless of status
-    function nonce() external view returns (uint48);
-}
-
-interface TestIBasketHandler is IBasketHandler {
-    function warmupPeriod() external view returns (uint48);
-
-    function setWarmupPeriod(uint48 val) external;
 }

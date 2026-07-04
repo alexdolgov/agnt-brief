@@ -36,4 +36,6 @@ interface IPoolManagerLogic {
     external
     view
     returns (uint256 exitFeeNumerator, uint256 poolFeeShareNumerator, uint256 feeDenominator);
+
+  function maxSupplyCap() external view returns (uint256 supplyCap);
 }

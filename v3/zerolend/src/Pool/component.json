@@ -5,7 +5,6 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/aave/aave-v3-core/blob/master/audits/27-01-2022_ABDK_AaveV3.pdf",
     "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/01-11-2021_OpenZeppelin_AaveV3.pdf",
     "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/07-01-2022_TrailOfBits_AaveV3.pdf",
     "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/14-01-2022_PeckShield_AaveV3.pdf",
@@ -14,9 +13,9 @@
   ],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x6cdcb1c4a4d1c3c6d054b27ac5b77e89eafb971d",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x8676e39b5d2f0d6e0d78a4208a0ccbc50504972e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

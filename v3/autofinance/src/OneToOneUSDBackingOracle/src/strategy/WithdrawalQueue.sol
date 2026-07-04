@@ -14,24 +14,6 @@ library WithdrawalQueue {
     error AddToTailFailed();
     error NodeDoesNotExist();
 
-    /// @notice Insert node `newNode` beside existing node `existingNode` in direction `_NEXT`.
-    function insertAfter(
-        StructuredLinkedList.List storage queue,
-        address existingNode,
-        address newNode
-    ) public returns (bool) {
-        return StructuredLinkedList.insertAfter(queue, _addressToUint(existingNode), _addressToUint(newNode));
-    }
-
-    /// @notice Insert node `newNode` beside existing node `existingNode` in direction `_PREV`.
-    function insertBefore(
-        StructuredLinkedList.List storage queue,
-        address existingNode,
-        address newNode
-    ) public returns (bool) {
-        return StructuredLinkedList.insertBefore(queue, _addressToUint(existingNode), _addressToUint(newNode));
-    }
-
     /// @notice Returns true if the address is in the queue.
     function addressExists(StructuredLinkedList.List storage queue, address addr) public view returns (bool) {
         return StructuredLinkedList.nodeExists(queue, _addressToUint(addr));
@@ -87,19 +69,6 @@ library WithdrawalQueue {
         StructuredLinkedList.List storage queue
     ) public returns (address) {
         return _uintToAddress(StructuredLinkedList.popFront(queue));
-    }
-
-    /// @notice remove address toRemove from queue if it exists.
-    /// @dev Reverts if node does not exist
-    function removeAddress(StructuredLinkedList.List storage queue, address toRemove) public {
-        uint256 addrAsUint = _addressToUint(toRemove);
-        uint256 _removedNode = StructuredLinkedList.remove(queue, addrAsUint);
-        if (_removedNode == 0) {
-            revert NodeDoesNotExist();
-        }
-        if (_removedNode != addrAsUint) {
-            revert UnexpectedNodeRemoved();
-        }
     }
 
     /// @notice remove address toRemove from queue if it exists.

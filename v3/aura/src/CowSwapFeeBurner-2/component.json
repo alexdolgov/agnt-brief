@@ -2,7 +2,7 @@
   "component": "CowSwapFeeBurner-2",
   "main_contract": "CowSwapFeeBurner",
   "source_file_count": 35,
-  "deployment_count": 4,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x397bc40ba584e651f4f5cf4ae089f0130569a1c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     },
     {
       "chain": "gnosis",
@@ -34,6 +42,22 @@
       "chain": "gnosis",
       "chain_id": 100,
       "address": "0xfa80c17ee7e382c9c541bfa4bea0514e46dccba5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x774cb66e2b2db59a9daf175e9b2b7a142e17eb94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x891ec9b34829276a9a8ef2f8a9ceaf2486017e0d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

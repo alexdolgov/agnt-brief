@@ -1,6 +1,6 @@
 # ambient — deployments
 
-23 verified deployment(s) across 14 component(s).
+24 verified deployment(s) across 15 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,7 +8,7 @@
 | blast | `0x19d005f3d4a9c5b0211457339dda9822dc2dee94` | TimelockAccepts | impl | inactive | no |
 | blast | `0x503e3dfddd22d1c4a9787d2dac8643afc58c162c` | CrocPolicy | impl | live | no |
 | blast | `0x6050cf4b9125c81dbccb5d662131d4de04d5bb86` | SettleLayer | impl | live | no |
-| blast | `0x62223e90605845cf5cc6dae6e0de4cda130d6ddf` | WarmPath | impl | live | no |
+| blast | `0x62223e90605845cf5cc6dae6e0de4cda130d6ddf` | WarmPath-2 | impl | live | no |
 | blast | `0x646929453e753565467f330110850885ead93fa9` | LongPath | impl | live | no |
 | blast | `0x67231c7db63e5d7378596aadd6ba69345e6a53aa` | KnockoutLiqPath | impl | inactive | no |
 | blast | `0x6a699ab45adce02891e6115b81dfb46caa5efdb9` | CrocImpact | impl | live | no |
@@ -25,10 +25,6 @@
 | blast | `0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed` | GnosisSafeProxy | proxy | live | no |
 | blast | `0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1` | SettleLayer | impl | live | no |
 | blast | `0xe3150c65446dc05505ac33b51d742e9458fe0bfe` | SettleLayer | impl | inactive | no |
+| ethereum | `0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688` | WarmPath | proxy | live | no |
 | scroll | `0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106` | CrocSwapDex | impl | live | yes |
 | scroll | `0xfb5f26851e03449a0403ca945ebb4201415fd1fc` | CrocSwapRouter | impl | unknown | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688`

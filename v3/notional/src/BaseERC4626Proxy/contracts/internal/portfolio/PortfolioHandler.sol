@@ -1,18 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity =0.7.6;
+pragma solidity ^0.7.0;
 pragma abicoder v2;
 
-import {
-    PortfolioState,
-    PortfolioAsset,
-    PortfolioAssetStorage,
-    AssetStorageState
-} from "../../global/Types.sol";
-import {Constants} from "../../global/Constants.sol";
-import {LibStorage} from "../../global/LibStorage.sol";
-import {TransferAssets} from "./TransferAssets.sol";
-import {AssetHandler} from "../valuation/AssetHandler.sol";
-import {SafeInt256} from "../../math/SafeInt256.sol";
+import "./TransferAssets.sol";
+import "../valuation/AssetHandler.sol";
+import "../../math/SafeInt256.sol";
 
 /// @notice Handles the management of an array of assets including reading from storage, inserting
 /// updating, deleting and writing back to storage.
@@ -21,7 +13,7 @@ library PortfolioHandler {
     using AssetHandler for PortfolioAsset;
 
     // Mirror of LibStorage.MAX_PORTFOLIO_ASSETS
-    uint256 private constant MAX_PORTFOLIO_ASSETS = 8;
+    uint256 private constant MAX_PORTFOLIO_ASSETS = 16;
 
     /// @notice Primarily used by the TransferAssets library
     function addMultipleAssets(PortfolioState memory portfolioState, PortfolioAsset[] memory assets)
@@ -44,7 +36,7 @@ library PortfolioHandler {
 
     function _mergeAssetIntoArray(
         PortfolioAsset[] memory assetArray,
-        uint16 currencyId,
+        uint256 currencyId,
         uint256 maturity,
         uint256 assetType,
         int256 notional
@@ -86,7 +78,7 @@ library PortfolioHandler {
     /// to exist in a single portfolio). Also ensures that liquidity tokens do not have a negative notional.
     function addAsset(
         PortfolioState memory portfolioState,
-        uint16 currencyId,
+        uint256 currencyId,
         uint256 maturity,
         uint256 assetType,
         int256 notional
@@ -248,10 +240,9 @@ library PortfolioHandler {
             assetStorageLength += 1;
         }
 
-        // 16 is the maximum number of assets or portfolio active currencies will overflow its
-        // 32 bytes size given 2 bytes per currency
-        require(assetStorageLength <= 16); // dev: active currencies bytes32 overflow
-        require(nextSettleTime <= type(uint40).max); // dev: portfolio return value overflow
+        // 16 is the maximum number of assets or portfolio active currencies will overflow at 32 bytes with
+        // 2 bytes per currency
+        require(assetStorageLength <= 16 && nextSettleTime <= type(uint40).max); // dev: portfolio return value overflow
         return (
             hasDebt,
             portfolioActiveCurrencies,
@@ -283,9 +274,7 @@ library PortfolioHandler {
         hasDebt = hasDebt || asset.notional < 0;
 
         require(uint16(uint256(portfolioActiveCurrencies)) == 0); // dev: portfolio active currencies overflow
-        portfolioActiveCurrencies = 
-            (portfolioActiveCurrencies >> 16) | 
-            (bytes32(uint256(asset.currencyId)) << 240);
+        portfolioActiveCurrencies = (portfolioActiveCurrencies >> 16) | (bytes32(asset.currencyId) << 240);
 
         return (hasDebt, portfolioActiveCurrencies, nextSettleTime);
     }
@@ -354,14 +343,16 @@ library PortfolioHandler {
 
     /// @notice Returns a portfolio array, will be sorted
     function getSortedPortfolio(address account, uint8 assetArrayLength)
-        internal view returns (PortfolioAsset[] memory assets) {
-        (assets, /* */) = getSortedPortfolioWithIds(account, assetArrayLength);
-    }
+        internal
+        view
+        returns (PortfolioAsset[] memory)
+    {
+        PortfolioAsset[] memory assets = _loadAssetArray(account, assetArrayLength);
+        // No sorting required for length of 1
+        if (assets.length <= 1) return assets;
 
-    function getSortedPortfolioWithIds(address account, uint8 assetArrayLength)
-        internal view returns (PortfolioAsset[] memory assets, uint256[] memory ids) {
-        assets = _loadAssetArray(account, assetArrayLength);
-        ids = _sortInPlace(assets);
+        _sortInPlace(assets);
+        return assets;
     }
 
     /// @notice Builds a portfolio array from storage. The new assets hint parameter will
@@ -382,23 +373,13 @@ library PortfolioHandler {
         return state;
     }
 
-    function _sortId(uint16 currencyId, uint256 maturity, uint256 assetType) private pure returns (uint256) {
-        return uint256(
-            (bytes32(uint256(currencyId)) << 48) |
-                (bytes32(uint256(uint40(maturity))) << 8) |
-                bytes32(uint256(uint8(assetType)))
-        );
-    }
-
-    function _sortInPlace(
-        PortfolioAsset[] memory assets
-    ) private pure returns (uint256[] memory ids) {
+    function _sortInPlace(PortfolioAsset[] memory assets) private pure {
         uint256 length = assets.length;
-        ids = new uint256[](length);
+        uint256[] memory ids = new uint256[](length);
         for (uint256 k; k < length; k++) {
             PortfolioAsset memory asset = assets[k];
             // Prepopulate the ids to calculate just once
-            ids[k] = _sortId(asset.currencyId, asset.maturity, asset.assetType);
+            ids[k] = TransferAssets.encodeAssetId(asset.currencyId, asset.maturity, asset.assetType);
         }
 
         // Uses insertion sort 

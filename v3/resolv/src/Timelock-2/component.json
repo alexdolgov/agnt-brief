@@ -2,10 +2,18 @@
   "component": "Timelock-2",
   "main_contract": "Timelock",
   "source_file_count": 12,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc31389794ffac23331e0d9f611b7953f90aa5fdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "chain-9745",
       "chain_id": 9745,

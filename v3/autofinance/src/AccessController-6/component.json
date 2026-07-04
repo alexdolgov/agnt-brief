@@ -1,0 +1,18 @@
+{
+  "component": "AccessController-6",
+  "main_contract": "AccessController",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf4425cb2bb4275afe3d0232a6a00a4fbfdb76a04",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

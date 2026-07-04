@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at snowtrace.io on 2021-12-06
+*/
+
 // File: contracts/interfaces/IMarketHandlerDataStorage.sol
 pragma solidity 0.6.12;
 
@@ -170,10 +174,10 @@ pragma solidity 0.6.12;
 contract BlockContext {
     function _blockContext() internal view returns(uint256 context) {
         // block number chain
-        context = block.number;
+        // context = block.number;
 
         // block timestamp chain
-        // context = block.timestamp;
+        context = block.timestamp;
     }
 }
 

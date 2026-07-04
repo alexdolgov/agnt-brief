@@ -1,0 +1,26 @@
+{
+  "component": "ProtocolAccessManager-13",
+  "main_contract": "ProtocolAccessManager",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x47c327898d412cf0271675f62bcf0ce472a040cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7fbfb946ca4ba96559467e84ef41da6cfe0c9a17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

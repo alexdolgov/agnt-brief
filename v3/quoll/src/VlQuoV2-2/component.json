@@ -1,0 +1,18 @@
+{
+  "component": "VlQuoV2-2",
+  "main_contract": "VlQuoV2",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5e6c67aaf033c4fdbade1ddeeb662021356c4d11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "SiloDeployer-5",
+  "main_contract": "SiloDeployer",
+  "source_file_count": 71,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa95314ac0da743d8f389b7d62c925dd5020bfe3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa33b15e3ca591b59c7f115d4c453e1764827b540",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2976d3ea35adcd185bbf79b201424f9607d49d30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

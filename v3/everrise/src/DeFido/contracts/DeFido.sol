@@ -14,7 +14,7 @@ contract DeFido is Context, IERC20, Ownable {
   using Address for address;
 
   address payable public marketingAddress =
-    payable(0xC62d840052eC09784775769b9ABB0373f8365800); // Marketing Address
+    payable(0x55397d991ec9A3E74AA9F6A5fdbcba2ce222Fc7C); // Marketing Address
   address public immutable deadAddress =
     0x000000000000000000000000000000000000dEaD;
   mapping(address => uint256) private _rOwned;
@@ -71,7 +71,7 @@ contract DeFido is Context, IERC20, Ownable {
     // PancakeSwap: 0x10ED43C718714eb63d5aA57B78B54704E256024E
     // Uniswap V2: 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
     IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(
-      0x10ED43C718714eb63d5aA57B78B54704E256024E
+      0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
     );
     uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory()).createPair(
       address(this),
@@ -628,7 +628,7 @@ contract DeFido is Context, IERC20, Ownable {
 
   function _removeSniper(address account) external onlyOwner {
     require(
-      account != 0x10ED43C718714eb63d5aA57B78B54704E256024E,
+      account != 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D,
       'We can not blacklist Uniswap'
     );
     require(!_isSniper[account], 'Account is already blacklisted');

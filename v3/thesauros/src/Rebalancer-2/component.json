@@ -1,0 +1,18 @@
+{
+  "component": "Rebalancer-2",
+  "main_contract": "Rebalancer",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6c7013b3596623d146781c90b4ee182331af6148",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

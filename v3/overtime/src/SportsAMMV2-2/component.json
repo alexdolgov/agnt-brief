@@ -1,0 +1,26 @@
+{
+  "component": "SportsAMMV2-2",
+  "main_contract": "SportsAMMV2",
+  "source_file_count": 24,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0a35a69ada02de37eb7ba96e228b6a981b9e6850",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe1e022b40f6e584bac7659aa082e10b104570cda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

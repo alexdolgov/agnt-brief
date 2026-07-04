@@ -1,0 +1,18 @@
+{
+  "component": "BufferArk-2",
+  "main_contract": "BufferArk",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x72d41714153a05d9e41c5346256e0db2728bd302",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

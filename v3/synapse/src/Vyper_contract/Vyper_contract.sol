@@ -1,475 +1,275 @@
-# @version 0.2.16
+# @version 0.2.4
 """
-@title Angle Fee Distribution
-@author Angle Protocol
+@title Vesting Escrow
+@author Curve Finance
 @license MIT
+@notice Vests `ERC20CRV` tokens for multiple addresses over multiple vesting periods
 """
 
-# Original idea and credit:
-# Curve Finance's FeeDistributor
-# https://github.com/curvefi/curve-dao-contracts/blob/master/contracts/FeeDistributor.vy
 
 from vyper.interfaces import ERC20
 
-
-interface VotingEscrow:
-    def user_point_epoch(addr: address) -> uint256: view
-    def epoch() -> uint256: view
-    def user_point_history(addr: address, loc: uint256) -> Point: view
-    def point_history(loc: uint256) -> Point: view
-    def checkpoint(): nonpayable
-
-
-event CommitAdmin:
-    admin: address
-
-event ApplyAdmin:
-    admin: address
-
-event ToggleAllowCheckpointToken:
-    toggle_flag: bool
-
-event CheckpointToken:
-    time: uint256
-    tokens: uint256
-
-event Claimed:
+event Fund:
     recipient: indexed(address)
     amount: uint256
-    claim_epoch: uint256
-    max_epoch: uint256
+
+event Claim:
+    recipient: indexed(address)
+    claimed: uint256
+
+event ToggleDisable:
+    recipient: address
+    disabled: bool
+
+event CommitOwnership:
+    admin: address
+
+event ApplyOwnership:
+    admin: address
 
 
-struct Point:
-    bias: int128
-    slope: int128  # - dweight / dt
-    ts: uint256
-    blk: uint256  # block
-
-
-WEEK: constant(uint256) = 7 * 86400
-TOKEN_CHECKPOINT_DEADLINE: constant(uint256) = 86400
-
-start_time: public(uint256)
-time_cursor: public(uint256)
-time_cursor_of: public(HashMap[address, uint256])
-user_epoch_of: public(HashMap[address, uint256])
-
-last_token_time: public(uint256)
-tokens_per_week: public(uint256[1000000000000000])
-
-voting_escrow: public(address)
 token: public(address)
-total_received: public(uint256)
-token_last_balance: public(uint256)
+start_time: public(uint256)
+end_time: public(uint256)
+initial_locked: public(HashMap[address, uint256])
+total_claimed: public(HashMap[address, uint256])
 
-ve_supply: public(uint256[1000000000000000])  # VE total supply at week bounds
+initial_locked_supply: public(uint256)
+unallocated_supply: public(uint256)
+
+can_disable: public(bool)
+disabled_at: public(HashMap[address, uint256])
 
 admin: public(address)
 future_admin: public(address)
-can_checkpoint_token: public(bool)
-emergency_return: public(address)
-is_killed: public(bool)
+
+fund_admins_enabled: public(bool)
+fund_admins: public(HashMap[address, bool])
 
 
 @external
 def __init__(
-    _voting_escrow: address,
-    _start_time: uint256,
     _token: address,
-    _admin: address,
-    _emergency_return: address
+    _start_time: uint256,
+    _end_time: uint256,
+    _can_disable: bool,
+    _fund_admins: address[4]
 ):
     """
-    @notice Contract constructor
-    @param _voting_escrow VotingEscrow contract address
-    @param _start_time Epoch time for fee distribution to start
-    @param _token Fee token address
-    @param _admin Admin address
-    @param _emergency_return Address to transfer `_token` balance to
-                             if this contract is killed
+    @param _token Address of the ERC20 token being distributed
+    @param _start_time Timestamp at which the distribution starts. Should be in
+        the future, so that we have enough time to VoteLock everyone
+    @param _end_time Time until everything should be vested
+    @param _can_disable Whether admin can disable accounts in this deployment
+    @param _fund_admins Temporary admin accounts used only for funding
     """
+    assert _start_time >= block.timestamp
+    assert _end_time > _start_time
 
-    assert _voting_escrow != ZERO_ADDRESS
-    assert _token != ZERO_ADDRESS
-    assert _admin != ZERO_ADDRESS
-    assert _emergency_return != ZERO_ADDRESS
-
-    t: uint256 = _start_time / WEEK * WEEK
-    self.start_time = t
-    self.last_token_time = t
-    self.time_cursor = t
     self.token = _token
-    self.voting_escrow = _voting_escrow
-    self.admin = _admin
-    self.emergency_return = _emergency_return
+    self.admin = msg.sender
+    self.start_time = _start_time
+    self.end_time = _end_time
+    self.can_disable = _can_disable
 
+    _fund_admins_enabled: bool = False
+    for addr in _fund_admins:
+        if addr != ZERO_ADDRESS:
+            self.fund_admins[addr] = True
+            if not _fund_admins_enabled:
+                _fund_admins_enabled = True
+                self.fund_admins_enabled = True
 
-@internal
-def _checkpoint_token():
-    token_balance: uint256 = ERC20(self.token).balanceOf(self)
-    to_distribute: uint256 = token_balance - self.token_last_balance
-    self.token_last_balance = token_balance
-
-    t: uint256 = self.last_token_time
-    since_last: uint256 = block.timestamp - t
-    self.last_token_time = block.timestamp
-    this_week: uint256 = t / WEEK * WEEK
-    next_week: uint256 = 0
-
-    for i in range(20):
-        next_week = this_week + WEEK
-        if block.timestamp < next_week:
-            if since_last == 0 and block.timestamp == t:
-                self.tokens_per_week[this_week] += to_distribute
-            else:
-                self.tokens_per_week[this_week] += to_distribute * (block.timestamp - t) / since_last
-            break
-        else:
-            if since_last == 0 and next_week == t:
-                self.tokens_per_week[this_week] += to_distribute
-            else:
-                self.tokens_per_week[this_week] += to_distribute * (next_week - t) / since_last
-        t = next_week
-        this_week = next_week
-
-    log CheckpointToken(block.timestamp, to_distribute)
 
 
 @external
-def checkpoint_token():
+def add_tokens(_amount: uint256):
     """
-    @notice Update the token checkpoint
-    @dev Calculates the total number of tokens to be distributed in a given week.
-         During setup for the initial distribution this function is only callable
-         by the contract owner. Beyond initial distro, it can be enabled for anyone
-         to call.
+    @notice Transfer vestable tokens into the contract
+    @dev Handled separate from `fund` to reduce transaction count when using funding admins
+    @param _amount Number of tokens to transfer
     """
-    assert (msg.sender == self.admin) or\
-           (self.can_checkpoint_token and (block.timestamp > self.last_token_time + TOKEN_CHECKPOINT_DEADLINE))
-    self._checkpoint_token()
-
-
-@internal
-def _find_timestamp_epoch(ve: address, _timestamp: uint256) -> uint256:
-    _min: uint256 = 0
-    _max: uint256 = VotingEscrow(ve).epoch()
-    for i in range(128):
-        if _min >= _max:
-            break
-        _mid: uint256 = (_min + _max + 2) / 2
-        pt: Point = VotingEscrow(ve).point_history(_mid)
-        if pt.ts <= _timestamp:
-            _min = _mid
-        else:
-            _max = _mid - 1
-    return _min
-
-
-@view
-@internal
-def _find_timestamp_user_epoch(ve: address, user: address, _timestamp: uint256, max_user_epoch: uint256) -> uint256:
-    _min: uint256 = 0
-    _max: uint256 = max_user_epoch
-    for i in range(128):
-        if _min >= _max:
-            break
-        _mid: uint256 = (_min + _max + 2) / 2
-        pt: Point = VotingEscrow(ve).user_point_history(user, _mid)
-        if pt.ts <= _timestamp:
-            _min = _mid
-        else:
-            _max = _mid - 1
-    return _min
-
-
-@view
-@external
-def ve_for_at(_user: address, _timestamp: uint256) -> uint256:
-    """
-    @notice Get the veANGLE balance for `_user` at `_timestamp`
-    @param _user Address to query balance for
-    @param _timestamp Epoch time
-    @return uint256 veANGLE balance
-    """
-    ve: address = self.voting_escrow
-    max_user_epoch: uint256 = VotingEscrow(ve).user_point_epoch(_user)
-    epoch: uint256 = self._find_timestamp_user_epoch(ve, _user, _timestamp, max_user_epoch)
-    pt: Point = VotingEscrow(ve).user_point_history(_user, epoch)
-    return convert(max(pt.bias - pt.slope * convert(_timestamp - pt.ts, int128), empty(int128)), uint256)
-
-
-@internal
-def _checkpoint_total_supply():
-    ve: address = self.voting_escrow
-    t: uint256 = self.time_cursor
-    rounded_timestamp: uint256 = block.timestamp / WEEK * WEEK
-    VotingEscrow(ve).checkpoint()
-
-    for i in range(20):
-        if t > rounded_timestamp:
-            break
-        else:
-            epoch: uint256 = self._find_timestamp_epoch(ve, t)
-            pt: Point = VotingEscrow(ve).point_history(epoch)
-            dt: int128 = 0
-            if t > pt.ts:
-                # If the point is at 0 epoch, it can actually be earlier than the first deposit
-                # Then make dt 0
-                dt = convert(t - pt.ts, int128)
-            self.ve_supply[t] = convert(max(pt.bias - pt.slope * dt, empty(int128)), uint256)
-        t += WEEK
-
-    self.time_cursor = t
+    assert msg.sender == self.admin  # dev: admin only
+    assert ERC20(self.token).transferFrom(msg.sender, self, _amount)  # dev: transfer failed
+    self.unallocated_supply += _amount
 
 
 @external
-def checkpoint_total_supply():
+@nonreentrant('lock')
+def fund(_recipients: address[100], _amounts: uint256[100]):
     """
-    @notice Update the veANGLE total supply checkpoint
-    @dev The checkpoint is also updated by the first claimant each
-         new epoch week. This function may be called independently
-         of a claim, to reduce claiming gas costs.
+    @notice Vest tokens for multiple recipients
+    @param _recipients List of addresses to fund
+    @param _amounts Amount of vested tokens for each address
     """
-    self._checkpoint_total_supply()
+    if msg.sender != self.admin:
+        assert self.fund_admins[msg.sender]  # dev: admin only
+        assert self.fund_admins_enabled  # dev: fund admins disabled
+
+    _total_amount: uint256 = 0
+    for i in range(100):
+        amount: uint256 = _amounts[i]
+        recipient: address = _recipients[i]
+        if recipient == ZERO_ADDRESS:
+            break
+        _total_amount += amount
+        self.initial_locked[recipient] += amount
+        log Fund(recipient, amount)
+
+    self.initial_locked_supply += _total_amount
+    self.unallocated_supply -= _total_amount
 
 
-@internal
-def _claim(addr: address, ve: address, _last_token_time: uint256) -> uint256:
-    # Minimal user_epoch is 0 (if user had no point)
-    user_epoch: uint256 = 0
-    to_distribute: uint256 = 0
+@external
+def toggle_disable(_recipient: address):
+    """
+    @notice Disable or re-enable a vested address's ability to claim tokens
+    @dev When disabled, the address is only unable to claim tokens which are still
+         locked at the time of this call. It is not possible to block the claim
+         of tokens which have already vested.
+    @param _recipient Address to disable or enable
+    """
+    assert msg.sender == self.admin  # dev: admin only
+    assert self.can_disable, "Cannot disable"
 
-    max_user_epoch: uint256 = VotingEscrow(ve).user_point_epoch(addr)
-    _start_time: uint256 = self.start_time
-
-    if max_user_epoch == 0:
-        # No lock = no fees
-        return 0
-
-    week_cursor: uint256 = self.time_cursor_of[addr]
-    if week_cursor == 0:
-        # Need to do the initial binary search
-        user_epoch = self._find_timestamp_user_epoch(ve, addr, _start_time, max_user_epoch)
+    is_disabled: bool = self.disabled_at[_recipient] == 0
+    if is_disabled:
+        self.disabled_at[_recipient] = block.timestamp
     else:
-        user_epoch = self.user_epoch_of[addr]
+        self.disabled_at[_recipient] = 0
 
-    if user_epoch == 0:
-        user_epoch = 1
+    log ToggleDisable(_recipient, is_disabled)
 
-    user_point: Point = VotingEscrow(ve).user_point_history(addr, user_epoch)
 
-    if week_cursor == 0:
-        week_cursor = (user_point.ts + WEEK - 1) / WEEK * WEEK
+@external
+def disable_can_disable():
+    """
+    @notice Disable the ability to call `toggle_disable`
+    """
+    assert msg.sender == self.admin  # dev: admin only
+    self.can_disable = False
 
-    if week_cursor >= _last_token_time:
+
+@external
+def disable_fund_admins():
+    """
+    @notice Disable the funding admin accounts
+    """
+    assert msg.sender == self.admin  # dev: admin only
+    self.fund_admins_enabled = False
+
+
+@internal
+@view
+def _total_vested_of(_recipient: address, _time: uint256 = block.timestamp) -> uint256:
+    start: uint256 = self.start_time
+    end: uint256 = self.end_time
+    locked: uint256 = self.initial_locked[_recipient]
+    if _time < start:
         return 0
+    return min(locked * (_time - start) / (end - start), locked)
 
-    if week_cursor < _start_time:
-        week_cursor = _start_time
-    old_user_point: Point = empty(Point)
 
-    # Iterate over weeks
-    for i in range(50):
-        if week_cursor >= _last_token_time:
-            break
+@internal
+@view
+def _total_vested() -> uint256:
+    start: uint256 = self.start_time
+    end: uint256 = self.end_time
+    locked: uint256 = self.initial_locked_supply
+    if block.timestamp < start:
+        return 0
+    return min(locked * (block.timestamp - start) / (end - start), locked)
 
-        if week_cursor >= user_point.ts and user_epoch <= max_user_epoch:
-            user_epoch += 1
-            old_user_point = user_point
-            if user_epoch > max_user_epoch:
-                user_point = empty(Point)
-            else:
-                user_point = VotingEscrow(ve).user_point_history(addr, user_epoch)
 
-        else:
-            # Calc
-            # + i * 2 is for rounding errors
-            dt: int128 = convert(week_cursor - old_user_point.ts, int128)
-            balance_of: uint256 = convert(max(old_user_point.bias - dt * old_user_point.slope, empty(int128)), uint256)
-            if balance_of == 0 and user_epoch > max_user_epoch:
-                break
-            if balance_of > 0:
-                to_distribute += balance_of * self.tokens_per_week[week_cursor] / self.ve_supply[week_cursor]
+@external
+@view
+def vestedSupply() -> uint256:
+    """
+    @notice Get the total number of tokens which have vested, that are held
+            by this contract
+    """
+    return self._total_vested()
 
-            week_cursor += WEEK
 
-    user_epoch = min(max_user_epoch, user_epoch - 1)
-    self.user_epoch_of[addr] = user_epoch
-    self.time_cursor_of[addr] = week_cursor
+@external
+@view
+def lockedSupply() -> uint256:
+    """
+    @notice Get the total number of tokens which are still locked
+            (have not yet vested)
+    """
+    return self.initial_locked_supply - self._total_vested()
 
-    log Claimed(addr, to_distribute, user_epoch, max_user_epoch)
 
-    return to_distribute
+@external
+@view
+def vestedOf(_recipient: address) -> uint256:
+    """
+    @notice Get the number of tokens which have vested for a given address
+    @param _recipient address to check
+    """
+    return self._total_vested_of(_recipient)
+
+
+@external
+@view
+def balanceOf(_recipient: address) -> uint256:
+    """
+    @notice Get the number of unclaimed, vested tokens for a given address
+    @param _recipient address to check
+    """
+    return self._total_vested_of(_recipient) - self.total_claimed[_recipient]
+
+
+@external
+@view
+def lockedOf(_recipient: address) -> uint256:
+    """
+    @notice Get the number of locked tokens for a given address
+    @param _recipient address to check
+    """
+    return self.initial_locked[_recipient] - self._total_vested_of(_recipient)
 
 
 @external
 @nonreentrant('lock')
-def claim(_addr: address = msg.sender) -> uint256:
+def claim(addr: address = msg.sender):
     """
-    @notice Claim fees for `_addr`
-    @dev Each call to claim look at a maximum of 50 user veANGLE points.
-         For accounts with many veANGLE related actions, this function
-         may need to be called more than once to claim all available
-         fees. In the `Claimed` event that fires, if `claim_epoch` is
-         less than `max_epoch`, the account may claim again.
-    @param _addr Address to claim fees for
-    @return uint256 Amount of fees claimed in the call
+    @notice Claim tokens which have vested
+    @param addr Address to claim tokens for
     """
-    assert not self.is_killed
+    t: uint256 = self.disabled_at[addr]
+    if t == 0:
+        t = block.timestamp
+    claimable: uint256 = self._total_vested_of(addr, t) - self.total_claimed[addr]
+    self.total_claimed[addr] += claimable
+    assert ERC20(self.token).transfer(addr, claimable)
 
-    if block.timestamp >= self.time_cursor:
-        self._checkpoint_total_supply()
-
-    last_token_time: uint256 = self.last_token_time
-
-    if self.can_checkpoint_token and (block.timestamp > last_token_time + TOKEN_CHECKPOINT_DEADLINE):
-        self._checkpoint_token()
-        last_token_time = block.timestamp
-
-    last_token_time = last_token_time / WEEK * WEEK
-
-    amount: uint256 = self._claim(_addr, self.voting_escrow, last_token_time)
-    if amount != 0:
-        token: address = self.token
-        assert ERC20(token).transfer(_addr, amount)
-        self.token_last_balance -= amount
-
-    return amount
+    log Claim(addr, claimable)
 
 
 @external
-@nonreentrant('lock')
-def claim_many(_receivers: address[20]) -> bool:
+def commit_transfer_ownership(addr: address) -> bool:
     """
-    @notice Make multiple fee claims in a single call
-    @dev Used to claim for many accounts at once, or to make
-         multiple claims for the same address when that address
-         has significant veANGLE history
-    @param _receivers List of addresses to claim for. Claiming
-                      terminates at the first `ZERO_ADDRESS`.
-    @return bool success
+    @notice Transfer ownership of GaugeController to `addr`
+    @param addr Address to have ownership transferred to
     """
-    assert not self.is_killed
-
-    if block.timestamp >= self.time_cursor:
-        self._checkpoint_total_supply()
-
-    last_token_time: uint256 = self.last_token_time
-
-    if self.can_checkpoint_token and (block.timestamp > last_token_time + TOKEN_CHECKPOINT_DEADLINE):
-        self._checkpoint_token()
-        last_token_time = block.timestamp
-
-    last_token_time = last_token_time / WEEK * WEEK
-    voting_escrow: address = self.voting_escrow
-    token: address = self.token
-    total: uint256 = 0
-
-    for addr in _receivers:
-        if addr == ZERO_ADDRESS:
-            break
-
-        amount: uint256 = self._claim(addr, voting_escrow, last_token_time)
-        if amount != 0:
-            assert ERC20(token).transfer(addr, amount)
-            total += amount
-
-    if total != 0:
-        self.token_last_balance -= total
+    assert msg.sender == self.admin  # dev: admin only
+    self.future_admin = addr
+    log CommitOwnership(addr)
 
     return True
 
 
 @external
-def burn(_coin: address) -> bool:
+def apply_transfer_ownership() -> bool:
     """
-    @notice Receive _coin into the contract and trigger a token checkpoint
-    @param _coin Address of the coin being received (must be in the whitelisted tokens)
-    @return bool success
+    @notice Apply pending ownership transfer
     """
-    assert _coin == self.token
-    assert not self.is_killed
-
-    amount: uint256 = ERC20(_coin).balanceOf(msg.sender)
-    if amount != 0:
-        ERC20(_coin).transferFrom(msg.sender, self, amount)
-        if self.can_checkpoint_token and (block.timestamp > self.last_token_time + TOKEN_CHECKPOINT_DEADLINE):
-            self._checkpoint_token()
-
-    return True
-
-@external
-def commit_admin(_addr: address):
-    """
-    @notice Commit transfer of ownership
-    @param _addr New admin address
-    """
-    assert msg.sender == self.admin  # dev: access denied
-    assert _addr != ZERO_ADDRESS  # dev: future admin cannot be the 0 address
-    self.future_admin = _addr
-    log CommitAdmin(_addr)
-
-
-@external
-def accept_admin():
-    """
-    @notice Accept a pending ownership transfer
-    """
+    assert msg.sender == self.admin  # dev: admin only
     _admin: address = self.future_admin
-    assert msg.sender == _admin  # dev: future admin only
-
+    assert _admin != ZERO_ADDRESS  # dev: admin not set
     self.admin = _admin
-    log ApplyAdmin(_admin)
-
-@external
-def toggle_allow_checkpoint_token():
-    """
-    @notice Toggle permission for checkpointing by any account
-    """
-    assert msg.sender == self.admin
-    flag: bool = not self.can_checkpoint_token
-    self.can_checkpoint_token = flag
-    log ToggleAllowCheckpointToken(flag)
-
-
-@external
-def kill_me():
-    """
-    @notice Kill the contract
-    @dev Killing transfers the entire tokens balance to the emergency return address
-         and blocks the ability to claim or burn. The contract cannot be unkilled.
-    """
-    assert msg.sender == self.admin
-
-    self.is_killed = True
-
-    token: address = self.token
-    assert ERC20(token).transfer(self.emergency_return, ERC20(token).balanceOf(self))
-
-
-@external
-def recover_balance(_coin: address) -> bool:
-    """
-    @notice Recover ERC20 tokens from this contract
-    @dev Tokens are sent to the emergency return address.
-    @param _coin Token address
-    @return bool success
-    """
-    assert msg.sender == self.admin
-    assert _coin != self.token
-
-    amount: uint256 = ERC20(_coin).balanceOf(self)
-    response: Bytes[32] = raw_call(
-        _coin,
-        concat(
-            method_id("transfer(address,uint256)"),
-            convert(self.emergency_return, bytes32),
-            convert(amount, bytes32),
-        ),
-        max_outsize=32,
-    )
-    if len(response) != 0:
-        assert convert(response, bool)
+    log ApplyOwnership(_admin)
 
     return True

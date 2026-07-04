@@ -1,15 +1,39 @@
 {
   "component": "Asset-5",
   "main_contract": "Asset",
-  "source_file_count": 18,
-  "deployment_count": 1,
+  "source_file_count": 23,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x74f019a5c4ed2c2950ce16fad7af838549092c5b",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6966553568634f4225330d559a8783de7649c7d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x752945079a0446aa7efb6e9e1789751cdd601c95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9121af8b7bbdd76dc6f67051c417d007483c6be2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9a24055af7dc84df05906acfbf5de694cd3e975d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,6 +1,6 @@
 # predict-fun — deployments
 
-53 verified deployment(s) across 29 component(s).
+55 verified deployment(s) across 30 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | blast | `0xc31bb90ee75706911faf6b831699026e5eb6f24a` | AddressFinder | impl | inactive | no |
 | blast | `0xc45343f2e66c9b4140ddebf47352c81728bde7fd` | ZeroDevWithdrawalHelper | impl | inactive | no |
 | blast | `0xd2536605c6cba9562856fc937db410db39e71d37` | ZeroDevWithdrawalHelper | impl | inactive | no |
+| blast | `0xfebfe111423bf02ae8090265d4446458afdba20d` | RewardDistributor-2 | impl | live | no |
 | bsc | `0x0989942f8e5b778e804858a0cc791b4469a5fd63` | NegRiskFeeModuleV3 | impl | live | no |
 | bsc | `0x09f683d8a144c4ac296d770f839098c3377410c5` | Vault | impl | live | no |
 | bsc | `0x13ba3d9f7da3f8ae955df4f01f01d7218f81d8fa` | ConditionalTokensFeesHandlerV2 | impl | live | no |
@@ -36,6 +37,7 @@
 | bsc | `0x8bc070bedab741406f4b1eb65a72bee27894b689` | CTFExchange | impl | live | no |
 | bsc | `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` | YieldBearingConditionalTokens | impl | live | yes |
 | bsc | `0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4` | UmaCompatibleCtfAdapter | impl | live | yes |
+| bsc | `0xa48c26abd9024a5cc5a869bbd97a6a3d6b9c2089` | RegisterTokenHelper | impl | live | no |
 | bsc | `0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e` | ConditionalTokensFeesHandler | impl | live | yes |
 | bsc | `0xb51797462b6aed2104b9d6c89aab925ca14641cf` | UmaCompatibleCtfAdapter | impl | live | yes |
 | bsc | `0xbb7250101e0e3611d7e136ffe73bc24b98e3e175` | NegRiskOperator | impl | live | yes |
@@ -57,9 +59,3 @@
 | bsc | `0xfbc2259abb3f01c019ece1d0200ee673bb7ba34f` | FeeModuleV2 | impl | live | yes |
 | bsc | `0xfca64d34859b120c36426d41f941e708ea47cbec` | CTFAutoRedemptionHelper | impl | live | no |
 | bsc | `0xfcba720e183cf3f4029143c17faf9747dbc8de7a` | Vault | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- blast `0xfebfe111423bf02ae8090265d4446458afdba20d`
-- bsc `0xa48c26abd9024a5cc5a869bbd97a6a3d6b9c2089`

@@ -2,10 +2,18 @@
   "component": "SummerOracleFactory",
   "main_contract": "SummerOracleFactory",
   "source_file_count": 14,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3bba5e519674a40e59a630f1bb99d0d272b3291",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

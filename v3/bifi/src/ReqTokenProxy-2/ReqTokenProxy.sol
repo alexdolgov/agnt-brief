@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at snowtrace.io on 2021-12-03
+*/
+
 // File: contracts/interfaces/IMarketManager.sol
 pragma solidity 0.6.12;
 
@@ -560,16 +564,8 @@ interface IERC20 {
 }
 
 // File: contracts/ReqTokenProxy.sol
-
-
-
+// SPDX-License-Identifier: BSD-3-Clause
 pragma solidity 0.6.12;
-
-
-
-
-
-
 
 /**
  * @title Bifi user request proxy (ERC-20 token)
@@ -855,13 +851,4 @@ contract ReqTokenProxy is RequestProxyErrors {
 		require(result, string(returnData));
 		return (result, returnData);
 	}
-}
-
-// File: contracts/truffleKit/marketHandlerSide/marketHandlerProxys.sol
-// SPDX-License-Identifier: BSD-3-Clause
-pragma solidity 0.6.12;
-
-contract UsdtHandlerProxy is ReqTokenProxy {
-    constructor()
-    ReqTokenProxy() public {}
 }

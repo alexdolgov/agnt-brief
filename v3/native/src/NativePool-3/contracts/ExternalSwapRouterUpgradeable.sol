@@ -14,15 +14,14 @@ import "./libraries/FullMath.sol";
 abstract contract ExternalSwapRouterUpgradeable is Initializable {
     using SafeERC20 for IERC20;
 
-    address public pancakeswapRouter; // legacy variable, not removing it just to maintain the storage layout of upgradable contract
-    // https://docs.pancakeswap.finance/developers/smart-contracts/pancakeswap-exchange/v2-contracts/router-v2
-    address public constant PANCAKESWAP_ROUTER_ADDRESS = 0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb;
+    address public pancakeswapRouter;
 
     // https://docs.uniswap.org/contracts/v3/reference/deployments
+    // BSC: 0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2
+    // Mainnet, Goerli, Arbitrum, Optimism, Polygon: 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45
+    // Celo: 0x5615CDAb10dc425a742d643d949a7F474C01abc4
     address public constant UNISWAP_V3_ROUTER_ADDRESS = 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45;
-
-    // different for each chain need to update accordingly
-    address public constant ONE_INCH_ROUTER_ADDRESS = 0x1111111254EEB25477B68fb85Ed929f73A960582;
+    uint24 public constant UNISWAP_V3_FEE_TIER = 500; // 0.05%
 
     event SwapPancake(
         address indexed sender,
@@ -44,37 +43,22 @@ abstract contract ExternalSwapRouterUpgradeable is Initializable {
         bytes16 quoteId
     );
 
-    event Swap1inch(
-        address indexed sender,
-        address indexed recipient,
-        address tokenIn,
-        address tokenOut,
-        int256 amountIn,
-        int256 amountOut,
-        bytes16 quoteId
-    );
-
-    error InvalidFunctionSelectorInCalldata(bytes4);
-    error OrderExpired();
-    error ZeroFlexibleAmount();
-    error InvalidZeroAddressInput();
-    error SellerAmountTooLargeOverflow(uint);
-    error BuyerAmountTooLargeOverflow(uint);
-    error ExternalCallFailed(bytes);
-    error InvalidZeroInputAmout();
-
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
         _disableInitializers();
     }
 
-    function handleEthCase(address tokenIn, address payer, uint256 tokenAmount) internal {
-        address weth9 = IPeripheryState(address(this)).WETH9();
-        if (tokenIn == weth9 && address(this).balance >= tokenAmount) {
-            IWETH9(weth9).deposit{value: tokenAmount}();
-        } else if (payer != address(this)) {
-            IERC20(tokenIn).safeTransferFrom(payer, address(this), tokenAmount);
-        }
+    function __ExternalSwapRouter_init(address _pancakeswapRouter) internal onlyInitializing {
+        __ExternalSwapRouter_unchained(_pancakeswapRouter);
+    }
+
+    function __ExternalSwapRouter_unchained(address _pancakeswapRouter) internal onlyInitializing {
+        _setPancakeswapRouter(_pancakeswapRouter);
+    }
+
+    function _setPancakeswapRouter(address _pancakeswapRouter) internal virtual {
+        require(_pancakeswapRouter != address(0), "zero address input");
+        pancakeswapRouter = _pancakeswapRouter;
     }
 
     function swapPancake(
@@ -83,288 +67,128 @@ abstract contract ExternalSwapRouterUpgradeable is Initializable {
         address recipient,
         address payer
     ) internal returns (int256, int256) {
-        if (order.deadlineTimestamp <= block.timestamp) {
-            revert OrderExpired();
-        }
-        if (flexibleAmount == 0) {
-            revert ZeroFlexibleAmount();
-        }
+        require(order.deadlineTimestamp > block.timestamp, "Order is expired");
+        require(flexibleAmount != 0, "Flexible amount cannot be 0");
 
-        (uint256 buyerTokenAmount, uint256 sellerTokenAmount) = calculateTokenAmount(flexibleAmount, order);
+        (uint256 buyerTokenAmount, uint256 sellerTokenAmount) = calculateTokenAmount(
+            flexibleAmount,
+            order
+        );
 
-        handleEthCase(order.sellerToken, payer, sellerTokenAmount);
+        address tokenIn = order.sellerToken;
+        address tokenOut = order.buyerToken;
 
-        IERC20(order.sellerToken).safeApprove(PANCAKESWAP_ROUTER_ADDRESS, sellerTokenAmount);
-
-        uint[] memory outputAmounts;
-        {
-            address[] memory path = new address[](2);
-            path[0] = order.sellerToken;
-            path[1] = order.buyerToken;
-
-            if (sellerTokenAmount > uint256(type(int256).max)) {
-                revert SellerAmountTooLargeOverflow(sellerTokenAmount);
-            }
-
-            outputAmounts = IPancakeRouter02(PANCAKESWAP_ROUTER_ADDRESS).swapExactTokensForTokens(
-                sellerTokenAmount,
-                buyerTokenAmount,
-                path,
-                recipient,
-                order.deadlineTimestamp
-            );
+        // handle the case where user call with ETH
+        address weth9 = IPeripheryState(address(this)).WETH9();
+        if (tokenIn == weth9 && address(this).balance >= sellerTokenAmount) {
+            IWETH9(weth9).deposit{value: sellerTokenAmount}();
+        } else if (payer != address(this)) {
+            IERC20(tokenIn).safeTransferFrom(payer, address(this), sellerTokenAmount);
         }
 
-        if (outputAmounts[outputAmounts.length - 1] > uint256(type(int256).max)) {
-            revert BuyerAmountTooLargeOverflow(outputAmounts[outputAmounts.length - 1]);
-        }
+        IERC20(tokenIn).safeApprove(address(pancakeswapRouter), sellerTokenAmount);
+
+        address[] memory path = new address[](2);
+        path[0] = tokenIn;
+        path[1] = tokenOut;
+
+        require(
+            sellerTokenAmount <= uint256(type(int256).max),
+            "sellerTokenAmount is too large and would cause an overflow error"
+        );
+
+        uint[] memory outputAmounts = IPancakeRouter02(pancakeswapRouter).swapExactTokensForTokens(
+            sellerTokenAmount,
+            buyerTokenAmount,
+            path,
+            recipient,
+            order.deadlineTimestamp
+        );
+
+        require(
+            outputAmounts[outputAmounts.length - 1] <= uint256(type(int256).max),
+            "buyerTokenAmount is too large and would cause an overflow error"
+        );
+
+        int256 outputSellerTokenAmount = int256(sellerTokenAmount);
+        int256 outputBuyerTokenAmount = -1 * int256(outputAmounts[outputAmounts.length - 1]);
 
         emit SwapPancake(
-            order.caller,
+            order.txOrigin,
             recipient,
-            order.sellerToken,
-            order.buyerToken,
-            int256(sellerTokenAmount),
-            (-1 * int256(outputAmounts[outputAmounts.length - 1])),
+            tokenIn,
+            tokenOut,
+            outputBuyerTokenAmount,
+            outputSellerTokenAmount,
             order.quoteId
         );
 
-        return ((-1 * int256(outputAmounts[outputAmounts.length - 1])), int256(sellerTokenAmount));
+        return (outputBuyerTokenAmount, outputSellerTokenAmount);
     }
 
     function swapUniswapV3(
         Orders.Order memory order,
         uint256 flexibleAmount,
         address recipient,
-        address payer,
-        uint24 feeTier
+        address payer
     ) internal returns (int256, int256) {
-        if (order.deadlineTimestamp <= block.timestamp) {
-            revert OrderExpired();
-        }
-        if (flexibleAmount == 0) {
-            revert ZeroFlexibleAmount();
-        }
+        require(order.deadlineTimestamp > block.timestamp, "Order is expired");
+        require(flexibleAmount != 0, "Flexible amount cannot be 0");
 
-        uint256 sellerTokenAmount;
-        uint256 amountOut;
-        {
-            uint256 buyerTokenAmount;
-            (buyerTokenAmount, sellerTokenAmount) = calculateTokenAmount(flexibleAmount, order);
+        (uint256 buyerTokenAmount, uint256 sellerTokenAmount) = calculateTokenAmount(
+            flexibleAmount,
+            order
+        );
 
-            handleEthCase(order.sellerToken, payer, sellerTokenAmount);
+        address tokenIn = order.sellerToken;
+        address tokenOut = order.buyerToken;
 
-            IERC20(order.sellerToken).safeApprove(UNISWAP_V3_ROUTER_ADDRESS, sellerTokenAmount);
-
-            if (sellerTokenAmount > uint256(type(int256).max)) {
-                revert SellerAmountTooLargeOverflow(sellerTokenAmount);
-            }
-
-            amountOut = IUniswapV3SwapRouter(UNISWAP_V3_ROUTER_ADDRESS).exactInputSingle(
-                IUniswapV3SwapRouter.ExactInputSingleParams({
-                    tokenIn: order.sellerToken,
-                    tokenOut: order.buyerToken,
-                    fee: feeTier,
-                    recipient: recipient,
-                    amountIn: sellerTokenAmount,
-                    amountOutMinimum: buyerTokenAmount,
-                    sqrtPriceLimitX96: 0
-                })
-            );
+        // handle the case where user call with ETH
+        address weth9 = IPeripheryState(address(this)).WETH9();
+        if (tokenIn == weth9 && address(this).balance >= sellerTokenAmount) {
+            IWETH9(weth9).deposit{value: sellerTokenAmount}();
+        } else if (payer != address(this)) {
+            IERC20(tokenIn).safeTransferFrom(payer, address(this), sellerTokenAmount);
         }
 
-        if (amountOut > uint256(type(int256).max)) {
-            revert BuyerAmountTooLargeOverflow(amountOut);
-        }
+        IERC20(tokenIn).safeApprove(address(order.buyer), sellerTokenAmount);
+
+        require(
+            sellerTokenAmount <= uint256(type(int256).max),
+            "sellerTokenAmount is too large and would cause an overflow error"
+        );
+
+        uint amountOut = IUniswapV3SwapRouter(order.buyer).exactInputSingle(
+            IUniswapV3SwapRouter.ExactInputSingleParams({
+                tokenIn: tokenIn,
+                tokenOut: tokenOut,
+                fee: UNISWAP_V3_FEE_TIER,
+                recipient: recipient,
+                amountIn: sellerTokenAmount,
+                amountOutMinimum: buyerTokenAmount,
+                sqrtPriceLimitX96: 0
+            })
+        );
+
+        require(
+            amountOut <= uint256(type(int256).max),
+            "buyerTokenAmount is too large and would cause an overflow error"
+        );
+
+        int256 outputSellerTokenAmount = int256(sellerTokenAmount);
+        int256 outputBuyerTokenAmount = -1 * int256(amountOut);
 
         emit SwapUniswapV3(
-            order.caller,
+            order.txOrigin,
             recipient,
-            order.sellerToken,
-            order.buyerToken,
-            int256(sellerTokenAmount),
-            (-1 * int256(amountOut)),
+            tokenIn,
+            tokenOut,
+            outputBuyerTokenAmount,
+            outputSellerTokenAmount,
             order.quoteId
         );
 
-        return ((-1 * int256(amountOut)), int256(sellerTokenAmount));
-    }
-
-    struct OneInchSwapDescription {
-        IERC20 srcToken;
-        IERC20 dstToken;
-        address payable srcReceiver;
-        address payable dstReceiver;
-        uint256 amount;
-        uint256 minReturnAmount;
-        uint256 flags;
-    }
-
-    function swap1inch(
-        Orders.Order memory order,
-        uint256 flexibleAmount,
-        address recipient,
-        address payer,
-        bytes memory fallbackSwapCalldata
-    ) internal returns (int256, int256) {
-        if (order.deadlineTimestamp <= block.timestamp) {
-            revert OrderExpired();
-        }
-        if (flexibleAmount == 0) {
-            revert ZeroFlexibleAmount();
-        }
-
-        (uint256 buyerTokenAmount, uint256 sellerTokenAmount) = calculateTokenAmount(flexibleAmount, order);
-
-        handleEthCase(order.sellerToken, payer, sellerTokenAmount);
-
-        IERC20(order.sellerToken).safeApprove(ONE_INCH_ROUTER_ADDRESS, sellerTokenAmount);
-
-        if (sellerTokenAmount > uint256(type(int256).max)) {
-            revert SellerAmountTooLargeOverflow(sellerTokenAmount);
-        }
-
-        uint256 amountOut;
-
-        {
-            bytes memory functionParams;
-            assembly {
-                functionParams := add(fallbackSwapCalldata, 4) // exlucde the function seletor
-            }
-
-            // function signatures and input
-            /*
-            0x12aa3caf: swap
-            function swap(
-                IAggregationExecutor executor,
-                SwapDescription calldata desc,
-                bytes calldata permit,
-                bytes calldata data
-            )
-            */
-            /**
-            0xe449022e: uniswapV3Swap
-            function uniswapV3Swap(
-                uint256 amount,
-                uint256 minReturn,
-                uint256[] calldata pools
-            )
-            */
-            /**
-            0x0502b1c5: unoswap
-            function unoswap(
-                IERC20 srcToken,
-                uint256 amount,
-                uint256 minReturn,
-                uint256[] calldata pools
-            )
-            */
-            // 0x62e238bb: fillOrder            require signature, cannot change input amount
-            // 0x3eca9c0a: fillOrderRFQ         require signature, cannot change input amount
-            // 0x84bd6d29: clipperSwap          require signature, cannot change input amount
-            // 0x9570eeee: fillOrderRFQCompact  require signature, cannot change input amount
-            if (bytes4(fallbackSwapCalldata) == bytes4(0x12aa3caf)) {
-                {
-                    (address executor, OneInchSwapDescription memory desc, bytes memory permit, bytes memory data) = abi
-                        .decode(functionParams, (address, OneInchSwapDescription, bytes, bytes));
-                    desc.amount = sellerTokenAmount;
-                    desc.minReturnAmount = buyerTokenAmount;
-                    fallbackSwapCalldata = abi.encodeWithSelector(bytes4(0x12aa3caf), executor, desc, permit, data);
-                }
-            } else if (bytes4(fallbackSwapCalldata) == bytes4(0xe449022e)) {
-                {
-                    (, , uint256[] memory pools) = abi.decode(
-                        functionParams,
-                        (uint256, uint256, uint256[])
-                    );
-                    fallbackSwapCalldata = abi.encodeWithSelector(bytes4(0xe449022e), sellerTokenAmount, buyerTokenAmount, pools);
-                }
-            } else if (bytes4(fallbackSwapCalldata) == bytes4(0x0502b1c5)) {
-                {
-                    (address srcToken, , , uint256[] memory pools) = abi.decode(
-                        functionParams,
-                        (address, uint256, uint256, uint256[])
-                    );
-                    fallbackSwapCalldata = abi.encodeWithSelector(bytes4(0x0502b1c5), srcToken, sellerTokenAmount, buyerTokenAmount, pools);
-                }
-            } else if (
-                bytes4(fallbackSwapCalldata) == bytes4(0x62e238bb) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x3eca9c0a) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x84bd6d29) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x9570eeee)
-            ) {
-                // cannot change input amount as it requires signature in the input
-            } else {
-                revert InvalidFunctionSelectorInCalldata(bytes4(fallbackSwapCalldata));
-            }
-
-            (bool success, bytes memory result) = ONE_INCH_ROUTER_ADDRESS.call(fallbackSwapCalldata);
-            if (!success) {
-                revert ExternalCallFailed(result);
-            }
-
-            IERC20(order.sellerToken).safeApprove(ONE_INCH_ROUTER_ADDRESS, 0);
-
-            // * as desired return value
-            // function signatures
-            // 0x12aa3caf: swap                 - returns (uint256 returnAmount*, uint256 spentAmount)
-            // 0xe449022e: uniswapV3Swap        - returns (uint256 returnAmount*)
-            // 0x0502b1c5: unoswap              - returns (uint256 returnAmount*)
-            // 0x84bd6d29: clipperSwap          - returns (uint256 returnAmount*)
-            // 0x62e238bb: fillOrder            - returns (uint256 actualMakingAmount*, uint256 actualTakingAmount, bytes32 orderHash)
-            // 0x3eca9c0a: fillOrderRFQ         - returns (uint256 filledMakingAmount*, uint256 filledTakingAmount, bytes32 orderHash)
-            // 0x9570eeee: fillOrderRFQCompact  - returns (uint256 filledMakingAmount*, uint256 filledTakingAmount, bytes32 orderHash)
-            if (bytes4(fallbackSwapCalldata) == bytes4(0x12aa3caf)) {
-                {
-                    (uint256 returnAmount, ) = abi.decode(result, (uint256, uint256));
-                    amountOut = returnAmount;
-                }
-            } else if (
-                bytes4(fallbackSwapCalldata) == bytes4(0xe449022e) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x0502b1c5) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x84bd6d29)
-            ) {
-                {
-                    uint256 returnAmount = abi.decode(result, (uint256));
-                    amountOut = returnAmount;
-                }
-            } else if (
-                bytes4(fallbackSwapCalldata) == bytes4(0x62e238bb) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x3eca9c0a) ||
-                bytes4(fallbackSwapCalldata) == bytes4(0x9570eeee)
-            ) {
-                {
-                    (uint256 returnAmount, , ) = abi.decode(result, (uint256, uint256, bytes32));
-                    amountOut = returnAmount;
-                }
-            } else {
-                revert InvalidFunctionSelectorInCalldata(bytes4(fallbackSwapCalldata));
-            }
-        }
-
-        if (amountOut > uint256(type(int256).max)) {
-            revert BuyerAmountTooLargeOverflow(amountOut);
-        }
-
-        if (recipient != address(this)) {
-            IERC20(order.buyerToken).safeTransfer(recipient, amountOut);
-        }
-
-        emitSwap1Inch(order, recipient, sellerTokenAmount, amountOut);
-
-        return ((-1 * int256(amountOut)), int256(sellerTokenAmount));
-    }
-
-    function emitSwap1Inch(Orders.Order memory order, address recipient, uint256 sellerTokenAmount, uint256 amountOut) internal {
-        emit Swap1inch(
-            order.caller,
-            recipient,
-            order.sellerToken,
-            order.buyerToken,
-            int256(sellerTokenAmount),
-            (-1 * int256(amountOut)),
-            order.quoteId
-        );
+        return (outputBuyerTokenAmount, outputSellerTokenAmount);
     }
 
     function calculateTokenAmount(
@@ -374,16 +198,21 @@ abstract contract ExternalSwapRouterUpgradeable is Initializable {
         uint256 buyerTokenAmount;
         uint256 sellerTokenAmount;
 
-        sellerTokenAmount = flexibleAmount >= _order.sellerTokenAmount ? _order.sellerTokenAmount : flexibleAmount;
+        sellerTokenAmount = flexibleAmount >= _order.sellerTokenAmount
+            ? _order.sellerTokenAmount
+            : flexibleAmount;
 
-        if (_order.sellerTokenAmount <= 0 || _order.buyerTokenAmount <= 0) {
-            revert InvalidZeroInputAmout();
-        }
+        require(
+            _order.sellerTokenAmount > 0 && _order.buyerTokenAmount > 0,
+            "Non-zero amount required"
+        );
 
-        buyerTokenAmount = FullMath.mulDiv(sellerTokenAmount, _order.buyerTokenAmount, _order.sellerTokenAmount);
-        if (sellerTokenAmount <= 0) {
-            revert InvalidZeroInputAmout();
-        }
+        buyerTokenAmount = FullMath.mulDiv(
+            sellerTokenAmount,
+            _order.buyerTokenAmount,
+            _order.sellerTokenAmount
+        );
+        require(sellerTokenAmount > 0, "Non-zero amount required");
         return (buyerTokenAmount, sellerTokenAmount);
     }
 

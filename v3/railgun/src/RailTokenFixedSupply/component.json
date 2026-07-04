@@ -2,7 +2,7 @@
   "component": "RailTokenFixedSupply",
   "main_contract": "RailTokenFixedSupply",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0x3f847b01d4d498a293e3197b186356039ecd737f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x92a9c92c215092720c731c96d4ff508c831a714f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

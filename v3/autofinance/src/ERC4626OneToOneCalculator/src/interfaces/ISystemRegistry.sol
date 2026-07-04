@@ -107,10 +107,7 @@ interface ISystemRegistry {
 
     /// @notice Check if an additional contract of type is valid in the system
     /// @return True if the contract is a valid for the given type
-    function isValidContract(
-        bytes32 contractType,
-        address contractAddress
-    ) external view returns (bool);
+    function isValidContract(bytes32 contractType, address contractAddress) external view returns (bool);
 
     /// @notice Returns the additional contract of the given type
     /// @dev Revert if not set

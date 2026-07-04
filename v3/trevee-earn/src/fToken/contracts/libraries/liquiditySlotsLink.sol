@@ -25,8 +25,6 @@ library LiquiditySlotsLink {
     uint256 internal constant LIQUIDITY_USER_BORROW_DOUBLE_MAPPING_SLOT = 9;
     /// @dev storage slot for listed tokens array at Liquidity
     uint256 internal constant LIQUIDITY_LISTED_TOKENS_ARRAY_SLOT = 10;
-    /// @dev storage slot for listed tokens array at Liquidity
-    uint256 internal constant LIQUIDITY_CONFIGS2_MAPPING_SLOT = 11;
 
     // --------------------------------
     // @dev stacked uint256 storage slots bits position data for each:
@@ -41,7 +39,6 @@ library LiquiditySlotsLink {
     uint256 internal constant BITS_EXCHANGE_PRICES_BORROW_EXCHANGE_PRICE = 155;
     uint256 internal constant BITS_EXCHANGE_PRICES_SUPPLY_RATIO = 219;
     uint256 internal constant BITS_EXCHANGE_PRICES_BORROW_RATIO = 234;
-    uint256 internal constant BITS_EXCHANGE_PRICES_USES_CONFIGS2 = 249;
 
     // RateData:
     uint256 internal constant BITS_RATE_DATA_VERSION = 0;
@@ -84,9 +81,6 @@ library LiquiditySlotsLink {
     uint256 internal constant BITS_USER_BORROW_BASE_BORROW_LIMIT = 200;
     uint256 internal constant BITS_USER_BORROW_MAX_BORROW_LIMIT = 218;
     uint256 internal constant BITS_USER_BORROW_IS_PAUSED = 255;
-
-    // Configs2
-    uint256 internal constant BITS_CONFIGS2_MAX_UTILIZATION = 0;
 
     // --------------------------------
 

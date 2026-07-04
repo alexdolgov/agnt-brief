@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2021-03-23
-*/
-
 // SPDX-License-Identifier: UNLICENSED
 // The BentoBox
 

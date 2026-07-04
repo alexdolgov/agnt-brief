@@ -1,14 +1,22 @@
 {
   "component": "ERC4626Strategy",
   "main_contract": "ERC4626Strategy",
-  "source_file_count": 30,
-  "deployment_count": 1,
+  "source_file_count": 26,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf4868cec8c7e13bba1e3ba65b029449c13ea0543",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0xf4868cec8c7e13bba1e3ba65b029449c13ea0543",
       "is_proxy": false,
       "implementation_address": null,

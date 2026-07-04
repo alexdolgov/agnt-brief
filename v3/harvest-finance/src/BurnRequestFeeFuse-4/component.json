@@ -1,0 +1,18 @@
+{
+  "component": "BurnRequestFeeFuse-4",
+  "main_contract": "BurnRequestFeeFuse",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcabc40118e83236c751d9a3089e9b5cf53ee4414",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

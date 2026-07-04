@@ -1,29 +1,30 @@
 # volta-club — deployments
 
-98 verified deployment(s) across 64 component(s).
+99 verified deployment(s) across 82 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | avalanche | `0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98` | BridgeToken | impl | live | no |
-| avalanche | `0x37b608519f91f70f2eeb0e5ed9af4061722e4f76` | BridgeToken | impl | live | no |
-| avalanche | `0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339` | BridgeToken | impl | live | no |
+| avalanche | `0x37b608519f91f70f2eeb0e5ed9af4061722e4f76` | BridgeToken-2 | impl | live | no |
+| avalanche | `0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339` | BridgeToken-3 | impl | live | no |
 | avalanche | `0x4456b87af11e87e329ab7d7c7a246ed1ac2168b9` | TimeStaking | impl | live | no |
-| avalanche | `0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab` | BridgeToken | impl | live | no |
-| avalanche | `0x50b7545627a5162f82a992c33b87adc75187b218` | BridgeToken | impl | live | no |
-| avalanche | `0x5947bb275c521040051d82396192181b413227a3` | BridgeToken | impl | live | no |
-| avalanche | `0x596fa47043f99a4e0f122243b841e55375cde0d2` | BridgeToken | impl | live | no |
-| avalanche | `0x63a72806098bd3d9520cc43356dd78afe5d386d9` | BridgeToken | impl | live | no |
-| avalanche | `0x88128fd4b259552a9a1d457f435a6527aab72d42` | BridgeToken | impl | live | no |
-| avalanche | `0x8a0cac13c7da965a312f08ea4229c37869e85cb9` | BridgeToken | impl | live | no |
-| avalanche | `0x8ebaf22b6f053dffeaf46f4dd9efa95d89ba8580` | BridgeToken | impl | live | no |
-| avalanche | `0x98443b96ea4b0858fdf3219cd13e98c7a4690588` | BridgeToken | impl | live | no |
-| avalanche | `0x9eaac1b23d935365bd7b542fe22ceee2922f52dc` | BridgeToken | impl | live | no |
-| avalanche | `0xbec243c995409e6520d7c41e404da5deba4b209b` | BridgeToken | impl | live | no |
+| avalanche | `0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab` | BridgeToken-4 | impl | live | no |
+| avalanche | `0x50b7545627a5162f82a992c33b87adc75187b218` | BridgeToken-5 | impl | live | no |
+| avalanche | `0x5947bb275c521040051d82396192181b413227a3` | BridgeToken-6 | impl | live | no |
+| avalanche | `0x596fa47043f99a4e0f122243b841e55375cde0d2` | BridgeToken-7 | impl | live | no |
+| avalanche | `0x63a72806098bd3d9520cc43356dd78afe5d386d9` | BridgeToken-8 | impl | live | no |
+| avalanche | `0x88128fd4b259552a9a1d457f435a6527aab72d42` | BridgeToken-9 | impl | live | no |
+| avalanche | `0x8a0cac13c7da965a312f08ea4229c37869e85cb9` | BridgeToken-10 | impl | live | no |
+| avalanche | `0x8ebaf22b6f053dffeaf46f4dd9efa95d89ba8580` | BridgeToken-11 | impl | live | no |
+| avalanche | `0x98443b96ea4b0858fdf3219cd13e98c7a4690588` | BridgeToken-12 | impl | live | no |
+| avalanche | `0x9b06f3c5de42d4623d7a2bd940ec735103c68a76` | Wonderland-2 | impl | live | no |
+| avalanche | `0x9eaac1b23d935365bd7b542fe22ceee2922f52dc` | BridgeToken-13 | impl | live | no |
+| avalanche | `0xbec243c995409e6520d7c41e404da5deba4b209b` | BridgeToken-14 | impl | live | no |
 | avalanche | `0xc172c84587bea6d593269bfe08632bf2da2bc0f6` | MultiRewards | impl | live | no |
-| avalanche | `0xc3048e19e76cb9a3aa9d77d8c03c29fc906e2437` | BridgeToken | impl | live | no |
-| avalanche | `0xc7198437980c041c805a1edcba50c1ce5db95118` | BridgeToken | impl | live | no |
-| avalanche | `0xd501281565bf7789224523144fe5d98e8b28f267` | BridgeToken | impl | live | no |
-| avalanche | `0xd586e7f844cea2f87f50152665bcbc2c279d8d70` | BridgeToken | impl | live | no |
+| avalanche | `0xc3048e19e76cb9a3aa9d77d8c03c29fc906e2437` | BridgeToken-15 | impl | live | no |
+| avalanche | `0xc7198437980c041c805a1edcba50c1ce5db95118` | BridgeToken-16 | impl | live | no |
+| avalanche | `0xd501281565bf7789224523144fe5d98e8b28f267` | BridgeToken-17 | impl | live | no |
+| avalanche | `0xd586e7f844cea2f87f50152665bcbc2c279d8d70` | BridgeToken-18 | impl | live | no |
 | ethereum | `0x022abb391ddcc80a17cd0a3873ff88dd06aad735` | OracleFeed | impl | live | no |
 | ethereum | `0x02eed6fdde3d2115795c7f6bef3a352462d6e826` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x04906695d6d12cf5459975d7c3c03356e4ccd460` | sOlympus | impl | live | no |
@@ -102,8 +103,3 @@
 | ethereum | `0xe80c0cd204d654cebe8dd64a4857cab6be8345a3` | JPEG | impl | live | no |
 | ethereum | `0xedb597c9715c648e4cf546464d365d5923d7f6c8` | Lens | impl | live | no |
 | ethereum | `0xefe0b4ca532769a3ae758fd82e1426a03a94f185` | GebSafeManager | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0x9b06f3c5de42d4623d7a2bd940ec735103c68a76`

@@ -1,10 +1,16 @@
 # makina — deployments
 
-83 verified deployment(s) across 24 component(s).
+89 verified deployment(s) across 24 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x0f431322e1ff2500d4c5a4e090a7da7344f953be` | ContextHelper | impl | live | yes |
 | base | `0x2f7101c2effa4a2d48a95958f594e3306717a0a0` | Context | proxy | live | yes |
+| base | `0x3d623b199e290358416415ea7e05b635e442e3c0` | MathHelper | impl | live | yes |
+| base | `0x54423e194cb882608ecd39b94687ed67d89198b5` | CastHelper | impl | live | yes |
+| base | `0x74dc739b8f98ad0f76cd8900695dd8d5083e45d3` | Bytes32Helper | impl | live | yes |
+| base | `0x8dc60173f37b34998fd5b2aef47dd68c68cc22c4` | BooleanHelper | impl | live | yes |
+| base | `0xe11b4879a771222cdae84e4392b03adaa151bc4d` | SignedMathHelper | impl | live | yes |
 | ethereum | `0x00c93e3b09ca2f544487d4298339765eadcd8353` | BooleanHelper | impl | live | yes |
 | ethereum | `0x0447d0ad7fd6a3409b48ecbb9ddb075c1e11d735` | BeaconProxy-2 | proxy | live | yes |
 | ethereum | `0x09002bdb52a0cba3b1376f5a373739b20f51a221` | WatermarkFeeManager | impl | live | yes |
@@ -87,13 +93,3 @@
 | ethereum | `0xf5d399b8c658f8473815a066a095fd6b0b21ff5a` | TransparentUpgradeableProxy-2 | impl | live | yes |
 | ethereum | `0xfcbe132452b6caa32addd4768db8fa02af73d841` | BeaconProxy-2 | proxy | live | yes |
 | ethereum | `0xffcbc7a7eef2796c277095c66067ac749f4ca078` | BeaconProxy | proxy | live | yes |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x0f431322e1ff2500d4c5a4e090a7da7344f953be`
-- base `0x3d623b199e290358416415ea7e05b635e442e3c0`
-- base `0x54423e194cb882608ecd39b94687ed67d89198b5`
-- base `0x74dc739b8f98ad0f76cd8900695dd8d5083e45d3`
-- base `0x8dc60173f37b34998fd5b2aef47dd68c68cc22c4`
-- base `0xe11b4879a771222cdae84e4392b03adaa151bc4d`

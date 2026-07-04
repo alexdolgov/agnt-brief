@@ -53,7 +53,7 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
     }
 
     /// @inheritdoc ISpotPriceOracle
-    function getDescription() external pure virtual override returns (string memory) {
+    function getDescription() external pure override returns (string memory) {
         return "curveV1";
     }
 
@@ -143,7 +143,7 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
         address token,
         address pool,
         address requestedQuoteToken
-    ) public virtual returns (uint256 price, address actualQuoteToken) {
+    ) public view returns (uint256 price, address actualQuoteToken) {
         Errors.verifyNotZero(pool, "pool");
 
         address lpToken = poolToLpToken[pool];
@@ -214,7 +214,7 @@ contract CurveV1StableEthOracle is SystemComponent, SecurityBase, ISpotPriceOrac
         address pool,
         address lpToken,
         address quoteToken
-    ) public virtual returns (uint256 totalLPSupply, ReserveItemInfo[] memory reserves) {
+    ) external view returns (uint256 totalLPSupply, ReserveItemInfo[] memory reserves) {
         Errors.verifyNotZero(pool, "pool");
         Errors.verifyNotZero(lpToken, "lpToken");
         Errors.verifyNotZero(quoteToken, "quoteToken");

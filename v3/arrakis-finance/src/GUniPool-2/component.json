@@ -1,0 +1,26 @@
+{
+  "component": "GUniPool-2",
+  "main_contract": "GUniPool",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8582bf142be76fef830d23f590a2587f2ad7c216",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd2bb190dd88e7af5df176064ec42f6dfa8672f40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "QuotaDelegate-2",
+  "main_contract": "QuotaDelegate",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x40f8298199e09d7fada87e3b1ef9061bdca2fe89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -143,7 +143,7 @@ interface IERC7540Redeem is IERC7540Operator {
 interface IERC7540CancelDeposit {
     event CancelDepositRequest(address indexed controller, uint256 indexed requestId, address sender);
     event CancelDepositClaim(
-        address indexed controller, address indexed receiver, uint256 indexed requestId, address sender, uint256 assets
+        address indexed receiver, address indexed controller, uint256 indexed requestId, address sender, uint256 assets
     );
 
     /**
@@ -194,7 +194,7 @@ interface IERC7540CancelDeposit {
 interface IERC7540CancelRedeem {
     event CancelRedeemRequest(address indexed controller, uint256 indexed requestId, address sender);
     event CancelRedeemClaim(
-        address indexed controller, address indexed receiver, uint256 indexed requestId, address sender, uint256 shares
+        address indexed receiver, address indexed controller, uint256 indexed requestId, address sender, uint256 shares
     );
 
     /**
@@ -322,10 +322,4 @@ interface IERC7540Vault is
 
     /// @notice Callback when a claim redeem Request becomes claimable
     function onCancelRedeemClaimable(address owner, uint256 shares) external;
-
-    /// @notice Price of 1 unit of share, quoted in the decimals of the asset.
-    function pricePerShare() external view returns (uint256);
-
-    /// @notice Returns timestamp of the last share price update.
-    function priceLastUpdated() external view returns (uint64);
 }

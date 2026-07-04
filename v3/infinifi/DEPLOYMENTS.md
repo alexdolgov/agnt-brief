@@ -1,6 +1,6 @@
 # infinifi — deployments
 
-146 verified deployment(s) across 78 component(s).
+161 verified deployment(s) across 89 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,24 +11,30 @@
 | chain-9745 | `0x1330902050db4edac0d9d8ca33fdab5dbe986c9c` | YieldSharingV2 | impl | live | no |
 | chain-9745 | `0x13dd8034601ae91d1abcef4632083474fb043bb6` | AllocationVoting | impl | live | no |
 | chain-9745 | `0x160300d5c1ea377b823127d2d6668d43dd5c1d8a` | InfiniFiCore | impl | live | no |
-| chain-9745 | `0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d` | AfterMintHook | impl | live | no |
-| chain-9745 | `0x2c0dfada99dff7ada03952a39302a16be2c19fe7` | MinorRolesManager | impl | live | no |
+| chain-9745 | `0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d` | AfterMintHook-2 | impl | live | no |
+| chain-9745 | `0x2c0dfada99dff7ada03952a39302a16be2c19fe7` | MinorRolesManager-2 | impl | live | no |
 | chain-9745 | `0x3d18480cc32b6ab3b833dcabd80e76cfd41c48a9` | Timelock | impl | live | no |
 | chain-9745 | `0x43c1c7399c8d54a82817b4ea3f79e6f68f448d1c` | LockingController | impl | live | no |
-| chain-9745 | `0x44f9499122a7434252aa7df727d9552c2ba9c03b` | BeforeRedeemHook | impl | live | no |
+| chain-9745 | `0x44f9499122a7434252aa7df727d9552c2ba9c03b` | BeforeRedeemHook-2 | impl | live | no |
 | chain-9745 | `0x4b174afbed7b98ba01f50e36109eee5e6d327c32` | InfiniFiCore | impl | live | no |
+| chain-9745 | `0x626c23fe62f5c3a45fe0f1e79ea577bd7d134d54` | ReceiptToken-2 | impl | live | no |
+| chain-9745 | `0x64d9c2fc3c1bd36fec425edd78b67dfc5dcc98a0` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| chain-9745 | `0x6f8a9eb6516eae5b8b3f8cc95ae4c79f4c33bc66` | MintController-2 | impl | live | no |
 | chain-9745 | `0x73ab24e6b1e4e106cf95f0ffd393f39365c88861` | FarmRegistry | impl | live | no |
+| chain-9745 | `0x7a3e701d651aa51963a024ac328c2cceb0578692` | TransparentUpgradeableProxy-4 | impl | live | no |
 | chain-9745 | `0x7a67248a73f9763203d4cd0fc8ef1c22c1b661c6` | MerklRewardsClaimer | impl | live | no |
 | chain-9745 | `0x7ba3bc4e47f9c44847caf58ba2e3957d984995a5` | FluidRewardsClaimer | impl | live | no |
 | chain-9745 | `0x9b3bf077757e6fdce20ef02c4d25387000396754` | MerklRewardsClaimer | impl | live | no |
 | chain-9745 | `0x9b5ae92eba3c383be073e3ff94613b2c33851282` | YieldSharingV2 | impl | live | no |
 | chain-9745 | `0xabd98b466196ca3d29e0a2a7859e151a31fe83c7` | InfiniFiStakedTokenSY | impl | live | no |
-| chain-9745 | `0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d` | RedeemController | impl | live | no |
+| chain-9745 | `0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d` | RedeemController-2 | impl | live | no |
 | chain-9745 | `0xbf69a4a09423e7ac37d5c7da0cd14f277f752488` | LockingController | impl | live | no |
 | chain-9745 | `0xc1fe7faaa61e2fc60cb6ff99cf5beedacaeb9bae` | FluidRewardsClaimer | impl | live | no |
+| chain-9745 | `0xcb4416118b0f354ed3895d1295e8c2990bdd44af` | EmergencyWithdrawal-2 | impl | live | no |
 | chain-9745 | `0xd105b91517905c34c38af9d6e0db4b77e9e71ae1` | Timelock | impl | live | no |
 | chain-9745 | `0xd54c8fff9c362d952d982f2bf006aac211108b3b` | Timelock | impl | live | no |
 | chain-9745 | `0xdeb0284d7120d3005cb06961cb1e651942ce765f` | Accounting-2 | impl | live | no |
+| chain-9745 | `0xe335abb943ecf2d7555d0f732ecc19ce79c39afd` | StakedToken-2 | impl | live | no |
 | chain-9745 | `0xeb32a309405c72253d5db9ef28310a8ff56b6fd7` | InfiniFiStakedTokenSY | proxy | live | no |
 | chain-9745 | `0xec59c2fff7fba91f68a9563dfe84fd26edc70a9a` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | chain-9745 | `0xf8b24d22153d86af79681e949ec2efaf75120600` | InfiniFiReceiptTokenSYAdapter | impl | live | no |
@@ -48,6 +54,7 @@
 | ethereum | `0x160300d5c1ea377b823127d2d6668d43dd5c1d8a` | ManualRebalancer | impl | live | no |
 | ethereum | `0x16a139da0405eb9777ade4f5f0cc2416e5cd8619` | AssetsChecker | impl | live | no |
 | ethereum | `0x1ad60c683ea27bef74b2c27c221486880e07592a` | LiquidationFarm | impl | live | no |
+| ethereum | `0x1cb9ed33924741f500e739e38c3215a76cd1f579` | YieldSharingV2-2 | impl | live | no |
 | ethereum | `0x1d2ed96cd1f9f89668978b8cf52b5f2e4eed9f5c` | ERC4626Farm | impl | live | no |
 | ethereum | `0x1d95cc100d6cd9c7bbdbd7cb328d99b3d6037ff7` | LockingController-2 | impl | live | no |
 | ethereum | `0x215c7fa0e620fce99ed4891bccb7523388b010b8` | PLSmootherHelper | impl | live | no |
@@ -59,6 +66,7 @@
 | ethereum | `0x35f9ebdc02f936e199826778bc06a13272a06b87` | CapFarm | impl | live | no |
 | ethereum | `0x36cc593972ec3dafa1b3344736d770962e245b2a` | ERC4626Oracle | impl | live | no |
 | ethereum | `0x3a744a6b57984eb62aeb36eb6501d268372cf8bb` | LockedPositionToken | impl | live | no |
+| ethereum | `0x3d18480cc32b6ab3b833dcabd80e76cfd41c48a9` | Timelock | impl | live | no |
 | ethereum | `0x3d360ab96b942c1251ab061178f731efebc2d644` | LockedPositionToken | impl | live | no |
 | ethereum | `0x3d627013d54388b3fc5a9de153c4544c0bc4af13` | FixedPriceOracle | impl | live | no |
 | ethereum | `0x3f04b65ddbd87f9ce0a2e7eb24d80e7fb87625b5` | TransparentUpgradeableProxy-2 | proxy | live | no |
@@ -67,6 +75,8 @@
 | ethereum | `0x48f9e38f3070ad8945dfeae3fa70987722e3d89c` | ReceiptToken | impl | live | no |
 | ethereum | `0x49877d937b9a00d50557bdc3d87287b5c3a4c256` | MintController | impl | live | no |
 | ethereum | `0x49fa678bb8b2f5f8089493a6f93e1bb8500ff853` | TransparentUpgradeableProxy | impl | live | no |
+| ethereum | `0x4b174afbed7b98ba01f50e36109eee5e6d327c32` | Timelock | impl | live | no |
+| ethereum | `0x4b2bfe49829de3632449928507452ee667f61395` | BeforeRedeemHook | impl | live | no |
 | ethereum | `0x4be546155461d097a714ef2668893b0d10ca124c` | LevelFarm | impl | live | no |
 | ethereum | `0x4f0122d43ab4893d5977fb0358b73cc178339dfe` | UnstakeAndRedeemHelper | impl | live | no |
 | ethereum | `0x4f6900bbb52cd514a7eb41adc6b367de7919ad88` | ERC4626Farm | impl | live | no |
@@ -107,9 +117,11 @@
 | ethereum | `0x92c3a5f226a47a44ad73f04663b305372cc665bf` | AutoFarm | impl | live | no |
 | ethereum | `0x9e5efc5f387d8661c1afb2469b7eef6972451852` | RWAEscrowFarm | impl | live | no |
 | ethereum | `0x9e8b926a0eb276eb380fb8282ea20c2a2faea967` | YieldSharing | impl | live | no |
+| ethereum | `0xa08bf802dcecd3c44e6420a52d5158867366be9b` | MinorRolesManager | impl | live | no |
 | ethereum | `0xa2b300c5d0e9250f646b20ec924efad36d19ed91` | OracleFactory | impl | live | no |
 | ethereum | `0xa406afc7967c63c5c454ad1f0e0db9a761fe26e9` | EmergencyWithdrawal | impl | live | no |
 | ethereum | `0xa532845947a980cb59cc7b3bed86cb5693bd4bc1` | FixedPriceOracle | impl | live | no |
+| ethereum | `0xa5e274e6c2abbd30e3a94e1a2df7e6f5944797a8` | AfterMintHook | impl | live | no |
 | ethereum | `0xa90c9bae9b1a41ced9639a652ba4162a2079cb00` | TestOFT | impl | live | no |
 | ethereum | `0xac21b22b5aeb11bc32de4ecf59e4538fca48b694` | CapFarm | impl | live | no |
 | ethereum | `0xb06cc4548febff3d66a680f9c516381c79bc9707` | LockedPositionToken | impl | live | no |
@@ -122,7 +134,9 @@
 | ethereum | `0xc324569141697045b9ede54b5d4623a691ed57a4` | PLSmoother | impl | live | no |
 | ethereum | `0xc9c06c49ed83d12bca88bed999d4920f049beabc` | FxSaveFarm | impl | live | no |
 | ethereum | `0xcb15a0edcddb190fb4ced6c4972d0564d6f7d4a7` | ERC4626Oracle | impl | live | no |
+| ethereum | `0xcb1747e89a43dedcf4a2b831a0d94859efec7601` | RedeemController | impl | live | no |
 | ethereum | `0xd04b37f673c42baa46923fe74a830bae721fb41f` | InfiniFiGatewayV2 | impl | live | no |
+| ethereum | `0xd0ec80032c0da717bd78b9569321d9069365241e` | FluidRewardsClaimer-2 | impl | live | no |
 | ethereum | `0xd15270f54807880c0e4ed6e076463b3f00a3a79b` | FixedPriceOracle | impl | live | no |
 | ethereum | `0xd15fbf48c6dddadc9ef0693b060d80af51cc26d5` | LockedPositionToken | impl | live | no |
 | ethereum | `0xd16bf32f67420dc60732c3cfc43103243fc3f3bf` | FixedPriceOracle | impl | live | no |
@@ -144,28 +158,10 @@
 | ethereum | `0xf28a28b4d14fa6614fe5270d147aa4a7df5642d9` | LockingController-3 | impl | live | no |
 | ethereum | `0xf4ea3ec87b1c254f17a2fb68164db0caf6c4cecf` | MidasFarm | impl | live | no |
 | ethereum | `0xf56e946e92fef6a050f482c560b5f8dccb8163b3` | MapleFarm | impl | live | no |
+| ethereum | `0xf5f2718708f471e43968271956cc01aaa8c46119` | FarmRegistry | impl | live | no |
 | ethereum | `0xf68b95b7e851170c0e5123a3249dd1ca46215085` | LockedPositionToken | impl | live | no |
 | ethereum | `0xf6d48735eccf12bdc1df2674b1ce3fcb3bd25490` | ManualRebalancer | impl | live | no |
 | ethereum | `0xf7f724fdb7562850e2b068e0a52ec79a768ab884` | ERC4626Farm | impl | live | no |
 | ethereum | `0xfa503f5fa3967789922e35b3a03fd56076a0440e` | ERC4626Oracle | impl | live | no |
 | ethereum | `0xfbbc645d82cbba7c20c37e477ef9c0032d7d7e51` | LevelOracle | impl | live | no |
 | ethereum | `0xfd1ea12d29b90630b265dbbc6af88266d1a83de4` | PrimeBrokerFarm | impl | live | no |
-
-## Source unavailable (15)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-9745 `0x626c23fe62f5c3a45fe0f1e79ea577bd7d134d54`
-- chain-9745 `0x64d9c2fc3c1bd36fec425edd78b67dfc5dcc98a0`
-- chain-9745 `0x6f8a9eb6516eae5b8b3f8cc95ae4c79f4c33bc66`
-- chain-9745 `0x7a3e701d651aa51963a024ac328c2cceb0578692`
-- chain-9745 `0xcb4416118b0f354ed3895d1295e8c2990bdd44af`
-- chain-9745 `0xe335abb943ecf2d7555d0f732ecc19ce79c39afd`
-- ethereum `0x1cb9ed33924741f500e739e38c3215a76cd1f579`
-- ethereum `0x3d18480cc32b6ab3b833dcabd80e76cfd41c48a9`
-- ethereum `0x4b174afbed7b98ba01f50e36109eee5e6d327c32`
-- ethereum `0x4b2bfe49829de3632449928507452ee667f61395`
-- ethereum `0xa08bf802dcecd3c44e6420a52d5158867366be9b`
-- ethereum `0xa5e274e6c2abbd30e3a94e1a2df7e6f5944797a8`
-- ethereum `0xcb1747e89a43dedcf4a2b831a0d94859efec7601`
-- ethereum `0xd0ec80032c0da717bd78b9569321d9069365241e`
-- ethereum `0xf5f2718708f471e43968271956cc01aaa8c46119`

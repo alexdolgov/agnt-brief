@@ -1,0 +1,18 @@
+{
+  "component": "Vault-5",
+  "main_contract": "Vault",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf8e3120fd9957200b84913f746b4cb66b9a8a612",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

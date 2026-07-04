@@ -1,0 +1,18 @@
+{
+  "component": "SatlayerPool-4",
+  "main_contract": "SatlayerPool",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x50198b5e1330753f167f6e0544e4c8af829bc99d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

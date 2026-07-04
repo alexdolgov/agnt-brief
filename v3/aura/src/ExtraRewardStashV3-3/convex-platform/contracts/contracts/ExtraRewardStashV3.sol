@@ -3,16 +3,15 @@ pragma solidity 0.6.12;
 
 import "./Interfaces.sol";
 import "./interfaces/IRewardHook.sol";
-import "./StashToken.sol";
 import "@openzeppelin/contracts-0.6/math/SafeMath.sol";
-import "@openzeppelin/contracts-0.6/proxy/Clones.sol";
 import "@openzeppelin/contracts-0.6/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts-0.6/utils/Address.sol";
 import "@openzeppelin/contracts-0.6/token/ERC20/SafeERC20.sol";
 
+
 /**
  * @title   ExtraRewardStashV3
- * @author  ConvexFinance -> AuraFinance
+ * @author  ConvexFinance
  * @notice  ExtraRewardStash for pools added to the Booster to handle extra rewards
  *          that aren't CRV that can be claimed from a gauge.
  *          - v3.0: Support for curve gauge reward redirect
@@ -36,7 +35,6 @@ contract ExtraRewardStashV3 {
     address public staker;
     address public gauge;
     address public rewardFactory;
-    address public stashTokenImplementation;
    
     mapping(address => uint256) public historicalRewards;
     bool public hasRedirected;
@@ -45,7 +43,6 @@ contract ExtraRewardStashV3 {
     struct TokenInfo {
         address token;
         address rewardAddress;
-        address stashToken;
     }
 
     //use mapping+array so that we dont have to loop check each time setToken is called
@@ -76,8 +73,6 @@ contract ExtraRewardStashV3 {
         staker = _staker;
         gauge = _gauge;
         rewardFactory = _rFactory;
-
-        stashTokenImplementation = address(new StashToken(address(this)));
     }
 
     function getName() external pure returns (string memory) {
@@ -155,6 +150,7 @@ contract ExtraRewardStashV3 {
         rewardHook = _hook;
     }
 
+
     /**
      * @notice  Add a reward token to the token list so it can be claimed
      * @dev     For each token that is added as a claimable reward a VirtualRewardsPool
@@ -163,25 +159,21 @@ contract ExtraRewardStashV3 {
     function setToken(address _token) internal {
         TokenInfo storage t = tokenInfo[_token];
 
-        if(t.token == address(0) && _token != crv){
+        if(t.token == address(0)){
             //set token address
             t.token = _token;
 
-            StashToken stashToken = StashToken(Clones.clone(stashTokenImplementation));
-
-            // we only want to add rewards that are not CRV
-            //create new reward contract (for NON-crv tokens only)
-            (,,,address mainRewardContract,,) = IDeposit(operator).poolInfo(pid);
-            address rewardContract = IRewardFactory(rewardFactory).CreateTokenRewards(
-                address(stashToken),
-                mainRewardContract,
-                address(this));
-
-            stashToken.init(operator, rewardContract, _token);
-            
-            t.rewardAddress = rewardContract;
-            t.stashToken = address(stashToken);
-
+            //check if crv
+            if(_token != crv){
+                //create new reward contract (for NON-crv tokens only)
+                (,,,address mainRewardContract,,) = IDeposit(operator).poolInfo(pid);
+                address rewardContract = IRewardFactory(rewardFactory).CreateTokenRewards(
+                    _token,
+                    mainRewardContract,
+                    address(this));
+                
+                t.rewardAddress = rewardContract;
+            }
             //add token to list of known rewards
             tokenList.push(_token);
         }
@@ -198,7 +190,8 @@ contract ExtraRewardStashV3 {
 
     /**
      * @notice  Distribute rewards
-     * @dev     Send all extra token rewards to the rewardContract VirtualRewardsPool
+     * @dev     Send all CRV to the Booster contract and send all extra token
+     *          rewards to the rewardContract VirtualRewardsPool
      *          Called by Booster earmarkRewards
      */
     function processStash() external returns(bool){
@@ -209,22 +202,23 @@ contract ExtraRewardStashV3 {
             TokenInfo storage t = tokenInfo[tokenList[i]];
             address token = t.token;
             if(token == address(0)) continue;
-            if(!StashToken(t.stashToken).isValid()) continue;
             
-            uint256 amount = IERC20(token).balanceOf(address(this)); 
+            uint256 amount = IERC20(token).balanceOf(address(this));
             if (amount > 0) {
                 historicalRewards[token] = historicalRewards[token].add(amount);
-                //add to reward contract
-                address rewards = t.rewardAddress;
-                if(rewards == address(0)) continue;
-
-                address stashToken = t.stashToken;
-                IERC20(token).safeApprove(stashToken, 0);
-                IERC20(token).safeApprove(stashToken, amount);
-                StashToken(stashToken).mint(amount);
-                IRewards(rewards).queueNewRewards(amount);
+                if(token == crv){
+                    //if crv, send back to booster to distribute
+                    IERC20(token).safeTransfer(operator, amount);
+                    continue;
+                }
+            	//add to reward contract
+            	address rewards = t.rewardAddress;
+            	if(rewards == address(0)) continue;
+            	IERC20(token).safeTransfer(rewards, amount);
+            	IRewards(rewards).queueNewRewards(amount);
             }
         }
         return true;
     }
+
 }

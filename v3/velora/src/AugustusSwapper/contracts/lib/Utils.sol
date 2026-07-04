@@ -8,7 +8,6 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "../ITokenTransferProxy.sol";
-import { IBalancerV2Vault } from "./balancerv2/IBalancerV2Vault.sol";
 
 interface IERC20Permit {
     function permit(
@@ -43,21 +42,16 @@ library Utils {
 
     uint256 private constant MAX_UINT = type(uint256).max;
 
-    enum CurveSwapType {
-        EXCHANGE,
-        EXCHANGE_UNDERLYING,
-        EXCHANGE_GENERIC_FACTORY_ZAP
-    }
-
     /**
-     * @param fromToken Address of the source token
-     * @param fromAmount Amount of source tokens to be swapped
-     * @param toAmount Minimum destination token amount expected out of this swap
-     * @param expectedAmount Expected amount of destination tokens without slippage
-     * @param beneficiary Beneficiary address
-     * 0 then 100% will be transferred to beneficiary. Pass 10000 for 100%
-     * @param path Route to be taken for this swap to take place
-     */
+   * @param fromToken Address of the source token
+   * @param fromAmount Amount of source tokens to be swapped
+   * @param toAmount Minimum destination token amount expected out of this swap
+   * @param expectedAmount Expected amount of destination tokens without slippage
+   * @param beneficiary Beneficiary address
+   * 0 then 100% will be transferred to beneficiary. Pass 10000 for 100%
+   * @param path Route to be taken for this swap to take place
+
+   */
     struct SellData {
         address fromToken;
         uint256 fromAmount;
@@ -78,7 +72,6 @@ library Utils {
         address toToken;
         uint256 fromAmount;
         uint256 toAmount;
-        uint256 expectedAmount;
         address payable beneficiary;
         Utils.Route[] route;
         address payable partner;
@@ -117,80 +110,6 @@ library Utils {
         uint256 feePercent;
         bytes permit;
         uint256 deadline;
-        bytes16 uuid;
-    }
-
-    struct DirectUniV3 {
-        address fromToken;
-        address toToken;
-        address exchange;
-        uint256 fromAmount;
-        uint256 toAmount;
-        uint256 expectedAmount;
-        uint256 feePercent;
-        uint256 deadline;
-        address payable partner;
-        bool isApproved;
-        address payable beneficiary;
-        bytes path;
-        bytes permit;
-        bytes16 uuid;
-    }
-
-    struct DirectCurveV1 {
-        address fromToken;
-        address toToken;
-        address exchange;
-        uint256 fromAmount;
-        uint256 toAmount;
-        uint256 expectedAmount;
-        uint256 feePercent;
-        int128 i;
-        int128 j;
-        address payable partner;
-        bool isApproved;
-        CurveSwapType swapType;
-        address payable beneficiary;
-        bool needWrapNative;
-        bytes permit;
-        bytes16 uuid;
-    }
-
-    struct DirectCurveV2 {
-        address fromToken;
-        address toToken;
-        address exchange;
-        address poolAddress;
-        uint256 fromAmount;
-        uint256 toAmount;
-        uint256 expectedAmount;
-        uint256 feePercent;
-        uint256 i;
-        uint256 j;
-        address payable partner;
-        bool isApproved;
-        CurveSwapType swapType;
-        address payable beneficiary;
-        bool needWrapNative;
-        bytes permit;
-        bytes16 uuid;
-    }
-
-    struct DirectBalancerV2 {
-        IBalancerV2Vault.BatchSwapStep[] swaps;
-        address[] assets;
-        IBalancerV2Vault.FundManagement funds;
-        int256[] limits;
-        uint256 fromAmount;
-        uint256 toAmount;
-        uint256 expectedAmount;
-        uint256 deadline;
-        uint256 feePercent;
-        address vault;
-        address payable partner;
-        bool isApproved;
-        address payable beneficiary;
-        bytes permit;
         bytes16 uuid;
     }
 
@@ -277,13 +196,6 @@ library Utils {
         if (permit.length == 32 * 8) {
             (bool success, ) = token.call(abi.encodePacked(IERC20PermitLegacy.permit.selector, permit));
             require(success, "Permit failed");
-        }
-    }
-
-    function transferETH(address payable destination, uint256 amount) internal {
-        if (amount > 0) {
-            (bool result, ) = destination.call{ value: amount, gas: 10000 }("");
-            require(result, "Transfer ETH failed");
         }
     }
 }

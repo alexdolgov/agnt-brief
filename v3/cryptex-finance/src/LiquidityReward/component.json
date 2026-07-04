@@ -1,25 +1,23 @@
 {
   "component": "LiquidityReward",
   "main_contract": "LiquidityReward",
-  "source_file_count": 18,
+  "source_file_count": 11,
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://www.cryptex.finance/audits/Cryptex_-_Final_Report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x938f145d5f3abf681618dcc5c71f095b870747ba",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc8bb1cd417d20116387a5e0603e195ca4f3cf59a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x944cfb09bc40ce43ec7f471297ef83a325ba78ff",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc4cdd5db9ee777efd891690dc283638cb3a5f94",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

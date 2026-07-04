@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2021-03-27
-*/
-
 // SPDX-License-Identifier: UNLICENSED
 // Kashi Lending Medium Risk
 
@@ -869,6 +865,7 @@ contract KashiPairMediumRiskV1 is ERC20, BoringOwnable, IMasterContract {
     constructor(IBentoBoxV1 bentoBox_) public {
         bentoBox = bentoBox_;
         masterContract = this;
+        feeTo = msg.sender;
     }
 
     /// @notice Serves as the constructor for clones, as clones can't have a regular constructor
@@ -1059,7 +1056,6 @@ contract KashiPairMediumRiskV1 is ERC20, BoringOwnable, IMasterContract {
         }
         totalAsset = _totalAsset.add(share, fraction);
         balanceOf[to] = balanceOf[to].add(fraction);
-        emit Transfer(address(0), to, fraction);
         _addTokens(asset, share, totalAssetShare, skim);
         emit LogAddAsset(skim ? address(bentoBox) : msg.sender, to, share, fraction);
     }
@@ -1085,7 +1081,6 @@ contract KashiPairMediumRiskV1 is ERC20, BoringOwnable, IMasterContract {
         uint256 allShare = _totalAsset.elastic + bentoBox.toShare(asset, totalBorrow.elastic, true);
         share = fraction.mul(allShare) / _totalAsset.base;
         balanceOf[msg.sender] = balanceOf[msg.sender].sub(fraction);
-        emit Transfer(msg.sender, address(0), fraction);
         _totalAsset.elastic = _totalAsset.elastic.sub(share.to128());
         _totalAsset.base = _totalAsset.base.sub(fraction.to128());
         require(_totalAsset.base >= 1000, "Kashi: below minimum");
@@ -1419,7 +1414,6 @@ contract KashiPairMediumRiskV1 is ERC20, BoringOwnable, IMasterContract {
         address _feeTo = masterContract.feeTo();
         uint256 _feesEarnedFraction = accrueInfo.feesEarnedFraction;
         balanceOf[_feeTo] = balanceOf[_feeTo].add(_feesEarnedFraction);
-        emit Transfer(address(0), _feeTo, _feesEarnedFraction);
         accrueInfo.feesEarnedFraction = 0;
 
         emit LogWithdrawFees(_feeTo, _feesEarnedFraction);

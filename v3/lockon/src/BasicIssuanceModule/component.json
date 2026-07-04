@@ -1,25 +1,23 @@
 {
   "component": "BasicIssuanceModule",
   "main_contract": "BasicIssuanceModule",
-  "source_file_count": 28,
+  "source_file_count": 25,
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/blaize-security/blaize-security-audits/blob/main/l/lockon-finance/Lockon-audit-report-%5B7-July-2023%5D.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x018afbf49356138d7ccf465f3f3420e233925e82",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2ce6c32682d5793c7a7db4273defe0ba679f34b0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xcc058995b83dfc02137f299b01547165452e6723",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe6f4a718ded6722baba16caa26e844459dcef262",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

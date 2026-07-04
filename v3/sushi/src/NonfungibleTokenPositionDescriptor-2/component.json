@@ -1,18 +1,18 @@
 {
   "component": "NonfungibleTokenPositionDescriptor-2",
   "main_contract": "NonfungibleTokenPositionDescriptor",
-  "source_file_count": 35,
+  "source_file_count": 39,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x90dab18856331a85dc64203ce39aab01447dc134",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c4369df5732ccf317fef479b26a56e176b18abb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

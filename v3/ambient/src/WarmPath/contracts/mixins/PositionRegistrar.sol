@@ -16,7 +16,6 @@ contract PositionRegistrar is PoolRegistry {
     using SafeCast for uint144;
     using CompoundMath for uint128;
     using LiquidityMath for uint64;
-    using LiquidityMath for uint72;
     using LiquidityMath for uint128;
 
     /* The six things we need to know for each concentrated liquidity position are:
@@ -47,9 +46,9 @@ contract PositionRegistrar is PoolRegistry {
     /* @notice Returns the current position associated with the owner/range. If nothing
      *         exists the result will have zero liquidity. */
     function lookupPosition (address owner, bytes32 poolIdx, int24 lowerTick,
-                               int24 upperTick)
-        internal view returns (RangePosition72 storage) {
-        return positions72_[encodePosKey(owner, poolIdx, lowerTick, upperTick)];
+                             int24 upperTick)
+        internal view returns (RangePosition storage) {
+        return positions_[encodePosKey(owner, poolIdx, lowerTick, upperTick)];
     }
 
     /* @notice Returns the current position associated with the owner's ambient 
@@ -79,9 +78,9 @@ contract PositionRegistrar is PoolRegistry {
      * @return rewards The rewards accumulated between the current and last checkpoined
      *                 fee mileage. */
     function burnPosLiq (address owner, bytes32 poolIdx, int24 lowerTick,
-                         int24 upperTick, uint128 burnLiq, uint72 feeMileage)
+                         int24 upperTick, uint128 burnLiq, uint64 feeMileage)
         internal returns (uint64) {
-        RangePosition72 storage pos = lookupPosition(owner, poolIdx, lowerTick, upperTick);
+        RangePosition storage pos = lookupPosition(owner, poolIdx, lowerTick, upperTick);
         assertJitSafe(pos.timestamp_, poolIdx);
         return decrementLiq(pos, burnLiq, feeMileage);
     }
@@ -115,13 +114,13 @@ contract PositionRegistrar is PoolRegistry {
 
     /* @notice Decrements a range order position with the amount of liquidity being
      *         burned, and calculates the incremental rewards mileage. */
-    function decrementLiq (RangePosition72 storage pos,
-                           uint128 burnLiq, uint72 feeMileage) internal returns
+    function decrementLiq (RangePosition storage pos,
+                           uint128 burnLiq, uint64 feeMileage) internal returns
         (uint64 rewards) {
         uint128 liq = pos.liquidity_;
         uint128 nextLiq = LiquidityMath.minusDelta(liq, burnLiq);
 
-        rewards = feeMileage.deltaRewardsRate72(pos.feeMileage_);
+        rewards = feeMileage.deltaRewardsRate(pos.feeMileage_);
 
         if (nextLiq > 0) {
             // Partial burn. Check that it's allowed on this position.
@@ -150,16 +149,16 @@ contract PositionRegistrar is PoolRegistry {
      *
      * @return rewards The total number of ambient seeds to collect as rewards */
     function harvestPosLiq (address owner, bytes32 poolIdx, int24 lowerTick,
-                            int24 upperTick, uint72 feeMileage)
+                            int24 upperTick, uint64 feeMileage)
         internal returns (uint128 rewards) {        
-        RangePosition72 storage pos = lookupPosition(owner, poolIdx, lowerTick, upperTick);
-        uint72 oldMileage = pos.feeMileage_;
+        RangePosition storage pos = lookupPosition(owner, poolIdx, lowerTick, upperTick);
+        uint64 oldMileage = pos.feeMileage_;
 
         // Technically feeMileage should never be less than oldMileage, but we need to
         // handle it because it can happen due to fixed-point effects.
         // (See blendMileage() function.)
         if (feeMileage > oldMileage) {
-            uint64 rewardsRate = feeMileage.deltaRewardsRate72(oldMileage);
+            uint64 rewardsRate = feeMileage.deltaRewardsRate(oldMileage);
             rewards = FixedPoint.mulQ48(pos.liquidity_, rewardsRate).toUint128By144();
             pos.feeMileage_ = feeMileage;
         }
@@ -170,7 +169,7 @@ contract PositionRegistrar is PoolRegistry {
      *         removed entirely. */
     function markPosAtomic (address owner, bytes32 poolIdx,
                             int24 lowTick, int24 highTick) internal {
-        RangePosition72 storage pos = lookupPosition(owner, poolIdx, lowTick, highTick);
+        RangePosition storage pos = lookupPosition(owner, poolIdx, lowTick, highTick);
         pos.atomicLiq_ = true;
     }
 
@@ -188,8 +187,8 @@ contract PositionRegistrar is PoolRegistry {
      * @param feeMileage The up-to-date fee mileage associated with the range. If the
      *                   position will be checkpointed with this value. */
     function mintPosLiq (address owner, bytes32 poolIdx, int24 lowerTick,
-                         int24 upperTick, uint128 liqAdd, uint72 feeMileage) internal {
-        RangePosition72 storage pos = lookupPosition(owner, poolIdx, lowerTick, upperTick);
+                         int24 upperTick, uint128 liqAdd, uint64 feeMileage) internal {
+        RangePosition storage pos = lookupPosition(owner, poolIdx, lowerTick, upperTick);
         incrementPosLiq(pos, liqAdd, feeMileage);
     }
     
@@ -211,10 +210,13 @@ contract PositionRegistrar is PoolRegistry {
         pos.timestamp_ = SafeCast.timeUint32(); // Increase liquidity loses time priority.
     }
 
-    function incrementPosLiq (RangePosition72 storage pos, uint128 liqAdd,
-                              uint72 feeMileage) private {
+    /* @notice Increments a range order position with the amount of liquidity being
+     *         burned. If necessary blends a weighted average rewards mileage with the
+     *         previous position. */
+    function incrementPosLiq (RangePosition storage pos, uint128 liqAdd,
+                              uint64 feeMileage) private {
         uint128 liq = pos.liquidity_;
-        uint72 oldMileage;
+        uint64 oldMileage;
 
         if (liq > 0) {
             oldMileage = pos.feeMileage_;
@@ -223,7 +225,7 @@ contract PositionRegistrar is PoolRegistry {
         }
 
         uint128 liqNext = liq.addLiq(liqAdd);
-        uint72 mileage = feeMileage.blendMileage72(liqAdd, oldMileage, liq);
+        uint64 mileage = feeMileage.blendMileage(liqAdd, oldMileage, liq);
         uint32 stamp = SafeCast.timeUint32();
         
         // Below should get optimized to a single SSTORE...

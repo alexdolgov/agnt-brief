@@ -1,0 +1,18 @@
+{
+  "component": "EthBondDepository-2",
+  "main_contract": "EthBondDepository",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaa6c3a59c5cac339189927561db29b71642bd119",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

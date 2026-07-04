@@ -1,15 +1,15 @@
 {
   "component": "MaverickToken",
   "main_contract": "MaverickToken",
-  "source_file_count": 23,
+  "source_file_count": 19,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x64b88c73a5dfa78d1713fe1b4c69a22d7e0faaa7",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd691d9a68c887bdf34da8c36f63487333acfd103",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

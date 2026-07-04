@@ -1744,7 +1744,6 @@ contract StratX is Ownable, ReentrancyGuard, Pausable {
     address[] public token1ToEarnedPath;
 
     constructor(
-        address _govAddress,
         address _autoFarmAddress,
         address _AUTOAddress,
         bool _isCAKEStaking,
@@ -1757,7 +1756,7 @@ contract StratX is Ownable, ReentrancyGuard, Pausable {
         address _earnedAddress,
         address _uniRouterAddress
     ) public {
-        govAddress = _govAddress;
+        govAddress = msg.sender;
         autoFarmAddress = _autoFarmAddress;
         AUTOAddress = _AUTOAddress;
 
@@ -1827,24 +1826,26 @@ contract StratX is Ownable, ReentrancyGuard, Pausable {
                 .div(wantLockedTotal)
                 .div(entranceFeeFactorMax);
         }
-        sharesTotal = sharesTotal.add(sharesAdded);
+        sharesTotal += sharesAdded;
 
         if (isAutoComp) {
             _farm();
         } else {
-            wantLockedTotal = wantLockedTotal.add(_wantAmt);
+            wantLockedTotal += _wantAmt;
         }
 
         return sharesAdded;
     }
 
+
     function farm() public nonReentrant {
         _farm();
     }
 
+
     function _farm() internal {
         uint256 wantAmt = IERC20(wantAddress).balanceOf(address(this));
-        wantLockedTotal = wantLockedTotal.add(wantAmt);
+        wantLockedTotal += wantAmt;
         IERC20(wantAddress).safeIncreaseAllowance(farmContractAddress, wantAmt);
 
         if (isCAKEStaking) {
@@ -1883,8 +1884,8 @@ contract StratX is Ownable, ReentrancyGuard, Pausable {
         if (sharesRemoved > sharesTotal) {
             sharesRemoved = sharesTotal;
         }
-        sharesTotal = sharesTotal.sub(sharesRemoved);
-        wantLockedTotal = wantLockedTotal.sub(_wantAmt);
+        sharesTotal -= sharesRemoved;
+        wantLockedTotal -= _wantAmt;
 
         IERC20(wantAddress).safeTransfer(autoFarmAddress, _wantAmt);
 
@@ -2074,7 +2075,6 @@ contract StratX is Ownable, ReentrancyGuard, Pausable {
     function setEntranceFeeFactor(uint256 _entranceFeeFactor) public {
         require(msg.sender == govAddress, "Not authorised");
         require(_entranceFeeFactor > entranceFeeFactorLL, "!safe - too low");
-        require(_entranceFeeFactor <= entranceFeeFactorMax, "!safe - too high");
         entranceFeeFactor = _entranceFeeFactor;
     }
 

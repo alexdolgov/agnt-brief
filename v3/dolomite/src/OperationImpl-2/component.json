@@ -1,0 +1,18 @@
+{
+  "component": "OperationImpl-2",
+  "main_contract": "OperationImpl",
+  "source_file_count": 35,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8007d1ad7d73a9ef93c55b3afb21861bcb32e02c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

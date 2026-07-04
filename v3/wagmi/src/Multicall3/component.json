@@ -2,10 +2,26 @@
   "component": "Multicall3",
   "main_contract": "Multicall3",
   "source_file_count": 1,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd8759fb05c69b940a8c7da8836d167e659a566e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfe9409e7d74d4512a8bb5576937d990fcd8abc52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,

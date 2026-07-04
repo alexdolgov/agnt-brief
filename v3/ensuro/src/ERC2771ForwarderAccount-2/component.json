@@ -1,0 +1,18 @@
+{
+  "component": "ERC2771ForwarderAccount-2",
+  "main_contract": "ERC2771ForwarderAccount",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xbb89e74f06c0463b6ff5b479eabe00dc8299a106",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

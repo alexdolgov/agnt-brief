@@ -1,33 +1,53 @@
 # lockon — deployments
 
-32 verified deployment(s) across 18 component(s).
+55 verified deployment(s) across 27 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x018afbf49356138d7ccf465f3f3420e233925e82` | BasicIssuanceModule | impl | live | yes |
-| arbitrum | `0x1f1a16c32982829bc77c9796ce862c628fb37308` | ZeroExApiAdapter | impl | inactive | no |
+| arbitrum | `0x018afbf49356138d7ccf465f3f3420e233925e82` | BasicIssuanceModule-3 | impl | live | yes |
+| arbitrum | `0x1f1a16c32982829bc77c9796ce862c628fb37308` | ZeroExApiAdapter-2 | impl | inactive | no |
 | arbitrum | `0x27e19358642b51363c9e63ffbea5b9f460c604ae` | IntegrationRegistry | impl | inactive | no |
-| arbitrum | `0x28ccf520dc09f1062534806f868625a20e8f4f23` | ZeroExApiAdapter | impl | inactive | no |
+| arbitrum | `0x28ccf520dc09f1062534806f868625a20e8f4f23` | ZeroExApiAdapter-2 | impl | inactive | no |
 | arbitrum | `0x36a9220ab15dfd0a12035a38aca9f6600ff82820` | MockToken | impl | inactive | no |
 | arbitrum | `0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a` | ERC1967Proxy | proxy | live | yes |
 | arbitrum | `0x4951133b9429ac86ea894b428ff6409b08a026a6` | TradeModule | impl | live | yes |
 | arbitrum | `0x555962ce3093b15fac8d37c2a49935c96991f2a0` | ERC1967Proxy-2 | proxy | live | yes |
 | arbitrum | `0x5a0c15343702d070ab780e12f94fbde1f00795b8` | PositionComponentCorrectionModule | impl | inactive | no |
 | arbitrum | `0x781f8726f86c94ad13522f7a1ad2ac0b562cc7c5` | PositionComponentCorrectionModule | impl | inactive | no |
+| arbitrum | `0x7eea5246d5fc47d97d04ce9fa23640d821b86c79` | ExchangeIssuanceZeroEx-2 | impl | live | yes |
 | arbitrum | `0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d` | ERC1967Proxy-3 | proxy | live | yes |
+| arbitrum | `0x8286808afd208be479abfa2103db443580dfeb23` | Controller | impl | inactive | no |
+| arbitrum | `0x8ca32fe0c266ef97d000db0ec3758e7f9665a585` | ExchangeIssuanceZeroEx-2 | impl | live | yes |
+| arbitrum | `0x9583600ba5ad5ba86c1895a8cec332b357648550` | ZeroExApiV2Adapter | impl | inactive | no |
 | arbitrum | `0x97bd109b2353966221560cb86513822fb512b633` | IntegrationRegistry | impl | inactive | no |
 | arbitrum | `0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74` | ERC1967Proxy-4 | proxy | live | yes |
+| arbitrum | `0x99871ad98beb57c0a9e304bf298aab17b3b17278` | ModuleBase | impl | live | yes |
+| arbitrum | `0xa36c2b06afc96ffd52d148ed6acbb9fe2ab864be` | Controller | impl | inactive | no |
 | arbitrum | `0xb350d9b5566654a3221981e861544d8d843069b2` | MockToken | impl | inactive | no |
+| arbitrum | `0xb70e5889d2b361fae3ac72cff7bf5c6974fdf3d6` | ZeroExApiV2Adapter | impl | inactive | no |
+| arbitrum | `0xc2031d4df2c22f1af4a5166651693cf7dbbe1b02` | PositionUnitAdjusterModule | impl | inactive | no |
 | arbitrum | `0xcaf7e16cddf4713c8d6d5749c9cc6a150af799e3` | PositionComponentCorrectionModule | impl | inactive | no |
-| arbitrum | `0xcc058995b83dfc02137f299b01547165452e6723` | BasicIssuanceModule | impl | inactive | yes |
+| arbitrum | `0xcc058995b83dfc02137f299b01547165452e6723` | BasicIssuanceModule-3 | impl | inactive | yes |
+| arbitrum | `0xe1093e1a3f09170fda78c7011b82eacb6b05b7eb` | ModuleBase | impl | live | yes |
 | arbitrum | `0xebe11a8cef9f0502797c6a5781ccfbca8c56bcd3` | TradeModule | impl | live | yes |
 | arbitrum | `0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99` | ERC1967Proxy-5 | proxy | live | yes |
 | polygon | `0x153e739b8823b277844ad885a30ac5bd9dfb6e83` | Controller | impl | inactive | no |
+| polygon | `0x2ce6c32682d5793c7a7db4273defe0ba679f34b0` | BasicIssuanceModule | impl | inactive | no |
+| polygon | `0x3b2a94ad65d6091672df6144f7ef48193218b64e` | BasicIssuanceModule-4 | impl | inactive | no |
 | polygon | `0x40c20fb57113ebe4f332c311a2b0257cdbdbac14` | ExchangeIssuanceZeroEx | impl | inactive | no |
 | polygon | `0x44ace3accfb7ec2150a9b5a0ca747e65f2a408c4` | ExchangeIssuanceZeroEx-2 | impl | live | yes |
+| polygon | `0x4a4ebd6f484416414729212d4fab23ece45cade4` | BasicIssuanceModule-2 | impl | inactive | no |
 | polygon | `0x63005bb8daa3774af731f7f8b0d7a8790eb35f50` | PositionUnitAdjusterModule | impl | inactive | no |
 | polygon | `0x6b5842a517089e58424a0b1650c90812ae45d5b5` | ZeroExApiV2Adapter | impl | inactive | no |
+| polygon | `0x6bc6762040adc7cb581b20cf09b44586a567cc89` | IntegrationRegistry-2 | impl | inactive | no |
+| polygon | `0x6cc11e2de10f7539bfd38b49549957a9081c3b01` | TradeModule-2 | impl | live | no |
+| polygon | `0x6f0790c97379d30cd02e8b3688ca6655a14cb8ed` | BasicIssuanceModule-2 | impl | live | no |
+| polygon | `0x78bc29f1d7706acf6a6460b92fcba931e8c846dc` | BasicIssuanceModule-5 | impl | inactive | no |
+| polygon | `0x8868c2762d86d9636a3fa17df54c814232bcabb9` | PositionComponentCorrectionModule | impl | inactive | no |
+| polygon | `0x8a11c64827e2f62a81e392af46640f9947a929e5` | PositionComponentCorrectionModule-2 | impl | inactive | no |
 | polygon | `0x8c2e0399291d6225517a873de04ab92c2c95f06b` | ModuleBase | impl | live | yes |
+| polygon | `0x8d93a0a8fd3fb6edcd37f51215d6e8ae9b4320c1` | ZeroExApiAdapter | impl | inactive | no |
+| polygon | `0x9a462036285d38a84ad8a45f010ad42719b041ba` | PositionComponentCorrectionModule-3 | impl | inactive | no |
 | polygon | `0xa186701e71c46f898db74ee3dc70ddbba5823cb3` | ZeroExApiV2Adapter | impl | inactive | no |
 | polygon | `0xa2e9af75241a71ea77ffccfa2da37f4eb1e83763` | ExchangeIssuanceZeroEx | impl | inactive | no |
 | polygon | `0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252` | SetToken | impl | live | no |
@@ -35,31 +55,7 @@
 | polygon | `0xbe9a09dff5aef8d7411d799bbbaee2e471e30f63` | SetToken | impl | live | no |
 | polygon | `0xd32dfefd9d00f772db460a3b542f0a736d80662f` | SetToken | impl | live | no |
 | polygon | `0xdbf3204ecf63c26c06685140edffb2172079f058` | ExchangeIssuanceZeroEx | impl | live | no |
+| polygon | `0xe65f1a06864728be868d7828d242be7bf437309b` | ZeroExApiAdapter | impl | inactive | no |
+| polygon | `0xe6f4a718ded6722baba16caa26e844459dcef262` | BasicIssuanceModule | impl | inactive | no |
 | polygon | `0xe9eecdc587535ba2b3e18e262470850733eea18d` | ExchangeIssuanceZeroEx | impl | inactive | no |
-
-## Source unavailable (23)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x7eea5246d5fc47d97d04ce9fa23640d821b86c79`
-- arbitrum `0x8286808afd208be479abfa2103db443580dfeb23`
-- arbitrum `0x8ca32fe0c266ef97d000db0ec3758e7f9665a585`
-- arbitrum `0x9583600ba5ad5ba86c1895a8cec332b357648550`
-- arbitrum `0x99871ad98beb57c0a9e304bf298aab17b3b17278`
-- arbitrum `0xa36c2b06afc96ffd52d148ed6acbb9fe2ab864be`
-- arbitrum `0xb70e5889d2b361fae3ac72cff7bf5c6974fdf3d6`
-- arbitrum `0xc2031d4df2c22f1af4a5166651693cf7dbbe1b02`
-- arbitrum `0xe1093e1a3f09170fda78c7011b82eacb6b05b7eb`
-- polygon `0x2ce6c32682d5793c7a7db4273defe0ba679f34b0`
-- polygon `0x3b2a94ad65d6091672df6144f7ef48193218b64e`
-- polygon `0x4a4ebd6f484416414729212d4fab23ece45cade4`
-- polygon `0x6bc6762040adc7cb581b20cf09b44586a567cc89`
-- polygon `0x6cc11e2de10f7539bfd38b49549957a9081c3b01`
-- polygon `0x6f0790c97379d30cd02e8b3688ca6655a14cb8ed`
-- polygon `0x78bc29f1d7706acf6a6460b92fcba931e8c846dc`
-- polygon `0x8868c2762d86d9636a3fa17df54c814232bcabb9`
-- polygon `0x8a11c64827e2f62a81e392af46640f9947a929e5`
-- polygon `0x8d93a0a8fd3fb6edcd37f51215d6e8ae9b4320c1`
-- polygon `0x9a462036285d38a84ad8a45f010ad42719b041ba`
-- polygon `0xe65f1a06864728be868d7828d242be7bf437309b`
-- polygon `0xe6f4a718ded6722baba16caa26e844459dcef262`
-- polygon `0xec45d1372963a8c154357a762f7e1cd35dea9f24`
+| polygon | `0xec45d1372963a8c154357a762f7e1cd35dea9f24` | MockToken | impl | inactive | no |

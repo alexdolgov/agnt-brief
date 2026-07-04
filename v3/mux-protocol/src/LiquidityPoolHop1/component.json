@@ -2,12 +2,20 @@
   "component": "LiquidityPoolHop1",
   "main_contract": "LiquidityPoolHop1",
   "source_file_count": 24,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/mux-world/mux-protocol/blob/main/audit/Certik-Audit-20220601.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x973db3142aa601ef11c1c8148e6ea8e7a4ee6b07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

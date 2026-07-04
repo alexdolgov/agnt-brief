@@ -2,7 +2,7 @@
   "component": "AerodromeDestinationVault",
   "main_contract": "AerodromeDestinationVault",
   "source_file_count": 75,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -37,6 +37,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdbd14969b9313e5bfdfed2c7a29e813e6f02c627",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

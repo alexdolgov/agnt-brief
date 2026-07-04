@@ -1,23 +1,47 @@
 {
   "component": "RadiantLendingMarket",
   "main_contract": "RadiantLendingMarket",
-  "source_file_count": 1,
-  "deployment_count": 2,
+  "source_file_count": 17,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x41e5585496c6e43d9fd548b5f88fc2d90d67ae38",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6365632c91e53b7f96f53722aba1e17aadf973aa",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x7d19e0731013ad6f7f5444a4402ef879754f86b8",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcdc0e0a3685311a46ffb67f85cd1ee717e8e645d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5d64926bef21bd772e7d6f89aed16d8c1a93dd66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdffe969cb702e569d0b2329b1ab6949e25d974eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfdfca037fdb3b5dbcbeb35321f773767698b1f54",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

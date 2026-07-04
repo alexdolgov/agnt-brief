@@ -1,20 +1,26 @@
 {
   "component": "RewardController-2",
   "main_contract": "RewardController",
-  "source_file_count": 1,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LayerBank-v1.0.pdf"
-  ],
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x68b30d4c712bb9b629eb79595a6c804e5968eb40",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3f4a6cc5f56db17477e68d87dd7909181f8b97de",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb09301c99b08bf2ea1caf62e6755c18ec3d87101",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedPlasmaVault-2",
+  "main_contract": "WrappedPlasmaVault",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x757e1bb7ade1ee157690b2c2d600a5a87cfb7058",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "V4Quoter-2",
+  "main_contract": "V4Quoter",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x333e3c607b141b18ff6de9f258db6e77fe7491e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "NativeLPToken",
   "main_contract": "NativeLPToken",
   "source_file_count": 26,
-  "deployment_count": 28,
+  "deployment_count": 37,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -226,6 +226,78 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xf2ab5792bd09444c89e0142cfbffd9b192ad049c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x035ed8aafa43fe4c400ceb0a951d1a97f4908a51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x31d29a62cd1c728cbf9236cb0aaabfc8e23e49c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x337ec533b568957af458e10cbfbcbf3d59c935b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa2efe8e37f247cb51c2a48692301335292ccb630",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcdb60a6fe5d0f7e68fb45649a261f078a6aedb1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2271e448674c7f7ef2a3e8e3d9a49af3a46e9c13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xca135c6520dd03f7e25fbb44c63f7b51e5ad86de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82e441fcde323e37530ecb9da300a09add2fb855",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe50ac1132062055d8472c58cb8430b619e5d385e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

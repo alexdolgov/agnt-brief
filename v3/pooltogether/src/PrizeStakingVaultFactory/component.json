@@ -1,15 +1,31 @@
 {
   "component": "PrizeStakingVaultFactory",
   "main_contract": "PrizeStakingVaultFactory",
-  "source_file_count": 15,
-  "deployment_count": 1,
+  "source_file_count": 13,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x48492f83d9e1d848d33a461d49a2071a6fdcc037",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8f11cbfef3c1779b2c1c2c1dcfb20eee4ef18389",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7c4626ecc134ae1dbd46c82bd94ae2469302acf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9468ead4c425deeded5c65723fdc6fce6d3f3f20",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

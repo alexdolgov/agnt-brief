@@ -1,6 +1,6 @@
 # sigma-money — deployments
 
-694 verified deployment(s) across 135 component(s).
+695 verified deployment(s) across 136 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -636,6 +636,7 @@
 | bsc | `0xec69a0c7a75ce2c2360e739787374f258309d363` | ReservePool | impl | live | no |
 | bsc | `0xec6a6a8819528fd36beb973aec82a6bab816c895` | TransparentUpgradeableProxy | impl | live | yes |
 | bsc | `0xecf3417069dbcca333ef42a19e40336ba7465254` | TransparentUpgradeableProxy | impl | live | yes |
+| bsc | `0xed55ff3fcb43249838a04a9707ff2c4b825507ff` | CurveStableSwapNG-2 | impl | live | no |
 | bsc | `0xed724fde00d81b31da8402552d9342ea651956ae` | Gauge | impl | live | yes |
 | bsc | `0xedd876474aa4b4be3bec526bcebdcf9f422f4214` | ListaAutoBuyback | impl | live | no |
 | bsc | `0xeded81513ddbaf004995430559c2c723a9be3c84` | PancakeV3SpotPriceReader | impl | live | no |
@@ -698,8 +699,3 @@
 | bsc | `0xffb02cf9fd850487232feacecd0a32add3917fb0` | VeFunderGaugeFactory | impl | live | yes |
 | bsc | `0xffe3a79423df4916c0876360a687beb703d5074d` | AccessControlUpgradeable | impl | live | no |
 | bsc | `0xffff06181bd1a34e6c965bb36ff3490aa78384ed` | EmptyContract | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xed55ff3fcb43249838a04a9707ff2c4b825507ff`

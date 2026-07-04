@@ -33,10 +33,7 @@ interface ISwapRouter {
      * function ensures that the encoded data contains the correct 'fromAddress' and 'toAddress' (swapData.token), and
      * verifies that these tokens are in the pool.
      */
-    function setSwapRoute(
-        address assetToken,
-        SwapData[] calldata _swapRoute
-    ) external;
+    function setSwapRoute(address assetToken, SwapData[] calldata _swapRoute) external;
 
     /**
      * @notice Swaps the asset token for the quote token.

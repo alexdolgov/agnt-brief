@@ -2,14 +2,22 @@
   "component": "CauldronV3_2-2",
   "main_contract": "CauldronV3_2",
   "source_file_count": 13,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8227965a7f42956549afaec319f4e444aa438df5",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x68f498c230015254aff0e1eb6f85da558dff2362",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb6957806b7fd389323628674bcdfcd61b9cc5e02",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

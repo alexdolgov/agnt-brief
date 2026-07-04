@@ -3,7 +3,6 @@ pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import "../interfaces/IERC20Permit.sol";
-import "../interfaces/IExternalCallAdapter.sol";
 import "../libraries/BytesLib.sol";
 import "../libraries/EncodeSolanaDlnMessage.sol";
 import "./DlnBase.sol";
@@ -11,10 +10,8 @@ import "./DlnSource.sol";
 import "@debridge-finance/debridge-contracts-v1/contracts/libraries/Flags.sol";
 import "../interfaces/IDlnDestination.sol";
 
-
 contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination {
-    using BytesLib for bytes;
-    
+
     /* ========== CONSTANTS ========== */
 
     /// @dev Amount divider to transfer native assets to the Solana network. (evm 18 decimals => solana 8 decimals)
@@ -36,7 +33,6 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
 
     uint256 public maxOrderCountPerBatchEvmUnlock;
     uint256 public maxOrderCountPerBatchSolanaUnlock;
-    address public externalCallAdapter;
 
     /* ========== ENUMS ========== */
 
@@ -68,9 +64,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
 
     event SentOrderUnlock(bytes32 orderId, bytes beneficiary, bytes32 submissionId);
 
-    event SetDlnSourceAddress(uint256 chainIdFrom, bytes dlnSourceAddress, DlnOrderLib.ChainEngine chainEngine);
-
-    event ExternalCallAdapterUpdated(address oldAdapter, address newAdapter);
+    event SetDlnSourceAddress(uint256 chainIdFrom, bytes dlnSourceAddress, ChainEngine chainEngine);
 
     event MaxOrderCountPerBatchEvmUnlockChanged(uint256 oldValue, uint256 newValue);
     event MaxOrderCountPerBatchSolanaUnlockChanged(uint256 oldValue, uint256 newValue);
@@ -80,6 +74,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
     error MismatchTakerAmount();
     error MismatchNativeTakerAmount();
     error WrongToken();
+    error ExternalCallIsBlocked();
     error AllowOnlyForBeneficiary(bytes expectedBeneficiary);
     error UnexpectedBatchSize();
     error MismatchGiveChainId();
@@ -106,42 +101,8 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         bytes calldata _permitEnvelope,
         address _unlockAuthority
     ) external payable nonReentrant whenNotPaused {
-        _fulfillOrder(
-            _permitEnvelope,
-            _order,
-            _fulFillAmount,
-            _orderId,
-            _unlockAuthority,
-            address(0)
-        );
-    }
+        if (_order.externalCall.length > 0) revert ExternalCallIsBlocked();
 
-    function fulfillOrder(
-        DlnOrderLib.Order memory _order,
-        uint256 _fulFillAmount,
-        bytes32 _orderId,
-        bytes calldata _permitEnvelope,
-        address _unlockAuthority,
-        address _externalCallRewardBeneficiary
-    ) external payable nonReentrant whenNotPaused {
-        _fulfillOrder(
-            _permitEnvelope,
-            _order,
-            _fulFillAmount,
-            _orderId,
-            _unlockAuthority,
-            _externalCallRewardBeneficiary
-        );
-    }
-
-    function _fulfillOrder(
-        bytes memory _permitEnvelope,
-        DlnOrderLib.Order memory _order,
-        uint256 _fulFillAmount,
-        bytes32 _orderId,
-        address _unlockAuthority,
-        address _externalCallRewardBeneficiary
-    ) internal {
         if (_order.takeChainId != getChainId()) revert WrongChain();
         bytes32 orderId = getOrderId(_order);
         if (orderId != _orderId) revert MismatchedOrderId();
@@ -152,7 +113,6 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         if (
             _order.allowedTakerDst.length > 0 &&
             BytesLib.toAddress(_order.allowedTakerDst, 0) != _unlockAuthority
-
         ) revert Unauthorized();
         // amount that taker need to pay to fulfill order
         uint256 takerAmount = takePatches[orderId] == 0
@@ -161,44 +121,27 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         // extra check that taker paid correct amount;
         if (takerAmount != _fulFillAmount) revert MismatchTakerAmount();
 
-        //Avoid Stack too deep
-        {
-            address takeTokenAddress = _order.takeTokenAddress.toAddress();
-            // Need to send token to call adapter if exist external call
-            address tokenReceiver = _order.externalCall.length > 0
-                ? externalCallAdapter
-                : _order.receiverDst.toAddress();
+        address takeTokenAddress = BytesLib.toAddress(_order.takeTokenAddress, 0);
 
-            if (takeTokenAddress == address(0)) {
-                if (msg.value != takerAmount) revert MismatchNativeTakerAmount();
-                _safeTransferETH(tokenReceiver, takerAmount);
-            }
-            else
-            {
-                _executePermit(takeTokenAddress, _permitEnvelope);
-                _safeTransferFrom(
-                    takeTokenAddress,
-                    msg.sender,
-                    tokenReceiver,
-                    takerAmount
-                );
-            }
+        if (takeTokenAddress == address(0)) {
+            if (msg.value != takerAmount) revert MismatchNativeTakerAmount();
+            _safeTransferETH(BytesLib.toAddress(_order.receiverDst, 0), takerAmount);
+        }
+        else
+        {
+            _executePermit(takeTokenAddress, _permitEnvelope);
+            _safeTransferFrom(
+                takeTokenAddress,
+                msg.sender,
+                BytesLib.toAddress(_order.receiverDst, 0),
+                takerAmount
+            );
         }
         //change order state to FulFilled
         orderState.status = OrderTakeStatus.Fulfilled;
         orderState.takerAddress = _unlockAuthority;
         orderState.giveChainId = _order.giveChainId;
 
-        if (_order.externalCall.length > 0) {
-            IExternalCallAdapter(externalCallAdapter).receiveCall(
-                orderId, 
-                _order.orderAuthorityAddressDst.toAddress(),
-                _order.takeTokenAddress.toAddress(), 
-                takerAmount,
-                _order.externalCall, 
-                _externalCallRewardBeneficiary
-                );
-        }
         emit FulfilledOrder(_order, orderId, msg.sender, _unlockAuthority);
     }
 
@@ -217,7 +160,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         address _beneficiary,
         uint256 _executionFee
     ) external payable nonReentrant whenNotPaused {
-        uint256 giveChainId = _prepareOrderStateForUnlock(_orderId, DlnOrderLib.ChainEngine.EVM);
+        uint256 giveChainId = _prepareOrderStateForUnlock(_orderId, ChainEngine.EVM);
         // encode function that will be called in target chain
         bytes memory claimUnlockMethod = _encodeClaimUnlock(_orderId, _beneficiary);
         //send crosschain message through deBridgeGate
@@ -253,7 +196,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         uint256 giveChainId;
         uint256 length = _orderIds.length;
         for (uint256 i; i < length; ++i) {
-            uint256 currentGiveChainId = _prepareOrderStateForUnlock(_orderIds[i], DlnOrderLib.ChainEngine.EVM);
+            uint256 currentGiveChainId = _prepareOrderStateForUnlock(_orderIds[i], ChainEngine.EVM);
             if (i == 0) {
                 giveChainId = currentGiveChainId;
             }
@@ -310,7 +253,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
             DlnOrderLib.Order memory order = _orders[i];
             bytes32 orderId = getOrderId(order);
             orderIds[i] = orderId;
-            _prepareOrderStateForUnlock(orderId, DlnOrderLib.ChainEngine.SOLANA);
+            _prepareOrderStateForUnlock(orderId, ChainEngine.SOLANA);
 
             if (i == 0) {
                 // pre-cache giveChainId of the first order in a batch to ensure all other orders have the same giveChainId
@@ -390,8 +333,9 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         uint64 _claimUnlockInstructionReward
     ) external payable nonReentrant whenNotPaused {
         _validateSolanaRewards(msg.value, _executionFee, _initWalletIfNeededInstructionReward, _claimUnlockInstructionReward);
+
         bytes32 orderId = getOrderId(_order);
-        uint256 giveChainId = _prepareOrderStateForUnlock(orderId, DlnOrderLib.ChainEngine.SOLANA);
+        uint256 giveChainId = _prepareOrderStateForUnlock(orderId, ChainEngine.SOLANA);
 
         // encode function that will be called in target chain
         bytes32 giveTokenAddress = BytesLib.toBytes32(_order.giveTokenAddress, 0);
@@ -440,13 +384,13 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         uint256 _executionFee
     ) external payable nonReentrant whenNotPaused {
         if (_order.takeChainId != getChainId()) revert WrongChain();
-        if (chainEngines[_order.giveChainId]  != DlnOrderLib.ChainEngine.EVM) revert WrongChain();
+        if (chainEngines[_order.giveChainId]  != ChainEngine.EVM) revert WrongChain();
         bytes32 orderId = getOrderId(_order);
-        if (_order.orderAuthorityAddressDst.toAddress() != msg.sender)
+        if (BytesLib.toAddress(_order.orderAuthorityAddressDst, 0) != msg.sender)
             revert Unauthorized();
 
         if (_order.allowedCancelBeneficiarySrc.length > 0
-            && _order.allowedCancelBeneficiarySrc.toAddress() != _cancelBeneficiary) {
+            && BytesLib.toAddress(_order.allowedCancelBeneficiarySrc, 0) != _cancelBeneficiary) {
             revert AllowOnlyForBeneficiary(_order.allowedCancelBeneficiarySrc);
         }
 
@@ -488,13 +432,13 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
     ) external payable nonReentrant whenNotPaused {
         _validateSolanaRewards(msg.value, _executionFee, _reward1, _reward2);
 
-        if (chainEngines[_order.giveChainId]  != DlnOrderLib.ChainEngine.SOLANA) revert WrongChain();
+        if (chainEngines[_order.giveChainId]  != ChainEngine.SOLANA) revert WrongChain();
         if (_order.takeChainId != getChainId()) revert WrongChain();
         bytes memory solanaSrcProgramId = dlnSourceAddresses[_order.giveChainId];
         if (solanaSrcProgramId.length != SOLANA_ADDRESS_LENGTH) revert WrongChain();
 
         bytes32 orderId = getOrderId(_order);
-        if (_order.orderAuthorityAddressDst.toAddress() != msg.sender)
+        if (BytesLib.toAddress(_order.orderAuthorityAddressDst, 0) != msg.sender)
             revert Unauthorized();
 
         if (_order.allowedCancelBeneficiarySrc.length > 0
@@ -551,7 +495,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
     {
         if (_order.takeChainId != getChainId()) revert WrongChain();
         bytes32 orderId = getOrderId(_order);
-        if (_order.orderAuthorityAddressDst.toAddress() != msg.sender)
+        if (BytesLib.toAddress(_order.orderAuthorityAddressDst, 0) != msg.sender)
             revert Unauthorized();
         if (takePatches[orderId] >= _newSubtrahend) revert WrongArgument();
         if (_order.takeAmount <= _newSubtrahend) revert WrongArgument();
@@ -564,24 +508,16 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
 
     /* ========== ADMIN METHODS ========== */
 
-    function setDlnSourceAddress(uint256 _chainIdFrom, bytes memory _dlnSourceAddress, DlnOrderLib.ChainEngine _chainEngine)
+    function setDlnSourceAddress(uint256 _chainIdFrom, bytes memory _dlnSourceAddress, ChainEngine _chainEngine)
         external
         onlyAdmin
     {
-        if(_chainEngine == DlnOrderLib.ChainEngine.UNDEFINED) revert WrongArgument();
+        if(_chainEngine == ChainEngine.UNDEFINED) revert WrongArgument();
         dlnSourceAddresses[_chainIdFrom] = _dlnSourceAddress;
         chainEngines[_chainIdFrom] = _chainEngine;
         emit SetDlnSourceAddress(_chainIdFrom, _dlnSourceAddress, _chainEngine);
     }
 
-    function setExternalCallAdapter(address _externalCallAdapter)
-        external
-        onlyAdmin
-    {
-        address oldAdapter = externalCallAdapter;
-        externalCallAdapter = _externalCallAdapter;
-        emit ExternalCallAdapterUpdated(oldAdapter, externalCallAdapter);
-    }
 
     function setMaxOrderCountsPerBatch(uint256 _newEvmCount, uint256 _newSolanaCount) external onlyAdmin {
         // Setting and emitting for EVM count
@@ -606,7 +542,7 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
     /// @notice Works only for evm giveChainId
     /// @param _orderId orderId
     /// @return giveChainId
-    function _prepareOrderStateForUnlock(bytes32 _orderId, DlnOrderLib.ChainEngine _chainEngine) internal
+    function _prepareOrderStateForUnlock(bytes32 _orderId, ChainEngine _chainEngine) internal
         returns (uint256) {
         OrderTakeState storage orderState = takeOrders[_orderId];
         if (orderState.status != OrderTakeStatus.Fulfilled) revert IncorrectOrderStatus();
@@ -692,13 +628,13 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
         bytes memory srcAddress = dlnSourceAddresses[_chainIdTo];
         bytes memory autoParams = _encodeAutoParamsTo(_data, _executionFee, _fallbackAddress);
         {
-            DlnOrderLib.ChainEngine _targetEngine = chainEngines[_chainIdTo];
+            ChainEngine _targetEngine = chainEngines[_chainIdTo];
 
-            if (_targetEngine == DlnOrderLib.ChainEngine.EVM ) {
+            if (_targetEngine == ChainEngine.EVM ) {
                 if (srcAddress.length != EVM_ADDRESS_LENGTH) revert WrongAddressLength();
                 if (_fallbackAddress.length != EVM_ADDRESS_LENGTH) revert WrongAddressLength();
             }
-            else if (_targetEngine == DlnOrderLib.ChainEngine.SOLANA ) {
+            else if (_targetEngine == ChainEngine.SOLANA ) {
                 if (srcAddress.length != SOLANA_ADDRESS_LENGTH) revert WrongAddressLength();
                 if (_fallbackAddress.length != SOLANA_ADDRESS_LENGTH) revert WrongAddressLength();
             }
@@ -723,6 +659,6 @@ contract DlnDestination is DlnBase, ReentrancyGuardUpgradeable, IDlnDestination 
 
     /// @dev Get this contract's version
     function version() external pure returns (string memory) {
-        return "1.3.0";
+        return "1.2.0";
     }
 }

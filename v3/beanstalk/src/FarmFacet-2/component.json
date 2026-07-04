@@ -1,0 +1,18 @@
+{
+  "component": "FarmFacet-2",
+  "main_contract": "FarmFacet",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6039c602b730f44f418145454a2d954133cbd394",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "WrappedVault-4",
+  "main_contract": "WrappedVault",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3c44c20377e252567d283dc7746d1bea67eb3e66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

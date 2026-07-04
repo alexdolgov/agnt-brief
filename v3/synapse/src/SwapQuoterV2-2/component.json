@@ -1,0 +1,18 @@
+{
+  "component": "SwapQuoterV2-2",
+  "main_contract": "SwapQuoterV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9fbff54b967654b0c76b174d2b95614060dd6b07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "component": "ERC1967Upgrade-5",
+  "main_contract": "ERC1967Upgrade",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_message.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4066d196a423b2b3b8b054f4f40efb47a74e200c",
+      "is_proxy": true,
+      "implementation_address": "0x479ec366ae4ec016ce25b918bdea8f78d4fa5dd8",
+      "liveness": "live"
+    }
+  ]
+}

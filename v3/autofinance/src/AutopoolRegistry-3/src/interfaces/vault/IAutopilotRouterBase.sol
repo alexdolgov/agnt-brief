@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity >=0.8.7;
 
 import { IAutopool } from "src/interfaces/vault/IAutopool.sol";
 import { IMainRewarder } from "src/interfaces/rewarders/IMainRewarder.sol";
@@ -126,22 +126,8 @@ interface IAutopilotRouterBase {
     /// @param recipient Address to claim rewards for.
     function claimAutopoolRewards(IAutopool vault, IMainRewarder rewarder, address recipient) external payable;
 
-    /// @notice Claims rewards on user stake of vault token.
-    /// @param vault IAutopool instance of vault token to claim rewards for.
-    /// @param rewarder Rewarder to claim rewards from.
-    /// @param recipient Address to claim rewards for.
-    /// @param claimExtras Whether to claim for all the rewarders or just the root
-    function claimAutopoolRewards(
-        IAutopool vault,
-        IMainRewarder rewarder,
-        address recipient,
-        bool claimExtras
-    ) external payable;
-
     /// @notice Checks if timestamp is expired. Purpose is to check the execution deadline with the multicall.
     /// @param timestamp Timestamp to check.
     /// @dev throws TimestampTooOld. Payable to allow for multicall.
-    function expiration(
-        uint256 timestamp
-    ) external payable;
+    function expiration(uint256 timestamp) external payable;
 }

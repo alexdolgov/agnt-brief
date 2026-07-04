@@ -13,11 +13,6 @@ struct PositionLiquidity {
     Range range;
 }
 
-struct BurnLiquidity {
-    uint128 liquidity;
-    Range range;
-}
-
 struct SwapPayload {
     bytes payload;
     address router;
@@ -33,8 +28,8 @@ struct Range {
 }
 
 struct Rebalance {
-    PositionLiquidity[] removes;
-    PositionLiquidity[] deposits;
+    PositionLiquidity[] burns;
+    PositionLiquidity[] mints;
     SwapPayload swap;
     uint256 minBurn0;
     uint256 minBurn1;
@@ -56,7 +51,6 @@ struct InitializePayload {
     uint256 init1;
     address manager;
     address[] routers;
-    uint16 burnBuffer;
 }
 
 // #region internal Structs

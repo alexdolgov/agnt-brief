@@ -1,8 +1,8 @@
 {
   "component": "PositionManager-2",
   "main_contract": "PositionManager",
-  "source_file_count": 235,
-  "deployment_count": 1,
+  "source_file_count": 69,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/RingProtocol/v4-periphery/blob/main/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf",
@@ -11,9 +11,33 @@
   ],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3c3ea4b57a46241e54610e5f022e5c45859a1017",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7a4a5c919ae2541aed11041a1aeee68f1287f95b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd88f38f930b7952f2db2432cb002e7abbf3dd869",
+      "is_proxy": true,
+      "implementation_address": "0xd88f38f930b7952f2db2432cb002e7abbf3dd869",
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb74b1f14d2754acfcbbe1a221023a5cf50ab8acd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x4ad2f4cca2682cbb5b950d660dd458a1d3f1baad",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

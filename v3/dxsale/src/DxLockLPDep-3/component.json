@@ -1,0 +1,18 @@
+{
+  "component": "DxLockLPDep-3",
+  "main_contract": "DxLockLPDep",
+  "source_file_count": 3,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6fcc2e4efb4e05ddfc2154abe209356d5a687666",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

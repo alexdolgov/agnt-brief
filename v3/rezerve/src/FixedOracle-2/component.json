@@ -1,0 +1,18 @@
+{
+  "component": "FixedOracle-2",
+  "main_contract": "FixedOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa26e1e01150abc562323253c109e5b265f7578ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

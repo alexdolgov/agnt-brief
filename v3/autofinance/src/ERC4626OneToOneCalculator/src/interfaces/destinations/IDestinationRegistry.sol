@@ -22,10 +22,7 @@ interface IDestinationRegistry {
      * @param destinationTypes Ones from the destination type whitelist
      * @param targets addresses of the deployed DestinationAdapters, cannot be 0
      */
-    function register(
-        bytes32[] calldata destinationTypes,
-        address[] calldata targets
-    ) external;
+    function register(bytes32[] calldata destinationTypes, address[] calldata targets) external;
 
     /**
      * @notice Replaces an addresses of the given destination types
@@ -33,10 +30,7 @@ interface IDestinationRegistry {
      * @param destinationTypes Ones from the destination type whitelist
      * @param targets addresses of the deployed DestinationAdapters, cannot be 0
      */
-    function replace(
-        bytes32[] calldata destinationTypes,
-        address[] calldata targets
-    ) external;
+    function replace(bytes32[] calldata destinationTypes, address[] calldata targets) external;
 
     /**
      * @notice Removes an addresses of the given pre-registered destination types

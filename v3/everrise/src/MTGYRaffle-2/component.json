@@ -1,0 +1,18 @@
+{
+  "component": "MTGYRaffle-2",
+  "main_contract": "MTGYRaffle",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbd3f48b42407aa5ca75b9e7cf0765b227aca1024",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

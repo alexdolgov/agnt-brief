@@ -1,11 +1,11 @@
 # mcdex — deployments
 
-47 verified deployment(s) across 29 component(s).
+54 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0035f6ca0417cd36eb62764bcbbe163e7d296059` | LibOrderBook2 | impl | live | no |
-| arbitrum | `0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6` | GnosisSafeProxy | proxy | live | no |
+| arbitrum | `0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6` | GnosisSafeProxy-2 | proxy | live | no |
 | arbitrum | `0x11c0c4dd6ce692b2aa2d65da07aa38687f603bd9` | LibGmx | impl | live | no |
 | arbitrum | `0x19b9ecd3fa2dc9272cd815ee05f300534b4f1d8b` | DataStore | impl | live | no |
 | arbitrum | `0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef` | LibOrderBook | impl | live | yes |
@@ -24,6 +24,7 @@
 | arbitrum | `0x67740dddea7a555c30af42536c786133c7e58508` | ProxyAdmin-2 | impl | live | no |
 | arbitrum | `0x6ccece30536b468817a8a56fb6c090dc52d4cc0c` | GmxV2Adapter | impl | live | no |
 | arbitrum | `0x6fded16b69ca396e437af47bdad1d0352e4d2705` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x746ba48fc973596d0077573bda6185ca3bb9c3dc` | MintSwapCanonicalToken-4 | impl | live | no |
 | arbitrum | `0x7f64014cd8fa9309a43c1dd37317ccc2527d1337` | Swapper | impl | live | yes |
 | arbitrum | `0x80c874e50017996106baf6d551ed9b0706e7587b` | RoleStore | impl | live | no |
 | arbitrum | `0x89258cc6220870bc0592c8e67555f16f1a4ab600` | GmxV2Adapter | impl | live | no |
@@ -47,18 +48,13 @@
 | arbitrum | `0xf89adc4e0f3659e9b69aa4f8606176e8fd6b72be` | GmxAdapter | impl | live | no |
 | arbitrum | `0xfe2afaf34b3016dda8cf2df75ded256ddffeb115` | GmxV2Adapter | impl | live | no |
 | avalanche | `0x3d44efa23a531fae02d8daf9ee8daaac61d66475` | LiquidityPoolHop1 | impl | live | yes |
-| avalanche | `0xaf2d365e668baafedcfd256c0fbbe519e594e390` | MintSwapCanonicalToken | impl | live | no |
-| avalanche | `0xde53842f87c95362b2912db5dbba404e7d5ff842` | MintSwapCanonicalToken | impl | live | no |
+| avalanche | `0x8564c77261094abeee6d60a26d40f8dbaf23fc94` | GnosisSafeProxy | proxy | live | no |
+| avalanche | `0xaf2d365e668baafedcfd256c0fbbe519e594e390` | MintSwapCanonicalToken-2 | impl | live | no |
+| avalanche | `0xde53842f87c95362b2912db5dbba404e7d5ff842` | MintSwapCanonicalToken-2 | impl | live | no |
+| bsc | `0x07145ad7c7351c6fe86b6b841fc9bed74eb475a7` | MintSwapCanonicalToken | impl | live | no |
+| bsc | `0x81421a49c2bb3f2f77a666f0686b4db47a26360c` | MintSwapCanonicalToken | impl | live | no |
+| bsc | `0xf234437596b9c90231181a2e80c668c4e5408108` | MintSwapCanonicalToken | impl | live | no |
+| bsc | `0xf67d9ec4f3362589e56ab0dbee448eb7a4964204` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x220a9f0dd581cbc58fcfb907de0454cbf3777f76` | Perpetual | impl | live | no |
-| optimism | `0x0509474f102b5cd3f1f09e1e91feb25938ef0f17` | MintSwapCanonicalToken-2 | impl | live | no |
-
-## Source unavailable (7)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x746ba48fc973596d0077573bda6185ca3bb9c3dc`
-- avalanche `0x8564c77261094abeee6d60a26d40f8dbaf23fc94`
-- bsc `0x07145ad7c7351c6fe86b6b841fc9bed74eb475a7`
-- bsc `0x81421a49c2bb3f2f77a666f0686b4db47a26360c`
-- bsc `0xf234437596b9c90231181a2e80c668c4e5408108`
-- bsc `0xf67d9ec4f3362589e56ab0dbee448eb7a4964204`
-- optimism `0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5`
+| optimism | `0x0509474f102b5cd3f1f09e1e91feb25938ef0f17` | MintSwapCanonicalToken-3 | impl | live | no |
+| optimism | `0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5` | GnosisSafeProxy | proxy | live | no |

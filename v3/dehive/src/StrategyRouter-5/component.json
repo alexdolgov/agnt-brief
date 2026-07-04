@@ -1,0 +1,18 @@
+{
+  "component": "StrategyRouter-5",
+  "main_contract": "StrategyRouter",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xba5d2e9a8f00fbf37608292ad16b772f428db3f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

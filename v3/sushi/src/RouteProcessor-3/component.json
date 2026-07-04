@@ -1,15 +1,23 @@
 {
   "component": "RouteProcessor-3",
   "main_contract": "RouteProcessor",
-  "source_file_count": 14,
-  "deployment_count": 1,
+  "source_file_count": 10,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9c6522117e2ed1fe5bdb72bb0ed5e3f2bde7dbe0",
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x9e4791ad13f14783c7b2a6a7bd8d6ddd1dc95847",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x400d75dab26bbc18d163aea3e83d9ea68f6c1804",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

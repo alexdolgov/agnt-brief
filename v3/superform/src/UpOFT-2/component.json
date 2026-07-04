@@ -1,0 +1,18 @@
+{
+  "component": "UpOFT-2",
+  "main_contract": "UpOFT",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

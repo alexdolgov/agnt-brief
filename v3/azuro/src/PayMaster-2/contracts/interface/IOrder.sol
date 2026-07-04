@@ -57,7 +57,6 @@ interface IOrder {
         uint128[] outcomes;
         uint128 potentialLossLimit;
         uint8 winningOutcomesCount;
-        bytes oracleData;
     }
 
     struct OrderData {

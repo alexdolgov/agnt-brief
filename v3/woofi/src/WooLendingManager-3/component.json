@@ -1,0 +1,18 @@
+{
+  "component": "WooLendingManager-3",
+  "main_contract": "WooLendingManager",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5c7ff24fa7af62bc25ad6747a6193183b4bb7bc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

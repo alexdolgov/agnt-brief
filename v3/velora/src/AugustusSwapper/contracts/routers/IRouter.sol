@@ -14,7 +14,7 @@ interface IRouter {
      */
     function getKey() external pure returns (bytes32);
 
-    event SwappedV3(
+    event Swapped2(
         bytes16 uuid,
         address partner,
         uint256 feePercent,
@@ -27,7 +27,7 @@ interface IRouter {
         uint256 expectedAmount
     );
 
-    event BoughtV3(
+    event Bought2(
         bytes16 uuid,
         address partner,
         uint256 feePercent,
@@ -36,7 +36,6 @@ interface IRouter {
         address indexed srcToken,
         address indexed destToken,
         uint256 srcAmount,
-        uint256 receivedAmount,
-        uint256 expectedAmount
+        uint256 receivedAmount
     );
 }

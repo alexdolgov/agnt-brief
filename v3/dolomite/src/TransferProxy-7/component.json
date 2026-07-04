@@ -1,0 +1,18 @@
+{
+  "component": "TransferProxy-7",
+  "main_contract": "TransferProxy",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe04f884e8bb9868b6013dead84ad5a3b8cb1df5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

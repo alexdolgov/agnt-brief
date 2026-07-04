@@ -1,0 +1,42 @@
+{
+  "component": "SmardexFactory-2",
+  "main_contract": "SmardexFactory",
+  "source_file_count": 27,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9a1e1681f6d59ca051776410465afada6384398f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdd4536dd9636564d891c919416880a3e250f975a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

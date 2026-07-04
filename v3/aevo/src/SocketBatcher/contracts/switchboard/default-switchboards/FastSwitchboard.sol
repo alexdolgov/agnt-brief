@@ -107,13 +107,7 @@ contract FastSwitchboard is SwitchboardBase {
 
         address watcher = signatureVerifier__.recoverSigner(
             keccak256(
-                abi.encode(
-                    address(this),
-                    chainSlug,
-                    packetId_,
-                    proposalCount_,
-                    root_
-                )
+                abi.encode(address(this), chainSlug, packetId_, proposalCount_)
             ),
             signature_
         );

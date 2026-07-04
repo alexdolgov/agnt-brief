@@ -1,0 +1,18 @@
+{
+  "component": "GyroECLPPoolFactory-3",
+  "main_contract": "GyroECLPPoolFactory",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x268e2ee1413d768b6e2dc3f5a4ddc9ae03d9af42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

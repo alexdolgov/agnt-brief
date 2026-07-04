@@ -1,0 +1,18 @@
+{
+  "component": "BankSwapper-4",
+  "main_contract": "BankSwapper",
+  "source_file_count": 63,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa196b8d3b30d8ba929920ca379b8802b1ff6dfad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

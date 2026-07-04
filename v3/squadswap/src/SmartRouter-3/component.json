@@ -1,0 +1,18 @@
+{
+  "component": "SmartRouter-3",
+  "main_contract": "SmartRouter",
+  "source_file_count": 70,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8b0c61843dc450637e88e524666f5fe18ccc727b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

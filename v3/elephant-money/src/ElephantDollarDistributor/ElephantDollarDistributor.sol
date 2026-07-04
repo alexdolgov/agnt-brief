@@ -778,6 +778,10 @@ interface IElephantPool {
 interface IRewardPool {
 
     function credit(uint256 collateralAmount) external; 
+    
+    function sweep() external;
+    
+    function creditBalance() external returns (uint256);
 }
 
 
@@ -792,8 +796,15 @@ contract ElephantPoolDistributor is Whitelist {
         address router;
     }
 
-    event Distribution(
+    event onCredit(
         uint256 amount,
+        uint256 balance,
+        uint256 timestamp
+    );
+    
+    event onDebit(
+        uint256 amount,
+        uint256 balance,
         uint256 timestamp
     );
 
@@ -845,6 +856,8 @@ contract ElephantPoolDistributor is Whitelist {
 
     function credit(uint256 collateralAmount) onlyWhitelisted public {
          creditBalance = creditBalance.add(collateralAmount);
+         
+         emit onCredit(collateralAmount, creditBalance, block.timestamp);
     }
 
     function add(address pool, address token, address tokenRouter)  onlyOwner public  {
@@ -886,6 +899,8 @@ contract ElephantPoolDistributor is Whitelist {
 
         //Update balance
         creditBalance = creditBalance.sub(_payout);
+        
+        emit onDebit(_payout, creditBalance, block.timestamp);
         
         uint length = poolRegistry.length();
         
@@ -953,8 +968,16 @@ contract ElephantDollarDistributor is Whitelist {
     using Address for address;
     using EnumerableSet for EnumerableSet.AddressSet;
 
-    event Distribution(
+    event onCredit(
         uint256 amount,
+        uint256 balance,
+        uint256 timestamp
+    );
+    
+    
+    event onDebit(
+        uint256 amount,
+        uint256 balance,
         uint256 timestamp
     );
 
@@ -997,6 +1020,8 @@ contract ElephantDollarDistributor is Whitelist {
 
     function credit(uint256 collateralAmount) onlyWhitelisted public {
          creditBalance = creditBalance.add(collateralAmount);
+         
+         emit onCredit(collateralAmount,creditBalance, block.timestamp);
     }
 
     function add(address pool) public onlyOwner {
@@ -1040,6 +1065,8 @@ contract ElephantDollarDistributor is Whitelist {
 
         //Update balance
         creditBalance = creditBalance.sub(_payout);
+        
+        emit onDebit(_payout, creditBalance, block.timestamp);
         
         uint length = poolRegistry.length();
         

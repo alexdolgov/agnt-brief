@@ -2,12 +2,36 @@
   "component": "TransparentUpgradeableProxy-2",
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://2491867235-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcC38SHSHMB696ztGk5L9%2Fuploads%2F9HLnqL9xaTELvjjEZJtH%2FBailsec%20Audit%20of%20Team%20Finance%20Staking%20Solution.pdf"
   ],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x80825c93a9e7c9fbf05ee32d629636e4bfb2c9fe",
+      "is_proxy": true,
+      "implementation_address": "0x256c6f9823c9107900a0f35d041247882cb88efd",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x950818800140317e937ccfa7c3427744d57a22fb",
+      "is_proxy": true,
+      "implementation_address": "0x37e7a4d0d21b2a779d9b715c26a1015de5a3541f",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x962f07445ed033f7a8815ec349d9eceb77f5c3c2",
+      "is_proxy": true,
+      "implementation_address": "0x9bad40c58204929b8e20cedadf53469530bb559b",
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

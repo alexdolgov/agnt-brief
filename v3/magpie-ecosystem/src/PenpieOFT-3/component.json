@@ -1,0 +1,18 @@
+{
+  "component": "PenpieOFT-3",
+  "main_contract": "PenpieOFT",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2ac2b254bc18cd4999f64773a966e4f4869c34ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

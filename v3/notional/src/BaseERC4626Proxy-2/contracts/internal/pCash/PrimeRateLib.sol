@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -14,7 +14,6 @@ import {LibStorage} from "../../global/LibStorage.sol";
 import {Constants} from "../../global/Constants.sol";
 import {Deployments} from "../../global/Deployments.sol";
 
-import {FloatingPoint} from "../../math/FloatingPoint.sol";
 import {SafeUint256} from "../../math/SafeUint256.sol";
 import {SafeInt256} from "../../math/SafeInt256.sol";
 
@@ -302,7 +301,8 @@ library PrimeRateLib {
         PrimeRate memory pr,
         int256 primeCashBalance
     ) internal pure returns (int256) {
-        return primeCashBalance.mul(pr.supplyFactor).div(Constants.DOUBLE_SCALAR_PRECISION);
+        int256 result = primeCashBalance.mul(pr.supplyFactor).div(Constants.DOUBLE_SCALAR_PRECISION);
+        return primeCashBalance < 0 ? SafeInt256.min(result, -1) : result;
     }
 
     /// @notice Converts underlying to a prime cash balance (both in internal 8
@@ -311,7 +311,8 @@ library PrimeRateLib {
         PrimeRate memory pr,
         int256 underlyingBalance
     ) internal pure returns (int256) {
-        return underlyingBalance.mul(Constants.DOUBLE_SCALAR_PRECISION).div(pr.supplyFactor);
+        int256 result = underlyingBalance.mul(Constants.DOUBLE_SCALAR_PRECISION).div(pr.supplyFactor);
+        return underlyingBalance < 0 ? SafeInt256.min(result, -1) : result;
     }
 
     function convertDebtStorageToUnderlying(
@@ -457,46 +458,26 @@ library PrimeRateLib {
         );
 
         // This is purely done to fully reconcile off chain accounting with the edge condition where
-        // leveraged vaults lend at zero interest.
+        // leveraged vaults lend at zero interest. In this code block, no prime debt is created or
+        // destroyed (the totalfCashDebt figure above does not include fCashDebt held in settlement
+        // reserve). Only prime cash held in reserve is burned to repay the settled debt. Excess cash
+        // is sent to the fee reserve.
         int256 fCashDebtInReserve = -int256(s.fCashDebtHeldInSettlementReserve);
         int256 primeCashInReserve = int256(s.primeCashHeldInSettlementReserve);
-        if (fCashDebtInReserve > 0 || primeCashInReserve > 0) {
-            int256 settledPrimeCash = convertFromUnderlying(settlementRate, fCashDebtInReserve);
-            int256 excessCash;
-            if (primeCashInReserve > settledPrimeCash) {
-                excessCash = primeCashInReserve - settledPrimeCash;
+        if (fCashDebtInReserve < 0 || 0 < primeCashInReserve) {
+            int256 settledDebtInPrimeCash = convertFromUnderlying(settlementRate, fCashDebtInReserve);
+            // 0 < primeCashInReserve 0 and settledDebtInPrimeCash < 0
+            int256 excessCash = primeCashInReserve.add(settledDebtInPrimeCash);
+            if (0 < excessCash) {
                 BalanceHandler.incrementFeeToReserve(currencyId, excessCash);
             } 
 
             Emitter.emitSettlefCashDebtInReserve(
-                currencyId, maturity, fCashDebtInReserve, settledPrimeCash, excessCash
+                currencyId, maturity, fCashDebtInReserve, settledDebtInPrimeCash, excessCash
             );
         }
 
         // Clear the storage slot, no longer needed
         delete store[currencyId][maturity];
-    }
-
-    /// @notice Checks whether or not a currency has exceeded its total prime supply cap. Used to
-    /// prevent some listed currencies to be used as collateral above a threshold where liquidations
-    /// can be safely done on chain.
-    /// @dev Called during deposits in AccountAction and BatchAction. Supply caps are not checked
-    /// during settlement, liquidation and withdraws.
-    function checkSupplyCap(PrimeRate memory pr, uint16 currencyId) internal view {
-        (uint256 maxUnderlyingSupply, uint256 totalUnderlyingSupply) = getSupplyCap(pr, currencyId);
-        if (maxUnderlyingSupply == 0) return;
-
-        require(totalUnderlyingSupply <= maxUnderlyingSupply, "Over Supply Cap");
-    }
-
-    function getSupplyCap(
-        PrimeRate memory pr,
-        uint16 currencyId
-    ) internal view returns (uint256 maxUnderlyingSupply, uint256 totalUnderlyingSupply) {
-        PrimeCashFactorsStorage storage s = LibStorage.getPrimeCashFactors()[currencyId];
-        maxUnderlyingSupply = FloatingPoint.unpackFromBits(s.maxUnderlyingSupply);
-        // No potential for overflow due to storage size
-        int256 totalPrimeSupply = int256(uint256(s.totalPrimeSupply));
-        totalUnderlyingSupply = convertToUnderlying(pr, totalPrimeSupply).toUint();
     }
 }

@@ -1,0 +1,18 @@
+{
+  "component": "AppOracle-3",
+  "main_contract": "AppOracle",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x953e6bcccccf01ae151a627b4c77718ac8cfaa34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

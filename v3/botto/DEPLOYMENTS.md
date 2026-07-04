@@ -1,6 +1,6 @@
 # botto — deployments
 
-27 verified deployment(s) across 15 component(s).
+30 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,6 +8,9 @@
 | base | `0x24914cb6bd01e6a0cf2a9c0478e33c25926e6a0c` | OptimismMintableERC20 | impl | live | no |
 | base | `0x49a063cd1ab8b5a2980059bc41d82aaa70c6bd85` | AccessPass | impl | live | no |
 | base | `0x61b4a813fd4e361d40339bca4d8d4e83be78038d` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| base | `0x86b11a71608e75f5e01a84366811f9e6e84f9357` | ProxyAdmin-2 | impl | inactive | no |
+| base | `0x8a7a5991aaf142b43e58253bd6791e240084f0a9` | ProxyAdmin-2 | proxy | inactive | no |
+| base | `0xed39dafd2b2a624fe43a5bbe76e0dae4e4e621ef` | BottoGovernance-2 | impl | inactive | no |
 | ethereum | `0x1660f30e91f6d81061c27883e9cfc446ffdb7159` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0x19cd3998f106ecc40ee7668c19c47e18b491e8a6` | AdminUpgradeabilityProxy | proxy | inactive | no |
 | ethereum | `0x2e251bff6c091a1752e1f9983882f7ade82535da` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
@@ -31,10 +34,3 @@
 | ethereum | `0xed39dafd2b2a624fe43a5bbe76e0dae4e4e621ef` | BottoAirdrop | impl | inactive | no |
 | ethereum | `0xf8515cae6915838543bcd7756f39268ce8f853fd` | BottoLiquidityMiningV2 | proxy | inactive | no |
 | ethereum | `0xff23952e96461883f75108eef0a1da529359b5c3` | ProxyAdmin | impl | inactive | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x86b11a71608e75f5e01a84366811f9e6e84f9357`
-- base `0x8a7a5991aaf142b43e58253bd6791e240084f0a9`
-- base `0xed39dafd2b2a624fe43a5bbe76e0dae4e4e621ef`

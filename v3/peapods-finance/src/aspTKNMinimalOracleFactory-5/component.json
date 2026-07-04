@@ -1,0 +1,26 @@
+{
+  "component": "aspTKNMinimalOracleFactory-5",
+  "main_contract": "aspTKNMinimalOracleFactory",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x938afcd473244c36630169b0b0864a34d24ef794",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x73a97a171af10b3694044df05f05fe2fd1403c1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

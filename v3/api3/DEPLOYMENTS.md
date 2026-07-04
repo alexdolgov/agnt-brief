@@ -1,6 +1,6 @@
 # api3 — deployments
 
-36 verified deployment(s) across 30 component(s).
+37 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -40,8 +40,4 @@
 | ethereum | `0xf84b11c31469706b50e57b398c63d7d13187608f` | LockedApi3 | impl | inactive | no |
 | ethereum | `0xfaef86994a37f1c8b2a5c73648f07dd4eff02baa` | TimelockManager | impl | inactive | no |
 | ethereum | `0xfd32fa2ca22c76dd6e550706ad913fc6ce91c75d` | PublicAllocator-2 | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- mantle `0x776e79d916e49bbdb8fee0f43ff148c2ed3be125`
+| mantle | `0x776e79d916e49bbdb8fee0f43ff148c2ed3be125` | ERC1967Proxy-3 | proxy | live | yes |

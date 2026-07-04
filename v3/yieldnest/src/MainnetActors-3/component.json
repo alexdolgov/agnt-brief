@@ -9,7 +9,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x447aaddf08d6b0d1daf8f0e8a99dc1a2f8d669c5",
+      "address": "0x2ddcee5fb47aaee034aa452db60eb62fcb9429e2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

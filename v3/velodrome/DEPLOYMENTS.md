@@ -1,13 +1,14 @@
 # velodrome — deployments
 
-115 verified deployment(s) across 61 component(s).
+121 verified deployment(s) across 67 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| chain-42220 | `0x21fcc0c421ae0a5f6919535ecf000688a0413b92` | CustomUnstakedFeeModule | impl | inactive | no |
+| chain-42220 | `0x21fcc0c421ae0a5f6919535ecf000688a0413b92` | CustomUnstakedFeeModule-2 | impl | inactive | no |
 | chain-42220 | `0x8d9c67488c154286b9d4ccac6c4cbf30589107a7` | CustomFeeModule | impl | inactive | no |
 | chain-42220 | `0x928bb6c9097d5c9c1eb5e99e71e24e4d773f2be5` | SlipstreamSugar | impl | inactive | no |
-| chain-42220 | `0xb8e41db4be1f6249cec64f48ce4349004442d5c5` | CustomUnstakedFeeModule | impl | inactive | no |
+| chain-42220 | `0xb8e41db4be1f6249cec64f48ce4349004442d5c5` | CustomUnstakedFeeModule-2 | impl | inactive | no |
+| chain-42220 | `0xbcae2d4b4e8e34a4100e69e9c73af8214a89572e` | CustomSwapFeeModule-2 | impl | inactive | no |
 | chain-42220 | `0xee03e08107755bc34412e78377b971ecc7153590` | SlipstreamSugar-2 | impl | live | no |
 | chain-42220 | `0xefc371c64f20a09ead02d5addd59a52dd3d4518e` | UnsupportedProtocol | impl | inactive | no |
 | chain-42220 | `0xfffee309ea5bc4cc591cb37da50182d7a8cb99b2` | DynamicSwapFeeModule | impl | inactive | no |
@@ -19,9 +20,9 @@
 | optimism | `0x08947e304064b3f3ef2b99fca7e549c5fc3f75d4` | PerlinNoise | impl | inactive | no |
 | optimism | `0x0a16cb36b553ba2bb2339f3b206a965e9841d305` | RestrictedTeam | impl | inactive | no |
 | optimism | `0x0b3ba5b030b95e5d861448d77db7bee3403f12d1` | UniversalRouter | impl | inactive | yes |
-| optimism | `0x0b98e071c552c3a70796589c0cc9d4f9a68a7356` | NonfungiblePositionManager | impl | inactive | yes |
+| optimism | `0x0b98e071c552c3a70796589c0cc9d4f9a68a7356` | NonfungiblePositionManager | impl | inactive | no |
 | optimism | `0x1486aaf64e0b45334acfdbef524d49eede11465f` | QuoterV2 | impl | inactive | no |
-| optimism | `0x1d5951dfcd9d7f830a9aed6d127bbeb9f69df276` | NonfungiblePositionManager | impl | inactive | yes |
+| optimism | `0x1d5951dfcd9d7f830a9aed6d127bbeb9f69df276` | NonfungiblePositionManager | impl | inactive | no |
 | optimism | `0x1f3f753a1d3a26f5071647f715a0390650e5078f` | UniversalRouter | impl | inactive | yes |
 | optimism | `0x1f82e10d58aef03dea2e478029fb0387a1cbe989` | VeloGovernor | impl | inactive | no |
 | optimism | `0x209ce04710fb9a5c2147ca0fd30922b5e998e3f5` | CLPool | impl | live | no |
@@ -48,14 +49,15 @@
 | optimism | `0x585af0b397ac42dbef7f18395426bf878634f18d` | SinkConverter | impl | inactive | no |
 | optimism | `0x58f62efb1528d006d22771623c3c3e7953cbfca2` | SinkDrain | impl | inactive | no |
 | optimism | `0x5a41a5b04e9e7cca874bdb7ba51cff4815c289de` | CLGauge | impl | inactive | no |
-| optimism | `0x5a6f7f478cd55904216f1354b2a36d56b826678a` | CustomUnstakedFeeModule-2 | impl | inactive | no |
+| optimism | `0x5a6f7f478cd55904216f1354b2a36d56b826678a` | CustomUnstakedFeeModule-3 | impl | inactive | no |
+| optimism | `0x5a993209065ea74b50e23a378ddb7068189345d0` | CustomUnstakedFeeModule | impl | inactive | no |
 | optimism | `0x5aee5f0e6c2055ebd776db25f48f6c9a68abcdae` | SinkManager | impl | live | yes |
 | optimism | `0x5d467ac70e6141834741664b435c8d60973f5900` | QuoterV2 | impl | inactive | no |
 | optimism | `0x61f42c56555391903da28d35aff8ee1362f1cdde` | CLFactory | impl | live | no |
 | optimism | `0x628ee3400ea249a575ad4422c6f9403f719a678f` | NFTSVG-2 | impl | inactive | no |
 | optimism | `0x629157747ee3a635f9ea1ed37fd0dc7187d45478` | SlipstreamOracle | impl | inactive | no |
 | optimism | `0x629e122d4542f49145d89bad8b4cbe74757cd905` | CLGauge-2 | impl | inactive | no |
-| optimism | `0x6315dc8ffeaf4278f062a3a9137eeee54f3056a3` | MixedRouteQuoterV1 | impl | inactive | no |
+| optimism | `0x6315dc8ffeaf4278f062a3a9137eeee54f3056a3` | MixedRouteQuoterV1-2 | impl | inactive | no |
 | optimism | `0x6666b2df7a328cf775778ebad368f5f13e39ec4c` | Splitter | impl | inactive | no |
 | optimism | `0x6d600cc5f14b81665606ca1985605464ba332bad` | CLGaugeFactory | impl | inactive | no |
 | optimism | `0x6dc9e1c04ee59ed3531d73a72256c0da46d10982` | Minter | impl | live | yes |
@@ -65,7 +67,7 @@
 | optimism | `0x73746410b0dd4526e1fa00d0854e99ba54aefd30` | DelegationLogicLibrary | impl | live | no |
 | optimism | `0x756e7c245c69d351fffbfb88ba234aa395ada8ec` | Reward | impl | inactive | no |
 | optimism | `0x77c839b1381c1792a1d5d5ed06f506b2ff0f4b51` | CLFactory | impl | live | no |
-| optimism | `0x785de6ca0396795cc9af891b7278685d31350521` | NonfungiblePositionManager | impl | inactive | yes |
+| optimism | `0x785de6ca0396795cc9af891b7278685d31350521` | NonfungiblePositionManager | impl | inactive | no |
 | optimism | `0x79bca9bcc19e157cb5f8c5a2f4d6cb951b1f8dce` | BalanceLogicLibrary | impl | live | no |
 | optimism | `0x7e4b995fc2a96f5f95cd5dcbc17f8090fcaa7406` | MixedRouteQuoterV1 | impl | inactive | no |
 | optimism | `0x7ef2701d7e51b925b160a7c93b9d592236dc1d9e` | UniversalRouter | impl | inactive | yes |
@@ -95,12 +97,13 @@
 | optimism | `0xa90991c28550af1ae8d4f03cb9856caffa3aea73` | CustomSwapFeeModule | impl | inactive | no |
 | optimism | `0xa9c319945f706dd1809819321a2e31c9a169e9c1` | CustomSwapFeeModule | impl | inactive | no |
 | optimism | `0xb18cb98a2136fec9e768e4832c37f7a77a9497de` | NonfungibleTokenPositionDescriptor | impl | inactive | no |
-| optimism | `0xb81774eb1a7a44b60032a77766870a66de632777` | MixedRouteQuoterV1 | impl | inactive | no |
+| optimism | `0xb81774eb1a7a44b60032a77766870a66de632777` | MixedRouteQuoterV1-3 | impl | inactive | no |
 | optimism | `0xba81ec1fa19d9741371f8fe816bd3a513c283896` | SugarHelper | impl | inactive | no |
-| optimism | `0xbb5dfe1380333cee4c2eebd7202c80de2256adf4` | NonfungiblePositionManager | proxy | live | yes |
+| optimism | `0xbb5dfe1380333cee4c2eebd7202c80de2256adf4` | NonfungiblePositionManager-3 | proxy | live | yes |
 | optimism | `0xbdd6f9662e904a9176aafcbdded45d076b5170ef` | Trig | impl | inactive | no |
 | optimism | `0xc28ad28853a547556780bebf7847628501a3bcbb` | CLPool | impl | live | no |
 | optimism | `0xc3f14f34ea43943e6fd677a2bdcea65882e67783` | OffchainOracle | impl | inactive | no |
+| optimism | `0xc565f7ba9c56b157da983c4db30e13f5f06c59d9` | CustomUnstakedFeeModule-4 | impl | inactive | no |
 | optimism | `0xc9b828518a8b96fde860f014c1b400f868af648e` | CLGaugeFactory | impl | inactive | no |
 | optimism | `0xcc0bddb707055e04e497ab22a59c2af4391cd12f` | CLPool-3 | impl | live | yes |
 | optimism | `0xccdf417f49a14bc2b23c71684de0304c56dea165` | NonfungibleTokenPositionDescriptor | impl | inactive | no |
@@ -108,8 +111,11 @@
 | optimism | `0xda03dc399af3f1545748243aafbc5050a63b17ec` | SinkDrain | impl | inactive | no |
 | optimism | `0xdce58b0c99a69b4f55ff30af1e6bc1fc71146ec0` | CLGaugeFactory-2 | impl | inactive | no |
 | optimism | `0xdf49ff386344d3b687f56c02d0b1784b19013e25` | VelodromeV2Oracle | impl | inactive | no |
+| optimism | `0xdf9db1c1e6958f67ac972c3d35bd31461b560653` | CustomUnstakedFeeModule | impl | inactive | no |
+| optimism | `0xe07eaacb21f26efe4c64314ceb6258d517eced54` | CustomUnstakedFeeModule | impl | inactive | no |
 | optimism | `0xe0a596c403e854ffb9c828ab4f07eeae04a05d37` | CLPool | impl | live | no |
 | optimism | `0xe92752935ba4bf116b1ca2b9cdd8a3a1f6074eba` | NFTDescriptor | impl | inactive | no |
+| optimism | `0xe9321cec56a525c5ce2cae403dad7fbff5bc6f50` | CustomUnstakedFeeModule | impl | inactive | no |
 | optimism | `0xf1046053aa5682b4f9a81b5481394da16be5ff5a` | Pool | proxy | inactive | no |
 | optimism | `0xf132bdb9573867cd72f2585c338b923f973eb817` | UniversalRouter | impl | live | yes |
 | optimism | `0xf3488ad72641365ceb5a65c472e1b9fee8211b1a` | NFTDescriptor | impl | inactive | no |
@@ -117,15 +123,5 @@
 | optimism | `0xf4c67cdeaab8360370f41514d06e32ccd8aa1d7b` | FactoryRegistry | impl | inactive | no |
 | optimism | `0xfaa0a0c8ba31f79dc621f0d6b10f95589a4301f2` | MixedRouteQuoterV1 | impl | inactive | no |
 | optimism | `0xfaf8fd17d9840595845582fcb047df13f006787d` | VotingEscrow | impl | live | yes |
-| optimism | `0xfb9155b36f90fb105598251a0b1a8653911ff8a5` | NonfungiblePositionManager | impl | inactive | yes |
-| optimism | `0xff79ec912ba114fd7989b9a2b90c65f0c1b44722` | MixedRouteQuoterV1-2 | impl | live | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-42220 `0xbcae2d4b4e8e34a4100e69e9c73af8214a89572e`
-- optimism `0x5a993209065ea74b50e23a378ddb7068189345d0`
-- optimism `0xc565f7ba9c56b157da983c4db30e13f5f06c59d9`
-- optimism `0xdf9db1c1e6958f67ac972c3d35bd31461b560653`
-- optimism `0xe07eaacb21f26efe4c64314ceb6258d517eced54`
-- optimism `0xe9321cec56a525c5ce2cae403dad7fbff5bc6f50`
+| optimism | `0xfb9155b36f90fb105598251a0b1a8653911ff8a5` | NonfungiblePositionManager | impl | inactive | no |
+| optimism | `0xff79ec912ba114fd7989b9a2b90c65f0c1b44722` | MixedRouteQuoterV1-4 | impl | live | no |

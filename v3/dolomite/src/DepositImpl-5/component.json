@@ -1,0 +1,18 @@
+{
+  "component": "DepositImpl-5",
+  "main_contract": "DepositImpl",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf884b50a1d0d1ffd96fd8ab9e4d1c0d8d0803a33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

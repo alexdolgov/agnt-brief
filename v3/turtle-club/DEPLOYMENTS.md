@@ -1,6 +1,6 @@
 # turtle-club — deployments
 
-1889 verified deployment(s) across 562 component(s).
+1921 verified deployment(s) across 630 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -33,6 +33,7 @@
 | avalanche | `0x2c4ea5a5cbe68d2e88e4e61d7b0632aac4305c96` | BIFKN314Oracle | impl | unknown | no |
 | avalanche | `0x2e3ac2e6bcfcfb120d3defa69bbf57025be536fb` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x301946ca3aee999441070816b1d10e9ee437cd6e` | BIFKN314 | impl | live | no |
+| avalanche | `0x3048925b3ea5a8c12eecccb8810f5f7544db54af` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | avalanche | `0x30fb915258d844e9dc420b2c3aa97420aea16db7` | Oracle | impl | live | no |
 | avalanche | `0x3155a8f74f8618ebfdf4e04b40e86e5a51d56cfe` | TwapGGP | impl | live | no |
 | avalanche | `0x317828cbe7ac8707743bae02a2bab8219aea4573` | BIFKNChefV2 | impl | unknown | no |
@@ -53,6 +54,7 @@
 | avalanche | `0x430ddec0dcb2b1505644d3d1f20bcb0e88ab2f46` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0x439776d3786719e1243b628ef05e905679374a5f` | Staking-2 | impl | live | no |
 | avalanche | `0x43b6177137a87c2a66905f38b9db796a9af30ddf` | BIFKNRewarder | impl | unknown | no |
+| avalanche | `0x4559605e3003fda8c059e14af4f16ba9a004335a` | StreamFactoryProxy | proxy | live | no |
 | avalanche | `0x463a7e39898c7c8aa893d62fa27da5057ac75e9a` | BIFKN314Mintable | impl | unknown | no |
 | avalanche | `0x472e8266f564d52cba41e50817e3d2b63df56238` | WithdrawQueue | impl | unknown | no |
 | avalanche | `0x485ea0d10774b0250c66b999763f3ce32dd6ed82` | BIFKN314WrapperMintable | impl | live | no |
@@ -67,7 +69,7 @@
 | avalanche | `0x518a8d2929ff2b2650a42852d54d8669d76715b0` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x52d370e60c8220497da6abff36bb2587a31203b6` | BurstToken | impl | live | no |
 | avalanche | `0x52e44b858f6c068e02d8d2b12f62a66a16e119ad` | BIFKN314WrapperMintable | impl | live | no |
-| avalanche | `0x5313c309cd469b751ad3947568d65d4a70b247cf` | ProxyAdmin-3 | impl | live | no |
+| avalanche | `0x5313c309cd469b751ad3947568d65d4a70b247cf` | ProxyAdmin-4 | impl | live | no |
 | avalanche | `0x5410bbf364dcd135d63cccbefcb5e1a61f15c0b6` | BurstToken | impl | unknown | no |
 | avalanche | `0x55eadf68ab32c4f782828148b465a76c54bd8a16` | WithdrawQueue | impl | live | no |
 | avalanche | `0x576d98d26419c5ce9595833403f64d919eca7323` | TokenggAVAX | impl | live | no |
@@ -89,15 +91,19 @@
 | avalanche | `0x6364839853394084936042c4dc011afe783b8941` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0x6476a72282ea701748f56dcfb8a9ffa919bb286c` | Storage | impl | live | no |
 | avalanche | `0x65fcc099643919184946e844ca484f6988e053f0` | BIFKN314Mintable | impl | live | no |
+| avalanche | `0x662e5efb6b31c5e0a130926dd3c2b78b1678bd08` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | avalanche | `0x666a53d7025136be4aa651af20fc5245ff2d1909` | BIFKN314 | impl | live | no |
+| avalanche | `0x66fd8de541c0594b4dccdfc13bf3a390e50d3afd` | StreamFactory-3 | impl | live | no |
+| avalanche | `0x67e718f47db8dfa3a4b168c8761835f37b9ba3f0` | Stream | impl | live | no |
 | avalanche | `0x69260b9483f9871ca57f81a90d91e2f96c2cd11d` | TokenGGP | impl | live | no |
 | avalanche | `0x69e852291ae462abb2fd708d81f4a6a34a87143b` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0x6aba46fed16d4415ae741f858da7e4975dd788eb` | BIFKN314 | impl | live | no |
-| avalanche | `0x6b37756df77a3798fd4f1476ef48c62be7e5aaf8` | TransparentUpgradeableProxy-33 | proxy | live | no |
+| avalanche | `0x6b37756df77a3798fd4f1476ef48c62be7e5aaf8` | TransparentUpgradeableProxy-34 | proxy | live | no |
 | avalanche | `0x6c0a2976cd2861cbd0d466bcfef5ac0c64b05e98` | BurstToken | impl | unknown | no |
 | avalanche | `0x6c5d3169b811cc0d40b13d3bf92744985e5f05a2` | BIFKN314WrapperMintable | impl | live | no |
+| avalanche | `0x6e22a62e683da5146c982749c9242f6ee5fce86e` | AccessManagerUpgradeable-3 | impl | live | no |
 | avalanche | `0x6e33f505428bfdd206a3584975a330f5ea36d041` | BIFKNRewarder | impl | unknown | no |
-| avalanche | `0x6e8fd36d51d159209054dadda7f87aa4e1aed940` | ProxyAdmin-4 | impl | live | no |
+| avalanche | `0x6e8fd36d51d159209054dadda7f87aa4e1aed940` | ProxyAdmin | impl | live | no |
 | avalanche | `0x709d667c0f7cb42e6099b1a2b2b71409086315cc` | ERC1967Proxy-16 | proxy | live | no |
 | avalanche | `0x70e5e1a266a151403a31673c7fc2163f4171d058` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x70fd1a4419cd4436e4d44744c09f09a743fd1b65` | ProtocolDAO | impl | live | no |
@@ -116,6 +122,7 @@
 | avalanche | `0x7a212fb6b84461cf4f889cab42ff9e856db9a6dc` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | avalanche | `0x7d84168f0037fff3064bb9e933868d94b74332b0` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x7e41260fc1946826a30a2427c7232e3240811b5d` | BIFKN314WrapperMintable | impl | live | no |
+| avalanche | `0x7e71e483986b1e87d2c871595201fab9e3ee4813` | ERC1967Proxy | proxy | live | no |
 | avalanche | `0x7fff419c562dd8b3cf16c335a01cdb37ea1b6a3b` | MultisigManager | impl | live | no |
 | avalanche | `0x80108981f046846b97ab14a3e1b89adf0d8b89e9` | BIFKN314 | impl | live | no |
 | avalanche | `0x812f7ebedc98f57ab54966ebb2ec017a4ac45248` | BIFKNRewarder | impl | unknown | no |
@@ -131,6 +138,7 @@
 | avalanche | `0x88db874870da9fc77ed4a327577f8728b69d97f3` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x8a2de3ccc35888bbdba2650cf10417b2089ac366` | TransparentUpgradeableProxy-10 | impl | unknown | no |
 | avalanche | `0x8ab6a068cd1e5fb8be5b7225275a94900dc4aa02` | BIFKN314Mintable | impl | live | no |
+| avalanche | `0x8ade2c3c04731d382a29d871d67296e15b1d591b` | ERC1967Proxy | proxy | live | no |
 | avalanche | `0x8b85ca6e43f5b057793fb7567b4b4667dff33d0b` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | avalanche | `0x8bb1e4fb686020363c55755cc0d2dec36d324bed` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x8c05d78066431c3b11bbfb6f3546fd3f1396115c` | MinipoolStreamliner | impl | live | no |
@@ -138,10 +146,12 @@
 | avalanche | `0x8df656ef83be5e4d7836b6ef7777c425493cd581` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x8e02a1e04c8eebbc08fdeb66bdff172facf65d96` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x9189d18f453b1ec1f02e40a8e3711334f9ea210b` | Ocyticus | impl | live | no |
+| avalanche | `0x9484d5da62664d65744de5d2c148c0ee89416c71` | ProxyAdmin | impl | live | no |
 | avalanche | `0x958704931f5a1dbb6df3c548ed68b9161f486a92` | BIFKN314 | impl | live | no |
 | avalanche | `0x96a97d36fc007075e300399da892f5cedfdab0f0` | BIFKN314Factory | impl | live | no |
 | avalanche | `0x978f58455318c7a0ffa14216d62760b4c8a7e951` | BIFKN314Wrapper | impl | live | no |
 | avalanche | `0x982c4710a8db96b973d3f7edb4193f4e2bda4418` | BIFKNRewarder | impl | unknown | no |
+| avalanche | `0x9946e68490d71fe976951e360f295c4cf8531d00` | Staking-3 | impl | live | no |
 | avalanche | `0x9a25d82d48766f72abef1ebb3f3225c05af70736` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0x9a78ecab35d50526242ca9bbbb212e9b5f0bb340` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0x9af107a2d06ef9263c27a9f0a536d8a2805d697e` | BIFKN314Mintable | impl | live | no |
@@ -162,7 +172,7 @@
 | avalanche | `0xa6d21c577c218db78f7911019009cde51d11a682` | BIFKN314RouterV2 | impl | unknown | no |
 | avalanche | `0xaa8fd06cc3f1059b6d35870bbf625c1bac7c1b1d` | RewardsPool | impl | live | no |
 | avalanche | `0xaaab9d12a30504559b0c5a9a5977fee4a6081c6b` | EmissionsToken | impl | live | no |
-| avalanche | `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f` | TransparentUpgradeableProxy-34 | proxy | live | no |
+| avalanche | `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f` | TransparentUpgradeableProxy-35 | proxy | live | no |
 | avalanche | `0xab935686c63933d56a04491aa4623eec430d1ad6` | ERC1967Proxy-5 | impl | unknown | no |
 | avalanche | `0xabfbfed6fa208cf637b1078399abf5b37f345e9a` | ERC1967Proxy | impl | unknown | no |
 | avalanche | `0xad22037f1371741fb01bc3ef42cd226f978bc71d` | BIFKN314Factory | impl | live | no |
@@ -180,9 +190,11 @@
 | avalanche | `0xb83ad9bf9ae8841ff1e0ec37cbf83d4c5d13a903` | ERC1967Proxy-5 | proxy | live | no |
 | avalanche | `0xb84fa022c7fe1ce3a1f94c49f2f13236c3d1ed08` | MinipoolManager | impl | live | no |
 | avalanche | `0xb86490dc4897e72ce029919992040122ba0a2b6d` | ERC1967Proxy-5 | impl | unknown | no |
+| avalanche | `0xb893c8d7000e0408eb7d168152ec7fefdd0d25e3` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | avalanche | `0xb91b66dc436aeb6bbbd2fa74150f01e185f463d1` | ERC1967Proxy-5 | impl | live | no |
 | avalanche | `0xbb5deb03b4cd369b713428def5d389f969efff66` | BurstToken | impl | unknown | no |
 | avalanche | `0xbc47f3bd40635489dbe77600d21c19fe4a09890b` | BIFKN314 | impl | live | no |
+| avalanche | `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190` | ProxyAdmin | impl | live | no |
 | avalanche | `0xbc74a3c24d8aa980445adc889577e29089c07cdd` | ERC1967Proxy-17 | proxy | live | no |
 | avalanche | `0xbe2ff43bd8cb2454f40cbcf611fddb3dabfc545b` | BIFKN314Mintable | impl | live | no |
 | avalanche | `0xbf2b8657d7a44acb5832689d37d63667bc97789e` | BIFKN314WrapperMintable | impl | live | no |
@@ -192,6 +204,7 @@
 | avalanche | `0xc05d6afa9243b624b8f25b453feff4990be0d70a` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xc158d2d31a854644ac7b1ff13fcb1c1def67194f` | BIFKNRewarder-2 | impl | unknown | no |
 | avalanche | `0xc300bc9b4b690ba7a182126299a0618ece268ee7` | MinipoolManager | impl | live | no |
+| avalanche | `0xc331d7843e92d3b6cc1e448d15fe4fd24c3a9f8b` | ERC1967Proxy | proxy | live | no |
 | avalanche | `0xc36a0b1c3a2313275978d5db1d83fd13117da63d` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xc52749abd40c2d8182e25ca93fc6e991bff37727` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xc6f99208c411ca9cee00d6448711e09a1d05d89b` | BIFKN314 | impl | live | no |
@@ -208,6 +221,8 @@
 | avalanche | `0xd153feb87aaec061b6155d58477e33b2608d1e92` | BIFKN314Wrapper | impl | live | no |
 | avalanche | `0xd189d2a687238efe5ab4ec41a6e0952b3dd8daac` | ApexPremier | impl | unknown | no |
 | avalanche | `0xd45cb6f5aca41afaaaebdbe4efba49c1bc41e6ba` | Vault-2 | impl | live | no |
+| avalanche | `0xd49d18fe6cfa45396e2d4c27b216ccee6dbfb6e7` | ERC1967Proxy | proxy | live | no |
+| avalanche | `0xd5e4ac485f09ee907f5dd8b9a9935a09875f7bfb` | AccessManagerUpgradeable-4 | proxy | live | no |
 | avalanche | `0xd714f26e6d0bb8de4e70e00f77932fca77fba4ec` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0xd74fd3133bdcac78c437764654343131a7eab9e7` | BIFKN314 | impl | live | no |
 | avalanche | `0xd7c8f6a6b4f2389464aaabdf57bd864f9dcbd07b` | AssetLocker | proxy | live | no |
@@ -217,11 +232,13 @@
 | avalanche | `0xdc35e5d3c5fcc2d9c82bec32edfc490ca742e34c` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xdcaecebc332c76121af6e89f444630fd3e81f99a` | ERC1967Proxy | impl | unknown | no |
 | avalanche | `0xdd4bfa270c5926db781faf9bf8d33998c6956d14` | BIFKN314Mintable | impl | live | no |
+| avalanche | `0xdd4d94efba79f589bf0f092562b65f905291ad42` | ERC1967Proxy | proxy | live | no |
 | avalanche | `0xde24686268bb5ddfac35d032e2663c1d700114a1` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0xde2762aa18fe86dcce4ab89539eaad446cd0c9a7` | ERC1967Proxy-17 | impl | unknown | no |
 | avalanche | `0xde7780318f860d8f9cb72fabd77f9c3b2ee015b2` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xe0ee1acf6a85b0c63c20077c6b05d43920ef035e` | BIFKN314 | impl | live | no |
 | avalanche | `0xe33d4430a36b6625341b1b0b8a16afdf7cb2928d` | BurstToken | impl | unknown | no |
+| avalanche | `0xe3593df71edd22e8857df0d738db0adfb28f8cfa` | ERC1967Proxy | proxy | live | no |
 | avalanche | `0xe51262211948c338c50640f1d5bdba4f4d208dea` | MinipoolManager | impl | live | no |
 | avalanche | `0xe95da219e63fc6547da380b22f749778157c99e8` | BIFKNRewarder | impl | unknown | no |
 | avalanche | `0xeb3dfdc417196957ead466f103336d02e96a8734` | BIFKN314Mintable | impl | unknown | no |
@@ -233,6 +250,7 @@
 | avalanche | `0xf25dc803dba114830b086e4cc09cfdebe2c10afd` | WithdrawQueue | impl | live | no |
 | avalanche | `0xf31856c9c5b890a07eb5a1e6d045205e517d639a` | BIFKN314WrapperMintable | impl | live | no |
 | avalanche | `0xf43d68e775642f81181061ae10aa3e517533a15e` | BIFKN314Wrapper | impl | live | no |
+| avalanche | `0xf451171872e9395021316e44d9f5475c90e27848` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | avalanche | `0xf80eb498bbfd45f5e2d123dfbdb752677757843e` | TokenggAVAX | impl | live | no |
 | avalanche | `0xf8ac03e4fe64cf036b8bb3a6f9e02b8a74e98df1` | BIFKN314Oracle | impl | unknown | no |
 | avalanche | `0xf98ea8531cf95ec46c327f4a36484ff33ce4f18e` | ApexMaker | impl | unknown | no |
@@ -248,12 +266,15 @@
 | bsc | `0x298d2967588b5c93a137ce1a05d0b8cfffb3c120` | StreamFactoryProxy | impl | live | no |
 | bsc | `0x4559605e3003fda8c059e14af4f16ba9a004335a` | BurnMintTokenPool | impl | live | no |
 | bsc | `0x54beea0a1a450883801c2bc1426aae7ad3eb54d0` | Stream | impl | live | no |
+| bsc | `0x56aa6d651bfefa9207b35e508716466359bae8ef` | Drip-2 | impl | live | no |
 | bsc | `0x66fd8de541c0594b4dccdfc13bf3a390e50d3afd` | BurnMintTokenPool | proxy | live | no |
 | bsc | `0x67e718f47db8dfa3a4b168c8761835f37b9ba3f0` | BurnMintTokenPool | impl | live | no |
+| bsc | `0x6e22a62e683da5146c982749c9242f6ee5fce86e` | AccessManagerUpgradeable | impl | live | no |
 | bsc | `0xc651ce768c22c691ab76af315787c0f2b7b68e6b` | StreamFactory-2 | impl | live | no |
+| bsc | `0xd5e4ac485f09ee907f5dd8b9a9935a09875f7bfb` | AccessManagerUpgradeable-2 | proxy | live | no |
 | ethereum | `0x0009a4657c52ea648490aa06138b88ce0f46a0c9` | Fee | impl | live | no |
 | ethereum | `0x000d8aa9e414b9e7e7591a456ca910fb3bb05875` | EulerUngovernedPerspective | impl | live | no |
-| ethereum | `0x0027da0545fe5e5d4fb80e8e6fc78091ab20f827` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| ethereum | `0x0027da0545fe5e5d4fb80e8e6fc78091ab20f827` | TransparentUpgradeableProxy-12 | proxy | live | no |
 | ethereum | `0x007274f6e5615c1131c860d376309f2a663ff43d` | CrossAdapter | impl | live | no |
 | ethereum | `0x0081d84174d84ee37973fc553b2a3a0101873193` | PythOracle | impl | live | no |
 | ethereum | `0x009bd94ad5fa60e676bfd3a45b5305463216a0d8` | UtilsLens | impl | live | no |
@@ -277,7 +298,7 @@
 | ethereum | `0x04a56636015ef379e21bb78aa61069e721d0cf1c` | CrossAdapter | impl | live | no |
 | ethereum | `0x04bd1e6caf008ed831f888ced406cd616c671870` | AsyncActionFuse | impl | live | no |
 | ethereum | `0x04cb462a121e1799722fe84c60e790b64d5adfde` | Governance | impl | live | no |
-| ethereum | `0x0552e28123a19ff2853d1ed3be75ef1329bb6ca8` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x0552e28123a19ff2853d1ed3be75ef1329bb6ca8` | PlasmaVault | impl | live | no |
 | ethereum | `0x05c516654741cc1e594523508bf17a750550127a` | ynETH | impl | live | no |
 | ethereum | `0x05d6c4d46a794468f282469c0e9346f121ea92ee` | EulerSwap | impl | live | no |
 | ethereum | `0x05df5bb999bac668713122b83fb5de75b6973377` | Extractor | impl | live | no |
@@ -286,7 +307,7 @@
 | ethereum | `0x062ab43e7c2d0419d996ccfd634161d6289e2e7b` | Staking | impl | live | no |
 | ethereum | `0x066cbd24d8285e25cb38222ea669735bdebbaac2` | AmmCloseSwapLens | impl | live | no |
 | ethereum | `0x06b53af012499d6429741b9d53e868fd89a5d3b2` | Erc4626SupplyFuse | impl | live | no |
-| ethereum | `0x06b964d96f5dcf7eae9d7c559b09edce244d4b8e` | TransparentUpgradeableProxy-12 | proxy | live | no |
+| ethereum | `0x06b964d96f5dcf7eae9d7c559b09edce244d4b8e` | TransparentUpgradeableProxy-13 | proxy | live | no |
 | ethereum | `0x06bed4637e8cf9e4efc1b227e0c322d7042680a4` | SiloLiquidationLens | impl | live | no |
 | ethereum | `0x0721fac1189e0d640ebba623e3ff3135020de54d` | LevvaPoolAdapter | impl | live | no |
 | ethereum | `0x072467b69354fd3274123c908adbc75f9f1dd183` | AmmCloseSwapServiceDai | impl | live | no |
@@ -304,11 +325,11 @@
 | ethereum | `0x08a4032f9510cd84785b3befa9ebd5eee68ce873` | Verified | impl | live | no |
 | ethereum | `0x08a8ec037df2e54194b397cd7c761631440197c6` | ERC1967Proxy-4 | proxy | live | no |
 | ethereum | `0x08d8bc0910e59ce30e2af151a67369cbbc23db89` | ProxyUtils | impl | live | no |
-| ethereum | `0x08dd57a51025a266cecc85154860aa4e71e48ee8` | PlasmaVault | proxy | live | no |
+| ethereum | `0x08dd57a51025a266cecc85154860aa4e71e48ee8` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x090c752b7b26d3cc382bf532ec9c4403c80d56cf` | EToken | impl | live | no |
 | ethereum | `0x09321c70b4e51f3f21bdad79c61d11fba1024da2` | PriceOracleMiddleware | impl | live | no |
-| ethereum | `0x094b360ae512a65584d4f5be33d68b2e08677b89` | TransparentUpgradeableProxy-17 | proxy | live | no |
-| ethereum | `0x0971628c7d3c6009d309165fedcc47a12e5158f1` | TimelockController | impl | live | no |
+| ethereum | `0x094b360ae512a65584d4f5be33d68b2e08677b89` | TransparentUpgradeableProxy-18 | proxy | live | no |
+| ethereum | `0x0971628c7d3c6009d309165fedcc47a12e5158f1` | TimelockController-4 | impl | live | no |
 | ethereum | `0x09c8971571ca3eeacdc4bfefd9dafba6b0c92110` | TreasuryVester | impl | live | no |
 | ethereum | `0x09db87a538bd693e9d08544577d5ccfaa6373a48` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x0a06ec4004c02fd514ee02c455d20062f7c45edc` | LiquidityMiningEthereum | impl | live | no |
@@ -353,7 +374,7 @@
 | ethereum | `0x10f9cf840b359ad8b4cf0a52ad337fbcf478c180` | LevvaVaultFactory | impl | live | no |
 | ethereum | `0x114f331f424ed559a0a7c73c041198f2a3130132` | IporProtocolRouter | impl | live | no |
 | ethereum | `0x11a02a63e9142ed929b9fd95357762fc7bab56f9` | AmmCloseSwapServiceUsdt | impl | live | no |
-| ethereum | `0x11cbc30008dde93db992ac0190848852d310367f` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x11cbc30008dde93db992ac0190848852d310367f` | RewardsClaimManager-6 | impl | live | no |
 | ethereum | `0x11cc7a3b0519ad10542907d985e6b0780281ede2` | SpreadRouter | impl | live | no |
 | ethereum | `0x11d5e473665038a9093b404f4744b48e44397910` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x12401f97e2264adbf8ff98da72e3465d97b41477` | Markets | impl | live | no |
@@ -392,14 +413,14 @@
 | ethereum | `0x17e77f964538fed3adec3e8dbb6147da258206da` | TokenStakingNodesManager | impl | live | no |
 | ethereum | `0x1800b00250df88fa5461edf957722a352b3c6378` | PythOracle | impl | live | no |
 | ethereum | `0x1822a8c3c807f1ec415ee82752dae0ec74664d4f` | ContextManager | impl | live | no |
-| ethereum | `0x1894d6f986fcc8564b12f2fb2b8296531fea9e11` | TimelockController-2 | impl | live | no |
+| ethereum | `0x1894d6f986fcc8564b12f2fb2b8296531fea9e11` | TimelockController | impl | live | no |
 | ethereum | `0x18fda40bee2a2ec4fff630dedba78a2aa0187d5e` | PriceOracleMiddlewareManager-2 | impl | live | no |
 | ethereum | `0x194e3458a94c1a54687b8c6a217c0255e79826c8` | Stake | impl | live | no |
 | ethereum | `0x196446cadde6da4d4afcde0c2a06dcb7b6085c12` | RateProviderOracle | impl | live | no |
 | ethereum | `0x196fdd95eae8c673150e5efe727f4cc84ed33cb8` | EToken | impl | live | no |
 | ethereum | `0x19bfe3aca80c61070cd22f84a59768988d199eed` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x19e332aba9cd9387e9310c9645b0a4b03a6e7906` | Erc4626BalanceFuse | impl | live | no |
-| ethereum | `0x19e5ac38a67d2422c87992150cbffb40de02737c` | WithdrawManager | impl | live | no |
+| ethereum | `0x19e5ac38a67d2422c87992150cbffb40de02737c` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0x1a024ae16c761596f3227944c0c52beba5d7f77b` | StakingNode | impl | live | no |
 | ethereum | `0x1a7034b0a5b5356e6975c5efe9217b25085205e9` | SwapExecutorRestricted | impl | live | no |
 | ethereum | `0x1a8404fb75e221ac472119aebfec61e1212decc4` | ContextManagerFactory | impl | live | no |
@@ -419,7 +440,7 @@
 | ethereum | `0x1d4c4c07e34a6b43f104204d243aae084d5f6e09` | AssetManagementLens | impl | live | no |
 | ethereum | `0x1d6b2a11ffea5f9a8ed85a02581910b3d695c12b` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0x1da2a0fef0407974d00335ee623098082cb7e92b` | TransparentUpgradeableProxy-5 | proxy | live | no |
-| ethereum | `0x1dc356117aa5dcf8ce836aee851dafd04479ae8a` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x1dc356117aa5dcf8ce836aee851dafd04479ae8a` | IporFusionAccessManager-6 | impl | live | no |
 | ethereum | `0x1decfd7e774ea8da143e90c14602fe4646c7032c` | AmmSwapsLensLibBaseV1 | impl | live | no |
 | ethereum | `0x1df4f5afd2ad4e830a343c7c32824a9f4b525496` | CrossAdapter | impl | live | no |
 | ethereum | `0x1e10d23ec871dd8bfe9740e193c714f8b2ffcfe5` | RedstoneCoreOracle | impl | live | no |
@@ -429,10 +450,10 @@
 | ethereum | `0x1e87e5d9f675f4883cd81f6cf4b92e03cc326ebf` | CrossAdapter | impl | live | no |
 | ethereum | `0x1ecd96fd20f2c1a32e5906cccaec87e8afe19821` | PreHooksInfoReader | impl | live | no |
 | ethereum | `0x1f44c5ada019cbb0729e277775877ccdb940e04a` | AmmPoolsLens | impl | live | no |
-| ethereum | `0x1f8397de7c32cc7f042477326892953ca102ded0` | RewardsClaimManager-2 | impl | live | no |
+| ethereum | `0x1f8397de7c32cc7f042477326892953ca102ded0` | RewardsClaimManager-7 | impl | live | no |
 | ethereum | `0x1f929d571fa089a0308afca96129d28527df86cd` | PythOracle | impl | live | no |
 | ethereum | `0x1fbd08857ceebd7012a058df93ea642bdc0ff864` | MiltonDai | impl | live | no |
-| ethereum | `0x1fdf5dc3f915cb40e0ad5690de51e3cb464d1bad` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x1fdf5dc3f915cb40e0ad5690de51e3cb464d1bad` | PlasmaVault | impl | live | no |
 | ethereum | `0x205934fcb64523ca9dacee5cac93e82f2544422c` | CrossAdapter | impl | live | no |
 | ethereum | `0x208ff5eb543814789321daa1b5eb551881d16b06` | EulerSwapPeriphery | impl | live | no |
 | ethereum | `0x20a5d253d6e79972516f5061e2ae5d49a1b2cdd7` | IporOracle | impl | live | no |
@@ -458,15 +479,15 @@
 | ethereum | `0x233cbc0109475b5a85da23b997105fc16b73e7fc` | ERC1967Proxy-12 | proxy | live | no |
 | ethereum | `0x23878914efe38d27c4d67ab83ed1b93a74d4086a` | BaseImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x239f612d65b8b0d0ee830492db1c4d669a128bdb` | TreasuryVester | impl | live | no |
-| ethereum | `0x23c8dc9520df31c69c725c6ed4657ae6cc21cdec` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x23c8dc9520df31c69c725c6ed4657ae6cc21cdec` | RewardsClaimManager-3 | impl | live | no |
 | ethereum | `0x23e4a1a73fd3fe3c7f8596bb74886e6c478eec59` | MeanFinanceDistributor | impl | live | no |
-| ethereum | `0x24024c7a4500cd28948ee09903ef78a2a95b70f9` | TimelockController-2 | impl | live | no |
+| ethereum | `0x24024c7a4500cd28948ee09903ef78a2a95b70f9` | TimelockController | impl | live | no |
 | ethereum | `0x242ed4bfc5c2fdfc0b38f634f49b5e9fafa0f9b0` | FixedRateOracle-2 | impl | live | no |
 | ethereum | `0x24452a82e3e4f20734e2fe9a511c8d839999dfbe` | TimelockControllerUpgradeable | impl | live | no |
-| ethereum | `0x24590bdac41cbd15cad97018c5dd91542d65af94` | TimelockController | impl | live | no |
+| ethereum | `0x24590bdac41cbd15cad97018c5dd91542d65af94` | TimelockController-7 | impl | live | no |
 | ethereum | `0x24a2461f3e67e82930c2df2ab032e9272a272f65` | UsualSP | impl | live | no |
 | ethereum | `0x24bab68c75ca3b181d5a43bd7f4327f24b55f0a6` | Staking | impl | live | no |
-| ethereum | `0x24c8706ee3ef603929cb0d4467268b83c2d48061` | TimelockController-3 | impl | live | no |
+| ethereum | `0x24c8706ee3ef603929cb0d4467268b83c2d48061` | TimelockController-5 | impl | live | no |
 | ethereum | `0x253453bc43f0b961528c9cbc18a3ae3de0a4daab` | EulerEarn | impl | live | no |
 | ethereum | `0x2541633ec276d94e181caea8fc26f3bb4bd82eb2` | TokenMinter-2 | impl | live | no |
 | ethereum | `0x254a663790cdaff53204c7072cf0c75231b505ff` | OraclePublisher | impl | live | no |
@@ -474,7 +495,7 @@
 | ethereum | `0x259bcef8f8b5dce0379d9cae1b98c2ddb0429085` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x25a766eb4bf76df40395a95af4fe9f649b1950e6` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x25d3a8017793fb263efeaecafd2f2bf34228a10c` | TreasuryVester | impl | live | no |
-| ethereum | `0x25eaf579ca2255faa5463c635eec28697b5b8846` | ProxyAdmin | impl | live | no |
+| ethereum | `0x25eaf579ca2255faa5463c635eec28697b5b8846` | ProxyAdmin-2 | impl | live | no |
 | ethereum | `0x26283c9b18fab5bf46b85b4bf46fbc56f92bea8c` | PythOracle | impl | live | no |
 | ethereum | `0x264bad4d1c4c0b88ace859854450adcf2a44e27c` | EulerEarnVault | impl | live | no |
 | ethereum | `0x26b1e253c3e5aed049c2283fa1d9bef4e226a867` | SnapshotRegistry | impl | live | no |
@@ -483,12 +504,12 @@
 | ethereum | `0x27cbb991eff5e5c7b6734675e837eddf924ffece` | TurtleGovernorProxy | proxy | live | no |
 | ethereum | `0x281b24ba7fefd1233c0a06967eaa811f235f3466` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x286b8d05f9a9427899ad4dff9a5298e238ce80e7` | RateProviderOracle | impl | live | no |
-| ethereum | `0x289d600447a74b952ad16f0bd53b8eaaac2d2d71` | TransparentUpgradeableProxy-20 | proxy | live | yes |
+| ethereum | `0x289d600447a74b952ad16f0bd53b8eaaac2d2d71` | TransparentUpgradeableProxy-21 | proxy | live | yes |
 | ethereum | `0x28b99170918f7441c4850e691dd44d2dc3150a75` | RateProviderOracle | impl | live | no |
 | ethereum | `0x28bc58e600ef718b9e97d294098abecb8c96b687` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0x294eecec65a0142e84aedfd8eb2fbea8c9a9fbad` | BoringVault | impl | live | no |
 | ethereum | `0x29a56a1b8214d9cf7c5561811750d5cbdb45cc8e` | GenericFactory-2 | proxy | live | no |
-| ethereum | `0x29d322dd088e9b9d1416f43188954f08748fafbb` | PlasmaVault | proxy | live | no |
+| ethereum | `0x29d322dd088e9b9d1416f43188954f08748fafbb` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x29daddfda3442693c21a50351a2b4820ddbbff79` | DToken | impl | live | no |
 | ethereum | `0x2a0cda8da0c1601a4b1581da8ffbc50d8066c5dd` | CrossAdapter | impl | live | no |
 | ethereum | `0x2a3b3096f6d6f1e32555f6566ffb31b1ad358920` | TimelockControllerUpgradeable | impl | live | no |
@@ -504,9 +525,9 @@
 | ethereum | `0x2bb5cafee239687ec1cd0644bb7fd6f4563a4391` | FeeManager | impl | live | no |
 | ethereum | `0x2bba09866b6f1025258542478c39720a09b728bf` | Swapper | impl | live | no |
 | ethereum | `0x2be3c0051a6e32de5a17543f71d68826ebe1414a` | FixedRateOracle | impl | live | no |
-| ethereum | `0x2c10c36028c430f445a4ba9f7dd096a5dcc75d5e` | Erc4626BalanceFuse | impl | live | no |
+| ethereum | `0x2c10c36028c430f445a4ba9f7dd096a5dcc75d5e` | Erc4626BalanceFuse-2 | impl | live | no |
 | ethereum | `0x2cfab6562507171bdc8294b156d3e1e5669ca36e` | ynViewer | impl | live | no |
-| ethereum | `0x2d1a21f4138a31f978857b28ed6f079408af2792` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x2d1a21f4138a31f978857b28ed6f079408af2792` | RewardsClaimManager-4 | impl | live | no |
 | ethereum | `0x2d362158034eeb28e1a7062f24ffc436b1d01858` | Proxy | proxy | live | no |
 | ethereum | `0x2d3b4bb82bdf0a3593bcf098b5c5b6f7570211a7` | swETH | impl | live | yes |
 | ethereum | `0x2de7320004f837925ba31326ff66210be90171ab` | PlasmaVaultBase | impl | live | no |
@@ -524,7 +545,7 @@
 | ethereum | `0x30ae182cc30d312dd4f2824c635b8dc5f805153c` | AmmTreasuryBaseV2 | impl | live | no |
 | ethereum | `0x30f7eb18b625090e32381effcb922bd188746e3e` | CrossAdapter | impl | live | no |
 | ethereum | `0x31500e72b241dd3140b21dbc02468c176038f767` | LSDRateProvider | impl | live | no |
-| ethereum | `0x3151cee0cdb517c0e7db2b55ff5085e7d1809d90` | PlasmaVault | proxy | live | no |
+| ethereum | `0x3151cee0cdb517c0e7db2b55ff5085e7d1809d90` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x318dc5d24bcc71ba0127a45e009b64bdba0c2edf` | Erc4626BalanceFuse | impl | live | no |
 | ethereum | `0x31b9f827ba569e405d85388d5cec79d8bff44533` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x31bd697842ad9e41ceae622c6044cefffee43fac` | RedstoneCoreOracle | impl | live | no |
@@ -554,7 +575,7 @@
 | ethereum | `0x3527663fa14f1799ffdf54fdc7e721d2fb8e88d5` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x352e64e70bd1d2fa46bdc2331d8220202c3f2c3b` | EVCUtil | impl | live | no |
 | ethereum | `0x35cb400f5c443d8efa7e2ea5d123eb78332bb7f1` | TokenBatchTransfer | impl | live | no |
-| ethereum | `0x35ec69a77b79c255e5d47d5a3bdbefefe342630c` | TransparentUpgradeableProxy-13 | proxy | live | no |
+| ethereum | `0x35ec69a77b79c255e5d47d5a3bdbefefe342630c` | TransparentUpgradeableProxy-14 | proxy | live | no |
 | ethereum | `0x361baf77c94f4504691d9f3c463f9950591c9434` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0x362320361e14c1e351e84ca85a0c03a6eef71286` | PythOracle | impl | live | no |
 | ethereum | `0x364f116352eb95033d73822ba81257b8c1f5b1ce` | AmmStorage | proxy | live | no |
@@ -576,7 +597,7 @@
 | ethereum | `0x38a40966ab05af4c8c9996253b36b4ac0adaaee2` | IporProtocolRouter | impl | live | no |
 | ethereum | `0x38c061df62fcce6ae6f69c12e3ebeb2f35a2aa38` | Reverter | impl | live | no |
 | ethereum | `0x38d43a6cb8da0e855a42fb6b0733a0498531d774` | SimpleStakingERC20 | impl | live | no |
-| ethereum | `0x390e7ed143bf42ba327dae48a44a48d84168aabd` | AmmTreasuryBaseV1 | impl | live | no |
+| ethereum | `0x390e7ed143bf42ba327dae48a44a48d84168aabd` | AmmTreasuryBaseV1-2 | impl | live | no |
 | ethereum | `0x39300e148f76ea697a7ecdd0987d8423973bf326` | ProxyUtils | impl | live | no |
 | ethereum | `0x3932448015fc79a86efaaf9151515d3e2b3bbbfe` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x3943568797a280cbc51844c63bc2555c6e49df44` | PlasmaVaultBase-2 | impl | live | no |
@@ -585,10 +606,10 @@
 | ethereum | `0x399502b8dc8a38e2cd2d670f4f40cc168c063585` | ReferralPlasmaVault | impl | live | no |
 | ethereum | `0x39cea17d7c03a56fecacb6f3850c14dd473fe2f4` | UtilsLens | impl | live | no |
 | ethereum | `0x39f3a3699eb0627c2c8cd30d394cd8e36e553263` | ynLSD | impl | live | no |
-| ethereum | `0x3a58d6d52d68460cbbda93dd858f4353878ef697` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x3a58d6d52d68460cbbda93dd858f4353878ef697` | PlasmaVault | impl | live | no |
 | ethereum | `0x3a6df8d1d9b7c376eed1de3e1a2b61009b26e8e1` | TreasuryVester | impl | live | no |
 | ethereum | `0x3a7671201963fe50a06da2d612bab26fb24caf7d` | PythOracle | impl | live | no |
-| ethereum | `0x3aae99dfdf99bf86c400b618f470f1d2de94ee51` | ZeroBalanceFuse | impl | live | no |
+| ethereum | `0x3aae99dfdf99bf86c400b618f470f1d2de94ee51` | ZeroBalanceFuse-2 | impl | live | no |
 | ethereum | `0x3ac6556d1d8ff91cc83b9b4cf03178ee9d189b5a` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x3b1dacc212b9420d472c61a3311088c027b967b1` | RewardsClaimManager | impl | live | no |
 | ethereum | `0x3b219fd68a7bf5c505503d0cb528148a06d98602` | CallbackHandlerEuler | impl | live | no |
@@ -602,10 +623,10 @@
 | ethereum | `0x3d143852a86ad775d7d033ad707025c9185623e6` | TradingCompetitionRewards | impl | live | no |
 | ethereum | `0x3d289eb12505e8147460f27bec775419f3350a80` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x3db87a14412c488f5ca11b0a214b0e7d2aa910c1` | ContextManager | impl | live | no |
-| ethereum | `0x3df9d7be4017e3d72ea39b96ed4c7070c19eabae` | IporFusionAccessManager-2 | impl | live | no |
+| ethereum | `0x3df9d7be4017e3d72ea39b96ed4c7070c19eabae` | IporFusionAccessManager-7 | impl | live | no |
 | ethereum | `0x3e104bb4c3777e1ca3ab25ff5e9c801ff9f99559` | LevvaVaultFactory | proxy | live | no |
 | ethereum | `0x3e30b481a8c98b84bc8d36844f9a7b19ef4ea070` | LSDRateProvider | impl | live | no |
-| ethereum | `0x3e469ba3916d2ab7f5f815621189ae87ad2edafe` | TimelockController | impl | live | no |
+| ethereum | `0x3e469ba3916d2ab7f5f815621189ae87ad2edafe` | TimelockController-2 | impl | live | no |
 | ethereum | `0x3e520c015d093f22a26f83dd83408b890a723540` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x3e9dbaac4290d4ddc5faf23df8829b3204b9c67c` | RewardsClaimManager | impl | live | no |
 | ethereum | `0x3ecfac4f67b83b219a5ac571e1d0555ec59df903` | CrossAdapter | impl | live | no |
@@ -616,7 +637,7 @@
 | ethereum | `0x3f323e75e98ff55d6fc28fb322a3c7a46877f418` | GovernableWhitelistPerspective | impl | live | no |
 | ethereum | `0x3f3ba9678e30b0033e2887c9dc5a61f7bf5728e8` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x3f574ff13a9540c3e7844704e962b1b186c31e58` | WrappedToken | impl | live | no |
-| ethereum | `0x3f582d92e96cd5d61a29fac2badf8d1e4f0d2410` | TimelockController-5 | impl | live | no |
+| ethereum | `0x3f582d92e96cd5d61a29fac2badf8d1e4f0d2410` | TimelockController-8 | impl | live | no |
 | ethereum | `0x3f68a6a4fca2e6b85d041a53eb4090f6ac3311f5` | WrappedPlasmaVaultFactory | impl | live | no |
 | ethereum | `0x3fbff9a3b7f95ad64afd57f6b43ec0c86d437637` | CrossAdapter | impl | live | no |
 | ethereum | `0x3fc3771cf29b96069644ea249f3f036069873b4a` | TransparentUpgradeableProxy-5 | proxy | live | no |
@@ -628,7 +649,7 @@
 | ethereum | `0x40fc79abe0923a12a070285f8eed75e6bf71445f` | SnapshotRegistry-2 | impl | live | no |
 | ethereum | `0x4195ed6e112cbddc1adf7271047dba4e6bb6bc56` | AccessControlManager | impl | live | yes |
 | ethereum | `0x41e34756a7772a4ca1115afbe2e2afbd1b0172cf` | AmmSwapsLens | impl | live | no |
-| ethereum | `0x41e60cf98075315e4d6133a9dc25a2847b21c3d7` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| ethereum | `0x41e60cf98075315e4d6133a9dc25a2847b21c3d7` | TransparentUpgradeableProxy-11 | proxy | live | no |
 | ethereum | `0x420a9855fa5fe985b9a6458780214a2700e0d9c6` | BaseAdapter | impl | live | no |
 | ethereum | `0x421c69eaa54646294db30026aee80d01988a6876` | IporOracle | proxy | live | no |
 | ethereum | `0x42331b6a43d14453a2bb2e4a450187ff9841cff6` | RedstoneCoreOracle | impl | live | no |
@@ -641,13 +662,13 @@
 | ethereum | `0x4329e2178d41d058cf2808c11436a9e83bc5d8b0` | WstETHPriceFeedEthereum | impl | live | no |
 | ethereum | `0x434ab664edb3def7b88d1e9951f198f2b0116663` | ynETH | impl | live | no |
 | ethereum | `0x438d3b26bda1a3a81f915f31a8dbef429d7f25fe` | CrossAdapter | impl | live | no |
-| ethereum | `0x43a32d4f6c582f281c52393f8f9e5ace1d4a1e68` | PlasmaVault | proxy | live | no |
-| ethereum | `0x43ee0243ea8cf02f7087d8b16c8d2007cc9c7ca2` | PlasmaVault | proxy | live | no |
+| ethereum | `0x43a32d4f6c582f281c52393f8f9e5ace1d4a1e68` | PlasmaVault-2 | proxy | live | no |
+| ethereum | `0x43ee0243ea8cf02f7087d8b16c8d2007cc9c7ca2` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x4440a1de1fbd7f9ebead7c3dd42a44e0031f37af` | Swap | impl | live | no |
 | ethereum | `0x44510211b3a0801914f1dab71b286637dbf2ab70` | CrossAdapter | impl | live | no |
 | ethereum | `0x446b6d4ba19647c06be4b06597fbc7e0c0300af4` | TokemakAdapter | impl | live | no |
 | ethereum | `0x446f855e5cbed2be262b00954f0fdfefab700153` | ContextManager | impl | live | no |
-| ethereum | `0x447aaddf08d6b0d1daf8f0e8a99dc1a2f8d669c5` | MainnetActors | impl | live | no |
+| ethereum | `0x447aaddf08d6b0d1daf8f0e8a99dc1a2f8d669c5` | MainnetActors-2 | impl | live | no |
 | ethereum | `0x44eb44642e381f16eb787d1fe0f770096c818f73` | LevvaAirdropV2 | impl | live | no |
 | ethereum | `0x44f76e33af2e29af2c4a57d2ccd5ff0d73644b7a` | TreasuryVester | impl | live | no |
 | ethereum | `0x4508ce1ab61fccac39ba28ff0e7acd5823e8c0f0` | AmmStorage | impl | live | no |
@@ -658,8 +679,8 @@
 | ethereum | `0x45d0e14d946990c5fce42b95195b15f27974c115` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x45f3bf4f5318d9683357fa8f9f4442263f7dda6f` | EulerV2BatchFuse | impl | live | no |
 | ethereum | `0x46157bc6110d803e602c342203c8414cc6e61433` | SnapshotRegistry-2 | impl | live | no |
-| ethereum | `0x468de989457f45c7bba362227274ae67e96d7b76` | WithdrawManager-2 | impl | live | no |
-| ethereum | `0x46ddc39e780088b1b146aba8cbbe15dc321a1a1d` | TransparentUpgradeableProxy-21 | proxy | live | yes |
+| ethereum | `0x468de989457f45c7bba362227274ae67e96d7b76` | WithdrawManager-3 | impl | live | no |
+| ethereum | `0x46ddc39e780088b1b146aba8cbbe15dc321a1a1d` | TransparentUpgradeableProxy-22 | proxy | live | yes |
 | ethereum | `0x470c3a35daf7e64748f8f2187937f69105baa37f` | ERC1967Proxy-7 | impl | live | no |
 | ethereum | `0x472dd06c4a5d8910329e3050f5a7e41a6d75d185` | DaoCollateral | impl | live | no |
 | ethereum | `0x473285a1ead29ee13ba33c67f937ffea39a197b0` | MiltonUsdt | impl | live | no |
@@ -670,18 +691,18 @@
 | ethereum | `0x47f13dad7e81489c053c15c9f34963b2414635d9` | IporProtocolRouter | impl | live | no |
 | ethereum | `0x48a6e284692f4663b09fe48ee72d95f7ae0c4cc5` | TreasuryVester | impl | live | no |
 | ethereum | `0x48bd852d83f6e58af59255abc708e3ddecb1d1e6` | ZeroBalanceFuse | impl | live | no |
-| ethereum | `0x48c11b86807627af70a34662d4865cf854251663` | TransparentUpgradeableProxy-22 | proxy | live | yes |
+| ethereum | `0x48c11b86807627af70a34662d4865cf854251663` | TransparentUpgradeableProxy-23 | proxy | live | yes |
 | ethereum | `0x493dd4b87f106ce1e1c9a399fe01d596a44840b1` | RedemptionAssetsVault | impl | live | no |
 | ethereum | `0x4975e6c808ddb8fc6a9bc48f6dfd4398bf7b7dc7` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0x499316db0a18a3d8499825d69701faf2f9fb8f2d` | PythOracle | impl | live | no |
-| ethereum | `0x49cceda0d17d533edc103ceef57ba057c4527c06` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x49cceda0d17d533edc103ceef57ba057c4527c06` | PlasmaVault | impl | live | no |
 | ethereum | `0x49f2825fbcd6cb2b0d13ebdf44457e15b0a3a8b0` | MiltonSpreadModelUsdt | impl | live | no |
 | ethereum | `0x4a337ca01a3f53477e17e502cfbb484120a325dc` | SnapshotRegistry-2 | impl | live | no |
 | ethereum | `0x4a9208bb40337ee983e2898ecb1009c763eebf5f` | WSTETHOracle | impl | live | no |
 | ethereum | `0x4add41f7dc14813c48f5aa5a3c453ef1096581b7` | CrossAdapter | impl | live | no |
 | ethereum | `0x4b3fb71d7f27038a33a1f5aa6ccd22833840cdb7` | TransparentUpgradeableProxy-4 | impl | live | no |
 | ethereum | `0x4b65470f3d24e0d3cdb4a12f3d4bf89c24fbdd52` | PythOracle | impl | live | no |
-| ethereum | `0x4ba0f214d1b7f572d11dabe8fe0be9c99e25e6fd` | WithdrawManager | impl | live | no |
+| ethereum | `0x4ba0f214d1b7f572d11dabe8fe0be9c99e25e6fd` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0x4bfea07593844155c0bd5ee656ce54e864ca9b55` | EulerV2ControllerFuse | impl | live | no |
 | ethereum | `0x4c00c56a52c1da5b835a62c55f590b9ee60f1c59` | CrossAdapter | impl | live | no |
 | ethereum | `0x4c2a73ff36565f513f83a57cc5668551bdfd7499` | CrossAdapter | impl | live | no |
@@ -694,12 +715,12 @@
 | ethereum | `0x4d7e09f73843bd4735aaf7a74b6d877bac75a531` | OFTAdapterUpgradeable | proxy | live | no |
 | ethereum | `0x4d919cecfd4793c0d47866c8d0a02a0950737589` | SiloFactory | impl | live | no |
 | ethereum | `0x4d99e7e470a3fc64d4b4b25304c74ad8413bddb3` | RewardsClaimManager | impl | live | no |
-| ethereum | `0x4dca6fd6f153ee18602ac77b4396070476ec6c25` | EulerV2ControllerFuse | impl | live | no |
+| ethereum | `0x4dca6fd6f153ee18602ac77b4396070476ec6c25` | EulerV2ControllerFuse-2 | impl | live | no |
 | ethereum | `0x4ddce44ab524f49b4050d9d59d7cf61cda865f84` | EulerClaims | impl | live | no |
-| ethereum | `0x4de58c0cdbf95e875e741a7ce90c72397a7d3e23` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x4de58c0cdbf95e875e741a7ce90c72397a7d3e23` | RewardsClaimManager-2 | impl | live | no |
 | ethereum | `0x4df63d20cb2a5faa5b9cb978089bdfccfd318c39` | EulerBasePerspective | impl | live | no |
 | ethereum | `0x4e0b22a5052b640967c55b92401b1c067fda53e0` | UniversalTokenSwapperWithVerificationFuse | impl | live | no |
-| ethereum | `0x4e1ba8f272aa05b5d142892dca94a6b80181a8a4` | TimelockController | impl | live | no |
+| ethereum | `0x4e1ba8f272aa05b5d142892dca94a6b80181a8a4` | TimelockController-2 | impl | live | no |
 | ethereum | `0x4e33d9874ebb7847c9c11e47aeea8d3f215bf676` | PythOracle | impl | live | no |
 | ethereum | `0x4e3c90d8eb0f12e86f2b9f00d21f625f4c83575b` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x4e72f877b823654c32dded3a52c67d5af3cfac97` | SnapshotRegistry-2 | impl | live | no |
@@ -710,7 +731,7 @@
 | ethereum | `0x4f4f1613e9bb13e874d1d066dfeb2aacfe84ef8c` | ERC1967Proxy-4 | impl | live | no |
 | ethereum | `0x4f7ef28c5416b536a7baefb14fdd3dda37bda46d` | AmmGovernanceService | impl | live | no |
 | ethereum | `0x4f8d96ed344dc7f394db1d0a019264bebff28f71` | Staking | impl | live | no |
-| ethereum | `0x4f9a5893cedf67cd01904da919b191826a2e256e` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x4f9a5893cedf67cd01904da919b191826a2e256e` | IporFusionAccessManager-8 | impl | live | no |
 | ethereum | `0x4fd36cd1c23be30db86679f391087fd8a984f893` | FixedRateOracle | impl | live | no |
 | ethereum | `0x4fdd5f93795a694a1301ca49cc07aec19eceec9d` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x4fe5a6ee0be736cf7ec34c95a55b9d006e6e6be8` | Strategy | impl | live | no |
@@ -728,10 +749,10 @@
 | ethereum | `0x526d0047725d48bbc6e24c7b82a3e47c1af1f62f` | ERC1967Proxy-8 | proxy | live | no |
 | ethereum | `0x527d6db79bff473b8dd722429bdb3b0c8b855d23` | AccessControlManager-2 | impl | live | yes |
 | ethereum | `0x52b26d9046bec495914fae467ff0e95762c5ed74` | EulerSwapPeriphery | impl | live | no |
-| ethereum | `0x52b5f5acb308968e5db6809e3546bb01498a7d11` | TransparentUpgradeableProxy-23 | proxy | live | yes |
+| ethereum | `0x52b5f5acb308968e5db6809e3546bb01498a7d11` | TransparentUpgradeableProxy-24 | proxy | live | yes |
 | ethereum | `0x53281e05cf35162c031e0a351b64ae936563111b` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x5345562ed3ce537582a1a568d3b06c8382cd60bd` | EulerUngovernedPerspective | impl | live | no |
-| ethereum | `0x5367835812d64e18c78e4dac78decfc3b77a91a9` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x5367835812d64e18c78e4dac78decfc3b77a91a9` | RewardsClaimManager-2 | impl | live | no |
 | ethereum | `0x53b4c5efcd68001f64fa3ee4f602e283efb288d9` | IporWeighted | impl | live | no |
 | ethereum | `0x53ecc250d70c9f8b88edb817a9097c6caac81a6b` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0x540af49ac82539802ca410a008e594d7d043d5c8` | TransparentUpgradeableProxy-4 | impl | live | no |
@@ -745,9 +766,9 @@
 | ethereum | `0x554ee3d9ed7e9ec21e186c7dd636430669812f73` | Governance | impl | live | no |
 | ethereum | `0x5601a69df4c4f46af807dcc5131f94cc45d5230e` | CrossAdapter | impl | live | no |
 | ethereum | `0x560c836581476a95b5adf65b1986fba3cf7772f0` | Erc4626BalanceFuse | impl | live | no |
-| ethereum | `0x5671aeb696c32d3cd1590ce55e6204e6c5b772c3` | TimelockController | impl | live | no |
-| ethereum | `0x56b8dd5d92311ab0c657a05dd6ec3346f6ee0713` | TransparentUpgradeableProxy-12 | impl | live | no |
-| ethereum | `0x56e76720dcf764a32766c5c0c7f3827ba8b4af56` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x5671aeb696c32d3cd1590ce55e6204e6c5b772c3` | TimelockController-3 | impl | live | no |
+| ethereum | `0x56b8dd5d92311ab0c657a05dd6ec3346f6ee0713` | TransparentUpgradeableProxy-13 | impl | live | no |
+| ethereum | `0x56e76720dcf764a32766c5c0c7f3827ba8b4af56` | IporFusionAccessManager-2 | impl | live | no |
 | ethereum | `0x56f31bbf98a7e13ba956abf627142fef603f9cbc` | FixedRateOracle | impl | live | no |
 | ethereum | `0x575232a826256d648d645ae58980de1e26894a85` | CrossAdapter | impl | live | no |
 | ethereum | `0x5765d00dee4cb808b266a46411059a518795294c` | AmmPoolsServiceUsdm | impl | live | no |
@@ -755,18 +776,18 @@
 | ethereum | `0x57904b4df131f00dee9bb75a8fa1d27744035c90` | EVCUtil | impl | live | no |
 | ethereum | `0x57d771f5b266f57775e0247dc8b7b9d427ba6508` | IporFusionAccessManager | impl | live | no |
 | ethereum | `0x57e1d090b1af526cd4174019d5b9702eebe236fa` | TokenStakingNode | impl | live | no |
-| ethereum | `0x57e353c2e2d40f5b923512476a111127a6a21b63` | TransparentUpgradeableProxy-17 | impl | live | no |
+| ethereum | `0x57e353c2e2d40f5b923512476a111127a6a21b63` | TransparentUpgradeableProxy-18 | impl | live | no |
 | ethereum | `0x586a819aad974f6ef49e2bd425a7526f3f2551f4` | EbisuZapperCreateFuse | impl | live | no |
 | ethereum | `0x586ac86675bd933c4b9a26c55b6e62b6496d49eb` | PowerToken | impl | live | no |
 | ethereum | `0x58703da5295794ed4e82323fcce7371272c5127d` | ERC1967Proxy-8 | proxy | live | no |
-| ethereum | `0x58749c46ffe97e4d79508a2c781c440f4756f064` | TransparentUpgradeableProxy-24 | proxy | live | yes |
+| ethereum | `0x58749c46ffe97e4d79508a2c781c440f4756f064` | TransparentUpgradeableProxy-25 | proxy | live | yes |
 | ethereum | `0x587a7ae8220f61fc72966aa0e0edc69135b76aef` | FeeManagerFactory | impl | live | no |
 | ethereum | `0x58d7d693788f50fcc1df7aaf08e64db81b27a67c` | GuessGame | impl | live | no |
 | ethereum | `0x58f50b191048f29d2af12cd0ece48eea79f4cb9b` | ContextManager | impl | live | no |
 | ethereum | `0x58f6a780fe047b1ec4e4f8a4fd418b81361ca85d` | LiquidationHelper | impl | live | no |
 | ethereum | `0x5903c59b12219cb93355eebd3397f1b5de91b45a` | Utils | impl | live | no |
-| ethereum | `0x5903e1aeec722943cc5f816cb8c688b30777b2dd` | WithdrawManager | impl | live | no |
-| ethereum | `0x5904da6c07a15884ff9c480f240bc57fe9032eb2` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x5903e1aeec722943cc5f816cb8c688b30777b2dd` | WithdrawManager-2 | impl | live | no |
+| ethereum | `0x5904da6c07a15884ff9c480f240bc57fe9032eb2` | PlasmaVault | impl | live | no |
 | ethereum | `0x592d1e1531f4e91ce09517065914e9e29c4ec647` | TokenStakingNodesManager | impl | live | no |
 | ethereum | `0x59727d354f56d8039fe9df10ce069baeafb70623` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x59da0ce05cfcf0da3257a96446e5b98edb788c25` | FluidInstadappClaimFuse | impl | live | no |
@@ -775,13 +796,13 @@
 | ethereum | `0x5a1cf5e3cee2463de40206d9b62125218b4c50c2` | AmmSwapsLens | impl | live | no |
 | ethereum | `0x5a47412c769a6a57ba757253fb199edc3ccfcde6` | BaseAdapter | impl | live | no |
 | ethereum | `0x5a4fc8f98ca356b7e957d18c155bc62e32d21ec3` | PowerTokenLens | impl | live | no |
-| ethereum | `0x5a5f437f0c481ace6cda50355bd4bacc8918aa01` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x5a5f437f0c481ace6cda50355bd4bacc8918aa01` | RewardsClaimManager-5 | impl | live | no |
 | ethereum | `0x5afea59bbd15e297a84f1ef349e7d2eda975bbc5` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x5b05841aa46db37510e65ea6e61a569e9c20e393` | CallbackHandlerReader | impl | live | no |
 | ethereum | `0x5b1a6b2e6af64e74275015a65687de0ca941f537` | SyrupClaimFuse | impl | live | no |
 | ethereum | `0x5b2075c1463e9bbe3f8b15d695ab7b6684d67cc6` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x5b447ba6b204a8efdcc5b8f9fdf7361f332dc090` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0x5b7aecdc033968ccbf74f529f7de39df727b5c81` | WithdrawManager | impl | live | no |
+| ethereum | `0x5b7aecdc033968ccbf74f529f7de39df727b5c81` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0x5b8a3e78a7e740cab5d2ea77045e71264c2d1021` | Verified | impl | live | no |
 | ethereum | `0x5bc2135a78fb289561915cec4585c5004639fb3d` | CrossAdapter | impl | live | no |
 | ethereum | `0x5be6e757763a3b7106d211df5017823366ce3c1e` | StakeDaoV2SupplyFuse | impl | live | no |
@@ -789,14 +810,14 @@
 | ethereum | `0x5c5b67d71559744d5d1dbb2c9c282761919a25cf` | BaseAdapter | impl | live | no |
 | ethereum | `0x5c6392a69dc11f254457716c682f70e4b2ed7b05` | SwETHProxyOFT | impl | live | no |
 | ethereum | `0x5c7943134b68679355267393f13bca931c622881` | FixedRateOracle | impl | live | no |
-| ethereum | `0x5cb733ecaf07681c0e79f76b7b02844b66208a71` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x5cb733ecaf07681c0e79f76b7b02844b66208a71` | RewardsClaimManager-8 | impl | live | no |
 | ethereum | `0x5cc2e68540af49cc1537c27a5afa33b89af06a94` | PythOracle | impl | live | no |
-| ethereum | `0x5cc73aaa18045cebb41d7611ac1ff6298105d222` | TransparentUpgradeableProxy-13 | proxy | live | no |
+| ethereum | `0x5cc73aaa18045cebb41d7611ac1ff6298105d222` | TransparentUpgradeableProxy-14 | proxy | live | no |
 | ethereum | `0x5d16d2b14a174f48aee6fe7845029aa2c6687d5a` | CrossAdapter | impl | live | no |
 | ethereum | `0x5d4474a85b445671bd0d33da944036d9522b9a9a` | Erc4626BalanceFuse | impl | live | no |
 | ethereum | `0x5d6e53c42e3b37f82f693937bc508940769c5caf` | ynETHRedemptionAssetsVault | proxy | live | no |
-| ethereum | `0x5d9f02e85cccec44450c4c9c5bc71fb09bc3c71a` | RewardsManagerFactory | impl | live | no |
-| ethereum | `0x5ddd768bae05b01828ea58167f76efa2e7787d88` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x5d9f02e85cccec44450c4c9c5bc71fb09bc3c71a` | RewardsManagerFactory-2 | impl | live | no |
+| ethereum | `0x5ddd768bae05b01828ea58167f76efa2e7787d88` | PlasmaVault | impl | live | no |
 | ethereum | `0x5de8c7a537e951f4d09ab3366d635f271c29762c` | TransparentUpgradeableProxy-6 | impl | live | no |
 | ethereum | `0x5dea8bbcc1fca0aaa72872aba72990278d2bdc1b` | PRBMathCommon | impl | live | no |
 | ethereum | `0x5e3654082406519e35a5426bb54f29d2651bd1c4` | SwapExecutorEth | impl | live | no |
@@ -811,33 +832,33 @@
 | ethereum | `0x60837bcaf0d157ede629ac4b5f6639f45db0aa2e` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x60d812ef6456cb199c9e342012ed9c6963d9dcf3` | TransparentUpgradeableProxy-8 | impl | live | no |
 | ethereum | `0x60fcc00b94fee45dcbf0ba053cd2083db27955ee` | EulerUngovernedPerspective | impl | live | no |
-| ethereum | `0x617ecc8891004794662616823a463df0ea4b2f70` | TimelockController | impl | live | no |
+| ethereum | `0x617ecc8891004794662616823a463df0ea4b2f70` | TimelockController-2 | impl | live | no |
 | ethereum | `0x61e09aad51c03ecb2e2d41d909b07b963b160119` | Utils | impl | live | no |
 | ethereum | `0x622827f76a106aa9f4399d8e2f5ff9822a593f2e` | AmmStorage | impl | live | no |
 | ethereum | `0x62357f6df9b45a638401482f085d9d998fd2aa6e` | FixedRateOracle | impl | live | no |
 | ethereum | `0x623750823f8cf4fa1b804723be024d56e1673d95` | AmmCloseSwapServiceUsdc | impl | live | no |
 | ethereum | `0x6243558a24cc6116abe751f27e6d7ede50abfc76` | LevvaToken | impl | live | no |
 | ethereum | `0x6245cd4e6fef97ccc0508242135fdf2577006cfc` | BaseAdapter | impl | live | no |
-| ethereum | `0x625087d72c762254a72cb22cc2eca40da6b95eac` | TransparentUpgradeableProxy-25 | proxy | live | yes |
-| ethereum | `0x6254faa72a40d8c1f4051fed8b33689f8d6e30bd` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| ethereum | `0x625087d72c762254a72cb22cc2eca40da6b95eac` | TransparentUpgradeableProxy-26 | proxy | live | yes |
+| ethereum | `0x6254faa72a40d8c1f4051fed8b33689f8d6e30bd` | TransparentUpgradeableProxy-12 | proxy | live | no |
 | ethereum | `0x62679b25956d525703c810a6c13e2324312649e8` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0x62fd67db5108bc9d050895a799810153fa976ded` | CrossAdapter | impl | live | no |
 | ethereum | `0x62fdeb94bdd0f7745c68b9b62c8af2cd0eb11f68` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x630fabeeadc8322747eb2c22035da4e23d675b90` | PythOracle | impl | live | no |
 | ethereum | `0x6329d4003b2d3846a0d0817aaac31baff862cbe7` | LevvaAirdropV2 | impl | live | no |
-| ethereum | `0x63395edaf74a80aa1155db7cd9bba976a88dee4e` | AmmTreasuryBaseV2 | proxy | live | no |
+| ethereum | `0x63395edaf74a80aa1155db7cd9bba976a88dee4e` | AmmTreasuryBaseV2-2 | proxy | live | no |
 | ethereum | `0x639156f8feb0cd88205e4861a0224ec169605acf` | Borrowing | impl | live | no |
 | ethereum | `0x63e3cc0aa61f85bbed4b3118185b7c2efab2e0de` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x63fbedb9921ac303bfd76ee7e1f5145ab225fb99` | TimelockControllerUpgradeable | proxy | live | no |
 | ethereum | `0x640434ad07990aa702df882562ee3050a399d277` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0x64096ab7d7376fc0eee5c6bd5c758d6f0d82c58b` | TimelockController-2 | impl | live | no |
+| ethereum | `0x64096ab7d7376fc0eee5c6bd5c758d6f0d82c58b` | TimelockController | impl | live | no |
 | ethereum | `0x6416e385f08421f524e2c7335444e56e897f7ddd` | AssetManagementUsdt | impl | live | no |
-| ethereum | `0x641b81e993e1c52a74a84caf17f1ad50a49675b3` | UniversalTokenSwapperFuse | impl | live | no |
+| ethereum | `0x641b81e993e1c52a74a84caf17f1ad50a49675b3` | UniversalTokenSwapperFuse-2 | impl | live | no |
 | ethereum | `0x644149b80028622d02a25d4825188c7e1e831069` | MiltonStorage | impl | live | no |
 | ethereum | `0x649fca0379b6d70ff6c1bc5b900ed41055e84e5d` | TransparentUpgradeableProxy | proxy | live | no |
-| ethereum | `0x64d47d8516034857c6fc040ecd405e03643a464f` | PlasmaVault | proxy | live | no |
+| ethereum | `0x64d47d8516034857c6fc040ecd405e03643a464f` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x654ff36e03d51a8710917b9fe4162e0e3ad776b1` | PriceOracleMiddlewareManager | impl | live | no |
-| ethereum | `0x6558eb96c61ccb8b23cfa26a6b91facd6a0ab162` | PriceManagerFactory | impl | live | no |
+| ethereum | `0x6558eb96c61ccb8b23cfa26a6b91facd6a0ab162` | PriceManagerFactory-2 | impl | live | no |
 | ethereum | `0x658ba5f7395774c664c7e6ac18d7e77f7871d45a` | PythOracle | impl | live | no |
 | ethereum | `0x65d798dc7c1cc79def7f05425fcd9d1a02e930a7` | PythOracle | impl | live | no |
 | ethereum | `0x6647fb8856cfc3e2f95f5b6100dd36574988e17b` | PythOracle | impl | live | no |
@@ -848,14 +869,16 @@
 | ethereum | `0x6653f10cfadc375dc14a0b55db6e5c037b6fa21b` | CrossAdapter | impl | live | no |
 | ethereum | `0x66af61f199ffee7bcfe52a2b8a18082f0067ca91` | CrossAdapter | impl | live | no |
 | ethereum | `0x66f616de88eeca5e1e3b0b6e9914a60a5c09927a` | EdgeFactory | impl | live | no |
+| ethereum | `0x66fd8de541c0594b4dccdfc13bf3a390e50d3afd` | Turtle-2 | proxy | live | no |
 | ethereum | `0x671698e3d6817c6ee3d13b19fca364d00ca142b1` | Provider | impl | live | no |
 | ethereum | `0x675f8028de5cfbe48c8340e8fb079dfd075bf539` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x677251190c0cccc6e7e71c385b3ea660dfd89c00` | ERC4626ZapInWithNativeToken | impl | live | no |
 | ethereum | `0x677365ac7ca3e9efe12a29a001737a3db265e8af` | BlackPearl | impl | live | no |
-| ethereum | `0x67f1fc9bd31a7a7aa332811dfcc2b156735fcb9d` | TimelockController | impl | live | no |
+| ethereum | `0x67e718f47db8dfa3a4b168c8761835f37b9ba3f0` | Turtle-3 | impl | live | no |
+| ethereum | `0x67f1fc9bd31a7a7aa332811dfcc2b156735fcb9d` | TimelockController-2 | impl | live | no |
 | ethereum | `0x68004911694ec42f0c56b7144a6a5281ffdd38f7` | IRMDefault | impl | live | no |
 | ethereum | `0x680922a0beb9701a92b97c4e5b6e7f1a4a3adf8a` | PythOracle | impl | live | no |
-| ethereum | `0x6857b21d872141e960d2eac6f92480c2c666e0c7` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x6857b21d872141e960d2eac6f92480c2c666e0c7` | IporFusionAccessManager-2 | impl | live | no |
 | ethereum | `0x686620b62ea4aa8fa9d518e332ca62b5f0405dc2` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x691db6db68ccdc0db4a58059760d61dcd6dd8dfc` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x6951d77882aa279f02763cd66b61e174171baa20` | FeeManager | impl | live | no |
@@ -864,7 +887,7 @@
 | ethereum | `0x6966defb920d4d0aa8886feddc7f84e1b1c5a318` | AmmPoolsServiceWeEth | impl | live | no |
 | ethereum | `0x699e04f98de2fc395a7dcbf36b48ec837a976490` | BoringVault | impl | live | no |
 | ethereum | `0x69a753b2dd4ab6cb7197308913f3ebb82d708909` | InterestRateDataResolver | impl | live | no |
-| ethereum | `0x69c121cd7f5e962c2698ae9352db1a0d751d5532` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x69c121cd7f5e962c2698ae9352db1a0d751d5532` | PlasmaVault | impl | live | no |
 | ethereum | `0x6a259c315c7c7c0a00c57768c3beb99502e7eb48` | MiltonUsdc | impl | live | no |
 | ethereum | `0x6a28afc75c46455e8025a50fc611071873fe5942` | StakingNode | impl | live | no |
 | ethereum | `0x6a786b8047aec8cc6b05f31351377404286a26e1` | StakingNode | impl | live | no |
@@ -893,29 +916,30 @@
 | ethereum | `0x6de59bd79e81cbafed64465330a57f2998ea224b` | TransparentUpgradeableProxy-4 | impl | live | no |
 | ethereum | `0x6df58fda55e181d3bed7aa795245d918b0ca5971` | CalculateWeightedLpTokenBalanceEthereum | impl | live | no |
 | ethereum | `0x6e0f1a68a08282aadb2c97b9080fd1c72b153b2c` | DToken | impl | live | no |
+| ethereum | `0x6e22a62e683da5146c982749c9242f6ee5fce86e` | AccessManagerUpgradeable | impl | live | no |
 | ethereum | `0x6e23447000a924f5cf6a5748a2f14c36b2c65aec` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x6e5c8274012d9cb386ef8dcc71a461b71bd07831` | TreasuryVester | impl | live | no |
 | ethereum | `0x6eedefd8899af188ceba10cf1514d60f44863ec5` | PythOracle | impl | live | no |
 | ethereum | `0x6f18b9f56bdee7f3b930804004629670f300787d` | ERC1967Proxy-9 | impl | live | no |
 | ethereum | `0x6f4506e47277ed3a816422a17b7f7d697edc5944` | ERC1967Proxy-2 | impl | live | no |
 | ethereum | `0x6f544e6f6245aab0d73a7fc292727639b877ae55` | EVCUtil | impl | live | no |
-| ethereum | `0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40` | PlasmaVault | proxy | live | no |
+| ethereum | `0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x6f79c23d482ea6d2b075092289aefb86e761ee9d` | PythOracle | impl | live | no |
 | ethereum | `0x6f80310ca7f2c654691d1383149fa1a57d8ab1f8` | SiloGovernanceToken | impl | live | no |
 | ethereum | `0x6fa8e73139e3e9dbcf3be9d3f185ffbc2f58c957` | CrossAdapter | impl | live | no |
 | ethereum | `0x6fac9cc26abf132cdfb357c1f38a32cd46bab5be` | FixedRateOracle | impl | live | no |
 | ethereum | `0x70572966feb31253d2d5aee07e6323b2c8d96806` | PythOracle | impl | live | no |
-| ethereum | `0x707d816272ed15174c72f92eccc4149d1dcb7a80` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x707d816272ed15174c72f92eccc4149d1dcb7a80` | PlasmaVault | impl | live | no |
 | ethereum | `0x70a2dc406566cf6c498ebca71226770d1bca5df0` | Extractor | impl | live | no |
 | ethereum | `0x70b3f6f61b7bf237df04589ddaa842121072326a` | EulerRouterFactory | impl | live | no |
 | ethereum | `0x7130383298822097531cf5cc5e3414dda1e09542` | PlasmaVaultRequestSharesFuse | impl | live | no |
-| ethereum | `0x71635dfc4fba5df7bc349e4bd27e3148f080393c` | MainnetActors | impl | live | no |
+| ethereum | `0x71635dfc4fba5df7bc349e4bd27e3148f080393c` | MainnetActors-3 | impl | live | no |
 | ethereum | `0x7185a1026ca03e29fa6045939f68a6873dffd024` | CrossAdapter | impl | live | no |
 | ethereum | `0x720e64a1c8912ba48ddf7ca7076ef016fab144ee` | CockpitDataProvider | proxy | live | no |
 | ethereum | `0x728d1d9de5d8c1f2f0cb49dd4074292cfa5d6977` | NodeOperatorRegistry | impl | live | yes |
 | ethereum | `0x72f8561b41fade563be5ca245545e9bacb906283` | MiltonUsdt | impl | live | no |
 | ethereum | `0x735b3fbc2ea7fce1b4e17d9e50eceafe4e6fc3d9` | AmmCloseSwapServiceDai | impl | live | no |
-| ethereum | `0x7390cdfff38c8871ccb80e9b38ff88fe735701e5` | TransparentUpgradeableProxy-14 | proxy | live | no |
+| ethereum | `0x7390cdfff38c8871ccb80e9b38ff88fe735701e5` | TransparentUpgradeableProxy-15 | proxy | live | no |
 | ethereum | `0x73bc33999c34a5126ca19dc900f22690c288d55e` | RedemptionAssetsVault | proxy | live | no |
 | ethereum | `0x73bddd7b48b653d4e78d88916a40f9890049ebe9` | CrossAdapter | impl | live | no |
 | ethereum | `0x73cb24f20ef23fd24d52969398c62ed6030c00cd` | ERC1967Proxy-18 | proxy | live | no |
@@ -926,13 +950,13 @@
 | ethereum | `0x7520c967cad6d872c8b0fa1444ed3ed26025015b` | ERC1967Proxy-13 | proxy | live | no |
 | ethereum | `0x7573ee497d884239715fa1e7b816536002e16f5c` | TokenStakingNode | impl | live | no |
 | ethereum | `0x75742cc3d48720de065814428f62622c56db6a86` | WithdrawManager | impl | live | no |
-| ethereum | `0x757e1bb7ade1ee157690b2c2d600a5a87cfb7058` | WrappedPlasmaVault | impl | live | no |
+| ethereum | `0x757e1bb7ade1ee157690b2c2d600a5a87cfb7058` | WrappedPlasmaVault-2 | impl | live | no |
 | ethereum | `0x758e7d537fc3233ccb77a634a9419eabcf621a7e` | LiquidityMining | impl | live | no |
 | ethereum | `0x759ddf11e56d2915fe10ea8c4dbfc44a8d048e6e` | ZeroBalanceFuse | impl | live | no |
 | ethereum | `0x75aaf54f12784935128306bee2520de55890a29a` | EVCUtil | impl | live | no |
 | ethereum | `0x75c1422c76ca92659fe3ca5a6a9ec5089b10af73` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0x75c99182a70ed72623748e041746b11f70b7bf5b` | ContextManager | impl | live | no |
-| ethereum | `0x75cc0c0ddd2ccafe6ec415be686267588011e36a` | TransparentUpgradeableProxy-26 | proxy | live | no |
+| ethereum | `0x75cc0c0ddd2ccafe6ec415be686267588011e36a` | TransparentUpgradeableProxy-27 | proxy | live | no |
 | ethereum | `0x75e82de02e3e512f3b0e28862a42055d59ddc1e0` | EToken | impl | live | no |
 | ethereum | `0x75eb304edcf99f8edb842195c2a618cf516db7f3` | LevvaPoolAdapter | impl | live | no |
 | ethereum | `0x768762712eca97bc9ec930320d3ee0bd91a358fb` | SpreadBaseV1 | impl | live | no |
@@ -955,18 +979,18 @@
 | ethereum | `0x784008e32c9f07d564f272ff8d6ea746e6842c1b` | WithdrawManager | impl | live | no |
 | ethereum | `0x7846bed0b55048db0e6a5388b89e92f091984d59` | PauseFunctionPreHook | impl | live | no |
 | ethereum | `0x7882f919e3acca984babd70529100f937d90f860` | StakingRewards | impl | live | no |
-| ethereum | `0x78cc1353b07a049f39b68e24a0670859ef7a64fe` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0x78cc1353b07a049f39b68e24a0670859ef7a64fe` | PlasmaVault | impl | live | no |
 | ethereum | `0x78dbf1ea2042fbef4af542aaaa81adb26884a0f7` | PowerToken | impl | live | no |
 | ethereum | `0x78f46f2c4aaa83a4c26dc5ac05d272f8f55a4357` | DualCrossReferencePriceFeedFactory | impl | live | no |
 | ethereum | `0x78f7c79d8ae156a6c68c67d0393d1ccc97df3bdf` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x79211feb623ccc1ed357b8cf14cd60c04d08fab6` | SnapshotRegistry | impl | live | no |
 | ethereum | `0x79439576ca22baf133e0afb232630509d3391d1c` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0x796592b2092f7e150c48643da19dd2f28be3333f` | TransparentUpgradeableProxy-27 | proxy | live | yes |
+| ethereum | `0x796592b2092f7e150c48643da19dd2f28be3333f` | TransparentUpgradeableProxy-28 | proxy | live | yes |
 | ethereum | `0x799e9b58895d7d10306ca6c4cab51728b142a224` | GenericFactory | impl | live | no |
 | ethereum | `0x79e8b115bd41baee318c1940f42f1a2d94d29ab4` | BurnRequestFeeFuse | impl | live | no |
-| ethereum | `0x79f140cf8ae51880fa00468c9621da125e79bbdb` | WithdrawManager | impl | live | no |
+| ethereum | `0x79f140cf8ae51880fa00468c9621da125e79bbdb` | WithdrawManager-4 | impl | live | no |
 | ethereum | `0x7a665a9d504f9f17e0239f7d4a4a555177281dd3` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0x7a79b55893a8799ee0184ca18fffc84699749aea` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x7a79b55893a8799ee0184ca18fffc84699749aea` | RewardsClaimManager-4 | impl | live | no |
 | ethereum | `0x7a9990e754f2224dcb441f7f690da1851b00073a` | MiltonDai | impl | live | no |
 | ethereum | `0x7aa7b0b738c2570c2f9f892cb7ca5bb89b9bf260` | ERC1967Proxy-14 | proxy | live | no |
 | ethereum | `0x7ae18fe76854fa5d4ae2e2f59323a61cacd41d31` | PythOracle | impl | live | no |
@@ -984,12 +1008,12 @@
 | ethereum | `0x7c33abe7c6d0cb7cdb1a9546780fafa696c9cb99` | ControllerContract | impl | live | no |
 | ethereum | `0x7c6f94e4d72c90eb87463fdc2e0604a9da8ec03e` | PriceOracleMiddlewareManager | impl | live | no |
 | ethereum | `0x7c89d05efb0555dce244283b9459512fc82b3d4a` | PythOracle | impl | live | no |
-| ethereum | `0x7c9119fbb87eb1a08224ad225362bdec213007e2` | PlasmaVaultFactory | impl | live | no |
+| ethereum | `0x7c9119fbb87eb1a08224ad225362bdec213007e2` | PlasmaVaultFactory-2 | impl | live | no |
 | ethereum | `0x7cd10fe8a9b5c8f5792d155e05da640410be5d04` | ERC1967Proxy-9 | impl | live | no |
 | ethereum | `0x7cd87c02ccda091378e5c9a713be5035807f8c1b` | LevvaPoolAdapter | impl | live | no |
 | ethereum | `0x7cebec7483b8d20ceaa4911b368d0113c020dd10` | CrossAdapter | impl | live | no |
 | ethereum | `0x7d3eda18100702520c04b1bb08fb4e51398fc88f` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0x7d49c68cb11f6203178d13b4186d39c454e3fe82` | PriceManagerFactory | impl | live | no |
+| ethereum | `0x7d49c68cb11f6203178d13b4186d39c454e3fe82` | PriceManagerFactory-3 | impl | live | no |
 | ethereum | `0x7da94120c2c680e0ad1641e48c32a30466a67f2c` | VestingWalletFactory | impl | live | no |
 | ethereum | `0x7dc23a56c2e611b569e96ba788048c895a10ecb5` | AmmCloseSwapService | impl | live | no |
 | ethereum | `0x7dd834c7844710435bd471b7499b16421ee84f3c` | Initialize | impl | live | no |
@@ -998,11 +1022,11 @@
 | ethereum | `0x7e9e7ea94e1ff36e216a703d6d66ece356a5fd44` | InterestRateModel | impl | live | no |
 | ethereum | `0x7ebc0974a4b9e5d20077de1c7a0840db52f1b1b6` | IporOracleFacadeDataProvider | proxy | live | no |
 | ethereum | `0x7ec22c4defe53ec35f03f0b6468ec319c577defc` | StakeDaoV2ClaimFuse | impl | live | no |
-| ethereum | `0x7ef926cb565fde40dacaa3d5712cfb488a6964d2` | PlasmaVault | impl | live | no |
+| ethereum | `0x7ef926cb565fde40dacaa3d5712cfb488a6964d2` | PlasmaVault-2 | impl | live | no |
 | ethereum | `0x7f12be038ca9143085fdaff550c883baeba53fc5` | CrossAdapter | impl | live | no |
 | ethereum | `0x7f275b3c502f0b685ef477a1357093c88ed36938` | FlexStrategyDeployer | impl | live | no |
 | ethereum | `0x7f2e2ad08ad809ba71e9cdab9339726b53564e82` | CrossAdapter | impl | live | no |
-| ethereum | `0x7f447457a771745688de5ec7c68c12fb47722349` | WithdrawManager | impl | live | no |
+| ethereum | `0x7f447457a771745688de5ec7c68c12fb47722349` | WithdrawManager-5 | impl | live | no |
 | ethereum | `0x7fa4d5e5efacab275c555eec77fbdd3b994521df` | SnapshotRegistry-2 | impl | live | no |
 | ethereum | `0x7fc56b3c11a5654e5f193fccea480047ae52325b` | PythOracle | impl | live | no |
 | ethereum | `0x7fd55817a481b192ca34998624d0d8eabce43790` | ynLSD | impl | live | no |
@@ -1022,8 +1046,8 @@
 | ethereum | `0x810055eb83b59b736e27b7191d0a0abe6737f0df` | NttManager | impl | live | no |
 | ethereum | `0x810e3c19475a12c3fced08d6217c6536c9747a90` | FixedRateOracle | impl | live | no |
 | ethereum | `0x812e3249b0a4bf41fee4201987b4cc4d53bbc3bb` | ResolvAdapter | impl | live | no |
-| ethereum | `0x8138fd4f5b62237c201b4d6c721b702dc64584e1` | WithdrawManager | impl | live | no |
-| ethereum | `0x818912488f1023419426d1410d351d7daa7df7aa` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x8138fd4f5b62237c201b4d6c721b702dc64584e1` | WithdrawManager-6 | impl | live | no |
+| ethereum | `0x818912488f1023419426d1410d351d7daa7df7aa` | IporFusionAccessManager-2 | impl | live | no |
 | ethereum | `0x8193caea6e5aa7006aeb25d55afc10615ec96eb2` | MidasBalanceFuse | impl | live | no |
 | ethereum | `0x81b8ae3e394293217363e7cb91949cd8e6103dcc` | TreasuryVester | impl | live | no |
 | ethereum | `0x81dc4ece6c44b9ff61c6e4038dcd89771961ece3` | RedstoneCoreOracle | impl | live | no |
@@ -1038,10 +1062,10 @@
 | ethereum | `0x83be46881aaeba80b3d647e08a47301db2e4e754` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0x83c8e36965faf05cc63937a8532ceb80ec86f54b` | PythOracle | impl | live | no |
 | ethereum | `0x83e0698654df4bc9f888c635ebe1382f0e4f7a61` | FixedRateOracle | impl | live | no |
-| ethereum | `0x84249464ca6f1591b4be126a2b531517fd7d5062` | PlasmaVault | impl | live | no |
+| ethereum | `0x84249464ca6f1591b4be126a2b531517fd7d5062` | PlasmaVault-2 | impl | live | no |
 | ethereum | `0x8489e3b08b21a611cd6aa80972e9260f3ec77f71` | EVCUtil | impl | live | no |
 | ethereum | `0x84918bf3bc644650cc8eff5a606a5ed7fd5cbe15` | SwapVerifier | impl | live | no |
-| ethereum | `0x84c87f41b9b650fed730258fb0fcb3b8a0375cb1` | RewardsClaimManager | impl | live | no |
+| ethereum | `0x84c87f41b9b650fed730258fb0fcb3b8a0375cb1` | RewardsClaimManager-2 | impl | live | no |
 | ethereum | `0x84da5ab890b0a3314deed0bebd2463309a755eac` | TransparentUpgradeableProxy-7 | impl | live | no |
 | ethereum | `0x8537b194bff354c4738e9f3c81d67e3371dadaf8` | IpTokenDai | impl | live | no |
 | ethereum | `0x8542f0461e89bfa3324b0911c63f57b9de6e3177` | WithdrawalQueue | impl | live | no |
@@ -1050,7 +1074,7 @@
 | ethereum | `0x85b23b710c74685484f7dda47746eb7d272cbe74` | Migrations | impl | live | no |
 | ethereum | `0x85befd4c29ab88d16903516e7e283a1c1c25d47a` | RepricingOracle-3 | impl | live | yes |
 | ethereum | `0x85fd7686ff4c4a3fbe3815eb90be46d17172325e` | IporFusionAccessManager | impl | live | no |
-| ethereum | `0x86149f5a512c3b7ec123d081e5e6193a63232e00` | TransparentUpgradeableProxy-9 | impl | live | no |
+| ethereum | `0x86149f5a512c3b7ec123d081e5e6193a63232e00` | TransparentUpgradeableProxy-11 | impl | live | no |
 | ethereum | `0x863ba8f64b1528de6c8a7239d80d4f2b7cff159b` | TransparentUpgradeableProxy-6 | impl | live | no |
 | ethereum | `0x8667082f128fa13139b859c1b40b4c8014d4a74f` | EulerFactoryPerspective | impl | live | no |
 | ethereum | `0x866d6c951c4b29120e5a545440280ad8d4a0eb49` | ERC1967Proxy-2 | impl | live | no |
@@ -1062,7 +1086,7 @@
 | ethereum | `0x870e1fb75bedbc2efb92857dc2b2cf171a0aec1f` | BalanceFusesReader | impl | live | no |
 | ethereum | `0x8710019824e557f907fb0b8bd23d610d74dd7444` | CrossAdapter | impl | live | no |
 | ethereum | `0x8712a255e120221d68d8086aca753086955669bb` | IporWeighted | impl | live | no |
-| ethereum | `0x8735ddcf007eab51987910cbecdcd7ded196566b` | TimelockController | impl | live | no |
+| ethereum | `0x8735ddcf007eab51987910cbecdcd7ded196566b` | TimelockController-2 | impl | live | no |
 | ethereum | `0x873efb11b064f4643675a11bc265844b357cb47a` | PythOracle | impl | live | no |
 | ethereum | `0x8771e28451f0a2b891b3401c94bcfa272215d48b` | VeloraSwapperFuse | impl | live | no |
 | ethereum | `0x87858b848c4b64bda3d694a554c5188f4c3e20e0` | VestingAirdrop | impl | live | no |
@@ -1084,12 +1108,12 @@
 | ethereum | `0x8ab4d16beb4e06b576b3e1828c7e69f7e66e2023` | AmmGovernanceService | impl | live | no |
 | ethereum | `0x8ae47cc57fab1bfd6d582256446cad4fde1c319b` | ERC1967Proxy-7 | impl | live | no |
 | ethereum | `0x8b1ebe26fe0f97024dfd1c62496dd396dd8029e8` | PriceOracleMiddlewareManager | impl | live | no |
-| ethereum | `0x8b25aefd9aa488d0e2493f533e9e79d29ddeee73` | TimelockController | impl | live | no |
+| ethereum | `0x8b25aefd9aa488d0e2493f533e9e79d29ddeee73` | TimelockController-3 | impl | live | no |
 | ethereum | `0x8b55cdae45782d0b543f73d064e881b65d3c3550` | PythOracle | impl | live | no |
-| ethereum | `0x8b94c156ebc20a3a385e898bb7a7973d46d0b303` | DualCrossReferencePriceFeedFactory | proxy | live | no |
+| ethereum | `0x8b94c156ebc20a3a385e898bb7a7973d46d0b303` | ERC1967Proxy-6 | proxy | live | no |
 | ethereum | `0x8bea65298c3e1a6cbb961a44b720d0216028be1e` | AmmPoolsLensEth | impl | live | no |
-| ethereum | `0x8bff06434c52306358749b0cc58db7d9aa1c654d` | IporFusionAccessManager | impl | live | no |
-| ethereum | `0x8c33a1d6d062db7b51f79702355771d44359cd7d` | TransparentUpgradeableProxy-28 | proxy | live | no |
+| ethereum | `0x8bff06434c52306358749b0cc58db7d9aa1c654d` | IporFusionAccessManager-3 | impl | live | no |
+| ethereum | `0x8c33a1d6d062db7b51f79702355771d44359cd7d` | TransparentUpgradeableProxy-29 | proxy | live | no |
 | ethereum | `0x8c8f2a5250d440bdf6ac21b097be04b07cce78af` | Erc4626BalanceFuse | impl | live | no |
 | ethereum | `0x8ce5249a189869ea829d1c73f230027dbe59beff` | CrossAdapter | impl | live | no |
 | ethereum | `0x8d99d6a89c906fe89eb977fc0b9b979716132aa0` | AmmCloseSwapLens | impl | live | no |
@@ -1114,15 +1138,15 @@
 | ethereum | `0x91c35e8edc103468692d2394b48b0b3d228f6ab1` | AmmStorage | impl | live | no |
 | ethereum | `0x91f046e629226b2c78b84fa1537603961aead0c5` | EscrowPerspective | impl | live | no |
 | ethereum | `0x91f5a069a5569cb1edecbc4eba5b85dbf36209e8` | EVCUtil | impl | live | no |
-| ethereum | `0x922350d9ff1217b2f2ce63a890be0d377deb1d42` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x922350d9ff1217b2f2ce63a890be0d377deb1d42` | IporFusionAccessManager-9 | impl | live | no |
 | ethereum | `0x922d0c82d70c3c9f8928742e8f75004dea228fe6` | PythOracle | impl | live | no |
 | ethereum | `0x923ab49b6f94c3276155e7f2e12ea6ae987ef9c4` | ContractAddresses | impl | live | no |
 | ethereum | `0x92587bc3c89289540813cfca9d6e9aa6a759af90` | CrossAdapter | impl | live | no |
 | ethereum | `0x92b172bd476948d01f858dd3faac4943e3bc775e` | PythOracle | impl | live | no |
-| ethereum | `0x92d904019a92b0cafce3492abb95577c285a68fc` | TransparentUpgradeableProxy-14 | proxy | live | no |
+| ethereum | `0x92d904019a92b0cafce3492abb95577c285a68fc` | TransparentUpgradeableProxy-15 | proxy | live | no |
 | ethereum | `0x9304345dda22aaaec97d0410bdf0b8a444d41367` | FusionFactory | impl | live | no |
 | ethereum | `0x932fdc86108a15126e6b05ff448c22423fbbf266` | RateProviderOracle | impl | live | no |
-| ethereum | `0x933bff1078ff1a0ca3b53dad00d7b1850af8749b` | Erc4626BalanceFuse | impl | live | no |
+| ethereum | `0x933bff1078ff1a0ca3b53dad00d7b1850af8749b` | Erc4626BalanceFuse-2 | impl | live | no |
 | ethereum | `0x93de2767e2d7f2efd2fd69152cd6837f84b12d20` | CrossAdapter | impl | live | no |
 | ethereum | `0x9425cc51e61f04942008b7caff129c2c6e57f217` | EulerV2SupplyFuse-2 | impl | live | no |
 | ethereum | `0x948548414a364c7d6f379ed73aeddb3c795dcacd` | SpreadCloseSwapService | impl | live | no |
@@ -1135,7 +1159,7 @@
 | ethereum | `0x95545a3a2b4329cc939f8256cbfb77c3ff2f2045` | RateProviderOracle | impl | live | no |
 | ethereum | `0x956b963173b0839eee86d20dd7b802409b6967e5` | TransparentUpgradeableProxy-4 | impl | live | no |
 | ethereum | `0x956c9b887cb8779140eed942fa91f51b13bd1b86` | BaseAdapter | impl | live | no |
-| ethereum | `0x956d09551251493f165eca171bd377c247ba8f4b` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0x956d09551251493f165eca171bd377c247ba8f4b` | IporFusionAccessManager-5 | impl | live | no |
 | ethereum | `0x95acdf1c8f4447e655a097aea3f92fb15035485d` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0x961ee1fb2c1b5dbb957c74ad119690c691982394` | Proxy | impl | live | no |
 | ethereum | `0x962131e9120a337202c448e8fdd61c0db890ee87` | PriceOracleMiddlewareManager | impl | live | no |
@@ -1147,14 +1171,14 @@
 | ethereum | `0x974672fa995917fec4a5c9db32784d36c370805d` | SDaiPriceFeedEthereum | impl | live | no |
 | ethereum | `0x97790da07639893debfd0ef2ac4b2c4c5898d0be` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x977ff719838c8560a45a307beb8cc34ea4e562d7` | Provider | impl | live | no |
-| ethereum | `0x9781413baff29db7bebdc52c475c780591c7b37b` | PlasmaVault | impl | live | no |
+| ethereum | `0x9781413baff29db7bebdc52c475c780591c7b37b` | PlasmaVault-2 | impl | live | no |
 | ethereum | `0x97d8dd4d99fe2a70a00dfef0c2d8d1c062b5beaf` | NodeOperatorRegistry-2 | impl | live | yes |
 | ethereum | `0x97e619c4573ce55a3aa8e105e339dce00e3bf3b2` | TransparentUpgradeableProxy-3 | impl | live | no |
 | ethereum | `0x97fcaa9f3af1df83515fee74af3cd06cdec3f4c8` | Utils-2 | impl | live | no |
 | ethereum | `0x98123c13af94bf49b5338d780551c45295de36da` | AmmStorage | impl | live | no |
 | ethereum | `0x98184fba0348b8ca908c1213ac8cbd4ad1bee902` | CrossAdapter | impl | live | no |
-| ethereum | `0x981a6c7ca4496acc3ff7bcdcc3b834fe0c4db5bc` | PlasmaVault-2 | impl | live | no |
-| ethereum | `0x9824dcdac89f208bf8b5cb5c4dc41f04a0878607` | PlasmaVault | proxy | live | no |
+| ethereum | `0x981a6c7ca4496acc3ff7bcdcc3b834fe0c4db5bc` | PlasmaVault | impl | live | no |
+| ethereum | `0x9824dcdac89f208bf8b5cb5c4dc41f04a0878607` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x9892a40fe6e17d4c88a92b2e37c12981baa6f14a` | RedemptionAssetsVault | impl | live | no |
 | ethereum | `0x98d664497161f74a8095dd80a211d4bdf2a400d5` | TransparentUpgradeableProxy-4 | impl | live | no |
 | ethereum | `0x98d7a0b0c895f6c602fe2e6b3aa83eafabb92ce6` | RiskManager | impl | live | no |
@@ -1167,11 +1191,11 @@
 | ethereum | `0x99db7619c018d61dbc2822767b63240d311d6992` | LSDWrapper | proxy | live | no |
 | ethereum | `0x9a20d3c0c283646e9701a049a2f8c152bc1e3427` | EulerEarn-2 | impl | live | no |
 | ethereum | `0x9a293ac079fdeaa54fcf3810e07b914672a28458` | MiningCalculationAccountPowerUp | impl | live | no |
-| ethereum | `0x9a449edc45550fea15ad1bcfd1448b8a2c37123b` | AmmTreasuryBaseV1 | proxy | live | no |
+| ethereum | `0x9a449edc45550fea15ad1bcfd1448b8a2c37123b` | AmmTreasuryBaseV1-3 | proxy | live | no |
 | ethereum | `0x9a5b39a667e3f80a3661271173b68340c59a9850` | ContextManagerFactory | impl | live | no |
 | ethereum | `0x9a94e4d777f81de7e390d5f93b40269cdf7c4539` | FixedAirdrop | impl | live | no |
 | ethereum | `0x9a9f60349e2da59250433276b3ef474f1f69f8e8` | AmmCloseSwapServiceUsdc | impl | live | no |
-| ethereum | `0x9aa21e5101279229a02326e411dafcbd48ba6db1` | MidasSupplyFuse | impl | live | no |
+| ethereum | `0x9aa21e5101279229a02326e411dafcbd48ba6db1` | MidasSupplyFuse-2 | impl | live | no |
 | ethereum | `0x9ac5092e027f0d9f24b4a1065c70973f3afda4cb` | IpToken | impl | live | no |
 | ethereum | `0x9af838b8bb05269dac4f30a127f171d3cf76dac3` | ERC4626ZapIn | impl | live | no |
 | ethereum | `0x9b2583d98fb39aa675caa33b81efbd539bdf276c` | Swapper | impl | live | no |
@@ -1179,7 +1203,7 @@
 | ethereum | `0x9b3fac455c34b45b8febfe844391bfb06849f03f` | ERC1967Proxy-15 | proxy | live | no |
 | ethereum | `0x9b496afe0684424bb3cd039ee1d23194a46091b4` | TimelockControllerUpgradeable | impl | live | no |
 | ethereum | `0x9b6f395d0f1cc253ca85e3b2ce54f915d03acfac` | OriginETHAdapter | impl | live | no |
-| ethereum | `0x9b933d84fac0782f3b275d76b64a0dbf6fbef28f` | TransparentUpgradeableProxy-15 | proxy | live | no |
+| ethereum | `0x9b933d84fac0782f3b275d76b64a0dbf6fbef28f` | TransparentUpgradeableProxy-16 | proxy | live | no |
 | ethereum | `0x9ba11acd88b79b657bdbd00b6de759718aaadcba` | TermsOfUseSigner | impl | live | no |
 | ethereum | `0x9bae7861110afeb00ecf740d43d94064c94929bb` | TreasuryVester | impl | live | no |
 | ethereum | `0x9bcde34f504a1a9bc3496ba9f1aea4c5fc400517` | AmmPoolsService | impl | live | no |
@@ -1195,10 +1219,10 @@
 | ethereum | `0x9cf78e518507b8922634a3ac02e8d8136768c5d9` | MiltonSpreadModelDai | impl | live | no |
 | ethereum | `0x9d4bd8cb9da419a9ca1343a5340ed4ce07e85140` | IporWeighted | proxy | live | no |
 | ethereum | `0x9d927d9551d23a6b6497e955db1f843a4af854d2` | CrossAdapter | impl | live | no |
-| ethereum | `0x9dc2819b49c3d39b11a5f4c8c0c17bd7e18126d9` | PlasmaVault | proxy | live | no |
+| ethereum | `0x9dc2819b49c3d39b11a5f4c8c0c17bd7e18126d9` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0x9dcbdd7ff7cc090ad722905be9b90306567f16af` | StableswapOracle | impl | live | no |
 | ethereum | `0x9def0a21ac8e2a402a58da00034014d0861143c7` | MiltonDai | impl | live | no |
-| ethereum | `0x9e72155d301a6555dc565315be72d295c76753c0` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| ethereum | `0x9e72155d301a6555dc565315be72d295c76753c0` | TransparentUpgradeableProxy-12 | proxy | live | no |
 | ethereum | `0x9ea85bcb76e4d52b03c44366d72ca5915a9f156c` | Liquidation | impl | live | no |
 | ethereum | `0x9ee335e15692317a4fadb221fea0affe48953130` | BaseAdapter | impl | live | no |
 | ethereum | `0x9f169aa3f0dab617a9ed1ba5a73d587a65f6dfac` | RedstoneCoreOracle | impl | live | no |
@@ -1206,8 +1230,8 @@
 | ethereum | `0xa02f9abd3dfb863650e7cf4e69f02e580aad7559` | LevvaPoolAdapter | impl | live | no |
 | ethereum | `0xa03a5af033c80e4a168c679bb5780387c5a91455` | PythOracle | impl | live | no |
 | ethereum | `0xa065ca5c2f250171ff8a8f93edf62c15e5a6f5fd` | EulerKinkIRMFactory | impl | live | no |
-| ethereum | `0xa0777a5b44d36ee425dc0ca828549f06e40e0cee` | Erc4626BalanceFuse | impl | live | no |
-| ethereum | `0xa07780fdaf46c0efd5c4f6349268065e5d1fdbe5` | UniversalTokenSwapperEthFuse | impl | live | no |
+| ethereum | `0xa0777a5b44d36ee425dc0ca828549f06e40e0cee` | Erc4626BalanceFuse-3 | impl | live | no |
+| ethereum | `0xa07780fdaf46c0efd5c4f6349268065e5d1fdbe5` | UniversalTokenSwapperEthFuse-2 | impl | live | no |
 | ethereum | `0xa07f30cb9797b537f7bc4739477ab3a650292734` | AmmCloseSwapServiceStEthBaseV2 | impl | live | no |
 | ethereum | `0xa084a7f49723e3cc5722e052cf7fce910e7c5fe6` | SnapshotRegistry-2 | impl | live | no |
 | ethereum | `0xa0a9511fcb0fcc9ea046abb417a2703d62f1edd7` | CrossAdapter | impl | live | no |
@@ -1221,7 +1245,7 @@
 | ethereum | `0xa22392a6011d0066ed02313e5f6e3fdec943158d` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xa252af9208e53c0ac6a79a5d0933a8d1f184fee5` | BalanceForwarder | impl | live | no |
 | ethereum | `0xa2869a2d515e873f38866f17c22df5ac59e61dde` | PythOracle | impl | live | no |
-| ethereum | `0xa301d6f34f2c8399e8564681cf675999cc1f1584` | UniversalTokenSwapperFuse | impl | live | no |
+| ethereum | `0xa301d6f34f2c8399e8564681cf675999cc1f1584` | UniversalTokenSwapperFuse-3 | impl | live | no |
 | ethereum | `0xa30845738443aa2dd6bd0783a47b0af8c01a9bed` | AmmPoolsServiceEth | impl | live | no |
 | ethereum | `0xa36d0b930640ad971bc4b657e4b697313807ff2d` | EulerEarn-2 | impl | live | no |
 | ethereum | `0xa3babe2e9a1fda1350b76eb77c40dd394c836102` | EbisuZapperLeverModifyFuse | impl | live | no |
@@ -1230,7 +1254,7 @@
 | ethereum | `0xa42493628d22b1a4f41140d598a499c71335b970` | ynETH | impl | live | no |
 | ethereum | `0xa4496d8edee7f6777d8bb9639d8fc1eca6e17ce8` | CrossAdapter | impl | live | no |
 | ethereum | `0xa469cd94e36e04109d64c708bfc961f2f274f2ec` | RewardsDistributor | impl | live | no |
-| ethereum | `0xa4ce33a1e22c79330873ba8010e69f0bd016610c` | TimelockController-4 | impl | live | no |
+| ethereum | `0xa4ce33a1e22c79330873ba8010e69f0bd016610c` | TimelockController-6 | impl | live | no |
 | ethereum | `0xa5190ba9698e7d8f8cdbfa1a6bb1f04ef9dd2634` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xa538907ff0993c67b3600ac1d753c5f2527abc18` | TreasuryVester | impl | live | no |
 | ethereum | `0xa55af35e5f4bb6a82e0a290570bce38ce2757d37` | UsualSP | proxy | live | no |
@@ -1242,19 +1266,19 @@
 | ethereum | `0xa613249ef6d0c3df83d0593abb63e0638d1d590f` | FluidInstadappStakingSupplyFuse | impl | live | no |
 | ethereum | `0xa61f5016f2cd5cec12d091f871fce1e1df5f0b67` | Governance | impl | live | no |
 | ethereum | `0xa664ed382e1076613c5b8be721b5cdb3643b1f20` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xa68479922368f64178d8fce44376057ef74783a4` | TimelockController-3 | impl | live | no |
+| ethereum | `0xa68479922368f64178d8fce44376057ef74783a4` | TimelockController-5 | impl | live | no |
 | ethereum | `0xa694c043224f1d3c4e431e0cff21661828678f32` | ContractAddresses | impl | live | no |
 | ethereum | `0xa6ac8b6af789319a1db994e25760eb86f796e2b0` | AssetManagementDai | proxy | live | no |
-| ethereum | `0xa6cd248943f3d3415458b264e2c890ff422a4c01` | TransparentUpgradeableProxy-18 | proxy | live | no |
+| ethereum | `0xa6cd248943f3d3415458b264e2c890ff422a4c01` | TransparentUpgradeableProxy-19 | proxy | live | no |
 | ethereum | `0xa72f8391d7c9f1991769b76858b8ac54ccee92cf` | Erc4626BalanceFuse | impl | live | no |
 | ethereum | `0xa735b8993778a10de2382f57a8282738497dd508` | OraclePublisher | proxy | live | no |
-| ethereum | `0xa76aa0b3d570ae04fcdd3e03fd217bfc5511448c` | WithdrawManager | impl | live | no |
+| ethereum | `0xa76aa0b3d570ae04fcdd3e03fd217bfc5511448c` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xa81ce0fc611cd3cc81a70d50d3d865f767715a72` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xa89163f7b2d68a8fba6ca36beed32bd4f3eeaf61` | SiloGovernor | impl | live | no |
 | ethereum | `0xa8bd8f089f5bd0bee61e23b3a0a4aa1332fe929d` | StakingNode | impl | live | no |
 | ethereum | `0xa8d5dfcf36bcb29adf9ebbd753c2978b9a982cc6` | InterestRateDataResolver | impl | live | no |
 | ethereum | `0xa90196785a133ad5f1768347eb407fcb1b44b77d` | WithdrawManager | impl | live | no |
-| ethereum | `0xa96a2716df5133b2fdc2ff367e51c609172f1038` | TransparentUpgradeableProxy-16 | proxy | live | no |
+| ethereum | `0xa96a2716df5133b2fdc2ff367e51c609172f1038` | TransparentUpgradeableProxy-17 | proxy | live | no |
 | ethereum | `0xa9839d52e964d0ed0d6d546c27d2248fac610c43` | RewardsDistribution | impl | live | no |
 | ethereum | `0xa98e8652daf2407839b18f4e215d86d88eb91582` | TransparentUpgradeableProxy-6 | impl | live | no |
 | ethereum | `0xa9b11f86aedb82309846c98d92ef258988a84c8e` | Swap | impl | live | no |
@@ -1267,11 +1291,11 @@
 | ethereum | `0xaa68ca9c69a4ff22203ce189ce4448d7401875e8` | SwETHSY | impl | live | no |
 | ethereum | `0xaa921500cc1048d234c78cdacb7efd8167af2b0c` | CrossAdapter | impl | live | no |
 | ethereum | `0xaac93a4dde34ce9ad9dd8556b9fadd83380a5d64` | TransparentUpgradeableProxy-8 | impl | live | no |
-| ethereum | `0xaae0b305b3f1edde7b11b680d4fa9252f7a1c524` | TransparentUpgradeableProxy-29 | proxy | live | yes |
+| ethereum | `0xaae0b305b3f1edde7b11b680d4fa9252f7a1c524` | TransparentUpgradeableProxy-30 | proxy | live | yes |
 | ethereum | `0xab21f487d3a3f126d1a92788c3b1d96ab4093029` | RateProviderOracle | impl | live | no |
 | ethereum | `0xab81e5a7d896cc56ffe10197a38dfa683dce2c3f` | PythOracle | impl | live | no |
 | ethereum | `0xab97e49fcb752f7713090814199b4458b4ea1bad` | StEthWrapperFuse | impl | live | no |
-| ethereum | `0xabab980f0ecb232d52f422c6b68d25c3d0c18e3e` | PlasmaVault | proxy | live | no |
+| ethereum | `0xabab980f0ecb232d52f422c6b68d25c3d0c18e3e` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0xabc0fdd71077e415e81cca77a088f6664967df0e` | ContextManager | impl | live | no |
 | ethereum | `0xabcb3ad4f5ec4f662c4e253916d952244049a82b` | ERC1967Proxy-2 | impl | live | no |
 | ethereum | `0xabcc3fd22e87a3bb63af4ec6c41b57872e2afcba` | RedstoneCoreOracle | impl | live | no |
@@ -1282,7 +1306,7 @@
 | ethereum | `0xac2c2f627b26caddfed33d9acc1fc8966995dcc6` | TreasuryVester | impl | live | no |
 | ethereum | `0xac3a8f70c421849da72136dc7c8883984c2653b6` | LevvaToken | impl | live | no |
 | ethereum | `0xac5b04988bc71bee96f8d93040777db3ef166125` | IpToken-2 | impl | live | no |
-| ethereum | `0xac84794ad9aa87fd001e019bbeb53c5c0bc69c2b` | WithdrawManager | impl | live | no |
+| ethereum | `0xac84794ad9aa87fd001e019bbeb53c5c0bc69c2b` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xacbb7efa64ab9e01c4d397e3b7a6c8e289cc09f5` | CockpitDataProvider | proxy | live | no |
 | ethereum | `0xacc25c4d40651676feed43a3467f3169e3e68e42` | EulerGeneralView | impl | live | no |
 | ethereum | `0xad8a5c16fdf36e568f602d088dd0c0ade52dd652` | RiskManager | impl | live | no |
@@ -1291,8 +1315,8 @@
 | ethereum | `0xadeb2ff65d75f971087dc8a09b149df6313c1872` | StanleyDai | impl | live | no |
 | ethereum | `0xae12f6f805842e6dafe71a6d2b41b28ba5fc821e` | Usd0 | impl | live | no |
 | ethereum | `0xae26485acddefd486fe9ad7c2b34169d360737c7` | SwapVerifier | impl | live | no |
-| ethereum | `0xae4362a98cd22f711f9b9f9f3edb9bb1379a573c` | PlasmaVault-2 | impl | live | no |
-| ethereum | `0xae92a01a3c320b4f62d535d337bbffceee2ac544` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xae4362a98cd22f711f9b9f9f3edb9bb1379a573c` | PlasmaVault | impl | live | no |
+| ethereum | `0xae92a01a3c320b4f62d535d337bbffceee2ac544` | PlasmaVault | impl | live | no |
 | ethereum | `0xae9a37dd9229687662834e6696e396e7837baabd` | EulerV2BalanceFuse-2 | impl | live | no |
 | ethereum | `0xae9ece3dbf4b457dd44a7be8e683dce3e2c91205` | CrossAdapter | impl | live | no |
 | ethereum | `0xaed37a234cc880a9e3d9fd9022013ee0a419493e` | Liquidation | impl | live | no |
@@ -1303,8 +1327,8 @@
 | ethereum | `0xb00c99e483cee10d838988c07e0dae02159efe34` | IporWeighted | impl | live | no |
 | ethereum | `0xb013be1d0d380c13b58e889f412895970a2cf228` | BaseHook | impl | live | no |
 | ethereum | `0xb0314675c415a8df639d2d0f042f61cf5588243f` | TokenStakingNodesManager | impl | live | no |
-| ethereum | `0xb03a4f04aa4cc8ef88e6cf709d61f54571d6752e` | RewardsManagerFactory | impl | live | no |
-| ethereum | `0xb060841150adc3707e4cd37f9a7833a2a957d189` | TransparentUpgradeableProxy-13 | proxy | live | no |
+| ethereum | `0xb03a4f04aa4cc8ef88e6cf709d61f54571d6752e` | RewardsManagerFactory-3 | impl | live | no |
+| ethereum | `0xb060841150adc3707e4cd37f9a7833a2a957d189` | TransparentUpgradeableProxy-14 | proxy | live | no |
 | ethereum | `0xb08b2822dd7e4f8f89309aa68073a4fc1489adb4` | Staking | impl | live | no |
 | ethereum | `0xb0984f735ffb8c959f1a015b70d4550bb55ff846` | LiquidityMiningEthereum | impl | live | no |
 | ethereum | `0xb0a4855134f63bf81f3dc6da38de8894fb24904a` | AmmPoolsLensStEth | impl | live | no |
@@ -1313,11 +1337,11 @@
 | ethereum | `0xb17a9d70a73e0dcffc12563bcc0c1d68f3f353c8` | WrappedPlasmaVaultFactory | proxy | live | no |
 | ethereum | `0xb18f83c89a9102d10eb25496326506e1ace34996` | PythOracle | impl | live | no |
 | ethereum | `0xb1c0ccb170f0af6ec8ad6a8622d0136fb744f0c0` | AmmTreasuryBaseV2 | impl | live | no |
-| ethereum | `0xb1c63581929d372f35c26327385e9ff6c636e94d` | TransparentUpgradeableProxy-14 | proxy | live | no |
+| ethereum | `0xb1c63581929d372f35c26327385e9ff6c636e94d` | TransparentUpgradeableProxy-15 | proxy | live | no |
 | ethereum | `0xb1cee7ba9997b505f3e01e7021f67521618fea67` | MiltonDai | impl | live | no |
-| ethereum | `0xb20e1dc72f261c857b6eae41bc59a24fcf0cd802` | RewardsClaimManager | impl | live | no |
+| ethereum | `0xb20e1dc72f261c857b6eae41bc59a24fcf0cd802` | RewardsClaimManager-2 | impl | live | no |
 | ethereum | `0xb2374f84b3ceeff6492943df613c9bcf45322a0c` | SiloRouter | impl | live | no |
-| ethereum | `0xb2d9f718f8e9e11dafa13d9878a742253ddf8a05` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xb2d9f718f8e9e11dafa13d9878a742253ddf8a05` | IporFusionAccessManager-3 | impl | live | no |
 | ethereum | `0xb2ea64316eefc109f8685cd8751e2468cabc5e76` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xb30f23bc5f93f097b3a699f71b0b1718fc82e182` | EVKFactoryPerspective | impl | live | no |
 | ethereum | `0xb39822a4212b63c90c674a5e608cecbf4b071421` | AccountingModule | impl | live | no |
@@ -1325,21 +1349,21 @@
 | ethereum | `0xb3b30ffb54082cb861b17dfbe459370d1cc219ac` | SnapshotRegistry-2 | impl | live | no |
 | ethereum | `0xb3d1c1ab4d30800162da40eb18b3024154924ba5` | AmmStorage | proxy | live | no |
 | ethereum | `0xb3d5c1b8d512bd41d845817f84e4ea29bf038fb5` | SiloV2SupplyBorrowableCollateralFuse | impl | live | no |
-| ethereum | `0xb3d9cf8e163bbc840195a97e81f8a34e295b8f39` | TransparentUpgradeableProxy-30 | proxy | live | no |
-| ethereum | `0xb401b9e1104726e1c9b59580588c116cc0fdc3e2` | RewardsClaimManager | impl | live | no |
-| ethereum | `0xb46dca81395659e505833cba7057df9065c1f434` | IporFusionAccessManager | impl | live | no |
-| ethereum | `0xb4790cfdf1df71c2e4ac2f5c43dbcb975ad447ae` | PlasmaVault | proxy | live | no |
+| ethereum | `0xb3d9cf8e163bbc840195a97e81f8a34e295b8f39` | TransparentUpgradeableProxy-31 | proxy | live | no |
+| ethereum | `0xb401b9e1104726e1c9b59580588c116cc0fdc3e2` | RewardsClaimManager-9 | impl | live | no |
+| ethereum | `0xb46dca81395659e505833cba7057df9065c1f434` | IporFusionAccessManager-3 | impl | live | no |
+| ethereum | `0xb4790cfdf1df71c2e4ac2f5c43dbcb975ad447ae` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0xb4ad4d9c02c01b01cf586c16f01c58c73c7f0188` | Vault | impl | live | no |
 | ethereum | `0xb4d68bc247a1def6fb0b6d0f69906c5b75afe2ad` | RiskManager | impl | live | no |
 | ethereum | `0xb4efe9d18696915523ef386e763070f0d5fe865f` | EulerClaims | impl | live | no |
 | ethereum | `0xb50c618d63806ec1594547ecdb3e97737d6c12c6` | SpreadStorageLens | impl | live | no |
 | ethereum | `0xb512e32e56f270e9a1dbd56be6fa7baf0014114b` | StanleyUsdc | impl | live | no |
-| ethereum | `0xb530a1b5259a71187f1d69acf0488f102637a3ed` | PlasmaVault | proxy | live | no |
+| ethereum | `0xb530a1b5259a71187f1d69acf0488f102637a3ed` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0xb540e30c08f3b8faf4b9d9545313ba4d2e619b00` | LevvaVaultFactory | proxy | live | no |
 | ethereum | `0xb56e997d3edaa4f7f5b111c04018ca0e1c253c2c` | Migrations | impl | live | no |
-| ethereum | `0xb5842341920266e099209be4d622d7936d79a4c8` | RewardsClaimManager | impl | live | no |
-| ethereum | `0xb59f18d56081aa21232d371c23585cdee225c300` | TimelockController-2 | impl | live | no |
-| ethereum | `0xb5c14b4c741391d5625a56f70049ab2d720be9c9` | ZeroBalanceFuse | impl | live | no |
+| ethereum | `0xb5842341920266e099209be4d622d7936d79a4c8` | RewardsClaimManager-2 | impl | live | no |
+| ethereum | `0xb59f18d56081aa21232d371c23585cdee225c300` | TimelockController | impl | live | no |
+| ethereum | `0xb5c14b4c741391d5625a56f70049ab2d720be9c9` | ZeroBalanceFuse-3 | impl | live | no |
 | ethereum | `0xb5e4576c2faa16b0cc59d1a2f3366164844ef9e0` | MetaMorphoV1_1 | impl | live | no |
 | ethereum | `0xb64524af495465c7586337257259b0b2503deb54` | TransparentUpgradeableProxy-5 | impl | live | no |
 | ethereum | `0xb64f71300626499d3d9f8e87bfa34f50c75f0470` | AmmGovernanceServiceBaseV1 | impl | live | no |
@@ -1351,12 +1375,12 @@
 | ethereum | `0xb6a547833ea2a28c871386acea626a6119ac11f2` | MiltonDai | impl | live | no |
 | ethereum | `0xb7018c15279e0f5990613cc00a91b6032066f2f7` | PriceOracleMiddleware | proxy | live | no |
 | ethereum | `0xb70a2e06e77e7d91f8b9332639f8b7ebe48d99e6` | SoapIndicatorRebalanceLogic | impl | live | no |
-| ethereum | `0xb7394c28d4ff1753123e823642ac7acf6475be04` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xb7394c28d4ff1753123e823642ac7acf6475be04` | IporFusionAccessManager-5 | impl | live | no |
 | ethereum | `0xb74d6752e40068eca198a66db97afbcd00f7226f` | PythOracle | impl | live | no |
 | ethereum | `0xb77d06d97dc1e641cd514d8df89befc07350b445` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xb820032915fdf761af877c8fa3d7138659026a97` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xb8673a940c4f0339d7ad4466a18c298806ab69b4` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xb8819cd07b042b4f514e4ab381f675614cb7b37d` | TransparentUpgradeableProxy-12 | impl | live | no |
+| ethereum | `0xb8819cd07b042b4f514e4ab381f675614cb7b37d` | TransparentUpgradeableProxy-13 | impl | live | no |
 | ethereum | `0xb88600ae5ac91486b13b2ef20bbf2378c3d35d64` | ERC1967Proxy-15 | impl | live | no |
 | ethereum | `0xb886d4ed71c5677347ad891a6a71dfe4fa45464b` | WithdrawalQueue-2 | impl | live | no |
 | ethereum | `0xb8b734d9acf8e38e34a3808bbfd1ded52c39c94a` | SnapshotRegistry-2 | impl | live | no |
@@ -1370,16 +1394,16 @@
 | ethereum | `0xb98bc3e3b9ea8d86f6ee321737fa23710737f1af` | SiloModule | impl | live | no |
 | ethereum | `0xb99f2a02c0851efdd417bd6935d2efcd23c56e61` | AmmStorage | proxy | live | no |
 | ethereum | `0xba42141648dfd74388f3541c1d80fa9387043da9` | EulerEarn | impl | live | no |
-| ethereum | `0xba4cc481582fc52b7a7f3d4d24867a35efeb64fb` | MainnetActors | impl | live | no |
+| ethereum | `0xba4cc481582fc52b7a7f3d4d24867a35efeb64fb` | MainnetActors-4 | impl | live | no |
 | ethereum | `0xba610f3e1cedd17e5fa5baf5d7cbfaceeaedcc7a` | IporWeighted | impl | live | no |
 | ethereum | `0xba68398feecb2fe95c1d0d66106ae1d432270317` | ContextManager | impl | live | no |
 | ethereum | `0xba829003e6b5dd858fbed3945719939a6dc3073b` | Timelock | impl | live | no |
 | ethereum | `0xba84b0f6657685369215dab773ce50bc55aabe08` | FusionFactory | impl | live | no |
 | ethereum | `0xba8e4ee6ea2c78dab76cac256c2b7faaaa8324e2` | RateProviderOracle | impl | live | no |
 | ethereum | `0xbaa3accee85a34cab03a587cd9b3a3728ec89e3a` | EulerSwapPeriphery | impl | live | no |
-| ethereum | `0xbacf97aa4bcb35b285b5838e5a459b632580ad28` | WithdrawManager | impl | live | no |
+| ethereum | `0xbacf97aa4bcb35b285b5838e5a459b632580ad28` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xbb0d4bb654a21054af95456a3b29c63e8d1f4c0a` | EToken | impl | live | no |
-| ethereum | `0xbb73f8a5b0074b27c6df026c77fa08b0111d017a` | TimelockController | impl | live | no |
+| ethereum | `0xbb73f8a5b0074b27c6df026c77fa08b0111d017a` | TimelockController-3 | impl | live | no |
 | ethereum | `0xbb7b99c2be525c0a6b719344f89a4255ef593e64` | AccessControlManager-3 | impl | live | yes |
 | ethereum | `0xbb838373c5168184abf60c2547cec94411a2a5da` | ERC1967Proxy-3 | impl | live | no |
 | ethereum | `0xbc011a12da28e8f0f528d9ee5e7039e22f91cf18` | AccessControlManager-4 | impl | live | yes |
@@ -1407,18 +1431,18 @@
 | ethereum | `0xbf893f7062fcceb83d295e7fb407a64f941d5204` | Swapper | impl | live | no |
 | ethereum | `0xc0121817ff224a018840e4d15a864747d36e6eb2` | EVCUtil-2 | impl | live | no |
 | ethereum | `0xc018650b9b040f81b3e72014487114067676afe8` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xc025ec32cb1d5788cabfb874a1a69b3411d545df` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xc025ec32cb1d5788cabfb874a1a69b3411d545df` | IporFusionAccessManager-4 | impl | live | no |
 | ethereum | `0xc039229ebcef32f898031eb81f646880f39a190b` | PythOracle | impl | live | no |
 | ethereum | `0xc05055e42986954029a463fed5b4178c24b0d4e1` | PythOracle | impl | live | no |
 | ethereum | `0xc06f56b865f45d4a80707e7d1403767177c44b22` | AaveV3CollateralFuse | impl | live | no |
 | ethereum | `0xc09b45b31b7dd7b7becb348f1df192c6948986b9` | RateProviderOracle | impl | live | no |
 | ethereum | `0xc09be111d95171d1d5db43f1324005d21c098b52` | BasePerspective | impl | live | no |
 | ethereum | `0xc0c89911c20453b1d897355ee7208e8270fc3248` | SiloGovernanceTokenV2 | impl | live | no |
-| ethereum | `0xc0cff2e88446b60721891ae3327654167acc5187` | TransparentUpgradeableProxy-16 | impl | live | no |
+| ethereum | `0xc0cff2e88446b60721891ae3327654167acc5187` | TransparentUpgradeableProxy-17 | impl | live | no |
 | ethereum | `0xc13f3fd20556a595990c35612e9e5c1c071cb691` | OdosSwapperFuse | impl | live | no |
-| ethereum | `0xc16fef607b58bb8fa4a1433ceb09663c9c2e64da` | TransparentUpgradeableProxy-15 | proxy | live | no |
+| ethereum | `0xc16fef607b58bb8fa4a1433ceb09663c9c2e64da` | TransparentUpgradeableProxy-16 | proxy | live | no |
 | ethereum | `0xc1754849f48b0143359a95b9a2e24e90ec82b838` | IporProtocolRouter | impl | live | no |
-| ethereum | `0xc1926c01ed88e93f5c266f3b43af57c1f6e63b5d` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0xc1926c01ed88e93f5c266f3b43af57c1f6e63b5d` | PlasmaVault | impl | live | no |
 | ethereum | `0xc1c5b18774d0282949331b719b5ea4a21cbc62c8` | TransparentUpgradeableProxy | impl | live | no |
 | ethereum | `0xc223ea44d522d4f07646fa00261d7ba6868cc210` | ContextManager | impl | live | no |
 | ethereum | `0xc26be51e50a358ec6d366147d78ab94e9597239c` | ERC1967Proxy-10 | proxy | live | no |
@@ -1430,7 +1454,7 @@
 | ethereum | `0xc35a0fda69e9d71e68c0d9cbb541adfd21d6b117` | EulerSwap | impl | live | no |
 | ethereum | `0xc389461171f0f28f9b2d1fbaeadb85f3f3500f39` | RedemptionAssetsVault | impl | live | no |
 | ethereum | `0xc3eb0c3f691f3fd2fc3ab6ae03b68c7c888d5787` | PriceOracleMiddlewareManager | impl | live | no |
-| ethereum | `0xc40431b6c510aeb45fbb5e21e40d49f12b0c1f0c` | IpToken | impl | live | no |
+| ethereum | `0xc40431b6c510aeb45fbb5e21e40d49f12b0c1f0c` | IpToken-3 | impl | live | no |
 | ethereum | `0xc43de36a1acb75ea0e5df9efad9d67d57ddbf79e` | TreasuryVester | impl | live | no |
 | ethereum | `0xc4406e4a14d2c0378952649bf56716a39ce64c6b` | CrossAdapter | impl | live | no |
 | ethereum | `0xc4441c2be5d8fa8126822b9929ca0b81ea0de38e` | Usual | proxy | live | no |
@@ -1449,22 +1473,22 @@
 | ethereum | `0xc667d21d0bffd9007cdb68a119bc6b121b1cb2ed` | CrossAdapter | impl | live | no |
 | ethereum | `0xc68cb3658acf1d49547fa8605dc158d876cd5828` | BasePerspective-2 | impl | live | no |
 | ethereum | `0xc697bb6625d9f7adcf0fbf0cbd4dcf50d8716cd3` | EulStakes | impl | live | no |
-| ethereum | `0xc6ca36961eb569586287a850710c252a9b42d46b` | TimelockController | impl | live | no |
-| ethereum | `0xc6d480ebdf32d53fb10bf98fa97d5efe570098d6` | TimelockController-2 | impl | live | no |
+| ethereum | `0xc6ca36961eb569586287a850710c252a9b42d46b` | TimelockController-3 | impl | live | no |
+| ethereum | `0xc6d480ebdf32d53fb10bf98fa97d5efe570098d6` | TimelockController | impl | live | no |
 | ethereum | `0xc70c9bbbdd1fc72a6be7ff092774d981216952e0` | ynViewer | proxy | live | no |
-| ethereum | `0xc7cccfebb13e1cabd716187aa6ce378d71a0ad29` | TransparentUpgradeableProxy-15 | proxy | live | no |
+| ethereum | `0xc7cccfebb13e1cabd716187aa6ce378d71a0ad29` | TransparentUpgradeableProxy-16 | proxy | live | no |
 | ethereum | `0xc7f29686965c758f49a4bac68eb243be73f8aee6` | OriginETHAdapter | impl | live | no |
 | ethereum | `0xc82bfd20ff71b2cf913a6e7959431027938d9748` | TokenStakingNode | impl | live | no |
 | ethereum | `0xc843174ffb68a02d8c64048e062b21c53ea574c9` | ERC1967Proxy-8 | impl | live | no |
 | ethereum | `0xc87bfc9de10b45adb6d10945f612a3de5b3e134e` | WBTCOracle | impl | live | no |
 | ethereum | `0xc87d5109cfbef902df1849ce53ab84ba1be9e28e` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xc89de4e55f1c754b431435c7e5c172635c35d8c6` | TimelockController-2 | impl | live | no |
+| ethereum | `0xc89de4e55f1c754b431435c7e5c172635c35d8c6` | TimelockController | impl | live | no |
 | ethereum | `0xc8b36227c9c496f6d9c06462f285f55c93fbd7d9` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xc93382d5fcef4303d7ed1a3015172e9e03badd1c` | PythOracle | impl | live | no |
-| ethereum | `0xc94cffd5249df4008a043ee61e13f19af16d0936` | TransparentUpgradeableProxy-31 | proxy | live | no |
+| ethereum | `0xc94cffd5249df4008a043ee61e13f19af16d0936` | TransparentUpgradeableProxy-32 | proxy | live | no |
 | ethereum | `0xc954d67767f29c3f72ef6ac30a2c65463b24c47f` | TransparentUpgradeableProxy-3 | impl | live | no |
 | ethereum | `0xc9775fb90053119ac99c67f5536dbc02dfd28b2a` | CrossAdapter | impl | live | no |
-| ethereum | `0xc98dce50f707f7563ec8ba0274b43bcf940919cb` | TransparentUpgradeableProxy-19 | proxy | live | no |
+| ethereum | `0xc98dce50f707f7563ec8ba0274b43bcf940919cb` | TransparentUpgradeableProxy-20 | proxy | live | no |
 | ethereum | `0xc99d3ac84f308445fe60c431c48a3e63eff0e452` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xc9dc6c3d9df09986550b8c0a5ae9119f640ab80f` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xc9eeee3ae20e9c5db213a57ef102e4063fa12612` | AaveV3WithPriceOracleMiddlewareBalanceFuse | impl | live | no |
@@ -1473,15 +1497,15 @@
 | ethereum | `0xca2df225ba3c4743e02611ec423faac311deeed4` | Timelock-2 | impl | live | no |
 | ethereum | `0xcab67d0c1f30c961754466818dd333f3902e68f4` | CrossAdapter | impl | live | no |
 | ethereum | `0xcae0a39b45ee9c3213f64392fa6df30ce034c9f9` | EulerKinkIRMFactory | impl | live | no |
-| ethereum | `0xcb1bbc36c711ae3d36d9dc61d75dd8efff34f224` | RewardsClaimManager | impl | live | no |
-| ethereum | `0xcb1ceae1645f721a378357d64f57527d0280b111` | WithdrawManager | impl | live | no |
+| ethereum | `0xcb1bbc36c711ae3d36d9dc61d75dd8efff34f224` | RewardsClaimManager-10 | impl | live | no |
+| ethereum | `0xcb1ceae1645f721a378357d64f57527d0280b111` | WithdrawManager-7 | impl | live | no |
 | ethereum | `0xcb3b0337de55e0b9bbd977680735c41605976168` | WithdrawalQueue | impl | live | no |
 | ethereum | `0xcb5d695f4c64f88ea3026b416f43913c629f2bb1` | WithdrawManager | impl | live | no |
 | ethereum | `0xcb5ef939f94d1609a1d45e63e693ada259179362` | PriceOracleMiddlewareManager | impl | live | no |
-| ethereum | `0xcb6bb5ab51cdc6efb3b81c84f252cfe6bfba6566` | Erc4626BalanceFuse | impl | live | no |
+| ethereum | `0xcb6bb5ab51cdc6efb3b81c84f252cfe6bfba6566` | Erc4626BalanceFuse-4 | impl | live | no |
 | ethereum | `0xcb6ea7fddfdf2afc2bc6bf715185a33f8e27b96b` | AuraSwEthBbAWethSYV2 | impl | live | no |
 | ethereum | `0xcb89a692e8233636fdc0033e948dede9762e7cf9` | PythOracle | impl | live | no |
-| ethereum | `0xcc2ff2d38666723ea56c122097f6215b90d74196` | AmmTreasuryBaseV2 | proxy | live | no |
+| ethereum | `0xcc2ff2d38666723ea56c122097f6215b90d74196` | AmmTreasuryBaseV2-3 | proxy | live | no |
 | ethereum | `0xcc3fc4c9ba7f8b8aa433bc586d390a70560ff366` | LiquidityMiningEthereum | proxy | live | no |
 | ethereum | `0xcc560e0d36a80a439cbfdde8f6645e9bdaff6a8c` | Extractor | impl | live | no |
 | ethereum | `0xcc6a0845165ae0868a04d1656673192a0d33af67` | RedstoneCoreOracle | impl | live | no |
@@ -1491,11 +1515,12 @@
 | ethereum | `0xcd05909c4a1f8e501e4ed554cef4ed5e48d9b852` | FusionFactory | proxy | live | no |
 | ethereum | `0xcd284a617b4ed7697c2e455d95049c7fc538785c` | RswETH-2 | impl | live | yes |
 | ethereum | `0xcd28b12c7d6a304ef8d66cc27f25a126ac1174a2` | EVCUtil | impl | live | no |
-| ethereum | `0xcd397f64a171158d999b6f256b0cc169feed6889` | RewardsClaimManager | impl | live | no |
+| ethereum | `0xcd397f64a171158d999b6f256b0cc169feed6889` | RewardsClaimManager-5 | impl | live | no |
+| ethereum | `0xcd3f84fc4650abe77b8abda1227af80ddf650ae6` | Stream | impl | live | no |
 | ethereum | `0xcd7e5edb7b7da6f8cc4ad07c2b68eca060bc03be` | MiltonDai | impl | live | no |
 | ethereum | `0xcd96ba8995e6e0146df363b80e6f1f2b93fbebbc` | AmmPoolsServiceStEth-2 | impl | live | no |
-| ethereum | `0xcdb0a68935f59eaf575ca27b6efe1f65f08b5821` | RewardsClaimManager | impl | live | no |
-| ethereum | `0xcdc7997a268abc11b44624ff39447a3a6aedc09c` | PlasmaVaultFactory | impl | live | no |
+| ethereum | `0xcdb0a68935f59eaf575ca27b6efe1f65f08b5821` | RewardsClaimManager-3 | impl | live | no |
+| ethereum | `0xcdc7997a268abc11b44624ff39447a3a6aedc09c` | PlasmaVaultFactory-3 | impl | live | no |
 | ethereum | `0xcdf5e4f31c1706a0224cda4fdb88cf0e58c7489e` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xce1b8f00454cd70c04baa5613541954e9e9ee0dc` | PythOracle | impl | live | no |
 | ethereum | `0xce3d2e0331d6776c79f329140d7ace2e94b168a4` | SiloSnapshotWrapper | impl | live | no |
@@ -1507,7 +1532,7 @@
 | ethereum | `0xcebdee3fcb18ed69b8384bd78c34ee71b0fff482` | ynETH | proxy | live | no |
 | ethereum | `0xceceb64f9ab43b69a1f40d188d6b2542cb60ec2d` | ERC1967Proxy-10 | impl | live | no |
 | ethereum | `0xced97f75533e3639c45ccbb6116cb4621789305e` | AccessManagerFactory | impl | live | no |
-| ethereum | `0xcee55bd8ce0361a67f9a48888a2b519c9d207a97` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xcee55bd8ce0361a67f9a48888a2b519c9d207a97` | IporFusionAccessManager-10 | impl | live | no |
 | ethereum | `0xcf1a6890343bfac19612c4631332742e5b7d6a86` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xcf4124dec902765bd8dab56c883edc8bc2378631` | FixedRateOracle | impl | live | no |
 | ethereum | `0xcf515e7cb2a636cde81d63a37f2433100cbf982c` | TimelockWhitelist | impl | live | no |
@@ -1519,10 +1544,10 @@
 | ethereum | `0xd06ac27144e4d4c0c3d8add06e27b809f084d3d3` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xd08cb606cee700628e55b0b0159ad65421e6c8df` | MorphoSupplyFuse | impl | live | no |
 | ethereum | `0xd0ad0cdf6c0a08048d95a140fd0eecbeb7ea91f2` | PRBMathSD59x18 | impl | live | no |
-| ethereum | `0xd0e1705ce89b77452ea7184d300b7745e0937901` | RewardsClaimManager | impl | live | no |
+| ethereum | `0xd0e1705ce89b77452ea7184d300b7745e0937901` | RewardsClaimManager-11 | impl | live | no |
 | ethereum | `0xd15b8f1fd9ed911c0032eb4b523cb33c6bc53165` | MiltonUsdt | impl | live | no |
 | ethereum | `0xd1679029ae81da676d9b5850feb6c8ee68f9d04e` | SwapHandlerUniAutoRouter | impl | live | no |
-| ethereum | `0xd1813be33dee8709e4734a0e8c612e91b22033a6` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xd1813be33dee8709e4734a0e8c612e91b22033a6` | PlasmaVault | impl | live | no |
 | ethereum | `0xd1d7f938a86e29cd206834a311c8cdc76e08715b` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xd1f0af153fcd8822459bcfee0705da8d86b5b92a` | PythOracle | impl | live | no |
 | ethereum | `0xd27cacb4adb7313478ef85483210fc146ba90506` | PythOracle | impl | live | no |
@@ -1533,6 +1558,7 @@
 | ethereum | `0xd348fbc36456f5d78df982fc3d8df6657c77d975` | Staking | impl | live | no |
 | ethereum | `0xd394504a778139afb8dc76c43cd681e17163ce4a` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xd39452589e66cbe43b06f4c9be8e3cbe4129ce96` | EVCUtil-2 | impl | live | no |
+| ethereum | `0xd3bd7db2b40dbee54ca70a34921fde8a8d2f8bbb` | BurnMintTokenPool-2 | impl | live | no |
 | ethereum | `0xd3e5effb567b5cfecf89406b7773bbdfb5326c84` | CrossAdapter | impl | live | no |
 | ethereum | `0xd3e7e46c62b0fea4cd73920c65971b67ea01de56` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0xd405dcf882235481461f93e36d3bf9a29bea1054` | RedstoneCoreOracle | impl | live | no |
@@ -1541,8 +1567,8 @@
 | ethereum | `0xd47b9c9fb1788f6353a543150006d0b7ed0b17bf` | TransparentUpgradeableProxy-6 | impl | live | no |
 | ethereum | `0xd48d9528581b6bbc5e259f1e3720619bb55d5e0d` | FusionFactory | impl | live | no |
 | ethereum | `0xd49b2038b1705bce126370ff7aead5d8464efdc8` | MiltonSpreadModelUsdt | impl | live | no |
-| ethereum | `0xd4ab6c0d87c677899a66a4c62fa7fbdff2313434` | TransparentUpgradeableProxy-18 | impl | live | no |
-| ethereum | `0xd4f8ccf7872413a85d516cd2e05282b59deb514d` | TransparentUpgradeableProxy-19 | impl | live | no |
+| ethereum | `0xd4ab6c0d87c677899a66a4c62fa7fbdff2313434` | TransparentUpgradeableProxy-19 | impl | live | no |
+| ethereum | `0xd4f8ccf7872413a85d516cd2e05282b59deb514d` | TransparentUpgradeableProxy-20 | impl | live | no |
 | ethereum | `0xd524e29e3baf5bb085403ca5665301e94387a7e2` | EulDistributor | impl | live | no |
 | ethereum | `0xd529f458bc879be231e36ec62968416c07580199` | EthPlusPriceFeed | impl | live | no |
 | ethereum | `0xd56031b6e6860bd41dce2729d1bed21c387b26ce` | TransparentUpgradeableProxy | proxy | live | no |
@@ -1550,26 +1576,27 @@
 | ethereum | `0xd56c14aae5d5434076829172a0e22c5c0756a4dd` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xd58f0ef796618f09f7fc6e63c25fae25ceb33799` | ConfigureInstantWithdrawalFuse | impl | live | no |
 | ethereum | `0xd5950bc3763af2f61cb8ce96e68345e0de1919b8` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xd5a73c748449a45cc7d9f21c7ed3ab9eb3d2e959` | TransparentUpgradeableProxy-32 | proxy | live | yes |
+| ethereum | `0xd5a73c748449a45cc7d9f21c7ed3ab9eb3d2e959` | TransparentUpgradeableProxy-33 | proxy | live | yes |
 | ethereum | `0xd5bf05d14be33eb58506620d3ebe70b80bf3b01d` | Provider | impl | live | no |
+| ethereum | `0xd5e4ac485f09ee907f5dd8b9a9935a09875f7bfb` | AccessManagerUpgradeable-2 | proxy | live | no |
 | ethereum | `0xd5ef0d094f176fbf0925959c1ba0fb9f1b5b236c` | ERC1967Proxy-13 | impl | live | no |
 | ethereum | `0xd6266547e3d0ae0548f7888d22dbf94407571d82` | Hooks | impl | live | no |
 | ethereum | `0xd648bd39771e10f0bfbf69afcd966642ee774a88` | PythOracle | impl | live | no |
 | ethereum | `0xd64b765374619a0aae14feed7305137684390451` | ynETHRedemptionAssetsVault | proxy | live | no |
 | ethereum | `0xd685cec80b342117c5754148a63e161132ff44d3` | WithdrawManager | impl | live | no |
 | ethereum | `0xd6b294bcd6bc7fb46d84434a384ede079a4bc22e` | TreasuryVester | impl | live | no |
-| ethereum | `0xd6bba2075993e8d429a35d7b3ed589afe668b4a1` | TransparentUpgradeableProxy-9 | impl | live | no |
+| ethereum | `0xd6bba2075993e8d429a35d7b3ed589afe668b4a1` | TransparentUpgradeableProxy-11 | impl | live | no |
 | ethereum | `0xd6dc843a92cd90afe65cfb00432ede37549a2946` | RewardsClaimManager | impl | live | no |
 | ethereum | `0xd6fa88b765846615ce14d9a444e0cb350043b783` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0xd72915b95c37ae1b16b926f85ad61cca6395409f` | PowerToken | proxy | live | no |
 | ethereum | `0xd737ee2bb39f49c62a436002a77f2710cc45ed98` | Liquidation | impl | live | no |
-| ethereum | `0xd750b84845f1cadfeac63f96ec74635e949bfd14` | ProxyAdmin-2 | impl | live | no |
+| ethereum | `0xd750b84845f1cadfeac63f96ec74635e949bfd14` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0xd75870dcbd1521e6cad7566fbca35d72e238572b` | IRMClassMajor | impl | live | no |
 | ethereum | `0xd7aa529ce055a1f745a40c1eea98ccb9b90e61cf` | OneValuePriceFeed | impl | live | no |
 | ethereum | `0xd7c9f0e536dc865ae858b0c0453fe76d13c3beac` | Xai | impl | live | no |
 | ethereum | `0xd7f9c3f788e958a8a3d06de857c06dd1d78c682f` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xd83b4031a325326109f2ab7444f6a6c008f5c462` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xd887ea16804424dbe9e0a37533fcf1ec98eac106` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xd887ea16804424dbe9e0a37533fcf1ec98eac106` | PlasmaVault | impl | live | no |
 | ethereum | `0xd8f7bd3b76b07a1141b933286f1f2eaec84bdaea` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xd91fe1792069f2bcc092b62f49bfb528244e0402` | TransparentUpgradeableProxy | impl | live | no |
 | ethereum | `0xd9274249fd71413342f75168c476cc357b17a3a1` | CrossAdapter | impl | live | no |
@@ -1577,17 +1604,17 @@
 | ethereum | `0xd998c35b7900b344bbbe6555cc11576942cf309d` | SiloRepository | impl | live | no |
 | ethereum | `0xd9d6ac593e62ffcb1c1106865c87d11356a401f3` | WithdrawManager | impl | live | no |
 | ethereum | `0xd9dec32089bbcdb62b57b4a82ca56b5b5ef52646` | EulerUngovernedPerspective | impl | live | no |
-| ethereum | `0xd9e79b367777071f364e4c805a7bfb26710adfa2` | MainnetActors | impl | live | no |
+| ethereum | `0xd9e79b367777071f364e4c805a7bfb26710adfa2` | MainnetActors-5 | impl | live | no |
 | ethereum | `0xd9f0c6ff3f1fef05f483ee0255640c4f200d2a7b` | ERC1967Proxy-14 | impl | live | no |
 | ethereum | `0xd9fcd98c322942075a5c3860693e9f4f03aae07b` | Eul | impl | live | no |
-| ethereum | `0xda376ff67d108db6783eb8c4f4cdf43ac1214721` | RewardsClaimManager | impl | live | no |
+| ethereum | `0xda376ff67d108db6783eb8c4f4cdf43ac1214721` | RewardsClaimManager-12 | impl | live | no |
 | ethereum | `0xda45fe8099358bba400554c9b640170246b43e50` | HarvestDoHardWorkFuse | impl | live | no |
 | ethereum | `0xda7d2025c7f1f1a1d34ab3f4df01102d0428e574` | WrappedToken | proxy | live | no |
 | ethereum | `0xdacb0d070c6fa0ff849854f8041f1d10376c227f` | CrossAdapter | impl | live | no |
 | ethereum | `0xdaf066a6b51499941299b566d1b124678ebc2b3c` | WithdrawManager | impl | live | no |
 | ethereum | `0xdb69d6a0410977efd5f68da9995f243a3ed7ff32` | PythOracle | impl | live | no |
 | ethereum | `0xdb75be5ae2c9d2f75322d0731fc7b18574974579` | MiltonUsdc | impl | live | no |
-| ethereum | `0xdb7aa02ee83fde44b5f8bc24bb1206c1898e3fc0` | XReferralAdapter | proxy | live | no |
+| ethereum | `0xdb7aa02ee83fde44b5f8bc24bb1206c1898e3fc0` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xdbe385169ee000cb82021c472a3312585d7fb444` | WithdrawManager | impl | live | no |
 | ethereum | `0xdbf332a263c158bff154fbe551f15f22b7225040` | TransparentUpgradeableProxy-4 | impl | live | no |
 | ethereum | `0xdbffc30f3b95b8ca5bab3e6c139076fea47f89b3` | ERC4626PriceFeed | impl | live | no |
@@ -1595,9 +1622,9 @@
 | ethereum | `0xdc8af46adf7143e58047beeca27210d6dc760721` | BaseAdapter | impl | live | no |
 | ethereum | `0xdcb7cf0bfe8a6d9b61d5c29da4c4f3b48e0829e7` | PythOracle | impl | live | no |
 | ethereum | `0xdcda67ac5081e668ea5049be94905a9af7dec3db` | PythOracle | impl | live | no |
-| ethereum | `0xdcf1ec5bfca5c16d7b656b3af2481b4234dd2e46` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xdcf1ec5bfca5c16d7b656b3af2481b4234dd2e46` | IporFusionAccessManager-4 | impl | live | no |
 | ethereum | `0xdd14f5ab795ce9892af51063235e18c9884eb2e1` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xdd15eba9d2cd4deb479f640d08fc63f627d192a9` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xdd15eba9d2cd4deb479f640d08fc63f627d192a9` | PlasmaVault | impl | live | no |
 | ethereum | `0xdd33b4b6b9a7aa6fcc5f1d1c8ebb649a796fd5b5` | EulerV2SupplyFuse | impl | live | no |
 | ethereum | `0xdd6f2cbb6d2670687bd74889df6e7b63017a9d0d` | MainnetActors | impl | live | no |
 | ethereum | `0xdda46bf18eeb3e06e2f12975a3a184e40581a72f` | swETH-3 | impl | live | yes |
@@ -1621,8 +1648,8 @@
 | ethereum | `0xe1942dcf28e11d2335f471d1df88a4cfc8b43a0e` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xe194661251877a69a1282bd0b2d344ccba06e8ae` | UpgradeableBeacon | proxy | live | yes |
 | ethereum | `0xe1a2a7fac6729360e6794f2f137621e2cdb0fed5` | ynETHRedemptionAssetsVault | impl | live | no |
-| ethereum | `0xe1f03b7b0ebf84e9b9f62a1db40f1efb8faa7d22` | TimelockController-6 | impl | live | no |
-| ethereum | `0xe1fd88a76e95dd735c6dda45b2aba9e5ffa9a7f3` | Erc4626BalanceFuse | impl | live | no |
+| ethereum | `0xe1f03b7b0ebf84e9b9f62a1db40f1efb8faa7d22` | TimelockController-9 | impl | live | no |
+| ethereum | `0xe1fd88a76e95dd735c6dda45b2aba9e5ffa9a7f3` | Erc4626BalanceFuse-3 | impl | live | no |
 | ethereum | `0xe20582e7fb2e5d1d96d8c8a65b4cdc3f5dc398f8` | Swap | impl | live | no |
 | ethereum | `0xe26126e541e029a80bf63169e4bb075c25eb6524` | AmmCloseSwapServiceStEth | impl | live | no |
 | ethereum | `0xe2a264e9fb3ac248bf9ce57f376873dca752db9b` | PtPriceFeedFactory | proxy | live | no |
@@ -1641,7 +1668,7 @@
 | ethereum | `0xe42de023575c38c913e92c8daf2cb1be06d9cf03` | ynLSD | proxy | live | no |
 | ethereum | `0xe439fe4563f7666fcd7405bec24ae7b0d226536e` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0xe46a0c83f8061df2b372fe1579ab6ceae75f4471` | PythOracle | impl | live | no |
-| ethereum | `0xe46adc117d08a5bcf70cb178b239138e1526a6b6` | TimelockController-2 | impl | live | no |
+| ethereum | `0xe46adc117d08a5bcf70cb178b239138e1526a6b6` | TimelockController | impl | live | no |
 | ethereum | `0xe46bfb8b191d1c7f6d7b0325d6adba8a1c947d21` | FixedRateOracle | impl | live | no |
 | ethereum | `0xe49207496bb2cf8c3d4fdadcad8e5f72e780b4ae` | Erc4626SupplyFuse | impl | live | no |
 | ethereum | `0xe4cd9aa68be5b5276573e24fa7a0007da29ab5b1` | ERC1967Proxy-3 | proxy | live | no |
@@ -1650,7 +1677,7 @@
 | ethereum | `0xe519f37b8ecc509721e1f49746e10b9f49519c13` | TreasuryVester | impl | live | no |
 | ethereum | `0xe5257cf3bd0efd397227981fe7bbd55c7582f526` | ERC1967Proxy-3 | proxy | live | no |
 | ethereum | `0xe56d935405de1600db78c7b4ef58c8517c56d2bd` | CrossAdapter | impl | live | no |
-| ethereum | `0xe593cfaba9e0ddd0b0b47f270cd0e045fc0050ba` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xe593cfaba9e0ddd0b0b47f270cd0e045fc0050ba` | IporFusionAccessManager-4 | impl | live | no |
 | ethereum | `0xe5a3958b24767b30f0f5d3f47a25cfb4c08c1053` | AaveV3BalanceFuse | impl | live | no |
 | ethereum | `0xe5afe81e63f0a52a3a03b922b30f73b8ce74d570` | StakingRewards | impl | live | no |
 | ethereum | `0xe5b2ad3978105a0a43cbf95da282b1b58c6c246f` | Utils | impl | live | no |
@@ -1682,9 +1709,9 @@
 | ethereum | `0xe8c0f9e87881c1b98de73290290d9df3813c1bc7` | FeeManagerFactory | impl | live | no |
 | ethereum | `0xe8d2937d7401002483b06adfb2940f61a0572812` | CrossAdapter | impl | live | no |
 | ethereum | `0xe8e51eff698bdf0fd7edb2aeab8e20895e7ea585` | MiningCalculationAccountPowerUp | impl | live | no |
-| ethereum | `0xe8edf980d0a14dddc4c2a96a9e3591550abd8a37` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| ethereum | `0xe8edf980d0a14dddc4c2a96a9e3591550abd8a37` | TransparentUpgradeableProxy-11 | proxy | live | no |
 | ethereum | `0xe913027973640249d50cc574e19ba5d9d4f5f97e` | RepricingOracle-4 | impl | live | yes |
-| ethereum | `0xe9385eff3f937fcb0f0085da9a3f53d6c2b4fb5f` | PlasmaVault | proxy | live | no |
+| ethereum | `0xe9385eff3f937fcb0f0085da9a3f53d6c2b4fb5f` | PlasmaVault-2 | proxy | live | no |
 | ethereum | `0xe945ef2449a22958267c67a7df63519454a339e4` | StanleyDsrDai | impl | live | no |
 | ethereum | `0xe96221d4be3b81042cb5490dc14264e94d504903` | ProxyUtils | impl | live | no |
 | ethereum | `0xe966d1cae4770cefe9410e9d14d9486ffee19048` | IvTokenUsdt | impl | live | no |
@@ -1706,7 +1733,7 @@
 | ethereum | `0xeb3ed6a68c69659bff24a4b996644aacba68c4ec` | CrossAdapter | impl | live | no |
 | ethereum | `0xeb4dbb86ca6aa8f72f863eced6d700346fdac508` | Provider | impl | live | no |
 | ethereum | `0xeb9ad7ec0b11987bf4e800531fe084d6ff6f9ccd` | RedstoneCoreOracle | impl | live | no |
-| ethereum | `0xeba87a0b152b4b672ad048d3f446810a89f9317c` | ERC1967Proxy-6 | impl | live | no |
+| ethereum | `0xeba87a0b152b4b672ad048d3f446810a89f9317c` | ERC1967Proxy-19 | impl | live | no |
 | ethereum | `0xec29b4c2cacae5df1a491f084e5ec7c62a7edab5` | Installer | impl | live | no |
 | ethereum | `0xec6f77b79e910ee2f65edcc987d1947314d283e6` | AmmStorage | impl | live | no |
 | ethereum | `0xecb36d7100da9c717671b72e6eb083b07190243a` | ContextManager | impl | live | no |
@@ -1717,10 +1744,10 @@
 | ethereum | `0xedaaf139ee3fedd59a9a8feab31a46ee5bbeac3d` | MiltonSpreadModelUsdt | impl | live | no |
 | ethereum | `0xedb5974d0f1b8a4fe877fea80788ff9fc3f62576` | TransparentUpgradeableProxy-7 | proxy | live | no |
 | ethereum | `0xee118664e952dd6194cb41405312d14b4afdd66e` | WithdrawalQueue | impl | live | no |
-| ethereum | `0xee25e8160061ce1d79e2ea4cea5a9ade0c322684` | TimelockController-4 | impl | live | no |
+| ethereum | `0xee25e8160061ce1d79e2ea4cea5a9ade0c322684` | TimelockController-6 | impl | live | no |
 | ethereum | `0xee366246dd6e089a21d0b3acfc9241c7580d4e52` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xee385a1e2f0bfe79d795a9ac680c4ab89033abab` | EToken | impl | live | no |
-| ethereum | `0xee47a6f0556b855043d16819b057a72d2c7eb9a5` | PlasmaVaultFactory | impl | live | no |
+| ethereum | `0xee47a6f0556b855043d16819b057a72d2c7eb9a5` | PlasmaVaultFactory-4 | impl | live | no |
 | ethereum | `0xee9a18f0de64e8eb399a3baef0550aa50a218768` | UniversalTokenSwapperEthFuse | impl | live | no |
 | ethereum | `0xeea3812b60ca4c6d0e2672a865bf7217ecd49f95` | PendleSwapPTFuse | impl | live | no |
 | ethereum | `0xeed274cdfa4568bede1d0fa5a8f41b0b059e5c81` | TransparentUpgradeableProxy | impl | live | no |
@@ -1746,7 +1773,7 @@
 | ethereum | `0xf151b80d9be891fdc97279f373eefd6289e29153` | FlexStrategy | impl | live | no |
 | ethereum | `0xf159363b9462e843095b36deef66166bd36e7493` | PythOracle | impl | live | no |
 | ethereum | `0xf16119e669c1fb8264dffd92ecb1ab592f73d8e3` | Erc4626SupplyFuse | impl | live | no |
-| ethereum | `0xf215cf8b8accd1f87edcdcddcf979fef0ffbd101` | WithdrawManager | impl | live | no |
+| ethereum | `0xf215cf8b8accd1f87edcdcddcf979fef0ffbd101` | WithdrawManager-2 | impl | live | no |
 | ethereum | `0xf21842c0dce883d02d0c62ab45aaa2c4dfa4e93c` | PythOracle | impl | live | no |
 | ethereum | `0xf26ffa13064939ac6d2253acaf2329750d09bdca` | YUSDWithdrawalAdapter | impl | live | no |
 | ethereum | `0xf2b4389dd9035c735818d1aec881f8361481f276` | TreasuryVester | impl | live | no |
@@ -1769,10 +1796,10 @@
 | ethereum | `0xf4f39541220f232a6c6a2dffce6da991ab3a1d87` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xf55a1b0803ada2aa19d5f3bec8c0b2363254bbc6` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xf58d96142a6abbee5cb2f2ede750aa7429672618` | EulerV2CollateralFuse | impl | live | no |
-| ethereum | `0xf58fcce9370aba552032d3ea47baa486f70c0fdc` | ERC4626PriceFeedFactory | proxy | live | no |
-| ethereum | `0xf592cdb6d8f480340a75179f608aec64fdd4a59b` | TransparentUpgradeableProxy-16 | impl | live | no |
+| ethereum | `0xf58fcce9370aba552032d3ea47baa486f70c0fdc` | ERC1967Proxy-6 | proxy | live | no |
+| ethereum | `0xf592cdb6d8f480340a75179f608aec64fdd4a59b` | TransparentUpgradeableProxy-17 | impl | live | no |
 | ethereum | `0xf5d35536482f62c9031b4d6bd34724671bce33d1` | EulerSwap | impl | live | no |
-| ethereum | `0xf5db3e3961d52ecfdd939e8c00de47b8e3d0be61` | RewardsClaimManager | impl | live | no |
+| ethereum | `0xf5db3e3961d52ecfdd939e8c00de47b8e3d0be61` | RewardsClaimManager-2 | impl | live | no |
 | ethereum | `0xf5f62c527a2d6685dce359b8a337cc53b303b5ce` | MiltonDai | impl | live | no |
 | ethereum | `0xf6016a183745c86dd584488c9e75c00bbd61c34e` | GearboxV3FarmSupplyFuse | impl | live | no |
 | ethereum | `0xf60c1e383ffca607b6207d9003d1f55b51c321e1` | TreasuryVester | impl | live | no |
@@ -1784,7 +1811,7 @@
 | ethereum | `0xf807bc28086b15b94c16ea9d5f19f7279464e5a8` | NodeOperatorRegistry-4 | impl | live | yes |
 | ethereum | `0xf8147c4c6cb7c615c32a44eb79c18c43b9fe2058` | CrossAdapter | impl | live | no |
 | ethereum | `0xf82a5730adce3e30c41d057928e1edf4606c67f9` | EbisuAdjustInterestRateFuse | impl | live | no |
-| ethereum | `0xf8302787582fb769fd30107e4d877695f0deafea` | StakeService | impl | live | no |
+| ethereum | `0xf8302787582fb769fd30107e4d877695f0deafea` | StakeService-2 | impl | live | no |
 | ethereum | `0xf84450ca246858fe12ae58da6458e46d2a03d751` | ERC1967Proxy-3 | impl | live | no |
 | ethereum | `0xf86a6f85606b7d0074aedea3f8c26b2e70797e04` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xf86e1e57797fa1a1b979af7cd474d210109d10f1` | RedstoneCoreOracle | impl | live | no |
@@ -1800,15 +1827,15 @@
 | ethereum | `0xf9ffeb1522c19ce6d48209fde22ac003d9a66309` | BasePerspective-3 | impl | live | no |
 | ethereum | `0xfa0186c12e5166d02ef871a89349f7c664999f8c` | ERC1967Proxy-8 | impl | live | no |
 | ethereum | `0xfa556d43049bb9b5b1c8c9a464ce624821f51b1c` | LiquidityMining | impl | live | no |
-| ethereum | `0xfa5f2e760b0d9586db391098b9ac1f97f1a7d8db` | ERC1967Proxy-6 | impl | live | no |
+| ethereum | `0xfa5f2e760b0d9586db391098b9ac1f97f1a7d8db` | WhitelistWrappedPlasmaVaultFactory | impl | live | no |
 | ethereum | `0xfa6a85c68e762c94f05d9314e8214ca73f17e2b4` | PythOracle | impl | live | no |
 | ethereum | `0xfa908c9b6f91523d563ca8660f50c49b9571873e` | PythOracle | impl | live | no |
 | ethereum | `0xfae103dc9cf190ed75350761e95403b7b8afa6c0` | AdminUpgradeabilityProxy | proxy | live | yes |
-| ethereum | `0xfb034c1c6c7f42171b2d1cb8486e0f43ed07a968` | TimelockController | impl | live | no |
-| ethereum | `0xfb15065b1e0e9482a295324c592894ef35ccce9a` | IporFusionAccessManager | impl | live | no |
+| ethereum | `0xfb034c1c6c7f42171b2d1cb8486e0f43ed07a968` | TimelockController-4 | impl | live | no |
+| ethereum | `0xfb15065b1e0e9482a295324c592894ef35ccce9a` | IporFusionAccessManager-11 | impl | live | no |
 | ethereum | `0xfb22c148f60527e1386905940d1ba51b871d11b8` | IporRiskManagementOracle | proxy | live | no |
 | ethereum | `0xfb2ee9b9490d999d1f50a27f66410699c7e95318` | MiltonSpreadModelDai | impl | live | no |
-| ethereum | `0xfb696db7a9da52b7225c61edfb56537544307541` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0xfb696db7a9da52b7225c61edfb56537544307541` | PlasmaVault | impl | live | no |
 | ethereum | `0xfb739bc0c654646d254dd573149528c12406f935` | Blacklist | impl | live | no |
 | ethereum | `0xfb9fd4552082e0dc3bb8e94bacb53c109988826d` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xfb9fe66472917f0f8966506a3bf831ac0c10cad4` | EulerSwapFactory | impl | live | no |
@@ -1824,18 +1851,18 @@
 | ethereum | `0xfdd67ad159bd07cd7e701f40f1717318a68e731f` | ContextManager | impl | live | no |
 | ethereum | `0xfde0600a4b2df2eba557269b99cc3335fcd20568` | RedstoneCoreOracle | impl | live | no |
 | ethereum | `0xfde7a256ecc26a41c52d1bba66c267d600cb265b` | Rewards | impl | live | no |
-| ethereum | `0xfe2242d476d03f72423311629450078a4cea07b5` | IporFusionAccessManager | impl | live | no |
-| ethereum | `0xfec7e21781c3deb1f376ecab14a51d14bd62c2bf` | TimelockController | impl | live | no |
+| ethereum | `0xfe2242d476d03f72423311629450078a4cea07b5` | IporFusionAccessManager-12 | impl | live | no |
+| ethereum | `0xfec7e21781c3deb1f376ecab14a51d14bd62c2bf` | TimelockController-2 | impl | live | no |
 | ethereum | `0xff0cb8fccaaeed2cb17f489f3ca518fe44153cf6` | Usd0 | impl | live | no |
 | ethereum | `0xff69f703de234883ad2553f1a0e37559f332aaf8` | AmmCloseSwapLens | impl | live | no |
 | ethereum | `0xff7a0b71d1c2e8adf2f1d44388a45b7ab0f6be57` | WithdrawalQueue | impl | live | no |
-| ethereum | `0xffb090cb1829c5977fbd070cebff7425c76b0472` | PlasmaVault-2 | impl | live | no |
+| ethereum | `0xffb090cb1829c5977fbd070cebff7425c76b0472` | PlasmaVault | impl | live | no |
 | linea | `0x0b2c83b6e39e32f694a86633b4d1fe69d13b63c5` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | linea | `0x0c0bfbb5ab2a1293e9d430e956fd630e43ed1095` | TradeHelper | impl | live | no |
 | linea | `0x1071d94a22e806e6c155ba3b35ffc438d17f54dc` | AccessManagerUpgradeable | impl | live | no |
 | linea | `0x142665217f6d4084a47706b423dc3aad884e31e4` | AirdropClaimKey | impl | live | no |
 | linea | `0x17a785e0b969cdcf2f6c2f4a4f2988f90b9d43d9` | EscrowDelegateCheckpoints | impl | live | no |
-| linea | `0x1b316fa2d6c44b65c1ed6d29b37743cd362f0f71` | OptinProxy | proxy | live | no |
+| linea | `0x1b316fa2d6c44b65c1ed6d29b37743cd362f0f71` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | linea | `0x1fee198a3d28b2419bf0ab4bbbd6cc8f75368216` | GnosisSafeProxy | proxy | live | no |
 | linea | `0x2222c569387b2a98fe1a9350f2cacde918910ee4` | RewardsDistributorV2 | impl | live | no |
 | linea | `0x24452a82e3e4f20734e2fe9a511c8d839999dfbe` | StreamFactory | impl | live | no |
@@ -1845,7 +1872,9 @@
 | linea | `0x4559605e3003fda8c059e14af4f16ba9a004335a` | Turtle | impl | live | no |
 | linea | `0x4569f2346c5006e1e219bb9e9149f00fa415f5e7` | CLFeesVault | impl | live | no |
 | linea | `0x5310a5fa1995a8503c7cbc25fa2ce982d6541e27` | EscrowDelegateCheckpoints | impl | live | no |
+| linea | `0x558996e3db9ef22b448dc4c176e7f26c16f01a4c` | Stream | impl | live | no |
 | linea | `0x56aa6d651bfefa9207b35e508716466359bae8ef` | Turtle | proxy | live | no |
+| linea | `0x58a916ad66584811c939aa844025036e5078e811` | SafeProxy-2 | proxy | live | no |
 | linea | `0x62fc3b63f7cbaebc74b4876f6cf32e03ba6f0822` | EpochController | impl | live | no |
 | linea | `0x63349ba5e1f71252ecd56e8f950d1a518b400b60` | OptionTokenV3 | impl | live | no |
 | linea | `0x63fbedb9921ac303bfd76ee7e1f5145ab225fb99` | StreamFactory | proxy | live | no |
@@ -1861,6 +1890,7 @@
 | linea | `0x7ab965a24b356673379a3eac0eaee5df1fa52551` | Turtle | impl | live | no |
 | linea | `0x7b555a3ed56af0411cd7fdafc909f4082aee1f2e` | GaugeFactoryV2_CL | impl | live | no |
 | linea | `0x7d496d0c1cb8aaf8e4fa5460affacb4dd9cc3229` | TimelockControllerEnumerable | impl | live | no |
+| linea | `0x7df7e45ab573ace8f872b5d5a1689af7ff1a07f7` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | linea | `0x8297f18d1e55013620f46fda07ff59f393796672` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | linea | `0x8418f2b6c428a4e4b6408e4eb5148fdb7c1454b6` | GaugeFactoryV2 | impl | live | no |
 | linea | `0x86751cbf87b0490617c03b7b83c97488e6d3d7ed` | LynexKeys | impl | live | no |
@@ -1874,6 +1904,7 @@
 | linea | `0xa1ea0e1d58ae20bfb9ab43b157d8063f1e71a3bc` | MerkleTreeKey | impl | live | no |
 | linea | `0xa615388bd2f920ee2fec7606f26908b454f0c249` | EscrowDelegateCheckpoints | impl | live | no |
 | linea | `0xa996de4c5c59be045cd272faed1d284494903826` | TransparentUpgradeableProxy-2 | impl | live | no |
+| linea | `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f` | TransparentUpgradeableProxy-36 | proxy | live | no |
 | linea | `0xaf1b70f4cf9a20603c9ca2fcca7cae0d1e1324ee` | VeArtProxyUpgradeable | impl | live | no |
 | linea | `0xb03c9df82c045aa546c007486c535ce0c63f8aed` | BribeV2 | impl | live | no |
 | linea | `0xb224f312d40c3d3c9e7a5b8a2655a4020af37c1d` | VeArtProxyUpgradeable | proxy | live | no |
@@ -1883,6 +1914,7 @@
 | linea | `0xca79b73d967c948864058642eb736de541b325b0` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | linea | `0xcd9df6f9b8c698ede3b9fdfc99363866f3f6408d` | TransparentUpgradeableProxy-2 | impl | live | no |
 | linea | `0xd3bd7db2b40dbee54ca70a34921fde8a8d2f8bbb` | AccessManagerUpgradeable | proxy | live | no |
+| linea | `0xd3fd41cc688fa2a0acb6c2a76a2817f1a54f1cd3` | Drip-2 | impl | live | no |
 | linea | `0xd658aae91be7827982733413974b11d6cea1ed3c` | VotingEscrowV2Upgradeable | impl | live | no |
 | linea | `0xd8a57006f464d1aaeeb450754489c66f29f8a9b9` | EpochController | proxy | live | no |
 | linea | `0xdb28d27a556c16a333f6420ec0512bb1e64c21fd` | AlgebraV1Twap | impl | live | no |
@@ -1894,7 +1926,7 @@
 | linea | `0xfa638ee72312adf564195c2ae415ec943945c469` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | linea | `0xfcc33868180ed7061cb34017da92e3e18a973a3b` | VotingEscrowV2Upgradeable | impl | live | no |
 
-## Source unavailable (75)
+## Source unavailable (43)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - avalanche `0x1f62f42726414ac807d8fd553423c0f55936f1ba`
@@ -1904,71 +1936,39 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - avalanche `0x286fab35db995dc26a1d57707cb0faa9ee848205`
 - avalanche `0x2affb6865086608ab53e7fd62f15407a90dcb9bb`
 - avalanche `0x2c3694eefb67bad9c6a0409f3001d5025ee9d1a9`
-- avalanche `0x3048925b3ea5a8c12eecccb8810f5f7544db54af`
 - avalanche `0x39ab4aabad7656f94e32ebd90547c3c4a183f4b4`
 - avalanche `0x3ccef51d2e4042b1d01b41e2115a6eae8c7e805a`
-- avalanche `0x4559605e3003fda8c059e14af4f16ba9a004335a`
 - avalanche `0x456a6e49409f137138e2e0255368a3a37876e87b`
 - avalanche `0x49424f026731af05a7a5ecc25901d0d9841d5586`
 - avalanche `0x4a47cd3efb448bbed62a5a290a20928110952c76`
 - avalanche `0x4e6b2a6a282f62d5a1c449c1a52237e913f4590c`
 - avalanche `0x52950ffee4ae5c6206d598a639647df27f8f7bd2`
 - avalanche `0x5d7dcc7037f38e71d2e995cf15f35d02c0a666fd`
-- avalanche `0x662e5efb6b31c5e0a130926dd3c2b78b1678bd08`
-- avalanche `0x66fd8de541c0594b4dccdfc13bf3a390e50d3afd`
-- avalanche `0x67e718f47db8dfa3a4b168c8761835f37b9ba3f0`
 - avalanche `0x697d7c12853a59429b62ab4d310975335dba2c68`
 - avalanche `0x6c882394a9fe366de13f2d5229449be81d612602`
-- avalanche `0x6e22a62e683da5146c982749c9242f6ee5fce86e`
 - avalanche `0x734d8cfeccd8485df397719e7128ca153dd38f79`
-- avalanche `0x7e71e483986b1e87d2c871595201fab9e3ee4813`
 - avalanche `0x84926d9d604ff16dfa19b783c0a7284127913d8b`
 - avalanche `0x89cf789e6b622e29ddaf5283cc0c2b1301b9b64d`
-- avalanche `0x8ade2c3c04731d382a29d871d67296e15b1d591b`
 - avalanche `0x8e3751e7e4bd1093fddcd68fdb10cc86d785f63d`
-- avalanche `0x9484d5da62664d65744de5d2c148c0ee89416c71`
 - avalanche `0x96b9058ea3af4c47223d470ac8d20322b719d672`
-- avalanche `0x9946e68490d71fe976951e360f295c4cf8531d00`
 - avalanche `0xa242da308fc14312e8920a301d5904b49523e8b5`
 - avalanche `0xaa2cee2d7f93e38014bcc8d236484712ca6b1c4f`
 - avalanche `0xae1e7b06544a13315e6f7301cc161761813ce4b1`
 - avalanche `0xaeb261db831fd11a3f700014f3ace6073da06e22`
-- avalanche `0xb893c8d7000e0408eb7d168152ec7fefdd0d25e3`
 - avalanche `0xbb6b570f861646d3fcdfaed1d021eab4f8a7d43a`
-- avalanche `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190`
 - avalanche `0xc095ece2c0f315381b4bf6de169fbc219b24194c`
-- avalanche `0xc331d7843e92d3b6cc1e448d15fe4fd24c3a9f8b`
 - avalanche `0xc7fef2eac21dddf9fa332c1ff4cf208599d7a6c6`
 - avalanche `0xc9871bf1ee787f2134f69d6c6ed010bd636fa33b`
 - avalanche `0xce4d396b8ee9a2d24d48466074567244fdd9677b`
 - avalanche `0xcf5de4fc5d7b9cf3f8d7c6d9a2129c2957e8f857`
 - avalanche `0xcf7b2caee040def16bfa1090c8c9f69d61ee3532`
 - avalanche `0xd13510243226c8182abc11bb2a59fe385b8bf5c8`
-- avalanche `0xd49d18fe6cfa45396e2d4c27b216ccee6dbfb6e7`
-- avalanche `0xd5e4ac485f09ee907f5dd8b9a9935a09875f7bfb`
 - avalanche `0xd92558cce4a2e23c4685dcdb9c3f5d7aa2c4929f`
-- avalanche `0xdd4d94efba79f589bf0f092562b65f905291ad42`
 - avalanche `0xdef6738dd9da7639a4ba29a7628c5f2440ad5ef6`
 - avalanche `0xdfb8803797b11c64cd8520b611816924ce845802`
-- avalanche `0xe3593df71edd22e8857df0d738db0adfb28f8cfa`
 - avalanche `0xe6666f6fa8bc1759b9266d30d41cb443025926c9`
 - avalanche `0xef89a728cd6319f603e266c9b9ad249623276644`
-- avalanche `0xf451171872e9395021316e44d9f5475c90e27848`
 - avalanche `0xf4c5626c39570f0637c1785b378b0ef45a1620a9`
 - avalanche `0xfe6ca6cd383d1e213f5d1015dd0bb35275e8fe3e`
 - avalanche `0xffdb03050a5ffcfbb2d777623e6608d99622da98`
-- bsc `0x56aa6d651bfefa9207b35e508716466359bae8ef`
-- bsc `0x6e22a62e683da5146c982749c9242f6ee5fce86e`
-- bsc `0xd5e4ac485f09ee907f5dd8b9a9935a09875f7bfb`
-- ethereum `0x66fd8de541c0594b4dccdfc13bf3a390e50d3afd`
-- ethereum `0x67e718f47db8dfa3a4b168c8761835f37b9ba3f0`
-- ethereum `0x6e22a62e683da5146c982749c9242f6ee5fce86e`
-- ethereum `0xcd3f84fc4650abe77b8abda1227af80ddf650ae6`
-- ethereum `0xd3bd7db2b40dbee54ca70a34921fde8a8d2f8bbb`
-- ethereum `0xd5e4ac485f09ee907f5dd8b9a9935a09875f7bfb`
-- linea `0x558996e3db9ef22b448dc4c176e7f26c16f01a4c`
-- linea `0x58a916ad66584811c939aa844025036e5078e811`
-- linea `0x7df7e45ab573ace8f872b5d5a1689af7ff1a07f7`
-- linea `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f`
 - linea `0xb15242e8e4b76f3075c1eb6465bf269617407889`
-- linea `0xd3fd41cc688fa2a0acb6c2a76a2817f1a54f1cd3`

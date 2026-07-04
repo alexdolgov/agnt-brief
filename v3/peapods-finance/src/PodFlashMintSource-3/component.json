@@ -1,0 +1,26 @@
+{
+  "component": "PodFlashMintSource-3",
+  "main_contract": "PodFlashMintSource",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c86a67d0f29d6f23bcc9bd5bf4c917f87344350",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x67be5ac917f23d3ef236dce5cca8c1dbdbc101fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

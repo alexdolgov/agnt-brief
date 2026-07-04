@@ -1,0 +1,36 @@
+
+interface Controller:
+    def n_loans() -> uint256: view
+    def loans(index: uint256) -> address: view
+    def user_state(user: address) -> uint256[4]: view
+    def total_debt() -> uint256: view
+
+CONTROLLER: immutable(Controller)
+
+@deploy
+def __init__(controller: address):
+    """
+    @notice Contract constructor
+    @param controller Address of the crvUSD or Llamma Lend Controller contract
+    """
+    CONTROLLER = Controller(controller)
+
+@view
+@external
+def get_debt_stats() -> (uint256, uint256, uint256):
+    """
+    @notice Calculate debt statistics from the Controller
+    @return Tuple of (n_loans, total_debt_squared, sum_of_squared_debts)
+    """
+    n_loans: uint256 = staticcall CONTROLLER.n_loans()
+    total_debt: uint256 = staticcall CONTROLLER.total_debt()
+    sum_debt_square: uint256 = 0
+
+    for i: uint256 in range(10**6):
+        if i >= n_loans:
+            break
+        user: address = staticcall CONTROLLER.loans(i)
+        user_debt: uint256 = (staticcall CONTROLLER.user_state(user))[2]
+        sum_debt_square += user_debt * user_debt
+
+    return (n_loans, total_debt * total_debt, sum_debt_square)

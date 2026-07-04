@@ -1,15 +1,63 @@
 {
   "component": "InverseOracle",
   "main_contract": "InverseOracle",
-  "source_file_count": 7,
-  "deployment_count": 1,
+  "source_file_count": 3,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x0bf531afdf4b8d937df2a802eb43aeb608e63d66",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0edce6bad44fa640d6b9904de1794e2f0dcb0036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2901c6ba004ad7e1e69620d3911df144ad4a6563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x30fbce411e3b8a5d99e69cb347e03734d99e0da9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4871be0a98896d26b36c6b4df9bd31154dd025ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7eab65c270d9b1f9475a6b985439b2f383dbe869",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xed7646e638058f418298b9be70ea85bf5778664e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfb57537be3d2696f99a63351f203fb8201c6c07f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

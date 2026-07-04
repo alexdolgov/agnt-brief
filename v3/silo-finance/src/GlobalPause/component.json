@@ -2,7 +2,7 @@
   "component": "GlobalPause",
   "main_contract": "GlobalPause",
   "source_file_count": 9,
-  "deployment_count": 2,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,6 +18,54 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xdda2e99b6f33ed14183580c140964a137eaa1c44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3bc972757798c346bbc87ede8d31cffcac511904",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb6bc6be0876546d73e0bdbd2aa76721ebf14b8be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6b70cd0e758a589983f06c5c899e42ccba1bfdf3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7d827f1f002e6c5502450a937d78590c358a27b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x446ab3999d97a55f2298957d312386e798ba4105",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9b2ae540656f7938cdca6cf2950da9f185f46c9d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

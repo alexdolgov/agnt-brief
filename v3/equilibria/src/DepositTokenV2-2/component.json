@@ -2,17 +2,25 @@
   "component": "DepositTokenV2-2",
   "main_contract": "DepositTokenV2",
   "source_file_count": 19,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0xf7498deabbae0e8d5673336a8fb348ef95052981",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x299c643a5d84c227705efa2eea00c41b6fc748af",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7368cbcbaecbd7520a3edee99ab418ef7be36ac9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

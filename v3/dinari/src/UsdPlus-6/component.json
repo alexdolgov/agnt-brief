@@ -1,0 +1,18 @@
+{
+  "component": "UsdPlus-6",
+  "main_contract": "UsdPlus",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xef93fd49ceb9203e16ac4509f7edf8e201ac700c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

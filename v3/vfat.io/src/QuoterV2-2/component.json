@@ -2,14 +2,22 @@
   "component": "QuoterV2-2",
   "main_contract": "QuoterV2",
   "source_file_count": 26,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x89d8218ed5ff1e46d8dcd33fb0bbee3be1621466",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x254cf9e1e6e233aa1ac962cb9b05b2cfeaae15b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbe0ec710c44b75c34534690c01c22ac0609762d7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

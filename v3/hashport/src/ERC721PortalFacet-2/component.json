@@ -1,0 +1,26 @@
+{
+  "component": "ERC721PortalFacet-2",
+  "main_contract": "ERC721PortalFacet",
+  "source_file_count": 27,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8ba79782f135075514670fde8a11c62c2be19d98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd6e23e5c5b432906779f736939ebdf1992baa15e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

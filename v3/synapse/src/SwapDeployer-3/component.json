@@ -1,0 +1,26 @@
+{
+  "component": "SwapDeployer-3",
+  "main_contract": "SwapDeployer",
+  "source_file_count": 8,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9695fa23b27022c7dd752b7d64bb5900677ecc21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaf41a65f786339e7911f4acdad6bd49426f2dc6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

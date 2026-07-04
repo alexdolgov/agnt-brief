@@ -208,7 +208,8 @@ contract CrosschainForwarder is ForwarderBase, ICrossChainForwarder {
                 _srcAmountIn
             );
             if (_srcTokenOut == NATIVE_TOKEN) {
-                srcAmountOut = _swapToETHVia(_srcSwapRouter, _srcSwapCalldata);
+                _swapToETHVia(_srcSwapRouter, _srcSwapCalldata);
+                srcAmountOut = 0; // ETH amount will be calculated separately
             } else {
                 srcAmountOut = _swapToERC20Via(
                     _srcSwapRouter,
@@ -345,6 +346,6 @@ contract CrosschainForwarder is ForwarderBase, ICrossChainForwarder {
 
     /// @dev Get this contract's version
     function version() external pure returns (uint256) {
-        return 131; // 1.3.1
+        return 130; // 1.3.0
     }
 }

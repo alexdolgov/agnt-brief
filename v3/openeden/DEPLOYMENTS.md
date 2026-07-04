@@ -1,11 +1,13 @@
 # openeden — deployments
 
-360 verified deployment(s) across 52 component(s).
+416 verified deployment(s) across 57 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x331b256b9c2ebe5113cabf0281a2f4815ca4c5e3` | OpenEdenVaultV4 | impl | live | no |
 | arbitrum | `0xaab4ea02e5616787931c9e8283cb27f0211dc116` | ArbethWalletSimple | impl | live | no |
+| arbitrum | `0xc0952c8ba068c887b675b4182f3a65420d045f46` | TBillPriceOracle-2 | impl | live | no |
+| arbitrum | `0xc6773ba1ff30cc9b14972225924a21ff7fdcd01f` | OEPausable | impl | live | no |
 | base | `0x440139321a15d14ce0729e004e91d66baf1a08b0` | USDOMultiEVMPoRAddressList | impl | live | no |
 | base | `0xa69b964a597435a2f938cc55faabe34f2a9af278` | USDOPoRAssetsTracking | impl | live | no |
 | bsc | `0x1b0a0ffc84a699eeb4e00aa7affd6abfa85af79f` | ERC1967Proxy | impl | live | yes |
@@ -17,8 +19,11 @@
 | bsc | `0x64748ea3e31d0b7916f0ff91b017b9f404ded8ef` | BeaconProxy-2 | proxy | live | yes |
 | bsc | `0x65902c22ce535a652b0eb54becbd57135a79f91f` | ERC1967Proxy | impl | live | yes |
 | bsc | `0x66a72af0100a382e332e91ddeb831695c66c08c7` | ERC1967Proxy | impl | live | yes |
+| bsc | `0x82391e4aa013d476ac69bee01171b9100d2065bc` | Express-2 | impl | live | no |
 | bsc | `0xaa311e05f20b5e3d28b56f012b4560f1e405f4d7` | FeeManager | impl | live | no |
+| bsc | `0xafd6272ef694bc9a9d197979489543cdefb3767e` | BeaconProxy-2 | proxy | live | yes |
 | bsc | `0xce13e42642d40735f713748aab9a2e157a94670d` | ERC1967Proxy | impl | live | yes |
+| bsc | `0xdae70f90620bcbb7d7b3b536683bb2ba257e0fc9` | OEPausable | impl | live | no |
 | bsc | `0xe2b55156183e60354334b345b7d8a436d75b5f56` | PartnerShip | impl | live | yes |
 | bsc | `0xf209a13cb460682297c39e99091e2d543b195f79` | TimelockController | impl | live | no |
 | ethereum | `0x00d440bc15d1cb4d152c5130a5e11690e1eaa7ba` | PriceOracle | impl | live | no |
@@ -53,6 +58,8 @@
 | ethereum | `0x1cf534f2bebe9c69bcbde5ab33a7d184d5d8035f` | BeaconProxy | proxy | live | no |
 | ethereum | `0x1d95f6064f2aa53d6b1c0eab826aeecc303e8c75` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x1dd97c36a9af82701a5e7f87915a3654007d8fd9` | PriceOracle | impl | live | no |
+| ethereum | `0x1df38979cfdc71adac010df95d38c567bc9055df` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x1e3a48a29c27314353a058d9feefbbb401f5c1ec` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x1e5d83ff1a6d32c53f25937664c53e9b57e37021` | BeaconProxy | proxy | live | no |
 | ethereum | `0x1ea550a49c0f6def620f734c6329c4c12a68ad4f` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x1ed617529d80ae87e6611f11d8de8532eced42bc` | ERC1967Proxy | proxy | live | yes |
@@ -72,12 +79,14 @@
 | ethereum | `0x27a66d04c21720c4d1faa7543ba4d7f56b7c9eb4` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x27b319964f0d76dca154f14524885f6e27a29d36` | TokenIssuer | proxy | live | no |
 | ethereum | `0x28524154bcbe10d2a7fc930d8d8d2ece74320e0c` | IDSComplianceConfigurationService-2 | impl | live | no |
+| ethereum | `0x28b6a5aeccbb0dcdb552eecc13276c5b82149ab8` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x292aab9c2c83da1c3d98c2ee0b37f2f3631e5b49` | TrustService | impl | live | no |
 | ethereum | `0x29b9259dac7cf11094311cca6d068c9f7a6c625a` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x2a57cde500603fad2979f7e5902070c84c479a9d` | TokenIssuer | proxy | live | no |
 | ethereum | `0x2a6f3f4cd09106ad645a5d8b16fbe8d6bc57e18f` | ERC1967Upgrade | proxy | live | no |
 | ethereum | `0x2aab579f434fc4f8f288c371ba84a05120bd7be8` | IDSComplianceConfigurationService | proxy | live | no |
 | ethereum | `0x2b170cfc50c930d7be15cac5be370ebcadb72258` | TokenIssuer | impl | live | no |
+| ethereum | `0x2c240c57bae0f28a0a78527c937036cca3ce1196` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x2c5c89ad979c0e7d74a285996669601c364cefcf` | WalletManager | impl | live | no |
 | ethereum | `0x2ca57e832b3646aeff8520829273e0ee00d176e0` | WalletManager | impl | live | no |
 | ethereum | `0x2d01dad0714119f2fe9a1614acec43ddea31777a` | WalletRegistrar | proxy | live | no |
@@ -87,11 +96,14 @@
 | ethereum | `0x2fdb599d9b0f29e8ae04b0509a62b3967d5df54f` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x31148b80793133d6c03ab05845ac05c83aa63077` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0x315b142699a4d5ffc81b0e2e3b4e43897c9eed57` | BeaconProxy | proxy | live | no |
+| ethereum | `0x323e02e92924eb921d1904567690a813249eb819` | BeaconProxy | proxy | live | no |
 | ethereum | `0x32b2a50a93ce946fb447ea5cff37e3571e2ab8e0` | ERC1967Upgrade-3 | proxy | live | no |
 | ethereum | `0x3347d0c6e2bd23b1148fbb7fef5f0fed281612a8` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x33722009708c52c9c3701a62245b306932554a63` | CrossChainTeller | impl | live | no |
+| ethereum | `0x33f4baf9054b5f8f3a84e9122f141929c566b84d` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x341c281d11677795f1192bf1f7438666909841c8` | ERC1967Upgrade-5 | proxy | live | no |
 | ethereum | `0x354db3d82449dff517c25934ac4f6add4a447e00` | TokenIssuer | impl | live | no |
+| ethereum | `0x356022505018770da4cca142f2e476e1f53dd63a` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x368e7478ff8c88c9002c32e1f576fabe2e9ddf7b` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x37364aaf80a91e600db9f6777ea3917997ac6bcb` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x374cc603048446c7803c9471546d6f538e513ec2` | ERC1967Proxy | impl | live | yes |
@@ -102,6 +114,7 @@
 | ethereum | `0x3a05c9f1994ac0a76adc8f2e8b52d89a37a1ea7a` | ComplianceConfigurationService | proxy | live | no |
 | ethereum | `0x3a57a2e60c0746477383de7d4f23949a57b73a4e` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0x3b1a5da88b7819f40092ba8707a3cd8b9bc5cb56` | ERC1967Proxy | impl | live | yes |
+| ethereum | `0x3c13448e7c5b597aa5735cd216d5326a7ef7af43` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x3cae18963d012f8add13e56a8dcf9ce62aff9905` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x3d9e9e5b58bdcfe374b44dfc11e2f8204a6552b5` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0x3ddc84940ab509c11b20b76b466933f40b750dc9` | MoneyMarketFund_V6 | proxy | live | no |
@@ -120,6 +133,7 @@
 | ethereum | `0x470f3b37b9b20e13b0a2a5965df6bd3f9640dfb4` | Proxy-2 | proxy | live | no |
 | ethereum | `0x47226abae436ca85fefaedbb81cd4b1ef852e0d7` | TokenIssuer | proxy | live | no |
 | ethereum | `0x47503199f20b0d8e08f7e45905519517457ffae4` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x486e579172e5a44785ca221d2a23e59b5589d68b` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x488efd3ed474b205a0aade3732e4741432cba50b` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x490b8dd9b7a494a1b2900c053f9ecff77f027245` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x496a4b41499713c4746b626ea79fe580da8251bb` | Proxy | impl | live | no |
@@ -139,11 +153,14 @@
 | ethereum | `0x51d016b8cc89f56fd5a7970892586fb512e202a0` | WalletRegistrar | proxy | live | no |
 | ethereum | `0x5275732d1bfe540350165267346537670bc2138a` | WalletManager | proxy | live | no |
 | ethereum | `0x53b94173348bc33164757a1237b676b23b8d9e10` | TrustService | impl | live | no |
+| ethereum | `0x54fac0d105e80d3da3782b99fb25034d4b748a02` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x554bf70a929ed2bd5461a168a52a6d5141072a90` | Proxy | impl | live | no |
 | ethereum | `0x5575a88bec5b47ce8d270f6a4f2418865f16afd5` | CrossChainTeller | impl | live | no |
+| ethereum | `0x55dd370dede1ad474d3543be06452615d3b5b162` | BeaconProxy-2 | proxy | live | yes |
 | ethereum | `0x5690fdf9c1a86cd6fdd6752b107a1eedf1e8bba3` | IDSComplianceConfigurationService | proxy | live | no |
 | ethereum | `0x56a202a1dea229e8d906735b23922b72afea7cf5` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0x56cf2ea9a980e55b197703219bffbbb8206527fe` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x573404728e2b6178ebe921576834661066f44184` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x57ccfc7de73f759f3567239ec9c9784045516cf2` | TransactionRelayer | proxy | live | no |
 | ethereum | `0x5843f03c6683c0605701c79bfb0c65e550bf255a` | TrustService | proxy | live | no |
 | ethereum | `0x5ba945bca7b500d09e169e6ae44b080381bbede8` | IDSComplianceConfigurationService-2 | impl | live | no |
@@ -151,6 +168,7 @@
 | ethereum | `0x5c73e1cfdd85b7f1d608f7f7736fc8c653513b7a` | Teller | proxy | live | no |
 | ethereum | `0x5d79f2a5f249d48cec916f36f554d6afc1444141` | TokenIssuer | impl | live | no |
 | ethereum | `0x5dbeccecebcdc2ce3258f6e638373d2923560c7d` | CrossChainTeller | impl | live | no |
+| ethereum | `0x5e77127c08c7bc356e25bfaf519180af1b0ad734` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x5eb8fc2d998fedd3b09661fd16aaede0c319e813` | IDSComplianceConfigurationService-3 | proxy | live | no |
 | ethereum | `0x5f567d47e815d91ff872e2c887f3e075811cfe1b` | BeaconProxy | impl | live | no |
 | ethereum | `0x5fa2d8c4a6dd90692aff6c36414dafbc30b554b3` | ERC1967Proxy | impl | live | yes |
@@ -172,6 +190,7 @@
 | ethereum | `0x6b58f317fe6aa7279b4b736f9080d657e5bfd5fe` | ERC1967Upgrade | proxy | live | no |
 | ethereum | `0x6c5b5d0d178a2d0b784fd742ce6204c4631eaa08` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0x6c6583106bc9232d643b60420da4656119f3f8d0` | ComplianceConfigurationService | impl | live | no |
+| ethereum | `0x6dc4b844db15591c0110e2a71d717d9eb967f1b8` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x6e4887c9c62fd11c7baf083884ad1885cf4f7c7e` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0x6f6325f3e4c0a9ae20589eca8f9650198718160a` | IDSComplianceConfigurationService | impl | live | no |
 | ethereum | `0x6fce11ccc5c6861f74e5bf02f4d4ac0a7832b870` | IDSComplianceConfigurationService-2 | proxy | live | no |
@@ -183,6 +202,7 @@
 | ethereum | `0x7312065f7035897073095712ab7ce179de7899e3` | SwapPool | impl | live | no |
 | ethereum | `0x74995e6133062aee330653c618e39f34016d6f39` | PriceOracle | proxy | live | no |
 | ethereum | `0x74e72da890962721cf45cda3089e1fdcea78362c` | ERC1967Upgrade-4 | impl | live | no |
+| ethereum | `0x757b23ebe6f9c646e32ff1b85f01d46442b077c7` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x75b59d12b34b45a99c40185af9cd1c9b3fbea84f` | TokenIssuer | proxy | live | no |
 | ethereum | `0x7712c34205737192402172409a8f7ccef8aa2aec` | Proxy-3 | proxy | live | no |
 | ethereum | `0x77684815f44b28726bc3efa4471b88ef3b93feb0` | IDSComplianceConfigurationService | impl | live | no |
@@ -191,10 +211,12 @@
 | ethereum | `0x7885afa3e4bb2804d68fd09b1ae5d096e3d86324` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x795d9c44285c12c5bdec1ddfae34f98445eda75f` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x798d2adb90b7618b3e7408bcf0697a38d250293a` | ERC1967Proxy | impl | live | yes |
+| ethereum | `0x79c37f4f8018c71095223f330e2d8d81c32d6464` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x7a6476b2df32039ec32230dea1388800fbdb44c8` | IDSComplianceConfigurationService-2 | impl | live | no |
 | ethereum | `0x7a85881a20ee2cb4d5c6f4a3aded587ba9cd6b97` | WalletRegistrar | impl | live | no |
 | ethereum | `0x7b2896ebaa9d8eadeb4e696e057e892c8d7d5e2b` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0x7c03054b2a55fdef8914185afd965d47f0c8edce` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x7d7e1b40613a8dd7818ad618e84352c52c4e880e` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x7ed5ab5c1dd4014b66a51bb521c77f13b5aa17db` | TrustService | proxy | live | no |
 | ethereum | `0x802a7f455b0650f3391c675a08c8c1615fe07131` | BeaconProxy | impl | live | no |
 | ethereum | `0x80715782aff4f52d02d4e86872969827301c0586` | TokenIssuer | impl | live | no |
@@ -202,7 +224,7 @@
 | ethereum | `0x80e49d1bdce8f80c38e88dd5c4c004ddb9b4e887` | BeaconProxy-2 | proxy | live | yes |
 | ethereum | `0x81e5be113252b5de050ecad11a91a3492bba2930` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0x822ac1405552f12da04b615d596c8f8669b963b5` | ERC1967Proxy | impl | live | yes |
-| ethereum | `0x8238884ec9668ef77b90c6dff4d1a9f4f4823bfe` | ERC1967Proxy-2 | proxy | live | yes |
+| ethereum | `0x8238884ec9668ef77b90c6dff4d1a9f4f4823bfe` | ERC1967Proxy-3 | proxy | live | yes |
 | ethereum | `0x829db7707c3a15c22c1dc64e4f7c1abeda4851e4` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0x847d222e80a51352972b85defb4a2b8b656140b3` | WalletManager | proxy | live | no |
 | ethereum | `0x852a78962684fc8a5a9db16922611f845bafbcd0` | ComplianceConfigurationService | impl | live | no |
@@ -211,20 +233,27 @@
 | ethereum | `0x88e6998cec706e80ca3f38d635e9ee503f50d83d` | ERC1967Upgrade-6 | proxy | live | no |
 | ethereum | `0x897e452425bd1c860d7f9bc14ea045cbbc0fa0d4` | IDSComplianceConfigurationService-3 | proxy | live | no |
 | ethereum | `0x899e6293e280a253d2b3901015d3f7c0bf2e7e41` | WalletManager | impl | live | no |
+| ethereum | `0x8b8835f2aff14a58b63c3dadf171eaa87c84d19f` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x8b8ad779f12b7eac6a2ec4e25780f46a28042d26` | ComplianceConfigurationService | impl | live | no |
 | ethereum | `0x8bdda84502dbf99d54ba577bcec12111445b34cd` | BeaconProxy | impl | live | no |
 | ethereum | `0x8c3ccc68fec276db70a75febef55209c6e22cc6e` | IDSComplianceConfigurationService-3 | impl | live | no |
+| ethereum | `0x8d26470937a7d63cb9384c3788a5d708da35b4b3` | BeaconProxy | proxy | live | no |
 | ethereum | `0x8e849c9fe582f0aeed8d73fc70091e8091c55d04` | TokenIssuer | proxy | live | no |
 | ethereum | `0x8e8ec6b1f343865f97ed31ec6927a0f9366c9cca` | TrustService | impl | live | no |
+| ethereum | `0x8fac01686d4c7444c31152aac025b45cb0a95ccd` | BeaconProxy | proxy | live | no |
 | ethereum | `0x90276e9d4a023b5229e0c2e9d4b2a83fe3a2b48c` | MoneyMarketFund_V6 | proxy | live | no |
 | ethereum | `0x902d906b8d988092213be799b18bd2cbd64f808c` | Proxy-2 | proxy | live | no |
 | ethereum | `0x903c8f2fb5f7dce166173f1e909d2338c370d6ff` | TokenIssuer | proxy | live | no |
 | ethereum | `0x909341ca91f6b24b4dc506789755396c089b3a4d` | WalletRegistrar | proxy | live | no |
 | ethereum | `0x944dbaf025badb0fe2a8b7e242de1d8f34d245e5` | Express | impl | live | no |
+| ethereum | `0x94c7bfe83607b53cf974edede02de5110abcd832` | BeaconProxy | proxy | live | no |
+| ethereum | `0x9548c88f78599abd0192fc06353849d854bd661b` | BeaconProxy | proxy | live | no |
 | ethereum | `0x95c7b41ff279ea5eb80f77445d2d406870d1bc2e` | AllowanceLiquidityProvider | proxy | live | no |
+| ethereum | `0x96483361e0adddfc600f61172332594f9dc2e943` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x973e41a2ffffc5e72baf1947b515bf23f8273d6d` | TokenIssuer | proxy | live | no |
 | ethereum | `0x9753bda360cf4cf7dfe72e77bc9d2f1961f89932` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0x97d829c13a3cf9fd0615ce687ce9a2939234d218` | ERC1967Upgrade-3 | proxy | live | no |
+| ethereum | `0x97dc260c7fb513dd528e0ede57a06bdcbf12f522` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x97f08f390f098ca38cc7c4885955c6e652795d52` | WalletManager | proxy | live | no |
 | ethereum | `0x9895a94f4e1a4e53635eff28ab37d3841a3d4a90` | WalletRegistrar | proxy | live | no |
 | ethereum | `0x9909cb5a94fa58414b024d5f72ca280aef2a37ca` | WalletManager | proxy | live | no |
@@ -237,17 +266,21 @@
 | ethereum | `0x9f7ccf5a99450102e174a1d97f9b6ce2c8efc63a` | ComplianceConfigurationService | proxy | live | no |
 | ethereum | `0x9fbf77d74337fefa7d8993f507a38edb4df620e5` | VaultRegistrar | proxy | live | no |
 | ethereum | `0x9fde717a21c5b272b8956d3aa0c3551e1ffd23d7` | ERC1967Upgrade-7 | proxy | live | no |
+| ethereum | `0xa024bb2d6e9780d86af406b477ebcfcedc26e5b1` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xa0e63e4512c95431c5cbce664c1d2ce996a3e72d` | WalletManager | proxy | live | no |
 | ethereum | `0xa0e803fcf66c84def00407d98b94d5446ef444ee` | IssuerMulticall | proxy | live | no |
 | ethereum | `0xa23b06c865d387f171338e9d0324343d7c59fc5d` | WalletManager | impl | live | no |
 | ethereum | `0xa25267ab72c7ad84c6b17bb8a48834c53b7c73e7` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0xa282f3b5725051643fd9b7d844c543e6d4ee3ed3` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0xa2f6ef3144753f31fcd728910b96a92bbbb462c9` | IDSComplianceConfigurationService | impl | live | no |
+| ethereum | `0xa31d3d74513f930f3ee33675e5808b6d5e093bc7` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xa46a7b259a5aab29ff1451f80159744d32fed8a1` | BeaconProxy-3 | impl | live | no |
 | ethereum | `0xa6a1eb8ae3e62b6aab603daf835ebeb198ae1c77` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xa740ca67292bcdbb2753bcda7b50db947410e52b` | WalletRegistrar | impl | live | no |
 | ethereum | `0xa74372dfde0df8a08a3ac7b60c5379f90ac9c7dd` | MoneyMarketFund_V6 | impl | live | no |
 | ethereum | `0xa79dcf4d4e7afbd808bf52910ddf3775caf65c98` | TransactionRelayer | proxy | live | no |
 | ethereum | `0xa91602b72855beb739f876010f30040adac29609` | TrustService | proxy | live | no |
+| ethereum | `0xa95826d36efa299d8b3d0eaca25e7fae4c7717e7` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xa9642286f932aa29a22de88d3b4e99ad4718b33a` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xaa15d34a8d921fba9de5ec72ba11fef49bc1fb36` | Express | impl | live | no |
 | ethereum | `0xaa167abf0dd8d9d8b98bbc77cd182af7d0cdda5b` | IDSComplianceConfigurationService-3 | impl | live | no |
@@ -257,8 +290,11 @@
 | ethereum | `0xab97f1f29ac6819d37fbae278742d998527281a5` | WalletManager | proxy | live | no |
 | ethereum | `0xabebbbe948147ef3ede0a154e77f333338403ca9` | AllowanceLiquidityProvider | proxy | live | no |
 | ethereum | `0xacdda151bf1f9289866302ee11d2292ee72807db` | TokenIssuer | impl | live | no |
+| ethereum | `0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0` | BeaconProxy-2 | proxy | live | yes |
+| ethereum | `0xaeb349460d3c96c7cba6965b8ff3580bd448cb68` | BeaconProxy | proxy | live | no |
 | ethereum | `0xaf1de0cd362d9608513ef0ce504f83950e24d6fe` | TokenIssuer | proxy | live | no |
 | ethereum | `0xaf8633b03761c23748fe5f8fdfba2b2a02f000d1` | ComplianceConfigurationService | proxy | live | no |
+| ethereum | `0xb178b891701c15eed16482ee008b180daa39cea9` | BeaconProxy | proxy | live | no |
 | ethereum | `0xb217b7a9047abb9d686200763e3d2d8951061b85` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0xb2392520cc34b14ec50423a52a3a80f7567ae87e` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0xb5141bed03647c41c0141685b737023a965b33f7` | WalletRegistrar | impl | live | no |
@@ -269,6 +305,7 @@
 | ethereum | `0xb7c7eb8f5ed029737b348cd7cf7556723bcdd837` | IDSComplianceConfigurationService | impl | live | no |
 | ethereum | `0xb826cf9622cf011f007c171bec03f1326a566e5e` | IDSComplianceConfigurationService | proxy | live | no |
 | ethereum | `0xb8873ee3f5b33b6114e7b34538efa50c4b841b24` | IDSComplianceConfigurationService | proxy | live | no |
+| ethereum | `0xb89519d9cc9e1f641c361fe1d44e005bbae9150f` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xb8981ef9b5536d5efdafc961c9ca71c6e1789967` | TrustService | impl | live | no |
 | ethereum | `0xb92a44b47ac867985898531a26d76001a6ae91e3` | BeaconProxy | proxy | live | no |
 | ethereum | `0xb9413fd8c42cfd2fc4cfcbbcca67fb0ece8d1fef` | ERC1967Proxy | proxy | live | yes |
@@ -286,8 +323,11 @@
 | ethereum | `0xc4b48ac6e6b86325e28d211bafd55327d7c63597` | BeaconProxy | proxy | live | no |
 | ethereum | `0xc5653983408473bed434f3bf8f5fdfc66cb71c45` | BeaconProxy | proxy | live | no |
 | ethereum | `0xc622cfe9637f2d739a1db07c710933736b0dda5e` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xc6805cd7da4ba9bca4ec45d296619f848822cdea` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xc6a219429bc05d9c7fb8c8b4166eeb2183c9b346` | BeaconProxy | proxy | live | no |
 | ethereum | `0xc793b33120e5b74b601b00af8fe2d30167ceb923` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xc92f87531e4f6ca733af430e6d57c11c426bd6ac` | WalletRegistrar | proxy | live | no |
+| ethereum | `0xc9b6096bc8eaa7dd77f6d90d9f6724e976cb7711` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xca9d955a98ae0c629efa02fec323b177a1d0e3bb` | IDSComplianceConfigurationService-2 | proxy | live | no |
 | ethereum | `0xcaf2a01751cd5edac85423d58b022150974938c3` | TrustService | impl | live | no |
 | ethereum | `0xcba6eb34d1aa0684be81fd4e44358c8553a84b4b` | PriceOracle | impl | live | no |
@@ -302,6 +342,7 @@
 | ethereum | `0xd35a108636ed21cad3241d4a7ca449b52a77f1ff` | BeaconProxy | impl | live | no |
 | ethereum | `0xd3bb1968010dc09a0f4d33dea093e0c2a3143bdc` | UsycRedemption | impl | live | no |
 | ethereum | `0xd3d27c17ae2c44bfe8ef294c86b0d9ab2e9665b8` | ERC1967Proxy | impl | live | yes |
+| ethereum | `0xd4a747da629af31ccc1e2a8aa21f6c6fb796a87b` | BeaconProxy | proxy | live | no |
 | ethereum | `0xd73c20c4ed7bb93ce61ab6a977b98c3616d2268d` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xd81be7fb12df5f2f12db77c73386616de6fb948e` | TokenTopupTool | impl | live | no |
 | ethereum | `0xd84c2571e05a59108ead1c600d16133f0710e569` | Express | proxy | live | no |
@@ -321,8 +362,11 @@
 | ethereum | `0xe30ec114a1a9183755a4cebe3ad0f8ab89b113f9` | WalletManager | proxy | live | no |
 | ethereum | `0xe33c5784c98e2f6c4fa75a9bb49dd8da15fd1e9d` | IDSComplianceConfigurationService | proxy | live | no |
 | ethereum | `0xe33fdcd6a692ef1301ee220ea128d37c8fc245c6` | IDSComplianceConfigurationService-2 | impl | live | no |
+| ethereum | `0xe3cfd59fcc3f32c3992626260e30ccdb656c298b` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xe42c3fe41450f4f46ba2b5baa52da0809ea59100` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xe6b0c4f8766abf8f77ad00c27fb00cef81ccc9af` | ShortDurationYieldCoin | impl | live | no |
 | ethereum | `0xe6ca5e409a68e81eacf62789198dfc2c4ef999f9` | ERC1967Upgrade | proxy | live | no |
+| ethereum | `0xe79f2f7e4a7c049ed7f500649c2323211a32c094` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xe8cdc66a32dc45cd853a0277120226588b90974c` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0xe9302fbbbc181f3cac9c5d5c001fde66843a9ce9` | ComplianceConfigurationService | proxy | live | no |
 | ethereum | `0xe9d419d61935bb511dd6b59c495ca16d5e084e76` | ERC1967Proxy | proxy | live | yes |
@@ -362,65 +406,17 @@
 | ethereum | `0xfb16b3424f2904b5e8b85dccc9fdcdb48daf42af` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xfc4392da2c4a3090431fb87f4f7de63bc6885644` | BeaconProxy | proxy | live | no |
 | ethereum | `0xfe68b8449879cd653780bbfb45120ae05d7554eb` | AllowanceLiquidityProvider | proxy | live | no |
+| ethereum | `0xff3e6c92cc07bc3502415ccfa2dea3b9cdb0db73` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xff409f3c69a84a3aea2c105f80338c5256027b23` | IDSComplianceConfigurationService-2 | proxy | live | no |
+| ethereum | `0xffd3b3c5adc14b5b590453862ea2d456aa0e4f36` | ERC1967Proxy | proxy | live | yes |
 | polygon | `0x229a3bfa1469a699b276f43a9c0c8a5a198fdf8a` | BeaconProxy | proxy | live | no |
-
-## Source unavailable (56)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0xc0952c8ba068c887b675b4182f3a65420d045f46`
-- arbitrum `0xc6773ba1ff30cc9b14972225924a21ff7fdcd01f`
-- bsc `0x82391e4aa013d476ac69bee01171b9100d2065bc`
-- bsc `0xafd6272ef694bc9a9d197979489543cdefb3767e`
-- bsc `0xdae70f90620bcbb7d7b3b536683bb2ba257e0fc9`
-- ethereum `0x1df38979cfdc71adac010df95d38c567bc9055df`
-- ethereum `0x1e3a48a29c27314353a058d9feefbbb401f5c1ec`
-- ethereum `0x28b6a5aeccbb0dcdb552eecc13276c5b82149ab8`
-- ethereum `0x2c240c57bae0f28a0a78527c937036cca3ce1196`
-- ethereum `0x323e02e92924eb921d1904567690a813249eb819`
-- ethereum `0x33f4baf9054b5f8f3a84e9122f141929c566b84d`
-- ethereum `0x356022505018770da4cca142f2e476e1f53dd63a`
-- ethereum `0x3c13448e7c5b597aa5735cd216d5326a7ef7af43`
-- ethereum `0x486e579172e5a44785ca221d2a23e59b5589d68b`
-- ethereum `0x54fac0d105e80d3da3782b99fb25034d4b748a02`
-- ethereum `0x55dd370dede1ad474d3543be06452615d3b5b162`
-- ethereum `0x573404728e2b6178ebe921576834661066f44184`
-- ethereum `0x5e77127c08c7bc356e25bfaf519180af1b0ad734`
-- ethereum `0x6dc4b844db15591c0110e2a71d717d9eb967f1b8`
-- ethereum `0x757b23ebe6f9c646e32ff1b85f01d46442b077c7`
-- ethereum `0x79c37f4f8018c71095223f330e2d8d81c32d6464`
-- ethereum `0x7d7e1b40613a8dd7818ad618e84352c52c4e880e`
-- ethereum `0x8b8835f2aff14a58b63c3dadf171eaa87c84d19f`
-- ethereum `0x8d26470937a7d63cb9384c3788a5d708da35b4b3`
-- ethereum `0x8fac01686d4c7444c31152aac025b45cb0a95ccd`
-- ethereum `0x94c7bfe83607b53cf974edede02de5110abcd832`
-- ethereum `0x9548c88f78599abd0192fc06353849d854bd661b`
-- ethereum `0x96483361e0adddfc600f61172332594f9dc2e943`
-- ethereum `0x97dc260c7fb513dd528e0ede57a06bdcbf12f522`
-- ethereum `0xa024bb2d6e9780d86af406b477ebcfcedc26e5b1`
-- ethereum `0xa31d3d74513f930f3ee33675e5808b6d5e093bc7`
-- ethereum `0xa46a7b259a5aab29ff1451f80159744d32fed8a1`
-- ethereum `0xa95826d36efa299d8b3d0eaca25e7fae4c7717e7`
-- ethereum `0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0`
-- ethereum `0xaeb349460d3c96c7cba6965b8ff3580bd448cb68`
-- ethereum `0xb178b891701c15eed16482ee008b180daa39cea9`
-- ethereum `0xb89519d9cc9e1f641c361fe1d44e005bbae9150f`
-- ethereum `0xc6805cd7da4ba9bca4ec45d296619f848822cdea`
-- ethereum `0xc6a219429bc05d9c7fb8c8b4166eeb2183c9b346`
-- ethereum `0xc9b6096bc8eaa7dd77f6d90d9f6724e976cb7711`
-- ethereum `0xd4a747da629af31ccc1e2a8aa21f6c6fb796a87b`
-- ethereum `0xe3cfd59fcc3f32c3992626260e30ccdb656c298b`
-- ethereum `0xe42c3fe41450f4f46ba2b5baa52da0809ea59100`
-- ethereum `0xe79f2f7e4a7c049ed7f500649c2323211a32c094`
-- ethereum `0xff3e6c92cc07bc3502415ccfa2dea3b9cdb0db73`
-- ethereum `0xffd3b3c5adc14b5b590453862ea2d456aa0e4f36`
-- polygon `0x5be49eb6f4a363212c0efe5441bd904e22c02657`
-- polygon `0x5ddb321c2080ee2c307a76a6adf3265b987e536c`
-- polygon `0x6b0e0898e6b379a878a21ae3359c7fe52ea098ca`
-- polygon `0x736056aea2e5e69395820dc60b6ca9584ba79453`
-- polygon `0x73fa6025602f92018401b14a0832d56bb8c81e2c`
-- polygon `0x8ecfe01e93aafbabb35e20caef8b276e8d6f7cd4`
-- polygon `0x9351b31fe6a51592a4c40af46538a4f66b0190d5`
-- polygon `0xbac139c21b182b958d1d9737458c7503d3681a3e`
-- polygon `0xe55ef49e8c205bd4b640f30beb70e00fe1b877ee`
-- polygon `0xfce60bbc52a5705cec5b445501fbaf3274dc43d0`
+| polygon | `0x5be49eb6f4a363212c0efe5441bd904e22c02657` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0x5ddb321c2080ee2c307a76a6adf3265b987e536c` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0x6b0e0898e6b379a878a21ae3359c7fe52ea098ca` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0x736056aea2e5e69395820dc60b6ca9584ba79453` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0x73fa6025602f92018401b14a0832d56bb8c81e2c` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0x8ecfe01e93aafbabb35e20caef8b276e8d6f7cd4` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0x9351b31fe6a51592a4c40af46538a4f66b0190d5` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0xbac139c21b182b958d1d9737458c7503d3681a3e` | ERC1967Proxy-4 | impl | live | no |
+| polygon | `0xe55ef49e8c205bd4b640f30beb70e00fe1b877ee` | ERC1967Proxy-2 | impl | live | no |
+| polygon | `0xfce60bbc52a5705cec5b445501fbaf3274dc43d0` | ERC1967Proxy-2 | impl | live | no |

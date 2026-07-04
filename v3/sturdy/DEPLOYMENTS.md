@@ -1,6 +1,6 @@
 # sturdy — deployments
 
-212 verified deployment(s) across 78 component(s).
+244 verified deployment(s) across 97 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -76,7 +76,7 @@
 | ethereum | `0x68b444de25b84bf8c6b904eb572d7d1b6167e6b4` | ETHRSWETHPendlePTOracle | impl | inactive | no |
 | ethereum | `0x68f702ff07f14b057018ab8f3e0f7df03dd91f94` | ETHRSWETHPendlePTOracle | impl | inactive | no |
 | ethereum | `0x69764e3e0671747a7768a1c1afb7c0c39868cc9e` | AggregatorDataProvider | impl | inactive | no |
-| ethereum | `0x6d66cb69ed9bafc9b4da30bb187b3a93d5ebe920` | BaseStrategy | impl | inactive | no |
+| ethereum | `0x6d66cb69ed9bafc9b4da30bb187b3a93d5ebe920` | BaseStrategy-2 | impl | inactive | no |
 | ethereum | `0x6f03c615a3e609d2cf149754cc55462b6477965c` | SturdySiloStrategy-2 | impl | inactive | no |
 | ethereum | `0x6f7c66f09922c04218b54a04261fca2310c76adc` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0x7077ef67fe49ffb1260b893f2cd8475eeb72bbbb` | SturdySiloStrategy | proxy | inactive | no |
@@ -85,6 +85,7 @@
 | ethereum | `0x7520aa7f8dfa6c2f5024f419b33c7c221a647c51` | AggregatorFactory | impl | inactive | no |
 | ethereum | `0x778fbe09c945788df6b627e4d9771f0c475eec59` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0x78852021ce063012a79b9f7d443a70e988585ed7` | USDCYvUSDCRUSDYOracle | impl | inactive | no |
+| ethereum | `0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f` | SturdyPairDeployer | impl | inactive | no |
 | ethereum | `0x7a84460e6df989c258d31017bdddedd54cc88561` | IncentiveVoting | impl | live | no |
 | ethereum | `0x7b3a75114b1e38cb89e38960e0687107beca2d0c` | BaseLeverage | impl | inactive | no |
 | ethereum | `0x7e485966eea7f93e79646a7f4427a8004451fb0e` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
@@ -123,8 +124,9 @@
 | ethereum | `0xafdf33922b129629d77dfcba1286ba0c669b8b57` | SturdySiloStrategy-2 | impl | inactive | no |
 | ethereum | `0xb06559a9b136b3bee486f4c16e5375b0edad4a80` | AggregatorDataProvider | impl | inactive | no |
 | ethereum | `0xb3bf04a939aacff5bdcfc273ce4f36cf29f063db` | SturdySiloStrategy-2 | impl | inactive | no |
-| ethereum | `0xb43f50b71e2b635e4778e32019609e7ad3b8e07c` | BaseStrategy-2 | impl | inactive | no |
+| ethereum | `0xb43f50b71e2b635e4778e32019609e7ad3b8e07c` | BaseStrategy-3 | impl | inactive | no |
 | ethereum | `0xb7a81ef9fc8495e3cb39687ecd012eda5168044b` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
+| ethereum | `0xb825a2d7141f6c4c357d4198e6e2d20369bf5108` | AggregatorAccountant | impl | inactive | no |
 | ethereum | `0xb912bef156022d4d143c52f86b2dc1b24dd0c5c0` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0xba4c10a7afa6376c47dabb9bedf349ea3a08170f` | YieldDistributorAdapter | impl | inactive | no |
 | ethereum | `0xbd87149156cebe7ef5cdd2669581a6cb236c84c3` | Gauge | impl | inactive | no |
@@ -144,7 +146,7 @@
 | ethereum | `0xd23bfa060c2dcb70d4aeb78ebd2ee9a172cf5818` | UniswapAdapter | impl | inactive | no |
 | ethereum | `0xd32d748039bd32d68b3e492dde3af955be70ec14` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0xda11c8d85203f9d616246754b8957f00892476b1` | YieldDistributorAdapter | impl | inactive | no |
-| ethereum | `0xdab149804cfceb2b05ecccae3e798026793e0110` | BaseStrategy-3 | impl | inactive | no |
+| ethereum | `0xdab149804cfceb2b05ecccae3e798026793e0110` | BaseStrategy-4 | impl | inactive | no |
 | ethereum | `0xdad951530ef3a823d835ef34367a96f5b9077cdb` | BalancerswapAdapter | impl | inactive | no |
 | ethereum | `0xdb6ce32d36a9d807bab0c3947b31b06706758492` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0xdba0d88bc28a47707d62b8ac15cdd4383de63275` | Gauge | impl | inactive | no |
@@ -166,6 +168,7 @@
 | ethereum | `0xed2e83dd4ca97b8abe6d8e1a63eeccd82583b357` | IncentiveVoting | impl | inactive | no |
 | ethereum | `0xeee4ecddbb6145839e52f5bc177331db56f26c6c` | USDCUSDYOracle | impl | inactive | no |
 | ethereum | `0xeef271a0071423ea56d38e4abe748165cc432e3f` | SturdySiloStrategy | proxy | live | no |
+| ethereum | `0xf0382a9eca5276d7b4bbcc503e4159c046c120ec` | SturdyPairDeployer | impl | inactive | no |
 | ethereum | `0xf265f91e07710a35b4667c48d7ad969b5e0c79ba` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0xf2705f799cb96a70bc503a5db9d7190768203f4d` | SturdySiloStrategy-2 | impl | inactive | no |
 | ethereum | `0xf2d6c582609f77166914de80b4485084e54bdade` | DebtManager | impl | live | yes |
@@ -178,81 +181,78 @@
 | ethereum | `0xfe9f717417cb06219cb4b5b22b9efbbcdf89d32c` | CrvUSDYv3CRVCrvUSDOracle | impl | inactive | no |
 | ethereum | `0xfef192cabf37a2396a8665f42f9a499a52baa185` | ETHSWETHOracle | impl | inactive | no |
 | linea | `0x09cf3b20f56bc3461a828e9c167db4a33addf855` | NileswapAdapter | impl | inactive | no |
-| linea | `0x298d679cb18dece7271f56589859bc4da6c91f87` | SturdyPairDeployer | impl | inactive | no |
-| linea | `0x4534f53a81416a83f6baf5ac63c94aed1fea1303` | AggregatorAccountant-2 | impl | inactive | no |
+| linea | `0x20d0cdf9004bf56bca52a25c9288aad0ebb97d59` | VariableInterestRate-2 | impl | inactive | no |
+| linea | `0x298d679cb18dece7271f56589859bc4da6c91f87` | SturdyPairDeployer-2 | impl | inactive | no |
+| linea | `0x39d9dbebba50b8dc89c2819e863c1e146235bfef` | SturdySiloAprOracle-3 | impl | inactive | no |
+| linea | `0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7` | RewardConfig-4 | impl | inactive | no |
+| linea | `0x4534f53a81416a83f6baf5ac63c94aed1fea1303` | AggregatorAccountant | impl | inactive | no |
 | linea | `0x5c0801270b471311e3bf7bb3637a7d12b13d747c` | SturdyLeverageWihtoutFlashloanLinea | impl | inactive | no |
+| linea | `0x884b41145ae3816a0b1a3bae5d2f562be3d31cec` | SturdySiloStrategy-4 | proxy | inactive | no |
+| linea | `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4` | SiloHelper-2 | impl | live | no |
+| linea | `0xae35858a62c3e6ded2945b76a2f08a0077e4ac8d` | SturdyPairDeployer-2 | impl | inactive | no |
+| linea | `0xd67da8636ae87b0cecbda2e66db58d4839722b52` | AggregatorDataProvider-3 | impl | inactive | no |
+| linea | `0xd7d7d7075139ce8ce02f97bd113f3f89f60851c3` | AprOracle-2 | impl | inactive | no |
 | linea | `0xd8905400105358bab2eddcb78da3478368c343f1` | ETHBasedOracle | impl | inactive | no |
+| linea | `0xda11c8d85203f9d616246754b8957f00892476b1` | SturdySiloStrategy-4 | proxy | inactive | no |
+| linea | `0xed7d1b8dea862005b7d9cf0b2a5f9f0e816f85fb` | SturdyWhitelist-2 | impl | inactive | no |
 | mode | `0x03aef503d5e5be4dfb02b3425b737006a9b390eb` | VariableInterestRate | impl | unknown | no |
 | mode | `0x0c2f5023d2e9ec881234ebc167311e596a703faa` | RedstoneBasedAssetOracle | impl | unknown | no |
 | mode | `0x0ebf145136acd214997c1ccaa6c686d1880bb532` | PythBasedAssetOracle | impl | unknown | no |
 | mode | `0x16343853f785dd24a93fe4040063abcbdc409441` | VariableInterestRate | impl | unknown | no |
-| mode | `0x168f6c2c46a58f4394924d14b9dc0a2b394519d9` | BaseStrategy-4 | impl | unknown | no |
+| mode | `0x168f6c2c46a58f4394924d14b9dc0a2b394519d9` | BaseStrategy | impl | unknown | no |
 | mode | `0x1c278caeda6730a7dc1fe38450c521a43069b379` | VariableInterestRate | impl | unknown | no |
 | mode | `0x1ea0f1fcb10b58f5e43c4c764cab1a35ab6bc792` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0x2040a9adcfa0adea197a6a466f5e259a27fd15a0` | SiloGateway-2 | impl | live | yes |
+| mode | `0x31993d7b2620b77d410ff185e54535fd713459f3` | DebtManager-2 | impl | live | yes |
 | mode | `0x39d9dbebba50b8dc89c2819e863c1e146235bfef` | VariableInterestRate | impl | unknown | no |
 | mode | `0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7` | PythBasedAssetOracle | impl | unknown | no |
 | mode | `0x3d34bcb3da8a7e74a6207c34612d763b94cd1b87` | SturdyLeverageWihtoutFlashloan1 | impl | unknown | no |
 | mode | `0x46dd996be31a31483a3c5d8d513eb6536eae3bfa` | PythBasedAssetOracle | impl | unknown | no |
 | mode | `0x4c2dfa85753ef95eb822158e8ac06d2b131137d8` | SupswapAdapter | impl | inactive | no |
+| mode | `0x4e72fcb2517ed90a3976dd8f50a387811ac4d883` | SturdySiloStrategy-3 | impl | unknown | no |
+| mode | `0x56a1e840bfe18e82a412134ab6b0618ab1db406d` | SturdySiloStrategy-3 | impl | unknown | no |
+| mode | `0x5829d7495110ccc36a48e35d58d3d840546ce690` | SturdySiloStrategy-3 | impl | unknown | no |
 | mode | `0x5adac43234bd62818401a472c62e25c9a1142cfb` | VariableInterestRate | impl | unknown | no |
 | mode | `0x5fad91704f52b173a5d9fb8cf83822a1d9848892` | SiloHelper | impl | unknown | no |
+| mode | `0x61eea4770d7e15e7036f8632f4bcb33af1af1e25` | SturdyPairDeployer-3 | impl | unknown | no |
+| mode | `0x63e3ca7f666c4923d2b1d0bb1c301ba9a57f9560` | BaseStrategy | impl | unknown | no |
+| mode | `0x644b50951f974a63e028d67dd7aee520c0f1eb3b` | SiloGateway-3 | impl | live | yes |
 | mode | `0x6605111929527485e418e7714d24fb72f5380e1f` | SturdyPairRegistry | impl | unknown | no |
 | mode | `0x69ad3538049a8401ac162193c889bae9388cffa2` | VariableInterestRate | impl | unknown | no |
 | mode | `0x6cb759c980c2922731fe13b2edce5d4ed47ad6fd` | SturdyLeverageWihtoutFlashloan | impl | unknown | no |
+| mode | `0x6cef966e111362ff22d8789b1fa886e4ef674c5a` | BaseStrategy | impl | unknown | no |
 | mode | `0x6f7c66f09922c04218b54a04261fca2310c76adc` | API3BasedETHEZETHOracle | impl | unknown | no |
+| mode | `0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f` | BaseStrategy | impl | unknown | no |
 | mode | `0x83c0217e1373afe161ca378e3a141fe340eb4b6c` | RedstoneBasedAssetOracle | impl | unknown | no |
+| mode | `0x83eb3cf482810e79e9f562d8de87fedf038be768` | SturdySiloAprOracle-2 | impl | unknown | no |
 | mode | `0x884b41145ae3816a0b1a3bae5d2f562be3d31cec` | VariableInterestRate | impl | unknown | no |
 | mode | `0x90832de4d1915c6e5906f4605babe7c84a08a0c2` | VariableInterestRate | impl | unknown | no |
+| mode | `0x96a1a3ce4b9cb36ad259c3066d583acd358dcca9` | DebtManager-2 | impl | live | yes |
+| mode | `0x9cf92c22c36fe62d789a489f40b136db345f414b` | SturdySiloStrategy-3 | impl | unknown | no |
 | mode | `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4` | SturdyLeverageWihtoutFlashloan | impl | unknown | no |
 | mode | `0xae35858a62c3e6ded2945b76a2f08a0077e4ac8d` | SturdyWhitelist | impl | unknown | no |
 | mode | `0xae610460522f3e71c40ad6a2c70f486341b88daf` | VariableInterestRate | impl | unknown | no |
 | mode | `0xb06559a9b136b3bee486f4c16e5375b0edad4a80` | VariableInterestRate | impl | unknown | no |
+| mode | `0xb3d159d3c656925738e5733fb3aeb2a9cab92839` | RewardConfig-2 | impl | unknown | no |
 | mode | `0xba4c10a7afa6376c47dabb9bedf349ea3a08170f` | AprOracle | impl | unknown | no |
+| mode | `0xcdb88a11f4f825a9372f97010b7c762e3db9e1c6` | SturdySiloStrategy-3 | impl | unknown | no |
 | mode | `0xcde573ee42c64e297a842eeef81eececa93a887c` | VariableInterestRate | impl | unknown | no |
-| mode | `0xd577429db653cd20effcd4977b2b41a6fd794a3b` | AggregatorAccountant | impl | unknown | no |
+| mode | `0xd2bc9a2f722c0970cc9520a03b039a45da897787` | RewardConfig-3 | impl | unknown | no |
+| mode | `0xd577429db653cd20effcd4977b2b41a6fd794a3b` | AggregatorAccountant-2 | impl | unknown | no |
 | mode | `0xd7d7d7075139ce8ce02f97bd113f3f89f60851c3` | PythBasedAssetOracle | impl | unknown | no |
 | mode | `0xd8905400105358bab2eddcb78da3478368c343f1` | SturdyWhitelist | impl | unknown | no |
 | mode | `0xde9e69a8ecc6e2cd410f186c53b677aca7a92aed` | RedstoneBasedAssetOracle | impl | unknown | no |
 | mode | `0xe88c038cedd710a012aba286d56e2ef7441b0b42` | VariableInterestRate | impl | unknown | no |
 | mode | `0xeff461778374f2bda7204e8ae366560deca73d16` | RedstoneBasedAssetOracle | impl | unknown | no |
 | mode | `0xfd364c4f8e03b76f4d8f0f8121a0a31d05f49372` | VariableInterestRate | impl | unknown | no |
+| optimism | `0x5fad91704f52b173a5d9fb8cf83822a1d9848892` | SturdySiloStrategy-5 | proxy | inactive | no |
+| optimism | `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4` | AggregatorDataProvider-2 | impl | inactive | no |
+| optimism | `0xda11c8d85203f9d616246754b8957f00892476b1` | AggregatorDataProvider-2 | impl | inactive | no |
 
-## Source unavailable (36)
+## Source unavailable (4)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- ethereum `0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f`
-- ethereum `0xb825a2d7141f6c4c357d4198e6e2d20369bf5108`
 - ethereum `0xd577429db653cd20effcd4977b2b41a6fd794a3b`
-- ethereum `0xf0382a9eca5276d7b4bbcc503e4159c046c120ec`
-- linea `0x20d0cdf9004bf56bca52a25c9288aad0ebb97d59`
-- linea `0x39d9dbebba50b8dc89c2819e863c1e146235bfef`
-- linea `0x3b1e4e5e307207978e2e52ee92516bfe5de0f2e7`
-- linea `0x884b41145ae3816a0b1a3bae5d2f562be3d31cec`
-- linea `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4`
-- linea `0xae35858a62c3e6ded2945b76a2f08a0077e4ac8d`
-- linea `0xd67da8636ae87b0cecbda2e66db58d4839722b52`
-- linea `0xd7d7d7075139ce8ce02f97bd113f3f89f60851c3`
-- linea `0xda11c8d85203f9d616246754b8957f00892476b1`
-- linea `0xed7d1b8dea862005b7d9cf0b2a5f9f0e816f85fb`
-- mode `0x2040a9adcfa0adea197a6a466f5e259a27fd15a0`
-- mode `0x31993d7b2620b77d410ff185e54535fd713459f3`
-- mode `0x4e72fcb2517ed90a3976dd8f50a387811ac4d883`
-- mode `0x56a1e840bfe18e82a412134ab6b0618ab1db406d`
-- mode `0x5829d7495110ccc36a48e35d58d3d840546ce690`
-- mode `0x61eea4770d7e15e7036f8632f4bcb33af1af1e25`
-- mode `0x63e3ca7f666c4923d2b1d0bb1c301ba9a57f9560`
-- mode `0x644b50951f974a63e028d67dd7aee520c0f1eb3b`
-- mode `0x6cef966e111362ff22d8789b1fa886e4ef674c5a`
-- mode `0x797b173a2c31fd34b0bebf5f0c64ec70372b2d2f`
-- mode `0x83eb3cf482810e79e9f562d8de87fedf038be768`
-- mode `0x96a1a3ce4b9cb36ad259c3066d583acd358dcca9`
-- mode `0x9cf92c22c36fe62d789a489f40b136db345f414b`
-- mode `0xb3d159d3c656925738e5733fb3aeb2a9cab92839`
-- mode `0xcdb88a11f4f825a9372f97010b7c762e3db9e1c6`
-- mode `0xd2bc9a2f722c0970cc9520a03b039a45da897787`
 - mode `0xf0382a9eca5276d7b4bbcc503e4159c046c120ec`
 - mode `0xf7be7370005896c720c2a84da870e041acf41a4d`
 - mode `0xfb6113ccd6a20f235a3631876f2791fec66233e7`
-- optimism `0x5fad91704f52b173a5d9fb8cf83822a1d9848892`
-- optimism `0x9dc7b2130e478c5810dc0cdbd46b9d479b2e1ac4`
-- optimism `0xda11c8d85203f9d616246754b8957f00892476b1`

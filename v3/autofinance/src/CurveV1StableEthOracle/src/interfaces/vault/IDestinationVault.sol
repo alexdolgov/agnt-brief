@@ -59,6 +59,9 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @notice Balance of underlying debt, sum of `externalDebtBalance()` and `internalDebtBalance()`.
     function balanceOfUnderlyingDebt() external view returns (uint256);
 
+    /// @notice Total balance of underlying, sum of queried balances minus debt balances.
+    function excessUnderlyingBalance() external view returns (uint256);
+
     /// @notice Rewarder for this vault
     function rewarder() external view returns (address);
 

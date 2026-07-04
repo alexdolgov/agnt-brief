@@ -1,0 +1,34 @@
+{
+  "component": "ERC4626OracleHardcodeQuoteFactory-3",
+  "main_contract": "ERC4626OracleHardcodeQuoteFactory",
+  "source_file_count": 10,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x774c5984e30545199928d85cd417e051e65067bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xcf827892dbfe1f1b4756789620f5f87357bf8627",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbf3c74f202fc4c2b39a48992901d4e5c3a023446",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

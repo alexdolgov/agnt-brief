@@ -1,23 +1,39 @@
 {
   "component": "SpeedMarketsAMM-5",
   "main_contract": "SpeedMarketsAMM",
-  "source_file_count": 13,
-  "deployment_count": 2,
+  "source_file_count": 26,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0a2d637a15ec5a203c9674c3608545ded33f4902",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02950ed910b447a0b849cd58edcc121d051d7a06",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x8bb690c9c0864a2d478a164ad7ff96353db73252",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x659b8efb8f42084b9713b65fe8545acaba303d82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x99cbaf37c1fe28af3f553f4b968c342a8c3b9335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb52a6cc2002acc19035afe1cb6872f9403c640c5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

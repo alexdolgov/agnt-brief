@@ -1,15 +1,23 @@
 {
   "component": "VoterProxyOwner",
   "main_contract": "VoterProxyOwner",
-  "source_file_count": 6,
-  "deployment_count": 1,
+  "source_file_count": 2,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2b83552729067d1c32a2a31024776bd83c48816e",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x96b67800d280640803ae077a8126030e204af030",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb1d7c7bd55d6679e662e3482671d2735de0e69e8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

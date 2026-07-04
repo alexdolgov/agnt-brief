@@ -21,6 +21,7 @@
 pragma solidity ^0.8.9;
 
 import { IAuthorizationBase } from "./IAuthorizationBase.sol";
+import { IBorrowPositionProxyV1 } from "./IBorrowPositionProxyV1.sol";
 import { AccountBalanceLib } from "../lib/AccountBalanceLib.sol";
 
 
@@ -31,7 +32,7 @@ import { AccountBalanceLib } from "../lib/AccountBalanceLib.sol";
  * @notice  Interface for allowing only trusted callers to invoke borrow related functions for transferring funds
  *          between account owners.
  */
-interface IBorrowPositionProxyV2 is IAuthorizationBase {
+interface IBorrowPositionProxyV2 is IAuthorizationBase, IBorrowPositionProxyV1 {
 
     // ========================= Functions =========================
 

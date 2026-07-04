@@ -43,6 +43,7 @@ library PositionLogic {
 
     // Custom errors
     error DuplicatedRange(IMultiPositionManager.Range range);
+    int24 private constant LIMIT_AT_CURRENT_TICK = type(int24).max;
 
     /**
      * @notice Set limit ranges based on limit width and base ranges
@@ -55,66 +56,32 @@ library PositionLogic {
     function setLimitRanges(
         SharedStructs.ManagerStorage storage s,
         uint24 limitWidth,
+        int24 limitReferenceTick,
         IMultiPositionManager.Range[] memory baseRanges,
         int24 tickSpacing,
         int24 currentTick
     ) external {
-        if (limitWidth == 0) {
-            delete s.limitPositions;
-            s.limitPositionsLength = 0;
-            return;
-        }
+        IMultiPositionManager.Range memory lowerLimit;
+        IMultiPositionManager.Range memory upperLimit;
+        uint256 limitCount;
 
-        if (int24(limitWidth) % tickSpacing != 0) {
-            // increase `limitWidth` to round up multiple of tickSpacing
-            limitWidth = uint24((int24(limitWidth) / tickSpacing + 1) * tickSpacing);
-        }
+        (lowerLimit, upperLimit) =
+            calculateLimitRanges(limitWidth, limitReferenceTick, baseRanges, tickSpacing, currentTick);
+        s.limitPositions[0] = lowerLimit;
+        s.limitPositions[1] = upperLimit;
 
-        // Check against NEW base ranges (not historical ones)
-        // Use do-while to handle consecutive width collisions
-        uint256 baseRangesLength = baseRanges.length;
-        bool collision;
-        do {
-            collision = false;
-            for (uint256 i = 0; i < baseRangesLength;) {
-                int24 rangeWidth = baseRanges[i].upperTick - baseRanges[i].lowerTick;
-                if (rangeWidth == int24(limitWidth)) {
-                    limitWidth = uint24(int24(limitWidth) + tickSpacing);
-                    collision = true;
-                    break;
-                }
-                unchecked {
-                    ++i;
-                }
-            }
-        } while (collision);
-
-        int24 baseTick;
-        if (currentTick % tickSpacing == 0) {
-            baseTick = currentTick;
-        } else if (currentTick % tickSpacing > 0) {
-            baseTick = (currentTick / tickSpacing) * tickSpacing;
-        } else {
-            baseTick = (currentTick / tickSpacing - 1) * tickSpacing;
-        }
-
-        (s.limitPositions[0].lowerTick, s.limitPositions[0].upperTick) =
-            roundUp(baseTick - int24(limitWidth), baseTick, tickSpacing);
-        (s.limitPositions[1].lowerTick, s.limitPositions[1].upperTick) =
-            roundUp(baseTick + tickSpacing, baseTick + tickSpacing + int24(limitWidth), tickSpacing);
-
-        // Update limitPositionsLength based on non-empty positions
-        s.limitPositionsLength = 0;
-        if (s.limitPositions[0].lowerTick != s.limitPositions[0].upperTick) {
+        if (!_isEmptyRange(lowerLimit)) {
             unchecked {
-                ++s.limitPositionsLength;
+                ++limitCount;
             }
         }
-        if (s.limitPositions[1].lowerTick != s.limitPositions[1].upperTick) {
+        if (!_isEmptyRange(upperLimit)) {
             unchecked {
-                ++s.limitPositionsLength;
+                ++limitCount;
             }
         }
+
+        s.limitPositionsLength = limitCount;
     }
 
     /**
@@ -128,6 +95,7 @@ library PositionLogic {
      */
     function calculateLimitRanges(
         uint24 limitWidth,
+        int24 limitReferenceTick,
         IMultiPositionManager.Range[] memory baseRanges,
         int24 tickSpacing,
         int24 currentTick
@@ -137,48 +105,26 @@ library PositionLogic {
         returns (IMultiPositionManager.Range memory lowerLimit, IMultiPositionManager.Range memory upperLimit)
     {
         if (limitWidth == 0) {
-            return (
-                IMultiPositionManager.Range({lowerTick: 0, upperTick: 0}),
-                IMultiPositionManager.Range({lowerTick: 0, upperTick: 0})
-            );
+            return (_emptyRange(), _emptyRange());
         }
 
-        if (int24(limitWidth) % tickSpacing != 0) {
-            // increase `limitWidth` to round up multiple of tickSpacing
-            limitWidth = uint24((int24(limitWidth) / tickSpacing + 1) * tickSpacing);
-        }
+        int24 spotFloor = _floorToTickSpacing(currentTick, tickSpacing);
+        int24 referenceFloor = limitReferenceTick == LIMIT_AT_CURRENT_TICK
+            ? spotFloor
+            : _floorToTickSpacing(limitReferenceTick, tickSpacing);
+        int256 alignedWidth = _alignWidth(limitWidth, tickSpacing);
 
-        // Check against NEW base ranges (not historical ones)
-        // Use do-while to handle consecutive width collisions
-        uint256 baseRangesLength = baseRanges.length;
-        bool collision;
-        do {
-            collision = false;
-            for (uint256 i = 0; i < baseRangesLength;) {
-                int24 rangeWidth = baseRanges[i].upperTick - baseRanges[i].lowerTick;
-                if (rangeWidth == int24(limitWidth)) {
-                    limitWidth = uint24(int24(limitWidth) + tickSpacing);
-                    collision = true;
-                    break;
-                }
-                unchecked {
-                    ++i;
-                }
-            }
-        } while (collision);
+        lowerLimit = _clampRange(
+            _min(int256(referenceFloor) - alignedWidth, int256(spotFloor) - alignedWidth), int256(spotFloor), tickSpacing
+        );
+        lowerLimit = _resolveRangeCollisions(lowerLimit, false, baseRanges, _emptyRange(), tickSpacing);
 
-        int24 baseTick;
-        if (currentTick % tickSpacing == 0) {
-            baseTick = currentTick;
-        } else if (currentTick % tickSpacing > 0) {
-            baseTick = (currentTick / tickSpacing) * tickSpacing;
-        } else {
-            baseTick = (currentTick / tickSpacing - 1) * tickSpacing;
-        }
-
-        (lowerLimit.lowerTick, lowerLimit.upperTick) = roundUp(baseTick - int24(limitWidth), baseTick, tickSpacing);
-        (upperLimit.lowerTick, upperLimit.upperTick) =
-            roundUp(baseTick + tickSpacing, baseTick + tickSpacing + int24(limitWidth), tickSpacing);
+        upperLimit = _clampRange(
+            int256(spotFloor) + int256(tickSpacing),
+            _max(int256(referenceFloor) + alignedWidth, int256(spotFloor) + int256(tickSpacing) + alignedWidth),
+            tickSpacing
+        );
+        upperLimit = _resolveRangeCollisions(upperLimit, true, baseRanges, lowerLimit, tickSpacing);
     }
 
     /**
@@ -189,9 +135,107 @@ library PositionLogic {
      * @return Rounded lower and upper ticks
      */
     function roundUp(int24 tickLower, int24 tickUpper, int24 tickSpacing) public pure returns (int24, int24) {
+        IMultiPositionManager.Range memory range = _clampRange(int256(tickLower), int256(tickUpper), tickSpacing);
+        return (range.lowerTick, range.upperTick);
+    }
+
+    function _alignWidth(uint24 limitWidth, int24 tickSpacing) private pure returns (int256 alignedWidth) {
+        int256 spacing = int256(tickSpacing);
+        int256 width = int256(uint256(limitWidth));
+        alignedWidth = ((width + spacing - 1) / spacing) * spacing;
+    }
+
+    function _floorToTickSpacing(int24 tick, int24 tickSpacing) private pure returns (int24 flooredTick) {
+        int24 remainder = tick % tickSpacing;
+        if (remainder == 0) return tick;
+        return remainder > 0 ? (tick / tickSpacing) * tickSpacing : (tick / tickSpacing - 1) * tickSpacing;
+    }
+
+    function _resolveRangeCollisions(
+        IMultiPositionManager.Range memory candidate,
+        bool isUpperLimit,
+        IMultiPositionManager.Range[] memory baseRanges,
+        IMultiPositionManager.Range memory otherLimit,
+        int24 tickSpacing
+    ) private pure returns (IMultiPositionManager.Range memory) {
+        while (!_isEmptyRange(candidate)) {
+            (bool widthCollision, bool duplicatedRange) = _getCollisionStatus(candidate, baseRanges, otherLimit);
+            if (!widthCollision && !duplicatedRange) {
+                return candidate;
+            }
+
+            IMultiPositionManager.Range memory extended = _extendFarEdge(candidate, isUpperLimit, tickSpacing);
+            if (extended.lowerTick == candidate.lowerTick && extended.upperTick == candidate.upperTick) {
+                return _emptyRange();
+            }
+
+            candidate = extended;
+        }
+
+        return _emptyRange();
+    }
+
+    function _getCollisionStatus(
+        IMultiPositionManager.Range memory candidate,
+        IMultiPositionManager.Range[] memory baseRanges,
+        IMultiPositionManager.Range memory otherLimit
+    ) private pure returns (bool widthCollision, bool duplicatedRange) {
+        if (_isEmptyRange(candidate)) return (false, false);
+
+        int24 candidateWidth = candidate.upperTick - candidate.lowerTick;
+        uint256 baseRangesLength = baseRanges.length;
+        for (uint256 i = 0; i < baseRangesLength;) {
+            IMultiPositionManager.Range memory baseRange = baseRanges[i];
+            if (!_isEmptyRange(baseRange)) {
+                if (!widthCollision && candidateWidth == baseRange.upperTick - baseRange.lowerTick) {
+                    widthCollision = true;
+                }
+                if (!duplicatedRange && _isSameRange(candidate, baseRange)) {
+                    duplicatedRange = true;
+                }
+                if (widthCollision && duplicatedRange) {
+                    return (true, true);
+                }
+            }
+            unchecked {
+                ++i;
+            }
+        }
+
+        if (!_isEmptyRange(otherLimit)) {
+            if (!widthCollision && candidateWidth == otherLimit.upperTick - otherLimit.lowerTick) {
+                widthCollision = true;
+            }
+            if (!duplicatedRange && _isSameRange(candidate, otherLimit)) {
+                duplicatedRange = true;
+            }
+        }
+    }
+
+    function _extendFarEdge(IMultiPositionManager.Range memory candidate, bool isUpperLimit, int24 tickSpacing)
+        private
+        pure
+        returns (IMultiPositionManager.Range memory)
+    {
+        if (_isEmptyRange(candidate)) return candidate;
+
+        if (isUpperLimit) {
+            return _clampRange(
+                int256(candidate.lowerTick), int256(candidate.upperTick) + int256(tickSpacing), tickSpacing
+            );
+        }
+
+        return _clampRange(int256(candidate.lowerTick) - int256(tickSpacing), int256(candidate.upperTick), tickSpacing);
+    }
+
+    function _clampRange(int256 tickLower, int256 tickUpper, int24 tickSpacing)
+        private
+        pure
+        returns (IMultiPositionManager.Range memory range)
+    {
         // Get min/max usable ticks that are aligned with tick spacing
-        int24 minUsableTick = TickMath.minUsableTick(tickSpacing);
-        int24 maxUsableTick = TickMath.maxUsableTick(tickSpacing);
+        int256 minUsableTick = int256(TickMath.minUsableTick(tickSpacing));
+        int256 maxUsableTick = int256(TickMath.maxUsableTick(tickSpacing));
 
         // Ensure lower tick is at least the min usable tick
         if (tickLower < minUsableTick) {
@@ -203,10 +247,36 @@ library PositionLogic {
         }
         // Handle invalid ranges
         if (tickLower >= tickUpper) {
-            return (0, 0);
+            return _emptyRange();
         }
 
-        return (tickLower, tickUpper);
+        range.lowerTick = int24(tickLower);
+        range.upperTick = int24(tickUpper);
+    }
+
+    function _emptyRange() private pure returns (IMultiPositionManager.Range memory range) {
+        range.lowerTick = 0;
+        range.upperTick = 0;
+    }
+
+    function _isEmptyRange(IMultiPositionManager.Range memory range) private pure returns (bool) {
+        return range.lowerTick >= range.upperTick;
+    }
+
+    function _isSameRange(IMultiPositionManager.Range memory lhs, IMultiPositionManager.Range memory rhs)
+        private
+        pure
+        returns (bool)
+    {
+        return !_isEmptyRange(rhs) && lhs.lowerTick == rhs.lowerTick && lhs.upperTick == rhs.upperTick;
+    }
+
+    function _min(int256 lhs, int256 rhs) private pure returns (int256) {
+        return lhs < rhs ? lhs : rhs;
+    }
+
+    function _max(int256 lhs, int256 rhs) private pure returns (int256) {
+        return lhs > rhs ? lhs : rhs;
     }
 
     /**

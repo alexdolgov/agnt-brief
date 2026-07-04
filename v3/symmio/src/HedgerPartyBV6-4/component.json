@@ -1,0 +1,18 @@
+{
+  "component": "HedgerPartyBV6-4",
+  "main_contract": "HedgerPartyBV6",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xc2cee56389402aa1058c6e9c5e588ba880a17afc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

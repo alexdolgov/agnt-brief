@@ -1,0 +1,18 @@
+{
+  "component": "PlutusVaultGLPIsolationModeTokenVaultV1-2",
+  "main_contract": "PlutusVaultGLPIsolationModeTokenVaultV1",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x105df7ca44dda2a4934473a564e075f5fe7a2e11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

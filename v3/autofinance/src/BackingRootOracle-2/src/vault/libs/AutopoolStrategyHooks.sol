@@ -5,7 +5,7 @@ pragma solidity ^0.8.24;
 
 // solhint-disable no-inline-assembly,avoid-low-level-calls
 
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 import { SSTORE2 } from "src/external/solady/SSTORE2.sol";
 import { LibBytes } from "src/external/solady/LibBytes.sol";
 import { AutopoolState } from "src/vault/libs/AutopoolState.sol";
@@ -198,8 +198,8 @@ library AutopoolStrategyHooks {
         bytes memory flags = getHookBytes($);
 
         uint256 len = newHooks.length;
-        AutopilotErrors.verifyNotZero(len, "len");
-        AutopilotErrors.verifyArrayLengths(len, configDatas.length, "ars");
+        Errors.verifyNotZero(len, "len");
+        Errors.verifyArrayLengths(len, configDatas.length, "ars");
 
         for (uint256 i = 0; i < len;) {
             flags = _addHook(flags, newHooks[i], configDatas[i]);
@@ -217,7 +217,7 @@ library AutopoolStrategyHooks {
     /// @param hookToRemove Hook to remove from to the Autopool
     /// @param cleanupData Data to pass to the onUnregistered function of the hook
     function removeHook(AutopoolState storage $, IStrategyHook hookToRemove, bytes calldata cleanupData) external {
-        AutopilotErrors.verifyNotZero(address(hookToRemove), "hookToRemove");
+        Errors.verifyNotZero(address(hookToRemove), "hookToRemove");
 
         bytes memory flags;
 
@@ -231,7 +231,7 @@ library AutopoolStrategyHooks {
         // We are OK with assumption that supported flags can't change between
         // register and unregister
         uint8 supportedHookFunctions = hookToRemove.getFnFlags();
-        AutopilotErrors.verifyNotZero(supportedHookFunctions, "supportedHookFunctions");
+        Errors.verifyNotZero(supportedHookFunctions, "supportedHookFunctions");
         uint256 fnToCheck = 1;
 
         bytes memory newFlagsData;
@@ -371,10 +371,10 @@ library AutopoolStrategyHooks {
         IStrategyHook newHook,
         bytes memory configData
     ) private returns (bytes memory) {
-        AutopilotErrors.verifyNotZero(address(newHook), "newHook");
+        Errors.verifyNotZero(address(newHook), "newHook");
 
         uint8 supportedHookFunctions = newHook.getFnFlags();
-        AutopilotErrors.verifyNotZero(supportedHookFunctions, "supportedHookFunctions");
+        Errors.verifyNotZero(supportedHookFunctions, "supportedHookFunctions");
         uint256 fnToCheck = 1;
 
         bytes memory newFlagsData;

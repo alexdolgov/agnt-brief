@@ -1,0 +1,18 @@
+{
+  "component": "OdosWithdrawSwapAdapter-2",
+  "main_contract": "OdosWithdrawSwapAdapter",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xc7878a1dd9cf82f5db84dc7157f623edee52d247",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

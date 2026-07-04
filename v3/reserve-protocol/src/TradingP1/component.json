@@ -2,10 +2,18 @@
   "component": "TradingP1",
   "main_contract": "TradingP1",
   "source_file_count": 68,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe5fee6464f90e38e54c68c63aadf7120b534aa6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

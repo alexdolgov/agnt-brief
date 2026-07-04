@@ -1,15 +1,15 @@
 {
   "component": "AssetPluginRegistry-8",
   "main_contract": "AssetPluginRegistry",
-  "source_file_count": 54,
+  "source_file_count": 52,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2261c428624c1a50df5c101af2afcc3c8926021c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e7d81d54b5478d4d707be1f2b6875b7955ff8c7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

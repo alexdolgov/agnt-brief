@@ -1,0 +1,28 @@
+{
+  "component": "FeeManager-3",
+  "main_contract": "FeeManager",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5af85b993645af4e530f93721653fb9b6a424b00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc639f1a10c10df80500713dd8b7e2ef85f8d90e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

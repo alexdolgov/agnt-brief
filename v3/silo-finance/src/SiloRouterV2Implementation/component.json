@@ -2,7 +2,7 @@
   "component": "SiloRouterV2Implementation",
   "main_contract": "SiloRouterV2Implementation",
   "source_file_count": 23,
-  "deployment_count": 4,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20Enterprise%20Continuous%20Audit.pdf",
@@ -11,6 +11,38 @@
     "https://github.com/silo-finance/silo-contracts-v3/blob/master/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd2bf5845ebc4d2b7966dd20ad59cb620f355a235",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2aec24e2fac282134c28c419cd44b021412c1fd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6ac197a9dea6e956e5591fa25ce27848832cfb30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd9070b732cdd4ab18a97b0da4f9c7c60741ac001",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

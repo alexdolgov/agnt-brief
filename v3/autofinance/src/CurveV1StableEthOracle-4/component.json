@@ -1,0 +1,18 @@
+{
+  "component": "CurveV1StableEthOracle-4",
+  "main_contract": "CurveV1StableEthOracle",
+  "source_file_count": 67,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xbb1feb0e61329a0017e2029447ba7070728d2635",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

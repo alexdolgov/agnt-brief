@@ -1,7 +1,7 @@
 {
   "component": "StrategyProxy-29",
   "main_contract": "StrategyProxy",
-  "source_file_count": 8,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,9 +9,9 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x6a19aea134cc3c6069b2d89b5a1042cabc683cde",
-      "is_proxy": true,
-      "implementation_address": "0x9dd68b6fdb0cf28e7a27aa04d68acaf9a7434ee8",
+      "address": "0x5e1af85b66a45cdb87d38bcf34ac7d43274e0dac",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     }
   ]

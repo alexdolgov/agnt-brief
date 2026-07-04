@@ -1,0 +1,18 @@
+{
+  "component": "AprForwardingTreasuryStrategy-2",
+  "main_contract": "AprForwardingTreasuryStrategy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3750a4a5e7d7198163df95d436b8d5ea7e64f326",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

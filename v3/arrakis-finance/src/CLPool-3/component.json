@@ -1,0 +1,26 @@
+{
+  "component": "CLPool-3",
+  "main_contract": "CLPool",
+  "source_file_count": 33,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x88e336956de7b74627fdfd548656b55501a0471f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x942e97a4c6fdc38b4cd1c0298d37d81fdd8e5a16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

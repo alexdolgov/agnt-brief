@@ -2,7 +2,7 @@
   "component": "MessageBus",
   "main_contract": "MessageBus",
   "source_file_count": 14,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_message.pdf"
@@ -12,6 +12,14 @@
       "chain": "linea",
       "chain_id": 59144,
       "address": "0x0dfabdd2dc27cf93910f7bd4bc3860d5af15674c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x82b4980ef43aaf5111d469792dea1621187d1213",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

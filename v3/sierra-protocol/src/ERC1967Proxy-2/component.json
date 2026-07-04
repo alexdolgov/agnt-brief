@@ -1,49 +1,49 @@
 {
   "component": "ERC1967Proxy-2",
   "main_contract": "ERC1967Proxy",
-  "source_file_count": 13,
+  "source_file_count": 16,
   "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x3548ee23e489112a2207af2a068a5ec03b3a52bd",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0c6e11a37a7313c282621821455ad826fb61f692",
       "is_proxy": true,
-      "implementation_address": "0x2f973089d86a0c807210f1973898274001f1e2a8",
+      "implementation_address": "0x9d5e36dfedbc55cfa30dce5fbf5cbce3261689b7",
       "liveness": "inactive"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x3d7e4a8f9bf0e84608c99b5ab85adbdaf6500c57",
-      "is_proxy": true,
-      "implementation_address": "0x6eb641e59302377da329237b6849e859612b3432",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3032005e8c86bc08b9e1d2a8e0a0dfd03b835233",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x3eeacc4309435ba1672d8d9265bc717a2c71a49a",
-      "is_proxy": true,
-      "implementation_address": "0xb2a69a87fbaa0e2ab4b0fdae15b1a4e79f30d752",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d5e36dfedbc55cfa30dce5fbf5cbce3261689b7",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xa3be07c2734ed1ce269cf026cbe8d09d146014e1",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd05353b0c57c707a25013206e2e19f1233db92d9",
       "is_proxy": true,
-      "implementation_address": "0xc3016303096b07583ecc675eda0c7c52aa11fa4e",
+      "implementation_address": "0xe234cdb5e6138c79baf977a040935be6319dc7bc",
       "liveness": "inactive"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xc6a01485cc4a054208c9532197ac79a58357e01d",
-      "is_proxy": true,
-      "implementation_address": "0x8035c1e2ca27c2a9b6d0ed1cfb378e5ff0d2b2da",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe234cdb5e6138c79baf977a040935be6319dc7bc",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "inactive"
     }
   ]

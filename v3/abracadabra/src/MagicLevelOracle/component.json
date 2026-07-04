@@ -1,15 +1,71 @@
 {
   "component": "MagicLevelOracle",
   "main_contract": "MagicLevelOracle",
-  "source_file_count": 10,
-  "deployment_count": 1,
+  "source_file_count": 6,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x006d8e69365bd93c38f4af1814207a4002f938c5",
+      "address": "0x0df56a0cf3e6da667c9532203fca4c8ef138a181",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x358a429f2fe8605f895d70480c51950a56cf3289",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x789004ede61c9f855a0ecaad7f0616bf23f0c952",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c8fef8ea9b1fe46a7689bfb8149341c90431d38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8e534c5d52c921dbd6debc56503cf0e2dce6d534",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb76403d52ca4d4f5c791859d93553e14742cc9d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbc7fa554a65a98502457fcfc2f1afa28113d7920",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdea1b44b710af105f4a0c0ab734a7b8f543e9d70",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

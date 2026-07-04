@@ -1,0 +1,18 @@
+{
+  "component": "YieldClaimerSlipstream-4",
+  "main_contract": "YieldClaimerSlipstream",
+  "source_file_count": 27,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "VestingSchedulerV2-2",
+  "main_contract": "VestingSchedulerV2",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7b77a34b8b76b66e97a5ae01ad052205d5cbe257",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

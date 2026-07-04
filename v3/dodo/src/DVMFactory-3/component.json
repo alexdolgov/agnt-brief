@@ -1,15 +1,15 @@
 {
   "component": "DVMFactory-3",
   "main_contract": "DVMFactory",
-  "source_file_count": 8,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0226fce8c969604c3a0ad19c37d1fafac73e13c2",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x790b4a80fb1094589a3c0efc8740aa9b0c1733fb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

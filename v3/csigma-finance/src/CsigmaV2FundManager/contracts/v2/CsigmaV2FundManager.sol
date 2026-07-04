@@ -216,11 +216,14 @@ contract CsigmaV2FundManager is
         emit FundClaimed(_msgSender(), _recouped);
     }
     
-    /// @notice Sends the funds to the V2 pool reserve
+    /// @notice Sends the funds to the V2 pool reserve and repays the pending queue
     /// @dev Only the pool manager can call this function
     /// @param _v2Amount The amount to send to the V2 pool reserve
-    function sendToV2Reserve(uint256 _v2Amount) external onlyPoolManager whenNotPaused {
+    function sendToV2Reserve(uint256 _v2Amount, uint256 uptoQueuePosition) external onlyPoolManager whenNotPaused {
         SafeERC20Upgradeable.safeTransfer(IERC20Upgradeable(poolToken), pool, _v2Amount);
+        address withdrawManager = CsigmaV2Pool(pool).withdrawalManager();
+        if(withdrawManager == address(0)) return;
+        WithdrawManager(withdrawManager).repay(uptoQueuePosition, _v2Amount);
     }
 
     /// @notice Pauses the contract

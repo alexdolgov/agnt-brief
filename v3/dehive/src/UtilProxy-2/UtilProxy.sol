@@ -1,106 +1,87 @@
 /**
- *Submitted for verification at BscScan.com on 2021-10-29
+ *Submitted for verification at polygonscan.com on 2021-09-02
 */
 
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.6;
 
-
 /**
- * @dev This abstract contract provides a fallback function that delegates all calls to another contract using the EVM
- * instruction `delegatecall`. We refer to the second contract as the _implementation_ behind the proxy, and it has to
- * be specified by overriding the virtual {_implementation} function.
- *
- * Additionally, delegation to the implementation can be triggered manually through the {_fallback} function, or to a
- * different contract through the {_delegate} function.
- *
- * The success and return data of the delegated call will be returned back to the caller of the proxy.
+ * @dev Interface of the ERC20 standard as defined in the EIP.
  */
-abstract contract Proxy {
+interface IERC20 {
     /**
-     * @dev Delegates the current call to `implementation`.
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
      *
-     * This function does not return to its internall call site, it will return directly to the external caller.
-     */
-    function _delegate(address implementation) internal virtual {
-        assembly {
-            // Copy msg.data. We take full control of memory in this inline assembly
-            // block because it will not return to Solidity code. We overwrite the
-            // Solidity scratch pad at memory position 0.
-            calldatacopy(0, 0, calldatasize())
-
-            // Call the implementation.
-            // out and outsize are 0 because we don't know the size yet.
-            let result := delegatecall(gas(), implementation, 0, calldatasize(), 0, 0)
-
-            // Copy the returned data.
-            returndatacopy(0, 0, returndatasize())
-
-            switch result
-            // delegatecall returns 0 on error.
-            case 0 {
-                revert(0, returndatasize())
-            }
-            default {
-                return(0, returndatasize())
-            }
-        }
-    }
-
-    /**
-     * @dev This is a virtual function that should be overriden so it returns the address to which the fallback function
-     * and {_fallback} should delegate.
-     */
-    function _implementation() internal view virtual returns (address);
-
-    /**
-     * @dev Delegates the current call to the address returned by `_implementation()`.
+     * Returns a boolean value indicating whether the operation succeeded.
      *
-     * This function does not return to its internall call site, it will return directly to the external caller.
+     * Emits a {Transfer} event.
      */
-    function _fallback() internal virtual {
-        _beforeFallback();
-        _delegate(_implementation());
-    }
+    function transfer(address recipient, uint256 amount) external returns (bool);
 
     /**
-     * @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if no other
-     * function in the contract matches the call data.
-     */
-    fallback() external payable virtual {
-        _fallback();
-    }
-
-    /**
-     * @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if call data
-     * is empty.
-     */
-    receive() external payable virtual {
-        _fallback();
-    }
-
-    /**
-     * @dev Hook that is called before falling back to the implementation. Can happen as part of a manual `_fallback`
-     * call, or as part of the Solidity `fallback` or `receive` functions.
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
      *
-     * If overriden should call `super._beforeFallback()`.
+     * This value changes when {approve} or {transferFrom} are called.
      */
-    function _beforeFallback() internal virtual {}
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(
+        address sender,
+        address recipient,
+        uint256 amount
+    ) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
-
-/**
- * @dev This is the interface that {BeaconProxy} expects of its beacon.
- */
-interface IBeacon {
-    /**
-     * @dev Must return an address that can be used as a delegate call target.
-     *
-     * {BeaconProxy} will check that this address is a contract.
-     */
-    function implementation() external view returns (address);
-}
-
-
 
 /**
  * @dev Collection of functions related to the address type
@@ -310,420 +291,1010 @@ library Address {
 }
 
 /**
- * @dev Library for reading and writing primitive types to specific storage slots.
+ * @title SafeERC20
+ * @dev Wrappers around ERC20 operations that throw on failure (when the token
+ * contract returns false). Tokens that return no value (and instead revert or
+ * throw on failure) are also supported, non-reverting calls are assumed to be
+ * successful.
+ * To use this library you can add a `using SafeERC20 for IERC20;` statement to your contract,
+ * which allows you to call the safe operations as `token.safeTransfer(...)`, etc.
+ */
+library SafeERC20 {
+    using Address for address;
+
+    function safeTransfer(
+        IERC20 token,
+        address to,
+        uint256 value
+    ) internal {
+        _callOptionalReturn(token, abi.encodeWithSelector(token.transfer.selector, to, value));
+    }
+
+    function safeTransferFrom(
+        IERC20 token,
+        address from,
+        address to,
+        uint256 value
+    ) internal {
+        _callOptionalReturn(token, abi.encodeWithSelector(token.transferFrom.selector, from, to, value));
+    }
+
+    /**
+     * @dev Deprecated. This function has issues similar to the ones found in
+     * {IERC20-approve}, and its usage is discouraged.
+     *
+     * Whenever possible, use {safeIncreaseAllowance} and
+     * {safeDecreaseAllowance} instead.
+     */
+    function safeApprove(
+        IERC20 token,
+        address spender,
+        uint256 value
+    ) internal {
+        // safeApprove should only be called when setting an initial allowance,
+        // or when resetting it to zero. To increase and decrease it, use
+        // 'safeIncreaseAllowance' and 'safeDecreaseAllowance'
+        require(
+            (value == 0) || (token.allowance(address(this), spender) == 0),
+            "SafeERC20: approve from non-zero to non-zero allowance"
+        );
+        _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, value));
+    }
+
+    function safeIncreaseAllowance(
+        IERC20 token,
+        address spender,
+        uint256 value
+    ) internal {
+        uint256 newAllowance = token.allowance(address(this), spender) + value;
+        _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));
+    }
+
+    function safeDecreaseAllowance(
+        IERC20 token,
+        address spender,
+        uint256 value
+    ) internal {
+        unchecked {
+            uint256 oldAllowance = token.allowance(address(this), spender);
+            require(oldAllowance >= value, "SafeERC20: decreased allowance below zero");
+            uint256 newAllowance = oldAllowance - value;
+            _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));
+        }
+    }
+
+    /**
+     * @dev Imitates a Solidity high-level call (i.e. a regular function call to a contract), relaxing the requirement
+     * on the return value: the return value is optional (but if data is returned, it must not be false).
+     * @param token The token targeted by the call.
+     * @param data The call data (encoded using abi.encode or one of its variants).
+     */
+    function _callOptionalReturn(IERC20 token, bytes memory data) private {
+        // We need to perform a low level call here, to bypass Solidity's return data size checking mechanism, since
+        // we're implementing it ourselves. We use {Address.functionCall} to perform this call, which verifies that
+        // the target address contains contract code and also asserts for success in the low-level call.
+
+        bytes memory returndata = address(token).functionCall(data, "SafeERC20: low-level call failed");
+        if (returndata.length > 0) {
+            // Return data is optional
+            require(abi.decode(returndata, (bool)), "SafeERC20: ERC20 operation did not succeed");
+        }
+    }
+}
+
+/**
+ * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed
+ * behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an
+ * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer
+ * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.
  *
- * Storage slots are often used to avoid storage conflict when dealing with upgradeable contracts.
- * This library helps with reading and writing to such slots without the need for inline assembly.
+ * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as
+ * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.
  *
- * The functions in this library return Slot structs that contain a `value` member that can be used to read or write.
+ * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure
+ * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.
+ */
+abstract contract Initializable {
+    /**
+     * @dev Indicates that the contract has been initialized.
+     */
+    bool private _initialized;
+
+    /**
+     * @dev Indicates that the contract is in the process of being initialized.
+     */
+    bool private _initializing;
+
+    /**
+     * @dev Modifier to protect an initializer function from being invoked twice.
+     */
+    modifier initializer() {
+        require(_initializing || !_initialized, "Initializable: contract is already initialized");
+
+        bool isTopLevelCall = !_initializing;
+        if (isTopLevelCall) {
+            _initializing = true;
+            _initialized = true;
+        }
+
+        _;
+
+        if (isTopLevelCall) {
+            _initializing = false;
+        }
+    }
+}
+
+/*
+ * @dev Provides information about the current execution context, including the
+ * sender of the transaction and its data. While these are generally available
+ * via msg.sender and msg.data, they should not be accessed in such a direct
+ * manner, since when dealing with meta-transactions the account sending and
+ * paying for execution may not be the actual sender (as far as an application
+ * is concerned).
  *
- * Example usage to set ERC1967 implementation slot:
- * ```
- * contract ERC1967 {
- *     bytes32 internal constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;
+ * This contract is only required for intermediate, library-like contracts.
+ */
+abstract contract ContextUpgradeable is Initializable {
+    function __Context_init() internal initializer {
+        __Context_init_unchained();
+    }
+
+    function __Context_init_unchained() internal initializer {
+    }
+    function _msgSender() internal view virtual returns (address) {
+        return msg.sender;
+    }
+
+    function _msgData() internal view virtual returns (bytes calldata) {
+        return msg.data;
+    }
+    uint256[50] private __gap;
+}
+
+/**
+ * @dev String operations.
+ */
+library StringsUpgradeable {
+    bytes16 private constant _HEX_SYMBOLS = "0123456789abcdef";
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` decimal representation.
+     */
+    function toString(uint256 value) internal pure returns (string memory) {
+        // Inspired by OraclizeAPI's implementation - MIT licence
+        // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol
+
+        if (value == 0) {
+            return "0";
+        }
+        uint256 temp = value;
+        uint256 digits;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+        bytes memory buffer = new bytes(digits);
+        while (value != 0) {
+            digits -= 1;
+            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
+            value /= 10;
+        }
+        return string(buffer);
+    }
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation.
+     */
+    function toHexString(uint256 value) internal pure returns (string memory) {
+        if (value == 0) {
+            return "0x00";
+        }
+        uint256 temp = value;
+        uint256 length = 0;
+        while (temp != 0) {
+            length++;
+            temp >>= 8;
+        }
+        return toHexString(value, length);
+    }
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation with fixed length.
+     */
+    function toHexString(uint256 value, uint256 length) internal pure returns (string memory) {
+        bytes memory buffer = new bytes(2 * length + 2);
+        buffer[0] = "0";
+        buffer[1] = "x";
+        for (uint256 i = 2 * length + 1; i > 1; --i) {
+            buffer[i] = _HEX_SYMBOLS[value & 0xf];
+            value >>= 4;
+        }
+        require(value == 0, "Strings: hex length insufficient");
+        return string(buffer);
+    }
+}
+
+/**
+ * @dev Interface of the ERC165 standard, as defined in the
+ * https://eips.ethereum.org/EIPS/eip-165[EIP].
  *
- *     function _getImplementation() internal view returns (address) {
- *         return StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value;
- *     }
+ * Implementers can declare support of contract interfaces, which can then be
+ * queried by others ({ERC165Checker}).
  *
- *     function _setImplementation(address newImplementation) internal {
- *         require(Address.isContract(newImplementation), "ERC1967: new implementation is not a contract");
- *         StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value = newImplementation;
- *     }
+ * For an implementation, see {ERC165}.
+ */
+interface IERC165Upgradeable {
+    /**
+     * @dev Returns true if this contract implements the interface defined by
+     * `interfaceId`. See the corresponding
+     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]
+     * to learn more about how these ids are created.
+     *
+     * This function call must use less than 30 000 gas.
+     */
+    function supportsInterface(bytes4 interfaceId) external view returns (bool);
+}
+
+/**
+ * @dev Implementation of the {IERC165} interface.
+ *
+ * Contracts that want to implement ERC165 should inherit from this contract and override {supportsInterface} to check
+ * for the additional interface id that will be supported. For example:
+ *
+ * ```solidity
+ * function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
+ *     return interfaceId == type(MyInterface).interfaceId || super.supportsInterface(interfaceId);
  * }
  * ```
  *
- * _Available since v4.1 for `address`, `bool`, `bytes32`, and `uint256`._
+ * Alternatively, {ERC165Storage} provides an easier to use but more expensive implementation.
  */
-library StorageSlot {
-    struct AddressSlot {
-        address value;
+abstract contract ERC165Upgradeable is Initializable, IERC165Upgradeable {
+    function __ERC165_init() internal initializer {
+        __ERC165_init_unchained();
     }
 
-    struct BooleanSlot {
-        bool value;
+    function __ERC165_init_unchained() internal initializer {
     }
-
-    struct Bytes32Slot {
-        bytes32 value;
-    }
-
-    struct Uint256Slot {
-        uint256 value;
-    }
-
     /**
-     * @dev Returns an `AddressSlot` with member `value` located at `slot`.
+     * @dev See {IERC165-supportsInterface}.
      */
-    function getAddressSlot(bytes32 slot) internal pure returns (AddressSlot storage r) {
-        assembly {
-            r.slot := slot
-        }
+    function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
+        return interfaceId == type(IERC165Upgradeable).interfaceId;
     }
-
-    /**
-     * @dev Returns an `BooleanSlot` with member `value` located at `slot`.
-     */
-    function getBooleanSlot(bytes32 slot) internal pure returns (BooleanSlot storage r) {
-        assembly {
-            r.slot := slot
-        }
-    }
-
-    /**
-     * @dev Returns an `Bytes32Slot` with member `value` located at `slot`.
-     */
-    function getBytes32Slot(bytes32 slot) internal pure returns (Bytes32Slot storage r) {
-        assembly {
-            r.slot := slot
-        }
-    }
-
-    /**
-     * @dev Returns an `Uint256Slot` with member `value` located at `slot`.
-     */
-    function getUint256Slot(bytes32 slot) internal pure returns (Uint256Slot storage r) {
-        assembly {
-            r.slot := slot
-        }
-    }
+    uint256[50] private __gap;
 }
 
 /**
- * @dev This abstract contract provides getters and event emitting update functions for
- * https://eips.ethereum.org/EIPS/eip-1967[EIP1967] slots.
- *
- * _Available since v4.1._
- *
- * @custom:oz-upgrades-unsafe-allow delegatecall
+ * @dev External interface of AccessControl declared to support ERC165 detection.
  */
-abstract contract ERC1967Upgrade {
-    // This is the keccak-256 hash of "eip1967.proxy.rollback" subtracted by 1
-    bytes32 private constant _ROLLBACK_SLOT = 0x4910fdfa16fed3260ed0e7147f7cc6da11a60208b5b9406d12a635614ffd9143;
+interface IAccessControlUpgradeable {
+    function hasRole(bytes32 role, address account) external view returns (bool);
 
-    /**
-     * @dev Storage slot with the address of the current implementation.
-     * This is the keccak-256 hash of "eip1967.proxy.implementation" subtracted by 1, and is
-     * validated in the constructor.
-     */
-    bytes32 internal constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;
+    function getRoleAdmin(bytes32 role) external view returns (bytes32);
 
-    /**
-     * @dev Emitted when the implementation is upgraded.
-     */
-    event Upgraded(address indexed implementation);
+    function grantRole(bytes32 role, address account) external;
 
-    /**
-     * @dev Returns the current implementation address.
-     */
-    function _getImplementation() internal view returns (address) {
-        return StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value;
+    function revokeRole(bytes32 role, address account) external;
+
+    function renounceRole(bytes32 role, address account) external;
+}
+
+/**
+ * @dev Contract module that allows children to implement role-based access
+ * control mechanisms. This is a lightweight version that doesn't allow enumerating role
+ * members except through off-chain means by accessing the contract event logs. Some
+ * applications may benefit from on-chain enumerability, for those cases see
+ * {AccessControlEnumerable}.
+ *
+ * Roles are referred to by their `bytes32` identifier. These should be exposed
+ * in the external API and be unique. The best way to achieve this is by
+ * using `public constant` hash digests:
+ *
+ * ```
+ * bytes32 public constant MY_ROLE = keccak256("MY_ROLE");
+ * ```
+ *
+ * Roles can be used to represent a set of permissions. To restrict access to a
+ * function call, use {hasRole}:
+ *
+ * ```
+ * function foo() public {
+ *     require(hasRole(MY_ROLE, msg.sender));
+ *     ...
+ * }
+ * ```
+ *
+ * Roles can be granted and revoked dynamically via the {grantRole} and
+ * {revokeRole} functions. Each role has an associated admin role, and only
+ * accounts that have a role's admin role can call {grantRole} and {revokeRole}.
+ *
+ * By default, the admin role for all roles is `DEFAULT_ADMIN_ROLE`, which means
+ * that only accounts with this role will be able to grant or revoke other
+ * roles. More complex role relationships can be created by using
+ * {_setRoleAdmin}.
+ *
+ * WARNING: The `DEFAULT_ADMIN_ROLE` is also its own admin: it has permission to
+ * grant and revoke this role. Extra precautions should be taken to secure
+ * accounts that have been granted it.
+ */
+abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable, IAccessControlUpgradeable, ERC165Upgradeable {
+    function __AccessControl_init() internal initializer {
+        __Context_init_unchained();
+        __ERC165_init_unchained();
+        __AccessControl_init_unchained();
     }
 
-    /**
-     * @dev Stores a new address in the EIP1967 implementation slot.
-     */
-    function _setImplementation(address newImplementation) private {
-        require(Address.isContract(newImplementation), "ERC1967: new implementation is not a contract");
-        StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value = newImplementation;
+    function __AccessControl_init_unchained() internal initializer {
+    }
+    struct RoleData {
+        mapping(address => bool) members;
+        bytes32 adminRole;
     }
 
+    mapping(bytes32 => RoleData) private _roles;
+
+    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
+
     /**
-     * @dev Perform implementation upgrade
+     * @dev Emitted when `newAdminRole` is set as ``role``'s admin role, replacing `previousAdminRole`
      *
-     * Emits an {Upgraded} event.
+     * `DEFAULT_ADMIN_ROLE` is the starting admin for all roles, despite
+     * {RoleAdminChanged} not being emitted signaling this.
+     *
+     * _Available since v3.1._
      */
-    function _upgradeTo(address newImplementation) internal {
-        _setImplementation(newImplementation);
-        emit Upgraded(newImplementation);
+    event RoleAdminChanged(bytes32 indexed role, bytes32 indexed previousAdminRole, bytes32 indexed newAdminRole);
+
+    /**
+     * @dev Emitted when `account` is granted `role`.
+     *
+     * `sender` is the account that originated the contract call, an admin role
+     * bearer except when using {_setupRole}.
+     */
+    event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender);
+
+    /**
+     * @dev Emitted when `account` is revoked `role`.
+     *
+     * `sender` is the account that originated the contract call:
+     *   - if using `revokeRole`, it is the admin role bearer
+     *   - if using `renounceRole`, it is the role bearer (i.e. `account`)
+     */
+    event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender);
+
+    /**
+     * @dev Modifier that checks that an account has a specific role. Reverts
+     * with a standardized message including the required role.
+     *
+     * The format of the revert reason is given by the following regular expression:
+     *
+     *  /^AccessControl: account (0x[0-9a-f]{20}) is missing role (0x[0-9a-f]{32})$/
+     *
+     * _Available since v4.1._
+     */
+    modifier onlyRole(bytes32 role) {
+        _checkRole(role, _msgSender());
+        _;
     }
 
     /**
-     * @dev Perform implementation upgrade with additional setup call.
-     *
-     * Emits an {Upgraded} event.
+     * @dev See {IERC165-supportsInterface}.
      */
-    function _upgradeToAndCall(
-        address newImplementation,
-        bytes memory data,
-        bool forceCall
-    ) internal {
-        _upgradeTo(newImplementation);
-        if (data.length > 0 || forceCall) {
-            Address.functionDelegateCall(newImplementation, data);
-        }
+    function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
+        return interfaceId == type(IAccessControlUpgradeable).interfaceId || super.supportsInterface(interfaceId);
     }
 
     /**
-     * @dev Perform implementation upgrade with security checks for UUPS proxies, and additional setup call.
-     *
-     * Emits an {Upgraded} event.
+     * @dev Returns `true` if `account` has been granted `role`.
      */
-    function _upgradeToAndCallSecure(
-        address newImplementation,
-        bytes memory data,
-        bool forceCall
-    ) internal {
-        address oldImplementation = _getImplementation();
+    function hasRole(bytes32 role, address account) public view override returns (bool) {
+        return _roles[role].members[account];
+    }
 
-        // Initial upgrade and setup call
-        _setImplementation(newImplementation);
-        if (data.length > 0 || forceCall) {
-            Address.functionDelegateCall(newImplementation, data);
-        }
-
-        // Perform rollback test if not already in progress
-        StorageSlot.BooleanSlot storage rollbackTesting = StorageSlot.getBooleanSlot(_ROLLBACK_SLOT);
-        if (!rollbackTesting.value) {
-            // Trigger rollback using upgradeTo from the new implementation
-            rollbackTesting.value = true;
-            Address.functionDelegateCall(
-                newImplementation,
-                abi.encodeWithSignature("upgradeTo(address)", oldImplementation)
+    /**
+     * @dev Revert with a standard message if `account` is missing `role`.
+     *
+     * The format of the revert reason is given by the following regular expression:
+     *
+     *  /^AccessControl: account (0x[0-9a-f]{20}) is missing role (0x[0-9a-f]{32})$/
+     */
+    function _checkRole(bytes32 role, address account) internal view {
+        if (!hasRole(role, account)) {
+            revert(
+                string(
+                    abi.encodePacked(
+                        "AccessControl: account ",
+                        StringsUpgradeable.toHexString(uint160(account), 20),
+                        " is missing role ",
+                        StringsUpgradeable.toHexString(uint256(role), 32)
+                    )
+                )
             );
-            rollbackTesting.value = false;
-            // Check rollback was effective
-            require(oldImplementation == _getImplementation(), "ERC1967Upgrade: upgrade breaks further upgrades");
-            // Finally reset to the new implementation and log the upgrade
-            _upgradeTo(newImplementation);
         }
     }
 
     /**
-     * @dev Storage slot with the admin of the contract.
-     * This is the keccak-256 hash of "eip1967.proxy.admin" subtracted by 1, and is
-     * validated in the constructor.
-     */
-    bytes32 internal constant _ADMIN_SLOT = 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103;
-
-    /**
-     * @dev Emitted when the admin account has changed.
-     */
-    event AdminChanged(address previousAdmin, address newAdmin);
-
-    /**
-     * @dev Returns the current admin.
-     */
-    function _getAdmin() internal view returns (address) {
-        return StorageSlot.getAddressSlot(_ADMIN_SLOT).value;
-    }
-
-    /**
-     * @dev Stores a new address in the EIP1967 admin slot.
-     */
-    function _setAdmin(address newAdmin) private {
-        require(newAdmin != address(0), "ERC1967: new admin is the zero address");
-        StorageSlot.getAddressSlot(_ADMIN_SLOT).value = newAdmin;
-    }
-
-    /**
-     * @dev Changes the admin of the proxy.
+     * @dev Returns the admin role that controls `role`. See {grantRole} and
+     * {revokeRole}.
      *
-     * Emits an {AdminChanged} event.
+     * To change a role's admin, use {_setRoleAdmin}.
      */
-    function _changeAdmin(address newAdmin) internal {
-        emit AdminChanged(_getAdmin(), newAdmin);
-        _setAdmin(newAdmin);
+    function getRoleAdmin(bytes32 role) public view override returns (bytes32) {
+        return _roles[role].adminRole;
     }
 
     /**
-     * @dev The storage slot of the UpgradeableBeacon contract which defines the implementation for this proxy.
-     * This is bytes32(uint256(keccak256('eip1967.proxy.beacon')) - 1)) and is validated in the constructor.
+     * @dev Grants `role` to `account`.
+     *
+     * If `account` had not been already granted `role`, emits a {RoleGranted}
+     * event.
+     *
+     * Requirements:
+     *
+     * - the caller must have ``role``'s admin role.
      */
-    bytes32 internal constant _BEACON_SLOT = 0xa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50;
-
-    /**
-     * @dev Emitted when the beacon is upgraded.
-     */
-    event BeaconUpgraded(address indexed beacon);
-
-    /**
-     * @dev Returns the current beacon.
-     */
-    function _getBeacon() internal view returns (address) {
-        return StorageSlot.getAddressSlot(_BEACON_SLOT).value;
+    function grantRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
+        _grantRole(role, account);
     }
 
     /**
-     * @dev Stores a new beacon in the EIP1967 beacon slot.
+     * @dev Revokes `role` from `account`.
+     *
+     * If `account` had been granted `role`, emits a {RoleRevoked} event.
+     *
+     * Requirements:
+     *
+     * - the caller must have ``role``'s admin role.
      */
-    function _setBeacon(address newBeacon) private {
-        require(Address.isContract(newBeacon), "ERC1967: new beacon is not a contract");
-        require(
-            Address.isContract(IBeacon(newBeacon).implementation()),
-            "ERC1967: beacon implementation is not a contract"
+    function revokeRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
+        _revokeRole(role, account);
+    }
+
+    /**
+     * @dev Revokes `role` from the calling account.
+     *
+     * Roles are often managed via {grantRole} and {revokeRole}: this function's
+     * purpose is to provide a mechanism for accounts to lose their privileges
+     * if they are compromised (such as when a trusted device is misplaced).
+     *
+     * If the calling account had been granted `role`, emits a {RoleRevoked}
+     * event.
+     *
+     * Requirements:
+     *
+     * - the caller must be `account`.
+     */
+    function renounceRole(bytes32 role, address account) public virtual override {
+        require(account == _msgSender(), "AccessControl: can only renounce roles for self");
+
+        _revokeRole(role, account);
+    }
+
+    /**
+     * @dev Grants `role` to `account`.
+     *
+     * If `account` had not been already granted `role`, emits a {RoleGranted}
+     * event. Note that unlike {grantRole}, this function doesn't perform any
+     * checks on the calling account.
+     *
+     * [WARNING]
+     * ====
+     * This function should only be called from the constructor when setting
+     * up the initial roles for the system.
+     *
+     * Using this function in any other way is effectively circumventing the admin
+     * system imposed by {AccessControl}.
+     * ====
+     */
+    function _setupRole(bytes32 role, address account) internal virtual {
+        _grantRole(role, account);
+    }
+
+    /**
+     * @dev Sets `adminRole` as ``role``'s admin role.
+     *
+     * Emits a {RoleAdminChanged} event.
+     */
+    function _setRoleAdmin(bytes32 role, bytes32 adminRole) internal virtual {
+        emit RoleAdminChanged(role, getRoleAdmin(role), adminRole);
+        _roles[role].adminRole = adminRole;
+    }
+
+    function _grantRole(bytes32 role, address account) private {
+        if (!hasRole(role, account)) {
+            _roles[role].members[account] = true;
+            emit RoleGranted(role, account, _msgSender());
+        }
+    }
+
+    function _revokeRole(bytes32 role, address account) private {
+        if (hasRole(role, account)) {
+            _roles[role].members[account] = false;
+            emit RoleRevoked(role, account, _msgSender());
+        }
+    }
+    uint256[49] private __gap;
+}
+
+interface IStrategyPlugin {
+    function want() external returns (IERC20);
+
+    function deposit(uint256 _amount) external;
+
+    function withdraw(uint256 _amount) external;
+
+    function withdrawAll() external returns (uint256, uint256);
+
+    function emergencyWithdraw() external;
+
+    function getRewards(uint256 _share, uint256 _total) external returns (uint256);
+
+    function harvest() external;
+
+    function migrateRewards(uint256 _amount) external;
+
+    function rewardsInEth(uint256 _share, uint256 _total) external view returns (uint256);
+}
+
+interface IDexAdapter {
+    function swapETHToUnderlying(address underlying, uint256 underlyingAmount) external payable;
+
+    function swapUnderlyingsToETH(uint256[] memory underlyingAmounts, address[] memory underlyings) external;
+
+    function swapTokenToToken(
+        uint256 _amountToSwap,
+        address _tokenToSwap,
+        address _tokenToReceive
+    ) external returns (uint256);
+
+    function getUnderlyingAmount(
+        uint256 _amount,
+        address _tokenToSwap,
+        address _tokenToReceive
+    ) external view returns (uint256);
+
+    function getPath(address _tokenToSwap, address _tokenToReceive) external view returns (address[] memory);
+
+    function getTokensPrices(address[] memory _tokens) external view returns (uint256[] memory);
+
+    function getEthPrice() external view returns (uint256);
+
+    function getDHVPriceInETH(address _dhvToken) external view returns (uint256);
+
+    function WETH() external view returns (address);
+
+    function getEthAmountWithSlippage(uint256 _amount, address _tokenToSwap) external view returns (uint256);
+}
+
+/// @title Base Strategy Contract
+/// @author Blaize.tech team
+/// @notice Base strategy for ClusterTokens' underlyings farming
+abstract contract BaseStrategy is AccessControlUpgradeable, IStrategyPlugin {
+    using SafeERC20 for IERC20;
+
+    bytes32 public constant STRATEGY_ROUTER = keccak256("STRATEGY_ROUTER");
+    bytes32 public constant STRATEGIST_ROLE = keccak256("STRATEGIST_ROLE");
+    uint256 public DUST_AMOUNT = 10**13;
+
+    /// @notice Instance of underlying want token.
+    IERC20 public override want;
+    /// @notice Third party protocol for staking want token.
+    address public masterChef;
+    /// @notice Address of DexAdapter.
+    address public adapter;
+    /// @notice Amount of collected reward in want tokens.
+    uint256 public wantRewardCollected;
+
+    /// @notice Event emitted on each successfull deposit.
+    /// @param amount Amount of deposited tokens.
+    event Deposited(uint256 amount);
+    /// @notice Event emitted on each successfull withdraw.
+    ///  @param amount Amount of withdrawn tokens.
+    event Withdrawn(uint256 amount);
+    /// @notice Event emitted on each successfull transfer of rewards.
+    /// @param _wantRewardAmount Amount of reward collected in ADDY token.
+    event RewardsTransfered(uint256 _wantRewardAmount);
+
+       /// @notice Performs initial setup.
+    /// @param _want Instance of want token.
+    /// @param _strategyRouter Address of StrategyRouter contract.
+    /// @param _masterChef Address of third party protocol for staking want token.
+    /// @param _adapter Address of dex-adapter.
+    function initialize(
+        address _want,
+        address _strategyRouter,
+        address _masterChef,
+        address _adapter
+    ) public virtual initializer {
+        _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
+        _setupRole(STRATEGIST_ROLE, _msgSender());
+        _setupRole(STRATEGY_ROUTER, _strategyRouter);
+
+        want = IERC20(_want);
+        masterChef = _masterChef;
+        adapter = _adapter;
+    }
+
+    /**
+     * ADMIN INTERFACE
+     */
+
+    /// @notice Sets dex-adapter address.
+    /// @dev Can only be called by admin.
+    /// @param _adapter Address of new dex-adapter.
+    function setAdapter(address _adapter) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        adapter = _adapter;
+    }
+
+    /// @notice Function, that is called in case of strategy migration.
+    /// @notice Migrates collected reward to a new strategy.
+    /// @dev Can only be called by Strategy router contract.
+    /// @param _amount Amount of collected reward.
+    function migrateRewards(uint256 _amount) external override onlyRole(STRATEGY_ROUTER) {
+        require(want.balanceOf(address(this)) >= _amount, "Incorrect amount was transferred");
+
+        wantRewardCollected += _amount;
+    }
+
+    /// @notice Withdraws tokens stuck in contract. Cannot withdraw protected tokens.
+    /// @dev Can only be called by Admin.
+    /// @param _token Address of token.
+    function sweep(address _token) external virtual onlyRole(DEFAULT_ADMIN_ROLE) {
+        address[] memory _protectedTokens = protectedTokens();
+        for (uint256 i = 0; i < _protectedTokens.length; i++) require(_token != _protectedTokens[i], "!protected");
+
+        IERC20(_token).safeTransfer(_msgSender(), IERC20(_token).balanceOf(address(this)));
+    }
+
+    /// @notice Collects rewards for external protocol.
+    /// @param _share Amount of user's share in pool.
+    /// @param _total Total pool supply.
+    function getRewards(uint256 _share, uint256 _total) external virtual override onlyRole(STRATEGY_ROUTER) returns (uint256) {
+        _harvest();
+        uint256 rewardEarned = (wantRewardCollected * _share) / _total;
+        if (rewardEarned < DUST_AMOUNT) {
+            return 0;
+        }
+
+        _transferRewards(rewardEarned);
+        return _rewardsInEth(rewardEarned);
+    }
+
+    /**
+     * VIEW INTERFACE
+     */
+
+    /// @notice Calculates amount of want token
+    function nav() external view virtual returns (uint256) {
+        return want.balanceOf(address(this)) + underlyingBalanceStored();
+    }
+
+    function underlyingBalanceStored() public view virtual returns (uint256);
+
+    function protectedTokens() public view virtual returns (address[] memory);
+
+    /// @notice Shows amount of collected reward calculated in ETH.
+    /// @param _share Amount of user's share in pool.
+    /// @param _total Total pool supply.
+    /// @return Amount of collected reward in ETH.
+    function rewardsInEth(uint256 _share, uint256 _total) external view virtual override returns (uint256) {
+        uint256 rewardEarned = (wantRewardCollected * _share) / _total;
+
+        if (rewardEarned < DUST_AMOUNT) {
+            return 0;
+        }
+        return _rewardsInEth(rewardEarned);
+    }
+
+    /**
+     * INTERNAL HELPERS
+     */
+
+    function _rewardsInEth(uint256 _amount) internal view virtual returns (uint256);
+
+    function _transferRewards(uint256 _addyRewardAmount) internal virtual;
+
+    function _harvest() internal virtual returns (uint256);
+}
+
+interface IUniswapV2Router01 {
+    function factory() external pure returns (address);
+
+    function WETH() external pure returns (address);
+
+    function addLiquidity(
+        address tokenA,
+        address tokenB,
+        uint256 amountADesired,
+        uint256 amountBDesired,
+        uint256 amountAMin,
+        uint256 amountBMin,
+        address to,
+        uint256 deadline
+    )
+        external
+        returns (
+            uint256 amountA,
+            uint256 amountB,
+            uint256 liquidity
         );
-        StorageSlot.getAddressSlot(_BEACON_SLOT).value = newBeacon;
+
+    function addLiquidityETH(
+        address token,
+        uint256 amountTokenDesired,
+        uint256 amountTokenMin,
+        uint256 amountETHMin,
+        address to,
+        uint256 deadline
+    )
+        external
+        payable
+        returns (
+            uint256 amountToken,
+            uint256 amountETH,
+            uint256 liquidity
+        );
+
+    function removeLiquidity(
+        address tokenA,
+        address tokenB,
+        uint256 liquidity,
+        uint256 amountAMin,
+        uint256 amountBMin,
+        address to,
+        uint256 deadline
+    ) external returns (uint256 amountA, uint256 amountB);
+
+    function removeLiquidityETH(
+        address token,
+        uint256 liquidity,
+        uint256 amountTokenMin,
+        uint256 amountETHMin,
+        address to,
+        uint256 deadline
+    ) external returns (uint256 amountToken, uint256 amountETH);
+
+    function removeLiquidityWithPermit(
+        address tokenA,
+        address tokenB,
+        uint256 liquidity,
+        uint256 amountAMin,
+        uint256 amountBMin,
+        address to,
+        uint256 deadline,
+        bool approveMax,
+        uint8 v,
+        bytes32 r,
+        bytes32 s
+    ) external returns (uint256 amountA, uint256 amountB);
+
+    function removeLiquidityETHWithPermit(
+        address token,
+        uint256 liquidity,
+        uint256 amountTokenMin,
+        uint256 amountETHMin,
+        address to,
+        uint256 deadline,
+        bool approveMax,
+        uint8 v,
+        bytes32 r,
+        bytes32 s
+    ) external returns (uint256 amountToken, uint256 amountETH);
+
+    function swapExactTokensForTokens(
+        uint256 amountIn,
+        uint256 amountOutMin,
+        address[] calldata path,
+        address to,
+        uint256 deadline
+    ) external returns (uint256[] memory amounts);
+
+    function swapTokensForExactTokens(
+        uint256 amountOut,
+        uint256 amountInMax,
+        address[] calldata path,
+        address to,
+        uint256 deadline
+    ) external returns (uint256[] memory amounts);
+
+    function swapExactETHForTokens(
+        uint256 amountOutMin,
+        address[] calldata path,
+        address to,
+        uint256 deadline
+    ) external payable returns (uint256[] memory amounts);
+
+    function swapTokensForExactETH(
+        uint256 amountOut,
+        uint256 amountInMax,
+        address[] calldata path,
+        address to,
+        uint256 deadline
+    ) external returns (uint256[] memory amounts);
+
+    function swapExactTokensForETH(
+        uint256 amountIn,
+        uint256 amountOutMin,
+        address[] calldata path,
+        address to,
+        uint256 deadline
+    ) external returns (uint256[] memory amounts);
+
+    function swapETHForExactTokens(
+        uint256 amountOut,
+        address[] calldata path,
+        address to,
+        uint256 deadline
+    ) external payable returns (uint256[] memory amounts);
+
+    function quote(
+        uint256 amountA,
+        uint256 reserveA,
+        uint256 reserveB
+    ) external pure returns (uint256 amountB);
+
+    function getAmountOut(
+        uint256 amountIn,
+        uint256 reserveIn,
+        uint256 reserveOut
+    ) external pure returns (uint256 amountOut);
+
+    function getAmountIn(
+        uint256 amountOut,
+        uint256 reserveIn,
+        uint256 reserveOut
+    ) external pure returns (uint256 amountIn);
+
+    function getAmountsOut(uint256 amountIn, address[] calldata path) external view returns (uint256[] memory amounts);
+
+    function getAmountsIn(uint256 amountOut, address[] calldata path) external view returns (uint256[] memory amounts);
+}
+
+interface IAaveController {
+    function getRewardsBalance(address[] calldata assets, address user) external view returns (uint256);
+
+    function claimRewards(
+        address[] calldata assets,
+        uint256 amount,
+        address to
+    ) external returns (uint256);
+
+    function getUserUnclaimedRewards(address _user) external view returns (uint256);
+}
+
+interface ILendingPool {
+    function deposit(
+        address asset,
+        uint256 amount,
+        address onBehalfOf,
+        uint16 referralCode
+    ) external;
+
+    function withdraw(
+        address asset,
+        uint256 amount,
+        address to
+    ) external returns (uint256);
+}
+
+/// @title Keeper Strategy contract.
+/// @author Blaize.tech team.
+/// @notice Dummy strategy to keep tokens.
+contract KeeperStrategy is BaseStrategy {
+    using SafeERC20 for IERC20;
+    /// @notice Amount of want tokens stored.
+    uint256 public deposited;
+
+    /// @notice Performs initial setup.
+    /// @param _strategyRouter Address of StrategyRouter contract.
+    /// @param _want Asset to keep.
+    /// @param _adapter Address of dex-adapter.
+    function initialize(
+        address _strategyRouter,
+        address _want,
+        address _adapter
+    ) external initializer {
+        super.initialize(_want, _strategyRouter, address(0), _adapter);
     }
 
     /**
-     * @dev Perform beacon upgrade with additional setup call. Note: This upgrades the address of the beacon, it does
-     * not upgrade the implementation contained in the beacon (see {UpgradeableBeacon-_setImplementation} for that).
-     *
-     * Emits a {BeaconUpgraded} event.
+     * CLUSTERS LOCK INTERFACE
      */
-    function _upgradeBeaconToAndCall(
-        address newBeacon,
-        bytes memory data,
-        bool forceCall
-    ) internal {
-        _setBeacon(newBeacon);
-        emit BeaconUpgraded(newBeacon);
-        if (data.length > 0 || forceCall) {
-            Address.functionDelegateCall(IBeacon(newBeacon).implementation(), data);
+
+    /// @notice Keeps deposited token.
+    /// @param _amount Amount of want tokens to keep.
+    function deposit(uint256 _amount) external override onlyRole(STRATEGY_ROUTER) {
+        uint256 balance = want.balanceOf(address(this)) - deposited - wantRewardCollected;
+        require(balance == _amount, "Incorrect amount was transferred");
+
+        deposited += _amount;
+        emit Deposited(balance);
+    }
+
+    /// @notice Returns tokens to Strategy router.
+    /// @param _amount Amount of want tokens to withdraw.
+    function withdraw(uint256 _amount) external override onlyRole(STRATEGY_ROUTER) {
+        require(_amount != 0, "Wrong amount");
+
+        deposited -= _amount;
+        want.safeTransfer(_msgSender(), _amount);
+        emit Withdrawn(_amount);
+    }
+
+    /// @notice Withdraws all tokens.
+    function withdrawAll() external override onlyRole(STRATEGY_ROUTER) returns (uint256, uint256) {
+        uint256 balance = deposited;
+        uint256 collectedRewards = wantRewardCollected;
+        deposited = 0;
+
+        if (collectedRewards > 0) {
+            _transferRewards(collectedRewards);
         }
-    }
-}
-
-/**
- * @dev This contract implements an upgradeable proxy. It is upgradeable because calls are delegated to an
- * implementation address that can be changed. This address is stored in storage in the location specified by
- * https://eips.ethereum.org/EIPS/eip-1967[EIP1967], so that it doesn't conflict with the storage layout of the
- * implementation behind the proxy.
- */
-contract ERC1967Proxy is Proxy, ERC1967Upgrade {
-    /**
-     * @dev Initializes the upgradeable proxy with an initial implementation specified by `_logic`.
-     *
-     * If `_data` is nonempty, it's used as data in a delegate call to `_logic`. This will typically be an encoded
-     * function call, and allows initializating the storage of the proxy like a Solidity constructor.
-     */
-    constructor(address _logic, bytes memory _data) payable {
-        assert(_IMPLEMENTATION_SLOT == bytes32(uint256(keccak256("eip1967.proxy.implementation")) - 1));
-        _upgradeToAndCall(_logic, _data, false);
-    }
-
-    /**
-     * @dev Returns the current implementation address.
-     */
-    function _implementation() internal view virtual override returns (address impl) {
-        return ERC1967Upgrade._getImplementation();
-    }
-}
-
-/**
- * @dev This contract implements a proxy that is upgradeable by an admin.
- *
- * To avoid https://medium.com/nomic-labs-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357[proxy selector
- * clashing], which can potentially be used in an attack, this contract uses the
- * https://blog.openzeppelin.com/the-transparent-proxy-pattern/[transparent proxy pattern]. This pattern implies two
- * things that go hand in hand:
- *
- * 1. If any account other than the admin calls the proxy, the call will be forwarded to the implementation, even if
- * that call matches one of the admin functions exposed by the proxy itself.
- * 2. If the admin calls the proxy, it can access the admin functions, but its calls will never be forwarded to the
- * implementation. If the admin tries to call a function on the implementation it will fail with an error that says
- * "admin cannot fallback to proxy target".
- *
- * These properties mean that the admin account can only be used for admin actions like upgrading the proxy or changing
- * the admin, so it's best if it's a dedicated account that is not used for anything else. This will avoid headaches due
- * to sudden errors when trying to call a function from the proxy implementation.
- *
- * Our recommendation is for the dedicated account to be an instance of the {ProxyAdmin} contract. If set up this way,
- * you should think of the `ProxyAdmin` instance as the real administrative interface of your proxy.
- */
-contract TransparentUpgradeableProxy is ERC1967Proxy {
-    /**
-     * @dev Initializes an upgradeable proxy managed by `_admin`, backed by the implementation at `_logic`, and
-     * optionally initialized with `_data` as explained in {ERC1967Proxy-constructor}.
-     */
-    constructor(
-        address _logic,
-        address admin_,
-        bytes memory _data
-    ) payable ERC1967Proxy(_logic, _data) {
-        assert(_ADMIN_SLOT == bytes32(uint256(keccak256("eip1967.proxy.admin")) - 1));
-        _changeAdmin(admin_);
-    }
-
-    /**
-     * @dev Modifier used internally that will delegate the call to the implementation unless the sender is the admin.
-     */
-    modifier ifAdmin() {
-        if (msg.sender == _getAdmin()) {
-            _;
-        } else {
-            _fallback();
+        if (balance > 0) {
+            want.safeTransfer(_msgSender(), balance);
         }
+
+        emit Withdrawn(balance);
+        return (balance, collectedRewards);
+    }
+
+    /// @notice Does nothing.
+    function emergencyWithdraw() external override {}
+
+    /// @notice Does nothing.
+    function harvest() external override {}
+
+    function mockAddRewards(uint256 _amount) external onlyRole(STRATEGIST_ROLE) {
+        want.safeTransferFrom(_msgSender(), address(this), _amount);
+        wantRewardCollected += _amount;
     }
 
     /**
-     * @dev Returns the current admin.
-     *
-     * NOTE: Only the admin can call this function. See {ProxyAdmin-getProxyAdmin}.
-     *
-     * TIP: To get this value clients can read directly from the storage slot shown below (specified by EIP1967) using the
-     * https://eth.wiki/json-rpc/API#eth_getstorageat[`eth_getStorageAt`] RPC call.
-     * `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103`
+     * VIEW INTERFACE
      */
-    function admin() external ifAdmin returns (address admin_) {
-        admin_ = _getAdmin();
+
+    /// @notice Returns amount of kept tokens.
+    /// @return Amount of kept tokens.
+    function underlyingBalanceStored() public view override returns (uint256) {
+        return deposited;
+    }
+
+    /// @notice Returns tokens, which can't be collected by admin.
+    /// @return Array of protected tokens.
+    function protectedTokens() public view override returns (address[] memory) {
+        address[] memory tokens = new address[](1);
+        tokens[0] = address(want);
+        return tokens;
     }
 
     /**
-     * @dev Returns the current implementation.
-     *
-     * NOTE: Only the admin can call this function. See {ProxyAdmin-getProxyImplementation}.
-     *
-     * TIP: To get this value clients can read directly from the storage slot shown below (specified by EIP1967) using the
-     * https://eth.wiki/json-rpc/API#eth_getstorageat[`eth_getStorageAt`] RPC call.
-     * `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+     * INTERNAL HELPERS
      */
-    function implementation() external ifAdmin returns (address implementation_) {
-        implementation_ = _implementation();
+
+    /// @notice Does nothing.
+    /// @return nothing.
+    function _harvest() internal override returns (uint256) {
+        return 0;
     }
 
-    /**
-     * @dev Changes the admin of the proxy.
-     *
-     * Emits an {AdminChanged} event.
-     *
-     * NOTE: Only the admin can call this function. See {ProxyAdmin-changeProxyAdmin}.
-     */
-    function changeAdmin(address newAdmin) external virtual ifAdmin {
-        _changeAdmin(newAdmin);
+    /// @notice Calculates amount of ETH out of collected rewards.
+    /// @param _amount Amount of collected reward.
+    /// @return Amount of reward in ETH.
+    function _rewardsInEth(uint256 _amount) internal view override returns (uint256) {
+        if (_amount == 0) {
+            return 0;
+        }
+        return IDexAdapter(adapter).getEthAmountWithSlippage(_amount, address(want));
     }
 
-    /**
-     * @dev Upgrade the implementation of the proxy.
-     *
-     * NOTE: Only the admin can call this function. See {ProxyAdmin-upgrade}.
-     */
-    function upgradeTo(address newImplementation) external ifAdmin {
-        _upgradeToAndCall(newImplementation, bytes(""), false);
-    }
+    /// @notice Transfers rewards to Strategy router.
+    /// @param _rewardEarned Amount of reward to transfer.
+    function _transferRewards(uint256 _rewardEarned) internal override {
+        wantRewardCollected -= _rewardEarned;
+        want.safeTransfer(_msgSender(), _rewardEarned);
 
-    /**
-     * @dev Upgrade the implementation of the proxy, and then call a function from the new implementation as specified
-     * by `data`, which should be an encoded function call. This is useful to initialize new storage variables in the
-     * proxied contract.
-     *
-     * NOTE: Only the admin can call this function. See {ProxyAdmin-upgradeAndCall}.
-     */
-    function upgradeToAndCall(address newImplementation, bytes calldata data) external payable ifAdmin {
-        _upgradeToAndCall(newImplementation, data, true);
+        emit RewardsTransfered(_rewardEarned);
     }
-
-    /**
-     * @dev Returns the current admin.
-     */
-    function _admin() internal view virtual returns (address) {
-        return _getAdmin();
-    }
-
-    /**
-     * @dev Makes sure the admin cannot access the fallback function. See {Proxy-_beforeFallback}.
-     */
-    function _beforeFallback() internal virtual override {
-        require(msg.sender != _getAdmin(), "TransparentUpgradeableProxy: admin cannot fallback to proxy target");
-        super._beforeFallback();
-    }
-}
-
-contract UtilProxy is TransparentUpgradeableProxy {
-    constructor(
-        address _logic,
-        address admin_,
-        bytes memory _data
-    ) TransparentUpgradeableProxy(_logic, admin_, _data) {}
 }

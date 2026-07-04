@@ -1,18 +1,58 @@
 {
   "component": "ERC20PermitPermissionedMint",
   "main_contract": "ERC20PermitPermissionedMint",
-  "source_file_count": 15,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5e8422345238f34275888049021821e8e08caa1f",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x484c2d6e3cdd945a8b2df735e079178c1036578c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6806411765af15bddd26f8f544a34cc40cb9838b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8368dca5ce2a4db530c0f6e535d90b6826428dee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9424fd0120cf1aa11cd6220527c40d2599b3d916",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc05f15676d524eecedd26eb073032c021b7a8e43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc5d43a94e26fca47a9b21cf547ae4aa0268670e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "Automation-16",
+  "main_contract": "Automation",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xff844443c7837869e9861d1051fd32b23e14460d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

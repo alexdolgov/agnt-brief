@@ -1,0 +1,26 @@
+{
+  "component": "HypeRegistry-5",
+  "main_contract": "HypeRegistry",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x116deea9f1dd174e08ed3287180ec16840d1b0c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x9f0db194015b2878adc6c75cc8a152e043e9a567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

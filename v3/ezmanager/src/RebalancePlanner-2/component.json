@@ -1,0 +1,36 @@
+{
+  "component": "RebalancePlanner-2",
+  "main_contract": "RebalancePlanner",
+  "source_file_count": 15,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06dff44b626cd0fa34bd18ea061fb1b4d4ca2e6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a1fce1d87b922a6714c0946a2206a3699e19b7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbcab6cc4b2f1990f8e6e9f11c881a229d69cbb27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

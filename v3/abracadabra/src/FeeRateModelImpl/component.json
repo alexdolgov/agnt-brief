@@ -1,18 +1,26 @@
 {
   "component": "FeeRateModelImpl",
   "main_contract": "FeeRateModelImpl",
-  "source_file_count": 6,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x223d9ba9278ab3b38bba727f49037180128fb0c9",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc3d99887f83f87b2787404aa529cff70f0e9935",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9affe9639db246fe85d048834386f79daa59fbc4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

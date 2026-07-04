@@ -1,0 +1,18 @@
+{
+  "component": "SlipstreamGaugeConnector-7",
+  "main_contract": "SlipstreamGaugeConnector",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xa8758fa6704db3eec7042deae7a5cda527e2ae2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

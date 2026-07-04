@@ -1,0 +1,18 @@
+{
+  "component": "SecurityRegistry-2",
+  "main_contract": "SecurityRegistry",
+  "source_file_count": 77,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x827da8df165436f46a31fbb0e0d09d9a4f1d25df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "SynapseBridge-14",
+  "main_contract": "SynapseBridge",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf7e6214e1f2b03b54f1594ecfa3834148ab26888",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

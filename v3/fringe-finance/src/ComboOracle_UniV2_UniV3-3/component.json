@@ -1,0 +1,18 @@
+{
+  "component": "ComboOracle_UniV2_UniV3-3",
+  "main_contract": "ComboOracle_UniV2_UniV3",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x37f7865568d9cb30791583ca404e0b23ef05cf21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

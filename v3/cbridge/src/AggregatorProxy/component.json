@@ -1,15 +1,23 @@
 {
   "component": "AggregatorProxy",
   "main_contract": "AggregatorProxy",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 2,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x7d25d250fbd63b0dac4a38c661075930c9a87aea",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc9d1cbc45dd3e86e98067b7eb279c13f7b77c627",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd7a23be4c0ded90f99e1974ffe7e1113246fca38",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

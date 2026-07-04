@@ -5,13 +5,12 @@ import { IERC20 } from '@oz/interfaces/IERC20.sol';
 import { SafeERC20 } from '@oz/token/ERC20/utils/SafeERC20.sol';
 import { Address } from '@oz/utils/Address.sol';
 
-import { IMitosisVault } from '@mito/interfaces/branch/IMitosisVault.sol';
-import { ERC7201Utils } from '@mito/lib/ERC7201Utils.sol';
-
 import { AccessControlEnumerableUpgradeable } from
   '@ozu/access/extensions/AccessControlEnumerableUpgradeable.sol';
 import { UUPSUpgradeable } from '@ozu/proxy/utils/UUPSUpgradeable.sol';
 import { ReentrancyGuardUpgradeable } from '@ozu/utils/ReentrancyGuardUpgradeable.sol';
+
+import { ERC7201Utils } from '@mito/lib/ERC7201Utils.sol';
 
 import { IExpeditionVault } from './IExpeditionVault.sol';
 
@@ -47,14 +46,6 @@ contract LiFiMigrationHelper is
     uint256 lifiGas
   );
 
-  event HubAssetMigration(
-    address indexed sender,
-    address indexed receiver,
-    address indexed vaultAddr,
-    uint256 amount,
-    uint256 hplGas
-  );
-
   error InsufficientBalance();
   error InsufficientDestinationGas();
   error InsufficientLiFiGas();
@@ -79,14 +70,11 @@ contract LiFiMigrationHelper is
 
   // ================================================================================= //
 
-  address payable public immutable lifi;
-  address payable public immutable mito;
+  address public immutable lifi;
 
-  constructor(address _lifi, address _mito) {
+  constructor(address _lifi) {
     require(_lifi != address(0), InvalidReceiver());
-    require(_mito != address(0), InvalidReceiver());
-    lifi = payable(_lifi);
-    mito = payable(_mito);
+    lifi = _lifi;
   }
 
   function initialize(address admin) external initializer {
@@ -185,37 +173,6 @@ contract LiFiMigrationHelper is
     bytes32 operationId = _buildOperationId(_msgSender(), nonce);
 
     emit MigrationInitiated(operationId, _msgSender(), vaultAddr, amount, redeemed, lifiGas);
-  }
-
-  function migrateHubAsset(uint256 amount, address receiver, address vaultAddr)
-    external
-    payable
-    nonReentrant
-  {
-    require(amount > 0, InvalidAmount());
-    require(receiver != address(0), InvalidReceiver());
-
-    StorageV1 storage $ = _getStorage();
-    require($.allowedVaults[vaultAddr], VaultNotAllowed());
-
-    IExpeditionVault vault = IExpeditionVault(vaultAddr);
-
-    vault.safeTransferFrom(_msgSender(), address(this), amount);
-
-    uint256 redeemed = vault.previewRedeem(amount);
-    address(vault).functionCall(abi.encodeCall(vault.redeem, (amount, address(this))));
-
-    IERC20 asset = vault.asset();
-
-    uint256 gasDemand = IMitosisVault(mito).quoteDeposit(address(asset), receiver, redeemed);
-    require(gasDemand <= msg.value, InsufficientDestinationGas());
-    if (msg.value > gasDemand) payable(_msgSender()).sendValue(msg.value - gasDemand);
-
-    asset.forceApprove(mito, redeemed);
-    IMitosisVault(mito).deposit{ value: gasDemand }(address(asset), receiver, redeemed);
-    asset.forceApprove(mito, 0);
-
-    emit HubAssetMigration(_msgSender(), receiver, vaultAddr, amount, gasDemand);
   }
 
   function _buildOperationId(address sender, uint256 nonce) internal view returns (bytes32) {

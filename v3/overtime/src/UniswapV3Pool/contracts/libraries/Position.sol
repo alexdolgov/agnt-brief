@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity >=0.5.0;
+pragma solidity >=0.5.0 <0.8.0;
 
 import './FullMath.sol';
 import './FixedPoint128.sol';
@@ -58,22 +58,12 @@ library Position {
         }
 
         // calculate accumulated fees
-        uint128 tokensOwed0 =
-            uint128(
-                FullMath.mulDiv(
-                    feeGrowthInside0X128 - _self.feeGrowthInside0LastX128,
-                    _self.liquidity,
-                    FixedPoint128.Q128
-                )
-            );
-        uint128 tokensOwed1 =
-            uint128(
-                FullMath.mulDiv(
-                    feeGrowthInside1X128 - _self.feeGrowthInside1LastX128,
-                    _self.liquidity,
-                    FixedPoint128.Q128
-                )
-            );
+        uint128 tokensOwed0 = uint128(
+            FullMath.mulDiv(feeGrowthInside0X128 - _self.feeGrowthInside0LastX128, _self.liquidity, FixedPoint128.Q128)
+        );
+        uint128 tokensOwed1 = uint128(
+            FullMath.mulDiv(feeGrowthInside1X128 - _self.feeGrowthInside1LastX128, _self.liquidity, FixedPoint128.Q128)
+        );
 
         // update the position
         if (liquidityDelta != 0) self.liquidity = liquidityNext;

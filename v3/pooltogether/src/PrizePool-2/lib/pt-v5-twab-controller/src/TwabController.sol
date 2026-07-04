@@ -16,20 +16,20 @@ error PeriodLengthTooShort();
 
 /// @notice Emitted when the period offset is not in the past.
 /// @param periodOffset The period offset that was passed in
-error PeriodOffsetInFuture(uint48 periodOffset);
+error PeriodOffsetInFuture(uint32 periodOffset);
 
 /// @notice Emitted when a user tries to mint or transfer to the zero address
 error TransferToZeroAddress();
 
 // The minimum period length
-uint48 constant MINIMUM_PERIOD_LENGTH = 1 hours;
+uint32 constant MINIMUM_PERIOD_LENGTH = 1 hours;
 
 // Allows users to revoke their chances to win by delegating to the sponsorship address.
 address constant SPONSORSHIP_ADDRESS = address(1);
 
 /**
- * @title  Time-Weighted Average Balance Controller
- * @author PoolTogether Inc.
+ * @title  PoolTogether V5 Time-Weighted Average Balance Controller
+ * @author PoolTogether Inc. & G9 Software Inc.
  * @dev    Time-Weighted Average Balance Controller for ERC20 tokens.
  * @notice This TwabController uses the TwabLib to provide token balances and on-chain historical
             lookups to a user(s) time-weighted average balance. Each user is mapped to an
@@ -41,13 +41,13 @@ address constant SPONSORSHIP_ADDRESS = address(1);
  */
 contract TwabController {
   using SafeCast for uint256;
-  
+
   /// @notice Sets the minimum period length for Observations. When a period elapses, a new Observation is recorded, otherwise the most recent Observation is updated.
-  uint48 public immutable PERIOD_LENGTH;
+  uint32 public immutable PERIOD_LENGTH;
 
   /// @notice Sets the beginning timestamp for the first period. This allows us to maximize storage as well as line up periods with a chosen timestamp.
   /// @dev Ensure that the PERIOD_OFFSET is in the past.
-  uint48 public immutable PERIOD_OFFSET;
+  uint32 public immutable PERIOD_OFFSET;
 
   /* ============ State ============ */
 
@@ -72,12 +72,12 @@ contract TwabController {
   event IncreasedBalance(
     address indexed vault,
     address indexed user,
-    uint112 amount,
-    uint112 delegateAmount
+    uint96 amount,
+    uint96 delegateAmount
   );
 
   /**
-   * @notice Emited when a balance or delegateBalance is decreased.
+   * @notice Emitted when a balance or delegateBalance is decreased.
    * @param vault the vault for which the balance decreased
    * @param user the users whose balance decreased
    * @param amount the amount the balance decreased by
@@ -86,12 +86,12 @@ contract TwabController {
   event DecreasedBalance(
     address indexed vault,
     address indexed user,
-    uint112 amount,
-    uint112 delegateAmount
+    uint96 amount,
+    uint96 delegateAmount
   );
 
   /**
-   * @notice Emited when an Observation is recorded to the Ring Buffer.
+   * @notice Emitted when an Observation is recorded to the Ring Buffer.
    * @param vault the vault for which the Observation was recorded
    * @param user the users whose Observation was recorded
    * @param balance the resulting balance
@@ -102,8 +102,8 @@ contract TwabController {
   event ObservationRecorded(
     address indexed vault,
     address indexed user,
-    uint112 balance,
-    uint112 delegateBalance,
+    uint96 balance,
+    uint96 delegateBalance,
     bool isNew,
     ObservationLib.Observation observation
   );
@@ -122,7 +122,7 @@ contract TwabController {
    * @param amount the amount the total supply increased by
    * @param delegateAmount the amount the delegateTotalSupply increased by
    */
-  event IncreasedTotalSupply(address indexed vault, uint112 amount, uint112 delegateAmount);
+  event IncreasedTotalSupply(address indexed vault, uint96 amount, uint96 delegateAmount);
 
   /**
    * @notice Emitted when the total supply or delegateTotalSupply is decreased.
@@ -130,10 +130,10 @@ contract TwabController {
    * @param amount the amount the total supply decreased by
    * @param delegateAmount the amount the delegateTotalSupply decreased by
    */
-  event DecreasedTotalSupply(address indexed vault, uint112 amount, uint112 delegateAmount);
+  event DecreasedTotalSupply(address indexed vault, uint96 amount, uint96 delegateAmount);
 
   /**
-   * @notice Emited when a Total Supply Observation is recorded to the Ring Buffer.
+   * @notice Emitted when a Total Supply Observation is recorded to the Ring Buffer.
    * @param vault the vault for which the Observation was recorded
    * @param balance the resulting balance
    * @param delegateBalance the resulting delegated balance
@@ -142,8 +142,8 @@ contract TwabController {
    */
   event TotalSupplyObservationRecorded(
     address indexed vault,
-    uint112 balance,
-    uint112 delegateBalance,
+    uint96 balance,
+    uint96 delegateBalance,
     bool isNew,
     ObservationLib.Observation observation
   );
@@ -158,7 +158,7 @@ contract TwabController {
    * @param _periodOffset Sets the beginning timestamp for the first period. This allows us to maximize storage as well
    *      as line up periods with a chosen timestamp.
    */
-  constructor(uint48 _periodLength, uint48 _periodOffset) {
+  constructor(uint32 _periodLength, uint32 _periodOffset) {
     if (_periodLength < MINIMUM_PERIOD_LENGTH) {
       revert PeriodLengthTooShort();
     }
@@ -170,6 +170,25 @@ contract TwabController {
   }
 
   /* ============ External Read Functions ============ */
+
+  /**
+   * @notice Returns whether the TwabController has been shutdown at the given timestamp
+   * If the twab is queried at or after this time, whether an absolute timestamp or time range, it will return 0.
+   * @dev This function will return true for any timestamp after the lastObservationAt()
+   * @param timestamp The timestamp to check
+   * @return True if the TwabController is shutdown at the given timestamp, false otherwise.
+   */
+  function isShutdownAt(uint256 timestamp) external view returns (bool) {
+    return TwabLib.isShutdownAt(timestamp, PERIOD_LENGTH, PERIOD_OFFSET);
+  }
+
+  /**
+   * @notice Computes the timestamp after which no more observations will be made.
+   * @return The largest timestamp at which the TwabController can record a new observation.
+   */
+  function lastObservationAt() external view returns (uint256) {
+    return TwabLib.lastObservationAt(PERIOD_LENGTH, PERIOD_OFFSET);
+  }
 
   /**
    * @notice Loads the current TWAB Account data for a specific vault stored for a user.
@@ -254,10 +273,17 @@ contract TwabController {
   function getBalanceAt(
     address vault,
     address user,
-    uint48 periodEndOnOrAfterTime
+    uint256 periodEndOnOrAfterTime
   ) external view returns (uint256) {
     TwabLib.Account storage _account = userObservations[vault][user];
-    return TwabLib.getBalanceAt(PERIOD_LENGTH, PERIOD_OFFSET, _account.observations, _account.details, _periodEndOnOrAfter(periodEndOnOrAfterTime));
+    return
+      TwabLib.getBalanceAt(
+        PERIOD_LENGTH,
+        PERIOD_OFFSET,
+        _account.observations,
+        _account.details,
+        _periodEndOnOrAfter(periodEndOnOrAfterTime)
+      );
   }
 
   /**
@@ -266,9 +292,19 @@ contract TwabController {
    * @param periodEndOnOrAfterTime The time in the past for which the balance is being queried. The time will be snapped to a period end time on or after the timestamp.
    * @return The total supply at the target time
    */
-  function getTotalSupplyAt(address vault, uint48 periodEndOnOrAfterTime) external view returns (uint256) {
+  function getTotalSupplyAt(
+    address vault,
+    uint256 periodEndOnOrAfterTime
+  ) external view returns (uint256) {
     TwabLib.Account storage _account = totalSupplyObservations[vault];
-    return TwabLib.getBalanceAt(PERIOD_LENGTH, PERIOD_OFFSET, _account.observations, _account.details, _periodEndOnOrAfter(periodEndOnOrAfterTime));
+    return
+      TwabLib.getBalanceAt(
+        PERIOD_LENGTH,
+        PERIOD_OFFSET,
+        _account.observations,
+        _account.details,
+        _periodEndOnOrAfter(periodEndOnOrAfterTime)
+      );
   }
 
   /**
@@ -283,8 +319,8 @@ contract TwabController {
   function getTwabBetween(
     address vault,
     address user,
-    uint48 startTime,
-    uint48 endTime
+    uint256 startTime,
+    uint256 endTime
   ) external view returns (uint256) {
     TwabLib.Account storage _account = userObservations[vault][user];
     // We snap the timestamps to the period end on or after the timestamp because the total supply records will be sparsely populated.
@@ -310,8 +346,8 @@ contract TwabController {
    */
   function getTotalSupplyTwabBetween(
     address vault,
-    uint48 startTime,
-    uint48 endTime
+    uint256 startTime,
+    uint256 endTime
   ) external view returns (uint256) {
     TwabLib.Account storage _account = totalSupplyObservations[vault];
     // We snap the timestamps to the period end on or after the timestamp because the total supply records will be sparsely populated.
@@ -332,7 +368,7 @@ contract TwabController {
    * @param _timestamp The timestamp to check
    * @return The end timestamp of the period that ends on or immediately after the given timestamp
    */
-  function periodEndOnOrAfter(uint48 _timestamp) external view returns (uint48) {
+  function periodEndOnOrAfter(uint256 _timestamp) external view returns (uint256) {
     return _periodEndOnOrAfter(_timestamp);
   }
 
@@ -341,22 +377,19 @@ contract TwabController {
    * @param _timestamp The timestamp to compute the period end time for
    * @return A period end time.
    */
-  function _periodEndOnOrAfter(uint48 _timestamp) internal view returns (uint48) {
+  function _periodEndOnOrAfter(uint256 _timestamp) internal view returns (uint256) {
     if (_timestamp < PERIOD_OFFSET) {
       return PERIOD_OFFSET;
     }
     if ((_timestamp - PERIOD_OFFSET) % PERIOD_LENGTH == 0) {
       return _timestamp;
     }
-    return TwabLib.getPeriodEndTime(
-      PERIOD_LENGTH,
-      PERIOD_OFFSET,
-      TwabLib.getTimestampPeriod(PERIOD_LENGTH, PERIOD_OFFSET, _timestamp)
-    );
+    uint256 period = TwabLib.getTimestampPeriod(PERIOD_LENGTH, PERIOD_OFFSET, _timestamp);
+    return TwabLib.getPeriodEndTime(PERIOD_LENGTH, PERIOD_OFFSET, period);
   }
 
   /**
-   * @notice Looks up the newest observation  for a user.
+   * @notice Looks up the newest observation for a user.
    * @param vault the vault for which the observation is being queried
    * @param user the user whose observation is being queried
    * @return index The index of the observation
@@ -371,7 +404,7 @@ contract TwabController {
   }
 
   /**
-   * @notice Looks up the oldest observation  for a user.
+   * @notice Looks up the oldest observation for a user.
    * @param vault the vault for which the observation is being queried
    * @param user the user whose observation is being queried
    * @return index The index of the observation
@@ -416,7 +449,7 @@ contract TwabController {
    * @param time The timestamp to check
    * @return period The period the timestamp falls into
    */
-  function getTimestampPeriod(uint48 time) external view returns (uint48) {
+  function getTimestampPeriod(uint256 time) external view returns (uint256) {
     return TwabLib.getTimestampPeriod(PERIOD_LENGTH, PERIOD_OFFSET, time);
   }
 
@@ -425,7 +458,7 @@ contract TwabController {
    * @param time The timestamp to check
    * @return True if the given time is finalized, false if it's during the current overwrite period.
    */
-  function hasFinalized(uint48 time) external view returns (bool) {
+  function hasFinalized(uint256 time) external view returns (bool) {
     return TwabLib.hasFinalized(PERIOD_LENGTH, PERIOD_OFFSET, time);
   }
 
@@ -434,7 +467,7 @@ contract TwabController {
    * @dev The overwrite period is the period during which observations are collated.
    * @return period The timestamp at which the current overwrite period started.
    */
-  function currentOverwritePeriodStartedAt() external view returns (uint48) {
+  function currentOverwritePeriodStartedAt() external view returns (uint256) {
     return TwabLib.currentOverwritePeriodStartedAt(PERIOD_LENGTH, PERIOD_OFFSET);
   }
 
@@ -448,7 +481,7 @@ contract TwabController {
    * @param _to The address to mint balance and delegateBalance to
    * @param _amount The amount to mint
    */
-  function mint(address _to, uint112 _amount) external {
+  function mint(address _to, uint96 _amount) external {
     if (_to == address(0)) {
       revert TransferToZeroAddress();
     }
@@ -463,7 +496,7 @@ contract TwabController {
    * @param _from The address to burn balance and delegateBalance from
    * @param _amount The amount to burn
    */
-  function burn(address _from, uint112 _amount) external {
+  function burn(address _from, uint96 _amount) external {
     _transferBalance(msg.sender, _from, address(0), _amount);
   }
 
@@ -475,7 +508,7 @@ contract TwabController {
    * @param _to The address to transfer balance and delegateBalance to
    * @param _amount The amount to transfer
    */
-  function transfer(address _from, address _to, uint112 _amount) external {
+  function transfer(address _from, address _to, uint96 _amount) external {
     if (_to == address(0)) {
       revert TransferToZeroAddress();
     }
@@ -512,7 +545,7 @@ contract TwabController {
    * @param _to the address to which the balance is being transferred
    * @param _amount the amount of balance being transferred
    */
-  function _transferBalance(address _vault, address _from, address _to, uint112 _amount) internal {
+  function _transferBalance(address _vault, address _from, address _to, uint96 _amount) internal {
     if (_to == SPONSORSHIP_ADDRESS) {
       revert CannotTransferToSponsorshipAddress();
     }
@@ -617,7 +650,7 @@ contract TwabController {
     address _vault,
     address _fromDelegate,
     address _toDelegate,
-    uint112 _amount
+    uint96 _amount
   ) internal {
     // If we are transferring tokens from a delegated account to an undelegated account
     if (_fromDelegate != address(0) && _fromDelegate != SPONSORSHIP_ADDRESS) {
@@ -664,7 +697,7 @@ contract TwabController {
       _vault,
       _currentDelegate,
       _to,
-      SafeCast.toUint112(userObservations[_vault][_from].details.balance)
+      SafeCast.toUint96(userObservations[_vault][_from].details.balance)
     );
 
     emit Delegated(_vault, _from, to);
@@ -680,8 +713,8 @@ contract TwabController {
   function _increaseBalances(
     address _vault,
     address _user,
-    uint112 _amount,
-    uint112 _delegateAmount
+    uint96 _amount,
+    uint96 _delegateAmount
   ) internal {
     TwabLib.Account storage _account = userObservations[_vault][_user];
 
@@ -719,8 +752,8 @@ contract TwabController {
   function _decreaseBalances(
     address _vault,
     address _user,
-    uint112 _amount,
-    uint112 _delegateAmount
+    uint96 _amount,
+    uint96 _delegateAmount
   ) internal {
     TwabLib.Account storage _account = userObservations[_vault][_user];
 
@@ -764,8 +797,8 @@ contract TwabController {
    */
   function _decreaseTotalSupplyBalances(
     address _vault,
-    uint112 _amount,
-    uint112 _delegateAmount
+    uint96 _amount,
+    uint96 _delegateAmount
   ) internal {
     TwabLib.Account storage _account = totalSupplyObservations[_vault];
 
@@ -808,8 +841,8 @@ contract TwabController {
    */
   function _increaseTotalSupplyBalances(
     address _vault,
-    uint112 _amount,
-    uint112 _delegateAmount
+    uint96 _amount,
+    uint96 _delegateAmount
   ) internal {
     TwabLib.Account storage _account = totalSupplyObservations[_vault];
 

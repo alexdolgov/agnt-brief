@@ -1,15 +1,23 @@
 {
   "component": "MultiProxyController",
   "main_contract": "MultiProxyController",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x35fb4026dcf19f8ca37dcca4d2d68a549548750c",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x732e5f7fe7c40333dfeff57755666f85d1e164c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x871e3ec0aeaab4f99155917eb56493749260c737",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

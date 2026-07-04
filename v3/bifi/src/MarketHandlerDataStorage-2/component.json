@@ -1,15 +1,23 @@
 {
   "component": "MarketHandlerDataStorage-2",
   "main_contract": "MarketHandlerDataStorage",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2ed04ce9a032b9a101975172f59a8d33e877bb1f",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1074fd06b7b1c65f5a450e81ed0245bc90bcba65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd377750886a5e13d2598ffbd64498da0de3f592b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

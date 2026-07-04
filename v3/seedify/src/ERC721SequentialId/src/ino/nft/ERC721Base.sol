@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.23;
 
-import {IERC2981, ERC2981} from "openzeppelin-contracts/token/common/ERC2981.sol";
+import {ERC2981Upgradeable} from "openzeppelin-contracts-upgradeable/token/common/ERC2981Upgradeable.sol";
 import {ReentrancyGuardUpgradeable} from "openzeppelin-contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 
 import {INFT} from "./interfaces/INFT.sol";
@@ -19,7 +19,7 @@ import {Status} from "../../common/SaleStruct.sol";
 abstract contract ERC721Base is
     INFT, // 1 inherited component
     INFTInternal, // 1 inherited component
-    ERC2981, // 4 inherited components
+    ERC2981Upgradeable, // 4 inherited components
     ERC721ContractMetadataCloneable, // 7 inherited components
     ReentrancyGuardUpgradeable // 2 inherited components
 {
@@ -135,33 +135,20 @@ abstract contract ERC721Base is
         address initialOwner,
         address ino_
     ) public virtual override initializer {
-        __ERC721ACloneable__init(data.name, data.symbol);
+        if (data.maxCap > 2 ** 64 - 1) {
+            revert CannotExceedMaxSupplyOfUint64(data.maxCap);
+        }
+
         _maxSupply = data.maxCap;
         _tokenBaseURI = data.uri;
         startTokenId = data.startTokenId;
+
+        // init after {startTokenId} is set
+        __ERC721ACloneable__init(data.name, data.symbol);
         __ReentrancyGuard_init();
         _transferOwnership(initialOwner);
+
         ino = ino_;
-    }
-
-    /// @inheritdoc ERC721ContractMetadataCloneable
-    function setBaseURI(string calldata newBaseURI) public override {
-        Status status = ISaleReadable(ino).saleStatus();
-        // IF ino is not started OR IF ino is completed AND newBaseURI hash = provenance hash
-        if (
-            (status == Status.NOT_STARTED) ||
-            (status == Status.COMPLETED &&
-                keccak256(bytes(newBaseURI)) == _provenanceHash)
-        ) super.setBaseURI(newBaseURI);
-        else revert ERC721Base_SetBaseURI(status);
-    }
-
-    /// @inheritdoc ERC721ContractMetadataCloneable
-    function setProvenanceHash(bytes32 newProvenanceHash) public override {
-        Status status = ISaleReadable(ino).saleStatus();
-        if (status == Status.NOT_STARTED) {
-            super.setProvenanceHash(newProvenanceHash);
-        } else revert ERC721Base_SetProvenanceHash(status);
     }
 
     /// @inheritdoc INFT
@@ -186,11 +173,11 @@ abstract contract ERC721Base is
         public
         view
         virtual
-        override(ERC721ContractMetadataCloneable, ERC2981)
+        override(ERC721ContractMetadataCloneable, ERC2981Upgradeable)
         returns (bool)
     {
         return
-            interfaceId == type(IERC2981).interfaceId ||
+            ERC2981Upgradeable.supportsInterface(interfaceId) ||
             ERC721ContractMetadataCloneable.supportsInterface(interfaceId);
     }
 
@@ -204,12 +191,12 @@ abstract contract ERC721Base is
         returns (
             uint256 minterNumMinted,
             uint256 currentTotalSupply,
-            uint256 maxSupply
+            uint256 maxSupply_
         )
     {
         minterNumMinted = _numberMinted(minter);
         currentTotalSupply = _totalMinted();
-        maxSupply = _maxSupply;
+        maxSupply_ = _maxSupply;
     }
 
     function _onlyIno(address minter) internal view {

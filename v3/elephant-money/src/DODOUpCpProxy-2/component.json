@@ -1,0 +1,18 @@
+{
+  "component": "DODOUpCpProxy-2",
+  "main_contract": "DODOUpCpProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x39eb553b85be6757038ca01e18194a7072173d03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

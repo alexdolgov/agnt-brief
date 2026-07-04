@@ -30,10 +30,7 @@ interface IBaseRewarder {
      * @param account The address of the account to stake tokens for.
      * @param amount The amount of tokens to stake.
      */
-    function stake(
-        address account,
-        uint256 amount
-    ) external;
+    function stake(address account, uint256 amount) external;
 
     /**
      * @notice Calculate the earned rewards for an account.
@@ -121,10 +118,7 @@ interface IBaseRewarder {
      * @param token Address of token
      * @param recipient recipient Address of recipient
      */
-    function recover(
-        address token,
-        address recipient
-    ) external;
+    function recover(address token, address recipient) external;
 
     /**
      * @notice Check if an address is whitelisted.

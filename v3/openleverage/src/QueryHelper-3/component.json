@@ -1,0 +1,18 @@
+{
+  "component": "QueryHelper-3",
+  "main_contract": "QueryHelper",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e95ff1939a2c7c59ec5ef170a591e2da08fb87a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

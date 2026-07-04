@@ -1,0 +1,18 @@
+{
+  "component": "SpeedMarketsAMM-19",
+  "main_contract": "SpeedMarketsAMM",
+  "source_file_count": 267,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x95e8c849fa22012d88f40180a1524ef31be11a14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

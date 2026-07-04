@@ -1,0 +1,26 @@
+{
+  "component": "PlasmaVault-25",
+  "main_contract": "PlasmaVault",
+  "source_file_count": 70,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7924184350e9d555a576153fe5feeec86270530a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb6e7b5a43000b737fff36c5fd8eaa76a0be7e302",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

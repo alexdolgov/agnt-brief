@@ -1,21 +1,18 @@
 {
   "component": "LPoolInterface-2",
   "main_contract": "LPoolInterface",
-  "source_file_count": 11,
+  "source_file_count": 19,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/OpenLeverageDev/openleverage-contracts/blob/main/audits/PeckShield-Audit-Report-OpenLeverage-v1.0.1.pdf",
-    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OpenLeverage-1.0.1.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x71f1158d76af5b6762d5ebcdee19105eab2c77d2",
-      "is_proxy": true,
-      "implementation_address": "0xc11d684f430e8cedcc7f3355b20ee41640cc740a",
-      "liveness": "live"
+      "address": "0x1c2364801947c86260d766c335b28d2a42880bca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

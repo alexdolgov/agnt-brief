@@ -1,0 +1,18 @@
+{
+  "component": "StablePoolFactory-2",
+  "main_contract": "StablePoolFactory",
+  "source_file_count": 68,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1780e8185199dac45284039bb3e3b64060d943ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

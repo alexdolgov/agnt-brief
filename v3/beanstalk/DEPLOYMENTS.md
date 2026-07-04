@@ -1,6 +1,6 @@
 # beanstalk — deployments
 
-560 verified deployment(s) across 148 component(s).
+593 verified deployment(s) across 179 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -60,7 +60,8 @@
 | arbitrum | `0x1b3224c0847242f6d0fbc31087117459596ffccf` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x1b47b4124b9a5094c59710e6b9126e5e32a4fb8e` | AggregatorProxy | impl | live | no |
 | arbitrum | `0x1b9749e06817433a34d7efaaa0a7f6a94a41e432` | OffchainAggregatorBilling | impl | live | no |
-| arbitrum | `0x1bea054dddbca12889e07b3e076f511bf1d27543` | BeanstalkERC20-2 | impl | live | no |
+| arbitrum | `0x1bea054dddbca12889e07b3e076f511bf1d27543` | BeanstalkERC20-3 | impl | live | no |
+| arbitrum | `0x1bea059c3ea15f6c10be1c53d70c75fd1266d788` | BeanstalkERC20-2 | impl | live | no |
 | arbitrum | `0x1c8a384af067418f631683262965f7b5d1e5c788` | AggregatorProxy | impl | live | no |
 | arbitrum | `0x1cde96670e1e779b13ddfd6a5c6d19349cc6a642` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x1d416d75fa88100fa0198f1c1f3ecc074c555d6e` | OffchainAggregatorBilling | impl | live | no |
@@ -81,7 +82,7 @@
 | arbitrum | `0x2829f6cc137cf3552325f69b9fd215acacfd104c` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x2946220288dbbf77df0030fcecc2a8348cbbe32c` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x2c1c5eab455a91cead280b12650faaa7bfdd59e6` | AggregatorProxy | impl | live | no |
-| arbitrum | `0x2cb2d140c42b79f602535e2447e7afa980034464` | OwnershipFacet | impl | live | no |
+| arbitrum | `0x2cb2d140c42b79f602535e2447e7afa980034464` | OwnershipFacet-2 | impl | live | no |
 | arbitrum | `0x2cde70a472a8ffc6ebf2ee54713ab7d404006854` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x2d5e484dd7d43dfe32bf1ed9fe6517b64f13ea51` | GaugePointFacet | impl | live | no |
 | arbitrum | `0x2e804f24134bacf12036757d1dcdccbbbb3e2f31` | GaugeGettersFacet | impl | live | no |
@@ -123,6 +124,7 @@
 | arbitrum | `0x3ed9d8146a32b3390b373bbdff0ede7361568c4e` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x3eee6ccbf41173b18c133200b1762a8d714aea72` | ReseedField | impl | inactive | no |
 | arbitrum | `0x3f1341710e680c95e9b3a0549ffaf9f492682f32` | EVM2EVMOffRamp | impl | live | no |
+| arbitrum | `0x40c8688969c91290311314fbb2f10156b43fbe4b` | Life-2 | impl | live | no |
 | arbitrum | `0x41230419afff6c7ffecf715fa57958d53f803de9` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x413b219d371c352f6d1e9a39f5ce4c869eda9476` | AggregatorProxy | impl | live | no |
 | arbitrum | `0x41f14afb0eb605097c5950d2458415437a3d2bcd` | DualAggregator | impl | live | no |
@@ -146,6 +148,8 @@
 | arbitrum | `0x4b13dd76de990db9a2dab58d35c2c02e5e3ae848` | AggregatorProxy | impl | live | no |
 | arbitrum | `0x4c594a54c857c53ee03975c460c4030d67bdb1e4` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x4c76f02e484e8ce9b6c2358cf9624babc5531e9e` | DualAggregator | impl | live | no |
+| arbitrum | `0x4d26caf0778d651922e89c546f09ae852cc4933a` | TokenFacet-2 | impl | live | no |
+| arbitrum | `0x4da6aaed2a2c3605f7c098037014003697cb0426` | BDVFacet-2 | impl | live | no |
 | arbitrum | `0x4dacfb8ddf3067da0787fc31409abd40b052b2f9` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x4fdc2ebf915322dd693d848d7e4996cb1e4d0b70` | IBean-8 | impl | live | no |
 | arbitrum | `0x507c9ac4502d62a80d5898c17eb635ea46427670` | OffchainAggregatorBilling | impl | live | no |
@@ -153,9 +157,11 @@
 | arbitrum | `0x5265846205081df808b2111ebce5899811b62fc5` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x53106dc7d78df1eed36947cf0536d7eccca7e0b1` | L1RecieverFacet | impl | live | no |
 | arbitrum | `0x54a82bc6c6540f95c0b84690773635acc97a92ff` | AggregatorProxy | impl | live | no |
+| arbitrum | `0x552322cd960ffb809d91012ce05d6fbb86bae290` | Life-3 | impl | live | no |
 | arbitrum | `0x552c92c0c09a73d569ab52ff4c17a153c3472be3` | AggregatorProxy | impl | live | no |
 | arbitrum | `0x555555987d98079b9f43cdcdbd52dbb24ffeeef5` | ShipmentPlanner | impl | live | no |
 | arbitrum | `0x5579358403ed126db6ed6a213b5129696161bad6` | ApprovalFacet | impl | live | no |
+| arbitrum | `0x5678345d444918a38ad9dc7ca1b0c208e1927094` | SiloFacet-2 | impl | live | no |
 | arbitrum | `0x56bb7f0037836431dcad051337625e59a97d2e48` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x575f3625f3465749b612af2abbcf9d6498b95bd7` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x5794fdb0cfe2abfcb3d22103f5d8c6b4c2ccd1d9` | MetadataImage | impl | live | no |
@@ -176,6 +182,7 @@
 | arbitrum | `0x62619470fcba2ae5c2dc22c18cf5251c09c1e618` | DualAggregator | impl | live | no |
 | arbitrum | `0x626fd7e1bbd2bbfa91260a1f7e485ce2286231a7` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x639fe6ab55c921f74e7fac1ee960c0b6293ba612` | AggregatorProxy | impl | live | no |
+| arbitrum | `0x6464446d74c27961396a126b2d449abddea354cd` | MarketplaceFacet-2 | impl | live | no |
 | arbitrum | `0x660e7af290f540205a84dccc1f40d0269fc936f5` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x6642e640321e1ad01eef2fc2ad5427d84a2ee269` | CommitStore | impl | live | no |
 | arbitrum | `0x66b074afc32cafd8e5518fa061701cf84789fd25` | OffchainAggregatorBilling | impl | live | no |
@@ -209,6 +216,7 @@
 | arbitrum | `0x7537f8c0f8f7e7def07bf9e91e636e55881c7a66` | AggregatorProxy | impl | live | no |
 | arbitrum | `0x75c1212d7717f5aaa1179c6a71c9afc56ecddd85` | ReseedBean | impl | live | no |
 | arbitrum | `0x75dd106b46017f9b5bf2c468f29ee55f410b991c` | OffchainAggregatorBilling | impl | live | no |
+| arbitrum | `0x76ef6b03775a4cde7666c96f3ca21feb736afebc` | ClaimFacet-2 | impl | live | no |
 | arbitrum | `0x778356313a7419eec9d0762bf15795a771e0cd36` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x77d76ea1a5a2616275d50350b4c796aaef7ce0aa` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x78aabb7a55508bbcc3a76d2dfd9ad4ff97afed7a` | AggregatorProxy | impl | live | no |
@@ -251,6 +259,7 @@
 | arbitrum | `0x8f3071e2cff6632707e4f3dd2bee604b9412d348` | CommitStore | impl | live | no |
 | arbitrum | `0x8f60c335a5d2bec6b32867d3c05c377e88640aaf` | CommitStore | impl | live | no |
 | arbitrum | `0x9046d16e793eba3ece85e3a6cbec2e0ce69b04b1` | LibLockedUnderlying | impl | live | no |
+| arbitrum | `0x915d09ec953520ab46c3ac76b7153e354dea84cd` | TokenFacet-3 | impl | live | no |
 | arbitrum | `0x91e46cc5590a4b9182e47f40006140a7077dec31` | EVM2EVMOffRamp | impl | live | no |
 | arbitrum | `0x920d90b3953b3c90b06ebe8579b0215d6801da54` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0x926cfce66aa8a0cc29470da28095d88cf24abe16` | PauseFacet | impl | inactive | no |
@@ -283,8 +292,11 @@
 | arbitrum | `0xa631deff664da5a42642c3e1a4a8d5b4f99ee28d` | AggregatorProxy | impl | live | no |
 | arbitrum | `0xa64344ec6b4971d1fbdaf5550001ac5751eed599` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xa686fa6122d30ebc51843847fef4a0ae759fbac1` | DualAggregator | impl | live | no |
+| arbitrum | `0xa7d49dc04ab8530509a03f9b8669ac6bc026711f` | BDVFacet-3 | impl | live | no |
 | arbitrum | `0xa821e9cd8490ad5cb398fbaea8baeeda27aa6f93` | DualAggregator | impl | live | no |
 | arbitrum | `0xa841011089336de36b239b49f70a456edd1c87c8` | AggregatorProxy | impl | live | no |
+| arbitrum | `0xa89fbf550a453f0ed9d75daac706fa41ee7f9a1d` | SiloFacet-3 | impl | live | no |
+| arbitrum | `0xa9085918d5632ea12ba91709f819b800fa8b3726` | FieldFacet-2 | impl | live | no |
 | arbitrum | `0xab5745a3bc42a8f73232d56f0566d5eb4e4095a7` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xac812c6eaed6823d115ed2beb9ecfcbc98b31a8e` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xad81bc9887ab35b4aa05493e9b3c32ca7393c8b1` | OffchainAggregatorBilling | impl | live | no |
@@ -323,6 +335,7 @@
 | arbitrum | `0xbc81b4e883375c387db454acae322196ae07a481` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xbcf3ba03bf792f9f8b5dbd460eaa446529020778` | GaugePointFacet-2 | impl | live | no |
 | arbitrum | `0xbda25a2450b1295564e8f46aece841005cbe2c8a` | EVM2EVMOffRamp | impl | live | no |
+| arbitrum | `0xbea0005b8599265d41256905a9b3073d397812e4` | BeanstalkERC20-2 | impl | live | no |
 | arbitrum | `0xbf1cd5cb759f8e21c98a4367b665f43d607e8885` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xbfc294070e8a7594ceaa6c564883e1f9222bc09b` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xbff434a1b44677d4ce302da64d84bb4d305c0d49` | OffchainAggregatorBilling | impl | live | no |
@@ -341,6 +354,7 @@
 | arbitrum | `0xc64c90ebaa01ed9ad4810e98d5c794a008aeecc5` | IBean-10 | impl | live | no |
 | arbitrum | `0xc67fe680410646e40feef06600bb8a21e554cf09` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xc952f31456c15087e014f489a48e13b69d707d66` | OffchainAggregatorBilling | impl | live | no |
+| arbitrum | `0xca03ababa37566d89b707878495d9eb8ea48c3c5` | MarketplaceFacet-3 | impl | live | no |
 | arbitrum | `0xcabc2d71dc3172a154a5a34cd706b050e0ef9b6f` | EVM2EVMOffRamp | impl | live | no |
 | arbitrum | `0xcad2225f02b0d077dcf3f945f129d12f3b595820` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xcb1dbbb4be5aec889c65ff34882f1eab2cd5785b` | EVM2EVMOffRamp | impl | live | no |
@@ -357,6 +371,8 @@
 | arbitrum | `0xd05ad7b6e72b23c15c011a6d2967017005639c2a` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xd0b5f6b81811fce57e533dc57ae7d90e0867c177` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xd0e9220a422ba14676dc34042f5f70c6fbc3f7af` | AggregatorProxy | impl | live | no |
+| arbitrum | `0xd14b7ab5fd36c770e3339a94f3763caec046ddcc` | ClaimFacet-3 | impl | live | no |
+| arbitrum | `0xd1a0060ba708bc4bcd3da6c37efa8dedf015fb70` | Life-4 | proxy | live | no |
 | arbitrum | `0xd39a31e5f23d90371d61a976cacb728842e04ca9` | SafeProxy | proxy | live | no |
 | arbitrum | `0xd4a0797d7700bba801d2ded34e5d44480d0061fe` | FarmFacet | impl | live | no |
 | arbitrum | `0xd542b9c755587d595cdd7df808841d74585e194c` | OffchainAggregatorBilling | impl | live | no |
@@ -393,6 +409,7 @@
 | arbitrum | `0xe62f2ae9cecbc6688a24602386f6b8fe5336b634` | EVM2EVMOffRamp | impl | live | no |
 | arbitrum | `0xe657b28ba8f9c08ac6c7efc669c0625da704e4ef` | ReseedWhitelist | impl | live | no |
 | arbitrum | `0xe68beb4eb070c4362494fddbd2fb9288ce2631e3` | DualAggregator | impl | live | no |
+| arbitrum | `0xe6f9ce8737fa856e2aeed2925db39fcac25c6513` | FieldFacet-3 | impl | live | no |
 | arbitrum | `0xe7bef4c93a720eb8beb145f86d5f6555127b8538` | OffchainAggregatorBilling | impl | live | no |
 | arbitrum | `0xe7c522c60ba7f1b5e398d2312593713e2b19aeb0` | DualAggregator | impl | live | no |
 | arbitrum | `0xe7f278c6cf5a9349f98f01a9c8ddd6eaa2a1dd24` | OffchainAggregatorBilling | impl | live | no |
@@ -455,6 +472,7 @@
 | ethereum | `0x23d231f37c8f5711468c8abbfbf1757d1f38fda2` | SiloV2Facet | impl | live | no |
 | ethereum | `0x24a30cc4b8342b8a62de921cd4038f4645c281ec` | FieldFacet | impl | inactive | no |
 | ethereum | `0x2585bc446edbd99de17a7a1a85ec328372c599f7` | BeanstalkGetters | impl | inactive | no |
+| ethereum | `0x261b3ae660504537fbfe15b6c1c664976344eb0a` | UnripeFacet-2 | impl | live | no |
 | ethereum | `0x285dd7701f831ba8258f18da3fc049268f254df0` | InitBip22 | impl | inactive | no |
 | ethereum | `0x2906f2b668fc6f9b5c1dea6f7c76e788def688b5` | Replant7 | impl | live | no |
 | ethereum | `0x2a56f4d01b1ed5a0c75560fd9ecbdfa913fcd5da` | InitFundraiser | impl | inactive | no |
@@ -469,6 +487,7 @@
 | ethereum | `0x3740df01a85dcafa2232f2bc045c7668ce3ceda4` | InitBip23 | impl | inactive | no |
 | ethereum | `0x39cdaf9dc6057fd7ae81aaed64d7a062aaf452fd` | Fertilizer | impl | live | no |
 | ethereum | `0x3a70dfa7d2262988064a2d051dd47521e43c9bdd` | Vyper_contract | impl | live | no |
+| ethereum | `0x3f8ce426e3fdc5efecae218d84b50d46542e5416` | IBean-11 | impl | live | no |
 | ethereum | `0x402c84de2ce49af88f5e2ef3710ff89bfed36cb6` | Fertilizer | proxy | live | no |
 | ethereum | `0x43ffdbbbd0de6512b95e4cb65724e838a8c42dde` | Life | impl | live | no |
 | ethereum | `0x448d330affa0ad31264c2e6a7b5d2bf579608065` | SiloFacet | impl | live | no |
@@ -487,12 +506,17 @@
 | ethereum | `0x5ad02aed25fb1fd438cc71fbc5129895b395d4c6` | ClaimFacet | impl | inactive | no |
 | ethereum | `0x5bb733654c75dcfdd68096ad1764b9db9b33fd35` | SiloFacet | impl | live | no |
 | ethereum | `0x5c2db111fcdfc24ec3fdd3263c585bdf95b55880` | Life | impl | live | no |
+| ethereum | `0x5d45283ff53aabdb93693095039b489af8b18cf7` | OwnershipFacet | impl | live | no |
 | ethereum | `0x5e93b6807c269a8cdad3de956120862e2899cd4f` | FieldFacet | impl | live | no |
 | ethereum | `0x5f8d7b62a0c1762bbb65d8cf81b7aabf3365c4b4` | Replant5 | impl | inactive | no |
+| ethereum | `0x6039c602b730f44f418145454a2d954133cbd394` | FarmFacet-2 | impl | inactive | no |
+| ethereum | `0x649d4b21278a1771c0b196614e2c21b4c73fe801` | IBean-12 | impl | live | no |
 | ethereum | `0x6530a76c77f11731bf7f1c799aa97e0c15d3fb26` | SiloFacet | impl | live | no |
 | ethereum | `0x656b50740cbf6616d6324e3ccc9a96147fa04fb6` | FieldFacet | impl | live | no |
+| ethereum | `0x6838d4060ca7d5cf5a8adb4b14c97ecabab861d6` | IBean-13 | impl | live | no |
 | ethereum | `0x6982938c28bd93d6f06c5c65d970aa8687c2b400` | IBean-2 | impl | live | no |
 | ethereum | `0x6a9cba39e828d1756682635556ed71317fe451d2` | Life | impl | live | no |
+| ethereum | `0x6c3f90f043a72fa612cbac8115ee7e52bde6e490` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x6c90e5ce27461e31b8954dfa2bc5101507751df6` | BudgetFacet | impl | inactive | no |
 | ethereum | `0x74d01f9dc15e92a9235daa8f2c6f8bfad9904858` | Budget | proxy | live | no |
 | ethereum | `0x7762a9ed0847cebce6cbc6ecb1f975ea8a387b60` | ClaimFacet | impl | live | no |
@@ -518,19 +542,25 @@
 | ethereum | `0xaa420e97534ab55637957e868b658193b112a551` | Budget | proxy | live | no |
 | ethereum | `0xadb0e28a4ad120e13d110aad5661ddeaa12ba15f` | BudgetFacet | impl | inactive | no |
 | ethereum | `0xae6ce391e8caad54f56c28e05c9da28c4f3ede5e` | InitSiloEvents | impl | inactive | no |
+| ethereum | `0xaea0e6e011106968adc7943579c829e49efddad0` | WhitelistFacet-2 | impl | inactive | no |
+| ethereum | `0xaf26527efcbf5ba7ba5de57e7048bf605011cc39` | UnripeFacet-3 | impl | live | no |
 | ethereum | `0xb01c6b965afb3c0106c62c57deccc9a81be63b9d` | InitReplant | impl | inactive | no |
 | ethereum | `0xb151ea73053386b8d0367c401ee58a06e07ea680` | FertilizerPreMint | impl | inactive | no |
 | ethereum | `0xb6cc892079345d69be3a6c91dcc8dc0d2aab4a03` | Replant2_2 | impl | inactive | no |
 | ethereum | `0xb6e69a891e12812f7b41dbc15317858fd386a99e` | InitHotFix2 | impl | inactive | no |
 | ethereum | `0xb7da8e0be58fc8aab5b20c99f981cb4706f3816e` | InitBip14 | impl | inactive | no |
 | ethereum | `0xb82fec5801a47c74f73eb533006acc586fe039d8` | Replant6 | impl | inactive | no |
+| ethereum | `0xba95364b0b856231e707a8a053e04fb7cee71d44` | OracleFacet-2 | impl | inactive | no |
 | ethereum | `0xbe9130192e4461696288f974f9fd66f28ec6bba1` | Budget | impl | inactive | no |
 | ethereum | `0xbea0000029ad1c77d3d5d23ba2d8893db9d1efab` | ERC20Permit | impl | live | no |
 | ethereum | `0xbea0e11282e2bb5893bece110cf199501e872bad` | Well | impl | live | no |
 | ethereum | `0xc17ed2e41242063db6b939f5601ba01374b9d44a` | BDVFacet | impl | inactive | no |
+| ethereum | `0xc1a92d1fa36717bfc3c795d3a335f84784dc593d` | IBean-14 | impl | live | no |
 | ethereum | `0xc1e088fc1323b20bcbee9bd1b9fc9546db5624c5` | DiamondLoupeFacet | proxy | live | no |
 | ethereum | `0xc20628ffff326c80056e35e39308e4ee0ff44ffc` | InitBip13 | impl | inactive | no |
 | ethereum | `0xc2546544b39b257e67f8785b560f3582db90f7eb` | InitHotFix5 | impl | inactive | no |
+| ethereum | `0xc2e90acba1dc5ec1b852592390f479012eb304c2` | IBean-15 | impl | live | no |
+| ethereum | `0xc9c32cd16bf7efb85ff14e0c8603cc90f6f2ee49` | Vyper_contract | impl | live | no |
 | ethereum | `0xca0a5d1d2a8a15262d5081d2de9ad83995fd337c` | SiloFacet | impl | live | no |
 | ethereum | `0xcb64964117ae6dc6fab049531ed63df949dcf6af` | CurvePrice | impl | inactive | no |
 | ethereum | `0xcc83422e892311510d084862ea0fdca5fa2e5133` | SiloFacet | impl | live | no |
@@ -540,6 +570,7 @@
 | ethereum | `0xd047408488aa48a31319265e9808d6c59adb1e51` | CurvePrice | impl | inactive | no |
 | ethereum | `0xd131e016e925d4b347b3f89667c7c0950b5c71c4` | ProxyAdmin | impl | live | no |
 | ethereum | `0xd23ca44dadf271c7f0d540a571864043c36c1f27` | BeaNFT | impl | inactive | no |
+| ethereum | `0xd652c40fbb3f06d6b58cb9aa9cff063ee63d465d` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0xd870aab97c2739b320a3efad370511452894f1b2` | MarketplaceFacet | impl | live | no |
 | ethereum | `0xdbc8cbd2af1e22f4e9e3ad0ea7f51433f7f31328` | GovernanceFacet | impl | live | no |
 | ethereum | `0xdc59ac4fefa32293a95889dc396682858d52e5db` | Bean | impl | live | yes |
@@ -553,6 +584,7 @@
 | ethereum | `0xe7f0c51d8faf239a1cf65db79e5e0fc64d148424` | Life | impl | live | no |
 | ethereum | `0xe80f772077d574cdca16ed845175a0121cad60d9` | Budget | impl | inactive | no |
 | ethereum | `0xe81140fcaa27cb1b3d43bb416fa39a98e4fe0b0a` | SiloFacet | impl | live | no |
+| ethereum | `0xeab4398f62194948cb25f45fee4c46fae2e91229` | PauseFacet-2 | impl | inactive | no |
 | ethereum | `0xf039d98f294fff342d08de95a7dd5ad3b797c5e3` | InitBip8 | impl | inactive | no |
 | ethereum | `0xf1bcb061222015412f3d6b889ff0203ed8dbb4ca` | SiloFacet | impl | live | no |
 | ethereum | `0xf1f5e5df82a6962731e3bd9f67ec6b1d4a23e2cf` | InitBip5 | impl | inactive | no |
@@ -563,42 +595,10 @@
 | ethereum | `0xf5f0c743573fbae3a76892b03f70596526f4e1d5` | MarketplaceFacet | impl | live | no |
 | ethereum | `0xf73db3fb33c7070db0f0ae4a76872251dca15e97` | SiloFacet | impl | live | no |
 | ethereum | `0xf95389567b222ec36e509b874e8ad4452ea05654` | InitBip24 | impl | inactive | no |
+| ethereum | `0xfc7ed192a24fab3093c8747c3ddbe6cacd335b6c` | FertilizerFacet-2 | impl | live | no |
 | ethereum | `0xfecb01359263c12aa9ed838f878a596f0064aa6e` | ProxyAdmin | impl | live | no |
 
-## Source unavailable (34)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x1bea059c3ea15f6c10be1c53d70c75fd1266d788`
-- arbitrum `0x40c8688969c91290311314fbb2f10156b43fbe4b`
-- arbitrum `0x4d26caf0778d651922e89c546f09ae852cc4933a`
-- arbitrum `0x4da6aaed2a2c3605f7c098037014003697cb0426`
-- arbitrum `0x552322cd960ffb809d91012ce05d6fbb86bae290`
-- arbitrum `0x5678345d444918a38ad9dc7ca1b0c208e1927094`
-- arbitrum `0x6464446d74c27961396a126b2d449abddea354cd`
-- arbitrum `0x76ef6b03775a4cde7666c96f3ca21feb736afebc`
-- arbitrum `0x915d09ec953520ab46c3ac76b7153e354dea84cd`
-- arbitrum `0xa7d49dc04ab8530509a03f9b8669ac6bc026711f`
-- arbitrum `0xa89fbf550a453f0ed9d75daac706fa41ee7f9a1d`
-- arbitrum `0xa9085918d5632ea12ba91709f819b800fa8b3726`
-- arbitrum `0xbea0005b8599265d41256905a9b3073d397812e4`
-- arbitrum `0xca03ababa37566d89b707878495d9eb8ea48c3c5`
-- arbitrum `0xd14b7ab5fd36c770e3339a94f3763caec046ddcc`
-- arbitrum `0xd1a0060ba708bc4bcd3da6c37efa8dedf015fb70`
-- arbitrum `0xe6f9ce8737fa856e2aeed2925db39fcac25c6513`
-- ethereum `0x261b3ae660504537fbfe15b6c1c664976344eb0a`
-- ethereum `0x3f8ce426e3fdc5efecae218d84b50d46542e5416`
-- ethereum `0x5d45283ff53aabdb93693095039b489af8b18cf7`
-- ethereum `0x6039c602b730f44f418145454a2d954133cbd394`
-- ethereum `0x649d4b21278a1771c0b196614e2c21b4c73fe801`
-- ethereum `0x6838d4060ca7d5cf5a8adb4b14c97ecabab861d6`
-- ethereum `0x6c3f90f043a72fa612cbac8115ee7e52bde6e490`
-- ethereum `0xaea0e6e011106968adc7943579c829e49efddad0`
-- ethereum `0xaf26527efcbf5ba7ba5de57e7048bf605011cc39`
-- ethereum `0xba95364b0b856231e707a8a053e04fb7cee71d44`
-- ethereum `0xc1a92d1fa36717bfc3c795d3a335f84784dc593d`
-- ethereum `0xc2e90acba1dc5ec1b852592390f479012eb304c2`
-- ethereum `0xc9c32cd16bf7efb85ff14e0c8603cc90f6f2ee49`
-- ethereum `0xd652c40fbb3f06d6b58cb9aa9cff063ee63d465d`
-- ethereum `0xeab4398f62194948cb25f45fee4c46fae2e91229`
 - ethereum `0xeea799d5a8b2712a75a5a7f3bc899146d322d191`
-- ethereum `0xfc7ed192a24fab3093c8747c3ddbe6cacd335b6c`

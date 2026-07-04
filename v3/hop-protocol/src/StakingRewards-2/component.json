@@ -1,0 +1,42 @@
+{
+  "component": "StakingRewards-2",
+  "main_contract": "StakingRewards",
+  "source_file_count": 1,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x3d4cc8a61c7528fd86c55cfe061a78dcba48edd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x636a7ee78facd079dabc8f81eda1d09aa9d440a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x712f0cf37bdb8299d0666727f73a5caba7c1c24c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xbf7a02d963b23d84313f07a04ad663409cee5a92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

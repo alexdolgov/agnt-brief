@@ -1,0 +1,18 @@
+{
+  "component": "RebalanceProxy-3",
+  "main_contract": "RebalanceProxy",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd57f0bb9ed6cbbad0b2bdd470fd496db852aeb76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,17 +1,13 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity =0.7.6;
+pragma solidity ^0.7.0;
 pragma abicoder v2;
 
-import {AccountContext, LibStorage} from "../global/LibStorage.sol";
-import {Constants} from "../global/Constants.sol";
-import {PortfolioState, PortfolioAsset} from "../global/Types.sol";
-import {DateTime} from "./markets/DateTime.sol";
-import {PrimeCashExchangeRate} from "./pCash/PrimeCashExchangeRate.sol";
-import {PortfolioHandler} from "./portfolio/PortfolioHandler.sol";
-import {SafeInt256} from "../math/SafeInt256.sol";
+import "../global/LibStorage.sol";
+import "./balances/BalanceHandler.sol";
+import "./portfolio/BitmapAssetsHandler.sol";
+import "./portfolio/PortfolioHandler.sol";
 
 library AccountContextHandler {
-    using SafeInt256 for int256;
     using PortfolioHandler for PortfolioState;
 
     bytes18 private constant TURN_OFF_PORTFOLIO_FLAGS = 0x7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF;
@@ -34,28 +30,31 @@ library AccountContextHandler {
         return accountContext.bitmapCurrencyId != 0;
     }
 
-    /// @notice Enables a bitmap type portfolio for an account. A bitmap type portfolio allows
-    /// an account to hold more fCash than a normal portfolio, except only in a single currency.
-    /// Once enabled, it cannot be disabled or changed. An account can only enable a bitmap if
-    /// it has no assets or debt so that we ensure no assets are left stranded.
-    /// @param accountContext refers to the account where the bitmap will be enabled
-    /// @param currencyId the id of the currency to enable
-    /// @param blockTime the current block time to set the next settle time
+    /// @notice Sets the account context of a given account
     function enableBitmapForAccount(
         AccountContext memory accountContext,
+        address account,
         uint16 currencyId,
         uint256 blockTime
-    ) internal pure {
-        require(!isBitmapEnabled(accountContext), "Cannot change bitmap");
-        require(0 < currencyId && currencyId <= Constants.MAX_CURRENCIES, "Invalid currency id");
+    ) internal view {
+        // Allow setting the currency id to zero to turn off bitmap
+        require(currencyId <= Constants.MAX_CURRENCIES, "AC: invalid currency id");
 
-        // Account cannot have assets or debts
-        require(accountContext.assetArrayLength == 0, "Cannot have assets");
-        require(accountContext.hasDebt == 0x00, "Cannot have debt");
+        if (isBitmapEnabled(accountContext)) {
+            // Account cannot change their bitmap if they have assets set
+            bytes32 ifCashBitmap =
+                BitmapAssetsHandler.getAssetsBitmap(account, accountContext.bitmapCurrencyId);
+            require(ifCashBitmap == 0, "AC: cannot have assets");
+        } else {
+            require(accountContext.assetArrayLength == 0, "AC: cannot have assets");
+            // Account context also cannot have negative cash debts
+            require(accountContext.hasDebt == 0x00, "AC: cannot have debt");
 
-        // Ensure that the active currency is set to false in the array so that there is no double
-        // counting during FreeCollateral
-        setActiveCurrency(accountContext, currencyId, false, Constants.ACTIVE_IN_BALANCES);
+            // Ensure that the active currency is set to false in the array so that there is no double
+            // counting during FreeCollateral
+            setActiveCurrency(accountContext, currencyId, false, Constants.ACTIVE_IN_BALANCES);
+        }
+
         accountContext.bitmapCurrencyId = currencyId;
 
         // Setting this is required to initialize the assets bitmap
@@ -210,101 +209,14 @@ library AccountContextHandler {
         return result;
     }
 
-    function storeAssetsAndUpdateContextForSettlement(
-        AccountContext memory accountContext,
-        address account,
-        PortfolioState memory portfolioState
-    ) internal {
-        // During settlement, we do not update fCash debt outstanding
-        _storeAssetsAndUpdateContext(accountContext, account, portfolioState);
-    }
-
+    /// @notice Stores a portfolio array and updates the account context information, this method should
+    /// be used whenever updating a portfolio array except in the case of nTokens
     function storeAssetsAndUpdateContext(
         AccountContext memory accountContext,
         address account,
-        PortfolioState memory portfolioState
+        PortfolioState memory portfolioState,
+        bool isLiquidation
     ) internal {
-        (
-            PortfolioAsset[] memory initialPortfolio,
-            uint256[] memory initialIds
-        ) = PortfolioHandler.getSortedPortfolioWithIds(
-            account,
-            accountContext.assetArrayLength
-        );
-
-        _storeAssetsAndUpdateContext(accountContext, account, portfolioState);
-
-        (
-            PortfolioAsset[] memory finalPortfolio,
-            uint256[] memory finalIds
-        ) = PortfolioHandler.getSortedPortfolioWithIds(
-            account,
-            accountContext.assetArrayLength
-        );
-
-        uint256 i = 0; // initial counter
-        uint256 f = 0; // final counter
-        while (i < initialPortfolio.length || f < finalPortfolio.length) {
-            // Use uint256.max to signify that the end of the array has been reached. The max
-            // id space is much less than this, so any elements in the other array will trigger
-            // the proper if condition. Based on the while condition above, one of iID or fID
-            // will be a valid portfolio id.
-            uint256 iID = i < initialIds.length ? initialIds[i] : type(uint256).max;
-            uint256 fID = f < finalIds.length ? finalIds[f] : type(uint256).max;
-
-            // Inside this loop, it is guaranteed that there are no duplicate ids within
-            // initialIds and finalIds. Therefore, we are looking for one of three possibilities:
-            //  - iID == fID
-            //  - iID is not in finalIds (deleted)
-            //  - fID is not in initialIds (added)
-            if (iID == fID) {
-                // if id[i] == id[j] and both fCash, compare debt
-                if (initialPortfolio[i].assetType == Constants.FCASH_ASSET_TYPE) {
-                    PrimeCashExchangeRate.updateTotalfCashDebtOutstanding(
-                        account,
-                        initialPortfolio[i].currencyId,
-                        initialPortfolio[i].maturity,
-                        initialPortfolio[i].notional,
-                        finalPortfolio[f].notional
-                    );
-                }
-                i = i == initialIds.length ? i : i + 1;
-                f = f == finalIds.length ? f : f + 1;
-            } else if (iID < fID) {
-                // Initial asset deleted
-                if (initialPortfolio[i].assetType == Constants.FCASH_ASSET_TYPE) {
-                    PrimeCashExchangeRate.updateTotalfCashDebtOutstanding(
-                        account,
-                        initialPortfolio[i].currencyId,
-                        initialPortfolio[i].maturity,
-                        initialPortfolio[i].notional,
-                        0 // asset deleted, final notional is zero
-                    );
-                }
-                i = i == initialIds.length ? i : i + 1;
-            } else if (fID < iID) {
-                // Final asset added
-                if (finalPortfolio[f].assetType == Constants.FCASH_ASSET_TYPE) {
-                    PrimeCashExchangeRate.updateTotalfCashDebtOutstanding(
-                        account,
-                        finalPortfolio[f].currencyId,
-                        finalPortfolio[f].maturity,
-                        0, // asset added, initial notional is zero
-                        finalPortfolio[f].notional
-                    );
-                }
-                f = f == finalIds.length ? f : f + 1;
-            }
-        }
-    }
-
-    /// @notice Stores a portfolio array and updates the account context information, this method should
-    /// be used whenever updating a portfolio array except in the case of nTokens
-    function _storeAssetsAndUpdateContext(
-        AccountContext memory accountContext,
-        address account,
-        PortfolioState memory portfolioState
-    ) private {
         // Each of these parameters is recalculated based on the entire array of assets in store assets,
         // regardless of whether or not they have been updated.
         (bool hasDebt, bytes32 portfolioCurrencies, uint8 assetArrayLength, uint40 nextSettleTime) =
@@ -312,7 +224,12 @@ library AccountContextHandler {
         accountContext.nextSettleTime = nextSettleTime;
         require(mustSettleAssets(accountContext) == false); // dev: cannot store matured assets
         accountContext.assetArrayLength = assetArrayLength;
-        require(assetArrayLength <= uint8(LibStorage.MAX_PORTFOLIO_ASSETS)); // dev: max assets allowed
+
+        // During liquidation it is possible for an array to go over the max amount of assets allowed due to
+        // liquidity tokens being withdrawn into fCash.
+        if (!isLiquidation) {
+            require(assetArrayLength <= uint8(Constants.MAX_TRADED_MARKET_INDEX)); // dev: max assets allowed
+        }
 
         // Sets the hasDebt flag properly based on whether or not portfolio has asset debt, meaning
         // a negative fCash balance.

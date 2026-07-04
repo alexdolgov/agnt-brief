@@ -1,0 +1,18 @@
+{
+  "component": "FreeBetsHolder-7",
+  "main_contract": "FreeBetsHolder",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9a2aab3e81f917c04fbeab63a81f9cd7090d1ec0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

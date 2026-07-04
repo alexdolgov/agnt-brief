@@ -23,12 +23,12 @@ pragma solidity ^0.8.9;
 import { IDolomiteRegistry } from "@dolomite-exchange/modules-base/contracts/interfaces/IDolomiteRegistry.sol";
 import { IGenericTraderBase } from "@dolomite-exchange/modules-base/contracts/interfaces/IGenericTraderBase.sol";
 import { IsolationModeTokenVaultV1WithFreezable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithFreezable.sol";
-import { IsolationModeTokenVaultV1WithFreezableAndPausable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithFreezableAndPausable.sol";
+import { IsolationModeTokenVaultV1WithFreezableAndPausable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithFreezableAndPausable.sol"; // solhint-disable-line max-line-length
 import { IsolationModeTokenVaultV1WithPausable } from "@dolomite-exchange/modules-base/contracts/isolation-mode/abstract/IsolationModeTokenVaultV1WithPausable.sol";
 import { IFreezableIsolationModeVaultFactory } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IFreezableIsolationModeVaultFactory.sol";
 import { IIsolationModeVaultFactory } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IIsolationModeVaultFactory.sol";
-import { IUpgradeableAsyncIsolationModeUnwrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeUnwrapperTrader.sol";
-import { IUpgradeableAsyncIsolationModeWrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeWrapperTrader.sol";
+import { IUpgradeableAsyncIsolationModeUnwrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeUnwrapperTrader.sol"; // solhint-disable-line max-line-length
+import { IUpgradeableAsyncIsolationModeWrapperTrader } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IUpgradeableAsyncIsolationModeWrapperTrader.sol"; // solhint-disable-line max-line-length
 import { IDolomiteStructs } from "@dolomite-exchange/modules-base/contracts/protocol/interfaces/IDolomiteStructs.sol";
 import { IWETH } from "@dolomite-exchange/modules-base/contracts/protocol/interfaces/IWETH.sol";
 import { DecimalLib } from "@dolomite-exchange/modules-base/contracts/protocol/lib/DecimalLib.sol";
@@ -204,15 +204,12 @@ contract GmxV2IsolationModeTokenVaultV1 is
             _requireOnlyConverter(msg.sender);
         }
 
-        _validateIfWrapToUnderlying(
+        // Ignore the freezable implementation and call the pausable one directly
+        _requireNotLiquidatableIfWrapToUnderlying(
             _params.tradeAccountNumber,
-            _params.marketIdsPath[0],
-            _params.marketIdsPath[_params.marketIdsPath.length - 1],
-            _params.inputAmountWei,
-            _params.minOutputAmountWei
+            _params.marketIdsPath[_params.marketIdsPath.length - 1]
         );
 
-        // Ignore the freezable implementation and call the pausable one directly
         IsolationModeTokenVaultV1WithPausable._swapExactInputForOutput(_params);
     }
 
@@ -283,14 +280,14 @@ contract GmxV2IsolationModeTokenVaultV1 is
             return;
         }
 
-        IDolomiteStructs.AccountInfo memory liquidAccount = IDolomiteStructs.AccountInfo({
+        IDolomiteStructs.AccountInfo memory tradeAccount = IDolomiteStructs.AccountInfo({
             owner: address(this),
             number: _tradeAccountNumber
         });
 
         GmxV2Library.validateMinAmountIsNotTooLargeForLiquidation(
             IGmxV2IsolationModeVaultFactory(VAULT_FACTORY()),
-            liquidAccount,
+            tradeAccount,
             _inputAmount,
             _outputToken,
             _minOutputAmount,

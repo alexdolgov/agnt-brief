@@ -26,8 +26,6 @@ interface AddressBookInterface {
 
     function getKeeper() external view returns (address);
 
-    function owner() external view returns (address);
-
     /* Setters */
 
     function setOtokenImpl(address _otokenImpl) external;

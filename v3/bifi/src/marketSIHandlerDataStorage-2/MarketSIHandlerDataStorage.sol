@@ -1,4 +1,5 @@
 // File: contracts/interfaces/IMarketSIHandlerDataStorage.sol
+
 pragma solidity 0.6.12;
 
 /**
@@ -23,6 +24,7 @@ interface IMarketSIHandlerDataStorage  {
 }
 
 // File: contracts/Errors.sol
+
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -79,6 +81,7 @@ contract ManagerDataStorageErrors is ManagerModifier {
 }
 
 // File: contracts/context/BlockContext.sol
+
 pragma solidity 0.6.12;
 
 /**
@@ -97,7 +100,7 @@ contract BlockContext {
 }
 
 // File: contracts/marketHandler/marketHandlerDataStorage/MarketSIHandlerDataStorage.sol
-// SPDX-License-Identifier: BSD-3-Clause
+
 pragma solidity 0.6.12;
 
 /**

@@ -449,8 +449,8 @@ pragma solidity 0.6.12;
 contract StakedGlp {
     using SafeMath for uint256;
 
-    string public constant name = "StakedMLT";
-    string public constant symbol = "sMLT";
+    string public constant name = "StakedBLP";
+    string public constant symbol = "sBLP";
     uint8 public constant decimals = 18;
 
     address public glp;

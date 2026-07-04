@@ -1,0 +1,26 @@
+{
+  "component": "MultiSigWalletWithTimelock-2",
+  "main_contract": "MultiSigWalletWithTimelock",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x470525b96b84de0a5d5fba2053ba903fd031d3ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdbaf291a4380749a0e6474e25ab8a3186475074a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

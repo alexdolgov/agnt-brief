@@ -15,6 +15,7 @@ library LoanUtils {
         // Calculate the maximum loan ignoring vault supply constraints
         uint256 maxLoanIgnoreSupply = (((veBalance * rewardsRate) / 1000000) *
             multiplier) / 1e12; // rewardsRate * veNFT balance of token
+        uint256 maxLoan = (maxLoanIgnoreSupply * 10000) / (10000 + 80);
 
         // Calculate the maximum utilization ratio (80% of the vault supply)
         uint256 vaultSupply = vaultBalance + outstandingCapital;
@@ -25,17 +26,13 @@ library LoanUtils {
             return (0, maxLoanIgnoreSupply);
         }
 
-        // If the current loan balance exceeds the maximum capacity, no additional loans can be made
-        if (currentLoanBalance >= maxLoanIgnoreSupply) {
+        // If the current loan balance exceeds the maximum loan, no additional loans can be made
+        if (currentLoanBalance >= maxLoan) {
             return (0, maxLoanIgnoreSupply);
         }
 
-        // Calculate remaining headroom under LTV
-        uint256 headroom = maxLoanIgnoreSupply - currentLoanBalance;
-
-        // Fee-adjust the headroom to get actual borrowable amount
-        // When user borrows X, balance increases by X + 0.8% fee
-        uint256 maxLoan = (headroom * 10000) / (10000 + 80);
+        // Subtract the current loan balance from the maximum loan
+        maxLoan = maxLoan - currentLoanBalance;
 
         // Ensure the loan amount does not exceed the available vault supply
         uint256 vaultAvailableSupply = maxUtilization - outstandingCapital;
@@ -60,6 +57,7 @@ library LoanUtils {
     ) public pure returns (uint256, uint256) {
         // Calculate the maximum loan ignoring vault supply constraints
         uint256 maxLoanIgnoreSupply = (veBalance * ltv) / 10000; // ltv * veNFT balance of token
+        uint256 maxLoan = (maxLoanIgnoreSupply * 10000) / (10000 + 80);
 
         // Calculate the maximum utilization ratio (80% of the vault supply)
         uint256 vaultSupply = vaultBalance + outstandingCapital;
@@ -70,17 +68,13 @@ library LoanUtils {
             return (0, maxLoanIgnoreSupply);
         }
 
-        // If the current loan balance exceeds the maximum capacity, no additional loans can be made
-        if (currentLoanBalance >= maxLoanIgnoreSupply) {
+        // If the current loan balance exceeds the maximum loan, no additional loans can be made
+        if (currentLoanBalance >= maxLoan) {
             return (0, maxLoanIgnoreSupply);
         }
 
-        // Calculate remaining headroom under LTV
-        uint256 headroom = maxLoanIgnoreSupply - currentLoanBalance;
-
-        // Fee-adjust the headroom to get actual borrowable amount
-        // When user borrows X, balance increases by X + 0.8% fee
-        uint256 maxLoan = (headroom * 10000) / (10000 + 80);
+        // Subtract the current loan balance from the maximum loan
+        maxLoan = maxLoan - currentLoanBalance;
 
         // Ensure the loan amount does not exceed the available vault supply
         uint256 vaultAvailableSupply = maxUtilization - outstandingCapital;

@@ -2,12 +2,20 @@
   "component": "MulticallRouterV2",
   "main_contract": "MulticallRouterV2",
   "source_file_count": 5,
-  "deployment_count": 9,
+  "deployment_count": 10,
   "audited": true,
   "audits_covering": [
     "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/onchain-swap/Symbiosis%20Onchain%20Swap%20Audit%20-%20Decurity.pdf"
   ],
   "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5ad095de83693ba063941f2f2c5a0df02383b651",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

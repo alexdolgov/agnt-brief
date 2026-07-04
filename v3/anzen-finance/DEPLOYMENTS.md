@@ -1,12 +1,13 @@
 # anzen-finance — deployments
 
-140 verified deployment(s) across 40 component(s).
+150 verified deployment(s) across 47 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x024ae5eb7abd4f52ddd145f0fed446caebc5755b` | ChildsUSDzV2 | impl | inactive | no |
 | arbitrum | `0x1b2c29e3897b8f9170c98440a483e90e715c879d` | ChildsUSDzV2 | impl | live | no |
-| arbitrum | `0x5018609ab477cc502e170a5accf5312b86a4b94f` | ChildUSDzV2 | impl | live | no |
+| arbitrum | `0x5018609ab477cc502e170a5accf5312b86a4b94f` | ChildUSDzV2-2 | impl | live | no |
+| arbitrum | `0xdd216101d84d513a12cb7bfb109f7abcf330d58e` | AnzenLayerZeroAdapter | impl | live | no |
 | base | `0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a` | OffchainAggregatorBilling | impl | live | no |
 | base | `0x04d3d700150e03ed1df763363d746f0e9dee3bdd` | OffchainAggregatorBilling | impl | live | no |
 | base | `0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938` | ChildUSDz | impl | live | yes |
@@ -15,6 +16,7 @@
 | base | `0x12129aac52d6b0f0125677d4e1435633e61fd25f` | EACAggregatorProxy | impl | inactive | no |
 | base | `0x128ef61fdc9a36240b3372bd226479b66d63db38` | AnzenVotingControllerUpg | impl | inactive | no |
 | base | `0x15364cb4d86783229e1552d28c597bda43e3feea` | EACAggregatorProxy | impl | inactive | no |
+| base | `0x18b7d4d572ffbf644cfc2659ed5d2a420e2ad582` | GnosisSafeProxy-2 | impl | live | no |
 | base | `0x19e6821ee47a4c23e5971febee29f78c2e514dc8` | OffchainAggregatorBilling | impl | live | no |
 | base | `0x1f48178de8824cc98c911ff1b36a16dd8e20e59d` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0x22264d999286db15f56ec1f9fac563422cdb76d3` | TransparentUpgradeableProxy | proxy | live | no |
@@ -111,7 +113,7 @@
 | base | `0xdfdc54f14a4783fe8e8ef7de7159744725877c88` | AnzenGenericOFTAdapter | impl | live | no |
 | base | `0xe1068bc0a5197540108eade33ed4cc394510ca21` | MerkleRewardDistributor-2 | impl | live | no |
 | base | `0xe25969e2fa633a0c027fab8f30fc9c6a90d60b48` | EACAggregatorProxy | impl | inactive | no |
-| base | `0xe31ee12bdfdd0573d634124611e85338e2cbf0cf` | ChildsUSDzV2-2 | impl | live | no |
+| base | `0xe31ee12bdfdd0573d634124611e85338e2cbf0cf` | ChildsUSDzV2-3 | impl | live | no |
 | base | `0xe4064bcdc2635213dd69c1ff558f6ff67e0164e7` | TransparentUpgradeableProxy | impl | inactive | no |
 | base | `0xe5bbf41759bab9168ba2e04aa76ac168d1404441` | LockedUSDzMarket | impl | inactive | no |
 | base | `0xe62bce5d7cb9d16ab8b4d622538bc0a50a5799c2` | EACAggregatorProxy | impl | inactive | no |
@@ -122,16 +124,24 @@
 | base | `0xed85dc4a4924ce4554b5afa8f6bcad4420b00ada` | AnzenVotingControllerUpg | proxy | live | no |
 | base | `0xeec468333ccc16d4bf1cef497a56cf8c0aae4ca3` | AnzenToken | proxy | live | no |
 | base | `0xf2d85ee7cd9e75f3ffff4b44ade48581d2dbdfdd` | OffchainAggregatorBilling | impl | live | no |
+| base | `0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c` | TokenManagerProxy-2 | proxy | live | no |
 | base | `0xf72307c115d35555c803cc889b4afd305684201d` | TransparentUpgradeableProxy | impl | inactive | no |
 | base | `0xfaf372cabc765b63f6fabd436c845d965eda1ca5` | EACAggregatorProxy | impl | inactive | no |
 | base | `0xfc1415403ebb0c693f9a7844b92ad2ff24775c65` | EACAggregatorProxy | impl | inactive | no |
+| blast | `0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938` | AnzenLayerZeroAdapter | impl | live | no |
 | blast | `0x08fccc6213cb3843f8d270c4eefc7a09eb32b354` | SafeProxy | impl | live | no |
+| blast | `0x52056ed29fe015f4ba2e3b079d10c0b87f46e8c6` | ChildUSDzV2-3 | impl | live | no |
+| blast | `0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129` | AnzenLayerZeroAdapter | impl | live | no |
+| blast | `0x69213c52d7d195bcac57b05e2c634faa98024ddc` | Vault-3 | impl | inactive | no |
+| blast | `0x73d23f3778a90be8846e172354a115543df2a7e4` | ChildsUSDzV2 | impl | live | no |
 | blast | `0xf3588ea537b66ea59e9a0b0337abbd39d00cfe09` | VaultV2 | impl | inactive | no |
-| chain-169 | `0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938` | AnzenLayerZeroAdapter | impl | unknown | no |
+| chain-169 | `0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938` | AnzenLayerZeroAdapter-2 | impl | unknown | no |
 | chain-169 | `0x13649b6c7e177ffa373eeeeef485952843147210` | GnosisSafeProxy | impl | unknown | no |
 | chain-169 | `0x18b7d4d572ffbf644cfc2659ed5d2a420e2ad582` | GnosisSafeProxy | impl | unknown | no |
 | chain-169 | `0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129` | Vault | impl | live | yes |
-| chain-169 | `0xe31ee12bdfdd0573d634124611e85338e2cbf0cf` | AnzenLayerZeroAdapter | impl | unknown | no |
+| chain-169 | `0x73d23f3778a90be8846e172354a115543df2a7e4` | ChildUSDzV2 | impl | unknown | no |
+| chain-169 | `0x8f08a3b5bceadef10c0b26c8bb720ebb8fa91758` | ChildsUSDzV2-2 | impl | unknown | no |
+| chain-169 | `0xe31ee12bdfdd0573d634124611e85338e2cbf0cf` | AnzenLayerZeroAdapter-2 | impl | unknown | no |
 | ethereum | `0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938` | wPCTCollateral | impl | inactive | no |
 | ethereum | `0x0c0dfff29e449b0a84f78cc7cdbbe0e31fdaf1b7` | sUSDzOFTAdapter | impl | live | no |
 | ethereum | `0x414ac1853329b3704df0caf7749cd296c7f3b750` | wPCT | impl | live | no |
@@ -144,17 +154,3 @@
 | ethereum | `0xef5aacb3c38a5be7785a361008e27fb0328a62b5` | SPCTPool | impl | live | no |
 | ethereum | `0xf30a29f1c540724fd8c5c4be1af604a6c6800d29` | SPCTPool | impl | inactive | no |
 | ethereum | `0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c` | TokenManagerProxy | proxy | live | no |
-
-## Source unavailable (10)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0xdd216101d84d513a12cb7bfb109f7abcf330d58e`
-- base `0x18b7d4d572ffbf644cfc2659ed5d2a420e2ad582`
-- base `0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c`
-- blast `0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938`
-- blast `0x52056ed29fe015f4ba2e3b079d10c0b87f46e8c6`
-- blast `0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129`
-- blast `0x69213c52d7d195bcac57b05e2c634faa98024ddc`
-- blast `0x73d23f3778a90be8846e172354a115543df2a7e4`
-- chain-169 `0x73d23f3778a90be8846e172354a115543df2a7e4`
-- chain-169 `0x8f08a3b5bceadef10c0b26c8bb720ebb8fa91758`

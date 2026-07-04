@@ -1,0 +1,18 @@
+{
+  "component": "PairFactory-4",
+  "main_contract": "PairFactory",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc295f619afc2b8543d91c8970ea4c0726f197250",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

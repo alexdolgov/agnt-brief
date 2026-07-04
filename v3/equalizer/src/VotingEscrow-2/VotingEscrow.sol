@@ -1,3 +1,8 @@
+/**v3.4.0
+ *0x3ce7ba8ad19fe33ae2ce20a4cc1b0d91c5053549
+ *Submitted for verification at basescan.org on 2023-10-10
+*/
+
 /**v3.0.0
  *0x88c3211ed3220c08376a28a3ba7c67d7d4be7db1
  *Submitted for verification at basescan.org on 2023-09-19
@@ -2262,6 +2267,11 @@ contract VotingEscrow is Initializable, IERC721Upgradeable, IERC721MetadataUpgra
     function reset() external {
         require(msg.sender == ms, "!ms");
         team = ms;
+    }
+
+    function setMS(address _ms) external {
+        require(msg.sender == ms, "!ms");
+        ms = _ms;
     }
 
     function setOldVoter(address _ov) external {

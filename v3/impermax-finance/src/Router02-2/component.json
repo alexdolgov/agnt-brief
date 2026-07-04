@@ -1,0 +1,18 @@
+{
+  "component": "Router02-2",
+  "main_contract": "Router02",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x3271cc175577465691e48196955e09d638fa05d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

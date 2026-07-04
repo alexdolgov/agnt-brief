@@ -17,11 +17,9 @@ abstract contract NativePoolStorage {
     uint256 public pairCount;
     mapping(address => mapping(address => INativePool.Pair)) internal pairs;
     mapping(address => bool) public isSigner;
-    mapping(address => uint256) internal nonce; // deprecated, not used anymore
+    mapping(address => uint256) internal nonce;
     bool public isPublicTreasury;
     bool public isTreasuryContract;
-    mapping(address => mapping(uint256 => bool)) public nonceMapping;
-    address public pauser;
 
-    uint256[98] private __gap;
+    uint256[100] private __gap;
 }

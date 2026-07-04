@@ -1,36 +1,29 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity =0.7.6;
+pragma solidity ^0.7.0;
 pragma abicoder v2;
 
-import {
-    Token,
-    TokenType,
-    TokenStorage,
-    PrimeRate
-} from "../../global/Types.sol";
-import {LibStorage} from "../../global/LibStorage.sol";
-import {SafeInt256} from "../../math/SafeInt256.sol";
-import {SafeUint256} from "../../math/SafeUint256.sol";
-import {Constants} from "../../global/Constants.sol";
-import {Deployments} from "../../global/Deployments.sol";
-
-import {Emitter} from "../Emitter.sol";
-import {PrimeCashExchangeRate} from "../pCash/PrimeCashExchangeRate.sol";
-import {PrimeRateLib} from "../pCash/PrimeRateLib.sol";
-
-import {CompoundHandler} from "./protocols/CompoundHandler.sol";
-import {GenericToken} from "./protocols/GenericToken.sol";
-
-import {IERC20} from "../../../interfaces/IERC20.sol";
-import {IPrimeCashHoldingsOracle, RedeemData} from "../../../interfaces/notional/IPrimeCashHoldingsOracle.sol";
+import "../../math/SafeInt256.sol";
+import "../../global/LibStorage.sol";
+import "../../global/Types.sol";
+import "../../global/Constants.sol";
+import "interfaces/compound/CErc20Interface.sol";
+import "interfaces/compound/CEtherInterface.sol";
+import "interfaces/IEIP20NonStandard.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /// @notice Handles all external token transfers and events
 library TokenHandler {
     using SafeInt256 for int256;
-    using SafeUint256 for uint256;
-    using PrimeRateLib for PrimeRate;
+    using SafeMath for uint256;
 
-    function getDeprecatedAssetToken(uint256 currencyId) internal view returns (Token memory) {
+    function setMaxCollateralBalance(uint256 currencyId, uint72 maxCollateralBalance) internal {
+        mapping(uint256 => mapping(bool => TokenStorage)) storage store = LibStorage.getTokenStorage();
+        TokenStorage storage tokenStorage = store[currencyId][false];
+        tokenStorage.maxCollateralBalance = maxCollateralBalance;
+    } 
+
+    function getAssetToken(uint256 currencyId) internal view returns (Token memory) {
         return _getToken(currencyId, false);
     }
 
@@ -51,13 +44,16 @@ library TokenHandler {
                 // No overflow, restricted on storage
                 decimals: int256(10**tokenStorage.decimalPlaces),
                 tokenType: tokenStorage.tokenType,
-                deprecated_maxCollateralBalance: 0
+                maxCollateralBalance: tokenStorage.maxCollateralBalance
             });
     }
 
-    /// @notice Sets a token for a currency id. After the prime cash migration, only
-    /// underlying tokens may be set by this method.
-    function setToken(uint256 currencyId, TokenStorage memory tokenStorage) internal {
+    /// @notice Sets a token for a currency id.
+    function setToken(
+        uint256 currencyId,
+        bool underlying,
+        TokenStorage memory tokenStorage
+    ) internal {
         mapping(uint256 => mapping(bool => TokenStorage)) storage store = LibStorage.getTokenStorage();
 
         if (tokenStorage.tokenType == TokenType.Ether && currencyId == Constants.ETH_CURRENCY_ID) {
@@ -67,6 +63,7 @@ library TokenHandler {
             ts.hasTransferFee = false;
             ts.tokenType = TokenType.Ether;
             ts.decimalPlaces = Constants.ETH_DECIMAL_PLACES;
+            ts.maxCollateralBalance = 0;
 
             return;
         }
@@ -75,7 +72,7 @@ library TokenHandler {
         require(tokenStorage.tokenAddress != address(0), "TH: address is zero");
         // Once a token is set we cannot override it. In the case that we do need to do change a token address
         // then we should explicitly upgrade this method to allow for a token to be changed.
-        Token memory token = _getToken(currencyId, true);
+        Token memory token = _getToken(currencyId, underlying);
         require(
             token.tokenAddress == tokenStorage.tokenAddress || token.tokenAddress == address(0),
             "TH: token cannot be reset"
@@ -86,214 +83,141 @@ library TokenHandler {
 
         // Validate token type
         require(tokenStorage.tokenType != TokenType.Ether); // dev: ether can only be set once
-        // Only underlying tokens allowed after migration
-        require(tokenStorage.tokenType == TokenType.UnderlyingToken); // dev: only underlying token
+        if (underlying) {
+            // Underlying tokens cannot have max collateral balances, the contract only has a balance temporarily
+            // during mint and redeem actions.
+            require(tokenStorage.maxCollateralBalance == 0); // dev: underlying cannot have max collateral balance
+            require(tokenStorage.tokenType == TokenType.UnderlyingToken); // dev: underlying token inconsistent
+        } else {
+            require(tokenStorage.tokenType != TokenType.UnderlyingToken); // dev: underlying token inconsistent
+        }
 
-        // Underlying is always true.
-        store[currencyId][true] = tokenStorage;
+        if (tokenStorage.tokenType == TokenType.cToken) {
+            // Set the approval for the underlying so that we can mint cTokens
+            Token memory underlyingToken = getUnderlyingToken(currencyId);
+            // ERC20 tokens should return true on success for an approval, but Tether
+            // does not return a value here so we use the NonStandard interface here to
+            // check that the approval was successful.
+            IEIP20NonStandard(underlyingToken.tokenAddress).approve(
+                tokenStorage.tokenAddress,
+                type(uint256).max
+            );
+            checkReturnCode();
+        }
+
+        store[currencyId][underlying] = tokenStorage;
     }
 
-    /**
-     * @notice Transfers a deprecated asset token into Notional and redeems it for underlying,
-     * updates prime cash supply and returns the total prime cash to add to the account.
-     * @param assetToken asset token to redeem
-     * @param currencyId the currency id of the token
-     * @param assetAmountExternal the amount to transfer in asset token denomination and external precision
-     * @param primeRate the prime rate for the given currency
-     * @param account the address of the account to transfer from
-     * @return primeCashDeposited the amount of prime cash to mint back to the account
-     */
-    function depositDeprecatedAssetToken(
+    /// @notice This method only works with cTokens, it's unclear how we can make this more generic
+    function mint(Token memory token, uint256 underlyingAmountExternal) internal returns (int256) {
+        uint256 startingBalance = IERC20(token.tokenAddress).balanceOf(address(this));
+
+        uint256 success;
+        if (token.tokenType == TokenType.cToken) {
+            success = CErc20Interface(token.tokenAddress).mint(underlyingAmountExternal);
+        } else if (token.tokenType == TokenType.cETH) {
+            // Reverts on error
+            CEtherInterface(token.tokenAddress).mint{value: msg.value}();
+        } else {
+            revert(); // dev: non mintable token
+        }
+
+        require(success == Constants.COMPOUND_RETURN_CODE_NO_ERROR, "Mint");
+        uint256 endingBalance = IERC20(token.tokenAddress).balanceOf(address(this));
+
+        // This is the starting and ending balance in external precision
+        return SafeInt256.toInt(endingBalance.sub(startingBalance));
+    }
+
+    function redeem(
         Token memory assetToken,
-        uint16 currencyId,
-        uint256 assetAmountExternal,
-        address account,
-        PrimeRate memory primeRate
-    ) internal returns (int256 primeCashDeposited) {
-        // Transfer the asset token into the contract
-        assetAmountExternal = GenericToken.safeTransferIn(
-            assetToken.tokenAddress, account, assetAmountExternal
-        );
-
-        Token memory underlyingToken = getUnderlyingToken(currencyId);
-        int256 underlyingExternalAmount;
-        // Only cTokens will be listed at the time of the migration. Redeem
-        // those cTokens to underlying (to be held by the Notional contract)
-        // and then run the post transfer update
-        if (assetToken.tokenType == TokenType.cETH) {
-            underlyingExternalAmount = CompoundHandler.redeemCETH(
-                assetToken, assetAmountExternal
-            ).toInt();
-        } else if (assetToken.tokenType == TokenType.cToken) {
-            underlyingExternalAmount = CompoundHandler.redeem(
-                assetToken, underlyingToken, assetAmountExternal
-            ).toInt();
-        } else {
-            // No other asset token variants can be called here.
-            revert();
-        }
-        
-        primeCashDeposited = _postTransferPrimeCashUpdate(
-            account, currencyId, underlyingExternalAmount, underlyingToken, primeRate
-        );
-    }
-
-    /// @notice Deposits an exact amount of underlying tokens to mint the specified amount of prime cash.
-    /// @param account account to transfer tokens from
-    /// @param currencyId the associated currency id
-    /// @param primeCashToMint the amount of prime cash to mint
-    /// @param primeRate the current accrued prime rate
-    /// @param returnNativeTokenWrapped if true, return excess msg.value ETH payments as WETH
-    /// @return actualTransferExternal the actual amount of tokens transferred in external precision
-    function depositExactToMintPrimeCash(
-        address account,
-        uint16 currencyId,
-        int256 primeCashToMint,
-        PrimeRate memory primeRate,
-        bool returnNativeTokenWrapped
-    ) internal returns (int256 actualTransferExternal) {
-        if (primeCashToMint == 0) return 0;
-        require(primeCashToMint > 0);
-        Token memory underlying = getUnderlyingToken(currencyId);
-        int256 netTransferExternal = convertToUnderlyingExternalWithAdjustment(
-            underlying, 
-            primeRate.convertToUnderlying(primeCashToMint) 
-        );
-
-        (actualTransferExternal, /* */) = depositUnderlyingExternal(
-            account, currencyId, netTransferExternal, primeRate, returnNativeTokenWrapped
-        );
-    }
-
-    /// @notice Deposits an amount of underlying tokens to mint prime cash
-    /// @param account account to transfer tokens from
-    /// @param currencyId the associated currency id
-    /// @param _underlyingExternalDeposit the amount of underlying tokens to deposit
-    /// @param primeRate the current accrued prime rate
-    /// @param returnNativeTokenWrapped if true, return excess msg.value ETH payments as WETH
-    /// @return actualTransferExternal the actual amount of tokens transferred in external precision
-    /// @return netPrimeSupplyChange the amount of prime supply created
-    function depositUnderlyingExternal(
-        address account,
-        uint16 currencyId,
-        int256 _underlyingExternalDeposit,
-        PrimeRate memory primeRate,
-        bool returnNativeTokenWrapped
-    ) internal returns (int256 actualTransferExternal, int256 netPrimeSupplyChange) {
-        uint256 underlyingExternalDeposit = _underlyingExternalDeposit.toUint();
-        if (underlyingExternalDeposit == 0) return (0, 0);
-
-        Token memory underlying = getUnderlyingToken(currencyId);
-        if (underlying.tokenType == TokenType.Ether) {
-            // Underflow checked above
-            if (underlyingExternalDeposit < msg.value) {
-                // Transfer any excess ETH back to the account
-                GenericToken.transferNativeTokenOut(
-                    account, msg.value - underlyingExternalDeposit, returnNativeTokenWrapped
-                );
-            } else {
-                require(underlyingExternalDeposit == msg.value, "ETH Balance");
-            }
-
-            actualTransferExternal = _underlyingExternalDeposit;
-        } else {
-            // In the case of deposits, we use a balance before and after check
-            // to ensure that we record the proper balance change.
-            actualTransferExternal = GenericToken.safeTransferIn(
-                underlying.tokenAddress, account, underlyingExternalDeposit
-            ).toInt();
-        }
-
-        netPrimeSupplyChange = _postTransferPrimeCashUpdate(
-            account, currencyId, actualTransferExternal, underlying, primeRate
-        );
-    }
-
-    /// @notice Withdraws an amount of prime cash and returns it to the account as underlying tokens
-    /// @param account account to transfer tokens to
-    /// @param currencyId the associated currency id
-    /// @param primeCashToWithdraw the amount of prime cash to burn
-    /// @param primeRate the current accrued prime rate
-    /// @param withdrawWrappedNativeToken if true, return ETH as WETH
-    /// @return netTransferExternal the amount of underlying tokens withdrawn in native precision, this is
-    /// negative to signify that tokens have left the protocol
-    function withdrawPrimeCash(
-        address account,
-        uint16 currencyId,
-        int256 primeCashToWithdraw,
-        PrimeRate memory primeRate,
-        bool withdrawWrappedNativeToken
-    ) internal returns (int256 netTransferExternal) {
-        if (primeCashToWithdraw == 0) return 0;
-        require(primeCashToWithdraw < 0);
-
-        Token memory underlying = getUnderlyingToken(currencyId);
-        netTransferExternal = convertToExternal(
-            underlying, 
-            primeRate.convertToUnderlying(primeCashToWithdraw) 
-        );
-
-        // Overflow not possible due to int256
-        uint256 withdrawAmount = uint256(netTransferExternal.neg());
-        _redeemMoneyMarketIfRequired(currencyId, underlying, withdrawAmount);
-
-        if (underlying.tokenType == TokenType.Ether) {
-            GenericToken.transferNativeTokenOut(account, withdrawAmount, withdrawWrappedNativeToken);
-        } else {
-            GenericToken.safeTransferOut(underlying.tokenAddress, account, withdrawAmount);
-        }
-
-        _postTransferPrimeCashUpdate(account, currencyId, netTransferExternal, underlying, primeRate);
-    }
-
-    /// @notice Prime cash holdings may be in underlying tokens or they may be held in other money market
-    /// protocols like Compound, Aave or Euler. If there is insufficient underlying tokens to withdraw on
-    /// the contract, this method will redeem money market tokens in order to gain sufficient underlying
-    /// to withdraw from the contract.
-    /// @param currencyId associated currency id
-    /// @param underlying underlying token information
-    /// @param withdrawAmountExternal amount of underlying to withdraw in external token precision
-    function _redeemMoneyMarketIfRequired(
-        uint16 currencyId,
-        Token memory underlying,
-        uint256 withdrawAmountExternal
-    ) private {
-        // If there is sufficient balance of the underlying to withdraw from the contract
-        // immediately, just return.
-        mapping(address => uint256) storage store = LibStorage.getStoredTokenBalances();
-        uint256 currentBalance = store[underlying.tokenAddress];
-        if (withdrawAmountExternal <= currentBalance) return;
-
-        IPrimeCashHoldingsOracle oracle = PrimeCashExchangeRate.getPrimeCashHoldingsOracle(currencyId);
-        // Redemption data returns an array of contract calls to make from the Notional proxy (which
-        // is holding all of the money market tokens).
-        (RedeemData[] memory data) = oracle.getRedemptionCalldata(withdrawAmountExternal);
-
-        // This is the total expected underlying that we should redeem after all redemption calls
-        // are executed.
-        uint256 totalUnderlyingRedeemed = executeMoneyMarketRedemptions(underlying, data);
-
-        // Ensure that we have sufficient funds before we exit
-        require(withdrawAmountExternal <= currentBalance.add(totalUnderlyingRedeemed)); // dev: insufficient redeem
-    }
-
-    /// @notice Every time tokens are transferred into or out of the protocol, the prime supply
-    /// and total underlying held must be updated.
-    function _postTransferPrimeCashUpdate(
-        address account,
-        uint16 currencyId,
-        int256 netTransferUnderlyingExternal,
         Token memory underlyingToken,
-        PrimeRate memory primeRate
-    ) private returns (int256 netPrimeSupplyChange) {
-        int256 netUnderlyingChange = convertToInternal(underlyingToken, netTransferUnderlyingExternal);
+        uint256 assetAmountExternal
+    ) internal returns (int256) {
+        uint256 startingBalance;
+        if (assetToken.tokenType == TokenType.cETH) {
+            startingBalance = address(this).balance;
+        } else if (assetToken.tokenType == TokenType.cToken) {
+            startingBalance = IERC20(underlyingToken.tokenAddress).balanceOf(address(this));
+        } else {
+            revert(); // dev: non redeemable failure
+        }
 
-        netPrimeSupplyChange = primeRate.convertFromUnderlying(netUnderlyingChange);
+        uint256 success = CErc20Interface(assetToken.tokenAddress).redeem(assetAmountExternal);
+        require(success == Constants.COMPOUND_RETURN_CODE_NO_ERROR, "Redeem");
 
-        Emitter.emitMintOrBurnPrimeCash(account, currencyId, netPrimeSupplyChange);
-        PrimeCashExchangeRate.updateTotalPrimeSupply(currencyId, netPrimeSupplyChange, netUnderlyingChange);
+        uint256 endingBalance;
+        if (assetToken.tokenType == TokenType.cETH) {
+            endingBalance = address(this).balance;
+        } else {
+            endingBalance = IERC20(underlyingToken.tokenAddress).balanceOf(address(this));
+        }
 
-        _updateNetStoredTokenBalance(underlyingToken.tokenAddress, netTransferUnderlyingExternal);
+        // Underlying token external precision
+        return SafeInt256.toInt(endingBalance.sub(startingBalance));
+    }
+
+    /// @notice Handles transfers into and out of the system denominated in the external token decimal
+    /// precision.
+    function transfer(
+        Token memory token,
+        address account,
+        int256 netTransferExternal
+    ) internal returns (int256) {
+        if (netTransferExternal > 0) {
+            // Deposits must account for transfer fees.
+            netTransferExternal = _deposit(token, account, uint256(netTransferExternal));
+        } else if (token.tokenType == TokenType.Ether) {
+            require(netTransferExternal <= 0); // dev: cannot deposit ether
+            address payable accountPayable = payable(account);
+            // This does not work with contracts, but is reentrancy safe. If contracts want to withdraw underlying
+            // ETH they will have to withdraw the cETH token and then redeem it manually.
+            accountPayable.transfer(uint256(netTransferExternal.neg()));
+        } else {
+            safeTransferOut(
+                token.tokenAddress,
+                account,
+                // netTransferExternal is zero or negative here
+                uint256(netTransferExternal.neg())
+            );
+        }
+
+        return netTransferExternal;
+    }
+
+    /// @notice Handles token deposits into Notional. If there is a transfer fee then we must
+    /// calculate the net balance after transfer. Amounts are denominated in the destination token's
+    /// precision.
+    function _deposit(
+        Token memory token,
+        address account,
+        uint256 amount
+    ) private returns (int256) {
+        uint256 startingBalance;
+        uint256 endingBalance;
+
+        if (token.hasTransferFee) {
+            startingBalance = IERC20(token.tokenAddress).balanceOf(address(this));
+        }
+
+        safeTransferIn(token.tokenAddress, account, amount);
+
+        if (token.hasTransferFee || token.maxCollateralBalance > 0) {
+            endingBalance = IERC20(token.tokenAddress).balanceOf(address(this));
+        }
+
+        if (token.maxCollateralBalance > 0) {
+            int256 internalPrecisionBalance = convertToInternal(token, SafeInt256.toInt(endingBalance));
+            // Max collateral balance is stored as uint72, no overflow
+            require(internalPrecisionBalance <= SafeInt256.toInt(token.maxCollateralBalance)); // dev: over max collateral balance
+        }
+
+        // Math is done in uint inside these statements and will revert on negative
+        if (token.hasTransferFee) {
+            return SafeInt256.toInt(endingBalance.sub(startingBalance));
+        } else {
+            return SafeInt256.toInt(amount);
+        }
     }
 
     function convertToInternal(Token memory token, int256 amount) internal pure returns (int256) {
@@ -319,96 +243,48 @@ library TokenHandler {
         return amount.mul(token.decimals).div(Constants.INTERNAL_TOKEN_PRECISION);
     }
 
-    /// @notice Converts a token to an underlying external amount with adjustments for rounding errors when depositing
-    function convertToUnderlyingExternalWithAdjustment(
-        Token memory token,
-        int256 underlyingInternalAmount
-    ) internal pure returns (int256 underlyingExternalAmount) {
-        if (token.decimals < Constants.INTERNAL_TOKEN_PRECISION) {
-            // If external < 8, we could truncate down and cause an off by one error, for example we need
-            // 1.00000011 cash and we deposit only 1.000000, missing 11 units. Therefore, we add a unit at the
-            // lower precision (external) to get around off by one errors
-            underlyingExternalAmount = convertToExternal(token, underlyingInternalAmount).add(1);
-        } else {
-            // If external > 8, we may not mint enough asset tokens because in the case of 1e18 precision 
-            // an off by 1 error at 1e8 precision is 1e10 units of the underlying token. In this case we
-            // add 1 at the internal precision which has the effect of rounding up by 1e10
-            underlyingExternalAmount = convertToExternal(token, underlyingInternalAmount.add(1));
-        }
-    }
-
-    /// @notice Convenience method for getting the balance using a token object
-    function balanceOf(Token memory token, address account) internal view returns (uint256) {
-        if (token.tokenType == TokenType.Ether) {
-            return account.balance;
-        } else {
-            return IERC20(token.tokenAddress).balanceOf(account);
-        }
-    }
-
     function transferIncentive(address account, uint256 tokensToTransfer) internal {
-        GenericToken.safeTransferOut(Deployments.NOTE_TOKEN_ADDRESS, account, tokensToTransfer);
+        safeTransferOut(Constants.NOTE_TOKEN_ADDRESS, account, tokensToTransfer);
     }
 
-    /// @notice It is critical that this method measures and records the balanceOf changes before and after
-    /// every token change. If not, then external donations can affect the valuation of pCash and pDebt
-    /// tokens which may be exploitable.
-    /// @param redeemData parameters from the prime cash holding oracle
-    function executeMoneyMarketRedemptions(
-        Token memory underlyingToken,
-        RedeemData[] memory redeemData
-    ) internal returns (uint256 totalUnderlyingRedeemed) {
-        for (uint256 i; i < redeemData.length; i++) {
-            RedeemData memory data = redeemData[i];
-            // Measure the token balance change if the `assetToken` value is set in the
-            // current redemption data struct. 
-            uint256 oldAssetBalance = IERC20(data.assetToken).balanceOf(address(this));
+    function safeTransferOut(
+        address token,
+        address account,
+        uint256 amount
+    ) private {
+        IEIP20NonStandard(token).transfer(account, amount);
+        checkReturnCode();
+    }
 
-            // Measure the underlying balance change before and after the call.
-            uint256 oldUnderlyingBalance = balanceOf(underlyingToken, address(this));
-            
-            // Some asset tokens may require multiple calls to redeem if there is an unstake
-            // or redemption from WETH involved. We only measure the asset token balance change
-            // on the final redemption call, as dictated by the prime cash holdings oracle.
-            for (uint256 j; j < data.targets.length; j++) {
-                // This will revert if the individual call reverts.
-                GenericToken.executeLowLevelCall(data.targets[j], 0, data.callData[j]);
-            }
+    function safeTransferIn(
+        address token,
+        address account,
+        uint256 amount
+    ) private {
+        IEIP20NonStandard(token).transferFrom(account, address(this), amount);
+        checkReturnCode();
+    }
 
-            // Ensure that we get sufficient underlying on every redemption
-            uint256 newUnderlyingBalance = balanceOf(underlyingToken, address(this));
-            uint256 underlyingBalanceChange = newUnderlyingBalance.sub(oldUnderlyingBalance);
-            // If the call is not the final redemption, then expectedUnderlying should
-            // be set to zero.
-            require(data.expectedUnderlying <= underlyingBalanceChange);
-        
-            // Measure and update the asset token
-            uint256 newAssetBalance = IERC20(data.assetToken).balanceOf(address(this));
-            require(newAssetBalance <= oldAssetBalance);
-            updateStoredTokenBalance(data.assetToken, oldAssetBalance, newAssetBalance);
-
-            // Update the total value with the net change
-            totalUnderlyingRedeemed = totalUnderlyingRedeemed.add(underlyingBalanceChange);
-
-            // totalUnderlyingRedeemed is always positive or zero.
-            updateStoredTokenBalance(underlyingToken.tokenAddress, oldUnderlyingBalance, newUnderlyingBalance);
+    function checkReturnCode() private pure {
+        bool success;
+        uint256[1] memory result;
+        assembly {
+            switch returndatasize()
+                case 0 {
+                    // This is a non-standard ERC-20
+                    success := 1 // set success to true
+                }
+                case 32 {
+                    // This is a compliant ERC-20
+                    returndatacopy(result, 0, 32)
+                    success := mload(result) // Set `success = returndata` of external call
+                }
+                default {
+                    // This is an excessively non-compliant ERC-20, revert.
+                    revert(0, 0)
+                }
         }
-    }
 
-    function updateStoredTokenBalance(address token, uint256 oldBalance, uint256 newBalance) internal {
-        mapping(address => uint256) storage store = LibStorage.getStoredTokenBalances();
-        uint256 storedBalance = store[token];
-        // The stored balance must always be less than or equal to the previous balance of. oldBalance
-        // will be larger in the case when there is a donation or dust value present. If stored balance somehow
-        // goes above the oldBalance then there is a critical issue in the protocol.
-        require(storedBalance <= oldBalance);
-        int256 netBalanceChange = newBalance.toInt().sub(oldBalance.toInt());
-        store[token] = int256(storedBalance).add(netBalanceChange).toUint();
-    }
-
-    function _updateNetStoredTokenBalance(address token, int256 netBalanceChange) private {
-        mapping(address => uint256) storage store = LibStorage.getStoredTokenBalances();
-        uint256 storedBalance = store[token];
-        store[token] = int256(storedBalance).add(netBalanceChange).toUint();
+        require(success, "ERC20");
     }
 }

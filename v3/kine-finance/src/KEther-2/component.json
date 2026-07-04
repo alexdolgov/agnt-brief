@@ -1,0 +1,18 @@
+{
+  "component": "KEther-2",
+  "main_contract": "KEther",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa58e822de1517aae7114714fb354ee853cd35780",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

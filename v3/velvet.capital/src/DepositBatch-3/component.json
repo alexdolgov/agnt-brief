@@ -1,0 +1,21 @@
+{
+  "component": "DepositBatch-3",
+  "main_contract": "DepositBatch",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Velvet-Capital/audits/blob/main/Smart_Contract_Audit_Velvet_Capital_Corev3_13072024-1.pdf",
+    "https://github.com/Velvet-Capital/audits/blob/main/report.md"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x32c249c81a77cddc2bbecd91d95c833be178e3b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

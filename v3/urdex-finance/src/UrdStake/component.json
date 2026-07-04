@@ -1,0 +1,18 @@
+{
+  "component": "UrdStake",
+  "main_contract": "UrdStake",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfa21150479277ac4cd10ffa6d04b54041e08ccc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

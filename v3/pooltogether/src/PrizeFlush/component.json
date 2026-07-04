@@ -1,23 +1,23 @@
 {
   "component": "PrizeFlush",
   "main_contract": "PrizeFlush",
-  "source_file_count": 10,
+  "source_file_count": 7,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x1896ea3465b11c86c40c5cedd571c8457daff385",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2193b28b2bdfbf805506c9d91ed2021ba6fbc888",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x1b20994c3894ecc862e26a9f4ec626a8489dd051",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa2342489470474536f04cd4dda2e8658303b305d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

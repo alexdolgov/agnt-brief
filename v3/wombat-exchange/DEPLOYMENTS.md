@@ -1,16 +1,61 @@
 # wombat-exchange — deployments
 
-93 verified deployment(s) across 32 component(s).
+149 verified deployment(s) across 48 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x06228b709ed3c8344ae61e64b48204174d2e48b5` | Asset-6 | impl | live | no |
-| arbitrum | `0x1d15c46e75cc006490c356d29ff357a647918797` | GovernedPriceFeed-2 | impl | live | yes |
+| arbitrum | `0x06228b709ed3c8344ae61e64b48204174d2e48b5` | Asset | impl | live | no |
+| arbitrum | `0x0fa7b744f18d8e8c3d61b64b110f25cc27e73055` | Asset | impl | live | no |
+| arbitrum | `0x1d15c46e75cc006490c356d29ff357a647918797` | GovernedPriceFeed-3 | impl | live | yes |
+| arbitrum | `0x2290281060f2ce6bb73dccf9b1735bc366f3f2c4` | AnkrStakingAsset-2 | impl | live | no |
+| arbitrum | `0x2977b0b54a76c2b56d32cef19f8ea83cc766cfd9` | Asset | impl | live | no |
 | arbitrum | `0x2a20202a6f740200ba188f6d72fa72a08a346aaa` | PriceFeedAsset-2 | impl | live | yes |
-| arbitrum | `0x7b5eb3940021ec0e8e463d5dbb4b7b09a89ddf96` | BridgeToken | proxy | live | no |
+| arbitrum | `0x35876fd35cfe001c9ff20d96e9e3c40d21dc6563` | Asset-3 | impl | live | no |
+| arbitrum | `0x35c462b3396359cae6c5b40c24e0859b1f1bc6ac` | DynamicAsset-2 | impl | live | no |
+| arbitrum | `0x4552e884da00baceb30d86458460c24957e65c1f` | Asset | impl | live | no |
+| arbitrum | `0x4688300d46ef400c3506a165d5bdca6a51350978` | DynamicAsset-2 | impl | live | no |
+| arbitrum | `0x502a88ffceb9363befd1b1c78265fc3ac8abd3a2` | Asset | impl | live | no |
+| arbitrum | `0x59d8dca660b71ba97a16f781a40809a0fc350769` | Asset | impl | live | no |
+| arbitrum | `0x5ad0b68c8544d475ee73ffd4c8dfe7e273b01266` | Asset-4 | impl | live | no |
+| arbitrum | `0x6966553568634f4225330d559a8783de7649c7d3` | DynamicAsset-2 | impl | live | no |
+| arbitrum | `0x6add078996308547c57b052549a19c5f66bf42c8` | Asset | impl | live | no |
+| arbitrum | `0x6b7c9db425951543aa556b984869c50e6a18c7b2` | Asset | impl | live | no |
+| arbitrum | `0x75eaa804518a66196946598317aed57ef86235fe` | Asset | impl | live | no |
+| arbitrum | `0x7a8ce23c361a6a93ad8f443a31b20a8617d1a59a` | Asset | impl | live | no |
+| arbitrum | `0x7b5eb3940021ec0e8e463d5dbb4b7b09a89ddf96` | BridgeToken-4 | proxy | live | no |
+| arbitrum | `0x85cebd962861be410a777755dfa06914de6af003` | Asset | impl | live | no |
+| arbitrum | `0x87800497c0f2b565578a483e6ea06744f15ed525` | Asset-3 | impl | live | no |
+| arbitrum | `0x90971596f486521f496dc05faeb90837a5f19108` | DynamicAsset-3 | impl | live | no |
+| arbitrum | `0x9121af8b7bbdd76dc6f67051c417d007483c6be2` | Asset-5 | impl | live | no |
+| arbitrum | `0x9a24055af7dc84df05906acfbf5de694cd3e975d` | Asset-5 | impl | live | no |
+| arbitrum | `0xb1ad5c2573867e8157ded08d065fc761d606c3d9` | Asset | impl | live | no |
+| arbitrum | `0xb4beb0fdf0163a39d39b175942e7973da2c336fb` | Asset-4 | impl | live | no |
+| arbitrum | `0xb75ed91d1654e586015d72cabbc8f4b8b9aa0fd9` | Asset-4 | impl | live | no |
+| arbitrum | `0xbcd5e80dac3925416a8605b158cac3a2cc1ebd6e` | Asset-3 | impl | live | no |
+| arbitrum | `0xbcf4c3ac471686e4bf7bf2e38b2141ee1a47a661` | Asset-3 | impl | live | no |
+| arbitrum | `0xbd7568d25338940ba212e3f299d2ccc138fa35f0` | Asset-6 | impl | live | yes |
+| arbitrum | `0xc37a89cdb064ac2921fcc8b3538ac0d6a3aadf48` | GnosisSafeProxy-3 | proxy | live | no |
+| arbitrum | `0xc4b2f992496376c6127e73f1211450322e580668` | WombatRouter-4 | impl | live | no |
+| arbitrum | `0xc74a9d15037886ea357f0ef243c50010b11133cb` | Asset-4 | impl | live | no |
+| arbitrum | `0xdce5e19a3e313d8be0b9eadc6b911c37f2cf3816` | Asset-3 | impl | live | no |
+| arbitrum | `0xdddc78f940e012cfc1ad04de2ca089eb94900145` | Asset | impl | live | no |
+| arbitrum | `0xe5232c2837204ee66952f365f104c09140fb2e43` | Asset | impl | live | no |
+| arbitrum | `0xe62880cc6872c9e9fb1ddd73f400850fdabe798d` | DynamicAsset-2 | impl | live | no |
 | arbitrum | `0xeb7e2f8efac7ab8079837417b65cd927f05f7465` | WstETHAsset | impl | live | no |
-| avalanche | `0xa15e4544d141aa98c4581a1ea10eb9048c3b3382` | BridgeToken-2 | proxy | live | no |
+| arbitrum | `0xef9187a5f03b988326a79ebd21569a2319df2486` | Asset | impl | live | no |
+| arbitrum | `0xf4b72e9a18e4b7c65165e437c57ff6b6202e4505` | Asset | impl | live | no |
+| arbitrum | `0xf9c2356a21b60c0c4ddf2397f828dd158f82a274` | Asset-6 | impl | live | yes |
+| avalanche | `0x29eeb257a2a6ecde2984acedf80a1b687f18ec91` | DynamicAsset-4 | impl | live | no |
+| avalanche | `0x375883a1f801138b6f5ee953a7a11072129ac624` | Asset-3 | impl | live | no |
+| avalanche | `0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd` | WombatRouter | impl | live | no |
+| avalanche | `0xa15e4544d141aa98c4581a1ea10eb9048c3b3382` | BridgeToken-5 | proxy | live | no |
 | avalanche | `0xc096ff2606152ed2a06dd12f15a3c0466aa5a9fa` | sAVAXAsset | impl | live | no |
+| avalanche | `0xd05cf2bcaaee3a221e9efff58bf2874b9f11e47b` | Asset-3 | impl | live | no |
+| base | `0x375883a1f801138b6f5ee953a7a11072129ac624` | Asset-3 | impl | live | no |
+| base | `0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd` | WombatRouter | impl | live | no |
+| base | `0xd05cf2bcaaee3a221e9efff58bf2874b9f11e47b` | Asset-3 | impl | live | no |
+| base | `0xd9541b08b375d58ae104ec247d7443d2d7235d64` | BridgeToken-3 | proxy | live | no |
+| base | `0xe2a60c52c4abb9fbc3f711da3cb9e633269dbc67` | Asset-3 | impl | live | no |
 | bsc | `0x0321d1d769cc1e81ba21a157992b635363740f86` | DynamicAsset | impl | live | no |
 | bsc | `0x082059fd29672d59ce582176cf2cf6d0da8c9078` | DynamicAsset | impl | live | no |
 | bsc | `0x0e202a0bcad2712d1fdeeb94ec98c58beed0679f` | StkbnbAsset | impl | live | no |
@@ -19,9 +64,9 @@
 | bsc | `0x128fa2c0708bd0e357cd97eadaafa3bc9608228b` | AnkrStakingAsset | impl | live | no |
 | bsc | `0x16b37225889a038fad42efded462821224a509a7` | BnbxAsset | impl | live | no |
 | bsc | `0x17aded6d50d9f9311cee5c1746a0284f4d163500` | DynamicAsset | impl | live | no |
-| bsc | `0x184eb7dde8c00fad900120235b534aabc1d96f75` | Asset-3 | impl | live | no |
-| bsc | `0x19609b03c976cca288fbdae5c21d4290e9a4add7` | WombatRouter | impl | live | no |
-| bsc | `0x1f502ff26db12f8e41b373f36dc0abf2d7f6723e` | Asset-4 | impl | live | no |
+| bsc | `0x184eb7dde8c00fad900120235b534aabc1d96f75` | Asset-8 | impl | live | no |
+| bsc | `0x19609b03c976cca288fbdae5c21d4290e9a4add7` | WombatRouter-3 | impl | live | no |
+| bsc | `0x1f502ff26db12f8e41b373f36dc0abf2d7f6723e` | Asset-9 | impl | live | no |
 | bsc | `0x1fa71df4b344ffa5755726ea7a9a56fbbee0d38b` | DynamicAsset | impl | live | no |
 | bsc | `0x24a70c1489d521f5e2d2612474630efe7c2ba073` | DynamicAsset | impl | live | no |
 | bsc | `0x34e1091f0de867094a1164399e399feeff390b57` | DynamicAsset | impl | live | no |
@@ -44,12 +89,12 @@
 | bsc | `0x681124f5bdd9acda19d1721063254189903cd685` | DynamicAsset | impl | live | no |
 | bsc | `0x6b60066966080deab5090d6026cb134591a1cc95` | DynamicAsset | impl | live | no |
 | bsc | `0x6c7b407411b3db90dfa25da4aa66605438d378ce` | DynamicAsset | impl | live | no |
-| bsc | `0x74f019a5c4ed2c2950ce16fad7af838549092c5b` | Asset-5 | impl | live | no |
+| bsc | `0x74f019a5c4ed2c2950ce16fad7af838549092c5b` | Asset-10 | impl | live | no |
 | bsc | `0x77f645ee0c6d47380a942b04b8151fd542927391` | DynamicAsset | impl | live | no |
 | bsc | `0x791b2424df9865994ad570425278902e2b5d7946` | DynamicAsset | impl | live | no |
 | bsc | `0x7ff1aec17ea060bbcb7df6b8723f6ea7fc905e8f` | DynamicAsset | impl | live | no |
 | bsc | `0x87073ba87517e7ca981aae3636754bca95c120e4` | DynamicAsset | impl | live | no |
-| bsc | `0x88beb144352bd3109c79076202fac2bceab87117` | Asset-2 | impl | live | yes |
+| bsc | `0x88beb144352bd3109c79076202fac2bceab87117` | Asset-6 | impl | live | yes |
 | bsc | `0x8df8b50b73849f0433ee3314bd956e624e67b3ce` | DynamicAsset | impl | live | no |
 | bsc | `0x90f6f0e11ef071aecdbbca5ef01c2d630f2b5201` | DynamicAsset | impl | live | no |
 | bsc | `0x93012ad2367e247ca4275270cfc0bbcbf098abbc` | DynamicAsset | impl | live | no |
@@ -67,7 +112,7 @@
 | bsc | `0xb43ee2863370a56d3b7743edcd8407259100b8e2` | DynamicAsset | impl | live | no |
 | bsc | `0xb5c9368545a26b91d5f7340205e5d9559f48bcf8` | DynamicAsset | impl | live | no |
 | bsc | `0xb6d83f199b361403bda2c44712a77f55e7f8855f` | ABnbcAsset | impl | live | no |
-| bsc | `0xbd459e33307a4ae92fffcb45c6893084cfc273b1` | Asset-2 | impl | live | yes |
+| bsc | `0xbd459e33307a4ae92fffcb45c6893084cfc273b1` | Asset-6 | impl | live | yes |
 | bsc | `0xc37a89cdb064ac2921fcc8b3538ac0d6a3aadf48` | GnosisSafeProxy-2 | proxy | live | no |
 | bsc | `0xc496f42ea6fc72af434f48469b847a469fe0d17f` | StkbnbAsset-2 | impl | live | no |
 | bsc | `0xc74a9d15037886ea357f0ef243c50010b11133cb` | DynamicAsset | impl | live | no |
@@ -75,85 +120,36 @@
 | bsc | `0xcf434949c242c2d32514ba971947bd3700efb015` | DynamicAsset | impl | live | no |
 | bsc | `0xd55d010c647104e26e86d0cdd62deb48d487a521` | DynamicAsset | impl | live | no |
 | bsc | `0xd67edea100adc2aa8ae0b5cee7bf420ee17e5bb9` | DynamicAsset | impl | live | no |
-| bsc | `0xdd29f25a64eb824e1ff37948fd2485d9e073fa01` | GovernedPriceFeed | impl | live | no |
+| bsc | `0xdd29f25a64eb824e1ff37948fd2485d9e073fa01` | GovernedPriceFeed-2 | impl | live | no |
 | bsc | `0xdfde04743d88b58f36df1834bc0969dac9b2a9b3` | DynamicAsset | impl | live | no |
 | bsc | `0xe0e76388c852208fa3ef2ba6cd1b44b2eaba83ec` | DynamicAsset | impl | live | no |
 | bsc | `0xeaba290b154af45de72fdf2a40e56349e4e68ac2` | DynamicAsset | impl | live | no |
 | bsc | `0xf319947ece3823b790dd87b0a509396fe325745a` | DynamicAsset | impl | live | no |
 | bsc | `0xf9bdc872d75f76b946e0770f96851b1f2f653cac` | DynamicAsset | impl | live | no |
 | ethereum | `0x25c9dd8a3774ef7c918cd28ff59cf9e29504c914` | ERC4626Asset | impl | live | no |
+| ethereum | `0x3f90a5a47364c0467031fb00246192d40e3d2d9d` | Asset-4 | impl | live | no |
 | ethereum | `0x5781b4fe4fadb61ea2483eedd9498388f9b353b1` | GnosisSafeProxy | proxy | live | no |
-| optimism | `0x0321d1d769cc1e81ba21a157992b635363740f86` | Asset | impl | live | yes |
-| optimism | `0x12491142cbe5da821d9f08327bcbf881aded89d3` | Asset | impl | live | yes |
-| optimism | `0x20d7ee728900848752fa280fad51af40c47302f1` | Asset | impl | live | yes |
-| optimism | `0x2943f5d7428a8b9fc849e9c33fa46d32c272936e` | Asset | impl | live | yes |
+| ethereum | `0x5dace27d0b921b177cd9c6706c6acdeb3ec7bea7` | Asset-4 | impl | live | no |
+| ethereum | `0x6966553568634f4225330d559a8783de7649c7d3` | Asset-5 | impl | live | no |
+| ethereum | `0x6bb82a9b0b9b9716b885baeefdbe47b685a0f919` | WombatRouter-2 | impl | live | no |
+| ethereum | `0x752945079a0446aa7efb6e9e1789751cdd601c95` | Asset-5 | impl | live | no |
+| ethereum | `0xc0b314a8c08637685fc3dafc477b92028c540cfb` | BridgeToken | proxy | live | no |
+| optimism | `0x0321d1d769cc1e81ba21a157992b635363740f86` | Asset-2 | impl | live | yes |
+| optimism | `0x12491142cbe5da821d9f08327bcbf881aded89d3` | Asset-2 | impl | live | yes |
+| optimism | `0x20d7ee728900848752fa280fad51af40c47302f1` | Asset-2 | impl | live | yes |
+| optimism | `0x2943f5d7428a8b9fc849e9c33fa46d32c272936e` | Asset-2 | impl | live | yes |
+| optimism | `0x35d531fd45d5e3a5d407a4898360c757c98bdf79` | WombatRouter | impl | live | no |
 | optimism | `0x3ccc0dc754e380cda16ef94292f278bbc4ff463e` | ERC1967Upgrade | proxy | live | yes |
-| optimism | `0x49db5f5b460f41c0a4cd5751413236ba55523330` | Asset | impl | live | yes |
-| optimism | `0x8f5e6fd62b4385e74e35d2b93034dbbc353b62de` | Asset | impl | live | yes |
-| optimism | `0x96b1b2f764e90baf53fcbe149f157ded5f69f197` | Asset | impl | live | yes |
-| optimism | `0xe314d3cd7ccff1ba32aba52e4215fa338d7f9b2c` | Asset | impl | live | yes |
-| optimism | `0xe933e227315fea19a4130f65efff7a12f50f762e` | Asset | impl | live | yes |
-| optimism | `0xee9b42b40852a53c7361f527e638b485d49750cd` | Asset | impl | live | yes |
-| scroll | `0x010931d4d82ff3f5ae8bd94e0752570711f78959` | WombatRouter-2 | impl | live | yes |
+| optimism | `0x49db5f5b460f41c0a4cd5751413236ba55523330` | Asset-2 | impl | live | yes |
+| optimism | `0x8f5e6fd62b4385e74e35d2b93034dbbc353b62de` | Asset-2 | impl | live | yes |
+| optimism | `0x96b1b2f764e90baf53fcbe149f157ded5f69f197` | Asset-2 | impl | live | yes |
+| optimism | `0xb98ab93942d7614071f7c3af1f3b898214bc04af` | GovernedPriceFeed | impl | live | no |
+| optimism | `0xd2612b256f6f76fea8c6fbca0bf3166d0d13a668` | BridgeToken-2 | proxy | live | no |
+| optimism | `0xe314d3cd7ccff1ba32aba52e4215fa338d7f9b2c` | Asset-2 | impl | live | yes |
+| optimism | `0xe933e227315fea19a4130f65efff7a12f50f762e` | Asset-2 | impl | live | yes |
+| optimism | `0xee9b42b40852a53c7361f527e638b485d49750cd` | Asset-2 | impl | live | yes |
+| scroll | `0x010931d4d82ff3f5ae8bd94e0752570711f78959` | WombatRouter-5 | impl | live | yes |
 | scroll | `0x15dcc2da1a73194c9c5bb83ecda86251f0b1a17f` | OptimizedTransparentUpgradeableProxy | impl | unknown | no |
 | scroll | `0x80f088ae72db6d1ac337340cd6aa0eb1f67337ce` | OptimizedTransparentUpgradeableProxy | impl | unknown | no |
-
-## Source unavailable (56)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x0fa7b744f18d8e8c3d61b64b110f25cc27e73055`
-- arbitrum `0x2290281060f2ce6bb73dccf9b1735bc366f3f2c4`
-- arbitrum `0x2977b0b54a76c2b56d32cef19f8ea83cc766cfd9`
-- arbitrum `0x35876fd35cfe001c9ff20d96e9e3c40d21dc6563`
-- arbitrum `0x35c462b3396359cae6c5b40c24e0859b1f1bc6ac`
-- arbitrum `0x4552e884da00baceb30d86458460c24957e65c1f`
-- arbitrum `0x4688300d46ef400c3506a165d5bdca6a51350978`
-- arbitrum `0x502a88ffceb9363befd1b1c78265fc3ac8abd3a2`
-- arbitrum `0x59d8dca660b71ba97a16f781a40809a0fc350769`
-- arbitrum `0x5ad0b68c8544d475ee73ffd4c8dfe7e273b01266`
-- arbitrum `0x6966553568634f4225330d559a8783de7649c7d3`
-- arbitrum `0x6add078996308547c57b052549a19c5f66bf42c8`
-- arbitrum `0x6b7c9db425951543aa556b984869c50e6a18c7b2`
-- arbitrum `0x75eaa804518a66196946598317aed57ef86235fe`
-- arbitrum `0x7a8ce23c361a6a93ad8f443a31b20a8617d1a59a`
-- arbitrum `0x85cebd962861be410a777755dfa06914de6af003`
-- arbitrum `0x87800497c0f2b565578a483e6ea06744f15ed525`
-- arbitrum `0x90971596f486521f496dc05faeb90837a5f19108`
-- arbitrum `0x9121af8b7bbdd76dc6f67051c417d007483c6be2`
-- arbitrum `0x9a24055af7dc84df05906acfbf5de694cd3e975d`
-- arbitrum `0xb1ad5c2573867e8157ded08d065fc761d606c3d9`
-- arbitrum `0xb4beb0fdf0163a39d39b175942e7973da2c336fb`
-- arbitrum `0xb75ed91d1654e586015d72cabbc8f4b8b9aa0fd9`
-- arbitrum `0xbcd5e80dac3925416a8605b158cac3a2cc1ebd6e`
-- arbitrum `0xbcf4c3ac471686e4bf7bf2e38b2141ee1a47a661`
-- arbitrum `0xbd7568d25338940ba212e3f299d2ccc138fa35f0`
-- arbitrum `0xc37a89cdb064ac2921fcc8b3538ac0d6a3aadf48`
-- arbitrum `0xc4b2f992496376c6127e73f1211450322e580668`
-- arbitrum `0xc74a9d15037886ea357f0ef243c50010b11133cb`
-- arbitrum `0xdce5e19a3e313d8be0b9eadc6b911c37f2cf3816`
-- arbitrum `0xdddc78f940e012cfc1ad04de2ca089eb94900145`
-- arbitrum `0xe5232c2837204ee66952f365f104c09140fb2e43`
-- arbitrum `0xe62880cc6872c9e9fb1ddd73f400850fdabe798d`
-- arbitrum `0xef9187a5f03b988326a79ebd21569a2319df2486`
-- arbitrum `0xf4b72e9a18e4b7c65165e437c57ff6b6202e4505`
-- arbitrum `0xf9c2356a21b60c0c4ddf2397f828dd158f82a274`
-- avalanche `0x29eeb257a2a6ecde2984acedf80a1b687f18ec91`
-- avalanche `0x375883a1f801138b6f5ee953a7a11072129ac624`
-- avalanche `0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd`
-- avalanche `0xd05cf2bcaaee3a221e9efff58bf2874b9f11e47b`
-- base `0x375883a1f801138b6f5ee953a7a11072129ac624`
-- base `0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd`
-- base `0xd05cf2bcaaee3a221e9efff58bf2874b9f11e47b`
-- base `0xd9541b08b375d58ae104ec247d7443d2d7235d64`
-- base `0xe2a60c52c4abb9fbc3f711da3cb9e633269dbc67`
-- ethereum `0x3f90a5a47364c0467031fb00246192d40e3d2d9d`
-- ethereum `0x5dace27d0b921b177cd9c6706c6acdeb3ec7bea7`
-- ethereum `0x6966553568634f4225330d559a8783de7649c7d3`
-- ethereum `0x6bb82a9b0b9b9716b885baeefdbe47b685a0f919`
-- ethereum `0x752945079a0446aa7efb6e9e1789751cdd601c95`
-- ethereum `0xc0b314a8c08637685fc3dafc477b92028c540cfb`
-- optimism `0x35d531fd45d5e3a5d407a4898360c757c98bdf79`
-- optimism `0xb98ab93942d7614071f7c3af1f3b898214bc04af`
-- optimism `0xd2612b256f6f76fea8c6fbca0bf3166d0d13a668`
-- scroll `0xe2a60c52c4abb9fbc3f711da3cb9e633269dbc67`
-- scroll `0xe43c1695df76cca4d6079061924d7150fd553c21`
+| scroll | `0xe2a60c52c4abb9fbc3f711da3cb9e633269dbc67` | Asset-7 | impl | live | no |
+| scroll | `0xe43c1695df76cca4d6079061924d7150fd553c21` | Asset-7 | impl | live | no |

@@ -1,0 +1,18 @@
+{
+  "component": "DrawManager-3",
+  "main_contract": "DrawManager",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7e8e79eb264b42dcba887047f40b6db12c4f0940",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

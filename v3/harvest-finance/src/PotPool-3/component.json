@@ -1,17 +1,23 @@
 {
   "component": "PotPool-3",
   "main_contract": "PotPool",
-  "source_file_count": 14,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/harvestfi/audits/blob/main/Halborn-Harvest-2025.pdf"
-  ],
+  "source_file_count": 16,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x079158beca3c0ee6ae44b43357c6317e339ddc69",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x68b2fc1566f411c1af8ff5bfda3dd4f3f3e59d03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8f0d40c95047c6b09f08905c110d002e65e96c7d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

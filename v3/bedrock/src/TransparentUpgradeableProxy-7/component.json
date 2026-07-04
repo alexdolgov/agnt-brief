@@ -1,20 +1,34 @@
 {
   "component": "TransparentUpgradeableProxy-7",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 12,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf"
-  ],
+  "source_file_count": 21,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1419b48e5c1f5ce413cf02d6dcbe1314170e3386",
-      "is_proxy": true,
-      "implementation_address": "0xc7d81a22b384e4bbe6cc3a860e246501728334c7",
-      "liveness": "live"
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe1061f0d0a2aaf273dc9e2077e8545417b838a8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd4b6b3a3d0ec23de1f0674a7bd7d667f224a7509",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xa93322a98335b791df87f20bb939fbe4d84ffadd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

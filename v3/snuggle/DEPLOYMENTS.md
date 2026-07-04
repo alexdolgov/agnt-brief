@@ -1,6 +1,6 @@
 # snuggle — deployments
 
-130 verified deployment(s) across 59 component(s).
+147 verified deployment(s) across 66 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -42,6 +42,7 @@
 | arbitrum | `0x3eee90c983e2728ae6d7880064b0c5b055342c46` | FarmingCenter | impl | inactive | no |
 | arbitrum | `0x40822950decff42a590e577fcb0b39b3fdea716f` | KeepersHelper | impl | live | no |
 | arbitrum | `0x413ca90d38d964546c2fe03cb103df57372630f6` | SnuggleVaultUpgradeable | proxy | live | no |
+| arbitrum | `0x427bf5b37357632377ecbec9de3626c71a5396c1` | ProxyAdmin-3 | impl | live | no |
 | arbitrum | `0x438a2b1c6c715fb1b051c04ca65755560d8b8d43` | DutchAuction | impl | inactive | no |
 | arbitrum | `0x45405901ab9cba6b4a4e60e0c191819bbcd7d3f4` | SnuggleVaultAdminSatellite | impl | live | no |
 | arbitrum | `0x46a15b0b27311cedf172ab29e4f4766fbe7f4364` | NonfungiblePositionManager | proxy | inactive | no |
@@ -58,6 +59,7 @@
 | arbitrum | `0x653658ddb7e4a7a69f0fa4c020f1e7e60732d540` | AlgebraVaultFactoryStub | impl | inactive | no |
 | arbitrum | `0x66d756335bff276d73a8ab0853c3d336475e639b` | QuoterV2 | impl | inactive | no |
 | arbitrum | `0x674d0794c32f061eeef5ee981fa3b0ee3be7a7ef` | TransparentUpgradeableProxy | impl | inactive | no |
+| arbitrum | `0x6915b555dd117a901b400ccd3fb4aefa1101cd00` | ReferralTracker | impl | live | no |
 | arbitrum | `0x6af9c538137c73d6a078788c59232424788d19a8` | PancakeSwapRewardAdapter | impl | live | yes |
 | arbitrum | `0x6b692b588def775a92a6d0f3b6cccc8a4a4e5bb8` | AlgebraFactory | impl | inactive | no |
 | arbitrum | `0x6c78f25cc4fdff99d0c88aab75b3b6e50fbbc0bd` | Quoter | impl | inactive | no |
@@ -66,6 +68,7 @@
 | arbitrum | `0x71b55e366a0f43260b1138a32c312ba7bb7f30f7` | KeepersHelper | impl | live | no |
 | arbitrum | `0x7603a35af5cf10b113f167d424eb75bb7062c8ce` | BatchAuction | impl | inactive | no |
 | arbitrum | `0x76bdb43d2ec3b190087076649224f47a58c44ef2` | UniswapV3Adapter | impl | live | yes |
+| arbitrum | `0x78bb36003d01ac8449b88150608d9f8dffbd4589` | PancakeSwapPositionAdapter-2 | impl | live | no |
 | arbitrum | `0x80c7dd17b01855a6d2347444a0fcc36136a314de` | Multicall2-2 | impl | live | no |
 | arbitrum | `0x827179dd56d07a7eea32e3873493835da2866976` | ConstantProductPoolFactoryHelper | impl | inactive | no |
 | arbitrum | `0x8516944e89f296eb6473d79aed1ba12088016c9e` | TickLens | impl | inactive | no |
@@ -73,10 +76,12 @@
 | arbitrum | `0x89aee07e1dbafc82f089b45ffc763738e9fff226` | AlgebraPoolDeployer | impl | inactive | no |
 | arbitrum | `0x8b3a7989ae94dcf06abe07f5b4b95c63b603ef9f` | SnuggleHedgeHelper | impl | live | no |
 | arbitrum | `0x8b5665ba77ca4e98ba96412061276ad2adca6f15` | AlgebraPoolDeployer | impl | inactive | no |
+| arbitrum | `0x8bca45df8659debdffb4baca911a5b9c84e037df` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x8c7d966b6bee480bf96b41870ccb89559ac176f6` | TreasurySplitter | impl | live | yes |
 | arbitrum | `0x903293c1e922a72a95a69c61ede74073c8594c13` | TransparentUpgradeableProxy-2 | impl | live | no |
 | arbitrum | `0x96e04591579f298681361c6122dc4ef405c19385` | NonfungibleTokenPositionDescriptor | impl | inactive | no |
 | arbitrum | `0x971ba90018c44ac60d5bb850249b3ec02a3a5e5a` | AlgebraCommunityVault | impl | inactive | no |
+| arbitrum | `0x999a74ddfde1575c4db454a0300d5f0351a891de` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x9a489505a00ce272eaa5e07dba6491314cae3796` | TickLens | impl | inactive | no |
 | arbitrum | `0x9a8ddc2f8b998de00f7028bd0881bde028aed592` | AlgebraFactory | impl | inactive | no |
 | arbitrum | `0x9b7a7c93db745d5f6c679eeda7dd15ccd638c063` | Quoter | impl | inactive | no |
@@ -95,6 +100,7 @@
 | arbitrum | `0xb048bbc1ee6b733fffcfb9e9cef7375518e25997` | QuoterV2-2 | impl | live | no |
 | arbitrum | `0xb099b459887bc759dbf0293e12d3dfcd0c456cff` | TransparentUpgradeableProxy-3 | impl | inactive | no |
 | arbitrum | `0xb1364a423e9b011fd102ffc5011abc158dfeada7` | SnuggleHedgeHelper | impl | live | no |
+| arbitrum | `0xb52cca444e459ae8b2d0a6e29df01204e9e4705e` | ReferralTracker | impl | live | no |
 | arbitrum | `0xb668e7701bc5580368cce375da83a09e1f69f7c9` | PancakeSwapRewardAdapter | impl | live | yes |
 | arbitrum | `0xbc203d7f83677c7ed3f7acec959963e7f4ecc5c2` | V3Migrator | impl | inactive | no |
 | arbitrum | `0xbf1849090b659505a0d7a75fead3068020aea3ef` | AlgebraCustomPoolEntryPoint | impl | inactive | no |
@@ -121,6 +127,7 @@
 | arbitrum | `0xf09c0892885ba43d4ba29be7388fc145a174af8d` | AlgebraPoolDeployer | impl | inactive | no |
 | arbitrum | `0xf0cbce1942a68beb3d1b73f0dd86c8dcc363ef49` | NonfungiblePositionManager | proxy | inactive | no |
 | arbitrum | `0xf0e1f962e3e6d8e2af8190b2798c1b4f018fe48d` | MasterDeployer | impl | inactive | no |
+| arbitrum | `0xf20bc2825e015be66d26b27ee82988fd4f2b84d9` | PancakeSwapPositionAdapter-2 | impl | live | no |
 | arbitrum | `0xf41599ffc71518fd4411941439dae7dee27020f9` | NonfungiblePositionManager | impl | inactive | no |
 | arbitrum | `0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3` | MiniChefV2 | impl | inactive | no |
 | arbitrum | `0xfc506aaa1340b4dedffd88be278bee058952d674` | RouteProcessor3 | impl | inactive | no |
@@ -128,30 +135,19 @@
 | arbitrum | `0xff7da61e7037378da1baf3d40ba8e6e47dfb3a62` | NonfungiblePositionManager-2 | impl | inactive | no |
 | base | `0x0aedeed5ad8d45d3d928fb872161efaa559794d1` | AerodromePositionAdapter | impl | live | yes |
 | base | `0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5` | PancakeSwapPositionAdapter | impl | live | yes |
-| base | `0x2536a771111861bc0be61bd986f0c2dc0f68d9ee` | ReferralTracker | impl | live | yes |
-| base | `0x269dc2f974abed1c7a55a447758fcaef2dcca86f` | ProxyAdmin | impl | live | yes |
+| base | `0x2536a771111861bc0be61bd986f0c2dc0f68d9ee` | ReferralTracker-2 | impl | live | yes |
+| base | `0x269dc2f974abed1c7a55a447758fcaef2dcca86f` | ProxyAdmin-2 | impl | live | yes |
+| base | `0x286490622bcc7261c0ce794b7166dc67d3ce18bd` | ViewHelper | impl | live | yes |
+| base | `0x298028007e2aeb04d787c8a8bfa03144cc976a1c` | ViewHelper | impl | live | yes |
+| base | `0x3f928dc834029e90b149269e1244bb85cca270c1` | StakingManager | impl | live | yes |
+| base | `0x5a332caa3212a1785f64f6bdcb34c727efe4d271` | SnuggleVaultAdminSatellite | impl | live | no |
+| base | `0x60431b5b580516817f095534d6d1e3552f563345` | KeepersHelper-2 | impl | live | no |
+| base | `0x613ba880f7695ecba0a3dcad76f99781be28b1f3` | FeeTransferHelper | impl | live | yes |
+| base | `0x63de143eae0f6dfddb3f91110e0db8375918b1cf` | PancakeSwapRewardAdapter-2 | impl | live | no |
+| base | `0x93d0d1216a613ad8745f9320bcb25dc04ea9ec12` | TreasurySplitter-2 | impl | live | no |
 | base | `0xad35ec92507566fc19581ab43a8ec9c6edbf0a71` | PancakeSwapPositionAdapter | impl | live | yes |
+| base | `0xca4cf963c71234a4f7d44a750b4d3847b4debabd` | UniswapV3Adapter | impl | live | yes |
 | base | `0xcb16cb2cd32768c65418b22385888bd2c8d77306` | AerodromeRewardAdapter | impl | live | yes |
 | base | `0xe3efa7825b7ace81fa2621d892d95e0048f79589` | AerodromePositionAdapter | impl | live | yes |
+| base | `0xf757c96463cb5588dc7d8eba464c947b08f33010` | UniswapV3Adapter | impl | live | yes |
 | base | `0xf84b575e4e6d9fc07a3f2b863cb6a23cc11dcddc` | FeeTransferHelper-2 | impl | live | yes |
-
-## Source unavailable (17)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x427bf5b37357632377ecbec9de3626c71a5396c1`
-- arbitrum `0x6915b555dd117a901b400ccd3fb4aefa1101cd00`
-- arbitrum `0x78bb36003d01ac8449b88150608d9f8dffbd4589`
-- arbitrum `0x8bca45df8659debdffb4baca911a5b9c84e037df`
-- arbitrum `0x999a74ddfde1575c4db454a0300d5f0351a891de`
-- arbitrum `0xb52cca444e459ae8b2d0a6e29df01204e9e4705e`
-- arbitrum `0xf20bc2825e015be66d26b27ee82988fd4f2b84d9`
-- base `0x286490622bcc7261c0ce794b7166dc67d3ce18bd`
-- base `0x298028007e2aeb04d787c8a8bfa03144cc976a1c`
-- base `0x3f928dc834029e90b149269e1244bb85cca270c1`
-- base `0x5a332caa3212a1785f64f6bdcb34c727efe4d271`
-- base `0x60431b5b580516817f095534d6d1e3552f563345`
-- base `0x613ba880f7695ecba0a3dcad76f99781be28b1f3`
-- base `0x63de143eae0f6dfddb3f91110e0db8375918b1cf`
-- base `0x93d0d1216a613ad8745f9320bcb25dc04ea9ec12`
-- base `0xca4cf963c71234a4f7d44a750b4d3847b4debabd`
-- base `0xf757c96463cb5588dc7d8eba464c947b08f33010`

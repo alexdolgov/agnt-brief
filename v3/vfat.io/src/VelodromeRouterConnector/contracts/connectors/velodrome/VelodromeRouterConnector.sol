@@ -17,7 +17,7 @@ struct VelodromeLiquidityExtraData {
 contract VelodromeRouterConnector is ILiquidityConnector {
     function addLiquidity(
         AddLiquidityParams memory addLiquidityParams
-    ) external payable override {
+    ) external override {
         VelodromeLiquidityExtraData memory _extraData = abi.decode(
             addLiquidityParams.extraData, (VelodromeLiquidityExtraData)
         );

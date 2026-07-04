@@ -133,3 +133,7 @@ contract MainSecondaryInterestModel is InterestRateModelV2 {
 contract CakeLikeInterestModel is InterestRateModelV2 {
     constructor(uint256 _blocksPerYear) public InterestRateModelV2(0, 0.65e18, 0.07e18, 1.2e18, _blocksPerYear) {}
 }
+
+contract ETHLikeInterestModel is InterestRateModelV2 {
+    constructor(uint256 _blocksPerYear) public InterestRateModelV2(0, 0.7e18, 0.03e18, 0.25e18, _blocksPerYear) {}
+}

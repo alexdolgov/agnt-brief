@@ -35,8 +35,10 @@ contract Market is ERC20 {
 
     address public subject;
 
+    receive() external payable {}
+
     function init(address _subject) external {
-        if(subject != address(0)) {
+        if (subject != address(0)) {
             revert MarketAlreadyInitialized(subject);
         }
 
@@ -54,18 +56,20 @@ contract Market is ERC20 {
     function mint(address to, uint256 amount) external payable {
         market.buyShares{value: msg.value}(subject, amount);
 
-        amount = amount * 10**decimals();
+        amount = amount * 10 ** decimals();
         _mint(to, amount);
 
         emit Mint(to, amount);
     }
 
     function burn(address from, uint256 amount) external {
-        amount = amount / 10**decimals();
+        uint256 whole = amount / 10 ** decimals();
+        amount = whole * (10 ** decimals());
+
         _burn(from, amount);
 
-        uint256 sellPrice = market.getSellPriceAfterFee(subject, amount);
-        market.sellShares(subject, amount);
+        uint256 sellPrice = market.getSellPriceAfterFee(subject, whole);
+        market.sellShares(subject, whole);
 
         SafeTransferLib.safeTransferETH(msg.sender, sellPrice);
         emit Burn(from, amount);
@@ -92,14 +96,10 @@ contract MarketFactory {
             revert MarketAlreadyExists(subject, markets[subject]);
         }
 
-        market = Market(LibClone.clone(address(implementation)));
+        market = Market(payable(LibClone.clone(address(implementation))));
         market.init(subject);
         markets[subject] = market;
 
         emit MarketCreated(market);
-    }
-
-    function get(address subject) external view returns (Market) {
-        return markets[subject];
     }
 }

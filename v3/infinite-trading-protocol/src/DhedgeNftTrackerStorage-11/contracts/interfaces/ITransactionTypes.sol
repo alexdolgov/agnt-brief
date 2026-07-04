@@ -118,6 +118,7 @@ interface ITransactionTypes {
     FluidLendingDeposit, // 108
     FluidLendingWithdraw, // 109
     BuyPendlePT, // 110
-    SellPendlePT // 111
+    SellPendlePT, // 111
+    AaveSetEfficiencyMode // 112
   }
 }

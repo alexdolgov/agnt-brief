@@ -1,0 +1,18 @@
+{
+  "component": "PTLinearOracleFactory-3",
+  "main_contract": "PTLinearOracleFactory",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x28fcf0ee030bc6eb8897943acec9834628965449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

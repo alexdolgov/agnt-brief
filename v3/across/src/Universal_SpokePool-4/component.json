@@ -1,0 +1,42 @@
+{
+  "component": "Universal_SpokePool-4",
+  "main_contract": "Universal_SpokePool",
+  "source_file_count": 49,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x129b61ce378b2b4b5ebeac648019e2427b74527e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xbbc6009feffc27ce705322832cb2068f8c1e0a58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xd2aa779253c0ab194d8c3e6708e5eb4697f13941",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xefd7ee5fc0bc42e41d800c4d9db912bc42a4530f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

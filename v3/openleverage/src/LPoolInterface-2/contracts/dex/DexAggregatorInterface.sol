@@ -2,6 +2,7 @@
 
 pragma solidity 0.7.6;
 pragma experimental ABIEncoderV2;
+import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol";
 
 interface DexAggregatorInterface {
 
@@ -9,11 +10,11 @@ interface DexAggregatorInterface {
 
     function sellMul(uint sellAmount, uint minBuyAmount, bytes memory data) external returns (uint buyAmount);
 
-    function buy(address buyToken, address sellToken, uint buyAmount, uint maxSellAmount, bytes memory data) external returns (uint sellAmount);
+    function buy(address buyToken, address sellToken, uint24 buyTax, uint24 sellTax, uint buyAmount, uint maxSellAmount, bytes memory data) external returns (uint sellAmount);
 
-    function calBuyAmount(address buyToken, address sellToken, uint sellAmount, bytes memory data) external view returns (uint);
+    function calBuyAmount(address buyToken, address sellToken, uint24 buyTax, uint24 sellTax, uint sellAmount, bytes memory data) external view returns (uint);
 
-    function calSellAmount(address buyToken, address sellToken, uint buyAmount, bytes memory data) external view returns (uint);
+    function calSellAmount(address buyToken, address sellToken, uint24 buyTax, uint24 sellTax, uint buyAmount, bytes memory data) external view returns (uint);
 
     function getPrice(address desToken, address quoteToken, bytes memory data) external view returns (uint256 price, uint8 decimals);
 
@@ -25,4 +26,6 @@ interface DexAggregatorInterface {
     function updatePriceOracle(address desToken, address quoteToken, uint32 timeWindow, bytes memory data) external returns(bool);
 
     function updateV3Observation(address desToken, address quoteToken, bytes memory data) external;
+
+    function setDexInfo(uint8[] memory dexName, IUniswapV2Factory[] memory factoryAddr, uint16[] memory fees) external;
 }

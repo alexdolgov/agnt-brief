@@ -2,10 +2,18 @@
   "component": "UniformStrategy",
   "main_contract": "UniformStrategy",
   "source_file_count": 8,
-  "deployment_count": 89,
+  "deployment_count": 92,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcc5a96fd169ebd7a3a447821061348b6c3f431f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-130",
       "chain_id": 130,
@@ -714,6 +722,22 @@
       "chain": "chain-130",
       "chain_id": 130,
       "address": "0xfc95cf41de406938ba4e47e67e8c84b90099bc7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd0f38ad878d335dcf29e50f2fe42d8424760b2be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x73c53d4976663563c6d6d779c74a5ab155314c4a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

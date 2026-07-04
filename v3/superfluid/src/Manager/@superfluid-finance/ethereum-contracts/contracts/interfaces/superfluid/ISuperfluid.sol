@@ -1,45 +1,22 @@
-// SPDX-License-Identifier: MIT
-pragma solidity >= 0.8.11;
+// SPDX-License-Identifier: AGPLv3
+pragma solidity >= 0.8.4;
 
-// ISuperfluid.sol can also be used as an umbrella-import for everything Superfluid, hence we should have these unused
-// import.
-//
-// solhint-disable no-unused-import
-
-/// Global definitions
-import {
-    SuperAppDefinitions,
-    ContextDefinitions,
-    FlowOperatorDefinitions,
-    BatchOperation,
-    SuperfluidGovernanceConfigs
-} from "./Definitions.sol";
-/// Super token related interfaces:
-/// Note: CustomSuperTokenBase is not included for people building CustomSuperToken.
-import { IERC20, IERC20Metadata } from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import { IERC777 } from "@openzeppelin/contracts/token/ERC777/IERC777.sol";
-import { IAccessControl } from "@openzeppelin/contracts/access/IAccessControl.sol";
+import { ISuperfluidGovernance } from "./ISuperfluidGovernance.sol";
 import { ISuperfluidToken } from "./ISuperfluidToken.sol";
 import { ISuperToken } from "./ISuperToken.sol";
 import { ISuperTokenFactory } from "./ISuperTokenFactory.sol";
-import { ISETH } from "../tokens/ISETH.sol";
-/// Superfluid/ERC20x NFTs
-import { IPoolAdminNFT } from "../agreements/gdav1/IPoolAdminNFT.sol";
-/// Superfluid agreement interfaces:
 import { ISuperAgreement } from "./ISuperAgreement.sol";
-import { IConstantFlowAgreementV1 } from "../agreements/IConstantFlowAgreementV1.sol";
-import { IInstantDistributionAgreementV1 } from "../agreements/IInstantDistributionAgreementV1.sol";
-import {
-    IGeneralDistributionAgreementV1,
-    PoolConfig,
-    PoolERC20Metadata
-} from "../agreements/gdav1/IGeneralDistributionAgreementV1.sol";
-import { ISuperfluidPool } from "../agreements/gdav1/ISuperfluidPool.sol";
-/// Superfluid App interfaces:
 import { ISuperApp } from "./ISuperApp.sol";
-/// Superfluid governance
-import { ISuperfluidGovernance } from "./ISuperfluidGovernance.sol";
-
+import {
+    BatchOperation,
+    ContextDefinitions,
+    FlowOperatorDefinitions,
+    SuperAppDefinitions,
+    SuperfluidGovernanceConfigs
+} from "./Definitions.sol";
+import { TokenInfo } from "../tokens/TokenInfo.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import { IERC777 } from "@openzeppelin/contracts/token/ERC777/IERC777.sol";
 
 /**
  * @title Host interface
@@ -71,19 +48,20 @@ interface ISuperfluid {
     error HOST_AGREEMENT_IS_NOT_REGISTERED();                   // 0x1c9e9bea
     error HOST_MUST_BE_CONTRACT();                              // 0xd4f6b30c
     error HOST_ONLY_LISTED_AGREEMENT();                         // 0x619c5359
-    error HOST_NEED_MORE_GAS();                                 // 0xd4f5d496
 
     // App Related Custom Errors
     // uses SuperAppDefinitions' App Jail Reasons as _code
     error APP_RULE(uint256 _code);                              // 0xa85ba64f
 
+    error HOST_INVALID_OR_EXPIRED_SUPER_APP_REGISTRATION_KEY(); // 0x19ab84d1
     error HOST_NOT_A_SUPER_APP();                               // 0x163cbe43
-    error HOST_NO_APP_REGISTRATION_PERMISSION();                // 0xb56455f0
+    error HOST_NO_APP_REGISTRATION_PERMISSIONS();               // 0x5b93ebf0
     error HOST_RECEIVER_IS_NOT_SUPER_APP();                     // 0x96aa315e
     error HOST_SENDER_IS_NOT_SUPER_APP();                       // 0xbacfdc40
     error HOST_SOURCE_APP_NEEDS_HIGHER_APP_LEVEL();             // 0x44725270
     error HOST_SUPER_APP_IS_JAILED();                           // 0x02384b64
     error HOST_SUPER_APP_ALREADY_REGISTERED();                  // 0x01b0a935
+    error HOST_UNAUTHORIZED_SUPER_APP_FACTORY();                // 0x289533c5
 
     /**************************************************************************
      * Time
@@ -124,7 +102,7 @@ interface ISuperfluid {
      * @dev Register a new agreement class to the system
      * @param agreementClassLogic Initial agreement class code
      *
-     * @custom:modifiers
+     * @custom:modifiers 
      * - onlyGovernance
      */
     function registerAgreementClass(ISuperAgreement agreementClassLogic) external;
@@ -140,7 +118,7 @@ interface ISuperfluid {
     * @dev Update code of an agreement class
     * @param agreementClassLogic New code for the agreement class
     *
-    * @custom:modifiers
+    * @custom:modifiers 
     *  - onlyGovernance
     */
     function updateAgreementClass(ISuperAgreement agreementClassLogic) external;
@@ -223,61 +201,28 @@ interface ISuperfluid {
     event SuperTokenFactoryUpdated(ISuperTokenFactory newFactory);
 
     /**
-     * @notice Update the super token logic to the latest (canonical) implementation
-     * if `newLogicOverride` is zero, or to `newLogicOverride` otherwise.
-     * or to the provided implementation `.
+     * @notice Update the super token logic to the latest
      * @dev Refer to ISuperTokenFactory.Upgradability for expected behaviours
      */
-    function updateSuperTokenLogic(ISuperToken token, address newLogicOverride) external;
+    function updateSuperTokenLogic(ISuperToken token) external;
     /**
-     * @notice Update the super token logic to the provided one
-     * @dev newLogic must implement UUPSProxiable with matching proxiableUUID
+     * @dev SuperToken logic updated event
+     * @param code Address of the new SuperToken logic
      */
     event SuperTokenLogicUpdated(ISuperToken indexed token, address code);
-
-    /**
-     * @notice Change the SuperToken admin address
-     * @dev The admin is the only account allowed to update the token logic
-     * For backward compatibility, the "host" is the default "admin" if unset (address(0)).
-     */
-    function changeSuperTokenAdmin(ISuperToken token, address newAdmin) external;
-
-    /**
-     * @notice Change the implementation address the pool beacon points to
-     * @dev Updating the logic the beacon points to will update the logic of all the Pool BeaconProxy instances
-     */
-    function updatePoolBeaconLogic(address newBeaconLogic) external;
-
-    /**
-     * @dev Pool Beacon logic updated event
-     * @param beaconProxy addrss of the beacon proxy
-     * @param newBeaconLogic address of the new beacon logic
-     */
-    event PoolBeaconLogicUpdated(address indexed beaconProxy, address newBeaconLogic);
 
     /**************************************************************************
      * App Registry
      *************************************************************************/
 
     /**
-     * @dev Message sender (must be a contract) registers itself as a super app.
+     * @dev Message sender (must be a contract) declares itself as a super app.
+     * @custom:deprecated you should use `registerAppWithKey` or `registerAppByFactory` instead,
+     * because app registration is currently governance permissioned on mainnets.
      * @param configWord The super app manifest configuration, flags are defined in
      * `SuperAppDefinitions`
-     * @notice On some mainnet deployments, pre-authorization by governance may be needed for this to succeed.
-     * See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide
      */
     function registerApp(uint256 configWord) external;
-
-    /**
-     * @dev Registers an app (must be a contract) as a super app.
-     * @param app The super app address
-     * @param configWord The super app manifest configuration, flags are defined in
-     * `SuperAppDefinitions`
-     * @notice On some mainnet deployments, pre-authorization by governance may be needed for this to succeed.
-     * See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide
-     */
-    function registerApp(ISuperApp app, uint256 configWord) external;
-
     /**
      * @dev App registered event
      * @param app Address of jailed app
@@ -285,14 +230,21 @@ interface ISuperfluid {
     event AppRegistered(ISuperApp indexed app);
 
     /**
-     * @dev DO NOT USE for new deployments
-     * @custom:deprecated you should use `registerApp(uint256 configWord) instead.
+     * @dev Message sender declares itself as a super app.
+     * @param configWord The super app manifest configuration, flags are defined in `SuperAppDefinitions`
+     * @param registrationKey The registration key issued by the governance, needed to register on a mainnet.
+     * @notice See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide
+     * On testnets or in dev environment, a placeholder (e.g. empty string) can be used.
+     * While the message sender must be the super app itself, the transaction sender (tx.origin)
+     * must be the deployer account the registration key was issued for.
      */
     function registerAppWithKey(uint256 configWord, string calldata registrationKey) external;
 
     /**
-     * @dev DO NOT USE for new deployments
-     * @custom:deprecated you should use `registerApp(ISuperApp app, uint256 configWord) instead.
+     * @dev Message sender (must be a contract) declares app as a super app
+     * @param configWord The super app manifest configuration, flags are defined in `SuperAppDefinitions`
+     * @notice On mainnet deployments, only factory contracts pre-authorized by governance can use this.
+     * See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide
      */
     function registerAppByFactory(ISuperApp app, uint256 configWord) external;
 
@@ -567,9 +519,9 @@ interface ISuperfluid {
         // app credit used, allowing negative values over a callback session
         // the appCreditUsed value over a callback sessions is calculated with:
         // existing flow data owed deposit + sum of the callback agreements
-        // deposit deltas
+        // deposit deltas 
         // the final value used to modify the state is determined by the
-        // _adjustNewAppCreditUsed function (in AgreementLibrary.sol) which takes
+        // _adjustNewAppCreditUsed function (in AgreementLibrary.sol) which takes 
         // the appCreditUsed value reached in the callback session and the app
         // credit granted
         int256 appCreditUsed;
@@ -624,52 +576,14 @@ interface ISuperfluid {
     /**
      * @dev Batch call function
      * @param operations Array of batch operations
-     *
-     * NOTE: `batchCall` is `payable, because there's limited support for sending
-     * native tokens to batch operation targets.
-     * If value is > 0, the whole amount is sent to the first operation matching any of:
-     * - OPERATION_TYPE_SUPERFLUID_CALL_APP_ACTION
-     * - OPERATION_TYPE_SIMPLE_FORWARD_CALL
-     * - OPERATION_TYPE_ERC2771_FORWARD_CALL
-     * If the first such operation does not allow receiving native tokens,
-     * the transaction will revert.
-     * It's currently not possible to send native tokens to multiple operations, or to
-     * any but the first operation of one of the above mentioned types.
-     * If no such operation is included, the native tokens will be sent back to the sender.
      */
-    function batchCall(Operation[] calldata operations) external payable;
+    function batchCall(Operation[] calldata operations) external;
 
     /**
-     * @dev Batch call function with EIP-2771 encoded msgSender
+     * @dev Batch call function for trusted forwarders (EIP-2771)
      * @param operations Array of batch operations
-     *
-     * NOTE: This can be called only by contracts recognized as _trusted forwarder_
-     * by the host contract (see `Superfluid.isTrustedForwarder`).
-     * If native tokens are passed along, the same rules as for `batchCall` apply,
-     * with an optional refund going to the encoded msgSender.
      */
-    function forwardBatchCall(Operation[] calldata operations) external payable;
-
-    /**
-     * @dev returns the address of the forwarder contract used to route batch operations of type
-     * OPERATION_TYPE_ERC2771_FORWARD_CALL.
-     * Needs to be set as _trusted forwarder_ by the call targets of such operations.
-     */
-    // solhint-disable func-name-mixedcase
-    function getERC2771Forwarder() external view returns(address);
-
-    // solhint-disable max-line-length
-    /**
-     * @dev returns the SimpleACL contract (currently used for SuperApp registration permissioning).
-     * That contract implements the interface [IAccessControl](https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl),
-     * which provides the following functions:
-     * - [hasRole(role, account)](https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-hasRole-bytes32-address-)
-     * - [getRoleAdmin(role)](https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-getRoleAdmin-bytes32-)
-     * - [grantRole(role, account)](https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-grantRole-bytes32-address-)
-     * - [revokeRole(role, account)](https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-revokeRole-bytes32-address-)
-     * - [renounceRole(role, account)](https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-renounceRole-bytes32-address-)
-     */
-    function getSimpleACL() external view returns(IAccessControl);
+    function forwardBatchCall(Operation[] calldata operations) external;
 
     /**************************************************************************
      * Function modifiers for access control and parameter validations

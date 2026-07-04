@@ -1,9 +1,11 @@
 # gearbox — deployments
 
-559 verified deployment(s) across 52 component(s).
+562 verified deployment(s) across 54 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x7d04ecdb892ae074f03b5d0aba03796f90f3f2af` | AddressProviderV3 | impl | live | no |
+| chain-146 | `0x4b27b296273b72d7c7bfee1ace93dc081467c41b` | AddressProviderV3 | impl | live | no |
 | chain-146 | `0x81cb9ea2d59414ab13ec0567efb09767ddbe897a` | DefillamaCompressor | impl | live | no |
 | ethereum | `0x007a36b491647ee735446a385f1e5e0eb3119746` | RedstonePriceFeed | impl | live | yes |
 | ethereum | `0x00defc6738342e4649e7ecbe225f030bb25cfda1` | OffchainAggregatorBilling | impl | live | no |
@@ -351,6 +353,7 @@
 | ethereum | `0x9e34bb6bababb3e5e14fd5632446c9b3a082fffc` | OffchainAggregatorBilling | impl | live | no |
 | ethereum | `0x9e794915611b43f8019b1ecd6ebd7d636be8efb6` | ConvexV1BaseRewardPoolAdapter | impl | live | no |
 | ethereum | `0x9e9ff48f1106f3306ed0c5cde06e61dcfaada69d` | CurveV1Adapter2Assets | impl | live | no |
+| ethereum | `0x9ea7b04da02a5373317d745c1571c84aad03321d` | AddressProviderV3-2 | impl | live | no |
 | ethereum | `0x9ebba0faf5eed03201ac54b225ff703ce950f6f0` | ERC4626Adapter | impl | live | yes |
 | ethereum | `0x9efa37f2dcb063516a73c723ed9698be3afe50ff` | OffchainAggregatorBilling | impl | live | no |
 | ethereum | `0x9f6b06e826d3df391285c695749f8f921f6972d9` | DualAggregator | impl | live | no |
@@ -562,11 +565,4 @@
 | ethereum | `0xff767bdcd76f6e5af75957e15d5b2a8bfc43b4bf` | LinearInterestRateModelV3 | impl | live | yes |
 | ethereum | `0xffd0c7474b074f8469a627a2d062d106abc3b217` | GaugeV3 | impl | live | yes |
 | ethereum | `0xffeaae5fc6219b9352cd653a4595b6231579c99e` | OffchainAggregatorBilling | impl | live | no |
-| optimism | `0x3761ca4bfacfcffc1b8034e69f19116dd6756726` | AddressProviderV3 | impl | live | yes |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x7d04ecdb892ae074f03b5d0aba03796f90f3f2af`
-- chain-146 `0x4b27b296273b72d7c7bfee1ace93dc081467c41b`
-- ethereum `0x9ea7b04da02a5373317d745c1571c84aad03321d`
+| optimism | `0x3761ca4bfacfcffc1b8034e69f19116dd6756726` | AddressProviderV3-3 | impl | live | yes |

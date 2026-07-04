@@ -1,7 +1,7 @@
 {
   "component": "Comet-4",
   "main_contract": "Comet",
-  "source_file_count": 9,
+  "source_file_count": 12,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +15,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xe2aa5194e45b043afdd6e98f467c0b1c13484ae9",
+      "address": "0x14d2c9dd16304e8a95fc8395a37f17b6c15239c6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

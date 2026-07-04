@@ -42,6 +42,9 @@ contract CheckedPriceOracle is IUSDBatchPriceOracle, Governable {
     /// @dev This list is used to check if the relative price of the tokens are consistent
     EnumerableSet.AddressSet internal assetsForRelativePriceCheck;
 
+    event USDOracleUpdated(address indexed oracle);
+    event RelativeOracleUpdated(address indexed oracle);
+
     event PriceLevelTWAPQuoteAssetAdded(address _addressToAdd);
     event PriceLevelTWAPQuoteAssetRemoved(address _addressToRemove);
 
@@ -63,6 +66,16 @@ contract CheckedPriceOracle is IUSDBatchPriceOracle, Governable {
         relativeOracle = IRelativePriceOracle(_relativeOracle);
         relativeEpsilon = INITIAL_RELATIVE_EPSILON;
         wethAddress = _wethAddress;
+    }
+
+    function setUSDOracle(address _usdOracle) external governanceOnly {
+        usdOracle = IUSDPriceOracle(_usdOracle);
+        emit USDOracleUpdated(_usdOracle);
+    }
+
+    function setRelativeOracle(address _relativeOracle) external governanceOnly {
+        relativeOracle = IRelativePriceOracle(_relativeOracle);
+        emit RelativeOracleUpdated(_relativeOracle);
     }
 
     function addSignedPriceSource(address _signedAssetToAdd) external governanceOnly {

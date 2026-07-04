@@ -54,18 +54,6 @@ library ProtocolCmd {
     uint8 constant RELAYER_TAKE_CODE = 116;
     ////////////////////////////////////////////////////////////////////////////
 
-    ////////////////// Blast Extension Codes //////////////////////////////////
-    uint256 constant BLAST_CONFIG_POINTS_MAINNET = 182351;
-    uint256 constant BLAST_CONFIG_POINTS_TESTNET = 182352;
-    uint256 constant BLAST_CONFIG_POINTS_AT_KEY = 182353;
-    uint256 constant BLAST_CONFIG_YIELD = 182354;
-    uint256 constant BLAST_CONFIG_YIELD_AT = 182355;
-    uint256 constant BLAST_CONFIG_YIELD_ERC20 = 182356;
-
-    uint256 constant BLAST_ERC20_YIELD_CLAIM = 177;
-    uint256 constant BLAST_YIELD_CLAIM = 178;
-    uint256 constant BLAST_YIELD_CLAIM_AT = 179;
-    ////////////////////////////////////////////////////////////////////////////
 
     function encodeHotPath (bool open)
         internal pure returns (bytes memory) {

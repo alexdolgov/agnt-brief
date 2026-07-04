@@ -2,14 +2,22 @@
   "component": "WooStakingVault",
   "main_contract": "WooStakingVault",
   "source_file_count": 13,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9321785d257b3f0ef7ff75436a87141c683dc99d",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9bcf8b0b62f220f3900e2dc42deb85c3f79b405b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xcd1b9810872aec66d450c761e93638fb9fe09db0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

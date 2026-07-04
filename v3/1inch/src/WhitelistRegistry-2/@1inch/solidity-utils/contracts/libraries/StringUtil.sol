@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
+pragma abicoder v1;
 
 /// @title Library with gas-efficient string operations
 library StringUtil {
@@ -15,7 +16,8 @@ library StringUtil {
     /// @dev this is the assembly adaptation of highly optimized toHex16 code from Mikhail Vladimirov
     /// https://stackoverflow.com/a/69266989
     function toHex(bytes memory data) internal pure returns (string memory result) {
-        assembly ("memory-safe") { // solhint-disable-line no-inline-assembly
+        /// @solidity memory-safe-assembly
+        assembly { // solhint-disable-line no-inline-assembly
             function _toHex16(input) -> output {
                 output := or(
                     and(input, 0xFFFFFFFFFFFFFFFF000000000000000000000000000000000000000000000000),

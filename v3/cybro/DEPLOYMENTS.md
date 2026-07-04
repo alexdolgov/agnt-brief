@@ -1,6 +1,6 @@
 # cybro — deployments
 
-71 verified deployment(s) across 20 component(s).
+84 verified deployment(s) across 26 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -39,6 +39,7 @@
 | arbitrum | `0xb1de2f259e39726cc2bd7b017ac7ecc55fb07c20` | LPManager | impl | live | yes |
 | arbitrum | `0xb3e370e1194feabc5be79c386f77dd5f76338e96` | LPManager | impl | live | yes |
 | arbitrum | `0xbd070448fa8f9ee1b8c0dce3bc0446d1c4a27c8e` | LPManager | impl | live | yes |
+| arbitrum | `0xbde5296ea786a12c4bfd60408063816e36a2f4b1` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0xbf2922b0e077a9c9cec09683ebbe1d549675ce25` | ProtocolFeeCollector | impl | live | yes |
 | arbitrum | `0xc185fb364fd22ded0b1cd7e5fe5b6fd7f7c1ecc3` | ProtocolFeeCollector | impl | live | yes |
 | arbitrum | `0xc75e10d7c27f9ede7fcb92fa4ae3fe9ada84cdc1` | ProtocolFeeCollector | impl | live | yes |
@@ -54,8 +55,12 @@
 | arbitrum | `0xf401483e5d5b7e72ad845634dd7593a307c0abca` | LPManager | impl | live | yes |
 | arbitrum | `0xf9692890bae246050eed3d34ea34ee71d5930d1d` | LPManager | impl | live | yes |
 | arbitrum | `0xfd3be1d641adaa64c005dc2d6a2ff5bea96ad744` | ProtocolFeeCollector | impl | live | yes |
+| base | `0x567103a40c408b2b8f766016c57a092a180397a1` | ProtocolFeeCollector-2 | impl | live | no |
 | base | `0x578e7261b9d3c143700a735526bfd63713f639c5` | TransparentUpgradeableProxy | proxy | live | yes |
+| base | `0x7a37c61b20e19d8d3ff6ff652868ffaeea185c7b` | LPManager-3 | impl | live | no |
 | base | `0x84fbcde24b75f3d45863e82282683dff16c398b7` | TransparentUpgradeableProxy | proxy | live | yes |
+| base | `0xb3da213b0005df568a222876e5f5db61c985936f` | LPManager-2 | impl | live | no |
+| base | `0xd3bece9ecec369de0e8ba70ec5385262a9c79b13` | ProtocolFeeCollector-3 | impl | live | no |
 | blast | `0x03b7becb964ab0ebad805683d14f338504152707` | CYBROStaking | impl | live | yes |
 | blast | `0x081295ac2c9b425af1c570b933925d44e3f52e54` | SafeProxy | proxy | live | no |
 | blast | `0x13a2a10c5f800199d2a1b2db4972effdee3eeaa5` | CYBROStaking | impl | live | yes |
@@ -73,22 +78,13 @@
 | bsc | `0x6ce9b6288bdf6091d4ce071a81a12e96103b4029` | PancakeV3LPManager | impl | live | yes |
 | bsc | `0x77369bbebd14e91a6688bf400d560c89f38a2f32` | PancakeV3AutoManager | impl | live | yes |
 | bsc | `0x9afb3e81c6a38f4d816103251d4ba76d1e62d5d3` | PancakeV3LPManager | impl | live | yes |
-| bsc | `0xa9972b1fac35fdd8cbdbaa315a002b2ad91d2ad6` | CYBROOFT | impl | live | yes |
+| bsc | `0xa9972b1fac35fdd8cbdbaa315a002b2ad91d2ad6` | CYBROOFT-2 | impl | live | yes |
+| bsc | `0xf401483e5d5b7e72ad845634dd7593a307c0abca` | ProtocolFeeCollector-2 | impl | live | no |
+| chain-130 | `0x4164ca66d1fedd669a855cbc2a1d45fb9cfbcf71` | ProtocolFeeCollector-3 | impl | live | no |
+| chain-130 | `0x7ad4e1e8fae276b9debb40340dc65d6a2274189b` | LPManager-2 | impl | live | no |
+| chain-130 | `0xdb656402d9cb8a815bd1934bfc0e71fdba203d0b` | LPManager-3 | impl | live | no |
+| chain-130 | `0xfb84664e669f8aae284c626dc7b31c4e45101348` | ProtocolFeeCollector-2 | impl | live | no |
+| ethereum | `0x0ea8efdb32b780f583ab576604a563f8e4aa6868` | LPManager-4 | impl | live | no |
 | ethereum | `0x66e424337c0f888dccbcf2e0730a00a526d716f6` | GnosisSafeProxy | proxy | live | no |
-
-## Source unavailable (13)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0xbde5296ea786a12c4bfd60408063816e36a2f4b1`
-- base `0x567103a40c408b2b8f766016c57a092a180397a1`
-- base `0x7a37c61b20e19d8d3ff6ff652868ffaeea185c7b`
-- base `0xb3da213b0005df568a222876e5f5db61c985936f`
-- base `0xd3bece9ecec369de0e8ba70ec5385262a9c79b13`
-- bsc `0xf401483e5d5b7e72ad845634dd7593a307c0abca`
-- chain-130 `0x4164ca66d1fedd669a855cbc2a1d45fb9cfbcf71`
-- chain-130 `0x7ad4e1e8fae276b9debb40340dc65d6a2274189b`
-- chain-130 `0xdb656402d9cb8a815bd1934bfc0e71fdba203d0b`
-- chain-130 `0xfb84664e669f8aae284c626dc7b31c4e45101348`
-- ethereum `0x0ea8efdb32b780f583ab576604a563f8e4aa6868`
-- ethereum `0xd58826d2c0babf1a60d8b508160b52e9c19aff07`
-- ethereum `0xd8287038f3138ce806992915e4e3981c2151d6b9`
+| ethereum | `0xd58826d2c0babf1a60d8b508160b52e9c19aff07` | CYBROOFT | impl | live | no |
+| ethereum | `0xd8287038f3138ce806992915e4e3981c2151d6b9` | ProtocolFeeCollector-2 | impl | live | no |

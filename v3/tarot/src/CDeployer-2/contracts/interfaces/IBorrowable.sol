@@ -185,9 +185,7 @@ interface IBorrowable {
 
     function kinkBorrowRate() external view returns (uint256);
 
-    function kinkUtilizationRateLower() external view returns (uint256);
-
-    function kinkUtilizationRateUpper() external view returns (uint256);
+    function kinkUtilizationRate() external view returns (uint256);
 
     function adjustSpeed() external view returns (uint256);
 
@@ -200,7 +198,7 @@ interface IBorrowable {
     /*** Borrowable Setter ***/
 
     event NewReserveFactor(uint256 newReserveFactor);
-    event NewKinkUtilizationRates(uint256 newKinkUtilizationRateLower, uint256 newKinkUtilizationRateUpper);
+    event NewKinkUtilizationRate(uint256 newKinkUtilizationRate);
     event NewAdjustSpeed(uint256 newAdjustSpeed);
     event NewBorrowTracker(address newBorrowTracker);
 
@@ -223,7 +221,7 @@ interface IBorrowable {
 
     function _setReserveFactor(uint256 newReserveFactor) external;
 
-    function _setKinkUtilizationRates(uint256 newKinkUtilizationRateLower, uint256 newKinkUtilizationRateUpper) external;
+    function _setKinkUtilizationRate(uint256 newKinkUtilizationRate) external;
 
     function _setAdjustSpeed(uint256 newAdjustSpeed) external;
 

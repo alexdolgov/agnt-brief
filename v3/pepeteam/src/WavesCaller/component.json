@@ -2,7 +2,7 @@
   "component": "WavesCaller",
   "main_contract": "WavesCaller",
   "source_file_count": 6,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -20,6 +20,14 @@
       "address": "0x8dc9ac828303cc2cfa95e27be7d0cded453c8a5f",
       "is_proxy": true,
       "implementation_address": "0x1905f4c35ec2f8b9b1c24cae6f22c9642dd76cc6",
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8dc9ac828303cc2cfa95e27be7d0cded453c8a5f",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "inactive"
     }
   ]

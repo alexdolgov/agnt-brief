@@ -1,0 +1,18 @@
+{
+  "component": "CcTransferRouterProxy-2",
+  "main_contract": "CcTransferRouterProxy",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3d6d7b13707abe6b127b130c0b5c0a294c6a632e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,14 +2,46 @@
   "component": "WithdrawInbox",
   "main_contract": "WithdrawInbox",
   "source_file_count": 2,
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd20fc42e293734f58316e2106933b8d9fb14f5b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1b6a49b01176020b153d0cd5bc90ef2b75676f00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xf0ff9888a70f44eb12223a6a55c65976ba7bf854",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0e6847e732c0dfe40cc15216ac95e558960e522e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfe0401bffbeece5d9fae7f1b9a8f1e03fa1c3184",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

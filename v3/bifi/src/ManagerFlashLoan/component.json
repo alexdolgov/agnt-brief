@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x8cc8a0d4759d94ecd1e5a0ae2866b3cbe65c4493",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe2f26b242107f4c6ee48039555d7211d018ace37",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

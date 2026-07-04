@@ -1,0 +1,18 @@
+{
+  "component": "UmamiAcrossHandler",
+  "main_contract": "UmamiAcrossHandler",
+  "source_file_count": 109,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x816dc4f6dd54472450cc2bd0b61ea0786b342005",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

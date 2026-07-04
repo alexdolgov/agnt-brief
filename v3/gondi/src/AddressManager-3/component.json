@@ -1,0 +1,18 @@
+{
+  "component": "AddressManager-3",
+  "main_contract": "AddressManager",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x307521f9650f6568bfe56521e3ed150f5a987803",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

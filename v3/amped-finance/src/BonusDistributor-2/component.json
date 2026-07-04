@@ -1,0 +1,42 @@
+{
+  "component": "BonusDistributor-2",
+  "main_contract": "BonusDistributor",
+  "source_file_count": 12,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x11ee0a8b49243a1c3ae0fc884c825d7188989e1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x479784fa26f90bdfb6e077c6c382a2b5b3ccd335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x659ca3466f1b581d98d5f72a62c17a3e634a166a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa28227bb9d168ddbe6e7ba8c9c581150e4995df7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

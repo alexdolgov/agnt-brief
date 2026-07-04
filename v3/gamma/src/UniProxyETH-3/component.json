@@ -1,0 +1,26 @@
+{
+  "component": "UniProxyETH-3",
+  "main_contract": "UniProxyETH",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x2687aa8ca02698c8ac729e04b41718fef18c36c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xc62697c980a4ba4208125a12a883dc400685ef39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

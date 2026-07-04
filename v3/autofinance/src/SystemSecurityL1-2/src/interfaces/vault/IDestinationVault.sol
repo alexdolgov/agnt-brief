@@ -59,9 +59,6 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @notice Balance of underlying debt, sum of `externalDebtBalance()` and `internalDebtBalance()`.
     function balanceOfUnderlyingDebt() external view returns (uint256);
 
-    /// @notice Total balance of underlying, sum of queried balances minus debt balances.
-    function excessUnderlyingBalance() external view returns (uint256);
-
     /// @notice Rewarder for this vault
     function rewarder() external view returns (address);
 
@@ -73,19 +70,6 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
 
     /// @notice The type of pool plus any staking information
     function destType() external view returns (string memory);
-
-    /// @notice Sets a token to be tracked or not
-    /// @param token Token to start or stop tracking
-    /// @param tracked True to track. False to stop.
-    function setTrackedToken(address token, bool tracked) external;
-
-    /// @notice Returns tokens that are protected from transfer
-    function trackedTokens() external view returns (address[] memory);
-
-    /// @notice Returns whether a token is tracked or not
-    function isTrackedToken(
-        address
-    ) external view returns (bool);
 
     /// @notice If the pool only deals in ETH when adding or removing liquidity
     function poolDealInEth() external view returns (bool);
@@ -225,6 +209,13 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @dev This price can be attacked is not validate to be in any range
     /// @return price Value of 1 unit of the underlying LP token in terms of the base asset
     function getUnderlyerCeilingPrice() external returns (uint256 price);
+
+    /// @notice Set or unset  a hash as a signed message
+    /// @dev Should be limited to DESTINATION_VAULTS_UPDATER. The set hash is used to validate a signature.
+    /// This signature can be potentially used to claim offchain rewards earned by Destination Vaults.
+    /// @param hash bytes32 hash of a payload
+    /// @param flag boolean flag to indicate a validity of hash
+    function setMessage(bytes32 hash, bool flag) external;
 
     /// @notice Allows to change the incentive calculator of destination vault
     /// @dev Only works when vault is shutdown, also validates the calculator before updating

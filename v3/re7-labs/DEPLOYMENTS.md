@@ -1,15 +1,22 @@
 # re7-labs — deployments
 
-581 verified deployment(s) across 214 component(s).
+597 verified deployment(s) across 216 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | avalanche | `0x3ba1566ed39f865baf4c1eb9ace53f3d2062be65` | SafeProxy | impl | live | no |
-| base | `0x00dfdb8c7295a03dcf1adff4d21eb5d9d19fb330` | MetaMorphoV1_1 | impl | live | no |
+| base | `0x00dfdb8c7295a03dcf1adff4d21eb5d9d19fb330` | MetaMorphoV1_1-3 | impl | live | no |
+| base | `0x0b7ee82ad75b2d3fc7f3a110a51ba68714171d25` | VaultV2 | impl | live | no |
 | base | `0x12afdefb2237a5963e7bab3e2d46ad0eee70406e` | MetaMorpho | impl | live | no |
+| base | `0x618495ccc4e751178c4914b1e939c0fe0fb07b9b` | VaultV2 | impl | live | no |
 | base | `0x6e37c95b43566e538d8c278eb69b00fc717a001b` | MetaMorpho | impl | live | no |
 | base | `0xa2cac0023a4797b4729db94783405189a4203afc` | MetaMorpho | impl | live | no |
+| base | `0xc9c474c6aa0e930ed42fd1f40be5b1d6a5ead645` | VaultV2 | impl | live | no |
+| base | `0xca120dcc42f45427ed0d0f060d56104c4a8edec4` | VaultV2 | impl | live | no |
 | base | `0xd8b0f4e54a8dac04e0a57392f5a630cedb99c940` | GnosisSafeProxy-3 | proxy | live | no |
+| chain-130 | `0x2c0f7e917257926ba6233b20de19d7fe3210858c` | MetaMorphoV1_1 | impl | live | no |
+| chain-130 | `0x6af5e46456a8ac80bb53a02799965def99c26e52` | MetaMorphoV1_1 | impl | live | no |
+| chain-130 | `0xa48f8a10f16bb50a588606553d9fe7338050f8cd` | MetaMorphoV1_1 | impl | live | no |
 | ethereum | `0x007115416ab6c266329a03b09a8aa39ac2ef7d9d` | TransparentUpgradeableProxy-25 | proxy | live | no |
 | ethereum | `0x01b16ea685735acabe519d682a08acade018f003` | DataFeed | impl | inactive | no |
 | ethereum | `0x01feb0bba21552385de157174f32d97bc0e6afcc` | ZeroGEthvDepositVault | impl | live | yes |
@@ -112,6 +119,7 @@
 | ethereum | `0x337d914ff6622510fc2c63ac59c1d07983895241` | MSyrupUsdpCustomAggregatorFeed | proxy | live | no |
 | ethereum | `0x33ed485dcf400e9354173aebf6de37d8c03c6fa9` | HypeUsdRedemptionVaultWithSwapper | impl | live | yes |
 | ethereum | `0x34031e751da2ab19009d8f7eb268face2bdfd0dd` | TransparentUpgradeableProxy-41 | proxy | live | no |
+| ethereum | `0x341193ed21711472e71aeca4a942123452bd0dda` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0x341cb11e60fb55455ab89fc8a4a27a90827ecac5` | TransparentUpgradeableProxy-19 | impl | inactive | no |
 | ethereum | `0x349c2d5dbea2d0c59de1d627d49233f0e1fc4e52` | ManageableVault | impl | live | yes |
 | ethereum | `0x3549f6936dafb87f456dca3a061bc9225ff44b3c` | MevBtcDepositVault | impl | live | yes |
@@ -162,6 +170,7 @@
 | ethereum | `0x4c727b81eb776e2614c72430e306cefd614bb837` | AcreBtcDepositVault | impl | live | yes |
 | ethereum | `0x4cfd862d774356ab825b503b4aa2e6f95bc76fd3` | DataFeed | proxy | live | no |
 | ethereum | `0x4d371cc63fb8efd48aff59c5a0c064863ae4999c` | MApolloDepositVault | impl | live | yes |
+| ethereum | `0x4d52545235a3df246a8928c583e47ae7eec4acfe` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0x4eed111a10c25a739b0d72bd2383f958b9fde211` | tBTC | impl | inactive | no |
 | ethereum | `0x4f6e5852f89c5a94119b039b355ad7043e959393` | MHyperBtcDataFeed | impl | inactive | no |
 | ethereum | `0x4fd4dd7171d14e5bd93025ec35374d2b9b4321b0` | TransparentUpgradeableProxy-88 | proxy | live | yes |
@@ -227,6 +236,7 @@
 | ethereum | `0x636cdf65a5bb03c25c63ceb20e971f101ed060b9` | mPortofino | impl | inactive | no |
 | ethereum | `0x6390b84321663d6fb1c911077d1cb97a7114dc56` | TransparentUpgradeableProxy-5 | impl | inactive | no |
 | ethereum | `0x63f4fe61c6d9eade190fcca5a5432660ea5bf8b3` | DataFeed | proxy | live | no |
+| ethereum | `0x64964e162aa18d32f91ea5b24a09529f811aeb8e` | MetaMorphoV1_1-2 | impl | live | no |
 | ethereum | `0x649f8698068ad143a7e18ba9cb0be112d5986aeb` | TransparentUpgradeableProxy-58 | proxy | live | no |
 | ethereum | `0x6545603e5c6b7f59085c230b2c0bf2658b83aac3` | DataFeed | proxy | live | no |
 | ethereum | `0x65c4e04cc26aadd1ec95c54cd6dba61a270f15ca` | TransparentUpgradeableProxy-59 | proxy | live | no |
@@ -279,6 +289,7 @@
 | ethereum | `0x787fc686879eace7ad94a63fcecd520fdeaf7af9` | VaultV2 | impl | live | no |
 | ethereum | `0x78b67f3724cd48edc2d9b421bdb79344dd05163c` | TransparentUpgradeableProxy-57 | impl | inactive | no |
 | ethereum | `0x78f9fb40005dd06b1ab2affcb561dca596142610` | TransparentUpgradeableProxy | impl | inactive | no |
+| ethereum | `0x78fc2c2ed1a4cdb5402365934ae5648adad094d0` | MetaMorpho | impl | live | no |
 | ethereum | `0x798910cbbe311e14c3b61301b3bcb76a3348a6fb` | TACmBtcDepositVault | impl | live | yes |
 | ethereum | `0x7a4c56b1baaad0ff5d248892e137d415da41b3b8` | TransparentUpgradeableProxy-65 | proxy | live | no |
 | ethereum | `0x7a4effd87c2f3c55ca251080b1343b605f327e3a` | TransparentUpgradeableProxy-4 | proxy | live | no |
@@ -340,6 +351,7 @@
 | ethereum | `0x9437b2a8cf3b69d782a61f9814baabc172f72003` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x94a40410b218a5ba17d63bbe6b55031c0589f57a` | TransparentUpgradeableProxy-65 | impl | inactive | no |
 | ethereum | `0x95a17b75ab2a83a5ffe2f21f17cee52ebbd5b87d` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x95eef579155cd2c5510f312c8fa39208c3be01a8` | MetaMorpho | impl | live | no |
 | ethereum | `0x96325da3a1076aabba000ce1fcbc05fa9e30f922` | TransparentUpgradeableProxy-63 | impl | inactive | no |
 | ethereum | `0x96927b6838424ff24092bb89b38236aba2d84b51` | TransparentUpgradeableProxy-37 | impl | inactive | no |
 | ethereum | `0x97acdfb3956403c4c6bbe837dc611e3a6ba1b3a7` | MLiquidityRedemptionVault | proxy | live | yes |
@@ -372,6 +384,7 @@
 | ethereum | `0x9f819f7741e52c13bc5207e78b6e3fec1bdf3990` | ZeroGUsdvDataFeed | proxy | live | no |
 | ethereum | `0x9fb442d6b612a6dcd2acc67bb53771ef1d9f661a` | TransparentUpgradeableProxy-79 | proxy | live | no |
 | ethereum | `0xa01227a26a7710bc75071286539e47adb6dea417` | TransparentUpgradeableProxy-80 | proxy | live | no |
+| ethereum | `0xa02f5e93f783baf150aa1f8b341ae90fe0a772f7` | MetaMorpho | impl | live | no |
 | ethereum | `0xa0df4e2d295a450e4704c3603b54b33eb7d086c0` | MidasLzMintBurnOFTAdapter | impl | inactive | no |
 | ethereum | `0xa1150cd4a014e06f5e0a6ec9453fe0208da5adab` | tETH | proxy | live | no |
 | ethereum | `0xa14fdaa5437150804fab13a1dbc53c0e5a37ba3e` | TransparentUpgradeableProxy-61 | impl | inactive | no |
@@ -511,6 +524,7 @@
 | ethereum | `0xe084623e02beaca3e8d1e7f356003a9e04417893` | TransparentUpgradeableProxy-72 | impl | inactive | no |
 | ethereum | `0xe092737d412e0b290380f9c8548cb5a58174704f` | MMevDepositVault | proxy | live | yes |
 | ethereum | `0xe09823b8ebb3f0e7a533383abdd86bd99a603861` | MMevRedemptionVaultWithSwapper | impl | live | yes |
+| ethereum | `0xe0c98605f279e4d7946d25b75869c69802823763` | MetaMorpho | impl | live | no |
 | ethereum | `0xe123ebc5697151890dddf05943de393ceaccc7e9` | RedemptionVaultWIthBUIDL | impl | live | yes |
 | ethereum | `0xe1998045ad0cfd38abd274f2e1a4aba4278e2288` | RedemptionVault | impl | live | yes |
 | ethereum | `0xe2ad97033e8c0844655f27dc0cc5f21028fe48ba` | TransparentUpgradeableProxy-2 | proxy | live | no |
@@ -585,23 +599,5 @@
 | ethereum | `0xffa36b4b011d87d89fef3098ab30fef7bcc3571e` | hypeBTC | proxy | live | no |
 | ethereum | `0xffc671dd50f94b29203ecd8866690abfa0c2361f` | TransparentUpgradeableProxy-58 | impl | inactive | no |
 | ethereum | `0xffd462e0602dd9ff3f038fd4e77a533f8c474b65` | MevBtcCustomAggregatorFeed | proxy | live | no |
-
-## Source unavailable (16)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x0b7ee82ad75b2d3fc7f3a110a51ba68714171d25`
-- base `0x618495ccc4e751178c4914b1e939c0fe0fb07b9b`
-- base `0xc9c474c6aa0e930ed42fd1f40be5b1d6a5ead645`
-- base `0xca120dcc42f45427ed0d0f060d56104c4a8edec4`
-- chain-130 `0x2c0f7e917257926ba6233b20de19d7fe3210858c`
-- chain-130 `0x6af5e46456a8ac80bb53a02799965def99c26e52`
-- chain-130 `0xa48f8a10f16bb50a588606553d9fe7338050f8cd`
-- ethereum `0x341193ed21711472e71aeca4a942123452bd0dda`
-- ethereum `0x4d52545235a3df246a8928c583e47ae7eec4acfe`
-- ethereum `0x64964e162aa18d32f91ea5b24a09529f811aeb8e`
-- ethereum `0x78fc2c2ed1a4cdb5402365934ae5648adad094d0`
-- ethereum `0x95eef579155cd2c5510f312c8fa39208c3be01a8`
-- ethereum `0xa02f5e93f783baf150aa1f8b341ae90fe0a772f7`
-- ethereum `0xe0c98605f279e4d7946d25b75869c69802823763`
-- optimism `0x3d63934715b6d4c4dfbbc1a00fe2a2145079dd76`
-- polygon `0xf91d80e43272dbc610551e8c872e0438d62c1c69`
+| optimism | `0x3d63934715b6d4c4dfbbc1a00fe2a2145079dd76` | VaultV2 | impl | live | no |
+| polygon | `0xf91d80e43272dbc610551e8c872e0438d62c1c69` | MetaMorphoV1_1 | impl | live | no |

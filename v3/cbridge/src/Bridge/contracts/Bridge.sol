@@ -41,6 +41,18 @@ contract Bridge is Pool {
     // min allowed max slippage uint32 value is slippage * 1M, eg. 0.5% -> 5000
     uint32 public minimalMaxSlippage;
 
+    /**
+     * @notice Send a cross-chain transfer via the liquidity pool-based bridge.
+     * NOTE: This function DOES NOT SUPPORT fee-on-transfer / rebasing tokens.
+     * @param _receiver The address of the receiver.
+     * @param _token The address of the token.
+     * @param _amount The amount of the transfer.
+     * @param _dstChainId The destination chain ID.
+     * @param _nonce A number input to guarantee uniqueness of transferId. Can be timestamp in practice.
+     * @param _maxSlippage The max slippage accepted, given as percentage in point (pip). Eg. 5000 means 0.5%.
+     * Must be greater than minimalMaxSlippage. Receiver is guaranteed to receive at least (100% - max slippage percentage) * amount or the
+     * transfer can be refunded.
+     */
     function send(
         address _receiver,
         address _token,
@@ -49,30 +61,74 @@ contract Bridge is Pool {
         uint64 _nonce,
         uint32 _maxSlippage // slippage * 1M, eg. 0.5% -> 5000
     ) external nonReentrant whenNotPaused {
+        bytes32 transferId = _send(_receiver, _token, _amount, _dstChainId, _nonce, _maxSlippage);
+        IERC20(_token).safeTransferFrom(msg.sender, address(this), _amount);
+        emit Send(transferId, msg.sender, _receiver, _token, _amount, _dstChainId, _nonce, _maxSlippage);
+    }
+
+    /**
+     * @notice Send a cross-chain transfer via the liquidity pool-based bridge using the native token.
+     * @param _receiver The address of the receiver.
+     * @param _amount The amount of the transfer.
+     * @param _dstChainId The destination chain ID.
+     * @param _nonce A unique number. Can be timestamp in practice.
+     * @param _maxSlippage The max slippage accepted, given as percentage in point (pip). Eg. 5000 means 0.5%.
+     * Must be greater than minimalMaxSlippage. Receiver is guaranteed to receive at least (100% - max slippage percentage) * amount or the
+     * transfer can be refunded.
+     */
+    function sendNative(
+        address _receiver,
+        uint256 _amount,
+        uint64 _dstChainId,
+        uint64 _nonce,
+        uint32 _maxSlippage
+    ) external payable nonReentrant whenNotPaused {
+        require(msg.value == _amount, "Amount mismatch");
+        require(nativeWrap != address(0), "Native wrap not set");
+        bytes32 transferId = _send(_receiver, nativeWrap, _amount, _dstChainId, _nonce, _maxSlippage);
+        IWETH(nativeWrap).deposit{value: _amount}();
+        emit Send(transferId, msg.sender, _receiver, nativeWrap, _amount, _dstChainId, _nonce, _maxSlippage);
+    }
+
+    function _send(
+        address _receiver,
+        address _token,
+        uint256 _amount,
+        uint64 _dstChainId,
+        uint64 _nonce,
+        uint32 _maxSlippage
+    ) private returns (bytes32) {
         require(_amount > minSend[_token], "amount too small");
         require(maxSend[_token] == 0 || _amount <= maxSend[_token], "amount too large");
         require(_maxSlippage > minimalMaxSlippage, "max slippage too small");
         bytes32 transferId = keccak256(
             // uint64(block.chainid) for consistency as entire system uses uint64 for chain id
+            // len = 20 + 20 + 20 + 32 + 8 + 8 + 8 = 116
             abi.encodePacked(msg.sender, _receiver, _token, _amount, _dstChainId, _nonce, uint64(block.chainid))
         );
         require(transfers[transferId] == false, "transfer exists");
         transfers[transferId] = true;
-        IERC20(_token).safeTransferFrom(msg.sender, address(this), _amount);
-
-        emit Send(transferId, msg.sender, _receiver, _token, _amount, _dstChainId, _nonce, _maxSlippage);
+        return transferId;
     }
 
+    /**
+     * @notice Relay a cross-chain transfer sent from a liquidity pool-based bridge on another chain.
+     * @param _relayRequest The serialized Relay protobuf.
+     * @param _sigs The list of signatures sorted by signing addresses in ascending order. A relay must be signed-off by
+     * +2/3 of the bridge's current signing power to be delivered.
+     * @param _signers The sorted list of signers.
+     * @param _powers The signing powers of the signers.
+     */
     function relay(
         bytes calldata _relayRequest,
         bytes[] calldata _sigs,
         address[] calldata _signers,
         uint256[] calldata _powers
     ) external whenNotPaused {
-        verifySigs(_relayRequest, _sigs, _signers, _powers);
+        bytes32 domain = keccak256(abi.encodePacked(block.chainid, address(this), "Relay"));
+        verifySigs(abi.encodePacked(domain, _relayRequest), _sigs, _signers, _powers);
         PbBridge.Relay memory request = PbBridge.decRelay(_relayRequest);
-        require(request.dstChainId == block.chainid, "dst chainId not match");
-
+        // len = 20 + 20 + 20 + 32 + 8 + 8 + 32 = 140
         bytes32 transferId = keccak256(
             abi.encodePacked(
                 request.sender,
@@ -86,19 +142,12 @@ contract Bridge is Pool {
         );
         require(transfers[transferId] == false, "transfer exists");
         transfers[transferId] = true;
-        updateVolume(request.token, request.amount);
+        _updateVolume(request.token, request.amount);
         uint256 delayThreshold = delayThresholds[request.token];
         if (delayThreshold > 0 && request.amount > delayThreshold) {
-            addDelayedTransfer(transferId, request.receiver, request.token, request.amount);
+            _addDelayedTransfer(transferId, request.receiver, request.token, request.amount);
         } else {
-            if (request.token == nativeWrap) {
-                // withdraw then transfer native to receiver
-                IWETH(nativeWrap).withdraw(request.amount);
-                (bool sent, ) = request.receiver.call{value: request.amount, gas: 50000}("");
-                require(sent, "failed to relay native token");
-            } else {
-                IERC20(request.token).safeTransfer(request.receiver, request.amount);
-            }
+            _sendToken(request.receiver, request.token, request.amount);
         }
 
         emit Relay(

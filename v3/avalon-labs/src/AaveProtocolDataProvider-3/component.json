@@ -1,0 +1,26 @@
+{
+  "component": "AaveProtocolDataProvider-3",
+  "main_contract": "AaveProtocolDataProvider",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x16b9b88b773c1a1aba6d305e0560171405d45121",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x5ecdc2432ed77cd8e2ce6183712c5cc712c40ec0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

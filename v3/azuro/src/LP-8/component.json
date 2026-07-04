@@ -1,0 +1,18 @@
+{
+  "component": "LP-8",
+  "main_contract": "LP",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb495ca34e8a7e009ec3f1df4fb759ab230567018",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

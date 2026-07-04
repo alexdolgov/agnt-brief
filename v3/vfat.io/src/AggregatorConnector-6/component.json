@@ -1,0 +1,42 @@
+{
+  "component": "AggregatorConnector-6",
+  "main_contract": "AggregatorConnector",
+  "source_file_count": 31,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2d1732d585e15276592e0074c360f2f2a2413d0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x76861568ab8bb81b9875866cf22997ab2b37bf4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa92b5782de92e626ab8a1676a909778023daeb01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd1b2645f8ee5e86fcb9c8d7950739ef5ac890774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

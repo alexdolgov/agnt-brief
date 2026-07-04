@@ -4,12 +4,6 @@ pragma solidity ^0.8.7;
 
 library DlnOrderLib {
     
-    enum ChainEngine {
-        UNDEFINED, //0
-        EVM, // 1
-        SOLANA // 2
-    }
-
     struct OrderCreation {
         address giveTokenAddress;
         uint256 giveAmount;

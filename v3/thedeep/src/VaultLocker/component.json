@@ -2,10 +2,42 @@
   "component": "VaultLocker",
   "main_contract": "VaultLocker",
   "source_file_count": 17,
-  "deployment_count": 4,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x39db7da035752c969265ef0cc5ab8481ba38510a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4608121a8d9a5f54664649e95e40829286898738",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6e2bbd6035cb8d2b97be8e0c1e06c6b61fd1c814",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x827cce45e8d39088e21cef2642f43100d0543047",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-42220",
       "chain_id": 42220,

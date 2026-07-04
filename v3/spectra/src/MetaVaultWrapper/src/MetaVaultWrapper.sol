@@ -50,8 +50,6 @@ contract MetaVaultWrapper is
         address underlying;
         // Mapping to track operator permissions for controllers
         mapping(address controller => mapping(address operator => bool)) isOperator;
-        // Mapping to track blacklisted users
-        mapping(address user => bool) blacklisted;
     }
 
     // keccak256(abi.encode(uint256(keccak256("spectra.storage.Wrapper")) - 1)) & ~bytes32(uint256(0xff))
@@ -63,18 +61,6 @@ contract MetaVaultWrapper is
         assembly {
             $.slot := SpectraWrapperStorageLocation
         }
-    }
-
-    /// @dev Reverts if the user is blacklisted.
-    function _requireNotBlacklisted(address user) internal view {
-        if (_getWrapperStorage().blacklisted[user]) {
-            revert Blacklisted(user);
-        }
-    }
-
-    modifier notBlacklisted(address user) {
-        _requireNotBlacklisted(user);
-        _;
     }
 
     /* ---------------------------------------------------------- */
@@ -362,36 +348,12 @@ contract MetaVaultWrapper is
     /* -------------------------------------- External Functions -------------------------------------- */
 
     // Function to set operator approval
-    function setOperator(
-        address operator,
-        bool approved
-    ) external override notBlacklisted(msg.sender) returns (bool) {
+    function setOperator(address operator, bool approved) external override returns (bool) {
         WrapperState storage W = _getWrapperStorage();
         // Set operator approval for msg.sender
         W.isOperator[msg.sender][operator] = approved;
         emit OperatorSet(msg.sender, operator, approved);
         return true;
-    }
-
-    /* -------------------------------------- Blacklist Functions -------------------------------------- */
-
-    /// @inheritdoc IMetaVaultWrapper
-    function blacklist(address user) external onlyOwner {
-        WrapperState storage W = _getWrapperStorage();
-        W.blacklisted[user] = true;
-        emit UserBlacklisted(user);
-    }
-
-    /// @inheritdoc IMetaVaultWrapper
-    function unblacklist(address user) external onlyOwner {
-        WrapperState storage W = _getWrapperStorage();
-        W.blacklisted[user] = false;
-        emit UserUnblacklisted(user);
-    }
-
-    /// @inheritdoc IMetaVaultWrapper
-    function isBlacklisted(address user) external view returns (bool) {
-        return _getWrapperStorage().blacklisted[user];
     }
 
     /// @notice Request deposit on the underlying infra-vault, tracked controller in wrapper "amphor" state.
@@ -400,10 +362,6 @@ contract MetaVaultWrapper is
         address controller,
         address owner
     ) external nonReentrant whenNotPaused returns (uint256 requestId) {
-        _requireNotBlacklisted(msg.sender);
-        _requireNotBlacklisted(controller);
-        _requireNotBlacklisted(owner);
-
         WrapperState storage W = _getWrapperStorage();
         AmphorState storage A = _getAmphorStorage();
 
@@ -446,9 +404,7 @@ contract MetaVaultWrapper is
     }
 
     // Function to decrease deposit request amount
-    function decreaseDepositRequest(
-        uint256 assets
-    ) external nonReentrant whenNotPaused notBlacklisted(msg.sender) {
+    function decreaseDepositRequest(uint256 assets) external nonReentrant whenNotPaused {
         // Update internal epoch tracking
         _updateEpochID();
 
@@ -495,10 +451,6 @@ contract MetaVaultWrapper is
         address receiver,
         address controller
     ) external override nonReentrant whenNotPaused returns (uint256 shares) {
-        _requireNotBlacklisted(msg.sender);
-        _requireNotBlacklisted(controller);
-        _requireNotBlacklisted(receiver);
-
         AmphorState storage A = _getAmphorStorage();
         WrapperState storage W = _getWrapperStorage();
 
@@ -529,10 +481,6 @@ contract MetaVaultWrapper is
         address controller,
         address owner
     ) external nonReentrant whenNotPaused returns (uint256 requestId) {
-        _requireNotBlacklisted(msg.sender);
-        _requireNotBlacklisted(controller);
-        _requireNotBlacklisted(owner);
-
         WrapperState storage W = _getWrapperStorage();
         AmphorState storage A = _getAmphorStorage();
 
@@ -588,9 +536,7 @@ contract MetaVaultWrapper is
     }
 
     // Function to decrease redeem request amount
-    function decreaseRedeemRequest(
-        uint256 shares
-    ) external nonReentrant whenNotPaused notBlacklisted(msg.sender) {
+    function decreaseRedeemRequest(uint256 shares) external nonReentrant whenNotPaused {
         // Update internal epoch tracking
         _updateEpochID();
 
@@ -637,10 +583,6 @@ contract MetaVaultWrapper is
         address receiver,
         address controller
     ) public override(ERC4626Upgradeable, IERC4626) nonReentrant whenNotPaused returns (uint256) {
-        _requireNotBlacklisted(msg.sender);
-        _requireNotBlacklisted(controller);
-        _requireNotBlacklisted(receiver);
-
         // Validate addresses are not zero
         if (receiver == address(0) || controller == address(0)) {
             revert IERC7540.ZeroAddress();
@@ -670,14 +612,7 @@ contract MetaVaultWrapper is
         address,
         /*receiver*/
         address /*controller*/
-    )
-        external
-        override
-        nonReentrant
-        whenNotPaused
-        notBlacklisted(msg.sender)
-        returns (uint256 assets)
-    {
+    ) external override nonReentrant whenNotPaused returns (uint256 assets) {
         revert("NotImplemented()");
     }
 
@@ -909,15 +844,6 @@ contract MetaVaultWrapper is
         address to,
         uint256 value
     ) internal virtual override(ERC20Upgradeable, ERC20PausableUpgradeable) {
-        WrapperState storage W = _getWrapperStorage();
-        // Block transfers from blacklisted users (from == address(0) is mint)
-        if (from != address(0) && W.blacklisted[from]) {
-            revert Blacklisted(from);
-        }
-        // Block transfers to blacklisted users (to == address(0) is burn)
-        if (to != address(0) && W.blacklisted[to]) {
-            revert Blacklisted(to);
-        }
         ERC20PausableUpgradeable._update(from, to, value);
     }
 

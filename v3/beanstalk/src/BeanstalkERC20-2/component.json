@@ -1,15 +1,23 @@
 {
   "component": "BeanstalkERC20-2",
   "main_contract": "BeanstalkERC20",
-  "source_file_count": 27,
-  "deployment_count": 1,
+  "source_file_count": 23,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x1bea054dddbca12889e07b3e076f511bf1d27543",
+      "address": "0x1bea059c3ea15f6c10be1c53d70c75fd1266d788",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbea0005b8599265d41256905a9b3073d397812e4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

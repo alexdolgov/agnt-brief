@@ -48,8 +48,6 @@ interface IEasySwapperV2 {
 
   function partialWithdraw(uint256 _portion, address _to, WithdrawalVaultType _vaultType) external;
 
-  function dHedgePoolFactory() external view returns (address);
-
   function initLimitOrderWithdrawalFor(
     address _user,
     address _dHedgeVault,

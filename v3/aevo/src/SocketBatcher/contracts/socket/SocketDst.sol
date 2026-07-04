@@ -119,7 +119,7 @@ abstract contract SocketDst is SocketBase {
 
         (address transmitter, bool isTransmitter) = transmitManager__
             .checkTransmitter(
-                _decodeChainSlug(packetId_),
+                uint32(_decodeChainSlug(packetId_)),
                 keccak256(abi.encode(version, chainSlug, packetId_, root_)),
                 signature_
             );
@@ -206,12 +206,6 @@ abstract contract SocketDst is SocketBase {
             .isExecutor(packedMessage, executionDetails_.signature);
         if (!isValidExecutor) revert NotExecutor();
 
-        // finally make sure executor params were respected by the executor
-        executionManager__.verifyParams(
-            messageDetails_.executionParams,
-            msg.value
-        );
-
         // verify message was part of the packet and
         // authenticated by respective switchboard
         _verify(
@@ -221,7 +215,8 @@ abstract contract SocketDst is SocketBase {
             packedMessage,
             packetRoot,
             plugConfig,
-            executionDetails_.decapacitorProof
+            executionDetails_.decapacitorProof,
+            messageDetails_.executionParams
         );
 
         // execute message
@@ -245,7 +240,8 @@ abstract contract SocketDst is SocketBase {
         bytes32 packedMessage_,
         bytes32 packetRoot_,
         PlugConfig memory plugConfig_,
-        bytes memory decapacitorProof_
+        bytes memory decapacitorProof_,
+        bytes32 executionParams_
     ) internal {
         // NOTE: is the the first un-trusted call in the system, another one is Plug.inbound
         if (
@@ -253,7 +249,7 @@ abstract contract SocketDst is SocketBase {
                 packetRoot_,
                 packetId_,
                 proposalCount_,
-                remoteChainSlug_,
+                uint32(remoteChainSlug_),
                 rootProposedAt[packetId_][proposalCount_][
                     address(plugConfig_.inboundSwitchboard__)
                 ]
@@ -267,6 +263,9 @@ abstract contract SocketDst is SocketBase {
                 decapacitorProof_
             )
         ) revert InvalidProof();
+
+        // finally make sure executor params were respected by the executor
+        executionManager__.verifyParams(executionParams_, msg.value);
     }
 
     /**

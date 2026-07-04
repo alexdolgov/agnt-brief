@@ -1,6 +1,6 @@
 # polkamarkets — deployments
 
-38 verified deployment(s) across 25 component(s).
+39 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -20,6 +20,7 @@
 | chain-42220 | `0x48ae491c075ea48ba1275f967503dcadf5dc1f58` | MerkleRewardsDistributor | proxy | inactive | no |
 | chain-42220 | `0x503c9f98398dc3433aba819bf3ec0b97e02b8d04` | PredictionMarketV3Querier | impl | inactive | no |
 | chain-42220 | `0x537dc41fbb4f9faa4b9d6f8e6c2eb9071274f72b` | ERC1967Proxy | impl | inactive | no |
+| chain-42220 | `0x83d3f4769a19f1b43337888b0290f5473cf508b2` | ERC20PresetMinterPauser | impl | live | no |
 | chain-42220 | `0xb4d8a602fff7790eec3f2c0c1a51a475ee399b2d` | BridgeToken | proxy | live | no |
 | chain-42220 | `0xdcbe79f74c98368141798ea0b7b979b9ba54b026` | PredictionMarketV3 | impl | live | no |
 | ethereum | `0x126b53a1b0f6d036f4ef93a4e5af984bb4b95861` | DistibutionContract4 | impl | inactive | no |
@@ -42,8 +43,3 @@
 | polygon | `0x9ab1213d360bea3eda75d88d81d7fbfc9fd37f2b` | ERC20PresetMinterPauser | impl | live | no |
 | polygon | `0xc1bb36bb0ba236603b95544e809f2ab1893bbc0c` | PredictionMarketV2 | impl | inactive | no |
 | polygon | `0xdefb36c47754d2e37d44b8b8c647d4d643e03bad` | FantasyERC20 | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-42220 `0x83d3f4769a19f1b43337888b0290f5473cf508b2`

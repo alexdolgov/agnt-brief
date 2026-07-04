@@ -2,32 +2,40 @@
   "component": "TransparentUpgradeableProxy-11",
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 15,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0027da0545fe5e5d4fb80e8e6fc78091ab20f827",
+      "address": "0x41e60cf98075315e4d6133a9dc25a2847b21c3d7",
       "is_proxy": true,
-      "implementation_address": "0x2664cc8e22da2525af44d775832c3383e6f992ed",
+      "implementation_address": "0xd6bba2075993e8d429a35d7b3ed589afe668b4a1",
       "liveness": "live"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x6254faa72a40d8c1f4051fed8b33689f8d6e30bd",
-      "is_proxy": true,
-      "implementation_address": "0x285c456c2dd129bc65259974644fbc48e2e2cca1",
+      "address": "0x86149f5a512c3b7ec123d081e5e6193a63232e00",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x9e72155d301a6555dc565315be72d295c76753c0",
+      "address": "0xd6bba2075993e8d429a35d7b3ed589afe668b4a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe8edf980d0a14dddc4c2a96a9e3591550abd8a37",
       "is_proxy": true,
-      "implementation_address": "0x8ef7a066bf2cf76bad826c1de8d314badf057b52",
+      "implementation_address": "0x86149f5a512c3b7ec123d081e5e6193a63232e00",
       "liveness": "live"
     }
   ]

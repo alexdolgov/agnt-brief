@@ -1,0 +1,26 @@
+{
+  "component": "DebtTokenWithLz",
+  "main_contract": "DebtTokenWithLz",
+  "source_file_count": 69,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa32313c04df2e12dcbc0b4b5ad234a2cc69d6c8d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb247bce6f7ca0345174ee0d3860a36e7d72b5a9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

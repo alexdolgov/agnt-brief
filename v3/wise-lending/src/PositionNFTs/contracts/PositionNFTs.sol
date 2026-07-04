@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: -- WISE --
 
-pragma solidity =0.8.23;
+pragma solidity =0.8.25;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
@@ -43,12 +43,19 @@ contract PositionNFTs is ERC721Enumerable, OwnableMaster {
     }
 
     modifier onlyReserveRole() {
+        _onlyReserveRole();
+        _;
+    }
+
+    function _onlyReserveRole()
+        private
+        view
+    {
         if (reservePublicBlocked == true) {
             if (reserveRole[msg.sender] == false) {
                 revert NotPermitted();
             }
         }
-        _;
     }
 
     function assignReserveRole(
@@ -99,8 +106,8 @@ contract PositionNFTs is ERC721Enumerable, OwnableMaster {
     function reservePositionForUser(
         address _user
     )
-        onlyReserveRole
         external
+        onlyReserveRole
         returns (uint256)
     {
         return _reservePositionForUser(

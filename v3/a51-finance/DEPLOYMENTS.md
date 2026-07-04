@@ -1,9 +1,10 @@
 # a51-finance — deployments
 
-58 verified deployment(s) across 46 component(s).
+69 verified deployment(s) across 56 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0xdfb179526ae303eea49ac99dd360159c39105828` | CLTBase-2 | impl | live | no |
 | chain-169 | `0x2935a23f015ce177d6cc6bacce189a2e0039a227` | CLTTwapQuoter | impl | unknown | no |
 | chain-169 | `0x3e0aa2e17fe3e5e319f388c794fdbc3c64ef9da6` | UserPositions | impl | live | yes |
 | chain-169 | `0x44ae07568378d2159ed41d0f060a3d6baefbeb97` | TransferHelper | impl | live | yes |
@@ -17,6 +18,7 @@
 | chain-169 | `0xa1d8180f4482359ceb7eb7437fcf4a2616830f81` | CLTHelper | impl | unknown | no |
 | chain-169 | `0xc203e40fb4d742a0559705e33c9c2af41af2b4dc` | Position | impl | live | no |
 | chain-169 | `0xc22e20950aa1f2e91fac75ab7fd8a21ef2c3ab1e` | StrategyFeeShares | impl | live | no |
+| chain-169 | `0xffd9acf25f2d930be88d486d588ecba7a418de0b` | CLTHelper | impl | unknown | no |
 | ethereum | `0x1538e779c6a25701c3cbc8133ee755f2adaf2a11` | V3Oracle | impl | live | yes |
 | ethereum | `0x1684f4d3c7e27f02c2072ade8831338d1d13dbe5` | PilotTimelock | impl | inactive | no |
 | ethereum | `0x1922af4365b09a9d818833b730324f7ef6335c9f` | UnipilotFoundationTokenVesting | impl | inactive | no |
@@ -47,6 +49,12 @@
 | linea | `0x6e7e838e20ed6657aaf1166f9b7a845565956f51` | StrategyFeeShares-2 | impl | live | no |
 | linea | `0x965356eb2c208ce4130e267342ca720042cce7b2` | CLTHelper-2 | impl | inactive | no |
 | linea | `0x9c225a02426e3229c073a6132e083561e95000b5` | PoolActions-2 | impl | live | no |
+| linea | `0xa8dc31c8c9f93db2e42a5472f580689794639576` | CLTBase-3 | impl | live | no |
+| linea | `0xae668406d5f08e3e916c1d6a1a3f3f64c803dc4e` | CLTModules-2 | impl | inactive | no |
+| linea | `0xafb17876b2e8b5b5d1585393b6a19930a0ab6398` | UserPositions-2 | impl | live | no |
+| linea | `0xb0ca4bbb5c66276bea8b3349234ddeab1fbda050` | CLTTwapQuoter-2 | impl | inactive | no |
+| linea | `0xbd58d9192a9acb9cd7f068a5c07d503f605ae147` | LiquidityShares-2 | impl | live | no |
+| linea | `0xcf47aa71ad8f734ce727f0d4ea357af7eb014f43` | GovernanceFeeHandler-2 | impl | inactive | no |
 | polygon | `0x0587d2b60af1ad9dce86c8f9495c759cb15697a5` | A51LiquidityLocker | impl | live | no |
 | polygon | `0x1ec5fc09b7519a560535891db264df348471a8f9` | A51EmissionWallet | impl | inactive | no |
 | polygon | `0x4276c44b461d8fa6996b2547e232f11e6b725eef` | A51Staking | impl | inactive | no |
@@ -55,25 +63,13 @@
 | polygon | `0x5924bf484388e6ae5035e29805ba1124842d949c` | A51DevelopmentWallet | impl | inactive | no |
 | polygon | `0x7379b92dcae61130ede2f6e6666c3bd90b0e586e` | A51DevelopmentWallet | impl | inactive | no |
 | polygon | `0x8abe779d4f92484e6f154b211cbc5cc2d5b505ad` | A51DevelopmentWallet | impl | inactive | no |
+| polygon | `0x95b77505b38f8a261ada04f54b8d0cda08904708` | UnipilotActiveFactory-2 | impl | live | no |
 | polygon | `0xad60faee959538f439716d50b7100002bdc93aeb` | A51DevelopmentWallet | impl | inactive | no |
 | polygon | `0xaf5d5ee24c510c626c1da41f6785e6caa88ecb74` | A51DevelopmentWallet-2 | impl | inactive | no |
 | polygon | `0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f` | UnipilotPassiveVault | impl | live | yes |
+| polygon | `0xc99fa77ab721817da9dd3c3b4f8ecb13772fcece` | UnipilotActiveFactory-3 | impl | live | no |
 | polygon | `0xcbe0ac9a00a69aa28099091b2ceac5941ec43521` | UnipilotStrategy | impl | inactive | no |
+| polygon | `0xd1299921ea4980fb89873557ac58842346815c67` | UnipilotActiveFactory-4 | impl | live | no |
 | polygon | `0xd64d00f0d297b2cca23016060da37bb4e69d9553` | StakingRewardsFactory | impl | inactive | no |
 | polygon | `0xe9e7c09e82328c3107d367f6c617cf9977e63ed0` | A51 | impl | live | no |
 | polygon | `0xf86a40df6f29c38245f8a027fcfc96d808a955c8` | A51EmissionWallet | impl | inactive | no |
-
-## Source unavailable (11)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0xdfb179526ae303eea49ac99dd360159c39105828`
-- chain-169 `0xffd9acf25f2d930be88d486d588ecba7a418de0b`
-- linea `0xa8dc31c8c9f93db2e42a5472f580689794639576`
-- linea `0xae668406d5f08e3e916c1d6a1a3f3f64c803dc4e`
-- linea `0xafb17876b2e8b5b5d1585393b6a19930a0ab6398`
-- linea `0xb0ca4bbb5c66276bea8b3349234ddeab1fbda050`
-- linea `0xbd58d9192a9acb9cd7f068a5c07d503f605ae147`
-- linea `0xcf47aa71ad8f734ce727f0d4ea357af7eb014f43`
-- polygon `0x95b77505b38f8a261ada04f54b8d0cda08904708`
-- polygon `0xc99fa77ab721817da9dd3c3b4f8ecb13772fcece`
-- polygon `0xd1299921ea4980fb89873557ac58842346815c67`

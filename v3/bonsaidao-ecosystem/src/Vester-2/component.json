@@ -1,0 +1,18 @@
+{
+  "component": "Vester-2",
+  "main_contract": "Vester",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc442cdf1178dca7053c540d558f6a0596794ec06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

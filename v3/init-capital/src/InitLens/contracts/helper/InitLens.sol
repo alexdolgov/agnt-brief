@@ -2,7 +2,6 @@
 pragma solidity ^0.8.19;
 
 import '../common/library/UncheckedIncrement.sol';
-import '../common/library/InitErrors.sol';
 
 import {Math} from '@openzeppelin-contracts/utils/math/Math.sol';
 
@@ -33,36 +32,9 @@ contract InitLens is IInitLens {
     }
 
     /// @inheritdoc IInitLens
-    function getHookPosInfo(address _hook, address _user, uint _posId) external returns (PosInfo memory posInfo) {
+    function getPosInfo(address _hook, address _user, uint _posId) external returns (PosInfo memory posInfo) {
         uint initPosId = IHook(_hook).initPosIds(_user, _posId);
         posInfo = _getPosInfo(initPosId);
-    }
-
-    /// @inheritdoc IInitLens
-    function getHookPosInfos(address _hook, address _user, uint[] calldata _posIds)
-        external
-        returns (PosInfo[] memory posInfos)
-    {
-        uint length = _posIds.length;
-        posInfos = new PosInfo[](length);
-        for (uint i; i < length; i = i.uinc()) {
-            uint initPosId = IHook(_hook).initPosIds(_user, _posIds[i]);
-            posInfos[i] = _getPosInfo(initPosId);
-        }
-    }
-
-    /// @inheritdoc IInitLens
-    function getInitPosInfo(uint _initPosId) external returns (PosInfo memory posInfo) {
-        posInfo = _getPosInfo(_initPosId);
-    }
-
-    /// @inheritdoc IInitLens
-    function getInitPosInfos(uint[] calldata _initPosIds) external returns (PosInfo[] memory posInfos) {
-        uint length = _initPosIds.length;
-        posInfos = new PosInfo[](length);
-        for (uint i; i < length; i = i.uinc()) {
-            posInfos[i] = _getPosInfo(_initPosIds[i]);
-        }
     }
 
     /// @inheritdoc IInitLens
@@ -85,9 +57,8 @@ contract InitLens is IInitLens {
         // poolCash,
         // mode's pool debt ceiling - mode's pool current debt,
         // pool's borrowcap - pool's total debt
-        uint availableBorrCap = poolBorrCap > poolTotalDebt ? poolBorrCap - poolTotalDebt : 0;
-        uint availableModeDebtCeil = modeDebtCeil > modeCurrentDebt ? modeDebtCeil - modeCurrentDebt : 0;
-        borrowableAmt = Math.min(ILendingPool(_pool).cash(), Math.min(availableBorrCap, availableModeDebtCeil));
+        borrowableAmt =
+            Math.min(ILendingPool(_pool).cash(), Math.min(modeDebtCeil - modeCurrentDebt, poolBorrCap - poolTotalDebt));
     }
 
     /// @inheritdoc IInitLens
@@ -117,33 +88,11 @@ contract InitLens is IInitLens {
 
     // internal functions
     function _getPosInfo(uint _initPosId) internal returns (PosInfo memory posInfo) {
-        _require(_initPosId != 0, Errors.ZERO_VALUE);
-        // get position info
         (posInfo.viewer, posInfo.mode) = IPosManager(POS_MANAGER).getPosInfo(_initPosId);
         posInfo.owner = IERC721(POS_MANAGER).ownerOf(_initPosId);
         posInfo.health_e18 = IInitCore(CORE).getPosHealthCurrent_e18(_initPosId);
         posInfo.collCredit_e36 = IInitCore(CORE).getCollateralCreditCurrent_e36(_initPosId);
         posInfo.borrCredit_e36 = IInitCore(CORE).getBorrowCreditCurrent_e36(_initPosId);
         posInfo.health_e18 = IInitCore(CORE).getPosHealthCurrent_e18(_initPosId);
-        // get position collateral info
-        (
-            posInfo.collInfo.pools,
-            posInfo.collInfo.shares,
-            posInfo.collInfo.wLps,
-            posInfo.collInfo.ids,
-            posInfo.collInfo.wLpAmts
-        ) = IPosManager(POS_MANAGER).getPosCollInfo(_initPosId);
-        posInfo.collInfo.amts = new uint[](posInfo.collInfo.pools.length);
-        for (uint i; i < posInfo.collInfo.pools.length; i = i.uinc()) {
-            posInfo.collInfo.amts[i] = ILendingPool(posInfo.collInfo.pools[i]).toAmtCurrent(posInfo.collInfo.shares[i]);
-        }
-        // get position borrow info
-        (posInfo.borrInfo.pools, posInfo.borrInfo.debtShares) = IPosManager(POS_MANAGER).getPosBorrInfo(_initPosId);
-        posInfo.borrInfo.debts = new uint[](posInfo.borrInfo.pools.length);
-        for (uint i; i < posInfo.borrInfo.pools.length; i = i.uinc()) {
-            posInfo.borrInfo.debts[i] =
-                ILendingPool(posInfo.borrInfo.pools[i]).debtShareToAmtCurrent(posInfo.borrInfo.debtShares[i]);
-        }
-        posInfo.posId = _initPosId;
     }
 }

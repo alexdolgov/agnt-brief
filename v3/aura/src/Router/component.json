@@ -2,10 +2,18 @@
   "component": "Router",
   "main_contract": "Router",
   "source_file_count": 38,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x84813aa3e079a665c0b80f944427ee83cba63617",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

@@ -2,7 +2,7 @@
   "component": "Timelock",
   "main_contract": "Timelock",
   "source_file_count": 2,
-  "deployment_count": 5,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,38 @@
     {
       "chain": "polygon",
       "chain_id": 137,
+      "address": "0xcc3e7c85bb0ee4f09380e041fee95a0caedd4a02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1b2e88cc7365d90e7e81392432482925bd8437e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3b6f1fe07cdab8a43f39c3b99ba8ff26e28db8b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x88730d254a2f7e6ac8388c3198afd694ba9f7fae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0xcc3e7c85bb0ee4f09380e041fee95a0caedd4a02",
       "is_proxy": false,
       "implementation_address": null,

@@ -2,17 +2,25 @@
   "component": "DODOCpProxy",
   "main_contract": "DODOCpProxy",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x2f66c5aaf006bd9c51615d617589c16c0ed35fd3",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6bd3747577d164159dc34b85c3c960addc8138fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x973cab76c35bb1da47e044a63546c69a8ac1143c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

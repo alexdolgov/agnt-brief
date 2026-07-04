@@ -1,0 +1,18 @@
+{
+  "component": "SynapseERC20-7",
+  "main_contract": "SynapseERC20",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xbda037f33539615d9d45ad5c7eae1328f546d823",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

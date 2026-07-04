@@ -1,0 +1,18 @@
+{
+  "component": "DolomiteAmmRouterProxy-5",
+  "main_contract": "DolomiteAmmRouterProxy",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc47e015830e775ec932bcce8cfc9452f5d76f4bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

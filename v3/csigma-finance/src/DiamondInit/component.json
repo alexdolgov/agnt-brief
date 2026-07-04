@@ -2,7 +2,7 @@
   "component": "DiamondInit",
   "main_contract": "DiamondInit",
   "source_file_count": 7,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,6 +26,22 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xfead4e7c91965ff73c56b0db30ef367a8e43de62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8a03b6bcc56ca7d814ccdd115a6c9b4280c3eac2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8a03b6bcc56ca7d814ccdd115a6c9b4280c3eac2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

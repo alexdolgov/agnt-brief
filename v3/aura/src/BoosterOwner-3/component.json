@@ -1,7 +1,7 @@
 {
   "component": "BoosterOwner-3",
   "main_contract": "BoosterOwner",
-  "source_file_count": 1,
+  "source_file_count": 5,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xfa838af70314135159b309bf27f1dbf1f954ec34",
+      "address": "0x3ce6408f923326f81a7d7929952947748180f1e6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "AutopilotRouter-8",
+  "main_contract": "AutopilotRouter",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x71761bf6512bc76fb7169d3fa25e83ef5c85f816",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

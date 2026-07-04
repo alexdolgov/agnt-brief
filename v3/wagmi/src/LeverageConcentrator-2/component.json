@@ -1,0 +1,18 @@
+{
+  "component": "LeverageConcentrator-2",
+  "main_contract": "LeverageConcentrator",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x07e1cf58c5e098f2c3acd3241e0f02d24d89da57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

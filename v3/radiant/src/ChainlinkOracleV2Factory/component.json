@@ -2,7 +2,7 @@
   "component": "ChainlinkOracleV2Factory",
   "main_contract": "ChainlinkOracleV2Factory",
   "source_file_count": 30,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,30 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x043fff1bda86602652d3e3148d7ee0ef4e5d6d39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x735326b0b71a1645bbea4b888ab679f7f253816f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa59e235d10a69006f80aa112ed67b185b30747e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x54ac958b628156a3b0c340896c64bf23721fb778",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

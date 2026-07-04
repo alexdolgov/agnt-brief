@@ -1,0 +1,18 @@
+{
+  "component": "VesterImplementation-2",
+  "main_contract": "VesterImplementation",
+  "source_file_count": 62,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd086c37e84146f6a03bacab54f80db3b2691ba80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

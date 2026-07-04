@@ -1,0 +1,18 @@
+{
+  "component": "KineOracleV2-2",
+  "main_contract": "KineOracleV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc903e8a6811f5e4354ec530f34cc90bd820ac1b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

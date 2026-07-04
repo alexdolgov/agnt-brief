@@ -1,0 +1,20 @@
+{
+  "component": "Controller-4",
+  "main_contract": "Controller",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/set-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf1b12a7b1f0af744ed21eec7d3e891c48fd3c329",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

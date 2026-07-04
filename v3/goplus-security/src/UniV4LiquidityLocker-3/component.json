@@ -1,0 +1,18 @@
+{
+  "component": "UniV4LiquidityLocker-3",
+  "main_contract": "UniV4LiquidityLocker",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7873eb8dda56ed49e51c87185ebcb93958e76f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

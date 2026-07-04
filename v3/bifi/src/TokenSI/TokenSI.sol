@@ -1,15 +1,12 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-06
-*/
+// File: contracts/interfaces/SIInterface.sol
 
-// File: contracts/interfaces/IServiceIncentive.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's si interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IServiceIncentive  {
+interface SIInterface  {
 	function setCircuitBreakWithOwner(bool emergency) external returns (bool);
 	function setCircuitBreaker(bool emergency) external returns (bool);
 
@@ -26,14 +23,15 @@ interface IServiceIncentive  {
 	function claimRewardAmountUser(address payable userAddr) external returns (uint256);
 }
 
-// File: contracts/interfaces/IMarketHandlerDataStorage.sol
+// File: contracts/interfaces/marketHandlerDataStorageInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketHandlerDataStorage  {
+interface marketHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function setNewCustomer(address payable userAddr) external returns (bool);
@@ -131,14 +129,15 @@ interface IMarketHandlerDataStorage  {
 	function setLiquidityLimit(uint256 liquidityLimit) external returns (bool);
 }
 
-// File: contracts/interfaces/IMarketManager.sol
+// File: contracts/interfaces/marketManagerInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market manager interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketManager  {
+interface marketManagerInterface  {
 	function setBreakerTable(address _target, bool _status) external returns (bool);
 
 	function getCircuitBreaker() external view returns (bool);
@@ -146,7 +145,7 @@ interface IMarketManager  {
 
 	function getTokenHandlerInfo(uint256 handlerID) external view returns (bool, address, string memory);
 
-	function handlerRegister(uint256 handlerID, address tokenHandlerAddr, uint256 flashFeeRate) external returns (bool);
+	function handlerRegister(uint256 handlerID, address tokenHandlerAddr) external returns (bool);
 
 	function applyInterestHandlers(address payable userAddr, uint256 callerID, bool allFlag) external returns (uint256, uint256, uint256, uint256, uint256, uint256);
 
@@ -186,26 +185,26 @@ interface IMarketManager  {
 
 	function rewardUpdateOfInAction(address payable userAddr, uint256 callerID) external returns (bool);
 	function ownerRewardTransfer(uint256 _amount) external returns (bool);
- 	function getFeeTotal(uint256 handlerID) external returns (uint256);
-  function getFeeFromArguments(uint256 handlerID, uint256 amount, uint256 bifiAmount) external returns (uint256);
 }
 
-// File: contracts/interfaces/IInterestModel.sol
+// File: contracts/interfaces/interestModelInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's interest model interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IInterestModel {
+interface interestModelInterface {
 	function getInterestAmount(address handlerDataStorageAddr, address payable userAddr, bool isView) external view returns (bool, uint256, uint256, bool, uint256, uint256);
 	function viewInterestAmount(address handlerDataStorageAddr, address payable userAddr) external view returns (bool, uint256, uint256, bool, uint256, uint256);
 	function getSIRandBIR(uint256 depositTotalAmount, uint256 borrowTotalAmount) external view returns (uint256, uint256);
 }
 
-// File: contracts/interfaces/IERC20.sol
-// from: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol
+// File: contracts/interfaces/tokenInterface.sol
+
 pragma solidity 0.6.12;
+
 interface IERC20 {
     function totalSupply() external view returns (uint256);
     function balanceOf(address account) external view returns (uint256);
@@ -218,14 +217,15 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: contracts/interfaces/IMarketSIHandlerDataStorage.sol
+// File: contracts/interfaces/marketSIHandlerDataStorageInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market si handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketSIHandlerDataStorage  {
+interface marketSIHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function updateRewardPerBlockStorage(uint256 _rewardPerBlock) external returns (bool);
@@ -243,6 +243,7 @@ interface IMarketSIHandlerDataStorage  {
 }
 
 // File: contracts/Errors.sol
+
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -298,34 +299,16 @@ contract ManagerDataStorageErrors is ManagerModifier {
     string internal constant NULL_ADDRESS = "err addr null";
 }
 
-// File: contracts/context/BlockContext.sol
+// File: contracts/marketHandler/tokenSI.sol
+
 pragma solidity 0.6.12;
 
 /**
- * @title BiFi's BlockContext contract
- * @notice BiFi getter Contract for Block Context Information
- * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
- */
-contract BlockContext {
-    function _blockContext() internal view returns(uint256 context) {
-        // block number chain
-        // context = block.number;
-
-        // block timestamp chain
-        context = block.timestamp;
-    }
-}
-
-// File: contracts/marketHandler/TokenSI.sol
-// SPDX-License-Identifier: BSD-3-Clause
-pragma solidity 0.6.12;
-
-/**
- * @title Bifi TokenSI Contract
+ * @title Bifi tokenSI Contract
  * @notice Service incentive logic
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-contract TokenSI is IServiceIncentive, SIErrors, BlockContext {
+contract tokenSI is SIInterface, SIErrors {
 	event CircuitBreaked(bool breaked, uint256 blockNumber, uint256 handlerID);
 
 	address payable owner;
@@ -340,13 +323,13 @@ contract TokenSI is IServiceIncentive, SIErrors, BlockContext {
 
 	uint256 underlyingTokenDecimal;
 
-	IMarketManager marketManager;
+	marketManagerInterface marketManager;
 
-	IInterestModel interestModelInstance;
+	interestModelInterface interestModelInstance;
 
-	IMarketHandlerDataStorage handlerDataStorage;
+	marketHandlerDataStorageInterface handlerDataStorage;
 
-	IMarketSIHandlerDataStorage SIHandlerDataStorage;
+	marketSIHandlerDataStorageInterface SIHandlerDataStorage;
 
 	IERC20 erc20Instance;
 
@@ -428,13 +411,13 @@ contract TokenSI is IServiceIncentive, SIErrors, BlockContext {
 		return _updateRewardLane(userAddr);
 	}
 	function _updateRewardLane(address payable userAddr) internal returns (bool)
-  	{
+  {
 		MarketRewardInfo memory market;
 		UserRewardInfo memory user;
-		IMarketSIHandlerDataStorage _SIHandlerDataStorage = SIHandlerDataStorage;
+		marketSIHandlerDataStorageInterface _SIHandlerDataStorage = SIHandlerDataStorage;
 		(market.rewardLane, market.rewardLaneUpdateAt, market.rewardPerBlock, user.rewardLane, user.rewardLaneUpdateAt, user.rewardAmount) = _SIHandlerDataStorage.getRewardInfo(userAddr);
 
-		uint256 currentBlockNum = _blockContext();
+		uint256 currentBlockNum = block.number;
 		uint256 depositTotalAmount;
 		uint256 borrowTotalAmount;
 		uint256 depositUserAmount;
@@ -552,7 +535,7 @@ contract TokenSI is IServiceIncentive, SIErrors, BlockContext {
 	function _claimRewardAmountUser(address payable userAddr) internal returns (uint256)
 	{
 		UserRewardInfo memory user;
-		uint256 currentBlockNum = _blockContext();
+		uint256 currentBlockNum = block.number;
 		(user.rewardLane, user.rewardLaneUpdateAt, user.rewardAmount) = SIHandlerDataStorage.getUserRewardInfo(userAddr);
 
 		/* reset the user reward */

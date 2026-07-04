@@ -1,0 +1,18 @@
+{
+  "component": "ConditionalTokens-2",
+  "main_contract": "ConditionalTokens",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xceafdd6bc0bef976fdcd1112955828e00543c0ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

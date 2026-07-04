@@ -2,7 +2,7 @@
   "component": "IIsolationModeUnwrapperTrader",
   "main_contract": "IIsolationModeUnwrapperTrader",
   "source_file_count": 37,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -21,6 +21,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5477f499f1273a89041527e7a1e76184d857df68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

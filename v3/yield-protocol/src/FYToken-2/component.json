@@ -1,15 +1,17 @@
 {
   "component": "FYToken-2",
   "main_contract": "FYToken",
-  "source_file_count": 22,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 19,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/trailofbits/publications/blob/master/reviews/YieldV2.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xa718ff3fa10fa9f797e98e35fd3a0bec9e0aa67c",
+      "address": "0x53c2a1ba37ff3cdaccb3ea030db3de39358e5593",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +19,15 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xf374ab6b299945ff81c1523008d0d407380a396f",
+      "address": "0xfcb9b8c5160cf2999f9879d8230dced469e72eeb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f9b5e639447456ddc784bc441f5a6fd7ce80729",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

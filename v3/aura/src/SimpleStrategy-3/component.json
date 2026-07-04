@@ -1,0 +1,18 @@
+{
+  "component": "SimpleStrategy-3",
+  "main_contract": "SimpleStrategy",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4b5d2848678db574fbc2d2f629143d969a4f41cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

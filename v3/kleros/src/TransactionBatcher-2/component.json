@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x6426800f8508b15aed271337498fa5e7d0794d46",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x82458d1c812d7c930bb3229c9e159cbabd9aa8cb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

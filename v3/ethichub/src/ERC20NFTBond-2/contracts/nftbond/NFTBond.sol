@@ -22,10 +22,8 @@ abstract contract NFTBond is NFT, CollateralizedBondGranter, LockedBondGranter, 
 
     event BondIssued(address indexed buyer, address indexed beneficiary, uint256 tokenId, uint256 mintingDate, uint256 maturity, uint256 principal, uint256 interest, string imageCID, string bondTokenURI);
     event BondRedeemed(address indexed redeemer, address indexed beneficiary, uint256 tokenId, uint256 redeemDate, uint256 withdrawn);
-    event BondExited(address indexed redeemer, address indexed beneficiary, uint256 indexed tokenId, uint256 timestamp, uint256 principal);
 
     error CooldownCanNotBeActivatedNotOwner();
-    error BeneficiaryIsNotInvestor();
 
     function __NFTBond_init(
         string calldata _name,
@@ -47,27 +45,6 @@ abstract contract NFTBond is NFT, CollateralizedBondGranter, LockedBondGranter, 
     function activateCooldown(uint256 tokenId) public override {
         if (ownerOf(tokenId) != msg.sender) revert CooldownCanNotBeActivatedNotOwner();
         super.activateCooldown(tokenId);
-    }
-
-    function requestExit(uint256 tokenId) public virtual override whenNotPaused {
-        if (ownerOf(tokenId) != msg.sender) revert CooldownCanNotBeActivatedNotOwner();
-        super.requestExit(tokenId);
-    }
-
-    function exitBond(uint256 tokenId) public virtual override whenNotPaused {
-        if (ownerOf(tokenId) != msg.sender) revert CooldownCanNotBeActivatedNotOwner();
-        super.exitBond(tokenId);
-    }
-
-    function _exitBeneficiary(uint256 tokenId) internal view override returns (address) {
-        return ownerOf(tokenId);
-    }
-
-    function _afterBondExited(uint256 tokenId, uint256 principal, address beneficiary)
-        internal virtual override(CollateralizedBondGranter, BondGranter)
-    {
-        super._afterBondExited(tokenId, principal, beneficiary);
-        emit BondExited(msg.sender, beneficiary, tokenId, block.timestamp, principal);
     }
 
     /**
@@ -146,14 +123,13 @@ abstract contract NFTBond is NFT, CollateralizedBondGranter, LockedBondGranter, 
 
     function _bondTokenURI(uint256 tokenId) private view returns (string memory) {
         Bond memory bond = bonds[tokenId];
-        uint8 decimals = principalToken.decimals();
         string memory dataJSON = string.concat(
             '{'
                 '"name": "', string.concat('Minimice Bond #', tokenId.toString()), '", ',
                 '"image": "ipfs://', bond.imageCID, '", ',
                 '"external_url": "https://ethichub.com",',
                 '"attributes": [',
-                _setAttribute('Principal', string.concat(bond.principal._decimalString(decimals, false), ' USD')),',',
+                _setAttribute('Principal', string.concat(bond.principal._decimalString(18, false), ' USD')),',',
                 _setAttribute('APY', (bond.interest*365 days/1e16)._decimalString(2, true)),',',
                 _setAttribute('Maturity', string.concat((bond.maturity*1e2/30 days)._decimalString(2, false), ' Months')),
                 ']'
@@ -167,7 +143,7 @@ abstract contract NFTBond is NFT, CollateralizedBondGranter, LockedBondGranter, 
     }
 
     /**
-     * ////// [v1.0, v1.1, v1.2, v2.0, v2.1, v2.2, v2.2.1, v2.2.2] //////
+     * ////// [v1.0, v1.1, v1.2, v2.0, v2.1, v2.2] //////
      * 49 __gap
      * 49 (mistakenly deployed with 49 store gaps)
      */

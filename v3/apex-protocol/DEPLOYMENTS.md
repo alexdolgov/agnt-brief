@@ -1,6 +1,6 @@
 # apex-protocol — deployments
 
-224 verified deployment(s) across 71 component(s).
+228 verified deployment(s) across 72 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -50,6 +50,7 @@
 | arbitrum | `0x47dea1457073056a1f82dca6fe8d1f5f1b0cb43e` | Migrator | impl | inactive | no |
 | arbitrum | `0x495e148a66b240d17ba5c8e57aff1f5259811241` | PriceOracle | impl | live | yes |
 | arbitrum | `0x4c386fc574e66245e6380bdbb50147572d84ef0f` | PriceOracle | impl | live | yes |
+| arbitrum | `0x4c9363c2a27ba2e4fb172c31972832348838a4ff` | Multicall2-2 | impl | inactive | no |
 | arbitrum | `0x4e101bc1eb3ebb22276a7d94bd8b5adf2da8d793` | Router | impl | inactive | no |
 | arbitrum | `0x4e24505c2cf17df7235aadb40aa41b82b34750b0` | PriceOracle | proxy | live | yes |
 | arbitrum | `0x4e5d91be46510375f339fef1cfba211837a11012` | Router | impl | inactive | no |
@@ -77,6 +78,7 @@
 | arbitrum | `0x7fa3b15b7385729a7ba356b4a874290bdb59ad45` | Router | impl | inactive | no |
 | arbitrum | `0x7faaf13e445771fd3eef01acd1f24e39ca889d11` | Config | impl | inactive | no |
 | arbitrum | `0x82addfb22c87c921748d2bb7ef708cee5793fb7a` | Invitation | impl | live | yes |
+| arbitrum | `0x82d550b27ba4fd402aad58ece8c393fcec6b4afa` | Multicall2-2 | impl | inactive | no |
 | arbitrum | `0x8366cf19616246992a0a25c0f06a42cb5f775798` | Config | impl | inactive | no |
 | arbitrum | `0x951033e46e2aa7fba52132daad4ee91a39d6694a` | Router | impl | inactive | no |
 | arbitrum | `0x995d32fe68ed48c34115dd3551cf80093f3fe3d5` | StakingQuery | impl | inactive | no |
@@ -114,6 +116,7 @@
 | arbitrum | `0xe22df911eddc05ba2197f92e252781407891274a` | Amm | impl | inactive | yes |
 | arbitrum | `0xeaa12c2c7258d750e3bd6f1ab58885876e2a4e8c` | RouterForKeeper | impl | inactive | no |
 | arbitrum | `0xeac47669f5a1f4a63ff61f570d1bbe73e0319be4` | StakingPoolFactory | impl | inactive | no |
+| arbitrum | `0xed5d1e1320720cae8bb40275550a7d307a082ac3` | Proxy | impl | live | no |
 | arbitrum | `0xee10ab0cce0914dea24a8a952ff9f8c3bb3b1e8b` | PriceOracle | impl | live | yes |
 | arbitrum | `0xf0db52fbd2ac750545a7a50d4efee782d0d282f8` | Margin | impl | inactive | yes |
 | arbitrum | `0xf0e7044bd7a28e74aacac14cdd0a33a7545a4558` | FeeTreasury | impl | inactive | no |
@@ -193,6 +196,7 @@
 | ethereum | `0xa67821bc089b4374e8d62475526e7e84f09da086` | Governance | impl | live | no |
 | ethereum | `0xaadfdb9cac145c65f2284fbe24600d07fb37f7bd` | PerpetualEscapeVerifier | impl | live | no |
 | ethereum | `0xae325ce505aa13edc30d48187b05c24a3bac2707` | CpuOods | impl | live | no |
+| ethereum | `0xaf7d1a0c128d392d99c8bd4e6b880ff95e8b907b` | ApeXPool3 | impl | live | no |
 | ethereum | `0xafbc0c1665e16a8843cb55ded3638e7a6e0ffa3b` | BananaClaimable | impl | inactive | no |
 | ethereum | `0xb20d98a39aa0411d5f28035564a57381cc5b63c9` | Banana | impl | inactive | no |
 | ethereum | `0xb45b87ba49c64f79df0ef81043a57999af5ea7a0` | PoseidonPoseidonPartialRoundKey0Column | impl | live | no |
@@ -228,11 +232,3 @@
 | ethereum | `0xffc7974cd74b95f631f454cd787aac28f0476b44` | StarkVerifier | impl | live | no |
 | mantle | `0x51fcaaf4d6288f21cedda92f22a3c0251e8f1870` | EsAPEX2 | impl | live | no |
 | mantle | `0x661ea23a54dcb7dcbb533be0f50dc6ea2ecfedbb` | ApeXPool3 | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x4c9363c2a27ba2e4fb172c31972832348838a4ff`
-- arbitrum `0x82d550b27ba4fd402aad58ece8c393fcec6b4afa`
-- arbitrum `0xed5d1e1320720cae8bb40275550a7d307a082ac3`
-- ethereum `0xaf7d1a0c128d392d99c8bd4e6b880ff95e8b907b`

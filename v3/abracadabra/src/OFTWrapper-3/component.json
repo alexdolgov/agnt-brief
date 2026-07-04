@@ -1,0 +1,18 @@
+{
+  "component": "OFTWrapper-3",
+  "main_contract": "OFTWrapper",
+  "source_file_count": 16,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe1261e47b08a22df93af46889ee504c2aa6dfd4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,20 +1,4 @@
 // SPDX-License-Identifier: MIT
-/* ———————————————————————————————————————————————————————————————————————————————— *
- *    _____     ______   ______     __     __   __     __     ______   __  __       *
- *   /\  __-.  /\__  _\ /\  == \   /\ \   /\ "-.\ \   /\ \   /\__  _\ /\ \_\ \      *
- *   \ \ \/\ \ \/_/\ \/ \ \  __<   \ \ \  \ \ \-.  \  \ \ \  \/_/\ \/ \ \____ \     *
- *    \ \____-    \ \_\  \ \_\ \_\  \ \_\  \ \_\\"\_\  \ \_\    \ \_\  \/\_____\    *
- *     \/____/     \/_/   \/_/ /_/   \/_/   \/_/ \/_/   \/_/     \/_/   \/_____/    *
- *                                                                                  *
- * ————————————————————————————————— dtrinity.org ————————————————————————————————— *
- *                                                                                  *
- *                                         ▲                                        *
- *                                        ▲ ▲                                       *
- *                                                                                  *
- * ———————————————————————————————————————————————————————————————————————————————— *
- * dTRINITY Protocol: https://github.com/dtrinity                                   *
- * ———————————————————————————————————————————————————————————————————————————————— */
-
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts-5/access/AccessControl.sol";
@@ -444,18 +428,6 @@ contract AmoManager is AccessControl, OracleAware {
         return
             (dusdAmount * oracle.getAssetPrice(address(dusd))) /
             (10 ** dusdDecimals);
-    }
-
-    /* Admin */
-
-    /**
-     * @notice Sets the collateral vault address
-     * @param _collateralVault The address of the new collateral vault
-     */
-    function setCollateralVault(
-        address _collateralVault
-    ) external onlyRole(DEFAULT_ADMIN_ROLE) {
-        collateralHolderVault = CollateralVault(_collateralVault);
     }
 }
 

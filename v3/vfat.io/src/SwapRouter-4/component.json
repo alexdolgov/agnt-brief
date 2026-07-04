@@ -1,0 +1,26 @@
+{
+  "component": "SwapRouter-4",
+  "main_contract": "SwapRouter",
+  "source_file_count": 48,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0792a633f0c19c351081cf4b211f68f79bcc9676",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8513e5b96ad29b51441d88c0370187c028a4b1f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

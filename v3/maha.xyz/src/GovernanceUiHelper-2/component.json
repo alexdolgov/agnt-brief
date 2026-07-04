@@ -1,0 +1,18 @@
+{
+  "component": "GovernanceUiHelper-2",
+  "main_contract": "GovernanceUiHelper",
+  "source_file_count": 47,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5576e868ca293714b9514a95102ae56140bc0442",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AutopoolRegistry-6",
+  "main_contract": "AutopoolRegistry",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfbf87c01e7cb13d45112324620dc40b8c7e352ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

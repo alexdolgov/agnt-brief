@@ -1,0 +1,18 @@
+{
+  "component": "DynamicAsset-4",
+  "main_contract": "DynamicAsset",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x29eeb257a2a6ecde2984acedf80a1b687f18ec91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

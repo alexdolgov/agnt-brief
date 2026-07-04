@@ -2,7 +2,7 @@
   "component": "RAAC_Stable_Vault_Factory",
   "main_contract": "RAAC Stable Vault Factory",
   "source_file_count": 11,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x10f6ef027725df44cebbf1efd25d3e1df3740d4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1ca332516a74e136575bac99205c60888982989",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

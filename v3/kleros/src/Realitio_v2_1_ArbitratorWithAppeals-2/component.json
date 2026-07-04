@@ -2,7 +2,7 @@
   "component": "Realitio_v2_1_ArbitratorWithAppeals-2",
   "main_contract": "Realitio_v2_1_ArbitratorWithAppeals",
   "source_file_count": 9,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,30 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2018038203aee8e7a29dabd73771b0355d4f85ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc45d8d9b2b6843528a4dc2d8b5858e5c258d2992",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff32eff53459485074b4db14633252c9dca3791a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

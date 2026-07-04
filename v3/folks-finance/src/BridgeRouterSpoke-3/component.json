@@ -1,0 +1,28 @@
+{
+  "component": "BridgeRouterSpoke-3",
+  "main_contract": "BridgeRouterSpoke",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Folks-Finance/audits/blob/main/OtterSec%20-%20Audit%20of%20XChain%20Lending%20-%20May%202024.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x0700b2cb26688c035bd5dbbda070be408c20779c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x5f2f4771b7dc7e2f7e9c1308b154e1e8957ecab0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

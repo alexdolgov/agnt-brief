@@ -19,9 +19,8 @@ import {LoanStorage} from "./LoanStorage.sol";
 import {IAerodromeRouter} from "./interfaces/IAerodromeRouter.sol";
 import {IRouter} from "./interfaces/IRouter.sol";
 import { ISwapper } from "./interfaces/ISwapper.sol";
+import {ICommunityRewards} from "./interfaces/ICommunityRewards.sol";
 import { LoanUtils } from "./LoanUtils.sol";
-import { IPortfolioFactory } from "./accounts/IPortfolioFactory.sol";
-import { IMigrationFacet } from "./facets/account/migration/IMigrationFacet.sol";
 
 contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUpgradeable, RateStorage, LoanStorage {
     // initial contract parameters are listed here
@@ -29,15 +28,15 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
     IVoter internal _voter;
     IRewardsDistributor internal _rewardsDistributor;
     address private _pool; // deprecated
-    IERC20 public _asset;
+    IERC20 internal _asset;
     IERC20 internal _aero;
-    IVotingEscrow public _ve;
+    IVotingEscrow internal _ve;
     IAerodromeRouter internal _aeroRouter;
     address internal _aeroFactory;
     address internal _rateCalculator; // deprecated
     address public _vault;
 
-    bool internal _paused; // deprecated set rewardsRate to 0 to pause the loan
+    bool internal _paused;
     uint256 public _outstandingCapital;
     uint256 public  _multiplier; // rewards rate multiplier
 
@@ -79,7 +78,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
     // Weights for each pool (must equal length of _defaultPools)
     uint256[] public _defaultWeights;
     // Time when the default pools were last changed
-    uint256 internal _defaultPoolChangeTime; // deprecated
+    uint256 public _defaultPoolChangeTime;
 
     
     /**
@@ -449,11 +448,12 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * - If the `_rewardsDistributor.claim` function fails, the function will
      *   silently catch the error and return without making any changes.
      */
-    function _claimRebase(LoanInfo storage loan) virtual internal {
+    function _claimRebase(LoanInfo storage loan) internal {
         uint256 claimable = _rewardsDistributor.claimable(loan.tokenId);
         if (claimable > 0) {
             try _rewardsDistributor.claim(loan.tokenId) {
                 addTotalWeight(claimable);
+                _recordDepositOnManagedNft(loan.tokenId, claimable, loan.borrower);
                 loan.weight += claimable;
             } catch {
             }
@@ -465,7 +465,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * @dev This function requires the caller to have approved the contract to transfer the specified amount of USDC.
      * @param amount The amount of USDC to transfer to the vault and record as rewards.
      */
-    function incentivizeVault(uint256 amount) virtual public {
+    function incentivizeVault(uint256 amount) public {
         _asset.transferFrom(msg.sender, _vault, amount);
         recordRewards(amount, msg.sender, type(uint256).max);
     }
@@ -485,18 +485,11 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      */
     function _handleZeroBalance(uint256 tokenId, uint256 remaining, uint256 totalRewards, bool wasActiveLoan) internal {
         LoanInfo storage loan = _loanDetails[tokenId];
-        
-        bool usePayoffToken = userUsesPayoffToken(loan.borrower) &&  getUserPayoffToken(loan.borrower) != 0;
         // InvestToVault: invest the amount to the vault on behalf of the borrower
         // In the rare event a user may be blacklisted from  USDC, we invest to vault directly for the borrower to avoid any issues.
         // The user may withdraw their investment later if they are unblacklisted.
-        if (loan.zeroBalanceOption == ZeroBalanceOption.InvestToVault || wasActiveLoan || usePayoffToken) {
+        if (loan.zeroBalanceOption == ZeroBalanceOption.InvestToVault || wasActiveLoan) {
             remaining -= _payZeroBalanceFee(loan.borrower, tokenId, remaining, totalRewards, address(_asset));
-            remaining -= _handlePayoffToken(loan.borrower, tokenId, remaining);
-            if(remaining == 0) {
-                return;
-            }
-
             _asset.approve(_vault, remaining);
             IERC4626(_vault).deposit(remaining, loan.borrower);
             emit RewardsInvested(currentEpochStart(), remaining, loan.borrower, tokenId);
@@ -507,6 +500,9 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         remaining -= _payZeroBalanceFee(loan.borrower, tokenId, remaining, totalRewards, address(asset));
         emit RewardsPaidtoOwner(currentEpochStart(), remaining, loan.borrower, tokenId, address(asset));
         require(asset.transfer(loan.borrower, remaining));
+        if(tokenId == getManagedNft() && remaining > 0) {
+            ICommunityRewards(loan.borrower).notifyRewardAmount(address(asset), remaining);
+        }
     }
 
 
@@ -555,12 +551,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         _processRewards(fees, tokens, tokenId, tradeData);
         uint256 rewardsAmount = _asset.balanceOf(address(this));
         address rewardToken = address(_asset);
-        // If the loan balance is zero and the user does not use a payoff token or the payoff token is zero, 
-        // then it means the loan is fully paid off.
-        // If the zero balance option is set to PayToOwner, we will pay the rewards to the owner in the desired token.
-        if (loan.balance == 0 && 
-            (!userUsesPayoffToken(loan.borrower) || getUserPayoffToken(loan.borrower) == 0) && 
-            loan.zeroBalanceOption == ZeroBalanceOption.PayToOwner) {
+        if (loan.balance == 0 && (!userUsesPayoffToken(loan.borrower) || getUserPayoffToken(loan.borrower) == 0)) {
             rewardToken = loan.preferredToken == address(0) ? address(_asset) : loan.preferredToken;
             rewardsAmount = IERC20(rewardToken).balanceOf(address(this));
         }
@@ -582,7 +573,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
 
 
         // Handle zero balance case
-        if (loan.balance == 0) {
+        if (loan.balance == 0 && (!userUsesPayoffToken(loan.borrower) || getUserPayoffToken(loan.borrower) == 0)) {
             _handleZeroBalanceClaim(loan, rewardsAmount, allocations[0], aeroAmount);
         } else {
             // Handle active loan case
@@ -600,7 +591,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         address[][] calldata tokens,
         uint256 tokenId,
         bytes calldata tradeData
-    ) internal virtual {
+    ) internal {
         _voter.claimFees(fees, tokens, tokenId);
         ISwapper swapper = ISwapper(getSwapper());
         address[] memory flattenedTokens = swapper.flattenToken(tokens);
@@ -630,12 +621,12 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
     }
 
     /**
-     * @notice Returns the address of the ODOS v3 Router contract.
+     * @notice Returns the address of the ODOS Router contract.
      * @dev This function is used to interact with the ODOS Router for trading and swapping tokens.
      * @return The address of the ODOS Router contract.
      */
     function odosRouter() public virtual pure returns (address) {
-        return 0x0D05a7D3448512B78fa8A9e46c4872C88C4a0D05; // ODOS Router address
+        return 0x19cEeAd7105607Cd444F5ad10dd51356436095a1; // ODOS Router address
     }
 
     /**
@@ -744,7 +735,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * @param allocation The amount  to be allocated for increasing the veNFT balance.
      * @return spent The amount spent to increase the veNFT balance, or 0 if no increase is made.
      */
-    function _increaseNft(LoanInfo storage loan, uint256 allocation, bool takeFees) internal virtual returns (uint256 spent) {
+    function _increaseNft(LoanInfo memory loan, uint256 allocation, bool takeFees) internal  returns (uint256 spent) {
         if(loan.increasePercentage > 0 && allocation == 0) {
             revert(); // Should be an allocation if increasePercentage is set
         }
@@ -752,11 +743,13 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
             return 0;
         }
         _aero.approve(address(_ve), allocation);
-        uint256 tokenToIncrease = loan.tokenId;
+        uint256 managedNft = getManagedNft();
+        uint256 tokenToIncrease = (userIncreasesManagedToken(loan.borrower) || loan.optInCommunityRewards) && managedNft != 0 ? managedNft : loan.tokenId;
         _ve.increaseAmount(tokenToIncrease, allocation);
         emit VeNftIncreased(currentEpochStart(), loan.borrower, tokenToIncrease, allocation, loan.tokenId);
         addTotalWeight(allocation);
         loan.weight += allocation;
+        _recordDepositOnManagedNft(tokenToIncrease, allocation, loan.borrower);
         return allocation;
     }
 
@@ -767,7 +760,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * @param amount The amount of tokens to be added to the veNFT.
      */
 
-    function increaseAmount(uint256 tokenId, uint256 amount) virtual public {
+    function increaseAmount(uint256 tokenId, uint256 amount) public {
         require(_ve.ownerOf(tokenId) == address(this));
         require(amount > 0);
         require(_aero.transferFrom(msg.sender, address(this), amount));
@@ -777,6 +770,22 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         addTotalWeight(amount);
         LoanInfo storage loan = _loanDetails[tokenId];
         loan.weight += amount;
+        _recordDepositOnManagedNft(tokenId, amount, msg.sender);
+    }
+
+
+    /**
+     * @dev Records a deposit on the managed NFT for community rewards.
+     * @param tokenId The ID of the token being deposited.
+     * @param amount The amount being deposited.
+     * @param owner The address of the owner of the token.
+     */
+    function _recordDepositOnManagedNft(uint256 tokenId, uint256 amount, address owner) internal {
+        uint256 managedNft = getManagedNft();
+        (, address managedNftAddress) = getLoanDetails(managedNft);
+        if(managedNftAddress != address(0)) {
+            ICommunityRewards(managedNftAddress).deposit(tokenId, amount, owner);
+        }
     }
 
     /**
@@ -825,11 +834,9 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * @dev This function adds the specified rewards to the total rewards for the current epoch.
      * @param rewards The amount of rewards to record.
      */
-    function recordRewards(uint256 rewards, address borrower, uint256 tokenId) internal virtual {
-        if (rewards > 0) {
-            _rewardsPerEpoch[currentEpochStart()] += rewards;
-            emit RewardsReceived(currentEpochStart(), rewards, borrower, tokenId);
-        }
+    function recordRewards(uint256 rewards, address borrower, uint256 tokenId) internal {
+        _rewardsPerEpoch[currentEpochStart()] += rewards;
+        emit RewardsReceived(currentEpochStart(), rewards, borrower, tokenId);
     }
 
     /* Rate Methods */
@@ -901,22 +908,6 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         return _outstandingCapital;
     }
 
-    /**
-     * @notice Get the lending asset address (ILendingPool implementation)
-     * @return The address of the lending asset
-     */
-    function lendingAsset() external view returns (address) {
-        return address(_asset);
-    }
-
-    /**
-     * @notice Get the vault address (ILendingPool implementation)
-     * @return The vault address
-     */
-    function lendingVault() external view returns (address) {
-        return _vault;
-    }
-
 
     /**
      * @notice Retrieves the rewards for the current epoch.
@@ -929,6 +920,30 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
 
     /* OWNER METHODS */
 
+    /**
+     * @notice Allows the owner to merge the managed NFT with a specified token ID.
+     * @dev This function can only be called by the owner of the contract.
+     *      Note: This should only be possible for Flight School rewards sent to the contract.
+     * @param tokenId The ID of the token to merge with the managed NFT.
+     *
+     * ManagedNFT is essentially a community owned veNFT where users can increase the NFT to obtain shares
+     * In the future this can be used as collateral for loans
+     */
+   function mergeIntoManagedNft(uint256 tokenId) public onlyOwner {
+        uint256 managedNft = getManagedNft();
+        require(_ve.ownerOf(tokenId) == address(this));
+        require(_ve.ownerOf(managedNft) == address(this));
+        LoanInfo storage loan = _loanDetails[tokenId];
+        require(loan.borrower == address(0));
+        uint256 beginningBalance = _getLockedAmount(tokenId);
+        _ve.merge(tokenId, managedNft);
+        uint256 weightAdded = _getLockedAmount(tokenId) - beginningBalance;
+        addTotalWeight(weightAdded);
+        loan.weight += weightAdded;
+        (, address managedNftAddress) = getLoanDetails(managedNft);
+        ICommunityRewards(managedNftAddress).notifyFlightBonus(weightAdded);
+    }
+    
 
     /**
      * @notice Allows user to merge their veNFT into another veNFT.
@@ -936,7 +951,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * @param from The ID of the token to merge from.
      * @param to The ID of the token to merge to.
      */
-    function merge(uint256 from, uint256 to) virtual public {
+    function merge(uint256 from, uint256 to) public {
         require(_ve.ownerOf(to) == address(this));
         require(_ve.ownerOf(from) == msg.sender);
         LoanInfo storage loan = _loanDetails[to];
@@ -946,6 +961,21 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         uint256 weightIncrease = _getLockedAmount(to) - beginningBalance;
         addTotalWeight(weightIncrease);
         loan.weight += weightIncrease;
+    }
+    
+
+    /**
+     * @notice Sets the managed NFT for the contract
+     * @dev Transfers the NFT from the sender to the contract, updates the managed NFT state
+     *    The managed NFT is used to represent the community owned veNFT, the owner of the managed NFT will be the managedNFT contract itself.
+     *    The only special case a managedNFT has within this contract is the ability to merge unowned venfts into it
+     * @param tokenId The ID of the NFT to be managed by the contract.
+     */
+    function setManagedNft(uint256 tokenId) public onlyOwner override {
+        LoanInfo storage loan = _loanDetails[tokenId];
+        require(loan.borrower != address(0));
+        require(getManagedNft() == 0);
+        super.setManagedNft(tokenId);
     }
 
     /**
@@ -1000,7 +1030,7 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
      * @param pools An array of addresses representing the pools to be approved or disapproved.
      * @param enable A boolean indicating whether to approve or disapprove the pools.
      */
-    function setApprovedPools(address[] calldata pools, bool enable) public virtual onlyOwner {
+    function setApprovedPools(address[] calldata pools, bool enable) public onlyOwner {
         for (uint256 i = 0; i < pools.length; i++) {
             // confirm pool is a valid gauge
             address gauge = _voter.gauges(pools[i]);
@@ -1106,6 +1136,17 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         require(isApprovedToken(preferredToken));
         loan.preferredToken = preferredToken;
     }
+    
+    function setOptInCommunityRewards(
+        uint256[] calldata tokenIds,
+        bool optIn
+    ) public {
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            LoanInfo storage loan = _loanDetails[tokenIds[i]];
+            require(loan.borrower == msg.sender);
+            loan.optInCommunityRewards = optIn;
+        }
+    }
 
 
     /**
@@ -1125,27 +1166,12 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
         // if pools/weights are empty, reset timestamp so user will be in automatic voting mode
         if(pools.length == 0 && weights.length == 0) {
             for (uint256 i = 0; i < tokenIds.length; i++) {
-                LoanInfo storage loan = _loanDetails[tokenIds[i]];
+            LoanInfo storage loan = _loanDetails[tokenIds[i]];
                 require(loan.borrower == msg.sender);
                 loan.voteTimestamp = 0;
             }
             return;
         }
-        // if pools has one element and is the zero address, set to manual voting mode
-        // if the last voted timestamp is greater than the timestamp of the loan, set the vote timestamp to the last voted timestamp
-        // if(pools.length == 1 && pools[0] == address(0)) {
-        //     for (uint256 i = 0; i < tokenIds.length; i++) {
-        //         uint256 lastVoted = IVoter(address(_voter)).lastVoted(tokenIds[i]);
-        //         LoanInfo storage loan = _loanDetails[tokenIds[i]];
-        //         if(lastVoted > loan.timestamp) {
-        //             require(loan.borrower == msg.sender);
-        //             loan.voteTimestamp = lastVoted;
-        //         }
-        //         bool isActive = ProtocolTimeLibrary.epochStart(loan.voteTimestamp) > ProtocolTimeLibrary.epochStart(block.timestamp) - 14 days;
-        //         require(isActive);
-        //     }
-        //     return;
-        // }
         _validatePoolChoices(pools, weights);
         for (uint256 i = 0; i < tokenIds.length; i++) {
             _vote(tokenIds[i], pools, weights);
@@ -1283,73 +1309,5 @@ contract Loan is ReentrancyGuard, Initializable, UUPSUpgradeable, Ownable2StepUp
 
     function _entryPoint() internal view virtual returns (address) {
         return 0x40AC2E93d1257196a418fcE7D6eDAcDE65aAf2BA;
-    }
-
-    /** Portfolio Account Methods */
-
-    /**
-     * @notice Migrates a loan to be controlled by the user's portfolio account.
-     * @dev Transfers loan ownership from user's EOA to their portfolio account.
-     *      Creates a portfolio if the user doesn't have one.
-     * @param tokenId The ID of the loan to migrate.
-     */
-    function migrateToPortfolio(uint256 tokenId) external {
-        LoanInfo storage loan = _loanDetails[tokenId];
-        require(loan.borrower == msg.sender);
-        
-        address factory = getPortfolioFactory();
-        require(factory != address(0));
-        
-        address portfolio = IPortfolioFactory(factory).portfolioOf(msg.sender);
-        if(portfolio == address(0)) {
-            portfolio = IPortfolioFactory(factory).createAccount(msg.sender);
-        }
-
-        IVotingEscrow(address(_ve)).approve(address(portfolio), tokenId);
-        IMigrationFacet(portfolio).migrate(tokenId, loan.unpaidFees);   // migrate the loan to the portfolio with unpaid fees
-        delete _loanDetails[tokenId];
-    }
-
-
-    function payFromPortfolio(uint256 totalPayment, uint256 feesToPay) external {
-        address factory = getPortfolioFactory();
-        require(factory != address(0));
-
-        address portfolioOwner = IPortfolioFactory(factory).ownerOf(msg.sender);
-        require(portfolioOwner != address(0));
-        
-        // Handle unpaid fees first - transfer to protocol owner
-        if(feesToPay > 0) {
-            _asset.transferFrom(msg.sender, owner(), feesToPay);
-            emit LoanPaid(0, portfolioOwner, feesToPay, currentEpochStart(), true);
-            emit ProtocolFeePaid(currentEpochStart(), feesToPay, portfolioOwner, 0, address(_asset));
-        }
-        
-        // Transfer remaining amount to vault
-        uint256 balanceToPay = totalPayment - feesToPay;
-        if(balanceToPay > 0) {
-            _asset.transferFrom(msg.sender, _vault, balanceToPay);
-            _outstandingCapital -= balanceToPay;
-            emit LoanPaid(0, portfolioOwner, balanceToPay, currentEpochStart(), false);
-        }
-    }
-
-    function borrowFromPortfolio(uint256 amount) external returns (uint256 originationFee) {
-        address factory = getPortfolioFactory();
-        require(factory != address(0));
-
-        address portfolioOwner = IPortfolioFactory(factory).ownerOf(msg.sender);
-        require(portfolioOwner != address(0));
-
-        originationFee = (amount * 80) / 10000; // 0.8%
-        _outstandingCapital += amount;
-        
-        // Transfer origination fee to owner upfront
-        _asset.transferFrom(_vault, owner(), originationFee);
-        emit ProtocolFeePaid(currentEpochStart(), originationFee, portfolioOwner, 0, address(_asset));
-        
-        // Transfer remaining amount to portfolio owner
-        _asset.transferFrom(_vault, msg.sender, amount - originationFee);
-        emit FundsBorrowed(0, portfolioOwner, amount);
     }
 }

@@ -1,0 +1,26 @@
+{
+  "component": "ZeroExApiAdapter-2",
+  "main_contract": "ZeroExApiAdapter",
+  "source_file_count": 5,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1f1a16c32982829bc77c9796ce862c628fb37308",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x28ccf520dc09f1062534806f868625a20e8f4f23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

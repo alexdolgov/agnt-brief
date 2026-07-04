@@ -1,6 +1,6 @@
 # kogefarm — deployments
 
-66 verified deployment(s) across 13 component(s).
+74 verified deployment(s) across 21 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,6 +19,7 @@
 | polygon | `0x13748d548d95d78a3c83fe3f32604b4796cffa23` | Koge | impl | live | no |
 | polygon | `0x17051bb60771888bc908b6946f4fb7850042fe1d` | vaultBase | impl | inactive | yes |
 | polygon | `0x1931684cb9f178e8079f418e0089ecf82049e91c` | StrategyBase | impl | inactive | no |
+| polygon | `0x1be31ca4d4c47b7728e180813264d770ae841aea` | StrategySingle | impl | inactive | no |
 | polygon | `0x1db0c172de5c7575268f1e50b882da74e6d3d341` | MasterChefFund | impl | inactive | no |
 | polygon | `0x1f98d8bf1cd7602b63d7a90e443e06263124d081` | vaultBase | impl | inactive | yes |
 | polygon | `0x24dbf973cc3fe6357cab6394d94781784a55d930` | vaultBase | impl | inactive | yes |
@@ -31,6 +32,7 @@
 | polygon | `0x2f3e17b34a79f4990153ee5588ac04724e773c6e` | vaultBase | impl | inactive | yes |
 | polygon | `0x31645aefbcf37127f511b7bd9a7bfda7427aef8e` | StrategyIron | impl | inactive | no |
 | polygon | `0x32219c86b0317601ea4ced7586a278ac89b465eb` | vaultBase | impl | inactive | yes |
+| polygon | `0x33d9d921e0a040b50523b246488566fd41357c8b` | StrategySingle-2 | impl | inactive | no |
 | polygon | `0x344e551bedc6149f1a4830edf1a4cefa830db573` | StrategyBase | impl | inactive | no |
 | polygon | `0x37578a076b7faa63280e1fd4b2113fdcb9814420` | vaultBase | impl | inactive | yes |
 | polygon | `0x383fa10f0b4d1ced03ba4adbca839ad2c88fd960` | StrategyTwoAssets | impl | inactive | no |
@@ -45,10 +47,13 @@
 | polygon | `0x43f71565f99073903cfa0e072345f8a05e0b0ca4` | IronUsdcQuickBase | impl | inactive | no |
 | polygon | `0x49a0c6951de1376180dd876c9306b04fcb3b6a17` | vaultBase | impl | inactive | yes |
 | polygon | `0x4c5b8745a6169707e349501b1604e0d8e9e564c2` | StrategyBase | impl | inactive | no |
+| polygon | `0x4f624dc3100d585585d3f74778a2e9e20d3e456e` | StrategySingle-3 | impl | inactive | no |
 | polygon | `0x510d776fea6469531f8be69e669e553c0de69621` | vaultBase | impl | live | yes |
+| polygon | `0x5161c705b68e0da0d6fc6ba4cbb4da27781e409a` | StrategySingle-4 | impl | inactive | no |
 | polygon | `0x54507ee8e18fb6d7e4771a6619b04a84635bff4b` | vaultBase | impl | inactive | yes |
 | polygon | `0x55c08f4f053170009010cf7435064d5e0e6905e3` | vaultBase | impl | live | yes |
 | polygon | `0x58201c1331bf7f36ed326af0789a33851019875b` | vaultBase | impl | live | yes |
+| polygon | `0x587a50436b97f2278abc01e00180539ee98fe415` | StrategySingle-5 | impl | inactive | no |
 | polygon | `0x58c12402428ca79da43bf14b70cbc59df5dfe61a` | vaultBase | impl | inactive | yes |
 | polygon | `0x58fe96934a595df1c03bdda09f0fdba38063770b` | vaultBase | impl | live | yes |
 | polygon | `0x5ab24ba8183da4d0e050fd00257de291cdd17a89` | vaultBase | impl | inactive | yes |
@@ -60,10 +65,13 @@
 | polygon | `0x64c17988992ee06088631efa021a8841cfb4f39f` | StrategyBase | impl | inactive | no |
 | polygon | `0x65cc7818986a6f089608c4eb12fc50706e52deb7` | StrategyBase | impl | inactive | no |
 | polygon | `0x6726775952de79b66c2340fcb4dd1cb3d48944e5` | vaultBase | impl | inactive | yes |
+| polygon | `0x684c18d5d19f9d5c1b092df6dae69a646161f2fd` | StrategySingle-6 | impl | inactive | no |
 | polygon | `0x6a82fde3033a969cf1ece48d76aa942e9fc567db` | MasterChefFund | impl | inactive | no |
 | polygon | `0x72812112d635873f5fef2b0bcab22cc5bba2e0dd` | IronUsdcQuickBase | impl | inactive | no |
 | polygon | `0x72cd377b8de328de1630c36e6953b9b0cd734a84` | StrategyTwoAssets | impl | inactive | no |
+| polygon | `0x75a5da53f3df2729ad2c137f08cb66a709c55fcd` | StrategySingle-7 | impl | inactive | no |
 | polygon | `0x780c1f8054051e2f003b5f8d52ab2e8634d902a3` | vaultBase | impl | inactive | yes |
+| polygon | `0x78a714e456f6466530d0d7d882a8a3a922849fdd` | StrategySingle-8 | impl | inactive | no |
 | polygon | `0x7a9be7cdf26c8311625ed97c174869fca9b791ec` | vaultBase | impl | live | yes |
 | polygon | `0x992ae1912ce6b608e0c0d2bf66259ab1ae62a657` | vaultBase | impl | live | yes |
 | polygon | `0xbfad80456c71be0fde53ecd623605662cf808e53` | vaultBase | impl | inactive | yes |
@@ -71,17 +79,9 @@
 | polygon | `0xf457000d481df3c486dfd38d8fa0c4fc949a6bbe` | vaultBase | impl | inactive | yes |
 | polygon | `0xf9b80986470daaac7aa24fc36788b74e92cfd8c3` | Multicall | impl | inactive | no |
 
-## Source unavailable (11)
+## Source unavailable (3)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - polygon `0x1b4c5aaeb74150f2aa25645a5cf676259e0148e9`
-- polygon `0x1be31ca4d4c47b7728e180813264d770ae841aea`
-- polygon `0x33d9d921e0a040b50523b246488566fd41357c8b`
 - polygon `0x4929f3d8934640fd93a21e89cd22ddb4b2aff8c1`
 - polygon `0x4c42f8224e16b40d79beb775bf1df1a63967fc7c`
-- polygon `0x4f624dc3100d585585d3f74778a2e9e20d3e456e`
-- polygon `0x5161c705b68e0da0d6fc6ba4cbb4da27781e409a`
-- polygon `0x587a50436b97f2278abc01e00180539ee98fe415`
-- polygon `0x684c18d5d19f9d5c1b092df6dae69a646161f2fd`
-- polygon `0x75a5da53f3df2729ad2c137f08cb66a709c55fcd`
-- polygon `0x78a714e456f6466530d0d7d882a8a3a922849fdd`

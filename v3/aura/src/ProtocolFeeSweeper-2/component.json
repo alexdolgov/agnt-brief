@@ -2,7 +2,7 @@
   "component": "ProtocolFeeSweeper-2",
   "main_contract": "ProtocolFeeSweeper",
   "source_file_count": 26,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -15,12 +15,28 @@
       "liveness": "live"
     },
     {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3beb058de1a25dd24223fd9e1796df8589429ace",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0x5b42ec6d40f7b7965be5308c70e2603c0281c1e9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x662112b8cb18889e81459b92ca0f894a2ef2c1b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

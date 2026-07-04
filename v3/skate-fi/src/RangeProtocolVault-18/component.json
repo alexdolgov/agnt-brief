@@ -1,0 +1,18 @@
+{
+  "component": "RangeProtocolVault-18",
+  "main_contract": "RangeProtocolVault",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcdb252c0d4452a8b7ba42c2281abfe8b442cc07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

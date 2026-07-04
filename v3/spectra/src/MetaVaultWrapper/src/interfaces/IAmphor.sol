@@ -40,9 +40,6 @@ interface IAmphor {
     /// @notice Treasury recipient for fees.
     function treasury() external view returns (address);
 
-    /// @notice Underlying asset managed by the vault.
-    function asset() external view returns (address);
-
     /// @notice Silo addresses used by the async flow.
     function pendingSilo() external view returns (address);
     function claimableSilo() external view returns (address);

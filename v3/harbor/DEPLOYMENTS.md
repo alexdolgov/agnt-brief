@@ -1,6 +1,6 @@
 # harbor — deployments
 
-356 verified deployment(s) across 95 component(s).
+357 verified deployment(s) across 96 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,7 +14,7 @@
 | arbitrum | `0x0526cb872cde7815d169c434ae92671f8ab1ee68` | Unitroller | impl | inactive | no |
 | arbitrum | `0x062d030b47d941c4e8ea9277548ebea535dd2917` | Comptroller | impl | inactive | no |
 | arbitrum | `0x06cd5701d9ffd9f7aadfe28c57b481e99d2ba3ad` | ERC1967Proxy | proxy | live | no |
-| arbitrum | `0x07f347b979fce7cd7bb761feda6bd7dfea19a6a5` | PriceOracle_v1 | impl | live | yes |
+| arbitrum | `0x07f347b979fce7cd7bb761feda6bd7dfea19a6a5` | PriceOracle_v1-2 | impl | live | yes |
 | arbitrum | `0x0930b04032e52dabc2324533c015bc27ad5b35b7` | Comptroller | impl | inactive | no |
 | arbitrum | `0x0981f175e4c6a654a03c22a9cf4a1f381cbf17d7` | CErc20Delegator | impl | inactive | no |
 | arbitrum | `0x09856313762a225a076bfb2e2445a2680c3bb9cb` | Oracle_stETH_NVDA_arbitrum | impl | live | no |
@@ -284,6 +284,7 @@
 | base | `0x76d5ebfe459643326149b488841a0228bd67d0d7` | HarborCustomFeedNormalization_v2 | impl | live | no |
 | base | `0x7ec5fa8b84041f4619beaf9954ce586d750e4959` | ERC1967Proxy-3 | impl | live | no |
 | base | `0x830ab2b3a936f727ee2ff67e9c073380b6f166d8` | ERC1967Proxy-3 | impl | live | no |
+| base | `0x90e877e9660a52443cbabd86ca0871a1d60f27e1` | PriceOracle_v1 | impl | live | no |
 | base | `0xa3f71025ce5ddde817b98e8bcb92365b4040ca3e` | BaoFactory_v1 | impl | live | no |
 | base | `0xa4dc9f417659f9e9d2893e36c52a57e1ed20fe91` | HarborCustomFeedNormalization_v2 | impl | live | no |
 | base | `0xaf3327801e0bbefcb9741314e5fb45fe3241b91e` | HarborCustomFeedNormalization_v2 | impl | live | no |
@@ -360,8 +361,3 @@
 | ethereum | `0xf4f97218a00213a57a32e4606aaecc99e1805a89` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0xf7657cd7890904d108384e289997c993e2e2bbc0` | ERC1967Proxy-3 | proxy | live | no |
 | ethereum | `0xff37db6dea33228a5d84546250a5d0d0da942fd7` | HarborAggregator_v3-3 | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x90e877e9660a52443cbabd86ca0871a1d60f27e1`

@@ -1,0 +1,18 @@
+{
+  "component": "FusionFactory-4",
+  "main_contract": "FusionFactory",
+  "source_file_count": 113,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x29ba38ed242b4ad1fd03be6a5d98c9a1895401cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

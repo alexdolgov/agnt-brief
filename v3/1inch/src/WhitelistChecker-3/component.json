@@ -1,0 +1,18 @@
+{
+  "component": "WhitelistChecker-3",
+  "main_contract": "WhitelistChecker",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a1cb30ccc4fed0797d46e16559a05fc163c93d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

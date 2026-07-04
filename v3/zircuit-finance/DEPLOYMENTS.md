@@ -1,6 +1,6 @@
 # zircuit-finance — deployments
 
-19 verified deployment(s) across 5 component(s).
+21 verified deployment(s) across 6 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,14 +18,10 @@
 | ethereum | `0x075193d36693da7ba3bb709cf63bef070ba04d94` | OFTCoreUpgradeable | proxy | live | yes |
 | ethereum | `0x07c898e77310870770f88d18a01009cb65a1c1a9` | OFTCoreUpgradeable | proxy | live | yes |
 | ethereum | `0x221c2b6ee63dcede31ea703898ae15d889d881f0` | ZtakingPool | impl | live | yes |
+| ethereum | `0x28966ce36d0f25858dc5d10dfc2829f05c332c49` | InstitutionLender-2 | proxy | live | yes |
 | ethereum | `0x2d342de4c58a871b3525740c58a1c112d5835865` | OFTCoreUpgradeable | proxy | live | yes |
+| ethereum | `0x6424c7548e214f89b64ea5981c5a0c5ec22b6e38` | InstitutionLender-2 | proxy | live | yes |
 | ethereum | `0x8adbea709b31a564f9750a280ec2690ad1cf470a` | OFTCoreUpgradeable | proxy | live | yes |
 | ethereum | `0xd58e8c1c83d598ad76b5f0e26b4a25cdb885d190` | OFTCoreUpgradeable | proxy | live | yes |
 | ethereum | `0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6` | ZtakingPool-2 | impl | live | yes |
 | ethereum | `0xf7e745658fa6f1fe8f2cab47861a273991cd3374` | OFTCoreUpgradeable | proxy | live | yes |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x28966ce36d0f25858dc5d10dfc2829f05c332c49`
-- ethereum `0x6424c7548e214f89b64ea5981c5a0c5ec22b6e38`

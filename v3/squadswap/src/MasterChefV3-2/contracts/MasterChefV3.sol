@@ -76,7 +76,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
     ILMPoolDeployer public LMPoolDeployer;
 
     /// @notice Address of farm booster contract.
-    IFarmBooster public FARM_BOOSTER;
+    // IFarmBooster public FARM_BOOSTER;
 
     /// @notice Only use for emergency situations.
     bool public emergency;
@@ -121,7 +121,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
     error WrongReceiver();
     error InconsistentAmount();
     error InsufficientAmount();
-    error NotBoostContractOrOwnerOrOperator();
+
     event AddPool(uint256 indexed pid, uint256 allocPoint, ISquadV3Pool indexed v3Pool, ILMPool indexed lmPool);
     event SetPool(uint256 indexed pid, uint256 allocPoint);
     event Deposit(
@@ -185,12 +185,6 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
     //     _;
     // }
 
-    modifier onlyBoostContractOrOwnerOrOperator() {
-        if (msg.sender != address(FARM_BOOSTER) && msg.sender != owner() && msg.sender != operatorAddress)
-            revert NotBoostContractOrOwnerOrOperator();
-        _;
-    }
-
     /// @param _SQUAD The SQUAD token contract address.
     /// @param _nonfungiblePositionManager the NFT position manager contract address.
     constructor(IERC20 _SQUAD, INonfungiblePositionManager _nonfungiblePositionManager, address _WETH) {
@@ -237,11 +231,13 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
                     positionInfo.tickLower,
                     positionInfo.tickUpper
                 );
-                uint256 rewardGrowthInsideDelta;
-                unchecked {
-                    rewardGrowthInsideDelta = rewardGrowthInside - positionInfo.rewardGrowthInside;
-                }
-                reward = (rewardGrowthInsideDelta * positionInfo.boostLiquidity) / Q128;
+                if (
+                    rewardGrowthInside > positionInfo.rewardGrowthInside &&
+                    MAX_U256 / (rewardGrowthInside - positionInfo.rewardGrowthInside) > positionInfo.boostLiquidity
+                )
+                    reward =
+                        ((rewardGrowthInside - positionInfo.rewardGrowthInside) * positionInfo.boostLiquidity) /
+                        Q128;
             }
             reward += positionInfo.reward;
         }
@@ -271,7 +267,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
     /// @param _allocPoint Number of allocation points for the new pool.
     /// @param _v3Pool Address of the V3 pool.
     /// @param _withUpdate Whether call "massUpdatePools" operation.
-    function add(uint256 _allocPoint, ISquadV3Pool _v3Pool, bool _withUpdate) external onlyOwnerOrOperator {
+    function add(uint256 _allocPoint, ISquadV3Pool _v3Pool, bool _withUpdate) external onlyOwner {
         if (_withUpdate) massUpdatePools();
 
         ILMPool lmPool = LMPoolDeployer.deploy(_v3Pool);
@@ -279,7 +275,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
         totalAllocPoint += _allocPoint;
         address token0 = _v3Pool.token0();
         address token1 = _v3Pool.token1();
-        uint24 fee = _v3Pool.defaultFee();
+        uint24 fee = _v3Pool.fee();
         if (v3PoolPid[token0][token1][fee] != 0) revert DuplicatedPool(v3PoolPid[token0][token1][fee]);
         if (IERC20(token0).allowance(address(this), address(nonfungiblePositionManager)) == 0)
             IERC20(token0).safeApprove(address(nonfungiblePositionManager), type(uint256).max);
@@ -374,7 +370,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
         // Update Enumerable
         addToken(_from, _tokenId);
         emit Deposit(_from, pid, _tokenId, cache.liquidity, cache.tickLower, cache.tickUpper);
-        if (address(FARM_BOOSTER) != address(0)) FARM_BOOSTER.autoActivate(_tokenId);
+
         return this.onERC721Received.selector;
     }
 
@@ -400,12 +396,11 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
             // Update rewardGrowthInside
             LMPool.accumulateReward(uint32(block.timestamp));
             uint256 rewardGrowthInside = LMPool.getRewardGrowthInside(positionInfo.tickLower, positionInfo.tickUpper);
-
-            uint256 rewardGrowthInsideDelta;
-            unchecked {
-                rewardGrowthInsideDelta = rewardGrowthInside - positionInfo.rewardGrowthInside;
-            }
-            reward = (rewardGrowthInsideDelta * positionInfo.boostLiquidity) / Q128;
+            // Check overflow
+            if (
+                rewardGrowthInside > positionInfo.rewardGrowthInside &&
+                MAX_U256 / (rewardGrowthInside - positionInfo.rewardGrowthInside) > positionInfo.boostLiquidity
+            ) reward = ((rewardGrowthInside - positionInfo.rewardGrowthInside) * positionInfo.boostLiquidity) / Q128;
             positionInfo.rewardGrowthInside = rewardGrowthInside;
         }
         reward += positionInfo.reward;
@@ -453,7 +448,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
         // Update Enumerable
         removeToken(msg.sender, _tokenId);
         // Remove boosted token id in farm booster.
-        if (address(FARM_BOOSTER) != address(0)) FARM_BOOSTER.removeBoostMultiplier(msg.sender, _tokenId, pid);
+        // if (address(FARM_BOOSTER) != address(0)) FARM_BOOSTER.removeBoostMultiplier(msg.sender, _tokenId, pid);
         nonfungiblePositionManager.safeTransferFrom(address(this), _to, _tokenId);
         emit Withdraw(msg.sender, _to, pid, _tokenId);
     }
@@ -470,10 +465,7 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
     /// @notice Update farm boost multiplier for the NFT position.
     /// @param _tokenId Token Id of NFT to update.
     /// @param _newMultiplier New boost multiplier.
-    function updateBoostMultiplier(
-        uint256 _tokenId,
-        uint256 _newMultiplier
-    ) external onlyBoostContractOrOwnerOrOperator {
+    function updateBoostMultiplier(uint256 _tokenId, uint256 _newMultiplier) external onlyOwnerOrOperator {
         UserPositionInfo storage positionInfo = userPositionInfos[_tokenId];
         if (positionInfo.pid == 0) revert InvalidNFT();
         harvestOperation(positionInfo, _tokenId, address(0));
@@ -494,10 +486,11 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
             positionInfo.liquidity = liquidity;
         }
         uint256 boostMultiplier = BOOST_PRECISION;
-        if (address(FARM_BOOSTER) != address(0) && _newMultiplier == 0) {
-            // Get the latest boostMultiplier and update boostMultiplier in farm booster.
-            boostMultiplier = FARM_BOOSTER.updatePositionBoostMultiplier(_tokenId);
-        } else if (_newMultiplier != 0) {
+        // if (address(FARM_BOOSTER) != address(0) && _newMultiplier == 0) {
+        //     // Get the latest boostMultiplier and update boostMultiplier in farm booster.
+        //     boostMultiplier = FARM_BOOSTER.updatePositionBoostMultiplier(_tokenId);
+        // } else 
+        if (_newMultiplier != 0) {
             // Update boostMultiplier from farm booster call.
             boostMultiplier = _newMultiplier;
         }
@@ -700,23 +693,6 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
         }
     }
 
-    /// @notice Burns a token ID, which deletes it from the NFT contract. The token must have 0 liquidity and all tokens
-    /// must be collected first.
-    /// @param _tokenId The ID of the token that is being burned
-    function burn(uint256 _tokenId) external nonReentrant {
-        UserPositionInfo memory positionInfo = userPositionInfos[_tokenId];
-        if (positionInfo.user != msg.sender) revert NotOwner();
-        if (positionInfo.reward > 0 || positionInfo.liquidity > 0) revert NotEmpty();
-        delete userPositionInfos[_tokenId];
-        // Update Enumerable
-        removeToken(msg.sender, _tokenId);
-        // Remove boosted token id in farm booster.
-        if (address(FARM_BOOSTER) != address(0))
-            FARM_BOOSTER.removeBoostMultiplier(msg.sender, _tokenId, positionInfo.pid);
-        nonfungiblePositionManager.burn(_tokenId);
-        emit Withdraw(msg.sender, address(0), positionInfo.pid, _tokenId);
-    }
-
     /// @notice Upkeep period.
     /// @param _amount The amount of squad injected.
     /// @param _duration The period duration.
@@ -796,13 +772,13 @@ contract MasterChefV3 is INonfungiblePositionManagerStruct, Multicall, Ownable, 
         emit NewPeriodDuration(_periodDuration);
     }
 
-    /// @notice Update farm boost contract address.
-    /// @param _newFarmBoostContract The new farm booster address.
-    function updateFarmBoostContract(address _newFarmBoostContract) external onlyOwner {
-        // farm booster can be zero address when need to remove farm booster
-        FARM_BOOSTER = IFarmBooster(_newFarmBoostContract);
-        emit UpdateFarmBoostContract(_newFarmBoostContract);
-    }
+    // /// @notice Update farm boost contract address.
+    // /// @param _newFarmBoostContract The new farm booster address.
+    // function updateFarmBoostContract(address _newFarmBoostContract) external onlyOwner {
+    //     // farm booster can be zero address when need to remove farm booster
+    //     FARM_BOOSTER = IFarmBooster(_newFarmBoostContract);
+    //     emit UpdateFarmBoostContract(_newFarmBoostContract);
+    // }
 
     /**
      * @notice Transfer ETH in a safe way

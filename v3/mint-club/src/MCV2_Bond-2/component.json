@@ -1,0 +1,21 @@
+{
+  "component": "MCV2_Bond-2",
+  "main_contract": "MCV2_Bond",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf",
+    "https://skynet.certik.com/projects/mint-club"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc5a076cad94176c2996b32d8466be1ce757faa27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

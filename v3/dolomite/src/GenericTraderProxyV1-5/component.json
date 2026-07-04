@@ -1,0 +1,18 @@
+{
+  "component": "GenericTraderProxyV1-5",
+  "main_contract": "GenericTraderProxyV1",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x26cb28c95c964b75fe6e118e267e6f17908a7f7c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,15 +1,39 @@
 {
   "component": "Socket",
   "main_contract": "Socket",
-  "source_file_count": 68,
-  "deployment_count": 4,
+  "source_file_count": 64,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x16e4a6af6e81c7997fc784c8e621316e480a4ee8",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1eb392aba52a2d933e58f7e86ca96b9a3e2d8166",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5afa7ddbce8ee8862fdf5fd8c546bf32615d2d9b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x976973618488e452027f4017b088ea8374486fa7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xae7ab947dc04b2e4965a9d99c109c65b4f0ee139",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -17,7 +41,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x9e3e4755411f8529cbed5a974a85fa9a8a13a9d1",
+      "address": "0x388b07b1986bc30fc4ee6026407bff39607ff45e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -25,7 +49,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xbc080a2e2593045fffc1b8c3cafc67732f8306a7",
+      "address": "0x4fb274909ffeef635270915a729dc40500c7260b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -33,10 +57,26 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xfb6daf96202bd3815b2e602464adc10317634066",
+      "address": "0x63c10c00b47b9b418ec0f651b3763b6a692a0416",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xca16185a1072e84d74931e605fce0a843445c31e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdff78a949e47c1e90f3dd6dd7fe2fa72b42a75f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

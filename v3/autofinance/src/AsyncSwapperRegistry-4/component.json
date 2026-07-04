@@ -1,0 +1,18 @@
+{
+  "component": "AsyncSwapperRegistry-4",
+  "main_contract": "AsyncSwapperRegistry",
+  "source_file_count": 64,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd527f2363014c16109661c2d7ccbf2378b3fd120",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

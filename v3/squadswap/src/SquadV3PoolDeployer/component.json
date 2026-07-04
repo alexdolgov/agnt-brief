@@ -2,7 +2,7 @@
   "component": "SquadV3PoolDeployer",
   "main_contract": "SquadV3PoolDeployer",
   "source_file_count": 32,
-  "deployment_count": 34,
+  "deployment_count": 35,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -274,6 +274,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xfc86417e95947f9a488cecb5a84347c1ea4b1617",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x53616b1baa9e224092bbaf64f2fb5da2b11dd62a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

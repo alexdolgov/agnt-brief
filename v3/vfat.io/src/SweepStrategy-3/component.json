@@ -1,0 +1,42 @@
+{
+  "component": "SweepStrategy-3",
+  "main_contract": "SweepStrategy",
+  "source_file_count": 5,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x29d82976c8babb7d5a82c78c6ef4c2a2ddc64125",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x917c50722872672628a456f2ab011554f0198be4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xad3349b4f2d1ea4f609333ba4013a7d6f10ab5bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf8818d5d3c9ac1f80bd14664202dbe5bed872a72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { SwapParams } from "src/interfaces/liquidation/IAsyncSwapper.sol";
 import { IDestinationVault } from "src/interfaces/vault/IDestinationVault.sol";
@@ -9,7 +9,7 @@ interface ILiquidationRow {
     event SwapperAdded(address indexed swapper);
     event SwapperRemoved(address indexed swapper);
     event FeeReceiverSet(address indexed feeReceiver, uint256 feeBps);
-    event BalanceUpdated(address indexed token, address indexed vault, uint256 balance);
+    event BalanceUpdated(address indexed token, address indexed vault, uint256 actualBalance, uint256 expectedBalance);
     event VaultLiquidated(address indexed vault, address indexed fromToken, address indexed toToken, uint256 amount);
     event GasUsedForVault(address indexed vault, uint256 gasAmount, bytes32 action);
     event FeesTransferred(address indexed receiver, uint256 amountReceived, uint256 fees);

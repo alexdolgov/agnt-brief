@@ -88,7 +88,6 @@ contract CloneFactory is ICloneFactory {
 
 // File: contracts/DODOVendingMachine/intf/IDVM.sol
 
-
 interface IDVM {
     function init(
         address maintainer,
@@ -118,7 +117,6 @@ interface IDVM {
 }
 
 // File: contracts/Factory/DVMFactory.sol
-
 
 
 

@@ -1,6 +1,6 @@
 # asymmetry — deployments
 
-199 verified deployment(s) across 85 component(s).
+217 verified deployment(s) across 95 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | ethereum | `0x04d258d3ee00ef9840985afd373037d91c56f60e` | Dutch_Desk | impl | live | no |
 | ethereum | `0x0502dbe106d80577b156b0679342a11dca91b072` | USDaf_Flash_Zapper | impl | live | no |
 | ethereum | `0x07011c1cdebc84fd5bbc64db6ce5ca9b92ca598a` | ZapperAsFuck | impl | live | no |
+| ethereum | `0x07b152f14e53a4b24bf0e513a9743539efaead67` | USDaf_Flash_Zapper | impl | live | no |
 | ethereum | `0x08eaafd8fbb12cf12d6765e80c5b0ff8490c232d` | ActivePool | impl | live | yes |
 | ethereum | `0x0abd93da8387b5ef0511a2859d85d84fe4519e94` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0x0ad1c302203f0fbb6ca34641bdfef0bf4182377c` | AddressesRegistry | impl | live | yes |
@@ -25,11 +26,12 @@
 | ethereum | `0x1533edbe274aa1b9fb5db2652d6d143e939b306f` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x1666ee2dbb308c1ee321cc6f1575afceaad9b1e5` | ZapperAsFuck-3 | impl | live | no |
 | ethereum | `0x1771f4de6836b10b59dd66990b0190985df6673c` | InterestRouter | impl | live | yes |
-| ethereum | `0x188384c7ec63da76a39ec1ec1c6cc7a2ed345919` | Vyper_contract | impl | live | no |
+| ethereum | `0x188384c7ec63da76a39ec1ec1c6cc7a2ed345919` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x18d49239edc031fec1747200cd315eca4fbfdc67` | AfEthRelayer | impl | live | yes |
 | ethereum | `0x1919de21635276a80aa3384a852df8189e1b7205` | BaseOracle | impl | live | no |
 | ethereum | `0x193b7da0f8036709774054dfd7539ca36654aba5` | TbtcFallbackOracle | impl | live | no |
 | ethereum | `0x1a173e7223dbd1e66bbe654a0b8c4c1ebd98134f` | tBTCToUSDafExchange | impl | live | no |
+| ethereum | `0x1a3f5ebaaf0702ec2a707cbd28b397dc4dca4baa` | USDaf_Flash_Zapper | impl | live | no |
 | ethereum | `0x1c906685384df71e3fafa6f3b21bd884e9d44f4b` | StafiLightNode | impl | live | no |
 | ethereum | `0x1ed84a676f3ba626389cb131e7c1bc32935bba37` | SfrxEth | proxy | live | yes |
 | ethereum | `0x1ee6db6b89fbf07489ec4cdae89b82c97c7c53ea` | BaseStrategy | proxy | live | no |
@@ -54,6 +56,7 @@
 | ethereum | `0x336d9c5ecb9d6ce79c8c077d35426e714969b41d` | BorrowerOperations | impl | live | yes |
 | ethereum | `0x33d68055cd54061991b2e98b9ab326ffce4d60fe` | CollateralRegistry | impl | live | yes |
 | ethereum | `0x3414bd84dff0900a9046a987f4df2e0ef08fa1ce` | AddressesRegistry | impl | live | yes |
+| ethereum | `0x3470a0b127c41273d17c0647ce24354bcfc2cbde` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0x36ce17a5c81e74dc111547f5dffbf40b8bf6b20a` | SfrxEth | proxy | live | yes |
 | ethereum | `0x36e9ee7a0ce154cc1e379a7c0231fa19c0b41c1f` | Trove_Manager | impl | live | no |
 | ethereum | `0x3777c51170b0c1cec4b236166680802c22d262cb` | ProxyAdmin | impl | live | no |
@@ -65,6 +68,7 @@
 | ethereum | `0x447fd8743a7a545fc95a42bf4afd4122bdcaeff4` | CollateralRegistry | impl | live | yes |
 | ethereum | `0x478e7c27193aca052964c3306d193446027630b0` | TroveManager | impl | live | yes |
 | ethereum | `0x48ba7b711a8d5dadc6690de2e86533f70ee5b433` | BaseOracle-3 | impl | live | no |
+| ethereum | `0x49c87b728a4f1606c97b94e4bea59189e80c9be0` | Vyper_contract | impl | live | no |
 | ethereum | `0x4b74d043336678d2f62dae6595bc42dccabc3bb1` | BorrowerOperations-2 | impl | live | yes |
 | ethereum | `0x4c59eec0bf43bb56ff7ee5aa21b51f76e699caed` | WETHToBOLDExchange | impl | live | no |
 | ethereum | `0x4fb6c0f144790ee49cee25f62fee0c3fe5884fe6` | SfrxEth | impl | live | yes |
@@ -97,6 +101,7 @@
 | ethereum | `0x664507f1445657d36d8064663653b7810971f411` | BorrowerOperations | impl | live | yes |
 | ethereum | `0x66871db0ca840ac3e9cb2dbbfcff8ec060661b4b` | WbtcFallbackOracle | impl | live | no |
 | ethereum | `0x6732efaf6f39926346bef8b821a04b6361c4f3e5` | SafEth | proxy | live | yes |
+| ethereum | `0x693e74c376a8884d885ab1374768f0e6f6964d93` | Vyper_contract-4 | impl | live | no |
 | ethereum | `0x69671a4da351b64026302f6ac24827620c3c7665` | BaseStrategy | proxy | live | no |
 | ethereum | `0x6aacff7ec8903c2c7883b1a6af85e6e330999aa6` | Multisig | impl | live | no |
 | ethereum | `0x6aed7c8e57f905863caaab59fc10b5d95a4fab76` | RETHToBOLDExchange | impl | live | no |
@@ -107,6 +112,7 @@
 | ethereum | `0x716ee5e94b67b515e5266fa05ae0e2524c10a899` | Governance | impl | live | no |
 | ethereum | `0x73dfcc4fb90e6e252e5d41f6588534a8043dba58` | BaseStrategy-2 | impl | live | no |
 | ethereum | `0x746c238e34a6dbfe1d35d50471467bd7bf898f62` | OnLossDepositLimit | impl | live | no |
+| ethereum | `0x78ebd6ae7b6a12ab35a7454039fea117000bfd99` | Vyper_contract-5 | impl | live | no |
 | ethereum | `0x7aff0173e3d7c5416d8caa3433871ef07568220d` | TroveManager | impl | live | yes |
 | ethereum | `0x7b6633c0cd81dc338688a528c0a3f346561f5ca3` | TransparentUpgradeableProxy-7 | proxy | live | yes |
 | ethereum | `0x7bd47eca45ee18609d3d64ba683ce488ca9320a3` | TroveManager | impl | live | yes |
@@ -115,21 +121,27 @@
 | ethereum | `0x7f575323ddedfbad449fef5459fad031fe49520b` | WETHPriceFeed | impl | live | yes |
 | ethereum | `0x7fd713fe57fcd0a7636c152faba6bdc2d3b27d15` | ERC20Wrapper-3 | impl | live | no |
 | ethereum | `0x7fe24f1a024d33506966cb7ca48bab8c65fb632d` | dASF | impl | live | no |
+| ethereum | `0x82cbd5c2b1a23f82e446dd2c8bea02a71ae631b3` | Vyper_contract-6 | impl | live | no |
 | ethereum | `0x838a1f38c361ffa1b23201640752149adb4e865a` | HintHelpers | impl | live | yes |
 | ethereum | `0x83e5bde77d7477ecd972e338541b90af57675536` | StabilityPool | impl | live | yes |
 | ethereum | `0x8668a15b7b023dc77b372a740fcb8939e15257cf` | Proxy | proxy | live | yes |
 | ethereum | `0x876f12e22c3471e3ca790cfd079a7842db29e7f7` | AsfToken | proxy | live | no |
 | ethereum | `0x8794f7a0c53cf536ff50a9d7f736cd402fa1fae4` | SimpleProxy-2 | impl | live | yes |
+| ethereum | `0x8828c676fe14cbef41f44d7e16a81c1418fe0100` | Vyper_contract-7 | impl | live | no |
 | ethereum | `0x8896ef81b2d1c92e8540d543816a5260b991a61c` | SimpleProxy | impl | live | yes |
+| ethereum | `0x8b2754de2e814c7fdbf86c8464ee575d1f6ae07f` | USDaf_Flash_Zapper | impl | live | no |
 | ethereum | `0x8d26d5251cf5e228a4aa7698c8c75879cebec807` | Governance | impl | live | no |
 | ethereum | `0x8d5dd29592bf3bd5dc98eb6c0e895fea4bd890d0` | Reth | proxy | live | yes |
+| ethereum | `0x8f1477eb096d664d317c2c31cb647c9e2e98dc28` | dASF_Redemptions | impl | live | no |
 | ethereum | `0x90318f8028da3a985e9d2f777369c961a8542ee4` | USDaf_Leverage_Zapper | impl | live | no |
 | ethereum | `0x9092101668b6befeaacd351f02bc1ac3bc2a60b6` | SfrxEth | impl | live | yes |
 | ethereum | `0x90a60788c1a94c2eac4f8621f42ada81a956778a` | SimpleProxy | impl | live | yes |
 | ethereum | `0x91d4109e2058c229bb96509e0254ed50ad96ba17` | TransparentUpgradeableProxy | impl | live | yes |
+| ethereum | `0x920f99fe3d47cacad5b2021af494bf4f8914aa30` | Vyper_contract-8 | impl | live | no |
 | ethereum | `0x922faa141e95e43a9deeab8dade3ac8d4a32ad5c` | StabilityPool | impl | live | yes |
 | ethereum | `0x9559aaa82d9649c7a7b220e7c461d2e74c9a3593` | RETHToken | impl | live | yes |
 | ethereum | `0x972a53e3a9114f61b98921fb5b86c517e8f23fad` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x982e607b6495a63ffc715f694ed3211cb38b6fe2` | USDaf_Flash_Zapper | impl | live | no |
 | ethereum | `0x99b36ed441cd2936ae3742c9cba62d261a468752` | ERC20Wrapper | impl | live | no |
 | ethereum | `0x9d09d5175783f0caa56d6d1e7590c2b935082d10` | BaseOracle-5 | impl | live | no |
 | ethereum | `0x9e1eda81f41242327036533af866b113df241d97` | dASF | impl | live | no |
@@ -157,6 +169,7 @@
 | ethereum | `0xbcfed6cc8ed838b7a8433ad83c271145798a115e` | Reth | impl | live | yes |
 | ethereum | `0xbd9f75471990041a3e7c22872c814a273485e999` | AddressesRegistry | impl | live | yes |
 | ethereum | `0xbf7a38c6de0831916301b8dd09bd72fbd0c547d1` | BaseStrategy-2 | impl | live | no |
+| ethereum | `0xc1296a0084702b72cfd465ff1ef11b8283dabaec` | Trove_Manager-2 | impl | live | no |
 | ethereum | `0xc12dfb80d80d564db9b180abf61a252ee6355058` | StafiBase-2 | impl | live | no |
 | ethereum | `0xc1ed3729cfcf9f93a7dbe1e4669bc67793182d03` | BaseOracle-6 | impl | live | no |
 | ethereum | `0xc56aef0e7dbf2868e4bfe9df184b2bbf1ae75a12` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -169,11 +182,13 @@
 | ethereum | `0xcff0dcab01563e5324ef9d0adb0677d9c167d791` | CollateralRegistry | impl | live | yes |
 | ethereum | `0xd48dc7cddc481f596bd9a97755c7ac696ad4ea87` | StabilityPool | impl | live | yes |
 | ethereum | `0xd5d9c0d32890be92d7680b65e785e4a95c366a35` | CollateralRegistry | impl | live | yes |
+| ethereum | `0xd76b140c9e9fe3e9b176b1e99fd0ea78f7889bf2` | Vyper_contract-9 | impl | live | no |
 | ethereum | `0xd8575c32bbc1ea9d33856a6de74be258712307a8` | StafiBase-3 | impl | live | no |
 | ethereum | `0xd8ed29a2d82d53307d8a4d9b33eb6e68ea8c4908` | Reth | proxy | live | yes |
 | ethereum | `0xda8a4d1cbdd5b78a89ef889e9fea082a138458a9` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xda9af112edfd837eebc1780433481426a52556e0` | BorrowerOperations | impl | live | yes |
 | ethereum | `0xdb0f0fd4cb6df6c0e3860336a1514e94f3552082` | AsfToken | impl | inactive | no |
+| ethereum | `0xdc59d29608a5b16642a82b073c32ad4a72afdd27` | dASF_Redemptions | impl | live | no |
 | ethereum | `0xdc5a28885a1800b1435982954ee9b51d2a8d3bf0` | StafiSuperNodeFeePool | impl | live | no |
 | ethereum | `0xdf7205bd4aa3985da5626d588c1215fb37c0c0cd` | SfrxEth | proxy | live | yes |
 | ethereum | `0xdf9f1f2638fe661062a5aad49534c5554588aeac` | ProxyAdmin | impl | live | no |
@@ -186,6 +201,7 @@
 | ethereum | `0xe9015ae7b6cf7d972ebd10ffc09ed26034f85786` | Governance | impl | live | no |
 | ethereum | `0xe95a203b1a91a908f9b9ce46459d101078c2c3cb` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xeaf3b36748d89d64ef1b6b3e1d7637c3e4745094` | BorrowerOperations-2 | impl | live | yes |
+| ethereum | `0xec1f936198ccf8c0a21bf3aaef31b081b3141352` | Vyper_contract | impl | live | no |
 | ethereum | `0xf00850a4384878c66c54fde0bdc29aa825e3caac` | WETHToCRVUSDExchange | impl | live | no |
 | ethereum | `0xf119b5aa93a7755b09952b3a88d04cdaf5329034` | TokenLocker | impl | live | no |
 | ethereum | `0xf125c72ae447efdf3fa3601eda9ac0ebec06cbb8` | WETHPriceFeed | impl | live | yes |
@@ -198,30 +214,10 @@
 | ethereum | `0xf8a25a2e4c863bb7cea7e4b4eeb3866bb7f11718` | TroveManager | impl | live | yes |
 | ethereum | `0xf941898f4207c75ed5032bd28f696253b810dffa` | dASF | impl | live | no |
 | ethereum | `0xf951e335afb289353dc249e82926178eac7ded78` | AdminUpgradeabilityProxy-2 | proxy | live | no |
+| ethereum | `0xf97f41f003a5b51abd62aadec12445ce47c96c8c` | USDaf_Flash_Zapper | impl | live | no |
 | ethereum | `0xfa2d4c03b9b48918f37c926f2dd08dca70d7082f` | TransparentUpgradeableProxy-4 | impl | live | yes |
 | ethereum | `0xfb17d0402ae557e3efa549812b95e931b2b63bce` | TroveManager | impl | live | yes |
 | ethereum | `0xfb8725366b3e3011ff7445106f40fab97a8371b1` | TransparentUpgradeableProxy-5 | impl | live | yes |
+| ethereum | `0xff1ce633646ca7fa3eb9c79a5dda340564afafb6` | Sorted_Troves-2 | impl | live | no |
 | ethereum | `0xff2736078e4a42c9f8fc7247412a724945a0e5ae` | ZapperAsFuck | impl | live | no |
 | ethereum | `0xffd7da746c46f7f0d779a6cd6f5ff59b7b6b9ca4` | TransparentUpgradeableProxy | impl | live | yes |
-
-## Source unavailable (18)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x07b152f14e53a4b24bf0e513a9743539efaead67`
-- ethereum `0x1a3f5ebaaf0702ec2a707cbd28b397dc4dca4baa`
-- ethereum `0x3470a0b127c41273d17c0647ce24354bcfc2cbde`
-- ethereum `0x49c87b728a4f1606c97b94e4bea59189e80c9be0`
-- ethereum `0x693e74c376a8884d885ab1374768f0e6f6964d93`
-- ethereum `0x78ebd6ae7b6a12ab35a7454039fea117000bfd99`
-- ethereum `0x82cbd5c2b1a23f82e446dd2c8bea02a71ae631b3`
-- ethereum `0x8828c676fe14cbef41f44d7e16a81c1418fe0100`
-- ethereum `0x8b2754de2e814c7fdbf86c8464ee575d1f6ae07f`
-- ethereum `0x8f1477eb096d664d317c2c31cb647c9e2e98dc28`
-- ethereum `0x920f99fe3d47cacad5b2021af494bf4f8914aa30`
-- ethereum `0x982e607b6495a63ffc715f694ed3211cb38b6fe2`
-- ethereum `0xc1296a0084702b72cfd465ff1ef11b8283dabaec`
-- ethereum `0xd76b140c9e9fe3e9b176b1e99fd0ea78f7889bf2`
-- ethereum `0xdc59d29608a5b16642a82b073c32ad4a72afdd27`
-- ethereum `0xec1f936198ccf8c0a21bf3aaef31b081b3141352`
-- ethereum `0xf97f41f003a5b51abd62aadec12445ce47c96c8c`
-- ethereum `0xff1ce633646ca7fa3eb9c79a5dda340564afafb6`

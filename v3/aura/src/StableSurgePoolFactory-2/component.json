@@ -1,18 +1,34 @@
 {
   "component": "StableSurgePoolFactory-2",
   "main_contract": "StableSurgePoolFactory",
-  "source_file_count": 72,
-  "deployment_count": 1,
+  "source_file_count": 63,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3beb058de1a25dd24223fd9e1796df8589429ace",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x45fb5af0a1ad80ea16c803146eb81844d9972373",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x201efd508c8dfe9de1a13c2452863a78cb2a86cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x311334883921fb1b813826e585df1c2be4358615",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

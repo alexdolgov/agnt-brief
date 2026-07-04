@@ -2,15 +2,31 @@
   "component": "SwapAggregator",
   "main_contract": "SwapAggregator",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://3883616881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqoKcdbT2jNpuAI4A3RLd%2Fuploads%2FWSqlBOwoHAfOb2almafO%2FAudit_Report-SWA_REVIEW.pdf"
   ],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc67abc3fba59860b2dbf77fd1cf59d5455d6ed14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "optimism",
       "chain_id": 10,
+      "address": "0x7b9c45136fd16bb2accf566e74b6facc0d3b0efa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0x7b9c45136fd16bb2accf566e74b6facc0d3b0efa",
       "is_proxy": false,
       "implementation_address": null,

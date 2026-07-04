@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 import "@openzeppelin/contracts/utils/Context.sol";
 import "./MesonConfig.sol";
@@ -182,9 +182,12 @@ contract MesonHelpers is MesonConfig, Context {
     } else if (tokenIndex <= 64) {
       // Stablecoins [1, 64] -> 0
       return 0;
+    } else if (tokenIndex <= 112) {
+      // 3rd party tokens [65, 112] -> [1, 24]
+      return (tokenIndex + 1) / 2 - 32;
     } else if (tokenIndex <= 128) {
-      // 3rd party tokens [65, 128] -> [1, 33]
-      return tokenIndex / 2 - 31;
+      // 3rd party tokens [113, 128] -> [33, 48]
+      return tokenIndex - 80;
     }
     revert("Token index not allowed for swapping");
   }
@@ -195,15 +198,23 @@ contract MesonHelpers is MesonConfig, Context {
     return uint48((encodedSwap & 0xFF000000) << 16) | poolIndex;
   }
 
+  /// @notice Encode `postedSwap` from `initiator` and `poolIndex`
+  /// See variable `_postedSwaps` in `MesonSwap.sol` for the defination of `postedSwap`
+  function _postedSwapFrom(address initiator, uint40 poolIndex, bool tokenNotFromInitiator)
+    internal pure returns (uint208)
+  {
+    return (tokenNotFromInitiator ? (uint208(1) << 200) : uint208(0)) | (uint208(uint160(initiator)) << 40) | poolIndex;
+  }
+
   /// @notice Decode `initiator` from `postedSwap`
   /// See variable `_postedSwaps` in `MesonSwap.sol` for the defination of `postedSwap`
-  function _initiatorFromPosted(uint200 postedSwap) internal pure returns (address) {
+  function _initiatorFromPosted(uint208 postedSwap) internal pure returns (address) {
     return address(uint160(postedSwap >> 40));
   }
 
   /// @notice Decode `poolIndex` from `postedSwap`
   /// See variable `_postedSwaps` in `MesonSwap.sol` for the defination of `postedSwap`
-  function _poolIndexFromPosted(uint200 postedSwap) internal pure returns (uint40) {
+  function _poolIndexFromPosted(uint208 postedSwap) internal pure returns (uint40) {
     return uint40(postedSwap);
   }
   

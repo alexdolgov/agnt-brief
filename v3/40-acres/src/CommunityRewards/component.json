@@ -7,20 +7,20 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x3c113d68c2eeb665c2219b26d3090074e257e46d",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5fbdf3b3202a0858da1307d9d3c074593c9b60c5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe63f5ff2d54118c158fe0e27b226aa76da109aa2",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf353d4d3a75e6930d5c8b598492646e374f008de",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

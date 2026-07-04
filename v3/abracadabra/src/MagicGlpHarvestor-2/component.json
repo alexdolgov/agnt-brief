@@ -1,15 +1,23 @@
 {
   "component": "MagicGlpHarvestor-2",
   "main_contract": "MagicGlpHarvestor",
-  "source_file_count": 16,
-  "deployment_count": 1,
+  "source_file_count": 12,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x05b3b96df07b4630373ae7506e51777b547335b0",
+      "address": "0x338f3e04d5718b739ed4d46ecd1adb8c0288a335",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdcb9bd145b5a31dbbf30428247d1be8659fa0bf1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

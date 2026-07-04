@@ -1,0 +1,18 @@
+{
+  "component": "RiveraAutoCompoundingVaultV2-2",
+  "main_contract": "RiveraAutoCompoundingVaultV2",
+  "source_file_count": 17,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8e99b66de170b53b39d9b54f189a12d7c6ac0cd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

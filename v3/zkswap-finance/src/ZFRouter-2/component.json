@@ -1,0 +1,22 @@
+{
+  "component": "ZFRouter-2",
+  "main_contract": "ZFRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Vital-block/Smart-Contract-Audit/blob/main/ZKSWAP%20FINANCE%20AUDIT%20REPORT.pdf",
+    "https://github.com/ZkSwapFinance/Audit-Reports/blob/main/0_%5BCertik%5D_zkSwap_Finance_Audit_Report.pdf",
+    "https://skynet.certik.com/projects/zkswap-finance"
+  ],
+  "addresses": [
+    {
+      "chain": "zksync",
+      "chain_id": 324,
+      "address": "0x18381c0f738146fb694de18d1106bde2be040fa4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

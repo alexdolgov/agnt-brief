@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.20;
 
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+
 import { OApp, Origin } from "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol";
 import { OAppOptionsType3 } from "@layerzerolabs/oapp-evm/contracts/oapp/libs/OAppOptionsType3.sol";
 import { IOAppMsgInspector } from "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppMsgInspector.sol";
@@ -97,7 +99,7 @@ abstract contract OFTCore is IOFT, OApp, OAppPreCrimeSimulator, OAppOptionsType3
     }
 
     /**
-     * @notice Provides a quote for OFT-related operations.
+     * @notice Provides the fee breakdown and settings data for an OFT. Unused in the default implementation.
      * @param _sendParam The parameters for the send operation.
      * @return oftLimit The OFT limit information.
      * @return oftFeeDetails The details of OFT fees.
@@ -112,7 +114,7 @@ abstract contract OFTCore is IOFT, OApp, OAppPreCrimeSimulator, OAppOptionsType3
         returns (OFTLimit memory oftLimit, OFTFeeDetail[] memory oftFeeDetails, OFTReceipt memory oftReceipt)
     {
         uint256 minAmountLD = 0; // Unused in the default implementation.
-        uint256 maxAmountLD = type(uint64).max; // Unused in the default implementation.
+        uint256 maxAmountLD = IERC20(this.token()).totalSupply(); // Unused in the default implementation.
         oftLimit = OFTLimit(minAmountLD, maxAmountLD);
 
         // Unused in the default implementation; reserved for future complex fee details.
@@ -175,6 +177,29 @@ abstract contract OFTCore is IOFT, OApp, OAppPreCrimeSimulator, OAppOptionsType3
         MessagingFee calldata _fee,
         address _refundAddress
     ) external payable virtual returns (MessagingReceipt memory msgReceipt, OFTReceipt memory oftReceipt) {
+        return _send(_sendParam, _fee, _refundAddress);
+    }
+
+    /**
+     * @dev Internal function to execute the send operation.
+     * @param _sendParam The parameters for the send operation.
+     * @param _fee The calculated fee for the send() operation.
+     *      - nativeFee: The native fee.
+     *      - lzTokenFee: The lzToken fee.
+     * @param _refundAddress The address to receive any excess funds.
+     * @return msgReceipt The receipt for the send operation.
+     * @return oftReceipt The OFT receipt information.
+     *
+     * @dev MessagingReceipt: LayerZero msg receipt
+     *  - guid: The unique identifier for the sent message.
+     *  - nonce: The nonce of the sent message.
+     *  - fee: The LayerZero fee incurred for the message.
+     */
+    function _send(
+        SendParam calldata _sendParam,
+        MessagingFee calldata _fee,
+        address _refundAddress
+    ) internal virtual returns (MessagingReceipt memory msgReceipt, OFTReceipt memory oftReceipt) {
         // @dev Applies the token transfers regarding this send() operation.
         // - amountSentLD is the amount in local decimals that was ACTUALLY sent/debited from the sender.
         // - amountReceivedLD is the amount in local decimals that will be received/credited to the recipient on the remote OFT instance.

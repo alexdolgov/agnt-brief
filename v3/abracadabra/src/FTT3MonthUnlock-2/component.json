@@ -1,0 +1,18 @@
+{
+  "component": "FTT3MonthUnlock-2",
+  "main_contract": "FTT3MonthUnlock",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x600d08a0c2ae496b9614c8342cd2781e130b7862",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

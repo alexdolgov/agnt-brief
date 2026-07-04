@@ -1,18 +1,26 @@
 {
   "component": "BentoBoxV1-3",
   "main_contract": "BentoBoxV1",
-  "source_file_count": 5,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x74c764d41b77dbbb4fe771dab1939b00b146894a",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe2d7f5dd869fc7c126d21b13a9080e75a4bdb324",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xed1a5b476ff3618e68dc0827fe33116317e30859",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

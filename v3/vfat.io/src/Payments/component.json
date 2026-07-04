@@ -2,7 +2,7 @@
   "component": "Payments",
   "main_contract": "Payments",
   "source_file_count": 35,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -42,6 +42,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x6cb442acf35158d5eda88fe602221b67b400be3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf07835bbf6eea0d05392fb4d3b9e5a333ca4da2a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

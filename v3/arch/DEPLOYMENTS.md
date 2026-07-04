@@ -1,16 +1,16 @@
 # arch — deployments
 
-28 verified deployment(s) across 13 component(s).
+41 verified deployment(s) across 16 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x01f40d27b1a4379bfcb50aa1d20720219cdd21ea` | UniswapV3Pool | impl | live | no |
 | ethereum | `0x0d20e86abab680c038ac8bbdc1446585e67f8951` | SetToken | impl | live | no |
-| ethereum | `0x103bb3ebc6f61b3db2d6e01e54ef7d9899a2e16b` | Chamber | impl | live | yes |
+| ethereum | `0x103bb3ebc6f61b3db2d6e01e54ef7d9899a2e16b` | Chamber-2 | impl | live | yes |
 | ethereum | `0x247027635f32a25c7f93212cb9db91419bbb10f2` | UniswapV3Pool | impl | live | no |
 | ethereum | `0x6147c54106dc2e3d7f5d4b5afd2804f2d30db0b5` | UniswapV3Pool | impl | live | no |
 | ethereum | `0xbb9300f467ba73a35002ddedd27b1bf1210822a4` | UniswapV3Pool | impl | live | no |
-| ethereum | `0xe15a66b7b8e385caa6f69fd0d55984b96d7263cf` | Chamber | impl | live | yes |
+| ethereum | `0xe15a66b7b8e385caa6f69fd0d55984b96d7263cf` | Chamber-2 | impl | live | yes |
 | ethereum | `0xe8e8486228753e01dbc222da262aa706bd67e601` | SetToken | impl | live | no |
 | polygon | `0x00032e33ac57c73f9d4e3e85a97488214cb5f25b` | UChildERC20 | impl | unknown | no |
 | polygon | `0x004bae2ed0210e937327aaf199135393f64d5b57` | ChildERC721 | impl | unknown | no |
@@ -18,22 +18,35 @@
 | polygon | `0x027af1e12a5869ed329be4c05617ad528e997d5a` | FxERC20 | impl | live | no |
 | polygon | `0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd` | UChildERC20Proxy | proxy | unknown | no |
 | polygon | `0x08c15fa26e519a78a666d19ce5c646d55047e0a3` | UChildERC20Proxy | proxy | unknown | no |
+| polygon | `0x103bb3ebc6f61b3db2d6e01e54ef7d9899a2e16b` | Chamber | impl | live | no |
 | polygon | `0x14af1f2f02dccb1e43402339099a05a5e363b83c` | UChildERC20Proxy-2 | proxy | unknown | no |
 | polygon | `0x30b622609ffab1641b498e9bf1ff102ab288bee7` | ChildERC20 | impl | unknown | no |
+| polygon | `0x39baac62266af129f24104bc8b1800350563edb9` | UniswapV3Pool-2 | impl | live | no |
 | polygon | `0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4` | UChildERC20Proxy | proxy | unknown | no |
 | polygon | `0x4535e52cdf3ab787b379b7b72b5990767e6747e4` | UChildERC20Proxy-2 | proxy | unknown | no |
+| polygon | `0x538b2b1acf51b6c9a620f57de8619f9b428ebf9d` | UniswapV3Pool-2 | impl | live | no |
+| polygon | `0x6ca9c8914a14d63a6700556127d09e7721ff7d3b` | SetToken-2 | impl | live | no |
 | polygon | `0x76bf9ac96fc75849c6872cf89f367e56feed5c30` | CryptoCabz | impl | unknown | no |
 | polygon | `0x7844f79fc841e4f92d974c417031c76f8578c2d5` | UChildERC20Proxy | proxy | unknown | no |
+| polygon | `0x89c53b02558e4d1c24b9bf3bed1279871187ef0b` | Chamber | impl | live | no |
+| polygon | `0x8f0d5660929ca6ac394c5c41f59497629b1dbc23` | Chamber | impl | live | no |
 | polygon | `0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4` | UChildERC20Proxy-2 | proxy | live | no |
 | polygon | `0x9d74de101e2a54ad42198f37bdcce0a0160acacb` | UChildERC20Proxy-3 | impl | unknown | no |
 | polygon | `0xab1b1680f6037006e337764547fb82d17606c187` | FxERC20 | impl | live | no |
+| polygon | `0xafb6e8331355fae99c8e8953bb4c6dc5d11e9f3c` | Chamber | impl | live | no |
+| polygon | `0xb485c3048911225de1ad8b446432aed0fbdef211` | UniswapV3Pool-2 | impl | live | no |
 | polygon | `0xbcd2c5c78000504efbc1ce6489dfcac71835406a` | UChildERC20Proxy-2 | proxy | live | no |
 | polygon | `0xc2ff25dd99e467d2589b2c26edd270f220f14e47` | UChildERC20Proxy-4 | proxy | unknown | no |
 | polygon | `0xc5b57e9a1e7914fda753a88f24e5703e617ee50c` | UChildERC20Proxy | proxy | unknown | no |
+| polygon | `0xd1ce69b4bdd3dda553ea55a2a57c21c65190f3d5` | Chamber | impl | live | no |
+| polygon | `0xde2925d582fc8711a0e93271c12615bdd043ed1c` | Chamber | impl | live | no |
+| polygon | `0xe15a66b7b8e385caa6f69fd0d55984b96d7263cf` | Chamber | impl | live | no |
 | polygon | `0xee875ef94641c33280b7f35c39b639f7f07481ca` | UniswapV2Pair | impl | live | no |
+| polygon | `0xefba86413285584582cbeb556e1b89914b67ed02` | UniswapV3Pool-2 | impl | live | no |
+| polygon | `0xf401e2c1ce8f252947b60bfb92578f84217a1545` | Chamber | impl | live | no |
 | polygon | `0xf972daced7c6b03223710c11413036d17eb298f6` | UChildERC20Proxy | proxy | unknown | no |
 
-## Source unavailable (3084)
+## Source unavailable (3071)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - polygon `0x000f91e58454a942212f40a173be771af74fac09`
@@ -233,7 +246,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0x0fdfee86a85cf73c1eced1e2f8d8a358c5c7127d`
 - polygon `0x0fe12841c5448b3aa7214f316e8c2456f3412c9d`
 - polygon `0x100896c1d7aa341cebe62312e302cb009a94f716`
-- polygon `0x103bb3ebc6f61b3db2d6e01e54ef7d9899a2e16b`
 - polygon `0x104aa6c9e42767590384912739a6d70831ab7d3e`
 - polygon `0x104fab93ba430663799038c75088e8475fd6fdd2`
 - polygon `0x1054ead24f2a99cac82941ef2bd37f7cc5fa50bb`
@@ -721,7 +733,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0x393953798daf365ea18758df15803af948dd210b`
 - polygon `0x395e15104e1ccf14bef63a10041fb22f1e30ab27`
 - polygon `0x396a21bb6eaf0665e0ba679c08bf523e017c2313`
-- polygon `0x39baac62266af129f24104bc8b1800350563edb9`
 - polygon `0x39c9dbb09092ebc4b36fe97e93dd8a417f6a7751`
 - polygon `0x39e2f4d8d74f5efa4db732a751f7731764968f00`
 - polygon `0x39ea286f590029634db31440e4730fb026658951`
@@ -1042,7 +1053,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0x5362daf94a6bd0e9078ac3070f575861f12a2e77`
 - polygon `0x537438d607d6ddd828ff58dbc2f2eb130675154f`
 - polygon `0x538467a1ce7fb0d8f3b54d8b1404f2401a7e04e8`
-- polygon `0x538b2b1acf51b6c9a620f57de8619f9b428ebf9d`
 - polygon `0x538d47d142f6993038a667e9d6210d3735749b36`
 - polygon `0x53a327aa58da9ae90154979baf928c212ec9c498`
 - polygon `0x53a9dd2e3fc76cad4a61c295d96610ea0fda3755`
@@ -1346,7 +1356,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0x6c69ef0e475566777294911b6658c002ae6ab2e6`
 - polygon `0x6c6fcdec44990079baac5c3062e8f0dac5c4ba8e`
 - polygon `0x6c9968ec991d15b3e94f62307f850774926ed72d`
-- polygon `0x6ca9c8914a14d63a6700556127d09e7721ff7d3b`
 - polygon `0x6cb02c92611f001f605c891fbfde7d1a26de54b9`
 - polygon `0x6ce6d191d2c8782af8a45d8375537ef6b63dd7f8`
 - polygon `0x6cf0c5be4785b2e35a76b32ff50b48473859b31d`
@@ -1693,7 +1702,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0x896b814201ba12ee8174c9f53973b29b9e8dd754`
 - polygon `0x89a8a5d4c68d136478aba1041bd252712c39e2cc`
 - polygon `0x89c040fefc8ddb7c8483877420a8ca7ae3e57c74`
-- polygon `0x89c53b02558e4d1c24b9bf3bed1279871187ef0b`
 - polygon `0x89d00ecdf18f0e9af089e524abe2ebb3ba18ed38`
 - polygon `0x8a01816964baacf4de213119296ca79f81c19a0f`
 - polygon `0x8a037dbca8134ffc72c362e394e35e0cad618f85`
@@ -1768,7 +1776,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0x8e8f8df6dce311a011a5b09788dda689a82d9f37`
 - polygon `0x8eaeb95a23335340899246cb796b4e6afc16109a`
 - polygon `0x8efbae87cf4ce1855c76f2cc9aac90a1529d313b`
-- polygon `0x8f0d5660929ca6ac394c5c41f59497629b1dbc23`
 - polygon `0x8f15fb3256099ee5c392404fadcd6092f7055bd7`
 - polygon `0x8f1b26aa40500c27e4c6a9b34e413324618e1d8c`
 - polygon `0x8f2a31e0fccc24e388f6ae6cc377daee9c7d2f8b`
@@ -2165,7 +2172,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xaf8ba2a18491a3d8084ff3cb3289f0e5aad7bf86`
 - polygon `0xaf8d9bb0794d87b97f409bfc2ae5287ef321155e`
 - polygon `0xafa9441728d2e613e0f196f50b725a0d58d843e6`
-- polygon `0xafb6e8331355fae99c8e8953bb4c6dc5d11e9f3c`
 - polygon `0xafbabaa1591d1afa0f62935e95265cb937c2facf`
 - polygon `0xafbb525ad2e9183f9ab293522504e98766245895`
 - polygon `0xafccec442868f4ad4e08f844e23901a5b085afef`
@@ -2212,7 +2218,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xb3df323d2c8aecba4f58839b4429386285ef8001`
 - polygon `0xb402cd6794f50b219dabcea822f63f907ec00dd2`
 - polygon `0xb46dd73ac86ed8706c0761e593858187023e71ef`
-- polygon `0xb485c3048911225de1ad8b446432aed0fbdef211`
 - polygon `0xb4a055786ee8b9c9a09156bb185eba7b91540ee5`
 - polygon `0xb4a773689cef7197d00cbb55158839ab5fbf7e6d`
 - polygon `0xb4e259a1e21720edfca00dd79b06a9c7b04db6a5`
@@ -2555,7 +2560,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xd18289badcffd67cb5413edf3e8f2a87e1af489c`
 - polygon `0xd19c44d081b93c73b3c04c3ebce80fbc43fbb007`
 - polygon `0xd1c5878c21aa8b4abaad9914a1890eca2695e7b9`
-- polygon `0xd1ce69b4bdd3dda553ea55a2a57c21c65190f3d5`
 - polygon `0xd1d28303929299bc3fda708600e527ef7bfaef36`
 - polygon `0xd1e3f2fe09d92e47868f6feb653344932bcf5091`
 - polygon `0xd20659c02c921b8efc14627e48bc0fa99039055f`
@@ -2697,7 +2701,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xdde3550cabf707fe7bc13fcb4b0aa7101280c9d3`
 - polygon `0xddf641404cc3750830ba2d6c4e4982e139ba4aac`
 - polygon `0xde174567a7fa14580e25042c8ff8a46489e56f8f`
-- polygon `0xde2925d582fc8711a0e93271c12615bdd043ed1c`
 - polygon `0xde2e34a9e9d910357e31664fb96a683c75a969d0`
 - polygon `0xde37259e10a7a998ab735a50c6f2fdc8a2a07262`
 - polygon `0xde6a6647f232c77fd44e62505cc591ab8586adc1`
@@ -2744,7 +2747,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xe14654f81661db0af557383e4c2feb081f3f1f55`
 - polygon `0xe146c0a47c5faccbfcbcc579c1ebe2ca2ac900cd`
 - polygon `0xe156ce6c2bf116b165b82abda0ba78e000225414`
-- polygon `0xe15a66b7b8e385caa6f69fd0d55984b96d7263cf`
 - polygon `0xe15c40cae674a35dcd0108e66383e6f483533b82`
 - polygon `0xe15c786c844559d4e26eec46089c0a942fa7dc78`
 - polygon `0xe1708abde4847b4929b70547e5197f1ba1db2250`
@@ -2939,7 +2941,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xefa8a283af987de58f31c6d985fdfe80afe06b00`
 - polygon `0xefaa2d27adcaf695c1ffab7ce955cf2e2b3407f2`
 - polygon `0xefb5978c9c08b922d0322a9645d69e5e99e4862c`
-- polygon `0xefba86413285584582cbeb556e1b89914b67ed02`
 - polygon `0xefcfbd8d1098a9eb581e32bfd5ce251d5104b805`
 - polygon `0xefe5be45c7c181a76d5d6c6958b43e68a59df834`
 - polygon `0xf0533e7ef9d9aa5d5554be649e60315e528ce3a7`
@@ -2984,7 +2985,6 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - polygon `0xf359269c628024ed8e745dd8c7bcec3cb92ee628`
 - polygon `0xf35c4ce13ec3ced0f55be977917871de2c4bfbe3`
 - polygon `0xf3b5ebdcfafdabdec00710c6f3bd45f2a50a17df`
-- polygon `0xf401e2c1ce8f252947b60bfb92578f84217a1545`
 - polygon `0xf41df3b8084f1bcbf8d72c8366392170e7a0cffd`
 - polygon `0xf4487f1ff4f7e38c640aea91d7bb47aea98c09a7`
 - polygon `0xf451e72d5162cc42268cada64bdc03ebf9520dff`

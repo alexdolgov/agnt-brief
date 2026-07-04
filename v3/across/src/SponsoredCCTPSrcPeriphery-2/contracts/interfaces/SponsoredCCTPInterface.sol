@@ -1,12 +1,14 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
+import { SponsoredExecutionModeInterface } from "./SponsoredExecutionModeInterface.sol";
+
 /**
  * @title SponsoredCCTPInterface
  * @notice Interface for the SponsoredCCTP contract
  * @custom:security-contact bugs@across.to
  */
-interface SponsoredCCTPInterface {
+interface SponsoredCCTPInterface is SponsoredExecutionModeInterface {
     // Error thrown when the signature is invalid.
     error InvalidSignature();
 
@@ -22,6 +24,23 @@ interface SponsoredCCTPInterface {
     // Error thrown when the CCTP message transmitter receive message fails.
     error CCTPMessageTransmitterFailed();
 
+    // Error thrown when the amount actually minted into this contract by the CCTP call does not match
+    // the `amount - feeExecuted` encoded in the message.
+    error InvalidMintedAmount();
+
+    // Error thrown when the CCTP message's top-level `recipient` is not the configured TokenMessenger.
+    error InvalidRecipient();
+
+    // Error thrown when the TokenMinter does not link the message's remote burnToken to this periphery's
+    // `baseToken` on the local domain.
+    error InvalidMintedToken();
+
+    // Error thrown when direct flow destination handler is not a contract.
+    error InvalidDirectHandler();
+
+    // Error thrown when the burn token is invalid.
+    error InvalidBurnToken();
+
     event SponsoredDepositForBurn(
         bytes32 indexed quoteNonce,
         address indexed originSender,
@@ -30,21 +49,26 @@ interface SponsoredCCTPInterface {
         uint256 maxBpsToSponsor,
         uint256 maxUserSlippageBps,
         bytes32 finalToken,
+        uint32 destinationDex,
+        uint8 accountCreationMode,
+        bytes signature
+    );
+
+    event SponsoredCCTPDirectExecution(
+        bytes32 indexed quoteNonce,
+        address indexed originSender,
+        bytes32 indexed finalRecipient,
+        uint256 quoteDeadline,
+        uint256 maxBpsToSponsor,
+        uint256 maxUserSlippageBps,
+        bytes32 finalToken,
+        uint32 destinationDex,
+        uint8 accountCreationMode,
         bytes signature
     );
 
     // Event when emergency receive is called
     event EmergencyReceiveMessage(bytes32 nonce, address finalRecipent, address finalToken, uint256 amount);
-
-    // Execution modes for the sponsored CCTP flow
-    enum ExecutionMode {
-        // Send to core and perform swap (if needed) there.
-        DirectToCore,
-        // Execute arbitrary actions (like a swap) on HyperEVM, then transfer to HyperCore
-        ArbitraryActionsToCore,
-        // Execute arbitrary actions on HyperEVM only (no HyperCore transfer)
-        ArbitraryActionsToEVM
-    }
 
     // Params that will be used to create a sponsored CCTP quote and deposit for burn.
     struct SponsoredCCTPQuote {
@@ -78,6 +102,10 @@ interface SponsoredCCTPInterface {
         // The final token that final recipient will receive. This is needed as it can be different from the burnToken
         // in which case we perform a swap on the destination chain.
         bytes32 finalToken;
+        // The destination DEX on HyperCore.
+        uint32 destinationDex;
+        // AccountCreationMode: Standard or FromUserFunds
+        uint8 accountCreationMode;
         // Execution mode: DirectToCore, ArbitraryActionsToCore, or ArbitraryActionsToEVM
         uint8 executionMode;
         // Encoded action data for arbitrary execution. Empty for DirectToCore mode.

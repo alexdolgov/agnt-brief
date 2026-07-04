@@ -1,15 +1,15 @@
 {
   "component": "SMT-3",
   "main_contract": "SMT",
-  "source_file_count": 6,
+  "source_file_count": 7,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x3b152ec4f1534947fafb9edce9c7cb4bf8df2e82",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfb1e439ed3d251bc2bd23719cbbb7df372249e44",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

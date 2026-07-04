@@ -1,0 +1,26 @@
+{
+  "component": "ProtocolTieredFeePolicy-3",
+  "main_contract": "ProtocolTieredFeePolicy",
+  "source_file_count": 4,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd0aab6695b8ad921baa1ac8821e54d062c400e06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8ffc95039a037dd3d597125339a8b96c08d6dc81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

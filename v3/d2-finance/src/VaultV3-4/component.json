@@ -1,0 +1,18 @@
+{
+  "component": "VaultV3-4",
+  "main_contract": "VaultV3",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2406aacbdf8463176deb285adaa81768415b6c7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

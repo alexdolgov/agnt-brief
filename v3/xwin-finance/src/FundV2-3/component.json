@@ -1,0 +1,20 @@
+{
+  "component": "FundV2-3",
+  "main_contract": "FundV2",
+  "source_file_count": 19,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://skynet.certik.com/projects/xwinfinance"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x76d6cc66f2e29b979224aaa6f500902a10edc447",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

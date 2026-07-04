@@ -1,15 +1,31 @@
 {
   "component": "MetaMorphoV1_1",
   "main_contract": "MetaMorphoV1_1",
-  "source_file_count": 42,
-  "deployment_count": 1,
+  "source_file_count": 41,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0x30bba9cd9eb8c95824aa42faa1bb397b07545bc1",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc30ce6a5758786e0f640cc5f881dd96e9a1c5c59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5c0c306aaa9f877de636f4d5822ca9f2e81563ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7e97fa6893871a2751b5fe961978dccb2c201e65",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

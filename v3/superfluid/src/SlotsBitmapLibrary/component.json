@@ -7,81 +7,81 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x07efa4e436ee9c3a6ff1f0a3a7b4135aabb2fecb",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e212ee99e25e0e66b7c93fa857f24a36495a853",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x2dc25e221d493526bf6a6fce3076ba2c72b47678",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf26967f92151487f8c6642199c3441b02398d19e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3c1bcb2648c4b4c18c44f0cc7088d09b94cbab2e",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcf5674dd984102dd15c9bb035b4f75df600c1857",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x4bff86e83f4400dbf1f8caea1f955f959e605ef1",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xedf178ec549083ab4535ac388b3a88a248ac65fe",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x625f04c9b91ecdfbeb7021271749212388f12c11",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5ab84e4b3a5f418c95b77dbdecfaf18d0fd3b3e4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x88bb53dea50691cc41094cde84f88d6afb8ca499",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x959653df67f6385eff01e38de6b9e493c09cd384",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xa347bdc5965323f92ccd950a8b7012c0e438e178",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x25382fdc6a862809eefe918d065339cfa9227b9e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf17e88391b68c2a5972131f5044fd6ace665f221",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa97ab27b3ab6eed3b4699ad8a6378d6b7ec18042",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf3218d5380799b9d8c81b9180d0a31e4d8c53947",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x57897b796ece6633fc7c0c6490b4eb84d58509e5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xfc5fa7a03ae8837cc3bad913acaed2966791497c",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x91bd026276c23cd88011a6a7f3dba309b07796fc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

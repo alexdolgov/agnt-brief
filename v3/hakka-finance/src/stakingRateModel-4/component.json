@@ -1,0 +1,18 @@
+{
+  "component": "stakingRateModel-4",
+  "main_contract": "stakingRateModel",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6fa4970ae0a9fb50f7d8026830d2526db7e7e201",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 import "@openzeppelin/contracts/utils/Address.sol";
 import "../interfaces/IERC20Minimal.sol";
@@ -56,6 +56,8 @@ contract MesonStates is MesonTokens, MesonHelpers {
   /// add new variables without shifting down storage in the inheritance chain.
   /// See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps
   uint256[50] private __gap;
+
+  function _isPremiumManager() internal view virtual returns (bool) {}
 
   function poolTokenBalance(address token, address addr) external view returns (uint256) {
     uint8 tokenIndex = indexOfToken[token];
@@ -184,13 +186,15 @@ contract MesonStates is MesonTokens, MesonHelpers {
 
   /// @notice Determine if token has decimal 18 and therefore need to adjust amount
   /// @param tokenIndex The index of token. See `tokenForIndex` in `MesonTokens.sol`
-  function _amountFactor(uint8 tokenIndex) private pure returns (uint256) {
+  function _amountFactor(uint8 tokenIndex) public pure returns (uint256) {
     if (tokenIndex <= 32) {
       return 1;
     } else if (tokenIndex == 242 && SHORT_COIN_TYPE != 0x02ca && SHORT_COIN_TYPE != 0x1771) {
       return 100;
-    } else if (tokenIndex > 112 && tokenIndex <= 128) {
+    } else if (tokenIndex > 112 && tokenIndex <= 123) {
       return 100;
+    } else if (tokenIndex > 123 && tokenIndex <= 128) {
+      return 1000;
     }
     return 1e12;
   }

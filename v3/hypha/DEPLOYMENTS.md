@@ -1,6 +1,6 @@
 # hypha — deployments
 
-83 verified deployment(s) across 44 component(s).
+84 verified deployment(s) across 45 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -48,8 +48,8 @@
 | avalanche | `0x8c05d78066431c3b11bbfb6f3546fd3f1396115c` | MinipoolStreamliner | impl | live | yes |
 | avalanche | `0x912b5d41656048ef681efa9d32488a3ffe397994` | LiquidityPoolManagerV2 | impl | inactive | no |
 | avalanche | `0x9189d18f453b1ec1f02e40a8e3711334f9ea210b` | Ocyticus | impl | live | yes |
-| avalanche | `0x9484d5da62664d65744de5d2c148c0ee89416c71` | ProxyAdmin | impl | live | no |
-| avalanche | `0x9946e68490d71fe976951e360f295c4cf8531d00` | Staking | impl | live | yes |
+| avalanche | `0x9484d5da62664d65744de5d2c148c0ee89416c71` | ProxyAdmin-2 | impl | live | no |
+| avalanche | `0x9946e68490d71fe976951e360f295c4cf8531d00` | Staking-2 | impl | live | yes |
 | avalanche | `0x9e6579161c6f53722541edbd5ac96779c5b280e9` | MinipoolManager | impl | live | yes |
 | avalanche | `0x9fa82eb2d653fd2938d55cdd8e6e3771a3966cd9` | ParadiseTycoonPowerups | impl | unknown | no |
 | avalanche | `0x9fbb3df7c40da2e5a0de984ffe2ccb7c47cd0abf` | CREATE3Factory | impl | live | no |
@@ -64,7 +64,7 @@
 | avalanche | `0xb5f2ed77b7723da56ad58edca5106f07f390e560` | MinipoolStreamliner | impl | live | yes |
 | avalanche | `0xb6ddbf75e2f0c7fc363b47b84b5c03959526aecb` | MinipoolStreamliner | impl | live | yes |
 | avalanche | `0xb84fa022c7fe1ce3a1f94c49f2f13236c3d1ed08` | MinipoolManager | impl | live | yes |
-| avalanche | `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190` | ProxyAdmin | impl | live | no |
+| avalanche | `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190` | ProxyAdmin-2 | impl | live | no |
 | avalanche | `0xc300bc9b4b690ba7a182126299a0618ece268ee7` | MinipoolManager | impl | live | yes |
 | avalanche | `0xc7fef2eac21dddf9fa332c1ff4cf208599d7a6c6` | ProxyAdmin | impl | unknown | no |
 | avalanche | `0xc8de41c35fb389286546cf4107102a7656da7037` | MinipoolManager | impl | live | yes |
@@ -82,13 +82,14 @@
 | avalanche | `0xefa94de7a4656d787667c749f7e1223d71e9fd88` | PangolinFactory | impl | inactive | no |
 | avalanche | `0xf04aa1700694881761de6d1cc1c490102ff8a9ed` | TransparentUpgradeableProxy | impl | unknown | no |
 | avalanche | `0xf25dc803dba114830b086e4cc09cfdebe2c10afd` | WithdrawQueue | impl | live | no |
+| avalanche | `0xf451171872e9395021316e44d9f5475c90e27848` | TransparentUpgradeableProxy | proxy | live | no |
 | avalanche | `0xf4c5626c39570f0637c1785b378b0ef45a1620a9` | ProxyAdmin | impl | unknown | no |
 | avalanche | `0xf80eb498bbfd45f5e2d123dfbdb752677757843e` | TokenggAVAX | impl | live | yes |
 | avalanche | `0xfad33e5854d7d0065cd4cd1e2ee9a64928163752` | TokenggAVAX | impl | live | yes |
 | avalanche | `0xfc3ea32c03b4be326bced178431789f7e2d8051a` | ProtocolDAO-2 | impl | live | yes |
 | avalanche | `0xffdc3b731c57a7179b90fe7f5c2b5b87a5ad5542` | ProtocolDAO-3 | impl | live | yes |
 
-## Source unavailable (10)
+## Source unavailable (9)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - avalanche `0x22bafb9c882a8ba7ee5559186540bcd8dba1d073`
@@ -99,5 +100,4 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - avalanche `0x697d7c12853a59429b62ab4d310975335dba2c68`
 - avalanche `0xae1e7b06544a13315e6f7301cc161761813ce4b1`
 - avalanche `0xc095ece2c0f315381b4bf6de169fbc219b24194c`
-- avalanche `0xf451171872e9395021316e44d9f5475c90e27848`
 - avalanche `0xfe6ca6cd383d1e213f5d1015dd0bb35275e8fe3e`

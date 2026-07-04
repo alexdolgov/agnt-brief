@@ -1,15 +1,23 @@
 {
   "component": "DackieTreasury",
   "main_contract": "DackieTreasury",
-  "source_file_count": 6,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x823b825931ebeb17c441298ec974a1d8089ab4db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa466ebcfa58848feb6d8022081f1c21a884889bb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

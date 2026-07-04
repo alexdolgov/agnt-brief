@@ -1,0 +1,18 @@
+{
+  "component": "WithdrawManagerFactory-3",
+  "main_contract": "WithdrawManagerFactory",
+  "source_file_count": 28,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x42c12f941b83276d5691d9caef9b040f787c6b3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

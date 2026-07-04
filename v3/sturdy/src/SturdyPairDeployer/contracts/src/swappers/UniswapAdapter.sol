@@ -20,6 +20,7 @@ library UniswapAdapter {
   }
 
   function swapExactTokensForTokens(
+    address addressesProvider,
     address assetToSwapFrom,
     address assetToSwapTo,
     uint256 amountToSwap,

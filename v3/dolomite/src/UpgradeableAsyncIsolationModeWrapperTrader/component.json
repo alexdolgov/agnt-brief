@@ -2,7 +2,7 @@
   "component": "UpgradeableAsyncIsolationModeWrapperTrader",
   "main_contract": "UpgradeableAsyncIsolationModeWrapperTrader",
   "source_file_count": 54,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -29,6 +29,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdb00380710e79b63e02a96c2bbb0230315a445a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

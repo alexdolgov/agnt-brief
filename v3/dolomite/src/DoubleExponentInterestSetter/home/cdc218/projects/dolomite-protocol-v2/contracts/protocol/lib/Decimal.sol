@@ -20,7 +20,7 @@ pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
-import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
+import { Math } from "./Math.sol";
 
 
 /**
@@ -43,14 +43,6 @@ library Decimal {
     }
 
     // ============ Functions ============
-
-    function zero()
-        internal
-        pure
-        returns (D256 memory)
-    {
-        return D256({ value: 0 });
-    }
 
     function one()
         internal
@@ -78,7 +70,7 @@ library Decimal {
         pure
         returns (uint256)
     {
-        return DolomiteMarginMath.getPartial(target, d.value, BASE);
+        return Math.getPartial(target, d.value, BASE);
     }
 
     function div(
@@ -89,6 +81,6 @@ library Decimal {
         pure
         returns (uint256)
     {
-        return DolomiteMarginMath.getPartial(target, BASE, d.value);
+        return Math.getPartial(target, BASE, d.value);
     }
 }

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.19;
+pragma solidity 0.8.28;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "../libraries/Fixed.sol";
@@ -48,11 +48,6 @@ interface IBasketHandler is IComponent {
     /// @param newVal The new value of enableIssuancePremium
     event EnableIssuancePremiumSet(bool oldVal, bool newVal);
 
-    /// Emitted when the permissionless refresh logic is changed
-    /// @param oldVal The old value of enablePermissionlessRefresh
-    /// @param newVal The new value of enablePermissionlessRefresh
-    event EnablePermissionlessRefreshSet(bool oldVal, bool newVal);
-
     /// Emitted when the status of a basket has changed
     /// @param oldStatus The previous basket status
     /// @param newStatus The new basket status
@@ -68,8 +63,7 @@ interface IBasketHandler is IComponent {
         IMain main_,
         uint48 warmupPeriod_,
         bool reweightable_,
-        bool enableIssuancePremium_,
-        bool enablePermissionlessRefresh_
+        bool enableIssuancePremium_
     ) external;
 
     /// Set the prime basket, checking target amounts are constant
@@ -204,8 +198,4 @@ interface TestIBasketHandler is IBasketHandler {
     function enableIssuancePremium() external view returns (bool);
 
     function setIssuancePremiumEnabled(bool val) external;
-
-    function enablePermissionlessRefresh() external view returns (bool);
-
-    function setPermissionlessRefreshEnabled(bool val) external;
 }

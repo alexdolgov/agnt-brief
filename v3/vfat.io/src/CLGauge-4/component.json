@@ -1,0 +1,18 @@
+{
+  "component": "CLGauge-4",
+  "main_contract": "CLGauge",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb4318c490e1bd4c0c01a8f0e3df26a28b1136f48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

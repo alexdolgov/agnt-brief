@@ -2,7 +2,7 @@
   "component": "SiloDeployer",
   "main_contract": "SiloDeployer",
   "source_file_count": 54,
-  "deployment_count": 11,
+  "deployment_count": 13,
   "audited": true,
   "audits_covering": [
     "https://docs.silo.finance/assets/files/SP_Silo_Core_Security_Assessment_Report_v2.0-6c5f5bb40b34450300b9fe59133ea870.pdf",
@@ -93,6 +93,22 @@
       "chain": "chain-146",
       "chain_id": 146,
       "address": "0x95a7bc57c738c7f64103b93d04f49cbca566affd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1bdebe3c773452e1f8fbe338ff4139539d9bc2f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xba4a545c497cbe13424da03ea13e81797239344e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

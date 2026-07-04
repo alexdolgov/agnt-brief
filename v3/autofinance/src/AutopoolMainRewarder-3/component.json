@@ -1,0 +1,18 @@
+{
+  "component": "AutopoolMainRewarder-3",
+  "main_contract": "AutopoolMainRewarder",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x726104cfbd7ece2d1f5b3654a19109a9e2b6c27b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

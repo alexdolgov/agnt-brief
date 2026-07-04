@@ -210,13 +210,6 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @return price Value of 1 unit of the underlying LP token in terms of the base asset
     function getUnderlyerCeilingPrice() external returns (uint256 price);
 
-    /// @notice Set or unset  a hash as a signed message
-    /// @dev Should be limited to DESTINATION_VAULTS_UPDATER. The set hash is used to validate a signature.
-    /// This signature can be potentially used to claim offchain rewards earned by Destination Vaults.
-    /// @param hash bytes32 hash of a payload
-    /// @param flag boolean flag to indicate a validity of hash
-    function setMessage(bytes32 hash, bool flag) external;
-
     /// @notice Allows to change the incentive calculator of destination vault
     /// @dev Only works when vault is shutdown, also validates the calculator before updating
     /// @param incentiveCalculator address of the new incentive calculator

@@ -1,0 +1,18 @@
+{
+  "component": "PayableProxy-2",
+  "main_contract": "PayableProxy",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6978ffdcd509ded2f8557565e0a9fc5cfa1bebc5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "GmxV2Registry",
+  "main_contract": "GmxV2Registry",
+  "source_file_count": 115,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf01dc65eb0271d07a4f37298cfef6f44c5203eb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf4596bf2b237160ca7b15fd510b46ba12db54974",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

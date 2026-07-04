@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 /// @title MesonSwapEvents Interface
 interface IMesonSwapEvents {
   /// @notice Event when a swap request was posted.
-  /// Emit at the end of `postSwap()`, `postSwapFromInitiator()` and `postSwapFromContract()` calls.
+  /// Emit at the end of `postSwap()` and `postSwapWithSignature()` calls.
   /// @param encodedSwap Encoded swap
   event SwapPosted(uint256 indexed encodedSwap);
 
@@ -14,7 +14,7 @@ interface IMesonSwapEvents {
   event SwapBonded(uint256 indexed encodedSwap);
 
   /// @notice Event when a swap request was cancelled.
-  /// Emit at the end of `cancelSwap()` calls.
+  /// Emit at the end of `cancelSwap()` and `cancelSwapTo()` calls.
   /// @param encodedSwap Encoded swap
   event SwapCancelled(uint256 indexed encodedSwap);
 

@@ -1,0 +1,18 @@
+{
+  "component": "SuperVoter-2",
+  "main_contract": "SuperVoter",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0225664e04b25a1eb71a7ad0b93c9aa6ec3c74a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

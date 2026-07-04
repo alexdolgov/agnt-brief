@@ -1,23 +1,47 @@
 {
   "component": "TpdaLiquidationPairFactory",
   "main_contract": "TpdaLiquidationPairFactory",
-  "source_file_count": 8,
-  "deployment_count": 2,
+  "source_file_count": 6,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x0796be5c62669aadd8e1a41645344ebe51e7f668",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43069a907a69ab1f66b1f8417ddc790346920323",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x80f86691632d9863e6bcaa472e5c34574f77c7d1",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa99b3a8503260ab32753c382eac297acd4a43908",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xbddd23fdd9fe824d58814ca6d898af518676368a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8557a9a33b573dc4403708c5a8746a52648374ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x163402522fc0c0a7863479a069a8470fb22dfd3f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

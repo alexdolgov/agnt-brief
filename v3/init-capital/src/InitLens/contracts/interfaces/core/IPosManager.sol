@@ -23,8 +23,7 @@ interface IPosManager {
         mapping(address => uint) collAmts; // collateral token to collateral amts mapping
         EnumerableSet.AddressSet wLps; // enumerable set of collateral wlps
         mapping(address => EnumerableSet.UintSet) ids; // wlp address to enumerable set of ids mapping
-        uint8 collCount; // current collateral count (erc20 + wlp)
-        uint8 wLpCount; // current collateral count (wlp)
+        uint8 collCount; // current collateral count
     }
 
     struct PosBorrInfo {
@@ -99,15 +98,6 @@ interface IPosManager {
     /// @param _tokenId collateral wlp token id
     /// @return amt collateral amount
     function getCollWLpAmt(uint _posId, address _wLp, uint _tokenId) external view returns (uint amt);
-
-    /// @dev get position's collateral count
-    /// @param _posId position id
-    /// @return collCount position's collateral count
-    function getPosCollCount(uint _posId) external view returns (uint8 collCount);
-
-    /// @dev get position's wLp count
-    /// @param _posId position id
-    function getPosCollWLpCount(uint _posId) external view returns (uint8 wLpCount);
 
     /// @dev get position info
     /// @param _posId position id

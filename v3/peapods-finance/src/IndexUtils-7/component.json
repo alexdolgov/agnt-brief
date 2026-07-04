@@ -1,0 +1,18 @@
+{
+  "component": "IndexUtils-7",
+  "main_contract": "IndexUtils",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88b6db67000f8ef34ae1a34542b2e4b43b87d9b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

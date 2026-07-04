@@ -1,0 +1,18 @@
+{
+  "component": "MetavaultsRegistry-4",
+  "main_contract": "MetavaultsRegistry",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5b08e6492ce79ba8f84a8e684c3200b7590e41c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

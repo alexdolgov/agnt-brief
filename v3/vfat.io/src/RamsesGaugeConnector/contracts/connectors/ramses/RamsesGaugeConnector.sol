@@ -16,7 +16,7 @@ contract RamsesGaugeConnector is IFarmConnector {
         Farm calldata farm,
         address token,
         bytes memory // _extraData
-    ) external virtual override {
+    ) external payable virtual override {
         uint256 amount = IERC20(token).balanceOf(address(this));
         SafeTransferLib.safeApprove(token, farm.stakingContract, amount);
         IRamsesGauge(farm.stakingContract).deposit(amount, 0);

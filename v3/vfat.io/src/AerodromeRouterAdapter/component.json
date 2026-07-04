@@ -1,15 +1,79 @@
 {
   "component": "AerodromeRouterAdapter",
   "main_contract": "AerodromeRouterAdapter",
-  "source_file_count": 15,
-  "deployment_count": 1,
+  "source_file_count": 11,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x16a54ae47b7e2eea0ed60438ab5d970c284ffcf0",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b5e91ced1d9bc004f76b4cc7b6ede32a21258a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8bc78b3f5b9a79f0419bdf1db62ae244d949f007",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xaeb2a634ce814c1ad5a691d85ce25d9b0a31b9bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x400b2d19abd0883a80945c82492393d3c0bba104",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa4fb47efcad2a06706dc4459b3745df90a552682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa8807e6144511b107974f2fe2c8d7eee8acac716",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc64897da40124fdac93ea587dac04d7f4c68dec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd05bcc1eac61e0e47e8a7eb2b50cff75817d99a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x5ed2b28b3d4dde9e7c35526672f3a91a1bd99f69",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,20 @@
+{
+  "component": "PoolMaster-3",
+  "main_contract": "PoolMaster",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://3929482601-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhkiSI8bK3ThlypJ3jdEC%2Fuploads%2FOFonx1OQS6ni5lUsyiPx%2FClearpool%20Security%20Analysis%20by%20Pessimistic.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x331781c145aebfe6e97f9a60e7ed809c89c850ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

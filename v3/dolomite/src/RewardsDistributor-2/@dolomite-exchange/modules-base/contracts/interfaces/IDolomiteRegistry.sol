@@ -20,6 +20,7 @@
 
 pragma solidity ^0.8.9;
 
+import { IDolomiteMigrator } from "./IDolomiteMigrator.sol";
 import { IEventEmitterRegistry } from "./IEventEmitterRegistry.sol";
 import { IExpiry } from "./IExpiry.sol";
 import { IGenericTraderProxyV1 } from "./IGenericTraderProxyV1.sol";
@@ -45,12 +46,15 @@ interface IDolomiteRegistry {
     event LiquidatorAssetRegistrySet(address indexed _liquidatorAssetRegistry);
     event EventEmitterSet(address indexed _eventEmitter);
     event ChainlinkPriceOracleSet(address indexed _chainlinkPriceOracle);
+    event DolomiteMigratorSet(address indexed _dolomiteMigrator);
     event RedstonePriceOracleSet(address indexed _redstonePriceOracle);
     event OracleAggregatorSet(address indexed _oracleAggregator);
 
     // ========================================================
-    // =================== Admin Functions ====================
+    // =================== Write Functions ====================
     // ========================================================
+
+    function lazyInitialize(address _dolomiteMigrator, address _oracleAggregator) external;
 
     /**
      *
@@ -89,6 +93,8 @@ interface IDolomiteRegistry {
      *                                  DolomiteMargin.
      */
     function ownerSetChainlinkPriceOracle(address _chainlinkPriceOracle) external;
+
+    function ownerSetDolomiteMigrator(address _dolomiteMigrator) external;
 
     /**
      *
@@ -137,6 +143,11 @@ interface IDolomiteRegistry {
      * @return The address of the Chainlink price oracle that's compatible with DolomiteMargin
      */
     function chainlinkPriceOracle() external view returns (IDolomitePriceOracle);
+
+    /**
+     * @return The address of the migrator contract
+     */
+    function dolomiteMigrator() external view returns (IDolomiteMigrator);
 
     /**
      * @return The address of the Redstone price oracle that's compatible with DolomiteMargin

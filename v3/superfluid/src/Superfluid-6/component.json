@@ -1,0 +1,42 @@
+{
+  "component": "Superfluid-6",
+  "main_contract": "Superfluid",
+  "source_file_count": 62,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x353890b5ec7e97a514f749e2d5778d901e4d9c5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x87be92bab4f3dbe27a9f69aa786fe450d5027c5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe08a86c5c889d95f79415c5fbac37ad95621eadf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd07ed0cb98ce6a9ed4bcf2bc797325c04f0cae54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

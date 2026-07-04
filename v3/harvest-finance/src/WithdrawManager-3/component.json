@@ -1,15 +1,71 @@
 {
   "component": "WithdrawManager-3",
   "main_contract": "WithdrawManager",
-  "source_file_count": 29,
-  "deployment_count": 1,
+  "source_file_count": 26,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x468de989457f45c7bba362227274ae67e96d7b76",
+      "address": "0x19e5ac38a67d2422c87992150cbffb40de02737c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ba0f214d1b7f572d11dabe8fe0be9c99e25e6fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5903e1aeec722943cc5f816cb8c688b30777b2dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b7aecdc033968ccbf74f529f7de39df727b5c81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa76aa0b3d570ae04fcdd3e03fd217bfc5511448c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac84794ad9aa87fd001e019bbeb53c5c0bc69c2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbacf97aa4bcb35b285b5838e5a459b632580ad28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf215cf8b8accd1f87edcdcddcf979fef0ffbd101",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

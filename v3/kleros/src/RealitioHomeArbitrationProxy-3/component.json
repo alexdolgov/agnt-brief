@@ -1,0 +1,18 @@
+{
+  "component": "RealitioHomeArbitrationProxy-3",
+  "main_contract": "RealitioHomeArbitrationProxy",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x68154ea682f95bf582b80dd6453fa401737491dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

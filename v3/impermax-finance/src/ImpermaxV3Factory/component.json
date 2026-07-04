@@ -2,7 +2,7 @@
   "component": "ImpermaxV3Factory",
   "main_contract": "ImpermaxV3Factory",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/GuardianAudits/Audits/blob/main/Impermax/2025-02-08_Impermax.pdf",
@@ -13,6 +13,14 @@
       "chain": "chain-130",
       "chain_id": 130,
       "address": "0x50e7116c4a9624a2d562ee0ab5209f3834c15e14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x870fd2c2b502db53d3c9e19ab99725c1129fc120",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

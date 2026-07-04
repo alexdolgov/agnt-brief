@@ -2,10 +2,34 @@
   "component": "BridgeableToken",
   "main_contract": "BridgeableToken",
   "source_file_count": 47,
-  "deployment_count": 6,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5208f5de46c25273e2fb8d5a73d605997bc4ca3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62461591ffee0c539be1bb51a22624e6f3815bfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0a86c3a7038e33cb31531222fae33a51b5022b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

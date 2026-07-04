@@ -1,7 +1,7 @@
 {
   "component": "TxDataUtils-3",
   "main_contract": "TxDataUtils",
-  "source_file_count": 14,
+  "source_file_count": 25,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x7a6abbf5dcd58fe48bff1289b31b497f918dceb5",
+      "address": "0x60427184a3c6ff4382a0a189a6857adbae5cf0bb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +17,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xbf51d01e9ace59205be63b956c75cf1358835fe8",
+      "address": "0xe8cdcd1ea58cbb216019ed6101e6f6c9c9f077b0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

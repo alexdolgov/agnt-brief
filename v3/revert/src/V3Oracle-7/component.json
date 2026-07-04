@@ -1,0 +1,42 @@
+{
+  "component": "V3Oracle-7",
+  "main_contract": "V3Oracle",
+  "source_file_count": 34,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0ff4b8479c5e72a2ab8e80e134b7a93278f05800",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3dfe6e347bfa1054e1c1d9c63acda78c3f281c4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xab52f8c11e72d00d4f717a657378ef9b8bf7c2b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf6c04c9927e2b21b9634b4746ae7f21171ce0e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

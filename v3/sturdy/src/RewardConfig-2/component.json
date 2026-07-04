@@ -1,0 +1,18 @@
+{
+  "component": "RewardConfig-2",
+  "main_contract": "RewardConfig",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xb3d159d3c656925738e5733fb3aeb2a9cab92839",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

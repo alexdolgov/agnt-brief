@@ -1,15 +1,15 @@
 {
   "component": "MangroveVault-2",
   "main_contract": "MangroveVault",
-  "source_file_count": 54,
+  "source_file_count": 59,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x274f471270251fe69e17eb1b45666676fe4bc077",
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x572fcd28707ffee2d311278d405b9db0a90373cc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

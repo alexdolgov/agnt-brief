@@ -1,20 +1,26 @@
 {
   "component": "TransparentUpgradeableProxy-14",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 71,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2F5r1RtgYBP522L4FGQ3lx%2FEquilibria_Audit_Report_by_WatchPug.pdf"
-  ],
+  "source_file_count": 17,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x64627901dadb46ed7f275fd4fc87d086cff1e6e3",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6047828dc181963ba44974801ff68e538da5eaf9",
       "is_proxy": true,
-      "implementation_address": "0xd23935f6ae4f7ee6b2b169b07824dcc7f596c4e7",
+      "implementation_address": "0xc80268ce098296e0e75d925d0d485e7bb4252fad",
       "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc80268ce098296e0e75d925d0d485e7bb4252fad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

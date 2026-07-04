@@ -1,0 +1,26 @@
+{
+  "component": "XChainVaultAction-2",
+  "main_contract": "XChainVaultAction",
+  "source_file_count": 35,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2af296e77f32a356d13d9a3466678265cb92a4c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x8d74ec9b936ffe441a2d1864a002778821d633d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

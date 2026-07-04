@@ -1,0 +1,28 @@
+{
+  "component": "QuoterV2-4",
+  "main_contract": "QuoterV2",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaf78c3c4100070337dba8c79065339cfb77cfe7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1444037d01234cb4d0c36dadb0cd0534b7cf27fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

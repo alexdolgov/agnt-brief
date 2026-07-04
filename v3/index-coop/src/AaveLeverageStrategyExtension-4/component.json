@@ -1,0 +1,18 @@
+{
+  "component": "AaveLeverageStrategyExtension-4",
+  "main_contract": "AaveLeverageStrategyExtension",
+  "source_file_count": 118,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8a64b86b50ef7e4562f2222725ea391de1efd31a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "OmnichainStakingToken-2",
+  "main_contract": "OmnichainStakingToken",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd57e8bbc694f15317c54e3d6a9d98c931cd7a1b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

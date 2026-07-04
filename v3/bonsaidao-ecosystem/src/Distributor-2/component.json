@@ -1,0 +1,18 @@
+{
+  "component": "Distributor-2",
+  "main_contract": "Distributor",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbf4ee234c61dc1e47aac3a80e813f6068e25a6d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Messages-2",
+  "main_contract": "Messages",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x811f7bd79d9cf392f6a60c8e8f570c96769d92c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,15 +1,23 @@
 {
   "component": "ProxyAdmin-2",
   "main_contract": "ProxyAdmin",
-  "source_file_count": 17,
-  "deployment_count": 1,
+  "source_file_count": 11,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc89f742452f534ece603c7b62df76102aacf00df",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xea6b816abd45d1361fda29b56b89864180bcc98a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbfd6378545d118e8fb26f633d8f3b32bda047e9f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

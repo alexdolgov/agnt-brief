@@ -27,5 +27,4 @@ library Errors {
     error INVALID_COUPON(uint256 coupon, uint256 minCoupon, uint256 maxCoupon);
     error ANSWER_VARIATION_TOO_HIGH();
     error CANNOT_SET_NEGATIVE_MAX_ANSWER();
-    error MAX_ANSWER_TOO_LOW(int256 maxAnswer, int256 minAnswer);
 }

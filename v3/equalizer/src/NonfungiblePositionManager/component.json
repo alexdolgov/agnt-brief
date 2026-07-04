@@ -1,26 +1,26 @@
 {
   "component": "NonfungiblePositionManager",
   "main_contract": "NonfungiblePositionManager",
-  "source_file_count": 59,
+  "source_file_count": 54,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2b52294425a9a229322228de659ede9d146d7c2f",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x79c26d7ac184bb9c453b996475f484668e516de5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x79c26d7ac184bb9c453b996475f484668e516de5",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc905262ed27c56da7e5df67a51e8e1bbcd23fa0b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

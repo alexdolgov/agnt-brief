@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity 0.8.23;
 
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 import "./IGTokenLockedDepositNftDesign.sol";
 
 /**
- * @custom:version 6.3
+ * @dev Interface for GTokenLockedDepositNft contract
  */
 interface IGTokenLockedDepositNft is IERC721 {
     function mint(address to, uint256 tokenId) external;

@@ -4,21 +4,9 @@ pragma solidity ^0.8.17;
 import { ICustomConnectorRegistry } from "contracts/ConnectorRegistry.sol";
 
 interface IGaugeRegistryVoter {
-    function isGauge(
-        address target
-    ) external view returns (bool);
+    function isGauge(address target) external view returns (bool);
 
-    function isClGauge(
-        address target
-    ) external view returns (bool);
-
-    function isCLGauge(
-        address target
-    ) external view returns (bool);
-
-    function poolForGauge(
-        address gauge
-    ) external view returns (address);
+    function poolForGauge(address gauge) external view returns (address);
 }
 
 contract GaugeRegistry is ICustomConnectorRegistry {
@@ -30,9 +18,12 @@ contract GaugeRegistry is ICustomConnectorRegistry {
         connector = connector_;
     }
 
-    function connectorOf(
-        address target
-    ) external view override returns (address) {
+    function connectorOf(address target)
+        external
+        view
+        override
+        returns (address)
+    {
         if (voter.isGauge(target)) {
             return connector;
         }

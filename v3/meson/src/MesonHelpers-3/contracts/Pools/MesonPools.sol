@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 import "./IMesonPoolsEvents.sol";
 import "../utils/MesonStates.sol";
@@ -89,11 +89,11 @@ contract MesonPools is IMesonPoolsEvents, MesonStates {
   /// @dev Designed to be used by LPs (pool owners)
   /// @param addr The address to be added
   function addAuthorizedAddr(address addr) external {
-    require(poolOfAuthorizedAddr[addr] == 0, "Addr is authorized for another pool");
     address poolOwner = _msgSender();
     uint40 poolIndex = poolOfAuthorizedAddr[poolOwner];
     require(poolIndex != 0, "The signer does not register a pool");
     require(poolOwner == ownerOfPool[poolIndex], "Need the pool owner as the signer");
+    require(poolOfAuthorizedAddr[addr] == 0, "Addr is authorized for another pool");
     poolOfAuthorizedAddr[addr] = poolIndex;
 
     emit PoolAuthorizedAddrAdded(poolIndex, addr);
@@ -127,7 +127,7 @@ contract MesonPools is IMesonPoolsEvents, MesonStates {
     emit PoolOwnerTransferred(poolIndex, poolOwner, addr);
   }
 
-  function lock(uint256 encodedSwap, bytes32 r, bytes32 yParityAndS, address initiator) external {
+  function lock(uint256 encodedSwap, bytes32, bytes32, address initiator) external {
     // deprecated
     lockSwap(encodedSwap, initiator);
   }
@@ -354,6 +354,4 @@ contract MesonPools is IMesonPoolsEvents, MesonStates {
     require(_outChainFrom(encodedSwap) == SHORT_COIN_TYPE, "Swap not for this chain");
     _;
   }
-
-  function _isPremiumManager() internal view virtual returns (bool) {}
 }

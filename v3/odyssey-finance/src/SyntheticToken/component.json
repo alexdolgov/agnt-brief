@@ -2,7 +2,7 @@
   "component": "SyntheticToken",
   "main_contract": "SyntheticToken",
   "source_file_count": 33,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xd8a7ceccecbeded9f5350f4ca8faf55ab92f3390",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe6c2959d85a4c6d6bd202203b7c3a15294ec6544",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

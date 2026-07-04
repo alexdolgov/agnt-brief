@@ -1,6 +1,6 @@
 # cytonic-airdrop-campaign — deployments
 
-98 verified deployment(s) across 69 component(s).
+99 verified deployment(s) across 70 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -35,6 +35,7 @@
 | chain-169 | `0xa8c984ed3488a60b084e354082fc25fa9147f9f9` | TransparentUpgradeableProxy | impl | live | no |
 | chain-169 | `0xaccbc418a994a27a75644d8d591afc22faba594e` | TransparentUpgradeableProxy | impl | live | no |
 | chain-169 | `0xb0cbe3581570652d3b6148e213e45ed7efebe12c` | TransparentUpgradeableProxy | impl | live | no |
+| chain-169 | `0xb82a6f1f16077ca92b6168b3d8d883e7f9ec41b2` | DepositManager-6 | impl | live | no |
 | chain-169 | `0xc09ebbff9ac26025081fc57c6115b98d5a69201d` | TransparentUpgradeableProxy | impl | live | no |
 | chain-169 | `0xc0d14a4dc2f91cf0ea761e16474d6e46fa986ee4` | TransparentUpgradeableProxy | impl | live | no |
 | chain-169 | `0xc8693e492d1ec721a254daf3c075a440edd4018e` | MTokenDepositEntry | impl | unknown | no |
@@ -102,8 +103,3 @@
 | ethereum | `0xf807bc28086b15b94c16ea9d5f19f7279464e5a8` | NodeOperatorRegistry-4 | impl | inactive | no |
 | ethereum | `0xf951e335afb289353dc249e82926178eac7ded78` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xfae103dc9cf190ed75350761e95403b7b8afa6c0` | AdminUpgradeabilityProxy | proxy | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-169 `0xb82a6f1f16077ca92b6168b3d8d883e7f9ec41b2`

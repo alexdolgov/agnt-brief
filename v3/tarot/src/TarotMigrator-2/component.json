@@ -1,0 +1,18 @@
+{
+  "component": "TarotMigrator-2",
+  "main_contract": "TarotMigrator",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x07b414ad4e9b0866a30a05c6bc38fa48f7604602",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

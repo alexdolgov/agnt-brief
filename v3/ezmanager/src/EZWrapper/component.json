@@ -2,16 +2,48 @@
   "component": "EZWrapper",
   "main_contract": "EZWrapper",
   "source_file_count": 14,
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": true,
   "audits_covering": [
     "https://github.com/EZManagerCL/EZManagerContracts/blob/master/audits/Valves_v1_5.pdf"
   ],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2e631aa51584822370a81e8614999aa483db574f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfdbeb935e2097d9fdff27a73f89b1890e681d48d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x5afebf92e99ccb0b13215bebe85dabc63f8ec338",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x180670ccb476624566e78618d467ef57ebbf1921",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x91d0acacb9979e2332d05d370ff94e676516c449",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

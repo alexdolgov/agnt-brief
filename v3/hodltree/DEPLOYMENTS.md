@@ -1,6 +1,6 @@
 # hodltree — deployments
 
-8 verified deployment(s) across 8 component(s).
+9 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,8 +12,4 @@
 | ethereum | `0xce596bf99d21e46fa91143c03d7a356682b67859` | ReservePool | impl | live | no |
 | ethereum | `0xf4775c5dd1f90f57dface0c27c29047f18d9b810` | hUSDCToken | impl | live | no |
 | polygon | `0x1a13f4ca1d028320a707d99520abfefca3998b7f` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- polygon `0x27f8d03b3a2196956ed754badc28d73be8830a6e`
+| polygon | `0x27f8d03b3a2196956ed754badc28d73be8830a6e` | InitializableImmutableAdminUpgradeabilityProxy-3 | proxy | live | no |

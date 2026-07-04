@@ -1,0 +1,18 @@
+{
+  "component": "DystopiaExchangeRouter-2",
+  "main_contract": "DystopiaExchangeRouter",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b39e7a1c706464f5b3956b21cd22a43f0db0eac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

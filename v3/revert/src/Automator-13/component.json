@@ -1,0 +1,18 @@
+{
+  "component": "Automator-13",
+  "main_contract": "Automator",
+  "source_file_count": 39,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa16cf1e8adb706c762a04449cbbf8fa99cb66a58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

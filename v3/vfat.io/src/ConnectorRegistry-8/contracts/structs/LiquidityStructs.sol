@@ -26,3 +26,11 @@ struct SwapParams {
     address tokenIn;
     bytes extraData;
 }
+
+struct GetAmountOutParams {
+    address router;
+    address lpToken;
+    address tokenIn;
+    address tokenOut;
+    uint256 amountIn;
+}

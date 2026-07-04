@@ -1,17 +1,23 @@
 {
   "component": "ProxyAdmin",
   "main_contract": "ProxyAdmin",
-  "source_file_count": 14,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://www.snuggle.fi/security"
-  ],
+  "source_file_count": 12,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x269dc2f974abed1c7a55a447758fcaef2dcca86f",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8bca45df8659debdffb4baca911a5b9c84e037df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x999a74ddfde1575c4db454a0300d5f0351a891de",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

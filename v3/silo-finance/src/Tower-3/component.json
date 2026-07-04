@@ -1,0 +1,18 @@
+{
+  "component": "Tower-3",
+  "main_contract": "Tower",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc1b3fb8f41398a5dec50d14e5c9d18a6f20b53ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

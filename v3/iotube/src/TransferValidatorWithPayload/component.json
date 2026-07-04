@@ -2,10 +2,26 @@
   "component": "TransferValidatorWithPayload",
   "main_contract": "TransferValidatorWithPayload",
   "source_file_count": 1,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7eba1cea51ec9b3accc16728e3b8786560c59d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x95c6f6af2c0fa069768203fda963d7626efc794a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

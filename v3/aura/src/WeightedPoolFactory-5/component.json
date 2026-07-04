@@ -1,0 +1,18 @@
+{
+  "component": "WeightedPoolFactory-5",
+  "main_contract": "WeightedPoolFactory",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e9aa87e45e92bad84d5f8dd1bff34fb92637de9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -3,37 +3,33 @@
 pragma solidity 0.8.17;
 pragma abicoder v1;
 
-import "@1inch/solidity-utils/contracts/OnlyWethReceiver.sol";
-import "@1inch/solidity-utils/contracts/interfaces/IWETH.sol";
+import "../interfaces/InteractiveNotificationReceiver.sol";
+import "../interfaces/IWithdrawable.sol";
 
-import "../interfaces/IPostInteractionNotificationReceiver.sol";
-import "../libraries/Errors.sol";
+contract WethUnwrapper is InteractiveNotificationReceiver {
+    error ETHTransferFailed();
 
-contract WethUnwrapper is OnlyWethReceiver, IPostInteractionNotificationReceiver {
-    IWETH private immutable _WETH;  // solhint-disable-line var-name-mixedcase
+    // solhint-disable-next-line no-empty-blocks
+    receive() external payable {}
 
     uint256 private constant _RAW_CALL_GAS_LIMIT = 5000;
 
-    constructor(IWETH weth) OnlyWethReceiver(address(weth)) {
-        _WETH = weth;
-    }
-
-    function fillOrderPostInteraction(
-        bytes32 /* orderHash */,
-        address maker,
+    function notifyFillOrder(
         address /* taker */,
+        address /* makerAsset */,
+        address takerAsset,
         uint256 /* makingAmount */,
         uint256 takingAmount,
-        uint256 /* remainingMakerAmount */,
         bytes calldata interactiveData
     ) external override {
-        _WETH.withdraw(takingAmount);
-        address receiver = maker;
-        if (interactiveData.length == 20) {
-            receiver = address(bytes20(interactiveData));
+        address payable makerAddress;
+        // solhint-disable-next-line no-inline-assembly
+        assembly {
+            makerAddress := shr(96, calldataload(interactiveData.offset))
         }
+        IWithdrawable(takerAsset).withdraw(takingAmount);
         // solhint-disable-next-line avoid-low-level-calls
-        (bool success, ) = receiver.call{value: takingAmount, gas: _RAW_CALL_GAS_LIMIT}("");
-        if (!success) revert Errors.ETHTransferFailed();
+        (bool success, ) = makerAddress.call{value: takingAmount, gas: _RAW_CALL_GAS_LIMIT}("");
+        if (!success) revert ETHTransferFailed();
     }
 }

@@ -1,23 +1,39 @@
 {
   "component": "ConnectorRegistry-7",
   "main_contract": "ConnectorRegistry",
-  "source_file_count": 11,
-  "deployment_count": 2,
+  "source_file_count": 17,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7ca3f54203b3a91fb94bb99f5a88fa57b8152d36",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x06a52d4c80eee559dd4ebb82362816933b4fb36c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xd1b32145fa1214d484b2aeee834b5f82fc8d249f",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdc10b474058eba67a62dd140b2c24a4923e59baf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xea895dcacb615d3553e434913c9429ad22e168ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x11d9eddc3ec20656f39bfd150a2836ad3f98bf28",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

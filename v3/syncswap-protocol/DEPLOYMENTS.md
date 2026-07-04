@@ -1,6 +1,6 @@
 # syncswap-protocol — deployments
 
-64 verified deployment(s) across 35 component(s).
+70 verified deployment(s) across 40 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -46,12 +46,14 @@
 | linea | `0x80e38291e06339d10aab483c65695d004dbd5c69` | SyncSwapRouter | impl | live | yes |
 | linea | `0x86c3e1b4a9295876f91e3ebc123e7fb7a642f59e` | ForwarderRegistry | impl | inactive | no |
 | linea | `0x8cdf4ec0d5ee197b00467a720660c44480b3ec60` | FeeRegistry | impl | inactive | no |
+| linea | `0x9573994ae6c9b35627976d26fa89e507e71fbaa2` | SyncSwapClassicPoolDelegatedFactory | impl | inactive | no |
 | linea | `0xa2a09f15c2ec6af1b8f9413c148334b231410bd8` | SyncSwapFeeRecipient | impl | live | yes |
 | linea | `0xa328e968906f5c5922accc197d6dcfe2c2776eb4` | SwapRouter02 | impl | inactive | no |
 | linea | `0xa4bc203f0d412ce654ae383063910b79711bd8a1` | FeeManagerV3 | impl | inactive | no |
 | linea | `0xa56e8467d120825a30cdde789ab05bc236c85d29` | SyncSwapPoolMaster | impl | inactive | no |
 | linea | `0xa8b49c4cbf805f3252ddbf4de465c34986707c34` | V3Migrator | impl | inactive | no |
 | linea | `0xb86284160348d0727e7fc6b131812082243b4604` | TickLens | impl | inactive | no |
+| linea | `0xb8abaea25e42da5ac6897c9dab0a8157885fe32b` | SyncSwapClassicPoolDelegatedFactory-2 | impl | live | no |
 | linea | `0xbc632b9683a63ac6fa10cace8a48491f065963db` | SyncSwapPoolMaster | impl | inactive | no |
 | linea | `0xc2a1947d2336b2af74d5813dc9ca6e0c3b3e8a1e` | SyncSwapRouterV2 | impl | live | no |
 | linea | `0xc5916f6cf441c72daa2e2c48afc7ce642eee6690` | SyncSwapRangePoolFactory | impl | live | no |
@@ -65,16 +67,10 @@
 | linea | `0xee8790ce315c0871ec612f0a6ebb5471a955b3a0` | SyncSwapPoolMaster | impl | live | no |
 | linea | `0xf69d317825bf7524131b7c910d10930ac5c5b1f0` | SyncSwapCryptoBurn_ | impl | inactive | no |
 | linea | `0xf96d83a26d209ca495de75d131ad2bbcddf76e41` | NonfungibleTokenPositionDescriptorLinea | impl | inactive | no |
+| linea | `0xf9fa7150ca45cf34f499787f32c6f6181a891183` | SyncSwapClassicPoolDelegatedFactory | impl | inactive | no |
+| scroll | `0x37bac764494c8db4e54bde72f6965bea9fa0ac2d` | SyncSwapClassicPoolFactory-2 | impl | unknown | no |
 | scroll | `0x4318a74425e5353a1194cf26138baa87b607657c` | SyncSwapPoolMaster_ | impl | unknown | no |
 | scroll | `0x5300000000000000000000000000000000000004` | WrappedEther | impl | unknown | no |
-| scroll | `0x76f549af692efa64952d02c075226df9878fb54c` | SyncSwapClassicPoolDelegatedFactory | impl | unknown | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- linea `0x9573994ae6c9b35627976d26fa89e507e71fbaa2`
-- linea `0xb8abaea25e42da5ac6897c9dab0a8157885fe32b`
-- linea `0xf9fa7150ca45cf34f499787f32c6f6181a891183`
-- scroll `0x37bac764494c8db4e54bde72f6965bea9fa0ac2d`
-- scroll `0xa2aca673c00495a184f88de533bba8e1b7f38d00`
-- scroll `0xfd541d0e2773a189450a70f06bc7edd3c1dc9115`
+| scroll | `0x76f549af692efa64952d02c075226df9878fb54c` | SyncSwapClassicPoolDelegatedFactory-3 | impl | unknown | no |
+| scroll | `0xa2aca673c00495a184f88de533bba8e1b7f38d00` | SyncSwapStablePoolDelegatedFactory-2 | impl | unknown | no |
+| scroll | `0xfd541d0e2773a189450a70f06bc7edd3c1dc9115` | SyncSwapRouterV2-2 | impl | unknown | no |

@@ -1,0 +1,20 @@
+{
+  "component": "NFTXVaultFactoryUpgradeable-4",
+  "main_contract": "NFTXVaultFactoryUpgradeable",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://268710349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MObsGdLeFkbdDe8_KiT-2910905616%2Fuploads%2FxxMQXacJ9gspSb09eUCz%2FToB_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x86157f3e862989b71b81718ee6ed5de2ace060e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "BridgeFacet",
   "main_contract": "BridgeFacet",
   "source_file_count": 19,
-  "deployment_count": 3,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,6 +26,54 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x2948d25814fc0d58e94af32a3173613b9aa78469",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x594982938761841f5f277cc28ce8b266fc15f310",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9ea0a11176bba7d7928540a4aae22f1823db9370",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdc842998e0e4e943a4ea868525a50bacd500c9ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5485af25f0e978ce914b01a92f6f1897d47a5660",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc9a868a5da669c66aaaa6d2103e72974ee81d52f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc983b6d8642207340fcf74eac7e9545f8aef179",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

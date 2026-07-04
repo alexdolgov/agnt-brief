@@ -2,10 +2,42 @@
   "component": "ICHIVaultDepositGuard",
   "main_contract": "ICHIVaultDepositGuard",
   "source_file_count": 10,
-  "deployment_count": 3,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x64e44525a98bc85ac097cc6ca4c8f6be7d483041",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf38e4ffb0b0aa075531b38d71d3b18a5f599819",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe2381b5afae99b899596bc550184a080daa31f26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfb5263779d551d0f8a85d47a7d576c4893686d12",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-42220",
       "chain_id": 42220,
@@ -26,6 +58,30 @@
       "chain": "chain-42220",
       "chain_id": 42220,
       "address": "0xa19595c6ca6186621ddde0dba0ad24c5e84d5a14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x60f50858953dbf1a699b88037d9dce235b8c505d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x92bce3972916c2ceda46c4eebc9684ac26effe5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x8346a803e1754f9d4c6935aee1fd864ff15955f1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

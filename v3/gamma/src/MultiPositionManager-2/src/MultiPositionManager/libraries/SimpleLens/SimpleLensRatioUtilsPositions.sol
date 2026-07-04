@@ -12,6 +12,7 @@ import {FullMath} from "v4-core/libraries/FullMath.sol";
 import {LiquidityAmounts} from "@uniswap/v4-core/test/utils/LiquidityAmounts.sol";
 import {DepositRatioLib} from "../DepositRatioLib.sol";
 import {PoolManagerUtils} from "../PoolManagerUtils.sol";
+import {LiquidityAmountsCapped} from "../LiquidityAmountsCapped.sol";
 import {SimpleLensRatioUtils} from "./SimpleLensRatioUtils.sol";
 
 /**
@@ -73,12 +74,16 @@ library SimpleLensRatioUtilsPositions {
         IPoolManager pm = manager.poolManager();
         PoolKey memory poolKey = manager.poolKey();
         uint256 baseLen = manager.basePositionsLength();
+        (uint160 sqrtPriceX96,,,) = pm.getSlot0(poolKey.toId());
 
         for (uint256 i = 0; i < ranges.length; i++) {
             if (ranges[i].lowerTick == 0 && ranges[i].upperTick == 0) continue;
 
             (uint128 liquidity, uint256 amount0, uint256 amount1,,) =
                 PoolManagerUtils.getAmountsOf(pm, poolKey, ranges[i]);
+
+            uint256 token0ValueInToken1 =
+                FullMath.mulDiv(amount0, uint256(sqrtPriceX96) * uint256(sqrtPriceX96), 1 << 192);
 
             stats[i] = SimpleLensRatioUtils.PositionStats({
                 tickLower: ranges[i].lowerTick,
@@ -88,7 +93,7 @@ library SimpleLensRatioUtilsPositions {
                 liquidity: liquidity,
                 token0Quantity: amount0,
                 token1Quantity: amount1,
-                valueInToken1: amount1,
+                valueInToken1: amount1 + token0ValueInToken1,
                 isLimit: i >= baseLen
             });
         }
@@ -132,7 +137,7 @@ library SimpleLensRatioUtilsPositions {
                 tickUpper: range.upperTick,
                 sqrtPriceLower: sqrtPriceLower,
                 sqrtPriceUpper: sqrtPriceUpper,
-                liquidity: LiquidityAmounts.getLiquidityForAmounts(
+                liquidity: LiquidityAmountsCapped.getLiquidityForAmountsCapped(
                     ctx.sqrtPriceX96, sqrtPriceLower, sqrtPriceUpper, newAmount0, newAmount1
                 ),
                 token0Quantity: newAmount0,

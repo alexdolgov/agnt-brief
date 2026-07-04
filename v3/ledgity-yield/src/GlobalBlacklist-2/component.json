@@ -1,0 +1,26 @@
+{
+  "component": "GlobalBlacklist-2",
+  "main_contract": "GlobalBlacklist",
+  "source_file_count": 14,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x896e3b079aa7a00413c074a5c888f3b96d4d3bca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x896e3b079aa7a00413c074a5c888f3b96d4d3bca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

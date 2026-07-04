@@ -2,7 +2,7 @@
   "component": "BurnWithFromMintTokenPool",
   "main_contract": "BurnWithFromMintTokenPool",
   "source_file_count": 21,
-  "deployment_count": 5,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -45,6 +45,46 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x02e87189512d1bdc3ca7795cab68a8311703b88c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3690367edd22ede1fe827258352f900fbd05b8dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x80e873d80ed41ed0a3aaeeb6efbaa01839f2111b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1fdd455ed9adc66f2b6a496405911c0bbc9424e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa42baa160db5aea58a1800ac6a33a92488288767",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

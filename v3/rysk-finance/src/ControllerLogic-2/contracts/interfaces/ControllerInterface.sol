@@ -5,6 +5,10 @@ pragma experimental ABIEncoderV2;
 import {MarginVault} from "../libs/MarginVault.sol";
 
 interface ControllerInterface {
+    function getNakedCap(address _asset) external view returns (uint256);
+
+    function getNakedPoolBalance(address _asset) external view returns (uint256);
+
     function getVaultWithDetails(address, uint256)
         external
         view
@@ -35,6 +39,10 @@ interface ControllerInterface {
         address _asset,
         uint256 _amount
     ) external;
+
+    function increaseNakedPoolBalance(address _asset, uint256 _amount) external;
+
+    function reduceNakedPoolBalance(address _asset, uint256 _amount) external;
 
     function deleteVault(address, uint256) external;
 

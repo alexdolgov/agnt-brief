@@ -68,6 +68,8 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
         emit TokenLockProposed(reqId, proposer);
     }
 
+    receive() external payable {}
+
     function executeLock(bytes32 reqId, bytes32[] memory r, bytes32[] memory yParityAndS, address[] memory executors, uint256 exeIndex) external {
         address proposer = proposedLock[reqId];
         require(proposer > address(1), "Invalid reqId");
@@ -97,7 +99,6 @@ contract AtomicLockContract is Permissions, ReqHelpers, UUPSUpgradeable {
 
         uint256 amount = _amountFrom(reqId);
         address tokenAddr = _tokenFrom(reqId);
-        lockedBalanceOf[tokenAddr] -= amount;
 
         if (tokenAddr == address(1)) {
             (bool success, ) = proposer.call{value: amount}("");

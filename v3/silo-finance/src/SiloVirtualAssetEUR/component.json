@@ -2,14 +2,38 @@
   "component": "SiloVirtualAssetEUR",
   "main_contract": "SiloVirtualAssetEUR",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd248d7eca045fa93a51cdce0eac9fdb985a06658",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xde3a6c3c7a8f0534ad0756bdc17a9bf6a0da633a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x52eb48ecc36ccbbe0def05963ad80d13ebfed92a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xafd8f792cb025a76c4916652cfc8e20eee3b6fe2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

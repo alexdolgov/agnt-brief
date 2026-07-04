@@ -2,7 +2,7 @@
   "component": "MgvReader",
   "main_contract": "MgvReader",
   "source_file_count": 18,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "chain-1329",
       "chain_id": 1329,
       "address": "0xfeafb31ac7f09892b50c4d6da06a1e48d487499e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe5b118ea1ffbc502ea7a666376d448209bfb50d3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

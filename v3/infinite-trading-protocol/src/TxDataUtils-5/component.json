@@ -1,0 +1,18 @@
+{
+  "component": "TxDataUtils-5",
+  "main_contract": "TxDataUtils",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x7389af54f1a4a4f8db681af6710be3f35e3a9e74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

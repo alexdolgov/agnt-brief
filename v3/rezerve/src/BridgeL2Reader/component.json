@@ -2,7 +2,7 @@
   "component": "BridgeL2Reader",
   "main_contract": "BridgeL2Reader",
   "source_file_count": 10,
-  "deployment_count": 6,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -53,6 +53,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe86878b3d25e5a4ba7e3f72e7a1a9c735ec6617b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

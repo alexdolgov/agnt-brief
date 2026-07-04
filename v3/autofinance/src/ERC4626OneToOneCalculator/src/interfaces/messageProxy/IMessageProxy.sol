@@ -4,8 +4,5 @@ pragma solidity ^0.8.24;
 
 /// @title Send messages to our systems on other chains
 interface IMessageProxy {
-    function sendMessage(
-        bytes32 messageType,
-        bytes memory message
-    ) external;
+    function sendMessage(bytes32 messageType, bytes memory message) external;
 }

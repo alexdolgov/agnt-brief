@@ -1,0 +1,26 @@
+{
+  "component": "ATokenGateway-2",
+  "main_contract": "ATokenGateway",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x67ec822a2f981ef2db6afce4e8df57ff1439f4d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa067c885d958aec176ec3d8dadc847e0c9384809",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

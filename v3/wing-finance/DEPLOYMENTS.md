@@ -1,6 +1,6 @@
 # wing-finance — deployments
 
-74 verified deployment(s) across 33 component(s).
+76 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -43,7 +43,7 @@
 | ethereum | `0x8c159cfd11677a4f2fe4fd0278dd37a95b986069` | WhitePaperInterestRateModel | impl | inactive | no |
 | ethereum | `0x8d44aaf5a5dc3bceec264d0b8f659bb74573ceac` | WhitePaperInterestRateModel | impl | inactive | no |
 | ethereum | `0x92a28fd877daf3a9f13c64e8d855279c9f13dbdc` | BendProxyAdmin | impl | inactive | no |
-| ethereum | `0x99ee778b9a6205657dd03b2b91415c8646d521ec` | CErc20Delegator | impl | live | no |
+| ethereum | `0x99ee778b9a6205657dd03b2b91415c8646d521ec` | CErc20Delegator-2 | impl | live | no |
 | ethereum | `0xa1046abfc2598f48c44fb320d281d3f3c0733c9a` | WhitePaperInterestRateModel | impl | inactive | no |
 | ethereum | `0xa1849880593e96d2f7df77d0d38a7f2372ae10e0` | CCompLikeDelegate | impl | live | no |
 | ethereum | `0xa43a62b90810086a310a1e9aa74cbdf6181c92ee` | TransparentUpgradeableProxy | proxy | inactive | no |
@@ -53,6 +53,7 @@
 | ethereum | `0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407` | CErc20 | impl | live | no |
 | ethereum | `0xb943d1dc140b8377d65a451221747bb6c6bc6cc0` | PriceOracleProxy | impl | inactive | no |
 | ethereum | `0xbae04cbf96391086dc643e842b517734e214d698` | WhitePaperInterestRateModel | impl | inactive | no |
+| ethereum | `0xbd1df6a8da9983578d6f0aaf2af4c9f564e534a1` | BNFTRegistry | impl | inactive | no |
 | ethereum | `0xbebaadc9662db614706f560221cd37e35a491e0d` | TransparentUpgradeableProxy | proxy | inactive | no |
 | ethereum | `0xc11b1268c1a384e55c48c2391d8d480264a3a7f4` | CErc20 | impl | live | no |
 | ethereum | `0xc64c4cba055efa614ce01f4bad8a9f519c4f8fab` | WhitePaperInterestRateModel | impl | inactive | no |
@@ -68,6 +69,7 @@
 | ethereum | `0xe783e76b3f89ea913c33aab1d54564bd4c6df886` | BNFTUpgradeableProxy | impl | inactive | no |
 | ethereum | `0xe9b0db26a0085e5119757a5179a499abf595bcab` | OSWAP | impl | inactive | no |
 | ethereum | `0xeb917441daa18b6f4810412c52cd00be0ea9d6f1` | BendUpgradeableProxy | impl | inactive | no |
+| ethereum | `0xed3eb04984774de5fc6003db7a08f09a3920a6fd` | BNFTRegistry | impl | inactive | no |
 | ethereum | `0xef3b6e9e13706a8f01fe98fdcf66335dc5cfdeed` | GovernorBravoDelegate | impl | inactive | no |
 | ethereum | `0xf592ef673057a451c49c9433e278c5d59b56132c` | Comptroller | impl | live | no |
 | ethereum | `0xf5dce57282a584d2746faf1593d3121fcac444dc` | CErc20 | impl | live | no |
@@ -78,9 +80,3 @@
 | ethereum | `0xfb564da37b41b2f6b6edcc3e56fbf523bd9f2012` | JumpRateModelV2 | impl | inactive | no |
 | ethereum | `0xfdcf4827668f333d0a6a29066731769eda7cc073` | StableSendETH | impl | inactive | no |
 | ethereum | `0xff3c813559127d60da732a0e8ec836f4c162df82` | ComptrollerSweeper | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xbd1df6a8da9983578d6f0aaf2af4c9f564e534a1`
-- ethereum `0xed3eb04984774de5fc6003db7a08f09a3920a6fd`

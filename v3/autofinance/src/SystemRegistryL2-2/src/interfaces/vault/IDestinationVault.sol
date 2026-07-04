@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
@@ -67,6 +67,9 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
 
     /// @notice The type of pool associated with this vault
     function poolType() external view returns (string memory);
+
+    /// @notice The type of pool plus any staking information
+    function destType() external view returns (string memory);
 
     /// @notice If the pool only deals in ETH when adding or removing liquidity
     function poolDealInEth() external view returns (bool);

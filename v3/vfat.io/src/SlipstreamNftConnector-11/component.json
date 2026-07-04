@@ -1,0 +1,26 @@
+{
+  "component": "SlipstreamNftConnector-11",
+  "main_contract": "SlipstreamNftConnector",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x125caffe923eaa451461ab98353c4a88154cb45e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x5c204b67358a3805b293cad11eeb897a63fa7bb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

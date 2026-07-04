@@ -1,15 +1,23 @@
 {
   "component": "OrderBook",
   "main_contract": "OrderBook",
-  "source_file_count": 13,
-  "deployment_count": 3,
+  "source_file_count": 11,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1aa470dcb11065b326989956243b0d7ae2531d96",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe62c517d4e78362179d802a5be3a0ca0609211fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xead67152e576814179ff71ea1b8f63c68eccbea3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
@@ -17,15 +25,15 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x423ed408b6c2cbb397ff6f6135b847bbee0526fc",
+      "address": "0x308b06b2c91705af88e2f90ab978084eb15955dc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x67bbacb998ab508768fbae5ea70f3cb3f1f9c1a1",
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xaa1e6e2b5a917e4dd5ced698db7596f352c95207",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

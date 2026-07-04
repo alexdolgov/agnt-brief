@@ -1,0 +1,18 @@
+{
+  "component": "Updater-2",
+  "main_contract": "Updater",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d4633e89a86bba1bec66b4a45781b8c3343b4b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

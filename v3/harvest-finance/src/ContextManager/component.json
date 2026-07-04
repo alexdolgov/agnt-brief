@@ -2,7 +2,7 @@
   "component": "ContextManager",
   "main_contract": "ContextManager",
   "source_file_count": 15,
-  "deployment_count": 23,
+  "deployment_count": 40,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -186,6 +186,142 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xfdd67ad159bd07cd7e701f40f1717318a68e731f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1ee02be02f475e4c2faa93e2173f31eda4689a51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2655821cfe114a3e0c1f51365a154697196d5e8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x312388f28803dae19dd5d6fe999ef13c600c201f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x34c7b39f9c1311403b14a8592e4a0ff363f66b7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x47da5b0a176b00676a3a58c75c374494383c2025",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4a84a8618816855632f1d39280bc2e6a464dae15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6f4fcbb1f742311398532862684c8586a9a5deb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x80c441de2e0ccd968ce8ea6ccabc114b6c6cbf0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8f04cfea381465785d65e1f69b17dc4bcfdca5cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb56aea3a2a403c1472717e118d39ac3b11055a48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf73aa954c113b3958b97416df972aeac23a4206",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc0934de072b5fd902bd049077f56255d82e98de7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xccc7316475c8ba10a9f4c1393a77a31c73435e41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcf4267c130c070bd4a188a289a839e08fac139b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd5629b35153cce6eb860b3db671e6241866d083b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdfe1af9eb54ac362b7d698d34d560acdc5b96a20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfe9390299b5eda1814df88e97785beb5f4fbf16c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

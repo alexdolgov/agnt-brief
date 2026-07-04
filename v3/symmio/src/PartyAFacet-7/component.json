@@ -1,0 +1,18 @@
+{
+  "component": "PartyAFacet-7",
+  "main_contract": "PartyAFacet",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x07139b7b67ffa6f6bcc24be898076493675e0d78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

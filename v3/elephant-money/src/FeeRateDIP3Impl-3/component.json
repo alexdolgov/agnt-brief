@@ -1,0 +1,18 @@
+{
+  "component": "FeeRateDIP3Impl-3",
+  "main_contract": "FeeRateDIP3Impl",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xafb8ec1c7f9e4e2757e5bc7c9a9aef08dd07ecc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

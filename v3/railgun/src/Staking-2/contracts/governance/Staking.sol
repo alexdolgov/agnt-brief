@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.0;
 pragma abicoder v2;
 
 // OpenZeppelin v4
@@ -418,7 +418,7 @@ contract Staking {
    * @param _hint - off-chain computed index of interval
    * @return state
    */
-  function accountSnapshotAt(address _account, uint256 _interval, uint256 _hint) external virtual view returns (AccountSnapshot memory) {
+  function accountSnapshotAt(address _account, uint256 _interval, uint256 _hint) external view returns (AccountSnapshot memory) {
     require(_interval <= currentInterval(), "Staking: Interval out of bounds");
 
     // Get account snapshots array

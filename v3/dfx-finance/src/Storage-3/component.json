@@ -1,0 +1,26 @@
+{
+  "component": "Storage-3",
+  "main_contract": "Storage",
+  "source_file_count": 21,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3a2f9e9cdc6791c52dbb79dd271bd02817082379",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x85e9690c2d4c6cae31d96f9b5afe6d111d165157",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

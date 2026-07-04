@@ -1,0 +1,42 @@
+{
+  "component": "PodFlashMintSource-2",
+  "main_contract": "PodFlashMintSource",
+  "source_file_count": 13,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12aa48422c83857de4a50f3b6a63cb45811a1eef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xacee05fcae604eb75ec2349f6fee9f46c9a01ff5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf59c79982259d9c01a7c3249a4c3c120484bcd1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xab31040cdb98f21b20c6d817fabfbb649aa5c682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

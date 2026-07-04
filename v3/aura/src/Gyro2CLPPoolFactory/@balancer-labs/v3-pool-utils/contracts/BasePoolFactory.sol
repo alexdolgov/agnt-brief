@@ -4,10 +4,14 @@ pragma solidity ^0.8.24;
 
 import { IBasePoolFactory } from "@balancer-labs/v3-interfaces/contracts/vault/IBasePoolFactory.sol";
 import { IVault } from "@balancer-labs/v3-interfaces/contracts/vault/IVault.sol";
-import "@balancer-labs/v3-interfaces/contracts/vault/VaultTypes.sol";
+import {
+    TokenConfig,
+    PoolRoleAccounts,
+    LiquidityManagement
+} from "@balancer-labs/v3-interfaces/contracts/vault/VaultTypes.sol";
 
-import { FactoryWidePauseWindow } from "@balancer-labs/v3-solidity-utils/contracts/helpers/FactoryWidePauseWindow.sol";
 import { BaseSplitCodeFactory } from "@balancer-labs/v3-solidity-utils/contracts/helpers/BaseSplitCodeFactory.sol";
+import { FactoryWidePauseWindow } from "@balancer-labs/v3-solidity-utils/contracts/helpers/FactoryWidePauseWindow.sol";
 import { SingletonAuthentication } from "@balancer-labs/v3-vault/contracts/SingletonAuthentication.sol";
 
 /**
@@ -50,6 +54,9 @@ abstract contract BasePoolFactory is
     address[] private _pools;
 
     bool private _disabled;
+
+    /// @notice A pool creator was specified for a pool from a Balancer core pool type.
+    error StandardPoolWithCreator();
 
     constructor(
         IVault vault,

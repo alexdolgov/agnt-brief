@@ -1,39 +1,47 @@
 {
   "component": "GlpManager",
   "main_contract": "GlpManager",
-  "source_file_count": 16,
-  "deployment_count": 4,
+  "source_file_count": 13,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x21a393bf5cdfbafad1ff585ecdeb352b34b98acd",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x367db880524bc3445e0eea658757bedde8393920",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x74b495eea0be9cc12d1ceb204d4f914db1c66d47",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4de729b85ddb172f1bb775882f355ba25764e430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd532c9f810cfafd3a8b593bb68586516ca600b6c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xd24c217230daf4036e290133861eff4b9adb2b27",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfc20d79ad7eea0e562790d9729b7c28e74184135",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xef2cd9aef5d85755e36c6485008c6caccc698b09",
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xe95efef8deb8544d7e45fe56ebb328e376fe3991",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

@@ -1,6 +1,6 @@
 # deltaprime — deployments
 
-714 verified deployment(s) across 102 component(s).
+718 verified deployment(s) across 105 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -287,6 +287,7 @@
 | arbitrum | `0x619ed41f9b35a0a431da745782ecda03c93d4749` | LevelFinanceFacet | impl | live | no |
 | arbitrum | `0x61ac1dd35521f80e6766f995d45514c75ee84ebe` | Pool | impl | live | no |
 | arbitrum | `0x61f67d9d3b50c3b1aa7ae48d5812327c696e0a6f` | GmxV2FacetArbitrum | impl | live | no |
+| arbitrum | `0x62cf82fb0484af382714cd09296260edc1dc0c6c` | SmartLoanDiamondBeacon-2 | proxy | live | no |
 | arbitrum | `0x6325540098a428b219f2ceefaab14782eef07e21` | AssetsOperationsArbitrumFacet | impl | live | no |
 | arbitrum | `0x63a657552a7ec608f76e131e58f4498b0e1f32b4` | MockToken | impl | live | no |
 | arbitrum | `0x641493cb5143980e9e71f45442144d65cb19f90a` | ParaSwapFacet | impl | live | no |
@@ -418,6 +419,7 @@
 | arbitrum | `0x9523615c15d3743cb3198b4464048b064f1530b2` | SushiSwapDEXFacet | impl | live | no |
 | arbitrum | `0x95446727c7fa6361034cbfa1d47aa34689e72c15` | SmartLoanLiquidationFacet | impl | live | no |
 | arbitrum | `0x966ac0e1d9109aeb274ca06ec8c21b77fb414384` | SolvencyFacetProd | impl | live | no |
+| arbitrum | `0x968f944e9c43fc8ad80f6c1629f10570a46e2651` | SmartLoanDiamondBeacon | impl | live | no |
 | arbitrum | `0x97886abb2bdbea0e49a86ea1bcd2c4a7120b35d5` | UsdcVariableUtilisationRatesCalculatorZeroRate | impl | live | no |
 | arbitrum | `0x97a9a21d1055b2782fb5c68654cfe9e6ca15c755` | LiquidationFlashloanArbitrum | impl | live | no |
 | arbitrum | `0x97bf6e2f8f7f47c6eb497bed6fa884ecab04fdea` | SmartLoanLiquidationFacet | impl | live | no |
@@ -504,6 +506,7 @@
 | arbitrum | `0xb27e012d54485a1ae648322a37f20d97c7458dae` | AssetsOperationsArbitrumFacet | impl | live | no |
 | arbitrum | `0xb2ca3212a10ae98a20c6d3c389de219a649ade5b` | GmxV2CallbacksFacetArbitrum | impl | live | no |
 | arbitrum | `0xb320143f11e1a8285021b41f8cdebc248d1b01a6` | SmartLoanViewFacet | impl | live | no |
+| arbitrum | `0xb3a1e0288d4257336453f4fc28e7974385ea6f9e` | SmartLoanDiamondBeacon | impl | live | no |
 | arbitrum | `0xb3efdb3fe8ae807e8140a52a98f78f4d145c009d` | MockToken6Decimals | impl | live | no |
 | arbitrum | `0xb3f00b1241294e9dc2b118a172cb6cce648881f0` | GmxV2FacetArbitrum | impl | live | no |
 | arbitrum | `0xb4073fd4dd221c18b0c147e4263345b591d12ad3` | GmxV2FacetArbitrum | impl | live | no |
@@ -711,18 +714,11 @@
 | arbitrum | `0xffde7799cb27f880b689e6934b3e0df75076b06d` | GmxV2PlusFacetArbitrum | impl | live | no |
 | arbitrum | `0xfff9888d991df4ae1bf2bba89034ccd933e1db14` | SolvencyFacetProdArbitrum | impl | live | no |
 | avalanche | `0x2323dac85c6ab9bd6a8b5fb75b0581e31232d12b` | UsdcPoolTUP | proxy | live | no |
-| avalanche | `0x2916b3bf7c35bd21e63d01c93c62fb0d4994e56d` | SmartLoanDiamondBeacon | proxy | live | no |
+| avalanche | `0x2916b3bf7c35bd21e63d01c93c62fb0d4994e56d` | SmartLoanDiamondBeacon-3 | proxy | live | no |
 | avalanche | `0x3ea9d480295a73fd2af95b4d96c2aff88b21b03d` | SmartLoansFactoryTUP | proxy | live | no |
 | avalanche | `0x475589b0ed87591a893df42ec6076d2499bb63d0` | BtcPoolTUP | proxy | live | no |
-| avalanche | `0xd222e10d7fe6b7f9608f14a8b5cf703c74efbca1` | UsdtPoolTUP-2 | proxy | live | no |
+| avalanche | `0xb02c43bfe00d03ecae72bbb6960b23fc0be22cf7` | UsdtPoolTUP-2 | impl | live | no |
+| avalanche | `0xd222e10d7fe6b7f9608f14a8b5cf703c74efbca1` | UsdtPoolTUP-3 | proxy | live | no |
 | avalanche | `0xd26e504fc642b96751fd55d3e68af295806542f5` | WavaxPoolTUP | proxy | live | no |
 | avalanche | `0xe31b515f77c84d8e35faf831ef69bea3ac237281` | EarlyAccessNFT | impl | live | no |
 | avalanche | `0xf8d1b34651f2c9230beb9b83b2260529769fdea4` | BorrowAccessNFT | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x62cf82fb0484af382714cd09296260edc1dc0c6c`
-- arbitrum `0x968f944e9c43fc8ad80f6c1629f10570a46e2651`
-- arbitrum `0xb3a1e0288d4257336453f4fc28e7974385ea6f9e`
-- avalanche `0xb02c43bfe00d03ecae72bbb6960b23fc0be22cf7`

@@ -1,0 +1,18 @@
+{
+  "component": "ParallelAccessManager-4",
+  "main_contract": "ParallelAccessManager",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

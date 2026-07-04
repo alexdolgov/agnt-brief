@@ -1,0 +1,18 @@
+{
+  "component": "BridgeToken-4",
+  "main_contract": "BridgeToken",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x152b9d0fdc40c096757f570a51e494bd4b943e50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

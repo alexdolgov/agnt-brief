@@ -17,7 +17,7 @@ error AccessDenied(address _executor);
 error WithdrawalPending();
 error InvalidDepositAmount(uint256 _assets);
 
-/// @title SactionList
+/// @title SanctionList
 /// @notice This interface is used to check if the user is sanctioned
 interface SanctionsList {
     function isSanctioned(address addr) external view returns (bool);
@@ -27,6 +27,11 @@ interface SanctionsList {
 /// @notice This interface is used to get the total assets managed by the fund manager
 interface FundManager {
     function totalAssets() external view returns (uint256);
+}
+
+interface WithdrawManager {
+    function totalDueLPToken() external view returns (uint256);
+    function repay(uint256 _queuePosition, uint256 _amount) external;
 }
 
 /// @title CsigmaV2Pool
@@ -52,6 +57,10 @@ contract CsigmaV2Pool is
     uint64 public pauseDuration;
     uint64 public pauseStartTime;
     uint256 public minimumInvestmentLimit;
+    uint64 public AUMLastUpdatedAt;
+    uint64 public AUMChangeThresholdPercentage;
+    uint64 public AUMUpdateCooldownPeriod;
+    address public withdrawalManager;
 
     enum PoolStatus {PENDING, ACTIVE, CLOSE}
     
@@ -68,6 +77,11 @@ contract CsigmaV2Pool is
         if(SanctionsList(CsigmaV2Factory(factory).chainalysis()).isSanctioned(_user)) {
             revert AccessDenied(_user);
         }
+        _;
+    }
+
+    modifier whenNotInDefaultPauseWindow() {
+        _requireNotInDefaultPauseWindow();
         _;
     }
     
@@ -112,9 +126,11 @@ contract CsigmaV2Pool is
         fundManager = _fundManager;
         poolToken = _poolToken;
         projectedAPY = _projectedAPY;
+        AUMChangeThresholdPercentage = 10008;
+        AUMUpdateCooldownPeriod = 2 hours;
         poolSize = _poolSize;
-        nonReservePercentage = 9000;
-        pauseDuration = 7200;
+        nonReservePercentage = 9500;
+        pauseDuration = 2700;
     }
 
     /// @notice This function is used to get the total amount of the underlying asset that is “managed” by Vault
@@ -215,7 +231,7 @@ contract CsigmaV2Pool is
 
     /// @notice This function is used to update the status of the pool from pending to active
     /// @dev Only the pool manager can call this function
-    function activatePool() external whenNotPaused {
+    function activatePool() external whenNotPaused whenNotInDefaultPauseWindow{
         if(status != PoolStatus.PENDING) revert InvalidStatusUpdate();
         if(_msgSender() != poolManager) revert AccessDenied(_msgSender());
         status = PoolStatus.ACTIVE;
@@ -236,6 +252,19 @@ contract CsigmaV2Pool is
     /// @param _assetUnderManagement The new AUM
     function updateAssetUnderManagement(uint256 _assetUnderManagement) external onlyRole(ROLE_ORACLE_MANAGER) {
         if(status != PoolStatus.ACTIVE) revert PoolIsNotActive();
+        if (msg.sender != fundManager) {
+            if(assetUnderManagement > _assetUnderManagement) revert ("Threshold not met");
+            uint64 currentSecond = uint64(block.timestamp % 86400);
+            if (
+                    currentSecond < pauseStartTime || 
+                    currentSecond > pauseStartTime + pauseDuration
+            )  {
+                if(!paused()) revert("Pausable: not paused");
+            }
+            if (block.timestamp - AUMLastUpdatedAt < AUMUpdateCooldownPeriod) revert("Cooldown period not elapsed");
+            if (assetUnderManagement * AUMChangeThresholdPercentage / 10000 < _assetUnderManagement) revert ("Threshold not met");
+            AUMLastUpdatedAt = uint64(block.timestamp);
+        }
         emit AssetUnderManagementUpdated(_msgSender(), assetUnderManagement, _assetUnderManagement);
         assetUnderManagement = _assetUnderManagement;
     }
@@ -266,6 +295,28 @@ contract CsigmaV2Pool is
     /// @param _percentage The new reserve percentage
     function updateNonReservePercentage(uint64 _percentage) external onlyRole(DEFAULT_ADMIN_ROLE) {
         nonReservePercentage = _percentage;
+    }
+
+    /// @notice This function is used to update the AUM update cooldown period
+    /// @dev Only the admin can call this function
+    /// @param _cooldownPeriod The new cooldown period
+    function updateAUMUpdateCooldownPeriod(uint64 _cooldownPeriod) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        AUMUpdateCooldownPeriod = _cooldownPeriod;
+    }
+
+    /// @notice This function is used to update the withdrawal queue manager
+    /// @dev Only the admin can call this function
+    /// @param _withdrawalManager The address of the withdrawal queue manager
+    function setWithdrawalManager(address _withdrawalManager) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        require(withdrawalManager == address(0), "Withdrawal manager already set");
+        withdrawalManager = _withdrawalManager;
+    }
+
+    /// @notice This function is used to update the AUM change threshold percentage
+    /// @dev Only the admin can call this function
+    /// @param _thresholdPercentage The new threshold percentage
+    function updateAUMChangeThresholdPercentage(uint64 _thresholdPercentage) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        AUMChangeThresholdPercentage = 10000 + _thresholdPercentage;
     }
 
     /// @notice This function is used to check if the account is an oracle manager
@@ -329,6 +380,13 @@ contract CsigmaV2Pool is
         emit EmergencyWithdraw(_token, _to, _amount);
     }
 
+    /// @notice Updates the AUM of the pool
+    /// @param _assetUnderManagement The new AUM
+    function emergencyUpdateAUM(uint256 _assetUnderManagement) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        emit AssetUnderManagementUpdated(_msgSender(), assetUnderManagement, _assetUnderManagement);
+        assetUnderManagement = _assetUnderManagement;
+    }
+
     /// @notice Transfers the admin role to a new address
     /// @param _newOwner The address of the new admin
     function transferAdmin(address _newOwner) public {
@@ -370,6 +428,7 @@ contract CsigmaV2Pool is
         internal
         override
         whenNotPaused
+        whenNotInDefaultPauseWindow
         whenNotSanctioned(_from)
         whenNotSanctioned(_to)
     {
@@ -385,12 +444,28 @@ contract CsigmaV2Pool is
         onlyRole(DEFAULT_ADMIN_ROLE)
     {}
 
-    function _requireNotPaused() internal view override {
+    function _requireNotInDefaultPauseWindow() internal view {
         uint64 currentSecond = uint64(block.timestamp % 86400);
         require(
-            !super.paused() && 
-            (currentSecond < pauseStartTime || currentSecond > pauseStartTime + pauseDuration), 
+            currentSecond < pauseStartTime || 
+            currentSecond > pauseStartTime + pauseDuration,
             "Pausable: paused"
         );
+    }
+
+    /**
+     * @dev Withdraw/redeem common workflow.
+     */
+    function _withdraw(
+        address caller,
+        address receiver,
+        address owner,
+        uint256 assets,
+        uint256 shares
+    ) internal virtual override {
+        if (caller != withdrawalManager)
+            if (withdrawalManager != address(0))
+                require(WithdrawManager(withdrawalManager).totalDueLPToken() == 0, "Withdrawal pending");
+        super._withdraw(caller, receiver, owner, assets, shares);
     }
 }

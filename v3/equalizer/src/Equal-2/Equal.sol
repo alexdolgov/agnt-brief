@@ -4,11 +4,36 @@
  *Submitted for verification at FtmScan.com on 2022-11-07
 */
 
+
+/**
+ *  EQUALIZER EXCHANGE
+ *  The New Liquidity Hub of Fantom chain!
+ *  https://equalizer.exchange  (Dapp)
+ *  https://discord.gg/MaMhbgHMby   (Community)
+ *
+ *
+ *  Contributors:
+ *   -   Synthetix Network
+ *   -   Curve Finance
+ *   -   Andre Cronje, Solidly.Exchange
+ *   -   543 (Sam), ftm.guru, Eliteness.netowork & Equalizer.exchange
+ *
+ *
+ *	Version: v3.0.1
+ *	- Prohibit transfers to zero address
+ *	- Introduce Burn
+ *	  - Only from balance[sender]
+ *	  - Reduces totalSupply, indexers be happy
+ *
+ *
+ *	SPDX-License-Identifier: UNLICENSED
+*/
+
+
 // File: @openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol
 
 
 // OpenZeppelin Contracts (last updated v4.7.0) (utils/Address.sol)
-// SPDX-License-Identifier: UNLICENSED
 
 pragma solidity ^0.8.1;
 
@@ -528,6 +553,7 @@ contract Equal is OwnableUpgradeable {
     }
 
     function _mint(address _to, uint _amount) internal returns (bool) {
+        require(_to != address(0),"ZA!");
         totalSupply += _amount;
         unchecked {
             balanceOf[_to] += _amount;
@@ -537,6 +563,8 @@ contract Equal is OwnableUpgradeable {
     }
 
     function _transfer(address _from, address _to, uint _value) internal returns (bool) {
+        require(_from != address(0),"fZA!");
+        require(_to != address(0),"tZA!");
         balanceOf[_from] -= _value;
         unchecked {
             balanceOf[_to] += _value;
@@ -560,6 +588,15 @@ contract Equal is OwnableUpgradeable {
     function mint(address account, uint amount) external returns (bool) {
         require(msg.sender == minter, "Not minter");
         _mint(account, amount);
+        return true;
+    }
+
+    function burn(uint _amount) external returns (bool) {
+        address _user = msg.sender;
+        require(balanceOf[_user] >= _amount, "Low Bal");
+        totalSupply -= _amount;
+        balanceOf[_user] -= _amount;
+        emit Transfer(_user, address(0x0), _amount);
         return true;
     }
 

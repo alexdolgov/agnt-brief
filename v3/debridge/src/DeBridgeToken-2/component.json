@@ -1,0 +1,26 @@
+{
+  "component": "DeBridgeToken-2",
+  "main_contract": "DeBridgeToken",
+  "source_file_count": 98,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

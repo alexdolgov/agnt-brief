@@ -1,18 +1,18 @@
 {
   "component": "DexAdapterBase-5",
   "main_contract": "DexAdapterBase",
-  "source_file_count": 25,
+  "source_file_count": 9,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x29d82976c8babb7d5a82c78c6ef4c2a2ddc64125",
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x5a72c0f4bf7f3ddf1370780d405e29149b128a04",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
     }
   ]
 }

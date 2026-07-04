@@ -9,10 +9,7 @@ interface IBaseLeverage {
 
   enum SwapType {
     NONE,
-    STAKE,
-    UNSTAKE,
-    DEPOSIT,
-    WITHDRAW,
+    NO_SWAP,
     UNISWAP,
     BALANCER,
     CURVE
@@ -30,25 +27,19 @@ interface IBaseLeverage {
     uint256 outAmount;
   }
 
-  struct BiDirectSwapInfo {
-    MultipSwapPath[4] paths;
-    MultipSwapPath[4] reversePaths;
-    uint256 pathLength;
-  }
-
-  struct UniDirectSwapInfo {
-    MultipSwapPath[4] paths;
+  struct SwapInfo {
+    MultipSwapPath[3] paths;
+    MultipSwapPath[3] reversePaths;
     uint256 pathLength;
   }
 
   struct FlashLoanParams {
     bool isEnterPosition;
-    uint256 minRequiredAmount;
+    uint256 minCollateralAmount;
     address user;
     address collateralAsset;
     address silo;
-    BiDirectSwapInfo borrowAssetAndCollateral;
-    BiDirectSwapInfo borrowAssetAndSiloAsset;
+    SwapInfo swapInfo;
   }
 
   struct LeverageParams {
@@ -59,8 +50,7 @@ interface IBaseLeverage {
     address collateralAsset;
     address silo;
     FlashLoanType flashLoanType;
-    BiDirectSwapInfo borrowAssetAndCollateral;
-    BiDirectSwapInfo borrowAssetAndSiloAsset;
+    SwapInfo swapInfo;
   }
 
   function enterPositionWithFlashloan(
@@ -70,8 +60,7 @@ interface IBaseLeverage {
     address _collateralAsset,
     address _silo,
     FlashLoanType _flashLoanType,
-    BiDirectSwapInfo calldata _borrowAssetAndCollateral,
-    BiDirectSwapInfo calldata _borrowAssetAndSiloAsset
+    SwapInfo calldata _swapInfo
   ) external;
 
   function withdrawWithFlashloan(
@@ -81,7 +70,6 @@ interface IBaseLeverage {
     address _collateralAsset,
     address _silo,
     FlashLoanType _flashLoanType,
-    BiDirectSwapInfo calldata _borrowAssetAndSiloAsset,
-    BiDirectSwapInfo calldata _borrowAssetAndCollateral
+    SwapInfo calldata _swapInfo
   ) external;
 }

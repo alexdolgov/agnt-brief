@@ -1,0 +1,34 @@
+{
+  "component": "fixedVault-7",
+  "main_contract": "fixedVault",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ce4c542d96ce1872fea4fa3fbb2e7ae31862bad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5773e8953cf60f495eb3c2db45dd753b5c4b7473",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x954ac12c339c60eafbb32213b15af3f7c7a0dec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

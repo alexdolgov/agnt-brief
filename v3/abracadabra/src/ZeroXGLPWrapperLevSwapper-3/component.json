@@ -1,0 +1,18 @@
+{
+  "component": "ZeroXGLPWrapperLevSwapper-3",
+  "main_contract": "ZeroXGLPWrapperLevSwapper",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xacb2e2748221345c6f64cfcf9f3f6cf28ba4be05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

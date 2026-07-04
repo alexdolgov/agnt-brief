@@ -1,0 +1,18 @@
+{
+  "component": "VaultFeeManagerGamma-2",
+  "main_contract": "VaultFeeManagerGamma",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xdb961a3ec076ef684bc03199ef202f002dbe937e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

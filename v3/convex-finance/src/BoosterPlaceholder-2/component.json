@@ -1,0 +1,26 @@
+{
+  "component": "BoosterPlaceholder-2",
+  "main_contract": "BoosterPlaceholder",
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xca4b0279853275147169435ad7a8e3cc396136c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd363d104f604497c4f11b269d8dbf2820abbf4e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

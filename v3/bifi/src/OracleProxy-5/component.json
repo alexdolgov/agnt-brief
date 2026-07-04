@@ -1,0 +1,21 @@
+{
+  "component": "OracleProxy-5",
+  "main_contract": "OracleProxy",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/ENG/(ENG)_BiFi_Lending_Sooho_EN_Public.pdf",
+    "https://github.com/bifrost-platform/BIFI/blob/master/docs/bifrost_bifi_audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x71c5e8ab83f3cf56faa3e22b7a70aa44200a4f79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

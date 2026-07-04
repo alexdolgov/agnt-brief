@@ -2,10 +2,18 @@
   "component": "MixedRouteQuoterV1",
   "main_contract": "MixedRouteQuoterV1",
   "source_file_count": 27,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcd554fde84ef08a84d086f2917f8682c0cf39630",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "blast",
       "chain_id": 81457,

@@ -1,31 +1,39 @@
 {
   "component": "ERC1967Proxy-5",
   "main_contract": "ERC1967Proxy",
-  "source_file_count": 6,
-  "deployment_count": 3,
+  "source_file_count": 35,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x053714a436ea716e14b3430f2ee8e2488c83f16a",
-      "is_proxy": true,
-      "implementation_address": "0xfe4a47e10ee3b270b43972629e9a93ee0ab31e7d",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb163bff473abc556d8af259e8bf856fdbc6d108",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x4c0b5bfd9b7a970e24ce5d62af510258c99e9ec7",
-      "is_proxy": true,
-      "implementation_address": "0x910afaa218ce5228f024252a1ea69780dcd3caa5",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf2663b722e0faccc6fb2743ab8cb30b1d8d93649",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xfe4a47e10ee3b270b43972629e9a93ee0ab31e7d",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x883108311b43871be1e590c1ab0979e1e72b1df5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x588eb805042aa966eb282dcbbc36b2f41b287068",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

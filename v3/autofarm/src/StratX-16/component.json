@@ -1,0 +1,18 @@
+{
+  "component": "StratX-16",
+  "main_contract": "StratX",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xad1245b0068c9a1faecfa0c2f4c68b58b12090e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

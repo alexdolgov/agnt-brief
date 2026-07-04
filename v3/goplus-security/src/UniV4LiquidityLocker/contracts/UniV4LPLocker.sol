@@ -19,7 +19,7 @@ import {Planner, Plan} from "./libs/Planner.sol";
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-import {IUniversalLocker} from "./interface/IUniversalLocker_GPS.sol";
+import {IUniversalLocker} from "./interface/IUniversalLocker.sol";
 
 import {PositionInfo} from "@uniswap/v4-periphery/src/libraries/PositionInfoLibrary.sol";
 import {LiquidityAmounts} from "@uniswap/v4-core/test/utils/LiquidityAmounts.sol";
@@ -65,6 +65,8 @@ contract UniV4LiquidityLocker is
     mapping(bytes32 nameHash => FeeStruct) public fees;
     EnumerableSet.Bytes32Set private feeNameHashSet;
 
+    // Add constant for native ETH address
+    address public constant NATIVE_ETH = address(0);
     uint256 public constant FEE_DENOMINATOR = 10000; // denominator for all fees
     uint256 public constant MAX_FEE = 500;
 
@@ -244,7 +246,8 @@ contract UniV4LiquidityLocker is
             user,
             feeObj.lpFee,
             feeObj.collectFee,
-            feeObj.lockFee
+            feeObj.lockFee,
+            feeObj.lockFeeToken
         );
     }
 
@@ -312,6 +315,8 @@ contract UniV4LiquidityLocker is
     struct LockParams {
         uint256 tokenId;
         uint256 unlockTime;
+        address lockOwner;
+        address collector;
         uint256 collectFee;
         uint256 lpFee;
         uint128 liquidity;
@@ -327,15 +332,18 @@ contract UniV4LiquidityLocker is
     function lockNFTPosition(
         uint256 tokenId,
         uint256 unlockTime,
+        address lockOwner_,
         address collector_,
         string memory feeName
     ) external payable nonReentrant returns (uint256 lockId) {
-        require(isSupportedFeeName(feeName), "FeeName invalid");
         if (unlockTime <= block.timestamp) revert UnlockTimeInPast();
 
-        FeeStruct memory feeObj = getFee(feeName);
+        FeeStruct memory feeObj;
         if (isCustomFee[msg.sender]) {
             feeObj = ownerFees[msg.sender];
+        } else {
+            require(isSupportedFeeName(feeName), "FeeName invalid");
+            feeObj = getFee(feeName);
         }
 
         // Get position info
@@ -358,6 +366,7 @@ contract UniV4LiquidityLocker is
             tokenId,
             poolKey,
             liquidity,
+            lockOwner_,
             collector_,
             unlockTime,
             feeObj
@@ -376,6 +385,7 @@ contract UniV4LiquidityLocker is
         uint256 tokenId,
         PoolKey memory poolKey,
         uint128 liquidity,
+        address lockOwner_,
         address collector_,
         uint256 unlockTime,
         FeeStruct memory feeObj
@@ -404,7 +414,7 @@ contract UniV4LiquidityLocker is
         );
         collect_plan = collect_plan.add(
             Actions.TAKE_PAIR,
-            abi.encode(poolKey.currency0, poolKey.currency1, collector_)
+            abi.encode(poolKey.currency0, poolKey.currency1, lockOwner_)
         );
 
         bytes memory collectData = collect_plan.encode();
@@ -444,6 +454,8 @@ contract UniV4LiquidityLocker is
             LockParams({
                 tokenId: tokenId,
                 unlockTime: unlockTime,
+                lockOwner: lockOwner_,
+                collector: collector_,
                 collectFee: feeObj.collectFee,
                 lpFee: feeObj.lpFee,
                 liquidity: liquidity,
@@ -472,13 +484,13 @@ contract UniV4LiquidityLocker is
     ) internal {
         locks[lockId] = IUniversalLocker.LockInfo({
             lockId: lockId,
-            owner: msg.sender,
-            pendingOwner: msg.sender,
+            owner: params.lockOwner,
+            pendingOwner: address(0),
             tokenId: params.tokenId,
             poolKey: params.poolKey,
             amount: params.liquidity,
             unlockTime: params.unlockTime,
-            collector: msg.sender,
+            collector: params.collector,
             collectFee: params.collectFee,
             lpFee: params.lpFee
         });
@@ -549,6 +561,7 @@ contract UniV4LiquidityLocker is
         if (lock.owner != msg.sender && lock.collector != msg.sender)
             revert NotOwner();
         if (recipient == address(0)) revert InvalidRecipient();
+
         // Get position info
         (PoolKey memory poolKey, ) = IPositionManager(address(positionManager))
             .getPoolAndPositionInfo(lock.tokenId);
@@ -557,11 +570,16 @@ contract UniV4LiquidityLocker is
 
         // Create a plan to collect fees without removing liquidity
         if (currentLiquidity > 0) {
-            // Approve position manager to modify position
-            IERC721(address(positionManager)).approve(
-                address(positionManager),
-                lock.tokenId
-            );
+            // Get token addresses and check for native ETH
+            address token0 = Currency.unwrap(poolKey.currency0);
+            address token1 = Currency.unwrap(poolKey.currency1);
+            bool isToken0Native = _isNativeETH(poolKey.currency0);
+
+            // Record balances before collect
+            uint256 balanceBefore0 = isToken0Native
+                ? address(this).balance
+                : IERC20(token0).balanceOf(address(this));
+            uint256 balanceBefore1 = IERC20(token1).balanceOf(address(this));
 
             // Create a plan using Planner
             Plan memory plan = Planner.init();
@@ -578,30 +596,35 @@ contract UniV4LiquidityLocker is
                 )
             );
 
-            // Add take actions for both tokens to recipient
-            // TAKE_PAIR action withdraws any accumulated tokens for a currency pair from the PoolManager
-            // to the specified recipient address. This is used to collect fees and other accumulated value.
+            // Add take actions for both tokens to this contract
             plan = plan.add(
                 Actions.TAKE_PAIR,
                 abi.encode(poolKey.currency0, poolKey.currency1, address(this))
             );
 
-            // Encode the final data
-            bytes memory unlockData = plan.encode();
-
+            // Execute plan
             positionManager.modifyLiquidities(
-                unlockData,
+                plan.encode(),
                 block.timestamp + 60 // deadline
             );
 
-            // Get token addresses
-            address token0 = Currency.unwrap(poolKey.currency0);
-            address token1 = Currency.unwrap(poolKey.currency1);
+            // Calculate collected amounts (difference in balances)
+            uint256 balanceAfter0 = isToken0Native
+                ? address(this).balance
+                : IERC20(token0).balanceOf(address(this));
+            uint256 balanceAfter1 = IERC20(token1).balanceOf(address(this));
+            require(
+                balanceAfter0 >= balanceBefore0,
+                "Balance decreased unexpectedly"
+            );
+            require(
+                balanceAfter1 >= balanceBefore1,
+                "Balance decreased unexpectedly"
+            );
+            amount0 = balanceAfter0 - balanceBefore0;
+            amount1 = balanceAfter1 - balanceBefore1;
 
-            // Get collected amounts
-            amount0 = IERC20(token0).balanceOf(address(this));
-            amount1 = IERC20(token1).balanceOf(address(this));
-
+            // Rest of the function remains the same...
             if (lock.collectFee > 0) {
                 // Calculate protocol fees
                 fee0 = (amount0 * lock.collectFee) / FEE_DENOMINATOR;
@@ -613,29 +636,35 @@ contract UniV4LiquidityLocker is
 
                 // Transfer protocol fees
                 if (fee0 > 0) {
-                    IERC20(token0).safeTransfer(feeReceiver, fee0);
+                    if (isToken0Native) {
+                        TransferHelper.safeTransferETH(feeReceiver, fee0);
+                    } else {
+                        IERC20(token0).safeTransfer(feeReceiver, fee0);
+                    }
                 }
                 if (fee1 > 0) {
                     IERC20(token1).safeTransfer(feeReceiver, fee1);
                 }
-
-                // Transfer remaining amounts
-                if (amount0 > 0) {
+            }
+            // send remaining lp rewards to recipient
+            if (amount0 > 0) {
+                if (isToken0Native) {
+                    TransferHelper.safeTransferETH(recipient, amount0);
+                } else {
                     IERC20(token0).safeTransfer(recipient, amount0);
-                }
-                if (amount1 > 0) {
-                    IERC20(token1).safeTransfer(recipient, amount1);
-                }
-            } else {
-                // No protocol fees, transfer full amounts
-                if (amount0 > 0) {
-                    IERC20(token0).safeTransfer(recipient, amount0);
-                }
-                if (amount1 > 0) {
-                    IERC20(token1).safeTransfer(recipient, amount1);
                 }
             }
+            if (amount1 > 0) {
+                IERC20(token1).safeTransfer(recipient, amount1);
+            }
         }
+    }
+
+    /// @notice Helper function to check if a currency is native ETH
+    /// @param currency The currency to check
+    /// @return bool True if the currency is native ETH
+    function _isNativeETH(Currency currency) internal pure returns (bool) {
+        return Currency.unwrap(currency) == NATIVE_ETH;
     }
 
     /// @dev Ensures that this contract has granted sufficient Permit2 approval for the token to the spender.
@@ -764,14 +793,15 @@ contract UniV4LiquidityLocker is
             feeAmount1 = (amount1Needed * lpFee) / FEE_DENOMINATOR;
 
             if (feeAmount0 > 0) {
-                if (token0 == address(0))
-                    payable(feeReceiver).transfer(feeAmount0);
-                else
+                if (token0 == address(0)) {
+                    TransferHelper.safeTransferETH(feeReceiver, feeAmount0);
+                } else {
                     TransferHelper.safeTransfer(
                         token0,
                         feeReceiver,
                         feeAmount0
                     );
+                }
             }
             if (feeAmount1 > 0) {
                 TransferHelper.safeTransfer(token1, feeReceiver, feeAmount1);
@@ -844,7 +874,10 @@ contract UniV4LiquidityLocker is
         // Return excess tokens
         if (amount0Max > amount0Needed) {
             if (token0 == address(0)) {
-                payable(msg.sender).transfer(amount0Max - amount0Needed);
+                TransferHelper.safeTransferETH(
+                    msg.sender,
+                    amount0Max - amount0Needed
+                );
             } else {
                 TransferHelper.safeTransfer(
                     token0,

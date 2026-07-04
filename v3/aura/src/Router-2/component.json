@@ -1,18 +1,18 @@
 {
   "component": "Router-2",
   "main_contract": "Router",
-  "source_file_count": 41,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x4bdcc2fb18aeb9e2d281b0278d946445070eada7",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x4eff2d77d9ffbaefb4b141a3e494c085b3ff4cb5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

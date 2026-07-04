@@ -1,0 +1,18 @@
+{
+  "component": "ProtocolAccessManager-15",
+  "main_contract": "ProtocolAccessManager",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x54a2ea2b8f57d62c149ace01d7ac1fd9a880b8dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

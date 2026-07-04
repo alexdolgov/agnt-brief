@@ -1,0 +1,18 @@
+{
+  "component": "ConnectorLens-3",
+  "main_contract": "ConnectorLens",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0bf0f966a8c1676d2d76c1863cbd84170b949d53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,1124 +1,799 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.4;
 
-import "./interface/IAzuroBet.sol";
+import "./CoreBase.sol";
 import "./interface/ILiveCore.sol";
 import "./libraries/FixedMath.sol";
-import "./libraries/SafeCast.sol";
-import "./libraries/Math.sol";
-import "./utils/OrderTools.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
-import "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol";
-import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
-import "@openzeppelin/contracts/utils/cryptography/SignatureChecker.sol";
+import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
-/// @title Base contract for Azuro cores
-contract LiveCore is
-    OwnableUpgradeable,
-    EIP712Upgradeable,
-    OrderTools,
-    ILiveCore
-{
-    using ECDSA for bytes32;
+/// @title  Azuro internal core managing live conditions and processing bets on them
+contract LiveCore is ILiveCore, CoreBase {
+    uint256 public constant BET_ID_MASK = 1 << 255;
+
+    uint64 public constant ONE = 1e12;
+    uint64 public constant TENTHS1 = 1e11;
+    uint64 public constant TENTHS2 = TENTHS1 * 2;
+    uint64 public constant TENTHS5 = TENTHS1 * 5;
+
     using FixedMath for *;
-    using SafeCast for *;
+    using SafeCast for uint256;
+
+    uint256 public lastBetId;
+    uint256 public lastBatchId;
+    uint64 public batchMinBlocks;
+    uint64 public batchMaxBlocks;
+
+    //  conditionId -> batchId list
+    mapping(uint256 => uint256[]) public batchIds;
+
+    // conditionId -> resolved batches
+    mapping(uint256 => uint256) public resolvedBatches;
+
+    // batchId => Batch
+    mapping(uint256 => Batch) public batches;
 
     mapping(uint256 => Bet) public bets;
-    mapping(uint256 => Condition) public conditions;
-    // Condition ID => outcome ID => Condition outcome index + 1
-    mapping(uint256 => mapping(uint256 => uint256)) internal outcomeNumbers;
-    // Condition ID => outcome ID => is winning
-    mapping(uint256 => mapping(uint256 => bool)) internal winningOutcomes;
-    // wallet used nonces
-    mapping(address => mapping(uint256 => bool)) public nonces;
+    mapping(uint256 => BetGroup) public betGroups;
 
-    IAzuroBet public azuroBet;
-    ILP public lp;
+    AffRewards[] public affRewards;
 
-    /**
-     * @notice Throw if caller is not the Liquidity Pool.
-     */
-    modifier onlyLp() {
-        _checkOnlyLp();
+    modifier onlyAffMaster() {
+        _checkOnlyAffMaster();
         _;
     }
 
-    /**
-     * @notice Throw if caller have no access to function with selector `selector`.
-     */
-    modifier restricted(address sender, bytes4 selector) {
-        _checkAccess(sender, address(this), selector);
-        _;
-    }
-
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
-
-    function initialize(
-        address azuroBet_,
-        address lp_
-    ) external override initializer {
-        __Ownable_init_unchained(msg.sender);
-        __EIP712_init("Live Betting", "1.0.0");
+    function initialize(address azuroBet_, address lp_)
+        external
+        override(CoreBase, ICoreBase)
+        initializer
+    {
+        __Ownable_init();
         azuroBet = IAzuroBet(azuroBet_);
         lp = ILP(lp_);
-    }
-
-    function getBetAmountCondition(
-        uint256 tokenId
-    ) external view returns (uint256 conditionId, uint128 amount) {
-        Bet storage bet = _bet(tokenId);
-        conditionId = bet.conditionId;
-        amount = bet.amount;
-    }
-
-    function getBetData(
-        uint256 tokenId
-    )
-        external
-        view
-        returns (uint64 timestemp, ComboPartOdds[] memory comboParts)
-    {
-        Bet storage bet = _bet(tokenId);
-        return (bet.timestamp, bet.comboParts);
-    }
-
-    function _bet(uint256 tokenId) internal view returns (Bet storage) {
-        return bets[tokenId];
+        lastBetId = BET_ID_MASK; // set most bit up
     }
 
     /**
-     * @notice Liquidity Pool: See {IBetting-putOrder}.
+     * @notice Oracle: Set `newBatchMinBlocks` and `newBatchMaxBlocks` as thresholds for the number of blocks
+     *         for batch execution.
+     * @param  newBatchMinBlocks the number of blocks that must pass before a batch can be executed manually
+     * @param  newBatchMaxBlocks the number of blocks that must pass before force batch execution
      */
-    function putOrder(
-        OrderData calldata order,
-        address betOwner,
-        uint256 minBet,
-        bytes calldata data
-    )
-        external
-        onlyLp
-        restricted(order.oracle, this.putOrder.selector)
-        returns (uint256[] memory)
-    {
-        ClientData memory clientData = getClientData(order);
-        if (clientData.expiresAt <= block.timestamp) revert SignatureExpired();
-        if (clientData.chainId != block.chainid) revert InvalidChainId();
-
-        _checkSignatures(order, data);
-
-        return
-            order.betType == BetType.ORDINARY
-                ? _putOrdinaryBets(order, betOwner, minBet)
-                : _putComboBet(order, betOwner, minBet);
+    function changeBatchLimits(
+        uint64 newBatchMinBlocks,
+        uint64 newBatchMaxBlocks
+    ) external onlyOracle {
+        if (newBatchMaxBlocks <= newBatchMinBlocks)
+            revert IncorrectBatchLimits();
+        batchMaxBlocks = newBatchMaxBlocks;
+        batchMinBlocks = newBatchMinBlocks;
+        emit BatchLimitsChanged(newBatchMinBlocks, newBatchMaxBlocks);
     }
 
     /**
-     * @notice Reject list of bets
-     * Only not resolved condition bets allowed
+     * @notice Oracle: See {ICoreBase-createCondition}.
      */
-    function rejectBets(
-        RejectedBet[] calldata bets_
-    ) external restricted(msg.sender, this.rejectBets.selector) {
-        Condition storage condition;
-        uint256 conditionId_;
-
-        for (uint i = 0; i < bets_.length; ++i) {
-            conditionId_ = bets_[i].conditionId;
-            condition = _getCondition(conditionId_);
-            _checkConditionNotSettled(condition);
-            _rejectConditionBets(
-                condition,
-                conditionId_,
-                bets_[i].tokenIds,
-                true
-            );
-        }
-    }
-
-    /**
-     * @notice Reject sub-bets in list of combo bets, see structure {ILiveCore-RejectedComboBet}
-     * Only not resolved (paid) combo bets and not resolved sub bets allowed
-     */
-    function rejectComboBets(
-        RejectedComboBet[] calldata bets_
-    ) external restricted(msg.sender, this.rejectComboBets.selector) {
-        Condition storage condition;
-        Bet storage bet;
-        uint256 comboOdds;
-        uint128 newPayout;
-        uint256 length;
-        uint64 settledAt;
-
-        for (uint256 i; i < bets_.length; ++i) {
-            comboOdds = FixedMath.ONE;
-            bet = _bet(bets_[i].tokenId);
-            length = bet.comboParts.length;
-
-            // Only for combo bet
-            if (length == 0) revert IncorrectBetType();
-            if (bet.isPaid) revert AlreadyPaid();
-
-            // in the bet find combo sub-bets and reset it (set odds = 1)
-            _resetSubBetOdds(
-                bets_[i].subBets,
-                bet.comboParts,
-                bet.amount,
-                bet.timestamp
-            );
-
-            // recalculate new payout, after sub bet changes
-            for (uint256 k; k < length; ++k) {
-                ComboPartOdds storage comboPart = bet.comboParts[k];
-                condition = _getCondition(comboPart.conditionId);
-                settledAt = condition.settledAt;
-
-                if (_isConditionCanceled(condition)) continue;
-                if (settledAt > 0 && bet.timestamp >= settledAt) continue;
-
-                if (comboPart.odds > FixedMath.ONE)
-                    comboOdds = comboOdds.mul(comboPart.odds);
-            }
-            newPayout = comboOdds.mul(bet.amount).toUint128();
-            _changeLockedLiquidity(
-                newPayout.toInt128() - bet.payout.toInt128(),
-                true
-            );
-            bet.payout = newPayout;
-            emit BetRejected(bets_[i].tokenId);
-        }
-    }
-
-    /**
-     * @notice Indicate outcome `outcomeWin` as happened in condition `conditionId`.
-     * @notice Only condition creator can resolve it.
-     * @param resolveData is ILiveCore-ResolveData {conditionId, winningOutcomes, settledAt}
-     */
-    function resolveConditions(ResolveData[] calldata resolveData) external {
-        Condition storage condition;
-        address oracle;
-        uint128 payout;
-        ResolveData memory data;
-
-        for (uint256 i = 0; i < resolveData.length; ++i) {
-            data = resolveData[i];
-            condition = _getCondition(data.conditionId);
-            if (data.winningOutcomes.length != condition.winningOutcomesCount)
-                revert IncorrectWinningOutcomesCount();
-
-            oracle = condition.oracle;
-            if (msg.sender != oracle) revert OnlyOracle(oracle);
-            if (data.settledAt >= block.timestamp) revert IncorrectSettleDate();
-
-            _checkConditionNotSettled(condition);
-
-            condition.settledAt = data.settledAt;
-
-            // find and reject bets >= settledAt
-            (uint256 foundIndex, uint256 restLength) = _selectTimes(
-                condition.timeBets,
-                data.settledAt
-            );
-
-            if (restLength > 0) {
-                uint256 r;
-                uint256[] memory rejectTokens = new uint256[](restLength);
-                for (uint t = foundIndex; t < foundIndex + restLength; ++t) {
-                    rejectTokens[r++] = condition.timeBets[t].tokenId;
-                }
-
-                _rejectConditionBets(
-                    condition,
-                    data.conditionId,
-                    rejectTokens,
-                    false
-                );
-            }
-
-            payout = 0;
-            for (uint256 j; j < data.winningOutcomes.length; ++j) {
-                payout += condition.payouts[
-                    getOutcomeIndex(data.conditionId, data.winningOutcomes[j])
-                ];
-            }
-            _resolveCondition(
-                condition,
-                data.conditionId,
-                ConditionState.RESOLVED,
-                data.winningOutcomes,
-                payout,
-                data.settledAt
-            );
-        }
-    }
-
-    function _addReserve(
-        uint128 lockedReserve,
-        uint128 finalReserve,
-        uint48 depositId,
-        bool isCombo
-    ) internal {
-        lp.addReserve(lockedReserve, finalReserve, depositId, isCombo);
-    }
-
-    function _changeByPercent(
-        bool isIncrease,
-        uint256 amount
-    ) internal view returns (uint128) {
-        return lp.changeByPercent(isIncrease, amount);
-    }
-
-    function _changeLockedLiquidity(
-        int128 deltaReserve,
-        bool isCombo
-    ) internal {
-        lp.changeLockedLiquidity(deltaReserve, isCombo);
-    }
-
-    /**
-     * @notice Throw if `account` have no access to function with selector `selector` of `target`.
-     */
-    function _checkAccess(
-        address account,
-        address target,
-        bytes4 selector
-    ) internal {
-        lp.checkAccess(account, target, selector);
-    }
-
-    function _checkConditionIds(
-        uint256 dataConditionId,
-        uint256 subBetConditionId
-    ) internal pure {
-        if (dataConditionId != subBetConditionId)
-            revert IncorrectConditionIds();
-    }
-
-    /**
-     * @notice Subbets of one combo must be of different conditions
-     */
-    function _checkUniqueComboParts(ComboPart[] memory parts) internal pure {
-        uint256[] memory comboPart = new uint256[](parts.length);
-        for (uint i; i < parts.length; ++i) {
-            comboPart[i] = parts[i].conditionId;
-        }
-        (, bool isNotUnique) = Math.isNotUniq(comboPart);
-        if (isNotUnique) revert SubBetDuplicated();
-    }
-
-    function _getLastDepositId() internal view returns (uint48) {
-        return lp.getLastDepositId();
-    }
-
-    /**
-     * @notice Get odds from the odds array by the index of outcomeId in outcomes array
-     * see struct `ConditionData`
-     * @return oddsFeed restored feed odds, because in bet parameters passed reduced odds (odds - 1%)
-     * @return oddsDec bet parameters passed reduced odds (odds - 1%)
-     */
-    function _getOdds(
-        ConditionData memory data,
-        uint128 outcomeId
-    ) internal view returns (uint64 oddsFeed, uint64 oddsDec) {
-        for (uint256 i; i < data.outcomes.length; ++i) {
-            if (data.outcomes[i] == outcomeId) {
-                return (
-                    uint64(_changeByPercent(true, data.odds[i])), // +1%
-                    data.odds[i]
-                );
-            }
-        }
-        revert IncorrectOutcomeId();
-    }
-
-    /**
-     * Make bet of `Combo` type
-     */
-    function _putComboBet(
-        OrderData memory order,
-        address betOwner,
-        uint256 minBet
-    ) internal returns (uint256[] memory tokenIds) {
-        ClientComboBetData memory data = abi.decode(
-            order.clientBetData,
-            (ClientComboBetData)
+    function createCondition(
+        uint256 gameId,
+        uint256 oracleConditionId,
+        uint64[2] calldata odds,
+        uint64[2] calldata outcomes,
+        uint128 reinforcement,
+        uint64 margin
+    ) external override {
+        _startNewBatch(
+            _createCondition(
+                gameId,
+                oracleConditionId,
+                odds,
+                outcomes,
+                reinforcement,
+                margin
+            )
         );
-        if (data.amount < minBet) revert SmallBet();
-        ConditionData memory conditionData;
-        // owner of bet can be different of order.betOwner, for returnable freebet case
-        uint256 tokenId = azuroBet.mint(betOwner);
-        tokenIds = new uint256[](1);
-        tokenIds[0] = tokenId;
-        uint256 comboOdds = FixedMath.ONE;
+    }
 
-        Bet storage bet = _bet(tokenId);
-        bet.amount = _changeByPercent(false, data.amount);
-        bet.timestamp = uint64(block.timestamp);
-
-        SubBetData[] memory subBetData = new SubBetData[](
-            data.comboParts.length
+    /**
+     * @notice Oracle: Indicate outcome `outcomeWin` as happened in oracle's condition `oracleConditionId`.
+     * @param  oracleConditionId the match or condition ID according to oracle's internal numbering
+     * @param  outcomeWin ID of happened condition's outcome
+     * @param  endsAt the timestamp after which all bets must be rejected
+     */
+    function resolveCondition(
+        uint256 oracleConditionId,
+        uint64 outcomeWin,
+        uint64 endsAt
+    ) external override {
+        _confirmConditionBatches(
+            oracleConditionIds[msg.sender][oracleConditionId],
+            endsAt
         );
+        _resolveCondition(oracleConditionId, outcomeWin);
+    }
 
-        for (uint256 i; i < data.comboParts.length; ++i) {
-            ComboPart memory subBet = data.comboParts[i];
-            conditionData = order.conditionDatas[i];
+    /**
+     * @notice Liquidity Pool: See {ICoreBase-putBet}.
+     */
+    function putBet(
+        address bettor,
+        uint128 amount,
+        BetData calldata data
+    ) external override onlyLp returns (uint256 betId) {
+        Condition storage condition = _getCondition(data.conditionId);
+        uint256 batchId = _getLastBatchId(data.conditionId);
+        Batch storage batch = _getBatch(batchId);
 
-            // get live core specific data
-            _checkConditionIds(conditionData.conditionId, subBet.conditionId);
+        _conditionIsRunning(condition);
 
-            _safeCreateCondition(
-                conditionData.conditionId,
-                conditionData,
-                order.oracle
-            );
+        uint256 outcomeIndex = _getOutcomeIndex(condition, data.outcomeId);
 
-            (uint64 oddsFeed, uint64 oddsDec) = _getOdds(
-                conditionData,
-                subBet.outcomeId
-            );
-
-            if (oddsDec <= FixedMath.ONE) revert OddsTooSmall();
-
-            subBetData[i] = SubBetData({
-                gameId: conditionData.gameId,
-                conditionId: conditionData.conditionId,
-                conditionKind: conditionData.conditionKind,
-                outcomeId: subBet.outcomeId,
-                odds: oddsDec
-            });
-
-            comboOdds = comboOdds.mul(oddsFeed);
-            bet.comboParts.push(
-                ComboPartOdds({
-                    conditionId: subBet.conditionId,
-                    outcomeId: subBet.outcomeId,
-                    odds: oddsFeed
-                })
-            );
+        // if last batch exec time exceeded -> execute batch and start new
+        if ((block.number - batch.startBlock) > batchMaxBlocks) {
+            executeBatch(data.conditionId);
+            batchId = _getLastBatchId(data.conditionId);
+            batch = _getBatch(batchId);
         }
 
-        _checkUniqueComboParts(data.comboParts);
+        uint64 minOddsRounded = _getMinOddsRounded(data.minOdds);
 
-        if (comboOdds < data.minOdds) revert OddsTooSmall();
+        if (
+            _calcOdds(condition, condition.virtualFunds, amount, outcomeIndex) <
+            minOddsRounded
+        ) revert SmallOdds();
+        if (amount <= FixedMath.ONE) revert SmallBet();
 
-        // nonce only for the first subBet
-        uint128 payout = comboOdds.mul(bet.amount).toUint128();
+        betId = ++lastBetId;
+        Bet storage _bet = bets[betId];
+        _bet.bettor = bettor;
+        _bet.amount = amount;
 
-        // check COMBO potential loss limit
-        if (payout - bet.amount > conditionData.potentialLossLimit)
-            revert PotentialLossLimit();
-
-        // it must be unique for the bettor and bet conditions
-        _registerNonce(order.betOwner, data.nonce);
-
-        bet.payout = payout;
-        bet.lastDepositId = _getLastDepositId();
-        _changeLockedLiquidity((payout - bet.amount).toInt128(), true);
+        if (minOddsRounded > batch.oddsRounded[outcomeIndex])
+            batch.oddsRounded[outcomeIndex] = minOddsRounded;
+        batch.outcomeOddsBets[outcomeIndex][minOddsRounded].amount += amount;
+        betGroups[betId] = BetGroup(
+            data.conditionId,
+            batchId,
+            minOddsRounded,
+            uint8(outcomeIndex)
+        );
 
         emit NewLiveBet(
-            tokenId,
-            order.betOwner,
-            data.clientData.affiliate,
-            BetType.COMBO,
-            data.nonce,
-            data.amount,
-            subBetData,
-            conditionData.potentialLossLimit
+            bettor,
+            data.affiliate,
+            data.conditionId,
+            batchId,
+            betId,
+            data.outcomeId,
+            amount,
+            minOddsRounded
         );
     }
 
     /**
-     * @notice Make bets of `Ordinary` types, one or many (batch of ordinary bets)
+     * @notice Liquidity Pool: Resolve affiliate's contribution to total revenue that is not rewarded yet.
+     * @param  affiliate address indicated as an affiliate when placing bets
+     * @param data livecore affiliate params
+     * @return contribution amount
      */
-    function _putOrdinaryBets(
-        OrderData calldata order,
-        address betOwner,
-        uint256 minBet
-    ) internal returns (uint256[] memory tokenIds) {
-        ClientBetData memory data = abi.decode(
-            order.clientBetData,
-            (ClientBetData)
+    function resolveAffiliateReward(address affiliate, bytes calldata data)
+        external
+        override(CoreBase, ICoreBase)
+        onlyLp
+        returns (uint256)
+    {
+        LiveAffiliateParams memory decoded = abi.decode(
+            data,
+            (LiveAffiliateParams)
         );
-        ConditionData memory conditionData;
 
-        if (order.conditionDatas.length != data.bets.length)
-            revert IncorrectBetsConditionsCount();
-        tokenIds = new uint256[](data.bets.length);
+        if (decoded.rewardId >= affRewards.length) revert IncorrectRewardId();
+        AffRewards storage _affReward = affRewards[decoded.rewardId];
+        if (_affReward.isClaimed[affiliate]) revert AlreadyClaimed();
 
-        SubBet memory subBet;
-        uint64 oddsFeed;
-        uint64 oddsDec;
-        uint128 payout;
-        uint256 tokenId;
+        bytes32 node = keccak256(abi.encodePacked(affiliate, decoded.share));
+        bool isValidProof = MerkleProof.verify(
+            decoded.merkleProof,
+            _affReward.merkleRoot,
+            node
+        );
+        if (!isValidProof) revert InvalidProof();
+        _affReward.isClaimed[affiliate] = true;
 
-        for (uint256 i; i < data.bets.length; ++i) {
-            subBet = data.bets[i];
+        uint128 prevRewards;
 
-            if (subBet.amount < minBet) revert SmallBet();
+        // if exists previous reward period
+        if (decoded.rewardId > 0)
+            prevRewards = _getAffReward(decoded.rewardId - 1);
 
-            // get live core specific data
-            conditionData = order.conditionDatas[i];
+        uint128 currentRewards = _affReward.rewards - prevRewards;
+        uint128 claimedAmount = decoded.share.mul(currentRewards).toUint128();
 
-            _checkConditionIds(conditionData.conditionId, subBet.conditionId);
+        _affReward.claimed += claimedAmount;
+        if (_affReward.claimed > currentRewards) revert RewardsExceeded();
 
-            // nonce must be unique for the bettor and condition
-            _registerNonce(order.betOwner, subBet.nonce);
-
-            {
-                Condition storage condition = _safeCreateCondition(
-                    subBet.conditionId,
-                    conditionData,
-                    order.oracle
-                );
-                (oddsFeed, oddsDec) = _getOdds(conditionData, subBet.outcomeId);
-                if (oddsDec < subBet.minOdds || oddsDec <= FixedMath.ONE)
-                    revert OddsTooSmall();
-
-                //uint256 reducedAmount = subBet.amount.mul(PERCENT99);
-                uint128 reducedAmount = _changeByPercent(false, subBet.amount);
-                payout = oddsFeed.mul(reducedAmount).toUint128(); // -1%  *0.99
-                // owner of bet can be different of order.betOwner, for returnable freebet case
-                tokenId = azuroBet.mint(betOwner);
-                {
-                    Bet storage bet = _bet(tokenId);
-                    bet.conditionId = subBet.conditionId;
-                    bet.amount = reducedAmount; // -1%  *0.99
-                    bet.payout = payout;
-                    bet.outcomeId = subBet.outcomeId;
-                    bet.timestamp = uint64(block.timestamp);
-                    bet.lastDepositId = _getLastDepositId();
-                }
-
-                // save time and token id
-                condition.timeBets.push(
-                    TimeBet({time: block.timestamp, tokenId: tokenId})
-                );
-
-                _changeFunds(
-                    condition,
-                    getOutcomeIndex(
-                        conditionData.conditionId,
-                        subBet.outcomeId
-                    ),
-                    reducedAmount,
-                    payout
-                );
-
-                // check condition payout limit
-                if (
-                    Math.diffOrZero(
-                        Math.maxSum(
-                            condition.payouts,
-                            conditionData.winningOutcomesCount
-                        ),
-                        condition.totalNetBets
-                    ) > conditionData.potentialLossLimit
-                ) revert PotentialLossLimit();
-            }
-
-            tokenIds[i] = tokenId;
-
-            SubBetData[] memory subBetData = new SubBetData[](1);
-            subBetData[0] = SubBetData({
-                gameId: conditionData.gameId,
-                conditionId: conditionData.conditionId,
-                conditionKind: conditionData.conditionKind,
-                outcomeId: subBet.outcomeId,
-                odds: oddsDec
-            });
-
-            emit NewLiveBet(
-                tokenId,
-                order.betOwner,
-                data.clientData.affiliate,
-                BetType.ORDINARY,
-                subBet.nonce,
-                subBet.amount,
-                subBetData,
-                conditionData.potentialLossLimit
-            );
-        }
-        return tokenIds;
-    }
-
-    function _registerNonce(address bettor, uint256 nonce) internal {
-        if (nonce == 0 || nonces[bettor][nonce]) revert InvalidNonce();
-        nonces[bettor][nonce] = true;
+        return claimedAmount;
     }
 
     /**
-     * @notice RReject `Ordinary` type bets,
-     *         isNeedRevert = true for standalone bet rejectings,
-     *         isNeedRevert = false for rejecting as part of condition resolve
+     * @notice Liquidity Pool: Resolve bet ID or AzuroBet token type `tokenId` payout for `account`.
+     * @param  account bet (AzuroBet tokens) owner
+     * @param  tokenId bet (AzuroBet token type) ID
+     * @return amount of winnings of the account
      */
-    function _rejectConditionBets(
-        Condition storage condition,
-        uint256 conditionId,
-        uint256[] memory betTokens,
-        bool isNeedRevert
-    ) internal {
-        uint128 amount;
-        uint128[] memory payouts = condition.payouts;
-        uint128 totalNetBets = condition.totalNetBets;
-        uint8 winningOutcomesCount = condition.winningOutcomesCount;
-        Bet storage bet;
+    function resolvePayout(address account, uint256 tokenId)
+        external
+        override
+        onlyLp
+        returns (uint128)
+    {
+        // passed tokenId
+        if (!_isBetId(tokenId)) return super._resolvePayout(account, tokenId);
 
-        int128 reserved = _calcReserve(
-            payouts,
-            totalNetBets,
-            winningOutcomesCount
-        ).toInt128();
+        // passed live betId
+        (bool accepted, uint128 payout) = _viewBetPayout(account, tokenId);
+        uint128 amount = bets[tokenId].amount;
+        delete bets[tokenId];
 
-        for (uint256 i; i < betTokens.length; ++i) {
-            bet = _bet(betTokens[i]);
-            amount = bet.amount;
-            // Only for ordinary bet (not combo)!
-            if (bet.comboParts.length > 0) revert IncorrectBetType();
-            if (bet.conditionId != conditionId) revert IncorrectConditionId();
-
-            if (bet.payout == amount) {
-                if (isNeedRevert) revert AlreadyRejected();
-                else continue;
-            }
-            if (bet.isPaid) {
-                if (isNeedRevert) revert AlreadyPaid();
-                else continue;
-            }
-
-            totalNetBets -= amount;
-            payouts[getOutcomeIndex(bet.conditionId, bet.outcomeId)] -= bet
-                .payout;
-            // reject payout
-            bet.payout = amount;
-
-            // chargeback bets
-            _rejectFee(amount, bet.conditionId, bet.timestamp);
-
-            emit BetRejected(betTokens[i]);
-        }
-
-        // recalculate locked reserves
-        int128 newReserve = _calcReserve(
-            payouts,
-            totalNetBets,
-            winningOutcomesCount
-        ).toInt128();
-
-        // remove bets, payouts
-        condition.totalNetBets = totalNetBets;
-        condition.payouts = payouts;
-
-        if (newReserve != reserved)
-            _changeLockedLiquidity(newReserve - reserved, false);
-    }
-
-    function _rejectFee(
-        uint128 reducedAmount,
-        uint256 conditionId,
-        uint64 timestamp
-    ) internal {
-        lp.rejectFee(reducedAmount, conditionId, timestamp);
-    }
-
-    /**
-     * @notice Reset stored sub bet odds by passed sub bet list
-     */
-    function _resetSubBetOdds(
-        ComboSubBet[] calldata inputSubBets,
-        ComboPartOdds[] storage subBets,
-        uint128 betAmount,
-        uint64 timestamp
-    ) internal {
-        ComboPartOdds storage subBet;
-        uint64 one64 = uint64(FixedMath.ONE);
-        uint256 conditionId;
-        uint256 length = subBets.length;
-        for (uint256 j; j < inputSubBets.length; ++j) {
-            bool found;
-            for (uint256 k; k < length; ++k) {
-                subBet = subBets[k];
-                conditionId = inputSubBets[j].conditionId;
-                if (
-                    conditionId == subBet.conditionId &&
-                    inputSubBets[j].outcomeId == subBet.outcomeId
-                ) {
-                    if (subBet.odds == one64) revert AlreadyRejected();
-
-                    // only for not resolved conditions
-                    if (_isConditionResolved(_getCondition(conditionId)))
-                        revert SubBetConditionResolved(conditionId);
-
-                    subBet.odds = one64;
-                    found = true;
-
-                    // chargeback subbet
-                    lp.rejectFeeComboPart(
-                        betAmount,
-                        conditionId,
-                        length,
-                        k,
-                        timestamp
-                    );
-                    break;
-                }
-            }
-            if (!found) revert IncorrectSubBetsToReset();
-        }
-    }
-
-    /**
-     * @notice Register new condition if not exists or check its state is able to make bet
-     */
-    function _safeCreateCondition(
-        uint256 conditionId,
-        ConditionData memory conditionData,
-        address oracle
-    ) internal returns (Condition storage condition) {
-        condition = _getCondition(conditionId);
-        if (condition.lastDepositId == 0)
-            _createCondition(conditionData, oracle, condition);
-        else if (condition.state != ConditionState.CREATED)
-            revert ConditionNotRunning();
-    }
-
-    /**
-     * @notice Find the first recorded element equal or later `settledAt`.
-     * @param  timeBets condition bet times list
-     * @param  settledAt target timestamp
-     * @return foundIndex result found element index
-     * @return restLength rest elements count from found element
-     */
-    function _selectTimes(
-        TimeBet[] storage timeBets,
-        uint256 settledAt
-    ) internal view returns (uint256 foundIndex, uint256 restLength) {
-        uint256 length = timeBets.length;
-        if (length == 0) return (0, 0);
-        if (settledAt < timeBets[0].time) return (0, length);
-        if (settledAt > timeBets[length - 1].time) return (0, 0);
-
-        uint256 left;
-        uint256 mid;
-        uint256 right = length;
-
-        // Binary search for first element >= settledAt
-        while (left < right) {
-            mid = (right + left) / 2;
-            if (timeBets[mid].time >= settledAt) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-
-        // Checking if the element is found
-        return
-            (left < length && timeBets[left].time >= settledAt)
-                ? (left, length - left)
-                : (0, 0);
-    }
-
-    /**
-     * @notice See {ILiveCore-cancelConditions}.
-     */
-    function cancelConditions(uint256[] calldata conditionIds) external {
-        Condition storage condition;
-        for (uint256 i; i < conditionIds.length; ++i) {
-            uint256 conditionId = conditionIds[i];
-            condition = _getCondition(conditionId);
-            if (msg.sender != condition.oracle)
-                _checkAccess(
-                    msg.sender,
-                    address(this),
-                    this.cancelConditions.selector
-                );
-            _checkConditionNotSettled(condition);
-
-            // chargeback bets
-            lp.rejectConditionFee(conditionId);
-
-            _resolveCondition(
-                condition,
-                conditionId,
-                ConditionState.CANCELED,
-                new uint128[](0),
-                condition.totalNetBets,
+        if (accepted) {
+            BetGroup storage bg = betGroups[tokenId];
+            azuroBet.mint(
+                account,
+                getTokenId(bg.conditionId, bg.outcomeIndex),
+                amount,
                 0
             );
         }
+        return payout;
     }
 
     /**
-     * @notice Liquidity Pool: Resolve AzuroBet token `tokenId` payout.
-     * @notice In the Combo bet case - release reserve
-     * @param  tokenId AzuroBet token ID
-     * @return owner token owner
-     * @return actualPayout of winnings
+     * @notice Make new coreRewards record and set affiliate merkle root distribution hash
+     * @param merkleRoot - distribution merkle root hash
      */
-    function resolvePayout(
-        uint256 tokenId
-    ) external onlyLp returns (address, uint128) {
-        Bet storage bet = _bet(tokenId);
+    function setAffRewards(bytes32 merkleRoot) external onlyAffMaster {
+        uint128 prevRewards;
+        uint256 length = affRewards.length;
 
-        uint128 actualPayout = viewPayout(tokenId);
-        bet.isPaid = true;
+        if (length > 0) prevRewards = _getAffReward(length - 1);
 
-        // if bet is combo - change reserve
-        if (bet.comboParts.length > 0) {
-            uint128 initialPayout = bet.payout;
-            _addReserve(
-                initialPayout - bet.amount,
-                initialPayout - actualPayout,
-                bet.lastDepositId,
-                true
-            );
-        }
+        uint128 currRewards = lp.coreAffRewards(address(this));
+        uint128 rewards = currRewards - prevRewards;
+        if (rewards == 0) revert NoRewards();
 
-        return (azuroBet.ownerOf(tokenId), actualPayout);
+        // set current aff rewards
+        affRewards.push();
+        AffRewards storage currAffRewards = affRewards[length];
+        currAffRewards.merkleRoot = merkleRoot;
+        currAffRewards.rewards = currRewards; // save current aff rewards
+
+        emit AffRewardsSet(length, merkleRoot, rewards);
     }
 
     /**
-     * @notice Get condition by it's ID.
-     * @param  conditionId the match or condition ID
-     * @return the condition struct
+     * @notice Claim AzuroBet tokens for processed bet `betId`.
+     * @notice The condition the bet was placed for must be already resolved.
+     * @param  betId the bet Id
      */
-    function getCondition(
-        uint256 conditionId
-    ) external view returns (Condition memory) {
-        return conditions[conditionId];
-    }
+    function claimBetToken(uint256 betId) external {
+        Bet storage bet = bets[betId];
+        if (bet.bettor != msg.sender) revert OnlyBetOwner();
+        if (bet.isClaimed) revert AlreadyClaimed();
 
-    /**
-     * @notice Get condition's `conditionId` index of outcome `outcomeId`.
-     */
-    function getOutcomeIndex(
-        uint256 conditionId,
-        uint128 outcomeId
-    ) public view returns (uint256) {
-        uint256 outcomeNumber = outcomeNumbers[conditionId][outcomeId];
-        if (outcomeNumber == 0) revert WrongOutcome();
+        BetGroup storage bg = betGroups[betId];
+        if (_isBetGroupRejected(bg)) revert BetRejected();
 
-        return outcomeNumber - 1;
-    }
+        uint256 conditionId = bg.conditionId;
 
-    /**
-     * @notice Check if `outcome` is winning outcome of condition `conditionId`.
-     */
-    function isOutcomeWinning(
-        uint256 conditionId,
-        uint128 outcome
-    ) public view returns (bool) {
-        return winningOutcomes[conditionId][outcome];
-    }
+        // must be not in progress
+        ConditionState state = _getCondition(conditionId).state;
+        if (
+            state != ConditionState.CANCELED && state != ConditionState.RESOLVED
+        ) revert ConditionNotFinished();
 
-    /**
-     * @notice Check if condition or game it is bound with is cancelled or not.
-     */
-    function isConditionCanceled(
-        uint256 conditionId
-    ) external view returns (bool) {
-        return _isConditionCanceled(_getCondition(conditionId));
-    }
-
-    /**
-     * @notice Get the AzuroBet token `tokenId` payout amount.
-     * @param  tokenId AzuroBet token ID
-     * @return payout for the token
-     */
-    function viewPayout(uint256 tokenId) public view virtual returns (uint128) {
-        Bet storage bet = _bet(tokenId);
-        Condition storage condition;
-        ComboPartOdds storage comboPart;
-
-        if (bet.isPaid) revert AlreadyPaid();
-        if (bet.lastDepositId == 0) revert BetNotExists();
         uint128 amount = bet.amount;
-        uint128 payout = bet.payout;
+        uint8 outcomeIndex = bg.outcomeIndex;
 
-        // if bet is combo
-        // There are different cases in combo:
-        // - returned value if all subbets are resolved, canceled, rejected or "bet not in time"
-        // - reverted if resolved partially
-        // - reverted if no resolved subbet - the case of cashout ability
-        uint256 length = bet.comboParts.length;
-        if (length > 0) {
-            uint256 comboOdds = FixedMath.ONE;
-            uint256 resolvedSubbets;
-            uint256 canceledSubbets;
-
-            for (uint256 i; i < length; ++i) {
-                comboPart = bet.comboParts[i];
-                uint256 conditionId = comboPart.conditionId;
-                condition = _getCondition(conditionId);
-
-                // count canceled + "out of time" + rejected
-                if (
-                    _isConditionCanceled(condition) ||
-                    (condition.settledAt != 0 &&
-                        bet.timestamp >= condition.settledAt) ||
-                    (comboPart.odds == FixedMath.ONE)
-                ) {
-                    ++canceledSubbets;
-                    continue;
-                }
-                if (_isConditionResolved(condition)) {
-                    ++resolvedSubbets;
-                    // odds > FixedMath.ONE is not rejected subBet
-                    if (
-                        comboPart.odds > FixedMath.ONE &&
-                        !isOutcomeWinning(
-                            comboPart.conditionId,
-                            comboPart.outcomeId
-                        )
-                    ) {
-                        return 0;
-                    }
-                }
-                comboOdds = comboOdds.mul(comboPart.odds);
-            }
-
-            // all sub bets canceled
-            if (length == canceledSubbets) return amount;
-            if (resolvedSubbets == 0) revert CobmoBetNotResolved();
-
-            // if all subbets resolved
-            if (resolvedSubbets == (length - canceledSubbets))
-                return uint128(comboOdds.mul(amount));
-            // else
-            revert ComboBetResolvedPartially();
-        } else {
-            // rejected bet can be instantly withdrawn
-            if (payout == amount) return amount;
-
-            uint256 conditionId = bet.conditionId;
-            condition = _getCondition(conditionId);
-            if (_isConditionResolved(condition)) {
-                // bet not in time
-                if (bet.timestamp >= condition.settledAt) return amount;
-                if (isOutcomeWinning(bet.conditionId, bet.outcomeId))
-                    return payout;
-                else return 0;
-            }
-            // if bet canceled or rejected
-            if (_isConditionCanceled(condition)) return amount;
-
-            revert ConditionNotFinished();
-        }
-    }
-
-    /**
-     * @notice Change condition funds and update the locked reserve amount according to the new funds value.
-     */
-    function _changeFunds(
-        Condition storage condition,
-        uint256 outcomeIndex,
-        uint128 amount,
-        uint128 payout
-    ) internal {
-        uint128[] memory payouts = condition.payouts;
-        uint128 totalNetBets = condition.totalNetBets;
-        uint8 winningOutcomesCount = condition.winningOutcomesCount;
-
-        int128 reserved = _calcReserve(
-            payouts,
-            totalNetBets,
-            winningOutcomesCount
-        ).toInt128();
-
-        payouts[outcomeIndex] += payout;
-        totalNetBets += amount;
-
-        int128 newReserve = _calcReserve(
-            payouts,
-            totalNetBets,
-            winningOutcomesCount
-        ).toInt128();
-
-        if (newReserve != reserved)
-            _changeLockedLiquidity(newReserve - reserved, false);
-
-        condition.payouts[outcomeIndex] = payouts[outcomeIndex];
-        condition.totalNetBets = totalNetBets;
-    }
-
-    function _checkOnlyLp() internal view {
-        if (msg.sender != address(lp)) revert OnlyLp();
-    }
-
-    /**
-     * @notice Register new condition.
-     * @param  conditionData client core condition data
-     */
-    function _createCondition(
-        ConditionData memory conditionData,
-        address oracle,
-        Condition storage condition
-    ) internal {
-        uint256 outcomes = conditionData.outcomes.length;
-        if (outcomes == 0) revert IncorrectOutcomesCount();
-
-        (uint128 value, bool isNotUnique) = Math.isNotUniq(
-            conditionData.outcomes
-        );
-        if (isNotUnique) revert DuplicateOutcomes(value);
-
-        uint8 winningOutcomesCount = conditionData.winningOutcomesCount;
-        if (winningOutcomesCount == 0 || winningOutcomesCount >= outcomes)
-            revert IncorrectWinningOutcomesCount();
-
-        condition.lastDepositId = _getLastDepositId();
-        condition.winningOutcomesCount = winningOutcomesCount;
-        condition.payouts = new uint128[](outcomes);
-        condition.oracle = oracle;
-        for (uint256 i; i < outcomes; ++i) {
-            outcomeNumbers[conditionData.conditionId][
-                conditionData.outcomes[i]
-            ] = i + 1;
-        }
-
-        emit ConditionCreated(
-            conditionData.gameId,
-            conditionData.conditionId,
-            conditionData.outcomes,
-            conditionData.odds,
-            winningOutcomesCount
+        bet.isClaimed = true;
+        azuroBet.mint(
+            msg.sender,
+            getTokenId(conditionId, outcomeIndex),
+            amount,
+            _getBatch(bg.batchId).batchOdds[outcomeIndex].mul(amount).toUint128()
         );
     }
 
     /**
-     * @notice Resolves a condition by updating its state and outcome information, updating Liquidity Pool liquidity and
-     *         calculating and distributing payouts and rewards to relevant parties.
-     * @param  condition the condition pointer
-     * @param  conditionId the condition ID
-     * @param  result the ConditionState enum value representing the result of the condition
-     * @param  winningOutcomes_ the IDs of the winning outcomes of the condition. Set as empty array if the condition is canceled
-     * @param  payout the payout amount to be distributed between bettors
-     * @param  settledAt end time to accept bets
+     * @notice Get the details of the bet `betId`.
+     * @param  betId live bet Id
      */
-    function _resolveCondition(
-        Condition storage condition,
-        uint256 conditionId,
-        ConditionState result,
-        uint128[] memory winningOutcomes_,
-        uint128 payout,
-        uint64 settledAt
-    ) internal {
-        (uint128 value, bool isNotUnique) = Math.isNotUniq(winningOutcomes_);
-        if (isNotUnique) revert DuplicateOutcomes(value);
+    function getBetInfo(uint256 betId)
+        external
+        view
+        returns (
+            bool rejected,
+            address bettor,
+            uint128 betAmount,
+            uint64 odds
+        )
+    {
+        BetGroup storage bg = betGroups[betId];
+        Bet storage bet = bets[betId];
+        rejected = _isBetGroupRejected(bg);
+        bettor = bet.bettor;
+        betAmount = bet.amount;
+        odds = _getBatch(bg.batchId).batchOdds[bg.outcomeIndex];
+    }
 
-        condition.state = result;
-        for (uint256 i; i < winningOutcomes_.length; ++i) {
-            winningOutcomes[conditionId][winningOutcomes_[i]] = true;
-        }
+    /**
+     * @notice Get the current count of batches included to the condition `conditionId`.
+     * @param  conditionId live condition id
+     */
+    function conditionBatchCount(uint256 conditionId)
+        external
+        view
+        returns (uint256)
+    {
+        return batchIds[conditionId].length;
+    }
 
-        uint128 totalNetBets = condition.totalNetBets;
-        uint128 lockedReserve = _calcReserve(
-            condition.payouts,
-            totalNetBets,
-            condition.winningOutcomesCount
+    /**
+     * @notice Get batch data
+     * @param  batchId live condition batch id
+     */
+    function getBatch(uint256 batchId)
+        external
+        view
+        returns (
+            uint128[2] memory funds,
+            uint128 startBlock,
+            uint64[2] memory batchOdds,
+            uint64 startTime
+        )
+    {
+        Batch storage batch = _getBatch(batchId);
+        return (
+            batch.snapshotFunds,
+            batch.startBlock,
+            batch.batchOdds,
+            batch.startTime
         );
-        uint128 profitReserve = lockedReserve + totalNetBets - payout;
+    }
 
-        _addReserve(
-            lockedReserve,
-            profitReserve,
-            condition.lastDepositId,
-            false
-        );
-
-        // make fee available to claim
-        lp.releaseFee(conditionId);
-
-        emit ConditionResolved(
+    /**
+     * @notice Apply condition's `conditionId` pending bets if the minimal blocks threshold is already passed.
+     */
+    function executeBatch(uint256 conditionId) public {
+        Condition storage condition = _getCondition(conditionId);
+        Batch storage batch = _getBatchByIndex(
             conditionId,
-            uint8(result),
-            winningOutcomes_,
-            profitReserve.toInt128() - lockedReserve.toInt128(),
-            settledAt
+            batchIds[conditionId].length - 1
         );
+
+        if ((block.number - batch.startBlock) < batchMinBlocks)
+            revert MinBlocksNotPassed();
+
+        _conditionIsRunning(condition);
+        _executeBatch(condition, conditionId);
     }
 
     /**
-     * @notice Calculate the amount of liquidity to be reserved.
+     * @notice Get bet ID or AzuroBet token type `tokenId` payout for `account`.
+     * @param  account bet (AzuroBet tokens) owner
+     * @param  tokenId bet (AzuroBet token type) ID
+     * @return is bet accepted
+     * @return winnings of the account
      */
-    function _calcReserve(
-        uint128[] memory payouts,
-        uint256 totalNetBets,
-        uint8 winningOutcomesCount
-    ) internal pure returns (uint128) {
+    function viewPayout(address account, uint256 tokenId)
+        public
+        view
+        override(CoreBase, ICoreBase)
+        returns (bool, uint128)
+    {
+        if (!_isBetId(tokenId)) return super.viewPayout(account, tokenId);
+        return _viewBetPayout(account, tokenId);
+    }
+
+    /**
+     * @notice Get rounded `minOdds` value according to rounding stages:
+     * 1-3 by 0.1 , 3-5 by 0.2 , 5-10 by 0.5 , from 10 by 1.0
+     */
+    function _getMinOddsRounded(uint64 minOdds) internal pure returns (uint64) {
         return
-            Math
-                .diffOrZero(
-                    Math.maxSum(payouts, winningOutcomesCount),
-                    totalNetBets
-                )
-                .toUint128();
+            minOdds < ONE
+                ? ONE
+                : (
+                    minOdds <= ONE * 3
+                        ? minOdds - (minOdds % TENTHS1)
+                        : (
+                            minOdds <= ONE * 5
+                                ? minOdds - (minOdds % TENTHS2)
+                                : (
+                                    minOdds <= ONE * 10
+                                        ? minOdds - (minOdds % TENTHS5)
+                                        : minOdds - (minOdds % ONE)
+                                )
+                        )
+                );
     }
 
     /**
-     * @notice Get condition by it's ID.
+     * @notice Get next rounded `minOdds` value according to rounding stages:
+     * 1-3 by 0.1 , 3-5 by 0.2 , 5-10 by 0.5 , from 10 by 1.0
+     * used for loop by rounded `minOdds` values
      */
-    function _getCondition(
-        uint256 conditionId
-    ) internal view returns (Condition storage) {
-        return conditions[conditionId];
+    function _getNextMinOdds(uint64 minOdds) internal pure returns (uint64) {
+        return
+            minOdds < ONE
+                ? ONE
+                : (
+                    minOdds <= ONE * 3 - TENTHS1
+                        ? minOdds + TENTHS1
+                        : (
+                            minOdds <= ONE * 5 - TENTHS2
+                                ? minOdds + TENTHS2
+                                : (
+                                    minOdds <= ONE * 10 - TENTHS5
+                                        ? minOdds + TENTHS5
+                                        : minOdds + ONE
+                                )
+                        )
+                );
     }
 
     /**
-     * @notice Check if condition or game it is bound with is cancelled or not.
+     * @notice get rewards for some reward period (rewardId)
      */
-    function _isConditionCanceled(
-        Condition storage condition
-    ) internal view returns (bool) {
-        return condition.state == ConditionState.CANCELED;
+    function _getAffReward(uint256 rewardId) internal view returns (uint128) {
+        return affRewards[rewardId].rewards;
     }
 
     /**
-     * @notice Check if condition is resolved or not.
+     * @notice Finalize condition's `conditionId` bets that was made before `endsAt`.
+     * @param  conditionId the match or condition ID
+     * @param  endsAt the timestamp after which all bet must be rejected
      */
-    function _isConditionResolved(
-        Condition storage condition
-    ) internal view returns (bool) {
-        return condition.state == ConditionState.RESOLVED;
-    }
+    function _confirmConditionBatches(uint256 conditionId, uint64 endsAt)
+        internal
+    {
+        Condition storage condition = _getCondition(conditionId);
+        uint256[] storage batchIds_ = batchIds[conditionId];
+        // executed batches
+        uint256 executed = batchIds_.length - 1;
+        // get last batch (not executed)
+        Batch storage lastBatch = _getBatchByIndex(conditionId, executed);
+        uint64 startTime = lastBatch.startTime;
 
-    function _checkConditionNotSettled(
-        Condition storage condition
-    ) internal view {
-        if (_isConditionResolved(condition) || _isConditionCanceled(condition))
-            revert ConditionAlreadyResolved();
+        // at current not executed batch, drop not executed batch resolve condition
+        if (endsAt >= startTime) {
+            // correct endsAt to last batch starttime (not executed)
+            condition.endsAt = startTime;
+        } else {
+            // find batch index (by endsAt) in accepted indexes (0 ... executed-1), starting from the index to remove from condition
+            executed = _binarySearch(batchIds_, 0, executed - 1, endsAt);
+
+            // get executed batch
+            lastBatch = _getBatchByIndex(conditionId, executed);
+
+            condition.endsAt = lastBatch.startTime;
+
+            // restore condition funds state from snapShot, if needed
+            _changeFunds(condition, condition.funds, lastBatch.snapshotFunds);
+        }
+        // save resolved (all executed) batches count
+        if (executed > 0) resolvedBatches[conditionId] = executed;
     }
 
     /**
-     * @notice Check bettor's and oracle's parameters signatures.
-     * @param  order combined parameters see { ILiveCore.OrderData }
+     * @notice calculate odds for both outcomes and returned rejected sign for not passed `minOdds` condition,
+     * used for the batch execution
      */
-    function _checkSignatures(
-        OrderData calldata order,
-        bytes calldata hashes
-    ) internal view {
-        (bytes32 structHash, bytes32 messageHash) = abi.decode(
-            hashes,
-            (bytes32, bytes32)
+    function _calcBatchOdds(
+        uint64[2] memory initOdds,
+        Condition storage condition,
+        uint128[2] memory initVirtualFunds,
+        uint64 minOdds,
+        uint128[2] memory amounts
+    )
+        internal
+        view
+        returns (uint64[2] memory oddsPair, bool[2] memory rejected)
+    {
+        (oddsPair, rejected) = _calcOddsRejects(
+            condition,
+            initVirtualFunds,
+            minOdds,
+            [false, false], // try as not rejected
+            amounts
         );
+        // all accepted
+        if (!rejected[0] && !rejected[1]) return (oddsPair, rejected);
+        // all rejected
+        if (rejected[0] && rejected[1]) return (initOdds, rejected);
+        // if combinations of rejects - get odds for only accepted
+        return
+            _calcOddsRejects(
+                condition,
+                initVirtualFunds,
+                minOdds,
+                rejected,
+                amounts
+            );
+    }
 
-        if (
-            !SignatureChecker.isValidSignatureNow(
-                order.betOwner,
-                _hashTypedDataV4(structHash),
-                order.bettorSignature
+    /**
+     * @notice calculate outcome odds for inputed virtual funds, used in _calcOddsRejects()
+     */
+    function _calcOddsPair(
+        Condition storage condition,
+        uint128[2] memory virtualFunds
+    ) internal view returns (uint64[2] memory) {
+        uint256 funds = uint256(virtualFunds[0] + virtualFunds[1]);
+        uint64 margin = condition.margin;
+        return [
+            uint64(
+                CoreTools.marginAdjustedOdds(funds.div(virtualFunds[0]), margin)
+            ),
+            uint64(
+                CoreTools.marginAdjustedOdds(funds.div(virtualFunds[1]), margin)
             )
-        ) revert InvalidBettorSignature();
+        ];
+    }
 
+    /**
+     * @notice calculate odds for not rejected (inputed) outcomes and returned rejected sign for not passed `minOdds` condition,
+     * used in _calcBatchOdds()
+     */
+    function _calcOddsRejects(
+        Condition storage condition,
+        uint128[2] memory initVirtualFunds,
+        uint64 minOdds,
+        bool[2] memory rejectsInput,
+        uint128[2] memory amounts
+    )
+        internal
+        view
+        returns (uint64[2] memory oddsPair, bool[2] memory rejected)
+    {
+        uint128[2] memory virtualFunds;
+        for (uint8 outcomeIndex = 0; outcomeIndex < 2; outcomeIndex++) {
+            virtualFunds[outcomeIndex] = initVirtualFunds[outcomeIndex];
+            if (!rejectsInput[outcomeIndex])
+                virtualFunds[outcomeIndex] += amounts[outcomeIndex];
+        }
+        oddsPair = _calcOddsPair(condition, virtualFunds);
+        rejected = [(oddsPair[0] < minOdds), (oddsPair[1] < minOdds)];
+    }
+
+    /**
+     * @notice Apply current batch pending bets, according bet's minodds criteria
+     */
+    function _executeBatch(Condition storage condition, uint256 conditionId)
+        internal
+    {
+        uint256 batchId = _getLastBatchId(conditionId);
+        Batch storage batch = _getBatch(batchId);
+        uint128[2] memory newVirtualFunds = condition.virtualFunds;
+        uint64[2] memory batchOdds_;
+        uint256 maxOdds = Math.max(batch.oddsRounded[0], batch.oddsRounded[1]);
+        uint64 minOdds;
+        uint64[2] memory odds;
+        uint128[2] memory amounts;
+        bool[2] memory rejects;
+
+        uint128[2] memory batchAmounts; // bets by outcome
+        uint128[2] memory batchPayouts; // payouts by outcome
+
+        for (
+            minOdds = ONE;
+            minOdds <= maxOdds;
+            minOdds = _getNextMinOdds(minOdds)
+        ) {
+            for (uint8 outcomeIndex = 0; outcomeIndex < 2; outcomeIndex++) {
+                amounts[outcomeIndex] = batch
+                .outcomeOddsBets[outcomeIndex][minOdds].amount;
+            }
+            (odds, rejects) = _calcBatchOdds(
+                batchOdds_,
+                condition,
+                newVirtualFunds,
+                minOdds,
+                amounts
+            );
+
+            if (!rejects[0]) newVirtualFunds[0] += amounts[0];
+            if (!rejects[1]) newVirtualFunds[1] += amounts[1];
+
+            for (uint8 outcomeIndex = 0; outcomeIndex < 2; outcomeIndex++) {
+                uint128 _amount = amounts[outcomeIndex];
+                if (_amount == 0) continue;
+
+                if (!rejects[outcomeIndex]) {
+                    // save accepted bets amounts
+                    uint128 deltaPayout = uint128(
+                        odds[outcomeIndex].mul(_amount)
+                    ) - _amount;
+                    newVirtualFunds[1 - outcomeIndex] -= deltaPayout;
+                    batchAmounts[outcomeIndex] += _amount;
+                    batchPayouts[outcomeIndex] += deltaPayout;
+                } else {
+                    batch
+                    .outcomeOddsBets[outcomeIndex][minOdds].rejected = true;
+                }
+            }
+            batchOdds_ = odds;
+        }
+
+        // save batch odds
+        batch.batchOdds = batchOdds_;
+        condition.virtualFunds = newVirtualFunds;
+
+        // changing funds due accepted bets
+        uint128[2] memory funds = condition.funds;
+
+        // funds snapshot
+        batch.snapshotFunds = funds;
+
+        _changeFunds(
+            condition,
+            funds,
+            [
+                funds[0] + batchAmounts[0] - batchPayouts[1],
+                funds[1] + batchAmounts[1] - batchPayouts[0]
+            ]
+        );
+        _startNewBatch(conditionId);
+    }
+
+    /**
+     * @notice Start new batch for condition `conditionId`.
+     */
+    function _startNewBatch(uint256 conditionId) internal {
+        uint256 _lastBatchId = ++lastBatchId;
+        Batch storage batch = batches[_lastBatchId];
+        batchIds[conditionId].push(_lastBatchId);
+        batch.startBlock = uint128(block.number);
+        batch.startTime = uint64(block.timestamp);
+    }
+
+    /**
+     * @notice Find the last batch ended before `endsAt`.
+     * @param  batchIds_ batches ids
+     * @param  start left bound of the search
+     * @param  stop right bound of the search
+     * @param  endsAt target timestamp
+     */
+    function _binarySearch(
+        uint256[] storage batchIds_,
+        uint256 start,
+        uint256 stop,
+        uint64 endsAt
+    ) internal view returns (uint256 result) {
+        if (start == stop) return start;
+        if (start >= stop - 1) {
+            if (endsAt >= batches[batchIds_[stop]].startTime) return stop;
+            else return start;
+        }
+        uint256 middle = (start + stop) / 2;
+        if (endsAt >= batches[batchIds_[middle]].startTime) {
+            result = _binarySearch(batchIds_, middle, stop, endsAt);
+        } else {
+            result = _binarySearch(batchIds_, start, middle, endsAt);
+        }
+    }
+
+    /**
+     * @notice check access for role Affiliate Master, used for modifier `onlyAffMaster`
+     */
+    function _checkOnlyAffMaster() internal view {
+        lp.checkRole(msg.sender, 2);
+    }
+
+    /**
+     * @notice Throw if the condition can't accept any bet now.
+     * @notice This can happen because the condition is resolved or stopped or
+     *         the game the condition is bounded with is canceled.
+     * @param  condition the condition pointer
+     */
+    function _conditionIsRunning(Condition storage condition)
+        internal
+        view
+        override
+    {
         if (
-            order.oracle !=
-            MessageHashUtils.toEthSignedMessageHash(messageHash).recover(
-                order.oracleSignature
-            )
-        ) revert InvalidOracleSignature();
+            condition.state != ConditionState.CREATED ||
+            lp.isGameCanceled(condition.gameId)
+        ) revert ActionNotAllowed();
+    }
+
+    /**
+     * @notice Get batch with ID `batchId`.
+     */
+    function _getBatch(uint256 batchId) internal view returns (Batch storage) {
+        return batches[batchId];
+    }
+
+    /**
+     * @notice Get batch `batchIndex` of condition `conditionId`.
+     */
+    function _getBatchByIndex(uint256 conditionId, uint256 batchIndex)
+        internal
+        view
+        returns (Batch storage)
+    {
+        return batches[batchIds[conditionId][batchIndex]];
+    }
+
+    /**
+     * @notice Get last batch of condition `conditionId`.
+     */
+    function _getLastBatchId(uint256 conditionId)
+        internal
+        view
+        returns (uint256 batchId)
+    {
+        return batchIds[conditionId][batchIds[conditionId].length - 1];
+    }
+
+    /**
+     * @notice Check if group of bets is rejected.
+     * @param  bg bet group storage link
+     */
+    function _isBetGroupRejected(BetGroup storage bg)
+        internal
+        view
+        returns (bool)
+    {
+        Condition storage condition = _getCondition(bg.conditionId);
+        Batch storage batch = _getBatch(bg.batchId);
+        return
+            (condition.endsAt > 0 && condition.endsAt <= batch.startTime) ||
+            batch.outcomeOddsBets[bg.outcomeIndex][bg.minOdds].rejected;
+    }
+
+    /**
+     * @notice Check if `tokenId` is ID of bet.
+     */
+    function _isBetId(uint256 tokenId) internal pure returns (bool) {
+        return tokenId & BET_ID_MASK == BET_ID_MASK;
+    }
+
+    /**
+     * @notice View payout for accepted or rejected bet.
+     * @param  account bettor address
+     * @param  betId live bet Id
+     */
+    function _viewBetPayout(address account, uint256 betId)
+        internal
+        view
+        returns (bool, uint128)
+    {
+        if (bets[betId].bettor != account) revert OnlyBetOwner();
+
+        BetGroup storage bg = betGroups[betId];
+        uint128 amount = bets[betId].amount;
+        // if rejected return stake
+        if (_isBetGroupRejected(bg)) return (false, amount);
+
+        uint256 conditionId = bg.conditionId;
+        Condition storage condition = _getCondition(conditionId);
+        ConditionState state = condition.state;
+
+        if (state == ConditionState.CANCELED) return (false, amount);
+
+        uint256 outcomeIndex = bg.outcomeIndex;
+        if (state == ConditionState.RESOLVED) {
+            if (condition.outcomeWin == condition.outcomes[outcomeIndex])
+                return (
+                    true,
+                    _getBatch(bg.batchId)
+                        .batchOdds[outcomeIndex]
+                        .mul(amount)
+                        .toUint128()
+                );
+            return (true, 0);
+        }
+
+        revert ConditionNotFinished();
     }
 }

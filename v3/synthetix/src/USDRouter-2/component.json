@@ -1,0 +1,18 @@
+{
+  "component": "USDRouter-2",
+  "main_contract": "USDRouter",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x95ac74dd94013a611d4a1111fc02c04056132637",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

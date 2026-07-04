@@ -1,0 +1,18 @@
+{
+  "component": "NerveMetaBridgeZap-5",
+  "main_contract": "NerveMetaBridgeZap",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5a5fff6f753d7c11a56a52fe47a177a87e431655",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

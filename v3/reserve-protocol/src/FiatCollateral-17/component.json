@@ -1,0 +1,18 @@
+{
+  "component": "FiatCollateral-17",
+  "main_contract": "FiatCollateral",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c0b21acb267f1fae4aefa977a26c4a63c9b35e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,23 @@
 {
   "component": "P2PSwapRouter",
   "main_contract": "P2PSwapRouter",
-  "source_file_count": 18,
-  "deployment_count": 1,
+  "source_file_count": 14,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x7801cfc789721138aba7ffd957653b9aa1872952",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x934164f9bbf4ec0f89d4e1f201efce61a9378377",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa87ce1341bcc24671696077c022f5f21586c1aba",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

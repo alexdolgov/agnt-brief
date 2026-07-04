@@ -1,0 +1,34 @@
+{
+  "component": "StakingDHV-3",
+  "main_contract": "StakingDHV",
+  "source_file_count": 1,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0902eb0d13c47fb2dd0c17436d7789cdeff7cbf7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6424732bd7672fcc0da37d1e70a38a3c8ac5f807",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xb32e05f11b01a31516bfcddfe5abf52564c6dfe3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

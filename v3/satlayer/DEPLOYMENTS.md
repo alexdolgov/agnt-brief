@@ -1,23 +1,39 @@
 # satlayer — deployments
 
-175 verified deployment(s) across 56 component(s).
+191 verified deployment(s) across 62 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x422d6c77ee640fd4dd87bbacc2bad64e427f9802` | ReceiptToken-4 | impl | live | no |
+| base | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0x9ed4b12eddcf7ba4325d7d09e00dfa31d4165add` | ReceiptToken-4 | impl | live | no |
+| base | `0xb57752ddc2ec2defe9edbb1fdb99db1ca9b0b9b3` | SatlayerPool-3 | impl | live | no |
 | base | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | AdminUpgradeabilityProxy | proxy | live | no |
+| bsc | `0x067e11ac5471c853aea205b3c1933a5f6367152f` | ReceiptToken-3 | impl | live | no |
 | bsc | `0x1346b618dc92810ec74163e4c27004c921d446a5` | BeaconProxy | proxy | live | no |
+| bsc | `0x17140b69ffadff9e87bf1d86d99119ee10ad24ff` | ReceiptToken-3 | impl | live | no |
+| bsc | `0x42a856dbebb97abc1269eab32f3bb40c15102819` | SatlayerPool-2 | impl | live | no |
 | bsc | `0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c` | BEP20Token | impl | live | no |
+| bsc | `0xe2c6755c10d0b61d8b11dd2851ae8266cea912dc` | ReceiptToken-3 | impl | live | no |
 | bsc | `0xe9e7cea3dedca5984780bafc599bd69add087d56` | BEP20Token-2 | impl | live | no |
 | chain-80094 | `0x0f6f337b09cb5131cf0ce9df3beb295b8e728f3b` | BeaconProxy | proxy | live | no |
 | chain-80094 | `0x17c3b688badd6dd11244096a9fbc4ae0add551ab` | ProxyAdmin | impl | live | no |
-| chain-80094 | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| chain-80094 | `0x2a5fc05f71cfc54ddcad19457cee79e3aaf415c9` | ReceiptToken-2 | impl | live | no |
+| chain-80094 | `0x50198b5e1330753f167f6e0544e4c8af829bc99d` | SatlayerPool-4 | impl | live | no |
+| chain-80094 | `0x7b4dc4067251b4b5efd653527d6c26a02c85705c` | ReceiptToken-2 | impl | live | no |
+| chain-80094 | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-80094 | `0x93f4d0ab6a8b4271f4a28db399b5e30612d21116` | Token | impl | live | no |
+| chain-80094 | `0x961395ed9960fe5e281585beaa730b99af3ab763` | ReceiptToken-2 | impl | live | no |
+| chain-80094 | `0xc3827a4bc8224ee2d116637023b124ced6db6e90` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-80094 | `0xcc0966d8418d412c599a6421b760a847eb169a8c` | BeaconProxy | proxy | live | no |
 | chain-80094 | `0xd0ebd9f75fbd0bc8852b6fa454cec6e52ac07e10` | Token | impl | live | no |
+| chain-80094 | `0xd235571526170e7d167040166aae59cb8627abc2` | ReceiptToken-2 | impl | live | no |
+| chain-80094 | `0xe7041941e9e4f3d12d9eb6d9b228d3781548b126` | ReceiptToken-2 | impl | live | no |
 | chain-80094 | `0xec901da9c68e90798bbbb74c11406a32a70652c3` | Token | impl | live | no |
 | chain-80094 | `0xecac9c5f704e954931349da37f60e39f515c11c1` | TransparentUpgradeableProxy-5 | proxy | live | yes |
 | chain-80094 | `0xf46a21bb51ae1ddeab580696106cd9924cffbbe5` | RewardDistributor | impl | live | no |
-| ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| chain-80094 | `0xff21f46bc9d78125705eef6efca62f9420cfdb9b` | ReceiptToken-2 | impl | live | no |
+| ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x039bf39fad50d8faae01171e08a296a52066d97d` | Manager | impl | live | no |
 | ethereum | `0x045969904402f5e674ef1f27713f3230929538df` | ERC2612Verifier | impl | live | no |
 | ethereum | `0x052359563d104867a42c48cb7e688b1af22f0080` | Mailbox | impl | live | no |
@@ -65,7 +81,7 @@
 | ethereum | `0x3f0d9c1dc94ce02834632ef053c8e52919113282` | VaultYieldBasic | impl | live | no |
 | ethereum | `0x3f987372a1ae29f834deaea66d2e72137ba10fc7` | ERC4626VaultWrapper | impl | live | no |
 | ethereum | `0x42a856dbebb97abc1269eab32f3bb40c15102819` | SatlayerPool | impl | live | yes |
-| ethereum | `0x4509c4fb07f681385f21cf03c28a6f2aa1f203a4` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x4509c4fb07f681385f21cf03c28a6f2aa1f203a4` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x45e990fc1eefbdc2aab0ba20c69fb85ec4218cb3` | Manager | impl | live | no |
 | ethereum | `0x479030d8194f5b605c14197a99d8994c74b7a1c5` | Manager | impl | live | no |
 | ethereum | `0x4b00a9fddfdef18f5bb99f9413ef2423c4882da8` | VaultYieldBasic | impl | live | no |
@@ -102,7 +118,7 @@
 | ethereum | `0x74dce5df6fda75027433a3982f5dc2748763f752` | StrategyBedrock18DEC2025 | impl | live | no |
 | ethereum | `0x78a1fdcc5d2c49f42959c9e062b1118d00545b39` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x7ad781de178f84b6fdf862f6c89eaf0ebb3ba20e` | RedeemOperator | impl | live | no |
-| ethereum | `0x815a3d4a61588402babb52011a6df74aa3e4103f` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x815a3d4a61588402babb52011a6df74aa3e4103f` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x82dc327b92dc7b2e654ca07c7655280b190b89a3` | RedeemOperator | impl | live | no |
 | ethereum | `0x83291cf2731b8e3af3f3439cce871c6a1c4e281f` | GHOEth | impl | live | no |
 | ethereum | `0x841c461affafdae455f1ed51eeedc9b3558e0c47` | StrategyDefault | impl | live | no |
@@ -179,23 +195,3 @@
 | ethereum | `0xfb8b84583da6fd4ebd3b83825c9169519010a7f0` | StrategyHyperliquidSTETH | impl | live | no |
 | ethereum | `0xfbf1d5783e7d12fe2ebdee7c97b3b877dbde44bd` | TestBridgeWithHook | impl | live | no |
 | ethereum | `0xfc38d40277f76a49cf5b512a7361eb1dde36972f` | AssetRouter | impl | live | no |
-
-## Source unavailable (16)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x422d6c77ee640fd4dd87bbacc2bad64e427f9802`
-- base `0x93919784c523f39cacaa98ee0a9d96c3f32b593e`
-- base `0x9ed4b12eddcf7ba4325d7d09e00dfa31d4165add`
-- base `0xb57752ddc2ec2defe9edbb1fdb99db1ca9b0b9b3`
-- bsc `0x067e11ac5471c853aea205b3c1933a5f6367152f`
-- bsc `0x17140b69ffadff9e87bf1d86d99119ee10ad24ff`
-- bsc `0x42a856dbebb97abc1269eab32f3bb40c15102819`
-- bsc `0xe2c6755c10d0b61d8b11dd2851ae8266cea912dc`
-- chain-80094 `0x2a5fc05f71cfc54ddcad19457cee79e3aaf415c9`
-- chain-80094 `0x50198b5e1330753f167f6e0544e4c8af829bc99d`
-- chain-80094 `0x7b4dc4067251b4b5efd653527d6c26a02c85705c`
-- chain-80094 `0x961395ed9960fe5e281585beaa730b99af3ab763`
-- chain-80094 `0xc3827a4bc8224ee2d116637023b124ced6db6e90`
-- chain-80094 `0xd235571526170e7d167040166aae59cb8627abc2`
-- chain-80094 `0xe7041941e9e4f3d12d9eb6d9b228d3781548b126`
-- chain-80094 `0xff21f46bc9d78125705eef6efca62f9420cfdb9b`

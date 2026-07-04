@@ -1,0 +1,18 @@
+{
+  "component": "LiquidatorProxyV1WithAmm-2",
+  "main_contract": "LiquidatorProxyV1WithAmm",
+  "source_file_count": 32,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e106ae5bab0a353fac04325d8e676e82d617f77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

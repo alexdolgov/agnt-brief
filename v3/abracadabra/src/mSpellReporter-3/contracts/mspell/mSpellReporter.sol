@@ -89,7 +89,7 @@ contract mSpellReporter is IResolver{
 
         endpoint.send{value: address(this).balance} (
             destChain,
-            abi.encodePacked(mSpellSender),
+            abi.encodePacked(mSpellSender, address(this)),
             payload,
             payable(this),
             address(0),

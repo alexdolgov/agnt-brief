@@ -12,9 +12,6 @@ library LibsErrorTypes {
     /// @notice thrown when rate data is set to a version that is not implemented
     uint256 internal constant LiquidityCalcs__UnsupportedRateVersion = 70002;
 
-    /// @notice thrown when the calculated borrow rate turns negative. This should never happen.
-    uint256 internal constant LiquidityCalcs__BorrowRateNegative = 70003;
-
     /***********************************|
     |           SafeTransfer            | 
     |__________________________________*/

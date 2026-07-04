@@ -1,0 +1,58 @@
+{
+  "component": "SpokeCircleToken-2",
+  "main_contract": "SpokeCircleToken",
+  "source_file_count": 25,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21c624a73ba4f4f23f8f5c6f3e67161a0be7ecc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5162acbe83d50fae95fb6a9e878a7e6734bf8cfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x61c80ba6f7e284c87d0e9a238b2859b4c33a69dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb7ab35580a6f609b8e9f9cfa28b4a4e9464d7884",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3ef10e94b4309415ebd8c1680ca3a5ee5df9acd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf142db792f60a64c4cfa6becd88a038b33c62df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

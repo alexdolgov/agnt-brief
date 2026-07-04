@@ -1,15 +1,17 @@
 # keep-network — deployments
 
-606 verified deployment(s) across 110 component(s).
+610 verified deployment(s) across 113 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x1293a54e160d1cd7075487898d65266081a15458` | TransparentUpgradeableProxy-8 | proxy | live | no |
+| arbitrum | `0x1293a54e160d1cd7075487898d65266081a15458` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | arbitrum | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` | AdminUpgradeabilityProxy | proxy | live | no |
-| arbitrum | `0xd7cd996a47b3293d4fec2dbcf49692370334d9b7` | TransparentUpgradeableProxy-9 | proxy | live | no |
-| base | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-7 | proxy | live | no |
+| arbitrum | `0xd7cd996a47b3293d4fec2dbcf49692370334d9b7` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| base | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-8 | proxy | live | no |
 | base | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | BeaconProxy | proxy | live | no |
+| base | `0x3e765ebafc46d8b71b798eedd51e95381e474168` | ProxyAdmin-2 | impl | live | no |
 | base | `0x518385dd31289f1000fe6382b0c65df4d1cd3bfc` | GnosisSafeProxyFactory | proxy | live | no |
+| base | `0xe931f1ac6b00400e1dad153e184afee164d2d88b` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | ethereum | `0x01346721418045a6c07b71052e452ef8615e9084` | CommitStore | impl | live | no |
 | ethereum | `0x015381651f240ed6c44122dcba6cf807c9442cd6` | StarkVerifier | impl | live | no |
 | ethereum | `0x0428df02c581e605aabf83005b427b1561b587de` | CommitStore | impl | live | no |
@@ -31,7 +33,7 @@
 | ethereum | `0x13e120f6c8e747983f7aaf0f7731796bfcb0d934` | PrimeFieldElement0 | impl | live | no |
 | ethereum | `0x1807769abe5133c9b41ca6746044b6a1d83f5633` | CommitStore | impl | live | no |
 | ethereum | `0x18084fba666a33d37592fa2633fd49a74dd93a88` | TBTC | impl | live | yes |
-| ethereum | `0x186d048097c7406c64efb0537886e3cae100a1fe` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x186d048097c7406c64efb0537886e3cae100a1fe` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x192292817680196a0215a50b07d1c5e7ab8a8636` | CairoBootloaderProgram | impl | live | no |
 | ethereum | `0x1b0534bc3f43b11ebde71f0fc68cf61df4d7e29d` | RebateStaking | impl | live | yes |
 | ethereum | `0x1bddba5dc2cd6ed3343a8e94d02023cc720533b9` | CommitStore | impl | live | no |
@@ -140,7 +142,7 @@
 | ethereum | `0x7559a84ae7b75f4b0e0e540312a3ec912b2128ca` | TokenPool-3 | impl | live | no |
 | ethereum | `0x7570a2350183b4bdf7ca74fad3fc19048e6437e6` | VendingMachineV3 | impl | live | no |
 | ethereum | `0x758279ce7f54568a149bcdfcc7699e20b1de43e5` | ProxyAdmin | impl | live | no |
-| ethereum | `0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x75a852478792e5a99bc4cdd0adbd97129b0d9799` | TokenPool | impl | live | no |
 | ethereum | `0x75c881c77a36c8233d3c8c77447958f3e2493f7d` | ProxyV5 | impl | live | no |
 | ethereum | `0x75d536eed32f4c8bb39f4b0c992163f5ba49b84e` | EVM2EVMOnRamp | impl | live | no |
@@ -608,13 +610,7 @@
 | ethereum | `0xffbd6b0146c9e16a9f9e77dc8898cbff6e2aa389` | EVM2EVMOnRamp | impl | live | no |
 | ethereum | `0xffbec42c001f0e54924078c6d36412128bbc4330` | EVM2EVMOnRamp | impl | live | no |
 | ethereum | `0xffc7974cd74b95f631f454cd787aac28f0476b44` | StarkVerifier | impl | live | no |
-| polygon | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-5 | proxy | live | no |
-| polygon | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | TransparentUpgradeableProxy-6 | proxy | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x3e765ebafc46d8b71b798eedd51e95381e474168`
-- base `0xe931f1ac6b00400e1dad153e184afee164d2d88b`
-- optimism `0x1293a54e160d1cd7075487898d65266081a15458`
-- optimism `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40`
+| optimism | `0x1293a54e160d1cd7075487898d65266081a15458` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| optimism | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| polygon | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| polygon | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | TransparentUpgradeableProxy-7 | proxy | live | no |

@@ -1,0 +1,18 @@
+{
+  "component": "DolomiteERC20-3",
+  "main_contract": "DolomiteERC20",
+  "source_file_count": 42,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfa7e3cbbc839841d3221a99e174dc06c96524b1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

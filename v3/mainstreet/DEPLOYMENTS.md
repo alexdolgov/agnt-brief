@@ -1,6 +1,6 @@
 # mainstreet — deployments
 
-15 verified deployment(s) across 10 component(s).
+16 verified deployment(s) across 10 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,8 +19,4 @@
 | ethereum | `0x7d4ad0e1161a7407dac817629bceb2e6d7125eab` | ERC1967Proxy | impl | inactive | yes |
 | ethereum | `0x890a5122aa1da30fec4286de7904ff808f0bd74a` | Proxy | proxy | live | yes |
 | ethereum | `0x9054ae85300c7d3a325714fc2f1454d0b7c73a12` | StablePool | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xcf72a84edaae931385e84fb4c2edee07a32822a6`
+| ethereum | `0xcf72a84edaae931385e84fb4c2edee07a32822a6` | Vyper_contract | impl | live | no |

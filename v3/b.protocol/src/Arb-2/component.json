@@ -1,0 +1,18 @@
+{
+  "component": "Arb-2",
+  "main_contract": "Arb",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xceaf62ba209e2fb7990d29c5f5157377d54fc7b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

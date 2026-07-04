@@ -26,4 +26,14 @@ interface IPoolManagerLogic {
   function getFee() external view returns (uint256, uint256, uint256, uint256, uint256);
 
   function minDepositUSD() external view returns (uint256);
+
+  function getEntryFeeInfo()
+    external
+    view
+    returns (uint256 entryFeeNumerator, uint256 poolFeeShareNumerator, uint256 feeDenominator);
+
+  function getExitFeeInfo()
+    external
+    view
+    returns (uint256 exitFeeNumerator, uint256 poolFeeShareNumerator, uint256 feeDenominator);
 }

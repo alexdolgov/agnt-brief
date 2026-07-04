@@ -1,15 +1,23 @@
 {
   "component": "Assistant-2",
   "main_contract": "Assistant",
-  "source_file_count": 21,
-  "deployment_count": 1,
+  "source_file_count": 20,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xff14f91285580aed3733c0b1f3c8b6d04804c5ec",
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7d987b986fba5e0a4247649a2334bb2d4029656c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xa46f2aa9258960ea3f3baa3fefbbca1d490095fc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

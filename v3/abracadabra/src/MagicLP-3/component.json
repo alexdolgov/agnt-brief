@@ -1,7 +1,7 @@
 {
   "component": "MagicLP-3",
   "main_contract": "MagicLP",
-  "source_file_count": 19,
+  "source_file_count": 16,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xdf46f6b1a5f794f21ead4008c7de4e02dc045297",
+      "address": "0x6c843d25a2b0ee3e8844492e891dc7257645023a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

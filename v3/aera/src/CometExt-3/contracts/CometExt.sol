@@ -4,6 +4,15 @@ pragma solidity 0.8.15;
 import "./CometExtInterface.sol";
 
 contract CometExt is CometExtInterface {
+    /** Custom errors **/
+
+    error BadAmount();
+    error BadNonce();
+    error BadSignatory();
+    error InvalidValueS();
+    error InvalidValueV();
+    error SignatureExpired();
+
     /** Public constants **/
 
     /// @notice The major version of this contract

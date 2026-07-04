@@ -2,7 +2,7 @@
   "component": "PriceManagerFactory",
   "main_contract": "PriceManagerFactory",
   "source_file_count": 23,
-  "deployment_count": 3,
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/harvest-finance/harvest/blob/master/audits/LeastAuthority-Harvest.pdf",
@@ -19,22 +19,6 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x0fc2d5046937f10805a7581f0f68984ef3b07609",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6558eb96c61ccb8b23cfa26a6b91facd6a0ab162",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7d49c68cb11f6203178d13b4186d39c454e3fe82",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

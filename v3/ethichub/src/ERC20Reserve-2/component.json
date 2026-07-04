@@ -1,0 +1,26 @@
+{
+  "component": "ERC20Reserve-2",
+  "main_contract": "ERC20Reserve",
+  "source_file_count": 9,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa14b1d7e28c4f9518eb7757ddee35a18423e1567",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xa9a824bd0470d0d00938105986ebfbfa71b28530",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

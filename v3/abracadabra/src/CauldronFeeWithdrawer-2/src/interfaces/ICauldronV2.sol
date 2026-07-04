@@ -10,13 +10,14 @@ interface ICauldronV2 {
 
     function oracleData() external view returns (bytes memory);
 
-    function accrueInfo() external view returns (uint64, uint128, uint64);
-
-    function BORROW_OPENING_FEE() external view returns (uint256);
-
-    function COLLATERIZATION_RATE() external view returns (uint256);
-
-    function LIQUIDATION_MULTIPLIER() external view returns (uint256);
+    function accrueInfo()
+        external
+        view
+        returns (
+            uint64,
+            uint128,
+            uint64
+        );
 
     function totalCollateralShare() external view returns (uint256);
 
@@ -46,24 +47,23 @@ interface ICauldronV2 {
         bytes[] calldata datas
     ) external payable returns (uint256 value1, uint256 value2);
 
-    function addCollateral(address to, bool skim, uint256 share) external;
+    function addCollateral(
+        address to,
+        bool skim,
+        uint256 share
+    ) external;
 
     function removeCollateral(address to, uint256 share) external;
 
     function borrow(address to, uint256 amount) external returns (uint256 part, uint256 share);
 
-    function repay(address to, bool skim, uint256 part) external returns (uint256 amount);
+    function repay(
+        address to,
+        bool skim,
+        uint256 part
+    ) external returns (uint256 amount);
 
     function reduceSupply(uint256 amount) external;
 
     function magicInternetMoney() external view returns (IERC20);
-
-    function liquidate(
-        address[] calldata users,
-        uint256[] calldata maxBorrowParts,
-        address to,
-        address swapper
-    ) external;
-
-    function updateExchangeRate() external returns (bool updated, uint256 rate);
 }

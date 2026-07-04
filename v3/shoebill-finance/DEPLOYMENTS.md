@@ -1,16 +1,29 @@
 # shoebill-finance — deployments
 
-65 verified deployment(s) across 20 component(s).
+92 verified deployment(s) across 26 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| chain-1088 | `0x24e4d6d97ee1fdbec6bcc7a89d6a90fbd68725f9` | JumpRateModelV4 | impl | unknown | yes |
+| chain-1088 | `0x0c5cd500c938cc33e23e7b1fb101ef85da1d7cb7` | TransparentUpgradeableProxy | impl | unknown | no |
+| chain-1088 | `0x24e4d6d97ee1fdbec6bcc7a89d6a90fbd68725f9` | JumpRateModelV4-2 | impl | unknown | yes |
+| chain-1088 | `0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7` | ProxyAdmin | impl | unknown | no |
+| chain-1088 | `0x2b6647f63f6fab5c73e96fbf974f4ed2ab8a4308` | TransparentUpgradeableProxy | impl | unknown | no |
+| chain-1088 | `0x386adca3c7d5c90523287933b05919afcc2883de` | TransparentUpgradeableProxy | impl | unknown | no |
 | chain-1088 | `0x5716093e354bb3c1018a6f7143b875efed58f234` | MetisOracle | impl | unknown | no |
 | chain-1088 | `0x675d672b07effe1a2049080afa9ad23e97d7f32e` | ProtocolLens | impl | unknown | yes |
+| chain-1088 | `0x8ba76ded880583581e2d9d253f16b87ac29fa897` | RewardDistributor-2 | impl | unknown | no |
+| chain-1088 | `0x8bc324ff027e7ee76fc7d2269ad10ed60fcf1169` | CErc20Upgradable | impl | unknown | yes |
+| chain-1088 | `0x9c45db7ef823e208963777d2d3dfb83468c08f41` | CErc20Upgradable-2 | impl | unknown | no |
+| chain-1088 | `0x9dd10b2269709f7369dfbf7bbae2ad3aa53b16c7` | TransparentUpgradeableProxy | impl | unknown | no |
+| chain-1088 | `0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc` | Unitroller | impl | unknown | yes |
 | chain-1088 | `0xa4430fda764b0532122ac8248c0da319d777c4c1` | MetisOracle | impl | unknown | no |
+| chain-1088 | `0xb0eee8dac4e8fa3d73d84101b30ae0fb359b7a2f` | TransparentUpgradeableProxy | impl | unknown | no |
 | chain-1088 | `0xb4bfa069b902c40dad4d289ecdd4a8e9e63b3d52` | ProtocolLens | impl | unknown | yes |
-| chain-1088 | `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23` | JumpRateModelV4 | impl | unknown | yes |
+| chain-1088 | `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23` | JumpRateModelV4-2 | impl | unknown | yes |
+| chain-1088 | `0xb7ed6c062caaacb1a13f317e0a751289280fc306` | Comptroller-2 | impl | unknown | no |
+| chain-1088 | `0xd13be8b716b18265e294831fcb1330d170840bb3` | CEtherUpgradeable-2 | impl | unknown | no |
 | chain-1088 | `0xd5e29651ed9a95ac2551528f3ce43602b3bebed8` | MetisOracle | impl | unknown | no |
+| chain-1088 | `0xd618e338074dec1530890e70b0a62b4669f65eea` | MultiSigWallet | impl | unknown | no |
 | chain-1088 | `0xe89cb93d50d0b2b1256ad1304a683e6dfa671d5a` | MetisOracle | impl | unknown | no |
 | chain-169 | `0x033f5e084a627cc420980ed9b1476c84a92fc5d4` | TransparentUpgradeableProxy | impl | unknown | no |
 | chain-169 | `0x037d45ca2b024a25a6091212761e0757227b60c8` | CEtherUpgradeable | impl | unknown | yes |
@@ -44,6 +57,8 @@
 | chain-169 | `0xa98ec6c5a048e7149a54368b841ea43410009343` | RewardDistributor | impl | unknown | yes |
 | chain-169 | `0xad0856f1a517df866faf69563105c7c073c44446` | RewardDistributor | impl | unknown | yes |
 | chain-169 | `0xad9dcc3c1aea41241cfc25b2978c6aa8b7007d2c` | MantaOracle | impl | unknown | no |
+| chain-169 | `0xb29b295f89d6ab964635e903aa0c52baa9405a85` | JumpRateModelV4 | impl | unknown | no |
+| chain-169 | `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23` | JumpRateModelV4 | impl | unknown | no |
 | chain-169 | `0xc0ef6dea74e54689867fdd5f0ab2202f7d8a0d7b` | TransparentUpgradeableProxy | impl | unknown | no |
 | chain-169 | `0xc27f8366948014a5b8186341b50a6660a5e0ac63` | Comptroller | impl | unknown | yes |
 | chain-169 | `0xcd43a9c159904f59619913728510ba64f94a480d` | TransparentUpgradeableProxy | impl | unknown | no |
@@ -56,49 +71,34 @@
 | chain-169 | `0xf0ea5c53b1c21611a8eee699b9687e83a3ef97a8` | CErc20Upgradable | impl | unknown | yes |
 | chain-169 | `0xff2033181cbf7ee2656d9a527d378930b31c3a42` | TransparentUpgradeableProxy | impl | unknown | no |
 | mode | `0x0c5cd500c938cc33e23e7b1fb101ef85da1d7cb7` | ModeOraclePyth | impl | unknown | no |
+| mode | `0x24e4d6d97ee1fdbec6bcc7a89d6a90fbd68725f9` | JumpRateModelV4-3 | impl | unknown | no |
+| mode | `0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7` | ProxyAdmin | impl | unknown | no |
 | mode | `0x2a9fc6513693c2902d365e0bf4be0bb07e70cec2` | ModeOracle | impl | unknown | no |
 | mode | `0x2b6647f63f6fab5c73e96fbf974f4ed2ab8a4308` | ModeOraclePyth | impl | unknown | no |
 | mode | `0x386adca3c7d5c90523287933b05919afcc2883de` | PythPriceOracleProxy | impl | unknown | no |
 | mode | `0x4403b3de1927264eaedebe48f4e9318045b1782d` | SBLPMode | impl | unknown | no |
+| mode | `0x4d78c6cbdc2316bce415b8801762b59db7f2ffb4` | TransparentUpgradeableProxy | impl | unknown | no |
+| mode | `0x616cffc10f2e7662bfb048afa893d2aca42e0435` | TransparentUpgradeableProxy | impl | unknown | no |
 | mode | `0x675d672b07effe1a2049080afa9ad23e97d7f32e` | ModeOracle | impl | unknown | no |
+| mode | `0x6afb46310631064f3de298e4a3bb29c9179d8a38` | TransparentUpgradeableProxy | impl | unknown | no |
+| mode | `0x80e81348d9386eb4d10c2a32a7458638cd3308df` | TransparentUpgradeableProxy | impl | unknown | no |
 | mode | `0x81a679080b3a03c93e802af7594c1eec8f197761` | CErc20UpgradableMode | impl | unknown | no |
 | mode | `0x85300b83b4848defb3cd404e3d7d16d5476ca751` | CErc20UpgradableMode | impl | unknown | no |
+| mode | `0x8ba76ded880583581e2d9d253f16b87ac29fa897` | RewardDistributor-2 | impl | unknown | no |
+| mode | `0x8eea9ed0d547457fef88fbf459bf8a18fb04d277` | TransparentUpgradeableProxy | impl | unknown | no |
 | mode | `0x91995e005fa932a6e033281cfa7495d940b31716` | CErc20UpgradableMode | impl | unknown | no |
 | mode | `0x9aa41c6407db60dfda72b1e60bac81914a5a851e` | ModeOracle | impl | unknown | no |
+| mode | `0x9dd10b2269709f7369dfbf7bbae2ad3aa53b16c7` | TransparentUpgradeableProxy | impl | unknown | no |
 | mode | `0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc` | CErc20UpgradableMode | impl | unknown | no |
 | mode | `0xb762b8da36b59f7df9aee066a364c08aac746dbf` | CEtherUpgradeableMode | impl | unknown | no |
+| mode | `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23` | JumpRateModelV4-3 | impl | unknown | no |
 | mode | `0xb7ed6c062caaacb1a13f317e0a751289280fc306` | CErc20UpgradableMode | impl | unknown | no |
 | mode | `0xba2222a8a3ff763f99d9486d176418ae4618a2d6` | ModeOracle | impl | unknown | no |
+| mode | `0xd13be8b716b18265e294831fcb1330d170840bb3` | TransparentUpgradeableProxy | impl | unknown | no |
+| mode | `0xd2604dc37a0fc8a15ab3c95b36cff18c94f66dab` | TransparentUpgradeableProxy | impl | unknown | no |
 
-## Source unavailable (29)
+## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- chain-1088 `0x0c5cd500c938cc33e23e7b1fb101ef85da1d7cb7`
-- chain-1088 `0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7`
-- chain-1088 `0x2b6647f63f6fab5c73e96fbf974f4ed2ab8a4308`
-- chain-1088 `0x386adca3c7d5c90523287933b05919afcc2883de`
-- chain-1088 `0x8ba76ded880583581e2d9d253f16b87ac29fa897`
-- chain-1088 `0x8bc324ff027e7ee76fc7d2269ad10ed60fcf1169`
-- chain-1088 `0x9c45db7ef823e208963777d2d3dfb83468c08f41`
-- chain-1088 `0x9dd10b2269709f7369dfbf7bbae2ad3aa53b16c7`
-- chain-1088 `0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc`
-- chain-1088 `0xb0eee8dac4e8fa3d73d84101b30ae0fb359b7a2f`
-- chain-1088 `0xb7ed6c062caaacb1a13f317e0a751289280fc306`
-- chain-1088 `0xd13be8b716b18265e294831fcb1330d170840bb3`
-- chain-1088 `0xd618e338074dec1530890e70b0a62b4669f65eea`
-- chain-169 `0xb29b295f89d6ab964635e903aa0c52baa9405a85`
-- chain-169 `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23`
-- mode `0x24e4d6d97ee1fdbec6bcc7a89d6a90fbd68725f9`
-- mode `0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7`
-- mode `0x4d78c6cbdc2316bce415b8801762b59db7f2ffb4`
-- mode `0x616cffc10f2e7662bfb048afa893d2aca42e0435`
-- mode `0x6afb46310631064f3de298e4a3bb29c9179d8a38`
-- mode `0x80e81348d9386eb4d10c2a32a7458638cd3308df`
-- mode `0x8ba76ded880583581e2d9d253f16b87ac29fa897`
-- mode `0x8eea9ed0d547457fef88fbf459bf8a18fb04d277`
-- mode `0x9dd10b2269709f7369dfbf7bbae2ad3aa53b16c7`
-- mode `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23`
-- mode `0xd13be8b716b18265e294831fcb1330d170840bb3`
-- mode `0xd2604dc37a0fc8a15ab3c95b36cff18c94f66dab`
 - mode `0xe89cb93d50d0b2b1256ad1304a683e6dfa671d5a`
 - mode `0xeb4090ed525cb45cde8f0e5846f845192789202a`

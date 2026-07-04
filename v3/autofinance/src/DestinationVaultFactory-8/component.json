@@ -1,0 +1,18 @@
+{
+  "component": "DestinationVaultFactory-8",
+  "main_contract": "DestinationVaultFactory",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x618273975be7c43601e500dbc59a28cc2367520f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

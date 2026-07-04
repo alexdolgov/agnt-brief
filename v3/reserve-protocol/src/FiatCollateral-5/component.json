@@ -1,44 +1,39 @@
 {
   "component": "FiatCollateral-5",
   "main_contract": "FiatCollateral",
-  "source_file_count": 53,
+  "source_file_count": 52,
   "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%20-%20April%2025%202024.pdf",
-    "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%203.4.0.pdf",
-    "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol.pdf",
-    "https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%20Report%203_1_0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2387c22727acb91519b80a15aef393ad40dfdb2f",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7504ed02f3f151df241ec2eb0bf1a9601fcb012a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x5f471bde4950cdb00714a6dd033ca7f912a4f9ee",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a65173df5d5b86e26300cc9ca5ff378be6daea5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x6a0fc14d21247d4fdf7e12ebe22307687b7750fb",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbbf50a582cc03cbbc7e228dc3196091301348b0e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x98f292e6bb4722664feffb81448ccfb5b7211469",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc0dc981001b6673f615978b63818fd1f6b0ff98",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

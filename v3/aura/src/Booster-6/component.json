@@ -1,7 +1,7 @@
 {
   "component": "Booster-6",
   "main_contract": "Booster",
-  "source_file_count": 12,
+  "source_file_count": 46,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd8bd5cdd145ed2197cb16ddb172df954e3f28659",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc181edc719480bd089b94647c2dc504e2700a2b0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

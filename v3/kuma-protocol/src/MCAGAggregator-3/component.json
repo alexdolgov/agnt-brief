@@ -1,0 +1,18 @@
+{
+  "component": "MCAGAggregator-3",
+  "main_contract": "MCAGAggregator",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7e86bce025339a77236adacd4af51f1ebbbbdd94",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

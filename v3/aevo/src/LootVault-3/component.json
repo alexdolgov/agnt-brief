@@ -1,0 +1,26 @@
+{
+  "component": "LootVault-3",
+  "main_contract": "LootVault",
+  "source_file_count": 6,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x87afc932a440bac07a50aed721eb04f4859a63a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x97c78339c953233c98f016fe5f93918154a12765",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

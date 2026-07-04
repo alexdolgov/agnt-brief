@@ -150,6 +150,4 @@ interface IDolomiteOwner is IAccessControl {
     ) external view returns (bool);
 
     function transactionCount() external view returns (uint256);
-
-    function secondsTimeLocked() external view returns (uint32);
 }

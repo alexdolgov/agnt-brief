@@ -15,3 +15,14 @@ interface INativeTreasury {
 
     function token1() external view returns (address);
 }
+
+interface INativeTreasuryV2 {
+    function postSwapCallback(
+        address signer,
+        address sellerToken,
+        int256 amount0Delta,
+        address buyerToken,
+        int256 amount1Delta
+    ) external;
+}
+

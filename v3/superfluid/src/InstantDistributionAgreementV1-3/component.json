@@ -1,0 +1,58 @@
+{
+  "component": "InstantDistributionAgreementV1-3",
+  "main_contract": "InstantDistributionAgreementV1",
+  "source_file_count": 34,
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa2b295c321265d9b9ee4ba13f3e666258a0db563",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xaaeb86810bde1087737ca5dfcbd78fb1fb05c9fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd73afbe2c076bf9aece8befabe455be67cb77b5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x85eb36dcb5c039edd37f8859dc09756ac3a06def",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8ce0ec4951249d3323e0dd4653b30d16c53568bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xac4ef44848b6ae6bedd12e0e3f806caf4d333cdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

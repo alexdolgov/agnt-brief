@@ -1,0 +1,26 @@
+{
+  "component": "MarginCalculator-2",
+  "main_contract": "MarginCalculator",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2c726a7da5500bd59a488e0065c41822bb46b337",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbd5a1dc654b5476b94f81755e68d1c8f0aac2afd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

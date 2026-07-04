@@ -2,13 +2,21 @@
   "component": "KUMABondToken",
   "main_contract": "KUMABondToken",
   "source_file_count": 18,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://code4rena.com/reports/2023-02-kuma",
     "https://github.com/code-423n4/2023-02-kuma"
   ],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4bd547ac3adebe3bc15d8257b28b2bef7512f389",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

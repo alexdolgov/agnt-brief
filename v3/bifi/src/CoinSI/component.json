@@ -1,7 +1,7 @@
 {
   "component": "CoinSI",
   "main_contract": "CoinSI",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x0a58f7955497b9e56d1328512e1ca427d689f577",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x320c3391d1dc3d36e0e1da26809db9e0463517c7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

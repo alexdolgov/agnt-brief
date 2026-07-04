@@ -9,7 +9,7 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
+      "address": "0x3630bdb1ac7cf8a435411391db75450350814f42",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

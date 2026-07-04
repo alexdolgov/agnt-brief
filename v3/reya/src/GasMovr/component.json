@@ -1,15 +1,31 @@
 {
   "component": "GasMovr",
   "main_contract": "GasMovr",
-  "source_file_count": 6,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x5800249621da520adfdca16da20d8a5fc0f814d8",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb584d4be1a5470ca1a8778e9b86c81e165204599",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xac313d7491910516e06fbfc2a0b5bb49bb072d91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0e02aa55d10e38855e13b64a8e1387a04681a00",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "SignedOperationProxy-3",
+  "main_contract": "SignedOperationProxy",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3d28c55ebda31f811f43a7601f36f420825531b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

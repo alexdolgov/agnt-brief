@@ -1,0 +1,18 @@
+{
+  "component": "PrizePool-8",
+  "main_contract": "PrizePool",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x146efc8d651dc015225cc2e74707d87aa4d09067",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

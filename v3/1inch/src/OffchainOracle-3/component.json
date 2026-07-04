@@ -1,0 +1,18 @@
+{
+  "component": "OffchainOracle-3",
+  "main_contract": "OffchainOracle",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x080ab73787a8b13ec7f40bd7d00d6cc07f9b24d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

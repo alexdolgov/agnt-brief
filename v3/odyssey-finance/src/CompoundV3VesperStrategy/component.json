@@ -1,17 +1,25 @@
 {
   "component": "CompoundV3VesperStrategy",
   "main_contract": "CompoundV3VesperStrategy",
-  "source_file_count": 34,
-  "deployment_count": 1,
+  "source_file_count": 30,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://3883616881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqoKcdbT2jNpuAI4A3RLd%2Fuploads%2FfUYd8p9pJEcVmjIGTTJ6%2FAudit_Report_Odyssey_REVIEW.pdf"
   ],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x249a626498281ee7f172c307d4b0db4de2a08bbb",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xab890edfc63959a2b3794800b4f68f608b0827c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xab890edfc63959a2b3794800b4f68f608b0827c3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

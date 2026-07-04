@@ -10,7 +10,6 @@ interface IMultiAccount {
 		string name;
 	}
 	event SetAccountImplementation(bytes oldAddress, bytes newAddress);
-	event SetAccountsAdmin(address oldAddress, address newAddress);
 	event SetSymmioAddress(address oldAddress, address newAddress);
 	event DeployContract(address sender, address contractAddress);
 	event AddAccount(address user, address account, string name);

@@ -1,0 +1,18 @@
+{
+  "component": "BitVMBridgeV4-4",
+  "main_contract": "BitVMBridgeV4",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x19438c6b7d59bcc5e779825abe770e15cd13207c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UniswapV3Factory-3",
+  "main_contract": "UniswapV3Factory",
+  "source_file_count": 33,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x917933899c6a5f8e37f31e19f92cdbff7e8ff0e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "CallbackHandlerReader-2",
+  "main_contract": "CallbackHandlerReader",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6966d64e13a4d454025b94b73adfb30fd1efedba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

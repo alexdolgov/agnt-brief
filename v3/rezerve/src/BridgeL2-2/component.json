@@ -2,7 +2,7 @@
   "component": "BridgeL2-2",
   "main_contract": "BridgeL2",
   "source_file_count": 39,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa202dbeee430924dc4f4630204a700e6b50edb4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

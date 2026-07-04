@@ -1,0 +1,18 @@
+{
+  "component": "sePSP2-2",
+  "main_contract": "sePSP2",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x593f39a4ba26a9c8ed2128ac95d109e8e403c485",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

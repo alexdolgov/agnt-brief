@@ -2,7 +2,7 @@
   "component": "TickLens",
   "main_contract": "TickLens",
   "source_file_count": 9,
-  "deployment_count": 18,
+  "deployment_count": 19,
   "audited": true,
   "audits_covering": [
     "https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf"
@@ -140,6 +140,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xff4432327f85b767b421730f56bd941d5bc8e39d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5fbd88f04963c25e51ccae20951f815577a234c9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

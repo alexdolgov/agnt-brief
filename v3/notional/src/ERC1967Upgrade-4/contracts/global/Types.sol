@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: BSUL-1.1
+// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity >=0.7.6;
 pragma abicoder v2;
 
-import "../../interfaces/chainlink/AggregatorV2V3Interface.sol";
-import "../../interfaces/notional/IPrimeCashHoldingsOracle.sol";
-import "../../interfaces/notional/AssetRateAdapter.sol";
+import "@interfaces/chainlink/AggregatorV2V3Interface.sol";
+import "@interfaces/notional/IPrimeCashHoldingsOracle.sol";
+import "@interfaces/notional/AssetRateAdapter.sol";
 
 /// @notice Different types of internal tokens
 ///  - UnderlyingToken: underlying asset for a cToken (except for Ether)
@@ -319,23 +319,25 @@ struct CashGroupSettings {
     uint8 maxMarketIndex;
     // Time window in 5 minute increments that the rate oracle will be averaged over
     uint8 rateOracleTimeWindow5Min;
-    // Absolute maximum discount factor as a discount from 1e9, specified in five basis points
-    // subtracted from 1e9
-    uint8 maxDiscountFactor5BPS;
+    // Total fees per trade, specified in BPS
+    uint8 totalFeeBPS;
     // Share of the fees given to the protocol, denominated in percentage
     uint8 reserveFeeShare;
     // Debt buffer specified in 5 BPS increments
-    uint8 debtBuffer25BPS;
+    uint8 debtBuffer5BPS;
     // fCash haircut specified in 5 BPS increments
-    uint8 fCashHaircut25BPS;
-    // Minimum oracle interest rates for fCash per market, specified in 25 bps increments
-    uint8 minOracleRate25BPS;
+    uint8 fCashHaircut5BPS;
+    // If an account has a negative cash balance, it can be settled by incurring debt at the 3 month market. This
+    // is the basis points for the penalty rate that will be added the current 3 month oracle rate.
+    uint8 settlementPenaltyRate5BPS;
     // If an account has fCash that is being liquidated, this is the discount that the liquidator can purchase it for
-    uint8 liquidationfCashHaircut25BPS;
+    uint8 liquidationfCashHaircut5BPS;
     // If an account has fCash that is being liquidated, this is the discount that the liquidator can purchase it for
-    uint8 liquidationDebtBuffer25BPS;
-    // Max oracle rate specified in 25bps increments as a discount from the max rate in the market.
-    uint8 maxOracleRate25BPS;
+    uint8 liquidationDebtBuffer5BPS;
+    // Liquidity token haircut applied to cash claims, specified as a percentage between 0 and 100
+    uint8[] liquidityTokenHaircuts;
+    // Rate scalar used to determine the slippage of the market
+    uint8[] rateScalars;
 }
 
 /// @dev Holds account level context information used to determine settlement and
@@ -374,9 +376,9 @@ struct nTokenContext {
     // currently holds
     uint8 assetArrayLength;
     // Each byte is a specific nToken parameter
-    bytes6 nTokenParameters;
+    bytes5 nTokenParameters;
     // Reserved bytes for future usage
-    bytes14 _unused;
+    bytes15 _unused;
     // Set to true if a secondary rewarder is set
     bool hasSecondaryRewarder;
 }
@@ -450,13 +452,12 @@ struct InterestRateCurveSettings {
     // Interest rate at the second kink, set as 1/256 units from the kink
     // rate max
     uint8 kinkRate2;
-    // Max interest rate, set in units in 25bps increments less than or equal to 150
-    // and 150bps increments from 151 to 255.
-    uint8 maxRateUnits;
+    // Max interest rate, set in 25 bps increments
+    uint8 maxRate25BPS;
     // Minimum fee charged in basis points
-    uint8 minFeeRate5BPS;
+    uint8 minFeeRateBPS;
     // Maximum fee charged in basis points
-    uint8 maxFeeRate25BPS;
+    uint8 maxFeeRateBPS;
     // Percentage of the interest rate that will be applied as a fee
     uint8 feeRatePercent;
 }
@@ -511,28 +512,12 @@ struct AccountBalance {
 }
 
 struct VaultConfigParams {
-    uint16 flags;
-    uint16 borrowCurrencyId;
-    uint256 minAccountBorrowSize;
-    uint16 minCollateralRatioBPS;
-    uint8 feeRate5BPS;
-    uint8 liquidationRate;
-    uint8 reserveFeeShare;
-    uint8 maxBorrowMarketIndex;
-    uint16 maxDeleverageCollateralRatioBPS;
-    uint16[2] secondaryBorrowCurrencies;
-    uint16 maxRequiredAccountCollateralRatioBPS;
-    uint256[2] minAccountSecondaryBorrow;
-    uint8 excessCashLiquidationBonus;
-}
-
-struct VaultConfigStorage {
     // Vault Flags (documented in VaultConfiguration.sol)
     uint16 flags;
     // Primary currency the vault borrows in
     uint16 borrowCurrencyId;
     // Specified in whole tokens in 1e8 precision, allows a 4.2 billion min borrow size
-    uint32 minAccountBorrowSize;
+    uint256 minAccountBorrowSize;
     // Minimum collateral ratio for a vault specified in basis points, valid values are greater than 10_000
     // where the largest minimum collateral ratio is 65_536 which is much higher than anything reasonable.
     uint16 minCollateralRatioBPS;
@@ -552,11 +537,10 @@ struct VaultConfigStorage {
     // from "free riding" on vaults. Enforced on entry and exit, not on deleverage.
     uint16 maxRequiredAccountCollateralRatioBPS;
     // Specified in whole tokens in 1e8 precision, allows a 4.2 billion min borrow size
-    uint32[2] minAccountSecondaryBorrow;
+    uint256[2] minAccountSecondaryBorrow;
     // Specified as a percent discount off the exchange rate of the excess cash that will be paid to
     // the liquidator during liquidateExcessVaultCash
     uint8 excessCashLiquidationBonus;
-    // 8 bytes left
 }
 
 struct VaultBorrowCapacityStorage {
@@ -593,7 +577,6 @@ struct VaultConfig {
     PrimeRate primeRate;
     int256 maxRequiredAccountCollateralRatio;
     int256[2] minAccountSecondaryBorrow;
-    int256 excessCashLiquidationBonus;
 }
 
 /// @notice Represents a Vault's current borrow and collateral state
@@ -685,9 +668,8 @@ struct VaultAccountHealthFactors {
     // Total value of vault shares in underlying denomination
     int256 vaultShareValueUnderlying;
     // Debt outstanding in local currency denomination after present value and
-    // account cash held netting applied. Can be positive if the account holds cash
-    // in excess of debt.
-    int256[3] netDebtOutstanding;
+    // account cash held netting applied
+    int256[3] debtOutstanding;
 }
 
 // PrimeCashInterestRateParameters take up 16 bytes, this takes up 32 bytes so we
@@ -707,10 +689,7 @@ struct PrimeCashFactorsStorage {
     // gives us approx 7 digits of precision for each value. Because these are used
     // to maintain supply and borrow caps, they are not required to be exact.
     uint32 maxUnderlyingSupply;
-    // The maximum utilization that prime debt is allowed to reach by users borrowing prime
-    // debt via the markets directly. This cap is not applied to liquidations and settlement.
-    uint8 maxPrimeDebtUtilization;
-    uint120 _reserved;
+    uint128 _reserved;
     // Reserving the next 128 bytes for future use in case we decide to implement debt
     // caps on a currency. In that case, we will need to track the total fcash overall
     // and subtract the total debt held in vaults.
@@ -765,12 +744,14 @@ struct PrimeCashHoldingsOracle {
 
 // Per currency rebalancing context
 struct RebalancingContextStorage {
-    // Holds the previous supply factor to calculate the oracle money market rate
-    uint128 previousSupplyFactorAtRebalance;
+    // Holds the previous underlying scalar to calculate the oracle money market rate
+    uint80 previousUnderlyingScalarAtRebalance;
     // Rebalancing has a cool down period that sets the time averaging of the oracle money market rate
     uint40 rebalancingCooldownInSeconds;
     uint40 lastRebalanceTimestampInSeconds;
-    // 48 bytes left
+    // The annualized underlying money market interest rate calculated based on the underlying scalar
+    uint32 oracleMoneyMarketRate;
+    // 64 bytes left
 }
 
 struct TotalfCashDebtStorage {
@@ -779,42 +760,4 @@ struct TotalfCashDebtStorage {
     // edge conditions for leveraged vaults.
     uint80 fCashDebtHeldInSettlementReserve;
     uint80 primeCashHeldInSettlementReserve;
-}
-
-struct RebalancingTargetData {
-    uint8 targetUtilization;
-    uint16 externalWithdrawThreshold;
-}
-
-struct StoredOrder {
-    bool hasBeenSeen;
-    int256 remainingUnderlyingAmount;
-}
-
-enum FundingSourceType {
-    Invalid,
-    ERC4626,
-    AaveV3
-}
-
-struct OrderBookFundingSourceStorage {
-    FundingSourceType fundingSourceType;
-}
-
-struct OrderBookVolumeCounterStorage {
-    uint128 totalVolume;
-    uint128 maxVolume;
-}
-
-struct LimitOrder {
-    address maker;
-    address source;
-    uint16 currencyId;
-    uint256 maturity;
-    uint256 expiration;
-    int256 underlyingAmount;
-    uint256 interestRate;
-    address[] validInstances;
-    bytes signature;
-    int256 takerUnderlyingAmount;
 }

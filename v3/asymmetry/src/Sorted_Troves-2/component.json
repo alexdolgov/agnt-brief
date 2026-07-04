@@ -1,0 +1,18 @@
+{
+  "component": "Sorted_Troves-2",
+  "main_contract": "Sorted Troves",
+  "source_file_count": 2,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff1ce633646ca7fa3eb9c79a5dda340564afafb6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

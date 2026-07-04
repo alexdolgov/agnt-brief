@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Etherscan.io on 2020-07-29
+*/
+
 pragma solidity ^0.4.24;
 contract ErrorReporter {
 
@@ -397,7 +401,7 @@ contract PriceOracle is Exponential {
       */
     bool public paused;
 
-    uint public constant numBlocksPerPeriod = 1200; // approximately 1 hour: 60 seconds/minute * 60 minutes/hour * 1 block/15 seconds
+    uint public constant numBlocksPerPeriod = 240; // approximately 1 hour: 60 seconds/minute * 60 minutes/hour * 1 block/15 seconds
 
     uint public constant maxSwingMantissa = (10 ** 17); // 0.1
 

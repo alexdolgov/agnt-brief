@@ -1,0 +1,18 @@
+{
+  "component": "EulerV2SupplyFuse-3",
+  "main_contract": "EulerV2SupplyFuse",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x598326fcede2c1b8e9023a20c18fff6dea5306a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

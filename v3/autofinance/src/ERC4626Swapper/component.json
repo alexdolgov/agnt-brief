@@ -1,31 +1,63 @@
 {
   "component": "ERC4626Swapper",
   "main_contract": "ERC4626Swapper",
-  "source_file_count": 66,
-  "deployment_count": 3,
+  "source_file_count": 62,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1dfb5041c3f594caef41bcec02f3a9af47ae8c88",
+      "address": "0x2386c9e85f141104c16a4b765edf73752474105f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfbc60c7134f0a4efe9a5b3b675552eb89a39b895",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x9186ea24b87deee4e93a6260d3be31819d82617d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xffebb3fba5b04253dfc34af690d045646b4d959f",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xed5dc10000c06ceaa7f0a5a3ea3ce06ad6272d93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x98a216c534b7eaada6d5642a9ca69393360e339a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe1a08bf9ef02a869eabf2585cbca50e898799213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x268cbbc41d74618505982e83885baaae02161a03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x3f962ecd4edb29422aa07e456ec2bc7067acc328",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

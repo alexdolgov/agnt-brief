@@ -1,0 +1,26 @@
+{
+  "component": "GuardedGovernor-5",
+  "main_contract": "GuardedGovernor",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2a00278f7f9d9196368f20f98dd9756e0d72dd81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe58917fbd852c0d233e42235b6c7aa4520c89a4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

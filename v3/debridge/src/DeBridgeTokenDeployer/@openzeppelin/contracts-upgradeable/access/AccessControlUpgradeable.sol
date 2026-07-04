@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// OpenZeppelin Contracts v4.4.0 (access/AccessControl.sol)
 
 pragma solidity ^0.8.0;
 
@@ -159,7 +160,7 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * purpose is to provide a mechanism for accounts to lose their privileges
      * if they are compromised (such as when a trusted device is misplaced).
      *
-     * If the calling account had been granted `role`, emits a {RoleRevoked}
+     * If the calling account had been revoked `role`, emits a {RoleRevoked}
      * event.
      *
      * Requirements:
@@ -187,6 +188,8 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * Using this function in any other way is effectively circumventing the admin
      * system imposed by {AccessControl}.
      * ====
+     *
+     * NOTE: This function is deprecated in favor of {_grantRole}.
      */
     function _setupRole(bytes32 role, address account) internal virtual {
         _grantRole(role, account);
@@ -203,14 +206,24 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
         emit RoleAdminChanged(role, previousAdminRole, adminRole);
     }
 
-    function _grantRole(bytes32 role, address account) private {
+    /**
+     * @dev Grants `role` to `account`.
+     *
+     * Internal function without access restriction.
+     */
+    function _grantRole(bytes32 role, address account) internal virtual {
         if (!hasRole(role, account)) {
             _roles[role].members[account] = true;
             emit RoleGranted(role, account, _msgSender());
         }
     }
 
-    function _revokeRole(bytes32 role, address account) private {
+    /**
+     * @dev Revokes `role` from `account`.
+     *
+     * Internal function without access restriction.
+     */
+    function _revokeRole(bytes32 role, address account) internal virtual {
         if (hasRole(role, account)) {
             _roles[role].members[account] = false;
             emit RoleRevoked(role, account, _msgSender());

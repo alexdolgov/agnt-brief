@@ -1,12 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity 0.8.19;
 
-import "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol";
-
 import "../libraries/RescueFundsLib.sol";
 import "../utils/AccessControl.sol";
 import "../interfaces/ISocket.sol";
-import "../interfaces/ICapacitor.sol";
 import "../switchboard/default-switchboards/FastSwitchboard.sol";
 import "../interfaces/INativeRelay.sol";
 import {RESCUE_ROLE} from "../utils/AccessRoles.sol";
@@ -18,9 +15,6 @@ import {RESCUE_ROLE} from "../utils/AccessRoles.sol";
  * @dev This contract uses the AccessControl contract for managing role-based access control.
  */
 contract SocketBatcher is AccessControl {
-    address constant MOCK_ETH_ADDRESS =
-        0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
-
     /*
      * @notice Constructs the SocketBatcher contract and grants the RESCUE_ROLE to the contract deployer.
      * @param owner_ The address of the contract deployer, who will be granted the RESCUE_ROLE.
@@ -78,7 +72,6 @@ contract SocketBatcher is AccessControl {
      * @param signature The signature of the packet data.
      */
     struct AttestRequest {
-        address switchboard;
         bytes32 packetId;
         uint256 proposalCount;
         bytes32 root;
@@ -266,51 +259,16 @@ contract SocketBatcher is AccessControl {
      * @param socketAddress_ address of socket
      * @param sealRequests_ the list of requests with packets to be sealed on sourceChain
      */
-    function _sealBatch(
+    function sealBatch(
         address socketAddress_,
         SealRequest[] calldata sealRequests_
-    ) internal {
+    ) external {
         uint256 sealRequestLength = sealRequests_.length;
         for (uint256 index = 0; index < sealRequestLength; ) {
             ISocket(socketAddress_).seal(
                 sealRequests_[index].batchSize,
                 sealRequests_[index].capacitorAddress,
                 sealRequests_[index].signature
-            );
-            unchecked {
-                ++index;
-            }
-        }
-    }
-
-    /**
-     * @notice seal a batch of packets from capacitor on sourceChain mentioned in sealRequests
-     * @param socketAddress_ address of socket
-     * @param sealRequests_ the list of requests with packets to be sealed on sourceChain
-     */
-    function sealBatch(
-        address socketAddress_,
-        SealRequest[] calldata sealRequests_
-    ) external {
-        _sealBatch(socketAddress_, sealRequests_);
-    }
-
-    /**
-     * @notice propose a batch of packets sequentially by socketDestination
-     * @param socketAddress_ address of socket
-     * @param proposeRequests_ the list of requests with packets to be proposed by socketDestination
-     */
-    function _proposeBatch(
-        address socketAddress_,
-        ProposeRequest[] calldata proposeRequests_
-    ) internal {
-        uint256 proposeRequestLength = proposeRequests_.length;
-        for (uint256 index = 0; index < proposeRequestLength; ) {
-            ISocket(socketAddress_).proposeForSwitchboard(
-                proposeRequests_[index].packetId,
-                proposeRequests_[index].root,
-                proposeRequests_[index].switchboard,
-                proposeRequests_[index].signature
             );
             unchecked {
                 ++index;
@@ -327,21 +285,13 @@ contract SocketBatcher is AccessControl {
         address socketAddress_,
         ProposeRequest[] calldata proposeRequests_
     ) external {
-        _proposeBatch(socketAddress_, proposeRequests_);
-    }
-
-    /**
-     * @notice attests a batch of Packets
-     * @param attestRequests_ the list of requests with packets to be attested by switchboard in sequence
-     */
-    function _attestBatch(AttestRequest[] calldata attestRequests_) internal {
-        uint256 attestRequestLength = attestRequests_.length;
-        for (uint256 index = 0; index < attestRequestLength; ) {
-            FastSwitchboard(attestRequests_[index].switchboard).attest(
-                attestRequests_[index].packetId,
-                attestRequests_[index].proposalCount,
-                attestRequests_[index].root,
-                attestRequests_[index].signature
+        uint256 proposeRequestLength = proposeRequests_.length;
+        for (uint256 index = 0; index < proposeRequestLength; ) {
+            ISocket(socketAddress_).proposeForSwitchboard(
+                proposeRequests_[index].packetId,
+                proposeRequests_[index].root,
+                proposeRequests_[index].switchboard,
+                proposeRequests_[index].signature
             );
             unchecked {
                 ++index;
@@ -351,30 +301,25 @@ contract SocketBatcher is AccessControl {
 
     /**
      * @notice attests a batch of Packets
+     * @param switchboardAddress_ address of switchboard
      * @param attestRequests_ the list of requests with packets to be attested by switchboard in sequence
      */
-    function attestBatch(AttestRequest[] calldata attestRequests_) external {
-        _attestBatch(attestRequests_);
-    }
-
-    /**
-     * @notice send a batch of propose, attest and execute transactions
-     * @param socketAddress_ address of socket
-     * @param proposeRequests_ the list of requests with packets to be proposed
-     * @param attestRequests_ the list of requests with packets to be attested by switchboard
-     * @param executeRequests_ the list of requests with messages to be executed
-     */
-    function sendBatch(
-        address socketAddress_,
-        SealRequest[] calldata sealRequests_,
-        ProposeRequest[] calldata proposeRequests_,
-        AttestRequest[] calldata attestRequests_,
-        ExecuteRequest[] calldata executeRequests_
-    ) external payable {
-        _sealBatch(socketAddress_, sealRequests_);
-        _proposeBatch(socketAddress_, proposeRequests_);
-        _attestBatch(attestRequests_);
-        _executeBatch(socketAddress_, executeRequests_);
+    function attestBatch(
+        address switchboardAddress_,
+        AttestRequest[] calldata attestRequests_
+    ) external {
+        uint256 attestRequestLength = attestRequests_.length;
+        for (uint256 index = 0; index < attestRequestLength; ) {
+            FastSwitchboard(switchboardAddress_).attest(
+                attestRequests_[index].packetId,
+                attestRequests_[index].proposalCount,
+                attestRequests_[index].root,
+                attestRequests_[index].signature
+            );
+            unchecked {
+                ++index;
+            }
+        }
     }
 
     /**
@@ -413,10 +358,10 @@ contract SocketBatcher is AccessControl {
      * @param socketAddress_ address of socket
      * @param executeRequests_ the list of requests with messages to be executed in sequence
      */
-    function _executeBatch(
+    function executeBatch(
         address socketAddress_,
         ExecuteRequest[] calldata executeRequests_
-    ) internal {
+    ) external payable {
         uint256 executeRequestLength = executeRequests_.length;
         uint256 totalMsgValue = msg.value;
         for (uint256 index = 0; index < executeRequestLength; ) {
@@ -445,18 +390,6 @@ contract SocketBatcher is AccessControl {
     }
 
     /**
-     * @notice executes a batch of messages
-     * @param socketAddress_ address of socket
-     * @param executeRequests_ the list of requests with messages to be executed in sequence
-     */
-    function executeBatch(
-        address socketAddress_,
-        ExecuteRequest[] calldata executeRequests_
-    ) external payable {
-        _executeBatch(socketAddress_, executeRequests_);
-    }
-
-    /**
      * @notice invoke receive Message on PolygonRootReceiver for a batch of messages in loop
      * @param polygonRootReceiverAddress_ address of polygonRootReceiver
      * @param receivePacketProofs_ the list of receivePacketProofs to be sent to receiveHook of polygonRootReceiver
@@ -474,54 +407,6 @@ contract SocketBatcher is AccessControl {
                 ++index;
             }
         }
-    }
-
-    /**
-     * @notice returns latest proposalCounts for list of packetIds
-     * @param socketAddress_ address of socket
-     * @param packetIds_ the list of packetIds
-     */
-    function getProposalCountBatch(
-        address socketAddress_,
-        bytes32[] calldata packetIds_
-    ) external view returns (uint256[] memory) {
-        uint256 packetIdsLength = packetIds_.length;
-
-        uint256[] memory proposalCounts = new uint256[](packetIdsLength);
-
-        for (uint256 index = 0; index < packetIdsLength; ) {
-            uint256 proposalCount = ISocket(socketAddress_).proposalCount(
-                packetIds_[index]
-            );
-            proposalCounts[index] = proposalCount;
-            unchecked {
-                ++index;
-            }
-        }
-        return proposalCounts;
-    }
-
-    /**
-     * @notice returns root for capacitorAddress and count
-     * @param capacitorAddresses_ addresses of capacitor
-     * @param packetCounts_ the list of packetCounts
-     */
-    function getPacketRootBatch(
-        address[] calldata capacitorAddresses_,
-        uint64[] calldata packetCounts_
-    ) external view returns (bytes32[] memory) {
-        uint256 capacitorAddressesLength = capacitorAddresses_.length;
-
-        bytes32[] memory packetRoots = new bytes32[](capacitorAddressesLength);
-
-        for (uint256 index = 0; index < capacitorAddressesLength; ) {
-            packetRoots[index] = ICapacitor(capacitorAddresses_[index])
-                .getRootByCount(packetCounts_[index]);
-            unchecked {
-                ++index;
-            }
-        }
-        return packetRoots;
     }
 
     /**
@@ -588,69 +473,6 @@ contract SocketBatcher is AccessControl {
                 ++index;
             }
         }
-    }
-
-    // RELAYER UTILITY FUNCTIONS
-    function withdrawals(
-        address payable[] memory addresses,
-        uint[] memory amounts
-    ) public payable {
-        uint256 totalAmount;
-        for (uint i; i < addresses.length; i++) {
-            totalAmount += amounts[i];
-            addresses[i].transfer(amounts[i]);
-        }
-
-        require(totalAmount == msg.value, "LOW_MSG_VALUE");
-    }
-
-    /**
-    @dev Check the token balance of a wallet in a token contract
-    Returns the balance of the token for user. Avoids possible errors:
-      - return 0 on non-contract address
-    **/
-    function balanceOf(
-        address user,
-        address token
-    ) public view returns (uint256) {
-        if (token == MOCK_ETH_ADDRESS) {
-            return user.balance; // ETH balance
-        } else {
-            // check if token is actually a contract
-            uint256 size;
-            // solhint-disable-next-line no-inline-assembly
-            assembly {
-                size := extcodesize(token)
-            }
-            if (size > 0) {
-                return IERC20(token).balanceOf(user);
-            }
-        }
-        revert("INVALID_TOKEN");
-    }
-
-    /**
-     * @notice Fetches, for a list of _users and _tokens (ETH included with mock address), the balances
-     * @param users The list of users
-     * @param tokens The list of tokens
-     * @return And array with the concatenation of, for each user, his/her balances
-     **/
-    function batchBalanceOf(
-        address[] calldata users,
-        address[] calldata tokens
-    ) external view returns (uint256[] memory) {
-        uint256[] memory balances = new uint256[](users.length * tokens.length);
-
-        for (uint256 i = 0; i < users.length; i++) {
-            for (uint256 j = 0; j < tokens.length; j++) {
-                balances[i * tokens.length + j] = balanceOf(
-                    users[i],
-                    tokens[j]
-                );
-            }
-        }
-
-        return balances;
     }
 
     /**

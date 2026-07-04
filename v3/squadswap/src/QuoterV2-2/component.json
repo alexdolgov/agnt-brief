@@ -1,20 +1,74 @@
 {
   "component": "QuoterV2-2",
   "main_contract": "QuoterV2",
-  "source_file_count": 21,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf"
-  ],
+  "source_file_count": 25,
+  "deployment_count": 8,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1444037d01234cb4d0c36dadb0cd0534b7cf27fc",
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x061856959b3bbfe9353b2cc157a44ddba5186a3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x59378af882fd1873446560af83000ef3eac9ae42",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x7b8227c3dd6e3df8468bf1621fef1f443e085b5c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x7e983287600aeb2f88943a1f01ed9c1b407c9a88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x7ea21af2920e0d1e17ef82ea9531762f504a14bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x829ce74128ea95c72aa379168df529feaa464aee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xd605072c79c4e7d85174600f59c335420cb713aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0xee8f37d490cb7ea1dae7d080c5738894731299f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

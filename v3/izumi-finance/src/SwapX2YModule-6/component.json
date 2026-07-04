@@ -1,0 +1,18 @@
+{
+  "component": "SwapX2YModule-6",
+  "main_contract": "SwapX2YModule",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe96526e92ee57bbd468da1721987aa988b008768",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

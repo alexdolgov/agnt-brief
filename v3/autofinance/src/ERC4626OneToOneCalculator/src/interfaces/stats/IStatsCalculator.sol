@@ -18,10 +18,7 @@ interface IStatsCalculator {
     /// @dev Should only be executed one time
     /// @param dependentAprIds apr ids that cover the dependencies of this calculator
     /// @param initData setup data specific to this type of calculator
-    function initialize(
-        bytes32[] calldata dependentAprIds,
-        bytes calldata initData
-    ) external;
+    function initialize(bytes32[] calldata dependentAprIds, bytes calldata initData) external;
 
     /// @notice Capture stat data about this setup
     function snapshot() external;
@@ -36,5 +33,6 @@ interface IStatsCalculator {
         tooSoon, // Indicates that it's too soon to take another snapshot since the last one.
         shouldFinalize, // Indicates that the conditions are met for finalizing a snapshot.
         shouldRestart // Indicates that the conditions are met for restarting a snapshot.
+
     }
 }

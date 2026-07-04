@@ -2,10 +2,26 @@
   "component": "DrawBuffer",
   "main_contract": "DrawBuffer",
   "source_file_count": 8,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x78ea5a9595279dc2f9608283875571b1151f19d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x44b1d66e7b9d4467139924f31754f34cbc392f44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

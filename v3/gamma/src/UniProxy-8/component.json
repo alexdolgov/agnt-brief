@@ -1,0 +1,18 @@
+{
+  "component": "UniProxy-8",
+  "main_contract": "UniProxy",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x82fceb07a4d01051519663f6c1c919af21c27845",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "component": "LeverageTransformer-2",
+  "main_contract": "LeverageTransformer",
+  "source_file_count": 37,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x79a7dba256317bdd84a4f9aeeb7fb0f7f9f079a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa740d62c2fdfdf7578fffcc95884d636115c0eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc3f986c78ebf6abc031106feac25cd53db30aa1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

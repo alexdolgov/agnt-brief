@@ -3,7 +3,7 @@
 pragma solidity ^0.8.24;
 
 import { Roles } from "src/libs/Roles.sol";
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
@@ -37,7 +37,7 @@ contract BackingRootOracle is SystemComponent, SecurityBase, IBackingOracle {
     ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) {
         uint256 len = initialMappingTokens.length;
         if (len > 0) {
-            AutopilotErrors.verifyArrayLengths(len, initialMappingOracles.length, "initMapLen");
+            Errors.verifyArrayLengths(len, initialMappingOracles.length, "initMapLen");
             for (uint256 i = 0; i < len;) {
                 _registerMapping(initialMappingTokens[i], initialMappingOracles[i]);
                 unchecked {
@@ -82,20 +82,20 @@ contract BackingRootOracle is SystemComponent, SecurityBase, IBackingOracle {
         IBackingOracle oldOracle,
         IBackingOracle newOracle
     ) external hasRole(Roles.BACKING_ORACLE_MANAGER) {
-        AutopilotErrors.verifyNotZero(token, "token");
-        AutopilotErrors.verifyNotZero(address(oldOracle), "oldOracle");
-        AutopilotErrors.verifyNotZero(address(newOracle), "newOracle");
+        Errors.verifyNotZero(token, "token");
+        Errors.verifyNotZero(address(oldOracle), "oldOracle");
+        Errors.verifyNotZero(address(newOracle), "newOracle");
 
         // We want to ensure you know what you're replacing so ensure
         // you provide a matching old value
         if (assetOracles[token] != oldOracle) {
-            revert AutopilotErrors.InvalidParam("oldOracle");
+            revert Errors.InvalidParam("oldOracle");
         }
 
         // If the old and new values match we can assume you're not doing
         // what you think you're doing so we just fail
         if (oldOracle == newOracle) {
-            revert AutopilotErrors.AlreadySet("newOracle");
+            revert Errors.AlreadySet("newOracle");
         }
 
         assetOracles[token] = newOracle;
@@ -109,12 +109,12 @@ contract BackingRootOracle is SystemComponent, SecurityBase, IBackingOracle {
     function removeMapping(
         address token
     ) external hasRole(Roles.BACKING_ORACLE_MANAGER) {
-        AutopilotErrors.verifyNotZero(token, "token");
+        Errors.verifyNotZero(token, "token");
 
         // If you're trying to remove something that doesn't exist then
         // some condition you're expecting isn't true. We revert so you can reevaluate
         if (address(assetOracles[token]) == address(0)) {
-            revert AutopilotErrors.NotRegistered();
+            revert Errors.NotRegistered();
         }
 
         delete assetOracles[token];
@@ -132,7 +132,7 @@ contract BackingRootOracle is SystemComponent, SecurityBase, IBackingOracle {
     ) private view returns (IBackingOracle oracle) {
         oracle = assetOracles[token];
         if (address(oracle) == address(0)) {
-            revert AutopilotErrors.NotRegistered();
+            revert Errors.NotRegistered();
         }
     }
 
@@ -141,13 +141,13 @@ contract BackingRootOracle is SystemComponent, SecurityBase, IBackingOracle {
     /// @param token address of the token to register
     /// @param oracle address of the oracle to use to lookup backing
     function _registerMapping(address token, IBackingOracle oracle) private {
-        AutopilotErrors.verifyNotZero(token, "token");
-        AutopilotErrors.verifyNotZero(address(oracle), "oracle");
+        Errors.verifyNotZero(token, "token");
+        Errors.verifyNotZero(address(oracle), "oracle");
 
         // We want the operation of replacing a mapping to be an explicit
         // call so we don't accidentally overwrite something
         if (address(assetOracles[token]) != address(0)) {
-            revert AutopilotErrors.AlreadySet("token");
+            revert Errors.AlreadySet("token");
         }
 
         assetOracles[token] = oracle;

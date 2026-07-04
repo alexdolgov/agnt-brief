@@ -1,7 +1,7 @@
 {
   "component": "MOR",
   "main_contract": "MOR",
-  "source_file_count": 12,
+  "source_file_count": 10,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -11,9 +11,9 @@
   ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x98e3cfbdb9707df6107cb1a7bd03036052eaa20e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

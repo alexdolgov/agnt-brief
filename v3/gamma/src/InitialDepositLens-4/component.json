@@ -1,0 +1,42 @@
+{
+  "component": "InitialDepositLens-4",
+  "main_contract": "InitialDepositLens",
+  "source_file_count": 90,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x1d37f46903cf7ae3ec8feac3dfd0a3dba3c78f24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x4c3eef674bd2c60393b2feabae497bfd2153aa98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xc40425b31509ed4b2698e7f93bce74c32744911b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xf9873f3acc0a390a18c767f0852016c68d8489b7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "PermissionlessDeployer-3",
+  "main_contract": "PermissionlessDeployer",
+  "source_file_count": 99,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0232e0b6df048c8cc4037c52bc90cf943c9c8cc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

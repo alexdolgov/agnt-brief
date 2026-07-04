@@ -1,26 +1,42 @@
 {
   "component": "BitVMBridgeV4-2",
   "main_contract": "BitVMBridgeV4",
-  "source_file_count": 21,
-  "deployment_count": 2,
+  "source_file_count": 20,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeaec9920004532db1e7323014f54358898ed1c53",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x8388dcc52767ba0ca188a61afc23c25feafa3672",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x19438c6b7d59bcc5e779825abe770e15cd13207c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc75de292ffe3ba97dd27895ff2eb1ffbe0a442bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9e1999c3107defa5ba922d005537ec65886880d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "Bridge-8",
+  "main_contract": "Bridge",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0xbbbd1bbb4f9b936c3604906d7592a644071de884",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

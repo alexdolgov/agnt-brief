@@ -56,10 +56,9 @@ contract ComposableStablePoolFactory is IVersion, IPoolVersion, BasePoolFactory,
         uint256 amplificationParameter,
         IRateProvider[] memory rateProviders,
         uint256[] memory tokenRateCacheDurations,
-        bool exemptFromYieldProtocolFeeFlag,
+        bool[] memory exemptFromYieldProtocolFeeFlags,
         uint256 swapFeePercentage,
-        address owner,
-        bytes32 salt
+        address owner
     ) external returns (ComposableStablePool) {
         (uint256 pauseWindowDuration, uint256 bufferPeriodDuration) = getPauseConfiguration();
         return
@@ -74,7 +73,7 @@ contract ComposableStablePoolFactory is IVersion, IPoolVersion, BasePoolFactory,
                             tokens: tokens,
                             rateProviders: rateProviders,
                             tokenRateCacheDurations: tokenRateCacheDurations,
-                            exemptFromYieldProtocolFeeFlag: exemptFromYieldProtocolFeeFlag,
+                            exemptFromYieldProtocolFeeFlags: exemptFromYieldProtocolFeeFlags,
                             amplificationParameter: amplificationParameter,
                             swapFeePercentage: swapFeePercentage,
                             pauseWindowDuration: pauseWindowDuration,
@@ -82,8 +81,7 @@ contract ComposableStablePoolFactory is IVersion, IPoolVersion, BasePoolFactory,
                             owner: owner,
                             version: getPoolVersion()
                         })
-                    ),
-                    salt
+                    )
                 )
             );
     }

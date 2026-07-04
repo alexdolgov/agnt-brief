@@ -1,0 +1,26 @@
+{
+  "component": "AssimilatorV3-3",
+  "main_contract": "AssimilatorV3",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1134daeaa652e11360631e3cc93e688204d9354b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a7e79b7a4912ea42f82e25b9c033919b97f6fb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

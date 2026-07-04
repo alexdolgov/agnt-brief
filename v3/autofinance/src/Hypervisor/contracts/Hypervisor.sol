@@ -46,6 +46,7 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
     uint256 public maxTotalSupply;
     mapping(address => bool) public list;
     bool public whitelisted;
+    bool public directDeposit;
 
     uint256 public constant PRECISION = 1e36;
 
@@ -71,29 +72,25 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         whitelisted = false;
     }
 
+    // @dev Should never be called directly by client, `to` can be frontrun 
     // @param deposit0 Amount of token0 transfered from sender to Hypervisor
-    // @param deposit1 Amount of token0 transfered from sender to Hypervisor
+    // @param deposit1 Amount of token1 transfered from sender to Hypervisor
     // @param to Address to which liquidity tokens are minted
+    // @param from Address from which asset tokens are transferred
     // @return shares Quantity of liquidity tokens minted as a result of deposit
     function deposit(
         uint256 deposit0,
         uint256 deposit1,
-        address to
+        address to,
+        address from
     ) external override returns (uint256 shares) {
         require(deposit0 > 0 || deposit1 > 0, "deposits must be nonzero");
         require(deposit0 <= deposit0Max && deposit1 <= deposit1Max, "deposits must be less than maximum amounts");
         require(to != address(0) && to != address(this), "to");
         require(!whitelisted || list[msg.sender], "must be on the list");
 
-        // update fess for inclusion in total pool amounts
-        (uint128 baseLiquidity,,) = _position(baseLower, baseUpper);
-        if (baseLiquidity > 0) {
-            pool.burn(baseLower, baseUpper, 0);
-        }
-        (uint128 limitLiquidity,,)  = _position(limitLower, limitUpper);
-        if (limitLiquidity > 0) {
-            pool.burn(limitLower, limitUpper, 0);
-        }
+        // update fees
+        (uint128 baseLiquidity, uint128 limitLiquidity) = zeroBurn();
 
         uint160 sqrtPrice = TickMath.getSqrtRatioAtTick(currentTick());
         uint256 price = FullMath.mulDiv(uint256(sqrtPrice).mul(uint256(sqrtPrice)), PRECISION, 2**(96 * 2));
@@ -104,20 +101,50 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         shares = deposit1.add(deposit0PricedInToken1);
 
         if (deposit0 > 0) {
-          token0.safeTransferFrom(msg.sender, address(this), deposit0);
+          token0.safeTransferFrom(from, address(this), deposit0);
         }
         if (deposit1 > 0) {
-          token1.safeTransferFrom(msg.sender, address(this), deposit1);
+          token1.safeTransferFrom(from, address(this), deposit1);
         }
 
         if (totalSupply() != 0) {
           uint256 pool0PricedInToken1 = pool0.mul(price).div(PRECISION);
           shares = shares.mul(totalSupply()).div(pool0PricedInToken1.add(pool1));
+
+          if (directDeposit) {
+            baseLiquidity = _liquidityForAmounts(
+                baseLower,
+                baseUpper,
+                token0.balanceOf(address(this)),
+                token1.balanceOf(address(this))
+            );
+            _mintLiquidity(baseLower, baseUpper, baseLiquidity, address(this));
+
+            limitLiquidity = _liquidityForAmounts(
+                limitLower,
+                limitUpper,
+                token0.balanceOf(address(this)),
+                token1.balanceOf(address(this))
+            );
+            _mintLiquidity(limitLower, limitUpper, limitLiquidity, address(this));
+          }
         }
         _mint(to, shares);
-        emit Deposit(msg.sender, to, shares, deposit0, deposit1);
+        emit Deposit(from, to, shares, deposit0, deposit1);
         // Check total supply cap not exceeded. A value of 0 means no limit.
         require(maxTotalSupply == 0 || totalSupply() <= maxTotalSupply, "maxTotalSupply");
+    }
+
+    function zeroBurn() internal returns(uint128 baseLiquidity, uint128 limitLiquidity) {
+      // update fees for inclusion
+      (baseLiquidity, , ) = _position(baseLower, baseUpper);
+      if (baseLiquidity > 0) {
+          pool.burn(baseLower, baseUpper, 0);
+      }
+      (limitLiquidity, , ) = _position(limitLower, limitUpper);
+      if (limitLiquidity > 0) {
+          pool.burn(limitLower, limitUpper, 0);
+      }
     }
 
     function pullLiquidity(
@@ -128,15 +155,15 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         uint256 limit0,
         uint256 limit1
       ) {
-
-        (uint256 base0, uint256 base1) = _burnLiquidity(
+        zeroBurn();
+        (base0, base1) = _burnLiquidity(
             baseLower,
             baseUpper,
             _liquidityForShares(baseLower, baseUpper, shares),
             address(this),
             false
         );
-        (uint256 limit0, uint256 limit1) = _burnLiquidity(
+        (limit0, limit1) = _burnLiquidity(
             limitLower,
             limitUpper,
             _liquidityForShares(limitLower, limitUpper, shares),
@@ -158,6 +185,9 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         require(shares > 0, "shares");
         require(to != address(0), "to");
 
+        // update fees
+        zeroBurn();
+
         // Withdraw liquidity from Uniswap pool
         (uint256 base0, uint256 base1) = _burnLiquidity(
             baseLower,
@@ -175,9 +205,9 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         );
 
         // Push tokens proportional to unused balances
-        uint256 totalSupply = totalSupply();
-        uint256 unusedAmount0 = token0.balanceOf(address(this)).mul(shares).div(totalSupply);
-        uint256 unusedAmount1 = token1.balanceOf(address(this)).mul(shares).div(totalSupply);
+        uint256 supply = totalSupply();
+        uint256 unusedAmount0 = token0.balanceOf(address(this)).mul(shares).div(supply);
+        uint256 unusedAmount1 = token1.balanceOf(address(this)).mul(shares).div(supply);
         if (unusedAmount0 > 0) token0.safeTransfer(to, unusedAmount0);
         if (unusedAmount1 > 0) token1.safeTransfer(to, unusedAmount1);
 
@@ -221,16 +251,14 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
                 _limitUpper % tickSpacing == 0,
             "limit position invalid"
         );
+        require(
+          _limitUpper != _baseUpper ||
+          _limitLower != _baseLower,
+          "limit equals base"
+        );
 
         // update fees
-        (uint128 baseLiquidity, , ) = _position(baseLower, baseUpper);
-        if (baseLiquidity > 0) {
-            pool.burn(baseLower, baseUpper, 0);
-        }
-        (uint128 limitLiquidity, , ) = _position(limitLower, limitUpper);
-        if (limitLiquidity > 0) {
-            pool.burn(limitLower, limitUpper, 0);
-        }
+        (uint128 baseLiquidity, uint128 limitLiquidity) = zeroBurn();
 
         // Withdraw all liquidity and collect all fees from Uniswap pool
         (, uint256 feesLimit0, uint256 feesLimit1) = _position(baseLower, baseUpper);
@@ -238,6 +266,10 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
 
         uint256 fees0 = feesBase0.add(feesLimit0);
         uint256 fees1 = feesBase1.add(feesLimit1);
+
+        (baseLiquidity, , ) = _position(baseLower, baseUpper);
+        (limitLiquidity, , ) = _position(limitLower, limitUpper);
+
         _burnLiquidity(baseLower, baseUpper, baseLiquidity, address(this), true);
         _burnLiquidity(limitLower, limitUpper, limitLiquidity, address(this), true);
 
@@ -545,8 +577,12 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         list[listed] = false;
     }
 
+    function toggleDirectDeposit() external onlyOwner {
+        directDeposit = !directDeposit;
+    }
+
     function toggleWhitelist() external onlyOwner {
-        whitelisted = whitelisted ? false : true;
+        whitelisted = !whitelisted;
     }
 
     function transferOwnership(address newOwner) external onlyOwner {
@@ -558,3 +594,4 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
         _;
     }
 }
+

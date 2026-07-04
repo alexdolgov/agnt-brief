@@ -1,6 +1,6 @@
 # hemi-staking — deployments
 
-161 verified deployment(s) across 52 component(s).
+164 verified deployment(s) across 54 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -126,9 +126,11 @@
 | ethereum | `0x99de5239a8ad65ed86db3d36e0fd9f9cba7d63d5` | EnzoBTCOFTAdapter | impl | inactive | no |
 | ethereum | `0x9a3c724ee9603a7550499be73dc743b371811dd3` | StabilityPoolFacet | impl | live | no |
 | ethereum | `0x9a575dda00aad7212b321ddc2f86314874e03adc` | VeHemiVoteDelegation | impl | inactive | no |
+| ethereum | `0xa32313c04df2e12dcbc0b4b5ad234a2cc69d6c8d` | DebtTokenWithLz | impl | inactive | no |
 | ethereum | `0xa446331bd28cbe0186a983a27c528f566b6bede0` | Proxy-8 | proxy | live | no |
 | ethereum | `0xa5f37791378c55941a52b4dcb70be4d8d09f5e43` | AddressManager | impl | live | no |
 | ethereum | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafe | impl | live | no |
+| ethereum | `0xb247bce6f7ca0345174ee0d3860a36e7d72b5a9d` | DebtTokenWithLz | impl | inactive | no |
 | ethereum | `0xb3cf78f3e483b63280cfe19d52c9c1bdd03d02ab` | MintStrategy | proxy | live | no |
 | ethereum | `0xb4d4793a1cd57b6ecebadf6fcbe5aed03e8e93ec` | StakingVault | impl | inactive | no |
 | ethereum | `0xb8374e4dff99202292da2fe34425e1de665b67e6` | SatoshiXApp | impl | live | no |
@@ -165,10 +167,4 @@
 | ethereum | `0xfe851a8614a97458bbb9dcdbfb28de9a7f1be184` | GasPool | impl | live | no |
 | ethereum | `0xfec7c4b379484a5310f7a4c9b38102b9d53d8d9c` | Initializer | impl | live | no |
 | optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | impl | live | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xa32313c04df2e12dcbc0b4b5ad234a2cc69d6c8d`
-- ethereum `0xb247bce6f7ca0345174ee0d3860a36e7d72b5a9d`
-- optimism `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2`
+| optimism | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafe-2 | impl | live | no |

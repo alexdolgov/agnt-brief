@@ -15,7 +15,6 @@ struct ModeConfig {
     uint64 maxHealthAfterLiq_e18; // max health factor allowed after liquidation
     mapping(address => TokenFactors) factors; // token factors mapping
     ModeStatus status; // mode status
-    uint8 maxCollWLpCount; // limit number of wLp to avoid out of gas
 }
 
 struct PoolConfig {
@@ -44,7 +43,6 @@ interface IConfig {
     event SetMaxHealthAfterLiq_e18(uint16 indexed mode, uint64 maxHealthAfterLiq_e18);
     event SetWhitelistedWLps(address[] wLps, bool status);
     event SetModeStatus(uint16 mode, ModeStatus status);
-    event SetMaxCollWLpCount(uint16 indexed mode, uint8 maxCollWLpCount);
 
     /// @dev check if the wrapped lp is whitelisted.
     /// @param _wlp wrapped lp address
@@ -56,16 +54,10 @@ interface IConfig {
     /// @return collTokens collateral token list
     ///         borrTokens borrow token list
     ///         maxHealthAfterLiq_e18 max health factor allowed after liquidation
-    ///         maxCollWLpCount // limit number of wLp to avoid out of gas
     function getModeConfig(uint16 _mode)
         external
         view
-        returns (
-            address[] memory collTokens,
-            address[] memory borrTokens,
-            uint maxHealthAfterLiq_e18,
-            uint8 maxCollWLpCount
-        );
+        returns (address[] memory collTokens, address[] memory borrTokens, uint maxHealthAfterLiq_e18);
 
     /// @dev get pool config
     /// @param _pool pool address
@@ -130,14 +122,4 @@ interface IConfig {
     /// @param _mode mode id
     /// @param _maxHealthAfterLiq_e18 new max allowed health factor after liquidation
     function setMaxHealthAfterLiq_e18(uint16 _mode, uint64 _maxHealthAfterLiq_e18) external;
-
-    /// @dev set mode's max collateral wrapped lp count to avoid out of gas
-    /// @param _mode mode id
-    /// @param _maxCollWLpCount max collateral wrapped lp count
-    function setMaxCollWLpCount(uint16 _mode, uint8 _maxCollWLpCount) external;
-
-    /// @dev get mode's max collateral wlp count
-    /// @param _mode mode id
-    /// @return the mode's max collateral wlp count
-    function getModeMaxCollWLpCount(uint16 _mode) external view returns (uint8);
 }

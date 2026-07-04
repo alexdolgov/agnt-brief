@@ -1,18 +1,18 @@
 {
   "component": "ILoopringV3-9",
   "main_contract": "ILoopringV3",
-  "source_file_count": 13,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x013aa50dc4a1b11c6a1b37c2961895c9dc826069",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x40598b41cc17a7e56dd72f415e8223aacca94cf7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

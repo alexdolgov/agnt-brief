@@ -11,6 +11,15 @@ interface IHookReceiver {
 
     event HookConfigured(address silo, uint24 hooksBefore, uint24 hooksAfter);
 
+    /// @dev Revert if provided silo configuration during initialization is empty
+    error EmptySiloConfig();
+    /// @dev Revert if the hook receiver is already configured/initialized
+    error AlreadyConfigured();
+    /// @dev Revert if the caller is not a silo
+    error OnlySilo();
+    /// @dev Revert if the caller is not a silo or a share token
+    error OnlySiloOrShareToken();
+
     /// @notice Initialize a hook receiver
     /// @param _siloConfig Silo configuration with all the details about the silo
     /// @param _data Data to initialize the hook receiver (if needed)

@@ -50,8 +50,13 @@ contract BridgeLib is IBridgeLib {
 
         if (isNative) {
             // 2a. Native ETH: unwrap WETH to ETH, record ETH balance
+            //     less `msg.value`. The relay fee is forwarded as part of
+            //     `callValue`; subtracting it from the snapshot means the
+            //     post-call balance delta measures principal consumption
+            //     only and an unconsumed relay-fee remainder cannot mask
+            //     under-consumption of `amount`.
             IWETH(weth).withdraw(amount);
-            balanceBefore = address(this).balance;
+            balanceBefore = address(this).balance - msg.value;
         } else {
             // 2b. ERC20: approve bridge contract
             SafeTransferLib.safeApprove(token, bridgeContract, 0);
@@ -72,7 +77,10 @@ contract BridgeLib is IBridgeLib {
             }
         }
 
-        // 4. Verify bridge consumed at least amount
+        // 4. Verify bridge consumed at least amount. For native, the
+        //    `balanceBefore` subtraction above makes this assert that the
+        //    bridge consumed the full `amount + msg.value` — bridges that
+        //    refund any portion of the relay fee will revert here.
         uint256 balanceAfter = isNative
             ? address(this).balance
             : IERC20(token).balanceOf(address(this));

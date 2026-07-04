@@ -1,6 +1,6 @@
 # mezo-earn — deployments
 
-241 verified deployment(s) across 116 component(s).
+243 verified deployment(s) across 118 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -165,6 +165,7 @@
 | ethereum | `0x9b15fef1bfa4aff9b51f7b3b2df4d197cde68ff0` | BeaconRewardsEscrowBeneficiary | impl | inactive | no |
 | ethereum | `0x9c070027cdc9dc8f82416b2e5314e11dfb4fe3cd` | Bridge-2 | impl | live | yes |
 | ethereum | `0x9e44d4aa3bc604213745d258f853bd6695630339` | Bridge | impl | inactive | no |
+| ethereum | `0x9e56512566236b8872b5798c8cb3a2b1a572a16c` | Vyper_contract-2 | impl | inactive | no |
 | ethereum | `0x9eae6e8e99d27d377f1ea0659b0cb16ce8ad32ba` | WalletCoordinator | impl | live | yes |
 | ethereum | `0x9f2f5edbdaaafd13f40bf3573e5470a490942d74` | ReimbursementPool | impl | inactive | no |
 | ethereum | `0xa0e1f0290c5ab6aa80e1881431b2fe35d8852fb7` | AcreMultiAssetVault-2 | impl | inactive | no |
@@ -184,6 +185,7 @@
 | ethereum | `0xb3696cdddeaa764fef98dc109ece3defabab64d8` | Portal | impl | live | yes |
 | ethereum | `0xb3d03a5411261fc2094697c5e969d552ee55cf6b` | LPRewardsKEEPETH | impl | inactive | no |
 | ethereum | `0xb4c35747c26e4ab5f1a7cdc7e875b5946efa6fa9` | LPRewardsTBTCv2Saddle | impl | inactive | no |
+| ethereum | `0xb6881e8b21a3cd6d23c4f90724e26e35bb8980be` | Vyper_contract-3 | impl | inactive | no |
 | ethereum | `0xb7c552be9d410ecc2c1aeda0e1c93a3d8d2f7017` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xb857117ae7639255d7305ddbc7346b4a644ca432` | SortitionTree-2 | impl | inactive | no |
 | ethereum | `0xb8df0a949ac45ff8f401553a1dcb742feb38e6d3` | TransparentUpgradeableProxy-3 | proxy | live | no |
@@ -245,9 +247,3 @@
 | ethereum | `0xfbae130e06bbc8ca198861beecae6e2b830398fb` | WalletRegistry | impl | live | yes |
 | ethereum | `0xfc9469dd7d6db0e7db13d10e8fa622867e5de92a` | ReimbursementPool | impl | inactive | no |
 | ethereum | `0xfccde7d30995bff54930efcd7a88c2831794069d` | MezoBridge | impl | inactive | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x9e56512566236b8872b5798c8cb3a2b1a572a16c`
-- ethereum `0xb6881e8b21a3cd6d23c4f90724e26e35bb8980be`

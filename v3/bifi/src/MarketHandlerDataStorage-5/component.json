@@ -1,0 +1,18 @@
+{
+  "component": "MarketHandlerDataStorage-5",
+  "main_contract": "MarketHandlerDataStorage",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7146ed71b1cb0d90e705ef20066b3453809e89e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # belt-finance — deployments
 
-323 verified deployment(s) across 59 component(s).
+351 verified deployment(s) across 64 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -154,9 +154,12 @@
 | bsc | `0x7c8dd1e39cd8142414f24f0ba80638b2e2fa5234` | bBUSD | impl | live | yes |
 | bsc | `0x7d0168e0bc515c3501d293c18354da2623b7c310` | SingleStrategyToken | proxy | inactive | yes |
 | bsc | `0x7d5fba2b906ae23d63ac816035b3ee0513075f85` | Proxy | proxy | live | no |
+| bsc | `0x7d72e4e99b74986ccf8f020868a367aae132b404` | Vyper_contract-4 | impl | live | no |
 | bsc | `0x7e792fb38c85a690d11832cfa20e20592fb54587` | AAAA | impl | live | no |
 | bsc | `0x7f0defc67959a0ef6fe26e1bc23b8f789fc36487` | BeltProxy | impl | inactive | no |
 | bsc | `0x80e00ccedff9328fb0a5d8b4d34fbc03303c30d0` | StrategyAlpacaImpl | impl | live | yes |
+| bsc | `0x80fa5670e6ab28a1aeda5e13af646bf49dfa5220` | Vyper_contract-5 | impl | live | no |
+| bsc | `0x81bae6fe2908922e1dcc582aea09663f16650f5d` | Vyper_contract-3 | impl | live | no |
 | bsc | `0x820512f47ba0a6b225288f5fa11cb9d8b65440b1` | CompensationPool | impl | live | no |
 | bsc | `0x83b41c9b1f05103eed86eb50508eb619f389415e` | StrategyEllipsisImpl | impl | live | yes |
 | bsc | `0x83efa0aa01626819f3d48e3b7fe2683c3e6492bd` | VaultCakePool | impl | live | yes |
@@ -164,10 +167,12 @@
 | bsc | `0x864a3d99cd28da86ccbe99b5bc7470a0de521a80` | VaultCakePool | impl | live | yes |
 | bsc | `0x868158719b62baaeaf975ddd1669a30ff09495d9` | AAAA | impl | live | no |
 | bsc | `0x86afa7ff694ab8c985b79733745662760e454169` | Vyper_contract | impl | live | no |
+| bsc | `0x87359b3b307389c19ffc6aa8879d8f949df92666` | Vyper_contract-3 | impl | live | no |
 | bsc | `0x87c6668d33f224fe00adb3ef85a4a5ab4d5bf257` | VoidStrategyTokenV2 | proxy | live | no |
 | bsc | `0x882880cefa8e24af163db656117dc188afab96d0` | VaultBPool | impl | live | yes |
 | bsc | `0x8844cf0b65ac3a8f4a97a9b5d80cd763d59c85b5` | StrategyVenusV2 | impl | inactive | yes |
 | bsc | `0x89677142ea990dd7648b34ecba99b3ef184c3930` | StrategyAlphaImpl | impl | live | yes |
+| bsc | `0x89a3598b174defa23a4d2939308b8f91497ea149` | Vyper_contract | impl | live | no |
 | bsc | `0x8b6700ac4120b590e22098f24e1d8995c20e2f81` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0x8c226038ce06761eba9c08c81dd2e4720f8e9747` | StrategyVenusV2 | proxy | inactive | yes |
 | bsc | `0x8c680d7ec5c8b980bf8cd73001865b80ea7c629b` | bUSDTStratVLEV | impl | live | no |
@@ -193,16 +198,20 @@
 | bsc | `0x9b836653cf9b12d7214044dcb69b762263958f4f` | Storage | impl | live | no |
 | bsc | `0x9bae577cfea4f1be81e5250984787f3e05e00593` | StrategyVenusV2 | proxy | inactive | yes |
 | bsc | `0x9c1fa07c7e1a0073a8ad30ede103c6c51bb62a0f` | SingleStrategyToken | proxy | inactive | yes |
+| bsc | `0x9cb73f20164e399958261c289eb5f9846f4d1404` | Vyper_contract-6 | impl | live | no |
 | bsc | `0x9d4a9cc8e75a036da8c7111f7e2134b578c946d6` | bBUSDStratVLEV | impl | live | no |
 | bsc | `0x9e916ff09cea528739efb5cc3bd99d19838b011c` | StrategyFortubeV2 | impl | live | no |
+| bsc | `0x9eb2cf8521fdf5906da9000b0621b731d32e62c7` | Vyper_contract-2 | impl | live | no |
 | bsc | `0x9eec9655f514822fbe494ae2ea1be7cf80be1c93` | Timelock | impl | live | yes |
 | bsc | `0x9f19ea8d8b81af5516dde6683bac9b9c72a337f8` | StrategyAuto | proxy | inactive | yes |
+| bsc | `0x9f413a3641cfa5a1f5577da5c8224aa8ff53c246` | Vyper_contract | impl | live | no |
 | bsc | `0xa0dfe8da139d7419a442007c92c4e02e34cca786` | VaultCakePool | impl | live | yes |
 | bsc | `0xa26f1893f3fd231f192f56756ae349329b280cb2` | StrategyVenusV2 | proxy | inactive | yes |
 | bsc | `0xa33006a5022ec77bf4db3969ae80d7603d4b6d36` | HalvingPool | impl | live | no |
 | bsc | `0xa396039fe325b32fa74391ce49f8fb06e130d2fd` | StrategyAlpacaImpl | impl | live | yes |
 | bsc | `0xa3e3ef0f77c6399cd347d861d422928d6bcc6e38` | StrategyAlpacaImpl | impl | live | yes |
 | bsc | `0xa49f194c99a5e65a42ef92ee757dde4517eab899` | SingleStrategyToken-2 | impl | live | yes |
+| bsc | `0xa4ab839d38a0f0c1ba6509d4e7bb09026187de87` | Vyper_contract-4 | impl | live | no |
 | bsc | `0xa4ed8493569f2866c156b813f95b3e7f627ca30f` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xa56e834fbc2087024d329aa69eec1392d0a8d4c4` | StrategyEllipsisImpl | impl | live | yes |
 | bsc | `0xa594243d8c2edd1efebd9e2fb64ff16de3279dd0` | SingleStrategyToken-2 | impl | live | yes |
@@ -212,6 +221,7 @@
 | bsc | `0xa81650535be191df2ac2a7900f3b675dc83076e8` | StrategyAlpaca | proxy | inactive | no |
 | bsc | `0xa884a7568f2ddba46127c99e4c83928d44dd742a` | RepaymentImpl | impl | live | no |
 | bsc | `0xa8bb71facdd46445644c277f9499dd22f6f0a30c` | MultiStrategyTokenImpl | proxy | inactive | yes |
+| bsc | `0xa8cc018db124ef192b1edcb0b5974ce0f5c582c3` | Vyper_contract | impl | live | no |
 | bsc | `0xa95da1dd399e71c8df61d6897b7345f4d3391ccb` | VaultCakePool | impl | live | yes |
 | bsc | `0xa973fd411ad4357aa8c3bbaabbe67e27df1188b0` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xaa20e8cb61299df2357561c2ac2e1172bc68bc25` | MultiStrategyTokenImpl | proxy | inactive | yes |
@@ -221,6 +231,7 @@
 | bsc | `0xabcd7983406a9b6e5a6e57213a100ff712d85701` | BeltProxy | impl | live | no |
 | bsc | `0xacd9c79ae50d483f88cf94fb09fcdce9c678fb8d` | SingleStrategyTokenImpl2 | proxy | inactive | yes |
 | bsc | `0xadba5a1b2c1f3380c47e3de0f40e0fe5acf4afb0` | StrategyFortube | proxy | inactive | yes |
+| bsc | `0xaea4f7dcd172997947809ce6f12018a6d5c1e8b6` | Vyper_contract-3 | impl | live | no |
 | bsc | `0xaf605514db241a028e979eaa2f094c968746ff87` | StrategyAuto | impl | live | yes |
 | bsc | `0xaf956285883308cc5c8b2f368f45cd56e5641740` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xb22f4617c5d4fc56d3f704e45bc9315e68ae9e97` | StrategyEllipsisImpl | impl | live | yes |
@@ -233,12 +244,14 @@
 | bsc | `0xb6d97ec31048610289a2d04a5eb76697d6b936ac` | StrategyVenusV3 | proxy | live | no |
 | bsc | `0xb78f5868c0a388c94dfb7f0870e177bf6de9d87b` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xb7ba6296c577e67a908304affe744c6838157195` | StrategyEllipsisImpl | proxy | inactive | yes |
+| bsc | `0xb7db0347e352c4811a8b1e8664db2a2c51fa49b8` | Vyper_contract | impl | live | no |
 | bsc | `0xb8a8401d335b6c9ff6b56ae9ffe06342209b578f` | SingleStrategyToken | proxy | inactive | yes |
 | bsc | `0xb8ba6b36b69e87238f0bf6d17a2ca9dee2b2c74a` | Proxy | impl | live | no |
 | bsc | `0xb943f3ccff19ee58642bb4b8dcd8742737b19b0b` | StrategyVenusV2 | impl | live | yes |
 | bsc | `0xba23290e46087fbc770accc94c52787cf654c92e` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xba2f7cb88d818bba7e932310f49d754eb29eb2ef` | SingleStrategyToken | proxy | inactive | yes |
 | bsc | `0xbc11ef74bed947837700334b36df79890ceeb5b4` | SingleStrategyToken-2 | impl | live | yes |
+| bsc | `0xbc274398b4cdd1d61aa8ec42385382b275faf3fd` | Vyper_contract-2 | impl | live | no |
 | bsc | `0xbf5a802bcadc56758af0639241856b8d793116b1` | BeltController | impl | live | no |
 | bsc | `0xbfa2d2f485821f941516029902b79b106560ece2` | StrategyEllipsisImpl | impl | live | yes |
 | bsc | `0xbfc72d6421352e2e25fd5e1a1f11eba138c6910f` | StrategyFortubeV2 | proxy | live | no |
@@ -249,13 +262,16 @@
 | bsc | `0xc43eb5201002c8df77d1ab3038a3b0cbde25b7a0` | BeltProxy | proxy | live | no |
 | bsc | `0xc4857453b83201f5359fcb4ef43928dfc55c63fc` | StrategyVenusV3 | proxy | live | no |
 | bsc | `0xc4a0a0f54b1708cf4e73ee6e4830f4736f735c82` | StrategyFortube | impl | live | yes |
+| bsc | `0xc5a63365efdce5b724db3f59cb2f936d332f0f97` | Vyper_contract | impl | live | no |
 | bsc | `0xc77eb19e463e019f3fef1d48e6cf9176411c89cb` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xc7bfe56dfbd11ecd93ae494d296c8180d7f04baf` | StrategyFortubeV2 | impl | inactive | no |
 | bsc | `0xc9b921adca2d83fce97be279ca36498811fadefe` | StrategyFortubeV2 | impl | live | no |
 | bsc | `0xcab590e347f18cc0809a2babfb9dde429c518572` | SingleStrategyToken | proxy | inactive | yes |
 | bsc | `0xcb3346ad40c947a2228b2e224c3931a5224ba7ad` | VoidStrategyTokenV2 | proxy | live | no |
+| bsc | `0xcc42c086dda9a13dfec6731edf375c6f1dc55905` | Vyper_contract | impl | live | no |
 | bsc | `0xcc5e76db8e2dd8c8446c9bc4b52070f57e4fc402` | StrategyAlpha | impl | live | yes |
 | bsc | `0xcce88a5aa1e82cd8b765472ced6d56ff2c8d3df6` | StrategyAlpacaImpl | proxy | inactive | yes |
+| bsc | `0xcead74e33d021983dd1ec727ff5e4fafdba2045e` | Vyper_contract-2 | impl | live | no |
 | bsc | `0xcf448b177708df9778fb889e9d09993ae63663d4` | MultiStrategyTokenImpl | impl | live | yes |
 | bsc | `0xd49cb5b097e9f0b51b3c61c5127a9c35bdec7051` | bDAIStratVLEV-2 | impl | live | no |
 | bsc | `0xd4bbc80b9b102b77b21a06cb77e954049605e6c1` | MasterBelt | impl | live | yes |
@@ -289,21 +305,29 @@
 | bsc | `0xe22298dd0c4403cfb6971d37b9dbaea01a38f651` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xe3805e023b2a56d28078a541a1dbcef209f854a6` | BeltProxy | impl | live | no |
 | bsc | `0xe3c2222077088f5f73f33705391d828e92de9455` | SingleStrategyToken-2 | impl | live | yes |
+| bsc | `0xe3ee529bf048daab3c2440f5416c4ad54b285068` | Vyper_contract | impl | live | no |
 | bsc | `0xe4342c1f88290f387f0db0c7a270e3520402f19e` | MultiStrategyTokenImpl | impl | live | yes |
 | bsc | `0xe4ba5ae3c47c9ae2e7fc288d5a466fc1f5e35e14` | BeltProxy | proxy | live | no |
+| bsc | `0xe55e804554f59f82184423ee19bc5352e611fc31` | Vyper_contract-3 | impl | live | no |
 | bsc | `0xe722894c540557ec1ce335b9e16da0befc7262b7` | StrategyVenusV2 | impl | live | yes |
 | bsc | `0xe8e72f5d03bc4b5bf14ff742377231fcd4b228db` | StrategyACrypto | impl | live | yes |
+| bsc | `0xe9901fcf54f1b30ad9a95a074165fe816055de42` | Vyper_contract | impl | live | no |
+| bsc | `0xeb0eb9e9aac2b5ff9781416fe94dc0861fab9ac8` | Vyper_contract-4 | impl | live | no |
 | bsc | `0xeb1f97555021e29a758e2c9d80a50156869beba4` | SingleStrategyToken | proxy | inactive | yes |
 | bsc | `0xec5d9908f0a97161e3d8ea044583933e93071887` | BeltProxy | impl | live | no |
 | bsc | `0xecb589831eefbdbbc48d1f86294724c76acd3314` | SingleStrategyTokenImpl2 | proxy | live | yes |
 | bsc | `0xecedc4db24d1a51152c105a03a2a02f2a16f23fa` | StrategyFortube | proxy | inactive | yes |
+| bsc | `0xed6f204e4207cad1d2c5ee3c04e47f67c25902de` | Vyper_contract | impl | live | no |
 | bsc | `0xed77ce44fefe9d90b61e23c36250e9a7ad440a07` | bUSDCStratVLEV | impl | live | no |
 | bsc | `0xed8487acc0d124efb5e8cfb5cf391caefbf99cbf` | VoidStrategyTokenV2 | proxy | live | no |
+| bsc | `0xee26bbb8eccce9b0c0da95fe882b3a259fadcb99` | Vyper_contract-2 | impl | live | no |
 | bsc | `0xefa8fc3613125a886b4a4978afc06562e2ff0d4a` | StrategyFortube | proxy | inactive | yes |
 | bsc | `0xeff8b733f12ae6902409047c44ad3ee0bf58f201` | VaultBPool | impl | live | yes |
 | bsc | `0xf03142b39b326ecea536b7acc791cc7262966e4b` | VaultCakePool | impl | live | yes |
 | bsc | `0xf0bfa2b4a56af1aa832440d24fcc42e2d9e7dda6` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xf1282170886c5821b5b9b277d4dbced75b37c3f0` | StrategyFortube-2 | impl | live | yes |
+| bsc | `0xf157a4799be445e3808592edd7e7f72150a7b050` | Vyper_contract-2 | impl | live | no |
+| bsc | `0xf16d312d119c13dd27fd0dc814b0bcdcaaa62dfd` | Vyper_contract-4 | impl | live | no |
 | bsc | `0xf1b13808e698f1b5b0449e5653cd0b82e39ac884` | BeltProxy | impl | live | no |
 | bsc | `0xf2eebf2dc45bc7e3f744785c312c41307db85496` | Assistant | impl | live | no |
 | bsc | `0xf31d585c18e411b956388cad051f31be235a854e` | StrategyVenusV3 | proxy | live | no |
@@ -314,11 +338,15 @@
 | bsc | `0xf577fe1e56597a78f0ae5807cff0093bbef236d6` | StrategyEllipsisImpl | impl | live | yes |
 | bsc | `0xf5a45f47a9776ce9a50bfee81fe12a74742f2321` | MultiStrategyTokenImpl | proxy | inactive | yes |
 | bsc | `0xf6d764cca871876767d8e00779fe80267bf25da9` | StrategyAlpaca | proxy | inactive | no |
+| bsc | `0xf6e65b33370ee6a49eb0dbcaa9f43839c1ac04d5` | Vyper_contract-5 | impl | live | no |
 | bsc | `0xf7dfbcc1deda3036cfff5d6ece4f04943d449ae7` | VaultCakePool-2 | impl | live | no |
+| bsc | `0xf82ce3957085165c3f657476dc369d0cf521874c` | Vyper_contract-2 | impl | live | no |
 | bsc | `0xf95637f1fe33ec338d5948b3f6acbabd568bc71a` | bUSDTStratVLEV | impl | live | no |
 | bsc | `0xfa3d01a7a4a1f56ee5130ed85ab8697a78d1f512` | StrategyVenusV3 | proxy | live | no |
 | bsc | `0xfa9d55956becfb41db1c9c001bb3fe67a10e4538` | BeltProxy | proxy | live | no |
 | bsc | `0xfb898d1e087097d83579f8d155b378d78eb84651` | BeltProxy-2 | impl | inactive | no |
+| bsc | `0xfcebc82f064e1df3c3cffe01a07e554baad53a6f` | Vyper_contract | impl | live | no |
+| bsc | `0xfd8be696db21917bebbbc5db6a5c33ed75ec7bb1` | Vyper_contract-3 | impl | live | no |
 | bsc | `0xfd9895baa9bd393dad2b0d5a9d043c2608f093fd` | BeltProxy | proxy | live | no |
 | bsc | `0xfdb22e3bf935c1c94254f050bbe093563f533534` | bDAI | impl | live | yes |
 | bsc | `0xfe080449b05b9ca54178589f3a043a823ddcd639` | SingleStrategyToken-2 | impl | live | yes |
@@ -327,35 +355,3 @@
 | bsc | `0xfedc8bc6ddcf1b45f87212d82e8e38ad05ac7143` | SingleStrategyTokenImpl2 | proxy | inactive | yes |
 | bsc | `0xfef4ef102a29d4ed213785255bfa3ac2809e59e2` | SingleStrategyToken-2 | impl | live | yes |
 | bsc | `0xff997862e88785ceacc8b3ce791c0a487682ee98` | MultiStrategyTokenImpl | impl | inactive | yes |
-
-## Source unavailable (28)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x7d72e4e99b74986ccf8f020868a367aae132b404`
-- bsc `0x80fa5670e6ab28a1aeda5e13af646bf49dfa5220`
-- bsc `0x81bae6fe2908922e1dcc582aea09663f16650f5d`
-- bsc `0x87359b3b307389c19ffc6aa8879d8f949df92666`
-- bsc `0x89a3598b174defa23a4d2939308b8f91497ea149`
-- bsc `0x9cb73f20164e399958261c289eb5f9846f4d1404`
-- bsc `0x9eb2cf8521fdf5906da9000b0621b731d32e62c7`
-- bsc `0x9f413a3641cfa5a1f5577da5c8224aa8ff53c246`
-- bsc `0xa4ab839d38a0f0c1ba6509d4e7bb09026187de87`
-- bsc `0xa8cc018db124ef192b1edcb0b5974ce0f5c582c3`
-- bsc `0xaea4f7dcd172997947809ce6f12018a6d5c1e8b6`
-- bsc `0xb7db0347e352c4811a8b1e8664db2a2c51fa49b8`
-- bsc `0xbc274398b4cdd1d61aa8ec42385382b275faf3fd`
-- bsc `0xc5a63365efdce5b724db3f59cb2f936d332f0f97`
-- bsc `0xcc42c086dda9a13dfec6731edf375c6f1dc55905`
-- bsc `0xcead74e33d021983dd1ec727ff5e4fafdba2045e`
-- bsc `0xe3ee529bf048daab3c2440f5416c4ad54b285068`
-- bsc `0xe55e804554f59f82184423ee19bc5352e611fc31`
-- bsc `0xe9901fcf54f1b30ad9a95a074165fe816055de42`
-- bsc `0xeb0eb9e9aac2b5ff9781416fe94dc0861fab9ac8`
-- bsc `0xed6f204e4207cad1d2c5ee3c04e47f67c25902de`
-- bsc `0xee26bbb8eccce9b0c0da95fe882b3a259fadcb99`
-- bsc `0xf157a4799be445e3808592edd7e7f72150a7b050`
-- bsc `0xf16d312d119c13dd27fd0dc814b0bcdcaaa62dfd`
-- bsc `0xf6e65b33370ee6a49eb0dbcaa9f43839c1ac04d5`
-- bsc `0xf82ce3957085165c3f657476dc369d0cf521874c`
-- bsc `0xfcebc82f064e1df3c3cffe01a07e554baad53a6f`
-- bsc `0xfd8be696db21917bebbbc5db6a5c33ed75ec7bb1`

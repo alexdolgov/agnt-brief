@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity =0.7.6;
+pragma solidity ^0.7.0;
 pragma abicoder v2;
 
-import {Constants} from "../../global/Constants.sol";
-import {SafeUint256} from "../../math/SafeUint256.sol";
+import "../../global/Constants.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
 
 library DateTime {
-    using SafeUint256 for uint256;
+    using SafeMath for uint256;
 
     /// @notice Returns the current reference time which is how all the AMM dates are calculated.
     function getReferenceTime(uint256 blockTime) internal pure returns (uint256) {
@@ -77,8 +77,8 @@ library DateTime {
         uint256 maturity,
         uint256 blockTime
     ) internal pure returns (uint256, bool) {
-        require(maxMarketIndex > 0);
-        require(maxMarketIndex <= Constants.MAX_TRADED_MARKET_INDEX);
+        require(maxMarketIndex > 0, "CG: no markets listed");
+        require(maxMarketIndex <= Constants.MAX_TRADED_MARKET_INDEX, "CG: market index bound");
         uint256 tRef = DateTime.getReferenceTime(blockTime);
 
         for (uint256 i = 1; i <= maxMarketIndex; i++) {
@@ -89,7 +89,7 @@ library DateTime {
             if (marketMaturity > maturity) return (i, true);
         }
 
-        revert();
+        revert("CG: no market found");
     }
 
     /// @notice Given a bit number and the reference time of the first bit, returns the bit number

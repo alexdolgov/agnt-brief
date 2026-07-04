@@ -112,18 +112,4 @@ contract ControllerStorage is UnitrollerAdminStorage {
     // @notice Supply caps enforced by mintAllowed for each kToken address. Defaults to zero which corresponds to unlimited supplying.
     mapping(address => uint) public supplyCaps;
 
-    /**
-     * @notice Indicator whether redemption is paused
-     */
-    bool public redemptionPaused;
-
-    /**
-     * @notice Percentage of initial punishment when a redemption occur
-     */
-    uint public redemptionInitialPunishmentMantissa;
-
-    /**
-     * @notice Indicator whether redemption is paused per asset
-     */
-    mapping(address => bool) public redemptionPausedPerAsset;
 }

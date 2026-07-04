@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 /// @title MesonTokens
 /// @notice The class that stores the information of Meson's supported tokens
@@ -14,6 +14,8 @@ contract MesonTokens {
   ///       2, 10:   USDT, USDT.e
   ///       3:       BUSD
   ///       6:       CUSD (Viction/Tomo)
+  ///       7:       pUSD
+  ///       16:      USD1
   ///       17:      PoD USDC
   ///       18:      PoD USDT
   ///       19:      PoD BUSD
@@ -27,6 +29,7 @@ contract MesonTokens {
   ///       39:      USDB (Blast)
   ///       40:      FDUSD
   ///       41:      BBUSD
+  ///       48:      USD1
   ///     49-64:   stablecoins as core (decimals 18)
   ///       49:      USDC
   ///       52:      DAI
@@ -36,16 +39,30 @@ contract MesonTokens {
   ///       69:      MERL
   ///       71:      STONE
   ///       73:      SolvBTC.m
-  ///       75:      SolvBTC.b
+  ///       75:      SolvBTC
   ///       77:      SolvBTC.a
   ///       79:      uBTC
-  ///       81:      SolvBTC.BBN
+  ///       81:      xSolvBTC
   ///       83:      SolvBTC.ENA
-  ///     113-128:  3rd party tokens (decimals 8)
+  ///       85:      SolvBTC.JUP
+  ///       87:      PUMP
+  ///       89:      B2
+  ///     113-123:  3rd party tokens (decimals 8)
   ///       113:     pumpBTC
+  ///       114:     uniBTC
+  ///       115:     cbBTC
+  ///       116:     FBTC
+  ///     124-128:  3rd party tokens (decimals 9)
+  ///       124:     DUCK
   ///     129-190: (Unspecified)
   ///     191:     No-swap core
-  ///     192-235: (Unspecified)
+  ///     192-195: M & M equivalent
+  ///       194:     ERC20 M
+  ///       195:     M as core
+  ///     196-199: M & M equivalent
+  ///       198:     ERC20 TAKER
+  ///       199:     TAKER as core
+  ///     200-235: (Unspecified)
   ///     236-239: MATIC & MATIC equivalent
   ///       236:     PoD MATIC
   ///       238:     ERC20 MATIC
@@ -82,7 +99,7 @@ contract MesonTokens {
   /// See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps
   uint256[50] private __gap;
 
-  function _isCoreToken(uint8 tokenIndex) internal returns (bool) {
+  function _isCoreToken(uint8 tokenIndex) public pure returns (bool) {
     return (tokenIndex >= 49 && tokenIndex <= 64) || ((tokenIndex > 190) && ((tokenIndex % 4) == 3));
   }
 

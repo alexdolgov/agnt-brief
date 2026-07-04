@@ -1,0 +1,18 @@
+{
+  "component": "DynamicAsset-3",
+  "main_contract": "DynamicAsset",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x90971596f486521f496dc05faeb90837a5f19108",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

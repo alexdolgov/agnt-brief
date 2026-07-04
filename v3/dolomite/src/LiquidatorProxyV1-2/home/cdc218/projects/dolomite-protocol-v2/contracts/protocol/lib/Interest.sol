@@ -21,7 +21,7 @@ pragma experimental ABIEncoderV2;
 
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 import { Decimal } from "./Decimal.sol";
-import { Math } from "./Math.sol";
+import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
 import { Time } from "./Time.sol";
 import { Types } from "./Types.sol";
 
@@ -33,12 +33,12 @@ import { Types } from "./Types.sol";
  * Library for managing the interest rate and interest indexes of DolomiteMargin
  */
 library Interest {
-    using Math for uint256;
+    using DolomiteMarginMath for uint256;
     using SafeMath for uint256;
 
     // ============ Constants ============
 
-    bytes32 constant FILE = "Interest";
+    bytes32 private constant FILE = "Interest";
     uint64 constant BASE = 10**18;
 
     // ============ Structs ============
@@ -48,8 +48,8 @@ library Interest {
     }
 
     struct Index {
-        uint96 borrow;
-        uint96 supply;
+        uint112 borrow;
+        uint112 supply;
         uint32 lastUpdate;
     }
 
@@ -97,14 +97,14 @@ library Interest {
                 // scale down the interest by the amount being supplied. Why? Because interest is only being paid on
                 // the borrowWei, which means it's split amongst all of the supplyWei. Scaling it down normalizes it
                 // for the suppliers to share what's being paid by borrowers
-                supplyInterest = Math.getPartial(supplyInterest, borrowWei.value, supplyWei.value);
+                supplyInterest = DolomiteMarginMath.getPartial(supplyInterest, borrowWei.value, supplyWei.value);
             }
         }
         assert(supplyInterest <= borrowInterest);
 
         return Index({
-            borrow: Math.getPartial(index.borrow, borrowInterest, BASE).add(index.borrow).to96(),
-            supply: Math.getPartial(index.supply, supplyInterest, BASE).add(index.supply).to96(),
+            borrow: DolomiteMarginMath.getPartial(index.borrow, borrowInterest, BASE).add(index.borrow).to112(),
+            supply: DolomiteMarginMath.getPartial(index.supply, supplyInterest, BASE).add(index.supply).to112(),
             lastUpdate: currentTime
         });
     }

@@ -1,0 +1,18 @@
+{
+  "component": "Views-2",
+  "main_contract": "Views",
+  "source_file_count": 69,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb15167fff26202aa3d20ecfd7f46a34fa4126e49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

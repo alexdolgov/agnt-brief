@@ -1,18 +1,26 @@
 {
   "component": "LightGeneralizedTCR",
   "main_contract": "LightGeneralizedTCR",
-  "source_file_count": 3,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2ce3f8c16da2bcb45ad0ccbbd82151b0c04eccc8",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x66260c69d03837016d88c9877e61e08ef74c59f2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x957a53a994860be4750810131d9c876b2f52d6e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

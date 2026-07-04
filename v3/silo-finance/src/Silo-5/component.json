@@ -1,0 +1,26 @@
+{
+  "component": "Silo-5",
+  "main_contract": "Silo",
+  "source_file_count": 68,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd9393fd2140e73ca6b82ee60cc6de9b8a12eabb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4a6c34a6b8f5c1a1dcdc4be664cbc1259a0737a6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

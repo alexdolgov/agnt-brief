@@ -2,17 +2,57 @@
   "component": "fixedVault-2",
   "main_contract": "fixedVault",
   "source_file_count": 21,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x7333fd58d8d73a8e5fc1a16c8037ada4f580fa2b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbf1aea8670d2528e08334083616dd9c5f3b087ae",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x10dcbee8afa39a847707e16aea5eb34c6b01aba9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x19cb63ccbfac2f28b1fd79923f6adfc096e6ebb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x5a03716bd1f338d7849f5c9581ad5015ce0020b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xb89c1b3d9f335b9d8bb16016f3d60160ae71041f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xc09c73f7b32573d178138e76c0e286ba21085c20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

@@ -39,7 +39,6 @@ contract StashRewardDistro is IStashRewardDistro {
     ------------------------------------------------------------------- */
 
     event Funded(uint256 epoch, uint256 pid, address token, uint256 amount);
-    event Queued(uint256 epoch, uint256 pid, address token, uint256 amount);
 
     /* -------------------------------------------------------------------
        Constructor 
@@ -167,7 +166,7 @@ contract StashRewardDistro is IStashRewardDistro {
 
         IBoosterOrBoosterLite.PoolInfo memory poolInfo = booster.poolInfo(_pid);
         IERC20(_token).safeTransfer(poolInfo.stash, amount);
-        emit Queued(_epoch, _pid, _token, amount);
+        _earmarkRewards(_pid);
     }
 
     function _getCurrentEpoch() internal view returns (uint256) {

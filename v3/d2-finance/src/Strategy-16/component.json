@@ -1,0 +1,18 @@
+{
+  "component": "Strategy-16",
+  "main_contract": "Strategy",
+  "source_file_count": 123,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf52cbb850c277d0af3325fe25ecb0b8bfc7e3843",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

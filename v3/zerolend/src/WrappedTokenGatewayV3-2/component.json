@@ -1,0 +1,36 @@
+{
+  "component": "WrappedTokenGatewayV3-2",
+  "main_contract": "WrappedTokenGatewayV3",
+  "source_file_count": 18,
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/zerolend/audits/blob/main/mundus/zerolend_report_depcheck_final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x11ccdcfb19151feb086ee6f1f62bfa0940c85612",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x405bda48cab999865688eb1f5129c29a9cb0cde1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x411e975148df0a06775cae46b829e07e15e076dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

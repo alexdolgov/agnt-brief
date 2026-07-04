@@ -1,0 +1,18 @@
+{
+  "component": "CustomSetOracle-8",
+  "main_contract": "CustomSetOracle",
+  "source_file_count": 67,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9faefa5185917ad10b7759d2ce8211a49ecc23e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

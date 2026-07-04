@@ -2,12 +2,13 @@
 pragma solidity =0.6.10;
 
 import "../interfaces/AddressBookInterface.sol";
+import "../interfaces/ERC20Interface.sol";
 import "../packages/oz/Ownable.sol";
 
 /**
  * @author Opyn Team
  * @title Whitelist Module
- * @notice The whitelist module keeps track of all valid oToken addresses, product hashes, collateral addresses, and callee addresses.
+ * @notice The whitelist module keeps track of all valid oToken addresses, product hashes, and collateral addresses.
  */
 contract Whitelist is Ownable {
     /// @notice AddressBook module address
@@ -16,10 +17,6 @@ contract Whitelist is Ownable {
     mapping(bytes32 => bool) internal whitelistedProduct;
     /// @dev mapping to track whitelisted collateral
     mapping(address => bool) internal whitelistedCollateral;
-    /// @dev mapping to mapping to track whitelisted collateral for covered calls or puts
-    mapping(bytes32 => bool) internal coveredWhitelistedCollateral;
-    /// @dev mapping to mapping to track whitelisted collateral for naked calls or puts
-    mapping(bytes32 => bool) internal nakedWhitelistedCollateral;
     /// @dev mapping to track whitelisted oTokens
     mapping(address => bool) internal whitelistedOtoken;
 
@@ -52,10 +49,6 @@ contract Whitelist is Ownable {
     );
     /// @notice emits an event when a collateral address is whitelisted by the owner address
     event CollateralWhitelisted(address indexed collateral);
-    /// @notice emits an event when a collateral address for vault type 0 or 2 is whitelisted by the owner address
-    event CoveredCollateralWhitelisted(address indexed collateral, address underlying, bool isPut);
-    /// @notice emits an event when a collateral address for vault type 1 is whitelisted by the owner address
-    event NakedCollateralWhitelisted(address indexed collateral, address underlying, bool isPut);
     /// @notice emits an event when a collateral address is blacklist by the owner address
     event CollateralBlacklisted(address indexed collateral);
     /// @notice emits an event when an oToken is whitelisted by the OtokenFactory module
@@ -90,7 +83,7 @@ contract Whitelist is Ownable {
         address _collateral,
         bool _isPut
     ) external view returns (bool) {
-        bytes32 productHash = keccak256(abi.encode(_underlying, _strike, _collateral, _isPut));
+        bytes32 productHash = _getProductHash(_underlying, _strike, _collateral, _isPut);
 
         return whitelistedProduct[productHash];
     }
@@ -102,38 +95,6 @@ contract Whitelist is Ownable {
      */
     function isWhitelistedCollateral(address _collateral) external view returns (bool) {
         return whitelistedCollateral[_collateral];
-    }
-
-    /**
-     * @notice check if a collateral asset is whitelisted for vault type 0 or 2
-     * @param _collateral asset that is held as collateral against short/written options
-     * @param _underlying asset that is used as the underlying asset for the written options
-     * @param _isPut bool for whether the collateral is to be checked for suitability on a call or put
-     * @return boolean, True if the collateral is whitelisted for vault type 0 or 2
-     */
-    function isCoveredWhitelistedCollateral(
-        address _collateral,
-        address _underlying,
-        bool _isPut
-    ) external view returns (bool) {
-        bytes32 productHash = keccak256(abi.encode(_collateral, _underlying, _isPut));
-        return coveredWhitelistedCollateral[productHash];
-    }
-
-    /**
-     * @notice check if a collateral asset is whitelisted for vault type 1
-     * @param _collateral asset that is held as collateral against short/written options
-     * @param _underlying asset that is used as the underlying asset for the written options
-     * @param _isPut bool for whether the collateral is to be checked for suitability on a call or put
-     * @return boolean, True if the collateral is whitelisted for vault type 1
-     */
-    function isNakedWhitelistedCollateral(
-        address _collateral,
-        address _underlying,
-        bool _isPut
-    ) external view returns (bool) {
-        bytes32 productHash = keccak256(abi.encode(_collateral, _underlying, _isPut));
-        return nakedWhitelistedCollateral[productHash];
     }
 
     /**
@@ -161,8 +122,11 @@ contract Whitelist is Ownable {
         bool _isPut
     ) external onlyOwner {
         require(whitelistedCollateral[_collateral], "Whitelist: Collateral is not whitelisted");
+        require(uint256(ERC20Interface(_underlying).decimals()) <= 18, "Whitelist: Underlying decimals must be 18 or less");
+        require(uint256(ERC20Interface(_strike).decimals()) <= 18, "Whitelist: Strike decimals must be 18 or less");
+        require(uint256(ERC20Interface(_collateral).decimals()) <= 18, "Whitelist: Collateral decimals must be 18 or less");
 
-        bytes32 productHash = keccak256(abi.encode(_underlying, _strike, _collateral, _isPut));
+        bytes32 productHash = _getProductHash(_underlying, _strike, _collateral, _isPut);
 
         whitelistedProduct[productHash] = true;
 
@@ -184,7 +148,7 @@ contract Whitelist is Ownable {
         address _collateral,
         bool _isPut
     ) external onlyOwner {
-        bytes32 productHash = keccak256(abi.encode(_underlying, _strike, _collateral, _isPut));
+        bytes32 productHash = _getProductHash(_underlying, _strike, _collateral, _isPut);
 
         whitelistedProduct[productHash] = false;
 
@@ -200,40 +164,6 @@ contract Whitelist is Ownable {
         whitelistedCollateral[_collateral] = true;
 
         emit CollateralWhitelisted(_collateral);
-    }
-
-    /**
-     * @notice allows the owner to whitelist a collateral address for vault type 0 or 2
-     * @dev can only be called from the owner address. This function is used to whitelist any asset other than Otoken as collateral.
-     * @param _collateral collateral asset address
-     * @param _underlying underlying asset address
-     * @param _isPut bool for whether the collateral is suitable for puts or calls
-     */
-    function whitelistCoveredCollateral(
-        address _collateral,
-        address _underlying,
-        bool _isPut
-    ) external onlyOwner {
-        bytes32 productHash = keccak256(abi.encode(_collateral, _underlying, _isPut));
-        coveredWhitelistedCollateral[productHash] = true;
-        emit CoveredCollateralWhitelisted(_collateral, _underlying, _isPut);
-    }
-
-    /**
-     * @notice allows the owner to whitelist a collateral address for vault type 1
-     * @dev can only be called from the owner address. This function is used to whitelist any asset other than Otoken as collateral.
-     * @param _collateral collateral asset address
-     * @param _underlying underlying asset address
-     * @param _isPut bool for whether the collateral is suitable for puts or calls
-     */
-    function whitelistNakedCollateral(
-        address _collateral,
-        address _underlying,
-        bool _isPut
-    ) external onlyOwner {
-        bytes32 productHash = keccak256(abi.encode(_collateral, _underlying, _isPut));
-        nakedWhitelistedCollateral[productHash] = true;
-        emit NakedCollateralWhitelisted(_collateral, _underlying, _isPut);
     }
 
     /**
@@ -267,5 +197,17 @@ contract Whitelist is Ownable {
         whitelistedOtoken[_otokenAddress] = false;
 
         emit OtokenBlacklisted(_otokenAddress);
+    }
+
+    /**
+     * @dev compute the product hash from its components
+     */
+    function _getProductHash(
+        address _underlying,
+        address _strike,
+        address _collateral,
+        bool _isPut
+    ) internal pure returns (bytes32) {
+        return keccak256(abi.encode(_underlying, _strike, _collateral, _isPut));
     }
 }

@@ -1,0 +1,26 @@
+{
+  "component": "PositionStorageGlobalLib",
+  "main_contract": "PositionStorageGlobalLib",
+  "source_file_count": 19,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa9e35cdcf878623c7a2aa19efebad73634dfb76d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb1c72d544c725dd240aaba4eb48d670ca839ad0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

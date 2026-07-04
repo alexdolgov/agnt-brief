@@ -1,0 +1,42 @@
+{
+  "component": "SignatureVerifier-2",
+  "main_contract": "SignatureVerifier",
+  "source_file_count": 12,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Box-2",
+  "main_contract": "Box",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa7b45d3546b736b04cf80aa5dd10d46c38e83068",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x14323afbc2b82fe58f0d9c203830ee969b4d1be2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

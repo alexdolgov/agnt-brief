@@ -1,15 +1,52 @@
 {
   "component": "Voting",
   "main_contract": "Voting",
-  "source_file_count": 13,
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "source_file_count": 9,
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://assets.railgun.org/docs/audits/2021-11-02%20Hacken.pdf",
+    "https://assets.railgun.org/docs/audits/2021-11-03%20Zokyo.pdf",
+    "https://assets.railgun.org/docs/audits/2022-08-29%20Hashcloak.pdf",
+    "https://assets.railgun.org/docs/audits/2022-09-14%20Zokyo.pdf"
+  ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc480f68a3dcc3edd82134fab45c14a0fcf1da3cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf271318cd7e75660224ff209ae5aa914159d77fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x569c15b356d3ba9c9f407945b12c867f7c3608c9",
+      "address": "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa353bc0454931ac46fd90c8ef27f908ab9e34686",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

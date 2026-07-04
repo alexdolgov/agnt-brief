@@ -1,0 +1,18 @@
+{
+  "component": "TradeImpl-4",
+  "main_contract": "TradeImpl",
+  "source_file_count": 24,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdce03d31d9ad29c3785e61d6f85b31ab3239d379",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "DividendDistribution-3",
+  "main_contract": "DividendDistribution",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7e66ea8e425f0669f651373c85df8415eb38e7fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Permissions-30",
+  "main_contract": "Permissions",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xeeaca9948e38a2bdbb5865646bc0308c9505cbfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

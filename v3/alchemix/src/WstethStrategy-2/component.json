@@ -1,0 +1,21 @@
+{
+  "component": "WstethStrategy-2",
+  "main_contract": "WstethStrategy",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit.pdf",
+    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

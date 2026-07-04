@@ -69,6 +69,8 @@ interface IPancakeV3PoolEvents {
     /// @param sqrtPriceX96 The sqrt(price) of the pool after the swap, as a Q64.96
     /// @param liquidity The liquidity of the pool after the swap
     /// @param tick The log base 1.0001 of price of the pool after the swap
+    /// @param protocolFeesToken0 The protocol fee of token0 in the swap
+    /// @param protocolFeesToken1 The protocol fee of token1 in the swap
     event Swap(
         address indexed sender,
         address indexed recipient,
@@ -77,8 +79,8 @@ interface IPancakeV3PoolEvents {
         uint160 sqrtPriceX96,
         uint128 liquidity,
         int24 tick,
-        uint256 fee0X128,
-        uint256 fee1X128
+        uint128 protocolFeesToken0,
+        uint128 protocolFeesToken1
     );
 
     /// @notice Emitted by the pool for any flashes of token0/token1
@@ -113,10 +115,10 @@ interface IPancakeV3PoolEvents {
     /// @param feeProtocol0New The updated value of the token0 protocol fee
     /// @param feeProtocol1New The updated value of the token1 protocol fee
     event SetFeeProtocol(
-        uint16 feeProtocol0Old,
-        uint16 feeProtocol1Old,
-        uint16 feeProtocol0New,
-        uint16 feeProtocol1New
+        uint32 feeProtocol0Old,
+        uint32 feeProtocol1Old,
+        uint32 feeProtocol0New,
+        uint32 feeProtocol1New
     );
 
     /// @notice Emitted when the collected protocol fees are withdrawn by the factory owner

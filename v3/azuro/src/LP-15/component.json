@@ -1,0 +1,18 @@
+{
+  "component": "LP-15",
+  "main_contract": "LP",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf7c7e23af5708b1a2c3e2aec8ae0f3dfb0f56cd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+import { INonfungiblePositionManager } from
+    "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
+import { Farm } from "contracts/structs/FarmStrategyStructs.sol";
 import { NftPosition } from "contracts/structs/NftFarmStrategyStructs.sol";
 
 interface INftFarmConnector {

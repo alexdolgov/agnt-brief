@@ -844,7 +844,7 @@ abstract contract PlasmaVaultGovernance is IPlasmaVaultGovernance, AccessManaged
     /// - Supports multi-protocol operations
     ///
     /// Security Considerations:
-    /// - Only callable by _FUSE_MANAGER
+    /// - Only callable by ATOMIST_ROLE
     /// - Validates substrate format
     /// - Prevents duplicate grants
     /// - Critical for market access control
@@ -857,7 +857,7 @@ abstract contract PlasmaVaultGovernance is IPlasmaVaultGovernance, AccessManaged
     ///
     /// @param marketId_ The ID of the market
     /// @param substrates_ Array of substrates to grant
-    /// @custom:access _FUSE_MANAGER restricted
+    /// @custom:access ATOMIST_ROLE restricted
     /// @custom:events Emits MarketSubstrateGranted for each substrate
     function grantMarketSubstrates(uint256 marketId_, bytes32[] calldata substrates_) external override restricted {
         PlasmaVaultConfigLib.grantMarketSubstrates(marketId_, substrates_);
@@ -891,7 +891,7 @@ abstract contract PlasmaVaultGovernance is IPlasmaVaultGovernance, AccessManaged
     /// - Cross-protocol dependencies
     ///
     /// Security Considerations:
-    /// - Only callable by FUSE_MANAGER_ROLE
+    /// - Only callable by ATOMIST_ROLE
     /// - Validates array length matching
     /// - Critical for balance integrity
     /// - Affects withdrawal validation
@@ -904,7 +904,7 @@ abstract contract PlasmaVaultGovernance is IPlasmaVaultGovernance, AccessManaged
     ///
     /// @param marketIds_ Array of market IDs to update
     /// @param dependencies_ Array of dependency arrays for each market
-    /// @custom:access FUSE_MANAGER_ROLE restricted
+    /// @custom:access ATOMIST_ROLE restricted
     /// @custom:security Critical for balance consistency
     function updateDependencyBalanceGraphs(
         uint256[] memory marketIds_,

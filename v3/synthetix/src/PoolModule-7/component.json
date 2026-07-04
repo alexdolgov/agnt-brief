@@ -1,0 +1,18 @@
+{
+  "component": "PoolModule-7",
+  "main_contract": "PoolModule",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe3b41fe8769a00c25a88f57cb23d892312c60e0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

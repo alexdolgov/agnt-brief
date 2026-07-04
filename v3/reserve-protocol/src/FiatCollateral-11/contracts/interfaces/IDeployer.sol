@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BlueOak-1.0.0
-pragma solidity 0.8.28;
+pragma solidity 0.8.19;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import "../libraries/Throttle.sol";
@@ -45,6 +45,7 @@ struct DeploymentParams {
     uint48 warmupPeriod; // {s} how long to wait until issuance/trading after regaining SOUND
     bool reweightable; // whether the target amounts in the prime basket can change
     bool enableIssuancePremium; // whether to enable the issuance premium
+    bool enablePermissionlessRefresh; // whether to enable the permissionless refresh
     //
     // === BackingManager ===
     uint48 tradingDelay; // {s} how long to wait until starting auctions after switching basket
@@ -120,6 +121,10 @@ interface IDeployer is IVersioned {
         DeploymentParams calldata params,
         Registries calldata registries
     ) external returns (address);
+
+    /// Deploys a new RTokenAsset instance. Not needed during normal deployment flow
+    /// @param maxTradeVolume {UoA} The maximum trade volume for the RTokenAsset
+    function deployRTokenAsset(IRToken rToken, uint192 maxTradeVolume) external returns (IAsset);
 
     function implementations() external view returns (Implementations memory);
 }

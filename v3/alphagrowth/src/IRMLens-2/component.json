@@ -1,0 +1,18 @@
+{
+  "component": "IRMLens-2",
+  "main_contract": "IRMLens",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35b2fa6206fcc6f653b75832c281bf9d4ebfeac2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

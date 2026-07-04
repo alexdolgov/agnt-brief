@@ -1,0 +1,18 @@
+{
+  "component": "SystemSecurityL1-6",
+  "main_contract": "SystemSecurityL1",
+  "source_file_count": 65,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa287f05761ca1af57df6ae3142eefb04b8493e46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

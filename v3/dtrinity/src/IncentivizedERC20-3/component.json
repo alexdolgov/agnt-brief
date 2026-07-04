@@ -9,7 +9,7 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0xb7cff0c4301cd43b01d96d4d8669550bb50f8635",
+      "address": "0x33e0104a636ab1439842313883b67d14f67173f6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +17,7 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0xca0a90e45a55c4a7e394d1470e0c732b017e37bb",
+      "address": "0xe6114174073b1afcb45d73fe65af0619a3c1fb21",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

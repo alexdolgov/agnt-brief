@@ -1,9 +1,13 @@
 # charm-finance — deployments
 
-40 verified deployment(s) across 17 component(s).
+48 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` | AlphaProVaultFactory | impl | live | no |
+| arbitrum | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | AlphaProVaultFactory | impl | live | no |
+| base | `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` | AlphaProVaultFactory | impl | live | no |
+| base | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | AlphaProVaultFactory | impl | live | no |
 | chain-80094 | `0x0a4b7ac0723d0d08de255aa9d574958c66e9baea` | AlphaProVault | impl | live | yes |
 | chain-80094 | `0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137` | AlphaProVault | impl | live | yes |
 | chain-80094 | `0x78f25a5f78092bd13109a2f889cf324907b4ad15` | AlphaProVault | impl | live | yes |
@@ -29,6 +33,7 @@
 | ethereum | `0x5503bb32a0e37a1f0b8f8fe2006abc33c779a6fd` | PassiveStrategy | impl | inactive | no |
 | ethereum | `0x55535c4c56f6bf373e06c43e44c0356aafd0d21a` | AlphaVault | impl | inactive | no |
 | ethereum | `0x574467e54f1e145d0d1a9a96560a7704fedad1cd` | OptionRegistry | impl | inactive | no |
+| ethereum | `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` | AlphaProVaultFactory | impl | live | no |
 | ethereum | `0x63ac156aab82af415dd24594529d13e47d11a49e` | CubeToken | impl | inactive | no |
 | ethereum | `0x70de9a5c1759c863acae67e426b88fa862113034` | OptionRegistry | impl | inactive | no |
 | ethereum | `0x8209df5a847c321d26ecb155ca76f95224c5dcd9` | PassiveStrategy | impl | inactive | no |
@@ -43,16 +48,7 @@
 | ethereum | `0xe72f3e105e475d7db3a003ffa377afae9c2c6c11` | AlphaVault | impl | live | no |
 | ethereum | `0xe86e8f373dffee8bdc2bcc9ba1a1f860b6430204` | CubePool | impl | inactive | no |
 | ethereum | `0xf3e90025276fcf0955aa66f8f07f090380410d80` | OptionMarket | impl | inactive | no |
+| ethereum | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | AlphaProVaultFactory | impl | live | no |
+| polygon | `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` | AlphaProVaultFactory | impl | live | no |
 | polygon | `0x8c5fa599334fd98650faecb4c5b2bc40a8c962ed` | ManagerStore | impl | inactive | no |
-
-## Source unavailable (8)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`
-- arbitrum `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`
-- base `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`
-- base `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`
-- ethereum `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`
-- ethereum `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`
-- polygon `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`
-- polygon `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`
+| polygon | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | AlphaProVaultFactory | impl | live | no |

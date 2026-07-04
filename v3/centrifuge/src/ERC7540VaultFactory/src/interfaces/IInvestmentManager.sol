@@ -52,9 +52,6 @@ interface IInvestmentManager is IMessageHandler, IRecoverable {
             bool pendingCancelRedeemRequest
         );
 
-    /// @notice Address of the escrow
-    function escrow() external view returns (address);
-
     /// @notice Updates contract parameters of type address.
     /// @param what The bytes32 representation of 'gateway' or 'poolManager'.
     /// @param data The new contract address.

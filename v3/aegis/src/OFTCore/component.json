@@ -2,10 +2,26 @@
   "component": "OFTCore",
   "main_contract": "OFTCore",
   "source_file_count": 37,
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7552d1b6463f76ddf6dfd919970753bd689b82a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf12b0ae5a72d7b8a8ec675f3e76e2db56143565",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

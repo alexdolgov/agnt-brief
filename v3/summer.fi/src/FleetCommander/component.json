@@ -2,7 +2,7 @@
   "component": "FleetCommander",
   "main_contract": "FleetCommander",
   "source_file_count": 78,
-  "deployment_count": 10,
+  "deployment_count": 15,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -82,6 +82,46 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xe9cda459bed6dcfb8ac61cd8ce08e2d52370cb06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x507a2d9e87dbd3076e65992049c41270b47964f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x64db8f51f1bf7064bb5a361a7265f602d348e0f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x98c49e13bf99d7cad8069faa2a370933ec9ecf17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f63cfea7458221cb3a0eee2f31f7424ad34bb58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x98c49e13bf99d7cad8069faa2a370933ec9ecf17",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

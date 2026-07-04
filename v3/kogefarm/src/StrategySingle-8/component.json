@@ -1,0 +1,18 @@
+{
+  "component": "StrategySingle-8",
+  "main_contract": "StrategySingle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x78a714e456f6466530d0d7d882a8a3a922849fdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

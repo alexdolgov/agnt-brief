@@ -14,7 +14,7 @@ contract SymmioDepositorLpToken is
     AccessControlEnumerable
 {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
-    uint8 private _decimals = 6;
+    uint8 private _decimals = 18;
 
     constructor() ERC20("RasaOnChainSymmioLP", "smUSD") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);

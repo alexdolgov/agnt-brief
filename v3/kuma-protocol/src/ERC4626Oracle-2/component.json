@@ -1,0 +1,18 @@
+{
+  "component": "ERC4626Oracle-2",
+  "main_contract": "ERC4626Oracle",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xabd06d7f15123d13c985315ad73a3acab06afa41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

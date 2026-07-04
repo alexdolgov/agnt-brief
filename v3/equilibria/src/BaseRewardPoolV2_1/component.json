@@ -2,17 +2,73 @@
   "component": "BaseRewardPoolV2_1",
   "main_contract": "BaseRewardPoolV2_1",
   "source_file_count": 21,
-  "deployment_count": 1,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0x1679fe95b11959c694af8627e5360267e146723b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd8a365049bb55917b471f7046bcde37eb72f39b2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8793828112c4b5404d5f2affdccd9991411e942b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x972eb68b0a9cf05a72ae48dc9d086230304b0bee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1f441781f95aa89001e7b8c4e8c2971a5da9217b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xb213f29fbcfa2a71a871011ace811ddd9d1247b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9be3931817b25ab5f0269867b054762a7f68b88c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x387aa20d53ac8e806eef0e8528a9cb88f2100f6c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x811d9872788cc7f85602ea08108f689f406e3e8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

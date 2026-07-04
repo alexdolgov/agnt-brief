@@ -34,6 +34,7 @@ library RebalanceLogic {
     error InvalidTickRange();
     error DuplicatedRange(IMultiPositionManager.Range range);
     error InvalidAggregator();
+    error StrategyDoesNotSupportWeights();
     error InMinLengthMismatch(uint256 provided, uint256 required);
     error InsufficientTokensForSwap();
     error InsufficientOutput();
@@ -51,6 +52,7 @@ library RebalanceLogic {
         uint256 weight1;
         bool useCarpet;
         uint24 limitWidth;
+        int24 limitReferenceTick;
         bool useAssetWeights;
     }
 
@@ -149,22 +151,8 @@ library RebalanceLogic {
         // Resolve strategy parameters
         ctx.resolvedStrategy = params.strategy != address(0) ? params.strategy : s.lastStrategyParams.strategy;
 
-        if (params.center == type(int24).max) {
-            (, int24 currentTick,,) = poolManager.getSlot0(s.poolKey.toId());
-            // Always round down to ensure the range contains the current tick
-            int24 compressed = currentTick / s.poolKey.tickSpacing;
-            if (currentTick < 0 && currentTick % s.poolKey.tickSpacing != 0) {
-                compressed--; // Round down for negative ticks with remainder
-            }
-            ctx.center = compressed * s.poolKey.tickSpacing;
-        } else {
-            // Snap to tickSpacing grid using floor division (handles negatives correctly)
-            int24 tickSpacing = s.poolKey.tickSpacing;
-            ctx.center = (params.center / tickSpacing) * tickSpacing;
-            if (params.center < 0 && params.center % tickSpacing != 0) {
-                ctx.center -= tickSpacing;
-            }
-        }
+        (, int24 currentTick,,) = poolManager.getSlot0(s.poolKey.toId());
+        ctx.center = resolveAndClampCenterTick(params.center, currentTick, s.poolKey.tickSpacing);
 
         ctx.tLeft = params.tLeft;
         ctx.tRight = params.tRight;
@@ -177,6 +165,7 @@ library RebalanceLogic {
         } else {
             ctx.limitWidth = params.limitWidth;
         }
+        ctx.limitReferenceTick = params.limitReferenceTick;
 
         // Get strategy interface
         if (ctx.resolvedStrategy == address(0)) revert NoStrategySpecified();
@@ -253,10 +242,9 @@ library RebalanceLogic {
                 supportsWeightedDist = supported;
             } catch {}
 
-            // Use default weights if needed
+            // If strategy doesn't support explicit weights, revert when non-default weights are provided.
             if (!params.useCarpet && !supportsWeightedDist && (params.weight0 != 0.5e18 || params.weight1 != 0.5e18)) {
-                params.weight0 = 0.5e18;
-                params.weight1 = 0.5e18;
+                revert StrategyDoesNotSupportWeights();
             }
         }
 
@@ -335,6 +323,7 @@ library RebalanceLogic {
             weight1: uint120(ctx.weight1),
             useCarpet: ctx.useCarpet,
             useSwap: useSwap,
+            limitReferenceTick: ctx.limitReferenceTick,
             useAssetWeights: ctx.useAssetWeights
         });
     }
@@ -724,11 +713,13 @@ library RebalanceLogic {
             uint256 token0Needed = 0;
             if (sqrtPriceX96 < sqrtPriceUpper && liquidityFrom1 > 0) {
                 // Calculate how much token0 would be needed with this liquidity
-                token0Needed = FullMath.mulDiv(
-                    liquidityFrom1,
-                    sqrtPriceUpper - sqrtPriceX96,
-                    FullMath.mulDiv(sqrtPriceUpper, sqrtPriceX96, FixedPoint96.Q96)
-                );
+                uint256 denom = FullMath.mulDiv(sqrtPriceUpper, sqrtPriceX96, FixedPoint96.Q96);
+                if (denom == 0) {
+                    uint256 scaled = FullMath.mulDiv(liquidityFrom1, sqrtPriceUpper - sqrtPriceX96, sqrtPriceUpper);
+                    token0Needed = FullMath.mulDiv(scaled, FixedPoint96.Q96, sqrtPriceX96);
+                } else {
+                    token0Needed = FullMath.mulDiv(liquidityFrom1, sqrtPriceUpper - sqrtPriceX96, denom);
+                }
             }
 
             // Python: if x<position_x:  #if token y is actually in excess
@@ -893,11 +884,14 @@ library RebalanceLogic {
                     // Calculate token0 needed with this liquidity
                     uint256 token0Needed = 0;
                     if (sqrtPriceX96 < sqrtPriceUpper && liquidityFrom1 > 0) {
-                        token0Needed = FullMath.mulDiv(
-                            liquidityFrom1,
-                            sqrtPriceUpper - sqrtPriceX96,
-                            FullMath.mulDiv(sqrtPriceUpper, sqrtPriceX96, FixedPoint96.Q96)
-                        );
+                        uint256 denom = FullMath.mulDiv(sqrtPriceUpper, sqrtPriceX96, FixedPoint96.Q96);
+                        if (denom == 0) {
+                            uint256 scaled =
+                                FullMath.mulDiv(liquidityFrom1, sqrtPriceUpper - sqrtPriceX96, sqrtPriceUpper);
+                            token0Needed = FullMath.mulDiv(scaled, FixedPoint96.Q96, sqrtPriceX96);
+                        } else {
+                            token0Needed = FullMath.mulDiv(liquidityFrom1, sqrtPriceUpper - sqrtPriceX96, denom);
+                        }
                     }
 
                     // Check if token0 is actually limiting
@@ -1125,6 +1119,30 @@ library RebalanceLogic {
             info.reserve1 = oneReserve1;
             info.liquidity = oneLiquidity;
         }
+    }
+
+    /**
+     * @notice Resolve center tick from params and clamp to Uniswap usable tick bounds.
+     * @dev Floor-snaps to tick spacing first, then clamps to [minUsableTick, maxUsableTick].
+     */
+    function resolveAndClampCenterTick(int24 centerTick, int24 currentTick, int24 tickSpacing)
+        public
+        pure
+        returns (int24)
+    {
+        int24 baseTick = centerTick == type(int24).max ? currentTick : centerTick;
+        int24 compressed = baseTick / tickSpacing;
+        if (baseTick < 0 && baseTick % tickSpacing != 0) {
+            compressed -= 1;
+        }
+
+        int24 resolvedCenter = compressed * tickSpacing;
+        int24 minUsable = TickMath.minUsableTick(tickSpacing);
+        int24 maxUsable = TickMath.maxUsableTick(tickSpacing);
+
+        if (resolvedCenter < minUsable) return minUsable;
+        if (resolvedCenter > maxUsable) return maxUsable;
+        return resolvedCenter;
     }
 
     function _roundDownTick(int24 tick, int24 tickSpacing) private pure returns (int24) {
@@ -1358,18 +1376,14 @@ library RebalanceLogic {
         );
 
         // Burn old positions and set up new ones
-        _burnAndSetupPositions(s, poolManager, baseRanges, limitWidth, outMin, totalSupply);
+        _burnAndSetupPositions(s, poolManager, baseRanges, limitWidth, rebalanceParams.limitReferenceTick, outMin, totalSupply);
 
         // Ensure inMin has correct length for slippage protection
         // If empty array passed, create zero-filled array (no slippage protection)
         if (inMin.length == 0) {
             inMin = new uint256[2][](baseRanges.length);
         } else if (inMin.length != baseRanges.length) {
-            if (rebalanceParams.useCarpet) {
-                inMin = new uint256[2][](baseRanges.length);
-            } else {
-                revert InMinLengthMismatch(inMin.length, baseRanges.length);
-            }
+            revert InMinLengthMismatch(inMin.length, baseRanges.length);
         }
 
         // Mint new positions and capture position data
@@ -1438,6 +1452,7 @@ library RebalanceLogic {
         IPoolManager poolManager,
         IMultiPositionManager.Range[] memory baseRanges,
         uint24 limitWidth,
+        int24 limitReferenceTick,
         uint256[2][] memory outMin,
         uint256 totalSupply
     ) private {
@@ -1460,7 +1475,7 @@ library RebalanceLogic {
 
         // Set limit ranges
         (, int24 curTick,,) = poolManager.getSlot0(s.poolId);
-        PositionLogic.setLimitRanges(s, limitWidth, baseRanges, s.poolKey.tickSpacing, curTick);
+        PositionLogic.setLimitRanges(s, limitWidth, limitReferenceTick, baseRanges, s.poolKey.tickSpacing, curTick);
         allRanges[baseRanges.length] = s.limitPositions[0];
         allRanges[baseRanges.length + 1] = s.limitPositions[1];
 

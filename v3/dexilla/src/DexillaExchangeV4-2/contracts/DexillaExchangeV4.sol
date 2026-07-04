@@ -53,7 +53,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
     event TradingPaused(bool oldPauseTrading, bool newPauseTrading);
 
     modifier resetCounter() {
-        // Using this modifier to deal native token transfer using Multicall
+        // Using this modifier to deal native token transfer when using multi order execution
         _;
         _counter = 0;
     }
@@ -89,6 +89,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param price The price of the order.
      * @param quantity The quantity of the order.
      * @dev This function is used to create an order. It takes the side, price, and quantity as parameters.
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function createOrder(uint8 side, uint price, uint quantity) public payable nonReentrant whenNotPausedTrading {
         _createOrder(side, price, quantity);
@@ -104,6 +105,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param r The R part of the permit signature.
      * @param s The S part of the permit signature.
      * @dev This function is used to create an order with a permit, which allows spending the user's tokens.
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function createOrderWithPermit(
         uint8 side,
@@ -127,6 +129,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param deadline The deadline for the permit signature.
      * @param signature The signature containing the permit data.
      * @dev This function is used to create an order with a permit, which allows spending the user's tokens.
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function createOrderWithPermit2(
         uint8 side,
@@ -146,6 +149,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param price The price of the order.
      * @param quantity The quantity of the order.
      * @dev This function is used to execute an order. It takes an array of maker addresses,
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function executeOrder(
         address[] memory makers,
@@ -167,6 +171,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param r The R part of the permit signature.
      * @param s The S part of the permit signature.
      * @dev This function is used to execute an order with a permit, which allows spending the user's tokens.
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function executeOrderWithPermit(
         address[] memory makers,
@@ -196,6 +201,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param deadline The deadline for the permit signature.
      * @param signature The signature containing the permit data.
      * @dev This function is used to execute an order with a permit, which allows spending the user's tokens.
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function executeOrderWithPermit2(
         address[] memory makers,
@@ -219,6 +225,7 @@ contract DexillaExchangeV4 is AccessControl, ReentrancyGuard, Multicall, SelfPer
      * @param price The price of the order.
      * @param desiredQuantity The desired quantity to adjust the order to.
      * @dev This function is used to adjust the size of an existing order. It takes the side, price,
+     * @notice DO NOT PASS msg.value MORE THAN THE ACTUAL NEEDED AMOUNT, IT WILL BE LOST FOREVER.
      */
     function adjustOrderSize(
         uint8 side,

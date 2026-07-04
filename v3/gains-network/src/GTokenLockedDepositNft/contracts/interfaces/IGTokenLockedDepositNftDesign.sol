@@ -1,14 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.23;
+import '../interfaces/IGToken.sol';
 
-import "./IGToken.sol";
+pragma solidity 0.8.17;
 
-/**
- * @dev Interface for GTokenLockedDepositNftDesign contract
- */
-interface IGTokenLockedDepositNftDesign {
+interface IGTokenLockedDepositNftDesign{
     function buildTokenURI(
-        uint256 tokenId,
+        uint tokenId,
         IGToken.LockedDeposit memory lockedDeposit,
         string memory gTokenSymbol,
         string memory assetSymbol,

@@ -1,0 +1,20 @@
+{
+  "component": "SectorTimelock-2",
+  "main_contract": "SectorTimelock",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1194552491-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Faizh7QHFZ0AM4JGHZRn6%2Fuploads%2Fj3nsS4VbUkK4j5ucSRq8%2FSector_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x7115f16c3db03056f67963ca48e227c3cde59363",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

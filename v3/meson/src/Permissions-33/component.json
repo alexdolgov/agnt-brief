@@ -1,0 +1,18 @@
+{
+  "component": "Permissions-33",
+  "main_contract": "Permissions",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x523cc5f9c2c2348a0e2fb4b7efca5d0a07902831",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

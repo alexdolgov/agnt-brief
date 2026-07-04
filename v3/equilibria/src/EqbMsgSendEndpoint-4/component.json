@@ -1,0 +1,18 @@
+{
+  "component": "EqbMsgSendEndpoint-4",
+  "main_contract": "EqbMsgSendEndpoint",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x920873e5b302a619c54c908adfb77a1c4256a3b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

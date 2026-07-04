@@ -39,8 +39,5 @@ interface ISyncSwapper {
      * @param fromAddress The address from which the swap originates
      * @param swapData The data associated with the swap that needs to be validated
      */
-    function validate(
-        address fromAddress,
-        ISwapRouter.SwapData memory swapData
-    ) external view;
+    function validate(address fromAddress, ISwapRouter.SwapData memory swapData) external view;
 }

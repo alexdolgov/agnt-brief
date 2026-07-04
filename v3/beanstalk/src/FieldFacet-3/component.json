@@ -1,0 +1,18 @@
+{
+  "component": "FieldFacet-3",
+  "main_contract": "FieldFacet",
+  "source_file_count": 79,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe6f9ce8737fa856e2aeed2925db39fcac25c6513",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

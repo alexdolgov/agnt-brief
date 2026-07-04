@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.0;
 
 import { PositionState } from "../state/PositionState.sol";
 
@@ -127,25 +127,6 @@ abstract contract AbstractBase {
     function _burn(uint256[] memory balances, address positionManager, PositionState memory position) internal virtual;
 
     /* ///////////////////////////////////////////////////////////////
-                    DECREASE LIQUIDITY LOGIC
-    /////////////////////////////////////////////////////////////// */
-
-    /**
-     * @notice Decreases liquidity of the Liquidity Position.
-     * @param balances The balances of the underlying tokens.
-     * @param positionManager The contract address of the Position Manager.
-     * @param position A struct with position and pool related variables.
-     * @param liquidity The amount of liquidity to decrease.
-     * @dev Must update the balances and delta liquidity after the decrease.
-     */
-    function _decreaseLiquidity(
-        uint256[] memory balances,
-        address positionManager,
-        PositionState memory position,
-        uint128 liquidity
-    ) internal virtual;
-
-    /* ///////////////////////////////////////////////////////////////
                              SWAP LOGIC
     /////////////////////////////////////////////////////////////// */
 
@@ -187,7 +168,7 @@ abstract contract AbstractBase {
     /////////////////////////////////////////////////////////////// */
 
     /**
-     * @notice Increases liquidity of the Liquidity Position.
+     * @notice Swaps one token for another to rebalance the Liquidity Position.
      * @param balances The balances of the underlying tokens.
      * @param positionManager The contract address of the Position Manager.
      * @param position A struct with position and pool related variables.

@@ -1,0 +1,18 @@
+{
+  "component": "MultiSourceLoan-2",
+  "main_contract": "MultiSourceLoan",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x6ad675624ec8320e5806858cd5db101a0b927fd9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

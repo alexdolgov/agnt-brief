@@ -1,20 +1,23 @@
 {
   "component": "BridgeEndpoint-3",
   "main_contract": "BridgeEndpoint",
-  "source_file_count": 1,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://cdn.brotocol.xyz/pdf/250825_Defense_by_Thesis_Brotocol_BridgeEndPoint_Smart_Contract.pdf",
-    "https://cdn.xlink.network/pdf/ALEX_Audit_Bridge_2023-04.pdf",
-    "https://cdn.xlink.network/pdf/ALEX_Audit_bridge_coinfabrik_202212.pdf",
-    "https://cdn.xlink.network/pdf/XLink_Bridge_Endpoint_Audit_2024-06.pdf"
-  ],
+  "source_file_count": 44,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0xa18d9690d03dfbb18ea85588ec5fd2a914b2aac9",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79d1c91053baceced5c796ab8a765e4d5ab38e8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf6af0a12c7983a297d8477f7f3ae38d58ad6b600",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

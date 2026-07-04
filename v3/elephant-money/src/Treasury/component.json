@@ -1,17 +1,23 @@
 {
   "component": "Treasury",
   "main_contract": "Treasury",
-  "source_file_count": 3,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://sourcehat.com/audits/ElephantMoney"
-  ],
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x2da1a94e7bda3a71342a19643f94443641b5267d",
+      "address": "0xaf0980a0f52954777c491166e7f40db2b6fbb4fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcb5a02bb3a38e92e591d323d6824586608ce8ce4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

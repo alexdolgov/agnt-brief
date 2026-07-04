@@ -1,0 +1,42 @@
+{
+  "component": "SpokeErc20Token-2",
+  "main_contract": "SpokeErc20Token",
+  "source_file_count": 25,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb39c03297e87032ff69f4d42a6698e4c4a934449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x12db9758c4d9902334c523b94e436258eb54156f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4db12f554623e4b0b3f5bacf1c8490d4493380a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1b2a8d56967d00700dd5c94e27b1a116a1def8df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

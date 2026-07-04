@@ -1,0 +1,18 @@
+{
+  "component": "SwapEthWrapper-3",
+  "main_contract": "SwapEthWrapper",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8c7d5f8a8e154e1b59c92d8fb71314a43f32ef7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

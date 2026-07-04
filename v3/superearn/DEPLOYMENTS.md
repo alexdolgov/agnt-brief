@@ -1,6 +1,6 @@
 # superearn — deployments
 
-122 verified deployment(s) across 18 component(s).
+124 verified deployment(s) across 19 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,7 +9,7 @@
 | ethereum | `0x04d907db8b48eb87290426f757cd93c33c9efcc4` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x05728b5710d2cbce93e25faeae0a1dc107ea6ea5` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x065e75ba08c0c869624d328c68f413d8cee7dcee` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x0becde49394d537b240c0272a7c5fefc932691fe` | Vyper_contract | impl | live | no |
+| ethereum | `0x0becde49394d537b240c0272a7c5fefc932691fe` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x0d4ce6ae89930713463256ab4216291271d30ef7` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x0e79ccf5e150c75baa4250456fb405ecec0c99dc` | LightKeeper | impl | live | no |
 | ethereum | `0x0f4841b8b3796f406fa44b17d89465657533732c` | BridgeAccountant | impl | inactive | yes |
@@ -67,6 +67,7 @@
 | ethereum | `0x76fd800616e6885e275ab4bf997a966fb16ff95c` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x7876a2faf6aad1f6f8e47ad612d9472a4821dfda` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x7d0c55e2f838ce2e9b5300b491e9c34be94870f7` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x7eec57beb20576cb35c500ae5826e16960aa878b` | Vyper_contract | impl | live | no |
 | ethereum | `0x80f4213809420e9751cbe2222fa3f50a3d714663` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x84e63d6ae32654bcdd5301e01e703959ac7a622c` | StUSDSAssetsProvider | impl | live | no |
 | ethereum | `0x8c82b2fec291a43e41aa87669eaef01f4efaa3b2` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -78,6 +79,7 @@
 | ethereum | `0x947ae1c8eaac50da2bd14e3230361f986a2a59eb` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x969e7bcd7f15baeaf999c9aa1c0a585d6b7335fa` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x9cc64f1fc21a43d00f0887d4af0aec927f2bef8f` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x9e3e70f4d09bcfe08f456c426eb90f7aa6f70df2` | Vyper_contract | impl | live | no |
 | ethereum | `0x9ef977e4521ca735a870cbfa8ba225f558866b4b` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x9f9798a090b34fa4432f0e6d4f590aa7a1d329ba` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xa12cc7aef211435d42490e111fce3c2ea97ece6f` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -126,9 +128,3 @@
 | ethereum | `0xf7a6a98de57d0eac06c4e6a05e8da10a6eef0bdf` | LightKeeper | proxy | live | no |
 | ethereum | `0xfbf57ce5d5f8a141277a2b159cf0d99ae9350c89` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xffbb37093493d49c864e097eeb2b6695f8eda9ac` | TransparentUpgradeableProxy | proxy | live | yes |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x7eec57beb20576cb35c500ae5826e16960aa878b`
-- ethereum `0x9e3e70f4d09bcfe08f456c426eb90f7aa6f70df2`

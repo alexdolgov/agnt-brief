@@ -2,10 +2,74 @@
   "component": "ShortsTracker",
   "main_contract": "ShortsTracker",
   "source_file_count": 6,
-  "deployment_count": 1,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x463211aaf70b8505efdd344ac99ec744180923ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9566d2ef3006781ee81c4ee366598e805a4aa9d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xa12a2789ef3c84a47ebd87fe570ca597d44e59ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc5e99147c4da5a6562ea43bbb8c6aafec7ab661b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc80b46d5fcc3832c8193da44c63b9a4817c6d99a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xce0a0e2bba0f2168dd614b1414cfe707c13aa081",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe727c1c2d6dbfa1a3dade95caebe2fdc00e98eed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xead67152e576814179ff71ea1b8f63c68eccbea3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "chain-80094",
       "chain_id": 80094,

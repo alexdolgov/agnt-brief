@@ -2,7 +2,7 @@
   "component": "TetherTokenOFTExtension",
   "main_contract": "TetherTokenOFTExtension",
   "source_file_count": 22,
-  "deployment_count": 4,
+  "deployment_count": 16,
   "audited": true,
   "audits_covering": [
     "https://github.com/Everdawn-Labs/usdt0-audit-reports/blob/main/ChainSecurity/ChainSecurity_USDT0_Flare_audit.pdf",
@@ -40,6 +40,102 @@
       "chain": "chain-130",
       "chain_id": 130,
       "address": "0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6d205337f45d6850c3c3006e28d5b52c8a432c35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe1ad845d93853fff44990ae0dcecd8575293681e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xe1ad845d93853fff44990ae0dcecd8575293681e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9001dbe4d68d36ab87923a2a9dfb0c745fd25001",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc6bc407706b7140ee8eef2f86f9504651b63e7f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd9492653457a69e9f4987db43d7fa0112e620cb4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf1815bd50389c46847f0bda824ec8da914045d14",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

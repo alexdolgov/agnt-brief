@@ -1,15 +1,31 @@
 {
   "component": "V3Utils-3",
   "main_contract": "V3Utils",
-  "source_file_count": 41,
-  "deployment_count": 1,
+  "source_file_count": 42,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x371a339d21a45d874f1399a4e060b6931f423e8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x81835416ba59810cf0716ae2b1334f2ed6c53392",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x7d1f9fc22bed0798cda3fdb18b14a96fc838b9e1",
+      "address": "0x5b2f7cc65f8eb6222289c714547b9ab22db86be5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "BurnableMintableCappedERC20-2",
+  "main_contract": "BurnableMintableCappedERC20",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb448ec505c924944ca8b2c55ef05c299ee0781df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

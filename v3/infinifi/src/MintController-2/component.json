@@ -1,0 +1,18 @@
+{
+  "component": "MintController-2",
+  "main_contract": "MintController",
+  "source_file_count": 48,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x6f8a9eb6516eae5b8b3f8cc95ae4c79f4c33bc66",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

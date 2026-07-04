@@ -7,12 +7,12 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x1a3752eb5db6b2ac0207ce3847f18743d3facca5",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6a31b6aea4d26a19bf479b5032d9ddc481187e6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "component": "RngWitnet-6",
+  "main_contract": "RngWitnet",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x4d971a28bb23c6354f7cf1f4666c34b00e94f608",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

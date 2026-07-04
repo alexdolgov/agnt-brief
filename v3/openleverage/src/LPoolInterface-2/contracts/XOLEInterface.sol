@@ -56,6 +56,7 @@ contract XOLEStorage {
     uint public devFundRatio; // ex. 5000 => 50%
 
     // user => reward
+    // useless
     mapping(address => uint256) public rewards;
 
     // useless
@@ -66,10 +67,13 @@ contract XOLEStorage {
 
     uint public withdrewReward;
 
+    // useless
     uint public lastUpdateTime;
 
+    // useless
     uint public rewardPerTokenStored;
 
+    // useless
     mapping(address => uint256) public userRewardPerTokenPaid;
 
 
@@ -109,22 +113,30 @@ contract XOLEStorage {
 
 
     event RewardAdded(address fromToken, uint convertAmount, uint reward);
+
     event RewardConvert(address fromToken, address toToken, uint convertAmount, uint returnAmount);
+
+    event RewardPaid (
+        address paidTo,
+        uint256 amount
+    );
 
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     event Deposit (
         address indexed provider,
         uint256 value,
-        uint256 indexed locktime,
+        uint256 unlocktime,
         int128 type_,
-        uint256 ts
+        uint256 prevBalance,
+        uint256 balance
     );
 
     event Withdraw (
         address indexed provider,
         uint256 value,
-        uint256 ts
+        uint256 prevBalance,
+        uint256 balance
     );
 
     event Supply (
@@ -132,17 +144,12 @@ contract XOLEStorage {
         uint256 supply
     );
 
-    event RewardPaid (
-        address paidTo,
-        uint256 amount
-    );
-
     event FailedDelegateBySig(
         address indexed delegatee,
-        uint indexed nonce, 
+        uint indexed nonce,
         uint expiry,
-        uint8 v, 
-        bytes32 r, 
+        uint8 v,
+        bytes32 r,
         bytes32 s
     );
 }
@@ -150,15 +157,19 @@ contract XOLEStorage {
 
 interface XOLEInterface {
 
+    function shareableTokenAmount() external view returns (uint256);
+
+    function claimableTokenAmount() external view returns (uint256);
+
     function convertToSharingToken(uint amount, uint minBuyAmount, bytes memory data) external;
 
     function withdrawDevFund() external;
 
-    function earned(address account) external view returns (uint);
-
-    function withdrawReward() external;
-
     /*** Admin Functions ***/
+
+    function withdrawCommunityFund(address to) external;
+
+    function withdrawOle(address to) external;
 
     function setDevFundRatio(uint newRatio) external;
 
@@ -166,15 +177,27 @@ interface XOLEInterface {
 
     function setDexAgg(DexAggregatorInterface newDexAgg) external;
 
+    function setShareToken(address _shareToken) external;
+
+    function setOleLpStakeToken(address _oleLpStakeToken) external;
+
+    function setOleLpStakeAutomator(address _oleLpStakeAutomator) external;
+
     // xOLE functions
 
     function create_lock(uint256 _value, uint256 _unlock_time) external;
 
+    function create_lock_for(address to, uint256 _value, uint256 _unlock_time) external;
+
     function increase_amount(uint256 _value) external;
+
+    function increase_amount_for(address to, uint256 _value) external;
 
     function increase_unlock_time(uint256 _unlock_time) external;
 
     function withdraw() external;
+
+    function withdraw_automator(address owner) external;
 
     function balanceOf(address addr) external view returns (uint256);
 

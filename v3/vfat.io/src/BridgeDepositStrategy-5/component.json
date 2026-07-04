@@ -1,23 +1,31 @@
 {
   "component": "BridgeDepositStrategy-5",
   "main_contract": "BridgeDepositStrategy",
-  "source_file_count": 1,
-  "deployment_count": 2,
+  "source_file_count": 17,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x46d70ffdc1487107fec4471b3157d22d1f582766",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0cc462c7e86ee484e640ab298fb63dbcaacef977",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0xd737c5023f217c95a96af3896f8a51cbc7704d87",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x108e1486c1db04ade6f6261ab322b8f19fb9ccbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa919163bcf17de88ae78fb7950f6cb398f8337c5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

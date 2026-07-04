@@ -1,0 +1,18 @@
+{
+  "component": "PoolManager-3",
+  "main_contract": "PoolManager",
+  "source_file_count": 44,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

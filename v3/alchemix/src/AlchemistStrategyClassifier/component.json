@@ -1,16 +1,22 @@
 {
   "component": "AlchemistStrategyClassifier",
   "main_contract": "AlchemistStrategyClassifier",
-  "source_file_count": 5,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf"
-  ],
+  "source_file_count": 2,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb7d25b0bfd1585a797f6bf7d7ccba26e77253cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x3c28ba0d3f400b29f75b5c79dca0614cf5ce3a70",
       "is_proxy": false,
       "implementation_address": null,

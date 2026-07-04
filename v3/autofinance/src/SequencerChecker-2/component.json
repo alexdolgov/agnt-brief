@@ -1,0 +1,18 @@
+{
+  "component": "SequencerChecker-2",
+  "main_contract": "SequencerChecker",
+  "source_file_count": 58,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x564c39c2c5d120724da31d1428773c1aead23535",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

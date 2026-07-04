@@ -1,0 +1,18 @@
+{
+  "component": "GmxV2Library-5",
+  "main_contract": "GmxV2Library",
+  "source_file_count": 73,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbafd5327d84b9838347f1a5528b281772e874fb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

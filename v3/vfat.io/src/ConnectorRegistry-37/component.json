@@ -1,0 +1,18 @@
+{
+  "component": "ConnectorRegistry-37",
+  "main_contract": "ConnectorRegistry",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x5225cb0a72cf263ea65560f036d4b4f3660d52a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

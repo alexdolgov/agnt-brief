@@ -1,0 +1,26 @@
+{
+  "component": "OnChainVault-2",
+  "main_contract": "OnChainVault",
+  "source_file_count": 20,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x57790b276194d0637021d31c14546a800664b632",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9520f2c58ee46a6cbf851f8cc6da687acb93375c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

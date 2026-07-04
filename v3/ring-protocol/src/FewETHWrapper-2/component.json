@@ -1,0 +1,26 @@
+{
+  "component": "FewETHWrapper-2",
+  "main_contract": "FewETHWrapper",
+  "source_file_count": 11,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x20e6b1260d12910c0ab13c1abebcfe24ae9c4fe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdb671f7a2a5dd3ea1a98ac585e5f7834a16db8e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

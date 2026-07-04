@@ -1,0 +1,18 @@
+{
+  "component": "StakingPools-4",
+  "main_contract": "StakingPools",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa4e7be054000603b82b79208ac3ee5428554caf6",
+      "is_proxy": true,
+      "implementation_address": "0x8660deec15fb856380549dfcb6237f75bb063a8d",
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "component": "AmmVault",
   "main_contract": "AmmVault",
   "source_file_count": 19,
-  "deployment_count": 12,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -57,14 +57,6 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x6c7fd4321183b542e81bcc7de4dfb88f9dbca29f",
-      "is_proxy": true,
-      "implementation_address": "0x9f729f767528cbd84d797d87e5e1cbd05d66393a",
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
       "address": "0x76711e9f14254071ac8767ae675fecf793c22beb",
       "is_proxy": false,
       "implementation_address": null,
@@ -84,14 +76,6 @@
       "address": "0x9d3abeaf22ddf68e72b865ca3b23ed880a3be41f",
       "is_proxy": true,
       "implementation_address": "0x63d6dd43f6854a06548bc88e890c9afff5d29f4b",
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xb484027cb0c538538bad2be492714154f9196f93",
-      "is_proxy": true,
-      "implementation_address": "0x9f729f767528cbd84d797d87e5e1cbd05d66393a",
       "liveness": "live"
     },
     {

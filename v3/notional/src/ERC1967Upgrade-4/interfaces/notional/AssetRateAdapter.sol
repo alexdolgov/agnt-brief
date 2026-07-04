@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BSUL-1.1
+// SPDX-License-Identifier: GPL-v3
 pragma solidity >=0.7.0;
 
 /// @notice Used as a wrapper for tokens that are interest bearing for an

@@ -1,0 +1,18 @@
+{
+  "component": "ETHUnwrapper-2",
+  "main_contract": "ETHUnwrapper",
+  "source_file_count": 7,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xec59fb45ed758ef81c638a6f658688e363734fb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

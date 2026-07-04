@@ -1,15 +1,23 @@
 {
   "component": "PartyBFacet-2",
   "main_contract": "PartyBFacet",
-  "source_file_count": 32,
-  "deployment_count": 1,
+  "source_file_count": 30,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x727133bba46e163eb733971e2474d120695f33cd",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8fd07a4cdaf9171ad18b27e5fd324373011a532d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1a521c6a05d56a52b9203b6f5d86dd0f2e8d38b4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,10 +1,10 @@
 # chateau — deployments
 
-22 verified deployment(s) across 12 component(s).
+23 verified deployment(s) across 13 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| chain-9745 | `0x22222215d4edc5510d23d0886133e7ece7f5fdc1` | chUSD | impl | live | yes |
+| chain-9745 | `0x22222215d4edc5510d23d0886133e7ece7f5fdc1` | chUSD-2 | impl | live | yes |
 | chain-9745 | `0x25dcd7adc3ab4c00b8bcf78f33d95a19211eab48` | OptimizedTransparentUpgradeableProxy | proxy | inactive | no |
 | chain-9745 | `0x282b3386571f7f794450d5789911a9804fa346b4` | DVN | impl | inactive | no |
 | chain-9745 | `0x3742b8f7198b9362437dc0efefa188653cb3aa6e` | ReadLib1002 | impl | inactive | no |
@@ -25,9 +25,5 @@
 | chain-9745 | `0xcce466a522984415bc91338c232d98869193d46e` | OptimizedTransparentUpgradeableProxy | impl | inactive | no |
 | chain-9745 | `0xda9b06132dd3b5cda3cab2d1516038a8625fef08` | ReadLib1002 | impl | inactive | no |
 | chain-9745 | `0xe1844c5d63a9543023008d332bd3d2e6f1fe1043` | ReceiveUln302 | impl | inactive | no |
+| chain-999 | `0x2222227d90046f1483b3fb37990dea31fcabea02` | chUSD | impl | live | no |
 | chain-999 | `0x888888facb316879129e1eee2451260e44b93aa8` | StakedchUSDOFT | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-999 `0x2222227d90046f1483b3fb37990dea31fcabea02`

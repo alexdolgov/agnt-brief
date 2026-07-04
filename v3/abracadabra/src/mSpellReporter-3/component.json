@@ -2,17 +2,25 @@
   "component": "mSpellReporter-3",
   "main_contract": "mSpellReporter",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xd2b62aef2102c09f475b23dda6b61072e848cf28",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x20cb52832f35c61ccdbe5c336e405fe979de9430",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x78a538cf4c73dba3794c0385d28758fed517cccf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

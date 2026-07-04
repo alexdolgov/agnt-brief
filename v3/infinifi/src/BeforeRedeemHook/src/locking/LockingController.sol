@@ -240,10 +240,9 @@ contract LockingController is CoreControlled {
         require(IERC20(data.shareToken).transferFrom(msg.sender, address(this), _shares), TransferFailed());
         LockedPositionToken(data.shareToken).burn(_shares);
 
-        UnwindingModule(unwindingModule)
-            .startUnwinding(
-                _recipient, userReceiptToken, _unwindingEpochs, userReceiptToken.mulWadDown(data.multiplier)
-            );
+        UnwindingModule(unwindingModule).startUnwinding(
+            _recipient, userReceiptToken, _unwindingEpochs, userReceiptToken.mulWadDown(data.multiplier)
+        );
         IERC20(receiptToken).transfer(unwindingModule, userReceiptToken);
 
         buckets[_unwindingEpochs].totalReceiptTokens = data.totalReceiptTokens - userReceiptToken;

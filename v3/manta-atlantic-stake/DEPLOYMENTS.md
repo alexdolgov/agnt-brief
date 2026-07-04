@@ -1,6 +1,6 @@
 # manta-atlantic-stake — deployments
 
-131 verified deployment(s) across 75 component(s).
+144 verified deployment(s) across 78 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -25,7 +25,20 @@
 | chain-169 | `0x3f3f9615a63365e5948b0d02dfdf9656b60b9a7e` | OrderBookReader | impl | unknown | no |
 | chain-169 | `0x40f20fcab8ee140e8246a19541664867a0c5c1a2` | ReaderV2 | impl | unknown | no |
 | chain-169 | `0x4200000000000000000000000000000000000006` | WETH9 | impl | unknown | no |
-| chain-169 | `0x4200000000000000000000000000000000000007` | Proxy-6 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000007` | Proxy-2 | impl | live | no |
+| chain-169 | `0x420000000000000000000000000000000000000f` | Proxy-2 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000010` | Proxy-2 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000011` | Proxy-2 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000012` | Proxy-2 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000014` | Proxy-4 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000015` | Proxy-2 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000016` | Proxy-2 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000017` | Proxy-7 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000018` | Proxy-9 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000019` | Proxy-2 | impl | live | no |
+| chain-169 | `0x420000000000000000000000000000000000001a` | Proxy-4 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000020` | Proxy-7 | impl | live | no |
+| chain-169 | `0x4200000000000000000000000000000000000021` | Proxy-4 | impl | live | no |
 | chain-169 | `0x44ed2c28f610c308f0fe8dbf57e2872ddcb3bc0e` | Timelock | impl | unknown | no |
 | chain-169 | `0x4615050b9b523a1a410766128ef8c8a3a871aa11` | BatchSender | impl | unknown | no |
 | chain-169 | `0x46f1c05ba332ad9518226b83df17547ba1c08b4f` | PositionRouter | impl | unknown | no |
@@ -86,11 +99,11 @@
 | ethereum | `0x1c466b9371f8aba0d7c458be10a62192fcb8aa71` | Proxy | impl | live | no |
 | ethereum | `0x1dc6184931dacb520a40dc756a5da614816d39fa` | AddressManager | impl | live | no |
 | ethereum | `0x1e5e634981564fc645dcbc6546ae618d7870b30a` | L2OutputOracle | impl | inactive | no |
-| ethereum | `0x2165254f0dd74c19d07ed447b231447604d41e20` | Proxy-3 | proxy | live | no |
+| ethereum | `0x2165254f0dd74c19d07ed447b231447604d41e20` | Proxy-5 | proxy | live | no |
 | ethereum | `0x262181e34eed11740be0419b3af54f868c8415af` | AddressManager | impl | live | no |
 | ethereum | `0x2fe3ad97a60eb7c79a976fc18bb5ffd07dd94ba5` | ResolvedDelegateProxy | impl | live | no |
 | ethereum | `0x305e88d809c9dc03179554bfbf85ac05ce8f18d6` | L1ChugSplashProxy | impl | live | no |
-| ethereum | `0x30c789674ad3b458886bbc9abf42eee19ea05c1d` | Proxy-2 | proxy | live | no |
+| ethereum | `0x30c789674ad3b458886bbc9abf42eee19ea05c1d` | Proxy-3 | proxy | live | no |
 | ethereum | `0x39860b5900d97a9750d9774b5d521cf93c552864` | AddressManager | impl | live | no |
 | ethereum | `0x3ad319bb4872f8cb75a26ac30cc4bd2d56b67b05` | AddressManager-3 | impl | live | no |
 | ethereum | `0x3b95bc951ee0f553ba487327278cac44f29715e5` | L1ChugSplashProxy-2 | proxy | live | no |
@@ -106,22 +119,22 @@
 | ethereum | `0x6d223eeef79e5ea639f034522b10ccd4dd719665` | AddressManager | impl | live | no |
 | ethereum | `0x6ec90db7a29272a47c538d53ef4026e626e2c5ce` | Proxy | impl | live | no |
 | ethereum | `0x732970094bc3bf9eff25ec1b56a16eace6fea232` | Proxy | impl | live | no |
-| ethereum | `0x895e00269a05848f3c9889efa677d02ff7351a5d` | Proxy-2 | proxy | live | no |
+| ethereum | `0x895e00269a05848f3c9889efa677d02ff7351a5d` | Proxy-3 | proxy | live | no |
 | ethereum | `0x897c4f85812be79f0172f225fbd6550c9ea7abf6` | AddressManager | impl | live | no |
 | ethereum | `0x8a7b471537a26ad2d4a16d0ebd626d4a1f8d3be1` | ProxyAdmin | impl | live | no |
-| ethereum | `0x9168765ee952de7c6f8fc6fad5ec209b960b7622` | Proxy-2 | proxy | live | no |
+| ethereum | `0x9168765ee952de7c6f8fc6fad5ec209b960b7622` | Proxy-3 | proxy | live | no |
 | ethereum | `0x96d6e5ba62f66003748b60544bb355fb308771c4` | Proxy | impl | live | no |
 | ethereum | `0x9cddc6f65ed67ef19743ffdfd53501457ce8b51f` | AddressManager-2 | impl | inactive | no |
 | ethereum | `0xa2dca85bb892de55d8b262d1806114733106e8d1` | ProxyAdmin-2 | impl | live | no |
 | ethereum | `0xa69f3d94a15161921d968263e62bd8ee81ddf561` | AddressManager | impl | live | no |
 | ethereum | `0xb6c539bf372b7a11855b0189c22133b05cc230df` | L1ChugSplashProxy | impl | live | no |
-| ethereum | `0xb73603c5d87fa094b7314c74ace2e64d165016fb` | Proxy-5 | impl | live | no |
-| ethereum | `0xbe896f53bb658c9eecabbdf4a4db85e4b8481c8f` | Proxy-4 | proxy | live | no |
+| ethereum | `0xb73603c5d87fa094b7314c74ace2e64d165016fb` | Proxy-8 | impl | live | no |
+| ethereum | `0xbe896f53bb658c9eecabbdf4a4db85e4b8481c8f` | Proxy-6 | proxy | live | no |
 | ethereum | `0xc21f2e6c5792686e53e32cb88fc38f6c75b6e79d` | ProxyAdmin | impl | live | no |
 | ethereum | `0xc32db741acd8f74b73dc6e434366eefa9db0580d` | AddressManager | impl | live | no |
 | ethereum | `0xc9ef2e3eaeb70f0b794a9d7d5cac4bcff1906995` | ProxyAdmin | impl | live | no |
 | ethereum | `0xd0e3a94c6751987cc48879646f4b28a9c33e3dcc` | Proxy | impl | live | no |
-| ethereum | `0xd4957750120ead4f9492895cf7103971e8ceb894` | Proxy-3 | impl | inactive | no |
+| ethereum | `0xd4957750120ead4f9492895cf7103971e8ceb894` | Proxy-5 | impl | inactive | no |
 | ethereum | `0xdb27128ed4a1be7683ccfddb053dd5b713fc3284` | AddressManager | impl | live | no |
 | ethereum | `0xe3cb5953e548262133f0a5ff230388cebf43e9db` | AddressManager | impl | live | no |
 | ethereum | `0xe63ac96f9615b16c4ed33bed79a0b537e97a7a82` | AddressManager | impl | live | no |
@@ -129,26 +142,9 @@
 | ethereum | `0xea4f12c5f62e252c2694076c169bed0818126fba` | Proxy | impl | live | no |
 | ethereum | `0xeb77d0c8794b73625b7f4d60d9ca64a2604c48cd` | ProxyAdmin | impl | live | no |
 | ethereum | `0xecde807ae6d972b615b266aa958a07f97cb0d8e5` | ProxyAdmin | impl | live | no |
-| ethereum | `0xef01a6ae995791fffca3d70bda7b91e5fa1ad0ae` | Proxy-2 | impl | inactive | no |
+| ethereum | `0xef01a6ae995791fffca3d70bda7b91e5fa1ad0ae` | Proxy-3 | impl | inactive | no |
 | ethereum | `0xf417f5a458ec102b90352f697d6e2ac3a3d2851f` | Proxy | impl | live | no |
 | ethereum | `0xf4b428078bba69786849fc1e1773f5c6c40748fa` | Proxy | impl | live | no |
 | ethereum | `0xf992f6cab98bf812737b495dc7dbb20e20acf631` | Proxy | impl | live | no |
-| ethereum | `0xfb1e17245631cd10720401074a3dc9bf7fd3c32d` | Proxy-4 | impl | inactive | no |
+| ethereum | `0xfb1e17245631cd10720401074a3dc9bf7fd3c32d` | Proxy-6 | impl | inactive | no |
 | ethereum | `0xfd195da649e135995c6f81ccddc30bf2dadfbc4c` | AddressManager | impl | live | no |
-
-## Source unavailable (13)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-169 `0x420000000000000000000000000000000000000f`
-- chain-169 `0x4200000000000000000000000000000000000010`
-- chain-169 `0x4200000000000000000000000000000000000011`
-- chain-169 `0x4200000000000000000000000000000000000012`
-- chain-169 `0x4200000000000000000000000000000000000014`
-- chain-169 `0x4200000000000000000000000000000000000015`
-- chain-169 `0x4200000000000000000000000000000000000016`
-- chain-169 `0x4200000000000000000000000000000000000017`
-- chain-169 `0x4200000000000000000000000000000000000018`
-- chain-169 `0x4200000000000000000000000000000000000019`
-- chain-169 `0x420000000000000000000000000000000000001a`
-- chain-169 `0x4200000000000000000000000000000000000020`
-- chain-169 `0x4200000000000000000000000000000000000021`

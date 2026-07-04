@@ -1,0 +1,42 @@
+{
+  "component": "Claimer-2",
+  "main_contract": "Claimer",
+  "source_file_count": 49,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0b5a1dc536d5a67c66d00b337e6b189385bd8438",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x220c9398b0ee07472bf8906e44574cb9fe3b8d90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2589ff8614f74704741ee3b51851b4ae812f1a21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x47b55748243314be6a341668ecda2066c0625f70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "Z2OBondDepository-3",
+  "main_contract": "Z2OBondDepository",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x948b8073af8aa23bab695695ed0357736d0be8ec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

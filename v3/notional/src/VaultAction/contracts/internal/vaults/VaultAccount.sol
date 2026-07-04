@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: BSUL-1.1
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
@@ -80,8 +80,14 @@ library VaultAccountLib {
         // Clear temp cash balance, it is not updated during liquidation
         vaultAccount.tempCashBalance = 0;
 
-        // No events emitted
-        _setVaultAccount(vaultAccount, vaultConfig, s, checkMinBorrow, false);
+        // No events emitted for liquidation, custom events are emitted in each of the methods
+        _setVaultAccount({
+            vaultAccount: vaultAccount,
+            vaultConfig: vaultConfig,
+            s: s,
+            checkMinBorrow: checkMinBorrow,
+            emitEvents: false
+        });
     }
 
     function setVaultAccountInSettlement(VaultAccount memory vaultAccount, VaultConfig memory vaultConfig) internal {
@@ -92,7 +98,15 @@ library VaultAccountLib {
             .getVaultAccount();
         VaultAccountStorage storage s = store[vaultAccount.account][vaultConfig.vault];
         
-        _setVaultAccount(vaultAccount, vaultConfig, s, true, true);
+        // Do not check minimum borrow on settlement so that all accounts may be settled regardless of their
+        // minimum borrow status.
+        _setVaultAccount({
+            vaultAccount: vaultAccount,
+            vaultConfig: vaultConfig,
+            s: s,
+            checkMinBorrow: false,
+            emitEvents: true
+        });
 
         // Allow vault accounts that settle to retain excess cash balances. This occurs after set vault account
         // so that event emission remains correct (since it relies on the prior stored value).
@@ -155,6 +169,9 @@ library VaultAccountLib {
                 LibStorage.getVaultAccountSecondaryDebtShare()[vaultAccount.account][vaultConfig.vault];
             uint256 secondaryMaturity = _s.maturity;
             require(vaultAccount.maturity == secondaryMaturity || secondaryMaturity == 0); // dev: invalid maturity
+
+            // Sanity check to ensure that secondary maturity is set properly
+            if (secondaryMaturity == 0) require(_s.accountDebtOne == 0 && _s.accountDebtTwo == 0);
         }
 
         uint256 newDebtStorageValue = VaultStateLib.calculateDebtStorage(
@@ -237,8 +254,6 @@ library VaultAccountLib {
         require(vaultAccount.accountDebtUnderlying <= 0);
         vaultState.totalDebtUnderlying = vaultState.totalDebtUnderlying.add(netUnderlyingDebt);
 
-        // Truncate dust balances towards zero
-        if (0 < vaultState.totalDebtUnderlying && vaultState.totalDebtUnderlying < 10) vaultState.totalDebtUnderlying = 0;
         require(vaultState.totalDebtUnderlying <= 0);
     }
 
@@ -333,7 +348,7 @@ library VaultAccountLib {
             // Only assess fCash fees here, Prime Cash fees are assessed in a separate method
             vaultConfig.assessVaultFees(vaultAccount, primeCashBorrowed, maturity, block.timestamp);
         }
-        require(primeCashBorrowed > 0, "Borrow failed");
+        require(primeCashBorrowed > 0); // dev: borrow failed
 
         updateAccountDebt(vaultAccount, vaultState, underlyingToBorrow, primeCashBorrowed);
 

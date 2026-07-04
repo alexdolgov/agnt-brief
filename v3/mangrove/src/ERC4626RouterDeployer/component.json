@@ -2,10 +2,26 @@
   "component": "ERC4626RouterDeployer",
   "main_contract": "ERC4626RouterDeployer",
   "source_file_count": 26,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xb37f7a1194790ee97efd03f0265cf8d27bee14d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xc698f8d9d496f2b9dc836df7eac82530c2121b72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

@@ -2,7 +2,7 @@
   "component": "ProtocolFeeSweeper",
   "main_contract": "ProtocolFeeSweeper",
   "source_file_count": 26,
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0x4cb42fc3b5fb9392ce0772c3a540e4ae4da4ac4d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x5939ab16fdf1991b0ef603c639b6b501a7841fab",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -29,6 +37,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb9d01ca61b9c181da1051bfdd28e1097e920ab14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

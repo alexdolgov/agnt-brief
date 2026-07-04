@@ -1,20 +1,4 @@
 // SPDX-License-Identifier: MIT
-/* ———————————————————————————————————————————————————————————————————————————————— *
- *    _____     ______   ______     __     __   __     __     ______   __  __       *
- *   /\  __-.  /\__  _\ /\  == \   /\ \   /\ "-.\ \   /\ \   /\__  _\ /\ \_\ \      *
- *   \ \ \/\ \ \/_/\ \/ \ \  __<   \ \ \  \ \ \-.  \  \ \ \  \/_/\ \/ \ \____ \     *
- *    \ \____-    \ \_\  \ \_\ \_\  \ \_\  \ \_\\"\_\  \ \_\    \ \_\  \/\_____\    *
- *     \/____/     \/_/   \/_/ /_/   \/_/   \/_/ \/_/   \/_/     \/_/   \/_____/    *
- *                                                                                  *
- * ————————————————————————————————— dtrinity.org ————————————————————————————————— *
- *                                                                                  *
- *                                         ▲                                        *
- *                                        ▲ ▲                                       *
- *                                                                                  *
- * ———————————————————————————————————————————————————————————————————————————————— *
- * dTRINITY Protocol: https://github.com/dtrinity                                   *
- * ———————————————————————————————————————————————————————————————————————————————— */
-
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts-5/access/AccessControl.sol";
@@ -83,12 +67,40 @@ abstract contract CollateralVault is AccessControl, OracleAware {
      * @param collateralAsset The address of the collateral asset
      */
     function deposit(uint256 collateralAmount, address collateralAsset) public {
+        return _deposit(msg.sender, collateralAmount, collateralAsset);
+    }
+
+    /**
+     * @notice Deposit collateral into the vault from a specific address
+     * @param depositer The address providing the collateral
+     * @param collateralAmount The amount of collateral to deposit
+     * @param collateralAsset The address of the collateral asset
+     */
+    function depositFrom(
+        address depositer,
+        uint256 collateralAmount,
+        address collateralAsset
+    ) public {
+        return _deposit(depositer, collateralAmount, collateralAsset);
+    }
+
+    /**
+     * @notice Internal function to deposit collateral into the vault
+     * @param depositer The address providing the collateral
+     * @param collateralAmount The amount of collateral to deposit
+     * @param collateralAsset The address of the collateral asset
+     */
+    function _deposit(
+        address depositer,
+        uint256 collateralAmount,
+        address collateralAsset
+    ) internal {
         if (!_supportedCollaterals.contains(collateralAsset)) {
             revert UnsupportedCollateral(collateralAsset);
         }
 
         IERC20Metadata(collateralAsset).safeTransferFrom(
-            msg.sender,
+            depositer,
             address(this),
             collateralAmount
         );

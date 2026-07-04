@@ -1,15 +1,15 @@
 {
   "component": "sAVL",
   "main_contract": "sAVL",
-  "source_file_count": 50,
+  "source_file_count": 46,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5e2a06121b2cc7e5ac30bb2d5a128bfbb0c0d300",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdb8d776139e635e9ab422a295d47629762b33b50",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

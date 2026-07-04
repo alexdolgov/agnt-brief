@@ -1,0 +1,18 @@
+{
+  "component": "MultiAccount-5",
+  "main_contract": "MultiAccount",
+  "source_file_count": 21,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd41b668f3eac456d145218e53b67eade1e66a2b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

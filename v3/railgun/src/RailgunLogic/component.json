@@ -2,7 +2,7 @@
   "component": "RailgunLogic",
   "main_contract": "RailgunLogic",
   "source_file_count": 15,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": true,
   "audits_covering": [
     "https://assets.railgun.org/docs/audits/2021-04-01%20ABDK.pdf",
@@ -17,6 +17,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xbcfa4de73afb071c9ff18a20a22f818e657c541a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb8af889809211fb9496de885240593c1a9efd3a9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

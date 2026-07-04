@@ -2,23 +2,16 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@openzeppelin/contracts/proxy/Clones.sol";
 
 import "v3-core/interfaces/callback/IUniswapV3SwapCallback.sol";
 import "v3-core/interfaces/IUniswapV3Pool.sol";
 import "v3-core/libraries/TickMath.sol";
 
-import "../interfaces/velodrome/IVelodromePositionManager.sol";
+import "v3-periphery/interfaces/INonfungiblePositionManager.sol";
 
 import "../../lib/IWETH9.sol";
 import "../../lib/IUniversalRouter.sol";
 import "../utils/Constants.sol";
-
-import "v3-periphery/libraries/PoolAddress.sol";
-
-interface ICLFactory {
-    function poolImplementation() external view returns (address);
-}
 
 // base functionality to do swaps with different routing protocols
 abstract contract Swapper is IUniswapV3SwapCallback, Constants {
@@ -30,31 +23,34 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
     address public immutable factory;
 
     /// @notice Uniswap v3 position manager
-    IVelodromePositionManager public immutable nonfungiblePositionManager;
+    INonfungiblePositionManager public immutable nonfungiblePositionManager;
+
+    /// @notice 0x Exchange Proxy
+    address public immutable zeroxRouter;
 
     /// @notice Uniswap Universal Router
     address public immutable universalRouter;
 
-    /// @notice 0x Protocol AllowanceHolder contract
-    address public immutable zeroxAllowanceHolder;
-
     /// @notice Constructor
     /// @param _nonfungiblePositionManager Uniswap v3 position manager
-    /// @param _universalRouter Uniswap Universal Router
-    /// @param _zeroxAllowanceHolder 0x Protocol AllowanceHolder contract
+    /// @param _zeroxRouter 0x Exchange Proxy
     constructor(
-        IVelodromePositionManager _nonfungiblePositionManager,
-        address _universalRouter,
-        address _zeroxAllowanceHolder
-
+        INonfungiblePositionManager _nonfungiblePositionManager,
+        address _zeroxRouter,
+        address _universalRouter
     ) {
         weth = IWETH9(_nonfungiblePositionManager.WETH9());
         factory = _nonfungiblePositionManager.factory();
         nonfungiblePositionManager = _nonfungiblePositionManager;
+        zeroxRouter = _zeroxRouter;
         universalRouter = _universalRouter;
-        zeroxAllowanceHolder = _zeroxAllowanceHolder;
     }
 
+    // swap data for 0x
+    struct ZeroxRouterData {
+        address allowanceTarget;
+        bytes data;
+    }
 
     // swap data for uni - must include sweep for input token
     struct UniversalRouterData {
@@ -78,42 +74,42 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
         internal
         returns (uint256 amountInDelta, uint256 amountOutDelta)
     {
-        if (params.amountIn != 0 && params.swapData.length != 0 && address(params.tokenOut) != address(0) && address(params.tokenIn) != address(0)) {
+        if (params.amountIn != 0 && params.swapData.length != 0 && address(params.tokenOut) != address(0)) {
             uint256 balanceInBefore = params.tokenIn.balanceOf(address(this));
             uint256 balanceOutBefore = params.tokenOut.balanceOf(address(this));
 
-            // Check if this is Universal Router data by looking at first 32 bytes
-            bool isUniversalRouter;
-            bytes memory swapData = params.swapData;
-            address uniRouter = universalRouter;
-            assembly ("memory-safe") {
-                let firstWord := mload(add(swapData, 32))
-                isUniversalRouter := eq(firstWord, uniRouter)
-            }
+            // get router specific swap data
+            (address router, bytes memory routerData) = abi.decode(params.swapData, (address, bytes));
 
-            if (isUniversalRouter) {
-                // Handle Universal Router case
-                (address target, bytes memory routerData) = abi.decode(params.swapData, (address, bytes));
-                UniversalRouterData memory data = abi.decode(routerData, (UniversalRouterData));
-                SafeERC20.safeTransfer(params.tokenIn, universalRouter, params.amountIn);
-                IUniversalRouter(universalRouter).execute(data.commands, data.inputs, data.deadline);
-            } else {
-                // For 0x v2, use raw data
-                SafeERC20.safeIncreaseAllowance(params.tokenIn, zeroxAllowanceHolder, params.amountIn);
-                (bool success,) = zeroxAllowanceHolder.call(params.swapData);
+            if (router == zeroxRouter) {
+                ZeroxRouterData memory data = abi.decode(routerData, (ZeroxRouterData));
+                // approve needed amount
+                SafeERC20.safeIncreaseAllowance(params.tokenIn, data.allowanceTarget, params.amountIn);
+                // execute swap
+                (bool success,) = zeroxRouter.call(data.data);
                 if (!success) {
                     revert SwapFailed();
                 }
-                SafeERC20.safeApprove(params.tokenIn, zeroxAllowanceHolder, 0);
+                // reset approval
+                SafeERC20.safeApprove(params.tokenIn, data.allowanceTarget, 0);
+            } else if (router == universalRouter) {
+                UniversalRouterData memory data = abi.decode(routerData, (UniversalRouterData));
+                // tokens are transfered to Universalrouter directly (data.commands must include sweep action!)
+                SafeERC20.safeTransfer(params.tokenIn, universalRouter, params.amountIn);
+                IUniversalRouter(universalRouter).execute(data.commands, data.inputs, data.deadline);
+            } else {
+                revert WrongContract();
             }
 
             amountInDelta = balanceInBefore - params.tokenIn.balanceOf(address(this));
             amountOutDelta = params.tokenOut.balanceOf(address(this)) - balanceOutBefore;
 
+            // amountMin slippage check
             if (amountOutDelta < params.amountOutMin) {
                 revert SlippageError();
             }
 
+            // event for any swap with exact swapped value
             emit Swap(address(params.tokenIn), address(params.tokenOut), amountInDelta, amountOutDelta);
         }
     }
@@ -158,8 +154,8 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
         require(amount0Delta > 0 || amount1Delta > 0); // swaps entirely within 0-liquidity regions are not supported
 
         // check if really called from pool
-        (address tokenIn, address tokenOut, int24 tickSpacing) = abi.decode(data, (address, address, int24));
-        if (address(_getPool(tokenIn, tokenOut, tickSpacing)) != msg.sender) {
+        (address tokenIn, address tokenOut, uint24 fee) = abi.decode(data, (address, address, uint24));
+        if (address(_getPool(tokenIn, tokenOut, fee)) != msg.sender) {
             revert Unauthorized();
         }
 
@@ -167,21 +163,8 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
         SafeERC20.safeTransfer(IERC20(tokenIn), msg.sender, amount0Delta > 0 ? uint256(amount0Delta) : uint256(amount1Delta));
     }
 
-    function _getPool(
-        address tokenA,
-        address tokenB,
-        int24 tickSpacing
-    ) internal view returns (address _pool) {
-        (address token0, address token1) = tokenA < tokenB
-            ? (tokenA, tokenB)
-            : (tokenB, tokenA);
-
-        address implementation = ICLFactory(factory).poolImplementation();
-
-        return Clones.predictDeterministicAddress(
-            implementation,
-            keccak256(abi.encode(token0, token1, tickSpacing)),
-            factory
-        );
+    // get pool for token
+    function _getPool(address tokenA, address tokenB, uint24 fee) internal view returns (IUniswapV3Pool) {
+        return IUniswapV3Pool(PoolAddress.computeAddress(address(factory), PoolAddress.getPoolKey(tokenA, tokenB, fee)));
     }
 }

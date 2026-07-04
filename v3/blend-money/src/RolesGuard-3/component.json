@@ -1,0 +1,18 @@
+{
+  "component": "RolesGuard-3",
+  "main_contract": "RolesGuard",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xad7188d0970cbedbdb233f0e5b7367cf149c3449",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

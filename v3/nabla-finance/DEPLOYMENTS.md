@@ -1,6 +1,6 @@
 # nabla-finance — deployments
 
-65 verified deployment(s) across 44 component(s).
+66 verified deployment(s) across 46 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,7 +12,7 @@
 | arbitrum | `0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f` | BeaconProxyFactory | proxy | live | no |
 | arbitrum | `0x2f8577f68d8306aeb48f9015ac61744bbadfd713` | SetFiveMillionProposalThresholdAction | impl | inactive | no |
 | arbitrum | `0x2fa063182c6f0f953c99abf46add4d2c9f6ff61a` | ArbUXRNFT | impl | inactive | no |
-| arbitrum | `0x38f03b4e740c0b73d857ccd0003362ee4ca036e8` | ProxyAdmin | impl | inactive | no |
+| arbitrum | `0x38f03b4e740c0b73d857ccd0003362ee4ca036e8` | ProxyAdmin-3 | impl | inactive | no |
 | arbitrum | `0x3e84af3743cc4e7f516570b341ced56530d901e8` | L2AddressRegistry | impl | inactive | no |
 | arbitrum | `0x4a9196b06f339ad9f3ee752c987b401f2e1e2718` | MultiSigWallet | impl | inactive | no |
 | arbitrum | `0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184` | AIP1Point1Target | impl | inactive | no |
@@ -21,7 +21,7 @@
 | arbitrum | `0x553ec478a66be27ba25a6bc5db20aec2ed6a1b4a` | ProxyAdmin | impl | inactive | no |
 | arbitrum | `0x56c4e9eb6c63acdd19aec2b1a00e4f0d7abda9d3` | L2AddressRegistry | impl | inactive | no |
 | arbitrum | `0x57e915c05107ff8d9d883052f7c66555c57aa79b` | SetFiveMillionProposalThresholdAction | impl | inactive | no |
-| arbitrum | `0x5db54b55ffd0887bf1634a865db1e7db7a3dd797` | ProxyAdmin-3 | impl | live | no |
+| arbitrum | `0x5db54b55ffd0887bf1634a865db1e7db7a3dd797` | ProxyAdmin-4 | impl | live | no |
 | arbitrum | `0x6274106eedd4848371d2c09e0352d67b795ed516` | AIP1Point2Action | impl | inactive | no |
 | arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin-2 | proxy | live | no |
 | arbitrum | `0x85ff346f4412b6dc7f6a31ac45ebf38272bb940b` | ProxyAdmin | impl | inactive | no |
@@ -66,11 +66,7 @@
 | chain-80094 | `0x9d1b1669c73b033dfe47ae5a0164ab96df25b944` | FeeLibV1 | impl | live | no |
 | chain-80094 | `0xa272ffe20cffe769cdfc4b63088dcd2c82a2d8f9` | FiatTokenProxy | impl | inactive | no |
 | chain-80094 | `0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6` | TokenMessaging | impl | live | no |
+| chain-80094 | `0xb0b2391a32e066fdf354ef7f4199300f920789f0` | MasterMinter-3 | impl | inactive | no |
 | chain-80094 | `0xbab93b7ad7fe8692a878b95a8e689423437cc500` | SignatureChecker | impl | inactive | no |
 | chain-80094 | `0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7` | WOFTFactory | impl | inactive | no |
 | chain-999 | `0x5555555555555555555555555555555555555555` | WHYPE9 | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-80094 `0xb0b2391a32e066fdf354ef7f4199300f920789f0`

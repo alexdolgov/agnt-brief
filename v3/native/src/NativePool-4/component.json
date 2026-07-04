@@ -1,0 +1,18 @@
+{
+  "component": "NativePool-4",
+  "main_contract": "NativePool",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x3960f07204d2cfecbff63534aa8a1309ef937a77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

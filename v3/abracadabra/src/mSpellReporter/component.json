@@ -1,26 +1,66 @@
 {
   "component": "mSpellReporter",
   "main_contract": "mSpellReporter",
-  "source_file_count": 6,
-  "deployment_count": 2,
+  "source_file_count": 4,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x3817c8bd84dace344e66c6810f2a1225f998d988",
+      "address": "0x1fc83f75499b7620d53757f0b01e2ae626aae530",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x5f468e4c8d46004641f44dbd4de3ee734e90882d",
+      "address": "0x3fc4468d3e9c63b83c341307193190b7b5a28edd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7386946a2e2a8412c09a63afa6ec047cecc0423f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x07aa382caee3f9e6d1791c8ef5f77a9088c6e9fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x476b1e35dde474cb9aa1f6b85c9cc589bfa85c1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5651958a6e4db3327db1fa9198b9954608a0f194",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5d28da94086984cc3529d0c0ef6d968eeb7620b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

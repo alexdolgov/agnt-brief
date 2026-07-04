@@ -1,0 +1,42 @@
+{
+  "component": "DIAOracleFactory-2",
+  "main_contract": "DIAOracleFactory",
+  "source_file_count": 22,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66cfbfb5a8256da57e486164b791b7778927bab8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf81d90df1b63d48536e78564d24d5dd8f2be58ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4fd711b72df2f568682a62ff9f95448baae2dcd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x72ed066bb31f4a53081fb6aec8cae602ad039a5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

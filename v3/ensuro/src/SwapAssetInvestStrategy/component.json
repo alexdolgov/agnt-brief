@@ -2,7 +2,7 @@
   "component": "SwapAssetInvestStrategy",
   "main_contract": "SwapAssetInvestStrategy",
   "source_file_count": 21,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x84bdaa06429f25085b2685ef7600cb4958961dd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd2bb05fe84c60922c2d34faf675162aec3124069",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

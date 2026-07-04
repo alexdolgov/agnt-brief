@@ -1,0 +1,26 @@
+{
+  "component": "InterfaceMulticallV2-2",
+  "main_contract": "InterfaceMulticallV2",
+  "source_file_count": 3,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x16b413526d062142eb9eda9d75312ca9f2e418fd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xb1f795776cb9ddac6e7e162f31c7419dd3d48297",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "PortfolioFactory-2",
+  "main_contract": "PortfolioFactory",
+  "source_file_count": 80,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Velvet-Capital/audits/blob/main/PeckShield-Audit-Report-VelvetV4-v1.0-3.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d135efd33acfb950a1eb18493029d1451235a86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee0420b35b43c13c1c5c42541aa1d385c7a8faee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

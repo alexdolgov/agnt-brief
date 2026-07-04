@@ -1,14 +1,14 @@
 {
   "component": "WrappedAerodromeAM-2",
   "main_contract": "WrappedAerodromeAM",
-  "source_file_count": 19,
+  "source_file_count": 15,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "chain-130",
+      "chain_id": 130,
       "address": "0x17b5826382e3a5257b829cf0546a08bd77409270",
       "is_proxy": false,
       "implementation_address": null,

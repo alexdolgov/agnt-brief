@@ -1,15 +1,39 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.4;
 
-import "@openzeppelin/contracts/interfaces/IERC721Enumerable.sol";
+import "./IOwnable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC1155/extensions/IERC1155MetadataURIUpgradeable.sol";
 
-interface IAzuroBet is IERC721Enumerable {
+interface IAzuroBet is IOwnable, IERC1155MetadataURIUpgradeable {
     error OnlyCore();
 
     function initialize(address core) external;
 
-    function burn(uint256 id) external;
+    function setURI(string memory newUri) external;
 
-    function mint(address account) external returns (uint256);
+    function newConditionId() external returns (uint256);
+
+    function mint(
+        address to,
+        uint256 id,
+        uint256 amount,
+        uint256 payout
+    ) external;
+
+    function burnBalance(address account, uint256 id)
+        external
+        returns (uint256);
+
+    function burnPayout(address account, uint256 id) external returns (uint256);
+
+    function balancePayoutOf(address account, uint256 id)
+        external
+        view
+        returns (uint256);
+
+    function tokenOfOwnerByIndex(address owner_, uint256 index)
+        external
+        view
+        returns (uint256);
 }

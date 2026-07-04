@@ -1,0 +1,21 @@
+{
+  "component": "LiquidatorProxyV4WithGenericTrader-4",
+  "main_contract": "LiquidatorProxyV4WithGenericTrader",
+  "source_file_count": 41,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-08-26-cyfrin-dolomite-margin.pdf",
+    "https://github.com/dolomite-exchange/dolomite-margin/blob/master/docs/Dolomite%20Margin%20-%20Cyfrin%20-%202023-08-23.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2adeafd960366411215ce8706c1afe2853c5487b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,10 +2,50 @@
   "component": "PermissionedLiquidationControllerFactory",
   "main_contract": "PermissionedLiquidationControllerFactory",
   "source_file_count": 44,
-  "deployment_count": 3,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2976d3ea35adcd185bbf79b201424f9607d49d30",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a5bb923638a891b212b65be01aab3b05160a78b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe09bd71d81444af82e1ffaa5f179144f5b64486b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffd3cb64ec6fb68432792e4e902f62192a420506",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8cee050527b758c8aa0221bc696a03a674fe6ea2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
@@ -26,6 +66,14 @@
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xe786fb9927bb14c8650ecbc864ef5be51b395926",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xad1875af7e720e0058c27466a65372533b11b9bf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

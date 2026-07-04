@@ -3,83 +3,53 @@ pragma solidity 0.8.26;
 
 import {IporFusionAccessManagersStorageLib, InitializationFlag} from "./IporFusionAccessManagersStorageLib.sol";
 
-/**
- * @title Role-to-Function Mapping Structure
- * @notice Defines the relationship between roles and their authorized function calls
- * @dev Used to configure function-level access control during initialization
- */
+/// @notice Struct for the role-to-function mapping
 struct RoleToFunction {
-    /// @notice The target contract address where the function resides
+    /// @notice The target contract address
     address target;
-    /// @notice The role identifier that has permission to call the function
+    /// @notice The role ID
     uint64 roleId;
-    /// @notice The 4-byte function selector of the authorized function
+    /// @notice The function selector
     bytes4 functionSelector;
-    /// @notice Timelock delay for function execution
-    /// @dev If greater than 0, function calls require waiting for the specified delay
+    /// @notice The minimal execution delay, if greater than 0 then the function is timelocked
     uint256 minimalExecutionDelay;
 }
 
-/**
- * @title Admin Role Configuration Structure
- * @notice Defines the hierarchical relationship between roles
- * @dev Used to establish role administration rights
- */
+/// @notice Struct for the admin role mapping
 struct AdminRole {
-    /// @notice The role being administered
+    /// @notice The role ID
     uint64 roleId;
-    /// @notice The role that has admin rights over roleId
+    /// @notice The admin role ID
     uint64 adminRoleId;
 }
 
-/**
- * @title Account-to-Role Assignment Structure
- * @notice Maps accounts to their assigned roles with optional execution delays
- * @dev Used to configure initial role assignments during initialization
- */
+/// @notice Struct for the account-to-role mapping
 struct AccountToRole {
-    /// @notice The role being assigned
+    /// @notice The role ID
     uint64 roleId;
-    /// @notice The account receiving the role
+    /// @notice The account address
     address account;
-    /// @notice Account-specific execution delay
-    /// @dev If greater than 0, the account must wait this period before executing role actions
+    /// @notice The account lock time, if greater than 0 then the execution is timelocked for a given account
     uint32 executionDelay;
 }
 
-/**
- * @title Access Manager Initialization Configuration
- * @notice Comprehensive structure for initializing the access control system
- * @dev Combines all necessary configuration data for one-time initialization
- */
+/// @notice Struct for the initialization data for the IporFusionAccessManager contract
 struct InitializationData {
-    /// @notice Array of function access configurations
+    /// @notice The role-to-function mappings
     RoleToFunction[] roleToFunctions;
-    /// @notice Array of initial role assignments
+    /// @notice The account-to-role mappings
     AccountToRole[] accountToRoles;
-    /// @notice Array of role hierarchy configurations
+    /// @notice The admin role mappings
     AdminRole[] adminRoles;
 }
 
-/**
- * @title IPOR Fusion Access Manager Initialization Library
- * @notice Manages one-time initialization of access control settings
- * @dev Implements initialization protection to prevent multiple configurations
- * @custom:security-contact security@ipor.io
- */
+/// @title Library for initializing the IporFusionAccessManager contract, initializing the contract can only be done once
 library IporFusionAccessManagerInitializationLib {
-    /// @notice Emitted when the access manager is successfully initialized
     event IporFusionAccessManagerInitialized();
-
-    /// @notice Thrown when attempting to initialize an already initialized contract
     error AlreadyInitialized();
 
-    /**
-     * @notice Verifies and sets the initialization state
-     * @dev Ensures the contract can only be initialized once
-     * @custom:security Critical function that prevents multiple initializations
-     * @custom:error-handling Reverts with AlreadyInitialized if already initialized
-     */
+    /// @notice Checks if the contract is already initialized
+    /// @dev The function checks if the contract is already initialized, if it is, it reverts with an error
     function isInitialized() internal {
         InitializationFlag storage initializationFlag = IporFusionAccessManagersStorageLib.getInitializationFlag();
         if (initializationFlag.initialized > 0) {

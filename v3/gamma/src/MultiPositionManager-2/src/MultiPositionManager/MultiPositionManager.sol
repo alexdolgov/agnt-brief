@@ -40,7 +40,9 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
 
     error UnauthorizedCaller();
     error InvalidAction();
+    error InvalidFee();
     error OnlyOneNativeDepositPerMulticall();
+    error NativeRefundFailed();
 
     event Withdraw(address indexed sender, address indexed to, uint256 shares, uint256 amount0, uint256 amount1);
     event Burn(address indexed sender, uint256 shares, uint256 totalSupply, uint256 amount0, uint256 amount1);
@@ -70,6 +72,7 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
         string memory _symbol,
         uint16 _fee
     ) ERC20(_name, _symbol) Ownable(_owner) SafeCallback(_poolManager) {
+        if (_fee == 0) revert InvalidFee();
         s.poolKey = _poolKey;
         s.poolId = _poolKey.toId();
         s.currency0 = _poolKey.currency0;
@@ -164,6 +167,7 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
         external
         payable
         onlyOwnerOrFactory
+        nonReentrant
         returns (uint256 shares, uint256 deposit0, uint256 deposit1)
     {
         (shares, deposit0, deposit1) = DepositLogic.processDeposit(
@@ -254,6 +258,12 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
 
         if (withdrawToWallet) {
             _burn(recipient, shares);
+            if (totalSupply() == 0) {
+                s.basePositionsLength = 0;
+                delete s.limitPositions[0];
+                delete s.limitPositions[1];
+                s.limitPositionsLength = 0;
+            }
         }
     }
 
@@ -285,6 +295,12 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
 
         (amount0Out, amount1Out, sharesBurned) = WithdrawLogic.processWithdrawCustom(s, poolManager, params);
         _burn(owner(), sharesBurned);
+        if (totalSupply() == 0) {
+            s.basePositionsLength = 0;
+            delete s.limitPositions[0];
+            delete s.limitPositions[1];
+            s.limitPositionsLength = 0;
+        }
     }
 
     /**
@@ -302,7 +318,7 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
         uint256[2][] memory inMin
     ) public payable onlyOwnerOrRelayerOrFactory {
         // First call ZERO_BURN to collect fees (like compound does)
-        if (s.basePositionsLength > 0) {
+        if (s.basePositionsLength > 0 || s.limitPositionsLength > 0) {
             poolManager.unlock(abi.encode(IMultiPositionManager.Action.ZERO_BURN, ""));
         }
 
@@ -373,6 +389,10 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
      */
     function grantRelayerRole(address account) external onlyOwner {
         require(account != address(0));
+        IMultiPositionFactory factoryContract = IMultiPositionFactory(s.factory);
+        if (factoryContract.hasRoleOrOwner(factoryContract.CLAIM_MANAGER(), account)) {
+            revert UnauthorizedCaller();
+        }
         if (!s.relayers[account]) {
             s.relayers[account] = true;
             emit RelayerGranted(account);
@@ -501,7 +521,8 @@ contract MultiPositionManager is IMultiPositionManager, ERC20, ReentrancyGuard, 
             }
             require(msg.value >= amount);
             if (msg.value > amount) {
-                payable(msg.sender).transfer(msg.value - amount);
+                (bool success,) = msg.sender.call{value: msg.value - amount}("");
+                if (!success) revert NativeRefundFailed();
             }
         } else if (amount != 0) {
             IERC20(Currency.unwrap(currency)).safeTransferFrom(from, address(this), amount);

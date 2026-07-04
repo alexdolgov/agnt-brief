@@ -20,7 +20,7 @@ pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
-import { Math } from "./Math.sol";
+import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
 
 
 /**
@@ -30,7 +30,7 @@ import { Math } from "./Math.sol";
  * Library for interacting with the basic structs used in DolomiteMargin
  */
 library Types {
-    using Math for uint256;
+    using DolomiteMarginMath for uint256;
 
     // ============ Permission ============
 
@@ -155,7 +155,7 @@ library Types {
         pure
         returns (bool)
     {
-        return !a.sign && a.value > 0;
+        return !a.sign && a.value != 0;
     }
 
     function isPositive(
@@ -165,7 +165,7 @@ library Types {
         pure
         returns (bool)
     {
-        return a.sign && a.value > 0;
+        return a.sign && a.value != 0;
     }
 
     function isZero(
@@ -185,7 +185,7 @@ library Types {
         pure
         returns (bool)
     {
-        return a.value > 0 && !a.sign;
+        return a.value != 0 && !a.sign;
     }
 
     function isGreaterThanOrEqualToZero(
@@ -199,6 +199,11 @@ library Types {
     }
 
     // ============ Wei (Token Amount) ============
+
+    struct TotalWei {
+        uint128 borrow;
+        uint128 supply;
+    }
 
     // Individual token amount for an account
     struct Wei {
@@ -289,7 +294,7 @@ library Types {
         pure
         returns (bool)
     {
-        return !a.sign && a.value > 0;
+        return !a.sign && a.value != 0;
     }
 
     function isPositive(
@@ -299,7 +304,7 @@ library Types {
         pure
         returns (bool)
     {
-        return a.sign && a.value > 0;
+        return a.sign && a.value != 0;
     }
 
     function isZero(

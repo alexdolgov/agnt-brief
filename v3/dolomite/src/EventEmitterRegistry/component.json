@@ -2,7 +2,7 @@
   "component": "EventEmitterRegistry",
   "main_contract": "EventEmitterRegistry",
   "source_file_count": 28,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -45,6 +45,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1804bcc142191b90cc0a7116685cdf24f29318c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     }
   ]
 }

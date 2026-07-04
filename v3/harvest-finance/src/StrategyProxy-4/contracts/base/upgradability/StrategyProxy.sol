@@ -1,7 +1,7 @@
-pragma solidity 0.6.12;
+pragma solidity 0.5.16;
 
 import "../inheritance/IUpgradeSource.sol";
-import "./BaseUpgradeabilityProxy.sol";
+import "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol";
 
 contract StrategyProxy is BaseUpgradeabilityProxy {
 

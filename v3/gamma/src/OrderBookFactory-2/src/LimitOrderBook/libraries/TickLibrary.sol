@@ -74,13 +74,15 @@ library TickLibrary {
     /// @param targetTick The target tick price for the order
     /// @param tickSpacing The minimum tick spacing for the pool
     /// @param isToken0 True if order is for token0, false for token1
+    /// @param sqrtPriceX96 Current sqrt price from the pool slot0
     /// @return bottomTick The calculated lower tick boundary
     /// @return topTick The calculated upper tick boundary
     function getValidTickRange(
         int24 currentTick,
         int24 targetTick,
         int24 tickSpacing,
-        bool isToken0
+        bool isToken0,
+        uint160 sqrtPriceX96
     ) public pure returns (int24 bottomTick, int24 topTick) {
         if(isToken0 && currentTick >= targetTick)
             revert WrongTargetTick(currentTick, targetTick, true);
@@ -89,6 +91,11 @@ library TickLibrary {
 
         int24 roundedTargetTick = getRoundedTargetTick(targetTick, isToken0, tickSpacing);
         int24 roundedCurrentTick = getRoundedCurrentTick(currentTick, isToken0, tickSpacing);
+        if (isToken0 && currentTick % tickSpacing == 0) {
+            if (sqrtPriceX96 == TickMath.getSqrtPriceAtTick(currentTick)) {
+                roundedCurrentTick = currentTick;
+            }
+        }
 
         int24 tickDiff = roundedCurrentTick > roundedTargetTick ?
                         roundedCurrentTick - roundedTargetTick :

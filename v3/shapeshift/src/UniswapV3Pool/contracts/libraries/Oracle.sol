@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity >=0.5.0 <0.8.0;
+pragma solidity >=0.5.0;
 
 /// @title Oracle
 /// @notice Provides price and liquidity data useful for a wide variety of system designs
@@ -259,15 +259,8 @@ library Oracle {
 
         uint32 target = time - secondsAgo;
 
-        (Observation memory beforeOrAt, Observation memory atOrAfter) = getSurroundingObservations(
-            self,
-            time,
-            target,
-            tick,
-            index,
-            liquidity,
-            cardinality
-        );
+        (Observation memory beforeOrAt, Observation memory atOrAfter) =
+            getSurroundingObservations(self, time, target, tick, index, liquidity, cardinality);
 
         if (target == beforeOrAt.blockTimestamp) {
             // we're at the left boundary

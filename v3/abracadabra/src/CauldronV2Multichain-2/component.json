@@ -1,0 +1,26 @@
+{
+  "component": "CauldronV2Multichain-2",
+  "main_contract": "CauldronV2Multichain",
+  "source_file_count": 99,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x692cf15f80415d83e8c0e139cabcda67fcc12c90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf8049467f3a9d50176f4816b20cddd9bb8a93319",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "component": "GuardedGovernor-3",
+  "main_contract": "GuardedGovernor",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4bb5a5b7e10c98884960bbdb9540cd1babdeac68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd18019dbd648f9c2794dd3f130ad7490f7f3c173",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

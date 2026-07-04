@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 //                   ██
 //                   ██
@@ -67,7 +67,9 @@ contract SystemRegistryL2 is SystemRegistryBase, ISystemRegistryL2 {
     ) external onlyOwner {
         Errors.verifyNotZero(newToke, "newToke");
 
-        if (address(toke) == newToke) revert DuplicateSet(newToke);
+        if (address(toke) == newToke) {
+            revert DuplicateSet(newToke);
+        }
 
         toke = IERC20Metadata(newToke);
 
@@ -83,7 +85,9 @@ contract SystemRegistryL2 is SystemRegistryBase, ISystemRegistryL2 {
     ) external onlyOwner {
         Errors.verifyNotZero(checker, "checker");
 
-        if (checker == address(_sequencerChecker)) revert DuplicateSet(checker);
+        if (checker == address(_sequencerChecker)) {
+            revert DuplicateSet(checker);
+        }
 
         emit SequencerCheckerSet(checker);
 

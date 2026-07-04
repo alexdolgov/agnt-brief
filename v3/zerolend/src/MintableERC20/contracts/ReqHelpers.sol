@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 contract ReqHelpers {
@@ -18,35 +17,20 @@ contract ReqHelpers {
     // 0x0a: mode
     // 0x0b: manta
     // 0x0c: zklink
-    // 0x0d: core
-    // 0x0e: xlayer
-    // 0x0f: mantle
     // 0x10: merlin
     // 0x11: b2
     // 0x12: bitlayer
-    // 0x13: bevm
-    // 0x14: bb
-    // 0x15: bob
-    // 0x20: kava
-    // 0x21: kroma
-    // 0x22: klaytn
-    // 0x23: ailayer
-    // 0x24: zircuit
-    // 0x25: iotex
-    // 0x26: zeta
     // 0xf0: sepolia
     // 0xf1: merlin-testnet
     // 0xf2: b2-testnet
-    uint8 constant CHAIN = 0x00;
+    uint8 constant CHAIN = 0x07;
 
     // This value should be different for different bridge deployments
-    string constant BRIDGE_CHANNEL = "MERL Bridge";
+    string constant BRIDGE_CHANNEL = "SolvBTC Bridge";
 
     uint256 constant PROPOSE_PERIOD = 48 hours;
     uint256 constant EXPIRE_PERIOD = 72 hours;
     uint256 constant EXPIRE_EXTRA_PERIOD = 96 hours;
-
-    bytes26 private constant ETH_SIGN_HEADER = bytes26("\x19Ethereum Signed Message:\n");
 
     struct ReqHelpersStorage {
         mapping(uint8 => address) _tokens;
@@ -150,10 +134,8 @@ contract ReqHelpers {
     // action:
     //   0x01: lock-mint
     //   0x02: burn-unlock
-    //   0x03: burn-mint
     //   0x11: lock-mint (lock & mint to vault)
     //   0x12: burn-unlock (unlock from vault)
-    //   0x13: burn-mint (mint to vault)
     function _actionFrom(bytes32 reqId) internal pure returns (uint8 action) {
         action = uint8(uint256(reqId) >> 200);
     }
@@ -180,30 +162,6 @@ contract ReqHelpers {
         } else if (tokenIndex >= 64) {
             amount *= 1e12;
         }
-    }
-
-    function _digestFromReqSigningMessage(bytes32 reqId) internal pure returns (bytes32) {
-        uint8 specificAction = _actionFrom(reqId) & 0x0f;
-        if (specificAction == 1) {
-            return keccak256(abi.encodePacked(
-                ETH_SIGN_HEADER, Strings.toString(3 + bytes(BRIDGE_CHANNEL).length + 29 + 66),
-                "[", BRIDGE_CHANNEL, "]\n",
-                "Sign to execute a lock-mint:\n", Strings.toHexString(uint256(reqId), 32)
-            ));
-        } else if (specificAction == 2) {
-            return keccak256(abi.encodePacked(
-                ETH_SIGN_HEADER, Strings.toString(3 + bytes(BRIDGE_CHANNEL).length + 31 + 66),
-                "[", BRIDGE_CHANNEL, "]\n",
-                "Sign to execute a burn-unlock:\n", Strings.toHexString(uint256(reqId), 32)
-            ));
-        } else if (specificAction == 3) {
-            return keccak256(abi.encodePacked(
-                ETH_SIGN_HEADER, Strings.toString(3 + bytes(BRIDGE_CHANNEL).length + 29 + 66),
-                "[", BRIDGE_CHANNEL, "]\n",
-                "Sign to execute a burn-mint:\n", Strings.toHexString(uint256(reqId), 32)
-            ));
-        }
-        return 0x0;
     }
 
     modifier fromChainOnly(bytes32 reqId) {

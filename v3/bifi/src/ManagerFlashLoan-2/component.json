@@ -9,9 +9,9 @@
   ],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xdef0e8f0c3ab944a015554c83fbcf346d3c98f3b",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8cc8a0d4759d94ecd1e5a0ae2866b3cbe65c4493",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

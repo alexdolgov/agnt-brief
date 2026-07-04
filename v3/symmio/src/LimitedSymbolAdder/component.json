@@ -2,7 +2,7 @@
   "component": "LimitedSymbolAdder",
   "main_contract": "LimitedSymbolAdder",
   "source_file_count": 14,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -26,6 +26,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0xa91ddf70bbdcafaa711704b1690a77d6ad7fb7da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x273f42abbe6ecd031303518108175cd6fb346d9a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

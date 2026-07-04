@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IERC20 } from "openzeppelin-contracts/token/ERC20/IERC20.sol";
 import { LibAdapter } from "src/libs/LibAdapter.sol";
@@ -18,33 +18,27 @@ contract BaseAsyncSwapper is IAsyncSwapper {
     // solhint-disable-next-line var-name-mixedcase
     address public immutable AGGREGATOR;
 
-    constructor(
-        address aggregator
-    ) {
+    constructor(address aggregator) {
         if (aggregator == address(0)) revert TokenAddressZero();
         AGGREGATOR = aggregator;
     }
 
     /// @inheritdoc IAsyncSwapper
-    function swap(
-        SwapParams memory swapParams
-    ) public virtual returns (uint256 buyTokenAmountReceived) {
+    function swap(SwapParams memory swapParams) public virtual returns (uint256 buyTokenAmountReceived) {
         //slither-disable-start reentrancy-events
         if (swapParams.buyTokenAddress == address(0)) revert TokenAddressZero();
         if (swapParams.sellTokenAddress == address(0)) revert TokenAddressZero();
-        if (swapParams.buyAmount == 0) revert InsufficientBuyAmount();
-
-        preSwap(swapParams);
-
         if (swapParams.sellAmount == 0) revert InsufficientSellAmount();
+        if (swapParams.buyAmount == 0) revert InsufficientBuyAmount();
 
         IERC20 sellToken = IERC20(swapParams.sellTokenAddress);
         IERC20 buyToken = IERC20(swapParams.buyTokenAddress);
 
-        // Not checking current balance of sell token as aggregator
-        // will fail to pull the amount if we're too low based on the approval
-        // and we also want to support the "sell entire balance" feature of some
-        // aggregators where we don't know the amount ahead of time
+        uint256 sellTokenBalance = sellToken.balanceOf(address(this));
+
+        if (sellTokenBalance < swapParams.sellAmount) {
+            revert InsufficientBalance(sellTokenBalance, swapParams.sellAmount);
+        }
 
         LibAdapter._approve(sellToken, AGGREGATOR, swapParams.sellAmount);
 
@@ -78,11 +72,4 @@ contract BaseAsyncSwapper is IAsyncSwapper {
         return buyTokenAmountReceived;
         //slither-disable-end reentrancy-events
     }
-
-    // slither-disable-start dead-code
-    /// @notice Allow for custom behavior in derived contracts to occur before the swap
-    function preSwap(
-        SwapParams memory
-    ) internal virtual { }
-    // slither-disable-end dead-code
 }

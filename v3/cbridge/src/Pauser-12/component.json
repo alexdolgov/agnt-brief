@@ -1,0 +1,18 @@
+{
+  "component": "Pauser-12",
+  "main_contract": "Pauser",
+  "source_file_count": 12,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x697ac93c9263346c5ad0412f9356d5789a3aa687",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

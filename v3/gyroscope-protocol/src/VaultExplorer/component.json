@@ -2,7 +2,7 @@
   "component": "VaultExplorer",
   "main_contract": "VaultExplorer",
   "source_file_count": 17,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,6 +18,14 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xeaedc32a51c510d35ebc11088fd5ff2b47aacf2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6f6cd1a69a19d45df0c300a57829b21713637300",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

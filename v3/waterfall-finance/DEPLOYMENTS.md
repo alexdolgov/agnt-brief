@@ -1,6 +1,6 @@
 # waterfall-finance — deployments
 
-42 verified deployment(s) across 28 component(s).
+46 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,13 +16,15 @@
 | arbitrum | `0x80bacc0deae5213de50b236e3680b6bdcc17b2f2` | WaterDendyToken | impl | inactive | no |
 | arbitrum | `0x8420672ee90f43c46a13715f714c919d04296f07` | WaterfallRouter | impl | inactive | no |
 | arbitrum | `0x84edc65d003bf5f314a0a457d3206afc7723e38f` | Timelock | impl | inactive | no |
-| arbitrum | `0x88692ad37c48e8f4c821b71484ae3c2878c2a2c6` | BEP20-2 | impl | live | no |
+| arbitrum | `0x88692ad37c48e8f4c821b71484ae3c2878c2a2c6` | BEP20-3 | impl | live | no |
 | arbitrum | `0x8e9d509354370bf1fb7ce98be9e36eec3a5efa5e` | WaterfallLottery | impl | inactive | no |
 | arbitrum | `0x8f4ed4cf0300e22c739d2e5a22220497b123b66e` | WaterfallMasterChefV2 | impl | inactive | no |
 | arbitrum | `0x96af60093cf51772ad37fbc74628d7bde8ff0bd8` | WaterfallToken | impl | inactive | yes |
 | arbitrum | `0xa227c77aba2945631071c8c9667ee5aea9c4fed1` | LotteryNFT | impl | inactive | no |
 | arbitrum | `0xb2b8c5f0b048207e6df569075cb7db392104a689` | TokenStaking | impl | inactive | no |
+| arbitrum | `0xd0834ff6122ff8dcf38e3eb79372c00faeafa08b` | BEP20 | impl | inactive | no |
 | arbitrum | `0xd3f543b3d2c095198d034cbfbeca5e077551f5e9` | SmartChef | impl | inactive | no |
+| arbitrum | `0xd5b3dd2054a67155ad5e75a3c06dfbf2bb0bb96a` | BEP20 | impl | inactive | no |
 | arbitrum | `0xe9960f14b5f0713d1d530c1ff079a7adab7c076d` | MasterChef | impl | inactive | no |
 | arbitrum | `0xedbf59b40336244c6ea94a11a6b0cf6864c87e83` | Waterfall | impl | live | yes |
 | arbitrum | `0xf0d3b2550f7b9f8b0ec42383736b6aa4b09db7b2` | WaterfallRouter01 | impl | inactive | no |
@@ -30,7 +32,8 @@
 | bsc | `0x1811b7ed3b613805a9a4b4b1b80c99d58af32576` | Wtf | impl | live | no |
 | bsc | `0x2ea445696b257e7498c38fa8d0ac753215eb5a91` | Oracle | impl | live | no |
 | bsc | `0x2eaddd25a6bebf98f9f8c369fe285a3f2549da15` | WaterfallReferral | impl | live | no |
-| bsc | `0x49a21e7ae826cd5f0c0cb1dc942d1ded66d21191` | BEP20 | impl | inactive | no |
+| bsc | `0x40c636113b640ad4e5ad011b8fcf040cf762f9ff` | Timelock-2 | impl | inactive | no |
+| bsc | `0x49a21e7ae826cd5f0c0cb1dc942d1ded66d21191` | BEP20-2 | impl | inactive | no |
 | bsc | `0x547fb1ea689a8f7507d5fe8a598467f7d55a3191` | XWTF | impl | live | no |
 | bsc | `0x5bd8628f49227078a559d90b5eab1d840320e32e` | GnosisSafeProxy | impl | live | no |
 | bsc | `0x70785cd02d468e335bf9b58dcd3e106a1a43b057` | PancakePair | impl | live | no |
@@ -46,11 +49,4 @@
 | bsc | `0xeb60543e57c9d1cf2d833e40e17452c59f33d7ab` | Wtf | impl | live | no |
 | bsc | `0xf1f0924089f8a739a46ddf97847b9b973aa5185a` | WtfGenesisRewardPool | impl | live | no |
 | bsc | `0xf4fa8396e2bae8528fd5da5a07ac8915e1cb6dda` | Wshare | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0xd0834ff6122ff8dcf38e3eb79372c00faeafa08b`
-- arbitrum `0xd5b3dd2054a67155ad5e75a3c06dfbf2bb0bb96a`
-- bsc `0x40c636113b640ad4e5ad011b8fcf040cf762f9ff`
-- bsc `0xfdf36f38f5ad1346b7f5e4098797cf8cae8176d0`
+| bsc | `0xfdf36f38f5ad1346b7f5e4098797cf8cae8176d0` | WaterfallToken-2 | impl | live | no |

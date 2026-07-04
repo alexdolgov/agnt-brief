@@ -1,18 +1,20 @@
 {
   "component": "Expiry-2",
   "main_contract": "Expiry",
-  "source_file_count": 34,
+  "source_file_count": 29,
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/dolomite-exchange/dolomite-margin/blob/master/docs/dYdX%20Audit%20Report%20Bramah%20Systems.pdf"
+  ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x0d64b6c7e51843c053e5ae9a92f88b0a81dcd8dc",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ae007882b91206942c70adc833a61ee531d8d5d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

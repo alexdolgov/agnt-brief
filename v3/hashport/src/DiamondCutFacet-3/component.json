@@ -1,0 +1,18 @@
+{
+  "component": "DiamondCutFacet-3",
+  "main_contract": "DiamondCutFacet",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2232a10986375fdc9315f682551e141fc2a0a785",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

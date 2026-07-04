@@ -1,6 +1,6 @@
 # infrared-finance — deployments
 
-155 verified deployment(s) across 37 component(s).
+156 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -147,6 +147,7 @@
 | chain-80094 | `0xdfd21d8190f444437a5f791ef920b57ac43184ca` | WrappedVault | impl | live | yes |
 | chain-80094 | `0xe18e88631e0b497180f440ff895981d99bc3e24b` | ERC1967Proxy | impl | live | yes |
 | chain-80094 | `0xe193336621b91d9034a7668fd5fe0065ad84f34f` | WrappedVault | impl | live | yes |
+| chain-80094 | `0xe772bc9b4813c048f23d7a9d0905e64b01d5a717` | IRAuction | impl | live | no |
 | chain-80094 | `0xe9a3c95e071599b2178c52277dcf8a57a8bcd8ef` | InfraredV1_9 | impl | live | yes |
 | chain-80094 | `0xeb6e02ad20e35ad1f2266b98f703757b493bbcce` | WrappedVault | impl | live | yes |
 | chain-80094 | `0xef26bcfb9ce4e807465a46087e9dd73b652fef87` | InfraredBERADepositor | impl | live | no |
@@ -160,7 +161,7 @@
 | chain-80094 | `0xfd0fa49f8aa1d61da390e10ead23c650b0f9c2b5` | IROFTAdapter | impl | live | no |
 | chain-80094 | `0xfe7a781914525e7e7c93b30c213fbfcde1c5f575` | WrappedVault | impl | live | yes |
 
-## Source unavailable (6)
+## Source unavailable (5)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - chain-80094 `0x283071d22d8d70340bebd5e09e03262ebc3defdb`
@@ -168,4 +169,3 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - chain-80094 `0x67b4e6721ad3a99b7ff3679caee971b07fd85cd1`
 - chain-80094 `0x8d5a82ddc916a2750fa9769aae354bf7a19360b9`
 - chain-80094 `0xb3cec5ac14897ebc145da41c46e97a37cd803b3f`
-- chain-80094 `0xe772bc9b4813c048f23d7a9d0905e64b01d5a717`

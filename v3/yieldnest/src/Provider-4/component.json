@@ -1,0 +1,20 @@
+{
+  "component": "Provider-4",
+  "main_contract": "Provider",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_max_vault_withdrawer_audit_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a081b2a6094b7aaed74df2242e48f107b38d7ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,15 +1,23 @@
 {
   "component": "DODODppProxy-2",
   "main_contract": "DODODppProxy",
-  "source_file_count": 5,
-  "deployment_count": 1,
+  "source_file_count": 14,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x624fc8368fe11be00d8b2f3fe0b9d0053bec21b9",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0b1467f71c082d8d410af4376c685d9a6893cf36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x49186e32fed50fd6b5604a2618c7b0b03cd41414",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -15,14 +15,12 @@ library EasyLimitBuyTypeHashLib {
   }
 
   /// @notice dHEDGE limit buy order structure (the "witness" in Permit2 terms)
-  /// @param owner User address that created the order
   /// @param targetVault dHEDGE vault to deposit into
   /// @param pricingAsset Asset whose price triggers order execution
   /// @param minTriggerPriceD18 Lower price bound (0 = no lower bound)
   /// @param maxTriggerPriceD18 Upper price bound (type(uint256).max = no upper bound)
   /// @param slippageToleranceBps User-defined slippage tolerance in basis points
   struct LimitBuyOrder {
-    address owner;
     address targetVault;
     address pricingAsset;
     uint256 minTriggerPriceD18;
@@ -71,7 +69,6 @@ library EasyLimitBuyTypeHashLib {
   bytes32 public constant LIMIT_BUY_ORDER_TYPEHASH =
     keccak256(
       "LimitBuyOrder("
-      "address owner,"
       "address targetVault,"
       "address pricingAsset,"
       "uint256 minTriggerPriceD18,"
@@ -85,7 +82,6 @@ library EasyLimitBuyTypeHashLib {
   string public constant WITNESS_TYPE_STRING =
     "LimitBuyOrder witness)"
     "LimitBuyOrder("
-    "address owner,"
     "address targetVault,"
     "address pricingAsset,"
     "uint256 minTriggerPriceD18,"
@@ -100,7 +96,7 @@ library EasyLimitBuyTypeHashLib {
     keccak256(
       "PermitWitnessTransferFrom(TokenPermissions permitted,address spender,uint256 nonce,uint256 deadline,"
       "LimitBuyOrder witness)"
-      "LimitBuyOrder(address owner,address targetVault,address pricingAsset,uint256 minTriggerPriceD18,uint256 maxTriggerPriceD18,uint16 slippageToleranceBps)"
+      "LimitBuyOrder(address targetVault,address pricingAsset,uint256 minTriggerPriceD18,uint256 maxTriggerPriceD18,uint16 slippageToleranceBps)"
       "TokenPermissions(address token,uint256 amount)"
     );
 
@@ -116,7 +112,6 @@ library EasyLimitBuyTypeHashLib {
       keccak256(
         abi.encode(
           LIMIT_BUY_ORDER_TYPEHASH,
-          order.owner,
           order.targetVault,
           order.pricingAsset,
           order.minTriggerPriceD18,

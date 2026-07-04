@@ -2,14 +2,30 @@
   "component": "DestinationVaultExtension",
   "main_contract": "DestinationVaultExtension",
   "source_file_count": 15,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x94ab3cd49854f22d2567a33051b77702da7a09f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x4ca8f3e9a5adc4893c93643b2cd90dc9eb443fc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xef8d12d66f9b5b282fbb67e3dfda3fee8d8707b6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

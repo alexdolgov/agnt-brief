@@ -2,7 +2,7 @@
   "component": "BtcTxVerifier",
   "main_contract": "BtcTxVerifier",
   "source_file_count": 15,
-  "deployment_count": 4,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,38 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x1e64f7641b6ae37395c26d154c6d8457dbc0b931",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3c2bcea2e5920886ac67232af2351ee904c5c0a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x9c98f151819bd0abdef58b3b0993ca69c0c57378",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9c98f151819bd0abdef58b3b0993ca69c0c57378",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xbc9afbd085900e0ae8787267a0dec344ef006e85",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

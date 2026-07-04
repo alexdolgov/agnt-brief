@@ -1,0 +1,18 @@
+{
+  "component": "DyorRouterV2-2",
+  "main_contract": "DyorRouterV2",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xfc9869ef6e04e8dcf09234ad0bc48a6f78a493cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

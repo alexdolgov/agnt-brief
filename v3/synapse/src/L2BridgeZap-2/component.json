@@ -1,0 +1,18 @@
+{
+  "component": "L2BridgeZap-2",
+  "main_contract": "L2BridgeZap",
+  "source_file_count": 11,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x26532682e1830cdacccbb7e385cff6de14dd08d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

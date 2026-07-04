@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { Admin } from "contracts/base/Admin.sol";
+import "./base/Admin.sol";
 
 library SickleRegistryEvents {
     event CollectorChanged(address newCollector);
@@ -55,7 +55,6 @@ contract SickleRegistry is Admin {
     /// @notice Updates the whitelist status for multiple multicall targets
     /// @param targets Addresses of the contracts to update
     /// @param isApproved New status for the contracts
-    /// @custom:access Restricted to protocol admin.
     function setWhitelistedTargets(
         address[] calldata targets,
         bool isApproved
@@ -74,7 +73,6 @@ contract SickleRegistry is Admin {
 
     /// @notice Updates the fee collector address
     /// @param newCollector Address of the new fee collector
-    /// @custom:access Restricted to protocol admin.
     function updateCollector(address newCollector) external onlyAdmin {
         collector = newCollector;
         emit SickleRegistryEvents.CollectorChanged(newCollector);
@@ -83,7 +81,6 @@ contract SickleRegistry is Admin {
     /// @notice Update the whitelist status for multiple multicall callers
     /// @param callers Addresses of the callers
     /// @param isApproved New status for the caller
-    /// @custom:access Restricted to protocol admin.
     function setWhitelistedCallers(
         address[] calldata callers,
         bool isApproved
@@ -113,7 +110,6 @@ contract SickleRegistry is Admin {
     /// @notice Update the fees for multiple strategy functions
     /// @param feeHashes Array of fee hashes
     /// @param feesArray Array of fees to apply (in basis points)
-    /// @custom:access Restricted to protocol admin.
     function setFees(
         bytes32[] calldata feeHashes,
         uint256[] calldata feesArray

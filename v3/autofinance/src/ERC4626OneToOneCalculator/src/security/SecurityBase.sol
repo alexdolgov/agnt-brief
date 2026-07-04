@@ -36,10 +36,7 @@ contract SecurityBase {
     //
     ///////////////////////////////////////////////////////////////////
 
-    function _hasRole(
-        bytes32 role,
-        address account
-    ) internal view returns (bool) {
+    function _hasRole(bytes32 role, address account) internal view returns (bool) {
         return accessController.hasRole(role, account);
     }
 }

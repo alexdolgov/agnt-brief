@@ -1,17 +1,15 @@
 {
   "component": "MCV2_Token-2",
   "main_contract": "MCV2_Token",
-  "source_file_count": 6,
+  "source_file_count": 8,
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xff45161474c39cb00699070dd49582e417b57a7e",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

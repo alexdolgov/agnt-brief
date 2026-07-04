@@ -1,0 +1,21 @@
+{
+  "component": "LendingPoolPeripheral-3",
+  "main_contract": "LendingPoolPeripheral",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://raw.githubusercontent.com/Zharta/protocol-v1/97ad0167fff89b8f4f8d70ecef76869ca89b8b63/docs/audits/Zharta%20-%20Audit%20Report%20Final.pdf",
+    "https://raw.githubusercontent.com/Zharta/protocol-v1/97ad0167fff89b8f4f8d70ecef76869ca89b8b63/docs/audits/Zharta_SCAudit_Report_Final.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d0f9c9fa4c1b265cd5032fe6ba4fefc9d94badb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

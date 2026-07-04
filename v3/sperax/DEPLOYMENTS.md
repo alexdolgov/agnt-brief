@@ -1,6 +1,6 @@
 # sperax — deployments
 
-35 verified deployment(s) across 24 component(s).
+37 verified deployment(s) across 26 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,7 +9,7 @@
 | arbitrum | `0x0390c6c7c320e41fce0e6f0b982d20a88660f473` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x0966e72256d6055145902f72f9d3b6a194b9ccc3` | TUP | proxy | live | no |
 | arbitrum | `0x0b680a3bfc16fc0d72f2a36157ca939a047dc4d2` | Demeter_UniV3FarmDeployer_v2 | impl | inactive | no |
-| arbitrum | `0x2c07bc934974bbf413a4a4ceda98713dcb8d9e16` | RewardDistributor_v1 | impl | inactive | no |
+| arbitrum | `0x2c07bc934974bbf413a4a4ceda98713dcb8d9e16` | RewardDistributor_v1-2 | impl | inactive | no |
 | arbitrum | `0x2d715a14d0577964f9dd7956c9a369b26afa55dc` | USDsL2 | impl | inactive | no |
 | arbitrum | `0x2e2071180682ce6c247b1ef93d382d509f5f6a17` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0x39eb38cf2cc8b4ff77817e2ada6ba64e40a4d8ea` | Farm | impl | live | yes |
@@ -33,15 +33,11 @@
 | arbitrum | `0xf3f98086f7b61a32be4edf8d8a4b964ec886bbcd` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0xf783dd830a4650d2a8594423f123250652340e3f` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0xfd14c8ef0993fd9409f7820ba8ba80370529d861` | YieldReserve | impl | live | yes |
+| ethereum | `0x080f26e2fcdb2398bf289378892b5b330c3411db` | RewardDistributor_v2-2 | impl | inactive | no |
 | ethereum | `0x2a95fe4c7e64e09856989f9ea0b57b9ab5f770cb` | SperaxTokenL1 | impl | live | no |
 | ethereum | `0x9631483f28b7f5cbf7d435ab249be8f709215bc3` | SperaxToken | impl | live | no |
 | ethereum | `0xa3f8745548a98ee67545abcb0cc8ed3129b8ff8d` | veSPA_v1 | impl | inactive | no |
+| ethereum | `0xa61dd4480be2582283afa54e461a1d3643b36040` | RewardDistributor_v1 | impl | inactive | no |
 | ethereum | `0xb4a3b0faf0ab53df58001804dda5bfc6a3d59008` | SperaxToken | impl | live | no |
 | ethereum | `0xc9e6cfd004b86856505f1aa5305273daf4ba3747` | AirdropBlockHeight | impl | inactive | no |
 | ethereum | `0xfb931d41a744be590e8b51e2e343bbe030ac4f93` | SperaxToken | impl | inactive | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x080f26e2fcdb2398bf289378892b5b330c3411db`
-- ethereum `0xa61dd4480be2582283afa54e461a1d3643b36040`

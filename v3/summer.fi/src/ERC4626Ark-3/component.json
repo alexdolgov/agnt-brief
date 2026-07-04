@@ -1,0 +1,50 @@
+{
+  "component": "ERC4626Ark-3",
+  "main_contract": "ERC4626Ark",
+  "source_file_count": 57,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x45ff580617c41ca4fb5d76c0ecc331fa3a5ac8b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x497d89f32ff7dcf0d8db2a532efc8d06549a38df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x580b9a45b03509c1177c3698c130a68977fdee1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x65ef675c5d2c28ddaa18fcd127df16af9bcd0094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcf5870ab4cc9d3de9d68e3b5222b7fbdcf841985",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

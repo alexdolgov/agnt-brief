@@ -1,17 +1,33 @@
 {
   "component": "IntegrationRegistry-2",
   "main_contract": "IntegrationRegistry",
-  "source_file_count": 4,
-  "deployment_count": 1,
+  "source_file_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://www.openzeppelin.com/news/set-protocol-audit"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6655194c95d24b8b10b156dffce22a2c126e2e5a",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2152f99cca0d908696462d69bdca8a8df3d66abb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5678dcbd8961032d94c669986097b1c0556283bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xded5a5bea1f161bca071d97ab86fc7dcd1bb9057",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -22,7 +22,7 @@ pragma experimental ABIEncoderV2;
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 import { IInterestSetter } from "../../protocol/interfaces/IInterestSetter.sol";
 import { Interest } from "../../protocol/lib/Interest.sol";
-import { DolomiteMarginMath } from "../../protocol/lib/DolomiteMarginMath.sol";
+import { Math } from "../../protocol/lib/Math.sol";
 
 
 /**
@@ -35,7 +35,7 @@ import { DolomiteMarginMath } from "../../protocol/lib/DolomiteMarginMath.sol";
 contract DoubleExponentInterestSetter is
     IInterestSetter
 {
-    using DolomiteMarginMath for uint256;
+    using Math for uint256;
     using SafeMath for uint256;
 
     // ============ Constants ============

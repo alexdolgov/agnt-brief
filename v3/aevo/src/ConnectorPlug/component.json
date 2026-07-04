@@ -1,15 +1,63 @@
 {
   "component": "ConnectorPlug",
   "main_contract": "ConnectorPlug",
-  "source_file_count": 22,
-  "deployment_count": 22,
+  "source_file_count": 43,
+  "deployment_count": 25,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x070feadf2208303d341d1d2da6aa41395f8bce43",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0fd7856357c294a889a58f2bad74901e32f1d970",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x32bf26035754a73eeda80bac0914c1e9ae88174c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x3bb3b7d1ca52c55d93896290b59516372ff35984",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4436ba5e61e1e7f9721980741b6403859c576e72",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5b64ced7509007884e43b2d07b1b9bccbe7aeb6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbc31ec84bd7bc2c97b9413f6e473ce96be153a25",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeab4999c4debc87516db5a0dee98de145f602572",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -17,7 +65,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x0a206467b372b540d073712519e2be20f0c93b12",
+      "address": "0x063ce19e9d682f38be70644a5fddae3a2ec380b6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -25,7 +73,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x17fc4c7ea8267044b6d0acc17a6c049bed6f8b21",
+      "address": "0x24686087887f2de94c9481371535e51809564fed",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -33,7 +81,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x2e63d65f31d8a70e5185a3c4bc0edc31a1cf4571",
+      "address": "0x34f86952285673e5d596146ec7de440767743109",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -41,7 +89,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x31dbdaf7a388735e95a1f68494621d0d82583c86",
+      "address": "0x3e3e6ff83a0255dcb3602c0136bb3a0bdd13f807",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -49,7 +97,15 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x3809150509df79d96334c4eb6ba1c386827c3c67",
+      "address": "0x4ed9ed34ee9e502e4b320b8c2eeefc714e743553",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x65f258263acc0857c3eee77c2e997d6ff99b8132",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -57,7 +113,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x42c846313c37845b9d67bb5c1f4f48e528234afc",
+      "address": "0x716206c6ac501315f8b204e1e564b9e0cbc210d4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -65,7 +121,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x5ea1172d7c6bb48fdde560c8cfc6660519e1ff41",
+      "address": "0x811f69eb3cbd4f52e7f5ecfd68e3b20c865886f9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -73,7 +129,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x6284b30ec9675b4b318f3e2bf8801e6645034516",
+      "address": "0x8542813032035617bdd6e85cfdb57e8ad98d3d2a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -81,7 +137,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x63d8934c1fc89f57b17ab5e14db52bb07d577c0f",
+      "address": "0xa9d0c013ef86bf49dd7240a6a01fc9064d7025e8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -89,7 +145,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x69adf49285c25d9f840c577a0e3cb134caf944d3",
+      "address": "0xb39f91e53a7280601d4d7d723f8a1227fb468c98",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -97,7 +153,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x7deb2459a366d4f85ab5e89f31be527348a672ca",
+      "address": "0xbca7e73a838cb4e69d9f6eda4b9e13358d77b315",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -105,7 +161,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x8752c7aacc4dc3554c08f6f59912f105b1f0a5f7",
+      "address": "0xc8b6d7c7f5eec48afe9bfc9ba121a749e05c4706",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -113,7 +169,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xa451cc3077729ecaeb3ba2cbfd5326a90cbc4ad9",
+      "address": "0xd34308fb7138716b9a9519e13fb1e0196bfb9d3f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -121,7 +177,15 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xa8eaae220a165c7404abaaae9efc3c32fc72151d",
+      "address": "0xd7bbe2f6d1b52a27d2dac28298de3974a3d13047",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdaadd2fa8ca8985ab407f097cd087c8ed9bda2c8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -129,7 +193,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xadec92ed5f9b9df814a1e237cca6f1b5e68702eb",
+      "address": "0xed24b1b69ad58e21bbed6600749b713725407e66",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
@@ -137,47 +201,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xb0d57301050710af1145562b3386ff5ecfe9be83",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xdc56509f941884a0c047413d6973e2f00d763288",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe02c751e09a87eab8a09ff109d67d39b4690047e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe0a298922f14ad230218218e75860e9fe4c0b55c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf9715b5518396378596cbc70bea7f8cf4c10d9b2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xff17d331174137ccd1c392a77e898b36ddd7ff54",
+      "address": "0xf570f67a1b29de1b301e6c8112fae7779a84cdd8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

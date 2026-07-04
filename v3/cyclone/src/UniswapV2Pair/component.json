@@ -2,7 +2,7 @@
   "component": "UniswapV2Pair",
   "main_contract": "UniswapV2Pair",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x37d9c7f451e5c619a7d4ca01e06761eb7dae6f89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6ea88502bc127ef1a7f45fac6b7168fc0633ba51",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

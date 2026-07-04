@@ -1,0 +1,18 @@
+{
+  "component": "SiloFacet-2",
+  "main_contract": "SiloFacet",
+  "source_file_count": 86,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5678345d444918a38ad9dc7ca1b0c208e1927094",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

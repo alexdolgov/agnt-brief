@@ -1,0 +1,18 @@
+{
+  "component": "Loot3D-3",
+  "main_contract": "Loot3D",
+  "source_file_count": 8,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x45e877ba9f5d678e630ad99e8acb70e0f4da33f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationFacet-9",
+  "main_contract": "LiquidationFacet",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8a3079286a6ebf37b6216046dc0f41d86935e83a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

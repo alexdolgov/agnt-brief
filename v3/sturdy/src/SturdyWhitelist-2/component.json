@@ -1,0 +1,18 @@
+{
+  "component": "SturdyWhitelist-2",
+  "main_contract": "SturdyWhitelist",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xed7d1b8dea862005b7d9cf0b2a5f9f0e816f85fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

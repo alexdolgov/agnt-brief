@@ -1,0 +1,42 @@
+{
+  "component": "PrecompileTester-2",
+  "main_contract": "PrecompileTester",
+  "source_file_count": 4,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x48686c24697fe9042531b64d792304e514e74339",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8c63cda467e5de338fa503f2977afa9cd4bed669",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb597fb1d5c27b4dfd717d502bc29ed6106aea876",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xed172bb56bcc1e760ad66a077b797a008ab8b838",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

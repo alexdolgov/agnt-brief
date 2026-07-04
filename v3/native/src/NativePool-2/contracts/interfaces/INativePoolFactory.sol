@@ -12,6 +12,20 @@ error RegistryAlreadySet();
 error RegistryNotSet();
 error InputArrayLengthMismatch();
 error PoolUpgradeFailed();
+error onlyOwnerOrPauserCanCall();
+
+struct NewPoolConfig {
+    address treasuryAddress;
+    address poolOwnerAddress;
+    address signerAddress;
+    address routerAddress;
+    bool isPublicTreasury;
+    bool isTreasuryContract;
+    uint256[] fees;
+    address[] tokenAs;
+    address[] tokenBs;
+    uint256[] pricingModelIds;
+}
 
 interface INativePoolFactory {
     /// @notice Emitted when a pool is created
@@ -27,18 +41,7 @@ interface INativePoolFactory {
     event AddMultiPoolTreasury(address treasury);
     event RemoveMultiPoolTreasury(address treasury);
 
-    function createNewPool(
-        address treasuryAddress,
-        address poolOwnerAddress,
-        address signerAddress,
-        address routerAddress,
-        uint256[] memory fees,
-        address[] memory tokenAs,
-        address[] memory tokenBs,
-        uint256[] memory pricingModelIds,
-        bool isPublicTreasury,
-        bool isTreasuryContract
-    ) external returns (address pool);
+    function createNewPool(NewPoolConfig calldata poolConfig) external returns (address pool);
 
     function upgradePools(address[] calldata _pools, address[] calldata _impls) external;
 
@@ -49,4 +52,6 @@ interface INativePoolFactory {
     function verifyPool(address poolAddress) external view returns (bool);
 
     function setPoolImplementation(address newPoolImplementation) external;
+
+    function setPauser(address _pauser) external;
 }

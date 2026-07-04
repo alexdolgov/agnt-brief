@@ -1,15 +1,15 @@
 {
   "component": "CreditMessaging-3",
   "main_contract": "CreditMessaging",
-  "source_file_count": 161,
+  "source_file_count": 51,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x13379b489fb2e76cedf96bceaa2441e5930d75e1",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xda82a31df339bfdf0123661134b4db63cb1706f5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

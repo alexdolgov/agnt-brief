@@ -1,0 +1,18 @@
+{
+  "component": "ZeroOFT-4",
+  "main_contract": "ZeroOFT",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xebe09034109992830a70190c6b6deb730f15fe0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

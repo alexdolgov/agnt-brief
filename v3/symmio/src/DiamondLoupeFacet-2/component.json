@@ -2,14 +2,78 @@
   "component": "DiamondLoupeFacet-2",
   "main_contract": "DiamondLoupeFacet",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0f1299e27eeed3256fc384541cf5502650083aee",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0b60140dcc98a6a9e9985ab165dc54903861d50a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x50658f52c4d89ae515daa2cfc503f5e932fca89d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x62077a0152890ac1abee5432ee308fa03c1d2dbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6a9536dc1377ce6247f1f392ed6e36aa3391cad2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x99886d393329681ed35042854b18d82c7ad95519",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc02c6f6ad7ed4286da3e56944594380c6e256d15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdea50824a9e50bd1e9943155938f3b82854b2eec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf7a0ba46e1cb4ebe887581ac31c35463b84902fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfbadc277fbd44244ff435b991fbe8ec218da7c0a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

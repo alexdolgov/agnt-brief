@@ -1,0 +1,26 @@
+{
+  "component": "V3Utils-9",
+  "main_contract": "V3Utils",
+  "source_file_count": 42,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x839706d3c77f57ed8d5bc3f6961df74246305e9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xedfc4481f53447f2ea4c1db24cf906a6c7cb0782",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

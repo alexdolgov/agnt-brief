@@ -1,0 +1,18 @@
+{
+  "component": "AggregateVaultHelper",
+  "main_contract": "AggregateVaultHelper",
+  "source_file_count": 106,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x47ccac14320aa82ce8c94a6d3d34b8316eddd3ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "NonfungibleTokenPositionDescriptor-2",
+  "main_contract": "NonfungibleTokenPositionDescriptor",
+  "source_file_count": 40,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe5e47ac4b5389cf4a2df66315d57f4f62ae80f9f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

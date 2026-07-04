@@ -1,0 +1,18 @@
+{
+  "component": "BurnRegistryV1-5",
+  "main_contract": "BurnRegistryV1",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xda26cb81140f2a98ded4cf25d4e2fa88b76e9818",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

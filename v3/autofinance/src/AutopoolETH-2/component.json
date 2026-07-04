@@ -1,15 +1,55 @@
 {
   "component": "AutopoolETH-2",
   "main_contract": "AutopoolETH",
-  "source_file_count": 81,
-  "deployment_count": 1,
+  "source_file_count": 70,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7fed74094b7010c6fb3010ed5efc00772fd2ed1f",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x40ed41591cfe85c5da2b9aef73854156ba45d381",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6e2cb0a3f445c158c6c212283479d9530bcaf85c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xd0cf0c4594ed8d2a0d845d493693fde822cc5821",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x12db19359159e8ab0822506adf15d4d8dbff66c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1ecbbeb863245c83755d74f5028de284c768510",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdeb9a2c2dc1ee16abbb7adedcbe5f0c2ecd4e0ee",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

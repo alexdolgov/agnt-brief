@@ -1,0 +1,26 @@
+{
+  "component": "WrappedERC721-2",
+  "main_contract": "WrappedERC721",
+  "source_file_count": 13,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc8fa68ceda02eb00e9139e589f2913c5d0573f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbcb430d7c39eb75f801fac32d77a400326ee4a7d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

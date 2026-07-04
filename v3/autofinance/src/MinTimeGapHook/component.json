@@ -2,10 +2,18 @@
   "component": "MinTimeGapHook",
   "main_contract": "MinTimeGapHook",
   "source_file_count": 65,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x71689a8e924ba6611fac7bd40c55796e8b1679d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

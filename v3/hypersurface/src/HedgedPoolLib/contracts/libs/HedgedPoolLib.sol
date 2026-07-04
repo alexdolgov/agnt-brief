@@ -144,7 +144,9 @@ library HedgedPoolLib {
     /// @notice Withdraw collateral from vault
     function withdrawCollateral(
         address controller,
+        address owner,
         uint256 vaultId,
+        address to,
         address collateralAsset,
         uint256 withdrawalAmount
     ) public {
@@ -154,8 +156,8 @@ library HedgedPoolLib {
 
         actions[0] = IController.ActionArgs(
             IController.ActionType.WithdrawCollateral,
-            address(this), // owner
-            address(this), // address to transfer to
+            owner, // owner
+            to, // address to transfer to
             collateralAsset, // withdrawn asset
             vaultId, // vaultId
             withdrawalAmount, // amount

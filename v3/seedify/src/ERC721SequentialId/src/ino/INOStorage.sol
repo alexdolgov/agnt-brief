@@ -39,9 +39,17 @@ library INOStorage {
     /**
      * @notice Struct reprensenting the whole storage layout of the INO contract.
      *
-     * @param setUp Struct reprensenting the main setup of the INO.
-     * @param nftData Struct reprensenting the data of the NFT collection to be deployed through INO.
-     * @param collection The address of the NFT collection to be deployed and minted through INO.
+     * @param setUp Struct reprensenting the main setup of the INO - modified by owner interactions only.
+     * @param nftData Struct reprensenting the data of the NFT collection to be deployed through INO
+     *                - modified by owner interactions only.
+     * @param collection The address of the NFT collection to be deployed and minted through INO - modified
+     *                   by owner interactions only.
+     * @param phaseMaxMint Maximum number of NFTs to be minted in a specific phase - modified by owner
+     *                     interactions only.
+     * @param mintedInPhase Number of NFTs minted in a specific phase - modified by INO contract
+     *                      interaction.
+     * @param totalMinted Total number of NFTs minted in the whole INO - modified by INO contract
+     *                    interaction.
      */
     struct INOStruct {
         // modified by owner interactions only

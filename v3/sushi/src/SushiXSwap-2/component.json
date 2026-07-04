@@ -1,0 +1,42 @@
+{
+  "component": "SushiXSwap-2",
+  "main_contract": "SushiXSwap",
+  "source_file_count": 24,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x1838b053e0223f05fb768fa79aa07df3f0f27480",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2214a42d8e2a1d20635c2cb0664422c528b6a432",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8fcad570a448d350bbb04ff204ca1f0ca85075cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbbde1d67297329148fe1ed5e6b00114842728e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "LimitOrderManager-10",
+  "main_contract": "LimitOrderManager",
+  "source_file_count": 49,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x019b7d52c9ea6461a24068d20d6f51b1e0d63f7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.20;
 
 import "./BasisPointConstants.sol";
-import {Math} from "@openzeppelin/contracts-5/utils/math/Math.sol";
+import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
 
 error InitialFeeExceedsMaxFee(uint256 feeBps, uint256 maxFeeBps);
 error InvalidFeeBps(uint256 feeBps, uint256 maxFeeBps);

@@ -1,17 +1,31 @@
 {
   "component": "RouterManager",
   "main_contract": "RouterManager",
-  "source_file_count": 35,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.04.09%20-%20Final%20-%20Bundie%20Collaborative%20Audit%20Report%201775738963.pdf"
-  ],
+  "source_file_count": 32,
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x38ba8ba3002a1d1984de2ec511d3c9ffb3f4ce26",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7b8af9525f0183909ea985798d415422d875d93d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x92bf97347ea2037ec8e4b3762b7cceb8017c255d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4793281c20966e39df90de21624ff7c3bb88ddb3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,0 +1,18 @@
+{
+  "component": "LendingRateOracle-2",
+  "main_contract": "LendingRateOracle",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd719084151f1f47b7dcb937bb33845656580b79d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "AccountManager-3",
+  "main_contract": "AccountManager",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x2e70d2778d143412d66edf835be82db29cb1ecfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

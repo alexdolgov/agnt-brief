@@ -109,6 +109,9 @@ library CollateralManager {
         (, uint256 newMaxLoanIgnoreSupply) = getMaxLoan(portfolioFactoryConfig);
         _updateUndercollateralizedDebt(previousMaxLoanIgnoreSupply, newMaxLoanIgnoreSupply);
 
+        uint256 totalDebt = collateralManagerData.debt;
+        require(totalDebt <= newMaxLoanIgnoreSupply, "Debt exceeds max loan");
+
         _notifyCollateralRemoved(portfolioFactoryConfig, ve, tokenId);
         emit CollateralRemoved(tokenId, address(this));
     }
@@ -187,8 +190,6 @@ library CollateralManager {
         uint256 totalDebt = collateralManagerData.debt;
         uint256 balancePayment = totalDebt > amount ? amount : totalDebt;
 
-        (, uint256 previousMaxLoanIgnoreSupply) = getMaxLoan(portfolioFactoryConfig);
-
         ILendingPool lendingPool = ILendingPool(PortfolioFactoryConfig(portfolioFactoryConfig).getLoanContract());
 
         IERC20(lendingPool.lendingAsset()).approve(address(lendingPool), balancePayment);
@@ -202,9 +203,9 @@ library CollateralManager {
             collateralManagerData.overSuppliedVaultDebt -= collateralManagerData.overSuppliedVaultDebt > actualPaid ? actualPaid : collateralManagerData.overSuppliedVaultDebt;
         }
 
-
-        (, uint256 newMaxLoanIgnoreSupply) = getMaxLoan(portfolioFactoryConfig);
-        _updateUndercollateralizedDebt(previousMaxLoanIgnoreSupply, newMaxLoanIgnoreSupply);
+        if(collateralManagerData.undercollateralizedDebt > 0) {
+            collateralManagerData.undercollateralizedDebt -= collateralManagerData.undercollateralizedDebt > actualPaid ? actualPaid : collateralManagerData.undercollateralizedDebt;
+        }
 
         return excess;
     }
@@ -212,17 +213,27 @@ library CollateralManager {
     function getMaxLoan(address portfolioFactoryConfig) public view returns (uint256 maxLoan, uint256 maxLoanIgnoreSupply) {
         uint256 totalLockedCollateral = getTotalLockedCollateral();
         ILoanConfig loanConfig = PortfolioFactoryConfig(portfolioFactoryConfig).getLoanConfig();
+
+        if (address(loanConfig) == address(0)) {
+            return (0, 0);
+        }
+
         uint256 rewardsRate = loanConfig.getRewardsRate();
         uint256 multiplier = loanConfig.getMultiplier();
 
-        ILendingPool lendingPool = ILendingPool(PortfolioFactoryConfig(portfolioFactoryConfig).getLoanContract());
-        uint256 outstandingCapital = lendingPool.activeAssets();
+        address loanContract = PortfolioFactoryConfig(portfolioFactoryConfig).getLoanContract();
+        uint256 outstandingCapital;
+        uint256 vaultBalance;
+        if (loanContract != address(0)) {
+            ILendingPool lendingPool = ILendingPool(loanContract);
+            outstandingCapital = lendingPool.activeAssets();
 
-        address vault = lendingPool.lendingVault();
-        IERC4626 vaultAsset = IERC4626(vault);
-        // Get the underlying asset balance in the vault
-        address underlyingAsset = vaultAsset.asset();
-        uint256 vaultBalance = IERC20(underlyingAsset).balanceOf(address(vault));
+            address vault = lendingPool.lendingVault();
+            if (vault != address(0)) {
+                address underlyingAsset = IERC4626(vault).asset();
+                vaultBalance = IERC20(underlyingAsset).balanceOf(vault);
+            }
+        }
 
         // Get current total debt for the portfolio account
         uint256 currentLoanBalance = getTotalDebt();
@@ -238,6 +249,16 @@ library CollateralManager {
     function getLockedCollateral(uint256 tokenId) external view returns (uint256) {
         CollateralManagerData storage collateralManagerData = _getCollateralManagerData();
         return collateralManagerData.lockedCollaterals[tokenId];
+    }
+
+    function getLTVRatio(address portfolioFactoryConfig) public view returns (uint256) {
+        uint256 totalDebt = getTotalDebt();
+        if (totalDebt == 0) return 0;
+
+        (, uint256 maxLoanIgnoreSupply) = getMaxLoan(portfolioFactoryConfig);
+        if (maxLoanIgnoreSupply == 0) return type(uint256).max;
+
+        return (totalDebt * 100) / maxLoanIgnoreSupply;
     }
 
     /**
@@ -307,7 +328,7 @@ library CollateralManager {
     function _updateUndercollateralizedDebt(uint256 previousMaxLoanIgnoreSupply, uint256 newMaxLoanIgnoreSupply) internal {
         CollateralManagerData storage collateralManagerData = _getCollateralManagerData();
         uint256 totalDebt = collateralManagerData.debt;
-        
+
         bool isRemovingCollateral = previousMaxLoanIgnoreSupply > newMaxLoanIgnoreSupply;
 
         // If debt is now fully covered, set undercollateralized debt to 0
@@ -315,7 +336,14 @@ library CollateralManager {
             collateralManagerData.undercollateralizedDebt = 0;
             return;
         }
-        
+
+        // When prev == new (no delta), the incremental logic would be a no-op,
+        // but debt > maxLoan means we're undercollateralized. Set the full shortfall.
+        if(previousMaxLoanIgnoreSupply == newMaxLoanIgnoreSupply) {
+            collateralManagerData.undercollateralizedDebt = totalDebt - newMaxLoanIgnoreSupply;
+            return;
+        }
+
         // Calculate the change in undercollateralized debt
         // The difference is simply the change in maxLoanIgnoreSupply:
         // - When removing collateral: maxLoanIgnoreSupply decreases, so undercollateralized debt increases
@@ -334,13 +362,6 @@ library CollateralManager {
                 collateralManagerData.undercollateralizedDebt -= difference;
             }
         }
-
-        // NOTE: When previousMaxLoanIgnoreSupply == newMaxLoanIgnoreSupply (e.g., repayment
-        // where only debt changes), the delta is 0 and undercollateralizedDebt is unchanged.
-        // This can leave a stale value that overstates the actual shortfall. However, it does
-        // NOT affect transaction outcomes — the early return above already zeroes
-        // undercollateralizedDebt when totalDebt <= maxLoanIgnoreSupply, so enforceCollateralRequirements
-        // pass/fail is always correct. The stale value only affects the revert message amount.
     }
 
 

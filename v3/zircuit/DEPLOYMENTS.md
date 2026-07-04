@@ -1,6 +1,6 @@
 # zircuit — deployments
 
-40 verified deployment(s) across 24 component(s).
+42 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -20,6 +20,7 @@
 | ethereum | `0x008f8e5cb02a2f6f79fc91ed2ca3a6fe0ff87f74` | BatchMigrator | impl | live | yes |
 | ethereum | `0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1` | Proxy-2 | proxy | live | yes |
 | ethereum | `0x221c2b6ee63dcede31ea703898ae15d889d881f0` | ZtakingPool | impl | inactive | no |
+| ethereum | `0x28966ce36d0f25858dc5d10dfc2829f05c332c49` | InstitutionLender-2 | proxy | live | no |
 | ethereum | `0x2a721cbe81a128be0f01040e3353c3805a5ea091` | Proxy-3 | proxy | live | no |
 | ethereum | `0x2c0b27f7c8f083b539557a0ba787041bf22db276` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x2d342de4c58a871b3525740c58a1c112d5835865` | OFTCoreUpgradeable | proxy | live | no |
@@ -27,6 +28,7 @@
 | ethereum | `0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8` | Proxy-5 | proxy | live | yes |
 | ethereum | `0x48ab4e39ac59f4e88974804b04a991b3a402717f` | ERC20RevocableComplianceToken | proxy | live | no |
 | ethereum | `0x5b1ef673d9c316b3ee9ed3b4e3cc84952bfc5257` | ProxyAdmin | impl | live | no |
+| ethereum | `0x6424c7548e214f89b64ea5981c5a0c5ec22b6e38` | InstitutionLender-2 | proxy | live | no |
 | ethereum | `0x6bce7408c0781dce7b71494274302d4b75a1447c` | Proxy-6 | proxy | live | no |
 | ethereum | `0x6c89104690452ad7e209f0ab72287c2561d5cf0e` | Proxy | proxy | live | no |
 | ethereum | `0x745393cc03b5fe668ecd52c0e625f59aad6d3da0` | Proxy-7 | proxy | live | no |
@@ -44,9 +46,3 @@
 | ethereum | `0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6` | ZtakingPool-2 | impl | live | yes |
 | ethereum | `0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67` | SP1VerifierGateway | impl | live | no |
 | ethereum | `0xfd418e42783382e86ae91e445406600ba144d162` | ZRC | impl | live | yes |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x28966ce36d0f25858dc5d10dfc2829f05c332c49`
-- ethereum `0x6424c7548e214f89b64ea5981c5a0c5ec22b6e38`

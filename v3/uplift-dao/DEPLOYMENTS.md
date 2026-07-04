@@ -1,6 +1,6 @@
 # uplift-dao — deployments
 
-74 verified deployment(s) across 19 component(s).
+76 verified deployment(s) across 21 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -55,6 +55,7 @@
 | bsc | `0x9dc492997b932861b8ffd96c610171f8ad559764` | PrivatePresaleMerkleTree | impl | inactive | yes |
 | bsc | `0xad3226df971b0f3c33c97a5cb9a02be6d0ab5614` | UpliftStakingPower | impl | inactive | no |
 | bsc | `0xaefc76b728f278df18456d1e32c68d132eff1224` | Pool | impl | inactive | yes |
+| bsc | `0xb425eab1c12fb5b87dce169bb25769ae0636ae2b` | IDOWithWhitelist | impl | inactive | no |
 | bsc | `0xb440390c24420c3c0d6c66d86bbd3f7f81d49f2b` | BaseProxy | impl | inactive | yes |
 | bsc | `0xb6001099aa527717fdb215aa4bce393baef778f3` | ERC1967UpgradeUpgradeable | proxy | live | yes |
 | bsc | `0xba354a54c204cad4f82ba0d8c36806a47e1e2286` | BaseProxy | proxy | live | yes |
@@ -75,12 +76,7 @@
 | bsc | `0xee6dec94eea777f0282b03c1285a2f9f597bc291` | BaseProxy-2 | impl | inactive | yes |
 | bsc | `0xeea6b32053043aa8cbaee31a287a7f8152b2a87e` | PrivatePresaleMerkleTree | impl | inactive | yes |
 | bsc | `0xef023e6acf2a31b12c6b1ff05f84f9440be7490f` | ERC1967UpgradeUpgradeable-2 | proxy | live | yes |
+| bsc | `0xf1f82f6ceed75091724c8de77e14e727d96aac4f` | IDOWithWhitelist-2 | impl | inactive | no |
 | bsc | `0xf35a68a81d6ee5a3b771035480d15272c352b310` | PrivatePresaleMerkleTree | impl | inactive | yes |
 | bsc | `0xfb2dd3e2dc751e92af413cf6c1b5bcc1d9d1737d` | PrivatePresaleV4MerkleTree | proxy | live | yes |
 | bsc | `0xfc46ccf1cf71cbe25c9f4891e32ab8d0f8c8290b` | Staking | impl | live | yes |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xb425eab1c12fb5b87dce169bb25769ae0636ae2b`
-- bsc `0xf1f82f6ceed75091724c8de77e14e727d96aac4f`

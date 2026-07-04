@@ -2,7 +2,7 @@
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 pragma solidity ^0.8.24;
 
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 import { IBackingOracle } from "src/interfaces/stats/backing/IBackingOracle.sol";
@@ -27,7 +27,7 @@ contract OneToOneUSDBackingOracle is SystemComponent, IBackingOracle {
     /// ================================================
 
     constructor(ISystemRegistry _systemRegistry, uint256 _oneUSD) SystemComponent(_systemRegistry) {
-        AutopilotErrors.verifyNotZero(_oneUSD, "oneUSD");
+        Errors.verifyNotZero(_oneUSD, "oneUSD");
 
         // Adding the padding we'll need for the later calculation
         oneUSD = _oneUSD ** 2;

@@ -1,0 +1,18 @@
+{
+  "component": "BancorArbitrage-2",
+  "main_contract": "BancorArbitrage",
+  "source_file_count": 51,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

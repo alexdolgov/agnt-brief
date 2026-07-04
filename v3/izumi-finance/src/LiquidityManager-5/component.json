@@ -1,0 +1,26 @@
+{
+  "component": "LiquidityManager-5",
+  "main_contract": "LiquidityManager",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x110de362cc436d7f54210f96b8c7652c2617887d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x1cb60033f61e4fc171c963f0d2d3f63ece24319c",
+      "is_proxy": true,
+      "implementation_address": "0x1cb60033f61e4fc171c963f0d2d3f63ece24319c",
+      "liveness": "live"
+    }
+  ]
+}

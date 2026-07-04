@@ -1,0 +1,26 @@
+{
+  "component": "Asset-7",
+  "main_contract": "Asset",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xe2a60c52c4abb9fbc3f711da3cb9e633269dbc67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xe43c1695df76cca4d6079061924d7150fd553c21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

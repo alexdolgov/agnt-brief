@@ -10,11 +10,11 @@
   ],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x6f26bf09b1c792e3228e5467807a900a503c0281",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c7bcd6e7de5423a257d81b442095a1a6ced35c5",
       "is_proxy": true,
-      "implementation_address": "0x0966f5034261cc50926fb9d5c1603a5034ffa81c",
+      "implementation_address": "0x5e5b726c81f43b953a62ad87e2835c85c4d9dd3b",
       "liveness": "live"
     }
   ]

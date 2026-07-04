@@ -6,7 +6,7 @@ import "../interfaces/fees/ICustomFeeModule.sol";
 
 contract CustomUnstakedFeeModule is ICustomFeeModule {
     /// @inheritdoc IFeeModule
-    ICLFactory public immutable override factory;
+    ICLFactory public override factory;
     /// @inheritdoc ICustomFeeModule
     mapping(address => uint24) public override customFee;
 

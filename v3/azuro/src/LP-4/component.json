@@ -1,0 +1,29 @@
+{
+  "component": "LP-4",
+  "main_contract": "LP",
+  "source_file_count": 18,
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Azuro-protocol/Bug-Bounty/blob/main/audit-reports/Azuro%20Security%20Analysis%20by%20Pessimistic%20(3).pdf",
+    "https://github.com/Azuro-protocol/Bug-Bounty/blob/main/audit-reports/azuro-v1-audit-report-prelim.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd1025891129f02f0e66d5126fc73e52aecb918c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x14375f13a9f8d91d46f14b30345387f5f90c8224",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

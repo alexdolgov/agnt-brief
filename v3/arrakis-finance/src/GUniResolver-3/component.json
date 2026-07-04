@@ -1,0 +1,18 @@
+{
+  "component": "GUniResolver-3",
+  "main_contract": "GUniResolver",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc8b92036cf2bfc5ad2116c9b9fb3cee2d3b3dc89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

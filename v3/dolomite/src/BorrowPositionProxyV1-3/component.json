@@ -1,0 +1,18 @@
+{
+  "component": "BorrowPositionProxyV1-3",
+  "main_contract": "BorrowPositionProxyV1",
+  "source_file_count": 29,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x97a08604a56f16947a4a956efec2ef223364b733",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

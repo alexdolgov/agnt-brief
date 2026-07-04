@@ -1,35 +1,84 @@
 # carbon-defi — deployments
 
-248 verified deployment(s) across 92 component(s).
+302 verified deployment(s) across 110 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| blast | `0x0f54099d787e26c90c487625b4de819ec5a9bdaa` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
-| blast | `0x30dd96d6b693f78730c7c48b6849d9c44caf39f0` | OptimizedTransparentUpgradeableProxy | impl | live | yes |
+| base | `0x177dbf7343181d522a20bca2850138e1e836947e` | ProxyAdmin-5 | impl | live | no |
+| base | `0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8` | BancorArbitrage-2 | impl | inactive | no |
+| base | `0x773b75cfb146bd5d1095fa9d6d45637f02b05119` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| base | `0xa15e3295465439a361dbcac79c1dbce6cd01e562` | ProxyAdmin-5 | impl | live | no |
+| base | `0xa4682a2a5fe02feff8bd200240a41ad0e6eaf8d5` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| base | `0xb0d39990e1c38b50d0b7f6911525535fbacb4c26` | ProxyAdmin | impl | live | no |
+| base | `0xb53f078315790b62974cdd12fe6f80e946642a36` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
+| base | `0xc7dd38e64822108446872c5c2105308058c5c55c` | OptimizedTransparentUpgradeableProxy-3 | impl | live | yes |
+| base | `0xe033bed7cae4114af84be1e9f1ca7dea07dfe1cf` | ProxyAdmin | impl | live | no |
+| base | `0xe4816658ad10bf215053c533cceae3f59e1f1087` | OptimizedTransparentUpgradeableProxy-6 | impl | live | yes |
+| base | `0xfe19cba3ab1a189b7fc17caa798df64ad2b54d4d` | ProxyAdmin-5 | impl | live | no |
+| blast | `0x0f54099d787e26c90c487625b4de819ec5a9bdaa` | OptimizedTransparentUpgradeableProxy-4 | proxy | live | yes |
+| blast | `0x30dd96d6b693f78730c7c48b6849d9c44caf39f0` | OptimizedTransparentUpgradeableProxy-4 | impl | live | yes |
 | blast | `0x31548b11d685a358de7f52978e099e04116b2db0` | VortexAcrossBridge | impl | inactive | no |
-| blast | `0x59f21012b2e9ba67ce6a7605e74f945d0d4c84ea` | OptimizedTransparentUpgradeableProxy | impl | live | yes |
-| blast | `0x5e994ac7d65d81f51a76e0bb5a236c6fda8dbf9a` | OptimizedTransparentUpgradeableProxy | impl | live | yes |
+| blast | `0x59f21012b2e9ba67ce6a7605e74f945d0d4c84ea` | OptimizedTransparentUpgradeableProxy-4 | impl | live | yes |
+| blast | `0x5e994ac7d65d81f51a76e0bb5a236c6fda8dbf9a` | OptimizedTransparentUpgradeableProxy-4 | impl | live | yes |
 | blast | `0x63e353ae90f95c72bf1e78e45456fb78b0c97525` | VortexAcrossBridge | proxy | live | no |
-| blast | `0xa15e3295465439a361dbcac79c1dbce6cd01e562` | OptimizedTransparentUpgradeableProxy-7 | proxy | live | no |
+| blast | `0x8b66315ae646d3b528184c37cd9365aebae1f3a0` | ProxyAdmin-2 | impl | live | no |
+| blast | `0x8c05ea305235a67c7095a32ad4a2ee2688ade636` | ProxyAdmin | impl | live | no |
+| blast | `0xa15e3295465439a361dbcac79c1dbce6cd01e562` | OptimizedTransparentUpgradeableProxy-20 | proxy | live | no |
+| blast | `0xe6d513dc1107e2b091588e10460cf4b62a733611` | ProxyAdmin-2 | impl | live | no |
+| chain-1329 | `0x30dd96d6b693f78730c7c48b6849d9c44caf39f0` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
 | chain-1329 | `0x31548b11d685a358de7f52978e099e04116b2db0` | SwapRouter02 | impl | inactive | no |
+| chain-1329 | `0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8` | ProxyAdmin-4 | impl | live | no |
+| chain-1329 | `0x4bbd9fae81734cd2c73428307c74079f4e1b08a2` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
 | chain-1329 | `0x51aa24a9230e62cfaf259c47de3133578ce36317` | Multicall | impl | inactive | no |
-| chain-1329 | `0x57cf0c29c2b7bc7cf5396568e25e34a1b687ea05` | ERC1967Upgrade | proxy | live | no |
+| chain-1329 | `0x5715203b16f15d7349cb1e3537365e9664eaf933` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| chain-1329 | `0x57cf0c29c2b7bc7cf5396568e25e34a1b687ea05` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
 | chain-1329 | `0x63e353ae90f95c72bf1e78e45456fb78b0c97525` | SwapRouter02 | impl | inactive | no |
+| chain-1329 | `0x7fc12ab5823b8977803f009a36ea21c9b4e17f06` | ProxyAdmin-2 | impl | live | no |
 | chain-1329 | `0x8b66315ae646d3b528184c37cd9365aebae1f3a0` | SwapRouter02 | impl | inactive | no |
+| chain-1329 | `0x8c05ea305235a67c7095a32ad4a2ee2688ade636` | CarbonController-2 | impl | live | yes |
+| chain-1329 | `0x8ce318919438982514f9f479fdfb40d32c6ab749` | CarbonController-2 | impl | live | yes |
+| chain-1329 | `0x924ad5d745ed622e8303929f8540dc2806cb5502` | OptimizedTransparentUpgradeableProxy-6 | impl | live | yes |
+| chain-1329 | `0xa4682a2a5fe02feff8bd200240a41ad0e6eaf8d5` | OptimizedTransparentUpgradeableProxy-7 | proxy | live | yes |
+| chain-1329 | `0xb0d39990e1c38b50d0b7f6911525535fbacb4c26` | OptimizedTransparentUpgradeableProxy-16 | impl | live | yes |
+| chain-1329 | `0xc7dd38e64822108446872c5c2105308058c5c55c` | OptimizedTransparentUpgradeableProxy-7 | proxy | live | yes |
+| chain-1329 | `0xc95a9c1f378e0009e49fe7fe33dda22da4f977b0` | OptimizedTransparentUpgradeableProxy-3 | impl | live | yes |
+| chain-1329 | `0xcd8c6df64830288aa6091e9e8d281faedc357772` | ProxyAdmin-2 | impl | live | no |
+| chain-1329 | `0xdf1c3beccc182eaa23e1894be3bb55a81876b332` | ProxyAdmin-4 | impl | live | no |
 | chain-1329 | `0xe033bed7cae4114af84be1e9f1ca7dea07dfe1cf` | Multicall3 | impl | inactive | no |
-| chain-42220 | `0x0f9df7475b6d50fb19940e071e5311c9ac0f68e1` | OptimizedTransparentUpgradeableProxy-6 | proxy | live | no |
-| chain-42220 | `0x4fe1b742e484181255385a026653f8bc1115b4c1` | CarbonVortex-3 | impl | live | yes |
-| chain-42220 | `0x753425e27ae996f0db75c759c6e5eba5c74d6aaf` | ERC1967Upgrade | proxy | live | no |
+| chain-1329 | `0xe375ddb4f244337727fd69fcd7645074e82f952e` | OptimizedTransparentUpgradeableProxy-9 | impl | inactive | no |
+| chain-1329 | `0xe4816658ad10bf215053c533cceae3f59e1f1087` | OptimizedTransparentUpgradeableProxy-7 | proxy | live | yes |
+| chain-1329 | `0xfea28d3a9994bc4e7851035764171a02c3fc23b5` | ProxyAdmin-4 | impl | live | no |
+| chain-42220 | `0x0f54099d787e26c90c487625b4de819ec5a9bdaa` | ProxyAdmin | impl | live | no |
+| chain-42220 | `0x0f9df7475b6d50fb19940e071e5311c9ac0f68e1` | OptimizedTransparentUpgradeableProxy-17 | proxy | live | no |
+| chain-42220 | `0x31548b11d685a358de7f52978e099e04116b2db0` | OptimizedTransparentUpgradeableProxy-18 | impl | live | yes |
+| chain-42220 | `0x37a65dda75a4c32959834c9b391a24dca17eec10` | OptimizedTransparentUpgradeableProxy-6 | impl | live | yes |
+| chain-42220 | `0x482b27719b31760e0c45f01685d3f750c47845e1` | OptimizedTransparentUpgradeableProxy-9 | impl | inactive | no |
+| chain-42220 | `0x4fe1b742e484181255385a026653f8bc1115b4c1` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
+| chain-42220 | `0x51aa24a9230e62cfaf259c47de3133578ce36317` | CarbonController-3 | impl | live | yes |
+| chain-42220 | `0x59f21012b2e9ba67ce6a7605e74f945d0d4c84ea` | ProxyAdmin | impl | live | no |
+| chain-42220 | `0x5bca3389786385a35bca14c2d0582adc6cb2482e` | OptimizedTransparentUpgradeableProxy-19 | impl | live | yes |
+| chain-42220 | `0x5e994ac7d65d81f51a76e0bb5a236c6fda8dbf9a` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| chain-42220 | `0x6619871118d144c1c28ec3b23036fc1f0829ed3a` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| chain-42220 | `0x6cd7f631f8c017bb4427d3257593e29ed9bc2fdc` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
+| chain-42220 | `0x753425e27ae996f0db75c759c6e5eba5c74d6aaf` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
 | chain-42220 | `0x773b75cfb146bd5d1095fa9d6d45637f02b05119` | WCELO | impl | inactive | no |
-| chain-42220 | `0xd9c6f857f296a27e2d64a62634a6a30eddafacdb` | ERC1967Upgrade | impl | inactive | no |
+| chain-42220 | `0x8b66315ae646d3b528184c37cd9365aebae1f3a0` | OptimizedTransparentUpgradeableProxy-3 | impl | live | yes |
+| chain-42220 | `0xa15e3295465439a361dbcac79c1dbce6cd01e562` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| chain-42220 | `0xa977879684eece2015ae879dc120c8a1c00718f7` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| chain-42220 | `0xb2a2f14979a68c21181c6a63ca55a5b3693c9d2a` | ProxyAdmin-2 | impl | live | no |
+| chain-42220 | `0xbbaff3bf6ec4c15992c0fb37f12491fd62c5b496` | CarbonController-3 | impl | live | yes |
+| chain-42220 | `0xd0b82e96cba38cda95de4943a771e832bf3bb921` | ProxyAdmin | impl | live | no |
+| chain-42220 | `0xd9c6f857f296a27e2d64a62634a6a30eddafacdb` | OptimizedTransparentUpgradeableProxy | impl | inactive | yes |
+| chain-42220 | `0xd9d89e8a0dfe549e5b424d5b511cb3b84a764857` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |
+| chain-42220 | `0xfe19cba3ab1a189b7fc17caa798df64ad2b54d4d` | OptimizedTransparentUpgradeableProxy-3 | impl | live | yes |
 | ethereum | `0x005a4d6edd48ef4cf1354cb4b6f6bc6dc2b19826` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0x0074f83a6a78555cc784504358028fed2b145f4a` | PendingWithdrawals | impl | inactive | no |
 | ethereum | `0x00bfa047ec1c5e849779107900afd948efca8e63` | BancorNetwork | impl | inactive | no |
-| ethereum | `0x0199f3a6c4b192b9f9c3ebe31fbc535cdd4b7d4e` | OptimizedTransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x0199f3a6c4b192b9f9c3ebe31fbc535cdd4b7d4e` | OptimizedTransparentUpgradeableProxy-8 | proxy | live | no |
 | ethereum | `0x01c1103d765f62a0d909499d7b615c382cdb072d` | DadFab | impl | inactive | no |
 | ethereum | `0x02651e355d26f3506c1e644ba393fdd9ac95eaca` | TransparentUpgradeableProxyImmutable | proxy | inactive | no |
 | ethereum | `0x036f8b31d78ca354ada40dbd117e54f78b6f6cdc` | TransparentUpgradeableProxyImmutable-7 | proxy | inactive | no |
-| ethereum | `0x059d3d353336886cfaf17383c9fb6715652cf9a1` | ProxyAdmin | impl | live | no |
+| ethereum | `0x059d3d353336886cfaf17383c9fb6715652cf9a1` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0x05e29f07b9710368a1d5658750e9b4b478c15bb8` | PoolCollection | impl | inactive | no |
 | ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | inactive | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | inactive | no |
@@ -37,7 +86,7 @@
 | ethereum | `0x0a8079ce1fd9b1ae682d9f1b709609a05bf9b236` | BancorConverterFactory | impl | inactive | no |
 | ethereum | `0x0eda20f7499aae7bdadc4e52fd72e49663733ed4` | TopFab | impl | inactive | no |
 | ethereum | `0x0fbbc6a4e951b00b1ac170325763bd4d5149a77f` | FiatTokenV1 | impl | inactive | no |
-| ethereum | `0x12388c005c3e3a88b6d30c55f21e49b747d118cb` | ProxyAdmin | impl | live | no |
+| ethereum | `0x12388c005c3e3a88b6d30c55f21e49b747d118cb` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0x13432a43f2779c9c64fe9e436c2576e5231f7abc` | LinkToken | impl | inactive | no |
 | ethereum | `0x141a206ece672e3198086c5d21f7858ad03669ea` | MomFab | impl | inactive | no |
 | ethereum | `0x14d0746086361f9d177583f36e1517f1618ccfd5` | LiquidityProtection | impl | inactive | no |
@@ -62,7 +111,7 @@
 | ethereum | `0x31b6368d4c5079819a819af309182b5ac1e9723b` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0x330ee79a0a4f310315d58629c3afc20d384d198d` | PoolMigrator | impl | inactive | no |
 | ethereum | `0x353f8931ce1c52f643121be129985aab09c4bf52` | WETH | impl | inactive | no |
-| ethereum | `0x3660f04b79751e31128f6378eac70807e38f554e` | OptimizedTransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x3660f04b79751e31128f6378eac70807e38f554e` | OptimizedTransparentUpgradeableProxy-5 | proxy | live | yes |
 | ethereum | `0x3836688e867ca599c79a5cac45054256d53175cf` | BancorConverterFactory | impl | inactive | no |
 | ethereum | `0x395ed9ffd32b255dbd128092aba40200159d664b` | PoolCollection | impl | inactive | no |
 | ethereum | `0x40a36b6d7f956f80d07e401a5f620c3a4f252e16` | BancorConverter | impl | inactive | no |
@@ -70,7 +119,7 @@
 | ethereum | `0x41eeba3355d7d6ff628b7982f3f9d055c39488cb` | TransparentUpgradeableProxyImmutable-8 | proxy | inactive | no |
 | ethereum | `0x431e935209d79706b5866eb42137a3491d845692` | GemFab | impl | inactive | no |
 | ethereum | `0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8` | BancorArbitrage | impl | inactive | no |
-| ethereum | `0x460cb0b4fb97b5a05b6105d7fd8d464902109d0a` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
+| ethereum | `0x460cb0b4fb97b5a05b6105d7fd8d464902109d0a` | OptimizedTransparentUpgradeableProxy-5 | impl | live | yes |
 | ethereum | `0x4610fc898f94ac0b6bfe2b836fd59f6d03195445` | FeeBurner | impl | inactive | no |
 | ethereum | `0x4a67d9b00c077b093ddfb67de2a1c66a70bac0fe` | MomFab | impl | inactive | no |
 | ethereum | `0x4eeb95a68c7382217ccdf9d4d1c89f3986c30cc5` | BancorFormula | impl | inactive | no |
@@ -100,9 +149,10 @@
 | ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | inactive | no |
 | ethereum | `0x63308861249ad775a4b6ceb6544ce30c952b311a` | LiquidityProtection | impl | inactive | no |
 | ethereum | `0x6427b5cbf065777f4b62a0f9a4d2d23f27df5f28` | BancorConverter | impl | inactive | no |
-| ethereum | `0x64287956b8b587670d4d9b94378177f6c52f0034` | ProxyAdmin | impl | live | no |
+| ethereum | `0x64287956b8b587670d4d9b94378177f6c52f0034` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0x649765821d9f64198c905ec0b2b037a4a52bc373` | TransparentUpgradeableProxyImmutable-4 | proxy | live | yes |
 | ethereum | `0x665f41f59c50c27fcbf69acb51d775c6f1256f0e` | BancorConverter | impl | inactive | no |
+| ethereum | `0x676b91af9eaae263485c95ccafb2764228ce95c0` | OptimizedTransparentUpgradeableProxy-10 | impl | live | yes |
 | ethereum | `0x68cd597f2cf8156dbb99e70c4d6edd08b03fb810` | BancorArbitrage | impl | inactive | no |
 | ethereum | `0x68e4f8421dc6c3b49de130b792d711027a4ecd96` | NetworkSettings | impl | inactive | no |
 | ethereum | `0x68fd0899fedeeee08b77c189d2f8ac38466ea216` | VoxFab | impl | inactive | no |
@@ -112,8 +162,9 @@
 | ethereum | `0x6dbe10bfc331cb8b7b1c17ce252a6f178d74e912` | BancorArbitrage | impl | inactive | no |
 | ethereum | `0x6f7df45eb955b2f7d18e73b332e89088fdda4fc7` | BancorFormula | impl | inactive | no |
 | ethereum | `0x6f9124c32a9f6e532c908798f872d5472e9cb714` | PoolCollection | impl | inactive | no |
-| ethereum | `0x70ab8222a5fff4b360764bb51cbea76f0025842a` | OptimizedTransparentUpgradeableProxy-3 | impl | inactive | no |
+| ethereum | `0x70ab8222a5fff4b360764bb51cbea76f0025842a` | OptimizedTransparentUpgradeableProxy-8 | impl | inactive | no |
 | ethereum | `0x7148b1c9154bcf273a2c7d7b90e3edc6fee395e6` | ContractRegistry | impl | inactive | no |
+| ethereum | `0x72717080da2e9e057dc29d25eeeb5d4873f0fb9e` | OptimizedTransparentUpgradeableProxy-11 | impl | live | yes |
 | ethereum | `0x751a3e5ecd4ecd2de4aace6e55ae707a9ca10255` | BancorNetwork | impl | inactive | no |
 | ethereum | `0x770abfb647e45d6c28dfb7fc7ec8dcfbf9d3c343` | BancorArbitrage | impl | inactive | no |
 | ethereum | `0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123` | CarbonPOL | impl | live | yes |
@@ -135,7 +186,7 @@
 | ethereum | `0x8843f65f11b2367bb05a6e120c44780088976748` | VortexBurner | impl | inactive | no |
 | ethereum | `0x88d031291ed89e600db1c9dd4da1e587571e48ca` | NetworkSettings | impl | inactive | no |
 | ethereum | `0x8b0c11e0df925387de1ce92504fe0e4af23af6f2` | BancorFormulaProxy | impl | inactive | no |
-| ethereum | `0x8c05ea305235a67c7095a32ad4a2ee2688ade636` | ProxyAdmin | impl | live | no |
+| ethereum | `0x8c05ea305235a67c7095a32ad4a2ee2688ade636` | ProxyAdmin-3 | impl | live | no |
 | ethereum | `0x8c4b318fed9a9d02417216bd3967b587003aecfb` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | inactive | no |
 | ethereum | `0x8d10c03bc0889a2edea0de12e455a19ac7395b98` | BancorFormula | impl | inactive | no |
@@ -179,6 +230,7 @@
 | ethereum | `0xb72a0fa1e537c956dfca72711c468efd81270468` | BancorChanger | impl | inactive | no |
 | ethereum | `0xb7f23050cbf4bd773935b442269aa7d5c3cf341c` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0xb8d8033f7b2267feffdbaa521cd8a86df861da69` | PoolCollection | impl | inactive | no |
+| ethereum | `0xba7d1581db6248dc9177466a328bf457703c8f84` | OptimizedTransparentUpgradeableProxy-12 | proxy | live | yes |
 | ethereum | `0xbbc79794599b19274850492394004087cbf89710` | CrowdsaleController | impl | inactive | no |
 | ethereum | `0xbc4a79787d3dafcb781a1e4ff914204db38126e6` | StandardPoolConverterFactory | impl | inactive | no |
 | ethereum | `0xbd19f62f0460bea39d5f0d83f9073efe5c5d7e51` | BancorArbitrage | impl | inactive | no |
@@ -189,9 +241,10 @@
 | ethereum | `0xc2baca5300b95ab18eddd9ef3070a0945298ab50` | TapFab | impl | inactive | no |
 | ethereum | `0xc39e562defc6ddd1f44ee698cf9303092b86051d` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0xc4628aaa2fa54ca1e5f6f077d65173f087144ade` | BancorConverter | impl | inactive | no |
-| ethereum | `0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1` | OptimizedTransparentUpgradeableProxy-4 | proxy | live | yes |
+| ethereum | `0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1` | OptimizedTransparentUpgradeableProxy-13 | proxy | live | yes |
+| ethereum | `0xc56eb3d03c5d7720daf33a3718affb9bcab03fbc` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
 | ethereum | `0xc6725ae749677f21e4d8f85f41cfb6de49b9db29` | BancorConverter | impl | inactive | no |
-| ethereum | `0xc6b2f9b6bf3521308fb9360e4a6fe05f63953997` | OptimizedTransparentUpgradeableProxy-2 | impl | live | yes |
+| ethereum | `0xc6b2f9b6bf3521308fb9360e4a6fe05f63953997` | OptimizedTransparentUpgradeableProxy-5 | impl | live | yes |
 | ethereum | `0xc6e7e708f46a23ee9590b503f03ba3e2c67cac13` | BancorNetworkInfo | impl | inactive | no |
 | ethereum | `0xc7a965dcec421b8423de2d7b26eb83aac8070acc` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0xc9eaa9d51bc470f676cb59cad85a659599dc0f31` | MultiSigWallet | impl | inactive | no |
@@ -200,10 +253,11 @@
 | ethereum | `0xcc1aac4513f751effc94e259daf8a37b76f9db75` | MultiSigWallet | impl | inactive | no |
 | ethereum | `0xcf1cc6ed5b653def7417e3fa93992c3ffe49139b` | BancorQuickConverter | impl | inactive | no |
 | ethereum | `0xd046eea71f207573d77252c8c3a93bdb0f36e177` | MultiSigWallet | impl | inactive | no |
-| ethereum | `0xd053dcd7037af7204cece544ea9f227824d79801` | OptimizedTransparentUpgradeableProxy-5 | proxy | live | yes |
+| ethereum | `0xd053dcd7037af7204cece544ea9f227824d79801` | OptimizedTransparentUpgradeableProxy-14 | proxy | live | yes |
 | ethereum | `0xd06146d292f9651c1d7cf54a3162791dfc2bef46` | CarbonPOL | proxy | live | yes |
 | ethereum | `0xd13689e8da0ed95b55100e27b7dbc95c03b5259b` | V2_1Upgrader | impl | inactive | no |
 | ethereum | `0xd1997064f0fef8748c1de9b5ba53468c548738b3` | ContractRegistry | impl | inactive | no |
+| ethereum | `0xd241a762f4ca4e32e723e91b1138ac97b9be23ca` | OptimizedTransparentUpgradeableProxy-15 | impl | live | yes |
 | ethereum | `0xd288fbe61aaa64b536a701e3b7e15f0a4c1a9603` | BancorFormula | impl | inactive | no |
 | ethereum | `0xd2a572fefdbd719605334df5cba9746e02d51558` | PoolCollection | impl | inactive | no |
 | ethereum | `0xd498c820a05d430dc52752db4c5e52952606f5b8` | MultiSigWallet | impl | inactive | no |
@@ -252,61 +306,3 @@
 | ethereum | `0xfd31662b3d54edde9b6bdd32c9c27c8e292cad57` | ExternalRewardsVault | proxy | inactive | no |
 | ethereum | `0xfd47c74a8030520bacd364fb8e08acb28766ae7b` | TransparentUpgradeableProxyImmutable-5 | impl | inactive | no |
 | ethereum | `0xffd2de852b694f88656e91d9defa6b425c454742` | BancorFormula | impl | inactive | no |
-
-## Source unavailable (54)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x177dbf7343181d522a20bca2850138e1e836947e`
-- base `0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8`
-- base `0x773b75cfb146bd5d1095fa9d6d45637f02b05119`
-- base `0xa15e3295465439a361dbcac79c1dbce6cd01e562`
-- base `0xa4682a2a5fe02feff8bd200240a41ad0e6eaf8d5`
-- base `0xb0d39990e1c38b50d0b7f6911525535fbacb4c26`
-- base `0xb53f078315790b62974cdd12fe6f80e946642a36`
-- base `0xc7dd38e64822108446872c5c2105308058c5c55c`
-- base `0xe033bed7cae4114af84be1e9f1ca7dea07dfe1cf`
-- base `0xe4816658ad10bf215053c533cceae3f59e1f1087`
-- base `0xfe19cba3ab1a189b7fc17caa798df64ad2b54d4d`
-- blast `0x8b66315ae646d3b528184c37cd9365aebae1f3a0`
-- blast `0x8c05ea305235a67c7095a32ad4a2ee2688ade636`
-- blast `0xe6d513dc1107e2b091588e10460cf4b62a733611`
-- chain-1329 `0x30dd96d6b693f78730c7c48b6849d9c44caf39f0`
-- chain-1329 `0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8`
-- chain-1329 `0x4bbd9fae81734cd2c73428307c74079f4e1b08a2`
-- chain-1329 `0x5715203b16f15d7349cb1e3537365e9664eaf933`
-- chain-1329 `0x7fc12ab5823b8977803f009a36ea21c9b4e17f06`
-- chain-1329 `0x8c05ea305235a67c7095a32ad4a2ee2688ade636`
-- chain-1329 `0x8ce318919438982514f9f479fdfb40d32c6ab749`
-- chain-1329 `0x924ad5d745ed622e8303929f8540dc2806cb5502`
-- chain-1329 `0xa4682a2a5fe02feff8bd200240a41ad0e6eaf8d5`
-- chain-1329 `0xb0d39990e1c38b50d0b7f6911525535fbacb4c26`
-- chain-1329 `0xc7dd38e64822108446872c5c2105308058c5c55c`
-- chain-1329 `0xc95a9c1f378e0009e49fe7fe33dda22da4f977b0`
-- chain-1329 `0xcd8c6df64830288aa6091e9e8d281faedc357772`
-- chain-1329 `0xdf1c3beccc182eaa23e1894be3bb55a81876b332`
-- chain-1329 `0xe375ddb4f244337727fd69fcd7645074e82f952e`
-- chain-1329 `0xe4816658ad10bf215053c533cceae3f59e1f1087`
-- chain-1329 `0xfea28d3a9994bc4e7851035764171a02c3fc23b5`
-- chain-42220 `0x0f54099d787e26c90c487625b4de819ec5a9bdaa`
-- chain-42220 `0x31548b11d685a358de7f52978e099e04116b2db0`
-- chain-42220 `0x37a65dda75a4c32959834c9b391a24dca17eec10`
-- chain-42220 `0x482b27719b31760e0c45f01685d3f750c47845e1`
-- chain-42220 `0x51aa24a9230e62cfaf259c47de3133578ce36317`
-- chain-42220 `0x59f21012b2e9ba67ce6a7605e74f945d0d4c84ea`
-- chain-42220 `0x5bca3389786385a35bca14c2d0582adc6cb2482e`
-- chain-42220 `0x5e994ac7d65d81f51a76e0bb5a236c6fda8dbf9a`
-- chain-42220 `0x6619871118d144c1c28ec3b23036fc1f0829ed3a`
-- chain-42220 `0x6cd7f631f8c017bb4427d3257593e29ed9bc2fdc`
-- chain-42220 `0x8b66315ae646d3b528184c37cd9365aebae1f3a0`
-- chain-42220 `0xa15e3295465439a361dbcac79c1dbce6cd01e562`
-- chain-42220 `0xa977879684eece2015ae879dc120c8a1c00718f7`
-- chain-42220 `0xb2a2f14979a68c21181c6a63ca55a5b3693c9d2a`
-- chain-42220 `0xbbaff3bf6ec4c15992c0fb37f12491fd62c5b496`
-- chain-42220 `0xd0b82e96cba38cda95de4943a771e832bf3bb921`
-- chain-42220 `0xd9d89e8a0dfe549e5b424d5b511cb3b84a764857`
-- chain-42220 `0xfe19cba3ab1a189b7fc17caa798df64ad2b54d4d`
-- ethereum `0x676b91af9eaae263485c95ccafb2764228ce95c0`
-- ethereum `0x72717080da2e9e057dc29d25eeeb5d4873f0fb9e`
-- ethereum `0xba7d1581db6248dc9177466a328bf457703c8f84`
-- ethereum `0xc56eb3d03c5d7720daf33a3718affb9bcab03fbc`
-- ethereum `0xd241a762f4ca4e32e723e91b1138ac97b9be23ca`

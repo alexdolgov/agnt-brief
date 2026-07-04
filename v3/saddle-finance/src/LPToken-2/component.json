@@ -1,8 +1,8 @@
 {
   "component": "LPToken-2",
   "main_contract": "LPToken",
-  "source_file_count": 22,
-  "deployment_count": 1,
+  "source_file_count": 76,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/saddle-finance/saddle-audits/blob/master/10-29-2020_Certik.pdf",
@@ -11,9 +11,25 @@
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3661d0f70e7f3ec418321a57fd62d691a09b490b",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4f6a43ad7cba042606decaca730d4ce0a57ac62e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0409ec303b727bc1f511d7f8c71fd5ead96de1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcf70e2f3567ba396f3dd04822f78ecd70ba46894",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

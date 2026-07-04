@@ -101,8 +101,8 @@ contract KMCD is KMCDInterface, Exponential, KTokenErrorReporter {
      * @param repayAmount The amount of the MCD to repay
      * @param kTokenCollateral The market in which to seize collateral from the borrower
      */
-    function liquidateBorrowBehalf(address liquidator, address borrower, uint repayAmount, KTokenInterface kTokenCollateral, uint minSeizeKToken) onlyMinter external {
-        liquidateBorrowInternal(liquidator, borrower, repayAmount, kTokenCollateral, minSeizeKToken);
+    function liquidateBorrowBehalf(address liquidator, address borrower, uint repayAmount, KTokenInterface kTokenCollateral) onlyMinter external {
+        liquidateBorrowInternal(liquidator, borrower, repayAmount, kTokenCollateral);
     }
 
     /**
@@ -240,8 +240,8 @@ contract KMCD is KMCDInterface, Exponential, KTokenErrorReporter {
      * @param repayAmount The amount of the MCD asset to repay
      * @return the actual repayment amount.
      */
-    function liquidateBorrowInternal(address liquidator, address borrower, uint repayAmount, KTokenInterface kTokenCollateral, uint minSeizeKToken) internal nonReentrant returns (uint) {
-        return liquidateBorrowFresh(liquidator, borrower, repayAmount, kTokenCollateral, minSeizeKToken);
+    function liquidateBorrowInternal(address liquidator, address borrower, uint repayAmount, KTokenInterface kTokenCollateral) internal nonReentrant returns (uint) {
+        return liquidateBorrowFresh(liquidator, borrower, repayAmount, kTokenCollateral);
     }
 
     /**
@@ -253,7 +253,7 @@ contract KMCD is KMCDInterface, Exponential, KTokenErrorReporter {
      * @param repayAmount The amount of the borrowed MCD to repay
      * @return the actual repayment amount.
      */
-    function liquidateBorrowFresh(address liquidator, address borrower, uint repayAmount, KTokenInterface kTokenCollateral, uint minSeizeKToken) internal returns (uint) {
+    function liquidateBorrowFresh(address liquidator, address borrower, uint repayAmount, KTokenInterface kTokenCollateral) internal returns (uint) {
         /* Revert if trying to seize MCD */
         require(address(kTokenCollateral) != address(this), "Kine MCD can't be seized");
 
@@ -270,30 +270,28 @@ contract KMCD is KMCDInterface, Exponential, KTokenErrorReporter {
         /* Fail if repayAmount = -1 */
         require(repayAmount != uint(- 1), INVALID_CLOSE_AMOUNT_REQUESTED);
 
+        /* Fail if repayBorrow fails */
+        uint actualRepayAmount = repayBorrowFresh(liquidator, borrower, repayAmount);
+
         /////////////////////////
         // EFFECTS & INTERACTIONS
 
         /* We calculate the number of collateral tokens that will be seized */
-        uint seizeTokens = controller.liquidateCalculateSeizeTokens(borrower, address(this), address(kTokenCollateral), repayAmount);
-
-        require(seizeTokens >= minSeizeKToken, "Reach minSeizeKToken limit");
+        uint seizeTokens = controller.liquidateCalculateSeizeTokens(address(this), address(kTokenCollateral), actualRepayAmount);
 
         /* Revert if borrower collateral token balance < seizeTokens */
         require(kTokenCollateral.balanceOf(borrower) >= seizeTokens, LIQUIDATE_SEIZE_TOO_MUCH);
-
-        /* Fail if repayBorrow fails */
-        repayBorrowFresh(liquidator, borrower, repayAmount);
 
         /* Seize borrower tokens to liquidator */
         kTokenCollateral.seize(liquidator, borrower, seizeTokens);
 
         /* We emit a LiquidateBorrow event */
-        emit LiquidateBorrow(liquidator, borrower, repayAmount, address(kTokenCollateral), seizeTokens);
+        emit LiquidateBorrow(liquidator, borrower, actualRepayAmount, address(kTokenCollateral), seizeTokens);
 
         /* We call the defense hook */
-        controller.liquidateBorrowVerify(address(this), address(kTokenCollateral), liquidator, borrower, repayAmount, seizeTokens);
+        controller.liquidateBorrowVerify(address(this), address(kTokenCollateral), liquidator, borrower, actualRepayAmount, seizeTokens);
 
-        return repayAmount;
+        return actualRepayAmount;
     }
 
     /*** Admin Functions ***/

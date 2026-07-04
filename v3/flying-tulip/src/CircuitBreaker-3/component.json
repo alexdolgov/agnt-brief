@@ -1,0 +1,18 @@
+{
+  "component": "CircuitBreaker-3",
+  "main_contract": "CircuitBreaker",
+  "source_file_count": 6,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcb170bc873b3a1f69f433c25a4b6d0fd4d4d90de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -79,10 +79,6 @@ abstract contract Structs {
         ///
         /// @param threshold on when to update the storage slot. in 1e2: 100% = 10_000; 1% = 100
         uint256 threshold;
-        ///
-        /// @param maxUtilization maximum allowed utilization. in 1e2: 100% = 10_000; 1% = 100
-        ///                       set to 100% to disable and have default limit of 100% (avoiding SLOAD).
-        uint256 maxUtilization;
     }
 
     /// @notice struct to set user supply & withdrawal config

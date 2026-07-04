@@ -9,9 +9,7 @@ import { SystemComponent } from "src/SystemComponent.sol";
 
 /// @title Price oracle for tokens we want to configure as 0
 contract ZeroOracle is SystemComponent, IPriceOracle {
-    constructor(
-        ISystemRegistry _systemRegistry
-    ) SystemComponent(_systemRegistry) { }
+    constructor(ISystemRegistry _systemRegistry) SystemComponent(_systemRegistry) { }
 
     /// @inheritdoc IPriceOracle
     function getDescription() external pure override returns (string memory) {
@@ -19,9 +17,7 @@ contract ZeroOracle is SystemComponent, IPriceOracle {
     }
 
     /// @inheritdoc IPriceOracle
-    function getPriceInEth(
-        address
-    ) external pure returns (uint256) {
-        return 0;
+    function getPriceInEth(address) external pure returns (uint256 price) {
+        price = 0;
     }
 }

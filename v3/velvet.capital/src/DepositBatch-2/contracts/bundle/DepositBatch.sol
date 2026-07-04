@@ -1,32 +1,22 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.17;
 
-import {IERC20, SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import {TransferHelper} from "@uniswap/lib/contracts/libraries/TransferHelper.sol";
 import {IAllowanceTransfer} from "../core/interfaces/IAllowanceTransfer.sol";
 import {ErrorLibrary} from "../library/ErrorLibrary.sol";
 import {IPortfolio} from "../core/interfaces/IPortfolio.sol";
 import {FunctionParameters} from "../FunctionParameters.sol";
 import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title DepositBatch
  * @notice A contract for performing multi-token swap and deposit operations.
  * @dev This contract uses Enso's swap execution logic for delegating swaps.
  */
-contract DepositBatch is ReentrancyGuard, Ownable {
+contract DepositBatch is ReentrancyGuard {
   // The address of Enso's swap execution logic; swaps are delegated to this target.
   address constant SWAP_TARGET = 0x38147794FF247e5Fc179eDbAE6C37fff88f68C52;
-
-  using SafeERC20 for IERC20;
-
-  mapping (address => bool) public zeroApprovalTokens;
-
-
-  constructor(address _owner){
-    _transferOwnership(_owner);
-  }
 
   /**
    * @notice Performs a multi-token swap and deposit operation for the user.
@@ -97,8 +87,9 @@ contract DepositBatch is ReentrancyGuard, Ownable {
         balance = balanceAfter - balanceBefore;
       }
       if (balance == 0) revert ErrorLibrary.InvalidBalanceDiff();
-      approveToken(_token, target, balance);
 
+      IERC20(_token).approve(target, 0);
+      IERC20(_token).approve(target, balance);
       depositAmounts[i] = balance;
     }
 
@@ -129,35 +120,6 @@ contract DepositBatch is ReentrancyGuard, Ownable {
     address _of
   ) internal view returns (uint256) {
     return IERC20(_token).balanceOf(_of);
-  }
-
-  /**
-   * @notice Helper function to approve a token for a spender.
-   * @param _token Address of token to approve.
-   * @param _spender Address of spender to approve for.
-   * @param _amount Amount to approve.
-   */
-  function approveToken(address _token, address _spender, uint256 _amount) internal {
-    if(zeroApprovalTokens[_token]){ //USDT
-      IERC20(_token).safeApprove(_spender, 0); //approving zero amount as per USDT structure
-    }
-    IERC20(_token).safeApprove(_spender, _amount);
-  }
-
-  /**
-   * @notice Function to set a token to be zero approved.
-   * @param _token Address of token to set zero approval for.
-   */
-  function setZeroApprovalToken(address _token) external onlyOwner{
-    zeroApprovalTokens[_token] = true;
-  }
-
-  /**
-   * @notice Function to transfer ownership of the contract.
-   * @param newOwner Address of new owner.
-   */
-  function transferOwnership(address newOwner) public override onlyOwner {
-    super.transferOwnership(newOwner);
   }
 
   // Function to receive Ether when msg.data is empty

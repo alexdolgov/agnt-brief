@@ -1,18 +1,23 @@
 # thorswap — deployments
 
-54 verified deployment(s) across 29 component(s).
+59 verified deployment(s) across 30 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5` | SKChainflipHyperLiquid_V1 | impl | live | no |
 | arbitrum | `0x199dab33f5d39f186f26a4aa30892e37c9a90d40` | SKChainflipHyperLiquid_V1 | impl | live | no |
 | arbitrum | `0x50cbe1330100df9086f6fbc994a300b75dd78012` | TSAggregatorUniswapV3_V1 | impl | live | no |
-| arbitrum | `0x6e5add41c751e89432cda5763156a3f41f1b17ac` | TSAggregatorGeneric_V1 | impl | live | no |
+| arbitrum | `0x5786efdb788466456a59d3bd7abef0ec42bef9ce` | TSAggregatorTokenTransferProxy | impl | live | yes |
+| arbitrum | `0x6e5add41c751e89432cda5763156a3f41f1b17ac` | TSAggregatorGeneric_V1-2 | impl | live | no |
 | arbitrum | `0x78fd322bb51407849c7acc789be5e6e86639d799` | SKChainflipHyperLiquid_V1 | impl | live | no |
-| arbitrum | `0xfa3f3348a2765ec19d1598ad446e2ab463d01e9a` | TSAggregatorGeneric_V1 | impl | live | no |
+| arbitrum | `0x8baf33e755ee29e5e37f370a11a0a889dac5d5f7` | TSAggregatorTokenTransferProxy | impl | live | yes |
+| arbitrum | `0xcd6f8b17d19077f7f5a8fa30c9b645b689626ceb` | TSAggregator_V4 | impl | live | no |
+| arbitrum | `0xfa3f3348a2765ec19d1598ad446e2ab463d01e9a` | TSAggregatorGeneric_V1-2 | impl | live | no |
+| avalanche | `0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a` | TSAggregator_V4-2 | impl | live | no |
 | base | `0x30912b38618d3d37de3191a4ffe982c65a9aec2e` | TSAggregator_V4 | impl | live | no |
-| base | `0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a` | TSAggregatorTokenTransferProxy-2 | impl | live | yes |
-| base | `0xb1970f2157a1b24d40f98b252f4f60b45c7aaeed` | TSAggregator_V2 | impl | live | no |
+| base | `0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a` | TSAggregatorTokenTransferProxy | impl | live | yes |
+| base | `0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f` | TSAggregatorGeneric_V1 | impl | live | no |
+| base | `0xb1970f2157a1b24d40f98b252f4f60b45c7aaeed` | TSAggregatorGeneric_V1 | impl | live | no |
 | ethereum | `0x004d1979c0b5c838ff891973c2611670b82187e5` | TSLedgerAdapter | impl | inactive | no |
 | ethereum | `0x029c7a9098d6efa723df308d3278211cd68b05ed` | TSAggregatorChainflip_V1 | impl | live | no |
 | ethereum | `0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223` | TokenVesting | impl | live | no |
@@ -56,14 +61,5 @@
 | ethereum | `0xe4e8313abbadc8e18543ec9528f67fde2e44d3d6` | TSWrapperLedger_V1 | impl | live | no |
 | ethereum | `0xe797be356f833972fcc631b86ce30951e499ecdc` | TSAggregatorChainflip_V2 | impl | live | no |
 | ethereum | `0xf061e3f6068cdbb3b1ab042d0e022c06fb3e3528` | TSDistributor | impl | inactive | no |
-| ethereum | `0xf892fef9da200d9e84c9b0647ecff0f34633abe8` | TSAggregatorTokenTransferProxy | impl | live | no |
+| ethereum | `0xf892fef9da200d9e84c9b0647ecff0f34633abe8` | TSAggregatorTokenTransferProxy-2 | impl | live | no |
 | ethereum | `0xfb6820693bf8b8cd75a358978f268e57bbb87b6a` | TSFeeDistributor_V3 | impl | inactive | no |
-
-## Source unavailable (5)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x5786efdb788466456a59d3bd7abef0ec42bef9ce`
-- arbitrum `0x8baf33e755ee29e5e37f370a11a0a889dac5d5f7`
-- arbitrum `0xcd6f8b17d19077f7f5a8fa30c9b645b689626ceb`
-- avalanche `0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a`
-- base `0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f`

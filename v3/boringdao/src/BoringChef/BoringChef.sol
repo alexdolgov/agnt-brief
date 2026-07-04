@@ -1,10 +1,6 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-11-12
-*/
-
 // Sources flattened with hardhat v2.6.7 https://hardhat.org
 
-// File @openzeppelin/contracts/token/ERC20/[email protected]
+// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.2
 
 // SPDX-License-Identifier: MIT
 
@@ -85,7 +81,7 @@ interface IERC20 {
 }
 
 
-// File @openzeppelin/contracts/math/[email protected]
+// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.2
 
 // sp-License-Identifier: MIT
 
@@ -303,7 +299,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/[email protected]
+// File @openzeppelin/contracts/utils/Address.sol@v3.4.2
 
 // sp-License-Identifier: MIT
 
@@ -496,7 +492,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/[email protected]
+// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.2
 
 // sp-License-Identifier: MIT
 
@@ -573,7 +569,7 @@ library SafeERC20 {
 }
 
 
-// File @openzeppelin/contracts/utils/[email protected]
+// File @openzeppelin/contracts/utils/EnumerableSet.sol@v3.4.2
 
 // sp-License-Identifier: MIT
 
@@ -874,7 +870,7 @@ library EnumerableSet {
 }
 
 
-// File @openzeppelin/contracts/utils/[email protected]
+// File @openzeppelin/contracts/utils/Context.sol@v3.4.2
 
 // sp-License-Identifier: MIT
 
@@ -902,7 +898,7 @@ abstract contract Context {
 }
 
 
-// File @openzeppelin/contracts/access/[email protected]
+// File @openzeppelin/contracts/access/Ownable.sol@v3.4.2
 
 // sp-License-Identifier: MIT
 

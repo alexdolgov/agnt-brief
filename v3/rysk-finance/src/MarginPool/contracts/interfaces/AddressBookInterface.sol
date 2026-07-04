@@ -20,8 +20,6 @@ interface AddressBookInterface {
 
     function getControllerLogic() external view returns (address);
 
-    function getLiquidationManager() external view returns (address);
-
     function getAddress(bytes32 _id) external view returns (address);
 
     function getKeeper() external view returns (address);
@@ -45,8 +43,6 @@ interface AddressBookInterface {
     function setMarginCalculator(address _calculator) external;
 
     function setControllerLogic(address _settlement) external;
-
-    function setLiquidationManager(address _liquidationManager) external;
 
     function setAddress(bytes32 _id, address _newImpl) external;
 }

@@ -90,7 +90,7 @@ abstract contract NFT is Initializable, ERC721Upgradeable, ERC721EnumerableUpgra
     }
 
     /**
-     * ////// [v1.0, v1.1, v1.2, v2.0, v2.1, v2.2, v2.2.1, v2.2.2] //////
+     * ////// [v1.0, v1.1, v1.2, v2.0, v2.1, v2.2] //////
      * 1 _tokenIdCounter
      * 1 _baseTokenURI
      * 1 _nonces_deprecated (unused)

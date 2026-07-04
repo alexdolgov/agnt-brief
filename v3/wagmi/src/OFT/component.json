@@ -1,15 +1,39 @@
 {
   "component": "OFT",
   "main_contract": "OFT",
-  "source_file_count": 22,
-  "deployment_count": 1,
+  "source_file_count": 18,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x07ed33a242bd9c08ca3c198e01189e35265024da",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

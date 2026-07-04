@@ -1,0 +1,18 @@
+{
+  "component": "AggregateVault-3",
+  "main_contract": "AggregateVault",
+  "source_file_count": 46,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc69adac3d27672c6907aae429eee3e69f76f7106",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

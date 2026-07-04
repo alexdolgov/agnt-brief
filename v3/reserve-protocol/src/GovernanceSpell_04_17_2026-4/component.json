@@ -1,0 +1,18 @@
+{
+  "component": "GovernanceSpell_04_17_2026-4",
+  "main_contract": "GovernanceSpell_04_17_2026",
+  "source_file_count": 99,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe9ae2cb2b5e5658035617f92efa1878429f9cd3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

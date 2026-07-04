@@ -1,0 +1,18 @@
+{
+  "component": "UnipilotActiveFactory-3",
+  "main_contract": "UnipilotActiveFactory",
+  "source_file_count": 38,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc99fa77ab721817da9dd3c3b4f8ecb13772fcece",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

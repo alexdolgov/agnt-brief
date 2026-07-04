@@ -1,18 +1,47 @@
 {
   "component": "V3Utils-2",
   "main_contract": "V3Utils",
-  "source_file_count": 18,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Lend/HYDN%20-%20Revert%20Finance%20Lend%20Audit%20Report.pdf",
-    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-V3utils-v1.0.pdf"
-  ],
+  "source_file_count": 42,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde1734bbb63409165e829f456d853b021836eeb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x89941a1574937aff3e02700b7667b5ef945e05b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd694b3403d63338a2e3d72fd0609279ad80909ca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x3eb0fffa1470cdd3725b9eb29aded2736144b078",
+      "address": "0x85f7d1747ef8c566d04fcdff3e5fdb8c750f3f85",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x98ec492942090364ac0736ef1a741ae6c92ec790",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

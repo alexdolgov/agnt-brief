@@ -1,31 +1,55 @@
 {
   "component": "IncentivizedERC20-5",
   "main_contract": "IncentivizedERC20",
-  "source_file_count": 35,
-  "deployment_count": 3,
+  "source_file_count": 32,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0be33ced828989e987122415f31eadfa012dddb0",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2fb82bad02c4a29f109c42b58964f7f8da5a740c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe189ee12ff1aeccee208b168f982512e64c3db40",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe670de8c88d2a0589b1cdad64e9a3d56d69bf5ac",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf961605cf789d48baaf1060d90fa3bf9bfcf9371",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x28350e38f241d7f24106ce5eab1684d6ebeb4700",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xddb3d4fe161cd17c32d035f922ca879cb39403c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8ac8dc0ae21df0b5297d398777a0aad5fcf9b76c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

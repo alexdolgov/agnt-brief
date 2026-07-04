@@ -2,7 +2,7 @@
   "component": "PaymentFacet",
   "main_contract": "PaymentFacet",
   "source_file_count": 20,
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x2ab4477b2d59833a356eea59d51401e56a17fc3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2bf7e1df2d9b587787bedbe68cb0b446d2750a6e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -34,6 +42,14 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0xc623967550d4c799e9ec575499fad38bbe122275",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x28b17864cfb03652bc8ec5064070f0f6ec900be4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

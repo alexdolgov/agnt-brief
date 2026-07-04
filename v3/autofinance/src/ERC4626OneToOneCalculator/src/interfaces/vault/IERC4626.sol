@@ -38,8 +38,7 @@ interface IERC4626 is IERC20Metadata {
     /// - MUST NOT revert.
     ///
     /// NOTE: This calculation MAY NOT reflect the “per-user” price-per-share, and instead should reflect the
-    /// “average-user’s” price-per-share, meaning what the average user should expect to see when exchanging to
-    /// and
+    /// “average-user’s” price-per-share, meaning what the average user should expect to see when exchanging to and
     /// from.
     function convertToShares(
         uint256 assets
@@ -55,8 +54,7 @@ interface IERC4626 is IERC20Metadata {
     /// - MUST NOT revert.
     ///
     /// NOTE: This calculation MAY NOT reflect the “per-user” price-per-share, and instead should reflect the
-    /// “average-user’s” price-per-share, meaning what the average user should expect to see when exchanging to
-    /// and
+    /// “average-user’s” price-per-share, meaning what the average user should expect to see when exchanging to and
     /// from.
     function convertToAssets(
         uint256 shares
@@ -100,10 +98,7 @@ interface IERC4626 is IERC20Metadata {
     ///   approving enough underlying tokens to the Vault contract, etc).
     ///
     /// NOTE: most implementations will require pre-approval of the Vault with the Vault’s underlying asset token.
-    function deposit(
-        uint256 assets,
-        address receiver
-    ) external returns (uint256 shares);
+    function deposit(uint256 assets, address receiver) external returns (uint256 shares);
 
     /// @notice Returns the maximum amount of the Vault shares that can be minted for the receiver, through a mint call.
     /// @dev
@@ -140,10 +135,7 @@ interface IERC4626 is IERC20Metadata {
     ///   approving enough underlying tokens to the Vault contract, etc).
     ///
     /// NOTE: most implementations will require pre-approval of the Vault with the Vault’s underlying asset token.
-    function mint(
-        uint256 shares,
-        address receiver
-    ) external returns (uint256 assets);
+    function mint(uint256 shares, address receiver) external returns (uint256 assets);
 
     /// @notice Returns the maximum amount of the underlying asset that can be withdrawn from the owner balance in the
     /// Vault, through a withdraw call.
@@ -182,11 +174,7 @@ interface IERC4626 is IERC20Metadata {
     ///
     /// Note that some implementations will require pre-requesting to the Vault before a withdrawal may be performed.
     /// Those methods should be performed separately.
-    function withdraw(
-        uint256 assets,
-        address receiver,
-        address owner
-    ) external returns (uint256 shares);
+    function withdraw(uint256 assets, address receiver, address owner) external returns (uint256 shares);
 
     /// @notice Returns the maximum amount of Vault shares that can be redeemed from the owner balance in the Vault,
     /// through a redeem call.
@@ -225,9 +213,5 @@ interface IERC4626 is IERC20Metadata {
     ///
     /// NOTE: some implementations will require pre-requesting to the Vault before a withdrawal may be performed.
     /// Those methods should be performed separately.
-    function redeem(
-        uint256 shares,
-        address receiver,
-        address owner
-    ) external returns (uint256 assets);
+    function redeem(uint256 shares, address receiver, address owner) external returns (uint256 assets);
 }

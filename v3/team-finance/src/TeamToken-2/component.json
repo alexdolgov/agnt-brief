@@ -1,0 +1,18 @@
+{
+  "component": "TeamToken-2",
+  "main_contract": "TeamToken",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x900eec9c39fbb0eca41b5cf2239e9c16ae08f3ba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

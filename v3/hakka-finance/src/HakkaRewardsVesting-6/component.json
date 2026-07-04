@@ -1,0 +1,18 @@
+{
+  "component": "HakkaRewardsVesting-6",
+  "main_contract": "HakkaRewardsVesting",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x79eb6f02e9ac26a6fbc4e73dee0b8991d0c55f4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

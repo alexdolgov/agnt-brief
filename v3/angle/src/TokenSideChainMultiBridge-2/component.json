@@ -1,0 +1,18 @@
+{
+  "component": "TokenSideChainMultiBridge-2",
+  "main_contract": "TokenSideChainMultiBridge",
+  "source_file_count": 18,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5efe48f8383921d950683c46b87e28e21dea9fb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 # blast-l2 — deployments
 
-182 verified deployment(s) across 76 component(s).
+186 verified deployment(s) across 80 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| blast | `0x0000000000ffe8b47b3e2130213b802212439497` | ImmutableCreate2Factory-2 | impl | live | no |
 | blast | `0x4200000000000000000000000000000000000007` | Proxy | proxy | live | no |
 | blast | `0x4200000000000000000000000000000000000010` | Proxy | proxy | live | no |
 | blast | `0x4200000000000000000000000000000000000012` | Proxy | proxy | live | no |
@@ -14,6 +15,8 @@
 | blast | `0x4300000000000000000000000000000000000001` | Proxy | proxy | live | no |
 | blast | `0x4300000000000000000000000000000000000005` | Proxy | proxy | live | no |
 | blast | `0xb1a5700fa2358173fe465e6ea4ff52e36e88e2ad` | GovernanceToken | impl | live | no |
+| blast | `0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed` | CreateX-2 | impl | live | no |
+| blast | `0xca11bde05977b3631167028862be2a173976ca11` | Multicall3-2 | impl | live | no |
 | blast | `0xca2e5b987f345e5c3cc9d987029a6e19ea44af4f` | MintManager | impl | live | no |
 | blast | `0xf7bc58b8d8f97adc129cfc4c9f45ce3c0e1d2692` | OptimismMintableERC20 | impl | live | no |
 | ethereum | `0x0000000000ffe8b47b3e2130213b802212439497` | ImmutableCreate2Factory | impl | live | no |
@@ -85,6 +88,7 @@
 | ethereum | `0x697402166fbf2f22e970df8a6486ef171dbfc524` | L1ChugSplashProxy-3 | proxy | live | no |
 | ethereum | `0x69ec6020ba47be01557605b53a5d56e6fd96ed8c` | DssSpell | impl | inactive | no |
 | ethereum | `0x6b8158d8e848d15ef0305221bb88569abfc5bc1c` | MegaPoker | impl | inactive | no |
+| ethereum | `0x6b916dcca661d23794e78509723a6f4348564847` | Proxy-5 | proxy | live | no |
 | ethereum | `0x6bda13d43b7edd6cafe1f70fb98b5d40f61a1370` | DssDeployPauseProxyActions | impl | inactive | no |
 | ethereum | `0x6e2795467e070dd8b477300899b6d1c90f8ba822` | GovActions | impl | inactive | no |
 | ethereum | `0x6eeb68b2c7a918f36b78e2db80dcf279236ddfb8` | MkrAuthority | impl | inactive | no |
@@ -102,7 +106,7 @@
 | ethereum | `0x7f6dcc6bce0ee6b057e4f33a9e34e24c63e37599` | DssSpell | impl | inactive | no |
 | ethereum | `0x8067259ea630601f319fcce477977e55c6078c13` | OSM | impl | inactive | no |
 | ethereum | `0x81fe72b5a8d1a857d176c3e7d5bd2679a9b85763` | OSM | impl | inactive | no |
-| ethereum | `0x826d1b0d4111ad9146eb8941d7ca2b6a44215c76` | Proxy-5 | proxy | live | no |
+| ethereum | `0x826d1b0d4111ad9146eb8941d7ca2b6a44215c76` | Proxy-6 | proxy | live | no |
 | ethereum | `0x82ecd135dce65fbc6dbdd0e4237e0af93ffd5038` | DssProxyActions | impl | inactive | no |
 | ethereum | `0x83076a2f42dc1925537165045c9fde9a4b71ad97` | MedianKNCUSD | impl | inactive | no |
 | ethereum | `0x84f411093aed2e88e3d7f62a457cf77b3032ff2b` | DssSpell | impl | inactive | no |
@@ -127,7 +131,7 @@
 | ethereum | `0xa191e578a6736167326d05c119ce0c90849e84b7` | GemJoin5 | impl | inactive | no |
 | ethereum | `0xa230285d5683c74935ad14c446e137c8c8828438` | L1ChugSplashProxy-5 | proxy | live | no |
 | ethereum | `0xa3fa69aa788b3e51c083347bc8fc4fcf06469dec` | DssSpell | impl | inactive | no |
-| ethereum | `0xa45a0c7c47db8c6e99b2d7c4939f7f7cf69c8975` | Proxy-6 | proxy | live | no |
+| ethereum | `0xa45a0c7c47db8c6e99b2d7c4939f7f7cf69c8975` | Proxy-7 | proxy | live | no |
 | ethereum | `0xa6ea3b9c04b8a38ff5e224e7c3d6937ca44c0ef9` | GemJoin | impl | inactive | no |
 | ethereum | `0xa710c994d03943d3f5346a9139c9a61363224c6d` | DssLaunchSpell | impl | inactive | no |
 | ethereum | `0xa8692c55aab501da3931df536ad4325f5af4a75d` | DssSpell | impl | inactive | no |
@@ -186,11 +190,3 @@
 | ethereum | `0xf9e4362e2411dd6a64df500967fd258e450953d2` | FlipFab | impl | inactive | no |
 | ethereum | `0xfced114adfaea7959b58b2aaa8b94920fbb2427f` | GemJoin | impl | inactive | no |
 | ethereum | `0xfddeef69f5961c73ff80a1356a49a504969ba659` | DssSpell | impl | inactive | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- blast `0x0000000000ffe8b47b3e2130213b802212439497`
-- blast `0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed`
-- blast `0xca11bde05977b3631167028862be2a173976ca11`
-- ethereum `0x6b916dcca661d23794e78509723a6f4348564847`

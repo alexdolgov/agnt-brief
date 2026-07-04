@@ -1,0 +1,20 @@
+{
+  "component": "UniswapV4KEMHook-2",
+  "main_contract": "UniswapV4KEMHook",
+  "source_file_count": 43,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/eb59f23b-ef3c-4b3c-9d28-3455d5337d3f"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x444139d6b32c1ad0b00f24a616072f74b2f880c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

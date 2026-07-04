@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 import "./interface/INonfungiblePositionManager.sol";
-import "./interface/IUniswapV3Factory.sol";
+import "./interface/IAlgebraFactory.sol";
 import "./libs/TransferHelper.sol";
 
 contract UniV3LPLocker is IERC721Receiver, Ownable, ReentrancyGuard {
@@ -110,9 +110,9 @@ contract UniV3LPLocker is IERC721Receiver, Ownable, ReentrancyGuard {
         nftManagers.add(nftManager_);
         feeReceiver = feeReceiver_;
         customFeeSigner = customFeeSigner_;
-        addOrUpdateFee("DEFAULT", 50, 200, 0, address(0));
-        addOrUpdateFee("LVP", 80, 100, 0, address(0));
-        addOrUpdateFee("LLP", 30, 350, 0, address(0));
+        addOrUpdateFee("DEFAULT", 40, 160, 0, address(0));
+        addOrUpdateFee("LVP", 64, 80, 0, address(0));
+        addOrUpdateFee("LLP", 24, 280, 0, address(0));
     }
 
     function addOrUpdateFee(string memory name_, uint256 lpFee_, uint256 collectFee_, uint256 lockFee_, address lockFeeToken_) public onlyOwner {
@@ -184,11 +184,11 @@ contract UniV3LPLocker is IERC721Receiver, Ownable, ReentrancyGuard {
     }
 
     function _getPool(INonfungiblePositionManager nftManager_, uint256 nftId_) internal view returns(address pool) {
-         (,, address token0, address token1, uint24 fee,,,,,,,) = nftManager_.positions(nftId_);
+        (,, address token0, address token1,,,,,,,) = nftManager_.positions(nftId_);
         // get factory
-        IUniswapV3Factory factory = IUniswapV3Factory(nftManager_.factory());
+        IAlgebraFactory factory = IAlgebraFactory(nftManager_.factory());
         // get pool
-        pool = factory.getPool(token0, token1, fee);
+        pool = factory.poolByPair(token0, token1);
 
     }
 
@@ -335,7 +335,7 @@ contract UniV3LPLocker is IERC721Receiver, Ownable, ReentrancyGuard {
         LockInfo memory userLock = locks[lockId_];
         require(userLock.nftId == params.tokenId, "Invalid NFT_ID");
 
-        (, , address token0, address token1, , , , , , , , ) = userLock
+        (, , address token0, address token1, , , , , , , ) = userLock
             .nftPositionManager
             .positions(userLock.nftId);
 
@@ -464,7 +464,7 @@ contract UniV3LPLocker is IERC721Receiver, Ownable, ReentrancyGuard {
                 )
             );
         } else {
-            (,,address _token0,address _token1,,,,,,,,) = userLock.nftPositionManager.positions(userLock.nftId);
+            (,,address _token0,address _token1,,,,,,,) = userLock.nftPositionManager.positions(userLock.nftId);
             uint256 balance0 = IERC20(_token0).balanceOf(address(this));
             uint256 balance1 = IERC20(_token1).balanceOf(address(this));
 
@@ -527,7 +527,7 @@ contract UniV3LPLocker is IERC721Receiver, Ownable, ReentrancyGuard {
     * @dev returns just the liquidity value from a position
     */
     function _getLiquidity (INonfungiblePositionManager nftPositionManager_, uint256 tokenId_) private view returns (uint128) {
-        (,,,,,,,uint128 liquidity,,,,) = nftPositionManager_.positions(tokenId_);
+        (,,,,,,uint128 liquidity,,,,) = nftPositionManager_.positions(tokenId_);
         return liquidity;
     }
 

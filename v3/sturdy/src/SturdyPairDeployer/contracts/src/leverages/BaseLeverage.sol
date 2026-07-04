@@ -96,7 +96,7 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
       params,
       (IBaseLeverage.FlashLoanParams)
     );
-    if (opsParams.minRequiredAmount == 0) revert LV_INVALID_CONFIGURATION();
+    if (opsParams.minCollateralAmount == 0) revert LV_INVALID_CONFIGURATION();
     if (opsParams.user == address(0)) revert LV_INVALID_CONFIGURATION();
 
     if (opsParams.isEnterPosition) {
@@ -110,12 +110,11 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
    * @param _principal - The amount of collateral
    * @param _leverage - Extra leverage value and must be greater than 0, ex. 300% = 300_00
    *                    _principal + _principal * _leverage should be used as collateral
-   * @param _borrowAsset - The flashloan borrowing asset address when leverage works
+   * @param _borrowAsset - The borrowing asset address when leverage works
    * @param _collateralAsset - The collateral asset address when leverage works
    * @param _silo - The silo address
    * @param _flashLoanType - 0 is Aave, 1 is Balancer
-   * @param _borrowAssetAndCollateral - The uniswap/balancer/curve swap paths between borrowAsset and collateral
-   * @param _borrowAssetAndSiloAsset - The uniswap/balancer/curve swap paths between borrowAsset and silo asset
+   * @param _swapInfo - The uniswap/balancer swap paths between borrowAsset and collateral
    */
   function enterPositionWithFlashloan(
     uint256 _principal,
@@ -124,14 +123,12 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
     address _collateralAsset,
     address _silo,
     IBaseLeverage.FlashLoanType _flashLoanType,
-    IBaseLeverage.BiDirectSwapInfo calldata _borrowAssetAndCollateral,
-    IBaseLeverage.BiDirectSwapInfo calldata _borrowAssetAndSiloAsset
+    IBaseLeverage.SwapInfo calldata _swapInfo
   ) external nonReentrant {
     if (_principal == 0) revert LV_AMOUNT_NOT_GT_0();
     if (_leverage == 0) revert LV_AMOUNT_NOT_GT_0();
     if (_leverage >= 900_00) revert LV_INVALID_CONFIGURATION();
     if (_borrowAsset == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (_collateralAsset == address(0)) revert LV_INVALID_CONFIGURATION();
     if (_silo == address(0)) revert LV_INVALID_CONFIGURATION();
     if (IERC20(_collateralAsset).balanceOf(msg.sender) < _principal) revert LV_SUPPLY_NOT_ALLOWED();
 
@@ -146,8 +143,7 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
         _collateralAsset,
         _silo,
         _flashLoanType,
-        _borrowAssetAndCollateral,
-        _borrowAssetAndSiloAsset
+        _swapInfo
       )
     );
   }
@@ -155,12 +151,11 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
   /**
    * @param _repayAmount - The amount of repay
    * @param _requiredAmount - The amount of collateral
-   * @param _borrowAsset - The flashloan borrowing asset address when leverage works
+   * @param _borrowAsset - The borrowing asset address when leverage works
    * @param _collateralAsset - The collateral asset address when leverage works
    * @param _silo - The silo address
    * @param _flashLoanType - 0 is Aave, 1 is Balancer
-   * @param _borrowAssetAndCollateral - The uniswap/balancer/curve swap paths between borrowAsset and collateral asset
-   * @param _borrowAssetAndSiloAsset - The uniswap/balancer/curve swap paths between borrowAsset and silo asset
+   * @param _swapInfo - The uniswap/balancer/curve swap infos between borrowAsset and collateral
    */
   function withdrawWithFlashloan(
     uint256 _repayAmount,
@@ -169,8 +164,7 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
     address _collateralAsset,
     address _silo,
     IBaseLeverage.FlashLoanType _flashLoanType,
-    IBaseLeverage.BiDirectSwapInfo calldata _borrowAssetAndCollateral,
-    IBaseLeverage.BiDirectSwapInfo calldata _borrowAssetAndSiloAsset
+    IBaseLeverage.SwapInfo calldata _swapInfo
   ) external nonReentrant {
     if (_repayAmount == 0) revert LV_AMOUNT_NOT_GT_0();
     if (_requiredAmount == 0) revert LV_AMOUNT_NOT_GT_0();
@@ -179,19 +173,15 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
     if (_silo == address(0)) revert LV_INVALID_CONFIGURATION();
 
     uint256[] memory amounts = new uint256[](1);
-    amounts[0] = _borrowAssetAndSiloAsset.paths[0].inAmount;
-    if (amounts[0] == 0) {
-      amounts[0] = _repayAmount;
-    }
+    amounts[0] = _repayAmount;
 
     bytes memory params = abi.encode(
       false /*leavePosition*/,
-      _repayAmount,
+      _requiredAmount,
       msg.sender,
       _collateralAsset,
       _silo,
-      _borrowAssetAndCollateral,
-      _borrowAssetAndSiloAsset
+      _swapInfo
     );
 
     if (_flashLoanType == IBaseLeverage.FlashLoanType.AAVE) {
@@ -219,12 +209,12 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
     }
 
     // remained borrow asset -> collateral
-    _swapAsset(
+    _swapTo(
       _borrowAsset,
       _collateralAsset,
       IERC20(_borrowAsset).balanceOf(address(this)),
-      _borrowAssetAndCollateral.paths,
-      _borrowAssetAndCollateral.pathLength,
+      _swapInfo.paths,
+      _swapInfo.pathLength,
       false
     );
 
@@ -238,110 +228,35 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
     IERC20(_collateralAsset).safeTransfer(msg.sender, collateralAmount);
   }
 
-  /**
-   * @param _principal - The amount of zapping asset
-   * @param _borrowAmount - The amount of borrowing asset
-   * @param _zappingAsset - The address which will zap into collateral asset
-   * @param _collateralAsset - The collateral asset address
-   * @param _silo - The silo address
-   * @param _zapAssetToCollateral - The uniswap/balancer/curve swap paths from zappingAsset to collateral asset
-   */
-  function zapDeposit(
-    uint256 _principal,
-    uint256 _borrowAmount,
-    address _zappingAsset,
-    address _collateralAsset,
-    address _silo,
-    IBaseLeverage.UniDirectSwapInfo calldata _zapAssetToCollateral
-  ) external nonReentrant {
-    if (_principal == 0) revert LV_AMOUNT_NOT_GT_0();
-    if (_zappingAsset == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (_collateralAsset == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (_silo == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (IERC20(_zappingAsset).balanceOf(msg.sender) < _principal) revert LV_SUPPLY_FAILED();
-
-    IERC20(_zappingAsset).safeTransferFrom(msg.sender, address(this), _principal);
-
-    uint256 collateralAmount = _swapAsset(
-      _zappingAsset, 
-      _collateralAsset, 
-      _principal, 
-      _zapAssetToCollateral.paths, 
-      _zapAssetToCollateral.pathLength, 
+  function _enterPositionWithFlashloan(
+    address _borrowAsset,
+    uint256 _borrowedAmount,
+    uint256 _fee,
+    IBaseLeverage.FlashLoanParams memory _params
+  ) internal {
+    //swap borrow asset to collateral
+    _swapTo(
+      _borrowAsset,
+      _params.collateralAsset,
+      _borrowedAmount,
+      _params.swapInfo.paths,
+      _params.swapInfo.pathLength,
       true
     );
-    
-    // deposit collateral
-    _supply(_collateralAsset, _silo, collateralAmount, msg.sender);
+
+    uint256 collateralAmount = IERC20(_params.collateralAsset).balanceOf(address(this));
+    if (collateralAmount < _params.minCollateralAmount) revert LV_SUPPLY_FAILED();
+
+    //deposit collateral
+    _supply(_params.collateralAsset, _params.silo, collateralAmount, _params.user);
 
     //borrow
-    if (_borrowAmount != 0) {
-      _borrow(_silo, _borrowAmount, msg.sender, msg.sender);
-    }
-  }
-
-  /**
-   * @param _principal - The amount of the zapping asset
-   * @param _leverage - Extra leverage value and must be greater than 0, ex. 300% = 300_00
-   *                    principal + principal * leverage should be used as collateral
-   * @param _zappingAsset - The address which will zap into collateral asset
-   * @param _collateralAsset - The collateral asset address when leverage works
-   * @param _borrowAsset - The flashloan borrowing asset address when leverage works
-   * @param _silo - The silo address
-   * @param _flashLoanType - 0 is Aave, 1 is Balancer
-   * @param _zapAssetToCollateral - The uniswap/balancer/curve swap paths from zappingAsset to collateral asset
-   * @param _borrowAssetAndCollateral - The uniswap/balancer/curve swap path length between borrowAsset and collateral asset
-   * @param _borrowAssetAndSiloAsset - The uniswap/balancer/curve swap between borrowAsset and collateralAsset
-   */
-  function zapLeverageWithFlashloan(
-    uint256 _principal,
-    uint256 _leverage,
-    address _zappingAsset,
-    address _collateralAsset,
-    address _borrowAsset,
-    address _silo,
-    IBaseLeverage.FlashLoanType _flashLoanType,
-    IBaseLeverage.UniDirectSwapInfo calldata _zapAssetToCollateral,
-    IBaseLeverage.BiDirectSwapInfo calldata _borrowAssetAndCollateral,
-    IBaseLeverage.BiDirectSwapInfo calldata _borrowAssetAndSiloAsset
-  ) external nonReentrant {
-    if (_principal == 0) revert LV_AMOUNT_NOT_GT_0();
-    if (_leverage == 0) revert LV_AMOUNT_NOT_GT_0();
-    if (_leverage >= 900_00) revert LV_INVALID_CONFIGURATION();
-    if (_zappingAsset == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (_collateralAsset == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (_borrowAsset == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (_silo == address(0)) revert LV_INVALID_CONFIGURATION();
-    if (IERC20(_zappingAsset).balanceOf(msg.sender) < _principal) revert LV_SUPPLY_FAILED();
-
-    IERC20(_zappingAsset).safeTransferFrom(msg.sender, address(this), _principal);
-
-    uint256 collateralAmount = _swapAsset(
-      _zappingAsset, 
-      _collateralAsset, 
-      _principal, 
-      _zapAssetToCollateral.paths, 
-      _zapAssetToCollateral.pathLength, 
-      true
-    );
-
-    _leverageWithFlashloan(
-      IBaseLeverage.LeverageParams(
-        msg.sender,
-        collateralAmount,
-        _leverage,
-        _borrowAsset,
-        _collateralAsset,
-        _silo,
-        _flashLoanType,
-        _borrowAssetAndCollateral,
-        _borrowAssetAndSiloAsset
-      )
-    );
+    _borrow(_borrowAsset, _params.silo, _borrowedAmount + _fee, _params.user);
   }
 
   function _leverageWithFlashloan(IBaseLeverage.LeverageParams memory _params) internal {
     uint256 minCollateralAmount = _params.principal * (PERCENTAGE_FACTOR + _params.leverage) / PERCENTAGE_FACTOR;
+    
 
     bytes memory params = abi.encode(
       true /*enterPosition*/,
@@ -349,12 +264,12 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
       _params.user,
       _params.collateralAsset,
       _params.silo,
-      _params.borrowAssetAndCollateral,
-      _params.borrowAssetAndSiloAsset
+      _params.swapInfo
     );
 
+    uint256 borrowAssetDecimals = IERC20Metadata(_params.borrowAsset).decimals();
     uint256[] memory amounts = new uint256[](1);
-    amounts[0] = _params.borrowAssetAndCollateral.paths[0].inAmount;
+    amounts[0] = _params.swapInfo.paths[0].inAmount;
     if (_params.flashLoanType == IBaseLeverage.FlashLoanType.AAVE) {
       // 0 means revert the transaction if not validated
       uint256[] memory modes = new uint256[](1);
@@ -378,32 +293,47 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
       IBalancerVault(BALANCER_VAULT).flashLoan(address(this), assets, amounts, params);
       _balancerFlashLoanLock = 1;
     }
-
-    _afterLeverageWithFlashloan(
-      _params.borrowAsset,
-      _params
-    );
   }
 
-  function _swapAsset(
-    address _fromAsset,
-    address _toAsset,
+  function _swapTo(
+    address _borrowingAsset,
+    address _collateralAsset,
     uint256 _amount,
-    IBaseLeverage.MultipSwapPath[4] memory _paths,
+    IBaseLeverage.MultipSwapPath[3] memory _paths,
     uint256 _pathLength,
     bool _checkOutAmount
   ) internal returns (uint256) {
     if (_pathLength == 0) revert LV_INVALID_CONFIGURATION();
-    if (_paths[0].swapFrom != _fromAsset) revert LV_INVALID_CONFIGURATION();
-    if (_paths[_pathLength - 1].swapTo != _toAsset) revert LV_INVALID_CONFIGURATION();
+    if (_paths[0].swapFrom != _borrowingAsset) revert LV_INVALID_CONFIGURATION();
+    if (_paths[_pathLength - 1].swapTo != _collateralAsset) revert LV_INVALID_CONFIGURATION();
 
     uint256 amount = _amount;
     if (amount == 0) return 0;
 
     for (uint256 i; i < _pathLength; ++i) {
       if (_paths[i].swapType == IBaseLeverage.SwapType.NONE) continue;
+      amount = _processSwap(amount, _paths[i], false, _checkOutAmount);
+    }
 
-      amount = _processSwap(amount, _paths[i], _checkOutAmount);
+    return amount;
+  }
+
+  function _swapFrom(
+    address _borrowingAsset,
+    address _collateralAsset,
+    IBaseLeverage.MultipSwapPath[3] memory _paths,
+    uint256 _pathLength
+  ) internal returns (uint256) {
+    if (_pathLength == 0) revert LV_INVALID_CONFIGURATION();
+    if (_paths[0].swapFrom != _collateralAsset) revert LV_INVALID_CONFIGURATION();
+    if (_paths[_pathLength - 1].swapTo != _borrowingAsset) revert LV_INVALID_CONFIGURATION();
+
+    uint256 amount = IERC20(_collateralAsset).balanceOf(address(this));
+    if (amount == 0) return 0;
+
+    for (uint256 i; i < _pathLength; ++i) {
+      if (_paths[i].swapType == IBaseLeverage.SwapType.NONE) continue;
+      amount = _processSwap(amount, _paths[i], true, true);
     }
 
     return amount;
@@ -454,6 +384,7 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
 
       return
         UniswapAdapter.swapExactTokensForTokens(
+          address(0),
           _path.swapFrom,
           _path.swapTo,
           _fromAmount,
@@ -465,6 +396,7 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
     // Curve Swap
     return
       CurveswapAdapter.swapExactTokensForTokens(
+        address(0),
         _path.swapFrom,
         _path.swapTo,
         _fromAmount,
@@ -472,18 +404,6 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
         outAmount
       );
   }
-
-  function _enterPositionWithFlashloan(
-    address _borrowAsset,
-    uint256 _borrowedAmount,
-    uint256 _fee,
-    IBaseLeverage.FlashLoanParams memory _params
-  ) internal virtual;
-
-  function _afterLeverageWithFlashloan(
-    address _borrowAsset,
-    IBaseLeverage.LeverageParams memory _params
-  ) internal virtual;
 
   function _withdrawWithFlashloan(
     address _borrowAsset,
@@ -506,21 +426,23 @@ abstract contract BaseLeverage is IFlashLoanReceiver, IFlashLoanRecipient, Reent
   ) internal virtual;
 
   function _borrow(
+    address _borrowAsset, 
     address _silo, 
     uint256 _amount, 
-    address _borrower,
-    address _receiver
+    address borrower
   ) internal virtual;
 
   function _repay(
+    address _borrowAsset, 
     address _silo, 
     uint256 _amount, 
-    address _borrower
+    address borrower
   ) internal virtual;
 
   function _processSwap(
     uint256 _amount,
     IBaseLeverage.MultipSwapPath memory _path,
+    bool _isFrom,
     bool _checkOutAmount
   ) internal virtual returns (uint256);
 }

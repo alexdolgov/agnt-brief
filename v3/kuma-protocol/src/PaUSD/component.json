@@ -2,7 +2,7 @@
   "component": "PaUSD",
   "main_contract": "PaUSD",
   "source_file_count": 20,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -34,6 +34,14 @@
       "chain": "polygon",
       "chain_id": 137,
       "address": "0xb04e31f3cf7bdbf8b3b843df1a63fd3047cad1f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x93bf70bc8aa43c0099a33f5745793532f9e78b38",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

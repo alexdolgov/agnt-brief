@@ -1,15 +1,39 @@
 {
   "component": "ReservesSetupHelper",
   "main_contract": "ReservesSetupHelper",
-  "source_file_count": 27,
-  "deployment_count": 1,
+  "source_file_count": 25,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x145555c56718437093c020cef4e8dd11cd7d2662",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x16e32b35943dafe28596594fecead8bcdc30d19c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x79b3f30b05016969325c587b346cff2ed4f76ca2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x7c2018c98ca507cd3e545fbe1a397a164445122a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x95e9b3fa9a6e7201a6ea7dd902dabacd1410a447",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -1,6 +1,6 @@
 # horizondex — deployments
 
-76 verified deployment(s) across 35 component(s).
+80 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,11 +8,15 @@
 | base | `0x272e156df8da513c69cb41cc7a99185d53f926bb` | ERC1967Proxy-2 | proxy | live | yes |
 | base | `0x2e1cba4a9f6e69d27e65046fc93b873b05f79a39` | TicksFeesReader | impl | inactive | no |
 | base | `0x438670d41d5118003b2f42cc0466fbadd760dbf4` | TokenPositionDescriptor | impl | inactive | yes |
+| base | `0x72922d8b03631784a2785c5aff317dd76f3cb00b` | KyberSwapElasticLM | impl | inactive | no |
 | base | `0x94ddde405a00180891ed79dc1147f0d841c30d73` | Factory | impl | inactive | no |
 | base | `0x99aec509174cbf06f8f7e15ddeeb7bcc32363827` | ERC1967Proxy-2 | impl | live | yes |
+| base | `0x9dcd4f0072e50da6858d288df343732a50347d82` | KSElasticLMHelper | impl | inactive | no |
 | base | `0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5` | ERC1967Proxy-2 | impl | inactive | yes |
+| base | `0xb2f1d3c47d2f0110ef66f0fe2a470402849e0898` | KyberSwapElasticLM | impl | inactive | no |
 | base | `0xb3cc484a60bc300719aaefbd158a4e8e59d84555` | TokenPositionDescriptor | impl | live | yes |
 | base | `0xc67c9038020dbd5d0669f90ae62cb934eb8a8aeb` | TokenPositionDescriptor | proxy | live | yes |
+| base | `0xf6e8487d086597c474f5a289ff16361bc4a81384` | KSElasticLMHelper | impl | inactive | no |
 | base | `0xf7b48f136c7d060f5fc6f020f06418c53097f51b` | MulticallV2 | impl | inactive | no |
 | linea | `0x066948fce990b4addc3bafa680338132a862b81a` | PythOracle | impl | inactive | no |
 | linea | `0x0714705a377c26ac60bd69dd6356609600f6f3c0` | PythOracle | impl | inactive | no |
@@ -80,11 +84,3 @@
 | linea | `0xec4f2937e57a6f39087187816ecc83191e6db1ab` | AlgebraFactory | impl | inactive | no |
 | linea | `0xf6dc12cddf3c30ce70a3f2baf6d52577fbc2ea73` | ERC1967Proxy | proxy | live | no |
 | linea | `0xfd6c55a268248e26203e67fc49284681c7f1a860` | Quoter | impl | inactive | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x72922d8b03631784a2785c5aff317dd76f3cb00b`
-- base `0x9dcd4f0072e50da6858d288df343732a50347d82`
-- base `0xb2f1d3c47d2f0110ef66f0fe2a470402849e0898`
-- base `0xf6e8487d086597c474f5a289ff16361bc4a81384`

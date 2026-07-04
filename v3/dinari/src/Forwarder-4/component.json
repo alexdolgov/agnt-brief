@@ -1,0 +1,18 @@
+{
+  "component": "Forwarder-4",
+  "main_contract": "Forwarder",
+  "source_file_count": 26,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb47b9a05fc45eec35d9ecbb34aee16d8ac9d0d86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

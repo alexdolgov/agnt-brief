@@ -2,86 +2,44 @@
 pragma solidity 0.8.7;
 
 import "../libraries/RescueFundsLib.sol";
-import "../utils/AccessControl.sol";
-
+import "../utils/AccessControlExtended.sol";
+import {RESCUE_ROLE} from "../utils/AccessRoles.sol";
 import {ISocket} from "../interfaces/ISocket.sol";
 import {ITransmitManager} from "../interfaces/ITransmitManager.sol";
+
 import {FastSwitchboard} from "../switchboard/default-switchboards/FastSwitchboard.sol";
 import {INativeRelay} from "../interfaces/INativeRelay.sol";
 
-import {RESCUE_ROLE} from "../utils/AccessRoles.sol";
-
-/**
- * @title SocketBatcher
- * @notice A contract that facilitates the batching of packets across chains. It manages requests for sealing, proposing, attesting, and executing packets across multiple chains.
- * It also has functions for setting gas limits, execution overhead, and registering switchboards.
- * @dev This contract uses the AccessControl contract for managing role-based access control.
- */
-contract SocketBatcher is AccessControl {
-    /*
-     * @notice Constructs the SocketBatcher contract and grants the RESCUE_ROLE to the contract deployer.
-     * @param owner_ The address of the contract deployer, who will be granted the RESCUE_ROLE.
-     */
-    constructor(address owner_) AccessControl(owner_) {
+contract SocketBatcher is AccessControlExtended {
+    constructor(address owner_) AccessControlExtended(owner_) {
         _grantRole(RESCUE_ROLE, owner_);
     }
 
-    /**
-     * @notice A struct representing a request to seal a batch of packets on the source chain.
-     * @param batchSize The number of packets to be sealed in the batch.
-     * @param capacitorAddress The address of the capacitor contract on the source chain.
-     * @param signature The signature of the packet data.
-     */
     struct SealRequest {
         uint256 batchSize;
         address capacitorAddress;
         bytes signature;
     }
 
-    /**
-     * @notice A struct representing a proposal request for a packet.
-     * @param packetId The ID of the packet being proposed.
-     * @param root The Merkle root of the packet data.
-     * @param signature The signature of the packet data.
-     */
     struct ProposeRequest {
         bytes32 packetId;
         bytes32 root;
         bytes signature;
     }
 
-    /**
-     * @notice A struct representing an attestation request for a packet.
-     * @param packetId The ID of the packet being attested.
-     * @param srcChainSlug The slug of the source chain.
-     * @param signature The signature of the packet data.
-     */
     struct AttestRequest {
         bytes32 packetId;
+        uint256 srcChainSlug;
         bytes signature;
     }
 
-    /**
-     * @notice A struct representing a request to execute a packet.
-     * @param packetId The ID of the packet to be executed.
-     * @param localPlug The address of the local plug contract.
-     * @param messageDetails The message details of the packet.
-     * @param signature The signature of the packet data.
-     */
     struct ExecuteRequest {
         bytes32 packetId;
+        address localPlug;
         ISocket.MessageDetails messageDetails;
         bytes signature;
     }
 
-    /**
-     * @notice A struct representing a request to initiate an Arbitrum native transaction.
-     * @param packetId The ID of the packet to be executed.
-     * @param maxSubmissionCost The maximum submission cost of the transaction.
-     * @param maxGas The maximum amount of gas for the transaction.
-     * @param gasPriceBid The gas price bid for the transaction.
-     * @param callValue The call value of the transaction.
-     */
     struct ArbitrumNativeInitiatorRequest {
         bytes32 packetId;
         uint256 maxSubmissionCost;
@@ -90,26 +48,32 @@ contract SocketBatcher is AccessControl {
         uint256 callValue;
     }
 
-    /**
-     * @notice A struct representing a request to register switchboard for a chain.
-     * @param switchBoardAddress The switchboard address.
-     * @param maxPacketLength The max packet length
-     * @param siblingChainSlug The sibling chain slug
-     * @param capacitorType The capacitor type
-     */
+    struct SetProposeGasLimitRequest {
+        uint256 nonce;
+        uint256 dstChainId;
+        uint256 proposeGasLimit;
+        bytes signature;
+    }
+
+    struct SetAttestGasLimitRequest {
+        uint256 nonce;
+        uint256 dstChainId;
+        uint256 attestGasLimit;
+        bytes signature;
+    }
+
+    struct SetExecutionOverheadRequest {
+        uint256 nonce;
+        uint256 dstChainId;
+        uint256 executionOverhead;
+        bytes signature;
+    }
+
     struct RegisterSwitchboardRequest {
         address switchBoardAddress;
         uint256 maxPacketLength;
         uint32 siblingChainSlug;
-        uint256 capacitorType;
-    }
-
-    /**
-     * @notice A struct representing a request to send proof to polygon root
-     * @param proof proof to submit on root tunnel
-     */
-    struct ReceivePacketProofRequest {
-        bytes proof;
+        uint32 capacitorType;
     }
 
     /**
@@ -129,6 +93,75 @@ contract SocketBatcher is AccessControl {
                 registerSwitchboardsRequests_[index].maxPacketLength,
                 registerSwitchboardsRequests_[index].siblingChainSlug,
                 registerSwitchboardsRequests_[index].capacitorType
+            );
+            unchecked {
+                ++index;
+            }
+        }
+    }
+
+    /**
+     * @notice set propose gas limit for a list of siblings
+     * @param transmitManagerAddress_ address of transmit manager
+     * @param setProposeGasLimitRequests_ the list of requests with gas limit details
+     */
+    function setProposeGasLimits(
+        address transmitManagerAddress_,
+        SetProposeGasLimitRequest[] calldata setProposeGasLimitRequests_
+    ) external {
+        uint256 setProposeGasLimitLength = setProposeGasLimitRequests_.length;
+        for (uint256 index = 0; index < setProposeGasLimitLength; ) {
+            ITransmitManager(transmitManagerAddress_).setProposeGasLimit(
+                setProposeGasLimitRequests_[index].nonce,
+                setProposeGasLimitRequests_[index].dstChainId,
+                setProposeGasLimitRequests_[index].proposeGasLimit,
+                setProposeGasLimitRequests_[index].signature
+            );
+            unchecked {
+                ++index;
+            }
+        }
+    }
+
+    /**
+     * @notice set attest gas limit for a list of siblings
+     * @param fastSwitchboardAddress_ address of fast switchboard
+     * @param setAttestGasLimitRequests_ the list of requests with gas limit details
+     */
+    function setAttestGasLimits(
+        address fastSwitchboardAddress_,
+        SetAttestGasLimitRequest[] calldata setAttestGasLimitRequests_
+    ) external {
+        uint256 setAttestGasLimitLength = setAttestGasLimitRequests_.length;
+        for (uint256 index = 0; index < setAttestGasLimitLength; ) {
+            FastSwitchboard(fastSwitchboardAddress_).setAttestGasLimit(
+                setAttestGasLimitRequests_[index].nonce,
+                setAttestGasLimitRequests_[index].dstChainId,
+                setAttestGasLimitRequests_[index].attestGasLimit,
+                setAttestGasLimitRequests_[index].signature
+            );
+            unchecked {
+                ++index;
+            }
+        }
+    }
+
+    /**
+     * @notice set execution overhead for a list of siblings
+     * @param switchboardAddress_ address of fast switchboard
+     * @param setExecutionOverheadRequests_ the list of requests with gas limit details
+     */
+    function setExecutionOverheadBatch(
+        address switchboardAddress_,
+        SetExecutionOverheadRequest[] calldata setExecutionOverheadRequests_
+    ) external {
+        uint256 sealRequestslength = setExecutionOverheadRequests_.length;
+        for (uint256 index = 0; index < sealRequestslength; ) {
+            FastSwitchboard(switchboardAddress_).setExecutionOverhead(
+                setExecutionOverheadRequests_[index].nonce,
+                setExecutionOverheadRequests_[index].dstChainId,
+                setExecutionOverheadRequests_[index].executionOverhead,
+                setExecutionOverheadRequests_[index].signature
             );
             unchecked {
                 ++index;
@@ -193,6 +226,7 @@ contract SocketBatcher is AccessControl {
         for (uint256 index = 0; index < attestRequestslength; ) {
             FastSwitchboard(switchBoardAddress_).attest(
                 attestRequests_[index].packetId,
+                attestRequests_[index].srcChainSlug,
                 attestRequests_[index].signature
             );
             unchecked {
@@ -214,6 +248,7 @@ contract SocketBatcher is AccessControl {
         for (uint256 index = 0; index < executeRequestslength; ) {
             ISocket(socketAddress_).execute(
                 executeRequests_[index].packetId,
+                executeRequests_[index].localPlug,
                 executeRequests_[index].messageDetails,
                 executeRequests_[index].signature
             );
@@ -230,12 +265,12 @@ contract SocketBatcher is AccessControl {
      */
     function receiveMessageBatch(
         address polygonRootReceiverAddress_,
-        ReceivePacketProofRequest[] calldata receivePacketProofs_
+        bytes[] calldata receivePacketProofs_
     ) external {
         uint256 receivePacketProofsLength = receivePacketProofs_.length;
         for (uint256 index = 0; index < receivePacketProofsLength; ) {
             INativeRelay(polygonRootReceiverAddress_).receiveMessage(
-                receivePacketProofs_[index].proof
+                receivePacketProofs_[index]
             );
             unchecked {
                 ++index;
@@ -272,9 +307,6 @@ contract SocketBatcher is AccessControl {
                 ++index;
             }
         }
-
-        if (address(this).balance > 0)
-            msg.sender.call{value: address(this).balance}("");
     }
 
     /**
@@ -297,12 +329,6 @@ contract SocketBatcher is AccessControl {
         }
     }
 
-    /**
-     * @notice Rescues funds from a contract that has lost access to them.
-     * @param token_ The address of the token contract.
-     * @param userAddress_ The address of the user who lost access to the funds.
-     * @param amount_ The amount of tokens to be rescued.
-     */
     function rescueFunds(
         address token_,
         address userAddress_,

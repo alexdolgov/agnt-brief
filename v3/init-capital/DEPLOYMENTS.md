@@ -1,11 +1,14 @@
 # init-capital — deployments
 
-66 verified deployment(s) across 25 component(s).
+72 verified deployment(s) across 30 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| blast | `0x56fba2cc045c02d7adae5a9dfdce795900b2860e` | InitLens | impl | inactive | no |
-| blast | `0x815e63d6b5e1b8d74876fc9a2c08b79d4185494b` | InitCore | impl | live | yes |
+| blast | `0x214d40dc973802859afcda42333ba98fa78e4e4a` | MoneyMarketHook-2 | impl | inactive | no |
+| blast | `0x22eb74ab07ce90138f0fe4b2fdafee1738b0de11` | TransparentUpgradeableProxy-4 | impl | live | yes |
+| blast | `0x56fba2cc045c02d7adae5a9dfdce795900b2860e` | InitLens-2 | impl | inactive | no |
+| blast | `0x65d8d9dcaec8373f79328b59798629506599f232` | TransparentUpgradeableProxy-5 | impl | inactive | no |
+| blast | `0x815e63d6b5e1b8d74876fc9a2c08b79d4185494b` | InitCore-2 | impl | live | yes |
 | mantle | `0x007f91636e0f986068ef27c950fa18734ba553ac` | TransparentUpgradeableProxy | proxy | live | yes |
 | mantle | `0x00a55649e597d463fd212fbe48a3b40f0e227d06` | TransparentUpgradeableProxy | proxy | live | yes |
 | mantle | `0x00fa41248f6c3a26863ec56634fe78ad4e4748ec` | DoubleSlopeIRM | impl | inactive | no |
@@ -42,12 +45,14 @@
 | mantle | `0x71e0b2e5ddcdd509d1da7029b09d310c108b2cf6` | DoubleSlopeIRM | impl | inactive | no |
 | mantle | `0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8` | WMANTLE | impl | live | no |
 | mantle | `0x7928419135ce5427858f0f5c0cba3151b9b14f81` | TransparentUpgradeableProxy | impl | live | yes |
+| mantle | `0x7d2b278b8ef87beb83aec01243ff2fed57456042` | InitLens | impl | inactive | no |
 | mantle | `0x7fa704e73262e5a9f48382087f69c6aba0408eaa` | TransparentUpgradeableProxyReceiveETH | proxy | live | yes |
 | mantle | `0x8baf44b350ef672232a6673e1e128c7875640477` | PepeToken | impl | inactive | no |
 | mantle | `0x8bc7dfca30717ae4303afe93b22c3add334dfcbb` | TransparentUpgradeableProxyReceiveETH | proxy | live | yes |
 | mantle | `0x917a9fa5606e7bb6a9bf7eb0abb00fe152d3dc14` | TransparentUpgradeableProxyReceiveETH | impl | live | yes |
 | mantle | `0x91a19402818ec3da51ead9db15a4776827ec65e5` | TimelockController | impl | inactive | no |
 | mantle | `0x9567940746fda24aa98160ae3dacdbd51dae7d33` | TransparentUpgradeableProxyReceiveETH | proxy | live | yes |
+| mantle | `0x972bcb0284cca0152527c4f70f8f689852bcafc5` | TransparentUpgradeableProxy | proxy | live | yes |
 | mantle | `0x995b3d3cf83d5a0040b56b0201d3d2db6e369dbf` | TransparentUpgradeableProxy | impl | inactive | yes |
 | mantle | `0x9c9f28672c4a8ad5fb2c9aca6d8d68b02eafd552` | TransparentUpgradeableProxy | proxy | live | yes |
 | mantle | `0xa0338a506ff1c2d60a0462c9723c5d3f9c238a48` | FusionXSwapHelper | impl | inactive | no |
@@ -70,13 +75,4 @@
 | mantle | `0xf25e438efad5a865a72f9fe39ffd9aec1f18398e` | DoubleSlopeIRM | impl | inactive | no |
 | mantle | `0xf3416748553ea93643aa8b5a7879f2c40018002b` | TransparentUpgradeableProxy | impl | inactive | yes |
 | mantle | `0xf82cbcab75c1138a8f1f20179613e7c0c8337346` | MoneyMarketHook | proxy | live | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- blast `0x214d40dc973802859afcda42333ba98fa78e4e4a`
-- blast `0x22eb74ab07ce90138f0fe4b2fdafee1738b0de11`
-- blast `0x65d8d9dcaec8373f79328b59798629506599f232`
-- mantle `0x7d2b278b8ef87beb83aec01243ff2fed57456042`
-- mantle `0x972bcb0284cca0152527c4f70f8f689852bcafc5`
-- mantle `0xf8b8552d52986f06ffaf14bc88bfcf6dcbdba05d`
+| mantle | `0xf8b8552d52986f06ffaf14bc88bfcf6dcbdba05d` | InitCore | impl | live | yes |

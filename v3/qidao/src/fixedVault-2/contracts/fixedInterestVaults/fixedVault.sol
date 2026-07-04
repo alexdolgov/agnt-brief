@@ -58,7 +58,8 @@ contract fixedVault is ReentrancyGuard, VaultNFTv4 {
     address public stabilityPool;
     address public adm;
     address public ref;
-    uint8 public version = 6;
+    address public router;
+    uint8 public version = 7;
 
     event CreateVault(uint256 vaultID, address creator);
     event DestroyVault(uint256 vaultID);
@@ -120,6 +121,14 @@ contract fixedVault is ReentrancyGuard, VaultNFTv4 {
     modifier onlyVaultOwner(uint256 vaultID) {
         require(_exists(vaultID), "Vault does not exist");
         require(ownerOf(vaultID) == msg.sender, "Vault is not owned by you");
+        _;
+    }
+
+    modifier onlyRouter() {
+        require(
+            router == address(0) || msg.sender == router,
+            "must use router"
+        );
         _;
     }
 
@@ -338,6 +347,7 @@ contract fixedVault is ReentrancyGuard, VaultNFTv4 {
     function depositCollateral(uint256 vaultID, uint256 amount)
         external
         vaultExists(vaultID)
+        onlyRouter
     {
         uint256 newCollateral = vaultCollateral[vaultID] + (amount);
 
@@ -436,11 +446,12 @@ contract fixedVault is ReentrancyGuard, VaultNFTv4 {
         uint256 vaultID,
         uint256 deadline,
         uint256 _front
-    ) external frontExists(_front) vaultExists(vaultID) {
+    ) external frontExists(_front) vaultExists(vaultID) onlyRouter {
         require(
             deadline >= block.timestamp,
             "paybackTokenAll: deadline expired."
         );
+
         uint256 _amount = updateVaultDebt(vaultID);
         payBackToken(vaultID, _amount, _front);
     }
@@ -454,7 +465,7 @@ contract fixedVault is ReentrancyGuard, VaultNFTv4 {
         uint256 vaultID,
         uint256 amount,
         uint256 _front
-    ) public frontExists(_front) vaultExists(vaultID) {
+    ) public frontExists(_front) vaultExists(vaultID) onlyRouter {
         require(mai.balanceOf(msg.sender) >= amount, "Token balance too low");
 
         uint256 vaultDebtNow = updateVaultDebt(vaultID);
@@ -739,8 +750,10 @@ contract fixedVault is ReentrancyGuard, VaultNFTv4 {
     /// @dev this function can only be called if vault CDR is under the bonus ratio.
     /// address who calls it will now own the debt and the collateral.
     function buyRiskDebtVault(uint256 vaultID) external vaultExists(vaultID) returns(uint256) {
-      
-        uint256 vaultDebtNow = updateVaultDebt(vaultID);
+        require(
+            stabilityPool == address(0) || msg.sender == stabilityPool,
+            "buy risky is disabled for public"
+        );        uint256 vaultDebtNow = updateVaultDebt(vaultID);
 
         require(vaultDebtNow != 0, "Vault debt is 0");
 

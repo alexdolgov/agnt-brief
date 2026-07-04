@@ -1,0 +1,18 @@
+{
+  "component": "MCV2_BondPeriphery-6",
+  "main_contract": "MCV2_BondPeriphery",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaaa2231f07983ee17f02aa079f9a72fb38b60d74",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "component": "UserPowers-2",
+  "main_contract": "UserPowers",
+  "source_file_count": 5,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x99c430d6ad83f7d375f1b44aea66f155a1c5c69b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

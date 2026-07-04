@@ -1,25 +1,25 @@
 {
   "component": "MAHAProxy-12",
   "main_contract": "MAHAProxy",
-  "source_file_count": 9,
+  "source_file_count": 12,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1fd19c91fcd2cbe58500bac80017c791a669d9ee",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbe675421d5b1584806b828c403f62d753c3f5617",
       "is_proxy": true,
-      "implementation_address": "0x543ba27094575d1c3f6333b016317abbc86acbfc",
+      "implementation_address": "0xa5a9ab93c93ef72cb75e6fa41e1bc80562c1fd03",
       "liveness": "inactive"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x543ba27094575d1c3f6333b016317abbc86acbfc",
-      "is_proxy": false,
-      "implementation_address": null,
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe8abc60984489c842ef9b2adf3af066dd260744b",
+      "is_proxy": true,
+      "implementation_address": "0xa5a9ab93c93ef72cb75e6fa41e1bc80562c1fd03",
       "liveness": "inactive"
     }
   ]

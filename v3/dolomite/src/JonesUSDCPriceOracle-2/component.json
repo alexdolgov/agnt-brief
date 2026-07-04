@@ -1,0 +1,18 @@
+{
+  "component": "JonesUSDCPriceOracle-2",
+  "main_contract": "JonesUSDCPriceOracle",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe091e7a5897759faf5591d2ef1cff0fd9a02f3cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

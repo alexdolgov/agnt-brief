@@ -1,0 +1,18 @@
+{
+  "component": "SpokeCommon-3",
+  "main_contract": "SpokeCommon",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x57d77fd37670e22188d1c92d7cec931bccf074a4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

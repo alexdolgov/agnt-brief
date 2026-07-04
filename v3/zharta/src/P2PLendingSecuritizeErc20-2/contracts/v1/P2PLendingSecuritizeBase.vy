@@ -1,7 +1,7 @@
 # @version 0.4.3
 
 """
-@title P2PLendingSecuritizeBase
+@title P2PLendingVaultedBase
 @author [Zharta](https://zharta.io/)
 @notice This contract facilitates peer-to-peer lending using ERC20s as collateral.
 @dev Keep all state here so that the storage layout is consistent across contracts
@@ -32,9 +32,6 @@ interface KYCValidator:
 
 interface EIP1271Signer:
     def is_valid_signature(hash: bytes32, signature: Bytes[65]) -> bytes4: view
-
-interface VaultRegistrar:
-    def register_vault(vault: address, investor_wallet: address): nonpayable
 
 
 # Structs
@@ -90,18 +87,6 @@ struct SignedOffer:
     offer: Offer
     signature: Signature
 
-
-struct LoanExtensionOffer:
-    loan_id: bytes32
-    original_maturity: uint256
-    new_maturity: uint256
-
-
-struct SignedLoanExtensionOffer:
-    offer: LoanExtensionOffer
-    signature: Signature
-
-
 struct Loan:
     id: bytes32
     offer_id: bytes32
@@ -146,18 +131,6 @@ struct PartialLiquidationResult:
     updated_ltv: uint256
 
 
-struct RedeemResult:
-    vault: address
-    collateral_redeemed: uint256
-    payment_redeemed: uint256
-    timestamp: uint256
-
-
-struct SignedRedeemResult:
-    result: RedeemResult
-    signature: Signature
-
-
 event OfferRevoked:
     offer_id: bytes32
     lender: address
@@ -190,7 +163,6 @@ pending_transfers: public(HashMap[address, uint256])
 vault_count: public(HashMap[address, uint256])
 
 securitize_redemption_wallet: public(address)
-vault_registrar: public(address)
 
 ZHARTA_DOMAIN_NAME: constant(String[6]) = "Zharta"
 ZHARTA_DOMAIN_VERSION: constant(String[1]) = "1"
@@ -201,9 +173,6 @@ OFFER_TYPE_DEF: constant(String[370]) = "Offer(uint256 principal,uint256 apr,add
                                         "uint256 call_eligibility,uint256 call_window,uint256 liquidation_ltv,address oracle_addr," \
                                         "uint256 expiration,address lender,address borrower,bytes32 tracing_id)"
 OFFER_TYPE_HASH: constant(bytes32) = keccak256(OFFER_TYPE_DEF)
-
-EXTENSION_OFFER_TYPE_DEF: constant(String[82]) = "LoanExtensionOffer(bytes32 loan_id,uint256 original_maturity,uint256 new_maturity)"
-EXTENSION_OFFER_TYPE_HASH: constant(bytes32) = keccak256(EXTENSION_OFFER_TYPE_DEF)
 
 
 @deploy
@@ -310,49 +279,6 @@ def _is_offer_signed_by_lender(signed_offer: SignedOffer, offer_sig_domain_separ
     else:
         return signer == signed_offer.offer.lender
 
-@internal
-def _is_extension_offer_signed_by_lender(signed_offer: SignedLoanExtensionOffer, lender: address, offer_sig_domain_separator: bytes32) -> bool:
-    assert signed_offer.signature.s <= MALLEABILITY_THRESHOLD, "invalid signature"
-
-    message_hash: bytes32 = keccak256(
-            concat(
-                convert("\x19\x01", Bytes[2]),
-                abi_encode(
-                    offer_sig_domain_separator,
-                    keccak256(abi_encode(EXTENSION_OFFER_TYPE_HASH, signed_offer.offer))
-                )
-            )
-        )
-
-    signer: address = ecrecover(
-        message_hash,
-        signed_offer.signature.v,
-        signed_offer.signature.r,
-        signed_offer.signature.s
-    )
-
-    if lender.is_contract:
-        return staticcall EIP1271Signer(lender).is_valid_signature(
-            message_hash,
-            concat(
-                convert(signed_offer.signature.r, bytes32),
-                convert(signed_offer.signature.s, bytes32),
-                convert(convert(signed_offer.signature.v, uint8), bytes1)
-            )
-        ) == EIP1271_MAGIC_VALUE
-    else:
-        return signer == lender
-
-
-@internal
-@view
-def _validate_redeem_result_sig(redeem_result: SignedRedeemResult):
-    assert ecrecover(
-        keccak256(abi_encode(concat(convert("\x19\x00", Bytes[2]), keccak256(abi_encode(redeem_result.result))))),
-         redeem_result.signature.v,
-         redeem_result.signature.r,
-         redeem_result.signature.s
-    ) == self.owner, "invalid redeem result sig"
 
 
 @view
@@ -413,24 +339,23 @@ def _check_offer_validity(offer: SignedOffer, payment_token: address, collateral
     assert offer.offer.payment_token == payment_token, "invalid payment token"
     assert offer.offer.collateral_token == collateral_token, "invalid collateral token"
     assert offer.offer.oracle_addr == empty(address) or offer.offer.oracle_addr == oracle_addr, "invalid oracle address"
+    assert offer.offer.call_window != 0 or offer.offer.call_eligibility == 0, "call window is 0"
     assert offer.offer.min_collateral_amount > 0 or offer.offer.max_iltv > 0, "no min collateral nor max iltv"
-    assert offer.offer.call_eligibility == 0, "call eligibility not supported"
-    assert offer.offer.call_window == 0, "call window not supported"
 
 
 @view
 @internal
 def _get_oracle_rate(oracle_addr: address, oracle_reverse: bool) -> UInt256Rational:
-    answer: int256 = (staticcall AggregatorV3Interface(oracle_addr).latestRoundData()).answer
-    assert answer > 0, "invalid oracle rate"
+    convertion_rate_numerator: uint256 = 0
+    convertion_rate_denominator: uint256 = 0
     if oracle_reverse:
         return UInt256Rational(
             numerator=10 ** convert(staticcall AggregatorV3Interface(oracle_addr).decimals(), uint256),
-            denominator=convert(answer, uint256)
+            denominator=convert((staticcall AggregatorV3Interface(oracle_addr).latestRoundData()).answer, uint256)
         )
     else:
         return UInt256Rational(
-            numerator=convert(answer, uint256),
+            numerator=convert((staticcall AggregatorV3Interface(oracle_addr).latestRoundData()).answer, uint256),
             denominator=10 ** convert(staticcall AggregatorV3Interface(oracle_addr).decimals(), uint256)
         )
 
@@ -469,7 +394,11 @@ def _compute_partial_liquidation(
 @view
 @internal
 def _is_loan_defaulted(loan: Loan) -> bool:
-    return block.timestamp > loan.maturity
+    if block.timestamp > loan.maturity:
+        return True
+    if loan.call_time > 0:
+        return block.timestamp > loan.call_time + loan.call_window
+    return False
 
 
 @view
@@ -480,57 +409,43 @@ def _is_loan_redeemed(loan: Loan) -> bool:
 
 @view
 @internal
-def _get_redeem_balances(loan: Loan, _vault: vault.Vault, payment_token: address, redeem_result: RedeemResult) -> (uint256, uint256):
-    assert staticcall IERC20(payment_token).balanceOf(_vault.address) >= redeem_result.payment_redeemed, "invalid redeem payment amount"
-    assert staticcall _vault.withdrawable_balance() >= loan.redeem_residual_collateral + redeem_result.collateral_redeemed, "invalid redeem collateral amnt"
-    return redeem_result.payment_redeemed, loan.redeem_residual_collateral + redeem_result.collateral_redeemed
+def _get_redeem_balances(_vault: vault.Vault, payment_token: address) -> (uint256, uint256):
+    return staticcall IERC20(payment_token).balanceOf(_vault.address), staticcall _vault.withdrawable_balance()
 
 
 @view
 @internal
-def _is_loan_redeem_concluded(loan: Loan, _vault: vault.Vault, redeem_result: SignedRedeemResult) -> bool:
+def _is_loan_redeem_concluded(loan: Loan) -> bool:
     if loan.redeem_start == 0:
         return False
-    if redeem_result.result.timestamp < loan.redeem_start:
-        return False
-    if redeem_result.result.vault != _vault.address:
-        return False
-    self._validate_redeem_result_sig(redeem_result)
-    return True
+    _vault: vault.Vault = self._get_vault(loan.borrower, loan.vault_id, loan.collateral_token)
+    if staticcall IERC20(loan.payment_token).balanceOf(_vault.address) > 0:
+        return True
+    if staticcall _vault.withdrawable_balance() > loan.redeem_residual_collateral:
+        return True
+    return False
+    # TODO: check if this can be exploited, sending a small ammount to the vault to force redeem conclusion
 
 
 @internal
 @view
-def _get_vault(wallet: address, vault_id: uint256, _vault_impl_addr: address) -> vault.Vault:
-    _vault: address = self._wallet_to_vault(wallet, vault_id, _vault_impl_addr)
+def _get_vault(wallet: address, vault_id: uint256, vault_impl_addr: address) -> vault.Vault:
+    _vault: address = self._wallet_to_vault(wallet, vault_id, vault_impl_addr)
     assert _vault.is_contract, "no vault exists for wallet"
     return vault.Vault(_vault)
 
 @internal
-def _create_vault_by_id_if_needed(wallet: address, vault_impl_addr: address, payment_token: address, vault_id: uint256, vault_registrar: address) -> vault.Vault:
+def _create_vault_if_needed(wallet: address, vault_impl_addr: address, payment_token: address) -> vault.Vault:
+    # only creates a vault if needed
+    vault_id: uint256 = self.vault_count[wallet]
     _vault: address = self._wallet_to_vault(wallet, vault_id, vault_impl_addr)
     if not _vault.is_contract:
+        self.vault_count[wallet] += 1
         _salt: bytes32 = keccak256(concat(convert(wallet, bytes20), convert(vault_id, bytes32)))
         _vault = create_minimal_proxy_to(vault_impl_addr, salt=_salt)
         extcall vault.Vault(_vault).initialise(wallet, payment_token)
 
-        if vault_registrar != empty(address):
-            extcall VaultRegistrar(vault_registrar).register_vault(_vault, wallet)
-
     return vault.Vault(_vault)
-
-
-@internal
-def _create_vault_if_needed(wallet: address, vault_impl_addr: address, payment_token: address, vault_registrar: address) -> vault.Vault:
-    return self._create_vault_by_id_if_needed(wallet, vault_impl_addr, payment_token, self.vault_count[wallet], vault_registrar)
-
-
-@internal
-def _create_new_vault(wallet: address, vault_impl_addr: address, payment_token: address, vault_registrar: address) -> vault.Vault:
-    # only creates a vault if needed
-    _vault: vault.Vault = self._create_vault_if_needed(wallet, vault_impl_addr, payment_token, vault_registrar)
-    self.vault_count[wallet] += 1
-    return _vault
 
 
 @view

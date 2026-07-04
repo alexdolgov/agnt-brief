@@ -33,15 +33,19 @@ abstract contract Admin {
     /// WRITE FUNCTIONS ///
 
     /// @param admin_ Address of the admin
-    constructor(address admin_) {
-        emit AdminSet(admin, admin_);
+    constructor(
+        address admin_
+    ) {
+        emit AdminSet(address(0), admin_);
         admin = admin_;
     }
 
     /// @notice Sets a new admin
-    /// @dev Can only be called by the current admin
     /// @param newAdmin Address of the new admin
-    function setAdmin(address newAdmin) external onlyAdmin {
+    /// @custom:access Restricted to protocol admin.
+    function setAdmin(
+        address newAdmin
+    ) external onlyAdmin {
         emit AdminSet(admin, newAdmin);
         admin = newAdmin;
     }

@@ -1,0 +1,26 @@
+{
+  "component": "YTokenGateway-2",
+  "main_contract": "YTokenGateway",
+  "source_file_count": 22,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x736fa66a6f4457b29e5a4b1dc78ac1b1d9cfc4df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd655200ce175700eaec0e593a41a201795906668",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

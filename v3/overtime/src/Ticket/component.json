@@ -2,7 +2,7 @@
   "component": "Ticket",
   "main_contract": "Ticket",
   "source_file_count": 13,
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -34,6 +34,22 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xdc9aa2d459cf2b2d745d1a9d903c6afe4e5e8802",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x90a9c1e13c8717539b4385aa92a33314507ec3d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4e70bce470cdd7fbd304411920a879242b638822",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

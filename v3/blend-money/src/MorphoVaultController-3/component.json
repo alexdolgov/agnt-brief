@@ -1,0 +1,18 @@
+{
+  "component": "MorphoVaultController-3",
+  "main_contract": "MorphoVaultController",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xab84362b57a83c4bcdc1de76835eb4dc9345ed50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

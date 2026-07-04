@@ -1,162 +1,100 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.4;
 
-import "./IAzuroBet.sol";
-import "./ILP.sol";
-import "./IOrder.sol";
+import "./ICoreBase.sol";
 
-interface ILiveCore is IOrder {
-    enum ConditionState {
-        CREATED,
-        RESOLVED,
-        CANCELED
+interface ILiveCore is ICoreBase {
+    struct Batch {
+        uint128[2] snapshotFunds;
+        uint64[2] oddsRounded;
+        uint128 startBlock;
+        uint64[2] batchOdds; // batch executed odds
+        uint64 startTime;
+        mapping(uint256 => mapping(uint64 => BetsAmount)) outcomeOddsBets; // outcomeIndex -> minOdds -> BetsAmount
+    }
+
+    // Affiliate rewards by MerkleTree
+    struct AffRewards {
+        bytes32 merkleRoot;
+        uint128 rewards;
+        uint128 claimed;
+        mapping(address => bool) isClaimed;
+    }
+
+    struct BetGroup {
+        uint256 conditionId;
+        uint256 batchId;
+        uint64 minOdds;
+        uint8 outcomeIndex;
     }
 
     struct Bet {
-        uint256 conditionId;
+        address bettor;
         uint128 amount;
-        uint128 payout;
-        uint128 outcomeId;
-        uint64 timestamp;
-        bool isPaid;
-        uint48 lastDepositId;
-        ComboPartOdds[] comboParts;
+        bool isClaimed;
     }
 
-    struct ComboSubBet {
+    struct BetsAmount {
+        bool rejected;
+        uint128 amount;
+    }
+
+    struct BetsPayouts {
+        uint128[2] payouts;
+        uint128[2] totalNetBets;
+    }
+
+    struct AffContributionInput {
         uint256 conditionId;
-        uint128 outcomeId;
+        uint256 batchId;
+        uint256 betId;
     }
 
-    struct TimeBet {
-        uint256 time;
-        uint256 tokenId;
+    struct LiveAffiliateParams {
+        uint256 rewardId;
+        bytes32[] merkleProof;
+        uint128 share;
     }
 
-    struct Condition {
-        TimeBet[] timeBets; // timestamps and bets
-        uint128[] payouts;
-        uint128 totalNetBets;
-        uint64 settledAt;
-        uint48 lastDepositId;
-        uint8 winningOutcomesCount;
-        ConditionState state;
-        address oracle;
-    }
-
-    struct RejectedBet {
-        uint256 conditionId;
-        uint256[] tokenIds;
-    }
-
-    struct RejectedComboBet {
-        uint256 tokenId;
-        ComboSubBet[] subBets;
-    }
-
-    struct ResolveData {
-        uint256 conditionId;
-        uint128[] winningOutcomes;
-        uint64 settledAt;
-    }
-
-    event ConditionCreated(
-        uint256 indexed gameId,
-        uint256 indexed conditionId,
-        uint128[] outcomes,
-        uint64[] odds,
-        uint8 winningOutcomesCount
+    event BatchLimitsChanged(
+        uint64 newbatchMinBlocks,
+        uint64 newbatchMaxBlocks
     );
-    event ConditionResolved(
-        uint256 indexed conditionId,
-        uint8 state,
-        uint128[] winningOutcomes,
-        int128 lpProfit,
-        uint64 settledAt
-    );
-
-    error AlreadyPaid();
-    error AlreadyRejected();
-    error BetNotExists();
-    error ConditionAlreadyResolved();
-    error ConditionNotFinished();
-    error ConditionNotRunning();
-    error CobmoBetNotResolved();
-    error ComboBetResolvedPartially();
-    error DuplicateOutcomes(uint256 outcomeId);
-    error IncorrectAmount();
-    error IncorrectOutcomesCount();
-    error IncorrectSettleDate();
-    error IncorrectSubBetsToReset();
-    error IncorrectWinningOutcomesCount();
-    error InvalidBettorSignature();
-    error InvalidChainId();
-    error InvalidOracleSignature();
-    error OnlyLp();
-    error OnlyOracle(address);
-    error PotentialLossLimit();
-    error SubBetDuplicated();
-    error SubBetConditionResolved(uint256 conditionId);
-    error WrongOutcome();
-
-    function azuroBet() external view returns (IAzuroBet);
-
-    /**
-     * @notice Indicate conditions `conditionIds` as canceled.
-     * @notice The condition creator can always cancel it regardless of granted access tokens.
-     */
-    function cancelConditions(uint256[] calldata conditionIds) external;
-
-    function getCondition(
-        uint256 conditionId
-    ) external view returns (Condition memory);
-
-    function getOutcomeIndex(
-        uint256 conditionId,
-        uint128 outcome
-    ) external view returns (uint256);
-
-    function initialize(address azuroBet, address lp) external;
-
-    function isConditionCanceled(
-        uint256 conditionId
-    ) external view returns (bool);
-
-    function isOutcomeWinning(
-        uint256 conditionId,
-        uint128 outcome
-    ) external view returns (bool);
-
-    struct SubBetData {
-        uint256 gameId;
-        uint256 conditionId;
-        ConditionKind conditionKind;
-        uint128 outcomeId;
-        uint64 odds;
-    }
 
     event NewLiveBet(
-        uint256 indexed tokenId,
         address indexed bettor,
         address indexed affiliate,
-        BetType betType,
-        uint256 nonce,
+        uint256 indexed conditionId,
+        uint256 batchId,
+        uint256 betId,
+        uint64 outcomeId,
         uint128 amount,
-        SubBetData[] betDatas, // one record for ordinary, many records for combo
-        uint128 potentialLossLimit
+        uint64 minOdds
     );
 
-    event BetRejected(uint256 indexed tokenId);
+    event BatchRejected(uint256 conditionId, uint256 batchId);
 
-    error IncorrectBetsConditionsCount();
-    error IncorrectConditionIds();
-    error IncorrectConditionId();
-    error IncorrectOutcomeId();
-    error IncorrectBetType();
-    error InvalidNonce();
-    error OddsTooSmall();
-    error SignatureExpired();
-    error IncorrectAffiliate();
-    error SmallBet();
+    event AffRewardsSet(
+        uint256 setNumber,
+        bytes32 merkleRoot,
+        uint128 rewardsToDistribute
+    );
+
+    error OnlyAffMaster();
+    error BetRejected();
+    error MinBlocksNotPassed();
+    error IncorrectBatchLimits();
+    error DisputePassed();
+    error AlreadyClaimed();
+    error InvalidProof();
+    error IncorrectRewardId();
+    error NoRewards();
+    error RewardsExceeded();
+
+    function resolveCondition(
+        uint256 conditionId,
+        uint64 outcomeWin,
+        uint64 endsAt
+    ) external;
 }

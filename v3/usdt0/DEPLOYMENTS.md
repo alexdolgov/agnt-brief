@@ -1,43 +1,87 @@
 # usdt0 — deployments
 
-308 verified deployment(s) across 169 component(s).
+380 verified deployment(s) across 178 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x10417734001162ea139e8b044dfe28dbb8b28ad0` | TransparentUpgradeableProxy-4 | proxy | live | no |
-| arbitrum | `0x38f03b4e740c0b73d857ccd0003362ee4ca036e8` | ProxyAdmin-7 | impl | live | no |
+| arbitrum | `0x10417734001162ea139e8b044dfe28dbb8b28ad0` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| arbitrum | `0x14e4a1b13bf7f943c8ff7c51fb60fa964a298d92` | OUpgradeable | proxy | live | yes |
+| arbitrum | `0x38f03b4e740c0b73d857ccd0003362ee4ca036e8` | ProxyAdmin-8 | impl | live | no |
+| arbitrum | `0x40461291347e1ecbb09499f3371d3f17f10d7159` | ProxyAdmin | proxy | live | yes |
 | arbitrum | `0x4a9196b06f339ad9f3ee752c987b401f2e1e2718` | MultiSigWallet | impl | inactive | no |
-| arbitrum | `0x54f315607a9b78120a4aa24939b700729b0e2ec9` | TransparentUpgradeableProxy-4 | impl | inactive | no |
+| arbitrum | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy | proxy | live | no |
+| arbitrum | `0x54f315607a9b78120a4aa24939b700729b0e2ec9` | TransparentUpgradeableProxy-3 | impl | inactive | no |
+| arbitrum | `0x553ec478a66be27ba25a6bc5db20aec2ed6a1b4a` | ProxyAdmin-4 | impl | live | no |
 | arbitrum | `0x759ba420bf1ded1765f18c2dc3fc57a1964a2ad1` | MultiHopComposer | impl | live | yes |
+| arbitrum | `0x77652d5aba086137b595875263fc200182919b92` | UsdtOFT-2 | impl | live | yes |
+| arbitrum | `0x85ff346f4412b6dc7f6a31ac45ebf38272bb940b` | ProxyAdmin-4 | impl | live | no |
+| arbitrum | `0x9001dbe4d68d36ab87923a2a9dfb0c745fd25001` | TetherTokenOFTExtension | impl | live | yes |
+| arbitrum | `0x934452d12b24b834877d6096ebdecbbf0e97adda` | ProxyAdmin-4 | impl | live | no |
+| arbitrum | `0xb06fba9db5be606a2b84c7230316bbb1e9cdcf03` | ProxyAdmin-4 | impl | live | no |
 | arbitrum | `0xba4eee20f434bc3908a0b18da496348657133a7e` | ArbitrumExtension | impl | live | yes |
 | arbitrum | `0xd80a8890f5b07cffcd5c939f2c63781ef4fe2642` | ArbitrumExtension | impl | live | yes |
+| arbitrum | `0xed9d63a96c27f87b07115b56b2e3572827f21646` | ProxyAdmin-4 | impl | live | no |
 | arbitrum | `0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50` | ArbitrumExtension | impl | live | yes |
-| arbitrum | `0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9` | TransparentUpgradeableProxy-7 | proxy | live | yes |
+| arbitrum | `0xf40542a7b66ad7c68c459ee3679635d2fdb6df39` | OUpgradeable | proxy | live | yes |
+| arbitrum | `0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9` | TransparentUpgradeableProxy-6 | proxy | live | yes |
+| avalanche | `0x2775d5105276781b4b85ba6ea6a6653beed1dd32` | ProxyAdmin | proxy | live | yes |
 | avalanche | `0x6d205337f45d6850c3c3006e28d5b52c8a432c35` | SignatureChecker-2 | impl | live | no |
+| avalanche | `0x7e7866bc840aff9f517a49afdbfc9e7c7aba9a68` | OUpgradeable | proxy | live | yes |
+| avalanche | `0x824d8fcdc36e81618377d140bec12c3b7e4e4cba` | ProxyAdmin | proxy | live | yes |
+| avalanche | `0xc6bc407706b7140ee8eef2f86f9504651b63e7f9` | TetherTokenOFTExtension | impl | live | yes |
+| avalanche | `0xd9492653457a69e9f4987db43d7fa0112e620cb4` | TetherTokenOFTExtension | impl | live | yes |
+| avalanche | `0xf1815bd50389c46847f0bda824ec8da914045d14` | TetherTokenOFTExtension | impl | live | yes |
+| avalanche | `0xf8b07fc6924b80e4792aca834309e03caf36cd80` | ProxyAdmin | impl | live | yes |
 | bsc | `0x01bff41798a0bcf287b996046ca68b395dbc1071` | ProxyAdmin-2 | impl | live | yes |
 | bsc | `0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3` | ProxyAdmin-2 | impl | live | yes |
 | bsc | `0x21caef8a43163eea865baee23b9c2e327696a3bf` | ProxyAdmin-2 | proxy | live | yes |
+| bsc | `0x53c3a64c8942288e12813c1f8457db45980bcfc2` | OUpgradeable | proxy | live | yes |
+| bsc | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ProxyAdmin | impl | live | yes |
 | bsc | `0x9151434b16b9763660705744891fa906f660ecc5` | ProxyAdmin-2 | impl | live | yes |
+| bsc | `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff` | OUpgradeable-2 | impl | live | yes |
+| bsc | `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc` | OUpgradeable | proxy | live | yes |
+| bsc | `0xded1660192d4d82e7c0b628ba556861edbb5cada` | OUpgradeable-2 | impl | live | yes |
 | bsc | `0xedaba024be4d87974d5ab11c6dd586963cccb027` | ProxyAdmin-2 | impl | live | yes |
 | bsc | `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9` | ProxyAdmin-2 | impl | live | yes |
 | chain-130 | `0x01bff41798a0bcf287b996046ca68b395dbc1071` | TetherTokenOFTExtension | impl | live | yes |
-| chain-130 | `0x63f2f03b44bbbd04483dbeb1b2615f6ef1116ad8` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| chain-130 | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy-4 | proxy | live | no |
+| chain-130 | `0x63f2f03b44bbbd04483dbeb1b2615f6ef1116ad8` | OUpgradeable | proxy | live | yes |
 | chain-130 | `0x818861321540148dbf6058d585cc0427f273c97a` | ProxyAdmin-3 | impl | live | no |
 | chain-130 | `0x9151434b16b9763660705744891fa906f660ecc5` | TetherTokenOFTExtension | proxy | live | yes |
 | chain-130 | `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff` | TetherTokenOFTExtension | impl | live | yes |
+| chain-130 | `0xc07be8994d035631c36fb4a89c918cefb2f03ec3` | OUpgradeable | proxy | live | yes |
 | chain-130 | `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc` | TetherTokenOFTExtension | impl | live | yes |
+| chain-130 | `0xf48e70a5149ca9a70086aec094cbf4f79dcd32e3` | OUpgradeable-3 | impl | live | no |
 | chain-1329 | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | GnosisSafeProxy | impl | live | no |
-| chain-1329 | `0x9151434b16b9763660705744891fa906f660ecc5` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| chain-1329 | `0x56fe74a2e3b484b921c447357203431a3485cc60` | ProxyAdmin-2 | proxy | live | yes |
+| chain-1329 | `0x9151434b16b9763660705744891fa906f660ecc5` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| chain-1329 | `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff` | TetherTokenOFTExtension | impl | live | yes |
 | chain-1329 | `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc` | ProxyAdmin | impl | live | yes |
+| chain-42220 | `0x811ed79db9d34e83bdb73df6c3e07961cfb0d5c0` | UsdtOFT-3 | impl | live | yes |
+| chain-42220 | `0xf10e161027410128e63e75d0200fb6d34b2db243` | UsdtOFT-2 | impl | live | yes |
+| chain-80094 | `0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3` | TransparentUpgradeableProxy-7 | impl | live | no |
+| chain-80094 | `0x3224831b5f45c616f8accba907798c6236773772` | OUpgradeable-5 | impl | live | no |
+| chain-80094 | `0x3dc96399109df5ceb2c226664a086140bd0379cb` | OUpgradeable | proxy | live | yes |
 | chain-80094 | `0x425d1d17c33bdc0615ea18d1b18cca7e14beeb58` | GnosisSafeProxy-2 | proxy | live | no |
-| chain-80094 | `0x476b0a565a8f1a9df7b520f9d4460f34b107c4df` | TransparentUpgradeableProxy-3 | proxy | live | no |
-| chain-9745 | `0x0200c29006150606b650577bbe7b6248f58470c1` | OUpgradeable | impl | live | yes |
-| chain-9745 | `0x02ca37966753bdddf11216b73b16c1de756a7cf9` | OUpgradeable | proxy | live | yes |
+| chain-80094 | `0x476b0a565a8f1a9df7b520f9d4460f34b107c4df` | OUpgradeable | proxy | live | yes |
+| chain-80094 | `0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752` | OUpgradeable | proxy | live | yes |
+| chain-80094 | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ProxyAdmin | proxy | live | yes |
+| chain-80094 | `0xdbbf435a45c63f7f4371fa782e72913726e9728c` | ProxyAdmin-3 | impl | live | no |
+| chain-80094 | `0xdfb6f25524e8233f285702cbcc5cbdb5b4718f79` | ProxyAdmin-3 | impl | live | no |
+| chain-80094 | `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9` | ProxyAdmin | impl | live | yes |
+| chain-9745 | `0x0200c29006150606b650577bbe7b6248f58470c1` | OUpgradeable-2 | impl | live | yes |
+| chain-9745 | `0x02ca37966753bdddf11216b73b16c1de756a7cf9` | OUpgradeable-2 | proxy | live | yes |
 | chain-9745 | `0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193` | ProxyAdmin | proxy | live | yes |
 | chain-9745 | `0x3224831b5f45c616f8accba907798c6236773772` | ProxyAdmin-3 | impl | live | no |
-| chain-9745 | `0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752` | OUpgradeable | impl | live | yes |
-| chain-9745 | `0x63ab93cbc9d4ecd9c4947b1a38f458147c08e6f7` | OUpgradeable | proxy | live | yes |
-| chain-9745 | `0xc00e2c0b38082c5b144aa86d0027360dc8ae65c1` | OUpgradeable | proxy | live | yes |
+| chain-9745 | `0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752` | OUpgradeable-2 | impl | live | yes |
+| chain-9745 | `0x4a5cd36c33d9f2986e5d39ff5b9918af547a6e0e` | ProxyAdmin | proxy | live | yes |
+| chain-9745 | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy-6 | proxy | live | no |
+| chain-9745 | `0x5be536efb28c8efbd2da6894996f5df88347d8b2` | ProxyAdmin-3 | impl | live | no |
+| chain-9745 | `0x63ab93cbc9d4ecd9c4947b1a38f458147c08e6f7` | OUpgradeable-2 | proxy | live | yes |
+| chain-9745 | `0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb` | ProxyAdmin | proxy | live | yes |
+| chain-9745 | `0xc00e2c0b38082c5b144aa86d0027360dc8ae65c1` | OUpgradeable-2 | proxy | live | yes |
+| chain-9745 | `0xcab8f3ed8528655e0c2fad1c504c6cfeccf50b90` | ProxyAdmin | proxy | live | yes |
+| chain-9745 | `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9` | TetherTokenOFTExtension | impl | live | yes |
 | chain-999 | `0x036afc9e3498ec863239e9e3f7eeb5af9c44484b` | HyperLiquidComposer | impl | live | yes |
 | chain-999 | `0x11ae59271ece49223126e089100ed74c1ae13083` | HyperLiquidComposer_V1 | impl | live | no |
 | chain-999 | `0x19d317814d3b77a0b087977dd07ed9f5960cabc2` | HyperLiquidComposer_V1 | impl | live | no |
@@ -46,6 +90,7 @@
 | chain-999 | `0x3ce8426dc0b90a36f0e20d7c2acaaf4578ad4e50` | EQBOFT | impl | live | no |
 | chain-999 | `0x40838078a2e39e5a90b2439ff081177b1d32bfd5` | HyperLiquidComposer_V1 | impl | live | no |
 | chain-999 | `0x4bb13347ce7cbf8884adb137aeda0355ef61b259` | HyperliquidExtension | impl | live | yes |
+| chain-999 | `0x4e41cfc3f3b19e29e323d2c36f8f202a1e151daf` | OUpgradeable | proxy | live | yes |
 | chain-999 | `0x5bddd9947263bf3bdf5cf96ebab84f626d2dc486` | HyperLiquidComposer_V1 | impl | live | no |
 | chain-999 | `0x5bfee52f5b0272184125993d41873be9d46dc280` | HyperLiquidComposer_V1 | impl | live | no |
 | chain-999 | `0x62855e31a32145de8abf1a537c3ed88d12b82b58` | HyperLiquidComposer_V1 | impl | live | no |
@@ -55,17 +100,25 @@
 | chain-999 | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ProxyAdmin | impl | live | yes |
 | chain-999 | `0x7a32202edec16a34e9996f2064acc39a90eb05a0` | HyperLiquidComposer_V1_FeeToken | impl | live | no |
 | chain-999 | `0x80123ab57c9bc0c452d6c18f92a653a4ee2e7585` | HyperLiquidComposer_V1_FeeToken | impl | live | no |
+| chain-999 | `0x880f614c729c622c727f3625b263a36c0b89167f` | ProxyAdmin-2 | impl | live | yes |
+| chain-999 | `0x904861a24f30ec96ea7cfc3be9ea4b476d237e98` | OUpgradeable | proxy | live | yes |
 | chain-999 | `0xa1819918ba910d05c4332be09b43f1bc894a62eb` | HyperLiquidComposer_V1_FeeToken | impl | live | no |
-| chain-999 | `0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa` | OUpgradeable-2 | impl | live | no |
+| chain-999 | `0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa` | OUpgradeable-4 | impl | live | no |
 | chain-999 | `0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf` | ProxyAdmin | proxy | live | yes |
 | chain-999 | `0xb120daaf44b9270375ac2a96cc6fca9603a8123a` | HyperLiquidComposer_V1_FeeToken | impl | live | no |
+| chain-999 | `0xb1eead6959cb5bb9b20417d6689922523b2b86c3` | ProxyAdmin | impl | live | yes |
 | chain-999 | `0xb4484a64ad7dccb4e8cc89e84fe02140e42cefd1` | EQBOFT | impl | live | no |
-| chain-999 | `0xb64a89ad247a2d691a728bb6822a85eedd7fc541` | SafeProxy-3 | impl | live | no |
+| chain-999 | `0xb64a89ad247a2d691a728bb6822a85eedd7fc541` | SafeProxy | impl | live | no |
 | chain-999 | `0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb` | ProxyAdmin | proxy | live | yes |
 | chain-999 | `0xc1c74bcf1bee765248816a2d93dd0d84648d4ffe` | HyperLiquidComposer_V1 | impl | live | no |
 | chain-999 | `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc` | HyperLiquidComposer | impl | live | yes |
+| chain-999 | `0xcd9a74e5fe451025e92b5b8f74117c6e275aa7c8` | OUpgradeable | proxy | live | yes |
+| chain-999 | `0xd8cf92e9b6fae6b32f795acb11edd50e8dd6ff4d` | ProxyAdmin-2 | impl | live | yes |
+| chain-999 | `0xd9492653457a69e9f4987db43d7fa0112e620cb4` | ProxyAdmin | proxy | live | yes |
 | chain-999 | `0xd9b7a23ba2ff80f2d61f96682a0f71220f3e04a6` | HyperLiquidComposer_V1 | impl | live | no |
+| chain-999 | `0xe1ad845d93853fff44990ae0dcecd8575293681e` | TetherTokenOFTExtension | impl | live | yes |
 | chain-999 | `0xe5aa9a77950929fbcc70650fa24299e35399d921` | HyperLiquidComposer_V1 | impl | live | no |
+| chain-999 | `0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7` | TetherTokenOFTExtension | impl | live | yes |
 | chain-999 | `0xf4d9235269a96aadafc9adae454a0618ebe37949` | HyperliquidExtension | proxy | live | yes |
 | chain-999 | `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9` | HyperliquidExtension | impl | live | yes |
 | chain-999 | `0xfa5c61c57dc478d5f3ddcc5185cb118414c5e756` | HyperLiquidComposer_V1 | impl | live | no |
@@ -109,7 +162,7 @@
 | ethereum | `0x4c0d2c74a8d26f1e4f5653021c521f5471f9e566` | TetherToken-2 | impl | live | no |
 | ethereum | `0x4ca751c90c66468c88075bedde5e92e0b902b506` | RevokableVester-6 | impl | inactive | no |
 | ethereum | `0x4d05fa79f65b57778ef782d426ad2618e3903d84` | RevokableVester-7 | impl | inactive | no |
-| ethereum | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy | proxy | live | no |
+| ethereum | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy-2 | proxy | live | no |
 | ethereum | `0x4e1adfd70cb9fbbe78e3a0d7f3d995cdc31abe02` | SupporterVester-12 | impl | inactive | no |
 | ethereum | `0x4f113098d798e7444255c0d0be7c64a1508fd0ba` | SupporterVester-13 | impl | inactive | no |
 | ethereum | `0x519639a31ace9bf7f9c2646531ec0fb4be9a063a` | OmniCounter | impl | live | no |
@@ -151,15 +204,16 @@
 | ethereum | `0x7de1f04204ef29229d84e7c0c2d1216c28645a15` | DVFInterface4 | impl | inactive | no |
 | ethereum | `0x811ed79db9d34e83bdb73df6c3e07961cfb0d5c0` | UsdtOFT | impl | live | yes |
 | ethereum | `0x839fd7873702c2cc238dc87338ff3cbf4ee33d66` | SupporterVester-26 | impl | inactive | no |
-| ethereum | `0x856fcc085290ac1e40392442211e6a333afb873e` | ProxyAdmin-4 | impl | live | no |
+| ethereum | `0x856fcc085290ac1e40392442211e6a333afb873e` | ProxyAdmin-5 | impl | live | no |
 | ethereum | `0x880f614c729c622c727f3625b263a36c0b89167f` | WOFTAdapterFactory | impl | inactive | no |
 | ethereum | `0x8aa593464d906512372ddb2a5719f2ecbec49a56` | SupporterVester-27 | impl | inactive | no |
 | ethereum | `0x8ac3728262d96a2d007910f212d11ebab58c90ef` | wstETHOFTAdapterUpgradeable | proxy | live | no |
 | ethereum | `0x8ad82b29261a9657a89a299dac3bfe01880778d4` | ProxyAdmin | impl | live | yes |
 | ethereum | `0x93a70c645c70307ca47bad645706c9d9aa429cf2` | SupporterVester-28 | impl | inactive | no |
-| ethereum | `0x93d070772066c977d605d69b602d316adafc25e3` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| ethereum | `0x93d070772066c977d605d69b602d316adafc25e3` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0x943ed40709dfd0c30f25c458c54fcbb3b01ca66e` | ProxyAdmin | impl | live | yes |
 | ethereum | `0x94dc1141a5163b369f8a3aa9f4e50a2e5ece921a` | TokenVesting-15 | impl | inactive | no |
-| ethereum | `0x963c3c9bd821bb435822e7a17db32bd323a8eaa0` | ProxyAdmin-5 | impl | live | no |
+| ethereum | `0x963c3c9bd821bb435822e7a17db32bd323a8eaa0` | ProxyAdmin-6 | impl | live | no |
 | ethereum | `0x9977936a421f9b06c81afc0ccf1988b92decb31f` | SupporterVester-29 | impl | inactive | no |
 | ethereum | `0x9a45dc843f95414eb468f976e5dadf9377dfa838` | RevokableVester-12 | impl | inactive | no |
 | ethereum | `0x9b1ab202831417076e4d8a4e1650b8bc4eecd0c0` | SupporterVester-30 | impl | inactive | no |
@@ -185,7 +239,7 @@
 | ethereum | `0xb9a5d8f774f6c3085e0cdd2e028b3dff0c848e96` | RevokableVester-16 | impl | inactive | no |
 | ethereum | `0xb9c2321bb7d0db468f570d10a424d1cc8efd696c` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xb9fe6b5d872f2efe7f2472a6a0ea18cb1088a676` | RevokableVester-17 | impl | inactive | no |
-| ethereum | `0xba4eee20f434bc3908a0b18da496348657133a7e` | ProxyAdmin-6 | impl | live | no |
+| ethereum | `0xba4eee20f434bc3908a0b18da496348657133a7e` | ProxyAdmin-7 | impl | live | no |
 | ethereum | `0xbab93b7ad7fe8692a878b95a8e689423437cc500` | WOFTAdapterFactory | impl | inactive | no |
 | ethereum | `0xbb0d083fb1be0a9f6157ec484b6c79e0a4e31c2e` | WOFTAdapterFactory | impl | inactive | no |
 | ethereum | `0xbc619735fdf48bba5e2bb403e42a5d457db684d5` | DVFInterface2 | impl | inactive | no |
@@ -195,8 +249,10 @@
 | ethereum | `0xbe574b6219c6d985d08712e90c21a88fd55f1ae8` | ERC20Mock | impl | inactive | yes |
 | ethereum | `0xc2391b7307c783d3c8c93de55c6ea3f7e94f075c` | SupporterVester-38 | impl | inactive | no |
 | ethereum | `0xc6441cb2d7620c92b636be864c35da068f73d157` | SupporterVester-39 | impl | inactive | no |
+| ethereum | `0xc958012809a696ad2d2d2a78e756b610dc726782` | ProxyAdmin | impl | live | yes |
 | ethereum | `0xcc3eb61737b3161438ab859d1d0dd1a1138c30ab` | SupporterVester-40 | impl | inactive | no |
 | ethereum | `0xcfffbd937a2b03808a5582b550e9f8f151a463ab` | SupporterVester-41 | impl | inactive | no |
+| ethereum | `0xd04a69ad7afcbd87a2e12bc2d3aad63d6486ec39` | ProxyAdmin | impl | live | yes |
 | ethereum | `0xd131ef0fc4ae1af2e1ca3641a8e542731e3b36b4` | TetherToken-3 | impl | live | no |
 | ethereum | `0xd17c11618c6d39d55ee7a74f8ce0bd2bc8b91c5e` | TetherToken-4 | impl | live | no |
 | ethereum | `0xd3518f4bcb9f6845424255820ca3e09a0f43b578` | TokenVesting-19 | impl | inactive | no |
@@ -233,10 +289,18 @@
 | ethereum | `0xfd48c0263de3691e524b5001db8f1c6e82659751` | TokenVesting-23 | impl | inactive | no |
 | ethereum | `0xfe146a5522a74384c5f3e528dbeea558c7b4a337` | wstETHOFTAdapterUpgradeable | proxy | live | no |
 | ethereum | `0xfe634e21014674e090c7e2b7acdd3f05456e001f` | wstETHOFTAdapterUpgradeable | proxy | live | no |
+| mantle | `0x01bff41798a0bcf287b996046ca68b395dbc1071` | ProxyAdmin-2 | impl | live | yes |
+| mantle | `0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3` | TetherTokenOFTExtension | impl | live | yes |
+| mantle | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy-5 | proxy | live | no |
+| mantle | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ProxyAdmin | proxy | live | yes |
+| mantle | `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff` | OUpgradeable-2 | impl | live | yes |
+| mantle | `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc` | OUpgradeable | proxy | live | yes |
+| mantle | `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9` | ProxyAdmin | impl | live | yes |
 | optimism | `0x01bff41798a0bcf287b996046ca68b395dbc1071` | TransparentUpgradeableProxy-2 | proxy | live | no |
-| optimism | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy-2 | proxy | live | no |
+| optimism | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy-3 | proxy | live | no |
 | optimism | `0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb` | TransparentUpgradeableProxy-2 | impl | live | no |
 | optimism | `0xe7cd86e13ac4309349f30b3435a9d337750fc82d` | ProxyAdmin | impl | live | yes |
+| optimism | `0xf03b4d9ac1d5d1e7c4cef54c2a313b9fe051a0ad` | OUpgradeable | proxy | live | yes |
 | polygon | `0x02daefc2e8aad089d094579499508398e3057966` | UChildERC20Proxy | impl | inactive | no |
 | polygon | `0x0735a62b0b6e837fa67130589988436fd26f0e12` | UChildERC20 | impl | live | no |
 | polygon | `0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f` | EIP712Base | impl | live | no |
@@ -254,8 +318,10 @@
 | polygon | `0x46ca157573005281774be9be9a4187cce4ec1871` | EIP712Base | impl | live | no |
 | polygon | `0x490e379c9cff64944be82b849f8fd5972c7999a7` | UChildDAI | impl | live | no |
 | polygon | `0x4a8766156f3614731614bb4573a3bd245de1f2b9` | EIP712Base | impl | live | no |
+| polygon | `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8` | SafeProxy | proxy | live | no |
 | polygon | `0x4e5612d10ccbe6a029b8e5258f1a191eea1f6db6` | EIP712Base | impl | live | no |
 | polygon | `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39` | EIP712Base | impl | live | no |
+| polygon | `0x5421cf4288d8007d3c43ac4246eafce5b049e352` | OUpgradeable | proxy | live | yes |
 | polygon | `0x556f501cf8a43216df5bc9cc57eb04d4ffaa9e6d` | EIP712Base | impl | live | no |
 | polygon | `0x55ffbee7323cc4647e294f5f1e72a3cc978da5db` | UChildERC20 | impl | live | no |
 | polygon | `0x578360adf0bbb2f10ec9cec7ef89ef495511ed5f` | EIP712Base | impl | live | no |
@@ -263,8 +329,10 @@
 | polygon | `0x5adf17a97ef5db18ad4cfc4b3f05128b922e0a58` | UChildERC20Proxy | impl | inactive | no |
 | polygon | `0x5e81f3c3a52aa0233b3b2546a2f55ebfe90f1299` | UChildERC20 | impl | live | no |
 | polygon | `0x5fab5764f263c5ce93424f8c45e46a742cc5c8d6` | EIP712Base | impl | live | no |
+| polygon | `0x6ba10300f0dc58b7a1e4c0e41f5dabb7d7829e13` | OUpgradeable | proxy | live | yes |
 | polygon | `0x6bd27b07e954d698988d5a52336e7c313e58ea99` | UChildERC20Proxy | impl | inactive | no |
 | polygon | `0x6bfb5bfa7753ba1ce0f60017a16d8dd67aa19243` | EIP712Base | impl | live | no |
+| polygon | `0x6d205337f45d6850c3c3006e28d5b52c8a432c35` | TetherTokenOFTExtension | impl | live | yes |
 | polygon | `0x6ebeac13f6403d19c95b6b75008b12fd21a93aab` | EIP712Base-2 | impl | inactive | no |
 | polygon | `0x71b821aa52a49f32eed535fca6eb5aa130085978` | EIP712Base | impl | live | no |
 | polygon | `0x74076b0e5e0ca5fa54d91344ff1193c1b186d977` | UChildERC20 | proxy | inactive | no |
@@ -289,6 +357,7 @@
 | polygon | `0xa5b0efb02ba421422b4858870350bb5ea94a1f8f` | UChildERC20 | impl | live | no |
 | polygon | `0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa` | UpgradableProxy-2 | proxy | live | no |
 | polygon | `0xadc0c4a3d39bb1107bfe86099dd855360e69ea73` | EIP712Base | impl | live | no |
+| polygon | `0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf` | TetherTokenOFTExtension | impl | live | yes |
 | polygon | `0xafeea1de9d660d3cb53031cfe1a58de40b171ce8` | ChildChainManagerProxy | impl | inactive | no |
 | polygon | `0xb2223ab7be81d16b98e0d1f29afc474c93fe24d8` | UChildERC20 | impl | live | no |
 | polygon | `0xb33eaad8d922b1083446dc23f610c2567fb5180f` | UChildERC20 | proxy | inactive | no |
@@ -302,90 +371,21 @@
 | polygon | `0xcf46c5bf01deae14a272f89a7b6c9e96a48f5546` | UChildERC20Proxy | impl | inactive | no |
 | polygon | `0xd4888fab8bd39a663b63161f5ee1eae31a25b653` | ChildMintableERC721 | impl | inactive | no |
 | polygon | `0xd77cf268f77a9876d7d40f51e72347be9aab16cb` | UChildERC20 | impl | live | no |
+| polygon | `0xd9492653457a69e9f4987db43d7fa0112e620cb4` | ProxyAdmin | impl | live | yes |
 | polygon | `0xda537104d6a5edd53c6fbba9a898708e465260b6` | UChildERC20 | proxy | inactive | no |
 | polygon | `0xdab529f40e671a1d4bf91361c21bf9f0c9712ab7` | UChildERC20 | proxy | inactive | no |
 | polygon | `0xdd9185db084f5c4fff3b4f70e7ba62123b812226` | UChildERC20Proxy-2 | impl | live | no |
+| polygon | `0xe1ad845d93853fff44990ae0dcecd8575293681e` | TetherTokenOFTExtension | impl | live | yes |
 | polygon | `0xe47efb7f49bd4402e0f227df14f1632a49c4f718` | UChildERC20 | impl | live | no |
 | polygon | `0xe6fc6c7cb6d2c31b359a49a33ef08ab87f4de7ce` | UChildERC20 | proxy | inactive | no |
 | polygon | `0xea0d6554bcf40fbce93138266e4de324df685586` | UChildERC20 | impl | live | no |
 | polygon | `0xeffdcb49c2d0ef813764b709ca3c6fe71f230e3e` | EIP712Base | impl | live | no |
+| polygon | `0xf1815bd50389c46847f0bda824ec8da914045d14` | ProxyAdmin | proxy | live | yes |
 | polygon | `0xf2f3bd7ca5746c5fac518f67d1be87805a2be82a` | EIP712Base | impl | live | no |
 | polygon | `0xf316a6cf68ed69c9b7ad9dc6d83ad974df676ed9` | UChildERC20Proxy | impl | inactive | no |
 | polygon | `0xfdf922e54b3586964688536b1b81bfce13b39c4c` | UChildERC20Proxy | impl | inactive | no |
 
-## Source unavailable (73)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x14e4a1b13bf7f943c8ff7c51fb60fa964a298d92`
-- arbitrum `0x40461291347e1ecbb09499f3371d3f17f10d7159`
-- arbitrum `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8`
-- arbitrum `0x553ec478a66be27ba25a6bc5db20aec2ed6a1b4a`
-- arbitrum `0x77652d5aba086137b595875263fc200182919b92`
-- arbitrum `0x85ff346f4412b6dc7f6a31ac45ebf38272bb940b`
-- arbitrum `0x9001dbe4d68d36ab87923a2a9dfb0c745fd25001`
-- arbitrum `0x934452d12b24b834877d6096ebdecbbf0e97adda`
-- arbitrum `0xb06fba9db5be606a2b84c7230316bbb1e9cdcf03`
 - arbitrum `0xd9492653457a69e9f4987db43d7fa0112e620cb4`
-- arbitrum `0xed9d63a96c27f87b07115b56b2e3572827f21646`
-- arbitrum `0xf40542a7b66ad7c68c459ee3679635d2fdb6df39`
-- avalanche `0x2775d5105276781b4b85ba6ea6a6653beed1dd32`
-- avalanche `0x7e7866bc840aff9f517a49afdbfc9e7c7aba9a68`
-- avalanche `0x824d8fcdc36e81618377d140bec12c3b7e4e4cba`
-- avalanche `0xc6bc407706b7140ee8eef2f86f9504651b63e7f9`
-- avalanche `0xd9492653457a69e9f4987db43d7fa0112e620cb4`
-- avalanche `0xf1815bd50389c46847f0bda824ec8da914045d14`
-- avalanche `0xf8b07fc6924b80e4792aca834309e03caf36cd80`
-- bsc `0x53c3a64c8942288e12813c1f8457db45980bcfc2`
-- bsc `0x779ded0c9e1022225f8e0630b35a9b54be713736`
-- bsc `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff`
-- bsc `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc`
-- bsc `0xded1660192d4d82e7c0b628ba556861edbb5cada`
-- chain-130 `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8`
-- chain-130 `0xc07be8994d035631c36fb4a89c918cefb2f03ec3`
-- chain-130 `0xf48e70a5149ca9a70086aec094cbf4f79dcd32e3`
-- chain-1329 `0x56fe74a2e3b484b921c447357203431a3485cc60`
-- chain-1329 `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff`
-- chain-42220 `0x811ed79db9d34e83bdb73df6c3e07961cfb0d5c0`
-- chain-42220 `0xf10e161027410128e63e75d0200fb6d34b2db243`
-- chain-80094 `0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3`
-- chain-80094 `0x3224831b5f45c616f8accba907798c6236773772`
-- chain-80094 `0x3dc96399109df5ceb2c226664a086140bd0379cb`
-- chain-80094 `0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752`
-- chain-80094 `0x779ded0c9e1022225f8e0630b35a9b54be713736`
-- chain-80094 `0xdbbf435a45c63f7f4371fa782e72913726e9728c`
-- chain-80094 `0xdfb6f25524e8233f285702cbcc5cbdb5b4718f79`
-- chain-80094 `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9`
-- chain-9745 `0x4a5cd36c33d9f2986e5d39ff5b9918af547a6e0e`
-- chain-9745 `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8`
-- chain-9745 `0x5be536efb28c8efbd2da6894996f5df88347d8b2`
-- chain-9745 `0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb`
-- chain-9745 `0xcab8f3ed8528655e0c2fad1c504c6cfeccf50b90`
-- chain-9745 `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9`
-- chain-999 `0x4e41cfc3f3b19e29e323d2c36f8f202a1e151daf`
-- chain-999 `0x880f614c729c622c727f3625b263a36c0b89167f`
-- chain-999 `0x904861a24f30ec96ea7cfc3be9ea4b476d237e98`
-- chain-999 `0xb1eead6959cb5bb9b20417d6689922523b2b86c3`
-- chain-999 `0xcd9a74e5fe451025e92b5b8f74117c6e275aa7c8`
-- chain-999 `0xd8cf92e9b6fae6b32f795acb11edd50e8dd6ff4d`
-- chain-999 `0xd9492653457a69e9f4987db43d7fa0112e620cb4`
-- chain-999 `0xe1ad845d93853fff44990ae0dcecd8575293681e`
-- chain-999 `0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7`
-- ethereum `0x943ed40709dfd0c30f25c458c54fcbb3b01ca66e`
-- ethereum `0xc958012809a696ad2d2d2a78e756b610dc726782`
-- ethereum `0xd04a69ad7afcbd87a2e12bc2d3aad63d6486ec39`
-- mantle `0x01bff41798a0bcf287b996046ca68b395dbc1071`
-- mantle `0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3`
-- mantle `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8`
-- mantle `0x779ded0c9e1022225f8e0630b35a9b54be713736`
-- mantle `0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff`
-- mantle `0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc`
-- mantle `0xf555a12bffaef20cc201a74ae6513cb4aadb34b9`
-- optimism `0xf03b4d9ac1d5d1e7c4cef54c2a313b9fe051a0ad`
-- polygon `0x4dff9b5b0143e642a3f63a5bcf2d1c328e600bf8`
-- polygon `0x5421cf4288d8007d3c43ac4246eafce5b049e352`
-- polygon `0x6ba10300f0dc58b7a1e4c0e41f5dabb7d7829e13`
-- polygon `0x6d205337f45d6850c3c3006e28d5b52c8a432c35`
-- polygon `0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf`
-- polygon `0xd9492653457a69e9f4987db43d7fa0112e620cb4`
-- polygon `0xe1ad845d93853fff44990ae0dcecd8575293681e`
-- polygon `0xf1815bd50389c46847f0bda824ec8da914045d14`

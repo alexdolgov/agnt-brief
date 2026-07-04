@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.28;
 
 import "./Swap/MesonSwap.sol";
 import "./Pools/MesonPools.sol";
@@ -59,6 +59,11 @@ contract MesonManager is MesonSwap, MesonPools {
     _balanceOfPoolToken[_poolTokenIndexFrom(tokenIndex, toPoolIndex)] += amount;
   }
 
+  function adjustToPool(uint8 tokenIndex, uint256 amount, uint40 toPoolIndex) external onlyOwner {
+    require(ownerOfPool[toPoolIndex] != address(0), "Pool index not registered");
+    _balanceOfPoolToken[_poolTokenIndexFrom(tokenIndex, toPoolIndex)] += amount;
+  }
+
   modifier onlyOwner() {
     require(_owner == _msgSender(), "Caller is not the owner");
     _;
@@ -71,7 +76,7 @@ contract MesonManager is MesonSwap, MesonPools {
     emit OwnerTransferred(prevOwner, newOwner);
   }
 
-  function _isPremiumManager() internal view override(MesonSwap, MesonPools) returns (bool) {
+  function _isPremiumManager() internal view override returns (bool) {
     return _premiumManager == _msgSender();
   }
 

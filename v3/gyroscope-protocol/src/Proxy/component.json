@@ -2,7 +2,7 @@
   "component": "Proxy",
   "main_contract": "Proxy",
   "source_file_count": 7,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0264_GYRO_SGYD.pdf"
@@ -14,6 +14,14 @@
       "address": "0xea50f402653c41cadbafd1f788341db7b7f37816",
       "is_proxy": true,
       "implementation_address": "0xceccf016083a0c943d572346193c549dac592511",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xea50f402653c41cadbafd1f788341db7b7f37816",
+      "is_proxy": true,
+      "implementation_address": "0x6528025a03842c58d7ffd5e571f877c971be3f96",
       "liveness": "live"
     }
   ]

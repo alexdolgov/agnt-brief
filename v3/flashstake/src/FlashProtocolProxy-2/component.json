@@ -1,0 +1,18 @@
+{
+  "component": "FlashProtocolProxy-2",
+  "main_contract": "FlashProtocolProxy",
+  "source_file_count": 14,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8ef21e9bfe8f40eddd9bf7828707da47d5536c4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

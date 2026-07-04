@@ -11,10 +11,12 @@ import {IUniswapV3Pool} from "v3-core/interfaces/IUniswapV3Pool.sol";
 import {SirStructs} from "core/libraries/SirStructs.sol";
 import {SystemConstants} from "core/libraries/SystemConstants.sol";
 import {FullMath} from "core/libraries/FullMath.sol";
-import {IERC20} from "core/interfaces/IWETH9.sol";
+import {IWETH9, IERC20} from "core/interfaces/IWETH9.sol";
 import {UniswapPoolAddress} from "core/libraries/UniswapPoolAddress.sol";
 import {AddressClone} from "core/libraries/AddressClone.sol";
 import {TickMath} from "v3-core/libraries/TickMath.sol";
+
+import "forge-std/console.sol";
 
 /**
  * @notice Helper functions for SIR protocol
@@ -42,9 +44,9 @@ contract Assistant {
         SIR_ORACLE = IOracle(oracle);
         UNISWAPV3_FACTORY = uniswapV3Factory;
 
-        if (block.chainid == 999) UNISWAPV3_QUOTER = IQuoter(0xe57Aff86A500849F66BaA948C6C69c2A5E9951dF);
-        else if (block.chainid == 998) UNISWAPV3_QUOTER = IQuoter(0x7F3856d63E74516EF142A51c7445fBBc373fed5a);
-        else revert("Network not supported. Use chain 998 (testnet) or 999 (mainnet)");
+        if (block.chainid == 1) UNISWAPV3_QUOTER = IQuoter(0x5e55C9e631FAE526cd4B0526C4818D6e0a9eF0e3);
+        else if (block.chainid == 11155111) UNISWAPV3_QUOTER = IQuoter(0xe3c07ebF66b9D070b589bCCa30903891F71A92Be);
+        else revert("Network not supported");
     }
 
     /**
@@ -505,18 +507,14 @@ contract Assistant {
         SirStructs.VaultParameters calldata vaultParams,
         uint24 feeTier
     ) private view returns (bool) {
-        address poolAddress = UniswapPoolAddress.computeAddress(
-            UNISWAPV3_FACTORY,
-            UniswapPoolAddress.getPoolKey(vaultParams.collateralToken, vaultParams.debtToken, feeTier)
-        );
-
-        // Check if pool exists
-        if (poolAddress.code.length == 0) {
-            return false;
-        }
-
-        // Check if pool has liquidity
-        return IUniswapV3Pool(poolAddress).liquidity() > 0;
+        return
+            UniswapPoolAddress
+                .computeAddress(
+                    UNISWAPV3_FACTORY,
+                    UniswapPoolAddress.getPoolKey(vaultParams.collateralToken, vaultParams.debtToken, feeTier)
+                )
+                .code
+                .length != 0;
     }
 
     function _amountFirstMint(address collateral, uint144 collateralDeposited) private view returns (uint256 amount) {

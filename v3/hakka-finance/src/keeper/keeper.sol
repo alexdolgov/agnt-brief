@@ -1,8 +1,4 @@
-/**
- *Submitted for verification at polygonscan.com on 2022-12-06
-*/
-
-pragma solidity 0.8.17;
+pragma solidity 0.8.7;
 
 // SPDX-License-Identifier: MIT
 
@@ -13,52 +9,6 @@ interface IHakkaIntelligence {
     function periodStop() external view returns (uint256);
     function periodStart() external view returns (uint256);
     function proceed() external;
-}
-
-contract HakkaIntelligenceMock {
-    uint256 internal ro;
-    uint256 internal rc;
-    uint256 internal pst;
-    uint256 internal psp;
-    uint256 internal flag;
-    mapping(address => bool) public revealed;
-
-    constructor() {
-        pst = block.timestamp + 60;
-        psp = block.timestamp + 120;
-        flag = 1;
-    }
-
-    function reveal(address _player) external returns (uint256 score) {
-        require(block.timestamp > ro && block.timestamp < rc);
-        require(!revealed[_player]);
-        revealed[_player] = true;
-        return 1;
-    }
-    function proceed() external {
-        if(flag == 1) {
-            require(block.timestamp > pst);
-            flag = 2;
-        }
-        else if(flag == 2){
-            require(block.timestamp > psp);
-            ro = block.timestamp + 300;
-            rc = block.timestamp + 1800;
-            flag = 3;
-        }
-    }
-    function periodStart() external view returns (uint256) {
-        return pst;
-    }
-    function periodStop() external view returns (uint256) {
-        return psp;
-    }
-    function revealOpen() external view returns (uint256) {
-        return ro;
-    }
-    function revealClose() external view returns (uint256) {
-        return rc;
-    }
 }
 
 contract keeper {

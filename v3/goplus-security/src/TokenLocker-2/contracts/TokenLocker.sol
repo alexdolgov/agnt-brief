@@ -55,6 +55,7 @@ contract TokenLocker is ITokenLocker, SafeUniswapCall, Ownable, ReentrancyGuard 
     constructor(address feeReceiver_) Ownable(_msgSender()) {
         feeReceiver = feeReceiver_;
         addOrUpdateFee("TOKEN", 0, 12 * 10 ** 16, address(0), false);
+        addOrUpdateFee("LP_DEFAULT", 0, 12 * 10 ** 16, address(0), true);
         addOrUpdateFee("LP_ONLY", 50, 0, address(0), true);
         addOrUpdateFee("LP_AND_ETH", 25, 6 * 10 ** 16, address(0), true);
     }

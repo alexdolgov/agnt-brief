@@ -1,12 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "./base/SickleStorage.sol";
-import "./base/Multicall.sol";
+import { SickleStorage } from "contracts/base/SickleStorage.sol";
+import { Multicall } from "contracts/base/Multicall.sol";
+import { SickleRegistry } from "contracts/SickleRegistry.sol";
 
 /// @title Sickle contract
 /// @author vfat.tools
-/// @notice Sickle facilitates farming and interactions with MasterChef
+/// @notice Sickle facilitates farming and interactions with Masterchef
 /// contracts
 /// @dev Base contract inheriting from all the other "manager" contracts
 contract Sickle is SickleStorage, Multicall {
@@ -14,11 +15,10 @@ contract Sickle is SickleStorage, Multicall {
     receive() external payable { }
 
     /// @param sickleRegistry_ Address of the SickleRegistry contract
-    constructor(SickleRegistry sickleRegistry_)
-        initializer
-        Multicall(sickleRegistry_)
-    {
-        _Sickle_initialize(address(0), address(0));
+    constructor(
+        SickleRegistry sickleRegistry_
+    ) Multicall(sickleRegistry_) {
+        _disableInitializers();
     }
 
     /// @param sickleOwner_ Address of the Sickle owner
@@ -26,17 +26,10 @@ contract Sickle is SickleStorage, Multicall {
         address sickleOwner_,
         address approved_
     ) external initializer {
-        _Sickle_initialize(sickleOwner_, approved_);
+        SickleStorage._initializeSickleStorage(sickleOwner_, approved_);
     }
 
     /// INTERNALS ///
-
-    function _Sickle_initialize(
-        address sickleOwner_,
-        address approved_
-    ) internal {
-        SickleStorage._SickleStorage_initialize(sickleOwner_, approved_);
-    }
 
     function onERC721Received(
         address, // operator

@@ -1,40 +1,45 @@
 # boringdao — deployments
 
-325 verified deployment(s) across 184 component(s).
+376 verified deployment(s) across 215 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x096760f208390250649e3e8763348e783aef5562` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x09e9222e96e7b4ae2a407b98d48e330053351eee` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x2e220e3ab85fc4a46f770a34ef2cddc8074e4689` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f` | BeaconProxyFactory | proxy | live | no |
 | arbitrum | `0x5288c571fd7ad117bea99bf60fe0846c4e84f933` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x6c411ad3e74de3e7bd422b94a27770f5b86c623b` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0x842ec2c7d803033edf55e478f461fc547bc54eb2` | Multicall2-2 | impl | live | no |
 | arbitrum | `0x8fbd420956fdd301f4493500fd0bcaaa80f2389c` | AmyFinanceToken | impl | live | no |
+| arbitrum | `0x9d8bdaa1dde16da55c86ccaf12c81647ff9858b8` | ERC1967Proxy | proxy | live | no |
 | arbitrum | `0xae6aab43c4f3e0cea4ab83752c278f8debaba689` | BeaconProxy | proxy | live | no |
 | arbitrum | `0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333` | BeaconProxyFactory | proxy | live | no |
 | arbitrum | `0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0xff970a61a04b1ca14834a43f5de4533ebddb5cc8` | Proxy-2 | proxy | live | no |
+| avalanche | `0x12f3a5af0a82af48af89fa5bacf6307e1b226903` | ERC1967Proxy-2 | proxy | live | no |
 | avalanche | `0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98` | BridgeToken | impl | live | no |
-| avalanche | `0x37b608519f91f70f2eeb0e5ed9af4061722e4f76` | BridgeToken | impl | live | no |
-| avalanche | `0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339` | BridgeToken | impl | live | no |
-| avalanche | `0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab` | BridgeToken | impl | live | no |
-| avalanche | `0x50b7545627a5162f82a992c33b87adc75187b218` | BridgeToken | impl | live | no |
-| avalanche | `0x5947bb275c521040051d82396192181b413227a3` | BridgeToken | impl | live | no |
-| avalanche | `0x596fa47043f99a4e0f122243b841e55375cde0d2` | BridgeToken | impl | live | no |
-| avalanche | `0x63a72806098bd3d9520cc43356dd78afe5d386d9` | BridgeToken | impl | live | no |
-| avalanche | `0x88128fd4b259552a9a1d457f435a6527aab72d42` | BridgeToken | impl | live | no |
-| avalanche | `0x8a0cac13c7da965a312f08ea4229c37869e85cb9` | BridgeToken | impl | live | no |
-| avalanche | `0x8ebaf22b6f053dffeaf46f4dd9efa95d89ba8580` | BridgeToken | impl | live | no |
-| avalanche | `0x98443b96ea4b0858fdf3219cd13e98c7a4690588` | BridgeToken | impl | live | no |
-| avalanche | `0x9eaac1b23d935365bd7b542fe22ceee2922f52dc` | BridgeToken | impl | live | no |
+| avalanche | `0x2e220e3ab85fc4a46f770a34ef2cddc8074e4689` | ERC1967Proxy-2 | proxy | live | no |
+| avalanche | `0x37b608519f91f70f2eeb0e5ed9af4061722e4f76` | BridgeToken-2 | impl | live | no |
+| avalanche | `0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339` | BridgeToken-3 | impl | live | no |
+| avalanche | `0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab` | BridgeToken-4 | impl | live | no |
+| avalanche | `0x50b7545627a5162f82a992c33b87adc75187b218` | BridgeToken-5 | impl | live | no |
+| avalanche | `0x5947bb275c521040051d82396192181b413227a3` | BridgeToken-6 | impl | live | no |
+| avalanche | `0x596fa47043f99a4e0f122243b841e55375cde0d2` | BridgeToken-7 | impl | live | no |
+| avalanche | `0x63a72806098bd3d9520cc43356dd78afe5d386d9` | BridgeToken-8 | impl | live | no |
+| avalanche | `0x88128fd4b259552a9a1d457f435a6527aab72d42` | BridgeToken-9 | impl | live | no |
+| avalanche | `0x8a0cac13c7da965a312f08ea4229c37869e85cb9` | BridgeToken-10 | impl | live | no |
+| avalanche | `0x8ebaf22b6f053dffeaf46f4dd9efa95d89ba8580` | BridgeToken-11 | impl | live | no |
+| avalanche | `0x98443b96ea4b0858fdf3219cd13e98c7a4690588` | BridgeToken-12 | impl | live | no |
+| avalanche | `0x9eaac1b23d935365bd7b542fe22ceee2922f52dc` | BridgeToken-13 | impl | live | no |
 | avalanche | `0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664` | BridgeToken | impl | live | no |
-| avalanche | `0xbec243c995409e6520d7c41e404da5deba4b209b` | BridgeToken | impl | live | no |
-| avalanche | `0xc3048e19e76cb9a3aa9d77d8c03c29fc906e2437` | BridgeToken | impl | live | no |
-| avalanche | `0xc7198437980c041c805a1edcba50c1ce5db95118` | BridgeToken | impl | live | no |
-| avalanche | `0xd501281565bf7789224523144fe5d98e8b28f267` | BridgeToken | impl | live | no |
-| avalanche | `0xd586e7f844cea2f87f50152665bcbc2c279d8d70` | BridgeToken | impl | live | no |
+| avalanche | `0xaf9f062613df193dcf4d4008acc3bb9280c87323` | BoringChef | impl | live | no |
+| avalanche | `0xbec243c995409e6520d7c41e404da5deba4b209b` | BridgeToken-14 | impl | live | no |
+| avalanche | `0xc3048e19e76cb9a3aa9d77d8c03c29fc906e2437` | BridgeToken-15 | impl | live | no |
+| avalanche | `0xc7198437980c041c805a1edcba50c1ce5db95118` | BridgeToken-16 | impl | live | no |
+| avalanche | `0xd501281565bf7789224523144fe5d98e8b28f267` | BridgeToken-17 | impl | live | no |
+| avalanche | `0xd586e7f844cea2f87f50152665bcbc2c279d8d70` | BridgeToken-18 | impl | live | no |
 | bsc | `0x0075ac0c662a5b655060d1519ff739d834078705` | ERC1967Proxy | proxy | live | no |
 | bsc | `0x0314fc7180dd2a4370a4039ccf11f2c1a4a9c33b` | BaseToken-2 | impl | live | no |
 | bsc | `0x0eb3a705fc54725037cc9e008bdede697f62f335` | BEP20Cosmos | impl | live | no |
@@ -51,6 +56,7 @@
 | bsc | `0x3ee2200efb3400fabb9aacf31297cbdd1d435d47` | BEP20Cardano | impl | live | no |
 | bsc | `0x4338665cbb7b2485a8855a139b75d5e34ab0db94` | BEP20BitcoinCash | impl | live | no |
 | bsc | `0x55d398326f99059ff775485246999027b3197955` | BEP20USDT | impl | live | no |
+| bsc | `0x55e3f23b563769426f8aa4059e9977689c74b47e` | Token-4 | impl | live | no |
 | bsc | `0x56b6fb708fc5732dec1afc8d8556423a2edccbd6` | BEP20EOS | impl | live | no |
 | bsc | `0x7083609fce4d1d8dc0c979aab8c869ea2c873402` | BEP20Polkadot | impl | live | no |
 | bsc | `0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c` | BEP20Token | impl | live | no |
@@ -62,9 +68,11 @@
 | bsc | `0x92d7756c60dcfd4c689290e8a9f4d263b3b32241` | BorBSC | impl | live | no |
 | bsc | `0x947950bcc74888a40ffa2593c5798f11fc9124c4` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0x9a2f5556e9a637e8fbce886d8e3cf8b316a1d8a2` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0xa056c100ceb4111899916cf2d361152ee9147adf` | BoringChef | impl | live | no |
 | bsc | `0xa2b726b1145a4773f68593cf171187d8ebe4d495` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0xa58950f05fea2277d2608748412bf9f802ea4901` | ERC20Pausable | impl | live | no |
 | bsc | `0xad6caeb32cd2c308980a548bd0bc5aa4306c6c18` | BEP20BandProtocol | impl | live | no |
+| bsc | `0xae9a0e6bd6cb21cf36b773d47923980b410d3c85` | Token-2 | impl | live | no |
 | bsc | `0xb7f8cd00c5a06c0537e2abff0b58033d02e5e094` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0xd475c9c934dcd6d5f1cac530585aa5ba14185b92` | BEP20UpgradeableProxy | proxy | live | no |
@@ -72,25 +80,32 @@
 | bsc | `0xe7b388d44fa9069385e174efe6f10616b149fe86` | ERC1967Proxy | proxy | live | no |
 | bsc | `0xe9e7cea3dedca5984780bafc599bd69add087d56` | BEP20Token-2 | impl | live | no |
 | bsc | `0xeae00113af330e6f67342b8298efc40232cd9f09` | TokenWISTA | impl | live | no |
+| bsc | `0xedf3ce4dd6725650a8e9398e5c6398d061fa7955` | Token-2 | impl | live | no |
 | bsc | `0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd` | BEP20LINK | impl | live | no |
 | bsc | `0xfb6115445bff7b52feb98650c87f44907e58f802` | BEP20UpgradeableProxy | proxy | live | no |
 | bsc | `0xfd7b3a77848f1c2d67e05e54d78d174a0c850335` | BEP20Ontology | impl | live | no |
+| bsc | `0xffeecbf8d7267757c2dc3d13d730e97e15bfdf7f` | Token-5 | impl | live | no |
 | chain-1088 | `0x226d8bfb4da78ddc5bd8fd6c1532c58e88f9fd34` | Token | impl | live | no |
 | chain-1088 | `0x420000000000000000000000000000000000000a` | OVM_ETH | impl | unknown | no |
 | chain-1088 | `0x4f497f9d85a6fe135ffca99f0f253919fe827211` | Token | impl | live | no |
 | chain-1088 | `0x55254fe138b0b5a85b27858c2f4ace9c509afabd` | equipment | impl | unknown | no |
 | chain-1088 | `0x55e3f23b563769426f8aa4059e9977689c74b47e` | Token | impl | live | no |
+| chain-1088 | `0x57e05346a576a3f75972ac0e7c9d9f46765b346e` | ERC1967Proxy-3 | impl | live | no |
 | chain-1088 | `0x5d78bf8f79a66e43f5932c1ae0b8fa6563f97f74` | Multicall2 | impl | unknown | no |
 | chain-1088 | `0x68d97b7a961a5239b9f911da8deb57f6ef6e5e28` | Token | impl | live | no |
+| chain-1088 | `0x6eccd646ff097a8f249d377d85ec21d19c7c02a9` | ERC1967Proxy-3 | impl | live | no |
 | chain-1088 | `0x7db21b2c3319e2d7ab2fd66e902e315ee7363a8b` | market | impl | unknown | no |
 | chain-1088 | `0x87dd4a7ad23b95cd9ff9c26b5cf325905caf8663` | Token | impl | live | no |
 | chain-1088 | `0xa530850a1a3388d5f4cb2e9ed3d3125d6d96f5b2` | hero | impl | unknown | no |
 | chain-1088 | `0xbb06dca3ae6887fabf931640f67cab3e3a16f4dc` | L2StandardERC20 | impl | live | no |
+| chain-1088 | `0xd01a5051253007ae0b7123b50410e3b5a3f6cf95` | ERC1967Proxy-3 | impl | live | no |
 | chain-1088 | `0xd5b59f9f35f9a5be75e7357798bf15a4e958b6b2` | Token | impl | live | no |
 | chain-1088 | `0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000` | MVM_Coinbase | impl | unknown | no |
 | chain-1088 | `0xea32a96608495e54156ae48931a7c20f0dcc1a21` | L2StandardERC20 | impl | live | no |
 | chain-1313161554 | `0x4988a896b1227218e4a686fde5eabdcabd91571f` | EvmErc20 | impl | unknown | no |
+| chain-1313161554 | `0x68d97b7a961a5239b9f911da8deb57f6ef6e5e28` | ERC1967Proxy-3 | impl | live | no |
 | chain-1313161554 | `0xb12bfca5a55806aaf64e99521918a4bf0fc40802` | EvmErc20 | impl | unknown | no |
+| chain-1313161554 | `0xb98863f0a0cfe367496bfa393da4d408bee0a5bf` | ERC1967Proxy-3 | impl | live | no |
 | ethereum | `0x00fbd1774093e9240beb559f7a1300d291d86309` | OptionsV1Reserve | impl | inactive | no |
 | ethereum | `0x017e71e96f2ae777c679740d2d8dc15ed4231981` | WrappedYFI | impl | inactive | no |
 | ethereum | `0x01b354a9fb34760455ee9cbe7d71d2ce5c11ab5c` | StrategyDForceUSDC | impl | inactive | no |
@@ -198,7 +213,7 @@
 | ethereum | `0x2ee2b7b52560b1b56becf5a6f67b09820d566200` | yDelegatedVault | impl | inactive | no |
 | ethereum | `0x2f08119c6f07c006695e079aafc638b8789faf18` | yVault | impl | live | no |
 | ethereum | `0x2f3236a341a1f64e16f5c3c5a020f5282a63921b` | StrategyMKRVaultDAIDelegate | impl | inactive | no |
-| ethereum | `0x2f50d538606fa9edd2b11e2446beb18c9d5846bb` | Vyper_contract | impl | live | no |
+| ethereum | `0x2f50d538606fa9edd2b11e2446beb18c9d5846bb` | Vyper_contract-4 | impl | live | no |
 | ethereum | `0x30a086f5b7a8a6256b0d0e6c9ca4cd3577e4ae70` | HegicOptions | impl | inactive | no |
 | ethereum | `0x30f3581ef6469334c8752d9b6ca3fb39c72f57f1` | Keep3r | impl | inactive | no |
 | ethereum | `0x3118eec34240620ffd044dfa3aaa0a0f78b9aade` | yUSDT | impl | inactive | no |
@@ -255,18 +270,23 @@
 | ethereum | `0x4ccea6503e8e5525d3de0c60855b6332af559ad4` | EminenceCurrency | impl | inactive | no |
 | ethereum | `0x4d03b8a8bce14ef9a9c6c3c2cad21d94e601f645` | StrategyVaultUSDC | impl | inactive | no |
 | ethereum | `0x4da27a545c0c5b758a6ba100e3a049001de870f5` | InitializableAdminUpgradeabilityProxy-3 | proxy | live | no |
-| ethereum | `0x575ccd8e2d300e2377b43478339e364000318e2c` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0x575ccd8e2d300e2377b43478339e364000318e2c` | Vyper_contract-5 | impl | live | no |
 | ethereum | `0x597ad1e0c13bfe8025993d9e79c69e1c0233522e` | yVault | impl | live | no |
 | ethereum | `0x5ade7ae8660293f2ebfcefaba91d141d72d221e8` | EminenceCurrency-2 | impl | live | no |
+| ethereum | `0x5bdc32663ec75e85ff4abc2cae7ae8b606a2cfca` | Token-3 | impl | live | no |
 | ethereum | `0x5dbcf33d8c2e976c6b560249878e6f1491bca25c` | yVault | impl | live | no |
+| ethereum | `0x5f3b5dfeb7b28cdbd7faba78963ee202a494e2a2` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x629c759d1e83efbf63d84eb3868b564d9521c129` | yVault | impl | live | no |
 | ethereum | `0x63a61b21a5ed529986d572af747a22d96493aba3` | CrossLock | impl | live | no |
+| ethereum | `0x64e3c23bfc40722d3b649844055f1d51c1ac041d` | Vyper_contract | impl | live | no |
 | ethereum | `0x67c472fdd2851666abe99b1ec0f091ce3e06c365` | xVault | impl | unknown | no |
 | ethereum | `0x6adff7bedd9d7bf4794421d078cced17aa4ec39c` | TunnelV2 | impl | live | no |
 | ethereum | `0x6c189baa963060daeec77b7305b055216090bfc4` | BaseToken | impl | live | no |
+| ethereum | `0x705350c4bcd35c9441419ddd5d2f097d7a55410f` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0x73a052500105205d34daf004eab301916da8190f` | yTUSD | impl | live | no |
 | ethereum | `0x74b23882a30290451a17c44f4f05243b6b58c76d` | UniSwap_ETH_CDAIZap | impl | live | no |
 | ethereum | `0x77f79fea3d135847098adb1fdc6b10a0218823f5` | BoringDAOV2 | impl | live | no |
+| ethereum | `0x7ca5b0a2910b33e9759dc7ddb0413949071d7575` | Vyper_contract | impl | live | no |
 | ethereum | `0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9` | InitializableAdminUpgradeabilityProxy-4 | proxy | live | no |
 | ethereum | `0x7ff566e1d69deff32a7b244ae7276b9f90e9d0f6` | yVault | impl | live | no |
 | ethereum | `0x8064d9ae6cdf087b1bcd5bdf3531bd5d8c537a68` | OToken | impl | live | no |
@@ -280,19 +300,26 @@
 | ethereum | `0x9fc889ff92cbeeb12f8b70be8f0e7f329f12d2b5` | BEP20 | impl | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
 | ethereum | `0xa1787206d5b1be0f432c4c4f96dc4d1257a1dd14` | yUSDT | impl | live | no |
+| ethereum | `0xa90996896660decc6e997655e065b23788857849` | Vyper_contract-3 | impl | live | no |
 | ethereum | `0xacd43e627e64355f1861cec6d3a6688b31a6f952` | yVault | impl | live | no |
 | ethereum | `0xae5096c8d5c5461f3f65904f7adca932807e14f7` | OToken | impl | live | no |
+| ethereum | `0xb1f2cdec61db658f091671f5f199635aef202cac` | Vyper_contract | impl | live | no |
+| ethereum | `0xb6225104d9434cc148570cddeef19b2e46da350d` | Token-2 | impl | live | no |
 | ethereum | `0xba2e7fed597fd0e3e70f5130bcdbbfe06bb94fe1` | yVault | impl | live | no |
-| ethereum | `0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0xbc19712feb3a26080ebf6f2f7849b417fdd792ca` | Boring | impl | live | no |
+| ethereum | `0xbc89cd85491d81c6ad2954e6d0362ee29fca8f53` | Vyper_contract | impl | live | no |
 | ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xc2cb1040220768554cf699b0d863a3cd4324ce32` | yDAI | impl | live | no |
 | ethereum | `0xcfeb09c3c5f0f78ad72166d55f9e6e9a60e96eec` | ENMT | impl | live | no |
+| ethereum | `0xd061d61a4d941c39e5453435b6345dc261c2fce0` | Vyper_contract-6 | impl | live | no |
 | ethereum | `0xd221f7f04b2055e2f937063d415d6bcdcc1d70de` | BaseToken | impl | live | no |
+| ethereum | `0xd533a949740bb3306d119cc777fa900ba034cd52` | Vyper_contract-7 | impl | live | no |
 | ethereum | `0xd6ad7a6750a7593e092a9b218d66c0a814a3436e` | yUSDC-2 | impl | live | no |
 | ethereum | `0xd77c2ab1cd0faa4b79e16a0e7472cb222a9ee175` | EminenceCurrency | impl | live | no |
 | ethereum | `0xd9194d9ffc638b4b406d899fe6fff211e9ab029d` | EminenceCurrency | impl | live | no |
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | impl | live | no |
+| ethereum | `0xdbe43c732080271fd7588aa5fe71bd07456d9173` | ERC1967Proxy-4 | proxy | live | no |
 | ethereum | `0xe0839f9b9688a77924208ad509e29952dc660261` | StableYieldCredit | impl | live | no |
 | ethereum | `0xe1237aa7f535b0cc33fd973d66cbf830354d16c7` | yVault | impl | live | no |
 | ethereum | `0xe4ffd682380c571a6a07dd8f20b402412e02830e` | EminenceCurrency | impl | live | no |
@@ -300,87 +327,56 @@
 | ethereum | `0xe718834ef396e8e327b591734c7df6f30687811c` | Proxy | proxy | live | no |
 | ethereum | `0xe75ad3aab14e4b0df8c5da4286608dabb21bd864` | AAC | impl | live | no |
 | ethereum | `0xe95da387aa48cb7c87af5dcfca7b57840b165be1` | Proxy | proxy | live | no |
+| ethereum | `0xecad1ab3464eccc7536af6afee414df873495616` | ERC1967Proxy-4 | proxy | live | no |
 | ethereum | `0xed35197cadf01fcbfe6cfc11081f299cffb095bf` | EminenceCurrency | impl | live | no |
 | ethereum | `0xf61718057901f84c4eec4339ef8f0d86d2b45600` | ySUSD-2 | impl | live | no |
-| gnosis | `0x0bf101ab5cc8c6be93d9fb6742e1e4d724afa414` | BoringChef | impl | live | no |
+| gnosis | `0x0bf101ab5cc8c6be93d9fb6742e1e4d724afa414` | BoringChef-2 | impl | live | no |
 | gnosis | `0x4ecaba5870353805a9f068101a40e0f32ed605c6` | TokenProxy | proxy | live | no |
 | gnosis | `0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1` | TokenProxy | proxy | live | no |
+| gnosis | `0x805675c662cf99b0156c8d1d76eab86a830d9e8d` | ERC1967Proxy-2 | proxy | live | no |
 | gnosis | `0xddafbb505ad214d7b80b1f830fccc89b60fb7a83` | TokenProxy-2 | proxy | live | no |
+| gnosis | `0xe3b59fd01c0155a98146a6e0beb8376b751363fc` | ERC1967Proxy-2 | proxy | live | no |
+| optimism | `0x29414ec76d79ff238e5e773322799d1c7ca2443f` | ERC1967Proxy-2 | impl | live | no |
 | optimism | `0x4200000000000000000000000000000000000006` | WETH9-2 | impl | live | no |
+| optimism | `0x68f180fcce6836688e9084f035309e29bf0a2095` | PausableToken-2 | impl | live | no |
 | optimism | `0x7f5c764cbc14f9669b88837ca1490cca17c31607` | OVMFiatToken | impl | live | no |
 | optimism | `0x94b008aa00579c1307b0ef2c499ad98a8ce58e58` | USDT | impl | live | no |
+| polygon | `0x091c23c213945b1f96e4ba660bdee1fd61663d11` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x0cad6ef3383c4349c68f072076bcde7b7623576b` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x0d9cefe09299c8c3cbe1f2706fbcedbc35d73052` | ERC1967Proxy | proxy | live | no |
 | polygon | `0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6` | UpgradableProxy | proxy | live | no |
 | polygon | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | UChildERC20Proxy-2 | proxy | live | no |
 | polygon | `0x313d009888329c9d1cf4f75ca3f32566335bd604` | UChildERC20Proxy | impl | live | no |
 | polygon | `0x3c9d6c1c73b31c837832c72e04d3152f051fc1a9` | StakingRewardsLock | impl | live | no |
+| polygon | `0x413cfe1c41f98879365d665cacb7e79a60001fee` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x421a538234af050c77ef735b23a1db03243b0e4b` | ERC1967Proxy | proxy | live | no |
 | polygon | `0x42243231fb4a64a5bcfc7f4b7a9ad92576804046` | EIP712Base-2 | impl | live | no |
+| polygon | `0x4d98192a8a078d0937c8fca144c07e741364bdca` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x50d0799ba241e10a6e9bace2936129f117cb32af` | Token-2 | impl | live | no |
 | polygon | `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39` | EIP712Base | impl | live | no |
 | polygon | `0x556f501cf8a43216df5bc9cc57eb04d4ffaa9e6d` | EIP712Base | impl | live | no |
+| polygon | `0x576c990a8a3e7217122e9973b2230a3be9678e94` | FINToken-2 | impl | live | no |
 | polygon | `0x578360adf0bbb2f10ec9cec7ef89ef495511ed5f` | EIP712Base | impl | live | no |
 | polygon | `0x5a2fdf906ada9353ebe496fa5d351b39f8908d19` | UChildERC20Proxy | impl | live | no |
 | polygon | `0x60d01ec2d5e98ac51c8b4cf84dfcce98d527c747` | izumiToken-2 | impl | live | no |
+| polygon | `0x64e4e7840bc20959c8ba984db82fa0132d9b04dd` | ERC1967Proxy | proxy | live | no |
 | polygon | `0x6839e4acf7d69a9ea689fe133b994253e7c49c97` | iNFTspaceMystery | impl | live | no |
+| polygon | `0x6b906d17301447117c83f12dec183331ac3bcaa5` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x6dc551088afaf828b95a9c9ad590aefe797c8e87` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x70dfe627c3b04fdf8e8c9572fcec9e098fed552d` | ERC1967Proxy | proxy | live | no |
 | polygon | `0x71b821aa52a49f32eed535fca6eb5aa130085978` | EIP712Base | impl | live | no |
+| polygon | `0x746158b125447c909291cf3b271c929d156cbad2` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x775e38077fdbdafcb777215ccfb41cf8fc949019` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x79904ec9de1fccf7ca50fe3f8430e922d53e07e6` | ERC1967Proxy | proxy | live | no |
 | polygon | `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619` | MaticWETH | impl | live | no |
 | polygon | `0x8397259c983751daf40400790063935a11afa28a` | FxChild | impl | live | no |
+| polygon | `0x8de93f998b6b0dda780ee12b97dde1f2fadd3b1d` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x9159b63bfd1566ab4c99ee1ff21575c86d2cebb9` | BoringChef | impl | live | no |
 | polygon | `0xa0c68c638235ee32657e8f720a23cec1bfc77c77` | ChildERC1155 | impl | live | no |
 | polygon | `0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa` | UpgradableProxy-2 | proxy | live | no |
 | polygon | `0xb225cc2207fecc82806042ceb386ef2b23e2464c` | ERC1967Proxy | proxy | live | no |
 | polygon | `0xb988bd378a0754957d5d9471c96e0f8051645a26` | iNFTspaceToken | impl | live | no |
+| polygon | `0xbb5ea9b628f8a93c653c0eac986238407930059d` | ERC1967Proxy | impl | live | no |
 | polygon | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` | UChildERC20Proxy | proxy | live | no |
+| polygon | `0xc5e8228b910722c6b7ae77221dd96dc134b9c861` | ERC1967Proxy | proxy | live | no |
 | polygon | `0xff88434e29d1e2333ad6baa08d358b436196da6b` | UpgradableProxy | proxy | live | no |
-
-## Source unavailable (51)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x2e220e3ab85fc4a46f770a34ef2cddc8074e4689`
-- arbitrum `0x9d8bdaa1dde16da55c86ccaf12c81647ff9858b8`
-- avalanche `0x12f3a5af0a82af48af89fa5bacf6307e1b226903`
-- avalanche `0x2e220e3ab85fc4a46f770a34ef2cddc8074e4689`
-- avalanche `0xaf9f062613df193dcf4d4008acc3bb9280c87323`
-- bsc `0x55e3f23b563769426f8aa4059e9977689c74b47e`
-- bsc `0xa056c100ceb4111899916cf2d361152ee9147adf`
-- bsc `0xae9a0e6bd6cb21cf36b773d47923980b410d3c85`
-- bsc `0xedf3ce4dd6725650a8e9398e5c6398d061fa7955`
-- bsc `0xffeecbf8d7267757c2dc3d13d730e97e15bfdf7f`
-- chain-1088 `0x57e05346a576a3f75972ac0e7c9d9f46765b346e`
-- chain-1088 `0x6eccd646ff097a8f249d377d85ec21d19c7c02a9`
-- chain-1088 `0xd01a5051253007ae0b7123b50410e3b5a3f6cf95`
-- chain-1313161554 `0x68d97b7a961a5239b9f911da8deb57f6ef6e5e28`
-- chain-1313161554 `0xb98863f0a0cfe367496bfa393da4d408bee0a5bf`
-- ethereum `0x5bdc32663ec75e85ff4abc2cae7ae8b606a2cfca`
-- ethereum `0x5f3b5dfeb7b28cdbd7faba78963ee202a494e2a2`
-- ethereum `0x64e3c23bfc40722d3b649844055f1d51c1ac041d`
-- ethereum `0x705350c4bcd35c9441419ddd5d2f097d7a55410f`
-- ethereum `0x7ca5b0a2910b33e9759dc7ddb0413949071d7575`
-- ethereum `0xa90996896660decc6e997655e065b23788857849`
-- ethereum `0xb1f2cdec61db658f091671f5f199635aef202cac`
-- ethereum `0xb6225104d9434cc148570cddeef19b2e46da350d`
-- ethereum `0xbc89cd85491d81c6ad2954e6d0362ee29fca8f53`
-- ethereum `0xd061d61a4d941c39e5453435b6345dc261c2fce0`
-- ethereum `0xd533a949740bb3306d119cc777fa900ba034cd52`
-- ethereum `0xdbe43c732080271fd7588aa5fe71bd07456d9173`
-- ethereum `0xecad1ab3464eccc7536af6afee414df873495616`
-- gnosis `0x805675c662cf99b0156c8d1d76eab86a830d9e8d`
-- gnosis `0xe3b59fd01c0155a98146a6e0beb8376b751363fc`
-- optimism `0x29414ec76d79ff238e5e773322799d1c7ca2443f`
-- optimism `0x68f180fcce6836688e9084f035309e29bf0a2095`
-- polygon `0x091c23c213945b1f96e4ba660bdee1fd61663d11`
-- polygon `0x0cad6ef3383c4349c68f072076bcde7b7623576b`
-- polygon `0x0d9cefe09299c8c3cbe1f2706fbcedbc35d73052`
-- polygon `0x413cfe1c41f98879365d665cacb7e79a60001fee`
-- polygon `0x421a538234af050c77ef735b23a1db03243b0e4b`
-- polygon `0x4d98192a8a078d0937c8fca144c07e741364bdca`
-- polygon `0x50d0799ba241e10a6e9bace2936129f117cb32af`
-- polygon `0x576c990a8a3e7217122e9973b2230a3be9678e94`
-- polygon `0x64e4e7840bc20959c8ba984db82fa0132d9b04dd`
-- polygon `0x6b906d17301447117c83f12dec183331ac3bcaa5`
-- polygon `0x6dc551088afaf828b95a9c9ad590aefe797c8e87`
-- polygon `0x70dfe627c3b04fdf8e8c9572fcec9e098fed552d`
-- polygon `0x746158b125447c909291cf3b271c929d156cbad2`
-- polygon `0x775e38077fdbdafcb777215ccfb41cf8fc949019`
-- polygon `0x79904ec9de1fccf7ca50fe3f8430e922d53e07e6`
-- polygon `0x8de93f998b6b0dda780ee12b97dde1f2fadd3b1d`
-- polygon `0x9159b63bfd1566ab4c99ee1ff21575c86d2cebb9`
-- polygon `0xbb5ea9b628f8a93c653c0eac986238407930059d`
-- polygon `0xc5e8228b910722c6b7ae77221dd96dc134b9c861`

@@ -16,6 +16,7 @@ import {ILendingVault} from "../../../interfaces/ILendingVault.sol";
 import {SwapConfig} from "../config/SwapConfig.sol";
 import {AccessControl} from "../utils/AccessControl.sol";
 import {SwapMod} from "../swap/SwapMod.sol";
+import {ILendingPool} from "../../../interfaces/ILendingPool.sol";
 /**
  * @title ClaimingFacet
  * @dev Facet that interfaces with voting escrow NFTs
@@ -57,9 +58,13 @@ contract ClaimingFacet is AccessControl {
                 }
             }
         }
-        _voter.claimFees(fees, tokens, tokenId);
+        _claimFees(fees, tokens, tokenId);
 
         claimRebase(tokenId);
+    }
+
+    function _claimFees(address[] calldata fees, address[][] calldata tokens, uint256 tokenId) internal virtual {
+        _voter.claimFees(fees, tokens, tokenId);
     }
 
     function claimRebase(uint256 tokenId) public virtual {
@@ -96,7 +101,7 @@ contract ClaimingFacet is AccessControl {
 
         uint256 launchpadTokenBalanceBefore = launchpadToken.balanceOf(address(this));
         // claim fees for launchpad token
-        _voter.claimFees(fees, tokens, tokenId);
+        _claimFees(fees, tokens, tokenId);
 
         // ensure only launchpad token is being claimed
         for(uint256 i = 0; i < tokens.length; i++) {
@@ -142,8 +147,9 @@ contract ClaimingFacet is AccessControl {
 
             address loanContract = _portfolioFactory.portfolioFactoryConfig().getLoanContract();
             IERC20(outputToken).safeTransfer(ILoan(loanContract).owner(), treasuryFeeAmount);
-            IERC20(outputToken).forceApprove(address(vault), lenderPremiumAmount);
-            vault.depositRewards(lenderPremiumAmount);
+            IERC20(outputToken).forceApprove(loanContract, lenderPremiumAmount);
+            ILendingPool(loanContract).depositRewards(lenderPremiumAmount);
+            IERC20(outputToken).approve(loanContract, 0);
 
             // Pay down borrower debt with remaining proceeds; send excess to owner
             if (borrowerAmount > 0) {

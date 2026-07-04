@@ -2,7 +2,7 @@
   "component": "BooleanHelper",
   "main_contract": "BooleanHelper",
   "source_file_count": 1,
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://reports.chainsecurity.com/Makina/ChainSecurity_Makina_MakinaPeripherySmartContracts_Audit.pdf"
@@ -19,6 +19,14 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x8dc60173f37b34998fd5b2aef47dd68c68cc22c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0x8dc60173f37b34998fd5b2aef47dd68c68cc22c4",
       "is_proxy": false,
       "implementation_address": null,

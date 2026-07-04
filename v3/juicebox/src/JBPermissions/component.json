@@ -1,14 +1,30 @@
 {
   "component": "JBPermissions",
   "main_contract": "JBPermissions",
-  "source_file_count": 10,
-  "deployment_count": 1,
+  "source_file_count": 6,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x04fd6913d6c32d8c216e153a43c04b1857a7793d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x04fd6913d6c32d8c216e153a43c04b1857a7793d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x04fd6913d6c32d8c216e153a43c04b1857a7793d",
       "is_proxy": false,
       "implementation_address": null,

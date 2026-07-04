@@ -1,0 +1,18 @@
+{
+  "component": "SignatureMerkleDrop128-5",
+  "main_contract": "SignatureMerkleDrop128",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe45007175249c645f28a8fff3eaeeceaada550cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

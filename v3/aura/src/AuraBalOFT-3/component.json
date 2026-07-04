@@ -1,0 +1,18 @@
+{
+  "component": "AuraBalOFT-3",
+  "main_contract": "AuraBalOFT",
+  "source_file_count": 22,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x223738a747383d6f9f827d95964e4d8e8ac754ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

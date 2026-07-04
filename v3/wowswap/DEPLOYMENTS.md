@@ -1,9 +1,10 @@
 # wowswap — deployments
 
-29 verified deployment(s) across 16 component(s).
+31 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0xa384bc7cdc0a93e686da9e7b8c0807cd040f4e0b` | AnyswapV5ERC20-3 | impl | live | no |
 | avalanche | `0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454` | AnyswapV4ERC20 | impl | live | no |
 | bsc | `0x3b94b8e62c1cf0795ec6427aabc23b269b35cff8` | AdminUpgradeabilityProxy | proxy | live | no |
 | bsc | `0x4da996c5fe84755c80e108cf96fe705174c5e36a` | WOWToken | impl | live | no |
@@ -30,12 +31,7 @@
 | polygon | `0x71b821aa52a49f32eed535fca6eb5aa130085978` | EIP712Base | impl | live | no |
 | polygon | `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619` | EIP712Base-3 | impl | live | no |
 | polygon | `0x8397259c983751daf40400790063935a11afa28a` | FxChild | impl | live | no |
+| polygon | `0x855d4248672a1fce482165e8dbe1207b94b1968a` | AnyswapV5ERC20-2 | impl | live | no |
 | polygon | `0xa0c68c638235ee32657e8f720a23cec1bfc77c77` | ChildERC1155 | impl | live | no |
 | polygon | `0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa` | UpgradableProxy | proxy | live | no |
 | polygon | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` | UChildERC20Proxy | proxy | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0xa384bc7cdc0a93e686da9e7b8c0807cd040f4e0b`
-- polygon `0x855d4248672a1fce482165e8dbe1207b94b1968a`

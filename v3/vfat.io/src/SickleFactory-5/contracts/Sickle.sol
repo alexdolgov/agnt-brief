@@ -7,7 +7,7 @@ import { SickleRegistry } from "contracts/SickleRegistry.sol";
 
 /// @title Sickle contract
 /// @author vfat.tools
-/// @notice Sickle facilitates farming and interactions with Masterchef
+/// @notice Sickle facilitates farming and interactions with MasterChef
 /// contracts
 /// @dev Base contract inheriting from all the other "manager" contracts
 contract Sickle is SickleStorage, Multicall {
@@ -15,10 +15,11 @@ contract Sickle is SickleStorage, Multicall {
     receive() external payable { }
 
     /// @param sickleRegistry_ Address of the SickleRegistry contract
-    constructor(
-        SickleRegistry sickleRegistry_
-    ) Multicall(sickleRegistry_) {
-        _disableInitializers();
+    constructor(SickleRegistry sickleRegistry_)
+        initializer
+        Multicall(sickleRegistry_)
+    {
+        _Sickle_initialize(address(0), address(0));
     }
 
     /// @param sickleOwner_ Address of the Sickle owner
@@ -26,10 +27,17 @@ contract Sickle is SickleStorage, Multicall {
         address sickleOwner_,
         address approved_
     ) external initializer {
-        SickleStorage._initializeSickleStorage(sickleOwner_, approved_);
+        _Sickle_initialize(sickleOwner_, approved_);
     }
 
     /// INTERNALS ///
+
+    function _Sickle_initialize(
+        address sickleOwner_,
+        address approved_
+    ) internal {
+        SickleStorage._SickleStorage_initialize(sickleOwner_, approved_);
+    }
 
     function onERC721Received(
         address, // operator

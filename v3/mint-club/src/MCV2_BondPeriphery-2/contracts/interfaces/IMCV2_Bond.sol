@@ -32,13 +32,6 @@ interface IMCV2_Bond {
         address receiver
     ) external returns (uint256);
 
-    function burn(
-        address token,
-        uint256 tokensToBurn,
-        uint256 minRefund,
-        address receiver
-    ) external returns (uint256);
-
     function creationFee() external view returns (uint256);
 
     function getReserveForToken(

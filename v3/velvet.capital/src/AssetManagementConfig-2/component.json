@@ -1,0 +1,26 @@
+{
+  "component": "AssetManagementConfig-2",
+  "main_contract": "AssetManagementConfig",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x27a2ee5b36480285b26782b918c1a069396b8e35",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9b51c52282ec481742d2a99f181023c50e9eaf0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

@@ -1,165 +1,160 @@
-# @version 0.2.16
+# @version 0.3.1
 """
-@title Liquidity Gauge v4
-@author Angle Protocol
-@license MIT
+@title StableSwap
+@author Curve.Fi
+@license Copyright (c) Curve.Fi, 2020-2021 - all rights reserved
 """
-
-# Original idea and credit:
-# Curve Finance's veCRV
-# https://github.com/curvefi/curve-dao-contracts/blob/master/contracts/gauges/LiquidityGaugeV4.vy
-# Mostly forked from Curve, except that now there is no direct link between the gauge controller
-# and the gauges. In this implementation, ANGLE rewards are like any other token rewards.
 
 from vyper.interfaces import ERC20
 
-implements: ERC20
+interface ERC1271:
+    def isValidSignature(_hash: bytes32, _signature: Bytes[65]) -> bytes32: view
 
-interface VotingEscrow:
-    def user_point_epoch(addr: address) -> uint256: view
-    def user_point_history__ts(addr: address, epoch: uint256) -> uint256: view
-
-interface VotingEscrowBoost:
-    def adjusted_balance_of(_account: address) -> uint256: view
-
-interface ERC20Extended:
-    def symbol() -> String[26]: view
-    def decimals() -> uint256: view
-
-
-event Deposit:
-    provider: indexed(address)
-    value: uint256
-
-event Withdraw:
-    provider: indexed(address)
-    value: uint256
-
-event UpdateLiquidityLimit:
-    user: address
-    original_balance: uint256
-    original_supply: uint256
-    working_balance: uint256
-    working_supply: uint256
-
-event CommitOwnership:
-    admin: address
-
-event ApplyOwnership:
-    admin: address
 
 event Transfer:
-    _from: indexed(address)
-    _to: indexed(address)
-    _value: uint256
+    sender: indexed(address)
+    receiver: indexed(address)
+    value: uint256
 
 event Approval:
-    _owner: indexed(address)
-    _spender: indexed(address)
-    _value: uint256
+    owner: indexed(address)
+    spender: indexed(address)
+    value: uint256
 
-event RewardDataUpdate:
-    _token: indexed(address)
-    _amount: uint256
+event TokenExchange:
+    buyer: indexed(address)
+    sold_id: int128
+    tokens_sold: uint256
+    bought_id: int128
+    tokens_bought: uint256
 
-struct Reward:
-    token: address
-    distributor: address
-    period_finish: uint256
-    rate: uint256
-    last_update: uint256
-    integral: uint256
+event AddLiquidity:
+    provider: indexed(address)
+    token_amounts: uint256[N_COINS]
+    fees: uint256[N_COINS]
+    invariant: uint256
+    token_supply: uint256
+
+event RemoveLiquidity:
+    provider: indexed(address)
+    token_amounts: uint256[N_COINS]
+    fees: uint256[N_COINS]
+    token_supply: uint256
+
+event RemoveLiquidityOne:
+    provider: indexed(address)
+    token_amount: uint256
+    coin_amount: uint256
+    token_supply: uint256
+
+event RemoveLiquidityImbalance:
+    provider: indexed(address)
+    token_amounts: uint256[N_COINS]
+    fees: uint256[N_COINS]
+    invariant: uint256
+    token_supply: uint256
+
+event RampA:
+    old_A: uint256
+    new_A: uint256
+    initial_time: uint256
+    future_time: uint256
+
+event StopRampA:
+    A: uint256
+    t: uint256
+
+event TransferOwnership:
+    _old_owner: address
+    _new_owner: address
 
 
-MAX_REWARDS: constant(uint256) = 8
-TOKENLESS_PRODUCTION: constant(uint256) = 40
-WEEK: constant(uint256) = 604800
+N_COINS: constant(int128) = 2
+PRECISION: constant(uint256) = 10 ** 18
 
-ANGLE: public(address)
-voting_escrow: public(address)
-veBoost_proxy: public(address)
+FEE_DENOMINATOR: constant(uint256) = 10 ** 10
+ADMIN_FEE: constant(uint256) = 5000000000
 
-staking_token: public(address)
-decimal_staking_token: public(uint256)
+A_PRECISION: constant(uint256) = 100
+MAX_A: constant(uint256) = 10 ** 6
+MAX_A_CHANGE: constant(uint256) = 10
+MIN_RAMP_TIME: constant(uint256) = 86400
+
+EIP712_TYPEHASH: constant(bytes32) = keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)")
+PERMIT_TYPEHASH: constant(bytes32) = keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)")
+
+# keccak256("isValidSignature(bytes32,bytes)")[:4] << 224
+ERC1271_MAGIC_VAL: constant(bytes32) = 0x1626ba7e00000000000000000000000000000000000000000000000000000000
+VERSION: constant(String[8]) = "v5.0.0"
+
+
+COINS: immutable(address[N_COINS])
+RATE_MULTIPLIERS: immutable(uint256[N_COINS])
+
+NAME: immutable(String[64])
+SYMBOL: immutable(String[32])
+
+DOMAIN_SEPARATOR: immutable(bytes32)
+
+
+admin_balances: public(uint256[N_COINS])
+fee: public(uint256)  # fee * 1e10
+
+initial_A: public(uint256)
+future_A: public(uint256)
+initial_A_time: public(uint256)
+future_A_time: public(uint256)
 
 balanceOf: public(HashMap[address, uint256])
-totalSupply: public(uint256)
 allowance: public(HashMap[address, HashMap[address, uint256]])
+totalSupply: public(uint256)
 
-name: public(String[64])
-symbol: public(String[32])
+nonces: public(HashMap[address, uint256])
 
-working_balances: public(HashMap[address, uint256])
-working_supply: public(uint256)
-
-integrate_checkpoint_of: public(HashMap[address, uint256])
-
-# For tracking external rewards
-reward_count: public(uint256)
-reward_tokens: public(address[MAX_REWARDS])
-
-reward_data: public(HashMap[address, Reward])
-
-# claimant -> default reward receiver
-rewards_receiver: public(HashMap[address, address])
-
-# reward token -> claiming address -> integral
-reward_integral_for: public(HashMap[address, HashMap[address, uint256]])
-
-# user -> [uint128 claimable amount][uint128 claimed amount]
-claim_data: HashMap[address, HashMap[address, uint256]]
-
-admin: public(address)
-future_admin: public(address)
-
-initialized: public(bool)
+owner: public(address)
+future_owner: public(address)
 
 
 @external
-def __init__():
+def __init__(
+    _name: String[64],
+    _symbol: String[32],
+    _coins: address[N_COINS],
+    _rate_multipliers: uint256[N_COINS],
+    _A: uint256,
+    _fee: uint256,
+):
     """
     @notice Contract constructor
-    @dev The contract has an initializer to prevent the take over of the implementation
+    @param _name Name of the new pool
+    @param _symbol Token symbol
+    @param _coins List of all ERC20 conract addresses of coins
+    @param _rate_multipliers List of number of decimals in coins
+    @param _A Amplification coefficient multiplied by n ** (n - 1)
+    @param _fee Fee to charge for exchanges
     """
-    assert self.initialized == False #dev: contract is already initialized
-    self.initialized = True
+    COINS = _coins
+    RATE_MULTIPLIERS = _rate_multipliers
 
-@external
-def initialize(_staking_token: address, _admin: address, _ANGLE: address, _voting_escrow: address, _veBoost_proxy: address, _distributor: address):
-    """
-    @notice Contract initializer
-    @param _staking_token Liquidity Pool contract address
-    @param _admin Admin who can kill the gauge
-    @param _ANGLE Address of the ANGLE token
-    @param _voting_escrow Address of the veANGLE contract
-    @param _veBoost_proxy Address of the proxy contract used to query veANGLE balances and taking into account potential delegations
-    @param _distributor Address of the contract responsible for distributing ANGLE tokens to this gauge
-    """
-    assert self.initialized == False #dev: contract is already initialized
-    self.initialized = True
+    A: uint256 = _A * A_PRECISION
+    self.initial_A = A
+    self.future_A = A
+    self.fee = _fee
 
-    assert _admin != ZERO_ADDRESS
-    assert _ANGLE != ZERO_ADDRESS
-    assert _voting_escrow != ZERO_ADDRESS
-    assert _veBoost_proxy != ZERO_ADDRESS
-    assert _distributor != ZERO_ADDRESS
+    self.owner = msg.sender
 
-    self.admin = _admin
-    self.staking_token = _staking_token
-    self.decimal_staking_token = ERC20Extended(_staking_token).decimals()
+    NAME = _name
+    SYMBOL = _symbol
 
-    symbol: String[26] = ERC20Extended(_staking_token).symbol()
-    self.name = concat("Angle ", symbol, " Gauge")
-    self.symbol = concat(symbol, "-gauge")
-    self.ANGLE = _ANGLE
-    self.voting_escrow = _voting_escrow
-    self.veBoost_proxy = _veBoost_proxy
+    DOMAIN_SEPARATOR = keccak256(
+        _abi_encode(EIP712_TYPEHASH, keccak256(_name), keccak256(VERSION), chain.id, self)
+    )
 
-    # add in all liquidityGauge the ANGLE reward - the distribution could be null though
-    self.reward_data[_ANGLE].distributor = _distributor
-    self.reward_tokens[0] = _ANGLE
-    self.reward_count = 1
-    
+    # fire a transfer event so block explorers identify the contract as an ERC20
+    log Transfer(ZERO_ADDRESS, self, 0)
+
+
+### ERC20 Functionality ###
 
 @view
 @external
@@ -169,327 +164,43 @@ def decimals() -> uint256:
     @dev Implemented as a view method to reduce gas costs
     @return uint256 decimal places
     """
-    return self.decimal_staking_token
-
-
-@internal
-def _update_liquidity_limit(addr: address, l: uint256, L: uint256):
-    """
-    @notice Calculate limits which depend on the amount of ANGLE token per-user.
-            Effectively it calculates working balances to apply amplification
-            of ANGLE production by ANGLE
-    @param addr User address
-    @param l User's amount of liquidity (LP tokens)
-    @param L Total amount of liquidity (LP tokens)
-    """
-    # To be called after totalSupply is updated
-    voting_balance: uint256 = VotingEscrowBoost(self.veBoost_proxy).adjusted_balance_of(addr)
-    voting_total: uint256 = ERC20(self.voting_escrow).totalSupply()
-
-    lim: uint256 = l * TOKENLESS_PRODUCTION / 100
-    if voting_total > 0:
-        lim += L * voting_balance / voting_total * (100 - TOKENLESS_PRODUCTION) / 100
-
-    lim = min(l, lim)
-    old_bal: uint256 = self.working_balances[addr]
-    self.working_balances[addr] = lim
-    _working_supply: uint256 = self.working_supply + lim - old_bal
-    self.working_supply = _working_supply
-
-    log UpdateLiquidityLimit(addr, l, L, lim, _working_supply)
-
-
-@internal
-def _checkpoint_reward(_user: address, token: address, _total_supply: uint256, _user_balance: uint256, _claim: bool, receiver: address):
-    """
-    @notice Claim pending rewards and checkpoint rewards for a user
-    """
-    total_supply: uint256 = _total_supply
-    user_balance: uint256 = _user_balance
-    if token == self.ANGLE : 
-        total_supply = self.working_supply
-        user_balance = self.working_balances[_user]
-
-    integral: uint256 = self.reward_data[token].integral
-    last_update: uint256 = min(block.timestamp, self.reward_data[token].period_finish)
-    duration: uint256 = last_update - self.reward_data[token].last_update
-    if duration != 0:
-        self.reward_data[token].last_update = last_update
-        if total_supply != 0:
-            integral += duration * self.reward_data[token].rate * 10**18 / total_supply
-            self.reward_data[token].integral = integral
-
-    if _user != ZERO_ADDRESS:
-        integral_for: uint256 = self.reward_integral_for[token][_user]
-        new_claimable: uint256 = 0
-
-        if integral_for < integral:
-            self.reward_integral_for[token][_user] = integral
-            new_claimable = user_balance * (integral - integral_for) / 10**18
-
-        claim_data: uint256 = self.claim_data[_user][token]
-        total_claimable: uint256 = shift(claim_data, -128) + new_claimable
-        if total_claimable > 0:
-            total_claimed: uint256 = claim_data % 2**128
-            if _claim:
-                response: Bytes[32] = raw_call(
-                    token,
-                    concat(
-                        method_id("transfer(address,uint256)"),
-                        convert(receiver, bytes32),
-                        convert(total_claimable, bytes32),
-                    ),
-                    max_outsize=32,
-                )
-                if len(response) != 0:
-                    assert convert(response, bool)
-                self.claim_data[_user][token] = total_claimed + total_claimable
-            elif new_claimable > 0:
-                self.claim_data[_user][token] = total_claimed + shift(total_claimable, 128)
-    
-    if token == self.ANGLE : 
-        self.integrate_checkpoint_of[_user] = block.timestamp
-                
-@internal
-def _checkpoint_rewards(_user: address, _total_supply: uint256, _claim: bool, _receiver: address, _only_checkpoint:bool = False):
-    """
-    @notice Claim pending rewards and checkpoint rewards for a user
-    """
-
-    receiver: address = _receiver
-    user_balance: uint256 = 0
-    if _user != ZERO_ADDRESS:
-        user_balance = self.balanceOf[_user]
-        if _claim and _receiver == ZERO_ADDRESS:
-            # if receiver is not explicitly declared, check if a default receiver is set
-            receiver = self.rewards_receiver[_user]
-            if receiver == ZERO_ADDRESS:
-                # if no default receiver is set, direct claims to the user
-                receiver = _user
-
-    if _only_checkpoint:
-        self._checkpoint_reward(_user, self.ANGLE, _total_supply, user_balance, False, receiver)
-    else:
-        reward_count: uint256 = self.reward_count
-        for i in range(MAX_REWARDS):
-            if i == reward_count:
-                break
-            token: address = self.reward_tokens[i]
-            self._checkpoint_reward(_user, token, _total_supply, user_balance, _claim, receiver)
-
-@external
-def user_checkpoint(addr: address) -> bool:
-    """
-    @notice Record a checkpoint for `addr`
-    @param addr User address
-    @return bool success
-    """
-    assert msg.sender == addr  # dev: unauthorized
-    total_supply: uint256 = self.totalSupply
-    self._checkpoint_rewards(addr, total_supply, False, ZERO_ADDRESS, True)
-    self._update_liquidity_limit(addr, self.balanceOf[addr], total_supply)
-    return True
-
-@view
-@external
-def claimed_reward(_addr: address, _token: address) -> uint256:
-    """
-    @notice Get the number of already-claimed reward tokens for a user
-    @param _addr Account to get reward amount for
-    @param _token Token to get reward amount for
-    @return uint256 Total amount of `_token` already claimed by `_addr`
-    """
-    return self.claim_data[_addr][_token] % 2**128
-
-
-@view
-@external
-def claimable_reward(_user: address, _reward_token: address) -> uint256:
-    """
-    @notice Get the number of claimable reward tokens for a user
-    @param _user Account to get reward amount for
-    @param _reward_token Token to get reward amount for
-    @return uint256 Claimable reward token amount
-    """
-    integral: uint256 = self.reward_data[_reward_token].integral
-    total_supply: uint256 = self.totalSupply
-    user_balance: uint256 = self.balanceOf[_user]
-    if _reward_token == self.ANGLE : 
-        total_supply = self.working_supply
-        user_balance = self.working_balances[_user]
-        
-    if total_supply != 0:
-        last_update: uint256 = min(block.timestamp, self.reward_data[_reward_token].period_finish)
-        duration: uint256 = last_update - self.reward_data[_reward_token].last_update
-        integral += (duration * self.reward_data[_reward_token].rate * 10**18 / total_supply)
-
-    integral_for: uint256 = self.reward_integral_for[_reward_token][_user]
-    new_claimable: uint256 = user_balance * (integral - integral_for) / 10**18
-
-    return shift(self.claim_data[_user][_reward_token], -128) + new_claimable
-
-
-@external
-def set_rewards_receiver(_receiver: address):
-    """
-    @notice Set the default reward receiver for the caller.
-    @dev When set to ZERO_ADDRESS, rewards are sent to the caller
-    @param _receiver Receiver address for any rewards claimed via `claim_rewards`
-    """
-    self.rewards_receiver[msg.sender] = _receiver
-
-
-@external
-@nonreentrant('lock')
-def claim_rewards(_addr: address = msg.sender, _receiver: address = ZERO_ADDRESS):
-    """
-    @notice Claim available reward tokens for `_addr`
-    @param _addr Address to claim for
-    @param _receiver Address to transfer rewards to - if set to
-                     ZERO_ADDRESS, uses the default reward receiver
-                     for the caller
-    """
-    if _receiver != ZERO_ADDRESS:
-        assert _addr == msg.sender  # dev: cannot redirect when claiming for another user
-    self._checkpoint_rewards(_addr, self.totalSupply, True, _receiver)
-
-
-@external
-def kick(addr: address):
-    """
-    @notice Kick `addr` for abusing their boost
-    @dev Only if either they had another voting event, or their voting escrow lock expired
-    @param addr Address to kick
-    """
-    t_last: uint256 = self.integrate_checkpoint_of[addr]
-    t_ve: uint256 = VotingEscrow(self.voting_escrow).user_point_history__ts(
-        addr, VotingEscrow(self.voting_escrow).user_point_epoch(addr)
-    )
-    _balance: uint256 = self.balanceOf[addr]
-
-    assert ERC20(self.voting_escrow).balanceOf(addr) == 0 or t_ve > t_last # dev: kick not allowed
-    assert self.working_balances[addr] > _balance * TOKENLESS_PRODUCTION / 100  # dev: kick not needed
-
-    total_supply: uint256 = self.totalSupply
-    self._checkpoint_rewards(addr, total_supply, False, ZERO_ADDRESS, True)
-
-    self._update_liquidity_limit(addr, self.balanceOf[addr], total_supply)
-
-
-@external
-@nonreentrant('lock')
-def deposit(_value: uint256, _addr: address = msg.sender, _claim_rewards: bool = False):
-    """
-    @notice Deposit `_value` LP tokens
-    @dev Depositting also claims pending reward tokens
-    @param _value Number of tokens to deposit
-    @param _addr Address to deposit for
-    """
-    total_supply: uint256 = self.totalSupply
-
-    if _value != 0:
-        is_rewards: bool = self.reward_count != 0
-        if is_rewards:
-            self._checkpoint_rewards(_addr, total_supply, _claim_rewards, ZERO_ADDRESS)
-
-        total_supply += _value
-        new_balance: uint256 = self.balanceOf[_addr] + _value
-        self.balanceOf[_addr] = new_balance
-        self.totalSupply = total_supply
-
-        self._update_liquidity_limit(_addr, new_balance, total_supply)
-
-        ERC20(self.staking_token).transferFrom(msg.sender, self, _value)
-    else:
-        self._checkpoint_rewards(_addr, total_supply, False, ZERO_ADDRESS, True)
-
-    log Deposit(_addr, _value)
-    log Transfer(ZERO_ADDRESS, _addr, _value)
-
-
-@external
-@nonreentrant('lock')
-def withdraw(_value: uint256, _claim_rewards: bool = False):
-    """
-    @notice Withdraw `_value` LP tokens
-    @dev Withdrawing also claims pending reward tokens
-    @param _value Number of tokens to withdraw
-    """
-    total_supply: uint256 = self.totalSupply
-
-    if _value != 0:
-        is_rewards: bool = self.reward_count != 0
-        if is_rewards:
-            self._checkpoint_rewards(msg.sender, total_supply, _claim_rewards, ZERO_ADDRESS)
-
-        total_supply -= _value
-        new_balance: uint256 = self.balanceOf[msg.sender] - _value
-        self.balanceOf[msg.sender] = new_balance
-        self.totalSupply = total_supply
-
-        self._update_liquidity_limit(msg.sender, new_balance, total_supply)
-
-        ERC20(self.staking_token).transfer(msg.sender, _value)
-    else:
-        self._checkpoint_rewards(msg.sender, total_supply, False, ZERO_ADDRESS, True)
-
-    log Withdraw(msg.sender, _value)
-    log Transfer(msg.sender, ZERO_ADDRESS, _value)
+    return 18
 
 
 @internal
 def _transfer(_from: address, _to: address, _value: uint256):
-    total_supply: uint256 = self.totalSupply
-
-    if _value != 0:
-        is_rewards: bool = self.reward_count != 0
-        if is_rewards:
-            self._checkpoint_rewards(_from, total_supply, False, ZERO_ADDRESS)
-        new_balance: uint256 = self.balanceOf[_from] - _value
-        self.balanceOf[_from] = new_balance
-        self._update_liquidity_limit(_from, new_balance, total_supply)
-
-        if is_rewards:
-            self._checkpoint_rewards(_to, total_supply, False, ZERO_ADDRESS)
-        new_balance = self.balanceOf[_to] + _value
-        self.balanceOf[_to] = new_balance
-        self._update_liquidity_limit(_to, new_balance, total_supply)
-    else:
-        self._checkpoint_rewards(_from, total_supply, False, ZERO_ADDRESS, True)
-        self._checkpoint_rewards(_to, total_supply, False, ZERO_ADDRESS, True)
+    # # NOTE: vyper does not allow underflows
+    # #       so the following subtraction would revert on insufficient balance
+    self.balanceOf[_from] -= _value
+    self.balanceOf[_to] += _value
 
     log Transfer(_from, _to, _value)
 
 
 @external
-@nonreentrant('lock')
 def transfer(_to : address, _value : uint256) -> bool:
     """
-    @notice Transfer token for a specified address
-    @dev Transferring claims pending reward tokens for the sender and receiver
+    @dev Transfer token for a specified address
     @param _to The address to transfer to.
     @param _value The amount to be transferred.
     """
     self._transfer(msg.sender, _to, _value)
-
     return True
 
 
 @external
-@nonreentrant('lock')
 def transferFrom(_from : address, _to : address, _value : uint256) -> bool:
     """
-     @notice Transfer tokens from one address to another.
-     @dev Transferring claims pending reward tokens for the sender and receiver
+     @dev Transfer tokens from one address to another.
      @param _from address The address which you want to send tokens from
      @param _to address The address which you want to transfer to
      @param _value uint256 the amount of tokens to be transferred
     """
+    self._transfer(_from, _to, _value)
+
     _allowance: uint256 = self.allowance[_from][msg.sender]
     if _allowance != MAX_UINT256:
         self.allowance[_from][msg.sender] = _allowance - _value
-
-    self._transfer(_from, _to, _value)
 
     return True
 
@@ -499,150 +210,811 @@ def approve(_spender : address, _value : uint256) -> bool:
     """
     @notice Approve the passed address to transfer the specified amount of
             tokens on behalf of msg.sender
-    @dev Beware that changing an allowance via this method brings the risk
-         that someone may use both the old and new allowance by unfortunate
-         transaction ordering. This may be mitigated with the use of
-         {incraseAllowance} and {decreaseAllowance}.
-         https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+    @dev Beware that changing an allowance via this method brings the risk that
+         someone may use both the old and new allowance by unfortunate transaction
+         ordering: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
     @param _spender The address which will transfer the funds
     @param _value The amount of tokens that may be transferred
     @return bool success
     """
     self.allowance[msg.sender][_spender] = _value
+
     log Approval(msg.sender, _spender, _value)
-
     return True
 
 
 @external
-def increaseAllowance(_spender: address, _added_value: uint256) -> bool:
+def permit(
+    _owner: address,
+    _spender: address,
+    _value: uint256,
+    _deadline: uint256,
+    _v: uint8,
+    _r: bytes32,
+    _s: bytes32
+) -> bool:
     """
-    @notice Increase the allowance granted to `_spender` by the caller
-    @dev This is alternative to {approve} that can be used as a mitigation for
-         the potential race condition
-    @param _spender The address which will transfer the funds
-    @param _added_value The amount of to increase the allowance
-    @return bool success
+    @notice Approves spender by owner's signature to expend owner's tokens.
+        See https://eips.ethereum.org/EIPS/eip-2612.
+    @dev Inspired by https://github.com/yearn/yearn-vaults/blob/main/contracts/Vault.vy#L753-L793
+    @dev Supports smart contract wallets which implement ERC1271
+        https://eips.ethereum.org/EIPS/eip-1271
+    @param _owner The address which is a source of funds and has signed the Permit.
+    @param _spender The address which is allowed to spend the funds.
+    @param _value The amount of tokens to be spent.
+    @param _deadline The timestamp after which the Permit is no longer valid.
+    @param _v The bytes[64] of the valid secp256k1 signature of permit by owner
+    @param _r The bytes[0:32] of the valid secp256k1 signature of permit by owner
+    @param _s The bytes[32:64] of the valid secp256k1 signature of permit by owner
+    @return True, if transaction completes successfully
     """
-    allowance: uint256 = self.allowance[msg.sender][_spender] + _added_value
-    self.allowance[msg.sender][_spender] = allowance
+    assert _owner != ZERO_ADDRESS
+    assert block.timestamp <= _deadline
 
-    log Approval(msg.sender, _spender, allowance)
+    nonce: uint256 = self.nonces[_owner]
+    digest: bytes32 = keccak256(
+        concat(
+            b"\x19\x01",
+            DOMAIN_SEPARATOR,
+            keccak256(_abi_encode(PERMIT_TYPEHASH, _owner, _spender, _value, nonce, _deadline))
+        )
+    )
 
+    if _owner.is_contract:
+        sig: Bytes[65] = concat(_abi_encode(_r, _s), slice(convert(_v, bytes32), 31, 1))
+        # reentrancy not a concern since this is a staticcall
+        assert ERC1271(_owner).isValidSignature(digest, sig) == ERC1271_MAGIC_VAL
+    else:
+        assert ecrecover(digest, convert(_v, uint256), convert(_r, uint256), convert(_s, uint256)) == _owner
+
+    self.allowance[_owner][_spender] = _value
+    self.nonces[_owner] = nonce + 1
+
+    log Approval(_owner, _spender, _value)
     return True
 
 
+### StableSwap Functionality ###
+
+@view
+@internal
+def _balances() -> uint256[N_COINS]:
+    result: uint256[N_COINS] = empty(uint256[N_COINS])
+    for i in range(N_COINS):
+        result[i] = ERC20(COINS[i]).balanceOf(self) - self.admin_balances[i]
+    return result
+
+
+@view
 @external
-def decreaseAllowance(_spender: address, _subtracted_value: uint256) -> bool:
+def balances(i: uint256) -> uint256:
     """
-    @notice Decrease the allowance granted to `_spender` by the caller
-    @dev This is alternative to {approve} that can be used as a mitigation for
-         the potential race condition
-    @param _spender The address which will transfer the funds
-    @param _subtracted_value The amount of to decrease the allowance
-    @return bool success
+    @notice Get the current balance of a coin within the
+            pool, less the accrued admin fees
+    @param i Index value for the coin to query balance of
+    @return Token balance
     """
-    allowance: uint256 = self.allowance[msg.sender][_spender] - _subtracted_value
-    self.allowance[msg.sender][_spender] = allowance
+    return self._balances()[i]
 
-    log Approval(msg.sender, _spender, allowance)
 
-    return True
+@view
+@external
+def get_balances() -> uint256[N_COINS]:
+    return self._balances()
+
+
+@view
+@internal
+def _A() -> uint256:
+    """
+    Handle ramping A up or down
+    """
+    t1: uint256 = self.future_A_time
+    A1: uint256 = self.future_A
+
+    if block.timestamp < t1:
+        A0: uint256 = self.initial_A
+        t0: uint256 = self.initial_A_time
+        # Expressions in uint256 cannot have negative numbers, thus "if"
+        if A1 > A0:
+            return A0 + (A1 - A0) * (block.timestamp - t0) / (t1 - t0)
+        else:
+            return A0 - (A0 - A1) * (block.timestamp - t0) / (t1 - t0)
+
+    else:  # when t1 == 0 or block.timestamp >= t1
+        return A1
+
+
+@view
+@external
+def admin_fee() -> uint256:
+    return ADMIN_FEE
+
+
+@view
+@external
+def A() -> uint256:
+    return self._A() / A_PRECISION
+
+
+@view
+@external
+def A_precise() -> uint256:
+    return self._A()
+
+
+@pure
+@internal
+def _xp_mem(_rates: uint256[N_COINS], _balances: uint256[N_COINS]) -> uint256[N_COINS]:
+    result: uint256[N_COINS] = empty(uint256[N_COINS])
+    for i in range(N_COINS):
+        result[i] = _rates[i] * _balances[i] / PRECISION
+    return result
+
+
+@pure
+@internal
+def get_D(_xp: uint256[N_COINS], _amp: uint256) -> uint256:
+    """
+    D invariant calculation in non-overflowing integer operations
+    iteratively
+
+    A * sum(x_i) * n**n + D = A * D * n**n + D**(n+1) / (n**n * prod(x_i))
+
+    Converging solution:
+    D[j+1] = (A * n**n * sum(x_i) - D[j]**(n+1) / (n**n prod(x_i))) / (A * n**n - 1)
+    """
+    S: uint256 = 0
+    for x in _xp:
+        S += x
+    if S == 0:
+        return 0
+
+    D: uint256 = S
+    Ann: uint256 = _amp * N_COINS
+    for i in range(255):
+        D_P: uint256 = D * D / _xp[0] * D / _xp[1] / (N_COINS)**2
+        Dprev: uint256 = D
+        D = (Ann * S / A_PRECISION + D_P * N_COINS) * D / ((Ann - A_PRECISION) * D / A_PRECISION + (N_COINS + 1) * D_P)
+        # Equality with the precision of 1
+        if D > Dprev:
+            if D - Dprev <= 1:
+                return D
+        else:
+            if Dprev - D <= 1:
+                return D
+    # convergence typically occurs in 4 rounds or less, this should be unreachable!
+    # if it does happen the pool is borked and LPs can withdraw via `remove_liquidity`
+    raise
+
+
+@view
+@internal
+def get_D_mem(_rates: uint256[N_COINS], _balances: uint256[N_COINS], _amp: uint256) -> uint256:
+    xp: uint256[N_COINS] = self._xp_mem(_rates, _balances)
+    return self.get_D(xp, _amp)
+
+
+@view
+@external
+def get_virtual_price() -> uint256:
+    """
+    @notice The current virtual price of the pool LP token
+    @dev Useful for calculating profits
+    @return LP token virtual price normalized to 1e18
+    """
+    amp: uint256 = self._A()
+    balances: uint256[N_COINS] = self._balances()
+    xp: uint256[N_COINS] = self._xp_mem(RATE_MULTIPLIERS, balances)
+    D: uint256 = self.get_D(xp, amp)
+    # D is in the units similar to DAI (e.g. converted to precision 1e18)
+    # When balanced, D = n * x_u - total virtual value of the portfolio
+    return D * PRECISION / self.totalSupply
+
+
+@view
+@external
+def calc_token_amount(_amounts: uint256[N_COINS], _is_deposit: bool) -> uint256:
+    """
+    @notice Calculate addition or reduction in token supply from a deposit or withdrawal
+    @dev This calculation accounts for slippage, but not fees.
+         Needed to prevent front-running, not for precise calculations!
+    @param _amounts Amount of each coin being deposited
+    @param _is_deposit set True for deposits, False for withdrawals
+    @return Expected amount of LP tokens received
+    """
+    amp: uint256 = self._A()
+    balances: uint256[N_COINS] = self._balances()
+
+    D0: uint256 = self.get_D_mem(RATE_MULTIPLIERS, balances, amp)
+    for i in range(N_COINS):
+        amount: uint256 = _amounts[i]
+        if _is_deposit:
+            balances[i] += amount
+        else:
+            balances[i] -= amount
+    D1: uint256 = self.get_D_mem(RATE_MULTIPLIERS, balances, amp)
+    diff: uint256 = 0
+    if _is_deposit:
+        diff = D1 - D0
+    else:
+        diff = D0 - D1
+    return diff * self.totalSupply / D0
+
 
 @external
-def add_reward(_reward_token: address, _distributor: address):
+@nonreentrant('lock')
+def add_liquidity(
+    _amounts: uint256[N_COINS],
+    _min_mint_amount: uint256,
+    _receiver: address = msg.sender
+) -> uint256:
     """
-    @notice Set the active reward contract
+    @notice Deposit coins into the pool
+    @param _amounts List of amounts of coins to deposit
+    @param _min_mint_amount Minimum amount of LP tokens to mint from the deposit
+    @param _receiver Address that owns the minted LP tokens
+    @return Amount of LP tokens received by depositing
     """
-    assert msg.sender == self.admin  # dev: only owner
+    amp: uint256 = self._A()
+    old_balances: uint256[N_COINS] = self._balances()
+    rates: uint256[N_COINS] = RATE_MULTIPLIERS
 
-    reward_count: uint256 = self.reward_count
-    assert reward_count < MAX_REWARDS
-    assert self.reward_data[_reward_token].distributor == ZERO_ADDRESS
+    # Initial invariant
+    D0: uint256 = self.get_D_mem(rates, old_balances, amp)
 
-    self.reward_data[_reward_token].distributor = _distributor
-    self.reward_tokens[reward_count] = _reward_token
-    self.reward_count = reward_count + 1
+    total_supply: uint256 = self.totalSupply
+    new_balances: uint256[N_COINS] = old_balances
+    for i in range(N_COINS):
+        amount: uint256 = _amounts[i]
+        if amount > 0:
+            coin: address = COINS[i]
+            initial: uint256 = ERC20(coin).balanceOf(self)
+            response: Bytes[32] = raw_call(
+                coin,
+                concat(
+                    method_id("transferFrom(address,address,uint256)"),
+                    convert(msg.sender, bytes32),
+                    convert(self, bytes32),
+                    convert(amount, bytes32),
+                ),
+                max_outsize=32,
+            )
+            if len(response) > 0:
+                assert convert(response, bool)  # dev: failed transfer
+            new_balances[i] += ERC20(coin).balanceOf(self) - initial
+        else:
+            assert total_supply != 0  # dev: initial deposit requires all coins
+
+    # Invariant after change
+    D1: uint256 = self.get_D_mem(rates, new_balances, amp)
+    assert D1 > D0
+
+    # We need to recalculate the invariant accounting for fees
+    # to calculate fair user's share
+    fees: uint256[N_COINS] = empty(uint256[N_COINS])
+    mint_amount: uint256 = 0
+    if total_supply > 0:
+        # Only account for fees if we are not the first to deposit
+        base_fee: uint256 = self.fee * N_COINS / (4 * (N_COINS - 1))
+        for i in range(N_COINS):
+            ideal_balance: uint256 = D1 * old_balances[i] / D0
+            difference: uint256 = 0
+            new_balance: uint256 = new_balances[i]
+            if ideal_balance > new_balance:
+                difference = ideal_balance - new_balance
+            else:
+                difference = new_balance - ideal_balance
+            fees[i] = base_fee * difference / FEE_DENOMINATOR
+            self.admin_balances[i] += fees[i] * ADMIN_FEE / FEE_DENOMINATOR
+            new_balances[i] -= fees[i]
+        D2: uint256 = self.get_D_mem(rates, new_balances, amp)
+        mint_amount = total_supply * (D2 - D0) / D0
+    else:
+        mint_amount = D1  # Take the dust if there was any
+
+    assert mint_amount >= _min_mint_amount, "Slippage screwed you"
+
+    # Mint pool tokens
+    total_supply += mint_amount
+    self.balanceOf[_receiver] += mint_amount
+    self.totalSupply = total_supply
+    log Transfer(ZERO_ADDRESS, _receiver, mint_amount)
+
+    log AddLiquidity(msg.sender, _amounts, fees, D1, total_supply)
+
+    return mint_amount
+
+
+@view
+@internal
+def get_y(i: int128, j: int128, x: uint256, xp: uint256[N_COINS]) -> uint256:
+    """
+    Calculate x[j] if one makes x[i] = x
+
+    Done by solving quadratic equation iteratively.
+    x_1**2 + x_1 * (sum' - (A*n**n - 1) * D / (A * n**n)) = D ** (n + 1) / (n ** (2 * n) * prod' * A)
+    x_1**2 + b*x_1 = c
+
+    x_1 = (x_1**2 + c) / (2*x_1 + b)
+    """
+    # x in the input is converted to the same price/precision
+
+    assert i != j       # dev: same coin
+    assert j >= 0       # dev: j below zero
+    assert j < N_COINS  # dev: j above N_COINS
+
+    # should be unreachable, but good for safety
+    assert i >= 0
+    assert i < N_COINS
+
+    amp: uint256 = self._A()
+    D: uint256 = self.get_D(xp, amp)
+    S_: uint256 = 0
+    _x: uint256 = 0
+    y_prev: uint256 = 0
+    c: uint256 = D
+    Ann: uint256 = amp * N_COINS
+
+    for _i in range(N_COINS):
+        if _i == i:
+            _x = x
+        elif _i != j:
+            _x = xp[_i]
+        else:
+            continue
+        S_ += _x
+        c = c * D / (_x * N_COINS)
+
+    c = c * D * A_PRECISION / (Ann * N_COINS)
+    b: uint256 = S_ + D * A_PRECISION / Ann  # - D
+    y: uint256 = D
+
+    for _i in range(255):
+        y_prev = y
+        y = (y*y + c) / (2 * y + b - D)
+        # Equality with the precision of 1
+        if y > y_prev:
+            if y - y_prev <= 1:
+                return y
+        else:
+            if y_prev - y <= 1:
+                return y
+    raise
+
+
+@view
+@external
+def get_dy(i: int128, j: int128, dx: uint256) -> uint256:
+    """
+    @notice Calculate the current output dy given input dx
+    @dev Index values can be found via the `coins` public getter method
+    @param i Index value for the coin to send
+    @param j Index valie of the coin to recieve
+    @param dx Amount of `i` being exchanged
+    @return Amount of `j` predicted
+    """
+    rates: uint256[N_COINS] = RATE_MULTIPLIERS
+    xp: uint256[N_COINS] = self._xp_mem(rates, self._balances())
+
+    x: uint256 = xp[i] + (dx * rates[i] / PRECISION)
+    y: uint256 = self.get_y(i, j, x, xp)
+    dy: uint256 = xp[j] - y - 1
+    fee: uint256 = self.fee * dy / FEE_DENOMINATOR
+    return (dy - fee) * PRECISION / rates[j]
+
 
 @external
-def set_reward_distributor(_reward_token: address, _distributor: address):
-    current_distributor: address = self.reward_data[_reward_token].distributor
+@nonreentrant('lock')
+def exchange(
+    i: int128,
+    j: int128,
+    _dx: uint256,
+    _min_dy: uint256,
+    _receiver: address = msg.sender,
+) -> uint256:
+    """
+    @notice Perform an exchange between two coins
+    @dev Index values can be found via the `coins` public getter method
+    @param i Index value for the coin to send
+    @param j Index valie of the coin to recieve
+    @param _dx Amount of `i` being exchanged
+    @param _min_dy Minimum amount of `j` to receive
+    @return Actual amount of `j` received
+    """
+    rates: uint256[N_COINS] = RATE_MULTIPLIERS
+    old_balances: uint256[N_COINS] = self._balances()
+    xp: uint256[N_COINS] = self._xp_mem(rates, old_balances)
 
-    assert msg.sender == current_distributor or msg.sender == self.admin
-    assert current_distributor != ZERO_ADDRESS
-    assert _distributor != ZERO_ADDRESS
-
-    self.reward_data[_reward_token].distributor = _distributor
-
-
-@external
-@nonreentrant("lock")
-def deposit_reward_token(_reward_token: address, _amount: uint256):
-    assert msg.sender == self.reward_data[_reward_token].distributor
-
-    self._checkpoint_rewards(ZERO_ADDRESS, self.totalSupply, False, ZERO_ADDRESS)
-
+    coin: address = COINS[i]
+    dx: uint256 = ERC20(coin).balanceOf(self)
     response: Bytes[32] = raw_call(
-        _reward_token,
+        coin,
         concat(
             method_id("transferFrom(address,address,uint256)"),
             convert(msg.sender, bytes32),
             convert(self, bytes32),
-            convert(_amount, bytes32),
+            convert(_dx, bytes32),
         ),
         max_outsize=32,
     )
-    if len(response) != 0:
+    if len(response) > 0:
+        assert convert(response, bool)
+    dx = ERC20(coin).balanceOf(self) - dx
+
+    x: uint256 = xp[i] + dx * rates[i] / PRECISION
+    y: uint256 = self.get_y(i, j, x, xp)
+
+    dy: uint256 = xp[j] - y - 1  # -1 just in case there were some rounding errors
+    dy_fee: uint256 = dy * self.fee / FEE_DENOMINATOR
+
+    # Convert all to real units
+    dy = (dy - dy_fee) * PRECISION / rates[j]
+    assert dy >= _min_dy, "Exchange resulted in fewer coins than expected"
+
+    self.admin_balances[j] += (dy_fee * ADMIN_FEE / FEE_DENOMINATOR) * PRECISION / rates[j]
+
+    response = raw_call(
+        COINS[j],
+        concat(
+            method_id("transfer(address,uint256)"),
+            convert(_receiver, bytes32),
+            convert(dy, bytes32),
+        ),
+        max_outsize=32,
+    )
+    if len(response) > 0:
         assert convert(response, bool)
 
-    period_finish: uint256 = self.reward_data[_reward_token].period_finish
-    if block.timestamp >= period_finish:
-        self.reward_data[_reward_token].rate = _amount / WEEK
-    else:
-        remaining: uint256 = period_finish - block.timestamp
-        leftover: uint256 = remaining * self.reward_data[_reward_token].rate
-        self.reward_data[_reward_token].rate = (_amount + leftover) / WEEK
+    log TokenExchange(msg.sender, i, _dx, j, dy)
 
-    self.reward_data[_reward_token].last_update = block.timestamp
-    self.reward_data[_reward_token].period_finish = block.timestamp + WEEK
+    return dy
 
-    log RewardDataUpdate(_reward_token,_amount)
 
 @external
-def commit_transfer_ownership(addr: address):
+@nonreentrant('lock')
+def remove_liquidity(
+    _burn_amount: uint256,
+    _min_amounts: uint256[N_COINS],
+    _receiver: address = msg.sender
+) -> uint256[N_COINS]:
     """
-    @notice Transfer ownership of Gauge to `addr`
-    @param addr Address to have ownership transferred to
+    @notice Withdraw coins from the pool
+    @dev Withdrawal amounts are based on current deposit ratios
+    @param _burn_amount Quantity of LP tokens to burn in the withdrawal
+    @param _min_amounts Minimum amounts of underlying coins to receive
+    @param _receiver Address that receives the withdrawn coins
+    @return List of amounts of coins that were withdrawn
     """
-    assert msg.sender == self.admin  # dev: admin only
-    assert addr != ZERO_ADDRESS  # dev: future admin cannot be the 0 address
+    total_supply: uint256 = self.totalSupply
+    amounts: uint256[N_COINS] = empty(uint256[N_COINS])
+    balances: uint256[N_COINS] = self._balances()
 
-    self.future_admin = addr
-    log CommitOwnership(addr)
+    for i in range(N_COINS):
+        value: uint256 = balances[i] * _burn_amount / total_supply
+        assert value >= _min_amounts[i], "Withdrawal resulted in fewer coins than expected"
+        amounts[i] = value
+
+        response: Bytes[32] = raw_call(
+            COINS[i],
+            concat(
+                method_id("transfer(address,uint256)"),
+                convert(_receiver, bytes32),
+                convert(value, bytes32),
+            ),
+            max_outsize=32,
+        )
+        if len(response) > 0:
+            assert convert(response, bool)
+
+    total_supply -= _burn_amount
+    self.balanceOf[msg.sender] -= _burn_amount
+    self.totalSupply = total_supply
+    log Transfer(msg.sender, ZERO_ADDRESS, _burn_amount)
+
+    log RemoveLiquidity(msg.sender, amounts, empty(uint256[N_COINS]), total_supply)
+
+    return amounts
+
+
+@external
+@nonreentrant('lock')
+def remove_liquidity_imbalance(
+    _amounts: uint256[N_COINS],
+    _max_burn_amount: uint256,
+    _receiver: address = msg.sender
+) -> uint256:
+    """
+    @notice Withdraw coins from the pool in an imbalanced amount
+    @param _amounts List of amounts of underlying coins to withdraw
+    @param _max_burn_amount Maximum amount of LP token to burn in the withdrawal
+    @param _receiver Address that receives the withdrawn coins
+    @return Actual amount of the LP token burned in the withdrawal
+    """
+    amp: uint256 = self._A()
+    old_balances: uint256[N_COINS] = self._balances()
+    rates: uint256[N_COINS] = RATE_MULTIPLIERS
+    D0: uint256 = self.get_D_mem(rates, old_balances, amp)
+
+    new_balances: uint256[N_COINS] = old_balances
+    for i in range(N_COINS):
+        amount: uint256 = _amounts[i]
+        if amount != 0:
+            new_balances[i] -= amount
+            response: Bytes[32] = raw_call(
+                COINS[i],
+                concat(
+                    method_id("transfer(address,uint256)"),
+                    convert(_receiver, bytes32),
+                    convert(amount, bytes32),
+                ),
+                max_outsize=32,
+            )
+            if len(response) > 0:
+                assert convert(response, bool)
+    D1: uint256 = self.get_D_mem(rates, new_balances, amp)
+
+    fees: uint256[N_COINS] = empty(uint256[N_COINS])
+    base_fee: uint256 = self.fee * N_COINS / (4 * (N_COINS - 1))
+    for i in range(N_COINS):
+        ideal_balance: uint256 = D1 * old_balances[i] / D0
+        difference: uint256 = 0
+        new_balance: uint256 = new_balances[i]
+        if ideal_balance > new_balance:
+            difference = ideal_balance - new_balance
+        else:
+            difference = new_balance - ideal_balance
+        fees[i] = base_fee * difference / FEE_DENOMINATOR
+        self.admin_balances[i] += fees[i] * ADMIN_FEE / FEE_DENOMINATOR
+        new_balances[i] -= fees[i]
+    D2: uint256 = self.get_D_mem(rates, new_balances, amp)
+
+    total_supply: uint256 = self.totalSupply
+    burn_amount: uint256 = ((D0 - D2) * total_supply / D0) + 1
+    assert burn_amount > 1  # dev: zero tokens burned
+    assert burn_amount <= _max_burn_amount, "Slippage screwed you"
+
+    total_supply -= burn_amount
+    self.totalSupply = total_supply
+    self.balanceOf[msg.sender] -= burn_amount
+    log Transfer(msg.sender, ZERO_ADDRESS, burn_amount)
+    log RemoveLiquidityImbalance(msg.sender, _amounts, fees, D1, total_supply)
+
+    return burn_amount
+
+
+@pure
+@internal
+def get_y_D(A: uint256, i: int128, xp: uint256[N_COINS], D: uint256) -> uint256:
+    """
+    Calculate x[i] if one reduces D from being calculated for xp to D
+
+    Done by solving quadratic equation iteratively.
+    x_1**2 + x_1 * (sum' - (A*n**n - 1) * D / (A * n**n)) = D ** (n + 1) / (n ** (2 * n) * prod' * A)
+    x_1**2 + b*x_1 = c
+
+    x_1 = (x_1**2 + c) / (2*x_1 + b)
+    """
+    # x in the input is converted to the same price/precision
+
+    assert i >= 0  # dev: i below zero
+    assert i < N_COINS  # dev: i above N_COINS
+
+    S_: uint256 = 0
+    _x: uint256 = 0
+    y_prev: uint256 = 0
+    c: uint256 = D
+    Ann: uint256 = A * N_COINS
+
+    for _i in range(N_COINS):
+        if _i != i:
+            _x = xp[_i]
+        else:
+            continue
+        S_ += _x
+        c = c * D / (_x * N_COINS)
+
+    c = c * D * A_PRECISION / (Ann * N_COINS)
+    b: uint256 = S_ + D * A_PRECISION / Ann
+    y: uint256 = D
+
+    for _i in range(255):
+        y_prev = y
+        y = (y*y + c) / (2 * y + b - D)
+        # Equality with the precision of 1
+        if y > y_prev:
+            if y - y_prev <= 1:
+                return y
+        else:
+            if y_prev - y <= 1:
+                return y
+    raise
+
+
+@view
+@internal
+def _calc_withdraw_one_coin(_burn_amount: uint256, i: int128) -> uint256[2]:
+    # First, need to calculate
+    # * Get current D
+    # * Solve Eqn against y_i for D - _token_amount
+    amp: uint256 = self._A()
+    rates: uint256[N_COINS] = RATE_MULTIPLIERS
+    xp: uint256[N_COINS] = self._xp_mem(rates, self._balances())
+    D0: uint256 = self.get_D(xp, amp)
+
+    total_supply: uint256 = self.totalSupply
+    D1: uint256 = D0 - _burn_amount * D0 / total_supply
+    new_y: uint256 = self.get_y_D(amp, i, xp, D1)
+
+    base_fee: uint256 = self.fee * N_COINS / (4 * (N_COINS - 1))
+    xp_reduced: uint256[N_COINS] = empty(uint256[N_COINS])
+
+    for j in range(N_COINS):
+        dx_expected: uint256 = 0
+        xp_j: uint256 = xp[j]
+        if j == i:
+            dx_expected = xp_j * D1 / D0 - new_y
+        else:
+            dx_expected = xp_j - xp_j * D1 / D0
+        xp_reduced[j] = xp_j - base_fee * dx_expected / FEE_DENOMINATOR
+
+    dy: uint256 = xp_reduced[i] - self.get_y_D(amp, i, xp_reduced, D1)
+    dy_0: uint256 = (xp[i] - new_y) * PRECISION / rates[i]  # w/o fees
+    dy = (dy - 1) * PRECISION / rates[i]  # Withdraw less to account for rounding errors
+
+    return [dy, dy_0 - dy]
+
+
+@view
+@external
+def calc_withdraw_one_coin(_burn_amount: uint256, i: int128) -> uint256:
+    """
+    @notice Calculate the amount received when withdrawing a single coin
+    @param _burn_amount Amount of LP tokens to burn in the withdrawal
+    @param i Index value of the coin to withdraw
+    @return Amount of coin received
+    """
+    return self._calc_withdraw_one_coin(_burn_amount, i)[0]
+
+
+@external
+@nonreentrant('lock')
+def remove_liquidity_one_coin(
+    _burn_amount: uint256,
+    i: int128,
+    _min_received: uint256,
+    _receiver: address = msg.sender,
+) -> uint256:
+    """
+    @notice Withdraw a single coin from the pool
+    @param _burn_amount Amount of LP tokens to burn in the withdrawal
+    @param i Index value of the coin to withdraw
+    @param _min_received Minimum amount of coin to receive
+    @param _receiver Address that receives the withdrawn coins
+    @return Amount of coin received
+    """
+    dy: uint256[2] = self._calc_withdraw_one_coin(_burn_amount, i)
+    assert dy[0] >= _min_received, "Not enough coins removed"
+
+    self.admin_balances[i] += dy[1] * ADMIN_FEE / FEE_DENOMINATOR
+    total_supply: uint256 = self.totalSupply - _burn_amount
+    self.totalSupply = total_supply
+    self.balanceOf[msg.sender] -= _burn_amount
+    log Transfer(msg.sender, ZERO_ADDRESS, _burn_amount)
+
+    response: Bytes[32] = raw_call(
+        COINS[i],
+        concat(
+            method_id("transfer(address,uint256)"),
+            convert(_receiver, bytes32),
+            convert(dy[0], bytes32),
+        ),
+        max_outsize=32,
+    )
+    if len(response) > 0:
+        assert convert(response, bool)
+
+    log RemoveLiquidityOne(msg.sender, _burn_amount, dy[0], total_supply)
+
+    return dy[0]
+
+
+@external
+def ramp_A(_future_A: uint256, _future_time: uint256):
+    assert msg.sender == self.owner  # dev: only owner
+    assert block.timestamp >= self.initial_A_time + MIN_RAMP_TIME
+    assert _future_time >= block.timestamp + MIN_RAMP_TIME  # dev: insufficient time
+
+    _initial_A: uint256 = self._A()
+    _future_A_p: uint256 = _future_A * A_PRECISION
+
+    assert _future_A > 0 and _future_A < MAX_A
+    if _future_A_p < _initial_A:
+        assert _future_A_p * MAX_A_CHANGE >= _initial_A
+    else:
+        assert _future_A_p <= _initial_A * MAX_A_CHANGE
+
+    self.initial_A = _initial_A
+    self.future_A = _future_A_p
+    self.initial_A_time = block.timestamp
+    self.future_A_time = _future_time
+
+    log RampA(_initial_A, _future_A_p, block.timestamp, _future_time)
+
+
+@external
+def stop_ramp_A():
+    assert msg.sender == self.owner  # dev: only owner
+
+    current_A: uint256 = self._A()
+    self.initial_A = current_A
+    self.future_A = current_A
+    self.initial_A_time = block.timestamp
+    self.future_A_time = block.timestamp
+    # now (block.timestamp < t1) is always False, so we return saved A
+
+    log StopRampA(current_A, block.timestamp)
+
+
+@external
+def withdraw_admin_fees():
+    assert msg.sender == self.owner
+
+    for i in range(N_COINS):
+        amount: uint256 = self.admin_balances[i]
+        if amount != 0:
+            coin: address = COINS[i]
+            raw_call(
+                coin,
+                concat(
+                    method_id("transfer(address,uint256)"),
+                    convert(msg.sender, bytes32),
+                    convert(amount, bytes32)
+                )
+            )
+            self.admin_balances[i] = 0
+
+
+@external
+def commit_transfer_ownership(_future_owner: address):
+    assert msg.sender == self.owner
+
+    self.future_owner = _future_owner
 
 
 @external
 def accept_transfer_ownership():
-    """
-    @notice Accept a pending ownership transfer
-    """
-    _admin: address = self.future_admin
-    assert msg.sender == _admin  # dev: future admin only
+    assert msg.sender == self.future_owner
 
-    self.admin = _admin
-    log ApplyOwnership(_admin)
+    log TransferOwnership(self.owner, msg.sender)
+    self.owner = msg.sender
 
+
+@pure
 @external
-def recover_erc20(token: address, addr: address, amount: uint256):
-    """
-    @notice Recovers tokens sent or accruing to this contract
-    @param token Token to be recovered
-    @param addr Address to send the token to
-    @param amount Amount of tokens to send
-    """
-    assert msg.sender == self.admin  # dev: only owner
-    assert token != self.staking_token  # dev: invalid token
-    if token == self: 
-        self._transfer(self, addr, amount)
-    else:
-        ERC20(token).transfer(addr, amount)
+def version() -> String[8]:
+    return VERSION
+
+
+@pure
+@external
+def coins(_i: uint256) -> address:
+    return COINS[_i]
+
+
+@pure
+@external
+def name() -> String[64]:
+    return NAME
+
+
+@pure
+@external
+def symbol() -> String[32]:
+    return SYMBOL
+
+
+@pure
+@external
+def DOMAIN_SEPARATOR() -> bytes32:
+    return DOMAIN_SEPARATOR

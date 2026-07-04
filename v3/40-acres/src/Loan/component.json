@@ -1,15 +1,55 @@
 {
   "component": "Loan",
   "main_contract": "Loan",
-  "source_file_count": 32,
-  "deployment_count": 5,
+  "source_file_count": 29,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2acf5cde1f0ccaed7cc9b457df0232eb87cacdec",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x16e2e82c4ae824595a7ff3c800ddca748bb3e4d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x20b7cd27079f37d382020937d525999c75b97f84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2dee03524a04aac3cca030dacb40cb3a8e517a6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5122f5154df20e5f29df53e633ce1ac5b6623558",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6ca57c1ffba953a7c8bfba8380e08959bc691712",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x761e200b06c87646c5918ec521426794d1d43c35",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,31 +57,7 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x71a28faed365f65ce924ce8810a14139f8476341",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe2addcb41d3a03a9761fb2110dcad99b6ff7e108",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xf535d5e8e65c3959135ea0eb12bfe38c3a5caf27",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xf755ece7eb7035c935d9de4b7b56bb4846f249c4",
+      "address": "0x371d2b977e9f3b780ee0a032ae664edc5db234e1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

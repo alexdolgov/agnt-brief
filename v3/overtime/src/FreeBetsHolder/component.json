@@ -2,10 +2,26 @@
   "component": "FreeBetsHolder",
   "main_contract": "FreeBetsHolder",
   "source_file_count": 23,
-  "deployment_count": 7,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xdb6ba1bd74b9c06b6d952ed3e42e1ac0516a9221",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfd314aa2f4255b22e463b51f8ebd82eaa92ef2af",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

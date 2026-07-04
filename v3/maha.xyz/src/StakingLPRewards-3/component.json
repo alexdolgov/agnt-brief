@@ -1,0 +1,18 @@
+{
+  "component": "StakingLPRewards-3",
+  "main_contract": "StakingLPRewards",
+  "source_file_count": 31,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xeb2419ce8391d80c2b4eb75373e053352d760e6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

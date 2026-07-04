@@ -1,0 +1,18 @@
+{
+  "component": "NFTXVaultUpgradeableV3-2",
+  "main_contract": "NFTXVaultUpgradeableV3",
+  "source_file_count": 93,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe263cfb78a1923a93e1625f43f33f55594527dda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

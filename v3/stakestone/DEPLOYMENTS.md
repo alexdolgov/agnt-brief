@@ -1,14 +1,16 @@
 # stakestone — deployments
 
-158 verified deployment(s) across 83 component(s).
+175 verified deployment(s) across 90 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0xd2012fc1b913ce50732ebcaa7e601fe37ac728c6` | StoneCross-2 | impl | live | yes |
+| bsc | `0x15469528c11e8ace863f3f9e5a8329216e33dd7d` | StoneBTC | impl | live | yes |
 | bsc | `0x18eb3ebc2c24502afbe42afd29ccb7e0a8525fe6` | STONEUSDStaking | impl | live | no |
 | bsc | `0x1a24e31afa95e88ebdfda34a7cb18abcf992bd4e` | ReferralRegistry | impl | live | no |
 | bsc | `0x1f3994c851696fabc9742b53558334950b8b1bf4` | GenesisExpedition | impl | live | no |
 | bsc | `0x2a6dc77ae8c6112336826af3743a6a2ca6165c3c` | GenesisExpedition | impl | live | no |
+| bsc | `0x3421981450758e341f2b91397bb7b76a556cb20b` | StoneBTC | impl | live | yes |
 | bsc | `0x3a6dae1caf8df7f37dc2418e2ff336a5057e28c9` | STOStaking | impl | live | no |
 | bsc | `0x3aa0670e24cb122e1d5307ed74b0c44d619aff9b` | StoneBTCVault | impl | live | yes |
 | bsc | `0x46319f1a5e7bd21b89897de87679a4662cf59fd0` | RewardDistributor | impl | live | no |
@@ -17,15 +19,21 @@
 | bsc | `0x5cd3cc345cd6c8c3889c539c325e24e6fdfe632f` | STONEUSDStaking | impl | live | no |
 | bsc | `0x627a17ec3baa4c8678b4670d57a8ccd1e8580b06` | STOStaking | impl | live | no |
 | bsc | `0x693a0649c24318008cf1d4d5ee4ac070f92e58da` | AsyncVault | impl | inactive | no |
+| bsc | `0x7122985656e38bdc0302db86685bb972b145bd3c` | StoneBTCLayerZeroAdapter-2 | impl | live | yes |
 | bsc | `0x80137510979822322193fc997d400d5a6c747bf7` | StoneCross | impl | live | yes |
+| bsc | `0x8449e6886bf865d522e10cc420f92b980c6b223d` | AccessRegistry-2 | impl | live | yes |
 | bsc | `0x84c58b92725a6abbaf859e53f4bcd95c8cd1fc5f` | RewardDistributor | impl | live | no |
+| bsc | `0x8b4e28607bdcacbf937f81f29e3dafe7bc1d7c0b` | Token-3 | impl | live | yes |
 | bsc | `0x8dd2aa28b0a4cf7d918713c4013befd903125968` | STONEUSDStaking | impl | live | no |
 | bsc | `0x9f269f8f2c1e2b952ebe5b1447d860c96f8d69b4` | GenesisExpedition | impl | live | no |
+| bsc | `0xa0a2917cb9fbf3159730cb502e83cc7b32202c7f` | StoneBTC | impl | live | yes |
 | bsc | `0xa3ac2f9d7345883512f503c4709ddbd434fab007` | ReferralRegistry | impl | live | no |
 | bsc | `0xa5224855c09603ead17345934de341e51a9f448d` | ReferralRegistry | impl | live | no |
 | bsc | `0xaee11824eb86ddb04bf763720ee2b5b882fa225d` | STOStaking | impl | live | no |
 | bsc | `0xc2f513f7d87462c180e963df85822cfd411d35cb` | RewardDistributor | impl | live | no |
 | bsc | `0xc716b79d4d7e26ab23ae21e7f96e392792a52f21` | STOStaking | impl | live | no |
+| bsc | `0xd081be7f329e13c4097cfa3668f1e690cde9c08d` | StoneBTC | impl | live | yes |
+| bsc | `0xdaf1695c41327b61b9b9965ac6a5843a3198cf07` | Token | impl | live | yes |
 | bsc | `0xdcb29a10b3f40c01268489281f6b9b52eeaa5bbb` | GenesisExpedition | impl | live | no |
 | bsc | `0xe33da1193f1142c337bc7b2bcededd56a220f1db` | GenesisExpedition | impl | live | no |
 | bsc | `0xe38f0dbf50cee3b6997ea901f29012ced3049af6` | ReferralRegistry | impl | live | no |
@@ -43,13 +51,14 @@
 | ethereum | `0x055e84e7fe8955e2781010b866f10ef6e1e77e59` | LombardTimeLock | impl | live | no |
 | ethereum | `0x072072317469ebb6c340a47e41561c9c3b782bd9` | StakedLBTC | impl | live | no |
 | ethereum | `0x081d9019b016d7879b3aa4b278728771bfdb0b29` | WithdrawController | impl | live | yes |
-| ethereum | `0x094c0e36210634c3cfa25dc11b96b562e0b07624` | StoneBTC | impl | live | yes |
+| ethereum | `0x094c0e36210634c3cfa25dc11b96b562e0b07624` | StoneBTC-2 | impl | live | yes |
 | ethereum | `0x0a265bd3007931079d2eaf5ed8bddadc7156a976` | StoneOFT | impl | live | yes |
 | ethereum | `0x0bca0fb61480530e87dddbb3bb5f0539c97eae88` | StakeAndBakeNativeToken | impl | live | no |
 | ethereum | `0x0de028af168524f3557615d2f0ef9943e6731ee4` | Token | impl | live | yes |
 | ethereum | `0x12364c9d095a2a43abb71b0d8313663ff0348eea` | LBTC | impl | live | no |
 | ethereum | `0x1290a6b480f7ef14925229fdb66f5680ad8f44ad` | LBTCOFTAdapter | impl | live | no |
 | ethereum | `0x1565db133d0108e911224f174ec12d20f1531a76` | DepositHelper | impl | inactive | no |
+| ethereum | `0x17091b36bd06bb7a60d2c36e30b68c7d5508d168` | Token-2 | impl | live | yes |
 | ethereum | `0x1b67c2908ef408f6612e025fe3cf12c8507a4717` | Bridge | impl | inactive | no |
 | ethereum | `0x1b70ff1e5152fdb8425a2b84b098df2f9c1df54e` | DepositBridge | impl | live | yes |
 | ethereum | `0x1d88713b483a8e45cff0e5cd7c2e15e5fab4534d` | STO | impl | live | yes |
@@ -63,6 +72,7 @@
 | ethereum | `0x2c1d3d359ea322efb31d6d1be6a1d9bc67f531e5` | StoneOracle | impl | live | yes |
 | ethereum | `0x2d70868f12a05b8c347974415bac5de053daa376` | NativeLendingETHStrategy | impl | live | yes |
 | ethereum | `0x2e1871fc8ac793dcf2a74ce004ee21d913763565` | LombardConsortium | impl | inactive | no |
+| ethereum | `0x2ea78379520380d37b0708a0294664a3ab626b74` | Token-2 | impl | live | yes |
 | ethereum | `0x2fa6f067713ef12f1de276326f8f44fbcd6d9d2d` | Escrow | impl | live | yes |
 | ethereum | `0x37e92d760a15231e652a2c502182a6b44c7510c0` | LBTCOFTAdapter | impl | live | no |
 | ethereum | `0x396abf9ff46e21694f4ef01ca77c6d7893a017b2` | StrategyController | impl | live | yes |
@@ -84,10 +94,11 @@
 | ethereum | `0x5eddcfe6b829621487a00e3b3d211ef80986de9a` | OneDayDelayTimelockController | impl | live | yes |
 | ethereum | `0x61003ba35d6f57e0b61442bc88c2c7a45bf56095` | Mailbox | impl | live | no |
 | ethereum | `0x67927d7ea19f9a1053f4f5bbdf827ed9870f1a1b` | LombardConsortium | impl | inactive | no |
+| ethereum | `0x6a6e3a4396993a4ec98a6f4a654cc0819538721e` | Token-3 | impl | live | yes |
 | ethereum | `0x6b89d757668a830f17d693a88d46073501df635d` | NativeLBTC | impl | live | no |
 | ethereum | `0x6bc15d7930839ec18a57f6f7df72ae1b439d077f` | LBTCOFTAdapter | impl | live | no |
 | ethereum | `0x6be197c89104335dcb026b28eb3ae08ab83af7b3` | NativeLBTC | impl | live | no |
-| ethereum | `0x6c344c6191fee58f0de2604721f596efbc9f7822` | StoneBTC | impl | live | yes |
+| ethereum | `0x6c344c6191fee58f0de2604721f596efbc9f7822` | StoneBTC-2 | impl | live | yes |
 | ethereum | `0x6cd42e64630d25406bfc51cca65cffa7cd495fb1` | OracleConfigurator | impl | live | yes |
 | ethereum | `0x6db63b7b2a6401efe60ee92efe9d7f1cb65c9cd6` | StakedLBTCOracle | impl | live | no |
 | ethereum | `0x7122985656e38bdc0302db86685bb972b145bd3c` | Stone | impl | live | yes |
@@ -111,6 +122,7 @@
 | ethereum | `0x8f88ae3798e8ff3d0e0de7465a0863c9bbb577f0` | StoneBeraVault | impl | live | yes |
 | ethereum | `0x9088d8a41744e9cca78d01e6185f2acb81be497a` | StakeAndBake | impl | live | no |
 | ethereum | `0x9485711f11b17f73f2ccc8561bcae05bdc7e9ad9` | AssetsVault | impl | live | yes |
+| ethereum | `0x97ad75064b20fb2b2447fed4fa953bf7f007a706` | Token-2 | impl | live | yes |
 | ethereum | `0x9972c10a42ddce1d9a4735e97258ffd50c35c697` | IBCVoucher | impl | inactive | no |
 | ethereum | `0x9a7ca5e9d6713e9844c073bfe288a8c87b080ed2` | ERC4626VaultWrapper | impl | live | no |
 | ethereum | `0x9bcf92ad4aa45f6f5038afc4a15a02419fb9dc66` | StoneBTCOFT | impl | inactive | no |
@@ -129,6 +141,7 @@
 | ethereum | `0xacb11bc20b1945e59976e3307d2a805faa126c31` | LBTCOFTAdapter | impl | live | no |
 | ethereum | `0xb09b4ec73ad3a23fbe8542ff0e248e01d4cb6628` | WETHOracle | impl | live | yes |
 | ethereum | `0xb1381900c742b509cf2b23d6b293649ea875654c` | StoryPreDepositVault | impl | live | no |
+| ethereum | `0xb28ecfc8ae218bc2c16c1f2218a9cc799191b1a7` | Token-4 | impl | live | yes |
 | ethereum | `0xb2fb032dace7aae3d5749ccd67da4dd12034ae5a` | FBTCPartnerVault | impl | inactive | no |
 | ethereum | `0xb310890b6ea10e97f903edcc8964aad125257ddb` | StoryPreDepositVault | impl | live | no |
 | ethereum | `0xb3fc739972795e0f2a8da00173ee9cf834b54541` | StoneCarnival-2 | impl | live | no |
@@ -142,12 +155,14 @@
 | ethereum | `0xc337baf4c7bd22292011614cb7c86472a3901612` | ERC4626VaultWrapper | impl | live | no |
 | ethereum | `0xc3ecfe771564e3f28cfb7a9b203f4d10279338ed` | GMPBasculeV1 | impl | live | no |
 | ethereum | `0xc40329d3ae56af6b0757c3fe53941ddcc3d92671` | DepositHelper | impl | inactive | no |
+| ethereum | `0xc620cb64c6c504f417da517048ae2dab7cca75fa` | Token-2 | impl | live | yes |
 | ethereum | `0xc785247dc5a51223aeae23668c24a1a79841a235` | Mailbox | impl | live | no |
 | ethereum | `0xcd4d5571c61108f61787f388425fcf844255a928` | AssetRouter | impl | live | no |
 | ethereum | `0xcf9f37f06d75274c610fb5e428f38273afc1cd0d` | MiningPool | impl | inactive | no |
 | ethereum | `0xcfeac622bc6464acc759acd9741a6d78f8b0d3cd` | LBTCOFTAdapter | impl | inactive | no |
+| ethereum | `0xd7f311a29b54e13b0a6c97027ece4a41cbe9ea38` | Token-2 | impl | live | yes |
 | ethereum | `0xdaf1695c41327b61b9b9965ac6a5843a3198cf07` | DepositBridge-2 | impl | live | yes |
-| ethereum | `0xdc939bee0e1ccd198a5af5ac1f90ea0b8ee03cd0` | StoneBTC | impl | live | yes |
+| ethereum | `0xdc939bee0e1ccd198a5af5ac1f90ea0b8ee03cd0` | StoneBTC-2 | impl | live | yes |
 | ethereum | `0xe9b7ccfc7d05028bd8214bd04f9b4fa7c734d574` | MellowDepositWstETHStrategy | impl | live | yes |
 | ethereum | `0xea96d98d9a947b68899365202a43890a4d38db19` | DepositHelper-2 | impl | live | no |
 | ethereum | `0xeac3f8b89f8aab1c6bf664b4b65830b8c9d34ce7` | ERC4626VaultWrapper | impl | live | no |
@@ -160,26 +175,7 @@
 | ethereum | `0xf70beca8d49ae12002bf251db1229ffad3ac541c` | TellerWithMultiAssetSupportDepositor | impl | inactive | no |
 | ethereum | `0xfb4cb3f473203fac25d292701e3274c298909a03` | DepositBridge | impl | live | yes |
 | ethereum | `0xfc38d40277f76a49cf5b512a7361eb1dde36972f` | AssetRouter | impl | live | no |
+| ethereum | `0xfd47eb1084ebdb3f1ae000cbd213420b398bda70` | Token-4 | impl | live | yes |
 | ethereum | `0xfd97796442ae3f8d1bc2043b3efae67eb6b866cf` | StakeStoneRewardDistributor | impl | live | no |
 | linea | `0x93f4d0ab6a8b4271f4a28db399b5e30612d21116` | StoneCross-3 | impl | live | yes |
-
-## Source unavailable (17)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0x15469528c11e8ace863f3f9e5a8329216e33dd7d`
-- bsc `0x3421981450758e341f2b91397bb7b76a556cb20b`
-- bsc `0x7122985656e38bdc0302db86685bb972b145bd3c`
-- bsc `0x8449e6886bf865d522e10cc420f92b980c6b223d`
-- bsc `0x8b4e28607bdcacbf937f81f29e3dafe7bc1d7c0b`
-- bsc `0xa0a2917cb9fbf3159730cb502e83cc7b32202c7f`
-- bsc `0xd081be7f329e13c4097cfa3668f1e690cde9c08d`
-- bsc `0xdaf1695c41327b61b9b9965ac6a5843a3198cf07`
-- ethereum `0x17091b36bd06bb7a60d2c36e30b68c7d5508d168`
-- ethereum `0x2ea78379520380d37b0708a0294664a3ab626b74`
-- ethereum `0x6a6e3a4396993a4ec98a6f4a654cc0819538721e`
-- ethereum `0x97ad75064b20fb2b2447fed4fa953bf7f007a706`
-- ethereum `0xb28ecfc8ae218bc2c16c1f2218a9cc799191b1a7`
-- ethereum `0xc620cb64c6c504f417da517048ae2dab7cca75fa`
-- ethereum `0xd7f311a29b54e13b0a6c97027ece4a41cbe9ea38`
-- ethereum `0xfd47eb1084ebdb3f1ae000cbd213420b398bda70`
-- scroll `0x4f9f1333cffa3e0dca98736e260442a86d918501`
+| scroll | `0x4f9f1333cffa3e0dca98736e260442a86d918501` | StoneBTCLayerZeroAdapter-3 | impl | live | yes |

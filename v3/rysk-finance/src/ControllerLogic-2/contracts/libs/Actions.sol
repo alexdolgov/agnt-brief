@@ -46,8 +46,8 @@ library Actions {
         WithdrawCollateral,
         SettleVault,
         Redeem,
-        Call, // DEPRECATED
-        Liquidate // DEPRECATED
+        Call,
+        Liquidate
     }
 
     struct ActionArgs {
@@ -107,7 +107,7 @@ library Actions {
         address owner;
         // vault id to create
         uint256 vaultId;
-        // vault type, 0 for spread/max loss, 2 for physially settled
+        // vault type, 0 for spread/max loss and 1 for naked margin vault, 2 for physially settled
         uint256 vaultType;
     }
 
@@ -161,6 +161,19 @@ library Actions {
         address to;
     }
 
+    struct LiquidateArgs {
+        // address of the vault owner to liquidate
+        address owner;
+        // address of the liquidated collateral receiver
+        address receiver;
+        // vault id to liquidate
+        uint256 vaultId;
+        // amount of debt(otoken) to repay
+        uint256 amount;
+        // chainlink round id
+        uint256 roundId;
+    }
+
     /**
      * @notice parses the passed in action arguments to get the arguments for an open vault action
      * @param _args general action arguments structure
@@ -178,8 +191,8 @@ library Actions {
             vaultType = abi.decode(_args.data, (uint256));
         }
 
-        // we only have fully collateralised/spread vaults (type 0) and  physically settled vaults (type 2) in this version
-        require(vaultType == 0 || vaultType == 2, "A3");
+        // for now we only have 3 vault types
+        require(vaultType < 3, "A3");
 
         return OpenVaultArgs({owner: _args.owner, vaultId: _args.vaultId, vaultType: vaultType});
     }
@@ -294,5 +307,24 @@ library Actions {
         require(_args.secondAddress != address(0), "A17");
 
         return SettleVaultArgs({owner: _args.owner, vaultId: _args.vaultId, to: _args.secondAddress});
+    }
+
+    function _parseLiquidateArgs(ActionArgs memory _args) internal pure returns (LiquidateArgs memory) {
+        require(_args.actionType == ActionType.Liquidate, "A18");
+        require(_args.owner != address(0), "A19");
+        require(_args.secondAddress != address(0), "A20");
+        require(_args.data.length == 32, "A21");
+
+        // decode chainlink round id from _args.data
+        uint256 roundId = abi.decode(_args.data, (uint256));
+
+        return
+            LiquidateArgs({
+                owner: _args.owner,
+                receiver: _args.secondAddress,
+                vaultId: _args.vaultId,
+                amount: _args.amount,
+                roundId: roundId
+            });
     }
 }

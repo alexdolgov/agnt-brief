@@ -20,11 +20,7 @@
 
 pragma solidity ^0.8.9;
 
-import { IEventEmitterRegistry } from "./IEventEmitterRegistry.sol";
-import { IExpiry } from "./IExpiry.sol";
 import { IGenericTraderProxyV1 } from "./IGenericTraderProxyV1.sol";
-import { ILiquidatorAssetRegistry } from "./ILiquidatorAssetRegistry.sol";
-import { IDolomitePriceOracle } from "../../protocol/interfaces/IDolomitePriceOracle.sol";
 
 
 /**
@@ -40,11 +36,7 @@ interface IDolomiteRegistry {
     // ========================================================
 
     event GenericTraderProxySet(address indexed _genericTraderProxy);
-    event ExpirySet(address indexed _expiry);
-    event SlippageToleranceForPauseSentinelSet(uint256 _slippageTolerance);
-    event LiquidatorAssetRegistrySet(address indexed _liquidatorAssetRegistry);
-    event EventEmitterSet(address indexed _eventEmitter);
-    event ChainlinkPriceOracleSet(address indexed _chainlinkPriceOracle);
+    event SlippageToleranceForPauseSentinelSet(uint256 slippageTolerance);
 
     // ========================================================
     // =================== Admin Functions ====================
@@ -58,35 +50,10 @@ interface IDolomiteRegistry {
 
     /**
      *
-     * @param  _expiry  The new address of the expiry contract
-     */
-    function ownerSetExpiry(address _expiry) external;
-
-    /**
-     *
      * @param  _slippageToleranceForPauseSentinel   The slippage tolerance (using 1e18 as the base) for zaps when pauses
      *                                              are enabled
      */
     function ownerSetSlippageToleranceForPauseSentinel(uint256 _slippageToleranceForPauseSentinel) external;
-
-    /**
-     *
-     * @param  _liquidatorRegistry  The new address of the liquidator registry
-     */
-    function ownerSetLiquidatorAssetRegistry(address _liquidatorRegistry) external;
-
-    /**
-     *
-     * @param  _eventEmitter  The new address of the event emitter
-     */
-    function ownerSetEventEmitter(address _eventEmitter) external;
-
-    /**
-     *
-     * @param  _chainlinkPriceOracle    The new address of the Chainlink price oracle that's compatible with
-     *                                  DolomiteMargin.
-     */
-    function ownerSetChainlinkPriceOracle(address _chainlinkPriceOracle) external;
 
     // ========================================================
     // =================== Getter Functions ===================
@@ -98,29 +65,9 @@ interface IDolomiteRegistry {
     function genericTraderProxy() external view returns (IGenericTraderProxyV1);
 
     /**
-     * @return  The address of the expiry contract
-     */
-    function expiry() external view returns (IExpiry);
-
-    /**
      * @return  The slippage tolerance (using 1e18 as the base) for zaps when pauses are enabled
      */
     function slippageToleranceForPauseSentinel() external view returns (uint256);
-
-    /**
-     * @return  The address of the liquidator asset registry contract
-     */
-    function liquidatorAssetRegistry() external view returns (ILiquidatorAssetRegistry);
-
-    /**
-     * @return The address of the emitter contract that can emit certain events for indexing
-     */
-    function eventEmitter() external view returns (IEventEmitterRegistry);
-
-    /**
-     * @return The address of the Chainlink price oracle that's compatible with DolomiteMargin
-     */
-    function chainlinkPriceOracle() external view returns (IDolomitePriceOracle);
 
     /**
      * @return The base (denominator) for the slippage tolerance variable. Always 1e18.

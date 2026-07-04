@@ -2,7 +2,7 @@
   "component": "AerodromeStakingIncentiveCalculator",
   "main_contract": "AerodromeStakingIncentiveCalculator",
   "source_file_count": 63,
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc8756b85c5e7c2ab0aa675fd606aa91e14e6ef01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
     },
     {
       "chain": "base",

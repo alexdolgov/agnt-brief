@@ -1,0 +1,18 @@
+{
+  "component": "StakePrizePoolProxyFactory-3",
+  "main_contract": "StakePrizePoolProxyFactory",
+  "source_file_count": 34,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xafcea072bcbad91029a2ba0b37bac8269dd4f5e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

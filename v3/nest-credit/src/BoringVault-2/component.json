@@ -1,0 +1,45 @@
+{
+  "component": "BoringVault-2",
+  "main_contract": "BoringVault",
+  "source_file_count": 14,
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf",
+    "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x119dd7daff816f29d7ee47596ae5e4bdc4299165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x119dd7daff816f29d7ee47596ae5e4bdc4299165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

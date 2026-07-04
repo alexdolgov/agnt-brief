@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity =0.7.6;
+pragma solidity ^0.7.0;
 
-import {Constants} from "../global/Constants.sol";
+import "../global/Constants.sol";
 
 library SafeInt256 {
     int256 private constant _INT256_MIN = type(int256).min;
@@ -83,50 +83,11 @@ library SafeInt256 {
         return int256(x);
     }
 
-    function toInt80(int256 x) internal pure returns (int80) {
-        require (int256(type(int80).min) <= x && x <= int256(type(int80).max)); // dev: toInt overflow
-        return int80(x);
-    }
-
-    function toInt88(int256 x) internal pure returns (int88) {
-        require (int256(type(int88).min) <= x && x <= int256(type(int88).max)); // dev: toInt overflow
-        return int88(x);
-    }
-
-    function toInt128(int256 x) internal pure returns (int128) {
-        require (int256(type(int128).min) <= x && x <= int256(type(int128).max)); // dev: toInt overflow
-        return int128(x);
-    }
-
     function max(int256 x, int256 y) internal pure returns (int256) {
         return x > y ? x : y;
     }
 
     function min(int256 x, int256 y) internal pure returns (int256) {
         return x < y ? x : y;
-    }
-
-    /// @notice Returns the net change in negative signed values, used for
-    /// determining the (positive) amount of debt change
-    function negChange(int256 start, int256 end) internal pure returns (int256) {
-        // No change in these two scenarios
-        if (start == end || (start >= 0 && end >= 0)) return 0;
-        if (start <= 0 && 0 < end) {
-            // Negative portion has been eliminated so the net change on the
-            // negative side is start (i.e. a reduction in the negative balance)
-            return start;
-        } else if (end <= 0 && 0 < start) {
-            // Entire negative portion has been created so the net change on the
-            // negative side is -end (i.e. an increase in the negative balance)
-            return neg(end);
-        } else if (start <= 0 && end <= 0) {
-            // There is some net change in the negative amounts.
-            // If start < end then this is negative, debt has been reduced
-            // If end < start then this is positive, debt has been increased
-            return sub(start, end);
-        }
-
-        // Should never get to this point
-        revert();
     }
 }

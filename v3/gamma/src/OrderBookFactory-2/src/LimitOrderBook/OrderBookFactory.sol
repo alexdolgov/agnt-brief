@@ -190,6 +190,8 @@ contract OrderBookFactory is AccessControl {
     // Hook owner delegates (hookOwner => delegate => allowed)
     mapping(address => mapping(address => bool)) public hookOwnerDelegates;
 
+    uint256 internal constant HOOK_SALT_MAX_LOOP = 1_600_000;
+
     // Events for tracking pool creation
     event PoolCreated(bytes32 indexed poolId, address indexed creator, address indexed hook, uint24 fee);
     event PoolInfoStored(address indexed user, bytes32 indexed poolId, bool isDynamic);
@@ -200,8 +202,10 @@ contract OrderBookFactory is AccessControl {
     event PoolCreationFeeCollected(address indexed creator, uint256 fee);
     event FeesWithdrawn(address indexed recipient, uint256 amount);
     event DynamicFeeRegistryUpdated(address indexed oldRegistry, address indexed newRegistry);
+    event DynamicFeeLimitOrderRegistryUpdated(address indexed oldRegistry, address indexed newRegistry);
     event VolatilityDynamicRegistryUpdated(address indexed oldRegistry, address indexed newRegistry);
-    event PoolReserved(bytes32 indexed poolId, bytes32 indexed callerSalt, address indexed strategy);
+    event VolatilityDynamicLimitOrderRegistryUpdated(address indexed oldRegistry, address indexed newRegistry);
+    event PoolReserved(bytes32 indexed poolId, address indexed strategy);
     event PoolReservationCleared(bytes32 indexed poolId);
     event AuthorizedStrategyFactorySet(address indexed factory);
     event VolatilityHookDeployed(address indexed hookOwner, address indexed hookAddr);
@@ -894,14 +898,14 @@ contract OrderBookFactory is AccessControl {
         if (_registry == address(0)) revert ZeroAddress();
         address oldRegistry = address(dynamicFeeLimitOrderRegistry);
         dynamicFeeLimitOrderRegistry = DynamicFeeLimitOrderHookRegistry(_registry);
-        emit DynamicFeeRegistryUpdated(oldRegistry, _registry);
+        emit DynamicFeeLimitOrderRegistryUpdated(oldRegistry, _registry);
     }
 
     function setVolatilityDynamicLimitOrderRegistry(address _registry) external onlyRole(DEFAULT_ADMIN_ROLE) {
         if (_registry == address(0)) revert ZeroAddress();
         address oldRegistry = address(volatilityDynamicLimitOrderRegistry);
         volatilityDynamicLimitOrderRegistry = VolatilityDynamicFeeLimitOrderHookRegistry(_registry);
-        emit VolatilityDynamicRegistryUpdated(oldRegistry, _registry);
+        emit VolatilityDynamicLimitOrderRegistryUpdated(oldRegistry, _registry);
     }
 
     function setDynamicFeeRegistry(address _registry) external onlyRole(DEFAULT_ADMIN_ROLE) {
@@ -980,6 +984,60 @@ contract OrderBookFactory is AccessControl {
         (hookAddress, salt) = HookMiner.find(
             factory, flags, creationCode, constructorArgs
         );
+    }
+
+    /// @notice Compute a caller-bound hook salt seed for volatility dynamic limit order hooks
+    /// @dev Finds `saltSeed` such that `effectiveSalt = keccak256(abi.encode(saltSeed, callerSalt))`
+    ///      deploys to a valid hook address (correct flag bits + undeployed).
+    ///      This allows caller-unique pool IDs while keeping CREATE2-mined hook flags.
+    function computeCallerBoundSaltForVolatilityDynamicLimitOrder(
+        address creator,
+        bytes32 callerSalt,
+        address _limitOrderManager,
+        address factory
+    ) public view returns (bytes32 saltSeed, bytes32 effectiveSalt, address hookAddress) {
+        if (sharedVolatilityOracle == address(0)) revert SharedVolatilityOracleNotSet();
+
+        uint160 flags = uint160(
+            Hooks.BEFORE_SWAP_FLAG |
+            Hooks.AFTER_SWAP_FLAG |
+            Hooks.BEFORE_INITIALIZE_FLAG
+        );
+
+        bytes memory creationCodeWithArgs = abi.encodePacked(
+            volatilityDynamicLimitOrderRegistry.getBytecode(),
+            abi.encode(poolManager, _limitOrderManager, sharedVolatilityOracle, creator, factory)
+        );
+        bytes32 initCodeHash = keccak256(creationCodeWithArgs);
+        uint256 ptr;
+        assembly ("memory-safe") {
+            ptr := mload(0x40)
+        }
+
+        for (uint256 seed; seed < HOOK_SALT_MAX_LOOP; seed++) {
+            bytes32 candidateSeed = bytes32(seed);
+            bytes32 derivedSalt;
+            address candidateHookAddress;
+            assembly ("memory-safe") {
+                // derivedSalt = keccak256(abi.encode(candidateSeed, callerSalt))
+                mstore(ptr, candidateSeed)
+                mstore(add(ptr, 0x20), callerSalt)
+                derivedSalt := keccak256(ptr, 0x40)
+
+                // candidateHookAddress = address(uint160(uint256(keccak256(0xff ++ factory ++ derivedSalt ++ initCodeHash))))
+                mstore8(ptr, 0xff)
+                mstore(add(ptr, 0x01), shl(96, factory))
+                mstore(add(ptr, 0x15), derivedSalt)
+                mstore(add(ptr, 0x35), initCodeHash)
+                candidateHookAddress := and(keccak256(ptr, 0x55), 0xffffffffffffffffffffffffffffffffffffffff)
+            }
+
+            if (uint160(candidateHookAddress) & Hooks.ALL_HOOK_MASK == flags && candidateHookAddress.code.length == 0) {
+                return (candidateSeed, derivedSalt, candidateHookAddress);
+            }
+        }
+
+        revert("HookMiner: could not find salt");
     }
 
     // ============ FEE-ONLY SALT COMPUTATION FUNCTIONS ============
@@ -1216,13 +1274,12 @@ contract OrderBookFactory is AccessControl {
     /// @notice Reserve a pool ID for a specific strategy contract
     /// @dev Only the authorized strategy factory can call this
     /// @param poolId The pool ID to reserve
-    /// @param callerSalt The caller-unique salt from LiquidityLauncher (emitted for indexing)
     /// @param strategy The strategy contract that will be authorized to create this pool
-    function reservePoolForStrategy(bytes32 poolId, bytes32 callerSalt, address strategy) external {
+    function reservePoolForStrategy(bytes32 poolId, address strategy) external {
         if (msg.sender != authorizedStrategyFactory) revert NotAuthorizedStrategyFactory();
         if (reservedPools[poolId] != address(0)) revert PoolAlreadyReserved();
         reservedPools[poolId] = strategy;
-        emit PoolReserved(poolId, callerSalt, strategy);
+        emit PoolReserved(poolId, strategy);
     }
 
     /// @notice Compute the pool ID for a volatility dynamic limit order pool

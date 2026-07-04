@@ -1,0 +1,26 @@
+{
+  "component": "UniswapV3Connector-13",
+  "main_contract": "UniswapV3Connector",
+  "source_file_count": 30,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xc128738f3d1841bbd9312cbc95c79b46aaf8b746",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe0266ee8cbec26c86b62e71362588577d6b13a68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,29 +1,39 @@
 # goplus-security — deployments
 
-95 verified deployment(s) across 58 component(s).
+109 verified deployment(s) across 64 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d` | TokenTemplate-2 | impl | live | no |
-| base | `0x043f4036202c54da27583a996a8c4b9471931a64` | LockFactory | impl | live | no |
+| arbitrum | `0x0d648ed434f95f812e6a0e9b74825bad03579027` | SafeTokenFactory | impl | live | no |
+| arbitrum | `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d` | TokenTemplate | impl | live | no |
+| arbitrum | `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52` | UniV3LPLocker-3 | impl | live | no |
+| arbitrum | `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b` | TokenLocker | impl | live | no |
+| base | `0x043f4036202c54da27583a996a8c4b9471931a64` | LockFactory-5 | impl | live | no |
 | base | `0x0c1dc73159e30c4b06170f2593d3118968a0dca5` | GPS | impl | live | no |
-| base | `0x0d648ed434f95f812e6a0e9b74825bad03579027` | SafeTokenFactory-2 | impl | live | no |
-| base | `0x41f3e9948d4e97e547d800acfd31df9fd741e41b` | UniV4LiquidityLocker | impl | inactive | no |
-| base | `0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e` | UniV4LiquidityLocker-2 | impl | live | no |
-| base | `0xf5cdadd3cb89a69ab72da3cfd93c505c1b9fcca1` | UniV4LiquidityLocker | impl | live | no |
+| base | `0x0d648ed434f95f812e6a0e9b74825bad03579027` | SafeTokenFactory | impl | live | no |
+| base | `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d` | TokenTemplate | impl | inactive | no |
+| base | `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52` | UniV3LPLocker | impl | live | no |
+| base | `0x41f3e9948d4e97e547d800acfd31df9fd741e41b` | UniV4LiquidityLocker-2 | impl | inactive | no |
+| base | `0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e` | UniV4LiquidityLocker | impl | live | no |
+| base | `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b` | TokenLocker | impl | live | no |
+| base | `0xf5cdadd3cb89a69ab72da3cfd93c505c1b9fcca1` | UniV4LiquidityLocker-2 | impl | live | no |
 | bsc | `0x03fea9ce48489480d2c028803127d1d3542f2263` | PriceOracleV2 | impl | inactive | no |
 | bsc | `0x09beddae85a9b5ada57a5bd7979bb7b3dd08b538` | Bond | impl | inactive | no |
-| bsc | `0x0a478109e214433bc1e4211465e0586db2f101ea` | UniV3LPLocker | impl | inactive | no |
+| bsc | `0x0a478109e214433bc1e4211465e0586db2f101ea` | UniV3LPLocker-2 | impl | inactive | no |
+| bsc | `0x0d648ed434f95f812e6a0e9b74825bad03579027` | SafeTokenFactory | impl | inactive | no |
 | bsc | `0x0dd6d9c60bc6799acaad9be3ff9c583259cddfca` | SecWareRouter | impl | inactive | no |
 | bsc | `0x19c34d93f6cef657491fc3469e8d40f0600a2b8c` | StakingLock | impl | inactive | no |
 | bsc | `0x19f2fea21afe95a2b5ab86210bb46ed36418ed43` | PriceOracleV2 | impl | inactive | no |
+| bsc | `0x1ecb68eac981a1e51c68fac9a866e724fc1716c0` | LockFactory | impl | inactive | no |
 | bsc | `0x2435c2bafc8c94cda5d5f67222b32905d15af105` | InukoBondCallback | impl | inactive | no |
 | bsc | `0x2465aefee3ea53432ba11677c70340cac980f05e` | PriceOracleV2 | impl | inactive | no |
-| bsc | `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52` | UniV3LPLocker | impl | live | no |
+| bsc | `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d` | TokenTemplate | impl | inactive | no |
+| bsc | `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52` | UniV3LPLocker-2 | impl | live | no |
 | bsc | `0x34ebddd30ccbd3f1e385b41bdadb30412323e34f` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0x3dac57a43e729908602dfde7bba7355b7fcf4568` | BaseCoinBondCallback | impl | inactive | no |
 | bsc | `0x41f3e9948d4e97e547d800acfd31df9fd741e41b` | PriceBasedTokenLock | impl | inactive | no |
 | bsc | `0x492de7004a0a841e8a083422d4abe9a426cf6afe` | SecWareRouterV2 | impl | inactive | no |
+| bsc | `0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e` | LockFactory-2 | impl | inactive | no |
 | bsc | `0x5226cba094bef40d21e807d8416e86ecd4e30180` | PriceOracleV2 | impl | inactive | no |
 | bsc | `0x5660416b141f4e23fb4afb67aa5ff1af6b793e6d` | PriceOracleV2 | impl | inactive | no |
 | bsc | `0x62d55e1d648dc1076b5e273018122607d9666bea` | TimeLockedWallet | impl | inactive | no |
@@ -31,7 +41,7 @@
 | bsc | `0x69b6e90981ebd92e667bbf10ed506ddca003202d` | PCSInfinityCLLiquidityLocker | impl | inactive | no |
 | bsc | `0x74a3555e5819e174aa19d2d34530fd45064be077` | BondFixedTermTeller | impl | inactive | no |
 | bsc | `0x76b49af932d9dfb85bc979557f87bde3e6c7c4bd` | SecWareRouterV2 | impl | inactive | no |
-| bsc | `0x7aa03d4b9051cf299e7a2272953d0590fee485a4` | TokenLocker | impl | inactive | no |
+| bsc | `0x7aa03d4b9051cf299e7a2272953d0590fee485a4` | TokenLocker-2 | impl | inactive | no |
 | bsc | `0x83eab398539af72bf0f0f6a2aa5814d76a53f7d7` | PCSInfinityCLLiquidityLocker | impl | inactive | no |
 | bsc | `0x8c439e28788ae4a398b9153bdeb804f5821cd731` | BondFixedExpiryTeller | impl | inactive | no |
 | bsc | `0x9b5ea2612a2b9d6c8aff33c549d5a89fe0afe873` | PriceOracle | impl | inactive | no |
@@ -40,6 +50,7 @@
 | bsc | `0xa2e0bdb444ebf2318ef5f6fd27fb7489b21de859` | PCSInfinityCLLiquidityLocker | impl | inactive | no |
 | bsc | `0xa5678f0e0441710ae974c9a197ed33be0aadf7ac` | Bond | impl | inactive | no |
 | bsc | `0xaa5cd63ed1dd43211937e7540fc7c87a2203a32a` | BondFixedTermTeller | impl | inactive | no |
+| bsc | `0xad7590728471eb9b2704053d560e7aa06c036141` | LockFactory-3 | impl | inactive | no |
 | bsc | `0xb5ecc4a5023840a284987f2e91aac24e25ad1237` | Bond | impl | inactive | no |
 | bsc | `0xc1efad66c0b0685a188b6b31ac08616b19eebef5` | SecWareFactory | impl | inactive | no |
 | bsc | `0xcc27c182bdd2a986830854fb56885cd56d6c0e27` | BaseCoinBondCallback | impl | inactive | no |
@@ -47,19 +58,20 @@
 | bsc | `0xe693519cf534c167b7166d8c17234a1b0a01dd47` | InverseBond | impl | inactive | no |
 | bsc | `0xea51801b8f5b88543ddad3d1727400c15b209d8f` | INUKO | impl | inactive | no |
 | bsc | `0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78` | StakingLock-2 | impl | live | no |
-| bsc | `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b` | TokenLocker | impl | live | no |
+| bsc | `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b` | TokenLocker-2 | impl | live | no |
+| bsc | `0xf5cdadd3cb89a69ab72da3cfd93c505c1b9fcca1` | LockFactory-4 | impl | inactive | no |
 | bsc | `0xf5efc4a8fd82cef03d34ae0ed0c31a9566ce4e44` | PriceOracleV2 | impl | inactive | no |
 | bsc | `0xf83ade339f903c53a9613d3aed107f6ada31087f` | StakingLock | impl | inactive | no |
 | ethereum | `0x01c1103d765f62a0d909499d7b615c382cdb072d` | DadFab | impl | inactive | no |
 | ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | inactive | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | inactive | no |
-| ethereum | `0x0d648ed434f95f812e6a0e9b74825bad03579027` | SafeTokenFactory | impl | inactive | no |
+| ethereum | `0x0d648ed434f95f812e6a0e9b74825bad03579027` | SafeTokenFactory-2 | impl | inactive | no |
 | ethereum | `0x0eda20f7499aae7bdadc4e52fd72e49663733ed4` | TopFab | impl | inactive | no |
 | ethereum | `0x0fbbc6a4e951b00b1ac170325763bd4d5149a77f` | FiatTokenV1 | impl | inactive | no |
 | ethereum | `0x141a206ece672e3198086c5d21f7858ad03669ea` | MomFab | impl | inactive | no |
 | ethereum | `0x1e7ca05e174a523709e556080e227f734a8f1483` | DSChiefFab | impl | inactive | no |
-| ethereum | `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d` | TokenTemplate | impl | inactive | no |
-| ethereum | `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52` | UniV3LPLocker-2 | impl | live | no |
+| ethereum | `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d` | TokenTemplate-2 | impl | inactive | no |
+| ethereum | `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52` | UniV3LPLocker | impl | live | no |
 | ethereum | `0x2c67395bbbd658c239f54fb99487aefbbcf95636` | DSToken | impl | inactive | no |
 | ethereum | `0x353f8931ce1c52f643121be129985aab09c4bf52` | WETH | impl | inactive | no |
 | ethereum | `0x408e41876cccdc0f92210600ef50372656052a38` | RepublicToken | impl | inactive | no |
@@ -75,6 +87,7 @@
 | ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | inactive | no |
 | ethereum | `0x68fd0899fedeeee08b77c189d2f8ac38466ea216` | VoxFab | impl | inactive | no |
 | ethereum | `0x69076e44a9c70a67d5b79d95795aba299083c275` | GemPit | impl | inactive | no |
+| ethereum | `0x83eab398539af72bf0f0f6a2aa5814d76a53f7d7` | UniV4LiquidityLocker | impl | live | no |
 | ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | inactive | no |
 | ethereum | `0x8e2a84d6ade1e7fffee039a35ef5f19f13057152` | DSChief | impl | inactive | no |
 | ethereum | `0x97bf1ff371ceabbb9e821480d31dd743c4b71e0e` | DSMath | impl | inactive | no |
@@ -92,28 +105,11 @@
 | ethereum | `0xd13689e8da0ed95b55100e27b7dbc95c03b5259b` | V2_1Upgrader | impl | inactive | no |
 | ethereum | `0xde0aa21af41176cb05e5a80f26dd7949380f0195` | FiatTokenV1 | proxy | inactive | no |
 | ethereum | `0xe5df61285e8492d1d4dd6e4651821383512f012f` | DadFab | impl | inactive | no |
+| ethereum | `0xe7873eb8dda56ed49e51c87185ebcb93958e76f2` | UniV4LiquidityLocker-3 | impl | inactive | no |
 | ethereum | `0xe982615d461dd5cd06575bbea87624fda4e3de17` | MasterMinter | impl | inactive | no |
 | ethereum | `0xec0f22b4339b4adcae3347bd5cad539700ac4beb` | MasterMinter | impl | inactive | no |
 | ethereum | `0xec4d29fd22066e75746eb68cb51d8a7df7d28356` | TubFab | impl | inactive | no |
 | ethereum | `0xed24bd79a3f2ba4325e9c553164e299c65e272fc` | V2Upgrader | impl | inactive | no |
 | ethereum | `0xf07674f6ac6632e253c291b694f9c2e2ed69ebbb` | DaiFab | impl | inactive | no |
-| ethereum | `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b` | TokenLocker-2 | impl | live | no |
+| ethereum | `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b` | TokenLocker | impl | live | no |
 | ethereum | `0xf5b59c107f3f7b1c2a7c3d09234bd0a055ad8d55` | GemPit | impl | inactive | no |
-
-## Source unavailable (14)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x0d648ed434f95f812e6a0e9b74825bad03579027`
-- arbitrum `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`
-- arbitrum `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`
-- base `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d`
-- base `0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`
-- base `0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`
-- bsc `0x0d648ed434f95f812e6a0e9b74825bad03579027`
-- bsc `0x1ecb68eac981a1e51c68fac9a866e724fc1716c0`
-- bsc `0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d`
-- bsc `0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e`
-- bsc `0xad7590728471eb9b2704053d560e7aa06c036141`
-- bsc `0xf5cdadd3cb89a69ab72da3cfd93c505c1b9fcca1`
-- ethereum `0x83eab398539af72bf0f0f6a2aa5814d76a53f7d7`
-- ethereum `0xe7873eb8dda56ed49e51c87185ebcb93958e76f2`

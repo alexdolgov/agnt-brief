@@ -1,7 +1,7 @@
 {
   "component": "SeToken-8",
   "main_contract": "SeToken",
-  "source_file_count": 28,
+  "source_file_count": 15,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xadbfba66c5634825a720c2f23be36ae42367c0bf",
+      "address": "0x69c577f76bdebcaaaae12bcc0c25b692ba33af77",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,7 +17,7 @@
     {
       "chain": "chain-204",
       "chain_id": 204,
-      "address": "0x1d6c4696a2c047807f5d938b046ec38e70bba289",
+      "address": "0x3c6f2c03676ef169714d7fa74ad8eaad8d5ee1d5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

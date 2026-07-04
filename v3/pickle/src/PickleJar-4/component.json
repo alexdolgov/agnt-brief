@@ -1,0 +1,18 @@
+{
+  "component": "PickleJar-4",
+  "main_contract": "PickleJar",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xadd50d6396b53876ac58752e153e3431c1e9ba93",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

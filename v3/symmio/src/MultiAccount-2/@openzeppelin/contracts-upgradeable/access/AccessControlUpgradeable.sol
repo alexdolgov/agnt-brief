@@ -7,7 +7,7 @@ import "./IAccessControlUpgradeable.sol";
 import "../utils/ContextUpgradeable.sol";
 import "../utils/StringsUpgradeable.sol";
 import "../utils/introspection/ERC165Upgradeable.sol";
-import {Initializable} from "../proxy/utils/Initializable.sol";
+import "../proxy/utils/Initializable.sol";
 
 /**
  * @dev Contract module that allows children to implement role-based access
@@ -49,6 +49,11 @@ import {Initializable} from "../proxy/utils/Initializable.sol";
  * to enforce additional security measures for this role.
  */
 abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable, IAccessControlUpgradeable, ERC165Upgradeable {
+    function __AccessControl_init() internal onlyInitializing {
+    }
+
+    function __AccessControl_init_unchained() internal onlyInitializing {
+    }
     struct RoleData {
         mapping(address => bool) members;
         bytes32 adminRole;
@@ -73,11 +78,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
         _;
     }
 
-    function __AccessControl_init() internal onlyInitializing {
-    }
-
-    function __AccessControl_init_unchained() internal onlyInitializing {
-    }
     /**
      * @dev See {IERC165-supportsInterface}.
      */

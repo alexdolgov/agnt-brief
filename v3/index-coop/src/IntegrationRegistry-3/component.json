@@ -1,0 +1,20 @@
+{
+  "component": "IntegrationRegistry-3",
+  "main_contract": "IntegrationRegistry",
+  "source_file_count": 4,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.openzeppelin.com/news/set-protocol-audit"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6655194c95d24b8b10b156dffce22a2c126e2e5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -78,6 +78,7 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
   struct LimitBuyExecution {
     EasyLimitBuyTypeHashLib.LimitBuyOrder order;
     ISignatureTransfer.PermitTransferFrom permit;
+    address owner;
     bytes signature;
     ZapData zapData;
   }
@@ -93,7 +94,7 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
     uint256 vaultTokensReceived
   );
 
-  event LimitBuyFillFailed(bytes32 indexed orderHash, address indexed owner, bytes reason);
+  event LimitBuyFillFailed(bytes32 orderHash, bytes reason);
 
   // ============ Errors ============
 
@@ -129,7 +130,13 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
   /// @param _executions Array of limit buy executions
   function fillLimitBuyBatch(LimitBuyExecution[] calldata _executions) external onlyAuthorizedKeeper {
     for (uint256 i; i < _executions.length; ++i) {
-      _fillLimitBuy(_executions[i].order, _executions[i].permit, _executions[i].signature, _executions[i].zapData);
+      _fillLimitBuy(
+        _executions[i].order,
+        _executions[i].permit,
+        _executions[i].owner,
+        _executions[i].signature,
+        _executions[i].zapData
+      );
     }
   }
 
@@ -143,6 +150,7 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
         this._fillLimitBuyExternal(
           _executions[i].order,
           _executions[i].permit,
+          _executions[i].owner,
           _executions[i].signature,
           _executions[i].zapData
         )
@@ -150,7 +158,7 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
       {
         // Success - event emitted in _fillLimitBuy
       } catch (bytes memory reason) {
-        emit LimitBuyFillFailed(orderHash, _executions[i].order.owner, reason);
+        emit LimitBuyFillFailed(orderHash, reason);
       }
     }
   }
@@ -160,11 +168,12 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
   function _fillLimitBuyExternal(
     EasyLimitBuyTypeHashLib.LimitBuyOrder calldata _order,
     ISignatureTransfer.PermitTransferFrom calldata _permit,
+    address _owner,
     bytes calldata _signature,
     ZapData calldata _zapData
   ) external {
     if (msg.sender != address(this)) revert UnauthorizedCaller(msg.sender);
-    _fillLimitBuy(_order, _permit, _signature, _zapData);
+    _fillLimitBuy(_order, _permit, _owner, _signature, _zapData);
   }
 
   // ============ Internal Functions ============
@@ -172,6 +181,7 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
   function _fillLimitBuy(
     EasyLimitBuyTypeHashLib.LimitBuyOrder calldata _order,
     ISignatureTransfer.PermitTransferFrom calldata _permit,
+    address _owner,
     bytes calldata _signature,
     ZapData calldata _zapData
   ) internal {
@@ -200,19 +210,8 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
     FillExecution memory exec;
     exec.orderHash = EasyLimitBuyTypeHashLib.hashLimitBuyOrder(_order);
 
-    // Calculate expected vault tokens from ORIGINAL input (before any swap)
-    // This single slippage check covers both swap and deposit
-    uint256 expectedVaultTokens = easySwapperV2.depositQuote(
-      _order.targetVault,
-      _permit.permitted.token,
-      _permit.permitted.amount
-    );
-    exec.minVaultTokens =
-      (expectedVaultTokens * (SLIPPAGE_DENOMINATOR - _order.slippageToleranceBps)) /
-      SLIPPAGE_DENOMINATOR;
-
     // Transfer tokens from user via Permit2
-    _transferFromUser(_permit, _order.owner, exec.orderHash, _signature);
+    _transferFromUser(_permit, _owner, exec.orderHash, _signature);
 
     // Execute swap if needed, or use input directly
     if (useZap) {
@@ -226,18 +225,13 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
       exec.depositAmount = _permit.permitted.amount;
     }
 
-    // Execute deposit
-    exec.vaultTokensReceived = _executeDeposit(_order.targetVault, exec.depositToken, exec.depositAmount, _order.owner);
-
-    // Verify slippage tolerance (covers both swap and deposit)
-    if (exec.vaultTokensReceived < exec.minVaultTokens) {
-      revert InsufficientVaultTokensReceived(exec.minVaultTokens, exec.vaultTokensReceived);
-    }
+    // Execute deposit and verify slippage
+    exec.vaultTokensReceived = _executeDeposit(_order, exec.depositToken, exec.depositAmount, _owner);
 
     // Emit event
     emit LimitBuyFilled({
       orderHash: exec.orderHash,
-      user: _order.owner,
+      user: _owner,
       targetVault: _order.targetVault,
       inputToken: _permit.permitted.token,
       inputAmount: _permit.permitted.amount,
@@ -339,26 +333,37 @@ contract EasyLimitBuyManager is AuthorizedKeepers, ICommonErrors {
 
   /// @notice Execute deposit to vault
   function _executeDeposit(
-    address _targetVault,
+    EasyLimitBuyTypeHashLib.LimitBuyOrder calldata _order,
     address _depositToken,
     uint256 _depositAmount,
     address _recipient
   ) internal returns (uint256 vaultTokensReceived_) {
+    // Get expected vault tokens from quote
+    uint256 expectedVaultTokens = easySwapperV2.depositQuote(_order.targetVault, _depositToken, _depositAmount);
+
+    // Apply slippage tolerance
+    uint256 minVaultTokens = (expectedVaultTokens * (SLIPPAGE_DENOMINATOR - _order.slippageToleranceBps)) /
+      SLIPPAGE_DENOMINATOR;
+
     // Approve vault to spend deposit token
-    IERC20OZ(_depositToken).safeIncreaseAllowance(_targetVault, _depositAmount);
+    IERC20OZ(_depositToken).safeIncreaseAllowance(_order.targetVault, _depositAmount);
 
     // Determine cooldown: use custom if vault is whitelisted, otherwise default
-    uint256 cooldown = easySwapperV2.customCooldownDepositsWhitelist(_targetVault)
+    uint256 cooldown = easySwapperV2.customCooldownDepositsWhitelist(_order.targetVault)
       ? easySwapperV2.customCooldown()
       : DEFAULT_COOLDOWN;
 
     // Execute deposit - vault tokens go to recipient
-    vaultTokensReceived_ = IPoolLogic(_targetVault).depositForWithCustomCooldown(
+    vaultTokensReceived_ = IPoolLogic(_order.targetVault).depositForWithCustomCooldown(
       _recipient,
       _depositToken,
       _depositAmount,
-      cooldown,
-      address(0)
+      cooldown
     );
+
+    // Verify minimum received
+    if (vaultTokensReceived_ < minVaultTokens) {
+      revert InsufficientVaultTokensReceived(minVaultTokens, vaultTokensReceived_);
+    }
   }
 }

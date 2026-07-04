@@ -1,0 +1,26 @@
+{
+  "component": "Automator-6",
+  "main_contract": "Automator",
+  "source_file_count": 31,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcc46d2fde6b6eb9ab9f2c8e39802020c8ca4299",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xae19eb52cca56c178d695b4d823d81b5f3829bb1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    }
+  ]
+}

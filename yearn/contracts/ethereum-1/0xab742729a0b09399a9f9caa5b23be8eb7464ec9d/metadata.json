@@ -1,0 +1,17 @@
+{
+  "address": "0xab742729a0b09399a9f9caa5b23be8eb7464ec9d",
+  "chain_id": 1,
+  "contract_name": "Permissionless yETH deposit/withdrawal facility",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000001bed97cbc3c24a4fb5c069c6e311a967386131f7000000000000000000000000583019ff0f430721ada9cfb4fac8f06ca104d0b400000000000000000000000095be6555f5c734f4e2169e746c533f40aca50be6",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:54.013Z"
+}

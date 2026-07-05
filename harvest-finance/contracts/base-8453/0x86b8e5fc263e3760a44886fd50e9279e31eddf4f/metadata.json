@@ -1,0 +1,18 @@
+{
+  "address": "0x86b8e5fc263e3760a44886fd50e9279e31eddf4f",
+  "chain_id": 8453,
+  "contract_name": "CLVault",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xab128139cbcedab336cafd69163fd78baaeb6dfa",
+  "fetched_at": "2026-07-05T14:11:49.182Z"
+}

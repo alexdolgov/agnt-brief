@@ -1,0 +1,18 @@
+{
+  "address": "0x129ccee12a9542ff77e066e6f8d7df49f8cbf89d",
+  "chain_id": 56,
+  "contract_name": "Vault",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xf8ce90c2710713552fb564869694b2505bfc0846",
+  "fetched_at": "2026-07-05T14:11:17.255Z"
+}

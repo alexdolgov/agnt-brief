@@ -1,0 +1,18 @@
+{
+  "address": "0xa7641acbc1e85a7ed70ea7bcffb91afb12ad0c54",
+  "chain_id": 1,
+  "contract_name": "PendleStrategy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.034Z"
+}

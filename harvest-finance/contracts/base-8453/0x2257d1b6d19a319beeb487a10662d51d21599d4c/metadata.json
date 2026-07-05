@@ -1,0 +1,17 @@
+{
+  "address": "0x2257d1b6d19a319beeb487a10662d51d21599d4c",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyV2Mainnet_wrsETH",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 245,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.096Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x32809307a554535ac7a4b0f41bb08a7d3b7a4f35",
+  "chain_id": 8453,
+  "contract_name": "FusionFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 110,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:26.046Z"
+}

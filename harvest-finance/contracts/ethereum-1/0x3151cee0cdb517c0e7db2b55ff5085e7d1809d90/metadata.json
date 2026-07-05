@@ -1,0 +1,18 @@
+{
+  "address": "0x3151cee0cdb517c0e7db2b55ff5085e7d1809d90",
+  "chain_id": 1,
+  "contract_name": "PlasmaVaultBase",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 62,
+  "constructor_arguments": "",
+  "implementation_address": "0x9781413baff29db7bebdc52c475c780591c7b37b",
+  "fetched_at": "2026-07-05T14:11:24.921Z"
+}

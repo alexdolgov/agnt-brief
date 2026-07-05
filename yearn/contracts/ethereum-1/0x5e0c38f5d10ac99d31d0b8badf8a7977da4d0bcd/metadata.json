@@ -1,0 +1,18 @@
+{
+  "address": "0x5e0c38f5d10ac99d31d0b8badf8a7977da4d0bcd",
+  "chain_id": 1,
+  "contract_name": "YPrismaForwarderCallbackMinterV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.789Z"
+}

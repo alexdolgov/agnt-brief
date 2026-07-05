@@ -1,18 +1,18 @@
 {
   "address": "0x5a75a093747b72a0e14056352751edf03518031d",
   "chain_id": 1,
-  "contract_name": "TransparentUpgradeableProxy",
-  "compiler_version": "v0.6.2+commit.bacdbe57",
-  "optimization_used": true,
-  "runs": 200,
-  "evm_version": "istanbul",
+  "contract_name": "ESW",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
   "license": null,
   "verified": true,
   "proxy": true,
   "source_provider": "sourcify",
   "sourcify_match": "partial_match",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "constructor_arguments": "",
   "implementation_address": "0x6030ee6cc813b2ab95d9e822699eb600e7702d92",
-  "fetched_at": "2026-06-17T06:45:50.142Z"
+  "fetched_at": "2026-07-04T19:18:29.466Z"
 }

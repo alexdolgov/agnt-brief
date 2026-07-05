@@ -1,0 +1,18 @@
+{
+  "address": "0x9322c3879457e6d13331b76947b8f8e47a821af5",
+  "chain_id": 8453,
+  "contract_name": "MorphoVaultStrategyMainnet_RE7_USDC",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x2b382b4a70724566bfbeb2e2f29214ceb2d3b45a",
+  "fetched_at": "2026-07-04T19:19:40.679Z"
+}

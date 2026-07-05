@@ -1,0 +1,18 @@
+{
+  "address": "0x334cb66050049c1e392007b018321c44a1dbfac4",
+  "chain_id": 1,
+  "contract_name": "sdFPIS",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.278Z"
+}

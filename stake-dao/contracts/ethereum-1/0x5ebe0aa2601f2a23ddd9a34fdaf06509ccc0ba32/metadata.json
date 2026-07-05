@@ -1,0 +1,17 @@
+{
+  "address": "0x5ebe0aa2601f2a23ddd9a34fdaf06509ccc0ba32",
+  "chain_id": 1,
+  "contract_name": "LinearAPRModel",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.592Z"
+}

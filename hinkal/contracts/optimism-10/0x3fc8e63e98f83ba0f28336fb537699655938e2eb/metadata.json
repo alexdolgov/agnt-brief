@@ -1,0 +1,18 @@
+{
+  "address": "0x3fc8e63e98f83ba0f28336fb537699655938e2eb",
+  "chain_id": 10,
+  "contract_name": "CLFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.083Z"
+}

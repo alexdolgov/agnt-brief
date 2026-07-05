@@ -1,0 +1,17 @@
+{
+  "address": "0x126462a6fc6b8f04e5d46a778daea0544e34dc5e",
+  "chain_id": 1,
+  "contract_name": "LitePsmExchange",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48000000000000000000000000dc035d45d973e3ec169d2276ddab16f1e407384f000000000000000000000000a188eec8f81263234da3622a406892f3d630f98c000000000000000000000000000000000000000000000000000000e8d4a51000000000000000000000000000464218afe1839abd9e89daa3fb0d4a20fbda2c56",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.485Z"
+}

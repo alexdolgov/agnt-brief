@@ -1,0 +1,87 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "interface_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_where",
+        "type": "address"
+      },
+      {
+        "name": "_who",
+        "type": "address"
+      },
+      {
+        "name": "_permission_id",
+        "type": "bytes32"
+      },
+      {
+        "name": "calldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "isGranted",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_POWER",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "ve",
+        "type": "address"
+      },
+      {
+        "name": "min_power",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  }
+]

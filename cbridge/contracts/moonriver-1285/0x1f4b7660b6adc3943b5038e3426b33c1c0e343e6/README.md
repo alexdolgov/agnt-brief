@@ -5,7 +5,8 @@
 | Chain | moonriver (1285) |
 | Address | `0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6` |
 | Role | unknown |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_core |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (moonriver [`0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6`](../0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6/)) |

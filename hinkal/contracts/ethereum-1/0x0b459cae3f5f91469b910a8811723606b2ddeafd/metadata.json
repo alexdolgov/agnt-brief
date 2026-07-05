@@ -1,0 +1,18 @@
+{
+  "address": "0x0b459cae3f5f91469b910a8811723606b2ddeafd",
+  "chain_id": 1,
+  "contract_name": "Portal",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.584Z"
+}

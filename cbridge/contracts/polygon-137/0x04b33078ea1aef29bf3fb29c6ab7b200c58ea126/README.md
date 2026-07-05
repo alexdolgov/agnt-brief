@@ -4,8 +4,9 @@
 |---|---|
 | Chain | polygon (137) |
 | Address | `0x04b33078ea1aef29bf3fb29c6ab7b200c58ea126` |
-| Role | unknown |
-| Origin | needs_review |
+| Role | token |
+| Origin | native |
+| Surface | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (polygon [`0x04b33078ea1aef29bf3fb29c6ab7b200c58ea126`](../0x04b33078ea1aef29bf3fb29c6ab7b200c58ea126/)) |

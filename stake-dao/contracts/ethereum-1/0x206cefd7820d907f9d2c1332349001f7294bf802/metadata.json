@@ -1,0 +1,18 @@
+{
+  "address": "0x206cefd7820d907f9d2c1332349001f7294bf802",
+  "chain_id": 1,
+  "contract_name": "TokenizedStrategy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+  "fetched_at": "2026-07-04T19:22:43.130Z"
+}

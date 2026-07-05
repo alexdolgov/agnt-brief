@@ -1,0 +1,18 @@
+{
+  "address": "0xb5480a276c49b5e3a1bc13659030b4e94018a817",
+  "chain_id": 1,
+  "contract_name": "MirrorMainnet_mTSLA_UST",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:41.268Z"
+}

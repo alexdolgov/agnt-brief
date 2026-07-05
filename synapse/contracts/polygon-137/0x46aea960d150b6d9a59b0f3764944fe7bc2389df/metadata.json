@@ -1,0 +1,17 @@
+{
+  "address": "0x46aea960d150b6d9a59b0f3764944fe7bc2389df",
+  "chain_id": 137,
+  "contract_name": "SynapseBridge",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:23.414Z"
+}

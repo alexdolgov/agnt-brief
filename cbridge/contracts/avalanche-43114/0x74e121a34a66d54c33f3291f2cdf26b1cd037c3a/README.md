@@ -5,7 +5,8 @@
 | Chain | avalanche (43114) |
 | Address | `0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a` |
 | Role | proxy |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_supporting |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (avalanche [`0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a`](../0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a/)) |

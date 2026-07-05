@@ -1,0 +1,18 @@
+{
+  "address": "0x765de816845861e75a25fca122bb6898b8b1282a",
+  "chain_id": 42220,
+  "contract_name": "StableTokenV3",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x815795c30d0758a297b08cd4e0643620c974c318",
+  "fetched_at": "2026-07-04T19:23:33.251Z"
+}

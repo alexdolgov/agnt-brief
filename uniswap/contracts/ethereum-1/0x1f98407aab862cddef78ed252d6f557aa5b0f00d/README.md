@@ -1,0 +1,17 @@
+# UniswapV3Staker
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x1f98407aab862cddef78ed252d6f557aa5b0f00d` |
+| Role | unknown |
+| Origin | native |
+| Surface | own_core |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x1f98407aab862cddef78ed252d6f557aa5b0f00d`](../0x1f98407aab862cddef78ed252d6f557aa5b0f00d/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

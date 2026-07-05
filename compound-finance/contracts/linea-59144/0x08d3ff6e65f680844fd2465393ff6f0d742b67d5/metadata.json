@@ -1,0 +1,17 @@
+{
+  "address": "0x08d3ff6e65f680844fd2465393ff6f0d742b67d5",
+  "chain_id": 59144,
+  "contract_name": "ReverseRegistrar",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000050130b669b28c339991d8676fa73cf122a121267",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.303Z"
+}

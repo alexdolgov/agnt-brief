@@ -1,0 +1,18 @@
+{
+  "address": "0x02656fe285fac5d5c756c2f03c17277df9bac65b",
+  "chain_id": 1,
+  "contract_name": "LiquidityPool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.604Z"
+}

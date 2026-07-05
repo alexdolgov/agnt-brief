@@ -1,0 +1,18 @@
+{
+  "address": "0x821863a25743eaa271fa5e70d9e4632650848eb6",
+  "chain_id": 10,
+  "contract_name": "StrategyBeethovenxSonne",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.411Z"
+}

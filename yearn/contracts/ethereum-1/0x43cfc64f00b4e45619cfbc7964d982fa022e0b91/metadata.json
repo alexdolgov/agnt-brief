@@ -1,0 +1,18 @@
+{
+  "address": "0x43cfc64f00b4e45619cfbc7964d982fa022e0b91",
+  "chain_id": 1,
+  "contract_name": "Gauge factory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.713Z"
+}

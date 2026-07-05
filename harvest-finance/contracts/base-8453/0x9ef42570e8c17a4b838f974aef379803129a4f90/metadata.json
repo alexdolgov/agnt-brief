@@ -1,0 +1,17 @@
+{
+  "address": "0x9ef42570e8c17a4b838f974aef379803129a4f90",
+  "chain_id": 8453,
+  "contract_name": "WithdrawManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "00000000000000000000000047acfd052b9252e750aa7ad8be9ae8ce37742e26",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:56.272Z"
+}

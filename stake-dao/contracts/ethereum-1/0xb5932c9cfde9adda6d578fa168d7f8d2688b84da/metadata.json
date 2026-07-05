@@ -1,0 +1,18 @@
+{
+  "address": "0xb5932c9cfde9adda6d578fa168d7f8d2688b84da",
+  "chain_id": 1,
+  "contract_name": "MasterChefRewardHook",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.097Z"
+}

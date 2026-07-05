@@ -1,0 +1,18 @@
+{
+  "address": "0x611db2a533087ec76945f26aeae1c3e0ace68caa",
+  "chain_id": 56,
+  "contract_name": "VenusVAIStrategyMainnet",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:27.557Z"
+}

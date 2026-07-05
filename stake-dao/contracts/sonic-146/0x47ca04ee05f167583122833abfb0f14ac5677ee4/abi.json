@@ -1,0 +1,90 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_block_hash_oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_gauge_type_oracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BLOCK_HASH_ORACLE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GAUGE_TYPE_ORACLE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_gauges",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_block_header_rlp",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_proof_rlp",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyGaugeTypeByBlockHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_gauges",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_block_number",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_proof_rlp",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyGaugeTypeByStateRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

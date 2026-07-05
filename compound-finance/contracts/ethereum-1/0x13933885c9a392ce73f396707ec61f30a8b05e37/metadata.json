@@ -1,0 +1,17 @@
+{
+  "address": "0x13933885c9a392ce73f396707ec61f30a8b05e37",
+  "chain_id": 1,
+  "contract_name": "PriceFeedWith4626Support",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.236Z"
+}

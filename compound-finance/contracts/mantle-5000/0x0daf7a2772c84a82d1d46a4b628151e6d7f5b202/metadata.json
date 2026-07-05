@@ -1,0 +1,17 @@
+{
+  "address": "0x0daf7a2772c84a82d1d46a4b628151e6d7f5b202",
+  "chain_id": 5000,
+  "contract_name": "AssetListFactory",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.242Z"
+}

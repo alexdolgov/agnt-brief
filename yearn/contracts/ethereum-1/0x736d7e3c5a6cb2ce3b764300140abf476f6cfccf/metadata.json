@@ -1,0 +1,18 @@
+{
+  "address": "0x736d7e3c5a6cb2ce3b764300140abf476f6cfccf",
+  "chain_id": 1,
+  "contract_name": "V2Keeper",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.861Z"
+}

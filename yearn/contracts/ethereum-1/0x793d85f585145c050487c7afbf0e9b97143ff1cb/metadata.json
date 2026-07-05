@@ -1,0 +1,17 @@
+{
+  "address": "0x793d85f585145c050487c7afbf0e9b97143ff1cb",
+  "chain_id": 1,
+  "contract_name": "DepositModule",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000016388463d60ffe0661cf7f1f31a7d658ac790ff7000000000000000000000000836304b832687f3811a0df935934c724b40578eb",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.881Z"
+}

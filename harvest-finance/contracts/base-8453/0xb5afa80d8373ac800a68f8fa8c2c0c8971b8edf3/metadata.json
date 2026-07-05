@@ -1,0 +1,18 @@
+{
+  "address": "0xb5afa80d8373ac800a68f8fa8c2c0c8971b8edf3",
+  "chain_id": 8453,
+  "contract_name": "EulerLendStrategyMainnet_USDC_YO",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.768Z"
+}

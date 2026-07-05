@@ -1,0 +1,18 @@
+{
+  "address": "0x9623063377ad1b27544c965ccd7342f7ea7e88c7",
+  "chain_id": 42161,
+  "contract_name": "L2GraphToken",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xaffcb96181d920fe8c0af046c49b2c9ec98b28df",
+  "fetched_at": "2026-07-04T19:19:44.761Z"
+}

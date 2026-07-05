@@ -1,0 +1,17 @@
+{
+  "address": "0x125ca420ea1556a65bb926fa7bd5d72fc22af268",
+  "chain_id": 1,
+  "contract_name": "VirtualPool",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.484Z"
+}

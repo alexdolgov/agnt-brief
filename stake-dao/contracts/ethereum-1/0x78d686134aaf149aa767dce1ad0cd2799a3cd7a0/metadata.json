@@ -1,0 +1,18 @@
+{
+  "address": "0x78d686134aaf149aa767dce1ad0cd2799a3cd7a0",
+  "chain_id": 1,
+  "contract_name": "PendleExchangeRateOracle",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.750Z"
+}

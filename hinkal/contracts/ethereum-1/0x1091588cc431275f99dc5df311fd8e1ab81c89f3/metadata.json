@@ -1,0 +1,18 @@
+{
+  "address": "0x1091588cc431275f99dc5df311fd8e1ab81c89f3",
+  "chain_id": 1,
+  "contract_name": "OETHVaultCore",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.770Z"
+}

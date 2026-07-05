@@ -1,0 +1,18 @@
+{
+  "address": "0x80c0865d7d290a4b8a511f0f71f2c75740b8c1aa",
+  "chain_id": 1,
+  "contract_name": "PriceOracleMiddlewareManager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:44.165Z"
+}

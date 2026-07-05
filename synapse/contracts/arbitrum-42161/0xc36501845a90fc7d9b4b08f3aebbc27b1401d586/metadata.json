@@ -1,0 +1,18 @@
+{
+  "address": "0xc36501845a90fc7d9b4b08f3aebbc27b1401d586",
+  "chain_id": 42161,
+  "contract_name": "MetaSwapDeposit",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:27.000Z"
+}

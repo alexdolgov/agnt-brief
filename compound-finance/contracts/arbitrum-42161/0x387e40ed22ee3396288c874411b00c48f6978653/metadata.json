@@ -1,0 +1,17 @@
+{
+  "address": "0x387e40ed22ee3396288c874411b00c48f6978653",
+  "chain_id": 42161,
+  "contract_name": "LockReleaseTokenPoolAndProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 26000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.761Z"
+}

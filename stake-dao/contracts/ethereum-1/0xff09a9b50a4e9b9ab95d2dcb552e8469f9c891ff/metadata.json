@@ -1,0 +1,18 @@
+{
+  "address": "0xff09a9b50a4e9b9ab95d2dcb552e8469f9c891ff",
+  "chain_id": 1,
+  "contract_name": "BalancerVoter",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.385Z"
+}

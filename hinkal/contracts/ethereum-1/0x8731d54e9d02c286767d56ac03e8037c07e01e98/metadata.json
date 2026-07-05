@@ -1,0 +1,18 @@
+{
+  "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
+  "chain_id": 1,
+  "contract_name": "Router",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.344Z"
+}

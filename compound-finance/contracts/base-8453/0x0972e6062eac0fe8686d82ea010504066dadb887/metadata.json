@@ -1,0 +1,17 @@
+{
+  "address": "0x0972e6062eac0fe8686d82ea010504066dadb887",
+  "chain_id": 8453,
+  "contract_name": "NoOp",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.239Z"
+}

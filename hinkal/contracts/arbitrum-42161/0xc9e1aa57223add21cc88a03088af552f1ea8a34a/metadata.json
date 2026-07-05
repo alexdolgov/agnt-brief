@@ -1,0 +1,18 @@
+{
+  "address": "0xc9e1aa57223add21cc88a03088af552f1ea8a34a",
+  "chain_id": 42161,
+  "contract_name": "BanxaWrapper",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.857Z"
+}

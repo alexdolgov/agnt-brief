@@ -1,0 +1,18 @@
+{
+  "address": "0x581c05c6e4c22fcef7521448bb68d29c7720b0db",
+  "chain_id": 137,
+  "contract_name": "ModernTreasury",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.248Z"
+}

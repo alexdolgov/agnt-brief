@@ -1,0 +1,18 @@
+{
+  "address": "0x30c2501b3b2031fba3000daa6f8ed0a42fbbb3f0",
+  "chain_id": 1,
+  "contract_name": "PermissionlessPool",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.551Z"
+}

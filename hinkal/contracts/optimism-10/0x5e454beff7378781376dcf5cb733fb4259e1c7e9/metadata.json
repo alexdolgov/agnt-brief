@@ -1,0 +1,18 @@
+{
+  "address": "0x5e454beff7378781376dcf5cb733fb4259e1c7e9",
+  "chain_id": 10,
+  "contract_name": "Leverager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.277Z"
+}

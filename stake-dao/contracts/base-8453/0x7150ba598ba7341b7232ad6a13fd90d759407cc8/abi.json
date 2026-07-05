@@ -1,0 +1,710 @@
+[
+  {
+    "name": "DutyAct",
+    "inputs": [],
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "name": "Act",
+    "inputs": [
+      {
+        "name": "receiver",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "compensation",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "name": "HookShot",
+    "inputs": [
+      {
+        "name": "hook_id",
+        "type": "uint8",
+        "indexed": true
+      },
+      {
+        "name": "compensation",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "_fee_collector",
+        "type": "address"
+      },
+      {
+        "name": "_initial_oth",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "foreplay",
+            "type": "bytes"
+          },
+          {
+            "name": "compensation_strategy",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "cooldown",
+                "type": "tuple",
+                "components": [
+                  {
+                    "name": "duty_counter",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "used",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "limit",
+                    "type": "uint64"
+                  }
+                ]
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "end",
+                "type": "uint256"
+              },
+              {
+                "name": "dutch",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "name": "duty",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "_initial_oth_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      },
+      {
+        "name": "_initial_hooks",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "foreplay",
+            "type": "bytes"
+          },
+          {
+            "name": "compensation_strategy",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "cooldown",
+                "type": "tuple",
+                "components": [
+                  {
+                    "name": "duty_counter",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "used",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "limit",
+                    "type": "uint64"
+                  }
+                ]
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "end",
+                "type": "uint256"
+              },
+              {
+                "name": "dutch",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "name": "duty",
+            "type": "bool"
+          }
+        ]
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "calc_compensation",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "calc_compensation",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      },
+      {
+        "name": "_duty",
+        "type": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "calc_compensation",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      },
+      {
+        "name": "_duty",
+        "type": "bool"
+      },
+      {
+        "name": "_ts",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "name": "duty_act",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "name": "duty_act",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      },
+      {
+        "name": "_receiver",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "name": "act",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "name": "act",
+    "inputs": [
+      {
+        "name": "_hook_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      },
+      {
+        "name": "_receiver",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "name": "one_time_hooks",
+    "inputs": [
+      {
+        "name": "_hooks",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "foreplay",
+            "type": "bytes"
+          },
+          {
+            "name": "compensation_strategy",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "cooldown",
+                "type": "tuple",
+                "components": [
+                  {
+                    "name": "duty_counter",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "used",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "limit",
+                    "type": "uint64"
+                  }
+                ]
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "end",
+                "type": "uint256"
+              },
+              {
+                "name": "dutch",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "name": "duty",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "_inputs",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "hook_id",
+            "type": "uint8"
+          },
+          {
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ]
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "set_hooks",
+    "inputs": [
+      {
+        "name": "_new_hooks",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "foreplay",
+            "type": "bytes"
+          },
+          {
+            "name": "compensation_strategy",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "cooldown",
+                "type": "tuple",
+                "components": [
+                  {
+                    "name": "duty_counter",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "used",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "limit",
+                    "type": "uint64"
+                  }
+                ]
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "end",
+                "type": "uint256"
+              },
+              {
+                "name": "dutch",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "name": "duty",
+            "type": "bool"
+          }
+        ]
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "stateMutability": "pure",
+    "type": "function",
+    "name": "supportsInterface",
+    "inputs": [
+      {
+        "name": "_interface_id",
+        "type": "bytes4"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "recover",
+    "inputs": [
+      {
+        "name": "_coins",
+        "type": "address[]"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "fee_collector",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "hooks",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "foreplay",
+            "type": "bytes"
+          },
+          {
+            "name": "compensation_strategy",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "cooldown",
+                "type": "tuple",
+                "components": [
+                  {
+                    "name": "duty_counter",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "used",
+                    "type": "uint64"
+                  },
+                  {
+                    "name": "limit",
+                    "type": "uint64"
+                  }
+                ]
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "end",
+                "type": "uint256"
+              },
+              {
+                "name": "dutch",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "name": "duty",
+            "type": "bool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "buffer_amount",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "duty_counter",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64"
+      }
+    ]
+  }
+]

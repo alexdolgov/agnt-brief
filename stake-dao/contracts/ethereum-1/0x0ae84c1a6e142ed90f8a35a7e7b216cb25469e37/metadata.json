@@ -1,0 +1,18 @@
+{
+  "address": "0x0ae84c1a6e142ed90f8a35a7e7b216cb25469e37",
+  "chain_id": 1,
+  "contract_name": "FPIControllerPool",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.671Z"
+}

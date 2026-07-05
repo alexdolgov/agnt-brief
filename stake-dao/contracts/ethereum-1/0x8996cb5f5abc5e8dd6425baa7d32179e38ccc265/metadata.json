@@ -1,0 +1,17 @@
+{
+  "address": "0x8996cb5f5abc5e8dd6425baa7d32179e38ccc265",
+  "chain_id": 1,
+  "contract_name": "Liquidity Gauge v4 Strat XChain",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.860Z"
+}

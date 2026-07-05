@@ -1,0 +1,18 @@
+{
+  "address": "0x352e20158c9916579b337d1332f462b26a8a699c",
+  "chain_id": 42161,
+  "contract_name": "RSETHPool",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.761Z"
+}

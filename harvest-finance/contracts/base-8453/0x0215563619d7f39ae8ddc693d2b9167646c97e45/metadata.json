@@ -1,0 +1,18 @@
+{
+  "address": "0x0215563619d7f39ae8ddc693d2b9167646c97e45",
+  "chain_id": 8453,
+  "contract_name": "AerodromeStableStrategyMainnet_eUSD_USDC",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:39.551Z"
+}

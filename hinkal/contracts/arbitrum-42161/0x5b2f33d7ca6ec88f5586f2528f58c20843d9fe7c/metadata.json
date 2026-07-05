@@ -1,0 +1,18 @@
+{
+  "address": "0x5b2f33d7ca6ec88f5586f2528f58c20843d9fe7c",
+  "chain_id": 42161,
+  "contract_name": "AllocationIDTracker",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.565Z"
+}

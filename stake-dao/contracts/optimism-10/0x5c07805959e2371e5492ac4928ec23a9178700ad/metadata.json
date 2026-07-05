@@ -1,0 +1,18 @@
+{
+  "address": "0x5c07805959e2371e5492ac4928ec23a9178700ad",
+  "chain_id": 10,
+  "contract_name": "VerifierV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.101Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1affdb984bbd8c3382f1ddc8bd605383830160f3",
+  "chain_id": 1,
+  "contract_name": "ChannelConfigStore",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.314Z"
+}

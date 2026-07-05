@@ -1,0 +1,18 @@
+{
+  "address": "0xa8b5ff097a10a264c30ec302023730fe51b7d8d7",
+  "chain_id": 1,
+  "contract_name": "CalculationsZeroPrice",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:54.002Z"
+}

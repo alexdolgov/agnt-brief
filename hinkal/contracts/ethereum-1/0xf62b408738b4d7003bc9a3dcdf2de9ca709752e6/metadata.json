@@ -1,0 +1,18 @@
+{
+  "address": "0xf62b408738b4d7003bc9a3dcdf2de9ca709752e6",
+  "chain_id": 1,
+  "contract_name": "CappedETHDonation",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:47.002Z"
+}

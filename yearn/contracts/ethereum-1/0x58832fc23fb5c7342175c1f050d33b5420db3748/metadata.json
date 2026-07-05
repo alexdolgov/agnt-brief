@@ -1,0 +1,18 @@
+{
+  "address": "0x58832fc23fb5c7342175c1f050d33b5420db3748",
+  "chain_id": 1,
+  "contract_name": "Liquid Locker Middleware",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.773Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4eb5f78f5de651cefa81a038105224fe1dc68d02",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyV2Mainnet_USDC",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xf853b48ecea540edc3ad0c7da977524a0af29652",
+  "fetched_at": "2026-07-05T14:11:33.185Z"
+}

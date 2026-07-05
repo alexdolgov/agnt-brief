@@ -2,17 +2,17 @@
   "address": "0x798fcfc792e7aa09c0e08f3395bda5a75c3295f7",
   "chain_id": 1,
   "contract_name": "StakingRewards",
-  "compiler_version": "v0.5.17+commit.d19bba13",
-  "optimization_used": true,
-  "runs": 200,
-  "evm_version": "istanbul",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
   "license": null,
   "verified": true,
   "proxy": false,
   "source_provider": "sourcify",
   "sourcify_match": "partial_match",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "constructor_arguments": "",
   "implementation_address": null,
-  "fetched_at": "2026-05-29T15:38:36.474Z"
+  "fetched_at": "2026-07-04T19:23:02.616Z"
 }

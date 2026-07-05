@@ -1,0 +1,17 @@
+{
+  "address": "0x2045cfdd404f88f86f611976ba3f11f8bdcd7e19",
+  "chain_id": 1,
+  "contract_name": "VaultRoleManagerHandoff",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000696d02db93291651ed510704c9b286841d506987000000000000000000000000b3bd6b2e61753c311efbcf0111f75d29706d9a41",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.566Z"
+}

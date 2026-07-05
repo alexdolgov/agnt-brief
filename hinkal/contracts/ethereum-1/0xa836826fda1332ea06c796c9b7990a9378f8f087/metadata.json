@@ -1,0 +1,18 @@
+{
+  "address": "0xa836826fda1332ea06c796c9b7990a9378f8f087",
+  "chain_id": 1,
+  "contract_name": "OracleAggregator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.522Z"
+}

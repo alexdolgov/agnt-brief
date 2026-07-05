@@ -1,0 +1,18 @@
+{
+  "address": "0xa348a39a98418dd78b242e2fd7b14e18ac080e75",
+  "chain_id": 1,
+  "contract_name": "SiphonToken",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.011Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xa0e883b284b7a6fb1063e24ab3eb87f6a2ef240d",
+  "chain_id": 56,
+  "contract_name": "PancakeStrategyMainnet_XVS_BNB",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:40.034Z"
+}

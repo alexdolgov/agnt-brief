@@ -1,0 +1,18 @@
+{
+  "address": "0x319f19ffb23fdfe322873af6480685f4db7f7d96",
+  "chain_id": 1,
+  "contract_name": "WBTCPriceFeed",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.572Z"
+}

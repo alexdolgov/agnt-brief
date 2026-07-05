@@ -1,0 +1,17 @@
+{
+  "address": "0xd6705c0740e6002ce196b08129b2f0f23f24722e",
+  "chain_id": 56,
+  "contract_name": "MintSwapCanonicalToken",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:06:07.681Z"
+}

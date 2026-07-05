@@ -1,0 +1,18 @@
+{
+  "address": "0x43ecffe6c6c1b9f24aeb5c180e659c2a6fce11bc",
+  "chain_id": 1,
+  "contract_name": "sfrxETH2crvUSDleveragezap",
+  "compiler_version": "v0.3.9+commit.66b96705",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.773Z"
+}

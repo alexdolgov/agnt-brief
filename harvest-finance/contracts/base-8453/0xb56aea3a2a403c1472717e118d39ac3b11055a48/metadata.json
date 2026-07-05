@@ -1,0 +1,17 @@
+{
+  "address": "0xb56aea3a2a403c1472717e118d39ac3b11055a48",
+  "chain_id": 8453,
+  "contract_name": "ContextManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:59.563Z"
+}

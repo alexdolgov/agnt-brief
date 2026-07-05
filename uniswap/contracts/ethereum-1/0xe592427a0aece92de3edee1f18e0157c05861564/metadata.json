@@ -1,0 +1,18 @@
+{
+  "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+  "chain_id": 1,
+  "contract_name": "SwapRouter",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 225,
+  "constructor_arguments": "",
+  "implementation_address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+  "fetched_at": "2026-07-04T19:23:33.664Z"
+}

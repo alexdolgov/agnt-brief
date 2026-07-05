@@ -4,8 +4,9 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0xca37530e7c5968627be470081d1c993eb1deaf90` |
-| Role | unknown |
-| Origin | needs_review |
+| Role | token |
+| Origin | native |
+| Surface | own_core |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xca37530e7c5968627be470081d1c993eb1deaf90`](../0xca37530e7c5968627be470081d1c993eb1deaf90/)) |

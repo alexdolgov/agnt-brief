@@ -4,8 +4,9 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0xe6f143a0e0a8f24f6294ce3432ea10fad0206920` |
-| Role | unknown |
-| Origin | needs_review |
+| Role | token |
+| Origin | native |
+| Surface | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xe6f143a0e0a8f24f6294ce3432ea10fad0206920`](../0xe6f143a0e0a8f24f6294ce3432ea10fad0206920/)) |

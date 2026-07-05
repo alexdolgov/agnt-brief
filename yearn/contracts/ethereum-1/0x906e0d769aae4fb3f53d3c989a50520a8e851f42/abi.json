@@ -1,0 +1,319 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_prismaCore",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IIncentiveVoting",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPrismaVault",
+        "name": "_vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_initialLockWeeks",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_lockDecayWeeks",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_weeklyPct",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64[2][]",
+        "name": "_scheduledWeeklyPct",
+        "type": "uint64[2][]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lockWeeks",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lockDecayWeeks",
+        "type": "uint256"
+      }
+    ],
+    "name": "LockParametersSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64[2][]",
+        "name": "schedule",
+        "type": "uint64[2][]"
+      }
+    ],
+    "name": "WeeklyPctScheduleSet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_LOCK_WEEKS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRISMA_CORE",
+    "outputs": [
+      {
+        "internalType": "contract IPrismaCore",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalWeeklyEmissions",
+        "type": "uint256"
+      }
+    ],
+    "name": "getReceiverWeeklyEmissions",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "unallocatedTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalWeeklyEmissions",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lock",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWeek",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWeeklyPctSchedule",
+    "outputs": [
+      {
+        "internalType": "uint64[2][]",
+        "name": "",
+        "type": "uint64[2][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "guardian",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockDecayWeeks",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockWeeks",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_lockWeeks",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_lockDecayWeeks",
+        "type": "uint64"
+      }
+    ],
+    "name": "setLockParameters",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64[2][]",
+        "name": "_schedule",
+        "type": "uint64[2][]"
+      }
+    ],
+    "name": "setWeeklyPctSchedule",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vault",
+    "outputs": [
+      {
+        "internalType": "contract IPrismaVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "voter",
+    "outputs": [
+      {
+        "internalType": "contract IIncentiveVoting",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weeklyPct",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

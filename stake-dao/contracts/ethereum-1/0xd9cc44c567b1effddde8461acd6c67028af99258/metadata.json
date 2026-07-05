@@ -1,0 +1,18 @@
+{
+  "address": "0xd9cc44c567b1effddde8461acd6c67028af99258",
+  "chain_id": 1,
+  "contract_name": "AladdinFXSV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.259Z"
+}

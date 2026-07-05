@@ -1,0 +1,18 @@
+{
+  "address": "0x8e2e98e1ea79c31c9ab957e465c5529fc81880ab",
+  "chain_id": 1,
+  "contract_name": "PrismaClaimOperator",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.935Z"
+}

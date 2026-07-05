@@ -1,0 +1,17 @@
+{
+  "address": "0xd16c47bf3ae22e0b2bac5925d990b81416f18dea",
+  "chain_id": 130,
+  "contract_name": "UnichainDeployer",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.167Z"
+}

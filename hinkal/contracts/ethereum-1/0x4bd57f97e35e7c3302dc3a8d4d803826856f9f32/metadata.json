@@ -1,0 +1,18 @@
+{
+  "address": "0x4bd57f97e35e7c3302dc3a8d4d803826856f9f32",
+  "chain_id": 1,
+  "contract_name": "ZunamiPoolControllerZunETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.844Z"
+}

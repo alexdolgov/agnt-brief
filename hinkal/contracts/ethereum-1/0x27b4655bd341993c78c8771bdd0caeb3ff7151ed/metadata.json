@@ -1,0 +1,18 @@
+{
+  "address": "0x27b4655bd341993c78c8771bdd0caeb3ff7151ed",
+  "chain_id": 1,
+  "contract_name": "StakingRewardDistributorGauge",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.370Z"
+}

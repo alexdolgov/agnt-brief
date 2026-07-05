@@ -5,7 +5,8 @@
 | Chain | ethereum (1) |
 | Address | `0xeca82185adce47f39c684352b0439f030f860318` |
 | Role | unknown |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_core |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xeca82185adce47f39c684352b0439f030f860318`](../0xeca82185adce47f39c684352b0439f030f860318/)) |

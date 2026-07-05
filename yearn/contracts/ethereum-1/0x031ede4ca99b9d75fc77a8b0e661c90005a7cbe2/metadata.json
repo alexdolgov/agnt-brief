@@ -1,0 +1,17 @@
+{
+  "address": "0x031ede4ca99b9d75fc77a8b0e661c90005a7cbe2",
+  "chain_id": 1,
+  "contract_name": "FluidAprOracleMainnet",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "000000000000000000000000d0002c648cca8dee2f2b8d70d542ccde8ad6ec03",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.386Z"
+}

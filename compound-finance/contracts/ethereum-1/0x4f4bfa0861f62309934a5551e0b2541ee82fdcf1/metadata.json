@@ -1,0 +1,18 @@
+{
+  "address": "0x4f4bfa0861f62309934a5551e0b2541ee82fdcf1",
+  "chain_id": 1,
+  "contract_name": "PermissionlessNodeRegistry",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0xc2c4844b5b27a2395c2f16a07ac7bb2e7e0f07ad",
+  "fetched_at": "2026-07-04T19:18:36.815Z"
+}

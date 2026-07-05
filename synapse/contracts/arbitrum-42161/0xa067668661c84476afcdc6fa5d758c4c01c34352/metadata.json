@@ -1,0 +1,17 @@
+{
+  "address": "0xa067668661c84476afcdc6fa5d758c4c01c34352",
+  "chain_id": 42161,
+  "contract_name": "SwapFlashLoan",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:27.107Z"
+}

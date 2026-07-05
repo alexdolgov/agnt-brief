@@ -1,0 +1,17 @@
+{
+  "address": "0x935bcf81c8a8d3a2b46560a8e2111b190057aae3",
+  "chain_id": 1,
+  "contract_name": "CrvUsdRedeemer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "0000000000000000000000005d17ea085f2ff5da3e6979d5d26f1dbab664ccf8000000000000000000000000ae21fe5b61998b143f721ce343aa650a6d5eadce",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.944Z"
+}

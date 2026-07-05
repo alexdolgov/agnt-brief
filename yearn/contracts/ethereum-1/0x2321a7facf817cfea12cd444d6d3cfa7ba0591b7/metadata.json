@@ -1,0 +1,17 @@
+{
+  "address": "0x2321a7facf817cfea12cd444d6d3cfa7ba0591b7",
+  "chain_id": 1,
+  "contract_name": "VotingPowerCondition",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000004712d2cb599ffb0efb1cdc4d386e60a59e3840f10000000000000000000000000000000000000000000000878678326eac900000",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.589Z"
+}

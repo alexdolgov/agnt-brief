@@ -1,0 +1,18 @@
+{
+  "address": "0x8a0cac13c7da965a312f08ea4229c37869e85cb9",
+  "chain_id": 43114,
+  "contract_name": "BridgeToken",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:06:05.087Z"
+}

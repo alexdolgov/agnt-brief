@@ -1,0 +1,17 @@
+{
+  "address": "0xb24b7b21839a6bbd017bc3159fc8ad3b959d5191",
+  "chain_id": 137,
+  "contract_name": "Fountain",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.352Z"
+}

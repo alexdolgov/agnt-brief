@@ -1,0 +1,18 @@
+{
+  "address": "0xf8f60bf9456a6e0141149db2dd6f02c60da5779b",
+  "chain_id": 1,
+  "contract_name": "TimelockExecutor",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:54.132Z"
+}

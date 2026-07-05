@@ -1,0 +1,18 @@
+{
+  "address": "0xae96df024b9cb69a39a219d7176df6e7e39fac44",
+  "chain_id": 1,
+  "contract_name": "L1cmETHAdapter",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:37.364Z"
+}

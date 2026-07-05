@@ -1,0 +1,18 @@
+{
+  "address": "0x7381f99a610f6c438206811183e2d3969ae7eb01",
+  "chain_id": 42161,
+  "contract_name": "RewardsEligibilityOracle",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 65,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.630Z"
+}

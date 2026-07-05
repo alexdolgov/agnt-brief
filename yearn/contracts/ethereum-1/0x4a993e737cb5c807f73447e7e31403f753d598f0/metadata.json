@@ -1,0 +1,18 @@
+{
+  "address": "0x4a993e737cb5c807f73447e7e31403f753d598f0",
+  "chain_id": 1,
+  "contract_name": "YearnOptionsV1Manager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.739Z"
+}

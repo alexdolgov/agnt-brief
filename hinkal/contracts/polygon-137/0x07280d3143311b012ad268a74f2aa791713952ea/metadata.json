@@ -1,0 +1,17 @@
+{
+  "address": "0x07280d3143311b012ad268a74f2aa791713952ea",
+  "chain_id": 137,
+  "contract_name": "ChildMintableERC20",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.086Z"
+}

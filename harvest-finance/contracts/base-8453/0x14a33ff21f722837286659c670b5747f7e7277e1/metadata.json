@@ -1,0 +1,18 @@
+{
+  "address": "0x14a33ff21f722837286659c670b5747f7e7277e1",
+  "chain_id": 8453,
+  "contract_name": "ExtraFiLendStrategyMainnet_USDplus",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:18.467Z"
+}

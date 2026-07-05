@@ -1,0 +1,18 @@
+{
+  "address": "0xc022b483062f3d1ad4f54762598db5a40eb791b2",
+  "chain_id": 56,
+  "contract_name": "GooseStrategyMainnet_EGG_BNB",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:45.011Z"
+}

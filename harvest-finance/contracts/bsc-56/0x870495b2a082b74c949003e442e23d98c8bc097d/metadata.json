@@ -1,0 +1,18 @@
+{
+  "address": "0x870495b2a082b74c949003e442e23d98c8bc097d",
+  "chain_id": 56,
+  "contract_name": "VenusFoldStrategyMainnet_XVS",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:34.699Z"
+}

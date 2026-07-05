@@ -1,0 +1,17 @@
+{
+  "address": "0x6740bf10840d0a6358050fd1a28e2f8e859d01ca",
+  "chain_id": 1,
+  "contract_name": "DummyStrategy",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.807Z"
+}

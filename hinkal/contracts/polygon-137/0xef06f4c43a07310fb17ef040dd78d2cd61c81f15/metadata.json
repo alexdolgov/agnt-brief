@@ -1,0 +1,18 @@
+{
+  "address": "0xef06f4c43a07310fb17ef040dd78d2cd61c81f15",
+  "chain_id": 137,
+  "contract_name": "IndirectOFTWithFee",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.401Z"
+}

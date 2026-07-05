@@ -1,0 +1,17 @@
+{
+  "address": "0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98",
+  "chain_id": 137,
+  "contract_name": "HelloWorld",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU LGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.075Z"
+}

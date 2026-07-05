@@ -1,0 +1,17 @@
+{
+  "address": "0x5a7198ceb108dd0a4b0bf109dc6543f67fa9e3b3",
+  "chain_id": 56,
+  "contract_name": "SafeExecutor",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.502Z"
+}

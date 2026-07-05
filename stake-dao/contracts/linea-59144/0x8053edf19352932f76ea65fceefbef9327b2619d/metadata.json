@@ -1,0 +1,17 @@
+{
+  "address": "0x8053edf19352932f76ea65fceefbef9327b2619d",
+  "chain_id": 59144,
+  "contract_name": "EzEthToUsdOracleProxy",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.626Z"
+}

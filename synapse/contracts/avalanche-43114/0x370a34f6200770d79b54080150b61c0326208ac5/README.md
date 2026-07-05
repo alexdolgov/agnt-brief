@@ -5,7 +5,8 @@
 | Chain | avalanche (43114) |
 | Address | `0x370a34f6200770d79b54080150b61c0326208ac5` |
 | Role | governance |
-| Origin | needs_review |
+| Origin | native |
+| Surface | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (avalanche [`0x370a34f6200770d79b54080150b61c0326208ac5`](../0x370a34f6200770d79b54080150b61c0326208ac5/)) |

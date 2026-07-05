@@ -1,0 +1,18 @@
+{
+  "address": "0x11e4757b9f88cf17f8a0f5ea7e6b4f40affeb958",
+  "chain_id": 1,
+  "contract_name": "yDiscount",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.484Z"
+}

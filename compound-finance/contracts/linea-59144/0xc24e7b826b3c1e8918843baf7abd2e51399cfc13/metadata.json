@@ -1,0 +1,17 @@
+{
+  "address": "0xc24e7b826b3c1e8918843baf7abd2e51399cfc13",
+  "chain_id": 59144,
+  "contract_name": "LineaXP",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000f5cc7604a5ef3565b4d2050d65729a06b68aa0bd",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.649Z"
+}

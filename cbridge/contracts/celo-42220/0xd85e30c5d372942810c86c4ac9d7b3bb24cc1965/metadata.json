@@ -1,0 +1,18 @@
+{
+  "address": "0xd85e30c5d372942810c86c4ac9d7b3bb24cc1965",
+  "chain_id": 42220,
+  "contract_name": "SingleBridgeToken",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:06:03.023Z"
+}

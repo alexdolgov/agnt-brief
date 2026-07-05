@@ -1,0 +1,18 @@
+{
+  "address": "0x6bc0878939669339e82dbfa13d260c89230f2c31",
+  "chain_id": 1,
+  "contract_name": "Inclusion vote",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.832Z"
+}

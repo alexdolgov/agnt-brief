@@ -1,0 +1,18 @@
+{
+  "address": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+  "chain_id": 1,
+  "contract_name": "StakedUSDeV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:37.259Z"
+}

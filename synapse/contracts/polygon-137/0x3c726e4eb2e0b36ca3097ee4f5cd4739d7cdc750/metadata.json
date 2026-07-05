@@ -1,0 +1,18 @@
+{
+  "address": "0x3c726e4eb2e0b36ca3097ee4f5cd4739d7cdc750",
+  "chain_id": 137,
+  "contract_name": "SynapseBridge",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:22.358Z"
+}

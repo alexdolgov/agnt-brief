@@ -1,0 +1,17 @@
+{
+  "address": "0xd3aa12b99892b7d95bbaa27aef222a8e2a038c0c",
+  "chain_id": 1,
+  "contract_name": "MainnetDeployer",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.652Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x75dd7c88acf769235ca4bc75403419b9ceb9fd38",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyMainnet_DAI",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 138,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.601Z"
+}

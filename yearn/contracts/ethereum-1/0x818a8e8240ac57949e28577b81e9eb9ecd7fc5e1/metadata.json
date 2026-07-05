@@ -1,0 +1,17 @@
+{
+  "address": "0x818a8e8240ac57949e28577b81e9eb9ecd7fc5e1",
+  "chain_id": 1,
+  "contract_name": "yETH strategy deposit/withdrawal facility",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000001bed97cbc3c24a4fb5c069c6e311a967386131f7000000000000000000000000583019ff0f430721ada9cfb4fac8f06ca104d0b400000000000000000000000095be6555f5c734f4e2169e746c533f40aca50be6000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.909Z"
+}

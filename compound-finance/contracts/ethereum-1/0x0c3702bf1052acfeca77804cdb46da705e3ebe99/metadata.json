@@ -1,0 +1,18 @@
+{
+  "address": "0x0c3702bf1052acfeca77804cdb46da705e3ebe99",
+  "chain_id": 1,
+  "contract_name": "OPSuccinctL2OutputOracle",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x1f341cbdd4239817f150e27f200e48ba4817347e",
+  "fetched_at": "2026-07-04T19:18:36.120Z"
+}

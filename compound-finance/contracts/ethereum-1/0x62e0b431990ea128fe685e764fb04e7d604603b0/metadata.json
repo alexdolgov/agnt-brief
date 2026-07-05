@@ -1,0 +1,18 @@
+{
+  "address": "0x62e0b431990ea128fe685e764fb04e7d604603b0",
+  "chain_id": 1,
+  "contract_name": "PoolSelector",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0x8322793ceb2d8740ad83ed431e69ae87fa1a86ab",
+  "fetched_at": "2026-07-04T19:18:36.979Z"
+}

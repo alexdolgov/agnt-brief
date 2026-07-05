@@ -1,0 +1,18 @@
+{
+  "address": "0x7ab641e661a9728913a44e06f6a4879481142ddb",
+  "chain_id": 10,
+  "contract_name": "AgTokenSideChainMultiBridge",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.375Z"
+}

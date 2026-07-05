@@ -1,0 +1,18 @@
+{
+  "address": "0xf42c6b76147f0728beadbbc7316f7fb4ff8f95d2",
+  "chain_id": 1,
+  "contract_name": "YelHodlStrategyMainnet_YEL_WETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x21396b545f70617fc957b0858610bb1626de0197",
+  "fetched_at": "2026-07-05T14:12:09.543Z"
+}

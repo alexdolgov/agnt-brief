@@ -1,0 +1,18 @@
+{
+  "address": "0x002e326b8ed01f27588388b731720f9b72cc27cf",
+  "chain_id": 1,
+  "contract_name": "FranchiserFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.234Z"
+}

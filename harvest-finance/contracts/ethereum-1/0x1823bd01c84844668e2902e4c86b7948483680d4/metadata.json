@@ -1,0 +1,18 @@
+{
+  "address": "0x1823bd01c84844668e2902e4c86b7948483680d4",
+  "chain_id": 1,
+  "contract_name": "InvestmentVaultStrategy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:19.843Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x1cdc19b13729f16c5284a0ace825f83fc9d799f4",
+  "chain_id": 56,
+  "contract_name": "PancakePredictionV2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.223Z"
+}

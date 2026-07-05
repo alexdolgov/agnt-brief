@@ -1,0 +1,18 @@
+{
+  "address": "0x0e821d855f4fc427200484ae42369b8a6611c2cb",
+  "chain_id": 1,
+  "contract_name": "CErc20Delegator",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:05:43.840Z"
+}

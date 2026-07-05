@@ -1,0 +1,18 @@
+{
+  "address": "0xbfa26f1354c991386125c5d9827880a6ddf67dde",
+  "chain_id": 1,
+  "contract_name": "IdleBorrowableStrategyUSDTMainnet",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:59.329Z"
+}

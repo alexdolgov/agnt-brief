@@ -1,0 +1,18 @@
+{
+  "address": "0x67023c56548ba15ad3542e65493311f19adfdd6d",
+  "chain_id": 1,
+  "contract_name": "ThreePoolStrategyProxy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xf92b0de25660c18bedaa55795986781d7899b0f9",
+  "fetched_at": "2026-07-04T19:19:46.090Z"
+}

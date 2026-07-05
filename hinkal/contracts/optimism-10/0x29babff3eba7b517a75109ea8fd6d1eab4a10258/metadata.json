@@ -1,0 +1,18 @@
+{
+  "address": "0x29babff3eba7b517a75109ea8fd6d1eab4a10258",
+  "chain_id": 10,
+  "contract_name": "MarketETHRouter",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": "0x884988e0bfb0d6a18f664329acd0402b2fb6056c",
+  "fetched_at": "2026-07-04T19:19:44.840Z"
+}

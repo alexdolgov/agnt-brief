@@ -1,0 +1,18 @@
+{
+  "address": "0x27321f84704a599ab740281e285cc4463d89a3d5",
+  "chain_id": 1,
+  "contract_name": "KeepBonding",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.352Z"
+}

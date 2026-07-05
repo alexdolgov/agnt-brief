@@ -1,0 +1,18 @@
+{
+  "address": "0x96e752a2f8f3ece22209d6ac26094698dbc8919e",
+  "chain_id": 56,
+  "contract_name": "CrossFarmingTokenDeployer",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.665Z"
+}

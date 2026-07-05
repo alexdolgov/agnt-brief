@@ -1,0 +1,18 @@
+{
+  "address": "0x7946b98660c04a19475148c25c6d3bb3bf7417e2",
+  "chain_id": 1,
+  "contract_name": "ShortOTokenActionWithSwapEth",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.881Z"
+}

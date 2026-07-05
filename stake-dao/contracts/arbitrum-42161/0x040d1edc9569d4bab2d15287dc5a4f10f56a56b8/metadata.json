@@ -1,0 +1,18 @@
+{
+  "address": "0x040d1edc9569d4bab2d15287dc5a4f10f56a56b8",
+  "chain_id": 42161,
+  "contract_name": "StandardArbERC20",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x3f770ac673856f105b586bb393d122721265ad46",
+  "fetched_at": "2026-07-04T19:22:42.050Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x23c9c8575e6ba0349a497b6d0e8f0b9239e68028",
+  "chain_id": 42161,
+  "contract_name": "L2GraphTokenLockTransferTool",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": "0x440e07ace09d848a581077c6dc8d7fb60fd8af62",
+  "fetched_at": "2026-07-04T19:19:44.262Z"
+}

@@ -1,18 +1,18 @@
 {
   "address": "0xf4aef21d906992afadde7a9676e1db4feb6390dd",
   "chain_id": 10,
-  "contract_name": "TransparentUpgradeableProxy",
-  "compiler_version": "v0.8.2+commit.661d1103",
-  "optimization_used": true,
-  "runs": 200,
-  "evm_version": "istanbul",
-  "license": "MIT",
+  "contract_name": "PriceFeed",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
   "verified": true,
   "proxy": true,
   "source_provider": "sourcify",
   "sourcify_match": "full_match",
-  "source_file_count": 17,
+  "source_file_count": 15,
   "constructor_arguments": "",
   "implementation_address": "0x76369af6180acc8e2b487c96695c58b273cc93ea",
-  "fetched_at": "2026-06-17T06:45:50.338Z"
+  "fetched_at": "2026-07-05T13:06:08.419Z"
 }

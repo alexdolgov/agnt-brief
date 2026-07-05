@@ -1,0 +1,18 @@
+{
+  "address": "0x8c72e9fcb81a429d9a8051821fdeb1d8a2a029c3",
+  "chain_id": 56,
+  "contract_name": "PopsicleStrategtMainnet_ICE_BNB",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:35.715Z"
+}

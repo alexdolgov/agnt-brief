@@ -1,0 +1,17 @@
+{
+  "address": "0x07cedaadf49552cbdbf684824323e631ceba305e",
+  "chain_id": 1,
+  "contract_name": "LEVAMM",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.448Z"
+}

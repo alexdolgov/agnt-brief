@@ -1,0 +1,18 @@
+{
+  "address": "0x03cbccbe8d2073a1dc186ae6bcd95390fcdff36f",
+  "chain_id": 8453,
+  "contract_name": "ClaimSignatureRegistry",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.045Z"
+}

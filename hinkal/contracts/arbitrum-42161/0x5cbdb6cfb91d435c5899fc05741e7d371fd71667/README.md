@@ -1,0 +1,17 @@
+# L2GNS
+
+| Field | Value |
+|---|---|
+| Chain | arbitrum (42161) |
+| Address | `0x5cbdb6cfb91d435c5899fc05741e7d371fd71667` |
+| Role | unknown |
+| Origin | native |
+| Surface | own_core |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (arbitrum [`0x5cbdb6cfb91d435c5899fc05741e7d371fd71667`](../0x5cbdb6cfb91d435c5899fc05741e7d371fd71667/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

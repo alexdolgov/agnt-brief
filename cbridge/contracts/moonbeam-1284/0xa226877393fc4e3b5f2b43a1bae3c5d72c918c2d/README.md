@@ -5,7 +5,8 @@
 | Chain | moonbeam (1284) |
 | Address | `0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d` |
 | Role | unknown |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_core |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (moonbeam [`0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d`](../0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/)) |

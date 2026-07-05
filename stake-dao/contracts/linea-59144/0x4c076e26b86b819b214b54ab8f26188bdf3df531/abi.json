@@ -1,0 +1,170 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPoolAddressesProvider",
+        "name": "provider",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "acl",
+    "outputs": [
+      {
+        "internalType": "contract IACLManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "config",
+    "outputs": [
+      {
+        "internalType": "contract IPoolConfigurator",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "aTokenImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stableDebtTokenImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "variableDebtTokenImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "underlyingAssetDecimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "interestRateStrategyAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "treasury",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "incentivesController",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "aTokenName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "aTokenSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "variableDebtTokenName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "variableDebtTokenSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "stableDebtTokenName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "stableDebtTokenSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct ConfiguratorInputTypes.InitReserveInput",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "oracleToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "debtCeiling",
+        "type": "uint256"
+      }
+    ],
+    "name": "execute",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracle",
+    "outputs": [
+      {
+        "internalType": "contract IAaveOracle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pool",
+    "outputs": [
+      {
+        "internalType": "contract IPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

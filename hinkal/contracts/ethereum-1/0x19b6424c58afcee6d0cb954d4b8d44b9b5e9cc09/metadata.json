@@ -1,0 +1,18 @@
+{
+  "address": "0x19b6424c58afcee6d0cb954d4b8d44b9b5e9cc09",
+  "chain_id": 1,
+  "contract_name": "yTokenRebalance",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.016Z"
+}

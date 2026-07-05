@@ -1,0 +1,18 @@
+{
+  "address": "0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2",
+  "chain_id": 1,
+  "contract_name": "L1StandardBridge",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0xe89fbfb78920423ac9e7f06acb2163ce55bab89f",
+  "fetched_at": "2026-07-04T19:22:43.288Z"
+}

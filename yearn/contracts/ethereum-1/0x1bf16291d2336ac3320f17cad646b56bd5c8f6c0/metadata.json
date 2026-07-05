@@ -1,0 +1,18 @@
+{
+  "address": "0x1bf16291d2336ac3320f17cad646b56bd5c8f6c0",
+  "chain_id": 1,
+  "contract_name": "Keep3rV2Helper",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.551Z"
+}

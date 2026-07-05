@@ -1,0 +1,18 @@
+{
+  "address": "0xdc1ba2a504430131c7a291b7d114b11e7baf9c22",
+  "chain_id": 1,
+  "contract_name": "OYfi",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.270Z"
+}

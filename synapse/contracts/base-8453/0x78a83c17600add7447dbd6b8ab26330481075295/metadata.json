@@ -1,0 +1,18 @@
+{
+  "address": "0x78a83c17600add7447dbd6b8ab26330481075295",
+  "chain_id": 8453,
+  "contract_name": "SwapQuoter",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:21.273Z"
+}

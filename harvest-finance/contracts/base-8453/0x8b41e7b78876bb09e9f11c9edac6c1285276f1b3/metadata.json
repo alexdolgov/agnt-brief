@@ -1,0 +1,18 @@
+{
+  "address": "0x8b41e7b78876bb09e9f11c9edac6c1285276f1b3",
+  "chain_id": 8453,
+  "contract_name": "AccessManagerFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 65,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:50.220Z"
+}

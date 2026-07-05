@@ -1,0 +1,18 @@
+{
+  "address": "0x859222dd0b249d0ea960f5102dab79b294d6874a",
+  "chain_id": 1,
+  "contract_name": "VaultMigratable_1INCH2SUSHI",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x89241811486f7a39ae2fbc82abec040717020226",
+  "fetched_at": "2026-07-05T14:11:45.797Z"
+}

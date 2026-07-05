@@ -1,0 +1,18 @@
+{
+  "address": "0x756e7c245c69d351fffbfb88ba234aa395ada8ec",
+  "chain_id": 10,
+  "contract_name": "VotingRewardsFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.343Z"
+}

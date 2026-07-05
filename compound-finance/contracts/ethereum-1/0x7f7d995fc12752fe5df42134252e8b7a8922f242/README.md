@@ -1,0 +1,17 @@
+# PriceConsumer
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x7f7d995fc12752fe5df42134252e8b7a8922f242` |
+| Role | unknown |
+| Origin | native |
+| Surface | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x7f7d995fc12752fe5df42134252e8b7a8922f242`](../0x7f7d995fc12752fe5df42134252e8b7a8922f242/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

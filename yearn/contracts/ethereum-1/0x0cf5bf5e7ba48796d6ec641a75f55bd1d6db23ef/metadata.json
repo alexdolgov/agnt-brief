@@ -1,0 +1,18 @@
+{
+  "address": "0x0cf5bf5e7ba48796d6ec641a75f55bd1d6db23ef",
+  "chain_id": 1,
+  "contract_name": "Vesting Escrow",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.461Z"
+}

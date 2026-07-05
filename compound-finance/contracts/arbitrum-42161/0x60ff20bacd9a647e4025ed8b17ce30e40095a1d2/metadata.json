@@ -1,0 +1,18 @@
+{
+  "address": "0x60ff20bacd9a647e4025ed8b17ce30e40095a1d2",
+  "chain_id": 42161,
+  "contract_name": "AGETHPoolV3",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.852Z"
+}

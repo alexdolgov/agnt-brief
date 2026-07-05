@@ -1,0 +1,18 @@
+{
+  "address": "0x1571ed0bed4d987fe2b498ddbae7dfa19519f651",
+  "chain_id": 1,
+  "contract_name": "VaultProxy",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0x9f45f195232c9561a38c994d6895d3466f468b27",
+  "fetched_at": "2026-07-04T19:19:39.684Z"
+}

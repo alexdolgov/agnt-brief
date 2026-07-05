@@ -1,0 +1,17 @@
+{
+  "address": "0xa8a94da411425634e3ed6c331a32ab4fd774aa43",
+  "chain_id": 130,
+  "contract_name": "UnichainPriceFeedWeethFundamentalWithoutRoundsV1",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.411Z"
+}

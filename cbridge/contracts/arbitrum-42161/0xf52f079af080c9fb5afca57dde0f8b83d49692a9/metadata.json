@@ -1,0 +1,18 @@
+{
+  "address": "0xf52f079af080c9fb5afca57dde0f8b83d49692a9",
+  "chain_id": 42161,
+  "contract_name": "iTokenV2BLP",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xaf23e0362edf6a8fa304ec93c7270cd5dfa8ebf9",
+  "fetched_at": "2026-07-05T13:06:06.941Z"
+}

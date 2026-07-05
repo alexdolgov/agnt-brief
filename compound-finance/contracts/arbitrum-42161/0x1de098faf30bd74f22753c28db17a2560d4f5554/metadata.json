@@ -1,0 +1,18 @@
+{
+  "address": "0x1de098faf30bd74f22753c28db17a2560d4f5554",
+  "chain_id": 42161,
+  "contract_name": "RewardDistributor",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.647Z"
+}

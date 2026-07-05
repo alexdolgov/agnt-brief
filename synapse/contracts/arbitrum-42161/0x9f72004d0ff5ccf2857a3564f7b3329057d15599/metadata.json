@@ -1,0 +1,18 @@
+{
+  "address": "0x9f72004d0ff5ccf2857a3564f7b3329057d15599",
+  "chain_id": 42161,
+  "contract_name": "MetaSwapDeployer",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:26.385Z"
+}

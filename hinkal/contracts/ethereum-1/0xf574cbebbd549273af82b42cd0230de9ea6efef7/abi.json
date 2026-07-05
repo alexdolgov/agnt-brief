@@ -1,0 +1,285 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "u_inf",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "A",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "r_minf",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "shift",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetParameters",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "name": "factory",
+        "type": "address"
+      },
+      {
+        "name": "susde",
+        "type": "address"
+      },
+      {
+        "name": "borrowed_token",
+        "type": "address"
+      },
+      {
+        "name": "target_utilization",
+        "type": "uint256"
+      },
+      {
+        "name": "low_ratio",
+        "type": "uint256"
+      },
+      {
+        "name": "high_ratio",
+        "type": "uint256"
+      },
+      {
+        "name": "rate_shift",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "raw_susde_apr",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ma_susde_rate",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rate",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_for",
+        "type": "address"
+      }
+    ],
+    "name": "rate",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rate_write",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_for",
+        "type": "address"
+      }
+    ],
+    "name": "rate_write",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "target_utilization",
+        "type": "uint256"
+      },
+      {
+        "name": "low_ratio",
+        "type": "uint256"
+      },
+      {
+        "name": "high_ratio",
+        "type": "uint256"
+      },
+      {
+        "name": "rate_shift",
+        "type": "uint256"
+      }
+    ],
+    "name": "set_parameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_for",
+        "type": "address"
+      },
+      {
+        "name": "d_reserves",
+        "type": "int256"
+      },
+      {
+        "name": "d_debt",
+        "type": "int256"
+      }
+    ],
+    "name": "future_rate",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VESTING_PERIOD",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TEXP",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BORROWED_TOKEN",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FACTORY",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SUSDE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "parameters",
+    "outputs": [
+      {
+        "components": [
+          {
+            "name": "u_inf",
+            "type": "uint256"
+          },
+          {
+            "name": "A",
+            "type": "uint256"
+          },
+          {
+            "name": "r_minf",
+            "type": "uint256"
+          },
+          {
+            "name": "shift",
+            "type": "uint256"
+          }
+        ],
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

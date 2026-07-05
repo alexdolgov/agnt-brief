@@ -1,0 +1,18 @@
+{
+  "address": "0x69f79536d304a556603ff55d4dac017ddf50af50",
+  "chain_id": 1,
+  "contract_name": "CrvOracle",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.104Z"
+}

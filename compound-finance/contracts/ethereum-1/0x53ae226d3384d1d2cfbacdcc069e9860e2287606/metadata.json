@@ -1,0 +1,18 @@
+{
+  "address": "0x53ae226d3384d1d2cfbacdcc069e9860e2287606",
+  "chain_id": 1,
+  "contract_name": "OperatorFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.866Z"
+}

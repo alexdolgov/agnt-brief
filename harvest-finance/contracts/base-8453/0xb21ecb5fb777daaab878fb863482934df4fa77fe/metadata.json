@@ -1,0 +1,18 @@
+{
+  "address": "0xb21ecb5fb777daaab878fb863482934df4fa77fe",
+  "chain_id": 8453,
+  "contract_name": "BaseSwapStrategyV2Mainnet_BSWAP_ETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:58.553Z"
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "inputs": [],
+    "name": "CheckpointAlreadyRecorded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IncorrectStrategy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidStakerAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidZeroInput",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MismatchedArrayLengths",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawalAlreadyCompleted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawalAlreadyTracked",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawalNotQueued",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IS_NATIVE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_STAKE_BUT_NOT_VERIFIED_AMOUNT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "queuedShares",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "queuedSharesWithSlashing",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stakedButNotVerifiedEth",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "partialWithdrawalPodDelta",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract IEigenPodManager",
+        "name": "eigenPodManager",
+        "type": "IEigenPodManager"
+      },
+      {
+        "internalType": "contract IDelegationManager",
+        "name": "delegationManager",
+        "type": "IDelegationManager"
+      }
+    ],
+    "name": "getStakedETHBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "queuedShares",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "queuedSharesWithSlashing",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract IDelegationManager",
+        "name": "delegationManager",
+        "type": "IDelegationManager"
+      },
+      {
+        "internalType": "contract IStrategy",
+        "name": "strategy",
+        "type": "IStrategy"
+      }
+    ],
+    "name": "getTokenBalanceFromStrategy",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

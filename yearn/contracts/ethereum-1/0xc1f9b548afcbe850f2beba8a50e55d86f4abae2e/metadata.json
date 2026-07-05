@@ -1,0 +1,17 @@
+{
+  "address": "0xc1f9b548afcbe850f2beba8a50e55d86f4abae2e",
+  "chain_id": 1,
+  "contract_name": "Revenue Price Oracle",
+  "compiler_version": "vyper:0.4.2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000be53a109b494e5c9f97b9cd39fe969be68bf6204",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:54.042Z"
+}

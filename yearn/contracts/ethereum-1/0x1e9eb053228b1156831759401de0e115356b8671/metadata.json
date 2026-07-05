@@ -1,0 +1,17 @@
+{
+  "address": "0x1e9eb053228b1156831759401de0e115356b8671",
+  "chain_id": 1,
+  "contract_name": "DebtAllocator",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.562Z"
+}

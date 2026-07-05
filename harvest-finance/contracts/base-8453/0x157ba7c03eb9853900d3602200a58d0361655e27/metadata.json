@@ -1,0 +1,17 @@
+{
+  "address": "0x157ba7c03eb9853900d3602200a58d0361655e27",
+  "chain_id": 8453,
+  "contract_name": "PriceOracleMiddlewareManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 2500,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "00000000000000000000000041cfe273c51e2c1391f9efa5ce7236810323eadc000000000000000000000000d9b73af0b29cbaf88f01384ea1fb5adcb608bed0",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:18.776Z"
+}

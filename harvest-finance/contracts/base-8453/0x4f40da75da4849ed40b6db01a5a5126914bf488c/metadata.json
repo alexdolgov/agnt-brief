@@ -1,0 +1,18 @@
+{
+  "address": "0x4f40da75da4849ed40b6db01a5a5126914bf488c",
+  "chain_id": 8453,
+  "contract_name": "RewardsManagerFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 74,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:33.843Z"
+}

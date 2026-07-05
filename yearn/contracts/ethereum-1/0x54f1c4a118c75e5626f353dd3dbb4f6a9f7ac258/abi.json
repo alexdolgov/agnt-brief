@@ -1,0 +1,208 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "baseRateBps_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "overdueGraceSeconds_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "overdueStepBps_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "baseRateBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "BaseRateBpsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "governance",
+        "type": "address"
+      }
+    ],
+    "name": "GovernanceUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "overdueGraceSeconds",
+        "type": "uint256"
+      }
+    ],
+    "name": "OverdueGraceSecondsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "overdueStepBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "OverdueStepBpsUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "baseRateBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "riskPremiumBps",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "elapsedSeconds",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expectedSeconds",
+        "type": "uint256"
+      }
+    ],
+    "name": "borrowRateBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governance",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "overdueGraceSeconds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "overdueStepBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "baseRateBps_",
+        "type": "uint256"
+      }
+    ],
+    "name": "setBaseRateBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "governance_",
+        "type": "address"
+      }
+    ],
+    "name": "setGovernance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "overdueGraceSeconds_",
+        "type": "uint256"
+      }
+    ],
+    "name": "setOverdueGraceSeconds",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "overdueStepBps_",
+        "type": "uint256"
+      }
+    ],
+    "name": "setOverdueStepBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

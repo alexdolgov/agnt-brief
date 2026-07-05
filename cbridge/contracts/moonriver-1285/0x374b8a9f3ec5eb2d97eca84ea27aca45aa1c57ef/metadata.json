@@ -1,0 +1,17 @@
+{
+  "address": "0x374b8a9f3ec5eb2d97eca84ea27aca45aa1c57ef",
+  "chain_id": 1285,
+  "contract_name": "PeggedTokenBridge",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000841ce48f9446c8e281d3f1444cb859b4a6d0738c",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:05:58.402Z"
+}

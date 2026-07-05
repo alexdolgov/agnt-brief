@@ -1,0 +1,17 @@
+{
+  "address": "0x2a198e3c2064561f21fd82d815bd9fe2d4acc99d",
+  "chain_id": 8453,
+  "contract_name": "AuraSidecarFactoryL2",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "000000000000000000000000a20543bf26d8f85613767f20a4ffb85f7dd2a6a70000000000000000000000008d34ee08482c65f0871ecc160e3c343a0dec728a00000000000000000000000098ef32edd24e2c92525e59afc4475c1242a30184",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.575Z"
+}

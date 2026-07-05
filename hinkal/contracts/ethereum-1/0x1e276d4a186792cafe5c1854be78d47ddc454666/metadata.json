@@ -1,0 +1,18 @@
+{
+  "address": "0x1e276d4a186792cafe5c1854be78d47ddc454666",
+  "chain_id": 1,
+  "contract_name": "PxETHOracle",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.129Z"
+}

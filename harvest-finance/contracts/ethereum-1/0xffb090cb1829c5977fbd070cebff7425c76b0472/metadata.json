@@ -1,0 +1,17 @@
+{
+  "address": "0xffb090cb1829c5977fbd070cebff7425c76b0472",
+  "chain_id": 1,
+  "contract_name": "PlasmaVault",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 2500,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 62,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:12.630Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1a8bf92abe1de4bdbf5fb8af223ec5fedceffb76",
+  "chain_id": 10,
+  "contract_name": "StrategyAave",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": "0x1236f2bae307d9efa1b055c2577613e07b1aafa9",
+  "fetched_at": "2026-07-04T19:19:44.685Z"
+}

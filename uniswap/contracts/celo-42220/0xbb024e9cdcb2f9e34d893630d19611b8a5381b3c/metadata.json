@@ -1,0 +1,18 @@
+{
+  "address": "0xbb024e9cdcb2f9e34d893630d19611b8a5381b3c",
+  "chain_id": 42220,
+  "contract_name": "FeeCurrencyWhitelist",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xa9d6092327dd0cab3c513b24925a5925f7881afd",
+  "fetched_at": "2026-07-04T19:23:33.318Z"
+}

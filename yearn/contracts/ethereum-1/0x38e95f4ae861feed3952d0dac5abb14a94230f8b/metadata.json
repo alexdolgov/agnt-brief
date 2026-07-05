@@ -1,0 +1,17 @@
+{
+  "address": "0x38e95f4ae861feed3952d0dac5abb14a94230f8b",
+  "chain_id": 1,
+  "contract_name": "USDSFarmerUSDC",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "000000000000000000000000182863131f9a4630ff9e27830d945b1413e347e8000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000165553444320746f2055534453204465706f7369746f7200000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.663Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x54740125e6ec6d66b06c7317182cfbce7a2a8079",
+  "chain_id": 1,
+  "contract_name": "NarwhaleStrategyMainnet_ESD",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x0c09be4864966f400741e45be81f72e875ef2e90",
+  "fetched_at": "2026-07-05T14:11:32.196Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x7d21685c17607338b313a7174bab6620bad0aab7",
+  "chain_id": 42220,
+  "contract_name": "Accounts",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x907f5c53c0e31db06af45bc58f076563469c525a",
+  "fetched_at": "2026-07-04T19:23:33.260Z"
+}

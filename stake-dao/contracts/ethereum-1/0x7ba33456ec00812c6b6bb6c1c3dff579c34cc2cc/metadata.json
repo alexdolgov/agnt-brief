@@ -1,0 +1,18 @@
+{
+  "address": "0x7ba33456ec00812c6b6bb6c1c3dff579c34cc2cc",
+  "chain_id": 1,
+  "contract_name": "XYZ Broadcaster",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.768Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x3a18062f12939658ac8c020a0443a388db00ea42",
+  "chain_id": 10,
+  "contract_name": "Ovn",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.043Z"
+}

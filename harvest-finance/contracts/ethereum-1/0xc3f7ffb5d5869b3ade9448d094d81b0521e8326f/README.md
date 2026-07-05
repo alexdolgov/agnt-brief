@@ -5,12 +5,13 @@
 | Chain | ethereum (1) |
 | Address | `0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f` |
 | Role | core_logic |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_core |
 | Audited | Yes |
 | Audits | [CertiK-Harvest.pdf](https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf) |
 | Deployments | 1 (ethereum [`0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f`](../0xc3f7ffb5d5869b3ade9448d094d81b0521e8326f/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
-| TVL | $115,045,514.19 |
+| TVL | n/a |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

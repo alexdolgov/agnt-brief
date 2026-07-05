@@ -1,0 +1,18 @@
+{
+  "address": "0x1928e57c7a5c65da3df0c02d1bade430e518963a",
+  "chain_id": 8453,
+  "contract_name": "RouterModuleERC20Manager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.412Z"
+}

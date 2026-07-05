@@ -1,0 +1,18 @@
+{
+  "address": "0x5b103d2125d83d2521815f62304b67b2c2403a45",
+  "chain_id": 1,
+  "contract_name": "PEAKDEFI_V1",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.579Z"
+}

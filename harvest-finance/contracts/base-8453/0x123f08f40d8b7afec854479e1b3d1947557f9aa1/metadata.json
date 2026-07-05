@@ -1,0 +1,18 @@
+{
+  "address": "0x123f08f40d8b7afec854479e1b3d1947557f9aa1",
+  "chain_id": 8453,
+  "contract_name": "WithdrawManager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:18.189Z"
+}

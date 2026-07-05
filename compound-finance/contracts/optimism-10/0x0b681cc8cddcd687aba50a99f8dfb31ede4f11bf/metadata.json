@@ -1,0 +1,18 @@
+{
+  "address": "0x0b681cc8cddcd687aba50a99f8dfb31ede4f11bf",
+  "chain_id": 10,
+  "contract_name": "GnosisSafeProxyFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.233Z"
+}

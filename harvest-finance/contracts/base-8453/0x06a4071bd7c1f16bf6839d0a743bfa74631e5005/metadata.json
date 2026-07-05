@@ -1,0 +1,18 @@
+{
+  "address": "0x06a4071bd7c1f16bf6839d0a743bfa74631e5005",
+  "chain_id": 8453,
+  "contract_name": "AerodromeVolatileStrategyMainnet_USDC_AERO",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:39.608Z"
+}

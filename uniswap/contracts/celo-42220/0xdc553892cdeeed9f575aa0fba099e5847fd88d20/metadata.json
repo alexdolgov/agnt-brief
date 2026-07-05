@@ -1,0 +1,18 @@
+{
+  "address": "0xdc553892cdeeed9f575aa0fba099e5847fd88d20",
+  "chain_id": 42220,
+  "contract_name": "Attestations",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xf65903343712820ef19090c15051687b9363758c",
+  "fetched_at": "2026-07-04T19:23:33.326Z"
+}

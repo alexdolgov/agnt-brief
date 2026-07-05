@@ -1,0 +1,18 @@
+{
+  "address": "0x21c0251da69920414ec36c8f19fb61f3d50027af",
+  "chain_id": 1,
+  "contract_name": "MintSwapCanonicalToken",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:05:59.600Z"
+}

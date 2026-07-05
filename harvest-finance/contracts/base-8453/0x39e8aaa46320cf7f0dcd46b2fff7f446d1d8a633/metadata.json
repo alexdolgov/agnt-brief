@@ -1,0 +1,18 @@
+{
+  "address": "0x39e8aaa46320cf7f0dcd46b2fff7f446d1d8a633",
+  "chain_id": 8453,
+  "contract_name": "StrategyProxy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:27.839Z"
+}

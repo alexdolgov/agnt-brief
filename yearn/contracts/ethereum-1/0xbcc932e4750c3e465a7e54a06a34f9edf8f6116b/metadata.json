@@ -1,0 +1,17 @@
+{
+  "address": "0xbcc932e4750c3e465a7e54a06a34f9edf8f6116b",
+  "chain_id": 1,
+  "contract_name": "Funding Distributor",
+  "compiler_version": "vyper:0.4.2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000069151f80",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:54.035Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xd2a2a353d28e4833faffc882f6649c9c884a7d8f",
+  "chain_id": 137,
+  "contract_name": "ESW",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xf94c81295fa91a2ac7f45df118259c7aa0e78c11",
+  "fetched_at": "2026-07-05T13:06:07.371Z"
+}

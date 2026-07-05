@@ -1,0 +1,18 @@
+{
+  "address": "0x5365a2c47b90ee8c9317fac20edc3ce7037384fb",
+  "chain_id": 56,
+  "contract_name": "VenusFoldStrategyMainnet_BTCB",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:24.163Z"
+}

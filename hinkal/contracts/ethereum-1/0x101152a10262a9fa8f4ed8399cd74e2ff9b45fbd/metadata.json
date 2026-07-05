@@ -1,0 +1,17 @@
+{
+  "address": "0x101152a10262a9fa8f4ed8399cd74e2ff9b45fbd",
+  "chain_id": 1,
+  "contract_name": "RSETH",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 4000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.746Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x05a3c16c454262254c63b4dda9ef4007799af165",
+  "chain_id": 1,
+  "contract_name": "UniSwap_ETH_CDAIZap",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.427Z"
+}

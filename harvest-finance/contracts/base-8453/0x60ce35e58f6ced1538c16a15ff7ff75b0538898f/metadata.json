@@ -1,0 +1,18 @@
+{
+  "address": "0x60ce35e58f6ced1538c16a15ff7ff75b0538898f",
+  "chain_id": 8453,
+  "contract_name": "EulerV2BatchFuse",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 78,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:38.561Z"
+}

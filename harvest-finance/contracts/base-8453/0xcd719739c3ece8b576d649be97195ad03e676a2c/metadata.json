@@ -1,0 +1,18 @@
+{
+  "address": "0xcd719739c3ece8b576d649be97195ad03e676a2c",
+  "chain_id": 8453,
+  "contract_name": "ProfitSharingReceiver",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.901Z"
+}

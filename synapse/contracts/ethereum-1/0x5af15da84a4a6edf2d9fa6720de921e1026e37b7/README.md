@@ -5,10 +5,11 @@
 | Chain | ethereum (1) |
 | Address | `0x5af15da84a4a6edf2d9fa6720de921e1026e37b7` |
 | Role | core_logic |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_core |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 5 (ethereum [`0x5af15da84a4a6edf2d9fa6720de921e1026e37b7`](../0x5af15da84a4a6edf2d9fa6720de921e1026e37b7/); ethereum `0xa2761b0539374eb7af2155f76eb09864af075250`; ethereum `0xbc10c4f7b9fe0b305e8639b04c536633a3db7065`; ethereum `0xf3c2bdfccb75cafda3d69d807c336bede956563f`; avalanche `0x9ab2de34a33fb459b538c43f251eb825645e8595`) |
+| Deployments | 5 (ethereum [`0x5af15da84a4a6edf2d9fa6720de921e1026e37b7`](../0x5af15da84a4a6edf2d9fa6720de921e1026e37b7/); ethereum [`0xa2761b0539374eb7af2155f76eb09864af075250`](../0xa2761b0539374eb7af2155f76eb09864af075250/); ethereum [`0xbc10c4f7b9fe0b305e8639b04c536633a3db7065`](../0xbc10c4f7b9fe0b305e8639b04c536633a3db7065/); ethereum [`0xf3c2bdfccb75cafda3d69d807c336bede956563f`](../0xf3c2bdfccb75cafda3d69d807c336bede956563f/); avalanche [`0x9ab2de34a33fb459b538c43f251eb825645e8595`](../../avalanche-43114/0x9ab2de34a33fb459b538c43f251eb825645e8595/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

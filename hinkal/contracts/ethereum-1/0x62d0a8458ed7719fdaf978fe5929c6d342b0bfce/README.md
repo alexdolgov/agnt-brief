@@ -1,0 +1,17 @@
+# BeamToken
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x62d0a8458ed7719fdaf978fe5929c6d342b0bfce` |
+| Role | unknown |
+| Origin | native |
+| Surface | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x62d0a8458ed7719fdaf978fe5929c6d342b0bfce`](../0x62d0a8458ed7719fdaf978fe5929c6d342b0bfce/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

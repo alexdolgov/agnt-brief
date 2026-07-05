@@ -1,0 +1,20 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidOraclePrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "latestAnswer",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "uniEthToUsdPrice",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

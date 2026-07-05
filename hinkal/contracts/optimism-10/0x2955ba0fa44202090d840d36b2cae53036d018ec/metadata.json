@@ -1,0 +1,18 @@
+{
+  "address": "0x2955ba0fa44202090d840d36b2cae53036d018ec",
+  "chain_id": 10,
+  "contract_name": "StrategyVesperUsdc",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": "0x784f498944b7477682e4058d98cccdc3f8c0bad1",
+  "fetched_at": "2026-07-04T19:19:44.837Z"
+}

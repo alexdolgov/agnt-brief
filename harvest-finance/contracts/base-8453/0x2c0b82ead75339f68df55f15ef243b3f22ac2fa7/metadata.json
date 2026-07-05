@@ -1,0 +1,18 @@
+{
+  "address": "0x2c0b82ead75339f68df55f15ef243b3f22ac2fa7",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyV2Mainnet_WETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 195,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:24.436Z"
+}

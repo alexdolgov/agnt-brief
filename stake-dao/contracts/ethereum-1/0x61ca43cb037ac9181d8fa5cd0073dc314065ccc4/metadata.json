@@ -1,0 +1,18 @@
+{
+  "address": "0x61ca43cb037ac9181d8fa5cd0073dc314065ccc4",
+  "chain_id": 1,
+  "contract_name": "SuperchainConfig",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x0d9c39c64cf8eda1edfebd78afa895baa797efc4",
+  "fetched_at": "2026-07-04T19:22:43.618Z"
+}

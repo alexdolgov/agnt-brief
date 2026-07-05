@@ -1,0 +1,18 @@
+{
+  "address": "0x396690f021f5f73abc5d1aaa8cf3a991abd01cea",
+  "chain_id": 8453,
+  "contract_name": "AerodromeVolatileStrategyMainnet_WELL_ETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.371Z"
+}

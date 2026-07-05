@@ -1,0 +1,68 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IwstETH",
+        "name": "_wsteth",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IRateProviderRegistry",
+        "name": "_rpr",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "RATE_PROVIDER_REGISTRY",
+    "outputs": [
+      {
+        "internalType": "contract IRateProviderRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_target",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "nav",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nav",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wstETH",
+    "outputs": [
+      {
+        "internalType": "contract IwstETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

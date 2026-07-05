@@ -1,0 +1,17 @@
+{
+  "address": "0xd23f2a6c8a4f5ea62e2b468c89a14ef28ede2291",
+  "chain_id": 59144,
+  "contract_name": "PullRewardsTransferStrategy",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000028f6899ff643261ca9766ddc251b359a2d00b9450000000000000000000000000f6e98a756a40dd050dc78959f45559f98d3289d0000000000000000000000000f6e98a756a40dd050dc78959f45559f98d3289d",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.797Z"
+}

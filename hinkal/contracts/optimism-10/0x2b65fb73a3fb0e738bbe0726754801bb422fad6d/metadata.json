@@ -1,0 +1,18 @@
+{
+  "address": "0x2b65fb73a3fb0e738bbe0726754801bb422fad6d",
+  "chain_id": 10,
+  "contract_name": "StrategyBeethovenxUsdc",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": "0xaa6cfd8a0ba4fa23f1a24a6ac72717ba977fa739",
+  "fetched_at": "2026-07-04T19:19:44.866Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x3bd13c2c082cb269c54432746335a7814972ad24",
+  "chain_id": 1,
+  "contract_name": "StrategyRouterV2",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000e537b5cc158eb71037d4125bdd7538421981e6aa0000000000000000000000008078198fc424986ae89ce4a910fc109587b6abf30000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000001e5374726174656779526f7574657256322d43757276652d3343727970746f0000",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.686Z"
+}

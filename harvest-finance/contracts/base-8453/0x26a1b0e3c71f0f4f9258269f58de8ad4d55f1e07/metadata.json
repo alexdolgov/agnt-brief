@@ -1,0 +1,18 @@
+{
+  "address": "0x26a1b0e3c71f0f4f9258269f58de8ad4d55f1e07",
+  "chain_id": 8453,
+  "contract_name": "AerodromeCLStrategyMainnet_cbETH_ETH1",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:22.950Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x48bf3a071098a09c7d00379b4dbc69ab6da83a36",
+  "chain_id": 42161,
+  "contract_name": "BeefyWrapper",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0xfc8075ece176e7f53d64ca0017bc99b889ba2340",
+  "fetched_at": "2026-07-04T19:19:44.481Z"
+}

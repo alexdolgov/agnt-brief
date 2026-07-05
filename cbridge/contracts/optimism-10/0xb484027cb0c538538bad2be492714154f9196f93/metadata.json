@@ -1,0 +1,18 @@
+{
+  "address": "0xb484027cb0c538538bad2be492714154f9196f93",
+  "chain_id": 10,
+  "contract_name": "AmmVault",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": "0x9f729f767528cbd84d797d87e5e1cbd05d66393a",
+  "fetched_at": "2026-07-05T13:06:07.738Z"
+}

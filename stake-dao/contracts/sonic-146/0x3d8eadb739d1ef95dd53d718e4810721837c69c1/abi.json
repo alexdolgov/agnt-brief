@@ -1,0 +1,143 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_block_hash_oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_relayer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BLOCK_HASH_ORACLE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "RELAYER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "nonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_agent",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "target",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IRelayer.Message[]",
+        "name": "_messages",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_block_header_rlp",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_proof_rlp",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyMessagesByBlockHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_agent",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "target",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IRelayer.Message[]",
+        "name": "_messages",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_block_number",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_proof_rlp",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyMessagesByStateRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

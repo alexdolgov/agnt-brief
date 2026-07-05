@@ -1,0 +1,18 @@
+{
+  "address": "0x2416092f143378750bb29b79ed961ab195cceea5",
+  "chain_id": 10,
+  "contract_name": "XERC20",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xb370a0bd64daf1c6b04eaf01c1dedf7c6bce30f7",
+  "fetched_at": "2026-07-04T19:18:35.265Z"
+}

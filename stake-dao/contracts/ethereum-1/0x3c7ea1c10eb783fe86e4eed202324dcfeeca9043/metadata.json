@@ -1,0 +1,18 @@
+{
+  "address": "0x3c7ea1c10eb783fe86e4eed202324dcfeeca9043",
+  "chain_id": 1,
+  "contract_name": "ProtocolVersions",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0xee1d28b0fb299bce1e164acc001c15e283082ba2",
+  "fetched_at": "2026-07-04T19:22:43.363Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x3a01521f8e7f012eb37eaaf1cb9490a5d9e18249",
+  "chain_id": 43114,
+  "contract_name": "MiniChefV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:19.269Z"
+}

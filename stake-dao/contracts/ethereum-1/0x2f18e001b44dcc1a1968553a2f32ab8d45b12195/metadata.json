@@ -1,0 +1,18 @@
+{
+  "address": "0x2f18e001b44dcc1a1968553a2f32ab8d45b12195",
+  "chain_id": 1,
+  "contract_name": "StashController",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.255Z"
+}

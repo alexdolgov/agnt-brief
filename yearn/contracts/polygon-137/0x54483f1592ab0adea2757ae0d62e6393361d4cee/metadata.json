@@ -1,0 +1,18 @@
+{
+  "address": "0x54483f1592ab0adea2757ae0d62e6393361d4cee",
+  "chain_id": 137,
+  "contract_name": "RefundAccountant",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.343Z"
+}

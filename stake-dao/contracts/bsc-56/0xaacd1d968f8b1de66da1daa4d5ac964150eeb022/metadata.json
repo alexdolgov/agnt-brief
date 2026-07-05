@@ -1,0 +1,18 @@
+{
+  "address": "0xaacd1d968f8b1de66da1daa4d5ac964150eeb022",
+  "chain_id": 56,
+  "contract_name": "AlpacaAdapter",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.703Z"
+}

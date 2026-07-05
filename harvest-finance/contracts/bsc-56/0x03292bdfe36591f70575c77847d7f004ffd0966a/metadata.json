@@ -1,0 +1,17 @@
+{
+  "address": "0x03292bdfe36591f70575c77847d7f004ffd0966a",
+  "chain_id": 56,
+  "contract_name": "PotPool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:39.415Z"
+}

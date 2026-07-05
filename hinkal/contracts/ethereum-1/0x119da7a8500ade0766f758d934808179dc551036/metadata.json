@@ -1,0 +1,18 @@
+{
+  "address": "0x119da7a8500ade0766f758d934808179dc551036",
+  "chain_id": 1,
+  "contract_name": "SettlementRegistry",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.822Z"
+}

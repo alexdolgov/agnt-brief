@@ -1,0 +1,18 @@
+{
+  "address": "0xb7c0b2c7edc2454d443cbde2c274d73a574770f0",
+  "chain_id": 8453,
+  "contract_name": "FortyAcresLendStrategyMainnet_USDC",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:00.046Z"
+}

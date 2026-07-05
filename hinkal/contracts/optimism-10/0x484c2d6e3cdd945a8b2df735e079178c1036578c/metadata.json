@@ -1,0 +1,18 @@
+{
+  "address": "0x484c2d6e3cdd945a8b2df735e079178c1036578c",
+  "chain_id": 10,
+  "contract_name": "CrossChainCanonicalV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.125Z"
+}

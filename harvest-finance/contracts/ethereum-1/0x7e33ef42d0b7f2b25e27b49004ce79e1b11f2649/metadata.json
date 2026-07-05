@@ -1,0 +1,18 @@
+{
+  "address": "0x7e33ef42d0b7f2b25e27b49004ce79e1b11f2649",
+  "chain_id": 1,
+  "contract_name": "NFT20Strategy_GPUNK",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xca0a744cc152b10a8274eb434d27afc3ba1de967",
+  "fetched_at": "2026-07-05T14:11:42.875Z"
+}

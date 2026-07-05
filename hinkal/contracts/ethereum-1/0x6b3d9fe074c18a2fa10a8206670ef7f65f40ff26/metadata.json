@@ -1,0 +1,18 @@
+{
+  "address": "0x6b3d9fe074c18a2fa10a8206670ef7f65f40ff26",
+  "chain_id": 1,
+  "contract_name": "SweeperV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.128Z"
+}

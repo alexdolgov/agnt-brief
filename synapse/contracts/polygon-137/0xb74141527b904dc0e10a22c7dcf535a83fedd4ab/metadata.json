@@ -1,0 +1,18 @@
+{
+  "address": "0xb74141527b904dc0e10a22c7dcf535a83fedd4ab",
+  "chain_id": 137,
+  "contract_name": "NerveMetaBridgeZap",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:31.240Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xcf6d6eab1176e862ea67fb6d4c1f740fa5579309",
+  "chain_id": 1,
+  "contract_name": "SNXRewardUniLPStrategy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:02.782Z"
+}

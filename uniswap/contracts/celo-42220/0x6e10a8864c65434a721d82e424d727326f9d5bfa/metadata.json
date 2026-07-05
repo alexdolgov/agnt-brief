@@ -1,0 +1,18 @@
+{
+  "address": "0x6e10a8864c65434a721d82e424d727326f9d5bfa",
+  "chain_id": 42220,
+  "contract_name": "BlockchainParameters",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x3058c4197c56c9a9c92d3516f2d4bb8a76c46672",
+  "fetched_at": "2026-07-04T19:23:33.233Z"
+}

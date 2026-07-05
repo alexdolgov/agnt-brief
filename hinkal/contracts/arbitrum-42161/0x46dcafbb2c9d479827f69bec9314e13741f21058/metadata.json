@@ -1,0 +1,18 @@
+{
+  "address": "0x46dcafbb2c9d479827f69bec9314e13741f21058",
+  "chain_id": 42161,
+  "contract_name": "RamsesStaker",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.472Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2b60ffd309929af6be194b1f9428b63980f9edcf",
+  "chain_id": 10,
+  "contract_name": "StrategyUs3UsdcWethOp",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.860Z"
+}

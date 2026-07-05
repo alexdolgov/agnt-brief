@@ -1,0 +1,17 @@
+{
+  "address": "0x0bd27617e20f09a8e7ffdae281e383b4b2f7a742",
+  "chain_id": 59144,
+  "contract_name": "PythAggregatorV3",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "000000000000000000000000a2aa501b19aff244d90cc15a4cf739d2725b5729ff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.204Z"
+}

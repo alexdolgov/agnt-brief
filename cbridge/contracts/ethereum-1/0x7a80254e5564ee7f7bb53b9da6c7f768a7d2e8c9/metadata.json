@@ -1,0 +1,18 @@
+{
+  "address": "0x7a80254e5564ee7f7bb53b9da6c7f768a7d2e8c9",
+  "chain_id": 1,
+  "contract_name": "MessageBus",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:06:05.176Z"
+}

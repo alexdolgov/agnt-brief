@@ -1,0 +1,18 @@
+{
+  "address": "0x871fbd4e01012e2e8457346059e8c189d664dba4",
+  "chain_id": 10,
+  "contract_name": "Child Liquidity Gauge Factory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.141Z"
+}

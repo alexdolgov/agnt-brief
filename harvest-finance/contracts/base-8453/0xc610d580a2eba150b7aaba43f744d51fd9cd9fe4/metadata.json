@@ -1,0 +1,17 @@
+{
+  "address": "0xc610d580a2eba150b7aaba43f744d51fd9cd9fe4",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyV2Mainnet_cbBTC",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 232,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:02.731Z"
+}

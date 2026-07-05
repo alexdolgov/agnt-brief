@@ -1,0 +1,18 @@
+{
+  "address": "0xee338313f022caee84034253174fa562495dcc15",
+  "chain_id": 42161,
+  "contract_name": "iETHV2BLP",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xce9282b85fed980c8fd0bf5b40cac7fded5acd90",
+  "fetched_at": "2026-07-05T13:06:05.662Z"
+}

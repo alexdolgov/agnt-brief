@@ -1,0 +1,17 @@
+{
+  "address": "0x54f1c4a118c75e5626f353dd3dbb4f6a9f7ac258",
+  "chain_id": 1,
+  "contract_name": "YLiquidRateModel",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 250,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000003e80000000000000000000000000000000000000000000000000000000000015180000000000000000000000000000000000000000000000000000000000000000a",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.765Z"
+}

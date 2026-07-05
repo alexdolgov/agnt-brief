@@ -1,0 +1,18 @@
+{
+  "address": "0xbff8443e25aea1245481995e8d961a77d4131a8e",
+  "chain_id": 1,
+  "contract_name": "JPEGAirdropClaim",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.658Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x5196bedd7b70027dd6ebe2eee72a751175e942b0",
+  "chain_id": 59144,
+  "contract_name": "TransferStrategySimple",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000009c368e7a8a606e1603f798a76ccc722b52ec4578",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.556Z"
+}

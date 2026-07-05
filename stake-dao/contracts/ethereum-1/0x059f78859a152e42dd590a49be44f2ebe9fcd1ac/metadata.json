@@ -1,0 +1,18 @@
+{
+  "address": "0x059f78859a152e42dd590a49be44f2ebe9fcd1ac",
+  "chain_id": 1,
+  "contract_name": "VeSDTFeeAngleProxyV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.429Z"
+}

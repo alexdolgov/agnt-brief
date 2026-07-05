@@ -1,0 +1,17 @@
+{
+  "address": "0x0cde87c11b959e5eb0924c1abf5250ee3f9bd1b5",
+  "chain_id": 1,
+  "contract_name": "UERC20Factory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50000000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.454Z"
+}

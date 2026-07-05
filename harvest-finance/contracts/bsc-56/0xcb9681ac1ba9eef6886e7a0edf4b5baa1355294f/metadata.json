@@ -1,0 +1,18 @@
+{
+  "address": "0xcb9681ac1ba9eef6886e7a0edf4b5baa1355294f",
+  "chain_id": 56,
+  "contract_name": "SpaceStrategy_SPACE_BUSD",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:47.198Z"
+}

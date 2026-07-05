@@ -1,0 +1,18 @@
+{
+  "address": "0x7af4730cc8ebad1a050dcad5c03c33d2793ee91f",
+  "chain_id": 1,
+  "contract_name": "SDCollateral",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0x278097f753ab3e4a5e897dbb72cea1592e78e9a5",
+  "fetched_at": "2026-07-04T19:18:37.109Z"
+}

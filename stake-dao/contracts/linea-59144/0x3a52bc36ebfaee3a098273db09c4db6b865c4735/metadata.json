@@ -1,0 +1,17 @@
+{
+  "address": "0x3a52bc36ebfaee3a098273db09c4db6b865c4735",
+  "chain_id": 59144,
+  "contract_name": "TransferStrategyZERO",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000028f6899ff643261ca9766ddc251b359a2d00b9450000000000000000000000009fa72ea96591e486ff065e7c8a89282dedfa6c1200000000000000000000000078354f8dccb269a615a7e0a24f9b0718fdc3c7a7",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.453Z"
+}

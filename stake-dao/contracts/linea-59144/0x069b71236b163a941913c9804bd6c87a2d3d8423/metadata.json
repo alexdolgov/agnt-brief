@@ -1,0 +1,17 @@
+{
+  "address": "0x069b71236b163a941913c9804bd6c87a2d3d8423",
+  "chain_id": 59144,
+  "contract_name": "FeesBuybackBurn",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.174Z"
+}

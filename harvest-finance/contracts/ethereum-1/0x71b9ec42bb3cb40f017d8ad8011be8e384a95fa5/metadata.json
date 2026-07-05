@@ -1,0 +1,18 @@
+{
+  "address": "0x71b9ec42bb3cb40f017d8ad8011be8e384a95fa5",
+  "chain_id": 1,
+  "contract_name": "VaultV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x0de5f3a958f8e927c5b27d202d12b607e213d08c",
+  "fetched_at": "2026-07-05T14:11:39.878Z"
+}

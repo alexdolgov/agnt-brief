@@ -1,0 +1,17 @@
+{
+  "address": "0x176cff10ee6755ba69f21ff95cebbe52c2c56ccc",
+  "chain_id": 1,
+  "contract_name": "BasicRewardsOracle",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "0000000000000000000000001b5f15dcb82d25f91c65b53cee151e8b9fbdd271",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.527Z"
+}

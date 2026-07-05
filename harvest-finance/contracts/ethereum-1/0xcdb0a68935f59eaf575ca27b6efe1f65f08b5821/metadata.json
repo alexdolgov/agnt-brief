@@ -1,0 +1,18 @@
+{
+  "address": "0xcdb0a68935f59eaf575ca27b6efe1f65f08b5821",
+  "chain_id": 1,
+  "contract_name": "RewardsClaimManager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 63,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:02.117Z"
+}

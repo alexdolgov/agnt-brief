@@ -1,0 +1,18 @@
+{
+  "address": "0x531bba64373a1b8e5a94bb51ba32cce1cb42633d",
+  "chain_id": 1,
+  "contract_name": "LlamalendWeth2StakeDaoERC4626Strat",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.945Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x69019a2b392eac397dbfa1862a8f6d900e832c5d",
+  "chain_id": 56,
+  "contract_name": "EllipsisBTCStrategyMainnet",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:28.199Z"
+}

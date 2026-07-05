@@ -1,0 +1,18 @@
+{
+  "address": "0x6ac4a7ab91e6fd098e13b7d347c6d4d1494994a2",
+  "chain_id": 1,
+  "contract_name": "NoMintRewardPool",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:38.137Z"
+}

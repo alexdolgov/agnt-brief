@@ -1,0 +1,18 @@
+{
+  "address": "0x56db0fbaea64d776b64a4a5824e47f6465a5433c",
+  "chain_id": 1,
+  "contract_name": "PotPool",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:32.490Z"
+}

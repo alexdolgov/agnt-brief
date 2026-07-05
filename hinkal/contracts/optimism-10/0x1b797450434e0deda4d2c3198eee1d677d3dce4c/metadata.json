@@ -1,0 +1,18 @@
+{
+  "address": "0x1b797450434e0deda4d2c3198eee1d677d3dce4c",
+  "chain_id": 10,
+  "contract_name": "StrategyArrakisUsdcDai",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": "0x9b5eec7c4e848892c16a5e76f43e8a943c7a9880",
+  "fetched_at": "2026-07-04T19:19:44.705Z"
+}

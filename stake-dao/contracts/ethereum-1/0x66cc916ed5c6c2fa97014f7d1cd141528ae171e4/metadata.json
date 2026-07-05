@@ -1,0 +1,18 @@
+{
+  "address": "0x66cc916ed5c6c2fa97014f7d1cd141528ae171e4",
+  "chain_id": 1,
+  "contract_name": "L2OutputOracle",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x6f3ccc8c9daf8b9b39ade481213ff7a626a42b65",
+  "fetched_at": "2026-07-04T19:22:43.644Z"
+}

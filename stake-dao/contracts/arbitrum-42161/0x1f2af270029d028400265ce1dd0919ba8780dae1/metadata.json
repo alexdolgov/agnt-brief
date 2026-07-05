@@ -1,0 +1,17 @@
+{
+  "address": "0x1f2af270029d028400265ce1dd0919ba8780dae1",
+  "chain_id": 42161,
+  "contract_name": "FastBridgeL2",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.198Z"
+}

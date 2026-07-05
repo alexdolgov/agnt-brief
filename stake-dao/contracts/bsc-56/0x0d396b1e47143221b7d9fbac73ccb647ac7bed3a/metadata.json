@@ -1,0 +1,18 @@
+{
+  "address": "0x0d396b1e47143221b7d9fbac73ccb647ac7bed3a",
+  "chain_id": 56,
+  "contract_name": "PancakeStableSwapTwoPoolInfo",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.158Z"
+}

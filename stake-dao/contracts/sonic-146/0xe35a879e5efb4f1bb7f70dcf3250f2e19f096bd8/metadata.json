@@ -1,0 +1,17 @@
+{
+  "address": "0xe35a879e5efb4f1bb7f70dcf3250f2e19f096bd8",
+  "chain_id": 146,
+  "contract_name": "Sonic Block Hash oracle",
+  "compiler_version": "vyper:0.4.0",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "000000000000000000000000836664b0c0cb29b7877bccf94159cc996528f2c3",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.106Z"
+}

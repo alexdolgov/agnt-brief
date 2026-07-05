@@ -1,0 +1,17 @@
+{
+  "address": "0x02e5be68d46dac0b524905bff209cf47ee6db2a9",
+  "chain_id": 1,
+  "contract_name": "SwapProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 4444,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.370Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xd5d2adcb5e6ad20425b0650e4050c0ea9ec3cec0",
+  "chain_id": 1,
+  "contract_name": "SushiMasterChefLPStrategy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x8d65ce1459db9750ba5d98fd0926feb8539cee70",
+  "fetched_at": "2026-07-05T14:12:03.687Z"
+}

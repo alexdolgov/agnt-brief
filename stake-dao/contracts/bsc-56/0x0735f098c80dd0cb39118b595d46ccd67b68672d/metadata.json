@@ -1,0 +1,17 @@
+{
+  "address": "0x0735f098c80dd0cb39118b595d46ccd67b68672d",
+  "chain_id": 56,
+  "contract_name": "Liquidity Gauge v4 XChain",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000f79b275e0b602d82b822895074552e487412a41a000000000000000000000000000755fbe4a24d7478bfcfc1e561afce82d1ff62",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.121Z"
+}

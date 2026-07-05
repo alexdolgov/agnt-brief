@@ -1,0 +1,611 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ArrayLengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BotMethodsPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CannotBeZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC20TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ETHTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTokensToWithdraw",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotDepositManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEigenLayerManager",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlManager",
+    "outputs": [
+      {
+        "internalType": "contract IAccessControlManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DelegationManager",
+    "outputs": [
+      {
+        "internalType": "contract IDelegationManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EigenPodManager",
+    "outputs": [
+      {
+        "internalType": "contract IEigenPodManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "staker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "delegatedTo",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IStrategy[]",
+            "name": "strategies",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "shares",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct IDelegationManager.Withdrawal",
+        "name": "_withdrawal",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract IERC20[]",
+        "name": "_tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_middlewareTimesIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_receiveAsTokens",
+        "type": "bool"
+      }
+    ],
+    "name": "completeQueuedWithdrawal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IStrategy",
+        "name": "currentStrategy",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "depositIntoStrategy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "depositManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "eigenLayerManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "eigenPod",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "generateWithdrawalCredentialsForEigenPod",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAmountOfNonBeaconChainEth",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAccessControlManager",
+        "name": "_accessControlManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_delegationManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_eigenPodManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_depositManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_eigenLayerManager",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_dataHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "isValidSignature",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IStrategy[]",
+            "name": "strategies",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "shares",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IDelegationManager.QueuedWithdrawalParams[]",
+        "name": "_queuedWithdrawalParams",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "queueWithdrawals",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sendFundsToDepositManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "sendTokenBalanceToDepositManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_pubKeys",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signatures",
+        "type": "bytes"
+      }
+    ],
+    "name": "stakeOnEigenLayer",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "undelegateFromOperator",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "withdrawalRoots",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_oracleTimestamp",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "beaconStateRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "proof",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BeaconChainProofs.StateRootProof",
+        "name": "_stateRootProof",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "withdrawalProof",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "slotProof",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "executionPayloadProof",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "timestampProof",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "historicalSummaryBlockRootProof",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockRootIndex",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "historicalSummaryIndex",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "withdrawalIndex",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "blockRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "slotRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "timestampRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "executionPayloadRoot",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct BeaconChainProofs.WithdrawalProof[]",
+        "name": "_withdrawalProofs",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_validatorFieldsProofs",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "bytes32[][]",
+        "name": "_validatorFields",
+        "type": "bytes32[][]"
+      },
+      {
+        "internalType": "bytes32[][]",
+        "name": "_withdrawalFields",
+        "type": "bytes32[][]"
+      }
+    ],
+    "name": "verifyAndProcessWithdrawals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_oracleTimestamp",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "beaconStateRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "proof",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BeaconChainProofs.StateRootProof",
+        "name": "_stateRootProof",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint40[]",
+        "name": "_validatorIndices",
+        "type": "uint40[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_validatorFieldsProofs",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "bytes32[][]",
+        "name": "_validatorFields",
+        "type": "bytes32[][]"
+      }
+    ],
+    "name": "verifyPodWithdrawalCredentials",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20[]",
+        "name": "_tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawERC20FromPod",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawNonStakedBeaconChainEth",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

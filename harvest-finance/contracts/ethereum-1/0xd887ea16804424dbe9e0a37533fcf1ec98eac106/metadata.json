@@ -1,0 +1,17 @@
+{
+  "address": "0xd887ea16804424dbe9e0a37533fcf1ec98eac106",
+  "chain_id": 1,
+  "contract_name": "IporFusionAccessManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 2500,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 62,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:03.986Z"
+}

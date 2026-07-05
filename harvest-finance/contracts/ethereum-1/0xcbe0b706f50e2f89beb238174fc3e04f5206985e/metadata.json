@@ -1,0 +1,18 @@
+{
+  "address": "0xcbe0b706f50e2f89beb238174fc3e04f5206985e",
+  "chain_id": 1,
+  "contract_name": "NarwhaleStrategyMainnet_BAC",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x95fcbf69373552b3db416dcf97fd06af743141b3",
+  "fetched_at": "2026-07-05T14:12:01.736Z"
+}

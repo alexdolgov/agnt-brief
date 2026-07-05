@@ -1,0 +1,17 @@
+{
+  "address": "0x361aa6d20fbf6185490eb2ddf1dd1d3f301c201d",
+  "chain_id": 146,
+  "contract_name": "L2 Voting Escrow Oracle",
+  "compiler_version": "vyper:0.4.0",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.056Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x05e75b02fae21bdb10f570fa7a2db0605e7df2d9",
+  "chain_id": 8453,
+  "contract_name": "MorphoVaultStrategyMainnet_ION_USDC",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x40bc5c92973449d10cccd3afbdc504de156dce46",
+  "fetched_at": "2026-07-04T19:19:39.601Z"
+}

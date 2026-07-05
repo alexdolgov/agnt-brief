@@ -1,0 +1,17 @@
+{
+  "address": "0x60a31914879dc9f5d18181533df09c25deb40507",
+  "chain_id": 8453,
+  "contract_name": "BaseSwapStrategyV2Mainnet_ETH_USDC",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:38.494Z"
+}

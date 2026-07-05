@@ -1,0 +1,18 @@
+{
+  "address": "0x97b6897aad7aba3861c04c0e6388fc02af1f227f",
+  "chain_id": 10,
+  "contract_name": "VaultManager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.554Z"
+}

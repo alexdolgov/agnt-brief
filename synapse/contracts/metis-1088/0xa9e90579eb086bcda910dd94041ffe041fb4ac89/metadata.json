@@ -1,0 +1,18 @@
+{
+  "address": "0xa9e90579eb086bcda910dd94041ffe041fb4ac89",
+  "chain_id": 1088,
+  "contract_name": "SwapUtils",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:20.446Z"
+}

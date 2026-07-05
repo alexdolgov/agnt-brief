@@ -1,0 +1,18 @@
+{
+  "address": "0x265c8d21a322b04804524b857089de2fef619569",
+  "chain_id": 1,
+  "contract_name": "YBSUtilities",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.597Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4709ab91123f7dbb4b6c4a02c94e855678404fc7",
+  "chain_id": 1,
+  "contract_name": "CachedRateProvider",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "000000000000000000000000387dbc0fb00b26fb085aa658527d5be98302c84c",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.729Z"
+}

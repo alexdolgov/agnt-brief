@@ -1,0 +1,18 @@
+{
+  "address": "0x8d312fb7b342e2c1adff5cdb910be0a49117e389",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyV2Mainnet_DAI",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 188,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:50.524Z"
+}

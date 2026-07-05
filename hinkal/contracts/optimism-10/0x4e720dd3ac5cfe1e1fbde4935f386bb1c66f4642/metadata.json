@@ -1,0 +1,18 @@
+{
+  "address": "0x4e720dd3ac5cfe1e1fbde4935f386bb1c66f4642",
+  "chain_id": 10,
+  "contract_name": "AnyswapV6ERC20",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.154Z"
+}

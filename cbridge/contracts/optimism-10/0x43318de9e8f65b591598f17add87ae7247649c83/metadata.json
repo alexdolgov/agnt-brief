@@ -1,18 +1,18 @@
 {
   "address": "0x43318de9e8f65b591598f17add87ae7247649c83",
   "chain_id": 10,
-  "contract_name": "TransparentUpgradeableProxy",
-  "compiler_version": "v0.8.2+commit.661d1103",
-  "optimization_used": true,
-  "runs": 200,
-  "evm_version": "istanbul",
-  "license": "MIT",
+  "contract_name": "AmmVault",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
   "verified": true,
   "proxy": true,
   "source_provider": "sourcify",
   "sourcify_match": "full_match",
-  "source_file_count": 17,
+  "source_file_count": 15,
   "constructor_arguments": "",
   "implementation_address": "0x9f729f767528cbd84d797d87e5e1cbd05d66393a",
-  "fetched_at": "2026-06-17T06:45:48.873Z"
+  "fetched_at": "2026-07-04T19:18:29.371Z"
 }

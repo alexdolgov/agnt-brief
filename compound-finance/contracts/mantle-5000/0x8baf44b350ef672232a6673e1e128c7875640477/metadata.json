@@ -1,0 +1,17 @@
+{
+  "address": "0x8baf44b350ef672232a6673e1e128c7875640477",
+  "chain_id": 5000,
+  "contract_name": "PepeToken",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000042000000000000000000000000000000000000100000000000000000000000006982508145454ce325ddbe47a25d4ec3d2311933",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.358Z"
+}

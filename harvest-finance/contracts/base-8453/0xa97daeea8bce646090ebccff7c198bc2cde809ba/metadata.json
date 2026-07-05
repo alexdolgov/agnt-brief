@@ -1,0 +1,18 @@
+{
+  "address": "0xa97daeea8bce646090ebccff7c198bc2cde809ba",
+  "chain_id": 8453,
+  "contract_name": "FeeManagerFactory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 65,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:57.301Z"
+}

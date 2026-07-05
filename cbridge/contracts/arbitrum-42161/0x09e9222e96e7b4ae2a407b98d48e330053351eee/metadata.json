@@ -1,18 +1,18 @@
 {
   "address": "0x09e9222e96e7b4ae2a407b98d48e330053351eee",
   "chain_id": 42161,
-  "contract_name": "TransparentUpgradeableProxy",
-  "compiler_version": "v0.6.11+commit.5ef660b1",
-  "optimization_used": true,
-  "runs": 100,
-  "evm_version": "istanbul",
-  "license": "MIT",
+  "contract_name": "L2ERC20Gateway",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
   "verified": true,
   "proxy": true,
   "source_provider": "sourcify",
   "sourcify_match": "full_match",
-  "source_file_count": 6,
+  "source_file_count": 4,
   "constructor_arguments": "",
   "implementation_address": "0x1dcf7d03574fbc7c205f41f2e116ee094a652e93",
-  "fetched_at": "2026-06-12T15:05:43.635Z"
+  "fetched_at": "2026-07-04T19:18:29.207Z"
 }

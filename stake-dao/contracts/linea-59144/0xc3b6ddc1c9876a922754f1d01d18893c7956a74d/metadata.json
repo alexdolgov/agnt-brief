@@ -1,0 +1,17 @@
+{
+  "address": "0xc3b6ddc1c9876a922754f1d01d18893c7956a74d",
+  "chain_id": 59144,
+  "contract_name": "BridgeLogic",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.788Z"
+}

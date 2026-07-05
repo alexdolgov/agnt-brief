@@ -1,0 +1,18 @@
+{
+  "address": "0x663ef4455a07243d9029ba0fc48297ae181aeb38",
+  "chain_id": 1,
+  "contract_name": "SpellSwapper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.086Z"
+}

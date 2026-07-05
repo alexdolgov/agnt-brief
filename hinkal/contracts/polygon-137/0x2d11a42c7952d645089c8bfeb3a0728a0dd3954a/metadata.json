@@ -1,0 +1,17 @@
+{
+  "address": "0x2d11a42c7952d645089c8bfeb3a0728a0dd3954a",
+  "chain_id": 137,
+  "contract_name": "IDCard_V2_Controller",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.173Z"
+}

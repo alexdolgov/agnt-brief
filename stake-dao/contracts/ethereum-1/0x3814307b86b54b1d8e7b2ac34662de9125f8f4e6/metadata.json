@@ -1,0 +1,18 @@
+{
+  "address": "0x3814307b86b54b1d8e7b2ac34662de9125f8f4e6",
+  "chain_id": 1,
+  "contract_name": "UniV3LiquidityAMO",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 51,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.332Z"
+}

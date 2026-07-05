@@ -1,0 +1,18 @@
+{
+  "address": "0x821a278dfff762c76410264303f25bf42e195c0c",
+  "chain_id": 1,
+  "contract_name": "PETH",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:46.304Z"
+}

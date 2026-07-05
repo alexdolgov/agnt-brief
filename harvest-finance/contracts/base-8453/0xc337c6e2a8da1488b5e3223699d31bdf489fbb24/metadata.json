@@ -1,0 +1,18 @@
+{
+  "address": "0xc337c6e2a8da1488b5e3223699d31bdf489fbb24",
+  "chain_id": 8453,
+  "contract_name": "AerodromeVolatileStrategyMainnet_WETH_KLIMA",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.875Z"
+}

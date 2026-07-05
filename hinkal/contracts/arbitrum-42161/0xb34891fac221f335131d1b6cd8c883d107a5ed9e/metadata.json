@@ -1,0 +1,18 @@
+{
+  "address": "0xb34891fac221f335131d1b6cd8c883d107a5ed9e",
+  "chain_id": 42161,
+  "contract_name": "RodeoMigrator",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.817Z"
+}

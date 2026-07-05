@@ -1,0 +1,18 @@
+{
+  "address": "0x0ab2b043138352413bb02e67e626a70320e3bd46",
+  "chain_id": 42161,
+  "contract_name": "DisputeManager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x358bcb57f9893188c1f5ca4e3390c8e84daad9b9",
+  "fetched_at": "2026-07-04T19:19:44.152Z"
+}

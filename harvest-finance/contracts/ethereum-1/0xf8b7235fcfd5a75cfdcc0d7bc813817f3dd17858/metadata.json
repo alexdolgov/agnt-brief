@@ -1,0 +1,18 @@
+{
+  "address": "0xf8b7235fcfd5a75cfdcc0d7bc813817f3dd17858",
+  "chain_id": 1,
+  "contract_name": "VaultMigratable_DAIBASV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x193c55abe92744f430259c36dc972a30cf02e2d1",
+  "fetched_at": "2026-07-05T14:12:10.710Z"
+}

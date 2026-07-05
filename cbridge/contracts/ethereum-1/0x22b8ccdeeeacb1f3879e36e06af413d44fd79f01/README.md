@@ -4,8 +4,9 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01` |
-| Role | unknown |
-| Origin | needs_review |
+| Role | adapter |
+| Origin | native |
+| Surface | own_integration_wrapper |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01`](../0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01/)) |

@@ -1,0 +1,18 @@
+{
+  "address": "0xe0fa08834465ecc36c494f2b6c87b82ab7970413",
+  "chain_id": 42161,
+  "contract_name": "SwapFlashLoan",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:27.487Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x781ca258faf45b2490d4018a3cfdb45cb8ade650",
+  "chain_id": 8453,
+  "contract_name": "CLWrapper",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:43.549Z"
+}

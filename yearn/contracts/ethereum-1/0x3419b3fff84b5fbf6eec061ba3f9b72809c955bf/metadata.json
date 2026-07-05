@@ -1,0 +1,18 @@
+{
+  "address": "0x3419b3fff84b5fbf6eec061ba3f9b72809c955bf",
+  "chain_id": 1,
+  "contract_name": "PermastakerOperator",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.652Z"
+}

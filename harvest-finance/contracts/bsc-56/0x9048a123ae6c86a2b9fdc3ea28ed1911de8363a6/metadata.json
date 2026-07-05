@@ -1,0 +1,18 @@
+{
+  "address": "0x9048a123ae6c86a2b9fdc3ea28ed1911de8363a6",
+  "chain_id": 56,
+  "contract_name": "SwirlLPStrategyMainnet",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:11:36.447Z"
+}

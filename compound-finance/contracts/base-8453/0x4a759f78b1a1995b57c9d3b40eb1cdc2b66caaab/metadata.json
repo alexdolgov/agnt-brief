@@ -1,0 +1,18 @@
+{
+  "address": "0x4a759f78b1a1995b57c9d3b40eb1cdc2b66caaab",
+  "chain_id": 8453,
+  "contract_name": "OETHBaseVaultCore",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.545Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x52e5d1e24a4308ef1a221c949cb2f7cbbafee090",
+  "chain_id": 56,
+  "contract_name": "PancakeStableSwapWBNBHelper",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.474Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x03caec60a734da03f3ee8f8aca8834e8c3560e7e",
+  "chain_id": 1,
+  "contract_name": "MerkleOrchard",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.264Z"
+}

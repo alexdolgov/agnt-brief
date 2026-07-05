@@ -1,0 +1,18 @@
+{
+  "address": "0x5addcca35b7a0d07c74063c48700c8590e87864e",
+  "chain_id": 1,
+  "contract_name": "BalancerHelpers",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 86,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.566Z"
+}

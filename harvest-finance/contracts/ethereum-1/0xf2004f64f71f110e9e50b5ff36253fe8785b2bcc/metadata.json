@@ -1,0 +1,18 @@
+{
+  "address": "0xf2004f64f71f110e9e50b5ff36253fe8785b2bcc",
+  "chain_id": 1,
+  "contract_name": "iFarmStrategy",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:09.146Z"
+}

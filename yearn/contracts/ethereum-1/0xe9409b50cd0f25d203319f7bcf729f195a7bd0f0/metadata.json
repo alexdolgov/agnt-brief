@@ -1,0 +1,17 @@
+{
+  "address": "0xe9409b50cd0f25d203319f7bcf729f195a7bd0f0",
+  "chain_id": 1,
+  "contract_name": "SyrupExchange",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb4800000000000000000000000080ac24aa929eaf5013f6436cda2a7ba190f5cc0b000000000000000000000000134ccaaa4f1e4552ec8aecb9e4a2360ddcf8df76",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:54.106Z"
+}

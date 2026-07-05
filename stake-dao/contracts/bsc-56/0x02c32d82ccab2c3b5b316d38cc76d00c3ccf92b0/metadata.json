@@ -1,0 +1,18 @@
+{
+  "address": "0x02c32d82ccab2c3b5b316d38cc76d00c3ccf92b0",
+  "chain_id": 56,
+  "contract_name": "VotePowerV2",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.046Z"
+}

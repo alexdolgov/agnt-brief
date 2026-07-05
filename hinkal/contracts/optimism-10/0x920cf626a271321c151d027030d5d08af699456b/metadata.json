@@ -1,0 +1,18 @@
+{
+  "address": "0x920cf626a271321c151d027030d5d08af699456b",
+  "chain_id": 10,
+  "contract_name": "Kwenta",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.541Z"
+}

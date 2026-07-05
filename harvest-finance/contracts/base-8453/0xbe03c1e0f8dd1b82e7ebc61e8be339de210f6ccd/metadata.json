@@ -1,0 +1,17 @@
+{
+  "address": "0xbe03c1e0f8dd1b82e7ebc61e8be339de210f6ccd",
+  "chain_id": 8453,
+  "contract_name": "MoonwellFoldStrategyV2Mainnet_CBETH",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 158,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:01.062Z"
+}

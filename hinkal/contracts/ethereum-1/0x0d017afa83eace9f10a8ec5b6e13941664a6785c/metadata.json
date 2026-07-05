@@ -1,0 +1,18 @@
+{
+  "address": "0x0d017afa83eace9f10a8ec5b6e13941664a6785c",
+  "chain_id": 1,
+  "contract_name": "OETHHarvester",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xb7c72cff61cf02629c2a17f7ad875277ff70da77",
+  "fetched_at": "2026-07-04T19:19:44.655Z"
+}

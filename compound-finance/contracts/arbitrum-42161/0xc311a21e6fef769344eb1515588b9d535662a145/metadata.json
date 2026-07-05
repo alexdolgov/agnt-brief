@@ -1,0 +1,18 @@
+{
+  "address": "0xc311a21e6fef769344eb1515588b9d535662a145",
+  "chain_id": 42161,
+  "contract_name": "ARMProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 26000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:35.934Z"
+}

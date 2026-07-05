@@ -1,0 +1,18 @@
+{
+  "address": "0x057b1fb91a5fccb6c4aefd0ec55f79ce60aa8e83",
+  "chain_id": 1,
+  "contract_name": "Token",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.420Z"
+}

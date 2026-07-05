@@ -1,0 +1,18 @@
+{
+  "address": "0x761c06a46d3c85ecd87cf6917b3de329b95829be",
+  "chain_id": 1,
+  "contract_name": "HToken",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.607Z"
+}

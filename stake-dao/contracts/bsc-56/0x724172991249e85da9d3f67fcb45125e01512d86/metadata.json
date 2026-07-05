@@ -1,0 +1,18 @@
+{
+  "address": "0x724172991249e85da9d3f67fcb45125e01512d86",
+  "chain_id": 56,
+  "contract_name": "PancakeVeSender",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:42.597Z"
+}

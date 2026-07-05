@@ -1,0 +1,18 @@
+{
+  "address": "0xa6b9ce48ec380dbbe3fc32c199f4fab3d08c57f9",
+  "chain_id": 1,
+  "contract_name": "BaseConvertor",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:53.998Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x29ab878aed032e2e2c86ff4a9a9b05e3276cf1f8",
+  "chain_id": 1,
+  "contract_name": "Pauser",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x52b5e5c0e18a3566332f05246e78b9043e41bdd1",
+  "fetched_at": "2026-07-04T19:18:36.488Z"
+}

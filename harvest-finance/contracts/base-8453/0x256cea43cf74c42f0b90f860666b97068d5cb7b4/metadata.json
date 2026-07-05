@@ -1,0 +1,18 @@
+{
+  "address": "0x256cea43cf74c42f0b90f860666b97068d5cb7b4",
+  "chain_id": 8453,
+  "contract_name": "SeamlessFoldStrategyMainnet_DAI",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 170,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:40.186Z"
+}

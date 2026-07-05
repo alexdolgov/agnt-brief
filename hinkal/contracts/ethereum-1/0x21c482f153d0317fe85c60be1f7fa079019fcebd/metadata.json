@@ -1,0 +1,18 @@
+{
+  "address": "0x21c482f153d0317fe85c60be1f7fa079019fcebd",
+  "chain_id": 1,
+  "contract_name": "RepublicToken",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.234Z"
+}

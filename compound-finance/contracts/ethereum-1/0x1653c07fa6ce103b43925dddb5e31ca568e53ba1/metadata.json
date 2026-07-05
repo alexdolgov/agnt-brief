@@ -1,0 +1,18 @@
+{
+  "address": "0x1653c07fa6ce103b43925dddb5e31ca568e53ba1",
+  "chain_id": 1,
+  "contract_name": "PriceOracleProxy",
+  "compiler_version": "v0.5.8+commit.23d335f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.273Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4d58fdc7d0ee9b674f49a0ade11f26c3c9426f7a",
+  "chain_id": 137,
+  "contract_name": "PeggedTokenBridge",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T13:06:00.750Z"
+}

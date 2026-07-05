@@ -1,0 +1,18 @@
+{
+  "address": "0x2e0734c5f84f36bc2415ec893bf1eaf6beef6583",
+  "chain_id": 8453,
+  "contract_name": "MorphoVaultStrategyMainnet_RE7_ETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x7a6050299bbce2c09fd818c80eefadf07cb8a4f7",
+  "fetched_at": "2026-07-04T19:19:40.312Z"
+}

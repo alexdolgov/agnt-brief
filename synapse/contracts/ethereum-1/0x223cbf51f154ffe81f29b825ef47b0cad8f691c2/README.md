@@ -5,7 +5,8 @@
 | Chain | ethereum (1) |
 | Address | `0x223cbf51f154ffe81f29b825ef47b0cad8f691c2` |
 | Role | core_logic |
-| Origin | needs_review |
+| Origin | native |
+| Surface | own_core |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0x223cbf51f154ffe81f29b825ef47b0cad8f691c2`](../0x223cbf51f154ffe81f29b825ef47b0cad8f691c2/)) |

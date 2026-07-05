@@ -1,0 +1,18 @@
+{
+  "address": "0x0d922fb1bc191f64970ac40376643808b4b74df9",
+  "chain_id": 1329,
+  "contract_name": "PancakeInterfaceMulticall",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.140Z"
+}

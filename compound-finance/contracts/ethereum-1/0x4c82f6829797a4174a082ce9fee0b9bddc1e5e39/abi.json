@@ -1,0 +1,104 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUnStEth",
+        "name": "_unsteth",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IRateProviderRegistry",
+        "name": "_rpr",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyClaimed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRequestOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RATE_PROVIDER_REGISTRY",
+    "outputs": [
+      {
+        "internalType": "contract IRateProviderRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_target",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_lidoRequestIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "nav",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nav",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unStETH",
+    "outputs": [
+      {
+        "internalType": "contract IUnStEth",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wstETH",
+    "outputs": [
+      {
+        "internalType": "contract IwstETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0xdcf1ec5bfca5c16d7b656b3af2481b4234dd2e46",
+  "chain_id": 1,
+  "contract_name": "IporFusionAccessManager",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 62,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-05T14:12:05.415Z"
+}

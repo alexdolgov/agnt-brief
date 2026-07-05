@@ -1,0 +1,18 @@
+{
+  "address": "0x4a303b4e823b97689bcc77ae3dde6b6e5b5d3007",
+  "chain_id": 1,
+  "contract_name": "ComposableStablePreview",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.464Z"
+}

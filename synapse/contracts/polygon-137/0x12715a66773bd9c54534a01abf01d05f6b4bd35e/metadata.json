@@ -1,0 +1,18 @@
+{
+  "address": "0x12715a66773bd9c54534a01abf01d05f6b4bd35e",
+  "chain_id": 137,
+  "contract_name": "SynapseCCTP",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x86aebdd89357217039368831a8ab9273bbf3a48f",
+  "fetched_at": "2026-07-05T14:12:19.634Z"
+}

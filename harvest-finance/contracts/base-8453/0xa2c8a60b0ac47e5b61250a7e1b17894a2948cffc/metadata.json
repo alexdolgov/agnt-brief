@@ -1,0 +1,18 @@
+{
+  "address": "0xa2c8a60b0ac47e5b61250a7e1b17894a2948cffc",
+  "chain_id": 8453,
+  "contract_name": "Aave2AssetFoldStrategyMainnet_ETH_cbETH",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x46c61b8eff552218e80a26a2a0a39a1af8feeff3",
+  "fetched_at": "2026-07-05T14:11:55.392Z"
+}

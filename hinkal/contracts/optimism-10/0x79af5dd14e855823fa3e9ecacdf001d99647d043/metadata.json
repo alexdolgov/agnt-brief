@@ -1,0 +1,18 @@
+{
+  "address": "0x79af5dd14e855823fa3e9ecacdf001d99647d043",
+  "chain_id": 10,
+  "contract_name": "MintableBurnableSyntheticTokenPermit",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 144,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.365Z"
+}

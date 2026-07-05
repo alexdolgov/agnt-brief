@@ -1,0 +1,18 @@
+{
+  "address": "0x78f1bba3868b67f4994b3e7f7ec9b0485dc85ad7",
+  "chain_id": 1,
+  "contract_name": "RewardReceiver",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:43.753Z"
+}

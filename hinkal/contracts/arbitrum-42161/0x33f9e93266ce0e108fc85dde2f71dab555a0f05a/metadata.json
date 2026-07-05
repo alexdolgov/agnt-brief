@@ -1,0 +1,18 @@
+{
+  "address": "0x33f9e93266ce0e108fc85dde2f71dab555a0f05a",
+  "chain_id": 42161,
+  "contract_name": "TAPVerifier",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:44.356Z"
+}

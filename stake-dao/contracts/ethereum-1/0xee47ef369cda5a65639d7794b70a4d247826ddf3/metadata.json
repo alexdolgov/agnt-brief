@@ -1,0 +1,18 @@
+{
+  "address": "0xee47ef369cda5a65639d7794b70a4d247826ddf3",
+  "chain_id": 1,
+  "contract_name": "veBALGaugeFixCoordinator",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:22:44.314Z"
+}

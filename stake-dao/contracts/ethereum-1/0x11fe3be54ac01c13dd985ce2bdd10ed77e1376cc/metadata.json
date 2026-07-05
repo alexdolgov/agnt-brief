@@ -1,0 +1,18 @@
+{
+  "address": "0x11fe3be54ac01c13dd985ce2bdd10ed77e1376cc",
+  "chain_id": 1,
+  "contract_name": "OptimismMintableERC20Factory",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x72d205182538207478da7baff0181884993d279a",
+  "fetched_at": "2026-07-04T19:22:42.881Z"
+}

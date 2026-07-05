@@ -1,0 +1,18 @@
+{
+  "address": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+  "chain_id": 1,
+  "contract_name": "deUSD",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0x4c835b1374ecca0c5963987fa3ea2b8be779dc59",
+  "fetched_at": "2026-07-04T19:18:36.269Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
+  "chain_id": 56,
+  "contract_name": "BEP20Polkadot",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:23:33.214Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4d4f5e7a1fe57f5ceb38bfce8653effa5e584458",
+  "chain_id": 1,
+  "contract_name": "MixOracle",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:19:45.852Z"
+}

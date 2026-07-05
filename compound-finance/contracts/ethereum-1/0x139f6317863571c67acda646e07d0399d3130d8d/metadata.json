@@ -1,0 +1,18 @@
+{
+  "address": "0x139f6317863571c67acda646e07d0399d3130d8d",
+  "chain_id": 1,
+  "contract_name": "TmpStreamHelper",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-07-04T19:18:36.235Z"
+}
